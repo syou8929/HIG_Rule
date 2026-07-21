@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 186
-- Retained MUST: 166
-- Retained MUST_NOT: 20
-- Normative level changes: 4
+- Reviewed rules: 198
+- Retained MUST: 177
+- Retained MUST_NOT: 21
+- Normative level changes: 5
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:05:01Z
+- Reviewed at: 2026-07-21T16:12:50Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -125,6 +125,18 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-SHAREPLAY-0009 — Recorded the source's explicit temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017 — Retained MUST after confirming the explicit Make sure directive in the data-collection guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012 — Raised to MUST after confirming the parent Make sure directive applies to every item in the custom-tutorial list. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0022 — Recovered MUST from the conditional Be sure directive that gates terms presentation on the required iOS update. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0023 — Recovered MUST from the parent Make sure directive applied to the custom-tutorial checklist. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0024 — Recovered MUST from the parent Make sure directive applied to the custom-tutorial checklist. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0026 — Recovered MUST from the supporting must use statement while preserving the only-payment-method exception separately. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0032 — Recovered MUST from the explicit You need integration prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0033 — Recovered MUST from the explicit You need integration prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0034 — Recovered MUST from the explicit You need integration prerequisite and preserved both supported adoption paths. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0035 — Recovered MUST from the explicit merchant must accept prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0044 — Recovered MUST from the supporting Make sure directive after payment-method setup. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0047 — Recovered MUST_NOT from the explicit Always avoid prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0050 — Recovered MUST from the supporting Make sure directive that protects final-amount accuracy. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0030 — Split from the source lead's consider clause so optional guidance is not raised to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 
 ## Reviewed rules
@@ -313,5 +325,17 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-SHAREPLAY-0009 · MUST · retained_with_atomicity_or_scope_correction — Recorded the source's explicit temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive in the data-collection guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 · MUST · retained_with_atomicity_or_scope_correction — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012 · MUST · retained_with_atomicity_or_scope_correction — Raised to MUST after confirming the parent Make sure directive applies to every item in the custom-tutorial list. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the conditional Be sure directive that gates terms presentation on the required iOS update. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the parent Make sure directive applied to the custom-tutorial checklist. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0024 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the parent Make sure directive applied to the custom-tutorial checklist. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0026 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the supporting must use statement while preserving the only-payment-method exception separately. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0032 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You need integration prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0033 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You need integration prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0034 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You need integration prerequisite and preserved both supported adoption paths. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0035 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit merchant must accept prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0044 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the supporting Make sure directive after payment-method setup. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0047 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered MUST_NOT from the explicit Always avoid prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0050 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the supporting Make sure directive that protects final-amount accuracy. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-WALLET-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - HIG-TECHNOLOGIES-WALLET-0012 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))

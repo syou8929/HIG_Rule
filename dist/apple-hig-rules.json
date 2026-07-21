@@ -156744,17 +156744,17 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0001",
-    "title": "Help merchants accept Tap to Pay on iPhone terms and conditions before they begin interacting with their cu…",
+    "title": "Help merchants accept Tap to Pay terms before customer interactions",
     "category": "technologies",
     "topic": "tap-to-pay-on-iphone",
     "subtopic": "enabling-tap-to-pay-on-iphone",
     "statement": {
-      "en": "Apply the documented Tap to Pay on iPhone guidance to help merchants accept Tap to Pay on iPhone terms and conditions before they begin interacting with their customers.",
-      "ja": "「Tap to Pay on iPhone」において「Help merchants accept Tap to Pay on iPhone terms and conditions before they begin interacting with their customers」の指針を適用する。"
+      "en": "Help merchants accept Tap to Pay terms before configuration or customer-facing checkout.",
+      "ja": "設定や顧客対応のチェックアウト前に、加盟店がTap to Payの規約へ同意できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -156771,7 +156771,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Get acceptance before initial device configuration and before checkout or another customer-facing flow.",
+      "Acceptance controls can appear in onboarding or in-app messaging."
     ],
     "exceptions": [],
     "rationale": {
@@ -156781,7 +156782,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Tap to Pay on iPhone guidance to help merchants accept Tap to Pay on iPhone terms and conditions before they begin interacting with their customers.” in the documented Tap to Pay on iPhone context?"
+        "Does the design satisfy “Help merchants accept Tap to Pay terms before configuration or customer-facing checkout.” in the documented Tap to Pay on iPhone context?"
       ]
     },
     "testability": "manual",
@@ -156801,7 +156802,7 @@
       "retrieved_at": "2026-07-21T11:15:25.247Z",
       "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
       "source_sentence_hash": "fbe3fbf991efef5fef8d57b0c4c4a64a1fcad7c285fa8f6ecacc70dee39d300e",
-      "evidence_paraphrase": "Apply the documented Tap to Pay on iPhone guidance to help merchants accept Tap to Pay on iPhone terms and conditions before they begin interacting with their customers."
+      "evidence_paraphrase": "Help merchants accept Tap to Pay terms before configuration or customer-facing checkout."
     },
     "tags": [
       "technologies",
@@ -156811,7 +156812,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Tap to Pay on iPhone guidance to help merchants accept Tap to Pay on iPhone terms and conditions before they begin interacting with their customers.",
+    "apple_native_rule": "Help merchants accept Tap to Pay terms before configuration or customer-facing checkout.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -156825,8 +156826,8 @@
       "ja": "必要な場合にa tutorial that describes the supported payment types and shows how to use Tap to Pay on iPhoneを利用可能にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -156843,7 +156844,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Describe every supported payment type and how to accept it.",
+      "The tutorial may appear after terms acceptance, for new users, in Learn More, help, or settings."
     ],
     "exceptions": [],
     "rationale": {
@@ -156897,8 +156899,8 @@
       "ja": "必要な場合にTap to Pay on iPhone as a checkout option whether the feature is enabled or notを利用可能にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -156915,7 +156917,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep the checkout option visible before enablement and while configuration proceeds.",
+      "After selection, present terms if needed and open Tap to Pay when configuration completes."
     ],
     "exceptions": [],
     "rationale": {
@@ -156969,8 +156972,8 @@
       "ja": "該当する体験ではmaking merchants wait to use Tap to Pay on iPhoneを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -156987,7 +156990,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prepare Tap to Pay when the app starts and after every transition to the foreground."
     ],
     "exceptions": [],
     "rationale": {
@@ -157041,7 +157044,7 @@
       "ja": "バックグラウンドで設定が続いている間も、Tap to Pay on iPhoneのチェックアウトオプションを利用可能に保つ。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -157059,8 +157062,8 @@
       ]
     },
     "conditions": [
-      "Tap to Pay on iPhone configuration is continuing in the background during checkout.",
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep the option selectable throughout checkout while background configuration continues.",
+      "After selection, show configuration progress instead of withholding the option."
     ],
     "exceptions": [],
     "rationale": {
@@ -157114,8 +157117,8 @@
       "ja": "「Tap to Pay on iPhone」において「Make it easy for merchants to switch between Tap to Pay on iPhone and the hardware accessories you support」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157132,7 +157135,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Support Tap to Pay alongside hardware accessories and streamline setup for both methods."
     ],
     "exceptions": [],
     "rationale": {
@@ -157186,8 +157189,8 @@
       "ja": "「Tap to Pay on iPhone」において「Design your Tap to Pay on iPhone button to match the other buttons in your app」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157204,7 +157207,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep the approved label while coordinating button color and shape with the app interface."
     ],
     "exceptions": [],
     "rationale": {
@@ -157258,8 +157261,8 @@
       "ja": "該当する状況でa progress indicator while payment is authorizing before you show your transaction result screenを表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157276,7 +157279,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Show authorization progress after the Tap to Pay checkmark animation and before the result screen.",
+      "Authorization duration varies with PSP and device connectivity."
     ],
     "exceptions": [],
     "rationale": {
@@ -157329,8 +157333,8 @@
       "ja": "「Tap to Pay on iPhone」において「Help merchants complete the checkout flow when a payment can’t complete with Tap to Pay on iPhone」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157347,7 +157351,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Handle unreadable cards, unsupported networks, amount restrictions, and unsupported online PIN.",
+      "Offer a practical way to finish checkout."
     ],
     "exceptions": [],
     "rationale": {
@@ -157401,8 +157406,8 @@
       "ja": "「Tap to Pay on iPhone」において「Make it easy for merchants to get help with issues they can’t resolve」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157419,7 +157424,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Link to app or website help and provide a way to contact support."
     ],
     "exceptions": [],
     "rationale": {
@@ -157463,17 +157468,17 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0011",
-    "title": "Use a generic label in a button that opens the Tap to Pay on iPhone screen to read a",
+    "title": "Use a generic label for no-amount card-reading actions",
     "category": "technologies",
     "topic": "tap-to-pay-on-iphone",
     "subtopic": "additional-interactions",
     "statement": {
-      "en": "Choose or apply a generic label in a button that opens the Tap to Pay on iPhone screen to read a in the documented context.",
-      "ja": "該当する状況ではa generic label in a button that opens the Tap to Pay on iPhone screen to read aを採用する。"
+      "en": "Use a generic action label when reading a payment card without a transaction amount.",
+      "ja": "取引金額なしで支払いカードを読み取る操作には一般的なラベルを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157490,7 +157495,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "No transaction amount is associated with the card-reading action.",
+      "Use a generic action label such as Look Up, Store Card, Verify, or Refund."
     ],
     "exceptions": [],
     "rationale": {
@@ -157500,7 +157506,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a generic label in a button that opens the Tap to Pay on iPhone screen to read a in the documented context.” in the documented Tap to Pay on iPhone context?"
+        "Does the design satisfy “Use a generic action label when reading a payment card without a transaction amount.” in the documented Tap to Pay on iPhone context?"
       ]
     },
     "testability": "manual",
@@ -157520,34 +157526,33 @@
       "retrieved_at": "2026-07-21T11:15:25.247Z",
       "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
       "source_sentence_hash": "4e35f0a4c3c14438c4ff6f6e531aeee8161624a341b8ea91f63f66b16ddb1896",
-      "evidence_paraphrase": "Choose or apply a generic label in a button that opens the Tap to Pay on iPhone screen to read a in the documented context."
+      "evidence_paraphrase": "Use a generic action label when reading a payment card without a transaction amount."
     },
     "tags": [
       "technologies",
       "tap-to-pay-on-iphone",
-      "additional-interactions",
-      "touch"
+      "additional-interactions"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply a generic label in a button that opens the Tap to Pay on iPhone screen to read a in the documented context.",
+    "apple_native_rule": "Use a generic action label when reading a payment card without a transaction amount.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012",
-    "title": "Help a customer position their contactless card or digital wallet on the merchant’s device for payment",
+    "title": "Show customer card and wallet positioning in custom tutorials",
     "category": "technologies",
     "topic": "tap-to-pay-on-iphone",
     "subtopic": "educating-merchants",
     "statement": {
-      "en": "Apply the documented Tap to Pay on iPhone guidance to help a customer position their contactless card or digital wallet on the merchant’s device for payment.",
-      "ja": "「Tap to Pay on iPhone」において「Help a customer position their contactless card or digital wallet on the merchant’s device for payment」の指針を適用する。"
+      "en": "Show how customers position a contactless card or digital wallet in every custom merchant tutorial.",
+      "ja": "独自の加盟店向けチュートリアルで、顧客が非接触カードやdigital walletを置く方法を示す。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "technology-specific",
       "platforms": [
@@ -157562,7 +157567,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A merchant uses a custom tutorial rather than the ProximityReaderDiscovery tutorial.",
+      "Show how a customer positions a contactless card or digital wallet."
     ],
     "exceptions": [],
     "rationale": {
@@ -157572,7 +157578,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Tap to Pay on iPhone guidance to help a customer position their contactless card or digital wallet on the merchant’s device for payment.” in the documented Tap to Pay on iPhone context?"
+        "Does the design satisfy “Show how customers position a contactless card or digital wallet in every custom merchant tutorial.” in the documented Tap to Pay on iPhone context?"
       ]
     },
     "testability": "manual",
@@ -157592,7 +157598,7 @@
       "retrieved_at": "2026-07-21T11:15:25.247Z",
       "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
       "source_sentence_hash": "9ceb5664530d97de40c10bb7b08f2100b47c39c3dad69569c00faf1efb6630f6",
-      "evidence_paraphrase": "Apply the documented Tap to Pay on iPhone guidance to help a customer position their contactless card or digital wallet on the merchant’s device for payment."
+      "evidence_paraphrase": "Show how customers position a contactless card or digital wallet in every custom merchant tutorial."
     },
     "tags": [
       "technologies",
@@ -157601,7 +157607,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Tap to Pay on iPhone guidance to help a customer position their contactless card or digital wallet on the merchant’s device for payment.",
+    "apple_native_rule": "Show how customers position a contactless card or digital wallet in every custom merchant tutorial.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -157615,8 +157621,8 @@
       "ja": "必要な場合にpayment options in addition to Tap to Pay on iPhone, as necessaryを利用可能にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157633,7 +157639,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Offer another payment option when the checkout context requires it."
     ],
     "exceptions": [],
     "rationale": {
@@ -157687,8 +157693,8 @@
       "ja": "「Tap to Pay on iPhone」において「Respond quickly if a merchant initiates checkout before enabling Tap to Pay on iPhone」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157705,7 +157711,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A merchant starts checkout before accepting terms or enabling Tap to Pay."
     ],
     "exceptions": [],
     "rationale": {
@@ -157759,8 +157765,8 @@
       "ja": "「Tap to Pay on iPhone」において「Help merchants perform checkout even if device configuration is still in progress」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157777,7 +157783,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let checkout proceed while initial or foreground configuration remains in progress."
     ],
     "exceptions": [],
     "rationale": {
@@ -157821,19 +157827,19 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0016",
-    "title": "Support checkout with a different method, like external hardware or a payment link",
+    "title": "Consider another checkout method after a failed Tap to Pay attempt",
     "category": "technologies",
     "topic": "tap-to-pay-on-iphone",
     "subtopic": "displaying-results",
     "statement": {
-      "en": "Ensure the experience accommodates checkout with a different method, like external hardware or a payment link.",
-      "ja": "checkout with a different method, like external hardware or a payment linkを利用できる設計にする。"
+      "en": "Consider external hardware or a payment link after Tap to Pay can’t complete.",
+      "ja": "Tap to Payを完了できない場合は、外部ハードウェアやpayment linkを検討する。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
     "scope": {
       "portability": "technology-specific",
       "platforms": [
@@ -157848,7 +157854,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A Tap to Pay attempt cannot complete.",
+      "External hardware or a payment link is one optional recovery path."
     ],
     "exceptions": [],
     "rationale": {
@@ -157858,7 +157865,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates checkout with a different method, like external hardware or a payment link.” in the documented Tap to Pay on iPhone context?"
+        "Does the design satisfy “Consider external hardware or a payment link after Tap to Pay can’t complete.” in the documented Tap to Pay on iPhone context?"
       ]
     },
     "testability": "manual",
@@ -157878,7 +157885,7 @@
       "retrieved_at": "2026-07-21T11:15:25.247Z",
       "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
       "source_sentence_hash": "4d0052b9577bc2decedc878bc35604cd3b270fedd4fb2f8dbc757b8b2d164b48",
-      "evidence_paraphrase": "Ensure the experience accommodates checkout with a different method, like external hardware or a payment link."
+      "evidence_paraphrase": "Consider external hardware or a payment link after Tap to Pay can’t complete."
     },
     "tags": [
       "technologies",
@@ -157887,7 +157894,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates checkout with a different method, like external hardware or a payment link.",
+    "apple_native_rule": "Consider external hardware or a payment link after Tap to Pay can’t complete.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -157901,8 +157908,8 @@
       "ja": "該当する状況でTap to Pay on iPhone terms and conditions only to an administrative userを表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157919,7 +157926,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Show terms only to an administrative user.",
+      "If a nonadministrator attempts activation, explain that administrator access is required."
     ],
     "exceptions": [],
     "rationale": {
@@ -157973,8 +157981,8 @@
       "ja": "該当する状況でpre-payment actions that affect the final total before checkout completesを表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -157991,7 +157999,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Show tips, payment-type choices, and other total-affecting actions before checkout completes."
     ],
     "exceptions": [],
     "rationale": {
@@ -158035,19 +158043,19 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0019",
-    "title": "Present a new screen or reuse your checkout screen, letting merchants accept an alternate form of payment, …",
+    "title": "Consider an alternate payment after a failed Tap to Pay attempt",
     "category": "technologies",
     "topic": "tap-to-pay-on-iphone",
     "subtopic": "displaying-results",
     "statement": {
-      "en": "Present a new screen or reuse your checkout screen, letting merchants accept an alternate form of payment, like cash in the documented context.",
-      "ja": "該当する状況でa new screen or reuse your checkout screen, letting merchants accept an alternate form of payment, like cashを表示する。"
+      "en": "Consider a new or reused checkout screen for cash or another alternate payment.",
+      "ja": "Tap to Payを完了できない場合は、現金などの代替支払い用画面を検討する。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
     "scope": {
       "portability": "technology-specific",
       "platforms": [
@@ -158062,7 +158070,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A Tap to Pay attempt cannot complete.",
+      "Cash or another alternate payment on a new or reused checkout screen is one optional recovery path."
     ],
     "exceptions": [],
     "rationale": {
@@ -158072,7 +158081,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present a new screen or reuse your checkout screen, letting merchants accept an alternate form of payment, like cash in the documented context.” in the documented Tap to Pay on iPhone context?"
+        "Does the design satisfy “Consider a new or reused checkout screen for cash or another alternate payment.” in the documented Tap to Pay on iPhone context?"
       ]
     },
     "testability": "manual",
@@ -158092,7 +158101,7 @@
       "retrieved_at": "2026-07-21T11:15:25.247Z",
       "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
       "source_sentence_hash": "0ab98e83d1698c49e7f13b8b1898f144dc11080afa118e7ec9443d44f85f1e64",
-      "evidence_paraphrase": "Present a new screen or reuse your checkout screen, letting merchants accept an alternate form of payment, like cash in the documented context."
+      "evidence_paraphrase": "Consider a new or reused checkout screen for cash or another alternate payment."
     },
     "tags": [
       "technologies",
@@ -158101,22 +158110,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Present a new screen or reuse your checkout screen, letting merchants accept an alternate form of payment, like cash in the documented context.",
+    "apple_native_rule": "Consider a new or reused checkout screen for cash or another alternate payment.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0020",
-    "title": "Determine the final amount that customers need to pay before merchants initiate the Tap to Pay on iPhone ex…",
+    "title": "Determine the final amount before starting Tap to Pay",
     "category": "technologies",
     "topic": "tap-to-pay-on-iphone",
     "subtopic": "checking-out",
     "statement": {
-      "en": "Determine the final amount that customers need to pay before merchants initiate the Tap to Pay on iPhone experience explicitly.",
-      "ja": "the final amount that customers need to pay before merchants initiate the Tap to Pay on iPhone experienceを明確に決定する。"
+      "en": "Determine the customer’s final payable amount before the merchant starts Tap to Pay.",
+      "ja": "加盟店がTap to Payを開始する前に、顧客の最終支払額を確定する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -158133,7 +158142,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Resolve the final payable amount before launching the system Tap to Pay experience.",
+      "Aim to show that final amount on the Tap to Pay screen."
     ],
     "exceptions": [],
     "rationale": {
@@ -158143,7 +158153,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Determine the final amount that customers need to pay before merchants initiate the Tap to Pay on iPhone experience explicitly.” in the documented Tap to Pay on iPhone context?"
+        "Does the design satisfy “Determine the customer’s final payable amount before the merchant starts Tap to Pay.” in the documented Tap to Pay on iPhone context?"
       ]
     },
     "testability": "manual",
@@ -158163,7 +158173,7 @@
       "retrieved_at": "2026-07-21T11:15:25.247Z",
       "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
       "source_sentence_hash": "3d7c1efeffe0bf1c4d402f995c8ef07a19d1e24fa92795d52d89d999b03135f9",
-      "evidence_paraphrase": "Determine the final amount that customers need to pay before merchants initiate the Tap to Pay on iPhone experience explicitly."
+      "evidence_paraphrase": "Determine the customer’s final payable amount before the merchant starts Tap to Pay."
     },
     "tags": [
       "technologies",
@@ -158173,7 +158183,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Determine the final amount that customers need to pay before merchants initiate the Tap to Pay on iPhone experience explicitly.",
+    "apple_native_rule": "Determine the customer’s final payable amount before the merchant starts Tap to Pay.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -158187,8 +158197,8 @@
       "ja": "display the result of a transaction, whether it’s declined or successfulを明確にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -158205,7 +158215,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Show both successful and declined outcomes clearly.",
+      "Declines can result from insufficient funds, suspected fraud, or an incorrect PIN."
     ],
     "exceptions": [],
     "rationale": {
@@ -158245,6 +158256,2520 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "Clearly display the result of a transaction, whether it’s declined or successful.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0022",
+    "title": "Present terms only after required iOS updates",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "enabling-tap-to-pay-on-iphone",
+    "statement": {
+      "en": "Present Tap to Pay terms only after the merchant installs the iOS version required by the PSP.",
+      "ja": "加盟店がPSP指定のiOSバージョンへ更新した後にのみTap to Payの規約を表示する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The PSP requires a specific iOS version.",
+      "Present terms only after the merchant updates the device."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Present Tap to Pay terms only after the merchant installs the iOS version required by the PSP.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Enabling Tap to Pay on iPhone"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "45303d26befd4fe7ef868adc69d00414b2f208e4edf457de22eb981e637258fe",
+      "evidence_paraphrase": "Present Tap to Pay terms only after the merchant installs the iOS version required by the PSP."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "enabling-tap-to-pay-on-iphone"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Present Tap to Pay terms only after the merchant installs the iOS version required by the PSP.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0023",
+    "title": "Show checkout launch for every payment type in custom tutorials",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "educating-merchants",
+    "statement": {
+      "en": "Show how to launch checkout for every supported payment type in a custom merchant tutorial.",
+      "ja": "独自の加盟店向けチュートリアルで、対応する各支払いタイプのcheckout開始方法を示す。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "A merchant uses a custom tutorial.",
+      "Cover launching checkout for every supported payment type."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Show how to launch checkout for every supported payment type in a custom merchant tutorial.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Educating merchants"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "0b3a677d1ebbc839f15382a27646c724ccda29e748eb3792e5d340f508366518",
+      "evidence_paraphrase": "Show how to launch checkout for every supported payment type in a custom merchant tutorial."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "educating-merchants"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Show how to launch checkout for every supported payment type in a custom merchant tutorial.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0024",
+    "title": "Show PIN entry and accessibility mode in custom tutorials",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "educating-merchants",
+    "statement": {
+      "en": "Show card PIN entry, including accessibility mode, in a custom merchant tutorial.",
+      "ja": "独自の加盟店向けチュートリアルで、accessibility modeを含むカードPIN入力を示す。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "A merchant uses a custom tutorial.",
+      "Cover card PIN entry, including accessibility mode."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Show card PIN entry, including accessibility mode, in a custom merchant tutorial.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Educating merchants"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "6b03a4302172b00252f45d9834daff7fe1144603cb9c5a2d9281aed639dc3ab4",
+      "evidence_paraphrase": "Show card PIN entry, including accessibility mode, in a custom merchant tutorial."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "educating-merchants"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Show card PIN entry, including accessibility mode, in a custom merchant tutorial.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0025",
+    "title": "Make the Tap to Pay button easy to find among payment methods",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Apply the documented Tap to Pay on iPhone guidance to make the Tap to Pay button easy to find among payment methods.",
+      "ja": "「Tap to Pay on iPhone」において「Make the Tap to Pay button easy to find among payment methods」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The app offers more than one payment-acceptance method.",
+      "Keep the Tap to Pay action readily visible."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Tap to Pay on iPhone guidance to make the Tap to Pay button easy to find among payment methods.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "fb5b5d63c77732f3b0c39db4119a69d5a74df735c04a090eb7be82014853d36f",
+      "evidence_paraphrase": "Apply the documented Tap to Pay on iPhone guidance to make the Tap to Pay button easy to find among payment methods."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Tap to Pay on iPhone guidance to make the Tap to Pay button easy to find among payment methods.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0026",
+    "title": "Use an approved Tap to Pay button label",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Use Tap to Pay on iPhone, or Tap to Pay when space is constrained, as the activation-button label.",
+      "ja": "起動ボタンのラベルにはTap to Pay on iPhone、空間が限られる場合はTap to Payを使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Use Tap to Pay on iPhone, or Tap to Pay when space is constrained.",
+      "The separate only-method exception is reviewed independently."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use Tap to Pay on iPhone, or Tap to Pay when space is constrained, as the activation-button label.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "2e88c78ca2c9fac11dcf96fb3d5d7c491a33c0110152a64a0da715312e96dd8c",
+      "evidence_paraphrase": "Use Tap to Pay on iPhone, or Tap to Pay when space is constrained, as the activation-button label."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use Tap to Pay on iPhone, or Tap to Pay when space is constrained, as the activation-button label.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0027",
+    "title": "Display pre-payment options before the Tap to Pay screen",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Present pre-payment options before the Tap to Pay screen in the documented context.",
+      "ja": "該当する状況でpre-payment options before the Tap to Pay screenを表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The checkout flow offers payment types or another pre-payment choice.",
+      "Show the choice before opening the system Tap to Pay screen."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Present pre-payment options before the Tap to Pay screen in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "733157ce69cd100dcdf8519173c4733fc3243e2d63501e67a0c4cd34c7107295",
+      "evidence_paraphrase": "Present pre-payment options before the Tap to Pay screen in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Present pre-payment options before the Tap to Pay screen in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0028",
+    "title": "Use immediate transaction processing after a successful tap",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "displaying-results",
+    "statement": {
+      "en": "Choose or apply immediate transaction processing after a successful tap in the documented context.",
+      "ja": "該当する状況ではimmediate transaction processing after a successful tapを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Request the successful-tap result before the checkmark animation finishes when possible."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply immediate transaction processing after a successful tap in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Displaying results"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "c6b9e07baaae61d25a0c369694f75b2d6adb6e68de27aee0f22d686a2e86e33e",
+      "evidence_paraphrase": "Choose or apply immediate transaction processing after a successful tap in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "displaying-results",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply immediate transaction processing after a successful tap in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0029",
+    "title": "Consider relaunching Tap to Pay when a customer has another card",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "displaying-results",
+    "statement": {
+      "en": "Evaluate whether relaunching Tap to Pay when a customer has another card is appropriate for the current context.",
+      "ja": "relaunching Tap to Pay when a customer has another cardが現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "A Tap to Pay attempt fails and the customer has another card to try."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether relaunching Tap to Pay when a customer has another card is appropriate for the current context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Displaying results"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "b83cf8585e31a29a9fbcf946c6ff95c171f0e9b0e1b6f7a74fee077c782e0e87",
+      "evidence_paraphrase": "Evaluate whether relaunching Tap to Pay when a customer has another card is appropriate for the current context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "displaying-results",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether relaunching Tap to Pay when a customer has another card is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0030",
+    "title": "Show clear descriptions for merchant-addressable system errors",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "displaying-results",
+    "statement": {
+      "en": "Present clear descriptions for merchant-addressable system errors in the documented context.",
+      "ja": "該当する状況でclear descriptions for merchant-addressable system errorsを表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The system returns an error that requires merchant action.",
+      "Explain the problem clearly before suggesting a resolution."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Present clear descriptions for merchant-addressable system errors in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Displaying results"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "e1ce714f0ca5de03ea7bfa848f4d0d0996e0bf5dd3c16374fe762f3dd1fa6dff",
+      "evidence_paraphrase": "Present clear descriptions for merchant-addressable system errors in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "displaying-results"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Present clear descriptions for merchant-addressable system errors in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0031",
+    "title": "Distinguish independent loyalty-card flows from payment-acceptance flows",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "additional-interactions",
+    "statement": {
+      "en": "Apply the documented Tap to Pay on iPhone guidance to distinguish independent loyalty-card flows from payment-acceptance flows.",
+      "ja": "「Tap to Pay on iPhone」において「Distinguish independent loyalty-card flows from payment-acceptance flows」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The app supports an independent loyalty, discount, or points-card transaction.",
+      "Keep the loyalty action distinct from payment acceptance."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Tap to Pay on iPhone guidance to distinguish independent loyalty-card flows from payment-acceptance flows.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Additional interactions"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "1d29db32e73be5f40bf0ce3052c4e012a6ac1eb5f4ceb5f762eafab1a49f8c2e",
+      "evidence_paraphrase": "Apply the documented Tap to Pay on iPhone guidance to distinguish independent loyalty-card flows from payment-acceptance flows."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "additional-interactions"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Tap to Pay on iPhone guidance to distinguish independent loyalty-card flows from payment-acceptance flows.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0032",
+    "title": "Work with a supported payment service provider before integration",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "tap-to-pay-on-iphone",
+    "statement": {
+      "en": "Work with a supported payment service provider before integrating Tap to Pay on iPhone.",
+      "ja": "Tap to Pay on iPhoneの統合前に、対応するpayment service providerと連携する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Before integrating Tap to Pay, work with a supported PSP."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Work with a supported payment service provider before integrating Tap to Pay on iPhone.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "d182b7d3dcb2727ae4d09291cabfb696d8a716654716d01e13db42504bae4ef5",
+      "evidence_paraphrase": "Work with a supported payment service provider before integrating Tap to Pay on iPhone."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Work with a supported payment service provider before integrating Tap to Pay on iPhone.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0033",
+    "title": "Obtain the Tap to Pay on iPhone entitlement before integration",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "tap-to-pay-on-iphone",
+    "statement": {
+      "en": "Obtain the Tap to Pay on iPhone entitlement before integration.",
+      "ja": "統合前にTap to Pay on iPhone entitlementを取得する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Before integrating Tap to Pay, obtain the Tap to Pay on iPhone entitlement."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Obtain the Tap to Pay on iPhone entitlement before integration.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "d182b7d3dcb2727ae4d09291cabfb696d8a716654716d01e13db42504bae4ef5",
+      "evidence_paraphrase": "Obtain the Tap to Pay on iPhone entitlement before integration."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Obtain the Tap to Pay on iPhone entitlement before integration.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0034",
+    "title": "Use ProximityReader APIs for Tap to Pay integration",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "tap-to-pay-on-iphone",
+    "statement": {
+      "en": "Use ProximityReader APIs through the PSP SDK or the framework for Tap to Pay integration.",
+      "ja": "Tap to Payの統合には、PSP SDKまたはframework経由でProximityReader APIを使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Adopt ProximityReader through the PSP SDK or the framework."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use ProximityReader APIs through the PSP SDK or the framework for Tap to Pay integration.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "d182b7d3dcb2727ae4d09291cabfb696d8a716654716d01e13db42504bae4ef5",
+      "evidence_paraphrase": "Use ProximityReader APIs through the PSP SDK or the framework for Tap to Pay integration."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use ProximityReader APIs through the PSP SDK or the framework for Tap to Pay integration.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0035",
+    "title": "Obtain merchant acceptance before enabling or configuring Tap to Pay",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "enabling-tap-to-pay-on-iphone",
+    "statement": {
+      "en": "Obtain the merchant’s acceptance of the relevant terms before enabling Tap to Pay or configuring the device.",
+      "ja": "Tap to Payの有効化や端末設定の前に、加盟店から関連規約への同意を得る。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Obtain acceptance before enabling Tap to Pay or configuring a merchant device."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Obtain the merchant’s acceptance of the relevant terms before enabling Tap to Pay or configuring the device.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Enabling Tap to Pay on iPhone"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "b8539a142f9b17131c2fe962e337ac43009c07aac2b08e64dc9eb5a6f7ffe828",
+      "evidence_paraphrase": "Obtain the merchant’s acceptance of the relevant terms before enabling Tap to Pay or configuring the device."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "enabling-tap-to-pay-on-iphone",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Obtain the merchant’s acceptance of the relevant terms before enabling Tap to Pay or configuring the device.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0036",
+    "title": "Use ProximityReader API to check terms-acceptance status",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "enabling-tap-to-pay-on-iphone",
+    "statement": {
+      "en": "Choose or apply proximityReader API to check terms-acceptance status in the documented context.",
+      "ja": "該当する状況ではProximityReader API to check terms-acceptance statusを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Use ProximityReader to retrieve current terms-acceptance status."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply proximityReader API to check terms-acceptance status in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Enabling Tap to Pay on iPhone"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "b8539a142f9b17131c2fe962e337ac43009c07aac2b08e64dc9eb5a6f7ffe828",
+      "evidence_paraphrase": "Choose or apply proximityReader API to check terms-acceptance status in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "enabling-tap-to-pay-on-iphone"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply proximityReader API to check terms-acceptance status in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0037",
+    "title": "Present the terms-acceptance flow only when necessary",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "enabling-tap-to-pay-on-iphone",
+    "statement": {
+      "en": "Present the terms-acceptance flow only when necessary in the documented context.",
+      "ja": "該当する状況でthe terms-acceptance flow only when necessaryを表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Do not present the acceptance flow when the merchant has already satisfied it."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Present the terms-acceptance flow only when necessary in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Enabling Tap to Pay on iPhone"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "b8539a142f9b17131c2fe962e337ac43009c07aac2b08e64dc9eb5a6f7ffe828",
+      "evidence_paraphrase": "Present the terms-acceptance flow only when necessary in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "enabling-tap-to-pay-on-iphone"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Present the terms-acceptance flow only when necessary in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0038",
+    "title": "Show nonadministrators that administrator access is required",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "enabling-tap-to-pay-on-iphone",
+    "statement": {
+      "en": "Present nonadministrators that administrator access is required in the documented context.",
+      "ja": "該当する状況でnonadministrators that administrator access is requiredを表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "A nonadministrator attempts to activate Tap to Pay."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Present nonadministrators that administrator access is required in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Enabling Tap to Pay on iPhone"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "2aa3f973d7e21dfa9c8b7708eb6e1e67f74c1112bf2886cb9d7b38344f9d0d66",
+      "evidence_paraphrase": "Present nonadministrators that administrator access is required in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "enabling-tap-to-pay-on-iphone"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Present nonadministrators that administrator access is required in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0039",
+    "title": "Provide a terms-acceptance opportunity at the end of the tutorial",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "educating-merchants",
+    "statement": {
+      "en": "Make a terms-acceptance opportunity at the end of the tutorial available when applicable.",
+      "ja": "必要な場合にa terms-acceptance opportunity at the end of the tutorialを利用可能にする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "At tutorial completion, the merchant has not yet accepted the terms."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make a terms-acceptance opportunity at the end of the tutorial available when applicable.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Educating merchants"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "853a169bf331bee4d2421a0be3f19d56421797606c9ccb9a0f00a4af9ce909f9",
+      "evidence_paraphrase": "Make a terms-acceptance opportunity at the end of the tutorial available when applicable."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "educating-merchants"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make a terms-acceptance opportunity at the end of the tutorial available when applicable.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0040",
+    "title": "Use an indeterminate indicator for most background configuration",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Choose or apply an indeterminate indicator for most background configuration in the documented context.",
+      "ja": "該当する状況ではan indeterminate indicator for most background configurationを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Use an indeterminate indicator in most background-configuration scenarios."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply an indeterminate indicator for most background configuration in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "21f4a1d9f280b131c4f4c244a186b66b19e525958ae5daf8de4c2b862341626a",
+      "evidence_paraphrase": "Choose or apply an indeterminate indicator for most background configuration in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply an indeterminate indicator for most background configuration in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0041",
+    "title": "Use a determinate indicator when ProximityReader reports ongoing configuration",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Choose or apply a determinate indicator when ProximityReader reports ongoing configuration in the documented context.",
+      "ja": "該当する状況ではa determinate indicator when ProximityReader reports ongoing configurationを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Use a determinate indicator when ProximityReader reports that configuration is ongoing."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply a determinate indicator when ProximityReader reports ongoing configuration in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "21f4a1d9f280b131c4f4c244a186b66b19e525958ae5daf8de4c2b862341626a",
+      "evidence_paraphrase": "Choose or apply a determinate indicator when ProximityReader reports ongoing configuration in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply a determinate indicator when ProximityReader reports ongoing configuration in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0042",
+    "title": "Avoid requiring merchants to scroll to reach Tap to Pay",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Exclude requiring merchants to scroll to reach Tap to Pay from the applicable experience.",
+      "ja": "該当する体験ではrequiring merchants to scroll to reach Tap to Payを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The app offers multiple payment-acceptance methods.",
+      "Do not make merchants scroll to reach Tap to Pay."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude requiring merchants to scroll to reach Tap to Pay from the applicable experience.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "fb5b5d63c77732f3b0c39db4119a69d5a74df735c04a090eb7be82014853d36f",
+      "evidence_paraphrase": "Exclude requiring merchants to scroll to reach Tap to Pay from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude requiring merchants to scroll to reach Tap to Pay from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0043",
+    "title": "Use automatic Tap to Pay opening when it is the only payment method",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Choose or apply automatic Tap to Pay opening when it is the only payment method in the documented context.",
+      "ja": "該当する状況ではautomatic Tap to Pay opening when it is the only payment methodを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Tap to Pay is the app’s only payment-acceptance method.",
+      "Open it automatically when checkout begins."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply automatic Tap to Pay opening when it is the only payment method in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "fb5b5d63c77732f3b0c39db4119a69d5a74df735c04a090eb7be82014853d36f",
+      "evidence_paraphrase": "Choose or apply automatic Tap to Pay opening when it is the only payment method in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply automatic Tap to Pay opening when it is the only payment method in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0044",
+    "title": "Let merchants switch payment methods during checkout without opening settings",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Let merchants choose among configured payment methods during checkout without visiting app settings.",
+      "ja": "設定済みの支払い方法を、アプリ設定を開かずcheckout中に選べるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "After setup, let merchants choose a payment method during checkout without opening app settings."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Let merchants choose among configured payment methods during checkout without visiting app settings.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "a145e88eac95eaa9a31387f8179816032fdc6aaf37b8f69e48165c38c7d511b3",
+      "evidence_paraphrase": "Let merchants choose among configured payment methods during checkout without visiting app settings."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Let merchants choose among configured payment methods during checkout without visiting app settings.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0045",
+    "title": "Consider reusing Charge or Checkout when Tap to Pay is the only payment method",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Evaluate whether reusing Charge or Checkout when Tap to Pay is the only payment method is appropriate for the current context.",
+      "ja": "reusing Charge or Checkout when Tap to Pay is the only payment methodが現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Tap to Pay is the only supported payment-acceptance method.",
+      "The existing Charge or Checkout action may open Tap to Pay."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether reusing Charge or Checkout when Tap to Pay is the only payment method is appropriate for the current context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "2e88c78ca2c9fac11dcf96fb3d5d7c491a33c0110152a64a0da715312e96dd8c",
+      "evidence_paraphrase": "Evaluate whether reusing Charge or Checkout when Tap to Pay is the only payment method is appropriate for the current context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether reusing Charge or Checkout when Tap to Pay is the only payment method is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0046",
+    "title": "Use the Tap to Pay SF Symbol when payment-method buttons use icons",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Choose or apply the Tap to Pay SF Symbol when payment-method buttons use icons in the documented context.",
+      "ja": "該当する状況ではthe Tap to Pay SF Symbol when payment-method buttons use iconsを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The app offers multiple payment methods and their activation buttons use icons.",
+      "Use wave.3.right.circle or wave.3.right.circle.fill."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply the Tap to Pay SF Symbol when payment-method buttons use icons in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "2e88c78ca2c9fac11dcf96fb3d5d7c491a33c0110152a64a0da715312e96dd8c",
+      "evidence_paraphrase": "Choose or apply the Tap to Pay SF Symbol when payment-method buttons use icons in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply the Tap to Pay SF Symbol when payment-method buttons use icons in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0047",
+    "title": "Never include the Apple logo in Tap to Pay buttons",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Never include the Apple logo in a Tap to Pay button.",
+      "ja": "Tap to PayボタンにAppleロゴを含めない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Apply to every Tap to Pay activation button."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never include the Apple logo in a Tap to Pay button.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "2e88c78ca2c9fac11dcf96fb3d5d7c491a33c0110152a64a0da715312e96dd8c",
+      "evidence_paraphrase": "Never include the Apple logo in a Tap to Pay button."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Never include the Apple logo in a Tap to Pay button.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0048",
+    "title": "Use the Tap to Pay on iPhone label only for payment actions",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Choose or apply the Tap to Pay on iPhone label only for payment actions in the documented context.",
+      "ja": "該当する状況ではthe Tap to Pay on iPhone label only for payment actionsを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Reserve the Tap to Pay on iPhone label for actions that initiate payment."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply the Tap to Pay on iPhone label only for payment actions in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "ce3df0b7b6640047ceb7deea6f5cccd83cfdf1da7508e29f58ede5b56e6bd9a5",
+      "evidence_paraphrase": "Choose or apply the Tap to Pay on iPhone label only for payment actions in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply the Tap to Pay on iPhone label only for payment actions in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0049",
+    "title": "Consider coordinating Tap to Pay button color and shape with the interface",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Evaluate whether coordinating Tap to Pay button color and shape with the interface is appropriate for the current context.",
+      "ja": "coordinating Tap to Pay button color and shape with the interfaceが現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Keep the required label while choosing a coordinating button color and shape."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether coordinating Tap to Pay button color and shape with the interface is appropriate for the current context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "630f2a231018f24a85d7af006031eb37c29353e0a652e2af5c32967640e9eb45",
+      "evidence_paraphrase": "Evaluate whether coordinating Tap to Pay button color and shape with the interface is appropriate for the current context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether coordinating Tap to Pay button color and shape with the interface is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0050",
+    "title": "Offer total-affecting interactions before the Tap to Pay screen",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Offer tipping and other total-affecting interactions before presenting the Tap to Pay screen.",
+      "ja": "チップなど最終金額に影響する操作をTap to Pay画面の表示前に提供する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Tipping or another customer interaction can change the final total.",
+      "Offer it before presenting the Tap to Pay screen."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Offer tipping and other total-affecting interactions before presenting the Tap to Pay screen.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "3d7c1efeffe0bf1c4d402f995c8ef07a19d1e24fa92795d52d89d999b03135f9",
+      "evidence_paraphrase": "Offer tipping and other total-affecting interactions before presenting the Tap to Pay screen."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Offer tipping and other total-affecting interactions before presenting the Tap to Pay screen.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0051",
+    "title": "Aim to display the final amount on the Tap to Pay screen",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "checking-out",
+    "statement": {
+      "en": "Apply the documented Tap to Pay on iPhone guidance to aim to display the final amount on the Tap to Pay screen.",
+      "ja": "「Tap to Pay on iPhone」において「Aim to display the final amount on the Tap to Pay screen」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Aim to show the already-determined final amount in the system Tap to Pay screen."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Tap to Pay on iPhone guidance to aim to display the final amount on the Tap to Pay screen.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Checking out"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "3d7c1efeffe0bf1c4d402f995c8ef07a19d1e24fa92795d52d89d999b03135f9",
+      "evidence_paraphrase": "Apply the documented Tap to Pay on iPhone guidance to aim to display the final amount on the Tap to Pay screen."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "checking-out",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Tap to Pay on iPhone guidance to aim to display the final amount on the Tap to Pay screen.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0052",
+    "title": "As much as possible, give merchants ways to offer digital receipts",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "displaying-results",
+    "statement": {
+      "en": "Give merchants ways to offer digital receipts wherever practicable.",
+      "ja": "可能な限りgive merchants ways to offer digital receipts。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "Where practicable, enable a digital receipt through a QR code, text message, or similar path."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Give merchants ways to offer digital receipts wherever practicable.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Displaying results"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "6af12b8d6e199514126262e2bef8e5506a941d3b0d600ffc627200d6bacb1c90",
+      "evidence_paraphrase": "Give merchants ways to offer digital receipts wherever practicable."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "displaying-results"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Give merchants ways to offer digital receipts wherever practicable.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0053",
+    "title": "Provide appropriate resolutions for merchant-addressable system errors",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "displaying-results",
+    "statement": {
+      "en": "Make appropriate resolutions for merchant-addressable system errors available when applicable.",
+      "ja": "必要な場合にappropriate resolutions for merchant-addressable system errorsを利用可能にする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The system reports a problem the merchant must address.",
+      "Recommend a resolution appropriate to the reported problem."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make appropriate resolutions for merchant-addressable system errors available when applicable.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Displaying results"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "e1ce714f0ca5de03ea7bfa848f4d0d0996e0bf5dd3c16374fe762f3dd1fa6dff",
+      "evidence_paraphrase": "Make appropriate resolutions for merchant-addressable system errors available when applicable."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "displaying-results"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make appropriate resolutions for merchant-addressable system errors available when applicable.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0054",
+    "title": "Avoid Tap to Pay labels for no-amount card-reading actions",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "additional-interactions",
+    "statement": {
+      "en": "Exclude tap to Pay labels for no-amount card-reading actions from the applicable experience.",
+      "ja": "該当する体験ではTap to Pay labels for no-amount card-reading actionsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The card-reading action has no transaction amount.",
+      "Do not use Tap to Pay on iPhone or Tap to Pay in the action label."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude tap to Pay labels for no-amount card-reading actions from the applicable experience.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Additional interactions"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "4e35f0a4c3c14438c4ff6f6e531aeee8161624a341b8ea91f63f66b16ddb1896",
+      "evidence_paraphrase": "Exclude tap to Pay labels for no-amount card-reading actions from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "additional-interactions",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude tap to Pay labels for no-amount card-reading actions from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0055",
+    "title": "Use a separate clearly labeled button for independent loyalty-card transactions",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "additional-interactions",
+    "statement": {
+      "en": "Choose or apply a separate clearly labeled button for independent loyalty-card transactions in the documented context.",
+      "ja": "該当する状況ではa separate clearly labeled button for independent loyalty-card transactionsを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The app supports an independent loyalty-card transaction.",
+      "Use a separate, clearly labeled action."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply a separate clearly labeled button for independent loyalty-card transactions in the documented context.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Additional interactions"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "1d29db32e73be5f40bf0ce3052c4e012a6ac1eb5f4ceb5f762eafab1a49f8c2e",
+      "evidence_paraphrase": "Choose or apply a separate clearly labeled button for independent loyalty-card transactions in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "additional-interactions"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply a separate clearly labeled button for independent loyalty-card transactions in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0056",
+    "title": "Avoid payment-related terms in independent loyalty-transaction labels",
+    "category": "technologies",
+    "topic": "tap-to-pay-on-iphone",
+    "subtopic": "additional-interactions",
+    "statement": {
+      "en": "Exclude payment-related terms in independent loyalty-transaction labels from the applicable experience.",
+      "ja": "該当する体験ではpayment-related terms in independent loyalty-transaction labelsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": [
+        "touch"
+      ]
+    },
+    "conditions": [
+      "The action starts an independent loyalty-card transaction.",
+      "Do not use Tap to Pay or other payment-related terms in its label."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Tap to Pay on iPhone experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTap to Pay on iPhoneの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude payment-related terms in independent loyalty-transaction labels from the applicable experience.” in the documented Tap to Pay on iPhone context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone",
+      "page_title": "Tap to Pay on iPhone",
+      "section_path": [
+        "Tap to Pay on iPhone",
+        "Additional interactions"
+      ],
+      "retrieved_at": "2026-07-21T11:15:25.247Z",
+      "source_hash": "2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea",
+      "source_sentence_hash": "1d29db32e73be5f40bf0ce3052c4e012a6ac1eb5f4ceb5f762eafab1a49f8c2e",
+      "evidence_paraphrase": "Exclude payment-related terms in independent loyalty-transaction labels from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "tap-to-pay-on-iphone",
+      "additional-interactions"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude payment-related terms in independent loyalty-transaction labels from the applicable experience.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

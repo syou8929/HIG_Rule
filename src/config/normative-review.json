@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:05:01Z",
+  "reviewed_at": "2026-07-21T16:12:50Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
@@ -8,13 +8,172 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 186,
+  "reviewed_rule_count": 198,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012": {
+      "title": "Show customer card and wallet positioning in custom tutorials",
+      "statement": {
+        "en": "Show how customers position a contactless card or digital wallet in every custom merchant tutorial.",
+        "ja": "独自の加盟店向けチュートリアルで、顧客が非接触カードやdigital walletを置く方法を示す。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The app provides a custom tutorial instead of the ProximityReaderDiscovery tutorial."
+      ],
+      "review_note": "Raised to MUST after confirming the parent Make sure directive applies to every item in the custom-tutorial list."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0022": {
+      "title": "Present terms only after required iOS updates",
+      "statement": {
+        "en": "Present Tap to Pay terms only after the merchant installs the iOS version required by the PSP.",
+        "ja": "加盟店がPSP指定のiOSバージョンへ更新した後にのみTap to Payの規約を表示する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The PSP requires a specific iOS version."
+      ],
+      "review_note": "Recovered MUST from the conditional Be sure directive that gates terms presentation on the required iOS update."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0023": {
+      "title": "Show checkout launch for every payment type in custom tutorials",
+      "statement": {
+        "en": "Show how to launch checkout for every supported payment type in a custom merchant tutorial.",
+        "ja": "独自の加盟店向けチュートリアルで、対応する各支払いタイプのcheckout開始方法を示す。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The app provides a custom tutorial instead of the ProximityReaderDiscovery tutorial."
+      ],
+      "review_note": "Recovered MUST from the parent Make sure directive applied to the custom-tutorial checklist."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0024": {
+      "title": "Show PIN entry and accessibility mode in custom tutorials",
+      "statement": {
+        "en": "Show card PIN entry, including accessibility mode, in a custom merchant tutorial.",
+        "ja": "独自の加盟店向けチュートリアルで、accessibility modeを含むカードPIN入力を示す。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The app provides a custom tutorial instead of the ProximityReaderDiscovery tutorial."
+      ],
+      "review_note": "Recovered MUST from the parent Make sure directive applied to the custom-tutorial checklist."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0026": {
+      "title": "Use an approved Tap to Pay button label",
+      "statement": {
+        "en": "Use Tap to Pay on iPhone, or Tap to Pay when space is constrained, as the activation-button label.",
+        "ja": "起動ボタンのラベルにはTap to Pay on iPhone、空間が限られる場合はTap to Payを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "A button activates Tap to Pay and the separate only-payment-method exception doesn’t apply."
+      ],
+      "review_note": "Recovered MUST from the supporting must use statement while preserving the only-payment-method exception separately."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0032": {
+      "title": "Work with a supported payment service provider before integration",
+      "statement": {
+        "en": "Work with a supported payment service provider before integrating Tap to Pay on iPhone.",
+        "ja": "Tap to Pay on iPhoneの統合前に、対応するpayment service providerと連携する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply before integrating Tap to Pay into the iOS payment app."
+      ],
+      "review_note": "Recovered MUST from the explicit You need integration prerequisite."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0033": {
+      "title": "Obtain the Tap to Pay on iPhone entitlement before integration",
+      "statement": {
+        "en": "Obtain the Tap to Pay on iPhone entitlement before integration.",
+        "ja": "統合前にTap to Pay on iPhone entitlementを取得する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply before integrating Tap to Pay into the iOS payment app."
+      ],
+      "review_note": "Recovered MUST from the explicit You need integration prerequisite."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0034": {
+      "title": "Use ProximityReader APIs for Tap to Pay integration",
+      "statement": {
+        "en": "Use ProximityReader APIs through the PSP SDK or the framework for Tap to Pay integration.",
+        "ja": "Tap to Payの統合には、PSP SDKまたはframework経由でProximityReader APIを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply while integrating Tap to Pay into the iOS payment app."
+      ],
+      "review_note": "Recovered MUST from the explicit You need integration prerequisite and preserved both supported adoption paths."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0035": {
+      "title": "Obtain merchant acceptance before enabling or configuring Tap to Pay",
+      "statement": {
+        "en": "Obtain the merchant’s acceptance of the relevant terms before enabling Tap to Pay or configuring the device.",
+        "ja": "Tap to Payの有効化や端末設定の前に、加盟店から関連規約への同意を得る。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply before initial device configuration and feature enablement."
+      ],
+      "review_note": "Recovered MUST from the explicit merchant must accept prerequisite."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0044": {
+      "title": "Let merchants switch payment methods during checkout without opening settings",
+      "statement": {
+        "en": "Let merchants choose among configured payment methods during checkout without visiting app settings.",
+        "ja": "設定済みの支払い方法を、アプリ設定を開かずcheckout中に選べるようにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Tap to Pay and supported hardware payment methods have completed setup."
+      ],
+      "review_note": "Recovered MUST from the supporting Make sure directive after payment-method setup."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0047": {
+      "title": "Never include the Apple logo in Tap to Pay buttons",
+      "statement": {
+        "en": "Never include the Apple logo in a Tap to Pay button.",
+        "ja": "Tap to PayボタンにAppleロゴを含めない。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply to every Tap to Pay activation button."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit Always avoid prohibition."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0050": {
+      "title": "Offer total-affecting interactions before the Tap to Pay screen",
+      "statement": {
+        "en": "Offer tipping and other total-affecting interactions before presenting the Tap to Pay screen.",
+        "ja": "チップなど最終金額に影響する操作をTap to Pay画面の表示前に提供する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "A customer interaction can change the final payable amount."
+      ],
+      "review_note": "Recovered MUST from the supporting Make sure directive that protects final-amount accuracy."
+    },
     "HIG-TECHNOLOGIES-NFC-0012": {
       "title": "Provide in-app tag scanning on devices without background tag reading",
       "statement": {
