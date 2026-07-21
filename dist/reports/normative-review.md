@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 138
-- Retained MUST: 128
+- Reviewed rules: 142
+- Retained MUST: 132
 - Retained MUST_NOT: 10
 - Normative level changes: 3
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:32:31Z
+- Reviewed at: 2026-07-21T14:38:47Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -56,6 +56,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-EYES-0001 — Retained MUST after confirming the accessibility-critical Always directive to provide multiple interaction methods, including alternatives to eye input. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0013 — Recovered and retained MUST after confirming the explicit Make sure requirement to keep primary-task objects within the field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0016 — Recovered and retained MUST after confirming the conditional Be sure requirement for an overall multi-element highlight shape or region. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0003 — Retained MUST after confirming the explicit Ensure requirement for predictable traversal through custom iPadOS views. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0009 — Recovered and retained MUST after confirming the explicit make sure requirement that every onscreen tvOS element be focusable. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0013 — Recovered and retained MUST after confirming the conditional make sure requirement for a required tvOS pointer. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0014 — Recovered and retained MUST after confirming the explicit need to supply sharp larger focused-size assets. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0015 — Recovered and retained MUST after confirming the explicit make sure requirement to prevent focused-item crowding. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -154,7 +159,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-EYES-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the accessibility-critical Always directive to provide multiple interaction methods, including alternatives to eye input. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0013 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Make sure requirement to keep primary-task objects within the field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional Be sure requirement for an overall multi-element highlight shape or region. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- HIG-INPUTS-FOCUS-AND-SELECTION-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure requirement for predictable traversal through custom iPadOS views. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0009 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure requirement that every onscreen tvOS element be focusable. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0013 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional make sure requirement for a required tvOS pointer. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit need to supply sharp larger focused-size assets. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0015 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure requirement to prevent focused-item crowding. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-GAME-CONTROLS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GAME-CONTROLS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))

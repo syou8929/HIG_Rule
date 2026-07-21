@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T14:35:20.937Z. 1952 active rules; 3 deprecated rules.
+Generated 2026-07-21T14:42:47.265Z. 1960 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1601,14 +1601,22 @@ Generated 2026-07-21T14:35:20.937Z. 1952 active rules; 3 deprecated rules.
 - **HIG-INPUTS-EYES-0017 · SHOULD · high** — Test custom hover effects thoroughly while wearing Apple Vision Pro. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 ### focus-and-selection
 
-- **HIG-INPUTS-FOCUS-AND-SELECTION-0001 · AVOID · low** — Exclude changing focus without people’s interaction from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
-- **HIG-INPUTS-FOCUS-AND-SELECTION-0002 · SHOULD · low** — Apply the documented Focus and selection guidance to be consistent with the platform as you help people bring focus to items in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
-- **HIG-INPUTS-FOCUS-AND-SELECTION-0003 · MUST · medium** — Verify that that focus moves through your custom views in ways that make sense. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
-- **HIG-INPUTS-FOCUS-AND-SELECTION-0004 · AVOID · low** — Exclude displaying a pointer from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
-- **HIG-INPUTS-FOCUS-AND-SELECTION-0005 · SHOULD · low** — Apply the documented Focus and selection guidance to design your interface to accommodate components in various focus states. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
-- **HIG-INPUTS-FOCUS-AND-SELECTION-0006 · SHOULD · low** — Generally, use a focus ring for a text or search field, but use a highlight in a list. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
-- **HIG-INPUTS-FOCUS-AND-SELECTION-0007 · SHOULD · low** — Indicate focus using visual appearances that are consistent with the platform. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
-- **HIG-INPUTS-FOCUS-AND-SELECTION-0008 · SHOULD · low** — Rely on system-provided focus effects. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0001 · AVOID · high** — Avoid changing focus without a person’s interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0002 · SHOULD · high** — Match focus navigation and focusable elements to each platform’s interaction model. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0003 · MUST · high** — Make focus move through custom iPadOS views in a predictable order. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0004 · AVOID · high** — Avoid using a pointer to navigate tvOS menus and interface elements. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0005 · SHOULD · high** — Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0006 · SHOULD · high** — Use a focus ring for text or search fields and a highlight for lists or collections. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0007 · SHOULD · high** — Indicate focus with visual appearances that are consistent with the platform. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0008 · SHOULD · high** — Rely on system-provided focus effects for responsive and predictable platform behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0009 · MUST · high** — Make every onscreen tvOS interface element reachable through focus navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0010 · SHOULD · high** — Customize an iPadOS halo focus effect only when the system-provided result is insufficient. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0011 · SHOULD · high** — Use iPadOS focus priority to reflect an item’s importance within its focus group. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0012 · SHOULD · high** — In a full-screen tvOS experience, let gestures interact with content instead of moving focus. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0013 · MUST · high** — When a tvOS app requires a pointer, make it highly visible and integrated with the experience. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0014 · MUST · high** — Supply assets that remain sharp at the larger size used for focused tvOS items. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0015 · MUST · high** — Prevent an enlarged focused tvOS item from crowding the surrounding interface. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0016 · SHOULD · high** — Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 ### game-controls
 
 - **HIG-INPUTS-GAME-CONTROLS-0001 · SHOULD · low** — Apply the documented Game controls guidance to place virtual buttons where they’re easy to access. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 480
-- Reviewed batches: 42
+- Reviewed rules: 496
+- Reviewed batches: 43
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:32:31Z
+- Reviewed at: 2026-07-21T14:38:47Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -481,6 +481,22 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-EYES-0015 · high — Recovered the general rounded-shape affordance without making it unconditional. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0016 · high — Recovered and retained the explicit Be sure requirement plus both supported highlight techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0017 · high — Recovered the device-on testing context that the truncated candidate omitted. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0001 · high — Preserved the default prohibition and both disappearance behaviors for directional and nondirectional input. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0002 · high — Separated platform-consistent behavior from the explicit all-elements tvOS requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0003 · high — Retained MUST and recorded the default reading order plus the custom vertical-stack technique. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0004 · high — Narrowed the AVOID rule to interface navigation and preserved gameplay and required-pointer exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0005 · high — Preserved all five table states and their distinct visual purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0006 · high — Recorded both default visual treatments and the cell-filling-content exception. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0007 · high — Recorded the platform-consistency goal and the official list-item appearance example. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0008 · high — Recorded the system-effect rationale and the narrow optional custom-effect exception. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0009 · high — Recovered and retained the explicit make sure requirement, with tvOS-only scope and all stated input methods. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0010 · high — Recovered the omitted actionable lead and preserved its necessity gate and two customization purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0011 · high — Recovered the priority lead and recorded the automatic primary-item behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0012 · high — Recovered the full-screen gesture behavior and its no-visible-focus rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0013 · high — Recovered and retained the conditional make sure requirement within the pointer exception. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0014 · high — Recovered and retained the explicit need requirement for larger focused-size assets. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0015 · high — Recovered and retained the explicit make sure spacing requirement for enlarged focus. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-FOCUS-AND-SELECTION-0016 · high — Recovered the visionOS platform distinction documented in the page note. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

@@ -84976,17 +84976,17 @@
   },
   {
     "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0001",
-    "title": "Avoid changing focus without people’s interaction",
+    "title": "Avoid moving focus without user interaction",
     "category": "inputs",
     "topic": "focus-and-selection",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude changing focus without people’s interaction from the applicable experience.",
-      "ja": "該当する体験ではchanging focus without people’s interactionを避ける。"
+      "en": "Avoid changing focus without a person’s interaction.",
+      "ja": "利用者の操作なしにfocusを変更しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -85007,9 +85007,12 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve a predictable focus location so people can continue their current task."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "When directional input is moving focus and the focused item disappears, move focus one discrete step to a nearby remaining item.",
+      "Without directional input, hide the focus indicator when its focused object disappears."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
@@ -85017,7 +85020,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude changing focus without people’s interaction from the applicable experience.” in the documented Focus and selection context?"
+        "Does the design satisfy “Avoid changing focus without a person’s interaction.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -85034,10 +85037,10 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:51.637Z",
-      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
       "source_sentence_hash": "396dc62acf5577528d7528a7c7fabc248417214135ffd2e03da7eb90089a99ac",
-      "evidence_paraphrase": "Exclude changing focus without people’s interaction from the applicable experience."
+      "evidence_paraphrase": "Avoid changing focus without a person’s interaction."
     },
     "tags": [
       "inputs",
@@ -85046,22 +85049,22 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Exclude changing focus without people’s interaction from the applicable experience.",
+    "apple_native_rule": "Avoid changing focus without a person’s interaction.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0002",
-    "title": "Be consistent with the platform as you help people bring focus to items in your app",
+    "title": "Match focus behavior to each platform",
     "category": "inputs",
     "topic": "focus-and-selection",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Focus and selection guidance to be consistent with the platform as you help people bring focus to items in your app.",
-      "ja": "「Focus and selection」において「Be consistent with the platform as you help people bring focus to items in your app」の指針を適用する。"
+      "en": "Match focus navigation and focusable elements to each platform’s interaction model.",
+      "ja": "focus navigationとfocus可能なelementを各platformのinteraction modelに合わせる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -85082,7 +85085,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "On iPadOS and macOS, support focus for content elements while Full Keyboard Access reaches controls.",
+      "On tvOS, directional input is the primary navigation model."
     ],
     "exceptions": [],
     "rationale": {
@@ -85092,7 +85096,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Focus and selection guidance to be consistent with the platform as you help people bring focus to items in your app.” in the documented Focus and selection context?"
+        "Does the design satisfy “Match focus navigation and focusable elements to each platform’s interaction model.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -85109,10 +85113,10 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:51.637Z",
-      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
       "source_sentence_hash": "3884ad27a832479e1ac37931ba381e8051d4e654414b84b1a842e636c1bb6056",
-      "evidence_paraphrase": "Apply the documented Focus and selection guidance to be consistent with the platform as you help people bring focus to items in your app."
+      "evidence_paraphrase": "Match focus navigation and focusable elements to each platform’s interaction model."
     },
     "tags": [
       "inputs",
@@ -85121,21 +85125,21 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Apply the documented Focus and selection guidance to be consistent with the platform as you help people bring focus to items in your app.",
+    "apple_native_rule": "Match focus navigation and focusable elements to each platform’s interaction model.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0003",
-    "title": "Ensure that focus moves through your custom views in ways that make sense",
+    "title": "Make custom iPadOS focus traversal predictable",
     "category": "inputs",
     "topic": "focus-and-selection",
     "subtopic": "ipados",
     "statement": {
-      "en": "Verify that that focus moves through your custom views in ways that make sense.",
-      "ja": "that focus moves through your custom views in ways that make senseを満たしていることを確認する。"
+      "en": "Make focus move through custom iPadOS views in a predictable order.",
+      "ja": "custom iPadOS view間でfocusが予測可能な順序で移動するようにする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -85151,7 +85155,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Default focus-group traversal follows reading order: leading to trailing, then top to bottom.",
+      "Identify a vertical custom-view stack as one focus group when focus should traverse it before moving trailing."
     ],
     "exceptions": [],
     "rationale": {
@@ -85161,7 +85166,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that that focus moves through your custom views in ways that make sense.” in the documented Focus and selection context?"
+        "Does the design satisfy “Make focus move through custom iPadOS views in a predictable order.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -85179,10 +85184,10 @@
         "Platform considerations",
         "iPadOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:51.637Z",
-      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
       "source_sentence_hash": "b8b14622e2125eb14b63bccf19674ebe507801f9c830c9476b864bfc2475040d",
-      "evidence_paraphrase": "Verify that that focus moves through your custom views in ways that make sense."
+      "evidence_paraphrase": "Make focus move through custom iPadOS views in a predictable order."
     },
     "tags": [
       "inputs",
@@ -85192,22 +85197,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Verify that that focus moves through your custom views in ways that make sense.",
+    "apple_native_rule": "Make focus move through custom iPadOS views in a predictable order.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0004",
-    "title": "Avoid displaying a pointer",
+    "title": "Avoid pointers for tvOS interface navigation",
     "category": "inputs",
     "topic": "focus-and-selection",
     "subtopic": "tvos",
     "statement": {
-      "en": "Exclude displaying a pointer from the applicable experience.",
-      "ja": "該当する体験ではdisplaying a pointerを避ける。"
+      "en": "Avoid using a pointer to navigate tvOS menus and interface elements.",
+      "ja": "tvOSのmenuやinterface elementのnavigationにpointerを使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -85224,9 +85229,12 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the focus model for a fixed set of navigable interface items."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Free-form movement can be appropriate during gameplay.",
+      "If a pointer is required, apply the separate visibility and integration requirement."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
@@ -85234,7 +85242,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude displaying a pointer from the applicable experience.” in the documented Focus and selection context?"
+        "Does the design satisfy “Avoid using a pointer to navigate tvOS menus and interface elements.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -85252,10 +85260,10 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:51.637Z",
-      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
       "source_sentence_hash": "c021db8856b683979cdcfd8a0303252d60f8371649fb10897a41403ea58c2c25",
-      "evidence_paraphrase": "Exclude displaying a pointer from the applicable experience."
+      "evidence_paraphrase": "Avoid using a pointer to navigate tvOS menus and interface elements."
     },
     "tags": [
       "inputs",
@@ -85266,22 +85274,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude displaying a pointer from the applicable experience.",
+    "apple_native_rule": "Avoid using a pointer to navigate tvOS menus and interface elements.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0005",
-    "title": "Design your interface to accommodate components in various focus states",
+    "title": "Design for every tvOS focus state",
     "category": "inputs",
     "topic": "focus-and-selection",
     "subtopic": "tvos",
     "statement": {
-      "en": "Apply the documented Focus and selection guidance to design your interface to accommodate components in various focus states.",
-      "ja": "「Focus and selection」において「Design your interface to accommodate components in various focus states」の指針を適用する。"
+      "en": "Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states.",
+      "ja": "tvOSのfocus可能な項目をunfocused、focused、chosen、selected、unavailableの各状態に合わせて設計する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -85296,7 +85304,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Focused items stand out through foreground elevation, illumination, and animation.",
+      "Chosen items provide immediate visual feedback before the selected appearance.",
+      "Selected items communicate activation; unavailable items appear inactive."
     ],
     "exceptions": [],
     "rationale": {
@@ -85306,7 +85316,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Focus and selection guidance to design your interface to accommodate components in various focus states.” in the documented Focus and selection context?"
+        "Does the design satisfy “Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -85324,10 +85334,10 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:51.637Z",
-      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
       "source_sentence_hash": "468abc4728da5ae8d3acd8b4608200ce722bb503727530d7597419a7510cb446",
-      "evidence_paraphrase": "Apply the documented Focus and selection guidance to design your interface to accommodate components in various focus states."
+      "evidence_paraphrase": "Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states."
     },
     "tags": [
       "inputs",
@@ -85337,22 +85347,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Focus and selection guidance to design your interface to accommodate components in various focus states.",
+    "apple_native_rule": "Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0006",
-    "title": "In general, use a focus ring for a text or search field, but use a highlight in a list",
+    "title": "Match focus indication to the content type",
     "category": "inputs",
     "topic": "focus-and-selection",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Generally, use a focus ring for a text or search field, but use a highlight in a list.",
-      "ja": "通常はa focus ring for a text or search field, but use a highlight in a listを使う。"
+      "en": "Use a focus ring for text or search fields and a highlight for lists or collections.",
+      "ja": "text fieldやsearch fieldにはfocus ring、listやcollectionにはhighlightを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -85375,7 +85385,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A focus ring can suit an item such as a photo that fills a collection cell."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
@@ -85383,7 +85395,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Generally, use a focus ring for a text or search field, but use a highlight in a list.” in the documented Focus and selection context?"
+        "Does the design satisfy “Use a focus ring for text or search fields and a highlight for lists or collections.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -85400,10 +85412,10 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:51.637Z",
-      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
       "source_sentence_hash": "16ddc632daa53f6d1e12e91c0a6a39db33138f7d3757e21c4d7586590db0bc75",
-      "evidence_paraphrase": "Generally, use a focus ring for a text or search field, but use a highlight in a list."
+      "evidence_paraphrase": "Use a focus ring for text or search fields and a highlight for lists or collections."
     },
     "tags": [
       "inputs",
@@ -85412,22 +85424,22 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Generally, use a focus ring for a text or search field, but use a highlight in a list.",
+    "apple_native_rule": "Use a focus ring for text or search fields and a highlight for lists or collections.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0007",
-    "title": "Indicate focus using visual appearances that are consistent with the platform",
+    "title": "Use platform-consistent focus appearances",
     "category": "inputs",
     "topic": "focus-and-selection",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Indicate focus using visual appearances that are consistent with the platform.",
-      "ja": "focus using visual appearances that are consistent with the platformを示す。"
+      "en": "Indicate focus with visual appearances that are consistent with the platform.",
+      "ja": "platformと一貫したvisual appearanceでfocusを示す。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -85448,7 +85460,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "On iPadOS and macOS, focused list items use white text and the app accent color; unfocused highlights use standard text color and gray."
     ],
     "exceptions": [],
     "rationale": {
@@ -85458,7 +85470,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Indicate focus using visual appearances that are consistent with the platform.” in the documented Focus and selection context?"
+        "Does the design satisfy “Indicate focus with visual appearances that are consistent with the platform.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -85475,10 +85487,10 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:51.637Z",
-      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
       "source_sentence_hash": "4bb6bbc7615a7a0e1e65389182919eebaa2e37830a4dfadcc18de55f749c031b",
-      "evidence_paraphrase": "Indicate focus using visual appearances that are consistent with the platform."
+      "evidence_paraphrase": "Indicate focus with visual appearances that are consistent with the platform."
     },
     "tags": [
       "inputs",
@@ -85487,22 +85499,22 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Indicate focus using visual appearances that are consistent with the platform.",
+    "apple_native_rule": "Indicate focus with visual appearances that are consistent with the platform.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0008",
-    "title": "Rely on system-provided focus effects",
+    "title": "Rely on system focus effects",
     "category": "inputs",
     "topic": "focus-and-selection",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Rely on system-provided focus effects.",
-      "ja": "system-provided focus effectsを利用する。"
+      "en": "Rely on system-provided focus effects for responsive and predictable platform behavior.",
+      "ja": "responsiveで予測可能なplatform動作のためsystem提供のfocus effectを利用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -85525,7 +85537,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Consider a custom focus effect only when it is absolutely necessary."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
@@ -85533,7 +85547,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Rely on system-provided focus effects.” in the documented Focus and selection context?"
+        "Does the design satisfy “Rely on system-provided focus effects for responsive and predictable platform behavior.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -85550,10 +85564,10 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:51.637Z",
-      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
       "source_sentence_hash": "dcf51e735ce3bf949e063393551fc6a975a99ef000051bd31f3423b5ee80425c",
-      "evidence_paraphrase": "Rely on system-provided focus effects."
+      "evidence_paraphrase": "Rely on system-provided focus effects for responsive and predictable platform behavior."
     },
     "tags": [
       "inputs",
@@ -85562,7 +85576,587 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Rely on system-provided focus effects.",
+    "apple_native_rule": "Rely on system-provided focus effects for responsive and predictable platform behavior.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0009",
+    "title": "Make every tvOS interface element focusable",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Make every onscreen tvOS interface element reachable through focus navigation.",
+      "ja": "画面上のすべてのtvOS interface elementへfocus navigationで到達できるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control",
+        "game-controller",
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "People use directional remote, game-controller, or keyboard input to reach onscreen elements."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make every onscreen tvOS interface element reachable through focus navigation.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "source_sentence_hash": "0324dfe2fce09d138f9aa8d839724497e420ad163db66677491dd09396c07a44",
+      "evidence_paraphrase": "Make every onscreen tvOS interface element reachable through focus navigation."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "best-practices"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Make every onscreen tvOS interface element reachable through focus navigation.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0010",
+    "title": "Customize an iPadOS halo only when necessary",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "ipados",
+    "statement": {
+      "en": "Customize an iPadOS halo focus effect only when the system-provided result is insufficient.",
+      "ja": "system提供の結果で不十分な場合にだけiPadOSのhalo focus effectをcustomizeする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ipados"
+      ],
+      "devices": [
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Refine the halo to match contours such as rounded corners or Bézier paths.",
+      "Adjust its position when another component occludes or clips it."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Customize an iPadOS halo focus effect only when the system-provided result is insufficient.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Platform considerations",
+        "iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "source_sentence_hash": "907ed0fe97f44aea0f5856a164a46843bcc2b312a22a4247263c59b2032144db",
+      "evidence_paraphrase": "Customize an iPadOS halo focus effect only when the system-provided result is insufficient."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "platform-considerations",
+      "ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Customize an iPadOS halo focus effect only when the system-provided result is insufficient.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0011",
+    "title": "Use focus priority to reflect item importance",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "ipados",
+    "statement": {
+      "en": "Use iPadOS focus priority to reflect an item’s importance within its focus group.",
+      "ja": "iPadOSのfocus priorityでfocus group内の項目の重要度を表す。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ipados"
+      ],
+      "devices": [
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Increasing an item’s priority makes it the primary item that receives focus when the group does."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use iPadOS focus priority to reflect an item’s importance within its focus group.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Platform considerations",
+        "iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "source_sentence_hash": "a08fe73d5213424dc43711f0b2d6b2d1004935cb42f7c205fcfa99dca93f692b",
+      "evidence_paraphrase": "Use iPadOS focus priority to reflect an item’s importance within its focus group."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "platform-considerations",
+      "ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use iPadOS focus priority to reflect an item’s importance within its focus group.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0012",
+    "title": "Use full-screen tvOS gestures for content interaction",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "In a full-screen tvOS experience, let gestures interact with content instead of moving focus.",
+      "ja": "full-screenのtvOS体験ではgestureをfocus移動ではなくcontent操作に使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture"
+      ]
+    },
+    "conditions": [
+      "A full-screen item does not display focus, so people expect gestures to affect the object."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “In a full-screen tvOS experience, let gestures interact with content instead of moving focus.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "source_sentence_hash": "897a92b493b15fec29f6d9ddf3801d5e8924b774780902caa6e882495b083e94",
+      "evidence_paraphrase": "In a full-screen tvOS experience, let gestures interact with content instead of moving focus."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "platform-considerations",
+      "tvos",
+      "gesture"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "In a full-screen tvOS experience, let gestures interact with content instead of moving focus.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0013",
+    "title": "Make a required tvOS pointer visible and integrated",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "When a tvOS app requires a pointer, make it highly visible and integrated with the experience.",
+      "ja": "tvOS appにpointerが必要な場合は、見やすく体験に統合されたものにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "pointer"
+      ]
+    },
+    "conditions": [
+      "The app requires a pointer despite the default focus-model guidance."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When a tvOS app requires a pointer, make it highly visible and integrated with the experience.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "source_sentence_hash": "0920e4049295ddabc49ffdd35891cc4bb23223ebf42d9ccf5daa19630e7b907f",
+      "evidence_paraphrase": "When a tvOS app requires a pointer, make it highly visible and integrated with the experience."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "platform-considerations",
+      "tvos",
+      "pointer"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When a tvOS app requires a pointer, make it highly visible and integrated with the experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0014",
+    "title": "Supply sharp assets for enlarged tvOS focus",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "Supply assets that remain sharp at the larger size used for focused tvOS items.",
+      "ja": "focusされたtvOS項目の拡大サイズでも鮮明さを保つassetを用意する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The focus effect increases the item’s scale."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Supply assets that remain sharp at the larger size used for focused tvOS items.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "source_sentence_hash": "f7221cac30445985d9c07b45703f35c04d4298e76f22cefe67ee2259891da6e1",
+      "evidence_paraphrase": "Supply assets that remain sharp at the larger size used for focused tvOS items."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "platform-considerations",
+      "tvos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Supply assets that remain sharp at the larger size used for focused tvOS items.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0015",
+    "title": "Prevent enlarged focused items from crowding tvOS interfaces",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "Prevent an enlarged focused tvOS item from crowding the surrounding interface.",
+      "ja": "focusで拡大したtvOS項目が周囲のinterfaceを圧迫しないようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The focus effect increases the item’s scale."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prevent an enlarged focused tvOS item from crowding the surrounding interface.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "source_sentence_hash": "f7221cac30445985d9c07b45703f35c04d4298e76f22cefe67ee2259891da6e1",
+      "evidence_paraphrase": "Prevent an enlarged focused tvOS item from crowding the surrounding interface."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "platform-considerations",
+      "tvos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Prevent an enlarged focused tvOS item from crowding the surrounding interface.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0016",
+    "title": "Use hover effects for visionOS gaze feedback",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting.",
+      "ja": "visionOSのgaze targeting feedbackにはfocus effectではなくhover effectを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "gaze"
+      ]
+    },
+    "conditions": [
+      "The system treats gaze-based object identification separately from the focus system."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T14:38:47Z",
+      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "source_sentence_hash": "d6628c89798972eef100a6cc17e32b25fd5a4780a154de23208ce692b4369b7d",
+      "evidence_paraphrase": "Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "platform-considerations",
+      "visionos",
+      "gaze"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

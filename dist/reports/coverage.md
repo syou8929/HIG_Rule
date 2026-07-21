@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 1952
+- Active atomic rules: 1960
 - Pages without rules: 16
-- Low-confidence rules: 1368
-- Rules requiring human review: 1368
+- Low-confidence rules: 1361
+- Rules requiring human review: 1361
 - Reference notes: 925
 
 ## Rules by category
@@ -16,7 +16,7 @@
 - components: 647
 - foundations: 312
 - getting-started: 85
-- inputs: 156
+- inputs: 164
 - patterns: 228
 - technologies: 524
 
@@ -24,24 +24,24 @@
 
 - AVOID: 249
 - MAY: 226
-- MUST: 128
+- MUST: 132
 - MUST_NOT: 10
-- SHOULD: 1339
+- SHOULD: 1343
 
 ## Rules by platform
 
 - carplay: 73
 - ios: 1357
-- ipados: 1367
+- ipados: 1369
 - macos: 1205
-- tvos: 908
-- visionos: 1268
+- tvos: 913
+- visionos: 1269
 - watchos: 1012
 
 ## Rules by testability
 
 - hybrid: 64
-- manual: 1888
+- manual: 1896
 
 ## Blocked pages
 
@@ -658,13 +658,6 @@ None.
 - HIG-INPUTS-DIGITAL-CROWN-0001
 - HIG-INPUTS-DIGITAL-CROWN-0002
 - HIG-INPUTS-DIGITAL-CROWN-0003
-- HIG-INPUTS-FOCUS-AND-SELECTION-0001
-- HIG-INPUTS-FOCUS-AND-SELECTION-0002
-- HIG-INPUTS-FOCUS-AND-SELECTION-0004
-- HIG-INPUTS-FOCUS-AND-SELECTION-0005
-- HIG-INPUTS-FOCUS-AND-SELECTION-0006
-- HIG-INPUTS-FOCUS-AND-SELECTION-0007
-- HIG-INPUTS-FOCUS-AND-SELECTION-0008
 - HIG-INPUTS-GAME-CONTROLS-0001
 - HIG-INPUTS-GAME-CONTROLS-0004
 - HIG-INPUTS-GAME-CONTROLS-0005
@@ -2029,13 +2022,6 @@ None.
 - HIG-INPUTS-DIGITAL-CROWN-0001
 - HIG-INPUTS-DIGITAL-CROWN-0002
 - HIG-INPUTS-DIGITAL-CROWN-0003
-- HIG-INPUTS-FOCUS-AND-SELECTION-0001
-- HIG-INPUTS-FOCUS-AND-SELECTION-0002
-- HIG-INPUTS-FOCUS-AND-SELECTION-0004
-- HIG-INPUTS-FOCUS-AND-SELECTION-0005
-- HIG-INPUTS-FOCUS-AND-SELECTION-0006
-- HIG-INPUTS-FOCUS-AND-SELECTION-0007
-- HIG-INPUTS-FOCUS-AND-SELECTION-0008
 - HIG-INPUTS-GAME-CONTROLS-0001
 - HIG-INPUTS-GAME-CONTROLS-0004
 - HIG-INPUTS-GAME-CONTROLS-0005

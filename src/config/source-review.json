@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T14:32:31Z",
+  "reviewed_at": "2026-07-21T14:38:47Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1145,9 +1145,156 @@
         "HIG-INPUTS-EYES-0017"
       ],
       "review_note": "Reviewed visionOS eye-input privacy, comfort, visibility, spacing, affordances, and custom hover behavior; recovered six omitted atomic rules."
+    },
+    {
+      "id": "priority-4-focus-and-selection-context-2026-07-21",
+      "reviewed_at": "2026-07-21T14:38:47Z",
+      "review_method": "Rendered Apple HIG Focus and selection guidance, supporting prose, platform notes, and tvOS state table were reviewed; two repeated live renders matched the updated stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+          "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6"
+        }
+      ],
+      "rule_ids": [
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0001",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0002",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0003",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0004",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0005",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0006",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0007",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0008",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0009",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0010",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0011",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0012",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0013",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0014",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0015",
+        "HIG-INPUTS-FOCUS-AND-SELECTION-0016"
+      ],
+      "review_note": "Reviewed cross-platform focus behavior plus iPadOS, tvOS, and visionOS specifics; recovered eight omitted atomic rules and refreshed a changed page hash."
     }
   ],
   "rules": {
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0001": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"396dc62acf5577528d7528a7c7fabc248417214135ffd2e03da7eb90089a99ac","section_path":["Focus and selection","Best practices"]},
+      "title": "Avoid moving focus without user interaction",
+      "statement": {"en":"Avoid changing focus without a person’s interaction.","ja":"利用者の操作なしにfocusを変更しない。"},
+      "conditions": ["Preserve a predictable focus location so people can continue their current task."],
+      "exceptions": ["When directional input is moving focus and the focused item disappears, move focus one discrete step to a nearby remaining item.", "Without directional input, hide the focus indicator when its focused object disappears."],
+      "review_note": "Preserved the default prohibition and both disappearance behaviors for directional and nondirectional input."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0002": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"3884ad27a832479e1ac37931ba381e8051d4e654414b84b1a842e636c1bb6056","section_path":["Focus and selection","Best practices"]},
+      "title": "Match focus behavior to each platform",
+      "statement": {"en":"Match focus navigation and focusable elements to each platform’s interaction model.","ja":"focus navigationとfocus可能なelementを各platformのinteraction modelに合わせる。"},
+      "conditions": ["On iPadOS and macOS, support focus for content elements while Full Keyboard Access reaches controls.", "On tvOS, directional input is the primary navigation model."],
+      "review_note": "Separated platform-consistent behavior from the explicit all-elements tvOS requirement."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0003": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"b8b14622e2125eb14b63bccf19674ebe507801f9c830c9476b864bfc2475040d","section_path":["Focus and selection","Platform considerations","iPadOS"]},
+      "title": "Make custom iPadOS focus traversal predictable",
+      "statement": {"en":"Make focus move through custom iPadOS views in a predictable order.","ja":"custom iPadOS view間でfocusが予測可能な順序で移動するようにする。"},
+      "conditions": ["Default focus-group traversal follows reading order: leading to trailing, then top to bottom.", "Identify a vertical custom-view stack as one focus group when focus should traverse it before moving trailing."],
+      "review_note": "Retained MUST and recorded the default reading order plus the custom vertical-stack technique."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0004": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"c021db8856b683979cdcfd8a0303252d60f8371649fb10897a41403ea58c2c25","section_path":["Focus and selection","Platform considerations","tvOS"]},
+      "title": "Avoid pointers for tvOS interface navigation",
+      "statement": {"en":"Avoid using a pointer to navigate tvOS menus and interface elements.","ja":"tvOSのmenuやinterface elementのnavigationにpointerを使わない。"},
+      "conditions": ["Use the focus model for a fixed set of navigable interface items."],
+      "exceptions": ["Free-form movement can be appropriate during gameplay.", "If a pointer is required, apply the separate visibility and integration requirement."],
+      "review_note": "Narrowed the AVOID rule to interface navigation and preserved gameplay and required-pointer exceptions."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0005": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"468abc4728da5ae8d3acd8b4608200ce722bb503727530d7597419a7510cb446","section_path":["Focus and selection","Platform considerations","tvOS"]},
+      "title": "Design for every tvOS focus state",
+      "statement": {"en":"Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states.","ja":"tvOSのfocus可能な項目をunfocused、focused、chosen、selected、unavailableの各状態に合わせて設計する。"},
+      "conditions": ["Focused items stand out through foreground elevation, illumination, and animation.", "Chosen items provide immediate visual feedback before the selected appearance.", "Selected items communicate activation; unavailable items appear inactive."],
+      "review_note": "Preserved all five table states and their distinct visual purposes."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0006": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"16ddc632daa53f6d1e12e91c0a6a39db33138f7d3757e21c4d7586590db0bc75","section_path":["Focus and selection","Best practices"]},
+      "title": "Match focus indication to the content type",
+      "statement": {"en":"Use a focus ring for text or search fields and a highlight for lists or collections.","ja":"text fieldやsearch fieldにはfocus ring、listやcollectionにはhighlightを使う。"},
+      "exceptions": ["A focus ring can suit an item such as a photo that fills a collection cell."],
+      "review_note": "Recorded both default visual treatments and the cell-filling-content exception."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0007": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"4bb6bbc7615a7a0e1e65389182919eebaa2e37830a4dfadcc18de55f749c031b","section_path":["Focus and selection","Best practices"]},
+      "title": "Use platform-consistent focus appearances",
+      "statement": {"en":"Indicate focus with visual appearances that are consistent with the platform.","ja":"platformと一貫したvisual appearanceでfocusを示す。"},
+      "conditions": ["On iPadOS and macOS, focused list items use white text and the app accent color; unfocused highlights use standard text color and gray."],
+      "review_note": "Recorded the platform-consistency goal and the official list-item appearance example."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0008": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"dcf51e735ce3bf949e063393551fc6a975a99ef000051bd31f3423b5ee80425c","section_path":["Focus and selection","Best practices"]},
+      "title": "Rely on system focus effects",
+      "statement": {"en":"Rely on system-provided focus effects for responsive and predictable platform behavior.","ja":"responsiveで予測可能なplatform動作のためsystem提供のfocus effectを利用する。"},
+      "exceptions": ["Consider a custom focus effect only when it is absolutely necessary."],
+      "review_note": "Recorded the system-effect rationale and the narrow optional custom-effect exception."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0009": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"0324dfe2fce09d138f9aa8d839724497e420ad163db66677491dd09396c07a44","section_path":["Focus and selection","Best practices"]},
+      "title": "Make every tvOS interface element focusable",
+      "statement": {"en":"Make every onscreen tvOS interface element reachable through focus navigation.","ja":"画面上のすべてのtvOS interface elementへfocus navigationで到達できるようにする。"},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":["remote-control","game-controller","keyboard"]},
+      "conditions": ["People use directional remote, game-controller, or keyboard input to reach onscreen elements."],
+      "review_note": "Recovered and retained the explicit make sure requirement, with tvOS-only scope and all stated input methods."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0010": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"907ed0fe97f44aea0f5856a164a46843bcc2b312a22a4247263c59b2032144db","section_path":["Focus and selection","Platform considerations","iPadOS"]},
+      "title": "Customize an iPadOS halo only when necessary",
+      "statement": {"en":"Customize an iPadOS halo focus effect only when the system-provided result is insufficient.","ja":"system提供の結果で不十分な場合にだけiPadOSのhalo focus effectをcustomizeする。"},
+      "conditions": ["Refine the halo to match contours such as rounded corners or Bézier paths.", "Adjust its position when another component occludes or clips it."],
+      "review_note": "Recovered the omitted actionable lead and preserved its necessity gate and two customization purposes."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0011": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"a08fe73d5213424dc43711f0b2d6b2d1004935cb42f7c205fcfa99dca93f692b","section_path":["Focus and selection","Platform considerations","iPadOS"]},
+      "title": "Use focus priority to reflect item importance",
+      "statement": {"en":"Use iPadOS focus priority to reflect an item’s importance within its focus group.","ja":"iPadOSのfocus priorityでfocus group内の項目の重要度を表す。"},
+      "conditions": ["Increasing an item’s priority makes it the primary item that receives focus when the group does."],
+      "review_note": "Recovered the priority lead and recorded the automatic primary-item behavior."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0012": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"897a92b493b15fec29f6d9ddf3801d5e8924b774780902caa6e882495b083e94","section_path":["Focus and selection","Platform considerations","tvOS"]},
+      "title": "Use full-screen tvOS gestures for content interaction",
+      "statement": {"en":"In a full-screen tvOS experience, let gestures interact with content instead of moving focus.","ja":"full-screenのtvOS体験ではgestureをfocus移動ではなくcontent操作に使う。"},
+      "conditions": ["A full-screen item does not display focus, so people expect gestures to affect the object."],
+      "review_note": "Recovered the full-screen gesture behavior and its no-visible-focus rationale."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0013": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"0920e4049295ddabc49ffdd35891cc4bb23223ebf42d9ccf5daa19630e7b907f","section_path":["Focus and selection","Platform considerations","tvOS"]},
+      "title": "Make a required tvOS pointer visible and integrated",
+      "statement": {"en":"When a tvOS app requires a pointer, make it highly visible and integrated with the experience.","ja":"tvOS appにpointerが必要な場合は、見やすく体験に統合されたものにする。"},
+      "conditions": ["The app requires a pointer despite the default focus-model guidance."],
+      "review_note": "Recovered and retained the conditional make sure requirement within the pointer exception."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0014": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"f7221cac30445985d9c07b45703f35c04d4298e76f22cefe67ee2259891da6e1","section_path":["Focus and selection","Platform considerations","tvOS"]},
+      "title": "Supply sharp assets for enlarged tvOS focus",
+      "statement": {"en":"Supply assets that remain sharp at the larger size used for focused tvOS items.","ja":"focusされたtvOS項目の拡大サイズでも鮮明さを保つassetを用意する。"},
+      "conditions": ["The focus effect increases the item’s scale."],
+      "review_note": "Recovered and retained the explicit need requirement for larger focused-size assets."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0015": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"f7221cac30445985d9c07b45703f35c04d4298e76f22cefe67ee2259891da6e1","section_path":["Focus and selection","Platform considerations","tvOS"]},
+      "title": "Prevent enlarged focused items from crowding tvOS interfaces",
+      "statement": {"en":"Prevent an enlarged focused tvOS item from crowding the surrounding interface.","ja":"focusで拡大したtvOS項目が周囲のinterfaceを圧迫しないようにする。"},
+      "conditions": ["The focus effect increases the item’s scale."],
+      "review_note": "Recovered and retained the explicit make sure spacing requirement for enlarged focus."
+    },
+    "HIG-INPUTS-FOCUS-AND-SELECTION-0016": {
+      "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"d6628c89798972eef100a6cc17e32b25fd5a4780a154de23208ce692b4369b7d","section_path":["Focus and selection","Platform considerations","visionOS"]},
+      "title": "Use hover effects for visionOS gaze feedback",
+      "statement": {"en":"Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting.","ja":"visionOSのgaze targeting feedbackにはfocus effectではなくhover effectを使う。"},
+      "conditions": ["The system treats gaze-based object identification separately from the focus system."],
+      "review_note": "Recovered the visionOS platform distinction documented in the page note."
+    },
     "HIG-INPUTS-EYES-0001": {
       "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"114a5cc3bd28f01e7020341018b234bca101106fd239c9801ecb563fc27e90d9","section_path":["Eyes","Best practices"]},
       "title": "Offer alternatives to eye-based interaction",
