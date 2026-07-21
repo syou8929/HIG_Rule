@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:44:54.770Z. 2212 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:48:56.491Z. 2215 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1052,8 +1052,11 @@ Generated 2026-07-21T16:44:54.770Z. 2212 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004 · SHOULD · low** — Choose or apply no more than one disclosure button in a single view in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
 ### dock-menus
 
-- **HIG-COMPONENTS-DOCK-MENUS-0001 · SHOULD · low** — Apply the documented Dock menus guidance to make custom Dock menu items available in other places, too. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
-- **HIG-COMPONENTS-DOCK-MENUS-0002 · SHOULD · low** — Favor high-value custom items for your Dock menu when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- **HIG-COMPONENTS-DOCK-MENUS-0001 · SHOULD · high** — Make every custom Dock-menu command available through another visible part of the Mac app. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- **HIG-COMPONENTS-DOCK-MENUS-0002 · SHOULD · high** — Prefer high-value commands and destinations for custom Dock-menu items. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- **HIG-COMPONENTS-DOCK-MENUS-0003 · MUST · high** — Give every Dock-menu item a succinct label. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- **HIG-COMPONENTS-DOCK-MENUS-0004 · MUST · high** — Organize every Dock menu logically. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- **HIG-COMPONENTS-DOCK-MENUS-0005 · MAY · high** — Consider listing a few likely useful Dock-menu actions when the app isn’t frontmost or has no open windows. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 ### edit-menus
 
 - **HIG-COMPONENTS-EDIT-MENUS-0001 · SHOULD · low** — Favor the system-provided edit menu when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))

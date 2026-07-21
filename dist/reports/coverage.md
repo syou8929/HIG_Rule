@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2212
+- Active atomic rules: 2215
 - Pages without rules: 16
-- Low-confidence rules: 1153
-- Rules requiring human review: 1153
+- Low-confidence rules: 1151
+- Rules requiring human review: 1151
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 704
+- components: 707
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -23,8 +23,8 @@
 ## Normative levels
 
 - AVOID: 300
-- MAY: 242
-- MUST: 184
+- MAY: 243
+- MUST: 186
 - MUST_NOT: 21
 - SHOULD: 1465
 
@@ -33,7 +33,7 @@
 - carplay: 89
 - ios: 1556
 - ipados: 1525
-- macos: 1289
+- macos: 1292
 - tvos: 993
 - visionos: 1352
 - watchos: 1062
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 65
-- manual: 2147
+- manual: 2150
 
 ## Blocked pages
 
@@ -136,8 +136,6 @@ None.
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004
-- HIG-COMPONENTS-DOCK-MENUS-0001
-- HIG-COMPONENTS-DOCK-MENUS-0002
 - HIG-COMPONENTS-EDIT-MENUS-0001
 - HIG-COMPONENTS-EDIT-MENUS-0002
 - HIG-COMPONENTS-EDIT-MENUS-0003
@@ -1292,8 +1290,6 @@ None.
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004
-- HIG-COMPONENTS-DOCK-MENUS-0001
-- HIG-COMPONENTS-DOCK-MENUS-0002
 - HIG-COMPONENTS-EDIT-MENUS-0001
 - HIG-COMPONENTS-EDIT-MENUS-0002
 - HIG-COMPONENTS-EDIT-MENUS-0003

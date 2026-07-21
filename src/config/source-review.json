@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:42:53Z",
+  "reviewed_at": "2026-07-21T16:47:09Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1958,9 +1958,132 @@
         "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003"
       ],
       "review_note": "Completed tvOS Digit entry views coverage; strengthened both existing rule traces and recovered the sensitive-data Always requirement as a separate MUST."
+    },
+    {
+      "id": "priority-4-dock-menus-context-2026-07-21",
+      "reviewed_at": "2026-07-21T16:47:09Z",
+      "review_method": "Rendered Apple HIG Dock menus guidance, supporting prose, general-menu requirements, high-value examples, alternate command access, and platform support were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/dock-menus",
+          "source_hash": "a312d884d4aa2e48bf76b07500cb1498d393cf210f939881bb484b7099f98d82"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-DOCK-MENUS-0001",
+        "HIG-COMPONENTS-DOCK-MENUS-0002",
+        "HIG-COMPONENTS-DOCK-MENUS-0003",
+        "HIG-COMPONENTS-DOCK-MENUS-0004",
+        "HIG-COMPONENTS-DOCK-MENUS-0005"
+      ],
+      "review_note": "Completed macOS Dock-menu coverage; recovered separate MUST rules for succinct labels and logical organization plus a conditional MAY for useful inactive-app actions."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-DOCK-MENUS-0001": {
+      "source": {
+        "source_hash": "a312d884d4aa2e48bf76b07500cb1498d393cf210f939881bb484b7099f98d82",
+        "source_sentence_hash": "f47e75d13c1b5e860ef5428c8ddfb47445bc4575f486715036476b5f02923e20",
+        "section_path": [
+          "Dock menus",
+          "Best practices"
+        ]
+      },
+      "title": "Expose custom Dock-menu commands elsewhere",
+      "statement": {
+        "en": "Make every custom Dock-menu command available through another visible part of the Mac app.",
+        "ja": "すべてのcustom Dock menu commandをMacアプリ内の別の見える場所からも利用可能にする。"
+      },
+      "conditions": [
+        "Offer the same commands in places such as menu-bar menus or the app interface.",
+        "Account for people who don’t use the Dock menu."
+      ],
+      "review_note": "Recorded the discoverability rationale and the documented menu-bar and in-interface alternatives."
+    },
+    "HIG-COMPONENTS-DOCK-MENUS-0002": {
+      "source": {
+        "source_hash": "a312d884d4aa2e48bf76b07500cb1498d393cf210f939881bb484b7099f98d82",
+        "source_sentence_hash": "1da2e9421d3ab41c7136a9f62f07f9a00c11031ad275ebda8bfe729c1a70a189",
+        "section_path": [
+          "Dock menus",
+          "Best practices"
+        ]
+      },
+      "title": "Prefer high-value custom Dock-menu items",
+      "statement": {
+        "en": "Prefer high-value commands and destinations for custom Dock-menu items.",
+        "ja": "custom Dock menu itemには価値の高いcommandやdestinationを優先する。"
+      },
+      "conditions": [
+        "Current or recently open windows can provide convenient navigation destinations.",
+        "Limit action shortcuts to a few likely useful choices."
+      ],
+      "review_note": "Recorded the open-window navigation example and the source's focus on a small number of useful actions."
+    },
+    "HIG-COMPONENTS-DOCK-MENUS-0003": {
+      "source": {
+        "source_hash": "a312d884d4aa2e48bf76b07500cb1498d393cf210f939881bb484b7099f98d82",
+        "source_sentence_hash": "d605eba1c6a9ea4386806102548b3ad2220ac298c9d1a8df1cc072e280f81058",
+        "section_path": [
+          "Dock menus",
+          "Best practices"
+        ]
+      },
+      "title": "Label Dock-menu items succinctly",
+      "statement": {
+        "en": "Give every Dock-menu item a succinct label.",
+        "ja": "すべてのDock menu itemに簡潔なlabelを付ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply the general menu-labeling requirement to both system-provided and custom Dock-menu items under app control."
+      ],
+      "review_note": "Recovered the labeling half of the explicit need-to requirement as an atomic rule."
+    },
+    "HIG-COMPONENTS-DOCK-MENUS-0004": {
+      "source": {
+        "source_hash": "a312d884d4aa2e48bf76b07500cb1498d393cf210f939881bb484b7099f98d82",
+        "source_sentence_hash": "d605eba1c6a9ea4386806102548b3ad2220ac298c9d1a8df1cc072e280f81058",
+        "section_path": [
+          "Dock menus",
+          "Best practices"
+        ]
+      },
+      "title": "Organize Dock-menu items logically",
+      "statement": {
+        "en": "Organize every Dock menu logically.",
+        "ja": "すべてのDock menuを論理的に整理する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply the general menu-organization requirement to the complete Dock menu."
+      ],
+      "review_note": "Recovered the organization half of the explicit need-to requirement as an atomic rule."
+    },
+    "HIG-COMPONENTS-DOCK-MENUS-0005": {
+      "source": {
+        "source_hash": "a312d884d4aa2e48bf76b07500cb1498d393cf210f939881bb484b7099f98d82",
+        "source_sentence_hash": "6bf89711a821ba47ada921ecd160cbf4860b77c4353df1e84517bcc8d178ac41",
+        "section_path": [
+          "Dock menus",
+          "Best practices"
+        ]
+      },
+      "title": "Consider useful actions for inactive app states",
+      "statement": {
+        "en": "Consider listing a few likely useful Dock-menu actions when the app isn’t frontmost or has no open windows.",
+        "ja": "アプリが前面にない場合やopen windowがない場合は、役立つ可能性が高い少数のDock menu actionを検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": [
+        "The Mac app isn’t frontmost or has no open windows."
+      ],
+      "review_note": "Preserved the source's consider strength and both inactive-app conditions."
+    },
     "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001": {
       "source": {
         "source_hash": "900f88b9df396f1b3ba861aacdf9f2332892245f7da9211764a812fc93babcd1",

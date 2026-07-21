@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 973
-- Reviewed batches: 62
+- Reviewed rules: 978
+- Reviewed batches: 63
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:42:53Z
+- Reviewed at: 2026-07-21T16:47:09Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -145,6 +145,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · high — Reviewed the general secure-field recommendation and recorded the documented asterisk-concealment behavior without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002 · high — Recorded the title-and-prompt technique as supporting context for the existing purpose rule rather than duplicating it. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 · high — Recovered the explicit Always requirement separately from the page's general secure-field recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- HIG-COMPONENTS-DOCK-MENUS-0001 · high — Recorded the discoverability rationale and the documented menu-bar and in-interface alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- HIG-COMPONENTS-DOCK-MENUS-0002 · high — Recorded the open-window navigation example and the source's focus on a small number of useful actions. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- HIG-COMPONENTS-DOCK-MENUS-0003 · high — Recovered the labeling half of the explicit need-to requirement as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- HIG-COMPONENTS-DOCK-MENUS-0004 · high — Recovered the organization half of the explicit need-to requirement as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- HIG-COMPONENTS-DOCK-MENUS-0005 · high — Preserved the source's consider strength and both inactive-app conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · high — Recorded the expected minimum usefulness and source-scoped maximum of four quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · high — Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003 · high — Recorded the official preference for SF Symbols when representing quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
