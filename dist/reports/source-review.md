@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1349
-- Reviewed batches: 86
+- Reviewed rules: 1356
+- Reviewed batches: 87
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:33:20Z
+- Reviewed at: 2026-07-21T19:37:03Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -891,6 +891,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003 · high — Repaired the truncated extraction and preserved content prominence, transition restraint, reachability, and nonobstruction. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0004 · high — Recovered the omitted adaptation rule and preserved every documented configuration and transition context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0005 · high — Split the source's conditional consider clause from its stronger standard-input guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0001 · high — Repaired the truncated extraction and separated window-management flexibility from full-screen support. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0002 · high — Repaired the truncated extraction and preserved the complete app-command access scope. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0003 · high — Replaced the generic paraphrase and recorded the high-precision pointer-input modality. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0004 · high — Repaired the truncated extraction and preserved every documented personalization area. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0005 · high — Recovered the omitted large-display rule and preserved its density and viewing-comfort constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0006 · high — Split full-screen support from the source sentence's separate window-management guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0007 · high — Recovered the omitted keyboard-shortcut rule and preserved both efficiency and keyboard-only use. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001 · high — Retained MAY and preserved the minimum-immersion test and full-immersion caution. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0002 · high — Recorded the standard-task context, familiar controls, relocation, and dynamic scaling. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0003 · high — Repaired the generic statement and linked it to every documented comfort fundamental. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:35:18.486Z. 2405 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:39:05.730Z. 2408 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -77,10 +77,13 @@ Generated 2026-07-21T19:35:18.486Z. 2405 active rules; 3 deprecated rules.
 - **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0005 · MAY · high** — Consider unique iPad interactions that combine multiple input modes. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
 ### designing-for-macos
 
-- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0001 · SHOULD · low** — Preserve people’s ability to resize, hide, show, and move your windows to fit their work style and device configuration, and support. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0002 · SHOULD · low** — Choose or apply the menu bar to give people easy access to all the commands they need to do things in in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0003 · SHOULD · low** — Apply the documented Designing for macOS guidance to help people take advantage of high-precision input modes to perform pixel-perfect selections and edits. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0004 · SHOULD · low** — Ensure the experience accommodates personalization, letting people customize toolbars, configure windows to display the views they use most, and choose the colors. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0001 · SHOULD · high** — Let people resize, hide, show, and move macOS windows for their work style and device configuration. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0002 · SHOULD · high** — Use the macOS menu bar to give people easy access to every app command they need. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0003 · SHOULD · high** — Help people use high-precision macOS input for pixel-perfect selections and edits. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0004 · SHOULD · high** — Support personalization of macOS toolbars, window views, interface colors, and fonts. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0005 · SHOULD · high** — Use large macOS displays to present more content with fewer nested levels and less modality. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0006 · SHOULD · high** — Support full-screen mode to provide a distraction-free macOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0007 · SHOULD · high** — Support macOS keyboard shortcuts for faster actions and keyboard-only work styles. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
 ### designing-for-tvos
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001 · SHOULD · low** — Ensure the experience accommodates powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Remote. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
