@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:10:08.398Z. 2248 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:13:24.328Z. 2251 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1234,10 +1234,13 @@ Generated 2026-07-21T17:10:08.398Z. 2248 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-NOTIFICATIONS-0025 · SHOULD · high** — Order custom notification actions so double tap runs the most appropriate first nondestructive action. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 ### ornaments
 
-- **HIG-COMPONENTS-ORNAMENTS-0001 · MAY · low** — Evaluate whether using an ornament to present frequently needed controls or information in a consistent location that doesn’t clutter the is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
-- **HIG-COMPONENTS-ORNAMENTS-0002 · SHOULD · low** — Apply the documented Ornaments guidance to aim to keep an ornament’s width the same or narrower than the width of the associated window. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
-- **HIG-COMPONENTS-ORNAMENTS-0003 · MAY · low** — Evaluate whether using borderless buttons in an ornament is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
-- **HIG-COMPONENTS-ORNAMENTS-0004 · SHOULD · low** — Choose or apply system-provided toolbars and tab bars unless you need to create custom components in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- **HIG-COMPONENTS-ORNAMENTS-0001 · MAY · high** — Consider an ornament for frequently needed controls or information that need a consistent, uncluttered location. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- **HIG-COMPONENTS-ORNAMENTS-0002 · SHOULD · high** — Aim to keep a visionOS ornament no wider than its associated window. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- **HIG-COMPONENTS-ORNAMENTS-0003 · MAY · high** — Consider borderless buttons on a visionOS ornament’s glass background. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- **HIG-COMPONENTS-ORNAMENTS-0004 · SHOULD · high** — Use system-provided visionOS toolbars and tab bars unless a custom component is necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- **HIG-COMPONENTS-ORNAMENTS-0005 · SHOULD · high** — Keep a visionOS ornament visible in general. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- **HIG-COMPONENTS-ORNAMENTS-0006 · SHOULD · high** — Prioritize the window’s overall visual balance when displaying multiple visionOS ornaments. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- **HIG-COMPONENTS-ORNAMENTS-0007 · MAY · high** — When necessary, consider limiting the total number of visionOS ornaments. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
 ### outline-views
 
 - **HIG-COMPONENTS-OUTLINE-VIEWS-0001 · SHOULD · low** — Choose or apply a table instead of an outline view to present data that’s not hierarchical in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))

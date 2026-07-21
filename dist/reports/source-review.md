@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1055
-- Reviewed batches: 67
+- Reviewed rules: 1062
+- Reviewed batches: 68
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:06:25Z
+- Reviewed at: 2026-07-21T17:12:14Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -265,6 +265,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-NOTIFICATIONS-0023 · high — Recorded the official 18-percent opacity option and transparent default. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0024 · high — Recorded the four-action limit, system Dismiss button, and iPhone-companion sharing behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0025 · high — Repaired the generic generated wording and recorded how double tap selects an action. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-ORNAMENTS-0001 · high — Repaired the truncated candidate and preserved the consider strength and predictable-location purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0002 · high — Recorded the same-or-narrower width boundary and side-content interference risk. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0003 · high — Preserved MAY and recorded both glass-background and system-hover behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0004 · high — Recorded automatic ornament presentation and the custom-component exception. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0005 · high — Recovered the general visibility rule and retained the content-immersion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0006 · high — Recovered the multiple-ornament condition and its distraction and complexity risks. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0007 · high — Recovered the qualified count-limiting option and the relocation fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
 - HIG-COMPONENTS-PAGE-CONTROLS-0005 · high — Recorded the source distinction between scrubbing and tapping. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0006 · high — Recorded the feedback limitation and supported background-style alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0007 · high — Recorded the full-screen peer hierarchy and focus constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))

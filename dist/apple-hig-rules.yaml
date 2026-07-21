@@ -22879,16 +22879,16 @@
   apple_native_rule: Order custom notification actions so double tap runs the most appropriate first nondestructive action.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ORNAMENTS-0001
-  title: Consider using an ornament to present frequently needed controls or information in a consistent location th…
+  title: Consider ornaments for frequently needed controls
   category: components
   topic: ornaments
   subtopic: best-practices
   statement:
-    en: Evaluate whether using an ornament to present frequently needed controls or information in a consistent location that doesn’t clutter the is appropriate for the current context.
-    ja: using an ornament to present frequently needed controls or information in a consistent location that doesn’t clutter theが現在の状況に適切か検討する。
+    en: Consider an ornament for frequently needed controls or information that need a consistent, uncluttered location.
+    ja: 頻繁に必要なcontrolや情報を一貫した整理された場所に置くためornamentを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -22901,7 +22901,7 @@
       - ornaments
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep the ornament close to its window so people know where to find it.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Ornaments experience on the scoped Apple platforms.
@@ -22909,7 +22909,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether using an ornament to present frequently needed controls or information in a consistent location that doesn’t clutter the is appropriate for the current context.” in the documented Ornaments context?
+      - Does the design satisfy “Consider an ornament for frequently needed controls or information that need a consistent, uncluttered location.” in the documented Ornaments context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -22924,26 +22924,26 @@
     retrieved_at: 2026-07-21T11:15:09.010Z
     source_hash: f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629
     source_sentence_hash: 624e78184f4cc3adc8dc0a8b4bf8da3fd71e713aae7d4af766a801c9495f01e7
-    evidence_paraphrase: Evaluate whether using an ornament to present frequently needed controls or information in a consistent location that doesn’t clutter the is appropriate for the current context.
+    evidence_paraphrase: Consider an ornament for frequently needed controls or information that need a consistent, uncluttered location.
   tags:
     - components
     - ornaments
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether using an ornament to present frequently needed controls or information in a consistent location that doesn’t clutter the is appropriate for the current context.
+  apple_native_rule: Consider an ornament for frequently needed controls or information that need a consistent, uncluttered location.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ORNAMENTS-0002
-  title: Aim to keep an ornament’s width the same or narrower than the width of the associated window
+  title: Keep ornament width within its window
   category: components
   topic: ornaments
   subtopic: best-practices
   statement:
-    en: Apply the documented Ornaments guidance to aim to keep an ornament’s width the same or narrower than the width of the associated window.
-    ja: 「Ornaments」において「Aim to keep an ornament’s width the same or narrower than the width of the associated window」の指針を適用する。
+    en: Aim to keep a visionOS ornament no wider than its associated window.
+    ja: visionOS ornamentの幅を関連window以下に保つ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -22956,7 +22956,7 @@
       - ornaments
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Prevent a wide ornament from interfering with tab bars or vertical content beside the window.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Ornaments experience on the scoped Apple platforms.
@@ -22964,7 +22964,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Ornaments guidance to aim to keep an ornament’s width the same or narrower than the width of the associated window.” in the documented Ornaments context?
+      - Does the design satisfy “Aim to keep a visionOS ornament no wider than its associated window.” in the documented Ornaments context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -22979,26 +22979,26 @@
     retrieved_at: 2026-07-21T11:15:09.010Z
     source_hash: f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629
     source_sentence_hash: fe35ca1aa5d98ae6a45fa856e904b50eb7ccf648fa23fdfb53dedbe1d9638877
-    evidence_paraphrase: Apply the documented Ornaments guidance to aim to keep an ornament’s width the same or narrower than the width of the associated window.
+    evidence_paraphrase: Aim to keep a visionOS ornament no wider than its associated window.
   tags:
     - components
     - ornaments
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Ornaments guidance to aim to keep an ornament’s width the same or narrower than the width of the associated window.
+  apple_native_rule: Aim to keep a visionOS ornament no wider than its associated window.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ORNAMENTS-0003
-  title: Consider using borderless buttons in an ornament
+  title: Consider borderless ornament buttons
   category: components
   topic: ornaments
   subtopic: best-practices
   statement:
-    en: Evaluate whether using borderless buttons in an ornament is appropriate for the current context.
-    ja: using borderless buttons in an ornamentが現在の状況に適切か検討する。
+    en: Consider borderless buttons on a visionOS ornament’s glass background.
+    ja: visionOS ornamentのglass backgroundではborderless buttonを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -23011,7 +23011,8 @@
       - ornaments
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The glass background provides enough visual definition without a border.
+    - The system supplies the gaze hover effect automatically.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Ornaments experience on the scoped Apple platforms.
@@ -23019,7 +23020,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether using borderless buttons in an ornament is appropriate for the current context.” in the documented Ornaments context?
+      - Does the design satisfy “Consider borderless buttons on a visionOS ornament’s glass background.” in the documented Ornaments context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -23034,26 +23035,26 @@
     retrieved_at: 2026-07-21T11:15:09.010Z
     source_hash: f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629
     source_sentence_hash: 92c7217a34db28fe643ab1859d7612246e6de50de4a93805c92b52f1044ea9ab
-    evidence_paraphrase: Evaluate whether using borderless buttons in an ornament is appropriate for the current context.
+    evidence_paraphrase: Consider borderless buttons on a visionOS ornament’s glass background.
   tags:
     - components
     - ornaments
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether using borderless buttons in an ornament is appropriate for the current context.
+  apple_native_rule: Consider borderless buttons on a visionOS ornament’s glass background.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ORNAMENTS-0004
-  title: Use system-provided toolbars and tab bars unless you need to create custom components
+  title: Prefer system visionOS toolbars and tab bars
   category: components
   topic: ornaments
   subtopic: best-practices
   statement:
-    en: Choose or apply system-provided toolbars and tab bars unless you need to create custom components in the documented context.
-    ja: 該当する状況ではsystem-provided toolbars and tab bars unless you need to create custom componentsを採用する。
+    en: Use system-provided visionOS toolbars and tab bars unless a custom component is necessary.
+    ja: custom componentが必要でない限りsystem-providedのvisionOS toolbarとtab barを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -23066,7 +23067,7 @@
       - ornaments
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - System toolbars and tab bars already appear as ornaments.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Ornaments experience on the scoped Apple platforms.
@@ -23074,7 +23075,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply system-provided toolbars and tab bars unless you need to create custom components in the documented context.” in the documented Ornaments context?
+      - Does the design satisfy “Use system-provided visionOS toolbars and tab bars unless a custom component is necessary.” in the documented Ornaments context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -23089,14 +23090,181 @@
     retrieved_at: 2026-07-21T11:15:09.010Z
     source_hash: f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629
     source_sentence_hash: e212df3d08caae35573d5db5d05ad7fde141560d05d0607553a2b4f5140b6f49
-    evidence_paraphrase: Choose or apply system-provided toolbars and tab bars unless you need to create custom components in the documented context.
+    evidence_paraphrase: Use system-provided visionOS toolbars and tab bars unless a custom component is necessary.
   tags:
     - components
     - ornaments
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply system-provided toolbars and tab bars unless you need to create custom components in the documented context.
+  apple_native_rule: Use system-provided visionOS toolbars and tab bars unless a custom component is necessary.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-ORNAMENTS-0005
+  title: Keep visionOS ornaments generally visible
+  category: components
+  topic: ornaments
+  subtopic: best-practices
+  statement:
+    en: Keep a visionOS ornament visible in general.
+    ja: 通常はvisionOS ornamentを表示したままにする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components:
+      - ornaments
+    modalities: []
+  conditions:
+    - Preserve consistent access to the ornament’s controls.
+  exceptions:
+    - Hide an ornament when people intentionally immerse themselves in window content such as a video or photo.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Ornaments experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるOrnamentsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep a visionOS ornament visible in general.” in the documented Ornaments context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/ornaments
+    page_title: Ornaments
+    section_path:
+      - Ornaments
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:09.010Z
+    source_hash: f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629
+    source_sentence_hash: b8167810d250f61a7a5852ca2aee7229925ac807e65394d1e3be063070828fc0
+    evidence_paraphrase: Keep a visionOS ornament visible in general.
+  tags:
+    - components
+    - ornaments
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Keep a visionOS ornament visible in general.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-ORNAMENTS-0006
+  title: Balance windows with multiple ornaments
+  category: components
+  topic: ornaments
+  subtopic: best-practices
+  statement:
+    en: Prioritize the window’s overall visual balance when displaying multiple visionOS ornaments.
+    ja: 複数のvisionOS ornamentを表示する場合はwindow全体のvisual balanceを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components:
+      - ornaments
+    modalities: []
+  conditions:
+    - Prevent elevated actions from distracting from content or increasing visual weight.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Ornaments experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるOrnamentsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prioritize the window’s overall visual balance when displaying multiple visionOS ornaments.” in the documented Ornaments context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/ornaments
+    page_title: Ornaments
+    section_path:
+      - Ornaments
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:09.010Z
+    source_hash: f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629
+    source_sentence_hash: d3b17674931a75f985bf2fda3c8e508926d5640883355fcfa0c6bb115fe81cf7
+    evidence_paraphrase: Prioritize the window’s overall visual balance when displaying multiple visionOS ornaments.
+  tags:
+    - components
+    - ornaments
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Prioritize the window’s overall visual balance when displaying multiple visionOS ornaments.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-ORNAMENTS-0007
+  title: Consider limiting ornament count
+  category: components
+  topic: ornaments
+  subtopic: best-practices
+  statement:
+    en: When necessary, consider limiting the total number of visionOS ornaments.
+    ja: 必要な場合はvisionOS ornamentの総数制限を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components:
+      - ornaments
+    modalities: []
+  conditions:
+    - Multiple ornaments increase visual weight or make the app feel more complicated.
+  exceptions:
+    - Relocate removed ornament elements into the main window when appropriate.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Ornaments experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるOrnamentsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When necessary, consider limiting the total number of visionOS ornaments.” in the documented Ornaments context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/ornaments
+    page_title: Ornaments
+    section_path:
+      - Ornaments
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:09.010Z
+    source_hash: f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629
+    source_sentence_hash: a2bbe77e4f12e3fc3e32e15bd4c23a569653f1fbe0f627c32defdf25217a0905
+    evidence_paraphrase: When necessary, consider limiting the total number of visionOS ornaments.
+  tags:
+    - components
+    - ornaments
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: When necessary, consider limiting the total number of visionOS ornaments.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-OUTLINE-VIEWS-0001
   title: Use a table instead of an outline view to present data that’s not hierarchical

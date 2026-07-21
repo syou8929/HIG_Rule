@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2248
+- Active atomic rules: 2251
 - Pages without rules: 16
-- Low-confidence rules: 1109
-- Rules requiring human review: 1109
+- Low-confidence rules: 1105
+- Rules requiring human review: 1105
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 740
+- components: 743
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -23,10 +23,10 @@
 ## Normative levels
 
 - AVOID: 303
-- MAY: 250
+- MAY: 251
 - MUST: 191
 - MUST_NOT: 21
-- SHOULD: 1483
+- SHOULD: 1485
 
 ## Rules by platform
 
@@ -35,13 +35,13 @@
 - ipados: 1550
 - macos: 1314
 - tvos: 1016
-- visionos: 1373
+- visionos: 1376
 - watchos: 1085
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2182
+- manual: 2185
 
 ## Blocked pages
 
@@ -167,10 +167,6 @@ None.
 - HIG-COMPONENTS-NOTIFICATIONS-0015
 - HIG-COMPONENTS-NOTIFICATIONS-0017
 - HIG-COMPONENTS-NOTIFICATIONS-0018
-- HIG-COMPONENTS-ORNAMENTS-0001
-- HIG-COMPONENTS-ORNAMENTS-0002
-- HIG-COMPONENTS-ORNAMENTS-0003
-- HIG-COMPONENTS-ORNAMENTS-0004
 - HIG-COMPONENTS-OUTLINE-VIEWS-0001
 - HIG-COMPONENTS-OUTLINE-VIEWS-0002
 - HIG-COMPONENTS-OUTLINE-VIEWS-0003
@@ -1279,10 +1275,6 @@ None.
 - HIG-COMPONENTS-NOTIFICATIONS-0015
 - HIG-COMPONENTS-NOTIFICATIONS-0017
 - HIG-COMPONENTS-NOTIFICATIONS-0018
-- HIG-COMPONENTS-ORNAMENTS-0001
-- HIG-COMPONENTS-ORNAMENTS-0002
-- HIG-COMPONENTS-ORNAMENTS-0003
-- HIG-COMPONENTS-ORNAMENTS-0004
 - HIG-COMPONENTS-OUTLINE-VIEWS-0001
 - HIG-COMPONENTS-OUTLINE-VIEWS-0002
 - HIG-COMPONENTS-OUTLINE-VIEWS-0003

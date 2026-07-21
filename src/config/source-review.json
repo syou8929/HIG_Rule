@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:06:25Z",
+  "reviewed_at": "2026-07-21T17:12:14Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2063,9 +2063,65 @@
         "HIG-COMPONENTS-MENUS-0029", "HIG-COMPONENTS-MENUS-0030", "HIG-COMPONENTS-MENUS-0031"
       ],
       "review_note": "Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives."
+    },
+    {
+      "id": "priority-4-ornaments-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:12:14Z",
+      "review_method": "Rendered Apple HIG Ornaments guidance, supporting prose, visibility, multiple-ornament balance, size, button treatment, standard components, and platform context were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/ornaments", "source_hash": "f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-ORNAMENTS-0001", "HIG-COMPONENTS-ORNAMENTS-0002", "HIG-COMPONENTS-ORNAMENTS-0003", "HIG-COMPONENTS-ORNAMENTS-0004",
+        "HIG-COMPONENTS-ORNAMENTS-0005", "HIG-COMPONENTS-ORNAMENTS-0006", "HIG-COMPONENTS-ORNAMENTS-0007"
+      ],
+      "review_note": "Completed visionOS Ornaments coverage; repaired the truncated existing rule and recovered visibility, multi-ornament balance, and optional count-limiting guidance."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-ORNAMENTS-0001": {
+      "source": {"source_hash": "f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629", "source_sentence_hash": "624e78184f4cc3adc8dc0a8b4bf8da3fd71e713aae7d4af766a801c9495f01e7", "section_path": ["Ornaments", "Best practices"]},
+      "title": "Consider ornaments for frequently needed controls", "statement": {"en": "Consider an ornament for frequently needed controls or information that need a consistent, uncluttered location.", "ja": "頻繁に必要なcontrolや情報を一貫した整理された場所に置くためornamentを検討する。"},
+      "normative_level": "MAY", "conditions": ["Keep the ornament close to its window so people know where to find it."],
+      "review_note": "Repaired the truncated candidate and preserved the consider strength and predictable-location purpose."
+    },
+    "HIG-COMPONENTS-ORNAMENTS-0002": {
+      "source": {"source_hash": "f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629", "source_sentence_hash": "fe35ca1aa5d98ae6a45fa856e904b50eb7ccf648fa23fdfb53dedbe1d9638877", "section_path": ["Ornaments", "Best practices"]},
+      "title": "Keep ornament width within its window", "statement": {"en": "Aim to keep a visionOS ornament no wider than its associated window.", "ja": "visionOS ornamentの幅を関連window以下に保つ。"},
+      "conditions": ["Prevent a wide ornament from interfering with tab bars or vertical content beside the window."],
+      "review_note": "Recorded the same-or-narrower width boundary and side-content interference risk."
+    },
+    "HIG-COMPONENTS-ORNAMENTS-0003": {
+      "source": {"source_hash": "f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629", "source_sentence_hash": "92c7217a34db28fe643ab1859d7612246e6de50de4a93805c92b52f1044ea9ab", "section_path": ["Ornaments", "Best practices"]},
+      "title": "Consider borderless ornament buttons", "statement": {"en": "Consider borderless buttons on a visionOS ornament’s glass background.", "ja": "visionOS ornamentのglass backgroundではborderless buttonを検討する。"},
+      "normative_level": "MAY", "conditions": ["The glass background provides enough visual definition without a border.", "The system supplies the gaze hover effect automatically."],
+      "review_note": "Preserved MAY and recorded both glass-background and system-hover behavior."
+    },
+    "HIG-COMPONENTS-ORNAMENTS-0004": {
+      "source": {"source_hash": "f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629", "source_sentence_hash": "e212df3d08caae35573d5db5d05ad7fde141560d05d0607553a2b4f5140b6f49", "section_path": ["Ornaments", "Best practices"]},
+      "title": "Prefer system visionOS toolbars and tab bars", "statement": {"en": "Use system-provided visionOS toolbars and tab bars unless a custom component is necessary.", "ja": "custom componentが必要でない限りsystem-providedのvisionOS toolbarとtab barを使う。"},
+      "conditions": ["System toolbars and tab bars already appear as ornaments."],
+      "review_note": "Recorded automatic ornament presentation and the custom-component exception."
+    },
+    "HIG-COMPONENTS-ORNAMENTS-0005": {
+      "source": {"source_hash": "f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629", "source_sentence_hash": "b8167810d250f61a7a5852ca2aee7229925ac807e65394d1e3be063070828fc0", "section_path": ["Ornaments", "Best practices"]},
+      "title": "Keep visionOS ornaments generally visible", "statement": {"en": "Keep a visionOS ornament visible in general.", "ja": "通常はvisionOS ornamentを表示したままにする。"},
+      "conditions": ["Preserve consistent access to the ornament’s controls."],
+      "exceptions": ["Hide an ornament when people intentionally immerse themselves in window content such as a video or photo."],
+      "review_note": "Recovered the general visibility rule and retained the content-immersion exception."
+    },
+    "HIG-COMPONENTS-ORNAMENTS-0006": {
+      "source": {"source_hash": "f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629", "source_sentence_hash": "d3b17674931a75f985bf2fda3c8e508926d5640883355fcfa0c6bb115fe81cf7", "section_path": ["Ornaments", "Best practices"]},
+      "title": "Balance windows with multiple ornaments", "statement": {"en": "Prioritize the window’s overall visual balance when displaying multiple visionOS ornaments.", "ja": "複数のvisionOS ornamentを表示する場合はwindow全体のvisual balanceを優先する。"},
+      "conditions": ["Prevent elevated actions from distracting from content or increasing visual weight."],
+      "review_note": "Recovered the multiple-ornament condition and its distraction and complexity risks."
+    },
+    "HIG-COMPONENTS-ORNAMENTS-0007": {
+      "source": {"source_hash": "f77518ebefbc7da91e6f74a902aacc3d926fa94d52627a71a9cecac9ef02c629", "source_sentence_hash": "a2bbe77e4f12e3fc3e32e15bd4c23a569653f1fbe0f627c32defdf25217a0905", "section_path": ["Ornaments", "Best practices"]},
+      "title": "Consider limiting ornament count", "statement": {"en": "When necessary, consider limiting the total number of visionOS ornaments.", "ja": "必要な場合はvisionOS ornamentの総数制限を検討する。"},
+      "normative_level": "MAY", "conditions": ["Multiple ornaments increase visual weight or make the app feel more complicated."],
+      "exceptions": ["Relocate removed ornament elements into the main window when appropriate."],
+      "review_note": "Recovered the qualified count-limiting option and the relocation fallback."
+    },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},
       "conditions": ["Dim an unavailable item and prevent it from responding to interactions."], "review_note": "Recorded both visible unavailability and disabled interaction."
