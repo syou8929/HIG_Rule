@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 226
-- Reviewed batches: 27
+- Reviewed rules: 245
+- Reviewed batches: 28
 - Official source only: yes
-- Reviewed at: 2026-07-21T12:35:38Z
+- Reviewed at: 2026-07-21T12:45:18Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -167,6 +167,25 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-THE-MENU-BAR-0024 · high — Restored the truncated iPadOS lead and classified its explicit Ensure instruction as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0025 · high — Recovered the omitted Reserve lead and recorded the separate internal-preferences path. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0026 · high — Recovered the conditional Consider lead and retained MAY strength. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-TOGGLES-0001 · high — Restored the truncated state-management scope and the nonbinary-action exception. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0002 · high — Confirmed the explicit Make sure lead and recorded the color-perception constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0003 · high — Recorded the list-row scope and contextual-label rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0004 · high — Scoped the avoidance to the icon-based button pattern described by the surrounding iOS guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0005 · high — Recorded the toolbar and status-bar exclusions. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0006 · high — Recorded the switch's greater visual weight and broader-control use case. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0007 · high — Recorded the hierarchy, grouping, and dependency rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0008 · high — Retained MAY and recorded the more-than-two threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0009 · high — Recorded the label-content and alignment details. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0010 · high — Recorded the multiple-selection checkbox alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0011 · high — Recorded the approximate five-option threshold and pop-up-button alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0012 · high — Recorded the longest-label measurement method. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0013 · high — Recovered the omitted Clearly lead and recorded the context, label, and icon techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0014 · high — Recovered the omitted Change lead and recorded the contrast constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0015 · high — Recovered the omitted contextual Use lead and recorded the state-appearance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0016 · high — Recovered the conditional Consider lead and retained MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0017 · high — Recovered the qualified prohibition and retained AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0018 · high — Recovered the omitted state-reflection lead and recorded the mixed-state condition. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0019 · high — Recovered the contextual Prefer lead and recorded the rare two-radio-button exception. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0001 · high — Recorded the platform-specific enlargement targets from the official Vision guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0002 · high — Recorded the official custom-type default and minimum size table for each supported platform. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0003 · high — Recorded the official WCAG-based contrast table and its Dark Mode and Increase Contrast conditions without treating it as a universal legal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))

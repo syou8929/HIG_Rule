@@ -26,6 +26,8 @@ test("keeps conditional strength conservative", () => {
   assert.equal(normative("In general, avoid duplicating a control").normative_level, "AVOID");
   assert.equal(normative("As much as possible, avoid duplicating a control").normative_level, "AVOID");
   assert.equal(normative("For apps with tabs, consider adding shortcuts").normative_level, "MAY");
+  assert.equal(normative("Within a grouped form, consider using a mini switch").normative_level, "MAY");
+  assert.equal(normative("In general, don’t replace a checkbox").normative_level, "AVOID");
   assert.equal(normative("Prefer the standard control").normative_level, "SHOULD");
   assert.equal(normative("Never hide the recovery action").normative_level, "MUST_NOT");
 });
@@ -58,6 +60,12 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Reserve the setting for app-level options", section_path: [], source_sentence_hash: "o".repeat(64), word_count: 7 }), true);
   assert.equal(isActionable({ text: "For apps with tabs, consider adding shortcuts", section_path: [], source_sentence_hash: "p".repeat(64), word_count: 8 }), true);
   assert.equal(isActionable({ text: "Because the menu is hidden, ensure access", section_path: [], source_sentence_hash: "q".repeat(64), word_count: 7 }), true);
+  assert.equal(isActionable({ text: "Clearly identify the affected setting", section_path: [], source_sentence_hash: "r".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Accurately reflect the current state", section_path: [], source_sentence_hash: "s".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Outside of a list, use a toggle button", section_path: [], source_sentence_hash: "t".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Within a grouped form, consider using a mini switch", section_path: [], source_sentence_hash: "u".repeat(64), word_count: 9 }), true);
+  assert.equal(isActionable({ text: "In general, don’t replace a checkbox", section_path: [], source_sentence_hash: "v".repeat(64), word_count: 6 }), true);
+  assert.equal(isActionable({ text: "To present one setting, prefer a checkbox", section_path: [], source_sentence_hash: "w".repeat(64), word_count: 7 }), true);
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 

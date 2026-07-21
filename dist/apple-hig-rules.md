@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
+Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -516,6 +516,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-LOADING-0002 · SHOULD · low** — Preserve people’s ability to do other things in your app or game while they wait for content to load. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - **HIG-PATTERNS-LOADING-0003 · MAY · low** — When games, consider creating a custom loading view. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - **HIG-PATTERNS-LOADING-0004 · AVOID · low** — Avoid showing a loading indicator in your watchOS experience wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0005 · SHOULD · low** — Clearly communicate that content is loading and how long it might take to complete. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 ### managing-accounts
 
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · medium** — Identify the authentication method you offer in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
@@ -649,6 +650,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-SEARCHING-0004 · SHOULD · low** — Choose or apply spotlight to offer advanced file-search capabilities within the context of your app in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 - **HIG-PATTERNS-SEARCHING-0005 · SHOULD · low** — Favor using the system-provided open and save views when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 - **HIG-PATTERNS-SEARCHING-0006 · SHOULD · low** — Define metadata for custom file types you handle explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0007 · SHOULD · low** — Clearly display the current scope of a search. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 ### settings
 
 - **HIG-PATTERNS-SETTINGS-0001 · SHOULD · low** — Apply the documented Settings guidance to aim to provide default settings that give the best experience to the largest number of people. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
@@ -855,6 +857,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 ### digit-entry-views
 
 - **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · SHOULD · low** — Choose or apply secure digit fields in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002 · SHOULD · low** — Clearly state the purpose of the digit entry view. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 ### disclosure-controls
 
 - **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001 · SHOULD · low** — Choose or apply a disclosure control to hide details until they’re relevant in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
@@ -1066,6 +1069,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0005 · SHOULD · low** — Make a list of actions available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0006 · SHOULD · low** — Preserve people’s ability to select multiple items. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0007 · SHOULD · low** — Apply the documented Pop-up buttons guidance to include a submenu. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0008 · MAY · low** — Within a popover or modal view, consider using a pop-up button instead of a disclosure indicator to present multiple. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 ### popovers
 
 - **HIG-COMPONENTS-POPOVERS-0001 · SHOULD · low** — Choose or apply a popover to expose a small amount of information or functionality in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
@@ -1199,6 +1203,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-SPLIT-VIEWS-0006 · SHOULD · low** — Apply the documented Split views guidance to choose a split view layout that keeps the panes looking balanced. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - **HIG-COMPONENTS-SPLIT-VIEWS-0007 · SHOULD · low** — Present a single title above a split view, helping people understand the content as a whole in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - **HIG-COMPONENTS-SPLIT-VIEWS-0008 · SHOULD · low** — Apply the documented Split views guidance to choose the title’s alignment based on the type of content the secondary pane contains. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0009 · SHOULD · low** — To display supplementary information, prefer a split view instead of a new window. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 ### status-bars
 
 - **HIG-COMPONENTS-STATUS-BARS-0001 · MAY · high** — Consider temporarily hiding the status bar for full-screen media. ([source](https://developer.apple.com/design/human-interface-guidelines/status-bars))
@@ -1279,18 +1284,25 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-THE-MENU-BAR-0026 · MAY · high** — For tab-style iPad apps, consider adding each tab to the View menu. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 ### toggles
 
-- **HIG-COMPONENTS-TOGGLES-0001 · SHOULD · low** — Choose or apply a toggle to help people choose between two opposing values that affect the state of content or a in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0002 · MUST · medium** — Verify that the visual differences in a toggle’s state are obvious. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0003 · SHOULD · low** — Choose or apply the switch toggle style only in a list row in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0004 · AVOID · low** — Exclude supplying a label that explains the button’s purpose from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0005 · SHOULD · low** — Choose or apply switches, checkboxes, and radio buttons in the window body, not the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0006 · SHOULD · low** — Favor a switch for settings that you want to emphasize when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0007 · SHOULD · low** — Choose or apply a checkbox instead of a switch if you need to present a hierarchy of settings in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0008 · MAY · low** — Evaluate whether using radio buttons if you need to present a set of more than two mutually exclusive options is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0009 · MAY · low** — Evaluate whether using a label to introduce a group of checkboxes if their relationship isn’t clear is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0010 · SHOULD · low** — Favor a set of radio buttons to present mutually exclusive options when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0011 · AVOID · low** — Exclude listing too many radio buttons in a set from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- **HIG-COMPONENTS-TOGGLES-0012 · SHOULD · low** — Choose or apply consistent spacing when you display radio buttons horizontally in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0001 · SHOULD · high** — Use a toggle only for two opposing values that change content or view state. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0002 · MUST · high** — Make each toggle state visually obvious without relying on color alone. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0003 · SHOULD · high** — Use the iOS or iPadOS switch style only in a list row. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0004 · AVOID · high** — Avoid a separate purpose label for an icon-based toggle button. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0005 · SHOULD · high** — Place macOS switches, checkboxes, and radio buttons in the window body, not its frame. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0006 · SHOULD · high** — Prefer a macOS switch when a setting needs emphasis or controls substantial functionality. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0007 · SHOULD · high** — Use macOS checkboxes to present a hierarchy of settings. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0008 · MAY · high** — Consider macOS radio buttons for more than two mutually exclusive options. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0009 · MAY · high** — Consider a group label when checkbox relationships are unclear. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0010 · SHOULD · high** — Prefer macOS radio buttons for mutually exclusive choices. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0011 · AVOID · high** — Avoid presenting more than about five radio buttons in one set. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0012 · SHOULD · high** — Space horizontal radio buttons consistently using the longest label's required width. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0013 · SHOULD · high** — Clearly identify the setting, view, or content affected by a toggle. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0014 · SHOULD · high** — Change an iOS or iPadOS switch's default color only when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0015 · SHOULD · high** — Outside a list, use a toggle button instead of an iOS or iPadOS switch. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0016 · MAY · high** — Within a grouped macOS form, consider a mini switch for a single-row setting. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0017 · AVOID · high** — Avoid replacing an existing macOS checkbox with a switch without a clear reason. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0018 · SHOULD · high** — Accurately show each macOS checkbox as on, off, or mixed. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- **HIG-COMPONENTS-TOGGLES-0019 · SHOULD · high** — Prefer a macOS checkbox for one setting that can be on or off. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
 ### token-fields
 
 - **HIG-COMPONENTS-TOKEN-FIELDS-0001 · MAY · low** — Evaluate whether providing additional ways to convert text into tokens is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
@@ -1530,6 +1542,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-INPUTS-KEYBOARDS-0006 · AVOID · low** — Exclude creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0007 · SHOULD · low** — Apply the documented Keyboards guidance to write descriptive shortcut titles. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0008 · SHOULD · low** — Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0009 · AVOID · low** — Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 ### nearby-interactions
 
 - **HIG-INPUTS-NEARBY-INTERACTIONS-0001 · MAY · low** — Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
@@ -1663,6 +1676,9 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-APPLE-PAY-0025 · MUST_NOT · medium** — Exclude use the Apple logo to represent the name Apple in text from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - **HIG-TECHNOLOGIES-APPLE-PAY-0026 · AVOID · low** — Exclude translate Apple Pay or any other Apple trademark from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - **HIG-TECHNOLOGIES-APPLE-PAY-0027 · MAY · low** — When in-store pickup, consider letting people choose a pickup window that works for them. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- **HIG-TECHNOLOGIES-APPLE-PAY-0028 · SHOULD · low** — Clearly disclose when people may incur additional costs after payment authorization. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- **HIG-TECHNOLOGIES-APPLE-PAY-0029 · SHOULD · low** — Accurately report problems to the system. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- **HIG-TECHNOLOGIES-APPLE-PAY-0030 · SHOULD · low** — Clearly communicate trial period terms. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 ### augmented-reality
 
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0001 · SHOULD · low** — Make aR features only on capable devices available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
@@ -1714,6 +1730,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-CAREKIT-0014 · MAY · low** — Evaluate whether providing a detail view is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - **HIG-TECHNOLOGIES-CAREKIT-0015 · SHOULD · low** — Apply the documented CareKit guidance to design a relevant care symbol. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - **HIG-TECHNOLOGIES-CAREKIT-0016 · SHOULD · low** — Ensure the experience accommodates for creating custom symbols to represent the unique content in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- **HIG-TECHNOLOGIES-CAREKIT-0017 · SHOULD · low** — Clearly denote units of time. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 ### carplay
 
 - **HIG-TECHNOLOGIES-CARPLAY-0001 · MUST_NOT · medium** — Exclude lock people out of CarPlay because the connected iPhone requires input from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
@@ -1775,6 +1792,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-GENERATIVE-AI-0017 · MAY · low** — Evaluate whether ways to improve your model over time is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - **HIG-TECHNOLOGIES-GENERATIVE-AI-0018 · SHOULD · low** — Preserve people’s ability to share feedback on outputs. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - **HIG-TECHNOLOGIES-GENERATIVE-AI-0019 · SHOULD · low** — Apply the documented Generative AI guidance to design flexible, adaptable features. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- **HIG-TECHNOLOGIES-GENERATIVE-AI-0020 · SHOULD · low** — Clearly disclose how your app and its model use and store personal information. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 ### healthkit
 
 - **HIG-TECHNOLOGIES-HEALTHKIT-0001 · SHOULD · low** — Make a coherent privacy policy available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
@@ -1892,6 +1910,9 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0029 · MAY · low** — Evaluate whether creating a branded, contextual experience to complement the system-provided management UI is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0030 · MAY · low** — Evaluate whether using a modal sheet to display the required information is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0031 · SHOULD · low** — Apply the documented In-app purchase guidance to make subscription options easy to compare on a small screen. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0032 · SHOULD · low** — Clearly describe how a free trial works. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0033 · SHOULD · low** — Clearly explain offer details. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034 · SHOULD · low** — Clearly describe the differences between versions of your app that run on different devices. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 ### live-photos
 
 - **HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 · SHOULD · low** — Apply the documented Live Photos guidance to apply adjustments to all frames. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
@@ -1899,6 +1920,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-LIVE-PHOTOS-0003 · SHOULD · low** — Present live Photos as traditional photos in environments that don’t support Live Photos in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
 - **HIG-TECHNOLOGIES-LIVE-PHOTOS-0004 · SHOULD · low** — Apply the documented Live Photos guidance to make Live Photos easily distinguishable from still photos. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
 - **HIG-TECHNOLOGIES-LIVE-PHOTOS-0005 · SHOULD · low** — Maintain badge placement consistent. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0006 · SHOULD · low** — Clearly indicate when a Live Photo is downloading and when the photo is playable. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
 ### mac-catalyst
 
 - **HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · medium** — Verify that views and images look good in the Mac version of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
@@ -1975,6 +1997,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-MAPS-0016 · SHOULD · low** — Present the smallest region that encompasses the points of interest in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0017 · SHOULD · low** — Choose or apply adequate padding to separate the logo and link from the map boundaries and your custom controls. For example, in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0018 · AVOID · low** — Exclude causing the logo and link to move with your interface. It’s best when the Apple logo and legal from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- **HIG-TECHNOLOGIES-MAPS-0019 · SHOULD · low** — Clearly identify elements that people select. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 ### nfc
 
 - **HIG-TECHNOLOGIES-NFC-0001 · AVOID · low** — Exclude encourage people to make contact with physical objects from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
@@ -2084,6 +2107,7 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0018 · SHOULD · low** — Present pre-payment actions that affect the final total before checkout completes in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0019 · SHOULD · low** — Present a new screen or reuse your checkout screen, letting merchants accept an alternate form of payment, like cash in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0020 · SHOULD · low** — Determine the final amount that customers need to pay before merchants initiate the Tap to Pay on iPhone experience explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0021 · SHOULD · low** — Clearly display the result of a transaction, whether it’s declined or successful. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 ### voiceover
 
 - **HIG-TECHNOLOGIES-VOICEOVER-0001 · SHOULD · medium** — Make alternative labels for all key interface elements available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
@@ -2127,3 +2151,6 @@ Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-WALLET-0031 · SHOULD · low** — Apply the documented Wallet guidance to choose the system-provided verification button that matches your use case and the visual design of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - **HIG-TECHNOLOGIES-WALLET-0032 · SHOULD · low** — Present a Wallet verification option only when the device supports it in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - **HIG-TECHNOLOGIES-WALLET-0033 · SHOULD · low** — Reserve pass images for visual content for the documented purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- **HIG-TECHNOLOGIES-WALLET-0034 · SHOULD · low** — Clearly describe each item so people can verify that their order contains everything they expect. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- **HIG-TECHNOLOGIES-WALLET-0035 · SHOULD · low** — Clearly and succinctly describe the reason you need the information you’re requesting. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- **HIG-TECHNOLOGIES-WALLET-0036 · SHOULD · low** — Clearly indicate whether you will keep the data and — if you need to keep it — specify how. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))

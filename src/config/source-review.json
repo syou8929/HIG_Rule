@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T12:35:38Z",
+  "reviewed_at": "2026-07-21T12:45:18Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -651,6 +651,41 @@
         "HIG-COMPONENTS-THE-MENU-BAR-0026"
       ],
       "review_note": "Reviewed menu ordering, shortcuts, dynamic items, iPadOS access paths, and macOS menu bar extras; recovered seven omitted leads."
+    },
+    {
+      "id": "priority-4-toggles-context-2026-07-21",
+      "reviewed_at": "2026-07-21T12:45:18Z",
+      "review_method": "Current official Apple HIG Toggles guidance, supporting prose, state examples, and platform sections were compared with the stored rendered source trace bound to this page hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+          "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-TOGGLES-0001",
+        "HIG-COMPONENTS-TOGGLES-0002",
+        "HIG-COMPONENTS-TOGGLES-0003",
+        "HIG-COMPONENTS-TOGGLES-0004",
+        "HIG-COMPONENTS-TOGGLES-0005",
+        "HIG-COMPONENTS-TOGGLES-0006",
+        "HIG-COMPONENTS-TOGGLES-0007",
+        "HIG-COMPONENTS-TOGGLES-0008",
+        "HIG-COMPONENTS-TOGGLES-0009",
+        "HIG-COMPONENTS-TOGGLES-0010",
+        "HIG-COMPONENTS-TOGGLES-0011",
+        "HIG-COMPONENTS-TOGGLES-0012",
+        "HIG-COMPONENTS-TOGGLES-0013",
+        "HIG-COMPONENTS-TOGGLES-0014",
+        "HIG-COMPONENTS-TOGGLES-0015",
+        "HIG-COMPONENTS-TOGGLES-0016",
+        "HIG-COMPONENTS-TOGGLES-0017",
+        "HIG-COMPONENTS-TOGGLES-0018",
+        "HIG-COMPONENTS-TOGGLES-0019"
+      ],
+      "review_note": "Reviewed toggle semantics, visible state, platform-specific switch placement, checkbox hierarchy, radio-button limits, and seven recovered leads."
     }
   ],
   "rules": {
@@ -3528,6 +3563,328 @@
       "review_required": false,
       "conditions": ["Consider assigning key bindings when tabs also appear in the View menu."],
       "review_note": "Recovered the conditional Consider lead and retained MAY strength."
+    },
+    "HIG-COMPONENTS-TOGGLES-0001": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "e51a82db925e1c93d8e571f3e34c04d2a3803b10732e16122146e118ea28d3f5",
+        "section_path": ["Toggles", "Best practices"]
+      },
+      "title": "Use a toggle for two opposing state values",
+      "statement": {
+        "en": "Use a toggle only for two opposing values that change content or view state.",
+        "ja": "contentまたはviewの状態を変える、対立する2値にのみtoggleを使う。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "exceptions": ["Use another component for actions such as choosing from a list."],
+      "review_note": "Restored the truncated state-management scope and the nonbinary-action exception."
+    },
+    "HIG-COMPONENTS-TOGGLES-0002": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "9635e708a0d822ef29f6c14432efafdc8bf6e0fcb451a28aa1ee9f54a3d0e09e",
+        "section_path": ["Toggles", "Best practices"]
+      },
+      "title": "Make toggle states visually obvious",
+      "statement": {
+        "en": "Make each toggle state visually obvious without relying on color alone.",
+        "ja": "色だけに依存せず、toggleの各状態を視覚的に明確にする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Combine color with fill, shape, checkmark, dot, or another perceivable difference."],
+      "review_note": "Confirmed the explicit Make sure lead and recorded the color-perception constraint."
+    },
+    "HIG-COMPONENTS-TOGGLES-0003": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "51aeb46e5bb070d31b913a93bc3e28074e14d811e987be3924e76d1e90b6847f",
+        "section_path": ["Toggles", "Platform considerations", "iOS, iPadOS"]
+      },
+      "title": "Use switch style only in iOS or iPadOS list rows",
+      "statement": {
+        "en": "Use the iOS or iPadOS switch style only in a list row.",
+        "ja": "iOSまたはiPadOSのswitch styleはlist row内でのみ使う。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["The row content supplies the context, so a separate switch label is unnecessary."],
+      "review_note": "Recorded the list-row scope and contextual-label rationale."
+    },
+    "HIG-COMPONENTS-TOGGLES-0004": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "9d6a3246bedfb79765051fc82a2fd73b2d99e24c571338493cdbdfea64b079ea",
+        "section_path": ["Toggles", "Platform considerations", "iOS, iPadOS"]
+      },
+      "title": "Avoid a separate purpose label for an icon toggle button",
+      "statement": {
+        "en": "Avoid a separate purpose label for an icon-based toggle button.",
+        "ja": "iconを使うtoggle buttonにはpurpose説明用の別labelを付けない。"
+      },
+      "normative_level": "AVOID",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use a clear icon and distinct active and inactive backgrounds to communicate purpose and state."],
+      "review_note": "Scoped the avoidance to the icon-based button pattern described by the surrounding iOS guidance."
+    },
+    "HIG-COMPONENTS-TOGGLES-0005": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "b3d7592fdf95417ebb1312694cd65a86bf4fcc25023892172b40ec1bcaeb90d2",
+        "section_path": ["Toggles", "Platform considerations", "macOS"]
+      },
+      "title": "Place macOS toggle controls in the window body",
+      "statement": {
+        "en": "Place macOS switches, checkboxes, and radio buttons in the window body, not its frame.",
+        "ja": "macOSのswitch、checkbox、radio buttonはwindow frameではなくwindow bodyへ置く。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Avoid these controls in toolbars and status bars in particular."],
+      "review_note": "Recorded the toolbar and status-bar exclusions."
+    },
+    "HIG-COMPONENTS-TOGGLES-0006": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "bd17b9e80f534739c58a6ed8f1fd15bb1d10ca20e04cf20b6a77411b3d2bcb48",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Switches"]
+      },
+      "title": "Prefer a macOS switch for emphasized settings",
+      "statement": {
+        "en": "Prefer a macOS switch when a setting needs emphasis or controls substantial functionality.",
+        "ja": "強調が必要、または大きな機能を制御するmacOS settingにはswitchを優先する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the switch's greater visual weight and broader-control use case."
+    },
+    "HIG-COMPONENTS-TOGGLES-0007": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "be57527ad2d2e0c00ea9fa623bae4535ff889693f6de57a67ced87578a9dba9c",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Checkboxes"]
+      },
+      "title": "Use macOS checkboxes for setting hierarchies",
+      "statement": {
+        "en": "Use macOS checkboxes to present a hierarchy of settings.",
+        "ja": "settingのhierarchy表示にはmacOS checkboxを使う。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use alignment and indentation to communicate grouping and dependencies."],
+      "review_note": "Recorded the hierarchy, grouping, and dependency rationale."
+    },
+    "HIG-COMPONENTS-TOGGLES-0008": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "b3d1a44aaae285f14b9f72b47502af4489a17b8ccda2a43850a0a83527fc8b5e",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Checkboxes"]
+      },
+      "title": "Consider radio buttons for more than two mutually exclusive options",
+      "statement": {
+        "en": "Consider macOS radio buttons for more than two mutually exclusive options.",
+        "ja": "3つ以上の排他的optionにはmacOS radio buttonを検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use unique labels to clarify choices beyond on and off."],
+      "review_note": "Retained MAY and recorded the more-than-two threshold."
+    },
+    "HIG-COMPONENTS-TOGGLES-0009": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "201c99a41c2b5e4936850f9353fa24fbfa28b06de573333a49fafca5342ad9d1",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Checkboxes"]
+      },
+      "title": "Consider a label for an unclear checkbox group",
+      "statement": {
+        "en": "Consider a group label when checkbox relationships are unclear.",
+        "ja": "checkbox間の関係が不明瞭な場合はgroup labelを検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Describe the options and align the label baseline with the first checkbox."],
+      "review_note": "Recorded the label-content and alignment details."
+    },
+    "HIG-COMPONENTS-TOGGLES-0010": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "1b645a87c66bc01500914e4c18be85f95fb7412964a8b353e03429b70c9ec5e2",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Radio buttons"]
+      },
+      "title": "Prefer macOS radio buttons for mutually exclusive choices",
+      "statement": {
+        "en": "Prefer macOS radio buttons for mutually exclusive choices.",
+        "ja": "排他的なchoiceにはmacOS radio buttonを優先する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "exceptions": ["Use checkboxes when people may choose multiple options."],
+      "review_note": "Recorded the multiple-selection checkbox alternative."
+    },
+    "HIG-COMPONENTS-TOGGLES-0011": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "af558efeb7963470de409312343f458818ee72c5d71ce80c7844c8b826a2da93",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Radio buttons"]
+      },
+      "title": "Avoid more than about five radio buttons in one set",
+      "statement": {
+        "en": "Avoid presenting more than about five radio buttons in one set.",
+        "ja": "1つのsetに約5個を超えるradio buttonを並べない。"
+      },
+      "normative_level": "AVOID",
+      "confidence": "high",
+      "review_required": false,
+      "exceptions": ["Consider a pop-up button when presenting more than about five options."],
+      "review_note": "Recorded the approximate five-option threshold and pop-up-button alternative."
+    },
+    "HIG-COMPONENTS-TOGGLES-0012": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "d53e9bed2dbdbd9406a2c8229a10d5e53c09d1121118dd3bd7939e19c50bd69c",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Radio buttons"]
+      },
+      "title": "Space horizontal macOS radio buttons consistently",
+      "statement": {
+        "en": "Space horizontal radio buttons consistently using the longest label's required width.",
+        "ja": "horizontal radio buttonは最長labelの必要幅を基準に等間隔で配置する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the longest-label measurement method."
+    },
+    "HIG-COMPONENTS-TOGGLES-0013": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "6af6b64058548fd0a584ebc64a0547f58616c09f5b56533330c27c204cad9afd",
+        "section_path": ["Toggles", "Best practices"]
+      },
+      "title": "Clearly identify what a toggle affects",
+      "statement": {
+        "en": "Clearly identify the setting, view, or content affected by a toggle.",
+        "ja": "toggleが影響するsetting、view、contentを明確に示す。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use surrounding context, a state label, or an icon that communicates purpose."],
+      "review_note": "Recovered the omitted Clearly lead and recorded the context, label, and icon techniques."
+    },
+    "HIG-COMPONENTS-TOGGLES-0014": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "7a55dfe415c4c23f18778219fdc30cb8db71bf46b17791193fd164514be14537",
+        "section_path": ["Toggles", "Platform considerations", "iOS, iPadOS"]
+      },
+      "title": "Change a switch's default color only when necessary",
+      "statement": {
+        "en": "Change an iOS or iPadOS switch's default color only when necessary.",
+        "ja": "iOSまたはiPadOS switchのdefault colorは必要な場合だけ変更する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["An accent color can work when it contrasts enough with the uncolored state."],
+      "review_note": "Recovered the omitted Change lead and recorded the contrast constraint."
+    },
+    "HIG-COMPONENTS-TOGGLES-0015": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "9ae8e6971f43e44ae329add52a19b10eaa690abb982b0d880cbdd27cd6241892",
+        "section_path": ["Toggles", "Platform considerations", "iOS, iPadOS"]
+      },
+      "title": "Use a toggle button outside an iOS or iPadOS list",
+      "statement": {
+        "en": "Outside a list, use a toggle button instead of an iOS or iPadOS switch.",
+        "ja": "list外ではiOSまたはiPadOS switchではなくtoggle buttonを使う。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use a distinct appearance, such as a background highlight, for the active state."],
+      "review_note": "Recovered the omitted contextual Use lead and recorded the state-appearance requirement."
+    },
+    "HIG-COMPONENTS-TOGGLES-0016": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "72f36e68eb6520ee41f9a0cc09e1c9da005ed52013bad6669c3db4e368017f2e",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Switches"]
+      },
+      "title": "Consider a mini switch in a grouped macOS form",
+      "statement": {
+        "en": "Within a grouped macOS form, consider a mini switch for a single-row setting.",
+        "ja": "grouped macOS form内のsingle-row settingにはmini switchを検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["A mini switch can keep row heights consistent with neighboring controls."],
+      "review_note": "Recovered the conditional Consider lead and retained MAY."
+    },
+    "HIG-COMPONENTS-TOGGLES-0017": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "365fd6cd04436d76a79be4cad78e3f58f97970b380482524baa9d75b98f3d9cc",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Switches"]
+      },
+      "title": "Avoid replacing an existing macOS checkbox with a switch",
+      "statement": {
+        "en": "Avoid replacing an existing macOS checkbox with a switch without a clear reason.",
+        "ja": "明確な理由なく既存のmacOS checkboxをswitchへ置き換えない。"
+      },
+      "normative_level": "AVOID",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the qualified prohibition and retained AVOID rather than MUST_NOT."
+    },
+    "HIG-COMPONENTS-TOGGLES-0018": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "8315d88948bb7e28f7b7cf0188989bfc6b07b153defc00f6547b9c9712a196d5",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Checkboxes"]
+      },
+      "title": "Accurately show each macOS checkbox state",
+      "statement": {
+        "en": "Accurately show each macOS checkbox as on, off, or mixed.",
+        "ja": "各macOS checkboxをon、off、mixedの正しい状態で表示する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Show mixed when subordinate checkboxes have different states."],
+      "review_note": "Recovered the omitted state-reflection lead and recorded the mixed-state condition."
+    },
+    "HIG-COMPONENTS-TOGGLES-0019": {
+      "source": {
+        "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+        "source_sentence_hash": "8a44bbe34b57ed94a432e7e43fd03ba6af36cd4641bdfa7199813afd8b22bdb0",
+        "section_path": ["Toggles", "Platform considerations", "macOS", "Radio buttons"]
+      },
+      "title": "Prefer a macOS checkbox for one on-or-off setting",
+      "statement": {
+        "en": "Prefer a macOS checkbox for one setting that can be on or off.",
+        "ja": "1つのon/off settingにはmacOS checkboxを優先する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "exceptions": ["Use two labeled radio buttons when one checkbox cannot communicate the opposing states clearly."],
+      "review_note": "Recovered the contextual Prefer lead and recorded the rare two-radio-button exception."
     }
   }
 }

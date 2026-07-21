@@ -3,10 +3,10 @@
 - Reviewed rules: 112
 - Retained MUST: 103
 - Retained MUST_NOT: 9
-- Normative level changes: 2
+- Normative level changes: 3
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T12:35:38Z
+- Reviewed at: 2026-07-21T12:45:18Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -21,6 +21,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-THE-MENU-BAR-0023 — Retained MUST after confirming the explicit Require directive and its interaction-cost rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0024 — Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-TOGGLES-0002 — Retained MUST after confirming the explicit Make sure lead and its color-perception constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0035 — Retained MUST after confirming the explicit Always directive under the Assistive Access guidelines and restored its applicability conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
@@ -67,7 +68,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-THE-MENU-BAR-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0023 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Require directive and its interaction-cost rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0024 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- HIG-COMPONENTS-TOGGLES-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOGGLES-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure lead and its color-perception constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
 - HIG-COMPONENTS-TOOLBARS-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-WIDGETS-0014 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))

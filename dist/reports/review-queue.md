@@ -1,33 +1,31 @@
 # Human source-review queue
 
-- Remaining rules: 1458
+- Remaining rules: 1467
 - Next priority: 4 (platform-specific-hig)
-- Next batch: 10
+- Next batch: 8
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 521
-- 5 (input-and-device-constraints): 38
-- 6 (apple-platform-common): 876
+- 4 (platform-specific-hig): 517
+- 5 (input-and-device-constraints): 39
+- 6 (apple-platform-common): 888
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 184
-- MAY: 166
-- SHOULD: 1108
+- AVOID: 183
+- MAY: 165
+- SHOULD: 1119
 
 ## Next batch
 
-- HIG-COMPONENTS-TOGGLES-0004 · AVOID — Avoid supplying a label that explains the button’s purpose · Toggles > Platform considerations > iOS, iPadOS ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0011 · AVOID — Avoid listing too many radio buttons in a set · Toggles > Platform considerations > macOS > Radio buttons ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0003 · SHOULD — Use the switch toggle style only in a list row · Toggles > Platform considerations > iOS, iPadOS ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0005 · SHOULD — Use switches, checkboxes, and radio buttons in the window body, not the window frame · Toggles > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0006 · SHOULD — Prefer a switch for settings that you want to emphasize · Toggles > Platform considerations > macOS > Switches ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0007 · SHOULD — Use a checkbox instead of a switch if you need to present a hierarchy of settings · Toggles > Platform considerations > macOS > Checkboxes ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0010 · SHOULD — Prefer a set of radio buttons to present mutually exclusive options · Toggles > Platform considerations > macOS > Radio buttons ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0012 · SHOULD — Use consistent spacing when you display radio buttons horizontally · Toggles > Platform considerations > macOS > Radio buttons ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0008 · MAY — Consider using radio buttons if you need to present a set of more than two mutually exclusive options · Toggles > Platform considerations > macOS > Checkboxes ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
-- HIG-COMPONENTS-TOGGLES-0009 · MAY — Consider using a label to introduce a group of checkboxes if their relationship isn’t clear · Toggles > Platform considerations > macOS > Checkboxes ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOOLBARS-0022 · AVOID — Avoid creating a vertical toolbar · Toolbars > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0023 · AVOID — Avoid using a pull-down menu in a toolbar · Toolbars > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0017 · SHOULD — Prioritize only the most important items for inclusion in the main toolbar area · Toolbars > Platform considerations > iOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0018 · SHOULD — Use a large title to help people stay oriented as they navigate and scroll · Toolbars > Platform considerations > iOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0020 · SHOULD — Make every toolbar item available as a command in the menu bar · Toolbars > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0021 · SHOULD — Prefer using a system-provided toolbar · Toolbars > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0024 · SHOULD — Use a scrolling toolbar button for an important action that isn’t a primary app function · Toolbars > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0019 · MAY — Consider combining a toolbar with a tab bar · Toolbars > Platform considerations > iPadOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))

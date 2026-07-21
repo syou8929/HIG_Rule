@@ -647,5 +647,87 @@
     "status": "active",
     "apple_native_rule": "Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0009",
+    "title": "In general, don’t repurpose standard keyboard shortcuts for custom actions",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "standard-keyboard-shortcuts",
+    "statement": {
+      "en": "Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience.",
+      "ja": "該当する体験ではrepurpose standard keyboard shortcuts for custom actionsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Standard keyboard shortcuts"
+      ],
+      "retrieved_at": "2026-07-21T11:14:59.212Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "969f483d3d240d22920f242f18330db0c00ca023780541d1bdc55de65ea3a910",
+      "evidence_paraphrase": "Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "standard-keyboard-shortcuts",
+      "keyboard"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]
