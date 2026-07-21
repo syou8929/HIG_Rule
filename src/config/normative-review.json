@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:11:09Z",
+  "reviewed_at": "2026-07-21T21:16:40Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,76 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 258,
+  "reviewed_rule_count": 267,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-CAREKIT-0001": {
+      "title": "Provide a clear CareKit privacy-policy URL",
+      "statement": {"en": "Provide a URL to a clearly stated CareKit privacy policy during app submission.", "ja": "app submission時に明確なCareKit privacy policyへのURLを提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["People can open the policy from the app's App Store page."],
+      "review_note": "Raised the privacy-policy rule to MUST from the source's explicit app-submission requirement."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0015": {
+      "title": "Ensure custom CareKit symbols remain relevant",
+      "statement": {"en": "Ensure a custom CareKit symbol relates closely to the app or to health and wellness.", "ja": "custom CareKit symbolをappまたはhealth and wellnessに密接に関連させる。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["A CareKit view needs a custom symbol instead of a built-in symbol."],
+      "review_note": "Raised the relevance requirement to MUST from the explicit be sure directive."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0018": {
+      "title": "Receive permission before accessing data through iOS features",
+      "statement": {"en": "Receive permission before accessing CareKit data through iOS features or capabilities.", "ja": "iOS featureまたはcapabilityを通じてCareKit dataへaccessする前にpermissionを得る。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["The data comes from the device or system rather than direct entry."],
+      "review_note": "Recovered MUST from the explicit permission-before-access requirement."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0019": {
+      "title": "Protect CareKit data regardless of its source",
+      "statement": {"en": "Protect CareKit data whether people enter it or it comes from the device or system.", "ja": "CareKit dataが利用者入力でもdeviceまたはsystem由来でも保護する。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["The app collects, stores, or accesses extremely sensitive care data."],
+      "review_note": "Recovered the separate explicit MUST to protect data from every documented source."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0024": {
+      "title": "Always manage HealthKit sharing through system privacy settings",
+      "statement": {"en": "Always manage HealthKit data sharing through the system privacy settings.", "ja": "HealthKit data sharingは常にsystem privacy settingで管理する。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["People manage global health-information access in Settings > Privacy."],
+      "review_note": "Retained MUST from the source's solely restriction and privacy-management context."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0034": {
+      "title": "Require a title for every CareKit task",
+      "statement": {"en": "Provide a title for every CareKit task.", "ja": "すべてのCareKit taskにtitleを提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["Use a word or short phrase that introduces the task."],
+      "review_note": "Recovered MUST from the task-information table's explicit Required: Yes value."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0035": {
+      "title": "Require a schedule for every CareKit task",
+      "statement": {"en": "Provide a schedule for every CareKit task.", "ja": "すべてのCareKit taskにscheduleを提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The schedule states when the task must be completed."],
+      "review_note": "Recovered MUST from the task-information table's explicit Required: Yes value."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0038": {
+      "title": "Never use color as the only CareKit task cue",
+      "statement": {"en": "Never use color as the only way to convey CareKit task information.", "ja": "CareKit task informationを伝える唯一の方法としてcolorを使わない。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["Color may reinforce meaning when another cue also conveys it."],
+      "review_note": "Recovered MUST_NOT from the explicit Always avoid directive and separated it from optional color reinforcement."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0042": {
+      "title": "Ensure sufficient contrast in CareKit chart colors",
+      "statement": {"en": "Ensure CareKit chart colors have sufficient contrast.", "ja": "CareKit chartのcolorに十分なcontrastを確保する。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["The chart uses color to distinguish data."],
+      "review_note": "Recovered the accessibility MUST from the explicit Ensure directive."
+    },
     "HIG-TECHNOLOGIES-ALWAYS-ON-0004": {
       "title": "Hide sensitive personal information in Always On",
       "statement": {"en": "Redact sensitive personal information in the Always On state.", "ja": "Always On stateではsensitiveなpersonal informationをredactする。"},

@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2527
+- Active atomic rules: 2557
 - Pages without rules: 16
-- Low-confidence rules: 913
-- Rules requiring human review: 913
-- Reference notes: 926
+- Low-confidence rules: 896
+- Rules requiring human review: 896
+- Reference notes: 922
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 644
+- technologies: 674
 
 ## Normative levels
 
-- AVOID: 335
-- MAY: 303
-- MUST: 237
-- MUST_NOT: 21
-- SHOULD: 1631
+- AVOID: 340
+- MAY: 310
+- MUST: 245
+- MUST_NOT: 22
+- SHOULD: 1640
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1669
-- ipados: 1625
-- macos: 1407
-- tvos: 1100
-- visionos: 1450
-- watchos: 1162
+- ios: 1698
+- ipados: 1654
+- macos: 1408
+- tvos: 1101
+- visionos: 1451
+- watchos: 1163
 
 ## Rules by testability
 
-- hybrid: 66
-- manual: 2461
+- hybrid: 67
+- manual: 2490
 
 ## Blocked pages
 
@@ -643,23 +643,6 @@ None.
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0033
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0034
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0035
-- HIG-TECHNOLOGIES-CAREKIT-0001
-- HIG-TECHNOLOGIES-CAREKIT-0002
-- HIG-TECHNOLOGIES-CAREKIT-0003
-- HIG-TECHNOLOGIES-CAREKIT-0004
-- HIG-TECHNOLOGIES-CAREKIT-0005
-- HIG-TECHNOLOGIES-CAREKIT-0006
-- HIG-TECHNOLOGIES-CAREKIT-0007
-- HIG-TECHNOLOGIES-CAREKIT-0008
-- HIG-TECHNOLOGIES-CAREKIT-0009
-- HIG-TECHNOLOGIES-CAREKIT-0010
-- HIG-TECHNOLOGIES-CAREKIT-0011
-- HIG-TECHNOLOGIES-CAREKIT-0012
-- HIG-TECHNOLOGIES-CAREKIT-0013
-- HIG-TECHNOLOGIES-CAREKIT-0014
-- HIG-TECHNOLOGIES-CAREKIT-0015
-- HIG-TECHNOLOGIES-CAREKIT-0016
-- HIG-TECHNOLOGIES-CAREKIT-0017
 - HIG-TECHNOLOGIES-GAME-CENTER-0001
 - HIG-TECHNOLOGIES-GAME-CENTER-0002
 - HIG-TECHNOLOGIES-GAME-CENTER-0003
@@ -1559,23 +1542,6 @@ None.
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0033
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0034
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0035
-- HIG-TECHNOLOGIES-CAREKIT-0001
-- HIG-TECHNOLOGIES-CAREKIT-0002
-- HIG-TECHNOLOGIES-CAREKIT-0003
-- HIG-TECHNOLOGIES-CAREKIT-0004
-- HIG-TECHNOLOGIES-CAREKIT-0005
-- HIG-TECHNOLOGIES-CAREKIT-0006
-- HIG-TECHNOLOGIES-CAREKIT-0007
-- HIG-TECHNOLOGIES-CAREKIT-0008
-- HIG-TECHNOLOGIES-CAREKIT-0009
-- HIG-TECHNOLOGIES-CAREKIT-0010
-- HIG-TECHNOLOGIES-CAREKIT-0011
-- HIG-TECHNOLOGIES-CAREKIT-0012
-- HIG-TECHNOLOGIES-CAREKIT-0013
-- HIG-TECHNOLOGIES-CAREKIT-0014
-- HIG-TECHNOLOGIES-CAREKIT-0015
-- HIG-TECHNOLOGIES-CAREKIT-0016
-- HIG-TECHNOLOGIES-CAREKIT-0017
 - HIG-TECHNOLOGIES-GAME-CENTER-0001
 - HIG-TECHNOLOGIES-GAME-CENTER-0002
 - HIG-TECHNOLOGIES-GAME-CENTER-0003
@@ -2002,11 +1968,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/camera-control · Camera Control > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/camera-control · Camera Control > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/camera-control · Camera Control > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/carekit · CareKit > CareKit views — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/carekit · CareKit > CareKit views > Tasks — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/carekit · CareKit > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/carekit · CareKit > Data and privacy > Photos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/carekit · CareKit > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/carekit · CareKit > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/carekit · CareKit > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/carekit · CareKit > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

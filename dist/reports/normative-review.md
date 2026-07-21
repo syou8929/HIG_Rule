@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 258
-- Retained MUST: 237
-- Retained MUST_NOT: 21
-- Normative level changes: 30
+- Reviewed rules: 267
+- Retained MUST: 245
+- Retained MUST_NOT: 22
+- Normative level changes: 34
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:11:09Z
+- Reviewed at: 2026-07-21T21:16:40Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -178,6 +178,15 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APP-CLIPS-0085 — Recovered MUST from the source's explicit must requirement for simultaneous business or location state. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0087 — Recovered MUST from the explicit Always directive for simple clear call-to-action messaging. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0089 — Recovered MUST from the explicit requirement that Apple trademarks remain in English. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- HIG-TECHNOLOGIES-CAREKIT-0001 — Raised the privacy-policy rule to MUST from the source's explicit app-submission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0015 — Raised the relevance requirement to MUST from the explicit be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0018 — Recovered MUST from the explicit permission-before-access requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0019 — Recovered the separate explicit MUST to protect data from every documented source. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0024 — Retained MUST from the source's solely restriction and privacy-management context. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0034 — Recovered MUST from the task-information table's explicit Required: Yes value. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0035 — Recovered MUST from the task-information table's explicit Required: Yes value. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0038 — Recovered MUST_NOT from the explicit Always avoid directive and separated it from optional color reinforcement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0042 — Recovered the accessibility MUST from the explicit Ensure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CARPLAY-0001 — Retained MUST_NOT after confirming the explicit Never prohibition and its stopped-vehicle recovery condition. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0002 — Retained MUST after confirming the explicit Make sure directive in the locked-iPhone context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0007 — Retained MUST after confirming the explicit Ensure directive and its hierarchy and placement context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
@@ -425,6 +434,15 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APP-CLIPS-0089 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit requirement that Apple trademarks remain in English. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APPLE-PAY-0020 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-APPLE-PAY-0025 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-CAREKIT-0001 · MUST · retained_with_atomicity_or_scope_correction — Raised the privacy-policy rule to MUST from the source's explicit app-submission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0015 · MUST · retained_with_atomicity_or_scope_correction — Raised the relevance requirement to MUST from the explicit be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit permission-before-access requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered the separate explicit MUST to protect data from every documented source. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0024 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the source's solely restriction and privacy-management context. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0034 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the task-information table's explicit Required: Yes value. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0035 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the task-information table's explicit Required: Yes value. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0038 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered MUST_NOT from the explicit Always avoid directive and separated it from optional color reinforcement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0042 · MUST · retained_with_atomicity_or_scope_correction — Recovered the accessibility MUST from the explicit Ensure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CARPLAY-0001 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained MUST_NOT after confirming the explicit Never prohibition and its stopped-vehicle recovery condition. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive in the locked-iPhone context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0007 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive and its hierarchy and placement context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))

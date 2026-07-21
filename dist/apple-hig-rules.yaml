@@ -124227,16 +124227,16 @@
   apple_native_rule: When you must display instructional text, use approachable terminology.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0001
-  title: Provide a coherent privacy policy
+  title: Provide a clear CareKit privacy-policy URL
   category: technologies
   topic: carekit
   subtopic: data-and-privacy
   statement:
-    en: Make a coherent privacy policy available when applicable.
-    ja: 必要な場合にa coherent privacy policyを利用可能にする。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
+    en: Provide a URL to a clearly stated CareKit privacy policy during app submission.
+    ja: app submission時に明確なCareKit privacy policyへのURLを提供する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -124250,7 +124250,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - People can open the policy from the app's App Store page.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124258,7 +124258,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make a coherent privacy policy available when applicable.” in the documented CareKit context?
+      - Does the design satisfy “Provide a URL to a clearly stated CareKit privacy policy during app submission.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124270,17 +124270,17 @@
     section_path:
       - CareKit
       - Data and privacy
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 307a245394ee048f64de0901d13f490956cbd96f13fe159dc6dfeb6e9da9d2ba
-    evidence_paraphrase: Make a coherent privacy policy available when applicable.
+    evidence_paraphrase: Provide a URL to a clearly stated CareKit privacy policy during app submission.
   tags:
     - technologies
     - carekit
     - data-and-privacy
-  priority_rank: 4
+  priority_rank: 3
   status: active
-  apple_native_rule: Make a coherent privacy policy available when applicable.
+  apple_native_rule: Provide a URL to a clearly stated CareKit privacy policy during app submission.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0002
   title: Use the simple style for a one-step task
@@ -124288,11 +124288,11 @@
   topic: carekit
   subtopic: tasks
   statement:
-    en: Choose or apply the simple style for a one-step task in the documented context.
-    ja: 該当する状況ではthe simple style for a one-step taskを採用する。
+    en: Use the CareKit simple style for a one-step task.
+    ja: one-step taskにはCareKit simple styleを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -124306,15 +124306,16 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - The default view has a title, subtitle, and completion button.
+  exceptions:
+    - Consider another style when the task needs additional content because the default simple view has no content stack.
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the simple style for a one-step task in the documented context.” in the documented CareKit context?
+      - Does the design satisfy “Use the CareKit simple style for a one-step task.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124327,10 +124328,10 @@
       - CareKit
       - CareKit views
       - Tasks
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 8ea3242151f2f9240e0e54bb854d1ed1ad74c82dec68b23da0b80640500981dd
-    evidence_paraphrase: Choose or apply the simple style for a one-step task in the documented context.
+    evidence_paraphrase: Use the CareKit simple style for a one-step task.
   tags:
     - technologies
     - carekit
@@ -124338,7 +124339,7 @@
     - tasks
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the simple style for a one-step task in the documented context.
+  apple_native_rule: Use the CareKit simple style for a one-step task.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0003
   title: Use the instructions style when you need to add informative text to a simple task
@@ -124346,11 +124347,11 @@
   topic: carekit
   subtopic: tasks
   statement:
-    en: Choose or apply the instructions style when you need to add informative text to a simple task in the documented context.
-    ja: 該当する状況ではthe instructions style when you need to add informative text to a simple taskを採用する。
+    en: Use the CareKit instructions style when a simple task needs informative text.
+    ja: simple taskにinformative textが必要な場合はCareKit instructions styleを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -124364,7 +124365,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The task remains single-step but needs information such as medication timing.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124372,7 +124373,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the instructions style when you need to add informative text to a simple task in the documented context.” in the documented CareKit context?
+      - Does the design satisfy “Use the CareKit instructions style when a simple task needs informative text.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124385,10 +124386,10 @@
       - CareKit
       - CareKit views
       - Tasks
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 3b1bc4e0c4ce7a916d99fed1560a7af31fa612c7d50811b627caeccecc587874
-    evidence_paraphrase: Choose or apply the instructions style when you need to add informative text to a simple task in the documented context.
+    evidence_paraphrase: Use the CareKit instructions style when a simple task needs informative text.
   tags:
     - technologies
     - carekit
@@ -124396,7 +124397,7 @@
     - tasks
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the instructions style when you need to add informative text to a simple task in the documented context.
+  apple_native_rule: Use the CareKit instructions style when a simple task needs informative text.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0004
   title: Use the log style to help people log events
@@ -124404,11 +124405,11 @@
   topic: carekit
   subtopic: tasks
   statement:
-    en: Choose or apply the log style to help people log events in the documented context.
-    ja: 該当する状況ではthe log style to help people log eventsを採用する。
+    en: Use the CareKit log style to help people record events.
+    ja: eventの記録を支援するためCareKit log styleを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -124422,7 +124423,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The task can add a timestamp each time a person logs an event.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124430,7 +124431,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the log style to help people log events in the documented context.” in the documented CareKit context?
+      - Does the design satisfy “Use the CareKit log style to help people record events.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124443,10 +124444,10 @@
       - CareKit
       - CareKit views
       - Tasks
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: af546d7ed4445ba457adc93bf918fe1df286d120aa5416fefc64be2553b842e6
-    evidence_paraphrase: Choose or apply the log style to help people log events in the documented context.
+    evidence_paraphrase: Use the CareKit log style to help people record events.
   tags:
     - technologies
     - carekit
@@ -124454,7 +124455,7 @@
     - tasks
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the log style to help people log events in the documented context.
+  apple_native_rule: Use the CareKit log style to help people record events.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0005
   title: Use the checklist style to display a list of actions or steps in a multistep task
@@ -124462,11 +124463,11 @@
   topic: carekit
   subtopic: tasks
   statement:
-    en: Choose or apply the checklist style to display a list of actions or steps in a multistep task in the documented context.
-    ja: 該当する状況ではthe checklist style to display a list of actions or steps in a multistep taskを採用する。
+    en: Use the CareKit checklist style for a list of actions or steps in a multistep task.
+    ja: multistep taskのactionまたはstep一覧にはCareKit checklist styleを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -124480,7 +124481,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Each item can include a description and a completion button; instructional text can appear below the list.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124488,7 +124489,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the checklist style to display a list of actions or steps in a multistep task in the documented context.” in the documented CareKit context?
+      - Does the design satisfy “Use the CareKit checklist style for a list of actions or steps in a multistep task.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124501,10 +124502,10 @@
       - CareKit
       - CareKit views
       - Tasks
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: ae24382950e60ea2ffcad2be7e870b05f4d035ecf3e9f0f719ec080ddfbd3790
-    evidence_paraphrase: Choose or apply the checklist style to display a list of actions or steps in a multistep task in the documented context.
+    evidence_paraphrase: Use the CareKit checklist style for a list of actions or steps in a multistep task.
   tags:
     - technologies
     - carekit
@@ -124512,7 +124513,7 @@
     - tasks
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the checklist style to display a list of actions or steps in a multistep task in the documented context.
+  apple_native_rule: Use the CareKit checklist style for a list of actions or steps in a multistep task.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0006
   title: Use the grid style to display a grid of buttons in a multistep task
@@ -124520,11 +124521,11 @@
   topic: carekit
   subtopic: tasks
   statement:
-    en: Choose or apply the grid style to display a grid of buttons in a multistep task in the documented context.
-    ja: 該当する状況ではthe grid style to display a grid of buttons in a multistep taskを採用する。
+    en: Use the CareKit grid style for a compact grid of buttons in a multistep task.
+    ja: multistep taskをcompactなbutton gridで示すためCareKit grid styleを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -124538,15 +124539,16 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Use succinct button titles and the underlying collection view when custom grid UI is needed.
+  exceptions:
+    - Prefer the checklist style when each button needs additional description.
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the grid style to display a grid of buttons in a multistep task in the documented context.” in the documented CareKit context?
+      - Does the design satisfy “Use the CareKit grid style for a compact grid of buttons in a multistep task.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124559,10 +124561,10 @@
       - CareKit
       - CareKit views
       - Tasks
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 9420dffacb6f186c9d1935491a823f7eeec3184dbccdd2f3fee82e88f7344afc
-    evidence_paraphrase: Choose or apply the grid style to display a grid of buttons in a multistep task in the documented context.
+    evidence_paraphrase: Use the CareKit grid style for a compact grid of buttons in a multistep task.
   tags:
     - technologies
     - carekit
@@ -124570,7 +124572,7 @@
     - tasks
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the grid style to display a grid of buttons in a multistep task in the documented context.
+  apple_native_rule: Use the CareKit grid style for a compact grid of buttons in a multistep task.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0007
   title: Consider using color to reinforce the meaning of task items
@@ -124578,11 +124580,11 @@
   topic: carekit
   subtopic: tasks
   statement:
-    en: Evaluate whether using color to reinforce the meaning of task items is appropriate for the current context.
-    ja: using color to reinforce the meaning of task itemsが現在の状況に適切か検討する。
+    en: Consider using color to reinforce the meaning of CareKit task items.
+    ja: CareKit task itemの意味を補強するためcolorの使用を検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -124596,7 +124598,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use color to improve at-a-glance categorization while another cue also conveys the meaning.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124604,7 +124606,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether using color to reinforce the meaning of task items is appropriate for the current context.” in the documented CareKit context?
+      - Does the design satisfy “Consider using color to reinforce the meaning of CareKit task items.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124617,10 +124619,10 @@
       - CareKit
       - CareKit views
       - Tasks
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 828e9e78a3c97c66ae2f86d560efa9a3cea528bce060e3350371e2b9abcea903
-    evidence_paraphrase: Evaluate whether using color to reinforce the meaning of task items is appropriate for the current context.
+    evidence_paraphrase: Consider using color to reinforce the meaning of CareKit task items.
   tags:
     - technologies
     - carekit
@@ -124628,7 +124630,7 @@
     - tasks
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether using color to reinforce the meaning of task items is appropriate for the current context.
+  apple_native_rule: Consider using color to reinforce the meaning of CareKit task items.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0008
   title: Consider supplementing multistep or complex tasks with videos or images
@@ -124636,11 +124638,11 @@
   topic: carekit
   subtopic: tasks
   statement:
-    en: Evaluate whether supplementing multistep or complex tasks with videos or images is appropriate for the current context.
-    ja: supplementing multistep or complex tasks with videos or imagesが現在の状況に適切か検討する。
+    en: Consider supplementing multistep or complex CareKit tasks with videos or images.
+    ja: multistepまたはcomplexなCareKit taskをvideoやimageで補うことを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -124654,7 +124656,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A visual demonstration can help people avoid mistakes.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124662,7 +124664,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether supplementing multistep or complex tasks with videos or images is appropriate for the current context.” in the documented CareKit context?
+      - Does the design satisfy “Consider supplementing multistep or complex CareKit tasks with videos or images.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124675,10 +124677,10 @@
       - CareKit
       - CareKit views
       - Tasks
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 2646bbb929b41f0c301f7c65def21ffac8bbbdb7dc57aeb0297247da417ef746
-    evidence_paraphrase: Evaluate whether supplementing multistep or complex tasks with videos or images is appropriate for the current context.
+    evidence_paraphrase: Consider supplementing multistep or complex CareKit tasks with videos or images.
   tags:
     - technologies
     - carekit
@@ -124686,7 +124688,7 @@
     - tasks
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether supplementing multistep or complex tasks with videos or images is appropriate for the current context.
+  apple_native_rule: Consider supplementing multistep or complex CareKit tasks with videos or images.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0009
   title: Consider highlighting narratives and trends to illustrate progress
@@ -124694,11 +124696,11 @@
   topic: carekit
   subtopic: charts
   statement:
-    en: Evaluate whether highlighting narratives and trends to illustrate progress is appropriate for the current context.
-    ja: highlighting narratives and trends to illustrate progressが現在の状況に適切か検討する。
+    en: Consider highlighting narratives and trends in CareKit charts to illustrate progress.
+    ja: progressを示すためCareKit chartでnarrativeやtrendを強調することを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -124712,7 +124714,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A meaningful correlation can help people understand progress or adherence.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124720,7 +124722,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether highlighting narratives and trends to illustrate progress is appropriate for the current context.” in the documented CareKit context?
+      - Does the design satisfy “Consider highlighting narratives and trends in CareKit charts to illustrate progress.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124733,10 +124735,10 @@
       - CareKit
       - CareKit views
       - Charts
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: f8f367df0b08f802c87493fd8e690d3be3e22ea0ec67a2cb443997c0b87c2c67
-    evidence_paraphrase: Evaluate whether highlighting narratives and trends to illustrate progress is appropriate for the current context.
+    evidence_paraphrase: Consider highlighting narratives and trends in CareKit charts to illustrate progress.
   tags:
     - technologies
     - carekit
@@ -124744,7 +124746,7 @@
     - charts
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether highlighting narratives and trends to illustrate progress is appropriate for the current context.
+  apple_native_rule: Consider highlighting narratives and trends in CareKit charts to illustrate progress.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0010
   title: Use distinct colors
@@ -124752,11 +124754,11 @@
   topic: carekit
   subtopic: charts
   statement:
-    en: Choose or apply distinct colors in the documented context.
-    ja: 該当する状況ではdistinct colorsを採用する。
+    en: Use distinct colors in CareKit charts.
+    ja: CareKit chartではdistinctなcolorを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -124770,7 +124772,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Different data meanings need visually distinct categories.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124778,7 +124780,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply distinct colors in the documented context.” in the documented CareKit context?
+      - Does the design satisfy “Use distinct colors in CareKit charts.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124791,10 +124793,10 @@
       - CareKit
       - CareKit views
       - Charts
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 24630b596c39f6e474d46dabc57a07b9eead15db2399aa063091fa9cf97e1d90
-    evidence_paraphrase: Choose or apply distinct colors in the documented context.
+    evidence_paraphrase: Use distinct colors in CareKit charts.
   tags:
     - technologies
     - carekit
@@ -124802,7 +124804,7 @@
     - charts
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply distinct colors in the documented context.
+  apple_native_rule: Use distinct colors in CareKit charts.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0011
   title: Consider providing a legend to add clarity
@@ -124810,11 +124812,11 @@
   topic: carekit
   subtopic: charts
   statement:
-    en: Evaluate whether providing a legend to add clarity is appropriate for the current context.
-    ja: providing a legend to add clarityが現在の状況に適切か検討する。
+    en: Consider a concise CareKit chart legend when data colors aren't immediately clear.
+    ja: data colorがすぐ理解できない場合は簡潔なCareKit chart legendを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -124828,7 +124830,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The legend clearly and succinctly describes each represented data type.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124836,7 +124838,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether providing a legend to add clarity is appropriate for the current context.” in the documented CareKit context?
+      - Does the design satisfy “Consider a concise CareKit chart legend when data colors aren't immediately clear.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124849,10 +124851,10 @@
       - CareKit
       - CareKit views
       - Charts
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: e1a424fdc1f110c5eb492fd8ae1e70c537a5c4f38bb8bfccc54f83aa36117e62
-    evidence_paraphrase: Evaluate whether providing a legend to add clarity is appropriate for the current context.
+    evidence_paraphrase: Consider a concise CareKit chart legend when data colors aren't immediately clear.
   tags:
     - technologies
     - carekit
@@ -124860,7 +124862,7 @@
     - charts
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether providing a legend to add clarity is appropriate for the current context.
+  apple_native_rule: Consider a concise CareKit chart legend when data colors aren't immediately clear.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0012
   title: Consider using color to categorize care team members
@@ -124868,11 +124870,11 @@
   topic: carekit
   subtopic: contact-views
   statement:
-    en: Evaluate whether using color to categorize care team members is appropriate for the current context.
-    ja: using color to categorize care team membersが現在の状況に適切か検討する。
+    en: Consider using color to categorize CareKit care-team members.
+    ja: CareKitのcare-team memberを分類するためcolorの使用を検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -124886,7 +124888,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Color helps people identify team-member categories at a glance.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124894,7 +124896,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether using color to categorize care team members is appropriate for the current context.” in the documented CareKit context?
+      - Does the design satisfy “Consider using color to categorize CareKit care-team members.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124907,10 +124909,10 @@
       - CareKit
       - CareKit views
       - Contact views
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 82b139573b35a82149cd053ea7ae73d53e962b700dc548209c9a6b55bba6cb4c
-    evidence_paraphrase: Evaluate whether using color to categorize care team members is appropriate for the current context.
+    evidence_paraphrase: Consider using color to categorize CareKit care-team members.
   tags:
     - technologies
     - carekit
@@ -124918,7 +124920,7 @@
     - contact-views
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether using color to categorize care team members is appropriate for the current context.
+  apple_native_rule: Consider using color to categorize CareKit care-team members.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0013
   title: Minimize notifications
@@ -124926,11 +124928,11 @@
   topic: carekit
   subtopic: notifications
   statement:
-    en: Apply the documented CareKit guidance to minimize notifications.
-    ja: 「CareKit」において「Minimize notifications」の指針を適用する。
+    en: Minimize CareKit notifications.
+    ja: CareKit notificationを最小限にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -124944,7 +124946,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use notifications sparingly across care plans with varying numbers of daily tasks.
+    - When possible, consider combining multiple items into one notification.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -124952,7 +124955,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented CareKit guidance to minimize notifications.” in the documented CareKit context?
+      - Does the design satisfy “Minimize CareKit notifications.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -124964,17 +124967,17 @@
     section_path:
       - CareKit
       - Notifications
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 042b0b6ba723cc35e55c568e280f15c7b405414a2e8c0472e3095e6c21937fb6
-    evidence_paraphrase: Apply the documented CareKit guidance to minimize notifications.
+    evidence_paraphrase: Minimize CareKit notifications.
   tags:
     - technologies
     - carekit
     - notifications
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented CareKit guidance to minimize notifications.
+  apple_native_rule: Minimize CareKit notifications.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0014
   title: Consider providing a detail view
@@ -124982,11 +124985,11 @@
   topic: carekit
   subtopic: notifications
   statement:
-    en: Evaluate whether providing a detail view is appropriate for the current context.
-    ja: providing a detail viewが現在の状況に適切か検討する。
+    en: Consider a CareKit notification detail view for information and immediate actions.
+    ja: 情報表示と即時actionのためCareKit notification detail viewを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -125000,7 +125003,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - People can act without leaving the current context to open the app.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -125008,7 +125011,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether providing a detail view is appropriate for the current context.” in the documented CareKit context?
+      - Does the design satisfy “Consider a CareKit notification detail view for information and immediate actions.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -125020,29 +125023,29 @@
     section_path:
       - CareKit
       - Notifications
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 9a2de7d897da51235775ee15d13ec7b10378b16cb6d02df4e56fb108d9b28e68
-    evidence_paraphrase: Evaluate whether providing a detail view is appropriate for the current context.
+    evidence_paraphrase: Consider a CareKit notification detail view for information and immediate actions.
   tags:
     - technologies
     - carekit
     - notifications
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether providing a detail view is appropriate for the current context.
+  apple_native_rule: Consider a CareKit notification detail view for information and immediate actions.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0015
-  title: Design a relevant care symbol
+  title: Ensure custom CareKit symbols remain relevant
   category: technologies
   topic: carekit
   subtopic: symbols-and-branding
   statement:
-    en: Apply the documented CareKit guidance to design a relevant care symbol.
-    ja: 「CareKit」において「Design a relevant care symbol」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
+    en: Ensure a custom CareKit symbol relates closely to the app or to health and wellness.
+    ja: custom CareKit symbolをappまたはhealth and wellnessに密接に関連させる。
+  normative_level: MUST
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -125056,7 +125059,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A CareKit view needs a custom symbol instead of a built-in symbol.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
@@ -125064,7 +125067,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented CareKit guidance to design a relevant care symbol.” in the documented CareKit context?
+      - Does the design satisfy “Ensure a custom CareKit symbol relates closely to the app or to health and wellness.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -125076,17 +125079,17 @@
     section_path:
       - CareKit
       - Symbols and branding
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
     source_sentence_hash: 8fac35e6b705ef202ee28a3f2a80f8aedd5a63bb1a3337e86bc7f06f3317f5b0
-    evidence_paraphrase: Apply the documented CareKit guidance to design a relevant care symbol.
+    evidence_paraphrase: Ensure a custom CareKit symbol relates closely to the app or to health and wellness.
   tags:
     - technologies
     - carekit
     - symbols-and-branding
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented CareKit guidance to design a relevant care symbol.
+  apple_native_rule: Ensure a custom CareKit symbol relates closely to the app or to health and wellness.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0016
   title: Support for creating custom symbols to represent the unique content in your app
@@ -125141,20 +125144,828 @@
     - carekit
     - symbols-and-branding
   priority_rank: 4
-  status: active
+  status: deprecated
   apple_native_rule: Ensure the experience accommodates for creating custom symbols to represent the unique content in your app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+  deprecated_at: 2026-07-21T21:23:31.604Z
 - id: HIG-TECHNOLOGIES-CAREKIT-0017
   title: Clearly denote units of time
   category: technologies
   topic: carekit
   subtopic: charts
   statement:
-    en: Clearly denote units of time.
-    ja: denote units of timeを明確にする。
+    en: Clearly identify the time units used in CareKit charts.
+    ja: CareKit chartで使用するtime unitを明確に示す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Show seconds, minutes, hours, days, weeks, months, or years in value labels, an axis label, or elsewhere on the chart.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Clearly identify the time units used in CareKit charts.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Charts
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 3bc8c51892f22f63c97b0f35d1ae6be1b611d26cfeb2b7f0fa183211d0f3eb35
+    evidence_paraphrase: Clearly identify the time units used in CareKit charts.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - charts
+  priority_rank: 4
+  status: active
+  apple_native_rule: Clearly identify the time units used in CareKit charts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0018
+  title: Receive permission before accessing data through iOS features
+  category: technologies
+  topic: carekit
+  subtopic: data-and-privacy
+  statement:
+    en: Receive permission before accessing CareKit data through iOS features or capabilities.
+    ja: iOS featureまたはcapabilityを通じてCareKit dataへaccessする前にpermissionを得る。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The data comes from the device or system rather than direct entry.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Receive permission before accessing CareKit data through iOS features or capabilities.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 4c6ac5d770b6184a1c1287081a2df7ed70f8075345ac2412da30d98387c0157e
+    evidence_paraphrase: Receive permission before accessing CareKit data through iOS features or capabilities.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+  priority_rank: 3
+  status: active
+  apple_native_rule: Receive permission before accessing CareKit data through iOS features or capabilities.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0019
+  title: Protect CareKit data regardless of its source
+  category: technologies
+  topic: carekit
+  subtopic: data-and-privacy
+  statement:
+    en: Protect CareKit data whether people enter it or it comes from the device or system.
+    ja: CareKit dataが利用者入力でもdeviceまたはsystem由来でも保護する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The app collects, stores, or accesses extremely sensitive care data.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Protect CareKit data whether people enter it or it comes from the device or system.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 4c6ac5d770b6184a1c1287081a2df7ed70f8075345ac2412da30d98387c0157e
+    evidence_paraphrase: Protect CareKit data whether people enter it or it comes from the device or system.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+  priority_rank: 3
+  status: active
+  apple_native_rule: Protect CareKit data whether people enter it or it comes from the device or system.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0020
+  title: Request HealthKit access only when needed
+  category: technologies
+  topic: carekit
+  subtopic: healthkit-integration
+  statement:
+    en: Request HealthKit data access only when the app needs it in the current context.
+    ja: current contextでappが必要とするときだけHealthKit data accessを要求する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Request relevant data during the related action rather than immediately after launch.
+    - Because permissions can change, make a request each time access is needed.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Request HealthKit data access only when the app needs it in the current context.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - HealthKit integration
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: c73024d184277c728343be48226135792b563fab9b517321f24ecceb18a3e901
+    evidence_paraphrase: Request HealthKit data access only when the app needs it in the current context.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - healthkit-integration
+  priority_rank: 3
+  status: active
+  apple_native_rule: Request HealthKit data access only when the app needs it in the current context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0021
+  title: Add descriptive messages to the standard HealthKit permission screen
+  category: technologies
+  topic: carekit
+  subtopic: healthkit-integration
+  statement:
+    en: Add descriptive intent messages to the standard HealthKit permission screen.
+    ja: standard HealthKit permission screenにintentを説明するmessageを追加する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - People expect the system-provided screen when approving health-data access.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Add descriptive intent messages to the standard HealthKit permission screen.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - HealthKit integration
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 1fc4a6f4ef658d161947f37a8a646295282a91e6a4cd81957ee633b9f0ef7795
+    evidence_paraphrase: Add descriptive intent messages to the standard HealthKit permission screen.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - healthkit-integration
+  priority_rank: 3
+  status: active
+  apple_native_rule: Add descriptive intent messages to the standard HealthKit permission screen.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0022
+  title: Explain HealthKit data need and sharing benefits succinctly
+  category: technologies
+  topic: carekit
+  subtopic: healthkit-integration
+  statement:
+    en: Use a few succinct sentences to explain why health information is needed and how sharing benefits people.
+    ja: health informationが必要な理由とsharingのbenefitを少数の簡潔な文で説明する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The text appears in the standard HealthKit permission experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use a few succinct sentences to explain why health information is needed and how sharing benefits people.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - HealthKit integration
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: ec371b1d095b3485e6027af35515c1dfe0ff24f556c2087e9ff65f27fde885b4
+    evidence_paraphrase: Use a few succinct sentences to explain why health information is needed and how sharing benefits people.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - healthkit-integration
+  priority_rank: 3
+  status: active
+  apple_native_rule: Use a few succinct sentences to explain why health information is needed and how sharing benefits people.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0023
+  title: Avoid custom replicas of the HealthKit permission screen
+  category: technologies
+  topic: carekit
+  subtopic: healthkit-integration
+  statement:
+    en: Avoid custom screens that replicate the standard HealthKit permission screen's behavior or content.
+    ja: standard HealthKit permission screenのbehaviorまたはcontentを複製するcustom screenを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid custom screens that replicate the standard HealthKit permission screen's behavior or content.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - HealthKit integration
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: ec371b1d095b3485e6027af35515c1dfe0ff24f556c2087e9ff65f27fde885b4
+    evidence_paraphrase: Avoid custom screens that replicate the standard HealthKit permission screen's behavior or content.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - healthkit-integration
+  priority_rank: 3
+  status: active
+  apple_native_rule: Avoid custom screens that replicate the standard HealthKit permission screen's behavior or content.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0024
+  title: Always manage HealthKit sharing through system privacy settings
+  category: technologies
+  topic: carekit
+  subtopic: healthkit-integration
+  statement:
+    en: Always manage HealthKit data sharing through the system privacy settings.
+    ja: HealthKit data sharingは常にsystem privacy settingで管理する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - People manage global health-information access in Settings > Privacy.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Always manage HealthKit data sharing through the system privacy settings.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - HealthKit integration
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: d2620355cf9443cdc41ebe06ce34a5284caed57e423677a009069e1620f5f520
+    evidence_paraphrase: Always manage HealthKit data sharing through the system privacy settings.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - healthkit-integration
+  priority_rank: 3
+  status: active
+  apple_native_rule: Always manage HealthKit data sharing through the system privacy settings.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0025
+  title: Avoid in-app screens that alter HealthKit data flow
+  category: technologies
+  topic: carekit
+  subtopic: healthkit-integration
+  statement:
+    en: Avoid adding in-app screens that affect the flow of HealthKit data.
+    ja: HealthKit dataのflowに影響するin-app screenを追加しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Additional controls can confuse people about global health-data access.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid adding in-app screens that affect the flow of HealthKit data.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - HealthKit integration
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: a6921ffcae871719c7fa6c7e01d9ed6ccc9e63587a5205b412b957c06acf4ac0
+    evidence_paraphrase: Avoid adding in-app screens that affect the flow of HealthKit data.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - healthkit-integration
+  priority_rank: 3
+  status: active
+  apple_native_rule: Avoid adding in-app screens that affect the flow of HealthKit data.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0026
+  title: Consider permitted motion data for useful treatment context
+  category: technologies
+  topic: carekit
+  subtopic: motion-data
+  statement:
+    en: When useful for treatment and permitted by the person, consider using device motion data in CareKit.
+    ja: treatmentに有用で利用者のpermissionがある場合、CareKitでdevice motion dataの使用を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Motion data can describe activity, step count, pace, and stair movement.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When useful for treatment and permitted by the person, consider using device motion data in CareKit.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - Motion data
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: f0334212ec208935115b96e5946b7c8891f8983d96dc66d7c42c4b22869ac678
+    evidence_paraphrase: When useful for treatment and permitted by the person, consider using device motion data in CareKit.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - motion-data
+  priority_rank: 3
+  status: active
+  apple_native_rule: When useful for treatment and permitted by the person, consider using device motion data in CareKit.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0027
+  title: Consider permitted photos for care-team progress sharing
+  category: technologies
+  topic: carekit
+  subtopic: photos
+  statement:
+    en: With the person's permission, consider camera and photo access for sharing treatment progress with a care team.
+    ja: 利用者のpermissionがある場合、treatment progressをcare teamと共有するためcameraとphotoへのaccessを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Images provide useful progress evidence such as monitoring injury healing.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “With the person's permission, consider camera and photo access for sharing treatment progress with a care team.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - Photos
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 43ada8b0a148278541afd25f3ad0eff2a67a2e40fc8b73ba5ef917c9059ff491
+    evidence_paraphrase: With the person's permission, consider camera and photo access for sharing treatment progress with a care team.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - photos
+  priority_rank: 3
+  status: active
+  apple_native_rule: With the person's permission, consider camera and photo access for sharing treatment progress with a care team.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0028
+  title: Consider appropriate ResearchKit content in CareKit
+  category: technologies
+  topic: carekit
+  subtopic: researchkit-integration
+  statement:
+    en: When appropriate, consider using ResearchKit surveys, tasks, and charts in CareKit.
+    ja: 適切な場合、CareKitでResearchKitのsurvey、task、chartの使用を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The ResearchKit content relates to the care experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When appropriate, consider using ResearchKit surveys, tasks, and charts in CareKit.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - ResearchKit integration
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 8733fe5ccdc538ba6019c9f0e4923743d08ea64965552fc940e89c94a15d751c
+    evidence_paraphrase: When appropriate, consider using ResearchKit surveys, tasks, and charts in CareKit.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - researchkit-integration
+  priority_rank: 4
+  status: active
+  apple_native_rule: When appropriate, consider using ResearchKit surveys, tasks, and charts in CareKit.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0029
+  title: Consider ResearchKit informed consent for data permission
+  category: technologies
+  topic: carekit
+  subtopic: researchkit-integration
+  statement:
+    en: Consider the ResearchKit informed-consent module when requesting permission to collect and share data.
+    ja: dataの収集と共有へのpermissionを求めるときResearchKit informed-consent moduleを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider the ResearchKit informed-consent module when requesting permission to collect and share data.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Data and privacy
+      - ResearchKit integration
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 8733fe5ccdc538ba6019c9f0e4923743d08ea64965552fc940e89c94a15d751c
+    evidence_paraphrase: Consider the ResearchKit informed-consent module when requesting permission to collect and share data.
+  tags:
+    - technologies
+    - carekit
+    - data-and-privacy
+    - researchkit-integration
+  priority_rank: 3
+  status: active
+  apple_native_rule: Consider the ResearchKit informed-consent module when requesting permission to collect and share data.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0030
+  title: Use each CareKit view for its intended purpose
+  category: technologies
+  topic: carekit
+  subtopic: carekit-views
+  statement:
+    en: Use each CareKit view type for its intended content and interaction purpose.
+    ja: 各CareKit view typeを意図されたcontentとinteractionの目的に使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Consistent view semantics help preserve a coherent CareKit experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use each CareKit view type for its intended content and interaction purpose.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 29ca643b1901f6c09adcc93b6bb6b151058cf36926f0558c7d1680387b42b3c3
+    evidence_paraphrase: Use each CareKit view type for its intended content and interaction purpose.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use each CareKit view type for its intended content and interaction purpose.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0031
+  title: Use CareKit task views for care actions and logging
+  category: technologies
+  topic: carekit
+  subtopic: carekit-views
+  statement:
+    en: Use CareKit task views for prescribed actions and for logging symptoms or other patient data.
+    ja: prescribed actionおよびsymptomやpatient dataのloggingにはCareKit task viewを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -125176,7 +125987,523 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Clearly denote units of time.” in the documented CareKit context?
+      - Does the design satisfy “Use CareKit task views for prescribed actions and for logging symptoms or other patient data.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 139da559b116e841f96a6d34fe2064d1f25b60a9c82319d48c0a98f7eb2b29df
+    evidence_paraphrase: Use CareKit task views for prescribed actions and for logging symptoms or other patient data.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use CareKit task views for prescribed actions and for logging symptoms or other patient data.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0032
+  title: Use CareKit chart views to show treatment progress
+  category: technologies
+  topic: carekit
+  subtopic: carekit-views
+  statement:
+    en: Use CareKit chart views for graphical data that helps people understand treatment progress.
+    ja: treatment progressの理解を助けるgraphical dataにはCareKit chart viewを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use CareKit chart views for graphical data that helps people understand treatment progress.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 139da559b116e841f96a6d34fe2064d1f25b60a9c82319d48c0a98f7eb2b29df
+    evidence_paraphrase: Use CareKit chart views for graphical data that helps people understand treatment progress.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use CareKit chart views for graphical data that helps people understand treatment progress.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0033
+  title: Use CareKit contact views for details and communication
+  category: technologies
+  topic: carekit
+  subtopic: carekit-views
+  statement:
+    en: Use CareKit contact views for contact information, communication actions, and location maps.
+    ja: contact information、communication action、location mapにはCareKit contact viewを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Supported communication includes phone, message, and email.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use CareKit contact views for contact information, communication actions, and location maps.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 139da559b116e841f96a6d34fe2064d1f25b60a9c82319d48c0a98f7eb2b29df
+    evidence_paraphrase: Use CareKit contact views for contact information, communication actions, and location maps.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use CareKit contact views for contact information, communication actions, and location maps.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0034
+  title: Require a title for every CareKit task
+  category: technologies
+  topic: carekit
+  subtopic: tasks
+  statement:
+    en: Provide a title for every CareKit task.
+    ja: すべてのCareKit taskにtitleを提供する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use a word or short phrase that introduces the task.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Provide a title for every CareKit task.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Tasks
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 43f28d5010cb7dfbb96ee3132badfce5518da984eb9e4642975c9b9359d0e0fb
+    evidence_paraphrase: Provide a title for every CareKit task.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - tasks
+  priority_rank: 4
+  status: active
+  apple_native_rule: Provide a title for every CareKit task.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0035
+  title: Require a schedule for every CareKit task
+  category: technologies
+  topic: carekit
+  subtopic: tasks
+  statement:
+    en: Provide a schedule for every CareKit task.
+    ja: すべてのCareKit taskにscheduleを提供する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The schedule states when the task must be completed.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Provide a schedule for every CareKit task.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Tasks
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 43f28d5010cb7dfbb96ee3132badfce5518da984eb9e4642975c9b9359d0e0fb
+    evidence_paraphrase: Provide a schedule for every CareKit task.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - tasks
+  priority_rank: 4
+  status: active
+  apple_native_rule: Provide a schedule for every CareKit task.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0036
+  title: Consider instructions for CareKit task details
+  category: technologies
+  topic: carekit
+  subtopic: tasks
+  statement:
+    en: Consider CareKit task instructions for detailed guidance, recommendations, and warnings.
+    ja: 詳細なguidance、recommendation、warningにはCareKit task instructionを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The task information table marks instructions as optional.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider CareKit task instructions for detailed guidance, recommendations, and warnings.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Tasks
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 43f28d5010cb7dfbb96ee3132badfce5518da984eb9e4642975c9b9359d0e0fb
+    evidence_paraphrase: Consider CareKit task instructions for detailed guidance, recommendations, and warnings.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - tasks
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider CareKit task instructions for detailed guidance, recommendations, and warnings.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0037
+  title: Consider a group ID for related CareKit tasks
+  category: technologies
+  topic: carekit
+  subtopic: tasks
+  statement:
+    en: Consider a group ID when related CareKit tasks need meaningful grouping.
+    ja: 関連CareKit taskを意味のある方法でgroupingする場合はgroup IDを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The task information table marks the group ID as optional.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider a group ID when related CareKit tasks need meaningful grouping.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Tasks
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 43f28d5010cb7dfbb96ee3132badfce5518da984eb9e4642975c9b9359d0e0fb
+    evidence_paraphrase: Consider a group ID when related CareKit tasks need meaningful grouping.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - tasks
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider a group ID when related CareKit tasks need meaningful grouping.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0038
+  title: Never use color as the only CareKit task cue
+  category: technologies
+  topic: carekit
+  subtopic: tasks
+  statement:
+    en: Never use color as the only way to convey CareKit task information.
+    ja: CareKit task informationを伝える唯一の方法としてcolorを使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Color may reinforce meaning when another cue also conveys it.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use color as the only way to convey CareKit task information.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Tasks
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: dc49e573b52aac169a56c3feca704d50ea91baf5af7e50b8cc9ffb2e945580de
+    evidence_paraphrase: Never use color as the only way to convey CareKit task information.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - tasks
+  priority_rank: 2
+  status: active
+  apple_native_rule: Never use color as the only way to convey CareKit task information.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0039
+  title: Keep CareKit task descriptions accurate and simple
+  category: technologies
+  topic: carekit
+  subtopic: tasks
+  statement:
+    en: Keep CareKit task and step descriptions accurate and simple.
+    ja: CareKit taskとstepのdescriptionをaccurateかつsimpleに保つ。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Prefer familiar names and remove repeated words when task context already clarifies meaning.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep CareKit task and step descriptions accurate and simple.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Tasks
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 160eaa9b64cdb6abd2acbd0d2ce95e746e9ebe325f6b3524a595b8051e390c33
+    evidence_paraphrase: Keep CareKit task and step descriptions accurate and simple.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - tasks
+  priority_rank: 4
+  status: active
+  apple_native_rule: Keep CareKit task and step descriptions accurate and simple.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0040
+  title: Keep CareKit chart labels clear and succinct
+  category: technologies
+  topic: carekit
+  subtopic: charts
+  statement:
+    en: Keep CareKit chart labels clear, short, and nonrepetitive.
+    ja: CareKit chart labelをclear、short、nonrepetitiveに保つ。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Put shared units in an axis label instead of repeating them on every data point.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep CareKit chart labels clear, short, and nonrepetitive.” in the documented CareKit context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -125189,10 +126516,10 @@
       - CareKit
       - CareKit views
       - Charts
-    retrieved_at: 2026-07-21T11:14:40.973Z
+    retrieved_at: 2026-07-21T21:16:40Z
     source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
-    source_sentence_hash: 3bc8c51892f22f63c97b0f35d1ae6be1b611d26cfeb2b7f0fa183211d0f3eb35
-    evidence_paraphrase: Clearly denote units of time.
+    source_sentence_hash: 0872f02e2711b382146b9a4200368741653193c261e4d2efdf7e5c1288f687e5
+    evidence_paraphrase: Keep CareKit chart labels clear, short, and nonrepetitive.
   tags:
     - technologies
     - carekit
@@ -125200,7 +126527,468 @@
     - charts
   priority_rank: 4
   status: active
-  apple_native_rule: Clearly denote units of time.
+  apple_native_rule: Keep CareKit chart labels clear, short, and nonrepetitive.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0041
+  title: Avoid same-color shades for different CareKit chart meanings
+  category: technologies
+  topic: carekit
+  subtopic: charts
+  statement:
+    en: Avoid using different shades of one color for different CareKit chart meanings.
+    ja: 異なるCareKit chartの意味に同一colorの異なるshadeを使わない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use distinct color categories instead.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid using different shades of one color for different CareKit chart meanings.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Charts
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: e2aaf1443b45cb95a2640fd7d739a9757e63dd12c5b02a6cce51b40d1e3e1a3c
+    evidence_paraphrase: Avoid using different shades of one color for different CareKit chart meanings.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - charts
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid using different shades of one color for different CareKit chart meanings.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0042
+  title: Ensure sufficient contrast in CareKit chart colors
+  category: technologies
+  topic: carekit
+  subtopic: charts
+  statement:
+    en: Ensure CareKit chart colors have sufficient contrast.
+    ja: CareKit chartのcolorに十分なcontrastを確保する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The chart uses color to distinguish data.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “Ensure CareKit chart colors have sufficient contrast.” in the documented CareKit context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Charts
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: e2aaf1443b45cb95a2640fd7d739a9757e63dd12c5b02a6cce51b40d1e3e1a3c
+    evidence_paraphrase: Ensure CareKit chart colors have sufficient contrast.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - charts
+  priority_rank: 2
+  status: active
+  apple_native_rule: Ensure CareKit chart colors have sufficient contrast.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0043
+  title: Consolidate large CareKit chart data sets
+  category: technologies
+  topic: carekit
+  subtopic: charts
+  statement:
+    en: Group and organize large CareKit chart data sets for clarity and readability.
+    ja: large CareKit chart data setをclarityとreadabilityのためgroupingしorganizeする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Too much visible data can shrink individual points and make the chart unreadable.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Group and organize large CareKit chart data sets for clarity and readability.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Charts
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: ac654bdcfe64683d607efa88cc3f43b3b9ff87aae57113c40dc33e0a52b1d232
+    evidence_paraphrase: Group and organize large CareKit chart data sets for clarity and readability.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - charts
+  priority_rank: 4
+  status: active
+  apple_native_rule: Group and organize large CareKit chart data sets for clarity and readability.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0044
+  title: Offset data when necessary for proportional CareKit charts
+  category: technologies
+  topic: carekit
+  subtopic: charts
+  statement:
+    en: When necessary, offset or restructure CareKit chart data so all points remain readable.
+    ja: 必要な場合、すべてのpointがreadableになるようCareKit chart dataをoffsetまたはrestructureする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - A significant difference between small and large data points harms proportional readability.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When necessary, offset or restructure CareKit chart data so all points remain readable.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - CareKit views
+      - Charts
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 74a7bd2c71058e38cdcebfa5c22d90dde6ea2ddd4316521649f73f789993ad2a
+    evidence_paraphrase: When necessary, offset or restructure CareKit chart data so all points remain readable.
+  tags:
+    - technologies
+    - carekit
+    - carekit-views
+    - charts
+  priority_rank: 4
+  status: active
+  apple_native_rule: When necessary, offset or restructure CareKit chart data so all points remain readable.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0045
+  title: Consider SF Symbols for custom CareKit grid items
+  category: technologies
+  topic: carekit
+  subtopic: symbols-and-branding
+  statement:
+    en: Consider SF Symbols for custom items in a CareKit grid view.
+    ja: CareKit grid viewのcustom itemにはSF Symbolsを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Custom symbols represent unique content or meaningful task groups.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider SF Symbols for custom items in a CareKit grid view.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Symbols and branding
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 5b1ae5c6358b779602a9a845d735b2835a20bebc304718c76c5e759c52380d4c
+    evidence_paraphrase: Consider SF Symbols for custom items in a CareKit grid view.
+  tags:
+    - technologies
+    - carekit
+    - symbols-and-branding
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider SF Symbols for custom items in a CareKit grid view.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0046
+  title: Avoid decorative or corporate-logo custom care symbols
+  category: technologies
+  topic: carekit
+  subtopic: symbols-and-branding
+  statement:
+    en: Avoid purely decorative custom care symbols and corporate logos used as custom symbols.
+    ja: purely decorativeなcustom care symbolやcustom symbolとしてのcorporate logoを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid purely decorative custom care symbols and corporate logos used as custom symbols.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Symbols and branding
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 151b0b592e6817fd9a4a3abd338828db95c7ae6710b91f225b5093819859f8a5
+    evidence_paraphrase: Avoid purely decorative custom care symbols and corporate logos used as custom symbols.
+  tags:
+    - technologies
+    - carekit
+    - symbols-and-branding
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid purely decorative custom care symbols and corporate logos used as custom symbols.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0047
+  title: Keep CareKit branding refined and unobtrusive
+  category: technologies
+  topic: carekit
+  subtopic: symbols-and-branding
+  statement:
+    en: Keep CareKit branding refined, subtle, and unobtrusive.
+    ja: CareKit brandingをrefined、subtle、unobtrusiveに保つ。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use color and communication style without distracting from the care plan or resembling advertising.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep CareKit branding refined, subtle, and unobtrusive.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Symbols and branding
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 26267f7337e377a8fbda42710c502a0a3b4b66fdb3056dded54c2098fe8137bc
+    evidence_paraphrase: Keep CareKit branding refined, subtle, and unobtrusive.
+  tags:
+    - technologies
+    - carekit
+    - symbols-and-branding
+  priority_rank: 4
+  status: active
+  apple_native_rule: Keep CareKit branding refined, subtle, and unobtrusive.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CAREKIT-0048
+  title: Avoid relying on CareKit on unsupported platforms
+  category: technologies
+  topic: carekit
+  subtopic: platform-considerations
+  statement:
+    en: Avoid relying on CareKit in macOS, tvOS, visionOS, or watchOS.
+    ja: macOS、tvOS、visionOS、watchOSではCareKitに依存しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The documented CareKit experience is supported on iOS and iPadOS only.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CareKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCareKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid relying on CareKit in macOS, tvOS, visionOS, or watchOS.” in the documented CareKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carekit
+    page_title: CareKit
+    section_path:
+      - CareKit
+      - Platform considerations
+    retrieved_at: 2026-07-21T21:16:40Z
+    source_hash: c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971
+    source_sentence_hash: 2ec3f085b0c134724e9f7910d2fabc6e2faf405a8938fc1e68661571673c4197
+    evidence_paraphrase: Avoid relying on CareKit in macOS, tvOS, visionOS, or watchOS.
+  tags:
+    - technologies
+    - carekit
+    - platform-considerations
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid relying on CareKit in macOS, tvOS, visionOS, or watchOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CARPLAY-0001
   title: Never lock people out of CarPlay because the connected iPhone requires input

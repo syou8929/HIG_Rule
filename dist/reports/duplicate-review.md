@@ -1,10 +1,10 @@
 # Exact duplicate source review
 
-- Candidate groups: 9
-- Reviewed contextual groups: 9
+- Candidate groups: 8
+- Reviewed contextual groups: 8
 - Unresolved groups: 0
 - Official source only: yes
-- Reviewed at: 2026-07-21T12:25:19Z
+- Reviewed at: 2026-07-21T21:24:29Z
 
 Exact statements are retained only when separate Apple HIG pages, sections, components, technologies, or platform scopes need independent retrieval. This is not a claim of authoritative HIG compliance.
 
@@ -31,9 +31,6 @@ Exact statements are retained only when separate Apple HIG pages, sections, comp
 - HIG-PATTERNS-LAUNCHING-0003, HIG-TECHNOLOGIES-SIRI-0003 — Retained because Apple's identical short directive governs different experiences: launch screens and Siri interactions.
   - HIG-PATTERNS-LAUNCHING-0003: Launching > Launch screens ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
   - HIG-TECHNOLOGIES-SIRI-0003: Siri > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- HIG-TECHNOLOGIES-CAREKIT-0001, HIG-TECHNOLOGIES-HEALTHKIT-0001 — Retained because CareKit and HealthKit are distinct technology integrations with different platform scopes and source sections.
-  - HIG-TECHNOLOGIES-CAREKIT-0001: CareKit > Data and privacy ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
-  - HIG-TECHNOLOGIES-HEALTHKIT-0001: HealthKit > Privacy protection ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005, HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Retained because Apple repeats the security requirement in the Implicit feedback and Calibration sections; explicit conditions distinguish the two applications.
   - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005: Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
   - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034: Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))

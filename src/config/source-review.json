@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:11:09Z",
+  "reviewed_at": "2026-07-21T21:16:40Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2577,6 +2577,21 @@
         "HIG-TECHNOLOGIES-ALWAYS-ON-0008", "HIG-TECHNOLOGIES-ALWAYS-ON-0009", "HIG-TECHNOLOGIES-ALWAYS-ON-0010", "HIG-TECHNOLOGIES-ALWAYS-ON-0011", "HIG-TECHNOLOGIES-ALWAYS-ON-0012", "HIG-TECHNOLOGIES-ALWAYS-ON-0013"
       ],
       "review_note": "Completed the page, preserved four existing IDs, recovered nine atomic rules, retained two privacy MUST rules with explicit crucial or need support, and kept descriptive platform limitations at AVOID."
+    },
+    {
+      "id": "priority-4-carekit-complete-context-2026-07-21",
+      "reviewed_at": "2026-07-21T21:16:40Z",
+      "review_method": "Rendered Apple HIG CareKit privacy, HealthKit, data-source, view, task-table, chart, notification, symbol, branding, and platform guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/carekit", "source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971"}],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-CAREKIT-0001", "HIG-TECHNOLOGIES-CAREKIT-0002", "HIG-TECHNOLOGIES-CAREKIT-0003", "HIG-TECHNOLOGIES-CAREKIT-0004", "HIG-TECHNOLOGIES-CAREKIT-0005", "HIG-TECHNOLOGIES-CAREKIT-0006", "HIG-TECHNOLOGIES-CAREKIT-0007", "HIG-TECHNOLOGIES-CAREKIT-0008", "HIG-TECHNOLOGIES-CAREKIT-0009",
+        "HIG-TECHNOLOGIES-CAREKIT-0010", "HIG-TECHNOLOGIES-CAREKIT-0011", "HIG-TECHNOLOGIES-CAREKIT-0012", "HIG-TECHNOLOGIES-CAREKIT-0013", "HIG-TECHNOLOGIES-CAREKIT-0014", "HIG-TECHNOLOGIES-CAREKIT-0015", "HIG-TECHNOLOGIES-CAREKIT-0017", "HIG-TECHNOLOGIES-CAREKIT-0018", "HIG-TECHNOLOGIES-CAREKIT-0019",
+        "HIG-TECHNOLOGIES-CAREKIT-0020", "HIG-TECHNOLOGIES-CAREKIT-0021", "HIG-TECHNOLOGIES-CAREKIT-0022", "HIG-TECHNOLOGIES-CAREKIT-0023", "HIG-TECHNOLOGIES-CAREKIT-0024", "HIG-TECHNOLOGIES-CAREKIT-0025", "HIG-TECHNOLOGIES-CAREKIT-0026", "HIG-TECHNOLOGIES-CAREKIT-0027", "HIG-TECHNOLOGIES-CAREKIT-0028", "HIG-TECHNOLOGIES-CAREKIT-0029",
+        "HIG-TECHNOLOGIES-CAREKIT-0030", "HIG-TECHNOLOGIES-CAREKIT-0031", "HIG-TECHNOLOGIES-CAREKIT-0032", "HIG-TECHNOLOGIES-CAREKIT-0033", "HIG-TECHNOLOGIES-CAREKIT-0034", "HIG-TECHNOLOGIES-CAREKIT-0035", "HIG-TECHNOLOGIES-CAREKIT-0036", "HIG-TECHNOLOGIES-CAREKIT-0037", "HIG-TECHNOLOGIES-CAREKIT-0038", "HIG-TECHNOLOGIES-CAREKIT-0039",
+        "HIG-TECHNOLOGIES-CAREKIT-0040", "HIG-TECHNOLOGIES-CAREKIT-0041", "HIG-TECHNOLOGIES-CAREKIT-0042", "HIG-TECHNOLOGIES-CAREKIT-0043", "HIG-TECHNOLOGIES-CAREKIT-0044", "HIG-TECHNOLOGIES-CAREKIT-0045", "HIG-TECHNOLOGIES-CAREKIT-0046", "HIG-TECHNOLOGIES-CAREKIT-0047", "HIG-TECHNOLOGIES-CAREKIT-0048"
+      ],
+      "review_note": "Completed the page, preserved sixteen active IDs, deprecated one non-guidance SF Symbols capability fragment, recovered thirty-one atomic rules, and retained nine explicit privacy, required-field, accessibility, relevance, or color-only MUST/MUST_NOT decisions."
     }
   ],
   "rules": {
@@ -5830,6 +5845,236 @@
       "title": "Avoid relying on Always On on unsupported platforms", "statement": {"en": "Avoid relying on Always On in iPadOS, macOS, tvOS, or visionOS.", "ja": "iPadOS、macOS、tvOS、visionOSではAlways Onに依存しない。"}, "normative_level": "AVOID",
       "scope": {"portability": "technology-specific", "platforms": ["ipados", "macos", "tvos", "visionos"], "devices": ["ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
       "conditions": ["The documented Always On experience is supported on iOS and watchOS only."], "review_note": "Recorded unsupported platforms conservatively as AVOID rather than converting descriptive support text to MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0001": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "307a245394ee048f64de0901d13f490956cbd96f13fe159dc6dfeb6e9da9d2ba", "section_path": ["CareKit", "Data and privacy"]},
+      "priority_rank": 3, "review_note": "Applied the explicit app-submission privacy-policy requirement and privacy priority."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0002": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "8ea3242151f2f9240e0e54bb854d1ed1ad74c82dec68b23da0b80640500981dd", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "statement": {"en": "Use the CareKit simple style for a one-step task.", "ja": "one-step taskにはCareKit simple styleを使う。"},
+      "conditions": ["The default view has a title, subtitle, and completion button."],
+      "exceptions": ["Consider another style when the task needs additional content because the default simple view has no content stack."], "review_note": "Recorded the one-step scope, default elements, and no-content-stack exception."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0003": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "3b1bc4e0c4ce7a916d99fed1560a7af31fa612c7d50811b627caeccecc587874", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "statement": {"en": "Use the CareKit instructions style when a simple task needs informative text.", "ja": "simple taskにinformative textが必要な場合はCareKit instructions styleを使う。"},
+      "conditions": ["The task remains single-step but needs information such as medication timing."], "review_note": "Preserved the conditional distinction from the simple task style."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0004": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "af546d7ed4445ba457adc93bf918fe1df286d120aa5416fefc64be2553b842e6", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "statement": {"en": "Use the CareKit log style to help people record events.", "ja": "eventの記録を支援するためCareKit log styleを使う。"},
+      "conditions": ["The task can add a timestamp each time a person logs an event."], "review_note": "Recorded the event-logging purpose and automatic timestamp capability."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0005": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "ae24382950e60ea2ffcad2be7e870b05f4d035ecf3e9f0f719ec080ddfbd3790", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "statement": {"en": "Use the CareKit checklist style for a list of actions or steps in a multistep task.", "ja": "multistep taskのactionまたはstep一覧にはCareKit checklist styleを使う。"},
+      "conditions": ["Each item can include a description and a completion button; instructional text can appear below the list."], "review_note": "Recorded item-level completion and optional instructional-text behavior."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0006": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "9420dffacb6f186c9d1935491a823f7eeec3184dbccdd2f3fee82e88f7344afc", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "statement": {"en": "Use the CareKit grid style for a compact grid of buttons in a multistep task.", "ja": "multistep taskをcompactなbutton gridで示すためCareKit grid styleを使う。"},
+      "conditions": ["Use succinct button titles and the underlying collection view when custom grid UI is needed."],
+      "exceptions": ["Prefer the checklist style when each button needs additional description."], "review_note": "Recorded compactness, title length, custom UI access, and the checklist alternative."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0007": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "828e9e78a3c97c66ae2f86d560efa9a3cea528bce060e3350371e2b9abcea903", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "statement": {"en": "Consider using color to reinforce the meaning of CareKit task items.", "ja": "CareKit task itemの意味を補強するためcolorの使用を検討する。"}, "normative_level": "MAY",
+      "conditions": ["Use color to improve at-a-glance categorization while another cue also conveys the meaning."], "review_note": "Preserved optional color reinforcement and separated the color-only prohibition."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0008": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "2646bbb929b41f0c301f7c65def21ffac8bbbdb7dc57aeb0297247da417ef746", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "statement": {"en": "Consider supplementing multistep or complex CareKit tasks with videos or images.", "ja": "multistepまたはcomplexなCareKit taskをvideoやimageで補うことを検討する。"}, "normative_level": "MAY",
+      "conditions": ["A visual demonstration can help people avoid mistakes."], "review_note": "Preserved the task-complexity condition and error-prevention purpose."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0009": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "f8f367df0b08f802c87493fd8e690d3be3e22ea0ec67a2cb443997c0b87c2c67", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "statement": {"en": "Consider highlighting narratives and trends in CareKit charts to illustrate progress.", "ja": "progressを示すためCareKit chartでnarrativeやtrendを強調することを検討する。"}, "normative_level": "MAY",
+      "conditions": ["A meaningful correlation can help people understand progress or adherence."], "review_note": "Recorded the progress and adherence purpose without strengthening consider."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0010": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "24630b596c39f6e474d46dabc57a07b9eead15db2399aa063091fa9cf97e1d90", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "statement": {"en": "Use distinct colors in CareKit charts.", "ja": "CareKit chartではdistinctなcolorを使う。"},
+      "conditions": ["Different data meanings need visually distinct categories."], "review_note": "Kept the positive color distinction atomic from same-shade avoidance and contrast."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0011": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "e1a424fdc1f110c5eb492fd8ae1e70c537a5c4f38bb8bfccc54f83aa36117e62", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "statement": {"en": "Consider a concise CareKit chart legend when data colors aren't immediately clear.", "ja": "data colorがすぐ理解できない場合は簡潔なCareKit chart legendを検討する。"}, "normative_level": "MAY",
+      "conditions": ["The legend clearly and succinctly describes each represented data type."], "review_note": "Preserved the unclear-color condition and optional legend strength."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0012": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "82b139573b35a82149cd053ea7ae73d53e962b700dc548209c9a6b55bba6cb4c", "section_path": ["CareKit", "CareKit views", "Contact views"]},
+      "statement": {"en": "Consider using color to categorize CareKit care-team members.", "ja": "CareKitのcare-team memberを分類するためcolorの使用を検討する。"}, "normative_level": "MAY",
+      "conditions": ["Color helps people identify team-member categories at a glance."], "review_note": "Preserved the optional at-a-glance categorization purpose."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0013": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "042b0b6ba723cc35e55c568e280f15c7b405414a2e8c0472e3095e6c21937fb6", "section_path": ["CareKit", "Notifications"]},
+      "statement": {"en": "Minimize CareKit notifications.", "ja": "CareKit notificationを最小限にする。"},
+      "conditions": ["Use notifications sparingly across care plans with varying numbers of daily tasks.", "When possible, consider combining multiple items into one notification."], "review_note": "Recorded workload variation, sparing delivery, and conditional coalescing."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0014": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "9a2de7d897da51235775ee15d13ec7b10378b16cb6d02df4e56fb108d9b28e68", "section_path": ["CareKit", "Notifications"]},
+      "statement": {"en": "Consider a CareKit notification detail view for information and immediate actions.", "ja": "情報表示と即時actionのためCareKit notification detail viewを検討する。"}, "normative_level": "MAY",
+      "conditions": ["People can act without leaving the current context to open the app."], "review_note": "Recorded both the information and in-context action purposes."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0015": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "8fac35e6b705ef202ee28a3f2a80f8aedd5a63bb1a3337e86bc7f06f3317f5b0", "section_path": ["CareKit", "Symbols and branding"]},
+      "review_note": "Retained the symbol-relevance requirement separately from decorative and corporate-logo avoidance."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0017": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "3bc8c51892f22f63c97b0f35d1ae6be1b611d26cfeb2b7f0fa183211d0f3eb35", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "statement": {"en": "Clearly identify the time units used in CareKit charts.", "ja": "CareKit chartで使用するtime unitを明確に示す。"},
+      "conditions": ["Show seconds, minutes, hours, days, weeks, months, or years in value labels, an axis label, or elsewhere on the chart."], "review_note": "Recorded every documented unit and allowed label location."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0018": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "4c6ac5d770b6184a1c1287081a2df7ed70f8075345ac2412da30d98387c0157e", "section_path": ["CareKit", "Data and privacy"]},
+      "priority_rank": 3, "review_note": "Applied the explicit permission-before-access MUST and privacy priority."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0019": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "4c6ac5d770b6184a1c1287081a2df7ed70f8075345ac2412da30d98387c0157e", "section_path": ["CareKit", "Data and privacy"]},
+      "priority_rank": 3, "review_note": "Applied the separate all-sources data-protection MUST and privacy priority."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0020": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "c73024d184277c728343be48226135792b563fab9b517321f24ecceb18a3e901", "section_path": ["CareKit", "Data and privacy", "HealthKit integration"]},
+      "title": "Request HealthKit access only when needed", "statement": {"en": "Request HealthKit data access only when the app needs it in the current context.", "ja": "current contextでappが必要とするときだけHealthKit data accessを要求する。"},
+      "priority_rank": 3,
+      "conditions": ["Request relevant data during the related action rather than immediately after launch.", "Because permissions can change, make a request each time access is needed."], "review_note": "Recorded need, contextual timing, launch avoidance, and mutable-permission behavior."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0021": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "1fc4a6f4ef658d161947f37a8a646295282a91e6a4cd81957ee633b9f0ef7795", "section_path": ["CareKit", "Data and privacy", "HealthKit integration"]},
+      "title": "Add descriptive messages to the standard HealthKit permission screen", "statement": {"en": "Add descriptive intent messages to the standard HealthKit permission screen.", "ja": "standard HealthKit permission screenにintentを説明するmessageを追加する。"},
+      "priority_rank": 3, "conditions": ["People expect the system-provided screen when approving health-data access."], "review_note": "Recorded the standard-screen expectation and app-intent purpose."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0022": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "ec371b1d095b3485e6027af35515c1dfe0ff24f556c2087e9ff65f27fde885b4", "section_path": ["CareKit", "Data and privacy", "HealthKit integration"]},
+      "title": "Explain HealthKit data need and sharing benefits succinctly", "statement": {"en": "Use a few succinct sentences to explain why health information is needed and how sharing benefits people.", "ja": "health informationが必要な理由とsharingのbenefitを少数の簡潔な文で説明する。"},
+      "priority_rank": 3, "conditions": ["The text appears in the standard HealthKit permission experience."], "review_note": "Recovered both required message dimensions and the succinct-copy constraint."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0023": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "ec371b1d095b3485e6027af35515c1dfe0ff24f556c2087e9ff65f27fde885b4", "section_path": ["CareKit", "Data and privacy", "HealthKit integration"]},
+      "title": "Avoid custom replicas of the HealthKit permission screen", "statement": {"en": "Avoid custom screens that replicate the standard HealthKit permission screen's behavior or content.", "ja": "standard HealthKit permission screenのbehaviorまたはcontentを複製するcustom screenを避ける。"}, "normative_level": "AVOID",
+      "priority_rank": 3, "review_note": "Separated the custom-screen prohibition and retained AVOID strength."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0024": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "d2620355cf9443cdc41ebe06ce34a5284caed57e423677a009069e1620f5f520", "section_path": ["CareKit", "Data and privacy", "HealthKit integration"]},
+      "priority_rank": 3, "review_note": "Applied the system-only HealthKit sharing requirement and privacy priority."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0025": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "a6921ffcae871719c7fa6c7e01d9ed6ccc9e63587a5205b412b957c06acf4ac0", "section_path": ["CareKit", "Data and privacy", "HealthKit integration"]},
+      "title": "Avoid in-app screens that alter HealthKit data flow", "statement": {"en": "Avoid adding in-app screens that affect the flow of HealthKit data.", "ja": "HealthKit dataのflowに影響するin-app screenを追加しない。"}, "normative_level": "AVOID",
+      "priority_rank": 3, "conditions": ["Additional controls can confuse people about global health-data access."], "review_note": "Separated the additional-screen warning from system-only management."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0026": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "f0334212ec208935115b96e5946b7c8891f8983d96dc66d7c42c4b22869ac678", "section_path": ["CareKit", "Data and privacy", "Motion data"]},
+      "title": "Consider permitted motion data for useful treatment context", "statement": {"en": "When useful for treatment and permitted by the person, consider using device motion data in CareKit.", "ja": "treatmentに有用で利用者のpermissionがある場合、CareKitでdevice motion dataの使用を検討する。"}, "normative_level": "MAY",
+      "priority_rank": 3, "conditions": ["Motion data can describe activity, step count, pace, and stair movement."], "review_note": "Recovered both treatment usefulness and explicit permission as prerequisites."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0027": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "43ada8b0a148278541afd25f3ad0eff2a67a2e40fc8b73ba5ef917c9059ff491", "section_path": ["CareKit", "Data and privacy", "Photos"]},
+      "title": "Consider permitted photos for care-team progress sharing", "statement": {"en": "With the person's permission, consider camera and photo access for sharing treatment progress with a care team.", "ja": "利用者のpermissionがある場合、treatment progressをcare teamと共有するためcameraとphotoへのaccessを検討する。"}, "normative_level": "MAY",
+      "priority_rank": 3, "conditions": ["Images provide useful progress evidence such as monitoring injury healing."], "review_note": "Recovered explicit permission, care-team sharing, and treatment-progress purpose."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0028": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "8733fe5ccdc538ba6019c9f0e4923743d08ea64965552fc940e89c94a15d751c", "section_path": ["CareKit", "Data and privacy", "ResearchKit integration"]},
+      "title": "Consider appropriate ResearchKit content in CareKit", "statement": {"en": "When appropriate, consider using ResearchKit surveys, tasks, and charts in CareKit.", "ja": "適切な場合、CareKitでResearchKitのsurvey、task、chartの使用を検討する。"}, "normative_level": "MAY",
+      "conditions": ["The ResearchKit content relates to the care experience."], "review_note": "Recovered all three content types and preserved the appropriateness condition."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0029": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "8733fe5ccdc538ba6019c9f0e4923743d08ea64965552fc940e89c94a15d751c", "section_path": ["CareKit", "Data and privacy", "ResearchKit integration"]},
+      "title": "Consider ResearchKit informed consent for data permission", "statement": {"en": "Consider the ResearchKit informed-consent module when requesting permission to collect and share data.", "ja": "dataの収集と共有へのpermissionを求めるときResearchKit informed-consent moduleを検討する。"}, "normative_level": "MAY",
+      "priority_rank": 3, "review_note": "Separated the informed-consent option from ResearchKit content integration."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0030": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "29ca643b1901f6c09adcc93b6bb6b151058cf36926f0558c7d1680387b42b3c3", "section_path": ["CareKit", "CareKit views"]},
+      "title": "Use each CareKit view for its intended purpose", "statement": {"en": "Use each CareKit view type for its intended content and interaction purpose.", "ja": "各CareKit view typeを意図されたcontentとinteractionの目的に使う。"},
+      "conditions": ["Consistent view semantics help preserve a coherent CareKit experience."], "review_note": "Recovered the view-category contract above the purpose table."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0031": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "139da559b116e841f96a6d34fe2064d1f25b60a9c82319d48c0a98f7eb2b29df", "section_path": ["CareKit", "CareKit views"]},
+      "title": "Use CareKit task views for care actions and logging", "statement": {"en": "Use CareKit task views for prescribed actions and for logging symptoms or other patient data.", "ja": "prescribed actionおよびsymptomやpatient dataのloggingにはCareKit task viewを使う。"},
+      "review_note": "Recovered both task purposes from the view-category table."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0032": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "139da559b116e841f96a6d34fe2064d1f25b60a9c82319d48c0a98f7eb2b29df", "section_path": ["CareKit", "CareKit views"]},
+      "title": "Use CareKit chart views to show treatment progress", "statement": {"en": "Use CareKit chart views for graphical data that helps people understand treatment progress.", "ja": "treatment progressの理解を助けるgraphical dataにはCareKit chart viewを使う。"},
+      "review_note": "Recovered the chart purpose from the view-category table."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0033": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "139da559b116e841f96a6d34fe2064d1f25b60a9c82319d48c0a98f7eb2b29df", "section_path": ["CareKit", "CareKit views"]},
+      "title": "Use CareKit contact views for details and communication", "statement": {"en": "Use CareKit contact views for contact information, communication actions, and location maps.", "ja": "contact information、communication action、location mapにはCareKit contact viewを使う。"},
+      "conditions": ["Supported communication includes phone, message, and email."], "review_note": "Recovered contact display, three communication methods, and map linking from the table."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0034": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "43f28d5010cb7dfbb96ee3132badfce5518da984eb9e4642975c9b9359d0e0fb", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "review_note": "Applied the task table's required title field as an atomic MUST."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0035": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "43f28d5010cb7dfbb96ee3132badfce5518da984eb9e4642975c9b9359d0e0fb", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "review_note": "Applied the task table's required schedule field as an atomic MUST."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0036": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "43f28d5010cb7dfbb96ee3132badfce5518da984eb9e4642975c9b9359d0e0fb", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "title": "Consider instructions for CareKit task details", "statement": {"en": "Consider CareKit task instructions for detailed guidance, recommendations, and warnings.", "ja": "詳細なguidance、recommendation、warningにはCareKit task instructionを検討する。"}, "normative_level": "MAY",
+      "conditions": ["The task information table marks instructions as optional."], "review_note": "Recovered the optional instructions field and all three documented content types."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0037": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "43f28d5010cb7dfbb96ee3132badfce5518da984eb9e4642975c9b9359d0e0fb", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "title": "Consider a group ID for related CareKit tasks", "statement": {"en": "Consider a group ID when related CareKit tasks need meaningful grouping.", "ja": "関連CareKit taskを意味のある方法でgroupingする場合はgroup IDを検討する。"}, "normative_level": "MAY",
+      "conditions": ["The task information table marks the group ID as optional."], "review_note": "Recovered the optional grouping field and its semantic-grouping purpose."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0038": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "dc49e573b52aac169a56c3feca704d50ea91baf5af7e50b8cc9ffb2e945580de", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "priority_rank": 2, "review_note": "Applied the explicit color-only MUST_NOT and accessibility priority."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0039": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "160eaa9b64cdb6abd2acbd0d2ce95e746e9ebe325f6b3524a595b8051e390c33", "section_path": ["CareKit", "CareKit views", "Tasks"]},
+      "title": "Keep CareKit task descriptions accurate and simple", "statement": {"en": "Keep CareKit task and step descriptions accurate and simple.", "ja": "CareKit taskとstepのdescriptionをaccurateかつsimpleに保つ。"},
+      "conditions": ["Prefer familiar names and remove repeated words when task context already clarifies meaning."], "review_note": "Recovered the accuracy-simplicity balance, familiar-name example, and contextual brevity."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0040": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "0872f02e2711b382146b9a4200368741653193c261e4d2efdf7e5c1288f687e5", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "title": "Keep CareKit chart labels clear and succinct", "statement": {"en": "Keep CareKit chart labels clear, short, and nonrepetitive.", "ja": "CareKit chart labelをclear、short、nonrepetitiveに保つ。"},
+      "conditions": ["Put shared units in an axis label instead of repeating them on every data point."], "review_note": "Recovered label clarity, brevity, repetition avoidance, and the shared-unit example."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0041": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "e2aaf1443b45cb95a2640fd7d739a9757e63dd12c5b02a6cce51b40d1e3e1a3c", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "title": "Avoid same-color shades for different CareKit chart meanings", "statement": {"en": "Avoid using different shades of one color for different CareKit chart meanings.", "ja": "異なるCareKit chartの意味に同一colorの異なるshadeを使わない。"}, "normative_level": "AVOID",
+      "conditions": ["Use distinct color categories instead."], "review_note": "Separated the general same-shade warning from positive distinct-color and contrast rules."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0042": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "e2aaf1443b45cb95a2640fd7d739a9757e63dd12c5b02a6cce51b40d1e3e1a3c", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "priority_rank": 2, "review_note": "Applied the explicit chart-contrast MUST and accessibility priority."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0043": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "ac654bdcfe64683d607efa88cc3f43b3b9ff87aae57113c40dc33e0a52b1d232", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "title": "Consolidate large CareKit chart data sets", "statement": {"en": "Group and organize large CareKit chart data sets for clarity and readability.", "ja": "large CareKit chart data setをclarityとreadabilityのためgroupingしorganizeする。"},
+      "conditions": ["Too much visible data can shrink individual points and make the chart unreadable."], "review_note": "Recovered grouping, organization, clarity, and data-point readability."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0044": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "74a7bd2c71058e38cdcebfa5c22d90dde6ea2ddd4316521649f73f789993ad2a", "section_path": ["CareKit", "CareKit views", "Charts"]},
+      "title": "Offset data when necessary for proportional CareKit charts", "statement": {"en": "When necessary, offset or restructure CareKit chart data so all points remain readable.", "ja": "必要な場合、すべてのpointがreadableになるようCareKit chart dataをoffsetまたはrestructureする。"},
+      "conditions": ["A significant difference between small and large data points harms proportional readability."], "review_note": "Preserved the necessary-only condition and both documented remedies."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0045": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "5b1ae5c6358b779602a9a845d735b2835a20bebc304718c76c5e759c52380d4c", "section_path": ["CareKit", "Symbols and branding"]},
+      "title": "Consider SF Symbols for custom CareKit grid items", "statement": {"en": "Consider SF Symbols for custom items in a CareKit grid view.", "ja": "CareKit grid viewのcustom itemにはSF Symbolsを検討する。"}, "normative_level": "MAY",
+      "conditions": ["Custom symbols represent unique content or meaningful task groups."], "review_note": "Replaced the deprecated SF Symbols capability fragment with the actual conditional consider guidance."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0046": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "151b0b592e6817fd9a4a3abd338828db95c7ae6710b91f225b5093819859f8a5", "section_path": ["CareKit", "Symbols and branding"]},
+      "title": "Avoid decorative or corporate-logo custom care symbols", "statement": {"en": "Avoid purely decorative custom care symbols and corporate logos used as custom symbols.", "ja": "purely decorativeなcustom care symbolやcustom symbolとしてのcorporate logoを避ける。"}, "normative_level": "AVOID",
+      "review_note": "Separated both prohibited symbol types from the positive relevance requirement."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0047": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "26267f7337e377a8fbda42710c502a0a3b4b66fdb3056dded54c2098fe8137bc", "section_path": ["CareKit", "Symbols and branding"]},
+      "title": "Keep CareKit branding refined and unobtrusive", "statement": {"en": "Keep CareKit branding refined, subtle, and unobtrusive.", "ja": "CareKit brandingをrefined、subtle、unobtrusiveに保つ。"},
+      "conditions": ["Use color and communication style without distracting from the care plan or resembling advertising."], "review_note": "Recovered subtle brand channels and the care-plan distraction risk."
+    },
+    "HIG-TECHNOLOGIES-CAREKIT-0048": {
+      "source": {"source_hash": "c47b511816912efef53224a17864f7f7938279958b2293d9da69d92f455f9971", "source_sentence_hash": "2ec3f085b0c134724e9f7910d2fabc6e2faf405a8938fc1e68661571673c4197", "section_path": ["CareKit", "Platform considerations"]},
+      "title": "Avoid relying on CareKit on unsupported platforms", "statement": {"en": "Avoid relying on CareKit in macOS, tvOS, visionOS, or watchOS.", "ja": "macOS、tvOS、visionOS、watchOSではCareKitに依存しない。"}, "normative_level": "AVOID",
+      "scope": {"portability": "technology-specific", "platforms": ["macos", "tvos", "visionos", "watchos"], "devices": ["mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The documented CareKit experience is supported on iOS and iPadOS only."], "review_note": "Recorded unsupported platforms conservatively as AVOID rather than promoting descriptive support text to MUST_NOT."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

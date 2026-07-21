@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1537
-- Reviewed batches: 103
+- Reviewed rules: 1584
+- Reviewed batches: 104
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:11:09Z
+- Reviewed at: 2026-07-21T21:16:40Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1442,6 +1442,53 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-APP-CLIPS-0087 · high — Reviewed the rendered source context for “Always use a simple clear App Clip Code call to action” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0088 · high — Reviewed the rendered source context for “Avoid displaying App Clip Codes for inactive App Clips” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0089 · high — Reviewed the rendered source context for “Make sure Apple trademarks remain in English” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- HIG-TECHNOLOGIES-CAREKIT-0001 · high — Applied the explicit app-submission privacy-policy requirement and privacy priority. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0002 · high — Recorded the one-step scope, default elements, and no-content-stack exception. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0003 · high — Preserved the conditional distinction from the simple task style. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0004 · high — Recorded the event-logging purpose and automatic timestamp capability. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0005 · high — Recorded item-level completion and optional instructional-text behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0006 · high — Recorded compactness, title length, custom UI access, and the checklist alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0007 · high — Preserved optional color reinforcement and separated the color-only prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0008 · high — Preserved the task-complexity condition and error-prevention purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0009 · high — Recorded the progress and adherence purpose without strengthening consider. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0010 · high — Kept the positive color distinction atomic from same-shade avoidance and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0011 · high — Preserved the unclear-color condition and optional legend strength. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0012 · high — Preserved the optional at-a-glance categorization purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0013 · high — Recorded workload variation, sparing delivery, and conditional coalescing. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0014 · high — Recorded both the information and in-context action purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0015 · high — Retained the symbol-relevance requirement separately from decorative and corporate-logo avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0017 · high — Recorded every documented unit and allowed label location. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0018 · high — Applied the explicit permission-before-access MUST and privacy priority. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0019 · high — Applied the separate all-sources data-protection MUST and privacy priority. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0020 · high — Recorded need, contextual timing, launch avoidance, and mutable-permission behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0021 · high — Recorded the standard-screen expectation and app-intent purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0022 · high — Recovered both required message dimensions and the succinct-copy constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0023 · high — Separated the custom-screen prohibition and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0024 · high — Applied the system-only HealthKit sharing requirement and privacy priority. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0025 · high — Separated the additional-screen warning from system-only management. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0026 · high — Recovered both treatment usefulness and explicit permission as prerequisites. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0027 · high — Recovered explicit permission, care-team sharing, and treatment-progress purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0028 · high — Recovered all three content types and preserved the appropriateness condition. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0029 · high — Separated the informed-consent option from ResearchKit content integration. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0030 · high — Recovered the view-category contract above the purpose table. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0031 · high — Recovered both task purposes from the view-category table. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0032 · high — Recovered the chart purpose from the view-category table. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0033 · high — Recovered contact display, three communication methods, and map linking from the table. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0034 · high — Applied the task table's required title field as an atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0035 · high — Applied the task table's required schedule field as an atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0036 · high — Recovered the optional instructions field and all three documented content types. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0037 · high — Recovered the optional grouping field and its semantic-grouping purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0038 · high — Applied the explicit color-only MUST_NOT and accessibility priority. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0039 · high — Recovered the accuracy-simplicity balance, familiar-name example, and contextual brevity. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0040 · high — Recovered label clarity, brevity, repetition avoidance, and the shared-unit example. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0041 · high — Separated the general same-shade warning from positive distinct-color and contrast rules. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0042 · high — Applied the explicit chart-contrast MUST and accessibility priority. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0043 · high — Recovered grouping, organization, clarity, and data-point readability. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0044 · high — Preserved the necessary-only condition and both documented remedies. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0045 · high — Replaced the deprecated SF Symbols capability fragment with the actual conditional consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0046 · high — Separated both prohibited symbol types from the positive relevance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0047 · high — Recovered subtle brand channels and the care-plan distraction risk. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
+- HIG-TECHNOLOGIES-CAREKIT-0048 · high — Recorded unsupported platforms conservatively as AVOID rather than promoting descriptive support text to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CARPLAY-0001 · high — Reviewed the rendered source context for “Never lock people out of CarPlay because the connected iPhone requires input” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0002 · high — Reviewed the rendered source context for “Make sure your app works without requiring people to unlock iPhone” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0003 · high — Reviewed the rendered source context for “Let people choose when to start playback” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
