@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:44:30Z",
+  "reviewed_at": "2026-07-21T17:53:25Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2156,6 +2156,21 @@
         "HIG-COMPONENTS-SEARCH-FIELDS-0021", "HIG-COMPONENTS-SEARCH-FIELDS-0022", "HIG-COMPONENTS-SEARCH-FIELDS-0023", "HIG-COMPONENTS-SEARCH-FIELDS-0024"
       ],
       "review_note": "Completed Search fields coverage; retained all fifteen existing IDs, recovered nine atomic rules, repaired truncated placement guidance, preserved the exact tvOS suggestion duplicate, and found no source-supported MUST classification."
+    },
+    {
+      "id": "priority-4-split-views-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:53:25Z",
+      "review_method": "Rendered Apple HIG Split views guidance, navigation behavior, iOS and iPadOS sizing, macOS panes and dividers, tvOS layout and titles, visionOS presentation, watchOS detail behavior, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/split-views", "source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-SPLIT-VIEWS-0001", "HIG-COMPONENTS-SPLIT-VIEWS-0002", "HIG-COMPONENTS-SPLIT-VIEWS-0003", "HIG-COMPONENTS-SPLIT-VIEWS-0004",
+        "HIG-COMPONENTS-SPLIT-VIEWS-0005", "HIG-COMPONENTS-SPLIT-VIEWS-0006", "HIG-COMPONENTS-SPLIT-VIEWS-0007", "HIG-COMPONENTS-SPLIT-VIEWS-0008",
+        "HIG-COMPONENTS-SPLIT-VIEWS-0009", "HIG-COMPONENTS-SPLIT-VIEWS-0010", "HIG-COMPONENTS-SPLIT-VIEWS-0011", "HIG-COMPONENTS-SPLIT-VIEWS-0012",
+        "HIG-COMPONENTS-SPLIT-VIEWS-0013", "HIG-COMPONENTS-SPLIT-VIEWS-0014", "HIG-COMPONENTS-SPLIT-VIEWS-0015", "HIG-COMPONENTS-SPLIT-VIEWS-0016",
+        "HIG-COMPONENTS-SPLIT-VIEWS-0017", "HIG-COMPONENTS-SPLIT-VIEWS-0018", "HIG-COMPONENTS-SPLIT-VIEWS-0019", "HIG-COMPONENTS-SPLIT-VIEWS-0020"
+      ],
+      "review_note": "Completed Split views coverage; retained all nine existing IDs, recovered eleven atomic rules, removed a false gaze modality, and preserved only the explicit iPadOS Ensure and macOS Make sure clauses as conditional MUST rules."
     }
   ],
   "rules": {
@@ -2628,6 +2643,158 @@
       "statement": {"en": "Keep iPadOS and macOS search placement useful as the window resizes.", "ja": "window resize時もiPadOSとmacOSのsearch placementをcontextually usefulに保つ。"},
       "conditions": ["In compact iPadOS views, keep search where it is most contextually useful, such as above the content-list column."],
       "review_note": "Activated resizing guidance and recorded the compact iPadOS fallback."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0001": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "adf9199e2908163291f595934ec199a977c565dcbf30d3993db66f7d53407caf", "section_path": ["Split views", "Best practices"]},
+      "title": "Consider cross-pane drag and drop",
+      "statement": {"en": "Consider letting people drag and drop content between split-view panes.", "ja": "split-view pane間でcontentをdrag and dropできるようにすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Visible hierarchy levels let people move content conveniently between parts of the app."],
+      "review_note": "Preserved MAY and recorded the cross-hierarchy movement purpose."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0002": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "7669241d3c0b8fffffd5501e54464cb1fb4e047f4a9072564e1c319f0b90327c", "section_path": ["Split views", "Platform considerations", "iOS"]},
+      "title": "Prefer split views in regular iOS widths",
+      "statement": {"en": "Prefer a split view in a regular-width iOS environment.", "ja": "iOSではregular-width environmentでsplit viewを優先する。"},
+      "conditions": ["A split view needs enough horizontal space to display multiple panes legibly."],
+      "exceptions": ["Compact environments such as portrait iPhone can force wrapping or truncation and make content harder to read and use."],
+      "review_note": "Retained SHOULD and made the regular-versus-compact width condition concrete."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0003": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "b43e62985d328d0c2a9d580f69f55513a81ebc4cf1846fc62d2f3e265300653a", "section_path": ["Split views", "Platform considerations", "macOS"]},
+      "title": "Consider hiding macOS panes",
+      "statement": {"en": "Consider letting people hide a macOS split-view pane when it makes sense.", "ja": "適切な場合はmacOS split-view paneを隠せるようにすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Hiding supporting panes can reduce distraction or make more room for an editing area."],
+      "review_note": "Preserved MAY and recorded the editing-space and distraction conditions."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0004": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "f42d720f745506f7ee45f4805382acbd84b0722f96192f9394e42cf657bebdf2", "section_path": ["Split views", "Platform considerations", "macOS"]},
+      "title": "Provide multiple ways to reveal hidden macOS panes",
+      "statement": {"en": "Provide multiple ways to reveal hidden macOS split-view panes.", "ja": "隠れたmacOS split-view paneを再表示する複数の方法を提供する。"},
+      "conditions": ["Options can include a toolbar button, menu command, and keyboard shortcut."],
+      "review_note": "Replaced generic generated wording with the concrete restoration methods."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0005": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "8c2c07c5878d6d56cda581e28aed6a52833bbbbea614937147386a96dd9deca0", "section_path": ["Split views", "Platform considerations", "macOS"]},
+      "title": "Prefer thin macOS split-view dividers",
+      "statement": {"en": "Prefer the thin divider style in a macOS split view.", "ja": "macOS split viewではthin divider styleを優先する。"},
+      "conditions": ["The one-point thin style maximizes content space while remaining usable."],
+      "review_note": "Retained the preferred style and separated the thicker-divider exception as AVOID guidance."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0006": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "ad73cf033119974e3fe544a299301a93ad998e912615321e6cc9feb6054f0d05", "section_path": ["Split views", "Platform considerations", "tvOS"]},
+      "title": "Balance tvOS split-view panes",
+      "statement": {"en": "Choose a tvOS split-view layout that keeps its panes visually balanced.", "ja": "tvOS split-view paneが視覚的にbalancedになるlayoutを選ぶ。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": ["split-views"], "modalities": []},
+      "conditions": ["Use the default one-third and two-thirds proportions or a half-and-half layout as the content warrants."],
+      "review_note": "Removed the false gaze modality inferred from the word looking and recorded the two documented proportions."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0007": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "69ec8aa0d93a16f846b2247dc64107c02aca8d6375ba3ab1d0df0c38a090f1df", "section_path": ["Split views", "Platform considerations", "tvOS"]},
+      "title": "Use one title for a tvOS split view",
+      "statement": {"en": "Display a single title above a tvOS split view.", "ja": "tvOS split viewの上に単一のtitleを表示する。"},
+      "conditions": ["The title describes the content as a whole; separate pane titles are unnecessary."],
+      "review_note": "Made the single-title treatment atomic and recorded its whole-view purpose."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0008": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "6217fce543a6947521bf6635818795b37db8d40ed82333dfbc1b95e2f77bb941", "section_path": ["Split views", "Platform considerations", "tvOS"]},
+      "title": "Align tvOS split-view titles for secondary content",
+      "statement": {"en": "Choose a tvOS split-view title alignment based on the secondary pane’s content.", "ja": "tvOS split-view titleのalignmentをsecondary paneのcontentに応じて選ぶ。"},
+      "conditions": ["Apply the separately reviewed collection and single-main-view alternatives."],
+      "review_note": "Retained the general alignment decision and separated both optional placements."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0009": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "1094867fadebd76267688d98ec95dce7ff30a4f0ef8d9f9c7835fdfc94ff733f", "section_path": ["Split views", "Platform considerations", "visionOS"]},
+      "title": "Prefer a visionOS split view for supplementary information",
+      "statement": {"en": "Prefer a visionOS split view over a new window for supplementary information.", "ja": "visionOSでsupplementary informationを表示する場合はnew windowよりsplit viewを優先する。"},
+      "conditions": ["Keep supplementary information available without leaving the current context or managing another window relationship."],
+      "exceptions": ["Use the separately reviewed sheet alternative for a small information request or simple blocking task."],
+      "review_note": "Retained the contextual preference and separated its sheet alternative."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0010": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "0ec0d77485bcafa2321f1665827c95d8506797cbd8a51e223094f2e06eae4374", "section_path": ["Split views", "Best practices"]},
+      "title": "Persistently highlight navigation selections",
+      "statement": {"en": "Persistently highlight the current selection in each split-view pane that leads to detail content.", "ja": "detail contentへつながる各split-view paneで現在のselectionを継続的にhighlightする。"},
+      "conditions": ["The selected appearance clarifies relationships between panes and helps people stay oriented."],
+      "review_note": "Activated the omitted navigation-state rule and recorded its orientation purpose."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0011": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "4505876a78e9882a47feeca06d57cee2f2ed0a35c0dccf973d0d66030abb30dc", "section_path": ["Split views", "Platform considerations", "iPadOS"]},
+      "title": "Design iPadOS split views for multiple widths",
+      "statement": {"en": "Account for narrow, compact, and intermediate iPadOS window widths.", "ja": "narrow、compact、intermediateなiPadOS window widthを考慮する。"},
+      "conditions": ["iPadOS windows are fluidly resizable, so review the split-view layout at multiple widths."],
+      "review_note": "Activated the omitted multi-width layout rule and separated logical navigation as MUST."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0012": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "4505876a78e9882a47feeca06d57cee2f2ed0a35c0dccf973d0d66030abb30dc", "section_path": ["Split views", "Platform considerations", "iPadOS"]},
+      "title": "Ensure logical iPadOS pane navigation",
+      "statement": {"en": "Ensure people can navigate logically between iPadOS split-view panes.", "ja": "iPadOS split-view pane間を論理的にnavigateできるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The split-view layout is used at narrow, compact, or intermediate window widths."],
+      "review_note": "Recovered the explicit Ensure directive and retained its resizable-width condition."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0013": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "16749b5cffd25515bea28dc6135438b3aed700bf0c2ec64347d26949bf250785", "section_path": ["Split views", "Platform considerations", "macOS"]},
+      "title": "Set reasonable macOS pane-size defaults",
+      "statement": {"en": "Set reasonable default minimum and maximum sizes for macOS split-view panes.", "ja": "macOS split-view paneのminimum sizeとmaximum sizeに合理的なdefaultを設定する。"},
+      "conditions": ["People can resize the panes in the split view."],
+      "review_note": "Activated the omitted pane-sizing rule and separated divider visibility as MUST."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0014": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "16749b5cffd25515bea28dc6135438b3aed700bf0c2ec64347d26949bf250785", "section_path": ["Split views", "Platform considerations", "macOS"]},
+      "title": "Keep resizable macOS dividers visible",
+      "statement": {"en": "Make sure resizable macOS split-view panes keep their divider visible.", "ja": "resizableなmacOS split-view paneでdividerを見える状態に保つ。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["People can resize the split-view panes."],
+      "review_note": "Recovered the explicit Make sure directive and retained its resizable-pane condition."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0015": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "8c2c07c5878d6d56cda581e28aed6a52833bbbbea614937147386a96dd9deca0", "section_path": ["Split views", "Platform considerations", "macOS"]},
+      "title": "Avoid thicker macOS dividers without need",
+      "statement": {"en": "Avoid thicker macOS split-view dividers without a specific need.", "ja": "特定の必要性がなければ太いmacOS split-view dividerを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Prefer the standard thin divider to maximize content space."],
+      "exceptions": ["A thicker divider can help when strong linear elements on both sides make a thin divider hard to distinguish."],
+      "review_note": "Separated the explicit Avoid clause and retained its table-row visibility exception."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0016": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "6217fce543a6947521bf6635818795b37db8d40ed82333dfbc1b95e2f77bb941", "section_path": ["Split views", "Platform considerations", "tvOS"]},
+      "title": "Consider centering collection titles in tvOS",
+      "statement": {"en": "Consider centering a tvOS split-view title when the secondary pane contains a collection.", "ja": "secondary paneがcollectionを含む場合はtvOS split-view titleの中央配置を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The secondary pane presents a content collection."],
+      "review_note": "Split the first optional alignment from the general title-placement rule."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0017": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "6217fce543a6947521bf6635818795b37db8d40ed82333dfbc1b95e2f77bb941", "section_path": ["Split views", "Platform considerations", "tvOS"]},
+      "title": "Consider placing tvOS titles above the primary view",
+      "statement": {"en": "Consider placing a tvOS split-view title above the primary view when the secondary pane shows one main view.", "ja": "secondary paneが単一のmain viewを示す場合はtvOS split-view titleをprimary viewの上に置くことを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Placing the title above the primary view gives important secondary content more room."],
+      "review_note": "Split the second optional alignment from the general title-placement rule."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0018": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "1094867fadebd76267688d98ec95dce7ff30a4f0ef8d9f9c7835fdfc94ff733f", "section_path": ["Split views", "Platform considerations", "visionOS"]},
+      "title": "Use a visionOS sheet for a small blocking task",
+      "statement": {"en": "Use a visionOS sheet for a small information request or simple task that blocks return to the main task.", "ja": "少量の情報要求またはmain taskへの復帰を妨げるsimple taskにはvisionOS sheetを使う。"},
+      "conditions": ["The request is small, or the simple task must finish before the person returns to their main task."],
+      "review_note": "Separated the source's sheet alternative from the split-view preference."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0019": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "ce86e1d35ab1a83846ff2f340ee0c9bd37148dc327dc3db59459d45f62feebc0", "section_path": ["Split views", "Platform considerations", "watchOS"]},
+      "title": "Show the most relevant watchOS detail first",
+      "statement": {"en": "Automatically display the most relevant watchOS split-view detail when the app launches.", "ja": "app起動時に最もrelevantなwatchOS split-view detailを自動表示する。"},
+      "conditions": ["Determine relevance from factors such as location, time, or recent actions."],
+      "review_note": "Activated the omitted launch-state rule and recorded its relevance signals."
+    },
+    "HIG-COMPONENTS-SPLIT-VIEWS-0020": {
+      "source": {"source_hash": "56dc8f75199e7d014ca857d2fb4274c6fefcdd5f6f971d903bb5455dc3433343", "source_sentence_hash": "3d457435e1d5eeb4dc48e587fa6b03e79eb2222d07427ebe5da29b0956c63947", "section_path": ["Split views", "Platform considerations", "watchOS"]},
+      "title": "Use a vertical tab view for watchOS details",
+      "statement": {"en": "Place multiple watchOS split-view detail pages in a vertical tab view.", "ja": "複数のwatchOS split-view detail pageをvertical tab viewに置く。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["split-views"], "modalities": ["digital-crown"]},
+      "conditions": ["People use the Digital Crown to move between tabs, and watchOS displays the tab count and current-page indicator."],
+      "review_note": "Activated the omitted multi-detail rule and recorded its Digital Crown modality and system page indicator."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

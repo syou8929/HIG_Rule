@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1138
-- Reviewed batches: 73
+- Reviewed rules: 1158
+- Reviewed batches: 74
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:44:30Z
+- Reviewed at: 2026-07-21T17:53:25Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -403,6 +403,26 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SLIDERS-0007 · high — Replaced generic wording with the scale and value-location purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0008 · high — Recorded selective labeling, nonlinear context, and the thumb-value tooltip option. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0009 · high — Recorded the gesture-comfort rationale and corrected the platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- HIG-COMPONENTS-SPLIT-VIEWS-0001 · high — Preserved MAY and recorded the cross-hierarchy movement purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0002 · high — Retained SHOULD and made the regular-versus-compact width condition concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0003 · high — Preserved MAY and recorded the editing-space and distraction conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0004 · high — Replaced generic generated wording with the concrete restoration methods. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0005 · high — Retained the preferred style and separated the thicker-divider exception as AVOID guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0006 · high — Removed the false gaze modality inferred from the word looking and recorded the two documented proportions. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0007 · high — Made the single-title treatment atomic and recorded its whole-view purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0008 · high — Retained the general alignment decision and separated both optional placements. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0009 · high — Retained the contextual preference and separated its sheet alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0010 · high — Activated the omitted navigation-state rule and recorded its orientation purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0011 · high — Activated the omitted multi-width layout rule and separated logical navigation as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0012 · high — Recovered the explicit Ensure directive and retained its resizable-width condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0013 · high — Activated the omitted pane-sizing rule and separated divider visibility as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0014 · high — Recovered the explicit Make sure directive and retained its resizable-pane condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0015 · high — Separated the explicit Avoid clause and retained its table-row visibility exception. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0016 · high — Split the first optional alignment from the general title-placement rule. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0017 · high — Split the second optional alignment from the general title-placement rule. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0018 · high — Separated the source's sheet alternative from the split-view preference. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0019 · high — Activated the omitted launch-state rule and recorded its relevance signals. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0020 · high — Activated the omitted multi-detail rule and recorded its Digital Crown modality and system page indicator. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-STATUS-BARS-0001 · high — Preserved the optional and temporary strength. ([source](https://developer.apple.com/design/human-interface-guidelines/status-bars))
 - HIG-COMPONENTS-STATUS-BARS-0002 · high — Recorded the rediscovery gesture requirement and kept the guidance at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/status-bars))
 - HIG-COMPONENTS-TAB-VIEWS-0001 · high — Recorded the relationship implied by the tab view's visual enclosure. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))

@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 217
-- Retained MUST: 196
+- Reviewed rules: 219
+- Retained MUST: 198
 - Retained MUST_NOT: 21
-- Normative level changes: 6
+- Normative level changes: 8
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:44:30Z
+- Reviewed at: 2026-07-21T17:53:25Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -42,6 +42,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-SCROLL-VIEWS-0010 — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0015 — Retained MUST after confirming the conditional Make sure directive for custom scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0022 — Retained MUST after confirming the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0012 — Recovered and retained the explicit Ensure directive with its resizable-width condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0014 — Recovered and retained the explicit Make sure directive with its resizable-pane condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-THE-MENU-BAR-0023 — Retained MUST after confirming the explicit Require directive and its interaction-cost rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0024 — Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
@@ -210,6 +212,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-SCROLL-VIEWS-0022 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SIDEBARS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SNIPPETS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SPLIT-VIEWS-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Ensure directive with its resizable-width condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive with its resizable-pane condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-TAB-BARS-0002 · MUST · retained_with_atomicity_or_scope_correction — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-TAB-VIEWS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
 - HIG-COMPONENTS-TEXT-FIELDS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))

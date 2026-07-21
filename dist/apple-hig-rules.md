@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:50:24.872Z. 2287 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:58:46.566Z. 2298 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1464,15 +1464,26 @@ Generated 2026-07-21T17:50:24.872Z. 2287 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-SNIPPETS-0004 · SHOULD · low** — Apply the documented Snippets guidance to communicate a snippet’s purpose visually. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
 ### split-views
 
-- **HIG-COMPONENTS-SPLIT-VIEWS-0001 · MAY · low** — Evaluate whether letting people drag and drop content between panes is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
-- **HIG-COMPONENTS-SPLIT-VIEWS-0002 · SHOULD · low** — Favor using a split view in a regular — not a compact — environment when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
-- **HIG-COMPONENTS-SPLIT-VIEWS-0003 · MAY · low** — Evaluate whether letting people hide a pane when it makes sense is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
-- **HIG-COMPONENTS-SPLIT-VIEWS-0004 · SHOULD · low** — Make multiple ways to reveal hidden panes available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
-- **HIG-COMPONENTS-SPLIT-VIEWS-0005 · SHOULD · low** — Favor the thin divider style when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
-- **HIG-COMPONENTS-SPLIT-VIEWS-0006 · SHOULD · low** — Apply the documented Split views guidance to choose a split view layout that keeps the panes looking balanced. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
-- **HIG-COMPONENTS-SPLIT-VIEWS-0007 · SHOULD · low** — Present a single title above a split view, helping people understand the content as a whole in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
-- **HIG-COMPONENTS-SPLIT-VIEWS-0008 · SHOULD · low** — Apply the documented Split views guidance to choose the title’s alignment based on the type of content the secondary pane contains. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
-- **HIG-COMPONENTS-SPLIT-VIEWS-0009 · SHOULD · low** — To display supplementary information, prefer a split view instead of a new window. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0001 · MAY · high** — Consider letting people drag and drop content between split-view panes. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0002 · SHOULD · high** — Prefer a split view in a regular-width iOS environment. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0003 · MAY · high** — Consider letting people hide a macOS split-view pane when it makes sense. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0004 · SHOULD · high** — Provide multiple ways to reveal hidden macOS split-view panes. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0005 · SHOULD · high** — Prefer the thin divider style in a macOS split view. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0006 · SHOULD · high** — Choose a tvOS split-view layout that keeps its panes visually balanced. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0007 · SHOULD · high** — Display a single title above a tvOS split view. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0008 · SHOULD · high** — Choose a tvOS split-view title alignment based on the secondary pane’s content. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0009 · SHOULD · high** — Prefer a visionOS split view over a new window for supplementary information. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0010 · SHOULD · high** — Persistently highlight the current selection in each split-view pane that leads to detail content. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0011 · SHOULD · high** — Account for narrow, compact, and intermediate iPadOS window widths. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0012 · MUST · high** — Ensure people can navigate logically between iPadOS split-view panes. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0013 · SHOULD · high** — Set reasonable default minimum and maximum sizes for macOS split-view panes. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0014 · MUST · high** — Make sure resizable macOS split-view panes keep their divider visible. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0015 · AVOID · high** — Avoid thicker macOS split-view dividers without a specific need. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0016 · MAY · high** — Consider centering a tvOS split-view title when the secondary pane contains a collection. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0017 · MAY · high** — Consider placing a tvOS split-view title above the primary view when the secondary pane shows one main view. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0018 · SHOULD · high** — Use a visionOS sheet for a small information request or simple task that blocks return to the main task. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0019 · SHOULD · high** — Automatically display the most relevant watchOS split-view detail when the app launches. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- **HIG-COMPONENTS-SPLIT-VIEWS-0020 · SHOULD · high** — Place multiple watchOS split-view detail pages in a vertical tab view. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 ### status-bars
 
 - **HIG-COMPONENTS-STATUS-BARS-0001 · MAY · high** — Consider temporarily hiding the status bar for full-screen media. ([source](https://developer.apple.com/design/human-interface-guidelines/status-bars))
