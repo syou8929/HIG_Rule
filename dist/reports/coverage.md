@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2671
+- Active atomic rules: 2673
 - Pages without rules: 16
-- Low-confidence rules: 858
-- Rules requiring human review: 858
-- Reference notes: 912
+- Low-confidence rules: 856
+- Rules requiring human review: 856
+- Reference notes: 911
 
 ## Rules by category
 
-- components: 858
+- components: 860
 - foundations: 346
 - getting-started: 100
 - inputs: 219
@@ -22,10 +22,10 @@
 
 ## Normative levels
 
-- AVOID: 357
+- AVOID: 358
 - MAY: 329
 - MUST: 268
-- MUST_NOT: 23
+- MUST_NOT: 24
 - SHOULD: 1694
 
 ## Rules by platform
@@ -33,15 +33,15 @@
 - carplay: 90
 - ios: 1750
 - ipados: 1722
-- macos: 1435
-- tvos: 1112
+- macos: 1436
+- tvos: 1113
 - visionos: 1470
 - watchos: 1180
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2601
+- manual: 2603
 
 ## Blocked pages
 
@@ -144,8 +144,6 @@ None.
 - HIG-COMPONENTS-EDIT-MENUS-0007
 - HIG-COMPONENTS-GAUGES-0001
 - HIG-COMPONENTS-GAUGES-0002
-- HIG-COMPONENTS-GAUGES-0003
-- HIG-COMPONENTS-GAUGES-0004
 - HIG-COMPONENTS-LABELS-0001
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
@@ -1005,8 +1003,6 @@ None.
 - HIG-COMPONENTS-EDIT-MENUS-0007
 - HIG-COMPONENTS-GAUGES-0001
 - HIG-COMPONENTS-GAUGES-0002
-- HIG-COMPONENTS-GAUGES-0003
-- HIG-COMPONENTS-GAUGES-0004
 - HIG-COMPONENTS-LABELS-0001
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
@@ -2068,7 +2064,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/game-controls · Game controls > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/gauges · Gauges > Anatomy — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/gauges · Gauges > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gauges · Gauges > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/gauges · Gauges > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/gauges · Gauges > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Change log — Section recorded for human review; no short atomic guidance lead was detected.

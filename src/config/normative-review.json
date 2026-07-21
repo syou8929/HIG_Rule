@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:19:00Z",
+  "reviewed_at": "2026-07-21T22:25:00Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,21 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 291,
+  "reviewed_rule_count": 292,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-COMPONENTS-GAUGES-0006": {
+      "title": "Never partially fill a discrete capacity-indicator segment",
+      "statement": {"en": "Never partially fill a discrete capacity-indicator segment.", "ja": "discrete capacity-indicator segmentを部分的にfillしない。"},
+      "normative_level": "MUST_NOT", "confidence": "high", "review_required": false,
+      "polarity": "prohibit", "severity": "error",
+      "conditions": ["Each segment represents a discrete unit and fills completely to indicate the current value."],
+      "review_note": "Recovered the platform-specific MUST_NOT from the explicit never-partially invariant."
+    },
     "HIG-TECHNOLOGIES-SHAREPLAY-0018": {
       "title": "Use an autodismissible window for shared-activity prerequisites",
       "statement": {"en": "Present prerequisite input in an autodismissible window.", "ja": "prerequisite inputをautodismissible windowで提示する。"},

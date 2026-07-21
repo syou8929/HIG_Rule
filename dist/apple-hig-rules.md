@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:24:00.381Z. 2671 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:26:42.934Z. 2673 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1190,8 +1190,10 @@ Generated 2026-07-21T22:24:00.381Z. 2671 active rules; 4 deprecated rules.
 
 - **HIG-COMPONENTS-GAUGES-0001 · SHOULD · low** — Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - **HIG-COMPONENTS-GAUGES-0002 · MAY · low** — Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
-- **HIG-COMPONENTS-GAUGES-0003 · MAY · low** — Evaluate whether using the continuous style for large ranges is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
-- **HIG-COMPONENTS-GAUGES-0004 · MAY · low** — Evaluate whether changing the fill color to inform people about significant parts of the range is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- **HIG-COMPONENTS-GAUGES-0003 · MAY · high** — Consider the continuous capacity style for a large range. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- **HIG-COMPONENTS-GAUGES-0004 · MAY · high** — Consider changing fill color to communicate significant range levels. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- **HIG-COMPONENTS-GAUGES-0005 · AVOID · high** — Avoid using gauges on tvOS. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- **HIG-COMPONENTS-GAUGES-0006 · MUST_NOT · high** — Never partially fill a discrete capacity-indicator segment. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 ### home-screen-quick-actions
 
 - **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · SHOULD · high** — Create Home Screen quick actions for compelling, high-value tasks people can start without opening the app first. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))

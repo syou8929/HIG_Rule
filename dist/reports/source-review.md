@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1742
-- Reviewed batches: 112
+- Reviewed rules: 1746
+- Reviewed batches: 113
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:19:00Z
+- Reviewed at: 2026-07-21T22:25:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -150,6 +150,10 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-DOCK-MENUS-0003 · high — Recovered the labeling half of the explicit need-to requirement as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-DOCK-MENUS-0004 · high — Recovered the organization half of the explicit need-to requirement as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-DOCK-MENUS-0005 · high — Preserved the source's consider strength and both inactive-app conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- HIG-COMPONENTS-GAUGES-0003 · high — Preserved Consider and recorded the large-range legibility condition. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- HIG-COMPONENTS-GAUGES-0004 · high — Preserved optional color changes and both documented presentation approaches. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- HIG-COMPONENTS-GAUGES-0005 · high — Recorded the descriptive tvOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- HIG-COMPONENTS-GAUGES-0006 · high — Recovered the platform-specific MUST_NOT from the explicit never-partially invariant. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · high — Recorded the expected minimum usefulness and source-scoped maximum of four quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · high — Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003 · high — Recorded the official preference for SF Symbols when representing quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
