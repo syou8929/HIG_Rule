@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2329
+- Active atomic rules: 2334
 - Pages without rules: 16
-- Low-confidence rules: 1031
-- Rules requiring human review: 1031
+- Low-confidence rules: 1027
+- Rules requiring human review: 1027
 - Reference notes: 927
 
 ## Rules by category
 
-- components: 821
+- components: 826
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -24,24 +24,24 @@
 
 - AVOID: 307
 - MAY: 268
-- MUST: 203
+- MUST: 205
 - MUST_NOT: 21
-- SHOULD: 1530
+- SHOULD: 1533
 
 ## Rules by platform
 
 - carplay: 89
-- ios: 1616
-- ipados: 1593
-- macos: 1365
-- tvos: 1047
-- visionos: 1407
-- watchos: 1109
+- ios: 1620
+- ipados: 1597
+- macos: 1369
+- tvos: 1052
+- visionos: 1411
+- watchos: 1113
 
 ## Rules by testability
 
 - hybrid: 67
-- manual: 2262
+- manual: 2267
 
 ## Blocked pages
 
@@ -222,10 +222,6 @@ None.
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
 - HIG-COMPONENTS-STEPPERS-0003
-- HIG-COMPONENTS-TEXT-VIEWS-0001
-- HIG-COMPONENTS-TEXT-VIEWS-0002
-- HIG-COMPONENTS-TEXT-VIEWS-0003
-- HIG-COMPONENTS-TEXT-VIEWS-0004
 - HIG-COMPONENTS-TOKEN-FIELDS-0001
 - HIG-COMPONENTS-TOKEN-FIELDS-0002
 - HIG-COMPONENTS-TOOLBARS-0001
@@ -1256,10 +1252,6 @@ None.
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
 - HIG-COMPONENTS-STEPPERS-0003
-- HIG-COMPONENTS-TEXT-VIEWS-0001
-- HIG-COMPONENTS-TEXT-VIEWS-0002
-- HIG-COMPONENTS-TEXT-VIEWS-0003
-- HIG-COMPONENTS-TEXT-VIEWS-0004
 - HIG-COMPONENTS-TOKEN-FIELDS-0001
 - HIG-COMPONENTS-TOKEN-FIELDS-0002
 - HIG-COMPONENTS-TOOLBARS-0001
@@ -2905,8 +2897,8 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/text-fields · Text fields > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/text-fields · Text fields > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/text-views · Text views > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/text-views · Text views > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/text-views · Text views > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/text-views · Text views > Platform considerations — macOS, visionOS, and watchOS have no additional platform-specific considerations beyond the reviewed best practices.
+- https://developer.apple.com/design/human-interface-guidelines/text-views · Text views > Platform considerations > tvOS — tvOS supports text-view display but uses text fields for editable text because platform text input is minimal.
 - https://developer.apple.com/design/human-interface-guidelines/text-views · Text views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/text-views · Text views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/the-menu-bar · The menu bar > App menu — Structured numeric table detected; preserve its platform and context conditions during human source review.

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1216
-- Reviewed batches: 76
+- Reviewed rules: 1225
+- Reviewed batches: 77
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:10:40Z
+- Reviewed at: 2026-07-21T18:18:48Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -487,6 +487,15 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-TEXT-FIELDS-0027 · high — Separated the general leading-end purpose from other accessory behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
 - HIG-COMPONENTS-TEXT-FIELDS-0028 · high — Separated the general trailing-end purpose from leading-end clarity. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
 - HIG-COMPONENTS-TEXT-FIELDS-0029 · high — Separated the preferred watchOS alternative from the text-field necessity rule. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-VIEWS-0001 · high — Made the component-selection criteria concrete and separated both small-text alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- HIG-COMPONENTS-TEXT-VIEWS-0002 · high — Fixed ungrammatical generated wording and recorded the styling context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- HIG-COMPONENTS-TEXT-VIEWS-0003 · high — Recorded the useful-information condition and copy-and-paste purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- HIG-COMPONENTS-TEXT-VIEWS-0004 · high — Changed SHOULD to MUST after confirming the surrounding needs to be appropriate requirement, and replaced the irrelevant hardware-keyboard traversal check. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- HIG-COMPONENTS-TEXT-VIEWS-0005 · high — Separated the small read-only component alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- HIG-COMPONENTS-TEXT-VIEWS-0006 · high — Separated the small editable component alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- HIG-COMPONENTS-TEXT-VIEWS-0007 · high — Recovered the source's good-idea recommendation without promoting it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- HIG-COMPONENTS-TEXT-VIEWS-0008 · high — Recovered the explicit Be sure directive and its bold-text example. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- HIG-COMPONENTS-TEXT-VIEWS-0009 · high — Recovered the tvOS editing component choice while retaining display behavior as context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
 - HIG-COMPONENTS-THE-MENU-BAR-0001 · high — Recorded the familiarity and system-provided behavior behind the recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0002 · high — Confirmed the explicit Always lead and recorded disable-instead-of-hide behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0003 · high — Recorded shortcut familiarity and the limit on custom shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))

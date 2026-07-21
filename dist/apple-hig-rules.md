@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T18:16:55.297Z. 2329 active rules; 3 deprecated rules.
+Generated 2026-07-21T18:23:18.821Z. 2334 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1564,10 +1564,15 @@ Generated 2026-07-21T18:16:55.297Z. 2329 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-TEXT-FIELDS-0029 · SHOULD · high** — Whenever possible, prefer a list of options over watchOS text entry. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
 ### text-views
 
-- **HIG-COMPONENTS-TEXT-VIEWS-0001 · SHOULD · low** — Choose or apply a text view when you need to display text that’s long, editable, or in a special format in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
-- **HIG-COMPONENTS-TEXT-VIEWS-0002 · SHOULD · low** — Maintain text legible. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
-- **HIG-COMPONENTS-TEXT-VIEWS-0003 · SHOULD · low** — Apply the documented Text views guidance to make useful text selectable. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
-- **HIG-COMPONENTS-TEXT-VIEWS-0004 · SHOULD · low** — Present the appropriate keyboard type in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0001 · SHOULD · high** — Use a text view for long, editable, or specially formatted text. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0002 · SHOULD · high** — Keep text-view content legible when varying fonts, colors, or alignments. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0003 · SHOULD · high** — Make useful text-view content selectable. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0004 · MUST · high** — Ensure an editable iOS or iPadOS text view shows a keyboard appropriate for its content. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0005 · SHOULD · high** — Use a label for a small amount of read-only text. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0006 · SHOULD · high** — Use a text field for a small amount of editable text. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0007 · SHOULD · high** — Adopt Dynamic Type so text-view content remains legible after text-size changes. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0008 · MUST · high** — Be sure to test text-view content with accessibility options such as bold text enabled. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
+- **HIG-COMPONENTS-TEXT-VIEWS-0009 · SHOULD · high** — Use a text field instead of a text view for editable tvOS text. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
 ### the-menu-bar
 
 - **HIG-COMPONENTS-THE-MENU-BAR-0001 · SHOULD · high** — Preserve the default system-defined menus and their expected ordering. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))

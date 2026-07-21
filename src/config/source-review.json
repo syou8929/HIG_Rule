@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:10:40Z",
+  "reviewed_at": "2026-07-21T18:18:48Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2203,6 +2203,19 @@
         "HIG-COMPONENTS-TEXT-FIELDS-0026", "HIG-COMPONENTS-TEXT-FIELDS-0027", "HIG-COMPONENTS-TEXT-FIELDS-0028", "HIG-COMPONENTS-TEXT-FIELDS-0029"
       ],
       "review_note": "Completed Text fields coverage; retained all eleven existing IDs, recovered eighteen atomic rules, and retained only tab order plus the explicit sensitive-data and validation directives as MUST rules."
+    },
+    {
+      "id": "priority-4-text-views-context-2026-07-21",
+      "reviewed_at": "2026-07-21T18:18:48Z",
+      "review_method": "Rendered Apple HIG Text views guidance, long and editable content, small-text alternatives, legibility, Dynamic Type, accessibility testing, selectable content, iOS and iPadOS keyboard choice, tvOS display and editing behavior, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/text-views", "source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-TEXT-VIEWS-0001", "HIG-COMPONENTS-TEXT-VIEWS-0002", "HIG-COMPONENTS-TEXT-VIEWS-0003",
+        "HIG-COMPONENTS-TEXT-VIEWS-0004", "HIG-COMPONENTS-TEXT-VIEWS-0005", "HIG-COMPONENTS-TEXT-VIEWS-0006",
+        "HIG-COMPONENTS-TEXT-VIEWS-0007", "HIG-COMPONENTS-TEXT-VIEWS-0008", "HIG-COMPONENTS-TEXT-VIEWS-0009"
+      ],
+      "review_note": "Completed Text views coverage; retained all four existing IDs, recovered five atomic rules, and retained only accessibility-option testing and content-appropriate iOS/iPadOS keyboards as MUST rules."
     }
   ],
   "rules": {
@@ -3264,6 +3277,77 @@
       "statement": {"en": "Whenever possible, prefer a list of options over watchOS text entry.", "ja": "可能な場合はwatchOS text entryよりoption listを優先する。"},
       "conditions": ["A predefined list can replace manual text entry for the task."],
       "review_note": "Separated the preferred watchOS alternative from the text-field necessity rule."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0001": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "52c59e00176dee34536999d582ea89a3a1ef85c30c8d90333d4fd24ff88b4de2", "section_path": ["Text views", "Best practices"]},
+      "title": "Use text views for long, editable, or specially formatted text",
+      "statement": {"en": "Use a text view for long, editable, or specially formatted text.", "ja": "long、editable、またはspecially formattedなtextにはtext viewを使う。"},
+      "conditions": ["A text view offers more specialized display and input options than a label or text field."],
+      "review_note": "Made the component-selection criteria concrete and separated both small-text alternatives."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0002": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "cb623a8145f8f4cc14f376f843b995e834ba4a4ed1782768b376ce7d3bafb32b", "section_path": ["Text views", "Best practices"]},
+      "title": "Keep text-view content legible",
+      "statement": {"en": "Keep text-view content legible when varying fonts, colors, or alignments.", "ja": "font、color、alignmentを変える場合もtext-view contentをlegibleに保つ。"},
+      "conditions": ["Creative styling must preserve content readability."],
+      "review_note": "Fixed ungrammatical generated wording and recorded the styling context."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0003": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "5561fd04432ad7c46682f0e53882ad3a165638771a05f5afb4edd1dbc1e7fd5e", "section_path": ["Text views", "Best practices"]},
+      "title": "Make useful text-view content selectable",
+      "statement": {"en": "Make useful text-view content selectable.", "ja": "usefulなtext-view contentをselectableにする。"},
+      "conditions": ["For information such as an error message, serial number, or IP address, let people select and copy it for reuse."],
+      "review_note": "Recorded the useful-information condition and copy-and-paste purpose."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0004": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "8014375218dea4a471b0848037e3ae267b65b5c6b81e2c5c769f079de72b1837", "section_path": ["Text views", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Show a content-appropriate text-view keyboard",
+      "statement": {"en": "Ensure an editable iOS or iPadOS text view shows a keyboard appropriate for its content.", "ja": "editableなiOSまたはiPadOS text viewでcontentに適したkeyboardを表示する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["text-views"], "modalities": ["keyboard"]},
+      "conditions": ["People are editing the text view; select a keyboard type designed for the input to streamline entry."],
+      "checks": {
+        "automated": [],
+        "manual": ["Does each editable text view present a keyboard layout appropriate for its expected content?"]
+      },
+      "testability": "manual",
+      "review_note": "Changed SHOULD to MUST after confirming the surrounding needs to be appropriate requirement, and replaced the irrelevant hardware-keyboard traversal check."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0005": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "dc717ffe34e758883ac71b05716546c0afb039c1ef95f99868cc6c48695d97f6", "section_path": ["Text views", "Best practices"]},
+      "title": "Use a label for small read-only text",
+      "statement": {"en": "Use a label for a small amount of read-only text.", "ja": "少量のread-only textにはlabelを使う。"},
+      "conditions": ["The content does not need text-view formatting or input capabilities."],
+      "review_note": "Separated the small read-only component alternative."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0006": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "dc717ffe34e758883ac71b05716546c0afb039c1ef95f99868cc6c48695d97f6", "section_path": ["Text views", "Best practices"]},
+      "title": "Use a text field for small editable text",
+      "statement": {"en": "Use a text field for a small amount of editable text.", "ja": "少量のeditable textにはtext fieldを使う。"},
+      "conditions": ["The content does not need text-view formatting or multiline capabilities."],
+      "review_note": "Separated the small editable component alternative."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0007": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "eb148a72af1ad159f8271b4a170cafed966ab68156262a919a926068bb1d595d", "section_path": ["Text views", "Best practices"]},
+      "title": "Adopt Dynamic Type for text views",
+      "statement": {"en": "Adopt Dynamic Type so text-view content remains legible after text-size changes.", "ja": "text size変更後もtext-view contentをlegibleに保つためDynamic Typeを採用する。"},
+      "conditions": ["People can change text size on their device."],
+      "review_note": "Recovered the source's good-idea recommendation without promoting it to MUST."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0008": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "eb148a72af1ad159f8271b4a170cafed966ab68156262a919a926068bb1d595d", "section_path": ["Text views", "Best practices"]},
+      "title": "Test text views with accessibility options",
+      "statement": {"en": "Be sure to test text-view content with accessibility options such as bold text enabled.", "ja": "bold textなどのaccessibility optionを有効にしてtext-view contentをtestする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["Verify that the content remains readable under supported accessibility settings."],
+      "review_note": "Recovered the explicit Be sure directive and its bold-text example."
+    },
+    "HIG-COMPONENTS-TEXT-VIEWS-0009": {
+      "source": {"source_hash": "50b741800eb5950fdb8079483fab2d85091bc6e9d179bb9c2485980e999d7f69", "source_sentence_hash": "16c40f153cd60ec5c2c0928b8acd0f796d11f429dc1436f0d7e7331cd3aa2194", "section_path": ["Text views", "Platform considerations", "tvOS"]},
+      "title": "Use text fields for editable tvOS text",
+      "statement": {"en": "Use a text field instead of a text view for editable tvOS text.", "ja": "editableなtvOS textにはtext viewではなくtext fieldを使う。"},
+      "conditions": ["Text input is minimal by design in tvOS; text views remain available for displaying text."],
+      "review_note": "Recovered the tvOS editing component choice while retaining display behavior as context."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},
