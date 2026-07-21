@@ -6,12 +6,12 @@
     "topic": "keyboards",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Ensure the experience accommodates full Keyboard Access when possible.",
-      "ja": "Full Keyboard Access when possibleを利用できる設計にする。"
+      "en": "Support Full Keyboard Access when possible.",
+      "ja": "可能な場合はFull Keyboard Accessをsupportする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -20,14 +20,12 @@
         "ios",
         "ipados",
         "macos",
-        "tvos",
         "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
-        "apple-tv",
         "apple-vision-pro"
       ],
       "components": [],
@@ -36,7 +34,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let people navigate and activate windows, menus, controls, and system features using only the keyboard.",
+      "Test with Full Keyboard Access enabled in the system accessibility settings."
     ],
     "exceptions": [],
     "rationale": {
@@ -48,7 +47,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates full Keyboard Access when possible.” in the documented Keyboards context?"
+        "Does the design satisfy “Support Full Keyboard Access when possible.” in the documented Keyboards context?"
       ]
     },
     "testability": "hybrid",
@@ -65,10 +64,10 @@
         "Keyboards",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "4a9a0cedb294338f55a6818a42f8c265a06d42edc1df9932b46bb5d8a2a7669a",
-      "evidence_paraphrase": "Ensure the experience accommodates full Keyboard Access when possible."
+      "evidence_paraphrase": "Support Full Keyboard Access when possible."
     },
     "tags": [
       "inputs",
@@ -78,7 +77,7 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates full Keyboard Access when possible.",
+    "apple_native_rule": "Support Full Keyboard Access when possible.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -88,12 +87,12 @@
     "topic": "keyboards",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Keyboards guidance to respect standard keyboard shortcuts.",
-      "ja": "「Keyboards」において「Respect standard keyboard shortcuts」の指針を適用する。"
+      "en": "Respect standard keyboard shortcuts and their expected actions.",
+      "ja": "standard keyboard shortcutと期待されるactionを尊重する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -118,9 +117,12 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "People expect common shortcuts to behave consistently across apps and the system.",
+      "Use the official standard-shortcut table as the source of current action mappings."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Game key bindings can remain customizable to fit personal play styles; review Game controls for game-specific guidance."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
@@ -130,7 +132,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Apply the documented Keyboards guidance to respect standard keyboard shortcuts.” in the documented Keyboards context?"
+        "Does the design satisfy “Respect standard keyboard shortcuts and their expected actions.” in the documented Keyboards context?"
       ]
     },
     "testability": "hybrid",
@@ -147,10 +149,10 @@
         "Keyboards",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "842b58f1660fb0c177f56e697d71e3f6de17728a63a045b3eb5265a5d68960b9",
-      "evidence_paraphrase": "Apply the documented Keyboards guidance to respect standard keyboard shortcuts."
+      "evidence_paraphrase": "Respect standard keyboard shortcuts and their expected actions."
     },
     "tags": [
       "inputs",
@@ -160,22 +162,22 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Apply the documented Keyboards guidance to respect standard keyboard shortcuts.",
+    "apple_native_rule": "Respect standard keyboard shortcuts and their expected actions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-KEYBOARDS-0003",
-    "title": "Use modifier keys in ways that people expect",
+    "title": "Use shortcut modifiers in expected ways",
     "category": "inputs",
     "topic": "keyboards",
     "subtopic": "custom-keyboard-shortcuts",
     "statement": {
-      "en": "Choose or apply modifier keys in ways that people expect in the documented context.",
-      "ja": "該当する状況ではmodifier keys in ways that people expectを採用する。"
+      "en": "Use keyboard modifier keys in ways people expect.",
+      "ja": "keyboard modifier keyを利用者が期待する方法で使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -200,9 +202,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve familiar modifier meanings across selection, movement, and resizing interactions."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "The source interaction examples illustrate conventions; they aren't universal commands for every app."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
@@ -212,7 +216,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Choose or apply modifier keys in ways that people expect in the documented context.” in the documented Keyboards context?"
+        "Does the design satisfy “Use keyboard modifier keys in ways people expect.” in the documented Keyboards context?"
       ]
     },
     "testability": "hybrid",
@@ -229,10 +233,10 @@
         "Keyboards",
         "Custom keyboard shortcuts"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "c836b90baaa6fb21a0d419d6efce62a3dfc5eb1338d993fceb4bcaeb600a5db3",
-      "evidence_paraphrase": "Choose or apply modifier keys in ways that people expect in the documented context."
+      "evidence_paraphrase": "Use keyboard modifier keys in ways people expect."
     },
     "tags": [
       "inputs",
@@ -241,22 +245,22 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Choose or apply modifier keys in ways that people expect in the documented context.",
+    "apple_native_rule": "Use keyboard modifier keys in ways people expect.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-KEYBOARDS-0004",
-    "title": "Avoid adding Shift to a shortcut that uses the upper character of a two-character key",
+    "title": "Avoid redundant Shift in upper-character shortcuts",
     "category": "inputs",
     "topic": "keyboards",
     "subtopic": "custom-keyboard-shortcuts",
     "statement": {
-      "en": "Exclude adding Shift to a shortcut that uses the upper character of a two-character key from the applicable experience.",
-      "ja": "該当する体験ではadding Shift to a shortcut that uses the upper character of a two-character keyを避ける。"
+      "en": "Avoid listing Shift when a shortcut uses the upper character of a two-character key.",
+      "ja": "two-character keyのupper characterを使うshortcutではShiftを重複表示しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -281,9 +285,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "People already use Shift to type the upper character; list the upper character directly."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Slash and question-mark shortcuts are examples, not required command bindings."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
@@ -293,7 +299,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Exclude adding Shift to a shortcut that uses the upper character of a two-character key from the applicable experience.” in the documented Keyboards context?"
+        "Does the design satisfy “Avoid listing Shift when a shortcut uses the upper character of a two-character key.” in the documented Keyboards context?"
       ]
     },
     "testability": "hybrid",
@@ -310,10 +316,10 @@
         "Keyboards",
         "Custom keyboard shortcuts"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "1a9b947b8360a8c2b8bb3bb12112f9cb2ca18e68f69a47ae5dbffb63f222f289",
-      "evidence_paraphrase": "Exclude adding Shift to a shortcut that uses the upper character of a two-character key from the applicable experience."
+      "evidence_paraphrase": "Avoid listing Shift when a shortcut uses the upper character of a two-character key."
     },
     "tags": [
       "inputs",
@@ -323,22 +329,22 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Exclude adding Shift to a shortcut that uses the upper character of a two-character key from the applicable experience.",
+    "apple_native_rule": "Avoid listing Shift when a shortcut uses the upper character of a two-character key.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-KEYBOARDS-0005",
-    "title": "Let the system localize and mirror your keyboard shortcuts as needed",
+    "title": "Let the system localize keyboard shortcuts",
     "category": "inputs",
     "topic": "keyboards",
     "subtopic": "custom-keyboard-shortcuts",
     "statement": {
-      "en": "Apply the documented Keyboards guidance to let the system localize and mirror your keyboard shortcuts as needed.",
-      "ja": "「Keyboards」において「Let the system localize and mirror your keyboard shortcuts as needed」の指針を適用する。"
+      "en": "Let the system localize shortcut keys for the connected keyboard.",
+      "ja": "接続中のkeyboardに合わせたshortcut keyのlocalizationをsystemへ任せる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -363,7 +369,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Allow the system to localize both primary and modifier keys."
     ],
     "exceptions": [],
     "rationale": {
@@ -375,7 +381,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Apply the documented Keyboards guidance to let the system localize and mirror your keyboard shortcuts as needed.” in the documented Keyboards context?"
+        "Does the design satisfy “Let the system localize shortcut keys for the connected keyboard.” in the documented Keyboards context?"
       ]
     },
     "testability": "hybrid",
@@ -392,10 +398,10 @@
         "Keyboards",
         "Custom keyboard shortcuts"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "0091b1f331cbb0845afeb0c0087fd685e06c59f11300c60fbf0e3cf2f14d4b85",
-      "evidence_paraphrase": "Apply the documented Keyboards guidance to let the system localize and mirror your keyboard shortcuts as needed."
+      "evidence_paraphrase": "Let the system localize shortcut keys for the connected keyboard."
     },
     "tags": [
       "inputs",
@@ -405,22 +411,22 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Apply the documented Keyboards guidance to let the system localize and mirror your keyboard shortcuts as needed.",
+    "apple_native_rule": "Let the system localize shortcut keys for the connected keyboard.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-KEYBOARDS-0006",
-    "title": "Avoid creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command",
+    "title": "Avoid unrelated modifier extensions of existing shortcuts",
     "category": "inputs",
     "topic": "keyboards",
     "subtopic": "custom-keyboard-shortcuts",
     "statement": {
-      "en": "Exclude creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command from the applicable experience.",
-      "ja": "該当する体験ではcreating a new shortcut by adding a modifier to an existing shortcut for an unrelated commandを避ける。"
+      "en": "Avoid adding a modifier to an existing shortcut for an unrelated command.",
+      "ja": "既存shortcutへmodifierを追加して無関係なcommandへ割り当てない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -445,9 +451,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve the semantic relationship people infer between a base shortcut and its modifier variants."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Undo and redo illustrate the expected relationship; they aren't the only commands covered."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
@@ -457,7 +465,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Exclude creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command from the applicable experience.” in the documented Keyboards context?"
+        "Does the design satisfy “Avoid adding a modifier to an existing shortcut for an unrelated command.” in the documented Keyboards context?"
       ]
     },
     "testability": "hybrid",
@@ -474,10 +482,10 @@
         "Keyboards",
         "Custom keyboard shortcuts"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "97bfc313a58ee50fae241013f7c7b1abcdedd68dcd358dfae2620333eb9c6e94",
-      "evidence_paraphrase": "Exclude creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command from the applicable experience."
+      "evidence_paraphrase": "Avoid adding a modifier to an existing shortcut for an unrelated command."
     },
     "tags": [
       "inputs",
@@ -487,7 +495,7 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Exclude creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command from the applicable experience.",
+    "apple_native_rule": "Avoid adding a modifier to an existing shortcut for an unrelated command.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -549,7 +557,7 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "d64fc25159a680c5e9283b8806bcdee174d0aa5ae806fbe1384a83c48ccde7da",
       "evidence_paraphrase": "Make every visionOS shortcut title descriptive enough to convey its action without submenu context."
@@ -568,17 +576,17 @@
   },
   {
     "id": "HIG-INPUTS-KEYBOARDS-0008",
-    "title": "Define custom keyboard shortcuts for only the most frequently used app-specific commands",
+    "title": "Limit custom shortcuts to frequent app-specific commands",
     "category": "inputs",
     "topic": "keyboards",
     "subtopic": "custom-keyboard-shortcuts",
     "statement": {
-      "en": "Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly.",
-      "ja": "custom keyboard shortcuts for only the most frequently used app-specific commandsを明確に定義する。"
+      "en": "Define custom keyboard shortcuts only for frequently used app-specific commands.",
+      "ja": "custom keyboard shortcutは頻繁に使うapp固有commandだけに定義する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -603,7 +611,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid making the app harder to learn by defining too many shortcuts."
     ],
     "exceptions": [],
     "rationale": {
@@ -615,7 +623,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly.” in the documented Keyboards context?"
+        "Does the design satisfy “Define custom keyboard shortcuts only for frequently used app-specific commands.” in the documented Keyboards context?"
       ]
     },
     "testability": "hybrid",
@@ -632,10 +640,10 @@
         "Keyboards",
         "Custom keyboard shortcuts"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "e0fa3c4b47694153f8691f0d334057676e25849be21f46b947108a341b2842ed",
-      "evidence_paraphrase": "Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly."
+      "evidence_paraphrase": "Define custom keyboard shortcuts only for frequently used app-specific commands."
     },
     "tags": [
       "inputs",
@@ -645,22 +653,22 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly.",
+    "apple_native_rule": "Define custom keyboard shortcuts only for frequently used app-specific commands.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-KEYBOARDS-0009",
-    "title": "In general, don’t repurpose standard keyboard shortcuts for custom actions",
+    "title": "Avoid repurposing standard keyboard shortcuts",
     "category": "inputs",
     "topic": "keyboards",
     "subtopic": "standard-keyboard-shortcuts",
     "statement": {
-      "en": "Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience.",
-      "ja": "該当する体験ではrepurpose standard keyboard shortcuts for custom actionsを避ける。"
+      "en": "In general, avoid repurposing standard keyboard shortcuts for custom actions.",
+      "ja": "原則としてstandard keyboard shortcutをcustom actionへ転用しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -685,9 +693,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Repurposing a familiar shortcut can make its behavior confusing or inconsistent."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Consider redefining a standard shortcut only when its standard action doesn't make sense in the experience."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
@@ -697,7 +707,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience.” in the documented Keyboards context?"
+        "Does the design satisfy “In general, avoid repurposing standard keyboard shortcuts for custom actions.” in the documented Keyboards context?"
       ]
     },
     "testability": "hybrid",
@@ -714,10 +724,10 @@
         "Keyboards",
         "Standard keyboard shortcuts"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "969f483d3d240d22920f242f18330db0c00ca023780541d1bdc55de65ea3a910",
-      "evidence_paraphrase": "Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience."
+      "evidence_paraphrase": "In general, avoid repurposing standard keyboard shortcuts for custom actions."
     },
     "tags": [
       "inputs",
@@ -727,7 +737,7 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience.",
+    "apple_native_rule": "In general, avoid repurposing standard keyboard shortcuts for custom actions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -789,7 +799,7 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T20:07:20Z",
+      "retrieved_at": "2026-07-21T22:51:33Z",
       "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
       "source_sentence_hash": "113db44262ecd86f27cb064e5020d93cbb7785de45516cc4a744413f7e7add4f",
       "evidence_paraphrase": "Account for the virtual keyboard overlay when a physical keyboard connects to a visionOS app or game."
@@ -804,6 +814,573 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "Account for the virtual keyboard overlay when a physical keyboard connects to a visionOS app or game.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0011",
+    "title": "Prefer Command as the main custom-shortcut modifier",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "custom-keyboard-shortcuts",
+    "statement": {
+      "en": "Prefer Command as the main modifier in a custom keyboard shortcut.",
+      "ja": "custom keyboard shortcutのmain modifierにはCommandを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "Apply when choosing the primary modifier for a custom shortcut."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Prefer Command as the main modifier in a custom keyboard shortcut.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Custom keyboard shortcuts"
+      ],
+      "retrieved_at": "2026-07-21T22:51:33Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "20017ff42e77d104d1c3c15a33976ca659b5e4d2048063907cd22bccdc3b64d7",
+      "evidence_paraphrase": "Prefer Command as the main modifier in a custom keyboard shortcut."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "custom-keyboard-shortcuts",
+      "keyboard"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Prefer Command as the main modifier in a custom keyboard shortcut.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0012",
+    "title": "Prefer Shift as a related secondary modifier",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "custom-keyboard-shortcuts",
+    "statement": {
+      "en": "Prefer Shift as a secondary modifier that complements a related shortcut.",
+      "ja": "関連shortcutを補完するsecondary modifierにはShiftを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "The modified shortcut remains semantically related to the base shortcut."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Prefer Shift as a secondary modifier that complements a related shortcut.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Custom keyboard shortcuts"
+      ],
+      "retrieved_at": "2026-07-21T22:51:33Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "4fd783b8a3891a930ea3251ddcc7621f7da2fe7e063c96bfe20415a641d21a4c",
+      "evidence_paraphrase": "Prefer Shift as a secondary modifier that complements a related shortcut."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "custom-keyboard-shortcuts",
+      "keyboard"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Prefer Shift as a secondary modifier that complements a related shortcut.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0013",
+    "title": "Use Option sparingly for less-common commands",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "custom-keyboard-shortcuts",
+    "statement": {
+      "en": "Use Option sparingly for less-common commands or power features.",
+      "ja": "less-common commandまたはpower featureにはOptionを控えめに使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "Reserve Option-modified shortcuts for less-common or expert-oriented functionality."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Use Option sparingly for less-common commands or power features.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Custom keyboard shortcuts"
+      ],
+      "retrieved_at": "2026-07-21T22:51:33Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "65967ba3089fb415867bda00e5ba8dab2d403db7ad7c793da9209278e5e009b2",
+      "evidence_paraphrase": "Use Option sparingly for less-common commands or power features."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "custom-keyboard-shortcuts"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Use Option sparingly for less-common commands or power features.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0014",
+    "title": "Avoid Control as a custom-shortcut modifier",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "custom-keyboard-shortcuts",
+    "statement": {
+      "en": "Avoid using Control as a custom keyboard-shortcut modifier.",
+      "ja": "custom keyboard shortcutのmodifierにControlを使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "Control already participates in many systemwide features and shortcuts."
+    ],
+    "exceptions": [
+      "Focus movement and screenshot capture are examples of system uses."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Avoid using Control as a custom keyboard-shortcut modifier.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Custom keyboard shortcuts"
+      ],
+      "retrieved_at": "2026-07-21T22:51:33Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "f5314785d7f82a8d764d3329807281051b676f78a70ce969e5a0e8a4fdf10985",
+      "evidence_paraphrase": "Avoid using Control as a custom keyboard-shortcut modifier."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "custom-keyboard-shortcuts",
+      "keyboard"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Avoid using Control as a custom keyboard-shortcut modifier.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0015",
+    "title": "Always order multiple shortcut modifiers consistently",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "custom-keyboard-shortcuts",
+    "statement": {
+      "en": "Always list multiple shortcut modifiers in Control, Option, Shift, Command order.",
+      "ja": "複数のshortcut modifierは常にControl、Option、Shift、Commandの順で並べる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "A custom keyboard shortcut uses more than one modifier key."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Always list multiple shortcut modifiers in Control, Option, Shift, Command order.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Custom keyboard shortcuts"
+      ],
+      "retrieved_at": "2026-07-21T22:51:33Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "046033aba7e0ad5eb0cb2aef53a485ba323a467ea71e349e1df2abab2b84c8de",
+      "evidence_paraphrase": "Always list multiple shortcut modifiers in Control, Option, Shift, Command order."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "custom-keyboard-shortcuts",
+      "keyboard"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Always list multiple shortcut modifiers in Control, Option, Shift, Command order.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0016",
+    "title": "Let the system mirror shortcuts for right-to-left layouts",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "custom-keyboard-shortcuts",
+    "statement": {
+      "en": "Let the system mirror keyboard shortcuts in right-to-left layouts.",
+      "ja": "right-to-left layoutでのkeyboard shortcut mirrorをsystemへ任せる。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "The app or game switches to a right-to-left layout."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Let the system mirror keyboard shortcuts in right-to-left layouts.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Custom keyboard shortcuts"
+      ],
+      "retrieved_at": "2026-07-21T22:51:33Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "0091b1f331cbb0845afeb0c0087fd685e06c59f11300c60fbf0e3cf2f14d4b85",
+      "evidence_paraphrase": "Let the system mirror keyboard shortcuts in right-to-left layouts."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "custom-keyboard-shortcuts",
+      "keyboard"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Let the system mirror keyboard shortcuts in right-to-left layouts.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0017",
+    "title": "Avoid keyboard-shortcut features on watchOS",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid offering keyboard-shortcut features on watchOS.",
+      "ja": "watchOSではkeyboard-shortcut featureを提供しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "The Keyboards guidance is unsupported on watchOS."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Avoid offering keyboard-shortcut features on watchOS.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-21T22:51:33Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "21eab31707fe04c1fdf29260ea5ac1bacd4b165d2de91f4f0f2000a2af0a1b25",
+      "evidence_paraphrase": "Avoid offering keyboard-shortcut features on watchOS."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "platform-considerations",
+      "keyboard"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Avoid offering keyboard-shortcut features on watchOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

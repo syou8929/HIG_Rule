@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2688
+- Active atomic rules: 2695
 - Pages without rules: 16
-- Low-confidence rules: 844
-- Rules requiring human review: 844
+- Low-confidence rules: 836
+- Rules requiring human review: 836
 - Reference notes: 906
 
 ## Rules by category
@@ -16,31 +16,31 @@
 - components: 867
 - foundations: 346
 - getting-started: 100
-- inputs: 219
+- inputs: 226
 - patterns: 368
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 365
+- AVOID: 367
 - MAY: 330
-- MUST: 269
+- MUST: 270
 - MUST_NOT: 24
-- SHOULD: 1700
+- SHOULD: 1704
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1751
-- ipados: 1723
-- macos: 1444
-- tvos: 1118
-- visionos: 1472
-- watchos: 1186
+- ios: 1757
+- ipados: 1729
+- macos: 1450
+- tvos: 1123
+- visionos: 1478
+- watchos: 1187
 
 ## Rules by testability
 
-- hybrid: 70
+- hybrid: 77
 - manual: 2618
 
 ## Blocked pages
@@ -416,14 +416,6 @@ None.
 - HIG-INPUTS-GAME-CONTROLS-0011
 - HIG-INPUTS-GAME-CONTROLS-0013
 - HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001
-- HIG-INPUTS-KEYBOARDS-0001
-- HIG-INPUTS-KEYBOARDS-0002
-- HIG-INPUTS-KEYBOARDS-0003
-- HIG-INPUTS-KEYBOARDS-0004
-- HIG-INPUTS-KEYBOARDS-0005
-- HIG-INPUTS-KEYBOARDS-0006
-- HIG-INPUTS-KEYBOARDS-0008
-- HIG-INPUTS-KEYBOARDS-0009
 - HIG-INPUTS-NEARBY-INTERACTIONS-0001
 - HIG-INPUTS-NEARBY-INTERACTIONS-0002
 - HIG-INPUTS-NEARBY-INTERACTIONS-0003
@@ -1263,14 +1255,6 @@ None.
 - HIG-INPUTS-GAME-CONTROLS-0011
 - HIG-INPUTS-GAME-CONTROLS-0013
 - HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001
-- HIG-INPUTS-KEYBOARDS-0001
-- HIG-INPUTS-KEYBOARDS-0002
-- HIG-INPUTS-KEYBOARDS-0003
-- HIG-INPUTS-KEYBOARDS-0004
-- HIG-INPUTS-KEYBOARDS-0005
-- HIG-INPUTS-KEYBOARDS-0006
-- HIG-INPUTS-KEYBOARDS-0008
-- HIG-INPUTS-KEYBOARDS-0009
 - HIG-INPUTS-NEARBY-INTERACTIONS-0001
 - HIG-INPUTS-NEARBY-INTERACTIONS-0002
 - HIG-INPUTS-NEARBY-INTERACTIONS-0003

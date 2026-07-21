@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:49:14.669Z. 2688 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:54:40.588Z. 2695 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2098,16 +2098,23 @@ Generated 2026-07-21T22:49:14.669Z. 2688 active rules; 4 deprecated rules.
 - **HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001 · SHOULD · low** — Choose or apply motion data only to offer a tangible benefit to people in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
 ### keyboards
 
-- **HIG-INPUTS-KEYBOARDS-0001 · SHOULD · low** — Ensure the experience accommodates full Keyboard Access when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0002 · SHOULD · low** — Apply the documented Keyboards guidance to respect standard keyboard shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0003 · SHOULD · low** — Choose or apply modifier keys in ways that people expect in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0004 · AVOID · low** — Exclude adding Shift to a shortcut that uses the upper character of a two-character key from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0005 · SHOULD · low** — Apply the documented Keyboards guidance to let the system localize and mirror your keyboard shortcuts as needed. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0006 · AVOID · low** — Exclude creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0001 · SHOULD · high** — Support Full Keyboard Access when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0002 · SHOULD · high** — Respect standard keyboard shortcuts and their expected actions. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0003 · SHOULD · high** — Use keyboard modifier keys in ways people expect. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0004 · AVOID · high** — Avoid listing Shift when a shortcut uses the upper character of a two-character key. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0005 · SHOULD · high** — Let the system localize shortcut keys for the connected keyboard. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0006 · AVOID · high** — Avoid adding a modifier to an existing shortcut for an unrelated command. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0007 · MUST · high** — Make every visionOS shortcut title descriptive enough to convey its action without submenu context. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0008 · SHOULD · low** — Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0009 · AVOID · low** — Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0008 · SHOULD · high** — Define custom keyboard shortcuts only for frequently used app-specific commands. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0009 · AVOID · high** — In general, avoid repurposing standard keyboard shortcuts for custom actions. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0010 · SHOULD · high** — Account for the virtual keyboard overlay when a physical keyboard connects to a visionOS app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0011 · SHOULD · high** — Prefer Command as the main modifier in a custom keyboard shortcut. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0012 · SHOULD · high** — Prefer Shift as a secondary modifier that complements a related shortcut. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0013 · SHOULD · high** — Use Option sparingly for less-common commands or power features. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0014 · AVOID · high** — Avoid using Control as a custom keyboard-shortcut modifier. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0015 · MUST · high** — Always list multiple shortcut modifiers in Control, Option, Shift, Command order. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0016 · SHOULD · high** — Let the system mirror keyboard shortcuts in right-to-left layouts. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0017 · AVOID · high** — Avoid offering keyboard-shortcut features on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 ### nearby-interactions
 
 - **HIG-INPUTS-NEARBY-INTERACTIONS-0001 · MAY · low** — Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))

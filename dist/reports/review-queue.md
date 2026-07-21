@@ -1,30 +1,31 @@
 # Human source-review queue
 
-- Remaining rules: 844
+- Remaining rules: 836
 - Next priority: 5 (input-and-device-constraints)
-- Next batch: 8
+- Next batch: 9
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 5 (input-and-device-constraints): 28
+- 5 (input-and-device-constraints): 20
 - 6 (apple-platform-common): 793
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 115
+- AVOID: 112
 - MAY: 84
-- SHOULD: 645
+- SHOULD: 640
 
 ## Next batch
 
-- HIG-INPUTS-KEYBOARDS-0004 · AVOID — Avoid adding Shift to a shortcut that uses the upper character of a two-character key · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- HIG-INPUTS-KEYBOARDS-0006 · AVOID — Avoid creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- HIG-INPUTS-KEYBOARDS-0009 · AVOID — In general, don’t repurpose standard keyboard shortcuts for custom actions · Keyboards > Standard keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- HIG-INPUTS-KEYBOARDS-0001 · SHOULD — Support Full Keyboard Access when possible · Keyboards > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- HIG-INPUTS-KEYBOARDS-0002 · SHOULD — Respect standard keyboard shortcuts · Keyboards > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- HIG-INPUTS-KEYBOARDS-0003 · SHOULD — Use modifier keys in ways that people expect · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- HIG-INPUTS-KEYBOARDS-0005 · SHOULD — Let the system localize and mirror your keyboard shortcuts as needed · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- HIG-INPUTS-KEYBOARDS-0008 · SHOULD — Define custom keyboard shortcuts for only the most frequently used app-specific commands · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0006 · AVOID — Avoid using a nearby interaction as the only way to perform a task · Nearby interactions > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0002 · SHOULD — Use distance, direction, and context to inform an interaction · Nearby interactions > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0004 · SHOULD — Provide continuous feedback · Nearby interactions > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0007 · SHOULD — Encourage people to hold the device in portrait orientation · Nearby interactions > Device usage ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0008 · SHOULD — Design for the device’s directional field of view · Nearby interactions > Device usage ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0009 · SHOULD — Help people understand how intervening objects can affect the nearby interaction experience in your app · Nearby interactions > Device usage ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0001 · MAY — Consider a task from the perspective of the physical world to find inspiration for a nearby interaction · Nearby interactions > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0003 · MAY — Consider how changes in physical distance can guide a nearby interaction · Nearby interactions > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0005 · MAY — Consider using multiple feedback types to create a holistic experience · Nearby interactions > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))

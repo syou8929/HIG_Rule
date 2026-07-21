@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:31:00Z",
+  "reviewed_at": "2026-07-21T22:52:34Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,21 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 293,
+  "reviewed_rule_count": 294,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-INPUTS-KEYBOARDS-0015": {
+      "title": "Always order multiple shortcut modifiers consistently",
+      "statement": {"en": "Always list multiple shortcut modifiers in Control, Option, Shift, Command order.", "ja": "複数のshortcut modifierは常にControl、Option、Shift、Commandの順で並べる。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["A custom keyboard shortcut uses more than one modifier key."],
+      "review_note": "Recovered MUST from the explicit conditional Always sentence and preserved the complete fixed ordering."
+    },
     "HIG-COMPONENTS-SIDEBARS-0010": {
       "title": "Keep visionOS sidebar selections within the current tab",
       "statement": {"en": "Ensure sidebar selections don't change the currently open visionOS tab.", "ja": "sidebar selectionで現在開いているvisionOS tabを変更しない。"},

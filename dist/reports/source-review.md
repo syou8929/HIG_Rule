@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1774
-- Reviewed batches: 121
+- Reviewed rules: 1789
+- Reviewed batches: 122
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:46:29Z
+- Reviewed at: 2026-07-21T22:52:34Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1082,8 +1082,23 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-GESTURES-0032 · high — Recovered a specification rule and preserved every standard gesture, platform scope, and common action row. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0033 · high — Recovered the omitted responsiveness lead separately from predictive feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0034 · high — Recovered the omitted necessity lead and preserved its frequency and no-existing-gesture tests. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-KEYBOARDS-0001 · high — Reviewed accessibility first, preserved when-possible strength, and removed tvOS from the scope because the source lists four supported platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0002 · high — Recorded systemwide expectations and table provenance without copying the 116-row mapping table into the rule store. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0003 · high — Kept the general convention rule and represented the structured modifier recommendations as separate atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0004 · high — Preserved Avoid and the clarity rationale while keeping the illustrated commands nonbinding. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0005 · high — Split localization from RTL mirroring so each system-provided behavior is independently reviewable. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0006 · high — Preserved Avoid and generalized the semantic-conflict rationale beyond the example. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-KEYBOARDS-0007 · high — Recorded the missing submenu-title context and the explicit requirement that each title convey its action independently. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0008 · high — Recorded both the frequency and app-specific constraints plus the learnability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0009 · high — Preserved the in-general qualifier and the documented narrow exception without converting the example into a reusable binding. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-KEYBOARDS-0010 · high — Repaired the generated wording and recorded the system-provided overlay behavior without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0011 · high — Recovered the Command row from the structured modifier table and preserved Prefer strength. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0012 · high — Recovered the Shift row and retained both secondary-use and semantic-relationship constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0013 · high — Recovered the Option row and its sparse-use boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0014 · high — Recovered the Control row and its system-conflict rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0015 · high — Recovered the explicit conditional Always rule and its complete fixed order. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0016 · high — Split RTL mirroring from connected-keyboard localization so both system behaviors remain atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0017 · high — Recovered the explicit platform limitation and corrected scope to watchOS itself. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-POINTING-DEVICES-0001 · high — Repaired the generic statement and recorded the cross-content consistency example. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0002 · high — Recorded the game scope, system examples, and customizable-gesture constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0003 · high — Repaired the truncated statement and preserved every named input method. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))

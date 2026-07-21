@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 293
-- Retained MUST: 269
+- Reviewed rules: 294
+- Retained MUST: 270
 - Retained MUST_NOT: 24
-- Normative level changes: 63
+- Normative level changes: 64
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:31:00Z
+- Reviewed at: 2026-07-21T22:52:34Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -121,6 +121,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-GESTURES-0030 — Recovered and retained MUST after confirming the explicit Full Space prerequisite for custom visionOS gesture interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0031 — Recovered and retained MUST after confirming the explicit must-request permission requirement for hand information. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-KEYBOARDS-0007 — Corrected SHOULD to MUST from the explicit Make sure directive and preserved the missing-submenu-context condition. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0015 — Recovered MUST from the explicit conditional Always sentence and preserved the complete fixed ordering. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-POINTING-DEVICES-0022 — Promoted to MUST after confirming the conditional explicit need to provide a nonstandard lift shape’s corner radius. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0023 — Recovered and retained MUST after confirming the explicit ensure requirement for identical modifier-key results across touch and pointer input. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-REMOTES-0005 — Corrected SHOULD to MUST because the Buttons section explicitly says to ensure the documented press mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
@@ -391,6 +392,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-GESTURES-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Full Space prerequisite for custom visionOS gesture interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit must-request permission requirement for hand information. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-KEYBOARDS-0007 · MUST · retained_with_atomicity_or_scope_correction — Corrected SHOULD to MUST from the explicit Make sure directive and preserved the missing-submenu-context condition. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0015 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit conditional Always sentence and preserved the complete fixed ordering. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-POINTING-DEVICES-0022 · MUST · retained_with_atomicity_or_scope_correction — Promoted to MUST after confirming the conditional explicit need to provide a nonstandard lift shape’s corner radius. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit ensure requirement for identical modifier-key results across touch and pointer input. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-REMOTES-0005 · MUST · retained_with_atomicity_or_scope_correction — Corrected SHOULD to MUST because the Buttons section explicitly says to ensure the documented press mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
