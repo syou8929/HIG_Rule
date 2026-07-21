@@ -23295,6 +23295,85 @@
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0010",
+    "title": "Center a page control at the bottom of the view or window",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Center a page control at the bottom of the view or window.",
+      "ja": "a page control at the bottom of the view or windowを中央に置く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Center a page control at the bottom of the view or window.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "014a7afe45919f0b56c6f67575e2064490aa76e989a72273c5ea15ef797779f3",
+      "evidence_paraphrase": "Center a page control at the bottom of the view or window."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Center a page control at the bottom of the view or window.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
     "id": "HIG-COMPONENTS-PANELS-0001",
     "title": "Use panels for content-related controls or information",
     "category": "components",
@@ -66864,17 +66943,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-MOTION-0008",
-    "title": "Help people remain comfortable when showing the movement of large virtual objects",
+    "title": "Keep large virtual-object motion comfortable",
     "category": "foundations",
     "topic": "motion",
     "subtopic": "visionos",
     "statement": {
-      "en": "Apply the documented Motion guidance to help people remain comfortable when showing the movement of large virtual objects.",
-      "ja": "「Motion」において「Help people remain comfortable when showing the movement of large virtual objects」の指針を適用する。"
+      "en": "Keep people comfortable when showing movement of large virtual objects in visionOS.",
+      "ja": "visionOSでlarge virtual objectのmovementを見せるとき利用者のcomfortを保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -66889,9 +66968,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Large objects may fill much of the field of view and obscure passthrough."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Increase translucency or reduce contrast so movement is easier to perceive comfortably."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Motion experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるMotionの一貫性と使いやすさを支えます。"
@@ -66899,7 +66980,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Motion guidance to help people remain comfortable when showing the movement of large virtual objects.” in the documented Motion context?"
+        "Does the design satisfy “Keep people comfortable when showing movement of large virtual objects in visionOS.” in the documented Motion context?"
       ]
     },
     "testability": "manual",
@@ -66920,7 +67001,7 @@
       "retrieved_at": "2026-07-21T11:15:06.265Z",
       "source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde",
       "source_sentence_hash": "e20b96002c2e3f0ae72bdd2ccdb3d0970f026b35e7eb26c80ef679c7dda3d6bd",
-      "evidence_paraphrase": "Apply the documented Motion guidance to help people remain comfortable when showing the movement of large virtual objects."
+      "evidence_paraphrase": "Keep people comfortable when showing movement of large virtual objects in visionOS."
     },
     "tags": [
       "foundations",
@@ -66930,22 +67011,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Motion guidance to help people remain comfortable when showing the movement of large virtual objects.",
+    "apple_native_rule": "Keep people comfortable when showing movement of large virtual objects in visionOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-MOTION-0009",
-    "title": "Consider using fades when you need to relocate an object",
+    "title": "Consider fades for relocating a visionOS object",
     "category": "foundations",
     "topic": "motion",
     "subtopic": "visionos",
     "statement": {
-      "en": "Evaluate whether using fades when you need to relocate an object is appropriate for the current context.",
-      "ja": "using fades when you need to relocate an objectが現在の状況に適切か検討する。"
+      "en": "When object relocation communicates nothing useful, consider hiding the movement with fades.",
+      "ja": "object relocationが有用な情報を伝えない場合、fadeでmovementを隠すことを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -66960,7 +67041,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Fade the object out before relocation and back in afterward."
     ],
     "exceptions": [],
     "rationale": {
@@ -66970,7 +67051,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using fades when you need to relocate an object is appropriate for the current context.” in the documented Motion context?"
+        "Does the design satisfy “When object relocation communicates nothing useful, consider hiding the movement with fades.” in the documented Motion context?"
       ]
     },
     "testability": "manual",
@@ -66991,7 +67072,7 @@
       "retrieved_at": "2026-07-21T11:15:06.265Z",
       "source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde",
       "source_sentence_hash": "a9220230b834afc0f7f1675dd1f44fa18be04390fc6e4618e806f0df5e898e55",
-      "evidence_paraphrase": "Evaluate whether using fades when you need to relocate an object is appropriate for the current context."
+      "evidence_paraphrase": "When object relocation communicates nothing useful, consider hiding the movement with fades."
     },
     "tags": [
       "foundations",
@@ -67001,22 +67082,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using fades when you need to relocate an object is appropriate for the current context.",
+    "apple_native_rule": "When object relocation communicates nothing useful, consider hiding the movement with fades.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-MOTION-0010",
-    "title": "Consider giving people a stationary frame of reference",
+    "title": "Consider a stationary reference for visionOS motion",
     "category": "foundations",
     "topic": "motion",
     "subtopic": "visionos",
     "statement": {
-      "en": "Evaluate whether giving people a stationary frame of reference is appropriate for the current context.",
-      "ja": "giving people a stationary frame of referenceが現在の状況に適切か検討する。"
+      "en": "Consider giving people a stationary frame of reference around visionOS motion.",
+      "ja": "visionOS motionの周囲にstationaryなreference frameを設けることを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -67031,7 +67112,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Contain visual movement within an area that does not move."
     ],
     "exceptions": [],
     "rationale": {
@@ -67041,7 +67122,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether giving people a stationary frame of reference is appropriate for the current context.” in the documented Motion context?"
+        "Does the design satisfy “Consider giving people a stationary frame of reference around visionOS motion.” in the documented Motion context?"
       ]
     },
     "testability": "manual",
@@ -67062,7 +67143,7 @@
       "retrieved_at": "2026-07-21T11:15:06.265Z",
       "source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde",
       "source_sentence_hash": "4539dfba066b7f82a4a490320af17d16aa55fd0fa0c9ea95db8e8e693cfe2b06",
-      "evidence_paraphrase": "Evaluate whether giving people a stationary frame of reference is appropriate for the current context."
+      "evidence_paraphrase": "Consider giving people a stationary frame of reference around visionOS motion."
     },
     "tags": [
       "foundations",
@@ -67072,22 +67153,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether giving people a stationary frame of reference is appropriate for the current context.",
+    "apple_native_rule": "Consider giving people a stationary frame of reference around visionOS motion.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-MOTION-0011",
-    "title": "Avoid showing objects that oscillate in a sustained way",
+    "title": "Avoid sustained object oscillation in visionOS",
     "category": "foundations",
     "topic": "motion",
     "subtopic": "visionos",
     "statement": {
-      "en": "Exclude showing objects that oscillate in a sustained way from the applicable experience.",
-      "ja": "該当する体験ではshowing objects that oscillate in a sustained wayを避ける。"
+      "en": "Avoid showing visionOS objects that oscillate continuously.",
+      "ja": "visionOSでobjectが継続的にoscillateする表示を避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -67102,9 +67183,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid frequencies around 0.2 Hz because people can be especially sensitive to them."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "When oscillation is needed, keep amplitude low and consider translucency."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Motion experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるMotionの一貫性と使いやすさを支えます。"
@@ -67112,7 +67195,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude showing objects that oscillate in a sustained way from the applicable experience.” in the documented Motion context?"
+        "Does the design satisfy “Avoid showing visionOS objects that oscillate continuously.” in the documented Motion context?"
       ]
     },
     "testability": "manual",
@@ -67133,7 +67216,7 @@
       "retrieved_at": "2026-07-21T11:15:06.265Z",
       "source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde",
       "source_sentence_hash": "47d188383cfb194298dce68c095b7f7b36990b2a3b30f23a2d9bf05baf811acf",
-      "evidence_paraphrase": "Exclude showing objects that oscillate in a sustained way from the applicable experience."
+      "evidence_paraphrase": "Avoid showing visionOS objects that oscillate continuously."
     },
     "tags": [
       "foundations",
@@ -67143,7 +67226,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude showing objects that oscillate in a sustained way from the applicable experience.",
+    "apple_native_rule": "Avoid showing visionOS objects that oscillate continuously.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -67220,17 +67303,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-MOTION-0013",
-    "title": "As much as possible, avoid displaying motion at the edges of a person’s field of view",
+    "title": "Avoid visionOS motion at field-of-view edges",
     "category": "foundations",
     "topic": "motion",
     "subtopic": "visionos",
     "statement": {
-      "en": "Avoid displaying motion at the edges of a person’s field of view wherever practicable.",
-      "ja": "可能な限りavoid displaying motion at the edges of a person’s field of view。"
+      "en": "Wherever practicable, avoid motion at the edges of a person’s visionOS field of view.",
+      "ja": "可能な限りvisionOSのfield of view端でmotionを表示しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -67245,7 +67328,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Peripheral motion can distract people or create a false sense of self or environmental movement."
     ],
     "exceptions": [],
     "rationale": {
@@ -67255,7 +67338,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Avoid displaying motion at the edges of a person’s field of view wherever practicable.” in the documented Motion context?"
+        "Does the design satisfy “Wherever practicable, avoid motion at the edges of a person’s visionOS field of view.” in the documented Motion context?"
       ]
     },
     "testability": "manual",
@@ -67276,7 +67359,7 @@
       "retrieved_at": "2026-07-21T11:15:06.265Z",
       "source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde",
       "source_sentence_hash": "a4d688dc3a1b27208608c5f829684ffa0da05420e4f7d70eeb0ea9d9543e9902",
-      "evidence_paraphrase": "Avoid displaying motion at the edges of a person’s field of view wherever practicable."
+      "evidence_paraphrase": "Wherever practicable, avoid motion at the edges of a person’s visionOS field of view."
     },
     "tags": [
       "foundations",
@@ -67286,7 +67369,78 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Avoid displaying motion at the edges of a person’s field of view wherever practicable.",
+    "apple_native_rule": "Wherever practicable, avoid motion at the edges of a person’s visionOS field of view.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-MOTION-0014",
+    "title": "Match peripheral object brightness to surrounding content",
+    "category": "foundations",
+    "topic": "motion",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Match a moving peripheral object’s brightness to the rest of the visible content.",
+      "ja": "peripheral vision内のmoving objectのbrightnessを他のvisible contentに合わせる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "An immersive visionOS experience needs to show an object moving in peripheral vision."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Motion experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMotionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Match a moving peripheral object’s brightness to the rest of the visible content.” in the documented Motion context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/motion",
+      "page_title": "Motion",
+      "section_path": [
+        "Motion",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:06.265Z",
+      "source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde",
+      "source_sentence_hash": "7dcef0de4eb457eb18c242389dc9c6119c11789e6af2bc1e597e0e243c988f55",
+      "evidence_paraphrase": "Match a moving peripheral object’s brightness to the rest of the visible content."
+    },
+    "tags": [
+      "foundations",
+      "motion",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Match a moving peripheral object’s brightness to the rest of the visible content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -70061,17 +70215,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001",
-    "title": "Avoid anchoring content to the wearer’s head",
+    "title": "Avoid head-anchored visionOS content",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "field-of-view",
     "statement": {
-      "en": "Exclude anchoring content to the wearer’s head from the applicable experience.",
-      "ja": "該当する体験ではanchoring content to the wearer’s headを避ける。"
+      "en": "Avoid anchoring visionOS content to the wearer’s head.",
+      "ja": "visionOS contentを利用者のheadにanchorしない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -70086,9 +70240,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Head anchoring can feel confining and reduce the apparent stability of surroundings."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Anchor content in a person’s space so they can look around naturally."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Spatial layout experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるSpatial layoutの一貫性と使いやすさを支えます。"
@@ -70096,7 +70252,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude anchoring content to the wearer’s head from the applicable experience.” in the documented Spatial layout context?"
+        "Does the design satisfy “Avoid anchoring visionOS content to the wearer’s head.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70116,7 +70272,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "48aeb18a424a17abe9b4d1ef6fc3439fd50ff81b77a4f7874be7d1b12f877274",
-      "evidence_paraphrase": "Exclude anchoring content to the wearer’s head from the applicable experience."
+      "evidence_paraphrase": "Avoid anchoring visionOS content to the wearer’s head."
     },
     "tags": [
       "foundations",
@@ -70125,22 +70281,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude anchoring content to the wearer’s head from the applicable experience.",
+    "apple_native_rule": "Avoid anchoring visionOS content to the wearer’s head.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0002",
-    "title": "Provide visual cues that accurately communicate the depth of your content",
+    "title": "Communicate virtual-content depth accurately",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "depth",
     "statement": {
-      "en": "Make visual cues that accurately communicate the depth of your content available when applicable.",
-      "ja": "必要な場合にvisual cues that accurately communicate the depth of your contentを利用可能にする。"
+      "en": "Provide visual cues that accurately communicate virtual-content depth.",
+      "ja": "virtual contentのdepthを正確に伝えるvisual cueを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -70155,7 +70311,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Missing or conflicting real-world depth cues can cause visual discomfort."
     ],
     "exceptions": [],
     "rationale": {
@@ -70165,7 +70321,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make visual cues that accurately communicate the depth of your content available when applicable.” in the documented Spatial layout context?"
+        "Does the design satisfy “Provide visual cues that accurately communicate virtual-content depth.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70185,7 +70341,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "72c78d72e426c3e11682ecdfe0fc60fdf5e9cbdeec075959d337a25b0fa1278c",
-      "evidence_paraphrase": "Make visual cues that accurately communicate the depth of your content available when applicable."
+      "evidence_paraphrase": "Provide visual cues that accurately communicate virtual-content depth."
     },
     "tags": [
       "foundations",
@@ -70194,22 +70350,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make visual cues that accurately communicate the depth of your content available when applicable.",
+    "apple_native_rule": "Provide visual cues that accurately communicate virtual-content depth.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0003",
-    "title": "Use depth to communicate hierarchy",
+    "title": "Use visionOS depth to communicate hierarchy",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "depth",
     "statement": {
-      "en": "Choose or apply depth to communicate hierarchy in the documented context.",
-      "ja": "該当する状況ではdepth to communicate hierarchyを採用する。"
+      "en": "Use visionOS depth to communicate hierarchy and prominence.",
+      "ja": "visionOS depthでhierarchyとprominenceを伝える。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -70224,7 +70380,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use depth changes to distinguish foreground elements from surrounding content."
     ],
     "exceptions": [],
     "rationale": {
@@ -70234,7 +70390,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply depth to communicate hierarchy in the documented context.” in the documented Spatial layout context?"
+        "Does the design satisfy “Use visionOS depth to communicate hierarchy and prominence.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70254,7 +70410,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "8b1755450c4a685336de5d2c44d25600a5f5a4112decca4d072ee70ff80c6fa3",
-      "evidence_paraphrase": "Choose or apply depth to communicate hierarchy in the documented context."
+      "evidence_paraphrase": "Use visionOS depth to communicate hierarchy and prominence."
     },
     "tags": [
       "foundations",
@@ -70263,21 +70419,21 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply depth to communicate hierarchy in the documented context.",
+    "apple_native_rule": "Use visionOS depth to communicate hierarchy and prominence.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004",
-    "title": "Make sure depth adds value",
+    "title": "Use depth only when it adds value",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "depth",
     "statement": {
-      "en": "Verify that depth adds value.",
-      "ja": "depth adds valueを満たしていることを確認する。"
+      "en": "Use visionOS depth only where it clarifies, delights, or separates important content.",
+      "ja": "clarity、delight、important contentの分離に価値がある場合だけvisionOS depthを使う。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -70293,9 +70449,12 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer depth for large, important interface elements.",
+      "Review repeated depth changes because refocusing can be tiring."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Avoid depth that reduces legibility or usability on small objects."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Spatial layout experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるSpatial layoutの一貫性と使いやすさを支えます。"
@@ -70303,7 +70462,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that depth adds value.” in the documented Spatial layout context?"
+        "Does the design satisfy “Use visionOS depth only where it clarifies, delights, or separates important content.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70323,7 +70482,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "33a1d2b5e86ef81b1b3ad53f83e2328c7a49a2bf676e7e55fbd817f0d8c09311",
-      "evidence_paraphrase": "Verify that depth adds value."
+      "evidence_paraphrase": "Use visionOS depth only where it clarifies, delights, or separates important content."
     },
     "tags": [
       "foundations",
@@ -70332,22 +70491,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Verify that depth adds value.",
+    "apple_native_rule": "Use visionOS depth only where it clarifies, delights, or separates important content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0005",
-    "title": "Consider using fixed scale when you want a virtual object to look exactly like a physical object",
+    "title": "Consider fixed scale for life-size virtual objects",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "scale",
     "statement": {
-      "en": "Evaluate whether using fixed scale when you want a virtual object to look exactly like a physical object is appropriate for the current context.",
-      "ja": "using fixed scale when you want a virtual object to look exactly like a physical objectが現在の状況に適切か検討する。"
+      "en": "Consider fixed scale when a virtual object must look like its physical counterpart.",
+      "ja": "virtual objectをphysical counterpartと同じように見せる場合はfixed scaleを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -70364,7 +70523,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use fixed scale sparingly and prefer it for noninteractive objects."
     ],
     "exceptions": [],
     "rationale": {
@@ -70374,7 +70533,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using fixed scale when you want a virtual object to look exactly like a physical object is appropriate for the current context.” in the documented Spatial layout context?"
+        "Does the design satisfy “Consider fixed scale when a virtual object must look like its physical counterpart.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70394,7 +70553,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "2555cd00d97d5f7ce15ece72f35258a83297d06da511982d975c27652c509351",
-      "evidence_paraphrase": "Evaluate whether using fixed scale when you want a virtual object to look exactly like a physical object is appropriate for the current context."
+      "evidence_paraphrase": "Consider fixed scale when a virtual object must look like its physical counterpart."
     },
     "tags": [
       "foundations",
@@ -70404,22 +70563,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using fixed scale when you want a virtual object to look exactly like a physical object is appropriate for the current context.",
+    "apple_native_rule": "Consider fixed scale when a virtual object must look like its physical counterpart.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0006",
-    "title": "Avoid displaying too many windows",
+    "title": "Avoid too many visionOS windows",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude displaying too many windows from the applicable experience.",
-      "ja": "該当する体験ではdisplaying too many windowsを避ける。"
+      "en": "Avoid displaying too many visionOS windows at once.",
+      "ja": "visionOS windowを一度に過剰表示しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -70434,7 +70593,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve visibility of surroundings and avoid overwhelm or constriction."
     ],
     "exceptions": [],
     "rationale": {
@@ -70444,7 +70603,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude displaying too many windows from the applicable experience.” in the documented Spatial layout context?"
+        "Does the design satisfy “Avoid displaying too many visionOS windows at once.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70464,7 +70623,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "fb23221d977ea651d6932a52c47e24b33c0db96ff9ac557529649fbd75c93b72",
-      "evidence_paraphrase": "Exclude displaying too many windows from the applicable experience."
+      "evidence_paraphrase": "Avoid displaying too many visionOS windows at once."
     },
     "tags": [
       "foundations",
@@ -70473,22 +70632,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude displaying too many windows from the applicable experience.",
+    "apple_native_rule": "Avoid displaying too many visionOS windows at once.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0007",
-    "title": "Prioritize standard, indirect gestures",
+    "title": "Prioritize standard indirect visionOS gestures",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Spatial layout guidance to prioritize standard, indirect gestures.",
-      "ja": "「Spatial layout」において「Prioritize standard, indirect gestures」の指針を適用する。"
+      "en": "Prioritize standard indirect gestures in visionOS.",
+      "ja": "visionOSではstandard indirect gestureを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -70505,9 +70664,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Indirect gestures work across object distances without raising a hand into view."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Consider direct gestures for nearby objects used briefly for close inspection or manipulation."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Spatial layout experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるSpatial layoutの一貫性と使いやすさを支えます。"
@@ -70515,7 +70676,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Spatial layout guidance to prioritize standard, indirect gestures.” in the documented Spatial layout context?"
+        "Does the design satisfy “Prioritize standard indirect gestures in visionOS.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70535,7 +70696,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "6ced9651be4e8369da23df3ceb36f101f6f92871810f431cb3b12ac987f815b5",
-      "evidence_paraphrase": "Apply the documented Spatial layout guidance to prioritize standard, indirect gestures."
+      "evidence_paraphrase": "Prioritize standard indirect gestures in visionOS."
     },
     "tags": [
       "foundations",
@@ -70545,22 +70706,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Spatial layout guidance to prioritize standard, indirect gestures.",
+    "apple_native_rule": "Prioritize standard indirect gestures in visionOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0008",
-    "title": "Include enough space around interactive components to make them easy for people to look at",
+    "title": "Space visionOS interactive components for comfortable gaze",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Spatial layout guidance to include enough space around interactive components to make them easy for people to look at.",
-      "ja": "「Spatial layout」において「Include enough space around interactive components to make them easy for people to look at」の指針を適用する。"
+      "en": "Include enough space around visionOS interactive components for easy, comfortable gaze selection.",
+      "ja": "visionOS interactive componentの周囲にeasyでcomfortableなgaze selection用spaceを設ける。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -70577,9 +70738,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prevent hover effects from crowding other content."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "The source gives 60-point centers and 16-point gaps as examples, not unconditional minima."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Spatial layout experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるSpatial layoutの一貫性と使いやすさを支えます。"
@@ -70587,7 +70750,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Spatial layout guidance to include enough space around interactive components to make them easy for people to look at.” in the documented Spatial layout context?"
+        "Does the design satisfy “Include enough space around visionOS interactive components for easy, comfortable gaze selection.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70607,7 +70770,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "6c82d684f34207f73689e98feddfeba7413b98c1ae23ba007d3231c742d6b2a3",
-      "evidence_paraphrase": "Apply the documented Spatial layout guidance to include enough space around interactive components to make them easy for people to look at."
+      "evidence_paraphrase": "Include enough space around visionOS interactive components for easy, comfortable gaze selection."
     },
     "tags": [
       "foundations",
@@ -70617,22 +70780,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Spatial layout guidance to include enough space around interactive components to make them easy for people to look at.",
+    "apple_native_rule": "Include enough space around visionOS interactive components for easy, comfortable gaze selection.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0009",
-    "title": "Let people use your app with minimal or no physical movement",
+    "title": "Support stationary use of a visionOS app",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Preserve people’s ability to use your app with minimal or no physical movement.",
-      "ja": "利用者がuse your app with minimal or no physical movementできる状態を保つ。"
+      "en": "Let people use a visionOS app with minimal or no physical movement.",
+      "ja": "visionOS appをminimalまたはno physical movementで使えるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -70647,7 +70810,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Support stationary use unless physical movement is essential to the experience."
     ],
     "exceptions": [],
     "rationale": {
@@ -70657,7 +70820,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to use your app with minimal or no physical movement.” in the documented Spatial layout context?"
+        "Does the design satisfy “Let people use a visionOS app with minimal or no physical movement.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70677,7 +70840,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "2178b357cb90b40930d3d8075c5fba6f97d93825ca4190fbb61da93fd3b214d1",
-      "evidence_paraphrase": "Preserve people’s ability to use your app with minimal or no physical movement."
+      "evidence_paraphrase": "Let people use a visionOS app with minimal or no physical movement."
     },
     "tags": [
       "foundations",
@@ -70686,22 +70849,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to use your app with minimal or no physical movement.",
+    "apple_native_rule": "Let people use a visionOS app with minimal or no physical movement.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0010",
-    "title": "Use the floor to help you place a large immersive experience",
+    "title": "Use the floor to place large immersive content",
     "category": "foundations",
     "topic": "spatial-layout",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply the floor to help you place a large immersive experience in the documented context.",
-      "ja": "該当する状況ではthe floor to help you place a large immersive experienceを採用する。"
+      "en": "Use the floor to place a large visionOS immersive experience.",
+      "ja": "largeなvisionOS immersive experienceの配置にfloorを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -70716,7 +70879,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Place floor-extending content on a flat horizontal plane aligned with the physical floor."
     ],
     "exceptions": [],
     "rationale": {
@@ -70726,7 +70889,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the floor to help you place a large immersive experience in the documented context.” in the documented Spatial layout context?"
+        "Does the design satisfy “Use the floor to place a large visionOS immersive experience.” in the documented Spatial layout context?"
       ]
     },
     "testability": "manual",
@@ -70746,7 +70909,7 @@
       "retrieved_at": "2026-07-21T11:15:22.230Z",
       "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
       "source_sentence_hash": "3bc16a091e516688bac12c2bd95cdc667443e821aea156db60a49eecc304c12f",
-      "evidence_paraphrase": "Choose or apply the floor to help you place a large immersive experience in the documented context."
+      "evidence_paraphrase": "Use the floor to place a large visionOS immersive experience."
     },
     "tags": [
       "foundations",
@@ -70755,7 +70918,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply the floor to help you place a large immersive experience in the documented context.",
+    "apple_native_rule": "Use the floor to place a large visionOS immersive experience.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -70825,6 +70988,216 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "Avoid adding depth to text in visionOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0012",
+    "title": "Center important visionOS content in the field of view",
+    "category": "foundations",
+    "topic": "spatial-layout",
+    "subtopic": "field-of-view",
+    "statement": {
+      "en": "Center important visionOS content within the field of view.",
+      "ja": "importantなvisionOS contentをfield of view内の中央に置く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Avoid distracting motion and bright, high-contrast peripheral objects around important content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Spatial layout experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSpatial layoutの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Center important visionOS content within the field of view.” in the documented Spatial layout context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/spatial-layout",
+      "page_title": "Spatial layout",
+      "section_path": [
+        "Spatial layout",
+        "Field of view"
+      ],
+      "retrieved_at": "2026-07-21T11:15:22.230Z",
+      "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
+      "source_sentence_hash": "88656a70bb8c817f02ee5069e6c2c3b6ba8771040d9cc93d8c8e9a696cebeb0c",
+      "evidence_paraphrase": "Center important visionOS content within the field of view."
+    },
+    "tags": [
+      "foundations",
+      "spatial-layout",
+      "field-of-view"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Center important visionOS content within the field of view.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0013",
+    "title": "Rely on the Digital Crown for visionOS window recentering",
+    "category": "foundations",
+    "topic": "spatial-layout",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Rely on the Digital Crown to let people recenter visionOS windows.",
+      "ja": "visionOS windowのrecenterにはDigital Crownを利用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "digital-crown"
+      ]
+    },
+    "conditions": [
+      "The system handles recentering; the app needs no custom support for the action."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Spatial layout experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSpatial layoutの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Rely on the Digital Crown to let people recenter visionOS windows.” in the documented Spatial layout context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/spatial-layout",
+      "page_title": "Spatial layout",
+      "section_path": [
+        "Spatial layout",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:22.230Z",
+      "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
+      "source_sentence_hash": "2e6f391e9a75b52134e085761b7838001a005eeae14103bb5323d139a9eaa870",
+      "evidence_paraphrase": "Rely on the Digital Crown to let people recenter visionOS windows."
+    },
+    "tags": [
+      "foundations",
+      "spatial-layout",
+      "best-practices",
+      "digital-crown"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Rely on the Digital Crown to let people recenter visionOS windows.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014",
+    "title": "Avoid overlapping visionOS interactive elements",
+    "category": "foundations",
+    "topic": "spatial-layout",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid overlapping visionOS controls with other interactive elements or views.",
+      "ja": "visionOS controlを他のinteractive elementやviewと重ねない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve reliable gaze selection of a single element."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Spatial layout experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSpatial layoutの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid overlapping visionOS controls with other interactive elements or views.” in the documented Spatial layout context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/spatial-layout",
+      "page_title": "Spatial layout",
+      "section_path": [
+        "Spatial layout",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:22.230Z",
+      "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a",
+      "source_sentence_hash": "b6a50ef2bceda0bf83c85f2848bc58c0517b4d1ee552e01a9e8428d16c42808a",
+      "evidence_paraphrase": "Avoid overlapping visionOS controls with other interactive elements or views."
+    },
+    "tags": [
+      "foundations",
+      "spatial-layout",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid overlapping visionOS controls with other interactive elements or views.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -82468,6 +82841,81 @@
     "priority_rank": 5,
     "status": "active",
     "apple_native_rule": "Indicate focus using visual appearances that are consistent with the platform.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-FOCUS-AND-SELECTION-0008",
+    "title": "Rely on system-provided focus effects",
+    "category": "inputs",
+    "topic": "focus-and-selection",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Rely on system-provided focus effects.",
+      "ja": "system-provided focus effectsを利用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Rely on system-provided focus effects.” in the documented Focus and selection context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection",
+      "page_title": "Focus and selection",
+      "section_path": [
+        "Focus and selection",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:14:51.637Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
+      "source_sentence_hash": "dcf51e735ce3bf949e063393551fc6a975a99ef000051bd31f3423b5ee80425c",
+      "evidence_paraphrase": "Rely on system-provided focus effects."
+    },
+    "tags": [
+      "inputs",
+      "focus-and-selection",
+      "best-practices"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Rely on system-provided focus effects.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

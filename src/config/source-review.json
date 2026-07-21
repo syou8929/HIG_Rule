@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T13:44:48Z",
+  "reviewed_at": "2026-07-21T13:56:59Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -931,6 +931,57 @@
         "HIG-FOUNDATIONS-LAYOUT-0035"
       ],
       "review_note": "Reviewed iOS through watchOS layout guidance, preserved tvOS grid measurements, and recovered ten platform rules."
+    },
+    {
+      "id": "priority-4-motion-visionos-comfort-context-2026-07-21",
+      "reviewed_at": "2026-07-21T13:52:41Z",
+      "review_method": "Rendered Apple HIG Motion visionOS guidance and supporting prose were reviewed; the live main-content hash matched the stored page.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/motion",
+          "source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-MOTION-0008",
+        "HIG-FOUNDATIONS-MOTION-0009",
+        "HIG-FOUNDATIONS-MOTION-0010",
+        "HIG-FOUNDATIONS-MOTION-0011",
+        "HIG-FOUNDATIONS-MOTION-0013",
+        "HIG-FOUNDATIONS-MOTION-0014"
+      ],
+      "review_note": "Reviewed visionOS movement comfort and recovered the conditional peripheral-object brightness requirement."
+    },
+    {
+      "id": "priority-4-spatial-layout-context-2026-07-21",
+      "reviewed_at": "2026-07-21T13:56:59Z",
+      "review_method": "Rendered Apple HIG Spatial layout guidance and supporting prose were reviewed; the live main-content hash matched the stored page.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/spatial-layout",
+          "source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0002",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0003",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0005",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0006",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0007",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0008",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0009",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0010",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0012",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0013",
+        "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014"
+      ],
+      "review_note": "Reviewed field of view, depth, scale, gestures, gaze spacing, stationary use, and immersive floor alignment; recovered three rules."
     }
   ],
   "rules": {
@@ -5848,6 +5899,144 @@
       "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "cf9d3b61157578bb26fdde744947ecbd6d9d0ba5c92710943dcffd51c0a13a0c", "section_path": ["Layout", "Platform considerations", "visionOS"]},
       "conditions": ["Prevent the system hover effect from obscuring other content.", "The source gives 60-point center spacing as an example, not an unconditional minimum."],
       "review_note": "Recovered the explicit spacing requirement while keeping 60 points as an example."
+    },
+    "HIG-FOUNDATIONS-MOTION-0008": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "e20b96002c2e3f0ae72bdd2ccdb3d0970f026b35e7eb26c80ef679c7dda3d6bd", "section_path": ["Motion", "Platform considerations", "visionOS"]},
+      "title": "Keep large virtual-object motion comfortable",
+      "statement": {"en": "Keep people comfortable when showing movement of large virtual objects in visionOS.", "ja": "visionOSでlarge virtual objectのmovementを見せるとき利用者のcomfortを保つ。"},
+      "conditions": ["Large objects may fill much of the field of view and obscure passthrough."],
+      "exceptions": ["Increase translucency or reduce contrast so movement is easier to perceive comfortably."],
+      "review_note": "Recorded field-of-view coverage, passthrough occlusion, and both comfort techniques."
+    },
+    "HIG-FOUNDATIONS-MOTION-0009": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "a9220230b834afc0f7f1675dd1f44fa18be04390fc6e4618e806f0df5e898e55", "section_path": ["Motion", "Platform considerations", "visionOS"]},
+      "title": "Consider fades for relocating a visionOS object",
+      "statement": {"en": "When object relocation communicates nothing useful, consider hiding the movement with fades.", "ja": "object relocationが有用な情報を伝えない場合、fadeでmovementを隠すことを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Fade the object out before relocation and back in afterward."],
+      "review_note": "Retained MAY and recorded the no-useful-information condition and two fade phases."
+    },
+    "HIG-FOUNDATIONS-MOTION-0010": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "4539dfba066b7f82a4a490320af17d16aa55fd0fa0c9ea95db8e8e693cfe2b06", "section_path": ["Motion", "Platform considerations", "visionOS"]},
+      "title": "Consider a stationary reference for visionOS motion",
+      "statement": {"en": "Consider giving people a stationary frame of reference around visionOS motion.", "ja": "visionOS motionの周囲にstationaryなreference frameを設けることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Contain visual movement within an area that does not move."],
+      "review_note": "Retained MAY and recorded the stationary containment that reduces discomfort."
+    },
+    "HIG-FOUNDATIONS-MOTION-0011": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "47d188383cfb194298dce68c095b7f7b36990b2a3b30f23a2d9bf05baf811acf", "section_path": ["Motion", "Platform considerations", "visionOS"]},
+      "title": "Avoid sustained object oscillation in visionOS",
+      "statement": {"en": "Avoid showing visionOS objects that oscillate continuously.", "ja": "visionOSでobjectが継続的にoscillateする表示を避ける。"},
+      "conditions": ["Avoid frequencies around 0.2 Hz because people can be especially sensitive to them."],
+      "exceptions": ["When oscillation is needed, keep amplitude low and consider translucency."],
+      "review_note": "Recorded the 0.2 Hz sensitivity and both mitigation options."
+    },
+    "HIG-FOUNDATIONS-MOTION-0013": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "a4d688dc3a1b27208608c5f829684ffa0da05420e4f7d70eeb0ea9d9543e9902", "section_path": ["Motion", "Platform considerations", "visionOS"]},
+      "title": "Avoid visionOS motion at field-of-view edges",
+      "statement": {"en": "Wherever practicable, avoid motion at the edges of a person’s visionOS field of view.", "ja": "可能な限りvisionOSのfield of view端でmotionを表示しない。"},
+      "conditions": ["Peripheral motion can distract people or create a false sense of self or environmental movement."],
+      "review_note": "Preserved the practicability qualifier and peripheral-vision comfort rationale."
+    },
+    "HIG-FOUNDATIONS-MOTION-0014": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "7dcef0de4eb457eb18c242389dc9c6119c11789e6af2bc1e597e0e243c988f55", "section_path": ["Motion", "Platform considerations", "visionOS"]},
+      "conditions": ["An immersive visionOS experience needs to show an object moving in peripheral vision."],
+      "review_note": "Recovered the explicit brightness-matching requirement within the edge-motion exception."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "48aeb18a424a17abe9b4d1ef6fc3439fd50ff81b77a4f7874be7d1b12f877274", "section_path": ["Spatial layout", "Field of view"]},
+      "title": "Avoid head-anchored visionOS content",
+      "statement": {"en": "Avoid anchoring visionOS content to the wearer’s head.", "ja": "visionOS contentを利用者のheadにanchorしない。"},
+      "conditions": ["Head anchoring can feel confining and reduce the apparent stability of surroundings."],
+      "exceptions": ["Anchor content in a person’s space so they can look around naturally."],
+      "review_note": "Recorded the confinement and stability risks plus the spatial-anchor alternative."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0002": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "72c78d72e426c3e11682ecdfe0fc60fdf5e9cbdeec075959d337a25b0fa1278c", "section_path": ["Spatial layout", "Depth"]},
+      "title": "Communicate virtual-content depth accurately",
+      "statement": {"en": "Provide visual cues that accurately communicate virtual-content depth.", "ja": "virtual contentのdepthを正確に伝えるvisual cueを提供する。"},
+      "conditions": ["Missing or conflicting real-world depth cues can cause visual discomfort."],
+      "review_note": "Recorded the real-world cue consistency and visual-comfort requirement."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0003": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "8b1755450c4a685336de5d2c44d25600a5f5a4112decca4d072ee70ff80c6fa3", "section_path": ["Spatial layout", "Depth"]},
+      "title": "Use visionOS depth to communicate hierarchy",
+      "statement": {"en": "Use visionOS depth to communicate hierarchy and prominence.", "ja": "visionOS depthでhierarchyとprominenceを伝える。"},
+      "conditions": ["Use depth changes to distinguish foreground elements from surrounding content."],
+      "review_note": "Recorded prominence and depth-change perception as the hierarchy mechanisms."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "33a1d2b5e86ef81b1b3ad53f83e2328c7a49a2bf676e7e55fbd817f0d8c09311", "section_path": ["Spatial layout", "Depth"]},
+      "conditions": ["Prefer depth for large, important interface elements.", "Review repeated depth changes because refocusing can be tiring."],
+      "exceptions": ["Avoid depth that reduces legibility or usability on small objects."],
+      "review_note": "Replaced generic conditions with the source's value, scale, legibility, and refocusing limits."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0005": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "2555cd00d97d5f7ce15ece72f35258a83297d06da511982d975c27652c509351", "section_path": ["Spatial layout", "Scale"]},
+      "title": "Consider fixed scale for life-size virtual objects",
+      "statement": {"en": "Consider fixed scale when a virtual object must look like its physical counterpart.", "ja": "virtual objectをphysical counterpartと同じように見せる場合はfixed scaleを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Use fixed scale sparingly and prefer it for noninteractive objects."],
+      "review_note": "Retained MAY and recorded the life-size, sparse-use, and noninteractive conditions."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0006": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "fb23221d977ea651d6932a52c47e24b33c0db96ff9ac557529649fbd75c93b72", "section_path": ["Spatial layout", "Best practices"]},
+      "title": "Avoid too many visionOS windows",
+      "statement": {"en": "Avoid displaying too many visionOS windows at once.", "ja": "visionOS windowを一度に過剰表示しない。"},
+      "conditions": ["Preserve visibility of surroundings and avoid overwhelm or constriction."],
+      "review_note": "Recorded surroundings visibility, comfort, and multiwindow relocation costs."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0007": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "6ced9651be4e8369da23df3ceb36f101f6f92871810f431cb3b12ac987f815b5", "section_path": ["Spatial layout", "Best practices"]},
+      "title": "Prioritize standard indirect visionOS gestures",
+      "statement": {"en": "Prioritize standard indirect gestures in visionOS.", "ja": "visionOSではstandard indirect gestureを優先する。"},
+      "conditions": ["Indirect gestures work across object distances without raising a hand into view."],
+      "exceptions": ["Consider direct gestures for nearby objects used briefly for close inspection or manipulation."],
+      "review_note": "Recorded fatigue, distance, familiarity, and the limited direct-gesture exception."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0008": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "6c82d684f34207f73689e98feddfeba7413b98c1ae23ba007d3231c742d6b2a3", "section_path": ["Spatial layout", "Best practices"]},
+      "title": "Space visionOS interactive components for comfortable gaze",
+      "statement": {"en": "Include enough space around visionOS interactive components for easy, comfortable gaze selection.", "ja": "visionOS interactive componentの周囲にeasyでcomfortableなgaze selection用spaceを設ける。"},
+      "conditions": ["Prevent hover effects from crowding other content."],
+      "exceptions": ["The source gives 60-point centers and 16-point gaps as examples, not unconditional minima."],
+      "review_note": "Recorded gaze and hover behavior without promoting example measurements to universal thresholds."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0009": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "2178b357cb90b40930d3d8075c5fba6f97d93825ca4190fbb61da93fd3b214d1", "section_path": ["Spatial layout", "Best practices"]},
+      "title": "Support stationary use of a visionOS app",
+      "statement": {"en": "Let people use a visionOS app with minimal or no physical movement.", "ja": "visionOS appをminimalまたはno physical movementで使えるようにする。"},
+      "conditions": ["Support stationary use unless physical movement is essential to the experience."],
+      "review_note": "Recorded the stationary-accessibility default and essential-movement exception."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0010": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "3bc16a091e516688bac12c2bd95cdc667443e821aea156db60a49eecc304c12f", "section_path": ["Spatial layout", "Best practices"]},
+      "title": "Use the floor to place large immersive content",
+      "statement": {"en": "Use the floor to place a large visionOS immersive experience.", "ja": "largeなvisionOS immersive experienceの配置にfloorを使う。"},
+      "conditions": ["Place floor-extending content on a flat horizontal plane aligned with the physical floor."],
+      "review_note": "Recorded the plane geometry and physical-floor alignment technique."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0012": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "88656a70bb8c817f02ee5069e6c2c3b6ba8771040d9cc93d8c8e9a696cebeb0c", "section_path": ["Spatial layout", "Field of view"]},
+      "title": "Center important visionOS content in the field of view",
+      "statement": {"en": "Center important visionOS content within the field of view.", "ja": "importantなvisionOS contentをfield of view内の中央に置く。"},
+      "conditions": ["Avoid distracting motion and bright, high-contrast peripheral objects around important content."],
+      "review_note": "Recovered the Center lead and recorded its immersive attention constraints."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0013": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "2e6f391e9a75b52134e085761b7838001a005eeae14103bb5323d139a9eaa870", "section_path": ["Spatial layout", "Best practices"]},
+      "title": "Rely on the Digital Crown for visionOS window recentering",
+      "statement": {"en": "Rely on the Digital Crown to let people recenter visionOS windows.", "ja": "visionOS windowのrecenterにはDigital Crownを利用する。"},
+      "conditions": ["The system handles recentering; the app needs no custom support for the action."],
+      "review_note": "Recovered the Rely lead and recorded that recentering is system-provided."
+    },
+    "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014": {
+      "source": {"source_hash": "f16062962e46cf44a85f9412dc90642351476a917620e6f0ee6e7836fb6c9f2a", "source_sentence_hash": "b6a50ef2bceda0bf83c85f2848bc58c0517b4d1ee552e01a9e8428d16c42808a", "section_path": ["Spatial layout", "Best practices"]},
+      "title": "Avoid overlapping visionOS interactive elements",
+      "statement": {"en": "Avoid overlapping visionOS controls with other interactive elements or views.", "ja": "visionOS controlを他のinteractive elementやviewと重ねない。"},
+      "conditions": ["Preserve reliable gaze selection of a single element."],
+      "review_note": "Recovered the direct overlap prohibition and its gaze-selection rationale."
     }
   }
 }

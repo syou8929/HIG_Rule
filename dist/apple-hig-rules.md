@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T13:49:51.848Z. 1910 active rules; 3 deprecated rules.
+Generated 2026-07-21T13:58:49.808Z. 1916 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -343,12 +343,13 @@ Generated 2026-07-21T13:49:51.848Z. 1910 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-MOTION-0005 · MAY · low** — Evaluate whether using animated symbols where it makes sense is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0006 · MUST · medium** — Verify that your game’s motion looks great by default on each platform you support. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0007 · SHOULD · low** — Preserve people’s ability to customize the visual experience of your game to optimize performance or battery life. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0008 · SHOULD · low** — Apply the documented Motion guidance to help people remain comfortable when showing the movement of large virtual objects. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0009 · MAY · low** — Evaluate whether using fades when you need to relocate an object is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0010 · MAY · low** — Evaluate whether giving people a stationary frame of reference is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0011 · AVOID · low** — Exclude showing objects that oscillate in a sustained way from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0008 · SHOULD · high** — Keep people comfortable when showing movement of large virtual objects in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0009 · MAY · high** — When object relocation communicates nothing useful, consider hiding the movement with fades. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0010 · MAY · high** — Consider giving people a stationary frame of reference around visionOS motion. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0011 · AVOID · high** — Avoid showing visionOS objects that oscillate continuously. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0012 · AVOID · high** — Avoid letting people rotate a virtual world in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0013 · AVOID · low** — Avoid displaying motion at the edges of a person’s field of view wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0013 · AVOID · high** — Wherever practicable, avoid motion at the edges of a person’s visionOS field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0014 · MUST · high** — Match a moving peripheral object’s brightness to the rest of the visible content. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 ### privacy
 
 - **HIG-FOUNDATIONS-PRIVACY-0001 · SHOULD · medium** — Apply the documented Privacy guidance to be transparent about how your app collects and uses people’s data. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
@@ -392,17 +393,20 @@ Generated 2026-07-21T13:49:51.848Z. 1910 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-SF-SYMBOLS-0012 · AVOID · low** — Exclude design replicas of Apple products from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
 ### spatial-layout
 
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001 · AVOID · low** — Exclude anchoring content to the wearer’s head from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0002 · SHOULD · low** — Make visual cues that accurately communicate the depth of your content available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0003 · SHOULD · low** — Choose or apply depth to communicate hierarchy in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 · MUST · medium** — Verify that depth adds value. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0005 · MAY · low** — Evaluate whether using fixed scale when you want a virtual object to look exactly like a physical object is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0006 · AVOID · low** — Exclude displaying too many windows from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0007 · SHOULD · low** — Apply the documented Spatial layout guidance to prioritize standard, indirect gestures. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0008 · SHOULD · low** — Apply the documented Spatial layout guidance to include enough space around interactive components to make them easy for people to look at. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0009 · SHOULD · low** — Preserve people’s ability to use your app with minimal or no physical movement. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
-- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0010 · SHOULD · low** — Choose or apply the floor to help you place a large immersive experience in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001 · AVOID · high** — Avoid anchoring visionOS content to the wearer’s head. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0002 · SHOULD · high** — Provide visual cues that accurately communicate virtual-content depth. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0003 · SHOULD · high** — Use visionOS depth to communicate hierarchy and prominence. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 · MUST · high** — Use visionOS depth only where it clarifies, delights, or separates important content. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0005 · MAY · high** — Consider fixed scale when a virtual object must look like its physical counterpart. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0006 · AVOID · high** — Avoid displaying too many visionOS windows at once. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0007 · SHOULD · high** — Prioritize standard indirect gestures in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0008 · SHOULD · high** — Include enough space around visionOS interactive components for easy, comfortable gaze selection. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0009 · SHOULD · high** — Let people use a visionOS app with minimal or no physical movement. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0010 · SHOULD · high** — Use the floor to place a large visionOS immersive experience. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0011 · AVOID · high** — Avoid adding depth to text in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0012 · SHOULD · high** — Center important visionOS content within the field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0013 · SHOULD · high** — Rely on the Digital Crown to let people recenter visionOS windows. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014 · AVOID · high** — Avoid overlapping visionOS controls with other interactive elements or views. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 ### typography
 
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0001 · SHOULD · low** — Choose or apply font sizes that most people can read easily in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
@@ -1086,6 +1090,7 @@ Generated 2026-07-21T13:49:51.848Z. 1910 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-PAGE-CONTROLS-0007 · SHOULD · high** — Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - **HIG-COMPONENTS-PAGE-CONTROLS-0008 · SHOULD · high** — Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - **HIG-COMPONENTS-PAGE-CONTROLS-0009 · MAY · high** — Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0010 · SHOULD · low** — Center a page control at the bottom of the view or window. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 ### panels
 
 - **HIG-COMPONENTS-PANELS-0001 · SHOULD · high** — Use a panel to give people quick access to controls or information related to their current content. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
@@ -1567,6 +1572,7 @@ Generated 2026-07-21T13:49:51.848Z. 1910 active rules; 3 deprecated rules.
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0005 · SHOULD · low** — Apply the documented Focus and selection guidance to design your interface to accommodate components in various focus states. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0006 · SHOULD · low** — Generally, use a focus ring for a text or search field, but use a highlight in a list. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0007 · SHOULD · low** — Indicate focus using visual appearances that are consistent with the platform. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0008 · SHOULD · low** — Rely on system-provided focus effects. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 ### game-controls
 
 - **HIG-INPUTS-GAME-CONTROLS-0001 · SHOULD · low** — Apply the documented Game controls guidance to place virtual buttons where they’re easy to access. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))

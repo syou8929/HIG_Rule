@@ -1,12 +1,12 @@
 import type { GuidanceCandidate, NormativeLevel, Portability, Rule, SourcePage } from "./types.js";
 import { slugify } from "./util.js";
 
-const ACTIONABLE = /^(accurately|adhere|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|be sure to|bear in mind|break up|carefully consider|change|choose|clearly|communicate|confirm|consider|convey|create|defer|define|describe|design|determine|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|hide|identify|in general, avoid|include|indicate|integrate|keep|let|make|maintain|match|minimize|must|never|offer|optimize|personalize|place|position|prefer|present|preserve|prioritize|provide|recognize|reduce|refer to|remove|replacing|represent|require|reserve|respect|respond|retain|show|showcase|simplify|specify|strive|support|take advantage|test|tightening|track|tracking|treat|try to|use|verify|warn|write|you must|you need to)\b/i;
+const ACTIONABLE = /^(accurately|adhere|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|be sure to|bear in mind|break up|carefully consider|center|change|choose|clearly|communicate|confirm|consider|convey|create|defer|define|describe|design|determine|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|hide|identify|in general, avoid|include|indicate|integrate|keep|let|make|maintain|match|minimize|must|never|offer|optimize|personalize|place|position|prefer|present|preserve|prioritize|provide|recognize|reduce|refer to|rely|remove|replacing|represent|require|reserve|respect|respond|retain|show|showcase|simplify|specify|strive|support|take advantage|test|tightening|track|tracking|treat|try to|use|verify|warn|write|you must|you need to)\b/i;
 const CONTEXTUAL_ACTIONABLE = /^(as\b.+,\s*defer\b|because\b.+\bensure\b|for\b.+\bconsider\b|if\b.+,\s*(?:add|avoid|consider|fade out|supply|use)\b|in\b.+,\s*help\b|in general,\s*(?:do not|don['’]t|use)\b|outside of\b.+\buse\b|to\b.+,\s*prefer\b|within\b.+\bconsider\b)/i;
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
-  if (/^(Always On|Tracking requests|Help buttons)$/i.test(text)) return false;
+  if (/^(Always On|Center area|Tracking requests|Help buttons)$/i.test(text)) return false;
   return (ACTIONABLE.test(text) || CONTEXTUAL_ACTIONABLE.test(text)) && !/^Resources?\b/i.test(text);
 }
 
@@ -118,6 +118,7 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
     { match: /^clearly\b/i, en: (v) => `Clearly ${lowerFirst(v)}.`, ja: (v) => `${v}を明確にする。` },
     { match: /^accurately\b/i, en: (v) => `Accurately ${lowerFirst(v)}.`, ja: (v) => `${v}を正確に行う。` },
     { match: /^change\b/i, en: (v) => `Change ${lowerFirst(v)}.`, ja: (v) => `${v}を変更する。` },
+    { match: /^center\b/i, en: (v) => `Center ${lowerFirst(v)}.`, ja: (v) => `${v}を中央に置く。` },
     { match: /^feature\b/i, en: (v) => `Feature ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を取り上げる。` },
     { match: /^personalize\b/i, en: (v) => `Personalize ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}をpersonalizeする。` },
     { match: /^showcase\b/i, en: (v) => `Showcase ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を目立たせる。` },
@@ -128,6 +129,7 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
     { match: /^hide\b/i, en: (v) => `Hide ${lowerFirst(v)}.`, ja: (v) => `${v}を隠す。` },
     { match: /^represent\b/i, en: (v) => `Represent ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を表現する。` },
     { match: /^recognize\b/i, en: (v) => `Account for ${lowerFirst(v)}.`, ja: (v) => `${v}を考慮する。` },
+    { match: /^rely on\b/i, en: (v) => `Rely on ${lowerFirst(v)}.`, ja: (v) => `${v}を利用する。` },
     { match: /^specify\b/i, en: (v) => `Specify ${lowerFirst(v)}.`, ja: (v) => `${v}を指定する。` },
     { match: /^require\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
     { match: /^(must|you must)\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },

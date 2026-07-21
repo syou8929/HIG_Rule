@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 362
-- Reviewed batches: 36
+- Reviewed rules: 381
+- Reviewed batches: 38
 - Official source only: yes
-- Reviewed at: 2026-07-21T13:44:48Z
+- Reviewed at: 2026-07-21T13:56:59Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -348,7 +348,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-LAYOUT-0033 · high — Recovered the explicit row-and-column focus-spacing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0034 · high — Recovered the conditional Use lead and recorded the system-control separation purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0035 · high — Recovered the explicit spacing requirement while keeping 60 points as an example. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-MOTION-0008 · high — Recorded field-of-view coverage, passthrough occlusion, and both comfort techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0009 · high — Retained MAY and recorded the no-useful-information condition and two fade phases. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0010 · high — Retained MAY and recorded the stationary containment that reduces discomfort. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0011 · high — Recorded the 0.2 Hz sensitivity and both mitigation options. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0012 · high — Recovered the qualified AVOID lead and recorded the source's stability rationale and fade alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0013 · high — Preserved the practicability qualifier and peripheral-vision comfort rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0014 · high — Recovered the explicit brightness-matching requirement within the edge-motion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-PRIVACY-0001 · medium — Reviewed the priority-3 privacy and explicit-intent guidance in official context, including permission timing, pre-alert design, authentication, and location-button customization. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0002 · medium — Reviewed the priority-3 privacy and explicit-intent guidance in official context, including permission timing, pre-alert design, authentication, and location-button customization. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0003 · medium — Preserved the explicit launch-time exception and the source preference for just-in-time permission requests. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
@@ -362,7 +368,20 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-PRIVACY-0013 · medium — Made the macOS fast-user-switching rationale explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0015 · medium — Lowered SHOULD to MAY because the item is an option under the parent statement that the button can be customized. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0016 · medium — Lowered SHOULD to MAY because the glyph choice is an optional customization listed under a can clause. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001 · high — Recorded the confinement and stability risks plus the spatial-anchor alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0002 · high — Recorded the real-world cue consistency and visual-comfort requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0003 · high — Recorded prominence and depth-change perception as the hierarchy mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 · high — Replaced generic conditions with the source's value, scale, legibility, and refocusing limits. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0005 · high — Retained MAY and recorded the life-size, sparse-use, and noninteractive conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0006 · high — Recorded surroundings visibility, comfort, and multiwindow relocation costs. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0007 · high — Recorded fatigue, distance, familiarity, and the limited direct-gesture exception. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0008 · high — Recorded gaze and hover behavior without promoting example measurements to universal thresholds. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0009 · high — Recorded the stationary-accessibility default and essential-movement exception. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0010 · high — Recorded the plane geometry and physical-floor alignment technique. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0011 · high — Recovered the qualified AVOID lead and preserved the legibility and visual-comfort rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0012 · high — Recovered the Center lead and recorded its immersive attention constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0013 · high — Recovered the Rely lead and recorded that recentering is system-provided. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014 · high — Recovered the direct overlap prohibition and its gaze-selection rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
