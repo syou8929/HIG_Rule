@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1407
-- Reviewed batches: 94
+- Reviewed rules: 1429
+- Reviewed batches: 95
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:07:20Z
+- Reviewed at: 2026-07-21T20:11:01Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1095,6 +1095,28 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-POINTING-DEVICES-0026 · high — Recovered the omitted hover-specific restriction and preserved the system-applied exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0027 · high — Recovered a specification rule and preserved every interaction, expected behavior, and mouse-versus-trackpad support row. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0028 · high — Recovered a specification rule and preserved every standard pointer name, meaning, and AppKit mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-REMOTES-0001 · high — Recorded the standard-behavior expectation and gameplay exception. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0002 · high — Recorded the direction-preserving focus example as the primary consistency check. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0003 · high — Repaired generated wording and retained both gesture discoverability and outcome feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0004 · high — Retained MAY and removed the misleading touchscreen modality from physical-remote taps. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0005 · high — Combined the best-practice wording with the explicit Buttons-table contract. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0006 · high — Repaired generated wording and preserved the gameplay-qualified custom-gesture case. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0007 · high — Recovered the omitted press-versus-tap distinction as one atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0008 · high — Split inadvertent-tap avoidance from the press-versus-tap distinction. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0009 · high — Recovered the qualified Back-navigation default and both hierarchy exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0010 · high — Split the active-gameplay Back exception from ordinary parent navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0011 · high — Separated the second-stage Back behavior from pause-menu opening. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0012 · high — Recovered the app-side swipe mapping from the required behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0013 · high — Recovered the game-side swipe mapping from the required behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0014 · high — Recovered the app-side press mapping from the required behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0015 · high — Recovered the game-side press mapping from the required behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0016 · high — Recovered the app-side Back mapping from the required behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0017 · high — Recovered the game-side Back alternatives from the required behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0018 · high — Recovered the game-side Play/Pause mapping from the required behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0019 · high — Activated the conditional EPG-opening behavior and preserved the system-routing fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0020 · high — Split EPG paging from EPG opening and retained the touch-surface alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0021 · high — Split the direct EPG-button repurposing avoidance from the positive mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0022 · high — Activated the playback-specific channel behavior and separated it from EPG paging. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-PATTERNS-FEEDBACK-0001 · high — Retained the accessibility-critical MUST and recorded the source's multimodal examples and receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0002 · high — Retained MAY and recorded the proximity, no-action, and unobtrusive-access conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0003 · high — Recorded the criticality, actionability preference, and proportional-interruption constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T20:08:25.533Z. 2431 active rules; 3 deprecated rules.
+Generated 2026-07-21T20:16:29.174Z. 2447 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -2063,12 +2063,28 @@ Generated 2026-07-21T20:08:25.533Z. 2431 active rules; 3 deprecated rules.
 - **HIG-INPUTS-POINTING-DEVICES-0028 · SHOULD · high** — Use each standard macOS pointer style only for its documented interactive meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 ### remotes
 
-- **HIG-INPUTS-REMOTES-0001 · SHOULD · low** — Favor using standard gestures to perform standard actions when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- **HIG-INPUTS-REMOTES-0002 · SHOULD · low** — Apply the documented Remotes guidance to be consistent with the tvOS focus experience. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- **HIG-INPUTS-REMOTES-0003 · SHOULD · low** — Make clear feedback that shows people what happens when they make gestures in your app available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- **HIG-INPUTS-REMOTES-0004 · MAY · low** — Evaluate whether using the position of a tap to aid with navigation or gameplay is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- **HIG-INPUTS-REMOTES-0005 · SHOULD · low** — Apply the documented Remotes guidance to respond correctly to the Play/Pause button during media playback. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- **HIG-INPUTS-REMOTES-0006 · SHOULD · low** — Define new gestures only when it makes sense in your app explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0001 · SHOULD · high** — Prefer standard remote gestures for standard tvOS actions. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0002 · SHOULD · high** — Combine remote gestures with tvOS focus behavior in familiar ways. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0003 · SHOULD · high** — Provide clear feedback that shows the result of remote gestures. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0004 · MAY · high** — Consider using remote tap position to aid navigation or gameplay. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0005 · MUST · high** — During media playback, make Play/Pause play, pause, or resume the content. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0006 · SHOULD · high** — Define a custom remote gesture only when it fits the tvOS experience. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0007 · SHOULD · high** — Distinguish intentional remote presses from taps. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0008 · AVOID · high** — Avoid responding to inadvertent remote taps. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0009 · SHOULD · high** — In almost all cases, open the current screen's parent when a person presses Back. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0010 · SHOULD · high** — During active gameplay, open an in-game pause menu when a person presses Back. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0011 · SHOULD · high** — When an in-game pause menu is open, make Back close it and resume gameplay. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0012 · MUST · high** — Make a remote touch-surface swipe navigate or change focus in a tvOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0013 · MUST · high** — Make a remote touch-surface swipe perform directional-pad behavior in a tvOS game. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0014 · MUST · high** — Make a remote touch-surface press activate a control or navigate deeper in a tvOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0015 · MUST · high** — Make a remote touch-surface press perform primary-button behavior in a tvOS game. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0016 · MUST · high** — Make Back return to the previous screen or exit to Home in a tvOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0017 · MUST · high** — Make Back pause or resume gameplay, navigate outward, or exit in a tvOS game. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0018 · MUST · high** — Make Play/Pause perform secondary-button behavior or skip an intro in a tvOS game. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0019 · SHOULD · high** — Open the app's EPG when a person presses a compatible remote's guide or browse button. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0020 · SHOULD · high** — Use a compatible remote's page up and page down buttons to navigate an open EPG. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0021 · AVOID · high** — Avoid assigning other actions to EPG-browsing buttons while the EPG is open. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- **HIG-INPUTS-REMOTES-0022 · SHOULD · high** — During content playback, make a compatible remote's page up and page down buttons change channels. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 
 ## technologies
 

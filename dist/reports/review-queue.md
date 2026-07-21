@@ -1,6 +1,6 @@
 # Human source-review queue
 
-- Remaining rules: 946
+- Remaining rules: 940
 - Next priority: 4 (platform-specific-hig)
 - Next batch: 6
 
@@ -8,7 +8,7 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 102
+- 4 (platform-specific-hig): 96
 - 5 (input-and-device-constraints): 28
 - 6 (apple-platform-common): 793
 - 7 (universal-design-principles): 23
@@ -16,14 +16,14 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 ## Remaining by normative level
 
 - AVOID: 115
-- MAY: 116
-- SHOULD: 715
+- MAY: 115
+- SHOULD: 710
 
 ## Next batch
 
-- HIG-INPUTS-REMOTES-0001 · SHOULD — Prefer using standard gestures to perform standard actions · Remotes > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- HIG-INPUTS-REMOTES-0002 · SHOULD — Be consistent with the tvOS focus experience · Remotes > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- HIG-INPUTS-REMOTES-0003 · SHOULD — Provide clear feedback that shows people what happens when they make gestures in your app · Remotes > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- HIG-INPUTS-REMOTES-0005 · SHOULD — Respond correctly to the Play/Pause button during media playback · Remotes > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- HIG-INPUTS-REMOTES-0006 · SHOULD — Define new gestures only when it makes sense in your app · Remotes > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
-- HIG-INPUTS-REMOTES-0004 · MAY — Consider using the position of a tap to aid with navigation or gameplay · Remotes > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-PATTERNS-DRAG-AND-DROP-0011 · SHOULD — Let people perform multiple simultaneous drag activities · Drag and drop > Platform considerations > iOS, iPadOS ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0013 · SHOULD — Let people drag selected content from an inactive window without first making the window active · Drag and drop > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0018 · SHOULD — As much as possible, let people select and drag content with a single motion · Drag and drop > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0012 · MAY — Consider letting people drag content from your app into the Finder · Drag and drop > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0014 · MAY — Consider displaying a badge during multi-item drag operations · Drag and drop > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0015 · MAY — Consider changing the pointer appearance to indicate what will happen when people drop content · Drag and drop > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))

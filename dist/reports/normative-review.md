@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 242
-- Retained MUST: 221
+- Reviewed rules: 250
+- Retained MUST: 229
 - Retained MUST_NOT: 21
-- Normative level changes: 20
+- Normative level changes: 28
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:07:20Z
+- Reviewed at: 2026-07-21T20:11:01Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -121,6 +121,14 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-KEYBOARDS-0007 — Corrected SHOULD to MUST from the explicit Make sure directive and preserved the missing-submenu-context condition. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-POINTING-DEVICES-0022 — Promoted to MUST after confirming the conditional explicit need to provide a nonstandard lift shape’s corner radius. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0023 — Recovered and retained MUST after confirming the explicit ensure requirement for identical modifier-key results across touch and pointer input. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-REMOTES-0005 — Corrected SHOULD to MUST because the Buttons section explicitly says to ensure the documented press mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0012 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0013 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0014 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0015 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0016 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0017 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0018 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-PATTERNS-FEEDBACK-0001 — Retained MUST after confirming the explicit Make sure accessibility requirement and its multimodal receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FILE-MANAGEMENT-0021 — Recovered and retained MUST after confirming the explicit Be sure requirement to reflect the current file-extension choice across save and open interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0024 — Recovered and retained MUST after confirming the conditional explicit need to keep the app name and both document-launcher buttons visible. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
@@ -338,6 +346,14 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-KEYBOARDS-0007 · MUST · retained_with_atomicity_or_scope_correction — Corrected SHOULD to MUST from the explicit Make sure directive and preserved the missing-submenu-context condition. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-POINTING-DEVICES-0022 · MUST · retained_with_atomicity_or_scope_correction — Promoted to MUST after confirming the conditional explicit need to provide a nonstandard lift shape’s corner radius. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit ensure requirement for identical modifier-key results across touch and pointer input. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-REMOTES-0005 · MUST · retained_with_atomicity_or_scope_correction — Corrected SHOULD to MUST because the Buttons section explicitly says to ensure the documented press mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0013 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0015 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0017 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-INPUTS-REMOTES-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-FEEDBACK-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure accessibility requirement and its multimodal receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FILE-MANAGEMENT-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Be sure requirement to reflect the current file-extension choice across save and open interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))

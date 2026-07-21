@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T20:07:20Z",
+  "reviewed_at": "2026-07-21T20:11:01Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2459,6 +2459,23 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/keyboards", "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218"}],
       "rule_ids": ["HIG-INPUTS-KEYBOARDS-0007", "HIG-INPUTS-KEYBOARDS-0010"],
       "review_note": "Completed the priority-4 visionOS section; corrected the self-contained shortcut-title rule from SHOULD to MUST and made the physical-keyboard overlay guidance concrete."
+    },
+    {
+      "id": "priority-4-remotes-context-2026-07-21",
+      "reviewed_at": "2026-07-21T20:11:01Z",
+      "review_method": "Rendered Apple HIG Remotes best practices, gesture and button behavior, complete behavior table, compatible-remotes guidance, and platform limitations were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/remotes", "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a"}],
+      "rule_ids": [
+        "HIG-INPUTS-REMOTES-0001", "HIG-INPUTS-REMOTES-0002", "HIG-INPUTS-REMOTES-0003", "HIG-INPUTS-REMOTES-0004",
+        "HIG-INPUTS-REMOTES-0005", "HIG-INPUTS-REMOTES-0006", "HIG-INPUTS-REMOTES-0007", "HIG-INPUTS-REMOTES-0008",
+        "HIG-INPUTS-REMOTES-0009", "HIG-INPUTS-REMOTES-0010", "HIG-INPUTS-REMOTES-0011", "HIG-INPUTS-REMOTES-0012",
+        "HIG-INPUTS-REMOTES-0013", "HIG-INPUTS-REMOTES-0014", "HIG-INPUTS-REMOTES-0015", "HIG-INPUTS-REMOTES-0016",
+        "HIG-INPUTS-REMOTES-0017", "HIG-INPUTS-REMOTES-0018", "HIG-INPUTS-REMOTES-0019", "HIG-INPUTS-REMOTES-0020",
+        "HIG-INPUTS-REMOTES-0021", "HIG-INPUTS-REMOTES-0022"
+      ],
+      "review_note": "Expanded Remotes from 6 to 22 rules, preserved every existing ID, recovered Back, press-versus-tap, EPG, channel, and button-table mappings, and recorded eight source-supported MUST decisions."
     }
   ],
   "rules": {
@@ -4959,6 +4976,128 @@
       "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": ["keyboard"]},
       "conditions": ["The system overlay provides typing completion and other controls while the physical keyboard is connected."],
       "review_note": "Repaired the generated wording and recorded the system-provided overlay behavior without raising it to MUST."
+    },
+    "HIG-INPUTS-REMOTES-0001": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "f529839c20138298b3abe868421b756df9bc27702c303b498964e114c671ec7b", "section_path": ["Remotes", "Best practices"]},
+      "title": "Prefer standard gestures for standard remote actions", "statement": {"en": "Prefer standard remote gestures for standard tvOS actions.", "ja": "tvOSのstandard actionにはstandard remote gestureを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]},
+      "conditions": ["Preserve familiar remote behavior in ordinary app use."], "exceptions": ["Custom gestures can be appropriate during active gameplay."],
+      "review_note": "Recorded the standard-behavior expectation and gameplay exception."
+    },
+    "HIG-INPUTS-REMOTES-0002": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "bfdfb0b7bc5bb670102883e989ff75914abadaf1990f124391f26512808173be", "section_path": ["Remotes", "Best practices"]},
+      "title": "Keep remote gestures consistent with tvOS focus", "statement": {"en": "Combine remote gestures with tvOS focus behavior in familiar ways.", "ja": "remote gestureをtvOS focus behaviorと馴染みのある方法で組み合わせる。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]},
+      "conditions": ["Move focus in the same direction as the gesture."], "review_note": "Recorded the direction-preserving focus example as the primary consistency check."
+    },
+    "HIG-INPUTS-REMOTES-0003": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "661fc37a62950f5be8c8192107929b97944976eb1971e7c51387805ac165fa25", "section_path": ["Remotes", "Best practices"]},
+      "title": "Provide clear remote-gesture feedback", "statement": {"en": "Provide clear feedback that shows the result of remote gestures.", "ja": "remote gestureの結果を示す明確なfeedbackを提供する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]},
+      "conditions": ["Make the available gesture and its result understandable before or as it occurs."], "review_note": "Repaired generated wording and retained both gesture discoverability and outcome feedback."
+    },
+    "HIG-INPUTS-REMOTES-0004": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "5b1f361d3c2752567c58af30a547265fcba9b84c96b0414d6f746f8a8f867ef7", "section_path": ["Remotes", "Best practices"]},
+      "title": "Consider positional remote taps", "statement": {"en": "Consider using remote tap position to aid navigation or gameplay.", "ja": "navigationまたはgameplayを助けるためremote tap位置の利用を検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]},
+      "conditions": ["Use positional taps only when the behavior is contextual, intuitive, and discoverable."], "review_note": "Retained MAY and removed the misleading touchscreen modality from physical-remote taps."
+    },
+    "HIG-INPUTS-REMOTES-0005": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "2e5aadfa288a31a82c961d2b1eeadd7faab8a34db5eaa1861021bb2ef5bf6ba2", "section_path": ["Remotes", "Best practices"]},
+      "title": "Map Play/Pause to media playback controls", "statement": {"en": "During media playback, make Play/Pause play, pause, or resume the content.", "ja": "media playback中はPlay/Pauseでcontentをplay、pause、resumeする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]},
+      "conditions": ["A tvOS app is playing music or video."], "review_note": "Combined the best-practice wording with the explicit Buttons-table contract."
+    },
+    "HIG-INPUTS-REMOTES-0006": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "3dc1f921e4c34d0f629c3cf51d79985a67f3542bfed2e83db23162ac1b4669d4", "section_path": ["Remotes", "Best practices"]},
+      "title": "Limit custom remote gestures to fitting contexts", "statement": {"en": "Define a custom remote gesture only when it fits the tvOS experience.", "ja": "tvOS experienceに合う場合だけcustom remote gestureを定義する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]},
+      "conditions": ["Gameplay can justify a discoverable custom gesture."], "exceptions": ["Prefer standard gestures in most nongame contexts."], "review_note": "Repaired generated wording and preserved the gameplay-qualified custom-gesture case."
+    },
+    "HIG-INPUTS-REMOTES-0007": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "f773459ee924c053e76741ae0e5faa77f5459290b551b3d00f58e0da343923b3", "section_path": ["Remotes", "Best practices"]},
+      "title": "Distinguish remote presses from taps", "statement": {"en": "Distinguish intentional remote presses from taps.", "ja": "意図的なremote pressとtapを区別する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]},
+      "conditions": ["Use presses for selection, confirmation, and intentional gameplay actions; reserve taps for navigation or additional information."], "review_note": "Recovered the omitted press-versus-tap distinction as one atomic rule."
+    },
+    "HIG-INPUTS-REMOTES-0008": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "f773459ee924c053e76741ae0e5faa77f5459290b551b3d00f58e0da343923b3", "section_path": ["Remotes", "Best practices"]},
+      "title": "Avoid responding to inadvertent remote taps", "statement": {"en": "Avoid responding to inadvertent remote taps.", "ja": "意図しないremote tapへの応答を避ける。"}, "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]},
+      "conditions": ["A tap can occur while a person rests a thumb, moves the remote, or hands it to someone."], "exceptions": ["In particular, avoid tap responses during live video playback."], "review_note": "Split inadvertent-tap avoidance from the press-versus-tap distinction."
+    },
+    "HIG-INPUTS-REMOTES-0009": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "4bcd5c02b266c524acd4b96967c07203e017c8fa9c34f6a6737ec29f93eca2bf", "section_path": ["Remotes", "Best practices"]},
+      "title": "Open the parent screen for Back by default", "statement": {"en": "In almost all cases, open the current screen's parent when a person presses Back.", "ja": "ほぼすべての場合、Backが押されたらcurrent screenのparentを開く。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]},
+      "conditions": ["Use the app hierarchy, not necessarily navigation history, to identify the parent."], "exceptions": ["At the top level, the parent is the Apple TV Home Screen; active gameplay uses the pause-menu flow."], "review_note": "Recovered the qualified Back-navigation default and both hierarchy exceptions."
+    },
+    "HIG-INPUTS-REMOTES-0010": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "4bcd5c02b266c524acd4b96967c07203e017c8fa9c34f6a6737ec29f93eca2bf", "section_path": ["Remotes", "Best practices"]},
+      "title": "Open a pause menu for Back during gameplay", "statement": {"en": "During active gameplay, open an in-game pause menu when a person presses Back.", "ja": "active gameplay中にBackが押されたらin-game pause menuを開く。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]},
+      "conditions": ["Repeated accidental Back presses could otherwise disrupt gameplay."], "exceptions": ["Provide another interaction in the pause menu for navigating to the main game menu."], "review_note": "Split the active-gameplay Back exception from ordinary parent navigation."
+    },
+    "HIG-INPUTS-REMOTES-0011": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "4bcd5c02b266c524acd4b96967c07203e017c8fa9c34f6a6737ec29f93eca2bf", "section_path": ["Remotes", "Best practices"]},
+      "title": "Close the pause menu and resume for Back", "statement": {"en": "When an in-game pause menu is open, make Back close it and resume gameplay.", "ja": "in-game pause menuが開いているときBackで閉じてgameplayを再開する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]},
+      "conditions": ["The tvOS game is paused in its in-game pause menu."], "review_note": "Separated the second-stage Back behavior from pause-menu opening."
+    },
+    "HIG-INPUTS-REMOTES-0012": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "0c315a21cd7f07c506e788c1d4aa62980f2d26413114ad1955405fa589c9b920", "section_path": ["Remotes", "Buttons"]},
+      "title": "Map app swipes to navigation and focus", "statement": {"en": "Make a remote touch-surface swipe navigate or change focus in a tvOS app.", "ja": "tvOS appではremote touch-surface swipeでnavigateまたはfocus変更する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]}, "conditions": ["The remote touch surface receives a swipe in a tvOS app."], "review_note": "Recovered the app-side swipe mapping from the required behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0013": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "0c315a21cd7f07c506e788c1d4aa62980f2d26413114ad1955405fa589c9b920", "section_path": ["Remotes", "Buttons"]},
+      "title": "Map game swipes to directional-pad behavior", "statement": {"en": "Make a remote touch-surface swipe perform directional-pad behavior in a tvOS game.", "ja": "tvOS gameではremote touch-surface swipeをdirectional-pad behaviorとして扱う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]}, "conditions": ["The remote touch surface receives a swipe in a tvOS game."], "review_note": "Recovered the game-side swipe mapping from the required behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0014": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "ab55b4d790098c18126243f5806498684a4f05f63e2c9afe85ff01c2747ef571", "section_path": ["Remotes", "Buttons"]},
+      "title": "Map app presses to activation or deeper navigation", "statement": {"en": "Make a remote touch-surface press activate a control or navigate deeper in a tvOS app.", "ja": "tvOS appではremote touch-surface pressでcontrolをactivateまたはより深くnavigateする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]}, "conditions": ["The remote touch surface receives a press in a tvOS app."], "review_note": "Recovered the app-side press mapping from the required behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0015": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "ab55b4d790098c18126243f5806498684a4f05f63e2c9afe85ff01c2747ef571", "section_path": ["Remotes", "Buttons"]},
+      "title": "Map game presses to primary-button behavior", "statement": {"en": "Make a remote touch-surface press perform primary-button behavior in a tvOS game.", "ja": "tvOS gameではremote touch-surface pressをprimary-button behaviorとして扱う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]}, "conditions": ["The remote touch surface receives a press in a tvOS game."], "review_note": "Recovered the game-side press mapping from the required behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0016": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "699575b940705f1d7d3ce66d6f48e9172b0b6dd3aec1edcc3625c334ac6df06b", "section_path": ["Remotes", "Buttons"]},
+      "title": "Map app Back presses to outward navigation", "statement": {"en": "Make Back return to the previous screen or exit to Home in a tvOS app.", "ja": "tvOS appではBackでprevious screenへ戻るかHomeへ出る。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]}, "conditions": ["A person presses Back in a tvOS app."], "review_note": "Recovered the app-side Back mapping from the required behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0017": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "699575b940705f1d7d3ce66d6f48e9172b0b6dd3aec1edcc3625c334ac6df06b", "section_path": ["Remotes", "Buttons"]},
+      "title": "Map game Back presses to pause or outward navigation", "statement": {"en": "Make Back pause or resume gameplay, navigate outward, or exit in a tvOS game.", "ja": "tvOS gameではBackでgameplayをpauseまたはresumeし、外側へnavigateまたはexitする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]}, "conditions": ["A person presses Back in a tvOS game."], "review_note": "Recovered the game-side Back alternatives from the required behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0018": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "0a00b5bd719cc63ca9201b00651e75c515166291b052014a6b067abd41e21347", "section_path": ["Remotes", "Buttons"]},
+      "title": "Map game Play/Pause presses to secondary behavior", "statement": {"en": "Make Play/Pause perform secondary-button behavior or skip an intro in a tvOS game.", "ja": "tvOS gameではPlay/Pauseをsecondary-button behaviorまたはintro skipに使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]}, "conditions": ["A person presses Play/Pause in a tvOS game."], "review_note": "Recovered the game-side Play/Pause mapping from the required behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0019": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "77b32b89f302945bae87fa449068c0e59080f0918fc5429f4e5af36d94a39d01", "section_path": ["Remotes", "Compatible remotes"]},
+      "title": "Open an EPG for guide or browse presses", "statement": {"en": "Open the app's EPG when a person presses a compatible remote's guide or browse button.", "ja": "compatible remoteのguideまたはbrowse buttonが押されたらappのEPGを開く。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]}, "conditions": ["The live-viewing app provides an EPG."], "exceptions": ["If the app has no EPG, the system routes the press to the device's default guide app."], "review_note": "Activated the conditional EPG-opening behavior and preserved the system-routing fallback."
+    },
+    "HIG-INPUTS-REMOTES-0020": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "77b32b89f302945bae87fa449068c0e59080f0918fc5429f4e5af36d94a39d01", "section_path": ["Remotes", "Compatible remotes"]},
+      "title": "Navigate an EPG with page buttons", "statement": {"en": "Use a compatible remote's page up and page down buttons to navigate an open EPG.", "ja": "open EPGをcompatible remoteのpage upとpage down buttonでnavigateする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]}, "conditions": ["A person is viewing the app's EPG."], "exceptions": ["Siri Remote touch-surface upper and lower taps can also browse the EPG."], "review_note": "Split EPG paging from EPG opening and retained the touch-surface alternative."
+    },
+    "HIG-INPUTS-REMOTES-0021": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "77b32b89f302945bae87fa449068c0e59080f0918fc5429f4e5af36d94a39d01", "section_path": ["Remotes", "Compatible remotes"]},
+      "title": "Avoid repurposing EPG-browsing buttons", "statement": {"en": "Avoid assigning other actions to EPG-browsing buttons while the EPG is open.", "ja": "EPGが開いている間はEPG-browsing buttonへ別のactionを割り当てない。"}, "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]}, "conditions": ["A person is browsing the app's EPG."], "review_note": "Split the direct EPG-button repurposing avoidance from the positive mappings."
+    },
+    "HIG-INPUTS-REMOTES-0022": {
+      "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "2272ddeddeab99c4d7af0e573842f679c2eec6cc2a9bf4b010976bcdb52aeeec", "section_path": ["Remotes", "Compatible remotes"]},
+      "title": "Change channels with page buttons during playback", "statement": {"en": "During content playback, make a compatible remote's page up and page down buttons change channels.", "ja": "content playback中はcompatible remoteのpage upとpage down buttonでchannelを変更する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]}, "conditions": ["Channel-based content is playing rather than an EPG being browsed."], "review_note": "Activated the playback-specific channel behavior and separated it from EPG paging."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T20:07:20Z",
+  "reviewed_at": "2026-07-21T20:11:01Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,59 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 242,
+  "reviewed_rule_count": 250,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-INPUTS-REMOTES-0005": {
+      "title": "Map Play/Pause to media playback controls",
+      "statement": {"en": "During media playback, make Play/Pause play, pause, or resume the content.", "ja": "media playback中はPlay/Pauseでcontentをplay、pause、resumeする。"},
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["A tvOS app is playing music or video."],
+      "review_note": "Corrected SHOULD to MUST because the Buttons section explicitly says to ensure the documented press mappings."
+    },
+    "HIG-INPUTS-REMOTES-0012": {
+      "normative_level": "MUST", "confidence": "high", "review_required": false, "polarity": "require", "severity": "error",
+      "conditions": ["The remote touch surface receives a swipe in a tvOS app."],
+      "review_note": "Recovered MUST from the explicit Ensure directive governing the remote-button behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0013": {
+      "normative_level": "MUST", "confidence": "high", "review_required": false, "polarity": "require", "severity": "error",
+      "conditions": ["The remote touch surface receives a swipe in a tvOS game."],
+      "review_note": "Recovered MUST from the explicit Ensure directive governing the remote-button behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0014": {
+      "normative_level": "MUST", "confidence": "high", "review_required": false, "polarity": "require", "severity": "error",
+      "conditions": ["The remote touch surface receives a press in a tvOS app."],
+      "review_note": "Recovered MUST from the explicit Ensure directive governing the remote-button behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0015": {
+      "normative_level": "MUST", "confidence": "high", "review_required": false, "polarity": "require", "severity": "error",
+      "conditions": ["The remote touch surface receives a press in a tvOS game."],
+      "review_note": "Recovered MUST from the explicit Ensure directive governing the remote-button behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0016": {
+      "normative_level": "MUST", "confidence": "high", "review_required": false, "polarity": "require", "severity": "error",
+      "conditions": ["A person presses Back in a tvOS app."],
+      "review_note": "Recovered MUST from the explicit Ensure directive governing the remote-button behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0017": {
+      "normative_level": "MUST", "confidence": "high", "review_required": false, "polarity": "require", "severity": "error",
+      "conditions": ["A person presses Back in a tvOS game."],
+      "review_note": "Recovered MUST from the explicit Ensure directive governing the remote-button behavior table."
+    },
+    "HIG-INPUTS-REMOTES-0018": {
+      "normative_level": "MUST", "confidence": "high", "review_required": false, "polarity": "require", "severity": "error",
+      "conditions": ["A person presses Play/Pause in a tvOS game."],
+      "review_note": "Recovered MUST from the explicit Ensure directive governing the remote-button behavior table."
+    },
     "HIG-INPUTS-KEYBOARDS-0007": {
       "title": "Make visionOS shortcut titles self-contained",
       "statement": {"en": "Make every visionOS shortcut title descriptive enough to convey its action without submenu context.", "ja": "各visionOS shortcut titleをsubmenu contextなしでactionを伝えられる十分にdescriptiveな内容にする。"},
