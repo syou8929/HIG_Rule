@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:40:53Z",
+  "reviewed_at": "2026-07-21T19:44:26Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2376,6 +2376,22 @@
         "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0005"
       ],
       "review_note": "Completed the tvOS-specific Best practices section; preserved the existing ID, recovered focus, cinematic, and multiuser guidance, split automatic profile switching from sign-in, removed a false voice modality, and introduced no unsupported MUST rules."
+    },
+    {
+      "id": "priority-4-designing-for-watchos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:44:26Z",
+      "review_method": "Rendered Apple HIG Designing for watchOS device characteristics, system-feature context, complete Best practices prose, and change-log context were reviewed; two repeated live renders matched the recorded main-content hash. The heading-only Always On false positive remains deprecated and excluded.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos", "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102"}],
+      "rule_ids": [
+        "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0002", "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004", "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0005",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0006", "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0007",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0008", "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0009",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0010", "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0011"
+      ],
+      "review_note": "Completed the watchOS-specific Best practices section; preserved all seven active IDs, recovered three atomic rules, prioritized on-device personalization for privacy review, retained the false heading rule as deprecated, and introduced no unsupported MUST rules."
     }
   ],
   "rules": {
@@ -4527,6 +4543,78 @@
       "statement": {"en": "Switch tvOS profiles automatically when people change the current viewer.", "ja": "current viewerが変わったときtvOS profileを自動で切り替える。"},
       "conditions": ["Apply automatic switching within a multiuser experience."],
       "review_note": "Split the automatic profile-switching action from the source sentence's separate sign-in guidance."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0002": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "a4f6c6f7b3c79246b28b7c3e7105f38ed79fe7b14fe4c1748d4716970c2935b5", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Keep watchOS interactions quick and glanceable",
+      "statement": {"en": "Support quick, glanceable, single-screen watchOS interactions for critical information and targeted actions.", "ja": "critical informationとtargeted actionのためquickでglanceableなsingle-screen watchOS interactionをsupportする。"},
+      "conditions": ["Help people complete targeted actions with one or two gestures."],
+      "review_note": "Repaired the truncated extraction and preserved information density, screen scope, and gesture count."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "edbe29391602f40228a8ef5684ec9b580cd7d8956c254696ee2dbb6e4bcbed81", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Minimize watchOS navigation hierarchy depth",
+      "statement": {"en": "Minimize hierarchy depth in watchOS app navigation.", "ja": "watchOS app navigationのhierarchy depthを最小化する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Keep navigation shallow for streamlined interactions."],
+      "review_note": "Separated hierarchy depth from the source sentence's Digital Crown guidance and removed its modality from this rule."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "6cfc2e917951a0b8a14d92a712ee93fcc6e232580c6c466fc2cf1e695573d6f5", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Show relevant data in watchOS complications",
+      "statement": {"en": "Use complications for relevant, potentially dynamic watch-face data and graphics.", "ja": "relevantでpotentially dynamicなwatch-face dataとgraphicsにcomplicationを使う。"},
+      "conditions": ["Make the content viewable on every wrist raise."],
+      "review_note": "Repaired the truncated extraction and separated display value from direct app opening."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0005": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "3451db8969a68e8a84b22d152046801df1e1ada006c1b9d8b08d72bab30d9693", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Use watchOS notifications for timely information and actions",
+      "statement": {"en": "Use watchOS notifications for timely, high-value information and important actions without opening the app.", "ja": "appを開かずtimelyでhigh-valueな情報とimportant actionを提供するためwatchOS notificationを使う。"},
+      "conditions": ["Keep notification information timely and high value."],
+      "review_note": "Replaced the generic paraphrase and preserved both information delivery and in-notification action."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0006": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "68bb4cde1ed41285bef74584768c550d98f0453652716eed3bf258b7be48e889", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Use watchOS backgrounds for supporting information",
+      "statement": {"en": "Use watchOS background content such as color to convey useful supporting information.", "ja": "usefulなsupporting informationを伝えるためcolorなどのwatchOS background contentを使う。"},
+      "conditions": ["Keep background information supportive rather than primary."],
+      "review_note": "Repaired the truncated extraction and separated background information from material hierarchy."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0007": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "bf8bb097fd95a8b7aacf6a4f10ba197b95ce5f77329487f85daf75f882a3fd03", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Make the watchOS app function independently",
+      "statement": {"en": "Design the watchOS app to function independently and complement its notifications and complications.", "ja": "watchOS appをindependentに機能させ、notificationとcomplicationを補完するよう設計する。"},
+      "conditions": ["Provide additional details and functionality beyond notifications and complications."],
+      "review_note": "Replaced the generic paraphrase and preserved the app's independent and complementary roles."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0008": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "3b19e9ca4d172cc688261f4c93382fed714316e82e2d35e5266d55f66e688473", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Personalize watchOS with relevant on-device data",
+      "statement": {"en": "Personalize watchOS with on-device data that anticipates needs and provides actionable near-term content.", "ja": "needを予測しactionableなnear-term contentを提供するon-device dataでwatchOSをpersonalizeする。"},
+      "priority_rank": 3,
+      "conditions": ["Keep personalized content relevant now or very soon."],
+      "review_note": "Repaired the truncated extraction and raised on-device-data personalization to privacy and explicit-intent priority."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0009": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "edbe29391602f40228a8ef5684ec9b580cd7d8956c254696ee2dbb6e4bcbed81", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Use the Digital Crown for vertical navigation",
+      "statement": {"en": "Use the Digital Crown for vertical scrolling or switching between watchOS screens.", "ja": "vertical scrollまたはwatchOS screen間の切替にDigital Crownを使う。"},
+      "conditions": ["Apply the Digital Crown to vertical navigation."],
+      "review_note": "Split Digital Crown navigation from the source sentence's separate hierarchy-depth guidance."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0010": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "6cfc2e917951a0b8a14d92a712ee93fcc6e232580c6c466fc2cf1e695573d6f5", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Open the app from its watchOS complication",
+      "statement": {"en": "Use complication taps to open the related watchOS app directly.", "ja": "complicationのtapで関連watchOS appを直接開く。"},
+      "conditions": ["Connect each complication to its related app destination."],
+      "review_note": "Split direct app opening from the source sentence's separate complication-display guidance."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0011": {
+      "source": {"source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102", "source_sentence_hash": "68bb4cde1ed41285bef74584768c550d98f0453652716eed3bf258b7be48e889", "section_path": ["Designing for watchOS", "Best practices"]},
+      "title": "Use watchOS materials for hierarchy and place",
+      "statement": {"en": "Use watchOS materials to communicate hierarchy and a sense of place.", "ja": "hierarchyとsense of placeを伝えるためwatchOS materialを使う。"},
+      "conditions": ["Use material differences to clarify hierarchy and location."],
+      "review_note": "Split material hierarchy from the source sentence's separate background-information guidance."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

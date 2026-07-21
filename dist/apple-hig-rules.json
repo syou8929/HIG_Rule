@@ -99060,17 +99060,17 @@
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0002",
-    "title": "Support quick, glanceable, single-screen interactions that deliver critical information succinctly and help…",
+    "title": "Keep watchOS interactions quick and glanceable",
     "category": "getting-started",
     "topic": "designing-for-watchos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Ensure the experience accommodates quick, glanceable, single-screen interactions that deliver critical information succinctly and help people perform targeted actions with a simple.",
-      "ja": "quick, glanceable, single-screen interactions that deliver critical information succinctly and help people perform targeted actions with a simpleを利用できる設計にする。"
+      "en": "Support quick, glanceable, single-screen watchOS interactions for critical information and targeted actions.",
+      "ja": "critical informationとtargeted actionのためquickでglanceableなsingle-screen watchOS interactionをsupportする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -99082,10 +99082,12 @@
         "apple-watch"
       ],
       "components": [],
-      "modalities": []
+      "modalities": [
+        "gesture"
+      ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Help people complete targeted actions with one or two gestures."
     ],
     "exceptions": [],
     "rationale": {
@@ -99095,7 +99097,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates quick, glanceable, single-screen interactions that deliver critical information succinctly and help people perform targeted actions with a simple.” in the documented Designing for watchOS context?"
+        "Does the design satisfy “Support quick, glanceable, single-screen watchOS interactions for critical information and targeted actions.” in the documented Designing for watchOS context?"
       ]
     },
     "testability": "manual",
@@ -99112,10 +99114,80 @@
         "Designing for watchOS",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:48.076Z",
+      "retrieved_at": "2026-07-21T19:44:26Z",
       "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
       "source_sentence_hash": "a4f6c6f7b3c79246b28b7c3e7105f38ed79fe7b14fe4c1748d4716970c2935b5",
-      "evidence_paraphrase": "Ensure the experience accommodates quick, glanceable, single-screen interactions that deliver critical information succinctly and help people perform targeted actions with a simple."
+      "evidence_paraphrase": "Support quick, glanceable, single-screen watchOS interactions for critical information and targeted actions."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-watchos",
+      "best-practices",
+      "gesture"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Support quick, glanceable, single-screen watchOS interactions for critical information and targeted actions.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003",
+    "title": "Minimize watchOS navigation hierarchy depth",
+    "category": "getting-started",
+    "topic": "designing-for-watchos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Minimize hierarchy depth in watchOS app navigation.",
+      "ja": "watchOS app navigationのhierarchy depthを最小化する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep navigation shallow for streamlined interactions."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Minimize hierarchy depth in watchOS app navigation.” in the documented Designing for watchOS context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
+      "page_title": "Designing for watchOS",
+      "section_path": [
+        "Designing for watchOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:44:26Z",
+      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
+      "source_sentence_hash": "edbe29391602f40228a8ef5684ec9b580cd7d8956c254696ee2dbb6e4bcbed81",
+      "evidence_paraphrase": "Minimize hierarchy depth in watchOS app navigation."
     },
     "tags": [
       "getting-started",
@@ -99124,22 +99196,367 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates quick, glanceable, single-screen interactions that deliver critical information succinctly and help people perform targeted actions with a simple.",
+    "apple_native_rule": "Minimize hierarchy depth in watchOS app navigation.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003",
-    "title": "Minimize the depth of hierarchy in your app’s navigation, and use the Digital Crown to provide vertical nav…",
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004",
+    "title": "Show relevant data in watchOS complications",
     "category": "getting-started",
     "topic": "designing-for-watchos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Designing for watchOS guidance to minimize the depth of hierarchy in your app’s navigation, and use the Digital Crown to provide vertical navigation for.",
-      "ja": "「Designing for watchOS」において「Minimize the depth of hierarchy in your app’s navigation, and use the Digital Crown to provide vertical navigation for」の指針を適用する。"
+      "en": "Use complications for relevant, potentially dynamic watch-face data and graphics.",
+      "ja": "relevantでpotentially dynamicなwatch-face dataとgraphicsにcomplicationを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Make the content viewable on every wrist raise."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use complications for relevant, potentially dynamic watch-face data and graphics.” in the documented Designing for watchOS context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
+      "page_title": "Designing for watchOS",
+      "section_path": [
+        "Designing for watchOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:44:26Z",
+      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
+      "source_sentence_hash": "6cfc2e917951a0b8a14d92a712ee93fcc6e232580c6c466fc2cf1e695573d6f5",
+      "evidence_paraphrase": "Use complications for relevant, potentially dynamic watch-face data and graphics."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-watchos",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use complications for relevant, potentially dynamic watch-face data and graphics.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0005",
+    "title": "Use watchOS notifications for timely information and actions",
+    "category": "getting-started",
+    "topic": "designing-for-watchos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use watchOS notifications for timely, high-value information and important actions without opening the app.",
+      "ja": "appを開かずtimelyでhigh-valueな情報とimportant actionを提供するためwatchOS notificationを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep notification information timely and high value."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use watchOS notifications for timely, high-value information and important actions without opening the app.” in the documented Designing for watchOS context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
+      "page_title": "Designing for watchOS",
+      "section_path": [
+        "Designing for watchOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:44:26Z",
+      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
+      "source_sentence_hash": "3451db8969a68e8a84b22d152046801df1e1ada006c1b9d8b08d72bab30d9693",
+      "evidence_paraphrase": "Use watchOS notifications for timely, high-value information and important actions without opening the app."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-watchos",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use watchOS notifications for timely, high-value information and important actions without opening the app.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0006",
+    "title": "Use watchOS backgrounds for supporting information",
+    "category": "getting-started",
+    "topic": "designing-for-watchos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use watchOS background content such as color to convey useful supporting information.",
+      "ja": "usefulなsupporting informationを伝えるためcolorなどのwatchOS background contentを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep background information supportive rather than primary."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use watchOS background content such as color to convey useful supporting information.” in the documented Designing for watchOS context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
+      "page_title": "Designing for watchOS",
+      "section_path": [
+        "Designing for watchOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:44:26Z",
+      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
+      "source_sentence_hash": "68bb4cde1ed41285bef74584768c550d98f0453652716eed3bf258b7be48e889",
+      "evidence_paraphrase": "Use watchOS background content such as color to convey useful supporting information."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-watchos",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use watchOS background content such as color to convey useful supporting information.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0007",
+    "title": "Make the watchOS app function independently",
+    "category": "getting-started",
+    "topic": "designing-for-watchos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Design the watchOS app to function independently and complement its notifications and complications.",
+      "ja": "watchOS appをindependentに機能させ、notificationとcomplicationを補完するよう設計する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Provide additional details and functionality beyond notifications and complications."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Design the watchOS app to function independently and complement its notifications and complications.” in the documented Designing for watchOS context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
+      "page_title": "Designing for watchOS",
+      "section_path": [
+        "Designing for watchOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:44:26Z",
+      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
+      "source_sentence_hash": "bf8bb097fd95a8b7aacf6a4f10ba197b95ce5f77329487f85daf75f882a3fd03",
+      "evidence_paraphrase": "Design the watchOS app to function independently and complement its notifications and complications."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-watchos",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Design the watchOS app to function independently and complement its notifications and complications.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0008",
+    "title": "Personalize watchOS with relevant on-device data",
+    "category": "getting-started",
+    "topic": "designing-for-watchos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Personalize watchOS with on-device data that anticipates needs and provides actionable near-term content.",
+      "ja": "needを予測しactionableなnear-term contentを提供するon-device dataでwatchOSをpersonalizeする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep personalized content relevant now or very soon."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Personalize watchOS with on-device data that anticipates needs and provides actionable near-term content.” in the documented Designing for watchOS context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
+      "page_title": "Designing for watchOS",
+      "section_path": [
+        "Designing for watchOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:44:26Z",
+      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
+      "source_sentence_hash": "3b19e9ca4d172cc688261f4c93382fed714316e82e2d35e5266d55f66e688473",
+      "evidence_paraphrase": "Personalize watchOS with on-device data that anticipates needs and provides actionable near-term content."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-watchos",
+      "best-practices"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "Personalize watchOS with on-device data that anticipates needs and provides actionable near-term content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0009",
+    "title": "Use the Digital Crown for vertical navigation",
+    "category": "getting-started",
+    "topic": "designing-for-watchos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use the Digital Crown for vertical scrolling or switching between watchOS screens.",
+      "ja": "vertical scrollまたはwatchOS screen間の切替にDigital Crownを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -99156,7 +99573,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Apply the Digital Crown to vertical navigation."
     ],
     "exceptions": [],
     "rationale": {
@@ -99166,7 +99583,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Designing for watchOS guidance to minimize the depth of hierarchy in your app’s navigation, and use the Digital Crown to provide vertical navigation for.” in the documented Designing for watchOS context?"
+        "Does the design satisfy “Use the Digital Crown for vertical scrolling or switching between watchOS screens.” in the documented Designing for watchOS context?"
       ]
     },
     "testability": "manual",
@@ -99183,10 +99600,10 @@
         "Designing for watchOS",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:48.076Z",
+      "retrieved_at": "2026-07-21T19:44:26Z",
       "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
       "source_sentence_hash": "edbe29391602f40228a8ef5684ec9b580cd7d8956c254696ee2dbb6e4bcbed81",
-      "evidence_paraphrase": "Apply the documented Designing for watchOS guidance to minimize the depth of hierarchy in your app’s navigation, and use the Digital Crown to provide vertical navigation for."
+      "evidence_paraphrase": "Use the Digital Crown for vertical scrolling or switching between watchOS screens."
     },
     "tags": [
       "getting-started",
@@ -99196,22 +99613,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Designing for watchOS guidance to minimize the depth of hierarchy in your app’s navigation, and use the Digital Crown to provide vertical navigation for.",
+    "apple_native_rule": "Use the Digital Crown for vertical scrolling or switching between watchOS screens.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004",
-    "title": "Use complications to provide relevant, potentially dynamic data and graphics right on the watch face where …",
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0010",
+    "title": "Open the app from its watchOS complication",
     "category": "getting-started",
     "topic": "designing-for-watchos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply complications to provide relevant, potentially dynamic data and graphics right on the watch face where people can view in the documented context.",
-      "ja": "該当する状況ではcomplications to provide relevant, potentially dynamic data and graphics right on the watch face where people can viewを採用する。"
+      "en": "Use complication taps to open the related watchOS app directly.",
+      "ja": "complicationのtapで関連watchOS appを直接開く。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -99223,10 +99640,12 @@
         "apple-watch"
       ],
       "components": [],
-      "modalities": []
+      "modalities": [
+        "touch"
+      ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Connect each complication to its related app destination."
     ],
     "exceptions": [],
     "rationale": {
@@ -99236,7 +99655,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply complications to provide relevant, potentially dynamic data and graphics right on the watch face where people can view in the documented context.” in the documented Designing for watchOS context?"
+        "Does the design satisfy “Use complication taps to open the related watchOS app directly.” in the documented Designing for watchOS context?"
       ]
     },
     "testability": "manual",
@@ -99253,34 +99672,35 @@
         "Designing for watchOS",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:48.076Z",
+      "retrieved_at": "2026-07-21T19:44:26Z",
       "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
       "source_sentence_hash": "6cfc2e917951a0b8a14d92a712ee93fcc6e232580c6c466fc2cf1e695573d6f5",
-      "evidence_paraphrase": "Choose or apply complications to provide relevant, potentially dynamic data and graphics right on the watch face where people can view in the documented context."
+      "evidence_paraphrase": "Use complication taps to open the related watchOS app directly."
     },
     "tags": [
       "getting-started",
       "designing-for-watchos",
-      "best-practices"
+      "best-practices",
+      "touch"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply complications to provide relevant, potentially dynamic data and graphics right on the watch face where people can view in the documented context.",
+    "apple_native_rule": "Use complication taps to open the related watchOS app directly.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0005",
-    "title": "Use notifications to deliver timely, high-value information and let people perform important actions withou…",
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0011",
+    "title": "Use watchOS materials for hierarchy and place",
     "category": "getting-started",
     "topic": "designing-for-watchos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply notifications to deliver timely, high-value information and let people perform important actions without opening your app in the documented context.",
-      "ja": "該当する状況ではnotifications to deliver timely, high-value information and let people perform important actions without opening your appを採用する。"
+      "en": "Use watchOS materials to communicate hierarchy and a sense of place.",
+      "ja": "hierarchyとsense of placeを伝えるためwatchOS materialを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -99295,7 +99715,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use material differences to clarify hierarchy and location."
     ],
     "exceptions": [],
     "rationale": {
@@ -99305,7 +99725,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply notifications to deliver timely, high-value information and let people perform important actions without opening your app in the documented context.” in the documented Designing for watchOS context?"
+        "Does the design satisfy “Use watchOS materials to communicate hierarchy and a sense of place.” in the documented Designing for watchOS context?"
       ]
     },
     "testability": "manual",
@@ -99322,79 +99742,10 @@
         "Designing for watchOS",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:48.076Z",
-      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
-      "source_sentence_hash": "3451db8969a68e8a84b22d152046801df1e1ada006c1b9d8b08d72bab30d9693",
-      "evidence_paraphrase": "Choose or apply notifications to deliver timely, high-value information and let people perform important actions without opening your app in the documented context."
-    },
-    "tags": [
-      "getting-started",
-      "designing-for-watchos",
-      "best-practices"
-    ],
-    "priority_rank": 4,
-    "status": "active",
-    "apple_native_rule": "Choose or apply notifications to deliver timely, high-value information and let people perform important actions without opening your app in the documented context.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
-  },
-  {
-    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0006",
-    "title": "Use background content such as color to convey useful supporting information, and use materials to illustra…",
-    "category": "getting-started",
-    "topic": "designing-for-watchos",
-    "subtopic": "best-practices",
-    "statement": {
-      "en": "Choose or apply background content such as color to convey useful supporting information, and use materials to illustrate hierarchy and a in the documented context.",
-      "ja": "該当する状況ではbackground content such as color to convey useful supporting information, and use materials to illustrate hierarchy and aを採用する。"
-    },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
-    "scope": {
-      "portability": "platform-specific",
-      "platforms": [
-        "watchos"
-      ],
-      "devices": [
-        "apple-watch"
-      ],
-      "components": [],
-      "modalities": []
-    },
-    "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
-    ],
-    "exceptions": [],
-    "rationale": {
-      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
-      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
-    },
-    "checks": {
-      "automated": [],
-      "manual": [
-        "Does the design satisfy “Choose or apply background content such as color to convey useful supporting information, and use materials to illustrate hierarchy and a in the documented context.” in the documented Designing for watchOS context?"
-      ]
-    },
-    "testability": "manual",
-    "anti_patterns": [
-      "Ignoring this guidance in a context where the source section applies."
-    ],
-    "positive_examples": [
-      "A design review records how the implementation satisfies this rule and any source-scoped exception."
-    ],
-    "source": {
-      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
-      "page_title": "Designing for watchOS",
-      "section_path": [
-        "Designing for watchOS",
-        "Best practices"
-      ],
-      "retrieved_at": "2026-07-21T11:14:48.076Z",
+      "retrieved_at": "2026-07-21T19:44:26Z",
       "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
       "source_sentence_hash": "68bb4cde1ed41285bef74584768c550d98f0453652716eed3bf258b7be48e889",
-      "evidence_paraphrase": "Choose or apply background content such as color to convey useful supporting information, and use materials to illustrate hierarchy and a in the documented context."
+      "evidence_paraphrase": "Use watchOS materials to communicate hierarchy and a sense of place."
     },
     "tags": [
       "getting-started",
@@ -99403,145 +99754,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply background content such as color to convey useful supporting information, and use materials to illustrate hierarchy and a in the documented context.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
-  },
-  {
-    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0007",
-    "title": "Design your app to function independently, complementing your notifications and complications by providing …",
-    "category": "getting-started",
-    "topic": "designing-for-watchos",
-    "subtopic": "best-practices",
-    "statement": {
-      "en": "Apply the documented Designing for watchOS guidance to design your app to function independently, complementing your notifications and complications by providing additional details and functionality.",
-      "ja": "「Designing for watchOS」において「Design your app to function independently, complementing your notifications and complications by providing additional details and functionality」の指針を適用する。"
-    },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
-    "scope": {
-      "portability": "platform-specific",
-      "platforms": [
-        "watchos"
-      ],
-      "devices": [
-        "apple-watch"
-      ],
-      "components": [],
-      "modalities": []
-    },
-    "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
-    ],
-    "exceptions": [],
-    "rationale": {
-      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
-      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
-    },
-    "checks": {
-      "automated": [],
-      "manual": [
-        "Does the design satisfy “Apply the documented Designing for watchOS guidance to design your app to function independently, complementing your notifications and complications by providing additional details and functionality.” in the documented Designing for watchOS context?"
-      ]
-    },
-    "testability": "manual",
-    "anti_patterns": [
-      "Ignoring this guidance in a context where the source section applies."
-    ],
-    "positive_examples": [
-      "A design review records how the implementation satisfies this rule and any source-scoped exception."
-    ],
-    "source": {
-      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
-      "page_title": "Designing for watchOS",
-      "section_path": [
-        "Designing for watchOS",
-        "Best practices"
-      ],
-      "retrieved_at": "2026-07-21T11:14:48.076Z",
-      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
-      "source_sentence_hash": "bf8bb097fd95a8b7aacf6a4f10ba197b95ce5f77329487f85daf75f882a3fd03",
-      "evidence_paraphrase": "Apply the documented Designing for watchOS guidance to design your app to function independently, complementing your notifications and complications by providing additional details and functionality."
-    },
-    "tags": [
-      "getting-started",
-      "designing-for-watchos",
-      "best-practices"
-    ],
-    "priority_rank": 4,
-    "status": "active",
-    "apple_native_rule": "Apply the documented Designing for watchOS guidance to design your app to function independently, complementing your notifications and complications by providing additional details and functionality.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
-  },
-  {
-    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0008",
-    "title": "Personalize the experience by proactively anticipating people’s needs and using on-device data to provide a…",
-    "category": "getting-started",
-    "topic": "designing-for-watchos",
-    "subtopic": "best-practices",
-    "statement": {
-      "en": "Personalize the experience by proactively anticipating people’s needs and using on-device data to provide actionable content that’s relevant in in the documented context.",
-      "ja": "該当する状況でthe experience by proactively anticipating people’s needs and using on-device data to provide actionable content that’s relevant inをpersonalizeする。"
-    },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
-    "scope": {
-      "portability": "platform-specific",
-      "platforms": [
-        "watchos"
-      ],
-      "devices": [
-        "apple-watch"
-      ],
-      "components": [],
-      "modalities": []
-    },
-    "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
-    ],
-    "exceptions": [],
-    "rationale": {
-      "en": "Applying this guidance supports a consistent and usable Designing for watchOS experience on the scoped Apple platforms.",
-      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for watchOSの一貫性と使いやすさを支えます。"
-    },
-    "checks": {
-      "automated": [],
-      "manual": [
-        "Does the design satisfy “Personalize the experience by proactively anticipating people’s needs and using on-device data to provide actionable content that’s relevant in in the documented context.” in the documented Designing for watchOS context?"
-      ]
-    },
-    "testability": "manual",
-    "anti_patterns": [
-      "Ignoring this guidance in a context where the source section applies."
-    ],
-    "positive_examples": [
-      "A design review records how the implementation satisfies this rule and any source-scoped exception."
-    ],
-    "source": {
-      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos",
-      "page_title": "Designing for watchOS",
-      "section_path": [
-        "Designing for watchOS",
-        "Best practices"
-      ],
-      "retrieved_at": "2026-07-21T11:14:48.076Z",
-      "source_hash": "d57545d2e959475d828e0498cfb3bcced1cf90dadbc5252ce0f1078806592102",
-      "source_sentence_hash": "3b19e9ca4d172cc688261f4c93382fed714316e82e2d35e5266d55f66e688473",
-      "evidence_paraphrase": "Personalize the experience by proactively anticipating people’s needs and using on-device data to provide actionable content that’s relevant in in the documented context."
-    },
-    "tags": [
-      "getting-started",
-      "designing-for-watchos",
-      "best-practices"
-    ],
-    "priority_rank": 4,
-    "status": "active",
-    "apple_native_rule": "Personalize the experience by proactively anticipating people’s needs and using on-device data to provide actionable content that’s relevant in in the documented context.",
+    "apple_native_rule": "Use watchOS materials to communicate hierarchy and a sense of place.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

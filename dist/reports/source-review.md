@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1361
-- Reviewed batches: 88
+- Reviewed rules: 1371
+- Reviewed batches: 89
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:40:53Z
+- Reviewed at: 2026-07-21T19:44:26Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -918,6 +918,16 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0013 · high — Recovered the omitted platform-feature lead and preserved every named feature. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0014 · high — Split the avoidance clause from the mixed field-of-view rule to preserve atomic strength. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0015 · high — Recovered the conditional Make sure requirement and preserved both distance and duration constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0002 · high — Repaired the truncated extraction and preserved information density, screen scope, and gesture count. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003 · high — Separated hierarchy depth from the source sentence's Digital Crown guidance and removed its modality from this rule. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004 · high — Repaired the truncated extraction and separated display value from direct app opening. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0005 · high — Replaced the generic paraphrase and preserved both information delivery and in-notification action. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0006 · high — Repaired the truncated extraction and separated background information from material hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0007 · high — Replaced the generic paraphrase and preserved the app's independent and complementary roles. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0008 · high — Repaired the truncated extraction and raised on-device-data personalization to privacy and explicit-intent priority. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0009 · high — Split Digital Crown navigation from the source sentence's separate hierarchy-depth guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0010 · high — Split direct app opening from the source sentence's separate complication-display guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0011 · high — Split material hierarchy from the source sentence's separate background-information guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0001 · high — Reviewed iPadOS Apple Pencil and Scribble behavior, recovered thirteen omitted atomic rules, and preserved conditional and optional strength. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0002 · high — Recorded control activation and the Scribble input exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0003 · high — Repaired the statement while the pre-mode avoidance is represented separately. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:42:36.069Z. 2412 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:46:33.514Z. 2415 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -111,13 +111,16 @@ Generated 2026-07-21T19:42:36.069Z. 2412 active rules; 3 deprecated rules.
 ### designing-for-watchos
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0001 · MUST · medium** — On in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0002 · SHOULD · low** — Ensure the experience accommodates quick, glanceable, single-screen interactions that deliver critical information succinctly and help people perform targeted actions with a simple. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003 · SHOULD · low** — Apply the documented Designing for watchOS guidance to minimize the depth of hierarchy in your app’s navigation, and use the Digital Crown to provide vertical navigation for. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004 · SHOULD · low** — Choose or apply complications to provide relevant, potentially dynamic data and graphics right on the watch face where people can view in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0005 · SHOULD · low** — Choose or apply notifications to deliver timely, high-value information and let people perform important actions without opening your app in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0006 · SHOULD · low** — Choose or apply background content such as color to convey useful supporting information, and use materials to illustrate hierarchy and a in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0007 · SHOULD · low** — Apply the documented Designing for watchOS guidance to design your app to function independently, complementing your notifications and complications by providing additional details and functionality. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0008 · SHOULD · low** — Personalize the experience by proactively anticipating people’s needs and using on-device data to provide actionable content that’s relevant in in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0002 · SHOULD · high** — Support quick, glanceable, single-screen watchOS interactions for critical information and targeted actions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003 · SHOULD · high** — Minimize hierarchy depth in watchOS app navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004 · SHOULD · high** — Use complications for relevant, potentially dynamic watch-face data and graphics. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0005 · SHOULD · high** — Use watchOS notifications for timely, high-value information and important actions without opening the app. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0006 · SHOULD · high** — Use watchOS background content such as color to convey useful supporting information. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0007 · SHOULD · high** — Design the watchOS app to function independently and complement its notifications and complications. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0008 · SHOULD · high** — Personalize watchOS with on-device data that anticipates needs and provides actionable near-term content. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0009 · SHOULD · high** — Use the Digital Crown for vertical scrolling or switching between watchOS screens. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0010 · SHOULD · high** — Use complication taps to open the related watchOS app directly. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0011 · SHOULD · high** — Use watchOS materials to communicate hierarchy and a sense of place. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
 
 ## foundations
 
