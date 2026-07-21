@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:59:24.941Z. 2429 active rules; 3 deprecated rules.
+Generated 2026-07-21T20:05:29.496Z. 2431 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1965,8 +1965,10 @@ Generated 2026-07-21T19:59:24.941Z. 2429 active rules; 3 deprecated rules.
 - **HIG-INPUTS-GAME-CONTROLS-0009 · SHOULD · low** — Apply the documented Game controls guidance to prioritize single-key commands. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - **HIG-INPUTS-GAME-CONTROLS-0010 · SHOULD · low** — Apply the documented Game controls guidance to test key binding comfort game using an Apple keyboard. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - **HIG-INPUTS-GAME-CONTROLS-0011 · SHOULD · low** — Apply the documented Game controls guidance to let players customize key bindings. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0012 · SHOULD · low** — Apply the documented Game controls guidance to match spatial game controller behavior to hand input. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0012 · SHOULD · high** — Make visionOS spatial controller interactions behave like equivalent hand interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - **HIG-INPUTS-GAME-CONTROLS-0013 · SHOULD · low** — Determine whether it makes sense to display virtual controls on top of game content explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0014 · SHOULD · high** — Support looking at an object and pressing a spatial controller trigger to interact indirectly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0015 · SHOULD · high** — Support reaching toward an object and pressing a spatial controller trigger to interact directly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 ### gestures
 
 - **HIG-INPUTS-GESTURES-0001 · SHOULD · high** — Give people more than one way to interact with the app. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))

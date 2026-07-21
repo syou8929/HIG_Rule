@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1402
-- Reviewed batches: 92
+- Reviewed rules: 1405
+- Reviewed batches: 93
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:57:38Z
+- Reviewed at: 2026-07-21T20:03:34Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1028,6 +1028,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-FOCUS-AND-SELECTION-0014 · high — Recovered and retained the explicit need requirement for larger focused-size assets. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0015 · high — Recovered and retained the explicit make sure spacing requirement for enlarged focus. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0016 · high — Recovered the visionOS platform distinction documented in the page note. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-GAME-CONTROLS-0012 · high — Repaired the generated wording and recorded the gaze, hand-gesture, and game-controller modalities. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0014 · high — Split the source's indirect interaction mapping and recorded its gaze and trigger inputs. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0015 · high — Split the source's direct interaction mapping and recorded its reach gesture and trigger inputs. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GESTURES-0001 · high — Recorded the accessibility purpose and stated alternative input examples. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0002 · high — Separated learnability from the explicit real-use testing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0003 · high — Recorded the persistent familiar path that must remain alongside a shortcut. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))

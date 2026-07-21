@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2429
+- Active atomic rules: 2431
 - Pages without rules: 16
-- Low-confidence rules: 949
-- Rules requiring human review: 949
+- Low-confidence rules: 948
+- Rules requiring human review: 948
 - Reference notes: 929
 
 ## Rules by category
@@ -16,7 +16,7 @@
 - components: 858
 - foundations: 346
 - getting-started: 100
-- inputs: 201
+- inputs: 203
 - patterns: 289
 - technologies: 635
 
@@ -26,7 +26,7 @@
 - MAY: 285
 - MUST: 220
 - MUST_NOT: 21
-- SHOULD: 1581
+- SHOULD: 1583
 
 ## Rules by platform
 
@@ -35,13 +35,13 @@
 - ipados: 1618
 - macos: 1375
 - tvos: 1074
-- visionos: 1429
+- visionos: 1431
 - watchos: 1136
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2363
+- manual: 2365
 
 ## Blocked pages
 
@@ -422,7 +422,6 @@ None.
 - HIG-INPUTS-GAME-CONTROLS-0009
 - HIG-INPUTS-GAME-CONTROLS-0010
 - HIG-INPUTS-GAME-CONTROLS-0011
-- HIG-INPUTS-GAME-CONTROLS-0012
 - HIG-INPUTS-GAME-CONTROLS-0013
 - HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001
 - HIG-INPUTS-KEYBOARDS-0001
@@ -1374,7 +1373,6 @@ None.
 - HIG-INPUTS-GAME-CONTROLS-0009
 - HIG-INPUTS-GAME-CONTROLS-0010
 - HIG-INPUTS-GAME-CONTROLS-0011
-- HIG-INPUTS-GAME-CONTROLS-0012
 - HIG-INPUTS-GAME-CONTROLS-0013
 - HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001
 - HIG-INPUTS-KEYBOARDS-0001
