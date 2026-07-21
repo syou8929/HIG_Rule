@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2673
+- Active atomic rules: 2674
 - Pages without rules: 16
-- Low-confidence rules: 856
-- Rules requiring human review: 856
-- Reference notes: 911
+- Low-confidence rules: 855
+- Rules requiring human review: 855
+- Reference notes: 910
 
 ## Rules by category
 
-- components: 860
+- components: 861
 - foundations: 346
 - getting-started: 100
 - inputs: 219
@@ -22,7 +22,7 @@
 
 ## Normative levels
 
-- AVOID: 358
+- AVOID: 359
 - MAY: 329
 - MUST: 268
 - MUST_NOT: 24
@@ -34,14 +34,14 @@
 - ios: 1750
 - ipados: 1722
 - macos: 1436
-- tvos: 1113
+- tvos: 1114
 - visionos: 1470
-- watchos: 1180
+- watchos: 1181
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2603
+- manual: 2604
 
 ## Blocked pages
 
@@ -176,7 +176,6 @@ None.
 - HIG-COMPONENTS-POP-UP-BUTTONS-0005
 - HIG-COMPONENTS-POP-UP-BUTTONS-0006
 - HIG-COMPONENTS-POP-UP-BUTTONS-0007
-- HIG-COMPONENTS-POP-UP-BUTTONS-0008
 - HIG-COMPONENTS-POPOVERS-0001
 - HIG-COMPONENTS-POPOVERS-0002
 - HIG-COMPONENTS-POPOVERS-0003
@@ -1035,7 +1034,6 @@ None.
 - HIG-COMPONENTS-POP-UP-BUTTONS-0005
 - HIG-COMPONENTS-POP-UP-BUTTONS-0006
 - HIG-COMPONENTS-POP-UP-BUTTONS-0007
-- HIG-COMPONENTS-POP-UP-BUTTONS-0008
 - HIG-COMPONENTS-POPOVERS-0001
 - HIG-COMPONENTS-POPOVERS-0002
 - HIG-COMPONENTS-POPOVERS-0003
@@ -2385,7 +2383,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/popovers · Popovers > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.

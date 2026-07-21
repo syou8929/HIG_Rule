@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:25:00Z",
+  "reviewed_at": "2026-07-21T22:27:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2697,9 +2697,34 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/gauges", "source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81"}],
       "rule_ids": ["HIG-COMPONENTS-GAUGES-0003", "HIG-COMPONENTS-GAUGES-0004", "HIG-COMPONENTS-GAUGES-0005", "HIG-COMPONENTS-GAUGES-0006"],
       "review_note": "Completed the macOS section, preserved two stable IDs, recovered the tvOS limitation and the discrete-segment invariant, retained both style choices at MAY, and classified only the explicit never-partially rule as MUST_NOT."
+    },
+    {
+      "id": "priority-4-pop-up-buttons-ipados-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:27:00Z",
+      "review_method": "Rendered Apple HIG Pop-up buttons platform overview and complete iPadOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons", "source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4"}],
+      "rule_ids": ["HIG-COMPONENTS-POP-UP-BUTTONS-0008", "HIG-COMPONENTS-POP-UP-BUTTONS-0009"],
+      "review_note": "Completed the iPadOS section, preserved the stable MAY rule with its popover, modal, list-item, and option-set conditions, and recovered the tvOS and watchOS platform limitation at AVOID."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0008": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "71848622b318ebcb01ec3aa8151e69f4d9ba3730139191bde8112be829eb5a65", "section_path": ["Pop-up buttons", "Platform considerations", "iPadOS"]},
+      "title": "Consider a pop-up button for compact iPadOS list-item options",
+      "statement": {"en": "Consider a pop-up button for compact iPadOS list-item options.", "ja": "compactなiPadOS list-item optionにはpop-up buttonを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The list item appears within a popover or modal view.", "The option set is fairly small, well defined, and works well in a menu.", "Use the pop-up button instead of navigating through a disclosure indicator to a detail view."],
+      "review_note": "Restored the complete truncated recommendation and all documented applicability conditions."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0009": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "55e045ddf6a583adc9d776fb5701cd92bb92ac48561315500934a52e2c4f84fd", "section_path": ["Pop-up buttons", "Platform considerations"]},
+      "statement": {"en": "Avoid using pop-up buttons on tvOS or watchOS.", "ja": "tvOSまたはwatchOSでpop-up buttonを使わない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-component-specific", "platforms": ["tvos", "watchos"], "devices": ["apple-tv", "apple-watch"], "components": ["pop-up-buttons"], "modalities": []},
+      "conditions": ["Pop-up buttons have no additional considerations for iOS, macOS, or visionOS."],
+      "review_note": "Recorded the descriptive tvOS and watchOS limitation at AVOID rather than MUST_NOT."
+    },
     "HIG-COMPONENTS-GAUGES-0003": {
       "source": {"source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81", "source_sentence_hash": "6ff930dfda0005fc7bf3e3f21e4a3465783f0c094720bbe924af92837e42bd8b", "section_path": ["Gauges", "Platform considerations", "macOS"]},
       "statement": {"en": "Consider the continuous capacity style for a large range.", "ja": "large rangeにはcontinuous capacity styleを検討する。"},

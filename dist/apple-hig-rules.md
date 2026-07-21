@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:26:42.934Z. 2673 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:28:41.934Z. 2674 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1436,7 +1436,8 @@ Generated 2026-07-21T22:26:42.934Z. 2673 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0005 · SHOULD · low** — Make a list of actions available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0006 · SHOULD · low** — Preserve people’s ability to select multiple items. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0007 · SHOULD · low** — Apply the documented Pop-up buttons guidance to include a submenu. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- **HIG-COMPONENTS-POP-UP-BUTTONS-0008 · MAY · low** — Within a popover or modal view, consider using a pop-up button instead of a disclosure indicator to present multiple. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0008 · MAY · high** — Consider a pop-up button for compact iPadOS list-item options. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0009 · AVOID · high** — Avoid using pop-up buttons on tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 ### popovers
 
 - **HIG-COMPONENTS-POPOVERS-0001 · SHOULD · low** — Choose or apply a popover to expose a small amount of information or functionality in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))

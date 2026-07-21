@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1746
-- Reviewed batches: 113
+- Reviewed rules: 1748
+- Reviewed batches: 114
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:25:00Z
+- Reviewed at: 2026-07-21T22:27:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -325,6 +325,8 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-PICKERS-0007 · high — Recovered the short-list alternative without promoting its consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 - HIG-COMPONENTS-PICKERS-0008 · high — Recovered the very-large-set alternative and its navigation rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 - HIG-COMPONENTS-PICKERS-0009 · high — Repaired the truncated mode description and recorded both its maximum value and unavailable styles without inventing a MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0008 · high — Restored the complete truncated recommendation and all documented applicability conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0009 · high — Recorded the descriptive tvOS and watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - HIG-COMPONENTS-POPOVERS-0012 · high — Recorded the size-class scope and the full-screen modal alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0013 · high — Preserved the optional strength and documented the persistent-panel use case. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0014 · high — Replaced generic generated wording with the source's context-preservation intent. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
