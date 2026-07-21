@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1062
-- Reviewed batches: 68
+- Reviewed rules: 1084
+- Reviewed batches: 69
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:12:14Z
+- Reviewed at: 2026-07-21T17:18:06Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -272,6 +272,28 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-ORNAMENTS-0005 · high — Recovered the general visibility rule and retained the content-immersion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
 - HIG-COMPONENTS-ORNAMENTS-0006 · high — Recovered the multiple-ornament condition and its distraction and complexity risks. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
 - HIG-COMPONENTS-ORNAMENTS-0007 · high — Recovered the qualified count-limiting option and the relocation fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0001 · high — Retained the existing ID and narrowed component selection to nonhierarchical data. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0002 · high — Retained the context purpose while separating heading wording, capitalization, punctuation, and presence. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0003 · high — Preserved the optional consider strength and separated behavior after sorting is offered. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0004 · high — Retained the exact contextual duplicate and recorded the variable-width purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0005 · high — Retained the interaction goal; Finder click and Option-click behavior remains a reviewed example rather than a universal requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0006 · high — Preserved MAY and the multi-column, wide-view readability context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0007 · high — Retained the product-fit condition and separated the expected single-click interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0008 · high — Preserved MAY and the distinctiveness rationale for middle truncation. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0009 · high — Preserved MAY and the lengthy, primary-feature context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0010 · high — Recorded persistence and restoration as the implementation of retained navigation state. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0011 · high — Activated the previously inactive candidate and retained the first-column-only boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0012 · high — Recovered the heading-part-of-speech guidance as a separate atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0013 · high — Recovered capitalization separately from wording and punctuation. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0014 · high — Recovered the explicit avoid clause conservatively as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0015 · high — Recovered the unqualified Always directive and retained its multi-column scope. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0016 · high — Recovered the conditioned fallback without extending it to multi-column views. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0017 · high — Recovered both sort directions as behavior conditioned on offering sortable headings. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0018 · high — Preserved the optional and necessary qualifications. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0019 · high — Recovered hierarchy-level sorting separately from the optional decision to offer sorting. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0020 · high — Recovered the repeated-click behavior as a conditioned sorting rule. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0021 · high — Recovered the explicit editing expectation and retained the distinct double-click exception. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-OUTLINE-VIEWS-0022 · high — Recovered the qualified row-mutation option without promoting it above MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-PAGE-CONTROLS-0005 · high — Recorded the source distinction between scrubbing and tapping. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0006 · high — Recorded the feedback limitation and supported background-style alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0007 · high — Recorded the full-screen peer hierarchy and focus constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))

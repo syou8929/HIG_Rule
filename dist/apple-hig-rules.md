@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:13:24.328Z. 2251 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:23:24.629Z. 2263 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1243,16 +1243,28 @@ Generated 2026-07-21T17:13:24.328Z. 2251 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-ORNAMENTS-0007 · MAY · high** — When necessary, consider limiting the total number of visionOS ornaments. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
 ### outline-views
 
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0001 · SHOULD · low** — Choose or apply a table instead of an outline view to present data that’s not hierarchical in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0002 · SHOULD · low** — Choose or apply descriptive column headings to provide context in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0003 · MAY · low** — Evaluate whether letting people click column headings to sort an outline view is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0004 · SHOULD · low** — Preserve people’s ability to resize columns. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0005 · SHOULD · low** — Apply the documented Outline views guidance to make it easy for people to expand or collapse nested containers. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0006 · MAY · low** — Evaluate whether using alternating row colors in multi-column outline views is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0007 · SHOULD · low** — Preserve people’s ability to edit data if it makes sense in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0008 · MAY · low** — Evaluate whether using a centered ellipsis to truncate cell text instead of clipping it is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0009 · MAY · low** — Evaluate whether offering a search field to help people find values quickly in a lengthy outline view is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- **HIG-COMPONENTS-OUTLINE-VIEWS-0010 · SHOULD · low** — Retain people’s expansion choices. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0001 · SHOULD · high** — Use a table instead of a macOS outline view when the data isn’t hierarchical. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0002 · SHOULD · high** — Use descriptive column headings that give people enough context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0003 · MAY · high** — Consider letting people sort a macOS outline view by clicking column headings. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0004 · SHOULD · high** — Preserve people’s ability to resize columns. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0005 · SHOULD · high** — Make nested outline-view containers easy to expand and collapse. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0006 · MAY · high** — Consider alternating row colors in a multi-column macOS outline view. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0007 · SHOULD · high** — Let people edit outline-view data when editing makes sense in the app. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0008 · MAY · high** — Consider a centered ellipsis instead of clipping outline-view cell text. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0009 · MAY · high** — Consider a search field for a lengthy macOS outline view. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0010 · SHOULD · high** — Retain people’s outline-view expansion choices between visits. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0011 · SHOULD · high** — Expose outline-view hierarchy only in the first column. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0012 · SHOULD · high** — Use nouns or short noun phrases for outline-view column headings. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0013 · SHOULD · high** — Use title-style capitalization for outline-view column headings. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0014 · AVOID · high** — Avoid punctuation in outline-view column headings, especially a trailing colon. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0015 · MUST · high** — Always provide column headings in a multi-column macOS outline view. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0016 · SHOULD · high** — When a single-column outline view omits its heading, provide a label or another source of sufficient context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0017 · SHOULD · high** — Support ascending and descending sorts for clickable outline-view column headings. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0018 · MAY · high** — When necessary, consider secondary-column sorting behind the scenes. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0019 · SHOULD · high** — When people sort by the primary column, sort independently at each hierarchy level. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0020 · SHOULD · high** — Reverse the sort direction when people click the currently sorted column heading. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0021 · SHOULD · high** — Use a single click to edit an editable outline-view cell. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0022 · MAY · high** — When useful, consider letting people reorder, add, and remove outline-view rows. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 ### page-controls
 
 - **HIG-COMPONENTS-PAGE-CONTROLS-0001 · SHOULD · low** — Choose or apply page controls to represent movement between an ordered list of pages in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))

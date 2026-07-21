@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:12:14Z",
+  "reviewed_at": "2026-07-21T17:18:06Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2075,6 +2075,22 @@
         "HIG-COMPONENTS-ORNAMENTS-0005", "HIG-COMPONENTS-ORNAMENTS-0006", "HIG-COMPONENTS-ORNAMENTS-0007"
       ],
       "review_note": "Completed visionOS Ornaments coverage; repaired the truncated existing rule and recovered visibility, multi-ornament balance, and optional count-limiting guidance."
+    },
+    {
+      "id": "priority-4-outline-views-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:18:06Z",
+      "review_method": "Rendered Apple HIG Outline views guidance, supporting prose, hierarchy, headings, sorting, expansion, editing, truncation, search, and platform context were reviewed; two repeated live renders matched the updated main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/outline-views", "source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-OUTLINE-VIEWS-0001", "HIG-COMPONENTS-OUTLINE-VIEWS-0002", "HIG-COMPONENTS-OUTLINE-VIEWS-0003", "HIG-COMPONENTS-OUTLINE-VIEWS-0004",
+        "HIG-COMPONENTS-OUTLINE-VIEWS-0005", "HIG-COMPONENTS-OUTLINE-VIEWS-0006", "HIG-COMPONENTS-OUTLINE-VIEWS-0007", "HIG-COMPONENTS-OUTLINE-VIEWS-0008",
+        "HIG-COMPONENTS-OUTLINE-VIEWS-0009", "HIG-COMPONENTS-OUTLINE-VIEWS-0010", "HIG-COMPONENTS-OUTLINE-VIEWS-0011", "HIG-COMPONENTS-OUTLINE-VIEWS-0012",
+        "HIG-COMPONENTS-OUTLINE-VIEWS-0013", "HIG-COMPONENTS-OUTLINE-VIEWS-0014", "HIG-COMPONENTS-OUTLINE-VIEWS-0015", "HIG-COMPONENTS-OUTLINE-VIEWS-0016",
+        "HIG-COMPONENTS-OUTLINE-VIEWS-0017", "HIG-COMPONENTS-OUTLINE-VIEWS-0018", "HIG-COMPONENTS-OUTLINE-VIEWS-0019", "HIG-COMPONENTS-OUTLINE-VIEWS-0020",
+        "HIG-COMPONENTS-OUTLINE-VIEWS-0021", "HIG-COMPONENTS-OUTLINE-VIEWS-0022"
+      ],
+      "review_note": "Completed macOS Outline views coverage; activated the missing hierarchy candidate, recovered eleven supporting atomic rules, retained all ten existing IDs, and reviewed the single explicit Always directive."
     }
   ],
   "rules": {
@@ -2121,6 +2137,168 @@
       "normative_level": "MAY", "conditions": ["Multiple ornaments increase visual weight or make the app feel more complicated."],
       "exceptions": ["Relocate removed ornament elements into the main window when appropriate."],
       "review_note": "Recovered the qualified count-limiting option and the relocation fallback."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0001": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "51f4a0831d9cf53ab1c260b91fb792be182e17d3f62c01d8bd0634177a4c08b0", "section_path": ["Outline views", "Best practices"]},
+      "title": "Use tables for nonhierarchical data",
+      "statement": {"en": "Use a table instead of a macOS outline view when the data isn’t hierarchical.", "ja": "dataがhierarchicalでない場合はmacOS outline viewではなくtableを使う。"},
+      "conditions": ["The presented data has no parent-and-child hierarchy."],
+      "review_note": "Retained the existing ID and narrowed component selection to nonhierarchical data."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0002": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "cf03e31cb58a7d6409f446d1287db2c9994ee5b56f07b9415d34c154f927c345", "section_path": ["Outline views", "Best practices"]},
+      "title": "Use descriptive outline-view headings",
+      "statement": {"en": "Use descriptive column headings that give people enough context.", "ja": "十分なcontextを伝えるdescriptiveなcolumn headingを使う。"},
+      "conditions": ["Each heading identifies the content or attribute in its column."],
+      "review_note": "Retained the context purpose while separating heading wording, capitalization, punctuation, and presence."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0003": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "69b853c69ae066a52e11f218ea17d9d061cd375a97474f4248a65b3d93f0609b", "section_path": ["Outline views", "Best practices"]},
+      "title": "Consider sortable column headings",
+      "statement": {"en": "Consider letting people sort a macOS outline view by clicking column headings.", "ja": "column headingをclickしてmacOS outline viewをsortできるようにすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Sorting by an outline-view attribute would help people inspect the data."],
+      "review_note": "Preserved the optional consider strength and separated behavior after sorting is offered."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0004": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "037373307c00fd6082a9a53cc5a19ce296876e8a5bcd914d47d1a4f4cd31323d", "section_path": ["Outline views", "Best practices"]},
+      "title": "Let people resize outline-view columns",
+      "statement": {"en": "Preserve people’s ability to resize columns.", "ja": "columnをresizeできる状態を維持する。"},
+      "conditions": ["Let people reveal data that is wider than its current column."],
+      "review_note": "Retained the exact contextual duplicate and recorded the variable-width purpose."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0005": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "28c7cb34e003a7e45c2f21acf21f387c53fc392a18a3c5693234d71f2cab211e", "section_path": ["Outline views", "Best practices"]},
+      "title": "Make nested containers easy to expand",
+      "statement": {"en": "Make nested outline-view containers easy to expand and collapse.", "ja": "nested outline-view containerを簡単にexpandおよびcollapseできるようにする。"},
+      "conditions": ["Use disclosure triangles to reveal the children of parent containers."],
+      "review_note": "Retained the interaction goal; Finder click and Option-click behavior remains a reviewed example rather than a universal requirement."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0006": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "3ab7fd55db811367e4fb9924f480a9724af3b2ccf2b15c5317d425cf70af081b", "section_path": ["Outline views", "Best practices"]},
+      "title": "Consider alternating outline-view rows",
+      "statement": {"en": "Consider alternating row colors in a multi-column macOS outline view.", "ja": "multi-column macOS outline viewではrow colorを交互にすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Alternating colors help people track values across wide rows."],
+      "review_note": "Preserved MAY and the multi-column, wide-view readability context."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0007": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "0b213348b10e993adf7494abfd5b62e65a9b00514ba2371bc17482ccb3174d55", "section_path": ["Outline views", "Best practices"]},
+      "title": "Allow appropriate outline-view editing",
+      "statement": {"en": "Let people edit outline-view data when editing makes sense in the app.", "ja": "appで適切な場合はoutline-view dataを編集できるようにする。"},
+      "conditions": ["Keep single-click editing distinguishable from any double-click action."],
+      "review_note": "Retained the product-fit condition and separated the expected single-click interaction."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0008": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "d2571d433e8c6c7b829530a9d0a858c26df9334b7fc27de38512bd23c41cb9c6", "section_path": ["Outline views", "Best practices"]},
+      "title": "Consider centered cell ellipses",
+      "statement": {"en": "Consider a centered ellipsis instead of clipping outline-view cell text.", "ja": "outline-view cell textをclipする代わりにcentered ellipsisを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Preserving both the beginning and end makes truncated content more recognizable."],
+      "review_note": "Preserved MAY and the distinctiveness rationale for middle truncation."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0009": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "204854d3ab799746a56706b54328d2ea5882ccc2002d1cca56edbceb441cb547", "section_path": ["Outline views", "Best practices"]},
+      "title": "Consider search for lengthy outline views",
+      "statement": {"en": "Consider a search field for a lengthy macOS outline view.", "ja": "lengthyなmacOS outline viewにはsearch fieldを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A window whose primary feature is the outline view can place search in its toolbar."],
+      "review_note": "Preserved MAY and the lengthy, primary-feature context."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0010": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "b74232a3550f294b52eaac14ef8e564ccd207b7bdd4d361575329a4b49a1d1e0", "section_path": ["Outline views", "Best practices"]},
+      "title": "Retain outline-view expansion choices",
+      "statement": {"en": "Retain people’s outline-view expansion choices between visits.", "ja": "outline viewの利用間で人が選んだexpansion stateを保持する。"},
+      "conditions": ["Store the expansion state and restore it the next time the outline view appears."],
+      "review_note": "Recorded persistence and restoration as the implementation of retained navigation state."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0011": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "24bb0bf77ed2c0cc17b942f87a3a16ec00ce35f8abd5ab002d596edcdcfb9255", "section_path": ["Outline views", "Best practices"]},
+      "title": "Keep hierarchy in the first column",
+      "statement": {"en": "Expose outline-view hierarchy only in the first column.", "ja": "outline-view hierarchyはfirst columnだけに表示する。"},
+      "conditions": ["Use other columns only for attributes that supplement the primary hierarchical data."],
+      "review_note": "Activated the previously inactive candidate and retained the first-column-only boundary."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0012": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "fc09f004e7ee61decc33a25d111616c55b3716129ddc398ede856ccc573be31c", "section_path": ["Outline views", "Best practices"]},
+      "title": "Use concise noun headings",
+      "statement": {"en": "Use nouns or short noun phrases for outline-view column headings.", "ja": "outline-view column headingにはnounまたは短いnoun phraseを使う。"},
+      "conditions": ["Keep each heading concise while identifying its column."],
+      "review_note": "Recovered the heading-part-of-speech guidance as a separate atomic rule."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0013": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "fc09f004e7ee61decc33a25d111616c55b3716129ddc398ede856ccc573be31c", "section_path": ["Outline views", "Best practices"]},
+      "title": "Capitalize outline-view headings consistently",
+      "statement": {"en": "Use title-style capitalization for outline-view column headings.", "ja": "outline-view column headingにはtitle-style capitalizationを使う。"},
+      "conditions": ["Apply the convention to every visible column heading."],
+      "review_note": "Recovered capitalization separately from wording and punctuation."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0014": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "fc09f004e7ee61decc33a25d111616c55b3716129ddc398ede856ccc573be31c", "section_path": ["Outline views", "Best practices"]},
+      "title": "Avoid punctuation in outline-view headings",
+      "statement": {"en": "Avoid punctuation in outline-view column headings, especially a trailing colon.", "ja": "outline-view column headingではpunctuation、特にtrailing colonを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["The text functions as a column heading rather than a sentence."],
+      "review_note": "Recovered the explicit avoid clause conservatively as AVOID, not MUST_NOT."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0015": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "15f526235d3d54c8e8feb717039a12b48558f377e792b6015ca617a5418bb80c", "section_path": ["Outline views", "Best practices"]},
+      "title": "Always provide multi-column outline-view headings",
+      "statement": {"en": "Always provide column headings in a multi-column macOS outline view.", "ja": "multi-column macOS outline viewでは常にcolumn headingを提供する。"},
+      "conditions": ["The outline view contains more than one column."],
+      "review_note": "Recovered the unqualified Always directive and retained its multi-column scope."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0016": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "0a8f8975a0f6c8ab18fb548de5da3bde4404bfd62fc0782281a6c9f6b4d4368d", "section_path": ["Outline views", "Best practices"]},
+      "title": "Provide context when omitting a single heading",
+      "statement": {"en": "When a single-column outline view omits its heading, provide a label or another source of sufficient context.", "ja": "single-column outline viewでheadingを省略する場合はlabelなどで十分なcontextを提供する。"},
+      "conditions": ["The outline view has one column and no visible column heading."],
+      "review_note": "Recovered the conditioned fallback without extending it to multi-column views."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0017": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "5630a95097211733e722e309415c48591f4b89abb38a82b18ed107702166f72c", "section_path": ["Outline views", "Best practices"]},
+      "title": "Support both sort directions",
+      "statement": {"en": "Support ascending and descending sorts for clickable outline-view column headings.", "ja": "click可能なoutline-view column headingでascendingとdescendingのsortをsupportする。"},
+      "conditions": ["The app offers sorting through column-heading clicks."],
+      "review_note": "Recovered both sort directions as behavior conditioned on offering sortable headings."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0018": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "79b7f512ee9ea3aff108873a2c99d782defa1118c9110e2de7b1b808f4109c44", "section_path": ["Outline views", "Best practices"]},
+      "title": "Consider secondary-column sorting",
+      "statement": {"en": "When necessary, consider secondary-column sorting behind the scenes.", "ja": "必要な場合はsecondary-column sortingを内部で行うことを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A primary sort needs a secondary attribute to produce a useful stable order."],
+      "review_note": "Preserved the optional and necessary qualifications."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0019": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "3c970d3b649ee09cb91edd2dd80addf2f57024b041c1b8121e7ef563d559c47d", "section_path": ["Outline views", "Best practices"]},
+      "title": "Sort primary columns by hierarchy level",
+      "statement": {"en": "When people sort by the primary column, sort independently at each hierarchy level.", "ja": "primary columnでsortする場合は各hierarchy levelを個別にsortする。"},
+      "conditions": ["People click the primary hierarchical column heading in a sortable outline view."],
+      "review_note": "Recovered hierarchy-level sorting separately from the optional decision to offer sorting."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0020": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "bef76c683a09f34bbae49aec5f60cb280226339d166c239ad6665f7134489121", "section_path": ["Outline views", "Best practices"]},
+      "title": "Reverse repeated column sorts",
+      "statement": {"en": "Reverse the sort direction when people click the currently sorted column heading.", "ja": "現在sort済みのcolumn headingをclickした場合はsort directionを反転する。"},
+      "conditions": ["The clicked column is already the active sort column."],
+      "review_note": "Recovered the repeated-click behavior as a conditioned sorting rule."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0021": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "4c61cac26ef1c2ab72ff9a39b91ff32f6d141aa2eb3473491c86f2cba920cf38", "section_path": ["Outline views", "Best practices"]},
+      "title": "Use single-click cell editing",
+      "statement": {"en": "Use a single click to edit an editable outline-view cell.", "ja": "editableなoutline-view cellはsingle clickで編集する。"},
+      "conditions": ["The cell supports direct editing."],
+      "exceptions": ["A double click may perform a distinct action, such as opening the represented item."],
+      "review_note": "Recovered the explicit editing expectation and retained the distinct double-click exception."
+    },
+    "HIG-COMPONENTS-OUTLINE-VIEWS-0022": {
+      "source": {"source_hash": "6a9b2679269b9632a15ba1f14e015c76b4fc942a35934778468afe951d4a9c63", "source_sentence_hash": "5146dde7fc9185eca555863f667a99c82290be7e5e1ced47a0184fc0989fcecd", "section_path": ["Outline views", "Best practices"]},
+      "title": "Consider useful row changes",
+      "statement": {"en": "When useful, consider letting people reorder, add, and remove outline-view rows.", "ja": "有用な場合はoutline-view rowのreorder、add、removeを可能にすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The row operation supports the app’s data-management task."],
+      "review_note": "Recovered the qualified row-mutation option without promoting it above MAY."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2251
+- Active atomic rules: 2263
 - Pages without rules: 16
-- Low-confidence rules: 1105
-- Rules requiring human review: 1105
+- Low-confidence rules: 1095
+- Rules requiring human review: 1095
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 743
+- components: 755
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -22,18 +22,18 @@
 
 ## Normative levels
 
-- AVOID: 303
-- MAY: 251
-- MUST: 191
+- AVOID: 304
+- MAY: 253
+- MUST: 192
 - MUST_NOT: 21
-- SHOULD: 1485
+- SHOULD: 1493
 
 ## Rules by platform
 
 - carplay: 89
 - ios: 1581
 - ipados: 1550
-- macos: 1314
+- macos: 1326
 - tvos: 1016
 - visionos: 1376
 - watchos: 1085
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2185
+- manual: 2197
 
 ## Blocked pages
 
@@ -167,16 +167,6 @@ None.
 - HIG-COMPONENTS-NOTIFICATIONS-0015
 - HIG-COMPONENTS-NOTIFICATIONS-0017
 - HIG-COMPONENTS-NOTIFICATIONS-0018
-- HIG-COMPONENTS-OUTLINE-VIEWS-0001
-- HIG-COMPONENTS-OUTLINE-VIEWS-0002
-- HIG-COMPONENTS-OUTLINE-VIEWS-0003
-- HIG-COMPONENTS-OUTLINE-VIEWS-0004
-- HIG-COMPONENTS-OUTLINE-VIEWS-0005
-- HIG-COMPONENTS-OUTLINE-VIEWS-0006
-- HIG-COMPONENTS-OUTLINE-VIEWS-0007
-- HIG-COMPONENTS-OUTLINE-VIEWS-0008
-- HIG-COMPONENTS-OUTLINE-VIEWS-0009
-- HIG-COMPONENTS-OUTLINE-VIEWS-0010
 - HIG-COMPONENTS-PAGE-CONTROLS-0001
 - HIG-COMPONENTS-PAGE-CONTROLS-0003
 - HIG-COMPONENTS-PAGE-CONTROLS-0004
@@ -1275,16 +1265,6 @@ None.
 - HIG-COMPONENTS-NOTIFICATIONS-0015
 - HIG-COMPONENTS-NOTIFICATIONS-0017
 - HIG-COMPONENTS-NOTIFICATIONS-0018
-- HIG-COMPONENTS-OUTLINE-VIEWS-0001
-- HIG-COMPONENTS-OUTLINE-VIEWS-0002
-- HIG-COMPONENTS-OUTLINE-VIEWS-0003
-- HIG-COMPONENTS-OUTLINE-VIEWS-0004
-- HIG-COMPONENTS-OUTLINE-VIEWS-0005
-- HIG-COMPONENTS-OUTLINE-VIEWS-0006
-- HIG-COMPONENTS-OUTLINE-VIEWS-0007
-- HIG-COMPONENTS-OUTLINE-VIEWS-0008
-- HIG-COMPONENTS-OUTLINE-VIEWS-0009
-- HIG-COMPONENTS-OUTLINE-VIEWS-0010
 - HIG-COMPONENTS-PAGE-CONTROLS-0001
 - HIG-COMPONENTS-PAGE-CONTROLS-0003
 - HIG-COMPONENTS-PAGE-CONTROLS-0004
@@ -2841,7 +2821,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Platform considerations — Outline views are documented as unsupported outside macOS across Apple platforms.
 - https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
