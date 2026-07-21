@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1344
-- Reviewed batches: 85
+- Reviewed rules: 1349
+- Reviewed batches: 86
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:27:26Z
+- Reviewed at: 2026-07-21T19:33:20Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -886,6 +886,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0002 · high — Recovered the complete appearance-adaptation rule and all three documented change types. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
 - HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0003 · high — Recovered the ergonomic rule and recorded both reachability and swipe examples without making their positions universal. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
 - HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0004 · high — Recovered the permission-gated integration rule and raised its conflict priority to privacy and explicit intent. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001 · high — Repaired the truncated extraction and preserved both documented sizing inputs. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002 · high — Repaired the truncated extraction and separated standard input support from optional combined interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003 · high — Repaired the truncated extraction and preserved content prominence, transition restraint, reachability, and nonobstruction. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0004 · high — Recovered the omitted adaptation rule and preserved every documented configuration and transition context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0005 · high — Split the source's conditional consider clause from its stronger standard-input guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001 · high — Retained MAY and preserved the minimum-immersion test and full-immersion caution. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0002 · high — Recorded the standard-task context, familiar controls, relocation, and dynamic scaling. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0003 · high — Repaired the generic statement and linked it to every documented comfort fundamental. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))

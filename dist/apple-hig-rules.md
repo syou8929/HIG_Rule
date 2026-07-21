@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:29:59.034Z. 2403 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:35:18.486Z. 2405 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -70,9 +70,11 @@ Generated 2026-07-21T19:29:59.034Z. 2403 active rules; 3 deprecated rules.
 - **HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0004 · SHOULD · high** — With people’s permission, integrate iOS platform information to enhance the experience without requiring manual data entry. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
 ### designing-for-ipados
 
-- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001 · SHOULD · low** — Choose or apply viewing distance and input mode to help you determine the size and density of the onscreen content you in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002 · SHOULD · low** — Preserve people’s ability to use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil, and consider supporting unique interactions that. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003 · SHOULD · low** — Use of the large display to elevate the content people care about, minimizing modal interfaces and full-screen transitions,. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001 · SHOULD · high** — Use viewing distance and input mode to determine iPadOS content size and density. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002 · SHOULD · high** — Let people use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003 · SHOULD · high** — Use iPad’s large display to elevate important content and reduce modal interfaces and full-screen transitions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0004 · SHOULD · high** — Adapt iPadOS interfaces across orientation, multitasking modes, Dark Mode, Dynamic Type, and macOS transitions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0005 · MAY · high** — Consider unique iPad interactions that combine multiple input modes. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
 ### designing-for-macos
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0001 · SHOULD · low** — Preserve people’s ability to resize, hide, show, and move your windows to fit their work style and device configuration, and support. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))

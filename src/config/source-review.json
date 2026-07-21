@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:27:26Z",
+  "reviewed_at": "2026-07-21T19:33:20Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2333,6 +2333,20 @@
         "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0003", "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0004"
       ],
       "review_note": "Completed the iOS-specific Best practices section; preserved the existing ID, recovered three atomic rules, gave permissioned data use privacy priority, and introduced no unsupported MUST rules."
+    },
+    {
+      "id": "priority-4-designing-for-ipados-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:33:20Z",
+      "review_method": "Rendered Apple HIG Designing for iPadOS device characteristics, system-feature context, and complete Best practices prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados", "source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce"}],
+      "rule_ids": [
+        "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001", "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003", "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0004",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0005"
+      ],
+      "review_note": "Completed the iPadOS-specific Best practices section; preserved all three existing IDs, recovered adaptation guidance, split the mixed-strength multimodal interaction guidance, and introduced no unsupported MUST rules."
     }
   ],
   "rules": {
@@ -4362,6 +4376,42 @@
       "priority_rank": 3,
       "conditions": ["Request and use information only with explicit permission.", "Examples include payments, biometric authentication, and location-based features."],
       "review_note": "Recovered the permission-gated integration rule and raised its conflict priority to privacy and explicit intent."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001": {
+      "source": {"source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce", "source_sentence_hash": "eb743b3dd9d332e1bc05bf2099d16ea51a8e9025b70fbeac3be4856825bba567", "section_path": ["Designing for iPadOS", "Best practices"]},
+      "title": "Size iPadOS content for viewing distance and input mode",
+      "statement": {"en": "Use viewing distance and input mode to determine iPadOS content size and density.", "ja": "viewing distanceとinput modeに基づいてiPadOS contentのsizeとdensityを決める。"},
+      "conditions": ["Evaluate both the expected viewing distance and the active input mode."],
+      "review_note": "Repaired the truncated extraction and preserved both documented sizing inputs."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002": {
+      "source": {"source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce", "source_sentence_hash": "303e13aaaf0714abf26fad2012b64477aea5f0349338e49bd17021c9e4bb2ec3", "section_path": ["Designing for iPadOS", "Best practices"]},
+      "title": "Support standard iPad input methods",
+      "statement": {"en": "Let people use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil.", "ja": "Multi-Touch gesture、physical keyboard、trackpad、Apple Pencilを利用できるようにする。"},
+      "conditions": ["Support the input methods that apply to the experience instead of assuming touch alone."],
+      "review_note": "Repaired the truncated extraction and separated standard input support from optional combined interactions."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003": {
+      "source": {"source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce", "source_sentence_hash": "fe7d498bdf4d476982d9c7b4fafe3a65a4795c09894b23ab1705e90c5f28ebbd", "section_path": ["Designing for iPadOS", "Best practices"]},
+      "title": "Use the large iPad display for important content",
+      "statement": {"en": "Use iPad’s large display to elevate important content and reduce modal interfaces and full-screen transitions.", "ja": "iPadのlarge displayでimportant contentを高め、modal interfaceとfull-screen transitionを減らす。"},
+      "conditions": ["Position onscreen controls where they are easy to reach without obstructing content."],
+      "review_note": "Repaired the truncated extraction and preserved content prominence, transition restraint, reachability, and nonobstruction."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0004": {
+      "source": {"source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce", "source_sentence_hash": "863bbb942271f7ec91f921731a7be8138680a9cd2e6913669227690c9ff5866a", "section_path": ["Designing for iPadOS", "Best practices"]},
+      "title": "Adapt iPadOS interfaces across configurations",
+      "statement": {"en": "Adapt iPadOS interfaces across orientation, multitasking modes, Dark Mode, Dynamic Type, and macOS transitions.", "ja": "iPadOS interfaceをorientation、multitasking mode、Dark Mode、Dynamic Type、macOS transitionへ適応させる。"},
+      "conditions": ["Let people choose the configurations that work best for them."],
+      "review_note": "Recovered the omitted adaptation rule and preserved every documented configuration and transition context."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0005": {
+      "source": {"source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce", "source_sentence_hash": "303e13aaaf0714abf26fad2012b64477aea5f0349338e49bd17021c9e4bb2ec3", "section_path": ["Designing for iPadOS", "Best practices"]},
+      "title": "Consider combining iPad input modes",
+      "statement": {"en": "Consider unique iPad interactions that combine multiple input modes.", "ja": "複数のinput modeを組み合わせる独自のiPad interactionを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Treat combined input as an opportunity, not a requirement for simultaneous input."],
+      "review_note": "Split the source's conditional consider clause from its stronger standard-input guidance."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},
