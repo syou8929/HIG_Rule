@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:54:15Z",
+  "reviewed_at": "2026-07-21T19:57:38Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2423,6 +2423,20 @@
         "HIG-INPUTS-CAMERA-CONTROL-0010"
       ],
       "review_note": "Completed iOS Camera Control guidance; preserved all nine existing IDs, recovered control-duplication avoidance, recorded overlay, Dynamic Type, runtime, and launch constraints, prioritized locked-camera launch for privacy review, and introduced no unsupported MUST rules."
+    },
+    {
+      "id": "priority-4-digital-crown-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:57:38Z",
+      "review_method": "Rendered Apple HIG Digital Crown Apple Vision Pro and Apple Watch sections, platform limitations, resource context, and complete change-log table were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/digital-crown", "source_hash": "6139e3c478d11815d0e3242631d1b5010fcc4ea45f77f3b454f15cda9ca22bfa"}],
+      "rule_ids": [
+        "HIG-INPUTS-DIGITAL-CROWN-0001", "HIG-INPUTS-DIGITAL-CROWN-0002", "HIG-INPUTS-DIGITAL-CROWN-0003",
+        "HIG-INPUTS-DIGITAL-CROWN-0004", "HIG-INPUTS-DIGITAL-CROWN-0005", "HIG-INPUTS-DIGITAL-CROWN-0006",
+        "HIG-INPUTS-DIGITAL-CROWN-0007"
+      ],
+      "review_note": "Completed Apple Watch Digital Crown guidance; narrowed three existing rules from page-wide visionOS/watchOS scope to watchOS, recovered navigation, touch-backup, speed-matching, and selection-rate rules, and retained one explicit touch-backup MUST."
     }
   ],
   "rules": {
@@ -4823,6 +4837,66 @@
       "normative_level": "AVOID",
       "conditions": ["The system is displaying the Camera Control overlay."],
       "review_note": "Split the direct duplicate-control avoidance from the broader distraction-minimization rule."
+    },
+    "HIG-INPUTS-DIGITAL-CROWN-0001": {
+      "source": {"source_hash": "6139e3c478d11815d0e3242631d1b5010fcc4ea45f77f3b454f15cda9ca22bfa", "source_sentence_hash": "3712f62307708d0ca26a81e0cc6e194b629efd3a8295cc55f4e6f1681b75ef0b", "section_path": ["Digital Crown", "Apple Watch"]},
+      "title": "Consider Digital Crown data inspection",
+      "statement": {"en": "Consider using the Digital Crown to inspect data when navigation isn't needed.", "ja": "navigationが不要なときDigital Crownでdataをinspectすることを検討する。"},
+      "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["digital-crown"]},
+      "conditions": ["The Digital Crown doesn't need to navigate lists or pages."],
+      "review_note": "Retained MAY, repaired the generated wording, and narrowed the Apple Watch section to watchOS."
+    },
+    "HIG-INPUTS-DIGITAL-CROWN-0002": {
+      "source": {"source_hash": "6139e3c478d11815d0e3242631d1b5010fcc4ea45f77f3b454f15cda9ca22bfa", "source_sentence_hash": "57726d931c6c53879e593a1e13128b419f277e96100b562c74a9130cf958144b", "section_path": ["Digital Crown", "Apple Watch"]},
+      "title": "Provide Digital Crown visual feedback",
+      "statement": {"en": "Provide visual feedback for every Digital Crown interaction.", "ja": "すべてのDigital Crown interactionにvisual feedbackを提供する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["digital-crown"]},
+      "conditions": ["Update the interface from directly tracked crown turns when needed."],
+      "review_note": "Repaired the generated wording, preserved the no-effect perception risk, and narrowed scope to watchOS."
+    },
+    "HIG-INPUTS-DIGITAL-CROWN-0003": {
+      "source": {"source_hash": "6139e3c478d11815d0e3242631d1b5010fcc4ea45f77f3b454f15cda9ca22bfa", "source_sentence_hash": "3ce0ca0be628394c410e9b66eebe14571671c685069a9d881770e9ff5bf53a09", "section_path": ["Digital Crown", "Apple Watch"]},
+      "title": "Use default Digital Crown haptics when appropriate",
+      "statement": {"en": "Use default Digital Crown haptic feedback when it fits the watchOS experience.", "ja": "watchOS experienceに合う場合はdefault Digital Crown haptic feedbackを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["digital-crown"]},
+      "conditions": ["Turn off detents when they don't fit the app or its animation."],
+      "exceptions": ["Tables may use linear instead of row-based detents for differently sized rows."],
+      "review_note": "Repaired the generated wording, recorded detent alternatives, and narrowed scope to watchOS."
+    },
+    "HIG-INPUTS-DIGITAL-CROWN-0004": {
+      "source": {"source_hash": "6139e3c478d11815d0e3242631d1b5010fcc4ea45f77f3b454f15cda9ca22bfa", "source_sentence_hash": "d2c7464fb95515d135cb87d0e5d9672ed4287b9406e6019b7851cee52b5eb2cc", "section_path": ["Digital Crown", "Apple Watch"]},
+      "title": "Anchor watchOS navigation to the Digital Crown",
+      "statement": {"en": "Use the Digital Crown as the primary anchor for watchOS app navigation.", "ja": "watchOS app navigationのprimary anchorとしてDigital Crownを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["digital-crown"]},
+      "conditions": ["Use vertically oriented lists, tabs, and scroll views for important interface elements."],
+      "exceptions": ["Digital Crown presses remain reserved for system functionality."],
+      "review_note": "Recovered the omitted navigation-anchor rule and preserved vertical layout and reserved-press constraints."
+    },
+    "HIG-INPUTS-DIGITAL-CROWN-0005": {
+      "source": {"source_hash": "6139e3c478d11815d0e3242631d1b5010fcc4ea45f77f3b454f15cda9ca22bfa", "source_sentence_hash": "d2c7464fb95515d135cb87d0e5d9672ed4287b9406e6019b7851cee52b5eb2cc", "section_path": ["Digital Crown", "Apple Watch"]},
+      "title": "Back Digital Crown navigation with touch",
+      "statement": {"en": "Back every Digital Crown navigation interaction with a corresponding touch interaction.", "ja": "すべてのDigital Crown navigation interactionを対応するtouch interactionで補完する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["touch", "digital-crown"]},
+      "conditions": ["The watchOS app anchors navigation or another interaction to the Digital Crown."],
+      "review_note": "Recovered the explicit Be sure requirement and recorded both touch and Digital Crown modalities."
+    },
+    "HIG-INPUTS-DIGITAL-CROWN-0006": {
+      "source": {"source_hash": "6139e3c478d11815d0e3242631d1b5010fcc4ea45f77f3b454f15cda9ca22bfa", "source_sentence_hash": "6084fd6e3e830d37e4d7dd2106cc46ced41cb91fd2d40d9aa640f33f9d43958e", "section_path": ["Digital Crown", "Apple Watch"]},
+      "title": "Match interface updates to Digital Crown speed",
+      "statement": {"en": "Match watchOS interface update speed to Digital Crown turning speed.", "ja": "watchOS interfaceのupdate speedをDigital Crownのturning speedに合わせる。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["digital-crown"]},
+      "conditions": ["Preserve the precise control people expect from crown rotation."],
+      "review_note": "Recovered the omitted speed-matching rule and recorded the precision rationale."
+    },
+    "HIG-INPUTS-DIGITAL-CROWN-0007": {
+      "source": {"source_hash": "6139e3c478d11815d0e3242631d1b5010fcc4ea45f77f3b454f15cda9ca22bfa", "source_sentence_hash": "6084fd6e3e830d37e4d7dd2106cc46ced41cb91fd2d40d9aa640f33f9d43958e", "section_path": ["Digital Crown", "Apple Watch"]},
+      "title": "Avoid selection-blocking Digital Crown update rates",
+      "statement": {"en": "Avoid interface update rates that make Digital Crown values difficult to select.", "ja": "Digital Crown valueを選びにくくするinterface update rateを避ける。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["digital-crown"]},
+      "conditions": ["People use crown rotation to select a value."],
+      "review_note": "Split the direct update-rate avoidance from the source sentence's speed-matching guidance."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

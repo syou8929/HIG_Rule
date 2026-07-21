@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 240
-- Retained MUST: 219
+- Reviewed rules: 241
+- Retained MUST: 220
 - Retained MUST_NOT: 21
 - Normative level changes: 19
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:48:37Z
+- Reviewed at: 2026-07-21T19:57:38Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -102,6 +102,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0026 — Retained MUST after confirming the explicit Make sure requirement for direct, immediate manipulation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0030 — Retained MUST after confirming the explicit Make sure discoverability requirement for custom double tap. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0034 — Retained MUST after confirming the explicit Make sure stationary-field requirement during handwriting. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-DIGITAL-CROWN-0005 — Recovered MUST from the explicit Be sure directive for corresponding touch-screen interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
 - HIG-INPUTS-EYES-0001 — Retained MUST after confirming the accessibility-critical Always directive to provide multiple interaction methods, including alternatives to eye input. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0013 — Recovered and retained MUST after confirming the explicit Make sure requirement to keep primary-task objects within the field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0016 — Recovered and retained MUST after confirming the conditional Be sure requirement for an overall multi-element highlight shape or region. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
@@ -315,6 +316,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0026 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure requirement for direct, immediate manipulation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0030 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure discoverability requirement for custom double tap. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0034 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure stationary-field requirement during handwriting. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-DIGITAL-CROWN-0005 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive for corresponding touch-screen interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
 - HIG-INPUTS-EYES-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the accessibility-critical Always directive to provide multiple interaction methods, including alternatives to eye input. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0013 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Make sure requirement to keep primary-task objects within the field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional Be sure requirement for an overall multi-element highlight shape or region. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))

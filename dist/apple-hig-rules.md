@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:55:55.110Z. 2425 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:59:24.941Z. 2429 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1908,9 +1908,13 @@ Generated 2026-07-21T19:55:55.110Z. 2425 active rules; 3 deprecated rules.
 - **HIG-INPUTS-CAMERA-CONTROL-0010 · AVOID · high** — Avoid duplicating controls between the viewfinder and Camera Control overlay. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
 ### digital-crown
 
-- **HIG-INPUTS-DIGITAL-CROWN-0001 · MAY · low** — Evaluate whether using the Digital Crown to inspect data in contexts where navigation isn’t necessary is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
-- **HIG-INPUTS-DIGITAL-CROWN-0002 · SHOULD · low** — Make visual feedback in response to Digital Crown interactions available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
-- **HIG-INPUTS-DIGITAL-CROWN-0003 · SHOULD · low** — Choose or apply the default haptic feedback when it makes sense in your app in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- **HIG-INPUTS-DIGITAL-CROWN-0001 · MAY · high** — Consider using the Digital Crown to inspect data when navigation isn't needed. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- **HIG-INPUTS-DIGITAL-CROWN-0002 · SHOULD · high** — Provide visual feedback for every Digital Crown interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- **HIG-INPUTS-DIGITAL-CROWN-0003 · SHOULD · high** — Use default Digital Crown haptic feedback when it fits the watchOS experience. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- **HIG-INPUTS-DIGITAL-CROWN-0004 · SHOULD · high** — Use the Digital Crown as the primary anchor for watchOS app navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- **HIG-INPUTS-DIGITAL-CROWN-0005 · MUST · high** — Back every Digital Crown navigation interaction with a corresponding touch interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- **HIG-INPUTS-DIGITAL-CROWN-0006 · SHOULD · high** — Match watchOS interface update speed to Digital Crown turning speed. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- **HIG-INPUTS-DIGITAL-CROWN-0007 · AVOID · high** — Avoid interface update rates that make Digital Crown values difficult to select. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
 ### eyes
 
 - **HIG-INPUTS-EYES-0001 · MUST · high** — Give people multiple ways to interact with the app, including alternatives to using their eyes. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1395
-- Reviewed batches: 91
+- Reviewed rules: 1402
+- Reviewed batches: 92
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:54:15Z
+- Reviewed at: 2026-07-21T19:57:38Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -988,6 +988,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-CAMERA-CONTROL-0008 · high — Replaced the generic paraphrase and raised explicitly configured locked-device launch to privacy and explicit-intent priority. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
 - HIG-INPUTS-CAMERA-CONTROL-0009 · high — Specified Camera Control scope and recorded selection frequency, spacing, and system snapping behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
 - HIG-INPUTS-CAMERA-CONTROL-0010 · high — Split the direct duplicate-control avoidance from the broader distraction-minimization rule. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-DIGITAL-CROWN-0001 · high — Retained MAY, repaired the generated wording, and narrowed the Apple Watch section to watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- HIG-INPUTS-DIGITAL-CROWN-0002 · high — Repaired the generated wording, preserved the no-effect perception risk, and narrowed scope to watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- HIG-INPUTS-DIGITAL-CROWN-0003 · high — Repaired the generated wording, recorded detent alternatives, and narrowed scope to watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- HIG-INPUTS-DIGITAL-CROWN-0004 · high — Recovered the omitted navigation-anchor rule and preserved vertical layout and reserved-press constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- HIG-INPUTS-DIGITAL-CROWN-0005 · high — Recovered the explicit Be sure requirement and recorded both touch and Digital Crown modalities. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- HIG-INPUTS-DIGITAL-CROWN-0006 · high — Recovered the omitted speed-matching rule and recorded the precision rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
+- HIG-INPUTS-DIGITAL-CROWN-0007 · high — Split the direct update-rate avoidance from the source sentence's speed-matching guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
 - HIG-INPUTS-EYES-0001 · high — Retained the accessibility-critical Always requirement and made the alternative-input purpose explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0002 · high — Replaced the generic statement with the page's placement and eye-adjustment comfort context. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0003 · high — Preserved the 1-meter aim and the brief-viewing exception without promoting the aim to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))

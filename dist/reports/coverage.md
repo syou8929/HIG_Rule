@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2425
+- Active atomic rules: 2429
 - Pages without rules: 16
-- Low-confidence rules: 952
-- Rules requiring human review: 952
+- Low-confidence rules: 949
+- Rules requiring human review: 949
 - Reference notes: 929
 
 ## Rules by category
@@ -16,17 +16,17 @@
 - components: 858
 - foundations: 346
 - getting-started: 100
-- inputs: 197
+- inputs: 201
 - patterns: 289
 - technologies: 635
 
 ## Normative levels
 
-- AVOID: 321
+- AVOID: 322
 - MAY: 285
-- MUST: 219
+- MUST: 220
 - MUST_NOT: 21
-- SHOULD: 1579
+- SHOULD: 1581
 
 ## Rules by platform
 
@@ -35,13 +35,13 @@
 - ipados: 1618
 - macos: 1375
 - tvos: 1074
-- visionos: 1432
-- watchos: 1132
+- visionos: 1429
+- watchos: 1136
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2359
+- manual: 2363
 
 ## Blocked pages
 
@@ -413,9 +413,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-INPUTS-DIGITAL-CROWN-0001
-- HIG-INPUTS-DIGITAL-CROWN-0002
-- HIG-INPUTS-DIGITAL-CROWN-0003
 - HIG-INPUTS-GAME-CONTROLS-0001
 - HIG-INPUTS-GAME-CONTROLS-0004
 - HIG-INPUTS-GAME-CONTROLS-0005
@@ -1368,9 +1365,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-INPUTS-DIGITAL-CROWN-0001
-- HIG-INPUTS-DIGITAL-CROWN-0002
-- HIG-INPUTS-DIGITAL-CROWN-0003
 - HIG-INPUTS-GAME-CONTROLS-0001
 - HIG-INPUTS-GAME-CONTROLS-0004
 - HIG-INPUTS-GAME-CONTROLS-0005
