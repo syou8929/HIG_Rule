@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2574
+- Active atomic rules: 2594
 - Pages without rules: 16
-- Low-confidence rules: 890
-- Rules requiring human review: 890
-- Reference notes: 920
+- Low-confidence rules: 886
+- Rules requiring human review: 886
+- Reference notes: 917
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 691
+- technologies: 711
 
 ## Normative levels
 
-- AVOID: 345
-- MAY: 312
-- MUST: 247
+- AVOID: 347
+- MAY: 314
+- MUST: 251
 - MUST_NOT: 23
-- SHOULD: 1647
+- SHOULD: 1659
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1706
-- ipados: 1655
-- macos: 1409
-- tvos: 1109
-- visionos: 1452
-- watchos: 1165
+- ios: 1725
+- ipados: 1674
+- macos: 1410
+- tvos: 1110
+- visionos: 1453
+- watchos: 1166
 
 ## Rules by testability
 
-- hybrid: 67
-- manual: 2507
+- hybrid: 68
+- manual: 2526
 
 ## Blocked pages
 
@@ -752,10 +752,6 @@ None.
 - HIG-TECHNOLOGIES-ICLOUD-0008
 - HIG-TECHNOLOGIES-ICLOUD-0009
 - HIG-TECHNOLOGIES-ICLOUD-0010
-- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001
-- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0002
-- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0003
-- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0004
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0001
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0002
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0003
@@ -1645,10 +1641,6 @@ None.
 - HIG-TECHNOLOGIES-ICLOUD-0008
 - HIG-TECHNOLOGIES-ICLOUD-0009
 - HIG-TECHNOLOGIES-ICLOUD-0010
-- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001
-- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0002
-- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0003
-- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0004
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0001
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0002
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0003
@@ -2218,13 +2210,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/images · Images > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/images · Images > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Specifications — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Specifications > Icon sizes — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Specifications > Sticker sizes — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Immersion and passthrough — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.

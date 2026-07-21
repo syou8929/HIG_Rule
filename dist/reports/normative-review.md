@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 270
-- Retained MUST: 247
+- Reviewed rules: 274
+- Retained MUST: 251
 - Retained MUST_NOT: 23
-- Normative level changes: 37
+- Normative level changes: 41
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:34:02Z
+- Reviewed at: 2026-07-21T21:40:46Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -197,6 +197,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-ID-VERIFIER-0005 — Recovered the privacy-sensitive MUST from the explicit only-when restriction and preserved both legal and data-handling conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0006 — Recovered MUST from the explicit You must requirement for the additional entitlement. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0012 — Recovered MUST_NOT from the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0005 — Recovered MUST from the source's explicit needs-to requirement and preserved both usability qualities. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0007 — Recovered MUST from the explicit Make sure directive for compact-view availability. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0011 — Recovered MUST from the explicit Make sure directive and preserved each documented legibility context. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0019 — Recovered MUST from the explicit must-based file-size maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-NFC-0012 — Recovered MUST from the explicit must still provide requirement for an in-app scanning fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
@@ -458,6 +462,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-ID-VERIFIER-0005 · MUST · retained_with_atomicity_or_scope_correction — Recovered the privacy-sensitive MUST from the explicit only-when restriction and preserved both legal and data-handling conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0006 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You must requirement for the additional entitlement. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0012 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered MUST_NOT from the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0005 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the source's explicit needs-to requirement and preserved both usability qualities. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0007 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Make sure directive for compact-view availability. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Make sure directive and preserved each documented legibility context. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit must-based file-size maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0028 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))

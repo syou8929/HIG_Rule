@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:34:02Z",
+  "reviewed_at": "2026-07-21T21:40:46Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,55 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 270,
+  "reviewed_rule_count": 274,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0005": {
+      "title": "Ensure the primary iMessage experience is immediately understandable",
+      "statement": {
+        "en": "Ensure iMessage app functionality or content is easy to understand and immediately available.",
+        "ja": "iMessage appのfunctionalityまたはcontentを理解しやすく、すぐ利用できるようにする。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["People choose the app while continuing a conversation."],
+      "review_note": "Recovered MUST from the source's explicit needs-to requirement and preserved both usability qualities."
+    },
+    "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0007": {
+      "title": "Make sure frequent items are in the compact view",
+      "statement": {
+        "en": "Make sure the most frequently used iMessage app items are available in the compact view.",
+        "ja": "最も頻繁に使うiMessage app itemをcompact viewで利用できるようにする。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "review_note": "Recovered MUST from the explicit Make sure directive for compact-view availability."
+    },
+    "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0011": {
+      "title": "Make sure every sticker remains legible",
+      "statement": {
+        "en": "Make sure every sticker remains legible across backgrounds and when rotated or scaled.",
+        "ja": "すべてのstickerをさまざまなbackgroundやrotation、scaleでもlegibleに保つ。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Review both static images and short animations."],
+      "review_note": "Recovered MUST from the explicit Make sure directive and preserved each documented legibility context."
+    },
+    "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0019": {
+      "title": "Keep every sticker file at 500 KB or smaller",
+      "statement": {
+        "en": "Keep every sticker file at 500 KB or smaller.",
+        "ja": "すべてのsticker fileを500 KB以下にする。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "review_note": "Recovered MUST from the explicit must-based file-size maximum."
+    },
     "HIG-TECHNOLOGIES-ID-VERIFIER-0005": {
       "title": "Use Data Transfer only for legally required data handling",
       "statement": {

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1607
-- Reviewed batches: 106
+- Reviewed rules: 1631
+- Reviewed batches: 107
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:34:02Z
+- Reviewed at: 2026-07-21T21:40:46Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1540,6 +1540,30 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-ID-VERIFIER-0011 · high — Recovered the direct symbol avoidance and retained the examples as nonexhaustive. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0012 · high — Recovered MUST_NOT from the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0013 · high — Recorded the descriptive platform limitation at AVOID rather than strengthening it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001 · high — Recorded the conversational context and preserved Prefer at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0002 · high — Preserved Consider and captured both documented content and collaboration uses. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0003 · high — Retained all three documented sticker-design qualities. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0004 · high — Recorded the compact-view location and kept essential-feature guidance atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0005 · high — Recovered MUST from the explicit needs-to requirement and preserved both usability qualities. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0006 · high — Preserved the multiple-offering condition and Consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0007 · high — Recovered MUST from the explicit Make sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0008 · high — Separated the expanded-view allocation from the explicit compact-view MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0009 · high — Preserved the source's In general qualifier as a default rather than an absolute. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0010 · high — Recovered the keyboard placement and its content-visibility purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0011 · high — Recovered MUST from the explicit Make sure directive and preserved every documented transformation. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0012 · high — Preserved optionality and all documented surrounding content types. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0013 · high — Recovered the omitted VoiceOver requirement and applied accessibility priority without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0014 · high — Recorded the per-extension source asset and the system-applied mask. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0015 · high — Recovered every icon-table row and retained missing @3x values as explicit omissions. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0016 · high — Recorded the three supported choices and the content-fit criterion. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0017 · high — Retained direct don't guidance at AVOID under the conservative strength policy. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0018 · high — Recovered every sticker-size table value and the runtime-downscaling behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0019 · high — Recovered the explicit must-based file-size maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0020 · high — Recovered the PNG transparency and animation capabilities from the format table. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0021 · high — Recovered the APNG transparency and animation capabilities from the format table. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0022 · high — Recovered the GIF transparency and animation capabilities from the format table. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0023 · high — Recovered both JPEG limitations without strengthening the table guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0024 · high — Recorded the descriptive platform limitation at AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-NFC-0001 · high — Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0002 · high — Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0003 · high — Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))

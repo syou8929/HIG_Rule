@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T21:38:53.092Z. 2574 active rules; 4 deprecated rules.
+Generated 2026-07-21T21:48:25.271Z. 2594 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2579,10 +2579,30 @@ Generated 2026-07-21T21:38:53.092Z. 2574 active rules; 4 deprecated rules.
 - **HIG-TECHNOLOGIES-ID-VERIFIER-0013 · AVOID · high** — Avoid using ID Verifier on iPadOS, macOS, tvOS, visionOS, or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 ### imessage-apps-and-stickers
 
-- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001 · SHOULD · low** — Favor providing one primary experience in your iMessage app when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
-- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0002 · MAY · low** — Evaluate whether surfacing content from your iOS or iPadOS app is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
-- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0003 · SHOULD · low** — Apply the documented iMessage apps and stickers guidance to create stickers that are expressive, inclusive, and versatile. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
-- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0004 · SHOULD · low** — Present essential features in the compact view in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001 · SHOULD · high** — Prefer providing one primary experience in an iMessage app. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0002 · MAY · high** — Consider surfacing shareable content or a simple collaborative task from the related iOS or iPadOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0003 · SHOULD · high** — Create stickers that are expressive, inclusive, and versatile. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0004 · SHOULD · high** — Present essential iMessage app features in the compact view. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0005 · MUST · high** — Ensure iMessage app functionality or content is easy to understand and immediately available. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0006 · MAY · high** — When offering distinct functionality or content collections, consider a separate iMessage app for each one. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0007 · MUST · high** — Make sure the most frequently used iMessage app items are available in the compact view. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0008 · SHOULD · high** — Reserve additional iMessage app content and features for the expanded view. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0009 · SHOULD · high** — By default, let people edit text only in the expanded iMessage app view. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0010 · SHOULD · high** — Display the keyboard in the expanded view while people edit iMessage app content. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0011 · MUST · high** — Make sure every sticker remains legible across backgrounds and when rotated or scaled. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0012 · MAY · high** — Consider transparency to help a sticker integrate visually with conversation content. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0013 · SHOULD · high** — Provide a localized alternative description for every sticker. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0014 · SHOULD · high** — Supply a square-cornered icon for each iMessage app or sticker-pack extension. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0015 · SHOULD · high** — Create iMessage app and sticker-pack icons at the documented pixel dimensions for each usage and scale. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0016 · SHOULD · high** — Choose the small, regular, or large sticker size that works best for the content. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0017 · AVOID · high** — Avoid mixing sticker sizes within a single sticker pack. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0018 · SHOULD · high** — Create @3x sticker images at 300×300 pixels for small, 408×408 for regular, or 618×618 for large. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0019 · MUST · high** — Keep every sticker file at 500 KB or smaller. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0020 · SHOULD · high** — Use PNG for 8-bit transparency without animation. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0021 · SHOULD · high** — Use APNG for 8-bit transparency with animation. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0022 · SHOULD · high** — Use GIF for single-color transparency with animation. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0023 · SHOULD · high** — Use JPEG only when neither transparency nor animation is needed. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0024 · AVOID · high** — Avoid using iMessage apps and stickers on macOS, tvOS, visionOS, or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 ### in-app-purchase
 
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0001 · SHOULD · low** — Preserve people’s ability to experience your app before making a purchase. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
