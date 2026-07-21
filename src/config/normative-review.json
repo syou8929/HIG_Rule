@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:21:14Z",
+  "reviewed_at": "2026-07-21T19:48:37Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,30 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 238,
+  "reviewed_rule_count": 240,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-INPUTS-ACTION-BUTTON-0013": {
+      "title": "Ensure subsequent Action button presses fit the action",
+      "statement": {"en": "Ensure each subsequent Action button press follows logically from the first and fits the current context.", "ja": "Action buttonの各subsequent pressをfirst pressから論理的につながりcurrent contextに合うようにする。"},
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["People may use the Action button without looking at the screen."],
+      "review_note": "Recovered MUST from the explicit needs-to requirement for logical and contextual subsequent presses."
+    },
+    "HIG-INPUTS-ACTION-BUTTON-0014": {
+      "title": "Support expected Action-button pausing",
+      "statement": {"en": "Support pausing with the Action and side buttons unless pausing creates a negative experience.", "ja": "negative experienceを生む場合を除きAction buttonとside buttonによるpauseをsupportする。"},
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["People press the Action button and side button together."],
+      "exceptions": ["Do not pause a dive when pausing could endanger the diver or hide critical dive state."],
+      "review_note": "Recovered conditional MUST from the explicit Be sure directive and preserved the safety exception."
+    },
     "HIG-COMPONENTS-MENUS-0010": {
       "title": "Keep unavailable submenus openable", "statement": {"en": "Keep a submenu available even when every nested item is unavailable.", "ja": "nested itemがすべてunavailableでもsubmenu自体は利用可能に保つ。"},
       "confidence": "high", "review_required": false, "conditions": ["Let people open the submenu and learn which commands it contains."],

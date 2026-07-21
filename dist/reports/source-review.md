@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1371
-- Reviewed batches: 89
+- Reviewed rules: 1385
+- Reviewed batches: 90
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:44:26Z
+- Reviewed at: 2026-07-21T19:48:37Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -928,6 +928,20 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0009 · high — Split Digital Crown navigation from the source sentence's separate hierarchy-depth guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0010 · high — Split direct app opening from the source sentence's separate complication-display guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0011 · high — Split material hierarchy from the source sentence's separate background-information guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- HIG-INPUTS-ACTION-BUTTON-0001 · high — Replaced the generated paraphrase and preserved the system-provided open-app exception. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0002 · high — Replaced the generic preference paraphrase and separated repeated-content avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0003 · high — Specified iOS scope and recorded both documented lightweight alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0004 · high — Retained MAY and recorded the workout, dive, learnability, memorability, and cognitive-load limits. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0005 · high — Repaired the preference paraphrase and recorded the in-interface stopping alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0006 · high — Recovered the omitted per-action labeling rule and its Settings context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0007 · high — Recovered the capitalization constraint from the label-format list. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0008 · high — Recovered the leading-verb constraint from the label-format list. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0009 · high — Recovered the present-tense constraint from the label-format list. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0010 · high — Recovered the article-and-preposition exclusion as an AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0011 · high — Recovered the explicit three-word maximum and short-as-possible preference. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0012 · high — Split repeated-content avoidance from the source sentence's separate system-instruction preference. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0013 · high — Recovered the explicit needs-to requirement and separated it from optional secondary-function guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0014 · high — Recovered the conditional Be sure requirement and preserved the diver-safety exception. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0001 · high — Reviewed iPadOS Apple Pencil and Scribble behavior, recovered thirteen omitted atomic rules, and preserved conditional and optional strength. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0002 · high — Recorded control activation and the Scribble input exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0003 · high — Repaired the statement while the pre-mode avoidance is represented separately. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))

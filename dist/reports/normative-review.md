@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 238
-- Retained MUST: 217
+- Reviewed rules: 240
+- Retained MUST: 219
 - Retained MUST_NOT: 21
 - Normative level changes: 19
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:21:14Z
+- Reviewed at: 2026-07-21T19:48:37Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -96,6 +96,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030 — Retained MUST after confirming the explicit Make sure requirement that game content remain perceivable. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 — Retained MUST after confirming the conditional Be sure requirement for respectful cultural and language references. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0015 — Retained MUST after confirming the conditional Make sure requirement for direct-gesture distance and duration. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-INPUTS-ACTION-BUTTON-0013 — Recovered MUST from the explicit needs-to requirement for logical and contextual subsequent presses. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0014 — Recovered conditional MUST from the explicit Be sure directive and preserved the safety exception. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0024 — Retained MUST after confirming the explicit Ensure requirement for Apple Pencil-responsive controls. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0026 — Retained MUST after confirming the explicit Make sure requirement for direct, immediate manipulation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0030 — Retained MUST after confirming the explicit Make sure discoverability requirement for custom double tap. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
@@ -307,6 +309,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure requirement that game content remain perceivable. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Be sure requirement for respectful cultural and language references. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0015 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Make sure requirement for direct-gesture distance and duration. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-INPUTS-ACTION-BUTTON-0013 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs-to requirement for logical and contextual subsequent presses. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- HIG-INPUTS-ACTION-BUTTON-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered conditional MUST from the explicit Be sure directive and preserved the safety exception. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0024 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure requirement for Apple Pencil-responsive controls. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0026 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure requirement for direct, immediate manipulation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0030 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure discoverability requirement for custom double tap. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))

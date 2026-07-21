@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:46:33.514Z. 2415 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:52:27.660Z. 2424 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1842,11 +1842,20 @@ Generated 2026-07-21T19:46:33.514Z. 2415 active rules; 3 deprecated rules.
 
 ### action-button
 
-- **HIG-INPUTS-ACTION-BUTTON-0001 · SHOULD · low** — Ensure the experience accommodates the Action button with a set of your app’s essential functions. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
-- **HIG-INPUTS-ACTION-BUTTON-0002 · SHOULD · low** — Favor letting the system show people how to use the Action button with your app when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
-- **HIG-INPUTS-ACTION-BUTTON-0003 · SHOULD · low** — Preserve people’s ability to use your actions without leaving their current context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
-- **HIG-INPUTS-ACTION-BUTTON-0004 · MAY · low** — Evaluate whether offering a secondary function that supports or advances the primary action people choose is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
-- **HIG-INPUTS-ACTION-BUTTON-0005 · SHOULD · low** — Favor using subsequent button presses to support additional functionality rather than to stop or conclude a function when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0001 · SHOULD · high** — Offer a set of essential app functions through the Action button. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0002 · SHOULD · high** — Prefer the system's instructions for showing people how to use the Action button with the app. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0003 · SHOULD · high** — Let people use iOS Action button actions without leaving their current context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0004 · MAY · high** — Consider a secondary watchOS Action button function that supports or advances the selected primary action. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0005 · SHOULD · high** — Prefer later watchOS Action button presses for additional functionality instead of stopping or concluding a function. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0006 · SHOULD · high** — Give each supported Action button action a short, descriptive label. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0007 · SHOULD · high** — Use title-style capitalization in Action button labels. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0008 · SHOULD · high** — Begin each Action button label with a verb. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0009 · SHOULD · high** — Use present tense in Action button labels. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0010 · AVOID · high** — Avoid articles and prepositions in Action button labels. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0011 · SHOULD · high** — Keep each Action button label as short as possible, with a maximum of three words. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0012 · AVOID · high** — Avoid repeating Action button guidance or usage tips the system already provides. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0013 · MUST · high** — Ensure each subsequent Action button press follows logically from the first and fits the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
+- **HIG-INPUTS-ACTION-BUTTON-0014 · MUST · high** — Support pausing with the Action and side buttons unless pausing creates a negative experience. ([source](https://developer.apple.com/design/human-interface-guidelines/action-button))
 ### apple-pencil-and-scribble
 
 - **HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0001 · SHOULD · high** — Ensure the experience accommodates behaviors people intuitively expect when using a marking instrument. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))

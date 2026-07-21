@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2415
+- Active atomic rules: 2424
 - Pages without rules: 16
-- Low-confidence rules: 966
-- Rules requiring human review: 966
+- Low-confidence rules: 961
+- Rules requiring human review: 961
 - Reference notes: 929
 
 ## Rules by category
@@ -16,32 +16,32 @@
 - components: 858
 - foundations: 346
 - getting-started: 100
-- inputs: 187
+- inputs: 196
 - patterns: 289
 - technologies: 635
 
 ## Normative levels
 
-- AVOID: 318
+- AVOID: 320
 - MAY: 285
-- MUST: 217
+- MUST: 219
 - MUST_NOT: 21
-- SHOULD: 1574
+- SHOULD: 1579
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1646
+- ios: 1653
 - ipados: 1618
 - macos: 1375
 - tvos: 1074
 - visionos: 1432
-- watchos: 1123
+- watchos: 1132
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2349
+- manual: 2358
 
 ## Blocked pages
 
@@ -413,11 +413,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-INPUTS-ACTION-BUTTON-0001
-- HIG-INPUTS-ACTION-BUTTON-0002
-- HIG-INPUTS-ACTION-BUTTON-0003
-- HIG-INPUTS-ACTION-BUTTON-0004
-- HIG-INPUTS-ACTION-BUTTON-0005
 - HIG-INPUTS-CAMERA-CONTROL-0001
 - HIG-INPUTS-CAMERA-CONTROL-0002
 - HIG-INPUTS-CAMERA-CONTROL-0003
@@ -1382,11 +1377,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-INPUTS-ACTION-BUTTON-0001
-- HIG-INPUTS-ACTION-BUTTON-0002
-- HIG-INPUTS-ACTION-BUTTON-0003
-- HIG-INPUTS-ACTION-BUTTON-0004
-- HIG-INPUTS-ACTION-BUTTON-0005
 - HIG-INPUTS-CAMERA-CONTROL-0001
 - HIG-INPUTS-CAMERA-CONTROL-0002
 - HIG-INPUTS-CAMERA-CONTROL-0003
