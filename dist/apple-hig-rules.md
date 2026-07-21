@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T21:08:41.748Z. 2518 active rules; 3 deprecated rules.
+Generated 2026-07-21T21:13:29.117Z. 2527 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -2177,10 +2177,19 @@ Generated 2026-07-21T21:08:41.748Z. 2518 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-AIRPLAY-0014 · SHOULD · low** — Refer to airPlay if appropriate and to add clarity. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
 ### always-on
 
-- **HIG-TECHNOLOGIES-ALWAYS-ON-0001 · SHOULD · low** — Maintain other types of personal information glanceable when it makes sense. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
-- **HIG-TECHNOLOGIES-ALWAYS-ON-0002 · SHOULD · low** — Maintain important content legible and dim nonessential content. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
-- **HIG-TECHNOLOGIES-ALWAYS-ON-0003 · SHOULD · low** — Apply the documented Always On guidance to maintain a consistent layout. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
-- **HIG-TECHNOLOGIES-ALWAYS-ON-0004 · SHOULD · low** — Hide sensitive information. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0001 · SHOULD · high** — Keep nonsensitive personal information glanceable in Always On when it makes sense. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0002 · SHOULD · high** — Keep important content legible in the Always On state. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0003 · SHOULD · high** — Maintain a consistent layout throughout the Always On experience. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0004 · MUST · high** — Redact sensitive personal information in the Always On state. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0005 · MUST · high** — Hide personal information that may appear in an Always On notification. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0006 · SHOULD · high** — Dim nonessential content in the Always On state. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0007 · MAY · high** — When Always On content uses rich images or large color areas, consider removing images and using dimmed colors. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0008 · AVOID · high** — Avoid distracting interface changes when Always On begins or ends and throughout the experience. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0009 · SHOULD · high** — When Always On begins, prefer transitioning an interactive component to an unavailable appearance instead of removing it. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0010 · SHOULD · high** — Aim to make Always On interface updates infrequent and subtle. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0011 · SHOULD · high** — Transition motion gracefully to a resting state as Always On begins. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0012 · AVOID · high** — Avoid stopping motion instantly when Always On begins. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0013 · AVOID · high** — Avoid relying on Always On in iPadOS, macOS, tvOS, or visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 ### app-clips
 
 - **HIG-TECHNOLOGIES-APP-CLIPS-0001 · SHOULD · high** — Apply the documented App Clips guidance to allow people to complete a task or a demo in your App Clip. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))

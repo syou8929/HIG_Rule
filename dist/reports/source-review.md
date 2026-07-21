@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1524
-- Reviewed batches: 102
+- Reviewed rules: 1537
+- Reviewed batches: 103
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:04:48Z
+- Reviewed at: 2026-07-21T21:11:09Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1340,6 +1340,19 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-UNDO-AND-REDO-0010 · high — Recovered toolbar placement separately from the symbol requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 · high — Recovered and retained the explicit You need requirement and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-UNDO-AND-REDO-0012 · high — Split and preserved both standard macOS keyboard mappings as one paired shortcut rule. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0001 · high — Preserved the source condition, clarified that sensitive content is excluded, and recorded examples and opt-out behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0002 · high — Narrowed the existing combined lead to the important-content legibility action. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0003 · high — Repaired the generic generated statement and recorded the full state-transition scope. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0004 · high — Retained the privacy requirement at MUST because the source calls redaction crucial and gives sensitive financial and health examples. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0005 · high — Recovered the separate notification privacy MUST from the explicit you need directive. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0006 · high — Separated nonessential-content dimming from important-content legibility and preserved the documented targets. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0007 · high — Recovered the image-and-color option and preserved its conditional consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0008 · high — Separated the direct change warning and retained its start, duration, and end scope. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0009 · high — Recovered the preferred state transition and the explicit removal alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0010 · high — Recovered the update-frequency and subtlety guidance without strengthening the source's aim wording. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0011 · high — Separated the positive transition behavior from the instant-stop warning. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0012 · high — Separated the embedded don't clause and retained it at AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- HIG-TECHNOLOGIES-ALWAYS-ON-0013 · high — Recorded unsupported platforms conservatively as AVOID rather than converting descriptive support text to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-APP-CLIPS-0001 · high — Reviewed the rendered source context for “Allow people to complete a task or a demo in your App Clip” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0002 · high — Reviewed the rendered source context for “Don’t use App Clips solely for marketing purposes” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0003 · high — Reviewed the rendered source context for “Avoid using web views in your App Clip” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))

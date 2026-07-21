@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2518
+- Active atomic rules: 2527
 - Pages without rules: 16
-- Low-confidence rules: 917
-- Rules requiring human review: 917
-- Reference notes: 927
+- Low-confidence rules: 913
+- Rules requiring human review: 913
+- Reference notes: 926
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 635
+- technologies: 644
 
 ## Normative levels
 
-- AVOID: 332
-- MAY: 302
-- MUST: 235
+- AVOID: 335
+- MAY: 303
+- MUST: 237
 - MUST_NOT: 21
-- SHOULD: 1628
+- SHOULD: 1631
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1661
-- ipados: 1624
-- macos: 1406
-- tvos: 1099
-- visionos: 1449
-- watchos: 1154
+- ios: 1669
+- ipados: 1625
+- macos: 1407
+- tvos: 1100
+- visionos: 1450
+- watchos: 1162
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2452
+- manual: 2461
 
 ## Blocked pages
 
@@ -580,10 +580,6 @@ None.
 - HIG-TECHNOLOGIES-AIRPLAY-0012
 - HIG-TECHNOLOGIES-AIRPLAY-0013
 - HIG-TECHNOLOGIES-AIRPLAY-0014
-- HIG-TECHNOLOGIES-ALWAYS-ON-0001
-- HIG-TECHNOLOGIES-ALWAYS-ON-0002
-- HIG-TECHNOLOGIES-ALWAYS-ON-0003
-- HIG-TECHNOLOGIES-ALWAYS-ON-0004
 - HIG-TECHNOLOGIES-APPLE-PAY-0001
 - HIG-TECHNOLOGIES-APPLE-PAY-0002
 - HIG-TECHNOLOGIES-APPLE-PAY-0003
@@ -1500,10 +1496,6 @@ None.
 - HIG-TECHNOLOGIES-AIRPLAY-0012
 - HIG-TECHNOLOGIES-AIRPLAY-0013
 - HIG-TECHNOLOGIES-AIRPLAY-0014
-- HIG-TECHNOLOGIES-ALWAYS-ON-0001
-- HIG-TECHNOLOGIES-ALWAYS-ON-0002
-- HIG-TECHNOLOGIES-ALWAYS-ON-0003
-- HIG-TECHNOLOGIES-ALWAYS-ON-0004
 - HIG-TECHNOLOGIES-APPLE-PAY-0001
 - HIG-TECHNOLOGIES-APPLE-PAY-0002
 - HIG-TECHNOLOGIES-APPLE-PAY-0003
@@ -1948,7 +1940,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/alerts · Alerts > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/alerts · Alerts > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/always-on · Always On > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/always-on · Always On > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/always-on · Always On > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/always-on · Always On > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/always-on · Always On > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

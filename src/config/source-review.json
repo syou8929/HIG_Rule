@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:04:48Z",
+  "reviewed_at": "2026-07-21T21:11:09Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2565,6 +2565,18 @@
         "HIG-PATTERNS-SETTINGS-0012", "HIG-PATTERNS-SETTINGS-0013", "HIG-PATTERNS-SETTINGS-0014", "HIG-PATTERNS-SETTINGS-0015", "HIG-PATTERNS-SETTINGS-0016", "HIG-PATTERNS-SETTINGS-0017"
       ],
       "review_note": "Completed both platform sections, preserved the existing App-menu rule, recovered eleven atomic rules, retained one explicit Always-based MUST, and kept the watchOS limitation and alternatives at AVOID or MAY."
+    },
+    {
+      "id": "priority-4-always-on-context-2026-07-21",
+      "reviewed_at": "2026-07-21T21:11:09Z",
+      "review_method": "Rendered Apple HIG Always On guidance, privacy context, motion guidance, and platform limitations were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/always-on", "source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753"}],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-ALWAYS-ON-0001", "HIG-TECHNOLOGIES-ALWAYS-ON-0002", "HIG-TECHNOLOGIES-ALWAYS-ON-0003", "HIG-TECHNOLOGIES-ALWAYS-ON-0004", "HIG-TECHNOLOGIES-ALWAYS-ON-0005", "HIG-TECHNOLOGIES-ALWAYS-ON-0006", "HIG-TECHNOLOGIES-ALWAYS-ON-0007",
+        "HIG-TECHNOLOGIES-ALWAYS-ON-0008", "HIG-TECHNOLOGIES-ALWAYS-ON-0009", "HIG-TECHNOLOGIES-ALWAYS-ON-0010", "HIG-TECHNOLOGIES-ALWAYS-ON-0011", "HIG-TECHNOLOGIES-ALWAYS-ON-0012", "HIG-TECHNOLOGIES-ALWAYS-ON-0013"
+      ],
+      "review_note": "Completed the page, preserved four existing IDs, recovered nine atomic rules, retained two privacy MUST rules with explicit crucial or need support, and kept descriptive platform limitations at AVOID."
     }
   ],
   "rules": {
@@ -5751,6 +5763,73 @@
       "title": "Consider in-app access to essential watchOS options", "statement": {"en": "Consider exposing a small number of essential watchOS options at the bottom of the main view or in a More menu.", "ja": "少数のessentialなwatchOS optionをmain view下部またはMore menuで提供することを検討する。"}, "normative_level": "MAY",
       "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
       "conditions": ["Use the More menu alternative when people need to reconfigure objects."], "review_note": "Recovered both source-provided in-app alternatives and preserved the conditional consider strength."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0001": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "3dbf06d68be54fce29ec46a8e8d5cb09d89e118ef9635e89d4176a14a26418f3", "section_path": ["Always On", "Best practices"]},
+      "title": "Keep appropriate personal information glanceable in Always On", "statement": {"en": "Keep nonsensitive personal information glanceable in Always On when it makes sense.", "ja": "適切な場合、sensitiveでないpersonal informationをAlways Onでglanceableに保つ。"},
+      "conditions": ["Useful examples include workout updates on Apple Watch and timely travel or ride updates on iPhone."],
+      "exceptions": ["People can turn off Always On when they don't want information to remain visible."], "review_note": "Preserved the source condition, clarified that sensitive content is excluded, and recorded examples and opt-out behavior."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0002": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "922cded85a75b7739c20708e3f76892fcddfc39578e1d032234fc745f092779c", "section_path": ["Always On", "Best practices"]},
+      "title": "Keep important Always On content legible", "statement": {"en": "Keep important content legible in the Always On state.", "ja": "Always On stateで重要なcontentをlegibleに保つ。"},
+      "conditions": ["Use hierarchy and contrast to preserve prominence for important information."], "review_note": "Narrowed the existing combined lead to the important-content legibility action."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0003": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "d3a77ac250bff8f9f22ac44cd4fcc0ac228b60b6b91a4e5a78c9c75e74f90648", "section_path": ["Always On", "Best practices"]},
+      "title": "Maintain a consistent Always On layout", "statement": {"en": "Maintain a consistent layout throughout the Always On experience.", "ja": "Always On experienceを通してlayoutを一貫させる。"},
+      "conditions": ["Preserve spatial continuity as Always On begins, continues, and ends."], "review_note": "Repaired the generic generated statement and recorded the full state-transition scope."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0004": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "f30ef4d5fed42885f64f36ba1dc6d72b98e03c8852411df622a4d50d9e2be5d8", "section_path": ["Always On", "Best practices"]},
+      "priority_rank": 3,
+      "review_note": "Retained the privacy requirement at MUST because the source calls redaction crucial and gives sensitive financial and health examples."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0005": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "236cfdf82214ce5f61d0e73000f201736ab4e86ca13833a6aa52f31aaf7d6869", "section_path": ["Always On", "Best practices"]},
+      "priority_rank": 3,
+      "review_note": "Recovered the separate notification privacy MUST from the explicit you need directive."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0006": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "922cded85a75b7739c20708e3f76892fcddfc39578e1d032234fc745f092779c", "section_path": ["Always On", "Best practices"]},
+      "title": "Dim nonessential Always On content", "statement": {"en": "Dim nonessential content in the Always On state.", "ja": "Always On stateではessentialでないcontentをdim表示する。"},
+      "conditions": ["Secondary text, images, color fills, row backgrounds, and additional details can receive less prominence."], "review_note": "Separated nonessential-content dimming from important-content legibility and preserved the documented targets."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0007": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "6e34d5ec8d08a1727d5fdf5b2e01b5ff8bd58cdd0c64b0276c210e536a462fb1", "section_path": ["Always On", "Best practices"]},
+      "title": "Consider simplifying rich imagery and color in Always On", "statement": {"en": "When Always On content uses rich images or large color areas, consider removing images and using dimmed colors.", "ja": "Always On contentでrich imageや大きなcolor areaを使う場合、imageの削除とdimmed colorを検討する。"}, "normative_level": "MAY",
+      "conditions": ["The imagery or color would otherwise compete with important information."], "review_note": "Recovered the image-and-color option and preserved its conditional consider strength."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0008": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "6f4da4004e1ae3d55ba7df7ba0a8699dd8ee462f0ff20d0502464d004a5a3ac2", "section_path": ["Always On", "Best practices"]},
+      "title": "Avoid distracting Always On interface changes", "statement": {"en": "Avoid distracting interface changes when Always On begins or ends and throughout the experience.", "ja": "Always Onの開始時、終了時、experience中のdistractingなinterface changeを避ける。"}, "normative_level": "AVOID",
+      "conditions": ["Unnecessary iPhone changes can remain visible when the device lies face up."], "review_note": "Separated the direct change warning and retained its start, duration, and end scope."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0009": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "6f4da4004e1ae3d55ba7df7ba0a8699dd8ee462f0ff20d0502464d004a5a3ac2", "section_path": ["Always On", "Best practices"]},
+      "title": "Prefer unavailable appearance over removal in Always On", "statement": {"en": "When Always On begins, prefer transitioning an interactive component to an unavailable appearance instead of removing it.", "ja": "Always On開始時はinteractive componentを削除せずunavailable appearanceへtransitionすることを優先する。"},
+      "conditions": ["The component becomes unavailable while Always On is active."], "review_note": "Recovered the preferred state transition and the explicit removal alternative."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0010": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "6f4da4004e1ae3d55ba7df7ba0a8699dd8ee462f0ff20d0502464d004a5a3ac2", "section_path": ["Always On", "Best practices"]},
+      "title": "Keep Always On interface updates infrequent and subtle", "statement": {"en": "Aim to make Always On interface updates infrequent and subtle.", "ja": "Always Onのinterface updateをinfrequentかつsubtleにする。"},
+      "conditions": ["Pause granular updates when a less frequent meaningful update is sufficient."], "review_note": "Recovered the update-frequency and subtlety guidance without strengthening the source's aim wording."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0011": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "129c96df31123790062eb5da6b9203afea1fb8ebbacd12caad91c53828dd47dd", "section_path": ["Always On", "Best practices"]},
+      "title": "Transition Always On motion gracefully to rest", "statement": {"en": "Transition motion gracefully to a resting state as Always On begins.", "ja": "Always On開始時にmotionをresting stateへgracefulにtransitionする。"},
+      "conditions": ["Smoothly finish the current motion to communicate the state change."], "review_note": "Separated the positive transition behavior from the instant-stop warning."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0012": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "129c96df31123790062eb5da6b9203afea1fb8ebbacd12caad91c53828dd47dd", "section_path": ["Always On", "Best practices"]},
+      "title": "Avoid stopping motion instantly in Always On", "statement": {"en": "Avoid stopping motion instantly when Always On begins.", "ja": "Always On開始時にmotionを即座に停止しない。"}, "normative_level": "AVOID",
+      "conditions": ["An abrupt stop can make people think something went wrong."], "review_note": "Separated the embedded don't clause and retained it at AVOID rather than promoting it to MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-ALWAYS-ON-0013": {
+      "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "b836897ea862ca4de23a3249d2c2ae90778c74e878b20bdfa2b13177a6faa485", "section_path": ["Always On", "Platform considerations"]},
+      "title": "Avoid relying on Always On on unsupported platforms", "statement": {"en": "Avoid relying on Always On in iPadOS, macOS, tvOS, or visionOS.", "ja": "iPadOS、macOS、tvOS、visionOSではAlways Onに依存しない。"}, "normative_level": "AVOID",
+      "scope": {"portability": "technology-specific", "platforms": ["ipados", "macos", "tvos", "visionos"], "devices": ["ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The documented Always On experience is supported on iOS and watchOS only."], "review_note": "Recorded unsupported platforms conservatively as AVOID rather than converting descriptive support text to MUST_NOT."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},
