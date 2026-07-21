@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 214
-- Retained MUST: 193
+- Reviewed rules: 217
+- Retained MUST: 196
 - Retained MUST_NOT: 21
-- Normative level changes: 5
+- Normative level changes: 6
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:32:51Z
+- Reviewed at: 2026-07-21T17:36:45Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -39,6 +39,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-MENUS-0027 — Retained MUST after confirming the explicit needs-to requirement and its command-discoverability purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-OUTLINE-VIEWS-0015 — Retained MUST after confirming the unqualified Always directive and its multi-column scope. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 — Retained MUST after confirming the conditional Make sure directive and its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
+- HIG-COMPONENTS-SCROLL-VIEWS-0010 — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0015 — Retained MUST after confirming the conditional Make sure directive for custom scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0022 — Retained MUST after confirming the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-THE-MENU-BAR-0023 — Retained MUST after confirming the explicit Require directive and its interaction-cost rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0024 — Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
@@ -202,6 +205,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-PAGE-CONTROLS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-POPOVERS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Make sure directive and its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
+- HIG-COMPONENTS-SCROLL-VIEWS-0010 · MUST · retained_with_atomicity_or_scope_correction — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0015 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Make sure directive for custom scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0022 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SIDEBARS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SNIPPETS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
 - HIG-COMPONENTS-TAB-BARS-0002 · MUST · retained_with_atomicity_or_scope_correction — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))

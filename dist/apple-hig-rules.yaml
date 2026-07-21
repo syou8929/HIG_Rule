@@ -28618,16 +28618,16 @@
   apple_native_rule: Make sure the purpose of a custom macOS rating symbol is clear.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0001
-  title: Support default scrolling gestures and keyboard shortcuts
+  title: Support standard scrolling input
   category: components
   topic: scroll-views
   subtopic: best-practices
   statement:
-    en: Ensure the experience accommodates default scrolling gestures and keyboard shortcuts.
-    ja: default scrolling gestures and keyboard shortcutsを利用できる設計にする。
+    en: Support standard scrolling gestures and keyboard shortcuts.
+    ja: standard scrolling gestureとkeyboard shortcutをsupportする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -28652,7 +28652,7 @@
       - keyboard
       - gesture
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Preserve the systemwide scrolling behavior people expect across the app.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -28661,7 +28661,7 @@
     automated:
       - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
     manual:
-      - Does the design satisfy “Ensure the experience accommodates default scrolling gestures and keyboard shortcuts.” in the documented Scroll views context?
+      - Does the design satisfy “Support standard scrolling gestures and keyboard shortcuts.” in the documented Scroll views context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -28673,10 +28673,10 @@
     section_path:
       - Scroll views
       - Best practices
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: d08d739dfda11f5701bcba348fb2a445b92460b067dea1f9f5a3ea8cd5c8b918
-    evidence_paraphrase: Ensure the experience accommodates default scrolling gestures and keyboard shortcuts.
+    evidence_paraphrase: Support standard scrolling gestures and keyboard shortcuts.
   tags:
     - components
     - scroll-views
@@ -28685,19 +28685,19 @@
     - gesture
   priority_rank: 6
   status: active
-  apple_native_rule: Ensure the experience accommodates default scrolling gestures and keyboard shortcuts.
+  apple_native_rule: Support standard scrolling gestures and keyboard shortcuts.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0002
-  title: Make it apparent when content is scrollable
+  title: Make scrollable content apparent
   category: components
   topic: scroll-views
   subtopic: best-practices
   statement:
-    en: Apply the documented Scroll views guidance to make it apparent when content is scrollable.
-    ja: 「Scroll views」において「Make it apparent when content is scrollable」の指針を適用する。
+    en: Make it apparent when content extends beyond a scroll view.
+    ja: contentがscroll viewの外へ続くことを明確にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -28720,7 +28720,7 @@
       - scroll-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use a cue such as partial content at an edge when scroll indicators may be hidden.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -28728,7 +28728,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Scroll views guidance to make it apparent when content is scrollable.” in the documented Scroll views context?
+      - Does the design satisfy “Make it apparent when content extends beyond a scroll view.” in the documented Scroll views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -28740,29 +28740,29 @@
     section_path:
       - Scroll views
       - Best practices
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 96922240b8e386f6b93ce7b5036ceb35bfd69a9944fcc1c7577e6be97bdbd984
-    evidence_paraphrase: Apply the documented Scroll views guidance to make it apparent when content is scrollable.
+    evidence_paraphrase: Make it apparent when content extends beyond a scroll view.
   tags:
     - components
     - scroll-views
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Scroll views guidance to make it apparent when content is scrollable.
+  apple_native_rule: Make it apparent when content extends beyond a scroll view.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0003
-  title: Avoid putting a scroll view inside another scroll view with the same orientation
+  title: Avoid same-orientation nested scrolling
   category: components
   topic: scroll-views
   subtopic: best-practices
   statement:
-    en: Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience.
-    ja: 該当する体験ではputting a scroll view inside another scroll view with the same orientationを避ける。
+    en: Avoid nesting a scroll view inside another scroll view with the same orientation.
+    ja: 同じorientationのscroll viewを別のscroll view内にnestしない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -28785,15 +28785,16 @@
       - scroll-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Same-orientation nesting can make interaction unpredictable and difficult to control.
+  exceptions:
+    - A horizontal scroll view may be nested in a vertical scroll view, or vice versa.
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience.” in the documented Scroll views context?
+      - Does the design satisfy “Avoid nesting a scroll view inside another scroll view with the same orientation.” in the documented Scroll views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -28805,29 +28806,29 @@
     section_path:
       - Scroll views
       - Best practices
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 36dfeabdd42cc7a654f4e96609b66b8beb9de560ecc575f8050858bf8473a8cc
-    evidence_paraphrase: Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience.
+    evidence_paraphrase: Avoid nesting a scroll view inside another scroll view with the same orientation.
   tags:
     - components
     - scroll-views
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience.
+  apple_native_rule: Avoid nesting a scroll view inside another scroll view with the same orientation.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0004
-  title: Consider supporting page-by-page scrolling if it makes sense for your content
+  title: Consider page-by-page scrolling
   category: components
   topic: scroll-views
   subtopic: best-practices
   statement:
-    en: Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context.
-    ja: supporting page-by-page scrolling if it makes sense for your contentが現在の状況に適切か検討する。
+    en: Consider page-by-page scrolling when fixed-amount movement suits the content.
+    ja: 固定量の移動がcontentに合う場合はpage-by-page scrollingを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -28850,7 +28851,8 @@
       - scroll-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Define a page from the current view height or width.
+    - Consider a small overlap to help people retain context between pages.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -28858,7 +28860,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context.” in the documented Scroll views context?
+      - Does the design satisfy “Consider page-by-page scrolling when fixed-amount movement suits the content.” in the documented Scroll views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -28870,29 +28872,29 @@
     section_path:
       - Scroll views
       - Best practices
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: b998e3791cbd0ddaa80af3bf6bef40c47fafd9a502c24b5cdd20ed2900ad00d9
-    evidence_paraphrase: Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context.
+    evidence_paraphrase: Consider page-by-page scrolling when fixed-amount movement suits the content.
   tags:
     - components
     - scroll-views
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context.
+  apple_native_rule: Consider page-by-page scrolling when fixed-amount movement suits the content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0005
-  title: Prefer the automatic scroll edge effect style
+  title: Prefer automatic scroll edge effects
   category: components
   topic: scroll-views
   subtopic: scroll-edge-effects
   statement:
-    en: Favor the automatic scroll edge effect style when the documented conditions apply.
-    ja: 該当条件ではthe automatic scroll edge effect styleを優先する。
+    en: Prefer the automatic scroll edge effect style in iOS, iPadOS, and macOS.
+    ja: iOS、iPadOS、macOSではautomatic scroll edge effect styleを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -28901,21 +28903,15 @@
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components:
       - scroll-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use automatic where possible for toolbars, text outside Liquid Glass controls, and pinned table headers.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -28923,7 +28919,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor the automatic scroll edge effect style when the documented conditions apply.” in the documented Scroll views context?
+      - Does the design satisfy “Prefer the automatic scroll edge effect style in iOS, iPadOS, and macOS.” in the documented Scroll views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -28935,17 +28931,17 @@
     section_path:
       - Scroll views
       - Scroll edge effects
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 79a451545d9c401de499b774bcf434100335faca054ca3fd552a4a5195cfd0c6
-    evidence_paraphrase: Favor the automatic scroll edge effect style when the documented conditions apply.
+    evidence_paraphrase: Prefer the automatic scroll edge effect style in iOS, iPadOS, and macOS.
   tags:
     - components
     - scroll-views
     - scroll-edge-effects
   priority_rank: 6
   status: active
-  apple_native_rule: Favor the automatic scroll edge effect style when the documented conditions apply.
+  apple_native_rule: Prefer the automatic scroll edge effect style in iOS, iPadOS, and macOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0006
   title: Apply one scroll edge effect per view
@@ -28953,11 +28949,11 @@
   topic: scroll-views
   subtopic: scroll-edge-effects
   statement:
-    en: Apply the documented Scroll views guidance to apply one scroll edge effect per view.
-    ja: 「Scroll views」において「Apply one scroll edge effect per view」の指針を適用する。
+    en: Apply one scroll edge effect per view in iOS, iPadOS, and macOS.
+    ja: iOS、iPadOS、macOSではviewごとに1つのscroll edge effectを適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -28966,21 +28962,15 @@
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components:
       - scroll-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Each pane in an iPadOS or macOS split view may have its own effect.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -28988,7 +28978,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Scroll views guidance to apply one scroll edge effect per view.” in the documented Scroll views context?
+      - Does the design satisfy “Apply one scroll edge effect per view in iOS, iPadOS, and macOS.” in the documented Scroll views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -29000,17 +28990,17 @@
     section_path:
       - Scroll views
       - Scroll edge effects
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 31adeb75fd256f7735b42031c32651bed92a01bf179d63ddaaf9d7cc6827b6b7
-    evidence_paraphrase: Apply the documented Scroll views guidance to apply one scroll edge effect per view.
+    evidence_paraphrase: Apply one scroll edge effect per view in iOS, iPadOS, and macOS.
   tags:
     - components
     - scroll-views
     - scroll-edge-effects
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Scroll views guidance to apply one scroll edge effect per view.
+  apple_native_rule: Apply one scroll edge effect per view in iOS, iPadOS, and macOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0007
   title: Consider a page control for page-by-page scrolling
@@ -29038,8 +29028,7 @@
     modalities: []
   conditions:
     - A page control communicates the available pages and the currently visible page.
-  exceptions:
-    - When showing a page control, omit the scroll indicator on the same axis to avoid redundant controls.
+  exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
@@ -29059,8 +29048,8 @@
       - Scroll views
       - Platform considerations
       - iOS, iPadOS
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: d9cb9d67eb236e546e5bae61fe492c2481db281e1d363c15da3d834fb0dfb2ab
     evidence_paraphrase: Consider a page control for page-by-page scrolling in iOS or iPadOS.
   tags:
@@ -29096,8 +29085,7 @@
     modalities:
       - gaze
   conditions:
-    - Enable Look to Scroll explicitly for each applicable scroll view.
-    - Remove scroll-position-dependent custom effects or animations before enabling Look to Scroll.
+    - Enable Look to Scroll explicitly for each applicable reading or browsing scroll view.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -29119,8 +29107,8 @@
       - Platform considerations
       - visionOS
       - Look to Scroll
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 72be95c0effd699e3c7535832f3287c9e435b4ae9bcb4eff5600418d7d865efd
     evidence_paraphrase: Support Look to Scroll in visionOS reading or browsing views.
   tags:
@@ -29180,8 +29168,8 @@
       - Platform considerations
       - visionOS
       - Look to Scroll
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 76f8036eec12d818103fd55c78e775e8dcc13ca0d5cae71954df5d80677c18f3
     evidence_paraphrase: Avoid Look to Scroll for secondary visionOS content.
   tags:
@@ -29196,14 +29184,14 @@
   apple_native_rule: Avoid Look to Scroll for secondary visionOS content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0010
-  title: Apply Look to Scroll consistently across similar visionOS views
+  title: Make similar Look to Scroll views consistent
   category: components
   topic: scroll-views
   subtopic: look-to-scroll
   statement:
-    en: Support Look to Scroll consistently across similar visionOS views.
-    ja: 同種のvisionOS viewではLook to Scrollを一貫してサポートする。
-  normative_level: SHOULD
+    en: Make sure all similar visionOS views support Look to Scroll when one of them does.
+    ja: 同種のvisionOS viewの1つがLook to Scrollをsupportする場合は、すべてでsupportする。
+  normative_level: MUST
   confidence: high
   review_required: false
   polarity: recommend
@@ -29216,9 +29204,10 @@
       - apple-vision-pro
     components:
       - scroll-views
-    modalities: []
+    modalities:
+      - gaze
   conditions:
-    - When one view supports Look to Scroll, enable it in all similar views so people know what to expect.
+    - One view in a group of similar content views already supports Look to Scroll.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -29226,7 +29215,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Support Look to Scroll consistently across similar visionOS views.” in the documented Scroll views context?
+      - Does the design satisfy “Make sure all similar visionOS views support Look to Scroll when one of them does.” in the documented Scroll views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -29240,10 +29229,10 @@
       - Platform considerations
       - visionOS
       - Look to Scroll
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 889324adc29bcb343028f2a74cd1a932cdbd2619a5d66205638fccd13a5ac46a
-    evidence_paraphrase: Support Look to Scroll consistently across similar visionOS views.
+    evidence_paraphrase: Make sure all similar visionOS views support Look to Scroll when one of them does.
   tags:
     - components
     - scroll-views
@@ -29252,7 +29241,7 @@
     - look-to-scroll
   priority_rank: 4
   status: active
-  apple_native_rule: Support Look to Scroll consistently across similar visionOS views.
+  apple_native_rule: Make sure all similar visionOS views support Look to Scroll when one of them does.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0011
   title: Prefer vertical scrolling for watchOS content
@@ -29275,7 +29264,8 @@
       - apple-watch
     components:
       - scroll-views
-    modalities: []
+    modalities:
+      - digital-crown
   conditions:
     - For a single list or content view taller than the display, use the Digital Crown for vertical scrolling.
   exceptions: []
@@ -29298,8 +29288,8 @@
       - Scroll views
       - Platform considerations
       - watchOS
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 95facd27a1f425bf2677de6a48026a4549a32319a7826f9119b22333d110f434
     evidence_paraphrase: Prefer vertical scrolling for watchOS content.
   tags:
@@ -29332,10 +29322,10 @@
       - apple-watch
     components:
       - scroll-views
-    modalities: []
+    modalities:
+      - digital-crown
   conditions:
     - The system page indicator shows position within the current page and the set of pages.
-    - Consider one-screen-height pages; use variable-height pages judiciously and place them after fixed-height pages when possible.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -29356,8 +29346,8 @@
       - Scroll views
       - Platform considerations
       - watchOS
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 4ca040301e9ab3a3edaa86276dc5767a4e7ada5ce13978c4ada42fce43b5f3d5
     evidence_paraphrase: Use vertically stacked tab views for page-by-page scrolling in watchOS.
   tags:
@@ -29390,7 +29380,8 @@
       - apple-vision-pro
     components:
       - scroll-views
-    modalities: []
+    modalities:
+      - gaze
   conditions:
     - Prefer a scroll view that spans the full width or full height of the window.
     - When a scroll view is inset, provide clear boundaries that indicate where people need to look.
@@ -29415,8 +29406,8 @@
       - Platform considerations
       - visionOS
       - Look to Scroll
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 092bd5390499c748478a9cbd64d192146cc4faf9f22e784f816d8688cc43bafa
     evidence_paraphrase: Define clear visionOS scroll areas for Look to Scroll.
   tags:
@@ -29430,16 +29421,16 @@
   apple_native_rule: Define clear visionOS scroll areas for Look to Scroll.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SCROLL-VIEWS-0014
-  title: If necessary, use small or mini scroll bars in a panel
+  title: Use smaller scroll bars when a panel is tight
   category: components
   topic: scroll-views
   subtopic: macos
   statement:
-    en: When necessary, use small or mini scroll bars in a panel.
-    ja: necessary場合はsmall or mini scroll bars in a panelをuseする。
+    en: When necessary, use small or mini scroll bars in a space-constrained macOS panel.
+    ja: 必要な場合はspace-constrainedなmacOS panelでsmallまたはmini scroll barを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -29452,7 +29443,7 @@
       - scroll-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The panel needs to coexist with other windows and has limited space.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
@@ -29460,7 +29451,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “When necessary, use small or mini scroll bars in a panel.” in the documented Scroll views context?
+      - Does the design satisfy “When necessary, use small or mini scroll bars in a space-constrained macOS panel.” in the documented Scroll views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -29473,10 +29464,10 @@
       - Scroll views
       - Platform considerations
       - macOS
-    retrieved_at: 2026-07-21T11:15:16.534Z
-    source_hash: 8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
     source_sentence_hash: 47c1e2e22bed97ab48d85b7ff50f181e6849b59e15768c7086a6cd1f2ed06d60
-    evidence_paraphrase: When necessary, use small or mini scroll bars in a panel.
+    evidence_paraphrase: When necessary, use small or mini scroll bars in a space-constrained macOS panel.
   tags:
     - components
     - scroll-views
@@ -29484,7 +29475,674 @@
     - macos
   priority_rank: 4
   status: active
-  apple_native_rule: When necessary, use small or mini scroll bars in a panel.
+  apple_native_rule: When necessary, use small or mini scroll bars in a space-constrained macOS panel.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0015
+  title: Make custom scroll indicators elastic
+  category: components
+  topic: scroll-views
+  subtopic: best-practices
+  statement:
+    en: Make sure custom scroll indicators use the elastic behavior people expect.
+    ja: custom scroll indicatorで期待されるelastic behaviorを使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - The app implements custom scrolling for a view.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Make sure custom scroll indicators use the elastic behavior people expect.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Best practices
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: 17fb7b302c9f12f190fac1febb41d410205934b1a48c62be0b8a8102dca087f7
+    evidence_paraphrase: Make sure custom scroll indicators use the elastic behavior people expect.
+  tags:
+    - components
+    - scroll-views
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Make sure custom scroll indicators use the elastic behavior people expect.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0016
+  title: Use automatic scrolling to preserve place
+  category: components
+  topic: scroll-views
+  subtopic: best-practices
+  statement:
+    en: Use automatic scrolling when it helps people find or retain their place.
+    ja: 人が位置を見つける、または維持する助けになる場合はautomatic scrollingを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - Reveal a selection or insertion point that an app operation placed outside the visible area.
+    - Return to a hidden insertion point when people begin entering text.
+    - Follow a pointer that moves past the view edge during selection.
+    - Reveal a selection before acting on it after people scroll elsewhere.
+    - Scroll only as much as necessary to preserve context.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use automatic scrolling when it helps people find or retain their place.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Best practices
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: bd13c8384c0a9c460065f08744ed453d8e776108b54ba67ca65900d1784e0510
+    evidence_paraphrase: Use automatic scrolling when it helps people find or retain their place.
+  tags:
+    - components
+    - scroll-views
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use automatic scrolling when it helps people find or retain their place.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0017
+  title: Bound scroll-view zoom appropriately
+  category: components
+  topic: scroll-views
+  subtopic: best-practices
+  statement:
+    en: Use appropriate minimum and maximum scale values when a scroll view supports zoom.
+    ja: scroll viewがzoomをsupportする場合は適切なminimumとmaximum scale valueを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - Avoid zoom levels that make content impractical, such as filling a screen with one text character.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use appropriate minimum and maximum scale values when a scroll view supports zoom.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Best practices
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: 35a37b0e6ec8b6acffeaaa9ac611b79e53c6fdf00ea591ed7d0ab034fdf78869
+    evidence_paraphrase: Use appropriate minimum and maximum scale values when a scroll view supports zoom.
+  tags:
+    - components
+    - scroll-views
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use appropriate minimum and maximum scale values when a scroll view supports zoom.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0018
+  title: Test soft scroll edge effects thoroughly
+  category: components
+  topic: scroll-views
+  subtopic: scroll-edge-effects
+  statement:
+    en: Thoroughly test soft scroll edge effects for control legibility across contexts.
+    ja: soft scroll edge effectでさまざまなcontextのcontrol legibilityを十分にtestする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - The app chooses soft instead of the default automatic style.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Thoroughly test soft scroll edge effects for control legibility across contexts.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Scroll edge effects
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: dfd03a853fc52099bc7d274822345c0208171298991e45b065ddc70bdee46046
+    evidence_paraphrase: Thoroughly test soft scroll edge effects for control legibility across contexts.
+  tags:
+    - components
+    - scroll-views
+    - scroll-edge-effects
+  priority_rank: 6
+  status: active
+  apple_native_rule: Thoroughly test soft scroll edge effects for control legibility across contexts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0019
+  title: Limit scroll edge effects to floating interfaces
+  category: components
+  topic: scroll-views
+  subtopic: scroll-edge-effects
+  statement:
+    en: Use a scroll edge effect only when scrolling content passes behind floating interface elements.
+    ja: scrolling contentがfloating interface elementの背後を通る場合だけscroll edge effectを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - Use the effect for visual separation, not decoration or overlay-like darkening.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use a scroll edge effect only when scrolling content passes behind floating interface elements.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Scroll edge effects
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: 33065075c2c7f1e81a14f4758f74c2463f38203d29647ff422533fa83b740c7f
+    evidence_paraphrase: Use a scroll edge effect only when scrolling content passes behind floating interface elements.
+  tags:
+    - components
+    - scroll-views
+    - scroll-edge-effects
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use a scroll edge effect only when scrolling content passes behind floating interface elements.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0020
+  title: Align split-view scroll edge effects
+  category: components
+  topic: scroll-views
+  subtopic: scroll-edge-effects
+  statement:
+    en: Keep per-pane scroll edge effects at a consistent height in iPadOS and macOS split views.
+    ja: iPadOSとmacOSのsplit viewではpaneごとのscroll edge effectを同じ高さに保つ。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - More than one split-view pane uses a scroll edge effect.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep per-pane scroll edge effects at a consistent height in iPadOS and macOS split views.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Scroll edge effects
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: 586c93c88d53029197d32d2ea39a67fcf4f46b6052d061756965e454e0c3678b
+    evidence_paraphrase: Keep per-pane scroll edge effects at a consistent height in iPadOS and macOS split views.
+  tags:
+    - components
+    - scroll-views
+    - scroll-edge-effects
+  priority_rank: 6
+  status: active
+  apple_native_rule: Keep per-pane scroll edge effects at a consistent height in iPadOS and macOS split views.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0021
+  title: Avoid redundant same-axis scroll indicators
+  category: components
+  topic: scroll-views
+  subtopic: ios-ipados
+  statement:
+    en: Avoid a same-axis scroll indicator when an iOS or iPadOS scroll view shows a page control.
+    ja: iOSまたはiPadOSのscroll viewでpage controlを表示する場合は同じaxisのscroll indicatorを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - The page control already communicates page count and current position.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid a same-axis scroll indicator when an iOS or iPadOS scroll view shows a page control.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: b8ffdad36c254527ce042d71b3534fecb65e3ab2127424303aea44c28419b4aa
+    evidence_paraphrase: Avoid a same-axis scroll indicator when an iOS or iPadOS scroll view shows a page control.
+  tags:
+    - components
+    - scroll-views
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid a same-axis scroll indicator when an iOS or iPadOS scroll view shows a page control.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0022
+  title: Keep macOS panel controls the same size
+  category: components
+  topic: scroll-views
+  subtopic: macos
+  statement:
+    en: Be sure to use the same control size throughout a macOS panel.
+    ja: macOS panel内のcontrol sizeを統一する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - The panel uses small or mini scroll bars because space is constrained.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Be sure to use the same control size throughout a macOS panel.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: 6049c3d1c62af1d4d1fcc63a1b3fc679e5cab8c7e21c1771737e59c5b135078a
+    evidence_paraphrase: Be sure to use the same control size throughout a macOS panel.
+  tags:
+    - components
+    - scroll-views
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Be sure to use the same control size throughout a macOS panel.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0023
+  title: Prevent visionOS scroll-indicator overlap
+  category: components
+  topic: scroll-views
+  subtopic: visionos
+  statement:
+    en: When necessary, increase tight visionOS content margins to prevent scroll-indicator overlap.
+    ja: 必要な場合はtightなvisionOS content marginを広げてscroll-indicator overlapを防ぐ。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components:
+      - scroll-views
+    modalities: []
+  conditions:
+    - The visionOS indicator is thicker than its iOS counterpart and could overlap content.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When necessary, increase tight visionOS content margins to prevent scroll-indicator overlap.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: 3bcc3099ad10e0b9a736505b7bff4e4a3848791cea466e4e321b2031a63d772a
+    evidence_paraphrase: When necessary, increase tight visionOS content margins to prevent scroll-indicator overlap.
+  tags:
+    - components
+    - scroll-views
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: When necessary, increase tight visionOS content margins to prevent scroll-indicator overlap.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0024
+  title: Remove custom effects before Look to Scroll
+  category: components
+  topic: scroll-views
+  subtopic: look-to-scroll
+  statement:
+    en: Remove scroll-position-dependent custom effects or animations before enabling visionOS Look to Scroll.
+    ja: visionOS Look to Scrollを有効にする前にscroll-position-dependentなcustom effectやanimationを削除する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components:
+      - scroll-views
+    modalities:
+      - gaze
+  conditions:
+    - Effects such as parallax can make Look to Scroll behave unexpectedly.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Remove scroll-position-dependent custom effects or animations before enabling visionOS Look to Scroll.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Platform considerations
+      - visionOS
+      - Look to Scroll
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: 8dbfe8e3bc12036d3aadda4e54d9ce42ede2ec6b42f3bb706d5c91392d3e331b
+    evidence_paraphrase: Remove scroll-position-dependent custom effects or animations before enabling visionOS Look to Scroll.
+  tags:
+    - components
+    - scroll-views
+    - platform-considerations
+    - visionos
+    - look-to-scroll
+    - gaze
+  priority_rank: 4
+  status: active
+  apple_native_rule: Remove scroll-position-dependent custom effects or animations before enabling visionOS Look to Scroll.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SCROLL-VIEWS-0025
+  title: Consider one-screen-height watchOS pages
+  category: components
+  topic: scroll-views
+  subtopic: watchos
+  statement:
+    en: Consider limiting each watchOS page to one screen height.
+    ja: 各watchOS pageを1 screen heightに制限することを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components:
+      - scroll-views
+    modalities:
+      - digital-crown
+  conditions:
+    - One-screen pages clarify purpose and improve glanceability.
+  exceptions:
+    - Use variable-height pages judiciously and place them after fixed-height pages when possible.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider limiting each watchOS page to one screen height.” in the documented Scroll views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/scroll-views
+    page_title: Scroll views
+    section_path:
+      - Scroll views
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T17:36:45Z
+    source_hash: 63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698
+    source_sentence_hash: 466625e4f8391e57fd3f23e9fbb16d119dc717cf3b9f15e1394a4e9b1cf0c78e
+    evidence_paraphrase: Consider limiting each watchOS page to one screen height.
+  tags:
+    - components
+    - scroll-views
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider limiting each watchOS page to one screen height.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SEARCH-FIELDS-0001
   title: Use placeholder text to help people know what they can search for

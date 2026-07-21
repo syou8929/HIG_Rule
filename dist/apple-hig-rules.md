@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:34:04.890Z. 2267 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:42:29.225Z. 2278 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1354,20 +1354,31 @@ Generated 2026-07-21T17:34:04.890Z. 2267 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-RATING-INDICATORS-0002 · MUST · high** — Make sure the purpose of a custom macOS rating symbol is clear. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 ### scroll-views
 
-- **HIG-COMPONENTS-SCROLL-VIEWS-0001 · SHOULD · low** — Ensure the experience accommodates default scrolling gestures and keyboard shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- **HIG-COMPONENTS-SCROLL-VIEWS-0002 · SHOULD · low** — Apply the documented Scroll views guidance to make it apparent when content is scrollable. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- **HIG-COMPONENTS-SCROLL-VIEWS-0003 · AVOID · low** — Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- **HIG-COMPONENTS-SCROLL-VIEWS-0004 · MAY · low** — Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- **HIG-COMPONENTS-SCROLL-VIEWS-0005 · SHOULD · low** — Favor the automatic scroll edge effect style when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- **HIG-COMPONENTS-SCROLL-VIEWS-0006 · SHOULD · low** — Apply the documented Scroll views guidance to apply one scroll edge effect per view. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0001 · SHOULD · high** — Support standard scrolling gestures and keyboard shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0002 · SHOULD · high** — Make it apparent when content extends beyond a scroll view. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0003 · AVOID · high** — Avoid nesting a scroll view inside another scroll view with the same orientation. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0004 · MAY · high** — Consider page-by-page scrolling when fixed-amount movement suits the content. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0005 · SHOULD · high** — Prefer the automatic scroll edge effect style in iOS, iPadOS, and macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0006 · SHOULD · high** — Apply one scroll edge effect per view in iOS, iPadOS, and macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - **HIG-COMPONENTS-SCROLL-VIEWS-0007 · MAY · high** — Consider a page control for page-by-page scrolling in iOS or iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - **HIG-COMPONENTS-SCROLL-VIEWS-0008 · SHOULD · high** — Support Look to Scroll in visionOS reading or browsing views. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - **HIG-COMPONENTS-SCROLL-VIEWS-0009 · AVOID · high** — Avoid Look to Scroll for secondary visionOS content. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- **HIG-COMPONENTS-SCROLL-VIEWS-0010 · SHOULD · high** — Support Look to Scroll consistently across similar visionOS views. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0010 · MUST · high** — Make sure all similar visionOS views support Look to Scroll when one of them does. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - **HIG-COMPONENTS-SCROLL-VIEWS-0011 · SHOULD · high** — Prefer vertical scrolling for watchOS content. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - **HIG-COMPONENTS-SCROLL-VIEWS-0012 · SHOULD · high** — Use vertically stacked tab views for page-by-page scrolling in watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - **HIG-COMPONENTS-SCROLL-VIEWS-0013 · SHOULD · high** — Define clear visionOS scroll areas for Look to Scroll. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- **HIG-COMPONENTS-SCROLL-VIEWS-0014 · SHOULD · low** — When necessary, use small or mini scroll bars in a panel. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0014 · SHOULD · high** — When necessary, use small or mini scroll bars in a space-constrained macOS panel. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0015 · MUST · high** — Make sure custom scroll indicators use the elastic behavior people expect. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0016 · SHOULD · high** — Use automatic scrolling when it helps people find or retain their place. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0017 · SHOULD · high** — Use appropriate minimum and maximum scale values when a scroll view supports zoom. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0018 · SHOULD · high** — Thoroughly test soft scroll edge effects for control legibility across contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0019 · SHOULD · high** — Use a scroll edge effect only when scrolling content passes behind floating interface elements. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0020 · SHOULD · high** — Keep per-pane scroll edge effects at a consistent height in iPadOS and macOS split views. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0021 · AVOID · high** — Avoid a same-axis scroll indicator when an iOS or iPadOS scroll view shows a page control. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0022 · MUST · high** — Be sure to use the same control size throughout a macOS panel. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0023 · SHOULD · high** — When necessary, increase tight visionOS content margins to prevent scroll-indicator overlap. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0024 · SHOULD · high** — Remove scroll-position-dependent custom effects or animations before enabling visionOS Look to Scroll. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0025 · MAY · high** — Consider limiting each watchOS page to one screen height. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 ### search-fields
 
 - **HIG-COMPONENTS-SEARCH-FIELDS-0001 · SHOULD · low** — Choose or apply placeholder text to help people know what they can search for in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))

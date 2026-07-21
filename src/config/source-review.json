@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:32:51Z",
+  "reviewed_at": "2026-07-21T17:36:45Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -462,27 +462,45 @@
       "review_note": "Reviewed the macOS spinner use cases and the qualified guidance against labels."
     },
     {
-      "id": "priority-4-scroll-views-platform-context-2026-07-21",
-      "reviewed_at": "2026-07-21T12:16:41Z",
-      "review_method": "Current official Apple HIG Scroll views platform guidance and supporting prose were compared with the stored rendered source trace bound to this page hash.",
+      "id": "priority-4-scroll-views-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:36:45Z",
+      "review_method": "Rendered Apple HIG Scroll views guidance, default input, discoverability, nesting, paging, automatic scrolling, zoom, scroll edge effects, platform-specific indicators, Look to Scroll, Digital Crown behavior, and supporting prose were reviewed; two repeated live renders matched the updated main-content hash.",
       "confidence": "high",
       "review_required": false,
       "pages": [
         {
           "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
-          "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667"
+          "source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698"
         }
       ],
       "rule_ids": [
+        "HIG-COMPONENTS-SCROLL-VIEWS-0001",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0002",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0003",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0004",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0005",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0006",
         "HIG-COMPONENTS-SCROLL-VIEWS-0007",
         "HIG-COMPONENTS-SCROLL-VIEWS-0008",
         "HIG-COMPONENTS-SCROLL-VIEWS-0009",
         "HIG-COMPONENTS-SCROLL-VIEWS-0010",
         "HIG-COMPONENTS-SCROLL-VIEWS-0011",
         "HIG-COMPONENTS-SCROLL-VIEWS-0012",
-        "HIG-COMPONENTS-SCROLL-VIEWS-0013"
+        "HIG-COMPONENTS-SCROLL-VIEWS-0013",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0014",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0015",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0016",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0017",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0018",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0019",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0020",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0021",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0022",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0023",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0024",
+        "HIG-COMPONENTS-SCROLL-VIEWS-0025"
       ],
-      "review_note": "Reviewed iOS and iPadOS page controls, visionOS Look to Scroll, and watchOS Digital Crown scrolling guidance."
+      "review_note": "Completed Scroll views coverage; retained all fourteen existing IDs, recovered eleven atomic rules, corrected scroll-edge platform scope and Digital Crown and gaze modalities, and reviewed three conditional MUST directives."
     },
     {
       "id": "priority-4-segmented-controls-platform-context-2026-07-21",
@@ -11278,9 +11296,56 @@
       ],
       "review_note": "Kept the qualified AVOID strength and recorded why a label is usually redundant."
     },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0001": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "d08d739dfda11f5701bcba348fb2a445b92460b067dea1f9f5a3ea8cd5c8b918", "section_path": ["Scroll views", "Best practices"]},
+      "title": "Support standard scrolling input",
+      "statement": {"en": "Support standard scrolling gestures and keyboard shortcuts.", "ja": "standard scrolling gestureとkeyboard shortcutをsupportする。"},
+      "conditions": ["Preserve the systemwide scrolling behavior people expect across the app."],
+      "review_note": "Retained the general input requirement and separated custom-indicator elasticity."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0002": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "96922240b8e386f6b93ce7b5036ceb35bfd69a9944fcc1c7577e6be97bdbd984", "section_path": ["Scroll views", "Best practices"]},
+      "title": "Make scrollable content apparent",
+      "statement": {"en": "Make it apparent when content extends beyond a scroll view.", "ja": "contentがscroll viewの外へ続くことを明確にする。"},
+      "conditions": ["Use a cue such as partial content at an edge when scroll indicators may be hidden."],
+      "review_note": "Replaced vague generated wording with the source-supported discoverability cue."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0003": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "36dfeabdd42cc7a654f4e96609b66b8beb9de560ecc575f8050858bf8473a8cc", "section_path": ["Scroll views", "Best practices"]},
+      "title": "Avoid same-orientation nested scrolling",
+      "statement": {"en": "Avoid nesting a scroll view inside another scroll view with the same orientation.", "ja": "同じorientationのscroll viewを別のscroll view内にnestしない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Same-orientation nesting can make interaction unpredictable and difficult to control."],
+      "exceptions": ["A horizontal scroll view may be nested in a vertical scroll view, or vice versa."],
+      "review_note": "Retained AVOID and the perpendicular-orientation exception."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0004": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "b998e3791cbd0ddaa80af3bf6bef40c47fafd9a502c24b5cdd20ed2900ad00d9", "section_path": ["Scroll views", "Best practices"]},
+      "title": "Consider page-by-page scrolling",
+      "statement": {"en": "Consider page-by-page scrolling when fixed-amount movement suits the content.", "ja": "固定量の移動がcontentに合う場合はpage-by-page scrollingを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Define a page from the current view height or width.", "Consider a small overlap to help people retain context between pages."],
+      "review_note": "Preserved MAY and recorded page sizing and optional overlap."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0005": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "79a451545d9c401de499b774bcf434100335faca054ca3fd552a4a5195cfd0c6", "section_path": ["Scroll views", "Scroll edge effects"]},
+      "title": "Prefer automatic scroll edge effects",
+      "statement": {"en": "Prefer the automatic scroll edge effect style in iOS, iPadOS, and macOS.", "ja": "iOS、iPadOS、macOSではautomatic scroll edge effect styleを優先する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": ["scroll-views"], "modalities": []},
+      "conditions": ["Use automatic where possible for toolbars, text outside Liquid Glass controls, and pinned table headers."],
+      "review_note": "Corrected page-wide scope to the three platforms named by the scroll-edge section."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0006": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "31adeb75fd256f7735b42031c32651bed92a01bf179d63ddaaf9d7cc6827b6b7", "section_path": ["Scroll views", "Scroll edge effects"]},
+      "title": "Apply one scroll edge effect per view",
+      "statement": {"en": "Apply one scroll edge effect per view in iOS, iPadOS, and macOS.", "ja": "iOS、iPadOS、macOSではviewごとに1つのscroll edge effectを適用する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": ["scroll-views"], "modalities": []},
+      "conditions": ["Each pane in an iPadOS or macOS split view may have its own effect."],
+      "review_note": "Corrected platform scope and separated cross-pane height alignment."
+    },
     "HIG-COMPONENTS-SCROLL-VIEWS-0007": {
       "source": {
-        "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+        "source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698",
         "source_sentence_hash": "d9cb9d67eb236e546e5bae61fe492c2481db281e1d363c15da3d834fb0dfb2ab",
         "section_path": ["Scroll views", "Platform considerations", "iOS, iPadOS"]
       },
@@ -11294,14 +11359,11 @@
       "conditions": [
         "A page control communicates the available pages and the currently visible page."
       ],
-      "exceptions": [
-        "When showing a page control, omit the scroll indicator on the same axis to avoid redundant controls."
-      ],
-      "review_note": "Recorded the page-count purpose and the same-axis scroll-indicator exclusion."
+      "review_note": "Recorded the page-count purpose and separated the same-axis indicator restriction."
     },
     "HIG-COMPONENTS-SCROLL-VIEWS-0008": {
       "source": {
-        "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+        "source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698",
         "source_sentence_hash": "72be95c0effd699e3c7535832f3287c9e435b4ae9bcb4eff5600418d7d865efd",
         "section_path": ["Scroll views", "Platform considerations", "visionOS", "Look to Scroll"]
       },
@@ -11313,14 +11375,13 @@
       "confidence": "high",
       "review_required": false,
       "conditions": [
-        "Enable Look to Scroll explicitly for each applicable scroll view.",
-        "Remove scroll-position-dependent custom effects or animations before enabling Look to Scroll."
+        "Enable Look to Scroll explicitly for each applicable reading or browsing scroll view."
       ],
-      "review_note": "Repaired capitalization and recorded the per-view opt-in and custom-effect constraint."
+      "review_note": "Retained reading and browsing scope and separated the custom-effect prerequisite."
     },
     "HIG-COMPONENTS-SCROLL-VIEWS-0009": {
       "source": {
-        "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+        "source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698",
         "source_sentence_hash": "76f8036eec12d818103fd55c78e775e8dcc13ca0d5cae71954df5d80677c18f3",
         "section_path": ["Scroll views", "Platform considerations", "visionOS", "Look to Scroll"]
       },
@@ -11338,25 +11399,27 @@
     },
     "HIG-COMPONENTS-SCROLL-VIEWS-0010": {
       "source": {
-        "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+        "source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698",
         "source_sentence_hash": "889324adc29bcb343028f2a74cd1a932cdbd2619a5d66205638fccd13a5ac46a",
         "section_path": ["Scroll views", "Platform considerations", "visionOS", "Look to Scroll"]
       },
-      "title": "Apply Look to Scroll consistently across similar visionOS views",
+      "title": "Make similar Look to Scroll views consistent",
       "statement": {
-        "en": "Support Look to Scroll consistently across similar visionOS views.",
-        "ja": "同種のvisionOS viewではLook to Scrollを一貫してサポートする。"
+        "en": "Make sure all similar visionOS views support Look to Scroll when one of them does.",
+        "ja": "同種のvisionOS viewの1つがLook to Scrollをsupportする場合は、すべてでsupportする。"
       },
+      "normative_level": "MUST",
       "confidence": "high",
       "review_required": false,
+      "scope": {"portability": "apple-component-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": ["scroll-views"], "modalities": ["gaze"]},
       "conditions": [
-        "When one view supports Look to Scroll, enable it in all similar views so people know what to expect."
+        "One view in a group of similar content views already supports Look to Scroll."
       ],
-      "review_note": "Replaced the vague generated statement with the specific cross-view consistency requirement."
+      "review_note": "Retained the conditional Make sure directive as MUST and corrected the gaze modality."
     },
     "HIG-COMPONENTS-SCROLL-VIEWS-0011": {
       "source": {
-        "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+        "source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698",
         "source_sentence_hash": "95facd27a1f425bf2677de6a48026a4549a32319a7826f9119b22333d110f434",
         "section_path": ["Scroll views", "Platform considerations", "watchOS"]
       },
@@ -11367,6 +11430,7 @@
       },
       "confidence": "high",
       "review_required": false,
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["scroll-views"], "modalities": ["digital-crown"]},
       "conditions": [
         "For a single list or content view taller than the display, use the Digital Crown for vertical scrolling."
       ],
@@ -11374,7 +11438,7 @@
     },
     "HIG-COMPONENTS-SCROLL-VIEWS-0012": {
       "source": {
-        "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+        "source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698",
         "source_sentence_hash": "4ca040301e9ab3a3edaa86276dc5767a4e7ada5ce13978c4ada42fce43b5f3d5",
         "section_path": ["Scroll views", "Platform considerations", "watchOS"]
       },
@@ -11385,15 +11449,15 @@
       },
       "confidence": "high",
       "review_required": false,
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["scroll-views"], "modalities": ["digital-crown"]},
       "conditions": [
-        "The system page indicator shows position within the current page and the set of pages.",
-        "Consider one-screen-height pages; use variable-height pages judiciously and place them after fixed-height pages when possible."
+        "The system page indicator shows position within the current page and the set of pages."
       ],
-      "review_note": "Recorded the Digital Crown page-indicator behavior and the page-height guidance."
+      "review_note": "Recorded the Digital Crown page-indicator behavior and separated optional page-height guidance."
     },
     "HIG-COMPONENTS-SCROLL-VIEWS-0013": {
       "source": {
-        "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+        "source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698",
         "source_sentence_hash": "092bd5390499c748478a9cbd64d192146cc4faf9f22e784f816d8688cc43bafa",
         "section_path": ["Scroll views", "Platform considerations", "visionOS", "Look to Scroll"]
       },
@@ -11404,11 +11468,110 @@
       },
       "confidence": "high",
       "review_required": false,
+      "scope": {"portability": "apple-component-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": ["scroll-views"], "modalities": ["gaze"]},
       "conditions": [
         "Prefer a scroll view that spans the full width or full height of the window.",
         "When a scroll view is inset, provide clear boundaries that indicate where people need to look."
       ],
       "review_note": "Recovered the Define lead and recorded the full-span preference and inset-boundary fallback."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0014": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "47c1e2e22bed97ab48d85b7ff50f181e6849b59e15768c7086a6cd1f2ed06d60", "section_path": ["Scroll views", "Platform considerations", "macOS"]},
+      "title": "Use smaller scroll bars when a panel is tight",
+      "statement": {"en": "When necessary, use small or mini scroll bars in a space-constrained macOS panel.", "ja": "必要な場合はspace-constrainedなmacOS panelでsmallまたはmini scroll barを使う。"},
+      "conditions": ["The panel needs to coexist with other windows and has limited space."],
+      "review_note": "Recorded the panel and space constraints and separated uniform control sizing."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0015": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "17fb7b302c9f12f190fac1febb41d410205934b1a48c62be0b8a8102dca087f7", "section_path": ["Scroll views", "Best practices"]},
+      "title": "Make custom scroll indicators elastic",
+      "statement": {"en": "Make sure custom scroll indicators use the elastic behavior people expect.", "ja": "custom scroll indicatorで期待されるelastic behaviorを使う。"},
+      "conditions": ["The app implements custom scrolling for a view."],
+      "review_note": "Recovered the conditional Make sure directive separately from default input support."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0016": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "bd13c8384c0a9c460065f08744ed453d8e776108b54ba67ca65900d1784e0510", "section_path": ["Scroll views", "Best practices"]},
+      "title": "Use automatic scrolling to preserve place",
+      "statement": {"en": "Use automatic scrolling when it helps people find or retain their place.", "ja": "人が位置を見つける、または維持する助けになる場合はautomatic scrollingを使う。"},
+      "conditions": [
+        "Reveal a selection or insertion point that an app operation placed outside the visible area.",
+        "Return to a hidden insertion point when people begin entering text.",
+        "Follow a pointer that moves past the view edge during selection.",
+        "Reveal a selection before acting on it after people scroll elsewhere.",
+        "Scroll only as much as necessary to preserve context."
+      ],
+      "review_note": "Activated the automatic-scrolling lead and recorded all four source scenarios plus the minimum-distance constraint."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0017": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "35a37b0e6ec8b6acffeaaa9ac611b79e53c6fdf00ea591ed7d0ab034fdf78869", "section_path": ["Scroll views", "Best practices"]},
+      "title": "Bound scroll-view zoom appropriately",
+      "statement": {"en": "Use appropriate minimum and maximum scale values when a scroll view supports zoom.", "ja": "scroll viewがzoomをsupportする場合は適切なminimumとmaximum scale valueを使う。"},
+      "conditions": ["Avoid zoom levels that make content impractical, such as filling a screen with one text character."],
+      "review_note": "Activated the conditional zoom-scale guidance and recorded its usability boundary."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0018": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "dfd03a853fc52099bc7d274822345c0208171298991e45b065ddc70bdee46046", "section_path": ["Scroll views", "Scroll edge effects"]},
+      "title": "Test soft scroll edge effects thoroughly",
+      "statement": {"en": "Thoroughly test soft scroll edge effects for control legibility across contexts.", "ja": "soft scroll edge effectでさまざまなcontextのcontrol legibilityを十分にtestする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": ["scroll-views"], "modalities": []},
+      "conditions": ["The app chooses soft instead of the default automatic style."],
+      "review_note": "Recovered the conditional testing requirement and corrected its platform scope."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0019": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "33065075c2c7f1e81a14f4758f74c2463f38203d29647ff422533fa83b740c7f", "section_path": ["Scroll views", "Scroll edge effects"]},
+      "title": "Limit scroll edge effects to floating interfaces",
+      "statement": {"en": "Use a scroll edge effect only when scrolling content passes behind floating interface elements.", "ja": "scrolling contentがfloating interface elementの背後を通る場合だけscroll edge effectを使う。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": ["scroll-views"], "modalities": []},
+      "conditions": ["Use the effect for visual separation, not decoration or overlay-like darkening."],
+      "review_note": "Activated the only-use boundary and corrected its platform scope."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0020": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "586c93c88d53029197d32d2ea39a67fcf4f46b6052d061756965e454e0c3678b", "section_path": ["Scroll views", "Scroll edge effects"]},
+      "title": "Align split-view scroll edge effects",
+      "statement": {"en": "Keep per-pane scroll edge effects at a consistent height in iPadOS and macOS split views.", "ja": "iPadOSとmacOSのsplit viewではpaneごとのscroll edge effectを同じ高さに保つ。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ipados", "macos"], "devices": ["ipad", "mac"], "components": ["scroll-views"], "modalities": []},
+      "conditions": ["More than one split-view pane uses a scroll edge effect."],
+      "review_note": "Recovered the per-pane alignment requirement with its iPadOS and macOS scope."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0021": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "b8ffdad36c254527ce042d71b3534fecb65e3ab2127424303aea44c28419b4aa", "section_path": ["Scroll views", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Avoid redundant same-axis scroll indicators",
+      "statement": {"en": "Avoid a same-axis scroll indicator when an iOS or iPadOS scroll view shows a page control.", "ja": "iOSまたはiPadOSのscroll viewでpage controlを表示する場合は同じaxisのscroll indicatorを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["The page control already communicates page count and current position."],
+      "review_note": "Separated the explicit don't guidance from the optional choice to add a page control."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0022": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "6049c3d1c62af1d4d1fcc63a1b3fc679e5cab8c7e21c1771737e59c5b135078a", "section_path": ["Scroll views", "Platform considerations", "macOS"]},
+      "title": "Keep macOS panel controls the same size",
+      "statement": {"en": "Be sure to use the same control size throughout a macOS panel.", "ja": "macOS panel内のcontrol sizeを統一する。"},
+      "conditions": ["The panel uses small or mini scroll bars because space is constrained."],
+      "review_note": "Recovered the explicit Be sure directive and its small-panel condition."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0023": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "3bcc3099ad10e0b9a736505b7bff4e4a3848791cea466e4e321b2031a63d772a", "section_path": ["Scroll views", "Platform considerations", "visionOS"]},
+      "title": "Prevent visionOS scroll-indicator overlap",
+      "statement": {"en": "When necessary, increase tight visionOS content margins to prevent scroll-indicator overlap.", "ja": "必要な場合はtightなvisionOS content marginを広げてscroll-indicator overlapを防ぐ。"},
+      "conditions": ["The visionOS indicator is thicker than its iOS counterpart and could overlap content."],
+      "review_note": "Activated the conditional margin adjustment without turning the example into a fixed measurement."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0024": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "8dbfe8e3bc12036d3aadda4e54d9ce42ede2ec6b42f3bb706d5c91392d3e331b", "section_path": ["Scroll views", "Platform considerations", "visionOS", "Look to Scroll"]},
+      "title": "Remove custom effects before Look to Scroll",
+      "statement": {"en": "Remove scroll-position-dependent custom effects or animations before enabling visionOS Look to Scroll.", "ja": "visionOS Look to Scrollを有効にする前にscroll-position-dependentなcustom effectやanimationを削除する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": ["scroll-views"], "modalities": ["gaze"]},
+      "conditions": ["Effects such as parallax can make Look to Scroll behave unexpectedly."],
+      "review_note": "Activated the prerequisite separately from the recommendation to support Look to Scroll."
+    },
+    "HIG-COMPONENTS-SCROLL-VIEWS-0025": {
+      "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "466625e4f8391e57fd3f23e9fbb16d119dc717cf3b9f15e1394a4e9b1cf0c78e", "section_path": ["Scroll views", "Platform considerations", "watchOS"]},
+      "title": "Consider one-screen-height watchOS pages",
+      "statement": {"en": "Consider limiting each watchOS page to one screen height.", "ja": "各watchOS pageを1 screen heightに制限することを検討する。"},
+      "normative_level": "MAY",
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["scroll-views"], "modalities": ["digital-crown"]},
+      "conditions": ["One-screen pages clarify purpose and improve glanceability."],
+      "exceptions": ["Use variable-height pages judiciously and place them after fixed-height pages when possible."],
+      "review_note": "Separated the optional page-height guidance from the tab-view recommendation and corrected its modality."
     },
     "HIG-COMPONENTS-SEGMENTED-CONTROLS-0006": {
       "source": {

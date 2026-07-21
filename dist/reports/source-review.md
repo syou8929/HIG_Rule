@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1096
+- Reviewed rules: 1114
 - Reviewed batches: 72
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:32:51Z
+- Reviewed at: 2026-07-21T17:36:45Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -328,13 +328,31 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0007 · high — Kept the qualified AVOID strength and recorded why a label is usually redundant. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-RATING-INDICATORS-0001 · high — Replaced the vague generated wording with the source-supported inline editing behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 · high — Recovered the conditional Make sure directive and retained its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
-- HIG-COMPONENTS-SCROLL-VIEWS-0007 · high — Recorded the page-count purpose and the same-axis scroll-indicator exclusion. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- HIG-COMPONENTS-SCROLL-VIEWS-0008 · high — Repaired capitalization and recorded the per-view opt-in and custom-effect constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0001 · high — Retained the general input requirement and separated custom-indicator elasticity. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0002 · high — Replaced vague generated wording with the source-supported discoverability cue. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0003 · high — Retained AVOID and the perpendicular-orientation exception. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0004 · high — Preserved MAY and recorded page sizing and optional overlap. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0005 · high — Corrected page-wide scope to the three platforms named by the scroll-edge section. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0006 · high — Corrected platform scope and separated cross-pane height alignment. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0007 · high — Recorded the page-count purpose and separated the same-axis indicator restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0008 · high — Retained reading and browsing scope and separated the custom-effect prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0009 · high — Recorded the control-density and precision conditions behind the secondary-content restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- HIG-COMPONENTS-SCROLL-VIEWS-0010 · high — Replaced the vague generated statement with the specific cross-view consistency requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0010 · high — Retained the conditional Make sure directive as MUST and corrected the gaze modality. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0011 · high — Recorded the single-view and Digital Crown context. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
-- HIG-COMPONENTS-SCROLL-VIEWS-0012 · high — Recorded the Digital Crown page-indicator behavior and the page-height guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0012 · high — Recorded the Digital Crown page-indicator behavior and separated optional page-height guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0013 · high — Recovered the Define lead and recorded the full-span preference and inset-boundary fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0014 · high — Recorded the panel and space constraints and separated uniform control sizing. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0015 · high — Recovered the conditional Make sure directive separately from default input support. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0016 · high — Activated the automatic-scrolling lead and recorded all four source scenarios plus the minimum-distance constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0017 · high — Activated the conditional zoom-scale guidance and recorded its usability boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0018 · high — Recovered the conditional testing requirement and corrected its platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0019 · high — Activated the only-use boundary and corrected its platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0020 · high — Recovered the per-pane alignment requirement with its iPadOS and macOS scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0021 · high — Separated the explicit don't guidance from the optional choice to add a page control. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0022 · high — Recovered the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0023 · high — Activated the conditional margin adjustment without turning the example into a fixed measurement. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0024 · high — Activated the prerequisite separately from the recommendation to support Look to Scroll. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SCROLL-VIEWS-0025 · high — Separated the optional page-height guidance from the tab-view recommendation and corrected its modality. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0006 · high — Preserved the optional strength and distinguished related subviews from separate app sections. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0007 · high — Recorded the icon-label and per-segment tooltip guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0008 · high — Recorded the toolbar and inspector exception to the main-window tab-view guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
