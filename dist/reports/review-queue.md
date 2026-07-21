@@ -1,14 +1,13 @@
 # Human source-review queue
 
-- Remaining rules: 848
-- Next priority: 4 (platform-specific-hig)
-- Next batch: 4
+- Remaining rules: 844
+- Next priority: 5 (input-and-device-constraints)
+- Next batch: 8
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 4
 - 5 (input-and-device-constraints): 28
 - 6 (apple-platform-common): 793
 - 7 (universal-design-principles): 23
@@ -16,12 +15,16 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 ## Remaining by normative level
 
 - AVOID: 115
-- MAY: 88
+- MAY: 84
 - SHOULD: 645
 
 ## Next batch
 
-- HIG-PATTERNS-PRINTING-0003 · MAY — Consider letting people preview the effect of a setting · Printing > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
-- HIG-PATTERNS-PRINTING-0004 · MAY — Consider storing modified settings with the document · Printing > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
-- HIG-PATTERNS-PRINTING-0007 · MAY — If your macOS app offers app-specific print options that the system doesn’t offer, consider creating a cust… · Printing > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
-- HIG-PATTERNS-PRINTING-0008 · MAY — If your app supports document-specific page settings, consider presenting a page setup dialog · Printing > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-INPUTS-KEYBOARDS-0004 · AVOID — Avoid adding Shift to a shortcut that uses the upper character of a two-character key · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0006 · AVOID — Avoid creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0009 · AVOID — In general, don’t repurpose standard keyboard shortcuts for custom actions · Keyboards > Standard keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0001 · SHOULD — Support Full Keyboard Access when possible · Keyboards > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0002 · SHOULD — Respect standard keyboard shortcuts · Keyboards > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0003 · SHOULD — Use modifier keys in ways that people expect · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0005 · SHOULD — Let the system localize and mirror your keyboard shortcuts as needed · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0008 · SHOULD — Define custom keyboard shortcuts for only the most frequently used app-specific commands · Keyboards > Custom keyboard shortcuts ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))

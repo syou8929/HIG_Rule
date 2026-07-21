@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:41:11Z",
+  "reviewed_at": "2026-07-21T22:46:29Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2760,9 +2760,125 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/launching", "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456"}],
       "rule_ids": ["HIG-PATTERNS-LAUNCHING-0004"],
       "review_note": "Completed the visionOS section, preserved the stable Shared Space launch decision at MAY, and recorded its context, loading, Full Space control, and user-chosen transition purposes without creating unsupported obligations."
+    },
+    {
+      "id": "priority-4-printing-macos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:46:29Z",
+      "review_method": "Rendered Apple HIG Printing platform overview and complete macOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/printing", "source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840"}],
+      "rule_ids": [
+        "HIG-PATTERNS-PRINTING-0002", "HIG-PATTERNS-PRINTING-0003", "HIG-PATTERNS-PRINTING-0004", "HIG-PATTERNS-PRINTING-0007", "HIG-PATTERNS-PRINTING-0008", "HIG-PATTERNS-PRINTING-0009", "HIG-PATTERNS-PRINTING-0010", "HIG-PATTERNS-PRINTING-0011", "HIG-PATTERNS-PRINTING-0012", "HIG-PATTERNS-PRINTING-0013", "HIG-PATTERNS-PRINTING-0014", "HIG-PATTERNS-PRINTING-0015", "HIG-PATTERNS-PRINTING-0016"
+      ],
+      "review_note": "Completed the macOS section, preserved four queued MAY decisions and the existing option-dependency MUST, recovered eight atomic rules for platform support and print-panel behavior, and kept examples and conditional language below MUST."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-PRINTING-0002": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "6a4b65683d1c6d3a27a5c1127c1185d1cb10a5186ce2c464821e190a72c0e485", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Make sure macOS print option interdependencies are clear",
+      "statement": {"en": "Make interdependencies among macOS print options clear.", "ja": "macOS print option間のinterdependencyを明確にする。"},
+      "normative_level": "MUST",
+      "conditions": ["Make an option's availability changes clear when they depend on another selection."],
+      "review_note": "Retained MUST from the explicit Make sure lead and recorded the dependent-availability context without turning the example into a universal pairing."
+    },
+    "HIG-PATTERNS-PRINTING-0003": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "1be04830109bb582182932646e91be842f34a63a13c260e7e22bde74ceb9052d", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Consider previewing a macOS print setting",
+      "statement": {"en": "Consider letting people preview the effect of a macOS print setting.", "ja": "macOS print settingの効果をpreviewできるようにすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A preview can make a setting's output effect easier to understand."],
+      "exceptions": ["Updating a thumbnail for a tone control is an example, not a required preview implementation."],
+      "review_note": "Preserved Consider and kept the thumbnail technique as an example."
+    },
+    "HIG-PATTERNS-PRINTING-0004": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "0656f545df5b78084e1c750ebbd96d4775246485f5a186137e5f90dfc92fc139", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Consider storing modified print settings with a document",
+      "statement": {"en": "Consider storing modified print settings with the document.", "ja": "変更したprint settingをdocumentとともに保存することを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Stored settings can support printing the document again."],
+      "review_note": "Preserved Consider and separated optional document storage from the minimum session-retention recommendation."
+    },
+    "HIG-PATTERNS-PRINTING-0007": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "e25a2943e177e8ebcd5ad920fc565da2664f7d928dda4920bf06441286e32e00", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Consider a custom category for app-specific macOS print options",
+      "statement": {"en": "When macOS print options are app-specific and absent from the system, consider a custom print-panel category.", "ja": "macOS print optionがapp固有でsystemにない場合は、custom print-panel categoryを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The app offers useful print options that the system print panel doesn't provide."],
+      "review_note": "Recovered the complete custom-category object and preserved both prerequisites and Consider strength."
+    },
+    "HIG-PATTERNS-PRINTING-0008": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "10a975d8febe11d9b58712bea2369cb84fb7a7f0149a89ca2794178eaf0d02d2", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Consider a page setup dialog for document-specific settings",
+      "statement": {"en": "When an app supports document-specific page settings, consider a page setup dialog.", "ja": "appがdocument固有のpage settingを扱う場合はpage setup dialogを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Use the dialog for rarely changed settings that apply to printing a particular document."],
+      "exceptions": ["Page size, orientation, and scaling are examples of such settings."],
+      "review_note": "Preserved the document-specific prerequisite and Consider strength while keeping listed settings as examples."
+    },
+    "HIG-PATTERNS-PRINTING-0009": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "c2b0c4f88e48d9eea0203ca38b41708787d8bfe97d2fbcf8cfff03e22f4df4d4", "section_path": ["Printing", "Platform considerations"]},
+      "title": "Avoid offering printing on tvOS or watchOS",
+      "statement": {"en": "Avoid offering printing on tvOS or watchOS.", "ja": "tvOSまたはwatchOSではprintingを提供しない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-platform", "platforms": ["tvos", "watchos"], "devices": ["apple-tv", "apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Printing is unsupported on these platforms."],
+      "review_note": "Recovered the explicit platform limitation and corrected the generated scope to the unsupported platforms themselves."
+    },
+    "HIG-PATTERNS-PRINTING-0010": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "5ef8ca7e4b2ca9f936607ebc0003bed1d0350854e5df309570e526f846975b74", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Give a custom macOS print category a unique name",
+      "statement": {"en": "Give a custom macOS print-panel category a unique name.", "ja": "custom macOS print-panel categoryに固有の名前を付ける。"},
+      "conditions": ["The app provides a custom category for app-specific print options."],
+      "exceptions": ["Using the app name is an example, not a required naming formula."],
+      "review_note": "Separated category naming from category contents and kept the app-name wording as an example."
+    },
+    "HIG-PATTERNS-PRINTING-0011": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "5ef8ca7e4b2ca9f936607ebc0003bed1d0350854e5df309570e526f846975b74", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Include helpful app-specific options in a custom print category",
+      "statement": {"en": "Include app-specific options that improve the print experience in a custom category.", "ja": "custom categoryにはprint experienceを改善するapp固有optionを含める。"},
+      "conditions": ["The app provides a custom category in the macOS print panel."],
+      "exceptions": ["Presentation-specific options are examples, not a required option set."],
+      "review_note": "Separated category contents from naming and retained the user-value purpose without adopting the example option set."
+    },
+    "HIG-PATTERNS-PRINTING-0012": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "d8498db363f893f80ee18a8c1b77546cc910217357041f48d16351bcca49b974", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Avoid duplicating system-provided print features",
+      "statement": {"en": "Avoid implementing print features the system already provides.", "ja": "systemが提供するprint featureを重複実装しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Apply when omitting the duplicate makes sense for the app's page-setup experience."],
+      "exceptions": ["Orientation changes and reverse-order printing are examples of system-provided features."],
+      "review_note": "Preserved the conditional Avoid and kept the listed system features as examples."
+    },
+    "HIG-PATTERNS-PRINTING-0013": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "ff1f8de7b225fd0f1e235818c7ac368d8e8c1f614e34cd510b937c1a2499aaa4", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Separate advanced macOS print features",
+      "statement": {"en": "Separate advanced macOS print features from frequently used features.", "ja": "advanced macOS print featureを頻繁に使うfeatureから分離する。"},
+      "conditions": ["Preserve easy access to frequently used print features."],
+      "review_note": "Recovered the direct separation guidance as its own atomic recommendation."
+    },
+    "HIG-PATTERNS-PRINTING-0014": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "5f6c8c3fae727f460107812e48432587ec745493ecd122e52e66f94570ef7173", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Consider disclosing advanced print options on demand",
+      "statement": {"en": "Consider a disclosure control that hides advanced print options until needed.", "ja": "必要になるまでadvanced print optionを隠すdisclosure controlを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Advanced options are separated from frequently used print features."],
+      "review_note": "Preserved Consider and the on-demand disclosure behavior."
+    },
+    "HIG-PATTERNS-PRINTING-0015": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "d7bc8385752efc00e3feca79698ccfb65b3e665e8921e0ba2e98117c051d0af3", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Retain modified print settings until document close",
+      "statement": {"en": "Keep modified print settings until the document closes, at minimum.", "ja": "変更したprint settingを少なくともdocumentを閉じるまで保持する。"},
+      "conditions": ["Retaining settings supports printing the same document again during the session."],
+      "review_note": "Recovered the source's minimum retention recommendation separately from optional document-level persistence."
+    },
+    "HIG-PATTERNS-PRINTING-0016": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "504702907d724fbb95e12c4891e2bd393be41a94d1b828dcee07c6f060e7eaf2", "section_path": ["Printing", "Platform considerations", "macOS"]},
+      "title": "Label advanced print options explicitly",
+      "statement": {"en": "Label advanced print settings “Advanced Options.”", "ja": "advanced print settingには「Advanced Options」とlabel付けする。"},
+      "conditions": ["The macOS print interface exposes a group of advanced options."],
+      "review_note": "Recovered the exact label guidance as a separate recommendation rather than combining it with optional disclosure."
+    },
     "HIG-PATTERNS-LAUNCHING-0004": {
       "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "75e60cfc2e7e3a298cf4131423f4ac67cba3d6cce75e5d4e7bda5b83e23add1a", "section_path": ["Launching", "Platform considerations", "visionOS"]},
       "title": "Consider launching an immersive visionOS app in the Shared Space",

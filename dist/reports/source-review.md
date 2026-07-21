@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1761
-- Reviewed batches: 120
+- Reviewed rules: 1774
+- Reviewed batches: 121
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:41:11Z
+- Reviewed at: 2026-07-21T22:46:29Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1335,6 +1335,19 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-VIDEO-0038 · high — Recovered the direct no-scaling instruction from the media-encoding paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0039 · high — Recovered relevance as a separate prohibition from the optional poster-image rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0040 · high — Recovered the background continuation separately from the playback-readiness rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PRINTING-0002 · high — Retained MUST from the explicit Make sure lead and recorded the dependent-availability context without turning the example into a universal pairing. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0003 · high — Preserved Consider and kept the thumbnail technique as an example. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0004 · high — Preserved Consider and separated optional document storage from the minimum session-retention recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0007 · high — Recovered the complete custom-category object and preserved both prerequisites and Consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0008 · high — Preserved the document-specific prerequisite and Consider strength while keeping listed settings as examples. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0009 · high — Recovered the explicit platform limitation and corrected the generated scope to the unsupported platforms themselves. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0010 · high — Separated category naming from category contents and kept the app-name wording as an example. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0011 · high — Separated category contents from naming and retained the user-value purpose without adopting the example option set. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0012 · high — Preserved the conditional Avoid and kept the listed system features as examples. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0013 · high — Recovered the direct separation guidance as its own atomic recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0014 · high — Preserved Consider and the on-demand disclosure behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0015 · high — Recovered the source's minimum retention recommendation separately from optional document-level persistence. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0016 · high — Recovered the exact label guidance as a separate recommendation rather than combining it with optional disclosure. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-SETTINGS-0006 · high — Repaired the generic generated statement and narrowed portability to the macOS platform section. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0007 · high — Separated the toolbar-placement warning from the App-menu recommendation and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0008 · high — Recovered the separate menu location for document-scoped options. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))

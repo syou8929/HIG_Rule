@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:41:54.476Z. 2680 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:49:14.669Z. 2688 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -856,13 +856,21 @@ Generated 2026-07-21T22:41:54.476Z. 2680 active rules; 4 deprecated rules.
 ### printing
 
 - **HIG-PATTERNS-PRINTING-0001 · SHOULD · low** — Apply the documented Printing guidance to make printing discoverable. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
-- **HIG-PATTERNS-PRINTING-0002 · MUST · medium** — Verify that interdependencies between options are clear. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
-- **HIG-PATTERNS-PRINTING-0003 · MAY · low** — Evaluate whether letting people preview the effect of a setting is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
-- **HIG-PATTERNS-PRINTING-0004 · MAY · low** — Evaluate whether storing modified settings with the document is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0002 · MUST · high** — Make interdependencies among macOS print options clear. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0003 · MAY · high** — Consider letting people preview the effect of a macOS print setting. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0004 · MAY · high** — Consider storing modified print settings with the document. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - **HIG-PATTERNS-PRINTING-0005 · SHOULD · low** — Present a printing option only when it’s possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - **HIG-PATTERNS-PRINTING-0006 · SHOULD · low** — Present relevant printing options in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
-- **HIG-PATTERNS-PRINTING-0007 · MAY · low** — When your macOS app offers app-specific print options that the system doesn’t offer, consider creating a custom category for. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
-- **HIG-PATTERNS-PRINTING-0008 · MAY · low** — When your app supports document-specific page settings, consider presenting a page setup dialog. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0007 · MAY · high** — When macOS print options are app-specific and absent from the system, consider a custom print-panel category. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0008 · MAY · high** — When an app supports document-specific page settings, consider a page setup dialog. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0009 · AVOID · high** — Avoid offering printing on tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0010 · SHOULD · high** — Give a custom macOS print-panel category a unique name. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0011 · SHOULD · high** — Include app-specific options that improve the print experience in a custom category. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0012 · AVOID · high** — Avoid implementing print features the system already provides. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0013 · SHOULD · high** — Separate advanced macOS print features from frequently used features. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0014 · MAY · high** — Consider a disclosure control that hides advanced print options until needed. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0015 · SHOULD · high** — Keep modified print settings until the document closes, at minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0016 · SHOULD · high** — Label advanced print settings “Advanced Options.” ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 ### ratings-and-reviews
 
 - **HIG-PATTERNS-RATINGS-AND-REVIEWS-0001 · SHOULD · low** — Apply the documented Ratings and reviews guidance to ask for a rating only after people have demonstrated engagement with your app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))

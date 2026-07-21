@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2680
+- Active atomic rules: 2688
 - Pages without rules: 16
-- Low-confidence rules: 848
-- Rules requiring human review: 848
+- Low-confidence rules: 844
+- Rules requiring human review: 844
 - Reference notes: 906
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 346
 - getting-started: 100
 - inputs: 219
-- patterns: 360
+- patterns: 368
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 363
-- MAY: 329
+- AVOID: 365
+- MAY: 330
 - MUST: 269
 - MUST_NOT: 24
-- SHOULD: 1695
+- SHOULD: 1700
 
 ## Rules by platform
 
 - carplay: 90
 - ios: 1751
 - ipados: 1723
-- macos: 1437
-- tvos: 1117
+- macos: 1444
+- tvos: 1118
 - visionos: 1472
-- watchos: 1185
+- watchos: 1186
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2610
+- manual: 2618
 
 ## Blocked pages
 
@@ -529,12 +529,8 @@ None.
 - HIG-PATTERNS-PLAYING-HAPTICS-0005
 - HIG-PATTERNS-PLAYING-HAPTICS-0006
 - HIG-PATTERNS-PRINTING-0001
-- HIG-PATTERNS-PRINTING-0003
-- HIG-PATTERNS-PRINTING-0004
 - HIG-PATTERNS-PRINTING-0005
 - HIG-PATTERNS-PRINTING-0006
-- HIG-PATTERNS-PRINTING-0007
-- HIG-PATTERNS-PRINTING-0008
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0001
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0002
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0003
@@ -1380,12 +1376,8 @@ None.
 - HIG-PATTERNS-PLAYING-HAPTICS-0005
 - HIG-PATTERNS-PLAYING-HAPTICS-0006
 - HIG-PATTERNS-PRINTING-0001
-- HIG-PATTERNS-PRINTING-0003
-- HIG-PATTERNS-PRINTING-0004
 - HIG-PATTERNS-PRINTING-0005
 - HIG-PATTERNS-PRINTING-0006
-- HIG-PATTERNS-PRINTING-0007
-- HIG-PATTERNS-PRINTING-0008
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0001
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0002
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0003
