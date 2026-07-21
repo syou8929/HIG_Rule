@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2039
+- Active atomic rules: 2044
 - Pages without rules: 16
-- Low-confidence rules: 1267
-- Rules requiring human review: 1267
+- Low-confidence rules: 1260
+- Rules requiring human review: 1260
 - Reference notes: 925
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 312
 - getting-started: 85
 - inputs: 187
-- patterns: 284
+- patterns: 289
 - technologies: 524
 
 ## Normative levels
 
-- AVOID: 266
+- AVOID: 267
 - MAY: 231
-- MUST: 151
+- MUST: 152
 - MUST_NOT: 10
-- SHOULD: 1381
+- SHOULD: 1384
 
 ## Rules by platform
 
 - carplay: 73
-- ios: 1396
-- ipados: 1414
-- macos: 1242
+- ios: 1400
+- ipados: 1418
+- macos: 1246
 - tvos: 956
-- visionos: 1307
+- visionos: 1310
 - watchos: 1034
 
 ## Rules by testability
 
-- hybrid: 66
-- manual: 1973
+- hybrid: 65
+- manual: 1979
 
 ## Blocked pages
 
@@ -838,13 +838,6 @@ None.
 - HIG-PATTERNS-SETTINGS-0004
 - HIG-PATTERNS-SETTINGS-0005
 - HIG-PATTERNS-SETTINGS-0006
-- HIG-PATTERNS-UNDO-AND-REDO-0001
-- HIG-PATTERNS-UNDO-AND-REDO-0002
-- HIG-PATTERNS-UNDO-AND-REDO-0003
-- HIG-PATTERNS-UNDO-AND-REDO-0004
-- HIG-PATTERNS-UNDO-AND-REDO-0005
-- HIG-PATTERNS-UNDO-AND-REDO-0006
-- HIG-PATTERNS-UNDO-AND-REDO-0007
 - HIG-PATTERNS-WORKOUTS-0001
 - HIG-PATTERNS-WORKOUTS-0002
 - HIG-PATTERNS-WORKOUTS-0003
@@ -2108,13 +2101,6 @@ None.
 - HIG-PATTERNS-SETTINGS-0004
 - HIG-PATTERNS-SETTINGS-0005
 - HIG-PATTERNS-SETTINGS-0006
-- HIG-PATTERNS-UNDO-AND-REDO-0001
-- HIG-PATTERNS-UNDO-AND-REDO-0002
-- HIG-PATTERNS-UNDO-AND-REDO-0003
-- HIG-PATTERNS-UNDO-AND-REDO-0004
-- HIG-PATTERNS-UNDO-AND-REDO-0005
-- HIG-PATTERNS-UNDO-AND-REDO-0006
-- HIG-PATTERNS-UNDO-AND-REDO-0007
 - HIG-PATTERNS-WORKOUTS-0001
 - HIG-PATTERNS-WORKOUTS-0002
 - HIG-PATTERNS-WORKOUTS-0003

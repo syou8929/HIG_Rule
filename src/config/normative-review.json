@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:24:00Z",
+  "reviewed_at": "2026-07-21T15:38:24Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
@@ -8,13 +8,27 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 161,
+  "reviewed_rule_count": 162,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-PATTERNS-UNDO-AND-REDO-0011": {
+      "title": "Describe the operation in undo and redo alert titles",
+      "statement": {
+        "en": "Provide one or two words after the automatic Undo or Redo prefix to describe the operation.",
+        "ja": "automaticなUndoまたはRedo prefixの後にoperationを表す1〜2語を付ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The system alert title already includes the prefix and its trailing space.",
+        "Keep the added operation description brief and precise."
+      ],
+      "review_note": "Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract."
+    },
     "HIG-PATTERNS-PLAYING-VIDEO-0002": {
       "confidence": "high",
       "review_required": false,

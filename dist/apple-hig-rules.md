@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T15:35:32.162Z. 2039 active rules; 3 deprecated rules.
+Generated 2026-07-21T15:41:18.318Z. 2044 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -779,13 +779,18 @@ Generated 2026-07-21T15:35:32.162Z. 2039 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-SETTINGS-0006 · SHOULD · low** — Apply the documented Settings guidance to include a settings item in the App menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 ### undo-and-redo
 
-- **HIG-PATTERNS-UNDO-AND-REDO-0001 · SHOULD · low** — Apply the documented Undo and redo guidance to help people predict the results of undo and redo as much as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
-- **HIG-PATTERNS-UNDO-AND-REDO-0002 · SHOULD · low** — Present the results of an undo or redo in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
-- **HIG-PATTERNS-UNDO-AND-REDO-0003 · SHOULD · low** — Preserve people’s ability to undo multiple times. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
-- **HIG-PATTERNS-UNDO-AND-REDO-0004 · MAY · low** — Evaluate whether giving people the option to revert multiple changes at once is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
-- **HIG-PATTERNS-UNDO-AND-REDO-0005 · SHOULD · low** — Make undo and redo buttons only when necessary available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
-- **HIG-PATTERNS-UNDO-AND-REDO-0006 · AVOID · low** — Exclude redefining standard gestures for undo and redo from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
-- **HIG-PATTERNS-UNDO-AND-REDO-0007 · SHOULD · low** — Apply the documented Undo and redo guidance to place undo and redo commands in the Edit menu and support the standard keyboard shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0001 · SHOULD · high** — Help people predict the result of an undo or redo before they perform it. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0002 · SHOULD · high** — Show and highlight the result of each undo or redo. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0003 · SHOULD · high** — Let people perform undo and redo multiple times. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0004 · MAY · high** — Consider letting people revert multiple related changes at once. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0005 · SHOULD · high** — Provide dedicated undo and redo buttons only when they are important to the experience. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0006 · AVOID · high** — Avoid redefining standard iOS and iPadOS gestures for undo and redo. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0007 · SHOULD · high** — Place undo and redo commands at the top of the macOS Edit menu. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0008 · AVOID · high** — Avoid unnecessary limits on how many times people can undo or redo. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0009 · SHOULD · high** — Use standard system-provided symbols for dedicated undo and redo buttons. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0010 · SHOULD · high** — Place dedicated undo and redo buttons in a toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0011 · MUST · high** — Provide one or two words after the automatic Undo or Redo prefix to describe the operation. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- **HIG-PATTERNS-UNDO-AND-REDO-0012 · SHOULD · high** — Support Command-Z for undo and Shift-Command-Z for redo on macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 ### workouts
 
 - **HIG-PATTERNS-WORKOUTS-0001 · AVOID · low** — Exclude distracting people from a workout with information that’s not relevant from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))

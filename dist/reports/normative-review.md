@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 161
-- Retained MUST: 151
+- Reviewed rules: 162
+- Retained MUST: 152
 - Retained MUST_NOT: 10
 - Normative level changes: 4
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:24:00Z
+- Reviewed at: 2026-07-21T15:38:24Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -85,6 +85,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-PLAYING-VIDEO-0006 — Retained MUST after reconfirming the explicit ensure directive and the documented TV app transition behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0009 — Retained MUST after reconfirming the explicit make sure directive and the profile selection, switching, and fallback behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0030 — Recovered and retained MUST after confirming the explicit make sure directive and its one-or-two-step ceiling. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-UNDO-AND-REDO-0011 — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -223,6 +224,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-PLAYING-VIDEO-0009 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the explicit make sure directive and the profile selection, switching, and fallback behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure directive and its one-or-two-step ceiling. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PRINTING-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-UNDO-AND-REDO-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-WORKOUTS-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-TECHNOLOGIES-AIRPLAY-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
 - HIG-TECHNOLOGIES-APP-CLIPS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))

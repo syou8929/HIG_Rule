@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:24:00Z",
+  "reviewed_at": "2026-07-21T15:38:24Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1466,9 +1466,120 @@
         "HIG-PATTERNS-PLAYING-VIDEO-0040"
       ],
       "review_note": "Reviewed system-player defaults, aspect handling, transport behavior, TV app transitions, loading and exit states, overlays, visionOS comfort, and watchOS media constraints; recovered fourteen atomic rules and refreshed a changed page hash."
+    },
+    {
+      "id": "priority-4-undo-and-redo-context-2026-07-21",
+      "reviewed_at": "2026-07-21T15:38:24Z",
+      "review_method": "Rendered Apple HIG Undo and redo guidance and supporting prose were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo",
+          "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-UNDO-AND-REDO-0001",
+        "HIG-PATTERNS-UNDO-AND-REDO-0002",
+        "HIG-PATTERNS-UNDO-AND-REDO-0003",
+        "HIG-PATTERNS-UNDO-AND-REDO-0004",
+        "HIG-PATTERNS-UNDO-AND-REDO-0005",
+        "HIG-PATTERNS-UNDO-AND-REDO-0006",
+        "HIG-PATTERNS-UNDO-AND-REDO-0007",
+        "HIG-PATTERNS-UNDO-AND-REDO-0008",
+        "HIG-PATTERNS-UNDO-AND-REDO-0009",
+        "HIG-PATTERNS-UNDO-AND-REDO-0010",
+        "HIG-PATTERNS-UNDO-AND-REDO-0011",
+        "HIG-PATTERNS-UNDO-AND-REDO-0012"
+      ],
+      "review_note": "Reviewed result predictability and visibility, multi-level and batch undo, dedicated controls, iOS and iPadOS gestures and alert labels, and macOS menu and shortcut behavior; recovered five atomic rules."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-UNDO-AND-REDO-0001": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"de63d57d9f766aabb035b003e0a1d8840b42aecf7f7b7136491f939be2eef118","section_path":["Undo and redo","Best practices"]},
+      "title": "Make undo and redo outcomes predictable",
+      "statement": {"en":"Help people predict the result of an undo or redo before they perform it.","ja":"undoまたはredoを実行する前に結果を予測できるようにする。"},
+      "conditions": ["On iPhone, an undo alert can describe the result and offer undo or cancellation.", "When menu items are present, identify the result in their labels."],
+      "review_note": "Recorded both documented prediction techniques and kept them conditional on their respective interfaces."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0002": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"26b0a731cfb2f8a6f3806931cb3f9f185a4bfb1f572ec2409633b933b81ca095","section_path":["Undo and redo","Best practices"]},
+      "title": "Highlight each undo and redo result",
+      "statement": {"en":"Show and highlight the result of each undo or redo.","ja":"各undoまたはredoの結果を表示しhighlightする。"},
+      "conditions": ["When affected content is offscreen, reveal it so people do not mistake the action for having no effect.", "For example, scroll to restored content when appropriate."],
+      "review_note": "Recorded visibility, repeated-action risk, and the offscreen-content recovery example."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0003": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"c9268bde228026b5ff70f025cd6fa3291372a68d659282b76b00be1b8d3c7f20","section_path":["Undo and redo","Best practices"]},
+      "title": "Support multiple undo and redo operations",
+      "statement": {"en":"Let people perform undo and redo multiple times.","ja":"undoとredoを複数回実行できるようにする。"},
+      "conditions": ["A logical boundary can be opening a document or saving work."],
+      "review_note": "Recorded multi-level behavior and the source's logical-session boundary examples."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0004": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"32b3effc8ab79ab31cf3386bf61848cc9caf6fe9a35f4e57d7a3bd1330abaf7b","section_path":["Undo and redo","Best practices"]},
+      "title": "Consider reverting related changes as a group",
+      "statement": {"en":"Consider letting people revert multiple related changes at once.","ja":"関連する複数のchangeを一度にrevertできるようにすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A group can contain discrete incremental changes to one property.", "Another option is reverting all changes since opening or saving a document."],
+      "review_note": "Retained MAY and recorded both grouping scenarios without making batch undo mandatory."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0005": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"a11e7f0100ced1765f37130ef8f3f8d632fac809bafa11117042f70ee3d16edc","section_path":["Undo and redo","Best practices"]},
+      "title": "Add dedicated undo and redo buttons only when necessary",
+      "statement": {"en":"Provide dedicated undo and redo buttons only when they are important to the experience.","ja":"体験上重要な場合だけ専用undo・redo buttonを提供する。"},
+      "conditions": ["Prefer system-supported methods such as the macOS Edit menu, Mac or iPad keyboard shortcuts, and iPhone shake gestures."],
+      "review_note": "Recorded system methods as the default and preserved the necessity test for dedicated controls."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0006": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"44813524e5b256a2cdca6358c824370f443c5f7cbc8ac51852cff0298e2db5b2","section_path":["Undo and redo","Platform considerations","iOS, iPadOS"]},
+      "title": "Avoid redefining standard undo and redo gestures",
+      "statement": {"en":"Avoid redefining standard iOS and iPadOS gestures for undo and redo.","ja":"undo・redo用のstandard iOS・iPadOS gestureを再定義しない。"},
+      "conditions": ["Standard input includes three-finger swipe gestures and shaking iPhone.", "Redefinition can confuse people and make the experience unpredictable."],
+      "review_note": "Retained AVOID and recorded the standard gestures and predictability rationale."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0007": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"d4491515ef79b92cefa620b54dd787adc07b74c9f3de9087e5b55d1a32b7a453","section_path":["Undo and redo","Platform considerations","macOS"]},
+      "title": "Place undo and redo at the top of the macOS Edit menu",
+      "statement": {"en":"Place undo and redo commands at the top of the macOS Edit menu.","ja":"undo・redo commandをmacOS Edit menuの先頭に配置する。"},
+      "review_note": "Narrowed the stable rule to the documented menu placement and split keyboard mappings separately."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0008": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"c9268bde228026b5ff70f025cd6fa3291372a68d659282b76b00be1b8d3c7f20","section_path":["Undo and redo","Best practices"]},
+      "title": "Avoid unnecessary undo and redo limits",
+      "statement": {"en":"Avoid unnecessary limits on how many times people can undo or redo.","ja":"undoまたはredoできる回数へ不要な制限を設けない。"},
+      "exceptions": ["A logical boundary such as opening a document or saving work can delimit the history."],
+      "review_note": "Recovered the explicit AVOID clause while preserving the source's logical-boundary exception."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0009": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"a11e7f0100ced1765f37130ef8f3f8d632fac809bafa11117042f70ee3d16edc","section_path":["Undo and redo","Best practices"]},
+      "title": "Use standard symbols for dedicated undo and redo buttons",
+      "statement": {"en":"Use standard system-provided symbols for dedicated undo and redo buttons.","ja":"専用undo・redo buttonにはsystem提供のstandard symbolを使う。"},
+      "conditions": ["Dedicated buttons are important enough to add instead of relying only on standard system methods."],
+      "review_note": "Recovered the conditional symbol requirement as a separate atomic control-design rule."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0010": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"a11e7f0100ced1765f37130ef8f3f8d632fac809bafa11117042f70ee3d16edc","section_path":["Undo and redo","Best practices"]},
+      "title": "Place dedicated undo and redo buttons in a toolbar",
+      "statement": {"en":"Place dedicated undo and redo buttons in a toolbar.","ja":"専用undo・redo buttonをtoolbarに配置する。"},
+      "conditions": ["Dedicated buttons are important enough to add instead of relying only on standard system methods."],
+      "review_note": "Recovered toolbar placement separately from the symbol requirement."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0011": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"40a4880a4849690c291abce3d24fb2d2d17f92f0503998f2faf3fa3c51338372","section_path":["Undo and redo","Platform considerations","iOS, iPadOS"]},
+      "title": "Describe the operation in undo and redo alert titles",
+      "statement": {"en":"Provide one or two words after the automatic Undo or Redo prefix to describe the operation.","ja":"automaticなUndoまたはRedo prefixの後にoperationを表す1〜2語を付ける。"},
+      "conditions": ["The system alert title already includes the prefix and its trailing space.", "Keep the added operation description brief and precise."],
+      "review_note": "Recovered and retained the explicit You need requirement and its one-or-two-word alert-title contract."
+    },
+    "HIG-PATTERNS-UNDO-AND-REDO-0012": {
+      "source": {"source_hash":"efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4","source_sentence_hash":"d4491515ef79b92cefa620b54dd787adc07b74c9f3de9087e5b55d1a32b7a453","section_path":["Undo and redo","Platform considerations","macOS"]},
+      "title": "Support standard macOS undo and redo shortcuts",
+      "statement": {"en":"Support Command-Z for undo and Shift-Command-Z for redo on macOS.","ja":"macOSでundoにCommand-Z、redoにShift-Command-Zを対応させる。"},
+      "review_note": "Split and preserved both standard macOS keyboard mappings as one paired shortcut rule."
+    },
     "HIG-PATTERNS-PLAYING-VIDEO-0001": {
       "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"389d26988555e1bdb200f97ebc97270db6c468199f1cfd8b2a1cf19198445536","section_path":["Playing video","Best practices"]},
       "title": "Use the system video player by default",

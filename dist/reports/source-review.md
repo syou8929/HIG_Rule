@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 673
-- Reviewed batches: 50
+- Reviewed rules: 685
+- Reviewed batches: 51
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:24:00Z
+- Reviewed at: 2026-07-21T15:38:24Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -675,6 +675,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-VIDEO-0038 · high — Recovered the direct no-scaling instruction from the media-encoding paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0039 · high — Recovered relevance as a separate prohibition from the optional poster-image rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0040 · high — Recovered the background continuation separately from the playback-readiness rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-UNDO-AND-REDO-0001 · high — Recorded both documented prediction techniques and kept them conditional on their respective interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0002 · high — Recorded visibility, repeated-action risk, and the offscreen-content recovery example. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0003 · high — Recorded multi-level behavior and the source's logical-session boundary examples. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0004 · high — Retained MAY and recorded both grouping scenarios without making batch undo mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0005 · high — Recorded system methods as the default and preserved the necessity test for dedicated controls. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0006 · high — Retained AVOID and recorded the standard gestures and predictability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0007 · high — Narrowed the stable rule to the documented menu placement and split keyboard mappings separately. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0008 · high — Recovered the explicit AVOID clause while preserving the source's logical-boundary exception. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0009 · high — Recovered the conditional symbol requirement as a separate atomic control-design rule. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0010 · high — Recovered toolbar placement separately from the symbol requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0011 · high — Recovered and retained the explicit You need requirement and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-UNDO-AND-REDO-0012 · high — Split and preserved both standard macOS keyboard mappings as one paired shortcut rule. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0003 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
