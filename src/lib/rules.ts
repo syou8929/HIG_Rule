@@ -1,7 +1,7 @@
 import type { GuidanceCandidate, NormativeLevel, Portability, Rule, SourcePage } from "./types.js";
 import { slugify } from "./util.js";
 
-const ACTIONABLE = /^(adopt|aim|allow|always|apply|ask|augment|avoid|avoiding|be|bear in mind|break up|choose|communicate|confirm|consider|convey|create|defer|describe|design|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|follow|give|help|identify|include|integrate|keep|let|make|maintain|match|minimize|never|offer|optimize|place|position|prefer|preserve|prioritize|provide|reduce|remove|replacing|respect|respond|show|simplify|strive|support|test|tightening|track|tracking|treat|use|verify|warn|write)\b/i;
+const ACTIONABLE = /^(adopt|aim|allow|always|apply|ask|augment|avoid|avoiding|be|bear in mind|break up|carefully consider|choose|communicate|confirm|consider|convey|create|defer|describe|design|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|follow|give|help|identify|include|integrate|keep|let|make|maintain|match|minimize|never|offer|optimize|place|position|prefer|preserve|prioritize|provide|reduce|remove|replacing|respect|respond|show|simplify|strive|support|test|tightening|track|tracking|treat|use|verify|warn|write)\b/i;
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
@@ -13,7 +13,7 @@ export function normative(text: string): Pick<Rule, "normative_level" | "confide
   const value = text.toLowerCase();
   if (/^(never|must not)\b/.test(value)) return { normative_level: "MUST_NOT", confidence: "medium", review_required: true, polarity: "prohibit", severity: "error" };
   if (/^(avoid|avoiding|do not|don't|don’t)\b/.test(value)) return { normative_level: "AVOID", confidence: "low", review_required: true, polarity: "discourage", severity: "warning" };
-  if (/^(consider|may)\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
+  if (/^(carefully consider|consider|may)\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
   if (/^(always|ensure|make sure|must|required)\b/.test(value)) return { normative_level: "MUST", confidence: "medium", review_required: true, polarity: "require", severity: "error" };
   return { normative_level: "SHOULD", confidence: "low", review_required: true, polarity: "recommend", severity: "warning" };
 }
@@ -42,7 +42,7 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
     { match: /^tightening\b/i, en: (v) => `Use tighter ${lowerFirst(v)}.`, ja: (v) => `${v}をより引き締める。` },
     { match: /^tracking\b/i, en: (v) => `Keep ${lowerFirst(v)} synchronized.`, ja: (v) => `${v}を同期させる。` },
     { match: /^replacing\b/i, en: (v) => `Substitute ${lowerFirst(v)}.`, ja: (v) => `${v}へ置き換える。` },
-    { match: /^consider\b/i, en: (v) => `Evaluate whether ${lowerFirst(v)} is appropriate for the current context.`, ja: (v) => `${v}が現在の状況に適切か検討する。` },
+    { match: /^(carefully consider|consider)\b/i, en: (v) => `Evaluate whether ${lowerFirst(v)} is appropriate for the current context.`, ja: (v) => `${v}が現在の状況に適切か検討する。` },
     { match: /^(prefer|favor)\b/i, en: (v) => `Favor ${lowerFirst(v)} when the documented conditions apply.`, ja: (v) => `該当条件では${v}を優先する。` },
     { match: /^always\b/i, en: (v) => `${upperFirst(v)} in every applicable case.`, ja: (v) => `該当するすべての場合に${v}を実行する。` },
     { match: /^(ensure|make sure|verify)\b/i, en: (v) => `Verify that ${lowerFirst(v)}.`, ja: (v) => `${v}を満たしていることを確認する。` },

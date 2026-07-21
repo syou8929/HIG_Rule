@@ -7202,6 +7202,62 @@
   status: active
   apple_native_rule: Avoid using color as the only way to communicate important information in a complication.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COMPLICATIONS-0009
+  title: Carefully choose complication update times
+  category: components
+  topic: complications
+  subtopic: best-practices
+  statement:
+    en: Choose complication timeline update times that maximize usefulness within the system's limited update and entry budgets.
+    ja: システムの更新回数とentry数の制限内で有用性が最大になるよう、complication timelineの更新時刻を選ぶ。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components:
+      - complications
+    modalities: []
+  conditions:
+    - Match timeline values to when each data item becomes relevant.
+    - Account for the limited daily timeline updates and stored entries available to each app.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Complications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるComplicationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose complication timeline update times that maximize usefulness within the system's limited update and entry budgets.” in the documented Complications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/complications
+    page_title: Complications
+    section_path:
+      - Complications
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:44.505Z
+    source_hash: 13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2
+    source_sentence_hash: 7af0ae8a72eedbc225fa872d25eba222e6c9d1e44b722e11f64f6c3224507057
+    evidence_paraphrase: Choose complication timeline update times that maximize usefulness within the system's limited update and entry budgets.
+  tags:
+    - components
+    - complications
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose complication timeline update times that maximize usefulness within the system's limited update and entry budgets.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CONTEXT-MENUS-0001
   title: Prioritize relevancy when choosing items to include in a context menu
   category: components
@@ -10977,16 +11033,16 @@
   apple_native_rule: Apply the documented Lists and tables guidance to confirm that images near a table still look good as each row highlights and slightly increases in size when.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0001
-  title: Offer Live Activities for tasks and events that have a defined beginning and end
+  title: Use Live Activities for bounded tasks lasting up to eight hours
   category: components
   topic: live-activities
   subtopic: best-practices
   statement:
-    en: Make live Activities for tasks and events that have a defined beginning and end available when applicable.
-    ja: 必要な場合にLive Activities for tasks and events that have a defined beginning and endを利用可能にする。
+    en: Offer a Live Activity for a short- or medium-duration task or event with a defined beginning and end.
+    ja: 開始と終了が明確な短時間または中時間のタスクやイベントにLive Activityを提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11001,7 +11057,7 @@
       - live-activities
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The tracked activity should not exceed eight hours.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
@@ -11009,7 +11065,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make live Activities for tasks and events that have a defined beginning and end available when applicable.” in the documented Live Activities context?
+      - Does the design satisfy “Offer a Live Activity for a short- or medium-duration task or event with a defined beginning and end.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -11024,26 +11080,26 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: 0ed8956f209f1ca47a8627d78a55553dc9edf14b0625a956ef9f318152c3441b
-    evidence_paraphrase: Make live Activities for tasks and events that have a defined beginning and end available when applicable.
+    evidence_paraphrase: Offer a Live Activity for a short- or medium-duration task or event with a defined beginning and end.
   tags:
     - components
     - live-activities
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Make live Activities for tasks and events that have a defined beginning and end available when applicable.
+  apple_native_rule: Offer a Live Activity for a short- or medium-duration task or event with a defined beginning and end.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0002
-  title: Don’t use a Live Activity to display ads or promotions
+  title: Avoid ads and promotions in Live Activities
   category: components
   topic: live-activities
   subtopic: best-practices
   statement:
-    en: Exclude use a Live Activity to display ads or promotions from the applicable experience.
-    ja: 該当する体験ではuse a Live Activity to display ads or promotionsを避ける。
+    en: Avoid using a Live Activity to display advertising or promotional content.
+    ja: Live Activityを広告やプロモーションの表示に使わない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -11058,7 +11114,7 @@
       - live-activities
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Display only information related to the ongoing task or event.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
@@ -11066,7 +11122,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude use a Live Activity to display ads or promotions from the applicable experience.” in the documented Live Activities context?
+      - Does the design satisfy “Avoid using a Live Activity to display advertising or promotional content.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -11081,26 +11137,26 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: cc1f065cf6fa526360d2de70615c6dcdfbe9712e3c66afc6b50b9b704e588aae
-    evidence_paraphrase: Exclude use a Live Activity to display ads or promotions from the applicable experience.
+    evidence_paraphrase: Avoid using a Live Activity to display advertising or promotional content.
   tags:
     - components
     - live-activities
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude use a Live Activity to display ads or promotions from the applicable experience.
+  apple_native_rule: Avoid using a Live Activity to display advertising or promotional content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0003
-  title: Avoid displaying sensitive information
+  title: Avoid exposing sensitive information in Live Activities
   category: components
   topic: live-activities
   subtopic: best-practices
   statement:
-    en: Exclude displaying sensitive information from the applicable experience.
-    ja: 該当する体験ではdisplaying sensitive informationを避ける。
+    en: Avoid displaying sensitive or private information directly in a Live Activity.
+    ja: Live Activityに機密情報や個人情報を直接表示しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -11115,7 +11171,8 @@
       - live-activities
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use an innocuous summary that opens the sensitive details in the app, or redact the sensitive view.
+    - Where appropriate, let people configure whether sensitive data appears.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
@@ -11123,7 +11180,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude displaying sensitive information from the applicable experience.” in the documented Live Activities context?
+      - Does the design satisfy “Avoid displaying sensitive or private information directly in a Live Activity.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -11138,14 +11195,14 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: adb74525ef0a906b68f4f22c342ced88a6fecec44bf861ec8bafbb9ee07e3f7f
-    evidence_paraphrase: Exclude displaying sensitive information from the applicable experience.
+    evidence_paraphrase: Avoid displaying sensitive or private information directly in a Live Activity.
   tags:
     - components
     - live-activities
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude displaying sensitive information from the applicable experience.
+  apple_native_rule: Avoid displaying sensitive or private information directly in a Live Activity.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0004
   title: Create a Live Activity that matches your app’s visual aesthetic and personality in both dark and light appe…
@@ -11156,8 +11213,8 @@
     en: Apply the documented Live Activities guidance to create a Live Activity that matches your app’s visual aesthetic and personality in both dark and light appearances.
     ja: 「Live Activities」において「Create a Live Activity that matches your app’s visual aesthetic and personality in both dark and light appearances」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11205,16 +11262,16 @@
   apple_native_rule: Apply the documented Live Activities guidance to create a Live Activity that matches your app’s visual aesthetic and personality in both dark and light appearances.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0005
-  title: Don’t add elements to your app that draw attention to the Dynamic Island
+  title: Avoid app elements that call attention to the Dynamic Island
   category: components
   topic: live-activities
   subtopic: best-practices
   statement:
-    en: Exclude add elements to your app that draw attention to the Dynamic Island from the applicable experience.
-    ja: 該当する体験ではadd elements to your app that draw attention to the Dynamic Islandを避ける。
+    en: Avoid adding elements inside the app whose purpose is to draw attention to the Dynamic Island.
+    ja: Dynamic Islandへ注意を向けさせるための要素をアプリ内に追加しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -11237,7 +11294,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude add elements to your app that draw attention to the Dynamic Island from the applicable experience.” in the documented Live Activities context?
+      - Does the design satisfy “Avoid adding elements inside the app whose purpose is to draw attention to the Dynamic Island.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -11252,14 +11309,14 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: 2f2e54af6450a465577183ce33723536bb704a73b4650eb8067b39ad26bdf6a7
-    evidence_paraphrase: Exclude add elements to your app that draw attention to the Dynamic Island from the applicable experience.
+    evidence_paraphrase: Avoid adding elements inside the app whose purpose is to draw attention to the Dynamic Island.
   tags:
     - components
     - live-activities
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude add elements to your app that draw attention to the Dynamic Island from the applicable experience.
+  apple_native_rule: Avoid adding elements inside the app whose purpose is to draw attention to the Dynamic Island.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0006
   title: Ensure text is easy to read
@@ -11327,8 +11384,8 @@
     en: Choose or apply familiar layouts for custom views and layouts in the documented context.
     ja: 該当する状況ではfamiliar layouts for custom views and layoutsを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11386,8 +11443,8 @@
     en: Choose or apply consistent margins and concentric placement in the documented context.
     ja: 該当する状況ではconsistent margins and concentric placementを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11445,8 +11502,8 @@
     en: Choose or apply color to express the character and identity of your app in the documented context.
     ja: 該当する状況ではcolor to express the character and identity of your appを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11504,8 +11561,8 @@
     en: Choose or apply animations to reinforce the information you’re communicating and to bring attention to updates in the documented context.
     ja: 該当する状況ではanimations to reinforce the information you’re communicating and to bring attention to updatesを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11624,8 +11681,8 @@
     en: Evaluate whether letting people respond to event or progress updates is appropriate for the current context.
     ja: letting people respond to event or progress updatesが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -11683,8 +11740,8 @@
     en: Make an App Shortcut that starts your Live Activity available when applicable.
     ja: 必要な場合にan App Shortcut that starts your Live Activityを利用可能にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11737,16 +11794,16 @@
   apple_native_rule: Make an App Shortcut that starts your Live Activity available when applicable.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0014
-  title: Let people track multiple events efficiently with a single Live Activity
+  title: Track related events in one dynamic Live Activity
   category: components
   topic: live-activities
   subtopic: starting-updating-and-ending-a-live-activity
   statement:
-    en: Preserve people’s ability to track multiple events efficiently with a single Live Activity.
-    ja: 利用者がtrack multiple events efficiently with a single Live Activityできる状態を保つ。
+    en: Prefer one Live Activity with a dynamic layout that rotates through related events instead of separate activities people must switch between.
+    ja: 関連イベントごとに切り替えが必要な複数のactivityではなく、動的レイアウトでイベントを巡回する1つのLive Activityを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11769,7 +11826,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Preserve people’s ability to track multiple events efficiently with a single Live Activity.” in the documented Live Activities context?
+      - Does the design satisfy “Prefer one Live Activity with a dynamic layout that rotates through related events instead of separate activities people must switch between.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -11785,7 +11842,7 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: 994b2e6782a5da7ddd50ee5890d23ce33f0426c4b4b3245fa593d2943b93e6fb
-    evidence_paraphrase: Preserve people’s ability to track multiple events efficiently with a single Live Activity.
+    evidence_paraphrase: Prefer one Live Activity with a dynamic layout that rotates through related events instead of separate activities people must switch between.
   tags:
     - components
     - live-activities
@@ -11793,7 +11850,7 @@
     - starting-updating-and-ending-a-live-activity
   priority_rank: 4
   status: active
-  apple_native_rule: Preserve people’s ability to track multiple events efficiently with a single Live Activity.
+  apple_native_rule: Prefer one Live Activity with a dynamic layout that rotates through related events instead of separate activities people must switch between.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0015
   title: End a Live Activity immediately when its task or event ends
@@ -11916,16 +11973,16 @@
   apple_native_rule: Verify that unified information and design of the compact presentations in the Dynamic Island.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0017
-  title: Keep content as narrow as possible and ensure it’s snug against the TrueDepth camera
+  title: Keep compact Live Activity content narrow and camera-adjacent
   category: components
   topic: live-activities
   subtopic: compact-presentation
   statement:
-    en: Maintain content as narrow as possible and ensure it’s snug against the TrueDepth camera.
-    ja: content as narrow as possible and ensure it’s snug against the TrueDepth cameraを維持する。
+    en: Keep compact-presentation content narrow, balanced, and directly adjacent to the TrueDepth camera.
+    ja: compact presentationの内容を狭く均衡させ、TrueDepthカメラへ直接沿わせる。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -11940,7 +11997,8 @@
       - live-activities
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Don't add padding between content and the TrueDepth camera.
+    - Avoid obscuring key status-bar information and balance similarly sized leading and trailing views.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
@@ -11948,7 +12006,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Maintain content as narrow as possible and ensure it’s snug against the TrueDepth camera.” in the documented Live Activities context?
+      - Does the design satisfy “Keep compact-presentation content narrow, balanced, and directly adjacent to the TrueDepth camera.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -11964,7 +12022,7 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: 8c16f6639222d7360577aaa8fd860b6000b828b0cf4cac04c3de3c248d08b9f2
-    evidence_paraphrase: Maintain content as narrow as possible and ensure it’s snug against the TrueDepth camera.
+    evidence_paraphrase: Keep compact-presentation content narrow, balanced, and directly adjacent to the TrueDepth camera.
   tags:
     - components
     - live-activities
@@ -11972,7 +12030,7 @@
     - compact-presentation
   priority_rank: 4
   status: active
-  apple_native_rule: Maintain content as narrow as possible and ensure it’s snug against the TrueDepth camera.
+  apple_native_rule: Keep compact-presentation content narrow, balanced, and directly adjacent to the TrueDepth camera.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0018
   title: Ensure that your Live Activity is recognizable in the minimal presentation
@@ -12042,8 +12100,8 @@
     en: Apply the documented Live Activities guidance to maintain the relative placement of elements to create a coherent layout between presentations.
     ja: 「Live Activities」において「Maintain the relative placement of elements to create a coherent layout between presentations」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -12093,16 +12151,16 @@
   apple_native_rule: Apply the documented Live Activities guidance to maintain the relative placement of elements to create a coherent layout between presentations.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0020
-  title: Don’t replicate notification layouts
+  title: Avoid notification-style Live Activity layouts
   category: components
   topic: live-activities
   subtopic: lock-screen-presentation
   statement:
-    en: Exclude replicate notification layouts from the applicable experience.
-    ja: 該当する体験ではreplicate notification layoutsを避ける。
+    en: Avoid replicating a notification layout for a Live Activity on the Lock Screen.
+    ja: Lock Screen上のLive Activityで通知レイアウトを再現しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -12117,7 +12175,7 @@
       - live-activities
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Create a layout specific to the Live Activity's information.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
@@ -12125,7 +12183,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude replicate notification layouts from the applicable experience.” in the documented Live Activities context?
+      - Does the design satisfy “Avoid replicating a notification layout for a Live Activity on the Lock Screen.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -12141,7 +12199,7 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: 7d5224c66be62288d17f4f034774fd0cc0fc3f29769aa1eccd223e17b250e049
-    evidence_paraphrase: Exclude replicate notification layouts from the applicable experience.
+    evidence_paraphrase: Avoid replicating a notification layout for a Live Activity on the Lock Screen.
   tags:
     - components
     - live-activities
@@ -12149,7 +12207,7 @@
     - lock-screen-presentation
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude replicate notification layouts from the applicable experience.
+  apple_native_rule: Avoid replicating a notification layout for a Live Activity on the Lock Screen.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0021
   title: Choose colors that work well on a personalized Lock Screen
@@ -12160,8 +12218,8 @@
     en: Apply the documented Live Activities guidance to choose colors that work well on a personalized Lock Screen.
     ja: 「Live Activities」において「Choose colors that work well on a personalized Lock Screen」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -12274,16 +12332,16 @@
   apple_native_rule: Keep Live Activity text, assets, and colors legible in Dark Mode and on reduced-luminance Always-On displays.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0023
-  title: Verify the generated color of the dismiss button
+  title: Verify the system-generated Live Activity dismiss-button color
   category: components
   topic: live-activities
   subtopic: lock-screen-presentation
   statement:
-    en: Verify that the generated color of the dismiss button.
-    ja: the generated color of the dismiss buttonを満たしていることを確認する。
+    en: Verify that the system-generated dismiss-button color matches the Live Activity design, and adjust it when necessary.
+    ja: システム生成のdismiss button色がLive Activityのデザインに合うことを確認し、必要なら調整する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -12306,7 +12364,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that the generated color of the dismiss button.” in the documented Live Activities context?
+      - Does the design satisfy “Verify that the system-generated dismiss-button color matches the Live Activity design, and adjust it when necessary.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -12322,7 +12380,7 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: a74d3e197b283aa9a5395e659943a8bb66b4d673ffc0e66b39889c58af2edf1d
-    evidence_paraphrase: Verify that the generated color of the dismiss button.
+    evidence_paraphrase: Verify that the system-generated dismiss-button color matches the Live Activity design, and adjust it when necessary.
   tags:
     - components
     - live-activities
@@ -12330,19 +12388,19 @@
     - lock-screen-presentation
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that the generated color of the dismiss button.
+  apple_native_rule: Verify that the system-generated dismiss-button color matches the Live Activity design, and adjust it when necessary.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0024
-  title: Use standard margins to align your design with notifications
+  title: Use the 14-point standard Lock Screen margin
   category: components
   topic: live-activities
   subtopic: lock-screen-presentation
   statement:
-    en: Choose or apply standard margins to align your design with notifications in the documented context.
-    ja: 該当する状況ではstandard margins to align your design with notificationsを採用する。
+    en: Use the 14-point standard layout margin for a Lock Screen Live Activity.
+    ja: Lock ScreenのLive Activityでは標準の14ポイントlayout marginを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -12357,7 +12415,7 @@
       - live-activities
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Tighter margins can be appropriate for graphics or buttons, but avoid crowded edges.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
@@ -12365,7 +12423,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply standard margins to align your design with notifications in the documented context.” in the documented Live Activities context?
+      - Does the design satisfy “Use the 14-point standard layout margin for a Lock Screen Live Activity.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -12381,7 +12439,7 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: cdabe7052fd80925e21af62d5be141f46350b3e0feec453161e288d5bb45d83f
-    evidence_paraphrase: Choose or apply standard margins to align your design with notifications in the documented context.
+    evidence_paraphrase: Use the 14-point standard layout margin for a Lock Screen Live Activity.
   tags:
     - components
     - live-activities
@@ -12389,7 +12447,7 @@
     - lock-screen-presentation
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply standard margins to align your design with notifications in the documented context.
+  apple_native_rule: Use the 14-point standard layout margin for a Lock Screen Live Activity.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0025
   title: Consider using the default background color in StandBy
@@ -12400,8 +12458,8 @@
     en: Evaluate whether using the default background color in StandBy is appropriate for the current context.
     ja: using the default background color in StandByが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -12459,8 +12517,8 @@
     en: Choose or apply standard margins and avoid extending graphic elements to the edge of the screen in the documented context.
     ja: 該当する状況ではstandard margins and avoid extending graphic elements to the edge of the screenを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -12510,16 +12568,16 @@
   apple_native_rule: Choose or apply standard margins and avoid extending graphic elements to the edge of the screen in the documented context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0027
-  title: Verify your design in Night Mode
+  title: Verify StandBy Live Activities in Night Mode
   category: components
   topic: live-activities
   subtopic: standby-presentation
   statement:
-    en: Verify that your design in Night Mode.
-    ja: your design in Night Modeを満たしていることを確認する。
+    en: Verify that a StandBy Live Activity remains legible and sufficiently contrasted under the system's red Night Mode tint.
+    ja: StandByのLive Activityが、システムの赤いNight Mode tintでも判読可能で十分なコントラストを保つことを確認する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -12542,7 +12600,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that your design in Night Mode.” in the documented Live Activities context?
+      - Does the StandBy Live Activity remain legible and sufficiently contrasted under the red Night Mode tint?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -12558,7 +12616,7 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: b16b4813e3eea18d9a1e4f3110ae5495c8d17782785daf0d033e80b147c2932b
-    evidence_paraphrase: Verify that your design in Night Mode.
+    evidence_paraphrase: Verify that a StandBy Live Activity remains legible and sufficiently contrasted under the system's red Night Mode tint.
   tags:
     - components
     - live-activities
@@ -12566,19 +12624,19 @@
     - standby-presentation
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that your design in Night Mode.
+  apple_native_rule: Verify that a StandBy Live Activity remains legible and sufficiently contrasted under the system's red Night Mode tint.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0028
-  title: Consider creating a custom layout if your Live Activity would benefit from larger text or additional inform…
+  title: Consider a supplemental CarPlay Live Activity layout
   category: components
   topic: live-activities
   subtopic: carplay
   statement:
-    en: Evaluate whether creating a custom layout if your Live Activity would benefit from larger text or additional information is appropriate for the current context.
-    ja: creating a custom layout if your Live Activity would benefit from larger text or additional informationが現在の状況に適切か検討する。
+    en: Consider a custom CarPlay layout when the Live Activity benefits from larger text or additional information.
+    ja: Live Activityで大きなテキストや追加情報が有用な場合は、CarPlay向けカスタムレイアウトを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -12591,7 +12649,7 @@
       - live-activities
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Declare support for the ActivityFamily.small supplemental activity family instead of using the default appearance.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
@@ -12600,7 +12658,7 @@
     automated:
       - Run UI tests at the platform’s largest supported text setting and detect clipped, truncated, or overlapping essential text.
     manual:
-      - Does the design satisfy “Evaluate whether creating a custom layout if your Live Activity would benefit from larger text or additional information is appropriate for the current context.” in the documented Live Activities context?
+      - Does the design satisfy “Consider a custom CarPlay layout when the Live Activity benefits from larger text or additional information.” in the documented Live Activities context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -12615,26 +12673,26 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: 173d224fb69a0196e87029bafb4edc3e4a60d90929532434a44b40a8ec2365b8
-    evidence_paraphrase: Evaluate whether creating a custom layout if your Live Activity would benefit from larger text or additional information is appropriate for the current context.
+    evidence_paraphrase: Consider a custom CarPlay layout when the Live Activity benefits from larger text or additional information.
   tags:
     - components
     - live-activities
     - carplay
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether creating a custom layout if your Live Activity would benefit from larger text or additional information is appropriate for the current context.
+  apple_native_rule: Consider a custom CarPlay layout when the Live Activity benefits from larger text or additional information.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0029
-  title: Consider creating a custom watchOS layout
+  title: Consider a custom watchOS Live Activity layout
   category: components
   topic: live-activities
   subtopic: watchos
   statement:
-    en: Evaluate whether creating a custom watchOS layout is appropriate for the current context.
-    ja: creating a custom watchOS layoutが現在の状況に適切か検討する。
+    en: Consider a custom Apple Watch layout when it can show more useful information than the system-provided default.
+    ja: システム提供の標準表示より有用な情報を示せる場合は、Apple Watch向けカスタムレイアウトを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -12647,7 +12705,7 @@
       - live-activities
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The same custom layout also appears in CarPlay, where interactive elements are disabled.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
@@ -12655,7 +12713,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether creating a custom watchOS layout is appropriate for the current context.” in the documented Live Activities context?
+      - Does the design satisfy “Consider a custom Apple Watch layout when it can show more useful information than the system-provided default.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -12671,7 +12729,7 @@
     retrieved_at: 2026-07-21T11:15:01.562Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: c677e104a0f7709e1b707bb0d2caefb18827a83262c13e1f94b1ff44e7bdf3e3
-    evidence_paraphrase: Evaluate whether creating a custom watchOS layout is appropriate for the current context.
+    evidence_paraphrase: Consider a custom Apple Watch layout when it can show more useful information than the system-provided default.
   tags:
     - components
     - live-activities
@@ -12679,7 +12737,7 @@
     - watchos
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether creating a custom watchOS layout is appropriate for the current context.
+  apple_native_rule: Consider a custom Apple Watch layout when it can show more useful information than the system-provided default.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0030
   title: Consider setting a custom dismissal time for an ended Live Activity
@@ -12740,6 +12798,180 @@
   priority_rank: 4
   status: active
   apple_native_rule: Evaluate whether a custom dismissal time is appropriate after a Live Activity ends.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-LIVE-ACTIVITIES-0031
+  title: Carefully consider a custom Lock Screen background
+  category: components
+  topic: live-activities
+  subtopic: choosing-colors
+  statement:
+    en: Carefully consider whether a custom background color or opacity improves the Lock Screen Live Activity.
+    ja: カスタム背景色や不透明度がLock ScreenのLive Activityを改善するか慎重に検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components:
+      - live-activities
+    modalities: []
+  conditions:
+    - Compact, minimal, and expanded presentations don't support custom background colors.
+    - A custom Lock Screen background needs sufficient contrast on reduced-luminance Always-On displays.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLive Activitiesの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Carefully consider whether a custom background color or opacity improves the Lock Screen Live Activity.” in the documented Live Activities context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/live-activities
+    page_title: Live Activities
+    section_path:
+      - Live Activities
+      - Best practices
+      - Choosing colors
+    retrieved_at: 2026-07-21T11:15:01.562Z
+    source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
+    source_sentence_hash: a363f10cc8cea990cd89462a88dfa43aea7c8e06d049a67bd1e2d1089fa0ca4c
+    evidence_paraphrase: Carefully consider whether a custom background color or opacity improves the Lock Screen Live Activity.
+  tags:
+    - components
+    - live-activities
+    - best-practices
+    - choosing-colors
+  priority_rank: 4
+  status: active
+  apple_native_rule: Carefully consider whether a custom background color or opacity improves the Lock Screen Live Activity.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-LIVE-ACTIVITIES-0032
+  title: Carefully consider controls in a CarPlay Live Activity layout
+  category: components
+  topic: live-activities
+  subtopic: carplay
+  statement:
+    en: Carefully consider whether buttons or toggles belong in a custom Live Activity layout used in CarPlay.
+    ja: CarPlayで使われるカスタムLive Activityレイアウトにボタンやtoggleが適切か慎重に検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - carplay
+    devices:
+      - carplay-display
+    components:
+      - live-activities
+    modalities: []
+  conditions:
+    - CarPlay deactivates interactive elements in Live Activities.
+    - When people may observe the activity while driving, prefer timely content over controls.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLive Activitiesの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Carefully consider whether buttons or toggles belong in a custom Live Activity layout used in CarPlay.” in the documented Live Activities context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/live-activities
+    page_title: Live Activities
+    section_path:
+      - Live Activities
+      - CarPlay
+    retrieved_at: 2026-07-21T11:15:01.562Z
+    source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
+    source_sentence_hash: e5b357211dc9c02ac9c0d9361dc3c15af96d20df3780b3d9e267c114a6aea88b
+    evidence_paraphrase: Carefully consider whether buttons or toggles belong in a custom Live Activity layout used in CarPlay.
+  tags:
+    - components
+    - live-activities
+    - carplay
+  priority_rank: 4
+  status: active
+  apple_native_rule: Carefully consider whether buttons or toggles belong in a custom Live Activity layout used in CarPlay.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-LIVE-ACTIVITIES-0033
+  title: Carefully consider controls in a custom watchOS layout
+  category: components
+  topic: live-activities
+  subtopic: watchos
+  statement:
+    en: Carefully consider whether buttons or toggles belong in a custom watchOS Live Activity layout.
+    ja: watchOS向けカスタムLive Activityレイアウトにボタンやtoggleが適切か慎重に検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components:
+      - live-activities
+    modalities: []
+  conditions:
+    - The watchOS custom layout also appears in CarPlay, where interactive elements are disabled.
+    - Don't include controls when people are likely to start or observe the Live Activity while driving.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLive Activitiesの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Carefully consider whether buttons or toggles belong in a custom watchOS Live Activity layout.” in the documented Live Activities context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/live-activities
+    page_title: Live Activities
+    section_path:
+      - Live Activities
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T11:15:01.562Z
+    source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
+    source_sentence_hash: e5b357211dc9c02ac9c0d9361dc3c15af96d20df3780b3d9e267c114a6aea88b
+    evidence_paraphrase: Carefully consider whether buttons or toggles belong in a custom watchOS Live Activity layout.
+  tags:
+    - components
+    - live-activities
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Carefully consider whether buttons or toggles belong in a custom watchOS Live Activity layout.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LOCKUPS-0001
   title: Allow adequate space between lockups
@@ -15355,16 +15587,16 @@
   apple_native_rule: Exclude creating a custom image or component that mimics the appearance or behavior of a badge from the applicable experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-NOTIFICATIONS-0019
-  title: Avoid using a short look as the only way to communicate important information
+  title: Avoid relying on a watchOS short look for critical information
   category: components
   topic: notifications
   subtopic: short-looks
   statement:
-    en: Exclude using a short look as the only way to communicate important information from the applicable experience.
-    ja: 該当する体験ではusing a short look as the only way to communicate important informationを避ける。
+    en: Avoid using a watchOS short look as the only channel for important information.
+    ja: watchOSのshort lookを重要情報の唯一の伝達手段にしない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -15378,7 +15610,7 @@
     modalities:
       - gaze
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Deliver critical information through an additional channel because a short look appears only briefly.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Notifications experience on the scoped Apple platforms.
@@ -15386,7 +15618,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude using a short look as the only way to communicate important information from the applicable experience.” in the documented Notifications context?
+      - Does the design satisfy “Avoid using a watchOS short look as the only channel for important information.” in the documented Notifications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -15403,7 +15635,7 @@
     retrieved_at: 2026-07-21T11:15:07.541Z
     source_hash: 3feea095eec60b9f63818887b381366d44a251fac04ffe0f929903ba5a53af29
     source_sentence_hash: 2c3fad2dbf36cecf7ca4489bfc4918d9fa96e74491d5cd8c8ed438a60a738796
-    evidence_paraphrase: Exclude using a short look as the only way to communicate important information from the applicable experience.
+    evidence_paraphrase: Avoid using a watchOS short look as the only channel for important information.
   tags:
     - components
     - notifications
@@ -15413,19 +15645,19 @@
     - gaze
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude using a short look as the only way to communicate important information from the applicable experience.
+  apple_native_rule: Avoid using a watchOS short look as the only channel for important information.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-NOTIFICATIONS-0020
-  title: Keep privacy in mind
+  title: Keep watchOS short-look content discreet
   category: components
   topic: notifications
   subtopic: short-looks
   statement:
-    en: Maintain privacy in mind.
-    ja: privacy in mindを維持する。
+    en: Limit a watchOS short look to basic, nonsensitive information.
+    ja: watchOSのshort lookは基本的で機密性のない情報に限定する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -15438,7 +15670,7 @@
       - notifications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Avoid potentially sensitive information in the notification title.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Notifications experience on the scoped Apple platforms.
@@ -15446,7 +15678,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Maintain privacy in mind.” in the documented Notifications context?
+      - Does the design satisfy “Limit a watchOS short look to basic, nonsensitive information.” in the documented Notifications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -15463,7 +15695,7 @@
     retrieved_at: 2026-07-21T11:15:07.541Z
     source_hash: 3feea095eec60b9f63818887b381366d44a251fac04ffe0f929903ba5a53af29
     source_sentence_hash: 33749ad7a4b9d03aa2976ae7c0931f8ba7f63b8a02347e7591c34d9c540eae52
-    evidence_paraphrase: Maintain privacy in mind.
+    evidence_paraphrase: Limit a watchOS short look to basic, nonsensitive information.
   tags:
     - components
     - notifications
@@ -15472,19 +15704,19 @@
     - short-looks
   priority_rank: 4
   status: active
-  apple_native_rule: Maintain privacy in mind.
+  apple_native_rule: Limit a watchOS short look to basic, nonsensitive information.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-NOTIFICATIONS-0021
-  title: Consider using a rich, custom long-look notification to let people get the information they need without la…
+  title: Consider a rich watchOS long-look notification
   category: components
   topic: notifications
   subtopic: long-looks
   statement:
-    en: Evaluate whether using a rich, custom long-look notification to let people get the information they need without launching your app is appropriate for the current context.
-    ja: using a rich, custom long-look notification to let people get the information they need without launching your appが現在の状況に適切か検討する。
+    en: Consider a rich custom long look that provides needed information without requiring people to launch the app.
+    ja: アプリを起動せず必要情報を得られる、豊かなカスタムlong lookを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -15506,7 +15738,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether using a rich, custom long-look notification to let people get the information they need without launching your app is appropriate for the current context.” in the documented Notifications context?
+      - Does the design satisfy “Consider a rich custom long look that provides needed information without requiring people to launch the app.” in the documented Notifications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -15523,7 +15755,7 @@
     retrieved_at: 2026-07-21T11:15:07.541Z
     source_hash: 3feea095eec60b9f63818887b381366d44a251fac04ffe0f929903ba5a53af29
     source_sentence_hash: 875f5effb48a34b4a6cc72f465880fd8a826cfa676249b139335a79e268a61f6
-    evidence_paraphrase: Evaluate whether using a rich, custom long-look notification to let people get the information they need without launching your app is appropriate for the current context.
+    evidence_paraphrase: Consider a rich custom long look that provides needed information without requiring people to launch the app.
   tags:
     - components
     - notifications
@@ -15533,19 +15765,19 @@
     - gaze
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether using a rich, custom long-look notification to let people get the information they need without launching your app is appropriate for the current context.
+  apple_native_rule: Consider a rich custom long look that provides needed information without requiring people to launch the app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-NOTIFICATIONS-0022
-  title: Choose a background appearance for the sash
+  title: Choose a suitable watchOS long-look sash appearance
   category: components
   topic: notifications
   subtopic: long-looks
   statement:
-    en: Apply the documented Notifications guidance to choose a background appearance for the sash.
-    ja: 「Notifications」において「Choose a background appearance for the sash」の指針を適用する。
+    en: Choose a custom color or blurred appearance for the system-provided long-look sash when it supports the content.
+    ja: 内容に適する場合は、システム提供のlong-look sashにカスタム色またはblurred appearanceを選ぶ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -15558,7 +15790,7 @@
       - notifications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A blurred translucent sash usually works well when a photo appears at the top of the content area.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Notifications experience on the scoped Apple platforms.
@@ -15566,7 +15798,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Notifications guidance to choose a background appearance for the sash.” in the documented Notifications context?
+      - Does the design satisfy “Choose a custom color or blurred appearance for the system-provided long-look sash when it supports the content.” in the documented Notifications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -15583,7 +15815,7 @@
     retrieved_at: 2026-07-21T11:15:07.541Z
     source_hash: 3feea095eec60b9f63818887b381366d44a251fac04ffe0f929903ba5a53af29
     source_sentence_hash: 4487afa1f58d02a91ec9f765c03f2b62b5266ff140e28849c7c2149ac47e01d5
-    evidence_paraphrase: Apply the documented Notifications guidance to choose a background appearance for the sash.
+    evidence_paraphrase: Choose a custom color or blurred appearance for the system-provided long-look sash when it supports the content.
   tags:
     - components
     - notifications
@@ -15592,19 +15824,19 @@
     - long-looks
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Notifications guidance to choose a background appearance for the sash.
+  apple_native_rule: Choose a custom color or blurred appearance for the system-provided long-look sash when it supports the content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-NOTIFICATIONS-0023
-  title: Choose a background color for the content area
+  title: Choose a watchOS long-look content background
   category: components
   topic: notifications
   subtopic: long-looks
   statement:
-    en: Apply the documented Notifications guidance to choose a background color for the content area.
-    ja: 「Notifications」において「Choose a background color for the content area」の指針を適用する。
+    en: Choose the transparent default, a system-matching translucent white, or a suitable custom color for the long-look content area.
+    ja: long-look content areaには、標準の透明、システムに合う半透明白、または適切なカスタム色を選ぶ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -15617,7 +15849,7 @@
       - notifications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use white at 18 percent opacity to match the background of other system notifications.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Notifications experience on the scoped Apple platforms.
@@ -15625,7 +15857,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Notifications guidance to choose a background color for the content area.” in the documented Notifications context?
+      - Does the design satisfy “Choose the transparent default, a system-matching translucent white, or a suitable custom color for the long-look content area.” in the documented Notifications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -15642,7 +15874,7 @@
     retrieved_at: 2026-07-21T11:15:07.541Z
     source_hash: 3feea095eec60b9f63818887b381366d44a251fac04ffe0f929903ba5a53af29
     source_sentence_hash: 12b85c436fc0bf470968a69587f719061f6fcc37b6f5440b58dbce7f0b514d73
-    evidence_paraphrase: Apply the documented Notifications guidance to choose a background color for the content area.
+    evidence_paraphrase: Choose the transparent default, a system-matching translucent white, or a suitable custom color for the long-look content area.
   tags:
     - components
     - notifications
@@ -15651,19 +15883,19 @@
     - long-looks
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Notifications guidance to choose a background color for the content area.
+  apple_native_rule: Choose the transparent default, a system-matching translucent white, or a suitable custom color for the long-look content area.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-NOTIFICATIONS-0024
-  title: Provide up to four custom actions below the content area
+  title: Provide at most four custom watchOS long-look actions
   category: components
   topic: notifications
   subtopic: long-looks
   statement:
-    en: Make up to four custom actions below the content area available when applicable.
-    ja: 必要な場合にup to four custom actions below the content areaを利用可能にする。
+    en: Provide up to four custom actions below the watchOS long-look content area.
+    ja: watchOSのlong-look content areaの下に最大4つのカスタムactionを提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -15676,7 +15908,8 @@
       - notifications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The system always adds a Dismiss button below the custom actions.
+    - An iPhone companion's registered actionable notification types can configure the watchOS buttons.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Notifications experience on the scoped Apple platforms.
@@ -15684,7 +15917,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make up to four custom actions below the content area available when applicable.” in the documented Notifications context?
+      - Does the design satisfy “Provide up to four custom actions below the watchOS long-look content area.” in the documented Notifications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -15701,7 +15934,7 @@
     retrieved_at: 2026-07-21T11:15:07.541Z
     source_hash: 3feea095eec60b9f63818887b381366d44a251fac04ffe0f929903ba5a53af29
     source_sentence_hash: 7d9e95616d21d3886d55ee3dcc981d2fbf5d4ec88f8c7f9db081b0e5ab68cb08
-    evidence_paraphrase: Make up to four custom actions below the content area available when applicable.
+    evidence_paraphrase: Provide up to four custom actions below the watchOS long-look content area.
   tags:
     - components
     - notifications
@@ -15710,19 +15943,19 @@
     - long-looks
   priority_rank: 4
   status: active
-  apple_native_rule: Make up to four custom actions below the content area available when applicable.
+  apple_native_rule: Provide up to four custom actions below the watchOS long-look content area.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-NOTIFICATIONS-0025
-  title: Keep double tap in mind when choosing the order of custom actions you present as responses to a notification
+  title: Order watchOS notification actions for double tap
   category: components
   topic: notifications
   subtopic: double-tap
   statement:
-    en: Maintain double tap in mind when choosing the order of custom actions you present as responses to a notification.
-    ja: double tap in mind when choosing the order of custom actions you present as responses to a notificationを維持する。
+    en: Order custom notification actions so double tap runs the most appropriate first nondestructive action.
+    ja: double tapで最も適切な最初の非破壊actionが実行されるよう、カスタム通知actionを並べる。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -15736,7 +15969,7 @@
     modalities:
       - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Consider placing the most frequently used nondestructive action at the top of the list.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Notifications experience on the scoped Apple platforms.
@@ -15744,7 +15977,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Maintain double tap in mind when choosing the order of custom actions you present as responses to a notification.” in the documented Notifications context?
+      - Does the design satisfy “Order custom notification actions so double tap runs the most appropriate first nondestructive action.” in the documented Notifications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -15761,7 +15994,7 @@
     retrieved_at: 2026-07-21T11:15:07.541Z
     source_hash: 3feea095eec60b9f63818887b381366d44a251fac04ffe0f929903ba5a53af29
     source_sentence_hash: a92823fc368c004ea1c837f9f8b62d0cbfa2701ac8f058a9d2a4b3d94f4db7f3
-    evidence_paraphrase: Maintain double tap in mind when choosing the order of custom actions you present as responses to a notification.
+    evidence_paraphrase: Order custom notification actions so double tap runs the most appropriate first nondestructive action.
   tags:
     - components
     - notifications
@@ -15771,7 +16004,7 @@
     - touch
   priority_rank: 4
   status: active
-  apple_native_rule: Maintain double tap in mind when choosing the order of custom actions you present as responses to a notification.
+  apple_native_rule: Order custom notification actions so double tap runs the most appropriate first nondestructive action.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ORNAMENTS-0001
   title: Consider using an ornament to present frequently needed controls or information in a consistent location th…
@@ -16741,16 +16974,16 @@
   apple_native_rule: Exclude coloring indicator images from the applicable experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-PAGE-CONTROLS-0005
-  title: Avoid animating page transitions during scrubbing
+  title: Avoid animated page transitions while scrubbing
   category: components
   topic: page-controls
   subtopic: ios-ipados
   statement:
-    en: Exclude animating page transitions during scrubbing from the applicable experience.
-    ja: 該当する体験ではanimating page transitions during scrubbingを避ける。
+    en: Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control.
+    ja: iOSまたはiPadOSのpage controlをscrubしている間は、各ページ遷移をアニメーションしない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -16765,7 +16998,7 @@
       - page-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use the animated scrolling transition for taps, not rapid scrubbing.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.
@@ -16773,7 +17006,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude animating page transitions during scrubbing from the applicable experience.” in the documented Page controls context?
+      - Does the design satisfy “Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control.” in the documented Page controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16789,7 +17022,7 @@
     retrieved_at: 2026-07-21T11:15:09.571Z
     source_hash: b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96
     source_sentence_hash: 84146d5d242361682191ff3aa22eddb0d1d085869df1fc7ac8a18cbd19bcbcfb
-    evidence_paraphrase: Exclude animating page transitions during scrubbing from the applicable experience.
+    evidence_paraphrase: Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control.
   tags:
     - components
     - page-controls
@@ -16797,19 +17030,19 @@
     - ios-ipados
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude animating page transitions during scrubbing from the applicable experience.
+  apple_native_rule: Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-PAGE-CONTROLS-0006
-  title: Avoid supporting the scrubber when you use the minimal background style
+  title: Avoid a scrubber with the minimal page-control background
   category: components
   topic: page-controls
   subtopic: ios-ipados
   statement:
-    en: Exclude supporting the scrubber when you use the minimal background style from the applicable experience.
-    ja: 該当する体験ではsupporting the scrubber when you use the minimal background styleを避ける。
+    en: Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback.
+    ja: scrub中のフィードバックがないため、minimal background styleではpage-control scrubbingを有効にしない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -16824,7 +17057,7 @@
       - page-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use the automatic or prominent background style when people need to scrub pages.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.
@@ -16832,7 +17065,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude supporting the scrubber when you use the minimal background style from the applicable experience.” in the documented Page controls context?
+      - Does the design satisfy “Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback.” in the documented Page controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16848,7 +17081,7 @@
     retrieved_at: 2026-07-21T11:15:09.571Z
     source_hash: b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96
     source_sentence_hash: 8b526c8a6c9fc25e3d3aaaf88ed5bc26ae4b3b2e4ed4d527b664e44694c6b7c7
-    evidence_paraphrase: Exclude supporting the scrubber when you use the minimal background style from the applicable experience.
+    evidence_paraphrase: Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback.
   tags:
     - components
     - page-controls
@@ -16856,19 +17089,19 @@
     - ios-ipados
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude supporting the scrubber when you use the minimal background style from the applicable experience.
+  apple_native_rule: Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-PAGE-CONTROLS-0007
-  title: Use page controls on collections of full-screen pages
+  title: Use tvOS page controls for peer full-screen pages
   category: components
   topic: page-controls
   subtopic: tvos
   statement:
-    en: Choose or apply page controls on collections of full-screen pages in the documented context.
-    ja: 該当する状況ではpage controls on collections of full-screen pagesを採用する。
+    en: Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy.
+    ja: 階層上対等なcontent-richな全画面ページのtvOS collectionにはpage controlを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -16881,7 +17114,7 @@
       - page-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Avoid additional controls that make it difficult to maintain focus while moving between pages.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.
@@ -16889,7 +17122,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply page controls on collections of full-screen pages in the documented context.” in the documented Page controls context?
+      - Does the design satisfy “Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy.” in the documented Page controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16905,7 +17138,7 @@
     retrieved_at: 2026-07-21T11:15:09.571Z
     source_hash: b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96
     source_sentence_hash: 296dffab6864318350a66bc4b879714a146b4c444102c5306ae5bcab5a05c279
-    evidence_paraphrase: Choose or apply page controls on collections of full-screen pages in the documented context.
+    evidence_paraphrase: Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy.
   tags:
     - components
     - page-controls
@@ -16913,19 +17146,19 @@
     - tvos
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply page controls on collections of full-screen pages in the documented context.
+  apple_native_rule: Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-PAGE-CONTROLS-0008
-  title: Use vertical pagination to separate multiple views into distinct, purposeful pages
+  title: Use purposeful vertical pagination in watchOS
   category: components
   topic: page-controls
   subtopic: watchos
   statement:
-    en: Choose or apply vertical pagination to separate multiple views into distinct, purposeful pages in the documented context.
-    ja: 該当する状況ではvertical pagination to separate multiple views into distinct, purposeful pagesを採用する。
+    en: Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown.
+    ja: watchOSのviewを目的の明確な縦ページに分け、Digital Crownでスクロールできるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -16938,7 +17171,7 @@
       - page-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Prefer this pattern over horizontal pagination or deep hierarchical navigation.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.
@@ -16946,7 +17179,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply vertical pagination to separate multiple views into distinct, purposeful pages in the documented context.” in the documented Page controls context?
+      - Does the design satisfy “Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown.” in the documented Page controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16962,7 +17195,7 @@
     retrieved_at: 2026-07-21T11:15:09.571Z
     source_hash: b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96
     source_sentence_hash: 86d1ee6bf063aa38902090649a895c3466cc0e749bf20a49c73f92ca99ee43d2
-    evidence_paraphrase: Choose or apply vertical pagination to separate multiple views into distinct, purposeful pages in the documented context.
+    evidence_paraphrase: Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown.
   tags:
     - components
     - page-controls
@@ -16970,19 +17203,19 @@
     - watchos
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply vertical pagination to separate multiple views into distinct, purposeful pages in the documented context.
+  apple_native_rule: Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-PAGE-CONTROLS-0009
-  title: Consider limiting the content of an individual page to a single screen height
+  title: Consider one-screen-height watchOS pages
   category: components
   topic: page-controls
   subtopic: watchos
   statement:
-    en: Evaluate whether limiting the content of an individual page to a single screen height is appropriate for the current context.
-    ja: limiting the content of an individual page to a single screen heightが現在の状況に適切か検討する。
+    en: Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose.
+    ja: 明確でglanceableな目的を持たせるため、各watchOSページを1画面分の高さに制限することを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -16995,7 +17228,7 @@
       - page-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use variable-height pages sparingly and place them after fixed-height pages when possible.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.
@@ -17003,7 +17236,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether limiting the content of an individual page to a single screen height is appropriate for the current context.” in the documented Page controls context?
+      - Does the design satisfy “Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose.” in the documented Page controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -17019,7 +17252,7 @@
     retrieved_at: 2026-07-21T11:15:09.571Z
     source_hash: b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96
     source_sentence_hash: fcaee8d3b8bd0e0fec09f439a0947621611cf3c78821cf619e49838323db6c42
-    evidence_paraphrase: Evaluate whether limiting the content of an individual page to a single screen height is appropriate for the current context.
+    evidence_paraphrase: Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose.
   tags:
     - components
     - page-controls
@@ -17027,7 +17260,7 @@
     - watchos
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether limiting the content of an individual page to a single screen height is appropriate for the current context.
+  apple_native_rule: Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-PANELS-0001
   title: Use a panel to give people quick access to important controls or information related to the content they’re…
@@ -60385,6 +60618,66 @@
   status: active
   apple_native_rule: Apply the documented Gestures guidance to choose the button that people use most commonly as the primary action in a view.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GESTURES-0015
+  title: Carefully consider complex custom gestures that involve multiple fingers or both hands
+  category: inputs
+  topic: gestures
+  subtopic: designing-custom-gestures-in-visionos
+  statement:
+    en: Evaluate whether complex custom gestures that involve multiple fingers or both hands is appropriate for the current context.
+    ja: complex custom gestures that involve multiple fingers or both handsが現在の状況に適切か検討する。
+  normative_level: MAY
+  confidence: low
+  review_required: true
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities:
+      - gesture
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Gestures experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGesturesの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Evaluate whether complex custom gestures that involve multiple fingers or both hands is appropriate for the current context.” in the documented Gestures context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/gestures
+    page_title: Gestures
+    section_path:
+      - Gestures
+      - Platform considerations
+      - visionOS
+      - Designing custom gestures in visionOS
+    retrieved_at: 2026-07-21T11:14:53.577Z
+    source_hash: 0c4dbe18fd9b26f114b1839333ade02b67df8236c0650f8a9f74aea216c47c93
+    source_sentence_hash: 49bdc29fb8ccda4317e9e13a74d68b4a8686c01c51eb2e552dd090e29d93b127
+    evidence_paraphrase: Evaluate whether complex custom gestures that involve multiple fingers or both hands is appropriate for the current context.
+  tags:
+    - inputs
+    - gestures
+    - platform-considerations
+    - visionos
+    - designing-custom-gestures-in-visionos
+    - gesture
+  priority_rank: 4
+  status: active
+  apple_native_rule: Evaluate whether complex custom gestures that involve multiple fingers or both hands is appropriate for the current context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001
   title: Use motion data only to offer a tangible benefit to people
   category: inputs
@@ -89523,6 +89816,70 @@
   priority_rank: 6
   status: active
   apple_native_rule: Exclude indicate any kind of sponsorship, partnership, or endorsement from Apple from the applicable experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-HOMEKIT-0035
+  title: Carefully consider how and when to provide a custom accessory setup experience
+  category: technologies
+  topic: homekit
+  subtopic: setup
+  statement:
+    en: Evaluate whether how and when to provide a custom accessory setup experience is appropriate for the current context.
+    ja: how and when to provide a custom accessory setup experienceが現在の状況に適切か検討する。
+  normative_level: MAY
+  confidence: low
+  review_required: true
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable HomeKit experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるHomeKitの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Evaluate whether how and when to provide a custom accessory setup experience is appropriate for the current context.” in the documented HomeKit context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/homekit
+    page_title: HomeKit
+    section_path:
+      - HomeKit
+      - Setup
+    retrieved_at: 2026-07-21T11:14:55.045Z
+    source_hash: 907c4a41c67fc23f13315daa88d85f6b8f71acaa5176419eebe370f9668fefaf
+    source_sentence_hash: f7fef3c34db44998692414a886937287ae31e45acbb0afc0383e1b27a86995ef
+    evidence_paraphrase: Evaluate whether how and when to provide a custom accessory setup experience is appropriate for the current context.
+  tags:
+    - technologies
+    - homekit
+    - setup
+  priority_rank: 6
+  status: active
+  apple_native_rule: Evaluate whether how and when to provide a custom accessory setup experience is appropriate for the current context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-ICLOUD-0001
   title: Make it easy to use your app with iCloud

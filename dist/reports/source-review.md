@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 98
-- Reviewed batches: 6
+- Reviewed rules: 137
+- Reviewed batches: 9
 - Official source only: yes
-- Reviewed at: 2026-07-21T11:42:27Z
+- Reviewed at: 2026-07-21T12:01:20Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -40,10 +40,49 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-COMPLICATIONS-0006 · high — Recorded the system display contexts and per-layout sizing caveat for placeholder images. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0007 · high — Repaired the generated paraphrase and retained the source preference for useful live information over static launch-only content. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0008 · high — Restored the tinted-versus-nontinted requirement lost by evidence-fragment truncation. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0009 · high — Recovered a previously unextracted carefully-consider lead and recorded its timeline-budget context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · high — Recorded the expected minimum usefulness and source-scoped maximum of four quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · high — Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003 · high — Recorded the official preference for SF Symbols when representing quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004 · high — Repaired the generated negative sentence and retained the Dark Mode contrast rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0001 · high — Recorded the official short-to-medium duration scope and eight-hour upper bound. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0002 · high — Repaired the generated negative sentence and retained the task-related-content boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0003 · high — Recorded the official summary, redaction, and user-configuration mitigations for prominent surfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0004 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0005 · high — Repaired the generated negative sentence and retained the distinction between in-app and background presentation. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0007 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0008 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0009 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0010 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0012 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0013 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0014 · high — Recorded the single-activity and rotating-layout implementation described by the official prose. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0017 · high — Recorded the no-padding, status-bar, and leading/trailing balance constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0019 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0020 · high — Repaired the generated negative sentence and retained the requirement for information-specific layout. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0021 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0023 · high — Repaired the incomplete generated verification statement and preserved the adjustment path. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0024 · high — Recorded the source-scoped 14-point margin and its limited tighter-margin exception. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0025 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0026 · medium — Reviewed task duration, privacy, presentation, animation, interaction, lifecycle, Lock Screen, StandBy, CarPlay, and watchOS guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0027 · high — Repaired the incomplete verification statement and recorded the system red-tint condition. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0028 · high — Recorded the supplemental activity-family mechanism from the official CarPlay guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0029 · high — Recorded the cross-platform CarPlay consequence of choosing a custom watchOS layout. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0031 · high — Recovered the carefully-consider lead and recorded its presentation and contrast limits. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0032 · high — Recovered the optional lead and recorded the CarPlay noninteractive and driving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0033 · high — Recovered the optional watchOS lead and preserved its stricter driving-context condition. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-NOTIFICATIONS-0019 · high — Recorded the brief-display limitation and redundant-delivery requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0020 · high — Made the generic privacy prompt specific to the official short-look disclosure risk. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0021 · high — Replaced a truncated title while preserving the optional source strength. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0022 · high — Recorded the two sash appearance choices and the photo-overlap context. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0023 · high — Recorded the official 18-percent opacity option and transparent default. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0024 · high — Recorded the four-action limit, system Dismiss button, and iPhone-companion sharing behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0025 · high — Repaired the generic generated wording and recorded how double tap selects an action. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-PAGE-CONTROLS-0005 · high — Recorded the source distinction between scrubbing and tapping. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0006 · high — Recorded the feedback limitation and supported background-style alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0007 · high — Recorded the full-screen peer hierarchy and focus constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0008 · high — Recorded the Digital Crown interaction and the disfavored alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0009 · high — Recorded the optional single-screen constraint and variable-height ordering guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0001 · high — Recorded the platform-specific enlargement targets from the official Vision guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0002 · high — Recorded the official custom-type default and minimum size table for each supported platform. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0003 · high — Recorded the official WCAG-based contrast table and its Dark Mode and Increase Contrast conditions without treating it as a universal legal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))

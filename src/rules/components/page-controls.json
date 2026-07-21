@@ -317,17 +317,17 @@
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0005",
-    "title": "Avoid animating page transitions during scrubbing",
+    "title": "Avoid animated page transitions while scrubbing",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Exclude animating page transitions during scrubbing from the applicable experience.",
-      "ja": "該当する体験ではanimating page transitions during scrubbingを避ける。"
+      "en": "Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control.",
+      "ja": "iOSまたはiPadOSのpage controlをscrubしている間は、各ページ遷移をアニメーションしない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -346,7 +346,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the animated scrolling transition for taps, not rapid scrubbing."
     ],
     "exceptions": [],
     "rationale": {
@@ -356,7 +356,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude animating page transitions during scrubbing from the applicable experience.” in the documented Page controls context?"
+        "Does the design satisfy “Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -377,7 +377,7 @@
       "retrieved_at": "2026-07-21T11:15:09.571Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "84146d5d242361682191ff3aa22eddb0d1d085869df1fc7ac8a18cbd19bcbcfb",
-      "evidence_paraphrase": "Exclude animating page transitions during scrubbing from the applicable experience."
+      "evidence_paraphrase": "Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control."
     },
     "tags": [
       "components",
@@ -387,22 +387,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude animating page transitions during scrubbing from the applicable experience.",
+    "apple_native_rule": "Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0006",
-    "title": "Avoid supporting the scrubber when you use the minimal background style",
+    "title": "Avoid a scrubber with the minimal page-control background",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Exclude supporting the scrubber when you use the minimal background style from the applicable experience.",
-      "ja": "該当する体験ではsupporting the scrubber when you use the minimal background styleを避ける。"
+      "en": "Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback.",
+      "ja": "scrub中のフィードバックがないため、minimal background styleではpage-control scrubbingを有効にしない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -421,7 +421,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the automatic or prominent background style when people need to scrub pages."
     ],
     "exceptions": [],
     "rationale": {
@@ -431,7 +431,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude supporting the scrubber when you use the minimal background style from the applicable experience.” in the documented Page controls context?"
+        "Does the design satisfy “Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -452,7 +452,7 @@
       "retrieved_at": "2026-07-21T11:15:09.571Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "8b526c8a6c9fc25e3d3aaaf88ed5bc26ae4b3b2e4ed4d527b664e44694c6b7c7",
-      "evidence_paraphrase": "Exclude supporting the scrubber when you use the minimal background style from the applicable experience."
+      "evidence_paraphrase": "Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback."
     },
     "tags": [
       "components",
@@ -462,22 +462,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude supporting the scrubber when you use the minimal background style from the applicable experience.",
+    "apple_native_rule": "Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0007",
-    "title": "Use page controls on collections of full-screen pages",
+    "title": "Use tvOS page controls for peer full-screen pages",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "tvos",
     "statement": {
-      "en": "Choose or apply page controls on collections of full-screen pages in the documented context.",
-      "ja": "該当する状況ではpage controls on collections of full-screen pagesを採用する。"
+      "en": "Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy.",
+      "ja": "階層上対等なcontent-richな全画面ページのtvOS collectionにはpage controlを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -494,7 +494,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid additional controls that make it difficult to maintain focus while moving between pages."
     ],
     "exceptions": [],
     "rationale": {
@@ -504,7 +504,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply page controls on collections of full-screen pages in the documented context.” in the documented Page controls context?"
+        "Does the design satisfy “Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -525,7 +525,7 @@
       "retrieved_at": "2026-07-21T11:15:09.571Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "296dffab6864318350a66bc4b879714a146b4c444102c5306ae5bcab5a05c279",
-      "evidence_paraphrase": "Choose or apply page controls on collections of full-screen pages in the documented context."
+      "evidence_paraphrase": "Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy."
     },
     "tags": [
       "components",
@@ -535,22 +535,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply page controls on collections of full-screen pages in the documented context.",
+    "apple_native_rule": "Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0008",
-    "title": "Use vertical pagination to separate multiple views into distinct, purposeful pages",
+    "title": "Use purposeful vertical pagination in watchOS",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "watchos",
     "statement": {
-      "en": "Choose or apply vertical pagination to separate multiple views into distinct, purposeful pages in the documented context.",
-      "ja": "該当する状況ではvertical pagination to separate multiple views into distinct, purposeful pagesを採用する。"
+      "en": "Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown.",
+      "ja": "watchOSのviewを目的の明確な縦ページに分け、Digital Crownでスクロールできるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -567,7 +567,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer this pattern over horizontal pagination or deep hierarchical navigation."
     ],
     "exceptions": [],
     "rationale": {
@@ -577,7 +577,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply vertical pagination to separate multiple views into distinct, purposeful pages in the documented context.” in the documented Page controls context?"
+        "Does the design satisfy “Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -598,7 +598,7 @@
       "retrieved_at": "2026-07-21T11:15:09.571Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "86d1ee6bf063aa38902090649a895c3466cc0e749bf20a49c73f92ca99ee43d2",
-      "evidence_paraphrase": "Choose or apply vertical pagination to separate multiple views into distinct, purposeful pages in the documented context."
+      "evidence_paraphrase": "Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown."
     },
     "tags": [
       "components",
@@ -608,22 +608,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply vertical pagination to separate multiple views into distinct, purposeful pages in the documented context.",
+    "apple_native_rule": "Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0009",
-    "title": "Consider limiting the content of an individual page to a single screen height",
+    "title": "Consider one-screen-height watchOS pages",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "watchos",
     "statement": {
-      "en": "Evaluate whether limiting the content of an individual page to a single screen height is appropriate for the current context.",
-      "ja": "limiting the content of an individual page to a single screen heightが現在の状況に適切か検討する。"
+      "en": "Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose.",
+      "ja": "明確でglanceableな目的を持たせるため、各watchOSページを1画面分の高さに制限することを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -640,7 +640,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use variable-height pages sparingly and place them after fixed-height pages when possible."
     ],
     "exceptions": [],
     "rationale": {
@@ -650,7 +650,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether limiting the content of an individual page to a single screen height is appropriate for the current context.” in the documented Page controls context?"
+        "Does the design satisfy “Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -671,7 +671,7 @@
       "retrieved_at": "2026-07-21T11:15:09.571Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "fcaee8d3b8bd0e0fec09f439a0947621611cf3c78821cf619e49838323db6c42",
-      "evidence_paraphrase": "Evaluate whether limiting the content of an individual page to a single screen height is appropriate for the current context."
+      "evidence_paraphrase": "Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose."
     },
     "tags": [
       "components",
@@ -681,7 +681,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether limiting the content of an individual page to a single screen height is appropriate for the current context.",
+    "apple_native_rule": "Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

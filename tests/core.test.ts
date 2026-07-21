@@ -22,6 +22,7 @@ test("normalizes HIG URLs and rejects out-of-scope URLs", () => {
 
 test("keeps conditional strength conservative", () => {
   assert.equal(normative("Consider showing a label").normative_level, "MAY");
+  assert.equal(normative("Carefully consider showing a label").normative_level, "MAY");
   assert.equal(normative("Prefer the standard control").normative_level, "SHOULD");
   assert.equal(normative("Never hide the recovery action").normative_level, "MUST_NOT");
 });
@@ -39,6 +40,7 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Always On", section_path: [], source_sentence_hash: "d".repeat(64), word_count: 2 }), false);
   assert.equal(isActionable({ text: "Tracking requests", section_path: [], source_sentence_hash: "e".repeat(64), word_count: 2 }), false);
   assert.equal(isActionable({ text: "Help buttons", section_path: [], source_sentence_hash: "f".repeat(64), word_count: 2 }), false);
+  assert.equal(isActionable({ text: "Carefully consider a custom layout", section_path: [], source_sentence_hash: "g".repeat(64), word_count: 5 }), true);
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 
