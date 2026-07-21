@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:47:09Z",
+  "reviewed_at": "2026-07-21T16:50:39Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1979,9 +1979,207 @@
         "HIG-COMPONENTS-DOCK-MENUS-0005"
       ],
       "review_note": "Completed macOS Dock-menu coverage; recovered separate MUST rules for succinct labels and logical organization plus a conditional MAY for useful inactive-app actions."
+    },
+    {
+      "id": "priority-4-image-views-context-2026-07-21",
+      "reviewed_at": "2026-07-21T16:50:39Z",
+      "review_method": "Rendered Apple HIG Image views guidance, supporting prose, text-overlay handling, interactive-image alternatives, animation conditions, and platform sections were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/image-views",
+          "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-IMAGE-VIEWS-0001",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0002",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0003",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0004",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0005",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0006",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0007",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0008",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0009",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0010",
+        "HIG-COMPONENTS-IMAGE-VIEWS-0011"
+      ],
+      "review_note": "Completed Image views coverage across Apple platforms; repaired the truncated icon alternative and recovered five atomic rules for interactive images, text overlays, and watchOS animation fallback."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-IMAGE-VIEWS-0001": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "cc4b690c75734af5c8f9e8f69615a304be3e0f3f9ec4b006b29c3c64eba8846b",
+        "section_path": ["Image views", "Best practices"]
+      },
+      "title": "Use image views primarily for display",
+      "statement": {
+        "en": "Use an image view when its primary purpose is simply to display an image.",
+        "ja": "主な目的が画像表示だけの場合にimage viewを使う。"
+      },
+      "conditions": ["Treat image views as typically noninteractive."],
+      "exceptions": ["For a rare interactive image, use a system-provided button that displays the image."],
+      "review_note": "Recorded the display-only purpose and the rare interactive-image exception."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0002": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "cc9703fe35552286b01eefb914552a0f03ee9309c40836a640118f30f4b426a3",
+        "section_path": ["Image views", "Content"]
+      },
+      "title": "Keep animated-sequence images consistently sized",
+      "statement": {
+        "en": "Aim for consistent image sizes throughout an animated sequence.",
+        "ja": "animated sequence全体で画像サイズを一貫させる。"
+      },
+      "conditions": [
+        "Prescale images to fit the view when practical so the system doesn’t need to scale them.",
+        "When system scaling is necessary, matching both size and shape generally improves performance."
+      ],
+      "review_note": "Recorded the prescaling path and the size-and-shape performance condition."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0003": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "c5df7af17475394d9eb36d73c121ff869407551439b344accad851756c6c6066",
+        "section_path": ["Image views", "Platform considerations", "macOS"]
+      },
+      "title": "Use an image button for clickable macOS images",
+      "statement": {
+        "en": "Use an image button instead of an image view for a clickable image in macOS.",
+        "ja": "macOSでclickable imageにはimage viewではなくimage buttonを使う。"
+      },
+      "conditions": ["The image initiates an instantaneous app-specific action."],
+      "review_note": "Recorded the macOS component distinction and instantaneous-action purpose."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0004": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "6759873f02f6f69795df9bc3aca73cf1e989cd8ca16b5e17a6e94a6a63d0a48b",
+        "section_path": ["Image views", "Platform considerations", "watchOS"]
+      },
+      "title": "Prefer SwiftUI for watchOS image animation",
+      "statement": {
+        "en": "Use SwiftUI to create watchOS image animations when possible.",
+        "ja": "可能な場合はwatchOSのimage animationをSwiftUIで作成する。"
+      },
+      "conditions": ["Prefer SwiftUI as the primary watchOS animation path."],
+      "exceptions": ["When necessary, WatchKit can animate an image sequence within an image element."],
+      "review_note": "Preserved the when-possible qualification and recorded the WatchKit fallback separately."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0005": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "034ef2e09cffa66ed9b1d98ba32d7a0daa53e3d56b36fae963b039c466d8c6ce",
+        "section_path": ["Image views", "Best practices"]
+      },
+      "title": "Consider symbols or interface icons for icons",
+      "statement": {
+        "en": "When displaying an interface icon, consider a symbol or interface icon instead of an image view.",
+        "ja": "interface iconを表示する場合はimage viewではなくsymbolまたはinterface iconを検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": ["Symbols and interface icons can adopt accent colors people choose."],
+      "review_note": "Repaired the truncated candidate while retaining its source hash and MAY strength."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0006": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "b54c949da69f16836209da26c2a997f450df082208e7ce7175a1106511c9657e",
+        "section_path": ["Image views", "Platform considerations", "macOS"]
+      },
+      "title": "Use an image well for editable macOS images",
+      "statement": {
+        "en": "Use an image well when a macOS app needs an editable image view.",
+        "ja": "macOSアプリでeditable image viewが必要な場合はimage wellを使う。"
+      },
+      "conditions": ["An image well supports copy, paste, drag, and Delete-key clearing."],
+      "review_note": "Recorded the editable-content condition and the documented image-well behaviors."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0007": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "3e1ac70e76a708391b190c0377bdd183bbf46386c2613a613bc45aec09eb6d82",
+        "section_path": ["Image views", "Best practices"]
+      },
+      "title": "Use a system button for interactive images",
+      "statement": {
+        "en": "Display a rare interactive image in a system-provided button instead of adding button behavior to an image view.",
+        "ja": "まれにinteractiveな画像が必要な場合はimage viewにbutton behaviorを加えずsystem-provided buttonで表示する。"
+      },
+      "conditions": ["An image needs to be interactive on an Apple platform."],
+      "review_note": "Recovered the cross-platform interactive-image exception as its own component-selection rule."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0008": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "feb2ea484e0eecfb2a635808adcfcb87987d15177d1d8cabf3d06088dbbad0d1",
+        "section_path": ["Image views", "Content"]
+      },
+      "title": "Use care when overlaying text on images",
+      "statement": {
+        "en": "Use care when overlaying text on an image.",
+        "ja": "画像上にtextを重ねる場合は注意する。"
+      },
+      "conditions": ["Protect both image clarity and text legibility."],
+      "review_note": "Recovered the caution lead and its two documented readability risks."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0009": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "1a874597d2091d04f8b4a195da37ff9769c078cda80dc3e4059affedd1b05a51",
+        "section_path": ["Image views", "Content"]
+      },
+      "title": "Ensure overlaid text contrasts with its image",
+      "statement": {
+        "en": "Ensure text overlaid on an image contrasts well with that image.",
+        "ja": "画像上に重ねるtextが画像と十分なcontrastを持つようにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Text is composited over an image."],
+      "review_note": "Recovered the explicit Ensure requirement separately from the optional standout techniques."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0010": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "1a874597d2091d04f8b4a195da37ff9769c078cda80dc3e4059affedd1b05a51",
+        "section_path": ["Image views", "Content"]
+      },
+      "title": "Consider standout treatments for overlaid text",
+      "statement": {
+        "en": "Consider a text shadow or background layer to help text over an image stand out.",
+        "ja": "画像上のtextを目立たせるためtext shadowまたはbackground layerを検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": ["Additional separation beyond contrast would improve overlaid-text legibility."],
+      "review_note": "Preserved the optional strength and the two documented treatment examples."
+    },
+    "HIG-COMPONENTS-IMAGE-VIEWS-0011": {
+      "source": {
+        "source_hash": "7820c2403ef5ed9a020c4d0a7d30e7eb370240b3862d98875177c7fe392ad730",
+        "source_sentence_hash": "cef853c7645998858358fea88a273f28a93c6b5033380eba6bdc29c1ecb8f672",
+        "section_path": ["Image views", "Platform considerations", "watchOS"]
+      },
+      "title": "Consider WatchKit image-sequence animation when necessary",
+      "statement": {
+        "en": "When necessary, consider WatchKit for animating an image sequence within a watchOS image element.",
+        "ja": "必要な場合はwatchOSのimage element内でimage sequenceをanimationするためWatchKitを検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": ["SwiftUI is not suitable for the necessary watchOS animation."],
+      "scope": {
+        "portability": "platform-specific",
+        "platforms": ["watchos"],
+        "devices": ["apple-watch"],
+        "components": ["image-views"],
+        "modalities": []
+      },
+      "review_note": "Recovered the documented WatchKit fallback without raising the source's can language above MAY."
+    },
     "HIG-COMPONENTS-DOCK-MENUS-0001": {
       "source": {
         "source_hash": "a312d884d4aa2e48bf76b07500cb1498d393cf210f939881bb484b7099f98d82",

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 978
-- Reviewed batches: 63
+- Reviewed rules: 989
+- Reviewed batches: 64
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:47:09Z
+- Reviewed at: 2026-07-21T16:50:39Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -154,6 +154,17 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · high — Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003 · high — Recorded the official preference for SF Symbols when representing quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004 · high — Repaired the generated negative sentence and retained the Dark Mode contrast rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- HIG-COMPONENTS-IMAGE-VIEWS-0001 · high — Recorded the display-only purpose and the rare interactive-image exception. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0002 · high — Recorded the prescaling path and the size-and-shape performance condition. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0003 · high — Recorded the macOS component distinction and instantaneous-action purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0004 · high — Preserved the when-possible qualification and recorded the WatchKit fallback separately. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0005 · high — Repaired the truncated candidate while retaining its source hash and MAY strength. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0006 · high — Recorded the editable-content condition and the documented image-well behaviors. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0007 · high — Recovered the cross-platform interactive-image exception as its own component-selection rule. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0008 · high — Recovered the caution lead and its two documented readability risks. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0009 · high — Recovered the explicit Ensure requirement separately from the optional standout techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0010 · high — Preserved the optional strength and the two documented treatment examples. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-IMAGE-VIEWS-0011 · high — Recovered the documented WatchKit fallback without raising the source's can language above MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0001 · high — Recorded the official short-to-medium duration scope and eight-hour upper bound. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0002 · high — Repaired the generated negative sentence and retained the task-related-content boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0003 · high — Recorded the official summary, redaction, and user-configuration mitigations for prominent surfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))

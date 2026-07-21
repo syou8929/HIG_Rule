@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:48:56.491Z. 2215 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:53:10.036Z. 2220 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1080,12 +1080,17 @@ Generated 2026-07-21T16:48:56.491Z. 2215 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004 · AVOID · high** — Avoid using an emoji in place of a symbol or interface icon for a Home Screen quick action. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 ### image-views
 
-- **HIG-COMPONENTS-IMAGE-VIEWS-0001 · SHOULD · low** — Choose or apply an image view when the primary purpose of the view is simply to display an image in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
-- **HIG-COMPONENTS-IMAGE-VIEWS-0002 · SHOULD · low** — Apply the documented Image views guidance to aim to use a consistent size for all images in an animated sequence. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
-- **HIG-COMPONENTS-IMAGE-VIEWS-0003 · SHOULD · low** — Choose or apply an image button instead of an image view to make a clickable image in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
-- **HIG-COMPONENTS-IMAGE-VIEWS-0004 · SHOULD · low** — Choose or apply swiftUI to create animations when possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
-- **HIG-COMPONENTS-IMAGE-VIEWS-0005 · MAY · low** — When you want to display an icon in your interface, consider using a symbol or interface icon instead of. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
-- **HIG-COMPONENTS-IMAGE-VIEWS-0006 · SHOULD · low** — When your app needs an editable image view, use an image well. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0001 · SHOULD · high** — Use an image view when its primary purpose is simply to display an image. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0002 · SHOULD · high** — Aim for consistent image sizes throughout an animated sequence. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0003 · SHOULD · high** — Use an image button instead of an image view for a clickable image in macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0004 · SHOULD · high** — Use SwiftUI to create watchOS image animations when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0005 · MAY · high** — When displaying an interface icon, consider a symbol or interface icon instead of an image view. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0006 · SHOULD · high** — Use an image well when a macOS app needs an editable image view. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0007 · SHOULD · high** — Display a rare interactive image in a system-provided button instead of adding button behavior to an image view. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0008 · SHOULD · high** — Use care when overlaying text on an image. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0009 · MUST · high** — Ensure text overlaid on an image contrasts well with that image. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0010 · MAY · high** — Consider a text shadow or background layer to help text over an image stand out. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0011 · MAY · high** — When necessary, consider WatchKit for animating an image sequence within a watchOS image element. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 ### labels
 
 - **HIG-COMPONENTS-LABELS-0001 · SHOULD · low** — Choose or apply a label to display a small amount of text that people don’t need to edit in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))

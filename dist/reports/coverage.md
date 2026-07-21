@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2215
+- Active atomic rules: 2220
 - Pages without rules: 16
-- Low-confidence rules: 1151
-- Rules requiring human review: 1151
+- Low-confidence rules: 1145
+- Rules requiring human review: 1145
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 707
+- components: 712
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 300
-- MAY: 243
-- MUST: 186
+- MAY: 245
+- MUST: 187
 - MUST_NOT: 21
-- SHOULD: 1465
+- SHOULD: 1467
 
 ## Rules by platform
 
 - carplay: 89
-- ios: 1556
-- ipados: 1525
-- macos: 1292
-- tvos: 993
-- visionos: 1352
-- watchos: 1062
+- ios: 1560
+- ipados: 1529
+- macos: 1296
+- tvos: 997
+- visionos: 1356
+- watchos: 1067
 
 ## Rules by testability
 
-- hybrid: 65
-- manual: 2150
+- hybrid: 66
+- manual: 2154
 
 ## Blocked pages
 
@@ -146,12 +146,6 @@ None.
 - HIG-COMPONENTS-GAUGES-0002
 - HIG-COMPONENTS-GAUGES-0003
 - HIG-COMPONENTS-GAUGES-0004
-- HIG-COMPONENTS-IMAGE-VIEWS-0001
-- HIG-COMPONENTS-IMAGE-VIEWS-0002
-- HIG-COMPONENTS-IMAGE-VIEWS-0003
-- HIG-COMPONENTS-IMAGE-VIEWS-0004
-- HIG-COMPONENTS-IMAGE-VIEWS-0005
-- HIG-COMPONENTS-IMAGE-VIEWS-0006
 - HIG-COMPONENTS-LABELS-0001
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
@@ -1300,12 +1294,6 @@ None.
 - HIG-COMPONENTS-GAUGES-0002
 - HIG-COMPONENTS-GAUGES-0003
 - HIG-COMPONENTS-GAUGES-0004
-- HIG-COMPONENTS-IMAGE-VIEWS-0001
-- HIG-COMPONENTS-IMAGE-VIEWS-0002
-- HIG-COMPONENTS-IMAGE-VIEWS-0003
-- HIG-COMPONENTS-IMAGE-VIEWS-0004
-- HIG-COMPONENTS-IMAGE-VIEWS-0005
-- HIG-COMPONENTS-IMAGE-VIEWS-0006
 - HIG-COMPONENTS-LABELS-0001
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
