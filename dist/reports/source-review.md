@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 921
-- Reviewed batches: 56
+- Reviewed rules: 933
+- Reviewed batches: 57
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:19:34Z
+- Reviewed at: 2026-07-21T16:24:29Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -84,6 +84,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-BUTTONS-0027 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0028 · high — Preserved the source's where-possible qualification while recording the visual-consistency goal. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-CHARTS-0018 · high — Recovered the qualified AVOID lead and recorded the glanceability and companion-platform guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-COLLECTIONS-0001 · high — Reviewed the rendered source context for “Use the standard row or grid layout whenever possible” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0002 · high — Reviewed the rendered source context for “Consider using a table instead of a collection for text” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0003 · high — Reviewed the rendered source context for “Make it easy to choose an item” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0004 · high — Reviewed the rendered source context for “Consider using animations to provide feedback when people insert, delete, or reorder items” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0005 · high — Reviewed the rendered source context for “Use caution when making dynamic layout changes” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0006 · high — Reviewed the rendered source context for “Use custom collection interactions only when necessary” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0007 · high — Reviewed the rendered source context for “Avoid custom collection layouts that confuse people or draw undue attention” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0008 · high — Reviewed the rendered source context for “Use enough image padding to keep focus and hover effects visible” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0009 · high — Reviewed the rendered source context for “Use enough image padding to prevent collection content overlap” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0010 · high — Reviewed the rendered source context for “Make sure dynamic collection changes make sense” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0011 · high — Reviewed the rendered source context for “Make sure dynamic collection changes remain easy to track” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0012 · high — Reviewed the rendered source context for “Avoid dynamic layout changes during viewing or interaction when possible” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COMPLICATIONS-0001 · high — Preserved the when-possible qualification and the official fallback for unsupported information layouts. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0002 · medium — Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0003 · high — Replaced an ungrammatical paraphrase and captured the Always-On privacy risk from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))

@@ -8617,8 +8617,8 @@
     en: Choose or apply the standard row or grid layout whenever possible in the documented context.
     ja: 該当する状況ではthe standard row or grid layout whenever possibleを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -8639,7 +8639,7 @@
       - collections
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Prefer the expected horizontal-row or grid presentation when either fits the content.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
@@ -8680,8 +8680,8 @@
     en: Evaluate whether using a table instead of a collection for text is appropriate for the current context.
     ja: using a table instead of a collection for textが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -8702,7 +8702,7 @@
       - collections
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The content is primarily textual and is easier to scan in a scrollable list.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
@@ -8743,8 +8743,8 @@
     en: Apply the documented Collections guidance to make it easy to choose an item.
     ja: 「Collections」において「Make it easy to choose an item」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -8765,7 +8765,7 @@
       - collections
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Make collection items reachable before people lose interest in the content.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
@@ -8806,8 +8806,8 @@
     en: Evaluate whether using animations to provide feedback when people insert, delete, or reorder items is appropriate for the current context.
     ja: using animations to provide feedback when people insert, delete, or reorder itemsが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -8828,7 +8828,8 @@
       - collections
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Insertion, deletion, or reordering needs visible feedback.
+    - Use the collection’s standard animations or an appropriate custom animation.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
@@ -8869,8 +8870,8 @@
     en: Choose or apply caution when making dynamic layout changes in the documented context.
     ja: 該当する状況ではcaution when making dynamic layout changesを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -8885,7 +8886,7 @@
       - collections
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - On iOS and iPadOS, collection layouts can change dynamically.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
@@ -8918,6 +8919,437 @@
   priority_rank: 4
   status: active
   apple_native_rule: Choose or apply caution when making dynamic layout changes in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COLLECTIONS-0006
+  title: Use custom collection interactions only when necessary
+  category: components
+  topic: collections
+  subtopic: best-practices
+  statement:
+    en: Choose or apply custom collection interactions only when necessary in the documented context.
+    ja: 該当する状況ではcustom collection interactions only when necessaryを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components:
+      - collections
+    modalities: []
+  conditions:
+    - Keep the default tap-to-select, touch-and-hold-to-edit, and swipe-to-scroll interactions.
+    - Add a custom gesture only when the app requires a custom action.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCollectionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply custom collection interactions only when necessary in the documented context.” in the documented Collections context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/collections
+    page_title: Collections
+    section_path:
+      - Collections
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:42.991Z
+    source_hash: 003d5b2118c0d5a5c0a0b2122149731bb3bbc2676441252a8b3d00a26e0fbdec
+    source_sentence_hash: 7269c2b9da23f7a60140b9672dd5b9d26353e89aa8d48e993944f410d937603e
+    evidence_paraphrase: Choose or apply custom collection interactions only when necessary in the documented context.
+  tags:
+    - components
+    - collections
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Choose or apply custom collection interactions only when necessary in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COLLECTIONS-0007
+  title: Avoid custom collection layouts that confuse people or draw undue attention
+  category: components
+  topic: collections
+  subtopic: best-practices
+  statement:
+    en: Exclude custom collection layouts that confuse people or draw undue attention from the applicable experience.
+    ja: 該当する体験ではcustom collection layouts that confuse people or draw undue attentionを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components:
+      - collections
+    modalities: []
+  conditions:
+    - Prefer the standard row or grid over a custom layout that may confuse people or call attention to itself.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCollectionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Exclude custom collection layouts that confuse people or draw undue attention from the applicable experience.” in the documented Collections context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/collections
+    page_title: Collections
+    section_path:
+      - Collections
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:42.991Z
+    source_hash: 003d5b2118c0d5a5c0a0b2122149731bb3bbc2676441252a8b3d00a26e0fbdec
+    source_sentence_hash: 2e18b839a8598ad13265c17ef94b602e6621984cf88b96f6dcdde37df0d6cdcb
+    evidence_paraphrase: Exclude custom collection layouts that confuse people or draw undue attention from the applicable experience.
+  tags:
+    - components
+    - collections
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Exclude custom collection layouts that confuse people or draw undue attention from the applicable experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COLLECTIONS-0008
+  title: Use enough image padding to keep focus and hover effects visible
+  category: components
+  topic: collections
+  subtopic: best-practices
+  statement:
+    en: Choose or apply enough image padding to keep focus and hover effects visible in the documented context.
+    ja: 該当する状況ではenough image padding to keep focus and hover effects visibleを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components:
+      - collections
+    modalities: []
+  conditions:
+    - Pad images enough that focus and hover effects remain easy to see.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCollectionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply enough image padding to keep focus and hover effects visible in the documented context.” in the documented Collections context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/collections
+    page_title: Collections
+    section_path:
+      - Collections
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:42.991Z
+    source_hash: 003d5b2118c0d5a5c0a0b2122149731bb3bbc2676441252a8b3d00a26e0fbdec
+    source_sentence_hash: d90d498c23705bd85d461e8b1296e936e678c67ace80c1c875ab91823635f82d
+    evidence_paraphrase: Choose or apply enough image padding to keep focus and hover effects visible in the documented context.
+  tags:
+    - components
+    - collections
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Choose or apply enough image padding to keep focus and hover effects visible in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COLLECTIONS-0009
+  title: Use enough image padding to prevent collection content overlap
+  category: components
+  topic: collections
+  subtopic: best-practices
+  statement:
+    en: Choose or apply enough image padding to prevent collection content overlap in the documented context.
+    ja: 該当する状況ではenough image padding to prevent collection content overlapを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components:
+      - collections
+    modalities: []
+  conditions:
+    - Pad images enough to keep collection content from overlapping.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCollectionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply enough image padding to prevent collection content overlap in the documented context.” in the documented Collections context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/collections
+    page_title: Collections
+    section_path:
+      - Collections
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:42.991Z
+    source_hash: 003d5b2118c0d5a5c0a0b2122149731bb3bbc2676441252a8b3d00a26e0fbdec
+    source_sentence_hash: d90d498c23705bd85d461e8b1296e936e678c67ace80c1c875ab91823635f82d
+    evidence_paraphrase: Choose or apply enough image padding to prevent collection content overlap in the documented context.
+  tags:
+    - components
+    - collections
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Choose or apply enough image padding to prevent collection content overlap in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COLLECTIONS-0010
+  title: Make dynamic collection changes understandable
+  category: components
+  topic: collections
+  subtopic: ios-ipados
+  statement:
+    en: Make every dynamic collection-layout change understandable in context.
+    ja: collectionの動的なlayout変更を文脈上理解できるものにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components:
+      - collections
+    modalities: []
+  conditions:
+    - On iOS and iPadOS, every dynamic collection-layout change must be understandable in context.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCollectionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Make every dynamic collection-layout change understandable in context.” in the documented Collections context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/collections
+    page_title: Collections
+    section_path:
+      - Collections
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:42.991Z
+    source_hash: 003d5b2118c0d5a5c0a0b2122149731bb3bbc2676441252a8b3d00a26e0fbdec
+    source_sentence_hash: c1295cfd12539dc47bd19438742bbbcc1317680344755d51705f166343ef8d9f
+    evidence_paraphrase: Make every dynamic collection-layout change understandable in context.
+  tags:
+    - components
+    - collections
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Make every dynamic collection-layout change understandable in context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COLLECTIONS-0011
+  title: Keep dynamic collection changes easy to track
+  category: components
+  topic: collections
+  subtopic: ios-ipados
+  statement:
+    en: Keep every dynamic collection-layout change easy to track.
+    ja: collectionの動的なlayout変更を追跡しやすく保つ。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components:
+      - collections
+    modalities: []
+  conditions:
+    - On iOS and iPadOS, every dynamic collection-layout change must remain easy to follow.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCollectionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep every dynamic collection-layout change easy to track.” in the documented Collections context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/collections
+    page_title: Collections
+    section_path:
+      - Collections
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:42.991Z
+    source_hash: 003d5b2118c0d5a5c0a0b2122149731bb3bbc2676441252a8b3d00a26e0fbdec
+    source_sentence_hash: c1295cfd12539dc47bd19438742bbbcc1317680344755d51705f166343ef8d9f
+    evidence_paraphrase: Keep every dynamic collection-layout change easy to track.
+  tags:
+    - components
+    - collections
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Keep every dynamic collection-layout change easy to track.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COLLECTIONS-0012
+  title: Avoid dynamic layout changes during viewing or interaction when possible
+  category: components
+  topic: collections
+  subtopic: ios-ipados
+  statement:
+    en: Exclude dynamic layout changes during viewing or interaction when possible from the applicable experience.
+    ja: 該当する体験ではdynamic layout changes during viewing or interaction when possibleを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components:
+      - collections
+    modalities: []
+  conditions:
+    - On iOS and iPadOS, people are currently viewing or interacting with the collection.
+  exceptions:
+    - A layout change can be appropriate when it directly responds to an explicit user action.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Collections experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCollectionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Exclude dynamic layout changes during viewing or interaction when possible from the applicable experience.” in the documented Collections context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/collections
+    page_title: Collections
+    section_path:
+      - Collections
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:42.991Z
+    source_hash: 003d5b2118c0d5a5c0a0b2122149731bb3bbc2676441252a8b3d00a26e0fbdec
+    source_sentence_hash: c1295cfd12539dc47bd19438742bbbcc1317680344755d51705f166343ef8d9f
+    evidence_paraphrase: Exclude dynamic layout changes during viewing or interaction when possible from the applicable experience.
+  tags:
+    - components
+    - collections
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Exclude dynamic layout changes during viewing or interaction when possible from the applicable experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COLOR-WELLS-0001
   title: Consider the system-provided color picker for a familiar experience

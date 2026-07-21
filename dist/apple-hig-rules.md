@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:20:44.012Z. 2190 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:24:48.766Z. 2197 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -959,11 +959,18 @@ Generated 2026-07-21T16:20:44.012Z. 2190 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-CHARTS-0020 · SHOULD · low** — Hide visible text labels for axes and ticks from assistive technologies. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 ### collections
 
-- **HIG-COMPONENTS-COLLECTIONS-0001 · SHOULD · low** — Choose or apply the standard row or grid layout whenever possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
-- **HIG-COMPONENTS-COLLECTIONS-0002 · MAY · low** — Evaluate whether using a table instead of a collection for text is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
-- **HIG-COMPONENTS-COLLECTIONS-0003 · SHOULD · low** — Apply the documented Collections guidance to make it easy to choose an item. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
-- **HIG-COMPONENTS-COLLECTIONS-0004 · MAY · low** — Evaluate whether using animations to provide feedback when people insert, delete, or reorder items is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
-- **HIG-COMPONENTS-COLLECTIONS-0005 · SHOULD · low** — Choose or apply caution when making dynamic layout changes in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0001 · SHOULD · high** — Choose or apply the standard row or grid layout whenever possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0002 · MAY · high** — Evaluate whether using a table instead of a collection for text is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0003 · SHOULD · high** — Apply the documented Collections guidance to make it easy to choose an item. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0004 · MAY · high** — Evaluate whether using animations to provide feedback when people insert, delete, or reorder items is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0005 · SHOULD · high** — Choose or apply caution when making dynamic layout changes in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0006 · SHOULD · high** — Choose or apply custom collection interactions only when necessary in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0007 · AVOID · high** — Exclude custom collection layouts that confuse people or draw undue attention from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0008 · SHOULD · high** — Choose or apply enough image padding to keep focus and hover effects visible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0009 · SHOULD · high** — Choose or apply enough image padding to prevent collection content overlap in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0010 · MUST · high** — Make every dynamic collection-layout change understandable in context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0011 · MUST · high** — Keep every dynamic collection-layout change easy to track. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- **HIG-COMPONENTS-COLLECTIONS-0012 · AVOID · high** — Exclude dynamic layout changes during viewing or interaction when possible from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 ### color-wells
 
 - **HIG-COMPONENTS-COLOR-WELLS-0001 · MAY · low** — Evaluate whether the system-provided color picker for a familiar experience is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/color-wells))

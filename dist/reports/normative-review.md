@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 201
-- Retained MUST: 180
+- Reviewed rules: 203
+- Retained MUST: 182
 - Retained MUST_NOT: 21
 - Normative level changes: 5
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:19:34Z
+- Reviewed at: 2026-07-21T16:24:29Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -19,6 +19,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-ALERTS-0038 — Recovered MUST from the explicit Always use directive for canceling-button titles. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0042 — Recovered MUST from the explicit Always place directive and preserved both row and stack mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0047 — Recovered MUST from the explicit Be sure directive while preserving the large-text qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-COLLECTIONS-0010 — Recovered MUST from the explicit Be sure directive and separated understandability from trackability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0011 — Recovered MUST from the explicit Be sure directive and separated trackability from understandability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0015 — Narrowed the MUST to the unqualified Always clause; the source lead's consider clause is split into a separate MAY rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0022 — Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
@@ -155,6 +157,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-ALERTS-0047 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive while preserving the large-text qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-BUTTONS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-COLLECTIONS-0010 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive and separated understandability from trackability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLLECTIONS-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive and separated trackability from understandability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COMBO-BOXES-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
 - HIG-COMPONENTS-COMPLICATIONS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-CONTEXT-MENUS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
