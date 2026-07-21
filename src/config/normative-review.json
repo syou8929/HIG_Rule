@@ -1,20 +1,59 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:17:24Z",
+  "reviewed_at": "2026-07-21T15:24:00Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
-  "source_inventory_hash": "539bf333f63b2a6ac39dc43af261ee83d0e50108943509fa547431bd8e4dc437",
+  "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
   "reviewed_levels": [
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 160,
+  "reviewed_rule_count": 161,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-PATTERNS-PLAYING-VIDEO-0002": {
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Preserve the source aspect ratio and let the player add letterboxing or pillarboxing when needed.",
+        "Avoid embedding black padding that can compound after mode changes or Picture in Picture entry."
+      ],
+      "review_note": "Retained MUST after reconfirming the explicit always directive and its aspect-ratio, padding, and Picture in Picture context."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0006": {
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Present black immediately before TV app video becomes available to avoid unrelated interface flashes."
+      ],
+      "review_note": "Retained MUST after reconfirming the explicit ensure directive and the documented TV app transition behavior."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0009": {
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Use, switch to, or ask for the viewer profile associated with the selected content."
+      ],
+      "review_note": "Retained MUST after reconfirming the explicit make sure directive and the profile selection, switching, and fallback behavior."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0030": {
+      "title": "Keep tvOS transport actions within one or two steps",
+      "statement": {
+        "en": "Make sure tvOS transport actions take no more than one or two steps.",
+        "ja": "tvOS transport actionを1〜2手以内で完了できるようにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply the limit to actions exposed through playback transport controls.",
+        "Keep any associated custom information concise and relevant."
+      ],
+      "review_note": "Recovered and retained MUST after confirming the explicit make sure directive and its one-or-two-step ceiling."
+    },
     "HIG-PATTERNS-MULTITASKING-0006": {
       "review_note": "Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes."
     },

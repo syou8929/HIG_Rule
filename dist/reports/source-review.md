@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 633
-- Reviewed batches: 49
+- Reviewed rules: 673
+- Reviewed batches: 50
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:17:24Z
+- Reviewed at: 2026-07-21T15:24:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -635,6 +635,46 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-MULTITASKING-0016 · high — Recovered both short-interruption responses, the example, and the restoration requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0017 · high — Recovered the completion rule and preserved its no-more-input condition and examples. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-PLAYING-VIDEO-0001 · high — Recorded the system-player default and constrained the custom-player alternative to essential needs. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0002 · high — Retained MUST from the explicit always directive and recorded padding and Picture in Picture failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0003 · high — Recorded the value test and documented platform scope without treating extra information as a default. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0004 · high — Recorded cross-device interaction consistency and the source's keyboard and Siri Remote examples. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0005 · high — Recorded the source-switch boundary and the secondary-audio handling needed to prevent overlap. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0006 · high — Retained MUST from the explicit ensure directive and recorded the documented black transition. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0007 · high — Recorded direct entry to selected content and preserved the narrow interstitial exception. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0008 · high — Recorded automatic resume as the documented alternative to an unnecessary prompt. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0009 · high — Retained MUST from make sure and recorded selection, switching, and no-profile behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0010 · high — Recorded the long-content condition without turning the duration description into a fixed threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0011 · high — Preserved the quick-load default and the approximate two-second fallback rather than making it universal. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0012 · high — Recorded the black background and minimal-branding treatment. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0013 · high — Recorded the detail-and-resume destination and main-menu fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0014 · high — Recorded notification timing and the immediate-exit readiness requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0015 · high — Recorded size, duration, translucency, dynamic-range, and retention constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0016 · high — Recorded the approximate half-second interaction guard and both recovery actions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0017 · high — Kept the comfort principle at SHOULD and split its concrete techniques into separate rules. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0018 · high — Recorded user-controlled entry and the inadequacy of warning-only autoplay. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0019 · high — Recorded the conditional scrubbing scope and approximate thumbnail width. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0020 · high — Recorded surrounding-content continuity and the conventional 2D-player behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0021 · high — Repaired the truncated title and recorded control, integration, aspect-ratio, dimensional, and caption constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0022 · high — Kept the guidance at SHOULD and preserved 30 seconds as a preference, not a universal hard maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0023 · high — Preserved every value in the structured watchOS media table and kept them scoped to watchOS assets. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0024 · high — Recorded the control-affordance confusion behind the prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0025 · high — Retained MAY and recorded relevance as the selection criterion. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0026 · high — Repaired the truncated title and preserved optionality, component roles, usefulness, and succinctness. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0027 · high — Recovered the aspect-fill range and preserved the source's inclusive 2:1 overlap as unresolved guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0028 · high — Recovered both fit-to-screen ranges and preserved the source's inclusive 2:1 overlap as unresolved guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0029 · high — Recovered the explicit visibility constraint separately from the optional value test. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0030 · high — Recovered and retained the explicit make sure directive and its one-or-two-step ceiling. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0031 · high — Recovered the concrete keyboard mapping from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0032 · high — Recovered the actual readiness condition instead of retaining the vague immediate-playback fragment. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0033 · high — Recovered the direct size, distraction, and viewing-value prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0034 · high — Recovered the first comfort technique at SHOULD without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0035 · high — Recovered both the small initial window and user resizing technique at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0036 · high — Recovered surroundings visibility at SHOULD and preserved its comfort context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0037 · high — Recovered the conditional control-visibility prohibition at conservative AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0038 · high — Recovered the direct no-scaling instruction from the media-encoding paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0039 · high — Recovered relevance as a separate prohibition from the optional poster-image rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PLAYING-VIDEO-0040 · high — Recovered the background continuation separately from the playback-readiness rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0003 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

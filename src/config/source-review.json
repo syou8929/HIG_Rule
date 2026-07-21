@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:17:24Z",
+  "reviewed_at": "2026-07-21T15:24:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1410,9 +1410,366 @@
         "HIG-PATTERNS-MULTITASKING-0017"
       ],
       "review_note": "Reviewed context preservation, activity and audio interruption, background completion, notifications, iPadOS resizing, and visionOS gaze-driven window behavior; recovered twelve atomic rules and refreshed a changed page hash."
+    },
+    {
+      "id": "priority-4-playing-video-context-2026-07-21",
+      "reviewed_at": "2026-07-21T15:24:00Z",
+      "review_method": "Rendered Apple HIG Playing video guidance, supporting prose, platform sections, and the watchOS media table were reviewed; two repeated live renders matched the updated stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+          "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-PLAYING-VIDEO-0001",
+        "HIG-PATTERNS-PLAYING-VIDEO-0002",
+        "HIG-PATTERNS-PLAYING-VIDEO-0003",
+        "HIG-PATTERNS-PLAYING-VIDEO-0004",
+        "HIG-PATTERNS-PLAYING-VIDEO-0005",
+        "HIG-PATTERNS-PLAYING-VIDEO-0006",
+        "HIG-PATTERNS-PLAYING-VIDEO-0007",
+        "HIG-PATTERNS-PLAYING-VIDEO-0008",
+        "HIG-PATTERNS-PLAYING-VIDEO-0009",
+        "HIG-PATTERNS-PLAYING-VIDEO-0010",
+        "HIG-PATTERNS-PLAYING-VIDEO-0011",
+        "HIG-PATTERNS-PLAYING-VIDEO-0012",
+        "HIG-PATTERNS-PLAYING-VIDEO-0013",
+        "HIG-PATTERNS-PLAYING-VIDEO-0014",
+        "HIG-PATTERNS-PLAYING-VIDEO-0015",
+        "HIG-PATTERNS-PLAYING-VIDEO-0016",
+        "HIG-PATTERNS-PLAYING-VIDEO-0017",
+        "HIG-PATTERNS-PLAYING-VIDEO-0018",
+        "HIG-PATTERNS-PLAYING-VIDEO-0019",
+        "HIG-PATTERNS-PLAYING-VIDEO-0020",
+        "HIG-PATTERNS-PLAYING-VIDEO-0021",
+        "HIG-PATTERNS-PLAYING-VIDEO-0022",
+        "HIG-PATTERNS-PLAYING-VIDEO-0023",
+        "HIG-PATTERNS-PLAYING-VIDEO-0024",
+        "HIG-PATTERNS-PLAYING-VIDEO-0025",
+        "HIG-PATTERNS-PLAYING-VIDEO-0026",
+        "HIG-PATTERNS-PLAYING-VIDEO-0027",
+        "HIG-PATTERNS-PLAYING-VIDEO-0028",
+        "HIG-PATTERNS-PLAYING-VIDEO-0029",
+        "HIG-PATTERNS-PLAYING-VIDEO-0030",
+        "HIG-PATTERNS-PLAYING-VIDEO-0031",
+        "HIG-PATTERNS-PLAYING-VIDEO-0032",
+        "HIG-PATTERNS-PLAYING-VIDEO-0033",
+        "HIG-PATTERNS-PLAYING-VIDEO-0034",
+        "HIG-PATTERNS-PLAYING-VIDEO-0035",
+        "HIG-PATTERNS-PLAYING-VIDEO-0036",
+        "HIG-PATTERNS-PLAYING-VIDEO-0037",
+        "HIG-PATTERNS-PLAYING-VIDEO-0038",
+        "HIG-PATTERNS-PLAYING-VIDEO-0039",
+        "HIG-PATTERNS-PLAYING-VIDEO-0040"
+      ],
+      "review_note": "Reviewed system-player defaults, aspect handling, transport behavior, TV app transitions, loading and exit states, overlays, visionOS comfort, and watchOS media constraints; recovered fourteen atomic rules and refreshed a changed page hash."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-PLAYING-VIDEO-0001": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"389d26988555e1bdb200f97ebc97270db6c468199f1cfd8b2a1cf19198445536","section_path":["Playing video","Best practices"]},
+      "title": "Use the system video player by default",
+      "statement": {"en":"Use the system video player to provide familiar playback behavior and controls.","ja":"使い慣れたplayback behaviorとcontrolを提供するためsystem video playerを使う。"},
+      "conditions": ["Create a custom player only when the system player cannot meet an essential experience need."],
+      "exceptions": ["A custom player should closely reference the system player's interface and behavior."],
+      "review_note": "Recorded the system-player default and constrained the custom-player alternative to essential needs."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0002": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"0ee5529b707cbf9b9e92e21b46cb16ffe2b08923964da13b290a1c8a5420b48f","section_path":["Playing video","Best practices"]},
+      "title": "Preserve the original video aspect ratio",
+      "statement": {"en":"Always display video content at its original aspect ratio.","ja":"video contentは常に元のaspect ratioで表示する。"},
+      "conditions": ["Let the player apply letterboxing or pillarboxing when the display and content ratios differ.", "Avoid embedding black padding in the asset because it can compound when modes change or Picture in Picture begins."],
+      "review_note": "Retained MUST from the explicit always directive and recorded padding and Picture in Picture failure modes."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0003": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"bb352de971b33973fc68b3b15774533f37ffe2f48c030a2a873f5b921c62c591","section_path":["Playing video","Best practices"]},
+      "scope": {"portability":"apple-platform","platforms":["ios","ipados","tvos","visionos"],"devices":["iphone","ipad","apple-tv","apple-vision-pro"],"components":[],"modalities":[]},
+      "title": "Add playback information only when valuable",
+      "statement": {"en":"Provide additional playback information only when it adds value.","ja":"価値を加える場合だけ追加のplayback informationを提供する。"},
+      "conditions": ["Relevant platforms include iOS, iPadOS, tvOS, and visionOS.", "Keep the information secondary to the video and its controls."],
+      "review_note": "Recorded the value test and documented platform scope without treating extra information as a default."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0004": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"c9affdd0ef8b7e7882a88937498611310ae6942b8d266c53d799e17678bd67a8","section_path":["Playing video","Best practices"]},
+      "title": "Support expected playback interactions",
+      "statement": {"en":"Support the playback interactions people expect across available input devices.","ja":"利用可能なinput device全体で期待されるplayback interactionに対応する。"},
+      "conditions": ["Preserve familiar play, pause, scrubbing, and dismissal behavior.", "Map supported keyboard and Siri Remote input to the expected playback action."],
+      "review_note": "Recorded cross-device interaction consistency and the source's keyboard and Siri Remote examples."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0005": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"4623a022ac051687b76f984f7f0b2f7e43da1f2088fbe1aad416ed2ed3367098","section_path":["Playing video","Best practices"]},
+      "title": "Avoid mixing audio while switching playback modes",
+      "statement": {"en":"Avoid mixing audio from different sources while viewers switch modes.","ja":"視聴modeの切替中に異なるsourceのaudioを混在させない。"},
+      "conditions": ["Mute or pause secondary content before starting the newly selected source."],
+      "review_note": "Recorded the source-switch boundary and the secondary-audio handling needed to prevent overlap."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0006": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"4abf20e8cd2c397732fc525f9456c2ef1e81beb8bc5c279bd489bce1386c29be","section_path":["Playing video","Integrating with the TV app"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Make TV app transitions smooth",
+      "statement": {"en":"Ensure a smooth transition from the TV app into playback.","ja":"TV appからplaybackへのtransitionを滑らかにする。"},
+      "conditions": ["Present black immediately before the video becomes available to avoid flashing unrelated interface content."],
+      "review_note": "Retained MUST from the explicit ensure directive and recorded the documented black transition."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0007": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"c5ccda5fc26d3a4dc4f168d3887fab173168a2e983f30f0be339846cf4e21ab3","section_path":["Playing video","Integrating with the TV app"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Show TV app content immediately",
+      "statement": {"en":"Show the content people selected in the TV app immediately.","ja":"TV appで選択されたcontentを即時表示する。"},
+      "conditions": ["Avoid opening on a splash screen, detail view, intro animation, or unrelated content."],
+      "exceptions": ["If a rare required interstitial appears, make its skip behavior clear and return promptly to the selected content."],
+      "review_note": "Recorded direct entry to selected content and preserved the narrow interstitial exception."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0008": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"71863e2b6017858a61de43666f17fe0b5b574d40d4010faf3ed251ad86c54ca0","section_path":["Playing video","Integrating with the TV app"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Avoid a resume-playback prompt",
+      "statement": {"en":"Avoid asking whether to resume playback when a valid prior position exists.","ja":"有効な以前の位置がある場合、resumeするかを尋ねない。"},
+      "conditions": ["Resume automatically at the appropriate saved position."],
+      "review_note": "Recorded automatic resume as the documented alternative to an unnecessary prompt."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0009": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"7f430af874cf7b1c6bbda274209f212f05cd90ad37d702959074f198b4c63837","section_path":["Playing video","Integrating with the TV app"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Play content for the correct viewer",
+      "statement": {"en":"Make sure TV app content plays for the correct viewer profile.","ja":"TV app contentを正しいviewer profileで再生する。"},
+      "conditions": ["Use the profile associated with the selected content when possible.", "Switch to that profile or ask for a choice when no reliable association exists."],
+      "review_note": "Retained MUST from make sure and recorded selection, switching, and no-profile behavior."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0010": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"ec9134e322b15470e98b93194e45c9e4b7601ef1529a1d91ecd0a2a279cb9966","section_path":["Playing video","Integrating with the TV app"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Resume long video from its prior end time",
+      "statement": {"en":"Use the previous end time when resuming a long video clip.","ja":"長いvideo clipをresumeするとき以前のend timeを使う。"},
+      "conditions": ["Apply this to content where restarting would lose meaningful viewing progress."],
+      "review_note": "Recorded the long-content condition without turning the duration description into a fixed threshold."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0011": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"d8a6a8fb6daf9443169738ed550e48033618f82950203df9c7e963ccb42353bb","section_path":["Playing video","Integrating with the TV app","Loading content"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Avoid unnecessary playback loading screens",
+      "statement": {"en":"Avoid showing a loading screen when playback can begin quickly.","ja":"playbackをすぐ開始できる場合はloading screenを表示しない。"},
+      "exceptions": ["If loading exceeds about two seconds, show a black screen with a centered spinner and no other content."],
+      "review_note": "Preserved the quick-load default and the approximate two-second fallback rather than making it universal."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0012": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"a527faca465ac2423c655e0e734a93049c74530135e6883ad0e204b9d8b66a4b","section_path":["Playing video","Integrating with the TV app","Loading content"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Minimize playback loading-screen content",
+      "statement": {"en":"Minimize content on a playback loading screen.","ja":"playback loading screen上のcontentを最小限にする。"},
+      "conditions": ["Use a black background and keep branding minimal so the transition remains focused on playback."],
+      "review_note": "Recorded the black background and minimal-branding treatment."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0013": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"5463713a7f708cce84f7bc60897c8b19827952a3079afad20008e2db2cd23b59","section_path":["Playing video","Integrating with the TV app","Exiting playback"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Exit playback to relevant content",
+      "statement": {"en":"After playback exits, show a contextually relevant screen.","ja":"playback終了後はcontextに関連するscreenを表示する。"},
+      "conditions": ["Prefer a detail view that supports resuming or choosing related content."],
+      "exceptions": ["Use the app's main menu when no more specific destination is meaningful."],
+      "review_note": "Recorded the detail-and-resume destination and main-menu fallback."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0014": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"ed332288a67714c2940cd447924a012ee138693d0557e2b0929ecad667ef42c2","section_path":["Playing video","Integrating with the TV app","Exiting playback"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Prepare the playback exit destination immediately",
+      "statement": {"en":"Prepare the post-playback view as soon as an exit notification arrives.","ja":"exit notificationを受けたらpost-playback viewをすぐ準備する。"},
+      "conditions": ["The destination needs to be ready even when playback exits immediately."],
+      "review_note": "Recorded notification timing and the immediate-exit readiness requirement."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0015": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"52d02aa57a4e2f3f736a0e62befff6219a5d370ab1a2f191fcbfaca8e8ce2036","section_path":["Playing video","Platform considerations","tvOS"]},
+      "title": "Keep noninteractive tvOS overlays subordinate",
+      "statement": {"en":"Defer to video content when displaying tvOS logos or noninteractive overlays.","ja":"tvOSのlogoやnoninteractive overlayはvideo contentを優先して表示する。"},
+      "conditions": ["Keep a logo or timer small, unobtrusive, brief, and translucent when practical.", "Use SDR treatment and consider display-retention risk for persistent overlays."],
+      "review_note": "Recorded size, duration, translucency, dynamic-range, and retention constraints."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0016": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"1927eaa395a0c0eed4e7421968edba84ae4988fb9fca3319487b626879be81b2","section_path":["Playing video","Platform considerations","tvOS"]},
+      "title": "Present interactive tvOS overlays gracefully",
+      "statement": {"en":"Present interactive tvOS overlays without surprising or trapping viewers.","ja":"利用者を驚かせたり閉じ込めたりせずinteractive tvOS overlayを表示する。"},
+      "conditions": ["Delay presentation or pause playback for at least about half a second before interaction.", "Provide clear ways to dismiss the overlay and resume playback."],
+      "review_note": "Recorded the approximate half-second interaction guard and both recovery actions."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0017": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"27babc06ff5c97b8cbf1b231263936e7bb6869511a0cf9d33eb99811c7c54abf","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Promote comfort during visionOS video playback",
+      "statement": {"en":"Help people remain comfortable while playing video in visionOS.","ja":"visionOSでvideoを再生するとき利用者のcomfortを保つ。"},
+      "conditions": ["Give people control over start timing, window size, surrounding visibility, and immersive presentation."],
+      "review_note": "Kept the comfort principle at SHOULD and split its concrete techniques into separate rules."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0018": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"3bb572ef5e57be017f82c9955d7d38ddabe41c7992dde2f487c700623cc60e0a","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Avoid immersive visionOS autoplay",
+      "statement": {"en":"Avoid automatically starting fully immersive visionOS video playback.","ja":"fully immersiveなvisionOS video playbackを自動開始しない。"},
+      "conditions": ["Let people choose when to enter the immersive playback experience."],
+      "exceptions": ["Do not rely on a warning alone to replace deliberate start control."],
+      "review_note": "Recorded user-controlled entry and the inadequacy of warning-only autoplay."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0019": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"20d19572817cd0444e0461a4ab1335312af76d1d0efb2b285f9de995307aba43","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Provide visionOS scrubbing thumbnails",
+      "statement": {"en":"Create a thumbnail track when supporting visionOS video scrubbing.","ja":"visionOS videoのscrubbingに対応するときthumbnail trackを作成する。"},
+      "conditions": ["Use thumbnails around 160 pixels wide to balance clarity and resource cost."],
+      "review_note": "Recorded the conditional scrubbing scope and approximate thumbnail width."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0020": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"6d1112c46b16d5730a6de06400e03f281c438dfccf13aaa6e07e276a70b62725","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Avoid filling a visionOS window with inline video",
+      "statement": {"en":"Avoid expanding an inline visionOS video player to fill its window.","ja":"inline visionOS video playerをwindow全体へ拡大しない。"},
+      "conditions": ["Keep surrounding window content visible and preserve familiar 2D inline-player expectations."],
+      "review_note": "Recorded surrounding-content continuity and the conventional 2D-player behavior."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0021": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"d66ea2485d8a37229003c65c1aae02c64dbc3245f16bba9de5de46b3f4b48773","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Use RealityKit for special-purpose visionOS video",
+      "statement": {"en":"Use a RealityKit video player for splash, transitional, or special-effect video.","ja":"splash、transition、special effect用videoにはRealityKit video playerを使う。"},
+      "conditions": ["Use this approach when transport controls and system-player integration are unnecessary.", "Preserve the source aspect ratio for 2D or 3D content and provide captions where needed."],
+      "review_note": "Repaired the truncated title and recorded control, integration, aspect-ratio, dimensional, and caption constraints."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0022": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"e7a7ee9fffbfd191a276b253e0cc5ecbc7daec2e838cd175b4466efa822d52a2","section_path":["Playing video","Platform considerations","watchOS"]},
+      "title": "Keep watchOS video clips short",
+      "statement": {"en":"Keep watchOS video clips short.","ja":"watchOS video clipを短く保つ。"},
+      "conditions": ["Prefer clips of about 30 seconds or less to limit wrist fatigue and storage cost."],
+      "review_note": "Kept the guidance at SHOULD and preserved 30 seconds as a preference, not a universal hard maximum."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0023": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"2bf41dc2401035f283222235c4f9828855a18e1e31456c841aa803f5c04ead6d","section_path":["Playing video","Platform considerations","watchOS"]},
+      "title": "Use recommended watchOS video encoding values",
+      "statement": {"en":"Use the recommended sizes and encoding values for watchOS media assets.","ja":"watchOS media assetには推奨sizeとencoding valueを使う。"},
+      "conditions": ["Use H.264 High Profile video at about 160 kbps and up to 30 fps.", "Use 208×260 for full-screen portrait or 320×180 for 16:9 landscape video.", "Use HE-AAC audio at about 64 kbps."],
+      "review_note": "Preserved every value in the structured watchOS media table and kept them scoped to watchOS assets."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0024": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"f57b09928cf54575e9a87e1d8f7032ecf5acbc1b6991cb6f5c15f7354edc6a0e","section_path":["Playing video","Platform considerations","watchOS"]},
+      "title": "Avoid control-like watchOS poster images",
+      "statement": {"en":"Avoid making a watchOS poster image look like a system control.","ja":"watchOS poster imageをsystem controlのように見せない。"},
+      "conditions": ["Prevent a static poster from implying an unavailable or different interaction."],
+      "review_note": "Recorded the control-affordance confusion behind the prohibition."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0025": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"c135dd903f1c8cea010fb850b00061f3e6573928b40558d6f83ce867037966c6","section_path":["Playing video","Platform considerations","watchOS"]},
+      "title": "Consider a representative watchOS poster image",
+      "statement": {"en":"Consider using a watchOS poster image that represents the video clip.","ja":"video clipを表すwatchOS poster imageの使用を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Choose an image that helps people understand the clip before playback."],
+      "review_note": "Retained MAY and recorded relevance as the selection criterion."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0026": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"5d62201d1401a6cb7adfb25814bd3f59edf8c922fbe98f93e85ffd52ef09b2f9","section_path":["Playing video","Best practices"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Consider useful tvOS transport controls or information tabs",
+      "statement": {"en":"Consider a tvOS transport control or custom information tab when playback-specific access is useful.","ja":"playback固有のaccessが有用な場合、tvOS transport controlまたはcustom information tabを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Use transport controls for playback actions and custom tabs for succinct content-specific information.", "Include only options that are useful in the current viewing context."],
+      "review_note": "Repaired the truncated title and preserved optionality, component roles, usefulness, and succinctness."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0027": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"3f48af0645cb9135e891754ff6a920e8db88912f31ec21cc658f77e86229b359","section_path":["Playing video"]},
+      "title": "Default wide video to aspect-fill",
+      "statement": {"en":"Use aspect-fill by default for wide video from 2:1 through 2.40:1.","ja":"2:1から2.40:1までのwide videoではaspect-fillをdefaultにする。"},
+      "conditions": ["Aspect-fill scales to the display and may crop content at the edges.", "At exactly 2:1, the source also includes fit-to-screen; choose deliberately for that boundary case."],
+      "review_note": "Recovered the aspect-fill range and preserved the source's inclusive 2:1 overlap as unresolved guidance."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0028": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"5f218ebe6bda077792a8521bf6c30d234f1730b07ed2a7a6a65df542c8a2e0f6","section_path":["Playing video"]},
+      "title": "Default standard and ultrawide video to fit-to-screen",
+      "statement": {"en":"Use fit-to-screen by default for standard and ultrawide video ratios.","ja":"standardおよびultrawide video ratioではfit-to-screenをdefaultにする。"},
+      "conditions": ["This includes 4:3, 16:9, ratios through 2:1, and ultrawide ratios beyond 2.40:1.", "Fit-to-screen keeps the entire video visible and can add letterboxing or pillarboxing.", "At exactly 2:1, the source also includes aspect-fill; choose deliberately for that boundary case."],
+      "review_note": "Recovered both fit-to-screen ranges and preserved the source's inclusive 2:1 overlap as unresolved guidance."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0029": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"e903bddd7dd7c6b90bc60c4dfe8d4d5fecea803e75e44d0f5071777d4568a8e9","section_path":["Playing video","Best practices"]},
+      "title": "Avoid obscuring video with additional information",
+      "statement": {"en":"Avoid letting additional information obscure video playback.","ja":"追加informationでvideo playbackを隠さない。"},
+      "conditions": ["Keep supplementary content placed and timed so the video remains understandable."],
+      "review_note": "Recovered the explicit visibility constraint separately from the optional value test."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0030": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"4bef8219bba45a6bd854e290605e84a53a4131700a62b345d8eb4fda1d3f304e","section_path":["Playing video","Best practices"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Keep tvOS transport actions within one or two steps",
+      "statement": {"en":"Make sure tvOS transport actions take no more than one or two steps.","ja":"tvOS transport actionを1〜2手以内で完了できるようにする。"},
+      "conditions": ["Apply the limit to actions exposed through playback transport controls.", "Keep any associated custom information concise and relevant."],
+      "review_note": "Recovered and retained the explicit make sure directive and its one-or-two-step ceiling."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0031": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"84ecac3c168451f35b5aa28f5d2a2daea567b165f58d7bb8df1cf0dd7dbf335d","section_path":["Playing video","Integrating with the TV app"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":["keyboard"]},
+      "title": "Map Space to play and pause",
+      "statement": {"en":"Use Space on a connected Bluetooth keyboard to play or pause playback.","ja":"接続Bluetooth keyboardのSpaceでplaybackをplayまたはpauseする。"},
+      "conditions": ["Support the mapping when a Bluetooth keyboard controls TV app playback."],
+      "review_note": "Recovered the concrete keyboard mapping from supporting prose."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0032": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"5ab472c77daae9a4da4709139cfdbcb33fe832e34db969f93634549c77338ea9","section_path":["Playing video","Integrating with the TV app","Loading content"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Begin playback once enough content loads",
+      "statement": {"en":"Begin playback as soon as enough content has loaded.","ja":"十分なcontentがloadされたらすぐplaybackを開始する。"},
+      "conditions": ["Do not wait for the remaining TV app content to finish loading before playback begins."],
+      "review_note": "Recovered the actual readiness condition instead of retaining the vague immediate-playback fragment."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0033": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"5c376c9e58a6eb30a926732cf1b68a3eb269b7d2ba90500ab846b7ffc6d2fa69","section_path":["Playing video","Platform considerations","tvOS"]},
+      "title": "Avoid distracting tvOS playback overlays",
+      "statement": {"en":"Avoid large or distracting tvOS overlays that do not enhance viewing.","ja":"視聴を高めないlargeまたはdistractingなtvOS overlayを避ける。"},
+      "conditions": ["Keep a logo or other noninteractive overlay subordinate to the video."],
+      "review_note": "Recovered the direct size, distraction, and viewing-value prohibition."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0034": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"febcbabc0f6cd67a70dc0ae594b92dcb0588733dcc120370477b81613979de49","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Let people start visionOS video deliberately",
+      "statement": {"en":"Let people choose when to start visionOS video playback.","ja":"visionOS video playbackの開始時点を利用者が選べるようにする。"},
+      "conditions": ["Preserve user control before playback changes attention or immersion."],
+      "review_note": "Recovered the first comfort technique at SHOULD without raising it to MUST."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0035": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"90dc424b7b88d8e0c175c6590c1b06c88f06c79a910dec352b2d6b81294f2c9e","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Use a small resizable visionOS playback window",
+      "statement": {"en":"Use a small window for visionOS video playback and let people resize it.","ja":"visionOS video playbackにはsmall windowを使い、利用者がresizeできるようにする。"},
+      "conditions": ["Use window scale and resizing to support comfortable viewing."],
+      "review_note": "Recovered both the small initial window and user resizing technique at SHOULD."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0036": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"fc73fe1df2945d4ac3bde563c9abf6333a309109b5559eaf96b7b8e1acaabd90","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Keep surroundings visible during visionOS playback",
+      "statement": {"en":"Keep people's surroundings visible during visionOS video playback.","ja":"visionOS video playback中も利用者のsurroundingsを見える状態に保つ。"},
+      "conditions": ["Apply this as a comfort technique when full immersion is unnecessary."],
+      "review_note": "Recovered surroundings visibility at SHOULD and preserved its comfort context."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0037": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"afca18759aaf184db0a313ac3d9fe503eef8fa412c387a8239b4b482b14fd69f","section_path":["Playing video","Platform considerations","visionOS"]},
+      "title": "Avoid obscuring immersive playback controls",
+      "statement": {"en":"Avoid virtual content obscuring immersive video or its transport controls.","ja":"virtual contentでimmersive videoまたはtransport controlを隠さない。"},
+      "conditions": ["Apply this in a fully immersive playback experience."],
+      "review_note": "Recovered the conditional control-visibility prohibition at conservative AVOID strength."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0038": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"55ec3f8ff4d62f12b442f6e8459fdabb99ebaa1d0dbd3e8d3ddb9e8c9a13db8c","section_path":["Playing video","Platform considerations","watchOS"]},
+      "title": "Avoid scaling watchOS video clips",
+      "statement": {"en":"Avoid scaling watchOS video clips.","ja":"watchOS video clipをscaleしない。"},
+      "conditions": ["Encode media at an appropriate target size instead of relying on runtime scaling."],
+      "review_note": "Recovered the direct no-scaling instruction from the media-encoding paragraph."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0039": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"39eadbb3facd200e5f84ec782192d694611015b0d40c1d072d30b7e476ff0e3e","section_path":["Playing video","Platform considerations","watchOS"]},
+      "title": "Avoid irrelevant watchOS poster images",
+      "statement": {"en":"Avoid watchOS poster images that do not represent their video clips.","ja":"video clipを表さないwatchOS poster imageを避ける。"},
+      "conditions": ["Use a representative image when a poster is useful, while keeping it distinct from controls."],
+      "review_note": "Recovered relevance as a separate prohibition from the optional poster-image rule."
+    },
+    "HIG-PATTERNS-PLAYING-VIDEO-0040": {
+      "source": {"source_hash":"2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965","source_sentence_hash":"1b6adfeab62d30bdf693fc8e6fb09d5538810f0a2b388419649b8ce71eb04bff","section_path":["Playing video","Integrating with the TV app","Loading content"]},
+      "scope": {"portability":"platform-specific","platforms":["tvos"],"devices":["apple-tv"],"components":[],"modalities":[]},
+      "title": "Keep loading TV app content in the background",
+      "statement": {"en":"Keep loading remaining TV app content in the background after playback begins.","ja":"playback開始後も残りのTV app contentをbackgroundでloadし続ける。"},
+      "conditions": ["Start playback once enough content is ready and continue fetching the rest without interrupting it."],
+      "review_note": "Recovered the background continuation separately from the playback-readiness rule."
+    },
     "HIG-PATTERNS-MULTITASKING-0001": {
       "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"9a2235c60cc48f30b0dcf6d2bf9424bc9fd215a0fd06e09081462cc694f906d7","section_path":["Multitasking","Best practices"]},
       "title": "Respond smoothly to audio interruptions",
