@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:55:20Z",
+  "reviewed_at": "2026-07-21T17:02:48Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2032,9 +2032,51 @@
         "HIG-COMPONENTS-LISTS-AND-TABLES-0029", "HIG-COMPONENTS-LISTS-AND-TABLES-0030"
       ],
       "review_note": "Completed Lists and tables coverage; recovered sixteen atomic rules, preserved all fourteen existing IDs, and corrected truncated tvOS and inactive watchOS/macOS candidates."
+    },
+    {
+      "id": "priority-4-lockups-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:02:48Z",
+      "review_method": "Rendered Apple HIG Lockups guidance, supporting prose, card, caption-button, monogram, poster, focus, and platform context were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/lockups", "source_hash": "2df6b331ac1632eac32a08662c2fe7de73a8ce930130082fd9fa89a4dafbb95f"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-LOCKUPS-0001", "HIG-COMPONENTS-LOCKUPS-0002", "HIG-COMPONENTS-LOCKUPS-0003",
+        "HIG-COMPONENTS-LOCKUPS-0004", "HIG-COMPONENTS-LOCKUPS-0005"
+      ],
+      "review_note": "Completed tvOS Lockups coverage; recovered MUST rules for caption-button tilt behavior and content-appropriate poster sizing while preserving all existing IDs."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-LOCKUPS-0001": {
+      "source": {"source_hash": "2df6b331ac1632eac32a08662c2fe7de73a8ce930130082fd9fa89a4dafbb95f", "source_sentence_hash": "08c22973df7499d32f329f231519349429f1d2d63d4e5a6999762376ef01f749", "section_path": ["Lockups", "Best practices"]},
+      "title": "Leave adequate space between tvOS lockups", "statement": {"en": "Leave enough space between tvOS lockups for focused expansion.", "ja": "tvOS lockupのfocus時の拡大に十分な間隔を設ける。"},
+      "conditions": ["Prevent a focused lockup from overlapping or displacing neighboring lockups."], "review_note": "Recorded focused expansion as the spacing requirement's cause."
+    },
+    "HIG-COMPONENTS-LOCKUPS-0002": {
+      "source": {"source_hash": "2df6b331ac1632eac32a08662c2fe7de73a8ce930130082fd9fa89a4dafbb95f", "source_sentence_hash": "7a9bb7149e84168a8a42fa72e1180cd6dfc228af0b7ed6452cd66f0f68446c29", "section_path": ["Lockups", "Best practices"]},
+      "title": "Keep grouped tvOS lockups consistently sized", "statement": {"en": "Use consistent lockup sizes within each tvOS row or group.", "ja": "tvOSの各rowまたはgroup内でlockup sizeを一貫させる。"},
+      "conditions": ["Match both width and height across grouped elements."], "review_note": "Recorded both size dimensions and the visual-consistency scope."
+    },
+    "HIG-COMPONENTS-LOCKUPS-0003": {
+      "source": {"source_hash": "2df6b331ac1632eac32a08662c2fe7de73a8ce930130082fd9fa89a4dafbb95f", "source_sentence_hash": "b211121279f47888c697988da8ae3d6c54f10e02e90044799d46e0558c69bc78", "section_path": ["Lockups", "Monograms"]},
+      "title": "Prefer portraits over initials in monograms", "statement": {"en": "Prefer an available image of a person over initials in a tvOS monogram.", "ja": "人物画像がある場合はtvOS monogramでinitialより画像を優先する。"},
+      "conditions": ["Use initials only when an image isn’t available."], "review_note": "Recorded image availability and the more personal visual connection."
+    },
+    "HIG-COMPONENTS-LOCKUPS-0004": {
+      "source": {"source_hash": "2df6b331ac1632eac32a08662c2fe7de73a8ce930130082fd9fa89a4dafbb95f", "source_sentence_hash": "cf14fe8585a182745c43dafee355c37ab8b84529c445f2e11823c5743d2bf3a9", "section_path": ["Lockups", "Caption buttons"]},
+      "title": "Match focused caption-button tilt to swipes", "statement": {"en": "Make each focused tvOS caption button tilt in the direction of the remote-control swipe.", "ja": "focusされたtvOS caption buttonをremote-controlのswipe方向へtiltさせる。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["Tilt vertically aligned buttons up and down, horizontally aligned buttons left and right, and grid buttons in both directions."],
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": ["lockups"], "modalities": ["remote-control"]},
+      "review_note": "Recovered the Make sure requirement and recorded all three layout-to-tilt mappings."
+    },
+    "HIG-COMPONENTS-LOCKUPS-0005": {
+      "source": {"source_hash": "2df6b331ac1632eac32a08662c2fe7de73a8ce930130082fd9fa89a4dafbb95f", "source_sentence_hash": "5f8c45ee1673a32c2469a061b09a02c03ed714ec6b1e5d4ffcbeee4e858fca2e", "section_path": ["Lockups", "Posters"]},
+      "title": "Size tvOS posters for their content", "statement": {"en": "Make every tvOS poster size appropriate for its content.", "ja": "すべてのtvOS posterをcontentに適したsizeにする。"},
+      "confidence": "high", "review_required": false, "conditions": ["Posters may use any dimensions that fit their content."],
+      "review_note": "Recovered the needs-to requirement while preserving the source's flexible sizing allowance."
+    },
     "HIG-COMPONENTS-LISTS-AND-TABLES-0001": {
       "source": {"source_hash": "1349d515da213b04f610d87de23302ce168df906a6790964c6a2668286910546", "source_sentence_hash": "bcb8203573e9fea95bd033b97c67d5093419a5b78343f287d09548dd31b6b212", "section_path": ["Lists and tables", "Best practices"]},
       "title": "Prefer lists or tables for text", "statement": {"en": "Prefer a list or table when displaying primarily textual content.", "ja": "主にtext contentを表示する場合はlistまたはtableを優先する。"},

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1019
-- Reviewed batches: 65
+- Reviewed rules: 1024
+- Reviewed batches: 66
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:55:20Z
+- Reviewed at: 2026-07-21T17:02:48Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -222,6 +222,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0032 · high — Recovered the optional lead and recorded the CarPlay noninteractive and driving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0033 · high — Recovered the optional watchOS lead and preserved its stricter driving-context condition. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0034 · high — Recovered the qualified Try to avoid lead and scoped it to Live Activity content transitions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LOCKUPS-0001 · high — Recorded focused expansion as the spacing requirement's cause. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- HIG-COMPONENTS-LOCKUPS-0002 · high — Recorded both size dimensions and the visual-consistency scope. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- HIG-COMPONENTS-LOCKUPS-0003 · high — Recorded image availability and the more personal visual connection. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- HIG-COMPONENTS-LOCKUPS-0004 · high — Recovered the Make sure requirement and recorded all three layout-to-tilt mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- HIG-COMPONENTS-LOCKUPS-0005 · high — Recovered the needs-to requirement while preserving the source's flexible sizing allowance. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
 - HIG-COMPONENTS-NOTIFICATIONS-0019 · high — Recorded the brief-display limitation and redundant-delivery requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0020 · high — Made the generic privacy prompt specific to the official short-look disclosure risk. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0021 · high — Replaced a truncated title while preserving the optional source strength. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))

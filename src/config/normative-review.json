@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:55:20Z",
+  "reviewed_at": "2026-07-21T17:02:48Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
@@ -8,13 +8,27 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 209,
+  "reviewed_rule_count": 211,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-COMPONENTS-LOCKUPS-0004": {
+      "title": "Match focused caption-button tilt to swipes",
+      "statement": {"en": "Make each focused tvOS caption button tilt in the direction of the remote-control swipe.", "ja": "focusされたtvOS caption buttonをremote-controlのswipe方向へtiltさせる。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["Tilt vertically aligned buttons up and down, horizontally aligned buttons left and right, and grid buttons in both directions."],
+      "review_note": "Retained MUST after confirming the explicit Make sure directive and all directional mappings."
+    },
+    "HIG-COMPONENTS-LOCKUPS-0005": {
+      "title": "Size tvOS posters for their content",
+      "statement": {"en": "Make every tvOS poster size appropriate for its content.", "ja": "すべてのtvOS posterをcontentに適したsizeにする。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["Posters may use any dimensions that fit their content."],
+      "review_note": "Retained MUST after confirming the explicit needs-to requirement and flexible-size condition."
+    },
     "HIG-COMPONENTS-LISTS-AND-TABLES-0016": {
       "title": "Require edit mode for iOS and iPadOS table selection",
       "statement": {"en": "Require people to enter edit mode before selecting table items in iOS or iPadOS.", "ja": "iOSまたはiPadOSでtable itemを選択する前にedit modeへ入ることを必須にする。"},

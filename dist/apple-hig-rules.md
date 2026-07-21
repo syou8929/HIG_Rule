@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:01:24.884Z. 2236 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:04:26.214Z. 2238 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1167,9 +1167,11 @@ Generated 2026-07-21T17:01:24.884Z. 2236 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0034 · AVOID · high** — Avoid overlapping elements during Live Activity content transitions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 ### lockups
 
-- **HIG-COMPONENTS-LOCKUPS-0001 · SHOULD · low** — Apply the documented Lockups guidance to allow adequate space between lockups. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
-- **HIG-COMPONENTS-LOCKUPS-0002 · SHOULD · low** — Choose or apply consistent lockup sizes within a row or group in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
-- **HIG-COMPONENTS-LOCKUPS-0003 · SHOULD · low** — Favor images over initials when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- **HIG-COMPONENTS-LOCKUPS-0001 · SHOULD · high** — Leave enough space between tvOS lockups for focused expansion. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- **HIG-COMPONENTS-LOCKUPS-0002 · SHOULD · high** — Use consistent lockup sizes within each tvOS row or group. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- **HIG-COMPONENTS-LOCKUPS-0003 · SHOULD · high** — Prefer an available image of a person over initials in a tvOS monogram. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- **HIG-COMPONENTS-LOCKUPS-0004 · MUST · high** — Make each focused tvOS caption button tilt in the direction of the remote-control swipe. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- **HIG-COMPONENTS-LOCKUPS-0005 · MUST · high** — Make every tvOS poster size appropriate for its content. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
 ### menus
 
 - **HIG-COMPONENTS-MENUS-0001 · SHOULD · low** — Apply the documented Menus guidance to remove articles like a, an, and the from menu-item labels to save space. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))

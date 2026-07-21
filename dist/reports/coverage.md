@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2236
+- Active atomic rules: 2238
 - Pages without rules: 16
-- Low-confidence rules: 1131
-- Rules requiring human review: 1131
+- Low-confidence rules: 1128
+- Rules requiring human review: 1128
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 728
+- components: 730
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -24,7 +24,7 @@
 
 - AVOID: 302
 - MAY: 248
-- MUST: 188
+- MUST: 190
 - MUST_NOT: 21
 - SHOULD: 1477
 
@@ -34,14 +34,14 @@
 - ios: 1571
 - ipados: 1540
 - macos: 1307
-- tvos: 1007
+- tvos: 1009
 - visionos: 1366
 - watchos: 1078
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2170
+- manual: 2172
 
 ## Blocked pages
 
@@ -150,9 +150,6 @@ None.
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
 - HIG-COMPONENTS-LABELS-0004
-- HIG-COMPONENTS-LOCKUPS-0001
-- HIG-COMPONENTS-LOCKUPS-0002
-- HIG-COMPONENTS-LOCKUPS-0003
 - HIG-COMPONENTS-MENUS-0001
 - HIG-COMPONENTS-MENUS-0002
 - HIG-COMPONENTS-MENUS-0003
@@ -1284,9 +1281,6 @@ None.
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
 - HIG-COMPONENTS-LABELS-0004
-- HIG-COMPONENTS-LOCKUPS-0001
-- HIG-COMPONENTS-LOCKUPS-0002
-- HIG-COMPONENTS-LOCKUPS-0003
 - HIG-COMPONENTS-MENUS-0001
 - HIG-COMPONENTS-MENUS-0002
 - HIG-COMPONENTS-MENUS-0003
