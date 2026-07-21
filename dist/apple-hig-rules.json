@@ -75074,7 +75074,7 @@
         "Images",
         "Resolution"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "14d73c205e3fe7be7fe9c427d58f06d63bac4f726002cf99a62aacaea866381b",
       "evidence_paraphrase": "Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable."
@@ -75153,7 +75153,7 @@
         "Images",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "17cb3fe0705ea3bd5323e40532db03620ce6b6f2a5f623c420aa816852b68c16",
       "evidence_paraphrase": "Apply the documented Images guidance to include a color profile with each image."
@@ -75232,7 +75232,7 @@
         "Images",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "ef39e3e5e6b703828d867b415b3dbd48c380607f663a4d5dd4aaa7b435ab7d67",
       "evidence_paraphrase": "Test images on a range of actual devices in every applicable case."
@@ -75249,17 +75249,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0004",
-    "title": "Use standard interface elements to display layered images",
+    "title": "Use standard tvOS interface elements for layered images",
     "category": "foundations",
     "topic": "images",
     "subtopic": "layered-images",
     "statement": {
-      "en": "Choose or apply standard interface elements to display layered images in the documented context.",
-      "ja": "該当する状況ではstandard interface elements to display layered imagesを採用する。"
+      "en": "Use standard tvOS views and system focus APIs to display layered images.",
+      "ja": "layered imageの表示にはstandard tvOS viewとsystem focus APIを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -75274,7 +75274,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Standard views and focus APIs such as FocusState automatically apply parallax when the image receives focus."
     ],
     "exceptions": [],
     "rationale": {
@@ -75284,7 +75284,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply standard interface elements to display layered images in the documented context.” in the documented Images context?"
+        "Does the design satisfy “Use standard tvOS views and system focus APIs to display layered images.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75303,10 +75303,10 @@
         "tvOS",
         "Layered images"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "9c5f631c8f91ac7c703d0a97b0e2f38752dcccc5344072e713838a86f7618a4b",
-      "evidence_paraphrase": "Choose or apply standard interface elements to display layered images in the documented context."
+      "evidence_paraphrase": "Use standard tvOS views and system focus APIs to display layered images."
     },
     "tags": [
       "foundations",
@@ -75317,22 +75317,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply standard interface elements to display layered images in the documented context.",
+    "apple_native_rule": "Use standard tvOS views and system focus APIs to display layered images.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0005",
-    "title": "Keep the background layer opaque",
+    "title": "Keep every tvOS layered-image background opaque",
     "category": "foundations",
     "topic": "images",
     "subtopic": "layered-images",
     "statement": {
-      "en": "Maintain the background layer opaque.",
-      "ja": "the background layer opaqueを維持する。"
+      "en": "Keep the background layer of every tvOS layered image opaque.",
+      "ja": "すべてのtvOS layered imageでbackground layerをopaqueに保つ。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -75347,7 +75347,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Higher layers may use varying opacity, but the background layer must remain opaque.",
+      "A nonopaque background produces an error and can compromise parallax, drop shadows, and system backgrounds."
     ],
     "exceptions": [],
     "rationale": {
@@ -75357,7 +75358,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain the background layer opaque.” in the documented Images context?"
+        "Does the design satisfy “Keep the background layer of every tvOS layered image opaque.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75376,10 +75377,10 @@
         "tvOS",
         "Layered images"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "17f16bb1a14a38252d10c635d06b19b452aa8738b5912d2e5346065c25ff7651",
-      "evidence_paraphrase": "Maintain the background layer opaque."
+      "evidence_paraphrase": "Keep the background layer of every tvOS layered image opaque."
     },
     "tags": [
       "foundations",
@@ -75390,22 +75391,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Maintain the background layer opaque.",
+    "apple_native_rule": "Keep the background layer of every tvOS layered image opaque.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0006",
-    "title": "Keep layering simple and subtle",
+    "title": "Keep tvOS image layering simple and subtle",
     "category": "foundations",
     "topic": "images",
     "subtopic": "layered-images",
     "statement": {
-      "en": "Maintain layering simple and subtle.",
-      "ja": "layering simple and subtleを維持する。"
+      "en": "Keep tvOS layered-image depth simple and subtle.",
+      "ja": "tvOS layered imageのdepthをsimpleかつsubtleに保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -75420,7 +75421,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Parallax should be nearly unnoticeable; excessive 3D effects can feel unrealistic or jarring."
     ],
     "exceptions": [],
     "rationale": {
@@ -75430,7 +75431,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain layering simple and subtle.” in the documented Images context?"
+        "Does the design satisfy “Keep tvOS layered-image depth simple and subtle.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75449,10 +75450,10 @@
         "tvOS",
         "Layered images"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "7b1ab014b695c557ec9bdd65646fde54636eb8df7f600e2d84f5b0bec29b3e93",
-      "evidence_paraphrase": "Maintain layering simple and subtle."
+      "evidence_paraphrase": "Keep tvOS layered-image depth simple and subtle."
     },
     "tags": [
       "foundations",
@@ -75463,21 +75464,21 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Maintain layering simple and subtle.",
+    "apple_native_rule": "Keep tvOS layered-image depth simple and subtle.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0007",
-    "title": "Always preview layered images",
+    "title": "Always preview tvOS layered images",
     "category": "foundations",
     "topic": "images",
     "subtopic": "layered-images",
     "statement": {
-      "en": "Preview layered images in every applicable case.",
-      "ja": "該当するすべての場合にpreview layered imagesを実行する。"
+      "en": "Always preview tvOS layered images throughout the design process.",
+      "ja": "tvOS layered imageをdesign process全体で必ずpreviewする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -75493,7 +75494,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Inspect scaling and clipping and readjust essential content as needed.",
+      "After finalizing the image, preview it on an actual TV for the most accurate result."
     ],
     "exceptions": [],
     "rationale": {
@@ -75503,7 +75505,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preview layered images in every applicable case.” in the documented Images context?"
+        "Does the design satisfy “Always preview tvOS layered images throughout the design process.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75522,10 +75524,10 @@
         "tvOS",
         "Layered images"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "adc92d0b5d20dbbaeed297b77da3b796b7a0c6d57d5427c6eeabf22ed825ad36",
-      "evidence_paraphrase": "Preview layered images in every applicable case."
+      "evidence_paraphrase": "Always preview tvOS layered images throughout the design process."
     },
     "tags": [
       "foundations",
@@ -75536,22 +75538,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Preview layered images in every applicable case.",
+    "apple_native_rule": "Always preview tvOS layered images throughout the design process.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0008",
-    "title": "Create a layered app icon",
+    "title": "Create a layered visionOS app icon",
     "category": "foundations",
     "topic": "images",
     "subtopic": "visionos",
     "statement": {
-      "en": "Apply the documented Images guidance to create a layered app icon.",
-      "ja": "「Images」において「Create a layered app icon」の指針を適用する。"
+      "en": "Create a visionOS app icon with two or three depth layers.",
+      "ja": "visionOS app iconを2層または3層のdepth layerで作成する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -75566,7 +75568,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The layers move at subtly different rates when the icon receives focus."
     ],
     "exceptions": [],
     "rationale": {
@@ -75576,7 +75578,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Images guidance to create a layered app icon.” in the documented Images context?"
+        "Does the design satisfy “Create a visionOS app icon with two or three depth layers.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75594,10 +75596,10 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "0d96f752daaed34164c8ee0970847f922499ae516dee6c5c63894020b8a21b8f",
-      "evidence_paraphrase": "Apply the documented Images guidance to create a layered app icon."
+      "evidence_paraphrase": "Create a visionOS app icon with two or three depth layers."
     },
     "tags": [
       "foundations",
@@ -75607,22 +75609,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Images guidance to create a layered app icon.",
+    "apple_native_rule": "Create a visionOS app icon with two or three depth layers.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0009",
-    "title": "Prefer vector-based art for 2D images",
+    "title": "Prefer vector art for visionOS 2D images",
     "category": "foundations",
     "topic": "images",
     "subtopic": "visionos",
     "statement": {
-      "en": "Favor vector-based art for 2D images when the documented conditions apply.",
-      "ja": "該当条件ではvector-based art for 2D imagesを優先する。"
+      "en": "Prefer vector-based art for 2D images in visionOS.",
+      "ja": "visionOSの2D imageにはvector-based artを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -75637,7 +75639,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "People can view visionOS images across a wide range of dynamically scaled sizes and angles."
     ],
     "exceptions": [],
     "rationale": {
@@ -75647,7 +75649,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor vector-based art for 2D images when the documented conditions apply.” in the documented Images context?"
+        "Does the design satisfy “Prefer vector-based art for 2D images in visionOS.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75665,10 +75667,10 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "5b81628d498f22f55dde31dc3f9e507de7d0ecfd2ae8f35aa37251591ad6ab7e",
-      "evidence_paraphrase": "Favor vector-based art for 2D images when the documented conditions apply."
+      "evidence_paraphrase": "Prefer vector-based art for 2D images in visionOS."
     },
     "tags": [
       "foundations",
@@ -75678,21 +75680,21 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor vector-based art for 2D images when the documented conditions apply.",
+    "apple_native_rule": "Prefer vector-based art for 2D images in visionOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0010",
-    "title": "Make sure spatial photos render correctly in your app",
+    "title": "Make sure spatial photos render correctly in visionOS",
     "category": "foundations",
     "topic": "images",
     "subtopic": "spatial-photos-and-spatial-scenes",
     "statement": {
-      "en": "Verify that spatial photos render correctly in your app.",
-      "ja": "spatial photos render correctly in your appを満たしていることを確認する。"
+      "en": "Make sure spatial photos render correctly in a visionOS app.",
+      "ja": "visionOS appでspatial photoが正しくrenderされるようにする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -75708,7 +75710,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use stereo HEIC and include spatial metadata so visionOS recognizes the photo and applies comfort treatments."
     ],
     "exceptions": [],
     "rationale": {
@@ -75718,7 +75720,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that spatial photos render correctly in your app.” in the documented Images context?"
+        "Does the design satisfy “Make sure spatial photos render correctly in a visionOS app.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75737,10 +75739,10 @@
         "visionOS",
         "Spatial photos and spatial scenes"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "dbd483934f7dea1416db8a7cc13e48f30f12b570b57ba4456696431ed8d2b305",
-      "evidence_paraphrase": "Verify that spatial photos render correctly in your app."
+      "evidence_paraphrase": "Make sure spatial photos render correctly in a visionOS app."
     },
     "tags": [
       "foundations",
@@ -75751,22 +75753,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Verify that spatial photos render correctly in your app.",
+    "apple_native_rule": "Make sure spatial photos render correctly in a visionOS app.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0011",
-    "title": "Prefer the feathered glass background effect to display text over spatial photos",
+    "title": "Prefer feathered glass behind text over spatial photos",
     "category": "foundations",
     "topic": "images",
     "subtopic": "spatial-photos-and-spatial-scenes",
     "statement": {
-      "en": "Favor the feathered glass background effect to display text over spatial photos when the documented conditions apply.",
-      "ja": "該当条件ではthe feathered glass background effect to display text over spatial photosを優先する。"
+      "en": "Prefer a feathered glass background when placing text over a spatial photo.",
+      "ja": "spatial photo上にtextを置く場合はfeathered glass backgroundを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -75781,7 +75783,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the effect to improve text contrast and blur detail that could cause viewing discomfort."
     ],
     "exceptions": [],
     "rationale": {
@@ -75791,7 +75793,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor the feathered glass background effect to display text over spatial photos when the documented conditions apply.” in the documented Images context?"
+        "Does the design satisfy “Prefer a feathered glass background when placing text over a spatial photo.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75810,10 +75812,10 @@
         "visionOS",
         "Spatial photos and spatial scenes"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "9026f90d951d798da618a3790b4445f49140950ab79993a60d8abb8504a9a4dc",
-      "evidence_paraphrase": "Favor the feathered glass background effect to display text over spatial photos when the documented conditions apply."
+      "evidence_paraphrase": "Prefer a feathered glass background when placing text over a spatial photo."
     },
     "tags": [
       "foundations",
@@ -75824,22 +75826,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor the feathered glass background effect to display text over spatial photos when the documented conditions apply.",
+    "apple_native_rule": "Prefer a feathered glass background when placing text over a spatial photo.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0012",
-    "title": "Display spatial photos and spatial scenes in standalone views",
+    "title": "Show spatial photos and scenes in standalone views",
     "category": "foundations",
     "topic": "images",
     "subtopic": "spatial-photos-and-spatial-scenes",
     "statement": {
-      "en": "Present spatial photos and spatial scenes in standalone views in the documented context.",
-      "ja": "該当する状況でspatial photos and spatial scenes in standalone viewsを表示する。"
+      "en": "Display visionOS spatial photos and spatial scenes in standalone views.",
+      "ja": "visionOSのspatial photoとspatial sceneをstandalone viewで表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -75854,7 +75856,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a separate sheet, window, or comparable standalone presentation."
     ],
     "exceptions": [],
     "rationale": {
@@ -75864,7 +75866,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present spatial photos and spatial scenes in standalone views in the documented context.” in the documented Images context?"
+        "Does the design satisfy “Display visionOS spatial photos and spatial scenes in standalone views.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75883,10 +75885,10 @@
         "visionOS",
         "Spatial photos and spatial scenes"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "5199d87dcdaebf597706100e764dbb3dac2d17d7ab4f7f042e58cfbe69c80975",
-      "evidence_paraphrase": "Present spatial photos and spatial scenes in standalone views in the documented context."
+      "evidence_paraphrase": "Display visionOS spatial photos and spatial scenes in standalone views."
     },
     "tags": [
       "foundations",
@@ -75897,22 +75899,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Present spatial photos and spatial scenes in standalone views in the documented context.",
+    "apple_native_rule": "Display visionOS spatial photos and spatial scenes in standalone views.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0013",
-    "title": "Use spatial scenes in your app for specific moments",
+    "title": "Use visionOS spatial scenes for specific moments",
     "category": "foundations",
     "topic": "images",
     "subtopic": "spatial-photos-and-spatial-scenes",
     "statement": {
-      "en": "Choose or apply spatial scenes in your app for specific moments in the documented context.",
-      "ja": "該当する状況ではspatial scenes in your app for specific momentsを採用する。"
+      "en": "Use spatial scenes in a visionOS app for specific moments.",
+      "ja": "visionOS appではspatial sceneを特定のmomentに使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -75927,7 +75929,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A scene can take several seconds to generate; design an explicit or otherwise intentional creation moment."
     ],
     "exceptions": [],
     "rationale": {
@@ -75937,7 +75939,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply spatial scenes in your app for specific moments in the documented context.” in the documented Images context?"
+        "Does the design satisfy “Use spatial scenes in a visionOS app for specific moments.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -75956,10 +75958,10 @@
         "visionOS",
         "Spatial photos and spatial scenes"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "40daea98e574f0f5757b7fefc7b3c91a625876a1dcea44356fbe80977035a241",
-      "evidence_paraphrase": "Choose or apply spatial scenes in your app for specific moments in the documented context."
+      "evidence_paraphrase": "Use spatial scenes in a visionOS app for specific moments."
     },
     "tags": [
       "foundations",
@@ -75970,22 +75972,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply spatial scenes in your app for specific moments in the documented context.",
+    "apple_native_rule": "Use spatial scenes in a visionOS app for specific moments.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0014",
-    "title": "Prefer displaying larger spatial scenes that you center in someone’s field of view",
+    "title": "Prefer large centered visionOS spatial scenes",
     "category": "foundations",
     "topic": "images",
     "subtopic": "spatial-photos-and-spatial-scenes",
     "statement": {
-      "en": "Favor displaying larger spatial scenes that you center in someone’s field of view when the documented conditions apply.",
-      "ja": "該当条件ではdisplaying larger spatial scenes that you center in someone’s field of viewを優先する。"
+      "en": "Prefer larger spatial scenes centered in the viewer’s field of view.",
+      "ja": "より大きなspatial sceneをviewerのfield of view中央に配置することを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -76000,7 +76002,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Lateral head movement reveals parallax; smaller scenes provide a weaker effect."
     ],
     "exceptions": [],
     "rationale": {
@@ -76010,7 +76012,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor displaying larger spatial scenes that you center in someone’s field of view when the documented conditions apply.” in the documented Images context?"
+        "Does the design satisfy “Prefer larger spatial scenes centered in the viewer’s field of view.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -76029,10 +76031,10 @@
         "visionOS",
         "Spatial photos and spatial scenes"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "ee1b9d21b0ccf8be16de8543c904edb2bc8b742f98c9f4c04be3fff5e3e3ca8d",
-      "evidence_paraphrase": "Favor displaying larger spatial scenes that you center in someone’s field of view when the documented conditions apply."
+      "evidence_paraphrase": "Prefer larger spatial scenes centered in the viewer’s field of view."
     },
     "tags": [
       "foundations",
@@ -76043,22 +76045,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor displaying larger spatial scenes that you center in someone’s field of view when the documented conditions apply.",
+    "apple_native_rule": "Prefer larger spatial scenes centered in the viewer’s field of view.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0015",
-    "title": "Use autoscaling PDFs to let you provide a single asset for all screen sizes",
+    "title": "Use autoscaling PDFs for watchOS image sizes",
     "category": "foundations",
     "topic": "images",
     "subtopic": "watchos",
     "statement": {
-      "en": "Choose or apply autoscaling PDFs to let you provide a single asset for all screen sizes in the documented context.",
-      "ja": "該当する状況ではautoscaling PDFs to let you provide a single asset for all screen sizesを採用する。"
+      "en": "Use autoscaling PDFs to supply one watchOS image asset for all screen sizes.",
+      "ja": "すべてのwatchOS screen sizeに1つのimage assetを提供するためautoscaling PDFを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -76073,7 +76075,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "WatchKit automatically applies the documented per-screen scaling values when it loads the PDF."
     ],
     "exceptions": [],
     "rationale": {
@@ -76083,7 +76085,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply autoscaling PDFs to let you provide a single asset for all screen sizes in the documented context.” in the documented Images context?"
+        "Does the design satisfy “Use autoscaling PDFs to supply one watchOS image asset for all screen sizes.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -76101,10 +76103,10 @@
         "Platform considerations",
         "watchOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "a7b98b3995399796e438e71ba408c41c6fcb28a06bd8aecfe049c8730487c7e1",
-      "evidence_paraphrase": "Choose or apply autoscaling PDFs to let you provide a single asset for all screen sizes in the documented context."
+      "evidence_paraphrase": "Use autoscaling PDFs to supply one watchOS image asset for all screen sizes."
     },
     "tags": [
       "foundations",
@@ -76114,22 +76116,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply autoscaling PDFs to let you provide a single asset for all screen sizes in the documented context.",
+    "apple_native_rule": "Use autoscaling PDFs to supply one watchOS image asset for all screen sizes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0016",
-    "title": "Identify logical foreground, middle, and background elements",
+    "title": "Organize tvOS layered images by visual depth",
     "category": "foundations",
     "topic": "images",
     "subtopic": "layered-images",
     "statement": {
-      "en": "Determine logical foreground, middle, and background elements explicitly.",
-      "ja": "logical foreground, middle, and background elementsを明確に特定する。"
+      "en": "Identify logical foreground, middle, and background elements in each tvOS layered image.",
+      "ja": "各tvOS layered imageでlogicalなforeground、middle、background elementを特定する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -76144,7 +76146,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A layered image uses two to five distinct layers.",
+      "Put prominent elements in front, secondary content and shadows in the middle, and an opaque backdrop behind them."
     ],
     "exceptions": [],
     "rationale": {
@@ -76154,7 +76157,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Determine logical foreground, middle, and background elements explicitly.” in the documented Images context?"
+        "Does the design satisfy “Identify logical foreground, middle, and background elements in each tvOS layered image.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -76173,10 +76176,10 @@
         "tvOS",
         "Layered images"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "83f8aa63c19b1900a439a9b58db1ab4a4c9b95ef99d5e6309accebd6194cf6a6",
-      "evidence_paraphrase": "Determine logical foreground, middle, and background elements explicitly."
+      "evidence_paraphrase": "Identify logical foreground, middle, and background elements in each tvOS layered image."
     },
     "tags": [
       "foundations",
@@ -76187,7 +76190,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Determine logical foreground, middle, and background elements explicitly.",
+    "apple_native_rule": "Identify logical foreground, middle, and background elements in each tvOS layered image.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -76217,7 +76220,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "When an image always appears on the same solid background, include that background in the image to reduce file size."
     ],
     "exceptions": [
       "Use transparency where the system requires it to apply color, including complication images, menu icons, and other template images."
@@ -76247,7 +76250,7 @@
         "Platform considerations",
         "watchOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:57.648Z",
+      "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "aaf1f53ed412fdb4e4f29f191566914678ebe07e7f14d7192f8ddf2e8781be96",
       "evidence_paraphrase": "Avoid transparency in watchOS images when a solid background can reduce file size."
@@ -76261,6 +76264,1320 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "Avoid transparency in watchOS images when a solid background can reduce file size.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0018",
+    "title": "Require layered images for the tvOS parallax effect",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "parallax-effect",
+    "statement": {
+      "en": "Use a layered image whenever a tvOS image needs the parallax effect.",
+      "ja": "tvOS画像でparallax effectが必要な場合はlayered imageを使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply when a tvOS image needs to support the system parallax effect."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a layered image whenever a tvOS image needs the parallax effect.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "tvOS",
+        "Parallax effect"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "c44e931e6faa38bdc6d3f83b57426cf671d8272e7e4dd5ee8d41f8e1f8f82475",
+      "evidence_paraphrase": "Use a layered image whenever a tvOS image needs the parallax effect."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "tvos",
+      "parallax-effect"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use a layered image whenever a tvOS image needs the parallax effect.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0019",
+    "title": "Use a layered image for every tvOS app icon",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "layered-images",
+    "statement": {
+      "en": "Use a layered image for every tvOS app icon.",
+      "ja": "すべてのtvOS app iconにlayered imageを使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply to the tvOS app icon, not every other focusable image."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a layered image for every tvOS app icon.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "tvOS",
+        "Layered images"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "d748744f09a825629c69bc41a1734788e5ee4202384b319d66a00077828ad75d",
+      "evidence_paraphrase": "Use a layered image for every tvOS app icon."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "tvos",
+      "layered-images"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use a layered image for every tvOS app icon.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0020",
+    "title": "Use layered images for other focusable tvOS content when practical",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "layered-images",
+    "statement": {
+      "en": "Use layered images for other focusable tvOS content when practical.",
+      "ja": "他のfocusable tvOS contentにも実用的な範囲でlayered imageを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The recommendation includes Top Shelf images."
+    ],
+    "exceptions": [
+      "Layering is optional for focusable images other than the tvOS app icon."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use layered images for other focusable tvOS content when practical.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "tvOS",
+        "Layered images"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "e8833bd80f20bc27f3c548b6aafcdadd981e332c0e28bcce14f7cc479b493787",
+      "evidence_paraphrase": "Use layered images for other focusable tvOS content when practical."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "tvos",
+      "layered-images"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use layered images for other focusable tvOS content when practical.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0021",
+    "title": "Choose embedded or runtime tvOS layered images",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "layered-images",
+    "statement": {
+      "en": "Choose either embedded tvOS layered images or images retrieved from a content server at runtime.",
+      "ja": "tvOS layered imageはembeddedまたはruntimeのcontent server取得から選ぶ。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Both delivery approaches are supported; runtime retrieval has separate file-format constraints."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose either embedded tvOS layered images or images retrieved from a content server at runtime.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "tvOS",
+        "Layered images"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "9fa41de4da4ec0d5d3013e4be4d1ff721c1fd34e8b8c6c686c5bcebb560ed2b8",
+      "evidence_paraphrase": "Choose either embedded tvOS layered images or images retrieved from a content server at runtime."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "tvos",
+      "layered-images"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose either embedded tvOS layered images or images retrieved from a content server at runtime.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0022",
+    "title": "Provide runtime layered images for server-retrieved tvOS content",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "layered-images",
+    "statement": {
+      "en": "Provide .lcr runtime layered images when a tvOS app retrieves layered images from a server.",
+      "ja": "tvOS appがserverからlayered imageを取得する場合は.lcr runtime layered imageを提供する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app retrieves layered images from a content server at runtime.",
+      "Generate .lcr files from LSR or Photoshop files with Xcode’s layerutil tool when needed."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide .lcr runtime layered images when a tvOS app retrieves layered images from a server.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "tvOS",
+        "Layered images"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "b9860c555458f00e1ec3b3e23fde47cafda77a659ea5e3dfd2e629221e9e3c53",
+      "evidence_paraphrase": "Provide .lcr runtime layered images when a tvOS app retrieves layered images from a server."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "tvos",
+      "layered-images"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Provide .lcr runtime layered images when a tvOS app retrieves layered images from a server.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0023",
+    "title": "Avoid embedding runtime tvOS layered images",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "layered-images",
+    "statement": {
+      "en": "Avoid embedding runtime layered images in a tvOS app.",
+      "ja": "runtime layered imageをtvOS appへembedしない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Runtime layered images are intended for download."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid embedding runtime layered images in a tvOS app.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "tvOS",
+        "Layered images"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "b42b0c372f6f5d9504b7a88e9881ef11a79f2b50630b038fd3db7732d0631ada",
+      "evidence_paraphrase": "Avoid embedding runtime layered images in a tvOS app."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "tvos",
+      "layered-images"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid embedding runtime layered images in a tvOS app.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0024",
+    "title": "Keep tvOS layered-image text in front",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "layered-images",
+    "statement": {
+      "en": "Generally keep text in the foreground of a tvOS layered image.",
+      "ja": "tvOS layered imageのtextは原則としてforegroundに置く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Foreground placement preserves clarity."
+    ],
+    "exceptions": [
+      "Place text elsewhere only when intentionally obscuring it is appropriate."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Generally keep text in the foreground of a tvOS layered image.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "tvOS",
+        "Layered images"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "5bf6bb67eded82bca9a8b84a7d77b6a1f2514ffcc7cb000a536d70cc44a0488a",
+      "evidence_paraphrase": "Generally keep text in the foreground of a tvOS layered image."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "tvos",
+      "layered-images"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Generally keep text in the foreground of a tvOS layered image.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0025",
+    "title": "Keep essential tvOS image content inside a safe zone",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "layered-images",
+    "statement": {
+      "en": "Keep essential content within a safe zone around the foreground layers of a tvOS image.",
+      "ja": "tvOS imageのessential contentをforeground layer周囲のsafe zone内に保つ。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Focus scaling and movement can crop content on some layers."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep essential content within a safe zone around the foreground layers of a tvOS image.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "tvOS",
+        "Layered images"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "0dbe7b335f55de64e6a7bef3182d5fd0f106d5e8e2d9fd0dc756b9e115679fe7",
+      "evidence_paraphrase": "Keep essential content within a safe zone around the foreground layers of a tvOS image."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "tvos",
+      "layered-images"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Keep essential content within a safe zone around the foreground layers of a tvOS image.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0026",
+    "title": "Avoid bitmap art for visionOS 2D images",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Avoid bitmap art for 2D images in visionOS.",
+      "ja": "visionOSの2D imageではbitmap artを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Bitmap content may degrade when the system scales it up."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid bitmap art for 2D images in visionOS.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "ee4f60009074908027b0de7d981f7022e287a45c20094dafa4a1a1015c4c5c94",
+      "evidence_paraphrase": "Avoid bitmap art for 2D images in visionOS."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid bitmap art for 2D images in visionOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0027",
+    "title": "Balance visionOS raster quality with performance",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Balance rasterized visionOS image quality with performance when choosing a resolution.",
+      "ja": "visionOS raster imageのresolution選択ではqualityとperformanceを両立する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "A fixed @2x image can look acceptable at common distances but soft at close range.",
+      "Higher resolutions increase file size and runtime cost, especially above @6x."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Balance rasterized visionOS image quality with performance when choosing a resolution.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "48641f4036ff9c04bebac09066a56ef5d261edb78c8362c6d2b558c3e9ff6e36",
+      "evidence_paraphrase": "Balance rasterized visionOS image quality with performance when choosing a resolution."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Balance rasterized visionOS image quality with performance when choosing a resolution.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0028",
+    "title": "Apply high-quality filtering above @2x in visionOS",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Apply high-quality image filtering to visionOS images with resolutions above @2x.",
+      "ja": "@2xを超えるvisionOS画像にhigh-quality image filteringを適用する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The rasterized visionOS image has a resolution higher than @2x."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply high-quality image filtering to visionOS images with resolutions above @2x.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "68b88b67cfeb4332d298bbeb66c44b849f771bfd96c0d6b51045c98e1896f42c",
+      "evidence_paraphrase": "Apply high-quality image filtering to visionOS images with resolutions above @2x."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Apply high-quality image filtering to visionOS images with resolutions above @2x.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0029",
+    "title": "Design spatial-photo metadata for visual comfort",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "spatial-photos-and-spatial-scenes",
+    "statement": {
+      "en": "Account for visual comfort when creating spatial photos from existing 2D content.",
+      "ja": "既存2D contentからspatial photoを作る際はvisual comfortを考慮する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Disparity and other spatial metadata can change scene perception and cause discomfort from some viewing positions."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Account for visual comfort when creating spatial photos from existing 2D content.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS",
+        "Spatial photos and spatial scenes"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "9410ae4074555e9c61a7fbf6b4a66789bf9cc9acec07333882856b58fc1bba7f",
+      "evidence_paraphrase": "Account for visual comfort when creating spatial photos from existing 2D content."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos",
+      "spatial-photos-and-spatial-scenes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Account for visual comfort when creating spatial photos from existing 2D content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0030",
+    "title": "Avoid inline visionOS spatial photos",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "spatial-photos-and-spatial-scenes",
+    "statement": {
+      "en": "Avoid displaying visionOS spatial photos inline with other content.",
+      "ja": "visionOS spatial photoを他のcontentとinline表示しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Inline depth changes can cause visual discomfort."
+    ],
+    "exceptions": [
+      "Use a standalone sheet or window by default; unavoidable inline stereoscopic images have a separate spacing rule."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid displaying visionOS spatial photos inline with other content.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS",
+        "Spatial photos and spatial scenes"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "e900234dd6158edb8062c7c31f6b6f80bb7e666192fe22a9a02bae94decf7c4a",
+      "evidence_paraphrase": "Avoid displaying visionOS spatial photos inline with other content."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos",
+      "spatial-photos-and-spatial-scenes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid displaying visionOS spatial photos inline with other content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0031",
+    "title": "Space unavoidable inline stereoscopic images generously",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "spatial-photos-and-spatial-scenes",
+    "statement": {
+      "en": "Provide generous spacing around a stereoscopic image when it must appear inline.",
+      "ja": "stereoscopic imageをinline表示せざるを得ない場合は周囲に十分なspacingを設ける。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Inline stereoscopic presentation is unavoidable; spacing helps people’s eyes adjust to depth changes."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide generous spacing around a stereoscopic image when it must appear inline.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS",
+        "Spatial photos and spatial scenes"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "f1d6b2e393a1c8114ba132dc22ef52a2d3fa10d0ef6d8fc4b73c498887e1ebe0",
+      "evidence_paraphrase": "Provide generous spacing around a stereoscopic image when it must appear inline."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos",
+      "spatial-photos-and-spatial-scenes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Provide generous spacing around a stereoscopic image when it must appear inline.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0032",
+    "title": "Avoid showing too many spatial scenes at once",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "spatial-photos-and-spatial-scenes",
+    "statement": {
+      "en": "Avoid displaying too many visionOS spatial scenes at once.",
+      "ja": "visionOS spatial sceneを一度に過剰表示しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep the visual information hierarchy simple and account for scene-generation time."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid displaying too many visionOS spatial scenes at once.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS",
+        "Spatial photos and spatial scenes"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "7b0a44862a183ee2b9a59b5b72a981948b15c31d23a73ede27133a55ec093e48",
+      "evidence_paraphrase": "Avoid displaying too many visionOS spatial scenes at once."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos",
+      "spatial-photos-and-spatial-scenes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid displaying too many visionOS spatial scenes at once.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0033",
+    "title": "Move between spatial scenes with explicit navigation",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "spatial-photos-and-spatial-scenes",
+    "statement": {
+      "en": "Use scroll views, pagination, or explicit actions to move between visionOS spatial scenes.",
+      "ja": "visionOS spatial scene間の移動にはscroll view、pagination、またはexplicit actionを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use an alternative that keeps the visual information hierarchy simple."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use scroll views, pagination, or explicit actions to move between visionOS spatial scenes.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS",
+        "Spatial photos and spatial scenes"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "1606375f3063a8f2e6f1307e5a97193131eb8f65015f41bd971f3c303c854852",
+      "evidence_paraphrase": "Use scroll views, pagination, or explicit actions to move between visionOS spatial scenes."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos",
+      "spatial-photos-and-spatial-scenes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use scroll views, pagination, or explicit actions to move between visionOS spatial scenes.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0034",
+    "title": "Prefer minimal UI for immersive spatial-image viewing",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "spatial-photos-and-spatial-scenes",
+    "statement": {
+      "en": "Prefer minimal UI when displaying spatial images immersively in visionOS.",
+      "ja": "visionOSでspatial imageをimmersive表示する場合はminimal UIを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep controls and captions limited to what the immersive viewing task needs."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prefer minimal UI when displaying spatial images immersively in visionOS.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "visionOS",
+        "Spatial photos and spatial scenes"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "d57e0c5857c224eb4503976297f85b31c35aa8f1e17a4eb7859e39d9717a6900",
+      "evidence_paraphrase": "Prefer minimal UI when displaying spatial images immersively in visionOS."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "visionos",
+      "spatial-photos-and-spatial-scenes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Prefer minimal UI when displaying spatial images immersively in visionOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0035",
+    "title": "Design watchOS autoscaling PDF assets at 2x",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "Design watchOS autoscaling PDF images for 40 mm and 42 mm screens at 2x.",
+      "ja": "watchOS autoscaling PDF imageを40mmおよび42mm screen向けに2xでdesignする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "WatchKit scales the base asset to 90% at 38 mm, 100% at 40 mm and 42 mm, 106% at 41 mm, 110% at 44 mm, and 119% at 45 mm and 49 mm."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Design watchOS autoscaling PDF images for 40 mm and 42 mm screens at 2x.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "6ff14ecff2f6e047162573c894aff5dd94cd8563c0b66a916ca290e9cf563786",
+      "evidence_paraphrase": "Design watchOS autoscaling PDF images for 40 mm and 42 mm screens at 2x."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Design watchOS autoscaling PDF images for 40 mm and 42 mm screens at 2x.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

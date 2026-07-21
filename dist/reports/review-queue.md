@@ -1,14 +1,14 @@
 # Human source-review queue
 
-- Remaining rules: 1002
+- Remaining rules: 991
 - Next priority: 4 (platform-specific-hig)
-- Next batch: 11
+- Next batch: 7
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 158
+- 4 (platform-specific-hig): 147
 - 5 (input-and-device-constraints): 28
 - 6 (apple-platform-common): 793
 - 7 (universal-design-principles): 23
@@ -17,18 +17,14 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 - AVOID: 115
 - MAY: 120
-- SHOULD: 767
+- SHOULD: 756
 
 ## Next batch
 
-- HIG-FOUNDATIONS-IMAGES-0004 · SHOULD — Use standard interface elements to display layered images · Images > Platform considerations > tvOS > Layered images ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0005 · SHOULD — Keep the background layer opaque · Images > Platform considerations > tvOS > Layered images ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0006 · SHOULD — Keep layering simple and subtle · Images > Platform considerations > tvOS > Layered images ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0008 · SHOULD — Create a layered app icon · Images > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0009 · SHOULD — Prefer vector-based art for 2D images · Images > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0011 · SHOULD — Prefer the feathered glass background effect to display text over spatial photos · Images > Platform considerations > visionOS > Spatial photos and spatial scenes ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0012 · SHOULD — Display spatial photos and spatial scenes in standalone views · Images > Platform considerations > visionOS > Spatial photos and spatial scenes ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0013 · SHOULD — Use spatial scenes in your app for specific moments · Images > Platform considerations > visionOS > Spatial photos and spatial scenes ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0014 · SHOULD — Prefer displaying larger spatial scenes that you center in someone’s field of view · Images > Platform considerations > visionOS > Spatial photos and spatial scenes ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0015 · SHOULD — Use autoscaling PDFs to let you provide a single asset for all screen sizes · Images > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- HIG-FOUNDATIONS-IMAGES-0016 · SHOULD — Identify logical foreground, middle, and background elements · Images > Platform considerations > tvOS > Layered images ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-MATERIALS-0006 · SHOULD — Choose when to allow vibrancy in custom views and controls · Materials > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0007 · SHOULD — Choose a background blending mode that complements your interface design · Materials > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0008 · SHOULD — Prefer translucency to opaque colors in windows · Materials > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0009 · SHOULD — Use materials to provide context in a full-screen modal view · Materials > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0010 · SHOULD — Use UIVibrancyEffectStyle.label for standard text · Materials > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0011 · SHOULD — Use UIVibrancyEffectStyle.secondaryLabel for descriptive text like footnotes and subtitles · Materials > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0012 · SHOULD — Use UIVibrancyEffectStyle.tertiaryLabel for inactive elements, and only when text doesn’t need high legibility · Materials > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/materials))

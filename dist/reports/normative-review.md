@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 231
-- Retained MUST: 210
+- Reviewed rules: 236
+- Retained MUST: 215
 - Retained MUST_NOT: 21
-- Normative level changes: 17
+- Normative level changes: 19
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:45:56Z
+- Reviewed at: 2026-07-21T19:05:04Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -67,6 +67,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-WINDOWS-0008 — Retained MUST after confirming the explicit Make sure lead and state-dependent appearance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0022 — Recovered and retained the explicit You must requirement from the official iPadOS Tip. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0035 — Retained MUST after confirming the explicit Always directive under the Assistive Access guidelines and restored its applicability conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
+- HIG-FOUNDATIONS-IMAGES-0005 — Changed SHOULD to MUST after confirming the supporting must-be-opaque platform constraint and the error produced by a nonopaque background. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0018 — Recovered MUST from the explicit required-to-support platform constraint and limited it to images that need parallax. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0019 — Retained MUST from the explicit app-icon must-use directive without extending it to optional focusable images. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0022 — Retained MUST from the explicit conditional you-must-provide directive and preserved the runtime server-retrieval scope. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0028 — Retained MUST after confirming the conditional Be sure directive and its above-@2x threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029 — Recovered and retained the explicit Make sure directive from the visual-comfort supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0030 — Recovered and retained the explicit You must permission requirement and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0031 — Recovered and retained the explicit Make sure directive while preserving the two distinct exit outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
@@ -261,8 +266,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-DARK-MODE-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-DARK-MODE-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-IMAGES-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0005 · MUST · retained_with_atomicity_or_scope_correction — Changed SHOULD to MUST after confirming the supporting must-be-opaque platform constraint and the error produced by a nonopaque background. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0010 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit required-to-support platform constraint and limited it to images that need parallax. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0019 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit app-icon must-use directive without extending it to optional focusable images. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0022 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit conditional you-must-provide directive and preserved the runtime server-retrieval scope. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0028 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Be sure directive and its above-@2x threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive from the visual-comfort supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit You must permission requirement and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive while preserving the two distinct exit outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))

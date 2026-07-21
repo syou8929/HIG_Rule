@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1284
-- Reviewed batches: 81
+- Reviewed rules: 1315
+- Reviewed batches: 82
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:55:58Z
+- Reviewed at: 2026-07-21T19:05:04Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -692,7 +692,38 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-ICONS-0011 · high — Recorded the 10% margin, 80% occupancy, numeric example, and optical-alignment exception. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0012 · high — Restored the truncated condition and recorded every center-image size. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0014 · high — Recovered the omitted Specify lead and recorded the extension, scaling, and capitalization behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-IMAGES-0004 · high — Recorded the standard-view and system-focus mechanism that supplies automatic parallax. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0005 · high — Recorded the higher-layer allowance and the explicit opaque-background requirement and failure mode. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0006 · high — Recorded the intended subtlety and the excessive-depth anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0007 · high — Preserved the unqualified Always directive and recorded both iterative and final-device previews. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0008 · high — Recorded the two-to-three-layer structure and subtle focus motion. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0009 · high — Recorded the dynamic scale range and separated the bitmap anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0010 · high — Preserved the explicit Make sure directive and recorded the stereo-HEIC and spatial-metadata requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0011 · high — Recorded both the readability and visual-comfort purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0012 · high — Recorded the standalone presentation and separated inline avoidance and fallback spacing. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0013 · high — Recorded the generation delay and intentional-use constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0014 · high — Recorded the centered scale preference and its parallax rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0015 · high — Recorded the single-asset outcome and separated base-asset sizing into its own rule. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0016 · high — Recorded the two-to-five-layer definition and each depth role without promoting descriptive prose to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0017 · high — Recovered the qualified AVOID lead without losing the template-image transparency exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0018 · high — Recovered the explicit required-to-support relationship as a platform-scoped MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0019 · high — Recovered the app-icon MUST and kept the optional focusable-image recommendation separate. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0020 · high — Preserved the strongly-encouraged recommendation and its explicit optionality. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0021 · high — Recorded the two supported delivery options as MAY rather than a recommendation to use both. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0022 · high — Recovered the conditional runtime-format MUST and recorded the documented generation path. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0023 · high — Kept the direct don’t directive at AVOID under the normative policy; it is not an explicit must-not or never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0024 · high — Recovered the foreground-text recommendation with its intentional-obscuring exception. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0025 · high — Recovered the safe-zone rule and recorded focus-driven scaling and cropping. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0026 · high — Separated the bitmap anti-pattern from the positive vector-art preference. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0027 · high — Recovered the conditional raster fallback and recorded both distance and performance tradeoffs. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0028 · high — Recovered the conditional Be sure filtering requirement and its exact threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0029 · high — Recovered the visual-comfort rule and recorded the viewing-position and disparity risks. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0030 · high — Separated the inline anti-pattern from the standalone recommendation and conditional spacing fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0031 · high — Preserved the conditional fallback as SHOULD; the source’s if-you-must wording does not make inline display a MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0032 · high — Recovered the simultaneous-scene anti-pattern and its hierarchy constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0033 · high — Recovered the three documented navigation alternatives as one choice-set rule. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0034 · high — Recovered the immersive minimal-UI preference without turning the example layout into a fixed requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0035 · high — Recovered the base-asset sizing action and preserved every value in the watchOS scaling table. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0001 · high — Recorded the attention purpose, supported spaces, and default or custom tint behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0002 · high — Recorded the Full Space scope, absent boundary, and automatic physical-object response. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0003 · high — Recorded partial replacement, orientation, adjustable range, and movement-boundary context. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:45:56Z",
+  "reviewed_at": "2026-07-21T19:05:04Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 231,
+  "reviewed_rule_count": 236,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -1560,6 +1560,73 @@
       "review_required": false,
       "conditions": ["An immersive visionOS experience needs to show an object moving in peripheral vision."],
       "review_note": "Recovered and retained the explicit Make sure directive within its peripheral-motion exception."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0005": {
+      "title": "Keep every tvOS layered-image background opaque",
+      "statement": {
+        "en": "Keep the background layer of every tvOS layered image opaque.",
+        "ja": "すべてのtvOS layered imageでbackground layerをopaqueに保つ。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Higher layers may use varying opacity, but the background layer must remain opaque."
+      ],
+      "review_note": "Changed SHOULD to MUST after confirming the supporting must-be-opaque platform constraint and the error produced by a nonopaque background."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0018": {
+      "title": "Require layered images for the tvOS parallax effect",
+      "statement": {
+        "en": "Use a layered image whenever a tvOS image needs the parallax effect.",
+        "ja": "tvOS画像でparallax effectが必要な場合はlayered imageを使う。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply when an image needs to support the system parallax effect."
+      ],
+      "review_note": "Recovered MUST from the explicit required-to-support platform constraint and limited it to images that need parallax."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0019": {
+      "title": "Use a layered image for every tvOS app icon",
+      "statement": {
+        "en": "Use a layered image for every tvOS app icon.",
+        "ja": "すべてのtvOS app iconにlayered imageを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "This requirement applies to the app icon; other focusable images are recommended separately."
+      ],
+      "review_note": "Retained MUST from the explicit app-icon must-use directive without extending it to optional focusable images."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0022": {
+      "title": "Provide runtime layered images for server-retrieved tvOS content",
+      "statement": {
+        "en": "Provide .lcr runtime layered images when a tvOS app retrieves layered images from a server.",
+        "ja": "tvOS appがserverからlayered imageを取得する場合は.lcr runtime layered imageを提供する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The tvOS app retrieves layered images from a content server at runtime."
+      ],
+      "review_note": "Retained MUST from the explicit conditional you-must-provide directive and preserved the runtime server-retrieval scope."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0028": {
+      "title": "Apply high-quality filtering above @2x in visionOS",
+      "statement": {
+        "en": "Apply high-quality image filtering to visionOS images with resolutions above @2x.",
+        "ja": "@2xを超えるvisionOS画像にhigh-quality image filteringを適用する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The visionOS rasterized image has a resolution higher than @2x."
+      ],
+      "review_note": "Retained MUST after confirming the conditional Be sure directive and its above-@2x threshold."
     },
     "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004": {
       "title": "Use depth only when it adds value",

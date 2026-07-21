@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:55:58Z",
+  "reviewed_at": "2026-07-21T19:05:04Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2272,6 +2272,25 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode", "source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160"}],
       "rule_ids": ["HIG-FOUNDATIONS-DARK-MODE-0010", "HIG-FOUNDATIONS-DARK-MODE-0011", "HIG-FOUNDATIONS-DARK-MODE-0012"],
       "review_note": "Completed the priority-4 Dark Mode platform sections; retained both existing IDs, recovered the colored-state transparency AVOID, and introduced no unsupported MUST rules."
+    },
+    {
+      "id": "priority-4-images-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:05:04Z",
+      "review_method": "Rendered Apple HIG Images platform considerations for tvOS, visionOS, and watchOS plus their supporting prose and watchOS scaling table were reviewed; two repeated live renders matched the recorded main-content hash. Common Images guidance remains queued for later review.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/images", "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0"}],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-IMAGES-0004", "HIG-FOUNDATIONS-IMAGES-0005", "HIG-FOUNDATIONS-IMAGES-0006", "HIG-FOUNDATIONS-IMAGES-0007",
+        "HIG-FOUNDATIONS-IMAGES-0008", "HIG-FOUNDATIONS-IMAGES-0009", "HIG-FOUNDATIONS-IMAGES-0010", "HIG-FOUNDATIONS-IMAGES-0011",
+        "HIG-FOUNDATIONS-IMAGES-0012", "HIG-FOUNDATIONS-IMAGES-0013", "HIG-FOUNDATIONS-IMAGES-0014", "HIG-FOUNDATIONS-IMAGES-0015",
+        "HIG-FOUNDATIONS-IMAGES-0016", "HIG-FOUNDATIONS-IMAGES-0018", "HIG-FOUNDATIONS-IMAGES-0019", "HIG-FOUNDATIONS-IMAGES-0020",
+        "HIG-FOUNDATIONS-IMAGES-0021", "HIG-FOUNDATIONS-IMAGES-0022", "HIG-FOUNDATIONS-IMAGES-0023", "HIG-FOUNDATIONS-IMAGES-0024",
+        "HIG-FOUNDATIONS-IMAGES-0025", "HIG-FOUNDATIONS-IMAGES-0026", "HIG-FOUNDATIONS-IMAGES-0027", "HIG-FOUNDATIONS-IMAGES-0028",
+        "HIG-FOUNDATIONS-IMAGES-0029", "HIG-FOUNDATIONS-IMAGES-0030", "HIG-FOUNDATIONS-IMAGES-0031", "HIG-FOUNDATIONS-IMAGES-0032",
+        "HIG-FOUNDATIONS-IMAGES-0033", "HIG-FOUNDATIONS-IMAGES-0034", "HIG-FOUNDATIONS-IMAGES-0035"
+      ],
+      "review_note": "Completed the priority-4 Images platform sections; preserved all existing IDs, recovered eighteen atomic rules and five source-supported MUST decisions, kept direct don't guidance at AVOID, and recorded the watchOS scaling table without promoting descriptive prose. Rule 0017 remains covered by its earlier watchOS batch."
     }
   ],
   "rules": {
@@ -3882,6 +3901,217 @@
       "statement": {"en": "Avoid transparency in a custom macOS component background when the state uses color.", "ja": "stateがcolorを使う場合はcustom macOS component backgroundのtransparencyを避ける。"},
       "conditions": ["Desktop tinting could otherwise make the component color fluctuate as the desktop context changes."],
       "review_note": "Recovered the colored-state transparency warning as AVOID, not MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0004": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "9c5f631c8f91ac7c703d0a97b0e2f38752dcccc5344072e713838a86f7618a4b", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Use standard tvOS interface elements for layered images",
+      "statement": {"en": "Use standard tvOS views and system focus APIs to display layered images.", "ja": "layered imageの表示にはstandard tvOS viewとsystem focus APIを使う。"},
+      "conditions": ["Standard views and focus APIs such as FocusState automatically apply parallax when the image receives focus."],
+      "review_note": "Recorded the standard-view and system-focus mechanism that supplies automatic parallax."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0005": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "17f16bb1a14a38252d10c635d06b19b452aa8738b5912d2e5346065c25ff7651", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "conditions": ["Higher layers may use varying opacity, but the background layer must remain opaque.", "A nonopaque background produces an error and can compromise parallax, drop shadows, and system backgrounds."],
+      "review_note": "Recorded the higher-layer allowance and the explicit opaque-background requirement and failure mode."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0006": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "7b1ab014b695c557ec9bdd65646fde54636eb8df7f600e2d84f5b0bec29b3e93", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Keep tvOS image layering simple and subtle",
+      "statement": {"en": "Keep tvOS layered-image depth simple and subtle.", "ja": "tvOS layered imageのdepthをsimpleかつsubtleに保つ。"},
+      "conditions": ["Parallax should be nearly unnoticeable; excessive 3D effects can feel unrealistic or jarring."],
+      "review_note": "Recorded the intended subtlety and the excessive-depth anti-pattern."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0007": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "adc92d0b5d20dbbaeed297b77da3b796b7a0c6d57d5427c6eeabf22ed825ad36", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Always preview tvOS layered images",
+      "statement": {"en": "Always preview tvOS layered images throughout the design process.", "ja": "tvOS layered imageをdesign process全体で必ずpreviewする。"},
+      "conditions": ["Inspect scaling and clipping and readjust essential content as needed.", "After finalizing the image, preview it on an actual TV for the most accurate result."],
+      "review_note": "Preserved the unqualified Always directive and recorded both iterative and final-device previews."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0008": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "0d96f752daaed34164c8ee0970847f922499ae516dee6c5c63894020b8a21b8f", "section_path": ["Images", "Platform considerations", "visionOS"]},
+      "title": "Create a layered visionOS app icon",
+      "statement": {"en": "Create a visionOS app icon with two or three depth layers.", "ja": "visionOS app iconを2層または3層のdepth layerで作成する。"},
+      "conditions": ["The layers move at subtly different rates when the icon receives focus."],
+      "review_note": "Recorded the two-to-three-layer structure and subtle focus motion."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0009": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "5b81628d498f22f55dde31dc3f9e507de7d0ecfd2ae8f35aa37251591ad6ab7e", "section_path": ["Images", "Platform considerations", "visionOS"]},
+      "title": "Prefer vector art for visionOS 2D images",
+      "statement": {"en": "Prefer vector-based art for 2D images in visionOS.", "ja": "visionOSの2D imageにはvector-based artを優先する。"},
+      "conditions": ["People can view visionOS images across a wide range of dynamically scaled sizes and angles."],
+      "review_note": "Recorded the dynamic scale range and separated the bitmap anti-pattern."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0010": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "dbd483934f7dea1416db8a7cc13e48f30f12b570b57ba4456696431ed8d2b305", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Make sure spatial photos render correctly in visionOS",
+      "statement": {"en": "Make sure spatial photos render correctly in a visionOS app.", "ja": "visionOS appでspatial photoが正しくrenderされるようにする。"},
+      "conditions": ["Use stereo HEIC and include spatial metadata so visionOS recognizes the photo and applies comfort treatments."],
+      "review_note": "Preserved the explicit Make sure directive and recorded the stereo-HEIC and spatial-metadata requirements."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0011": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "9026f90d951d798da618a3790b4445f49140950ab79993a60d8abb8504a9a4dc", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Prefer feathered glass behind text over spatial photos",
+      "statement": {"en": "Prefer a feathered glass background when placing text over a spatial photo.", "ja": "spatial photo上にtextを置く場合はfeathered glass backgroundを優先する。"},
+      "conditions": ["Use the effect to improve text contrast and blur detail that could cause viewing discomfort."],
+      "review_note": "Recorded both the readability and visual-comfort purposes."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0012": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "5199d87dcdaebf597706100e764dbb3dac2d17d7ab4f7f042e58cfbe69c80975", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Show spatial photos and scenes in standalone views",
+      "statement": {"en": "Display visionOS spatial photos and spatial scenes in standalone views.", "ja": "visionOSのspatial photoとspatial sceneをstandalone viewで表示する。"},
+      "conditions": ["Use a separate sheet, window, or comparable standalone presentation."],
+      "review_note": "Recorded the standalone presentation and separated inline avoidance and fallback spacing."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0013": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "40daea98e574f0f5757b7fefc7b3c91a625876a1dcea44356fbe80977035a241", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Use visionOS spatial scenes for specific moments",
+      "statement": {"en": "Use spatial scenes in a visionOS app for specific moments.", "ja": "visionOS appではspatial sceneを特定のmomentに使う。"},
+      "conditions": ["A scene can take several seconds to generate; design an explicit or otherwise intentional creation moment."],
+      "review_note": "Recorded the generation delay and intentional-use constraint."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0014": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "ee1b9d21b0ccf8be16de8543c904edb2bc8b742f98c9f4c04be3fff5e3e3ca8d", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Prefer large centered visionOS spatial scenes",
+      "statement": {"en": "Prefer larger spatial scenes centered in the viewer’s field of view.", "ja": "より大きなspatial sceneをviewerのfield of view中央に配置することを優先する。"},
+      "conditions": ["Lateral head movement reveals parallax; smaller scenes provide a weaker effect."],
+      "review_note": "Recorded the centered scale preference and its parallax rationale."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0015": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "a7b98b3995399796e438e71ba408c41c6fcb28a06bd8aecfe049c8730487c7e1", "section_path": ["Images", "Platform considerations", "watchOS"]},
+      "title": "Use autoscaling PDFs for watchOS image sizes",
+      "statement": {"en": "Use autoscaling PDFs to supply one watchOS image asset for all screen sizes.", "ja": "すべてのwatchOS screen sizeに1つのimage assetを提供するためautoscaling PDFを使う。"},
+      "conditions": ["WatchKit automatically applies the documented per-screen scaling values when it loads the PDF."],
+      "review_note": "Recorded the single-asset outcome and separated base-asset sizing into its own rule."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0016": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "83f8aa63c19b1900a439a9b58db1ab4a4c9b95ef99d5e6309accebd6194cf6a6", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Organize tvOS layered images by visual depth",
+      "statement": {"en": "Identify logical foreground, middle, and background elements in each tvOS layered image.", "ja": "各tvOS layered imageでlogicalなforeground、middle、background elementを特定する。"},
+      "conditions": ["A layered image uses two to five distinct layers.", "Put prominent elements in front, secondary content and shadows in the middle, and an opaque backdrop behind them."],
+      "review_note": "Recorded the two-to-five-layer definition and each depth role without promoting descriptive prose to MUST."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0018": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "c44e931e6faa38bdc6d3f83b57426cf671d8272e7e4dd5ee8d41f8e1f8f82475", "section_path": ["Images", "Platform considerations", "tvOS", "Parallax effect"]},
+      "conditions": ["Apply when a tvOS image needs to support the system parallax effect."],
+      "review_note": "Recovered the explicit required-to-support relationship as a platform-scoped MUST."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0019": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "d748744f09a825629c69bc41a1734788e5ee4202384b319d66a00077828ad75d", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "conditions": ["Apply to the tvOS app icon, not every other focusable image."],
+      "review_note": "Recovered the app-icon MUST and kept the optional focusable-image recommendation separate."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0020": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "e8833bd80f20bc27f3c548b6aafcdadd981e332c0e28bcce14f7cc479b493787", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Use layered images for other focusable tvOS content when practical",
+      "statement": {"en": "Use layered images for other focusable tvOS content when practical.", "ja": "他のfocusable tvOS contentにも実用的な範囲でlayered imageを使う。"},
+      "conditions": ["The recommendation includes Top Shelf images."],
+      "exceptions": ["Layering is optional for focusable images other than the tvOS app icon."],
+      "review_note": "Preserved the strongly-encouraged recommendation and its explicit optionality."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0021": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "9fa41de4da4ec0d5d3013e4be4d1ff721c1fd34e8b8c6c686c5bcebb560ed2b8", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Choose embedded or runtime tvOS layered images",
+      "statement": {"en": "Choose either embedded tvOS layered images or images retrieved from a content server at runtime.", "ja": "tvOS layered imageはembeddedまたはruntimeのcontent server取得から選ぶ。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "conditions": ["Both delivery approaches are supported; runtime retrieval has separate file-format constraints."],
+      "review_note": "Recorded the two supported delivery options as MAY rather than a recommendation to use both."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0022": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "b9860c555458f00e1ec3b3e23fde47cafda77a659ea5e3dfd2e629221e9e3c53", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "conditions": ["The app retrieves layered images from a content server at runtime.", "Generate .lcr files from LSR or Photoshop files with Xcode’s layerutil tool when needed."],
+      "review_note": "Recovered the conditional runtime-format MUST and recorded the documented generation path."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0023": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "b42b0c372f6f5d9504b7a88e9881ef11a79f2b50630b038fd3db7732d0631ada", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Avoid embedding runtime tvOS layered images",
+      "statement": {"en": "Avoid embedding runtime layered images in a tvOS app.", "ja": "runtime layered imageをtvOS appへembedしない。"},
+      "conditions": ["Runtime layered images are intended for download."],
+      "review_note": "Kept the direct don’t directive at AVOID under the normative policy; it is not an explicit must-not or never prohibition."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0024": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "5bf6bb67eded82bca9a8b84a7d77b6a1f2514ffcc7cb000a536d70cc44a0488a", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Keep tvOS layered-image text in front",
+      "statement": {"en": "Generally keep text in the foreground of a tvOS layered image.", "ja": "tvOS layered imageのtextは原則としてforegroundに置く。"},
+      "conditions": ["Foreground placement preserves clarity."],
+      "exceptions": ["Place text elsewhere only when intentionally obscuring it is appropriate."],
+      "review_note": "Recovered the foreground-text recommendation with its intentional-obscuring exception."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0025": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "0dbe7b335f55de64e6a7bef3182d5fd0f106d5e8e2d9fd0dc756b9e115679fe7", "section_path": ["Images", "Platform considerations", "tvOS", "Layered images"]},
+      "title": "Keep essential tvOS image content inside a safe zone",
+      "statement": {"en": "Keep essential content within a safe zone around the foreground layers of a tvOS image.", "ja": "tvOS imageのessential contentをforeground layer周囲のsafe zone内に保つ。"},
+      "conditions": ["Focus scaling and movement can crop content on some layers."],
+      "review_note": "Recovered the safe-zone rule and recorded focus-driven scaling and cropping."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0026": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "ee4f60009074908027b0de7d981f7022e287a45c20094dafa4a1a1015c4c5c94", "section_path": ["Images", "Platform considerations", "visionOS"]},
+      "title": "Avoid bitmap art for visionOS 2D images",
+      "statement": {"en": "Avoid bitmap art for 2D images in visionOS.", "ja": "visionOSの2D imageではbitmap artを避ける。"},
+      "conditions": ["Bitmap content may degrade when the system scales it up."],
+      "review_note": "Separated the bitmap anti-pattern from the positive vector-art preference."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0027": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "48641f4036ff9c04bebac09066a56ef5d261edb78c8362c6d2b558c3e9ff6e36", "section_path": ["Images", "Platform considerations", "visionOS"]},
+      "title": "Balance visionOS raster quality with performance",
+      "statement": {"en": "Balance rasterized visionOS image quality with performance when choosing a resolution.", "ja": "visionOS raster imageのresolution選択ではqualityとperformanceを両立する。"},
+      "conditions": ["A fixed @2x image can look acceptable at common distances but soft at close range.", "Higher resolutions increase file size and runtime cost, especially above @6x."],
+      "review_note": "Recovered the conditional raster fallback and recorded both distance and performance tradeoffs."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0028": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "68b88b67cfeb4332d298bbeb66c44b849f771bfd96c0d6b51045c98e1896f42c", "section_path": ["Images", "Platform considerations", "visionOS"]},
+      "conditions": ["The rasterized visionOS image has a resolution higher than @2x."],
+      "review_note": "Recovered the conditional Be sure filtering requirement and its exact threshold."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0029": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "9410ae4074555e9c61a7fbf6b4a66789bf9cc9acec07333882856b58fc1bba7f", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Design spatial-photo metadata for visual comfort",
+      "statement": {"en": "Account for visual comfort when creating spatial photos from existing 2D content.", "ja": "既存2D contentからspatial photoを作る際はvisual comfortを考慮する。"},
+      "conditions": ["Disparity and other spatial metadata can change scene perception and cause discomfort from some viewing positions."],
+      "review_note": "Recovered the visual-comfort rule and recorded the viewing-position and disparity risks."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0030": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "e900234dd6158edb8062c7c31f6b6f80bb7e666192fe22a9a02bae94decf7c4a", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Avoid inline visionOS spatial photos",
+      "statement": {"en": "Avoid displaying visionOS spatial photos inline with other content.", "ja": "visionOS spatial photoを他のcontentとinline表示しない。"},
+      "conditions": ["Inline depth changes can cause visual discomfort."],
+      "exceptions": ["Use a standalone sheet or window by default; unavoidable inline stereoscopic images have a separate spacing rule."],
+      "review_note": "Separated the inline anti-pattern from the standalone recommendation and conditional spacing fallback."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0031": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "f1d6b2e393a1c8114ba132dc22ef52a2d3fa10d0ef6d8fc4b73c498887e1ebe0", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Space unavoidable inline stereoscopic images generously",
+      "statement": {"en": "Provide generous spacing around a stereoscopic image when it must appear inline.", "ja": "stereoscopic imageをinline表示せざるを得ない場合は周囲に十分なspacingを設ける。"},
+      "conditions": ["Inline stereoscopic presentation is unavoidable; spacing helps people’s eyes adjust to depth changes."],
+      "review_note": "Preserved the conditional fallback as SHOULD; the source’s if-you-must wording does not make inline display a MUST."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0032": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "7b0a44862a183ee2b9a59b5b72a981948b15c31d23a73ede27133a55ec093e48", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Avoid showing too many spatial scenes at once",
+      "statement": {"en": "Avoid displaying too many visionOS spatial scenes at once.", "ja": "visionOS spatial sceneを一度に過剰表示しない。"},
+      "conditions": ["Keep the visual information hierarchy simple and account for scene-generation time."],
+      "review_note": "Recovered the simultaneous-scene anti-pattern and its hierarchy constraint."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0033": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "1606375f3063a8f2e6f1307e5a97193131eb8f65015f41bd971f3c303c854852", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Move between spatial scenes with explicit navigation",
+      "statement": {"en": "Use scroll views, pagination, or explicit actions to move between visionOS spatial scenes.", "ja": "visionOS spatial scene間の移動にはscroll view、pagination、またはexplicit actionを使う。"},
+      "conditions": ["Use an alternative that keeps the visual information hierarchy simple."],
+      "review_note": "Recovered the three documented navigation alternatives as one choice-set rule."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0034": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "d57e0c5857c224eb4503976297f85b31c35aa8f1e17a4eb7859e39d9717a6900", "section_path": ["Images", "Platform considerations", "visionOS", "Spatial photos and spatial scenes"]},
+      "title": "Prefer minimal UI for immersive spatial-image viewing",
+      "statement": {"en": "Prefer minimal UI when displaying spatial images immersively in visionOS.", "ja": "visionOSでspatial imageをimmersive表示する場合はminimal UIを優先する。"},
+      "conditions": ["Keep controls and captions limited to what the immersive viewing task needs."],
+      "review_note": "Recovered the immersive minimal-UI preference without turning the example layout into a fixed requirement."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0035": {
+      "source": {"source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0", "source_sentence_hash": "6ff14ecff2f6e047162573c894aff5dd94cd8563c0b66a916ca290e9cf563786", "section_path": ["Images", "Platform considerations", "watchOS"]},
+      "title": "Design watchOS autoscaling PDF assets at 2x",
+      "statement": {"en": "Design watchOS autoscaling PDF images for 40 mm and 42 mm screens at 2x.", "ja": "watchOS autoscaling PDF imageを40mmおよび42mm screen向けに2xでdesignする。"},
+      "conditions": ["WatchKit scales the base asset to 90% at 38 mm, 100% at 40 mm and 42 mm, 106% at 41 mm, 110% at 44 mm, and 119% at 45 mm and 49 mm."],
+      "review_note": "Recovered the base-asset sizing action and preserved every value in the watchOS scaling table."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},
@@ -12568,6 +12798,9 @@
       },
       "confidence": "high",
       "review_required": false,
+      "conditions": [
+        "When an image always appears on the same solid background, include that background in the image to reduce file size."
+      ],
       "exceptions": [
         "Use transparency where the system requires it to apply color, including complication images, menu icons, and other template images."
       ],

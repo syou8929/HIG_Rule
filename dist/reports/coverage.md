@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2367
+- Active atomic rules: 2385
 - Pages without rules: 16
-- Low-confidence rules: 1002
-- Rules requiring human review: 1002
+- Low-confidence rules: 991
+- Rules requiring human review: 991
 - Reference notes: 929
 
 ## Rules by category
 
 - components: 858
-- foundations: 313
+- foundations: 331
 - getting-started: 85
 - inputs: 187
 - patterns: 289
@@ -22,11 +22,11 @@
 
 ## Normative levels
 
-- AVOID: 311
-- MAY: 278
-- MUST: 210
+- AVOID: 315
+- MAY: 279
+- MUST: 215
 - MUST_NOT: 21
-- SHOULD: 1547
+- SHOULD: 1555
 
 ## Rules by platform
 
@@ -34,14 +34,14 @@
 - ios: 1638
 - ipados: 1611
 - macos: 1370
-- tvos: 1061
-- visionos: 1417
-- watchos: 1118
+- tvos: 1069
+- visionos: 1426
+- watchos: 1119
 
 ## Rules by testability
 
 - hybrid: 60
-- manual: 2307
+- manual: 2325
 
 ## Blocked pages
 
@@ -328,17 +328,6 @@ None.
 - HIG-FOUNDATIONS-ICONS-0015
 - HIG-FOUNDATIONS-IMAGES-0001
 - HIG-FOUNDATIONS-IMAGES-0002
-- HIG-FOUNDATIONS-IMAGES-0004
-- HIG-FOUNDATIONS-IMAGES-0005
-- HIG-FOUNDATIONS-IMAGES-0006
-- HIG-FOUNDATIONS-IMAGES-0008
-- HIG-FOUNDATIONS-IMAGES-0009
-- HIG-FOUNDATIONS-IMAGES-0011
-- HIG-FOUNDATIONS-IMAGES-0012
-- HIG-FOUNDATIONS-IMAGES-0013
-- HIG-FOUNDATIONS-IMAGES-0014
-- HIG-FOUNDATIONS-IMAGES-0015
-- HIG-FOUNDATIONS-IMAGES-0016
 - HIG-FOUNDATIONS-LAYOUT-0001
 - HIG-FOUNDATIONS-LAYOUT-0002
 - HIG-FOUNDATIONS-LAYOUT-0003
@@ -1333,17 +1322,6 @@ None.
 - HIG-FOUNDATIONS-ICONS-0015
 - HIG-FOUNDATIONS-IMAGES-0001
 - HIG-FOUNDATIONS-IMAGES-0002
-- HIG-FOUNDATIONS-IMAGES-0004
-- HIG-FOUNDATIONS-IMAGES-0005
-- HIG-FOUNDATIONS-IMAGES-0006
-- HIG-FOUNDATIONS-IMAGES-0008
-- HIG-FOUNDATIONS-IMAGES-0009
-- HIG-FOUNDATIONS-IMAGES-0011
-- HIG-FOUNDATIONS-IMAGES-0012
-- HIG-FOUNDATIONS-IMAGES-0013
-- HIG-FOUNDATIONS-IMAGES-0014
-- HIG-FOUNDATIONS-IMAGES-0015
-- HIG-FOUNDATIONS-IMAGES-0016
 - HIG-FOUNDATIONS-LAYOUT-0001
 - HIG-FOUNDATIONS-LAYOUT-0002
 - HIG-FOUNDATIONS-LAYOUT-0003
@@ -2440,12 +2418,12 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/image-wells · Image wells > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/image-wells · Image wells > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/images · Images > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/images · Images > Formats — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/images · Images > Formats — iOS, iPadOS, and macOS have no additional considerations; platform-specific guidance is recorded below.
 - https://developer.apple.com/design/human-interface-guidelines/images · Images > Formats — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/images · Images > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/images · Images > Platform considerations — The tvOS overview is descriptive; parallax and layered-image constraints are recorded in its subsections.
 - https://developer.apple.com/design/human-interface-guidelines/images · Images > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/images · Images > Platform considerations > watchOS — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/images · Images > Resolution — Structured numeric table detected; preserve its platform and context conditions during human source review.
+- https://developer.apple.com/design/human-interface-guidelines/images · Images > Resolution — WatchKit autoscaling values are recorded as structured conditions on the reviewed watchOS PDF rule.
 - https://developer.apple.com/design/human-interface-guidelines/images · Images > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/images · Images > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Change log — Section recorded for human review; no short atomic guidance lead was detected.
