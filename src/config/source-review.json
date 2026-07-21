@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:53:25Z",
+  "reviewed_at": "2026-07-21T18:01:57Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2171,6 +2171,22 @@
         "HIG-COMPONENTS-SPLIT-VIEWS-0017", "HIG-COMPONENTS-SPLIT-VIEWS-0018", "HIG-COMPONENTS-SPLIT-VIEWS-0019", "HIG-COMPONENTS-SPLIT-VIEWS-0020"
       ],
       "review_note": "Completed Split views coverage; retained all nine existing IDs, recovered eleven atomic rules, removed a false gaze modality, and preserved only the explicit iPadOS Ensure and macOS Make sure clauses as conditional MUST rules."
+    },
+    {
+      "id": "priority-4-tab-bars-context-2026-07-21",
+      "reviewed_at": "2026-07-21T18:01:57Z",
+      "review_method": "Rendered Apple HIG Tab bars guidance, navigation and visibility, labels and icons, badges and color, iOS system behavior, iPadOS adaptation and customization, tvOS capabilities and ordering, visionOS labels and sidebar behavior, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/tab-bars", "source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-TAB-BARS-0001", "HIG-COMPONENTS-TAB-BARS-0002", "HIG-COMPONENTS-TAB-BARS-0003", "HIG-COMPONENTS-TAB-BARS-0004", "HIG-COMPONENTS-TAB-BARS-0005",
+        "HIG-COMPONENTS-TAB-BARS-0006", "HIG-COMPONENTS-TAB-BARS-0007", "HIG-COMPONENTS-TAB-BARS-0008", "HIG-COMPONENTS-TAB-BARS-0009", "HIG-COMPONENTS-TAB-BARS-0010",
+        "HIG-COMPONENTS-TAB-BARS-0011", "HIG-COMPONENTS-TAB-BARS-0012", "HIG-COMPONENTS-TAB-BARS-0013", "HIG-COMPONENTS-TAB-BARS-0014", "HIG-COMPONENTS-TAB-BARS-0015",
+        "HIG-COMPONENTS-TAB-BARS-0016", "HIG-COMPONENTS-TAB-BARS-0017", "HIG-COMPONENTS-TAB-BARS-0018", "HIG-COMPONENTS-TAB-BARS-0019", "HIG-COMPONENTS-TAB-BARS-0020",
+        "HIG-COMPONENTS-TAB-BARS-0021", "HIG-COMPONENTS-TAB-BARS-0022", "HIG-COMPONENTS-TAB-BARS-0023", "HIG-COMPONENTS-TAB-BARS-0024", "HIG-COMPONENTS-TAB-BARS-0025",
+        "HIG-COMPONENTS-TAB-BARS-0026", "HIG-COMPONENTS-TAB-BARS-0027", "HIG-COMPONENTS-TAB-BARS-0028", "HIG-COMPONENTS-TAB-BARS-0029"
+      ],
+      "review_note": "Completed Tab bars coverage; retained all sixteen existing IDs, recovered thirteen atomic rules, changed three tvOS customization capabilities from SHOULD to MAY, and retained only the visibility, short-label, and sidebar-selection directives as MUST rules."
     }
   ],
   "rules": {
@@ -2795,6 +2811,226 @@
       "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["split-views"], "modalities": ["digital-crown"]},
       "conditions": ["People use the Digital Crown to move between tabs, and watchOS displays the tab count and current-page indicator."],
       "review_note": "Activated the omitted multi-detail rule and recorded its Digital Crown modality and system page indicator."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0001": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "04185f256456fc152552a2936ac026e644eddfabb03db8aba2ee74483298e08d", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Use tab bars for navigation",
+      "statement": {"en": "Use a tab bar for navigation between app sections, not for actions.", "ja": "tab barはapp section間のnavigationに使い、actionには使わない。"},
+      "conditions": ["Use the separately reviewed toolbar alternative for controls that act on the current view."],
+      "review_note": "Made the navigation purpose concrete and separated the toolbar alternative."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0002": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "b7b769deff52a1cc675ae388913d301f5c1d84141cad8ad80ff434c46bb43ced", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Keep the tab bar visible during section navigation",
+      "statement": {"en": "Make sure the tab bar stays visible as people navigate between app sections.", "ja": "app section間をnavigateするときtab barを表示したままにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["Visibility helps people retain awareness of their current app area."],
+      "exceptions": ["A temporary, self-contained modal view may cover the tab bar."],
+      "review_note": "Retained the explicit Make sure directive and its sole modal exception."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0003": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "a9bf2dbba164920cb957208881cfaa6496618288392c158e34116a5bf3811a9c", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Use an appropriate number of tabs",
+      "statement": {"en": "Use the number of tabs needed to help people navigate the app.", "ja": "app navigationを支援するために必要な数のtabを使う。"},
+      "conditions": ["Balance hierarchy complexity and frequent access; fewer tabs are generally easier to navigate."],
+      "review_note": "Recorded the source's access-versus-complexity tradeoff and separated the optional sidebar alternative."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0004": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "42bf50942a588b76d2eb1e2ebc3f504599ce66abb5fc4d421789f2e2b82cd7ce", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Avoid overflow tabs",
+      "statement": {"en": "Avoid tab-bar overflow that hides tabs behind a More tab.", "ja": "tabをMore tabの背後に隠すtab-bar overflowを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["On iOS and iPadOS, limited horizontal space can turn the trailing tab into More and reduce hidden-content reachability and discoverability."],
+      "review_note": "Retained AVOID and the device-size and orientation mechanism that creates overflow."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0005": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "34ef173d187a9fc909c68ccf9a9a33177371441b60851198bf164710f08266b0", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Avoid disabling or hiding tab buttons",
+      "statement": {"en": "Avoid disabling or hiding a tab-bar button when its content is unavailable.", "ja": "contentがunavailableでもtab-bar buttonのdisableや非表示を避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Stable tab availability keeps the interface predictable."],
+      "review_note": "Kept the source's Don't directive at AVOID under the repository policy and separated empty-state explanation."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0006": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "c5e86e2e76f453758dee80af606ce8b9db8704cd267a5d487d9bb51114136ee0", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Include descriptive tab labels",
+      "statement": {"en": "Include tab labels that clearly describe each tab's content or functionality.", "ja": "各tabのcontentまたはfunctionalityを明確に説明するlabelを付ける。"},
+      "conditions": ["A label can appear beneath or beside its tab-bar icon."],
+      "review_note": "Recorded the label's navigation purpose and separated the single-word preference."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0007": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "6a14a581633ba402e76bf0e85da7ec48c86a06a7fbcb4c47ddf99b4914c9434e", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Consider SF Symbols for tab icons",
+      "statement": {"en": "Consider SF Symbols for familiar, scalable tab-bar icons.", "ja": "familiarでscalableなtab-bar iconにはSF Symbolsを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["SF Symbols adapt automatically between compact and regular tab-bar contexts."],
+      "review_note": "Preserved MAY and separated the filled-symbol preference."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0008": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "dfc5d7671774ab1c9f8104f95583a77bf3c05e48bd09c3f8df2044f88c8c7b8c", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Use badges for critical tab information",
+      "statement": {"en": "Use a tab badge to indicate available critical information.", "ja": "利用可能なcritical informationを示すためtab badgeを使う。"},
+      "conditions": ["A number or exclamation point can signal new or updated section information that warrants attention."],
+      "review_note": "Recorded the badge's information and attention purpose and separated the reservation rule."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0009": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "0fe534e48cd0248421a6f46dfd4fc6f36ffc01bc1b63455268873ad27101827f", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Avoid similar tab-label and content colors",
+      "statement": {"en": "Avoid giving tab labels and content-layer backgrounds similar colors.", "ja": "tab labelとcontent-layer backgroundに似たcolorを使うことを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["With bright or colorful content, prefer a monochromatic tab bar or an accent color with sufficient visual differentiation."],
+      "review_note": "Retained AVOID and both source-supported differentiation alternatives."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0010": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "e00f4623297caf5acd7601b1187b2d8122eef5066820cd7f1a8a8441f5d15d12", "section_path": ["Tab bars", "Platform considerations", "iPadOS"]},
+      "title": "Prefer an iPadOS tab bar for primary navigation",
+      "statement": {"en": "Prefer an iPadOS tab bar for access to the app's most-used sections.", "ja": "appで最もよく使うsectionへのaccessにはiPadOS tab barを優先する。"},
+      "conditions": ["For a more complex app, allow conversion to a sidebar for a wider set of navigation options."],
+      "review_note": "Recorded the frequent-access purpose and complex-app sidebar adaptation."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0011": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "a2cfed2fcfd1858fbcfe55024fc950451d5d2e5b3fb5b6f90be85cd02d29553c", "section_path": ["Tab bars", "Platform considerations", "iPadOS"]},
+      "title": "Let people customize iPadOS tab bars",
+      "statement": {"en": "Let people customize an iPadOS tab bar when the app has many sections.", "ja": "appに多数のsectionがある場合はiPadOS tab barをcustomizeできるようにする。"},
+      "conditions": ["Let people add frequently used items and remove less-used items."],
+      "review_note": "Recorded the many-section condition and separated the default tab-count target."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0012": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "f42bf9c2642c23425e235cdbd4f80cedbb75d971285ab87b76831cd2a8c3eece", "section_path": ["Tab bars", "Platform considerations", "tvOS"]},
+      "title": "Account for tvOS tab-bar scrolling",
+      "statement": {"en": "Account for tvOS tab-bar scrolling, pinning, and focus-return behavior.", "ja": "tvOS tab barのscrolling、pinning、focus-return behaviorを考慮する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": ["tab-bars"], "modalities": ["remote-control"]},
+      "conditions": ["A single-main-view tab can scroll the bar offscreen; split-view screens keep it pinned; pressing Menu returns focus to the bar."],
+      "review_note": "Replaced vague generated wording with the three system behaviors and remote-control modality."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0013": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "5d500bd2a9efee96520cdc2e858cce49a27bb68f765f985a62819bd7179d7f73", "section_path": ["Tab bars", "Platform considerations", "tvOS"]},
+      "title": "Optionally customize tvOS tab-item fonts",
+      "statement": {"en": "You may choose custom tvOS tab-item fonts, including a selected-item font.", "ja": "selected-item fontを含むtvOS tab-item fontをcustomizeしてよい。"},
+      "normative_level": "MAY",
+      "conditions": ["The surrounding source presents this as an available customization capability."],
+      "review_note": "Changed generated SHOULD to MAY because the source introduces the list with You can."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0014": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "2f927ea8c3324e5b6119a9c168afae17641d3e0e54a450e698c0b24adc94b40c", "section_path": ["Tab bars", "Platform considerations", "visionOS"]},
+      "title": "Consider a sidebar inside a visionOS tab",
+      "statement": {"en": "Consider a sidebar within a visionOS tab for deep secondary navigation.", "ja": "deepなsecondary navigationにはvisionOS tab内のsidebarを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The app hierarchy is deep enough to need secondary navigation within a tab."],
+      "review_note": "Preserved MAY and separated the mandatory selection-invariance clause."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0015": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "b7fa9324361bdd058388fd5b81f1eee628af7df2d2f2bf424bce5ae2d7c43003", "section_path": ["Tab bars", "Platform considerations", "tvOS"]},
+      "title": "Optionally customize tvOS tab-bar backgrounds",
+      "statement": {"en": "You may specify a tint, color, or image for a tvOS tab-bar background.", "ja": "tvOS tab-bar backgroundにtint、color、imageを指定してよい。"},
+      "normative_level": "MAY",
+      "conditions": ["The surrounding source presents this as an available customization capability."],
+      "review_note": "Changed generated SHOULD to MAY because the source introduces the list with You can."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0016": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "7f875eb7bf3e03a534643ae866bc1aae465e6fd01b44c0ed231c2bc874443396", "section_path": ["Tab bars", "Platform considerations", "tvOS"]},
+      "title": "Optionally customize tvOS item tints",
+      "statement": {"en": "You may specify separate tvOS tints for selected and unselected tab items.", "ja": "selectedとunselectedのtvOS tab itemに別々のtintを指定してよい。"},
+      "normative_level": "MAY",
+      "conditions": ["The surrounding source presents this as an available customization capability."],
+      "review_note": "Changed generated SHOULD to MAY because the source introduces the list with You can."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0017": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "b45d4a93393f5a088ee84fcb2583ca9d95558925d51fcfc7507cd504c2dfa215", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Use a toolbar for current-view actions",
+      "statement": {"en": "Use a toolbar for controls that act on elements in the current view.", "ja": "current view内のelementへ作用するcontrolにはtoolbarを使う。"},
+      "conditions": ["The controls perform actions instead of navigating between app sections."],
+      "review_note": "Separated the source's toolbar alternative from the tab-bar navigation rule."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0018": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "95b285ce70b261c5dd3f64b3e47664a43a282090f8cc718e96065507418148f3", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Consider a sidebar for complex information structures",
+      "statement": {"en": "Consider a sidebar or sidebar-adapting tab bar for a complex information structure.", "ja": "complexなinformation structureにはsidebarまたはsidebarへadaptするtab barを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["More sections are needed than a simple tab bar can expose clearly."],
+      "review_note": "Separated the optional complex-hierarchy alternative from the tab-count rule."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0019": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "4b7ad3f037100205f391275f802655e74d3c217029f327691155cba68cf08024", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Explain empty tab sections",
+      "statement": {"en": "Explain why content is unavailable when a tab section is empty.", "ja": "tab sectionがemptyの場合はcontentがunavailableな理由を説明する。"},
+      "conditions": ["Keep the tab button available instead of disabling or hiding it."],
+      "review_note": "Recovered the empty-state action separately from tab-button availability."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0020": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "65453fdd016176e4ed4bcfe6454816051ad0bb77478415aaca60ea2f3ddc014f", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Prefer single-word tab labels",
+      "statement": {"en": "Use single-word tab labels whenever possible.", "ja": "可能な場合はsingle-wordのtab labelを使う。"},
+      "conditions": ["The label still clearly describes the tab's content or functionality."],
+      "review_note": "Recovered the qualified label-length preference without raising it to MUST."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0021": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "2db647eac3532697439c1d4d293e053513743b0929fae83a30434e05799f343b", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Prefer filled tab symbols",
+      "statement": {"en": "Prefer filled symbols or icons for consistency with the platform.", "ja": "platformとの一貫性のためfilled symbolまたはiconを優先する。"},
+      "conditions": ["The app provides tab-bar icons."],
+      "review_note": "Recovered the filled-icon preference separately from optional SF Symbols use."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0022": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "b1662d28bcaba5503470db1551efcbccf9dd91a21612b8598284605bd611779b", "section_path": ["Tab bars", "Best practices"]},
+      "title": "Reserve tab badges for critical information",
+      "statement": {"en": "Reserve tab badges for critical information.", "ja": "tab badgeをcritical informationに限定する。"},
+      "conditions": ["Overuse can dilute a badge's impact and meaning."],
+      "review_note": "Separated the reservation requirement from the badge-indication rule."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0023": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "41476941d7587fa4f72297bd7e43242d38850dd12e360e5e4310d2cde39eda61", "section_path": ["Tab bars", "Platform considerations", "iPadOS"]},
+      "title": "Use a navigation split view for a fixed sidebar",
+      "statement": {"en": "Use a navigation split view for a fixed iPadOS sidebar without tab-bar conversion.", "ja": "tab barへconvertしない固定iPadOS sidebarにはnavigation split viewを使う。"},
+      "conditions": ["The design presents a sidebar without offering tab-bar conversion."],
+      "review_note": "Recovered the direct navigation-split-view alternative from the iPadOS note."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0024": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "f8c439facbf5f990d44d1e5cedef94c595dd878363f20ff7d1d4f03c16c0dc5a", "section_path": ["Tab bars", "Platform considerations", "iPadOS"]},
+      "title": "Default customized iPadOS tab bars to five or fewer tabs",
+      "statement": {"en": "Aim for five or fewer default tabs when people can customize an iPadOS tab bar.", "ja": "iPadOS tab barをcustomizeできる場合はdefault tabを5件以下にすることを目指す。"},
+      "conditions": ["The limit helps preserve continuity between compact and regular view sizes."],
+      "review_note": "Recovered the conditional numeric target and kept its Aim strength at SHOULD."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0025": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "5798f5eb4459e808f53d0156900f8aff4dd3b1de6032a0bdc22726b342f69556", "section_path": ["Tab bars", "Platform considerations", "tvOS"]},
+      "title": "Optionally add tvOS button icons",
+      "statement": {"en": "You may add tvOS tab-bar button icons such as settings and search.", "ja": "settingsやsearchなどのtvOS tab-bar button iconを追加してよい。"},
+      "normative_level": "MAY",
+      "conditions": ["The surrounding source presents this as an available customization capability."],
+      "review_note": "Activated the omitted capability and preserved the surrounding You can strength."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0026": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "f071fe763f6ad8f83ad44236b92f9deaa9b9c4bdba9ac86afc9d75957274c017", "section_path": ["Tab bars", "Platform considerations", "tvOS"]},
+      "title": "Order live-viewing tvOS tabs consistently",
+      "statement": {"en": "Order live-viewing tvOS tabs consistently.", "ja": "live-viewing tvOS tabを一貫した順序にする。"},
+      "conditions": ["Order live content first, cloud DVR or other recorded content second, and other content last."],
+      "review_note": "Activated the omitted live-viewing rule and recorded the exact three-part order."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0027": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "16f3bb9692254e8cad26c0b671c058f4180f28c31e9f2a19d3c9009f2cdcf68e", "section_path": ["Tab bars", "Platform considerations", "visionOS"]},
+      "title": "Provide a symbol and label for every visionOS tab",
+      "statement": {"en": "Provide a symbol and text label for every visionOS tab.", "ja": "すべてのvisionOS tabにsymbolとtext labelを提供する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": ["tab-bars"], "modalities": ["gaze"]},
+      "conditions": ["The symbol stays visible when collapsed, and the system reveals labels when people look at the tab bar."],
+      "review_note": "Activated the omitted symbol-and-label directive and recorded gaze-driven label reveal."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0028": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "0d8eb0dd64fa66823df703ae889efd7758d656d3ebc3cc1bd265041f1856c112", "section_path": ["Tab bars", "Platform considerations", "visionOS"]},
+      "title": "Keep visionOS tab labels short",
+      "statement": {"en": "Keep visionOS tab labels short enough to read at a glance.", "ja": "visionOS tab labelを一目で読める短さに保つ。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "scope": {"portability": "apple-component-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": ["tab-bars"], "modalities": ["gaze"]},
+      "conditions": ["The tab bar expands and reveals labels when people look at it."],
+      "review_note": "Recovered the explicit You need to directive and its at-a-glance purpose."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0029": {
+      "source": {"source_hash": "f7ad55859214f1b4234bb11fc7d5dc4d45bc4a343b1c92bc1044bbe52ba0696e", "source_sentence_hash": "93fe5d3bb54dba3793d4c7576a91bb0adc1d62d764dcc214aee223dd13bb06e9", "section_path": ["Tab bars", "Platform considerations", "visionOS"]},
+      "title": "Keep sidebar selections within the open visionOS tab",
+      "statement": {"en": "Be sure visionOS sidebar selections don't change which tab is open.", "ja": "visionOS sidebarのselectionでopen tabが変わらないようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The app uses a sidebar for secondary navigation within a tab."],
+      "review_note": "Recovered the explicit Be sure directive and retained its within-tab sidebar condition."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

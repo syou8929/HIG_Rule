@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:58:46.566Z. 2298 active rules; 3 deprecated rules.
+Generated 2026-07-21T18:08:05.096Z. 2311 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1495,22 +1495,35 @@ Generated 2026-07-21T17:58:46.566Z. 2298 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-STEPPERS-0003 · MAY · low** — When large value ranges, consider supporting Shift-click to change the value quickly. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
 ### tab-bars
 
-- **HIG-COMPONENTS-TAB-BARS-0001 · SHOULD · low** — Choose or apply a tab bar to support navigation, not to provide actions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0002 · MUST · medium** — Verify that the tab bar is visible when people navigate to different sections of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0003 · SHOULD · low** — Choose or apply the appropriate number of tabs required to help people navigate your app in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0004 · AVOID · low** — Exclude overflow tabs from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0005 · AVOID · low** — Exclude disable or hide tab bar buttons, even when their content is unavailable from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0006 · SHOULD · low** — Apply the documented Tab bars guidance to include tab labels to help with navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0007 · MAY · low** — Evaluate whether using SF Symbols to provide familiar, scalable tab bar icons is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0008 · SHOULD · low** — Choose or apply a badge to indicate that critical information is available in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0009 · AVOID · low** — Exclude applying a similar color to tab labels and content layer backgrounds from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0010 · SHOULD · low** — Favor a tab bar for navigation when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0011 · SHOULD · low** — Preserve people’s ability to customize the tab bar. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0012 · SHOULD · low** — Apply the documented Tab bars guidance to be aware of tab bar scrolling behaviors. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0013 · SHOULD · low** — Apply the documented Tab bars guidance to choose a font for tab items, including a different font for the selected item. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0014 · MAY · low** — When it makes sense in your app, consider using a sidebar within a tab. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0015 · SHOULD · low** — Specify a tint, color, or image for the tab bar background. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
-- **HIG-COMPONENTS-TAB-BARS-0016 · SHOULD · low** — Specify tints for selected and unselected items. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0001 · SHOULD · high** — Use a tab bar for navigation between app sections, not for actions. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0002 · MUST · high** — Make sure the tab bar stays visible as people navigate between app sections. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0003 · SHOULD · high** — Use the number of tabs needed to help people navigate the app. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0004 · AVOID · high** — Avoid tab-bar overflow that hides tabs behind a More tab. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0005 · AVOID · high** — Avoid disabling or hiding a tab-bar button when its content is unavailable. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0006 · SHOULD · high** — Include tab labels that clearly describe each tab's content or functionality. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0007 · MAY · high** — Consider SF Symbols for familiar, scalable tab-bar icons. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0008 · SHOULD · high** — Use a tab badge to indicate available critical information. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0009 · AVOID · high** — Avoid giving tab labels and content-layer backgrounds similar colors. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0010 · SHOULD · high** — Prefer an iPadOS tab bar for access to the app's most-used sections. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0011 · SHOULD · high** — Let people customize an iPadOS tab bar when the app has many sections. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0012 · SHOULD · high** — Account for tvOS tab-bar scrolling, pinning, and focus-return behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0013 · MAY · high** — You may choose custom tvOS tab-item fonts, including a selected-item font. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0014 · MAY · high** — Consider a sidebar within a visionOS tab for deep secondary navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0015 · MAY · high** — You may specify a tint, color, or image for a tvOS tab-bar background. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0016 · MAY · high** — You may specify separate tvOS tints for selected and unselected tab items. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0017 · SHOULD · high** — Use a toolbar for controls that act on elements in the current view. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0018 · MAY · high** — Consider a sidebar or sidebar-adapting tab bar for a complex information structure. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0019 · SHOULD · high** — Explain why content is unavailable when a tab section is empty. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0020 · SHOULD · high** — Use single-word tab labels whenever possible. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0021 · SHOULD · high** — Prefer filled symbols or icons for consistency with the platform. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0022 · SHOULD · high** — Reserve tab badges for critical information. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0023 · SHOULD · high** — Use a navigation split view for a fixed iPadOS sidebar without tab-bar conversion. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0024 · SHOULD · high** — Aim for five or fewer default tabs when people can customize an iPadOS tab bar. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0025 · MAY · high** — You may add tvOS tab-bar button icons such as settings and search. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0026 · SHOULD · high** — Order live-viewing tvOS tabs consistently. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0027 · SHOULD · high** — Provide a symbol and text label for every visionOS tab. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0028 · MUST · high** — Keep visionOS tab labels short enough to read at a glance. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0029 · MUST · high** — Be sure visionOS sidebar selections don't change which tab is open. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 ### tab-views
 
 - **HIG-COMPONENTS-TAB-VIEWS-0001 · SHOULD · high** — Use a macOS tab view for closely related content areas. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))

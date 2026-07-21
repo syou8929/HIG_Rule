@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2298
+- Active atomic rules: 2311
 - Pages without rules: 16
-- Low-confidence rules: 1056
-- Rules requiring human review: 1056
-- Reference notes: 925
+- Low-confidence rules: 1041
+- Rules requiring human review: 1041
+- Reference notes: 927
 
 ## Rules by category
 
-- components: 790
+- components: 803
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 306
-- MAY: 261
-- MUST: 198
+- MAY: 266
+- MUST: 200
 - MUST_NOT: 21
-- SHOULD: 1512
+- SHOULD: 1518
 
 ## Rules by platform
 
 - carplay: 89
-- ios: 1596
-- ipados: 1570
-- macos: 1347
-- tvos: 1025
-- visionos: 1386
+- ios: 1602
+- ipados: 1578
+- macos: 1353
+- tvos: 1033
+- visionos: 1395
 - watchos: 1095
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2232
+- manual: 2245
 
 ## Blocked pages
 
@@ -222,21 +222,6 @@ None.
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
 - HIG-COMPONENTS-STEPPERS-0003
-- HIG-COMPONENTS-TAB-BARS-0001
-- HIG-COMPONENTS-TAB-BARS-0003
-- HIG-COMPONENTS-TAB-BARS-0004
-- HIG-COMPONENTS-TAB-BARS-0005
-- HIG-COMPONENTS-TAB-BARS-0006
-- HIG-COMPONENTS-TAB-BARS-0007
-- HIG-COMPONENTS-TAB-BARS-0008
-- HIG-COMPONENTS-TAB-BARS-0009
-- HIG-COMPONENTS-TAB-BARS-0010
-- HIG-COMPONENTS-TAB-BARS-0011
-- HIG-COMPONENTS-TAB-BARS-0012
-- HIG-COMPONENTS-TAB-BARS-0013
-- HIG-COMPONENTS-TAB-BARS-0014
-- HIG-COMPONENTS-TAB-BARS-0015
-- HIG-COMPONENTS-TAB-BARS-0016
 - HIG-COMPONENTS-TEXT-FIELDS-0001
 - HIG-COMPONENTS-TEXT-FIELDS-0002
 - HIG-COMPONENTS-TEXT-FIELDS-0003
@@ -1281,21 +1266,6 @@ None.
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
 - HIG-COMPONENTS-STEPPERS-0003
-- HIG-COMPONENTS-TAB-BARS-0001
-- HIG-COMPONENTS-TAB-BARS-0003
-- HIG-COMPONENTS-TAB-BARS-0004
-- HIG-COMPONENTS-TAB-BARS-0005
-- HIG-COMPONENTS-TAB-BARS-0006
-- HIG-COMPONENTS-TAB-BARS-0007
-- HIG-COMPONENTS-TAB-BARS-0008
-- HIG-COMPONENTS-TAB-BARS-0009
-- HIG-COMPONENTS-TAB-BARS-0010
-- HIG-COMPONENTS-TAB-BARS-0011
-- HIG-COMPONENTS-TAB-BARS-0012
-- HIG-COMPONENTS-TAB-BARS-0013
-- HIG-COMPONENTS-TAB-BARS-0014
-- HIG-COMPONENTS-TAB-BARS-0015
-- HIG-COMPONENTS-TAB-BARS-0016
 - HIG-COMPONENTS-TEXT-FIELDS-0001
 - HIG-COMPONENTS-TEXT-FIELDS-0002
 - HIG-COMPONENTS-TEXT-FIELDS-0003
@@ -2934,8 +2904,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/steppers · Steppers > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/steppers · Steppers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations > iOS — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations — macOS has no additional considerations, and tab bars are unsupported in watchOS.
+- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations > iOS — Attached-accessory minimization and dedicated search tabs are system-supported iOS options, not unconditional requirements.
+- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations > tvOS — Fixed geometry, opacity, overflow fades, focus return, and system pinning behavior were reviewed as platform context.
+- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations > visionOS — Vertical placement, gaze expansion, and temporary content occlusion are system behavior rather than app directives.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

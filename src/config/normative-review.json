@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:53:25Z",
+  "reviewed_at": "2026-07-21T18:01:57Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 219,
+  "reviewed_rule_count": 221,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -1118,10 +1118,26 @@
       "review_note": "Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast."
     },
     "HIG-COMPONENTS-TAB-BARS-0002": {
-      "exceptions": [
-        "A temporary modal view may cover the tab bar."
-      ],
-      "review_note": "Recorded the source's explicit modal-view exception without weakening the default requirement."
+      "title": "Keep the tab bar visible during section navigation",
+      "statement": {"en": "Make sure the tab bar stays visible as people navigate between app sections.", "ja": "app section間をnavigateするときtab barを表示したままにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["Visibility helps people retain awareness of their current app area."],
+      "exceptions": ["A temporary, self-contained modal view may cover the tab bar."],
+      "review_note": "Retained the explicit Make sure directive and its sole modal exception."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0028": {
+      "title": "Keep visionOS tab labels short",
+      "statement": {"en": "Keep visionOS tab labels short enough to read at a glance.", "ja": "visionOS tab labelを一目で読める短さに保つ。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The tab bar expands and reveals labels when people look at it."],
+      "review_note": "Recovered and retained the explicit You need to directive and its at-a-glance purpose."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0029": {
+      "title": "Keep sidebar selections within the open visionOS tab",
+      "statement": {"en": "Be sure visionOS sidebar selections don't change which tab is open.", "ja": "visionOS sidebarのselectionでopen tabが変わらないようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The app uses a sidebar for secondary navigation within a tab."],
+      "review_note": "Recovered and retained the explicit Be sure directive and its within-tab sidebar condition."
     },
     "HIG-PATTERNS-MODALITY-0006": {
       "title": "Ensure people receive critical information and can act when necessary",

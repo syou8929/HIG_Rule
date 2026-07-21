@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1158
-- Reviewed batches: 74
+- Reviewed rules: 1187
+- Reviewed batches: 75
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:53:25Z
+- Reviewed at: 2026-07-21T18:01:57Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -425,6 +425,35 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SPLIT-VIEWS-0020 · high — Activated the omitted multi-detail rule and recorded its Digital Crown modality and system page indicator. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-STATUS-BARS-0001 · high — Preserved the optional and temporary strength. ([source](https://developer.apple.com/design/human-interface-guidelines/status-bars))
 - HIG-COMPONENTS-STATUS-BARS-0002 · high — Recorded the rediscovery gesture requirement and kept the guidance at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/status-bars))
+- HIG-COMPONENTS-TAB-BARS-0001 · high — Made the navigation purpose concrete and separated the toolbar alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0002 · high — Retained the explicit Make sure directive and its sole modal exception. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0003 · high — Recorded the source's access-versus-complexity tradeoff and separated the optional sidebar alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0004 · high — Retained AVOID and the device-size and orientation mechanism that creates overflow. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0005 · high — Kept the source's Don't directive at AVOID under the repository policy and separated empty-state explanation. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0006 · high — Recorded the label's navigation purpose and separated the single-word preference. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0007 · high — Preserved MAY and separated the filled-symbol preference. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0008 · high — Recorded the badge's information and attention purpose and separated the reservation rule. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0009 · high — Retained AVOID and both source-supported differentiation alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0010 · high — Recorded the frequent-access purpose and complex-app sidebar adaptation. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0011 · high — Recorded the many-section condition and separated the default tab-count target. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0012 · high — Replaced vague generated wording with the three system behaviors and remote-control modality. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0013 · high — Changed generated SHOULD to MAY because the source introduces the list with You can. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0014 · high — Preserved MAY and separated the mandatory selection-invariance clause. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0015 · high — Changed generated SHOULD to MAY because the source introduces the list with You can. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0016 · high — Changed generated SHOULD to MAY because the source introduces the list with You can. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0017 · high — Separated the source's toolbar alternative from the tab-bar navigation rule. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0018 · high — Separated the optional complex-hierarchy alternative from the tab-count rule. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0019 · high — Recovered the empty-state action separately from tab-button availability. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0020 · high — Recovered the qualified label-length preference without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0021 · high — Recovered the filled-icon preference separately from optional SF Symbols use. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0022 · high — Separated the reservation requirement from the badge-indication rule. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0023 · high — Recovered the direct navigation-split-view alternative from the iPadOS note. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0024 · high — Recovered the conditional numeric target and kept its Aim strength at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0025 · high — Activated the omitted capability and preserved the surrounding You can strength. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0026 · high — Activated the omitted live-viewing rule and recorded the exact three-part order. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0027 · high — Activated the omitted symbol-and-label directive and recorded gaze-driven label reveal. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0028 · high — Recovered the explicit You need to directive and its at-a-glance purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TAB-BARS-0029 · high — Recovered the explicit Be sure directive and retained its within-tab sidebar condition. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-TAB-VIEWS-0001 · high — Recorded the relationship implied by the tab view's visual enclosure. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
 - HIG-COMPONENTS-TAB-VIEWS-0003 · high — Repaired generic generated wording and recorded label form and capitalization. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
 - HIG-COMPONENTS-TAB-VIEWS-0004 · high — Recorded the interaction-cost rationale and the many-pane exception. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
