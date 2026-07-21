@@ -112271,17 +112271,17 @@
   },
   {
     "id": "HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001",
-    "title": "Use motion data only to offer a tangible benefit to people",
+    "title": "Use motion data only for tangible user benefit",
     "category": "inputs",
     "topic": "gyro-and-accelerometer",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply motion data only to offer a tangible benefit to people in the documented context.",
-      "ja": "該当する状況ではmotion data only to offer a tangible benefit to peopleを採用する。"
+      "en": "Use motion data only when it provides a tangible benefit to people.",
+      "ja": "利用者へ具体的なbenefitを提供する場合だけmotion dataを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -112306,9 +112306,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Tie motion-data use to a clear product or gameplay outcome."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Fitness feedback and enhanced gameplay are examples, not required use cases."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Gyroscope and accelerometer experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるGyroscope and accelerometerの一貫性と使いやすさを支えます。"
@@ -112316,7 +112318,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply motion data only to offer a tangible benefit to people in the documented context.” in the documented Gyroscope and accelerometer context?"
+        "Does the design satisfy “Use motion data only when it provides a tangible benefit to people.” in the documented Gyroscope and accelerometer context?"
       ]
     },
     "testability": "manual",
@@ -112333,10 +112335,10 @@
         "Gyroscope and accelerometer",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:54.989Z",
+      "retrieved_at": "2026-07-21T23:06:26Z",
       "source_hash": "f5588f8f6c660bbae353f2429e3357002a479f9ab6de730456a528869acd5151",
       "source_sentence_hash": "aed51266e5f43ae5f4e4d4e1a84a75b91c63502a0c4dc8180c787b0c3bed93ad",
-      "evidence_paraphrase": "Choose or apply motion data only to offer a tangible benefit to people in the documented context."
+      "evidence_paraphrase": "Use motion data only when it provides a tangible benefit to people."
     },
     "tags": [
       "inputs",
@@ -112345,7 +112347,165 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Choose or apply motion data only to offer a tangible benefit to people in the documented context.",
+    "apple_native_rule": "Use motion data only when it provides a tangible benefit to people.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-GYRO-AND-ACCELEROMETER-0002",
+    "title": "Avoid motion-data collection without user benefit",
+    "category": "inputs",
+    "topic": "gyro-and-accelerometer",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid collecting motion data without a tangible user benefit.",
+      "ja": "具体的なuser benefitがないmotion data収集を避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Don't gather motion data merely because it is available."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Gyroscope and accelerometer experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGyroscope and accelerometerの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid collecting motion data without a tangible user benefit.” in the documented Gyroscope and accelerometer context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer",
+      "page_title": "Gyroscope and accelerometer",
+      "section_path": [
+        "Gyroscope and accelerometer",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T23:06:26Z",
+      "source_hash": "f5588f8f6c660bbae353f2429e3357002a479f9ab6de730456a528869acd5151",
+      "source_sentence_hash": "90906ded8f70ef3fc1b833d22eefed982d90bd406d38c280eb3b74ddea7a86e1",
+      "evidence_paraphrase": "Avoid collecting motion data without a tangible user benefit."
+    },
+    "tags": [
+      "inputs",
+      "gyro-and-accelerometer",
+      "best-practices"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Avoid collecting motion data without a tangible user benefit.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-GYRO-AND-ACCELEROMETER-0003",
+    "title": "Avoid direct motion-based UI manipulation outside gameplay",
+    "category": "inputs",
+    "topic": "gyro-and-accelerometer",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Outside active gameplay, avoid direct interface manipulation with accelerometers or gyroscopes.",
+      "ja": "active gameplay外ではaccelerometerやgyroscopeによる直接interface操作を避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Motion gestures can be imprecise, physically challenging, and costly to battery life."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Gyroscope and accelerometer experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGyroscope and accelerometerの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Outside active gameplay, avoid direct interface manipulation with accelerometers or gyroscopes.” in the documented Gyroscope and accelerometer context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer",
+      "page_title": "Gyroscope and accelerometer",
+      "section_path": [
+        "Gyroscope and accelerometer",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T23:06:26Z",
+      "source_hash": "f5588f8f6c660bbae353f2429e3357002a479f9ab6de730456a528869acd5151",
+      "source_sentence_hash": "eb4d6da1e8a4508e8c4dda09c18706044767549d1a8d5740ab91acadf775183a",
+      "evidence_paraphrase": "Outside active gameplay, avoid direct interface manipulation with accelerometers or gyroscopes."
+    },
+    "tags": [
+      "inputs",
+      "gyro-and-accelerometer",
+      "best-practices"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Outside active gameplay, avoid direct interface manipulation with accelerometers or gyroscopes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

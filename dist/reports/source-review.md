@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1827
-- Reviewed batches: 124
+- Reviewed rules: 1830
+- Reviewed batches: 125
 - Official source only: yes
-- Reviewed at: 2026-07-21T23:02:30Z
+- Reviewed at: 2026-07-21T23:06:26Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1105,6 +1105,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-GESTURES-0032 · high — Recovered a specification rule and preserved every standard gesture, platform scope, and common action row. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0033 · high — Recovered the omitted responsiveness lead separately from predictive feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0034 · high — Recovered the omitted necessity lead and preserved its frequency and no-existing-gesture tests. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001 · high — Recorded the only-when boundary and separated unsupported collection from positive use. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
+- HIG-INPUTS-GYRO-AND-ACCELEROMETER-0002 · high — Recovered the explicit data-minimization prohibition as a separate privacy-aware rule. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
+- HIG-INPUTS-GYRO-AND-ACCELEROMETER-0003 · high — Recovered the inactive source lead, preserved the gameplay exception, and recorded accessibility, precision, and battery risks. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
 - HIG-INPUTS-KEYBOARDS-0001 · high — Reviewed accessibility first, preserved when-possible strength, and removed tvOS from the scope because the source lists four supported platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-KEYBOARDS-0002 · high — Recorded systemwide expectations and table provenance without copying the 116-row mapping table into the rule store. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-KEYBOARDS-0003 · high — Kept the general convention rule and represented the structured modifier recommendations as separate atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))

@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2712
+- Active atomic rules: 2714
 - Pages without rules: 16
-- Low-confidence rules: 817
-- Rules requiring human review: 817
+- Low-confidence rules: 816
+- Rules requiring human review: 816
 - Reference notes: 906
 
 ## Rules by category
@@ -16,13 +16,13 @@
 - components: 867
 - foundations: 346
 - getting-started: 100
-- inputs: 243
+- inputs: 245
 - patterns: 368
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 371
+- AVOID: 373
 - MAY: 331
 - MUST: 274
 - MUST_NOT: 24
@@ -31,17 +31,17 @@
 ## Rules by platform
 
 - carplay: 90
-- ios: 1770
-- ipados: 1742
-- macos: 1450
-- tvos: 1124
-- visionos: 1479
-- watchos: 1189
+- ios: 1772
+- ipados: 1744
+- macos: 1452
+- tvos: 1126
+- visionos: 1481
+- watchos: 1191
 
 ## Rules by testability
 
 - hybrid: 77
-- manual: 2635
+- manual: 2637
 
 ## Blocked pages
 
@@ -405,7 +405,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001
 - HIG-PATTERNS-CHARTING-DATA-0001
 - HIG-PATTERNS-CHARTING-DATA-0002
 - HIG-PATTERNS-CHARTING-DATA-0003
@@ -1225,7 +1224,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001
 - HIG-PATTERNS-CHARTING-DATA-0001
 - HIG-PATTERNS-CHARTING-DATA-0002
 - HIG-PATTERNS-CHARTING-DATA-0003

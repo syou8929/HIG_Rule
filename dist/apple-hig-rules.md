@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T23:05:29.324Z. 2712 active rules; 4 deprecated rules.
+Generated 2026-07-21T23:07:47.455Z. 2714 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2106,7 +2106,9 @@ Generated 2026-07-21T23:05:29.324Z. 2712 active rules; 4 deprecated rules.
 - **HIG-INPUTS-GESTURES-0034 · SHOULD · high** — Use a custom gesture only when a frequent specialized task lacks an existing gesture. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 ### gyro-and-accelerometer
 
-- **HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001 · SHOULD · low** — Choose or apply motion data only to offer a tangible benefit to people in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
+- **HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001 · SHOULD · high** — Use motion data only when it provides a tangible benefit to people. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
+- **HIG-INPUTS-GYRO-AND-ACCELEROMETER-0002 · AVOID · high** — Avoid collecting motion data without a tangible user benefit. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
+- **HIG-INPUTS-GYRO-AND-ACCELEROMETER-0003 · AVOID · high** — Outside active gameplay, avoid direct interface manipulation with accelerometers or gyroscopes. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
 ### keyboards
 
 - **HIG-INPUTS-KEYBOARDS-0001 · SHOULD · high** — Support Full Keyboard Access when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
