@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:53:10.036Z. 2220 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:01:24.884Z. 2236 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1099,20 +1099,36 @@ Generated 2026-07-21T16:53:10.036Z. 2220 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-LABELS-0004 · SHOULD · low** — Apply the documented Labels guidance to make useful label text selectable. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
 ### lists-and-tables
 
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0001 · SHOULD · low** — Favor displaying text in a list or table when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0002 · SHOULD · low** — Preserve people’s ability to edit a table when it makes sense. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0003 · SHOULD · low** — Make appropriate feedback when people select a list item available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0004 · SHOULD · low** — Maintain item text succinct so row content is comfortable to read. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0005 · MAY · low** — Evaluate whether ways to preserve readability of text that might otherwise get clipped or truncated is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0006 · SHOULD · low** — Choose or apply descriptive column headings in a multicolumn table in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0007 · SHOULD · low** — Apply the documented Lists and tables guidance to choose a table or list style that coordinates with your data and platform. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0008 · SHOULD · low** — Apply the documented Lists and tables guidance to choose a row style that fits the information you need to display. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0009 · SHOULD · low** — Choose or apply an info button only to reveal more information about a row’s content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0010 · AVOID · low** — Exclude adding an index to a table that displays controls — like disclosure indicators — in the trailing ends from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0011 · SHOULD · low** — Preserve people’s ability to resize columns. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0012 · MAY · low** — Evaluate whether using alternating row colors in a multicolumn table is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0013 · SHOULD · low** — Choose or apply an outline view instead of a table view to present hierarchical data in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
-- **HIG-COMPONENTS-LISTS-AND-TABLES-0014 · SHOULD · low** — Apply the documented Lists and tables guidance to confirm that images near a table still look good as each row highlights and slightly increases in size when. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0001 · SHOULD · high** — Prefer a list or table when displaying primarily textual content. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0002 · SHOULD · high** — Let people edit a table when editing makes sense for its content. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0003 · SHOULD · high** — Provide feedback that matches what selecting a list item does. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0004 · SHOULD · high** — Keep list- and table-item text succinct and comfortable to read. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0005 · MAY · high** — Consider ways to keep clipped or truncated table text recognizable and readable. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0006 · SHOULD · high** — Use descriptive headings for every multicolumn table column. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0007 · SHOULD · high** — Choose a list or table style that fits both the data and Apple platform. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0008 · SHOULD · high** — Choose a row style that fits the information each row needs to display. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0009 · SHOULD · high** — Use an info button only to reveal more information about a row’s content. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0010 · AVOID · high** — Avoid a table index when rows also have controls at their trailing ends. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0011 · SHOULD · high** — Let people resize columns in a macOS table. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0012 · MAY · high** — Consider alternating row colors in a macOS multicolumn table. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0013 · SHOULD · high** — Use an outline view instead of a table view for hierarchical macOS data. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0014 · SHOULD · high** — Confirm images near a tvOS table remain visually sound as a row gains focus. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0015 · MAY · high** — Consider a collection instead of a list or table for widely varying item sizes or many images. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0016 · MUST · high** — Require people to enter edit mode before selecting table items in iOS or iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0017 · SHOULD · high** — Keep a selected row persistently highlighted when a table navigates a hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0018 · SHOULD · high** — For option lists, briefly highlight a selected row before showing its selection indicator. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0019 · MAY · high** — Consider alternatives to oversized rows when each item contains a large amount of text. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0020 · MAY · high** — Consider a middle ellipsis when preserving both ends makes truncated text easier to recognize. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0021 · SHOULD · high** — Use nouns or short noun phrases for multicolumn table headings. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0022 · SHOULD · high** — Use title-style capitalization in multicolumn table headings. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0023 · AVOID · high** — Avoid ending punctuation in multicolumn table headings. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0024 · SHOULD · high** — Use a label or header to provide context when a single-column table omits its column heading. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0025 · SHOULD · high** — Use a disclosure indicator to open a list or table row’s hierarchical subviews. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0026 · SHOULD · high** — When it provides value, let people sort a macOS table by clicking a column heading. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0027 · SHOULD · high** — Reverse a macOS column’s sort direction when people click its already-sorted heading. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0028 · AVOID · high** — Avoid custom corner-rounding masks on images beside focused tvOS table rows. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0029 · SHOULD · high** — When possible, limit the number of rows in a watchOS list. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- **HIG-COMPONENTS-LISTS-AND-TABLES-0030 · SHOULD · high** — Keep watchOS detail views short when supporting vertical page-based navigation between list items. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
 ### live-activities
 
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0001 · SHOULD · high** — Offer a Live Activity for a short- or medium-duration task or event with a defined beginning and end. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))

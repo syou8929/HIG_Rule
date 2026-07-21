@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 989
-- Reviewed batches: 64
+- Reviewed rules: 1019
+- Reviewed batches: 65
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:50:39Z
+- Reviewed at: 2026-07-21T16:55:20Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -165,6 +165,36 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-IMAGE-VIEWS-0009 · high — Recovered the explicit Ensure requirement separately from the optional standout techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - HIG-COMPONENTS-IMAGE-VIEWS-0010 · high — Preserved the optional strength and the two documented treatment examples. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - HIG-COMPONENTS-IMAGE-VIEWS-0011 · high — Recovered the documented WatchKit fallback without raising the source's can language above MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0001 · high — Recorded the text-scanning rationale and separated the collection alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0002 · high — Recorded reordering as the key partial-editing example. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0003 · high — Separated the two documented selection-feedback patterns. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0004 · high — Recorded the wrapping, truncation, and scanning rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0005 · high — Recorded the variable-width condition and separated the middle-ellipsis technique. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0006 · high — Separated heading wording, capitalization, punctuation, and single-column fallback rules. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0007 · high — Recorded the purpose of platform styles without turning examples into universal requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0008 · high — Recorded information fit and treated platform APIs as examples. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0009 · high — Recorded the detail-only purpose and separated the disclosure-indicator alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0010 · high — Recorded the shared trailing-side conflict and accidental-activation risk. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0011 · high — Recorded both purposes of column resizing. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0012 · high — Preserved MAY and the wide-table tracking condition. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0013 · high — Recorded the nested-level reason for the component choice. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0014 · high — Repaired the truncated statement and removed the false gaze modality. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0015 · high — Recovered the collection alternative and preserved its consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0016 · high — Recovered the explicit must constraint and narrowed it to iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0017 · high — Recovered the hierarchy-specific selection-feedback pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0018 · high — Recovered the option-specific transient-feedback pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0019 · high — Recovered the large-text alternative and retained its example as optional. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0020 · high — Recovered the optional middle-ellipsis technique and its recognition condition. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0021 · high — Split heading wording from capitalization and punctuation. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0022 · high — Recovered the capitalization action as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0023 · high — Recovered the explicit don't clause conservatively as AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0024 · high — Recovered the conditional context fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0025 · high — Recovered the navigation-specific accessory alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0026 · high — Recovered the value-qualified column-sorting interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0027 · high — Recovered the repeat-click state transition as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0028 · high — Recovered the explicit don't clause as AVOID and kept focus from being misread as gaze. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0029 · high — Recovered the qualified lead and the expected-long-list exception. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
+- HIG-COMPONENTS-LISTS-AND-TABLES-0030 · high — Recovered the navigation-length constraint and its scrolling incompatibility. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0001 · high — Recorded the official short-to-medium duration scope and eight-hour upper bound. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0002 · high — Repaired the generated negative sentence and retained the task-related-content boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0003 · high — Recorded the official summary, redaction, and user-configuration mitigations for prominent surfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))

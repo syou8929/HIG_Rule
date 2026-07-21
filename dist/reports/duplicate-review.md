@@ -22,9 +22,8 @@ Exact statements are retained only when separate Apple HIG pages, sections, comp
 - HIG-COMPONENTS-BUTTONS-0009, HIG-PATTERNS-DRAG-AND-DROP-0005 — Retained because spring loading is independently discoverable for macOS buttons and the broader drag-and-drop pattern; the source-reviewed segmented-control rule is now context-specific.
   - HIG-COMPONENTS-BUTTONS-0009: Buttons > Platform considerations > macOS > Push buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
   - HIG-PATTERNS-DRAG-AND-DROP-0005: Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- HIG-COMPONENTS-COLUMN-VIEWS-0003, HIG-COMPONENTS-LISTS-AND-TABLES-0011, HIG-COMPONENTS-OUTLINE-VIEWS-0004 — Retained because column resizing applies in three distinct macOS component contexts and must remain retrievable from each.
+- HIG-COMPONENTS-COLUMN-VIEWS-0003, HIG-COMPONENTS-OUTLINE-VIEWS-0004 — Retained because column resizing remains independently discoverable in the macOS Column views and Outline views component contexts.
   - HIG-COMPONENTS-COLUMN-VIEWS-0003: Column views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
-  - HIG-COMPONENTS-LISTS-AND-TABLES-0011: Lists and tables > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
   - HIG-COMPONENTS-OUTLINE-VIEWS-0004: Outline views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-SEARCH-FIELDS-0015, HIG-PATTERNS-SEARCHING-0002 — Retained because the tvOS search-field rule is narrower than the cross-platform searching-pattern rule.
   - HIG-COMPONENTS-SEARCH-FIELDS-0015: Search fields > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
