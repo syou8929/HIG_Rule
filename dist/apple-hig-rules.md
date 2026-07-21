@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T20:05:29.496Z. 2431 active rules; 3 deprecated rules.
+Generated 2026-07-21T20:08:25.533Z. 2431 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -2016,10 +2016,10 @@ Generated 2026-07-21T20:05:29.496Z. 2431 active rules; 3 deprecated rules.
 - **HIG-INPUTS-KEYBOARDS-0004 · AVOID · low** — Exclude adding Shift to a shortcut that uses the upper character of a two-character key from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0005 · SHOULD · low** — Apply the documented Keyboards guidance to let the system localize and mirror your keyboard shortcuts as needed. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0006 · AVOID · low** — Exclude creating a new shortcut by adding a modifier to an existing shortcut for an unrelated command from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0007 · SHOULD · low** — Apply the documented Keyboards guidance to write descriptive shortcut titles. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0007 · MUST · high** — Make every visionOS shortcut title descriptive enough to convey its action without submenu context. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0008 · SHOULD · low** — Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0009 · AVOID · low** — Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
-- **HIG-INPUTS-KEYBOARDS-0010 · SHOULD · low** — Account for that people see an overlay when they use a physical keyboard with your visionOS app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0010 · SHOULD · high** — Account for the virtual keyboard overlay when a physical keyboard connects to a visionOS app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 ### nearby-interactions
 
 - **HIG-INPUTS-NEARBY-INTERACTIONS-0001 · MAY · low** — Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))

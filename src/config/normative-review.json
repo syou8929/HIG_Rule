@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:57:38Z",
+  "reviewed_at": "2026-07-21T20:07:20Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,24 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 241,
+  "reviewed_rule_count": 242,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-INPUTS-KEYBOARDS-0007": {
+      "title": "Make visionOS shortcut titles self-contained",
+      "statement": {"en": "Make every visionOS shortcut title descriptive enough to convey its action without submenu context.", "ja": "各visionOS shortcut titleをsubmenu contextなしでactionを伝えられる十分にdescriptiveな内容にする。"},
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["The shortcut appears in the visionOS shortcut interface's flat category list."],
+      "review_note": "Corrected SHOULD to MUST from the explicit Make sure directive and preserved the missing-submenu-context condition."
+    },
     "HIG-INPUTS-DIGITAL-CROWN-0005": {
       "title": "Back Digital Crown navigation with touch",
       "statement": {"en": "Back every Digital Crown navigation interaction with a corresponding touch interaction.", "ja": "すべてのDigital Crown navigation interactionを対応するtouch interactionで補完する。"},

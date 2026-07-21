@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1405
-- Reviewed batches: 93
+- Reviewed rules: 1407
+- Reviewed batches: 94
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:03:34Z
+- Reviewed at: 2026-07-21T20:07:20Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1065,6 +1065,8 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-GESTURES-0032 · high — Recovered a specification rule and preserved every standard gesture, platform scope, and common action row. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0033 · high — Recovered the omitted responsiveness lead separately from predictive feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0034 · high — Recovered the omitted necessity lead and preserved its frequency and no-existing-gesture tests. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-KEYBOARDS-0007 · high — Recorded the missing submenu-title context and the explicit requirement that each title convey its action independently. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-KEYBOARDS-0010 · high — Repaired the generated wording and recorded the system-provided overlay behavior without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-POINTING-DEVICES-0001 · high — Repaired the generic statement and recorded the cross-content consistency example. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0002 · high — Recorded the game scope, system examples, and customizable-gesture constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0003 · high — Repaired the truncated statement and preserved every named input method. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
