@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:36:28.631Z. 2680 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:39:29.664Z. 2680 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -557,7 +557,7 @@ Generated 2026-07-21T22:36:28.631Z. 2680 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-ENTERING-DATA-0001 · SHOULD · low** — Apply the documented Entering data guidance to be clear about the data you need. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - **HIG-PATTERNS-ENTERING-DATA-0002 · SHOULD · low** — Choose or apply a secure text-entry field when appropriate in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - **HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · medium** — Exclude prepopulate a password field from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
-- **HIG-PATTERNS-ENTERING-DATA-0004 · MAY · low** — Evaluate whether using an expansion tooltip to show the full version of clipped or truncated text in a field is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0004 · MAY · high** — Consider an expansion tooltip that shows the complete text when a macOS field clips or truncates it. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - **HIG-PATTERNS-ENTERING-DATA-0005 · SHOULD · low** — Let people provide data by dragging and dropping it or by pasting it wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 ### feedback
 

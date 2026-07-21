@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1759
-- Reviewed batches: 118
+- Reviewed rules: 1760
+- Reviewed batches: 119
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:35:00Z
+- Reviewed at: 2026-07-21T22:38:17Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1147,6 +1147,7 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-DRAG-AND-DROP-0023 · high — Recovered the qualified clipping option without raising its strength. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0024 · high — Activated the practicability-qualified inactive-window behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0025 · high — Activated the practicability-qualified visionOS launch behavior and recorded its user-activity mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-ENTERING-DATA-0004 · high — Preserved the source's Consider strength and recorded its clipping, hover, and platform scope without inventing editing-specific behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-FEEDBACK-0001 · high — Retained the accessibility-critical MUST and recorded the source's multimodal examples and receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0002 · high — Retained MAY and recorded the proximity, no-action, and unobtrusive-access conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0003 · high — Recorded the criticality, actionability preference, and proportional-interruption constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
