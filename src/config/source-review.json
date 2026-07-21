@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:27:00Z",
+  "reviewed_at": "2026-07-21T22:29:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2706,9 +2706,34 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons", "source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4"}],
       "rule_ids": ["HIG-COMPONENTS-POP-UP-BUTTONS-0008", "HIG-COMPONENTS-POP-UP-BUTTONS-0009"],
       "review_note": "Completed the iPadOS section, preserved the stable MAY rule with its popover, modal, list-item, and option-set conditions, and recovered the tvOS and watchOS platform limitation at AVOID."
+    },
+    {
+      "id": "priority-4-pull-down-buttons-ios-ipados-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:29:00Z",
+      "review_method": "Rendered Apple HIG Pull-down buttons platform overview and complete iOS and iPadOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons", "source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735"}],
+      "rule_ids": ["HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0007"],
+      "review_note": "Completed the iOS and iPadOS section, preserved the stable More-button MAY decision with its space and discoverability tradeoff, and recovered the tvOS and watchOS platform limitation at AVOID."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "90b2fad248c72dda9ce7c538d9e6c1277314d0534314866ed3e563585d16f259", "section_path": ["Pull-down buttons", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Consider a More pull-down button for nonprominent items",
+      "statement": {"en": "Consider a More pull-down button for items that don't need prominence.", "ja": "prominenceが不要なitemにはMore pull-down buttonを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Main-interface space is constrained.", "Balance the More button's compact size against reduced content predictability and discoverability."],
+      "review_note": "Restored the truncated recommendation and recorded both sides of the documented tradeoff."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0007": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "ac4521f7996b84e151f943fd0ecb42f777d6b4d6297601c14e1e849593cb7298", "section_path": ["Pull-down buttons", "Platform considerations"]},
+      "statement": {"en": "Avoid using pull-down buttons on tvOS or watchOS.", "ja": "tvOSまたはwatchOSでpull-down buttonを使わない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-component-specific", "platforms": ["tvos", "watchos"], "devices": ["apple-tv", "apple-watch"], "components": ["pull-down-buttons"], "modalities": []},
+      "conditions": ["Pull-down buttons have no additional considerations for macOS or visionOS."],
+      "review_note": "Recorded the descriptive tvOS and watchOS limitation at AVOID rather than MUST_NOT."
+    },
     "HIG-COMPONENTS-POP-UP-BUTTONS-0008": {
       "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "71848622b318ebcb01ec3aa8151e69f4d9ba3730139191bde8112be829eb5a65", "section_path": ["Pop-up buttons", "Platform considerations", "iPadOS"]},
       "title": "Consider a pop-up button for compact iPadOS list-item options",

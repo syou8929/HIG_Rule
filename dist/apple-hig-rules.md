@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:28:41.934Z. 2674 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:30:35.832Z. 2675 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1470,7 +1470,8 @@ Generated 2026-07-21T22:28:41.934Z. 2674 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003 · SHOULD · low** — Present a succinct menu title only if it adds meaning in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004 · SHOULD · low** — Preserve people’s ability to know when a pull-down button’s menu item is destructive, and ask them to confirm their intent. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005 · SHOULD · low** — Apply the documented Pull-down buttons guidance to include an interface icon with a menu item when it provides value. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
-- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006 · MAY · low** — Evaluate whether using a More pull-down button to present items that don’t need prominent positions in the main interface is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006 · MAY · high** — Consider a More pull-down button for items that don't need prominence. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0007 · AVOID · high** — Avoid using pull-down buttons on tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 ### rating-indicators
 
 - **HIG-COMPONENTS-RATING-INDICATORS-0001 · SHOULD · high** — Let people change an individual item’s ranking inline without opening a separate editing screen. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))

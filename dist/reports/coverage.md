@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2674
+- Active atomic rules: 2675
 - Pages without rules: 16
-- Low-confidence rules: 855
-- Rules requiring human review: 855
-- Reference notes: 910
+- Low-confidence rules: 854
+- Rules requiring human review: 854
+- Reference notes: 909
 
 ## Rules by category
 
-- components: 861
+- components: 862
 - foundations: 346
 - getting-started: 100
 - inputs: 219
@@ -22,7 +22,7 @@
 
 ## Normative levels
 
-- AVOID: 359
+- AVOID: 360
 - MAY: 329
 - MUST: 268
 - MUST_NOT: 24
@@ -34,14 +34,14 @@
 - ios: 1750
 - ipados: 1722
 - macos: 1436
-- tvos: 1114
+- tvos: 1115
 - visionos: 1470
-- watchos: 1181
+- watchos: 1182
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2604
+- manual: 2605
 
 ## Blocked pages
 
@@ -196,7 +196,6 @@ None.
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
@@ -1054,7 +1053,6 @@ None.
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
@@ -2402,7 +2400,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/progress-indicators · Progress indicators > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/progress-indicators · Progress indicators > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Change log — Section recorded for human review; no short atomic guidance lead was detected.
