@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:05:04Z",
+  "reviewed_at": "2026-07-21T19:15:40Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2291,6 +2291,21 @@
         "HIG-FOUNDATIONS-IMAGES-0033", "HIG-FOUNDATIONS-IMAGES-0034", "HIG-FOUNDATIONS-IMAGES-0035"
       ],
       "review_note": "Completed the priority-4 Images platform sections; preserved all existing IDs, recovered eighteen atomic rules and five source-supported MUST decisions, kept direct don't guidance at AVOID, and recorded the watchOS scaling table without promoting descriptive prose. Rule 0017 remains covered by its earlier watchOS batch."
+    },
+    {
+      "id": "priority-4-materials-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:15:40Z",
+      "review_method": "Rendered Apple HIG Materials platform considerations for iOS, iPadOS, macOS, tvOS, visionOS, and watchOS plus their supporting prose and tvOS mapping table were reviewed; two repeated live renders matched the recorded main-content hash. Common Materials guidance remains queued for later review.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/materials", "source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015"}],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-MATERIALS-0006", "HIG-FOUNDATIONS-MATERIALS-0007", "HIG-FOUNDATIONS-MATERIALS-0008", "HIG-FOUNDATIONS-MATERIALS-0009",
+        "HIG-FOUNDATIONS-MATERIALS-0010", "HIG-FOUNDATIONS-MATERIALS-0011", "HIG-FOUNDATIONS-MATERIALS-0012", "HIG-FOUNDATIONS-MATERIALS-0014",
+        "HIG-FOUNDATIONS-MATERIALS-0015", "HIG-FOUNDATIONS-MATERIALS-0016", "HIG-FOUNDATIONS-MATERIALS-0017", "HIG-FOUNDATIONS-MATERIALS-0018",
+        "HIG-FOUNDATIONS-MATERIALS-0019", "HIG-FOUNDATIONS-MATERIALS-0020", "HIG-FOUNDATIONS-MATERIALS-0021"
+      ],
+      "review_note": "Completed the priority-4 Materials platform sections; preserved every existing ID, recovered eight atomic rules, retained capability lists as MAY, and introduced no unsupported MUST or MUST_NOT rules."
     }
   ],
   "rules": {
@@ -4112,6 +4127,116 @@
       "statement": {"en": "Design watchOS autoscaling PDF images for 40 mm and 42 mm screens at 2x.", "ja": "watchOS autoscaling PDF imageを40mmおよび42mm screen向けに2xでdesignする。"},
       "conditions": ["WatchKit scales the base asset to 90% at 38 mm, 100% at 40 mm and 42 mm, 106% at 41 mm, 110% at 44 mm, and 119% at 45 mm and 49 mm."],
       "review_note": "Recovered the base-asset sizing action and preserved every value in the watchOS scaling table."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0006": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "5054d6c8f4208d4ef05c60d61ae93385683e4a9b4c6bf4928f301de4cc67da10", "section_path": ["Materials", "Platform considerations", "macOS"]},
+      "title": "Choose vibrancy intentionally in custom macOS controls",
+      "statement": {"en": "Choose intentionally when to allow vibrancy in custom macOS views and controls.", "ja": "custom macOS viewとcontrolでvibrancyを許可する場面を意図的に選ぶ。"},
+      "conditions": ["Test varied configurations, backgrounds, and system settings to confirm vibrancy improves appearance and communication."],
+      "review_note": "Recorded the context-testing requirement and system-setting dependence."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0007": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "3306285e69e2aac69e4cd419404237dd27785467c8448f9781195e33b54fcf8f", "section_path": ["Materials", "Platform considerations", "macOS"]},
+      "title": "Choose a complementary macOS background blending mode",
+      "statement": {"en": "Choose a macOS background blending mode that complements the interface design.", "ja": "interface designを補完するmacOS background blending modeを選ぶ。"},
+      "conditions": ["Choose between behind-window and within-window blending according to the intended background relationship."],
+      "review_note": "Recorded both system blending modes and their selection context."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0008": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "dc96f37b86456881bdd2f1b707e1a54e969caff0ddff7ff39cf71d92bde3c36b", "section_path": ["Materials", "Platform considerations", "visionOS"]},
+      "title": "Prefer translucent visionOS windows",
+      "statement": {"en": "Prefer translucency to opaque colors in visionOS windows.", "ja": "visionOS windowではopaque colorよりtranslucencyを優先する。"},
+      "conditions": ["Preserve awareness of physical and virtual surroundings and avoid making people feel constricted."],
+      "review_note": "Recorded the surroundings-awareness and comfort rationale for translucency."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0009": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "cc8ef2eeffc6f81448c2e8c41f6d03c7203a6fbc50c41b32b790aa6873ec55e7", "section_path": ["Materials", "Platform considerations", "watchOS"]},
+      "title": "Use materials to orient people in watchOS modal views",
+      "statement": {"en": "Use materials to provide context and orientation in full-screen watchOS modal views.", "ja": "full-screen watchOS modal viewでcontextとorientationを示すためmaterialを使う。"},
+      "conditions": ["Use layer contrast to distinguish controls and system elements from other content."],
+      "review_note": "Recorded the orientation and element-separation purposes and separated default-background avoidance."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0010": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "7d483dac54ba138d27c035cdab6291cd5ebae53ce94ff0b704dd1d055518d92d", "section_path": ["Materials", "Platform considerations", "visionOS"]},
+      "title": "Use label vibrancy for standard visionOS text",
+      "statement": {"en": "Use UIVibrancyEffectStyle.label for standard text in visionOS.", "ja": "visionOSのstandard textにはUIVibrancyEffectStyle.labelを使う。"},
+      "conditions": ["Use this highest text-vibrancy level to communicate the primary hierarchy."],
+      "review_note": "Recorded the standard-text mapping and its hierarchy role."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0011": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "d682368a17ec39d01f51625f90d1f3910c6fb8d366d65151a918b42a9b919e28", "section_path": ["Materials", "Platform considerations", "visionOS"]},
+      "title": "Use secondaryLabel vibrancy for descriptive visionOS text",
+      "statement": {"en": "Use UIVibrancyEffectStyle.secondaryLabel for descriptive visionOS text.", "ja": "visionOSのdescriptive textにはUIVibrancyEffectStyle.secondaryLabelを使う。"},
+      "conditions": ["The mapping includes footnotes, subtitles, and comparable secondary text."],
+      "review_note": "Recorded the descriptive-text mapping and examples."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0012": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "232166349af1518f497635746c7761041087d07b63b8222589180ddb85d60244", "section_path": ["Materials", "Platform considerations", "visionOS"]},
+      "title": "Reserve tertiaryLabel vibrancy for inactive visionOS elements",
+      "statement": {"en": "Use UIVibrancyEffectStyle.tertiaryLabel only for inactive visionOS elements that do not need high text legibility.", "ja": "高いtext legibilityが不要なinactive visionOS elementに限りUIVibrancyEffectStyle.tertiaryLabelを使う。"},
+      "conditions": ["The element is inactive and its text does not require high legibility."],
+      "review_note": "Preserved both the inactivity and lower-legibility limits."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0014": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "5caf1ee2a03132b9cb78619f6eb755ff504d3dd5eed5d27033340827e7789029", "section_path": ["Materials", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Consider standard iOS and iPadOS content-layer materials",
+      "statement": {"en": "Consider a standard iOS or iPadOS material to create distinction in the content layer.", "ja": "iOSまたはiPadOSのcontent layerでvisual distinctionを作るためstandard materialを検討する。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "conditions": ["Choose from ultraThin, thin, regular, or thick; regular is the default standard material."],
+      "review_note": "Recorded the four supported standard materials as an optional content-layer choice."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0015": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "0e97be13636d612247fb5fe3b0331304d23480ca214f70d44450e595ef5d5104", "section_path": ["Materials", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use nonquaternary label vibrancy on any iOS or iPadOS material",
+      "statement": {"en": "Use label, secondaryLabel, or tertiaryLabel vibrancy on any iOS or iPadOS material when appropriate.", "ja": "適切な場合は任意のiOSまたはiPadOS materialでlabel、secondaryLabel、tertiaryLabel vibrancyを使える。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "conditions": ["The default label level provides the highest contrast; lower levels communicate progressively less emphasis."],
+      "review_note": "Recorded the nonquaternary label styles as supported on every material, not as a requirement to use them."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0016": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "f9fc4cc64e591b92b47aa537ff80fc5797dc691d0c6b685671a6c3b25ec3f97e", "section_path": ["Materials", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Avoid quaternaryLabel on thin iOS and iPadOS materials",
+      "statement": {"en": "Avoid quaternaryLabel vibrancy on thin and ultraThin iOS or iPadOS materials.", "ja": "thinまたはultraThinのiOS/iPadOS materialではquaternaryLabel vibrancyを避ける。"},
+      "conditions": ["The combination provides contrast that is too low."],
+      "review_note": "Recovered the qualified low-contrast AVOID and its exact material scope."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0017": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "0e55ced26248adbdbc78a2e629b04e17a85a216026d947f36e8388924e28a32b", "section_path": ["Materials", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use fill vibrancy styles on any iOS or iPadOS material",
+      "statement": {"en": "Use fill, secondaryFill, or tertiaryFill vibrancy on any iOS or iPadOS material when appropriate.", "ja": "適切な場合は任意のiOSまたはiPadOS materialでfill、secondaryFill、tertiaryFill vibrancyを使える。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "conditions": ["All three documented fill vibrancy levels work on every standard material."],
+      "review_note": "Recorded the fill styles as supported capabilities rather than mandatory choices."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0018": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "0f65f0e5ef2828792642c510cbe7167e63420add354f93dacdb850296ca381b7", "section_path": ["Materials", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use default separator vibrancy on any iOS or iPadOS material",
+      "statement": {"en": "Use the default separator vibrancy on any iOS or iPadOS material when appropriate.", "ja": "適切な場合は任意のiOSまたはiPadOS materialでdefault separator vibrancyを使える。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "conditions": ["The system provides one separator vibrancy value that works on every standard material."],
+      "review_note": "Recorded the single supported separator value without inventing a requirement."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0019": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "20ca412120f6bd6a92e0d3482d02bd1d6f90da0e403174672d7859dac1a8bd18", "section_path": ["Materials", "Platform considerations", "tvOS"]},
+      "title": "Consider tvOS material thickness for view and color context",
+      "statement": {"en": "Consider a tvOS standard material whose thickness matches the view and color-scheme context.", "ja": "viewとcolor-schemeのcontextに合う厚さのtvOS standard materialを検討する。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "conditions": ["Use ultraThin for full-screen light views, thin for partially obscuring light overlays, regular for other partially obscuring overlays, and thick for partially obscuring dark overlays."],
+      "review_note": "Preserved all four table mappings as examples under the source's consider wording."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0020": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "4275c9da4ebed6fea090dd7e946e3602d260a88f4870efe5156c04a6e17bf7ec", "section_path": ["Materials", "Platform considerations", "visionOS"]},
+      "title": "Choose system materials for custom visionOS components",
+      "statement": {"en": "Choose a system material for a custom visionOS component when visual separation or interactivity needs emphasis.", "ja": "visual separationまたはinteractivityの強調が必要なcustom visionOS componentにはsystem materialを選ぶ。"},
+      "conditions": ["Use thin to emphasize interactive elements, regular to separate sections, and thick for a dark element over a regular background."],
+      "review_note": "Recovered the conditional custom-component choice and all three example material mappings."
+    },
+    "HIG-FOUNDATIONS-MATERIALS-0021": {
+      "source": {"source_hash": "2cc2f8091a6d15a32fe68bf1d2f872c0ab58d94c0ca000787c9072ebd5def015", "source_sentence_hash": "886d2f60278dddbf6d9ac084518a977cc7c1abc9a37a69a9346fdbada824914b", "section_path": ["Materials", "Platform considerations", "watchOS"]},
+      "title": "Avoid replacing default watchOS modal-sheet materials",
+      "statement": {"en": "Avoid removing or replacing a watchOS modal sheet’s default material background.", "ja": "watchOS modal sheetのdefault material backgroundを削除または置換しない。"},
+      "conditions": ["The modal sheet receives its material background by default."],
+      "review_note": "Recovered the default-background AVOID and kept it separate from the positive orientation rule."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

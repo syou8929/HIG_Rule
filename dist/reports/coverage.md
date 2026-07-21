@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2385
+- Active atomic rules: 2393
 - Pages without rules: 16
-- Low-confidence rules: 991
-- Rules requiring human review: 991
+- Low-confidence rules: 984
+- Rules requiring human review: 984
 - Reference notes: 929
 
 ## Rules by category
 
 - components: 858
-- foundations: 331
+- foundations: 339
 - getting-started: 85
 - inputs: 187
 - patterns: 289
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 315
-- MAY: 279
+- AVOID: 317
+- MAY: 284
 - MUST: 215
 - MUST_NOT: 21
-- SHOULD: 1555
+- SHOULD: 1556
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1638
-- ipados: 1611
+- ios: 1643
+- ipados: 1616
 - macos: 1370
-- tvos: 1069
-- visionos: 1426
-- watchos: 1119
+- tvos: 1070
+- visionos: 1427
+- watchos: 1120
 
 ## Rules by testability
 
 - hybrid: 60
-- manual: 2325
+- manual: 2333
 
 ## Blocked pages
 
@@ -340,13 +340,6 @@ None.
 - HIG-FOUNDATIONS-MATERIALS-0003
 - HIG-FOUNDATIONS-MATERIALS-0004
 - HIG-FOUNDATIONS-MATERIALS-0005
-- HIG-FOUNDATIONS-MATERIALS-0006
-- HIG-FOUNDATIONS-MATERIALS-0007
-- HIG-FOUNDATIONS-MATERIALS-0008
-- HIG-FOUNDATIONS-MATERIALS-0009
-- HIG-FOUNDATIONS-MATERIALS-0010
-- HIG-FOUNDATIONS-MATERIALS-0011
-- HIG-FOUNDATIONS-MATERIALS-0012
 - HIG-FOUNDATIONS-MATERIALS-0013
 - HIG-FOUNDATIONS-MOTION-0001
 - HIG-FOUNDATIONS-MOTION-0002
@@ -1334,13 +1327,6 @@ None.
 - HIG-FOUNDATIONS-MATERIALS-0003
 - HIG-FOUNDATIONS-MATERIALS-0004
 - HIG-FOUNDATIONS-MATERIALS-0005
-- HIG-FOUNDATIONS-MATERIALS-0006
-- HIG-FOUNDATIONS-MATERIALS-0007
-- HIG-FOUNDATIONS-MATERIALS-0008
-- HIG-FOUNDATIONS-MATERIALS-0009
-- HIG-FOUNDATIONS-MATERIALS-0010
-- HIG-FOUNDATIONS-MATERIALS-0011
-- HIG-FOUNDATIONS-MATERIALS-0012
 - HIG-FOUNDATIONS-MATERIALS-0013
 - HIG-FOUNDATIONS-MOTION-0001
 - HIG-FOUNDATIONS-MOTION-0002
@@ -2554,8 +2540,8 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/maps · Maps > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/maps · Maps > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Platform considerations — All platform sections were reviewed; system behavior and platform capabilities remain supporting context rather than standalone requirements.
+- https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Platform considerations > tvOS — The tvOS standard-material recommendation table is preserved as structured conditions in the reviewed mapping rule.
 - https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

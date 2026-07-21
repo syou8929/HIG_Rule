@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:12:24.879Z. 2385 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:19:02.373Z. 2393 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -362,14 +362,22 @@ Generated 2026-07-21T19:12:24.879Z. 2385 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-MATERIALS-0003 · SHOULD · low** — Apply the documented Materials guidance to choose materials and effects based on semantic meaning and recommended usage. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0004 · SHOULD · low** — Apply the documented Materials guidance to help ensure legibility by using vibrant colors on top of materials. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0005 · MAY · low** — Evaluate whether contrast and visual separation when choosing a material to combine with blur and vibrancy effects is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0006 · SHOULD · low** — Apply the documented Materials guidance to choose when to allow vibrancy in custom views and controls. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0007 · SHOULD · low** — Apply the documented Materials guidance to choose a background blending mode that complements your interface design. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0008 · SHOULD · low** — Favor translucency to opaque colors in windows when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0009 · SHOULD · low** — Choose or apply materials to provide context in a full-screen modal view in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0010 · SHOULD · low** — Choose or apply uIVibrancyEffectStyle.label for standard text in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0011 · SHOULD · low** — Choose or apply uIVibrancyEffectStyle.secondaryLabel for descriptive text like footnotes and subtitles in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0012 · SHOULD · low** — Choose or apply uIVibrancyEffectStyle.tertiaryLabel for inactive elements, and only when text doesn’t need high legibility in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0006 · SHOULD · high** — Choose intentionally when to allow vibrancy in custom macOS views and controls. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0007 · SHOULD · high** — Choose a macOS background blending mode that complements the interface design. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0008 · SHOULD · high** — Prefer translucency to opaque colors in visionOS windows. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0009 · SHOULD · high** — Use materials to provide context and orientation in full-screen watchOS modal views. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0010 · SHOULD · high** — Use UIVibrancyEffectStyle.label for standard text in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0011 · SHOULD · high** — Use UIVibrancyEffectStyle.secondaryLabel for descriptive visionOS text. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0012 · SHOULD · high** — Use UIVibrancyEffectStyle.tertiaryLabel only for inactive visionOS elements that do not need high text legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0013 · MAY · low** — When the underlying content is bright, consider adding a dark dimming layer of 35% opacity. For developer guidance, see. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0014 · MAY · high** — Consider a standard iOS or iPadOS material to create distinction in the content layer. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0015 · MAY · high** — Use label, secondaryLabel, or tertiaryLabel vibrancy on any iOS or iPadOS material when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0016 · AVOID · high** — Avoid quaternaryLabel vibrancy on thin and ultraThin iOS or iPadOS materials. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0017 · MAY · high** — Use fill, secondaryFill, or tertiaryFill vibrancy on any iOS or iPadOS material when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0018 · MAY · high** — Use the default separator vibrancy on any iOS or iPadOS material when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0019 · MAY · high** — Consider a tvOS standard material whose thickness matches the view and color-scheme context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0020 · SHOULD · high** — Choose a system material for a custom visionOS component when visual separation or interactivity needs emphasis. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0021 · AVOID · high** — Avoid removing or replacing a watchOS modal sheet’s default material background. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 ### motion
 
 - **HIG-FOUNDATIONS-MOTION-0001 · SHOULD · low** — Apply the documented Motion guidance to make motion optional. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1315
-- Reviewed batches: 82
+- Reviewed rules: 1330
+- Reviewed batches: 83
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:05:04Z
+- Reviewed at: 2026-07-21T19:15:40Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -792,6 +792,21 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-LAYOUT-0033 · high — Recovered the explicit row-and-column focus-spacing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0034 · high — Recovered the conditional Use lead and recorded the system-control separation purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0035 · high — Recovered the explicit spacing requirement while keeping 60 points as an example. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-MATERIALS-0006 · high — Recorded the context-testing requirement and system-setting dependence. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0007 · high — Recorded both system blending modes and their selection context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0008 · high — Recorded the surroundings-awareness and comfort rationale for translucency. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0009 · high — Recorded the orientation and element-separation purposes and separated default-background avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0010 · high — Recorded the standard-text mapping and its hierarchy role. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0011 · high — Recorded the descriptive-text mapping and examples. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0012 · high — Preserved both the inactivity and lower-legibility limits. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0014 · high — Recorded the four supported standard materials as an optional content-layer choice. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0015 · high — Recorded the nonquaternary label styles as supported on every material, not as a requirement to use them. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0016 · high — Recovered the qualified low-contrast AVOID and its exact material scope. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0017 · high — Recorded the fill styles as supported capabilities rather than mandatory choices. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0018 · high — Recorded the single supported separator value without inventing a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0019 · high — Preserved all four table mappings as examples under the source's consider wording. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0020 · high — Recovered the conditional custom-component choice and all three example material mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0021 · high — Recovered the default-background AVOID and kept it separate from the positive orientation rule. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - HIG-FOUNDATIONS-MOTION-0008 · high — Recorded field-of-view coverage, passthrough occlusion, and both comfort techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0009 · high — Retained MAY and recorded the no-useful-information condition and two fade phases. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0010 · high — Retained MAY and recorded the stationary containment that reduces discomfort. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
