@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T20:40:53.113Z. 2473 active rules; 3 deprecated rules.
+Generated 2026-07-21T20:49:55.556Z. 2488 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -760,14 +760,29 @@ Generated 2026-07-21T20:40:53.113Z. 2473 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-PLAYING-AUDIO-0004 · AVOID · low** — Exclude repurposing audio controls from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0005 · MAY · low** — Evaluate whether creating custom audio player controls only if you need to offer commands that the system doesn’t support is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0006 · SHOULD · low** — Apply the documented Playing audio guidance to let other apps know when your app finishes playing temporary audio. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0007 · SHOULD · low** — Choose or apply the system’s sound services to play short sounds and vibrations in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0008 · SHOULD · low** — Favor playing sound when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0009 · SHOULD · low** — Apply the documented Playing audio guidance to design custom sounds for custom UI elements. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0010 · SHOULD · low** — Choose or apply spatial Audio to create an intuitive, engaging experience in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0011 · MAY · low** — Evaluate whether defining a range of places from which your app sounds can originate is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0012 · MAY · low** — Evaluate whether varying sounds that people could perceive as repetitive over time is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0013 · SHOULD · low** — Choose or apply the recommended encoding values for media assets in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0007 · SHOULD · high** — Use system sound services to play short sounds and vibrations in iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0008 · SHOULD · high** — Prefer playing meaningful sound in visionOS, especially during immersive moments. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0009 · SHOULD · high** — For custom visionOS UI elements, design sounds that provide feedback and enhance the app's spatial experience. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0010 · SHOULD · high** — Use Spatial Audio to make a visionOS experience intuitive, engaging, and lifelike. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0011 · MAY · high** — Consider defining multiple spatial origins for stationary or moving visionOS sound sources. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0012 · MAY · high** — Consider varying visionOS sounds that people may perceive as repetitive over time. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0013 · SHOULD · high** — Use 64 kbps HE-AAC encoding for watchOS media audio assets. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0014 · SHOULD · low** — Determine how to respond to audio-session interruptions explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0015 · SHOULD · high** — Account for macOS notification sounds mixing with other audio by default. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0016 · SHOULD · high** — Design tvOS audio for playback that people initiate through app or game interactions or device calibration. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0017 · AVOID · high** — Avoid adding sounds to tvOS alerts or notifications. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0018 · AVOID · high** — Avoid communicating important information using sound alone. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0019 · MUST · high** — Always provide non-audio ways to help people understand important information. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0020 · SHOULD · high** — Account for Now Playing audio pausing automatically when people close its visionOS app window. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0021 · MAY · high** — Consider that audio from a non-Now Playing visionOS app can duck when people look toward another app. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0022 · SHOULD · high** — Create meaningful visionOS sounds that aid navigation and help people understand the app's spatial qualities. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0023 · MAY · high** — Consider combining ambient and object-specific Spatial Audio in a visionOS soundscape. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0024 · MAY · high** — Consider randomizing pitch and volume during playback to vary a repetitive visionOS sound efficiently. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0025 · SHOULD · high** — Decide whether each visionOS sound needs to be fixed to the wearer or tracked with an object. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0026 · SHOULD · high** — Prefer tracked visionOS sound when tying audio to an object enhances realism. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0027 · MAY · high** — Consider playing short audio clips while a watchOS app is active in the foreground. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0028 · MAY · high** — Consider playing longer watchOS audio that continues when people lower their wrist or switch apps. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0029 · MAY · high** — Consider presenting a watchOS Now Playing view for controlling current or recently played audio without leaving the app. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 ### playing-haptics
 
 - **HIG-PATTERNS-PLAYING-HAPTICS-0001 · SHOULD · low** — Choose or apply system-provided haptic patterns according to their documented meanings in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))

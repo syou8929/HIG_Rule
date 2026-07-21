@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T20:36:36Z",
+  "reviewed_at": "2026-07-21T20:43:22Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2528,6 +2528,19 @@
         "HIG-PATTERNS-OFFERING-HELP-0021", "HIG-PATTERNS-OFFERING-HELP-0022", "HIG-PATTERNS-OFFERING-HELP-0023", "HIG-PATTERNS-OFFERING-HELP-0024"
       ],
       "review_note": "Completed the remaining priority-4 tooltip section, preserved four existing IDs, recovered nine atomic rules, captured platform-specific trigger modalities and the 60–75-character target, and introduced no unsupported MUST or MUST_NOT rules."
+    },
+    {
+      "id": "priority-4-playing-audio-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T20:43:22Z",
+      "review_method": "Rendered Apple HIG Playing audio platform limitations and complete iOS, iPadOS, macOS, tvOS, visionOS, and watchOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/playing-audio", "source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31"}],
+      "rule_ids": [
+        "HIG-PATTERNS-PLAYING-AUDIO-0007", "HIG-PATTERNS-PLAYING-AUDIO-0008", "HIG-PATTERNS-PLAYING-AUDIO-0009", "HIG-PATTERNS-PLAYING-AUDIO-0010", "HIG-PATTERNS-PLAYING-AUDIO-0011", "HIG-PATTERNS-PLAYING-AUDIO-0012", "HIG-PATTERNS-PLAYING-AUDIO-0013",
+        "HIG-PATTERNS-PLAYING-AUDIO-0015", "HIG-PATTERNS-PLAYING-AUDIO-0016", "HIG-PATTERNS-PLAYING-AUDIO-0017", "HIG-PATTERNS-PLAYING-AUDIO-0018", "HIG-PATTERNS-PLAYING-AUDIO-0019", "HIG-PATTERNS-PLAYING-AUDIO-0020", "HIG-PATTERNS-PLAYING-AUDIO-0021", "HIG-PATTERNS-PLAYING-AUDIO-0022",
+        "HIG-PATTERNS-PLAYING-AUDIO-0023", "HIG-PATTERNS-PLAYING-AUDIO-0024", "HIG-PATTERNS-PLAYING-AUDIO-0025", "HIG-PATTERNS-PLAYING-AUDIO-0026", "HIG-PATTERNS-PLAYING-AUDIO-0027", "HIG-PATTERNS-PLAYING-AUDIO-0028", "HIG-PATTERNS-PLAYING-AUDIO-0029"
+      ],
+      "review_note": "Completed all platform sections, preserved seven existing IDs, recovered fifteen atomic rules, retained one explicit accessibility MUST, and kept descriptive capabilities and conditional choices at SHOULD, AVOID, or MAY."
     }
   ],
   "rules": {
@@ -5391,6 +5404,138 @@
       "title": "Omit ending punctuation from complete tooltip sentences", "statement": {"en": "For complete macOS and visionOS tooltip sentences, omit ending punctuation unless the app's style requires it.", "ja": "macOSとvisionOSの完全なtooltip文では、アプリのstyleで必要な場合を除き文末句読点を省く。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
       "conditions": ["The tooltip uses a complete sentence."], "exceptions": ["Keep ending punctuation when required for consistency with the app's style."], "review_note": "Recovered the conditional punctuation guidance and preserved its style-consistency exception."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0007": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "fd11890fdec0307d83e6627c3a695cd7e8f9d3fba2ab5973dc9612a6bacd0e5d", "section_path": ["Playing audio", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use system sound services for short sounds and vibrations", "statement": {"en": "Use system sound services to play short sounds and vibrations in iOS and iPadOS.", "ja": "iOSとiPadOSで短いsoundやvibrationを再生するにはsystem sound serviceを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": []},
+      "conditions": ["The app needs short audio or vibration feedback."], "review_note": "Narrowed the system-service recommendation to iOS and iPadOS short feedback."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0008": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "6c2ca0f2992ef4ec8dc6f841204f3c1fb6abbe9e37b7f2785cbea5177856cff0", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Prefer meaningful sound in visionOS", "statement": {"en": "Prefer playing meaningful sound in visionOS, especially during immersive moments.", "ja": "visionOSでは、特にimmersive momentで意味のあるsoundを再生することを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Use sound to aid navigation and explain spatial qualities rather than adding sound without purpose."], "review_note": "Made the generic preference meaningful and retained recommendation strength."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0009": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "f3c4f49463c3e7614f8aef9285a2d5e74d8069cd8c5ecb87cdd48d3914e98d78", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Design custom sounds for custom visionOS UI elements", "statement": {"en": "For custom visionOS UI elements, design sounds that provide feedback and enhance the app's spatial experience.", "ja": "customなvisionOS UI elementには、feedbackを提供しspatial experienceを高めるsoundを設計する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": ["gaze", "gesture"]},
+      "conditions": ["System-provided elements already use sound for location and interaction feedback."], "review_note": "Recorded the custom-element condition and the feedback and spatial purposes."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0010": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "cf20672f5742eaad61add187e023147b62b3e0fb3596634b410f5e1358b6ba3b", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Use Spatial Audio for intuitive visionOS experiences", "statement": {"en": "Use Spatial Audio to make a visionOS experience intuitive, engaging, and lifelike.", "ja": "visionOSの体験を直感的で魅力的かつlifelikeにするためSpatial Audioを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Spatial Audio can originate from ambient space or a specific object, especially in immersive contexts."], "review_note": "Made the platform and experiential goals explicit."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0011": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "d1b2df1762a3b7644f61683bb23ed872186a91d05821cab5f0f43d2a21d27381", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Consider multiple spatial origins for visionOS sounds", "statement": {"en": "Consider defining multiple spatial origins for stationary or moving visionOS sound sources.", "ja": "静止または移動するvisionOS sound sourceに複数のspatial originを定義することを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Spatial origin helps people locate the object that produces a sound."], "review_note": "Made the spatial-source purpose concrete without elevating consider guidance."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0012": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "0c014e7e0e523289b1f75ab1fe7b7f443081d305bd0813b7dbccd34474e5f188", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Consider varying repetitive visionOS sounds", "statement": {"en": "Consider varying visionOS sounds that people may perceive as repetitive over time.", "ja": "時間とともに反復的に感じられる可能性があるvisionOS soundの変化を検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The same sound repeats often enough to feel mechanical or fatiguing."], "review_note": "Narrowed the optional variation to repetitive visionOS sounds."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0013": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "20243faff73a3e9f94011424c8549755ec7bbcfc23bb524e65692a9d1532c8c5", "section_path": ["Playing audio", "Platform considerations", "watchOS"]},
+      "title": "Encode watchOS audio as 64 kbps HE-AAC", "statement": {"en": "Use 64 kbps HE-AAC encoding for watchOS media audio assets.", "ja": "watchOSのmedia audio assetには64 kbps HE-AAC encodingを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The format provides good audio quality with lower data requirements."], "review_note": "Recovered the exact encoding format and bitrate from supporting prose."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0015": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "1dc9239618b555483471aa6e77d1b6ca9b45c337e0a238376f46e0d8ea7fc87a", "section_path": ["Playing audio", "Platform considerations", "macOS"]},
+      "title": "Account for macOS notification sounds mixing with other audio", "statement": {"en": "Account for macOS notification sounds mixing with other audio by default.", "ja": "macOSのnotification soundが既定で他のaudioとmixされることを考慮する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
+      "conditions": ["The app's audio can play at the same time as a notification sound."], "review_note": "Recovered the macOS default as a platform constraint rather than a mandatory app behavior."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0016": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "7467d179cf95671241d0f4df35dcfc0c7b037018e7bb25e02c7dd978b29741a3", "section_path": ["Playing audio", "Platform considerations", "tvOS"]},
+      "title": "Design tvOS audio for user-initiated playback", "statement": {"en": "Design tvOS audio for playback that people initiate through app or game interactions or device calibration.", "ja": "tvOSのaudioは、appやgameの操作またはdevice calibrationで利用者が開始する再生として設計する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "conditions": ["tvOS plays audio only after one of the documented initiation paths."], "review_note": "Converted the system behavior into a conservative platform design constraint."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0017": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "7467d179cf95671241d0f4df35dcfc0c7b037018e7bb25e02c7dd978b29741a3", "section_path": ["Playing audio", "Platform considerations", "tvOS"]},
+      "title": "Avoid sounds for tvOS alerts and notifications", "statement": {"en": "Avoid adding sounds to tvOS alerts or notifications.", "ja": "tvOSのalertやnotificationにsoundを追加することを避ける。"}, "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "conditions": ["The system does not play sounds to accompany these components."], "review_note": "Recovered the documented example conservatively as AVOID, not MUST_NOT."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0018": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "edd9909d6fe63bfff2dc27a3df3f2e5a98f3dccef127cb85d11a212b93493a9f", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Avoid communicating important information using sound alone", "statement": {"en": "Avoid communicating important information using sound alone.", "ja": "重要な情報をsoundだけで伝えることを避ける。"}, "normative_level": "AVOID", "priority_rank": 2,
+      "scope": {"portability": "universal", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Important information needs a non-audio path for people who cannot hear it."], "review_note": "Recovered the every-platform accessibility guidance and retained direct avoid strength."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0019": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "edd9909d6fe63bfff2dc27a3df3f2e5a98f3dccef127cb85d11a212b93493a9f", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Always provide non-audio ways to understand important information", "statement": {"en": "Always provide non-audio ways to help people understand important information.", "ja": "重要な情報を理解できるよう、音声以外の方法を常に提供する。"}, "normative_level": "MUST", "priority_rank": 2,
+      "scope": {"portability": "universal", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Important information would otherwise rely on sound alone."], "review_note": "Recovered the every-platform accessibility MUST from the explicit Always directive."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0020": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "b1f8508bce404520b1773cd8f71c286718aabb550ab890f39865cb65135c8349", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Account for Now Playing audio pausing when its window closes", "statement": {"en": "Account for Now Playing audio pausing automatically when people close its visionOS app window.", "ja": "visionOSでNow Playing appのwindowを閉じるとaudioが自動停止することを考慮する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The app is the current Now Playing app."], "review_note": "Recovered the automatic pause behavior as a platform constraint."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0021": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "b1f8508bce404520b1773cd8f71c286718aabb550ab890f39865cb65135c8349", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Consider visionOS audio ducking when gaze moves away", "statement": {"en": "Consider that audio from a non-Now Playing visionOS app can duck when people look toward another app.", "ja": "Now PlayingではないvisionOS appのaudioが別のappへ視線を移すとduckされる可能性を考慮する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": ["gaze"]},
+      "conditions": ["The app is not the current Now Playing app."], "review_note": "Recovered the can-level ducking behavior as an optional platform consideration."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0022": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "6c2ca0f2992ef4ec8dc6f841204f3c1fb6abbe9e37b7f2785cbea5177856cff0", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Create meaningful visionOS sounds for navigation", "statement": {"en": "Create meaningful visionOS sounds that aid navigation and help people understand the app's spatial qualities.", "ja": "navigationを助け、appのspatial qualityを理解できる意味のあるvisionOS soundを作る。"},
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Evaluate sound opportunities throughout the design process."], "review_note": "Separated the concrete navigation and spatial-understanding purposes from the general preference."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0023": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "cf20672f5742eaad61add187e023147b62b3e0fb3596634b410f5e1358b6ba3b", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Consider combining ambient and object-specific Spatial Audio", "statement": {"en": "Consider combining ambient and object-specific Spatial Audio in a visionOS soundscape.", "ja": "visionOSのsoundscapeでambient audioとobject-specific Spatial Audioを組み合わせることを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Ambient audio can anchor a virtual world while an object-specific source can localize a sound."], "review_note": "Recovered the two optional Spatial Audio types without elevating consider guidance."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0024": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "0c014e7e0e523289b1f75ab1fe7b7f443081d305bd0813b7dbccd34474e5f188", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Consider randomizing pitch and volume for repetitive sounds", "statement": {"en": "Consider randomizing pitch and volume during playback to vary a repetitive visionOS sound efficiently.", "ja": "反復するvisionOS soundを効率よく変化させるため、再生中のpitchとvolumeのrandomizeを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Variation can replace creating multiple sound files."], "review_note": "Recovered the optional implementation technique and preserved its efficiency rationale."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0025": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "8a0252881e204030402d64faa0c0b860c6d139988b0a4639bfc55e6ec3c6d2ff", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Decide whether visionOS sound is wearer-fixed or tracked", "statement": {"en": "Decide whether each visionOS sound needs to be fixed to the wearer or tracked with an object.", "ja": "各visionOS soundをwearer-fixedにするかobjectに追従させるか決定する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Fixed sound stays directed at the wearer; tracked sound changes with an object's position."], "review_note": "Recovered the missing fixed-versus-tracked design decision and its perceptual distinction."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0026": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "8a0252881e204030402d64faa0c0b860c6d139988b0a4639bfc55e6ec3c6d2ff", "section_path": ["Playing audio", "Platform considerations", "visionOS"]},
+      "title": "Prefer tracked visionOS sound for realistic object audio", "statement": {"en": "Prefer tracked visionOS sound when tying audio to an object enhances realism.", "ja": "audioをobjectに結びつけることでrealismが高まる場合はtracked visionOS soundを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Changes in object distance or position should change what people hear."], "exceptions": ["Use fixed sound when an experience should envelop the wearer regardless of gaze or object movement."], "review_note": "Separated the tracked-sound preference and preserved the documented fixed-sound exception."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0027": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "84a410a310a224797c5bf1a5487244c40ed1f53a469cb1067dcde354c53b62cb", "section_path": ["Playing audio", "Platform considerations", "watchOS"]},
+      "title": "Consider short foreground audio in watchOS apps", "statement": {"en": "Consider playing short audio clips while a watchOS app is active in the foreground.", "ja": "watchOS appがforegroundでactiveな間に短いaudio clipを再生することを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The system manages watchOS audio playback."], "review_note": "Recovered the foreground playback capability as MAY."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0028": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "84a410a310a224797c5bf1a5487244c40ed1f53a469cb1067dcde354c53b62cb", "section_path": ["Playing audio", "Platform considerations", "watchOS"]},
+      "title": "Consider longer background audio in watchOS apps", "statement": {"en": "Consider playing longer watchOS audio that continues when people lower their wrist or switch apps.", "ja": "手首を下げたりappを切り替えたりしても継続する長いwatchOS audioの再生を検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Use the system-supported background audio capability."], "review_note": "Recovered the background playback capability as MAY and recorded its continuation conditions."
+    },
+    "HIG-PATTERNS-PLAYING-AUDIO-0029": {
+      "source": {"source_hash": "c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31", "source_sentence_hash": "7865bfdc8df47f7f8fc465e11092def955a395344398ad6092e689828f7f86c6", "section_path": ["Playing audio", "Platform considerations", "watchOS"]},
+      "title": "Consider a watchOS Now Playing view", "statement": {"en": "Consider presenting a watchOS Now Playing view for controlling current or recently played audio without leaving the app.", "ja": "appを離れず現在または最近再生したaudioを操作できるwatchOS Now Playing viewの表示を検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The system view displays the current source and selects the current or most recently used source automatically."], "review_note": "Recovered the missing optional Now Playing view and its source-selection behavior."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

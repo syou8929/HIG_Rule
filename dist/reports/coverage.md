@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2473
+- Active atomic rules: 2488
 - Pages without rules: 16
-- Low-confidence rules: 926
-- Rules requiring human review: 926
+- Low-confidence rules: 919
+- Rules requiring human review: 919
 - Reference notes: 928
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 346
 - getting-started: 100
 - inputs: 219
-- patterns: 315
+- patterns: 330
 - technologies: 635
 
 ## Normative levels
 
-- AVOID: 327
-- MAY: 294
-- MUST: 233
+- AVOID: 329
+- MAY: 300
+- MUST: 234
 - MUST_NOT: 21
-- SHOULD: 1598
+- SHOULD: 1604
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1655
-- ipados: 1622
-- macos: 1390
-- tvos: 1095
-- visionos: 1440
-- watchos: 1136
+- ios: 1657
+- ipados: 1624
+- macos: 1393
+- tvos: 1099
+- visionos: 1449
+- watchos: 1141
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2407
+- manual: 2422
 
 ## Blocked pages
 
@@ -531,13 +531,6 @@ None.
 - HIG-PATTERNS-PLAYING-AUDIO-0004
 - HIG-PATTERNS-PLAYING-AUDIO-0005
 - HIG-PATTERNS-PLAYING-AUDIO-0006
-- HIG-PATTERNS-PLAYING-AUDIO-0007
-- HIG-PATTERNS-PLAYING-AUDIO-0008
-- HIG-PATTERNS-PLAYING-AUDIO-0009
-- HIG-PATTERNS-PLAYING-AUDIO-0010
-- HIG-PATTERNS-PLAYING-AUDIO-0011
-- HIG-PATTERNS-PLAYING-AUDIO-0012
-- HIG-PATTERNS-PLAYING-AUDIO-0013
 - HIG-PATTERNS-PLAYING-AUDIO-0014
 - HIG-PATTERNS-PLAYING-HAPTICS-0001
 - HIG-PATTERNS-PLAYING-HAPTICS-0002
@@ -1460,13 +1453,6 @@ None.
 - HIG-PATTERNS-PLAYING-AUDIO-0004
 - HIG-PATTERNS-PLAYING-AUDIO-0005
 - HIG-PATTERNS-PLAYING-AUDIO-0006
-- HIG-PATTERNS-PLAYING-AUDIO-0007
-- HIG-PATTERNS-PLAYING-AUDIO-0008
-- HIG-PATTERNS-PLAYING-AUDIO-0009
-- HIG-PATTERNS-PLAYING-AUDIO-0010
-- HIG-PATTERNS-PLAYING-AUDIO-0011
-- HIG-PATTERNS-PLAYING-AUDIO-0012
-- HIG-PATTERNS-PLAYING-AUDIO-0013
 - HIG-PATTERNS-PLAYING-AUDIO-0014
 - HIG-PATTERNS-PLAYING-HAPTICS-0001
 - HIG-PATTERNS-PLAYING-HAPTICS-0002

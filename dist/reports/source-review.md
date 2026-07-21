@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1470
-- Reviewed batches: 99
+- Reviewed rules: 1492
+- Reviewed batches: 100
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:36:36Z
+- Reviewed at: 2026-07-21T20:43:22Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1234,6 +1234,28 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-OFFERING-HELP-0022 · high — Separated the second optional brevity technique and retained consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0023 · high — Recovered the conditional redesign prompt without promoting consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0024 · high — Recovered the conditional punctuation guidance and preserved its style-consistency exception. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-PLAYING-AUDIO-0007 · high — Narrowed the system-service recommendation to iOS and iPadOS short feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0008 · high — Made the generic preference meaningful and retained recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0009 · high — Recorded the custom-element condition and the feedback and spatial purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0010 · high — Made the platform and experiential goals explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0011 · high — Made the spatial-source purpose concrete without elevating consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0012 · high — Narrowed the optional variation to repetitive visionOS sounds. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0013 · high — Recovered the exact encoding format and bitrate from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0015 · high — Recovered the macOS default as a platform constraint rather than a mandatory app behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0016 · high — Converted the system behavior into a conservative platform design constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0017 · high — Recovered the documented example conservatively as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0018 · high — Recovered the every-platform accessibility guidance and retained direct avoid strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0019 · high — Recovered the every-platform accessibility MUST from the explicit Always directive. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0020 · high — Recovered the automatic pause behavior as a platform constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0021 · high — Recovered the can-level ducking behavior as an optional platform consideration. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0022 · high — Separated the concrete navigation and spatial-understanding purposes from the general preference. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0023 · high — Recovered the two optional Spatial Audio types without elevating consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0024 · high — Recovered the optional implementation technique and preserved its efficiency rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0025 · high — Recovered the missing fixed-versus-tracked design decision and its perceptual distinction. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0026 · high — Separated the tracked-sound preference and preserved the documented fixed-sound exception. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0027 · high — Recovered the foreground playback capability as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0028 · high — Recovered the background playback capability as MAY and recorded its continuation conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0029 · high — Recovered the missing optional Now Playing view and its source-selection behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-VIDEO-0001 · high — Recorded the system-player default and constrained the custom-player alternative to essential needs. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0002 · high — Retained MUST from the explicit always directive and recorded padding and Picture in Picture failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0003 · high — Recorded the value test and documented platform scope without treating extra information as a default. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))

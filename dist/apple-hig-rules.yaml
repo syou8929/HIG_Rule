@@ -104811,7 +104811,7 @@
     section_path:
       - Playing audio
       - Best practices
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 937ed5f8a06ebdd9c119e1d5497e1fd740c54ffcc9e6901b32adb50e26c6957a
     evidence_paraphrase: Choose or apply the system-provided volume view to let people make audio adjustments in the documented context.
@@ -104875,7 +104875,7 @@
     section_path:
       - Playing audio
       - Best practices
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 244df2a2d6f869f177570e12f98cbbf9a2e8232a5273b44b498e167b7b4fe238
     evidence_paraphrase: Apply the documented Playing audio guidance to choose an audio category that fits the way your app or game uses sound.
@@ -104939,7 +104939,7 @@
     section_path:
       - Playing audio
       - Best practices
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: dec3ef51f4f981484f5d58a33e7adb1ae07d7d86383c32fe0dc72dcddc33b41d
     evidence_paraphrase: Apply the documented Playing audio guidance to respond to audio controls only when it makes sense.
@@ -105003,7 +105003,7 @@
     section_path:
       - Playing audio
       - Best practices
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 53605f8ac0bec8afbc69912d0950c258ea9121b23bb3659876ae3c87bdc55a53
     evidence_paraphrase: Exclude repurposing audio controls from the applicable experience.
@@ -105067,7 +105067,7 @@
     section_path:
       - Playing audio
       - Best practices
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 4d736bd34c00c3cbb310b8696cbc52c17e66dc2b9f62b85a185a2a526163e1a1
     evidence_paraphrase: Evaluate whether creating custom audio player controls only if you need to offer commands that the system doesn’t support is appropriate for the current context.
@@ -105131,7 +105131,7 @@
     section_path:
       - Playing audio
       - Best practices
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 95af83c74447dfb1462a8ccd1bc3cc748833c9f6d783912af6be78d0dd3a7f6c
     evidence_paraphrase: Apply the documented Playing audio guidance to let other apps know when your app finishes playing temporary audio.
@@ -105144,20 +105144,20 @@
   apple_native_rule: Apply the documented Playing audio guidance to let other apps know when your app finishes playing temporary audio.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-AUDIO-0007
-  title: Use the system’s sound services to play short sounds and vibrations
+  title: Use system sound services for short sounds and vibrations
   category: patterns
   topic: playing-audio
   subtopic: ios-ipados
   statement:
-    en: Choose or apply the system’s sound services to play short sounds and vibrations in the documented context.
-    ja: 該当する状況ではthe system’s sound services to play short sounds and vibrationsを採用する。
+    en: Use system sound services to play short sounds and vibrations in iOS and iPadOS.
+    ja: iOSとiPadOSで短いsoundやvibrationを再生するにはsystem sound serviceを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - ios
       - ipados
@@ -105167,7 +105167,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The app needs short audio or vibration feedback.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
@@ -105175,7 +105175,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the system’s sound services to play short sounds and vibrations in the documented context.” in the documented Playing audio context?
+      - Does the design satisfy “Use system sound services to play short sounds and vibrations in iOS and iPadOS.” in the documented Playing audio context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -105188,10 +105188,10 @@
       - Playing audio
       - Platform considerations
       - iOS, iPadOS
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: fd11890fdec0307d83e6627c3a695cd7e8f9d3fba2ab5973dc9612a6bacd0e5d
-    evidence_paraphrase: Choose or apply the system’s sound services to play short sounds and vibrations in the documented context.
+    evidence_paraphrase: Use system sound services to play short sounds and vibrations in iOS and iPadOS.
   tags:
     - patterns
     - playing-audio
@@ -105199,23 +105199,23 @@
     - ios-ipados
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the system’s sound services to play short sounds and vibrations in the documented context.
+  apple_native_rule: Use system sound services to play short sounds and vibrations in iOS and iPadOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-AUDIO-0008
-  title: Prefer playing sound
+  title: Prefer meaningful sound in visionOS
   category: patterns
   topic: playing-audio
   subtopic: visionos
   statement:
-    en: Favor playing sound when the documented conditions apply.
-    ja: 該当条件ではplaying soundを優先する。
+    en: Prefer playing meaningful sound in visionOS, especially during immersive moments.
+    ja: visionOSでは、特にimmersive momentで意味のあるsoundを再生することを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - visionos
     devices:
@@ -105223,7 +105223,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use sound to aid navigation and explain spatial qualities rather than adding sound without purpose.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
@@ -105231,7 +105231,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor playing sound when the documented conditions apply.” in the documented Playing audio context?
+      - Does the design satisfy “Prefer playing meaningful sound in visionOS, especially during immersive moments.” in the documented Playing audio context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -105244,10 +105244,10 @@
       - Playing audio
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 6c2ca0f2992ef4ec8dc6f841204f3c1fb6abbe9e37b7f2785cbea5177856cff0
-    evidence_paraphrase: Favor playing sound when the documented conditions apply.
+    evidence_paraphrase: Prefer playing meaningful sound in visionOS, especially during immersive moments.
   tags:
     - patterns
     - playing-audio
@@ -105255,31 +105255,33 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Favor playing sound when the documented conditions apply.
+  apple_native_rule: Prefer playing meaningful sound in visionOS, especially during immersive moments.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-AUDIO-0009
-  title: Design custom sounds for custom UI elements
+  title: Design custom sounds for custom visionOS UI elements
   category: patterns
   topic: playing-audio
   subtopic: visionos
   statement:
-    en: Apply the documented Playing audio guidance to design custom sounds for custom UI elements.
-    ja: 「Playing audio」において「Design custom sounds for custom UI elements」の指針を適用する。
+    en: For custom visionOS UI elements, design sounds that provide feedback and enhance the app's spatial experience.
+    ja: customなvisionOS UI elementには、feedbackを提供しspatial experienceを高めるsoundを設計する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - visionos
     devices:
       - apple-vision-pro
     components: []
-    modalities: []
+    modalities:
+      - gaze
+      - gesture
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - System-provided elements already use sound for location and interaction feedback.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
@@ -105287,7 +105289,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Playing audio guidance to design custom sounds for custom UI elements.” in the documented Playing audio context?
+      - Does the design satisfy “For custom visionOS UI elements, design sounds that provide feedback and enhance the app's spatial experience.” in the documented Playing audio context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -105300,10 +105302,10 @@
       - Playing audio
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: f3c4f49463c3e7614f8aef9285a2d5e74d8069cd8c5ecb87cdd48d3914e98d78
-    evidence_paraphrase: Apply the documented Playing audio guidance to design custom sounds for custom UI elements.
+    evidence_paraphrase: For custom visionOS UI elements, design sounds that provide feedback and enhance the app's spatial experience.
   tags:
     - patterns
     - playing-audio
@@ -105311,23 +105313,23 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Playing audio guidance to design custom sounds for custom UI elements.
+  apple_native_rule: For custom visionOS UI elements, design sounds that provide feedback and enhance the app's spatial experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-AUDIO-0010
-  title: Use Spatial Audio to create an intuitive, engaging experience
+  title: Use Spatial Audio for intuitive visionOS experiences
   category: patterns
   topic: playing-audio
   subtopic: visionos
   statement:
-    en: Choose or apply spatial Audio to create an intuitive, engaging experience in the documented context.
-    ja: 該当する状況ではSpatial Audio to create an intuitive, engaging experienceを採用する。
+    en: Use Spatial Audio to make a visionOS experience intuitive, engaging, and lifelike.
+    ja: visionOSの体験を直感的で魅力的かつlifelikeにするためSpatial Audioを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - visionos
     devices:
@@ -105335,7 +105337,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Spatial Audio can originate from ambient space or a specific object, especially in immersive contexts.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
@@ -105343,7 +105345,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply spatial Audio to create an intuitive, engaging experience in the documented context.” in the documented Playing audio context?
+      - Does the design satisfy “Use Spatial Audio to make a visionOS experience intuitive, engaging, and lifelike.” in the documented Playing audio context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -105356,10 +105358,10 @@
       - Playing audio
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: cf20672f5742eaad61add187e023147b62b3e0fb3596634b410f5e1358b6ba3b
-    evidence_paraphrase: Choose or apply spatial Audio to create an intuitive, engaging experience in the documented context.
+    evidence_paraphrase: Use Spatial Audio to make a visionOS experience intuitive, engaging, and lifelike.
   tags:
     - patterns
     - playing-audio
@@ -105367,23 +105369,23 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply spatial Audio to create an intuitive, engaging experience in the documented context.
+  apple_native_rule: Use Spatial Audio to make a visionOS experience intuitive, engaging, and lifelike.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-AUDIO-0011
-  title: Consider defining a range of places from which your app sounds can originate
+  title: Consider multiple spatial origins for visionOS sounds
   category: patterns
   topic: playing-audio
   subtopic: visionos
   statement:
-    en: Evaluate whether defining a range of places from which your app sounds can originate is appropriate for the current context.
-    ja: defining a range of places from which your app sounds can originateが現在の状況に適切か検討する。
+    en: Consider defining multiple spatial origins for stationary or moving visionOS sound sources.
+    ja: 静止または移動するvisionOS sound sourceに複数のspatial originを定義することを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - visionos
     devices:
@@ -105391,7 +105393,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Spatial origin helps people locate the object that produces a sound.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
@@ -105399,7 +105401,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether defining a range of places from which your app sounds can originate is appropriate for the current context.” in the documented Playing audio context?
+      - Does the design satisfy “Consider defining multiple spatial origins for stationary or moving visionOS sound sources.” in the documented Playing audio context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -105412,10 +105414,10 @@
       - Playing audio
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: d1b2df1762a3b7644f61683bb23ed872186a91d05821cab5f0f43d2a21d27381
-    evidence_paraphrase: Evaluate whether defining a range of places from which your app sounds can originate is appropriate for the current context.
+    evidence_paraphrase: Consider defining multiple spatial origins for stationary or moving visionOS sound sources.
   tags:
     - patterns
     - playing-audio
@@ -105423,23 +105425,23 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether defining a range of places from which your app sounds can originate is appropriate for the current context.
+  apple_native_rule: Consider defining multiple spatial origins for stationary or moving visionOS sound sources.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-AUDIO-0012
-  title: Consider varying sounds that people could perceive as repetitive over time
+  title: Consider varying repetitive visionOS sounds
   category: patterns
   topic: playing-audio
   subtopic: visionos
   statement:
-    en: Evaluate whether varying sounds that people could perceive as repetitive over time is appropriate for the current context.
-    ja: varying sounds that people could perceive as repetitive over timeが現在の状況に適切か検討する。
+    en: Consider varying visionOS sounds that people may perceive as repetitive over time.
+    ja: 時間とともに反復的に感じられる可能性があるvisionOS soundの変化を検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - visionos
     devices:
@@ -105447,7 +105449,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The same sound repeats often enough to feel mechanical or fatiguing.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
@@ -105455,7 +105457,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether varying sounds that people could perceive as repetitive over time is appropriate for the current context.” in the documented Playing audio context?
+      - Does the design satisfy “Consider varying visionOS sounds that people may perceive as repetitive over time.” in the documented Playing audio context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -105468,10 +105470,10 @@
       - Playing audio
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 0c014e7e0e523289b1f75ab1fe7b7f443081d305bd0813b7dbccd34474e5f188
-    evidence_paraphrase: Evaluate whether varying sounds that people could perceive as repetitive over time is appropriate for the current context.
+    evidence_paraphrase: Consider varying visionOS sounds that people may perceive as repetitive over time.
   tags:
     - patterns
     - playing-audio
@@ -105479,23 +105481,23 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether varying sounds that people could perceive as repetitive over time is appropriate for the current context.
+  apple_native_rule: Consider varying visionOS sounds that people may perceive as repetitive over time.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-AUDIO-0013
-  title: Use the recommended encoding values for media assets
+  title: Encode watchOS audio as 64 kbps HE-AAC
   category: patterns
   topic: playing-audio
   subtopic: watchos
   statement:
-    en: Choose or apply the recommended encoding values for media assets in the documented context.
-    ja: 該当する状況ではthe recommended encoding values for media assetsを採用する。
+    en: Use 64 kbps HE-AAC encoding for watchOS media audio assets.
+    ja: watchOSのmedia audio assetには64 kbps HE-AAC encodingを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - watchos
     devices:
@@ -105503,7 +105505,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The format provides good audio quality with lower data requirements.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
@@ -105511,7 +105513,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the recommended encoding values for media assets in the documented context.” in the documented Playing audio context?
+      - Does the design satisfy “Use 64 kbps HE-AAC encoding for watchOS media audio assets.” in the documented Playing audio context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -105524,10 +105526,10 @@
       - Playing audio
       - Platform considerations
       - watchOS
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 20243faff73a3e9f94011424c8549755ec7bbcfc23bb524e65692a9d1532c8c5
-    evidence_paraphrase: Choose or apply the recommended encoding values for media assets in the documented context.
+    evidence_paraphrase: Use 64 kbps HE-AAC encoding for watchOS media audio assets.
   tags:
     - patterns
     - playing-audio
@@ -105535,7 +105537,7 @@
     - watchos
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the recommended encoding values for media assets in the documented context.
+  apple_native_rule: Use 64 kbps HE-AAC encoding for watchOS media audio assets.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-AUDIO-0014
   title: Determine how to respond to audio-session interruptions
@@ -105589,7 +105591,7 @@
     section_path:
       - Playing audio
       - Handling interruptions
-    retrieved_at: 2026-07-21T11:15:12.288Z
+    retrieved_at: 2026-07-21T20:43:22Z
     source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
     source_sentence_hash: 8d84138757fc90ac3205c447bc5aeba6ffdae797ddbf37a5781fd2e386a1caf8
     evidence_paraphrase: Determine how to respond to audio-session interruptions explicitly.
@@ -105600,6 +105602,869 @@
   priority_rank: 6
   status: active
   apple_native_rule: Determine how to respond to audio-session interruptions explicitly.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0015
+  title: Account for macOS notification sounds mixing with other audio
+  category: patterns
+  topic: playing-audio
+  subtopic: macos
+  statement:
+    en: Account for macOS notification sounds mixing with other audio by default.
+    ja: macOSのnotification soundが既定で他のaudioとmixされることを考慮する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The app's audio can play at the same time as a notification sound.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Account for macOS notification sounds mixing with other audio by default.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 1dc9239618b555483471aa6e77d1b6ca9b45c337e0a238376f46e0d8ea7fc87a
+    evidence_paraphrase: Account for macOS notification sounds mixing with other audio by default.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Account for macOS notification sounds mixing with other audio by default.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0016
+  title: Design tvOS audio for user-initiated playback
+  category: patterns
+  topic: playing-audio
+  subtopic: tvos
+  statement:
+    en: Design tvOS audio for playback that people initiate through app or game interactions or device calibration.
+    ja: tvOSのaudioは、appやgameの操作またはdevice calibrationで利用者が開始する再生として設計する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - tvos
+    devices:
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - tvOS plays audio only after one of the documented initiation paths.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Design tvOS audio for playback that people initiate through app or game interactions or device calibration.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - tvOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 7467d179cf95671241d0f4df35dcfc0c7b037018e7bb25e02c7dd978b29741a3
+    evidence_paraphrase: Design tvOS audio for playback that people initiate through app or game interactions or device calibration.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - tvos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Design tvOS audio for playback that people initiate through app or game interactions or device calibration.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0017
+  title: Avoid sounds for tvOS alerts and notifications
+  category: patterns
+  topic: playing-audio
+  subtopic: tvos
+  statement:
+    en: Avoid adding sounds to tvOS alerts or notifications.
+    ja: tvOSのalertやnotificationにsoundを追加することを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - tvos
+    devices:
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - The system does not play sounds to accompany these components.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid adding sounds to tvOS alerts or notifications.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - tvOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 7467d179cf95671241d0f4df35dcfc0c7b037018e7bb25e02c7dd978b29741a3
+    evidence_paraphrase: Avoid adding sounds to tvOS alerts or notifications.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - tvos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid adding sounds to tvOS alerts or notifications.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0018
+  title: Avoid communicating important information using sound alone
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Avoid communicating important information using sound alone.
+    ja: 重要な情報をsoundだけで伝えることを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: universal
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Important information needs a non-audio path for people who cannot hear it.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid communicating important information using sound alone.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: edd9909d6fe63bfff2dc27a3df3f2e5a98f3dccef127cb85d11a212b93493a9f
+    evidence_paraphrase: Avoid communicating important information using sound alone.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+  priority_rank: 2
+  status: active
+  apple_native_rule: Avoid communicating important information using sound alone.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0019
+  title: Always provide non-audio ways to understand important information
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Always provide non-audio ways to help people understand important information.
+    ja: 重要な情報を理解できるよう、音声以外の方法を常に提供する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: universal
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Important information would otherwise rely on sound alone.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Always provide non-audio ways to help people understand important information.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: edd9909d6fe63bfff2dc27a3df3f2e5a98f3dccef127cb85d11a212b93493a9f
+    evidence_paraphrase: Always provide non-audio ways to help people understand important information.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+  priority_rank: 2
+  status: active
+  apple_native_rule: Always provide non-audio ways to help people understand important information.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0020
+  title: Account for Now Playing audio pausing when its window closes
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Account for Now Playing audio pausing automatically when people close its visionOS app window.
+    ja: visionOSでNow Playing appのwindowを閉じるとaudioが自動停止することを考慮する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - The app is the current Now Playing app.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Account for Now Playing audio pausing automatically when people close its visionOS app window.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: b1f8508bce404520b1773cd8f71c286718aabb550ab890f39865cb65135c8349
+    evidence_paraphrase: Account for Now Playing audio pausing automatically when people close its visionOS app window.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Account for Now Playing audio pausing automatically when people close its visionOS app window.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0021
+  title: Consider visionOS audio ducking when gaze moves away
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Consider that audio from a non-Now Playing visionOS app can duck when people look toward another app.
+    ja: Now PlayingではないvisionOS appのaudioが別のappへ視線を移すとduckされる可能性を考慮する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: platform-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities:
+      - gaze
+  conditions:
+    - The app is not the current Now Playing app.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider that audio from a non-Now Playing visionOS app can duck when people look toward another app.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: b1f8508bce404520b1773cd8f71c286718aabb550ab890f39865cb65135c8349
+    evidence_paraphrase: Consider that audio from a non-Now Playing visionOS app can duck when people look toward another app.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+    - gaze
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider that audio from a non-Now Playing visionOS app can duck when people look toward another app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0022
+  title: Create meaningful visionOS sounds for navigation
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Create meaningful visionOS sounds that aid navigation and help people understand the app's spatial qualities.
+    ja: navigationを助け、appのspatial qualityを理解できる意味のあるvisionOS soundを作る。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Evaluate sound opportunities throughout the design process.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Create meaningful visionOS sounds that aid navigation and help people understand the app's spatial qualities.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 6c2ca0f2992ef4ec8dc6f841204f3c1fb6abbe9e37b7f2785cbea5177856cff0
+    evidence_paraphrase: Create meaningful visionOS sounds that aid navigation and help people understand the app's spatial qualities.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Create meaningful visionOS sounds that aid navigation and help people understand the app's spatial qualities.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0023
+  title: Consider combining ambient and object-specific Spatial Audio
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Consider combining ambient and object-specific Spatial Audio in a visionOS soundscape.
+    ja: visionOSのsoundscapeでambient audioとobject-specific Spatial Audioを組み合わせることを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: platform-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Ambient audio can anchor a virtual world while an object-specific source can localize a sound.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider combining ambient and object-specific Spatial Audio in a visionOS soundscape.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: cf20672f5742eaad61add187e023147b62b3e0fb3596634b410f5e1358b6ba3b
+    evidence_paraphrase: Consider combining ambient and object-specific Spatial Audio in a visionOS soundscape.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider combining ambient and object-specific Spatial Audio in a visionOS soundscape.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0024
+  title: Consider randomizing pitch and volume for repetitive sounds
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Consider randomizing pitch and volume during playback to vary a repetitive visionOS sound efficiently.
+    ja: 反復するvisionOS soundを効率よく変化させるため、再生中のpitchとvolumeのrandomizeを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: platform-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Variation can replace creating multiple sound files.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider randomizing pitch and volume during playback to vary a repetitive visionOS sound efficiently.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 0c014e7e0e523289b1f75ab1fe7b7f443081d305bd0813b7dbccd34474e5f188
+    evidence_paraphrase: Consider randomizing pitch and volume during playback to vary a repetitive visionOS sound efficiently.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider randomizing pitch and volume during playback to vary a repetitive visionOS sound efficiently.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0025
+  title: Decide whether visionOS sound is wearer-fixed or tracked
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Decide whether each visionOS sound needs to be fixed to the wearer or tracked with an object.
+    ja: 各visionOS soundをwearer-fixedにするかobjectに追従させるか決定する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Fixed sound stays directed at the wearer; tracked sound changes with an object's position.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Decide whether each visionOS sound needs to be fixed to the wearer or tracked with an object.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 8a0252881e204030402d64faa0c0b860c6d139988b0a4639bfc55e6ec3c6d2ff
+    evidence_paraphrase: Decide whether each visionOS sound needs to be fixed to the wearer or tracked with an object.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Decide whether each visionOS sound needs to be fixed to the wearer or tracked with an object.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0026
+  title: Prefer tracked visionOS sound for realistic object audio
+  category: patterns
+  topic: playing-audio
+  subtopic: visionos
+  statement:
+    en: Prefer tracked visionOS sound when tying audio to an object enhances realism.
+    ja: audioをobjectに結びつけることでrealismが高まる場合はtracked visionOS soundを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Changes in object distance or position should change what people hear.
+  exceptions:
+    - Use fixed sound when an experience should envelop the wearer regardless of gaze or object movement.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prefer tracked visionOS sound when tying audio to an object enhances realism.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 8a0252881e204030402d64faa0c0b860c6d139988b0a4639bfc55e6ec3c6d2ff
+    evidence_paraphrase: Prefer tracked visionOS sound when tying audio to an object enhances realism.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Prefer tracked visionOS sound when tying audio to an object enhances realism.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0027
+  title: Consider short foreground audio in watchOS apps
+  category: patterns
+  topic: playing-audio
+  subtopic: watchos
+  statement:
+    en: Consider playing short audio clips while a watchOS app is active in the foreground.
+    ja: watchOS appがforegroundでactiveな間に短いaudio clipを再生することを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The system manages watchOS audio playback.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider playing short audio clips while a watchOS app is active in the foreground.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 84a410a310a224797c5bf1a5487244c40ed1f53a469cb1067dcde354c53b62cb
+    evidence_paraphrase: Consider playing short audio clips while a watchOS app is active in the foreground.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider playing short audio clips while a watchOS app is active in the foreground.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0028
+  title: Consider longer background audio in watchOS apps
+  category: patterns
+  topic: playing-audio
+  subtopic: watchos
+  statement:
+    en: Consider playing longer watchOS audio that continues when people lower their wrist or switch apps.
+    ja: 手首を下げたりappを切り替えたりしても継続する長いwatchOS audioの再生を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Use the system-supported background audio capability.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider playing longer watchOS audio that continues when people lower their wrist or switch apps.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 84a410a310a224797c5bf1a5487244c40ed1f53a469cb1067dcde354c53b62cb
+    evidence_paraphrase: Consider playing longer watchOS audio that continues when people lower their wrist or switch apps.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider playing longer watchOS audio that continues when people lower their wrist or switch apps.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-AUDIO-0029
+  title: Consider a watchOS Now Playing view
+  category: patterns
+  topic: playing-audio
+  subtopic: watchos
+  statement:
+    en: Consider presenting a watchOS Now Playing view for controlling current or recently played audio without leaving the app.
+    ja: appを離れず現在または最近再生したaudioを操作できるwatchOS Now Playing viewの表示を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The system view displays the current source and selects the current or most recently used source automatically.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing audio experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying audioの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider presenting a watchOS Now Playing view for controlling current or recently played audio without leaving the app.” in the documented Playing audio context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-audio
+    page_title: Playing audio
+    section_path:
+      - Playing audio
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:43:22Z
+    source_hash: c08f405cfc324e27772a9f06dc6ce2a43637a4f37f758916cb12703b4f4d2e31
+    source_sentence_hash: 7865bfdc8df47f7f8fc465e11092def955a395344398ad6092e689828f7f86c6
+    evidence_paraphrase: Consider presenting a watchOS Now Playing view for controlling current or recently played audio without leaving the app.
+  tags:
+    - patterns
+    - playing-audio
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider presenting a watchOS Now Playing view for controlling current or recently played audio without leaving the app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-HAPTICS-0001
   title: Use system-provided haptic patterns according to their documented meanings
