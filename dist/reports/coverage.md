@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2454
+- Active atomic rules: 2459
 - Pages without rules: 16
-- Low-confidence rules: 934
-- Rules requiring human review: 934
+- Low-confidence rules: 932
+- Rules requiring human review: 932
 - Reference notes: 928
 
 ## Rules by category
@@ -17,23 +17,23 @@
 - foundations: 346
 - getting-started: 100
 - inputs: 219
-- patterns: 296
+- patterns: 301
 - technologies: 635
 
 ## Normative levels
 
-- AVOID: 324
-- MAY: 286
+- AVOID: 326
+- MAY: 287
 - MUST: 233
 - MUST_NOT: 21
-- SHOULD: 1590
+- SHOULD: 1592
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1654
-- ipados: 1621
-- macos: 1378
+- ios: 1655
+- ipados: 1622
+- macos: 1382
 - tvos: 1090
 - visionos: 1432
 - watchos: 1136
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2388
+- manual: 2393
 
 ## Blocked pages
 
@@ -471,8 +471,6 @@ None.
 - HIG-PATTERNS-GOING-FULL-SCREEN-0001
 - HIG-PATTERNS-GOING-FULL-SCREEN-0002
 - HIG-PATTERNS-GOING-FULL-SCREEN-0003
-- HIG-PATTERNS-GOING-FULL-SCREEN-0004
-- HIG-PATTERNS-GOING-FULL-SCREEN-0005
 - HIG-PATTERNS-LAUNCHING-0001
 - HIG-PATTERNS-LAUNCHING-0002
 - HIG-PATTERNS-LAUNCHING-0003
@@ -1408,8 +1406,6 @@ None.
 - HIG-PATTERNS-GOING-FULL-SCREEN-0001
 - HIG-PATTERNS-GOING-FULL-SCREEN-0002
 - HIG-PATTERNS-GOING-FULL-SCREEN-0003
-- HIG-PATTERNS-GOING-FULL-SCREEN-0004
-- HIG-PATTERNS-GOING-FULL-SCREEN-0005
 - HIG-PATTERNS-LAUNCHING-0001
 - HIG-PATTERNS-LAUNCHING-0002
 - HIG-PATTERNS-LAUNCHING-0003

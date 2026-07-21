@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T20:18:08Z",
+  "reviewed_at": "2026-07-21T20:23:04Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2491,6 +2491,18 @@
         "HIG-PATTERNS-DRAG-AND-DROP-0025"
       ],
       "review_note": "Completed the priority-4 platform sections, preserved six existing IDs, recovered seven atomic rules, and separated four explicit source-supported MUST requirements from optional and practicability-qualified guidance."
+    },
+    {
+      "id": "priority-4-going-full-screen-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T20:23:04Z",
+      "review_method": "Rendered Apple HIG Going full screen platform limitations and complete iOS, iPadOS, and macOS platform guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen", "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b"}],
+      "rule_ids": [
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0004", "HIG-PATTERNS-GOING-FULL-SCREEN-0005", "HIG-PATTERNS-GOING-FULL-SCREEN-0006", "HIG-PATTERNS-GOING-FULL-SCREEN-0007",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0008", "HIG-PATTERNS-GOING-FULL-SCREEN-0009", "HIG-PATTERNS-GOING-FULL-SCREEN-0010", "HIG-PATTERNS-GOING-FULL-SCREEN-0011"
+      ],
+      "review_note": "Completed the priority-4 platform sections, preserved the three existing IDs, recovered five atomic rules, retained the existing user-choice MUST, and kept direct don't guidance at AVOID."
     }
   ],
   "rules": {
@@ -5184,6 +5196,54 @@
       "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "5598072c43790d1b84a9cc529eefa211e6a2712ea4733e1b37bf8608317e5b4b", "section_path": ["Drag and drop", "Platform considerations", "visionOS"]},
       "title": "Launch the app for empty-space drops when possible", "statement": {"en": "When possible, launch the visionOS app to handle its content when people drop that content into empty space.", "ja": "可能な場合、visionOS appのcontentがempty spaceへdropされたときappをlaunchして処理する。"},
       "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": ["gesture"]}, "conditions": ["Associate an appropriate user activity with draggable app content so the app can open a handling window or scene."], "review_note": "Activated the practicability-qualified visionOS launch behavior and recorded its user-activity mechanism."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0004": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "9bd17e45b05f27500b5d7b3997db09c07fb984ae49bc3a4438410d37a50207b3", "section_path": ["Going full screen", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Consider deferring full-screen exit gestures", "statement": {"en": "Consider requiring two swipes to exit a full-screen iOS or iPadOS app when one swipe causes unexpected exits.", "ja": "1 swipeで予期しないexitが起きる場合、full-screen iOSまたはiPadOS appのexitに2 swipeを要求することを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch", "gesture"]},
+      "conditions": ["The default one-swipe exit behavior causes unexpected exits."], "review_note": "Narrowed gesture deferral to the documented unexpected-exit condition and two-swipe option."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0005": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "9fde92cf7d9eb929c162cb3381e6f3160f273b39f146b4d6c74ee2c04ee7349a", "section_path": ["Going full screen", "Platform considerations", "macOS"]},
+      "title": "Use the system macOS full-screen experience", "statement": {"en": "Use the system-provided macOS full-screen experience.", "ja": "system-providedのmacOS full-screen experienceを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
+      "conditions": ["Let system support accommodate all Mac display contexts, including camera-housing areas."], "review_note": "Narrowed scope to macOS and recorded system-managed display accommodation."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0006": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "d041ef165e61b0543dc1bb4c5b917a7b3d31be0f674a96c9b394b88690a2200c", "section_path": ["Going full screen", "Platform considerations", "macOS"]},
+      "title": "Always let people choose when to enter full screen", "statement": {"en": "Always let people choose when to enter full-screen mode on macOS.", "ja": "macOSでfull-screen modeへ入る時点を常に利用者が選べるようにする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": ["keyboard", "pointer"]},
+      "conditions": ["Do not enter full screen automatically on a person's behalf."], "review_note": "Reconfirmed the existing Always-based MUST and recorded explicit user choice and input modalities."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0007": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "9bd17e45b05f27500b5d7b3997db09c07fb984ae49bc3a4438410d37a50207b3", "section_path": ["Going full screen", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Retain default full-screen exit gestures", "statement": {"en": "Whenever possible, retain the familiar default full-screen exit gesture behavior in iOS and iPadOS.", "ja": "可能な限りiOSとiPadOSの馴染みあるdefault full-screen exit gesture behaviorを維持する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch", "gesture"]},
+      "conditions": ["The Home Screen indicator reappears near the bottom and permits a one-swipe exit."], "exceptions": ["Consider gesture deferral only when the default produces unexpected exits."], "review_note": "Separated the practicability-qualified default from the optional deferral exception."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0008": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "4afc7ee25b6868c5679f8880be895b3a06415d6440ba758a1e0f373033d0f9c5", "section_path": ["Going full screen", "Platform considerations", "macOS"]},
+      "title": "Avoid changing display mode for full-screen games", "statement": {"en": "Avoid changing the display mode when a macOS game enters full screen.", "ja": "macOS gameがfull screenへ入るときdisplay modeを変更しない。"}, "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
+      "conditions": ["Preserve player control because automatic display-mode changes do not improve performance."], "review_note": "Activated the direct don't guidance conservatively as AVOID."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0009": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "d041ef165e61b0543dc1bb4c5b917a7b3d31be0f674a96c9b394b88690a2200c", "section_path": ["Going full screen", "Platform considerations", "macOS"]},
+      "title": "Prefer standard macOS full-screen controls", "statement": {"en": "Prefer standard macOS controls for entering full-screen mode.", "ja": "full-screen modeへ入るにはstandard macOS controlを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": ["keyboard", "pointer"]},
+      "conditions": ["Support the window button, View menu item, or Control-Command-F shortcut."], "review_note": "Split the standard-control preference and recorded all three system entry methods."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0010": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "d041ef165e61b0543dc1bb4c5b917a7b3d31be0f674a96c9b394b88690a2200c", "section_path": ["Going full screen", "Platform considerations", "macOS"]},
+      "title": "Avoid custom macOS window-mode menus", "statement": {"en": "Avoid offering a custom menu of macOS window modes.", "ja": "customなmacOS window mode menuの提供を避ける。"}, "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": ["pointer"]},
+      "conditions": ["Use standard full-screen entry mechanisms instead."], "review_note": "Split the direct custom-menu avoidance from the positive standard-control preference."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0011": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "d041ef165e61b0543dc1bb4c5b917a7b3d31be0f674a96c9b394b88690a2200c", "section_path": ["Going full screen", "Platform considerations", "macOS"]},
+      "title": "Consider a game full-screen toggle", "statement": {"en": "In a macOS game, consider a custom toggle for turning full-screen mode on and off.", "ja": "macOS gameではfull-screen modeをon/offするcustom toggleを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
+      "conditions": ["The custom toggle supplements rather than replaces standard full-screen controls."], "review_note": "Separated the game-specific optional toggle without promoting its might-level strength."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

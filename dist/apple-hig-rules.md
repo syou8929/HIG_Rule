@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T20:21:19.055Z. 2454 active rules; 3 deprecated rules.
+Generated 2026-07-21T20:26:42.489Z. 2459 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -613,9 +613,14 @@ Generated 2026-07-21T20:21:19.055Z. 2454 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-GOING-FULL-SCREEN-0001 · SHOULD · low** — Ensure the experience accommodates full-screen mode when it makes sense for your experience. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - **HIG-PATTERNS-GOING-FULL-SCREEN-0002 · SHOULD · low** — Preserve people’s ability to choose when to exit full-screen mode. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - **HIG-PATTERNS-GOING-FULL-SCREEN-0003 · SHOULD · low** — Apply the documented Going full screen guidance to prioritize content by temporarily hiding toolbars and navigation controls. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
-- **HIG-PATTERNS-GOING-FULL-SCREEN-0004 · MAY · low** — Evaluate whether deferring system gestures to prevent accidental exits in a full-screen app or game is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
-- **HIG-PATTERNS-GOING-FULL-SCREEN-0005 · SHOULD · low** — Choose or apply the system-provided full-screen experience in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
-- **HIG-PATTERNS-GOING-FULL-SCREEN-0006 · MUST · medium** — Let people choose when to enter full-screen mode in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- **HIG-PATTERNS-GOING-FULL-SCREEN-0004 · MAY · high** — Consider requiring two swipes to exit a full-screen iOS or iPadOS app when one swipe causes unexpected exits. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- **HIG-PATTERNS-GOING-FULL-SCREEN-0005 · SHOULD · high** — Use the system-provided macOS full-screen experience. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- **HIG-PATTERNS-GOING-FULL-SCREEN-0006 · MUST · high** — Always let people choose when to enter full-screen mode on macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- **HIG-PATTERNS-GOING-FULL-SCREEN-0007 · SHOULD · high** — Whenever possible, retain the familiar default full-screen exit gesture behavior in iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- **HIG-PATTERNS-GOING-FULL-SCREEN-0008 · AVOID · high** — Avoid changing the display mode when a macOS game enters full screen. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- **HIG-PATTERNS-GOING-FULL-SCREEN-0009 · SHOULD · high** — Prefer standard macOS controls for entering full-screen mode. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- **HIG-PATTERNS-GOING-FULL-SCREEN-0010 · AVOID · high** — Avoid offering a custom menu of macOS window modes. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- **HIG-PATTERNS-GOING-FULL-SCREEN-0011 · MAY · high** — In a macOS game, consider a custom toggle for turning full-screen mode on and off. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 ### launching
 
 - **HIG-PATTERNS-LAUNCHING-0001 · SHOULD · low** — Apply the documented Launching guidance to design a launch screen that’s nearly identical to the first screen of your app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))

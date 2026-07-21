@@ -122631,7 +122631,7 @@
         "Going full screen",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:53.788Z",
+      "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "5abfb893d5dc48f7e503a799cc083ddae482611f4a8f4a1d27db071d87326b9f",
       "evidence_paraphrase": "Ensure the experience accommodates full-screen mode when it makes sense for your experience."
@@ -122704,7 +122704,7 @@
         "Going full screen",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:53.788Z",
+      "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "84224127b42131e72ac3a18e829d801f77f6a8d793aada3f4817a1ca95e1d3a6",
       "evidence_paraphrase": "Preserve people’s ability to choose when to exit full-screen mode."
@@ -122777,7 +122777,7 @@
         "Going full screen",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:53.788Z",
+      "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "99cec6c69403cf9ddc9b265ff8dd3cafc02dd7647dcf4483fda780b266e371a5",
       "evidence_paraphrase": "Apply the documented Going full screen guidance to prioritize content by temporarily hiding toolbars and navigation controls."
@@ -122794,21 +122794,21 @@
   },
   {
     "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0004",
-    "title": "Consider deferring system gestures to prevent accidental exits in a full-screen app or game",
+    "title": "Consider deferring full-screen exit gestures",
     "category": "patterns",
     "topic": "going-full-screen",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Evaluate whether deferring system gestures to prevent accidental exits in a full-screen app or game is appropriate for the current context.",
-      "ja": "deferring system gestures to prevent accidental exits in a full-screen app or gameが現在の状況に適切か検討する。"
+      "en": "Consider requiring two swipes to exit a full-screen iOS or iPadOS app when one swipe causes unexpected exits.",
+      "ja": "1 swipeで予期しないexitが起きる場合、full-screen iOSまたはiPadOS appのexitに2 swipeを要求することを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
         "ios",
         "ipados"
@@ -122819,11 +122819,12 @@
       ],
       "components": [],
       "modalities": [
+        "touch",
         "gesture"
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The default one-swipe exit behavior causes unexpected exits."
     ],
     "exceptions": [],
     "rationale": {
@@ -122833,7 +122834,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether deferring system gestures to prevent accidental exits in a full-screen app or game is appropriate for the current context.” in the documented Going full screen context?"
+        "Does the design satisfy “Consider requiring two swipes to exit a full-screen iOS or iPadOS app when one swipe causes unexpected exits.” in the documented Going full screen context?"
       ]
     },
     "testability": "manual",
@@ -122851,10 +122852,10 @@
         "Platform considerations",
         "iOS, iPadOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:53.788Z",
+      "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "9bd17e45b05f27500b5d7b3997db09c07fb984ae49bc3a4438410d37a50207b3",
-      "evidence_paraphrase": "Evaluate whether deferring system gestures to prevent accidental exits in a full-screen app or game is appropriate for the current context."
+      "evidence_paraphrase": "Consider requiring two swipes to exit a full-screen iOS or iPadOS app when one swipe causes unexpected exits."
     },
     "tags": [
       "patterns",
@@ -122865,26 +122866,26 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether deferring system gestures to prevent accidental exits in a full-screen app or game is appropriate for the current context.",
+    "apple_native_rule": "Consider requiring two swipes to exit a full-screen iOS or iPadOS app when one swipe causes unexpected exits.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0005",
-    "title": "Use the system-provided full-screen experience",
+    "title": "Use the system macOS full-screen experience",
     "category": "patterns",
     "topic": "going-full-screen",
     "subtopic": "macos",
     "statement": {
-      "en": "Choose or apply the system-provided full-screen experience in the documented context.",
-      "ja": "該当する状況ではthe system-provided full-screen experienceを採用する。"
+      "en": "Use the system-provided macOS full-screen experience.",
+      "ja": "system-providedのmacOS full-screen experienceを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
         "macos"
       ],
@@ -122895,7 +122896,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let system support accommodate all Mac display contexts, including camera-housing areas."
     ],
     "exceptions": [],
     "rationale": {
@@ -122905,7 +122906,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the system-provided full-screen experience in the documented context.” in the documented Going full screen context?"
+        "Does the design satisfy “Use the system-provided macOS full-screen experience.” in the documented Going full screen context?"
       ]
     },
     "testability": "manual",
@@ -122923,10 +122924,10 @@
         "Platform considerations",
         "macOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:53.788Z",
+      "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "9fde92cf7d9eb929c162cb3381e6f3160f273b39f146b4d6c74ee2c04ee7349a",
-      "evidence_paraphrase": "Choose or apply the system-provided full-screen experience in the documented context."
+      "evidence_paraphrase": "Use the system-provided macOS full-screen experience."
     },
     "tags": [
       "patterns",
@@ -122936,26 +122937,26 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply the system-provided full-screen experience in the documented context.",
+    "apple_native_rule": "Use the system-provided macOS full-screen experience.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0006",
-    "title": "Always let people choose when to enter full-screen mode",
+    "title": "Always let people choose when to enter full screen",
     "category": "patterns",
     "topic": "going-full-screen",
     "subtopic": "macos",
     "statement": {
-      "en": "Let people choose when to enter full-screen mode in every applicable case.",
-      "ja": "該当するすべての場合にlet people choose when to enter full-screen modeを実行する。"
+      "en": "Always let people choose when to enter full-screen mode on macOS.",
+      "ja": "macOSでfull-screen modeへ入る時点を常に利用者が選べるようにする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
         "macos"
       ],
@@ -122963,10 +122964,13 @@
         "mac"
       ],
       "components": [],
-      "modalities": []
+      "modalities": [
+        "keyboard",
+        "pointer"
+      ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not enter full screen automatically on a person's behalf."
     ],
     "exceptions": [],
     "rationale": {
@@ -122976,7 +122980,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Let people choose when to enter full-screen mode in every applicable case.” in the documented Going full screen context?"
+        "Does the design satisfy “Always let people choose when to enter full-screen mode on macOS.” in the documented Going full screen context?"
       ]
     },
     "testability": "manual",
@@ -122994,10 +122998,10 @@
         "Platform considerations",
         "macOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:53.788Z",
+      "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "d041ef165e61b0543dc1bb4c5b917a7b3d31be0f674a96c9b394b88690a2200c",
-      "evidence_paraphrase": "Let people choose when to enter full-screen mode in every applicable case."
+      "evidence_paraphrase": "Always let people choose when to enter full-screen mode on macOS."
     },
     "tags": [
       "patterns",
@@ -123007,7 +123011,375 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Let people choose when to enter full-screen mode in every applicable case.",
+    "apple_native_rule": "Always let people choose when to enter full-screen mode on macOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0007",
+    "title": "Retain default full-screen exit gestures",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Whenever possible, retain the familiar default full-screen exit gesture behavior in iOS and iPadOS.",
+      "ja": "可能な限りiOSとiPadOSの馴染みあるdefault full-screen exit gesture behaviorを維持する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": [
+        "touch",
+        "gesture"
+      ]
+    },
+    "conditions": [
+      "The Home Screen indicator reappears near the bottom and permits a one-swipe exit."
+    ],
+    "exceptions": [
+      "Consider gesture deferral only when the default produces unexpected exits."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Whenever possible, retain the familiar default full-screen exit gesture behavior in iOS and iPadOS.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "9bd17e45b05f27500b5d7b3997db09c07fb984ae49bc3a4438410d37a50207b3",
+      "evidence_paraphrase": "Whenever possible, retain the familiar default full-screen exit gesture behavior in iOS and iPadOS."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "platform-considerations",
+      "ios-ipados",
+      "gesture"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Whenever possible, retain the familiar default full-screen exit gesture behavior in iOS and iPadOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0008",
+    "title": "Avoid changing display mode for full-screen games",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Avoid changing the display mode when a macOS game enters full screen.",
+      "ja": "macOS gameがfull screenへ入るときdisplay modeを変更しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve player control because automatic display-mode changes do not improve performance."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid changing the display mode when a macOS game enters full screen.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "4afc7ee25b6868c5679f8880be895b3a06415d6440ba758a1e0f373033d0f9c5",
+      "evidence_paraphrase": "Avoid changing the display mode when a macOS game enters full screen."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid changing the display mode when a macOS game enters full screen.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0009",
+    "title": "Prefer standard macOS full-screen controls",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Prefer standard macOS controls for entering full-screen mode.",
+      "ja": "full-screen modeへ入るにはstandard macOS controlを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard",
+        "pointer"
+      ]
+    },
+    "conditions": [
+      "Support the window button, View menu item, or Control-Command-F shortcut."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prefer standard macOS controls for entering full-screen mode.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "d041ef165e61b0543dc1bb4c5b917a7b3d31be0f674a96c9b394b88690a2200c",
+      "evidence_paraphrase": "Prefer standard macOS controls for entering full-screen mode."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Prefer standard macOS controls for entering full-screen mode.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0010",
+    "title": "Avoid custom macOS window-mode menus",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Avoid offering a custom menu of macOS window modes.",
+      "ja": "customなmacOS window mode menuの提供を避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [],
+      "modalities": [
+        "pointer"
+      ]
+    },
+    "conditions": [
+      "Use standard full-screen entry mechanisms instead."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid offering a custom menu of macOS window modes.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "d041ef165e61b0543dc1bb4c5b917a7b3d31be0f674a96c9b394b88690a2200c",
+      "evidence_paraphrase": "Avoid offering a custom menu of macOS window modes."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid offering a custom menu of macOS window modes.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0011",
+    "title": "Consider a game full-screen toggle",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "macos",
+    "statement": {
+      "en": "In a macOS game, consider a custom toggle for turning full-screen mode on and off.",
+      "ja": "macOS gameではfull-screen modeをon/offするcustom toggleを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The custom toggle supplements rather than replaces standard full-screen controls."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “In a macOS game, consider a custom toggle for turning full-screen mode on and off.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "d041ef165e61b0543dc1bb4c5b917a7b3d31be0f674a96c9b394b88690a2200c",
+      "evidence_paraphrase": "In a macOS game, consider a custom toggle for turning full-screen mode on and off."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "In a macOS game, consider a custom toggle for turning full-screen mode on and off.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
