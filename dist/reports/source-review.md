@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1450
-- Reviewed batches: 97
+- Reviewed rules: 1457
+- Reviewed batches: 98
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:23:04Z
+- Reviewed at: 2026-07-21T20:29:28Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1196,6 +1196,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-LOADING-0011 · high — Recovered the watchOS immediacy aim without promoting it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0012 · high — Recovered the narrow brief-loading exception and its preferred fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0013 · high — Recovered the timing-accuracy rule and both placeholder-duration failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0008 · high — Made the cross-device preference concrete and recorded the associated-domain mechanism without turning the capability into a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0009 · high — Narrowed the generic lead to tvOS account flows and recorded the remote-input rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0011 · high — Recovered the direct avoidance guidance and kept it at AVOID because the source does not use an explicit prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0012 · high — Recovered the platform capability as MAY and preserved the per-user data-separation condition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0013 · high — Separated the current-profile capability and retained its optional can-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0014 · high — Recovered the conditional website handoff and retained recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0015 · high — Recovered the email-entry optimization, recorded remote and onscreen-keyboard context, and kept verification manual. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MULTITASKING-0001 · high — Recorded the two interruption classes and separated their required responses. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0002 · high — Recorded both background states and separated useful and unnecessary completion cases. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0003 · high — Recorded every system state cue and separated the concrete window-edge restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))

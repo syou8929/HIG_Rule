@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2459
+- Active atomic rules: 2464
 - Pages without rules: 16
-- Low-confidence rules: 932
-- Rules requiring human review: 932
+- Low-confidence rules: 930
+- Rules requiring human review: 930
 - Reference notes: 928
 
 ## Rules by category
@@ -17,16 +17,16 @@
 - foundations: 346
 - getting-started: 100
 - inputs: 219
-- patterns: 301
+- patterns: 306
 - technologies: 635
 
 ## Normative levels
 
-- AVOID: 326
-- MAY: 287
+- AVOID: 327
+- MAY: 289
 - MUST: 233
 - MUST_NOT: 21
-- SHOULD: 1592
+- SHOULD: 1594
 
 ## Rules by platform
 
@@ -34,14 +34,14 @@
 - ios: 1655
 - ipados: 1622
 - macos: 1382
-- tvos: 1090
+- tvos: 1095
 - visionos: 1432
 - watchos: 1136
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2393
+- manual: 2398
 
 ## Blocked pages
 
@@ -499,8 +499,6 @@ None.
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0004
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0005
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0006
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0008
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0009
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0010
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001
 - HIG-PATTERNS-MODALITY-0001
@@ -1434,8 +1432,6 @@ None.
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0004
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0005
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0006
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0008
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0009
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0010
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001
 - HIG-PATTERNS-MODALITY-0001

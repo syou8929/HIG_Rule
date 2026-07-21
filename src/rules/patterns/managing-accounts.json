@@ -63,7 +63,7 @@
         "Managing accounts",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "23ada0f605e0d85e90202158c6b33d250852f299b2b59f0005b4a7b9ca557465",
       "evidence_paraphrase": "Identify the authentication method you offer in every applicable case."
@@ -142,7 +142,7 @@
         "Managing accounts",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "c254680164579b6bb0a691ed1fdf6fe42972b54e6b47c15f18af4770f80c0cd2",
       "evidence_paraphrase": "Exclude using the term passcode to refer to account authentication from the applicable experience."
@@ -221,7 +221,7 @@
         "Managing accounts",
         "Deleting accounts"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "2d09458373fb4265cd774e4ee667a9d69e95dede29979e561984efadfcb7990f",
       "evidence_paraphrase": "Make a clear way to initiate account deletion within your app or game available when applicable."
@@ -300,7 +300,7 @@
         "Managing accounts",
         "Deleting accounts"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "9031b69b9b6637b9b0e2a98a1e4d96eedfdfed4dc326cee00ee568c8a201c9d4",
       "evidence_paraphrase": "Make a consistent account-deletion experience whether people perform it within your app or game or on the website available when applicable."
@@ -379,7 +379,7 @@
         "Managing accounts",
         "Deleting accounts"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "15d2a1a4a986634043d3e83fd27c6ea544fed82d843c9c7297b03418e5d94248",
       "evidence_paraphrase": "Evaluate whether letting people schedule account deletion to occur in the future is appropriate for the current context."
@@ -458,7 +458,7 @@
         "Managing accounts",
         "TV provider accounts"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "82e8c64abd336fc6480b541299a597a96643fedae4e491ffab7bd27b6f7fdd65",
       "evidence_paraphrase": "Exclude displaying a sign-out option when people are signed in at the system level from the applicable experience."
@@ -537,7 +537,7 @@
         "Managing accounts",
         "TV provider accounts"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "2c87575bb1e4dc0c418da4f94a5e7ebdb65dcbb7f0148660bcf109b202fdaa9c",
       "evidence_paraphrase": "Exclude instruct people to sign out by adjusting privacy controls from the applicable experience."
@@ -554,21 +554,21 @@
   },
   {
     "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0008",
-    "title": "Prefer letting people use another device to sign up or authenticate",
+    "title": "Prefer another device for tvOS signup or authentication",
     "category": "patterns",
     "topic": "managing-accounts",
     "subtopic": "tvos",
     "statement": {
-      "en": "Favor letting people use another device to sign up or authenticate when the documented conditions apply.",
-      "ja": "該当条件ではletting people use another device to sign up or authenticateを優先する。"
+      "en": "Prefer letting people use another device to sign up or authenticate for a tvOS app.",
+      "ja": "tvOSアプリの登録や認証では、別のデバイスを使えるようにすることを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
         "tvos"
       ],
@@ -576,10 +576,12 @@
         "apple-tv"
       ],
       "components": [],
-      "modalities": []
+      "modalities": [
+        "remote-control"
+      ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Configure associated domains when the app should let Apple TV safely suggest credentials from another device, including Sign in with Apple."
     ],
     "exceptions": [],
     "rationale": {
@@ -589,7 +591,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor letting people use another device to sign up or authenticate when the documented conditions apply.” in the documented Managing accounts context?"
+        "Does the design satisfy “Prefer letting people use another device to sign up or authenticate for a tvOS app.” in the documented Managing accounts context?"
       ]
     },
     "testability": "manual",
@@ -607,10 +609,10 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "b8f510f31d55a6bd2e87659146a7f72d224bcfae79da98784f7ff14b99895c4a",
-      "evidence_paraphrase": "Favor letting people use another device to sign up or authenticate when the documented conditions apply."
+      "evidence_paraphrase": "Prefer letting people use another device to sign up or authenticate for a tvOS app."
     },
     "tags": [
       "patterns",
@@ -620,26 +622,26 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor letting people use another device to sign up or authenticate when the documented conditions apply.",
+    "apple_native_rule": "Prefer letting people use another device to sign up or authenticate for a tvOS app.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0009",
-    "title": "Minimize data entry",
+    "title": "Minimize tvOS account data entry",
     "category": "patterns",
     "topic": "managing-accounts",
     "subtopic": "tvos",
     "statement": {
-      "en": "Apply the documented Managing accounts guidance to minimize data entry.",
-      "ja": "「Managing accounts」において「Minimize data entry」の指針を適用する。"
+      "en": "Minimize data entry in tvOS account flows.",
+      "ja": "tvOSのアカウントフローで入力する情報を最小限にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
         "tvos"
       ],
@@ -647,10 +649,12 @@
         "apple-tv"
       ],
       "components": [],
-      "modalities": []
+      "modalities": [
+        "remote-control"
+      ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Ask only for the minimum information necessary because people generally use a remote rather than a keyboard."
     ],
     "exceptions": [],
     "rationale": {
@@ -660,7 +664,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Managing accounts guidance to minimize data entry.” in the documented Managing accounts context?"
+        "Does the design satisfy “Minimize data entry in tvOS account flows.” in the documented Managing accounts context?"
       ]
     },
     "testability": "manual",
@@ -678,10 +682,10 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "37654f1756eeadbd7a84058f3cde9b59af0de66b58c38352dd05124a764c21e8",
-      "evidence_paraphrase": "Apply the documented Managing accounts guidance to minimize data entry."
+      "evidence_paraphrase": "Minimize data entry in tvOS account flows."
     },
     "tags": [
       "patterns",
@@ -691,7 +695,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Managing accounts guidance to minimize data entry.",
+    "apple_native_rule": "Minimize data entry in tvOS account flows.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -758,7 +762,7 @@
         "Managing accounts",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:03.580Z",
+      "retrieved_at": "2026-07-21T20:29:28Z",
       "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
       "source_sentence_hash": "be38872d48c3abce8b984dca29ae4c9c9c951e747a5ee117fe3216538095405c",
       "evidence_paraphrase": "Exclude offering an app-specific setting for opting in to biometric authentication from the applicable experience."
@@ -771,6 +775,367 @@
     "priority_rank": 6,
     "status": "active",
     "apple_native_rule": "Exclude offering an app-specific setting for opting in to biometric authentication from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0011",
+    "title": "Avoid repeated profile selection for shared tvOS accounts",
+    "category": "patterns",
+    "topic": "managing-accounts",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "When people use a shared account on tvOS, avoid asking them to choose a profile whenever they become the current user.",
+      "ja": "tvOSの共有アカウントでは、現在のユーザーになるたびにプロフィール選択を求めることを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "A shared account contains distinct user profiles."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Managing accounts experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるManaging accountsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When people use a shared account on tvOS, avoid asking them to choose a profile whenever they become the current user.” in the documented Managing accounts context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+      "page_title": "Managing accounts",
+      "section_path": [
+        "Managing accounts",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T20:29:28Z",
+      "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+      "source_sentence_hash": "a16e30e35a1d3fe64ad5dd6457c255c833f9672fcb665a85d79e57433c2449bc",
+      "evidence_paraphrase": "When people use a shared account on tvOS, avoid asking them to choose a profile whenever they become the current user."
+    },
+    "tags": [
+      "patterns",
+      "managing-accounts",
+      "platform-considerations",
+      "tvos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When people use a shared account on tvOS, avoid asking them to choose a profile whenever they become the current user.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0012",
+    "title": "Consider sharing tvOS credentials with separate user profiles",
+    "category": "patterns",
+    "topic": "managing-accounts",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "On tvOS 16 or later, consider sharing a shared account’s credentials across users while storing each person’s profile and user data separately.",
+      "ja": "tvOS 16以降では、各ユーザーのプロフィールとデータを分離したまま共有アカウントの資格情報を共有することを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app supports a shared account on tvOS 16 or later."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Managing accounts experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるManaging accountsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “On tvOS 16 or later, consider sharing a shared account’s credentials across users while storing each person’s profile and user data separately.” in the documented Managing accounts context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+      "page_title": "Managing accounts",
+      "section_path": [
+        "Managing accounts",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T20:29:28Z",
+      "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+      "source_sentence_hash": "a16e30e35a1d3fe64ad5dd6457c255c833f9672fcb665a85d79e57433c2449bc",
+      "evidence_paraphrase": "On tvOS 16 or later, consider sharing a shared account’s credentials across users while storing each person’s profile and user data separately."
+    },
+    "tags": [
+      "patterns",
+      "managing-accounts",
+      "platform-considerations",
+      "tvos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "On tvOS 16 or later, consider sharing a shared account’s credentials across users while storing each person’s profile and user data separately.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0013",
+    "title": "Consider using the current tvOS user profile automatically",
+    "category": "patterns",
+    "topic": "managing-accounts",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "When the app supports shared credentials with separate profiles, consider automatically using the current tvOS user’s profile without another sign-in.",
+      "ja": "共有資格情報と個別プロフィールをサポートする場合、追加のサインインなしで現在のtvOSユーザーのプロフィールを自動使用することを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app implements the documented shared-credential model on tvOS 16 or later."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Managing accounts experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるManaging accountsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When the app supports shared credentials with separate profiles, consider automatically using the current tvOS user’s profile without another sign-in.” in the documented Managing accounts context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+      "page_title": "Managing accounts",
+      "section_path": [
+        "Managing accounts",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T20:29:28Z",
+      "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+      "source_sentence_hash": "a16e30e35a1d3fe64ad5dd6457c255c833f9672fcb665a85d79e57433c2449bc",
+      "evidence_paraphrase": "When the app supports shared credentials with separate profiles, consider automatically using the current tvOS user’s profile without another sign-in."
+    },
+    "tags": [
+      "patterns",
+      "managing-accounts",
+      "platform-considerations",
+      "tvos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When the app supports shared credentials with separate profiles, consider automatically using the current tvOS user’s profile without another sign-in.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0014",
+    "title": "Use another device for longer tvOS account data entry",
+    "category": "patterns",
+    "topic": "managing-accounts",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "If tvOS account setup needs more than a small amount of information, ask people to continue on a website using another device.",
+      "ja": "tvOSのアカウント設定で少量を超える情報が必要な場合、別のデバイスからWebサイトで続けるよう案内する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "The flow needs more than a small amount of information."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Managing accounts experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるManaging accountsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “If tvOS account setup needs more than a small amount of information, ask people to continue on a website using another device.” in the documented Managing accounts context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+      "page_title": "Managing accounts",
+      "section_path": [
+        "Managing accounts",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T20:29:28Z",
+      "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+      "source_sentence_hash": "37654f1756eeadbd7a84058f3cde9b59af0de66b58c38352dd05124a764c21e8",
+      "evidence_paraphrase": "If tvOS account setup needs more than a small amount of information, ask people to continue on a website using another device."
+    },
+    "tags": [
+      "patterns",
+      "managing-accounts",
+      "platform-considerations",
+      "tvos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "If tvOS account setup needs more than a small amount of information, ask people to continue on a website using another device.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0015",
+    "title": "Show the email keyboard for tvOS account email entry",
+    "category": "patterns",
+    "topic": "managing-accounts",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "When a tvOS account flow needs an email address, show the email keyboard so people can choose a recently entered address.",
+      "ja": "tvOSのアカウントフローでメールアドレスが必要な場合、最近入力したアドレスを選べるメールキーボードを表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control",
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "The flow requests an email address."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Managing accounts experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるManaging accountsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the tvOS account flow show the email keyboard when it requests an email address?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+      "page_title": "Managing accounts",
+      "section_path": [
+        "Managing accounts",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T20:29:28Z",
+      "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+      "source_sentence_hash": "37654f1756eeadbd7a84058f3cde9b59af0de66b58c38352dd05124a764c21e8",
+      "evidence_paraphrase": "When a tvOS account flow needs an email address, show the email keyboard so people can choose a recently entered address."
+    },
+    "tags": [
+      "patterns",
+      "managing-accounts",
+      "platform-considerations",
+      "tvos",
+      "keyboard"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When a tvOS account flow needs an email address, show the email keyboard so people can choose a recently entered address.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

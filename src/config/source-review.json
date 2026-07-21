@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T20:23:04Z",
+  "reviewed_at": "2026-07-21T20:29:28Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2503,6 +2503,18 @@
         "HIG-PATTERNS-GOING-FULL-SCREEN-0008", "HIG-PATTERNS-GOING-FULL-SCREEN-0009", "HIG-PATTERNS-GOING-FULL-SCREEN-0010", "HIG-PATTERNS-GOING-FULL-SCREEN-0011"
       ],
       "review_note": "Completed the priority-4 platform sections, preserved the three existing IDs, recovered five atomic rules, retained the existing user-choice MUST, and kept direct don't guidance at AVOID."
+    },
+    {
+      "id": "priority-4-managing-accounts-tvos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T20:29:28Z",
+      "review_method": "Rendered Apple HIG Managing accounts platform limitations and complete tvOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts", "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3"}],
+      "rule_ids": [
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0008", "HIG-PATTERNS-MANAGING-ACCOUNTS-0009", "HIG-PATTERNS-MANAGING-ACCOUNTS-0011", "HIG-PATTERNS-MANAGING-ACCOUNTS-0012",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0013", "HIG-PATTERNS-MANAGING-ACCOUNTS-0014", "HIG-PATTERNS-MANAGING-ACCOUNTS-0015"
+      ],
+      "review_note": "Completed the priority-4 tvOS section, preserved two existing IDs, recovered five atomic rules, and kept credential-sharing capabilities optional without introducing unsupported MUST or MUST_NOT rules."
     }
   ],
   "rules": {
@@ -5244,6 +5256,50 @@
       "title": "Consider a game full-screen toggle", "statement": {"en": "In a macOS game, consider a custom toggle for turning full-screen mode on and off.", "ja": "macOS gameではfull-screen modeをon/offするcustom toggleを検討する。"}, "normative_level": "MAY",
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["The custom toggle supplements rather than replaces standard full-screen controls."], "review_note": "Separated the game-specific optional toggle without promoting its might-level strength."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0008": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "b8f510f31d55a6bd2e87659146a7f72d224bcfae79da98784f7ff14b99895c4a", "section_path": ["Managing accounts", "Platform considerations", "tvOS"]},
+      "title": "Prefer another device for tvOS signup or authentication", "statement": {"en": "Prefer letting people use another device to sign up or authenticate for a tvOS app.", "ja": "tvOSアプリの登録や認証では、別のデバイスを使えるようにすることを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]},
+      "conditions": ["Configure associated domains when the app should let Apple TV safely suggest credentials from another device, including Sign in with Apple."], "review_note": "Made the cross-device preference concrete and recorded the associated-domain mechanism without turning the capability into a requirement."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0009": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "37654f1756eeadbd7a84058f3cde9b59af0de66b58c38352dd05124a764c21e8", "section_path": ["Managing accounts", "Platform considerations", "tvOS"]},
+      "title": "Minimize tvOS account data entry", "statement": {"en": "Minimize data entry in tvOS account flows.", "ja": "tvOSのアカウントフローで入力する情報を最小限にする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]},
+      "conditions": ["Ask only for the minimum information necessary because people generally use a remote rather than a keyboard."], "review_note": "Narrowed the generic lead to tvOS account flows and recorded the remote-input rationale."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0011": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "a16e30e35a1d3fe64ad5dd6457c255c833f9672fcb665a85d79e57433c2449bc", "section_path": ["Managing accounts", "Platform considerations", "tvOS"]},
+      "title": "Avoid repeated profile selection for shared tvOS accounts", "statement": {"en": "When people use a shared account on tvOS, avoid asking them to choose a profile whenever they become the current user.", "ja": "tvOSの共有アカウントでは、現在のユーザーになるたびにプロフィール選択を求めることを避ける。"}, "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "conditions": ["A shared account contains distinct user profiles."], "review_note": "Recovered the direct avoidance guidance and kept it at AVOID because the source does not use an explicit prohibition."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0012": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "a16e30e35a1d3fe64ad5dd6457c255c833f9672fcb665a85d79e57433c2449bc", "section_path": ["Managing accounts", "Platform considerations", "tvOS"]},
+      "title": "Consider sharing tvOS credentials with separate user profiles", "statement": {"en": "On tvOS 16 or later, consider sharing a shared account’s credentials across users while storing each person’s profile and user data separately.", "ja": "tvOS 16以降では、各ユーザーのプロフィールとデータを分離したまま共有アカウントの資格情報を共有することを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "conditions": ["The app supports a shared account on tvOS 16 or later."], "review_note": "Recovered the platform capability as MAY and preserved the per-user data-separation condition."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0013": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "a16e30e35a1d3fe64ad5dd6457c255c833f9672fcb665a85d79e57433c2449bc", "section_path": ["Managing accounts", "Platform considerations", "tvOS"]},
+      "title": "Consider using the current tvOS user profile automatically", "statement": {"en": "When the app supports shared credentials with separate profiles, consider automatically using the current tvOS user’s profile without another sign-in.", "ja": "共有資格情報と個別プロフィールをサポートする場合、追加のサインインなしで現在のtvOSユーザーのプロフィールを自動使用することを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "conditions": ["The app implements the documented shared-credential model on tvOS 16 or later."], "review_note": "Separated the current-profile capability and retained its optional can-level strength."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0014": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "37654f1756eeadbd7a84058f3cde9b59af0de66b58c38352dd05124a764c21e8", "section_path": ["Managing accounts", "Platform considerations", "tvOS"]},
+      "title": "Use another device for longer tvOS account data entry", "statement": {"en": "If tvOS account setup needs more than a small amount of information, ask people to continue on a website using another device.", "ja": "tvOSのアカウント設定で少量を超える情報が必要な場合、別のデバイスからWebサイトで続けるよう案内する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]},
+      "conditions": ["The flow needs more than a small amount of information."], "review_note": "Recovered the conditional website handoff and retained recommendation strength."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0015": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "37654f1756eeadbd7a84058f3cde9b59af0de66b58c38352dd05124a764c21e8", "section_path": ["Managing accounts", "Platform considerations", "tvOS"]},
+      "title": "Show the email keyboard for tvOS account email entry", "statement": {"en": "When a tvOS account flow needs an email address, show the email keyboard so people can choose a recently entered address.", "ja": "tvOSのアカウントフローでメールアドレスが必要な場合、最近入力したアドレスを選べるメールキーボードを表示する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control", "keyboard"]},
+      "conditions": ["The flow requests an email address."],
+      "checks": {"automated": [], "manual": ["Does the tvOS account flow show the email keyboard when it requests an email address?"]}, "testability": "manual",
+      "review_note": "Recovered the email-entry optimization, recorded remote and onscreen-keyboard context, and kept verification manual."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

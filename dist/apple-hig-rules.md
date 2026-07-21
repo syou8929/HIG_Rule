@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T20:26:42.489Z. 2459 active rules; 3 deprecated rules.
+Generated 2026-07-21T20:34:32.100Z. 2464 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -673,9 +673,14 @@ Generated 2026-07-21T20:26:42.489Z. 2459 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0005 · MAY · low** — Evaluate whether letting people schedule account deletion to occur in the future is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0006 · AVOID · low** — Exclude displaying a sign-out option when people are signed in at the system level from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0007 · MUST_NOT · medium** — Exclude instruct people to sign out by adjusting privacy controls from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0008 · SHOULD · low** — Favor letting people use another device to sign up or authenticate when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0009 · SHOULD · low** — Apply the documented Managing accounts guidance to minimize data entry. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0008 · SHOULD · high** — Prefer letting people use another device to sign up or authenticate for a tvOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0009 · SHOULD · high** — Minimize data entry in tvOS account flows. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0010 · AVOID · low** — Exclude offering an app-specific setting for opting in to biometric authentication from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0011 · AVOID · high** — When people use a shared account on tvOS, avoid asking them to choose a profile whenever they become the current user. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0012 · MAY · high** — On tvOS 16 or later, consider sharing a shared account’s credentials across users while storing each person’s profile and user data separately. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0013 · MAY · high** — When the app supports shared credentials with separate profiles, consider automatically using the current tvOS user’s profile without another sign-in. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0014 · SHOULD · high** — If tvOS account setup needs more than a small amount of information, ask people to continue on a website using another device. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0015 · SHOULD · high** — When a tvOS account flow needs an email address, show the email keyboard so people can choose a recently entered address. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 ### managing-notifications
 
 - **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001 · SHOULD · low** — Choose or apply the Time Sensitive interruption level only for notifications that are relevant in the moment in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
