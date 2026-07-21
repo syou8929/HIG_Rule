@@ -1,0 +1,947 @@
+[
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0001",
+    "title": "Support default scrolling gestures and keyboard shortcuts",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Ensure the experience accommodates default scrolling gestures and keyboard shortcuts.",
+      "ja": "default scrolling gestures and keyboard shortcutsを利用できる設計にする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": [
+        "keyboard",
+        "gesture"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Ensure the experience accommodates default scrolling gestures and keyboard shortcuts.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "d08d739dfda11f5701bcba348fb2a445b92460b067dea1f9f5a3ea8cd5c8b918",
+      "evidence_paraphrase": "Ensure the experience accommodates default scrolling gestures and keyboard shortcuts."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "best-practices",
+      "keyboard",
+      "gesture"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure the experience accommodates default scrolling gestures and keyboard shortcuts.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0002",
+    "title": "Make it apparent when content is scrollable",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Apply the documented Scroll views guidance to make it apparent when content is scrollable.",
+      "ja": "「Scroll views」において「Make it apparent when content is scrollable」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Scroll views guidance to make it apparent when content is scrollable.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "96922240b8e386f6b93ce7b5036ceb35bfd69a9944fcc1c7577e6be97bdbd984",
+      "evidence_paraphrase": "Apply the documented Scroll views guidance to make it apparent when content is scrollable."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Scroll views guidance to make it apparent when content is scrollable.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0003",
+    "title": "Avoid putting a scroll view inside another scroll view with the same orientation",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience.",
+      "ja": "該当する体験ではputting a scroll view inside another scroll view with the same orientationを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "36dfeabdd42cc7a654f4e96609b66b8beb9de560ecc575f8050858bf8473a8cc",
+      "evidence_paraphrase": "Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Exclude putting a scroll view inside another scroll view with the same orientation from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0004",
+    "title": "Consider supporting page-by-page scrolling if it makes sense for your content",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context.",
+      "ja": "supporting page-by-page scrolling if it makes sense for your contentが現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "b998e3791cbd0ddaa80af3bf6bef40c47fafd9a502c24b5cdd20ed2900ad00d9",
+      "evidence_paraphrase": "Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether supporting page-by-page scrolling if it makes sense for your content is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0005",
+    "title": "Prefer the automatic scroll edge effect style",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "scroll-edge-effects",
+    "statement": {
+      "en": "Favor the automatic scroll edge effect style when the documented conditions apply.",
+      "ja": "該当条件ではthe automatic scroll edge effect styleを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Favor the automatic scroll edge effect style when the documented conditions apply.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Scroll edge effects"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "79a451545d9c401de499b774bcf434100335faca054ca3fd552a4a5195cfd0c6",
+      "evidence_paraphrase": "Favor the automatic scroll edge effect style when the documented conditions apply."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "scroll-edge-effects"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Favor the automatic scroll edge effect style when the documented conditions apply.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0006",
+    "title": "Apply one scroll edge effect per view",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "scroll-edge-effects",
+    "statement": {
+      "en": "Apply the documented Scroll views guidance to apply one scroll edge effect per view.",
+      "ja": "「Scroll views」において「Apply one scroll edge effect per view」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Scroll views guidance to apply one scroll edge effect per view.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Scroll edge effects"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "31adeb75fd256f7735b42031c32651bed92a01bf179d63ddaaf9d7cc6827b6b7",
+      "evidence_paraphrase": "Apply the documented Scroll views guidance to apply one scroll edge effect per view."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "scroll-edge-effects"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Scroll views guidance to apply one scroll edge effect per view.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0007",
+    "title": "Consider showing a page control when a scroll view is in page-by-page mode",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Evaluate whether showing a page control when a scroll view is in page-by-page mode is appropriate for the current context.",
+      "ja": "showing a page control when a scroll view is in page-by-page modeが現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether showing a page control when a scroll view is in page-by-page mode is appropriate for the current context.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "d9cb9d67eb236e546e5bae61fe492c2481db281e1d363c15da3d834fb0dfb2ab",
+      "evidence_paraphrase": "Evaluate whether showing a page control when a scroll view is in page-by-page mode is appropriate for the current context."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether showing a page control when a scroll view is in page-by-page mode is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0008",
+    "title": "Support Look to Scroll for reading or browsing views",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "look-to-scroll",
+    "statement": {
+      "en": "Ensure the experience accommodates look to Scroll for reading or browsing views.",
+      "ja": "Look to Scroll for reading or browsing viewsを利用できる設計にする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": [
+        "gaze"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure the experience accommodates look to Scroll for reading or browsing views.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Platform considerations",
+        "visionOS",
+        "Look to Scroll"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "72be95c0effd699e3c7535832f3287c9e435b4ae9bcb4eff5600418d7d865efd",
+      "evidence_paraphrase": "Ensure the experience accommodates look to Scroll for reading or browsing views."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "platform-considerations",
+      "visionos",
+      "look-to-scroll",
+      "gaze"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Ensure the experience accommodates look to Scroll for reading or browsing views.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0009",
+    "title": "Avoid using Look to Scroll for secondary content",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "look-to-scroll",
+    "statement": {
+      "en": "Exclude using Look to Scroll for secondary content from the applicable experience.",
+      "ja": "該当する体験ではusing Look to Scroll for secondary contentを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": [
+        "gaze"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude using Look to Scroll for secondary content from the applicable experience.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Platform considerations",
+        "visionOS",
+        "Look to Scroll"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "76f8036eec12d818103fd55c78e775e8dcc13ca0d5cae71954df5d80677c18f3",
+      "evidence_paraphrase": "Exclude using Look to Scroll for secondary content from the applicable experience."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "platform-considerations",
+      "visionos",
+      "look-to-scroll",
+      "gaze"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude using Look to Scroll for secondary content from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0010",
+    "title": "Maintain consistency across content",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "look-to-scroll",
+    "statement": {
+      "en": "Apply the documented Scroll views guidance to maintain consistency across content.",
+      "ja": "「Scroll views」において「Maintain consistency across content」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Scroll views guidance to maintain consistency across content.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Platform considerations",
+        "visionOS",
+        "Look to Scroll"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "889324adc29bcb343028f2a74cd1a932cdbd2619a5d66205638fccd13a5ac46a",
+      "evidence_paraphrase": "Apply the documented Scroll views guidance to maintain consistency across content."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "platform-considerations",
+      "visionos",
+      "look-to-scroll"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Scroll views guidance to maintain consistency across content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0011",
+    "title": "Prefer vertically scrolling content",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "Favor vertically scrolling content when the documented conditions apply.",
+      "ja": "該当条件ではvertically scrolling contentを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Favor vertically scrolling content when the documented conditions apply.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "95facd27a1f425bf2677de6a48026a4549a32319a7826f9119b22333d110f434",
+      "evidence_paraphrase": "Favor vertically scrolling content when the documented conditions apply."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Favor vertically scrolling content when the documented conditions apply.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0012",
+    "title": "Use tab views to provide page-by-page scrolling",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "Choose or apply tab views to provide page-by-page scrolling in the documented context.",
+      "ja": "該当する状況ではtab views to provide page-by-page scrollingを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply tab views to provide page-by-page scrolling in the documented context.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T07:08:08.150Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "4ca040301e9ab3a3edaa86276dc5767a4e7ada5ce13978c4ada42fce43b5f3d5",
+      "evidence_paraphrase": "Choose or apply tab views to provide page-by-page scrolling in the documented context."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply tab views to provide page-by-page scrolling in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  }
+]

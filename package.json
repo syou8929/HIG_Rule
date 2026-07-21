@@ -1,0 +1,36 @@
+{
+  "name": "apple-hig-ai-rules",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Copyright-safe, traceable Apple HIG rules for AI design and implementation workflows.",
+  "scripts": {
+    "discover": "tsx scripts/discover-hig.ts",
+    "ingest": "tsx scripts/ingest-hig.ts",
+    "extract": "tsx scripts/extract-rules.ts",
+    "build": "tsx scripts/build-adapters.ts",
+    "validate": "tsx scripts/validate-rules.ts",
+    "check-updates": "tsx scripts/check-updates.ts",
+    "snapshot-rules": "tsx scripts/snapshot-rules.ts",
+    "report-rule-updates": "tsx scripts/report-rule-updates.ts",
+    "query": "tsx scripts/query-rules.ts",
+    "sync": "npm run snapshot-rules && npm run discover && npm run ingest && npm run extract && npm run report-rule-updates && npm run build && npm run validate",
+    "lint": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "ci": "npm run lint && npm test && npm run build && npm run validate"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "playwright-core": "^1.55.0",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

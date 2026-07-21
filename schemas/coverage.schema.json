@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/apple-hig-coverage.schema.json",
+  "title": "Apple HIG Coverage Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_at", "totals", "by_category", "by_platform", "by_normative_level", "by_testability", "blocked_pages", "blocked_page_details", "pages_without_rules", "low_confidence_rules", "review_required_rules"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["discovered", "fetched", "failed", "classified", "rules_extracted_pages", "rules"],
+      "properties": {
+        "discovered": { "type": "integer", "minimum": 0 }, "fetched": { "type": "integer", "minimum": 0 },
+        "failed": { "type": "integer", "minimum": 0 }, "classified": { "type": "integer", "minimum": 0 },
+        "rules_extracted_pages": { "type": "integer", "minimum": 0 }, "rules": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "by_category": { "$ref": "#/$defs/countMap" },
+    "by_platform": { "$ref": "#/$defs/countMap" },
+    "by_normative_level": { "$ref": "#/$defs/countMap" },
+    "by_testability": { "$ref": "#/$defs/countMap" },
+    "blocked_pages": { "$ref": "#/$defs/stringArray" },
+    "blocked_page_details": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "reason"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "pages_without_rules": { "$ref": "#/$defs/stringArray" },
+    "low_confidence_rules": { "$ref": "#/$defs/stringArray" },
+    "review_required_rules": { "$ref": "#/$defs/stringArray" }
+  },
+  "$defs": {
+    "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "stringArray": { "type": "array", "uniqueItems": true, "items": { "type": "string" } }
+  }
+}
