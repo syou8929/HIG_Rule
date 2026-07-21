@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1753
-- Reviewed batches: 116
+- Reviewed rules: 1755
+- Reviewed batches: 117
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:31:00Z
+- Reviewed at: 2026-07-21T22:33:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -436,6 +436,8 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SPLIT-VIEWS-0020 · high — Activated the omitted multi-detail rule and recorded its Digital Crown modality and system page indicator. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-STATUS-BARS-0001 · high — Preserved the optional and temporary strength. ([source](https://developer.apple.com/design/human-interface-guidelines/status-bars))
 - HIG-COMPONENTS-STATUS-BARS-0002 · high — Recorded the rediscovery gesture requirement and kept the guidance at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/status-bars))
+- HIG-COMPONENTS-STEPPERS-0003 · high — Preserved Consider, the large-change condition, and the nonnormative example multiplier. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
+- HIG-COMPONENTS-STEPPERS-0004 · high — Recorded the descriptive watchOS and tvOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
 - HIG-COMPONENTS-TAB-BARS-0001 · high — Made the navigation purpose concrete and separated the toolbar alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-TAB-BARS-0002 · high — Retained the explicit Make sure directive and its sole modal exception. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-TAB-BARS-0003 · high — Recorded the source's access-versus-complexity tradeoff and separated the optional sidebar alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))

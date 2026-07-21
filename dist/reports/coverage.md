@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2677
+- Active atomic rules: 2678
 - Pages without rules: 16
-- Low-confidence rules: 853
-- Rules requiring human review: 853
-- Reference notes: 908
+- Low-confidence rules: 852
+- Rules requiring human review: 852
+- Reference notes: 907
 
 ## Rules by category
 
-- components: 864
+- components: 865
 - foundations: 346
 - getting-started: 100
 - inputs: 219
@@ -22,7 +22,7 @@
 
 ## Normative levels
 
-- AVOID: 361
+- AVOID: 362
 - MAY: 329
 - MUST: 269
 - MUST_NOT: 24
@@ -34,14 +34,14 @@
 - ios: 1750
 - ipados: 1722
 - macos: 1436
-- tvos: 1115
+- tvos: 1116
 - visionos: 1471
-- watchos: 1183
+- watchos: 1184
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2607
+- manual: 2608
 
 ## Blocked pages
 
@@ -216,7 +216,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-COMPONENTS-STEPPERS-0003
 - HIG-COMPONENTS-TOKEN-FIELDS-0001
 - HIG-COMPONENTS-TOKEN-FIELDS-0002
 - HIG-COMPONENTS-TOOLBARS-0001
@@ -1072,7 +1071,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-COMPONENTS-STEPPERS-0003
 - HIG-COMPONENTS-TOKEN-FIELDS-0001
 - HIG-COMPONENTS-TOKEN-FIELDS-0002
 - HIG-COMPONENTS-TOOLBARS-0001
@@ -2503,7 +2501,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/split-views · Split views > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/status-bars · Status bars > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/status-bars · Status bars > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/steppers · Steppers > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/steppers · Steppers > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/steppers · Steppers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Change log — Section recorded for human review; no short atomic guidance lead was detected.

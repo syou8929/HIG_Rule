@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:31:00Z",
+  "reviewed_at": "2026-07-21T22:33:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2724,9 +2724,35 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/sidebars", "source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2"}],
       "rule_ids": ["HIG-COMPONENTS-SIDEBARS-0007", "HIG-COMPONENTS-SIDEBARS-0009", "HIG-COMPONENTS-SIDEBARS-0010"],
       "review_note": "Completed the visionOS section, preserved the stable deep-hierarchy MAY rule, recovered the watchOS platform limitation, and split the explicit current-tab-preservation MUST from optional sidebar placement."
+    },
+    {
+      "id": "priority-4-steppers-macos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:33:00Z",
+      "review_method": "Rendered Apple HIG Steppers platform overview and complete macOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/steppers", "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56"}],
+      "rule_ids": ["HIG-COMPONENTS-STEPPERS-0003", "HIG-COMPONENTS-STEPPERS-0004"],
+      "review_note": "Completed the macOS section, preserved the stable Shift-click MAY decision without promoting the ten-times example to a threshold, and recovered the watchOS and tvOS platform limitation at AVOID."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-STEPPERS-0003": {
+      "source": {"source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56", "source_sentence_hash": "f6b2a9aae7956301faec897918b80c3eaf2b54c18f030340c440688c1568d696", "section_path": ["Steppers", "Platform considerations", "macOS"]},
+      "title": "Consider Shift-click for large macOS stepper ranges",
+      "statement": {"en": "Consider Shift-click for quick changes in a large macOS stepper range.", "ja": "largeなmacOS stepper rangeのquick changeにはShift-clickを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The app benefits from changing the value by more than the default increment."],
+      "exceptions": ["Ten times the default increment is an example, not a required multiplier."],
+      "review_note": "Preserved Consider, the large-change condition, and the nonnormative example multiplier."
+    },
+    "HIG-COMPONENTS-STEPPERS-0004": {
+      "source": {"source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56", "source_sentence_hash": "8638dc997447d220917c81fba0c837c694eb7cd40170bb91c6e4d8a22c16572f", "section_path": ["Steppers", "Platform considerations"]},
+      "statement": {"en": "Avoid using steppers on watchOS or tvOS.", "ja": "watchOSまたはtvOSでstepperを使わない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos", "tvos"], "devices": ["apple-watch", "apple-tv"], "components": ["steppers"], "modalities": []},
+      "conditions": ["Steppers have no additional considerations for iOS, iPadOS, or visionOS."],
+      "review_note": "Recorded the descriptive watchOS and tvOS limitation at AVOID rather than MUST_NOT."
+    },
     "HIG-COMPONENTS-SIDEBARS-0007": {
       "source": {"source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2", "source_sentence_hash": "48d2c2f742d2e82489801b62e1a40af2660fe0cf9ba3f94598d95d88ac27bd94", "section_path": ["Sidebars", "Platform considerations", "visionOS"]},
       "title": "Consider a sidebar within a visionOS tab for deep hierarchy",

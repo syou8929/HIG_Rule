@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:32:37.032Z. 2677 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:34:37.369Z. 2678 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1618,7 +1618,8 @@ Generated 2026-07-21T22:32:37.032Z. 2677 active rules; 4 deprecated rules.
 
 - **HIG-COMPONENTS-STEPPERS-0001 · SHOULD · low** — Apply the documented Steppers guidance to make the value that a stepper affects obvious. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
 - **HIG-COMPONENTS-STEPPERS-0002 · MAY · low** — Evaluate whether pairing a stepper with a text field when large value changes are likely is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
-- **HIG-COMPONENTS-STEPPERS-0003 · MAY · low** — When large value ranges, consider supporting Shift-click to change the value quickly. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
+- **HIG-COMPONENTS-STEPPERS-0003 · MAY · high** — Consider Shift-click for quick changes in a large macOS stepper range. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
+- **HIG-COMPONENTS-STEPPERS-0004 · AVOID · high** — Avoid using steppers on watchOS or tvOS. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
 ### tab-bars
 
 - **HIG-COMPONENTS-TAB-BARS-0001 · SHOULD · high** — Use a tab bar for navigation between app sections, not for actions. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
