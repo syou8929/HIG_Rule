@@ -425,7 +425,7 @@ Use this generated checklist with the source trace and confidence level; it is n
 - [ ] HIG-COMPONENTS-PANELS-0010 — Keep HUD-style panels small and unobtrusive. (SHOULD, high; [source](https://developer.apple.com/design/human-interface-guidelines/panels))
 - [ ] HIG-COMPONENTS-PANELS-0011 — Avoid making a panel's minimize button available. (AVOID, high; [source](https://developer.apple.com/design/human-interface-guidelines/panels))
 - [ ] HIG-COMPONENTS-PANELS-0012 — Refer to panels by title in the interface and help documentation. (SHOULD, high; [source](https://developer.apple.com/design/human-interface-guidelines/panels))
-- [ ] HIG-COMPONENTS-PATH-CONTROLS-0001 — Choose or apply a path control in the window body, not the window frame in the documented context. (SHOULD, low; [source](https://developer.apple.com/design/human-interface-guidelines/path-controls))
+- [ ] HIG-COMPONENTS-PATH-CONTROLS-0001 — Place a macOS path control in the window body, not the window frame. (SHOULD, high; [source](https://developer.apple.com/design/human-interface-guidelines/path-controls))
 - [ ] HIG-COMPONENTS-PICKERS-0001 — Evaluate whether using a picker to offer medium-to-long lists of items is appropriate for the current context. (MAY, low; [source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 - [ ] HIG-COMPONENTS-PICKERS-0002 — Choose or apply predictable and logically ordered values in the documented context. (SHOULD, low; [source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 - [ ] HIG-COMPONENTS-PICKERS-0003 — Exclude switching views to show a picker from the applicable experience. (AVOID, low; [source](https://developer.apple.com/design/human-interface-guidelines/pickers))

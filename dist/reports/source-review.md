@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1084
-- Reviewed batches: 69
+- Reviewed rules: 1085
+- Reviewed batches: 70
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:18:06Z
+- Reviewed at: 2026-07-21T17:25:49Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -311,6 +311,7 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-PANELS-0010 · high — Repaired the HUD capitalization bug and preserved the obscuration and attention constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
 - HIG-COMPONENTS-PANELS-0011 · high — Recovered the qualified AVOID guidance without raising it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
 - HIG-COMPONENTS-PANELS-0012 · high — Recovered the naming guidance and preserved its different menu and documentation forms. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
+- HIG-COMPONENTS-PATH-CONTROLS-0001 · high — Retained the only explicit directive and recorded the toolbar and status-bar exclusions; style descriptions remain nonnormative context. ([source](https://developer.apple.com/design/human-interface-guidelines/path-controls))
 - HIG-COMPONENTS-POPOVERS-0012 · high — Recorded the size-class scope and the full-screen modal alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0013 · high — Preserved the optional strength and documented the persistent-panel use case. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0014 · high — Replaced generic generated wording with the source's context-preservation intent. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))

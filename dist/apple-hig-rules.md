@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:23:24.629Z. 2263 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:26:40.417Z. 2263 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1293,7 +1293,7 @@ Generated 2026-07-21T17:23:24.629Z. 2263 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-PANELS-0012 · SHOULD · high** — Refer to panels by title in the interface and help documentation. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
 ### path-controls
 
-- **HIG-COMPONENTS-PATH-CONTROLS-0001 · SHOULD · low** — Choose or apply a path control in the window body, not the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/path-controls))
+- **HIG-COMPONENTS-PATH-CONTROLS-0001 · SHOULD · high** — Place a macOS path control in the window body, not the window frame. ([source](https://developer.apple.com/design/human-interface-guidelines/path-controls))
 ### pickers
 
 - **HIG-COMPONENTS-PICKERS-0001 · MAY · low** — Evaluate whether using a picker to offer medium-to-long lists of items is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))

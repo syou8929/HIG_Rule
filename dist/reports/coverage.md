@@ -7,8 +7,8 @@
 - Pages with rules: 156
 - Active atomic rules: 2263
 - Pages without rules: 16
-- Low-confidence rules: 1095
-- Rules requiring human review: 1095
+- Low-confidence rules: 1094
+- Rules requiring human review: 1094
 - Reference notes: 925
 
 ## Rules by category
@@ -171,7 +171,6 @@ None.
 - HIG-COMPONENTS-PAGE-CONTROLS-0003
 - HIG-COMPONENTS-PAGE-CONTROLS-0004
 - HIG-COMPONENTS-PAGE-CONTROLS-0010
-- HIG-COMPONENTS-PATH-CONTROLS-0001
 - HIG-COMPONENTS-PICKERS-0001
 - HIG-COMPONENTS-PICKERS-0002
 - HIG-COMPONENTS-PICKERS-0003
@@ -1269,7 +1268,6 @@ None.
 - HIG-COMPONENTS-PAGE-CONTROLS-0003
 - HIG-COMPONENTS-PAGE-CONTROLS-0004
 - HIG-COMPONENTS-PAGE-CONTROLS-0010
-- HIG-COMPONENTS-PATH-CONTROLS-0001
 - HIG-COMPONENTS-PICKERS-0001
 - HIG-COMPONENTS-PICKERS-0002
 - HIG-COMPONENTS-PICKERS-0003
@@ -2833,7 +2831,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/panels · Panels > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/panels · Panels > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/panels · Panels > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Platform considerations — Path controls are documented as unsupported outside macOS across Apple platforms.
 - https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/photo-editing · Photo editing > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
