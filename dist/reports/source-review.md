@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 558
-- Reviewed batches: 45
+- Reviewed rules: 569
+- Reviewed batches: 46
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:53:09Z
+- Reviewed at: 2026-07-21T15:00:53Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -559,6 +559,17 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-POINTING-DEVICES-0026 · high — Recovered the omitted hover-specific restriction and preserved the system-applied exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0027 · high — Recovered a specification rule and preserved every interaction, expected behavior, and mouse-versus-trackpad support row. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0028 · high — Recovered a specification rule and preserved every standard pointer name, meaning, and AppKit mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-PATTERNS-FEEDBACK-0001 · high — Retained the accessibility-critical MUST and recorded the source's multimodal examples and receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0002 · high — Retained MAY and recorded the proximity, no-action, and unobtrusive-access conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0003 · high — Recorded the criticality, actionability preference, and proportional-interruption constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0004 · high — Preserved both source qualifiers and separated the expected-result exception into its own AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0005 · high — Repaired the generated statement and retained both failure disclosure and explanation. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0006 · high — Retained AVOID and recorded the attention cost and completion-notification alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0007 · high — Recovered the page-level principle and recorded both passive-status and interruptive-warning examples. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0008 · high — Recovered a conservative AVOID rule from the source's alert-impact warning. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0009 · high — Recovered the explicit don't clause while retaining AVOID under the repository's conservative strength policy. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0010 · high — Recovered the conditional completion rule and preserved its importance threshold and routine-success exception. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0011 · high — Recovered the watchOS completion-notification alternative as a separate positive rule. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

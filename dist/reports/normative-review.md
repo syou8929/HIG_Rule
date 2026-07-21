@@ -6,7 +6,7 @@
 - Normative level changes: 4
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:53:09Z
+- Reviewed at: 2026-07-21T15:00:53Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -70,6 +70,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-GESTURES-0031 — Recovered and retained MUST after confirming the explicit must-request permission requirement for hand information. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-POINTING-DEVICES-0022 — Promoted to MUST after confirming the conditional explicit need to provide a nonstandard lift shape’s corner radius. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0023 — Recovered and retained MUST after confirming the explicit ensure requirement for identical modifier-key results across touch and pointer input. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-PATTERNS-FEEDBACK-0001 — Retained MUST after confirming the explicit Make sure accessibility requirement and its multimodal receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -185,7 +186,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-POINTING-DEVICES-0022 · MUST · retained_with_atomicity_or_scope_correction — Promoted to MUST after confirming the conditional explicit need to provide a nonstandard lift shape’s corner radius. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit ensure requirement for identical modifier-key results across touch and pointer input. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
-- HIG-PATTERNS-FEEDBACK-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FEEDBACK-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure accessibility requirement and its multimodal receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))

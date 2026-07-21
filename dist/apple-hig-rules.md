@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T14:57:49.644Z. 1983 active rules; 3 deprecated rules.
+Generated 2026-07-21T15:04:03.115Z. 1988 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -505,12 +505,17 @@ Generated 2026-07-21T14:57:49.644Z. 1983 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-ENTERING-DATA-0005 · SHOULD · low** — Let people provide data by dragging and dropping it or by pasting it wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 ### feedback
 
-- **HIG-PATTERNS-FEEDBACK-0001 · MUST · medium** — Verify that all feedback is accessible. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
-- **HIG-PATTERNS-FEEDBACK-0002 · MAY · low** — Evaluate whether integrating status feedback into your interface is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
-- **HIG-PATTERNS-FEEDBACK-0003 · SHOULD · low** — Choose or apply alerts to deliver critical — and ideally actionable — information in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
-- **HIG-PATTERNS-FEEDBACK-0004 · SHOULD · low** — Apply the documented Feedback guidance to warn people when they initiate a task that can cause data loss that’s unexpected and irreversible. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
-- **HIG-PATTERNS-FEEDBACK-0005 · SHOULD · low** — Present people when a command can’t be carried out and help them understand why in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
-- **HIG-PATTERNS-FEEDBACK-0006 · AVOID · low** — Exclude displaying an indeterminate progress indicator — such as a loading indicator — in a watchOS app from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0001 · MUST · high** — Make all feedback accessible by providing multiple complementary ways to receive it. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0002 · MAY · high** — Consider integrating status feedback near the interface items it describes. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0003 · SHOULD · high** — Use alerts to deliver critical and preferably actionable information. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0004 · SHOULD · high** — Warn people before a task can cause data loss that is both unexpected and irreversible. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0005 · SHOULD · high** — Tell people when a command cannot be carried out and explain why. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0006 · AVOID · high** — Avoid displaying an indeterminate progress indicator in a watchOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0007 · SHOULD · high** — Match the way feedback is delivered to the significance of its information. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0008 · AVOID · high** — Avoid using alerts too often or for unimportant information. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0009 · AVOID · high** — Avoid warning people when data loss is the expected result of their action. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0010 · SHOULD · high** — When appropriate, confirm that a sufficiently important action or task has completed. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- **HIG-PATTERNS-FEEDBACK-0011 · SHOULD · high** — Notify people when a watchOS process completes instead of requiring continued attention. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 ### file-management
 
 - **HIG-PATTERNS-FILE-MANAGEMENT-0001 · SHOULD · low** — Choose or apply app menus and keyboard shortcuts to give people convenient ways to create and open documents in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))

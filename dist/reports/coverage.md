@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 1983
+- Active atomic rules: 1988
 - Pages without rules: 16
-- Low-confidence rules: 1322
-- Rules requiring human review: 1322
+- Low-confidence rules: 1317
+- Rules requiring human review: 1317
 - Reference notes: 925
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 312
 - getting-started: 85
 - inputs: 187
-- patterns: 228
+- patterns: 233
 - technologies: 524
 
 ## Normative levels
 
-- AVOID: 253
+- AVOID: 255
 - MAY: 227
 - MUST: 141
 - MUST_NOT: 10
-- SHOULD: 1352
+- SHOULD: 1355
 
 ## Rules by platform
 
 - carplay: 73
-- ios: 1372
-- ipados: 1387
-- macos: 1221
-- tvos: 926
-- visionos: 1286
-- watchos: 1025
+- ios: 1376
+- ipados: 1391
+- macos: 1225
+- tvos: 930
+- visionos: 1290
+- watchos: 1030
 
 ## Rules by testability
 
 - hybrid: 64
-- manual: 1919
+- manual: 1924
 
 ## Blocked pages
 
@@ -728,11 +728,6 @@ None.
 - HIG-PATTERNS-ENTERING-DATA-0002
 - HIG-PATTERNS-ENTERING-DATA-0004
 - HIG-PATTERNS-ENTERING-DATA-0005
-- HIG-PATTERNS-FEEDBACK-0002
-- HIG-PATTERNS-FEEDBACK-0003
-- HIG-PATTERNS-FEEDBACK-0004
-- HIG-PATTERNS-FEEDBACK-0005
-- HIG-PATTERNS-FEEDBACK-0006
 - HIG-PATTERNS-FILE-MANAGEMENT-0001
 - HIG-PATTERNS-FILE-MANAGEMENT-0002
 - HIG-PATTERNS-FILE-MANAGEMENT-0003
@@ -2053,11 +2048,6 @@ None.
 - HIG-PATTERNS-ENTERING-DATA-0002
 - HIG-PATTERNS-ENTERING-DATA-0004
 - HIG-PATTERNS-ENTERING-DATA-0005
-- HIG-PATTERNS-FEEDBACK-0002
-- HIG-PATTERNS-FEEDBACK-0003
-- HIG-PATTERNS-FEEDBACK-0004
-- HIG-PATTERNS-FEEDBACK-0005
-- HIG-PATTERNS-FEEDBACK-0006
 - HIG-PATTERNS-FILE-MANAGEMENT-0001
 - HIG-PATTERNS-FILE-MANAGEMENT-0002
 - HIG-PATTERNS-FILE-MANAGEMENT-0003

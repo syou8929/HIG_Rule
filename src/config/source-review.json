@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T14:53:09Z",
+  "reviewed_at": "2026-07-21T15:00:53Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1271,9 +1271,117 @@
         "HIG-INPUTS-POINTING-DEVICES-0028"
       ],
       "review_note": "Reviewed input consistency, iPadOS pointer effects and hit regions, macOS tables, and visionOS system behavior; recovered six rules, promoted one explicit need requirement, and refreshed a changed page hash."
+    },
+    {
+      "id": "priority-4-feedback-context-2026-07-21",
+      "reviewed_at": "2026-07-21T15:00:53Z",
+      "review_method": "Rendered Apple HIG Feedback guidance and supporting prose were reviewed; two repeated live renders matched the updated stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/feedback",
+          "source_hash": "0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-FEEDBACK-0001",
+        "HIG-PATTERNS-FEEDBACK-0002",
+        "HIG-PATTERNS-FEEDBACK-0003",
+        "HIG-PATTERNS-FEEDBACK-0004",
+        "HIG-PATTERNS-FEEDBACK-0005",
+        "HIG-PATTERNS-FEEDBACK-0006",
+        "HIG-PATTERNS-FEEDBACK-0007",
+        "HIG-PATTERNS-FEEDBACK-0008",
+        "HIG-PATTERNS-FEEDBACK-0009",
+        "HIG-PATTERNS-FEEDBACK-0010",
+        "HIG-PATTERNS-FEEDBACK-0011"
+      ],
+      "review_note": "Reviewed accessible multimodal feedback, proportional interruption, failure and completion states, and watchOS progress behavior; recovered five omitted atomic rules and refreshed a changed page hash."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-FEEDBACK-0001": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"14e63533792a4c0b44c538732f496dc77b5aeb5c8ee3b4fab3edf0b83922893e","section_path":["Feedback","Best practices"]},
+      "title": "Make all feedback accessible",
+      "statement": {"en":"Make all feedback accessible by providing multiple complementary ways to receive it.","ja":"複数の補完的な受け取り方を提供し、すべてのfeedbackをaccessibleにする。"},
+      "conditions": ["Combine applicable forms such as color, text, sound, and haptics.", "Account for silenced devices, attention away from the screen, and VoiceOver use."],
+      "review_note": "Retained the accessibility-critical MUST and recorded the source's multimodal examples and receiving contexts."
+    },
+    "HIG-PATTERNS-FEEDBACK-0002": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"c6f20b1f44c8212b38a73e701cbc8f8f9ce913cffa4f2b82b1b96a3315e8b523","section_path":["Feedback","Best practices"]},
+      "title": "Consider integrating status feedback into the interface",
+      "statement": {"en":"Consider integrating status feedback near the interface items it describes.","ja":"status feedbackを説明対象のinterface itemの近くへ統合することを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Keep important status information available without requiring action or a context change.", "Prefer an unobtrusive presentation that remains easy to check."],
+      "review_note": "Retained MAY and recorded the proximity, no-action, and unobtrusive-access conditions."
+    },
+    "HIG-PATTERNS-FEEDBACK-0003": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"ca53bac4d64b40cb000b3b8080658d724b7316ece4ec5ac6959c538e5518d789","section_path":["Feedback","Best practices"]},
+      "title": "Use alerts for critical, preferably actionable information",
+      "statement": {"en":"Use alerts to deliver critical and preferably actionable information.","ja":"criticalで、できればactionableな情報の伝達にalertを使う。"},
+      "conditions": ["Match the importance of the information to the alert's interruption level."],
+      "review_note": "Recorded the criticality, actionability preference, and proportional-interruption constraint."
+    },
+    "HIG-PATTERNS-FEEDBACK-0004": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"aa71751d251e5f94823bf1338903171f0319458ac06cae85b8b7889f84dd6374","section_path":["Feedback","Best practices"]},
+      "title": "Warn before unexpected irreversible data loss",
+      "statement": {"en":"Warn people before a task can cause data loss that is both unexpected and irreversible.","ja":"taskが予期せず不可逆なdata lossを起こす前に警告する。"},
+      "conditions": ["Both unexpectedness and irreversibility distinguish this warning case from ordinary destructive actions."],
+      "review_note": "Preserved both source qualifiers and separated the expected-result exception into its own AVOID rule."
+    },
+    "HIG-PATTERNS-FEEDBACK-0005": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"7b25f027e4cbce2b4dd78078b00c0c3315d289e9030354674faf8e2f90d0fda1","section_path":["Feedback","Best practices"]},
+      "title": "Explain why a command cannot be carried out",
+      "statement": {"en":"Tell people when a command cannot be carried out and explain why.","ja":"commandを実行できないことと、その理由を利用者へ伝える。"},
+      "conditions": ["Provide enough context for people to understand the invalid or incomplete request."],
+      "review_note": "Repaired the generated statement and retained both failure disclosure and explanation."
+    },
+    "HIG-PATTERNS-FEEDBACK-0006": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"420fcaba4dd3699def22e362ff1c5d1208465974a0c86392a1638a670e1ac8ce","section_path":["Feedback","Platform considerations","watchOS"]},
+      "title": "Avoid indeterminate progress indicators in watchOS apps",
+      "statement": {"en":"Avoid displaying an indeterminate progress indicator in a watchOS app.","ja":"watchOS appでindeterminate progress indicatorを表示しない。"},
+      "conditions": ["Animated indefinite indicators can imply that people need to keep watching the display."],
+      "exceptions": ["Prefer reassuring people that a notification will arrive when the process completes."],
+      "review_note": "Retained AVOID and recorded the attention cost and completion-notification alternative."
+    },
+    "HIG-PATTERNS-FEEDBACK-0007": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"4bffe1538c4283103b0693b22ad74aedfb1a4d7f31ccb895ac09f9625067fb2a","section_path":["Feedback"]},
+      "title": "Match feedback delivery to information significance",
+      "statement": {"en":"Match the way feedback is delivered to the significance of its information.","ja":"feedbackの伝達方法を情報の重要度に合わせる。"},
+      "conditions": ["Passive delivery can suit status information people check when needed.", "Potential data loss can justify an interruption that gives people a chance to avoid it."],
+      "review_note": "Recovered the page-level principle and recorded both passive-status and interruptive-warning examples."
+    },
+    "HIG-PATTERNS-FEEDBACK-0008": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"58954f5ff51cafde27e65c4f0dec396a30bd6377eb79af3f4449245e1fcc950c","section_path":["Feedback","Best practices"]},
+      "title": "Avoid overusing alerts",
+      "statement": {"en":"Avoid using alerts too often or for unimportant information.","ja":"alertを頻繁に使ったり、重要でない情報へ使ったりしない。"},
+      "conditions": ["Preserve the impact of alerts by reserving their interruption for sufficiently important information."],
+      "review_note": "Recovered a conservative AVOID rule from the source's alert-impact warning."
+    },
+    "HIG-PATTERNS-FEEDBACK-0009": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"ca465d44b934d91fbec5b6a6e3ba75c5bc094bd32479b1e6fb02634ff116bf78","section_path":["Feedback","Best practices"]},
+      "title": "Avoid warnings for expected data loss",
+      "statement": {"en":"Avoid warning people when data loss is the expected result of their action.","ja":"data lossが操作の予期された結果である場合は警告しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["For example, ordinary file deletion has an expected destructive result."],
+      "review_note": "Recovered the explicit don't clause while retaining AVOID under the repository's conservative strength policy."
+    },
+    "HIG-PATTERNS-FEEDBACK-0010": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"cac234ee3cf09a530533fbbc05ded15237043e4fd6dc0462367644bf1e58cc0c","section_path":["Feedback","Best practices"]},
+      "title": "Confirm completion of sufficiently important actions",
+      "statement": {"en":"When appropriate, confirm that a sufficiently important action or task has completed.","ja":"適切な場合、十分に重要なactionやtaskの完了を確認できるようにする。"},
+      "conditions": ["Reserve explicit success confirmation for activities important enough to justify it."],
+      "exceptions": ["Routine actions generally need feedback only when they fail."],
+      "review_note": "Recovered the conditional completion rule and preserved its importance threshold and routine-success exception."
+    },
+    "HIG-PATTERNS-FEEDBACK-0011": {
+      "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"4b0cf2e968eda984d5833454c6f328902f70ddc48ec298be0650915a97b0b77c","section_path":["Feedback","Platform considerations","watchOS"]},
+      "title": "Notify people when a watchOS process completes",
+      "statement": {"en":"Notify people when a watchOS process completes instead of requiring continued attention.","ja":"継続的な注視を求めず、watchOS processの完了時に通知する。"},
+      "conditions": ["Use this completion feedback where an indeterminate animated indicator would otherwise imply continued attention."],
+      "review_note": "Recovered the watchOS completion-notification alternative as a separate positive rule."
+    },
     "HIG-INPUTS-POINTING-DEVICES-0001": {
       "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"5bbfa883ed266990504948a1b2bb4f29ab8a585528618e727c2b8c21c8241657","section_path":["Pointing devices","Best practices"]},
       "title": "Respond consistently to mouse and trackpad gestures",
