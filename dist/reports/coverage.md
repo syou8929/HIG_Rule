@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2278
+- Active atomic rules: 2287
 - Pages without rules: 16
-- Low-confidence rules: 1080
-- Rules requiring human review: 1080
+- Low-confidence rules: 1065
+- Rules requiring human review: 1065
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 770
+- components: 779
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 305
-- MAY: 256
+- MAY: 259
 - MUST: 196
 - MUST_NOT: 21
-- SHOULD: 1500
+- SHOULD: 1506
 
 ## Rules by platform
 
 - carplay: 89
-- ios: 1590
-- ipados: 1560
-- macos: 1336
-- tvos: 1019
-- visionos: 1381
-- watchos: 1089
+- ios: 1595
+- ipados: 1567
+- macos: 1343
+- tvos: 1022
+- visionos: 1384
+- watchos: 1092
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2212
+- manual: 2221
 
 ## Blocked pages
 
@@ -200,21 +200,6 @@ None.
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006
-- HIG-COMPONENTS-SEARCH-FIELDS-0001
-- HIG-COMPONENTS-SEARCH-FIELDS-0002
-- HIG-COMPONENTS-SEARCH-FIELDS-0003
-- HIG-COMPONENTS-SEARCH-FIELDS-0004
-- HIG-COMPONENTS-SEARCH-FIELDS-0005
-- HIG-COMPONENTS-SEARCH-FIELDS-0006
-- HIG-COMPONENTS-SEARCH-FIELDS-0007
-- HIG-COMPONENTS-SEARCH-FIELDS-0008
-- HIG-COMPONENTS-SEARCH-FIELDS-0009
-- HIG-COMPONENTS-SEARCH-FIELDS-0010
-- HIG-COMPONENTS-SEARCH-FIELDS-0011
-- HIG-COMPONENTS-SEARCH-FIELDS-0012
-- HIG-COMPONENTS-SEARCH-FIELDS-0013
-- HIG-COMPONENTS-SEARCH-FIELDS-0014
-- HIG-COMPONENTS-SEARCH-FIELDS-0015
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
@@ -1283,21 +1268,6 @@ None.
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006
-- HIG-COMPONENTS-SEARCH-FIELDS-0001
-- HIG-COMPONENTS-SEARCH-FIELDS-0002
-- HIG-COMPONENTS-SEARCH-FIELDS-0003
-- HIG-COMPONENTS-SEARCH-FIELDS-0004
-- HIG-COMPONENTS-SEARCH-FIELDS-0005
-- HIG-COMPONENTS-SEARCH-FIELDS-0006
-- HIG-COMPONENTS-SEARCH-FIELDS-0007
-- HIG-COMPONENTS-SEARCH-FIELDS-0008
-- HIG-COMPONENTS-SEARCH-FIELDS-0009
-- HIG-COMPONENTS-SEARCH-FIELDS-0010
-- HIG-COMPONENTS-SEARCH-FIELDS-0011
-- HIG-COMPONENTS-SEARCH-FIELDS-0012
-- HIG-COMPONENTS-SEARCH-FIELDS-0013
-- HIG-COMPONENTS-SEARCH-FIELDS-0014
-- HIG-COMPONENTS-SEARCH-FIELDS-0015
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
@@ -2898,8 +2868,8 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Platform considerations — visionOS has no additional search-field considerations beyond the common guidance.
+- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Platform considerations > watchOS — watchOS full-screen text-input and return behavior is recorded as system behavior, not a separate design directive.
 - https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

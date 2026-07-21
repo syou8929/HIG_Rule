@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:36:45Z",
+  "reviewed_at": "2026-07-21T17:44:30Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2140,6 +2140,22 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/rating-indicators", "source_hash": "cdedbb128613f799094b1ba02b39fcaf570484dc266f35f3eb9c7834a926e983"}],
       "rule_ids": ["HIG-COMPONENTS-RATING-INDICATORS-0001", "HIG-COMPONENTS-RATING-INDICATORS-0002"],
       "review_note": "Completed macOS Rating indicators coverage; made the existing ranking-edit rule concrete and recovered the conditional custom-symbol clarity MUST."
+    },
+    {
+      "id": "priority-4-search-fields-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:44:30Z",
+      "review_method": "Rendered Apple HIG Search fields guidance, placeholder and result behavior, scope bars, tokens, iOS tab and toolbar and inline placement, iPadOS and macOS placement, tvOS suggestions, watchOS system behavior, and supporting prose were reviewed; two repeated live renders matched the updated main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/search-fields", "source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-SEARCH-FIELDS-0001", "HIG-COMPONENTS-SEARCH-FIELDS-0002", "HIG-COMPONENTS-SEARCH-FIELDS-0003", "HIG-COMPONENTS-SEARCH-FIELDS-0004",
+        "HIG-COMPONENTS-SEARCH-FIELDS-0005", "HIG-COMPONENTS-SEARCH-FIELDS-0006", "HIG-COMPONENTS-SEARCH-FIELDS-0007", "HIG-COMPONENTS-SEARCH-FIELDS-0008",
+        "HIG-COMPONENTS-SEARCH-FIELDS-0009", "HIG-COMPONENTS-SEARCH-FIELDS-0010", "HIG-COMPONENTS-SEARCH-FIELDS-0011", "HIG-COMPONENTS-SEARCH-FIELDS-0012",
+        "HIG-COMPONENTS-SEARCH-FIELDS-0013", "HIG-COMPONENTS-SEARCH-FIELDS-0014", "HIG-COMPONENTS-SEARCH-FIELDS-0015", "HIG-COMPONENTS-SEARCH-FIELDS-0016",
+        "HIG-COMPONENTS-SEARCH-FIELDS-0017", "HIG-COMPONENTS-SEARCH-FIELDS-0018", "HIG-COMPONENTS-SEARCH-FIELDS-0019", "HIG-COMPONENTS-SEARCH-FIELDS-0020",
+        "HIG-COMPONENTS-SEARCH-FIELDS-0021", "HIG-COMPONENTS-SEARCH-FIELDS-0022", "HIG-COMPONENTS-SEARCH-FIELDS-0023", "HIG-COMPONENTS-SEARCH-FIELDS-0024"
+      ],
+      "review_note": "Completed Search fields coverage; retained all fifteen existing IDs, recovered nine atomic rules, repaired truncated placement guidance, preserved the exact tvOS suggestion duplicate, and found no source-supported MUST classification."
     }
   ],
   "rules": {
@@ -2437,6 +2453,181 @@
       "statement": {"en": "Make sure the purpose of a custom macOS rating symbol is clear.", "ja": "custom macOS rating symbolのpurposeを明確にする。"},
       "conditions": ["The app replaces the recognizable default star with a custom symbol."],
       "review_note": "Recovered the conditional Make sure directive and retained its custom-symbol scope."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0001": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "304f9e91e41390e28bc6ecd61a6b1b21fb33461e62ddca90aa8880143fce737c", "section_path": ["Search fields", "Best practices"]},
+      "title": "Use helpful search placeholders",
+      "statement": {"en": "Use placeholder text when it clarifies what people can search for.", "ja": "何を検索できるか明確になる場合はplaceholder textを使う。"},
+      "conditions": ["Reinforce the search scope or explain the type of content available to search."],
+      "review_note": "Narrowed placeholder use to the source-supported education and scope purposes."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0002": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "0f51d5ed2a4d118e3c9a4f445c5f2dad745b1915e2ac0fcdaa8165eaa4a535af", "section_path": ["Search fields", "Best practices"]},
+      "title": "Consider suggested search terms",
+      "statement": {"en": "Consider showing suggested search terms.", "ja": "suggested search termの表示を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Suggestions may include recent searches before input or predictions as people type."],
+      "review_note": "Preserved MAY and both timing patterns for suggestions."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0003": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "64973e5a50c79075f4d58be0460717b98744aba70445132bf4eaefa57c9aae37", "section_path": ["Search fields", "Best practices"]},
+      "title": "Prioritize relevant search results",
+      "statement": {"en": "Present the most relevant search results first.", "ja": "最もrelevantなsearch resultを先に表示する。"},
+      "conditions": ["Minimize the scrolling people need to find likely results."],
+      "review_note": "Made the vague simplify lead concrete and separated optional categorization."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0004": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "fafbb38ee65f0f61a0c78a836a7035fcc3f50733d117da2c0854c5d396f6f0d1", "section_path": ["Search fields", "Best practices"]},
+      "title": "Consider search-result filters",
+      "statement": {"en": "Consider letting people filter search results.", "ja": "search resultをfilterできるようにすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A scope bar in the results area can provide quick filtering."],
+      "review_note": "Preserved MAY and recorded the source filtering mechanism."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0005": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "d10d12cd0e1b525445a8f8aba12319e523d5b484fbb2fda18b938790be49597d", "section_path": ["Search fields", "Scope bars and tokens"]},
+      "title": "Use scope bars for defined categories",
+      "statement": {"en": "Use a scope bar to filter among clearly defined search categories.", "ja": "明確に定義されたsearch categoryのfilterにはscope barを使う。"},
+      "conditions": ["Let people move from a broad scope to a narrower one."],
+      "review_note": "Recorded category clarity and broad-to-narrow refinement."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0006": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "03ee8fa71d92ad6b8fc9040801c4587c21bbf7d805c29734ffb213b3431bd085", "section_path": ["Search fields", "Scope bars and tokens"]},
+      "title": "Use tokens for common filters",
+      "statement": {"en": "Use tokens to filter by common search terms or items.", "ja": "common search termやitemによるfilterにはtokenを使う。"},
+      "conditions": ["Represent each token as one selectable and editable item that clarifies or focuses the query."],
+      "review_note": "Recorded the common-filter purpose and single-item editing behavior."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0007": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "ae25b6562fae50e1ccf4589aaf6e37055e57d416c68d459b0d35994f9947c0c2", "section_path": ["Search fields", "Scope bars and tokens"]},
+      "title": "Consider pairing tokens with suggestions",
+      "statement": {"en": "Consider pairing search tokens with suggestions.", "ja": "search tokenとsuggestionの組み合わせを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Suggestions help people discover which tokens are available."],
+      "review_note": "Preserved MAY and the token-discovery purpose."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0008": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "36c03990aaaaaf925b85f68e7ee319963085949979a3b58f6df153a715879338", "section_path": ["Search fields", "Platform considerations", "iOS", "Search as a tab"]},
+      "title": "Choose standard iOS search tabs for discovery",
+      "statement": {"en": "Choose the standard iOS search-tab style for suggestions, discovery, and exploration.", "ja": "suggestion、discovery、explorationにはstandard iOS search-tab styleを選ぶ。"},
+      "conditions": ["Use a dedicated landing page to reveal useful content before people begin typing."],
+      "review_note": "Recorded the standard-tab purpose and landing-page behavior."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0009": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "a504c51eca2633dbaa0bb8bf49222737230f31978e6886978ee9a8bc64016ae5", "section_path": ["Search fields", "Platform considerations", "iOS", "Search as a tab"]},
+      "title": "Choose button-style iOS search for speed",
+      "statement": {"en": "Choose the iOS search-tab button appearance for quick, transient search.", "ja": "quickでtransientなsearchにはiOS search-tab button appearanceを選ぶ。"},
+      "conditions": ["Focus the search field and show the keyboard immediately, then return people to the previous tab after search."],
+      "review_note": "Recorded immediate entry, transient behavior, and return context."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0010": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "1347d29627974c1595a10f1e32075d4547a0e3334930091766ca26bab6d6ae31", "section_path": ["Search fields", "Platform considerations", "iOS", "Search in a toolbar"]},
+      "title": "Place priority search at the bottom",
+      "statement": {"en": "Place iOS search at the bottom when there is room.", "ja": "spaceがある場合はiOS searchをbottomに置く。"},
+      "conditions": ["Search is a priority and should remain easy to reach.", "Use an existing toolbar or a search-only toolbar."],
+      "review_note": "Recorded the space and priority conditions and both toolbar arrangements."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0011": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "bf6b6c8093629137aa8ab73b2ea63a00357a5790c7cfdc337e2d585915422ba3", "section_path": ["Search fields", "Platform considerations", "iOS", "Search in a toolbar"]},
+      "title": "Place iOS search at the top when needed",
+      "statement": {"en": "Place iOS search at the top when bottom content needs priority or no bottom toolbar exists.", "ja": "bottom contentを優先する場合、またはbottom toolbarがない場合はiOS searchをtopに置く。"},
+      "conditions": ["Bottom search would cover content that supports a primary app function."],
+      "review_note": "Repaired the truncated candidate and retained both source conditions."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0012": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "9b23aa65f416e079a6469e3c67dc3a98fb6ce8e52a77b21de957493f99d5e72a", "section_path": ["Search fields", "Platform considerations", "iOS", "Search as an inline field"]},
+      "title": "Use inline iOS search for local scope",
+      "statement": {"en": "Place iOS search inline when proximity strengthens its relationship to the content it searches.", "ja": "contentとのproximityでsearch scopeが明確になる場合はiOS searchをinlineに置く。"},
+      "conditions": ["Search or filtering applies to one view rather than globally, or location is critical to scope."],
+      "review_note": "Recorded local scope, multiple-search, and content-proximity conditions."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0013": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "535be0411accbb30672511410aa56e275aad1398f27fb97c17e956fe0eb12a77", "section_path": ["Search fields", "Platform considerations", "iPadOS, macOS"]},
+      "title": "Put sidebar filters at the top",
+      "statement": {"en": "Put search at the top of an iPadOS or macOS sidebar when it filters content or navigation there.", "ja": "iPadOSまたはmacOS sidebar内のcontentやnavigationをfilterする場合はsearchをtopに置く。"},
+      "conditions": ["Keep a clear separation between the filtered sidebar and an adjacent rich detail view."],
+      "review_note": "Recorded sidebar-filter scope and adjacent-view separation."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0014": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "63755f317349e19d06617e1130569da57d483a750f83d89356233f0240f58f65", "section_path": ["Search fields", "Platform considerations", "iPadOS, macOS"]},
+      "title": "Use dedicated search areas for discovery",
+      "statement": {"en": "Include search as an iPadOS or macOS sidebar or tab-bar item when discovery needs a dedicated area.", "ja": "discoveryにdedicated areaが必要な場合はiPadOSまたはmacOSのsidebarやtab barにsearch itemを置く。"},
+      "conditions": ["Rich suggestions, categories, recent searches, or browseable content need more space and persistent access."],
+      "review_note": "Recorded the dedicated-area decision and discovery content conditions."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0015": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "0da935de7d7018193d46b8fa2e20745251664631416d9e1abd940d2036625018", "section_path": ["Search fields", "Platform considerations", "tvOS"]},
+      "title": "Provide useful tvOS search suggestions",
+      "statement": {"en": "Make suggestions to make searching easier available when applicable.", "ja": "該当する場合はsearchを容易にするsuggestionを利用できるようにする。"},
+      "conditions": ["Reduce tvOS typing with popular and context-specific suggestions, including recent searches when available."],
+      "review_note": "Preserved the exact contextual duplicate while adding tvOS-specific suggestion content."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0016": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "a09768134400ade39bc1e3a3358a83f97f63cc2e42d8c34e83d915f3d554a898", "section_path": ["Search fields", "Best practices"]},
+      "title": "Start search as people type when possible",
+      "statement": {"en": "When possible, provide continuously refined search results as a person types.", "ja": "可能な場合は入力に応じて継続的にrefineされたsearch resultを提供する。"},
+      "conditions": ["Immediate refinement makes the search experience feel more responsive."],
+      "review_note": "Activated the conditioned immediate-search guidance without overstating it as mandatory."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0017": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "6015731a9a35c067cb5bf179e25d9c923190eaf967cb83b327c02b64a21d61d1", "section_path": ["Search fields", "Best practices"]},
+      "title": "Consider categorizing search results",
+      "statement": {"en": "Consider categorizing search results to help people find what they want.", "ja": "目的のitemを見つけやすくするためsearch resultのcategorizationを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The most likely results are already prioritized."],
+      "review_note": "Separated optional categorization from the SHOULD-level relevance ordering."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0018": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "f8a6f09ccb2806cb5c3a334f17ebae6d7e7948225b52544b9d24a2a26b86992c", "section_path": ["Search fields", "Scope bars and tokens"]},
+      "title": "Default search to a broad scope",
+      "statement": {"en": "Default to a broad search scope and let people refine it as needed.", "ja": "search scopeはbroadにdefault設定し、必要に応じてrefineできるようにする。"},
+      "conditions": ["The broad result set gives context that guides later narrowing."],
+      "review_note": "Activated the broad-default guidance and its refinement rationale."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0019": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "eb159a561fe6eb0d41ba2e3b912052209e04a4be6c4a0077506aaa8ec5785d58", "section_path": ["Search fields", "Platform considerations", "iOS", "Search as an inline field"]},
+      "title": "Position top inline search above its list",
+      "statement": {"en": "Position a top iOS inline search field above the list it searches.", "ja": "topに置くiOS inline search fieldは対象listの上に配置する。"},
+      "conditions": ["The inline search field appears at the top of the view."],
+      "review_note": "Recovered the placement clause separately from optional pinning."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0020": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "eb159a561fe6eb0d41ba2e3b912052209e04a4be6c4a0077506aaa8ec5785d58", "section_path": ["Search fields", "Platform considerations", "iOS", "Search as an inline field"]},
+      "title": "Consider pinning top inline search",
+      "statement": {"en": "Consider pinning a top iOS inline search field to the toolbar while content scrolls.", "ja": "content scroll中にtop iOS inline search fieldをtoolbarへpinすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Pinning keeps inline search distinct from search in other locations."],
+      "review_note": "Split the consider clause so optional pinning is not raised to SHOULD."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0021": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "b4b6c6c5f62c068dea230e9b70e87f87b0a733dc6e9083b2d4ab18b379ee04e2", "section_path": ["Search fields", "Platform considerations", "iPadOS, macOS"]},
+      "title": "Keep iPadOS and macOS search consistent",
+      "statement": {"en": "Try to keep search consistent across iPadOS and macOS when the app supports both.", "ja": "appがiPadOSとmacOSの両方に対応する場合はsearch experienceを一貫させる。"},
+      "conditions": ["The same app is available on iPad and Mac."],
+      "review_note": "Recovered the qualified cross-platform consistency guidance."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0022": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "215dd350c6e2faf72bc34b54e9305cfb0d1f903c5ec3bd8ef2a1e4959ccc9a2f", "section_path": ["Search fields", "Platform considerations", "iPadOS, macOS"]},
+      "title": "Place common search at the toolbar trailing side",
+      "statement": {"en": "Place a common-use iPadOS or macOS search field at the toolbar’s trailing side.", "ja": "common-useのiPadOSまたはmacOS search fieldをtoolbarのtrailing sideに置く。"},
+      "conditions": ["Toolbar search supports multi-column content or lets people navigate results while a detail selection stays visible."],
+      "review_note": "Activated the familiar toolbar placement and its split-view and detail-view uses."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0023": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "ca43aded2eb389f16cda90b426853ef97f8f948b4415396985286f0d1111cecf", "section_path": ["Search fields", "Platform considerations", "iPadOS, macOS"]},
+      "title": "Consider focusing dedicated search immediately",
+      "statement": {"en": "Consider immediately focusing a dedicated iPadOS or macOS search field when people enter its area.", "ja": "dedicatedなiPadOSまたはmacOS search areaに入ったときfieldを即時focusすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Immediate focus helps people search faster and locate the field."],
+      "exceptions": ["On iPad with only a virtual keyboard, leave the field unfocused to avoid unexpectedly covering the view."],
+      "review_note": "Recovered MAY and retained the iPad virtual-keyboard exception."
+    },
+    "HIG-COMPONENTS-SEARCH-FIELDS-0024": {
+      "source": {"source_hash": "630393bd84d192bc34cf565cc2026abebb917a0b1346d93233b23f2b5a32c722", "source_sentence_hash": "e5b3ed3774e1c0844bc8bba004155a2b4ffadbbc7ab7c57cdc02a573d10ca7e5", "section_path": ["Search fields", "Platform considerations", "iPadOS, macOS"]},
+      "title": "Adapt search placement to window resizing",
+      "statement": {"en": "Keep iPadOS and macOS search placement useful as the window resizes.", "ja": "window resize時もiPadOSとmacOSのsearch placementをcontextually usefulに保つ。"},
+      "conditions": ["In compact iPadOS views, keep search where it is most contextually useful, such as above the content-list column."],
+      "review_note": "Activated resizing guidance and recorded the compact iPadOS fallback."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

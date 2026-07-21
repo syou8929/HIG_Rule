@@ -1,6 +1,6 @@
 # Human source-review queue
 
-- Remaining rules: 1080
+- Remaining rules: 1065
 - Next priority: 4 (platform-specific-hig)
 - Next batch: 8
 
@@ -8,24 +8,24 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 206
+- 4 (platform-specific-hig): 198
 - 5 (input-and-device-constraints): 28
-- 6 (apple-platform-common): 823
+- 6 (apple-platform-common): 816
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 119
-- MAY: 131
-- SHOULD: 830
+- MAY: 128
+- SHOULD: 818
 
 ## Next batch
 
-- HIG-COMPONENTS-SEARCH-FIELDS-0008 · SHOULD — Choose the standard tab style to provide suggestions, promote discovery, and encourage exploration · Search fields > Platform considerations > iOS > Search as a tab ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- HIG-COMPONENTS-SEARCH-FIELDS-0009 · SHOULD — Choose the button appearance to help people quickly find what they need · Search fields > Platform considerations > iOS > Search as a tab ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- HIG-COMPONENTS-SEARCH-FIELDS-0010 · SHOULD — Place search at the bottom if there’s room · Search fields > Platform considerations > iOS > Search in a toolbar ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- HIG-COMPONENTS-SEARCH-FIELDS-0011 · SHOULD — Place search at the top when itʼs important to defer to content at the bottom of the screen, or · Search fields > Platform considerations > iOS > Search in a toolbar ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- HIG-COMPONENTS-SEARCH-FIELDS-0012 · SHOULD — Place search as an inline field when its position alongside the content it searches strengthens that relati… · Search fields > Platform considerations > iOS > Search as an inline field ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- HIG-COMPONENTS-SEARCH-FIELDS-0013 · SHOULD — Include search at the top of the sidebar when filtering content or navigation there · Search fields > Platform considerations > iPadOS, macOS ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- HIG-COMPONENTS-SEARCH-FIELDS-0014 · SHOULD — Include search as an item in the sidebar or tab bar when you want an area dedicated to discovery · Search fields > Platform considerations > iPadOS, macOS ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- HIG-COMPONENTS-SEARCH-FIELDS-0015 · SHOULD — Provide suggestions to make searching easier · Search fields > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SPLIT-VIEWS-0002 · SHOULD — Prefer using a split view in a regular — not a compact — environment · Split views > Platform considerations > iOS ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0004 · SHOULD — Provide multiple ways to reveal hidden panes · Split views > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0005 · SHOULD — Prefer the thin divider style · Split views > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0006 · SHOULD — Choose a split view layout that keeps the panes looking balanced · Split views > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0007 · SHOULD — Display a single title above a split view, helping people understand the content as a whole · Split views > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0008 · SHOULD — Choose the title’s alignment based on the type of content the secondary pane contains · Split views > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0009 · SHOULD — To display supplementary information, prefer a split view instead of a new window · Split views > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
+- HIG-COMPONENTS-SPLIT-VIEWS-0003 · MAY — Consider letting people hide a pane when it makes sense · Split views > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))

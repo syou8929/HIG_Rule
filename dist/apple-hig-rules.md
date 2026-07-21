@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:42:29.225Z. 2278 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:50:24.872Z. 2287 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1381,21 +1381,30 @@ Generated 2026-07-21T17:42:29.225Z. 2278 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-SCROLL-VIEWS-0025 · MAY · high** — Consider limiting each watchOS page to one screen height. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 ### search-fields
 
-- **HIG-COMPONENTS-SEARCH-FIELDS-0001 · SHOULD · low** — Choose or apply placeholder text to help people know what they can search for in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0002 · MAY · low** — Evaluate whether showing suggested search terms is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0003 · SHOULD · low** — Apply the documented Search fields guidance to simplify search results. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0004 · MAY · low** — Evaluate whether letting people filter search results is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0005 · SHOULD · low** — Choose or apply a scope bar to filter among clearly defined search categories in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0006 · SHOULD · low** — Choose or apply tokens to filter by common search terms or items in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0007 · MAY · low** — Evaluate whether pairing tokens with search suggestions is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0008 · SHOULD · low** — Apply the documented Search fields guidance to choose the standard tab style to provide suggestions, promote discovery, and encourage exploration. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0009 · SHOULD · low** — Apply the documented Search fields guidance to choose the button appearance to help people quickly find what they need. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0010 · SHOULD · low** — Apply the documented Search fields guidance to place search at the bottom if there’s room. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0011 · SHOULD · low** — Apply the documented Search fields guidance to place search at the top when itʼs important to defer to content at the bottom of the screen, or. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0012 · SHOULD · low** — Apply the documented Search fields guidance to place search as an inline field when its position alongside the content it searches strengthens that relationship. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0013 · SHOULD · low** — Apply the documented Search fields guidance to include search at the top of the sidebar when filtering content or navigation there. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0014 · SHOULD · low** — Apply the documented Search fields guidance to include search as an item in the sidebar or tab bar when you want an area dedicated to discovery. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-- **HIG-COMPONENTS-SEARCH-FIELDS-0015 · SHOULD · low** — Make suggestions to make searching easier available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0001 · SHOULD · high** — Use placeholder text when it clarifies what people can search for. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0002 · MAY · high** — Consider showing suggested search terms. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0003 · SHOULD · high** — Present the most relevant search results first. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0004 · MAY · high** — Consider letting people filter search results. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0005 · SHOULD · high** — Use a scope bar to filter among clearly defined search categories. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0006 · SHOULD · high** — Use tokens to filter by common search terms or items. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0007 · MAY · high** — Consider pairing search tokens with suggestions. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0008 · SHOULD · high** — Choose the standard iOS search-tab style for suggestions, discovery, and exploration. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0009 · SHOULD · high** — Choose the iOS search-tab button appearance for quick, transient search. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0010 · SHOULD · high** — Place iOS search at the bottom when there is room. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0011 · SHOULD · high** — Place iOS search at the top when bottom content needs priority or no bottom toolbar exists. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0012 · SHOULD · high** — Place iOS search inline when proximity strengthens its relationship to the content it searches. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0013 · SHOULD · high** — Put search at the top of an iPadOS or macOS sidebar when it filters content or navigation there. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0014 · SHOULD · high** — Include search as an iPadOS or macOS sidebar or tab-bar item when discovery needs a dedicated area. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0015 · SHOULD · high** — Make suggestions to make searching easier available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0016 · SHOULD · high** — When possible, provide continuously refined search results as a person types. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0017 · MAY · high** — Consider categorizing search results to help people find what they want. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0018 · SHOULD · high** — Default to a broad search scope and let people refine it as needed. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0019 · SHOULD · high** — Position a top iOS inline search field above the list it searches. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0020 · MAY · high** — Consider pinning a top iOS inline search field to the toolbar while content scrolls. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0021 · SHOULD · high** — Try to keep search consistent across iPadOS and macOS when the app supports both. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0022 · SHOULD · high** — Place a common-use iPadOS or macOS search field at the toolbar’s trailing side. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0023 · MAY · high** — Consider immediately focusing a dedicated iPadOS or macOS search field when people enter its area. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- **HIG-COMPONENTS-SEARCH-FIELDS-0024 · SHOULD · high** — Keep iPadOS and macOS search placement useful as the window resizes. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
 ### segmented-controls
 
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0001 · SHOULD · low** — Choose or apply a segmented control to provide closely related choices that affect an object, state, or view in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))

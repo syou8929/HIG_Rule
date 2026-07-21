@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1114
-- Reviewed batches: 72
+- Reviewed rules: 1138
+- Reviewed batches: 73
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:36:45Z
+- Reviewed at: 2026-07-21T17:44:30Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -353,6 +353,30 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SCROLL-VIEWS-0023 · high — Activated the conditional margin adjustment without turning the example into a fixed measurement. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0024 · high — Activated the prerequisite separately from the recommendation to support Look to Scroll. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0025 · high — Separated the optional page-height guidance from the tab-view recommendation and corrected its modality. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SEARCH-FIELDS-0001 · high — Narrowed placeholder use to the source-supported education and scope purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0002 · high — Preserved MAY and both timing patterns for suggestions. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0003 · high — Made the vague simplify lead concrete and separated optional categorization. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0004 · high — Preserved MAY and recorded the source filtering mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0005 · high — Recorded category clarity and broad-to-narrow refinement. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0006 · high — Recorded the common-filter purpose and single-item editing behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0007 · high — Preserved MAY and the token-discovery purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0008 · high — Recorded the standard-tab purpose and landing-page behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0009 · high — Recorded immediate entry, transient behavior, and return context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0010 · high — Recorded the space and priority conditions and both toolbar arrangements. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0011 · high — Repaired the truncated candidate and retained both source conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0012 · high — Recorded local scope, multiple-search, and content-proximity conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0013 · high — Recorded sidebar-filter scope and adjacent-view separation. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0014 · high — Recorded the dedicated-area decision and discovery content conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0015 · high — Preserved the exact contextual duplicate while adding tvOS-specific suggestion content. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0016 · high — Activated the conditioned immediate-search guidance without overstating it as mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0017 · high — Separated optional categorization from the SHOULD-level relevance ordering. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0018 · high — Activated the broad-default guidance and its refinement rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0019 · high — Recovered the placement clause separately from optional pinning. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0020 · high — Split the consider clause so optional pinning is not raised to SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0021 · high — Recovered the qualified cross-platform consistency guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0022 · high — Activated the familiar toolbar placement and its split-view and detail-view uses. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0023 · high — Recovered MAY and retained the iPad virtual-keyboard exception. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEARCH-FIELDS-0024 · high — Activated resizing guidance and recorded the compact iPadOS fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0006 · high — Preserved the optional strength and distinguished related subviews from separate app sections. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0007 · high — Recorded the icon-label and per-segment tooltip guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0008 · high — Recorded the toolbar and inspector exception to the main-window tab-view guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
