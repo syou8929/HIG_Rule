@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2655
+- Active atomic rules: 2671
 - Pages without rules: 16
-- Low-confidence rules: 866
-- Rules requiring human review: 866
-- Reference notes: 913
+- Low-confidence rules: 858
+- Rules requiring human review: 858
+- Reference notes: 912
 
 ## Rules by category
 
@@ -18,15 +18,15 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 772
+- technologies: 788
 
 ## Normative levels
 
-- AVOID: 354
-- MAY: 325
-- MUST: 264
+- AVOID: 357
+- MAY: 329
+- MUST: 268
 - MUST_NOT: 23
-- SHOULD: 1689
+- SHOULD: 1694
 
 ## Rules by platform
 
@@ -35,13 +35,13 @@
 - ipados: 1722
 - macos: 1435
 - tvos: 1112
-- visionos: 1455
-- watchos: 1179
+- visionos: 1470
+- watchos: 1180
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2585
+- manual: 2601
 
 ## Blocked pages
 
@@ -853,14 +853,6 @@ None.
 - HIG-TECHNOLOGIES-SHAREPLAY-0003
 - HIG-TECHNOLOGIES-SHAREPLAY-0004
 - HIG-TECHNOLOGIES-SHAREPLAY-0005
-- HIG-TECHNOLOGIES-SHAREPLAY-0006
-- HIG-TECHNOLOGIES-SHAREPLAY-0007
-- HIG-TECHNOLOGIES-SHAREPLAY-0008
-- HIG-TECHNOLOGIES-SHAREPLAY-0010
-- HIG-TECHNOLOGIES-SHAREPLAY-0011
-- HIG-TECHNOLOGIES-SHAREPLAY-0012
-- HIG-TECHNOLOGIES-SHAREPLAY-0013
-- HIG-TECHNOLOGIES-SHAREPLAY-0014
 - HIG-TECHNOLOGIES-SHAREPLAY-0015
 - HIG-TECHNOLOGIES-SHAZAMKIT-0001
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0001
@@ -1722,14 +1714,6 @@ None.
 - HIG-TECHNOLOGIES-SHAREPLAY-0003
 - HIG-TECHNOLOGIES-SHAREPLAY-0004
 - HIG-TECHNOLOGIES-SHAREPLAY-0005
-- HIG-TECHNOLOGIES-SHAREPLAY-0006
-- HIG-TECHNOLOGIES-SHAREPLAY-0007
-- HIG-TECHNOLOGIES-SHAREPLAY-0008
-- HIG-TECHNOLOGIES-SHAREPLAY-0010
-- HIG-TECHNOLOGIES-SHAREPLAY-0011
-- HIG-TECHNOLOGIES-SHAREPLAY-0012
-- HIG-TECHNOLOGIES-SHAREPLAY-0013
-- HIG-TECHNOLOGIES-SHAREPLAY-0014
 - HIG-TECHNOLOGIES-SHAREPLAY-0015
 - HIG-TECHNOLOGIES-SHAZAMKIT-0001
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0001
@@ -2482,7 +2466,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Weights and scales — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

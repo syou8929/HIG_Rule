@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:10:00Z",
+  "reviewed_at": "2026-07-21T22:19:00Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,45 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 287,
+  "reviewed_rule_count": 291,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-SHAREPLAY-0018": {
+      "title": "Use an autodismissible window for shared-activity prerequisites",
+      "statement": {"en": "Present prerequisite input in an autodismissible window.", "ja": "prerequisite inputをautodismissible windowで提示する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["People must complete input, such as sign-in, before joining the shared activity.", "Dismiss the window as soon as the required input is complete."],
+      "review_note": "Recovered the conditional MUST from the explicit be-sure directive and its automatic-dismissal outcome."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0021": {
+      "title": "Integrate new participants without disruption",
+      "statement": {"en": "Integrate new participants without disrupting the shared experience.", "ja": "shared experienceを妨げずにnew participantを統合する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Update shared immersive content to keep participants synchronized."],
+      "review_note": "Recovered MUST from the explicit need-to-integrate requirement and preserved its non-disruption outcome."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0031": {
+      "title": "Keep per-person shared content synchronized",
+      "statement": {"en": "Keep participant positions and app context synchronized for per-person shared content.", "ja": "per-person shared contentでもparticipant positionとapp contextを同期し続ける。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app provides per-person versions of shared content."],
+      "review_note": "Recovered the conditional MUST from the explicit be-sure-to-continue directive."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0028": {
+      "title": "Provide a quick rejoin control after exit",
+      "statement": {"en": "Present a control that lets people quickly rejoin after exiting.", "ja": "exit後にすばやくrejoinできるcontrolを提示する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["A participant leaves to perform another task or engage with physical surroundings."],
+      "review_note": "Recovered MUST from the explicit need-to-present requirement and preserved the quick-rejoin outcome."
+    },
     "HIG-TECHNOLOGIES-RESEARCHKIT-0001": {
       "title": "Keep ResearchKit onboarding screens in the correct order",
       "statement": {"en": "Always display ResearchKit onboarding screens in the correct order.", "ja": "ResearchKit onboarding screenを常に正しい順序で表示する。"},
@@ -1697,10 +1729,14 @@
       "review_note": "Retained MUST after confirming the explicit Make sure directive in the conducting-research list."
     },
     "HIG-TECHNOLOGIES-SHAREPLAY-0009": {
+      "title": "Keep all participants in the same app state",
+      "statement": {"en": "Ensure all participants view the same app state.", "ja": "すべてのparticipantが同じapp stateを表示するようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
       "exceptions": [
         "A participant may temporarily leave the shared activity when needed."
       ],
-      "review_note": "Recorded the source's explicit temporary-exit exception."
+      "review_note": "Retained MUST from the explicit Make sure directive and recorded the temporary-exit exception."
     },
     "HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017": {
       "title": "Let people view their Sign in with Apple private relay address",

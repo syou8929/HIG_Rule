@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1717
-- Reviewed batches: 111
+- Reviewed rules: 1742
+- Reviewed batches: 112
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:10:00Z
+- Reviewed at: 2026-07-21T22:19:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1663,6 +1663,31 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-RESEARCHKIT-0036 · high — Kept the profile exit capability optional because the source presents it as something a profile can provide. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0037 · high — Kept document access optional because the source presents it as a profile capability. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0038 · high — Recorded the descriptive platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- HIG-TECHNOLOGIES-SHAREPLAY-0006 · high — Recorded the three system templates and the content-versus-interaction choice. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0007 · high — Recorded the direct-launch expectation separately from window restrictions and prerequisite tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0008 · high — Kept synchronized entry at SHOULD and split the adjacent non-coercion guidance into its own AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0009 · high — Retained the explicit Make sure shared-state MUST and its temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0010 · high — Recorded the intended realism benefit without making Spatial Audio universal. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0011 · high — Recorded the privacy-sensitive separation outcome and split its multiwindow actions. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0012 · high — Recorded independent personalization and its accessibility and comfort purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0013 · high — Preserved optional per-person viewing and its perspective-dependent condition. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0014 · high — Kept the general ease guidance at SHOULD and split the explicit rejoin-control requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0016 · high — Recorded the descriptive watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0017 · high — Recovered the launch-specific window restriction without raising want-to-avoid wording to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0018 · high — Recovered the conditional MUST from the explicit be-sure directive and its automatic-dismissal outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0019 · high — Recovered the pre-synchronization disruption check. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0020 · high — Split the lead's don't-force clause at AVOID because it does not use Never or must not. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0021 · high — Recovered MUST from the explicit need-to-integrate requirement and preserved its non-disruption outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0022 · high — Preserved the source's consider framing for the five-participant arrangement. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0023 · high — Recovered the when-possible social-coordination preference. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0024 · high — Preserved the conditional consider guidance for app-level conflict resolution. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0025 · high — Recovered the multiwindow sharing-selection task separately from state distinction. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0026 · high — Recovered the privacy-sensitive multiwindow state distinction. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0027 · high — Preserved the if-possible content-transfer capability as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0028 · high — Recovered MUST from the explicit need-to-present requirement and preserved the quick-rejoin outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0029 · high — Preserved the source's might-want optional framing. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0030 · high — Recovered participant choice as the non-coercive synchronization path. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0031 · high — Recovered the conditional MUST from the explicit be-sure-to-continue directive. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0001 · high — Reviewed the rendered source context for “Help merchants accept Tap to Pay on iPhone terms and conditions before they begin interacting with their cu…” and recorded its Tap to Pay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0002 · high — Reviewed the rendered source context for “Provide a tutorial that describes the supported payment types and shows how to use Tap to Pay on iPhone” and recorded its Tap to Pay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0003 · high — Reviewed the rendered source context for “Provide Tap to Pay on iPhone as a checkout option whether the feature is enabled or not” and recorded its Tap to Pay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))

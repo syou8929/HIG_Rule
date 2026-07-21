@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 287
-- Retained MUST: 264
+- Reviewed rules: 291
+- Retained MUST: 268
 - Retained MUST_NOT: 23
-- Normative level changes: 56
+- Normative level changes: 61
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:10:00Z
+- Reviewed at: 2026-07-21T22:19:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -220,7 +220,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-RESEARCHKIT-0025 — Classified the unqualified consent directive as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0027 — Classified the direct access-permission requirement as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0030 — Retained the conditional permission requirement as an explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- HIG-TECHNOLOGIES-SHAREPLAY-0009 — Recorded the source's explicit temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0009 — Retained MUST from the explicit Make sure directive and recorded the temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0018 — Recovered the conditional MUST from the explicit be-sure directive and its automatic-dismissal outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0021 — Recovered MUST from the explicit need-to-integrate requirement and preserved its non-disruption outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0028 — Recovered MUST from the explicit need-to-present requirement and preserved the quick-rejoin outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0031 — Recovered the conditional MUST from the explicit be-sure-to-continue directive. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017 — Retained MUST after confirming the explicit Make sure directive in the data-collection guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012 — Raised to MUST after confirming the parent Make sure directive applies to every item in the custom-tutorial list. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
@@ -509,7 +513,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-RESEARCHKIT-0025 · MUST · retained_with_atomicity_or_scope_correction — Classified the unqualified consent directive as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0027 · MUST · retained_with_atomicity_or_scope_correction — Classified the direct access-permission requirement as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0030 · MUST · retained_with_atomicity_or_scope_correction — Retained the conditional permission requirement as an explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- HIG-TECHNOLOGIES-SHAREPLAY-0009 · MUST · retained_with_atomicity_or_scope_correction — Recorded the source's explicit temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0009 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Make sure directive and recorded the temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional MUST from the explicit be-sure directive and its automatic-dismissal outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to-integrate requirement and preserved its non-disruption outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0028 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to-present requirement and preserved the quick-rejoin outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional MUST from the explicit be-sure-to-continue directive. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive in the data-collection guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 · MUST · retained_with_atomicity_or_scope_correction — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012 · MUST · retained_with_atomicity_or_scope_correction — Raised to MUST after confirming the parent Make sure directive applies to every item in the custom-tutorial list. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))

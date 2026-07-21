@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:10:00Z",
+  "reviewed_at": "2026-07-21T22:19:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2676,9 +2676,179 @@
         "HIG-TECHNOLOGIES-RESEARCHKIT-0014", "HIG-TECHNOLOGIES-RESEARCHKIT-0015", "HIG-TECHNOLOGIES-RESEARCHKIT-0016", "HIG-TECHNOLOGIES-RESEARCHKIT-0017", "HIG-TECHNOLOGIES-RESEARCHKIT-0018", "HIG-TECHNOLOGIES-RESEARCHKIT-0019", "HIG-TECHNOLOGIES-RESEARCHKIT-0020", "HIG-TECHNOLOGIES-RESEARCHKIT-0021", "HIG-TECHNOLOGIES-RESEARCHKIT-0022", "HIG-TECHNOLOGIES-RESEARCHKIT-0023", "HIG-TECHNOLOGIES-RESEARCHKIT-0024", "HIG-TECHNOLOGIES-RESEARCHKIT-0025", "HIG-TECHNOLOGIES-RESEARCHKIT-0026", "HIG-TECHNOLOGIES-RESEARCHKIT-0027", "HIG-TECHNOLOGIES-RESEARCHKIT-0028", "HIG-TECHNOLOGIES-RESEARCHKIT-0029", "HIG-TECHNOLOGIES-RESEARCHKIT-0030", "HIG-TECHNOLOGIES-RESEARCHKIT-0031", "HIG-TECHNOLOGIES-RESEARCHKIT-0032", "HIG-TECHNOLOGIES-RESEARCHKIT-0033", "HIG-TECHNOLOGIES-RESEARCHKIT-0034", "HIG-TECHNOLOGIES-RESEARCHKIT-0035", "HIG-TECHNOLOGIES-RESEARCHKIT-0036", "HIG-TECHNOLOGIES-RESEARCHKIT-0037", "HIG-TECHNOLOGIES-RESEARCHKIT-0038"
       ],
       "review_note": "Completed the sensitive full-page review, preserved thirteen stable IDs, recovered twenty-five atomic rules, separated optional contact and profile features, and retained nine consent, permission, explicit-intent, or completion MUST decisions without promoting the noncritical-data avoidance to MUST_NOT."
+    },
+    {
+      "id": "priority-4-shareplay-visionos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:19:00Z",
+      "review_method": "Rendered Apple HIG SharePlay platform overview and complete visionOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/shareplay", "source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827"}],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-SHAREPLAY-0006", "HIG-TECHNOLOGIES-SHAREPLAY-0007", "HIG-TECHNOLOGIES-SHAREPLAY-0008", "HIG-TECHNOLOGIES-SHAREPLAY-0009", "HIG-TECHNOLOGIES-SHAREPLAY-0010", "HIG-TECHNOLOGIES-SHAREPLAY-0011", "HIG-TECHNOLOGIES-SHAREPLAY-0012", "HIG-TECHNOLOGIES-SHAREPLAY-0013", "HIG-TECHNOLOGIES-SHAREPLAY-0014",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0016", "HIG-TECHNOLOGIES-SHAREPLAY-0017", "HIG-TECHNOLOGIES-SHAREPLAY-0018", "HIG-TECHNOLOGIES-SHAREPLAY-0019", "HIG-TECHNOLOGIES-SHAREPLAY-0020", "HIG-TECHNOLOGIES-SHAREPLAY-0021", "HIG-TECHNOLOGIES-SHAREPLAY-0022", "HIG-TECHNOLOGIES-SHAREPLAY-0023", "HIG-TECHNOLOGIES-SHAREPLAY-0024", "HIG-TECHNOLOGIES-SHAREPLAY-0025", "HIG-TECHNOLOGIES-SHAREPLAY-0026", "HIG-TECHNOLOGIES-SHAREPLAY-0027", "HIG-TECHNOLOGIES-SHAREPLAY-0028", "HIG-TECHNOLOGIES-SHAREPLAY-0029", "HIG-TECHNOLOGIES-SHAREPLAY-0030", "HIG-TECHNOLOGIES-SHAREPLAY-0031"
+      ],
+      "review_note": "Completed the visionOS section, preserved nine stable IDs, recovered sixteen atomic rules, split synchronized entry from non-coercion, and retained five shared-state, prerequisite-window, new-participant, per-person-sync, or rejoin-control MUST decisions."
     }
   ],
   "rules": {
+    "HIG-TECHNOLOGIES-SHAREPLAY-0006": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "3077440efd0cd65b34ee85777cbea3bcfbb7ee33eba18be4fac8aae2066f7973", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Choose the spatial Persona template that suits the shared activity.", "ja": "shared activityに適したspatial Persona templateを選ぶ。"},
+      "conditions": ["Compare side-by-side, surround, and conversational layouts against content visibility and social interaction needs."],
+      "review_note": "Recorded the three system templates and the content-versus-interaction choice."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0007": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "b4ccdc026114f13d18017924ec1632fb653bf0305469e8acd4a5038dc1567691", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Prepare the visionOS app to launch directly into its shared activity.", "ja": "visionOS appがshared activityへ直接launchできるように準備する。"},
+      "conditions": ["The system automatically launches the app when someone shares the activity in FaceTime."],
+      "review_note": "Recorded the direct-launch expectation separately from window restrictions and prerequisite tasks."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0008": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "6b8a20cdf6915f9f257184c574bcc6d2f6ae51a7a3ca598f4fdce6b2f6dae2c6", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "title": "Help people enter a visionOS shared activity together",
+      "statement": {"en": "Help people enter a visionOS shared activity together.", "ja": "peopleがvisionOS shared activityへ一緒に入れるよう支援する。"},
+      "review_note": "Kept synchronized entry at SHOULD and split the adjacent non-coercion guidance into its own AVOID rule."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0009": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "f360226f62851ea15d15d9e89864bf34817617d90c9d4dc6fa96465375c57d22", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Maintaining a shared context"]},
+      "statement": {"en": "Ensure all participants view the same app state.", "ja": "すべてのparticipantが同じapp stateを表示するようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "exceptions": ["A participant may temporarily leave the shared activity when needed."],
+      "review_note": "Retained the explicit Make sure shared-state MUST and its temporary-exit exception."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0010": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "14a3c0fc097a824dfd7a906e54e691f8b9ed3f53d3bd4bf6ee259f13c7880fc1", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Maintaining a shared context"]},
+      "statement": {"en": "Use Spatial Audio to enrich the shared activity.", "ja": "Spatial Audioでshared activityを豊かにする。"},
+      "conditions": ["Use spatial sound when it strengthens the realism of the shared experience."],
+      "review_note": "Recorded the intended realism benefit without making Spatial Audio universal."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0011": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "6762163b802c07b274bfce835a5a5848f856187bbd900847c4fc98069ee5ba06", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Maintaining a shared context"]},
+      "statement": {"en": "Help people keep private and shared content separate.", "ja": "private contentとshared contentを区別できるようにする。"},
+      "conditions": ["Review both system differentiation and app-provided multiwindow sharing cues."],
+      "review_note": "Recorded the privacy-sensitive separation outcome and split its multiwindow actions."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0012": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "7d2b361f52c78e09a83edf3142e9694faca41457a46729215995d38860b0b3bc", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Adjusting a shared context"]},
+      "statement": {"en": "Let people personalize their experience without changing it for others.", "ja": "他のparticipantのexperienceを変えずにpersonalizeできるようにする。"},
+      "conditions": ["Support adjustments for accessibility or comfort, such as volume or subtitles."],
+      "review_note": "Recorded independent personalization and its accessibility and comfort purposes."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0013": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "d25bb308b77dfeb7797729f2329604e6f2f9eabab1ae7161dfae2f3352d982b3", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Adjusting a shared context"]},
+      "statement": {"en": "Consider a unique content view for each participant when perspective matters.", "ja": "perspectiveが重要な場合はparticipantごとのunique content viewを検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Preserved optional per-person viewing and its perspective-dependent condition."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0014": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "bef15636233ecb2ba3ea676e9267d8ff68c58a5ada4e135a0ca54e653274dbbf", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Adjusting a shared context"]},
+      "statement": {"en": "Make exiting and rejoining a shared activity easy.", "ja": "shared activityからのexitとrejoinを容易にする。"},
+      "review_note": "Kept the general ease guidance at SHOULD and split the explicit rejoin-control requirement."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0016": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "f02ad5c590208751df68c5fb05835f408440dba4d30ec3fdf8ef12c61175d01d", "section_path": ["SharePlay", "Platform considerations"]},
+      "statement": {"en": "Avoid using SharePlay on watchOS.", "ja": "watchOSでSharePlayを使わない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "technology-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["SharePlay has no additional considerations for iOS, iPadOS, macOS, or tvOS."],
+      "review_note": "Recorded the descriptive watchOS limitation at AVOID rather than MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0017": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "c8dc3cdb7895fbcd09bfa507261e14d704f539b939e767f8d431f8daaa78927e", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Avoid displaying unrelated windows during automatic shared-activity launch.", "ja": "shared activityのautomatic launch中に無関係なwindowを表示しない。"},
+      "normative_level": "AVOID",
+      "review_note": "Recovered the launch-specific window restriction without raising want-to-avoid wording to MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0018": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "c8dc3cdb7895fbcd09bfa507261e14d704f539b939e767f8d431f8daaa78927e", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Present prerequisite input in an autodismissible window.", "ja": "prerequisite inputをautodismissible windowで提示する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["People must complete input, such as sign-in, before joining the shared activity.", "Dismiss the window as soon as the required input is complete."],
+      "review_note": "Recovered the conditional MUST from the explicit be-sure directive and its automatic-dismissal outcome."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0019": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "c17f59e2acb3a1749261834634db912e823196ef71dacb5f3aea02afb08e9942", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Check whether synchronized immersion would disrupt a participant's current task.", "ja": "immersionの同期がparticipantのcurrent taskを妨げないか確認する。"},
+      "conditions": ["Check before changing the participant's level of immersion."],
+      "review_note": "Recovered the pre-synchronization disruption check."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0020": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "c17f59e2acb3a1749261834634db912e823196ef71dacb5f3aea02afb08e9942", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Avoid forcing an immersion change that disrupts a participant's task.", "ja": "participantのtaskを妨げるimmersion changeを強制しない。"},
+      "normative_level": "AVOID",
+      "review_note": "Split the lead's don't-force clause at AVOID because it does not use Never or must not."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0030": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "c17f59e2acb3a1749261834634db912e823196ef71dacb5f3aea02afb08e9942", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Offer a choice when synchronized immersion would disrupt a participant's task.", "ja": "immersionの同期がtaskを妨げる場合は参加するか選べるようにする。"},
+      "conditions": ["Let the participant choose whether to enter the updated experience."],
+      "review_note": "Recovered participant choice as the non-coercive synchronization path."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0021": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "22e119df760130f630c80d9103a1a1db80061f610556dbdcf0072689332d1681", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Integrate new participants without disrupting the shared experience.", "ja": "shared experienceを妨げずにnew participantを統合する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Update shared immersive content to keep participants synchronized."],
+      "review_note": "Recovered MUST from the explicit need-to-integrate requirement and preserved its non-disruption outcome."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0022": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "22e119df760130f630c80d9103a1a1db80061f610556dbdcf0072689332d1681", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "statement": {"en": "Consider accommodating up to five participants in the spatial arrangement.", "ja": "spatial arrangementで最大5人のparticipantへの対応を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Update participant positions as necessary."],
+      "review_note": "Preserved the source's consider framing for the five-participant arrangement."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0023": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "5c022c356d03cd22d4c23638f3d74930309154740ec608584f16c20c51879337", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Maintaining a shared context"]},
+      "statement": {"en": "Prefer natural social solutions to shared-experience confusion or conflict when possible.", "ja": "可能な場合はshared experienceのconfusionやconflictにnatural social solutionを優先する。"},
+      "conditions": ["Let participants coordinate verbally or with gestures when social interaction can resolve tool use."],
+      "review_note": "Recovered the when-possible social-coordination preference."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0024": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "5c022c356d03cd22d4c23638f3d74930309154740ec608584f16c20c51879337", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Maintaining a shared context"]},
+      "statement": {"en": "Consider a simple conflict-resolution rule when simultaneous changes can conflict.", "ja": "同時変更がconflictする場合はsimpleなconflict-resolution ruleを検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Preserved the conditional consider guidance for app-level conflict resolution."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0025": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "7a09f2008380b4ec9031aeb9d78749f5d51269580bf5920c55d4c8c688eabce5", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Maintaining a shared context"]},
+      "statement": {"en": "Help people choose which app window to share.", "ja": "shareするapp windowを選べるようにする。"},
+      "conditions": ["The app can open multiple windows."],
+      "review_note": "Recovered the multiwindow sharing-selection task separately from state distinction."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0026": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "7a09f2008380b4ec9031aeb9d78749f5d51269580bf5920c55d4c8c688eabce5", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Maintaining a shared context"]},
+      "statement": {"en": "Make shared and unshared app windows easy to distinguish.", "ja": "shared app windowとunshared app windowを区別しやすくする。"},
+      "conditions": ["The app can open multiple windows."],
+      "review_note": "Recovered the privacy-sensitive multiwindow state distinction."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0027": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "7a09f2008380b4ec9031aeb9d78749f5d51269580bf5920c55d4c8c688eabce5", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Maintaining a shared context"]},
+      "statement": {"en": "Consider letting people move content from a private window to a shared one.", "ja": "private windowからshared windowへcontentを移動できるようにすることを検討する。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "review_note": "Preserved the if-possible content-transfer capability as MAY."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0031": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "4d203e00468b6c59310f29720dfa41f699fb0cc71350306be5421f5517763786", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Adjusting a shared context"]},
+      "statement": {"en": "Keep participant positions and app context synchronized for per-person shared content.", "ja": "per-person shared contentでもparticipant positionとapp contextを同期し続ける。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The app provides per-person versions of shared content."],
+      "review_note": "Recovered the conditional MUST from the explicit be-sure-to-continue directive."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0028": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "8a4b5632e39313cb7073b4d08a8d8300115de91b45e54edb64745443100a4641", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Adjusting a shared context"]},
+      "statement": {"en": "Present a control that lets people quickly rejoin after exiting.", "ja": "exit後にすばやくrejoinできるcontrolを提示する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["A participant leaves to perform another task or engage with physical surroundings."],
+      "review_note": "Recovered MUST from the explicit need-to-present requirement and preserved the quick-rejoin outcome."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0029": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "8a4b5632e39313cb7073b4d08a8d8300115de91b45e54edb64745443100a4641", "section_path": ["SharePlay", "Platform considerations", "visionOS", "Adjusting a shared context"]},
+      "statement": {"en": "Consider continuing shared content while a participant hides their spatial Persona.", "ja": "participantがspatial Personaを隠している間もshared contentの継続表示を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Ongoing content helps the participant stay informed about the shared experience."],
+      "review_note": "Preserved the source's might-want optional framing."
+    },
     "HIG-TECHNOLOGIES-RESEARCHKIT-0013": {
       "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "5100d084bc54c8ed47d96149a33625ef295185200995c8b3be9c33e6b58b81b6", "section_path": ["ResearchKit", "Creating the onboarding experience", "2. Determine eligibility"]},
       "statement": {"en": "Determine study eligibility as soon as possible.", "ja": "study eligibilityを可能な限り早く判定する。"},

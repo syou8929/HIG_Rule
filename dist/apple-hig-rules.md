@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:16:39.204Z. 2655 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:24:00.381Z. 2671 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2830,16 +2830,32 @@ Generated 2026-07-21T22:16:39.204Z. 2655 active rules; 4 deprecated rules.
 - **HIG-TECHNOLOGIES-SHAREPLAY-0003 · SHOULD · low** — Choose or apply the term SharePlay correctly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - **HIG-TECHNOLOGIES-SHAREPLAY-0004 · SHOULD · low** — Apply the documented SharePlay guidance to make it easy to start sharing an activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - **HIG-TECHNOLOGIES-SHAREPLAY-0005 · SHOULD · low** — Apply the documented SharePlay guidance to help people prepare to join a session before displaying the activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0006 · SHOULD · low** — Apply the documented SharePlay guidance to choose the spatial Persona template that suits your shared activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0007 · SHOULD · low** — Apply the documented SharePlay guidance to be prepared to launch directly into your shared activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0008 · SHOULD · low** — Apply the documented SharePlay guidance to help people enter a shared activity together, but don’t force them. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0009 · MUST · medium** — Verify that everyone views the same state of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0010 · SHOULD · low** — Choose or apply spatial Audio to enrich your shared activity in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0011 · SHOULD · low** — Apply the documented SharePlay guidance to help people keep their private and shared content separate. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0012 · SHOULD · low** — Preserve people’s ability to personalize their experience without changing the experience for others. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0013 · MAY · low** — Evaluate whether when to give each participant a unique view of the shared content is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
-- **HIG-TECHNOLOGIES-SHAREPLAY-0014 · SHOULD · low** — Apply the documented SharePlay guidance to make it easy for people to exit and rejoin a shared activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0006 · SHOULD · high** — Choose the spatial Persona template that suits the shared activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0007 · SHOULD · high** — Prepare the visionOS app to launch directly into its shared activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0008 · SHOULD · high** — Help people enter a visionOS shared activity together. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0009 · MUST · high** — Ensure all participants view the same app state. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0010 · SHOULD · high** — Use Spatial Audio to enrich the shared activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0011 · SHOULD · high** — Help people keep private and shared content separate. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0012 · SHOULD · high** — Let people personalize their experience without changing it for others. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0013 · MAY · high** — Consider a unique content view for each participant when perspective matters. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0014 · SHOULD · high** — Make exiting and rejoining a shared activity easy. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - **HIG-TECHNOLOGIES-SHAREPLAY-0015 · MAY · low** — When part of your app requires a subscription, consider ways to help nonsubscriber participants quickly join a group activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0016 · AVOID · high** — Avoid using SharePlay on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0017 · AVOID · high** — Avoid displaying unrelated windows during automatic shared-activity launch. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0018 · MUST · high** — Present prerequisite input in an autodismissible window. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0019 · SHOULD · high** — Check whether synchronized immersion would disrupt a participant's current task. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0020 · AVOID · high** — Avoid forcing an immersion change that disrupts a participant's task. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0021 · MUST · high** — Integrate new participants without disrupting the shared experience. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0022 · MAY · high** — Consider accommodating up to five participants in the spatial arrangement. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0023 · SHOULD · high** — Prefer natural social solutions to shared-experience confusion or conflict when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0024 · MAY · high** — Consider a simple conflict-resolution rule when simultaneous changes can conflict. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0025 · SHOULD · high** — Help people choose which app window to share. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0026 · SHOULD · high** — Make shared and unshared app windows easy to distinguish. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0027 · MAY · high** — Consider letting people move content from a private window to a shared one. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0028 · MUST · high** — Present a control that lets people quickly rejoin after exiting. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0029 · MAY · high** — Consider continuing shared content while a participant hides their spatial Persona. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0030 · SHOULD · high** — Offer a choice when synchronized immersion would disrupt a participant's task. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0031 · MUST · high** — Keep participant positions and app context synchronized for per-person shared content. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 ### shazamkit
 
 - **HIG-TECHNOLOGIES-SHAZAMKIT-0001 · SHOULD · low** — Preserve people’s ability to opt in to storing your app’s recognized songs to their iCloud library. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
