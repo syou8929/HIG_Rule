@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 463
-- Reviewed batches: 41
+- Reviewed rules: 480
+- Reviewed batches: 42
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:24:31Z
+- Reviewed at: 2026-07-21T14:32:31Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -464,6 +464,23 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0034 · high — Recovered the explicit Make sure stationary-field requirement and its pause-time fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0035 · high — Recovered the during-writing resize restriction and safe timing. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0036 · high — Recovered the autoscroll restriction and kept it at AVOID rather than promoting the imperative to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-EYES-0001 · high — Retained the accessibility-critical Always requirement and made the alternative-input purpose explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0002 · high — Replaced the generic statement with the page's placement and eye-adjustment comfort context. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0003 · high — Preserved the 1-meter aim and the brief-viewing exception without promoting the aim to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0004 · high — Recorded the consistent gaze response that supports the standard-component preference. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0005 · high — Recorded both noise and motion plus the heightened peripheral-vision concern. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0006 · high — Preserved both alternative spacing measurements and their gaze-selection purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0007 · high — Recorded the full-field comfort risk and the smaller-area alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0008 · high — Retained MAY while preserving the cue options and visual-comfort limits. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0009 · high — Recorded the special-moment purpose and all overuse risks. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0010 · high — Preserved all three official delay-to-purpose mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0011 · high — Recorded the visual anchor that preserves recognition between states. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0012 · high — Recovered the privacy boundary and the system tap-event interaction model. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0013 · high — Recovered and retained the explicit Make sure requirement while preserving the Full Space permission condition. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0014 · high — Recovered the two distinct spatial dimensions of the visual-comfort restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0015 · high — Recovered the general rounded-shape affordance without making it unconditional. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0016 · high — Recovered and retained the explicit Be sure requirement plus both supported highlight techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0017 · high — Recovered the device-on testing context that the truncated candidate omitted. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

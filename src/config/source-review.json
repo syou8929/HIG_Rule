@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T14:24:31Z",
+  "reviewed_at": "2026-07-21T14:32:31Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1112,9 +1112,157 @@
         "HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0036"
       ],
       "review_note": "Reviewed iPadOS Apple Pencil and Scribble behavior, recovered thirteen omitted atomic rules, and preserved conditional and optional strength."
+    },
+    {
+      "id": "priority-4-eyes-context-2026-07-21",
+      "reviewed_at": "2026-07-21T14:32:31Z",
+      "review_method": "Rendered Apple HIG Eyes guidance and supporting prose were reviewed across privacy, visual comfort, gaze spacing, interaction cues, and custom hover effects; the live main-content hash matched the stored page.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/eyes",
+          "source_hash": "673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a"
+        }
+      ],
+      "rule_ids": [
+        "HIG-INPUTS-EYES-0001",
+        "HIG-INPUTS-EYES-0002",
+        "HIG-INPUTS-EYES-0003",
+        "HIG-INPUTS-EYES-0004",
+        "HIG-INPUTS-EYES-0005",
+        "HIG-INPUTS-EYES-0006",
+        "HIG-INPUTS-EYES-0007",
+        "HIG-INPUTS-EYES-0008",
+        "HIG-INPUTS-EYES-0009",
+        "HIG-INPUTS-EYES-0010",
+        "HIG-INPUTS-EYES-0011",
+        "HIG-INPUTS-EYES-0012",
+        "HIG-INPUTS-EYES-0013",
+        "HIG-INPUTS-EYES-0014",
+        "HIG-INPUTS-EYES-0015",
+        "HIG-INPUTS-EYES-0016",
+        "HIG-INPUTS-EYES-0017"
+      ],
+      "review_note": "Reviewed visionOS eye-input privacy, comfort, visibility, spacing, affordances, and custom hover behavior; recovered six omitted atomic rules."
     }
   ],
   "rules": {
+    "HIG-INPUTS-EYES-0001": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"114a5cc3bd28f01e7020341018b234bca101106fd239c9801ecb563fc27e90d9","section_path":["Eyes","Best practices"]},
+      "title": "Offer alternatives to eye-based interaction",
+      "statement": {"en":"Give people multiple ways to interact with the app, including alternatives to using their eyes.","ja":"視線以外の方法を含め、アプリを操作する複数の方法を提供する。"},
+      "conditions": ["Support people who cannot use their eyes to interact."],
+      "review_note": "Retained the accessibility-critical Always requirement and made the alternative-input purpose explicit."
+    },
+    "HIG-INPUTS-EYES-0002": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"dd09c5d3bbf95491947096d0104121f618d119303e77ee763848a9d6fa196c1f","section_path":["Eyes","Best practices"]},
+      "title": "Design visionOS content for visual comfort",
+      "statement": {"en":"Design visionOS content placement and viewing transitions for visual comfort.","ja":"visionOSのコンテンツ配置と視線移動を視覚的な快適さに配慮して設計する。"},
+      "conditions": ["Review both angular distance across the field of view and depth changes."],
+      "review_note": "Replaced the generic statement with the page's placement and eye-adjustment comfort context."
+    },
+    "HIG-INPUTS-EYES-0003": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"2824f95138cec91e9254e41ebd9323cec30b4a98e8c55b10d2016a6aec003e6f","section_path":["Eyes","Best practices"]},
+      "title": "Place sustained visionOS content at a comfortable distance",
+      "statement": {"en":"Aim to place visionOS content people view for sustained periods at least 1 meter away.","ja":"長時間見るvisionOSコンテンツは1メートル以上離して配置することを目指す。"},
+      "conditions": ["The content remains visible for a sustained period."],
+      "exceptions": ["Closer content can be appropriate for brief viewing."],
+      "review_note": "Preserved the 1-meter aim and the brief-viewing exception without promoting the aim to MUST."
+    },
+    "HIG-INPUTS-EYES-0004": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"902702c53f4b9884fd59d8889854f429fd88dcf2c6fa363d3a1a5505db6478ec","section_path":["Eyes","Best practices"]},
+      "title": "Prefer standard visionOS components for gaze interaction",
+      "statement": {"en":"Prefer standard visionOS components that provide familiar gaze and hover behavior.","ja":"使い慣れた視線とhoverの動作を提供する標準visionOSコンポーネントを優先する。"},
+      "conditions": ["Use consistent system-provided hover feedback to communicate interactivity."],
+      "review_note": "Recorded the consistent gaze response that supports the standard-component preference."
+    },
+    "HIG-INPUTS-EYES-0005": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"6524b82dfd976095280d0c10218ce4e1d47ab48927acb7890e64bb4cbd88d32a","section_path":["Eyes","Making items easy to see"]},
+      "title": "Minimize peripheral visual distractions",
+      "statement": {"en":"Minimize visual noise and movement, especially in peripheral vision.","ja":"特に周辺視野での視覚的なノイズや動きを最小限にする。"},
+      "review_note": "Recorded both noise and motion plus the heightened peripheral-vision concern."
+    },
+    "HIG-INPUTS-EYES-0006": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"fd3e8422bcd27810f397fff6cbcf9a5bc15fc89fc186d4a579a28fe5b5458c88","section_path":["Eyes","Making items easy to see"]},
+      "title": "Space visionOS items for comfortable gaze selection",
+      "statement": {"en":"Provide enough space around visionOS items for comfortable gaze selection.","ja":"快適に視線選択できるよう、visionOSの項目周囲に十分な間隔を設ける。"},
+      "conditions": ["Use at least 16 points between item edges or at least 60 points between item centers as documented spacing targets."],
+      "review_note": "Preserved both alternative spacing measurements and their gaze-selection purpose."
+    },
+    "HIG-INPUTS-EYES-0007": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"4803ff36c71e4f9e237c9b93642444c80fc292883d045c58b186d24b9c2ff8b9","section_path":["Eyes","Making items easy to see"]},
+      "title": "Avoid full-field repeating patterns in visionOS",
+      "statement": {"en":"Avoid filling a person’s field of view with a repeating pattern or texture.","ja":"反復するパターンやテクスチャで利用者の視野全体を埋めない。"},
+      "exceptions": ["Offer an option that confines the pattern or texture to a smaller area."],
+      "review_note": "Recorded the full-field comfort risk and the smaller-area alternative."
+    },
+    "HIG-INPUTS-EYES-0008": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"78ac883900c3e2923b8dd04f0f1a61f999396409ede6b54e96193cedb14011f2","section_path":["Eyes","Encouraging interaction"]},
+      "title": "Consider subtle cues for likely gaze targets",
+      "statement": {"en":"Consider subtle visual cues that draw attention to the item people are most likely to want.","ja":"利用者が最も必要としそうな項目へ注意を導く、控えめな視覚的手がかりを検討する。"},
+      "conditions": ["Possible cues include central placement, gentle motion, contrast, color, or scale.", "Keep cues noticeable without making them flashy or harsh."],
+      "review_note": "Retained MAY while preserving the cue options and visual-comfort limits."
+    },
+    "HIG-INPUTS-EYES-0009": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"f6ab0e7c76053c44a703a97f343a7f7f36c9b1fee362594d442bd757f2d03cec","section_path":["Eyes","Custom hover effects"]},
+      "title": "Reserve custom hover effects for special moments",
+      "statement": {"en":"Prefer custom hover effects for emphasizing or enhancing special moments.","ja":"特別な場面を強調または高めるためにカスタムhover effectを優先して使う。"},
+      "conditions": ["Too many custom hover effects can dilute emphasis, distract, or cause discomfort."],
+      "review_note": "Recorded the special-moment purpose and all overuse risks."
+    },
+    "HIG-INPUTS-EYES-0010": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"76357c38cb11b769d44335de041e47037e3a11d9fa72516956cce642d1043d76","section_path":["Eyes","Custom hover effects"]},
+      "title": "Choose a custom-hover delay that matches its purpose",
+      "statement": {"en":"Choose a custom-hover delay that matches the interaction and information it presents.","ja":"操作と提示情報に合うカスタムhoverのdelayを選ぶ。"},
+      "conditions": ["Use no delay for subtle effects that invite interaction.", "Use a short delay for quick interactions that should not require waiting.", "Use a long delay for extra information such as tooltips."],
+      "review_note": "Preserved all three official delay-to-purpose mappings."
+    },
+    "HIG-INPUTS-EYES-0011": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"346e608a72151baae5263bbcabe45d64e22dcb793ee21887ff786286765b74e2","section_path":["Eyes","Custom hover effects"]},
+      "title": "Keep a primary view stable across custom-hover states",
+      "statement": {"en":"Keep at least one primary element view unchanged across custom-hover states.","ja":"カスタムhoverの状態間で、少なくとも1つの主要なelement viewを変えずに保つ。"},
+      "review_note": "Recorded the visual anchor that preserves recognition between states."
+    },
+    "HIG-INPUTS-EYES-0012": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"3f1238b270dac1d2a1d44cfc8b3650042371bcff796480b1c84c945388feb2d3","section_path":["Eyes"]},
+      "title": "Rely on tap events instead of pre-tap gaze data",
+      "statement": {"en":"Rely on system-reported tap events instead of direct pre-tap gaze information.","ja":"tap前の直接的な視線情報ではなく、systemが報告するtap eventを利用する。"},
+      "conditions": ["visionOS does not provide apps with gaze location before a person taps."],
+      "review_note": "Recovered the privacy boundary and the system tap-event interaction model."
+    },
+    "HIG-INPUTS-EYES-0013": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"dabbcbbc43342b2f541e76d97f1039ee60d73ba86c64d5b8fcd233b0ccfe6ae1","section_path":["Eyes","Best practices"]},
+      "title": "Keep primary-task objects within the field of view",
+      "statement": {"en":"Keep objects people need for their primary task within their field of view.","ja":"主要タスクに必要なobjectを利用者の視野内に保つ。"},
+      "conditions": ["In a Full Space, request head-pose permission only when the experience needs to place content relative to the field of view."],
+      "review_note": "Recovered and retained the explicit Make sure requirement while preserving the Full Space permission condition."
+    },
+    "HIG-INPUTS-EYES-0014": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"dabbcbbc43342b2f541e76d97f1039ee60d73ba86c64d5b8fcd233b0ccfe6ae1","section_path":["Eyes","Best practices"]},
+      "title": "Avoid rapid eye adjustments across area or depth",
+      "statement": {"en":"Avoid requiring multiple rapid eye adjustments across a large area or between depths.","ja":"広い範囲や異なるdepth間で、視線を何度も素早く調整させない。"},
+      "review_note": "Recovered the two distinct spatial dimensions of the visual-comfort restriction."
+    },
+    "HIG-INPUTS-EYES-0015": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"e20f324532f254b9500671ecd160fc61268c427b6597ae7542579738f0560352","section_path":["Eyes","Encouraging interaction"]},
+      "title": "Use rounded shapes for interactive items",
+      "statement": {"en":"In general, give interactive visionOS items rounded shapes.","ja":"原則として、interactiveなvisionOS項目にはrounded shapeを使う。"},
+      "review_note": "Recovered the general rounded-shape affordance without making it unconditional."
+    },
+    "HIG-INPUTS-EYES-0016": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"a9a7fa9bf0080a530187145af69586eca6edaa6a96f3a782450a8b259ee080ab","section_path":["Eyes","Encouraging interaction"]},
+      "title": "Highlight multi-element components as a whole",
+      "statement": {"en":"Provide an overall containing shape or custom hover region that highlights an entire multi-element component.","ja":"複数elementのcomponent全体をhighlightする、overall containing shapeまたはcustom hover regionを提供する。"},
+      "conditions": ["The interactive component consists of more than one element."],
+      "review_note": "Recovered and retained the explicit Be sure requirement plus both supported highlight techniques."
+    },
+    "HIG-INPUTS-EYES-0017": {
+      "source": {"source_hash":"673745e2d5181d0ae669b0e8daaab090f0a2762c663d79a5cc980ed324e0bd5a","source_sentence_hash":"9eb5bffc2e65104e2708b1c12a660794a8dacb67fdb14d21b3ee94b97c547dc5","section_path":["Eyes","Custom hover effects"]},
+      "title": "Test custom hover effects while wearing Apple Vision Pro",
+      "statement": {"en":"Test custom hover effects thoroughly while wearing Apple Vision Pro.","ja":"Apple Vision Proを装着してカスタムhover effectを十分にテストする。"},
+      "review_note": "Recovered the device-on testing context that the truncated candidate omitted."
+    },
     "HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0002": {
       "source": {"source_hash":"2bd76cf0c6140b48f5fcb5c9b95a264d0a0a8d51e3427672964096a245ca92cb","source_sentence_hash":"beecd17ac7961b5521b7fb5d48c71f6f88ea00a271cb55f6503402df343204ab","section_path":["Apple Pencil and Scribble","Best practices"]},
       "conditions": ["When marking uses Apple Pencil, let controls respond to Apple Pencil so people need not switch to a finger."],

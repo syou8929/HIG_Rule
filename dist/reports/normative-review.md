@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 136
-- Retained MUST: 126
+- Reviewed rules: 138
+- Retained MUST: 128
 - Retained MUST_NOT: 10
 - Normative level changes: 3
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:24:31Z
+- Reviewed at: 2026-07-21T14:32:31Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -53,6 +53,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0026 — Retained MUST after confirming the explicit Make sure requirement for direct, immediate manipulation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0030 — Retained MUST after confirming the explicit Make sure discoverability requirement for custom double tap. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0034 — Retained MUST after confirming the explicit Make sure stationary-field requirement during handwriting. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-EYES-0001 — Retained MUST after confirming the accessibility-critical Always directive to provide multiple interaction methods, including alternatives to eye input. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0013 — Recovered and retained MUST after confirming the explicit Make sure requirement to keep primary-task objects within the field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0016 — Recovered and retained MUST after confirming the conditional Be sure requirement for an overall multi-element highlight shape or region. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -148,7 +151,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0026 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure requirement for direct, immediate manipulation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0030 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure discoverability requirement for custom double tap. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0034 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure stationary-field requirement during handwriting. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
-- HIG-INPUTS-EYES-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the accessibility-critical Always directive to provide multiple interaction methods, including alternatives to eye input. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0013 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Make sure requirement to keep primary-task objects within the field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- HIG-INPUTS-EYES-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional Be sure requirement for an overall multi-element highlight shape or region. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-GAME-CONTROLS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GAME-CONTROLS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))

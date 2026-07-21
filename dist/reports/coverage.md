@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 1946
+- Active atomic rules: 1952
 - Pages without rules: 16
-- Low-confidence rules: 1378
-- Rules requiring human review: 1378
+- Low-confidence rules: 1368
+- Rules requiring human review: 1368
 - Reference notes: 925
 
 ## Rules by category
@@ -16,17 +16,17 @@
 - components: 647
 - foundations: 312
 - getting-started: 85
-- inputs: 150
+- inputs: 156
 - patterns: 228
 - technologies: 524
 
 ## Normative levels
 
-- AVOID: 248
+- AVOID: 249
 - MAY: 226
-- MUST: 126
+- MUST: 128
 - MUST_NOT: 10
-- SHOULD: 1336
+- SHOULD: 1339
 
 ## Rules by platform
 
@@ -35,13 +35,13 @@
 - ipados: 1367
 - macos: 1205
 - tvos: 908
-- visionos: 1262
+- visionos: 1268
 - watchos: 1012
 
 ## Rules by testability
 
 - hybrid: 64
-- manual: 1882
+- manual: 1888
 
 ## Blocked pages
 
@@ -658,16 +658,6 @@ None.
 - HIG-INPUTS-DIGITAL-CROWN-0001
 - HIG-INPUTS-DIGITAL-CROWN-0002
 - HIG-INPUTS-DIGITAL-CROWN-0003
-- HIG-INPUTS-EYES-0002
-- HIG-INPUTS-EYES-0003
-- HIG-INPUTS-EYES-0004
-- HIG-INPUTS-EYES-0005
-- HIG-INPUTS-EYES-0006
-- HIG-INPUTS-EYES-0007
-- HIG-INPUTS-EYES-0008
-- HIG-INPUTS-EYES-0009
-- HIG-INPUTS-EYES-0010
-- HIG-INPUTS-EYES-0011
 - HIG-INPUTS-FOCUS-AND-SELECTION-0001
 - HIG-INPUTS-FOCUS-AND-SELECTION-0002
 - HIG-INPUTS-FOCUS-AND-SELECTION-0004
@@ -2039,16 +2029,6 @@ None.
 - HIG-INPUTS-DIGITAL-CROWN-0001
 - HIG-INPUTS-DIGITAL-CROWN-0002
 - HIG-INPUTS-DIGITAL-CROWN-0003
-- HIG-INPUTS-EYES-0002
-- HIG-INPUTS-EYES-0003
-- HIG-INPUTS-EYES-0004
-- HIG-INPUTS-EYES-0005
-- HIG-INPUTS-EYES-0006
-- HIG-INPUTS-EYES-0007
-- HIG-INPUTS-EYES-0008
-- HIG-INPUTS-EYES-0009
-- HIG-INPUTS-EYES-0010
-- HIG-INPUTS-EYES-0011
 - HIG-INPUTS-FOCUS-AND-SELECTION-0001
 - HIG-INPUTS-FOCUS-AND-SELECTION-0002
 - HIG-INPUTS-FOCUS-AND-SELECTION-0004

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T14:28:32.085Z. 1946 active rules; 3 deprecated rules.
+Generated 2026-07-21T14:35:20.937Z. 1952 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1582,17 +1582,23 @@ Generated 2026-07-21T14:28:32.085Z. 1946 active rules; 3 deprecated rules.
 - **HIG-INPUTS-DIGITAL-CROWN-0003 · SHOULD · low** — Choose or apply the default haptic feedback when it makes sense in your app in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
 ### eyes
 
-- **HIG-INPUTS-EYES-0001 · MUST · medium** — Give people multiple ways to interact with your app in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0002 · SHOULD · low** — Apply the documented Eyes guidance to design for visual comfort. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0003 · SHOULD · low** — Apply the documented Eyes guidance to place content at a comfortable viewing distance. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0004 · SHOULD · low** — Favor using standard UI components when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0005 · SHOULD · low** — Apply the documented Eyes guidance to minimize visual distractions. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0006 · SHOULD · low** — Apply the documented Eyes guidance to make it easy for people to look at an item by providing enough space around it. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0007 · AVOID · low** — Exclude using a repeating pattern or texture that fills the field of view from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0008 · MAY · low** — Evaluate whether using subtle visual cues to encourage people to look at the item they’re most likely to want is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0009 · SHOULD · low** — Favor using a custom hover effect to emphasize or enhance a special moment in your experience when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0010 · SHOULD · low** — Apply the documented Eyes guidance to choose the right delay. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
-- **HIG-INPUTS-EYES-0011 · SHOULD · low** — Apply the documented Eyes guidance to aim to keep one or more of the element’s primary views unchanged in both states of a custom hover. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0001 · MUST · high** — Give people multiple ways to interact with the app, including alternatives to using their eyes. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0002 · SHOULD · high** — Design visionOS content placement and viewing transitions for visual comfort. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0003 · SHOULD · high** — Aim to place visionOS content people view for sustained periods at least 1 meter away. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0004 · SHOULD · high** — Prefer standard visionOS components that provide familiar gaze and hover behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0005 · SHOULD · high** — Minimize visual noise and movement, especially in peripheral vision. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0006 · SHOULD · high** — Provide enough space around visionOS items for comfortable gaze selection. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0007 · AVOID · high** — Avoid filling a person’s field of view with a repeating pattern or texture. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0008 · MAY · high** — Consider subtle visual cues that draw attention to the item people are most likely to want. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0009 · SHOULD · high** — Prefer custom hover effects for emphasizing or enhancing special moments. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0010 · SHOULD · high** — Choose a custom-hover delay that matches the interaction and information it presents. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0011 · SHOULD · high** — Keep at least one primary element view unchanged across custom-hover states. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0012 · SHOULD · high** — Rely on system-reported tap events instead of direct pre-tap gaze information. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0013 · MUST · high** — Keep objects people need for their primary task within their field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0014 · AVOID · high** — Avoid requiring multiple rapid eye adjustments across a large area or between depths. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0015 · SHOULD · high** — In general, give interactive visionOS items rounded shapes. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0016 · MUST · high** — Provide an overall containing shape or custom hover region that highlights an entire multi-element component. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
+- **HIG-INPUTS-EYES-0017 · SHOULD · high** — Test custom hover effects thoroughly while wearing Apple Vision Pro. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 ### focus-and-selection
 
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0001 · AVOID · low** — Exclude changing focus without people’s interaction from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
