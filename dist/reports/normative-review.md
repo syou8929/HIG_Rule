@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 198
-- Retained MUST: 177
+- Reviewed rules: 201
+- Retained MUST: 180
 - Retained MUST_NOT: 21
 - Normative level changes: 5
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:12:50Z
+- Reviewed at: 2026-07-21T16:19:34Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -16,6 +16,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-ACTIVITY-RINGS-0010 — Retained MUST after confirming the explicit Always directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0012 — Narrowed the MUST to the required visible-background outcome and recorded the conditional outer-stroke technique separately. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0013 — Retained MUST after confirming the explicit Always directive and its visual-scaling context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ALERTS-0038 — Recovered MUST from the explicit Always use directive for canceling-button titles. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-ALERTS-0042 — Recovered MUST from the explicit Always place directive and preserved both row and stack mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-ALERTS-0047 — Recovered MUST from the explicit Be sure directive while preserving the large-text qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0015 — Narrowed the MUST to the unqualified Always clause; the source lead's consider clause is split into a separate MAY rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0022 — Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
@@ -147,6 +150,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-ACTIVITY-RINGS-0012 · MUST · retained_with_atomicity_or_scope_correction — Narrowed the MUST to the required visible-background outcome and recorded the conditional outer-stroke technique separately. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0013 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive and its visual-scaling context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-VIEWS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ALERTS-0038 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Always use directive for canceling-button titles. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-ALERTS-0042 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Always place directive and preserved both row and stack mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-ALERTS-0047 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive while preserving the large-text qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-BUTTONS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-COMBO-BOXES-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:12:50Z",
+  "reviewed_at": "2026-07-21T16:19:34Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
@@ -8,13 +8,52 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 198,
+  "reviewed_rule_count": 201,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-COMPONENTS-ALERTS-0038": {
+      "title": "Always title an alert-canceling button Cancel",
+      "statement": {
+        "en": "Use Cancel as the title of every button that cancels an alert’s action.",
+        "ja": "alertの操作を取り消すbuttonには必ずCancelというtitleを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The button cancels the alert’s action."
+      ],
+      "review_note": "Recovered MUST from the explicit Always use directive for canceling-button titles."
+    },
+    "HIG-COMPONENTS-ALERTS-0042": {
+      "title": "Always place the default alert button in the expected position",
+      "statement": {
+        "en": "Place the default alert button trailing in a row or first in a stack.",
+        "ja": "defaultのalert buttonをrowでは末尾側、stackでは先頭に配置する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply whenever an alert designates a default button."
+      ],
+      "review_note": "Recovered MUST from the explicit Always place directive and preserved both row and stack mappings."
+    },
+    "HIG-COMPONENTS-ALERTS-0047": {
+      "title": "Minimize the potential for scrolling in iOS and iPadOS alerts",
+      "statement": {
+        "en": "Minimize alert scrolling on iOS and iPadOS by using short titles and only necessary brief messages.",
+        "ja": "iOSとiPadOSのalertでは、短いtitleと必要な場合だけの簡潔なmessageでscrollの可能性を最小化する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Large text may still cause an alert to scroll."
+      ],
+      "review_note": "Recovered MUST from the explicit Be sure directive while preserving the large-text qualification."
+    },
     "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012": {
       "title": "Show customer card and wallet positioning in custom tutorials",
       "statement": {
