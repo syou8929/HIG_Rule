@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T18:42:29.965Z. 2355 active rules; 3 deprecated rules.
+Generated 2026-07-21T18:52:52.545Z. 2366 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1740,19 +1740,30 @@ Generated 2026-07-21T18:42:29.965Z. 2355 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-WIDGETS-0026 · SHOULD · low** — Apply the documented Widgets guidance to design placeholder content that helps people recognize your widget. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - **HIG-COMPONENTS-WIDGETS-0027 · SHOULD · low** — Apply the documented Widgets guidance to write a succinct widget description. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - **HIG-COMPONENTS-WIDGETS-0028 · MAY · low** — Evaluate whether coloring the Add button is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0029 · SHOULD · low** — Ensure the experience accommodates the Always-On display on iPhone. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0030 · SHOULD · low** — Make live Activities to show real-time updates available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0031 · SHOULD · low** — Apply the documented Widgets guidance to test your widgets across the full range of system color palettes and in different lighting conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0032 · SHOULD · low** — Apply the documented Widgets guidance to design a responsive layout that shows the right level of detail for each of the two thresholds. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0033 · SHOULD · low** — Make widget family sizes that fit a person’s surroundings well available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0034 · SHOULD · low** — Present content in a way that remains legible from a range of distances in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0035 · SHOULD · low** — Apply the documented Widgets guidance to choose the mounting style that fits your content and the experience you want to create. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0036 · SHOULD · low** — Apply the documented Widgets guidance to test your elevated widget designs with each system-provided frame width. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0037 · SHOULD · low** — Apply the documented Widgets guidance to choose the paper style for a print-like look that feels more like a real object in the room. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0038 · SHOULD · low** — Apply the documented Widgets guidance to choose the glass style for information-rich widgets. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0039 · SHOULD · low** — Make a colorful background that conveys meaning available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
-- **HIG-COMPONENTS-WIDGETS-0040 · SHOULD · low** — Apply the documented Widgets guidance to encourage the system to display or elevate the position of your watchOS widget in the Smart Stack. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0029 · SHOULD · high** — Support the Always-On display in iPhone Lock Screen widgets. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0030 · SHOULD · high** — Offer Live Activities instead of widgets for frequent real-time updates. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0031 · SHOULD · high** — Test visionOS widgets across every system color palette and varied lighting conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0032 · SHOULD · high** — Design a responsive visionOS widget layout for both distance thresholds. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0033 · SHOULD · high** — Offer visionOS widget family sizes that fit people's surroundings. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0034 · SHOULD · high** — Keep visionOS widget content legible across viewing distances and supported scales. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0035 · SHOULD · high** — Choose the visionOS widget mounting style that fits the content and intended experience. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0036 · SHOULD · high** — Test elevated visionOS widget designs with every system-provided frame width. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0037 · SHOULD · high** — Choose the visionOS paper style for a grounded, print-like widget. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0038 · SHOULD · high** — Choose the visionOS glass style for information-rich widgets. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0039 · SHOULD · high** — Provide a meaningful colorful background for a watchOS Smart Stack widget. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0040 · SHOULD · high** — Provide relevancy information that helps the system surface a watchOS Smart Stack widget. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - **HIG-COMPONENTS-WIDGETS-0041 · SHOULD · low** — Generally, use standard margins to ensure legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0042 · SHOULD · high** — Apply Complications design principles to Lock Screen widgets. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0043 · SHOULD · high** — Provide useful information in a Lock Screen widget. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0044 · AVOID · high** — Avoid using a Lock Screen widget only as a way to launch the app. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0045 · MUST · high** — Ensure iPhone Always-On widget content remains legible at reduced luminance. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0046 · SHOULD · high** — Use glanceable information and large text to keep CarPlay widgets easy to read. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0047 · SHOULD · high** — Limit reliance on rich images or color to convey meaning in StandBy widgets. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0048 · AVOID · high** — Avoid background colors when a widget appears in StandBy. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0049 · SHOULD · high** — Adapt visionOS widget design and content to the surrounding spatial experience. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0050 · MUST · high** — Ensure a visionOS widget's tone, contrast, and legibility remain consistent and intentional. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0051 · MUST · high** — Ensure untinted visionOS widget elements remain legible in every system tint palette. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0052 · MUST · high** — Ensure an elevated visionOS widget layout remains balanced at every system frame width. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 ### windows
 
 - **HIG-COMPONENTS-WINDOWS-0001 · MUST · high** — Ensure windows adapt fluidly across supported sizes for multitasking and multiwindow workflows. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1258
-- Reviewed batches: 79
+- Reviewed rules: 1281
+- Reviewed batches: 80
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:39:15Z
+- Reviewed at: 2026-07-21T18:45:56Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -597,6 +597,29 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-WATCH-FACES-0010 · high — Recovered the optional compatibility label without converting can to a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
 - HIG-COMPONENTS-WATCH-FACES-0011 · high — Recovered the immediate compatible alternative as conditional MAY guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
 - HIG-COMPONENTS-WATCH-FACES-0012 · high — Separated the disclosure from the optional alternative-handling action. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WIDGETS-0029 · high — Narrowed the rule from the shared section to iPhone and recorded reduced-luminance contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0030 · high — Recorded that widgets aren't real-time surfaces and preserved the limited-duration tracking condition. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0031 · high — Made the test matrix explicit and split both Make sure outcomes into MUST rules. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0032 · high — Recorded the distant, nearby, and continuity behaviors without splitting one responsive state transition. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0033 · high — Recorded real-world placement and content as the size-selection criteria. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0034 · high — Recorded the system scale range and the print-design and asset techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0035 · high — Recorded placement constraints, content fit, and the supported opt-out. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0036 · high — Recorded the fixed-layout constraint and split the explicit visual-balance MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0037 · high — Recorded ambient-light response and physical-object character as the paper-style criteria. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0038 · high — Recorded foreground-background separation and stable legibility as the glass-style criteria. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0039 · high — Recorded meaningful color as the condition rather than treating custom color as decoration. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0040 · high — Made the RelevanceKit input concrete instead of implying direct control over widget position. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0042 · high — Recovered the cross-component design dependency. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0043 · high — Separated the information value from the launcher anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0044 · high — Recovered the explicit launcher-only anti-pattern as AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0045 · high — Recovered and retained the explicit Make sure legibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0046 · high — Separated the CarPlay readability requirement from shared StandBy system behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0047 · high — Activated the previously nonactionable lead and recorded the distance-reading alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0048 · high — Recovered the explicit StandBy background anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0049 · high — Activated the previously nonactionable lead and recorded spatial context as a design input. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0050 · high — Recovered and retained the first explicit Make sure outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0051 · high — Recovered and retained the conditional second Make sure outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0052 · high — Recovered and retained the explicit Make sure visual-balance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WINDOWS-0007 · high — Retained MAY and recorded the documented pinch interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0009 · high — Restored the truncated bottom-edge risk and recorded both limited-use and inspector alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0010 · high — Recorded the familiar-interface rationale and bounded-3D volume alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))

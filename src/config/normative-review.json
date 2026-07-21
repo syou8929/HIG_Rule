@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:27:19Z",
+  "reviewed_at": "2026-07-21T18:45:56Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 227,
+  "reviewed_rule_count": 231,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -1194,6 +1194,34 @@
       "confidence": "high", "review_required": false,
       "conditions": ["The app provides an input accessory view above the keyboard."],
       "review_note": "Recovered and retained the explicit conditional Make sure directive without promoting adjacent Liquid Glass or positioning guidance."
+    },
+    "HIG-COMPONENTS-WIDGETS-0045": {
+      "title": "Keep Always-On widget content legible",
+      "statement": {"en": "Ensure iPhone Always-On widget content remains legible at reduced luminance.", "ja": "reduced luminanceでもiPhone Always-On widget contentをlegibleに保つ。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["The Lock Screen renders in the Always-On reduced-luminance state."],
+      "review_note": "Recovered and retained the explicit Make sure legibility requirement."
+    },
+    "HIG-COMPONENTS-WIDGETS-0050": {
+      "title": "Keep visionOS widget presentation consistent across palettes and lighting",
+      "statement": {"en": "Ensure a visionOS widget's tone, contrast, and legibility remain consistent and intentional.", "ja": "visionOS widgetのtone、contrast、legibilityを一貫し意図的に保つ。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["Test across every system color palette and varied lighting conditions."],
+      "review_note": "Recovered and retained the first explicit Make sure outcome."
+    },
+    "HIG-COMPONENTS-WIDGETS-0051": {
+      "title": "Keep untinted visionOS widget elements legible",
+      "statement": {"en": "Ensure untinted visionOS widget elements remain legible in every system tint palette.", "ja": "untintedなvisionOS widget elementをすべてのsystem tint paletteでlegibleに保つ。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["The widget excludes UI elements from tinting and a person applies a tint color."],
+      "review_note": "Recovered and retained the conditional second Make sure outcome."
+    },
+    "HIG-COMPONENTS-WIDGETS-0052": {
+      "title": "Keep elevated visionOS widget layouts balanced at every frame width",
+      "statement": {"en": "Ensure an elevated visionOS widget layout remains balanced at every system frame width.", "ja": "elevated visionOS widget layoutをすべてのsystem frame widthでbalancedに保つ。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["People can choose the frame width, but the widget can't change its layout in response."],
+      "review_note": "Recovered and retained the explicit Make sure visual-balance requirement."
     },
     "HIG-PATTERNS-MODALITY-0006": {
       "title": "Ensure people receive critical information and can act when necessary",

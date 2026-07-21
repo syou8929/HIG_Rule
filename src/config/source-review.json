@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:39:15Z",
+  "reviewed_at": "2026-07-21T18:45:56Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2247,6 +2247,22 @@
         "HIG-COMPONENTS-WATCH-FACES-0010", "HIG-COMPONENTS-WATCH-FACES-0011", "HIG-COMPONENTS-WATCH-FACES-0012"
       ],
       "review_note": "Completed Watch faces coverage; retained all four existing IDs, recovered eight atomic rules, and kept every conditional or capability statement at SHOULD or MAY because the source contains no explicit MUST directive."
+    },
+    {
+      "id": "priority-4-widgets-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T18:45:56Z",
+      "review_method": "Rendered Apple HIG Widgets platform considerations for iOS, iPadOS, CarPlay, visionOS, and watchOS plus their supporting prose were reviewed; two repeated live renders matched the recorded main-content hash. Common best practices, rendering modes, previews, and specifications remain queued for later review.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/widgets", "source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-WIDGETS-0029", "HIG-COMPONENTS-WIDGETS-0030", "HIG-COMPONENTS-WIDGETS-0031", "HIG-COMPONENTS-WIDGETS-0032",
+        "HIG-COMPONENTS-WIDGETS-0033", "HIG-COMPONENTS-WIDGETS-0034", "HIG-COMPONENTS-WIDGETS-0035", "HIG-COMPONENTS-WIDGETS-0036",
+        "HIG-COMPONENTS-WIDGETS-0037", "HIG-COMPONENTS-WIDGETS-0038", "HIG-COMPONENTS-WIDGETS-0039", "HIG-COMPONENTS-WIDGETS-0040",
+        "HIG-COMPONENTS-WIDGETS-0042", "HIG-COMPONENTS-WIDGETS-0043", "HIG-COMPONENTS-WIDGETS-0044", "HIG-COMPONENTS-WIDGETS-0045",
+        "HIG-COMPONENTS-WIDGETS-0046", "HIG-COMPONENTS-WIDGETS-0047", "HIG-COMPONENTS-WIDGETS-0048", "HIG-COMPONENTS-WIDGETS-0049",
+        "HIG-COMPONENTS-WIDGETS-0050", "HIG-COMPONENTS-WIDGETS-0051", "HIG-COMPONENTS-WIDGETS-0052"
+      ],
+      "review_note": "Completed the priority-4 Widgets platform sections; retained all twelve existing IDs, recovered eleven platform-specific rules, and retained four explicit Make sure directives as MUST while leaving twenty-eight common source-context reviews queued."
     }
   ],
   "rules": {
@@ -3670,6 +3686,172 @@
       "statement": {"en": "Help people understand that an incompatible choice may produce an alternative watch face.", "ja": "非互換の選択ではalternative watch faceが提供される可能性を理解できるようにする。"},
       "conditions": ["Communicate the possibility alongside the watch-face previews."],
       "review_note": "Separated the disclosure from the optional alternative-handling action."
+    },
+    "HIG-COMPONENTS-WIDGETS-0029": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "540d1484eea7c41e6b63b0eb20ce0e7b51ddf9c5d2e4a421fe73ea2a3e008cbe", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Support Always-On display for iPhone Lock Screen widgets",
+      "statement": {"en": "Support the Always-On display in iPhone Lock Screen widgets.", "ja": "iPhone Lock Screen widgetでAlways-On displayをsupportする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["widgets"], "modalities": []},
+      "conditions": ["Use gray levels with enough contrast when the system renders the widget at reduced luminance."],
+      "review_note": "Narrowed the rule from the shared section to iPhone and recorded reduced-luminance contrast."
+    },
+    "HIG-COMPONENTS-WIDGETS-0030": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "116514d43963a1d4117b06aa6707976d3a3c3b01be0e6ad1b42386f2dbc67a75", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Offer Live Activities for frequent real-time updates",
+      "statement": {"en": "Offer Live Activities instead of widgets for frequent real-time updates.", "ja": "頻繁なreal-time updateにはwidgetではなくLive Activityを提供する。"},
+      "conditions": ["People track a limited-duration task or event whose progress changes frequently."],
+      "review_note": "Recorded that widgets aren't real-time surfaces and preserved the limited-duration tracking condition."
+    },
+    "HIG-COMPONENTS-WIDGETS-0031": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "1b377025994ebf2d97434c0c8d4b0e22665bd1d5307417402d227cf1319d4c68", "section_path": ["Widgets", "Platform considerations", "visionOS"]},
+      "title": "Test visionOS widgets across palettes and lighting",
+      "statement": {"en": "Test visionOS widgets across every system color palette and varied lighting conditions.", "ja": "visionOS widgetをすべてのsystem color paletteとさまざまなlighting conditionでtestする。"},
+      "conditions": ["Include every provided tint palette when any UI elements are excluded from tinting."],
+      "review_note": "Made the test matrix explicit and split both Make sure outcomes into MUST rules."
+    },
+    "HIG-COMPONENTS-WIDGETS-0032": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "957da2f9b7c0181b07b92a2c57433e5faff0f502f8ec8c893aa92a4722cb42c5", "section_path": ["Widgets", "Platform considerations", "visionOS", "Thresholds and sizes"]},
+      "title": "Adapt visionOS widget detail to both distance thresholds",
+      "statement": {"en": "Design a responsive visionOS widget layout for both distance thresholds.", "ja": "2つのdistance thresholdに対応するresponsiveなvisionOS widget layoutを設計する。"},
+      "conditions": ["At a distance, show fewer details, larger type, and no buttons or toggles.", "Nearby, show more detail with smaller type.", "Maintain shared elements across both thresholds for continuity."],
+      "review_note": "Recorded the distant, nearby, and continuity behaviors without splitting one responsive state transition."
+    },
+    "HIG-COMPONENTS-WIDGETS-0033": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "b61d96de74b0bf7669bbde8e2f96a4fd134ea5cf8a3bd9604192329b855b55db", "section_path": ["Widgets", "Platform considerations", "visionOS", "Thresholds and sizes"]},
+      "statement": {"en": "Offer visionOS widget family sizes that fit people's surroundings.", "ja": "人のsurroundingsに合うvisionOS widget family sizeを提供する。"},
+      "conditions": ["Match real-world size to likely placement and content, such as a desk, wall, or sideboard."],
+      "review_note": "Recorded real-world placement and content as the size-selection criteria."
+    },
+    "HIG-COMPONENTS-WIDGETS-0034": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "acf43ffb5ade33beaef9df18444c56e9bb49240ef4e7d8414ee8d2f707c74783", "section_path": ["Widgets", "Platform considerations", "visionOS", "Thresholds and sizes"]},
+      "statement": {"en": "Keep visionOS widget content legible across viewing distances and supported scales.", "ja": "viewing distanceとsupport対象scaleの範囲でvisionOS widget contentをlegibleに保つ。"},
+      "conditions": ["Account for scaling from 75 to 125 percent.", "Use clear hierarchy, strong typography, and high-resolution assets that work at every size."],
+      "review_note": "Recorded the system scale range and the print-design and asset techniques."
+    },
+    "HIG-COMPONENTS-WIDGETS-0035": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "7b31a3feb0d766ff9bcbd08f26676f113bce6f8b1a65cf9bcaef809d46c04ac1", "section_path": ["Widgets", "Platform considerations", "visionOS", "Mounting styles"]},
+      "statement": {"en": "Choose the visionOS widget mounting style that fits the content and intended experience.", "ja": "contentと意図するexperienceに合うvisionOS widget mounting styleを選ぶ。"},
+      "conditions": ["Elevated works on horizontal and vertical surfaces; recessed works only on vertical surfaces and suits ambient or immersive content."],
+      "exceptions": ["A widget can opt out of a style that doesn't suit it; recessed-only widgets can't be placed horizontally."],
+      "review_note": "Recorded placement constraints, content fit, and the supported opt-out."
+    },
+    "HIG-COMPONENTS-WIDGETS-0036": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "1ccaafa1af50455e35fbe1730a78b6578a4e908815e2d0627a7ffe564fee6ebd", "section_path": ["Widgets", "Platform considerations", "visionOS", "Mounting styles"]},
+      "statement": {"en": "Test elevated visionOS widget designs with every system-provided frame width.", "ja": "elevated visionOS widget designをすべてのsystem-provided frame widthでtestする。"},
+      "conditions": ["The layout can't change in response to the frame width a person chooses."],
+      "review_note": "Recorded the fixed-layout constraint and split the explicit visual-balance MUST."
+    },
+    "HIG-COMPONENTS-WIDGETS-0037": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "22ca543eeb76e3952f2bd89f0506be7ac06cf0283b29a15b04a364121310cbcc", "section_path": ["Widgets", "Platform considerations", "visionOS", "Treatment styles"]},
+      "statement": {"en": "Choose the visionOS paper style for a grounded, print-like widget.", "ja": "groundedでprint-likeなvisionOS widgetにはpaper styleを選ぶ。"},
+      "conditions": ["The whole widget should respond to ambient lighting and blend into its surroundings."],
+      "review_note": "Recorded ambient-light response and physical-object character as the paper-style criteria."
+    },
+    "HIG-COMPONENTS-WIDGETS-0038": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "2e4d1b7dcffff4ea147b538257719cc54ac26f77ce0aa9f018666c34fccc24d2", "section_path": ["Widgets", "Platform considerations", "visionOS", "Treatment styles"]},
+      "statement": {"en": "Choose the visionOS glass style for information-rich widgets.", "ja": "information-richなvisionOS widgetにはglass styleを選ぶ。"},
+      "conditions": ["Use full-color foreground elements for important content that must remain sharp and legible as ambient light changes."],
+      "review_note": "Recorded foreground-background separation and stable legibility as the glass-style criteria."
+    },
+    "HIG-COMPONENTS-WIDGETS-0039": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "8d8a611bafb3deea68fcca1931d2977430be04fa0f42f28331f3daeaec374597", "section_path": ["Widgets", "Platform considerations", "watchOS"]},
+      "statement": {"en": "Provide a meaningful colorful background for a watchOS Smart Stack widget.", "ja": "watchOS Smart Stack widgetに意味を伝えるcolorful backgroundを提供する。"},
+      "conditions": ["The default background is black; use custom color only when it adds meaning."],
+      "review_note": "Recorded meaningful color as the condition rather than treating custom color as decoration."
+    },
+    "HIG-COMPONENTS-WIDGETS-0040": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "a6000b88d230d749b71b70ec0e4a917bcf900d3e2340202e1ba701ba729964ce", "section_path": ["Widgets", "Platform considerations", "watchOS"]},
+      "statement": {"en": "Provide relevancy information that helps the system surface a watchOS Smart Stack widget.", "ja": "systemがwatchOS Smart Stack widgetを適切に表示できるrelevancy informationを提供する。"},
+      "conditions": ["Relevance may be location-based or tied to an ongoing system action such as a workout."],
+      "review_note": "Made the RelevanceKit input concrete instead of implying direct control over widget position."
+    },
+    "HIG-COMPONENTS-WIDGETS-0042": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "29f5dd23b3149a4fdae0f0215066b36cd7071542bf627239ee71a318f92ee3b3", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Apply Complications principles to Lock Screen widgets",
+      "statement": {"en": "Apply Complications design principles to Lock Screen widgets.", "ja": "Lock Screen widgetにComplicationsのdesign principleを適用する。"},
+      "conditions": ["Lock Screen widgets are functionally similar to watch complications."],
+      "review_note": "Recovered the cross-component design dependency."
+    },
+    "HIG-COMPONENTS-WIDGETS-0043": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "29f5dd23b3149a4fdae0f0215066b36cd7071542bf627239ee71a318f92ee3b3", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Provide useful information in Lock Screen widgets",
+      "statement": {"en": "Provide useful information in a Lock Screen widget.", "ja": "Lock Screen widgetにuseful informationを提供する。"},
+      "conditions": ["The widget should deliver glanceable value before anyone opens the app."],
+      "review_note": "Separated the information value from the launcher anti-pattern."
+    },
+    "HIG-COMPONENTS-WIDGETS-0044": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "29f5dd23b3149a4fdae0f0215066b36cd7071542bf627239ee71a318f92ee3b3", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Avoid treating Lock Screen widgets only as app launchers",
+      "statement": {"en": "Avoid using a Lock Screen widget only as a way to launch the app.", "ja": "Lock Screen widgetをapp起動だけの手段として使わない。"},
+      "conditions": ["Provide useful information directly in the widget."],
+      "review_note": "Recovered the explicit launcher-only anti-pattern as AVOID."
+    },
+    "HIG-COMPONENTS-WIDGETS-0045": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "ee2c644b1127eee338d7de61a5c482340fe18516892da38f036e3141ed5bb30d", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Keep Always-On widget content legible",
+      "statement": {"en": "Ensure iPhone Always-On widget content remains legible at reduced luminance.", "ja": "reduced luminanceでもiPhone Always-On widget contentをlegibleに保つ。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["widgets"], "modalities": []},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The Lock Screen renders in the Always-On reduced-luminance state."],
+      "review_note": "Recovered and retained the explicit Make sure legibility requirement."
+    },
+    "HIG-COMPONENTS-WIDGETS-0046": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "1f643042db6aa32b7716a376c23f76dd3d0bae46eaa83bb026f4ed31722641f9", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS", "StandBy and CarPlay"]},
+      "title": "Use glanceable information and large text in CarPlay widgets",
+      "statement": {"en": "Use glanceable information and large text to keep CarPlay widgets easy to read.", "ja": "CarPlay widgetを読みやすくするためglanceable informationとlarge textを使う。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["carplay"], "devices": ["carplay-display"], "components": ["widgets"], "modalities": []},
+      "priority_rank": 4,
+      "conditions": ["People read the widget on a car display."],
+      "review_note": "Separated the CarPlay readability requirement from shared StandBy system behavior."
+    },
+    "HIG-COMPONENTS-WIDGETS-0047": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "bb39e98af03ba8c0b2e9268d184980661989b999b3c3dee4eacc16bdaaffd559", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS", "StandBy and CarPlay"]},
+      "title": "Limit rich imagery and color reliance in StandBy widgets",
+      "statement": {"en": "Limit reliance on rich images or color to convey meaning in StandBy widgets.", "ja": "StandBy widgetで意味を伝える際のrich imageやcolorへの依存を抑える。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["widgets"], "modalities": []},
+      "priority_rank": 4,
+      "conditions": ["Use the additional space to enlarge and rearrange text for viewing at a distance."],
+      "review_note": "Activated the previously nonactionable lead and recorded the distance-reading alternative."
+    },
+    "HIG-COMPONENTS-WIDGETS-0048": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "ab8fcf91cc46ad4def4df1858fddf65b8aff87aaf07d0e12c1241303c53d7156", "section_path": ["Widgets", "Platform considerations", "iOS, iPadOS", "StandBy and CarPlay"]},
+      "title": "Avoid background colors in StandBy widgets",
+      "statement": {"en": "Avoid background colors when a widget appears in StandBy.", "ja": "widgetがStandByに表示される場合はbackground colorを使わない。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["widgets"], "modalities": []},
+      "priority_rank": 4,
+      "conditions": ["Blend the widget seamlessly with StandBy's black background."],
+      "review_note": "Recovered the explicit StandBy background anti-pattern."
+    },
+    "HIG-COMPONENTS-WIDGETS-0049": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "2379c40e018ae775776f33f5fe5fa371ff167b06dd6943664a97a31525a9ab95", "section_path": ["Widgets", "Platform considerations", "visionOS"]},
+      "title": "Design visionOS widgets for their spatial surroundings",
+      "statement": {"en": "Adapt visionOS widget design and content to the surrounding spatial experience.", "ja": "visionOS widgetのdesignとcontentを周囲のspatial experienceに適応させる。"},
+      "conditions": ["Consider likely rooms, surfaces, viewing distances, and real-world scale early in design."],
+      "review_note": "Activated the previously nonactionable lead and recorded spatial context as a design input."
+    },
+    "HIG-COMPONENTS-WIDGETS-0050": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "49691459b16b853a547fe8abd0eb5fbbe924b65a3850c723120c70188dd1a199", "section_path": ["Widgets", "Platform considerations", "visionOS"]},
+      "title": "Keep visionOS widget presentation consistent across palettes and lighting",
+      "statement": {"en": "Ensure a visionOS widget's tone, contrast, and legibility remain consistent and intentional.", "ja": "visionOS widgetのtone、contrast、legibilityを一貫し意図的に保つ。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["Test across every system color palette and varied lighting conditions."],
+      "review_note": "Recovered and retained the first explicit Make sure outcome."
+    },
+    "HIG-COMPONENTS-WIDGETS-0051": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "49691459b16b853a547fe8abd0eb5fbbe924b65a3850c723120c70188dd1a199", "section_path": ["Widgets", "Platform considerations", "visionOS"]},
+      "title": "Keep untinted visionOS widget elements legible",
+      "statement": {"en": "Ensure untinted visionOS widget elements remain legible in every system tint palette.", "ja": "untintedなvisionOS widget elementをすべてのsystem tint paletteでlegibleに保つ。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The widget excludes UI elements from tinting and a person applies a tint color."],
+      "review_note": "Recovered and retained the conditional second Make sure outcome."
+    },
+    "HIG-COMPONENTS-WIDGETS-0052": {
+      "source": {"source_hash": "e05ef6005047c82c648b7497dd02383aef2ba8c270e0ce0d5915a4c6243f1946", "source_sentence_hash": "9b8b6067fc88ff7a90ae3c63a8e4bdba47a5ef6a519a2669f8746bfe3f2c9b69", "section_path": ["Widgets", "Platform considerations", "visionOS", "Mounting styles"]},
+      "title": "Keep elevated visionOS widget layouts balanced at every frame width",
+      "statement": {"en": "Ensure an elevated visionOS widget layout remains balanced at every system frame width.", "ja": "elevated visionOS widget layoutをすべてのsystem frame widthでbalancedに保つ。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["People can choose the frame width, but the widget can't change its layout in response."],
+      "review_note": "Recovered and retained the explicit Make sure visual-balance requirement."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

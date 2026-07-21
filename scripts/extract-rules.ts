@@ -38,6 +38,7 @@ type SourceReviewOverride = {
   checks?: Rule["checks"];
   testability?: Rule["testability"];
   scope?: Rule["scope"];
+  priority_rank?: Rule["priority_rank"];
   review_note: string;
 };
 type SourceReviewBatch = {
@@ -135,6 +136,7 @@ function applySourceReview(rule: Rule): Rule {
     ...(review?.conditions ? { conditions: review.conditions } : {}),
     ...(review?.exceptions ? { exceptions: review.exceptions } : {}),
     ...(review?.scope ? { scope: review.scope } : {}),
+    ...(review?.priority_rank ? { priority_rank: review.priority_rank } : {}),
     checks: review?.checks ?? {
       ...rule.checks,
       manual: [`Does the design satisfy “${statement.en}” in the documented ${rule.source.page_title} context?`],

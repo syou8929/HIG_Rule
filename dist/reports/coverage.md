@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2355
+- Active atomic rules: 2366
 - Pages without rules: 16
-- Low-confidence rules: 1016
-- Rules requiring human review: 1016
+- Low-confidence rules: 1004
+- Rules requiring human review: 1004
 - Reference notes: 929
 
 ## Rules by category
 
-- components: 847
+- components: 858
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 308
+- AVOID: 310
 - MAY: 278
-- MUST: 206
+- MUST: 210
 - MUST_NOT: 21
-- SHOULD: 1542
+- SHOULD: 1547
 
 ## Rules by platform
 
-- carplay: 89
-- ios: 1632
-- ipados: 1609
+- carplay: 90
+- ios: 1638
+- ipados: 1611
 - macos: 1369
 - tvos: 1061
-- visionos: 1413
+- visionos: 1417
 - watchos: 1118
 
 ## Rules by testability
 
-- hybrid: 59
-- manual: 2296
+- hybrid: 60
+- manual: 2306
 
 ## Blocked pages
 
@@ -268,18 +268,6 @@ None.
 - HIG-COMPONENTS-WIDGETS-0026
 - HIG-COMPONENTS-WIDGETS-0027
 - HIG-COMPONENTS-WIDGETS-0028
-- HIG-COMPONENTS-WIDGETS-0029
-- HIG-COMPONENTS-WIDGETS-0030
-- HIG-COMPONENTS-WIDGETS-0031
-- HIG-COMPONENTS-WIDGETS-0032
-- HIG-COMPONENTS-WIDGETS-0033
-- HIG-COMPONENTS-WIDGETS-0034
-- HIG-COMPONENTS-WIDGETS-0035
-- HIG-COMPONENTS-WIDGETS-0036
-- HIG-COMPONENTS-WIDGETS-0037
-- HIG-COMPONENTS-WIDGETS-0038
-- HIG-COMPONENTS-WIDGETS-0039
-- HIG-COMPONENTS-WIDGETS-0040
 - HIG-COMPONENTS-WIDGETS-0041
 - HIG-COMPONENTS-WINDOWS-0002
 - HIG-COMPONENTS-WINDOWS-0003
@@ -1287,18 +1275,6 @@ None.
 - HIG-COMPONENTS-WIDGETS-0026
 - HIG-COMPONENTS-WIDGETS-0027
 - HIG-COMPONENTS-WIDGETS-0028
-- HIG-COMPONENTS-WIDGETS-0029
-- HIG-COMPONENTS-WIDGETS-0030
-- HIG-COMPONENTS-WIDGETS-0031
-- HIG-COMPONENTS-WIDGETS-0032
-- HIG-COMPONENTS-WIDGETS-0033
-- HIG-COMPONENTS-WIDGETS-0034
-- HIG-COMPONENTS-WIDGETS-0035
-- HIG-COMPONENTS-WIDGETS-0036
-- HIG-COMPONENTS-WIDGETS-0037
-- HIG-COMPONENTS-WIDGETS-0038
-- HIG-COMPONENTS-WIDGETS-0039
-- HIG-COMPONENTS-WIDGETS-0040
 - HIG-COMPONENTS-WIDGETS-0041
 - HIG-COMPONENTS-WINDOWS-0002
 - HIG-COMPONENTS-WINDOWS-0003
@@ -3009,7 +2985,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/web-views · Web views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/web-views · Web views > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/widgets · Widgets > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/widgets · Widgets > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/widgets · Widgets > Platform considerations — macOS has no additional widget considerations, and widgets aren't supported in tvOS.
 - https://developer.apple.com/design/human-interface-guidelines/widgets · Widgets > Rendering modes — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/widgets · Widgets > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/widgets · Widgets > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
