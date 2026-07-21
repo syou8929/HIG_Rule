@@ -85177,16 +85177,16 @@
   apple_native_rule: Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0001
-  title: Place virtual buttons where they’re easy to access
+  title: Place virtual game buttons within easy reach
   category: inputs
   topic: game-controls
   subtopic: touch-controls
   statement:
-    en: Apply the documented Game controls guidance to place virtual buttons where they’re easy to access.
-    ja: 「Game controls」において「Place virtual buttons where they’re easy to access」の指針を適用する。
+    en: Place virtual game buttons where they're easy to access.
+    ja: virtual game buttonを操作しやすい位置に置く。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85194,20 +85194,16 @@
     platforms:
       - ios
       - ipados
-      - macos
-      - tvos
-      - visionos
     devices:
       - iphone
       - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
     components: []
     modalities:
-      - game-controller
+      - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Account for device boundaries, safe areas, and comfortable control locations.
+    - Place frequent buttons near the player's thumb and outside expected movement and camera regions.
+    - Place secondary controls toward the top of the screen.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
@@ -85215,7 +85211,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Game controls guidance to place virtual buttons where they’re easy to access.” in the documented Game controls context?
+      - Does the design satisfy “Place virtual game buttons where they're easy to access.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85227,28 +85223,28 @@
     section_path:
       - Game controls
       - Touch controls
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 8351eb1f09b8022befef4c730ac35a9f107e68a647a66e66f480810ae8c07b2e
-    evidence_paraphrase: Apply the documented Game controls guidance to place virtual buttons where they’re easy to access.
+    evidence_paraphrase: Place virtual game buttons where they're easy to access.
   tags:
     - inputs
     - game-controls
     - touch-controls
   priority_rank: 5
   status: active
-  apple_native_rule: Apply the documented Game controls guidance to place virtual buttons where they’re easy to access.
+  apple_native_rule: Place virtual game buttons where they're easy to access.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0002
-  title: Make sure controls are large enough
+  title: Make sure virtual game controls meet minimum sizes
   category: inputs
   topic: game-controls
   subtopic: touch-controls
   statement:
-    en: Verify that controls are large enough.
-    ja: controls are large enoughを満たしていることを確認する。
+    en: Make sure virtual game controls meet their minimum sizes.
+    ja: virtual game controlがminimum sizeを満たすようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -85257,20 +85253,15 @@
     platforms:
       - ios
       - ipados
-      - macos
-      - tvos
-      - visionos
     devices:
       - iphone
       - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
     components: []
     modalities:
-      - game-controller
+      - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Frequently used controls are at least 44 by 44 points.
+    - Less-important controls are at least 28 by 28 points.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
@@ -85278,7 +85269,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that controls are large enough.” in the documented Game controls context?
+      - Does the design satisfy “Make sure virtual game controls meet their minimum sizes.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85290,28 +85281,28 @@
     section_path:
       - Game controls
       - Touch controls
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 16f767e48047c135869bbded3af48351b5e51a7c36f52dc93acf96764ffdfe35
-    evidence_paraphrase: Verify that controls are large enough.
+    evidence_paraphrase: Make sure virtual game controls meet their minimum sizes.
   tags:
     - inputs
     - game-controls
     - touch-controls
   priority_rank: 5
   status: active
-  apple_native_rule: Verify that controls are large enough.
+  apple_native_rule: Make sure virtual game controls meet their minimum sizes.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0003
-  title: Always include visible and tactile press states
+  title: Always include visible and tactile virtual-control press states
   category: inputs
   topic: game-controls
   subtopic: touch-controls
   statement:
-    en: Include visible and tactile press states in every applicable case.
-    ja: 該当するすべての場合にinclude visible and tactile press statesを実行する。
+    en: Always include visible and tactile press states for virtual game controls.
+    ja: virtual game controlにはvisibleおよびtactileなpress stateを常に含める。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -85320,20 +85311,15 @@
     platforms:
       - ios
       - ipados
-      - macos
-      - tvos
-      - visionos
     devices:
       - iphone
       - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
     components: []
     modalities:
-      - game-controller
+      - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep the visual state perceivable while a finger covers the control.
+    - Use sound and haptics to strengthen physical feedback when appropriate.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
@@ -85341,7 +85327,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Include visible and tactile press states in every applicable case.” in the documented Game controls context?
+      - Does the design satisfy “Always include visible and tactile press states for virtual game controls.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85353,29 +85339,29 @@
     section_path:
       - Game controls
       - Touch controls
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 390f249ef78e45b262e145be768751f147081a266ecae5053f33e5a5598fbeba
-    evidence_paraphrase: Include visible and tactile press states in every applicable case.
+    evidence_paraphrase: Always include visible and tactile press states for virtual game controls.
   tags:
     - inputs
     - game-controls
     - touch-controls
   priority_rank: 5
   status: active
-  apple_native_rule: Include visible and tactile press states in every applicable case.
+  apple_native_rule: Always include visible and tactile press states for virtual game controls.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0004
-  title: Use symbols that communicate the actions they perform
+  title: Use action-representative virtual-control symbols
   category: inputs
   topic: game-controls
   subtopic: touch-controls
   statement:
-    en: Choose or apply symbols that communicate the actions they perform in the documented context.
-    ja: 該当する状況ではsymbols that communicate the actions they performを採用する。
+    en: Use virtual-control symbols that communicate the actions they perform.
+    ja: 実行するactionを伝えるvirtual-control symbolを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85383,20 +85369,14 @@
     platforms:
       - ios
       - ipados
-      - macos
-      - tvos
-      - visionos
     devices:
       - iphone
       - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
     components: []
     modalities:
-      - game-controller
+      - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Choose artwork that visually represents the associated game action.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
@@ -85404,7 +85384,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply symbols that communicate the actions they perform in the documented context.” in the documented Game controls context?
+      - Does the design satisfy “Use virtual-control symbols that communicate the actions they perform.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85416,29 +85396,29 @@
     section_path:
       - Game controls
       - Touch controls
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 0afdbce57d043b5201669ed08c97f89a99ff74644d34b1ed60154cf73ce3acc4
-    evidence_paraphrase: Choose or apply symbols that communicate the actions they perform in the documented context.
+    evidence_paraphrase: Use virtual-control symbols that communicate the actions they perform.
   tags:
     - inputs
     - game-controls
     - touch-controls
   priority_rank: 5
   status: active
-  apple_native_rule: Choose or apply symbols that communicate the actions they perform in the documented context.
+  apple_native_rule: Use virtual-control symbols that communicate the actions they perform.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0005
-  title: Show and hide virtual controls to reflect gameplay
+  title: Adapt virtual controls to gameplay context
   category: inputs
   topic: game-controls
   subtopic: touch-controls
   statement:
-    en: Present and hide virtual controls to reflect gameplay in the documented context.
-    ja: 該当する状況でand hide virtual controls to reflect gameplayを表示する。
+    en: Show and hide virtual controls to reflect gameplay context.
+    ja: gameplay contextに合わせてvirtual controlを表示または非表示にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85446,28 +85426,23 @@
     platforms:
       - ios
       - ipados
-      - macos
-      - tvos
-      - visionos
     devices:
       - iphone
       - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
     components: []
     modalities:
-      - game-controller
+      - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Hide unavailable or irrelevant actions to reduce clutter and focus attention.
+  exceptions:
+    - Hiding movement controls until touch begins is an example, not a universal trigger.
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Present and hide virtual controls to reflect gameplay in the documented context.” in the documented Game controls context?
+      - Does the design satisfy “Show and hide virtual controls to reflect gameplay context.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85479,29 +85454,29 @@
     section_path:
       - Game controls
       - Touch controls
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 45d0619bf495f598b592af4c3ef8bb18cf3afaa7845ffaee49454eb60b56dcfe
-    evidence_paraphrase: Present and hide virtual controls to reflect gameplay in the documented context.
+    evidence_paraphrase: Show and hide virtual controls to reflect gameplay context.
   tags:
     - inputs
     - game-controls
     - touch-controls
   priority_rank: 5
   status: active
-  apple_native_rule: Present and hide virtual controls to reflect gameplay in the documented context.
+  apple_native_rule: Show and hide virtual controls to reflect gameplay context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0006
-  title: Support the platform’s default interaction method
+  title: Provide a default-interaction fallback for controllers
   category: inputs
   topic: game-controls
   subtopic: physical-controllers
   statement:
-    en: Ensure the experience accommodates the platform’s default interaction method.
-    ja: the platform’s default interaction methodを利用できる設計にする。
+    en: When supporting game controllers, provide a fallback using the platform's default interaction method.
+    ja: game controller対応時はplatform既定interaction methodのfallbackを提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85522,15 +85497,16 @@
     modalities:
       - game-controller
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Controllers are optional purchases and may be unavailable.
+  exceptions:
+    - tvOS and visionOS games can require a controller when they disclose and handle that requirement.
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Ensure the experience accommodates the platform’s default interaction method.” in the documented Game controls context?
+      - Does the design satisfy “When supporting game controllers, provide a fallback using the platform's default interaction method.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85542,29 +85518,29 @@
     section_path:
       - Game controls
       - Physical controllers
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 6e5482baacfa584f3fccd6ad3cd579a966213b00c8b2f5fd6cd8177ec1450c7e
-    evidence_paraphrase: Ensure the experience accommodates the platform’s default interaction method.
+    evidence_paraphrase: When supporting game controllers, provide a fallback using the platform's default interaction method.
   tags:
     - inputs
     - game-controls
     - physical-controllers
   priority_rank: 5
   status: active
-  apple_native_rule: Ensure the experience accommodates the platform’s default interaction method.
+  apple_native_rule: When supporting game controllers, provide a fallback using the platform's default interaction method.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0007
-  title: Support multiple connected controllers
+  title: Support multiple connected game controllers
   category: inputs
   topic: game-controls
   subtopic: physical-controllers
   statement:
-    en: Ensure the experience accommodates multiple connected controllers.
-    ja: multiple connected controllersを利用できる設計にする。
+    en: Support multiple connected game controllers.
+    ja: 複数の接続済みgame controllerをsupportする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85585,15 +85561,17 @@
     modalities:
       - game-controller
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Use labels and glyphs matching the controller a player is actively using.
+    - In multiplayer, use the correct labels and symbols for each player's controller.
+  exceptions:
+    - Consider listing multiple controller-button references together when necessary.
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Ensure the experience accommodates multiple connected controllers.” in the documented Game controls context?
+      - Does the design satisfy “Support multiple connected game controllers.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85605,29 +85583,29 @@
     section_path:
       - Game controls
       - Physical controllers
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 17de3036cfd09643f7409103a97bc2694a2029b8b15f077f72654bf0871d9bd6
-    evidence_paraphrase: Ensure the experience accommodates multiple connected controllers.
+    evidence_paraphrase: Support multiple connected game controllers.
   tags:
     - inputs
     - game-controls
     - physical-controllers
   priority_rank: 5
   status: active
-  apple_native_rule: Ensure the experience accommodates multiple connected controllers.
+  apple_native_rule: Support multiple connected game controllers.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0008
-  title: Prefer using symbols, not text, to refer to game controller elements
+  title: Prefer symbols for controller elements
   category: inputs
   topic: game-controls
   subtopic: physical-controllers
   statement:
-    en: Favor using symbols, not text, to refer to game controller elements when the documented conditions apply.
-    ja: 該当条件ではusing symbols, not text, to refer to game controller elementsを優先する。
+    en: Prefer symbols instead of text when referring to game-controller elements.
+    ja: game-controller elementの参照にはtextよりsymbolを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85648,7 +85626,7 @@
     modalities:
       - game-controller
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Symbols can reduce the need to search for a written button label during gameplay.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
@@ -85656,7 +85634,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor using symbols, not text, to refer to game controller elements when the documented conditions apply.” in the documented Game controls context?
+      - Does the design satisfy “Prefer symbols instead of text when referring to game-controller elements.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85668,10 +85646,10 @@
     section_path:
       - Game controls
       - Physical controllers
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 8ade6941e1dd8ca3f37c4a66ea831a18f2522b4aade5547828e254b03f927d13
-    evidence_paraphrase: Favor using symbols, not text, to refer to game controller elements when the documented conditions apply.
+    evidence_paraphrase: Prefer symbols instead of text when referring to game-controller elements.
   tags:
     - inputs
     - game-controls
@@ -85679,19 +85657,19 @@
     - game-controller
   priority_rank: 5
   status: active
-  apple_native_rule: Favor using symbols, not text, to refer to game controller elements when the documented conditions apply.
+  apple_native_rule: Prefer symbols instead of text when referring to game-controller elements.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0009
-  title: Prioritize single-key commands
+  title: Prioritize single-key game commands
   category: inputs
   topic: game-controls
   subtopic: keyboards
   statement:
-    en: Apply the documented Game controls guidance to prioritize single-key commands.
-    ja: 「Game controls」において「Prioritize single-key commands」の指針を適用する。
+    en: Prioritize single-key commands for keyboard game controls.
+    ja: keyboard game controlではsingle-key commandを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85711,10 +85689,10 @@
     components: []
     modalities:
       - keyboard
-      - game-controller
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Single-key commands are easier and faster while also using a mouse or trackpad.
+  exceptions:
+    - Letter and Space bindings are examples, not required commands.
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
@@ -85722,7 +85700,7 @@
     automated:
       - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
     manual:
-      - Does the design satisfy “Apply the documented Game controls guidance to prioritize single-key commands.” in the documented Game controls context?
+      - Does the design satisfy “Prioritize single-key commands for keyboard game controls.” in the documented Game controls context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85734,10 +85712,10 @@
     section_path:
       - Game controls
       - Keyboards
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 7b9f835d8447d9aaca86f9007c3a2343e75a2ca54a6142eb7cbadd84fe5a06ff
-    evidence_paraphrase: Apply the documented Game controls guidance to prioritize single-key commands.
+    evidence_paraphrase: Prioritize single-key commands for keyboard game controls.
   tags:
     - inputs
     - game-controls
@@ -85745,19 +85723,19 @@
     - keyboard
   priority_rank: 5
   status: active
-  apple_native_rule: Apply the documented Game controls guidance to prioritize single-key commands.
+  apple_native_rule: Prioritize single-key commands for keyboard game controls.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0010
-  title: Test key binding comfort game using an Apple keyboard
+  title: Test game-binding comfort on an Apple keyboard
   category: inputs
   topic: game-controls
   subtopic: keyboards
   statement:
-    en: Apply the documented Game controls guidance to test key binding comfort game using an Apple keyboard.
-    ja: 「Game controls」において「Test key binding comfort game using an Apple keyboard」の指針を適用する。
+    en: Test the comfort of game key bindings using an Apple keyboard.
+    ja: Apple keyboardでgame key bindingの快適さをtestする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85777,10 +85755,10 @@
     components: []
     modalities:
       - keyboard
-      - game-controller
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Account for Apple-keyboard key placement and simultaneous movement-key use.
+  exceptions:
+    - Remapping Control to Command is a context-dependent example, not a universal binding.
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
@@ -85788,7 +85766,7 @@
     automated:
       - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
     manual:
-      - Does the design satisfy “Apply the documented Game controls guidance to test key binding comfort game using an Apple keyboard.” in the documented Game controls context?
+      - Does the design satisfy “Test the comfort of game key bindings using an Apple keyboard.” in the documented Game controls context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85800,10 +85778,10 @@
     section_path:
       - Game controls
       - Keyboards
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 1025e4c5f06a92750de55f04fe6c4a4cbdddc2b1bd9f96fd16a0920fc16edfa6
-    evidence_paraphrase: Apply the documented Game controls guidance to test key binding comfort game using an Apple keyboard.
+    evidence_paraphrase: Test the comfort of game key bindings using an Apple keyboard.
   tags:
     - inputs
     - game-controls
@@ -85811,19 +85789,19 @@
     - keyboard
   priority_rank: 5
   status: active
-  apple_native_rule: Apply the documented Game controls guidance to test key binding comfort game using an Apple keyboard.
+  apple_native_rule: Test the comfort of game key bindings using an Apple keyboard.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0011
-  title: Let players customize key bindings
+  title: Let players customize game key bindings
   category: inputs
   topic: game-controls
   subtopic: keyboards
   statement:
-    en: Apply the documented Game controls guidance to let players customize key bindings.
-    ja: 「Game controls」において「Let players customize key bindings」の指針を適用する。
+    en: Let players customize game key bindings.
+    ja: playerがgame key bindingをcustomizeできるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85842,9 +85820,9 @@
       - apple-vision-pro
     components: []
     modalities:
-      - game-controller
+      - keyboard
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Provide reasonable defaults while supporting personal comfort and play style.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
@@ -85852,7 +85830,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Game controls guidance to let players customize key bindings.” in the documented Game controls context?
+      - Does the design satisfy “Let players customize game key bindings.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85864,17 +85842,17 @@
     section_path:
       - Game controls
       - Keyboards
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 83214683c89626f25627f61390a278bdb5daa7cb470c30ef80cc4a4edd47d59e
-    evidence_paraphrase: Apply the documented Game controls guidance to let players customize key bindings.
+    evidence_paraphrase: Let players customize game key bindings.
   tags:
     - inputs
     - game-controls
     - keyboards
   priority_rank: 5
   status: active
-  apple_native_rule: Apply the documented Game controls guidance to let players customize key bindings.
+  apple_native_rule: Let players customize game key bindings.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0012
   title: Match spatial controller interactions to hand input
@@ -85922,7 +85900,7 @@
       - Game controls
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: e93afe82398bfafd6d2acc9e41a3a1e8dbc1f830d051183ee650c3c32b408e52
     evidence_paraphrase: Make visionOS spatial controller interactions behave like equivalent hand interactions.
@@ -85937,16 +85915,16 @@
   apple_native_rule: Make visionOS spatial controller interactions behave like equivalent hand interactions.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0013
-  title: Determine whether it makes sense to display virtual controls on top of game content
+  title: Evaluate virtual controls over game content
   category: inputs
   topic: game-controls
   subtopic: touch-controls
   statement:
-    en: Determine whether it makes sense to display virtual controls on top of game content explicitly.
-    ja: whether it makes sense to display virtual controls on top of game contentを明確に決定する。
+    en: Determine whether virtual controls should appear over game content.
+    ja: game content上にvirtual controlを表示するか判断する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -85954,20 +85932,15 @@
     platforms:
       - ios
       - ipados
-      - macos
-      - tvos
-      - visionos
     devices:
       - iphone
       - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
     components: []
     modalities:
-      - game-controller
+      - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Virtual controls can suit many actions or movement control; direct object interaction can improve immersion.
+    - Look for gestures that reduce controls overlapping game content.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
@@ -85975,7 +85948,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Determine whether it makes sense to display virtual controls on top of game content explicitly.” in the documented Game controls context?
+      - Does the design satisfy “Determine whether virtual controls should appear over game content.” in the documented Game controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -85987,17 +85960,17 @@
     section_path:
       - Game controls
       - Touch controls
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: 8045e1c5f4e0cdac4ee1623423953dee0caa9f4bb8af9cf5c5fc260700c44aea
-    evidence_paraphrase: Determine whether it makes sense to display virtual controls on top of game content explicitly.
+    evidence_paraphrase: Determine whether virtual controls should appear over game content.
   tags:
     - inputs
     - game-controls
     - touch-controls
   priority_rank: 5
   status: active
-  apple_native_rule: Determine whether it makes sense to display virtual controls on top of game content explicitly.
+  apple_native_rule: Determine whether virtual controls should appear over game content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GAME-CONTROLS-0014
   title: Support indirect gaze-and-trigger interaction
@@ -86044,7 +86017,7 @@
       - Game controls
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: e93afe82398bfafd6d2acc9e41a3a1e8dbc1f830d051183ee650c3c32b408e52
     evidence_paraphrase: Support looking at an object and pressing a spatial controller trigger to interact indirectly.
@@ -86103,7 +86076,7 @@
       - Game controls
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T20:03:34Z
+    retrieved_at: 2026-07-21T23:01:32Z
     source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
     source_sentence_hash: e93afe82398bfafd6d2acc9e41a3a1e8dbc1f830d051183ee650c3c32b408e52
     evidence_paraphrase: Support reaching toward an object and pressing a spatial controller trigger to interact directly.
@@ -86115,6 +86088,678 @@
   priority_rank: 4
   status: active
   apple_native_rule: Support reaching toward an object and pressing a spatial controller trigger to interact directly.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0016
+  title: Combine related touch actions into one control
+  category: inputs
+  topic: game-controls
+  subtopic: touch-controls
+  statement:
+    en: Combine related game actions into a single touch control when practical.
+    ja: 実用的な場合は関連game actionを1つのtouch controlへまとめる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities:
+      - touch
+  conditions:
+    - Consider redesigning mechanics that require simultaneous or sequential multi-button input.
+    - Use gestures to expose variations of the same action when appropriate.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Combine related game actions into a single touch control when practical.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Touch controls
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: 0db28ad5366e01db9e2b468bea50ba0b258d90aa320e2387823858629193bf61
+    evidence_paraphrase: Combine related game actions into a single touch control when practical.
+  tags:
+    - inputs
+    - game-controls
+    - touch-controls
+    - touch
+  priority_rank: 5
+  status: active
+  apple_native_rule: Combine related game actions into a single touch control when practical.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0017
+  title: Use predictable touch movement and camera controls
+  category: inputs
+  topic: game-controls
+  subtopic: touch-controls
+  statement:
+    en: Use predictable behavior for touch movement and camera controls.
+    ja: touch movementとcamera controlに予測可能なbehaviorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities:
+      - touch
+  conditions:
+    - Place movement input on the left and camera input on the right.
+    - Use large input areas for both controls.
+    - Prefer a movement thumbstick that appears at the player's touch location.
+    - Prefer direct touch for camera panning over a virtual thumbstick.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use predictable behavior for touch movement and camera controls.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Touch controls
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: ccb7884621f4b19e15659bcdccdbe9e92951fa8649c70393c69f35426d157cfe
+    evidence_paraphrase: Use predictable behavior for touch movement and camera controls.
+  tags:
+    - inputs
+    - game-controls
+    - touch-controls
+  priority_rank: 5
+  status: active
+  apple_native_rule: Use predictable behavior for touch movement and camera controls.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0018
+  title: Explain required physical game controllers
+  category: inputs
+  topic: game-controls
+  subtopic: physical-controllers
+  statement:
+    en: Tell people when a physical game controller is required.
+    ja: physical game controllerが必要な場合は利用者へ伝える。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - tvos
+      - visionos
+    devices:
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities:
+      - game-controller
+  conditions:
+    - People can open the game without a connected controller.
+    - Check for a required controller and gracefully prompt people to connect one when missing.
+    - Use the App Store requirement metadata so the system can display its badge.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Tell people when a physical game controller is required.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Physical controllers
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: 024c4d867f6fef9f1982dbd5b5d4da47a8e9d2bbf2a5de7a3a47e3473a88e750
+    evidence_paraphrase: Tell people when a physical game controller is required.
+  tags:
+    - inputs
+    - game-controls
+    - physical-controllers
+    - game-controller
+  priority_rank: 5
+  status: active
+  apple_native_rule: Tell people when a physical game controller is required.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0019
+  title: Detect paired game controllers automatically
+  category: inputs
+  topic: game-controls
+  subtopic: physical-controllers
+  statement:
+    en: Automatically detect a paired game controller and its profile.
+    ja: paired game controllerとprofileを自動検出する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities:
+      - game-controller
+  conditions:
+    - Avoid requiring players to perform manual controller setup.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Automatically detect a paired game controller and its profile.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Physical controllers
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: a4e27759fcff39955803687d3cba4c6889da13cc200b1d0bf1c79966aa461bb7
+    evidence_paraphrase: Automatically detect a paired game controller and its profile.
+  tags:
+    - inputs
+    - game-controls
+    - physical-controllers
+    - game-controller
+  priority_rank: 5
+  status: active
+  apple_native_rule: Automatically detect a paired game controller and its profile.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0020
+  title: Match onscreen content to the connected controller
+  category: inputs
+  topic: game-controls
+  subtopic: physical-controllers
+  statement:
+    en: Match onscreen controller content to the connected game controller.
+    ja: onscreen controller contentを接続中のgame controllerへ合わせる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities:
+      - game-controller
+  conditions:
+    - Actual controller colors and symbols may differ from framework-standard element names.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Match onscreen controller content to the connected game controller.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Physical controllers
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: 5daab59934572293091c866ada9f7811509e2d906d56b0d38f06704399c8bf65
+    evidence_paraphrase: Match onscreen controller content to the connected game controller.
+  tags:
+    - inputs
+    - game-controls
+    - physical-controllers
+    - game-controller
+  priority_rank: 5
+  status: active
+  apple_native_rule: Match onscreen controller content to the connected game controller.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0021
+  title: Map controller buttons to expected UI behavior
+  category: inputs
+  topic: game-controls
+  subtopic: physical-controllers
+  statement:
+    en: Map physical-controller buttons to expected UI behavior outside gameplay.
+    ja: gameplay外ではphysical-controller buttonを期待されるUI behaviorへmapする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities:
+      - game-controller
+  conditions:
+    - A activates a control; B cancels or returns.
+    - Left and right shoulder buttons navigate between screens or sections.
+    - Thumbsticks and the directional pad move selection.
+    - Reserve Home or logo buttons for system controls.
+    - Menu opens game settings or pauses gameplay.
+  exceptions:
+    - The source specifies no expected UI behavior for X, Y, or trigger buttons.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Map physical-controller buttons to expected UI behavior outside gameplay.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Physical controllers
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: cfb22eac910ba30b5cc998a601c7baba5cb7d84e6ed18983f3ca15ffd9c07a41
+    evidence_paraphrase: Map physical-controller buttons to expected UI behavior outside gameplay.
+  tags:
+    - inputs
+    - game-controls
+    - physical-controllers
+  priority_rank: 5
+  status: active
+  apple_native_rule: Map physical-controller buttons to expected UI behavior outside gameplay.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0022
+  title: Account for key proximity in game bindings
+  category: inputs
+  topic: game-controls
+  subtopic: keyboards
+  statement:
+    en: Account for physical key proximity when defining game bindings.
+    ja: game binding定義時にphysical key proximityを考慮する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities:
+      - keyboard
+  conditions:
+    - Place other high-value commands near movement keys.
+    - Consider physically grouping bindings for closely related actions.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Account for physical key proximity when defining game bindings.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Keyboards
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: 08bd1b5a792bed64732f4af212c34f76a2f6919d225bb5f37b61c2e6dcbde3fc
+    evidence_paraphrase: Account for physical key proximity when defining game bindings.
+  tags:
+    - inputs
+    - game-controls
+    - keyboards
+  priority_rank: 5
+  status: active
+  apple_native_rule: Account for physical key proximity when defining game bindings.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0023
+  title: Ensure virtual buttons don't overlap system features
+  category: inputs
+  topic: game-controls
+  subtopic: touch-controls
+  statement:
+    en: Ensure virtual game buttons don't overlap system interface features.
+    ja: virtual game buttonがsystem interface featureと重ならないようにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities:
+      - touch
+  conditions:
+    - Respect system features such as the Home indicator and Dynamic Island where present.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure virtual game buttons don't overlap system interface features.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Touch controls
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: 9abde37ac15b9818c61b075dcddb5060dfa0cef442e40f1ded57e4543997e7b7
+    evidence_paraphrase: Ensure virtual game buttons don't overlap system interface features.
+  tags:
+    - inputs
+    - game-controls
+    - touch-controls
+  priority_rank: 5
+  status: active
+  apple_native_rule: Ensure virtual game buttons don't overlap system interface features.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0024
+  title: Ensure interface labels match the connected controller
+  category: inputs
+  topic: game-controls
+  subtopic: physical-controllers
+  statement:
+    en: Ensure controller references and related interface content use the connected controller's labels.
+    ja: controller参照と関連interface contentに接続中controllerのlabelを使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities:
+      - game-controller
+  conditions:
+    - The interface refers to controls or displays controller-related content.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure controller references and related interface content use the connected controller's labels.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Physical controllers
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: e8388b272024d42d918d6be3fa490a5e50b83028d9d4151bc8d772ed2396adfc
+    evidence_paraphrase: Ensure controller references and related interface content use the connected controller's labels.
+  tags:
+    - inputs
+    - game-controls
+    - physical-controllers
+  priority_rank: 5
+  status: active
+  apple_native_rule: Ensure controller references and related interface content use the connected controller's labels.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0025
+  title: Avoid abstract or controller-named virtual-control artwork
+  category: inputs
+  topic: game-controls
+  subtopic: touch-controls
+  statement:
+    en: Avoid abstract shapes or controller-based names as virtual-control artwork.
+    ja: virtual-control artworkにabstract shapeやcontroller由来の名前を使わない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities:
+      - touch
+  conditions:
+    - Use action-representative symbols that are easier to understand and remember.
+  exceptions:
+    - Specific controller labels are examples of the discouraged naming pattern.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid abstract shapes or controller-based names as virtual-control artwork.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Touch controls
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: 5861ab4f0cb999e22cf4ac5c8d02f19e8c5b87511543935527aeabbadc128308
+    evidence_paraphrase: Avoid abstract shapes or controller-based names as virtual-control artwork.
+  tags:
+    - inputs
+    - game-controls
+    - touch-controls
+  priority_rank: 5
+  status: active
+  apple_native_rule: Avoid abstract shapes or controller-based names as virtual-control artwork.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-GAME-CONTROLS-0026
+  title: Avoid game-control features on watchOS
+  category: inputs
+  topic: game-controls
+  subtopic: platform-considerations
+  statement:
+    en: Avoid offering game-control features on watchOS.
+    ja: watchOSではgame-control featureを提供しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities:
+      - game-controller
+  conditions:
+    - Game controls are unsupported on watchOS.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Game controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるGame controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid offering game-control features on watchOS.” in the documented Game controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/game-controls
+    page_title: Game controls
+    section_path:
+      - Game controls
+      - Platform considerations
+    retrieved_at: 2026-07-21T23:01:32Z
+    source_hash: 138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431
+    source_sentence_hash: 21eab31707fe04c1fdf29260ea5ac1bacd4b165d2de91f4f0f2000a2af0a1b25
+    evidence_paraphrase: Avoid offering game-control features on watchOS.
+  tags:
+    - inputs
+    - game-controls
+    - platform-considerations
+  priority_rank: 5
+  status: active
+  apple_native_rule: Avoid offering game-control features on watchOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-GESTURES-0001
   title: Offer multiple interaction methods

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1804
-- Reviewed batches: 123
+- Reviewed rules: 1827
+- Reviewed batches: 124
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:57:08Z
+- Reviewed at: 2026-07-21T23:02:30Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1045,9 +1045,32 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-FOCUS-AND-SELECTION-0014 · high — Recovered and retained the explicit need requirement for larger focused-size assets. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0015 · high — Recovered and retained the explicit make sure spacing requirement for enlarged focus. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0016 · high — Recovered the visionOS platform distinction documented in the page note. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-GAME-CONTROLS-0001 · high — Corrected scope to iOS and iPadOS touch controls and recorded reach, safe-area, frequency, and control-region constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0002 · high — Retained the explicit Make sure MUST and restored both source-defined size classes and thresholds. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0003 · high — Retained Always-based MUST, corrected touch scope, and recorded covered-control visibility plus tactile feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0004 · high — Corrected touch scope and separated positive symbol guidance from the abstract-artwork avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0005 · high — Recorded context, availability, and clutter reduction while keeping the example optional. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0006 · high — Recovered the controller prerequisite and fallback purpose while preserving the documented platform exception. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0007 · high — Recorded active-controller and player-specific labeling plus the optional grouped-reference technique. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0008 · high — Preserved Prefer and the accessibility value for players unfamiliar with controllers. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0009 · high — Corrected keyboard modality and preserved the simultaneous-pointer-use rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0010 · high — Repaired the generated wording and corrected the modality to keyboard. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0011 · high — Corrected keyboard modality and recorded both default and customization expectations. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GAME-CONTROLS-0012 · high — Repaired the generated wording and recorded the gaze, hand-gesture, and game-controller modalities. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0013 · high — Corrected touch scope and recorded both virtual-control and direct-interaction tradeoffs. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GAME-CONTROLS-0014 · high — Split the source's indirect interaction mapping and recorded its gaze and trigger inputs. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GAME-CONTROLS-0015 · high — Split the source's direct interaction mapping and recorded its reach gesture and trigger inputs. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0016 · high — Recovered the inactive lead and its multi-button and gesture conditions without requiring the examples. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0017 · high — Recovered the inactive lead and all four expected touch-control behaviors. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0018 · high — Recovered the inactive lead, limited controller requirements to tvOS and visionOS, and recorded the missing-controller state. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0019 · high — Recovered the inactive automatic-detection lead and both pairing and profile results. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0020 · high — Recovered the inactive lead and the framework-versus-hardware mismatch condition. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0021 · high — Recovered the inactive lead and compactly recorded the structured platform mapping without reproducing unrelated table content. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0022 · high — Recovered the inactive lead, corrected modality, and preserved both movement and related-action contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0023 · high — Recovered the explicit Make sure requirement and scoped the examples to devices where those features exist. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0024 · high — Recovered the Be sure requirement separately from general onscreen-content adaptation. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0025 · high — Recovered the explicit Avoid separately from positive symbol guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0026 · high — Recovered the explicit platform limitation and corrected scope to watchOS itself. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GESTURES-0001 · high — Recorded the accessibility purpose and stated alternative input examples. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0002 · high — Separated learnability from the explicit real-use testing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0003 · high — Recorded the persistent familiar path that must remain alongside a shortcut. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))

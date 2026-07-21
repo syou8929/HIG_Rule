@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 296
-- Retained MUST: 272
+- Reviewed rules: 298
+- Retained MUST: 274
 - Retained MUST_NOT: 24
-- Normative level changes: 66
+- Normative level changes: 68
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:57:08Z
+- Reviewed at: 2026-07-21T23:02:30Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -113,6 +113,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-FOCUS-AND-SELECTION-0013 — Recovered and retained MUST after confirming the conditional make sure requirement for a required tvOS pointer. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0014 — Recovered and retained MUST after confirming the explicit need to supply sharp larger focused-size assets. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0015 — Recovered and retained MUST after confirming the explicit make sure requirement to prevent focused-item crowding. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-GAME-CONTROLS-0023 — Recovered MUST from the explicit Make sure placement requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0024 — Recovered MUST from the explicit Be sure labeling requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GESTURES-0023 — Recovered and retained MUST from the explicit make sure checklist requirement that custom gestures be discoverable. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0024 — Recovered and retained MUST from the explicit make sure checklist requirement that custom gestures be straightforward. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0025 — Recovered and retained MUST from the explicit make sure checklist requirement that custom gestures be distinct. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
@@ -386,6 +388,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-FOCUS-AND-SELECTION-0015 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure requirement to prevent focused-item crowding. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-GAME-CONTROLS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GAME-CONTROLS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Make sure placement requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- HIG-INPUTS-GAME-CONTROLS-0024 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure labeling requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - HIG-INPUTS-GESTURES-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST from the explicit make sure checklist requirement that custom gestures be discoverable. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0024 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST from the explicit make sure checklist requirement that custom gestures be straightforward. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0025 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST from the explicit make sure checklist requirement that custom gestures be distinct. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))

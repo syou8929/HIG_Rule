@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:57:08Z",
+  "reviewed_at": "2026-07-21T23:02:30Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2793,9 +2793,210 @@
         "HIG-INPUTS-NEARBY-INTERACTIONS-0001", "HIG-INPUTS-NEARBY-INTERACTIONS-0002", "HIG-INPUTS-NEARBY-INTERACTIONS-0003", "HIG-INPUTS-NEARBY-INTERACTIONS-0004", "HIG-INPUTS-NEARBY-INTERACTIONS-0005", "HIG-INPUTS-NEARBY-INTERACTIONS-0006", "HIG-INPUTS-NEARBY-INTERACTIONS-0007", "HIG-INPUTS-NEARBY-INTERACTIONS-0008", "HIG-INPUTS-NEARBY-INTERACTIONS-0009", "HIG-INPUTS-NEARBY-INTERACTIONS-0010", "HIG-INPUTS-NEARBY-INTERACTIONS-0011", "HIG-INPUTS-NEARBY-INTERACTIONS-0012", "HIG-INPUTS-NEARBY-INTERACTIONS-0013", "HIG-INPUTS-NEARBY-INTERACTIONS-0014", "HIG-INPUTS-NEARBY-INTERACTIONS-0015"
       ],
       "review_note": "Completed the page, preserved nine stable IDs, recovered six atomic rules for accessible alternatives, portrait guidance, obstacle advice, unsupported platforms, and watchOS foreground state, and recorded iPhone versus Apple Watch capability differences."
+    },
+    {
+      "id": "priority-5-game-controls-input-context-2026-07-21",
+      "reviewed_at": "2026-07-21T23:02:30Z",
+      "review_method": "Rendered Apple HIG Game controls touch, physical-controller, keyboard, structured controller-mapping table, and platform guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/game-controls", "source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431"}],
+      "rule_ids": [
+        "HIG-INPUTS-GAME-CONTROLS-0001", "HIG-INPUTS-GAME-CONTROLS-0002", "HIG-INPUTS-GAME-CONTROLS-0003", "HIG-INPUTS-GAME-CONTROLS-0004", "HIG-INPUTS-GAME-CONTROLS-0005", "HIG-INPUTS-GAME-CONTROLS-0006", "HIG-INPUTS-GAME-CONTROLS-0007", "HIG-INPUTS-GAME-CONTROLS-0008", "HIG-INPUTS-GAME-CONTROLS-0009", "HIG-INPUTS-GAME-CONTROLS-0010", "HIG-INPUTS-GAME-CONTROLS-0011", "HIG-INPUTS-GAME-CONTROLS-0013", "HIG-INPUTS-GAME-CONTROLS-0016", "HIG-INPUTS-GAME-CONTROLS-0017", "HIG-INPUTS-GAME-CONTROLS-0018", "HIG-INPUTS-GAME-CONTROLS-0019", "HIG-INPUTS-GAME-CONTROLS-0020", "HIG-INPUTS-GAME-CONTROLS-0021", "HIG-INPUTS-GAME-CONTROLS-0022", "HIG-INPUTS-GAME-CONTROLS-0023", "HIG-INPUTS-GAME-CONTROLS-0024", "HIG-INPUTS-GAME-CONTROLS-0025", "HIG-INPUTS-GAME-CONTROLS-0026"
+      ],
+      "review_note": "Completed the priority-5 sections, corrected touch and keyboard scopes, preserved twelve stable IDs, recovered eleven atomic rules including two explicit MUST requirements, and recorded the controller UI mapping table without copying unrelated source prose."
     }
   ],
   "rules": {
+    "HIG-INPUTS-GAME-CONTROLS-0001": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "8351eb1f09b8022befef4c730ac35a9f107e68a647a66e66f480810ae8c07b2e", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Place virtual game buttons within easy reach",
+      "statement": {"en": "Place virtual game buttons where they're easy to access.", "ja": "virtual game buttonを操作しやすい位置に置く。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Account for device boundaries, safe areas, and comfortable control locations.", "Place frequent buttons near the player's thumb and outside expected movement and camera regions.", "Place secondary controls toward the top of the screen."],
+      "review_note": "Corrected scope to iOS and iPadOS touch controls and recorded reach, safe-area, frequency, and control-region constraints."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0002": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "16f767e48047c135869bbded3af48351b5e51a7c36f52dc93acf96764ffdfe35", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Make sure virtual game controls meet minimum sizes",
+      "statement": {"en": "Make sure virtual game controls meet their minimum sizes.", "ja": "virtual game controlがminimum sizeを満たすようにする。"},
+      "normative_level": "MUST",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Frequently used controls are at least 44 by 44 points.", "Less-important controls are at least 28 by 28 points."],
+      "review_note": "Retained the explicit Make sure MUST and restored both source-defined size classes and thresholds."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0003": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "390f249ef78e45b262e145be768751f147081a266ecae5053f33e5a5598fbeba", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Always include visible and tactile virtual-control press states",
+      "statement": {"en": "Always include visible and tactile press states for virtual game controls.", "ja": "virtual game controlにはvisibleおよびtactileなpress stateを常に含める。"},
+      "normative_level": "MUST",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Keep the visual state perceivable while a finger covers the control.", "Use sound and haptics to strengthen physical feedback when appropriate."],
+      "review_note": "Retained Always-based MUST, corrected touch scope, and recorded covered-control visibility plus tactile feedback."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0004": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "0afdbce57d043b5201669ed08c97f89a99ff74644d34b1ed60154cf73ce3acc4", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Use action-representative virtual-control symbols",
+      "statement": {"en": "Use virtual-control symbols that communicate the actions they perform.", "ja": "実行するactionを伝えるvirtual-control symbolを使う。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Choose artwork that visually represents the associated game action."],
+      "review_note": "Corrected touch scope and separated positive symbol guidance from the abstract-artwork avoidance."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0005": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "45d0619bf495f598b592af4c3ef8bb18cf3afaa7845ffaee49454eb60b56dcfe", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Adapt virtual controls to gameplay context",
+      "statement": {"en": "Show and hide virtual controls to reflect gameplay context.", "ja": "gameplay contextに合わせてvirtual controlを表示または非表示にする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Hide unavailable or irrelevant actions to reduce clutter and focus attention."],
+      "exceptions": ["Hiding movement controls until touch begins is an example, not a universal trigger."],
+      "review_note": "Recorded context, availability, and clutter reduction while keeping the example optional."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0006": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "6e5482baacfa584f3fccd6ad3cd579a966213b00c8b2f5fd6cd8177ec1450c7e", "section_path": ["Game controls", "Physical controllers"]},
+      "title": "Provide a default-interaction fallback for controllers",
+      "statement": {"en": "When supporting game controllers, provide a fallback using the platform's default interaction method.", "ja": "game controller対応時はplatform既定interaction methodのfallbackを提供する。"},
+      "conditions": ["Controllers are optional purchases and may be unavailable."],
+      "exceptions": ["tvOS and visionOS games can require a controller when they disclose and handle that requirement."],
+      "review_note": "Recovered the controller prerequisite and fallback purpose while preserving the documented platform exception."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0007": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "17de3036cfd09643f7409103a97bc2694a2029b8b15f077f72654bf0871d9bd6", "section_path": ["Game controls", "Physical controllers"]},
+      "title": "Support multiple connected game controllers",
+      "statement": {"en": "Support multiple connected game controllers.", "ja": "複数の接続済みgame controllerをsupportする。"},
+      "conditions": ["Use labels and glyphs matching the controller a player is actively using.", "In multiplayer, use the correct labels and symbols for each player's controller."],
+      "exceptions": ["Consider listing multiple controller-button references together when necessary."],
+      "review_note": "Recorded active-controller and player-specific labeling plus the optional grouped-reference technique."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0008": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "8ade6941e1dd8ca3f37c4a66ea831a18f2522b4aade5547828e254b03f927d13", "section_path": ["Game controls", "Physical controllers"]},
+      "title": "Prefer symbols for controller elements",
+      "statement": {"en": "Prefer symbols instead of text when referring to game-controller elements.", "ja": "game-controller elementの参照にはtextよりsymbolを優先する。"},
+      "conditions": ["Symbols can reduce the need to search for a written button label during gameplay."],
+      "review_note": "Preserved Prefer and the accessibility value for players unfamiliar with controllers."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0009": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "7b9f835d8447d9aaca86f9007c3a2343e75a2ca54a6142eb7cbadd84fe5a06ff", "section_path": ["Game controls", "Keyboards"]},
+      "title": "Prioritize single-key game commands",
+      "statement": {"en": "Prioritize single-key commands for keyboard game controls.", "ja": "keyboard game controlではsingle-key commandを優先する。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": ["keyboard"]},
+      "conditions": ["Single-key commands are easier and faster while also using a mouse or trackpad."],
+      "exceptions": ["Letter and Space bindings are examples, not required commands."],
+      "review_note": "Corrected keyboard modality and preserved the simultaneous-pointer-use rationale."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0010": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "1025e4c5f06a92750de55f04fe6c4a4cbdddc2b1bd9f96fd16a0920fc16edfa6", "section_path": ["Game controls", "Keyboards"]},
+      "title": "Test game-binding comfort on an Apple keyboard",
+      "statement": {"en": "Test the comfort of game key bindings using an Apple keyboard.", "ja": "Apple keyboardでgame key bindingの快適さをtestする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": ["keyboard"]},
+      "conditions": ["Account for Apple-keyboard key placement and simultaneous movement-key use."],
+      "exceptions": ["Remapping Control to Command is a context-dependent example, not a universal binding."],
+      "review_note": "Repaired the generated wording and corrected the modality to keyboard."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0011": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "83214683c89626f25627f61390a278bdb5daa7cb470c30ef80cc4a4edd47d59e", "section_path": ["Game controls", "Keyboards"]},
+      "title": "Let players customize game key bindings",
+      "statement": {"en": "Let players customize game key bindings.", "ja": "playerがgame key bindingをcustomizeできるようにする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": ["keyboard"]},
+      "conditions": ["Provide reasonable defaults while supporting personal comfort and play style."],
+      "review_note": "Corrected keyboard modality and recorded both default and customization expectations."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0013": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "8045e1c5f4e0cdac4ee1623423953dee0caa9f4bb8af9cf5c5fc260700c44aea", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Evaluate virtual controls over game content",
+      "statement": {"en": "Determine whether virtual controls should appear over game content.", "ja": "game content上にvirtual controlを表示するか判断する。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Virtual controls can suit many actions or movement control; direct object interaction can improve immersion.", "Look for gestures that reduce controls overlapping game content."],
+      "review_note": "Corrected touch scope and recorded both virtual-control and direct-interaction tradeoffs."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0016": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "0db28ad5366e01db9e2b468bea50ba0b258d90aa320e2387823858629193bf61", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Combine related touch actions into one control",
+      "statement": {"en": "Combine related game actions into a single touch control when practical.", "ja": "実用的な場合は関連game actionを1つのtouch controlへまとめる。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Consider redesigning mechanics that require simultaneous or sequential multi-button input.", "Use gestures to expose variations of the same action when appropriate."],
+      "review_note": "Recovered the inactive lead and its multi-button and gesture conditions without requiring the examples."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0017": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "ccb7884621f4b19e15659bcdccdbe9e92951fa8649c70393c69f35426d157cfe", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Use predictable touch movement and camera controls",
+      "statement": {"en": "Use predictable behavior for touch movement and camera controls.", "ja": "touch movementとcamera controlに予測可能なbehaviorを使う。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Place movement input on the left and camera input on the right.", "Use large input areas for both controls.", "Prefer a movement thumbstick that appears at the player's touch location.", "Prefer direct touch for camera panning over a virtual thumbstick."],
+      "review_note": "Recovered the inactive lead and all four expected touch-control behaviors."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0018": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "024c4d867f6fef9f1982dbd5b5d4da47a8e9d2bbf2a5de7a3a47e3473a88e750", "section_path": ["Game controls", "Physical controllers"]},
+      "title": "Explain required physical game controllers",
+      "statement": {"en": "Tell people when a physical game controller is required.", "ja": "physical game controllerが必要な場合は利用者へ伝える。"},
+      "scope": {"portability": "apple-platform", "platforms": ["tvos", "visionos"], "devices": ["apple-tv", "apple-vision-pro"], "components": [], "modalities": ["game-controller"]},
+      "conditions": ["People can open the game without a connected controller.", "Check for a required controller and gracefully prompt people to connect one when missing.", "Use the App Store requirement metadata so the system can display its badge."],
+      "review_note": "Recovered the inactive lead, limited controller requirements to tvOS and visionOS, and recorded the missing-controller state."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0019": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "a4e27759fcff39955803687d3cba4c6889da13cc200b1d0bf1c79966aa461bb7", "section_path": ["Game controls", "Physical controllers"]},
+      "title": "Detect paired game controllers automatically",
+      "statement": {"en": "Automatically detect a paired game controller and its profile.", "ja": "paired game controllerとprofileを自動検出する。"},
+      "conditions": ["Avoid requiring players to perform manual controller setup."],
+      "review_note": "Recovered the inactive automatic-detection lead and both pairing and profile results."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0020": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "5daab59934572293091c866ada9f7811509e2d906d56b0d38f06704399c8bf65", "section_path": ["Game controls", "Physical controllers"]},
+      "title": "Match onscreen content to the connected controller",
+      "statement": {"en": "Match onscreen controller content to the connected game controller.", "ja": "onscreen controller contentを接続中のgame controllerへ合わせる。"},
+      "conditions": ["Actual controller colors and symbols may differ from framework-standard element names."],
+      "review_note": "Recovered the inactive lead and the framework-versus-hardware mismatch condition."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0021": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "cfb22eac910ba30b5cc998a601c7baba5cb7d84e6ed18983f3ca15ffd9c07a41", "section_path": ["Game controls", "Physical controllers"]},
+      "title": "Map controller buttons to expected UI behavior",
+      "statement": {"en": "Map physical-controller buttons to expected UI behavior outside gameplay.", "ja": "gameplay外ではphysical-controller buttonを期待されるUI behaviorへmapする。"},
+      "conditions": ["A activates a control; B cancels or returns.", "Left and right shoulder buttons navigate between screens or sections.", "Thumbsticks and the directional pad move selection.", "Reserve Home or logo buttons for system controls.", "Menu opens game settings or pauses gameplay."],
+      "exceptions": ["The source specifies no expected UI behavior for X, Y, or trigger buttons."],
+      "review_note": "Recovered the inactive lead and compactly recorded the structured platform mapping without reproducing unrelated table content."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0022": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "08bd1b5a792bed64732f4af212c34f76a2f6919d225bb5f37b61c2e6dcbde3fc", "section_path": ["Game controls", "Keyboards"]},
+      "title": "Account for key proximity in game bindings",
+      "statement": {"en": "Account for physical key proximity when defining game bindings.", "ja": "game binding定義時にphysical key proximityを考慮する。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": ["keyboard"]},
+      "conditions": ["Place other high-value commands near movement keys.", "Consider physically grouping bindings for closely related actions."],
+      "review_note": "Recovered the inactive lead, corrected modality, and preserved both movement and related-action contexts."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0023": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "9abde37ac15b9818c61b075dcddb5060dfa0cef442e40f1ded57e4543997e7b7", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Ensure virtual buttons don't overlap system features",
+      "statement": {"en": "Ensure virtual game buttons don't overlap system interface features.", "ja": "virtual game buttonがsystem interface featureと重ならないようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Respect system features such as the Home indicator and Dynamic Island where present."],
+      "review_note": "Recovered the explicit Make sure requirement and scoped the examples to devices where those features exist."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0024": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "e8388b272024d42d918d6be3fa490a5e50b83028d9d4151bc8d772ed2396adfc", "section_path": ["Game controls", "Physical controllers"]},
+      "title": "Ensure interface labels match the connected controller",
+      "statement": {"en": "Ensure controller references and related interface content use the connected controller's labels.", "ja": "controller参照と関連interface contentに接続中controllerのlabelを使う。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The interface refers to controls or displays controller-related content."],
+      "review_note": "Recovered the Be sure requirement separately from general onscreen-content adaptation."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0025": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "5861ab4f0cb999e22cf4ac5c8d02f19e8c5b87511543935527aeabbadc128308", "section_path": ["Game controls", "Touch controls"]},
+      "title": "Avoid abstract or controller-named virtual-control artwork",
+      "statement": {"en": "Avoid abstract shapes or controller-based names as virtual-control artwork.", "ja": "virtual-control artworkにabstract shapeやcontroller由来の名前を使わない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": ["touch"]},
+      "conditions": ["Use action-representative symbols that are easier to understand and remember."],
+      "exceptions": ["Specific controller labels are examples of the discouraged naming pattern."],
+      "review_note": "Recovered the explicit Avoid separately from positive symbol guidance."
+    },
+    "HIG-INPUTS-GAME-CONTROLS-0026": {
+      "source": {"source_hash": "138f1871dc5e4894107c77a61dd11048737d7920a88cf250b49fc1ba7b5b5431", "source_sentence_hash": "21eab31707fe04c1fdf29260ea5ac1bacd4b165d2de91f4f0f2000a2af0a1b25", "section_path": ["Game controls", "Platform considerations"]},
+      "title": "Avoid game-control features on watchOS",
+      "statement": {"en": "Avoid offering game-control features on watchOS.", "ja": "watchOSではgame-control featureを提供しない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-platform", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["game-controller"]},
+      "conditions": ["Game controls are unsupported on watchOS."],
+      "review_note": "Recovered the explicit platform limitation and corrected scope to watchOS itself."
+    },
     "HIG-INPUTS-NEARBY-INTERACTIONS-0001": {
       "source": {"source_hash": "389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7", "source_sentence_hash": "c07d815db1432c34619ee4aa7fd558d9c23ede80469da1b0689c1869362d7565", "section_path": ["Nearby interactions", "Best practices"]},
       "title": "Consider physical-world inspiration for a nearby interaction",

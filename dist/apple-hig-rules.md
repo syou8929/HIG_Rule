@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:59:23.317Z. 2701 active rules; 4 deprecated rules.
+Generated 2026-07-21T23:05:29.324Z. 2712 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2042,21 +2042,32 @@ Generated 2026-07-21T22:59:23.317Z. 2701 active rules; 4 deprecated rules.
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0016 · SHOULD · high** — Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 ### game-controls
 
-- **HIG-INPUTS-GAME-CONTROLS-0001 · SHOULD · low** — Apply the documented Game controls guidance to place virtual buttons where they’re easy to access. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0002 · MUST · medium** — Verify that controls are large enough. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0003 · MUST · medium** — Include visible and tactile press states in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0004 · SHOULD · low** — Choose or apply symbols that communicate the actions they perform in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0005 · SHOULD · low** — Present and hide virtual controls to reflect gameplay in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0006 · SHOULD · low** — Ensure the experience accommodates the platform’s default interaction method. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0007 · SHOULD · low** — Ensure the experience accommodates multiple connected controllers. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0008 · SHOULD · low** — Favor using symbols, not text, to refer to game controller elements when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0009 · SHOULD · low** — Apply the documented Game controls guidance to prioritize single-key commands. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0010 · SHOULD · low** — Apply the documented Game controls guidance to test key binding comfort game using an Apple keyboard. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0011 · SHOULD · low** — Apply the documented Game controls guidance to let players customize key bindings. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0001 · SHOULD · high** — Place virtual game buttons where they're easy to access. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0002 · MUST · high** — Make sure virtual game controls meet their minimum sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0003 · MUST · high** — Always include visible and tactile press states for virtual game controls. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0004 · SHOULD · high** — Use virtual-control symbols that communicate the actions they perform. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0005 · SHOULD · high** — Show and hide virtual controls to reflect gameplay context. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0006 · SHOULD · high** — When supporting game controllers, provide a fallback using the platform's default interaction method. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0007 · SHOULD · high** — Support multiple connected game controllers. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0008 · SHOULD · high** — Prefer symbols instead of text when referring to game-controller elements. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0009 · SHOULD · high** — Prioritize single-key commands for keyboard game controls. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0010 · SHOULD · high** — Test the comfort of game key bindings using an Apple keyboard. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0011 · SHOULD · high** — Let players customize game key bindings. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - **HIG-INPUTS-GAME-CONTROLS-0012 · SHOULD · high** — Make visionOS spatial controller interactions behave like equivalent hand interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
-- **HIG-INPUTS-GAME-CONTROLS-0013 · SHOULD · low** — Determine whether it makes sense to display virtual controls on top of game content explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0013 · SHOULD · high** — Determine whether virtual controls should appear over game content. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - **HIG-INPUTS-GAME-CONTROLS-0014 · SHOULD · high** — Support looking at an object and pressing a spatial controller trigger to interact indirectly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - **HIG-INPUTS-GAME-CONTROLS-0015 · SHOULD · high** — Support reaching toward an object and pressing a spatial controller trigger to interact directly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0016 · SHOULD · high** — Combine related game actions into a single touch control when practical. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0017 · SHOULD · high** — Use predictable behavior for touch movement and camera controls. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0018 · SHOULD · high** — Tell people when a physical game controller is required. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0019 · SHOULD · high** — Automatically detect a paired game controller and its profile. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0020 · SHOULD · high** — Match onscreen controller content to the connected game controller. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0021 · SHOULD · high** — Map physical-controller buttons to expected UI behavior outside gameplay. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0022 · SHOULD · high** — Account for physical key proximity when defining game bindings. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0023 · MUST · high** — Ensure virtual game buttons don't overlap system interface features. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0024 · MUST · high** — Ensure controller references and related interface content use the connected controller's labels. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0025 · AVOID · high** — Avoid abstract shapes or controller-based names as virtual-control artwork. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0026 · AVOID · high** — Avoid offering game-control features on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 ### gestures
 
 - **HIG-INPUTS-GESTURES-0001 · SHOULD · high** — Give people more than one way to interact with the app. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
