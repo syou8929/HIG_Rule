@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1225
-- Reviewed batches: 77
+- Reviewed rules: 1246
+- Reviewed batches: 78
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:18:48Z
+- Reviewed at: 2026-07-21T18:27:19Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -564,6 +564,27 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-TOP-SHELF-0011 · high — Recovered the omitted Showcase lead and recorded the layered-image preference and static fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
 - HIG-COMPONENTS-TOP-SHELF-0012 · high — Recovered the conditional Supply lead and recorded the fallback presentation and structured asset size. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
 - HIG-COMPONENTS-TOP-SHELF-0013 · high — Recovered the conditional Add lead and recorded the VoiceOver and layered-image requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0001 · high — Made the content-to-keyboard selection criterion concrete and removed an irrelevant hardware-keyboard traversal check. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0002 · high — Retained the source's conditional MAY and recorded the action-clarity criterion. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003 · high — Retained the explicit Make sure directive as MUST and separated simplicity and benefit communication into atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0004 · high — Narrowed the custom-keyboard-extension rule to the three explicitly supported platforms and recorded the Globe-key expectation. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0005 · high — Retained AVOID, narrowed platform scope, and recorded why system-provided controls must not be duplicated. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0006 · high — Retained MAY, narrowed platform scope, and separated the tutorial location restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0007 · high — Recorded visibility and usability as the layout-guide outcomes and removed an irrelevant hardware-keyboard traversal check. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0008 · high — Made the input-accessory context concrete and split relevance, material, and positioning requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0009 · high — Recovered the conditional custom-input capability as MAY without making replacement a default. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0010 · high — Recovered the semantic-input capability as MAY because the source describes a conditional system benefit. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0011 · high — Separated the source's usability expectation from the contextual MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0012 · high — Separated benefit communication from simplicity and the contextual MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0013 · high — Recovered the omitted sound-feedback rule and recorded the user-controlled Settings behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0014 · high — Recovered the extension capability as MAY and retained the explicit three-platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0015 · high — Recovered the systemwide-use criterion and its unique-functionality examples. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0016 · high — Separated the conditional in-app alternative without promoting it above MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0017 · high — Recovered the omitted final Avoid directive as a separate atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0018 · high — Recovered and retained the explicit conditional Make sure directive as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0019 · high — Recovered the conditional material treatment as SHOULD without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0020 · high — Recovered the concrete positioning technique as a separate SHOULD rule. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0021 · high — Recovered the watchOS content-type capability as MAY and retained the fixed keyboard-type constraint as context. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-WINDOWS-0007 · high — Retained MAY and recorded the documented pinch interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0009 · high — Restored the truncated bottom-edge risk and recorded both limited-use and inspector alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0010 · high — Recorded the familiar-interface rationale and bounded-3D volume alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))

@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2334
+- Active atomic rules: 2347
 - Pages without rules: 16
-- Low-confidence rules: 1027
-- Rules requiring human review: 1027
-- Reference notes: 927
+- Low-confidence rules: 1020
+- Rules requiring human review: 1020
+- Reference notes: 929
 
 ## Rules by category
 
-- components: 826
+- components: 839
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 307
-- MAY: 268
-- MUST: 205
+- AVOID: 308
+- MAY: 273
+- MUST: 206
 - MUST_NOT: 21
-- SHOULD: 1533
+- SHOULD: 1539
 
 ## Rules by platform
 
 - carplay: 89
-- ios: 1620
-- ipados: 1597
+- ios: 1632
+- ipados: 1609
 - macos: 1369
-- tvos: 1052
-- visionos: 1411
-- watchos: 1113
+- tvos: 1061
+- visionos: 1413
+- watchos: 1110
 
 ## Rules by testability
 
-- hybrid: 67
-- manual: 2267
+- hybrid: 59
+- manual: 2288
 
 ## Blocked pages
 
@@ -239,13 +239,6 @@ None.
 - HIG-COMPONENTS-TOOLBARS-0014
 - HIG-COMPONENTS-TOOLBARS-0015
 - HIG-COMPONENTS-TOOLBARS-0016
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0001
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0002
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0004
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0005
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0006
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0007
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0008
 - HIG-COMPONENTS-WATCH-FACES-0001
 - HIG-COMPONENTS-WATCH-FACES-0002
 - HIG-COMPONENTS-WATCH-FACES-0003
@@ -1269,13 +1262,6 @@ None.
 - HIG-COMPONENTS-TOOLBARS-0014
 - HIG-COMPONENTS-TOOLBARS-0015
 - HIG-COMPONENTS-TOOLBARS-0016
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0001
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0002
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0004
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0005
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0006
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0007
-- HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0008
 - HIG-COMPONENTS-WATCH-FACES-0001
 - HIG-COMPONENTS-WATCH-FACES-0002
 - HIG-COMPONENTS-WATCH-FACES-0003
@@ -2992,11 +2978,13 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/undo-and-redo · Undo and redo > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/undo-and-redo · Undo and redo > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/undo-and-redo · Undo and redo > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards — Virtual keyboards don't support keyboard shortcuts; this is a platform capability constraint, not a normative app rule.
 - https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Platform considerations > visionOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Custom keyboards — Installable custom keyboards are unavailable in secure text and phone number fields; people can configure and switch multiple keyboards.
+- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Platform considerations — Virtual keyboards are not supported in macOS; the remaining platform behavior was reviewed in its platform-specific subsections.
+- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Platform considerations > tvOS — tvOS chooses linear, grid, or digit-specific system keyboard layouts from the active input device and field context.
+- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Platform considerations > visionOS — The movable visionOS system keyboard supports direct and indirect gestures and requires no fixed-location layout reservation.
+- https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Platform considerations > watchOS — watchOS keyboard availability depends on screen size; the system also supports dictation, Scribble, and nearby-iPhone entry.
 - https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards · Virtual keyboards > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/voiceover · VoiceOver > Change log — Section recorded for human review; no short atomic guidance lead was detected.

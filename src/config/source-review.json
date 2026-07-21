@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:18:48Z",
+  "reviewed_at": "2026-07-21T18:27:19Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2216,6 +2216,23 @@
         "HIG-COMPONENTS-TEXT-VIEWS-0007", "HIG-COMPONENTS-TEXT-VIEWS-0008", "HIG-COMPONENTS-TEXT-VIEWS-0009"
       ],
       "review_note": "Completed Text views coverage; retained all four existing IDs, recovered five atomic rules, and retained only accessibility-option testing and content-appropriate iOS/iPadOS keyboards as MUST rules."
+    },
+    {
+      "id": "priority-4-virtual-keyboards-context-2026-07-21",
+      "reviewed_at": "2026-07-21T18:27:19Z",
+      "review_method": "Rendered Apple HIG Virtual keyboards guidance, content and Return-key selection, custom input views, custom keyboard extensions, iOS and iPadOS layout and accessory controls, tvOS, visionOS, watchOS, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards", "source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0001", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0002", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003",
+        "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0004", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0005", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0006",
+        "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0007", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0008", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0009",
+        "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0010", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0011", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0012",
+        "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0013", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0014", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0015",
+        "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0016", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0017", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0018",
+        "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0019", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0020", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0021"
+      ],
+      "review_note": "Completed Virtual keyboards coverage; retained all eight existing IDs, recovered thirteen atomic rules, narrowed custom-keyboard-extension guidance to iOS, iPadOS, and tvOS, and retained only the two explicit Make sure directives as MUST rules."
     }
   ],
   "rules": {
@@ -3348,6 +3365,213 @@
       "statement": {"en": "Use a text field instead of a text view for editable tvOS text.", "ja": "editableなtvOS textにはtext viewではなくtext fieldを使う。"},
       "conditions": ["Text input is minimal by design in tvOS; text views remain available for displaying text."],
       "review_note": "Recovered the tvOS editing component choice while retaining display behavior as context."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0001": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "a106092b89782305e5e82fb794467e25f9c6cbbd8cc7deb8d68f06c4745e537a", "section_path": ["Virtual keyboards", "Best practices"]},
+      "title": "Choose a content-appropriate virtual keyboard",
+      "statement": {"en": "Choose a virtual keyboard that matches the content people are editing.", "ja": "編集中のcontentに合うvirtual keyboardを選ぶ。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["Use keys optimized for the expected input, such as numbers and punctuation for numeric data."],
+      "exceptions": ["On watchOS, set the text field content type because the keyboard type can't be changed."],
+      "checks": {"automated": [], "manual": ["Does each text-entry context present a virtual keyboard suited to its expected content?"]},
+      "testability": "manual",
+      "review_note": "Made the content-to-keyboard selection criterion concrete and removed an irrelevant hardware-keyboard traversal check."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0002": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "1d8624b2033c0c33d9012fb6ca806b09afb88a42c400d37815effda54e7b56a8", "section_path": ["Virtual keyboards", "Best practices"]},
+      "title": "Customize the Return key only when it clarifies text entry",
+      "statement": {"en": "Consider customizing the Return key type when it clarifies the next text-entry action.", "ja": "次のtext-entry actionが明確になる場合はReturn key typeのcustomizeを検討する。"},
+      "conditions": ["A nondefault label such as Search communicates the action more clearly than the standard Return key."],
+      "checks": {"automated": [], "manual": ["If the Return key is customized, does its label clarify the action people perform next?"]},
+      "testability": "manual",
+      "review_note": "Retained the source's conditional MAY and recorded the action-clarity criterion."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "05eff14805c18af6a0407476aad30e56bff75adc3aecef2efe4c43587978978a", "section_path": ["Virtual keyboards", "Custom input views"]},
+      "title": "Keep custom input views appropriate to the app context",
+      "statement": {"en": "Ensure a custom input view makes sense in the context of the app.", "ja": "custom input viewがappのcontextに適合するようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["The app replaces the system keyboard with a custom input view."],
+      "checks": {"automated": [], "manual": ["Is replacing the system keyboard with this custom input view understandable and appropriate in the app context?"]},
+      "testability": "manual",
+      "review_note": "Retained the explicit Make sure directive as MUST and separated simplicity and benefit communication into atomic rules."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0004": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "4134960457c1e36cecd303520f3d1bb9eb325c56c7bfa395148beee514b2514d", "section_path": ["Virtual keyboards", "Custom keyboards"]},
+      "title": "Provide an obvious way to switch custom keyboards",
+      "statement": {"en": "Provide an obvious and easy way to switch between custom keyboards.", "ja": "custom keyboard間を明確かつ容易に切り替えられるようにする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["Use an interaction that is as intuitive as the standard Globe-key behavior."],
+      "checks": {"automated": [], "manual": ["Can people discover and use the custom keyboard's switching control without instruction?"]},
+      "testability": "manual",
+      "review_note": "Narrowed the custom-keyboard-extension rule to the three explicitly supported platforms and recorded the Globe-key expectation."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0005": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "239811ae3acad9812d7feb91f108bedc6fc9d3ea2b0291a330c0325a55871296", "section_path": ["Virtual keyboards", "Custom keyboards"]},
+      "title": "Avoid duplicating system-provided keyboard features",
+      "statement": {"en": "Avoid duplicating system-provided features in a custom keyboard.", "ja": "custom keyboard内でsystem-provided featureを重複させない。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["The system may already display features such as Emoji or Globe and Dictation controls outside the custom keyboard."],
+      "checks": {"automated": [], "manual": ["Does the custom keyboard omit system controls that the app can't affect and that would confuse people if repeated?"]},
+      "testability": "manual",
+      "review_note": "Retained AVOID, narrowed platform scope, and recorded why system-provided controls must not be duplicated."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0006": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "2825970036c0fff7b684c87880697b86c06bee47aa4cfcac8f22ed8bd394592a", "section_path": ["Virtual keyboards", "Custom keyboards"]},
+      "title": "Consider an in-app custom-keyboard tutorial",
+      "statement": {"en": "Consider providing a custom-keyboard tutorial in the app.", "ja": "app内でcustom keyboardのtutorial提供を検討する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["People need help choosing, activating, using, or leaving a nonstandard keyboard."],
+      "checks": {"automated": [], "manual": ["When the custom keyboard has a learning curve, does the app explain setup, use, and switching clearly?"]},
+      "testability": "manual",
+      "review_note": "Retained MAY, narrowed platform scope, and separated the tutorial location restriction."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0007": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "3e39c37a06276f768d5ea74e0fbe9f55c351b68c8e9ce61542e6753b0335e043", "section_path": ["Virtual keyboards", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use the keyboard layout guide for integrated iOS and iPadOS layouts",
+      "statement": {"en": "Use the keyboard layout guide to integrate the keyboard with an iOS or iPadOS interface.", "ja": "iOSまたはiPadOS interfaceとkeyboardを統合するためkeyboard layout guideを使う。"},
+      "conditions": ["Keep important interface content visible and usable while the virtual keyboard is onscreen."],
+      "checks": {"automated": [], "manual": ["With the virtual keyboard onscreen, do important content and controls remain visible and usable?"]},
+      "testability": "manual",
+      "review_note": "Recorded visibility and usability as the layout-guide outcomes and removed an irrelevant hardware-keyboard traversal check."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0008": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "ba71153cf5eca40dba4ea176ac0872c641919649cf9231d544743e7cccaeb299", "section_path": ["Virtual keyboards", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Place keyboard accessory controls thoughtfully",
+      "statement": {"en": "Place custom controls above the iOS or iPadOS keyboard thoughtfully.", "ja": "iOSまたはiPadOS keyboard上部のcustom controlを慎重に配置する。"},
+      "conditions": ["An input accessory view provides app-specific functionality related to the data people are editing."],
+      "checks": {"automated": [], "manual": ["Do controls above the keyboard support the edited data without crowding or distracting from entry?"]},
+      "testability": "manual",
+      "review_note": "Made the input-accessory context concrete and split relevance, material, and positioning requirements."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0009": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "7f7aa7e5c0c343fdcf371bfe601020fdd1b41b955bbb62f3dfb1f6dc1f904d61", "section_path": ["Virtual keyboards", "Custom input views"]},
+      "title": "Consider a custom input view for app-specific entry",
+      "statement": {"en": "Consider a custom input view when it enhances an app-specific data-entry task.", "ja": "app固有のdata-entry taskを改善する場合はcustom input viewを検討する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["The custom view replaces the system keyboard only while people are in the app."],
+      "checks": {"automated": [], "manual": ["Does the custom input view add task-specific value that the system keyboard doesn't provide?"]},
+      "testability": "manual",
+      "review_note": "Recovered the conditional custom-input capability as MAY without making replacement a default."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0010": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "ddf44c05a63bb76bd34d6c6504812a6a60f2c7485ca85167dec95b5af923d351", "section_path": ["Virtual keyboards", "Best practices"]},
+      "title": "Consider specifying semantic meaning for text input",
+      "statement": {"en": "Consider specifying the semantic meaning of a text input area.", "ja": "text input areaのsemantic meaning指定を検討する。"},
+      "conditions": ["The system can use the meaning to select an appropriate keyboard and refine corrections."],
+      "checks": {"automated": [], "manual": ["Where supported, does the text input's semantic type help the system optimize keyboard choice or corrections?"]},
+      "testability": "manual",
+      "review_note": "Recovered the semantic-input capability as MAY because the source describes a conditional system benefit."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0011": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "c3076ede984a5876bdbfd8ddeeed0d04b8c51728ab5cf2f6e7303f5cee1bf1c2", "section_path": ["Virtual keyboards", "Custom input views"]},
+      "title": "Keep custom input-view entry simple and intuitive",
+      "statement": {"en": "Make data entry with a custom input view simple and intuitive.", "ja": "custom input viewによるdata entryをsimpleかつintuitiveにする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["The app replaces the familiar system keyboard during the task."],
+      "checks": {"automated": [], "manual": ["Can people understand and complete entry in the custom input view without avoidable friction?"]},
+      "testability": "manual",
+      "review_note": "Separated the source's usability expectation from the contextual MUST."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0012": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "c3076ede984a5876bdbfd8ddeeed0d04b8c51728ab5cf2f6e7303f5cee1bf1c2", "section_path": ["Virtual keyboards", "Custom input views"]},
+      "title": "Explain the benefit of a custom input view",
+      "statement": {"en": "Help people understand the benefit of using a custom input view.", "ja": "custom input viewを使うbenefitが理解できるようにする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["People may otherwise wonder why the system keyboard is unavailable in the app."],
+      "checks": {"automated": [], "manual": ["Is the reason for replacing the system keyboard apparent from the task and custom controls?"]},
+      "testability": "manual",
+      "review_note": "Separated benefit communication from simplicity and the contextual MUST."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0013": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "ca0ce13932a13ad026976104f889f88f123ef713b52e330a178581e7b915aa38", "section_path": ["Virtual keyboards", "Custom input views"]},
+      "title": "Play the standard keyboard sound in custom input views",
+      "statement": {"en": "Play the standard keyboard sound while people type in a custom input view.", "ja": "custom input viewで入力中はstandard keyboard soundを再生する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["Use the system input-click behavior so the person's keyboard-sound setting remains effective."],
+      "checks": {"automated": [], "manual": ["Do custom keys provide the familiar input sound while respecting the system keyboard-sound setting?"]},
+      "testability": "manual",
+      "review_note": "Recovered the omitted sound-feedback rule and recorded the user-controlled Settings behavior."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0014": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "72ffcbbcd807768b48c141c1e3022544ec25d095545f506e0686ad1841cc1164", "section_path": ["Virtual keyboards", "Custom keyboards"]},
+      "title": "Consider an app extension for an installable custom keyboard",
+      "statement": {"en": "On iOS, iPadOS, or tvOS, consider an app extension for an installable custom keyboard.", "ja": "iOS、iPadOS、tvOSでinstall可能なcustom keyboardにはapp extensionを検討する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["People need to use the keyboard in place of the standard keyboard across apps."],
+      "checks": {"automated": [], "manual": ["Is an installable app extension appropriate for the keyboard's intended cross-app use?"]},
+      "testability": "manual",
+      "review_note": "Recovered the extension capability as MAY and retained the explicit three-platform scope."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0015": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "b03ff5438048efdee8c9a2f7a358f23e72a896e8b50117ea77f9ea8073a51876", "section_path": ["Virtual keyboards", "Custom keyboards"]},
+      "title": "Use custom keyboards for unique systemwide functionality",
+      "statement": {"en": "Use a custom keyboard for unique keyboard functionality people need systemwide.", "ja": "systemwideに必要なunique keyboard functionalityにはcustom keyboardを使う。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["Examples include a novel input method or a language the system keyboard doesn't support."],
+      "checks": {"automated": [], "manual": ["Does the custom keyboard provide distinctive functionality that remains useful across apps?"]},
+      "testability": "manual",
+      "review_note": "Recovered the systemwide-use criterion and its unique-functionality examples."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0016": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "b03ff5438048efdee8c9a2f7a358f23e72a896e8b50117ea77f9ea8073a51876", "section_path": ["Virtual keyboards", "Custom keyboards"]},
+      "title": "Consider a custom input view for app-only keyboard functionality",
+      "statement": {"en": "Consider a custom input view for keyboard functionality used only within the app.", "ja": "app内だけで使うkeyboard functionalityにはcustom input viewを検討する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["People don't need the custom functionality in other apps."],
+      "checks": {"automated": [], "manual": ["If functionality is app-specific, was a custom input view considered before an installable keyboard extension?"]},
+      "testability": "manual",
+      "review_note": "Separated the conditional in-app alternative without promoting it above MAY."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0017": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "de53d35233d7a30abb036d01f5c6c3f2faec1009b786006950812ad00af5315e", "section_path": ["Virtual keyboards", "Custom keyboards"]},
+      "title": "Avoid help content inside a custom keyboard",
+      "statement": {"en": "Avoid displaying help content within the custom keyboard itself.", "ja": "custom keyboard自体の中にhelp contentを表示しない。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["Put any needed tutorial or usage instructions in the app instead."],
+      "checks": {"automated": [], "manual": ["Is instructional content kept in the app rather than consuming space inside the custom keyboard?"]},
+      "testability": "manual",
+      "review_note": "Recovered the omitted final Avoid directive as a separate atomic rule."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0018": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "c2cd760fde5982490070e40e97251b385c34d8b5f7ce9eca472c8565612e0638", "section_path": ["Virtual keyboards", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Keep keyboard accessory controls relevant to the current task",
+      "statement": {"en": "Ensure custom controls that augment the iOS or iPadOS keyboard are relevant to the current task.", "ja": "iOSまたはiPadOS keyboardを補うcustom controlがcurrent taskに関連するようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The app provides an input accessory view above the keyboard."],
+      "checks": {"automated": [], "manual": ["Does every control above the keyboard directly support the current data-entry task?"]},
+      "testability": "manual",
+      "review_note": "Recovered and retained the explicit conditional Make sure directive as MUST."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0019": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "c2cd760fde5982490070e40e97251b385c34d8b5f7ce9eca472c8565612e0638", "section_path": ["Virtual keyboards", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Apply Liquid Glass to keyboard accessory controls when needed",
+      "statement": {"en": "Apply Liquid Glass to the keyboard accessory view when needed for consistency.", "ja": "consistencyのため必要な場合はkeyboard accessory viewにLiquid Glassを適用する。"},
+      "conditions": ["Other app views use Liquid Glass, or the accessory view otherwise looks out of place above the keyboard."],
+      "exceptions": ["A standard toolbar adopts Liquid Glass automatically."],
+      "checks": {"automated": [], "manual": ["Does the accessory view visually fit the surrounding app and keyboard context?"]},
+      "testability": "manual",
+      "review_note": "Recovered the conditional material treatment as SHOULD without raising it to MUST."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0020": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "c2cd760fde5982490070e40e97251b385c34d8b5f7ce9eca472c8565612e0638", "section_path": ["Virtual keyboards", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use the layout guide and standard padding for accessory controls",
+      "statement": {"en": "Use the keyboard layout guide and standard padding to position keyboard accessory controls.", "ja": "keyboard accessory controlの配置にkeyboard layout guideとstandard paddingを使う。"},
+      "conditions": ["Let the system position the controls as expected within the accessory view."],
+      "checks": {"automated": [], "manual": ["Are accessory controls positioned with the keyboard layout guide and standard padding?"]},
+      "testability": "manual",
+      "review_note": "Recovered the concrete positioning technique as a separate SHOULD rule."
+    },
+    "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0021": {
+      "source": {"source_hash": "0e655983efe00c81fcf1f8b684ff78c733d7115ce47a19919ec3c0fe3083dc60", "source_sentence_hash": "e872cd6906c57206268b600ee755bf79c17efb257d221b5ddd2597470f575245", "section_path": ["Virtual keyboards", "Platform considerations", "watchOS"]},
+      "title": "Consider setting the watchOS text content type",
+      "statement": {"en": "Consider setting a watchOS text field's content type to improve text entry.", "ja": "text entryを改善するためwatchOS text fieldのcontent type設定を検討する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["virtual-keyboards"], "modalities": ["keyboard"]},
+      "conditions": ["The keyboard type itself can't be changed in watchOS; the system may use content type to offer suggestions."],
+      "checks": {"automated": [], "manual": ["Does the text field provide an accurate content type where it can improve watchOS entry suggestions?"]},
+      "testability": "manual",
+      "review_note": "Recovered the watchOS content-type capability as MAY and retained the fixed keyboard-type constraint as context."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

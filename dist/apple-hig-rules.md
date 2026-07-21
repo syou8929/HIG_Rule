@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T18:23:18.821Z. 2334 active rules; 3 deprecated rules.
+Generated 2026-07-21T18:36:56.818Z. 2347 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1671,14 +1671,27 @@ Generated 2026-07-21T18:23:18.821Z. 2334 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-TOP-SHELF-0013 · SHOULD · high** — When a scrolling inset banner needs text, add it to the image. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
 ### virtual-keyboards
 
-- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0001 · SHOULD · low** — Apply the documented Virtual keyboards guidance to choose a keyboard that matches the type of content people are editing. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
-- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0002 · MAY · low** — Evaluate whether customizing the Return key type if it helps clarify the text-entry experience is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
-- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003 · MUST · medium** — Verify that your custom input view makes sense in the context of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
-- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0004 · SHOULD · low** — Make an obvious and easy way to switch between keyboards available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
-- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0005 · AVOID · low** — Exclude duplicating system-provided keyboard features from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
-- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0006 · MAY · low** — Evaluate whether providing a keyboard tutorial in your app is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
-- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0007 · SHOULD · low** — Choose or apply the keyboard layout guide to make the keyboard feel like an integrated part of your interface in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
-- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0008 · SHOULD · low** — Apply the documented Virtual keyboards guidance to place custom controls above the keyboard thoughtfully. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0001 · SHOULD · high** — Choose a virtual keyboard that matches the content people are editing. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0002 · MAY · high** — Consider customizing the Return key type when it clarifies the next text-entry action. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003 · MUST · high** — Ensure a custom input view makes sense in the context of the app. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0004 · SHOULD · high** — Provide an obvious and easy way to switch between custom keyboards. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0005 · AVOID · high** — Avoid duplicating system-provided features in a custom keyboard. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0006 · MAY · high** — Consider providing a custom-keyboard tutorial in the app. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0007 · SHOULD · high** — Use the keyboard layout guide to integrate the keyboard with an iOS or iPadOS interface. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0008 · SHOULD · high** — Place custom controls above the iOS or iPadOS keyboard thoughtfully. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0009 · MAY · high** — Consider a custom input view when it enhances an app-specific data-entry task. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0010 · MAY · high** — Consider specifying the semantic meaning of a text input area. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0011 · SHOULD · high** — Make data entry with a custom input view simple and intuitive. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0012 · SHOULD · high** — Help people understand the benefit of using a custom input view. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0013 · SHOULD · high** — Play the standard keyboard sound while people type in a custom input view. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0014 · MAY · high** — On iOS, iPadOS, or tvOS, consider an app extension for an installable custom keyboard. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0015 · SHOULD · high** — Use a custom keyboard for unique keyboard functionality people need systemwide. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0016 · MAY · high** — Consider a custom input view for keyboard functionality used only within the app. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0017 · AVOID · high** — Avoid displaying help content within the custom keyboard itself. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0018 · MUST · high** — Ensure custom controls that augment the iOS or iPadOS keyboard are relevant to the current task. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0019 · SHOULD · high** — Apply Liquid Glass to the keyboard accessory view when needed for consistency. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0020 · SHOULD · high** — Use the keyboard layout guide and standard padding to position keyboard accessory controls. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0021 · MAY · high** — Consider setting a watchOS text field's content type to improve text entry. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 ### watch-faces
 
 - **HIG-COMPONENTS-WATCH-FACES-0001 · SHOULD · low** — Apply the documented Watch faces guidance to help people discover your app by sharing watch faces that feature your complications. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
