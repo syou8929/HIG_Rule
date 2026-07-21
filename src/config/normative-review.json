@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T12:45:18Z",
+  "reviewed_at": "2026-07-21T13:05:32Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "12a9e655b784d19ec10d9f9ede151ba8538d9af34f31d70152f685277763264c",
@@ -8,9 +8,9 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 112,
+  "reviewed_rule_count": 113,
   "decision_policy": {
-    "must": "Retain MUST for an unqualified Always, Ensure, or Make sure directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
+    "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never or must not prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
@@ -237,6 +237,60 @@
         "Always provide another path for dynamic items available only with a hardware keyboard."
       ],
       "review_note": "Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context."
+    },
+    "HIG-COMPONENTS-WINDOWS-0001": {
+      "title": "Adapt windows fluidly across supported sizes",
+      "statement": {
+        "en": "Ensure windows adapt fluidly across supported sizes for multitasking and multiwindow workflows.",
+        "ja": "multitaskingとmultiwindow workflowのため、windowを対応sizeへ滑らかに適応させる。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Support every window size available in the app's scoped platform context."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Make sure lead and its multitasking and multiwindow scope."
+    },
+    "HIG-COMPONENTS-WINDOWS-0006": {
+      "title": "Prevent iPadOS window controls from overlapping toolbar items",
+      "statement": {
+        "en": "Ensure iPadOS window controls do not overlap toolbar items.",
+        "ja": "iPadOSのwindow controlがtoolbar itemと重ならないようにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "In windowed mode, move leading toolbar buttons inward when window controls appear."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Make sure lead and the windowed-toolbar mitigation."
+    },
+    "HIG-COMPONENTS-WINDOWS-0008": {
+      "title": "Match system-defined macOS window-state appearances",
+      "statement": {
+        "en": "Ensure custom macOS windows use the system-defined appearance for each window state.",
+        "ja": "custom macOS windowで各window stateのsystem-defined appearanceを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Update custom backgrounds and controls when the window changes between main, key, and inactive states."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Make sure lead and state-dependent appearance requirement."
+    },
+    "HIG-COMPONENTS-WINDOWS-0022": {
+      "title": "Support multiple iPadOS windows when presenting a single file",
+      "statement": {
+        "en": "Support multiple windows in an iPadOS app that presents a single file without creating a custom window.",
+        "ja": "custom windowを作らず単一fileを表示するiPadOS appでも、複数windowをsupportする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The app presents one file without creating its own window."
+      ],
+      "review_note": "Recovered and retained the explicit You must requirement from the official iPadOS Tip."
     }
   },
   "additional_rules": [

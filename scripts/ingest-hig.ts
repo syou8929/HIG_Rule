@@ -41,7 +41,7 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
         const candidates: Array<{ fullText: string; sectionPath: string[] }> = [];
         const numericTableSections: string[][] = [];
         const nodes = Array.from(main.querySelectorAll(
-          "h2, h3, h4, p > strong:first-child, li > strong:first-child, li > p:first-child:not(:has(> strong:first-child)), table",
+          "h2, h3, h4, p > strong:first-child, li > strong:first-child, li > p:first-child:not(:has(> strong:first-child)), aside p, table",
         ));
         for (const node of nodes) {
           const value = (node.textContent || "").replace(/\s+/g, " ").trim();
@@ -98,15 +98,22 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
     );
     const unique = new Map<string, SourcePage["guidance_candidates"][number]>();
     for (const candidate of data.candidates) {
-      const shortText = truncateWords(candidate.fullText.replace(/\s*[.:;]+$/, ""), 19);
-      if (wordCount(shortText) < 2) continue;
-      const key = `${candidate.sectionPath.join("/")}::${shortText.toLowerCase()}`;
-      unique.set(key, {
-        text: shortText,
-        section_path: candidate.sectionPath,
-        source_sentence_hash: sha256(candidate.fullText),
-        word_count: wordCount(shortText),
-      });
+      const fragments = [candidate.fullText];
+      for (const match of candidate.fullText.matchAll(/\byou must(?: not)?\b[^.!?]*(?=[.!?]|$)/gi)) {
+        const explicit = (match[0] || "").trim();
+        if (explicit) fragments.push(`${explicit[0]?.toUpperCase()}${explicit.slice(1)}`);
+      }
+      for (const fragment of fragments) {
+        const shortText = truncateWords(fragment.replace(/\s*[.:;]+$/, ""), 19);
+        if (wordCount(shortText) < 2) continue;
+        const key = `${candidate.sectionPath.join("/")}::${shortText.toLowerCase()}`;
+        unique.set(key, {
+          text: shortText,
+          section_path: candidate.sectionPath,
+          source_sentence_hash: sha256(candidate.fullText),
+          word_count: wordCount(shortText),
+        });
+      }
     }
     const usedSections = new Set(Array.from(unique.values()).map((candidate) => candidate.section_path.join("/")));
     const referenceNotes = data.sections

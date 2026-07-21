@@ -28,8 +28,12 @@ test("keeps conditional strength conservative", () => {
   assert.equal(normative("For apps with tabs, consider adding shortcuts").normative_level, "MAY");
   assert.equal(normative("Within a grouped form, consider using a mini switch").normative_level, "MAY");
   assert.equal(normative("In general, don’t replace a checkbox").normative_level, "AVOID");
+  assert.equal(normative("Try to avoid overlapping controls").normative_level, "AVOID");
+  assert.equal(normative("If a modal state applies, consider alternate controls").normative_level, "MAY");
   assert.equal(normative("Prefer the standard control").normative_level, "SHOULD");
   assert.equal(normative("Never hide the recovery action").normative_level, "MUST_NOT");
+  assert.equal(normative("You must support multiple windows").normative_level, "MUST");
+  assert.equal(normative("You must not hide the recovery action").normative_level, "MUST_NOT");
 });
 
 test("paraphrases common imperative leads", () => {
@@ -66,6 +70,20 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Within a grouped form, consider using a mini switch", section_path: [], source_sentence_hash: "u".repeat(64), word_count: 9 }), true);
   assert.equal(isActionable({ text: "In general, don’t replace a checkbox", section_path: [], source_sentence_hash: "v".repeat(64), word_count: 6 }), true);
   assert.equal(isActionable({ text: "To present one setting, prefer a checkbox", section_path: [], source_sentence_hash: "w".repeat(64), word_count: 7 }), true);
+  assert.equal(isActionable({ text: "Try to prevent window clipping", section_path: [], source_sentence_hash: "x".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "If a modal state applies, consider alternate controls", section_path: [], source_sentence_hash: "y".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Feature new content", section_path: [], source_sentence_hash: "z".repeat(64), word_count: 3 }), true);
+  assert.equal(isActionable({ text: "Personalize people’s favorite content", section_path: [], source_sentence_hash: "0".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Showcase compelling dynamic content", section_path: [], source_sentence_hash: "1".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "If fallback content is unavailable, supply one image", section_path: [], source_sentence_hash: "2".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "If you need text, add it to the image", section_path: [], source_sentence_hash: "3".repeat(64), word_count: 9 }), true);
+  assert.equal(paraphrase("If you need text, add it to the image", "Top Shelf").en, "When you need text, add it to the image.");
+  assert.equal(isActionable({ text: "Retain the glass background", section_path: [], source_sentence_hash: "4".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "In general, use dynamic scaling", section_path: [], source_sentence_hash: "5".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Take advantage of the default appearance", section_path: [], source_sentence_hash: "6".repeat(64), word_count: 6 }), true);
+  assert.equal(paraphrase("In general, use dynamic scaling", "Windows").en, "Generally, use dynamic scaling.");
+  assert.equal(isActionable({ text: "You must support multiple windows", section_path: [], source_sentence_hash: "7".repeat(64), word_count: 5 }), true);
+  assert.equal(paraphrase("You must support multiple windows", "Windows").en, "Require support multiple windows.");
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 

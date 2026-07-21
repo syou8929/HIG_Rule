@@ -1,8 +1,8 @@
 import type { GuidanceCandidate, NormativeLevel, Portability, Rule, SourcePage } from "./types.js";
 import { slugify } from "./util.js";
 
-const ACTIONABLE = /^(accurately|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|bear in mind|break up|carefully consider|change|choose|clearly|communicate|confirm|consider|convey|create|defer|define|describe|design|determine|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|follow|give|help|identify|in general, avoid|include|integrate|keep|let|make|maintain|match|minimize|never|offer|optimize|place|position|prefer|present|preserve|prioritize|provide|reduce|refer to|remove|replacing|represent|require|reserve|respect|respond|show|simplify|strive|support|test|tightening|track|tracking|treat|use|verify|warn|write)\b/i;
-const CONTEXTUAL_ACTIONABLE = /^(because\b.+\bensure\b|for\b.+\bconsider\b|in general,\s*(?:do not|don['’]t)\b|outside of\b.+\buse\b|to\b.+,\s*prefer\b|within\b.+\bconsider\b)/i;
+const ACTIONABLE = /^(accurately|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|bear in mind|break up|carefully consider|change|choose|clearly|communicate|confirm|consider|convey|create|defer|define|describe|design|determine|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|identify|in general, avoid|include|integrate|keep|let|make|maintain|match|minimize|must|never|offer|optimize|personalize|place|position|prefer|present|preserve|prioritize|provide|reduce|refer to|remove|replacing|represent|require|reserve|respect|respond|retain|show|showcase|simplify|strive|support|take advantage|test|tightening|track|tracking|treat|try to|use|verify|warn|write|you must)\b/i;
+const CONTEXTUAL_ACTIONABLE = /^(because\b.+\bensure\b|for\b.+\bconsider\b|if\b.+,\s*(?:add|consider|supply)\b|in general,\s*(?:do not|don['’]t|use)\b|outside of\b.+\buse\b|to\b.+,\s*prefer\b|within\b.+\bconsider\b)/i;
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
@@ -12,10 +12,10 @@ export function isActionable(candidate: GuidanceCandidate): boolean {
 
 export function normative(text: string): Pick<Rule, "normative_level" | "confidence" | "review_required" | "polarity" | "severity"> {
   const value = text.toLowerCase();
-  if (/^(never|must not)\b/.test(value)) return { normative_level: "MUST_NOT", confidence: "medium", review_required: true, polarity: "prohibit", severity: "error" };
-  if (/^(avoid|avoiding|do not|don't|don’t|in general, avoid|in general,\s*(?:do not|don't|don’t)|as much as possible,\s*avoid)\b/.test(value)) return { normative_level: "AVOID", confidence: "low", review_required: true, polarity: "discourage", severity: "warning" };
-  if (/^(carefully consider|consider|may)\b/.test(value) || /^(?:for|within)\b.+\bconsider\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
-  if (/^(always|ensure|make sure|must|required)\b/.test(value)) return { normative_level: "MUST", confidence: "medium", review_required: true, polarity: "require", severity: "error" };
+  if (/^(never|must not|you must not)\b/.test(value)) return { normative_level: "MUST_NOT", confidence: "medium", review_required: true, polarity: "prohibit", severity: "error" };
+  if (/^(avoid|avoiding|do not|don't|don’t|in general, avoid|in general,\s*(?:do not|don't|don’t)|as much as possible,\s*avoid|try to avoid)\b/.test(value)) return { normative_level: "AVOID", confidence: "low", review_required: true, polarity: "discourage", severity: "warning" };
+  if (/^(carefully consider|consider|may)\b/.test(value) || /^(?:for|if|within)\b.+\bconsider\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
+  if (/^(always|ensure|make sure|must|required|you must)\b/.test(value)) return { normative_level: "MUST", confidence: "medium", review_required: true, polarity: "require", severity: "error" };
   return { normative_level: "SHOULD", confidence: "low", review_required: true, polarity: "recommend", severity: "warning" };
 }
 
@@ -46,6 +46,22 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
       ja: `${withinConsider[1] ?? "該当範囲"}では${withinConsider[2] ?? "記載された選択肢"}を検討する。`,
     };
   }
+  const conditionalConsider = candidate.match(/^if (.+?), consider (.+)$/i);
+  if (conditionalConsider) {
+    return {
+      en: `When ${lowerFirst(conditionalConsider[1] ?? "the documented condition applies")}, consider ${lowerFirst(conditionalConsider[2] ?? "the documented option")}.`,
+      ja: `${conditionalConsider[1] ?? "該当条件"}場合は${conditionalConsider[2] ?? "記載された選択肢"}を検討する。`,
+    };
+  }
+  const conditionalAction = candidate.match(/^if (.+?), (add|supply) (.+)$/i);
+  if (conditionalAction) {
+    const verb = lowerFirst(conditionalAction[2] ?? "apply");
+    const object = lowerFirst(conditionalAction[3] ?? "the documented guidance");
+    return {
+      en: `When ${lowerFirst(conditionalAction[1] ?? "the documented condition applies")}, ${verb} ${object}.`,
+      ja: `${conditionalAction[1] ?? "該当条件"}場合は${object}を${verb}する。`,
+    };
+  }
   const outsideUse = candidate.match(/^outside of (.+?), use (.+)$/i);
   if (outsideUse) {
     return {
@@ -68,10 +84,18 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
       ja: `可能な限り${value}。`,
     };
   }
+  const generalUse = candidate.match(/^in general,\s*use (.+)$/i);
+  if (generalUse) {
+    const value = generalUse[1] ?? "the documented option";
+    return {
+      en: `Generally, use ${lowerFirst(value)}.`,
+      ja: `通常は${value}を使う。`,
+    };
+  }
   const patterns: Array<{ match: RegExp; en: (value: string) => string; ja: (value: string) => string }> = [
     { match: /^support\b/i, en: (v) => `Ensure the experience accommodates ${lowerFirst(v)}.`, ja: (v) => `${v}を利用できる設計にする。` },
     { match: /^use\b/i, en: (v) => `Choose or apply ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況では${v}を採用する。` },
-    { match: /^(avoid|avoiding|do not|don['’]t|never|in general, avoid|in general,\s*(?:do not|don['’]t))\b/i, en: (v) => `Exclude ${lowerFirst(v)} from the applicable experience.`, ja: (v) => `該当する体験では${v}を避ける。` },
+    { match: /^(avoid|avoiding|do not|don['’]t|never|must not|you must not|in general, avoid|in general,\s*(?:do not|don['’]t)|try to avoid)\b/i, en: (v) => `Exclude ${lowerFirst(v)} from the applicable experience.`, ja: (v) => `該当する体験では${v}を避ける。` },
     { match: /^bear in mind\b/i, en: (v) => `Account for ${lowerFirst(v)} in the design.`, ja: (v) => `${v}を設計上考慮する。` },
     { match: /^break up\b/i, en: (v) => `Divide ${lowerFirst(v)} into focused steps.`, ja: (v) => `${v}を集中しやすい手順に分割する。` },
     { match: /^identify\b/i, en: (v) => `Determine ${lowerFirst(v)} explicitly.`, ja: (v) => `${v}を明確に特定する。` },
@@ -80,11 +104,18 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
     { match: /^clearly\b/i, en: (v) => `Clearly ${lowerFirst(v)}.`, ja: (v) => `${v}を明確にする。` },
     { match: /^accurately\b/i, en: (v) => `Accurately ${lowerFirst(v)}.`, ja: (v) => `${v}を正確に行う。` },
     { match: /^change\b/i, en: (v) => `Change ${lowerFirst(v)}.`, ja: (v) => `${v}を変更する。` },
+    { match: /^feature\b/i, en: (v) => `Feature ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を取り上げる。` },
+    { match: /^personalize\b/i, en: (v) => `Personalize ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}をpersonalizeする。` },
+    { match: /^showcase\b/i, en: (v) => `Showcase ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を目立たせる。` },
     { match: /^refer to\b/i, en: (v) => `Refer to ${lowerFirst(v)}.`, ja: (v) => `${v}という名称で参照する。` },
     { match: /^integrate\b/i, en: (v) => `Connect the experience with ${lowerFirst(v)}.`, ja: (v) => `${v}と体験を連携する。` },
     { match: /^represent\b/i, en: (v) => `Represent ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を表現する。` },
     { match: /^require\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
+    { match: /^(must|you must)\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
     { match: /^reserve\b/i, en: (v) => `Reserve ${lowerFirst(v)} for the documented purpose.`, ja: (v) => `${v}を記載された目的に限定する。` },
+    { match: /^retain\b/i, en: (v) => `Retain ${lowerFirst(v)}.`, ja: (v) => `${v}を維持する。` },
+    { match: /^take advantage\b/i, en: (v) => `Use ${lowerFirst(v)}.`, ja: (v) => `${v}を活用する。` },
+    { match: /^try to\b/i, en: (v) => `Try to ${lowerFirst(v)}.`, ja: (v) => `${v}を試みる。` },
     { match: /^tightening\b/i, en: (v) => `Use tighter ${lowerFirst(v)}.`, ja: (v) => `${v}をより引き締める。` },
     { match: /^tracking\b/i, en: (v) => `Keep ${lowerFirst(v)} synchronized.`, ja: (v) => `${v}を同期させる。` },
     { match: /^replacing\b/i, en: (v) => `Substitute ${lowerFirst(v)}.`, ja: (v) => `${v}へ置き換える。` },

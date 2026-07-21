@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
+Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -51,6 +51,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0018 · SHOULD · low** — Choose or apply spatial Audio to immerse players in your game’s soundscape in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0019 · SHOULD · low** — Connect the experience with device features into your layout. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0020 · SHOULD · low** — Connect the experience with game Center to help players discover your game across their devices and connect with their friends. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0021 · SHOULD · low** — Use of Apple technologies to enable unique gameplay mechanics. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 ### designing-for-ios
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001 · SHOULD · low** — Apply the documented Designing for iOS guidance to help people concentrate on primary tasks and content by limiting the number of onscreen controls while making secondary details. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
@@ -58,6 +59,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001 · SHOULD · low** — Choose or apply viewing distance and input mode to help you determine the size and density of the onscreen content you in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
 - **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002 · SHOULD · low** — Preserve people’s ability to use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil, and consider supporting unique interactions that. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003 · SHOULD · low** — Use of the large display to elevate the content people care about, minimizing modal interfaces and full-screen transitions,. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))
 ### designing-for-macos
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0001 · SHOULD · low** — Preserve people’s ability to resize, hide, show, and move your windows to fit their work style and device configuration, and support. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
@@ -86,6 +88,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0005 · SHOULD · low** — Choose or apply notifications to deliver timely, high-value information and let people perform important actions without opening your app in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
 - **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0006 · SHOULD · low** — Choose or apply background content such as color to convey useful supporting information, and use materials to illustrate hierarchy and a in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
 - **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0007 · SHOULD · low** — Apply the documented Designing for watchOS guidance to design your app to function independently, complementing your notifications and complications by providing additional details and functionality. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0008 · SHOULD · low** — Personalize the experience by proactively anticipating people’s needs and using on-device data to provide actionable content that’s relevant in in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))
 
 ## foundations
 
@@ -148,9 +151,9 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-APP-ICONS-0013 · SHOULD · low** — Apply the documented App icons guidance to design dark and tinted icons that feel at home beside system app icons and widgets. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - **HIG-FOUNDATIONS-APP-ICONS-0014 · SHOULD · low** — Choose or apply your light app icon as the basis for your dark icon in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - **HIG-FOUNDATIONS-APP-ICONS-0015 · MAY · low** — Evaluate whether offering alternate app icons is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
-- **HIG-FOUNDATIONS-APP-ICONS-0016 · SHOULD · low** — Apply the documented App icons guidance to include a safe zone to ensure the system doesn’t crop your content. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
-- **HIG-FOUNDATIONS-APP-ICONS-0017 · AVOID · low** — Exclude adding a shape that’s intended to look like a hole or concave area to the background layer from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
-- **HIG-FOUNDATIONS-APP-ICONS-0018 · AVOID · low** — Exclude using black for your icon’s background from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- **HIG-FOUNDATIONS-APP-ICONS-0016 · SHOULD · high** — Include a safe zone that keeps tvOS app-icon content visible during focus effects. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- **HIG-FOUNDATIONS-APP-ICONS-0017 · AVOID · high** — Avoid shapes intended to look concave or hollow in a visionOS app-icon background. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- **HIG-FOUNDATIONS-APP-ICONS-0018 · AVOID · high** — Avoid using black for a watchOS app-icon background. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - **HIG-FOUNDATIONS-APP-ICONS-0019 · SHOULD · low** — Present p3 (wide-gamut color in iOS, iPadOS, macOS, tvOS, and watchOS only) in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 ### branding
 
@@ -210,6 +213,8 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-ICONS-0009 · MAY · low** — Evaluate whether reducing complexity in the small versions of your document icon is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0010 · AVOID · low** — Exclude placing important content in the top-right corner of your background fill from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0011 · SHOULD · low** — Define a margin that measures about 10% of the image canvas and keep most of the image within it explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0012 · MAY · low** — When a familiar object can convey a document’s type or its connection with your app, consider creating a center. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0013 · SHOULD · low** — When necessary, add padding to a custom interface icon to achieve optical alignment. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 ### images
 
 - **HIG-FOUNDATIONS-IMAGES-0001 · SHOULD · low** — Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
@@ -289,6 +294,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-LAYOUT-0022 · SHOULD · low** — Apply the documented Layout guidance to design your content to extend from one edge of the screen to the other. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0023 · AVOID · low** — Exclude placing more than two or three controls side by side in your interface from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0024 · SHOULD · low** — Ensure the experience accommodates autorotation in views people might want to show others. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0025 · SHOULD · low** — Use of progressive disclosure to help people discover content that’s currently hidden. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 ### materials
 
 - **HIG-FOUNDATIONS-MATERIALS-0001 · AVOID · low** — Exclude use Liquid Glass in the content layer from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
@@ -303,6 +309,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-MATERIALS-0010 · SHOULD · low** — Choose or apply uIVibrancyEffectStyle.label for standard text in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0011 · SHOULD · low** — Choose or apply uIVibrancyEffectStyle.secondaryLabel for descriptive text like footnotes and subtitles in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0012 · SHOULD · low** — Choose or apply uIVibrancyEffectStyle.tertiaryLabel for inactive elements, and only when text doesn’t need high legibility in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0013 · MAY · low** — When the underlying content is bright, consider adding a dark dimming layer of 35% opacity. For developer guidance, see. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 ### motion
 
 - **HIG-FOUNDATIONS-MOTION-0001 · SHOULD · low** — Apply the documented Motion guidance to make motion optional. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
@@ -388,6 +395,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0012 · SHOULD · low** — Maintain text facing people as much as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0013 · SHOULD · low** — Keep values synchronized. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0014 · AVOID · low** — Exclude light font weights from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0015 · MAY · low** — When you need to display text that’s not on a background, consider making it bold to improve legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 ### writing
 
 - **HIG-FOUNDATIONS-WRITING-0001 · SHOULD · low** — Apply the documented Writing guidance to match your tone to the context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
@@ -490,6 +498,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-LAUNCHING-0002 · AVOID · low** — Exclude including text on your launch screen, even if your first screen displays text from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - **HIG-PATTERNS-LAUNCHING-0003 · AVOID · low** — Exclude advertise from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - **HIG-PATTERNS-LAUNCHING-0004 · MAY · low** — Evaluate whether launching in the Shared Space even if your app is fully immersive is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0005 · MAY · low** — When you need a splash screen, consider displaying it at the beginning of your onboarding flow. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 ### live-viewing-apps
 
 - **HIG-PATTERNS-LIVE-VIEWING-APPS-0001 · SHOULD · low** — Preserve people’s ability to tap once — or not at all — to start playback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
@@ -510,6 +519,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-LIVE-VIEWING-APPS-0016 · SHOULD · low** — Apply the documented Live-viewing apps guidance to make it easy for people to identify the thumbnail that represents the currently playing content by, for example, badging. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - **HIG-PATTERNS-LIVE-VIEWING-APPS-0017 · SHOULD · low** — Apply the documented Live-viewing apps guidance to match the categories in the content footer to those in your electronic program guide (for related guidance, see EPG. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - **HIG-PATTERNS-LIVE-VIEWING-APPS-0018 · SHOULD · low** — Apply the documented Live-viewing apps guidance to design a simple, predictable way for people to invoke and dismiss the content footer — for example, if swiping. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0019 · SHOULD · low** — Feature live content prominently and make it easy to access in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 ### loading
 
 - **HIG-PATTERNS-LOADING-0001 · SHOULD · low** — Present something as soon as possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
@@ -569,6 +579,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-OFFERING-HELP-0012 · MAY · low** — Evaluate whether offering context-sensitive tooltips is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0013 · AVOID · high** — Avoid repeating a control's name in its tooltip. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0014 · SHOULD · low** — Define rules to help ensure your tips reach the intended audience explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0015 · MAY · low** — When there’s an image or symbol that people associate with the feature, consider including it in the tip, and. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 ### onboarding
 
 - **HIG-PATTERNS-ONBOARDING-0001 · MAY · low** — Evaluate whether providing a collection of context-specific tips instead of a single onboarding flow is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
@@ -576,6 +587,8 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-ONBOARDING-0003 · AVOID · low** — Exclude let large downloads hinder onboarding from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 - **HIG-PATTERNS-ONBOARDING-0004 · AVOID · low** — Exclude displaying licensing details within your onboarding flow from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 - **HIG-PATTERNS-ONBOARDING-0005 · SHOULD · low** — Favor letting people experience your app or game before prompting them for ratings or purchases when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0006 · MAY · low** — When it makes sense to offer a separate tutorial, consider making it optional. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0007 · MAY · low** — When your app or game needs access to private data or resources before it can function, consider integrating the. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 ### playing-audio
 
 - **HIG-PATTERNS-PLAYING-AUDIO-0001 · SHOULD · low** — Choose or apply the system-provided volume view to let people make audio adjustments in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
@@ -628,6 +641,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-PLAYING-VIDEO-0023 · SHOULD · low** — Choose or apply the recommended sizes and encoding values for media assets in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - **HIG-PATTERNS-PLAYING-VIDEO-0024 · AVOID · low** — Exclude creating a poster image that looks like a system control from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - **HIG-PATTERNS-PLAYING-VIDEO-0025 · MAY · low** — Evaluate whether creating a poster image that represents a video clip’s contents is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- **HIG-PATTERNS-PLAYING-VIDEO-0026 · MAY · low** — When people need to access playback options or content-specific information in your tvOS app, consider adding a transport control. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 ### printing
 
 - **HIG-PATTERNS-PRINTING-0001 · SHOULD · low** — Apply the documented Printing guidance to make printing discoverable. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
@@ -636,6 +650,8 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-PRINTING-0004 · MAY · low** — Evaluate whether storing modified settings with the document is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - **HIG-PATTERNS-PRINTING-0005 · SHOULD · low** — Present a printing option only when it’s possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - **HIG-PATTERNS-PRINTING-0006 · SHOULD · low** — Present relevant printing options in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0007 · MAY · low** — When your macOS app offers app-specific print options that the system doesn’t offer, consider creating a custom category for. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- **HIG-PATTERNS-PRINTING-0008 · MAY · low** — When your app supports document-specific page settings, consider presenting a page setup dialog. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 ### ratings-and-reviews
 
 - **HIG-PATTERNS-RATINGS-AND-REVIEWS-0001 · SHOULD · low** — Apply the documented Ratings and reviews guidance to ask for a rating only after people have demonstrated engagement with your app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
@@ -775,6 +791,8 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-BUTTONS-0027 · SHOULD · medium** — Choose or apply toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0028 · SHOULD · high** — Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0029 · SHOULD · low** — Apply the documented Buttons guidance to help buttons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0030 · SHOULD · low** — Try to associate familiar actions with familiar icons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0031 · SHOULD · low** — Generally, use a button that has a prominent visual style for the most likely action in a view. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 ### charts
 
 - **HIG-COMPONENTS-CHARTS-0001 · SHOULD · low** — Apply the documented Charts guidance to choose a mark type based on the information you want to communicate about the data. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
@@ -895,6 +913,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-IMAGE-VIEWS-0002 · SHOULD · low** — Apply the documented Image views guidance to aim to use a consistent size for all images in an animated sequence. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - **HIG-COMPONENTS-IMAGE-VIEWS-0003 · SHOULD · low** — Choose or apply an image button instead of an image view to make a clickable image in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - **HIG-COMPONENTS-IMAGE-VIEWS-0004 · SHOULD · low** — Choose or apply swiftUI to create animations when possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0005 · MAY · low** — When you want to display an icon in your interface, consider using a symbol or interface icon instead of. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 ### labels
 
 - **HIG-COMPONENTS-LABELS-0001 · SHOULD · low** — Choose or apply a label to display a small amount of text that people don’t need to edit in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
@@ -952,6 +971,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0031 · MAY · high** — Carefully consider whether a custom background color or opacity improves the Lock Screen Live Activity. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0032 · MAY · high** — Carefully consider whether buttons or toggles belong in a custom Live Activity layout used in CarPlay. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0033 · MAY · high** — Carefully consider whether buttons or toggles belong in a custom watchOS Live Activity layout. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- **HIG-COMPONENTS-LIVE-ACTIVITIES-0034 · AVOID · high** — Avoid overlapping elements during Live Activity content transitions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 ### lockups
 
 - **HIG-COMPONENTS-LOCKUPS-0001 · SHOULD · low** — Apply the documented Lockups guidance to allow adequate space between lockups. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
@@ -1024,6 +1044,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-OUTLINE-VIEWS-0007 · SHOULD · low** — Preserve people’s ability to edit data if it makes sense in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - **HIG-COMPONENTS-OUTLINE-VIEWS-0008 · MAY · low** — Evaluate whether using a centered ellipsis to truncate cell text instead of clipping it is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - **HIG-COMPONENTS-OUTLINE-VIEWS-0009 · MAY · low** — Evaluate whether offering a search field to help people find values quickly in a lengthy outline view is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- **HIG-COMPONENTS-OUTLINE-VIEWS-0010 · SHOULD · low** — Retain people’s expansion choices. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 ### page-controls
 
 - **HIG-COMPONENTS-PAGE-CONTROLS-0001 · SHOULD · low** — Choose or apply page controls to represent movement between an ordered list of pages in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
@@ -1176,6 +1197,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-SIDEBARS-0004 · MAY · high** — Consider using a tab bar first in iOS or iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0005 · MAY · high** — Consider automatically hiding or revealing a macOS sidebar as its window resizes. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0006 · AVOID · high** — Avoid placing critical information or actions at the bottom of a macOS sidebar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0007 · MAY · low** — When your app’s hierarchy is deep, consider using a sidebar within a tab in a tab bar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 ### sliders
 
 - **HIG-COMPONENTS-SLIDERS-0001 · SHOULD · low** — Choose or apply familiar slider directions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
@@ -1228,6 +1250,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-TAB-BARS-0011 · SHOULD · low** — Preserve people’s ability to customize the tab bar. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - **HIG-COMPONENTS-TAB-BARS-0012 · SHOULD · low** — Apply the documented Tab bars guidance to be aware of tab bar scrolling behaviors. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - **HIG-COMPONENTS-TAB-BARS-0013 · SHOULD · low** — Apply the documented Tab bars guidance to choose a font for tab items, including a different font for the selected item. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0014 · MAY · low** — When it makes sense in your app, consider using a sidebar within a tab. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 ### tab-views
 
 - **HIG-COMPONENTS-TAB-VIEWS-0001 · SHOULD · high** — Use a macOS tab view for closely related content areas. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
@@ -1325,24 +1348,31 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-TOOLBARS-0014 · SHOULD · low** — Maintain consistent groupings and placement across platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - **HIG-COMPONENTS-TOOLBARS-0015 · SHOULD · low** — Apply the documented Toolbars guidance to minimize the number of groups. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - **HIG-COMPONENTS-TOOLBARS-0016 · SHOULD · low** — Maintain actions with text labels separate. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0017 · SHOULD · low** — Apply the documented Toolbars guidance to prioritize only the most important items for inclusion in the main toolbar area. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0018 · SHOULD · low** — Choose or apply a large title to help people stay oriented as they navigate and scroll in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0019 · MAY · low** — Evaluate whether combining a toolbar with a tab bar is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0020 · SHOULD · low** — Apply the documented Toolbars guidance to make every toolbar item available as a command in the menu bar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0021 · SHOULD · low** — Favor using a system-provided toolbar when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0022 · AVOID · low** — Exclude creating a vertical toolbar from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0023 · AVOID · low** — Exclude using a pull-down menu in a toolbar from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0024 · SHOULD · low** — Choose or apply a scrolling toolbar button for an important action that isn’t a primary app function in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0017 · SHOULD · high** — Prioritize only essential iOS items in the main toolbar; move additional items to More. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0018 · SHOULD · high** — Use an iOS large title to preserve orientation during navigation and scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0019 · MAY · high** — Consider sharing the iPadOS top bar between a toolbar and tab bar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0020 · SHOULD · high** — Expose every macOS toolbar item as a menu-bar command. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0021 · SHOULD · high** — Prefer the system-provided visionOS toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0022 · AVOID · high** — Avoid vertical toolbars in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0023 · AVOID · high** — Avoid pull-down menus in visionOS toolbars. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0024 · SHOULD · high** — Use a watchOS scrolling toolbar button for an important action that is not a primary app function. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0025 · SHOULD · high** — Keep visionOS windows wide enough to preserve reliable access to every toolbar control. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0026 · MAY · high** — When a visionOS app enters a modal state, consider context-specific toolbar controls. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 ### top-shelf
 
-- **HIG-COMPONENTS-TOP-SHELF-0001 · SHOULD · low** — Apply the documented Top Shelf guidance to help people jump right into your content. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
-- **HIG-COMPONENTS-TOP-SHELF-0002 · AVOID · low** — Exclude showing advertisements or prices from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
-- **HIG-COMPONENTS-TOP-SHELF-0003 · AVOID · low** — Exclude implying interactivity in a static image from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
-- **HIG-COMPONENTS-TOP-SHELF-0004 · SHOULD · low** — Make a title available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
-- **HIG-COMPONENTS-TOP-SHELF-0005 · SHOULD · low** — Make a title that identifies the currently playing content available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
-- **HIG-COMPONENTS-TOP-SHELF-0006 · SHOULD · low** — Make enough content to constitute a complete row available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
-- **HIG-COMPONENTS-TOP-SHELF-0007 · SHOULD · low** — Apply the documented Top Shelf guidance to be aware of additional scaling when combining image sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
-- **HIG-COMPONENTS-TOP-SHELF-0008 · SHOULD · low** — Make three to eight images available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0001 · SHOULD · high** — Use Top Shelf to give people a direct path to relevant content. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0002 · AVOID · high** — Avoid emphasizing advertisements or prices in Top Shelf. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0003 · AVOID · high** — Avoid implying interactivity in a static Top Shelf image. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0004 · SHOULD · high** — Provide a succinct title for a Top Shelf carousel-actions item. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0005 · SHOULD · high** — Provide a carousel-details title that identifies the currently playing content. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0006 · SHOULD · high** — Provide enough content to fill a complete Top Shelf sectioned content row. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0007 · SHOULD · high** — Account for automatic height scaling when mixing Top Shelf image sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0008 · SHOULD · high** — Provide three to eight images in a Top Shelf scrolling inset banner. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0009 · SHOULD · high** — Feature new or upcoming content in Top Shelf. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0010 · SHOULD · high** — Personalize the favorite content an app supplies to Top Shelf. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0011 · SHOULD · high** — Showcase compelling dynamic content that encourages people to explore Top Shelf. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0012 · SHOULD · high** — When full-screen Top Shelf content is unavailable, supply at least one static fallback image. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
+- **HIG-COMPONENTS-TOP-SHELF-0013 · SHOULD · high** — When a scrolling inset banner needs text, add it to the image. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
 ### virtual-keyboards
 
 - **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0001 · SHOULD · low** — Apply the documented Virtual keyboards guidance to choose a keyboard that matches the type of content people are editing. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
@@ -1405,26 +1435,31 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-WIDGETS-0038 · SHOULD · low** — Apply the documented Widgets guidance to choose the glass style for information-rich widgets. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - **HIG-COMPONENTS-WIDGETS-0039 · SHOULD · low** — Make a colorful background that conveys meaning available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - **HIG-COMPONENTS-WIDGETS-0040 · SHOULD · low** — Apply the documented Widgets guidance to encourage the system to display or elevate the position of your watchOS widget in the Smart Stack. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- **HIG-COMPONENTS-WIDGETS-0041 · SHOULD · low** — Generally, use standard margins to ensure legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 ### windows
 
-- **HIG-COMPONENTS-WINDOWS-0001 · MUST · medium** — Verify that that your windows adapt fluidly to different sizes to support multitasking and multiwindow workflows. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0001 · MUST · high** — Ensure windows adapt fluidly across supported sizes for multitasking and multiwindow workflows. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0002 · SHOULD · low** — Apply the documented Windows guidance to choose the right moment to open a new window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0003 · MAY · low** — Evaluate whether providing the option to view content in a new window is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0004 · AVOID · low** — Exclude creating custom window UI from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0005 · SHOULD · low** — Choose or apply the term window in user-facing content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0006 · MUST · medium** — Verify that window controls don’t overlap toolbar items. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0007 · MAY · low** — Evaluate whether letting people use a gesture to open content in a new window is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0008 · MUST · medium** — Verify that custom windows use the system-defined appearances. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0009 · AVOID · low** — Exclude putting critical information or actions in a bottom bar, because people often relocate a window in a way from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0010 · SHOULD · low** — Favor using a window to present a familiar interface and to support familiar tasks when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0011 · SHOULD · low** — Apply the documented Windows guidance to choose an initial window size that minimizes empty areas within it. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0012 · SHOULD · low** — Apply the documented Windows guidance to aim for an initial shape that suits a window’s content. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0013 · SHOULD · low** — Apply the documented Windows guidance to choose a minimum and maximum size for each window to help keep your content looking great. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0014 · SHOULD · low** — Apply the documented Windows guidance to minimize the depth of 3D content you display in a window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0015 · SHOULD · low** — Favor using a volume to display rich, 3D content when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0016 · SHOULD · low** — Apply the documented Windows guidance to place 2D content so it looks good from multiple angles. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0017 · MAY · low** — Evaluate whether offering high-value content in an ornament is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0018 · SHOULD · low** — Apply the documented Windows guidance to choose an alignment that supports the way people interact with your volume. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0006 · MUST · high** — Ensure iPadOS window controls do not overlap toolbar items. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0007 · MAY · high** — Consider letting people use a gesture to open iPadOS content in a new window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0008 · MUST · high** — Ensure custom macOS windows use the system-defined appearance for each window state. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0009 · AVOID · high** — Avoid placing critical information or actions in a macOS window's bottom bar. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0010 · SHOULD · high** — Prefer a visionOS window for familiar interfaces and tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0011 · SHOULD · high** — Choose an initial visionOS window size that minimizes empty areas. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0012 · SHOULD · high** — Choose an initial visionOS window shape that suits its content. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0013 · SHOULD · high** — Choose minimum and maximum sizes that keep each visionOS window usable. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0014 · SHOULD · high** — Minimize the depth of 3D content displayed in a visionOS window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0015 · SHOULD · high** — Prefer a visionOS volume for rich 3D content. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0016 · SHOULD · high** — Place 2D content in a visionOS volume so it works from multiple viewing angles. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0017 · MAY · high** — Consider presenting high-value visionOS volume content in an ornament. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0018 · SHOULD · high** — Choose a visionOS volume alignment that supports its interaction pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0019 · SHOULD · high** — Retain the default glass background in a visionOS window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0020 · SHOULD · high** — Generally use dynamic scaling for visionOS volume content. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0021 · SHOULD · high** — Use the default visionOS baseplate appearance to help people discern a volume's edges. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0022 · MUST · high** — Support multiple windows in an iPadOS app that presents a single file without creating a custom window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 
 ## inputs
 
@@ -1496,6 +1531,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0003 · MUST · medium** — Verify that that focus moves through your custom views in ways that make sense. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0004 · AVOID · low** — Exclude displaying a pointer from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0005 · SHOULD · low** — Apply the documented Focus and selection guidance to design your interface to accommodate components in various focus states. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0006 · SHOULD · low** — Generally, use a focus ring for a text or search field, but use a highlight in a list. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 ### game-controls
 
 - **HIG-INPUTS-GAME-CONTROLS-0001 · SHOULD · low** — Apply the documented Game controls guidance to place virtual buttons where they’re easy to access. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
@@ -1712,6 +1748,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0029 · SHOULD · low** — Favor the AR badge to the glyph-only badge when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0030 · SHOULD · low** — Choose or apply badging only when your app contains a mixture of objects that can be viewed in AR and objects in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0031 · SHOULD · low** — Maintain badge placement consistent and clear. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0032 · MAY · low** — When additional information or controls are necessary, consider displaying them in screen space. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 ### carekit
 
 - **HIG-TECHNOLOGIES-CAREKIT-0001 · SHOULD · low** — Make a coherent privacy policy available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
@@ -1771,6 +1808,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-GAME-CENTER-0022 · SHOULD · low** — Make a way for players to view the current party code in your game available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0023 · SHOULD · low** — Apply the documented Game Center guidance to allow players to enter a party code manually. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0024 · SHOULD · low** — Determine a display order explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0025 · SHOULD · low** — Use of leaderboard sets for multiple leaderboards. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 ### generative-ai
 
 - **HIG-TECHNOLOGIES-GENERATIVE-AI-0001 · SHOULD · low** — Apply the documented Generative AI guidance to design your experience responsibly. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
@@ -1998,6 +2036,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-MAPS-0017 · SHOULD · low** — Choose or apply adequate padding to separate the logo and link from the map boundaries and your custom controls. For example, in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0018 · AVOID · low** — Exclude causing the logo and link to move with your interface. It’s best when the Apple logo and legal from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0019 · SHOULD · low** — Clearly identify elements that people select. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- **HIG-TECHNOLOGIES-MAPS-0020 · MAY · low** — When you want to display custom information that’s related to standard map features, consider making them independently selectable. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 ### nfc
 
 - **HIG-TECHNOLOGIES-NFC-0001 · AVOID · low** — Exclude encourage people to make contact with physical objects from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
@@ -2041,6 +2080,7 @@ Generated 2026-07-21T12:48:23.660Z. 1820 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-SHAREPLAY-0012 · SHOULD · low** — Preserve people’s ability to personalize their experience without changing the experience for others. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - **HIG-TECHNOLOGIES-SHAREPLAY-0013 · MAY · low** — Evaluate whether when to give each participant a unique view of the shared content is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - **HIG-TECHNOLOGIES-SHAREPLAY-0014 · SHOULD · low** — Apply the documented SharePlay guidance to make it easy for people to exit and rejoin a shared activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- **HIG-TECHNOLOGIES-SHAREPLAY-0015 · MAY · low** — When part of your app requires a subscription, consider ways to help nonsubscriber participants quickly join a group activity. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 ### shazamkit
 
 - **HIG-TECHNOLOGIES-SHAZAMKIT-0001 · SHOULD · low** — Preserve people’s ability to opt in to storing your app’s recognized songs to their iCloud library. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))

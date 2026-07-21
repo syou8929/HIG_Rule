@@ -1,31 +1,28 @@
 # Human source-review queue
 
-- Remaining rules: 1467
+- Remaining rules: 1465
 - Next priority: 4 (platform-specific-hig)
-- Next batch: 8
+- Next batch: 5
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 517
-- 5 (input-and-device-constraints): 39
-- 6 (apple-platform-common): 888
+- 4 (platform-specific-hig): 497
+- 5 (input-and-device-constraints): 40
+- 6 (apple-platform-common): 905
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 183
-- MAY: 165
-- SHOULD: 1119
+- AVOID: 176
+- MAY: 178
+- SHOULD: 1111
 
 ## Next batch
 
-- HIG-COMPONENTS-TOOLBARS-0022 · AVOID — Avoid creating a vertical toolbar · Toolbars > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- HIG-COMPONENTS-TOOLBARS-0023 · AVOID — Avoid using a pull-down menu in a toolbar · Toolbars > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- HIG-COMPONENTS-TOOLBARS-0017 · SHOULD — Prioritize only the most important items for inclusion in the main toolbar area · Toolbars > Platform considerations > iOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- HIG-COMPONENTS-TOOLBARS-0018 · SHOULD — Use a large title to help people stay oriented as they navigate and scroll · Toolbars > Platform considerations > iOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- HIG-COMPONENTS-TOOLBARS-0020 · SHOULD — Make every toolbar item available as a command in the menu bar · Toolbars > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- HIG-COMPONENTS-TOOLBARS-0021 · SHOULD — Prefer using a system-provided toolbar · Toolbars > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- HIG-COMPONENTS-TOOLBARS-0024 · SHOULD — Use a scrolling toolbar button for an important action that isn’t a primary app function · Toolbars > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- HIG-COMPONENTS-TOOLBARS-0019 · MAY — Consider combining a toolbar with a tab bar · Toolbars > Platform considerations > iPadOS ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-FOUNDATIONS-COLOR-0018 · AVOID — Avoid using only color to indicate focus · Color > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0019 · SHOULD — Use color sparingly, especially on glass · Color > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0020 · SHOULD — Prefer using color in bold text and large areas · Color > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0021 · SHOULD — Use background color to support existing content or supply additional information · Color > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0017 · MAY — Consider choosing a limited color palette that coordinates with your app logo · Color > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/color))

@@ -1186,17 +1186,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-APP-ICONS-0016",
-    "title": "Include a safe zone to ensure the system doesn’t crop your content",
+    "title": "Keep tvOS app-icon content inside a safe zone",
     "category": "foundations",
     "topic": "app-icons",
     "subtopic": "tvos",
     "statement": {
-      "en": "Apply the documented App icons guidance to include a safe zone to ensure the system doesn’t crop your content.",
-      "ja": "「App icons」において「Include a safe zone to ensure the system doesn’t crop your content」の指針を適用する。"
+      "en": "Include a safe zone that keeps tvOS app-icon content visible during focus effects.",
+      "ja": "focus effect中もtvOS app-icon contentが見えるsafe zoneを設ける。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1211,7 +1211,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The system may crop icon edges while the focused icon scales and moves.",
+      "Safe-zone size varies with image size, layer depth, and motion.",
+      "The system crops foreground layers more than background layers."
     ],
     "exceptions": [],
     "rationale": {
@@ -1221,7 +1223,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented App icons guidance to include a safe zone to ensure the system doesn’t crop your content.” in the documented App icons context?"
+        "Does the design satisfy “Include a safe zone that keeps tvOS app-icon content visible during focus effects.” in the documented App icons context?"
       ]
     },
     "testability": "manual",
@@ -1242,7 +1244,7 @@
       "retrieved_at": "2026-07-21T11:14:37.915Z",
       "source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d",
       "source_sentence_hash": "4700501817fbff636865e0a19ed5c875fd13cf5dda5213ec8c291b488cbf9852",
-      "evidence_paraphrase": "Apply the documented App icons guidance to include a safe zone to ensure the system doesn’t crop your content."
+      "evidence_paraphrase": "Include a safe zone that keeps tvOS app-icon content visible during focus effects."
     },
     "tags": [
       "foundations",
@@ -1252,22 +1254,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented App icons guidance to include a safe zone to ensure the system doesn’t crop your content.",
+    "apple_native_rule": "Include a safe zone that keeps tvOS app-icon content visible during focus effects.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-APP-ICONS-0017",
-    "title": "Avoid adding a shape that’s intended to look like a hole or concave area to the background layer",
+    "title": "Avoid concave shapes in a visionOS app-icon background",
     "category": "foundations",
     "topic": "app-icons",
     "subtopic": "visionos",
     "statement": {
-      "en": "Exclude adding a shape that’s intended to look like a hole or concave area to the background layer from the applicable experience.",
-      "ja": "該当する体験ではadding a shape that’s intended to look like a hole or concave area to the background layerを避ける。"
+      "en": "Avoid shapes intended to look concave or hollow in a visionOS app-icon background.",
+      "ja": "visionOS app-icon backgroundでconcaveまたはhollowに見せるshapeを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1284,7 +1286,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "System shadows and specular highlights can make the shape protrude instead of recede."
     ],
     "exceptions": [],
     "rationale": {
@@ -1294,7 +1296,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude adding a shape that’s intended to look like a hole or concave area to the background layer from the applicable experience.” in the documented App icons context?"
+        "Does the design satisfy “Avoid shapes intended to look concave or hollow in a visionOS app-icon background.” in the documented App icons context?"
       ]
     },
     "testability": "manual",
@@ -1315,7 +1317,7 @@
       "retrieved_at": "2026-07-21T11:14:37.915Z",
       "source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d",
       "source_sentence_hash": "446d38ecb38275777a0c881e6cf8cc2b0738445672503d5a3141a3e6bcdef66c",
-      "evidence_paraphrase": "Exclude adding a shape that’s intended to look like a hole or concave area to the background layer from the applicable experience."
+      "evidence_paraphrase": "Avoid shapes intended to look concave or hollow in a visionOS app-icon background."
     },
     "tags": [
       "foundations",
@@ -1326,22 +1328,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude adding a shape that’s intended to look like a hole or concave area to the background layer from the applicable experience.",
+    "apple_native_rule": "Avoid shapes intended to look concave or hollow in a visionOS app-icon background.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-APP-ICONS-0018",
-    "title": "Avoid using black for your icon’s background",
+    "title": "Avoid a black watchOS app-icon background",
     "category": "foundations",
     "topic": "app-icons",
     "subtopic": "watchos",
     "statement": {
-      "en": "Exclude using black for your icon’s background from the applicable experience.",
-      "ja": "該当する体験ではusing black for your icon’s backgroundを避ける。"
+      "en": "Avoid using black for a watchOS app-icon background.",
+      "ja": "watchOS app-icon backgroundにblackを使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1356,7 +1358,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Lighten a black background so the icon doesn't blend into the display background."
     ],
     "exceptions": [],
     "rationale": {
@@ -1366,7 +1368,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude using black for your icon’s background from the applicable experience.” in the documented App icons context?"
+        "Does the design satisfy “Avoid using black for a watchOS app-icon background.” in the documented App icons context?"
       ]
     },
     "testability": "manual",
@@ -1387,7 +1389,7 @@
       "retrieved_at": "2026-07-21T11:14:37.915Z",
       "source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d",
       "source_sentence_hash": "a95a74c0f496dacca17d3b65dfea2def7f1ee29a84066c957bb07ce0c7fa1a05",
-      "evidence_paraphrase": "Exclude using black for your icon’s background from the applicable experience."
+      "evidence_paraphrase": "Avoid using black for a watchOS app-icon background."
     },
     "tags": [
       "foundations",
@@ -1397,7 +1399,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude using black for your icon’s background from the applicable experience.",
+    "apple_native_rule": "Avoid using black for a watchOS app-icon background.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
