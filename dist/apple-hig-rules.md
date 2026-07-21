@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T09:50:24.446Z. 1597 active rules; 0 deprecated rules.
+Generated 2026-07-21T10:03:06.757Z. 1598 active rules; 0 deprecated rules.
 
 ## getting-started
 
@@ -822,14 +822,14 @@ Generated 2026-07-21T09:50:24.446Z. 1597 active rules; 0 deprecated rules.
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0012 · MAY · low** — Evaluate whether letting people respond to event or progress updates is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0013 · SHOULD · low** — Make an App Shortcut that starts your Live Activity available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0014 · SHOULD · low** — Preserve people’s ability to track multiple events efficiently with a single Live Activity. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
-- **HIG-COMPONENTS-LIVE-ACTIVITIES-0015 · MUST · medium** — End a Live Activity immediately when the task or event ends, and consider setting a custom dismissal time in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- **HIG-COMPONENTS-LIVE-ACTIVITIES-0015 · MUST · medium** — End a Live Activity immediately when its task or event ends. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0016 · MUST · medium** — Verify that unified information and design of the compact presentations in the Dynamic Island. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0017 · SHOULD · low** — Maintain content as narrow as possible and ensure it’s snug against the TrueDepth camera. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0018 · MUST · medium** — Verify that that your Live Activity is recognizable in the minimal presentation. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0019 · SHOULD · low** — Apply the documented Live Activities guidance to maintain the relative placement of elements to create a coherent layout between presentations. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0020 · AVOID · low** — Exclude replicate notification layouts from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0021 · SHOULD · low** — Apply the documented Live Activities guidance to choose colors that work well on a personalized Lock Screen. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
-- **HIG-COMPONENTS-LIVE-ACTIVITIES-0022 · MUST · medium** — Verify that your design, assets, and colors look great and offer enough contrast in Dark Mode and on an. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- **HIG-COMPONENTS-LIVE-ACTIVITIES-0022 · MUST · medium** — Keep Live Activity text, assets, and colors legible in Dark Mode and on reduced-luminance Always-On displays. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0023 · SHOULD · low** — Verify that the generated color of the dismiss button. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0024 · SHOULD · low** — Choose or apply standard margins to align your design with notifications in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0025 · MAY · low** — Evaluate whether using the default background color in StandBy is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
@@ -837,6 +837,7 @@ Generated 2026-07-21T09:50:24.446Z. 1597 active rules; 0 deprecated rules.
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0027 · SHOULD · low** — Verify that your design in Night Mode. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0028 · MAY · low** — Evaluate whether creating a custom layout if your Live Activity would benefit from larger text or additional information is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - **HIG-COMPONENTS-LIVE-ACTIVITIES-0029 · MAY · low** — Evaluate whether creating a custom watchOS layout is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- **HIG-COMPONENTS-LIVE-ACTIVITIES-0030 · MAY · medium** — Evaluate whether a custom dismissal time is appropriate after a Live Activity ends. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 ### lockups
 
 - **HIG-COMPONENTS-LOCKUPS-0001 · SHOULD · low** — Apply the documented Lockups guidance to allow adequate space between lockups. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
@@ -1870,7 +1871,7 @@ Generated 2026-07-21T09:50:24.446Z. 1597 active rules; 0 deprecated rules.
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0002 · SHOULD · low** — Make a tutorial that describes the supported payment types and shows how to use Tap to Pay on iPhone available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0003 · SHOULD · low** — Make tap to Pay on iPhone as a checkout option whether the feature is enabled or not available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0004 · AVOID · low** — Exclude making merchants wait to use Tap to Pay on iPhone from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
-- **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 · MUST · medium** — Verify that the Tap to Pay on iPhone checkout option is available even if configuration is continuing in the. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 · MUST · medium** — Keep the Tap to Pay on iPhone checkout option available while configuration continues in the background. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0006 · SHOULD · low** — Apply the documented Tap to Pay on iPhone guidance to make it easy for merchants to switch between Tap to Pay on iPhone and the hardware accessories you support. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0007 · SHOULD · low** — Apply the documented Tap to Pay on iPhone guidance to design your Tap to Pay on iPhone button to match the other buttons in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0008 · SHOULD · low** — Present a progress indicator while payment is authorizing before you show your transaction result screen in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))

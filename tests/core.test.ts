@@ -62,3 +62,14 @@ test("current canonical rules and source pages satisfy schemas", async () => {
   for (const rule of rules) assert.equal(validateRule(rule), true, JSON.stringify(validateRule.errors));
   for (const page of pages) assert.equal(validatePage(page), true, JSON.stringify(validatePage.errors));
 });
+
+test("keeps mixed-strength reviewed guidance atomic", async () => {
+  const rules = await loadRules();
+  const required = rules.find((rule) => rule.id === "HIG-COMPONENTS-LIVE-ACTIVITIES-0015");
+  const optional = rules.find((rule) => rule.id === "HIG-COMPONENTS-LIVE-ACTIVITIES-0030");
+  assert.equal(required?.normative_level, "MUST");
+  assert.doesNotMatch(required?.statement.en ?? "", /consider/i);
+  assert.equal(optional?.normative_level, "MAY");
+  assert.match(optional?.statement.en ?? "", /custom dismissal time/i);
+  assert.equal(required?.source.source_sentence_hash, optional?.source.source_sentence_hash);
+});

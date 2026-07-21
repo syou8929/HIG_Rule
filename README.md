@@ -52,6 +52,10 @@ npm test
 - `dist/checklists/`: デザイン、実装、アクセシビリティのレビューリスト
 - `dist/reports/`: coverage、validation、更新差分
 
+`dist/reports/normative-review.md`と`normative-review.json`には、MUST/MUST_NOTルールをApple公式のsection contextと照合した判断、atomicity修正、source hashを記録します。このレポートもHIG適合証明ではありません。
+
+`src/config/normative-review.json`は、レビュー済みsource inventoryのhashと永続的な補正を保持します。HIG更新によってinventory hashまたはMUST/MUST_NOT件数が変わった場合、buildは古いレビュー結果を流用せず、再レビューが必要であることをエラーで示します。
+
 `AGENTS.md`、`CLAUDE.md`、`GEMINI.md`、`.github/copilot-instructions.md`、`.cursor/rules/apple-hig.mdc`もcanonical rulesから再生成します。生成ファイルを直接修正せず、storeまたはgeneratorを更新してください。
 
 ## Rule retrieval

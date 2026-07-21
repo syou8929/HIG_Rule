@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-07-21T09:58:28Z",
+  "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
+  "official_source_only": true,
+  "source_inventory_hash": "12a9e655b784d19ec10d9f9ede151ba8538d9af34f31d70152f685277763264c",
+  "reviewed_levels": [
+    "MUST",
+    "MUST_NOT"
+  ],
+  "reviewed_rule_count": 102,
+  "decision_policy": {
+    "must": "Retain MUST for an unqualified Always, Ensure, or Make sure directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
+    "must_not": "Retain MUST_NOT for an explicit Never or must not prohibition after checking its surrounding conditions and exceptions.",
+    "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
+  },
+  "overrides": {
+    "HIG-COMPONENTS-LIVE-ACTIVITIES-0015": {
+      "title": "End a Live Activity immediately when its task or event ends",
+      "statement": {
+        "en": "End a Live Activity immediately when its task or event ends.",
+        "ja": "タスクまたはイベントが終了したら、Live Activityを直ちに終了する。"
+      },
+      "conditions": [
+        "The task or event represented by the Live Activity has ended.",
+        "Apply within the platform, component, and section context identified by the source trace."
+      ],
+      "exceptions": [
+        "Choosing a custom dismissal time is optional guidance and is represented by a separate MAY rule."
+      ],
+      "review_note": "Narrowed the MUST to the unqualified Always clause; the source lead's consider clause is split into a separate MAY rule."
+    },
+    "HIG-COMPONENTS-LIVE-ACTIVITIES-0022": {
+      "title": "Maintain Live Activity contrast in Dark Mode and on reduced-luminance Always-On displays",
+      "statement": {
+        "en": "Keep Live Activity text, assets, and colors legible in Dark Mode and on reduced-luminance Always-On displays.",
+        "ja": "Dark Modeおよび低輝度の常時表示ディスプレイでも、Live Activityのテキスト、素材、色を判読可能に保つ。"
+      },
+      "conditions": [
+        "The Live Activity appears in Dark Mode or on an Always-On display with reduced luminance.",
+        "Apply within the platform, component, and section context identified by the source trace."
+      ],
+      "review_note": "Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast."
+    },
+    "HIG-COMPONENTS-TAB-BARS-0002": {
+      "exceptions": [
+        "A temporary modal view may cover the tab bar."
+      ],
+      "review_note": "Recorded the source's explicit modal-view exception without weakening the default requirement."
+    },
+    "HIG-TECHNOLOGIES-GENERATIVE-AI-0005": {
+      "conditions": [
+        "Review the unavailable and opt-out experience for the role generative AI plays in the product.",
+        "Apply within the platform, component, and section context identified by the source trace."
+      ],
+      "exceptions": [
+        "A non-AI substitute may not exist when generative AI is essential; still provide a clear unavailable or opt-out state."
+      ],
+      "review_note": "Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0009": {
+      "exceptions": [
+        "A participant may temporarily leave the shared activity when needed."
+      ],
+      "review_note": "Recorded the source's explicit temporary-exit exception."
+    },
+    "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005": {
+      "title": "Keep Tap to Pay on iPhone available while configuration continues in the background",
+      "statement": {
+        "en": "Keep the Tap to Pay on iPhone checkout option available while configuration continues in the background.",
+        "ja": "バックグラウンドで設定が続いている間も、Tap to Pay on iPhoneのチェックアウトオプションを利用可能に保つ。"
+      },
+      "conditions": [
+        "Tap to Pay on iPhone configuration is continuing in the background during checkout.",
+        "Apply within the platform, component, and section context identified by the source trace."
+      ],
+      "review_note": "Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option."
+    }
+  },
+  "additional_rules": [
+    {
+      "base_rule_id": "HIG-COMPONENTS-LIVE-ACTIVITIES-0015",
+      "split_key": "custom-dismissal-time",
+      "title": "Consider setting a custom dismissal time for an ended Live Activity",
+      "statement": {
+        "en": "Evaluate whether a custom dismissal time is appropriate after a Live Activity ends.",
+        "ja": "Live Activity終了後にカスタム消去時刻を設定することが適切か検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "medium",
+      "review_required": true,
+      "polarity": "permit",
+      "severity": "info",
+      "conditions": [
+        "The Live Activity has ended and retaining a short-lived summary may help people."
+      ],
+      "exceptions": [],
+      "rationale": {
+        "en": "A proportional dismissal time can preserve a useful summary without keeping stale activity visible too long.",
+        "ja": "適切な消去時刻は、古い情報を長く残さずに有用な概要を一時的に保持できます。"
+      },
+      "review_note": "Split from the source lead's consider clause so optional guidance is not raised to MUST."
+    }
+  ]
+}

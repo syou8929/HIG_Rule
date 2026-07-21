@@ -6,6 +6,7 @@ import ruleSchema from "../schemas/rule.schema.json" with { type: "json" };
 import sourcePageSchema from "../schemas/source-page.schema.json" with { type: "json" };
 import coverageSchema from "../schemas/coverage.schema.json" with { type: "json" };
 import inventorySchema from "../schemas/inventory.schema.json" with { type: "json" };
+import normativeReview from "../src/config/normative-review.json" with { type: "json" };
 import { makeCoverage } from "../src/lib/coverage.js";
 import { loadRules, loadSourcePages } from "../src/lib/store.js";
 import type { Inventory } from "../src/lib/types.js";
@@ -20,6 +21,7 @@ const validateCoverage = ajv.compile(coverageSchema);
 const validateInventory = ajv.compile(inventorySchema);
 const errors: string[] = [];
 const warnings: string[] = [];
+const reviewedOverrideIds = new Set(Object.keys(normativeReview.overrides));
 const rules = await loadRules({ includeDeprecated: true });
 const pages = await loadSourcePages();
 const inventoryPath = resolve("src/sources/apple-hig/inventory.json");
@@ -55,7 +57,7 @@ for (const rule of rules) {
   ids.add(rule.id);
   if (!rule.source.url.startsWith("https://developer.apple.com/design/human-interface-guidelines")) errors.push(`${rule.id}: non-HIG primary source`);
   if (!rule.source.section_path.length) errors.push(`${rule.id}: missing section path`);
-  if (rule.normative_level === "MUST" && !/^(always|ensure|make sure|must|required)/i.test(rule.title)) warnings.push(`${rule.id}: MUST requires strength review`);
+  if (rule.normative_level === "MUST" && !/^(always|ensure|make sure|must|required)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id)) warnings.push(`${rule.id}: MUST requires strength review`);
   if (rule.normative_level === "MUST_NOT" && !/^(never|must not)/i.test(rule.title)) warnings.push(`${rule.id}: MUST_NOT requires strength review`);
   if (rule.scope.portability === "universal" && /\b(ios|ipados|macos|tvos|visionos|watchos|swiftui|uikit|appkit|sf symbols)\b/i.test(`${rule.title} ${rule.statement.en}`)) {
     errors.push(`${rule.id}: Apple-specific language is classified as universal`);
@@ -101,8 +103,20 @@ for (const page of inventory.pages) {
 
 const distRules = await readJson<unknown>(resolve("dist/apple-hig-rules.json"));
 if (JSON.stringify(distRules) !== JSON.stringify(rules)) errors.push("Generated JSON adapter is stale relative to canonical rules");
-const manifest = await readJson<{ canonical_hash: string }>(resolve("dist/manifest.json"));
+const manifest = await readJson<{ canonical_hash: string; source_inventory_hash: string }>(resolve("dist/manifest.json"));
 if (manifest.canonical_hash !== sha256(JSON.stringify(rules))) errors.push("Generated manifest hash is stale");
+if (manifest.source_inventory_hash !== normativeReview.source_inventory_hash) errors.push("Normative review source inventory hash is stale");
+const normativeReviewReport = await readJson<{ reviewed_rule_count: number; rules: Array<{ id: string; normative_level: string; source: { source_hash: string; source_sentence_hash: string } }> }>(resolve("dist/reports/normative-review.json"));
+const currentNormativeRules = rules.filter((rule) => rule.status === "active" && ["MUST", "MUST_NOT"].includes(rule.normative_level));
+if (normativeReviewReport.reviewed_rule_count !== currentNormativeRules.length) errors.push("Normative review report count is stale");
+const reviewedById = new Map(normativeReviewReport.rules.map((rule) => [rule.id, rule]));
+for (const rule of currentNormativeRules) {
+  const reviewed = reviewedById.get(rule.id);
+  if (!reviewed) errors.push(`${rule.id}: absent from normative review report`);
+  else if (reviewed.normative_level !== rule.normative_level || reviewed.source.source_hash !== rule.source.source_hash || reviewed.source.source_sentence_hash !== rule.source.source_sentence_hash) {
+    errors.push(`${rule.id}: normative review trace is stale`);
+  }
+}
 
 const normalizedStatements = new Map<string, string[]>();
 for (const rule of rules.filter((item) => item.status === "active")) {

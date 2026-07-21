@@ -5,14 +5,14 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 151
-- Active atomic rules: 1597
+- Active atomic rules: 1598
 - Pages without rules: 21
 - Low-confidence rules: 1495
-- Rules requiring human review: 1597
+- Rules requiring human review: 1598
 
 ## Rules by category
 
-- components: 568
+- components: 569
 - foundations: 246
 - getting-started: 44
 - inputs: 120
@@ -22,15 +22,15 @@
 ## Normative levels
 
 - AVOID: 199
-- MAY: 190
+- MAY: 191
 - MUST: 94
 - MUST_NOT: 8
 - SHOULD: 1106
 
 ## Rules by platform
 
-- carplay: 68
-- ios: 1162
+- carplay: 69
+- ios: 1163
 - ipados: 1155
 - macos: 1022
 - tvos: 760
@@ -40,7 +40,7 @@
 ## Rules by testability
 
 - hybrid: 55
-- manual: 1542
+- manual: 1543
 
 ## Blocked pages
 
@@ -1771,6 +1771,7 @@ None.
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0027
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0028
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0029
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0030
 - HIG-COMPONENTS-LOCKUPS-0001
 - HIG-COMPONENTS-LOCKUPS-0002
 - HIG-COMPONENTS-LOCKUPS-0003

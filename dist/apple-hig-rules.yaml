@@ -11316,13 +11316,13 @@
   apple_native_rule: Preserve people’s ability to track multiple events efficiently with a single Live Activity.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0015
-  title: Always end a Live Activity immediately when the task or event ends, and consider setting a custom dismissal…
+  title: End a Live Activity immediately when its task or event ends
   category: components
   topic: live-activities
   subtopic: starting-updating-and-ending-a-live-activity
   statement:
-    en: End a Live Activity immediately when the task or event ends, and consider setting a custom dismissal time in every applicable case.
-    ja: 該当するすべての場合にend a Live Activity immediately when the task or event ends, and consider setting a custom dismissal timeを実行する。
+    en: End a Live Activity immediately when its task or event ends.
+    ja: タスクまたはイベントが終了したら、Live Activityを直ちに終了する。
   normative_level: MUST
   confidence: medium
   review_required: true
@@ -11340,15 +11340,17 @@
       - live-activities
     modalities: []
   conditions:
+    - The task or event represented by the Live Activity has ended.
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - Choosing a custom dismissal time is optional guidance and is represented by a separate MAY rule.
   rationale:
     en: Applying this guidance supports a consistent and usable Live Activities experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるLive Activitiesの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “End a Live Activity immediately when the task or event ends, and consider setting a custom dismissal time in every applicable case.” in the documented Live Activities context?
+      - Does the design satisfy “End a Live Activity immediately when its task or event ends.” in the documented Live Activities context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -11364,7 +11366,7 @@
     retrieved_at: 2026-07-21T09:49:57.766Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: 7e494dca7a241bd40fbb91e7d95673a1be9491fc684dddd2ebce110cc12876c1
-    evidence_paraphrase: End a Live Activity immediately when the task or event ends, and consider setting a custom dismissal time in every applicable case.
+    evidence_paraphrase: End a Live Activity immediately when its task or event ends.
   tags:
     - components
     - live-activities
@@ -11372,7 +11374,7 @@
     - starting-updating-and-ending-a-live-activity
   priority_rank: 4
   status: active
-  apple_native_rule: End a Live Activity immediately when the task or event ends, and consider setting a custom dismissal time in every applicable case.
+  apple_native_rule: End a Live Activity immediately when its task or event ends.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0016
   title: Ensure unified information and design of the compact presentations in the Dynamic Island
@@ -11729,13 +11731,13 @@
   apple_native_rule: Apply the documented Live Activities guidance to choose colors that work well on a personalized Lock Screen.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0022
-  title: Make sure your design, assets, and colors look great and offer enough contrast in Dark Mode and on an
+  title: Maintain Live Activity contrast in Dark Mode and on reduced-luminance Always-On displays
   category: components
   topic: live-activities
   subtopic: lock-screen-presentation
   statement:
-    en: Verify that your design, assets, and colors look great and offer enough contrast in Dark Mode and on an.
-    ja: your design, assets, and colors look great and offer enough contrast in Dark Mode and on anを満たしていることを確認する。
+    en: Keep Live Activity text, assets, and colors legible in Dark Mode and on reduced-luminance Always-On displays.
+    ja: Dark Modeおよび低輝度の常時表示ディスプレイでも、Live Activityのテキスト、素材、色を判読可能に保つ。
   normative_level: MUST
   confidence: medium
   review_required: true
@@ -11754,6 +11756,7 @@
     modalities:
       - gaze
   conditions:
+    - The Live Activity appears in Dark Mode or on an Always-On display with reduced luminance.
     - Apply within the platform, component, and section context identified by the source trace.
   exceptions: []
   rationale:
@@ -11763,7 +11766,7 @@
     automated:
       - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
     manual:
-      - Does the design satisfy “Verify that your design, assets, and colors look great and offer enough contrast in Dark Mode and on an.” in the documented Live Activities context?
+      - Does the design satisfy “Keep Live Activity text, assets, and colors legible in Dark Mode and on reduced-luminance Always-On displays.” in the documented Live Activities context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -11779,7 +11782,7 @@
     retrieved_at: 2026-07-21T09:49:57.766Z
     source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
     source_sentence_hash: 41c71ef689dd26c15c3e3360917c38cec4746bdcbe2e8e93fa9177052e348700
-    evidence_paraphrase: Verify that your design, assets, and colors look great and offer enough contrast in Dark Mode and on an.
+    evidence_paraphrase: Keep Live Activity text, assets, and colors legible in Dark Mode and on reduced-luminance Always-On displays.
   tags:
     - components
     - live-activities
@@ -11788,7 +11791,7 @@
     - gaze
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that your design, assets, and colors look great and offer enough contrast in Dark Mode and on an.
+  apple_native_rule: Keep Live Activity text, assets, and colors legible in Dark Mode and on reduced-luminance Always-On displays.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LIVE-ACTIVITIES-0023
   title: Verify the generated color of the dismiss button
@@ -12197,6 +12200,66 @@
   priority_rank: 4
   status: active
   apple_native_rule: Evaluate whether creating a custom watchOS layout is appropriate for the current context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-LIVE-ACTIVITIES-0030
+  title: Consider setting a custom dismissal time for an ended Live Activity
+  category: components
+  topic: live-activities
+  subtopic: starting-updating-and-ending-a-live-activity
+  statement:
+    en: Evaluate whether a custom dismissal time is appropriate after a Live Activity ends.
+    ja: Live Activity終了後にカスタム消去時刻を設定することが適切か検討する。
+  normative_level: MAY
+  confidence: medium
+  review_required: true
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components:
+      - live-activities
+    modalities: []
+  conditions:
+    - The Live Activity has ended and retaining a short-lived summary may help people.
+  exceptions: []
+  rationale:
+    en: A proportional dismissal time can preserve a useful summary without keeping stale activity visible too long.
+    ja: 適切な消去時刻は、古い情報を長く残さずに有用な概要を一時的に保持できます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Evaluate whether a custom dismissal time is appropriate after a Live Activity ends.” in the documented Live Activities context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/live-activities
+    page_title: Live Activities
+    section_path:
+      - Live Activities
+      - Best practices
+      - Starting, updating, and ending a Live Activity
+    retrieved_at: 2026-07-21T09:49:57.766Z
+    source_hash: ef3d3ba0e9970cc294f4754f566eb79187812b978643393d5c47e9ff333a8e10
+    source_sentence_hash: 7e494dca7a241bd40fbb91e7d95673a1be9491fc684dddd2ebce110cc12876c1
+    evidence_paraphrase: Evaluate whether a custom dismissal time is appropriate after a Live Activity ends.
+  tags:
+    - components
+    - live-activities
+    - best-practices
+    - starting-updating-and-ending-a-live-activity
+    - split-guidance
+  priority_rank: 4
+  status: active
+  apple_native_rule: Evaluate whether a custom dismissal time is appropriate after a Live Activity ends.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-LOCKUPS-0001
   title: Allow adequate space between lockups
@@ -24325,7 +24388,8 @@
     modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - A temporary modal view may cover the tab bar.
   rationale:
     en: Applying this guidance supports a consistent and usable Tab bars experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるTab barsの一貫性と使いやすさを支えます。
@@ -80545,8 +80609,10 @@
     components: []
     modalities: []
   conditions:
+    - Review the unavailable and opt-out experience for the role generative AI plays in the product.
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - A non-AI substitute may not exist when generative AI is essential; still provide a clear unavailable or opt-out state.
   rationale:
     en: Applying this guidance supports a consistent and usable Generative AI experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるGenerative AIの一貫性と使いやすさを支えます。
@@ -92152,7 +92218,8 @@
     modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - A participant may temporarily leave the shared activity when needed.
   rationale:
     en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるSharePlayの一貫性と使いやすさを支えます。
@@ -94612,13 +94679,13 @@
   apple_native_rule: Exclude making merchants wait to use Tap to Pay on iPhone from the applicable experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005
-  title: Make sure the Tap to Pay on iPhone checkout option is available even if configuration is continuing in the
+  title: Keep Tap to Pay on iPhone available while configuration continues in the background
   category: technologies
   topic: tap-to-pay-on-iphone
   subtopic: checking-out
   statement:
-    en: Verify that the Tap to Pay on iPhone checkout option is available even if configuration is continuing in the.
-    ja: the Tap to Pay on iPhone checkout option is available even if configuration is continuing in theを満たしていることを確認する。
+    en: Keep the Tap to Pay on iPhone checkout option available while configuration continues in the background.
+    ja: バックグラウンドで設定が続いている間も、Tap to Pay on iPhoneのチェックアウトオプションを利用可能に保つ。
   normative_level: MUST
   confidence: medium
   review_required: true
@@ -94634,6 +94701,7 @@
     modalities:
       - touch
   conditions:
+    - Tap to Pay on iPhone configuration is continuing in the background during checkout.
     - Apply within the platform, component, and section context identified by the source trace.
   exceptions: []
   rationale:
@@ -94642,7 +94710,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that the Tap to Pay on iPhone checkout option is available even if configuration is continuing in the.” in the documented Tap to Pay on iPhone context?
+      - Does the design satisfy “Keep the Tap to Pay on iPhone checkout option available while configuration continues in the background.” in the documented Tap to Pay on iPhone context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -94657,7 +94725,7 @@
     retrieved_at: 2026-07-21T09:50:17.878Z
     source_hash: 2e6bc529a2da777a15530be0491e0653c37469102bdd82b83e2ae3ed7542ceea
     source_sentence_hash: 21f4a1d9f280b131c4f4c244a186b66b19e525958ae5daf8de4c2b862341626a
-    evidence_paraphrase: Verify that the Tap to Pay on iPhone checkout option is available even if configuration is continuing in the.
+    evidence_paraphrase: Keep the Tap to Pay on iPhone checkout option available while configuration continues in the background.
   tags:
     - technologies
     - tap-to-pay-on-iphone
@@ -94665,7 +94733,7 @@
     - touch
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that the Tap to Pay on iPhone checkout option is available even if configuration is continuing in the.
+  apple_native_rule: Keep the Tap to Pay on iPhone checkout option available while configuration continues in the background.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0006
   title: Make it easy for merchants to switch between Tap to Pay on iPhone and the hardware accessories you support

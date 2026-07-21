@@ -1,6 +1,7 @@
 import { resolve } from "node:path";
 import YAML from "yaml";
 import config from "../src/config/hig.json" with { type: "json" };
+import normativeReview from "../src/config/normative-review.json" with { type: "json" };
 import { makeCoverage } from "../src/lib/coverage.js";
 import { loadRules } from "../src/lib/store.js";
 import type { Inventory, Rule } from "../src/lib/types.js";
@@ -137,6 +138,72 @@ ${list(coverage.low_confidence_rules)}
 ${list(coverage.review_required_rules)}
 `);
 
+const reviewedNormativeRules = active.filter((rule) => normativeReview.reviewed_levels.includes(rule.normative_level as "MUST" | "MUST_NOT"));
+if (reviewedNormativeRules.length !== normativeReview.reviewed_rule_count) {
+  throw new Error(`Normative review expected ${normativeReview.reviewed_rule_count} MUST/MUST_NOT rules, found ${reviewedNormativeRules.length}`);
+}
+const normativeDecisions = reviewedNormativeRules.map((rule) => {
+  const override = normativeReview.overrides[rule.id as keyof typeof normativeReview.overrides];
+  const basis = override?.review_note
+    ?? (rule.normative_level === "MUST_NOT"
+      ? "Retained MUST_NOT after confirming an explicit, source-scoped prohibition."
+      : "Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions.");
+  return {
+    id: rule.id,
+    normative_level: rule.normative_level,
+    decision: override ? "retained_with_atomicity_or_scope_correction" : "retained",
+    basis,
+    source: {
+      url: rule.source.url,
+      section_path: rule.source.section_path,
+      source_hash: rule.source.source_hash,
+      source_sentence_hash: rule.source.source_sentence_hash,
+    },
+  };
+});
+const splitRules = normativeReview.additional_rules.map((extra) => {
+  const rule = active.find((item) => item.title === extra.title && item.source.source_sentence_hash === active.find((base) => base.id === extra.base_rule_id)?.source.source_sentence_hash);
+  if (!rule) throw new Error(`Missing reviewed split rule for ${extra.base_rule_id}`);
+  return { id: rule.id, base_rule_id: extra.base_rule_id, normative_level: rule.normative_level, basis: extra.review_note, source: rule.source };
+});
+const normativeReport = {
+  schema_version: "1.0.0",
+  generated_at: now(),
+  reviewed_at: normativeReview.reviewed_at,
+  review_method: normativeReview.review_method,
+  official_source_only: normativeReview.official_source_only,
+  source_inventory_hash: normativeReview.source_inventory_hash,
+  reviewed_rule_count: normativeDecisions.length,
+  retained_must: normativeDecisions.filter((item) => item.normative_level === "MUST").length,
+  retained_must_not: normativeDecisions.filter((item) => item.normative_level === "MUST_NOT").length,
+  normative_level_changes: Object.values(normativeReview.overrides).filter((item) => "normative_level" in item).length,
+  mixed_strength_candidates_split: splitRules.length,
+  rules: normativeDecisions,
+  additional_atomic_rules: splitRules,
+};
+await writeJson(resolve("dist/reports/normative-review.json"), normativeReport);
+await writeText(resolve("dist/reports/normative-review.md"), `# MUST / MUST_NOT source review
+
+- Reviewed rules: ${normativeReport.reviewed_rule_count}
+- Retained MUST: ${normativeReport.retained_must}
+- Retained MUST_NOT: ${normativeReport.retained_must_not}
+- Normative level changes: ${normativeReport.normative_level_changes}
+- Mixed-strength candidates split: ${normativeReport.mixed_strength_candidates_split}
+- Official source only: ${normativeReport.official_source_only ? "yes" : "no"}
+- Reviewed at: ${normativeReport.reviewed_at}
+
+This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
+
+## Atomicity and scope corrections
+
+${normativeDecisions.filter((item) => item.decision !== "retained").map((item) => `- ${item.id} — ${item.basis} ([source](${item.source.url}))`).join("\n") || "None."}
+${splitRules.map((item) => `- ${item.id} — ${item.basis} ([source](${item.source.url}))`).join("\n")}
+
+## Reviewed rules
+
+${normativeDecisions.map((item) => `- ${item.id} · ${item.normative_level} · ${item.decision} — ${item.basis} ([source](${item.source.url}))`).join("\n")}
+`);
+
 const canonicalHash = sha256(JSON.stringify(allRules));
 await writeJson(resolve("dist/manifest.json"), {
   schema_version: "1.0.0",
@@ -145,7 +212,7 @@ await writeJson(resolve("dist/manifest.json"), {
   active_rule_count: active.length,
   canonical_hash: canonicalHash,
   source_inventory_hash: sha256(JSON.stringify(inventory.pages.map((page) => [page.canonical_url, page.source_hash]))),
-  generated_from: ["src/rules/**/*.json", "src/sources/apple-hig/inventory.json"],
+  generated_from: ["src/rules/**/*.json", "src/sources/apple-hig/inventory.json", "src/config/normative-review.json"],
 });
 
 console.log(`Built JSON, YAML, Markdown, ${6} AI adapters, and ${3} checklists from ${active.length} active rules.`);

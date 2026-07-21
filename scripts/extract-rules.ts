@@ -1,6 +1,7 @@
 import { readdir, unlink } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { Inventory, Rule, SourcePage } from "../src/lib/types.js";
+import normativeReview from "../src/config/normative-review.json" with { type: "json" };
 import { automatedChecksFor, devicesFor, isActionable, makeTitle, modalitiesFor, normative, paraphrase, platformsForCandidate, portability, priorityFor, ruleKey, tagsFor } from "../src/lib/rules.js";
 import { now, readJson, slugify, writeJson } from "../src/lib/util.js";
 
@@ -9,6 +10,19 @@ const pagesDir = resolve("src/sources/apple-hig/pages");
 const rulesRoot = resolve("src/rules");
 const idMapPath = resolve("src/config/rule-id-map.json");
 const inventory = await readJson<Inventory>(inventoryPath);
+type RuleOverride = {
+  title?: string;
+  statement?: Rule["statement"];
+  normative_level?: Rule["normative_level"];
+  confidence?: Rule["confidence"];
+  review_required?: boolean;
+  polarity?: Rule["polarity"];
+  severity?: Rule["severity"];
+  conditions?: string[];
+  exceptions?: string[];
+  review_note: string;
+};
+const reviewedOverrides = normativeReview.overrides as Record<string, RuleOverride>;
 let idMap: Record<string, string> = {};
 try { idMap = await readJson<Record<string, string>>(idMapPath); } catch { /* First extraction creates the registry. */ }
 idMap = Object.fromEntries(Object.entries(idMap).map(([key, id]) => [key, id.replaceAll("_", "-")]));
@@ -43,6 +57,30 @@ function allocateId(page: SourcePage, key: string): string {
   const id = `${prefix}-${String(sequence).padStart(4, "0")}`;
   idMap[key] = id;
   return id;
+}
+
+function applyReviewedOverride(rule: Rule): Rule {
+  const override = reviewedOverrides[rule.id];
+  if (!override) return rule;
+  const statement = override.statement ?? rule.statement;
+  return {
+    ...rule,
+    ...(override.title ? { title: override.title } : {}),
+    statement,
+    ...(override.normative_level ? { normative_level: override.normative_level } : {}),
+    ...(override.confidence ? { confidence: override.confidence } : {}),
+    ...(override.review_required === undefined ? {} : { review_required: override.review_required }),
+    ...(override.polarity ? { polarity: override.polarity } : {}),
+    ...(override.severity ? { severity: override.severity } : {}),
+    ...(override.conditions ? { conditions: override.conditions } : {}),
+    ...(override.exceptions ? { exceptions: override.exceptions } : {}),
+    checks: {
+      ...rule.checks,
+      manual: [`Does the design satisfy “${statement.en}” in the documented ${rule.source.page_title} context?`],
+    },
+    source: { ...rule.source, evidence_paraphrase: statement.en },
+    ...(rule.apple_native_rule ? { apple_native_rule: statement.en } : {}),
+  };
 }
 
 let total = 0;
@@ -112,12 +150,43 @@ for (const record of inventory.pages) {
         portable_interpretation: `Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.`,
       }),
     };
-    return rule;
+    return applyReviewedOverride(rule);
   });
-  const activeHashes = new Set(active.map((rule) => rule.source.source_sentence_hash));
+  for (const extra of normativeReview.additional_rules) {
+    const base = active.find((rule) => rule.id === extra.base_rule_id);
+    if (!base) continue;
+    const candidate = page.guidance_candidates.find((item) =>
+      item.source_sentence_hash === base.source.source_sentence_hash
+      && JSON.stringify(item.section_path) === JSON.stringify(base.source.section_path));
+    if (!candidate) throw new Error(`Missing source candidate for reviewed split rule ${extra.base_rule_id}`);
+    const statement = extra.statement as Rule["statement"];
+    active.push({
+      ...base,
+      id: allocateId(page, `${ruleKey(page, candidate)}#split-${extra.split_key}`),
+      title: extra.title,
+      statement,
+      normative_level: extra.normative_level as Rule["normative_level"],
+      confidence: extra.confidence as Rule["confidence"],
+      review_required: extra.review_required,
+      polarity: extra.polarity as Rule["polarity"],
+      severity: extra.severity as Rule["severity"],
+      conditions: extra.conditions,
+      exceptions: extra.exceptions,
+      rationale: extra.rationale,
+      checks: {
+        automated: [],
+        manual: [`Does the design satisfy “${statement.en}” in the documented ${page.title} context?`],
+      },
+      testability: "manual",
+      source: { ...base.source, evidence_paraphrase: statement.en },
+      tags: Array.from(new Set([...base.tags, "split-guidance"])),
+      ...(base.apple_native_rule ? { apple_native_rule: statement.en } : {}),
+    });
+  }
+  const activeIds = new Set(active.map((rule) => rule.id));
   const oldRules = existingByPage.get(page.canonical_url) ?? existingByPage.get(page.url) ?? [];
   const deprecated = oldRules
-    .filter((rule) => !activeHashes.has(rule.source.source_sentence_hash))
+    .filter((rule) => !activeIds.has(rule.id))
     .map((rule) => ({ ...rule, status: "deprecated" as const, deprecated_at: rule.deprecated_at ?? now() }));
   const rules = [...active, ...deprecated].sort((a, b) => a.id.localeCompare(b.id));
   const output = resolve(rulesRoot, category, `${page.slug}.json`);
