@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 183
-- Retained MUST: 164
-- Retained MUST_NOT: 19
+- Reviewed rules: 185
+- Retained MUST: 165
+- Retained MUST_NOT: 20
 - Normative level changes: 4
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:50:43Z
+- Reviewed at: 2026-07-21T15:58:32Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -111,6 +111,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APP-CLIPS-0085 — Recovered MUST from the source's explicit must requirement for simultaneous business or location state. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0087 — Recovered MUST from the explicit Always directive for simple clear call-to-action messaging. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0089 — Recovered MUST from the explicit requirement that Apple trademarks remain in English. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- HIG-TECHNOLOGIES-CARPLAY-0001 — Retained MUST_NOT after confirming the explicit Never prohibition and its stopped-vehicle recovery condition. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0002 — Retained MUST after confirming the explicit Make sure directive in the locked-iPhone context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0007 — Retained MUST after confirming the explicit Ensure directive and its hierarchy and placement context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0010 — Retained MUST after confirming the explicit Ensure directive and automatic appearance context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0016 — Recovered MUST from the supporting Make sure directive and its driving-safety boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0026 — Recovered MUST_NOT from the explicit Never prohibition in the error-handling context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -279,10 +285,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APP-CLIPS-0089 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit requirement that Apple trademarks remain in English. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APPLE-PAY-0020 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-APPLE-PAY-0025 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
-- HIG-TECHNOLOGIES-CARPLAY-0001 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- HIG-TECHNOLOGIES-CARPLAY-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- HIG-TECHNOLOGIES-CARPLAY-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- HIG-TECHNOLOGIES-CARPLAY-0010 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0001 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained MUST_NOT after confirming the explicit Never prohibition and its stopped-vehicle recovery condition. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive in the locked-iPhone context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0007 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive and its hierarchy and placement context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0010 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive and automatic appearance context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the supporting Make sure directive and its driving-safety boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-CARPLAY-0026 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered MUST_NOT from the explicit Never prohibition in the error-handling context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 · MUST · retained_with_atomicity_or_scope_correction — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-ICLOUD-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))

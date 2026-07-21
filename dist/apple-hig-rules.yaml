@@ -103248,10 +103248,10 @@
   topic: carplay
   subtopic: iphone-interactions
   statement:
-    en: Exclude lock people out of CarPlay because the connected iPhone requires input from the applicable experience.
-    ja: 該当する体験ではlock people out of CarPlay because the connected iPhone requires inputを避ける。
+    en: Never block access to CarPlay because the connected iPhone requires input.
+    ja: 接続中のiPhoneで入力が必要なことを理由にCarPlayを利用不能にしない。
   normative_level: MUST_NOT
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: prohibit
   severity: error
@@ -103266,7 +103266,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - If a connected iPhone needs input, let people resolve the issue only after the vehicle stops.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103274,7 +103274,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude lock people out of CarPlay because the connected iPhone requires input from the applicable experience.” in the documented CarPlay context?
+      - Does the design satisfy “Never block access to CarPlay because the connected iPhone requires input.” in the documented CarPlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -103289,25 +103289,25 @@
     retrieved_at: 2026-07-21T11:14:42.059Z
     source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
     source_sentence_hash: 2bf658bcedcfd0da72d93c5f3bf0f9c728ca3bcc72a6d075f19a649830ca6463
-    evidence_paraphrase: Exclude lock people out of CarPlay because the connected iPhone requires input from the applicable experience.
+    evidence_paraphrase: Never block access to CarPlay because the connected iPhone requires input.
   tags:
     - technologies
     - carplay
     - iphone-interactions
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude lock people out of CarPlay because the connected iPhone requires input from the applicable experience.
+  apple_native_rule: Never block access to CarPlay because the connected iPhone requires input.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CARPLAY-0002
-  title: Make sure your app works without requiring people to unlock iPhone
+  title: Make sure CarPlay works without requiring people to unlock iPhone
   category: technologies
   topic: carplay
   subtopic: iphone-interactions
   statement:
-    en: Verify that your app works without requiring people to unlock iPhone.
-    ja: your app works without requiring people to unlock iPhoneを満たしていることを確認する。
+    en: Make sure the CarPlay app works without requiring people to unlock iPhone.
+    ja: iPhoneのロック解除を求めずにCarPlayアプリが動作するようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -103322,7 +103322,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Support the common case in which the connected iPhone remains locked.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103330,7 +103330,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that your app works without requiring people to unlock iPhone.” in the documented CarPlay context?
+      - Does the design satisfy “Make sure the CarPlay app works without requiring people to unlock iPhone.” in the documented CarPlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -103345,14 +103345,14 @@
     retrieved_at: 2026-07-21T11:14:42.059Z
     source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
     source_sentence_hash: 2d1ed01d71fc51c8dc8ef5a1665198a61e65ca4183267bd1ca39df10012d25eb
-    evidence_paraphrase: Verify that your app works without requiring people to unlock iPhone.
+    evidence_paraphrase: Make sure the CarPlay app works without requiring people to unlock iPhone.
   tags:
     - technologies
     - carplay
     - iphone-interactions
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that your app works without requiring people to unlock iPhone.
+  apple_native_rule: Make sure the CarPlay app works without requiring people to unlock iPhone.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CARPLAY-0003
   title: Let people choose when to start playback
@@ -103363,8 +103363,8 @@
     en: Preserve people’s ability to choose when to start playback.
     ja: 利用者がchoose when to start playbackできる状態を保つ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -103378,7 +103378,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Let people initiate playback.
+    - Autoplay is appropriate only for a single audio source or for resuming audio that an interruption paused.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103421,8 +103422,8 @@
     en: Present the Now Playing screen when audio is ready to play in the documented context.
     ja: 該当する状況でthe Now Playing screen when audio is ready to playを表示する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -103436,7 +103437,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Show Now Playing when audio is playable; load descriptive information in the background.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103479,8 +103480,8 @@
     en: Make useful, high-value information in a clean layout that’s easy to scan from the driver’s seat available when applicable.
     ja: 必要な場合にuseful, high-value information in a clean layout that’s easy to scan from the driver’s seatを利用可能にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -103494,7 +103495,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Prioritize high-value, glanceable information and avoid clutter in the driver environment.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103535,8 +103536,8 @@
     en: Apply the documented CarPlay guidance to maintain an overall consistent appearance throughout your app.
     ja: 「CarPlay」において「Maintain an overall consistent appearance throughout your app」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -103550,7 +103551,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Give similar CarPlay functions a similar appearance while preserving the app’s identity.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103583,15 +103584,15 @@
   apple_native_rule: Apply the documented CarPlay guidance to maintain an overall consistent appearance throughout your app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CARPLAY-0007
-  title: Ensure that primary content stands out and feels actionable
+  title: Ensure primary CarPlay content stands out and feels actionable
   category: technologies
   topic: carplay
   subtopic: layout
   statement:
-    en: Verify that that primary content stands out and feels actionable.
-    ja: that primary content stands out and feels actionableを満たしていることを確認する。
+    en: Ensure primary CarPlay content stands out and feels actionable.
+    ja: CarPlayの主要コンテンツを目立たせ、操作可能だと伝わるようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -103606,7 +103607,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Place important content and controls prominently, generally in the upper half of the display.
+    - Use size and placement to communicate hierarchy and actionability.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103614,7 +103616,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that that primary content stands out and feels actionable.” in the documented CarPlay context?
+      - Does the design satisfy “Ensure primary CarPlay content stands out and feels actionable.” in the documented CarPlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -103629,14 +103631,14 @@
     retrieved_at: 2026-07-21T11:14:42.059Z
     source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
     source_sentence_hash: 2f822802341836c549d702e14baef1bbf35fe4dd74bd8d03e6ea466fcbeb93be
-    evidence_paraphrase: Verify that that primary content stands out and feels actionable.
+    evidence_paraphrase: Ensure primary CarPlay content stands out and feels actionable.
   tags:
     - technologies
     - carplay
     - layout
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that that primary content stands out and feels actionable.
+  apple_native_rule: Ensure primary CarPlay content stands out and feels actionable.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CARPLAY-0008
   title: Avoid using the same color for interactive and noninteractive elements
@@ -103647,8 +103649,8 @@
     en: Exclude using the same color for interactive and noninteractive elements from the applicable experience.
     ja: 該当する体験ではusing the same color for interactive and noninteractive elementsを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -103662,7 +103664,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep interactive and noninteractive elements visually distinguishable.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103703,8 +103705,8 @@
     en: Apply the documented CarPlay guidance to test your app’s color scheme under a variety of lighting conditions in an actual car.
     ja: 「CarPlay」において「Test your app’s color scheme under a variety of lighting conditions in an actual car」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -103718,7 +103720,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Test day, night, weather, tint, brightness, and direct-sunlight conditions in a vehicle.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103751,15 +103753,15 @@
   apple_native_rule: Apply the documented CarPlay guidance to test your app’s color scheme under a variety of lighting conditions in an actual car.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CARPLAY-0010
-  title: Ensure your app looks great in both dark and light environments
+  title: Ensure CarPlay looks great in dark and light environments
   category: technologies
   topic: carplay
   subtopic: color
   statement:
-    en: Verify that your app looks great in both dark and light environments.
-    ja: your app looks great in both dark and light environmentsを満たしていることを確認する。
+    en: Ensure the CarPlay app works visually in both dark and light environments.
+    ja: CarPlayアプリが暗い環境と明るい環境の両方で視覚的に機能するようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -103775,7 +103777,7 @@
     modalities:
       - gaze
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Support the system’s automatic dark and light CarPlay appearances.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103783,7 +103785,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that your app looks great in both dark and light environments.” in the documented CarPlay context?
+      - Does the design satisfy “Ensure the CarPlay app works visually in both dark and light environments.” in the documented CarPlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -103798,7 +103800,7 @@
     retrieved_at: 2026-07-21T11:14:42.059Z
     source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
     source_sentence_hash: 0316541efb542be26ae8dacce1a99a795b4713dcbf09dad678af152ed91bf9b9
-    evidence_paraphrase: Verify that your app looks great in both dark and light environments.
+    evidence_paraphrase: Ensure the CarPlay app works visually in both dark and light environments.
   tags:
     - technologies
     - carplay
@@ -103806,7 +103808,7 @@
     - gaze
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that your app looks great in both dark and light environments.
+  apple_native_rule: Ensure the CarPlay app works visually in both dark and light environments.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CARPLAY-0011
   title: Choose colors that help you communicate effectively with everyone
@@ -103817,8 +103819,8 @@
     en: Apply the documented CarPlay guidance to choose colors that help you communicate effectively with everyone.
     ja: 「CarPlay」において「Choose colors that help you communicate effectively with everyone」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -103832,7 +103834,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Choose inclusive colors that communicate effectively across visual abilities.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103873,8 +103875,8 @@
     en: Exclude use black for your icon’s background from the applicable experience.
     ja: 該当する体験ではuse black for your icon’s backgroundを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -103888,7 +103890,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - If the source icon uses black, lighten the background or add a border for CarPlay.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
@@ -103919,6 +103921,911 @@
   priority_rank: 4
   status: active
   apple_native_rule: Exclude use black for your icon’s background from the applicable experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0013
+  title: Use system-defined CarPlay templates appropriate to app type
+  category: technologies
+  topic: carplay
+  subtopic: carplay
+  statement:
+    en: Choose or apply system-defined CarPlay templates appropriate to app type in the documented context.
+    ja: 該当する状況ではsystem-defined CarPlay templates appropriate to app typeを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Use the system template family for the approved audio, communication, navigation, fueling, or driving-task app type.
+    - Let the system adapt layout and input across vehicle displays.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply system-defined CarPlay templates appropriate to app type in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: 3222a3d38978e1a4598b0e8c23617d97a2a820f6506937a1cca63e9c08715266
+    evidence_paraphrase: Choose or apply system-defined CarPlay templates appropriate to app type in the documented context.
+  tags:
+    - technologies
+    - carplay
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose or apply system-defined CarPlay templates appropriate to app type in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0014
+  title: Keep CarPlay driving tasks quick and minimally interactive
+  category: technologies
+  topic: carplay
+  subtopic: carplay
+  statement:
+    en: Maintain carPlay driving tasks quick and minimally interactive.
+    ja: CarPlay driving tasks quick and minimally interactiveを維持する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Minimize interaction time and attention away from driving.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Maintain carPlay driving tasks quick and minimally interactive.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: f27ce930e2229e5addeeff32ffbcfd14ca79a5ced7b3f736479ab6c8b5398e4a
+    evidence_paraphrase: Maintain carPlay driving tasks quick and minimally interactive.
+  tags:
+    - technologies
+    - carplay
+  priority_rank: 4
+  status: active
+  apple_native_rule: Maintain carPlay driving tasks quick and minimally interactive.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0015
+  title: Avoid requiring iPhone app interactions while CarPlay is active
+  category: technologies
+  topic: carplay
+  subtopic: iphone-interactions
+  statement:
+    en: Exclude requiring iPhone app interactions while CarPlay is active from the applicable experience.
+    ja: 該当する体験ではrequiring iPhone app interactions while CarPlay is activeを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - While CarPlay is active, keep required interactions on vehicle controls and the CarPlay display.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Exclude requiring iPhone app interactions while CarPlay is active from the applicable experience.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - iPhone interactions
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: 9423d18b92d889b098658853693b6b53779a94981cde8024b5dcc7df1b75ae3d
+    evidence_paraphrase: Exclude requiring iPhone app interactions while CarPlay is active from the applicable experience.
+  tags:
+    - technologies
+    - carplay
+    - iphone-interactions
+  priority_rank: 4
+  status: active
+  apple_native_rule: Exclude requiring iPhone app interactions while CarPlay is active from the applicable experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0016
+  title: Make sure required iPhone setup finishes before vehicle motion
+  category: technologies
+  topic: carplay
+  subtopic: iphone-interactions
+  statement:
+    en: Make sure required iPhone-side setup finishes before the vehicle begins moving.
+    ja: 必要なiPhone側の設定を車両が動き始める前に完了させる。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Finish any required iPhone-side setup before the vehicle begins moving.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Make sure required iPhone-side setup finishes before the vehicle begins moving.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - iPhone interactions
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: 9b4e3d0a2409cdd09d4bea6062e724d8c5bc2a88db1754ceb81ebe5e62c44a89
+    evidence_paraphrase: Make sure required iPhone-side setup finishes before the vehicle begins moving.
+  tags:
+    - technologies
+    - carplay
+    - iphone-interactions
+  priority_rank: 4
+  status: active
+  apple_native_rule: Make sure required iPhone-side setup finishes before the vehicle begins moving.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0017
+  title: Use relative CarPlay audio-level adjustments only when necessary
+  category: technologies
+  topic: carplay
+  subtopic: audio
+  statement:
+    en: Choose or apply relative CarPlay audio-level adjustments only when necessary in the documented context.
+    ja: 該当する状況ではrelative CarPlay audio-level adjustments only when necessaryを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Use relative level changes only to balance independently mixed audio within the app.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply relative CarPlay audio-level adjustments only when necessary in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - iPhone interactions
+      - Audio
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: e6af2af9bd7fb785a85404c4ca9b61eff903158dd38107162fb23b8db16735ba
+    evidence_paraphrase: Choose or apply relative CarPlay audio-level adjustments only when necessary in the documented context.
+  tags:
+    - technologies
+    - carplay
+    - iphone-interactions
+    - audio
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose or apply relative CarPlay audio-level adjustments only when necessary in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0018
+  title: Avoid starting a CarPlay audio session before audio is ready
+  category: technologies
+  topic: carplay
+  subtopic: audio
+  statement:
+    en: Exclude starting a CarPlay audio session before audio is ready from the applicable experience.
+    ja: 該当する体験ではstarting a CarPlay audio session before audio is readyを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Delay the audio session until content is ready because an early session can silence other vehicle audio.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Exclude starting a CarPlay audio session before audio is ready from the applicable experience.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - iPhone interactions
+      - Audio
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: 23ded631efeae44ed583760e34df0adadf8c5b0d1f854777c11d963e3a7f23ee
+    evidence_paraphrase: Exclude starting a CarPlay audio session before audio is ready from the applicable experience.
+  tags:
+    - technologies
+    - carplay
+    - iphone-interactions
+    - audio
+  priority_rank: 4
+  status: active
+  apple_native_rule: Exclude starting a CarPlay audio session before audio is ready from the applicable experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0019
+  title: Avoid changing the overall CarPlay output volume
+  category: technologies
+  topic: carplay
+  subtopic: audio
+  statement:
+    en: Exclude changing the overall CarPlay output volume from the applicable experience.
+    ja: 該当する体験ではchanging the overall CarPlay output volumeを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Let people control the final CarPlay output volume.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Exclude changing the overall CarPlay output volume from the applicable experience.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - iPhone interactions
+      - Audio
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: f87081c12048dce44bef6d84f29a4231e58038525b3565c91e64ad48c66615b4
+    evidence_paraphrase: Exclude changing the overall CarPlay output volume from the applicable experience.
+  tags:
+    - technologies
+    - carplay
+    - iphone-interactions
+    - audio
+  priority_rank: 4
+  status: active
+  apple_native_rule: Exclude changing the overall CarPlay output volume from the applicable experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0020
+  title: Use a limited CarPlay color palette coordinated with the app logo
+  category: technologies
+  topic: carplay
+  subtopic: color
+  statement:
+    en: Choose or apply a limited CarPlay color palette coordinated with the app logo in the documented context.
+    ja: 該当する状況ではa limited CarPlay color palette coordinated with the app logoを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Coordinate a limited CarPlay palette with the app logo.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply a limited CarPlay color palette coordinated with the app logo in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - Color
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: 1c34668b408ebddabc5738ec4bdd370db7798cb088307e7defab24d4826a6057
+    evidence_paraphrase: Choose or apply a limited CarPlay color palette coordinated with the app logo in the documented context.
+  tags:
+    - technologies
+    - carplay
+    - color
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose or apply a limited CarPlay color palette coordinated with the app logo in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0021
+  title: Use @2x and @3x high-resolution images for all CarPlay artwork
+  category: technologies
+  topic: carplay
+  subtopic: icons-and-images
+  statement:
+    en: Choose or apply @2x and @3x high-resolution images for all CarPlay artwork in the documented context.
+    ja: 該当する状況では@2x and @3x high-resolution images for all CarPlay artworkを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Supply @2x and @3x assets for every CarPlay image.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply @2x and @3x high-resolution images for all CarPlay artwork in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - Icons and images
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: 81876df7ab59d6320c569ae7f67ec65fe4ff0103bf903987e5fc5e219cf4adb8
+    evidence_paraphrase: Choose or apply @2x and @3x high-resolution images for all CarPlay artwork in the documented context.
+  tags:
+    - technologies
+    - carplay
+    - icons-and-images
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose or apply @2x and @3x high-resolution images for all CarPlay artwork in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0022
+  title: Use the iPhone app icon design in CarPlay
+  category: technologies
+  topic: carplay
+  subtopic: icons-and-images
+  statement:
+    en: Choose or apply the iPhone app icon design in CarPlay in the documented context.
+    ja: 該当する状況ではthe iPhone app icon design in CarPlayを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Carry the iPhone app icon design into CarPlay.
+    - Provide 120×120-pixel @2x and 180×180-pixel @3x icon assets.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply the iPhone app icon design in CarPlay in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - Icons and images
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: 5c842665e755029585fb410eba1377c82d35b112fb3e2d17aec0dcfbc9635ec7
+    evidence_paraphrase: Choose or apply the iPhone app icon design in CarPlay in the documented context.
+  tags:
+    - technologies
+    - carplay
+    - icons-and-images
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose or apply the iPhone app icon design in CarPlay in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0023
+  title: Show CarPlay errors on the vehicle display rather than iPhone
+  category: technologies
+  topic: carplay
+  subtopic: error-handling
+  statement:
+    en: Present carPlay errors on the vehicle display rather than iPhone in the documented context.
+    ja: 該当する状況でCarPlay errors on the vehicle display rather than iPhoneを表示する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Present a necessary error clearly on the CarPlay display.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Present carPlay errors on the vehicle display rather than iPhone in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - Error handling
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: 2e0fc63ff0e0aa5151794e37a97e46ab1f00d24b2060865c27d90ce6c59a0100
+    evidence_paraphrase: Present carPlay errors on the vehicle display rather than iPhone in the documented context.
+  tags:
+    - technologies
+    - carplay
+    - error-handling
+  priority_rank: 4
+  status: active
+  apple_native_rule: Present carPlay errors on the vehicle display rather than iPhone in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0024
+  title: Use graceful CarPlay error handling
+  category: technologies
+  topic: carplay
+  subtopic: error-handling
+  statement:
+    en: Choose or apply graceful CarPlay error handling in the documented context.
+    ja: 該当する状況ではgraceful CarPlay error handlingを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Handle CarPlay errors gracefully.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply graceful CarPlay error handling in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - Error handling
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: e0fb4bfd0066acab0803f0d90ac21ce1dfbfb6fe51f63b5a8378c2723bceaacf
+    evidence_paraphrase: Choose or apply graceful CarPlay error handling in the documented context.
+  tags:
+    - technologies
+    - carplay
+    - error-handling
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose or apply graceful CarPlay error handling in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0025
+  title: Avoid reporting CarPlay errors unless absolutely necessary
+  category: technologies
+  topic: carplay
+  subtopic: error-handling
+  statement:
+    en: Exclude reporting CarPlay errors unless absolutely necessary from the applicable experience.
+    ja: 該当する体験ではreporting CarPlay errors unless absolutely necessaryを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Report an error only when it is absolutely necessary.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Exclude reporting CarPlay errors unless absolutely necessary from the applicable experience.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - Error handling
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: e0fb4bfd0066acab0803f0d90ac21ce1dfbfb6fe51f63b5a8378c2723bceaacf
+    evidence_paraphrase: Exclude reporting CarPlay errors unless absolutely necessary from the applicable experience.
+  tags:
+    - technologies
+    - carplay
+    - error-handling
+  priority_rank: 4
+  status: active
+  apple_native_rule: Exclude reporting CarPlay errors unless absolutely necessary from the applicable experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0026
+  title: Never direct people to iPhone to resolve CarPlay errors
+  category: technologies
+  topic: carplay
+  subtopic: error-handling
+  statement:
+    en: Never direct people to use iPhone to read or resolve CarPlay errors.
+    ja: CarPlayのエラーを読んだり解決したりするためにiPhoneを使うよう案内しない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Never ask people to read or resolve a CarPlay error on iPhone.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never direct people to use iPhone to read or resolve CarPlay errors.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - Error handling
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: f90ba28bc9856966951dbb50ab6f92bf752204a5c7520931c70c674dc9765595
+    evidence_paraphrase: Never direct people to use iPhone to read or resolve CarPlay errors.
+  tags:
+    - technologies
+    - carplay
+    - error-handling
+  priority_rank: 4
+  status: active
+  apple_native_rule: Never direct people to use iPhone to read or resolve CarPlay errors.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0027
+  title: Use immediate playback once CarPlay audio is sufficiently loaded
+  category: technologies
+  topic: carplay
+  subtopic: audio
+  statement:
+    en: Choose or apply immediate playback once CarPlay audio is sufficiently loaded in the documented context.
+    ja: 該当する状況ではimmediate playback once CarPlay audio is sufficiently loadedを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Keep the selected item and a loading indicator visible until buffered audio can start.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply immediate playback once CarPlay audio is sufficiently loaded in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - iPhone interactions
+      - Audio
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: eb8b85f524202e98205d46466cd94c2e811b1abca33f557ca24aa4ce3204f3e4
+    evidence_paraphrase: Choose or apply immediate playback once CarPlay audio is sufficiently loaded in the documented context.
+  tags:
+    - technologies
+    - carplay
+    - iphone-interactions
+    - audio
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose or apply immediate playback once CarPlay audio is sufficiently loaded in the documented context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-CARPLAY-0028
+  title: Use appropriate CarPlay audio resumption after an interruption
+  category: technologies
+  topic: carplay
+  subtopic: audio
+  statement:
+    en: Choose or apply appropriate CarPlay audio resumption after an interruption in the documented context.
+    ja: 該当する状況ではappropriate CarPlay audio resumption after an interruptionを採用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - carplay
+    devices:
+      - iphone
+      - carplay-display
+    components: []
+    modalities: []
+  conditions:
+    - Resume only audio that was active before a temporary interruption.
+    - Treat a new Siri playlist request as a permanent replacement, not a resumable interruption.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable CarPlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるCarPlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose or apply appropriate CarPlay audio resumption after an interruption in the documented context.” in the documented CarPlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/carplay
+    page_title: CarPlay
+    section_path:
+      - CarPlay
+      - iPhone interactions
+      - Audio
+    retrieved_at: 2026-07-21T11:14:42.059Z
+    source_hash: 0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092
+    source_sentence_hash: ddf8a0d23e87f712a7b4bfba578e053ea7be3764577b42b26b817bef5992275c
+    evidence_paraphrase: Choose or apply appropriate CarPlay audio resumption after an interruption in the documented context.
+  tags:
+    - technologies
+    - carplay
+    - iphone-interactions
+    - audio
+  priority_rank: 4
+  status: active
+  apple_native_rule: Choose or apply appropriate CarPlay audio resumption after an interruption in the documented context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-GAME-CENTER-0001
   title: Display the access point in menu screens

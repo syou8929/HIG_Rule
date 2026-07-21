@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T15:54:00.086Z. 2095 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:00:52.668Z. 2111 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1999,18 +1999,34 @@ Generated 2026-07-21T15:54:00.086Z. 2095 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-CAREKIT-0017 · SHOULD · low** — Clearly denote units of time. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 ### carplay
 
-- **HIG-TECHNOLOGIES-CARPLAY-0001 · MUST_NOT · medium** — Exclude lock people out of CarPlay because the connected iPhone requires input from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0002 · MUST · medium** — Verify that your app works without requiring people to unlock iPhone. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0003 · SHOULD · low** — Preserve people’s ability to choose when to start playback. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0004 · SHOULD · low** — Present the Now Playing screen when audio is ready to play in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0005 · SHOULD · low** — Make useful, high-value information in a clean layout that’s easy to scan from the driver’s seat available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0006 · SHOULD · low** — Apply the documented CarPlay guidance to maintain an overall consistent appearance throughout your app. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0007 · MUST · medium** — Verify that that primary content stands out and feels actionable. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0008 · AVOID · low** — Exclude using the same color for interactive and noninteractive elements from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0009 · SHOULD · low** — Apply the documented CarPlay guidance to test your app’s color scheme under a variety of lighting conditions in an actual car. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0010 · MUST · medium** — Verify that your app looks great in both dark and light environments. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0011 · SHOULD · low** — Apply the documented CarPlay guidance to choose colors that help you communicate effectively with everyone. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
-- **HIG-TECHNOLOGIES-CARPLAY-0012 · AVOID · low** — Exclude use black for your icon’s background from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0001 · MUST_NOT · high** — Never block access to CarPlay because the connected iPhone requires input. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0002 · MUST · high** — Make sure the CarPlay app works without requiring people to unlock iPhone. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0003 · SHOULD · high** — Preserve people’s ability to choose when to start playback. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0004 · SHOULD · high** — Present the Now Playing screen when audio is ready to play in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0005 · SHOULD · high** — Make useful, high-value information in a clean layout that’s easy to scan from the driver’s seat available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0006 · SHOULD · high** — Apply the documented CarPlay guidance to maintain an overall consistent appearance throughout your app. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0007 · MUST · high** — Ensure primary CarPlay content stands out and feels actionable. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0008 · AVOID · high** — Exclude using the same color for interactive and noninteractive elements from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0009 · SHOULD · high** — Apply the documented CarPlay guidance to test your app’s color scheme under a variety of lighting conditions in an actual car. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0010 · MUST · high** — Ensure the CarPlay app works visually in both dark and light environments. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0011 · SHOULD · high** — Apply the documented CarPlay guidance to choose colors that help you communicate effectively with everyone. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0012 · AVOID · high** — Exclude use black for your icon’s background from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0013 · SHOULD · high** — Choose or apply system-defined CarPlay templates appropriate to app type in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0014 · SHOULD · high** — Maintain carPlay driving tasks quick and minimally interactive. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0015 · AVOID · high** — Exclude requiring iPhone app interactions while CarPlay is active from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0016 · MUST · high** — Make sure required iPhone-side setup finishes before the vehicle begins moving. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0017 · SHOULD · high** — Choose or apply relative CarPlay audio-level adjustments only when necessary in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0018 · AVOID · high** — Exclude starting a CarPlay audio session before audio is ready from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0019 · AVOID · high** — Exclude changing the overall CarPlay output volume from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0020 · SHOULD · high** — Choose or apply a limited CarPlay color palette coordinated with the app logo in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0021 · SHOULD · high** — Choose or apply @2x and @3x high-resolution images for all CarPlay artwork in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0022 · SHOULD · high** — Choose or apply the iPhone app icon design in CarPlay in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0023 · SHOULD · high** — Present carPlay errors on the vehicle display rather than iPhone in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0024 · SHOULD · high** — Choose or apply graceful CarPlay error handling in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0025 · AVOID · high** — Exclude reporting CarPlay errors unless absolutely necessary from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0026 · MUST_NOT · high** — Never direct people to use iPhone to read or resolve CarPlay errors. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0027 · SHOULD · high** — Choose or apply immediate playback once CarPlay audio is sufficiently loaded in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- **HIG-TECHNOLOGIES-CARPLAY-0028 · SHOULD · high** — Choose or apply appropriate CarPlay audio resumption after an interruption in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 ### game-center
 
 - **HIG-TECHNOLOGIES-GAME-CENTER-0001 · SHOULD · low** — Present the access point in menu screens in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:50:43Z",
+  "reviewed_at": "2026-07-21T15:58:32Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
@@ -8,13 +8,92 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 183,
+  "reviewed_rule_count": 185,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-CARPLAY-0001": {
+      "title": "Never lock people out of CarPlay because the connected iPhone requires input",
+      "statement": {
+        "en": "Never block access to CarPlay because the connected iPhone requires input.",
+        "ja": "接続中のiPhoneで入力が必要なことを理由にCarPlayを利用不能にしない。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "If a connected iPhone needs input, let people resolve the issue only after the vehicle stops."
+      ],
+      "review_note": "Retained MUST_NOT after confirming the explicit Never prohibition and its stopped-vehicle recovery condition."
+    },
+    "HIG-TECHNOLOGIES-CARPLAY-0002": {
+      "title": "Make sure CarPlay works without requiring people to unlock iPhone",
+      "statement": {
+        "en": "Make sure the CarPlay app works without requiring people to unlock iPhone.",
+        "ja": "iPhoneのロック解除を求めずにCarPlayアプリが動作するようにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Support the common case in which the connected iPhone remains locked."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Make sure directive in the locked-iPhone context."
+    },
+    "HIG-TECHNOLOGIES-CARPLAY-0007": {
+      "title": "Ensure primary CarPlay content stands out and feels actionable",
+      "statement": {
+        "en": "Ensure primary CarPlay content stands out and feels actionable.",
+        "ja": "CarPlayの主要コンテンツを目立たせ、操作可能だと伝わるようにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Place important content and controls prominently, generally in the upper half of the display.",
+        "Use size and placement to communicate hierarchy and actionability."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Ensure directive and its hierarchy and placement context."
+    },
+    "HIG-TECHNOLOGIES-CARPLAY-0010": {
+      "title": "Ensure CarPlay looks great in dark and light environments",
+      "statement": {
+        "en": "Ensure the CarPlay app works visually in both dark and light environments.",
+        "ja": "CarPlayアプリが暗い環境と明るい環境の両方で視覚的に機能するようにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Support the system’s automatic dark and light CarPlay appearances."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Ensure directive and automatic appearance context."
+    },
+    "HIG-TECHNOLOGIES-CARPLAY-0016": {
+      "title": "Make sure required iPhone setup finishes before vehicle motion",
+      "statement": {
+        "en": "Make sure required iPhone-side setup finishes before the vehicle begins moving.",
+        "ja": "必要なiPhone側の設定を車両が動き始める前に完了させる。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Finish any required iPhone-side setup before the vehicle begins moving."
+      ],
+      "review_note": "Recovered MUST from the supporting Make sure directive and its driving-safety boundary."
+    },
+    "HIG-TECHNOLOGIES-CARPLAY-0026": {
+      "title": "Never direct people to iPhone to resolve CarPlay errors",
+      "statement": {
+        "en": "Never direct people to use iPhone to read or resolve CarPlay errors.",
+        "ja": "CarPlayのエラーを読んだり解決したりするためにiPhoneを使うよう案内しない。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Present any necessary error and its resolution on the CarPlay display."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit Never prohibition in the error-handling context."
+    },
     "HIG-TECHNOLOGIES-APP-CLIPS-0005": {
       "title": "Ensure people can use your App Clip immediately",
       "statement": {
