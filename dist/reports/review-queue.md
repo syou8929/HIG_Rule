@@ -1,26 +1,27 @@
 # Human source-review queue
 
-- Remaining rules: 1128
+- Remaining rules: 1109
 - Next priority: 4 (platform-specific-hig)
-- Next batch: 3
+- Next batch: 4
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 228
+- 4 (platform-specific-hig): 225
 - 5 (input-and-device-constraints): 28
-- 6 (apple-platform-common): 849
+- 6 (apple-platform-common): 833
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 121
-- MAY: 144
-- SHOULD: 863
+- MAY: 140
+- SHOULD: 848
 
 ## Next batch
 
-- HIG-COMPONENTS-MENUS-0018 · SHOULD — Choose a small or medium menu layout when it can help streamline people’s choices · Menus > Platform considerations > iOS, iPadOS ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- HIG-COMPONENTS-MENUS-0019 · SHOULD — Prefer displaying a menu near the content it controls · Menus > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- HIG-COMPONENTS-MENUS-0020 · SHOULD — Prefer the subtle breakthrough effect in most cases · Menus > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-ORNAMENTS-0002 · SHOULD — Aim to keep an ornament’s width the same or narrower than the width of the associated window · Ornaments > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0004 · SHOULD — Use system-provided toolbars and tab bars unless you need to create custom components · Ornaments > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0001 · MAY — Consider using an ornament to present frequently needed controls or information in a consistent location th… · Ornaments > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
+- HIG-COMPONENTS-ORNAMENTS-0003 · MAY — Consider using borderless buttons in an ornament · Ornaments > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))

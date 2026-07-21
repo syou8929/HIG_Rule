@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 211
-- Retained MUST: 190
+- Reviewed rules: 212
+- Retained MUST: 191
 - Retained MUST_NOT: 21
 - Normative level changes: 5
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:02:48Z
+- Reviewed at: 2026-07-21T17:06:25Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -34,6 +34,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0022 — Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LOCKUPS-0004 — Retained MUST after confirming the explicit Make sure directive and all directional mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
 - HIG-COMPONENTS-LOCKUPS-0005 — Retained MUST after confirming the explicit needs-to requirement and flexible-size condition. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- HIG-COMPONENTS-MENUS-0010 — Retained MUST after reconfirming the Make sure directive and discoverability condition. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0017 — Retained MUST after reconfirming the Make sure directive and cross-platform size conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0027 — Retained MUST after confirming the explicit needs-to requirement and its command-discoverability purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-THE-MENU-BAR-0023 — Retained MUST after confirming the explicit Require directive and its interaction-cost rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0024 — Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
@@ -189,8 +192,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0022 · MUST · retained_with_atomicity_or_scope_correction — Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LOCKUPS-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive and all directional mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
 - HIG-COMPONENTS-LOCKUPS-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit needs-to requirement and flexible-size condition. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
-- HIG-COMPONENTS-MENUS-0010 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- HIG-COMPONENTS-MENUS-0017 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0010 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the Make sure directive and discoverability condition. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0017 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the Make sure directive and cross-platform size conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0027 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit needs-to requirement and its command-discoverability purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-NOTIFICATIONS-0016 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-PAGE-CONTROLS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-POPOVERS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1024
-- Reviewed batches: 66
+- Reviewed rules: 1055
+- Reviewed batches: 67
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:02:48Z
+- Reviewed at: 2026-07-21T17:06:25Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -227,6 +227,37 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-LOCKUPS-0003 · high — Recorded image availability and the more personal visual connection. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
 - HIG-COMPONENTS-LOCKUPS-0004 · high — Recovered the Make sure requirement and recorded all three layout-to-tilt mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
 - HIG-COMPONENTS-LOCKUPS-0005 · high — Recovered the needs-to requirement while preserving the source's flexible sizing allowance. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
+- HIG-COMPONENTS-MENUS-0001 · high — Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0002 · high — Recorded both visible unavailability and disabled interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0003 · high — Recorded the documented purposes and separated unclear-icon avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0004 · high — Recorded the all-or-none treatment that preserves balance. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0005 · high — Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0006 · high — Recorded the separator technique without making grouping mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0007 · high — Repaired the truncated candidate and recorded the importance exception. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0008 · high — Recorded both shortening alternatives and the dynamic-content exception. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0009 · high — Recorded the repeated-term threshold and predictive-label technique. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0010 · high — Reconfirmed the Make sure requirement and discoverability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0011 · high — Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0012 · high — Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0013 · high — Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0014 · high — Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0015 · high — Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0016 · high — Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0017 · high — Reconfirmed the Make sure requirement and captured text and target-size handling. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0018 · high — Recorded all three layout definitions and their numeric top-row constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0019 · high — Recorded the gaze-attention reason for spatial proximity. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0020 · high — Recorded automatic behavior and both qualified alternatives without raising their strength. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0021 · high — Recorded the standard-icon mechanism for consistent representation. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0022 · high — Recovered the general labeling lead and its action-label form. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0023 · high — Recovered the capitalization lead and preserved the game-style qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0024 · high — Recovered the ellipsis lead and its incomplete-action condition. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0025 · high — Recovered the limit lead and recorded both source thresholds. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0026 · high — Recovered the conditional alternative without promoting its strength. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0027 · high — Recovered the explicit needs-to requirement separately from individual item appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0028 · high — Recovered the explicit don't guidance conservatively as AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0029 · high — Recovered the small-layout-only condition. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0030 · high — Recovered the per-action symbol requirement under the small layout. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-MENUS-0031 · high — Recovered the medium-layout recommendation and preserved its consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-NOTIFICATIONS-0019 · high — Recorded the brief-display limitation and redundant-delivery requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0020 · high — Made the generic privacy prompt specific to the official short-look disclosure risk. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0021 · high — Replaced a truncated title while preserving the optional source strength. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))

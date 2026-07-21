@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:04:26.214Z. 2238 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:10:08.398Z. 2248 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1174,27 +1174,37 @@ Generated 2026-07-21T17:04:26.214Z. 2238 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-LOCKUPS-0005 · MUST · high** — Make every tvOS poster size appropriate for its content. ([source](https://developer.apple.com/design/human-interface-guidelines/lockups))
 ### menus
 
-- **HIG-COMPONENTS-MENUS-0001 · SHOULD · low** — Apply the documented Menus guidance to remove articles like a, an, and the from menu-item labels to save space. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0002 · SHOULD · low** — Present people when a menu item is unavailable in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0003 · SHOULD · low** — Choose or apply menu item icons sparingly and with purpose in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0004 · SHOULD · low** — Apply the documented Menus guidance to apply a uniform visual treatment across menu items in the same group. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0005 · SHOULD · low** — Favor listing important or frequently used menu items first when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0006 · MAY · low** — Evaluate whether grouping logically related items is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0007 · SHOULD · low** — Favor keeping all logically related commands in the same group, even if the commands don’t all have the same when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0008 · SHOULD · low** — Apply the documented Menus guidance to be mindful of menu length. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0009 · SHOULD · low** — Choose or apply submenus sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0010 · MUST · medium** — Verify that a submenu remains available even when its nested menu items are unavailable. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0011 · SHOULD · low** — Favor using a submenu to indenting menu items when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0012 · MAY · low** — Evaluate whether using a changeable label that describes an item’s current state is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0013 · SHOULD · low** — Apply the documented Menus guidance to include a verb if a changeable label isn’t clear enough. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0014 · MAY · low** — Evaluate whether using a checkmark to show that an attribute is currently in effect is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0015 · MAY · low** — Evaluate whether offering a menu item that makes it easy to remove multiple toggled attributes is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0016 · SHOULD · low** — Apply the documented Menus guidance to let players navigate in-game menus using the platform’s default interaction method. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0017 · MUST · medium** — Verify that your menus remain easy to open and read on all platforms you support. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0018 · SHOULD · low** — Apply the documented Menus guidance to choose a small or medium menu layout when it can help streamline people’s choices. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0019 · SHOULD · low** — Favor displaying a menu near the content it controls when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0020 · SHOULD · low** — Favor the subtle breakthrough effect in most cases when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- **HIG-COMPONENTS-MENUS-0021 · SHOULD · low** — Represent common actions consistently in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0001 · SHOULD · high** — Apply the documented Menus guidance to remove articles like a, an, and the from menu-item labels to save space. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0002 · SHOULD · high** — Present people when a menu item is unavailable in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0003 · SHOULD · high** — Choose or apply menu item icons sparingly and with purpose in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0004 · SHOULD · high** — Apply the documented Menus guidance to apply a uniform visual treatment across menu items in the same group. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0005 · SHOULD · high** — Favor listing important or frequently used menu items first when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0006 · MAY · high** — Evaluate whether grouping logically related items is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0007 · SHOULD · high** — Keep logically related menu commands in one group even when their importance differs. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0008 · SHOULD · high** — Apply the documented Menus guidance to be mindful of menu length. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0009 · SHOULD · high** — Choose or apply submenus sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0010 · MUST · high** — Keep a submenu available even when every nested item is unavailable. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0011 · SHOULD · high** — Favor using a submenu to indenting menu items when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0012 · MAY · high** — Evaluate whether using a changeable label that describes an item’s current state is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0013 · SHOULD · high** — Apply the documented Menus guidance to include a verb if a changeable label isn’t clear enough. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0014 · MAY · high** — Evaluate whether using a checkmark to show that an attribute is currently in effect is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0015 · MAY · high** — Evaluate whether offering a menu item that makes it easy to remove multiple toggled attributes is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0016 · SHOULD · high** — Apply the documented Menus guidance to let players navigate in-game menus using the platform’s default interaction method. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0017 · MUST · high** — Keep in-game menus easy to open, read, and interact with on every supported platform. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0018 · SHOULD · high** — Choose a small or medium iOS or iPadOS menu layout when it streamlines people’s choices. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0019 · SHOULD · high** — Favor displaying a menu near the content it controls when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0020 · SHOULD · high** — Favor the subtle breakthrough effect in most cases when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0021 · SHOULD · high** — Represent common actions consistently in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0022 · SHOULD · high** — Give every menu item a clear, succinct label that describes it. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0023 · SHOULD · high** — Use title-style capitalization for menu-item labels to match platform experience. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0024 · SHOULD · high** — Append an ellipsis when a menu action needs more information or choices before completion. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0025 · SHOULD · high** — Limit submenu hierarchy to one level and keep each submenu short. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0026 · MAY · high** — When necessary, consider displaying both state actions instead of one toggled menu item. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0027 · MUST · high** — Keep a menu available even when every item it contains is unavailable. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0028 · AVOID · high** — Avoid displaying an icon that doesn’t clearly represent its menu item. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0029 · SHOULD · high** — Use the small iOS or iPadOS menu layout only for closely related actions that form a group. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0030 · SHOULD · high** — Use a recognizable symbol for every unlabeled action in a small iOS or iPadOS menu. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0031 · MAY · high** — Consider the medium iOS or iPadOS layout for three important, frequently used actions. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 ### notifications
 
 - **HIG-COMPONENTS-NOTIFICATIONS-0001 · SHOULD · low** — Make concise, informative notifications available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))

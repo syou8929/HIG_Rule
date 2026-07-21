@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:02:48Z",
+  "reviewed_at": "2026-07-21T17:06:25Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2045,9 +2045,141 @@
         "HIG-COMPONENTS-LOCKUPS-0004", "HIG-COMPONENTS-LOCKUPS-0005"
       ],
       "review_note": "Completed tvOS Lockups coverage; recovered MUST rules for caption-button tilt behavior and content-appropriate poster sizing while preserving all existing IDs."
+    },
+    {
+      "id": "priority-4-menus-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:06:25Z",
+      "review_method": "Rendered Apple HIG Menus guidance, supporting prose, labels, icons, organization, submenus, toggled items, in-game behavior, layout definitions, and visionOS effects were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/menus", "source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-MENUS-0001", "HIG-COMPONENTS-MENUS-0002", "HIG-COMPONENTS-MENUS-0003", "HIG-COMPONENTS-MENUS-0004",
+        "HIG-COMPONENTS-MENUS-0005", "HIG-COMPONENTS-MENUS-0006", "HIG-COMPONENTS-MENUS-0007", "HIG-COMPONENTS-MENUS-0008",
+        "HIG-COMPONENTS-MENUS-0009", "HIG-COMPONENTS-MENUS-0010", "HIG-COMPONENTS-MENUS-0011", "HIG-COMPONENTS-MENUS-0012",
+        "HIG-COMPONENTS-MENUS-0013", "HIG-COMPONENTS-MENUS-0014", "HIG-COMPONENTS-MENUS-0015", "HIG-COMPONENTS-MENUS-0016",
+        "HIG-COMPONENTS-MENUS-0017", "HIG-COMPONENTS-MENUS-0018", "HIG-COMPONENTS-MENUS-0019", "HIG-COMPONENTS-MENUS-0020",
+        "HIG-COMPONENTS-MENUS-0021", "HIG-COMPONENTS-MENUS-0022", "HIG-COMPONENTS-MENUS-0023", "HIG-COMPONENTS-MENUS-0024",
+        "HIG-COMPONENTS-MENUS-0025", "HIG-COMPONENTS-MENUS-0026", "HIG-COMPONENTS-MENUS-0027", "HIG-COMPONENTS-MENUS-0028",
+        "HIG-COMPONENTS-MENUS-0029", "HIG-COMPONENTS-MENUS-0030", "HIG-COMPONENTS-MENUS-0031"
+      ],
+      "review_note": "Completed Menus coverage; recovered ten atomic rules, retained all twenty-one existing IDs, captured iOS/iPadOS layout constraints, and reviewed breakthrough-effect alternatives."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-MENUS-0002": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},
+      "conditions": ["Dim an unavailable item and prevent it from responding to interactions."], "review_note": "Recorded both visible unavailability and disabled interaction."
+    },
+    "HIG-COMPONENTS-MENUS-0003": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "04a52c0362240a0143df25b8cfe703fa93c4aad4ca633df8005425b1e920bfed", "section_path": ["Menus", "Icons"]},
+      "conditions": ["Reserve icons for common actions, key features, locations, devices, visual concepts, or recognizable user content."], "review_note": "Recorded the documented purposes and separated unclear-icon avoidance."
+    },
+    "HIG-COMPONENTS-MENUS-0004": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "ce531e77a80522cecfb2fa3ed224321bbbbed12cd048f1e25b88aed4b243dc28", "section_path": ["Menus", "Icons"]},
+      "conditions": ["Provide icons for every item in a group or for none of them."], "review_note": "Recorded the all-or-none treatment that preserves balance."
+    },
+    "HIG-COMPONENTS-MENUS-0006": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "1ba3887326fd47825c2753ead445149df5a2db2aa5c263090797f8e6e1344c92", "section_path": ["Menus", "Organization"]},
+      "conditions": ["Use a platform-appropriate separator to distinguish related groups visually."], "review_note": "Recorded the separator technique without making grouping mandatory."
+    },
+    "HIG-COMPONENTS-MENUS-0007": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "4c68d60a63d809584fe40818b2c263072ce1b0264106bd2f784ec64ed0ed96a3", "section_path": ["Menus", "Organization"]},
+      "title": "Keep logically related menu commands together", "statement": {"en": "Keep logically related menu commands in one group even when their importance differs.", "ja": "importanceが異なっても論理的に関連するmenu commandは同じgroupにまとめる。"},
+      "conditions": ["Preserve expected command neighborhoods such as related editing actions."], "review_note": "Repaired the truncated candidate and recorded the importance exception."
+    },
+    "HIG-COMPONENTS-MENUS-0008": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "49b92638c46a33bfa135138d9e80e99bf9e6853c85739269c976080821777e3c", "section_path": ["Menus", "Organization"]},
+      "conditions": ["Consider separate menus or a submenu when a long menu slows scanning."],
+      "exceptions": ["Allow long, scrollable menus for user-defined or dynamically generated content people expect to be complete."],
+      "review_note": "Recorded both shortening alternatives and the dynamic-content exception."
+    },
+    "HIG-COMPONENTS-MENUS-0009": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "a04270cf9058ef9d71fce68f64b2007f6b11527a99c9345ece7a7c45ba97aea1", "section_path": ["Menus", "Submenus"]},
+      "conditions": ["Consider a submenu when one term repeats in more than two items in a group.", "Use the repeated term in the parent label when it helps predict submenu contents."],
+      "review_note": "Recorded the repeated-term threshold and predictive-label technique."
+    },
+    "HIG-COMPONENTS-MENUS-0010": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "ea6ef854e6cecd51c4ff47f22eca8bdd5de405388f6c67ae5a40e43761d1a0ee", "section_path": ["Menus", "Submenus"]},
+      "title": "Keep unavailable submenus openable", "statement": {"en": "Keep a submenu available even when every nested item is unavailable.", "ja": "nested itemがすべてunavailableでもsubmenu自体は利用可能に保つ。"},
+      "conditions": ["Let people open the submenu and learn which commands it contains."], "review_note": "Reconfirmed the Make sure requirement and discoverability rationale."
+    },
+    "HIG-COMPONENTS-MENUS-0017": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "59b275601c278297af0a3bea33418f19b38d4e5a640955ba09e072c3cd88df17", "section_path": ["Menus", "In-game menus"]},
+      "title": "Keep in-game menus accessible on every supported platform", "statement": {"en": "Keep in-game menus easy to open, read, and interact with on every supported platform.", "ja": "すべての対応platformでin-game menuを開きやすく読みやすく操作しやすく保つ。"},
+      "conditions": ["Use platform-appropriate font and interaction-target sizes.", "If scaling makes menus too small, resize targets and consider another way to communicate content."],
+      "review_note": "Reconfirmed the Make sure requirement and captured text and target-size handling."
+    },
+    "HIG-COMPONENTS-MENUS-0018": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "4680af00d57e9460c06f26127f75bcb91ba8b3e9b51e3d4c0de6e5aa053753c1", "section_path": ["Menus", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Choose compact menu layouts when they streamline choices", "statement": {"en": "Choose a small or medium iOS or iPadOS menu layout when it streamlines people’s choices.", "ja": "選択を効率化できる場合はiOSまたはiPadOSのsmallまたはmedium menu layoutを選ぶ。"},
+      "conditions": ["Small places four icon-only items above the remaining list.", "Medium places three symbol-and-short-label items above the remaining list.", "Large is the default and displays every item in one list."],
+      "review_note": "Recorded all three layout definitions and their numeric top-row constraints."
+    },
+    "HIG-COMPONENTS-MENUS-0019": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "fab27157c9ae10f16e19979d591d90442faafa6641025e9466967dd7af4e88d7", "section_path": ["Menus", "Platform considerations", "visionOS"]},
+      "conditions": ["Keep the menu close enough that people can see the controlled content while looking and tapping."], "review_note": "Recorded the gaze-attention reason for spatial proximity."
+    },
+    "HIG-COMPONENTS-MENUS-0020": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "9dd9fc1d86449b64aa22fe855206444e63ae48384cb61a1e82081e770fbf3623", "section_path": ["Menus", "Platform considerations", "visionOS"]},
+      "conditions": ["Use subtle or automatic to preserve legibility, depth, and scene context."],
+      "exceptions": ["Use prominent only when scene-wide visibility is important and account for disruption or discomfort.", "Use none when intentional occlusion is part of the experience and accept reduced visibility and access."],
+      "review_note": "Recorded automatic behavior and both qualified alternatives without raising their strength."
+    },
+    "HIG-COMPONENTS-MENUS-0021": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "437e6c622ecacf143035223a8fc838ed701b37999cb04162625b38194ed19a3b", "section_path": ["Menus", "Icons"]},
+      "conditions": ["Use standard system icons for common actions such as Share, Print, and Search."], "review_note": "Recorded the standard-icon mechanism for consistent representation."
+    },
+    "HIG-COMPONENTS-MENUS-0022": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "a66e118313d741fe466683a89dc6c0394999d16af11ade4c10a0b6812fb70bec", "section_path": ["Menus", "Labels"]},
+      "title": "Write clear succinct menu-item labels", "statement": {"en": "Give every menu item a clear, succinct label that describes it.", "ja": "すべてのmenu itemに内容を説明する明確で簡潔なlabelを付ける。"},
+      "conditions": ["Use a verb or verb phrase for an item that initiates an action."], "review_note": "Recovered the general labeling lead and its action-label form."
+    },
+    "HIG-COMPONENTS-MENUS-0023": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "5194602aff4fd1faf5f71eae65e34c39af42b963674df11ab575b776e20b0b69", "section_path": ["Menus", "Labels"]},
+      "title": "Use title-style capitalization in menu labels", "statement": {"en": "Use title-style capitalization for menu-item labels to match platform experience.", "ja": "platform experienceに合わせてmenu-item labelにtitle-style capitalizationを使う。"},
+      "conditions": ["A game's distinct writing style may justify a different treatment."], "review_note": "Recovered the capitalization lead and preserved the game-style qualification."
+    },
+    "HIG-COMPONENTS-MENUS-0024": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "cd5b2c29bd673e3cff324703eaac8bc9e583fc17b470d6de1c6348e1986792c5", "section_path": ["Menus", "Labels"]},
+      "title": "Use ellipses for menu actions needing more input", "statement": {"en": "Append an ellipsis when a menu action needs more information or choices before completion.", "ja": "完了前に追加情報または選択が必要なmenu actionにはellipsisを付ける。"},
+      "conditions": ["The action opens another view for input or additional choices."], "review_note": "Recovered the ellipsis lead and its incomplete-action condition."
+    },
+    "HIG-COMPONENTS-MENUS-0025": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "1d39f7fef16791424f166f16a5f9476d0be86afa315446fbf665d79c6ed953f5", "section_path": ["Menus", "Submenus"]},
+      "title": "Limit submenu depth and length", "statement": {"en": "Limit submenu hierarchy to one level and keep each submenu short.", "ja": "submenu hierarchyを1 levelに制限し各submenuを短く保つ。"},
+      "conditions": ["If a submenu has more than about five items, consider creating another menu."], "review_note": "Recovered the limit lead and recorded both source thresholds."
+    },
+    "HIG-COMPONENTS-MENUS-0026": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "e900d983ba5742371143b527d4895a3690c8dd4c563a5daa61f7760c3485293f", "section_path": ["Menus", "Toggled items"]},
+      "title": "Consider separate items when toggling is unclear", "statement": {"en": "When necessary, consider displaying both state actions instead of one toggled menu item.", "ja": "必要な場合は1つのtoggled menu itemではなく両方のstate actionを表示することを検討する。"},
+      "normative_level": "MAY", "conditions": ["Seeing both states at once helps people understand the available action."], "review_note": "Recovered the conditional alternative without promoting its strength."
+    },
+    "HIG-COMPONENTS-MENUS-0027": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "2573e60eb0aea43a0a95898fd9b0a22a86d6396adabad1e371a7660e6de4b7da", "section_path": ["Menus", "Labels"]},
+      "title": "Keep fully unavailable menus openable", "statement": {"en": "Keep a menu available even when every item it contains is unavailable.", "ja": "含まれるitemがすべてunavailableでもmenu自体は利用可能に保つ。"},
+      "confidence": "high", "review_required": false, "conditions": ["Let people open the menu and learn which commands it contains."],
+      "review_note": "Recovered the explicit needs-to requirement separately from individual item appearance."
+    },
+    "HIG-COMPONENTS-MENUS-0028": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "97f0b224462202ad2fee03695a50765d661bd00f5740738ba7f9440a95a7bc88", "section_path": ["Menus", "Icons"]},
+      "title": "Avoid unclear menu-item icons", "statement": {"en": "Avoid displaying an icon that doesn’t clearly represent its menu item.", "ja": "menu itemを明確に表さないiconの表示を避ける。"},
+      "conditions": ["No suitable clear icon is available."], "review_note": "Recovered the explicit don't guidance conservatively as AVOID."
+    },
+    "HIG-COMPONENTS-MENUS-0029": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "4d263850a3f5b46af53e196e1e0b4ff214fc3ea61304bbe3af15f5d6643bb5f1", "section_path": ["Menus", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Reserve small menus for related action groups", "statement": {"en": "Use the small iOS or iPadOS menu layout only for closely related actions that form a group.", "ja": "iOSまたはiPadOSのsmall menu layoutはgroupを成す密接に関連したactionだけに使う。"},
+      "conditions": ["The four top-row actions are recognizable as one related set."], "review_note": "Recovered the small-layout-only condition."
+    },
+    "HIG-COMPONENTS-MENUS-0030": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "1adbfa429a47eaa803a1ea5dcc1a8be946daaa27dcce79b34940d61065866172", "section_path": ["Menus", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use recognizable symbols for unlabeled small-menu actions", "statement": {"en": "Use a recognizable symbol for every unlabeled action in a small iOS or iPadOS menu.", "ja": "iOSまたはiPadOSのsmall menu内の各unlabeled actionに識別可能なsymbolを使う。"},
+      "conditions": ["People must identify each action without a text label."], "review_note": "Recovered the per-action symbol requirement under the small layout."
+    },
+    "HIG-COMPONENTS-MENUS-0031": {
+      "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "1df76398863a193d5d8ae62ecadd56d825824e1e5123f338a151ddbd15cadc94", "section_path": ["Menus", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Consider medium menus for three important actions", "statement": {"en": "Consider the medium iOS or iPadOS layout for three important, frequently used actions.", "ja": "重要で頻繁に使うactionが3つある場合はiOSまたはiPadOSのmedium layoutを検討する。"},
+      "normative_level": "MAY", "conditions": ["The app has exactly three important actions people often perform."], "review_note": "Recovered the medium-layout recommendation and preserved its consider strength."
+    },
     "HIG-COMPONENTS-LOCKUPS-0001": {
       "source": {"source_hash": "2df6b331ac1632eac32a08662c2fe7de73a8ce930130082fd9fa89a4dafbb95f", "source_sentence_hash": "08c22973df7499d32f329f231519349429f1d2d63d4e5a6999762376ef01f749", "section_path": ["Lockups", "Best practices"]},
       "title": "Leave adequate space between tvOS lockups", "statement": {"en": "Leave enough space between tvOS lockups for focused expansion.", "ja": "tvOS lockupのfocus時の拡大に十分な間隔を設ける。"},
