@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1492
-- Reviewed batches: 100
+- Reviewed rules: 1512
+- Reviewed batches: 101
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:43:22Z
+- Reviewed at: 2026-07-21T20:52:13Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1256,6 +1256,26 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-AUDIO-0027 · high — Recovered the foreground playback capability as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0028 · high — Recovered the background playback capability as MAY and recorded its continuation conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0029 · high — Recovered the missing optional Now Playing view and its source-selection behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-HAPTICS-0007 · high — Made the component examples and supported-device condition explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0008 · high — Recovered the conditional generator option and all three predefined categories. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0009 · high — Recovered the Notification category's documented meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0010 · high — Recovered the Impact category's visual-metaphor meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0011 · high — Recovered the Selection category's changing-value meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0012 · high — Recovered the hardware-conditional capability as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0013 · high — Recovered the Alignment pattern and its table-defined scenarios. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0014 · high — Recovered the Level change pattern and its pressure-level meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0015 · high — Recovered the Generic pattern's fallback-only meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0016 · high — Recovered the supported-model constraint and default Digital Crown behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0017 · high — Recovered the Notification meaning and its system-notification equivalence. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0018 · high — Recovered the Up haptic's threshold meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0019 · high — Recovered the Down haptic's threshold meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0020 · high — Recovered the Success haptic's completion meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0021 · high — Recovered the Failure haptic's failure meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0022 · high — Recovered the Retry haptic's retryable-failure meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0023 · high — Recovered the Start haptic's controllable-activity meaning and usual pairing. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0024 · high — Recovered the Stop haptic's paired stopping meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0025 · high — Recovered the Click haptic's incremental-progress meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0026 · high — Separated the direct overuse warning from the positive Click mapping and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-VIDEO-0001 · high — Recorded the system-player default and constrained the custom-player alternative to essential needs. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0002 · high — Retained MUST from the explicit always directive and recorded padding and Picture in Picture failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0003 · high — Recorded the value test and documented platform scope without treating extra information as a default. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))

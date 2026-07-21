@@ -106518,7 +106518,7 @@
     section_path:
       - Playing haptics
       - Best practices
-    retrieved_at: 2026-07-21T11:15:11.881Z
+    retrieved_at: 2026-07-21T20:52:13Z
     source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
     source_sentence_hash: bffbf9c0e29279e7ee8ae1aff166586e2f38d4ac9b16e361aa5fec2da3a77a51
     evidence_paraphrase: Choose or apply system-provided haptic patterns according to their documented meanings in the documented context.
@@ -106582,7 +106582,7 @@
     section_path:
       - Playing haptics
       - Best practices
-    retrieved_at: 2026-07-21T11:15:11.881Z
+    retrieved_at: 2026-07-21T20:52:13Z
     source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
     source_sentence_hash: 1e641b28f949fd922609789f6b89b83ee5020c5090cfa0776ca107d3e748a3f9
     evidence_paraphrase: Choose or apply haptics consistently throughout your app or game in the documented context.
@@ -106646,7 +106646,7 @@
     section_path:
       - Playing haptics
       - Best practices
-    retrieved_at: 2026-07-21T11:15:11.881Z
+    retrieved_at: 2026-07-21T20:52:13Z
     source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
     source_sentence_hash: 3ffc096e347e89c36c4e8efd94d17684a0965eec6d98dc68de895812025421c2
     evidence_paraphrase: Favor using haptics to complement other feedback in your app or game when the documented conditions apply.
@@ -106710,7 +106710,7 @@
     section_path:
       - Playing haptics
       - Best practices
-    retrieved_at: 2026-07-21T11:15:11.881Z
+    retrieved_at: 2026-07-21T20:52:13Z
     source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
     source_sentence_hash: b7009b5f5d0d5714f5993313dc36a4997d54f97bf2e35b72d54b2d161f780c22
     evidence_paraphrase: Exclude overusing haptics from the applicable experience.
@@ -106774,7 +106774,7 @@
     section_path:
       - Playing haptics
       - Best practices
-    retrieved_at: 2026-07-21T11:15:11.881Z
+    retrieved_at: 2026-07-21T20:52:13Z
     source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
     source_sentence_hash: af1d55c6932911b28df848877543b33bc16bb57a46773729c0c65a4c8ccc8762
     evidence_paraphrase: Apply the documented Playing haptics guidance to make haptics optional.
@@ -106838,7 +106838,7 @@
     section_path:
       - Playing haptics
       - Best practices
-    retrieved_at: 2026-07-21T11:15:11.881Z
+    retrieved_at: 2026-07-21T20:52:13Z
     source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
     source_sentence_hash: 226da81742555fa992cfed63e5fed7322f44eefd5476fa537383b1e943de5f4c
     evidence_paraphrase: Apply the documented Playing haptics guidance to be aware that playing haptics might impact other user experiences.
@@ -106851,28 +106851,29 @@
   apple_native_rule: Apply the documented Playing haptics guidance to be aware that playing haptics might impact other user experiences.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-HAPTICS-0007
-  title: Use standard UI components — like toggles, sliders, and pickers — that play Apple-designed system haptics b…
+  title: Use standard iOS components with built-in haptics
   category: patterns
   topic: playing-haptics
   subtopic: ios
   statement:
-    en: Choose or apply standard UI components — like toggles, sliders, and pickers — that play Apple-designed system haptics by default in the documented context.
-    ja: 該当する状況ではstandard UI components — like toggles, sliders, and pickers — that play Apple-designed system haptics by defaultを採用する。
+    en: Use standard iOS components such as toggles, sliders, and pickers when their built-in system haptics fit the interaction.
+    ja: built-in system hapticが操作に適する場合、toggle、slider、pickerなどstandard iOS componentを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - ios
     devices:
       - iphone
     components: []
-    modalities: []
+    modalities:
+      - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The iPhone model supports haptic feedback.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
@@ -106880,7 +106881,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply standard UI components — like toggles, sliders, and pickers — that play Apple-designed system haptics by default in the documented context.” in the documented Playing haptics context?
+      - Does the design satisfy “Use standard iOS components such as toggles, sliders, and pickers when their built-in system haptics fit the interaction.” in the documented Playing haptics context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -106893,10 +106894,10 @@
       - Playing haptics
       - Platform considerations
       - iOS
-    retrieved_at: 2026-07-21T11:15:11.881Z
+    retrieved_at: 2026-07-21T20:52:13Z
     source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
     source_sentence_hash: c5bbb69ef9ba0fbf756a99d118cb2ecde444f537a3856c6bd48e1b492049b27b
-    evidence_paraphrase: Choose or apply standard UI components — like toggles, sliders, and pickers — that play Apple-designed system haptics by default in the documented context.
+    evidence_paraphrase: Use standard iOS components such as toggles, sliders, and pickers when their built-in system haptics fit the interaction.
   tags:
     - patterns
     - playing-haptics
@@ -106904,7 +106905,1089 @@
     - ios
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply standard UI components — like toggles, sliders, and pickers — that play Apple-designed system haptics by default in the documented context.
+  apple_native_rule: Use standard iOS components such as toggles, sliders, and pickers when their built-in system haptics fit the interaction.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0008
+  title: Use an iOS feedback generator when predefined haptics fit
+  category: patterns
+  topic: playing-haptics
+  subtopic: ios
+  statement:
+    en: When appropriate, use an iOS feedback generator for a predefined Notification, Impact, or Selection haptic.
+    ja: 適切な場合、predefinedのNotification、Impact、Selection hapticにiOS feedback generatorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - ios
+    devices:
+      - iphone
+    components: []
+    modalities:
+      - touch
+  conditions:
+    - A predefined haptic category matches the interaction's meaning.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When appropriate, use an iOS feedback generator for a predefined Notification, Impact, or Selection haptic.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - iOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: b14d9dbf58d00a4d8b7e7e9c59effd451f41876337435cb9a3186ce604da7267
+    evidence_paraphrase: When appropriate, use an iOS feedback generator for a predefined Notification, Impact, or Selection haptic.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - ios
+  priority_rank: 4
+  status: active
+  apple_native_rule: When appropriate, use an iOS feedback generator for a predefined Notification, Impact, or Selection haptic.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0009
+  title: Use iOS Notification haptics for task outcomes
+  category: patterns
+  topic: playing-haptics
+  subtopic: notification
+  statement:
+    en: Use an iOS Notification haptic to communicate the outcome of a task or action.
+    ja: taskまたはactionの結果を伝えるためiOS Notification hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - ios
+    devices:
+      - iphone
+    components: []
+    modalities:
+      - touch
+  conditions:
+    - The interaction completes with an outcome such as a successful deposit or unlock.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use an iOS Notification haptic to communicate the outcome of a task or action.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - iOS
+      - Notification
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 229a46ce520263c9eb59e1f4e92ae6d5b780dda6400e2faca6a19499fdfd9a9a
+    evidence_paraphrase: Use an iOS Notification haptic to communicate the outcome of a task or action.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - ios
+    - notification
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use an iOS Notification haptic to communicate the outcome of a task or action.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0010
+  title: Use iOS Impact haptics as physical metaphors
+  category: patterns
+  topic: playing-haptics
+  subtopic: impact
+  statement:
+    en: Use an iOS Impact haptic as a physical metaphor that complements a visual event.
+    ja: visual eventを補完するphysical metaphorとしてiOS Impact hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - ios
+    devices:
+      - iphone
+    components: []
+    modalities:
+      - touch
+  conditions:
+    - A visual event such as snapping or collision benefits from corresponding physical feedback.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use an iOS Impact haptic as a physical metaphor that complements a visual event.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - iOS
+      - Impact
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 5d442acba9eeec6bc3604c77070c65faa9c272b8bc3896fc8889c7d18fca4546
+    evidence_paraphrase: Use an iOS Impact haptic as a physical metaphor that complements a visual event.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - ios
+    - impact
+    - touch
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use an iOS Impact haptic as a physical metaphor that complements a visual event.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0011
+  title: Use iOS Selection haptics while values change
+  category: patterns
+  topic: playing-haptics
+  subtopic: selection
+  statement:
+    en: Use an iOS Selection haptic while the value of a UI element changes.
+    ja: UI elementの値が変化している間はiOS Selection hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - ios
+    devices:
+      - iphone
+    components: []
+    modalities:
+      - touch
+  conditions:
+    - A person is moving among discrete selectable values.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use an iOS Selection haptic while the value of a UI element changes.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - iOS
+      - Selection
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 2ac1c0768e100ce7246ef82bae35ed37a4ce906765bccca51007d30742fba7eb
+    evidence_paraphrase: Use an iOS Selection haptic while the value of a UI element changes.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - ios
+    - selection
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use an iOS Selection haptic while the value of a UI element changes.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0012
+  title: Consider Magic Trackpad haptics for drag or force click
+  category: patterns
+  topic: playing-haptics
+  subtopic: macos
+  statement:
+    en: When a Magic Trackpad is available, consider a macOS haptic pattern for a drag operation or force click.
+    ja: Magic Trackpadが利用できる場合、drag操作またはforce clickにmacOS haptic patternを使うことを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities:
+      - pointer
+  conditions:
+    - Choose among Alignment, Level change, and Generic patterns according to their meanings.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When a Magic Trackpad is available, consider a macOS haptic pattern for a drag operation or force click.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 77aea2c1bcc62477393337e5022ce4db7c07aac7528929b527401dfbd0e601af
+    evidence_paraphrase: When a Magic Trackpad is available, consider a macOS haptic pattern for a drag operation or force click.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - macos
+    - pointer
+  priority_rank: 4
+  status: active
+  apple_native_rule: When a Magic Trackpad is available, consider a macOS haptic pattern for a drag operation or force click.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0013
+  title: Use macOS Alignment haptics for alignment and boundaries
+  category: patterns
+  topic: playing-haptics
+  subtopic: macos
+  statement:
+    en: Use the macOS Alignment haptic for dragged-item alignment, preferred positions, dimensions, or range boundaries.
+    ja: dragged itemのalignment、preferred position、dimension、range boundaryにはmacOS Alignment hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities:
+      - pointer
+  conditions:
+    - A Magic Trackpad is available during a drag or force-click interaction.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the macOS Alignment haptic for dragged-item alignment, preferred positions, dimensions, or range boundaries.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 887d922991eb09828765ddd198b10864e20c4cd9788327ca7a0c7dd984eefbc1
+    evidence_paraphrase: Use the macOS Alignment haptic for dragged-item alignment, preferred positions, dimensions, or range boundaries.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the macOS Alignment haptic for dragged-item alignment, preferred positions, dimensions, or range boundaries.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0014
+  title: Use macOS Level change haptics for pressure transitions
+  category: patterns
+  topic: playing-haptics
+  subtopic: macos
+  statement:
+    en: Use the macOS Level change haptic when moving between discrete pressure levels.
+    ja: 離散的なpressure level間を移動するときmacOS Level change hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities:
+      - pointer
+  conditions:
+    - A force-click interaction has meaningful discrete pressure levels.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the macOS Level change haptic when moving between discrete pressure levels.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 4a565055717d5d12dcc4fe6f19aa48c10f0ce1d819746d330cfdeb049bc6acbd
+    evidence_paraphrase: Use the macOS Level change haptic when moving between discrete pressure levels.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the macOS Level change haptic when moving between discrete pressure levels.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0015
+  title: Use macOS Generic haptics only as a fallback
+  category: patterns
+  topic: playing-haptics
+  subtopic: macos
+  statement:
+    en: Use the macOS Generic haptic only when Alignment and Level change patterns do not apply.
+    ja: AlignmentとLevel change patternが適用できない場合にだけmacOS Generic hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities:
+      - pointer
+  conditions:
+    - A Magic Trackpad haptic is appropriate but neither specialized meaning fits.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the macOS Generic haptic only when Alignment and Level change patterns do not apply.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 2e8927dd824cdbee4827b0c29f9d0a4ef76be34f356eeb20329c08942c4f5bd1
+    evidence_paraphrase: Use the macOS Generic haptic only when Alignment and Level change patterns do not apply.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the macOS Generic haptic only when Alignment and Level change patterns do not apply.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0016
+  title: Use default Digital Crown haptic detents
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the default linear Digital Crown haptic detents on supported Apple Watch models.
+    ja: 対応するApple Watchではdefaultのlinear Digital Crown haptic detentを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities:
+      - digital-crown
+  conditions:
+    - Apple Watch Series 4 or later provides detents as people rotate the Digital Crown; some controls add item-based detents.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the default linear Digital Crown haptic detents on supported Apple Watch models.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 1bc89160d520e43cc114cceb9b6be6a32c3b776e724f486590cfec816817e8df
+    evidence_paraphrase: Use the default linear Digital Crown haptic detents on supported Apple Watch models.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+    - digital-crown
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the default linear Digital Crown haptic detents on supported Apple Watch models.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0017
+  title: Use watchOS Notification haptics for significant events
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Notification haptic for a significant or unusual event that requires attention.
+    ja: 注意が必要な重大または通常外のeventにはwatchOS Notification hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The system uses the same haptic for local and remote notifications.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Notification haptic for a significant or unusual event that requires attention.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: de4ba22723ef43c9098ef6dd3d46cb0040d9eb774bcd555148f35737b6b35425
+    evidence_paraphrase: Use the watchOS Notification haptic for a significant or unusual event that requires attention.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Notification haptic for a significant or unusual event that requires attention.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0018
+  title: Use watchOS Up haptics above important thresholds
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Up haptic when an important value increases above a significant threshold.
+    ja: 重要な値がsignificant thresholdを上回ったときwatchOS Up hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The threshold crossing is important to the person.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Up haptic when an important value increases above a significant threshold.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 229e64a1c67689a5f6942536c3c5b062044cd45bb8c81efc5f024a8d14d35287
+    evidence_paraphrase: Use the watchOS Up haptic when an important value increases above a significant threshold.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Up haptic when an important value increases above a significant threshold.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0019
+  title: Use watchOS Down haptics below important thresholds
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Down haptic when an important value decreases below a significant threshold.
+    ja: 重要な値がsignificant thresholdを下回ったときwatchOS Down hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The threshold crossing is important to the person.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Down haptic when an important value decreases below a significant threshold.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 0e62a2cd8cbdc0ad181aa04a72b93a593d31eaecf2c8798f541d7cbebac612f7
+    evidence_paraphrase: Use the watchOS Down haptic when an important value decreases below a significant threshold.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Down haptic when an important value decreases below a significant threshold.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0020
+  title: Use watchOS Success haptics for successful completion
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Success haptic when an action completes successfully.
+    ja: actionが正常に完了したときwatchOS Success hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The action has reached a successful final outcome.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Success haptic when an action completes successfully.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 3e9d41a152b20b2820bb0bd2cf19a43c5d393cffc0d0378ce855a2223d291c61
+    evidence_paraphrase: Use the watchOS Success haptic when an action completes successfully.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Success haptic when an action completes successfully.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0021
+  title: Use watchOS Failure haptics for failed actions
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Failure haptic when an action fails.
+    ja: actionが失敗したときwatchOS Failure hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The action failed without the specific retry meaning.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Failure haptic when an action fails.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 8f5afa114bb646a373e9032bbb8f4d3121abeed63c55ae6e18703d2694ada3e7
+    evidence_paraphrase: Use the watchOS Failure haptic when an action fails.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Failure haptic when an action fails.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0022
+  title: Use watchOS Retry haptics for retryable failures
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Retry haptic when an action fails but the person can retry it.
+    ja: actionが失敗しても再試行できるときwatchOS Retry hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - A retry action remains available.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Retry haptic when an action fails but the person can retry it.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: e91c6385a2bddcb89d4b39f1f2413d54ad625db1f8201b3cacf4a5bb55c56bed
+    evidence_paraphrase: Use the watchOS Retry haptic when an action fails but the person can retry it.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Retry haptic when an action fails but the person can retry it.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0023
+  title: Use watchOS Start haptics for controllable activities
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Start haptic when a person starts a timer or another activity they can explicitly stop.
+    ja: 利用者が明示的に停止できるtimerなどのactivityを開始したときwatchOS Start hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - A matching Stop haptic usually follows when the activity ends.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Start haptic when a person starts a timer or another activity they can explicitly stop.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: bfe7e022673a6f81cf1f9ffedaff307712bf6242c2d40ed5129bde50a4f1a77f
+    evidence_paraphrase: Use the watchOS Start haptic when a person starts a timer or another activity they can explicitly stop.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Start haptic when a person starts a timer or another activity they can explicitly stop.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0024
+  title: Use watchOS Stop haptics for previously started activities
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Stop haptic when stopping a timer or another activity the person previously started.
+    ja: 利用者が以前開始したtimerなどのactivityを停止するときwatchOS Stop hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The activity began through an explicit person-controlled start.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Stop haptic when stopping a timer or another activity the person previously started.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 9878a75f72664aaa8009403df164c662fc0aa854fff70513fe32f6d33bb38e51
+    evidence_paraphrase: Use the watchOS Stop haptic when stopping a timer or another activity the person previously started.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Stop haptic when stopping a timer or another activity the person previously started.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0025
+  title: Use watchOS Click haptics for incremental progress
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Use the watchOS Click haptic to communicate progress at predefined increments or intervals.
+    ja: predefinedのincrementまたはintervalでprogressを伝えるためwatchOS Click hapticを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Each click corresponds to a meaningful progress increment.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the watchOS Click haptic to communicate progress at predefined increments or intervals.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 63a15105fae49f1b36cd95818b3aa9c56c5b7d13c2d5218ee405a92782916db5
+    evidence_paraphrase: Use the watchOS Click haptic to communicate progress at predefined increments or intervals.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the watchOS Click haptic to communicate progress at predefined increments or intervals.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PLAYING-HAPTICS-0026
+  title: Avoid overusing or overlapping watchOS Click haptics
+  category: patterns
+  topic: playing-haptics
+  subtopic: watchos
+  statement:
+    en: Avoid overusing watchOS Click haptics or allowing clicks to overlap.
+    ja: watchOS Click hapticの過剰使用やclickの重なりを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Overuse diminishes utility and overlapping clicks can be confusing.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Playing haptics experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPlaying hapticsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid overusing watchOS Click haptics or allowing clicks to overlap.” in the documented Playing haptics context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/playing-haptics
+    page_title: Playing haptics
+    section_path:
+      - Playing haptics
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T20:52:13Z
+    source_hash: 70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31
+    source_sentence_hash: 63a15105fae49f1b36cd95818b3aa9c56c5b7d13c2d5218ee405a92782916db5
+    evidence_paraphrase: Avoid overusing watchOS Click haptics or allowing clicks to overlap.
+  tags:
+    - patterns
+    - playing-haptics
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid overusing watchOS Click haptics or allowing clicks to overlap.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PLAYING-VIDEO-0001
   title: Use the system video player by default

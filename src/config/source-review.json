@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T20:43:22Z",
+  "reviewed_at": "2026-07-21T20:52:13Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2541,6 +2541,18 @@
         "HIG-PATTERNS-PLAYING-AUDIO-0023", "HIG-PATTERNS-PLAYING-AUDIO-0024", "HIG-PATTERNS-PLAYING-AUDIO-0025", "HIG-PATTERNS-PLAYING-AUDIO-0026", "HIG-PATTERNS-PLAYING-AUDIO-0027", "HIG-PATTERNS-PLAYING-AUDIO-0028", "HIG-PATTERNS-PLAYING-AUDIO-0029"
       ],
       "review_note": "Completed all platform sections, preserved seven existing IDs, recovered fifteen atomic rules, retained one explicit accessibility MUST, and kept descriptive capabilities and conditional choices at SHOULD, AVOID, or MAY."
+    },
+    {
+      "id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T20:52:13Z",
+      "review_method": "Rendered Apple HIG Playing haptics platform limitations, complete iOS, macOS, and watchOS guidance, and the macOS pattern table were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics", "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31"}],
+      "rule_ids": [
+        "HIG-PATTERNS-PLAYING-HAPTICS-0007", "HIG-PATTERNS-PLAYING-HAPTICS-0008", "HIG-PATTERNS-PLAYING-HAPTICS-0009", "HIG-PATTERNS-PLAYING-HAPTICS-0010", "HIG-PATTERNS-PLAYING-HAPTICS-0011", "HIG-PATTERNS-PLAYING-HAPTICS-0012", "HIG-PATTERNS-PLAYING-HAPTICS-0013", "HIG-PATTERNS-PLAYING-HAPTICS-0014", "HIG-PATTERNS-PLAYING-HAPTICS-0015", "HIG-PATTERNS-PLAYING-HAPTICS-0016",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0017", "HIG-PATTERNS-PLAYING-HAPTICS-0018", "HIG-PATTERNS-PLAYING-HAPTICS-0019", "HIG-PATTERNS-PLAYING-HAPTICS-0020", "HIG-PATTERNS-PLAYING-HAPTICS-0021", "HIG-PATTERNS-PLAYING-HAPTICS-0022", "HIG-PATTERNS-PLAYING-HAPTICS-0023", "HIG-PATTERNS-PLAYING-HAPTICS-0024", "HIG-PATTERNS-PLAYING-HAPTICS-0025", "HIG-PATTERNS-PLAYING-HAPTICS-0026"
+      ],
+      "review_note": "Completed all platform sections, preserved the existing iOS component rule, recovered nineteen atomic rules, captured the macOS pattern table and nine watchOS meanings, and introduced no unsupported MUST or MUST_NOT rules."
     }
   ],
   "rules": {
@@ -5536,6 +5548,126 @@
       "title": "Consider a watchOS Now Playing view", "statement": {"en": "Consider presenting a watchOS Now Playing view for controlling current or recently played audio without leaving the app.", "ja": "appを離れず現在または最近再生したaudioを操作できるwatchOS Now Playing viewの表示を検討する。"}, "normative_level": "MAY",
       "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
       "conditions": ["The system view displays the current source and selects the current or most recently used source automatically."], "review_note": "Recovered the missing optional Now Playing view and its source-selection behavior."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0007": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "c5bbb69ef9ba0fbf756a99d118cb2ecde444f537a3856c6bd48e1b492049b27b", "section_path": ["Playing haptics", "Platform considerations", "iOS"]},
+      "title": "Use standard iOS components with built-in haptics", "statement": {"en": "Use standard iOS components such as toggles, sliders, and pickers when their built-in system haptics fit the interaction.", "ja": "built-in system hapticが操作に適する場合、toggle、slider、pickerなどstandard iOS componentを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios"], "devices": ["iphone"], "components": [], "modalities": ["touch"]},
+      "conditions": ["The iPhone model supports haptic feedback."], "review_note": "Made the component examples and supported-device condition explicit."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0008": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "b14d9dbf58d00a4d8b7e7e9c59effd451f41876337435cb9a3186ce604da7267", "section_path": ["Playing haptics", "Platform considerations", "iOS"]},
+      "title": "Use an iOS feedback generator when predefined haptics fit", "statement": {"en": "When appropriate, use an iOS feedback generator for a predefined Notification, Impact, or Selection haptic.", "ja": "適切な場合、predefinedのNotification、Impact、Selection hapticにiOS feedback generatorを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios"], "devices": ["iphone"], "components": [], "modalities": ["touch"]},
+      "conditions": ["A predefined haptic category matches the interaction's meaning."], "review_note": "Recovered the conditional generator option and all three predefined categories."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0009": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "229a46ce520263c9eb59e1f4e92ae6d5b780dda6400e2faca6a19499fdfd9a9a", "section_path": ["Playing haptics", "Platform considerations", "iOS", "Notification"]},
+      "title": "Use iOS Notification haptics for task outcomes", "statement": {"en": "Use an iOS Notification haptic to communicate the outcome of a task or action.", "ja": "taskまたはactionの結果を伝えるためiOS Notification hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios"], "devices": ["iphone"], "components": [], "modalities": ["touch"]},
+      "conditions": ["The interaction completes with an outcome such as a successful deposit or unlock."], "review_note": "Recovered the Notification category's documented meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0010": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "5d442acba9eeec6bc3604c77070c65faa9c272b8bc3896fc8889c7d18fca4546", "section_path": ["Playing haptics", "Platform considerations", "iOS", "Impact"]},
+      "title": "Use iOS Impact haptics as physical metaphors", "statement": {"en": "Use an iOS Impact haptic as a physical metaphor that complements a visual event.", "ja": "visual eventを補完するphysical metaphorとしてiOS Impact hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios"], "devices": ["iphone"], "components": [], "modalities": ["touch"]},
+      "conditions": ["A visual event such as snapping or collision benefits from corresponding physical feedback."], "review_note": "Recovered the Impact category's visual-metaphor meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0011": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "2ac1c0768e100ce7246ef82bae35ed37a4ce906765bccca51007d30742fba7eb", "section_path": ["Playing haptics", "Platform considerations", "iOS", "Selection"]},
+      "title": "Use iOS Selection haptics while values change", "statement": {"en": "Use an iOS Selection haptic while the value of a UI element changes.", "ja": "UI elementの値が変化している間はiOS Selection hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios"], "devices": ["iphone"], "components": [], "modalities": ["touch"]},
+      "conditions": ["A person is moving among discrete selectable values."], "review_note": "Recovered the Selection category's changing-value meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0012": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "77aea2c1bcc62477393337e5022ce4db7c07aac7528929b527401dfbd0e601af", "section_path": ["Playing haptics", "Platform considerations", "macOS"]},
+      "title": "Consider Magic Trackpad haptics for drag or force click", "statement": {"en": "When a Magic Trackpad is available, consider a macOS haptic pattern for a drag operation or force click.", "ja": "Magic Trackpadが利用できる場合、drag操作またはforce clickにmacOS haptic patternを使うことを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": ["pointer"]},
+      "conditions": ["Choose among Alignment, Level change, and Generic patterns according to their meanings."], "review_note": "Recovered the hardware-conditional capability as MAY."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0013": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "887d922991eb09828765ddd198b10864e20c4cd9788327ca7a0c7dd984eefbc1", "section_path": ["Playing haptics", "Platform considerations", "macOS"]},
+      "title": "Use macOS Alignment haptics for alignment and boundaries", "statement": {"en": "Use the macOS Alignment haptic for dragged-item alignment, preferred positions, dimensions, or range boundaries.", "ja": "dragged itemのalignment、preferred position、dimension、range boundaryにはmacOS Alignment hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": ["pointer"]},
+      "conditions": ["A Magic Trackpad is available during a drag or force-click interaction."], "review_note": "Recovered the Alignment pattern and its table-defined scenarios."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0014": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "4a565055717d5d12dcc4fe6f19aa48c10f0ce1d819746d330cfdeb049bc6acbd", "section_path": ["Playing haptics", "Platform considerations", "macOS"]},
+      "title": "Use macOS Level change haptics for pressure transitions", "statement": {"en": "Use the macOS Level change haptic when moving between discrete pressure levels.", "ja": "離散的なpressure level間を移動するときmacOS Level change hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": ["pointer"]},
+      "conditions": ["A force-click interaction has meaningful discrete pressure levels."], "review_note": "Recovered the Level change pattern and its pressure-level meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0015": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "2e8927dd824cdbee4827b0c29f9d0a4ef76be34f356eeb20329c08942c4f5bd1", "section_path": ["Playing haptics", "Platform considerations", "macOS"]},
+      "title": "Use macOS Generic haptics only as a fallback", "statement": {"en": "Use the macOS Generic haptic only when Alignment and Level change patterns do not apply.", "ja": "AlignmentとLevel change patternが適用できない場合にだけmacOS Generic hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": ["pointer"]},
+      "conditions": ["A Magic Trackpad haptic is appropriate but neither specialized meaning fits."], "review_note": "Recovered the Generic pattern's fallback-only meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0016": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "1bc89160d520e43cc114cceb9b6be6a32c3b776e724f486590cfec816817e8df", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use default Digital Crown haptic detents", "statement": {"en": "Use the default linear Digital Crown haptic detents on supported Apple Watch models.", "ja": "対応するApple Watchではdefaultのlinear Digital Crown haptic detentを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": ["digital-crown"]},
+      "conditions": ["Apple Watch Series 4 or later provides detents as people rotate the Digital Crown; some controls add item-based detents."], "review_note": "Recovered the supported-model constraint and default Digital Crown behavior."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0017": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "de4ba22723ef43c9098ef6dd3d46cb0040d9eb774bcd555148f35737b6b35425", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Notification haptics for significant events", "statement": {"en": "Use the watchOS Notification haptic for a significant or unusual event that requires attention.", "ja": "注意が必要な重大または通常外のeventにはwatchOS Notification hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The system uses the same haptic for local and remote notifications."], "review_note": "Recovered the Notification meaning and its system-notification equivalence."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0018": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "229e64a1c67689a5f6942536c3c5b062044cd45bb8c81efc5f024a8d14d35287", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Up haptics above important thresholds", "statement": {"en": "Use the watchOS Up haptic when an important value increases above a significant threshold.", "ja": "重要な値がsignificant thresholdを上回ったときwatchOS Up hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The threshold crossing is important to the person."], "review_note": "Recovered the Up haptic's threshold meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0019": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "0e62a2cd8cbdc0ad181aa04a72b93a593d31eaecf2c8798f541d7cbebac612f7", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Down haptics below important thresholds", "statement": {"en": "Use the watchOS Down haptic when an important value decreases below a significant threshold.", "ja": "重要な値がsignificant thresholdを下回ったときwatchOS Down hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The threshold crossing is important to the person."], "review_note": "Recovered the Down haptic's threshold meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0020": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "3e9d41a152b20b2820bb0bd2cf19a43c5d393cffc0d0378ce855a2223d291c61", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Success haptics for successful completion", "statement": {"en": "Use the watchOS Success haptic when an action completes successfully.", "ja": "actionが正常に完了したときwatchOS Success hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The action has reached a successful final outcome."], "review_note": "Recovered the Success haptic's completion meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0021": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "8f5afa114bb646a373e9032bbb8f4d3121abeed63c55ae6e18703d2694ada3e7", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Failure haptics for failed actions", "statement": {"en": "Use the watchOS Failure haptic when an action fails.", "ja": "actionが失敗したときwatchOS Failure hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The action failed without the specific retry meaning."], "review_note": "Recovered the Failure haptic's failure meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0022": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "e91c6385a2bddcb89d4b39f1f2413d54ad625db1f8201b3cacf4a5bb55c56bed", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Retry haptics for retryable failures", "statement": {"en": "Use the watchOS Retry haptic when an action fails but the person can retry it.", "ja": "actionが失敗しても再試行できるときwatchOS Retry hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["A retry action remains available."], "review_note": "Recovered the Retry haptic's retryable-failure meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0023": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "bfe7e022673a6f81cf1f9ffedaff307712bf6242c2d40ed5129bde50a4f1a77f", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Start haptics for controllable activities", "statement": {"en": "Use the watchOS Start haptic when a person starts a timer or another activity they can explicitly stop.", "ja": "利用者が明示的に停止できるtimerなどのactivityを開始したときwatchOS Start hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["A matching Stop haptic usually follows when the activity ends."], "review_note": "Recovered the Start haptic's controllable-activity meaning and usual pairing."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0024": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "9878a75f72664aaa8009403df164c662fc0aa854fff70513fe32f6d33bb38e51", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Stop haptics for previously started activities", "statement": {"en": "Use the watchOS Stop haptic when stopping a timer or another activity the person previously started.", "ja": "利用者が以前開始したtimerなどのactivityを停止するときwatchOS Stop hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The activity began through an explicit person-controlled start."], "review_note": "Recovered the Stop haptic's paired stopping meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0025": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "63a15105fae49f1b36cd95818b3aa9c56c5b7d13c2d5218ee405a92782916db5", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS Click haptics for incremental progress", "statement": {"en": "Use the watchOS Click haptic to communicate progress at predefined increments or intervals.", "ja": "predefinedのincrementまたはintervalでprogressを伝えるためwatchOS Click hapticを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Each click corresponds to a meaningful progress increment."], "review_note": "Recovered the Click haptic's incremental-progress meaning."
+    },
+    "HIG-PATTERNS-PLAYING-HAPTICS-0026": {
+      "source": {"source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31", "source_sentence_hash": "63a15105fae49f1b36cd95818b3aa9c56c5b7d13c2d5218ee405a92782916db5", "section_path": ["Playing haptics", "Platform considerations", "watchOS"]},
+      "title": "Avoid overusing or overlapping watchOS Click haptics", "statement": {"en": "Avoid overusing watchOS Click haptics or allowing clicks to overlap.", "ja": "watchOS Click hapticの過剰使用やclickの重なりを避ける。"}, "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Overuse diminishes utility and overlapping clicks can be confusing."], "review_note": "Separated the direct overuse warning from the positive Click mapping and retained AVOID strength."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

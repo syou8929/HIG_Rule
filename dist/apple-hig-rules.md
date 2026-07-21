@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T20:49:55.556Z. 2488 active rules; 3 deprecated rules.
+Generated 2026-07-21T20:59:58.424Z. 2507 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -791,7 +791,26 @@ Generated 2026-07-21T20:49:55.556Z. 2488 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-PLAYING-HAPTICS-0004 · AVOID · low** — Exclude overusing haptics from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - **HIG-PATTERNS-PLAYING-HAPTICS-0005 · SHOULD · low** — Apply the documented Playing haptics guidance to make haptics optional. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - **HIG-PATTERNS-PLAYING-HAPTICS-0006 · SHOULD · low** — Apply the documented Playing haptics guidance to be aware that playing haptics might impact other user experiences. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
-- **HIG-PATTERNS-PLAYING-HAPTICS-0007 · SHOULD · low** — Choose or apply standard UI components — like toggles, sliders, and pickers — that play Apple-designed system haptics by default in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0007 · SHOULD · high** — Use standard iOS components such as toggles, sliders, and pickers when their built-in system haptics fit the interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0008 · SHOULD · high** — When appropriate, use an iOS feedback generator for a predefined Notification, Impact, or Selection haptic. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0009 · SHOULD · high** — Use an iOS Notification haptic to communicate the outcome of a task or action. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0010 · SHOULD · high** — Use an iOS Impact haptic as a physical metaphor that complements a visual event. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0011 · SHOULD · high** — Use an iOS Selection haptic while the value of a UI element changes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0012 · MAY · high** — When a Magic Trackpad is available, consider a macOS haptic pattern for a drag operation or force click. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0013 · SHOULD · high** — Use the macOS Alignment haptic for dragged-item alignment, preferred positions, dimensions, or range boundaries. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0014 · SHOULD · high** — Use the macOS Level change haptic when moving between discrete pressure levels. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0015 · SHOULD · high** — Use the macOS Generic haptic only when Alignment and Level change patterns do not apply. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0016 · SHOULD · high** — Use the default linear Digital Crown haptic detents on supported Apple Watch models. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0017 · SHOULD · high** — Use the watchOS Notification haptic for a significant or unusual event that requires attention. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0018 · SHOULD · high** — Use the watchOS Up haptic when an important value increases above a significant threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0019 · SHOULD · high** — Use the watchOS Down haptic when an important value decreases below a significant threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0020 · SHOULD · high** — Use the watchOS Success haptic when an action completes successfully. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0021 · SHOULD · high** — Use the watchOS Failure haptic when an action fails. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0022 · SHOULD · high** — Use the watchOS Retry haptic when an action fails but the person can retry it. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0023 · SHOULD · high** — Use the watchOS Start haptic when a person starts a timer or another activity they can explicitly stop. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0024 · SHOULD · high** — Use the watchOS Stop haptic when stopping a timer or another activity the person previously started. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0025 · SHOULD · high** — Use the watchOS Click haptic to communicate progress at predefined increments or intervals. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0026 · AVOID · high** — Avoid overusing watchOS Click haptics or allowing clicks to overlap. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 ### playing-video
 
 - **HIG-PATTERNS-PLAYING-VIDEO-0001 · SHOULD · high** — Use the system video player to provide familiar playback behavior and controls. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
