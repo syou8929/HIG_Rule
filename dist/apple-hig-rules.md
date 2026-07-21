@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:32:25.292Z. 2202 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:36:34.226Z. 2211 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1004,21 +1004,30 @@ Generated 2026-07-21T16:32:25.292Z. 2202 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-COMPLICATIONS-0011 · SHOULD · high** — Account for that people might prefer to use tinted mode for complications, instead of viewing them in full color. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 ### context-menus
 
-- **HIG-COMPONENTS-CONTEXT-MENUS-0001 · SHOULD · low** — Apply the documented Context menus guidance to prioritize relevancy when choosing items to include in a context menu. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0002 · SHOULD · low** — Apply the documented Context menus guidance to aim for a small number of menu items. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0003 · SHOULD · low** — Ensure the experience accommodates context menus consistently throughout your app. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0004 · MUST · medium** — Make context menu items available in the main interface, too in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0005 · SHOULD · low** — Apply the documented Context menus guidance to aim to place the most frequently used menu items where people are likely to encounter them first. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0006 · SHOULD · low** — Present keyboard shortcuts in your app’s main menus, not in context menus in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0007 · SHOULD · low** — Apply the documented Context menus guidance to follow best practices for using separators. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0008 · SHOULD · low** — Apply the documented Context menus guidance to include a title in a context menu only if doing so clarifies the menu’s effect. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0009 · SHOULD · low** — Make either a context menu or an edit menu for an item, but not both available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0010 · SHOULD · low** — Favor a graphical preview that clarifies the target of a context menu’s commands when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0011 · MUST · medium** — Verify that that your preview looks good as it animates. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0012 · MAY · low** — Evaluate whether using a context menu instead of a panel or inspector window to present frequently used functionality is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0001 · SHOULD · high** — Apply the documented Context menus guidance to prioritize relevancy when choosing items to include in a context menu. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0002 · SHOULD · high** — Apply the documented Context menus guidance to aim for a small number of menu items. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0003 · SHOULD · high** — Ensure the experience accommodates context menus consistently throughout your app. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0004 · MUST · high** — Expose every context-menu command through the app’s visible main interface too. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0005 · SHOULD · high** — Apply the documented Context menus guidance to aim to place the most frequently used menu items where people are likely to encounter them first. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0006 · SHOULD · high** — Present keyboard shortcuts in your app’s main menus, not in context menus in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0007 · SHOULD · high** — Apply the documented Context menus guidance to follow best practices for using separators. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0008 · SHOULD · high** — Apply the documented Context menus guidance to include a title in a context menu only if doing so clarifies the menu’s effect. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0009 · SHOULD · high** — Make either a context menu or an edit menu for an item, but not both available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0010 · SHOULD · high** — Favor a graphical preview that clarifies the target of a context menu’s commands when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0011 · MUST · high** — Keep a context-menu preview visually stable as it animates from the source content. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0012 · MAY · high** — Evaluate whether using a context menu instead of a panel or inspector window to present frequently used functionality is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - **HIG-COMPONENTS-CONTEXT-MENUS-0013 · AVOID · high** — Avoid making a visionOS context menu taller than its window. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0014 · SHOULD · low** — Represent menu item actions with familiar icons in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
-- **HIG-COMPONENTS-CONTEXT-MENUS-0015 · SHOULD · low** — Hide unavailable menu items, don’t dim them. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0014 · SHOULD · high** — Represent menu item actions with familiar icons in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0015 · SHOULD · high** — Hide unavailable menu items, don’t dim them. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0016 · SHOULD · high** — Maintain context-menu submenus to one level. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0017 · SHOULD · high** — Apply the documented Context menus guidance to warn about destructive context-menu items on iOS iPadOS and visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0018 · MAY · high** — Evaluate whether context menus for creating new objects on iPadOS is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0019 · SHOULD · high** — Choose or apply intuitive submenu titles that predict their contents in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0020 · SHOULD · high** — Apply the documented Context menus guidance to aim for no more than about three context-menu groups. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0021 · SHOULD · high** — Apply the documented Context menus guidance to place destructive context-menu items at the end of the menu. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0022 · SHOULD · high** — Choose or apply destructive styling for destructive context-menu items in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0023 · MUST · high** — Give every context-menu item a short label that clearly describes its action. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0024 · SHOULD · high** — Apply the documented Context menus guidance to match preview clipping paths to preview-image shapes. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 ### controls
 
 - **HIG-COMPONENTS-CONTROLS-0001 · SHOULD · low** — Make controls for actions that provide the most benefit without having to launch your app available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:31:51Z",
+  "reviewed_at": "2026-07-21T16:35:06Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1900,9 +1900,465 @@
         "HIG-COMPONENTS-COMPLICATIONS-0011"
       ],
       "review_note": "Completed the Complications follow-up for per-complication deep links, tinted-mode preference, and the existing tinted-image MUST."
+    },
+    {
+      "id": "priority-4-context-menus-completion-2026-07-21",
+      "reviewed_at": "2026-07-21T16:35:06Z",
+      "review_method": "Rendered Apple HIG Context menus guidance, supporting prose, reveal behavior, submenu limits, destructive-item handling, content labels, previews, and platform sections were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/context-menus",
+          "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-CONTEXT-MENUS-0001",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0002",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0003",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0004",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0005",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0006",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0007",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0008",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0009",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0010",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0011",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0012",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0014",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0015",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0016",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0017",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0018",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0019",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0020",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0021",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0022",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0023",
+        "HIG-COMPONENTS-CONTEXT-MENUS-0024"
+      ],
+      "review_note": "Completed Context menus coverage while preserving active ID 0011; reviewed discoverability, ordering, grouping, submenus, labels, edit-menu exclusivity, iPadOS object creation, previews, destructive actions, and visionOS window clutter; recovered nine atomic rules."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-CONTEXT-MENUS-0001": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "afb5c9374d79d4c2b74aa4a2211e328cd9cb04b239fc34294db28dc9d529e5e1",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Include commands people are most likely to need for the selected content and current context.",
+        "Do not use the context menu for advanced or rarely used commands."
+      ],
+      "review_note": "Reviewed the rendered source context for “Prioritize relevancy when choosing items to include in a context menu” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0002": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "8f9bb0b2fcec09566d81736bd390617c5bc42afa8cfeee11519288a8a2708db0",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Keep the menu quick to scan and avoid a length that requires excessive scrolling."
+      ],
+      "review_note": "Reviewed the rendered source context for “Aim for a small number of menu items” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0003": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "e40bdf28dc3df8bb94c93b9df3738d5edea1eb856814abf3cc08da602b1aba89",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Apply context-menu support predictably to equivalent items throughout the app."
+      ],
+      "review_note": "Reviewed the rendered source context for “Support context menus consistently throughout your app” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0004": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "c4a9ead7f319e78f6c80ae18bcfe8bab53a0ca0f7c420d5c8a619f6fa6a2a59d",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Expose every context-menu command through the visible main interface as well."
+      ],
+      "review_note": "Reviewed the rendered source context for “Always make context menu items available in the main interface, too” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0005": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "951f4963dd591c5824d79fbac5046666e3ca2bcd153cff2acb08f6a93dc59c3e",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Order common items near the edge where the finger or pointer reveals the menu.",
+        "Reverse item order when necessary because the menu can open above or below the selected content."
+      ],
+      "review_note": "Reviewed the rendered source context for “Aim to place the most frequently used menu items where people are likely to encounter them first” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0006": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "41b00588d71146101a3306654db84beb118443cd640e3bbea51a6cc8836c91f3",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Show command shortcuts in the visible main menus; a context menu is already a shortcut."
+      ],
+      "review_note": "Reviewed the rendered source context for “Show keyboard shortcuts in your app’s main menus, not in context menus” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0007": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "894c9c9f1e0377975cc9fa2e413a42b9157f4b5849501455d348a7298563f45d",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Use separators to create logical, scannable command groups."
+      ],
+      "review_note": "Reviewed the rendered source context for “Follow best practices for using separators” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0008": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "89d44d99c25a897d6670a08a1c8f98d225327f99b2fadd4991feafd462b0ab1c",
+        "section_path": [
+          "Context menus",
+          "Content"
+        ]
+      },
+      "conditions": [
+        "Add a context-menu title only when it clarifies the command effect, such as the number of selected items."
+      ],
+      "review_note": "Reviewed the rendered source context for “Include a title in a context menu only if doing so clarifies the menu’s effect” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0009": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "4845f8c3d33a172d47495d34bf1d8b98acd5edf7584e8250b101054b39d6135c",
+        "section_path": [
+          "Context menus",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ]
+      },
+      "conditions": [
+        "On iOS and iPadOS, choose one mechanism for an item to avoid confusion and intent-detection ambiguity."
+      ],
+      "review_note": "Reviewed the rendered source context for “Provide either a context menu or an edit menu for an item, but not both” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0010": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "2155a1308f89a36a878509eefbd277923dfc38f3ed6b11248d89f3767821b42c",
+        "section_path": [
+          "Context menus",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ]
+      },
+      "conditions": [
+        "On iOS and iPadOS, show a condensed graphical representation that confirms the targeted content."
+      ],
+      "review_note": "Reviewed the rendered source context for “Prefer a graphical preview that clarifies the target of a context menu’s commands” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0011": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "c3b5a68babaf01efaf616f071fde5b2281a2d3471f64d7e84240dd6218fe0a8c",
+        "section_path": [
+          "Context menus",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ]
+      },
+      "conditions": [
+        "On iOS and iPadOS, the system animates the preview out of the source content and dims the background."
+      ],
+      "scope": {
+        "portability": "platform-specific",
+        "platforms": [
+          "ios",
+          "ipados"
+        ],
+        "devices": [
+          "iphone",
+          "ipad"
+        ],
+        "components": [
+          "context-menus"
+        ],
+        "modalities": []
+      },
+      "review_note": "Reviewed the rendered source context for “Ensure that your preview looks good as it animates” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0012": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "668691ddef8431b5b05fc7bf9f6bb4a2b90289f61260e94d5f1f9d17a4feaa3e",
+        "section_path": [
+          "Context menus",
+          "Platform considerations",
+          "visionOS"
+        ]
+      },
+      "conditions": [
+        "In visionOS, use a context menu for frequently used functionality when it avoids an extra panel or inspector window."
+      ],
+      "review_note": "Reviewed the rendered source context for “Consider using a context menu instead of a panel or inspector window to present frequently used functionality” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0014": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "a5de0d14dbfbe14814f53341694d8542e16587c9a864a1a725949cbb750e1d11",
+        "section_path": [
+          "Context menus",
+          "Content"
+        ]
+      },
+      "conditions": [
+        "Use familiar icons and match system icons for common actions such as Copy, Share, and Delete."
+      ],
+      "review_note": "Reviewed the rendered source context for “Represent menu item actions with familiar icons” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0015": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "635e67896ac6773bcb6c5e77bc255236af811bdebbc913faa91ab2378d899c9c",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Show only actions relevant to the current view or content.",
+        "On macOS, Cut, Copy, and Paste are exceptions that may remain visible while unavailable."
+      ],
+      "review_note": "Reviewed the rendered source context for “Hide unavailable menu items, don’t dim them” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0016": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "843f74a0f58d976e9aada8fa2e45885115d759d904f87630f19234e966c9673e",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Use a submenu only when needed to control complexity.",
+        "Do not nest a submenu below another submenu."
+      ],
+      "review_note": "Reviewed the rendered source context for “Keep context-menu submenus to one level” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0017": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "3e2c67dea460f7fc25cbe97cd7aa4f4d3f820a6c679032c44ab1b9663919c857",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "A context-menu item on iOS, iPadOS, or visionOS can destroy data."
+      ],
+      "scope": {
+        "portability": "platform-specific",
+        "platforms": [
+          "ios",
+          "ipados",
+          "visionos"
+        ],
+        "devices": [
+          "iphone",
+          "ipad",
+          "apple-vision-pro"
+        ],
+        "components": [
+          "context-menus"
+        ],
+        "modalities": []
+      },
+      "review_note": "Reviewed the rendered source context for “Warn about destructive context-menu items on iOS iPadOS and visionOS” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0018": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "3dfb4bd1c010a06434860d389dd446cf611556b33479ca75dfd0f74f1c89528e",
+        "section_path": [
+          "Context menus",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ]
+      },
+      "conditions": [
+        "On iPadOS, let people reveal object creation from empty space using long press or a supported secondary click."
+      ],
+      "scope": {
+        "portability": "platform-specific",
+        "platforms": [
+          "ipados"
+        ],
+        "devices": [
+          "ipad"
+        ],
+        "components": [
+          "context-menus"
+        ],
+        "modalities": [
+          "touch",
+          "pointer"
+        ]
+      },
+      "review_note": "Reviewed the rendered source context for “Consider context menus for creating new objects on iPadOS” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0019": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "843f74a0f58d976e9aada8fa2e45885115d759d904f87630f19234e966c9673e",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "A submenu is necessary.",
+        "Make the title predictive without requiring people to open the submenu."
+      ],
+      "review_note": "Reviewed the rendered source context for “Use intuitive submenu titles that predict their contents” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0020": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "894c9c9f1e0377975cc9fa2e413a42b9157f4b5849501455d348a7298563f45d",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Use separators to group related commands while keeping the context menu to roughly three groups or fewer."
+      ],
+      "review_note": "Reviewed the rendered source context for “Aim for no more than about three context-menu groups” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0021": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "3e2c67dea460f7fc25cbe97cd7aa4f4d3f820a6c679032c44ab1b9663919c857",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "A destructive command appears on iOS, iPadOS, or visionOS.",
+        "Put potentially destructive commands such as Delete or Remove last."
+      ],
+      "scope": {
+        "portability": "platform-specific",
+        "platforms": [
+          "ios",
+          "ipados",
+          "visionos"
+        ],
+        "devices": [
+          "iphone",
+          "ipad",
+          "apple-vision-pro"
+        ],
+        "components": [
+          "context-menus"
+        ],
+        "modalities": []
+      },
+      "review_note": "Reviewed the rendered source context for “Place destructive context-menu items at the end of the menu” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0022": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "3e2c67dea460f7fc25cbe97cd7aa4f4d3f820a6c679032c44ab1b9663919c857",
+        "section_path": [
+          "Context menus",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "A destructive command appears on iOS, iPadOS, or visionOS.",
+        "Let the system present destructive styling, including red text where supported."
+      ],
+      "scope": {
+        "portability": "platform-specific",
+        "platforms": [
+          "ios",
+          "ipados",
+          "visionos"
+        ],
+        "devices": [
+          "iphone",
+          "ipad",
+          "apple-vision-pro"
+        ],
+        "components": [
+          "context-menus"
+        ],
+        "modalities": []
+      },
+      "review_note": "Reviewed the rendered source context for “Use destructive styling for destructive context-menu items” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0023": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "4d4c5d3d5c3df64146600553a43abbf369dec8069cdf6625a06250dc918a017a",
+        "section_path": [
+          "Context menus",
+          "Content"
+        ]
+      },
+      "conditions": [
+        "Every context-menu item needs a concise label that clearly states its action."
+      ],
+      "review_note": "Reviewed the rendered source context for “Make sure every context-menu item has a short clear action label” and recorded its context-menu and platform conditions."
+    },
+    "HIG-COMPONENTS-CONTEXT-MENUS-0024": {
+      "source": {
+        "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",
+        "source_sentence_hash": "c3b5a68babaf01efaf616f071fde5b2281a2d3471f64d7e84240dd6218fe0a8c",
+        "section_path": [
+          "Context menus",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ]
+      },
+      "conditions": [
+        "On iOS and iPadOS, match the clipping path to contours such as rounded corners so they don’t shift during animation."
+      ],
+      "review_note": "Reviewed the rendered source context for “Match preview clipping paths to preview-image shapes” and recorded its context-menu and platform conditions."
+    },
     "HIG-COMPONENTS-COMPLICATIONS-0005": {
       "source": {
         "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
