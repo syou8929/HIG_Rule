@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1385
-- Reviewed batches: 90
+- Reviewed rules: 1395
+- Reviewed batches: 91
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:48:37Z
+- Reviewed at: 2026-07-21T19:54:15Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -978,6 +978,16 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0034 · high — Recovered the explicit Make sure stationary-field requirement and its pause-time fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0035 · high — Recovered the during-writing resize restriction and safe timing. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0036 · high — Recovered the autoscroll restriction and kept it at AVOID rather than promoting the imperative to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-CAMERA-CONTROL-0001 · high — Repaired SF capitalization and recorded custom-symbol and current-state platform constraints without promoting them to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0002 · high — Repaired the generated grammar and recorded Dynamic Type and viewfinder-obscuration context. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0003 · high — Replaced the generic paraphrase and recorded the documented contextual value formats. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0004 · high — Replaced the generic paraphrase and recorded both orientations, nonoverlap, viewfinder size, and overlay transition behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0005 · high — Replaced the generic paraphrase and separated duplicate-control avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0006 · high — Replaced the generic paraphrase and recorded the mode example and fixed runtime control set. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0007 · high — Retained MAY and recorded common-use placement and system-restored selection. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0008 · high — Replaced the generic paraphrase and raised explicitly configured locked-device launch to privacy and explicit-intent priority. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0009 · high — Specified Camera Control scope and recorded selection frequency, spacing, and system snapping behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- HIG-INPUTS-CAMERA-CONTROL-0010 · high — Split the direct duplicate-control avoidance from the broader distraction-minimization rule. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
 - HIG-INPUTS-EYES-0001 · high — Retained the accessibility-critical Always requirement and made the alternative-input purpose explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0002 · high — Replaced the generic statement with the page's placement and eye-adjustment comfort context. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-EYES-0003 · high — Preserved the 1-meter aim and the brief-viewing exception without promoting the aim to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))

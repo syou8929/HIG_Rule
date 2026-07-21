@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:48:37Z",
+  "reviewed_at": "2026-07-21T19:54:15Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2408,6 +2408,21 @@
         "HIG-INPUTS-ACTION-BUTTON-0013", "HIG-INPUTS-ACTION-BUTTON-0014"
       ],
       "review_note": "Completed Action button guidance across shared, iOS, and watchOS sections; preserved all five existing IDs, recovered nine atomic rules including six label constraints, and recorded two explicit source-supported MUST decisions."
+    },
+    {
+      "id": "priority-4-camera-control-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:54:15Z",
+      "review_method": "Rendered Apple HIG Camera Control overview, anatomy, complete Best practices, platform limitations, resource context, and change-log table were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/camera-control", "source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b"}],
+      "rule_ids": [
+        "HIG-INPUTS-CAMERA-CONTROL-0001", "HIG-INPUTS-CAMERA-CONTROL-0002", "HIG-INPUTS-CAMERA-CONTROL-0003",
+        "HIG-INPUTS-CAMERA-CONTROL-0004", "HIG-INPUTS-CAMERA-CONTROL-0005", "HIG-INPUTS-CAMERA-CONTROL-0006",
+        "HIG-INPUTS-CAMERA-CONTROL-0007", "HIG-INPUTS-CAMERA-CONTROL-0008", "HIG-INPUTS-CAMERA-CONTROL-0009",
+        "HIG-INPUTS-CAMERA-CONTROL-0010"
+      ],
+      "review_note": "Completed iOS Camera Control guidance; preserved all nine existing IDs, recovered control-duplication avoidance, recorded overlay, Dynamic Type, runtime, and launch constraints, prioritized locked-camera launch for privacy review, and introduced no unsupported MUST rules."
     }
   ],
   "rules": {
@@ -4734,6 +4749,80 @@
       "conditions": ["People press the Action button and side button together."],
       "exceptions": ["Do not pause a dive when pausing could endanger the diver or hide critical dive state."],
       "review_note": "Recovered the conditional Be sure requirement and preserved the diver-safety exception."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0001": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "571b556e830c17d5a1821cda744c02fbe2045bcf0bf49b8491380119e0b535c4", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Use SF Symbols for Camera Control functions",
+      "statement": {"en": "Use SF Symbols that clearly represent each Camera Control function.", "ja": "各Camera Control functionを明確に表すSF Symbolを使う。"},
+      "conditions": ["Custom symbols are unsupported.", "Treat a control symbol as its behavior, not its current state."],
+      "review_note": "Repaired SF capitalization and recorded custom-symbol and current-state platform constraints without promoting them to MUST."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0002": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "19a57e052746e0a5ec364397ffb38dd1bad20d76d92c8312f69683a3c238b2e3", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Keep Camera Control names short",
+      "statement": {"en": "Keep Camera Control names short.", "ja": "Camera Control nameを短く保つ。"},
+      "conditions": ["Labels scale with Dynamic Type, and longer names can obscure the viewfinder."],
+      "review_note": "Repaired the generated grammar and recorded Dynamic Type and viewfinder-obscuration context."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0003": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "5f16b7eaf13c29acf16b079cf63cba3f029834a282c9be0694004221b3033005", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Give Camera Control slider values context",
+      "statement": {"en": "Include units or symbols with Camera Control slider values to provide context.", "ja": "contextを示すためCamera Control slider valueにunitまたはsymbolを含める。"},
+      "conditions": ["Examples include units, percentages, or a localized custom string."],
+      "review_note": "Replaced the generic paraphrase and recorded the documented contextual value formats."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0004": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "a3524f23c7732ca7a26d725e76e0fd621addd352ac2651fd5c2a44c23c48bcd0", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Reserve viewfinder space for the Camera Control overlay",
+      "statement": {"en": "Make space for the Camera Control overlay in the viewfinder.", "ja": "viewfinder内にCamera Control overlay用のspaceを確保する。"},
+      "conditions": ["Keep app UI outside overlay areas in portrait and landscape.", "Maximize viewfinder dimensions and let the overlay appear and disappear over it."],
+      "review_note": "Replaced the generic paraphrase and recorded both orientations, nonoverlap, viewfinder size, and overlay transition behavior."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0005": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "218e23c28fd1695b700d2434bdf96c3ccefb528f164bffb97e09a63b7ef046db", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Minimize Camera Control viewfinder distractions",
+      "statement": {"en": "Minimize visual distractions in the Camera Control viewfinder.", "ja": "Camera Control viewfinder内のvisual distractionを最小化する。"},
+      "conditions": ["Preserve a large preview image while capturing photos or video."],
+      "review_note": "Replaced the generic paraphrase and separated duplicate-control avoidance."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0006": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "48b3b0a6e50d86e23d2c8a33ddf043f777779c65a4ca9e92753de03e2e348ce2", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Match Camera Control availability to camera mode",
+      "statement": {"en": "Enable or disable Camera Control options according to the current camera mode.", "ja": "current camera modeに応じてCamera Control optionをenableまたはdisableにする。"},
+      "conditions": ["Disable video-specific controls while taking photos.", "Controls can't be added or removed from the overlay at runtime."],
+      "review_note": "Replaced the generic paraphrase and recorded the mode example and fixed runtime control set."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0007": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "40d97490f1acaa142d37717593a811352100462eb5bddd60e72402cb42846f53", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Consider Camera Control ordering by usage",
+      "statement": {"en": "Consider ordering Camera Control options by usage frequency.", "ja": "usage frequencyに基づくCamera Control optionの並びを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Place commonly used controls near the middle and lesser-used controls on either side."],
+      "exceptions": ["The system returns to the last control used when reopening the overlay."],
+      "review_note": "Retained MAY and recorded common-use placement and system-restored selection."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0008": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "eb40e573502395f2daeae3d7147a76790ecde750a8bcc56b56ae9f759d193cc8", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Launch the camera experience from anywhere",
+      "statement": {"en": "Let people launch the app's camera experience from anywhere with Camera Control.", "ja": "Camera Controlでappのcamera experienceをどこからでも起動できるようにする。"},
+      "priority_rank": 3,
+      "conditions": ["Use a locked camera capture extension that people explicitly configure.", "Support launch from a locked device, Home Screen, or another app."],
+      "review_note": "Replaced the generic paraphrase and raised explicitly configured locked-device launch to privacy and explicit-intent priority."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0009": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "a36cf215032428359fef4de9c07a3ea8e39e628e8baa8e725dea420cb5057b59", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Define prominent Camera Control slider values",
+      "statement": {"en": "Define prominent values for each Camera Control slider.", "ja": "各Camera Control sliderのprominent valueを定義する。"},
+      "conditions": ["Use frequently selected values or evenly spaced major increments.", "The system lands more easily on defined prominent values."],
+      "review_note": "Specified Camera Control scope and recorded selection frequency, spacing, and system snapping behavior."
+    },
+    "HIG-INPUTS-CAMERA-CONTROL-0010": {
+      "source": {"source_hash": "f0580ecf2509eb5c4867283cf08710a23bf437e0771547a5cfc90e1b42aa924b", "source_sentence_hash": "218e23c28fd1695b700d2434bdf96c3ccefb528f164bffb97e09a63b7ef046db", "section_path": ["Camera Control", "Best practices"]},
+      "title": "Avoid duplicate viewfinder and overlay controls",
+      "statement": {"en": "Avoid duplicating controls between the viewfinder and Camera Control overlay.", "ja": "viewfinderとCamera Control overlay間でcontrolを重複させない。"},
+      "normative_level": "AVOID",
+      "conditions": ["The system is displaying the Camera Control overlay."],
+      "review_note": "Split the direct duplicate-control avoidance from the broader distraction-minimization rule."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

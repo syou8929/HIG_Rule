@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:52:27.660Z. 2424 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:55:55.110Z. 2425 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1896,15 +1896,16 @@ Generated 2026-07-21T19:52:27.660Z. 2424 active rules; 3 deprecated rules.
 - **HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0036 · AVOID · high** — Prevent text from autoscrolling while people write or edit with Apple Pencil. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 ### camera-control
 
-- **HIG-INPUTS-CAMERA-CONTROL-0001 · SHOULD · low** — Choose or apply sF Symbols to represent control functionality in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
-- **HIG-INPUTS-CAMERA-CONTROL-0002 · SHOULD · low** — Maintain names of controls short. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
-- **HIG-INPUTS-CAMERA-CONTROL-0003 · SHOULD · low** — Apply the documented Camera Control guidance to include units or symbols with slider control values to provide context. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
-- **HIG-INPUTS-CAMERA-CONTROL-0004 · SHOULD · low** — Apply the documented Camera Control guidance to make space for the overlay in the viewfinder. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
-- **HIG-INPUTS-CAMERA-CONTROL-0005 · SHOULD · low** — Apply the documented Camera Control guidance to minimize distractions in the viewfinder. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
-- **HIG-INPUTS-CAMERA-CONTROL-0006 · SHOULD · low** — Apply the documented Camera Control guidance to enable or disable controls depending on the camera mode. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
-- **HIG-INPUTS-CAMERA-CONTROL-0007 · MAY · low** — Evaluate whether how to arrange your controls is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
-- **HIG-INPUTS-CAMERA-CONTROL-0008 · SHOULD · low** — Apply the documented Camera Control guidance to allow people to use the Camera Control to launch your experience from anywhere. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
-- **HIG-INPUTS-CAMERA-CONTROL-0009 · SHOULD · low** — Define prominent values for a slider control explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0001 · SHOULD · high** — Use SF Symbols that clearly represent each Camera Control function. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0002 · SHOULD · high** — Keep Camera Control names short. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0003 · SHOULD · high** — Include units or symbols with Camera Control slider values to provide context. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0004 · SHOULD · high** — Make space for the Camera Control overlay in the viewfinder. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0005 · SHOULD · high** — Minimize visual distractions in the Camera Control viewfinder. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0006 · SHOULD · high** — Enable or disable Camera Control options according to the current camera mode. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0007 · MAY · high** — Consider ordering Camera Control options by usage frequency. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0008 · SHOULD · high** — Let people launch the app's camera experience from anywhere with Camera Control. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0009 · SHOULD · high** — Define prominent values for each Camera Control slider. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
+- **HIG-INPUTS-CAMERA-CONTROL-0010 · AVOID · high** — Avoid duplicating controls between the viewfinder and Camera Control overlay. ([source](https://developer.apple.com/design/human-interface-guidelines/camera-control))
 ### digital-crown
 
 - **HIG-INPUTS-DIGITAL-CROWN-0001 · MAY · low** — Evaluate whether using the Digital Crown to inspect data in contexts where navigation isn’t necessary is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/digital-crown))
