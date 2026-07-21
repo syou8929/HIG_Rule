@@ -1,6 +1,6 @@
 # Human source-review queue
 
-- Remaining rules: 1155
+- Remaining rules: 1153
 - Next priority: 4 (platform-specific-hig)
 - Next batch: 2
 
@@ -8,7 +8,7 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 242
+- 4 (platform-specific-hig): 240
 - 5 (input-and-device-constraints): 28
 - 6 (apple-platform-common): 862
 - 7 (universal-design-principles): 23
@@ -17,9 +17,9 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 - AVOID: 122
 - MAY: 147
-- SHOULD: 886
+- SHOULD: 884
 
 ## Next batch
 
-- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · SHOULD — Use secure digit fields · Digit entry views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
-- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002 · SHOULD — Clearly state the purpose of the digit entry view · Digit entry views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- HIG-COMPONENTS-DOCK-MENUS-0001 · SHOULD — Make custom Dock menu items available in other places, too · Dock menus > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- HIG-COMPONENTS-DOCK-MENUS-0002 · SHOULD — Prefer high-value custom items for your Dock menu · Dock menus > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))

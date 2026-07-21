@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:35:06Z",
+  "reviewed_at": "2026-07-21T16:42:53Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1939,9 +1939,87 @@
         "HIG-COMPONENTS-CONTEXT-MENUS-0024"
       ],
       "review_note": "Completed Context menus coverage while preserving active ID 0011; reviewed discoverability, ordering, grouping, submenus, labels, edit-menu exclusivity, iPadOS object creation, previews, destructive actions, and visionOS window clutter; recovered nine atomic rules."
+    },
+    {
+      "id": "priority-4-digit-entry-views-context-2026-07-21",
+      "reviewed_at": "2026-07-21T16:42:53Z",
+      "review_method": "Rendered Apple HIG Digit entry views guidance, supporting prose, secure-entry behavior, sensitive-data condition, and platform support were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/digit-entry-views",
+          "source_hash": "900f88b9df396f1b3ba861aacdf9f2332892245f7da9211764a812fc93babcd1"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001",
+        "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002",
+        "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003"
+      ],
+      "review_note": "Completed tvOS Digit entry views coverage; strengthened both existing rule traces and recovered the sensitive-data Always requirement as a separate MUST."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001": {
+      "source": {
+        "source_hash": "900f88b9df396f1b3ba861aacdf9f2332892245f7da9211764a812fc93babcd1",
+        "source_sentence_hash": "813e13a93814f91363005ec0fc7cee5e7647d3bb73b35b935d46679d151a7e1c",
+        "section_path": [
+          "Digit entry views",
+          "Best practices"
+        ]
+      },
+      "title": "Use secure tvOS digit fields",
+      "statement": {
+        "en": "Use secure fields when a tvOS digit-entry view needs to conceal entered digits.",
+        "ja": "tvOSのdigit entry viewで入力した数字を隠す必要がある場合はsecure fieldを使う。"
+      },
+      "conditions": [
+        "Secure digit fields replace entered digits with asterisks onscreen."
+      ],
+      "review_note": "Reviewed the general secure-field recommendation and recorded the documented asterisk-concealment behavior without raising it to MUST."
+    },
+    "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002": {
+      "source": {
+        "source_hash": "900f88b9df396f1b3ba861aacdf9f2332892245f7da9211764a812fc93babcd1",
+        "source_sentence_hash": "519e6368c74f1c42ac9a48de95adb4245d811632b633ad471d39fc7b6dc6968e",
+        "section_path": [
+          "Digit entry views",
+          "Best practices"
+        ]
+      },
+      "title": "Explain the purpose of tvOS digit entry",
+      "statement": {
+        "en": "Clearly explain why a tvOS digit-entry view needs the requested digits.",
+        "ja": "tvOSのdigit entry viewが数字を必要とする理由を明確に説明する。"
+      },
+      "conditions": [
+        "Use the optional title and prompt above the digits to explain the request."
+      ],
+      "review_note": "Recorded the title-and-prompt technique as supporting context for the existing purpose rule rather than duplicating it."
+    },
+    "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003": {
+      "source": {
+        "source_hash": "900f88b9df396f1b3ba861aacdf9f2332892245f7da9211764a812fc93babcd1",
+        "source_sentence_hash": "12f013528bc5fd4e550c69a3365393db692c39379770f56e7c45b00a53ab8193",
+        "section_path": [
+          "Digit entry views",
+          "Best practices"
+        ]
+      },
+      "title": "Always secure sensitive tvOS digit entry",
+      "statement": {
+        "en": "Use a secure tvOS digit field whenever the app requests sensitive data.",
+        "ja": "アプリが機密データを求める場合は常にtvOSのsecure digit fieldを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The app requests sensitive data through a tvOS digit-entry view."
+      ],
+      "review_note": "Recovered the explicit Always requirement separately from the page's general secure-field recommendation."
+    },
     "HIG-COMPONENTS-CONTEXT-MENUS-0001": {
       "source": {
         "source_hash": "eb12705f9175fe9694c765b03423b8017b5a0210306ee656699eb99df6b3c007",

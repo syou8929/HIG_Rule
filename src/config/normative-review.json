@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:35:06Z",
+  "reviewed_at": "2026-07-21T16:42:53Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
@@ -8,13 +8,26 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 204,
+  "reviewed_rule_count": 205,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003": {
+      "title": "Always secure sensitive tvOS digit entry",
+      "statement": {
+        "en": "Use a secure tvOS digit field whenever the app requests sensitive data.",
+        "ja": "アプリが機密データを求める場合は常にtvOSのsecure digit fieldを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The app requests sensitive data through a tvOS digit-entry view."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Always directive and its sensitive-data condition."
+    },
     "HIG-COMPONENTS-CONTEXT-MENUS-0004": {
       "title": "Always expose context-menu commands in the main interface",
       "statement": {

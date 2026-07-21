@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:36:34.226Z. 2211 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:44:54.770Z. 2212 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1041,8 +1041,9 @@ Generated 2026-07-21T16:36:34.226Z. 2211 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-CONTROLS-0009 · SHOULD · low** — Hide sensitive information when the device is locked. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 ### digit-entry-views
 
-- **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · SHOULD · low** — Choose or apply secure digit fields in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
-- **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002 · SHOULD · low** — Clearly state the purpose of the digit entry view. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · SHOULD · high** — Use secure fields when a tvOS digit-entry view needs to conceal entered digits. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002 · SHOULD · high** — Clearly explain why a tvOS digit-entry view needs the requested digits. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 · MUST · high** — Use a secure tvOS digit field whenever the app requests sensitive data. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 ### disclosure-controls
 
 - **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001 · SHOULD · low** — Choose or apply a disclosure control to hide details until they’re relevant in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))

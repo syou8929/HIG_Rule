@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001",
-    "title": "Use secure digit fields",
+    "title": "Use secure tvOS digit fields",
     "category": "components",
     "topic": "digit-entry-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply secure digit fields in the documented context.",
-      "ja": "該当する状況ではsecure digit fieldsを採用する。"
+      "en": "Use secure fields when a tvOS digit-entry view needs to conceal entered digits.",
+      "ja": "tvOSのdigit entry viewで入力した数字を隠す必要がある場合はsecure fieldを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -28,7 +28,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Secure digit fields replace entered digits with asterisks onscreen."
     ],
     "exceptions": [],
     "rationale": {
@@ -38,7 +38,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply secure digit fields in the documented context.” in the documented Digit entry views context?"
+        "Does the design satisfy “Use secure fields when a tvOS digit-entry view needs to conceal entered digits.” in the documented Digit entry views context?"
       ]
     },
     "testability": "manual",
@@ -58,7 +58,7 @@
       "retrieved_at": "2026-07-21T11:14:48.642Z",
       "source_hash": "900f88b9df396f1b3ba861aacdf9f2332892245f7da9211764a812fc93babcd1",
       "source_sentence_hash": "813e13a93814f91363005ec0fc7cee5e7647d3bb73b35b935d46679d151a7e1c",
-      "evidence_paraphrase": "Choose or apply secure digit fields in the documented context."
+      "evidence_paraphrase": "Use secure fields when a tvOS digit-entry view needs to conceal entered digits."
     },
     "tags": [
       "components",
@@ -67,22 +67,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply secure digit fields in the documented context.",
+    "apple_native_rule": "Use secure fields when a tvOS digit-entry view needs to conceal entered digits.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002",
-    "title": "Clearly state the purpose of the digit entry view",
+    "title": "Explain the purpose of tvOS digit entry",
     "category": "components",
     "topic": "digit-entry-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Clearly state the purpose of the digit entry view.",
-      "ja": "state the purpose of the digit entry viewを明確にする。"
+      "en": "Clearly explain why a tvOS digit-entry view needs the requested digits.",
+      "ja": "tvOSのdigit entry viewが数字を必要とする理由を明確に説明する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -99,7 +99,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the optional title and prompt above the digits to explain the request."
     ],
     "exceptions": [],
     "rationale": {
@@ -109,7 +109,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Clearly state the purpose of the digit entry view.” in the documented Digit entry views context?"
+        "Does the design satisfy “Clearly explain why a tvOS digit-entry view needs the requested digits.” in the documented Digit entry views context?"
       ]
     },
     "testability": "manual",
@@ -129,7 +129,7 @@
       "retrieved_at": "2026-07-21T11:14:48.642Z",
       "source_hash": "900f88b9df396f1b3ba861aacdf9f2332892245f7da9211764a812fc93babcd1",
       "source_sentence_hash": "519e6368c74f1c42ac9a48de95adb4245d811632b633ad471d39fc7b6dc6968e",
-      "evidence_paraphrase": "Clearly state the purpose of the digit entry view."
+      "evidence_paraphrase": "Clearly explain why a tvOS digit-entry view needs the requested digits."
     },
     "tags": [
       "components",
@@ -138,7 +138,78 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Clearly state the purpose of the digit entry view.",
+    "apple_native_rule": "Clearly explain why a tvOS digit-entry view needs the requested digits.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003",
+    "title": "Always secure sensitive tvOS digit entry",
+    "category": "components",
+    "topic": "digit-entry-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use a secure tvOS digit field whenever the app requests sensitive data.",
+      "ja": "アプリが機密データを求める場合は常にtvOSのsecure digit fieldを使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [
+        "digit-entry-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The app requests sensitive data through a tvOS digit-entry view."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Digit entry views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDigit entry viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a secure tvOS digit field whenever the app requests sensitive data.” in the documented Digit entry views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/digit-entry-views",
+      "page_title": "Digit entry views",
+      "section_path": [
+        "Digit entry views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:14:48.642Z",
+      "source_hash": "900f88b9df396f1b3ba861aacdf9f2332892245f7da9211764a812fc93babcd1",
+      "source_sentence_hash": "12f013528bc5fd4e550c69a3365393db692c39379770f56e7c45b00a53ab8193",
+      "evidence_paraphrase": "Use a secure tvOS digit field whenever the app requests sensitive data."
+    },
+    "tags": [
+      "components",
+      "digit-entry-views",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use a secure tvOS digit field whenever the app requests sensitive data.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

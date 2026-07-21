@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 970
-- Reviewed batches: 61
+- Reviewed rules: 973
+- Reviewed batches: 62
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:35:06Z
+- Reviewed at: 2026-07-21T16:42:53Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -142,6 +142,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-CONTEXT-MENUS-0022 · high — Reviewed the rendered source context for “Use destructive styling for destructive context-menu items” and recorded its context-menu and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0023 · high — Reviewed the rendered source context for “Make sure every context-menu item has a short clear action label” and recorded its context-menu and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0024 · high — Reviewed the rendered source context for “Match preview clipping paths to preview-image shapes” and recorded its context-menu and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · high — Reviewed the general secure-field recommendation and recorded the documented asterisk-concealment behavior without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002 · high — Recorded the title-and-prompt technique as supporting context for the existing purpose rule rather than duplicating it. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 · high — Recovered the explicit Always requirement separately from the page's general secure-field recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · high — Recorded the expected minimum usefulness and source-scoped maximum of four quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · high — Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003 · high — Recorded the official preference for SF Symbols when representing quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))

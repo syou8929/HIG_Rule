@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 204
-- Retained MUST: 183
+- Reviewed rules: 205
+- Retained MUST: 184
 - Retained MUST_NOT: 21
 - Normative level changes: 5
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:35:06Z
+- Reviewed at: 2026-07-21T16:42:53Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -25,6 +25,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-CONTEXT-MENUS-0004 — Retained MUST after confirming the explicit Always directive and its discoverability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0011 — Retained MUST after confirming the explicit Ensure directive and the clipping-path technique. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0023 — Recovered MUST from the explicit needs to display requirement for each menu-item label. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 — Retained MUST after confirming the explicit Always directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0015 — Narrowed the MUST to the unqualified Always clause; the source lead's consider clause is split into a separate MAY rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0022 — Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
@@ -168,6 +169,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-CONTEXT-MENUS-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive and its discoverability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0011 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive and the clipping-path technique. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs to display requirement for each menu-item label. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-EDIT-MENUS-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))

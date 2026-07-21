@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2211
+- Active atomic rules: 2212
 - Pages without rules: 16
-- Low-confidence rules: 1155
-- Rules requiring human review: 1155
+- Low-confidence rules: 1153
+- Rules requiring human review: 1153
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 703
+- components: 704
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -24,7 +24,7 @@
 
 - AVOID: 300
 - MAY: 242
-- MUST: 183
+- MUST: 184
 - MUST_NOT: 21
 - SHOULD: 1465
 
@@ -34,14 +34,14 @@
 - ios: 1556
 - ipados: 1525
 - macos: 1289
-- tvos: 992
+- tvos: 993
 - visionos: 1352
 - watchos: 1062
 
 ## Rules by testability
 
 - hybrid: 65
-- manual: 2146
+- manual: 2147
 
 ## Blocked pages
 
@@ -132,8 +132,6 @@ None.
 - HIG-COMPONENTS-CONTROLS-0007
 - HIG-COMPONENTS-CONTROLS-0008
 - HIG-COMPONENTS-CONTROLS-0009
-- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001
-- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003
@@ -1290,8 +1288,6 @@ None.
 - HIG-COMPONENTS-CONTROLS-0007
 - HIG-COMPONENTS-CONTROLS-0008
 - HIG-COMPONENTS-CONTROLS-0009
-- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001
-- HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003
