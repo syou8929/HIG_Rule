@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T14:45:29Z",
+  "reviewed_at": "2026-07-21T14:53:09Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1227,9 +1227,246 @@
         "HIG-INPUTS-GESTURES-0034"
       ],
       "review_note": "Reviewed cross-platform, iOS, iPadOS, visionOS, and watchOS gesture behavior; recovered seventeen omitted atomic rules and refreshed a changed page hash."
+    },
+    {
+      "id": "priority-4-pointing-devices-context-2026-07-21",
+      "reviewed_at": "2026-07-21T14:53:09Z",
+      "review_method": "Rendered Apple HIG Pointing devices guidance, supporting prose, platform behavior, and macOS interaction and pointer tables were reviewed; two repeated live renders matched the updated stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/pointing-devices",
+          "source_hash": "a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1"
+        }
+      ],
+      "rule_ids": [
+        "HIG-INPUTS-POINTING-DEVICES-0001",
+        "HIG-INPUTS-POINTING-DEVICES-0002",
+        "HIG-INPUTS-POINTING-DEVICES-0003",
+        "HIG-INPUTS-POINTING-DEVICES-0004",
+        "HIG-INPUTS-POINTING-DEVICES-0005",
+        "HIG-INPUTS-POINTING-DEVICES-0006",
+        "HIG-INPUTS-POINTING-DEVICES-0007",
+        "HIG-INPUTS-POINTING-DEVICES-0008",
+        "HIG-INPUTS-POINTING-DEVICES-0009",
+        "HIG-INPUTS-POINTING-DEVICES-0010",
+        "HIG-INPUTS-POINTING-DEVICES-0011",
+        "HIG-INPUTS-POINTING-DEVICES-0012",
+        "HIG-INPUTS-POINTING-DEVICES-0013",
+        "HIG-INPUTS-POINTING-DEVICES-0014",
+        "HIG-INPUTS-POINTING-DEVICES-0015",
+        "HIG-INPUTS-POINTING-DEVICES-0016",
+        "HIG-INPUTS-POINTING-DEVICES-0017",
+        "HIG-INPUTS-POINTING-DEVICES-0018",
+        "HIG-INPUTS-POINTING-DEVICES-0019",
+        "HIG-INPUTS-POINTING-DEVICES-0020",
+        "HIG-INPUTS-POINTING-DEVICES-0021",
+        "HIG-INPUTS-POINTING-DEVICES-0022",
+        "HIG-INPUTS-POINTING-DEVICES-0023",
+        "HIG-INPUTS-POINTING-DEVICES-0024",
+        "HIG-INPUTS-POINTING-DEVICES-0025",
+        "HIG-INPUTS-POINTING-DEVICES-0026",
+        "HIG-INPUTS-POINTING-DEVICES-0027",
+        "HIG-INPUTS-POINTING-DEVICES-0028"
+      ],
+      "review_note": "Reviewed input consistency, iPadOS pointer effects and hit regions, macOS tables, and visionOS system behavior; recovered six rules, promoted one explicit need requirement, and refreshed a changed page hash."
     }
   ],
   "rules": {
+    "HIG-INPUTS-POINTING-DEVICES-0001": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"5bbfa883ed266990504948a1b2bb4f29ab8a585528618e727c2b8c21c8241657","section_path":["Pointing devices","Best practices"]},
+      "title": "Respond consistently to mouse and trackpad gestures",
+      "statement": {"en":"Respond to familiar mouse and trackpad gestures consistently with system expectations.","ja":"使い慣れたmouseとtrackpad gestureへsystemの期待と一貫して応答する。"},
+      "conditions": ["For example, Swipe between pages behaves consistently across documents, webpages, and images."],
+      "review_note": "Repaired the generic statement and recorded the cross-content consistency example."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0002": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"70a8161f7bcffa01fd969e40ad52615194d78bf41b536c924f481ad3cddf045d","section_path":["Pointing devices","Best practices"]},
+      "title": "Avoid redefining systemwide trackpad gestures",
+      "statement": {"en":"Avoid redefining systemwide trackpad gestures, including in games with custom gestures.","ja":"custom gestureを使うgameを含め、systemwide trackpad gestureを再定義しない。"},
+      "conditions": ["Keep gestures for the Dock, Mission Control, and other system actions available.", "Account for user-customized system gesture settings."],
+      "review_note": "Recorded the game scope, system examples, and customizable-gesture constraint."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0003": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"8ab21ac8f527037ee383063b987b959f8c5edbb94d315c3fcdaa1c260fa2b2c6","section_path":["Pointing devices","Best practices"]},
+      "title": "Keep interactions consistent across input methods",
+      "statement": {"en":"Keep the app experience consistent across gestures, gaze, pointing devices, and keyboards.","ja":"gesture、gaze、pointing device、keyboard間でapp体験を一貫させる。"},
+      "conditions": ["Let people move fluidly between input types without learning separate interaction models."],
+      "review_note": "Repaired the truncated statement and preserved every named input method."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0004": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"605ffdea7fde5988f656b32ce5024ca4399aee94c0e6bde2e97a4c06309e76db","section_path":["Pointing devices","Best practices"]},
+      "title": "Let the pointer reveal and hide transient controls",
+      "statement": {"en":"Let people use the pointer to reveal and hide controls that minimize or fade automatically.","ja":"自動的にminimizeまたはfadeするcontrolをpointerで表示・非表示にできるようにする。"},
+      "conditions": ["Examples include a minimized toolbar and full-screen playback controls."],
+      "review_note": "Recorded both control examples and the bidirectional reveal-and-hide behavior."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0005": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"54c4c59722035279dbca13009c1771920523cab0346bcde85ab9ee222f0b8011","section_path":["Pointing devices","Best practices"]},
+      "title": "Keep modifier-key interactions consistent",
+      "statement": {"en":"Keep object interactions consistent while a person holds a modifier key.","ja":"modifier keyを押している間のobject interactionを一貫させる。"},
+      "conditions": ["Option-drag duplication is a representative modifier-key interaction."],
+      "review_note": "Separated general modifier-key consistency from the explicit touch-and-pointer equality requirement."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0006": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"ba06401793a2b2cbe25cd238d25f855b5edebf99f2598b48f12d35dc8e0ea4b4","section_path":["Pointing devices","Platform considerations","iPadOS"]},
+      "title": "Support pointer multiple selection in custom iPadOS views",
+      "statement": {"en":"When needed, support pointer-based multiple selection in custom iPadOS views.","ja":"必要な場合はcustom iPadOS viewでpointerによるmultiple selectionをsupportする。"},
+      "conditions": ["In iPadOS 15 and later, click-and-drag expands the pointer into a rectangular selection region.", "Standard nonlist collection views support this by default; custom views require implementation."],
+      "review_note": "Recorded OS availability, selection behavior, and the custom-view implementation boundary."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0007": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"60a6a3e195b8b082f859e2f06a5c9d4faa146d8f6322d0c30a398c80a2199321","section_path":["Pointing devices","Platform considerations","iPadOS"]},
+      "title": "Differentiate pointer and touch only when valuable",
+      "statement": {"en":"Differentiate iPadOS pointer and touch input only when the distinction adds value.","ja":"価値が加わる場合にだけiPadOSのpointerとtouch inputを区別する。"},
+      "conditions": ["A video scrubber can offer precise pointer seeking while retaining touch dragging."],
+      "review_note": "Recorded the value gate and the precision-without-replacement example."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0008": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"9eb01c26ac04033f8dfee44af85beebbdebb11cca06aac53ba7a0fe0ff392873","section_path":["Pointing devices","Platform considerations","iPadOS","Pointer accessories"]},
+      "title": "Use clear, simple pointer-accessory images",
+      "statement": {"en":"Use clear, simple images for custom iPadOS pointer accessories.","ja":"custom iPadOS pointer accessoryには明確でsimpleなimageを使う。"},
+      "conditions": ["The small image must communicate the interaction without excessive detail."],
+      "review_note": "Recorded the accessory size and communication constraint."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0009": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"d3df1bdf0cf67a28f75f61b0c027967737c708a507a991143bb85e2d9b3130b0","section_path":["Pointing devices","Platform considerations","iPadOS","Pointer accessories"]},
+      "title": "Consider accessory transitions for state changes",
+      "statement": {"en":"Consider using an iPadOS pointer-accessory transition to communicate an element’s state or behavior change.","ja":"elementのstateやbehavior変化を伝えるためiPadOS pointer accessory transitionを検討する。"},
+      "conditions": ["The system animates accessory appearance, disappearance, shape, and position transitions."],
+      "review_note": "Retained MAY and recorded the complete transition behavior."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0010": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"e09bb38c82d8ff74ceb9f54d82d0dd8f59b9112d476e8cacd8e5d35710bb4947","section_path":["Pointing devices","Platform considerations","iPadOS","Standard pointers and effects"]},
+      "title": "Prefer standard pointer appearances for standard elements",
+      "statement": {"en":"Prefer system-provided iPadOS pointer appearances for standard buttons and text-entry areas.","ja":"standard buttonとtext-entry areaにはsystem提供のiPadOS pointer appearanceを優先する。"},
+      "review_note": "Recorded the exact standard element types and familiarity purpose."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0011": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"4645993ee92b79e04c09f9abe0f96cee66e550f33c54139085c4fdd595eed08c","section_path":["Pointing devices","Platform considerations","iPadOS","Standard pointers and effects"]},
+      "title": "Create contiguous hit regions for custom bar buttons",
+      "statement": {"en":"Create contiguous iPadOS hit regions for adjacent custom bar buttons.","ja":"隣接するcustom bar buttonに連続したiPadOS hit regionを作る。"},
+      "conditions": ["Prevent the pointer from briefly reverting to its default shape between buttons."],
+      "review_note": "Recorded adjacency and the distracting default-shape transition it prevents."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0012": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"5b984033c2ee618a0aa10b33c6673ef535366d9d953c14da9ff343f731e60dfc","section_path":["Pointing devices","Platform considerations","iPadOS","Customizing pointers"]},
+      "title": "Use standard pointer effects for standard-like custom elements",
+      "statement": {"en":"Prefer system-provided iPadOS pointer effects for custom elements that behave like standard elements.","ja":"standard elementのように動作するcustom elementにはsystem提供のiPadOS pointer effectを優先する。"},
+      "conditions": ["A nonstandard effect on a standard-like control can make it appear broken."],
+      "review_note": "Recorded the behavior-based test and the broken-control risk."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0013": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"dcace2737d7f8bbbfdb025dca018ab1b6976793ac925ae97be01c7d8a88faefb","section_path":["Pointing devices","Platform considerations","iPadOS","Customizing pointers"]},
+      "title": "Use pointer effects consistently",
+      "statement": {"en":"Use iPadOS pointer effects consistently throughout the app.","ja":"app全体でiPadOS pointer effectを一貫して使う。"},
+      "conditions": ["Give similar work areas, such as drawing regions, similar pointer behavior."],
+      "review_note": "Recorded the cross-area learning transfer the consistency supports."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0014": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"9ca3aee0642349c490ed5489c2fb17d98db2e4839b3a00bd22a6819861f8af63","section_path":["Pointing devices","Platform considerations","iPadOS","Customizing pointers"]},
+      "title": "Avoid gratuitous pointer and content effects",
+      "statement": {"en":"Avoid iPadOS pointer and content effects that provide no practical value.","ja":"実用的な価値のないiPadOS pointer effectやcontent effectを避ける。"},
+      "conditions": ["Purely decorative changes can distract or irritate people."],
+      "review_note": "Recorded the practical-value test and both user-impact risks."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0015": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"345ec3788df87ac8e003441874e1db2d9781b92c38a44c0710c34bd29d31cbe3","section_path":["Pointing devices","Platform considerations","iPadOS","Customizing pointers"]},
+      "title": "Keep custom pointer shapes simple",
+      "statement": {"en":"Keep custom iPadOS pointer shapes simple and immediately understandable.","ja":"custom iPadOS pointer shapeをsimpleで即座に理解できるものにする。"},
+      "conditions": ["Signal the available action without drawing excessive attention to the pointer."],
+      "review_note": "Repaired the statement and recorded action signaling and attention limits."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0016": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"8a11555eb2bfcf6239523dfdb1efa6b8ea9f652af978b7385252941b1affb685","section_path":["Pointing devices","Platform considerations","iPadOS","Customizing pointers"]},
+      "title": "Consider useful pointer annotations",
+      "statement": {"en":"Consider custom iPadOS pointer annotations that provide useful contextual information.","ja":"有用なcontext情報を提供するcustom iPadOS pointer annotationを検討する。"},
+      "conditions": ["Representative information includes graph coordinates or a resizable image’s dimensions."],
+      "review_note": "Retained MAY and recorded the usefulness gate and both examples."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0017": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"f4b2da87c5f45d4a8dc4dd7cafa7d5ab54ce2a1d29abdc4a4336a4a33e81da22","section_path":["Pointing devices","Platform considerations","iPadOS","Customizing pointers"]},
+      "title": "Avoid instructional pointer text",
+      "statement": {"en":"Avoid displaying instructional text with an iPadOS pointer.","ja":"iPadOS pointerにinstructional textを表示しない。"},
+      "exceptions": ["Make the interface clear and simple enough to understand with either pointer or touch."],
+      "review_note": "Recorded the complexity risk and the interface-clarity alternative."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0018": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"cb27b9c9381861b5d68c2045a5cc93835a0ee54a82bcd231f029abd3111d4634","section_path":["Pointing devices","Platform considerations","iPadOS","Customizing pointers"]},
+      "title": "Consider shadow, scale, and spacing together",
+      "statement": {"en":"Consider shadow, scale, and element spacing together when defining an iPadOS hover effect.","ja":"iPadOS hover effectではshadow、scale、element spacingを合わせて検討する。"},
+      "conditions": ["Reserve scaling for elements with room to grow without crowding or overlap.", "When space is limited, consider tint without scale and shadow; avoid shadow without scale."],
+      "review_note": "Retained MAY and preserved all scale, tint, shadow, and spacing relationships."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0019": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"9dcbb0e6f7999dfc0aac35bbd24fd8f74c4206d95a4c9ae00269e4ed562647fe","section_path":["Pointing devices","Platform considerations","iPadOS","Standard pointers and effects"]},
+      "title": "Use highlight for small transparent elements",
+      "statement": {"en":"Use the iPadOS highlight effect for a small element with a transparent background.","ja":"transparent backgroundを持つsmall elementにはiPadOS highlight effectを使う。"},
+      "review_note": "Preserved the effect-to-size-and-background mapping."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0020": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"615025ec688cb022d29b8b7e5016ef5183a55bf8903676260c24e28b6a42c32a","section_path":["Pointing devices","Platform considerations","iPadOS","Standard pointers and effects"]},
+      "title": "Use lift for small opaque elements",
+      "statement": {"en":"Use the iPadOS lift effect for a small element with an opaque background.","ja":"opaque backgroundを持つsmall elementにはiPadOS lift effectを使う。"},
+      "review_note": "Preserved the effect-to-size-and-background mapping."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0021": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"7ae96722f5617322b28eecc3478627857dda8d3ee0debf3058a8b20fa5956d5b","section_path":["Pointing devices","Platform considerations","iPadOS","Standard pointers and effects"]},
+      "title": "Use hover for large iPadOS elements",
+      "statement": {"en":"Use the iPadOS hover effect for large elements and customize scale, tint, and shadow as needed.","ja":"large elementにはiPadOS hover effectを使い、必要に応じてscale、tint、shadowを調整する。"},
+      "review_note": "Repaired the truncated statement and preserved all three customizable attributes."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0022": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"2d4becd5c3308240852c5bf14ba6538ae496f017a5b1ada6a3df7877dfe307af","section_path":["Pointing devices","Platform considerations","iPadOS","Standard pointers and effects"]},
+      "title": "Provide the corner radius for a nonstandard lift shape",
+      "statement": {"en":"Provide the corner radius when an iPadOS lift-effect element uses a nonstandard shape.","ja":"iPadOS lift effectのelementが非標準shapeを使う場合はcorner radiusを提供する。"},
+      "normative_level": "MUST",
+      "conditions": ["The element’s shape differs from the system rounded rectangle, such as a circle."],
+      "review_note": "Promoted to MUST after confirming the conditional explicit need to provide the radius for seamless animation."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0023": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"fbc637de83c4ea61c63bc3c71a23df2a5641f3af53eba1d3269dd7eeb5781aab","section_path":["Pointing devices","Best practices"]},
+      "title": "Keep modifier-key results identical across touch and pointer input",
+      "statement": {"en":"Ensure a modifier-key interaction produces the same result with touch and pointer input.","ja":"modifier-key interactionがtouchとpointer inputで同じ結果になるようにする。"},
+      "conditions": ["The app supports the same object interaction with touch and a pointer."],
+      "review_note": "Recovered and retained the explicit ensure requirement as an atomic input-parity rule."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0024": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"d8d9bff636fa74840da0be819dbb0b29c8eeca1d2ae90a72e3df93755c8e9f2c","section_path":["Pointing devices","Platform considerations","iPadOS","Standard pointers and effects"]},
+      "title": "Support system iPadOS content effects when possible",
+      "statement": {"en":"When possible, support system-provided iPadOS content effects according to each effect’s design intent.","ja":"可能な場合は各effectのdesign intentに従ってsystem提供のiPadOS content effectをsupportする。"},
+      "review_note": "Recovered the omitted lead and its system-consistency condition."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0025": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"1f9ce53e9201ab92182d639d940e0f9a10e0a3d343170ae80b992a4649127c25","section_path":["Pointing devices","Platform considerations","iPadOS","Standard pointers and effects"]},
+      "title": "Provide comfortable iPadOS pointer hit regions",
+      "statement": {"en":"Provide comfortable pointer hit regions around iPadOS interactive elements.","ja":"iPadOSのinteractive element周囲に快適なpointer hit regionを設ける。"},
+      "conditions": ["Balance selection precision against the effort needed to pull the pointer away.", "About 12 points around bezel elements and 24 points around bezel-free visible edges are documented starting points."],
+      "review_note": "Recovered the omitted lead and preserved both approximate padding values without making them universal minima."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0026": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"442bc0c86ac1084bfe9126fa3a62ff565e5345dabab9059aaab81f7e46538dd8","section_path":["Pointing devices","Platform considerations","iPadOS","Pointer magnetism"]},
+      "title": "Avoid magnetism on iPadOS hover effects",
+      "statement": {"en":"Avoid adding pointer magnetism to an iPadOS element that uses hover.","ja":"hoverを使うiPadOS elementにpointer magnetismを追加しない。"},
+      "conditions": ["Hover retains the default pointer shape, so magnetism can feel jarring or reduce control."],
+      "exceptions": ["iPadOS applies magnetism by default to lift, highlight, and text-entry areas."],
+      "review_note": "Recovered the omitted hover-specific restriction and preserved the system-applied exceptions."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0027": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"e906a9310856c8a3d3ca8792fa07f8a6612347f6fcb7669ab2afed7f877e29f1","section_path":["Pointing devices","Platform considerations","macOS"]},
+      "title": "Support standard macOS pointing-device mappings",
+      "statement": {"en":"Support standard macOS mouse and trackpad interactions with their documented behavior.","ja":"standard macOS mouse・trackpad interactionを記載されたbehaviorでsupportする。"},
+      "conditions": ["Mouse and trackpad: primary click selects; secondary click opens context; scroll moves content; smart zoom and page or full-screen swipes navigate.", "Mouse and trackpad: Mission Control activates; trackpad lookup shows data; tap to click performs primary click; force click shows Quick Look or pressure control.", "Trackpad pinch zooms; two-finger rotation rotates; edge swipe opens Notification Center; downward swipe opens App Exposé.", "Trackpad thumb-and-three-finger pinch opens Launchpad; spreading them reveals the desktop."],
+      "review_note": "Recovered a specification rule and preserved every interaction, expected behavior, and mouse-versus-trackpad support row."
+    },
+    "HIG-INPUTS-POINTING-DEVICES-0028": {
+      "source": {"source_hash":"a27381143df82134bde1f7e0766ef12ab8e282412a886c24c169ffd4f59163a1","source_sentence_hash":"ecddef0fa1711fe366492bc917f0cfe7bac42f419a606281deee2ed38b30b664","section_path":["Pointing devices","Platform considerations","macOS","Pointers"]},
+      "title": "Use standard macOS pointer styles by meaning",
+      "statement": {"en":"Use each standard macOS pointer style only for its documented interactive meaning.","ja":"各standard macOS pointer styleを記載されたinteractive meaningに合わせて使う。"},
+      "conditions": ["Arrow selects; closed or open hand repositions; contextual-menu and pointing-hand pointers indicate menu and link availability.", "Crosshair selects precisely; disappearing-item, drag-copy, and drag-link pointers communicate drag results.", "Horizontal or vertical I-beam indicates matching text insertion; operation-not-allowed rejects a drop.", "Directional resize pointers communicate down, left, left-right, right, up, or up-down resizing."],
+      "review_note": "Recovered a specification rule and preserved every standard pointer name, meaning, and AppKit mapping."
+    },
     "HIG-INPUTS-GESTURES-0001": {
       "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"73740bbe184b4e9557de33a0c76f2baba9705ffc05dbba18ab35bd39063178e6","section_path":["Gestures","Best practices"]},
       "title": "Offer multiple interaction methods",

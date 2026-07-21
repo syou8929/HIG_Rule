@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 530
-- Reviewed batches: 44
+- Reviewed rules: 558
+- Reviewed batches: 45
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:45:29Z
+- Reviewed at: 2026-07-21T14:53:09Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -531,6 +531,34 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-GESTURES-0032 · high — Recovered a specification rule and preserved every standard gesture, platform scope, and common action row. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0033 · high — Recovered the omitted responsiveness lead separately from predictive feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0034 · high — Recovered the omitted necessity lead and preserved its frequency and no-existing-gesture tests. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-POINTING-DEVICES-0001 · high — Repaired the generic statement and recorded the cross-content consistency example. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0002 · high — Recorded the game scope, system examples, and customizable-gesture constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0003 · high — Repaired the truncated statement and preserved every named input method. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0004 · high — Recorded both control examples and the bidirectional reveal-and-hide behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0005 · high — Separated general modifier-key consistency from the explicit touch-and-pointer equality requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0006 · high — Recorded OS availability, selection behavior, and the custom-view implementation boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0007 · high — Recorded the value gate and the precision-without-replacement example. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0008 · high — Recorded the accessory size and communication constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0009 · high — Retained MAY and recorded the complete transition behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0010 · high — Recorded the exact standard element types and familiarity purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0011 · high — Recorded adjacency and the distracting default-shape transition it prevents. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0012 · high — Recorded the behavior-based test and the broken-control risk. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0013 · high — Recorded the cross-area learning transfer the consistency supports. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0014 · high — Recorded the practical-value test and both user-impact risks. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0015 · high — Repaired the statement and recorded action signaling and attention limits. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0016 · high — Retained MAY and recorded the usefulness gate and both examples. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0017 · high — Recorded the complexity risk and the interface-clarity alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0018 · high — Retained MAY and preserved all scale, tint, shadow, and spacing relationships. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0019 · high — Preserved the effect-to-size-and-background mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0020 · high — Preserved the effect-to-size-and-background mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0021 · high — Repaired the truncated statement and preserved all three customizable attributes. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0022 · high — Promoted to MUST after confirming the conditional explicit need to provide the radius for seamless animation. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0023 · high — Recovered and retained the explicit ensure requirement as an atomic input-parity rule. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0024 · high — Recovered the omitted lead and its system-consistency condition. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0025 · high — Recovered the omitted lead and preserved both approximate padding values without making them universal minima. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0026 · high — Recovered the omitted hover-specific restriction and preserved the system-applied exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0027 · high — Recovered a specification rule and preserved every interaction, expected behavior, and mouse-versus-trackpad support row. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0028 · high — Recovered a specification rule and preserved every standard pointer name, meaning, and AppKit mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

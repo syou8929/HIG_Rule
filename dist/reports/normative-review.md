@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 149
-- Retained MUST: 139
+- Reviewed rules: 151
+- Retained MUST: 141
 - Retained MUST_NOT: 10
-- Normative level changes: 3
+- Normative level changes: 4
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:45:29Z
+- Reviewed at: 2026-07-21T14:53:09Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -68,6 +68,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-GESTURES-0027 — Recovered and retained MUST after confirming the explicit make sure requirement to test custom gestures in real use. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0030 — Recovered and retained MUST after confirming the explicit Full Space prerequisite for custom visionOS gesture interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0031 — Recovered and retained MUST after confirming the explicit must-request permission requirement for hand information. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-POINTING-DEVICES-0022 — Promoted to MUST after confirming the conditional explicit need to provide a nonstandard lift shape’s corner radius. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0023 — Recovered and retained MUST after confirming the explicit ensure requirement for identical modifier-key results across touch and pointer input. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -180,6 +182,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-GESTURES-0027 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure requirement to test custom gestures in real use. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Full Space prerequisite for custom visionOS gesture interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-INPUTS-GESTURES-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit must-request permission requirement for hand information. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-POINTING-DEVICES-0022 · MUST · retained_with_atomicity_or_scope_correction — Promoted to MUST after confirming the conditional explicit need to provide a nonstandard lift shape’s corner radius. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- HIG-INPUTS-POINTING-DEVICES-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit ensure requirement for identical modifier-key results across touch and pointer input. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-FEEDBACK-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
