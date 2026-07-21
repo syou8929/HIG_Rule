@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 250
-- Retained MUST: 229
+- Reviewed rules: 254
+- Retained MUST: 233
 - Retained MUST_NOT: 21
-- Normative level changes: 28
+- Normative level changes: 29
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:11:01Z
+- Reviewed at: 2026-07-21T20:18:08Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -129,6 +129,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-REMOTES-0016 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0017 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0018 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-PATTERNS-DRAG-AND-DROP-0019 — Recovered MUST from the explicit you need to requirement for in-progress item addition. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0020 — Recovered MUST from the explicit you need to clause and separated its visual-feedback requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0021 — Recovered MUST from the explicit you need to requirement for multiple simultaneous drops. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0022 — Recovered conditional MUST from the explicit be sure directive for Finder drag output. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-FEEDBACK-0001 — Retained MUST after confirming the explicit Make sure accessibility requirement and its multimodal receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FILE-MANAGEMENT-0021 — Recovered and retained MUST after confirming the explicit Be sure requirement to reflect the current file-extension choice across save and open interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0024 — Recovered and retained MUST after confirming the conditional explicit need to keep the app name and both document-launcher buttons visible. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
@@ -354,6 +358,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-REMOTES-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0017 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-PATTERNS-DRAG-AND-DROP-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit you need to requirement for in-progress item addition. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit you need to clause and separated its visual-feedback requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit you need to requirement for multiple simultaneous drops. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered conditional MUST from the explicit be sure directive for Finder drag output. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-FEEDBACK-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure accessibility requirement and its multimodal receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FILE-MANAGEMENT-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Be sure requirement to reflect the current file-extension choice across save and open interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))

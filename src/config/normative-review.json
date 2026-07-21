@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T20:11:01Z",
+  "reviewed_at": "2026-07-21T20:18:08Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,43 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 250,
+  "reviewed_rule_count": 254,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-PATTERNS-DRAG-AND-DROP-0019": {
+      "title": "Allow adding items during an iPadOS drag",
+      "statement": {"en": "Let people add items while an iPadOS drag session is in progress.", "ja": "iPadOS drag sessionの進行中にitemを追加できるようにする。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["The experience supports the documented multiple-item drag interaction."],
+      "review_note": "Recovered MUST from the explicit you need to requirement for in-progress item addition."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0020": {
+      "title": "Show flocking feedback for added iPadOS drag items",
+      "statement": {"en": "Show flocking feedback when people add items to an in-progress iPadOS drag.", "ja": "進行中のiPadOS dragへitemを追加するときflocking feedbackを表示する。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["A person adds an item to an in-progress iPadOS drag."],
+      "review_note": "Recovered MUST from the explicit you need to clause and separated its visual-feedback requirement."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0021": {
+      "title": "Accept multiple simultaneous iPadOS drops",
+      "statement": {"en": "Accept multiple simultaneous drops for the documented iPadOS multi-item drag interaction.", "ja": "iPadOSのmulti-item drag interactionで複数のsimultaneous dropを受け入れる。"},
+      "confidence": "high", "review_required": false,
+      "conditions": ["The app supports collecting multiple items in one iPadOS drag session."],
+      "review_note": "Recovered MUST from the explicit you need to requirement for multiple simultaneous drops."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0022": {
+      "title": "Use a reopenable format for Finder drag output",
+      "statement": {"en": "Present content dragged to the Finder in a format the app can reopen later.", "ja": "Finderへdragするcontentを後でappが再度開けるformatで提供する。"},
+      "normative_level": "MUST",
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The macOS app supports dragging content from the app into the Finder."],
+      "review_note": "Recovered conditional MUST from the explicit be sure directive for Finder drag output."
+    },
     "HIG-INPUTS-REMOTES-0005": {
       "title": "Map Play/Pause to media playback controls",
       "statement": {"en": "During media playback, make Play/Pause play, pause, or resume the content.", "ja": "media playback中はPlay/Pauseでcontentをplay、pause、resumeする。"},

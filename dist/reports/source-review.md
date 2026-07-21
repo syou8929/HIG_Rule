@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1429
-- Reviewed batches: 95
+- Reviewed rules: 1442
+- Reviewed batches: 96
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:11:01Z
+- Reviewed at: 2026-07-21T20:18:08Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1117,6 +1117,19 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-REMOTES-0020 · high — Split EPG paging from EPG opening and retained the touch-surface alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0021 · high — Split the direct EPG-button repurposing avoidance from the positive mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0022 · high — Activated the playback-specific channel behavior and separated it from EPG paging. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-PATTERNS-DRAG-AND-DROP-0011 · high — Recorded touch scope and separated the general capability from its three explicit implementation requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0012 · high — Retained MAY and separated the conditional reopenable-format requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0013 · high — Repaired generated wording and recorded the background-selection state. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0014 · high — Retained MAY and recorded both initial and destination-filtered badge counts. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0015 · high — Retained MAY and recorded all documented pointer alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0018 · high — Preserved the practicability qualifier and multiple-selection exception. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0019 · high — Separated the first explicit implementation requirement from the general multi-drag recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0020 · high — Separated the mandatory visual-feedback mechanism from the other multi-drag requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0021 · high — Separated the mandatory multiple-drop acceptance from item addition and flocking feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0022 · high — Separated the conditional Be sure requirement from optional Finder export. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0023 · high — Recovered the qualified clipping option without raising its strength. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0024 · high — Activated the practicability-qualified inactive-window behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0025 · high — Activated the practicability-qualified visionOS launch behavior and recorded its user-activity mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-FEEDBACK-0001 · high — Retained the accessibility-critical MUST and recorded the source's multimodal examples and receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0002 · high — Retained MAY and recorded the proximity, no-action, and unobtrusive-access conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0003 · high — Recorded the criticality, actionability preference, and proportional-interruption constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))

@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2447
+- Active atomic rules: 2454
 - Pages without rules: 16
-- Low-confidence rules: 940
-- Rules requiring human review: 940
+- Low-confidence rules: 934
+- Rules requiring human review: 934
 - Reference notes: 928
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 346
 - getting-started: 100
 - inputs: 219
-- patterns: 289
+- patterns: 296
 - technologies: 635
 
 ## Normative levels
 
 - AVOID: 324
-- MAY: 285
-- MUST: 229
+- MAY: 286
+- MUST: 233
 - MUST_NOT: 21
-- SHOULD: 1588
+- SHOULD: 1590
 
 ## Rules by platform
 
 - carplay: 90
 - ios: 1654
-- ipados: 1618
-- macos: 1375
+- ipados: 1621
+- macos: 1378
 - tvos: 1090
-- visionos: 1431
+- visionos: 1432
 - watchos: 1136
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2381
+- manual: 2388
 
 ## Blocked pages
 
@@ -462,14 +462,8 @@ None.
 - HIG-PATTERNS-DRAG-AND-DROP-0008
 - HIG-PATTERNS-DRAG-AND-DROP-0009
 - HIG-PATTERNS-DRAG-AND-DROP-0010
-- HIG-PATTERNS-DRAG-AND-DROP-0011
-- HIG-PATTERNS-DRAG-AND-DROP-0012
-- HIG-PATTERNS-DRAG-AND-DROP-0013
-- HIG-PATTERNS-DRAG-AND-DROP-0014
-- HIG-PATTERNS-DRAG-AND-DROP-0015
 - HIG-PATTERNS-DRAG-AND-DROP-0016
 - HIG-PATTERNS-DRAG-AND-DROP-0017
-- HIG-PATTERNS-DRAG-AND-DROP-0018
 - HIG-PATTERNS-ENTERING-DATA-0001
 - HIG-PATTERNS-ENTERING-DATA-0002
 - HIG-PATTERNS-ENTERING-DATA-0004
@@ -1405,14 +1399,8 @@ None.
 - HIG-PATTERNS-DRAG-AND-DROP-0008
 - HIG-PATTERNS-DRAG-AND-DROP-0009
 - HIG-PATTERNS-DRAG-AND-DROP-0010
-- HIG-PATTERNS-DRAG-AND-DROP-0011
-- HIG-PATTERNS-DRAG-AND-DROP-0012
-- HIG-PATTERNS-DRAG-AND-DROP-0013
-- HIG-PATTERNS-DRAG-AND-DROP-0014
-- HIG-PATTERNS-DRAG-AND-DROP-0015
 - HIG-PATTERNS-DRAG-AND-DROP-0016
 - HIG-PATTERNS-DRAG-AND-DROP-0017
-- HIG-PATTERNS-DRAG-AND-DROP-0018
 - HIG-PATTERNS-ENTERING-DATA-0001
 - HIG-PATTERNS-ENTERING-DATA-0002
 - HIG-PATTERNS-ENTERING-DATA-0004

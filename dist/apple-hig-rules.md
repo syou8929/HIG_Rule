@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T20:16:29.174Z. 2447 active rules; 3 deprecated rules.
+Generated 2026-07-21T20:21:19.055Z. 2454 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -537,14 +537,21 @@ Generated 2026-07-21T20:16:29.174Z. 2447 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-DRAG-AND-DROP-0008 · SHOULD · low** — Make feedback when dropped content needs time to transfer available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0009 · SHOULD · low** — Make feedback when dropped content initiates a task or action available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0010 · SHOULD · low** — Apply the documented Drag and drop guidance to apply appropriate styling to dropped text. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0011 · SHOULD · low** — Preserve people’s ability to perform multiple simultaneous drag activities. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0012 · MAY · low** — Evaluate whether letting people drag content from your app into the Finder is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0013 · SHOULD · low** — Preserve people’s ability to drag selected content from an inactive window without first making the window active. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0014 · MAY · low** — Evaluate whether displaying a badge during multi-item drag operations is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0015 · MAY · low** — Evaluate whether changing the pointer appearance to indicate what will happen when people drop content is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0011 · SHOULD · high** — Let people perform multiple simultaneous drag activities in iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0012 · MAY · high** — Consider letting people drag content from a macOS app into the Finder. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0013 · SHOULD · high** — Let people drag selected content from an inactive macOS window without activating it first. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0014 · MAY · high** — Consider showing a numeric badge during a macOS multi-item drag. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0015 · MAY · high** — Consider changing the macOS pointer to indicate the result of dropping content. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0016 · SHOULD · low** — Support drag and drop throughout your app wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0017 · SHOULD · low** — Determine when dragging and dropping content within your app results in a move or a copy explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0018 · SHOULD · low** — Let people select and drag content with a single motion wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0018 · SHOULD · high** — Wherever practicable, let people select and drag macOS content in one motion. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0019 · MUST · high** — Let people add items while an iPadOS drag session is in progress. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0020 · MUST · high** — Show flocking feedback when people add items to an in-progress iPadOS drag. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0021 · MUST · high** — Accept multiple simultaneous drops for the documented iPadOS multi-item drag interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0022 · MUST · high** — Present content dragged to the Finder in a format the app can reopen later. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0023 · MAY · high** — When necessary, consider using a clipping as a temporary container for dragged macOS content. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0024 · SHOULD · high** — When possible, let people drag an individual item from an inactive macOS window without changing its background selection. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0025 · SHOULD · high** — When possible, launch the visionOS app to handle its content when people drop that content into empty space. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 ### entering-data
 
 - **HIG-PATTERNS-ENTERING-DATA-0001 · SHOULD · low** — Apply the documented Entering data guidance to be clear about the data you need. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
