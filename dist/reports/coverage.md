@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2347
+- Active atomic rules: 2355
 - Pages without rules: 16
-- Low-confidence rules: 1020
-- Rules requiring human review: 1020
+- Low-confidence rules: 1016
+- Rules requiring human review: 1016
 - Reference notes: 929
 
 ## Rules by category
 
-- components: 839
+- components: 847
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -23,10 +23,10 @@
 ## Normative levels
 
 - AVOID: 308
-- MAY: 273
+- MAY: 278
 - MUST: 206
 - MUST_NOT: 21
-- SHOULD: 1539
+- SHOULD: 1542
 
 ## Rules by platform
 
@@ -36,12 +36,12 @@
 - macos: 1369
 - tvos: 1061
 - visionos: 1413
-- watchos: 1110
+- watchos: 1118
 
 ## Rules by testability
 
 - hybrid: 59
-- manual: 2288
+- manual: 2296
 
 ## Blocked pages
 
@@ -239,10 +239,6 @@ None.
 - HIG-COMPONENTS-TOOLBARS-0014
 - HIG-COMPONENTS-TOOLBARS-0015
 - HIG-COMPONENTS-TOOLBARS-0016
-- HIG-COMPONENTS-WATCH-FACES-0001
-- HIG-COMPONENTS-WATCH-FACES-0002
-- HIG-COMPONENTS-WATCH-FACES-0003
-- HIG-COMPONENTS-WATCH-FACES-0004
 - HIG-COMPONENTS-WEB-VIEWS-0001
 - HIG-COMPONENTS-WEB-VIEWS-0002
 - HIG-COMPONENTS-WIDGETS-0001
@@ -1262,10 +1258,6 @@ None.
 - HIG-COMPONENTS-TOOLBARS-0014
 - HIG-COMPONENTS-TOOLBARS-0015
 - HIG-COMPONENTS-TOOLBARS-0016
-- HIG-COMPONENTS-WATCH-FACES-0001
-- HIG-COMPONENTS-WATCH-FACES-0002
-- HIG-COMPONENTS-WATCH-FACES-0003
-- HIG-COMPONENTS-WATCH-FACES-0004
 - HIG-COMPONENTS-WEB-VIEWS-0001
 - HIG-COMPONENTS-WEB-VIEWS-0002
 - HIG-COMPONENTS-WIDGETS-0001
@@ -3009,7 +3001,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Platform considerations — Watch-face sharing is supported only in watchOS, not iOS, iPadOS, macOS, tvOS, or visionOS.
 - https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/web-views · Web views > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.

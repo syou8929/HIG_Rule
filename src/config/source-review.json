@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:27:19Z",
+  "reviewed_at": "2026-07-21T18:39:15Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2233,6 +2233,20 @@
         "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0019", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0020", "HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0021"
       ],
       "review_note": "Completed Virtual keyboards coverage; retained all eight existing IDs, recovered thirteen atomic rules, narrowed custom-keyboard-extension guidance to iOS, iPadOS, and tvOS, and retained only the two explicit Make sure directives as MUST rules."
+    },
+    {
+      "id": "priority-4-watch-faces-context-2026-07-21",
+      "reviewed_at": "2026-07-21T18:39:15Z",
+      "review_method": "Rendered Apple HIG Watch faces guidance, complication discovery, previews and bezel options, device compatibility, incompatible-face handling, platform support, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/watch-faces", "source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-WATCH-FACES-0001", "HIG-COMPONENTS-WATCH-FACES-0002", "HIG-COMPONENTS-WATCH-FACES-0003",
+        "HIG-COMPONENTS-WATCH-FACES-0004", "HIG-COMPONENTS-WATCH-FACES-0005", "HIG-COMPONENTS-WATCH-FACES-0006",
+        "HIG-COMPONENTS-WATCH-FACES-0007", "HIG-COMPONENTS-WATCH-FACES-0008", "HIG-COMPONENTS-WATCH-FACES-0009",
+        "HIG-COMPONENTS-WATCH-FACES-0010", "HIG-COMPONENTS-WATCH-FACES-0011", "HIG-COMPONENTS-WATCH-FACES-0012"
+      ],
+      "review_note": "Completed Watch faces coverage; retained all four existing IDs, recovered eight atomic rules, and kept every conditional or capability statement at SHOULD or MAY because the source contains no explicit MUST directive."
     }
   ],
   "rules": {
@@ -3572,6 +3586,90 @@
       "checks": {"automated": [], "manual": ["Does the text field provide an accurate content type where it can improve watchOS entry suggestions?"]},
       "testability": "manual",
       "review_note": "Recovered the watchOS content-type capability as MAY and retained the fixed keyboard-type constraint as context."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0001": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "de2b19986ca32db52b7c837c7b9f52fdb7fce3c26c94c5d8fa94ba78b7f68841", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Share watch faces that feature your app's complications",
+      "statement": {"en": "Share watch faces that feature your complications to help people discover the app.", "ja": "appのcomplicationを含むwatch faceを共有し、appの発見を助ける。"},
+      "conditions": ["A configured watch face can introduce people to the app and its complications."],
+      "review_note": "Made the discovery goal and featured-complication mechanism concrete."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0002": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "136255912a34f89e2fe40efb3b1f2d687ff18cc3854ac1d1b9e9f5f6487b947d", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Preview every shared watch face",
+      "statement": {"en": "Display a preview of every watch face you share.", "ja": "共有するすべてのwatch faceにpreviewを表示する。"},
+      "conditions": ["Use a preview suitable for its display context, including websites and watchOS or iOS apps."],
+      "review_note": "Removed generic generated wording and recorded where the preview can be displayed."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0003": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "b4984b6efa9a2fb1ce2f5c7fe7e70381860952ceeeb5504ea27c218e17f952bb", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Aim for shareable watch faces across Apple Watch devices",
+      "statement": {"en": "Aim to offer shareable watch faces for all Apple Watch devices.", "ja": "すべてのApple Watch device向けにshareable watch faceを提供することを目指す。"},
+      "conditions": ["Watch-face availability varies by Apple Watch model and generation."],
+      "review_note": "Preserved the aspirational SHOULD and recorded the compatibility reason."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0004": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "01f73c359c28dfc7daa6d23ebed128751b92fe37afb707d794327fc67506b7a2", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Handle incompatible shared watch faces gracefully",
+      "statement": {"en": "Respond gracefully when people choose an incompatible shared watch face.", "ja": "非互換のshared watch faceが選ばれた場合はgracefulに対応する。"},
+      "conditions": ["The system reports that the selected face isn't available on the person's Apple Watch."],
+      "review_note": "Made the incompatibility trigger explicit and split the alternative and disclosure actions."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0005": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "df43eee45bdbb9ecb3c95c6f385707bfebb0bfe5290baac56e5b40d1ec6b194e", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Support multiple complications in shareable watch faces",
+      "statement": {"en": "When possible, support multiple complications in a shareable watch face.", "ja": "可能な場合はshareable watch faceで複数のcomplicationをsupportする。"},
+      "conditions": ["Use multiple app complications to showcase capabilities and create a curated experience."],
+      "review_note": "Recovered the source's ideal recommendation without elevating it to MUST."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0006": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "df43eee45bdbb9ecb3c95c6f385707bfebb0bfe5290baac56e5b40d1ec6b194e", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Consider customizing supported watch-face attributes",
+      "statement": {"en": "Consider specifying a system accent color, images, or styles for a shareable watch face.", "ja": "shareable watch faceのsystem accent color、image、style指定を検討する。"},
+      "conditions": ["The selected watch face supports the attribute."],
+      "review_note": "Recovered the face-dependent customization capability as MAY."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0007": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "6e7646c5ee37f846f541e7cd750d9ed563d0d85fe99a3cfc94ab3923ea694db8", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Highlight watch-face advantages in its preview",
+      "statement": {"en": "Highlight the advantages of a shared watch face in its preview.", "ja": "shared watch faceのadvantageをpreviewで強調する。"},
+      "conditions": ["Help people visualize the watch face's benefits before adding it."],
+      "review_note": "Separated preview content quality from the requirement to provide a preview."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0008": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "6e7646c5ee37f846f541e7cd750d9ed563d0d85fe99a3cfc94ab3923ea694db8", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Consider an Apple-provided bezel for watch-face previews",
+      "statement": {"en": "Consider an illustrated or high-fidelity hardware bezel for a watch-face preview.", "ja": "watch-face previewにillustratedまたはhigh-fidelity hardware bezelを使うことを検討する。"},
+      "conditions": ["Use the illustrated bezel included with the preview or an Apple Design Resources hardware bezel."],
+      "review_note": "Recovered both Apple-provided bezel options as a MAY choice."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0009": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "ce79f919b937edfa89965075bb416c5bc1f72ae54c493ae594e42abfd56f2e7d", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Consider a similar face for earlier Apple Watch devices",
+      "statement": {"en": "Consider a similar watch-face configuration for devices that don't support the selected face.", "ja": "選択したfaceをsupportしないdevice向けに類似watch-face configurationを検討する。"},
+      "conditions": ["The preferred watch face is unavailable on an earlier Apple Watch model."],
+      "review_note": "Recovered the compatibility fallback as conditional MAY guidance."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0010": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "ce79f919b937edfa89965075bb416c5bc1f72ae54c493ae594e42abfd56f2e7d", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Consider labeling supported Apple Watch devices",
+      "statement": {"en": "Consider labeling each shareable watch face with the devices it supports.", "ja": "各shareable watch faceにsupport対象deviceをlabel表示することを検討する。"},
+      "conditions": ["Device compatibility information helps people choose an appropriate face."],
+      "review_note": "Recovered the optional compatibility label without converting can to a requirement."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0011": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "027739de0df1e9c15b6f0cfe9e510598f5b6676b8adb950b0458f2c5e1aa60c2", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Consider immediately offering a compatible alternative",
+      "statement": {"en": "Consider immediately offering a compatible watch-face configuration instead of displaying an error.", "ja": "error表示の代わりに互換watch-face configurationを即時提供することを検討する。"},
+      "conditions": ["The person selects a watch face that isn't compatible with their Apple Watch."],
+      "review_note": "Recovered the immediate compatible alternative as conditional MAY guidance."
+    },
+    "HIG-COMPONENTS-WATCH-FACES-0012": {
+      "source": {"source_hash": "7f9e51e5f18bcade728d8312295c22a46aa0b63125e4c54a060e905e4617b574", "source_sentence_hash": "027739de0df1e9c15b6f0cfe9e510598f5b6676b8adb950b0458f2c5e1aa60c2", "section_path": ["Watch faces", "Best practices"]},
+      "title": "Explain possible alternatives for incompatible watch faces",
+      "statement": {"en": "Help people understand that an incompatible choice may produce an alternative watch face.", "ja": "非互換の選択ではalternative watch faceが提供される可能性を理解できるようにする。"},
+      "conditions": ["Communicate the possibility alongside the watch-face previews."],
+      "review_note": "Separated the disclosure from the optional alternative-handling action."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

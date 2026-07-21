@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T18:36:56.818Z. 2347 active rules; 3 deprecated rules.
+Generated 2026-07-21T18:42:29.965Z. 2355 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1694,10 +1694,18 @@ Generated 2026-07-21T18:36:56.818Z. 2347 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0021 · MAY · high** — Consider setting a watchOS text field's content type to improve text entry. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 ### watch-faces
 
-- **HIG-COMPONENTS-WATCH-FACES-0001 · SHOULD · low** — Apply the documented Watch faces guidance to help people discover your app by sharing watch faces that feature your complications. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
-- **HIG-COMPONENTS-WATCH-FACES-0002 · SHOULD · low** — Present a preview of each watch face you share in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
-- **HIG-COMPONENTS-WATCH-FACES-0003 · SHOULD · low** — Apply the documented Watch faces guidance to aim to offer shareable watch faces for all Apple Watch devices. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
-- **HIG-COMPONENTS-WATCH-FACES-0004 · SHOULD · low** — Apply the documented Watch faces guidance to respond gracefully if people choose an incompatible watch face. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0001 · SHOULD · high** — Share watch faces that feature your complications to help people discover the app. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0002 · SHOULD · high** — Display a preview of every watch face you share. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0003 · SHOULD · high** — Aim to offer shareable watch faces for all Apple Watch devices. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0004 · SHOULD · high** — Respond gracefully when people choose an incompatible shared watch face. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0005 · SHOULD · high** — When possible, support multiple complications in a shareable watch face. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0006 · MAY · high** — Consider specifying a system accent color, images, or styles for a shareable watch face. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0007 · SHOULD · high** — Highlight the advantages of a shared watch face in its preview. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0008 · MAY · high** — Consider an illustrated or high-fidelity hardware bezel for a watch-face preview. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0009 · MAY · high** — Consider a similar watch-face configuration for devices that don't support the selected face. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0010 · MAY · high** — Consider labeling each shareable watch face with the devices it supports. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0011 · MAY · high** — Consider immediately offering a compatible watch-face configuration instead of displaying an error. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- **HIG-COMPONENTS-WATCH-FACES-0012 · SHOULD · high** — Help people understand that an incompatible choice may produce an alternative watch face. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
 ### web-views
 
 - **HIG-COMPONENTS-WEB-VIEWS-0001 · SHOULD · low** — Ensure the experience accommodates forward and back navigation when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))

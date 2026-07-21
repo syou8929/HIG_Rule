@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1246
-- Reviewed batches: 78
+- Reviewed rules: 1258
+- Reviewed batches: 79
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:27:19Z
+- Reviewed at: 2026-07-21T18:39:15Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -585,6 +585,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0019 · high — Recovered the conditional material treatment as SHOULD without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0020 · high — Recovered the concrete positioning technique as a separate SHOULD rule. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0021 · high — Recovered the watchOS content-type capability as MAY and retained the fixed keyboard-type constraint as context. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-WATCH-FACES-0001 · high — Made the discovery goal and featured-complication mechanism concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0002 · high — Removed generic generated wording and recorded where the preview can be displayed. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0003 · high — Preserved the aspirational SHOULD and recorded the compatibility reason. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0004 · high — Made the incompatibility trigger explicit and split the alternative and disclosure actions. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0005 · high — Recovered the source's ideal recommendation without elevating it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0006 · high — Recovered the face-dependent customization capability as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0007 · high — Separated preview content quality from the requirement to provide a preview. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0008 · high — Recovered both Apple-provided bezel options as a MAY choice. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0009 · high — Recovered the compatibility fallback as conditional MAY guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0010 · high — Recovered the optional compatibility label without converting can to a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0011 · high — Recovered the immediate compatible alternative as conditional MAY guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WATCH-FACES-0012 · high — Separated the disclosure from the optional alternative-handling action. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
 - HIG-COMPONENTS-WINDOWS-0007 · high — Retained MAY and recorded the documented pinch interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0009 · high — Restored the truncated bottom-edge risk and recorded both limited-use and inspector alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0010 · high — Recorded the familiar-interface rationale and bounded-3D volume alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
