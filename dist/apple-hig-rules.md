@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T21:25:11.892Z. 2557 active rules; 4 deprecated rules.
+Generated 2026-07-21T21:29:20.146Z. 2565 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2449,14 +2449,22 @@ Generated 2026-07-21T21:25:11.892Z. 2557 active rules; 4 deprecated rules.
 - **HIG-TECHNOLOGIES-GAME-CENTER-0015 · SHOULD · low** — Choose or apply party codes to invite players to multiplayer activities in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0016 · SHOULD · low** — Ensure the experience accommodates multiplayer activities through in-game UI. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0017 · SHOULD · low** — Make engaging activity artwork available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
-- **HIG-TECHNOLOGIES-GAME-CENTER-0018 · SHOULD · low** — Present an optional image at the top of the dashboard in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
-- **HIG-TECHNOLOGIES-GAME-CENTER-0019 · SHOULD · low** — Apply the documented Game Center guidance to be aware of Game Center support on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0018 · MAY · high** — Consider an optional image at the top of the tvOS Game Center dashboard to highlight the game's aesthetic. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0019 · AVOID · high** — Avoid trying to invoke system-provided Game Center UI on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0020 · SHOULD · low** — Apply the documented Game Center guidance to strive for the most perfect score in a rhythm game. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0021 · SHOULD · low** — Apply the documented Game Center guidance to allow players to join gameplay late, leave early, and return later. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0022 · SHOULD · low** — Make a way for players to view the current party code in your game available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0023 · SHOULD · low** — Apply the documented Game Center guidance to allow players to enter a party code manually. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0024 · SHOULD · low** — Determine a display order explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0025 · SHOULD · low** — Use of leaderboard sets for multiple leaderboards. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0026 · SHOULD · high** — Use a simple, easily recognizable tvOS Game Center dashboard image that looks good at a distance. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0027 · MAY · high** — Consider the game's logo or word mark for the tvOS Game Center dashboard image. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0028 · AVOID · high** — Avoid using the app icon as the tvOS Game Center dashboard image. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0029 · SHOULD · high** — Use a 600×180-point tvOS dashboard image, corresponding to 1200×360 pixels at @2x. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0030 · SHOULD · high** — Use PNG, TIF, or JPG for the tvOS Game Center dashboard image. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0031 · SHOULD · high** — Use the sRGB or P3 color space for the tvOS Game Center dashboard image. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0032 · SHOULD · high** — Use a minimum resolution of 72 DPI for the tvOS Game Center dashboard image. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0033 · SHOULD · high** — Present Game Center content for a watchOS game on a connected iPhone. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 ### generative-ai
 
 - **HIG-TECHNOLOGIES-GENERATIVE-AI-0001 · SHOULD · low** — Apply the documented Generative AI guidance to design your experience responsibly. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))

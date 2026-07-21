@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:16:40Z",
+  "reviewed_at": "2026-07-21T21:26:43Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2592,6 +2592,18 @@
         "HIG-TECHNOLOGIES-CAREKIT-0040", "HIG-TECHNOLOGIES-CAREKIT-0041", "HIG-TECHNOLOGIES-CAREKIT-0042", "HIG-TECHNOLOGIES-CAREKIT-0043", "HIG-TECHNOLOGIES-CAREKIT-0044", "HIG-TECHNOLOGIES-CAREKIT-0045", "HIG-TECHNOLOGIES-CAREKIT-0046", "HIG-TECHNOLOGIES-CAREKIT-0047", "HIG-TECHNOLOGIES-CAREKIT-0048"
       ],
       "review_note": "Completed the page, preserved sixteen active IDs, deprecated one non-guidance SF Symbols capability fragment, recovered thirty-one atomic rules, and retained nine explicit privacy, required-field, accessibility, relevance, or color-only MUST/MUST_NOT decisions."
+    },
+    {
+      "id": "priority-4-game-center-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T21:26:43Z",
+      "review_method": "Rendered Apple HIG Game Center platform limitations, complete tvOS and watchOS guidance, and the tvOS dashboard-image table were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/game-center", "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab"}],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-GAME-CENTER-0018", "HIG-TECHNOLOGIES-GAME-CENTER-0019", "HIG-TECHNOLOGIES-GAME-CENTER-0026", "HIG-TECHNOLOGIES-GAME-CENTER-0027", "HIG-TECHNOLOGIES-GAME-CENTER-0028",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0029", "HIG-TECHNOLOGIES-GAME-CENTER-0030", "HIG-TECHNOLOGIES-GAME-CENTER-0031", "HIG-TECHNOLOGIES-GAME-CENTER-0032", "HIG-TECHNOLOGIES-GAME-CENTER-0033"
+      ],
+      "review_note": "Completed both platform sections, preserved two existing IDs, recovered eight atomic rules, corrected the optional tvOS image to MAY, captured all four table specifications, and kept unavailable watchOS system UI at AVOID."
     }
   ],
   "rules": {
@@ -6075,6 +6087,66 @@
       "title": "Avoid relying on CareKit on unsupported platforms", "statement": {"en": "Avoid relying on CareKit in macOS, tvOS, visionOS, or watchOS.", "ja": "macOS、tvOS、visionOS、watchOSではCareKitに依存しない。"}, "normative_level": "AVOID",
       "scope": {"portability": "technology-specific", "platforms": ["macos", "tvos", "visionos", "watchos"], "devices": ["mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
       "conditions": ["The documented CareKit experience is supported on iOS and iPadOS only."], "review_note": "Recorded unsupported platforms conservatively as AVOID rather than promoting descriptive support text to MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0018": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "8cd79fdbd186377868a4991be27d827a56e86de3e45375b28776f50b50a17994", "section_path": ["Game Center", "Platform considerations", "tvOS"]},
+      "title": "Consider an optional tvOS Game Center dashboard image", "statement": {"en": "Consider an optional image at the top of the tvOS Game Center dashboard to highlight the game's aesthetic.", "ja": "gameのaestheticを強調するためtvOS Game Center dashboard上部のoptional imageを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "technology-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "review_note": "Corrected the generated SHOULD to MAY because the source explicitly describes the dashboard image as optional."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0019": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "de93041d13b75c3dd8ede834b9a65a634c7db94c1081182c173e049551a2fb7c", "section_path": ["Game Center", "Platform considerations", "watchOS"]},
+      "title": "Avoid invoking unavailable Game Center system UI on watchOS", "statement": {"en": "Avoid trying to invoke system-provided Game Center UI on watchOS.", "ja": "watchOSでsystem-provided Game Center UIをinvokeしようとしない。"}, "normative_level": "AVOID",
+      "scope": {"portability": "technology-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["GameKit features and APIs remain available, but watchOS has no invocable system Game Center UI."], "review_note": "Replaced the vague awareness rule with the actionable platform limitation and kept it at AVOID."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0026": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "e3bc07e562d236008c937bf9dfd2242996b78564968121463a45d423cdac5380", "section_path": ["Game Center", "Platform considerations", "tvOS"]},
+      "title": "Use a simple recognizable tvOS dashboard image", "statement": {"en": "Use a simple, easily recognizable tvOS Game Center dashboard image that looks good at a distance.", "ja": "距離があっても見やすいsimpleでrecognizableなtvOS Game Center dashboard imageを使う。"},
+      "scope": {"portability": "technology-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "review_note": "Recovered simplicity, recognition, and distance-viewing requirements."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0027": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "e3bc07e562d236008c937bf9dfd2242996b78564968121463a45d423cdac5380", "section_path": ["Game Center", "Platform considerations", "tvOS"]},
+      "title": "Consider a game logo for the tvOS dashboard image", "statement": {"en": "Consider the game's logo or word mark for the tvOS Game Center dashboard image.", "ja": "tvOS Game Center dashboard imageにはgameのlogoまたはword markを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "technology-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "review_note": "Recovered both optional brand-artwork choices and preserved consider strength."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0028": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "e3bc07e562d236008c937bf9dfd2242996b78564968121463a45d423cdac5380", "section_path": ["Game Center", "Platform considerations", "tvOS"]},
+      "title": "Avoid the app icon as the tvOS dashboard image", "statement": {"en": "Avoid using the app icon as the tvOS Game Center dashboard image.", "ja": "app iconをtvOS Game Center dashboard imageとして使わない。"}, "normative_level": "AVOID",
+      "scope": {"portability": "technology-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "review_note": "Separated the embedded don't clause and retained it at AVOID rather than MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0029": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "f55383b7032acb4b5514e232001ce46430f1d29bf4597ef80c6c3ba56541a5f3", "section_path": ["Game Center", "Platform considerations", "tvOS"]},
+      "title": "Size the tvOS dashboard image to 600×180 points", "statement": {"en": "Use a 600×180-point tvOS dashboard image, corresponding to 1200×360 pixels at @2x.", "ja": "tvOS dashboard imageを600×180 point、@2xで1200×360 pixelにする。"},
+      "scope": {"portability": "technology-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "review_note": "Recovered both point and @2x pixel dimensions from the table."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0030": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "f55383b7032acb4b5514e232001ce46430f1d29bf4597ef80c6c3ba56541a5f3", "section_path": ["Game Center", "Platform considerations", "tvOS"]},
+      "title": "Use a supported tvOS dashboard-image format", "statement": {"en": "Use PNG, TIF, or JPG for the tvOS Game Center dashboard image.", "ja": "tvOS Game Center dashboard imageにはPNG、TIF、JPGのいずれかを使う。"},
+      "scope": {"portability": "technology-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "review_note": "Recovered every supported table format."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0031": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "f55383b7032acb4b5514e232001ce46430f1d29bf4597ef80c6c3ba56541a5f3", "section_path": ["Game Center", "Platform considerations", "tvOS"]},
+      "title": "Use sRGB or P3 for the tvOS dashboard image", "statement": {"en": "Use the sRGB or P3 color space for the tvOS Game Center dashboard image.", "ja": "tvOS Game Center dashboard imageにはsRGBまたはP3 color spaceを使う。"},
+      "scope": {"portability": "technology-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "review_note": "Recovered both supported table color spaces."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0032": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "f55383b7032acb4b5514e232001ce46430f1d29bf4597ef80c6c3ba56541a5f3", "section_path": ["Game Center", "Platform considerations", "tvOS"]},
+      "title": "Use at least 72 DPI for the tvOS dashboard image", "statement": {"en": "Use a minimum resolution of 72 DPI for the tvOS Game Center dashboard image.", "ja": "tvOS Game Center dashboard imageには最低72 DPIのresolutionを使う。"},
+      "scope": {"portability": "technology-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "review_note": "Recovered the table's minimum resolution."
+    },
+    "HIG-TECHNOLOGIES-GAME-CENTER-0033": {
+      "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "c198f0ee9d54322809d29e7b4b44573b0adb335ec9bd0aad3aedb615b58e0064", "section_path": ["Game Center", "Platform considerations", "watchOS"]},
+      "title": "Present watchOS Game Center content on a connected iPhone", "statement": {"en": "Present Game Center content for a watchOS game on a connected iPhone.", "ja": "watchOS gameのGame Center contentをconnected iPhoneに表示する。"},
+      "scope": {"portability": "technology-specific", "platforms": ["watchos"], "devices": ["apple-watch", "iphone"], "components": [], "modalities": []},
+      "conditions": ["The watchOS game uses GameKit but can't invoke system Game Center UI on the watch."], "review_note": "Recovered the connected-iPhone presentation behavior and its watchOS system-UI limitation."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2557
+- Active atomic rules: 2565
 - Pages without rules: 16
-- Low-confidence rules: 896
-- Rules requiring human review: 896
-- Reference notes: 922
+- Low-confidence rules: 894
+- Rules requiring human review: 894
+- Reference notes: 921
 
 ## Rules by category
 
@@ -18,15 +18,15 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 674
+- technologies: 682
 
 ## Normative levels
 
-- AVOID: 340
-- MAY: 310
+- AVOID: 342
+- MAY: 312
 - MUST: 245
 - MUST_NOT: 22
-- SHOULD: 1640
+- SHOULD: 1644
 
 ## Rules by platform
 
@@ -34,14 +34,14 @@
 - ios: 1698
 - ipados: 1654
 - macos: 1408
-- tvos: 1101
+- tvos: 1108
 - visionos: 1451
-- watchos: 1163
+- watchos: 1164
 
 ## Rules by testability
 
 - hybrid: 67
-- manual: 2490
+- manual: 2498
 
 ## Blocked pages
 
@@ -660,8 +660,6 @@ None.
 - HIG-TECHNOLOGIES-GAME-CENTER-0015
 - HIG-TECHNOLOGIES-GAME-CENTER-0016
 - HIG-TECHNOLOGIES-GAME-CENTER-0017
-- HIG-TECHNOLOGIES-GAME-CENTER-0018
-- HIG-TECHNOLOGIES-GAME-CENTER-0019
 - HIG-TECHNOLOGIES-GAME-CENTER-0020
 - HIG-TECHNOLOGIES-GAME-CENTER-0021
 - HIG-TECHNOLOGIES-GAME-CENTER-0022
@@ -1559,8 +1557,6 @@ None.
 - HIG-TECHNOLOGIES-GAME-CENTER-0015
 - HIG-TECHNOLOGIES-GAME-CENTER-0016
 - HIG-TECHNOLOGIES-GAME-CENTER-0017
-- HIG-TECHNOLOGIES-GAME-CENTER-0018
-- HIG-TECHNOLOGIES-GAME-CENTER-0019
 - HIG-TECHNOLOGIES-GAME-CENTER-0020
 - HIG-TECHNOLOGIES-GAME-CENTER-0021
 - HIG-TECHNOLOGIES-GAME-CENTER-0022
@@ -2134,7 +2130,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Leaderboards — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Multiplayer activities — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Platform considerations > tvOS — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

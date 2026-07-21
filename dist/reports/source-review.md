@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1584
-- Reviewed batches: 104
+- Reviewed rules: 1594
+- Reviewed batches: 105
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:16:40Z
+- Reviewed at: 2026-07-21T21:26:43Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1517,6 +1517,16 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-CARPLAY-0026 · high — Reviewed the rendered source context for “Never direct people to use iPhone to read or resolve CarPlay errors” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0027 · high — Reviewed the rendered source context for “Use immediate playback once CarPlay audio is sufficiently loaded” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0028 · high — Reviewed the rendered source context for “Use appropriate CarPlay audio resumption after an interruption” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-GAME-CENTER-0018 · high — Corrected the generated SHOULD to MAY because the source explicitly describes the dashboard image as optional. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0019 · high — Replaced the vague awareness rule with the actionable platform limitation and kept it at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0026 · high — Recovered simplicity, recognition, and distance-viewing requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0027 · high — Recovered both optional brand-artwork choices and preserved consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0028 · high — Separated the embedded don't clause and retained it at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0029 · high — Recovered both point and @2x pixel dimensions from the table. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0030 · high — Recovered every supported table format. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0031 · high — Recovered both supported table color spaces. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0032 · high — Recovered the table's minimum resolution. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-GAME-CENTER-0033 · high — Recovered the connected-iPhone presentation behavior and its watchOS system-UI limitation. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-NFC-0001 · high — Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0002 · high — Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0003 · high — Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
