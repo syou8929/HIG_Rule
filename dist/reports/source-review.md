@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 603
-- Reviewed batches: 47
+- Reviewed rules: 616
+- Reviewed batches: 48
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:06:02Z
+- Reviewed at: 2026-07-21T15:13:12Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -604,6 +604,19 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-FILE-MANAGEMENT-0032 · high — Recovered a conservative AVOID rule from the source's confusion warning. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0033 · high — Recovered and retained the conditional Be sure requirement with both save paths. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0034 · high — Recovered the positive autosave rule and preserved every documented save trigger. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-LOADING-0001 · high — Recorded the blank-state failure interpretation and separated optional placeholder forms. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0002 · high — Recorded background loading as the mechanism for continued interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0003 · high — Retained MAY and recorded both the standard default and game-style rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0004 · high — Preserved the practicability qualifier and the brief-loading blank-screen exception. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0005 · high — Recorded the delay threshold and system-component response. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0006 · high — Recovered the page-level loading principle without raising its strength. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0007 · high — Recovered the optional placeholder technique and every listed form. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0008 · high — Recovered the conditional long-wait rule and every content example. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0009 · high — Recovered the background-download rule and recorded all timing and asset examples. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0010 · high — Recovered both halves of the source's progress-indicator selection mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0011 · high — Recovered the watchOS immediacy aim without promoting it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0012 · high — Recovered the narrow brief-loading exception and its preferred fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-LOADING-0013 · high — Recovered the timing-accuracy rule and both placeholder-duration failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

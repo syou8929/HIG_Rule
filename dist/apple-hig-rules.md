@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T15:11:32.474Z. 2005 active rules; 3 deprecated rules.
+Generated 2026-07-21T15:15:53.074Z. 2013 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -590,11 +590,19 @@ Generated 2026-07-21T15:11:32.474Z. 2005 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-LIVE-VIEWING-APPS-0019 · SHOULD · low** — Feature live content prominently and make it easy to access in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 ### loading
 
-- **HIG-PATTERNS-LOADING-0001 · SHOULD · low** — Present something as soon as possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
-- **HIG-PATTERNS-LOADING-0002 · SHOULD · low** — Preserve people’s ability to do other things in your app or game while they wait for content to load. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
-- **HIG-PATTERNS-LOADING-0003 · MAY · low** — When games, consider creating a custom loading view. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
-- **HIG-PATTERNS-LOADING-0004 · AVOID · low** — Avoid showing a loading indicator in your watchOS experience wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
-- **HIG-PATTERNS-LOADING-0005 · SHOULD · low** — Clearly communicate that content is loading and how long it might take to complete. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0001 · SHOULD · high** — Show useful content or a meaningful placeholder as soon as possible while loading. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0002 · SHOULD · high** — Let people continue using other app or game actions while content loads. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0003 · MAY · high** — For a game, consider a custom loading view that matches the game's visual style. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0004 · AVOID · high** — Wherever practicable, avoid showing a loading indicator in a watchOS experience. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0005 · SHOULD · high** — Clearly communicate that content is loading and how long completion may take. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0006 · SHOULD · high** — Design asset and content loading to avoid disrupting or harming the user experience. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0007 · MAY · high** — Consider showing placeholder text, graphics, or animations while content loads. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0008 · SHOULD · high** — When loading is unavoidably long, give people interesting content to view while they wait. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0009 · SHOULD · high** — Download large assets in the background to improve installation and launch time. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0010 · SHOULD · high** — Use a determinate progress indicator for a known duration and an indeterminate indicator for an unknown duration. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0011 · SHOULD · high** — Aim to display watchOS content immediately. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0012 · SHOULD · high** — For a one- or two-second watchOS load, prefer a loading indicator to a blank screen. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0013 · SHOULD · high** — Estimate remaining loading time as accurately as possible for long-wait placeholder content. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 ### managing-accounts
 
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · medium** — Identify the authentication method you offer in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))

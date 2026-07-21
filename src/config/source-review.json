@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:06:02Z",
+  "reviewed_at": "2026-07-21T15:13:12Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1348,9 +1348,129 @@
         "HIG-PATTERNS-FILE-MANAGEMENT-0034"
       ],
       "review_note": "Reviewed document creation, saving, Quick Look, document launcher, file provider, macOS custom browser, and Finder Sync context; recovered seventeen atomic rules and refreshed a changed page hash."
+    },
+    {
+      "id": "priority-4-loading-context-2026-07-21",
+      "reviewed_at": "2026-07-21T15:13:12Z",
+      "review_method": "Rendered Apple HIG Loading guidance and supporting prose were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/loading",
+          "source_hash": "1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-LOADING-0001",
+        "HIG-PATTERNS-LOADING-0002",
+        "HIG-PATTERNS-LOADING-0003",
+        "HIG-PATTERNS-LOADING-0004",
+        "HIG-PATTERNS-LOADING-0005",
+        "HIG-PATTERNS-LOADING-0006",
+        "HIG-PATTERNS-LOADING-0007",
+        "HIG-PATTERNS-LOADING-0008",
+        "HIG-PATTERNS-LOADING-0009",
+        "HIG-PATTERNS-LOADING-0010",
+        "HIG-PATTERNS-LOADING-0011",
+        "HIG-PATTERNS-LOADING-0012",
+        "HIG-PATTERNS-LOADING-0013"
+      ],
+      "review_note": "Reviewed responsiveness, background work, placeholders, progress communication and indicator choice, game customization, and watchOS loading behavior; recovered eight atomic rules."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-LOADING-0001": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"138f3c448e8006e254f1d84d16daba58249c2b22a1646dd41f4928c336a170dc","section_path":["Loading","Best practices"]},
+      "title": "Show content as soon as possible",
+      "statement": {"en":"Show useful content or a meaningful placeholder as soon as possible while loading.","ja":"loading中は有用なcontentまたは意味のあるplaceholderをできるだけ早く表示する。"},
+      "conditions": ["A blank initial state can look like a problem with the app or game."],
+      "review_note": "Recorded the blank-state failure interpretation and separated optional placeholder forms."
+    },
+    "HIG-PATTERNS-LOADING-0002": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"f027c490910d93a64b9112f93f7b2c74903f2b5953ff2e485cc376b8f1e92529","section_path":["Loading","Best practices"]},
+      "title": "Keep other actions available while content loads",
+      "statement": {"en":"Let people continue using other app or game actions while content loads.","ja":"contentのloading中も他のappまたはgame actionを続けて使えるようにする。"},
+      "conditions": ["Load content in the background so unrelated actions remain available."],
+      "review_note": "Recorded background loading as the mechanism for continued interaction."
+    },
+    "HIG-PATTERNS-LOADING-0003": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"cbb1c4022ac3adb69298c5fed9029739bf43900b1db5a1b613c128389fa1521a","section_path":["Loading","Showing progress"]},
+      "title": "Consider a custom game loading view",
+      "statement": {"en":"For a game, consider a custom loading view that matches the game's visual style.","ja":"gameではvisual styleに合うcustom loading viewを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Standard progress indicators work well in most apps but can feel out of place in a game.", "Custom animations and elements can create a more engaging experience."],
+      "review_note": "Retained MAY and recorded both the standard default and game-style rationale."
+    },
+    "HIG-PATTERNS-LOADING-0004": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"eb62e80bd865ccd510315bf00c45ae9146995a1ea972a96ba89d4a3c890192a1","section_path":["Loading","Platform considerations","watchOS"]},
+      "title": "Avoid watchOS loading indicators where possible",
+      "statement": {"en":"Wherever practicable, avoid showing a loading indicator in a watchOS experience.","ja":"可能な限りwatchOS体験でloading indicatorを表示しない。"},
+      "conditions": ["Apple Watch interactions are expected to be quick."],
+      "exceptions": ["For a one- or two-second load, an indicator is preferable to a blank screen."],
+      "review_note": "Preserved the practicability qualifier and the brief-loading blank-screen exception."
+    },
+    "HIG-PATTERNS-LOADING-0005": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"faee42e281d4f5b9249f57571670fc0706d2f5e07162b81fe00957943b3def73","section_path":["Loading","Showing progress"]},
+      "title": "Communicate loading state and expected duration",
+      "statement": {"en":"Clearly communicate that content is loading and how long completion may take.","ja":"contentがloading中であることと完了までの見込み時間を明確に伝える。"},
+      "conditions": ["When loading exceeds a moment or two, use an appropriate system-provided progress indicator."],
+      "review_note": "Recorded the delay threshold and system-component response."
+    },
+    "HIG-PATTERNS-LOADING-0006": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"53f70a051d8ecdbb57859f6516a97f36c6348c24f64748cf5cb6af8a2f4e5757","section_path":["Loading"]},
+      "title": "Keep loading from disrupting the experience",
+      "statement": {"en":"Design asset and content loading to avoid disrupting or harming the user experience.","ja":"assetやcontentのloadingがuser experienceを妨げたり損なったりしないよう設計する。"},
+      "review_note": "Recovered the page-level loading principle without raising its strength."
+    },
+    "HIG-PATTERNS-LOADING-0007": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"0b2bfcdc33b3af49ea021d96991e78f2fc7f8ad3712e98b9f2dcd4ae50f5e2f1","section_path":["Loading","Best practices"]},
+      "title": "Consider meaningful loading placeholders",
+      "statement": {"en":"Consider showing placeholder text, graphics, or animations while content loads.","ja":"contentのloading中にplaceholder text、graphic、animationの表示を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Replace each placeholder as its content becomes available."],
+      "review_note": "Recovered the optional placeholder technique and every listed form."
+    },
+    "HIG-PATTERNS-LOADING-0008": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"ae9cb15c0745da9a3851bd9c3dc49c7d8193f352f9459f5b388620b08727ca93","section_path":["Loading","Best practices"]},
+      "title": "Provide interesting content during unavoidable long loading",
+      "statement": {"en":"When loading is unavoidably long, give people interesting content to view while they wait.","ja":"loadingが避けられず長い場合、待機中に見られる興味深いcontentを提供する。"},
+      "conditions": ["Possible content includes gameplay hints, tips, or introductions to new features."],
+      "review_note": "Recovered the conditional long-wait rule and every content example."
+    },
+    "HIG-PATTERNS-LOADING-0009": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"4b8e8b8c44c6d3b4c7905289c2958b8ad4d146d5d59e49632da7f53709d7bee1","section_path":["Loading","Best practices"]},
+      "title": "Download large assets in the background",
+      "statement": {"en":"Download large assets in the background to improve installation and launch time.","ja":"installationとlaunch timeを改善するためlarge assetをbackgroundでdownloadする。"},
+      "conditions": ["Consider scheduling downloads after installation, during updates, or at other nondisruptive times.", "Large assets can include level packs, 3D models, and textures."],
+      "review_note": "Recovered the background-download rule and recorded all timing and asset examples."
+    },
+    "HIG-PATTERNS-LOADING-0010": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"51854166384c63ca3aae5949d972ad2e18644406826f459dbc6292b88d67c5b8","section_path":["Loading","Showing progress"]},
+      "title": "Match progress-indicator type to duration knowledge",
+      "statement": {"en":"Use a determinate progress indicator for a known duration and an indeterminate indicator for an unknown duration.","ja":"durationが既知ならdeterminate、未知ならindeterminate progress indicatorを使う。"},
+      "review_note": "Recovered both halves of the source's progress-indicator selection mapping."
+    },
+    "HIG-PATTERNS-LOADING-0011": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"d8c1367d99a95641a723be0e36b5d9272c6f9881f05013d7bb4ef26ed3c0a308","section_path":["Loading","Platform considerations","watchOS"]},
+      "title": "Aim to display watchOS content immediately",
+      "statement": {"en":"Aim to display watchOS content immediately.","ja":"watchOS contentを即時表示することを目指す。"},
+      "conditions": ["People expect quick Apple Watch interactions."],
+      "review_note": "Recovered the watchOS immediacy aim without promoting it to MUST."
+    },
+    "HIG-PATTERNS-LOADING-0012": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"d8c1367d99a95641a723be0e36b5d9272c6f9881f05013d7bb4ef26ed3c0a308","section_path":["Loading","Platform considerations","watchOS"]},
+      "title": "Prefer a watchOS indicator to a brief blank screen",
+      "statement": {"en":"For a one- or two-second watchOS load, prefer a loading indicator to a blank screen.","ja":"1〜2秒のwatchOS loadingではblank screenよりloading indicatorを優先する。"},
+      "review_note": "Recovered the narrow brief-loading exception and its preferred fallback."
+    },
+    "HIG-PATTERNS-LOADING-0013": {
+      "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"c5dae293b87b866982e8a28176c2f6e17b0071b4b4aec27e37b90de9fe897203","section_path":["Loading","Best practices"]},
+      "title": "Estimate remaining loading time accurately",
+      "statement": {"en":"Estimate remaining loading time as accurately as possible for long-wait placeholder content.","ja":"長時間待機のplaceholder content用に残りloading timeをできるだけ正確に見積もる。"},
+      "conditions": ["Avoid giving people too little time to use placeholder content or so much time that it must repeat."],
+      "review_note": "Recovered the timing-accuracy rule and both placeholder-duration failure modes."
+    },
     "HIG-PATTERNS-FILE-MANAGEMENT-0001": {
       "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"c297e1ae10f98b37520ba4bd43798dcc3681cb68cbfad1401858dab135d448b6","section_path":["File management","Creating and opening files"]},
       "title": "Use familiar document commands and keyboard shortcuts",

@@ -81208,16 +81208,16 @@
   apple_native_rule: Feature live content prominently and make it easy to access in the documented context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-LOADING-0001
-  title: Show something as soon as possible
+  title: Show content as soon as possible
   category: patterns
   topic: loading
   subtopic: best-practices
   statement:
-    en: Present something as soon as possible in the documented context.
-    ja: 該当する状況でsomething as soon as possibleを表示する。
+    en: Show useful content or a meaningful placeholder as soon as possible while loading.
+    ja: loading中は有用なcontentまたは意味のあるplaceholderをできるだけ早く表示する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -81239,7 +81239,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A blank initial state can look like a problem with the app or game.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
@@ -81247,7 +81247,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Present something as soon as possible in the documented context.” in the documented Loading context?
+      - Does the design satisfy “Show useful content or a meaningful placeholder as soon as possible while loading.” in the documented Loading context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -81262,26 +81262,26 @@
     retrieved_at: 2026-07-21T11:15:02.648Z
     source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
     source_sentence_hash: 138f3c448e8006e254f1d84d16daba58249c2b22a1646dd41f4928c336a170dc
-    evidence_paraphrase: Present something as soon as possible in the documented context.
+    evidence_paraphrase: Show useful content or a meaningful placeholder as soon as possible while loading.
   tags:
     - patterns
     - loading
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Present something as soon as possible in the documented context.
+  apple_native_rule: Show useful content or a meaningful placeholder as soon as possible while loading.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-LOADING-0002
-  title: Let people do other things in your app or game while they wait for content to load
+  title: Keep other actions available while content loads
   category: patterns
   topic: loading
   subtopic: best-practices
   statement:
-    en: Preserve people’s ability to do other things in your app or game while they wait for content to load.
-    ja: 利用者がdo other things in your app or game while they wait for content to loadできる状態を保つ。
+    en: Let people continue using other app or game actions while content loads.
+    ja: contentのloading中も他のappまたはgame actionを続けて使えるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -81303,7 +81303,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Load content in the background so unrelated actions remain available.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
@@ -81311,7 +81311,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Preserve people’s ability to do other things in your app or game while they wait for content to load.” in the documented Loading context?
+      - Does the design satisfy “Let people continue using other app or game actions while content loads.” in the documented Loading context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -81326,26 +81326,26 @@
     retrieved_at: 2026-07-21T11:15:02.648Z
     source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
     source_sentence_hash: f027c490910d93a64b9112f93f7b2c74903f2b5953ff2e485cc376b8f1e92529
-    evidence_paraphrase: Preserve people’s ability to do other things in your app or game while they wait for content to load.
+    evidence_paraphrase: Let people continue using other app or game actions while content loads.
   tags:
     - patterns
     - loading
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Preserve people’s ability to do other things in your app or game while they wait for content to load.
+  apple_native_rule: Let people continue using other app or game actions while content loads.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-LOADING-0003
-  title: For games, consider creating a custom loading view
+  title: Consider a custom game loading view
   category: patterns
   topic: loading
   subtopic: showing-progress
   statement:
-    en: When games, consider creating a custom loading view.
-    ja: gamesの場合はcreating a custom loading viewを検討する。
+    en: For a game, consider a custom loading view that matches the game's visual style.
+    ja: gameではvisual styleに合うcustom loading viewを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -81367,7 +81367,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Standard progress indicators work well in most apps but can feel out of place in a game.
+    - Custom animations and elements can create a more engaging experience.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
@@ -81375,7 +81376,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “When games, consider creating a custom loading view.” in the documented Loading context?
+      - Does the design satisfy “For a game, consider a custom loading view that matches the game's visual style.” in the documented Loading context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -81390,26 +81391,26 @@
     retrieved_at: 2026-07-21T11:15:02.648Z
     source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
     source_sentence_hash: cbb1c4022ac3adb69298c5fed9029739bf43900b1db5a1b613c128389fa1521a
-    evidence_paraphrase: When games, consider creating a custom loading view.
+    evidence_paraphrase: For a game, consider a custom loading view that matches the game's visual style.
   tags:
     - patterns
     - loading
     - showing-progress
   priority_rank: 6
   status: active
-  apple_native_rule: When games, consider creating a custom loading view.
+  apple_native_rule: For a game, consider a custom loading view that matches the game's visual style.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-LOADING-0004
-  title: As much as possible, avoid showing a loading indicator in your watchOS experience
+  title: Avoid watchOS loading indicators where possible
   category: patterns
   topic: loading
   subtopic: watchos
   statement:
-    en: Avoid showing a loading indicator in your watchOS experience wherever practicable.
-    ja: 可能な限りavoid showing a loading indicator in your watchOS experience。
+    en: Wherever practicable, avoid showing a loading indicator in a watchOS experience.
+    ja: 可能な限りwatchOS体験でloading indicatorを表示しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -81421,15 +81422,16 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Apple Watch interactions are expected to be quick.
+  exceptions:
+    - For a one- or two-second load, an indicator is preferable to a blank screen.
   rationale:
     en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Avoid showing a loading indicator in your watchOS experience wherever practicable.” in the documented Loading context?
+      - Does the design satisfy “Wherever practicable, avoid showing a loading indicator in a watchOS experience.” in the documented Loading context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -81445,7 +81447,7 @@
     retrieved_at: 2026-07-21T11:15:02.648Z
     source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
     source_sentence_hash: eb62e80bd865ccd510315bf00c45ae9146995a1ea972a96ba89d4a3c890192a1
-    evidence_paraphrase: Avoid showing a loading indicator in your watchOS experience wherever practicable.
+    evidence_paraphrase: Wherever practicable, avoid showing a loading indicator in a watchOS experience.
   tags:
     - patterns
     - loading
@@ -81453,19 +81455,83 @@
     - watchos
   priority_rank: 4
   status: active
-  apple_native_rule: Avoid showing a loading indicator in your watchOS experience wherever practicable.
+  apple_native_rule: Wherever practicable, avoid showing a loading indicator in a watchOS experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-LOADING-0005
-  title: Clearly communicate that content is loading and how long it might take to complete
+  title: Communicate loading state and expected duration
   category: patterns
   topic: loading
   subtopic: showing-progress
   statement:
-    en: Clearly communicate that content is loading and how long it might take to complete.
-    ja: communicate that content is loading and how long it might take to completeを明確にする。
+    en: Clearly communicate that content is loading and how long completion may take.
+    ja: contentがloading中であることと完了までの見込み時間を明確に伝える。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - When loading exceeds a moment or two, use an appropriate system-provided progress indicator.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Clearly communicate that content is loading and how long completion may take.” in the documented Loading context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/loading
+    page_title: Loading
+    section_path:
+      - Loading
+      - Showing progress
+    retrieved_at: 2026-07-21T11:15:02.648Z
+    source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
+    source_sentence_hash: faee42e281d4f5b9249f57571670fc0706d2f5e07162b81fe00957943b3def73
+    evidence_paraphrase: Clearly communicate that content is loading and how long completion may take.
+  tags:
+    - patterns
+    - loading
+    - showing-progress
+  priority_rank: 6
+  status: active
+  apple_native_rule: Clearly communicate that content is loading and how long completion may take.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-LOADING-0006
+  title: Keep loading from disrupting the experience
+  category: patterns
+  topic: loading
+  subtopic: loading
+  statement:
+    en: Design asset and content loading to avoid disrupting or harming the user experience.
+    ja: assetやcontentのloadingがuser experienceを妨げたり損なったりしないよう設計する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -81495,7 +81561,262 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Clearly communicate that content is loading and how long it might take to complete.” in the documented Loading context?
+      - Does the design satisfy “Design asset and content loading to avoid disrupting or harming the user experience.” in the documented Loading context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/loading
+    page_title: Loading
+    section_path:
+      - Loading
+    retrieved_at: 2026-07-21T11:15:02.648Z
+    source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
+    source_sentence_hash: 53f70a051d8ecdbb57859f6516a97f36c6348c24f64748cf5cb6af8a2f4e5757
+    evidence_paraphrase: Design asset and content loading to avoid disrupting or harming the user experience.
+  tags:
+    - patterns
+    - loading
+  priority_rank: 6
+  status: active
+  apple_native_rule: Design asset and content loading to avoid disrupting or harming the user experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-LOADING-0007
+  title: Consider meaningful loading placeholders
+  category: patterns
+  topic: loading
+  subtopic: best-practices
+  statement:
+    en: Consider showing placeholder text, graphics, or animations while content loads.
+    ja: contentのloading中にplaceholder text、graphic、animationの表示を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Replace each placeholder as its content becomes available.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider showing placeholder text, graphics, or animations while content loads.” in the documented Loading context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/loading
+    page_title: Loading
+    section_path:
+      - Loading
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:02.648Z
+    source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
+    source_sentence_hash: 0b2bfcdc33b3af49ea021d96991e78f2fc7f8ad3712e98b9f2dcd4ae50f5e2f1
+    evidence_paraphrase: Consider showing placeholder text, graphics, or animations while content loads.
+  tags:
+    - patterns
+    - loading
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider showing placeholder text, graphics, or animations while content loads.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-LOADING-0008
+  title: Provide interesting content during unavoidable long loading
+  category: patterns
+  topic: loading
+  subtopic: best-practices
+  statement:
+    en: When loading is unavoidably long, give people interesting content to view while they wait.
+    ja: loadingが避けられず長い場合、待機中に見られる興味深いcontentを提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Possible content includes gameplay hints, tips, or introductions to new features.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When loading is unavoidably long, give people interesting content to view while they wait.” in the documented Loading context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/loading
+    page_title: Loading
+    section_path:
+      - Loading
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:02.648Z
+    source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
+    source_sentence_hash: ae9cb15c0745da9a3851bd9c3dc49c7d8193f352f9459f5b388620b08727ca93
+    evidence_paraphrase: When loading is unavoidably long, give people interesting content to view while they wait.
+  tags:
+    - patterns
+    - loading
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When loading is unavoidably long, give people interesting content to view while they wait.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-LOADING-0009
+  title: Download large assets in the background
+  category: patterns
+  topic: loading
+  subtopic: best-practices
+  statement:
+    en: Download large assets in the background to improve installation and launch time.
+    ja: installationとlaunch timeを改善するためlarge assetをbackgroundでdownloadする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Consider scheduling downloads after installation, during updates, or at other nondisruptive times.
+    - Large assets can include level packs, 3D models, and textures.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Download large assets in the background to improve installation and launch time.” in the documented Loading context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/loading
+    page_title: Loading
+    section_path:
+      - Loading
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:02.648Z
+    source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
+    source_sentence_hash: 4b8e8b8c44c6d3b4c7905289c2958b8ad4d146d5d59e49632da7f53709d7bee1
+    evidence_paraphrase: Download large assets in the background to improve installation and launch time.
+  tags:
+    - patterns
+    - loading
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Download large assets in the background to improve installation and launch time.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-LOADING-0010
+  title: Match progress-indicator type to duration knowledge
+  category: patterns
+  topic: loading
+  subtopic: showing-progress
+  statement:
+    en: Use a determinate progress indicator for a known duration and an indeterminate indicator for an unknown duration.
+    ja: durationが既知ならdeterminate、未知ならindeterminate progress indicatorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use a determinate progress indicator for a known duration and an indeterminate indicator for an unknown duration.” in the documented Loading context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -81509,15 +81830,191 @@
       - Showing progress
     retrieved_at: 2026-07-21T11:15:02.648Z
     source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
-    source_sentence_hash: faee42e281d4f5b9249f57571670fc0706d2f5e07162b81fe00957943b3def73
-    evidence_paraphrase: Clearly communicate that content is loading and how long it might take to complete.
+    source_sentence_hash: 51854166384c63ca3aae5949d972ad2e18644406826f459dbc6292b88d67c5b8
+    evidence_paraphrase: Use a determinate progress indicator for a known duration and an indeterminate indicator for an unknown duration.
   tags:
     - patterns
     - loading
     - showing-progress
   priority_rank: 6
   status: active
-  apple_native_rule: Clearly communicate that content is loading and how long it might take to complete.
+  apple_native_rule: Use a determinate progress indicator for a known duration and an indeterminate indicator for an unknown duration.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-LOADING-0011
+  title: Aim to display watchOS content immediately
+  category: patterns
+  topic: loading
+  subtopic: watchos
+  statement:
+    en: Aim to display watchOS content immediately.
+    ja: watchOS contentを即時表示することを目指す。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - People expect quick Apple Watch interactions.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Aim to display watchOS content immediately.” in the documented Loading context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/loading
+    page_title: Loading
+    section_path:
+      - Loading
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T11:15:02.648Z
+    source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
+    source_sentence_hash: d8c1367d99a95641a723be0e36b5d9272c6f9881f05013d7bb4ef26ed3c0a308
+    evidence_paraphrase: Aim to display watchOS content immediately.
+  tags:
+    - patterns
+    - loading
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Aim to display watchOS content immediately.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-LOADING-0012
+  title: Prefer a watchOS indicator to a brief blank screen
+  category: patterns
+  topic: loading
+  subtopic: watchos
+  statement:
+    en: For a one- or two-second watchOS load, prefer a loading indicator to a blank screen.
+    ja: 1〜2秒のwatchOS loadingではblank screenよりloading indicatorを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “For a one- or two-second watchOS load, prefer a loading indicator to a blank screen.” in the documented Loading context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/loading
+    page_title: Loading
+    section_path:
+      - Loading
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T11:15:02.648Z
+    source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
+    source_sentence_hash: d8c1367d99a95641a723be0e36b5d9272c6f9881f05013d7bb4ef26ed3c0a308
+    evidence_paraphrase: For a one- or two-second watchOS load, prefer a loading indicator to a blank screen.
+  tags:
+    - patterns
+    - loading
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: For a one- or two-second watchOS load, prefer a loading indicator to a blank screen.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-LOADING-0013
+  title: Estimate remaining loading time accurately
+  category: patterns
+  topic: loading
+  subtopic: best-practices
+  statement:
+    en: Estimate remaining loading time as accurately as possible for long-wait placeholder content.
+    ja: 長時間待機のplaceholder content用に残りloading timeをできるだけ正確に見積もる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Avoid giving people too little time to use placeholder content or so much time that it must repeat.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Loading experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるLoadingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Estimate remaining loading time as accurately as possible for long-wait placeholder content.” in the documented Loading context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/loading
+    page_title: Loading
+    section_path:
+      - Loading
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:02.648Z
+    source_hash: 1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895
+    source_sentence_hash: c5dae293b87b866982e8a28176c2f6e17b0071b4b4aec27e37b90de9fe897203
+    evidence_paraphrase: Estimate remaining loading time as accurately as possible for long-wait placeholder content.
+  tags:
+    - patterns
+    - loading
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Estimate remaining loading time as accurately as possible for long-wait placeholder content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-MANAGING-ACCOUNTS-0001
   title: Always identify the authentication method you offer

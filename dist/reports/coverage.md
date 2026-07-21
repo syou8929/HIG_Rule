@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2005
+- Active atomic rules: 2013
 - Pages without rules: 16
-- Low-confidence rules: 1300
-- Rules requiring human review: 1300
+- Low-confidence rules: 1295
+- Rules requiring human review: 1295
 - Reference notes: 925
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 312
 - getting-started: 85
 - inputs: 187
-- patterns: 250
+- patterns: 258
 - technologies: 524
 
 ## Normative levels
 
 - AVOID: 259
-- MAY: 229
+- MAY: 230
 - MUST: 146
 - MUST_NOT: 10
-- SHOULD: 1361
+- SHOULD: 1368
 
 ## Rules by platform
 
 - carplay: 73
-- ios: 1387
-- ipados: 1404
-- macos: 1234
-- tvos: 932
-- visionos: 1293
-- watchos: 1032
+- ios: 1393
+- ipados: 1410
+- macos: 1240
+- tvos: 938
+- visionos: 1299
+- watchos: 1040
 
 ## Rules by testability
 
 - hybrid: 65
-- manual: 1940
+- manual: 1948
 
 ## Blocked pages
 
@@ -756,11 +756,6 @@ None.
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0017
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0018
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0019
-- HIG-PATTERNS-LOADING-0001
-- HIG-PATTERNS-LOADING-0002
-- HIG-PATTERNS-LOADING-0003
-- HIG-PATTERNS-LOADING-0004
-- HIG-PATTERNS-LOADING-0005
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0002
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0003
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0004
@@ -2059,11 +2054,6 @@ None.
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0017
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0018
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0019
-- HIG-PATTERNS-LOADING-0001
-- HIG-PATTERNS-LOADING-0002
-- HIG-PATTERNS-LOADING-0003
-- HIG-PATTERNS-LOADING-0004
-- HIG-PATTERNS-LOADING-0005
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0002
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0003
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0004
