@@ -3649,16 +3649,16 @@
   apple_native_rule: Exclude assign the primary role to a button that performs a destructive action, even if that action is the from the applicable experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0008
-  title: Use a flexible-height push button only when you need to display tall or variable height content
+  title: Use flexible-height macOS buttons only for tall or variable content
   category: components
   topic: buttons
   subtopic: push-buttons
   statement:
-    en: Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context.
-    ja: 該当する状況ではa flexible-height push button only when you need to display tall or variable height contentを採用する。
+    en: Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.
+    ja: 2行テキスト、高いアイコンなど、高さが大きいか変動する内容に限って柔軟な高さのプッシュボタンを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -3671,7 +3671,8 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Apply to macOS push buttons.
+    - Use a standard push button when the content doesn't require extra or variable height.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -3679,7 +3680,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context.” in the documented Buttons context?
+      - Does the design satisfy “Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -3696,7 +3697,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 813f53040826318df945db3674dc0754df856ff1a1a93548e978d7a708c34f9b
-    evidence_paraphrase: Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context.
+    evidence_paraphrase: Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.
   tags:
     - components
     - buttons
@@ -3705,7 +3706,7 @@
     - push-buttons
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context.
+  apple_native_rule: Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0009
   title: Consider supporting spring loading
@@ -3716,8 +3717,8 @@
     en: Evaluate whether supporting spring loading is appropriate for the current context.
     ja: supporting spring loadingが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -3775,8 +3776,8 @@
     en: Choose or apply square buttons in a view, not in the window frame in the documented context.
     ja: 該当する状況ではsquare buttons in a view, not in the window frameを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -3834,8 +3835,8 @@
     en: Favor using a symbol in a square button when the documented conditions apply.
     ja: 該当条件ではusing a symbol in a square buttonを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -3893,8 +3894,8 @@
     en: Exclude using labels to introduce square buttons from the applicable experience.
     ja: 該当する体験ではusing labels to introduce square buttonsを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -3952,8 +3953,8 @@
     en: Choose or apply the system-provided help button to display your help documentation in the documented context.
     ja: 該当する状況ではthe system-provided help button to display your help documentationを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4011,8 +4012,8 @@
     en: Apply the documented Buttons guidance to include no more than one help button per window.
     ja: 「Buttons」において「Include no more than one help button per window」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4062,16 +4063,16 @@
   apple_native_rule: Apply the documented Buttons guidance to include no more than one help button per window.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0015
-  title: Position help buttons where people expect to find them
+  title: Place macOS help buttons in expected window locations
   category: components
   topic: buttons
   subtopic: help-buttons
   statement:
-    en: Apply the documented Buttons guidance to position help buttons where people expect to find them.
-    ja: 「Buttons」において「Position help buttons where people expect to find them」の指針を適用する。
+    en: Place a macOS help button in the source-specified lower corner for the window or dialog style.
+    ja: macOSのヘルプボタンを、ウインドウまたはダイアログ形式に応じて指定された下隅へ配置する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4084,7 +4085,9 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - In a dialog with dismissal buttons, use the opposite lower corner and align the help button vertically with them.
+    - In a dialog without dismissal buttons, use the lower-left or lower-right corner.
+    - In a Settings window or pane, use the lower-left or lower-right corner.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -4092,7 +4095,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Buttons guidance to position help buttons where people expect to find them.” in the documented Buttons context?
+      - Does the design satisfy “Place a macOS help button in the source-specified lower corner for the window or dialog style.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -4109,7 +4112,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: d6d2992e38a003fe644153bb4e26f46401dfddb83be5a3ad8a08ebc6786ef882
-    evidence_paraphrase: Apply the documented Buttons guidance to position help buttons where people expect to find them.
+    evidence_paraphrase: Place a macOS help button in the source-specified lower corner for the window or dialog style.
   tags:
     - components
     - buttons
@@ -4118,7 +4121,7 @@
     - help-buttons
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Buttons guidance to position help buttons where people expect to find them.
+  apple_native_rule: Place a macOS help button in the source-specified lower corner for the window or dialog style.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0016
   title: Use a help button within a view, not in the window frame
@@ -4129,8 +4132,8 @@
     en: Choose or apply a help button within a view, not in the window frame in the documented context.
     ja: 該当する状況ではa help button within a view, not in the window frameを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4188,8 +4191,8 @@
     en: Exclude displaying text that introduces a help button from the applicable experience.
     ja: 該当する体験ではdisplaying text that introduces a help buttonを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -4247,8 +4250,8 @@
     en: Choose or apply an image button in a view, not in the window frame in the documented context.
     ja: 該当する状況ではan image button in a view, not in the window frameを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4298,16 +4301,16 @@
   apple_native_rule: Choose or apply an image button in a view, not in the window frame in the documented context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0019
-  title: Include about 10 pixels of padding between the edges of the image and the button edges
+  title: Pad macOS image-button content by about 10 pixels
   category: components
   topic: buttons
   subtopic: image-buttons
   statement:
-    en: Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges.
-    ja: 「Buttons」において「Include about 10 pixels of padding between the edges of the image and the button edges」の指針を適用する。
+    en: Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.
+    ja: macOSの画像ボタンでは、画像とクリック可能なボタン端の間に約10ピクセルの余白を確保する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4320,7 +4323,8 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The button edges define the clickable area even when they aren't visible.
+    - In general, avoid adding a system-provided border to an image button.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -4328,7 +4332,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges.” in the documented Buttons context?
+      - Does the design satisfy “Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -4345,7 +4349,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: eefa413fee8d67b029395515e8647e3f5387de1764ddc045b14de5229a9ebc3e
-    evidence_paraphrase: Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges.
+    evidence_paraphrase: Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.
   tags:
     - components
     - buttons
@@ -4354,19 +4358,19 @@
     - image-buttons
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges.
+  apple_native_rule: Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0020
-  title: Prefer buttons that have a discernible background shape and fill
+  title: Prefer discernible button shapes and fills in visionOS
   category: components
   topic: buttons
   subtopic: visionos
   statement:
-    en: Favor buttons that have a discernible background shape and fill when the documented conditions apply.
-    ja: 該当条件ではbuttons that have a discernible background shape and fillを優先する。
+    en: Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.
+    ja: 単独で視覚的な輪郭が必要なvisionOSボタンでは、識別しやすい背景形状と対照的な塗りを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4380,14 +4384,15 @@
     modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - A separate button background isn't necessary in a toolbar, context menu, alert, or ornament when the containing shape and material keep it comfortably visible.
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor buttons that have a discernible background shape and fill when the documented conditions apply.” in the documented Buttons context?
+      - Does the design satisfy “Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -4403,7 +4408,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: ea3492354cb6b0d20d7f9ac994c036d57a75828ed6340ea89087d26c052fafa5
-    evidence_paraphrase: Favor buttons that have a discernible background shape and fill when the documented conditions apply.
+    evidence_paraphrase: Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.
   tags:
     - components
     - buttons
@@ -4411,7 +4416,7 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Favor buttons that have a discernible background shape and fill when the documented conditions apply.
+  apple_native_rule: Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0021
   title: Avoid creating a custom button that uses a white background fill and black text or icons
@@ -4422,8 +4427,8 @@
     en: Exclude creating a custom button that uses a white background fill and black text or icons from the applicable experience.
     ja: 該当する体験ではcreating a custom button that uses a white background fill and black text or iconsを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -4471,16 +4476,16 @@
   apple_native_rule: Exclude creating a custom button that uses a white background fill and black text or icons from the applicable experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0022
-  title: Provide enough space around a button to make it easy for people to look at it
+  title: Provide gaze-friendly spacing around visionOS buttons
   category: components
   topic: buttons
   subtopic: visionos
   statement:
-    en: Make enough space around a button to make it easy for people to look at it available when applicable.
-    ja: 必要な場合にenough space around a button to make it easy for people to look at itを利用可能にする。
+    en: Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects.
+    ja: 視線で狙いやすくホバー効果が重ならないよう、visionOSボタンの周囲に十分な間隔を確保する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4494,16 +4499,20 @@
     modalities:
       - gaze
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep button centers at least 60 points apart.
+    - For buttons that measure at least 60 points, add 4 points of surrounding padding.
+    - Generally avoid arranging small or mini buttons in a vertical stack or horizontal row.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
   checks:
-    automated: []
+    automated:
+      - Measure center-to-center button spacing and verify the source-scoped 60-point minimum.
+      - For buttons at least 60 points in size, verify 4 points of hover-effect clearance.
     manual:
-      - Does the design satisfy “Make enough space around a button to make it easy for people to look at it available when applicable.” in the documented Buttons context?
-  testability: manual
+      - Can people look at and select each visionOS button without adjacent hover effects competing or overlapping?
+  testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
   positive_examples:
@@ -4518,7 +4527,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: b4508ffcdfd16b2a921ae9b40720aff63e7e9f54b9e85ebdfb8ed5e336e5f865
-    evidence_paraphrase: Make enough space around a button to make it easy for people to look at it available when applicable.
+    evidence_paraphrase: Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects.
   tags:
     - components
     - buttons
@@ -4527,19 +4536,19 @@
     - gaze
   priority_rank: 4
   status: active
-  apple_native_rule: Make enough space around a button to make it easy for people to look at it available when applicable.
+  apple_native_rule: Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0023
-  title: Choose the right shape if you need to display text-labeled buttons in a stack or row
+  title: Match visionOS text-button shape to stack direction
   category: components
   topic: buttons
   subtopic: visionos
   statement:
-    en: Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row.
-    ja: 「Buttons」において「Choose the right shape if you need to display text-labeled buttons in a stack or row」の指針を適用する。
+    en: Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.
+    ja: テキストボタンは、縦積みでは角丸長方形、横並びではカプセル形状を使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4552,7 +4561,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Apply to text-labeled buttons displayed in a visionOS stack or row.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -4560,7 +4569,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row.” in the documented Buttons context?
+      - Does the design satisfy “Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -4576,7 +4585,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: e3228cc3012a45901b462cc0e13e70d62574ce1b2e5af6645eb79a110bdc4804
-    evidence_paraphrase: Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row.
+    evidence_paraphrase: Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.
   tags:
     - components
     - buttons
@@ -4584,19 +4593,19 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row.
+  apple_native_rule: Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0024
-  title: Use standard controls to take advantage of the audible feedback sounds people already know
+  title: Use standard visionOS controls for familiar audible feedback
   category: components
   topic: buttons
   subtopic: visionos
   statement:
-    en: Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context.
-    ja: 該当する状況ではstandard controls to take advantage of the audible feedback sounds people already knowを採用する。
+    en: Use standard visionOS controls so interactions provide the familiar audible feedback people expect.
+    ja: 期待される聞き慣れた音声フィードバックを提供できるよう、visionOSの標準コントロールを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4609,7 +4618,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Audible feedback is especially important because visionOS doesn't provide haptic feedback.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -4617,7 +4626,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context.” in the documented Buttons context?
+      - Does the design satisfy “Use standard visionOS controls so interactions provide the familiar audible feedback people expect.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -4633,7 +4642,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: c4ef83336be27164e118bf512a227b10352885fc66474272ce0ddba0daed5fc6
-    evidence_paraphrase: Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context.
+    evidence_paraphrase: Use standard visionOS controls so interactions provide the familiar audible feedback people expect.
   tags:
     - components
     - buttons
@@ -4641,7 +4650,7 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context.
+  apple_native_rule: Use standard visionOS controls so interactions provide the familiar audible feedback people expect.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0025
   title: Use a toolbar to place buttons in the corners
@@ -4652,8 +4661,8 @@
     en: Choose or apply a toolbar to place buttons in the corners in the documented context.
     ja: 該当する状況ではa toolbar to place buttons in the cornersを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4701,16 +4710,16 @@
   apple_native_rule: Choose or apply a toolbar to place buttons in the corners in the documented context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0026
-  title: Prefer buttons that span the width of the screen for primary actions in your app
+  title: Prefer full-width watchOS buttons for primary actions
   category: components
   topic: buttons
   subtopic: watchos
   statement:
-    en: Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply.
-    ja: 該当条件ではbuttons that span the width of the screen for primary actions in your appを優先する。
+    en: Prefer full-width buttons for primary watchOS actions.
+    ja: watchOSの主要アクションには全幅ボタンを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4723,7 +4732,8 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - If two buttons share a row, give both the same height.
+    - When two buttons share a row, use images or short text titles for their content.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -4731,7 +4741,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply.” in the documented Buttons context?
+      - Does the design satisfy “Prefer full-width buttons for primary watchOS actions.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -4747,7 +4757,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 758cc1382af4ecb60231f6660f8f8497fdfcdbb8d5861fd413085a2f9aa31622
-    evidence_paraphrase: Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply.
+    evidence_paraphrase: Prefer full-width buttons for primary watchOS actions.
   tags:
     - components
     - buttons
@@ -4755,7 +4765,7 @@
     - watchos
   priority_rank: 4
   status: active
-  apple_native_rule: Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply.
+  apple_native_rule: Prefer full-width buttons for primary watchOS actions.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0027
   title: Use toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content
@@ -4766,8 +4776,8 @@
     en: Choose or apply toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content in the documented context.
     ja: 該当する状況ではtoolbar buttons to provide either navigation to related areas or contextual actions for the view’s contentを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4815,16 +4825,16 @@
   apple_native_rule: Choose or apply toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content in the documented context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0028
-  title: Use the same height for vertical stacks of one- and two-line text buttons
+  title: Align heights in watchOS text-button stacks
   category: components
   topic: buttons
   subtopic: watchos
   statement:
-    en: Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context.
-    ja: 該当する状況ではthe same height for vertical stacks of one- and two-line text buttonsを採用する。
+    en: Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.
+    ja: watchOSで1行と2行のテキストボタンを縦に積む場合は、可能な限り同じ高さにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -4845,7 +4855,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context.” in the documented Buttons context?
+      - Does the design satisfy “Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -4861,7 +4871,7 @@
     retrieved_at: 2026-07-21T11:14:40.666Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: c600d3c8996da21aabbbcc0de3849ba900fc83eb860c0385bfb46214870495a1
-    evidence_paraphrase: Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context.
+    evidence_paraphrase: Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.
   tags:
     - components
     - buttons
@@ -4869,7 +4879,7 @@
     - watchos
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context.
+  apple_native_rule: Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0029
   title: Help buttons
@@ -4927,9 +4937,10 @@
     - macos
     - help-buttons
   priority_rank: 4
-  status: active
+  status: deprecated
   apple_native_rule: Apply the documented Buttons guidance to help buttons.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+  deprecated_at: 2026-07-21T11:39:34.313Z
 - id: HIG-COMPONENTS-CHARTS-0001
   title: Choose a mark type based on the information you want to communicate about the data
   category: components
@@ -6749,16 +6760,16 @@
   apple_native_rule: Verify that list items aren’t wider than the text field.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0001
-  title: Support all complication families when possible
+  title: Support all watchOS complication families when possible
   category: components
   topic: complications
   subtopic: best-practices
   statement:
-    en: Ensure the experience accommodates all complication families when possible.
-    ja: all complication families when possibleを利用できる設計にする。
+    en: Support every complication family for which the app can provide useful information.
+    ja: アプリが有用な情報を提供できるすべてのcomplication familyに対応する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -6771,7 +6782,7 @@
       - complications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - When useful family-specific information isn't available, provide an app-representative image that still launches the app.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Complications experience on the scoped Apple platforms.
@@ -6779,7 +6790,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Ensure the experience accommodates all complication families when possible.” in the documented Complications context?
+      - Does the design satisfy “Support every complication family for which the app can provide useful information.” in the documented Complications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -6794,14 +6805,14 @@
     retrieved_at: 2026-07-21T11:14:44.505Z
     source_hash: 13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2
     source_sentence_hash: ec65e92a6a8e88e1f69746068f3e2e20acc74f18101dfc8fbb794c570fcdb18f
-    evidence_paraphrase: Ensure the experience accommodates all complication families when possible.
+    evidence_paraphrase: Support every complication family for which the app can provide useful information.
   tags:
     - components
     - complications
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Ensure the experience accommodates all complication families when possible.
+  apple_native_rule: Support every complication family for which the app can provide useful information.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0002
   title: Consider creating multiple complications for each family
@@ -6812,8 +6823,8 @@
     en: Evaluate whether creating multiple complications for each family is appropriate for the current context.
     ja: creating multiple complications for each familyが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -6859,16 +6870,16 @@
   apple_native_rule: Evaluate whether creating multiple complications for each family is appropriate for the current context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0003
-  title: Keep privacy in mind
+  title: Protect private information in watchOS complications
   category: components
   topic: complications
   subtopic: best-practices
   statement:
-    en: Maintain privacy in mind.
-    ja: privacy in mindを維持する。
+    en: Help people prevent sensitive complication information from being visible to anyone other than the wearer.
+    ja: complicationの機密情報が装着者以外に見えないよう、利用者が保護できる設計にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -6881,7 +6892,7 @@
       - complications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Account for information remaining visible on the Always-On Retina display.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Complications experience on the scoped Apple platforms.
@@ -6889,7 +6900,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Maintain privacy in mind.” in the documented Complications context?
+      - Does the design satisfy “Help people prevent sensitive complication information from being visible to anyone other than the wearer.” in the documented Complications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -6904,14 +6915,14 @@
     retrieved_at: 2026-07-21T11:14:44.505Z
     source_hash: 13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2
     source_sentence_hash: 33749ad7a4b9d03aa2976ae7c0931f8ba7f63b8a02347e7591c34d9c540eae52
-    evidence_paraphrase: Maintain privacy in mind.
+    evidence_paraphrase: Help people prevent sensitive complication information from being visible to anyone other than the wearer.
   tags:
     - components
     - complications
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Maintain privacy in mind.
+  apple_native_rule: Help people prevent sensitive complication information from being visible to anyone other than the wearer.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0004
   title: Choose a ring or gauge style based on the data you need to display
@@ -6922,8 +6933,8 @@
     en: Apply the documented Complications guidance to choose a ring or gauge style based on the data you need to display.
     ja: 「Complications」において「Choose a ring or gauge style based on the data you need to display」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: medium
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -7026,16 +7037,16 @@
   apple_native_rule: Verify that images look good in tinted mode.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0006
-  title: Provide a set of static placeholder images for each complication you support
+  title: Provide static placeholders for every supported complication
   category: components
   topic: complications
   subtopic: visual-design
   statement:
-    en: Make a set of static placeholder images for each complication you support available when applicable.
-    ja: 必要な場合にa set of static placeholder images for each complication you supportを利用可能にする。
+    en: Provide a static placeholder image for each supported complication layout.
+    ja: 対応する各complicationレイアウトに静的プレースホルダ画像を用意する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -7048,7 +7059,8 @@
       - complications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The system can display placeholders before localized content is ready and in the complication-selection carousel.
+    - Match each placeholder to the applicable layout because placeholder and final image sizes can differ.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Complications experience on the scoped Apple platforms.
@@ -7056,7 +7068,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make a set of static placeholder images for each complication you support available when applicable.” in the documented Complications context?
+      - Does the design satisfy “Provide a static placeholder image for each supported complication layout.” in the documented Complications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7071,26 +7083,26 @@
     retrieved_at: 2026-07-21T11:14:44.505Z
     source_hash: 13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2
     source_sentence_hash: 31265aca5400107665740ad5834bf31eb1df623a4ce168af24956102e3947133
-    evidence_paraphrase: Make a set of static placeholder images for each complication you support available when applicable.
+    evidence_paraphrase: Provide a static placeholder image for each supported complication layout.
   tags:
     - components
     - complications
     - visual-design
   priority_rank: 4
   status: active
-  apple_native_rule: Make a set of static placeholder images for each complication you support available when applicable.
+  apple_native_rule: Provide a static placeholder image for each supported complication layout.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0007
-  title: Identify essential, dynamic content that people want to view at a glance
+  title: Identify glanceable, essential, dynamic complication content
   category: components
   topic: complications
   subtopic: best-practices
   statement:
-    en: Determine essential, dynamic content that people want to view at a glance explicitly.
-    ja: essential, dynamic content that people want to view at a glanceを明確に特定する。
+    en: Prioritize essential, dynamic information people want to view at a glance in a complication.
+    ja: complicationには、利用者が一目で確認したい重要かつ動的な情報を優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -7111,7 +7123,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Determine essential, dynamic content that people want to view at a glance explicitly.” in the documented Complications context?
+      - Does the design satisfy “Prioritize essential, dynamic information people want to view at a glance in a complication.” in the documented Complications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7126,26 +7138,26 @@
     retrieved_at: 2026-07-21T11:14:44.505Z
     source_hash: 13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2
     source_sentence_hash: 3a07a53bfed76c3af73f00e55b1e585019740f6bf0f7f0afcd3e4386685c24ae
-    evidence_paraphrase: Determine essential, dynamic content that people want to view at a glance explicitly.
+    evidence_paraphrase: Prioritize essential, dynamic information people want to view at a glance in a complication.
   tags:
     - components
     - complications
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Determine essential, dynamic content that people want to view at a glance explicitly.
+  apple_native_rule: Prioritize essential, dynamic information people want to view at a glance in a complication.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0008
-  title: Avoid using color as the only way to communicate important information. You want people to get the same inf…
+  title: Avoid relying on color alone in complications
   category: components
   topic: complications
   subtopic: visual-design
   statement:
-    en: Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience.
-    ja: 該当する体験ではusing color as the only way to communicate important information. You want people to get the same informationを避ける。
+    en: Avoid using color as the only way to communicate important information in a complication.
+    ja: complicationで重要な情報を伝える唯一の手段として色を使わない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -7158,7 +7170,7 @@
       - complications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - People need to receive the same information in tinted and nontinted modes.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Complications experience on the scoped Apple platforms.
@@ -7166,7 +7178,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience.” in the documented Complications context?
+      - Does the design satisfy “Avoid using color as the only way to communicate important information in a complication.” in the documented Complications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7181,14 +7193,14 @@
     retrieved_at: 2026-07-21T11:14:44.505Z
     source_hash: 13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2
     source_sentence_hash: c95a9e9d8b4f4b31e43ecb048182ed6e98328b91cb422b2cc0c252c6560ddedc
-    evidence_paraphrase: Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience.
+    evidence_paraphrase: Avoid using color as the only way to communicate important information in a complication.
   tags:
     - components
     - complications
     - visual-design
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience.
+  apple_native_rule: Avoid using color as the only way to communicate important information in a complication.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CONTEXT-MENUS-0001
   title: Prioritize relevancy when choosing items to include in a context menu
@@ -9360,16 +9372,16 @@
   apple_native_rule: Evaluate whether changing the fill color to inform people about significant parts of the range is appropriate for the current context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001
-  title: Create quick actions for compelling, high-value tasks
+  title: Offer high-value Home Screen quick actions
   category: components
   topic: home-screen-quick-actions
   subtopic: best-practices
   statement:
-    en: Apply the documented Home Screen quick actions guidance to create quick actions for compelling, high-value tasks.
-    ja: 「Home Screen quick actions」において「Create quick actions for compelling, high-value tasks」の指針を適用する。
+    en: Create Home Screen quick actions for compelling, high-value tasks people can start without opening the app first.
+    ja: アプリを先に開かず開始できる、価値の高いタスクをHome Screen quick actionとして提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -9384,7 +9396,8 @@
       - home-screen-quick-actions
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - People generally expect at least one useful quick action.
+    - An app can provide up to four quick actions.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Home Screen quick actions experience on the scoped Apple platforms.
@@ -9392,7 +9405,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Home Screen quick actions guidance to create quick actions for compelling, high-value tasks.” in the documented Home Screen quick actions context?
+      - Does the design satisfy “Create Home Screen quick actions for compelling, high-value tasks people can start without opening the app first.” in the documented Home Screen quick actions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9407,26 +9420,26 @@
     retrieved_at: 2026-07-21T11:14:55.043Z
     source_hash: 39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5
     source_sentence_hash: 4a2d20f002e88eea0676b002baab2bb0a99989382d17342b605bec0c78acf767
-    evidence_paraphrase: Apply the documented Home Screen quick actions guidance to create quick actions for compelling, high-value tasks.
+    evidence_paraphrase: Create Home Screen quick actions for compelling, high-value tasks people can start without opening the app first.
   tags:
     - components
     - home-screen-quick-actions
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Home Screen quick actions guidance to create quick actions for compelling, high-value tasks.
+  apple_native_rule: Create Home Screen quick actions for compelling, high-value tasks people can start without opening the app first.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002
-  title: Avoid making unpredictable changes to quick actions
+  title: Keep dynamic quick-action changes predictable
   category: components
   topic: home-screen-quick-actions
   subtopic: best-practices
   statement:
-    en: Exclude making unpredictable changes to quick actions from the applicable experience.
-    ja: 該当する体験ではmaking unpredictable changes to quick actionsを避ける。
+    en: Avoid changing dynamic quick actions in ways people can't predict.
+    ja: dynamic quick actionを、利用者が予測できない形で変更しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -9441,7 +9454,7 @@
       - home-screen-quick-actions
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Relevance-based changes may use current location, recent app activity, time of day, or settings changes when the result remains predictable.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Home Screen quick actions experience on the scoped Apple platforms.
@@ -9449,7 +9462,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude making unpredictable changes to quick actions from the applicable experience.” in the documented Home Screen quick actions context?
+      - Does the design satisfy “Avoid changing dynamic quick actions in ways people can't predict.” in the documented Home Screen quick actions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9464,26 +9477,26 @@
     retrieved_at: 2026-07-21T11:14:55.043Z
     source_hash: 39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5
     source_sentence_hash: e3ad570e3f5736a9e51da114e31b2136f35ccae1ff954ead9be72d67ce64592e
-    evidence_paraphrase: Exclude making unpredictable changes to quick actions from the applicable experience.
+    evidence_paraphrase: Avoid changing dynamic quick actions in ways people can't predict.
   tags:
     - components
     - home-screen-quick-actions
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude making unpredictable changes to quick actions from the applicable experience.
+  apple_native_rule: Avoid changing dynamic quick actions in ways people can't predict.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003
-  title: Provide a familiar interface icon for each quick action
+  title: Use familiar icons for Home Screen quick actions
   category: components
   topic: home-screen-quick-actions
   subtopic: best-practices
   statement:
-    en: Make a familiar interface icon for each quick action available when applicable.
-    ja: 必要な場合にa familiar interface icon for each quick actionを利用可能にする。
+    en: Provide a familiar interface icon for every Home Screen quick action, preferring SF Symbols where suitable.
+    ja: 各Home Screen quick actionに馴染みのあるUIアイコンを付け、適切な場合はSF Symbolsを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -9506,7 +9519,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make a familiar interface icon for each quick action available when applicable.” in the documented Home Screen quick actions context?
+      - Does the design satisfy “Provide a familiar interface icon for every Home Screen quick action, preferring SF Symbols where suitable.” in the documented Home Screen quick actions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9521,26 +9534,26 @@
     retrieved_at: 2026-07-21T11:14:55.043Z
     source_hash: 39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5
     source_sentence_hash: d4bd6688dd8b5298253e712c7235ea2031ba556f26ba8cd3a0ec2d492567955a
-    evidence_paraphrase: Make a familiar interface icon for each quick action available when applicable.
+    evidence_paraphrase: Provide a familiar interface icon for every Home Screen quick action, preferring SF Symbols where suitable.
   tags:
     - components
     - home-screen-quick-actions
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Make a familiar interface icon for each quick action available when applicable.
+  apple_native_rule: Provide a familiar interface icon for every Home Screen quick action, preferring SF Symbols where suitable.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004
-  title: Don’t use an emoji in place of a symbol or interface icon
+  title: Avoid emoji as quick-action icons
   category: components
   topic: home-screen-quick-actions
   subtopic: best-practices
   statement:
-    en: Exclude use an emoji in place of a symbol or interface icon from the applicable experience.
-    ja: 該当する体験ではuse an emoji in place of a symbol or interface iconを避ける。
+    en: Avoid using an emoji in place of a symbol or interface icon for a Home Screen quick action.
+    ja: Home Screen quick actionのシンボルまたはUIアイコンの代わりに絵文字を使わない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -9555,7 +9568,7 @@
       - home-screen-quick-actions
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Quick-action symbols are monochromatic and adapt in Dark Mode, unlike full-color emoji.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Home Screen quick actions experience on the scoped Apple platforms.
@@ -9563,7 +9576,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude use an emoji in place of a symbol or interface icon from the applicable experience.” in the documented Home Screen quick actions context?
+      - Does the design satisfy “Avoid using an emoji in place of a symbol or interface icon for a Home Screen quick action.” in the documented Home Screen quick actions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9578,14 +9591,14 @@
     retrieved_at: 2026-07-21T11:14:55.043Z
     source_hash: 39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5
     source_sentence_hash: 7f426aac6574515f7acec0ac10a921a6c63cd154805b26beff742f0e4d80b924
-    evidence_paraphrase: Exclude use an emoji in place of a symbol or interface icon from the applicable experience.
+    evidence_paraphrase: Avoid using an emoji in place of a symbol or interface icon for a Home Screen quick action.
   tags:
     - components
     - home-screen-quick-actions
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude use an emoji in place of a symbol or interface icon from the applicable experience.
+  apple_native_rule: Avoid using an emoji in place of a symbol or interface icon for a Home Screen quick action.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-IMAGE-VIEWS-0001
   title: Use an image view when the primary purpose of the view is simply to display an image

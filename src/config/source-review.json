@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T11:33:18Z",
+  "reviewed_at": "2026-07-21T11:42:27Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -121,6 +121,86 @@
         "HIG-COMPONENTS-ACTION-SHEETS-0006"
       ],
       "review_note": "Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit."
+    },
+    {
+      "id": "priority-4-buttons-context-2026-07-21",
+      "reviewed_at": "2026-07-21T11:37:32Z",
+      "review_method": "Rendered Apple HIG Buttons platform guidance, supporting prose, help-location table, and visionOS sizing table were reviewed; the live main-content hash matched the stored source page.",
+      "confidence": "medium",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-BUTTONS-0012",
+        "HIG-COMPONENTS-BUTTONS-0017",
+        "HIG-COMPONENTS-BUTTONS-0021",
+        "HIG-COMPONENTS-BUTTONS-0008",
+        "HIG-COMPONENTS-BUTTONS-0010",
+        "HIG-COMPONENTS-BUTTONS-0011",
+        "HIG-COMPONENTS-BUTTONS-0013",
+        "HIG-COMPONENTS-BUTTONS-0014",
+        "HIG-COMPONENTS-BUTTONS-0015",
+        "HIG-COMPONENTS-BUTTONS-0016",
+        "HIG-COMPONENTS-BUTTONS-0018",
+        "HIG-COMPONENTS-BUTTONS-0019",
+        "HIG-COMPONENTS-BUTTONS-0020",
+        "HIG-COMPONENTS-BUTTONS-0022",
+        "HIG-COMPONENTS-BUTTONS-0023",
+        "HIG-COMPONENTS-BUTTONS-0024",
+        "HIG-COMPONENTS-BUTTONS-0025",
+        "HIG-COMPONENTS-BUTTONS-0026",
+        "HIG-COMPONENTS-BUTTONS-0027",
+        "HIG-COMPONENTS-BUTTONS-0028",
+        "HIG-COMPONENTS-BUTTONS-0009"
+      ],
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints."
+    },
+    {
+      "id": "priority-4-complications-context-2026-07-21",
+      "reviewed_at": "2026-07-21T11:40:29Z",
+      "review_method": "Rendered Apple HIG Complications guidance, supporting prose, tinted-mode list context, and structured size tables were reviewed; the live main-content hash matched the stored source page.",
+      "confidence": "medium",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+          "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-COMPLICATIONS-0008",
+        "HIG-COMPONENTS-COMPLICATIONS-0001",
+        "HIG-COMPONENTS-COMPLICATIONS-0003",
+        "HIG-COMPONENTS-COMPLICATIONS-0004",
+        "HIG-COMPONENTS-COMPLICATIONS-0006",
+        "HIG-COMPONENTS-COMPLICATIONS-0007",
+        "HIG-COMPONENTS-COMPLICATIONS-0002"
+      ],
+      "review_note": "Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context."
+    },
+    {
+      "id": "priority-4-home-screen-quick-actions-context-2026-07-21",
+      "reviewed_at": "2026-07-21T11:42:27Z",
+      "review_method": "Rendered Apple HIG Home Screen quick actions guidance and supporting prose were reviewed; the live main-content hash matched the stored source page.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions",
+          "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002",
+        "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004",
+        "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001",
+        "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003"
+      ],
+      "review_note": "Reviewed quick-action task value, predictable updates, icon choice, and emoji restrictions in official context."
     }
   ],
   "rules": {
@@ -595,6 +675,336 @@
       "severity": "info",
       "conditions": ["Customization is optional under the parent consider guidance."],
       "review_note": "Lowered SHOULD to MAY because the glyph choice is an optional customization listed under a can clause."
+    },
+    "HIG-COMPONENTS-BUTTONS-0008": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "813f53040826318df945db3674dc0754df856ff1a1a93548e978d7a708c34f9b",
+        "section_path": ["Buttons", "Platform considerations", "macOS", "Push buttons"]
+      },
+      "title": "Use flexible-height macOS buttons only for tall or variable content",
+      "statement": {
+        "en": "Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.",
+        "ja": "2行テキスト、高いアイコンなど、高さが大きいか変動する内容に限って柔軟な高さのプッシュボタンを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Apply to macOS push buttons.",
+        "Use a standard push button when the content doesn't require extra or variable height."
+      ],
+      "review_note": "Recorded the complete standard-versus-flexible push-button condition from the official macOS prose."
+    },
+    "HIG-COMPONENTS-BUTTONS-0015": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "d6d2992e38a003fe644153bb4e26f46401dfddb83be5a3ad8a08ebc6786ef882",
+        "section_path": ["Buttons", "Platform considerations", "macOS", "Help buttons"]
+      },
+      "title": "Place macOS help buttons in expected window locations",
+      "statement": {
+        "en": "Place a macOS help button in the source-specified lower corner for the window or dialog style.",
+        "ja": "macOSのヘルプボタンを、ウインドウまたはダイアログ形式に応じて指定された下隅へ配置する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "In a dialog with dismissal buttons, use the opposite lower corner and align the help button vertically with them.",
+        "In a dialog without dismissal buttons, use the lower-left or lower-right corner.",
+        "In a Settings window or pane, use the lower-left or lower-right corner."
+      ],
+      "review_note": "Recorded all three rows of the official help-button location table."
+    },
+    "HIG-COMPONENTS-BUTTONS-0019": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "eefa413fee8d67b029395515e8647e3f5387de1764ddc045b14de5229a9ebc3e",
+        "section_path": ["Buttons", "Platform considerations", "macOS", "Image buttons"]
+      },
+      "title": "Pad macOS image-button content by about 10 pixels",
+      "statement": {
+        "en": "Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.",
+        "ja": "macOSの画像ボタンでは、画像とクリック可能なボタン端の間に約10ピクセルの余白を確保する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The button edges define the clickable area even when they aren't visible.",
+        "In general, avoid adding a system-provided border to an image button."
+      ],
+      "review_note": "Recorded the source-scoped padding value and invisible clickable-edge context."
+    },
+    "HIG-COMPONENTS-BUTTONS-0020": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "ea3492354cb6b0d20d7f9ac994c036d57a75828ed6340ea89087d26c052fafa5",
+        "section_path": ["Buttons", "Platform considerations", "visionOS"]
+      },
+      "title": "Prefer discernible button shapes and fills in visionOS",
+      "statement": {
+        "en": "Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.",
+        "ja": "単独で視覚的な輪郭が必要なvisionOSボタンでは、識別しやすい背景形状と対照的な塗りを優先する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "exceptions": [
+        "A separate button background isn't necessary in a toolbar, context menu, alert, or ornament when the containing shape and material keep it comfortably visible."
+      ],
+      "review_note": "Preserved the official exception for buttons already defined by a containing component."
+    },
+    "HIG-COMPONENTS-BUTTONS-0022": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "b4508ffcdfd16b2a921ae9b40720aff63e7e9f54b9e85ebdfb8ed5e336e5f865",
+        "section_path": ["Buttons", "Platform considerations", "visionOS"]
+      },
+      "title": "Provide gaze-friendly spacing around visionOS buttons",
+      "statement": {
+        "en": "Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects.",
+        "ja": "視線で狙いやすくホバー効果が重ならないよう、visionOSボタンの周囲に十分な間隔を確保する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Keep button centers at least 60 points apart.",
+        "For buttons that measure at least 60 points, add 4 points of surrounding padding.",
+        "Generally avoid arranging small or mini buttons in a vertical stack or horizontal row."
+      ],
+      "checks": {
+        "automated": [
+          "Measure center-to-center button spacing and verify the source-scoped 60-point minimum.",
+          "For buttons at least 60 points in size, verify 4 points of hover-effect clearance."
+        ],
+        "manual": [
+          "Can people look at and select each visionOS button without adjacent hover effects competing or overlapping?"
+        ]
+      },
+      "testability": "hybrid",
+      "review_note": "Recorded the official 60-point center spacing, 4-point padding, and small-button arrangement conditions."
+    },
+    "HIG-COMPONENTS-BUTTONS-0023": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "e3228cc3012a45901b462cc0e13e70d62574ce1b2e5af6645eb79a110bdc4804",
+        "section_path": ["Buttons", "Platform considerations", "visionOS"]
+      },
+      "title": "Match visionOS text-button shape to stack direction",
+      "statement": {
+        "en": "Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.",
+        "ja": "テキストボタンは、縦積みでは角丸長方形、横並びではカプセル形状を使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Apply to text-labeled buttons displayed in a visionOS stack or row."],
+      "review_note": "Recorded both directional shape mappings from the supporting official prose."
+    },
+    "HIG-COMPONENTS-BUTTONS-0024": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "c4ef83336be27164e118bf512a227b10352885fc66474272ce0ddba0daed5fc6",
+        "section_path": ["Buttons", "Platform considerations", "visionOS"]
+      },
+      "title": "Use standard visionOS controls for familiar audible feedback",
+      "statement": {
+        "en": "Use standard visionOS controls so interactions provide the familiar audible feedback people expect.",
+        "ja": "期待される聞き慣れた音声フィードバックを提供できるよう、visionOSの標準コントロールを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Audible feedback is especially important because visionOS doesn't provide haptic feedback."],
+      "review_note": "Recorded the visionOS no-haptics rationale that makes standard audible feedback important."
+    },
+    "HIG-COMPONENTS-BUTTONS-0026": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "758cc1382af4ecb60231f6660f8f8497fdfcdbb8d5861fd413085a2f9aa31622",
+        "section_path": ["Buttons", "Platform considerations", "watchOS"]
+      },
+      "title": "Prefer full-width watchOS buttons for primary actions",
+      "statement": {
+        "en": "Prefer full-width buttons for primary watchOS actions.",
+        "ja": "watchOSの主要アクションには全幅ボタンを優先する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "If two buttons share a row, give both the same height.",
+        "When two buttons share a row, use images or short text titles for their content."
+      ],
+      "review_note": "Recorded the same-height and concise-content conditions for two watchOS buttons sharing a row."
+    },
+    "HIG-COMPONENTS-BUTTONS-0028": {
+      "source": {
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "c600d3c8996da21aabbbcc0de3849ba900fc83eb860c0385bfb46214870495a1",
+        "section_path": ["Buttons", "Platform considerations", "watchOS"]
+      },
+      "title": "Align heights in watchOS text-button stacks",
+      "statement": {
+        "en": "Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.",
+        "ja": "watchOSで1行と2行のテキストボタンを縦に積む場合は、可能な限り同じ高さにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Preserved the source's where-possible qualification while recording the visual-consistency goal."
+    },
+    "HIG-COMPONENTS-COMPLICATIONS-0001": {
+      "source": {
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "ec65e92a6a8e88e1f69746068f3e2e20acc74f18101dfc8fbb794c570fcdb18f",
+        "section_path": ["Complications", "Best practices"]
+      },
+      "title": "Support all watchOS complication families when possible",
+      "statement": {
+        "en": "Support every complication family for which the app can provide useful information.",
+        "ja": "アプリが有用な情報を提供できるすべてのcomplication familyに対応する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "When useful family-specific information isn't available, provide an app-representative image that still launches the app."
+      ],
+      "review_note": "Preserved the when-possible qualification and the official fallback for unsupported information layouts."
+    },
+    "HIG-COMPONENTS-COMPLICATIONS-0003": {
+      "source": {
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "33749ad7a4b9d03aa2976ae7c0931f8ba7f63b8a02347e7591c34d9c540eae52",
+        "section_path": ["Complications", "Best practices"]
+      },
+      "title": "Protect private information in watchOS complications",
+      "statement": {
+        "en": "Help people prevent sensitive complication information from being visible to anyone other than the wearer.",
+        "ja": "complicationの機密情報が装着者以外に見えないよう、利用者が保護できる設計にする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Account for information remaining visible on the Always-On Retina display."
+      ],
+      "review_note": "Replaced an ungrammatical paraphrase and captured the Always-On privacy risk from the supporting prose."
+    },
+    "HIG-COMPONENTS-COMPLICATIONS-0006": {
+      "source": {
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "31265aca5400107665740ad5834bf31eb1df623a4ce168af24956102e3947133",
+        "section_path": ["Complications", "Visual design"]
+      },
+      "title": "Provide static placeholders for every supported complication",
+      "statement": {
+        "en": "Provide a static placeholder image for each supported complication layout.",
+        "ja": "対応する各complicationレイアウトに静的プレースホルダ画像を用意する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The system can display placeholders before localized content is ready and in the complication-selection carousel.",
+        "Match each placeholder to the applicable layout because placeholder and final image sizes can differ."
+      ],
+      "review_note": "Recorded the system display contexts and per-layout sizing caveat for placeholder images."
+    },
+    "HIG-COMPONENTS-COMPLICATIONS-0007": {
+      "source": {
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "3a07a53bfed76c3af73f00e55b1e585019740f6bf0f7f0afcd3e4386685c24ae",
+        "section_path": ["Complications", "Best practices"]
+      },
+      "title": "Identify glanceable, essential, dynamic complication content",
+      "statement": {
+        "en": "Prioritize essential, dynamic information people want to view at a glance in a complication.",
+        "ja": "complicationには、利用者が一目で確認したい重要かつ動的な情報を優先する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Repaired the generated paraphrase and retained the source preference for useful live information over static launch-only content."
+    },
+    "HIG-COMPONENTS-COMPLICATIONS-0008": {
+      "source": {
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "c95a9e9d8b4f4b31e43ecb048182ed6e98328b91cb422b2cc0c252c6560ddedc",
+        "section_path": ["Complications", "Visual design"]
+      },
+      "title": "Avoid relying on color alone in complications",
+      "statement": {
+        "en": "Avoid using color as the only way to communicate important information in a complication.",
+        "ja": "complicationで重要な情報を伝える唯一の手段として色を使わない。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "People need to receive the same information in tinted and nontinted modes."
+      ],
+      "review_note": "Restored the tinted-versus-nontinted requirement lost by evidence-fragment truncation."
+    },
+    "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001": {
+      "source": {
+        "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5",
+        "source_sentence_hash": "4a2d20f002e88eea0676b002baab2bb0a99989382d17342b605bec0c78acf767",
+        "section_path": ["Home Screen quick actions", "Best practices"]
+      },
+      "title": "Offer high-value Home Screen quick actions",
+      "statement": {
+        "en": "Create Home Screen quick actions for compelling, high-value tasks people can start without opening the app first.",
+        "ja": "アプリを先に開かず開始できる、価値の高いタスクをHome Screen quick actionとして提供する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "People generally expect at least one useful quick action.",
+        "An app can provide up to four quick actions."
+      ],
+      "review_note": "Recorded the expected minimum usefulness and source-scoped maximum of four quick actions."
+    },
+    "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002": {
+      "source": {
+        "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5",
+        "source_sentence_hash": "e3ad570e3f5736a9e51da114e31b2136f35ccae1ff954ead9be72d67ce64592e",
+        "section_path": ["Home Screen quick actions", "Best practices"]
+      },
+      "title": "Keep dynamic quick-action changes predictable",
+      "statement": {
+        "en": "Avoid changing dynamic quick actions in ways people can't predict.",
+        "ja": "dynamic quick actionを、利用者が予測できない形で変更しない。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Relevance-based changes may use current location, recent app activity, time of day, or settings changes when the result remains predictable."
+      ],
+      "review_note": "Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint."
+    },
+    "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003": {
+      "source": {
+        "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5",
+        "source_sentence_hash": "d4bd6688dd8b5298253e712c7235ea2031ba556f26ba8cd3a0ec2d492567955a",
+        "section_path": ["Home Screen quick actions", "Best practices"]
+      },
+      "title": "Use familiar icons for Home Screen quick actions",
+      "statement": {
+        "en": "Provide a familiar interface icon for every Home Screen quick action, preferring SF Symbols where suitable.",
+        "ja": "各Home Screen quick actionに馴染みのあるUIアイコンを付け、適切な場合はSF Symbolsを優先する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the official preference for SF Symbols when representing quick actions."
+    },
+    "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004": {
+      "source": {
+        "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5",
+        "source_sentence_hash": "7f426aac6574515f7acec0ac10a921a6c63cd154805b26beff742f0e4d80b924",
+        "section_path": ["Home Screen quick actions", "Best practices"]
+      },
+      "title": "Avoid emoji as quick-action icons",
+      "statement": {
+        "en": "Avoid using an emoji in place of a symbol or interface icon for a Home Screen quick action.",
+        "ja": "Home Screen quick actionのシンボルまたはUIアイコンの代わりに絵文字を使わない。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Quick-action symbols are monochromatic and adapt in Dark Mode, unlike full-color emoji."
+      ],
+      "review_note": "Repaired the generated negative sentence and retained the Dark Mode contrast rationale."
     }
   }
 }

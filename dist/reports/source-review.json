@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-07-21T11:34:29.090Z",
-  "reviewed_at": "2026-07-21T11:33:18Z",
+  "generated_at": "2026-07-21T11:43:37.235Z",
+  "reviewed_at": "2026-07-21T11:42:27Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
-  "reviewed_batch_count": 3,
-  "reviewed_rule_count": 66,
+  "reviewed_batch_count": 6,
+  "reviewed_rule_count": 98,
   "batches": [
     {
       "id": "priority-2-accessibility-context-2026-07-21",
@@ -124,6 +124,86 @@
         "HIG-COMPONENTS-ACTION-SHEETS-0006"
       ],
       "review_note": "Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit."
+    },
+    {
+      "id": "priority-4-buttons-context-2026-07-21",
+      "reviewed_at": "2026-07-21T11:37:32Z",
+      "review_method": "Rendered Apple HIG Buttons platform guidance, supporting prose, help-location table, and visionOS sizing table were reviewed; the live main-content hash matched the stored source page.",
+      "confidence": "medium",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+          "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-BUTTONS-0012",
+        "HIG-COMPONENTS-BUTTONS-0017",
+        "HIG-COMPONENTS-BUTTONS-0021",
+        "HIG-COMPONENTS-BUTTONS-0008",
+        "HIG-COMPONENTS-BUTTONS-0010",
+        "HIG-COMPONENTS-BUTTONS-0011",
+        "HIG-COMPONENTS-BUTTONS-0013",
+        "HIG-COMPONENTS-BUTTONS-0014",
+        "HIG-COMPONENTS-BUTTONS-0015",
+        "HIG-COMPONENTS-BUTTONS-0016",
+        "HIG-COMPONENTS-BUTTONS-0018",
+        "HIG-COMPONENTS-BUTTONS-0019",
+        "HIG-COMPONENTS-BUTTONS-0020",
+        "HIG-COMPONENTS-BUTTONS-0022",
+        "HIG-COMPONENTS-BUTTONS-0023",
+        "HIG-COMPONENTS-BUTTONS-0024",
+        "HIG-COMPONENTS-BUTTONS-0025",
+        "HIG-COMPONENTS-BUTTONS-0026",
+        "HIG-COMPONENTS-BUTTONS-0027",
+        "HIG-COMPONENTS-BUTTONS-0028",
+        "HIG-COMPONENTS-BUTTONS-0009"
+      ],
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints."
+    },
+    {
+      "id": "priority-4-complications-context-2026-07-21",
+      "reviewed_at": "2026-07-21T11:40:29Z",
+      "review_method": "Rendered Apple HIG Complications guidance, supporting prose, tinted-mode list context, and structured size tables were reviewed; the live main-content hash matched the stored source page.",
+      "confidence": "medium",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+          "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-COMPLICATIONS-0008",
+        "HIG-COMPONENTS-COMPLICATIONS-0001",
+        "HIG-COMPONENTS-COMPLICATIONS-0003",
+        "HIG-COMPONENTS-COMPLICATIONS-0004",
+        "HIG-COMPONENTS-COMPLICATIONS-0006",
+        "HIG-COMPONENTS-COMPLICATIONS-0007",
+        "HIG-COMPONENTS-COMPLICATIONS-0002"
+      ],
+      "review_note": "Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context."
+    },
+    {
+      "id": "priority-4-home-screen-quick-actions-context-2026-07-21",
+      "reviewed_at": "2026-07-21T11:42:27Z",
+      "review_method": "Rendered Apple HIG Home Screen quick actions guidance and supporting prose were reviewed; the live main-content hash matched the stored source page.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions",
+          "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002",
+        "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004",
+        "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001",
+        "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003"
+      ],
+      "review_note": "Reviewed quick-action task value, predictable updates, icon choice, and emoji restrictions in official context."
     }
   ],
   "rules": [
@@ -185,6 +265,647 @@
         "source_hash": "56d9cb543e3cb626b5b14a132012bd932e2b359ed1942aba52a01f86879bb320",
         "source_sentence_hash": "2700d90e7a8caf5d74cc5c864deafb612c01b619f8a69b234885c0bf0eb7d8f8",
         "evidence_paraphrase": "Exclude displaying more than four buttons in an action sheet, including the Cancel button from the applicable experience."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0008",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the complete standard-versus-flexible push-button condition from the official macOS prose.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Push buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "813f53040826318df945db3674dc0754df856ff1a1a93548e978d7a708c34f9b",
+        "evidence_paraphrase": "Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0009",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Push buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "b691d5abdf7dfb9bab0cfa6565f0e38dd1bed3947f1da3f13256f907c27a859b",
+        "evidence_paraphrase": "Evaluate whether supporting spring loading is appropriate for the current context."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0010",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Square buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "f3c5de7350e56842796c76f453132b76ad207b548d719bbdae0a866ed9a0e479",
+        "evidence_paraphrase": "Choose or apply square buttons in a view, not in the window frame in the documented context."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0011",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Square buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "a7f09751652b52cc1dbb9b85abdf405ff8ae0eb623a52388b5eae7515984608e",
+        "evidence_paraphrase": "Favor using a symbol in a square button when the documented conditions apply."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0012",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Square buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "1ba98bed7790a3098d187f55656cd8d1fbe0a6926bdf3fae9338768c61e7f6d3",
+        "evidence_paraphrase": "Exclude using labels to introduce square buttons from the applicable experience."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0013",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Help buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "9c1773fad01976e83ca04d65d36ef866b41c861c603b5b43bb2768c4ce201842",
+        "evidence_paraphrase": "Choose or apply the system-provided help button to display your help documentation in the documented context."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0014",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Help buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "c554706799a97bd9e51589dcb8dcd50b4acab9beb44302e3fe8446d151008916",
+        "evidence_paraphrase": "Apply the documented Buttons guidance to include no more than one help button per window."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0015",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded all three rows of the official help-button location table.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Help buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "d6d2992e38a003fe644153bb4e26f46401dfddb83be5a3ad8a08ebc6786ef882",
+        "evidence_paraphrase": "Place a macOS help button in the source-specified lower corner for the window or dialog style."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0016",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Help buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "737898b4884bf5efab8aa71a3cdd4c09806d65edfdbe1bf3623fb951f12c86da",
+        "evidence_paraphrase": "Choose or apply a help button within a view, not in the window frame in the documented context."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0017",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Help buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "6bb483989efd3723f1f954d401c00da40700e1198e50e1e179157b8806f03ccd",
+        "evidence_paraphrase": "Exclude displaying text that introduces a help button from the applicable experience."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0018",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Image buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "be829c99ca5c64107c330386b620e5c5c443ebe18d61043266fdbcc6e7cab63b",
+        "evidence_paraphrase": "Choose or apply an image button in a view, not in the window frame in the documented context."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0019",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the source-scoped padding value and invisible clickable-edge context.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "macOS",
+          "Image buttons"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "eefa413fee8d67b029395515e8647e3f5387de1764ddc045b14de5229a9ebc3e",
+        "evidence_paraphrase": "Include about 10 pixels of padding between an image and the clickable edges of its macOS image button."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0020",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Preserved the official exception for buttons already defined by a containing component.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "visionOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "ea3492354cb6b0d20d7f9ac994c036d57a75828ed6340ea89087d26c052fafa5",
+        "evidence_paraphrase": "Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0021",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "visionOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "d66dfdbb71fbab9614fac186ab20b9f5355fc42c70551340b8994fd4eff4fdd1",
+        "evidence_paraphrase": "Exclude creating a custom button that uses a white background fill and black text or icons from the applicable experience."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0022",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the official 60-point center spacing, 4-point padding, and small-button arrangement conditions.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "visionOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "b4508ffcdfd16b2a921ae9b40720aff63e7e9f54b9e85ebdfb8ed5e336e5f865",
+        "evidence_paraphrase": "Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0023",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded both directional shape mappings from the supporting official prose.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "visionOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "e3228cc3012a45901b462cc0e13e70d62574ce1b2e5af6645eb79a110bdc4804",
+        "evidence_paraphrase": "Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0024",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the visionOS no-haptics rationale that makes standard audible feedback important.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "visionOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "c4ef83336be27164e118bf512a227b10352885fc66474272ce0ddba0daed5fc6",
+        "evidence_paraphrase": "Use standard visionOS controls so interactions provide the familiar audible feedback people expect."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0025",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "watchOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "366a659d2bf41e290e76e69bb9dd56bc3a1460fe01c5e2dbd7277334662caf63",
+        "evidence_paraphrase": "Choose or apply a toolbar to place buttons in the corners in the documented context."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0026",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the same-height and concise-content conditions for two watchOS buttons sharing a row.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "watchOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "758cc1382af4ecb60231f6660f8f8497fdfcdbb8d5861fd413085a2f9aa31622",
+        "evidence_paraphrase": "Prefer full-width buttons for primary watchOS actions."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0027",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "watchOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "b2c5c1c7eee13433eb69d4d9dba8d54d508f3b94858013c23736819c3598d0c4",
+        "evidence_paraphrase": "Choose or apply toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content in the documented context."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-BUTTONS-0028",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Preserved the source's where-possible qualification while recording the visual-consistency goal.",
+      "batch_id": "priority-4-buttons-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+        "page_title": "Buttons",
+        "section_path": [
+          "Buttons",
+          "Platform considerations",
+          "watchOS"
+        ],
+        "retrieved_at": "2026-07-21T11:14:40.666Z",
+        "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
+        "source_sentence_hash": "c600d3c8996da21aabbbcc0de3849ba900fc83eb860c0385bfb46214870495a1",
+        "evidence_paraphrase": "Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-COMPLICATIONS-0001",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Preserved the when-possible qualification and the official fallback for unsupported information layouts.",
+      "batch_id": "priority-4-complications-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+        "page_title": "Complications",
+        "section_path": [
+          "Complications",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T11:14:44.505Z",
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "ec65e92a6a8e88e1f69746068f3e2e20acc74f18101dfc8fbb794c570fcdb18f",
+        "evidence_paraphrase": "Support every complication family for which the app can provide useful information."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-COMPLICATIONS-0002",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context.",
+      "batch_id": "priority-4-complications-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+        "page_title": "Complications",
+        "section_path": [
+          "Complications",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T11:14:44.505Z",
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "b2c301ae1e7d0e462191db94a30dc1fce5022b1daaa468da171ee370ee8df6aa",
+        "evidence_paraphrase": "Evaluate whether creating multiple complications for each family is appropriate for the current context."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-COMPLICATIONS-0003",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Replaced an ungrammatical paraphrase and captured the Always-On privacy risk from the supporting prose.",
+      "batch_id": "priority-4-complications-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+        "page_title": "Complications",
+        "section_path": [
+          "Complications",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T11:14:44.505Z",
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "33749ad7a4b9d03aa2976ae7c0931f8ba7f63b8a02347e7591c34d9c540eae52",
+        "evidence_paraphrase": "Help people prevent sensitive complication information from being visible to anyone other than the wearer."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-COMPLICATIONS-0004",
+      "confidence": "medium",
+      "review_required": false,
+      "review_note": "Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context.",
+      "batch_id": "priority-4-complications-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+        "page_title": "Complications",
+        "section_path": [
+          "Complications",
+          "Visual design"
+        ],
+        "retrieved_at": "2026-07-21T11:14:44.505Z",
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "40a709cc4ea1e1502b4592f795d7963ee4be6a0a135c98ca33e3731d3db8462e",
+        "evidence_paraphrase": "Apply the documented Complications guidance to choose a ring or gauge style based on the data you need to display."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-COMPLICATIONS-0006",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the system display contexts and per-layout sizing caveat for placeholder images.",
+      "batch_id": "priority-4-complications-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+        "page_title": "Complications",
+        "section_path": [
+          "Complications",
+          "Visual design"
+        ],
+        "retrieved_at": "2026-07-21T11:14:44.505Z",
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "31265aca5400107665740ad5834bf31eb1df623a4ce168af24956102e3947133",
+        "evidence_paraphrase": "Provide a static placeholder image for each supported complication layout."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-COMPLICATIONS-0007",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Repaired the generated paraphrase and retained the source preference for useful live information over static launch-only content.",
+      "batch_id": "priority-4-complications-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+        "page_title": "Complications",
+        "section_path": [
+          "Complications",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T11:14:44.505Z",
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "3a07a53bfed76c3af73f00e55b1e585019740f6bf0f7f0afcd3e4386685c24ae",
+        "evidence_paraphrase": "Prioritize essential, dynamic information people want to view at a glance in a complication."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-COMPLICATIONS-0008",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Restored the tinted-versus-nontinted requirement lost by evidence-fragment truncation.",
+      "batch_id": "priority-4-complications-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+        "page_title": "Complications",
+        "section_path": [
+          "Complications",
+          "Visual design"
+        ],
+        "retrieved_at": "2026-07-21T11:14:44.505Z",
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "c95a9e9d8b4f4b31e43ecb048182ed6e98328b91cb422b2cc0c252c6560ddedc",
+        "evidence_paraphrase": "Avoid using color as the only way to communicate important information in a complication."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the expected minimum usefulness and source-scoped maximum of four quick actions.",
+      "batch_id": "priority-4-home-screen-quick-actions-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions",
+        "page_title": "Home Screen quick actions",
+        "section_path": [
+          "Home Screen quick actions",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T11:14:55.043Z",
+        "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5",
+        "source_sentence_hash": "4a2d20f002e88eea0676b002baab2bb0a99989382d17342b605bec0c78acf767",
+        "evidence_paraphrase": "Create Home Screen quick actions for compelling, high-value tasks people can start without opening the app first."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint.",
+      "batch_id": "priority-4-home-screen-quick-actions-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions",
+        "page_title": "Home Screen quick actions",
+        "section_path": [
+          "Home Screen quick actions",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T11:14:55.043Z",
+        "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5",
+        "source_sentence_hash": "e3ad570e3f5736a9e51da114e31b2136f35ccae1ff954ead9be72d67ce64592e",
+        "evidence_paraphrase": "Avoid changing dynamic quick actions in ways people can't predict."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the official preference for SF Symbols when representing quick actions.",
+      "batch_id": "priority-4-home-screen-quick-actions-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions",
+        "page_title": "Home Screen quick actions",
+        "section_path": [
+          "Home Screen quick actions",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T11:14:55.043Z",
+        "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5",
+        "source_sentence_hash": "d4bd6688dd8b5298253e712c7235ea2031ba556f26ba8cd3a0ec2d492567955a",
+        "evidence_paraphrase": "Provide a familiar interface icon for every Home Screen quick action, preferring SF Symbols where suitable."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Repaired the generated negative sentence and retained the Dark Mode contrast rationale.",
+      "batch_id": "priority-4-home-screen-quick-actions-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions",
+        "page_title": "Home Screen quick actions",
+        "section_path": [
+          "Home Screen quick actions",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T11:14:55.043Z",
+        "source_hash": "39a7e1b993857e6b0be0f651e0f5de90b5ea6e52acc193f7c326c25d10f93dd5",
+        "source_sentence_hash": "7f426aac6574515f7acec0ac10a921a6c63cd154805b26beff742f0e4d80b924",
+        "evidence_paraphrase": "Avoid using an emoji in place of a symbol or interface icon for a Home Screen quick action."
       }
     },
     {

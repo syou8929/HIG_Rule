@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T11:34:28.633Z. 1714 active rules; 2 deprecated rules.
+Generated 2026-07-21T11:43:36.620Z. 1713 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -727,27 +727,27 @@ Generated 2026-07-21T11:34:28.633Z. 1714 active rules; 2 deprecated rules.
 - **HIG-COMPONENTS-BUTTONS-0005 · MUST · medium** — Verify that that each button clearly communicates its purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0006 · MAY · low** — Evaluate whether using text when a short label communicates more clearly than an icon is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0007 · AVOID · low** — Exclude assign the primary role to a button that performs a destructive action, even if that action is the from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0008 · SHOULD · low** — Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0009 · MAY · low** — Evaluate whether supporting spring loading is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0010 · SHOULD · low** — Choose or apply square buttons in a view, not in the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0011 · SHOULD · low** — Favor using a symbol in a square button when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0012 · AVOID · low** — Exclude using labels to introduce square buttons from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0013 · SHOULD · low** — Choose or apply the system-provided help button to display your help documentation in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0014 · SHOULD · low** — Apply the documented Buttons guidance to include no more than one help button per window. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0015 · SHOULD · low** — Apply the documented Buttons guidance to position help buttons where people expect to find them. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0016 · SHOULD · low** — Choose or apply a help button within a view, not in the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0017 · AVOID · low** — Exclude displaying text that introduces a help button from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0018 · SHOULD · low** — Choose or apply an image button in a view, not in the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0019 · SHOULD · low** — Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0020 · SHOULD · low** — Favor buttons that have a discernible background shape and fill when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0021 · AVOID · low** — Exclude creating a custom button that uses a white background fill and black text or icons from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0022 · SHOULD · low** — Make enough space around a button to make it easy for people to look at it available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0023 · SHOULD · low** — Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0024 · SHOULD · low** — Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0025 · SHOULD · low** — Choose or apply a toolbar to place buttons in the corners in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0026 · SHOULD · low** — Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0027 · SHOULD · low** — Choose or apply toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0028 · SHOULD · low** — Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0008 · SHOULD · high** — Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0009 · MAY · medium** — Evaluate whether supporting spring loading is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0010 · SHOULD · medium** — Choose or apply square buttons in a view, not in the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0011 · SHOULD · medium** — Favor using a symbol in a square button when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0012 · AVOID · medium** — Exclude using labels to introduce square buttons from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0013 · SHOULD · medium** — Choose or apply the system-provided help button to display your help documentation in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0014 · SHOULD · medium** — Apply the documented Buttons guidance to include no more than one help button per window. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0015 · SHOULD · high** — Place a macOS help button in the source-specified lower corner for the window or dialog style. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0016 · SHOULD · medium** — Choose or apply a help button within a view, not in the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0017 · AVOID · medium** — Exclude displaying text that introduces a help button from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0018 · SHOULD · medium** — Choose or apply an image button in a view, not in the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0019 · SHOULD · high** — Include about 10 pixels of padding between an image and the clickable edges of its macOS image button. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0020 · SHOULD · high** — Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0021 · AVOID · medium** — Exclude creating a custom button that uses a white background fill and black text or icons from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0022 · SHOULD · high** — Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0023 · SHOULD · high** — Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0024 · SHOULD · high** — Use standard visionOS controls so interactions provide the familiar audible feedback people expect. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0025 · SHOULD · medium** — Choose or apply a toolbar to place buttons in the corners in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0026 · SHOULD · high** — Prefer full-width buttons for primary watchOS actions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0027 · SHOULD · medium** — Choose or apply toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0028 · SHOULD · high** — Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0029 · SHOULD · low** — Apply the documented Buttons guidance to help buttons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 ### charts
 
@@ -790,14 +790,14 @@ Generated 2026-07-21T11:34:28.633Z. 1714 active rules; 2 deprecated rules.
 - **HIG-COMPONENTS-COMBO-BOXES-0003 · MUST · medium** — Verify that list items aren’t wider than the text field. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
 ### complications
 
-- **HIG-COMPONENTS-COMPLICATIONS-0001 · SHOULD · low** — Ensure the experience accommodates all complication families when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0002 · MAY · low** — Evaluate whether creating multiple complications for each family is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0003 · SHOULD · low** — Maintain privacy in mind. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0004 · SHOULD · low** — Apply the documented Complications guidance to choose a ring or gauge style based on the data you need to display. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0001 · SHOULD · high** — Support every complication family for which the app can provide useful information. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0002 · MAY · medium** — Evaluate whether creating multiple complications for each family is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0003 · SHOULD · high** — Help people prevent sensitive complication information from being visible to anyone other than the wearer. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0004 · SHOULD · medium** — Apply the documented Complications guidance to choose a ring or gauge style based on the data you need to display. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0005 · MUST · medium** — Verify that images look good in tinted mode. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0006 · SHOULD · low** — Make a set of static placeholder images for each complication you support available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0007 · SHOULD · low** — Determine essential, dynamic content that people want to view at a glance explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0008 · AVOID · low** — Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0006 · SHOULD · high** — Provide a static placeholder image for each supported complication layout. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0007 · SHOULD · high** — Prioritize essential, dynamic information people want to view at a glance in a complication. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0008 · AVOID · high** — Avoid using color as the only way to communicate important information in a complication. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 ### context-menus
 
 - **HIG-COMPONENTS-CONTEXT-MENUS-0001 · SHOULD · low** — Apply the documented Context menus guidance to prioritize relevancy when choosing items to include in a context menu. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
@@ -850,10 +850,10 @@ Generated 2026-07-21T11:34:28.633Z. 1714 active rules; 2 deprecated rules.
 - **HIG-COMPONENTS-GAUGES-0004 · MAY · low** — Evaluate whether changing the fill color to inform people about significant parts of the range is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 ### home-screen-quick-actions
 
-- **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · SHOULD · low** — Apply the documented Home Screen quick actions guidance to create quick actions for compelling, high-value tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
-- **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · AVOID · low** — Exclude making unpredictable changes to quick actions from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
-- **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003 · SHOULD · low** — Make a familiar interface icon for each quick action available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
-- **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004 · AVOID · low** — Exclude use an emoji in place of a symbol or interface icon from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · SHOULD · high** — Create Home Screen quick actions for compelling, high-value tasks people can start without opening the app first. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · AVOID · high** — Avoid changing dynamic quick actions in ways people can't predict. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003 · SHOULD · high** — Provide a familiar interface icon for every Home Screen quick action, preferring SF Symbols where suitable. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- **HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004 · AVOID · high** — Avoid using an emoji in place of a symbol or interface icon for a Home Screen quick action. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 ### image-views
 
 - **HIG-COMPONENTS-IMAGE-VIEWS-0001 · SHOULD · low** — Choose or apply an image view when the primary purpose of the view is simply to display an image in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))

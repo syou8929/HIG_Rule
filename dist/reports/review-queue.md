@@ -1,45 +1,46 @@
 # Human source-review queue
 
-- Remaining rules: 1537
+- Remaining rules: 1504
 - Next priority: 4 (platform-specific-hig)
-- Next batch: 22
+- Next batch: 23
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 636
+- 4 (platform-specific-hig): 603
 - 5 (input-and-device-constraints): 36
 - 6 (apple-platform-common): 842
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 202
-- MAY: 184
-- SHOULD: 1151
+- AVOID: 196
+- MAY: 182
+- SHOULD: 1126
 
 ## Next batch
 
-- HIG-COMPONENTS-BUTTONS-0012 · AVOID — Avoid using labels to introduce square buttons · Buttons > Platform considerations > macOS > Square buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0017 · AVOID — Avoid displaying text that introduces a help button · Buttons > Platform considerations > macOS > Help buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0021 · AVOID — Avoid creating a custom button that uses a white background fill and black text or icons · Buttons > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0008 · SHOULD — Use a flexible-height push button only when you need to display tall or variable height content · Buttons > Platform considerations > macOS > Push buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0010 · SHOULD — Use square buttons in a view, not in the window frame · Buttons > Platform considerations > macOS > Square buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0011 · SHOULD — Prefer using a symbol in a square button · Buttons > Platform considerations > macOS > Square buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0013 · SHOULD — Use the system-provided help button to display your help documentation · Buttons > Platform considerations > macOS > Help buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0014 · SHOULD — Include no more than one help button per window · Buttons > Platform considerations > macOS > Help buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0015 · SHOULD — Position help buttons where people expect to find them · Buttons > Platform considerations > macOS > Help buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0016 · SHOULD — Use a help button within a view, not in the window frame · Buttons > Platform considerations > macOS > Help buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0018 · SHOULD — Use an image button in a view, not in the window frame · Buttons > Platform considerations > macOS > Image buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0019 · SHOULD — Include about 10 pixels of padding between the edges of the image and the button edges · Buttons > Platform considerations > macOS > Image buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0020 · SHOULD — Prefer buttons that have a discernible background shape and fill · Buttons > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0022 · SHOULD — Provide enough space around a button to make it easy for people to look at it · Buttons > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0023 · SHOULD — Choose the right shape if you need to display text-labeled buttons in a stack or row · Buttons > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0024 · SHOULD — Use standard controls to take advantage of the audible feedback sounds people already know · Buttons > Platform considerations > visionOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0025 · SHOULD — Use a toolbar to place buttons in the corners · Buttons > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0026 · SHOULD — Prefer buttons that span the width of the screen for primary actions in your app · Buttons > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0027 · SHOULD — Use toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content · Buttons > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0028 · SHOULD — Use the same height for vertical stacks of one- and two-line text buttons · Buttons > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0029 · SHOULD — Help buttons · Buttons > Platform considerations > macOS > Help buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- HIG-COMPONENTS-BUTTONS-0009 · MAY — Consider supporting spring loading · Buttons > Platform considerations > macOS > Push buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0002 · AVOID — Don’t use a Live Activity to display ads or promotions · Live Activities > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0003 · AVOID — Avoid displaying sensitive information · Live Activities > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0005 · AVOID — Don’t add elements to your app that draw attention to the Dynamic Island · Live Activities > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0020 · AVOID — Don’t replicate notification layouts · Live Activities > Presentation > Lock Screen presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0001 · SHOULD — Offer Live Activities for tasks and events that have a defined beginning and end · Live Activities > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0004 · SHOULD — Create a Live Activity that matches your app’s visual aesthetic and personality in both dark and light appe… · Live Activities > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0007 · SHOULD — Use familiar layouts for custom views and layouts · Live Activities > Best practices > Creating Live Activity layouts ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0008 · SHOULD — Use consistent margins and concentric placement · Live Activities > Best practices > Creating Live Activity layouts ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0009 · SHOULD — Use color to express the character and identity of your app · Live Activities > Best practices > Choosing colors ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0010 · SHOULD — Use animations to reinforce the information you’re communicating and to bring attention to updates · Live Activities > Best practices > Adding transitions and animating content updates ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0013 · SHOULD — Offer an App Shortcut that starts your Live Activity · Live Activities > Best practices > Starting, updating, and ending a Live Activity ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0014 · SHOULD — Let people track multiple events efficiently with a single Live Activity · Live Activities > Best practices > Starting, updating, and ending a Live Activity ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0017 · SHOULD — Keep content as narrow as possible and ensure it’s snug against the TrueDepth camera · Live Activities > Presentation > Compact presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0019 · SHOULD — Maintain the relative placement of elements to create a coherent layout between presentations · Live Activities > Presentation > Expanded presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0021 · SHOULD — Choose colors that work well on a personalized Lock Screen · Live Activities > Presentation > Lock Screen presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0023 · SHOULD — Verify the generated color of the dismiss button · Live Activities > Presentation > Lock Screen presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0024 · SHOULD — Use standard margins to align your design with notifications · Live Activities > Presentation > Lock Screen presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0026 · SHOULD — Use standard margins and avoid extending graphic elements to the edge of the screen · Live Activities > Presentation > StandBy presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0027 · SHOULD — Verify your design in Night Mode · Live Activities > Presentation > StandBy presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0012 · MAY — Consider letting people respond to event or progress updates · Live Activities > Best practices > Offering interactivity ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0025 · MAY — Consider using the default background color in StandBy · Live Activities > Presentation > StandBy presentation ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0028 · MAY — Consider creating a custom layout if your Live Activity would benefit from larger text or additional inform… · Live Activities > CarPlay ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-COMPONENTS-LIVE-ACTIVITIES-0029 · MAY — Consider creating a custom watchOS layout · Live Activities > Platform considerations > watchOS ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))

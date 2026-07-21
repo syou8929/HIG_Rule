@@ -5,7 +5,7 @@ const ACTIONABLE = /^(adopt|aim|allow|always|apply|ask|augment|avoid|avoiding|be
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
-  if (/^(Always On|Tracking requests)$/i.test(text)) return false;
+  if (/^(Always On|Tracking requests|Help buttons)$/i.test(text)) return false;
   return ACTIONABLE.test(text) && !/^Resources?\b/i.test(text);
 }
 

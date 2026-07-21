@@ -1,7 +1,7 @@
 # Exact duplicate source review
 
-- Candidate groups: 10
-- Reviewed contextual groups: 10
+- Candidate groups: 9
+- Reviewed contextual groups: 9
 - Unresolved groups: 0
 - Official source only: yes
 - Reviewed at: 2026-07-21T10:59:26Z
@@ -27,9 +27,6 @@ Exact statements are retained only when separate Apple HIG pages, sections, comp
   - HIG-COMPONENTS-COLUMN-VIEWS-0003: Column views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
   - HIG-COMPONENTS-LISTS-AND-TABLES-0011: Lists and tables > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
   - HIG-COMPONENTS-OUTLINE-VIEWS-0004: Outline views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- HIG-COMPONENTS-COMPLICATIONS-0003, HIG-COMPONENTS-NOTIFICATIONS-0020 — Retained because privacy is repeated for watchOS complications and notification short looks, which are separate visible surfaces.
-  - HIG-COMPONENTS-COMPLICATIONS-0003: Complications > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-  - HIG-COMPONENTS-NOTIFICATIONS-0020: Notifications > Platform considerations > watchOS > Short looks ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-SEARCH-FIELDS-0015, HIG-PATTERNS-SEARCHING-0002 — Retained because the tvOS search-field rule is narrower than the cross-platform searching-pattern rule.
   - HIG-COMPONENTS-SEARCH-FIELDS-0015: Search fields > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
   - HIG-PATTERNS-SEARCHING-0002: Searching > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/searching))

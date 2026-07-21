@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-COMPONENTS-COMPLICATIONS-0001",
-    "title": "Support all complication families when possible",
+    "title": "Support all watchOS complication families when possible",
     "category": "components",
     "topic": "complications",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Ensure the experience accommodates all complication families when possible.",
-      "ja": "all complication families when possibleを利用できる設計にする。"
+      "en": "Support every complication family for which the app can provide useful information.",
+      "ja": "アプリが有用な情報を提供できるすべてのcomplication familyに対応する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -28,7 +28,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "When useful family-specific information isn't available, provide an app-representative image that still launches the app."
     ],
     "exceptions": [],
     "rationale": {
@@ -38,7 +38,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates all complication families when possible.” in the documented Complications context?"
+        "Does the design satisfy “Support every complication family for which the app can provide useful information.” in the documented Complications context?"
       ]
     },
     "testability": "manual",
@@ -58,7 +58,7 @@
       "retrieved_at": "2026-07-21T11:14:44.505Z",
       "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
       "source_sentence_hash": "ec65e92a6a8e88e1f69746068f3e2e20acc74f18101dfc8fbb794c570fcdb18f",
-      "evidence_paraphrase": "Ensure the experience accommodates all complication families when possible."
+      "evidence_paraphrase": "Support every complication family for which the app can provide useful information."
     },
     "tags": [
       "components",
@@ -67,7 +67,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates all complication families when possible.",
+    "apple_native_rule": "Support every complication family for which the app can provide useful information.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -81,8 +81,8 @@
       "ja": "creating multiple complications for each familyが現在の状況に適切か検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -143,17 +143,17 @@
   },
   {
     "id": "HIG-COMPONENTS-COMPLICATIONS-0003",
-    "title": "Keep privacy in mind",
+    "title": "Protect private information in watchOS complications",
     "category": "components",
     "topic": "complications",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Maintain privacy in mind.",
-      "ja": "privacy in mindを維持する。"
+      "en": "Help people prevent sensitive complication information from being visible to anyone other than the wearer.",
+      "ja": "complicationの機密情報が装着者以外に見えないよう、利用者が保護できる設計にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -170,7 +170,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Account for information remaining visible on the Always-On Retina display."
     ],
     "exceptions": [],
     "rationale": {
@@ -180,7 +180,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain privacy in mind.” in the documented Complications context?"
+        "Does the design satisfy “Help people prevent sensitive complication information from being visible to anyone other than the wearer.” in the documented Complications context?"
       ]
     },
     "testability": "manual",
@@ -200,7 +200,7 @@
       "retrieved_at": "2026-07-21T11:14:44.505Z",
       "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
       "source_sentence_hash": "33749ad7a4b9d03aa2976ae7c0931f8ba7f63b8a02347e7591c34d9c540eae52",
-      "evidence_paraphrase": "Maintain privacy in mind."
+      "evidence_paraphrase": "Help people prevent sensitive complication information from being visible to anyone other than the wearer."
     },
     "tags": [
       "components",
@@ -209,7 +209,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Maintain privacy in mind.",
+    "apple_native_rule": "Help people prevent sensitive complication information from being visible to anyone other than the wearer.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -223,8 +223,8 @@
       "ja": "「Complications」において「Choose a ring or gauge style based on the data you need to display」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -359,17 +359,17 @@
   },
   {
     "id": "HIG-COMPONENTS-COMPLICATIONS-0006",
-    "title": "Provide a set of static placeholder images for each complication you support",
+    "title": "Provide static placeholders for every supported complication",
     "category": "components",
     "topic": "complications",
     "subtopic": "visual-design",
     "statement": {
-      "en": "Make a set of static placeholder images for each complication you support available when applicable.",
-      "ja": "必要な場合にa set of static placeholder images for each complication you supportを利用可能にする。"
+      "en": "Provide a static placeholder image for each supported complication layout.",
+      "ja": "対応する各complicationレイアウトに静的プレースホルダ画像を用意する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -386,7 +386,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The system can display placeholders before localized content is ready and in the complication-selection carousel.",
+      "Match each placeholder to the applicable layout because placeholder and final image sizes can differ."
     ],
     "exceptions": [],
     "rationale": {
@@ -396,7 +397,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make a set of static placeholder images for each complication you support available when applicable.” in the documented Complications context?"
+        "Does the design satisfy “Provide a static placeholder image for each supported complication layout.” in the documented Complications context?"
       ]
     },
     "testability": "manual",
@@ -416,7 +417,7 @@
       "retrieved_at": "2026-07-21T11:14:44.505Z",
       "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
       "source_sentence_hash": "31265aca5400107665740ad5834bf31eb1df623a4ce168af24956102e3947133",
-      "evidence_paraphrase": "Make a set of static placeholder images for each complication you support available when applicable."
+      "evidence_paraphrase": "Provide a static placeholder image for each supported complication layout."
     },
     "tags": [
       "components",
@@ -425,22 +426,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make a set of static placeholder images for each complication you support available when applicable.",
+    "apple_native_rule": "Provide a static placeholder image for each supported complication layout.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-COMPLICATIONS-0007",
-    "title": "Identify essential, dynamic content that people want to view at a glance",
+    "title": "Identify glanceable, essential, dynamic complication content",
     "category": "components",
     "topic": "complications",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Determine essential, dynamic content that people want to view at a glance explicitly.",
-      "ja": "essential, dynamic content that people want to view at a glanceを明確に特定する。"
+      "en": "Prioritize essential, dynamic information people want to view at a glance in a complication.",
+      "ja": "complicationには、利用者が一目で確認したい重要かつ動的な情報を優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -467,7 +468,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Determine essential, dynamic content that people want to view at a glance explicitly.” in the documented Complications context?"
+        "Does the design satisfy “Prioritize essential, dynamic information people want to view at a glance in a complication.” in the documented Complications context?"
       ]
     },
     "testability": "manual",
@@ -487,7 +488,7 @@
       "retrieved_at": "2026-07-21T11:14:44.505Z",
       "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
       "source_sentence_hash": "3a07a53bfed76c3af73f00e55b1e585019740f6bf0f7f0afcd3e4386685c24ae",
-      "evidence_paraphrase": "Determine essential, dynamic content that people want to view at a glance explicitly."
+      "evidence_paraphrase": "Prioritize essential, dynamic information people want to view at a glance in a complication."
     },
     "tags": [
       "components",
@@ -496,22 +497,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Determine essential, dynamic content that people want to view at a glance explicitly.",
+    "apple_native_rule": "Prioritize essential, dynamic information people want to view at a glance in a complication.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-COMPLICATIONS-0008",
-    "title": "Avoid using color as the only way to communicate important information. You want people to get the same inf…",
+    "title": "Avoid relying on color alone in complications",
     "category": "components",
     "topic": "complications",
     "subtopic": "visual-design",
     "statement": {
-      "en": "Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience.",
-      "ja": "該当する体験ではusing color as the only way to communicate important information. You want people to get the same informationを避ける。"
+      "en": "Avoid using color as the only way to communicate important information in a complication.",
+      "ja": "complicationで重要な情報を伝える唯一の手段として色を使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -528,7 +529,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "People need to receive the same information in tinted and nontinted modes."
     ],
     "exceptions": [],
     "rationale": {
@@ -538,7 +539,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience.” in the documented Complications context?"
+        "Does the design satisfy “Avoid using color as the only way to communicate important information in a complication.” in the documented Complications context?"
       ]
     },
     "testability": "manual",
@@ -558,7 +559,7 @@
       "retrieved_at": "2026-07-21T11:14:44.505Z",
       "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
       "source_sentence_hash": "c95a9e9d8b4f4b31e43ecb048182ed6e98328b91cb422b2cc0c252c6560ddedc",
-      "evidence_paraphrase": "Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience."
+      "evidence_paraphrase": "Avoid using color as the only way to communicate important information in a complication."
     },
     "tags": [
       "components",
@@ -567,7 +568,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude using color as the only way to communicate important information. You want people to get the same information from the applicable experience.",
+    "apple_native_rule": "Avoid using color as the only way to communicate important information in a complication.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

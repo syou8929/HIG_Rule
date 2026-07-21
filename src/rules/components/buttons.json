@@ -568,17 +568,17 @@
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0008",
-    "title": "Use a flexible-height push button only when you need to display tall or variable height content",
+    "title": "Use flexible-height macOS buttons only for tall or variable content",
     "category": "components",
     "topic": "buttons",
     "subtopic": "push-buttons",
     "statement": {
-      "en": "Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context.",
-      "ja": "該当する状況ではa flexible-height push button only when you need to display tall or variable height contentを採用する。"
+      "en": "Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.",
+      "ja": "2行テキスト、高いアイコンなど、高さが大きいか変動する内容に限って柔軟な高さのプッシュボタンを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -595,7 +595,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Apply to macOS push buttons.",
+      "Use a standard push button when the content doesn't require extra or variable height."
     ],
     "exceptions": [],
     "rationale": {
@@ -605,7 +606,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context.” in the documented Buttons context?"
+        "Does the design satisfy “Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.” in the documented Buttons context?"
       ]
     },
     "testability": "manual",
@@ -627,7 +628,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "813f53040826318df945db3674dc0754df856ff1a1a93548e978d7a708c34f9b",
-      "evidence_paraphrase": "Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context."
+      "evidence_paraphrase": "Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content."
     },
     "tags": [
       "components",
@@ -638,7 +639,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply a flexible-height push button only when you need to display tall or variable height content in the documented context.",
+    "apple_native_rule": "Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -652,8 +653,8 @@
       "ja": "supporting spring loadingが現在の状況に適切か検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -727,8 +728,8 @@
       "ja": "該当する状況ではsquare buttons in a view, not in the window frameを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -802,8 +803,8 @@
       "ja": "該当条件ではusing a symbol in a square buttonを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -877,8 +878,8 @@
       "ja": "該当する体験ではusing labels to introduce square buttonsを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -952,8 +953,8 @@
       "ja": "該当する状況ではthe system-provided help button to display your help documentationを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1027,8 +1028,8 @@
       "ja": "「Buttons」において「Include no more than one help button per window」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1093,17 +1094,17 @@
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0015",
-    "title": "Position help buttons where people expect to find them",
+    "title": "Place macOS help buttons in expected window locations",
     "category": "components",
     "topic": "buttons",
     "subtopic": "help-buttons",
     "statement": {
-      "en": "Apply the documented Buttons guidance to position help buttons where people expect to find them.",
-      "ja": "「Buttons」において「Position help buttons where people expect to find them」の指針を適用する。"
+      "en": "Place a macOS help button in the source-specified lower corner for the window or dialog style.",
+      "ja": "macOSのヘルプボタンを、ウインドウまたはダイアログ形式に応じて指定された下隅へ配置する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1120,7 +1121,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "In a dialog with dismissal buttons, use the opposite lower corner and align the help button vertically with them.",
+      "In a dialog without dismissal buttons, use the lower-left or lower-right corner.",
+      "In a Settings window or pane, use the lower-left or lower-right corner."
     ],
     "exceptions": [],
     "rationale": {
@@ -1130,7 +1133,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Buttons guidance to position help buttons where people expect to find them.” in the documented Buttons context?"
+        "Does the design satisfy “Place a macOS help button in the source-specified lower corner for the window or dialog style.” in the documented Buttons context?"
       ]
     },
     "testability": "manual",
@@ -1152,7 +1155,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "d6d2992e38a003fe644153bb4e26f46401dfddb83be5a3ad8a08ebc6786ef882",
-      "evidence_paraphrase": "Apply the documented Buttons guidance to position help buttons where people expect to find them."
+      "evidence_paraphrase": "Place a macOS help button in the source-specified lower corner for the window or dialog style."
     },
     "tags": [
       "components",
@@ -1163,7 +1166,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Buttons guidance to position help buttons where people expect to find them.",
+    "apple_native_rule": "Place a macOS help button in the source-specified lower corner for the window or dialog style.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1177,8 +1180,8 @@
       "ja": "該当する状況ではa help button within a view, not in the window frameを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1252,8 +1255,8 @@
       "ja": "該当する体験ではdisplaying text that introduces a help buttonを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1327,8 +1330,8 @@
       "ja": "該当する状況ではan image button in a view, not in the window frameを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1393,17 +1396,17 @@
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0019",
-    "title": "Include about 10 pixels of padding between the edges of the image and the button edges",
+    "title": "Pad macOS image-button content by about 10 pixels",
     "category": "components",
     "topic": "buttons",
     "subtopic": "image-buttons",
     "statement": {
-      "en": "Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges.",
-      "ja": "「Buttons」において「Include about 10 pixels of padding between the edges of the image and the button edges」の指針を適用する。"
+      "en": "Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.",
+      "ja": "macOSの画像ボタンでは、画像とクリック可能なボタン端の間に約10ピクセルの余白を確保する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1420,7 +1423,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The button edges define the clickable area even when they aren't visible.",
+      "In general, avoid adding a system-provided border to an image button."
     ],
     "exceptions": [],
     "rationale": {
@@ -1430,7 +1434,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges.” in the documented Buttons context?"
+        "Does the design satisfy “Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.” in the documented Buttons context?"
       ]
     },
     "testability": "manual",
@@ -1452,7 +1456,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "eefa413fee8d67b029395515e8647e3f5387de1764ddc045b14de5229a9ebc3e",
-      "evidence_paraphrase": "Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges."
+      "evidence_paraphrase": "Include about 10 pixels of padding between an image and the clickable edges of its macOS image button."
     },
     "tags": [
       "components",
@@ -1463,22 +1467,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Buttons guidance to include about 10 pixels of padding between the edges of the image and the button edges.",
+    "apple_native_rule": "Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0020",
-    "title": "Prefer buttons that have a discernible background shape and fill",
+    "title": "Prefer discernible button shapes and fills in visionOS",
     "category": "components",
     "topic": "buttons",
     "subtopic": "visionos",
     "statement": {
-      "en": "Favor buttons that have a discernible background shape and fill when the documented conditions apply.",
-      "ja": "該当条件ではbuttons that have a discernible background shape and fillを優先する。"
+      "en": "Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.",
+      "ja": "単独で視覚的な輪郭が必要なvisionOSボタンでは、識別しやすい背景形状と対照的な塗りを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1497,7 +1501,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A separate button background isn't necessary in a toolbar, context menu, alert, or ornament when the containing shape and material keep it comfortably visible."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。"
@@ -1505,7 +1511,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor buttons that have a discernible background shape and fill when the documented conditions apply.” in the documented Buttons context?"
+        "Does the design satisfy “Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.” in the documented Buttons context?"
       ]
     },
     "testability": "manual",
@@ -1526,7 +1532,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "ea3492354cb6b0d20d7f9ac994c036d57a75828ed6340ea89087d26c052fafa5",
-      "evidence_paraphrase": "Favor buttons that have a discernible background shape and fill when the documented conditions apply."
+      "evidence_paraphrase": "Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition."
     },
     "tags": [
       "components",
@@ -1536,7 +1542,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor buttons that have a discernible background shape and fill when the documented conditions apply.",
+    "apple_native_rule": "Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1550,8 +1556,8 @@
       "ja": "該当する体験ではcreating a custom button that uses a white background fill and black text or iconsを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1614,17 +1620,17 @@
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0022",
-    "title": "Provide enough space around a button to make it easy for people to look at it",
+    "title": "Provide gaze-friendly spacing around visionOS buttons",
     "category": "components",
     "topic": "buttons",
     "subtopic": "visionos",
     "statement": {
-      "en": "Make enough space around a button to make it easy for people to look at it available when applicable.",
-      "ja": "必要な場合にenough space around a button to make it easy for people to look at itを利用可能にする。"
+      "en": "Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects.",
+      "ja": "視線で狙いやすくホバー効果が重ならないよう、visionOSボタンの周囲に十分な間隔を確保する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1643,7 +1649,9 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep button centers at least 60 points apart.",
+      "For buttons that measure at least 60 points, add 4 points of surrounding padding.",
+      "Generally avoid arranging small or mini buttons in a vertical stack or horizontal row."
     ],
     "exceptions": [],
     "rationale": {
@@ -1651,12 +1659,15 @@
       "ja": "この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。"
     },
     "checks": {
-      "automated": [],
+      "automated": [
+        "Measure center-to-center button spacing and verify the source-scoped 60-point minimum.",
+        "For buttons at least 60 points in size, verify 4 points of hover-effect clearance."
+      ],
       "manual": [
-        "Does the design satisfy “Make enough space around a button to make it easy for people to look at it available when applicable.” in the documented Buttons context?"
+        "Can people look at and select each visionOS button without adjacent hover effects competing or overlapping?"
       ]
     },
-    "testability": "manual",
+    "testability": "hybrid",
     "anti_patterns": [
       "Ignoring this guidance in a context where the source section applies."
     ],
@@ -1674,7 +1685,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "b4508ffcdfd16b2a921ae9b40720aff63e7e9f54b9e85ebdfb8ed5e336e5f865",
-      "evidence_paraphrase": "Make enough space around a button to make it easy for people to look at it available when applicable."
+      "evidence_paraphrase": "Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects."
     },
     "tags": [
       "components",
@@ -1685,22 +1696,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make enough space around a button to make it easy for people to look at it available when applicable.",
+    "apple_native_rule": "Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0023",
-    "title": "Choose the right shape if you need to display text-labeled buttons in a stack or row",
+    "title": "Match visionOS text-button shape to stack direction",
     "category": "components",
     "topic": "buttons",
     "subtopic": "visionos",
     "statement": {
-      "en": "Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row.",
-      "ja": "「Buttons」において「Choose the right shape if you need to display text-labeled buttons in a stack or row」の指針を適用する。"
+      "en": "Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.",
+      "ja": "テキストボタンは、縦積みでは角丸長方形、横並びではカプセル形状を使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1717,7 +1728,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Apply to text-labeled buttons displayed in a visionOS stack or row."
     ],
     "exceptions": [],
     "rationale": {
@@ -1727,7 +1738,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row.” in the documented Buttons context?"
+        "Does the design satisfy “Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.” in the documented Buttons context?"
       ]
     },
     "testability": "manual",
@@ -1748,7 +1759,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "e3228cc3012a45901b462cc0e13e70d62574ce1b2e5af6645eb79a110bdc4804",
-      "evidence_paraphrase": "Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row."
+      "evidence_paraphrase": "Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows."
     },
     "tags": [
       "components",
@@ -1758,22 +1769,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Buttons guidance to choose the right shape if you need to display text-labeled buttons in a stack or row.",
+    "apple_native_rule": "Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0024",
-    "title": "Use standard controls to take advantage of the audible feedback sounds people already know",
+    "title": "Use standard visionOS controls for familiar audible feedback",
     "category": "components",
     "topic": "buttons",
     "subtopic": "visionos",
     "statement": {
-      "en": "Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context.",
-      "ja": "該当する状況ではstandard controls to take advantage of the audible feedback sounds people already knowを採用する。"
+      "en": "Use standard visionOS controls so interactions provide the familiar audible feedback people expect.",
+      "ja": "期待される聞き慣れた音声フィードバックを提供できるよう、visionOSの標準コントロールを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1790,7 +1801,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Audible feedback is especially important because visionOS doesn't provide haptic feedback."
     ],
     "exceptions": [],
     "rationale": {
@@ -1800,7 +1811,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context.” in the documented Buttons context?"
+        "Does the design satisfy “Use standard visionOS controls so interactions provide the familiar audible feedback people expect.” in the documented Buttons context?"
       ]
     },
     "testability": "manual",
@@ -1821,7 +1832,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "c4ef83336be27164e118bf512a227b10352885fc66474272ce0ddba0daed5fc6",
-      "evidence_paraphrase": "Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context."
+      "evidence_paraphrase": "Use standard visionOS controls so interactions provide the familiar audible feedback people expect."
     },
     "tags": [
       "components",
@@ -1831,7 +1842,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply standard controls to take advantage of the audible feedback sounds people already know in the documented context.",
+    "apple_native_rule": "Use standard visionOS controls so interactions provide the familiar audible feedback people expect.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1845,8 +1856,8 @@
       "ja": "該当する状況ではa toolbar to place buttons in the cornersを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1909,17 +1920,17 @@
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0026",
-    "title": "Prefer buttons that span the width of the screen for primary actions in your app",
+    "title": "Prefer full-width watchOS buttons for primary actions",
     "category": "components",
     "topic": "buttons",
     "subtopic": "watchos",
     "statement": {
-      "en": "Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply.",
-      "ja": "該当条件ではbuttons that span the width of the screen for primary actions in your appを優先する。"
+      "en": "Prefer full-width buttons for primary watchOS actions.",
+      "ja": "watchOSの主要アクションには全幅ボタンを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1936,7 +1947,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "If two buttons share a row, give both the same height.",
+      "When two buttons share a row, use images or short text titles for their content."
     ],
     "exceptions": [],
     "rationale": {
@@ -1946,7 +1958,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply.” in the documented Buttons context?"
+        "Does the design satisfy “Prefer full-width buttons for primary watchOS actions.” in the documented Buttons context?"
       ]
     },
     "testability": "manual",
@@ -1967,7 +1979,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "758cc1382af4ecb60231f6660f8f8497fdfcdbb8d5861fd413085a2f9aa31622",
-      "evidence_paraphrase": "Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply."
+      "evidence_paraphrase": "Prefer full-width buttons for primary watchOS actions."
     },
     "tags": [
       "components",
@@ -1977,7 +1989,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor buttons that span the width of the screen for primary actions in your app when the documented conditions apply.",
+    "apple_native_rule": "Prefer full-width buttons for primary watchOS actions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1991,8 +2003,8 @@
       "ja": "該当する状況ではtoolbar buttons to provide either navigation to related areas or contextual actions for the view’s contentを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2055,17 +2067,17 @@
   },
   {
     "id": "HIG-COMPONENTS-BUTTONS-0028",
-    "title": "Use the same height for vertical stacks of one- and two-line text buttons",
+    "title": "Align heights in watchOS text-button stacks",
     "category": "components",
     "topic": "buttons",
     "subtopic": "watchos",
     "statement": {
-      "en": "Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context.",
-      "ja": "該当する状況ではthe same height for vertical stacks of one- and two-line text buttonsを採用する。"
+      "en": "Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.",
+      "ja": "watchOSで1行と2行のテキストボタンを縦に積む場合は、可能な限り同じ高さにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2092,7 +2104,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context.” in the documented Buttons context?"
+        "Does the design satisfy “Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.” in the documented Buttons context?"
       ]
     },
     "testability": "manual",
@@ -2113,7 +2125,7 @@
       "retrieved_at": "2026-07-21T11:14:40.666Z",
       "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24",
       "source_sentence_hash": "c600d3c8996da21aabbbcc0de3849ba900fc83eb860c0385bfb46214870495a1",
-      "evidence_paraphrase": "Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context."
+      "evidence_paraphrase": "Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons."
     },
     "tags": [
       "components",
@@ -2123,7 +2135,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply the same height for vertical stacks of one- and two-line text buttons in the documented context.",
+    "apple_native_rule": "Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -2197,8 +2209,9 @@
       "help-buttons"
     ],
     "priority_rank": 4,
-    "status": "active",
+    "status": "deprecated",
     "apple_native_rule": "Apply the documented Buttons guidance to help buttons.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.",
+    "deprecated_at": "2026-07-21T11:39:34.313Z"
   }
 ]

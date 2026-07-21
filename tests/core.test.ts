@@ -38,6 +38,7 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Avoiding animating depth changes", section_path: [], source_sentence_hash: "c".repeat(64), word_count: 4 }), true);
   assert.equal(isActionable({ text: "Always On", section_path: [], source_sentence_hash: "d".repeat(64), word_count: 2 }), false);
   assert.equal(isActionable({ text: "Tracking requests", section_path: [], source_sentence_hash: "e".repeat(64), word_count: 2 }), false);
+  assert.equal(isActionable({ text: "Help buttons", section_path: [], source_sentence_hash: "f".repeat(64), word_count: 2 }), false);
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 
@@ -128,6 +129,7 @@ test("keeps general source reviews aligned with canonical traces", async () => {
     assert.equal(rule.review_required, false);
   }
   const reviewedBatchIds = new Set<string>();
+  const explicitReviews = sourceReview.rules as Record<string, { confidence?: string; review_required?: boolean }>;
   for (const batch of sourceReview.batches) {
     const pageByUrl = new Map(batch.pages.map((page) => [page.url, page]));
     for (const id of batch.rule_ids) {
@@ -136,8 +138,8 @@ test("keeps general source reviews aligned with canonical traces", async () => {
       const rule = ruleById.get(id);
       assert.ok(rule);
       assert.equal(rule.source.source_hash, pageByUrl.get(rule.source.url)?.source_hash);
-      assert.equal(rule.review_required, batch.review_required);
-      assert.equal(rule.confidence, batch.confidence);
+      assert.equal(rule.review_required, explicitReviews[id]?.review_required ?? batch.review_required);
+      assert.equal(rule.confidence, explicitReviews[id]?.confidence ?? batch.confidence);
     }
   }
 });

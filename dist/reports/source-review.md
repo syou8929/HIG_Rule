@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 66
-- Reviewed batches: 3
+- Reviewed rules: 98
+- Reviewed batches: 6
 - Official source only: yes
-- Reviewed at: 2026-07-21T11:33:18Z
+- Reviewed at: 2026-07-21T11:42:27Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -12,6 +12,38 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-ACTION-SHEETS-0006 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
 - HIG-COMPONENTS-ACTION-SHEETS-0007 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
 - HIG-COMPONENTS-ACTION-SHEETS-0008 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-BUTTONS-0008 · high — Recorded the complete standard-versus-flexible push-button condition from the official macOS prose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0009 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0010 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0011 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0012 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0013 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0014 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0015 · high — Recorded all three rows of the official help-button location table. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0016 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0017 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0018 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0019 · high — Recorded the source-scoped padding value and invisible clickable-edge context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0020 · high — Preserved the official exception for buttons already defined by a containing component. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0021 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0022 · high — Recorded the official 60-point center spacing, 4-point padding, and small-button arrangement conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0023 · high — Recorded both directional shape mappings from the supporting official prose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0024 · high — Recorded the visionOS no-haptics rationale that makes standard audible feedback important. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0025 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0026 · high — Recorded the same-height and concise-content conditions for two watchOS buttons sharing a row. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0027 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0028 · high — Preserved the source's where-possible qualification while recording the visual-consistency goal. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-COMPLICATIONS-0001 · high — Preserved the when-possible qualification and the official fallback for unsupported information layouts. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0002 · medium — Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0003 · high — Replaced an ungrammatical paraphrase and captured the Always-On privacy risk from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0004 · medium — Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0006 · high — Recorded the system display contexts and per-layout sizing caveat for placeholder images. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0007 · high — Repaired the generated paraphrase and retained the source preference for useful live information over static launch-only content. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0008 · high — Restored the tinted-versus-nontinted requirement lost by evidence-fragment truncation. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · high — Recorded the expected minimum usefulness and source-scoped maximum of four quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · high — Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0003 · high — Recorded the official preference for SF Symbols when representing quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
+- HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0004 · high — Repaired the generated negative sentence and retained the Dark Mode contrast rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0001 · high — Recorded the platform-specific enlargement targets from the official Vision guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0002 · high — Recorded the official custom-type default and minimum size table for each supported platform. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0003 · high — Recorded the official WCAG-based contrast table and its Dark Mode and Increase Contrast conditions without treating it as a universal legal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
