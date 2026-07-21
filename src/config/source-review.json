@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T14:38:47Z",
+  "reviewed_at": "2026-07-21T14:45:29Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1177,9 +1177,293 @@
         "HIG-INPUTS-FOCUS-AND-SELECTION-0016"
       ],
       "review_note": "Reviewed cross-platform focus behavior plus iPadOS, tvOS, and visionOS specifics; recovered eight omitted atomic rules and refreshed a changed page hash."
+    },
+    {
+      "id": "priority-4-gestures-context-2026-07-21",
+      "reviewed_at": "2026-07-21T14:45:29Z",
+      "review_method": "Rendered Apple HIG Gestures guidance, supporting prose, platform notes, and gesture specification tables were reviewed; two repeated live renders matched the updated stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/gestures",
+          "source_hash": "37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5"
+        }
+      ],
+      "rule_ids": [
+        "HIG-INPUTS-GESTURES-0001",
+        "HIG-INPUTS-GESTURES-0002",
+        "HIG-INPUTS-GESTURES-0003",
+        "HIG-INPUTS-GESTURES-0004",
+        "HIG-INPUTS-GESTURES-0005",
+        "HIG-INPUTS-GESTURES-0006",
+        "HIG-INPUTS-GESTURES-0007",
+        "HIG-INPUTS-GESTURES-0008",
+        "HIG-INPUTS-GESTURES-0009",
+        "HIG-INPUTS-GESTURES-0010",
+        "HIG-INPUTS-GESTURES-0011",
+        "HIG-INPUTS-GESTURES-0012",
+        "HIG-INPUTS-GESTURES-0013",
+        "HIG-INPUTS-GESTURES-0014",
+        "HIG-INPUTS-GESTURES-0015",
+        "HIG-INPUTS-GESTURES-0016",
+        "HIG-INPUTS-GESTURES-0017",
+        "HIG-INPUTS-GESTURES-0018",
+        "HIG-INPUTS-GESTURES-0019",
+        "HIG-INPUTS-GESTURES-0020",
+        "HIG-INPUTS-GESTURES-0021",
+        "HIG-INPUTS-GESTURES-0022",
+        "HIG-INPUTS-GESTURES-0023",
+        "HIG-INPUTS-GESTURES-0024",
+        "HIG-INPUTS-GESTURES-0025",
+        "HIG-INPUTS-GESTURES-0026",
+        "HIG-INPUTS-GESTURES-0027",
+        "HIG-INPUTS-GESTURES-0028",
+        "HIG-INPUTS-GESTURES-0029",
+        "HIG-INPUTS-GESTURES-0030",
+        "HIG-INPUTS-GESTURES-0031",
+        "HIG-INPUTS-GESTURES-0032",
+        "HIG-INPUTS-GESTURES-0033",
+        "HIG-INPUTS-GESTURES-0034"
+      ],
+      "review_note": "Reviewed cross-platform, iOS, iPadOS, visionOS, and watchOS gesture behavior; recovered seventeen omitted atomic rules and refreshed a changed page hash."
     }
   ],
   "rules": {
+    "HIG-INPUTS-GESTURES-0001": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"73740bbe184b4e9557de33a0c76f2baba9705ffc05dbba18ab35bd39063178e6","section_path":["Gestures","Best practices"]},
+      "title": "Offer multiple interaction methods",
+      "statement": {"en":"Give people more than one way to interact with the app.","ja":"アプリを操作する方法を複数提供する。"},
+      "conditions": ["Alternative inputs can include voice, keyboard, and Switch Control."],
+      "review_note": "Recorded the accessibility purpose and stated alternative input examples."
+    },
+    "HIG-INPUTS-GESTURES-0002": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"0b1591020325b68ae440e2b3413dd961102e48b5e5d696ec171ae0ee7330ae19","section_path":["Gestures","Custom gestures"]},
+      "title": "Make custom gestures easy to learn",
+      "statement": {"en":"Make custom gestures easy for people to learn and perform.","ja":"custom gestureを学びやすく実行しやすいものにする。"},
+      "conditions": ["Offer timely learning moments using simple language and graphics."],
+      "review_note": "Separated learnability from the explicit real-use testing requirement."
+    },
+    "HIG-INPUTS-GESTURES-0003": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"583c155cd6066b472ca6fdc995f037e9cca2d985485b6f0b4303747424600aab","section_path":["Gestures","Custom gestures"]},
+      "title": "Keep standard alternatives to shortcut gestures",
+      "statement": {"en":"Use shortcut gestures to supplement standard gestures, not replace them.","ja":"shortcut gestureはstandard gestureの補助として使い、置き換えない。"},
+      "conditions": ["Keep simple, familiar navigation and action paths even when they require extra taps."],
+      "review_note": "Recorded the persistent familiar path that must remain alongside a shortcut."
+    },
+    "HIG-INPUTS-GESTURES-0004": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"e40455bf79688710a6966ed236e1f4b74b31ea1d5363910e5153c66b864bf4e6","section_path":["Gestures","Custom gestures"]},
+      "title": "Avoid conflicts with system UI gestures",
+      "statement": {"en":"Avoid custom gestures that conflict with gestures for accessing system UI.","ja":"system UIへアクセスするgestureと競合するcustom gestureを避ける。"},
+      "exceptions": ["Specific games or immersive experiences can defer a system gesture where the platform permits it."],
+      "review_note": "Preserved the system-consistency default and the narrow deferral exception."
+    },
+    "HIG-INPUTS-GESTURES-0005": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"034449b904ba0c2a68469503398c781c3716f4786389ed5e7d75f09a041cdbe2","section_path":["Gestures","Platform considerations","iOS, iPadOS"]},
+      "title": "Consider simultaneous iOS and iPadOS gestures",
+      "statement": {"en":"Consider recognizing multiple iOS or iPadOS gestures simultaneously when doing so enhances the experience.","ja":"体験を高める場合は複数のiOSまたはiPadOS gestureの同時認識を検討する。"},
+      "conditions": ["Simultaneous gestures are generally more relevant to games with multiple onscreen controls than to nongame apps."],
+      "review_note": "Retained MAY and recorded the game-specific use case and nongame limitation."
+    },
+    "HIG-INPUTS-GESTURES-0006": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"9a1c33fefd5aeaa26024b050f1fe528a1ff9584d9bed607d6695ae9360299caf","section_path":["Gestures","Platform considerations","visionOS"]},
+      "title": "Support standard visionOS gestures wherever possible",
+      "statement": {"en":"Support standard visionOS gestures everywhere the experience can.","ja":"可能な場所ではstandard visionOS gestureをsupportする。"},
+      "conditions": ["Touch selects or activates; touch and hold opens a contextual menu; touch and drag moves an object.", "Double touch previews or selects a word; swipe reveals, dismisses, or scrolls.", "Two-hand pinch-and-drag zooms; circular two-hand pinch-and-drag rotates."],
+      "review_note": "Preserved the standard-gesture default and every direct-gesture table mapping."
+    },
+    "HIG-INPUTS-GESTURES-0007": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"137d81b60d38f79a9be491afabec329ceb60923cf965c11cd27b73444f5f3760","section_path":["Gestures","Platform considerations","visionOS"]},
+      "title": "Offer indirect and direct visionOS interactions",
+      "statement": {"en":"Offer both indirect and direct visionOS interactions when possible.","ja":"可能な場合はindirectとdirectの両方のvisionOS interactionを提供する。"},
+      "conditions": ["Prefer indirect gestures for UI and common components.", "Reserve direct and custom gestures for close-up objects or specific game and interactive motions."],
+      "review_note": "Recorded the two interaction categories and their intended contexts."
+    },
+    "HIG-INPUTS-GESTURES-0008": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"bf06801b593e599dd5f2154f961e1fe4ea289b85c563747059d716546d87fe78","section_path":["Gestures","Platform considerations","visionOS"]},
+      "title": "Avoid required body movements or positions",
+      "statement": {"en":"Avoid requiring a specific body movement or position for visionOS input.","ja":"visionOS入力に特定のbody movementやpositionを必須にしない。"},
+      "exceptions": ["When movement is required, consider alternative inputs that let people choose a workable method."],
+      "review_note": "Recorded disability, space, and environmental access constraints plus the alternative-input response."
+    },
+    "HIG-INPUTS-GESTURES-0009": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"4e01b6389808861da60d686727eec0eb5e6f64eb4914543041152a6f8f404745","section_path":["Gestures","Platform considerations","visionOS","Designing custom gestures in visionOS"]},
+      "title": "Prioritize comfort in custom visionOS gestures",
+      "statement": {"en":"Prioritize physical comfort when designing custom visionOS gestures.","ja":"custom visionOS gestureの設計では身体的なcomfortを優先する。"},
+      "conditions": ["Continually test ergonomics.", "Avoid sustained raised arms and repeated similar motions that can stress muscles or joints."],
+      "review_note": "Replaced the generic statement with its ergonomic testing and fatigue limits."
+    },
+    "HIG-INPUTS-GESTURES-0010": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"d41353d87ddc51357d97a520688dd617307a454e561c8e1056d3954a21ac605c","section_path":["Gestures","Platform considerations","visionOS","Designing custom gestures in visionOS"]},
+      "title": "Avoid hand-specific custom visionOS gestures",
+      "statement": {"en":"Avoid custom visionOS gestures that require a specific hand.","ja":"特定の手を必須とするcustom visionOS gestureを避ける。"},
+      "conditions": ["Hand-specific gestures can increase cognitive load and exclude people with hand dominance or limb differences."],
+      "review_note": "Recorded both cognitive and inclusive-design reasons for the restriction."
+    },
+    "HIG-INPUTS-GESTURES-0011": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"874943f7b6bbac02e3815fc22a57a54b6700c88d81f667974f03ecc245f7fe24","section_path":["Gestures","Platform considerations","visionOS","Working with system overlays in visionOS"]},
+      "title": "Consider deferring visionOS system overlays in immersive experiences",
+      "statement": {"en":"Consider deferring system-overlay behavior in an immersive visionOS app or game.","ja":"immersiveなvisionOS appやgameではsystem overlay behaviorのdeferを検討する。"},
+      "conditions": ["The app runs in a Full Space and preserving immersion justifies requiring a tap to reveal the Home indicator."],
+      "review_note": "Retained MAY and recorded the Full Space, immersion, and tap-to-reveal conditions."
+    },
+    "HIG-INPUTS-GESTURES-0012": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"bc08ca79c9c9d3e160b207047bfc905e86c5cdd11378f1e542957e36b27d2f18","section_path":["Gestures","Platform considerations","visionOS","Working with system overlays in visionOS"]},
+      "title": "Use caution with rolling-hand visionOS gestures",
+      "statement": {"en":"Use caution with custom visionOS gestures that roll the hand, wrist, or forearm.","ja":"hand、wrist、forearmを回すcustom visionOS gestureは慎重に設計する。"},
+      "conditions": ["The rolling motion is reserved for system overlays.", "Test conflicts because overlays appear above app content and the app cannot detect their visibility."],
+      "review_note": "Recorded the reserved motion, overlay precedence, app visibility limit, and testing need."
+    },
+    "HIG-INPUTS-GESTURES-0013": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"924b9c412e30bf73ae25a95c7ad6b51a40562247eb043f30d5c26da79d786dc3","section_path":["Gestures","Platform considerations","watchOS","Double tap"]},
+      "title": "Avoid watchOS primary actions in scrolling views",
+      "statement": {"en":"Avoid setting a watchOS primary action in a list, scroll view, or vertical tab view.","ja":"list、scroll view、vertical tab viewにwatchOS primary actionを設定しない。"},
+      "conditions": ["Preserve the double-tap navigation behavior people expect in these views."],
+      "review_note": "Recorded every conflicting view type and the double-tap navigation rationale."
+    },
+    "HIG-INPUTS-GESTURES-0014": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"70f87f85703e17b25b6e8604fac4f83845bde5d80a14becd8da5937ffe5ba322","section_path":["Gestures","Platform considerations","watchOS","Double tap"]},
+      "title": "Choose the most-used watchOS button as the primary action",
+      "statement": {"en":"In a nonscrolling watchOS view, choose the most commonly used button as the primary action.","ja":"scrollしないwatchOS viewでは最もよく使うbuttonをprimary actionにする。"},
+      "conditions": ["For media controls, play and pause is a representative primary action."],
+      "review_note": "Recorded the nonscrolling condition, frequency criterion, and media example."
+    },
+    "HIG-INPUTS-GESTURES-0015": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"49bdc29fb8ccda4317e9e13a74d68b4a8686c01c51eb2e552dd090e29d93b127","section_path":["Gestures","Platform considerations","visionOS","Designing custom gestures in visionOS"]},
+      "title": "Carefully consider complex custom visionOS gestures",
+      "statement": {"en":"Carefully consider custom visionOS gestures that require multiple fingers or both hands.","ja":"複数の指や両手を必要とするcustom visionOS gestureは慎重に検討する。"},
+      "exceptions": ["When a complex gesture is required, consider an alternative that needs less movement."],
+      "review_note": "Retained MAY and recorded hand availability and the lower-movement alternative."
+    },
+    "HIG-INPUTS-GESTURES-0016": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"15c4ab91eaf867da541d48b6b2d45e110a9c04c1c76e492f9ce50ca74a9b8168","section_path":["Gestures","Platform considerations","visionOS","Working with system overlays in visionOS"]},
+      "title": "Reserve hand-adjacent space for visionOS system overlays",
+      "statement": {"en":"Reserve the area around a person’s hand for visionOS system overlays and their gestures.","ja":"利用者の手の周囲をvisionOS system overlayとそのgesture用に確保する。"},
+      "conditions": ["When possible, do not anchor content to hands or wrists.", "Place necessary hand-anchored game content outside the immediate hand area and Home indicator."],
+      "review_note": "Recorded the reservation, preferred no-anchor behavior, and game placement exception."
+    },
+    "HIG-INPUTS-GESTURES-0017": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"4ffdab7a2cfedf33d276c8de08ac829c9852bef6a508b15c7481e5cb8f4d63db","section_path":["Gestures","Best practices"]},
+      "title": "Indicate unavailable gestures clearly",
+      "statement": {"en":"Clearly indicate when a gesture is unavailable and why it cannot complete.","ja":"gestureが利用できないことと完了できない理由を明確に示す。"},
+      "conditions": ["Communicate locked-object and unavailable-control states so failure does not resemble a frozen app or incorrect gesture."],
+      "review_note": "Recorded both failure examples and the confusion the feedback must prevent."
+    },
+    "HIG-INPUTS-GESTURES-0018": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"5d938ba9ee08bb6fe2ef900d2f7bba7f0ea6bb6e82fe5948a1d7ed880da91fa1","section_path":["Gestures","Best practices"]},
+      "title": "Avoid assuming a specific gesture is usable",
+      "statement": {"en":"Avoid assuming every person can use a specific gesture for a task.","ja":"すべての利用者が特定のgestureでtaskを実行できると仮定しない。"},
+      "conditions": ["Support alternatives such as voice, keyboard, or Switch Control."],
+      "review_note": "Recovered the explicit accessibility restriction as an atomic AVOID rule."
+    },
+    "HIG-INPUTS-GESTURES-0019": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"cd76155edea277f7f4aa9cc06f687a26bfa3063b8d0005017ecb101ad12869ba","section_path":["Gestures","Best practices"]},
+      "title": "Respond to gestures in familiar ways",
+      "statement": {"en":"Respond to gestures in ways that remain consistent with familiar platform expectations.","ja":"gestureには使い慣れたplatformの期待と一貫する形で応答する。"},
+      "conditions": ["For example, tap ordinarily activates or selects an object."],
+      "review_note": "Recovered the omitted lead and its representative tap behavior."
+    },
+    "HIG-INPUTS-GESTURES-0020": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"cd76155edea277f7f4aa9cc06f687a26bfa3063b8d0005017ecb101ad12869ba","section_path":["Gestures","Best practices"]},
+      "title": "Avoid familiar gestures for unique app actions",
+      "statement": {"en":"Avoid assigning a familiar gesture such as tap or swipe to an app-unique action.","ja":"tapやswipeなど使い慣れたgestureをapp固有のactionに割り当てない。"},
+      "review_note": "Recovered the first expectation-conflict restriction as a separate AVOID rule."
+    },
+    "HIG-INPUTS-GESTURES-0021": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"cd76155edea277f7f4aa9cc06f687a26bfa3063b8d0005017ecb101ad12869ba","section_path":["Gestures","Best practices"]},
+      "title": "Avoid unique gestures for standard actions",
+      "statement": {"en":"Avoid requiring an app-unique gesture for a standard action such as activation or scrolling.","ja":"activateやscrollなどstandard actionにapp固有のgestureを必須にしない。"},
+      "review_note": "Recovered the inverse expectation-conflict restriction as a separate AVOID rule."
+    },
+    "HIG-INPUTS-GESTURES-0022": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"5cbcdce2295c6b709cc6383f7ffd08608ce3a6c23bb6eea89091692fdc32322a","section_path":["Gestures","Best practices"]},
+      "title": "Provide predictive gesture feedback",
+      "statement": {"en":"Provide feedback that helps people predict a gesture’s result and required movement.","ja":"gestureの結果と必要なmovementを予測できるfeedbackを提供する。"},
+      "conditions": ["When needed, communicate both the extent and type of movement required to finish the action."],
+      "review_note": "Recovered the ongoing feedback requirement and both movement dimensions."
+    },
+    "HIG-INPUTS-GESTURES-0023": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"5ef47be0714eaa04997e99033d941695a95b044a98985e63d3eeb409c8ca444c","section_path":["Gestures","Custom gestures"]},
+      "title": "Make custom gestures discoverable",
+      "statement": {"en":"Make every custom gesture discoverable.","ja":"すべてのcustom gestureを発見可能にする。"},
+      "conditions": ["The app implements a custom gesture."],
+      "review_note": "Recovered and retained the explicit make sure requirement from the custom-gesture checklist."
+    },
+    "HIG-INPUTS-GESTURES-0024": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"5ef47be0714eaa04997e99033d941695a95b044a98985e63d3eeb409c8ca444c","section_path":["Gestures","Custom gestures"]},
+      "title": "Make custom gestures straightforward",
+      "statement": {"en":"Make every custom gesture straightforward to perform.","ja":"すべてのcustom gestureを簡単に実行できるものにする。"},
+      "conditions": ["The app implements a custom gesture."],
+      "review_note": "Recovered and retained the explicit make sure performance requirement."
+    },
+    "HIG-INPUTS-GESTURES-0025": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"5ef47be0714eaa04997e99033d941695a95b044a98985e63d3eeb409c8ca444c","section_path":["Gestures","Custom gestures"]},
+      "title": "Keep custom gestures distinct",
+      "statement": {"en":"Make every custom gesture distinct from other gestures.","ja":"各custom gestureを他のgestureと明確に区別できるものにする。"},
+      "conditions": ["The app implements a custom gesture."],
+      "review_note": "Recovered and retained the explicit make sure distinctness requirement."
+    },
+    "HIG-INPUTS-GESTURES-0026": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"5ef47be0714eaa04997e99033d941695a95b044a98985e63d3eeb409c8ca444c","section_path":["Gestures","Custom gestures"]},
+      "title": "Provide alternatives to custom gestures for important actions",
+      "statement": {"en":"Provide a noncustom-gesture way to perform every important action.","ja":"すべての重要なactionにcustom gesture以外の実行方法を提供する。"},
+      "conditions": ["A custom gesture performs an important app or game action."],
+      "review_note": "Recovered and retained the explicit make sure alternative-path requirement."
+    },
+    "HIG-INPUTS-GESTURES-0027": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"19327dcad8449e5c2dc64258660bf5f97adc0e525031c47183d640ca9bc967e5","section_path":["Gestures","Custom gestures"]},
+      "title": "Test custom gestures in real use",
+      "statement": {"en":"Test custom-gesture interactions in real use scenarios.","ja":"custom gesture interactionを実際の利用scenarioでtestする。"},
+      "review_note": "Recovered and retained the explicit make sure testing requirement."
+    },
+    "HIG-INPUTS-GESTURES-0028": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"680bf9f82529c9ff2bf2e37980795beed7ccf1ec2e9405a6c820dc8af9d4b04f","section_path":["Gestures","Platform considerations","iOS, iPadOS"]},
+      "title": "Support expected iOS and iPadOS gesture mappings",
+      "statement": {"en":"Support the documented additional gesture mappings on iOS and iPadOS.","ja":"iOSとiPadOSで記載された追加gesture mappingをsupportする。"},
+      "conditions": ["Three-finger swipe performs undo or redo; three-finger pinch copies or pastes.", "Four-finger swipe switches apps on iPadOS only; shake initiates undo or redo."],
+      "review_note": "Recovered a rule for the platform table and preserved all four gesture-action rows."
+    },
+    "HIG-INPUTS-GESTURES-0029": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"c9093b1a40216847db4b2c1ed8e2f5b80035735b18b728f7923e9a67b0dc59af","section_path":["Gestures","Platform considerations","visionOS","Designing custom gestures in visionOS"]},
+      "title": "Consider a custom visionOS gesture only for an unsupported interaction",
+      "statement": {"en":"Consider a custom visionOS gesture only when no existing system gesture provides the interaction.","ja":"既存のsystem gestureでinteractionを提供できない場合にだけcustom visionOS gestureを検討する。"},
+      "review_note": "Recovered the conditional consider clause and retained MAY."
+    },
+    "HIG-INPUTS-GESTURES-0030": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"c9093b1a40216847db4b2c1ed8e2f5b80035735b18b728f7923e9a67b0dc59af","section_path":["Gestures","Platform considerations","visionOS","Designing custom gestures in visionOS"]},
+      "title": "Run custom visionOS gestures only in a Full Space",
+      "statement": {"en":"Run an interaction that requires a custom visionOS gesture only in a Full Space.","ja":"custom visionOS gestureが必要なinteractionはFull Space内だけで実行する。"},
+      "conditions": ["The interaction cannot use an existing system gesture."],
+      "review_note": "Recovered and retained the explicit app-needs-to-be-running platform prerequisite."
+    },
+    "HIG-INPUTS-GESTURES-0031": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"c9093b1a40216847db4b2c1ed8e2f5b80035735b18b728f7923e9a67b0dc59af","section_path":["Gestures","Platform considerations","visionOS","Designing custom gestures in visionOS"]},
+      "title": "Request permission before accessing hand information",
+      "statement": {"en":"Request a person’s permission before accessing hand information for a custom visionOS gesture.","ja":"custom visionOS gesture用のhand informationへアクセスする前に利用者のpermissionを求める。"},
+      "conditions": ["The app implements a custom visionOS gesture that uses hand information."],
+      "review_note": "Recovered and retained the explicit must-request privacy requirement."
+    },
+    "HIG-INPUTS-GESTURES-0032": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"459be5e35692c45c09a6fb4ff82c6e1b715d309109332d8ee326479001516fcd","section_path":["Gestures","Specifications","Standard gestures"]},
+      "title": "Support documented standard gesture mappings",
+      "statement": {"en":"Support each standard gesture on its documented Apple platforms with its familiar action.","ja":"各standard gestureを記載されたApple platformで使い慣れたactionとしてsupportする。"},
+      "conditions": ["Tap activates or selects; swipe reveals, dismisses, or scrolls; drag moves a UI element.", "Touch or pinch and hold reveals more controls; double tap zooms or performs the supported Apple Watch primary action.", "Zoom magnifies content; rotate turns a selected item, on the platforms listed by the source table."],
+      "review_note": "Recovered a specification rule and preserved every standard gesture, platform scope, and common action row."
+    },
+    "HIG-INPUTS-GESTURES-0033": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"5cbcdce2295c6b709cc6383f7ffd08608ce3a6c23bb6eea89091692fdc32322a","section_path":["Gestures","Best practices"]},
+      "title": "Respond to gestures promptly",
+      "statement": {"en":"Respond to gestures as promptly as possible.","ja":"gestureへ可能な限り迅速に応答する。"},
+      "conditions": ["Immediate feedback supports direct manipulation."],
+      "review_note": "Recovered the omitted responsiveness lead separately from predictive feedback."
+    },
+    "HIG-INPUTS-GESTURES-0034": {
+      "source": {"source_hash":"37f86c6c91d2741fc6ed37572f4c5dbf853239d04716aef4f05c735f08624ce5","source_sentence_hash":"5ef47be0714eaa04997e99033d941695a95b044a98985e63d3eeb409c8ca444c","section_path":["Gestures","Custom gestures"]},
+      "title": "Use custom gestures only when necessary",
+      "statement": {"en":"Use a custom gesture only when a frequent specialized task lacks an existing gesture.","ja":"既存gestureで対応できない頻繁なspecialized taskにだけcustom gestureを使う。"},
+      "conditions": ["Games and drawing apps are representative specialized contexts."],
+      "review_note": "Recovered the omitted necessity lead and preserved its frequency and no-existing-gesture tests."
+    },
     "HIG-INPUTS-FOCUS-AND-SELECTION-0001": {
       "source": {"source_hash":"4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6","source_sentence_hash":"396dc62acf5577528d7528a7c7fabc248417214135ffd2e03da7eb90089a99ac","section_path":["Focus and selection","Best practices"]},
       "title": "Avoid moving focus without user interaction",

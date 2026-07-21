@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 496
-- Reviewed batches: 43
+- Reviewed rules: 530
+- Reviewed batches: 44
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:38:47Z
+- Reviewed at: 2026-07-21T14:45:29Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -497,6 +497,40 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-FOCUS-AND-SELECTION-0014 · high — Recovered and retained the explicit need requirement for larger focused-size assets. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0015 · high — Recovered and retained the explicit make sure spacing requirement for enlarged focus. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0016 · high — Recovered the visionOS platform distinction documented in the page note. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- HIG-INPUTS-GESTURES-0001 · high — Recorded the accessibility purpose and stated alternative input examples. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0002 · high — Separated learnability from the explicit real-use testing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0003 · high — Recorded the persistent familiar path that must remain alongside a shortcut. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0004 · high — Preserved the system-consistency default and the narrow deferral exception. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0005 · high — Retained MAY and recorded the game-specific use case and nongame limitation. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0006 · high — Preserved the standard-gesture default and every direct-gesture table mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0007 · high — Recorded the two interaction categories and their intended contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0008 · high — Recorded disability, space, and environmental access constraints plus the alternative-input response. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0009 · high — Replaced the generic statement with its ergonomic testing and fatigue limits. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0010 · high — Recorded both cognitive and inclusive-design reasons for the restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0011 · high — Retained MAY and recorded the Full Space, immersion, and tap-to-reveal conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0012 · high — Recorded the reserved motion, overlay precedence, app visibility limit, and testing need. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0013 · high — Recorded every conflicting view type and the double-tap navigation rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0014 · high — Recorded the nonscrolling condition, frequency criterion, and media example. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0015 · high — Retained MAY and recorded hand availability and the lower-movement alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0016 · high — Recorded the reservation, preferred no-anchor behavior, and game placement exception. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0017 · high — Recorded both failure examples and the confusion the feedback must prevent. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0018 · high — Recovered the explicit accessibility restriction as an atomic AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0019 · high — Recovered the omitted lead and its representative tap behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0020 · high — Recovered the first expectation-conflict restriction as a separate AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0021 · high — Recovered the inverse expectation-conflict restriction as a separate AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0022 · high — Recovered the ongoing feedback requirement and both movement dimensions. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0023 · high — Recovered and retained the explicit make sure requirement from the custom-gesture checklist. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0024 · high — Recovered and retained the explicit make sure performance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0025 · high — Recovered and retained the explicit make sure distinctness requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0026 · high — Recovered and retained the explicit make sure alternative-path requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0027 · high — Recovered and retained the explicit make sure testing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0028 · high — Recovered a rule for the platform table and preserved all four gesture-action rows. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0029 · high — Recovered the conditional consider clause and retained MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0030 · high — Recovered and retained the explicit app-needs-to-be-running platform prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0031 · high — Recovered and retained the explicit must-request privacy requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0032 · high — Recovered a specification rule and preserved every standard gesture, platform scope, and common action row. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0033 · high — Recovered the omitted responsiveness lead separately from predictive feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- HIG-INPUTS-GESTURES-0034 · high — Recovered the omitted necessity lead and preserved its frequency and no-existing-gesture tests. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

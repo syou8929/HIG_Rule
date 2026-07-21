@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T14:42:47.265Z. 1960 active rules; 3 deprecated rules.
+Generated 2026-07-21T14:51:21.146Z. 1977 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1634,23 +1634,40 @@ Generated 2026-07-21T14:42:47.265Z. 1960 active rules; 3 deprecated rules.
 - **HIG-INPUTS-GAME-CONTROLS-0013 · SHOULD · low** — Determine whether it makes sense to display virtual controls on top of game content explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 ### gestures
 
-- **HIG-INPUTS-GESTURES-0001 · SHOULD · low** — Apply the documented Gestures guidance to give people more than one way to interact with your app. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0002 · SHOULD · low** — Apply the documented Gestures guidance to make custom gestures easy to learn. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0003 · SHOULD · low** — Choose or apply shortcut gestures to supplement standard gestures, not replace them in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0004 · AVOID · low** — Exclude conflicting with gestures that access system UI from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0005 · MAY · low** — Evaluate whether allowing simultaneous recognition of multiple gestures if it enhances the experience is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0006 · SHOULD · low** — Ensure the experience accommodates standard gestures everywhere you can. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0007 · SHOULD · low** — Make both indirect and direct interactions when possible available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0008 · AVOID · low** — Exclude requiring specific body movements or positions for input from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0009 · SHOULD · low** — Apply the documented Gestures guidance to prioritize comfort. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0010 · AVOID · low** — Exclude custom gestures that require using a specific hand from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0011 · MAY · low** — Evaluate whether deferring the system overlay behavior when designing an immersive app or game is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0012 · SHOULD · low** — Choose or apply caution when designing custom gestures that involve a rolling motion of the hand, wrist, and forearm in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0013 · AVOID · low** — Exclude setting a primary action in views with lists, scroll views, or vertical tabs from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0014 · SHOULD · low** — Apply the documented Gestures guidance to choose the button that people use most commonly as the primary action in a view. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0015 · MAY · low** — Evaluate whether complex custom gestures that involve multiple fingers or both hands is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0016 · SHOULD · low** — Reserve the area around a person’s hand for system overlays and their related gestures for the documented purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
-- **HIG-INPUTS-GESTURES-0017 · SHOULD · low** — Indicate when a gesture isn’t available. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0001 · SHOULD · high** — Give people more than one way to interact with the app. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0002 · SHOULD · high** — Make custom gestures easy for people to learn and perform. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0003 · SHOULD · high** — Use shortcut gestures to supplement standard gestures, not replace them. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0004 · AVOID · high** — Avoid custom gestures that conflict with gestures for accessing system UI. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0005 · MAY · high** — Consider recognizing multiple iOS or iPadOS gestures simultaneously when doing so enhances the experience. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0006 · SHOULD · high** — Support standard visionOS gestures everywhere the experience can. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0007 · SHOULD · high** — Offer both indirect and direct visionOS interactions when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0008 · AVOID · high** — Avoid requiring a specific body movement or position for visionOS input. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0009 · SHOULD · high** — Prioritize physical comfort when designing custom visionOS gestures. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0010 · AVOID · high** — Avoid custom visionOS gestures that require a specific hand. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0011 · MAY · high** — Consider deferring system-overlay behavior in an immersive visionOS app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0012 · SHOULD · high** — Use caution with custom visionOS gestures that roll the hand, wrist, or forearm. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0013 · AVOID · high** — Avoid setting a watchOS primary action in a list, scroll view, or vertical tab view. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0014 · SHOULD · high** — In a nonscrolling watchOS view, choose the most commonly used button as the primary action. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0015 · MAY · high** — Carefully consider custom visionOS gestures that require multiple fingers or both hands. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0016 · SHOULD · high** — Reserve the area around a person’s hand for visionOS system overlays and their gestures. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0017 · SHOULD · high** — Clearly indicate when a gesture is unavailable and why it cannot complete. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0018 · AVOID · high** — Avoid assuming every person can use a specific gesture for a task. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0019 · SHOULD · high** — Respond to gestures in ways that remain consistent with familiar platform expectations. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0020 · AVOID · high** — Avoid assigning a familiar gesture such as tap or swipe to an app-unique action. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0021 · AVOID · high** — Avoid requiring an app-unique gesture for a standard action such as activation or scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0022 · SHOULD · high** — Provide feedback that helps people predict a gesture’s result and required movement. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0023 · MUST · high** — Make every custom gesture discoverable. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0024 · MUST · high** — Make every custom gesture straightforward to perform. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0025 · MUST · high** — Make every custom gesture distinct from other gestures. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0026 · MUST · high** — Provide a noncustom-gesture way to perform every important action. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0027 · MUST · high** — Test custom-gesture interactions in real use scenarios. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0028 · SHOULD · high** — Support the documented additional gesture mappings on iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0029 · MAY · high** — Consider a custom visionOS gesture only when no existing system gesture provides the interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0030 · MUST · high** — Run an interaction that requires a custom visionOS gesture only in a Full Space. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0031 · MUST · high** — Request a person’s permission before accessing hand information for a custom visionOS gesture. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0032 · SHOULD · high** — Support each standard gesture on its documented Apple platforms with its familiar action. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0033 · SHOULD · high** — Respond to gestures as promptly as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0034 · SHOULD · high** — Use a custom gesture only when a frequent specialized task lacks an existing gesture. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 ### gyro-and-accelerometer
 
 - **HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001 · SHOULD · low** — Choose or apply motion data only to offer a tangible benefit to people in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
