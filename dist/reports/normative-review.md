@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 255
-- Retained MUST: 234
+- Reviewed rules: 256
+- Retained MUST: 235
 - Retained MUST_NOT: 21
 - Normative level changes: 29
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:43:22Z
+- Reviewed at: 2026-07-21T21:04:48Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -149,6 +149,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-PLAYING-VIDEO-0006 — Retained MUST after reconfirming the explicit ensure directive and the documented TV app transition behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0009 — Retained MUST after reconfirming the explicit make sure directive and the profile selection, switching, and fallback behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0030 — Recovered and retained MUST after confirming the explicit make sure directive and its one-or-two-step ceiling. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-SETTINGS-0012 — Recovered the explicit Always-based active-button requirement and separated it from adjacent toolbar customizability and visibility guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-TECHNOLOGIES-APP-CLIPS-0005 — Retained MUST after confirming the explicit Ensure directive and the bundled-assets, splash-screen, and immediate-launch context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0006 — Retained MUST after confirming the explicit Ensure directive and the code, asset, bandwidth, and download constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
@@ -389,6 +390,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-PLAYING-VIDEO-0009 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the explicit make sure directive and the profile selection, switching, and fallback behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure directive and its one-or-two-step ceiling. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PRINTING-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-SETTINGS-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always-based active-button requirement and separated it from adjacent toolbar customizability and visibility guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-WORKOUTS-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-TECHNOLOGIES-AIRPLAY-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))

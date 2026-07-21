@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1512
-- Reviewed batches: 101
+- Reviewed rules: 1524
+- Reviewed batches: 102
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:52:13Z
+- Reviewed at: 2026-07-21T21:04:48Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1316,6 +1316,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-VIDEO-0038 · high — Recovered the direct no-scaling instruction from the media-encoding paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0039 · high — Recovered relevance as a separate prohibition from the optional poster-image rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0040 · high — Recovered the background continuation separately from the playback-readiness rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-SETTINGS-0006 · high — Repaired the generic generated statement and narrowed portability to the macOS platform section. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0007 · high — Separated the toolbar-placement warning from the App-menu recommendation and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0008 · high — Recovered the separate menu location for document-scoped options. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0009 · high — Recovered both window-button states and their reopen and pane-sizing rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0010 · high — Separated toolbar customizability from visibility and selection-state requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0011 · high — Separated the persistent-visibility requirement from the shared toolbar sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0012 · high — Retained MUST from the explicit Always clause and kept it atomic from toolbar customizability and visibility. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0013 · high — Recovered the dynamic title-to-pane mapping and its multi-pane condition. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0014 · high — Separated the documented single-pane title from the multi-pane dynamic-title rule. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0015 · high — Recovered the last-viewed-pane restoration behavior and its repeat-adjustment rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0016 · high — Recorded the platform limitation conservatively as AVOID rather than promoting descriptive wording to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0017 · high — Recovered both source-provided in-app alternatives and preserved the conditional consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0001 · high — Recorded both documented prediction techniques and kept them conditional on their respective interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-UNDO-AND-REDO-0002 · high — Recorded visibility, repeated-action risk, and the offscreen-content recovery example. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-UNDO-AND-REDO-0003 · high — Recorded multi-level behavior and the source's logical-session boundary examples. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))

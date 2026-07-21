@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T20:59:58.424Z. 2507 active rules; 3 deprecated rules.
+Generated 2026-07-21T21:08:41.748Z. 2518 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -885,7 +885,18 @@ Generated 2026-07-21T20:59:58.424Z. 2507 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-SETTINGS-0003 · SHOULD · low** — Apply the documented Settings guidance to make settings available in ways people expect. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - **HIG-PATTERNS-SETTINGS-0004 · AVOID · low** — Exclude using settings to ask for setup information you can get in other ways from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - **HIG-PATTERNS-SETTINGS-0005 · SHOULD · low** — Apply the documented Settings guidance to respect people’s systemwide settings and avoid including redundant versions of them in your custom settings area. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
-- **HIG-PATTERNS-SETTINGS-0006 · SHOULD · low** — Apply the documented Settings guidance to include a settings item in the App menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0006 · SHOULD · high** — Include a Settings item in the macOS App menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0007 · AVOID · high** — Avoid adding settings buttons to a macOS window toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0008 · SHOULD · high** — Put document-level settings in the macOS File menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0009 · SHOULD · high** — Dim the minimize and maximize buttons in a macOS settings window. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0010 · SHOULD · high** — Use a noncustomizable toolbar in a macOS settings window. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0011 · SHOULD · high** — Keep the toolbar in a macOS settings window visible. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0012 · MUST · high** — Always indicate the active toolbar button in a macOS settings window. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0013 · SHOULD · high** — Match the macOS settings-window title to the currently visible pane. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0014 · SHOULD · high** — Use App Name Settings as the title of a single-pane macOS settings window. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0015 · SHOULD · high** — Reopen a macOS settings window to the most recently viewed pane. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0016 · AVOID · high** — Avoid relying on the system-provided watchOS Settings app for custom app or game settings. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0017 · MAY · high** — Consider exposing a small number of essential watchOS options at the bottom of the main view or in a More menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 ### undo-and-redo
 
 - **HIG-PATTERNS-UNDO-AND-REDO-0001 · SHOULD · high** — Help people predict the result of an undo or redo before they perform it. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))

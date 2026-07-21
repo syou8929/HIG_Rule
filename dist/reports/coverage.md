@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2507
+- Active atomic rules: 2518
 - Pages without rules: 16
-- Low-confidence rules: 918
-- Rules requiring human review: 918
-- Reference notes: 928
+- Low-confidence rules: 917
+- Rules requiring human review: 917
+- Reference notes: 927
 
 ## Rules by category
 
@@ -17,31 +17,31 @@
 - foundations: 346
 - getting-started: 100
 - inputs: 219
-- patterns: 349
+- patterns: 360
 - technologies: 635
 
 ## Normative levels
 
-- AVOID: 330
-- MAY: 301
-- MUST: 234
+- AVOID: 332
+- MAY: 302
+- MUST: 235
 - MUST_NOT: 21
-- SHOULD: 1621
+- SHOULD: 1628
 
 ## Rules by platform
 
 - carplay: 90
 - ios: 1661
 - ipados: 1624
-- macos: 1397
+- macos: 1406
 - tvos: 1099
 - visionos: 1449
-- watchos: 1152
+- watchos: 1154
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2441
+- manual: 2452
 
 ## Blocked pages
 
@@ -561,7 +561,6 @@ None.
 - HIG-PATTERNS-SETTINGS-0003
 - HIG-PATTERNS-SETTINGS-0004
 - HIG-PATTERNS-SETTINGS-0005
-- HIG-PATTERNS-SETTINGS-0006
 - HIG-PATTERNS-WORKOUTS-0001
 - HIG-PATTERNS-WORKOUTS-0002
 - HIG-PATTERNS-WORKOUTS-0003
@@ -1482,7 +1481,6 @@ None.
 - HIG-PATTERNS-SETTINGS-0003
 - HIG-PATTERNS-SETTINGS-0004
 - HIG-PATTERNS-SETTINGS-0005
-- HIG-PATTERNS-SETTINGS-0006
 - HIG-PATTERNS-WORKOUTS-0001
 - HIG-PATTERNS-WORKOUTS-0002
 - HIG-PATTERNS-WORKOUTS-0003
@@ -2590,7 +2588,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Change log — Section recorded for human review; no short atomic guidance lead was detected.

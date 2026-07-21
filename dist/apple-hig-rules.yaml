@@ -111509,7 +111509,7 @@
     section_path:
       - Settings
       - Best practices
-    retrieved_at: 2026-07-21T11:15:17.533Z
+    retrieved_at: 2026-07-21T21:04:48Z
     source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
     source_sentence_hash: 67c80a0a50c0ae4a3c7651cd2420dd55b2fffb069acafdadbdcbfb62ec7b98a5
     evidence_paraphrase: Apply the documented Settings guidance to aim to provide default settings that give the best experience to the largest number of people.
@@ -111573,7 +111573,7 @@
     section_path:
       - Settings
       - Best practices
-    retrieved_at: 2026-07-21T11:15:17.533Z
+    retrieved_at: 2026-07-21T21:04:48Z
     source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
     source_sentence_hash: 345a76f2c26b963e66914bfe2e25524673f0f6e05e37f68871b43a592eeefca5
     evidence_paraphrase: Apply the documented Settings guidance to minimize the number of settings you offer.
@@ -111637,7 +111637,7 @@
     section_path:
       - Settings
       - Best practices
-    retrieved_at: 2026-07-21T11:15:17.533Z
+    retrieved_at: 2026-07-21T21:04:48Z
     source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
     source_sentence_hash: 58082b2ebc617e8413be02ea241821d85b7d32c5ceafd3cf0806bb45354bace9
     evidence_paraphrase: Apply the documented Settings guidance to make settings available in ways people expect.
@@ -111701,7 +111701,7 @@
     section_path:
       - Settings
       - Best practices
-    retrieved_at: 2026-07-21T11:15:17.533Z
+    retrieved_at: 2026-07-21T21:04:48Z
     source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
     source_sentence_hash: 6e148e254071f90ea555207d1931603bb2818a1d50aa47c48b0294a7c6ea6461
     evidence_paraphrase: Exclude using settings to ask for setup information you can get in other ways from the applicable experience.
@@ -111765,7 +111765,7 @@
     section_path:
       - Settings
       - Best practices
-    retrieved_at: 2026-07-21T11:15:17.533Z
+    retrieved_at: 2026-07-21T21:04:48Z
     source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
     source_sentence_hash: b7019a6e027d90125870097be3cfffa51998e6df7dedbbb9e2811f3e44998603
     evidence_paraphrase: Apply the documented Settings guidance to respect people’s systemwide settings and avoid including redundant versions of them in your custom settings area.
@@ -111778,20 +111778,20 @@
   apple_native_rule: Apply the documented Settings guidance to respect people’s systemwide settings and avoid including redundant versions of them in your custom settings area.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-SETTINGS-0006
-  title: Include a settings item in the App menu
+  title: Include a Settings item in the macOS App menu
   category: patterns
   topic: settings
   subtopic: macos
   statement:
-    en: Apply the documented Settings guidance to include a settings item in the App menu.
-    ja: 「Settings」において「Include a settings item in the App menu」の指針を適用する。
+    en: Include a Settings item in the macOS App menu.
+    ja: macOSのApp menuにSettings項目を含める。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
-    portability: apple-platform
+    portability: platform-specific
     platforms:
       - macos
     devices:
@@ -111799,7 +111799,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Choosing the item opens the app's or game's custom settings window.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
@@ -111807,7 +111807,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Settings guidance to include a settings item in the App menu.” in the documented Settings context?
+      - Does the design satisfy “Include a Settings item in the macOS App menu.” in the documented Settings context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -111820,10 +111820,10 @@
       - Settings
       - Platform considerations
       - macOS
-    retrieved_at: 2026-07-21T11:15:17.533Z
+    retrieved_at: 2026-07-21T21:04:48Z
     source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
     source_sentence_hash: 9cea21a79f2e1b22a845876c3603d3e859d1d7d27b4e1ddcc11e364345d90e73
-    evidence_paraphrase: Apply the documented Settings guidance to include a settings item in the App menu.
+    evidence_paraphrase: Include a Settings item in the macOS App menu.
   tags:
     - patterns
     - settings
@@ -111831,7 +111831,624 @@
     - macos
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Settings guidance to include a settings item in the App menu.
+  apple_native_rule: Include a Settings item in the macOS App menu.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0007
+  title: Avoid settings buttons in macOS window toolbars
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Avoid adding settings buttons to a macOS window toolbar.
+    ja: macOS windowのtoolbarにsettings buttonを追加しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Reserve toolbar space for essential commands people use frequently.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid adding settings buttons to a macOS window toolbar.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 61e2ee24788be042c4f350fc5d46d83adfb9bfaf1b8ac5bb70b78ee0db094cc0
+    evidence_paraphrase: Avoid adding settings buttons to a macOS window toolbar.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid adding settings buttons to a macOS window toolbar.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0008
+  title: Put document-level settings in the macOS File menu
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Put document-level settings in the macOS File menu.
+    ja: document-levelのsettingはmacOSのFile menuに置く。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The options affect the current document rather than the entire app.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Put document-level settings in the macOS File menu.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 61e2ee24788be042c4f350fc5d46d83adfb9bfaf1b8ac5bb70b78ee0db094cc0
+    evidence_paraphrase: Put document-level settings in the macOS File menu.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Put document-level settings in the macOS File menu.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0009
+  title: Dim macOS settings-window minimize and maximize buttons
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Dim the minimize and maximize buttons in a macOS settings window.
+    ja: macOS settings windowのminimize buttonとmaximize buttonをdim表示する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The standard keyboard command can quickly reopen the window.
+    - The window already accommodates the current pane's size.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Dim the minimize and maximize buttons in a macOS settings window.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: f791a9a677875ecb0068dbea5fac2ae57eb9f2d7f4a38871d4bc0a50e81e40e6
+    evidence_paraphrase: Dim the minimize and maximize buttons in a macOS settings window.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Dim the minimize and maximize buttons in a macOS settings window.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0010
+  title: Use a noncustomizable macOS settings toolbar
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Use a noncustomizable toolbar in a macOS settings window.
+    ja: macOS settings windowではcustomize不可のtoolbarを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The toolbar identifies customization areas and supports navigation among them.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use a noncustomizable toolbar in a macOS settings window.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 6c5bcbed325ff2a9412a9c1e1ce607b4f98804ab1dabde7cb8d89e69cca98163
+    evidence_paraphrase: Use a noncustomizable toolbar in a macOS settings window.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use a noncustomizable toolbar in a macOS settings window.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0011
+  title: Keep the macOS settings toolbar visible
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Keep the toolbar in a macOS settings window visible.
+    ja: macOS settings windowのtoolbarを表示したままにする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - A stable interface helps people find settings areas.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep the toolbar in a macOS settings window visible.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 6c5bcbed325ff2a9412a9c1e1ce607b4f98804ab1dabde7cb8d89e69cca98163
+    evidence_paraphrase: Keep the toolbar in a macOS settings window visible.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Keep the toolbar in a macOS settings window visible.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0012
+  title: Always indicate the active macOS settings toolbar button
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Always indicate the active toolbar button in a macOS settings window.
+    ja: macOS settings windowではactiveなtoolbar buttonを常に示す。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The settings window uses a toolbar to switch among customization areas.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Always indicate the active toolbar button in a macOS settings window.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 6c5bcbed325ff2a9412a9c1e1ce607b4f98804ab1dabde7cb8d89e69cca98163
+    evidence_paraphrase: Always indicate the active toolbar button in a macOS settings window.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Always indicate the active toolbar button in a macOS settings window.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0013
+  title: Match the macOS settings-window title to the current pane
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Match the macOS settings-window title to the currently visible pane.
+    ja: macOS settings windowのtitleを現在表示中のpaneに合わせる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The settings window contains multiple panes.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Match the macOS settings-window title to the currently visible pane.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 19478db0b11733cd9c5386e553f2283b3ab3c8ef5cafe443b91f8a5d017a70c0
+    evidence_paraphrase: Match the macOS settings-window title to the currently visible pane.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Match the macOS settings-window title to the currently visible pane.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0014
+  title: Use App Name Settings for a single-pane settings window
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Use App Name Settings as the title of a single-pane macOS settings window.
+    ja: single-paneのmacOS settings windowにはApp Name Settingsというtitleを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The settings window doesn't contain multiple panes.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use App Name Settings as the title of a single-pane macOS settings window.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 36a49bc371fe9a9d4dad60bc2311cc8371d70f236b88982e1d6d674891794191
+    evidence_paraphrase: Use App Name Settings as the title of a single-pane macOS settings window.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use App Name Settings as the title of a single-pane macOS settings window.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0015
+  title: Restore the most recently viewed macOS settings pane
+  category: patterns
+  topic: settings
+  subtopic: macos
+  statement:
+    en: Reopen a macOS settings window to the most recently viewed pane.
+    ja: macOS settings windowを直近に表示したpaneで再度開く。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - People may adjust related settings more than once.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Reopen a macOS settings window to the most recently viewed pane.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 0ef9f9643b84285f539aaffd581bdd44cd94a81e01f63645f1702f4a99346195
+    evidence_paraphrase: Reopen a macOS settings window to the most recently viewed pane.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Reopen a macOS settings window to the most recently viewed pane.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0016
+  title: Avoid relying on watchOS Settings for custom app settings
+  category: patterns
+  topic: settings
+  subtopic: watchos
+  statement:
+    en: Avoid relying on the system-provided watchOS Settings app for custom app or game settings.
+    ja: customなappまたはgameのsettingをsystem-providedのwatchOS Settings appに依存させない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - watchOS apps and games don't add custom settings to the system Settings app.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid relying on the system-provided watchOS Settings app for custom app or game settings.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 9288f61cbdb279907a516b965e456b75812181612e52c4ad0e93031af225a865
+    evidence_paraphrase: Avoid relying on the system-provided watchOS Settings app for custom app or game settings.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid relying on the system-provided watchOS Settings app for custom app or game settings.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-SETTINGS-0017
+  title: Consider in-app access to essential watchOS options
+  category: patterns
+  topic: settings
+  subtopic: watchos
+  statement:
+    en: Consider exposing a small number of essential watchOS options at the bottom of the main view or in a More menu.
+    ja: 少数のessentialなwatchOS optionをmain view下部またはMore menuで提供することを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Use the More menu alternative when people need to reconfigure objects.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Settings experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSettingsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider exposing a small number of essential watchOS options at the bottom of the main view or in a More menu.” in the documented Settings context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/settings
+    page_title: Settings
+    section_path:
+      - Settings
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T21:04:48Z
+    source_hash: b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105
+    source_sentence_hash: 9288f61cbdb279907a516b965e456b75812181612e52c4ad0e93031af225a865
+    evidence_paraphrase: Consider exposing a small number of essential watchOS options at the bottom of the main view or in a More menu.
+  tags:
+    - patterns
+    - settings
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider exposing a small number of essential watchOS options at the bottom of the main view or in a More menu.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-UNDO-AND-REDO-0001
   title: Make undo and redo outcomes predictable
