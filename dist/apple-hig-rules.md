@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:34:37.369Z. 2678 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:36:28.631Z. 2680 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1751,8 +1751,10 @@ Generated 2026-07-21T22:34:37.369Z. 2678 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-TOGGLES-0019 · SHOULD · high** — Prefer a macOS checkbox for one setting that can be on or off. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
 ### token-fields
 
-- **HIG-COMPONENTS-TOKEN-FIELDS-0001 · MAY · low** — Evaluate whether providing additional ways to convert text into tokens is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
-- **HIG-COMPONENTS-TOKEN-FIELDS-0002 · MAY · low** — Evaluate whether customizing the delay the system uses before showing suggested tokens is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
+- **HIG-COMPONENTS-TOKEN-FIELDS-0001 · MAY · high** — Consider additional shortcuts for converting text into tokens. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
+- **HIG-COMPONENTS-TOKEN-FIELDS-0002 · MAY · high** — Consider a comfortable delay before showing suggested tokens. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
+- **HIG-COMPONENTS-TOKEN-FIELDS-0003 · SHOULD · high** — Use a context menu to add useful token options or information. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
+- **HIG-COMPONENTS-TOKEN-FIELDS-0004 · AVOID · high** — Avoid using token fields outside macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
 ### toolbars
 
 - **HIG-COMPONENTS-TOOLBARS-0001 · SHOULD · low** — Apply the documented Toolbars guidance to choose items deliberately to avoid overcrowding. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))

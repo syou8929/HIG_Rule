@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1755
-- Reviewed batches: 117
+- Reviewed rules: 1759
+- Reviewed batches: 118
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:33:00Z
+- Reviewed at: 2026-07-21T22:35:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -554,6 +554,10 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-TOGGLES-0017 · high — Recovered the qualified prohibition and retained AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
 - HIG-COMPONENTS-TOGGLES-0018 · high — Recovered the omitted state-reflection lead and recorded the mixed-state condition. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
 - HIG-COMPONENTS-TOGGLES-0019 · high — Recovered the contextual Prefer lead and recorded the rare two-radio-button exception. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOKEN-FIELDS-0001 · high — Preserved Consider and separated the default behavior from optional shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
+- HIG-COMPONENTS-TOKEN-FIELDS-0002 · high — Recorded the typing-distraction condition and preserved optional delay customization. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
+- HIG-COMPONENTS-TOKEN-FIELDS-0003 · high — Recovered the missing Add-value lead and both documented menu-content types. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
+- HIG-COMPONENTS-TOKEN-FIELDS-0004 · high — Recorded the descriptive iOS, iPadOS, tvOS, visionOS, and watchOS limitations at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
 - HIG-COMPONENTS-TOOLBARS-0017 · high — Scoped the guidance to limited iOS toolbar space and recorded the More fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-TOOLBARS-0018 · high — Recorded the automatic large-to-standard transition described by the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-TOOLBARS-0019 · high — Retained MAY and recorded the small-area-count and content-width rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))

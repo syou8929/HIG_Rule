@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:33:00Z",
+  "reviewed_at": "2026-07-21T22:35:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2733,9 +2733,45 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/steppers", "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56"}],
       "rule_ids": ["HIG-COMPONENTS-STEPPERS-0003", "HIG-COMPONENTS-STEPPERS-0004"],
       "review_note": "Completed the macOS section, preserved the stable Shift-click MAY decision without promoting the ten-times example to a threshold, and recovered the watchOS and tvOS platform limitation at AVOID."
+    },
+    {
+      "id": "priority-4-token-fields-complete-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:35:00Z",
+      "review_method": "Rendered Apple HIG Token fields overview, best practices, and platform guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/token-fields", "source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96"}],
+      "rule_ids": ["HIG-COMPONENTS-TOKEN-FIELDS-0001", "HIG-COMPONENTS-TOKEN-FIELDS-0002", "HIG-COMPONENTS-TOKEN-FIELDS-0003", "HIG-COMPONENTS-TOKEN-FIELDS-0004"],
+      "review_note": "Completed the macOS-only page, preserved both optional conversion and suggestion-delay decisions, recovered the context-menu value rule, and recorded all unsupported platforms at AVOID."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-TOKEN-FIELDS-0001": {
+      "source": {"source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96", "source_sentence_hash": "9c75501bb2d1e1115bde0e8fcdc477168776a54e95ef77989b96072635900e4c", "section_path": ["Token fields", "Best practices"]},
+      "statement": {"en": "Consider additional shortcuts for converting text into tokens.", "ja": "textをtokenへ変換する追加shortcutを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Comma entry already performs the default conversion.", "Return is an example additional shortcut, not a required key binding."],
+      "review_note": "Preserved Consider and separated the default behavior from optional shortcuts."
+    },
+    "HIG-COMPONENTS-TOKEN-FIELDS-0002": {
+      "source": {"source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96", "source_sentence_hash": "f802bb0c25774d118cba1ce9e4c4e0af07813c0b07ae065b90771a873c806dff", "section_path": ["Token fields", "Best practices"]},
+      "statement": {"en": "Consider a comfortable delay before showing suggested tokens.", "ja": "suggested token表示前のcomfortableなdelayを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The app suggests tokens while people type.", "Adjust the default immediate presentation if it distracts from typing."],
+      "review_note": "Recorded the typing-distraction condition and preserved optional delay customization."
+    },
+    "HIG-COMPONENTS-TOKEN-FIELDS-0003": {
+      "source": {"source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96", "source_sentence_hash": "55c286aac0f3341dd94df83932fc0f3a5b57b8c2ac5178b9670edc127aa84083", "section_path": ["Token fields", "Best practices"]},
+      "statement": {"en": "Use a context menu to add useful token options or information.", "ja": "context menuでtokenに有用なoptionまたはinformationを追加する。"},
+      "review_note": "Recovered the missing Add-value lead and both documented menu-content types."
+    },
+    "HIG-COMPONENTS-TOKEN-FIELDS-0004": {
+      "source": {"source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96", "source_sentence_hash": "b38bd48758d804c1a01b9f46505088557a1874f93a3e4d63037dd18e5ba9c1e8", "section_path": ["Token fields", "Platform considerations"]},
+      "statement": {"en": "Avoid using token fields outside macOS.", "ja": "macOS以外でtoken fieldを使わない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["token-fields"], "modalities": []},
+      "conditions": ["Token fields are a macOS-only component."],
+      "review_note": "Recorded the descriptive iOS, iPadOS, tvOS, visionOS, and watchOS limitations at AVOID rather than MUST_NOT."
+    },
     "HIG-COMPONENTS-STEPPERS-0003": {
       "source": {"source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56", "source_sentence_hash": "f6b2a9aae7956301faec897918b80c3eaf2b54c18f030340c440688c1568d696", "section_path": ["Steppers", "Platform considerations", "macOS"]},
       "title": "Consider Shift-click for large macOS stepper ranges",

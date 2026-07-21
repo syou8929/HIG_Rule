@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2678
+- Active atomic rules: 2680
 - Pages without rules: 16
-- Low-confidence rules: 852
-- Rules requiring human review: 852
-- Reference notes: 907
+- Low-confidence rules: 850
+- Rules requiring human review: 850
+- Reference notes: 906
 
 ## Rules by category
 
-- components: 865
+- components: 867
 - foundations: 346
 - getting-started: 100
 - inputs: 219
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 362
+- AVOID: 363
 - MAY: 329
 - MUST: 269
 - MUST_NOT: 24
-- SHOULD: 1694
+- SHOULD: 1695
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1750
-- ipados: 1722
-- macos: 1436
-- tvos: 1116
-- visionos: 1471
-- watchos: 1184
+- ios: 1751
+- ipados: 1723
+- macos: 1437
+- tvos: 1117
+- visionos: 1472
+- watchos: 1185
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2608
+- manual: 2610
 
 ## Blocked pages
 
@@ -216,8 +216,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-COMPONENTS-TOKEN-FIELDS-0001
-- HIG-COMPONENTS-TOKEN-FIELDS-0002
 - HIG-COMPONENTS-TOOLBARS-0001
 - HIG-COMPONENTS-TOOLBARS-0002
 - HIG-COMPONENTS-TOOLBARS-0003
@@ -1071,8 +1069,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-COMPONENTS-TOKEN-FIELDS-0001
-- HIG-COMPONENTS-TOKEN-FIELDS-0002
 - HIG-COMPONENTS-TOOLBARS-0001
 - HIG-COMPONENTS-TOOLBARS-0002
 - HIG-COMPONENTS-TOOLBARS-0003
@@ -2543,7 +2539,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/toggles · Toggles > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/toggles · Toggles > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/toggles · Toggles > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/token-fields · Token fields > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/token-fields · Token fields > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/token-fields · Token fields > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/toolbars · Toolbars > Change log — Section recorded for human review; no short atomic guidance lead was detected.
