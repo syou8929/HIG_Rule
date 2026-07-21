@@ -24,6 +24,8 @@ test("keeps conditional strength conservative", () => {
   assert.equal(normative("Consider showing a label").normative_level, "MAY");
   assert.equal(normative("Carefully consider showing a label").normative_level, "MAY");
   assert.equal(normative("In general, avoid duplicating a control").normative_level, "AVOID");
+  assert.equal(normative("As much as possible, avoid duplicating a control").normative_level, "AVOID");
+  assert.equal(normative("For apps with tabs, consider adding shortcuts").normative_level, "MAY");
   assert.equal(normative("Prefer the standard control").normative_level, "SHOULD");
   assert.equal(normative("Never hide the recovery action").normative_level, "MUST_NOT");
 });
@@ -49,6 +51,13 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Refer to a panel by title", section_path: [], source_sentence_hash: "h".repeat(64), word_count: 6 }), true);
   assert.equal(isActionable({ text: "Define a clear scroll area", section_path: [], source_sentence_hash: "i".repeat(64), word_count: 5 }), true);
   assert.equal(isActionable({ text: "Present a sheet in a reasonable size", section_path: [], source_sentence_hash: "j".repeat(64), word_count: 7 }), true);
+  assert.equal(isActionable({ text: "Represent common actions consistently", section_path: [], source_sentence_hash: "k".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Determine the display order", section_path: [], source_sentence_hash: "l".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "As much as possible, support drag and drop", section_path: [], source_sentence_hash: "m".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Require one modifier key", section_path: [], source_sentence_hash: "n".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Reserve the setting for app-level options", section_path: [], source_sentence_hash: "o".repeat(64), word_count: 7 }), true);
+  assert.equal(isActionable({ text: "For apps with tabs, consider adding shortcuts", section_path: [], source_sentence_hash: "p".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Because the menu is hidden, ensure access", section_path: [], source_sentence_hash: "q".repeat(64), word_count: 7 }), true);
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 

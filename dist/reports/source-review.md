@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 200
-- Reviewed batches: 26
+- Reviewed rules: 226
+- Reviewed batches: 27
 - Official source only: yes
-- Reviewed at: 2026-07-21T12:25:19Z
+- Reviewed at: 2026-07-21T12:35:38Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -141,6 +141,32 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-TAB-VIEWS-0003 · high — Repaired generic generated wording and recorded label form and capitalization. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
 - HIG-COMPONENTS-TAB-VIEWS-0004 · high — Recorded the interaction-cost rationale and the many-pane exception. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
 - HIG-COMPONENTS-TAB-VIEWS-0005 · high — Preserved the source lead's more-than-six limit and recorded the earlier reconsideration threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
+- HIG-COMPONENTS-THE-MENU-BAR-0001 · high — Recorded the familiarity and system-provided behavior behind the recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0002 · high — Confirmed the explicit Always lead and recorded disable-instead-of-hide behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0003 · high — Recorded shortcut familiarity and the limit on custom shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0004 · high — Recorded scanability, limited menu-bar space, and the multiword capitalization fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0005 · high — Recorded both first position and the immediately following separator. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0006 · high — Preserved the even-if condition that the generated paraphrase obscured. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0007 · high — Confirmed the explicit Ensure lead and its state-dependent title behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0008 · high — Recorded discoverability, keyboard-shortcut, and Full Keyboard Access benefits. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0009 · high — Replaced the awkward generated Aim paraphrase while retaining SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0010 · high — Recorded the single-window condition and keyboard-access rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0011 · high — Retained optional strength and recorded the Format-menu exception. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0012 · high — Recorded the discoverability rationale and alternate-path requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0013 · high — Recorded the contextual-menu and Dock-menu discoverability tradeoff. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0014 · high — Recorded the iPad-specific touch-target and screen-size rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0015 · high — Retained optional strength and recorded system adaptation context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0016 · high — Kept SHOULD because the supporting prose explicitly permits a complexity exception. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0017 · high — Repaired the generated grammar and preserved explicit user choice. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0018 · high — Recorded both visibility and unpredictable-position risks. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0019 · high — Repaired the generated grammar and recorded the Dock-menu example. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0020 · high — Recovered the omitted actionable lead and recorded its system-icon consistency context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0021 · high — Recovered the omitted Determine lead and preserved the context-dependent placement decision. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0022 · high — Recovered the omitted qualified recommendation without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0023 · high — Recovered the omitted explicit Require lead and classified it as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0024 · high — Restored the truncated iPadOS lead and classified its explicit Ensure instruction as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0025 · high — Recovered the omitted Reserve lead and recorded the separate internal-preferences path. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- HIG-COMPONENTS-THE-MENU-BAR-0026 · high — Recovered the conditional Consider lead and retained MAY strength. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0001 · high — Recorded the platform-specific enlargement targets from the official Vision guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0002 · high — Recorded the official custom-type default and minimum size table for each supported platform. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0003 · high — Recorded the official WCAG-based contrast table and its Dark Mode and Increase Contrast conditions without treating it as a universal legal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
+Generated 2026-07-21T12:41:09.435Z. 1793 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -255,6 +255,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0022 · SHOULD · low** — Apply the documented Immersive experiences guidance to help people feel grounded. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0023 · SHOULD · low** — Apply the documented Immersive experiences guidance to minimize asset redundancy. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0024 · AVOID · high** — Avoid using a flat 360-degree image as a visionOS environment. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0025 · SHOULD · low** — Reserve immersion for meaningful moments and content for the documented purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 ### inclusion
 
 - **HIG-FOUNDATIONS-INCLUSION-0001 · MAY · medium** — Evaluate whether the tone of your copy from different perspectives is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))
@@ -316,6 +317,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-MOTION-0010 · MAY · low** — Evaluate whether giving people a stationary frame of reference is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0011 · AVOID · low** — Exclude showing objects that oscillate in a sustained way from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0012 · AVOID · high** — Avoid letting people rotate a virtual world in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0013 · AVOID · low** — Avoid displaying motion at the edges of a person’s field of view wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 ### privacy
 
 - **HIG-FOUNDATIONS-PRIVACY-0001 · SHOULD · medium** — Apply the documented Privacy guidance to be transparent about how your app collects and uses people’s data. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
@@ -402,6 +404,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-WRITING-0012 · SHOULD · low** — Apply the documented Writing guidance to choose the right delivery method. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 - **HIG-FOUNDATIONS-WRITING-0013 · SHOULD · low** — Maintain settings labels clear and simple. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 - **HIG-FOUNDATIONS-WRITING-0014 · SHOULD · low** — Present hints in text fields in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0015 · SHOULD · low** — Determine your app’s voice explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 
 ## patterns
 
@@ -437,12 +440,16 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-DRAG-AND-DROP-0013 · SHOULD · low** — Preserve people’s ability to drag selected content from an inactive window without first making the window active. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0014 · MAY · low** — Evaluate whether displaying a badge during multi-item drag operations is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0015 · MAY · low** — Evaluate whether changing the pointer appearance to indicate what will happen when people drop content is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0016 · SHOULD · low** — Support drag and drop throughout your app wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0017 · SHOULD · low** — Determine when dragging and dropping content within your app results in a move or a copy explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0018 · SHOULD · low** — Let people select and drag content with a single motion wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 ### entering-data
 
 - **HIG-PATTERNS-ENTERING-DATA-0001 · SHOULD · low** — Apply the documented Entering data guidance to be clear about the data you need. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - **HIG-PATTERNS-ENTERING-DATA-0002 · SHOULD · low** — Choose or apply a secure text-entry field when appropriate in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - **HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · medium** — Exclude prepopulate a password field from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - **HIG-PATTERNS-ENTERING-DATA-0004 · MAY · low** — Evaluate whether using an expansion tooltip to show the full version of clipped or truncated text in a field is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0005 · SHOULD · low** — Let people provide data by dragging and dropping it or by pasting it wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 ### feedback
 
 - **HIG-PATTERNS-FEEDBACK-0001 · MUST · medium** — Verify that all feedback is accessible. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
@@ -507,6 +514,8 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 
 - **HIG-PATTERNS-LOADING-0001 · SHOULD · low** — Present something as soon as possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - **HIG-PATTERNS-LOADING-0002 · SHOULD · low** — Preserve people’s ability to do other things in your app or game while they wait for content to load. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0003 · MAY · low** — When games, consider creating a custom loading view. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- **HIG-PATTERNS-LOADING-0004 · AVOID · low** — Avoid showing a loading indicator in your watchOS experience wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 ### managing-accounts
 
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · medium** — Identify the authentication method you offer in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
@@ -581,6 +590,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-PLAYING-AUDIO-0011 · MAY · low** — Evaluate whether defining a range of places from which your app sounds can originate is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0012 · MAY · low** — Evaluate whether varying sounds that people could perceive as repetitive over time is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0013 · SHOULD · low** — Choose or apply the recommended encoding values for media assets in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0014 · SHOULD · low** — Determine how to respond to audio-session interruptions explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 ### playing-haptics
 
 - **HIG-PATTERNS-PLAYING-HAPTICS-0001 · SHOULD · low** — Choose or apply system-provided haptic patterns according to their documented meanings in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
@@ -831,6 +841,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-CONTEXT-MENUS-0011 · MUST · medium** — Verify that that your preview looks good as it animates. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - **HIG-COMPONENTS-CONTEXT-MENUS-0012 · MAY · low** — Evaluate whether using a context menu instead of a panel or inspector window to present frequently used functionality is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - **HIG-COMPONENTS-CONTEXT-MENUS-0013 · AVOID · high** — Avoid making a visionOS context menu taller than its window. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0014 · SHOULD · low** — Represent menu item actions with familiar icons in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 ### controls
 
 - **HIG-COMPONENTS-CONTROLS-0001 · SHOULD · low** — Make controls for actions that provide the most benefit without having to launch your app available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
@@ -840,6 +851,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-CONTROLS-0005 · SHOULD · low** — Make hint text for the Action button available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 - **HIG-COMPONENTS-CONTROLS-0006 · SHOULD · low** — Choose or apply the same camera UI in your app and your camera experience in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 - **HIG-COMPONENTS-CONTROLS-0007 · SHOULD · low** — Make instructions for adding the control available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0008 · SHOULD · low** — Require authentication for actions that affect security. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 ### digit-entry-views
 
 - **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · SHOULD · low** — Choose or apply secure digit fields in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
@@ -964,6 +976,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-MENUS-0018 · SHOULD · low** — Apply the documented Menus guidance to choose a small or medium menu layout when it can help streamline people’s choices. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - **HIG-COMPONENTS-MENUS-0019 · SHOULD · low** — Favor displaying a menu near the content it controls when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - **HIG-COMPONENTS-MENUS-0020 · SHOULD · low** — Favor the subtle breakthrough effect in most cases when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- **HIG-COMPONENTS-MENUS-0021 · SHOULD · low** — Represent common actions consistently in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 ### notifications
 
 - **HIG-COMPONENTS-NOTIFICATIONS-0001 · SHOULD · low** — Make concise, informative notifications available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
@@ -1134,6 +1147,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0009 · MAY · high** — Consider spring loading for a macOS segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0010 · MAY · high** — Consider a split view for tvOS content-filtering screens. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0011 · AVOID · high** — Avoid placing other focusable elements near a tvOS segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0012 · SHOULD · low** — Use content with a similar size in each segment wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 ### sheets
 
 - **HIG-COMPONENTS-SHEETS-0001 · SHOULD · low** — Present only one sheet at a time from the main interface in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
@@ -1149,6 +1163,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-SHEETS-0011 · SHOULD · high** — Keep watchOS sheet interactions brief and occasional. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0012 · SHOULD · high** — Present a macOS sheet at a reasonable default size for its content. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0013 · SHOULD · high** — Present a visionOS sheet at a default size that preserves context. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0014 · MAY · low** — When complex or prolonged user flows, consider alternatives to sheets. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 ### sidebars
 
 - **HIG-COMPONENTS-SIDEBARS-0001 · MAY · low** — Evaluate whether using familiar symbols to represent items in the sidebar is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
@@ -1192,6 +1207,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 
 - **HIG-COMPONENTS-STEPPERS-0001 · SHOULD · low** — Apply the documented Steppers guidance to make the value that a stepper affects obvious. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
 - **HIG-COMPONENTS-STEPPERS-0002 · MAY · low** — Evaluate whether pairing a stepper with a text field when large value changes are likely is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
+- **HIG-COMPONENTS-STEPPERS-0003 · MAY · low** — When large value ranges, consider supporting Shift-click to change the value quickly. ([source](https://developer.apple.com/design/human-interface-guidelines/steppers))
 ### tab-bars
 
 - **HIG-COMPONENTS-TAB-BARS-0001 · SHOULD · low** — Choose or apply a tab bar to support navigation, not to provide actions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
@@ -1235,25 +1251,32 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-TEXT-VIEWS-0004 · SHOULD · low** — Present the appropriate keyboard type in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))
 ### the-menu-bar
 
-- **HIG-COMPONENTS-THE-MENU-BAR-0001 · SHOULD · low** — Ensure the experience accommodates the default system-defined menus and their ordering. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0002 · MUST · medium** — Show the same set of menu items in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0003 · SHOULD · low** — Ensure the experience accommodates the keyboard shortcuts defined for the standard menu items you include. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0004 · SHOULD · low** — Favor short, one-word menu titles when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0005 · SHOULD · low** — Present the About menu item first in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0006 · SHOULD · low** — Make a View menu even if your app supports only a subset of the standard view functions available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0007 · MUST · medium** — Verify that that each show/hide item title reflects the current state of the corresponding view. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0008 · SHOULD · low** — Make app-specific menus for custom commands available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0009 · SHOULD · low** — Apply the documented The menu bar guidance to aim to list app-specific menus in order from most to least general or commonly used. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0010 · SHOULD · low** — Make a Window menu even if your app has only one window available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0011 · MAY · low** — Evaluate whether including menu items for showing and hiding panels is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0012 · AVOID · low** — Exclude making a dynamic menu item the only way to accomplish a task from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0013 · SHOULD · low** — Choose or apply dynamic menu items primarily in menu bar menus in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0014 · MAY · low** — Evaluate whether grouping menu items into submenus to conserve vertical space is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0015 · MAY · low** — Evaluate whether using a symbol to represent your menu bar extra is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0016 · SHOULD · low** — Present a menu — not a popover — when people click your menu bar extra in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0017 · SHOULD · low** — Preserve people’s ability to — not your app — decide whether to put your menu bar extra in the menu bar. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0018 · AVOID · low** — Exclude relying on the presence of menu bar extras from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
-- **HIG-COMPONENTS-THE-MENU-BAR-0019 · MAY · low** — Evaluate whether exposing app-specific functionality in other ways, too is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0001 · SHOULD · high** — Preserve the default system-defined menus and their expected ordering. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0002 · MUST · high** — Keep the same menu items visible; disable unavailable actions instead of hiding them. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0003 · SHOULD · high** — Use standard keyboard shortcuts for every standard menu item the app includes. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0004 · SHOULD · high** — Prefer short, one-word menu titles. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0005 · SHOULD · high** — Place About first in the app menu and separate it from following items. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0006 · SHOULD · high** — Provide a View menu even when only some standard view functions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0007 · MUST · high** — Keep every show/hide menu title synchronized with the corresponding view's current visibility. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0008 · SHOULD · high** — List custom commands in app-specific menu bar menus. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0009 · SHOULD · high** — Order app-specific menus from most to least general or commonly used. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0010 · SHOULD · high** — Provide a Window menu even for a single-window app. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0011 · MAY · high** — Consider Window-menu items for showing and hiding app panels. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0012 · AVOID · high** — Avoid making a hidden dynamic menu item the only route to a task. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0013 · SHOULD · high** — Use dynamic menu items primarily in menu bar menus. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0014 · MAY · high** — Consider grouping related iPad menu items into submenus to conserve vertical space. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0015 · MAY · high** — Consider a symbol for a macOS menu bar extra. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0016 · SHOULD · high** — Prefer a menu over a popover when people click a macOS menu bar extra. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0017 · SHOULD · high** — Let people choose whether to add the app's macOS menu bar extra. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0018 · AVOID · high** — Avoid depending on the presence or position of macOS menu bar extras. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0019 · MAY · high** — Consider exposing menu-bar-extra functions through another persistent entry point. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0020 · SHOULD · high** — Use familiar system icons for common menu-item actions. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0021 · SHOULD · high** — Place Find commands in the menu that best matches the searched content. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0022 · SHOULD · high** — Reflect the app's content hierarchy in app-specific menu ordering wherever practical. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0023 · MUST · high** — Require exactly one modifier key to reveal a dynamic menu item. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0024 · MUST · high** — Ensure every iPad app function remains accessible through its UI when the full-screen menu bar is hidden. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0025 · SHOULD · high** — Reserve YourAppName > Settings for opening the app's page in iPadOS Settings. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
+- **HIG-COMPONENTS-THE-MENU-BAR-0026 · MAY · high** — For tab-style iPad apps, consider adding each tab to the View menu. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 ### toggles
 
 - **HIG-COMPONENTS-TOGGLES-0001 · SHOULD · low** — Choose or apply a toggle to help people choose between two opposing values that affect the state of content or a in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
@@ -1475,6 +1498,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-INPUTS-GAME-CONTROLS-0010 · SHOULD · low** — Apply the documented Game controls guidance to test key binding comfort game using an Apple keyboard. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - **HIG-INPUTS-GAME-CONTROLS-0011 · SHOULD · low** — Apply the documented Game controls guidance to let players customize key bindings. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 - **HIG-INPUTS-GAME-CONTROLS-0012 · SHOULD · low** — Apply the documented Game controls guidance to match spatial game controller behavior to hand input. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
+- **HIG-INPUTS-GAME-CONTROLS-0013 · SHOULD · low** — Determine whether it makes sense to display virtual controls on top of game content explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
 ### gestures
 
 - **HIG-INPUTS-GESTURES-0001 · SHOULD · low** — Apply the documented Gestures guidance to give people more than one way to interact with your app. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
@@ -1492,6 +1516,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-INPUTS-GESTURES-0013 · AVOID · low** — Exclude setting a primary action in views with lists, scroll views, or vertical tabs from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - **HIG-INPUTS-GESTURES-0014 · SHOULD · low** — Apply the documented Gestures guidance to choose the button that people use most commonly as the primary action in a view. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - **HIG-INPUTS-GESTURES-0015 · MAY · low** — Evaluate whether complex custom gestures that involve multiple fingers or both hands is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0016 · SHOULD · low** — Reserve the area around a person’s hand for system overlays and their related gestures for the documented purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 ### gyro-and-accelerometer
 
 - **HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001 · SHOULD · low** — Choose or apply motion data only to offer a tangible benefit to people in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
@@ -1637,6 +1662,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-APPLE-PAY-0024 · SHOULD · low** — Apply the documented Apple Pay guidance to maintain a minimum clear space around the mark of 1/10 of its height. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - **HIG-TECHNOLOGIES-APPLE-PAY-0025 · MUST_NOT · medium** — Exclude use the Apple logo to represent the name Apple in text from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - **HIG-TECHNOLOGIES-APPLE-PAY-0026 · AVOID · low** — Exclude translate Apple Pay or any other Apple trademark from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- **HIG-TECHNOLOGIES-APPLE-PAY-0027 · MAY · low** — When in-store pickup, consider letting people choose a pickup window that works for them. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 ### augmented-reality
 
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0001 · SHOULD · low** — Make aR features only on capable devices available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
@@ -1727,6 +1753,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-GAME-CENTER-0021 · SHOULD · low** — Apply the documented Game Center guidance to allow players to join gameplay late, leave early, and return later. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0022 · SHOULD · low** — Make a way for players to view the current party code in your game available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - **HIG-TECHNOLOGIES-GAME-CENTER-0023 · SHOULD · low** — Apply the documented Game Center guidance to allow players to enter a party code manually. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- **HIG-TECHNOLOGIES-GAME-CENTER-0024 · SHOULD · low** — Determine a display order explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 ### generative-ai
 
 - **HIG-TECHNOLOGIES-GENERATIVE-AI-0001 · SHOULD · low** — Apply the documented Generative AI guidance to design your experience responsibly. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
@@ -1820,6 +1847,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-ICLOUD-0007 · SHOULD · low** — Apply the documented iCloud guidance to warn about the consequences of deleting a document. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - **HIG-TECHNOLOGIES-ICLOUD-0008 · SHOULD · low** — Apply the documented iCloud guidance to make conflict resolution prompt and easy. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - **HIG-TECHNOLOGIES-ICLOUD-0009 · SHOULD · low** — Apply the documented iCloud guidance to include iCloud content in search results. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0010 · MAY · low** — When games, consider saving player progress in iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 ### id-verifier
 
 - **HIG-TECHNOLOGIES-ID-VERIFIER-0001 · SHOULD · low** — Present only request in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
@@ -1880,6 +1908,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-MAC-CATALYST-0005 · MAY · low** — Evaluate whether moving controls from the main UI of your iPad app to your Mac app’s toolbar is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - **HIG-TECHNOLOGIES-MAC-CATALYST-0006 · SHOULD · low** — Choose or apply the regular-width and regular-height size classes, and consider reflowing elements in the content area to a side-by-side arrangement in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - **HIG-TECHNOLOGIES-MAC-CATALYST-0007 · SHOULD · low** — Present an inspector UI next to the main content instead of using a popover in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0008 · SHOULD · low** — Adopt a top-down flow wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 ### machine-learning
 
 - **HIG-TECHNOLOGIES-MACHINE-LEARNING-0001 · MUST · medium** — Make providing explicit feedback a voluntary task in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -1972,6 +2001,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-RESEARCHKIT-0010 · SHOULD · low** — Maintain the survey as short as possible. Several short surveys tend to work better than one long survey. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - **HIG-TECHNOLOGIES-RESEARCHKIT-0011 · SHOULD · low** — Apply the documented ResearchKit guidance to describe how to perform the task using clear, simple language. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - **HIG-TECHNOLOGIES-RESEARCHKIT-0012 · MUST · medium** — Clearly communicate when a ResearchKit task is complete. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0013 · SHOULD · low** — Determine eligibility as soon as possible explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 ### shareplay
 
 - **HIG-TECHNOLOGIES-SHAREPLAY-0001 · SHOULD · low** — Preserve people’s ability to know that you support SharePlay. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
@@ -2053,6 +2083,7 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0017 · SHOULD · low** — Present tap to Pay on iPhone terms and conditions only to an administrative user in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0018 · SHOULD · low** — Present pre-payment actions that affect the final total before checkout completes in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0019 · SHOULD · low** — Present a new screen or reuse your checkout screen, letting merchants accept an alternate form of payment, like cash in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0020 · SHOULD · low** — Determine the final amount that customers need to pay before merchants initiate the Tap to Pay on iPhone experience explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 ### voiceover
 
 - **HIG-TECHNOLOGIES-VOICEOVER-0001 · SHOULD · medium** — Make alternative labels for all key interface elements available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
@@ -2095,3 +2126,4 @@ Generated 2026-07-21T12:27:22.528Z. 1761 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-WALLET-0030 · SHOULD · low** — Apply the documented Wallet guidance to ask only for the data you actually need. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - **HIG-TECHNOLOGIES-WALLET-0031 · SHOULD · low** — Apply the documented Wallet guidance to choose the system-provided verification button that matches your use case and the visual design of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - **HIG-TECHNOLOGIES-WALLET-0032 · SHOULD · low** — Present a Wallet verification option only when the device supports it in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- **HIG-TECHNOLOGIES-WALLET-0033 · SHOULD · low** — Reserve pass images for visual content for the documented purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))

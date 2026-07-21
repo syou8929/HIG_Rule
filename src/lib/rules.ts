@@ -1,19 +1,20 @@
 import type { GuidanceCandidate, NormativeLevel, Portability, Rule, SourcePage } from "./types.js";
 import { slugify } from "./util.js";
 
-const ACTIONABLE = /^(adopt|aim|allow|always|apply|ask|augment|avoid|avoiding|be|bear in mind|break up|carefully consider|choose|communicate|confirm|consider|convey|create|defer|define|describe|design|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|follow|give|help|identify|in general, avoid|include|integrate|keep|let|make|maintain|match|minimize|never|offer|optimize|place|position|prefer|present|preserve|prioritize|provide|reduce|refer to|remove|replacing|respect|respond|show|simplify|strive|support|test|tightening|track|tracking|treat|use|verify|warn|write)\b/i;
+const ACTIONABLE = /^(adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|bear in mind|break up|carefully consider|choose|communicate|confirm|consider|convey|create|defer|define|describe|design|determine|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|follow|give|help|identify|in general, avoid|include|integrate|keep|let|make|maintain|match|minimize|never|offer|optimize|place|position|prefer|present|preserve|prioritize|provide|reduce|refer to|remove|replacing|represent|require|reserve|respect|respond|show|simplify|strive|support|test|tightening|track|tracking|treat|use|verify|warn|write)\b/i;
+const CONTEXTUAL_ACTIONABLE = /^(because\b.+\bensure\b|for\b.+\bconsider\b)/i;
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
   if (/^(Always On|Tracking requests|Help buttons)$/i.test(text)) return false;
-  return ACTIONABLE.test(text) && !/^Resources?\b/i.test(text);
+  return (ACTIONABLE.test(text) || CONTEXTUAL_ACTIONABLE.test(text)) && !/^Resources?\b/i.test(text);
 }
 
 export function normative(text: string): Pick<Rule, "normative_level" | "confidence" | "review_required" | "polarity" | "severity"> {
   const value = text.toLowerCase();
   if (/^(never|must not)\b/.test(value)) return { normative_level: "MUST_NOT", confidence: "medium", review_required: true, polarity: "prohibit", severity: "error" };
-  if (/^(avoid|avoiding|do not|don't|don’t|in general, avoid)\b/.test(value)) return { normative_level: "AVOID", confidence: "low", review_required: true, polarity: "discourage", severity: "warning" };
-  if (/^(carefully consider|consider|may)\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
+  if (/^(avoid|avoiding|do not|don't|don’t|in general, avoid|as much as possible,\s*avoid)\b/.test(value)) return { normative_level: "AVOID", confidence: "low", review_required: true, polarity: "discourage", severity: "warning" };
+  if (/^(carefully consider|consider|may)\b/.test(value) || /^for\b.+\bconsider\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
   if (/^(always|ensure|make sure|must|required)\b/.test(value)) return { normative_level: "MUST", confidence: "medium", review_required: true, polarity: "require", severity: "error" };
   return { normative_level: "SHOULD", confidence: "low", review_required: true, polarity: "recommend", severity: "warning" };
 }
@@ -31,6 +32,21 @@ function upperFirst(value: string): string {
 }
 
 export function paraphrase(candidate: string, pageTitle: string): { en: string; ja: string } {
+  const contextualConsider = candidate.match(/^for (.+?), consider (.+)$/i);
+  if (contextualConsider) {
+    return {
+      en: `When ${lowerFirst(contextualConsider[1] ?? "the documented condition applies")}, consider ${lowerFirst(contextualConsider[2] ?? "the documented option")}.`,
+      ja: `${contextualConsider[1] ?? "該当条件"}の場合は${contextualConsider[2] ?? "記載された選択肢"}を検討する。`,
+    };
+  }
+  const practicable = candidate.match(/^as much as possible,\s*(.+)$/i);
+  if (practicable) {
+    const value = practicable[1] ?? "apply the documented guidance";
+    return {
+      en: `${upperFirst(value)} wherever practicable.`,
+      ja: `可能な限り${value}。`,
+    };
+  }
   const patterns: Array<{ match: RegExp; en: (value: string) => string; ja: (value: string) => string }> = [
     { match: /^support\b/i, en: (v) => `Ensure the experience accommodates ${lowerFirst(v)}.`, ja: (v) => `${v}を利用できる設計にする。` },
     { match: /^use\b/i, en: (v) => `Choose or apply ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況では${v}を採用する。` },
@@ -39,8 +55,12 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
     { match: /^break up\b/i, en: (v) => `Divide ${lowerFirst(v)} into focused steps.`, ja: (v) => `${v}を集中しやすい手順に分割する。` },
     { match: /^identify\b/i, en: (v) => `Determine ${lowerFirst(v)} explicitly.`, ja: (v) => `${v}を明確に特定する。` },
     { match: /^define\b/i, en: (v) => `Define ${lowerFirst(v)} explicitly.`, ja: (v) => `${v}を明確に定義する。` },
+    { match: /^determine\b/i, en: (v) => `Determine ${lowerFirst(v)} explicitly.`, ja: (v) => `${v}を明確に決定する。` },
     { match: /^refer to\b/i, en: (v) => `Refer to ${lowerFirst(v)}.`, ja: (v) => `${v}という名称で参照する。` },
     { match: /^integrate\b/i, en: (v) => `Connect the experience with ${lowerFirst(v)}.`, ja: (v) => `${v}と体験を連携する。` },
+    { match: /^represent\b/i, en: (v) => `Represent ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を表現する。` },
+    { match: /^require\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
+    { match: /^reserve\b/i, en: (v) => `Reserve ${lowerFirst(v)} for the documented purpose.`, ja: (v) => `${v}を記載された目的に限定する。` },
     { match: /^tightening\b/i, en: (v) => `Use tighter ${lowerFirst(v)}.`, ja: (v) => `${v}をより引き締める。` },
     { match: /^tracking\b/i, en: (v) => `Keep ${lowerFirst(v)} synchronized.`, ja: (v) => `${v}を同期させる。` },
     { match: /^replacing\b/i, en: (v) => `Substitute ${lowerFirst(v)}.`, ja: (v) => `${v}へ置き換える。` },

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T12:25:19Z",
+  "reviewed_at": "2026-07-21T12:35:38Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -609,6 +609,48 @@
         "HIG-COMPONENTS-TAB-VIEWS-0005"
       ],
       "review_note": "Reviewed related-content scope, tab labels, pop-up-button tradeoffs, and the tab-count limit."
+    },
+    {
+      "id": "priority-4-the-menu-bar-context-2026-07-21",
+      "reviewed_at": "2026-07-21T12:35:38Z",
+      "review_method": "Current official Apple HIG The menu bar guidance and supporting prose were compared with the stored rendered source trace; the live main-content hash matched.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/the-menu-bar",
+          "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-THE-MENU-BAR-0001",
+        "HIG-COMPONENTS-THE-MENU-BAR-0002",
+        "HIG-COMPONENTS-THE-MENU-BAR-0003",
+        "HIG-COMPONENTS-THE-MENU-BAR-0004",
+        "HIG-COMPONENTS-THE-MENU-BAR-0005",
+        "HIG-COMPONENTS-THE-MENU-BAR-0006",
+        "HIG-COMPONENTS-THE-MENU-BAR-0007",
+        "HIG-COMPONENTS-THE-MENU-BAR-0008",
+        "HIG-COMPONENTS-THE-MENU-BAR-0009",
+        "HIG-COMPONENTS-THE-MENU-BAR-0010",
+        "HIG-COMPONENTS-THE-MENU-BAR-0011",
+        "HIG-COMPONENTS-THE-MENU-BAR-0012",
+        "HIG-COMPONENTS-THE-MENU-BAR-0013",
+        "HIG-COMPONENTS-THE-MENU-BAR-0014",
+        "HIG-COMPONENTS-THE-MENU-BAR-0015",
+        "HIG-COMPONENTS-THE-MENU-BAR-0016",
+        "HIG-COMPONENTS-THE-MENU-BAR-0017",
+        "HIG-COMPONENTS-THE-MENU-BAR-0018",
+        "HIG-COMPONENTS-THE-MENU-BAR-0019",
+        "HIG-COMPONENTS-THE-MENU-BAR-0020",
+        "HIG-COMPONENTS-THE-MENU-BAR-0021",
+        "HIG-COMPONENTS-THE-MENU-BAR-0022",
+        "HIG-COMPONENTS-THE-MENU-BAR-0023",
+        "HIG-COMPONENTS-THE-MENU-BAR-0024",
+        "HIG-COMPONENTS-THE-MENU-BAR-0025",
+        "HIG-COMPONENTS-THE-MENU-BAR-0026"
+      ],
+      "review_note": "Reviewed menu ordering, shortcuts, dynamic items, iPadOS access paths, and macOS menu bar extras; recovered seven omitted leads."
     }
   ],
   "rules": {
@@ -3058,6 +3100,434 @@
         "A pop-up-button menu can present view options when the tab count is too high."
       ],
       "review_note": "Preserved the source lead's more-than-six limit and recorded the earlier reconsideration threshold."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0001": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "f3523fd5957e1d1d4b9d90c556d47d08bbdacbe46da0ef509226466718d65870",
+        "section_path": ["The menu bar", "Best practices"]
+      },
+      "statement": {
+        "en": "Preserve the default system-defined menus and their expected ordering.",
+        "ja": "system定義のdefault menuと期待される順序を保つ。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the familiarity and system-provided behavior behind the recommendation."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0002": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "2c0bcd19021878a6add9f780e281baf082b9cdb6fc7da32c9a825df9fc8cdc4e",
+        "section_path": ["The menu bar", "Best practices"]
+      },
+      "title": "Always show the same set of menu items",
+      "statement": {
+        "en": "Keep the same menu items visible; disable unavailable actions instead of hiding them.",
+        "ja": "同じmenu itemを常に表示し、利用不可のactionは隠さず無効化する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Visible unavailable items help people learn which actions the app supports."],
+      "review_note": "Confirmed the explicit Always lead and recorded disable-instead-of-hide behavior."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0003": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "257057a2732054068304d7f45862524d47b37e05d66df2ddb4553e52a12411c6",
+        "section_path": ["The menu bar", "Best practices"]
+      },
+      "statement": {
+        "en": "Use standard keyboard shortcuts for every standard menu item the app includes.",
+        "ja": "appに含める各standard menu itemにはstandard keyboard shortcutを使う。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Define a custom shortcut only when necessary."],
+      "review_note": "Recorded shortcut familiarity and the limit on custom shortcuts."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0004": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "179973d433aa257607fefd60bc86914320d9902272ca826105ce2e04f971cda3",
+        "section_path": ["The menu bar", "Best practices"]
+      },
+      "statement": {
+        "en": "Prefer short, one-word menu titles.",
+        "ja": "短い1語のmenu titleを優先する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use title-style capitalization when a menu title needs multiple words."],
+      "review_note": "Recorded scanability, limited menu-bar space, and the multiword capitalization fallback."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0005": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "fc1a66ba7805159830cfa20c233bbd83b137423e6830f9472e9a501ccb258a07",
+        "section_path": ["The menu bar", "App menu"]
+      },
+      "statement": {
+        "en": "Place About first in the app menu and separate it from following items.",
+        "ja": "Aboutをapp menuの先頭へ置き、後続itemとはseparatorで分ける。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded both first position and the immediately following separator."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0006": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "db168fe8df1732f547a167da292822bdc92e0a7f46f28b339b4aefa902c750f6",
+        "section_path": ["The menu bar", "View menu"]
+      },
+      "statement": {
+        "en": "Provide a View menu even when only some standard view functions apply.",
+        "ja": "standard view機能の一部しか該当しない場合でもView menuを設ける。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Preserved the even-if condition that the generated paraphrase obscured."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0007": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "035cc4109c26179d029c66bd02fedd28b5435b8cad3f5508d564c7ba07c722d7",
+        "section_path": ["The menu bar", "View menu"]
+      },
+      "title": "Ensure show/hide menu titles reflect current view state",
+      "statement": {
+        "en": "Keep every show/hide menu title synchronized with the corresponding view's current visibility.",
+        "ja": "各show/hide menu titleを、対応するviewの現在の表示状態と一致させる。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Use Show when hidden and Hide when visible."],
+      "review_note": "Confirmed the explicit Ensure lead and its state-dependent title behavior."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0008": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "7a78f7739eb9ce5d6dbdc5332a06f600060075fde518039f732af362817897df",
+        "section_path": ["The menu bar", "App-specific menus"]
+      },
+      "statement": {
+        "en": "List custom commands in app-specific menu bar menus.",
+        "ja": "custom commandをapp固有のmenu bar menuへ掲載する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Include commands even when they also appear elsewhere in the app."],
+      "review_note": "Recorded discoverability, keyboard-shortcut, and Full Keyboard Access benefits."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0009": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "57894a6ac5e9f0e9cac449985f69c1e02985ef416b103ed5f41987b4de723fa5",
+        "section_path": ["The menu bar", "App-specific menus"]
+      },
+      "statement": {
+        "en": "Order app-specific menus from most to least general or commonly used.",
+        "ja": "app固有menuを、より一般的または頻繁に使うものから順に並べる。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Replaced the awkward generated Aim paraphrase while retaining SHOULD."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0010": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "02680a2a8b8a9472cac830a05a60880e9308ed128cd25b5e8215625da32f34e5",
+        "section_path": ["The menu bar", "Window menu"]
+      },
+      "statement": {
+        "en": "Provide a Window menu even for a single-window app.",
+        "ja": "single-window appでもWindow menuを設ける。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Include Minimize and Zoom for people using Full Keyboard Access."],
+      "review_note": "Recorded the single-window condition and keyboard-access rationale."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0011": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "a4de7cefa2839c8c36d0a76fe72b58fcc1fe40dcf878d81eb0fda13f27ee2e91",
+        "section_path": ["The menu bar", "Window menu"]
+      },
+      "statement": {
+        "en": "Consider Window-menu items for showing and hiding app panels.",
+        "ja": "app panelの表示と非表示を切り替えるWindow menu itemを検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "exceptions": ["Font and text-color panels already belong in the Format menu."],
+      "review_note": "Retained optional strength and recorded the Format-menu exception."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0012": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "25f8c4eb2f950eb9ce4daea142dc17fb04cd4fe9ee97806d088e42a9bae3521f",
+        "section_path": ["The menu bar", "Dynamic menu items"]
+      },
+      "statement": {
+        "en": "Avoid making a hidden dynamic menu item the only route to a task.",
+        "ja": "hidden dynamic menu itemをtaskへの唯一の経路にしない。"
+      },
+      "normative_level": "AVOID",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Provide another route for every task offered by a dynamic item."],
+      "review_note": "Recorded the discoverability rationale and alternate-path requirement."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0013": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "ac767a1aae20ac9a8e42b8c2a3af645411cea2b88fb6bc497dc68244b9a0e8f1",
+        "section_path": ["The menu bar", "Dynamic menu items"]
+      },
+      "statement": {
+        "en": "Use dynamic menu items primarily in menu bar menus.",
+        "ja": "dynamic menu itemは主にmenu bar menuで使う。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Contextual and Dock menus make dynamic items harder to discover."],
+      "review_note": "Recorded the contextual-menu and Dock-menu discoverability tradeoff."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0014": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "a3ec2967661dd90e41e4fd2e6f9b6f01f38c7f34478320f65644d11313d836cb",
+        "section_path": ["The menu bar", "Platform considerations", "iPadOS"]
+      },
+      "statement": {
+        "en": "Consider grouping related iPad menu items into submenus to conserve vertical space.",
+        "ja": "iPadではvertical spaceを節約するため、関連するmenu itemのsubmenu化を検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["iPad menu rows are taller for touch and some iPad screens are smaller."],
+      "review_note": "Recorded the iPad-specific touch-target and screen-size rationale."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0015": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "9e0525e30b645bd446a0e544d5b86fe8ae0e617ffa7556c3ff775aae8e4f7772",
+        "section_path": ["The menu bar", "Platform considerations", "macOS", "Menu bar extras"]
+      },
+      "statement": {
+        "en": "Consider a symbol for a macOS menu bar extra.",
+        "ja": "macOS menu bar extraにはsymbolの使用を検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use a clear shape the system can adapt across menu-bar appearances and selection states."],
+      "review_note": "Retained optional strength and recorded system adaptation context."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0016": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "12ef84c3b46083137a3363904424b5a15e3448721df539e4bfe2a060cb8b3655",
+        "section_path": ["The menu bar", "Platform considerations", "macOS", "Menu bar extras"]
+      },
+      "statement": {
+        "en": "Prefer a menu over a popover when people click a macOS menu bar extra.",
+        "ja": "macOS menu bar extraのclick時はpopoverよりmenuを優先する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "exceptions": ["A popover can fit functionality too complex for a menu."],
+      "review_note": "Kept SHOULD because the supporting prose explicitly permits a complexity exception."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0017": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "3d9602b27f40a308f9ce79df607623fc470da6f578d8bda27d39e6068cc76827",
+        "section_path": ["The menu bar", "Platform considerations", "macOS", "Menu bar extras"]
+      },
+      "statement": {
+        "en": "Let people choose whether to add the app's macOS menu bar extra.",
+        "ja": "macOS menu bar extraを追加するかは利用者が選べるようにする。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Offer the choice in settings and consider exposing it during setup."],
+      "review_note": "Repaired the generated grammar and preserved explicit user choice."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0018": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "8f6b11d603c409d6f5d0baa29651db3c6052e0b7ea50ada7ae6b18e2da38576a",
+        "section_path": ["The menu bar", "Platform considerations", "macOS", "Menu bar extras"]
+      },
+      "statement": {
+        "en": "Avoid depending on the presence or position of macOS menu bar extras.",
+        "ja": "macOS menu bar extraの存在や位置に依存しない。"
+      },
+      "normative_level": "AVOID",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["The system can hide extras and their positions vary with people's choices."],
+      "review_note": "Recorded both visibility and unpredictable-position risks."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0019": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "4b36f6842a3fd6ad7b8594bf05402a0e39bc902af7c473885e182fb9fe07b91e",
+        "section_path": ["The menu bar", "Platform considerations", "macOS", "Menu bar extras"]
+      },
+      "statement": {
+        "en": "Consider exposing menu-bar-extra functions through another persistent entry point.",
+        "ja": "menu bar extraの機能を別の永続的な入口からも提供することを検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["A Dock menu remains available while the app is running."],
+      "review_note": "Repaired the generated grammar and recorded the Dock-menu example."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0020": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "a5de0d14dbfbe14814f53341694d8542e16587c9a864a1a725949cbb750e1d11",
+        "section_path": ["The menu bar", "Best practices"]
+      },
+      "title": "Represent menu item actions with familiar icons",
+      "statement": {
+        "en": "Use familiar system icons for common menu-item actions.",
+        "ja": "一般的なmenu itemのactionには、馴染みのあるsystem iconを使う。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use the same system icon wherever actions like Copy, Share, or Delete appear."],
+      "review_note": "Recovered the omitted actionable lead and recorded its system-icon consistency context."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0021": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "1f4d126585ccfa2bc2cf43a861d812247453eda338b6ddae0568074c5b7fa9e6",
+        "section_path": ["The menu bar", "Edit menu"]
+      },
+      "title": "Place Find items according to the searched content",
+      "statement": {
+        "en": "Place Find commands in the menu that best matches the searched content.",
+        "ja": "Find commandは検索対象のcontentに最も合うmenuへ配置する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["File can fit better than Edit when people search for files or objects."],
+      "review_note": "Recovered the omitted Determine lead and preserved the context-dependent placement decision."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0022": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "d76e0a907ca1d4e98a85b65e53f4280f7ff68a3a6f263180f0788338c45a8c3a",
+        "section_path": ["The menu bar", "App-specific menus"]
+      },
+      "title": "Reflect the app hierarchy in app-specific menus",
+      "statement": {
+        "en": "Reflect the app's content hierarchy in app-specific menu ordering wherever practical.",
+        "ja": "可能な限り、app固有menuの順序にcontent hierarchyを反映する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the omitted qualified recommendation without raising it to MUST."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0023": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "0a7715cc1250062cdd895f5678014a4cc5dba8f3cd1cb5f689be206517c087c5",
+        "section_path": ["The menu bar", "Dynamic menu items"]
+      },
+      "title": "Require only one modifier key for a dynamic menu item",
+      "statement": {
+        "en": "Require exactly one modifier key to reveal a dynamic menu item.",
+        "ja": "dynamic menu itemの表示に必要なmodifier keyは1つだけにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Multiple keys reduce discoverability and can be physically awkward while choosing a menu item."],
+      "review_note": "Recovered the omitted explicit Require lead and classified it as MUST."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0024": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "6e5d37de53f20f517f411ff606d9291bd08595584c7ab70cc92bca23c450f565",
+        "section_path": ["The menu bar", "Platform considerations", "iPadOS"]
+      },
+      "title": "Ensure full-screen iPad app functions remain accessible through the UI",
+      "statement": {
+        "en": "Ensure every iPad app function remains accessible through its UI when the full-screen menu bar is hidden.",
+        "ja": "full-screenでmenu barが隠れても、iPad appの全機能へUIからアクセスできるようにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Always provide another path for dynamic items available only with a hardware keyboard."],
+      "review_note": "Restored the truncated iPadOS lead and classified its explicit Ensure instruction as MUST."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0025": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "df4283665205ad3af2af5cdc791c7d65675d7533b771e6f59a9780d09104133a",
+        "section_path": ["The menu bar", "Platform considerations", "iPadOS"]
+      },
+      "title": "Reserve YourAppName > Settings for iPadOS Settings",
+      "statement": {
+        "en": "Reserve YourAppName > Settings for opening the app's page in iPadOS Settings.",
+        "ja": "YourAppName > Settingsは、iPadOS Settings内のapp pageを開く用途に限定する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Link internal preferences with a separate item below Settings in the same group."],
+      "review_note": "Recovered the omitted Reserve lead and recorded the separate internal-preferences path."
+    },
+    "HIG-COMPONENTS-THE-MENU-BAR-0026": {
+      "source": {
+        "source_hash": "f253e7bde57df4b4fd45f462d6c23222c76a899c9378e216e509663726b0b95e",
+        "source_sentence_hash": "eb724a9a5e7e858155b5b6270a47c21756b95ce87fde2d2579ecde090788a625",
+        "section_path": ["The menu bar", "Platform considerations", "iPadOS"]
+      },
+      "title": "Consider adding iPad app tabs to the View menu",
+      "statement": {
+        "en": "For tab-style iPad apps, consider adding each tab to the View menu.",
+        "ja": "tab-styleのiPad appでは、各tabをView menuへ追加することを検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Consider assigning key bindings when tabs also appear in the View menu."],
+      "review_note": "Recovered the conditional Consider lead and retained MAY strength."
     }
   }
 }
