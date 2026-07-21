@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2366
+- Active atomic rules: 2367
 - Pages without rules: 16
-- Low-confidence rules: 1004
-- Rules requiring human review: 1004
+- Low-confidence rules: 1002
+- Rules requiring human review: 1002
 - Reference notes: 929
 
 ## Rules by category
 
 - components: 858
-- foundations: 312
+- foundations: 313
 - getting-started: 85
 - inputs: 187
 - patterns: 289
@@ -22,7 +22,7 @@
 
 ## Normative levels
 
-- AVOID: 310
+- AVOID: 311
 - MAY: 278
 - MUST: 210
 - MUST_NOT: 21
@@ -33,7 +33,7 @@
 - carplay: 90
 - ios: 1638
 - ipados: 1611
-- macos: 1369
+- macos: 1370
 - tvos: 1061
 - visionos: 1417
 - watchos: 1118
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 60
-- manual: 2306
+- manual: 2307
 
 ## Blocked pages
 
@@ -317,8 +317,6 @@ None.
 - HIG-FOUNDATIONS-DARK-MODE-0006
 - HIG-FOUNDATIONS-DARK-MODE-0008
 - HIG-FOUNDATIONS-DARK-MODE-0009
-- HIG-FOUNDATIONS-DARK-MODE-0010
-- HIG-FOUNDATIONS-DARK-MODE-0011
 - HIG-FOUNDATIONS-ICONS-0001
 - HIG-FOUNDATIONS-ICONS-0002
 - HIG-FOUNDATIONS-ICONS-0003
@@ -1324,8 +1322,6 @@ None.
 - HIG-FOUNDATIONS-DARK-MODE-0006
 - HIG-FOUNDATIONS-DARK-MODE-0008
 - HIG-FOUNDATIONS-DARK-MODE-0009
-- HIG-FOUNDATIONS-DARK-MODE-0010
-- HIG-FOUNDATIONS-DARK-MODE-0011
 - HIG-FOUNDATIONS-ICONS-0001
 - HIG-FOUNDATIONS-ICONS-0002
 - HIG-FOUNDATIONS-ICONS-0003
@@ -2264,7 +2260,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/controls · Controls > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/controls · Controls > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Platform considerations — tvOS has no additional considerations; Dark Mode isn't supported in visionOS or watchOS.
 - https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T18:52:52.545Z. 2366 active rules; 3 deprecated rules.
+Generated 2026-07-21T18:57:15.928Z. 2367 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -217,8 +217,9 @@ Generated 2026-07-21T18:52:52.545Z. 2366 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-DARK-MODE-0007 · MUST · medium** — Verify that full-color images and icons look good in both appearances. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - **HIG-FOUNDATIONS-DARK-MODE-0008 · SHOULD · low** — Choose or apply the system-provided label colors for labels in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - **HIG-FOUNDATIONS-DARK-MODE-0009 · SHOULD · low** — Choose or apply system views to draw text fields and text views in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0010 · SHOULD · low** — Favor the system background colors when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0011 · SHOULD · low** — Apply the documented Dark Mode guidance to include some transparency in custom component backgrounds when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0010 · SHOULD · high** — Prefer system background colors in iOS and iPadOS Dark Mode. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0011 · SHOULD · high** — Include transparency in a custom macOS component background when appropriate for desktop tinting. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0012 · AVOID · high** — Avoid transparency in a custom macOS component background when the state uses color. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 ### icons
 
 - **HIG-FOUNDATIONS-ICONS-0001 · SHOULD · low** — Apply the documented Icons guidance to create a recognizable, highly simplified design. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))

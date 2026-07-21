@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1281
-- Reviewed batches: 80
+- Reviewed rules: 1284
+- Reviewed batches: 81
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:45:56Z
+- Reviewed at: 2026-07-21T18:55:58Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -683,6 +683,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-COLOR-0021 · high — Recorded the communication purpose and both decoration and long-duration restrictions. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0022 · high — Recovered the contextual Help lead and recorded the adaptation and contrast constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0023 · high — Recovered the omitted Recognize lead and recorded the system's single-color behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-DARK-MODE-0010 · high — Recorded the dynamic base-to-elevated behavior and the visual distinctions custom colors can obscure. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0011 · high — Made the visible-background and neutral-state limits explicit and separated the colored-state anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0012 · high — Recovered the colored-state transparency warning as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-ICONS-0008 · high — Recorded the shape, palette, and minimum rendered-size constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0009 · high — Retained MAY and recorded the source's size-specific simplification techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0010 · high — Recorded the fold-mask obstruction and every documented background asset size. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
