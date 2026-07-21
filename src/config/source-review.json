@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:00:53Z",
+  "reviewed_at": "2026-07-21T15:06:02Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1298,9 +1298,301 @@
         "HIG-PATTERNS-FEEDBACK-0011"
       ],
       "review_note": "Reviewed accessible multimodal feedback, proportional interruption, failure and completion states, and watchOS progress behavior; recovered five omitted atomic rules and refreshed a changed page hash."
+    },
+    {
+      "id": "priority-4-file-management-context-2026-07-21",
+      "reviewed_at": "2026-07-21T15:06:02Z",
+      "review_method": "Rendered Apple HIG File management guidance and supporting prose were reviewed; two repeated live renders matched the updated stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/file-management",
+          "source_hash": "af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-FILE-MANAGEMENT-0001",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0002",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0003",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0004",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0005",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0006",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0007",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0008",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0009",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0010",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0011",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0012",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0013",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0014",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0015",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0016",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0017",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0018",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0019",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0020",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0021",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0022",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0023",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0024",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0025",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0026",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0027",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0028",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0029",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0030",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0031",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0032",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0033",
+        "HIG-PATTERNS-FILE-MANAGEMENT-0034"
+      ],
+      "review_note": "Reviewed document creation, saving, Quick Look, document launcher, file provider, macOS custom browser, and Finder Sync context; recovered seventeen atomic rules and refreshed a changed page hash."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-FILE-MANAGEMENT-0001": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"c297e1ae10f98b37520ba4bd43798dcc3681cb68cbfad1401858dab135d448b6","section_path":["File management","Creating and opening files"]},
+      "title": "Use familiar document commands and keyboard shortcuts",
+      "statement": {"en":"Use familiar app-menu commands and keyboard shortcuts to create and open documents in iPadOS and macOS.","ja":"iPadOSとmacOSで使い慣れたapp menu commandとkeyboard shortcutを使ってdocumentを作成・開く。"},
+      "scope": {"portability":"apple-platform","platforms":["ipados","macos"],"devices":["ipad","mac"],"components":[],"modalities":["keyboard"]},
+      "conditions": ["Expose commands such as New and Open in the iPadOS shortcuts interface and the macOS File menu."],
+      "review_note": "Narrowed the rule to the two documented platforms and recorded both command surfaces."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0002": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"9fa9b0761db449e4c29bee85af9d23e1aa8a3f5f35540d6196b7888f378bcf79","section_path":["File management","Saving work"]},
+      "title": "Preserve work unless people cancel or delete it",
+      "statement": {"en":"Help people trust that their work remains preserved unless they cancel or delete it.","ja":"cancelまたはdeleteしない限りworkが保持されると利用者が信頼できるようにする。"},
+      "conditions": ["Use automatic saving behavior rather than relying on an explicit save action."],
+      "review_note": "Recorded the preservation outcome and separated its explicit-save and autosave techniques."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0003": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"489f2837f9a887eecdfa71627c3a9a2b6c0d186ff142c24a10cde9b51eadfc36","section_path":["File management","Quick Look previews"]},
+      "title": "Use Quick Look for files the app cannot open",
+      "statement": {"en":"Use a Quick Look viewer to preview files the app can interact with but cannot open.","ja":"appが操作できても開けないfileのpreviewにQuick Look viewerを使う。"},
+      "conditions": ["Keep the preview available without requiring people to leave the app."],
+      "review_note": "Recorded the unsupported-file interaction condition and in-app continuity purpose."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0004": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"15ae5a7abf885d97116901392cc0e5a330ae97c801d47b5dd4ffd9b38fa89d56","section_path":["File management","Quick Look previews"]},
+      "title": "Consider a Quick Look generator for custom file types",
+      "statement": {"en":"Consider implementing a Quick Look generator when the app produces custom file types.","ja":"appがcustom file typeを生成する場合はQuick Look generatorの実装を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Enable Finder, Files, Spotlight, and other apps to display document previews."],
+      "review_note": "Retained MAY and recorded the custom-type condition and cross-app preview consumers."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0005": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"ac41c87231c86560b5375c9df2b88fb458477c81b00e914c76fac28106415cd7","section_path":["File management","Platform considerations","iOS, iPadOS","Document launcher"]},
+      "title": "Distinguish the document-launcher background",
+      "statement": {"en":"Make the document-launcher background clearly distinct from its accessories and title card.","ja":"document launcherのbackgroundをaccessoryとtitle cardから明確に区別する。"},
+      "conditions": ["A solid color, gradient, or pattern can provide the background."],
+      "review_note": "Recorded the foreground-separation goal and every suggested background type."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0006": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"fe8413e453c9f5c9bd8ea2fdd5acbce92534b75c2707028196bdc588e0856b68","section_path":["File management","Platform considerations","iOS, iPadOS","Document launcher"]},
+      "title": "Place document-launcher accessories deliberately",
+      "statement": {"en":"Place document-launcher accessories deliberately around the title card.","ja":"document launcherのaccessoryをtitle cardの周囲へ意図的に配置する。"},
+      "conditions": ["Accessories may appear in front of and behind the card to create depth."],
+      "review_note": "Repaired the vague statement and separated visibility, clutter, and device-testing requirements."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0007": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"bde983cea6b25f93c6c4983332d57825d38aba4074d6ac857154cfe3ba6683c9","section_path":["File management","Platform considerations","iOS, iPadOS","Document launcher"]},
+      "title": "Use document-launcher animation sparingly",
+      "statement": {"en":"Use document-launcher accessory animation sparingly.","ja":"document launcher accessoryのanimationを控えめに使う。"},
+      "conditions": ["Avoid motion that confuses or disorients people."],
+      "exceptions": ["Consider gentle repeating motion that subtly highlights or enhances content."],
+      "review_note": "Recorded the motion risks and the qualified gentle-animation option."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0008": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"6d6980fa9011409ec0853a608054b0147266feae0668ab8c1769694d49ef0129","section_path":["File management","Platform considerations","iOS, iPadOS","File provider app extension"]},
+      "title": "Let people choose export and move destinations",
+      "statement": {"en":"Let people choose a destination when exporting or moving documents through a file provider.","ja":"file providerでdocumentをexportまたはmoveするときdestinationを選べるようにする。"},
+      "conditions": ["Let people navigate to a specific location in the directory hierarchy."],
+      "exceptions": ["Destination navigation may be unnecessary when the app stores documents in one directory."],
+      "review_note": "Recorded the hierarchy behavior and single-directory exception."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0009": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"a593a46d4d0be16f127db8c7ccf78ee11d34bf56b0c9159d8324fa91910c074d","section_path":["File management","Platform considerations","iOS, iPadOS","File provider app extension"]},
+      "title": "Avoid a second top toolbar in file-provider extensions",
+      "statement": {"en":"Avoid adding a custom top toolbar to a file-provider extension's modal view.","ja":"file provider extensionのmodal viewへcustom top toolbarを追加しない。"},
+      "conditions": ["The containing modal view already provides a toolbar."],
+      "review_note": "Recorded the duplicate-toolbar context and its confusion and content-space costs."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0010": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"63d12680cca493902c5f52d90bbe520bc27e34ab5d6328188e994de581f40149","section_path":["File management","Platform considerations","macOS","Custom file management"]},
+      "title": "Make custom macOS file opening convenient",
+      "statement": {"en":"Make a custom macOS file-opening interface convenient for its task.","ja":"custom macOS file-opening interfaceをtaskに適した使いやすいものにする。"},
+      "conditions": ["Consider recent-file access, filtering criteria, multiple selection, and a task-specific Open button title."],
+      "review_note": "Recorded all four convenience examples and their task-specific context."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0011": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"6a69f787793b027c6219191bf9363d6d89dda9d3f0fa5bb2d5d7069cb55c55df","section_path":["File management","Platform considerations","macOS","Custom file management"]},
+      "title": "Let people choose macOS save name, format, and location",
+      "statement": {"en":"Provide a macOS save interface for choosing a file's name, format, and location.","ja":"fileのname、format、locationを選ぶmacOS save interfaceを提供する。"},
+      "conditions": ["Default new documents to an untitled state and a logical browsing location.", "When multiple formats are supported, provide a format choice."],
+      "review_note": "Recorded all editable file properties, the initial state, and the multi-format condition."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0012": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"25508b4791ac4a0ca77ddedb5de0d68d6ab359a9d923a2473b27475754419cd3","section_path":["File management","Platform considerations","macOS","Custom file management"]},
+      "title": "Consider extending the macOS Save dialog",
+      "statement": {"en":"Consider extending the macOS Save dialog with useful app-specific settings or options.","ja":"macOS Save dialogへ有用なapp-specific settingやoptionを追加することを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Add a custom accessory view only when the extension makes sense for the app."],
+      "review_note": "Retained MAY and recorded the usefulness and app-fit conditions."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0013": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"d988166c577e529420fa6acde1955ebb6682e17a4e5411d87614c529144fb5d4","section_path":["File management","Platform considerations","macOS","Finder Sync extensions"]},
+      "title": "Prevent work loss when macOS autosaving is off",
+      "statement": {"en":"Help people avoid losing work when they turn off macOS autosaving.","ja":"macOS autosavingをoffにしたときworkを失わないよう利用者を支援する。"},
+      "conditions": ["Show unsaved changes and present a save dialog before document close, app quit, logout, or restart."],
+      "review_note": "Recorded the autosave-off setting and every save-dialog trigger."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0014": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"d29f9e65aee825ef273452b9cb4eef358a638e6fe3476e5d3f57f8a769397372","section_path":["File management","Platform considerations","macOS","Finder Sync extensions"]},
+      "title": "Use Finder badges for item sync status",
+      "statement": {"en":"Use Finder Sync badges to indicate item synchronization status.","ja":"itemのsynchronization statusを示すためFinder Sync badgeを使う。"},
+      "conditions": ["The app synchronizes local and remote files through a Finder Sync extension."],
+      "review_note": "Recorded the extension and local-to-remote synchronization context."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0015": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"0dce9feca6e112f14c3c081cd60f08bfe6b29288bcd55a1c0c06a0f70bc8b8d9","section_path":["File management","Platform considerations","macOS","Finder Sync extensions"]},
+      "title": "Use Finder Sync context menus for item management",
+      "statement": {"en":"Provide Finder Sync contextual menu items for file and folder management tasks.","ja":"fileとfolderのmanagement taskにFinder Sync contextual menu itemを提供する。"},
+      "conditions": ["Examples include favoriting and adding password protection."],
+      "review_note": "Repaired the truncated title and recorded both example item-level tasks."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0016": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"8b290a7da353b6b0fb52958e3de9729967a55cdd11ccabb95c2f3cef72996255","section_path":["File management","Platform considerations","macOS","Finder Sync extensions"]},
+      "title": "Use Finder Sync toolbar buttons for global actions",
+      "statement": {"en":"Provide Finder Sync toolbar buttons for global actions.","ja":"global actionにFinder Sync toolbar buttonを提供する。"},
+      "conditions": ["A global action can initiate synchronization."],
+      "review_note": "Recorded the global-action scope and synchronization example."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0017": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"b95597c5005e678a4d4433927cbc1d497becc32f6679bcbb44d1d9c69ff03db8","section_path":["File management","Saving work"]},
+      "title": "Hide file extensions by default but allow viewing",
+      "statement": {"en":"Hide file extensions by default while letting people choose to view them.","ja":"file extensionをdefaultでは隠し、利用者が表示を選べるようにする。"},
+      "review_note": "Preserved both the default and the user-controlled visibility option."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0018": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"a19ee322be860b2982dc7a9b843ffdc275b1cb14e0321088d0f7b48294f05af4","section_path":["File management","Creating and opening files"]},
+      "title": "Provide an Add action regardless of keyboard shortcuts",
+      "statement": {"en":"Provide an Add action for new documents regardless of keyboard-shortcut availability.","ja":"keyboard shortcutの有無にかかわらず新規document用のAdd actionを提供する。"},
+      "scope": {"portability":"apple-platform","platforms":["ipados","macos"],"devices":["ipad","mac"],"components":[],"modalities":[]},
+      "conditions": ["Use an Add button in iPadOS and place the macOS add action in the File menu."],
+      "review_note": "Recovered the independent Add requirement and recorded each platform surface."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0019": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"a8ed755d4341f62ec02b8e77ef3de2f94d714395819e6fd84821accf4d95a6d9","section_path":["File management","Creating and opening files"]},
+      "title": "Follow platform conventions in a required custom file browser",
+      "statement": {"en":"When a custom file browser is required, preserve people's understanding of the platform file system.","ja":"custom file browserが必要な場合、platform file systemに対する利用者の理解を保つ。"},
+      "scope": {"portability":"apple-platform","platforms":["ios","ipados","macos","visionos"],"devices":["iphone","ipad","mac","apple-vision-pro"],"components":[],"modalities":[]},
+      "conditions": ["The app has an important reason to require a custom browser.", "It may open at a relevant location while still letting people browse the rest of the file system."],
+      "review_note": "Recovered the conditional browser rule and recorded both initial-location flexibility and full-system access."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0020": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"dc35249b2acd4e7e95f3b301eb3a73d035efed5e53cd8ed4982ef5588ab191f4","section_path":["File management","Saving work"]},
+      "title": "Avoid requiring explicit save actions",
+      "statement": {"en":"In general, avoid requiring people to take an explicit action to save their work.","ja":"通常はwork保存のための明示操作を利用者へ求めない。"},
+      "conditions": ["Use automatic saving to support confidence that work remains preserved."],
+      "review_note": "Recovered the source's qualified AVOID clause without turning it into a prohibition."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0021": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"2ae055677770b9347a5e0efae6f2d28b499aa8e030ebdb00ddb7975e7d716e72","section_path":["File management","Saving work"]},
+      "title": "Reflect the file-extension choice across interfaces",
+      "statement": {"en":"Reflect the current file-extension visibility choice in every save and open interface.","ja":"現在のfile-extension表示設定をすべてのsave・open interfaceへ反映する。"},
+      "conditions": ["People can choose whether file extensions are visible."],
+      "review_note": "Recovered and retained the explicit Be sure requirement with its current-choice scope."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0022": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"73fc02609a265f857f0e28e6afecb32016e8a32eec85a72b0b60bde9484b0f23","section_path":["File management","Platform considerations","iOS, iPadOS","Document launcher"]},
+      "title": "Assign document-launcher buttons to important functions",
+      "statement": {"en":"Assign document-launcher title-card buttons to the app's most important functions.","ja":"document launcher title cardのbuttonをappの最重要functionへ割り当てる。"},
+      "conditions": ["The primary button typically creates a document; the secondary button can offer additional options."],
+      "review_note": "Recovered the omitted assignment lead and recorded both button roles."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0023": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"74bdebbe5f70738259912c96bd4d13bf0884906242e76663b762646c6d5d526b","section_path":["File management","Platform considerations","iOS, iPadOS","Document launcher"]},
+      "title": "Avoid distracting document-launcher backgrounds",
+      "statement": {"en":"Avoid complex document-launcher images or patterns that can distract from foreground elements.","ja":"foreground elementから注意をそらす複雑なdocument launcher imageやpatternを避ける。"},
+      "review_note": "Recovered the background-complexity AVOID and its foreground-attention condition."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0024": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"5957d4af49eb07801f800294296aafa4f54a8b6be3a4062f289e1503e21b2e35","section_path":["File management","Platform considerations","iOS, iPadOS","Document launcher"]},
+      "title": "Keep the document-launcher title and buttons visible",
+      "statement": {"en":"Keep the app name and both document-launcher title-card buttons clearly visible.","ja":"app nameとdocument launcher title cardの両buttonを明確に見える状態へ保つ。"},
+      "conditions": ["Accessories appear around, in front of, or behind the title card."],
+      "review_note": "Recovered and retained the conditional explicit need to make sure all title-card content remains visible."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0025": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"5957d4af49eb07801f800294296aafa4f54a8b6be3a4062f289e1503e21b2e35","section_path":["File management","Platform considerations","iOS, iPadOS","Document launcher"]},
+      "title": "Avoid cluttering the document-launcher title card",
+      "statement": {"en":"Avoid cluttering the document-launcher title card with too many accessories.","ja":"過剰なaccessoryでdocument launcher title cardをclutterさせない。"},
+      "review_note": "Recovered the accessory-count AVOID as a separate atomic rule."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0026": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"5957d4af49eb07801f800294296aafa4f54a8b6be3a4062f289e1503e21b2e35","section_path":["File management","Platform considerations","iOS, iPadOS","Document launcher"]},
+      "title": "Test the document launcher across supported displays",
+      "statement": {"en":"Test the document launcher's overall appearance across every supported screen size and device orientation.","ja":"support対象の全screen sizeとdevice orientationでdocument launcher全体のappearanceをtestする。"},
+      "conditions": ["The app customizes the document launcher and supports the tested size and orientation."],
+      "review_note": "Recovered and retained the explicit Be sure test requirement with both documented dimensions."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0027": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"329ff17fec7280b8cfc4006e4927ae4d76f7a72d8c8701b8f0f3941fd647aed0","section_path":["File management","Platform considerations","iOS, iPadOS","File provider app extension"]},
+      "title": "Show only context-appropriate file-provider documents",
+      "statement": {"en":"When opening or importing through a file provider, show only documents appropriate to the current context.","ja":"file providerでopenまたはimportするとき、現在のcontextに適したdocumentだけを表示する。"},
+      "conditions": ["For example, a PDF-editing app should list only PDF files for opening or import."],
+      "review_note": "Recovered the contextual display rule and its type-filtering example."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0028": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"2e604ccbe2857785a298599937173eaa56256cc6cf7918f47b91fa48699a3f88","section_path":["File management","Platform considerations","iOS, iPadOS","File provider app extension"]},
+      "title": "Consider useful file-provider metadata",
+      "statement": {"en":"Consider showing modification date, size, and local or remote status in a file provider.","ja":"file providerでmodification date、size、local・remote statusの表示を検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Recovered the optional metadata clause and preserved every listed field."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0029": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"c15dc329ea80b875946471b8bb443c2514b961ba42cfa00b3cc7377865b7fd3b","section_path":["File management","Platform considerations","iOS, iPadOS","File provider app extension"]},
+      "title": "Consider adding subdirectories from a file provider",
+      "statement": {"en":"Consider letting people add subdirectories while choosing a file-provider destination.","ja":"file providerのdestination選択中にsubdirectoryを追加できるようにすることを検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Recovered the optional subdirectory-creation clause without raising its strength."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0030": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"a550123b5519b21a846c9379a0d655656f0a1c55e67c9164c40506d9764d19b0","section_path":["File management","Platform considerations","macOS","Custom file management"]},
+      "title": "Use the default macOS file browser by default",
+      "statement": {"en":"Use the default macOS file browser unless an important reason requires a custom one.","ja":"重要な理由でcustom browserが必要でない限りdefault macOS file browserを使う。"},
+      "conditions": ["Preserve the familiar Finder and document-app file-browsing experience."],
+      "review_note": "Recovered the default-browser rule and preserved its important-reason exception."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0031": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"91fa0a8c3ce99a122fba4e4618c1383a4d1e52044ca37d1ddc76e56b4e0346fb","section_path":["File management","Platform considerations","macOS","Finder Sync extensions"]},
+      "title": "Expose unsaved changes when autosaving is off",
+      "statement": {"en":"When macOS autosaving is off, make sure people know which documents have unsaved changes.","ja":"macOS autosavingがoffのとき、unsaved changeのあるdocumentを利用者が把握できるようにする。"},
+      "conditions": ["Display a dot on the document window close button and beside the document name in the Window menu."],
+      "review_note": "Recovered and retained the conditional Make sure requirement and both documented indicators."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0032": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"313664c173204e986fe5b1b2d24e611edfcb84c186c4767aa71bb23f3c6c8c82","section_path":["File management","Platform considerations","macOS","Finder Sync extensions"]},
+      "title": "Avoid unsaved-change dots when autosaving is on",
+      "statement": {"en":"Avoid displaying unsaved-change dots when macOS autosaving is on.","ja":"macOS autosavingがonのときunsaved-change dotを表示しない。"},
+      "conditions": ["A dot would incorrectly imply that people must act to preserve their work."],
+      "review_note": "Recovered a conservative AVOID rule from the source's confusion warning."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0033": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"313664c173204e986fe5b1b2d24e611edfcb84c186c4767aa71bb23f3c6c8c82","section_path":["File management","Platform considerations","macOS","Finder Sync extensions"]},
+      "title": "Remove the Edited suffix immediately after saving",
+      "statement": {"en":"Remove an Edited document-title suffix as soon as automatic or explicit saving completes.","ja":"automaticまたはexplicit save完了直後にdocument titleのEdited suffixを除去する。"},
+      "conditions": ["The app appends Edited to a document title regardless of autosave status."],
+      "review_note": "Recovered and retained the conditional Be sure requirement with both save paths."
+    },
+    "HIG-PATTERNS-FILE-MANAGEMENT-0034": {
+      "source": {"source_hash":"af0ea81eeb1c6d945f249abd5ed5337ae8a714e419daf73ba8ba61a24ff54998","source_sentence_hash":"dc35249b2acd4e7e95f3b301eb3a73d035efed5e53cd8ed4982ef5588ab191f4","section_path":["File management","Saving work"]},
+      "title": "Save automatically during editing and transitions",
+      "statement": {"en":"Save work automatically at intervals during editing and when a file closes or the app changes.","ja":"editing中は定期的に、fileを閉じる時やappを切り替える時にworkを自動保存する。"},
+      "conditions": ["Use automatic saving as the alternative to explicit save actions."],
+      "review_note": "Recovered the positive autosave rule and preserved every documented save trigger."
+    },
     "HIG-PATTERNS-FEEDBACK-0001": {
       "source": {"source_hash":"0df030b1e0f934da177a80b4a3f04c7de71ca12e80a9ac2210cd3e36cdbc22d8","source_sentence_hash":"14e63533792a4c0b44c538732f496dc77b5aeb5c8ee3b4fab3edf0b83922893e","section_path":["Feedback","Best practices"]},
       "title": "Make all feedback accessible",

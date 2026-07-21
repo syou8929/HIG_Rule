@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 569
-- Reviewed batches: 46
+- Reviewed rules: 603
+- Reviewed batches: 47
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:00:53Z
+- Reviewed at: 2026-07-21T15:06:02Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -570,6 +570,40 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-FEEDBACK-0009 · high — Recovered the explicit don't clause while retaining AVOID under the repository's conservative strength policy. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0010 · high — Recovered the conditional completion rule and preserved its importance threshold and routine-success exception. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0011 · high — Recovered the watchOS completion-notification alternative as a separate positive rule. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
+- HIG-PATTERNS-FILE-MANAGEMENT-0001 · high — Narrowed the rule to the two documented platforms and recorded both command surfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0002 · high — Recorded the preservation outcome and separated its explicit-save and autosave techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0003 · high — Recorded the unsupported-file interaction condition and in-app continuity purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0004 · high — Retained MAY and recorded the custom-type condition and cross-app preview consumers. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0005 · high — Recorded the foreground-separation goal and every suggested background type. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0006 · high — Repaired the vague statement and separated visibility, clutter, and device-testing requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0007 · high — Recorded the motion risks and the qualified gentle-animation option. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0008 · high — Recorded the hierarchy behavior and single-directory exception. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0009 · high — Recorded the duplicate-toolbar context and its confusion and content-space costs. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0010 · high — Recorded all four convenience examples and their task-specific context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0011 · high — Recorded all editable file properties, the initial state, and the multi-format condition. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0012 · high — Retained MAY and recorded the usefulness and app-fit conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0013 · high — Recorded the autosave-off setting and every save-dialog trigger. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0014 · high — Recorded the extension and local-to-remote synchronization context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0015 · high — Repaired the truncated title and recorded both example item-level tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0016 · high — Recorded the global-action scope and synchronization example. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0017 · high — Preserved both the default and the user-controlled visibility option. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0018 · high — Recovered the independent Add requirement and recorded each platform surface. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0019 · high — Recovered the conditional browser rule and recorded both initial-location flexibility and full-system access. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0020 · high — Recovered the source's qualified AVOID clause without turning it into a prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0021 · high — Recovered and retained the explicit Be sure requirement with its current-choice scope. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0022 · high — Recovered the omitted assignment lead and recorded both button roles. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0023 · high — Recovered the background-complexity AVOID and its foreground-attention condition. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0024 · high — Recovered and retained the conditional explicit need to make sure all title-card content remains visible. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0025 · high — Recovered the accessory-count AVOID as a separate atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0026 · high — Recovered and retained the explicit Be sure test requirement with both documented dimensions. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0027 · high — Recovered the contextual display rule and its type-filtering example. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0028 · high — Recovered the optional metadata clause and preserved every listed field. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0029 · high — Recovered the optional subdirectory-creation clause without raising its strength. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0030 · high — Recovered the default-browser rule and preserved its important-reason exception. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0031 · high — Recovered and retained the conditional Make sure requirement and both documented indicators. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0032 · high — Recovered a conservative AVOID rule from the source's confusion warning. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0033 · high — Recovered and retained the conditional Be sure requirement with both save paths. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-FILE-MANAGEMENT-0034 · high — Recovered the positive autosave rule and preserved every documented save trigger. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

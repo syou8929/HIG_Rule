@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T15:04:03.115Z. 1988 active rules; 3 deprecated rules.
+Generated 2026-07-21T15:11:32.474Z. 2005 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -518,23 +518,40 @@ Generated 2026-07-21T15:04:03.115Z. 1988 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-FEEDBACK-0011 · SHOULD · high** — Notify people when a watchOS process completes instead of requiring continued attention. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 ### file-management
 
-- **HIG-PATTERNS-FILE-MANAGEMENT-0001 · SHOULD · low** — Choose or apply app menus and keyboard shortcuts to give people convenient ways to create and open documents in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0002 · SHOULD · low** — Apply the documented File management guidance to help people be confident that their work is always preserved unless they cancel or delete it. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0003 · SHOULD · low** — Choose or apply a Quick Look viewer to let people preview a file even when your app can’t open it in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0004 · MAY · low** — Evaluate whether implementing a Quick Look generator if your app produces custom file types is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0005 · SHOULD · low** — Make a background that’s clearly distinct from the accessories and title card available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0006 · SHOULD · low** — Apply the documented File management guidance to be mindful of accessory placement. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0007 · SHOULD · low** — Choose or apply animation sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0008 · SHOULD · low** — Preserve people’s ability to select a destination when exporting and moving documents. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0009 · AVOID · low** — Exclude including a custom top toolbar from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0010 · SHOULD · low** — Apply the documented File management guidance to make your custom file-opening interface convenient. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0011 · SHOULD · low** — Make a save interface to let people change a file’s name, format, or location available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0012 · MAY · low** — Evaluate whether extending the functionality of the Save dialog is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0013 · SHOULD · low** — Apply the documented File management guidance to help people avoid losing work if they turn off autosaving. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0014 · SHOULD · low** — Present badges in the Finder to indicate the sync status of items in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0015 · SHOULD · low** — Make custom contextual menu items that perform file and folder management tasks, like favoriting and adding password-protection available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0016 · SHOULD · low** — Make custom toolbar buttons that perform global actions, like initiating a sync operation available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
-- **HIG-PATTERNS-FILE-MANAGEMENT-0017 · SHOULD · low** — Hide file extensions by default, but let people view them if they choose. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0001 · SHOULD · high** — Use familiar app-menu commands and keyboard shortcuts to create and open documents in iPadOS and macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0002 · SHOULD · high** — Help people trust that their work remains preserved unless they cancel or delete it. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0003 · SHOULD · high** — Use a Quick Look viewer to preview files the app can interact with but cannot open. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0004 · MAY · high** — Consider implementing a Quick Look generator when the app produces custom file types. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0005 · SHOULD · high** — Make the document-launcher background clearly distinct from its accessories and title card. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0006 · SHOULD · high** — Place document-launcher accessories deliberately around the title card. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0007 · SHOULD · high** — Use document-launcher accessory animation sparingly. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0008 · SHOULD · high** — Let people choose a destination when exporting or moving documents through a file provider. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0009 · AVOID · high** — Avoid adding a custom top toolbar to a file-provider extension's modal view. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0010 · SHOULD · high** — Make a custom macOS file-opening interface convenient for its task. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0011 · SHOULD · high** — Provide a macOS save interface for choosing a file's name, format, and location. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0012 · MAY · high** — Consider extending the macOS Save dialog with useful app-specific settings or options. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0013 · SHOULD · high** — Help people avoid losing work when they turn off macOS autosaving. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0014 · SHOULD · high** — Use Finder Sync badges to indicate item synchronization status. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0015 · SHOULD · high** — Provide Finder Sync contextual menu items for file and folder management tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0016 · SHOULD · high** — Provide Finder Sync toolbar buttons for global actions. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0017 · SHOULD · high** — Hide file extensions by default while letting people choose to view them. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0018 · SHOULD · high** — Provide an Add action for new documents regardless of keyboard-shortcut availability. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0019 · SHOULD · high** — When a custom file browser is required, preserve people's understanding of the platform file system. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0020 · AVOID · high** — In general, avoid requiring people to take an explicit action to save their work. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0021 · MUST · high** — Reflect the current file-extension visibility choice in every save and open interface. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0022 · SHOULD · high** — Assign document-launcher title-card buttons to the app's most important functions. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0023 · AVOID · high** — Avoid complex document-launcher images or patterns that can distract from foreground elements. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0024 · MUST · high** — Keep the app name and both document-launcher title-card buttons clearly visible. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0025 · AVOID · high** — Avoid cluttering the document-launcher title card with too many accessories. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0026 · MUST · high** — Test the document launcher's overall appearance across every supported screen size and device orientation. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0027 · SHOULD · high** — When opening or importing through a file provider, show only documents appropriate to the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0028 · MAY · high** — Consider showing modification date, size, and local or remote status in a file provider. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0029 · MAY · high** — Consider letting people add subdirectories while choosing a file-provider destination. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0030 · SHOULD · high** — Use the default macOS file browser unless an important reason requires a custom one. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0031 · MUST · high** — When macOS autosaving is off, make sure people know which documents have unsaved changes. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0032 · AVOID · high** — Avoid displaying unsaved-change dots when macOS autosaving is on. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0033 · MUST · high** — Remove an Edited document-title suffix as soon as automatic or explicit saving completes. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0034 · SHOULD · high** — Save work automatically at intervals during editing and when a file closes or the app changes. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 ### going-full-screen
 
 - **HIG-PATTERNS-GOING-FULL-SCREEN-0001 · SHOULD · low** — Ensure the experience accommodates full-screen mode when it makes sense for your experience. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
