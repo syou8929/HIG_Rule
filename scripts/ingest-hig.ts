@@ -65,8 +65,14 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
             const sentences = paragraph.split(/(?<=[.!?])\s+/);
             for (const sentence of sentences) {
               const direct = sentence.replace(/^(?:also|in particular),\s*/i, "").trim();
-              if (/^(?:always|be sure to|do not|don['’]t|make sure|never)\b/i.test(direct)) {
+              if (/^(?:always|be sure to|do not|don['’]t|make sure|never|you need to)\b/i.test(direct)) {
                 candidates.push({ fullText: paragraph, sectionPath, fragment: direct });
+              }
+              if (!/^make sure\b/i.test(direct)) {
+                for (const match of direct.matchAll(/\bmake sure\b[^.!?]*(?=[.!?]|$)/gi)) {
+                  const explicit = (match[0] || "").trim();
+                  if (explicit) candidates.push({ fullText: paragraph, sectionPath, fragment: `${explicit[0]?.toUpperCase()}${explicit.slice(1)}` });
+                }
               }
               if (!/^if you must\b/i.test(direct)) {
                 for (const match of direct.matchAll(/\byou must(?: not)?\b[^.!?]*(?=[.!?]|$)/gi)) {

@@ -96,6 +96,10 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(normative("If passthrough is visible, avoid obscuring it").normative_level, "AVOID");
   assert.equal(normative("Always avoid edge motion").normative_level, "MUST_NOT");
   assert.equal(normative("Be sure to lower the soundscape volume").normative_level, "MUST");
+  assert.equal(isActionable({ text: "As someone resizes a window, defer switching layouts", section_path: [], source_sentence_hash: "d".repeat(64), word_count: 8 }), true);
+  assert.equal(paraphrase("As someone resizes a window, defer switching layouts", "Layout").en, "As someone resizes a window, defer switching layouts.");
+  assert.equal(paraphrase("If controls are outside a window, use an ornament", "Layout").en, "When controls are outside a window, use an ornament.");
+  assert.equal(normative("You need to include enough spacing").normative_level, "MUST");
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 

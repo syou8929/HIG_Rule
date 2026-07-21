@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
+Generated 2026-07-21T13:49:51.848Z. 1910 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -218,6 +218,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-ICONS-0012 · MAY · high** — When a familiar object conveys a document type or app connection, consider using it as the center image. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0013 · SHOULD · low** — When necessary, add padding to a custom interface icon to achieve optical alignment. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0014 · SHOULD · high** — When a file extension is unfamiliar, specify a succinct term that clarifies the macOS document type. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0015 · SHOULD · low** — When you create a custom interface icon, use a vector format like PDF or SVG. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 ### images
 
 - **HIG-FOUNDATIONS-IMAGES-0001 · SHOULD · low** — Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
@@ -289,25 +290,35 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-LAYOUT-0004 · SHOULD · low** — Apply the documented Layout guidance to design a layout that adapts gracefully to context changes while remaining recognizably consistent. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0005 · SHOULD · low** — Apply the documented Layout guidance to be prepared for text-size changes. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0006 · SHOULD · low** — Apply the documented Layout guidance to respect key display and system features in each platform. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0007 · SHOULD · low** — Apply the documented Layout guidance to aim to support both portrait and landscape orientations. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0008 · SHOULD · low** — Favor a full-bleed interface for your game when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0009 · AVOID · low** — Exclude full-width buttons from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0010 · SHOULD · low** — Apply the documented Layout guidance to test your layout at common system-provided sizes, and provide smooth transitions. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0011 · MAY · low** — Evaluate whether a convertible tab bar for adaptive navigation is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0012 · AVOID · low** — Exclude placing controls or critical information at the bottom of a window from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0013 · AVOID · low** — Exclude displaying content within the camera housing at the top edge of the window from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0014 · SHOULD · low** — Apply the documented Layout guidance to be prepared for a wide range of TV sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0015 · SHOULD · low** — Apply the documented Layout guidance to include appropriate padding between focusable elements. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0016 · SHOULD · low** — Apply the documented Layout guidance to include additional vertical spacing for titled rows. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0017 · SHOULD · low** — Choose or apply consistent spacing in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0018 · SHOULD · low** — Apply the documented Layout guidance to make partially hidden content look symmetrical. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0019 · MAY · low** — Evaluate whether centering the most important content and controls in your app or game is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0020 · SHOULD · low** — Maintain a window’s content within its bounds. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0021 · SHOULD · low** — Apply the documented Layout guidance to make a window’s interactive components easy for people to look at. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0022 · SHOULD · low** — Apply the documented Layout guidance to design your content to extend from one edge of the screen to the other. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0023 · AVOID · low** — Exclude placing more than two or three controls side by side in your interface from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0024 · SHOULD · low** — Ensure the experience accommodates autorotation in views people might want to show others. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0007 · SHOULD · high** — Aim to support both portrait and landscape orientations on iOS. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0008 · SHOULD · high** — Prefer a full-bleed interface for an iOS game. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0009 · AVOID · high** — Avoid full-width buttons in iOS interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0010 · SHOULD · high** — Test iPadOS layouts at common system window sizes and provide smooth transitions. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0011 · MAY · high** — Consider a convertible tab bar for adaptive iPadOS navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0012 · AVOID · high** — Avoid controls and critical information at the bottom of a macOS window. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0013 · AVOID · high** — Avoid displaying content within the macOS camera housing area. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0014 · SHOULD · high** — Design tvOS layouts to work well across varied television sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0015 · SHOULD · high** — Include padding between tvOS focusable elements that accommodates their focused size. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0016 · SHOULD · high** — Include additional vertical spacing around titled tvOS grid rows. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0017 · SHOULD · high** — Use consistent spacing in tvOS grids. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0018 · SHOULD · high** — Keep partially hidden tvOS grid content symmetrical across screen edges. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0019 · MAY · high** — Consider centering the most important visionOS content and controls. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0020 · SHOULD · high** — Keep visionOS window content within its XY-plane bounds. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0021 · SHOULD · high** — Make visionOS interactive components easy and comfortable to look at. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0022 · SHOULD · high** — Extend watchOS content from one screen edge to the other. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0023 · AVOID · high** — Avoid placing more than two or three watchOS controls side by side. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0024 · SHOULD · high** — Support autorotation in watchOS views people may show to others. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0025 · SHOULD · low** — Use of progressive disclosure to help people discover content that’s currently hidden. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0026 · MUST · high** — Make a landscape-only iOS experience work equally well in both rotation directions. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0027 · MUST · high** — Make a necessary full-width iOS button harmonize with hardware curvature and adjacent safe areas. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0028 · SHOULD · high** — Hide the iOS status bar only when doing so adds value or enhances the experience. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0029 · SHOULD · high** — While an iPadOS window resizes, defer compact layout until the full layout no longer fits. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0030 · MUST · high** — Minimize unexpected UI changes across the supported iPadOS window-size range. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0031 · SHOULD · high** — Keep primary tvOS content within the screen safe area. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0032 · MUST · high** — Prevent focused tvOS elements from overlapping important information. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0033 · MUST · high** — Space unfocused tvOS grid rows and columns to prevent overlap when an item receives focus. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0034 · SHOULD · high** — When controls do not belong inside a visionOS window, place them in an ornament. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0035 · MUST · high** — Provide enough space around visionOS interactive components for comfortable visual identification and unobscured hover effects. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 ### materials
 
 - **HIG-FOUNDATIONS-MATERIALS-0001 · AVOID · low** — Exclude use Liquid Glass in the content layer from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
@@ -497,6 +508,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-FILE-MANAGEMENT-0014 · SHOULD · low** — Present badges in the Finder to indicate the sync status of items in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - **HIG-PATTERNS-FILE-MANAGEMENT-0015 · SHOULD · low** — Make custom contextual menu items that perform file and folder management tasks, like favoriting and adding password-protection available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - **HIG-PATTERNS-FILE-MANAGEMENT-0016 · SHOULD · low** — Make custom toolbar buttons that perform global actions, like initiating a sync operation available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- **HIG-PATTERNS-FILE-MANAGEMENT-0017 · SHOULD · low** — Hide file extensions by default, but let people view them if they choose. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 ### going-full-screen
 
 - **HIG-PATTERNS-GOING-FULL-SCREEN-0001 · SHOULD · low** — Ensure the experience accommodates full-screen mode when it makes sense for your experience. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
@@ -827,6 +839,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-CHARTS-0017 · SHOULD · low** — Apply the documented Charts guidance to be consistent throughout your app when referring to a specific axis. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 - **HIG-COMPONENTS-CHARTS-0018 · AVOID · high** — Avoid requiring complex chart interactions in a watchOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 - **HIG-COMPONENTS-CHARTS-0019 · SHOULD · low** — Define the value of the lower bound based on mark type and chart usage explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0020 · SHOULD · low** — Hide visible text labels for axes and ticks from assistive technologies. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 ### collections
 
 - **HIG-COMPONENTS-COLLECTIONS-0001 · SHOULD · low** — Choose or apply the standard row or grid layout whenever possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
@@ -876,6 +889,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-CONTEXT-MENUS-0012 · MAY · low** — Evaluate whether using a context menu instead of a panel or inspector window to present frequently used functionality is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - **HIG-COMPONENTS-CONTEXT-MENUS-0013 · AVOID · high** — Avoid making a visionOS context menu taller than its window. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - **HIG-COMPONENTS-CONTEXT-MENUS-0014 · SHOULD · low** — Represent menu item actions with familiar icons in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- **HIG-COMPONENTS-CONTEXT-MENUS-0015 · SHOULD · low** — Hide unavailable menu items, don’t dim them. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 ### controls
 
 - **HIG-COMPONENTS-CONTROLS-0001 · SHOULD · low** — Make controls for actions that provide the most benefit without having to launch your app available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
@@ -886,6 +900,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-CONTROLS-0006 · SHOULD · low** — Choose or apply the same camera UI in your app and your camera experience in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 - **HIG-COMPONENTS-CONTROLS-0007 · SHOULD · low** — Make instructions for adding the control available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 - **HIG-COMPONENTS-CONTROLS-0008 · SHOULD · low** — Require authentication for actions that affect security. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0009 · SHOULD · low** — Hide sensitive information when the device is locked. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 ### digit-entry-views
 
 - **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · SHOULD · low** — Choose or apply secure digit fields in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
@@ -928,6 +943,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-IMAGE-VIEWS-0003 · SHOULD · low** — Choose or apply an image button instead of an image view to make a clickable image in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - **HIG-COMPONENTS-IMAGE-VIEWS-0004 · SHOULD · low** — Choose or apply swiftUI to create animations when possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - **HIG-COMPONENTS-IMAGE-VIEWS-0005 · MAY · low** — When you want to display an icon in your interface, consider using a symbol or interface icon instead of. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- **HIG-COMPONENTS-IMAGE-VIEWS-0006 · SHOULD · low** — When your app needs an editable image view, use an image well. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 ### labels
 
 - **HIG-COMPONENTS-LABELS-0001 · SHOULD · low** — Choose or apply a label to display a small amount of text that people don’t need to edit in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
@@ -1156,6 +1172,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-SCROLL-VIEWS-0011 · SHOULD · high** — Prefer vertical scrolling for watchOS content. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - **HIG-COMPONENTS-SCROLL-VIEWS-0012 · SHOULD · high** — Use vertically stacked tab views for page-by-page scrolling in watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - **HIG-COMPONENTS-SCROLL-VIEWS-0013 · SHOULD · high** — Define clear visionOS scroll areas for Look to Scroll. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- **HIG-COMPONENTS-SCROLL-VIEWS-0014 · SHOULD · low** — When necessary, use small or mini scroll bars in a panel. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 ### search-fields
 
 - **HIG-COMPONENTS-SEARCH-FIELDS-0001 · SHOULD · low** — Choose or apply placeholder text to help people know what they can search for in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
@@ -1212,6 +1229,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-SIDEBARS-0005 · MAY · high** — Consider automatically hiding or revealing a macOS sidebar as its window resizes. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0006 · AVOID · high** — Avoid placing critical information or actions at the bottom of a macOS sidebar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0007 · MAY · low** — When your app’s hierarchy is deep, consider using a sidebar within a tab in a tab bar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0008 · SHOULD · low** — When you need to include two levels of hierarchy in a sidebar, use succinct, descriptive labels to title each. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 ### sliders
 
 - **HIG-COMPONENTS-SLIDERS-0001 · SHOULD · low** — Choose or apply familiar slider directions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
@@ -1665,6 +1683,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-ALWAYS-ON-0001 · SHOULD · low** — Maintain other types of personal information glanceable when it makes sense. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - **HIG-TECHNOLOGIES-ALWAYS-ON-0002 · SHOULD · low** — Maintain important content legible and dim nonessential content. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - **HIG-TECHNOLOGIES-ALWAYS-ON-0003 · SHOULD · low** — Apply the documented Always On guidance to maintain a consistent layout. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
+- **HIG-TECHNOLOGIES-ALWAYS-ON-0004 · SHOULD · low** — Hide sensitive information. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 ### app-clips
 
 - **HIG-TECHNOLOGIES-APP-CLIPS-0001 · SHOULD · low** — Apply the documented App Clips guidance to allow people to complete a task or a demo in your App Clip. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
@@ -1703,6 +1722,8 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-APP-CLIPS-0034 · SHOULD · low** — Choose or apply correct color settings when you convert the generated SVG file to a CMYK image in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - **HIG-TECHNOLOGIES-APP-CLIPS-0035 · SHOULD · low** — Verify that print quality of your chosen color pair with the printer calibration test sheet that shows text boxes for. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - **HIG-TECHNOLOGIES-APP-CLIPS-0036 · SHOULD · low** — Verify that your printer’s grayscale settings by printing the printer calibration test sheet that shows two grayscale bars. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- **HIG-TECHNOLOGIES-APP-CLIPS-0037 · SHOULD · low** — Follow image requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- **HIG-TECHNOLOGIES-APP-CLIPS-0038 · SHOULD · low** — Follow guidelines for Using Apple Trademarks when referring to your App Clip and App Clip Codes. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 ### apple-pay
 
 - **HIG-TECHNOLOGIES-APPLE-PAY-0001 · SHOULD · low** — Make apple Pay on all devices and browsers that support it available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
@@ -1770,6 +1791,8 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0031 · SHOULD · low** — Maintain badge placement consistent and clear. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0032 · MAY · low** — When additional information or controls are necessary, consider displaying them in screen space. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0033 · SHOULD · low** — Indicate when the front-facing camera is unable to track a face for more than about half a second. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0034 · SHOULD · low** — Hide unnecessary app UI while people are using a coaching view. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0035 · SHOULD · low** — When you must display instructional text, use approachable terminology. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 ### carekit
 
 - **HIG-TECHNOLOGIES-CAREKIT-0001 · SHOULD · low** — Make a coherent privacy policy available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
@@ -1914,6 +1937,7 @@ Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-HOMEKIT-0036 · SHOULD · low** — Refer to apple devices and operating systems only in technical specifications or compatibility descriptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - **HIG-TECHNOLOGIES-HOMEKIT-0037 · SHOULD · low** — Present example voice commands to demonstrate using Siri to control accessories during setup in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - **HIG-TECHNOLOGIES-HOMEKIT-0038 · SHOULD · low** — Account for that people can have more than one home. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- **HIG-TECHNOLOGIES-HOMEKIT-0039 · SHOULD · low** — Follow apple’s trademark guidelines. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 ### icloud
 
 - **HIG-TECHNOLOGIES-ICLOUD-0001 · SHOULD · low** — Apply the documented iCloud guidance to make it easy to use your app with iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))

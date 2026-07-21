@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 334
-- Reviewed batches: 35
+- Reviewed rules: 362
+- Reviewed batches: 36
 - Official source only: yes
-- Reviewed at: 2026-07-21T13:31:35Z
+- Reviewed at: 2026-07-21T13:44:48Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -320,6 +320,34 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-INCLUSION-0003 · medium — Repaired an ungrammatical generated paraphrase while retaining the source's optional strength and cross-cultural rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))
 - HIG-FOUNDATIONS-INCLUSION-0004 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))
 - HIG-FOUNDATIONS-INCLUSION-0005 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))
+- HIG-FOUNDATIONS-LAYOUT-0007 · high — Recorded the preferred dual-orientation support and the single-orientation exception. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0008 · high — Recorded hardware accommodation and the optional fitted-view fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0009 · high — Separated the default AVOID guidance from the explicit necessary-button exception requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0010 · high — Recorded the system arrangements, device coverage, and full resizing range. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0011 · high — Retained MAY and recorded the user-switchable adaptive presentation. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0012 · high — Recorded the offscreen-window-edge risk. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0013 · high — Recorded the exact display-feature obstruction scope. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0014 · high — Recorded the nonadaptive display behavior and cross-size requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0015 · high — Separated general focus padding from the explicit important-information non-overlap rule. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0016 · high — Recorded both title-spacing relationships despite the inherited final-grid section path. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0017 · high — Preserved every official tvOS grid width and spacing row from the structured tables. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0018 · high — Recorded the equal-width technique for directing attention to fully visible content. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0019 · high — Retained MAY and recorded the large-window discoverability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0020 · high — Recorded every system-control area affected by out-of-bounds 2D or 3D content. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0021 · high — Separated the usability goal from the explicit enough-space requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0022 · high — Recorded bezel padding and the space-preserving inner-padding option. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0023 · high — Recorded glyph and text limits plus the short-label non-scrolling exception. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0024 · high — Recorded the wrist-away sharing scenarios that justify autorotation. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0026 · high — Recovered the explicit two-direction landscape requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0027 · high — Recovered the explicit hardware-curvature and safe-area requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0028 · high — Recovered the omitted Hide lead and preserved its narrow value-based condition. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0029 · high — Recovered the contextual Defer lead and recorded the tertiary-column technique. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0030 · high — Recovered the explicit resizing-stability requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0031 · high — Recovered the Adhere lead and preserved all safe-area measurements and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0032 · high — Recovered the explicit important-information non-overlap requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0033 · high — Recovered the explicit row-and-column focus-spacing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0034 · high — Recovered the conditional Use lead and recorded the system-control separation purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0035 · high — Recovered the explicit spacing requirement while keeping 60 points as an example. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-MOTION-0012 · high — Recovered the qualified AVOID lead and recorded the source's stability rationale and fade alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-PRIVACY-0001 · medium — Reviewed the priority-3 privacy and explicit-intent guidance in official context, including permission timing, pre-alert design, authentication, and location-button customization. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0002 · medium — Reviewed the priority-3 privacy and explicit-intent guidance in official context, including permission timing, pre-alert design, authentication, and location-button customization. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T13:31:35Z",
+  "reviewed_at": "2026-07-21T13:44:48Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -887,6 +887,50 @@
         "HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0035"
       ],
       "review_note": "Reviewed all remaining visionOS immersion guidance and recovered ten rules. After 30 lead hashes matched, the page trace was refreshed for candidate-external main-content drift."
+    },
+    {
+      "id": "priority-4-layout-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T13:44:48Z",
+      "review_method": "Rendered Apple HIG Layout platform guidance, supporting prose, and tvOS grid tables were reviewed; the live main-content hash matched the stored page.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/layout",
+          "source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-LAYOUT-0007",
+        "HIG-FOUNDATIONS-LAYOUT-0008",
+        "HIG-FOUNDATIONS-LAYOUT-0009",
+        "HIG-FOUNDATIONS-LAYOUT-0010",
+        "HIG-FOUNDATIONS-LAYOUT-0011",
+        "HIG-FOUNDATIONS-LAYOUT-0012",
+        "HIG-FOUNDATIONS-LAYOUT-0013",
+        "HIG-FOUNDATIONS-LAYOUT-0014",
+        "HIG-FOUNDATIONS-LAYOUT-0015",
+        "HIG-FOUNDATIONS-LAYOUT-0016",
+        "HIG-FOUNDATIONS-LAYOUT-0017",
+        "HIG-FOUNDATIONS-LAYOUT-0018",
+        "HIG-FOUNDATIONS-LAYOUT-0019",
+        "HIG-FOUNDATIONS-LAYOUT-0020",
+        "HIG-FOUNDATIONS-LAYOUT-0021",
+        "HIG-FOUNDATIONS-LAYOUT-0022",
+        "HIG-FOUNDATIONS-LAYOUT-0023",
+        "HIG-FOUNDATIONS-LAYOUT-0024",
+        "HIG-FOUNDATIONS-LAYOUT-0026",
+        "HIG-FOUNDATIONS-LAYOUT-0027",
+        "HIG-FOUNDATIONS-LAYOUT-0028",
+        "HIG-FOUNDATIONS-LAYOUT-0029",
+        "HIG-FOUNDATIONS-LAYOUT-0030",
+        "HIG-FOUNDATIONS-LAYOUT-0031",
+        "HIG-FOUNDATIONS-LAYOUT-0032",
+        "HIG-FOUNDATIONS-LAYOUT-0033",
+        "HIG-FOUNDATIONS-LAYOUT-0034",
+        "HIG-FOUNDATIONS-LAYOUT-0035"
+      ],
+      "review_note": "Reviewed iOS through watchOS layout guidance, preserved tvOS grid measurements, and recovered ten platform rules."
     }
   ],
   "rules": {
@@ -5603,6 +5647,207 @@
       },
       "conditions": ["The app or game presents a custom environment in a Full Space."],
       "review_note": "Recovered the explicit ground-plane requirement from supporting prose."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0007": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "4b9b1f93f1c5b2029835fcd624397574fb683d7db23c42ef6efe3d70aca89e5e", "section_path": ["Layout", "Platform considerations", "iOS"]},
+      "title": "Aim to support portrait and landscape on iOS",
+      "statement": {"en": "Aim to support both portrait and landscape orientations on iOS.", "ja": "iOSではportraitとlandscapeの両orientationへの対応を目指す。"},
+      "conditions": ["Let people discover a single supported orientation by rotating the device."],
+      "exceptions": ["A task-specific experience may support only portrait or only landscape."],
+      "review_note": "Recorded the preferred dual-orientation support and the single-orientation exception."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0008": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "3faaa920a52a79d2986f87ae664de34ac1658f4551e2c1570e75e7c8d9b39e86", "section_path": ["Layout", "Platform considerations", "iOS"]},
+      "title": "Prefer a full-bleed iOS game interface",
+      "statement": {"en": "Prefer a full-bleed interface for an iOS game.", "ja": "iOS gameではfull-bleed interfaceを優先する。"},
+      "conditions": ["Accommodate hardware corner radius, sensor housing, and Dynamic Island."],
+      "exceptions": ["When necessary, consider an optional letterboxed or pillarboxed view."],
+      "review_note": "Recorded hardware accommodation and the optional fitted-view fallback."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0009": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "49829ad7863025de42e3f6994c95078f8b07893864c77385c26729e8c6ef02d0", "section_path": ["Layout", "Platform considerations", "iOS"]},
+      "title": "Avoid full-width iOS buttons",
+      "statement": {"en": "Avoid full-width buttons in iOS interfaces.", "ja": "iOS interfaceではfull-width buttonを避ける。"},
+      "conditions": ["Inset buttons from screen edges using system-defined margins."],
+      "review_note": "Separated the default AVOID guidance from the explicit necessary-button exception requirement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0010": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "f1ab89ecdd9a24a895ee337e71e1f3c4a00e7b30e7bf5bc9314263c28aa06a89", "section_path": ["Layout", "Platform considerations", "iPadOS"]},
+      "title": "Test iPadOS layouts at common window sizes",
+      "statement": {"en": "Test iPadOS layouts at common system window sizes and provide smooth transitions.", "ja": "iPadOS layoutを一般的なsystem window sizeでtestし、smoothなtransitionを提供する。"},
+      "conditions": ["Test halves, thirds, and quadrants on multiple devices.", "Cover the supported minimum-to-maximum window-size range."],
+      "review_note": "Recorded the system arrangements, device coverage, and full resizing range."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0011": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "7ec809aee7c3d4a7c7a4fc19ce7375e7ee23266842662588f7ee58f6e66e2613", "section_path": ["Layout", "Platform considerations", "iPadOS"]},
+      "title": "Consider a convertible tab bar for iPadOS navigation",
+      "statement": {"en": "Consider a convertible tab bar for adaptive iPadOS navigation.", "ja": "adaptiveなiPadOS navigationにはconvertible tab barを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Let people switch between tab-bar and sidebar presentations when appropriate."],
+      "review_note": "Retained MAY and recorded the user-switchable adaptive presentation."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0012": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "718eb555856e238964fb890453112d101ae6720e7021aa4ac47a2ca3f2287627", "section_path": ["Layout", "Platform considerations", "macOS"]},
+      "title": "Avoid critical macOS content at a window’s bottom edge",
+      "statement": {"en": "Avoid controls and critical information at the bottom of a macOS window.", "ja": "macOS windowのbottomにcontrolやcritical informationを置かない。"},
+      "conditions": ["People may move the bottom edge below the screen."],
+      "review_note": "Recorded the offscreen-window-edge risk."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0013": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "d873af1875a56fa43e3f70128965753ecb2d2a3e17b87edbd5aa61fc59bf0135", "section_path": ["Layout", "Platform considerations", "macOS"]},
+      "title": "Avoid the macOS camera housing area",
+      "statement": {"en": "Avoid displaying content within the macOS camera housing area.", "ja": "macOSのcamera housing area内にcontentを表示しない。"},
+      "conditions": ["The camera housing occupies the window’s top-edge region."],
+      "review_note": "Recorded the exact display-feature obstruction scope."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0014": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "a1fe10aaf4d65c96c1e04fbc6cb1769a78c3ed53564d09a6dc5bfcf3a0df390a", "section_path": ["Layout", "Platform considerations", "tvOS"]},
+      "title": "Design tvOS layouts for varied television sizes",
+      "statement": {"en": "Design tvOS layouts to work well across varied television sizes.", "ja": "tvOS layoutをさまざまなtelevision sizeで適切に表示できるよう設計する。"},
+      "conditions": ["tvOS shows the same interface rather than automatically adapting it to every display."],
+      "review_note": "Recorded the nonadaptive display behavior and cross-size requirement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0015": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "e5adc6b4a93d8336da421da9f7a20f2b775d5a8c6bd0a4b6f76da570299ba758", "section_path": ["Layout", "Platform considerations", "tvOS"]},
+      "title": "Pad tvOS focusable elements for their focused size",
+      "statement": {"en": "Include padding between tvOS focusable elements that accommodates their focused size.", "ja": "focus時のsizeを収めるpaddingをtvOS focusable element間に設ける。"},
+      "conditions": ["UIKit focus effects enlarge elements when they receive focus."],
+      "review_note": "Separated general focus padding from the explicit important-information non-overlap rule."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0016": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "2d40fb061b4833c8b38616becfd8c91dd0bc77cbe896a10a4e4605155b038c36", "section_path": ["Layout", "Platform considerations", "tvOS", "Nine-column grid"]},
+      "title": "Add vertical spacing around titled tvOS grid rows",
+      "statement": {"en": "Include additional vertical spacing around titled tvOS grid rows.", "ja": "title付きtvOS grid rowの上下に追加のvertical spacingを設ける。"},
+      "conditions": ["Separate a title from the preceding unfocused row.", "Separate the title from the following unfocused items."],
+      "review_note": "Recorded both title-spacing relationships despite the inherited final-grid section path."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0017": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "d236f512c250f5957a15a07f434986dd2ec91f7dd4ef1ae03da3df639f688740", "section_path": ["Layout", "Platform considerations", "tvOS", "Nine-column grid"]},
+      "title": "Use consistent tvOS grid spacing",
+      "statement": {"en": "Use consistent spacing in tvOS grids.", "ja": "tvOS gridでconsistentなspacingを使う。"},
+      "conditions": [
+        "2 columns: 860 pt width, 40 pt horizontal, 100 pt minimum vertical.",
+        "3 columns: 560 pt width, 40 pt horizontal, 100 pt minimum vertical.",
+        "4 columns: 410 pt width, 40 pt horizontal, 100 pt minimum vertical.",
+        "5 columns: 320 pt width, 40 pt horizontal, 100 pt minimum vertical.",
+        "6 columns: 260 pt width, 40 pt horizontal, 100 pt minimum vertical.",
+        "7 columns: 217 pt width, 40 pt horizontal, 100 pt minimum vertical.",
+        "8 columns: 184 pt width, 40 pt horizontal, 100 pt minimum vertical.",
+        "9 columns: 160 pt width, 40 pt horizontal, 100 pt minimum vertical."
+      ],
+      "review_note": "Preserved every official tvOS grid width and spacing row from the structured tables."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0018": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "e9f12fce698cb6ff132bea0be0581c322d834b0ccf1fb54bb31453b24bcd6164", "section_path": ["Layout", "Platform considerations", "tvOS", "Nine-column grid"]},
+      "title": "Keep partially hidden tvOS grid content symmetrical",
+      "statement": {"en": "Keep partially hidden tvOS grid content symmetrical across screen edges.", "ja": "部分的に隠れるtvOS grid contentをscreen edge間でsymmetricalにする。"},
+      "conditions": ["Use equal widths for partially hidden offscreen content on both sides."],
+      "review_note": "Recorded the equal-width technique for directing attention to fully visible content."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0019": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "cee2019a60290a6926a6c01a0fb4d56c35cfcdf0aadd7af5b452fc6773785805", "section_path": ["Layout", "Platform considerations", "visionOS"]},
+      "title": "Consider centering important visionOS content and controls",
+      "statement": {"en": "Consider centering the most important visionOS content and controls.", "ja": "最も重要なvisionOS contentとcontrolを中央に置くことを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Centering can improve discovery and interaction, especially in large windows."],
+      "review_note": "Retained MAY and recorded the large-window discoverability rationale."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0020": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "75760c641dbb8b6fdfeff578da3855f51c64382d6ae34b56867c7e481fe92ef0", "section_path": ["Layout", "Platform considerations", "visionOS"]},
+      "title": "Keep visionOS window content within its bounds",
+      "statement": {"en": "Keep visionOS window content within its XY-plane bounds.", "ja": "visionOS window contentをXY-planeのbounds内に保つ。"},
+      "conditions": ["Leave areas outside the window clear for sharing, resizing, moving, and closing controls."],
+      "review_note": "Recorded every system-control area affected by out-of-bounds 2D or 3D content."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0021": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "5819cb6e4ee38bc0ef048a98758ded79b8329c59954b749a8147b472a7d23374", "section_path": ["Layout", "Platform considerations", "visionOS"]},
+      "title": "Make visionOS interactive components comfortable to look at",
+      "statement": {"en": "Make visionOS interactive components easy and comfortable to look at.", "ja": "visionOS interactive componentを見つけやすくcomfortableに見ることができるようにする。"},
+      "conditions": ["Provide space for visual identification and the system hover effect."],
+      "review_note": "Separated the usability goal from the explicit enough-space requirement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0022": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "0925a4eb294f53985aaa2578cfa2c20a5cb991716cae44bbe7a7faf0b87a7829", "section_path": ["Layout", "Platform considerations", "watchOS"]},
+      "title": "Extend watchOS content edge to edge",
+      "statement": {"en": "Extend watchOS content from one screen edge to the other.", "ja": "watchOS contentをscreenの端から端まで広げる。"},
+      "conditions": ["Treat the Apple Watch bezel as natural visual padding."],
+      "exceptions": ["Consider minimizing padding between elements to preserve usable space."],
+      "review_note": "Recorded bezel padding and the space-preserving inner-padding option."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0023": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "0818afd0420888f59ec8e219cb36364f5918c6a38ee91430217e769550ee1588", "section_path": ["Layout", "Platform considerations", "watchOS"]},
+      "title": "Avoid too many side-by-side watchOS controls",
+      "statement": {"en": "Avoid placing more than two or three watchOS controls side by side.", "ja": "watchOS controlを横に2個または3個より多く並べない。"},
+      "conditions": ["Use at most three glyph buttons or two text buttons in a row as the general rule."],
+      "exceptions": ["Two short text buttons can work side by side when the screen does not scroll."],
+      "review_note": "Recorded glyph and text limits plus the short-label non-scrolling exception."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0024": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "d5b01dc609e6a0cdf5f9a01262dac4ef52f530dad9ac4baf77e4ad02e0e9e070", "section_path": ["Layout", "Platform considerations", "watchOS"]},
+      "title": "Support watchOS autorotation for shareable views",
+      "statement": {"en": "Support autorotation in watchOS views people may show to others.", "ja": "他者へ見せる可能性のあるwatchOS viewでautorotationをsupportする。"},
+      "conditions": ["Examples include showing an image or presenting a QR code to a reader."],
+      "review_note": "Recorded the wrist-away sharing scenarios that justify autorotation."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0026": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "a9e43b689fe475514958856eff9c4273a81129a7626dfea3b8e72cdb65e3baf3", "section_path": ["Layout", "Platform considerations", "iOS"]},
+      "conditions": ["The iOS app or game supports only landscape orientation."],
+      "review_note": "Recovered the explicit two-direction landscape requirement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0027": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "c8ea02f54952fff9f4422c1da49ea1c9ed34da943954ffc1668955437cbd0f8c", "section_path": ["Layout", "Platform considerations", "iOS"]},
+      "conditions": ["A full-width button is necessary despite the general guidance to avoid it."],
+      "review_note": "Recovered the explicit hardware-curvature and safe-area requirement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0028": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "3110100afe2e5924ddf9bd7d2d63cbe33ad719f1aeb1e298e73ccb33f1f6a6fe", "section_path": ["Layout", "Platform considerations", "iOS"]},
+      "title": "Hide the iOS status bar only when it adds value",
+      "statement": {"en": "Hide the iOS status bar only when doing so adds value or enhances the experience.", "ja": "価値を加えるか体験を高める場合にだけiOS status barを隠す。"},
+      "conditions": ["Keep useful status information visible in ordinary app contexts."],
+      "exceptions": ["Deep game or media experiences may benefit from hiding it."],
+      "review_note": "Recovered the omitted Hide lead and preserved its narrow value-based condition."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0029": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "b8c4a010ef4e40b4354f3d2671aff3f7eaed00c13998054b7ea7caabc6d235ca", "section_path": ["Layout", "Platform considerations", "iPadOS"]},
+      "title": "Defer compact iPadOS layouts while the full layout fits",
+      "statement": {"en": "While an iPadOS window resizes, defer compact layout until the full layout no longer fits.", "ja": "iPadOS windowのresize中はfull layoutが収まらなくなるまでcompact layoutへの切替を遅らせる。"},
+      "conditions": ["Design the full-screen layout first.", "For complex layouts, hide tertiary columns as width narrows."],
+      "review_note": "Recovered the contextual Defer lead and recorded the tertiary-column technique."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0030": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "be7086108a824722e716adff6710a82801acbbf791df5b864a87853113597e39", "section_path": ["Layout", "Platform considerations", "iPadOS"]},
+      "conditions": ["A person resizes the window between its minimum and maximum supported sizes."],
+      "review_note": "Recovered the explicit resizing-stability requirement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0031": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "4bbee34706dd5a9b782851315fe2f8f71eaf95ee012cb0547e4f8f080d111253", "section_path": ["Layout", "Platform considerations", "tvOS"]},
+      "title": "Adhere to the tvOS screen safe area",
+      "statement": {"en": "Keep primary tvOS content within the screen safe area.", "ja": "primary tvOS contentをscreen safe area内に保つ。"},
+      "conditions": ["Inset primary content 60 points vertically and 80 points horizontally."],
+      "exceptions": ["Only deliberately flowing or partially displayed offscreen content may extend outside."],
+      "review_note": "Recovered the Adhere lead and preserved all safe-area measurements and exceptions."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0032": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "cda6bd47029eb8de3ce29b6d2d24f1bc2242290ccb4eb70f4e78f2da232fc1bf", "section_path": ["Layout", "Platform considerations", "tvOS"]},
+      "conditions": ["A focus effect enlarges the element."],
+      "review_note": "Recovered the explicit important-information non-overlap requirement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0033": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "01ad12b3b8eae309fe7874e6feed4148976bbfe7676dfd4a506169012a9b137a", "section_path": ["Layout", "Platform considerations", "tvOS", "Grids"]},
+      "conditions": ["The interface uses a tvOS grid whose items enlarge on focus."],
+      "review_note": "Recovered the explicit row-and-column focus-spacing requirement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0034": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "384ae29ebe83d748fa14eb60b8dcc165d8a49a89fb953243e5897f212cc38084", "section_path": ["Layout", "Platform considerations", "visionOS"]},
+      "title": "Use an ornament for visionOS controls outside a window",
+      "statement": {"en": "When controls do not belong inside a visionOS window, place them in an ornament.", "ja": "controlがvisionOS window内に属さない場合はornamentへ配置する。"},
+      "conditions": ["Keep controls visually associated with the window without obstructing system controls."],
+      "review_note": "Recovered the conditional Use lead and recorded the system-control separation purpose."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0035": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "cf9d3b61157578bb26fdde744947ecbd6d9d0ba5c92710943dcffd51c0a13a0c", "section_path": ["Layout", "Platform considerations", "visionOS"]},
+      "conditions": ["Prevent the system hover effect from obscuring other content.", "The source gives 60-point center spacing as an example, not an unconditional minimum."],
+      "review_note": "Recovered the explicit spacing requirement while keeping 60 points as an example."
     }
   }
 }

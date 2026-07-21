@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 119
-- Retained MUST: 109
+- Reviewed rules: 125
+- Retained MUST: 115
 - Retained MUST_NOT: 10
 - Normative level changes: 3
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T13:26:02Z
+- Reviewed at: 2026-07-21T13:44:48Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -33,6 +33,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0033 — Recovered and retained MUST_NOT after confirming the explicit Always avoid directive. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0034 — Recovered and retained the explicit Be sure directive within its other-audio condition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0035 — Recovered and retained the explicit Always directive and its grounding purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-LAYOUT-0026 — Recovered and retained the explicit Make sure directive within its landscape-only condition. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0027 — Recovered and retained the explicit Make sure directive without removing the full-width-button exception condition. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0030 — Recovered and retained the explicit Be sure directive and its resizing range. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0032 — Recovered and retained the explicit Make sure directive as a positive non-overlap requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0033 — Recovered and retained the explicit Be sure directive for grid focus spacing. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0035 — Recovered and retained the explicit You need directive without promoting the 60-point example to a universal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -100,6 +106,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0033 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered and retained MUST_NOT after confirming the explicit Always avoid directive. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0034 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Be sure directive within its other-audio condition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0035 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Always directive and its grounding purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-LAYOUT-0026 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive within its landscape-only condition. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0027 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive without removing the full-width-button exception condition. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Be sure directive and its resizing range. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0032 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive as a positive non-overlap requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0033 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Be sure directive for grid focus spacing. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-LAYOUT-0035 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit You need directive without promoting the 60-point example to a universal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-MOTION-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-PRIVACY-0007 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0011 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
