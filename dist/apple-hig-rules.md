@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T14:14:58.032Z. 1926 active rules; 3 deprecated rules.
+Generated 2026-07-21T14:20:21.585Z. 1933 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -81,14 +81,21 @@ Generated 2026-07-21T14:14:58.032Z. 1926 active rules; 3 deprecated rules.
 - **HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001 · SHOULD · low** — Ensure the experience accommodates powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Remote. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
 ### designing-for-visionos
 
-- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001 · MAY · low** — Evaluate whether different types of immersion as you design ways to present your app’s most distinctive moments is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0002 · SHOULD · low** — Choose or apply windows for contained, UI-centric experiences in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0003 · SHOULD · low** — Apply the documented Designing for visionOS guidance to prioritize comfort. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0004 · SHOULD · low** — Apply the documented Designing for visionOS guidance to help people share activities with others. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0005 · SHOULD · low** — Present content within a person’s field of view, positioning it relative to their head. Avoid placing content in places in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0006 · AVOID · low** — Exclude displaying motion that’s overwhelming, jarring, too fast, or missing a stationary frame of reference from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0007 · SHOULD · low** — Ensure the experience accommodates indirect gestures that let people interact with apps while their hands rest in their lap or at their. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0008 · AVOID · low** — Exclude encouraging people to move too much while they’re in a fully immersive experience from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001 · MAY · high** — For each distinctive app moment, consider the minimum suitable level of immersion. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0002 · SHOULD · high** — Use standard windows for contained, UI-centric visionOS tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0003 · SHOULD · high** — Prioritize visual and physical comfort in visionOS apps and games. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0004 · SHOULD · high** — Use SharePlay to help people share spatial activities with others. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0005 · SHOULD · high** — Keep visionOS content within the person’s field of view and position it relative to their head. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0006 · AVOID · high** — Avoid visionOS motion that is overwhelming, jarring, too fast, or lacks a stationary reference. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0007 · SHOULD · high** — Support indirect visionOS gestures while people’s hands rest in their lap or at their sides. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0008 · AVOID · high** — Avoid encouraging excessive physical movement during fully immersive visionOS experiences. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0009 · SHOULD · high** — Prioritize user safety when designing for Apple Vision Pro. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0010 · AVOID · high** — Avoid using Apple Vision Pro while operating a vehicle or heavy machinery. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0011 · AVOID · high** — Avoid using Apple Vision Pro while moving through unsafe environments. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0012 · SHOULD · high** — Limit Apple Vision Pro fitting and use to people aged 13 or older. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0013 · SHOULD · high** — Use Apple Vision Pro’s space, Spatial Audio, immersion, passthrough, and spatial input features. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0014 · AVOID · high** — Avoid placing visionOS content where interaction requires head turns or position changes. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0015 · MUST · high** — When supporting direct gestures, keep interactive content nearby and interaction periods brief. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 ### designing-for-watchos
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0001 · MUST · medium** — On in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-watchos))

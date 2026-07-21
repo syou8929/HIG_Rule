@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 412
-- Reviewed batches: 39
+- Reviewed rules: 427
+- Reviewed batches: 40
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:09:06Z
+- Reviewed at: 2026-07-21T14:17:55Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -413,6 +413,21 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0029 · high — Recovered the fixed-layout AVOID guidance and preserved its practicability qualifier and exception. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030 · high — Recovered the explicit Make sure accessibility requirement and removed the incorrect touch-input modality inference. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 · high — Recovered the explicit Be sure inclusion requirement and preserved its necessity condition. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001 · high — Retained MAY and preserved the minimum-immersion test and full-immersion caution. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0002 · high — Recorded the standard-task context, familiar controls, relocation, and dynamic scaling. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0003 · high — Repaired the generic statement and linked it to every documented comfort fundamental. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0004 · high — Repaired the generic statement and recorded SharePlay and spatial Personas as the documented mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0005 · high — Narrowed the mixed generated rule to the positive field-of-view placement guidance; the avoidance clause is separate. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0006 · high — Preserved every documented motion-comfort qualifier at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0007 · high — Restored the complete resting-posture condition lost by the evidence-fragment limit. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0008 · high — Preserved the fully immersive condition and conservative AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0009 · high — Recovered the Important safety guidance as a high-confidence SHOULD without overstating its wording. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0010 · high — Recovered the safety warning and kept AVOID because the source says should not rather than an explicit Must not or Never. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0011 · high — Recovered the unsafe-environment warning and preserved its examples at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0012 · high — Recovered the age restriction as a high-confidence SHOULD; did not promote descriptive source wording to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0013 · high — Recovered the omitted platform-feature lead and preserved every named feature. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0014 · high — Split the avoidance clause from the mixed field-of-view rule to preserve atomic strength. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0015 · high — Recovered the conditional Make sure requirement and preserved both distance and duration constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
