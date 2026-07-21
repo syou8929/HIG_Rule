@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2464
+- Active atomic rules: 2473
 - Pages without rules: 16
-- Low-confidence rules: 930
-- Rules requiring human review: 930
+- Low-confidence rules: 926
+- Rules requiring human review: 926
 - Reference notes: 928
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 346
 - getting-started: 100
 - inputs: 219
-- patterns: 306
+- patterns: 315
 - technologies: 635
 
 ## Normative levels
 
 - AVOID: 327
-- MAY: 289
+- MAY: 294
 - MUST: 233
 - MUST_NOT: 21
-- SHOULD: 1594
+- SHOULD: 1598
 
 ## Rules by platform
 
 - carplay: 90
 - ios: 1655
 - ipados: 1622
-- macos: 1382
+- macos: 1390
 - tvos: 1095
-- visionos: 1432
+- visionos: 1440
 - watchos: 1136
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2398
+- manual: 2407
 
 ## Blocked pages
 
@@ -516,10 +516,6 @@ None.
 - HIG-PATTERNS-OFFERING-HELP-0006
 - HIG-PATTERNS-OFFERING-HELP-0007
 - HIG-PATTERNS-OFFERING-HELP-0008
-- HIG-PATTERNS-OFFERING-HELP-0009
-- HIG-PATTERNS-OFFERING-HELP-0010
-- HIG-PATTERNS-OFFERING-HELP-0011
-- HIG-PATTERNS-OFFERING-HELP-0012
 - HIG-PATTERNS-OFFERING-HELP-0014
 - HIG-PATTERNS-OFFERING-HELP-0015
 - HIG-PATTERNS-ONBOARDING-0001
@@ -1449,10 +1445,6 @@ None.
 - HIG-PATTERNS-OFFERING-HELP-0006
 - HIG-PATTERNS-OFFERING-HELP-0007
 - HIG-PATTERNS-OFFERING-HELP-0008
-- HIG-PATTERNS-OFFERING-HELP-0009
-- HIG-PATTERNS-OFFERING-HELP-0010
-- HIG-PATTERNS-OFFERING-HELP-0011
-- HIG-PATTERNS-OFFERING-HELP-0012
 - HIG-PATTERNS-OFFERING-HELP-0014
 - HIG-PATTERNS-OFFERING-HELP-0015
 - HIG-PATTERNS-ONBOARDING-0001

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T20:29:28Z",
+  "reviewed_at": "2026-07-21T20:36:36Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2515,6 +2515,19 @@
         "HIG-PATTERNS-MANAGING-ACCOUNTS-0013", "HIG-PATTERNS-MANAGING-ACCOUNTS-0014", "HIG-PATTERNS-MANAGING-ACCOUNTS-0015"
       ],
       "review_note": "Completed the priority-4 tvOS section, preserved two existing IDs, recovered five atomic rules, and kept credential-sharing capabilities optional without introducing unsupported MUST or MUST_NOT rules."
+    },
+    {
+      "id": "priority-4-offering-help-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T20:36:36Z",
+      "review_method": "Rendered Apple HIG Offering help platform limitations and complete macOS and visionOS tooltip guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/offering-help", "source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903"}],
+      "rule_ids": [
+        "HIG-PATTERNS-OFFERING-HELP-0009", "HIG-PATTERNS-OFFERING-HELP-0010", "HIG-PATTERNS-OFFERING-HELP-0011", "HIG-PATTERNS-OFFERING-HELP-0012",
+        "HIG-PATTERNS-OFFERING-HELP-0016", "HIG-PATTERNS-OFFERING-HELP-0017", "HIG-PATTERNS-OFFERING-HELP-0018", "HIG-PATTERNS-OFFERING-HELP-0019", "HIG-PATTERNS-OFFERING-HELP-0020",
+        "HIG-PATTERNS-OFFERING-HELP-0021", "HIG-PATTERNS-OFFERING-HELP-0022", "HIG-PATTERNS-OFFERING-HELP-0023", "HIG-PATTERNS-OFFERING-HELP-0024"
+      ],
+      "review_note": "Completed the remaining priority-4 tooltip section, preserved four existing IDs, recovered nine atomic rules, captured platform-specific trigger modalities and the 60–75-character target, and introduced no unsupported MUST or MUST_NOT rules."
     }
   ],
   "rules": {
@@ -5300,6 +5313,84 @@
       "conditions": ["The flow requests an email address."],
       "checks": {"automated": [], "manual": ["Does the tvOS account flow show the email keyboard when it requests an email address?"]}, "testability": "manual",
       "review_note": "Recovered the email-entry optimization, recorded remote and onscreen-keyboard context, and kept verification manual."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0009": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "4271b30736edd3f9e107b5f9fa5606db1ffbb5ff7d8ded603380e2149a21b98e", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Describe only the indicated control in a tooltip", "statement": {"en": "In a macOS or visionOS tooltip, describe only the control a person indicates interest in.", "ja": "macOSまたはvisionOSのtooltipでは、利用者が関心を示したcontrolだけを説明する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Do not expand the tooltip into help for nearby controls or a larger task."], "review_note": "Made the tooltip scope explicit and recorded the exclusion of nearby controls and larger tasks."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0010": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "213c22ed7234eb11116e1e88f314c73cb3a019b5c87fe224b6ce5665bd9ec50e", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Keep tooltip content brief", "statement": {"en": "Keep macOS and visionOS tooltip content brief and direct.", "ja": "macOSとvisionOSのtooltip内容を短く直接的にする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Prefer a concise description of the control's action or task."], "review_note": "Made the generic brevity lead concrete for macOS and visionOS tooltips."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0011": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "bf75a37e91c639bb2ddf31fc4c16f4fe33e4acab87623984be400b6bbc6b92fa", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Use sentence case in tooltips", "statement": {"en": "Use sentence case for macOS and visionOS tooltip text.", "ja": "macOSとvisionOSのtooltipテキストにはsentence caseを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Sentence case supports a casual and approachable tone."], "review_note": "Narrowed sentence-case guidance to the documented tooltip context."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0012": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "aafbaec1069c4ae9907cd861d0250f32f726b46b280204c551f6b73d592cf68c", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Consider context-sensitive tooltip text", "statement": {"en": "Consider changing a macOS or visionOS tooltip's text to match the control's current state.", "ja": "macOSまたはvisionOSのtooltipテキストをcontrolの現在状態に合わせて変えることを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["A control has multiple states that benefit from different explanations."], "review_note": "Made the optional context-sensitive behavior concrete without elevating consider guidance."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0016": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "0611b2a5a65edfe7b31120f1a80b711858a2457e09c22264c002a46695972124", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Consider showing macOS tooltips on pointer hover", "statement": {"en": "Consider showing a tooltip when a person holds the pointer over a control in an app running on a Mac.", "ja": "Macで動作するアプリでは、control上にpointerを置いたときtooltipを表示することを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": ["pointer"]},
+      "conditions": ["This capability also applies to iPhone and iPad apps running on a Mac."], "review_note": "Recovered the macOS pointer-hover capability as MAY and recorded the app-on-Mac scope."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0017": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "0611b2a5a65edfe7b31120f1a80b711858a2457e09c22264c002a46695972124", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Consider showing visionOS tooltips on gaze or pointer hover", "statement": {"en": "Consider showing a visionOS tooltip when a person looks at a control or holds the pointer over it.", "ja": "visionOSでは、controlを見つめるかpointerを置いたときtooltipを表示することを検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": ["gaze", "pointer"]},
+      "conditions": ["Use the platform tooltip behavior for the indicated control."], "review_note": "Recovered the visionOS gaze and pointer-hover capabilities as MAY."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0018": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "da34a596560f0fe24c415468907dc677e0a487a7347dcf5d487829f743137355", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Describe the action a tooltip control initiates", "statement": {"en": "Describe the action or task initiated by the control in its macOS or visionOS tooltip.", "ja": "macOSまたはvisionOSのtooltipで、controlが開始するactionまたはtaskを説明する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Focus the description on what using the control does."], "review_note": "Recovered the missing action-description lead and made its tooltip target explicit."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0019": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "da34a596560f0fe24c415468907dc677e0a487a7347dcf5d487829f743137355", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Prefer beginning tooltip descriptions with a verb", "statement": {"en": "Prefer beginning a macOS or visionOS tooltip description with a verb.", "ja": "macOSまたはvisionOSのtooltip説明はverbで始めることを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["A verb directly communicates the control's action or task."], "review_note": "Separated the often-works-well writing preference and retained recommendation strength."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0020": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "213c22ed7234eb11116e1e88f314c73cb3a019b5c87fe224b6ce5665bd9ec50e", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Keep tooltip content within 60 to 75 characters when possible", "statement": {"en": "When possible, limit macOS and visionOS tooltip content to a maximum of 60 to 75 characters.", "ja": "可能な場合、macOSとvisionOSのtooltip内容を最大60〜75文字に収める。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Account for localization because translated text length often changes."], "review_note": "Recovered the numeric target as practicability-qualified SHOULD rather than a hard MUST."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0021": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "213c22ed7234eb11116e1e88f314c73cb3a019b5c87fe224b6ce5665bd9ec50e", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Consider sentence fragments for concise tooltips", "statement": {"en": "Consider using a sentence fragment to keep macOS and visionOS tooltip descriptions brief and direct.", "ja": "macOSとvisionOSのtooltip説明を短く直接的にするためsentence fragmentの使用を検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["A fragment communicates the control's action clearly."], "review_note": "Separated one optional brevity technique and retained consider-level strength."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0022": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "213c22ed7234eb11116e1e88f314c73cb3a019b5c87fe224b6ce5665bd9ec50e", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Consider omitting articles from concise tooltip text", "statement": {"en": "Consider omitting articles to keep macOS and visionOS tooltip descriptions brief and direct.", "ja": "macOSとvisionOSのtooltip説明を短く直接的にするためarticleの省略を検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Omission preserves a clear and natural description."], "review_note": "Separated the second optional brevity technique and retained consider-level strength."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0023": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "213c22ed7234eb11116e1e88f314c73cb3a019b5c87fe224b6ce5665bd9ec50e", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Consider simplifying controls that need verbose tooltips", "statement": {"en": "If a control needs a large amount of tooltip text, consider simplifying the interface design.", "ja": "controlのtooltipに大量のテキストが必要な場合、interface designの簡素化を検討する。"}, "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The control cannot be described briefly and directly."], "review_note": "Recovered the conditional redesign prompt without promoting consider guidance."
+    },
+    "HIG-PATTERNS-OFFERING-HELP-0024": {
+      "source": {"source_hash": "ccf4be3b58ef1b894500b9e39b9c2751c3531dcd48e22310814cb8ce184cf903", "source_sentence_hash": "bf75a37e91c639bb2ddf31fc4c16f4fe33e4acab87623984be400b6bbc6b92fa", "section_path": ["Offering help", "Platform considerations", "macOS, visionOS"]},
+      "title": "Omit ending punctuation from complete tooltip sentences", "statement": {"en": "For complete macOS and visionOS tooltip sentences, omit ending punctuation unless the app's style requires it.", "ja": "macOSとvisionOSの完全なtooltip文では、アプリのstyleで必要な場合を除き文末句読点を省く。"},
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The tooltip uses a complete sentence."], "exceptions": ["Keep ending punctuation when required for consistency with the app's style."], "review_note": "Recovered the conditional punctuation guidance and preserved its style-consistency exception."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},
@@ -14047,6 +14138,7 @@
       },
       "confidence": "high",
       "review_required": false,
+      "scope": {"portability": "platform-specific", "platforms": ["macos", "visionos"], "devices": ["mac", "apple-vision-pro"], "components": [], "modalities": []},
       "conditions": [
         "Repeated names consume tooltip space and rarely add value to the description."
       ],

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1457
-- Reviewed batches: 98
+- Reviewed rules: 1470
+- Reviewed batches: 99
 - Official source only: yes
-- Reviewed at: 2026-07-21T20:29:28Z
+- Reviewed at: 2026-07-21T20:36:36Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1220,7 +1220,20 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-MULTITASKING-0015 · high — Recovered the primary-audio response and every source example. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0016 · high — Recovered both short-interruption responses, the example, and the restoration requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0017 · high — Recovered the completion rule and preserved its no-more-input condition and examples. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-OFFERING-HELP-0009 · high — Made the tooltip scope explicit and recorded the exclusion of nearby controls and larger tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0010 · high — Made the generic brevity lead concrete for macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0011 · high — Narrowed sentence-case guidance to the documented tooltip context. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0012 · high — Made the optional context-sensitive behavior concrete without elevating consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0016 · high — Recovered the macOS pointer-hover capability as MAY and recorded the app-on-Mac scope. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0017 · high — Recovered the visionOS gaze and pointer-hover capabilities as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0018 · high — Recovered the missing action-description lead and made its tooltip target explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0019 · high — Separated the often-works-well writing preference and retained recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0020 · high — Recovered the numeric target as practicability-qualified SHOULD rather than a hard MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0021 · high — Separated one optional brevity technique and retained consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0022 · high — Separated the second optional brevity technique and retained consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0023 · high — Recovered the conditional redesign prompt without promoting consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0024 · high — Recovered the conditional punctuation guidance and preserved its style-consistency exception. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-PLAYING-VIDEO-0001 · high — Recorded the system-player default and constrained the custom-player alternative to essential needs. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0002 · high — Retained MUST from the explicit always directive and recorded padding and Picture in Picture failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0003 · high — Recorded the value test and documented platform scope without treating extra information as a default. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
