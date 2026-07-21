@@ -37,6 +37,7 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Break up multistep workflows", section_path: [], source_sentence_hash: "b".repeat(64), word_count: 4 }), true);
   assert.equal(isActionable({ text: "Avoiding animating depth changes", section_path: [], source_sentence_hash: "c".repeat(64), word_count: 4 }), true);
   assert.equal(isActionable({ text: "Always On", section_path: [], source_sentence_hash: "d".repeat(64), word_count: 2 }), false);
+  assert.equal(isActionable({ text: "Tracking requests", section_path: [], source_sentence_hash: "e".repeat(64), word_count: 2 }), false);
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 
@@ -112,6 +113,7 @@ test("excludes source-reviewed normative rules from the prioritized review queue
   assert.equal(pending.some((rule) => ["MUST", "MUST_NOT"].includes(rule.normative_level)), false);
   assert.ok(batch.length > 0);
   assert.equal(batch.every((rule) => rule.priority_rank === batch[0]?.priority_rank), true);
+  assert.equal(batch.every((rule) => rule.source.url === batch[0]?.source.url), true);
 });
 
 test("keeps general source reviews aligned with canonical traces", async () => {
@@ -124,5 +126,18 @@ test("keeps general source reviews aligned with canonical traces", async () => {
     assert.equal(rule.source.source_sentence_hash, review.source.source_sentence_hash);
     assert.deepEqual(rule.source.section_path, review.source.section_path);
     assert.equal(rule.review_required, false);
+  }
+  const reviewedBatchIds = new Set<string>();
+  for (const batch of sourceReview.batches) {
+    const pageByUrl = new Map(batch.pages.map((page) => [page.url, page]));
+    for (const id of batch.rule_ids) {
+      assert.equal(reviewedBatchIds.has(id), false);
+      reviewedBatchIds.add(id);
+      const rule = ruleById.get(id);
+      assert.ok(rule);
+      assert.equal(rule.source.source_hash, pageByUrl.get(rule.source.url)?.source_hash);
+      assert.equal(rule.review_required, batch.review_required);
+      assert.equal(rule.confidence, batch.confidence);
+    }
   }
 });

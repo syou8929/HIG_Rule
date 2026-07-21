@@ -10,8 +10,8 @@
       "ja": "「Privacy」において「Be transparent about how your app collects and uses people’s data」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -89,8 +89,8 @@
       "ja": "「Privacy」において「Adopt system-defined privacy protections and follow security best practices」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -159,17 +159,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-PRIVACY-0003",
-    "title": "Avoid requesting permission at launch unless the data or resource is required for your app to function",
+    "title": "Avoid launch-time permission requests unless required for operation",
     "category": "foundations",
     "topic": "privacy",
     "subtopic": "requesting-permission",
     "statement": {
-      "en": "Exclude requesting permission at launch unless the data or resource is required for your app to function from the applicable experience.",
-      "ja": "該当する体験ではrequesting permission at launch unless the data or resource is required for your app to functionを避ける。"
+      "en": "Avoid requesting permission at launch unless the app needs the data or resource to function.",
+      "ja": "アプリの動作にデータやリソースが必要な場合を除き、起動時の許可要求を避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -194,7 +194,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer asking when the person uses the feature that needs access.",
+      "A launch-time request remains appropriate when the app cannot function without the requested access."
     ],
     "exceptions": [],
     "rationale": {
@@ -204,7 +205,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude requesting permission at launch unless the data or resource is required for your app to function from the applicable experience.” in the documented Privacy context?"
+        "Does the design satisfy “Avoid requesting permission at launch unless the app needs the data or resource to function.” in the documented Privacy context?"
       ]
     },
     "testability": "manual",
@@ -224,7 +225,7 @@
       "retrieved_at": "2026-07-21T11:15:14.421Z",
       "source_hash": "4e96921c0f0586f0b628d03280e6097a342748e3000415b07d8f9c7239a301cb",
       "source_sentence_hash": "a9b24c39e846bf21c40d3098f7825c05747b35b0406a4a12787c0c2e684073d9",
-      "evidence_paraphrase": "Exclude requesting permission at launch unless the data or resource is required for your app to function from the applicable experience."
+      "evidence_paraphrase": "Avoid requesting permission at launch unless the app needs the data or resource to function."
     },
     "tags": [
       "foundations",
@@ -233,22 +234,22 @@
     ],
     "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Exclude requesting permission at launch unless the data or resource is required for your app to function from the applicable experience.",
+    "apple_native_rule": "Avoid requesting permission at launch unless the app needs the data or resource to function.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-PRIVACY-0004",
-    "title": "Write copy that clearly describes how your app uses the ability, data, or resource you’re requesting",
+    "title": "Explain each permission request with clear purpose copy",
     "category": "foundations",
     "topic": "privacy",
     "subtopic": "requesting-permission",
     "statement": {
-      "en": "Apply the documented Privacy guidance to write copy that clearly describes how your app uses the ability, data, or resource you’re requesting.",
-      "ja": "「Privacy」において「Write copy that clearly describes how your app uses the ability, data, or resource you’re requesting」の指針を適用する。"
+      "en": "Write a brief, specific purpose string that clearly explains how the app uses the requested capability, data, or resource.",
+      "ja": "要求する機能、データ、リソースの用途を明確に説明する、簡潔で具体的な目的文を書く。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -273,7 +274,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a complete sentence in sentence case.",
+      "Avoid passive voice and end the purpose string with a period."
     ],
     "exceptions": [],
     "rationale": {
@@ -283,7 +285,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Privacy guidance to write copy that clearly describes how your app uses the ability, data, or resource you’re requesting.” in the documented Privacy context?"
+        "Does the design satisfy “Write a brief, specific purpose string that clearly explains how the app uses the requested capability, data, or resource.” in the documented Privacy context?"
       ]
     },
     "testability": "manual",
@@ -303,7 +305,7 @@
       "retrieved_at": "2026-07-21T11:15:14.421Z",
       "source_hash": "4e96921c0f0586f0b628d03280e6097a342748e3000415b07d8f9c7239a301cb",
       "source_sentence_hash": "941e6320b7f6240b97487c073f1e2d7fc482e2e362cac0c72aba92de2fc7b929",
-      "evidence_paraphrase": "Apply the documented Privacy guidance to write copy that clearly describes how your app uses the ability, data, or resource you’re requesting."
+      "evidence_paraphrase": "Write a brief, specific purpose string that clearly explains how the app uses the requested capability, data, or resource."
     },
     "tags": [
       "foundations",
@@ -312,22 +314,22 @@
     ],
     "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented Privacy guidance to write copy that clearly describes how your app uses the ability, data, or resource you’re requesting.",
+    "apple_native_rule": "Write a brief, specific purpose string that clearly explains how the app uses the requested capability, data, or resource.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-PRIVACY-0005",
-    "title": "Include only one button and make it clear that it opens the system alert",
+    "title": "Use one clearly labeled button to open a system permission alert",
     "category": "foundations",
     "topic": "privacy",
     "subtopic": "pre-alert-screens-windows-or-views",
     "statement": {
-      "en": "Apply the documented Privacy guidance to include only one button and make it clear that it opens the system alert.",
-      "ja": "「Privacy」において「Include only one button and make it clear that it opens the system alert」の指針を適用する。"
+      "en": "On a permission pre-alert, provide one button whose label clearly indicates that the system alert comes next.",
+      "ja": "許可の事前画面には、次にシステムアラートが開くことを明確に示すボタンを1つだけ置く。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -352,7 +354,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a progression label such as Continue or Next.",
+      "Do not label the pre-alert button with an approval term such as Allow."
     ],
     "exceptions": [],
     "rationale": {
@@ -362,7 +365,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Privacy guidance to include only one button and make it clear that it opens the system alert.” in the documented Privacy context?"
+        "Does the design satisfy “On a permission pre-alert, provide one button whose label clearly indicates that the system alert comes next.” in the documented Privacy context?"
       ]
     },
     "testability": "manual",
@@ -383,7 +386,7 @@
       "retrieved_at": "2026-07-21T11:15:14.421Z",
       "source_hash": "4e96921c0f0586f0b628d03280e6097a342748e3000415b07d8f9c7239a301cb",
       "source_sentence_hash": "16eb0bf131b444f748870cbb4dc89aa9f5226b53578651043cc05eb29960eb53",
-      "evidence_paraphrase": "Apply the documented Privacy guidance to include only one button and make it clear that it opens the system alert."
+      "evidence_paraphrase": "On a permission pre-alert, provide one button whose label clearly indicates that the system alert comes next."
     },
     "tags": [
       "foundations",
@@ -393,22 +396,22 @@
     ],
     "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented Privacy guidance to include only one button and make it clear that it opens the system alert.",
+    "apple_native_rule": "On a permission pre-alert, provide one button whose label clearly indicates that the system alert comes next.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-PRIVACY-0006",
-    "title": "Don’t include additional actions in your custom screen or window",
+    "title": "Avoid secondary actions on permission pre-alerts",
     "category": "foundations",
     "topic": "privacy",
     "subtopic": "pre-alert-screens-windows-or-views",
     "statement": {
-      "en": "Exclude include additional actions in your custom screen or window from the applicable experience.",
-      "ja": "該当する体験ではinclude additional actions in your custom screen or windowを避ける。"
+      "en": "Avoid adding secondary actions that let people leave a permission pre-alert before viewing the system alert.",
+      "ja": "システムアラートを見る前に許可の事前画面から離れられる副次アクションを追加しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -443,7 +446,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude include additional actions in your custom screen or window from the applicable experience.” in the documented Privacy context?"
+        "Does the design satisfy “Avoid adding secondary actions that let people leave a permission pre-alert before viewing the system alert.” in the documented Privacy context?"
       ]
     },
     "testability": "manual",
@@ -464,7 +467,7 @@
       "retrieved_at": "2026-07-21T11:15:14.421Z",
       "source_hash": "4e96921c0f0586f0b628d03280e6097a342748e3000415b07d8f9c7239a301cb",
       "source_sentence_hash": "24278d7667fd56e75d54c27fd6f7b571a417cc962778f0bf22bb68bda5a8730c",
-      "evidence_paraphrase": "Exclude include additional actions in your custom screen or window from the applicable experience."
+      "evidence_paraphrase": "Avoid adding secondary actions that let people leave a permission pre-alert before viewing the system alert."
     },
     "tags": [
       "foundations",
@@ -474,7 +477,7 @@
     ],
     "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Exclude include additional actions in your custom screen or window from the applicable experience.",
+    "apple_native_rule": "Avoid adding secondary actions that let people leave a permission pre-alert before viewing the system alert.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -560,17 +563,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-PRIVACY-0008",
-    "title": "Consider using the location button to give people a lightweight way to share their location for specific ap…",
+    "title": "Consider the location button for feature-specific sharing",
     "category": "foundations",
     "topic": "privacy",
     "subtopic": "location-button",
     "statement": {
-      "en": "Evaluate whether using the location button to give people a lightweight way to share their location for specific app features is appropriate for the current context.",
-      "ja": "using the location button to give people a lightweight way to share their location for specific app featuresが現在の状況に適切か検討する。"
+      "en": "Consider using the location button for lightweight, feature-specific location sharing.",
+      "ja": "特定機能で位置情報を手軽に共有できるよう、位置情報ボタンの利用を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -595,7 +598,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The person has shown interest in a feature that benefits from one-time or lightweight location sharing."
     ],
     "exceptions": [],
     "rationale": {
@@ -605,7 +608,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using the location button to give people a lightweight way to share their location for specific app features is appropriate for the current context.” in the documented Privacy context?"
+        "Does the design satisfy “Consider using the location button for lightweight, feature-specific location sharing.” in the documented Privacy context?"
       ]
     },
     "testability": "manual",
@@ -625,7 +628,7 @@
       "retrieved_at": "2026-07-21T11:15:14.421Z",
       "source_hash": "4e96921c0f0586f0b628d03280e6097a342748e3000415b07d8f9c7239a301cb",
       "source_sentence_hash": "4b6dd0305158f884ac79da29d24beb490799d342e8e28c964a311318fa30b737",
-      "evidence_paraphrase": "Evaluate whether using the location button to give people a lightweight way to share their location for specific app features is appropriate for the current context."
+      "evidence_paraphrase": "Consider using the location button for lightweight, feature-specific location sharing."
     },
     "tags": [
       "foundations",
@@ -634,7 +637,7 @@
     ],
     "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using the location button to give people a lightweight way to share their location for specific app features is appropriate for the current context.",
+    "apple_native_rule": "Consider using the location button for lightweight, feature-specific location sharing.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -648,8 +651,8 @@
       "ja": "customizing the location button to harmonize with your UIが現在の状況に適切か検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -727,8 +730,8 @@
       "ja": "該当する体験ではrelying solely on passwords for authenticationを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -885,8 +888,8 @@
       "ja": "該当する体験ではinventing custom authentication schemesを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -955,17 +958,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-PRIVACY-0013",
-    "title": "Avoid making assumptions about who is signed in",
+    "title": "Avoid assuming who is signed in on macOS",
     "category": "foundations",
     "topic": "privacy",
     "subtopic": "macos",
     "statement": {
-      "en": "Exclude making assumptions about who is signed in from the applicable experience.",
-      "ja": "該当する体験ではmaking assumptions about who is signed inを避ける。"
+      "en": "Avoid assuming a single person's identity from the signed-in macOS session.",
+      "ja": "サインイン中のmacOSセッションから、利用者が1人だと決めつけない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "medium",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -980,7 +983,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Account for fast user switching and multiple active people on the same system."
     ],
     "exceptions": [],
     "rationale": {
@@ -990,7 +993,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude making assumptions about who is signed in from the applicable experience.” in the documented Privacy context?"
+        "Does the design satisfy “Avoid assuming a single person's identity from the signed-in macOS session.” in the documented Privacy context?"
       ]
     },
     "testability": "manual",
@@ -1011,7 +1014,7 @@
       "retrieved_at": "2026-07-21T11:15:14.421Z",
       "source_hash": "4e96921c0f0586f0b628d03280e6097a342748e3000415b07d8f9c7239a301cb",
       "source_sentence_hash": "8abe13aaa1ff3157fabf18df3643d8de31472a92254a771d8f46ee9e23c97674",
-      "evidence_paraphrase": "Exclude making assumptions about who is signed in from the applicable experience."
+      "evidence_paraphrase": "Avoid assuming a single person's identity from the signed-in macOS session."
     },
     "tags": [
       "foundations",
@@ -1021,7 +1024,7 @@
     ],
     "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Exclude making assumptions about who is signed in from the applicable experience.",
+    "apple_native_rule": "Avoid assuming a single person's identity from the signed-in macOS session.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1101,25 +1104,26 @@
       "tracking-requests"
     ],
     "priority_rank": 3,
-    "status": "active",
+    "status": "deprecated",
     "apple_native_rule": "Keep requests synchronized.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.",
+    "deprecated_at": "2026-07-21T11:32:28.579Z"
   },
   {
     "id": "HIG-FOUNDATIONS-PRIVACY-0015",
-    "title": "Choose the system-provided title that works best with your feature, such as “Current Location” or “Share My…",
+    "title": "Choose a system-provided location-button title when customizing",
     "category": "foundations",
     "topic": "privacy",
     "subtopic": "location-button",
     "statement": {
-      "en": "Apply the documented Privacy guidance to choose the system-provided title that works best with your feature, such as “Current Location” or “Share My Current Location.”.",
-      "ja": "「Privacy」において「Choose the system-provided title that works best with your feature, such as “Current Location” or “Share My Current Location.”」の指針を適用する。"
+      "en": "When customizing the location button, choose the system-provided title that best fits the feature.",
+      "ja": "位置情報ボタンをカスタマイズする場合は、機能に最も合うシステム提供タイトルを選ぶ。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MAY",
+    "confidence": "medium",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -1142,7 +1146,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Customization is optional under the parent consider guidance.",
+      "Use a system-provided title such as Current Location or Share My Current Location."
     ],
     "exceptions": [],
     "rationale": {
@@ -1152,7 +1157,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Privacy guidance to choose the system-provided title that works best with your feature, such as “Current Location” or “Share My Current Location.”.” in the documented Privacy context?"
+        "Does the design satisfy “When customizing the location button, choose the system-provided title that best fits the feature.” in the documented Privacy context?"
       ]
     },
     "testability": "manual",
@@ -1172,7 +1177,7 @@
       "retrieved_at": "2026-07-21T11:15:14.421Z",
       "source_hash": "4e96921c0f0586f0b628d03280e6097a342748e3000415b07d8f9c7239a301cb",
       "source_sentence_hash": "56d72583133e0c517ac8f65cdb3368d842b94a2bb5422dd891ee172c95f23333",
-      "evidence_paraphrase": "Apply the documented Privacy guidance to choose the system-provided title that works best with your feature, such as “Current Location” or “Share My Current Location.”."
+      "evidence_paraphrase": "When customizing the location button, choose the system-provided title that best fits the feature."
     },
     "tags": [
       "foundations",
@@ -1181,24 +1186,24 @@
     ],
     "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented Privacy guidance to choose the system-provided title that works best with your feature, such as “Current Location” or “Share My Current Location.”.",
+    "apple_native_rule": "When customizing the location button, choose the system-provided title that best fits the feature.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-PRIVACY-0016",
-    "title": "Choose the filled or outlined location glyph",
+    "title": "Choose a system location glyph when customizing",
     "category": "foundations",
     "topic": "privacy",
     "subtopic": "location-button",
     "statement": {
-      "en": "Apply the documented Privacy guidance to choose the filled or outlined location glyph.",
-      "ja": "「Privacy」において「Choose the filled or outlined location glyph」の指針を適用する。"
+      "en": "When customizing the location button, choose the system-provided filled or outlined location glyph.",
+      "ja": "位置情報ボタンをカスタマイズする場合は、システム提供の塗りつぶしまたは輪郭の位置情報グリフを選ぶ。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MAY",
+    "confidence": "medium",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -1221,7 +1226,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Customization is optional under the parent consider guidance."
     ],
     "exceptions": [],
     "rationale": {
@@ -1231,7 +1236,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Privacy guidance to choose the filled or outlined location glyph.” in the documented Privacy context?"
+        "Does the design satisfy “When customizing the location button, choose the system-provided filled or outlined location glyph.” in the documented Privacy context?"
       ]
     },
     "testability": "manual",
@@ -1251,7 +1256,7 @@
       "retrieved_at": "2026-07-21T11:15:14.421Z",
       "source_hash": "4e96921c0f0586f0b628d03280e6097a342748e3000415b07d8f9c7239a301cb",
       "source_sentence_hash": "313b4ffd23abf27dc1a530a0d76ee57c8fffb0f59a526c75ab4e6f60453a3500",
-      "evidence_paraphrase": "Apply the documented Privacy guidance to choose the filled or outlined location glyph."
+      "evidence_paraphrase": "When customizing the location button, choose the system-provided filled or outlined location glyph."
     },
     "tags": [
       "foundations",
@@ -1260,7 +1265,7 @@
     ],
     "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented Privacy guidance to choose the filled or outlined location glyph.",
+    "apple_native_rule": "When customizing the location button, choose the system-provided filled or outlined location glyph.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

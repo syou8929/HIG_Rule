@@ -21,6 +21,9 @@ export function pendingRuleReviews(rules: Rule[]): Rule[] {
 
 export function nextReviewBatch(rules: Rule[]): Rule[] {
   const pending = pendingRuleReviews(rules);
-  const priority = pending[0]?.priority_rank;
-  return priority === undefined ? [] : pending.filter((rule) => rule.priority_rank === priority);
+  const first = pending[0];
+  if (!first) return [];
+  return pending.filter((rule) =>
+    rule.priority_rank === first.priority_rank
+    && rule.source.url === first.source.url);
 }
