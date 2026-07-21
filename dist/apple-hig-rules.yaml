@@ -77396,16 +77396,16 @@
   apple_native_rule: Support macOS keyboard shortcuts for faster actions and keyboard-only work styles.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001
-  title: Support powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Re…
+  title: Support familiar Siri Remote gestures
   category: getting-started
   topic: designing-for-tvos
   subtopic: best-practices
   statement:
-    en: Ensure the experience accommodates powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Remote.
-    ja: powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Remoteを利用できる設計にする。
+    en: Support fluid, familiar Siri Remote gestures for powerful and delightful tvOS interactions.
+    ja: powerfulでdelightfulなtvOS interactionのためfluidでfamiliarなSiri Remote gestureをsupportする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -77416,11 +77416,10 @@
       - apple-tv
     components: []
     modalities:
-      - voice
       - gesture
       - remote-control
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use gesture behavior people already know from the Siri Remote.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Designing for tvOS experience on the scoped Apple platforms.
@@ -77428,7 +77427,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Ensure the experience accommodates powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Remote.” in the documented Designing for tvOS context?
+      - Does the design satisfy “Support fluid, familiar Siri Remote gestures for powerful and delightful tvOS interactions.” in the documented Designing for tvOS context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -77440,10 +77439,10 @@
     section_path:
       - Designing for tvOS
       - Best practices
-    retrieved_at: 2026-07-21T11:14:47.971Z
+    retrieved_at: 2026-07-21T19:40:53Z
     source_hash: 295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90
     source_sentence_hash: 5e158d5193fdd8480c826cfbf1a09b04067f44809a1385a664f6baf86f82de40
-    evidence_paraphrase: Ensure the experience accommodates powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Remote.
+    evidence_paraphrase: Support fluid, familiar Siri Remote gestures for powerful and delightful tvOS interactions.
   tags:
     - getting-started
     - designing-for-tvos
@@ -77453,7 +77452,223 @@
     - remote-control
   priority_rank: 4
   status: active
-  apple_native_rule: Ensure the experience accommodates powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Remote.
+  apple_native_rule: Support fluid, familiar Siri Remote gestures for powerful and delightful tvOS interactions.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0002
+  title: Use the tvOS focus system
+  category: getting-started
+  topic: designing-for-tvos
+  subtopic: best-practices
+  statement:
+    en: Use the tvOS focus system to highlight and expand items as people move among them.
+    ja: 項目間を移動するときhighlightとexpandを行うtvOS focus systemを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - tvos
+    devices:
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Help people know what to do and where they are at all times.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Designing for tvOS experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDesigning for tvOSの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use the tvOS focus system to highlight and expand items as people move among them.” in the documented Designing for tvOS context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos
+    page_title: Designing for tvOS
+    section_path:
+      - Designing for tvOS
+      - Best practices
+    retrieved_at: 2026-07-21T19:40:53Z
+    source_hash: 295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90
+    source_sentence_hash: 801de4d324d392ee16cec905b1fd9f5b7e846044aad7c06a345c6cbea2ac5ef8
+    evidence_paraphrase: Use the tvOS focus system to highlight and expand items as people move among them.
+  tags:
+    - getting-started
+    - designing-for-tvos
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use the tvOS focus system to highlight and expand items as people move among them.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0003
+  title: Create a clear tvOS cinematic experience
+  category: getting-started
+  topic: designing-for-tvos
+  subtopic: best-practices
+  statement:
+    en: Create a clear, legible, and captivating tvOS cinematic experience that works from across the room.
+    ja: 部屋の反対側からもclear、legible、captivatingなtvOS cinematic experienceを作る。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - tvos
+    devices:
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Use edge-to-edge artwork, subtle fluid animation, and engaging audio as supporting techniques.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Designing for tvOS experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDesigning for tvOSの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Create a clear, legible, and captivating tvOS cinematic experience that works from across the room.” in the documented Designing for tvOS context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos
+    page_title: Designing for tvOS
+    section_path:
+      - Designing for tvOS
+      - Best practices
+    retrieved_at: 2026-07-21T19:40:53Z
+    source_hash: 295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90
+    source_sentence_hash: 80a984843114bad9162aa3b2456ea3c3e22e1ea04b75c966faba46b8eb22ae35
+    evidence_paraphrase: Create a clear, legible, and captivating tvOS cinematic experience that works from across the room.
+  tags:
+    - getting-started
+    - designing-for-tvos
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Create a clear, legible, and captivating tvOS cinematic experience that works from across the room.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0004
+  title: Make tvOS multiuser sign-in easy and infrequent
+  category: getting-started
+  topic: designing-for-tvos
+  subtopic: best-practices
+  statement:
+    en: Make tvOS multiuser sign-in easy and infrequent, including shared sign-in.
+    ja: shared sign-inを含むtvOS multiuser sign-inをeasyかつinfrequentにする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - tvos
+    devices:
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Handle shared sign-in as part of the multiuser experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Designing for tvOS experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDesigning for tvOSの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Make tvOS multiuser sign-in easy and infrequent, including shared sign-in.” in the documented Designing for tvOS context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos
+    page_title: Designing for tvOS
+    section_path:
+      - Designing for tvOS
+      - Best practices
+    retrieved_at: 2026-07-21T19:40:53Z
+    source_hash: 295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90
+    source_sentence_hash: cb4fa7e9a4f6e298d4cc5368cc9e55da6652fdbe98adc4c7879762df827a427e
+    evidence_paraphrase: Make tvOS multiuser sign-in easy and infrequent, including shared sign-in.
+  tags:
+    - getting-started
+    - designing-for-tvos
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Make tvOS multiuser sign-in easy and infrequent, including shared sign-in.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0005
+  title: Switch tvOS profiles with the current viewer
+  category: getting-started
+  topic: designing-for-tvos
+  subtopic: best-practices
+  statement:
+    en: Switch tvOS profiles automatically when people change the current viewer.
+    ja: current viewerが変わったときtvOS profileを自動で切り替える。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - tvos
+    devices:
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Apply automatic switching within a multiuser experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Designing for tvOS experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDesigning for tvOSの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Switch tvOS profiles automatically when people change the current viewer.” in the documented Designing for tvOS context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos
+    page_title: Designing for tvOS
+    section_path:
+      - Designing for tvOS
+      - Best practices
+    retrieved_at: 2026-07-21T19:40:53Z
+    source_hash: 295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90
+    source_sentence_hash: cb4fa7e9a4f6e298d4cc5368cc9e55da6652fdbe98adc4c7879762df827a427e
+    evidence_paraphrase: Switch tvOS profiles automatically when people change the current viewer.
+  tags:
+    - getting-started
+    - designing-for-tvos
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Switch tvOS profiles automatically when people change the current viewer.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001
   title: Consider the minimum immersion needed for each distinctive moment

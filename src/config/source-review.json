@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:37:03Z",
+  "reviewed_at": "2026-07-21T19:40:53Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2362,6 +2362,20 @@
         "HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0007"
       ],
       "review_note": "Completed the macOS-specific Best practices section; preserved all four existing IDs, recovered large-display and keyboard-shortcut guidance, split full-screen support from window management, and introduced no unsupported MUST rules."
+    },
+    {
+      "id": "priority-4-designing-for-tvos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:40:53Z",
+      "review_method": "Rendered Apple HIG Designing for tvOS device characteristics, system-feature context, complete Best practices prose, and change-log context were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos", "source_hash": "295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90"}],
+      "rule_ids": [
+        "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001", "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0002",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0003", "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0004",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0005"
+      ],
+      "review_note": "Completed the tvOS-specific Best practices section; preserved the existing ID, recovered focus, cinematic, and multiuser guidance, split automatic profile switching from sign-in, removed a false voice modality, and introduced no unsupported MUST rules."
     }
   ],
   "rules": {
@@ -4477,6 +4491,42 @@
       "statement": {"en": "Support macOS keyboard shortcuts for faster actions and keyboard-only work styles.", "ja": "actionの高速化とkeyboard-only work styleのためmacOS keyboard shortcutをsupportする。"},
       "conditions": ["Preserve both action efficiency and keyboard-only work styles."],
       "review_note": "Recovered the omitted keyboard-shortcut rule and preserved both efficiency and keyboard-only use."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001": {
+      "source": {"source_hash": "295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90", "source_sentence_hash": "5e158d5193fdd8480c826cfbf1a09b04067f44809a1385a664f6baf86f82de40", "section_path": ["Designing for tvOS", "Best practices"]},
+      "title": "Support familiar Siri Remote gestures",
+      "statement": {"en": "Support fluid, familiar Siri Remote gestures for powerful and delightful tvOS interactions.", "ja": "powerfulでdelightfulなtvOS interactionのためfluidでfamiliarなSiri Remote gestureをsupportする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["gesture", "remote-control"]},
+      "conditions": ["Use gesture behavior people already know from the Siri Remote."],
+      "review_note": "Repaired the generated paraphrase and removed voice modality inferred only from the Siri Remote product name."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0002": {
+      "source": {"source_hash": "295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90", "source_sentence_hash": "801de4d324d392ee16cec905b1fd9f5b7e846044aad7c06a345c6cbea2ac5ef8", "section_path": ["Designing for tvOS", "Best practices"]},
+      "title": "Use the tvOS focus system",
+      "statement": {"en": "Use the tvOS focus system to highlight and expand items as people move among them.", "ja": "項目間を移動するときhighlightとexpandを行うtvOS focus systemを使う。"},
+      "conditions": ["Help people know what to do and where they are at all times."],
+      "review_note": "Recovered the omitted focus-system rule and preserved its action and location awareness goals."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0003": {
+      "source": {"source_hash": "295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90", "source_sentence_hash": "80a984843114bad9162aa3b2456ea3c3e22e1ea04b75c966faba46b8eb22ae35", "section_path": ["Designing for tvOS", "Best practices"]},
+      "title": "Create a clear tvOS cinematic experience",
+      "statement": {"en": "Create a clear, legible, and captivating tvOS cinematic experience that works from across the room.", "ja": "部屋の反対側からもclear、legible、captivatingなtvOS cinematic experienceを作る。"},
+      "conditions": ["Use edge-to-edge artwork, subtle fluid animation, and engaging audio as supporting techniques."],
+      "review_note": "Recovered the omitted cinematic outcome and recorded the three supporting techniques without making them separate universal requirements."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0004": {
+      "source": {"source_hash": "295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90", "source_sentence_hash": "cb4fa7e9a4f6e298d4cc5368cc9e55da6652fdbe98adc4c7879762df827a427e", "section_path": ["Designing for tvOS", "Best practices"]},
+      "title": "Make tvOS multiuser sign-in easy and infrequent",
+      "statement": {"en": "Make tvOS multiuser sign-in easy and infrequent, including shared sign-in.", "ja": "shared sign-inを含むtvOS multiuser sign-inをeasyかつinfrequentにする。"},
+      "conditions": ["Handle shared sign-in as part of the multiuser experience."],
+      "review_note": "Recovered the omitted multiuser sign-in guidance and kept automatic profile switching atomic."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0005": {
+      "source": {"source_hash": "295a179e5c421d93f9dbb45d1843b812e1333928fb8177043ebd44b2438e9f90", "source_sentence_hash": "cb4fa7e9a4f6e298d4cc5368cc9e55da6652fdbe98adc4c7879762df827a427e", "section_path": ["Designing for tvOS", "Best practices"]},
+      "title": "Switch tvOS profiles with the current viewer",
+      "statement": {"en": "Switch tvOS profiles automatically when people change the current viewer.", "ja": "current viewerが変わったときtvOS profileを自動で切り替える。"},
+      "conditions": ["Apply automatic switching within a multiuser experience."],
+      "review_note": "Split the automatic profile-switching action from the source sentence's separate sign-in guidance."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

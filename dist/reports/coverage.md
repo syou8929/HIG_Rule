@@ -5,17 +5,17 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2408
+- Active atomic rules: 2412
 - Pages without rules: 16
-- Low-confidence rules: 974
-- Rules requiring human review: 974
+- Low-confidence rules: 973
+- Rules requiring human review: 973
 - Reference notes: 929
 
 ## Rules by category
 
 - components: 858
 - foundations: 346
-- getting-started: 93
+- getting-started: 97
 - inputs: 187
 - patterns: 289
 - technologies: 635
@@ -26,7 +26,7 @@
 - MAY: 285
 - MUST: 217
 - MUST_NOT: 21
-- SHOULD: 1567
+- SHOULD: 1571
 
 ## Rules by platform
 
@@ -34,14 +34,14 @@
 - ios: 1646
 - ipados: 1618
 - macos: 1375
-- tvos: 1070
+- tvos: 1074
 - visionos: 1432
 - watchos: 1120
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2342
+- manual: 2346
 
 ## Blocked pages
 
@@ -413,7 +413,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0002
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004
@@ -1390,7 +1389,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0002
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0003
 - HIG-GETTING-STARTED-DESIGNING-FOR-WATCHOS-0004

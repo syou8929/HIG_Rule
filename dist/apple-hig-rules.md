@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:39:05.730Z. 2408 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:42:36.069Z. 2412 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -86,7 +86,11 @@ Generated 2026-07-21T19:39:05.730Z. 2408 active rules; 3 deprecated rules.
 - **HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0007 · SHOULD · high** — Support macOS keyboard shortcuts for faster actions and keyboard-only work styles. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
 ### designing-for-tvos
 
-- **HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001 · SHOULD · low** — Ensure the experience accommodates powerful, delightful interactions through the fluid, familiar gestures people make with the Siri Remote. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001 · SHOULD · high** — Support fluid, familiar Siri Remote gestures for powerful and delightful tvOS interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0002 · SHOULD · high** — Use the tvOS focus system to highlight and expand items as people move among them. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0003 · SHOULD · high** — Create a clear, legible, and captivating tvOS cinematic experience that works from across the room. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0004 · SHOULD · high** — Make tvOS multiuser sign-in easy and infrequent, including shared sign-in. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0005 · SHOULD · high** — Switch tvOS profiles automatically when people change the current viewer. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
 ### designing-for-visionos
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001 · MAY · high** — For each distinctive app moment, consider the minimum suitable level of immersion. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))

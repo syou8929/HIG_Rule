@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1356
-- Reviewed batches: 87
+- Reviewed rules: 1361
+- Reviewed batches: 88
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:37:03Z
+- Reviewed at: 2026-07-21T19:40:53Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -898,6 +898,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0005 · high — Recovered the omitted large-display rule and preserved its density and viewing-comfort constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0006 · high — Split full-screen support from the source sentence's separate window-management guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-MACOS-0007 · high — Recovered the omitted keyboard-shortcut rule and preserved both efficiency and keyboard-only use. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-macos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0001 · high — Repaired the generated paraphrase and removed voice modality inferred only from the Siri Remote product name. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0002 · high — Recovered the omitted focus-system rule and preserved its action and location awareness goals. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0003 · high — Recovered the omitted cinematic outcome and recorded the three supporting techniques without making them separate universal requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0004 · high — Recovered the omitted multiuser sign-in guidance and kept automatic profile switching atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
+- HIG-GETTING-STARTED-DESIGNING-FOR-TVOS-0005 · high — Split the automatic profile-switching action from the source sentence's separate sign-in guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001 · high — Retained MAY and preserved the minimum-immersion test and full-immersion caution. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0002 · high — Recorded the standard-task context, familiar controls, relocation, and dynamic scaling. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0003 · high — Repaired the generic statement and linked it to every documented comfort fundamental. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
