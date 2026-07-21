@@ -83471,11 +83471,11 @@
   topic: multitasking
   subtopic: best-practices
   statement:
-    en: Apply the documented Multitasking guidance to respond smoothly to audio interruptions.
-    ja: 「Multitasking」において「Respond smoothly to audio interruptions」の指針を適用する。
+    en: Respond smoothly when another app or the system interrupts the app's audio.
+    ja: 他のappまたはsystemがapp audioをinterruptしたとき滑らかに応答する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -83495,7 +83495,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Distinguish primary-audio interruptions from shorter transient interruptions.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
@@ -83503,7 +83503,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Multitasking guidance to respond smoothly to audio interruptions.” in the documented Multitasking context?
+      - Does the design satisfy “Respond smoothly when another app or the system interrupts the app's audio.” in the documented Multitasking context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83515,29 +83515,29 @@
     section_path:
       - Multitasking
       - Best practices
-    retrieved_at: 2026-07-21T11:15:06.264Z
-    source_hash: 48cc51d43a3cf4ad83b5401bab9f939c98c7abb2431019fb7eba04fd02d541e2
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
     source_sentence_hash: 9a2235c60cc48f30b0dcf6d2bf9424bc9fd215a0fd06e09081462cc694f906d7
-    evidence_paraphrase: Apply the documented Multitasking guidance to respond smoothly to audio interruptions.
+    evidence_paraphrase: Respond smoothly when another app or the system interrupts the app's audio.
   tags:
     - patterns
     - multitasking
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Multitasking guidance to respond smoothly to audio interruptions.
+  apple_native_rule: Respond smoothly when another app or the system interrupts the app's audio.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-MULTITASKING-0002
-  title: Use notifications sparingly
+  title: Use background notifications sparingly
   category: patterns
   topic: multitasking
   subtopic: best-practices
   statement:
-    en: Choose or apply notifications sparingly in the documented context.
-    ja: 該当する状況ではnotifications sparinglyを採用する。
+    en: Use notifications sparingly while the app is suspended or running in the background.
+    ja: appがsuspend中またはbackground動作中のnotificationを控えめに使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -83557,7 +83557,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Reserve completion notifications for tasks important or time-sensitive enough to justify them.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
@@ -83565,7 +83565,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply notifications sparingly in the documented context.” in the documented Multitasking context?
+      - Does the design satisfy “Use notifications sparingly while the app is suspended or running in the background.” in the documented Multitasking context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83577,29 +83577,29 @@
     section_path:
       - Multitasking
       - Best practices
-    retrieved_at: 2026-07-21T11:15:06.264Z
-    source_hash: 48cc51d43a3cf4ad83b5401bab9f939c98c7abb2431019fb7eba04fd02d541e2
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
     source_sentence_hash: f312b0dac5e180065b9f0fc1cd78368e374b3092c5c125574b0b02e6b2b13b3e
-    evidence_paraphrase: Choose or apply notifications sparingly in the documented context.
+    evidence_paraphrase: Use notifications sparingly while the app is suspended or running in the background.
   tags:
     - patterns
     - multitasking
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply notifications sparingly in the documented context.
+  apple_native_rule: Use notifications sparingly while the app is suspended or running in the background.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-MULTITASKING-0003
-  title: Avoid interfering with the system-provided multitasking behavior
+  title: Avoid interfering with visionOS multitasking feedback
   category: patterns
   topic: multitasking
   subtopic: visionos
   statement:
-    en: Exclude interfering with the system-provided multitasking behavior from the applicable experience.
-    ja: 該当する体験ではinterfering with the system-provided multitasking behaviorを避ける。
+    en: Avoid interfering with system-provided visionOS multitasking behavior and feedback.
+    ja: system提供のvisionOS multitasking behaviorとfeedbackを妨げない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -83611,7 +83611,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The system uses translucency, z-axis recession, and a feathered mask to communicate active-window changes.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
@@ -83619,7 +83619,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude interfering with the system-provided multitasking behavior from the applicable experience.” in the documented Multitasking context?
+      - Does the design satisfy “Avoid interfering with system-provided visionOS multitasking behavior and feedback.” in the documented Multitasking context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83632,10 +83632,10 @@
       - Multitasking
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:15:06.264Z
-    source_hash: 48cc51d43a3cf4ad83b5401bab9f939c98c7abb2431019fb7eba04fd02d541e2
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
     source_sentence_hash: cbd94321e681e47b0ddc1990e308d2ac50845ef094b9507df9d7a2bbcccaa225
-    evidence_paraphrase: Exclude interfering with the system-provided multitasking behavior from the applicable experience.
+    evidence_paraphrase: Avoid interfering with system-provided visionOS multitasking behavior and feedback.
   tags:
     - patterns
     - multitasking
@@ -83643,19 +83643,19 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude interfering with the system-provided multitasking behavior from the applicable experience.
+  apple_native_rule: Avoid interfering with system-provided visionOS multitasking behavior and feedback.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-MULTITASKING-0004
-  title: Don’t pause a window’s video playback when people look away from it
+  title: Avoid pausing visionOS video when gaze moves away
   category: patterns
   topic: multitasking
   subtopic: visionos
   statement:
-    en: Exclude pause a window’s video playback when people look away from it from the applicable experience.
-    ja: 該当する体験ではpause a window’s video playback when people look away from itを避ける。
+    en: Avoid pausing a visionOS window's video when people look away from it.
+    ja: 利用者が視線を外したときvisionOS windowのvideoをpauseしない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -83668,7 +83668,7 @@
     modalities:
       - gaze
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - People expect playback started in one window to continue while they use another window.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
@@ -83676,7 +83676,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude pause a window’s video playback when people look away from it from the applicable experience.” in the documented Multitasking context?
+      - Does the design satisfy “Avoid pausing a visionOS window's video when people look away from it.” in the documented Multitasking context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83689,10 +83689,10 @@
       - Multitasking
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:15:06.264Z
-    source_hash: 48cc51d43a3cf4ad83b5401bab9f939c98c7abb2431019fb7eba04fd02d541e2
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
     source_sentence_hash: 2d36e48ffa06a2bf427c542b63a130a79e186521bf29bbdfa515cbb5ab370bd3
-    evidence_paraphrase: Exclude pause a window’s video playback when people look away from it from the applicable experience.
+    evidence_paraphrase: Avoid pausing a visionOS window's video when people look away from it.
   tags:
     - patterns
     - multitasking
@@ -83701,19 +83701,19 @@
     - gaze
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude pause a window’s video playback when people look away from it from the applicable experience.
+  apple_native_rule: Avoid pausing a visionOS window's video when people look away from it.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-MULTITASKING-0005
-  title: Be prepared for situations where your audio can duck
+  title: Handle visionOS audio ducking
   category: patterns
   topic: multitasking
   subtopic: visionos
   statement:
-    en: Apply the documented Multitasking guidance to be prepared for situations where your audio can duck.
-    ja: 「Multitasking」において「Be prepared for situations where your audio can duck」の指針を適用する。
+    en: Prepare for visionOS audio to duck when people look from the app to another app.
+    ja: 利用者が別appへ視線を移したときvisionOS audioがduckする状況へ備える。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -83726,14 +83726,15 @@
     modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - The current Now Playing app does not duck for this reason.
   rationale:
     en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Multitasking guidance to be prepared for situations where your audio can duck.” in the documented Multitasking context?
+      - Does the design satisfy “Prepare for visionOS audio to duck when people look from the app to another app.” in the documented Multitasking context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83746,10 +83747,10 @@
       - Multitasking
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:15:06.264Z
-    source_hash: 48cc51d43a3cf4ad83b5401bab9f939c98c7abb2431019fb7eba04fd02d541e2
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
     source_sentence_hash: d7c67a5d8b1c4ad2dd92e0a69ebe1d7fe255717fe1a281b3d97cd7528f9fbd00
-    evidence_paraphrase: Apply the documented Multitasking guidance to be prepared for situations where your audio can duck.
+    evidence_paraphrase: Prepare for visionOS audio to duck when people look from the app to another app.
   tags:
     - patterns
     - multitasking
@@ -83757,7 +83758,742 @@
     - visionos
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Multitasking guidance to be prepared for situations where your audio can duck.
+  apple_native_rule: Prepare for visionOS audio to duck when people look from the app to another app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0006
+  title: Support multitasking except in rare cases
+  category: patterns
+  topic: multitasking
+  subtopic: multitasking
+  statement:
+    en: Make every app work well with multitasking except in rare justified cases.
+    ja: 正当な稀な例外を除き、すべてのappをmultitaskingへ適切に対応させる。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions:
+    - Some games and visionOS apps running in a Full Space can be rare exceptions.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Make every app work well with multitasking except in rare justified cases.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: 368b4d12ed4fc6281a7037c51be98ede79195f089a5d94a43f95352a9a1089b7
+    evidence_paraphrase: Make every app work well with multitasking except in rare justified cases.
+  tags:
+    - patterns
+    - multitasking
+  priority_rank: 6
+  status: active
+  apple_native_rule: Make every app work well with multitasking except in rare justified cases.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0007
+  title: Always save and restore multitasking context
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: Always prepare to save and restore people's context when multitasking begins or ends.
+    ja: multitaskingの開始・終了時に利用者のcontextをsave・restoreできるよう常に備える。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - The app cannot predict when people will initiate multitasking.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Always prepare to save and restore people's context when multitasking begins or ends.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: ddc1a89566554870941c62649f0c306412ed47acc0f69f25addbf81c12e6c494
+    evidence_paraphrase: Always prepare to save and restore people's context when multitasking begins or ends.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Always prepare to save and restore people's context when multitasking begins or ends.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0008
+  title: Prevent missed activity content during app switching
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: Make sure people do not miss attention-dependent activity content when they switch apps.
+    ja: app切替時にattention-dependentなactivity contentを見逃さないようにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - This is especially relevant to games and media-viewing apps.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Make sure people do not miss attention-dependent activity content when they switch apps.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: bf551ce583a3f5afce20300fda3c924a7700c678fbbf29952aeb9f1e83529fb1
+    evidence_paraphrase: Make sure people do not miss attention-dependent activity content when they switch apps.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Make sure people do not miss attention-dependent activity content when they switch apps.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0009
+  title: Resume activities from their prior context
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: When people return after app switching, let them continue an activity from where they left it.
+    ja: app切替後に戻ったとき、離れたcontextからactivityを続行できるようにする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When people return after app switching, let them continue an activity from where they left it.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: bf551ce583a3f5afce20300fda3c924a7700c678fbbf29952aeb9f1e83529fb1
+    evidence_paraphrase: When people return after app switching, let them continue an activity from where they left it.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When people return after app switching, let them continue an activity from where they left it.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0010
+  title: Consider important background-task completion notifications
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: Consider notifying people when an important or time-sensitive background task completes.
+    ja: 重要またはtime-sensitiveなbackground task完了時の通知を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - A notification can help people return and take the next step.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider notifying people when an important or time-sensitive background task completes.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: ce80bb7f60ebd443f29489e3326ba96f867854d0cbaf3540a90cc5a24246fd30
+    evidence_paraphrase: Consider notifying people when an important or time-sensitive background task completes.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider notifying people when an important or time-sensitive background task completes.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0011
+  title: Avoid routine background-task completion notifications
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: Avoid notifying people immediately when a routine or secondary background task completes.
+    ja: routineまたはsecondaryなbackground task完了直後の通知を避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions:
+    - Let people check the task when they return to the app.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid notifying people immediately when a routine or secondary background task completes.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: ce80bb7f60ebd443f29489e3326ba96f867854d0cbaf3540a90cc5a24246fd30
+    evidence_paraphrase: Avoid notifying people immediately when a routine or secondary background task completes.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid notifying people immediately when a routine or secondary background task completes.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0012
+  title: Adapt iPadOS apps to different window sizes
+  category: patterns
+  topic: multitasking
+  subtopic: ipados
+  statement:
+    en: Make an iPadOS app adapt gracefully across different window sizes.
+    ja: iPadOS appを異なるwindow sizeへ滑らかにadaptさせる。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ipados
+    devices:
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - People can open the app in a resizable window.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Make an iPadOS app adapt gracefully across different window sizes.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Platform considerations
+      - iPadOS
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: 2e449769bf6912d8649438896f404abdb9bda295fc2cd3809ed73ca2d2779b6f
+    evidence_paraphrase: Make an iPadOS app adapt gracefully across different window sizes.
+  tags:
+    - patterns
+    - multitasking
+    - platform-considerations
+    - ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Make an iPadOS app adapt gracefully across different window sizes.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0013
+  title: Avoid changing visionOS window edges during gaze transitions
+  category: patterns
+  topic: multitasking
+  subtopic: visionos
+  statement:
+    en: Avoid changing a visionOS window's edges when people look from it to another window.
+    ja: 別windowへ視線を移したときvisionOS windowのedgeを変更しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities:
+      - gaze
+  conditions:
+    - Preserve the system feathered mask that communicates the window's changed state.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid changing a visionOS window's edges when people look from it to another window.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: 6a9fc66a3b19c8e3bcda470b303918d99464ecc5e4ce0c42949db015041c55eb
+    evidence_paraphrase: Avoid changing a visionOS window's edges when people look from it to another window.
+  tags:
+    - patterns
+    - multitasking
+    - platform-considerations
+    - visionos
+    - gaze
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid changing a visionOS window's edges when people look from it to another window.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0014
+  title: Pause attention-dependent activities during app switching
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: Pause activities that require attention or active participation when people switch away.
+    ja: 利用者が切り替えたときattentionまたはactive participationを要するactivityをpauseする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Pause activities that require attention or active participation when people switch away.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: 448f6b1031f83624fc684b9aa2a30029a78f484b9512c6f14f599f335c99e0d1
+    evidence_paraphrase: Pause activities that require attention or active participation when people switch away.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Pause activities that require attention or active participation when people switch away.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0015
+  title: Pause indefinitely for primary-audio interruptions
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: Pause app audio indefinitely when a primary-audio interruption begins.
+    ja: primary-audio interruption開始時にapp audioを無期限にpauseする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Primary audio includes music, podcasts, and audiobooks.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Pause app audio indefinitely when a primary-audio interruption begins.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: de3f7065f1e43ee36262b3f929537a3130ea6e7aa2dcc0f95e8fb558243aabec
+    evidence_paraphrase: Pause app audio indefinitely when a primary-audio interruption begins.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Pause app audio indefinitely when a primary-audio interruption begins.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0016
+  title: Temporarily duck or pause audio for short interruptions
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: For a short audio interruption, temporarily lower or pause app audio and resume it afterward.
+    ja: 短いaudio interruptionではapp audioを一時的に下げるかpauseし、終了後にresumeする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - A GPS directional notification is an example of a short interruption.
+    - Resume the original volume or playback when the interruption ends.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “For a short audio interruption, temporarily lower or pause app audio and resume it afterward.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: ddba251b462509c97278abd86ff8d23373430a0045cc4ed1597478a1dd7068dc
+    evidence_paraphrase: For a short audio interruption, temporarily lower or pause app audio and resume it afterward.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: For a short audio interruption, temporarily lower or pause app audio and resume it afterward.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MULTITASKING-0017
+  title: Finish user-initiated background tasks before suspension
+  category: patterns
+  topic: multitasking
+  subtopic: best-practices
+  statement:
+    en: Finish a user-initiated task that needs no more input in the background before suspending.
+    ja: 追加input不要のuser-initiated taskをsuspend前にbackgroundで完了する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Examples include downloading assets and processing a video file.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Multitasking experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMultitaskingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Finish a user-initiated task that needs no more input in the background before suspending.” in the documented Multitasking context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/multitasking
+    page_title: Multitasking
+    section_path:
+      - Multitasking
+      - Best practices
+    retrieved_at: 2026-07-21T15:17:24Z
+    source_hash: 6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77
+    source_sentence_hash: 7034c419e96cf212885223e6032fb8fc3459e2dab00759231158a819fce5c935
+    evidence_paraphrase: Finish a user-initiated task that needs no more input in the background before suspending.
+  tags:
+    - patterns
+    - multitasking
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Finish a user-initiated task that needs no more input in the background before suspending.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-OFFERING-HELP-0001
   title: Let your app’s tasks inform the types of help people might need

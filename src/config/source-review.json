@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:13:12Z",
+  "reviewed_at": "2026-07-21T15:17:24Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1377,9 +1377,160 @@
         "HIG-PATTERNS-LOADING-0013"
       ],
       "review_note": "Reviewed responsiveness, background work, placeholders, progress communication and indicator choice, game customization, and watchOS loading behavior; recovered eight atomic rules."
+    },
+    {
+      "id": "priority-4-multitasking-context-2026-07-21",
+      "reviewed_at": "2026-07-21T15:17:24Z",
+      "review_method": "Rendered Apple HIG Multitasking guidance, supporting prose, and updated platform considerations were reviewed; two repeated live renders matched the updated stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/multitasking",
+          "source_hash": "6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-MULTITASKING-0001",
+        "HIG-PATTERNS-MULTITASKING-0002",
+        "HIG-PATTERNS-MULTITASKING-0003",
+        "HIG-PATTERNS-MULTITASKING-0004",
+        "HIG-PATTERNS-MULTITASKING-0005",
+        "HIG-PATTERNS-MULTITASKING-0006",
+        "HIG-PATTERNS-MULTITASKING-0007",
+        "HIG-PATTERNS-MULTITASKING-0008",
+        "HIG-PATTERNS-MULTITASKING-0009",
+        "HIG-PATTERNS-MULTITASKING-0010",
+        "HIG-PATTERNS-MULTITASKING-0011",
+        "HIG-PATTERNS-MULTITASKING-0012",
+        "HIG-PATTERNS-MULTITASKING-0013",
+        "HIG-PATTERNS-MULTITASKING-0014",
+        "HIG-PATTERNS-MULTITASKING-0015",
+        "HIG-PATTERNS-MULTITASKING-0016",
+        "HIG-PATTERNS-MULTITASKING-0017"
+      ],
+      "review_note": "Reviewed context preservation, activity and audio interruption, background completion, notifications, iPadOS resizing, and visionOS gaze-driven window behavior; recovered twelve atomic rules and refreshed a changed page hash."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-MULTITASKING-0001": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"9a2235c60cc48f30b0dcf6d2bf9424bc9fd215a0fd06e09081462cc694f906d7","section_path":["Multitasking","Best practices"]},
+      "title": "Respond smoothly to audio interruptions",
+      "statement": {"en":"Respond smoothly when another app or the system interrupts the app's audio.","ja":"他のappまたはsystemがapp audioをinterruptしたとき滑らかに応答する。"},
+      "conditions": ["Distinguish primary-audio interruptions from shorter transient interruptions."],
+      "review_note": "Recorded the two interruption classes and separated their required responses."
+    },
+    "HIG-PATTERNS-MULTITASKING-0002": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"f312b0dac5e180065b9f0fc1cd78368e374b3092c5c125574b0b02e6b2b13b3e","section_path":["Multitasking","Best practices"]},
+      "title": "Use background notifications sparingly",
+      "statement": {"en":"Use notifications sparingly while the app is suspended or running in the background.","ja":"appがsuspend中またはbackground動作中のnotificationを控えめに使う。"},
+      "conditions": ["Reserve completion notifications for tasks important or time-sensitive enough to justify them."],
+      "review_note": "Recorded both background states and separated useful and unnecessary completion cases."
+    },
+    "HIG-PATTERNS-MULTITASKING-0003": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"cbd94321e681e47b0ddc1990e308d2ac50845ef094b9507df9d7a2bbcccaa225","section_path":["Multitasking","Platform considerations","visionOS"]},
+      "title": "Avoid interfering with visionOS multitasking feedback",
+      "statement": {"en":"Avoid interfering with system-provided visionOS multitasking behavior and feedback.","ja":"system提供のvisionOS multitasking behaviorとfeedbackを妨げない。"},
+      "conditions": ["The system uses translucency, z-axis recession, and a feathered mask to communicate active-window changes."],
+      "review_note": "Recorded every system state cue and separated the concrete window-edge restriction."
+    },
+    "HIG-PATTERNS-MULTITASKING-0004": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"2d36e48ffa06a2bf427c542b63a130a79e186521bf29bbdfa515cbb5ab370bd3","section_path":["Multitasking","Platform considerations","visionOS"]},
+      "title": "Avoid pausing visionOS video when gaze moves away",
+      "statement": {"en":"Avoid pausing a visionOS window's video when people look away from it.","ja":"利用者が視線を外したときvisionOS windowのvideoをpauseしない。"},
+      "conditions": ["People expect playback started in one window to continue while they use another window."],
+      "review_note": "Retained AVOID under the conservative don't policy and recorded cross-window playback continuity."
+    },
+    "HIG-PATTERNS-MULTITASKING-0005": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"d7c67a5d8b1c4ad2dd92e0a69ebe1d7fe255717fe1a281b3d97cd7528f9fbd00","section_path":["Multitasking","Platform considerations","visionOS"]},
+      "title": "Handle visionOS audio ducking",
+      "statement": {"en":"Prepare for visionOS audio to duck when people look from the app to another app.","ja":"利用者が別appへ視線を移したときvisionOS audioがduckする状況へ備える。"},
+      "exceptions": ["The current Now Playing app does not duck for this reason."],
+      "review_note": "Recorded the gaze transition and Now Playing exception."
+    },
+    "HIG-PATTERNS-MULTITASKING-0006": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"368b4d12ed4fc6281a7037c51be98ede79195f089a5d94a43f95352a9a1089b7","section_path":["Multitasking"]},
+      "title": "Support multitasking except in rare cases",
+      "statement": {"en":"Make every app work well with multitasking except in rare justified cases.","ja":"正当な稀な例外を除き、すべてのappをmultitaskingへ適切に対応させる。"},
+      "exceptions": ["Some games and visionOS apps running in a Full Space can be rare exceptions."],
+      "review_note": "Recovered and retained the explicit every-app need while preserving both named exception classes."
+    },
+    "HIG-PATTERNS-MULTITASKING-0007": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"ddc1a89566554870941c62649f0c306412ed47acc0f69f25addbf81c12e6c494","section_path":["Multitasking","Best practices"]},
+      "title": "Always save and restore multitasking context",
+      "statement": {"en":"Always prepare to save and restore people's context when multitasking begins or ends.","ja":"multitaskingの開始・終了時に利用者のcontextをsave・restoreできるよう常に備える。"},
+      "conditions": ["The app cannot predict when people will initiate multitasking."],
+      "review_note": "Recovered and retained the explicit always need with its unpredictable-timing rationale."
+    },
+    "HIG-PATTERNS-MULTITASKING-0008": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"bf551ce583a3f5afce20300fda3c924a7700c678fbbf29952aeb9f1e83529fb1","section_path":["Multitasking","Best practices"]},
+      "title": "Prevent missed activity content during app switching",
+      "statement": {"en":"Make sure people do not miss attention-dependent activity content when they switch apps.","ja":"app切替時にattention-dependentなactivity contentを見逃さないようにする。"},
+      "conditions": ["This is especially relevant to games and media-viewing apps."],
+      "review_note": "Recovered and retained the explicit make sure requirement and its two example app types."
+    },
+    "HIG-PATTERNS-MULTITASKING-0009": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"bf551ce583a3f5afce20300fda3c924a7700c678fbbf29952aeb9f1e83529fb1","section_path":["Multitasking","Best practices"]},
+      "title": "Resume activities from their prior context",
+      "statement": {"en":"When people return after app switching, let them continue an activity from where they left it.","ja":"app切替後に戻ったとき、離れたcontextからactivityを続行できるようにする。"},
+      "review_note": "Recovered the return-path continuation rule as a separate state-restoration outcome."
+    },
+    "HIG-PATTERNS-MULTITASKING-0010": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"ce80bb7f60ebd443f29489e3326ba96f867854d0cbaf3540a90cc5a24246fd30","section_path":["Multitasking","Best practices"]},
+      "title": "Consider important background-task completion notifications",
+      "statement": {"en":"Consider notifying people when an important or time-sensitive background task completes.","ja":"重要またはtime-sensitiveなbackground task完了時の通知を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A notification can help people return and take the next step."],
+      "review_note": "Recovered the optional notification case and retained both importance qualifiers."
+    },
+    "HIG-PATTERNS-MULTITASKING-0011": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"ce80bb7f60ebd443f29489e3326ba96f867854d0cbaf3540a90cc5a24246fd30","section_path":["Multitasking","Best practices"]},
+      "title": "Avoid routine background-task completion notifications",
+      "statement": {"en":"Avoid notifying people immediately when a routine or secondary background task completes.","ja":"routineまたはsecondaryなbackground task完了直後の通知を避ける。"},
+      "exceptions": ["Let people check the task when they return to the app."],
+      "review_note": "Recovered the unnecessary-notification AVOID and its passive-return alternative."
+    },
+    "HIG-PATTERNS-MULTITASKING-0012": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"2e449769bf6912d8649438896f404abdb9bda295fc2cd3809ed73ca2d2779b6f","section_path":["Multitasking","Platform considerations","iPadOS"]},
+      "title": "Adapt iPadOS apps to different window sizes",
+      "statement": {"en":"Make an iPadOS app adapt gracefully across different window sizes.","ja":"iPadOS appを異なるwindow sizeへ滑らかにadaptさせる。"},
+      "conditions": ["People can open the app in a resizable window."],
+      "review_note": "Recovered and retained the explicit make sure requirement from the updated iPadOS guidance."
+    },
+    "HIG-PATTERNS-MULTITASKING-0013": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"6a9fc66a3b19c8e3bcda470b303918d99464ecc5e4ce0c42949db015041c55eb","section_path":["Multitasking","Platform considerations","visionOS"]},
+      "title": "Avoid changing visionOS window edges during gaze transitions",
+      "statement": {"en":"Avoid changing a visionOS window's edges when people look from it to another window.","ja":"別windowへ視線を移したときvisionOS windowのedgeを変更しない。"},
+      "conditions": ["Preserve the system feathered mask that communicates the window's changed state."],
+      "review_note": "Recovered the concrete don't clause at AVOID and tied it to the system feedback it protects."
+    },
+    "HIG-PATTERNS-MULTITASKING-0014": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"448f6b1031f83624fc684b9aa2a30029a78f484b9512c6f14f599f335c99e0d1","section_path":["Multitasking","Best practices"]},
+      "title": "Pause attention-dependent activities during app switching",
+      "statement": {"en":"Pause activities that require attention or active participation when people switch away.","ja":"利用者が切り替えたときattentionまたはactive participationを要するactivityをpauseする。"},
+      "review_note": "Recovered the activity-pause rule and preserved both applicability criteria."
+    },
+    "HIG-PATTERNS-MULTITASKING-0015": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"de3f7065f1e43ee36262b3f929537a3130ea6e7aa2dcc0f95e8fb558243aabec","section_path":["Multitasking","Best practices"]},
+      "title": "Pause indefinitely for primary-audio interruptions",
+      "statement": {"en":"Pause app audio indefinitely when a primary-audio interruption begins.","ja":"primary-audio interruption開始時にapp audioを無期限にpauseする。"},
+      "conditions": ["Primary audio includes music, podcasts, and audiobooks."],
+      "review_note": "Recovered the primary-audio response and every source example."
+    },
+    "HIG-PATTERNS-MULTITASKING-0016": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"ddba251b462509c97278abd86ff8d23373430a0045cc4ed1597478a1dd7068dc","section_path":["Multitasking","Best practices"]},
+      "title": "Temporarily duck or pause audio for short interruptions",
+      "statement": {"en":"For a short audio interruption, temporarily lower or pause app audio and resume it afterward.","ja":"短いaudio interruptionではapp audioを一時的に下げるかpauseし、終了後にresumeする。"},
+      "conditions": ["A GPS directional notification is an example of a short interruption.", "Resume the original volume or playback when the interruption ends."],
+      "review_note": "Recovered both short-interruption responses, the example, and the restoration requirement."
+    },
+    "HIG-PATTERNS-MULTITASKING-0017": {
+      "source": {"source_hash":"6d052f56f6853a79f667a25f7415cba083626b904fc07357e075f5b35f267b77","source_sentence_hash":"7034c419e96cf212885223e6032fb8fc3459e2dab00759231158a819fce5c935","section_path":["Multitasking","Best practices"]},
+      "title": "Finish user-initiated background tasks before suspension",
+      "statement": {"en":"Finish a user-initiated task that needs no more input in the background before suspending.","ja":"追加input不要のuser-initiated taskをsuspend前にbackgroundで完了する。"},
+      "conditions": ["Examples include downloading assets and processing a video file."],
+      "review_note": "Recovered the completion rule and preserved its no-more-input condition and examples."
+    },
     "HIG-PATTERNS-LOADING-0001": {
       "source": {"source_hash":"1dca25a893f01c57e059c8d3ba0a595d5e855814ce7d3ade6a1857e7e8a1e895","source_sentence_hash":"138f3c448e8006e254f1d84d16daba58249c2b22a1646dd41f4928c336a170dc","section_path":["Loading","Best practices"]},
       "title": "Show content as soon as possible",

@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 156
-- Retained MUST: 146
+- Reviewed rules: 160
+- Retained MUST: 150
 - Retained MUST_NOT: 10
 - Normative level changes: 4
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:06:02Z
+- Reviewed at: 2026-07-21T15:17:24Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -77,6 +77,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-FILE-MANAGEMENT-0031 — Recovered and retained MUST after confirming the conditional Make sure requirement for visible unsaved-change state when autosaving is off. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0033 — Recovered and retained MUST after confirming the conditional Be sure requirement to remove the Edited suffix after automatic or explicit saving. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MULTITASKING-0006 — Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0007 — Recovered and retained MUST after confirming the explicit always need to prepare for context saving and restoration. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0008 — Recovered and retained MUST after confirming the explicit make sure requirement that people not miss attention-dependent activity content. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0012 — Recovered and retained MUST after confirming the explicit make sure requirement for graceful adaptation across iPadOS window sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -205,6 +209,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MODALITY-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MODALITY-0006 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MULTITASKING-0006 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0007 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit always need to prepare for context saving and restoration. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0008 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure requirement that people not miss attention-dependent activity content. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure requirement for graceful adaptation across iPadOS window sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-OFFERING-HELP-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-PLAYING-VIDEO-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))

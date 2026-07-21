@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T15:15:53.074Z. 2013 active rules; 3 deprecated rules.
+Generated 2026-07-21T15:20:26.709Z. 2025 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -634,11 +634,23 @@ Generated 2026-07-21T15:15:53.074Z. 2013 active rules; 3 deprecated rules.
 - **HIG-PATTERNS-MODALITY-0010 · SHOULD · low** — Present content modally only when there’s a clear benefit in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 ### multitasking
 
-- **HIG-PATTERNS-MULTITASKING-0001 · SHOULD · low** — Apply the documented Multitasking guidance to respond smoothly to audio interruptions. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
-- **HIG-PATTERNS-MULTITASKING-0002 · SHOULD · low** — Choose or apply notifications sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
-- **HIG-PATTERNS-MULTITASKING-0003 · AVOID · low** — Exclude interfering with the system-provided multitasking behavior from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
-- **HIG-PATTERNS-MULTITASKING-0004 · AVOID · low** — Exclude pause a window’s video playback when people look away from it from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
-- **HIG-PATTERNS-MULTITASKING-0005 · SHOULD · low** — Apply the documented Multitasking guidance to be prepared for situations where your audio can duck. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0001 · SHOULD · high** — Respond smoothly when another app or the system interrupts the app's audio. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0002 · SHOULD · high** — Use notifications sparingly while the app is suspended or running in the background. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0003 · AVOID · high** — Avoid interfering with system-provided visionOS multitasking behavior and feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0004 · AVOID · high** — Avoid pausing a visionOS window's video when people look away from it. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0005 · SHOULD · high** — Prepare for visionOS audio to duck when people look from the app to another app. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0006 · MUST · high** — Make every app work well with multitasking except in rare justified cases. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0007 · MUST · high** — Always prepare to save and restore people's context when multitasking begins or ends. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0008 · MUST · high** — Make sure people do not miss attention-dependent activity content when they switch apps. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0009 · SHOULD · high** — When people return after app switching, let them continue an activity from where they left it. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0010 · MAY · high** — Consider notifying people when an important or time-sensitive background task completes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0011 · AVOID · high** — Avoid notifying people immediately when a routine or secondary background task completes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0012 · MUST · high** — Make an iPadOS app adapt gracefully across different window sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0013 · AVOID · high** — Avoid changing a visionOS window's edges when people look from it to another window. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0014 · SHOULD · high** — Pause activities that require attention or active participation when people switch away. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0015 · SHOULD · high** — Pause app audio indefinitely when a primary-audio interruption begins. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0016 · SHOULD · high** — For a short audio interruption, temporarily lower or pause app audio and resume it afterward. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- **HIG-PATTERNS-MULTITASKING-0017 · SHOULD · high** — Finish a user-initiated task that needs no more input in the background before suspending. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 ### offering-help
 
 - **HIG-PATTERNS-OFFERING-HELP-0001 · SHOULD · low** — Apply the documented Offering help guidance to let your app’s tasks inform the types of help people might need. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 616
-- Reviewed batches: 48
+- Reviewed rules: 633
+- Reviewed batches: 49
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:13:12Z
+- Reviewed at: 2026-07-21T15:17:24Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -617,6 +617,23 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-LOADING-0011 · high — Recovered the watchOS immediacy aim without promoting it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0012 · high — Recovered the narrow brief-loading exception and its preferred fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0013 · high — Recovered the timing-accuracy rule and both placeholder-duration failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-MULTITASKING-0001 · high — Recorded the two interruption classes and separated their required responses. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0002 · high — Recorded both background states and separated useful and unnecessary completion cases. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0003 · high — Recorded every system state cue and separated the concrete window-edge restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0004 · high — Retained AVOID under the conservative don't policy and recorded cross-window playback continuity. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0005 · high — Recorded the gaze transition and Now Playing exception. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0006 · high — Recovered and retained the explicit every-app need while preserving both named exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0007 · high — Recovered and retained the explicit always need with its unpredictable-timing rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0008 · high — Recovered and retained the explicit make sure requirement and its two example app types. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0009 · high — Recovered the return-path continuation rule as a separate state-restoration outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0010 · high — Recovered the optional notification case and retained both importance qualifiers. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0011 · high — Recovered the unnecessary-notification AVOID and its passive-return alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0012 · high — Recovered and retained the explicit make sure requirement from the updated iPadOS guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0013 · high — Recovered the concrete don't clause at AVOID and tied it to the system feedback it protects. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0014 · high — Recovered the activity-pause rule and preserved both applicability criteria. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0015 · high — Recovered the primary-audio response and every source example. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0016 · high — Recovered both short-interruption responses, the example, and the restoration requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-MULTITASKING-0017 · high — Recovered the completion rule and preserved its no-more-input condition and examples. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

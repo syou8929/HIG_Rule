@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2013
+- Active atomic rules: 2025
 - Pages without rules: 16
-- Low-confidence rules: 1295
-- Rules requiring human review: 1295
+- Low-confidence rules: 1290
+- Rules requiring human review: 1290
 - Reference notes: 925
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 312
 - getting-started: 85
 - inputs: 187
-- patterns: 258
+- patterns: 270
 - technologies: 524
 
 ## Normative levels
 
-- AVOID: 259
-- MAY: 230
-- MUST: 146
+- AVOID: 261
+- MAY: 231
+- MUST: 150
 - MUST_NOT: 10
-- SHOULD: 1368
+- SHOULD: 1373
 
 ## Rules by platform
 
 - carplay: 73
-- ios: 1393
-- ipados: 1410
-- macos: 1240
-- tvos: 938
-- visionos: 1299
+- ios: 1403
+- ipados: 1421
+- macos: 1250
+- tvos: 948
+- visionos: 1310
 - watchos: 1040
 
 ## Rules by testability
 
 - hybrid: 65
-- manual: 1948
+- manual: 1960
 
 ## Blocked pages
 
@@ -773,11 +773,6 @@ None.
 - HIG-PATTERNS-MODALITY-0008
 - HIG-PATTERNS-MODALITY-0009
 - HIG-PATTERNS-MODALITY-0010
-- HIG-PATTERNS-MULTITASKING-0001
-- HIG-PATTERNS-MULTITASKING-0002
-- HIG-PATTERNS-MULTITASKING-0003
-- HIG-PATTERNS-MULTITASKING-0004
-- HIG-PATTERNS-MULTITASKING-0005
 - HIG-PATTERNS-OFFERING-HELP-0001
 - HIG-PATTERNS-OFFERING-HELP-0002
 - HIG-PATTERNS-OFFERING-HELP-0004
@@ -2071,11 +2066,6 @@ None.
 - HIG-PATTERNS-MODALITY-0008
 - HIG-PATTERNS-MODALITY-0009
 - HIG-PATTERNS-MODALITY-0010
-- HIG-PATTERNS-MULTITASKING-0001
-- HIG-PATTERNS-MULTITASKING-0002
-- HIG-PATTERNS-MULTITASKING-0003
-- HIG-PATTERNS-MULTITASKING-0004
-- HIG-PATTERNS-MULTITASKING-0005
 - HIG-PATTERNS-OFFERING-HELP-0001
 - HIG-PATTERNS-OFFERING-HELP-0002
 - HIG-PATTERNS-OFFERING-HELP-0004
