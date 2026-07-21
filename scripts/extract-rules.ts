@@ -25,6 +25,7 @@ type RuleOverride = {
 };
 const reviewedOverrides = normativeReview.overrides as Record<string, RuleOverride>;
 type SourceReviewOverride = {
+  source: { source_hash: string; source_sentence_hash: string; section_path: string[] };
   title?: string;
   statement?: Rule["statement"];
   normative_level?: Rule["normative_level"];
@@ -36,6 +37,7 @@ type SourceReviewOverride = {
   exceptions?: string[];
   checks?: Rule["checks"];
   testability?: Rule["testability"];
+  scope?: Rule["scope"];
   review_note: string;
 };
 type SourceReviewBatch = {
@@ -132,6 +134,7 @@ function applySourceReview(rule: Rule): Rule {
     ...(review?.severity ? { severity: review.severity } : {}),
     ...(review?.conditions ? { conditions: review.conditions } : {}),
     ...(review?.exceptions ? { exceptions: review.exceptions } : {}),
+    ...(review?.scope ? { scope: review.scope } : {}),
     checks: review?.checks ?? {
       ...rule.checks,
       manual: [`Does the design satisfy “${statement.en}” in the documented ${rule.source.page_title} context?`],
@@ -150,7 +153,7 @@ for (const record of inventory.pages) {
   try { page = await readJson<SourcePage>(sourcePath); } catch { continue; }
   if (page.category === "unclassified") continue;
   const category = page.category;
-  const seenCandidateKeys = new Set<string>();
+  const duplicateCandidateCount = new Map<string, number>();
   const active: Rule[] = page.guidance_candidates.filter(isActionable).map((candidate) => {
     const strength = normative(candidate.text);
     const statement = paraphrase(candidate.text, page.title);
@@ -161,8 +164,14 @@ for (const record of inventory.pages) {
     const rule: Rule = {
       id: (() => {
         const baseKey = ruleKey(page, candidate);
-        const key = seenCandidateKeys.has(baseKey) ? `${baseKey}#${candidate.section_path.map(slugify).join("/")}` : baseKey;
-        seenCandidateKeys.add(baseKey);
+        const duplicateIndex = duplicateCandidateCount.get(baseKey) ?? 0;
+        duplicateCandidateCount.set(baseKey, duplicateIndex + 1);
+        const legacyKey = `${baseKey}#${candidate.section_path.map(slugify).join("/")}`;
+        const key = duplicateIndex === 0
+          ? baseKey
+          : duplicateIndex === 1
+            ? legacyKey
+            : `${legacyKey}#${slugify(candidate.text)}`;
         return allocateId(page, key);
       })(),
       title: makeTitle(candidate),

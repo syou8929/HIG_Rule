@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T13:58:49.808Z. 1916 active rules; 3 deprecated rules.
+Generated 2026-07-21T14:14:58.032Z. 1926 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -31,27 +31,37 @@ Generated 2026-07-21T13:58:49.808Z. 1916 active rules; 3 deprecated rules.
 - **HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023 · SHOULD · low** — Determine the emotion you want to inspire explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
 ### designing-for-games
 
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0001 · SHOULD · low** — Preserve people’s ability to play as soon as installation completes. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0002 · SHOULD · low** — Make great default settings available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0003 · SHOULD · low** — Apply the documented Designing for games guidance to defer requests until the right time. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 · MUST · medium** — Verify that text is always legible. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 · MUST · medium** — Verify that buttons are always easy to use. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0006 · SHOULD · low** — Favor resolution-independent textures and graphics when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0007 · MUST · medium** — Verify that in-game menus adapt to different aspect ratios. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0008 · SHOULD · low** — Apply the documented Designing for games guidance to design for the full-screen experience. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0009 · SHOULD · low** — Ensure the experience accommodates each platform’s default interaction method. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0010 · SHOULD · low** — Ensure the experience accommodates physical game controllers, while also giving people alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0011 · SHOULD · low** — Make touch-based game controls that embrace the touchscreen experience on iPhone and iPad available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0012 · SHOULD · low** — Apply the documented Designing for games guidance to prioritize perceivability. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0013 · SHOULD · low** — Apply the documented Designing for games guidance to help players personalize their experience. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0014 · SHOULD · low** — Apply the documented Designing for games guidance to give players the tools they need to represent themselves. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0015 · AVOID · low** — Exclude stereotypes in your stories and characters from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0016 · SHOULD · low** — Apply the documented Designing for games guidance to let players pick up their game on any of their devices. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0017 · SHOULD · low** — Ensure the experience accommodates haptics to help players feel the action. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0018 · SHOULD · low** — Choose or apply spatial Audio to immerse players in your game’s soundscape in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0019 · SHOULD · low** — Connect the experience with device features into your layout. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0020 · SHOULD · low** — Connect the experience with game Center to help players discover your game across their devices and connect with their friends. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0021 · SHOULD · low** — Use of Apple technologies to enable unique gameplay mechanics. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0001 · SHOULD · high** — Preserve people’s ability to play as soon as installation completes. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0002 · SHOULD · high** — Make great default settings available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0003 · SHOULD · high** — Defer game requests until the context that needs them. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 · MUST · high** — Keep game text legible on every supported display. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 · MUST · high** — Keep game buttons easy to use on every supported platform. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0006 · SHOULD · high** — Prefer resolution-independent game textures and graphics. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0007 · MUST · high** — Verify that in-game menus adapt to different aspect ratios. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0008 · SHOULD · high** — Design games for a distraction-free, full-screen experience. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0009 · SHOULD · high** — Ensure the experience accommodates each platform’s default interaction method. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0010 · SHOULD · high** — Ensure the experience accommodates physical game controllers, while also giving people alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0011 · SHOULD · high** — Offer touchscreen-native game controls on iPhone and iPad. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0012 · SHOULD · high** — Prioritize perceivability throughout game content. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0013 · SHOULD · high** — Let players personalize game settings that affect their abilities and preferences. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0014 · SHOULD · high** — Give players inclusive tools to represent themselves. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0015 · AVOID · high** — Avoid stereotypes and bias in game stories, characters, and scenarios. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0016 · SHOULD · high** — Let players continue a saved game on another Apple device. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0017 · SHOULD · high** — Use haptics to help players feel game action. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0018 · SHOULD · high** — Use Spatial Audio to immerse players in the game’s soundscape where supported. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0019 · SHOULD · high** — Accommodate device features such as rounded corners and camera housings in game layouts. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0020 · SHOULD · high** — Integrate Game Center for cross-device discovery, progress, achievements, and social play. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0021 · SHOULD · high** — Use Apple technologies to enable distinctive gameplay mechanics. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0022 · SHOULD · high** — Keep the initial game download to 30 minutes or less. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0023 · SHOULD · high** — Download additional game content in the background. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0024 · MUST · high** — Support the platform’s most common interaction methods. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0025 · SHOULD · high** — Teach game mechanics through play. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0026 · MUST · high** — Get the player’s permission before accessing sensors or personal data. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0027 · SHOULD · high** — Place a permission request in the game scenario that needs the data. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0028 · MUST · high** — Wait until players have meaningful time with the game before requesting a rating or review. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0029 · AVOID · high** — Avoid fixed in-game menu layouts wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030 · MUST · high** — Make game content perceivable through sight, hearing, or touch. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 · MUST · high** — When cultural or language references are necessary, ensure they are respectful. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 ### designing-for-ios
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001 · SHOULD · low** — Apply the documented Designing for iOS guidance to help people concentrate on primary tasks and content by limiting the number of onscreen controls while making secondary details. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))

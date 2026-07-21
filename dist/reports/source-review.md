@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 381
-- Reviewed batches: 38
+- Reviewed rules: 412
+- Reviewed batches: 39
 - Official source only: yes
-- Reviewed at: 2026-07-21T13:56:59Z
+- Reviewed at: 2026-07-21T14:09:06Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -382,6 +382,37 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0012 · high — Recovered the Center lead and recorded its immersive attention constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0013 · high — Recovered the Rely lead and recorded that recentering is system-provided. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014 · high — Recovered the direct overlap prohibition and its gaze-selection rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0001 · high — Reviewed game startup, display metrics, interactions, accessibility, inclusion, and Apple technologies; recovered ten omitted atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0002 · high — Recorded the device and accessibility inputs used to choose game defaults. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0003 · high — Repaired the generated statement and recorded the request-timing context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 · high — Retained MUST and preserved the platform text-size table plus contrast requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 · high — Retained MUST, preserved every table value, and surfaced the page’s unresolved iOS 44-point versus 28-point wording. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0006 · high — Recorded the device-resolution fallback and visionOS vector-art preference. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0007 · high — Retained MUST and recorded aspect ratios, orientations, unobscured content, and dynamic-layout guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0008 · high — Repaired the generated statement and recorded the platform-specific full-screen contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0009 · high — Recorded each platform’s default interactions, additional controller support, and pointer-to-touch review focus. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0010 · high — Recorded controller availability and the accessibility reason for alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0011 · high — Corrected the scope from every Apple platform to iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0012 · high — Repaired the generic statement and recorded the color and cutscene examples. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0013 · high — Repaired the generic statement and preserved all documented personalization examples. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0014 · high — Repaired the generic statement and recorded the avatar, name, and description context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0015 · high — Expanded the reviewed AVOID rule to the documented character and scenario review context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0016 · high — Repaired the generic statement and recorded the GameSave mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0017 · high — Corrected the scope to the platforms where the source says Core Haptics is available. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0018 · high — Repaired capitalization and recorded the multichannel-audio condition. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0019 · high — Repaired the generated statement and recorded the safe-area technique. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0020 · high — Repaired capitalization and summarized the documented Game Center capabilities. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0021 · high — Repaired the incomplete generated statement and preserved the technology examples. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0022 · high — Recovered the omitted initial-download duration and playable-content condition. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0023 · high — Recovered the omitted background-download guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0024 · high — Recovered and retained the explicit Make sure interaction requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0025 · high — Recovered the omitted section lead and recorded the optional written-reference alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0026 · high — Recovered the explicit You must privacy requirement and its data-access condition. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0027 · high — Recovered the omitted contextual permission-request guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0028 · high — Recovered the explicit Make sure rating-request timing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0029 · high — Recovered the fixed-layout AVOID guidance and preserved its practicability qualifier and exception. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030 · high — Recovered the explicit Make sure accessibility requirement and removed the incorrect touch-input modality inference. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 · high — Recovered the explicit Be sure inclusion requirement and preserved its necessity condition. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

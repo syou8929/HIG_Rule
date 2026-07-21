@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 126
-- Retained MUST: 116
+- Reviewed rules: 131
+- Retained MUST: 121
 - Retained MUST_NOT: 10
 - Normative level changes: 3
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T13:52:41Z
+- Reviewed at: 2026-07-21T14:09:06Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -41,6 +41,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-LAYOUT-0035 — Recovered and retained the explicit You need directive without promoting the 60-point example to a universal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-MOTION-0014 — Recovered and retained the explicit Make sure directive within its peripheral-motion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 — Retained MUST after reviewing the explicit Make sure lead and its value, scale, legibility, and refocusing limits. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 — Retained MUST after confirming the explicit Make sure text-legibility requirement and its platform size table. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 — Retained MUST after confirming the explicit Make sure button-usability requirement and surfacing the page’s size wording conflict. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0024 — Retained MUST after confirming the explicit Make sure requirement for common platform interaction methods. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0026 — Retained MUST after confirming the explicit You must permission requirement for sensor and personal-data access. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0028 — Retained MUST after confirming the explicit Make sure timing requirement before requesting ratings or reviews. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030 — Retained MUST after confirming the explicit Make sure requirement that game content remain perceivable. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 — Retained MUST after confirming the conditional Be sure requirement for respectful cultural and language references. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -123,9 +130,14 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-TYPOGRAPHY-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
-- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure text-legibility requirement and its platform size table. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure button-usability requirement and surfacing the page’s size wording conflict. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0024 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure requirement for common platform interaction methods. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0026 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit You must permission requirement for sensor and personal-data access. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0028 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure timing requirement before requesting ratings or reviews. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure requirement that game content remain perceivable. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Be sure requirement for respectful cultural and language references. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-INPUTS-EYES-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/eyes))
 - HIG-INPUTS-FOCUS-AND-SELECTION-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - HIG-INPUTS-GAME-CONTROLS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
