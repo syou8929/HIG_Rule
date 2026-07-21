@@ -10240,15 +10240,15 @@
   apple_native_rule: Apply the documented Complications guidance to choose a ring or gauge style based on the data you need to display.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0005
-  title: Make sure images look good in tinted mode
+  title: Make complication images work in tinted mode
   category: components
   topic: complications
   subtopic: visual-design
   statement:
-    en: Verify that images look good in tinted mode.
-    ja: images look good in tinted modeを満たしていることを確認する。
+    en: Make every complication image work in tinted mode.
+    ja: すべてのcomplication画像をtinted modeで適切に表示できるようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -10263,7 +10263,9 @@
     modalities:
       - gaze
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Account for the system’s solid tint and desaturation of full-color complication images.
+    - For legacy templates, tinted mode applies only to graphic complications.
+    - Provide an alternative tinted version when a full-color image doesn’t work after desaturation.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Complications experience on the scoped Apple platforms.
@@ -10271,7 +10273,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that images look good in tinted mode.” in the documented Complications context?
+      - Does the design satisfy “Make every complication image work in tinted mode.” in the documented Complications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10286,7 +10288,7 @@
     retrieved_at: 2026-07-21T11:14:44.505Z
     source_hash: 13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2
     source_sentence_hash: a5b97b31f482c75907fd3fba9cbf5937d311366f0480db440b89b80c228fbea7
-    evidence_paraphrase: Verify that images look good in tinted mode.
+    evidence_paraphrase: Make every complication image work in tinted mode.
   tags:
     - components
     - complications
@@ -10294,7 +10296,7 @@
     - gaze
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that images look good in tinted mode.
+  apple_native_rule: Make every complication image work in tinted mode.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COMPLICATIONS-0006
   title: Provide static placeholders for every supported complication
@@ -10527,8 +10529,8 @@
     en: Define a different deep link for each complication you support explicitly.
     ja: a different deep link for each complication you supportを明確に定義する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10541,7 +10543,8 @@
       - complications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Open each complication to the area of the app most relevant to that complication.
+    - Avoid routing every supported complication to the same generic area.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Complications experience on the scoped Apple platforms.
@@ -10582,8 +10585,8 @@
     en: Account for that people might prefer to use tinted mode for complications, instead of viewing them in full color.
     ja: that people might prefer to use tinted mode for complications, instead of viewing them in full colorを考慮する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10596,7 +10599,8 @@
       - complications
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - People can choose tinted mode instead of full color.
+    - The system converts complication content to grayscale and applies a tint based on the wearer’s selected color.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Complications experience on the scoped Apple platforms.

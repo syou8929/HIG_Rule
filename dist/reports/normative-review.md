@@ -6,7 +6,7 @@
 - Normative level changes: 5
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:24:29Z
+- Reviewed at: 2026-07-21T16:31:51Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -21,6 +21,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-ALERTS-0047 — Recovered MUST from the explicit Be sure directive while preserving the large-text qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-COLLECTIONS-0010 — Recovered MUST from the explicit Be sure directive and separated understandability from trackability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0011 — Recovered MUST from the explicit Be sure directive and separated trackability from understandability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COMPLICATIONS-0005 — Retained MUST after reconfirming the explicit Make sure directive and its system-rendering and legacy-template conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0015 — Narrowed the MUST to the unqualified Always clause; the source lead's consider clause is split into a separate MAY rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0022 — Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
@@ -160,7 +161,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-COLLECTIONS-0010 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive and separated understandability from trackability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive and separated trackability from understandability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COMBO-BOXES-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
-- HIG-COMPONENTS-COMPLICATIONS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the explicit Make sure directive and its system-rendering and legacy-template conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-CONTEXT-MENUS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-EDIT-MENUS-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))

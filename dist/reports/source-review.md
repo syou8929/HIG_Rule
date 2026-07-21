@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 944
-- Reviewed batches: 59
+- Reviewed rules: 947
+- Reviewed batches: 60
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:29:13Z
+- Reviewed at: 2026-07-21T16:31:51Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -111,10 +111,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-COMPLICATIONS-0002 · medium — Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0003 · high — Replaced an ungrammatical paraphrase and captured the Always-On privacy risk from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0004 · medium — Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0005 · high — Reconfirmed the tinted-image MUST and recorded system rendering, legacy-template scope, and alternative-image handling. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0006 · high — Recorded the system display contexts and per-layout sizing caveat for placeholder images. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0007 · high — Repaired the generated paraphrase and retained the source preference for useful live information over static launch-only content. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0008 · high — Restored the tinted-versus-nontinted requirement lost by evidence-fragment truncation. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0009 · high — Recovered a previously unextracted carefully-consider lead and recorded its timeline-budget context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0010 · high — Recorded the per-complication relevance goal and the loss of usefulness caused by a shared generic destination. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- HIG-COMPONENTS-COMPLICATIONS-0011 · high — Recorded user preference and the system’s grayscale-and-tint transformation. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-CONTEXT-MENUS-0013 · high — Recovered the qualified AVOID lead and its visionOS system-control obstruction rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0001 · high — Recorded the expected minimum usefulness and source-scoped maximum of four quick actions. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))
 - HIG-COMPONENTS-HOME-SCREEN-QUICK-ACTIONS-0002 · high — Preserved the allowance for dynamic relevance while retaining predictability as the governing constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/home-screen-quick-actions))

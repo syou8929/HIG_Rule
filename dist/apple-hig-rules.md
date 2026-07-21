@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:30:07.468Z. 2202 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:32:25.292Z. 2202 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -995,13 +995,13 @@ Generated 2026-07-21T16:30:07.468Z. 2202 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-COMPLICATIONS-0002 · MAY · medium** — Evaluate whether creating multiple complications for each family is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0003 · SHOULD · high** — Help people prevent sensitive complication information from being visible to anyone other than the wearer. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0004 · SHOULD · medium** — Apply the documented Complications guidance to choose a ring or gauge style based on the data you need to display. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0005 · MUST · medium** — Verify that images look good in tinted mode. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0005 · MUST · high** — Make every complication image work in tinted mode. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0006 · SHOULD · high** — Provide a static placeholder image for each supported complication layout. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0007 · SHOULD · high** — Prioritize essential, dynamic information people want to view at a glance in a complication. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0008 · AVOID · high** — Avoid using color as the only way to communicate important information in a complication. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0009 · MAY · high** — Choose complication timeline update times that maximize usefulness within the system's limited update and entry budgets. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0010 · SHOULD · low** — Define a different deep link for each complication you support explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
-- **HIG-COMPONENTS-COMPLICATIONS-0011 · SHOULD · low** — Account for that people might prefer to use tinted mode for complications, instead of viewing them in full color. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0010 · SHOULD · high** — Define a different deep link for each complication you support explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0011 · SHOULD · high** — Account for that people might prefer to use tinted mode for complications, instead of viewing them in full color. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 ### context-menus
 
 - **HIG-COMPONENTS-CONTEXT-MENUS-0001 · SHOULD · low** — Apply the documented Context menus guidance to prioritize relevancy when choosing items to include in a context menu. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))

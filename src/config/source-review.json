@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:29:13Z",
+  "reviewed_at": "2026-07-21T16:31:51Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1881,9 +1881,74 @@
         "HIG-COMPONENTS-COMBO-BOXES-0006"
       ],
       "review_note": "Reviewed meaningful defaults, introductory-label purpose and style, choice relevance, custom entry, and width constraints; recovered three atomic rules."
+    },
+    {
+      "id": "priority-4-complications-followup-context-2026-07-21",
+      "reviewed_at": "2026-07-21T16:31:51Z",
+      "review_method": "Rendered Apple HIG Complications deep-link and tinted-mode guidance and supporting prose were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/complications",
+          "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-COMPLICATIONS-0005",
+        "HIG-COMPONENTS-COMPLICATIONS-0010",
+        "HIG-COMPONENTS-COMPLICATIONS-0011"
+      ],
+      "review_note": "Completed the Complications follow-up for per-complication deep links, tinted-mode preference, and the existing tinted-image MUST."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-COMPLICATIONS-0005": {
+      "source": {
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "a5b97b31f482c75907fd3fba9cbf5937d311366f0480db440b89b80c228fbea7",
+        "section_path": [
+          "Complications",
+          "Visual design"
+        ]
+      },
+      "conditions": [
+        "Account for the system’s solid tint and desaturation of full-color complication images.",
+        "For legacy templates, tinted mode applies only to graphic complications.",
+        "Provide an alternative tinted version when a full-color image doesn’t work after desaturation."
+      ],
+      "review_note": "Reconfirmed the tinted-image MUST and recorded system rendering, legacy-template scope, and alternative-image handling."
+    },
+    "HIG-COMPONENTS-COMPLICATIONS-0010": {
+      "source": {
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "0fdca55704357567e12ebf84efa7538ee6538d830a9d5c312cdd208bfff1dab6",
+        "section_path": [
+          "Complications",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Open each complication to the area of the app most relevant to that complication.",
+        "Avoid routing every supported complication to the same generic area."
+      ],
+      "review_note": "Recorded the per-complication relevance goal and the loss of usefulness caused by a shared generic destination."
+    },
+    "HIG-COMPONENTS-COMPLICATIONS-0011": {
+      "source": {
+        "source_hash": "13195eec8c4bce3eb052bbab11ae26a28e7864bdae2fef2ea4ac9e8251bdffd2",
+        "source_sentence_hash": "8cc1445c7bc3001d714032489db18a0b336efdbb0fbade0fb12d34463ce1e498",
+        "section_path": [
+          "Complications",
+          "Visual design"
+        ]
+      },
+      "conditions": [
+        "People can choose tinted mode instead of full color.",
+        "The system converts complication content to grayscale and applies a tint based on the wearer’s selected color."
+      ],
+      "review_note": "Recorded user preference and the system’s grayscale-and-tint transformation."
+    },
     "HIG-COMPONENTS-COMBO-BOXES-0001": {
       "source": {
         "source_hash": "a8052f6f98f2de6098d0877bf824dad6539c9ede649a3bf90b93ab3f622a7d40",
