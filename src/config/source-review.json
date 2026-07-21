@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:25:49Z",
+  "reviewed_at": "2026-07-21T17:29:06Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2100,6 +2100,19 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/path-controls", "source_hash": "f82eaa0f4b232518b8d99905ac0e3656304b66aaff1d660981d9fee7c344d6d0"}],
       "rule_ids": ["HIG-COMPONENTS-PATH-CONTROLS-0001"],
       "review_note": "Completed macOS Path controls coverage; retained the single explicit placement rule and kept descriptive standard and pop-up behavior from being promoted into unsupported normative rules."
+    },
+    {
+      "id": "priority-4-pickers-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:29:06Z",
+      "review_method": "Rendered Apple HIG Pickers guidance, list-size alternatives, value ordering, contextual presentation, minute intervals, iOS and iPadOS modes and styles, macOS styles, watchOS system behavior, and platform context were reviewed; two repeated live renders matched the updated main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/pickers", "source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-PICKERS-0001", "HIG-COMPONENTS-PICKERS-0002", "HIG-COMPONENTS-PICKERS-0003",
+        "HIG-COMPONENTS-PICKERS-0004", "HIG-COMPONENTS-PICKERS-0005", "HIG-COMPONENTS-PICKERS-0006",
+        "HIG-COMPONENTS-PICKERS-0007", "HIG-COMPONENTS-PICKERS-0008", "HIG-COMPONENTS-PICKERS-0009"
+      ],
+      "review_note": "Completed Pickers coverage; retained all six existing IDs, recovered short-list and very-large-list alternatives, repaired the truncated countdown constraint, and avoided promoting descriptive system behavior into unsupported requirements."
     }
   ],
   "rules": {
@@ -2315,6 +2328,74 @@
       "statement": {"en": "Place a macOS path control in the window body, not the window frame.", "ja": "macOS path controlはwindow frameではなくwindow bodyに配置する。"},
       "conditions": ["Do not place a path control in a toolbar or status bar."],
       "review_note": "Retained the only explicit directive and recorded the toolbar and status-bar exclusions; style descriptions remain nonnormative context."
+    },
+    "HIG-COMPONENTS-PICKERS-0001": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "c5557e9cdedcf7ecc188ed5af00565684ee585902ac7b6c25ffc9c40f49765ee", "section_path": ["Pickers", "Best practices"]},
+      "title": "Consider pickers for medium-to-long lists",
+      "statement": {"en": "Consider a picker for a medium-to-long list of distinct choices.", "ja": "medium-to-longなdistinct choiceのlistにはpickerを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A picker helps people scroll efficiently through more choices than a short menu should contain."],
+      "review_note": "Preserved MAY and separated the short-list and very-large-list alternatives."
+    },
+    "HIG-COMPONENTS-PICKERS-0002": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "dd51dbf9c26f0b792bc4e3315398c6ec09b87a3d1224c07fa4deb8d4e2dac9ba", "section_path": ["Pickers", "Best practices"]},
+      "title": "Order picker values predictably",
+      "statement": {"en": "Use predictable, logically ordered picker values.", "ja": "picker valueをpredictableかつlogicalに並べる。"},
+      "conditions": ["Help people infer hidden values and move through them quickly.", "Account for system ordering based on device language or location."],
+      "review_note": "Recorded hidden-value predictability and locale-dependent ordering."
+    },
+    "HIG-COMPONENTS-PICKERS-0003": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "e3682eccb50c0475be0bb8337a7c9d3b219abde9aeabcae122e9e4870ae2e1e2", "section_path": ["Pickers", "Best practices"]},
+      "title": "Avoid switching views for a picker",
+      "statement": {"en": "Avoid switching views solely to show a picker.", "ja": "pickerを表示するためだけのview切替を避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Display the picker in context below or near the field people are editing.", "A picker commonly appears at the bottom of a window or in a popover."],
+      "review_note": "Retained AVOID and recorded both contextual placement patterns."
+    },
+    "HIG-COMPONENTS-PICKERS-0004": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "7281616659d9b5a3ffb6dd62a5345ffa93d249e828e0eb65f69e3755d98eef63", "section_path": ["Pickers", "Best practices"]},
+      "title": "Consider coarser minute intervals",
+      "statement": {"en": "Consider less granular minute intervals when minute-by-minute date-picker precision is unnecessary.", "ja": "minute単位のdate-picker precisionが不要な場合は粗いminute intervalを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The default minute list contains values from 0 through 59.", "If increasing the interval, choose a value that divides evenly into 60."],
+      "review_note": "Preserved MAY while recording the source-scoped divisor constraint."
+    },
+    "HIG-COMPONENTS-PICKERS-0005": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "e31a6c9ceccde58f1aa1cbb394e70fdefb601e2383fb255831e0819346bb97d7", "section_path": ["Pickers", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use compact date pickers in constrained space",
+      "statement": {"en": "Use a compact iOS or iPadOS date picker when space is constrained.", "ja": "spaceが限られる場合はcompactなiOSまたはiPadOS date pickerを使う。"},
+      "conditions": ["The compact button shows the current value and opens a modal calendar and time editor.", "Let people make multiple edits before tapping outside the modal view to confirm them."],
+      "review_note": "Retained the iOS and iPadOS scope and recorded the compact interaction flow."
+    },
+    "HIG-COMPONENTS-PICKERS-0006": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "938279b324e3e9d65cac89c5e69aef258d6a183f77bf55016f2f5d122c7d2b87", "section_path": ["Pickers", "Platform considerations", "macOS"]},
+      "title": "Choose a suitable macOS date-picker style",
+      "statement": {"en": "Choose a macOS date-picker style that suits the app’s space and selection task.", "ja": "appのspaceとselection taskに合うmacOS date-picker styleを選ぶ。"},
+      "conditions": ["Use textual style for limited space and specific date or time selections.", "Use graphical style for calendar browsing, date ranges, or an appropriate clock-face appearance."],
+      "review_note": "Retained macOS scope and recorded both textual and graphical style mappings."
+    },
+    "HIG-COMPONENTS-PICKERS-0007": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "cad19eeac22fa9b799b05be65070d24fe06ac629afa72c414be67430149bb658", "section_path": ["Pickers", "Best practices"]},
+      "title": "Consider pull-down buttons for short lists",
+      "statement": {"en": "For a fairly short choice list, consider a pull-down button instead of a picker.", "ja": "fairly shortなchoice listにはpickerではなくpull-down buttonを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A picker would add too much visual weight for the small number of choices."],
+      "review_note": "Recovered the short-list alternative without promoting its consider strength."
+    },
+    "HIG-COMPONENTS-PICKERS-0008": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "f2772e6ff92826cc74f35e28c9a893f531f098eab1c70512a6320d08b930d9da", "section_path": ["Pickers", "Best practices"]},
+      "title": "Consider lists or tables for very large sets",
+      "statement": {"en": "For a very large item set, consider a list or table instead of a picker.", "ja": "very largeなitem setにはpickerではなくlistまたはtableを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Adjustable height or a table index would make a large set faster to navigate."],
+      "review_note": "Recovered the very-large-set alternative and its navigation rationale."
+    },
+    "HIG-COMPONENTS-PICKERS-0009": {
+      "source": {"source_hash": "d2f82a6aeb061a30d53d339f4ae435822be45e3a3c0f5cfcfe5ff7a3a575e968", "source_sentence_hash": "eb8c3dc4e3ed02ef8c8f63230cd477bb5d6e908bf36c167dda4e29b1d393a9ff", "section_path": ["Pickers", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Keep countdown date pickers within supported limits",
+      "statement": {"en": "Keep iOS and iPadOS countdown-timer picker values at or below 23 hours and 59 minutes.", "ja": "iOSおよびiPadOSのcountdown-timer picker valueを23時間59分以下に保つ。"},
+      "conditions": ["Use a wheels style because countdown-timer mode is unavailable in inline and compact styles."],
+      "review_note": "Repaired the truncated mode description and recorded both its maximum value and unavailable styles without inventing a MUST."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

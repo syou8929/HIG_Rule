@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:26:40.417Z. 2263 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:31:23.956Z. 2266 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1296,12 +1296,15 @@ Generated 2026-07-21T17:26:40.417Z. 2263 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-PATH-CONTROLS-0001 · SHOULD · high** — Place a macOS path control in the window body, not the window frame. ([source](https://developer.apple.com/design/human-interface-guidelines/path-controls))
 ### pickers
 
-- **HIG-COMPONENTS-PICKERS-0001 · MAY · low** — Evaluate whether using a picker to offer medium-to-long lists of items is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
-- **HIG-COMPONENTS-PICKERS-0002 · SHOULD · low** — Choose or apply predictable and logically ordered values in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
-- **HIG-COMPONENTS-PICKERS-0003 · AVOID · low** — Exclude switching views to show a picker from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
-- **HIG-COMPONENTS-PICKERS-0004 · MAY · low** — Evaluate whether providing less granularity when specifying minutes in a date picker is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
-- **HIG-COMPONENTS-PICKERS-0005 · SHOULD · low** — Choose or apply a compact date picker when space is constrained in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
-- **HIG-COMPONENTS-PICKERS-0006 · SHOULD · low** — Apply the documented Pickers guidance to choose a date picker style that suits your app. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0001 · MAY · high** — Consider a picker for a medium-to-long list of distinct choices. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0002 · SHOULD · high** — Use predictable, logically ordered picker values. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0003 · AVOID · high** — Avoid switching views solely to show a picker. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0004 · MAY · high** — Consider less granular minute intervals when minute-by-minute date-picker precision is unnecessary. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0005 · SHOULD · high** — Use a compact iOS or iPadOS date picker when space is constrained. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0006 · SHOULD · high** — Choose a macOS date-picker style that suits the app’s space and selection task. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0007 · MAY · high** — For a fairly short choice list, consider a pull-down button instead of a picker. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0008 · MAY · high** — For a very large item set, consider a list or table instead of a picker. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- **HIG-COMPONENTS-PICKERS-0009 · SHOULD · high** — Keep iOS and iPadOS countdown-timer picker values at or below 23 hours and 59 minutes. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 ### pop-up-buttons
 
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0001 · SHOULD · low** — Choose or apply a pop-up button to present a flat list of mutually exclusive options or states in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))

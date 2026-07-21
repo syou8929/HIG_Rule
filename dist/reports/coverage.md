@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2263
+- Active atomic rules: 2266
 - Pages without rules: 16
-- Low-confidence rules: 1094
-- Rules requiring human review: 1094
+- Low-confidence rules: 1088
+- Rules requiring human review: 1088
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 755
+- components: 758
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 304
-- MAY: 253
+- MAY: 255
 - MUST: 192
 - MUST_NOT: 21
-- SHOULD: 1493
+- SHOULD: 1494
 
 ## Rules by platform
 
 - carplay: 89
-- ios: 1581
-- ipados: 1550
-- macos: 1326
-- tvos: 1016
-- visionos: 1376
-- watchos: 1085
+- ios: 1584
+- ipados: 1553
+- macos: 1328
+- tvos: 1018
+- visionos: 1378
+- watchos: 1087
 
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2197
+- manual: 2200
 
 ## Blocked pages
 
@@ -171,12 +171,6 @@ None.
 - HIG-COMPONENTS-PAGE-CONTROLS-0003
 - HIG-COMPONENTS-PAGE-CONTROLS-0004
 - HIG-COMPONENTS-PAGE-CONTROLS-0010
-- HIG-COMPONENTS-PICKERS-0001
-- HIG-COMPONENTS-PICKERS-0002
-- HIG-COMPONENTS-PICKERS-0003
-- HIG-COMPONENTS-PICKERS-0004
-- HIG-COMPONENTS-PICKERS-0005
-- HIG-COMPONENTS-PICKERS-0006
 - HIG-COMPONENTS-POP-UP-BUTTONS-0001
 - HIG-COMPONENTS-POP-UP-BUTTONS-0002
 - HIG-COMPONENTS-POP-UP-BUTTONS-0003
@@ -1268,12 +1262,6 @@ None.
 - HIG-COMPONENTS-PAGE-CONTROLS-0003
 - HIG-COMPONENTS-PAGE-CONTROLS-0004
 - HIG-COMPONENTS-PAGE-CONTROLS-0010
-- HIG-COMPONENTS-PICKERS-0001
-- HIG-COMPONENTS-PICKERS-0002
-- HIG-COMPONENTS-PICKERS-0003
-- HIG-COMPONENTS-PICKERS-0004
-- HIG-COMPONENTS-PICKERS-0005
-- HIG-COMPONENTS-PICKERS-0006
 - HIG-COMPONENTS-POP-UP-BUTTONS-0001
 - HIG-COMPONENTS-POP-UP-BUTTONS-0002
 - HIG-COMPONENTS-POP-UP-BUTTONS-0003
@@ -2838,9 +2826,9 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/photo-editing · Photo editing > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/photo-editing · Photo editing > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations — visionOS has no additional picker considerations beyond the common guidance.
+- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations > tvOS — tvOS picker availability through SwiftUI is recorded as developer context, not a separate design directive.
+- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations > watchOS — System-provided watchOS wheels and navigation-link styles support Digital Crown navigation; no separate directive was inferred.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Change log — Section recorded for human review; no short atomic guidance lead was detected.

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1085
-- Reviewed batches: 70
+- Reviewed rules: 1094
+- Reviewed batches: 71
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:25:49Z
+- Reviewed at: 2026-07-21T17:29:06Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -312,6 +312,15 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-PANELS-0011 · high — Recovered the qualified AVOID guidance without raising it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
 - HIG-COMPONENTS-PANELS-0012 · high — Recovered the naming guidance and preserved its different menu and documentation forms. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
 - HIG-COMPONENTS-PATH-CONTROLS-0001 · high — Retained the only explicit directive and recorded the toolbar and status-bar exclusions; style descriptions remain nonnormative context. ([source](https://developer.apple.com/design/human-interface-guidelines/path-controls))
+- HIG-COMPONENTS-PICKERS-0001 · high — Preserved MAY and separated the short-list and very-large-list alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-PICKERS-0002 · high — Recorded hidden-value predictability and locale-dependent ordering. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-PICKERS-0003 · high — Retained AVOID and recorded both contextual placement patterns. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-PICKERS-0004 · high — Preserved MAY while recording the source-scoped divisor constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-PICKERS-0005 · high — Retained the iOS and iPadOS scope and recorded the compact interaction flow. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-PICKERS-0006 · high — Retained macOS scope and recorded both textual and graphical style mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-PICKERS-0007 · high — Recovered the short-list alternative without promoting its consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-PICKERS-0008 · high — Recovered the very-large-set alternative and its navigation rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-PICKERS-0009 · high — Repaired the truncated mode description and recorded both its maximum value and unavailable styles without inventing a MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 - HIG-COMPONENTS-POPOVERS-0012 · high — Recorded the size-class scope and the full-screen modal alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0013 · high — Preserved the optional strength and documented the persistent-panel use case. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0014 · high — Replaced generic generated wording with the source's context-preservation intent. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
