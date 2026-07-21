@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:52:34Z",
+  "reviewed_at": "2026-07-21T22:57:08Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,29 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 294,
+  "reviewed_rule_count": 296,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-INPUTS-NEARBY-INTERACTIONS-0010": {
+      "title": "Ensure alternative ways to complete nearby-interaction tasks",
+      "statement": {"en": "Ensure people can complete a task without using a nearby interaction.", "ja": "nearby interactionを使わなくてもtaskを完了できるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Provide an alternative because not everyone can experience a nearby interaction."],
+      "review_note": "Recovered MUST from the source's explicit essential accessibility requirement."
+    },
+    "HIG-INPUTS-NEARBY-INTERACTIONS-0015": {
+      "title": "Ensure participating watchOS apps stay foregrounded",
+      "statement": {"en": "Ensure a watchOS app remains in the foreground while participating in a nearby interaction.", "ja": "watchOS appがnearby interactionへ参加中はforegroundを維持する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The watchOS app participates in a nearby-interaction experience."],
+      "review_note": "Recovered the platform MUST from the source's explicit all-apps foreground requirement."
+    },
     "HIG-INPUTS-KEYBOARDS-0015": {
       "title": "Always order multiple shortcut modifiers consistently",
       "statement": {"en": "Always list multiple shortcut modifiers in Control, Option, Shift, Command order.", "ja": "複数のshortcut modifierは常にControl、Option、Shift、Commandの順で並べる。"},

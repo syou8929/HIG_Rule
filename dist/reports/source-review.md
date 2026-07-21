@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1789
-- Reviewed batches: 122
+- Reviewed rules: 1804
+- Reviewed batches: 123
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:52:34Z
+- Reviewed at: 2026-07-21T22:57:08Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1099,6 +1099,21 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-KEYBOARDS-0015 · high — Recovered the explicit conditional Always rule and its complete fixed order. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-KEYBOARDS-0016 · high — Split RTL mirroring from connected-keyboard localization so both system behaviors remain atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - HIG-INPUTS-KEYBOARDS-0017 · high — Recovered the explicit platform limitation and corrected scope to watchOS itself. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0001 · high — Preserved Consider and the inspiration purpose without generalizing the example. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0002 · high — Recorded platform capability differences so direction isn't incorrectly required on Apple Watch. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0003 · high — Preserved Consider and the physical-distance relationship while keeping the example optional. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0004 · high — Recovered responsiveness and continuity without requiring unavailable direction information. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0005 · high — Preserved Consider and contextual modality choice rather than requiring every feedback type. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0006 · high — Retained the direct accessibility prohibition and split its required positive alternative into a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0007 · high — Removed watchOS from the orientation scope and recorded the accuracy and availability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0008 · high — Removed watchOS because its platform capability is distance-only and recorded the partial-data state. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0009 · high — Recorded both affected signal properties and separated optional onboarding advice. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0010 · high — Recovered the explicit essential accessibility requirement as a positive atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0011 · high — Recovered the conditional Prefer rule and limited it to handheld portrait-capable devices. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0012 · high — Preserved the when-possible qualifier and separated explicit-instruction avoidance from the positive implicit-feedback preference. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0013 · high — Preserved Consider and both documented content locations. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0014 · high — Recovered the explicit platform limitation and corrected scope to the unsupported platforms themselves. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- HIG-INPUTS-NEARBY-INTERACTIONS-0015 · high — Recovered the explicit all-apps must-be-foreground platform contract as a conditional MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
 - HIG-INPUTS-POINTING-DEVICES-0001 · high — Repaired the generic statement and recorded the cross-content consistency example. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0002 · high — Recorded the game scope, system examples, and customizable-gesture constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - HIG-INPUTS-POINTING-DEVICES-0003 · high — Repaired the truncated statement and preserved every named input method. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))

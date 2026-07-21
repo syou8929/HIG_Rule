@@ -89421,16 +89421,16 @@
   apple_native_rule: Avoid offering keyboard-shortcut features on watchOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0001
-  title: Consider a task from the perspective of the physical world to find inspiration for a nearby interaction
+  title: Consider physical-world inspiration for a nearby interaction
   category: inputs
   topic: nearby-interactions
   subtopic: best-practices
   statement:
-    en: Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context.
-    ja: a task from the perspective of the physical world to find inspiration for a nearby interactionが現在の状況に適切か検討する。
+    en: Consider a task's physical-world perspective when designing a nearby interaction.
+    ja: nearby interactionを設計するときtaskのphysical-world perspectiveを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -89446,15 +89446,16 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Look for physical actions that can make the task feel easy, natural, and engaging.
+  exceptions:
+    - Device-to-device media transfer is an example, not a required interaction model.
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context.” in the documented Nearby interactions context?
+      - Does the design satisfy “Consider a task's physical-world perspective when designing a nearby interaction.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89466,29 +89467,29 @@
     section_path:
       - Nearby interactions
       - Best practices
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: c07d815db1432c34619ee4aa7fd558d9c23ede80469da1b0689c1869362d7565
-    evidence_paraphrase: Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context.
+    evidence_paraphrase: Consider a task's physical-world perspective when designing a nearby interaction.
   tags:
     - inputs
     - nearby-interactions
     - best-practices
   priority_rank: 5
   status: active
-  apple_native_rule: Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context.
+  apple_native_rule: Consider a task's physical-world perspective when designing a nearby interaction.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0002
-  title: Use distance, direction, and context to inform an interaction
+  title: Use available proximity and context information
   category: inputs
   topic: nearby-interactions
   subtopic: best-practices
   statement:
-    en: Choose or apply distance, direction, and context to inform an interaction in the documented context.
-    ja: 該当する状況ではdistance, direction, and context to inform an interactionを採用する。
+    en: Use available distance, direction, and context to inform a nearby interaction.
+    ja: 利用可能なdistance、direction、contextをnearby interactionに反映する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -89504,15 +89505,17 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Prioritize nearby, contextually relevant information.
+    - iPhone provides peer-device distance and direction; Apple Watch provides peer-device distance.
+  exceptions:
+    - Contact suggestion is an example, not a required nearby-interaction feature.
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply distance, direction, and context to inform an interaction in the documented context.” in the documented Nearby interactions context?
+      - Does the design satisfy “Use available distance, direction, and context to inform a nearby interaction.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89524,29 +89527,29 @@
     section_path:
       - Nearby interactions
       - Best practices
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: a2a11ce55ead985fe639fc16ba632d789e6067ea61d538ef0aa4c15e04225ca3
-    evidence_paraphrase: Choose or apply distance, direction, and context to inform an interaction in the documented context.
+    evidence_paraphrase: Use available distance, direction, and context to inform a nearby interaction.
   tags:
     - inputs
     - nearby-interactions
     - best-practices
   priority_rank: 5
   status: active
-  apple_native_rule: Choose or apply distance, direction, and context to inform an interaction in the documented context.
+  apple_native_rule: Use available distance, direction, and context to inform a nearby interaction.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0003
-  title: Consider how changes in physical distance can guide a nearby interaction
+  title: Consider proximity-responsive nearby feedback
   category: inputs
   topic: nearby-interactions
   subtopic: best-practices
   statement:
-    en: Evaluate whether how changes in physical distance can guide a nearby interaction is appropriate for the current context.
-    ja: how changes in physical distance can guide a nearby interactionが現在の状況に適切か検討する。
+    en: Consider changing nearby-interaction feedback as physical distance changes.
+    ja: physical distanceの変化に合わせてnearby-interaction feedbackを変えることを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -89562,15 +89565,16 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Mirror the way perception typically becomes more precise at closer distances.
+  exceptions:
+    - The documented locator transition is an example, not a required visual treatment.
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether how changes in physical distance can guide a nearby interaction is appropriate for the current context.” in the documented Nearby interactions context?
+      - Does the design satisfy “Consider changing nearby-interaction feedback as physical distance changes.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89582,29 +89586,29 @@
     section_path:
       - Nearby interactions
       - Best practices
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: c38b145fd0fe9fec271366307ef169942a126ed22d41ef71289fc762c814abb3
-    evidence_paraphrase: Evaluate whether how changes in physical distance can guide a nearby interaction is appropriate for the current context.
+    evidence_paraphrase: Consider changing nearby-interaction feedback as physical distance changes.
   tags:
     - inputs
     - nearby-interactions
     - best-practices
   priority_rank: 5
   status: active
-  apple_native_rule: Evaluate whether how changes in physical distance can guide a nearby interaction is appropriate for the current context.
+  apple_native_rule: Consider changing nearby-interaction feedback as physical distance changes.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0004
-  title: Provide continuous feedback
+  title: Provide continuous nearby-interaction feedback
   category: inputs
   topic: nearby-interactions
   subtopic: best-practices
   statement:
-    en: Make continuous feedback available when applicable.
-    ja: 必要な場合にcontinuous feedbackを利用可能にする。
+    en: Provide continuous feedback during a nearby interaction.
+    ja: nearby interaction中はcontinuous feedbackを提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -89620,15 +89624,17 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Keep feedback uninterrupted and responsive to people's movement.
+    - Use continuous updates to strengthen the connection between the physical task and the interaction.
+  exceptions:
+    - Direction-and-proximity updates are an example, not a requirement on platforms without direction data.
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make continuous feedback available when applicable.” in the documented Nearby interactions context?
+      - Does the design satisfy “Provide continuous feedback during a nearby interaction.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89640,29 +89646,29 @@
     section_path:
       - Nearby interactions
       - Best practices
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: 9b2c91f6ff183a96b8b96ce19dac3729e2efb8018825cc9fc734dc1cd03d952a
-    evidence_paraphrase: Make continuous feedback available when applicable.
+    evidence_paraphrase: Provide continuous feedback during a nearby interaction.
   tags:
     - inputs
     - nearby-interactions
     - best-practices
   priority_rank: 5
   status: active
-  apple_native_rule: Make continuous feedback available when applicable.
+  apple_native_rule: Provide continuous feedback during a nearby interaction.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0005
-  title: Consider using multiple feedback types to create a holistic experience
+  title: Consider multiple nearby-interaction feedback types
   category: inputs
   topic: nearby-interactions
   subtopic: best-practices
   statement:
-    en: Evaluate whether using multiple feedback types to create a holistic experience is appropriate for the current context.
-    ja: using multiple feedback types to create a holistic experienceが現在の状況に適切か検討する。
+    en: Consider combining feedback types for a nearby interaction.
+    ja: nearby interactionで複数のfeedback typeを組み合わせることを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -89678,15 +89684,16 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Coordinate visual, audible, or haptic feedback with the task and current context.
+  exceptions:
+    - Use only feedback types that are available and appropriate for the device and situation.
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether using multiple feedback types to create a holistic experience is appropriate for the current context.” in the documented Nearby interactions context?
+      - Does the design satisfy “Consider combining feedback types for a nearby interaction.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89698,29 +89705,29 @@
     section_path:
       - Nearby interactions
       - Best practices
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: 63efada1bebe98a804bee1913b25890fd5ee8fd7d5b93b8cc07a0ef74ace9507
-    evidence_paraphrase: Evaluate whether using multiple feedback types to create a holistic experience is appropriate for the current context.
+    evidence_paraphrase: Consider combining feedback types for a nearby interaction.
   tags:
     - inputs
     - nearby-interactions
     - best-practices
   priority_rank: 5
   status: active
-  apple_native_rule: Evaluate whether using multiple feedback types to create a holistic experience is appropriate for the current context.
+  apple_native_rule: Consider combining feedback types for a nearby interaction.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0006
-  title: Avoid using a nearby interaction as the only way to perform a task
+  title: Avoid making nearby interaction the only task path
   category: inputs
   topic: nearby-interactions
   subtopic: best-practices
   statement:
-    en: Exclude using a nearby interaction as the only way to perform a task from the applicable experience.
-    ja: 該当する体験ではusing a nearby interaction as the only way to perform a taskを避ける。
+    en: Avoid using a nearby interaction as the only way to perform a task.
+    ja: nearby interactionをtask実行の唯一の方法にしない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -89736,7 +89743,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Not everyone can experience a nearby interaction.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
@@ -89744,7 +89751,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude using a nearby interaction as the only way to perform a task from the applicable experience.” in the documented Nearby interactions context?
+      - Does the design satisfy “Avoid using a nearby interaction as the only way to perform a task.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89756,29 +89763,29 @@
     section_path:
       - Nearby interactions
       - Best practices
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: 0b7eca7ecbba25813cf2f7043feafa2b8b3f8b72f6d4d86a11982b809dc3f938
-    evidence_paraphrase: Exclude using a nearby interaction as the only way to perform a task from the applicable experience.
+    evidence_paraphrase: Avoid using a nearby interaction as the only way to perform a task.
   tags:
     - inputs
     - nearby-interactions
     - best-practices
   priority_rank: 5
   status: active
-  apple_native_rule: Exclude using a nearby interaction as the only way to perform a task from the applicable experience.
+  apple_native_rule: Avoid using a nearby interaction as the only way to perform a task.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0007
-  title: Encourage people to hold the device in portrait orientation
+  title: Encourage portrait orientation for nearby interaction
   category: inputs
   topic: nearby-interactions
   subtopic: device-usage
   statement:
-    en: Apply the documented Nearby interactions guidance to encourage people to hold the device in portrait orientation.
-    ja: 「Nearby interactions」において「Encourage people to hold the device in portrait orientation」の指針を適用する。
+    en: Encourage portrait orientation during a nearby interaction.
+    ja: nearby interaction中はportrait orientationを促す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -89786,15 +89793,13 @@
     platforms:
       - ios
       - ipados
-      - watchos
     devices:
       - iphone
       - ipad
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Landscape orientation can reduce the accuracy or availability of distance and relative-direction information.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
@@ -89802,7 +89807,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Nearby interactions guidance to encourage people to hold the device in portrait orientation.” in the documented Nearby interactions context?
+      - Does the design satisfy “Encourage portrait orientation during a nearby interaction.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89814,29 +89819,29 @@
     section_path:
       - Nearby interactions
       - Device usage
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: 22e986ecd97f344842e24f55bf75c666ff9414204b0539350f390480d0483e9a
-    evidence_paraphrase: Apply the documented Nearby interactions guidance to encourage people to hold the device in portrait orientation.
+    evidence_paraphrase: Encourage portrait orientation during a nearby interaction.
   tags:
     - inputs
     - nearby-interactions
     - device-usage
   priority_rank: 5
   status: active
-  apple_native_rule: Apply the documented Nearby interactions guidance to encourage people to hold the device in portrait orientation.
+  apple_native_rule: Encourage portrait orientation during a nearby interaction.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0008
-  title: Design for the device’s directional field of view
+  title: Design for the directional field of view
   category: inputs
   topic: nearby-interactions
   subtopic: device-usage
   statement:
-    en: Apply the documented Nearby interactions guidance to design for the device’s directional field of view.
-    ja: 「Nearby interactions」において「Design for the device’s directional field of view」の指針を適用する。
+    en: Design a nearby interaction for the device's directional field of view.
+    ja: deviceのdirectional field of viewを考慮してnearby interactionを設計する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -89844,15 +89849,13 @@
     platforms:
       - ios
       - ipados
-      - watchos
     devices:
       - iphone
       - ipad
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A participating device outside the field of view may provide distance without relative direction.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
@@ -89860,7 +89863,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Nearby interactions guidance to design for the device’s directional field of view.” in the documented Nearby interactions context?
+      - Does the design satisfy “Design a nearby interaction for the device's directional field of view.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89872,29 +89875,29 @@
     section_path:
       - Nearby interactions
       - Device usage
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: 67abd2830c17f14e093f255bf8b3359cbd6406abfe32a1ede8b0fca0a87c03ab
-    evidence_paraphrase: Apply the documented Nearby interactions guidance to design for the device’s directional field of view.
+    evidence_paraphrase: Design a nearby interaction for the device's directional field of view.
   tags:
     - inputs
     - nearby-interactions
     - device-usage
   priority_rank: 5
   status: active
-  apple_native_rule: Apply the documented Nearby interactions guidance to design for the device’s directional field of view.
+  apple_native_rule: Design a nearby interaction for the device's directional field of view.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-NEARBY-INTERACTIONS-0009
-  title: Help people understand how intervening objects can affect the nearby interaction experience in your app
+  title: Explain nearby-interaction obstruction effects
   category: inputs
   topic: nearby-interactions
   subtopic: device-usage
   statement:
-    en: Apply the documented Nearby interactions guidance to help people understand how intervening objects can affect the nearby interaction experience in your app.
-    ja: 「Nearby interactions」において「Help people understand how intervening objects can affect the nearby interaction experience in your app」の指針を適用する。
+    en: Help people understand how intervening objects affect a nearby interaction.
+    ja: intervening objectがnearby interactionへ与える影響を理解できるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -89910,7 +89913,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - People, animals, or sufficiently large objects can reduce the accuracy or availability of distance and direction information.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
@@ -89918,7 +89921,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Nearby interactions guidance to help people understand how intervening objects can affect the nearby interaction experience in your app.” in the documented Nearby interactions context?
+      - Does the design satisfy “Help people understand how intervening objects affect a nearby interaction.” in the documented Nearby interactions context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -89930,17 +89933,359 @@
     section_path:
       - Nearby interactions
       - Device usage
-    retrieved_at: 2026-07-21T11:15:07.538Z
+    retrieved_at: 2026-07-21T22:56:21Z
     source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
     source_sentence_hash: 2cef9b83f9efba6df0af99d2bafc933de31a6d8505bcf59f6d9f64c6dafb0fe6
-    evidence_paraphrase: Apply the documented Nearby interactions guidance to help people understand how intervening objects can affect the nearby interaction experience in your app.
+    evidence_paraphrase: Help people understand how intervening objects affect a nearby interaction.
   tags:
     - inputs
     - nearby-interactions
     - device-usage
   priority_rank: 5
   status: active
-  apple_native_rule: Apply the documented Nearby interactions guidance to help people understand how intervening objects can affect the nearby interaction experience in your app.
+  apple_native_rule: Help people understand how intervening objects affect a nearby interaction.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-NEARBY-INTERACTIONS-0010
+  title: Ensure alternative ways to complete nearby-interaction tasks
+  category: inputs
+  topic: nearby-interactions
+  subtopic: best-practices
+  statement:
+    en: Ensure people can complete a task without using a nearby interaction.
+    ja: nearby interactionを使わなくてもtaskを完了できるようにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Provide an alternative because not everyone can experience a nearby interaction.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure people can complete a task without using a nearby interaction.” in the documented Nearby interactions context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/nearby-interactions
+    page_title: Nearby interactions
+    section_path:
+      - Nearby interactions
+      - Best practices
+    retrieved_at: 2026-07-21T22:56:21Z
+    source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
+    source_sentence_hash: 7daac3eb3dbfb38b3f4cc1ef68e6b064cd586dde0c9e64829f1512afa9f26c25
+    evidence_paraphrase: Ensure people can complete a task without using a nearby interaction.
+  tags:
+    - inputs
+    - nearby-interactions
+    - best-practices
+  priority_rank: 5
+  status: active
+  apple_native_rule: Ensure people can complete a task without using a nearby interaction.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-NEARBY-INTERACTIONS-0011
+  title: Prefer implicit visual portrait guidance
+  category: inputs
+  topic: nearby-interactions
+  subtopic: device-usage
+  statement:
+    en: When nearby interaction requires portrait orientation, prefer implicit visual holding guidance.
+    ja: nearby interactionでportrait orientationが必要な場合はimplicit visual holding guidanceを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - The nearby-interaction feature supports only portrait orientation while it runs.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When nearby interaction requires portrait orientation, prefer implicit visual holding guidance.” in the documented Nearby interactions context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/nearby-interactions
+    page_title: Nearby interactions
+    section_path:
+      - Nearby interactions
+      - Device usage
+    retrieved_at: 2026-07-21T22:56:21Z
+    source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
+    source_sentence_hash: f0bd8c258c0107139182e4a57839f06182b96fae9e4e4d8c692e3ac0c1ac8967
+    evidence_paraphrase: When nearby interaction requires portrait orientation, prefer implicit visual holding guidance.
+  tags:
+    - inputs
+    - nearby-interactions
+    - device-usage
+  priority_rank: 5
+  status: active
+  apple_native_rule: When nearby interaction requires portrait orientation, prefer implicit visual holding guidance.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-NEARBY-INTERACTIONS-0012
+  title: Avoid explicit portrait instructions when possible
+  category: inputs
+  topic: nearby-interactions
+  subtopic: device-usage
+  statement:
+    en: When possible, avoid explicitly telling people to hold the device in portrait.
+    ja: 可能な場合はdeviceをportraitで持つよう明示的に指示しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Prefer implicit visual feedback when portrait-only nearby interaction is active.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When possible, avoid explicitly telling people to hold the device in portrait.” in the documented Nearby interactions context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/nearby-interactions
+    page_title: Nearby interactions
+    section_path:
+      - Nearby interactions
+      - Device usage
+    retrieved_at: 2026-07-21T22:56:21Z
+    source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
+    source_sentence_hash: f0bd8c258c0107139182e4a57839f06182b96fae9e4e4d8c692e3ac0c1ac8967
+    evidence_paraphrase: When possible, avoid explicitly telling people to hold the device in portrait.
+  tags:
+    - inputs
+    - nearby-interactions
+    - device-usage
+  priority_rank: 5
+  status: active
+  apple_native_rule: When possible, avoid explicitly telling people to hold the device in portrait.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-NEARBY-INTERACTIONS-0013
+  title: Consider obstruction advice in onboarding
+  category: inputs
+  topic: nearby-interactions
+  subtopic: device-usage
+  statement:
+    en: Consider obstacle-avoidance advice in nearby-interaction onboarding or tutorials.
+    ja: nearby-interaction onboardingまたはtutorialでobstacle回避のadviceを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Intervening objects can degrade distance or direction accuracy and availability.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider obstacle-avoidance advice in nearby-interaction onboarding or tutorials.” in the documented Nearby interactions context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/nearby-interactions
+    page_title: Nearby interactions
+    section_path:
+      - Nearby interactions
+      - Device usage
+    retrieved_at: 2026-07-21T22:56:21Z
+    source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
+    source_sentence_hash: 5bbd2d5a1d412fdbb7399ada6c0e218cfe21298bef88eb14c5011c982921abce
+    evidence_paraphrase: Consider obstacle-avoidance advice in nearby-interaction onboarding or tutorials.
+  tags:
+    - inputs
+    - nearby-interactions
+    - device-usage
+  priority_rank: 5
+  status: active
+  apple_native_rule: Consider obstacle-avoidance advice in nearby-interaction onboarding or tutorials.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-NEARBY-INTERACTIONS-0014
+  title: Avoid nearby-interaction features on unsupported platforms
+  category: inputs
+  topic: nearby-interactions
+  subtopic: platform-considerations
+  statement:
+    en: Avoid offering nearby-interaction features on macOS, tvOS, or visionOS.
+    ja: macOS、tvOS、visionOSではnearby-interaction featureを提供しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Nearby interactions are unsupported on these platforms.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid offering nearby-interaction features on macOS, tvOS, or visionOS.” in the documented Nearby interactions context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/nearby-interactions
+    page_title: Nearby interactions
+    section_path:
+      - Nearby interactions
+      - Platform considerations
+    retrieved_at: 2026-07-21T22:56:21Z
+    source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
+    source_sentence_hash: 3456552173a0f194e59ff724a8fde40315ac12febe22fac5cf07d3db61f46f9e
+    evidence_paraphrase: Avoid offering nearby-interaction features on macOS, tvOS, or visionOS.
+  tags:
+    - inputs
+    - nearby-interactions
+    - platform-considerations
+  priority_rank: 5
+  status: active
+  apple_native_rule: Avoid offering nearby-interaction features on macOS, tvOS, or visionOS.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-INPUTS-NEARBY-INTERACTIONS-0015
+  title: Ensure participating watchOS apps stay foregrounded
+  category: inputs
+  topic: nearby-interactions
+  subtopic: watchos
+  statement:
+    en: Ensure a watchOS app remains in the foreground while participating in a nearby interaction.
+    ja: watchOS appがnearby interactionへ参加中はforegroundを維持する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The watchOS app participates in a nearby-interaction experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Nearby interactions experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるNearby interactionsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure a watchOS app remains in the foreground while participating in a nearby interaction.” in the documented Nearby interactions context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/nearby-interactions
+    page_title: Nearby interactions
+    section_path:
+      - Nearby interactions
+      - Platform considerations
+      - watchOS
+    retrieved_at: 2026-07-21T22:56:21Z
+    source_hash: 389983519693e0249aea654fa8f4f32978032a2196ac3c4f661f3157a17b5bf7
+    source_sentence_hash: aefd4f2292eb4365dec837fbd5cd33dbd2f0e67b8b3ebefb757616f857b01c50
+    evidence_paraphrase: Ensure a watchOS app remains in the foreground while participating in a nearby interaction.
+  tags:
+    - inputs
+    - nearby-interactions
+    - platform-considerations
+    - watchos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Ensure a watchOS app remains in the foreground while participating in a nearby interaction.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-INPUTS-POINTING-DEVICES-0001
   title: Respond consistently to mouse and trackpad gestures

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:54:40.588Z. 2695 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:59:23.317Z. 2701 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2117,15 +2117,21 @@ Generated 2026-07-21T22:54:40.588Z. 2695 active rules; 4 deprecated rules.
 - **HIG-INPUTS-KEYBOARDS-0017 · AVOID · high** — Avoid offering keyboard-shortcut features on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 ### nearby-interactions
 
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0001 · MAY · low** — Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0002 · SHOULD · low** — Choose or apply distance, direction, and context to inform an interaction in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0003 · MAY · low** — Evaluate whether how changes in physical distance can guide a nearby interaction is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0004 · SHOULD · low** — Make continuous feedback available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0005 · MAY · low** — Evaluate whether using multiple feedback types to create a holistic experience is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0006 · AVOID · low** — Exclude using a nearby interaction as the only way to perform a task from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0007 · SHOULD · low** — Apply the documented Nearby interactions guidance to encourage people to hold the device in portrait orientation. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0008 · SHOULD · low** — Apply the documented Nearby interactions guidance to design for the device’s directional field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
-- **HIG-INPUTS-NEARBY-INTERACTIONS-0009 · SHOULD · low** — Apply the documented Nearby interactions guidance to help people understand how intervening objects can affect the nearby interaction experience in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0001 · MAY · high** — Consider a task's physical-world perspective when designing a nearby interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0002 · SHOULD · high** — Use available distance, direction, and context to inform a nearby interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0003 · MAY · high** — Consider changing nearby-interaction feedback as physical distance changes. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0004 · SHOULD · high** — Provide continuous feedback during a nearby interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0005 · MAY · high** — Consider combining feedback types for a nearby interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0006 · AVOID · high** — Avoid using a nearby interaction as the only way to perform a task. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0007 · SHOULD · high** — Encourage portrait orientation during a nearby interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0008 · SHOULD · high** — Design a nearby interaction for the device's directional field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0009 · SHOULD · high** — Help people understand how intervening objects affect a nearby interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0010 · MUST · high** — Ensure people can complete a task without using a nearby interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0011 · SHOULD · high** — When nearby interaction requires portrait orientation, prefer implicit visual holding guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0012 · AVOID · high** — When possible, avoid explicitly telling people to hold the device in portrait. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0013 · MAY · high** — Consider obstacle-avoidance advice in nearby-interaction onboarding or tutorials. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0014 · AVOID · high** — Avoid offering nearby-interaction features on macOS, tvOS, or visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
+- **HIG-INPUTS-NEARBY-INTERACTIONS-0015 · MUST · high** — Ensure a watchOS app remains in the foreground while participating in a nearby interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
 ### pointing-devices
 
 - **HIG-INPUTS-POINTING-DEVICES-0001 · SHOULD · high** — Respond to familiar mouse and trackpad gestures consistently with system expectations. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
