@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2565
+- Active atomic rules: 2574
 - Pages without rules: 16
-- Low-confidence rules: 894
-- Rules requiring human review: 894
-- Reference notes: 921
+- Low-confidence rules: 890
+- Rules requiring human review: 890
+- Reference notes: 920
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 682
+- technologies: 691
 
 ## Normative levels
 
-- AVOID: 342
+- AVOID: 345
 - MAY: 312
-- MUST: 245
-- MUST_NOT: 22
-- SHOULD: 1644
+- MUST: 247
+- MUST_NOT: 23
+- SHOULD: 1647
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1698
-- ipados: 1654
-- macos: 1408
-- tvos: 1108
-- visionos: 1451
-- watchos: 1164
+- ios: 1706
+- ipados: 1655
+- macos: 1409
+- tvos: 1109
+- visionos: 1452
+- watchos: 1165
 
 ## Rules by testability
 
 - hybrid: 67
-- manual: 2498
+- manual: 2507
 
 ## Blocked pages
 
@@ -752,10 +752,6 @@ None.
 - HIG-TECHNOLOGIES-ICLOUD-0008
 - HIG-TECHNOLOGIES-ICLOUD-0009
 - HIG-TECHNOLOGIES-ICLOUD-0010
-- HIG-TECHNOLOGIES-ID-VERIFIER-0001
-- HIG-TECHNOLOGIES-ID-VERIFIER-0002
-- HIG-TECHNOLOGIES-ID-VERIFIER-0003
-- HIG-TECHNOLOGIES-ID-VERIFIER-0004
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0002
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0003
@@ -1649,10 +1645,6 @@ None.
 - HIG-TECHNOLOGIES-ICLOUD-0008
 - HIG-TECHNOLOGIES-ICLOUD-0009
 - HIG-TECHNOLOGIES-ICLOUD-0010
-- HIG-TECHNOLOGIES-ID-VERIFIER-0001
-- HIG-TECHNOLOGIES-ID-VERIFIER-0002
-- HIG-TECHNOLOGIES-ID-VERIFIER-0003
-- HIG-TECHNOLOGIES-ID-VERIFIER-0004
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0002
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0003
@@ -2203,7 +2195,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Standard icons > Search — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Standard icons > Selection — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/id-verifier · ID Verifier > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/id-verifier · ID Verifier > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/id-verifier · ID Verifier > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/id-verifier · ID Verifier > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/id-verifier · ID Verifier > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1594
-- Reviewed batches: 105
+- Reviewed rules: 1607
+- Reviewed batches: 106
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:26:43Z
+- Reviewed at: 2026-07-21T21:34:02Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1527,6 +1527,19 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-GAME-CENTER-0031 · high — Recovered both supported table color spaces. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-GAME-CENTER-0032 · high — Recovered the table's minimum resolution. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-GAME-CENTER-0033 · high — Recovered the connected-iPhone presentation behavior and its watchOS system-UI limitation. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0001 · high — Replaced the three-word false-positive statement with the documented visual-confirmation and no-data-transfer context. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0002 · high — Preserved SHOULD strength while applying privacy priority and the current-verification scope. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0003 · high — Retained the direct button guidance and recorded explicit user initiation. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0004 · high — Recorded the feedback outcome without treating the example button labels as mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0005 · high — Recovered the privacy-sensitive MUST from the explicit only-when restriction and preserved both conjunctive conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0006 · high — Recovered MUST from the explicit You must platform requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0007 · high — Recovered the data-minimizing request type for minimum-age checks. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0008 · high — Separated the explicit data-minimization avoidance from the positive threshold-request guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0009 · high — Preserved the qualification condition instead of treating registration as universal. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0010 · high — Recovered both documented labels and their distinct request scopes. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0011 · high — Recovered the direct symbol avoidance and retained the examples as nonexhaustive. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0012 · high — Recovered MUST_NOT from the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- HIG-TECHNOLOGIES-ID-VERIFIER-0013 · high — Recorded the descriptive platform limitation at AVOID rather than strengthening it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-NFC-0001 · high — Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0002 · high — Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0003 · high — Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))

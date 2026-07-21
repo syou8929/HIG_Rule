@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T21:29:20.146Z. 2565 active rules; 4 deprecated rules.
+Generated 2026-07-21T21:38:53.092Z. 2574 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2564,10 +2564,19 @@ Generated 2026-07-21T21:29:20.146Z. 2565 active rules; 4 deprecated rules.
 - **HIG-TECHNOLOGIES-ICLOUD-0010 · MAY · low** — When games, consider saving player progress in iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 ### id-verifier
 
-- **HIG-TECHNOLOGIES-ID-VERIFIER-0001 · SHOULD · low** — Present only request in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
-- **HIG-TECHNOLOGIES-ID-VERIFIER-0002 · SHOULD · low** — Apply the documented ID Verifier guidance to ask only for the data you need. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
-- **HIG-TECHNOLOGIES-ID-VERIFIER-0003 · SHOULD · low** — Make a button that initiates the verification process available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
-- **HIG-TECHNOLOGIES-ID-VERIFIER-0004 · SHOULD · low** — In a Display Only request, help the person using your app provide feedback on the visual confirmation they perform. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0001 · SHOULD · high** — Use a Display Only request when the requester needs to visually confirm identity without receiving customer data. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0002 · SHOULD · high** — Request only the identity data needed for the current verification. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0003 · SHOULD · high** — Provide a button that initiates the ID verification process. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0004 · SHOULD · high** — In a Display Only request, let the requester report whether the displayed identity matches the customer. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0005 · MUST · high** — Use a Data Transfer request only when legal verification requires storing or processing identity information. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0006 · MUST · high** — Request the additional entitlement required to make a Data Transfer request. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0007 · SHOULD · high** — Use an age-threshold request when verifying that a customer meets a minimum age. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0008 · AVOID · high** — Avoid requesting a customer’s current age or birth date for a minimum-age check. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0009 · SHOULD · high** — If the app qualifies, register for ID Verifier through Apple Business Register. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0010 · SHOULD · high** — Label a simple age-check button Verify Age and a detailed identity-request button Verify Identity. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0011 · AVOID · high** — Avoid symbols that imply a particular communication type in an ID verification button. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0012 · MUST_NOT · high** — Never include the Apple logo in an ID verification button label. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0013 · AVOID · high** — Avoid using ID Verifier on iPadOS, macOS, tvOS, visionOS, or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 ### imessage-apps-and-stickers
 
 - **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001 · SHOULD · low** — Favor providing one primary experience in your iMessage app when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))

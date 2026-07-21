@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0001",
-    "title": "Display Only request",
+    "title": "Use Display Only for visual confirmation without data transfer",
     "category": "technologies",
     "topic": "id-verifier",
     "subtopic": "id-verifier",
     "statement": {
-      "en": "Present only request in the documented context.",
-      "ja": "該当する状況でOnly requestを表示する。"
+      "en": "Use a Display Only request when the requester needs to visually confirm identity without receiving customer data.",
+      "ja": "requesterがcustomer dataを受け取らずにidentityを目視確認する場合はDisplay Only requestを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -26,7 +26,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Show identity data and the customer portrait within system-provided UI on the requester’s iPhone.",
+      "The customer data remains in the system UI and is not transmitted to the app."
     ],
     "exceptions": [],
     "rationale": {
@@ -36,7 +37,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present only request in the documented context.” in the documented ID Verifier context?"
+        "Does the design satisfy “Use a Display Only request when the requester needs to visually confirm identity without receiving customer data.” in the documented ID Verifier context?"
       ]
     },
     "testability": "manual",
@@ -52,33 +53,33 @@
       "section_path": [
         "ID Verifier"
       ],
-      "retrieved_at": "2026-07-21T11:14:56.022Z",
+      "retrieved_at": "2026-07-21T21:34:02Z",
       "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
-      "source_sentence_hash": "f0c69ceebbff75fd3d1bec7bdcfb7c3f2cd1fb9957571505737fd72b7912037c",
-      "evidence_paraphrase": "Present only request in the documented context."
+      "source_sentence_hash": "58bd689da1124b35955b9566d021ed1e7b6d0d62a089548590c588c829358ac8",
+      "evidence_paraphrase": "Use a Display Only request when the requester needs to visually confirm identity without receiving customer data."
     },
     "tags": [
       "technologies",
       "id-verifier"
     ],
-    "priority_rank": 4,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Present only request in the documented context.",
+    "apple_native_rule": "Use a Display Only request when the requester needs to visually confirm identity without receiving customer data.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0002",
-    "title": "Ask only for the data you need",
+    "title": "Ask only for identity data needed now",
     "category": "technologies",
     "topic": "id-verifier",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented ID Verifier guidance to ask only for the data you need.",
-      "ja": "「ID Verifier」において「Ask only for the data you need」の指針を適用する。"
+      "en": "Request only the identity data needed for the current verification.",
+      "ja": "current verificationに必要なidentity dataだけを要求する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -93,7 +94,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Requesting more data than the current verification needs can reduce trust."
     ],
     "exceptions": [],
     "rationale": {
@@ -103,7 +104,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented ID Verifier guidance to ask only for the data you need.” in the documented ID Verifier context?"
+        "Does the design satisfy “Request only the identity data needed for the current verification.” in the documented ID Verifier context?"
       ]
     },
     "testability": "manual",
@@ -120,34 +121,34 @@
         "ID Verifier",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:56.022Z",
+      "retrieved_at": "2026-07-21T21:34:02Z",
       "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
-      "source_sentence_hash": "34bdc488f885565f585b602743f191942907fd6df1906efb7574e11dc81cadcd",
-      "evidence_paraphrase": "Apply the documented ID Verifier guidance to ask only for the data you need."
+      "source_sentence_hash": "2fc254cd847ed7d58996d8f80a25d8efa9b82dbb0684ed0892eb0c8380313c13",
+      "evidence_paraphrase": "Request only the identity data needed for the current verification."
     },
     "tags": [
       "technologies",
       "id-verifier",
       "best-practices"
     ],
-    "priority_rank": 4,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented ID Verifier guidance to ask only for the data you need.",
+    "apple_native_rule": "Request only the identity data needed for the current verification.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0003",
-    "title": "Provide a button that initiates the verification process",
+    "title": "Provide a button that starts ID verification",
     "category": "technologies",
     "topic": "id-verifier",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make a button that initiates the verification process available when applicable.",
-      "ja": "必要な場合にa button that initiates the verification processを利用可能にする。"
+      "en": "Provide a button that initiates the ID verification process.",
+      "ja": "ID verification processを開始するbuttonを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -162,7 +163,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let the person using the verifier app intentionally start the request."
     ],
     "exceptions": [],
     "rationale": {
@@ -172,7 +173,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make a button that initiates the verification process available when applicable.” in the documented ID Verifier context?"
+        "Does the design satisfy “Provide a button that initiates the ID verification process.” in the documented ID Verifier context?"
       ]
     },
     "testability": "manual",
@@ -189,10 +190,10 @@
         "ID Verifier",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:56.022Z",
+      "retrieved_at": "2026-07-21T21:34:02Z",
       "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
-      "source_sentence_hash": "b51051e78c551236ff0813d0b589a1283ccbdae444d3794dbfaec2f29c148535",
-      "evidence_paraphrase": "Make a button that initiates the verification process available when applicable."
+      "source_sentence_hash": "89039226c1ec20874a31bc04333f8e209ff1b4dd90e1c8567802f5edd0cc2306",
+      "evidence_paraphrase": "Provide a button that initiates the ID verification process."
     },
     "tags": [
       "technologies",
@@ -201,24 +202,574 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make a button that initiates the verification process available when applicable.",
+    "apple_native_rule": "Provide a button that initiates the ID verification process.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0004",
-    "title": "In a Display Only request, help the person using your app provide feedback on the visual confirmation they …",
+    "title": "Let the requester report a Display Only match result",
     "category": "technologies",
     "topic": "id-verifier",
     "subtopic": "best-practices",
     "statement": {
-      "en": "In a Display Only request, help the person using your app provide feedback on the visual confirmation they perform.",
-      "ja": "a Display Only requestではthe person using your app provide feedback on the visual confirmation they performを支援する。"
+      "en": "In a Display Only request, let the requester report whether the displayed identity matches the customer.",
+      "ja": "Display Only requestでは、表示されたidentityがcustomerと一致するかrequesterが報告できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app receives an approved or rejected result after the requester visually compares the portrait."
+    ],
+    "exceptions": [
+      "Labels such as Matches Person and Doesn’t Match Person are examples, not required wording."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “In a Display Only request, let the requester report whether the displayed identity matches the customer.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "1e11f87c063afb410de50a40a7367279ef92247650937656ec4c7ceec04b4993",
+      "evidence_paraphrase": "In a Display Only request, let the requester report whether the displayed identity matches the customer."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "In a Display Only request, let the requester report whether the displayed identity matches the customer.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0005",
+    "title": "Use Data Transfer only for legally required data handling",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "id-verifier",
+    "statement": {
+      "en": "Use a Data Transfer request only when legal verification requires storing or processing identity information.",
+      "ja": "legal verificationでidentity informationの保存または処理が必要な場合にだけData Transfer requestを使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Both a legal verification requirement and a need to store or process information must apply."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a Data Transfer request only when legal verification requires storing or processing identity information.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "cdf6572078321b4aa9ef759287a3268df7163ac70630eac601b0483d28b1e5cf",
+      "evidence_paraphrase": "Use a Data Transfer request only when legal verification requires storing or processing identity information."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "Use a Data Transfer request only when legal verification requires storing or processing identity information.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0006",
+    "title": "Request the required Data Transfer entitlement",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "id-verifier",
+    "statement": {
+      "en": "Request the additional entitlement required to make a Data Transfer request.",
+      "ja": "Data Transfer requestに必要な追加entitlementを申請する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app makes a Data Transfer request."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Request the additional entitlement required to make a Data Transfer request.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "cdf6572078321b4aa9ef759287a3268df7163ac70630eac601b0483d28b1e5cf",
+      "evidence_paraphrase": "Request the additional entitlement required to make a Data Transfer request."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "Request the additional entitlement required to make a Data Transfer request.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0007",
+    "title": "Use an age threshold for minimum-age verification",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use an age-threshold request when verifying that a customer meets a minimum age.",
+      "ja": "customerがminimum ageを満たすことを確認する場合はage-threshold requestを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The verification needs only a yes-or-no minimum-age result."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use an age-threshold request when verifying that a customer meets a minimum age.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "2fc254cd847ed7d58996d8f80a25d8efa9b82dbb0684ed0892eb0c8380313c13",
+      "evidence_paraphrase": "Use an age-threshold request when verifying that a customer meets a minimum age."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier",
+      "best-practices"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "Use an age-threshold request when verifying that a customer meets a minimum age.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0008",
+    "title": "Avoid precise age data for threshold checks",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid requesting a customer’s current age or birth date for a minimum-age check.",
+      "ja": "minimum-age checkでcustomerのcurrent ageまたはbirth dateを要求しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "An age-threshold result can complete the verification without precise age data."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid requesting a customer’s current age or birth date for a minimum-age check.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "2fc254cd847ed7d58996d8f80a25d8efa9b82dbb0684ed0892eb0c8380313c13",
+      "evidence_paraphrase": "Avoid requesting a customer’s current age or birth date for a minimum-age check."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier",
+      "best-practices"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "Avoid requesting a customer’s current age or birth date for a minimum-age check.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0009",
+    "title": "Register qualifying apps for ID Verifier",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "If the app qualifies, register for ID Verifier through Apple Business Register.",
+      "ja": "appが対象となる場合はApple Business Registerを通じてID Verifierへ登録する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Registration lets the system show the organization’s official name and logo in the verification UI."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “If the app qualifies, register for ID Verifier through Apple Business Register.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "86a92fd550898e87ceebc06a77372a1dc60e1ed5fd7848a03e8b23fbc9ffed38",
+      "evidence_paraphrase": "If the app qualifies, register for ID Verifier through Apple Business Register."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "If the app qualifies, register for ID Verifier through Apple Business Register.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0010",
+    "title": "Label verification buttons by request purpose",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Label a simple age-check button Verify Age and a detailed identity-request button Verify Identity.",
+      "ja": "simple age-check buttonはVerify Age、detailed identity-request buttonはVerify Identityとlabelする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Choose the label that matches the scope of the verification request."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Label a simple age-check button Verify Age and a detailed identity-request button Verify Identity.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "89039226c1ec20874a31bc04333f8e209ff1b4dd90e1c8567802f5edd0cc2306",
+      "evidence_paraphrase": "Label a simple age-check button Verify Age and a detailed identity-request button Verify Identity."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Label a simple age-check button Verify Age and a detailed identity-request button Verify Identity.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0011",
+    "title": "Avoid communication-type symbols in verification buttons",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid symbols that imply a particular communication type in an ID verification button.",
+      "ja": "ID verification buttonで特定のcommunication typeを示すsymbolを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Examples include NFC and QR-code symbols."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid symbols that imply a particular communication type in an ID verification button.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "89039226c1ec20874a31bc04333f8e209ff1b4dd90e1c8567802f5edd0cc2306",
+      "evidence_paraphrase": "Avoid symbols that imply a particular communication type in an ID verification button."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid symbols that imply a particular communication type in an ID verification button.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0012",
+    "title": "Never include the Apple logo in a verification button label",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Never include the Apple logo in an ID verification button label.",
+      "ja": "ID verification button labelにApple logoを含めない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
     "scope": {
       "portability": "technology-specific",
       "platforms": [
@@ -241,7 +792,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “In a Display Only request, help the person using your app provide feedback on the visual confirmation they perform.” in the documented ID Verifier context?"
+        "Does the design satisfy “Never include the Apple logo in an ID verification button label.” in the documented ID Verifier context?"
       ]
     },
     "testability": "manual",
@@ -258,10 +809,10 @@
         "ID Verifier",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:56.022Z",
+      "retrieved_at": "2026-07-21T21:34:02Z",
       "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
-      "source_sentence_hash": "33fae2f8b48190d7a9fc859e31cb4a050471fb8e107e7684e0560c151f831193",
-      "evidence_paraphrase": "In a Display Only request, help the person using your app provide feedback on the visual confirmation they perform."
+      "source_sentence_hash": "89039226c1ec20874a31bc04333f8e209ff1b4dd90e1c8567802f5edd0cc2306",
+      "evidence_paraphrase": "Never include the Apple logo in an ID verification button label."
     },
     "tags": [
       "technologies",
@@ -270,7 +821,84 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "In a Display Only request, help the person using your app provide feedback on the visual confirmation they perform.",
+    "apple_native_rule": "Never include the Apple logo in an ID verification button label.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-ID-VERIFIER-0013",
+    "title": "Avoid ID Verifier on unsupported Apple platforms",
+    "category": "technologies",
+    "topic": "id-verifier",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid using ID Verifier on iPadOS, macOS, tvOS, visionOS, or watchOS.",
+      "ja": "iPadOS、macOS、tvOS、visionOS、watchOSでID Verifierを使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "ID Verifier is supported on iOS and has no additional iOS considerations."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ID Verifier experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるID Verifierの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid using ID Verifier on iPadOS, macOS, tvOS, visionOS, or watchOS.” in the documented ID Verifier context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/id-verifier",
+      "page_title": "ID Verifier",
+      "section_path": [
+        "ID Verifier",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-21T21:34:02Z",
+      "source_hash": "852e1c912e191b723d9c74283c303bd63cdccb1f1725855b69df61cb7af82f0e",
+      "source_sentence_hash": "5ca98e17306fffc7a1087a73054c392a39a5aee13720278cea069e2bb56371a5",
+      "evidence_paraphrase": "Avoid using ID Verifier on iPadOS, macOS, tvOS, visionOS, or watchOS."
+    },
+    "tags": [
+      "technologies",
+      "id-verifier",
+      "platform-considerations"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid using ID Verifier on iPadOS, macOS, tvOS, visionOS, or watchOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

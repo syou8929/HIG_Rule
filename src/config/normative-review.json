@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:16:40Z",
+  "reviewed_at": "2026-07-21T21:34:02Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,58 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 267,
+  "reviewed_rule_count": 270,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-ID-VERIFIER-0005": {
+      "title": "Use Data Transfer only for legally required data handling",
+      "statement": {
+        "en": "Use a Data Transfer request only when legal verification requires storing or processing identity information.",
+        "ja": "legal verificationでidentity informationの保存または処理が必要な場合にだけData Transfer requestを使う。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Both a legal verification requirement and a need to store or process information must apply."
+      ],
+      "review_note": "Recovered the privacy-sensitive MUST from the explicit only-when restriction and preserved both legal and data-handling conditions."
+    },
+    "HIG-TECHNOLOGIES-ID-VERIFIER-0006": {
+      "title": "Request the required Data Transfer entitlement",
+      "statement": {
+        "en": "Request the additional entitlement required to make a Data Transfer request.",
+        "ja": "Data Transfer requestに必要な追加entitlementを申請する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The app makes a Data Transfer request."
+      ],
+      "review_note": "Recovered MUST from the explicit You must requirement for the additional entitlement."
+    },
+    "HIG-TECHNOLOGIES-ID-VERIFIER-0012": {
+      "title": "Never include the Apple logo in a verification button label",
+      "statement": {
+        "en": "Never include the Apple logo in an ID verification button label.",
+        "ja": "ID verification button labelにApple logoを含めない。"
+      },
+      "normative_level": "MUST_NOT",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "prohibit",
+      "severity": "error",
+      "review_note": "Recovered MUST_NOT from the explicit Never prohibition."
+    },
     "HIG-TECHNOLOGIES-CAREKIT-0001": {
       "title": "Provide a clear CareKit privacy-policy URL",
       "statement": {"en": "Provide a URL to a clearly stated CareKit privacy policy during app submission.", "ja": "app submission時に明確なCareKit privacy policyへのURLを提供する。"},
