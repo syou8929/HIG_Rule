@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:01:57Z",
+  "reviewed_at": "2026-07-21T18:10:40Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2187,6 +2187,22 @@
         "HIG-COMPONENTS-TAB-BARS-0026", "HIG-COMPONENTS-TAB-BARS-0027", "HIG-COMPONENTS-TAB-BARS-0028", "HIG-COMPONENTS-TAB-BARS-0029"
       ],
       "review_note": "Completed Tab bars coverage; retained all sixteen existing IDs, recovered thirteen atomic rules, changed three tvOS customization capabilities from SHOULD to MAY, and retained only the visibility, short-label, and sidebar-selection directives as MUST rules."
+    },
+    {
+      "id": "priority-4-text-fields-context-2026-07-21",
+      "reviewed_at": "2026-07-21T18:10:40Z",
+      "review_method": "Rendered Apple HIG Text fields guidance, input quantity and purpose, secure data, field layout and focus order, validation and locale behavior, line breaks and tooltips, keyboard and text-entry alternatives, iOS and iPadOS field accessories, macOS combo boxes, watchOS constraints, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/text-fields", "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-TEXT-FIELDS-0001", "HIG-COMPONENTS-TEXT-FIELDS-0002", "HIG-COMPONENTS-TEXT-FIELDS-0003", "HIG-COMPONENTS-TEXT-FIELDS-0004", "HIG-COMPONENTS-TEXT-FIELDS-0005",
+        "HIG-COMPONENTS-TEXT-FIELDS-0006", "HIG-COMPONENTS-TEXT-FIELDS-0007", "HIG-COMPONENTS-TEXT-FIELDS-0008", "HIG-COMPONENTS-TEXT-FIELDS-0009", "HIG-COMPONENTS-TEXT-FIELDS-0010",
+        "HIG-COMPONENTS-TEXT-FIELDS-0011", "HIG-COMPONENTS-TEXT-FIELDS-0012", "HIG-COMPONENTS-TEXT-FIELDS-0013", "HIG-COMPONENTS-TEXT-FIELDS-0014", "HIG-COMPONENTS-TEXT-FIELDS-0015",
+        "HIG-COMPONENTS-TEXT-FIELDS-0016", "HIG-COMPONENTS-TEXT-FIELDS-0017", "HIG-COMPONENTS-TEXT-FIELDS-0018", "HIG-COMPONENTS-TEXT-FIELDS-0019", "HIG-COMPONENTS-TEXT-FIELDS-0020",
+        "HIG-COMPONENTS-TEXT-FIELDS-0021", "HIG-COMPONENTS-TEXT-FIELDS-0022", "HIG-COMPONENTS-TEXT-FIELDS-0023", "HIG-COMPONENTS-TEXT-FIELDS-0024", "HIG-COMPONENTS-TEXT-FIELDS-0025",
+        "HIG-COMPONENTS-TEXT-FIELDS-0026", "HIG-COMPONENTS-TEXT-FIELDS-0027", "HIG-COMPONENTS-TEXT-FIELDS-0028", "HIG-COMPONENTS-TEXT-FIELDS-0029"
+      ],
+      "review_note": "Completed Text fields coverage; retained all eleven existing IDs, recovered eighteen atomic rules, and retained only tab order plus the explicit sensitive-data and validation directives as MUST rules."
     }
   ],
   "rules": {
@@ -3031,6 +3047,223 @@
       "normative_level": "MUST", "confidence": "high", "review_required": false,
       "conditions": ["The app uses a sidebar for secondary navigation within a tab."],
       "review_note": "Recovered the explicit Be sure directive and retained its within-tab sidebar condition."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0001": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "4646f22fa901dac85a2e23a670c0dab7920fbc7876add6d793487165526c7285", "section_path": ["Text fields", "Best practices"]},
+      "title": "Use text fields for small pieces of information",
+      "statement": {"en": "Use a text field to request a small, specific piece of information.", "ja": "smallでspecificな情報を求めるためtext fieldを使う。"},
+      "conditions": ["Examples include a name or email address; use the separately reviewed text-view alternative for larger input."],
+      "review_note": "Recorded the small-input boundary and separated the larger-input alternative."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0002": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "ec18a9f02db268f31773b98aa7c2fdf1b0caa95d3e4363930e9e85d306646cbb", "section_path": ["Text fields", "Best practices"]},
+      "title": "Show a hint that communicates text-field purpose",
+      "statement": {"en": "Show a text-field hint when it helps communicate the field's purpose.", "ja": "fieldのpurposeを伝える場合はtext-field hintを表示する。"},
+      "conditions": ["Placeholder examples include Email or Password while the field contains no other text."],
+      "review_note": "Recorded the hint purpose and separated the persistent-label option."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0003": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "973d57b1cce4119e637bb5a640c566c2cbb25550e5472fe386273200e77c3712", "section_path": ["Text fields", "Best practices"]},
+      "title": "Use secure text fields for private data",
+      "statement": {"en": "Use a secure text field to hide private data.", "ja": "private dataを隠すためsecure text fieldを使う。"},
+      "conditions": ["Apply the separately reviewed Always requirement when the requested data is sensitive."],
+      "review_note": "Retained the general secure-field guidance and separated the stronger sensitive-data rule."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0004": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "52bb26f05b137d5a4bd756ee8a75128d26f0f7503db36287153d11ccf2ce3e15", "section_path": ["Text fields", "Best practices"]},
+      "title": "Keep text-field tab order logical",
+      "statement": {"en": "Ensure tabbing between multiple text fields moves focus in a logical, expected sequence.", "ja": "複数text field間のtab移動でfocusが論理的かつ期待される順序になるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["text-fields"], "modalities": ["keyboard"]},
+      "conditions": ["The interface contains multiple fields; customize order only when the system's automatic sequence is insufficient."],
+      "review_note": "Retained the explicit Ensure directive, fixed duplicated generated wording, and recorded keyboard modality."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0005": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "5d6218c0a18c224558e67b70373eedcef558f28454a9c453710ae1876ef5f474", "section_path": ["Text fields", "Best practices"]},
+      "title": "Use a number formatter for numeric data",
+      "statement": {"en": "Use a number formatter to help people enter and read numeric data.", "ja": "numeric dataの入力と読み取りを支援するためnumber formatterを使う。"},
+      "conditions": ["Configure numeric acceptance and a suitable decimal, percentage, or currency display."],
+      "review_note": "Recorded input restriction and display-format purposes and separated locale caution."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0006": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "9678f3ab11cdcd42a9c3754af72227e3d7a4b68b3f193d6270200f83b1ed974b", "section_path": ["Text fields", "Best practices"]},
+      "title": "Consider an expansion tooltip for clipped text",
+      "statement": {"en": "Consider an expansion tooltip for the full version of clipped or truncated text.", "ja": "clippedまたはtruncated textの全文表示にexpansion tooltipを検討する。"},
+      "normative_level": "MAY",
+      "scope": {"portability": "apple-component-specific", "platforms": ["ipados", "macos"], "devices": ["ipad", "mac"], "components": ["text-fields"], "modalities": ["pointer"]},
+      "conditions": ["The tooltip appears when someone places a pointer over the field."],
+      "review_note": "Preserved MAY and recorded the pointer-triggered behavior."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0007": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "07db499cd8cea9f2104d4b8070a383bce57eb1390051f0c22a6bd61c73b11c15", "section_path": ["Text fields", "Best practices"]},
+      "title": "Minimize tvOS and watchOS text entry",
+      "statement": {"en": "Minimize text entry in tvOS and watchOS apps.", "ja": "tvOSとwatchOS appではtext entryを最小化する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["tvos", "watchos"], "devices": ["apple-tv", "apple-watch"], "components": ["text-fields"], "modalities": []},
+      "conditions": ["Long passages and numerous fields are time-consuming on Apple TV and Apple Watch."],
+      "review_note": "Corrected page-wide scope to the two named platforms and separated the button alternative."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0008": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "2fd38a209915ca6e0157eb88ad91daf943625020066846a8460daed327cb68f6", "section_path": ["Text fields", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Provide a trailing Clear button",
+      "statement": {"en": "Display a Clear button at the trailing end of an iOS or iPadOS text field.", "ja": "iOSまたはiPadOS text fieldのtrailing endにClear buttonを表示する。"},
+      "conditions": ["Let people erase all input without repeatedly tapping Delete."],
+      "review_note": "Made placement and erase behavior concrete."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0009": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "320a39febeb095ab63db969fa019a931c3579167c1a3f7629fbdde2fa67c8e52", "section_path": ["Text fields", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use text-field images and buttons for clarity and function",
+      "statement": {"en": "Use images and buttons to add clarity or functionality to iOS and iPadOS text fields.", "ja": "iOSとiPadOS text fieldのclarityまたはfunctionality向上にimageとbuttonを使う。"},
+      "conditions": ["Use custom images at either end or a suitable system-provided button."],
+      "review_note": "Recorded supported accessory types and separated leading and trailing purposes."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0010": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "334e2d17408e72c190efe5b0974fc8aff505c4ad20ca4024f4a5d34539494f11", "section_path": ["Text fields", "Platform considerations", "macOS"]},
+      "title": "Consider a macOS combo box for text and choices",
+      "statement": {"en": "Consider a macOS combo box when pairing text input with a list of choices.", "ja": "text inputとchoice listを組み合わせる場合はmacOS combo boxを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The input needs both free text and selectable choices."],
+      "review_note": "Preserved MAY and the paired-input condition."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0011": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "8bd6f3437010725e0b4887cc74502056f145c5140fd5a3245384dfa84f241166", "section_path": ["Text fields", "Platform considerations", "watchOS"]},
+      "title": "Use watchOS text fields only when necessary",
+      "statement": {"en": "Present a watchOS text field only when necessary.", "ja": "必要な場合にだけwatchOS text fieldを表示する。"},
+      "conditions": ["Apply the separately reviewed list-of-options preference whenever possible."],
+      "review_note": "Made the watchOS scope explicit and separated its preferred alternative."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0012": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "deb9950b0870354a8747f3d0a04752a879a8954b7ca0eca7cd836ef28aaa4592", "section_path": ["Text fields", "Best practices"]},
+      "title": "Use a text view for larger input",
+      "statement": {"en": "Use a text view when people need to enter a larger amount of text.", "ja": "多量のtextを入力する場合はtext viewを使う。"},
+      "conditions": ["The requested input exceeds a small, specific piece of information."],
+      "review_note": "Separated the larger-input alternative from text-field use."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0013": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "5917d4e0252c3afbc476e90f472c7e26af4d1b28f4715400d6a827b9df247c60", "section_path": ["Text fields", "Best practices"]},
+      "title": "Consider a separate persistent field label",
+      "statement": {"en": "Consider a separate text-field label when a disappearing placeholder may obscure the field's purpose.", "ja": "placeholder消失でfieldのpurposeが不明になる場合は別のtext-field labelを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Placeholder text disappears after people begin typing."],
+      "review_note": "Recovered the optional persistent-label safeguard."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0014": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "283d0604d531fa959fd8611ce9f5f44d91d38b5dabfcd7740eb1a52994124420", "section_path": ["Text fields", "Best practices"]},
+      "title": "Always use secure fields for sensitive data",
+      "statement": {"en": "Always use a secure text field when the app requests sensitive data.", "ja": "appがsensitive dataを求める場合は常にsecure text fieldを使う。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["Sensitive data includes passwords."],
+      "review_note": "Recovered the explicit Always directive and its sensitive-data condition."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0015": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "09c56948040bedc23e07588252f2bd3b5b50a365a954586ed0835582b1d74eb1", "section_path": ["Text fields", "Best practices"]},
+      "title": "Match field size to expected text quantity",
+      "statement": {"en": "When possible, match a text field's size to the anticipated amount of text.", "ja": "可能な場合はtext field sizeを予想されるtext量に合わせる。"},
+      "conditions": ["Field size helps people gauge how much information to provide."],
+      "review_note": "Activated the qualified sizing rule without raising it to MUST."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0016": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "3c71c0813402e780bf7d8ff643861ae567105da3a306c12f248d80c9f49cf9a1", "section_path": ["Text fields", "Best practices"]},
+      "title": "Space multiple text fields evenly",
+      "statement": {"en": "Space multiple text fields evenly.", "ja": "複数text fieldを均等に配置する。"},
+      "conditions": ["Leave enough space for people to associate each input field with its introductory label."],
+      "review_note": "Activated the omitted spacing rule and recorded label association."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0017": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "e0b59f667454f35e46ec32fe65aeb2490eedec196403312637a944e91a09dc04", "section_path": ["Text fields", "Best practices"]},
+      "title": "Prefer vertically stacked text fields",
+      "statement": {"en": "Stack multiple text fields vertically when possible.", "ja": "可能な場合は複数text fieldをverticalにstackする。"},
+      "conditions": ["The layout contains multiple related fields."],
+      "review_note": "Separated the qualified stacking preference from spacing and width."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0018": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "e0b59f667454f35e46ec32fe65aeb2490eedec196403312637a944e91a09dc04", "section_path": ["Text fields", "Best practices"]},
+      "title": "Use consistent widths for related text fields",
+      "statement": {"en": "Use consistent widths for related groups of text fields.", "ja": "関連するtext field groupでは一貫したwidthを使う。"},
+      "conditions": ["Different related groups can use different widths when their expected input differs."],
+      "review_note": "Separated width consistency and retained the source's grouped-width example."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0019": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "e4496084ae5ca58bea70152e359a780e0a1e1dacaa382a4fce79f58471af09a1", "section_path": ["Text fields", "Best practices"]},
+      "title": "Validate text fields when context warrants",
+      "statement": {"en": "Validate text fields when it makes sense for their content and task.", "ja": "contentとtaskに適する場合はtext fieldをvalidateする。"},
+      "conditions": ["Choose validation behavior and timing from the input's legitimate values and task context."],
+      "review_note": "Activated the general validation rule and separated three source-specific outcomes."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0020": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "3d7d6da1fc881cfce934793666b097b95bdc43de01d1b1ac5bac7a3239eb1d31", "section_path": ["Text fields", "Best practices"]},
+      "title": "Alert people to invalid digits-only input",
+      "statement": {"en": "Alert people when a digits-only text field contains other characters.", "ja": "digits-only text fieldに他のcharacterが含まれる場合は利用者へalertする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The only legitimate value is a string of digits."],
+      "review_note": "Recovered the explicit needs to alert directive and its digits-only condition."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0021": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "3d7d6da1fc881cfce934793666b097b95bdc43de01d1b1ac5bac7a3239eb1d31", "section_path": ["Text fields", "Best practices"]},
+      "title": "Validate email after leaving its field",
+      "statement": {"en": "Validate an email address when people switch to another field.", "ja": "利用者が別fieldへ移るときemail addressをvalidateする。"},
+      "conditions": ["The field accepts an email address."],
+      "review_note": "Recovered the source's best-time recommendation for email validation."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0022": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "3d7d6da1fc881cfce934793666b097b95bdc43de01d1b1ac5bac7a3239eb1d31", "section_path": ["Text fields", "Best practices"]},
+      "title": "Validate user names and passwords before leaving",
+      "statement": {"en": "Ensure user-name or password validation happens before people switch to another field.", "ja": "別fieldへ移る前にuser nameまたはpasswordのvalidationを行う。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The field creates a user name or password."],
+      "review_note": "Recovered the explicit validation needs to happen timing and retained its credential-creation condition."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0023": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "d2951cbcaf4c4fb8530ee7a94188c58de20348d925fad8f0d9dee1d18af6e55f", "section_path": ["Text fields", "Best practices"]},
+      "title": "Avoid assuming numeric presentation across locales",
+      "statement": {"en": "Avoid assuming how formatted numeric data appears across people's locales.", "ja": "locale間でformatted numeric dataの表示方法を決めつけない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Decimal, percentage, and currency formatting can vary significantly by locale."],
+      "review_note": "Separated the source's Don't caution from number-formatter use."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0024": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "834031f828c8b5a60515b61e92fd32deee6a8f66748314b0c70431bff55450b1", "section_path": ["Text fields", "Best practices"]},
+      "title": "Choose line breaks for the field's needs",
+      "statement": {"en": "Choose text-field clipping, wrapping, or truncation behavior according to the field's needs.", "ja": "fieldのneedsに応じてtext-field clipping、wrapping、truncation behaviorを選ぶ。"},
+      "conditions": ["Wrapping can occur at characters or words; truncation can occur at the beginning, middle, or end."],
+      "review_note": "Activated the omitted line-break rule and recorded all documented behaviors."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0025": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "d27861a39b8a92c315030a846caf5bee31fe9a028fa9e13cd0377f8760f5c979", "section_path": ["Text fields", "Best practices"]},
+      "title": "Show the appropriate virtual keyboard",
+      "statement": {"en": "Show the keyboard type appropriate for the entered content in iOS, iPadOS, tvOS, and visionOS.", "ja": "iOS、iPadOS、tvOS、visionOSでは入力contentに適したkeyboard typeを表示する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": ["text-fields"], "modalities": ["keyboard"]},
+      "conditions": ["Choose a keyboard designed for the input type, such as numbers or URLs, to streamline entry."],
+      "review_note": "Activated the omitted rule and corrected page-wide scope to the four named platforms."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0026": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "6bb79b0a96f56b96eb7643186aeeca6600a8d36d75cd1f461f0f067783f9a57e", "section_path": ["Text fields", "Best practices"]},
+      "title": "Consider buttons instead of tvOS or watchOS text entry",
+      "statement": {"en": "Consider buttons or another efficient alternative to gather tvOS or watchOS information.", "ja": "tvOSまたはwatchOSの情報収集にはbuttonなど効率的な代替手段を検討する。"},
+      "normative_level": "MAY",
+      "scope": {"portability": "apple-component-specific", "platforms": ["tvos", "watchos"], "devices": ["apple-tv", "apple-watch"], "components": ["text-fields"], "modalities": []},
+      "conditions": ["The alternative reduces long passages or numerous text fields."],
+      "review_note": "Separated the optional efficient-input alternative and retained its two-platform scope."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0027": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "3ff55dd86c853b34a5118f20e2b56befc614259a1b61f04697fcd41e029bfb78", "section_path": ["Text fields", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use leading field accessories to indicate purpose",
+      "statement": {"en": "Generally, use the leading end of an iOS or iPadOS text field to indicate its purpose.", "ja": "通常はiOSまたはiPadOS text fieldのleading endでpurposeを示す。"},
+      "conditions": ["A suitable image can clarify the field."],
+      "review_note": "Separated the general leading-end purpose from other accessory behavior."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0028": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "3ff55dd86c853b34a5118f20e2b56befc614259a1b61f04697fcd41e029bfb78", "section_path": ["Text fields", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Use trailing field accessories for additional features",
+      "statement": {"en": "Generally, use the trailing end of an iOS or iPadOS text field for additional features.", "ja": "通常はiOSまたはiPadOS text fieldのtrailing endで追加featureを提供する。"},
+      "conditions": ["Examples include bookmarking or clearing input."],
+      "review_note": "Separated the general trailing-end purpose from leading-end clarity."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0029": {
+      "source": {"source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85", "source_sentence_hash": "b1bdceaf96aefe774ba614d2f21bff34ba20c7853ef3e40b694162136c9817a3", "section_path": ["Text fields", "Platform considerations", "watchOS"]},
+      "title": "Prefer watchOS option lists over text entry",
+      "statement": {"en": "Whenever possible, prefer a list of options over watchOS text entry.", "ja": "可能な場合はwatchOS text entryよりoption listを優先する。"},
+      "conditions": ["A predefined list can replace manual text entry for the task."],
+      "review_note": "Separated the preferred watchOS alternative from the text-field necessity rule."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

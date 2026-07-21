@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T18:08:05.096Z. 2311 active rules; 3 deprecated rules.
+Generated 2026-07-21T18:16:55.297Z. 2329 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1533,17 +1533,35 @@ Generated 2026-07-21T18:08:05.096Z. 2311 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-TAB-VIEWS-0005 · AVOID · high** — Avoid providing more than six tabs in a macOS tab view. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
 ### text-fields
 
-- **HIG-COMPONENTS-TEXT-FIELDS-0001 · SHOULD · low** — Choose or apply a text field to request a small amount of information, such as a name or an email address in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0002 · SHOULD · low** — Present a hint in a text field to help communicate its purpose in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0003 · SHOULD · low** — Choose or apply secure text fields to hide private data in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0004 · MUST · medium** — Verify that that tabbing between multiple fields flows as people expect. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0005 · SHOULD · low** — Choose or apply a number formatter to help with numeric data in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0006 · MAY · low** — Evaluate whether using an expansion tooltip to show the full version of clipped or truncated text is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0007 · SHOULD · low** — Apply the documented Text fields guidance to minimize text entry in your tvOS and watchOS apps. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0008 · SHOULD · low** — Present a Clear button in the trailing end of a text field to help people erase their input in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0009 · SHOULD · low** — Choose or apply images and buttons to provide clarity and functionality in text fields in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0010 · MAY · low** — Evaluate whether using a combo box if you need to pair text input with a list of choices is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
-- **HIG-COMPONENTS-TEXT-FIELDS-0011 · SHOULD · low** — Present a text field only when necessary in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0001 · SHOULD · high** — Use a text field to request a small, specific piece of information. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0002 · SHOULD · high** — Show a text-field hint when it helps communicate the field's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0003 · SHOULD · high** — Use a secure text field to hide private data. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0004 · MUST · high** — Ensure tabbing between multiple text fields moves focus in a logical, expected sequence. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0005 · SHOULD · high** — Use a number formatter to help people enter and read numeric data. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0006 · MAY · high** — Consider an expansion tooltip for the full version of clipped or truncated text. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0007 · SHOULD · high** — Minimize text entry in tvOS and watchOS apps. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0008 · SHOULD · high** — Display a Clear button at the trailing end of an iOS or iPadOS text field. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0009 · SHOULD · high** — Use images and buttons to add clarity or functionality to iOS and iPadOS text fields. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0010 · MAY · high** — Consider a macOS combo box when pairing text input with a list of choices. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0011 · SHOULD · high** — Present a watchOS text field only when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0012 · SHOULD · high** — Use a text view when people need to enter a larger amount of text. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0013 · MAY · high** — Consider a separate text-field label when a disappearing placeholder may obscure the field's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0014 · MUST · high** — Always use a secure text field when the app requests sensitive data. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0015 · SHOULD · high** — When possible, match a text field's size to the anticipated amount of text. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0016 · SHOULD · high** — Space multiple text fields evenly. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0017 · SHOULD · high** — Stack multiple text fields vertically when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0018 · SHOULD · high** — Use consistent widths for related groups of text fields. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0019 · SHOULD · high** — Validate text fields when it makes sense for their content and task. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0020 · MUST · high** — Alert people when a digits-only text field contains other characters. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0021 · SHOULD · high** — Validate an email address when people switch to another field. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0022 · MUST · high** — Ensure user-name or password validation happens before people switch to another field. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0023 · AVOID · high** — Avoid assuming how formatted numeric data appears across people's locales. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0024 · SHOULD · high** — Choose text-field clipping, wrapping, or truncation behavior according to the field's needs. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0025 · SHOULD · high** — Show the keyboard type appropriate for the entered content in iOS, iPadOS, tvOS, and visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0026 · MAY · high** — Consider buttons or another efficient alternative to gather tvOS or watchOS information. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0027 · SHOULD · high** — Generally, use the leading end of an iOS or iPadOS text field to indicate its purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0028 · SHOULD · high** — Generally, use the trailing end of an iOS or iPadOS text field for additional features. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- **HIG-COMPONENTS-TEXT-FIELDS-0029 · SHOULD · high** — Whenever possible, prefer a list of options over watchOS text entry. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
 ### text-views
 
 - **HIG-COMPONENTS-TEXT-VIEWS-0001 · SHOULD · low** — Choose or apply a text view when you need to display text that’s long, editable, or in a special format in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/text-views))

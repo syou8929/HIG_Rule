@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2311
+- Active atomic rules: 2329
 - Pages without rules: 16
-- Low-confidence rules: 1041
-- Rules requiring human review: 1041
+- Low-confidence rules: 1031
+- Rules requiring human review: 1031
 - Reference notes: 927
 
 ## Rules by category
 
-- components: 803
+- components: 821
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 306
-- MAY: 266
-- MUST: 200
+- AVOID: 307
+- MAY: 268
+- MUST: 203
 - MUST_NOT: 21
-- SHOULD: 1518
+- SHOULD: 1530
 
 ## Rules by platform
 
 - carplay: 89
-- ios: 1602
-- ipados: 1578
-- macos: 1353
-- tvos: 1033
-- visionos: 1395
-- watchos: 1095
+- ios: 1616
+- ipados: 1593
+- macos: 1365
+- tvos: 1047
+- visionos: 1407
+- watchos: 1109
 
 ## Rules by testability
 
-- hybrid: 66
-- manual: 2245
+- hybrid: 67
+- manual: 2262
 
 ## Blocked pages
 
@@ -222,16 +222,6 @@ None.
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
 - HIG-COMPONENTS-STEPPERS-0003
-- HIG-COMPONENTS-TEXT-FIELDS-0001
-- HIG-COMPONENTS-TEXT-FIELDS-0002
-- HIG-COMPONENTS-TEXT-FIELDS-0003
-- HIG-COMPONENTS-TEXT-FIELDS-0005
-- HIG-COMPONENTS-TEXT-FIELDS-0006
-- HIG-COMPONENTS-TEXT-FIELDS-0007
-- HIG-COMPONENTS-TEXT-FIELDS-0008
-- HIG-COMPONENTS-TEXT-FIELDS-0009
-- HIG-COMPONENTS-TEXT-FIELDS-0010
-- HIG-COMPONENTS-TEXT-FIELDS-0011
 - HIG-COMPONENTS-TEXT-VIEWS-0001
 - HIG-COMPONENTS-TEXT-VIEWS-0002
 - HIG-COMPONENTS-TEXT-VIEWS-0003
@@ -1266,16 +1256,6 @@ None.
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
 - HIG-COMPONENTS-STEPPERS-0003
-- HIG-COMPONENTS-TEXT-FIELDS-0001
-- HIG-COMPONENTS-TEXT-FIELDS-0002
-- HIG-COMPONENTS-TEXT-FIELDS-0003
-- HIG-COMPONENTS-TEXT-FIELDS-0005
-- HIG-COMPONENTS-TEXT-FIELDS-0006
-- HIG-COMPONENTS-TEXT-FIELDS-0007
-- HIG-COMPONENTS-TEXT-FIELDS-0008
-- HIG-COMPONENTS-TEXT-FIELDS-0009
-- HIG-COMPONENTS-TEXT-FIELDS-0010
-- HIG-COMPONENTS-TEXT-FIELDS-0011
 - HIG-COMPONENTS-TEXT-VIEWS-0001
 - HIG-COMPONENTS-TEXT-VIEWS-0002
 - HIG-COMPONENTS-TEXT-VIEWS-0003
@@ -2921,7 +2901,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone · Tap to Pay on iPhone > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone · Tap to Pay on iPhone > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/text-fields · Text fields > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/text-fields · Text fields > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/text-fields · Text fields > Platform considerations — tvOS and visionOS have no additional platform-specific considerations beyond the reviewed best practices.
 - https://developer.apple.com/design/human-interface-guidelines/text-fields · Text fields > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/text-fields · Text fields > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/text-views · Text views > Change log — Section recorded for human review; no short atomic guidance lead was detected.

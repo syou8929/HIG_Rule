@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T18:01:57Z",
+  "reviewed_at": "2026-07-21T18:10:40Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 221,
+  "reviewed_rule_count": 224,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -1138,6 +1138,34 @@
       "normative_level": "MUST", "confidence": "high", "review_required": false,
       "conditions": ["The app uses a sidebar for secondary navigation within a tab."],
       "review_note": "Recovered and retained the explicit Be sure directive and its within-tab sidebar condition."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0004": {
+      "title": "Keep text-field tab order logical",
+      "statement": {"en": "Ensure tabbing between multiple text fields moves focus in a logical, expected sequence.", "ja": "複数text field間のtab移動でfocusが論理的かつ期待される順序になるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The interface contains multiple fields; customize order only when the system's automatic sequence is insufficient."],
+      "review_note": "Retained the explicit Ensure directive and fixed duplicated generated wording."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0014": {
+      "title": "Always use secure fields for sensitive data",
+      "statement": {"en": "Always use a secure text field when the app requests sensitive data.", "ja": "appがsensitive dataを求める場合は常にsecure text fieldを使う。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["Sensitive data includes passwords."],
+      "review_note": "Recovered and retained the explicit Always directive and its sensitive-data condition."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0020": {
+      "title": "Alert people to invalid digits-only input",
+      "statement": {"en": "Alert people when a digits-only text field contains other characters.", "ja": "digits-only text fieldに他のcharacterが含まれる場合は利用者へalertする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The only legitimate value is a string of digits."],
+      "review_note": "Recovered and retained the explicit needs to alert directive and its digits-only condition."
+    },
+    "HIG-COMPONENTS-TEXT-FIELDS-0022": {
+      "title": "Validate user names and passwords before leaving",
+      "statement": {"en": "Ensure user-name or password validation happens before people switch to another field.", "ja": "別fieldへ移る前にuser nameまたはpasswordのvalidationを行う。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["The field creates a user name or password."],
+      "review_note": "Recovered and retained the explicit validation needs to happen timing and its credential-creation condition."
     },
     "HIG-PATTERNS-MODALITY-0006": {
       "title": "Ensure people receive critical information and can act when necessary",

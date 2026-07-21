@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 221
-- Retained MUST: 200
+- Reviewed rules: 224
+- Retained MUST: 203
 - Retained MUST_NOT: 21
-- Normative level changes: 11
+- Normative level changes: 15
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:01:57Z
+- Reviewed at: 2026-07-21T18:10:40Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -47,6 +47,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-TAB-BARS-0002 — Retained the explicit Make sure directive and its sole modal exception. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-TAB-BARS-0028 — Recovered and retained the explicit You need to directive and its at-a-glance purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-TAB-BARS-0029 — Recovered and retained the explicit Be sure directive and its within-tab sidebar condition. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-COMPONENTS-TEXT-FIELDS-0004 — Retained the explicit Ensure directive and fixed duplicated generated wording. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0014 — Recovered and retained the explicit Always directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0020 — Recovered and retained the explicit needs to alert directive and its digits-only condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0022 — Recovered and retained the explicit validation needs to happen timing and its credential-creation condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
 - HIG-COMPONENTS-THE-MENU-BAR-0023 — Retained MUST after confirming the explicit Require directive and its interaction-cost rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0024 — Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-TOGGLES-0002 — Retained MUST after confirming the explicit Make sure lead and its color-perception constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
@@ -220,7 +224,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-TAB-BARS-0028 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit You need to directive and its at-a-glance purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-TAB-BARS-0029 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Be sure directive and its within-tab sidebar condition. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - HIG-COMPONENTS-TAB-VIEWS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
-- HIG-COMPONENTS-TEXT-FIELDS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained the explicit Ensure directive and fixed duplicated generated wording. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Always directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit needs to alert directive and its digits-only condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit validation needs to happen timing and its credential-creation condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
 - HIG-COMPONENTS-THE-MENU-BAR-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0023 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Require directive and its interaction-cost rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))

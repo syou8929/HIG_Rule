@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1187
-- Reviewed batches: 75
+- Reviewed rules: 1216
+- Reviewed batches: 76
 - Official source only: yes
-- Reviewed at: 2026-07-21T18:01:57Z
+- Reviewed at: 2026-07-21T18:10:40Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -458,6 +458,35 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-TAB-VIEWS-0003 · high — Repaired generic generated wording and recorded label form and capitalization. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
 - HIG-COMPONENTS-TAB-VIEWS-0004 · high — Recorded the interaction-cost rationale and the many-pane exception. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
 - HIG-COMPONENTS-TAB-VIEWS-0005 · high — Preserved the source lead's more-than-six limit and recorded the earlier reconsideration threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
+- HIG-COMPONENTS-TEXT-FIELDS-0001 · high — Recorded the small-input boundary and separated the larger-input alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0002 · high — Recorded the hint purpose and separated the persistent-label option. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0003 · high — Retained the general secure-field guidance and separated the stronger sensitive-data rule. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0004 · high — Retained the explicit Ensure directive, fixed duplicated generated wording, and recorded keyboard modality. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0005 · high — Recorded input restriction and display-format purposes and separated locale caution. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0006 · high — Preserved MAY and recorded the pointer-triggered behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0007 · high — Corrected page-wide scope to the two named platforms and separated the button alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0008 · high — Made placement and erase behavior concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0009 · high — Recorded supported accessory types and separated leading and trailing purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0010 · high — Preserved MAY and the paired-input condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0011 · high — Made the watchOS scope explicit and separated its preferred alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0012 · high — Separated the larger-input alternative from text-field use. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0013 · high — Recovered the optional persistent-label safeguard. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0014 · high — Recovered the explicit Always directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0015 · high — Activated the qualified sizing rule without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0016 · high — Activated the omitted spacing rule and recorded label association. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0017 · high — Separated the qualified stacking preference from spacing and width. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0018 · high — Separated width consistency and retained the source's grouped-width example. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0019 · high — Activated the general validation rule and separated three source-specific outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0020 · high — Recovered the explicit needs to alert directive and its digits-only condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0021 · high — Recovered the source's best-time recommendation for email validation. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0022 · high — Recovered the explicit validation needs to happen timing and retained its credential-creation condition. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0023 · high — Separated the source's Don't caution from number-formatter use. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0024 · high — Activated the omitted line-break rule and recorded all documented behaviors. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0025 · high — Activated the omitted rule and corrected page-wide scope to the four named platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0026 · high — Separated the optional efficient-input alternative and retained its two-platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0027 · high — Separated the general leading-end purpose from other accessory behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0028 · high — Separated the general trailing-end purpose from leading-end clarity. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
+- HIG-COMPONENTS-TEXT-FIELDS-0029 · high — Separated the preferred watchOS alternative from the text-field necessity rule. ([source](https://developer.apple.com/design/human-interface-guidelines/text-fields))
 - HIG-COMPONENTS-THE-MENU-BAR-0001 · high — Recorded the familiarity and system-provided behavior behind the recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0002 · high — Confirmed the explicit Always lead and recorded disable-instead-of-hide behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0003 · high — Recorded shortcut familiarity and the limit on custom shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))

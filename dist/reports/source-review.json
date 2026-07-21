@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-07-21T18:08:05.624Z",
-  "reviewed_at": "2026-07-21T18:01:57Z",
+  "generated_at": "2026-07-21T18:16:55.823Z",
+  "reviewed_at": "2026-07-21T18:10:40Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
-  "reviewed_batch_count": 75,
-  "reviewed_rule_count": 1187,
+  "reviewed_batch_count": 76,
+  "reviewed_rule_count": 1216,
   "batches": [
     {
       "id": "priority-2-accessibility-context-2026-07-21",
@@ -2397,6 +2397,51 @@
         "HIG-COMPONENTS-TAB-BARS-0029"
       ],
       "review_note": "Completed Tab bars coverage; retained all sixteen existing IDs, recovered thirteen atomic rules, changed three tvOS customization capabilities from SHOULD to MAY, and retained only the visibility, short-label, and sidebar-selection directives as MUST rules."
+    },
+    {
+      "id": "priority-4-text-fields-context-2026-07-21",
+      "reviewed_at": "2026-07-21T18:10:40Z",
+      "review_method": "Rendered Apple HIG Text fields guidance, input quantity and purpose, secure data, field layout and focus order, validation and locale behavior, line breaks and tooltips, keyboard and text-entry alternatives, iOS and iPadOS field accessories, macOS combo boxes, watchOS constraints, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+          "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-TEXT-FIELDS-0001",
+        "HIG-COMPONENTS-TEXT-FIELDS-0002",
+        "HIG-COMPONENTS-TEXT-FIELDS-0003",
+        "HIG-COMPONENTS-TEXT-FIELDS-0004",
+        "HIG-COMPONENTS-TEXT-FIELDS-0005",
+        "HIG-COMPONENTS-TEXT-FIELDS-0006",
+        "HIG-COMPONENTS-TEXT-FIELDS-0007",
+        "HIG-COMPONENTS-TEXT-FIELDS-0008",
+        "HIG-COMPONENTS-TEXT-FIELDS-0009",
+        "HIG-COMPONENTS-TEXT-FIELDS-0010",
+        "HIG-COMPONENTS-TEXT-FIELDS-0011",
+        "HIG-COMPONENTS-TEXT-FIELDS-0012",
+        "HIG-COMPONENTS-TEXT-FIELDS-0013",
+        "HIG-COMPONENTS-TEXT-FIELDS-0014",
+        "HIG-COMPONENTS-TEXT-FIELDS-0015",
+        "HIG-COMPONENTS-TEXT-FIELDS-0016",
+        "HIG-COMPONENTS-TEXT-FIELDS-0017",
+        "HIG-COMPONENTS-TEXT-FIELDS-0018",
+        "HIG-COMPONENTS-TEXT-FIELDS-0019",
+        "HIG-COMPONENTS-TEXT-FIELDS-0020",
+        "HIG-COMPONENTS-TEXT-FIELDS-0021",
+        "HIG-COMPONENTS-TEXT-FIELDS-0022",
+        "HIG-COMPONENTS-TEXT-FIELDS-0023",
+        "HIG-COMPONENTS-TEXT-FIELDS-0024",
+        "HIG-COMPONENTS-TEXT-FIELDS-0025",
+        "HIG-COMPONENTS-TEXT-FIELDS-0026",
+        "HIG-COMPONENTS-TEXT-FIELDS-0027",
+        "HIG-COMPONENTS-TEXT-FIELDS-0028",
+        "HIG-COMPONENTS-TEXT-FIELDS-0029"
+      ],
+      "review_note": "Completed Text fields coverage; retained all eleven existing IDs, recovered eighteen atomic rules, and retained only tab order plus the explicit sensitive-data and validation directives as MUST rules."
     }
   ],
   "rules": [
@@ -11152,6 +11197,564 @@
         "source_hash": "72dbe51cafd8ae330cf7fa4bcda5c498adc67460bbae37e5fdcdc121478998b6",
         "source_sentence_hash": "edc06d1a984973af0873bee63bd3d3f4b8029b860e5276153b998d43091df5e7",
         "evidence_paraphrase": "Avoid providing more than six tabs in a macOS tab view."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0001",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the small-input boundary and separated the larger-input alternative.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "4646f22fa901dac85a2e23a670c0dab7920fbc7876add6d793487165526c7285",
+        "evidence_paraphrase": "Use a text field to request a small, specific piece of information."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0002",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the hint purpose and separated the persistent-label option.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "ec18a9f02db268f31773b98aa7c2fdf1b0caa95d3e4363930e9e85d306646cbb",
+        "evidence_paraphrase": "Show a text-field hint when it helps communicate the field's purpose."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0003",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained the general secure-field guidance and separated the stronger sensitive-data rule.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "973d57b1cce4119e637bb5a640c566c2cbb25550e5472fe386273200e77c3712",
+        "evidence_paraphrase": "Use a secure text field to hide private data."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0004",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained the explicit Ensure directive, fixed duplicated generated wording, and recorded keyboard modality.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "52bb26f05b137d5a4bd756ee8a75128d26f0f7503db36287153d11ccf2ce3e15",
+        "evidence_paraphrase": "Ensure tabbing between multiple text fields moves focus in a logical, expected sequence."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0005",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded input restriction and display-format purposes and separated locale caution.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "5d6218c0a18c224558e67b70373eedcef558f28454a9c453710ae1876ef5f474",
+        "evidence_paraphrase": "Use a number formatter to help people enter and read numeric data."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0006",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Preserved MAY and recorded the pointer-triggered behavior.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "9678f3ab11cdcd42a9c3754af72227e3d7a4b68b3f193d6270200f83b1ed974b",
+        "evidence_paraphrase": "Consider an expansion tooltip for the full version of clipped or truncated text."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0007",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Corrected page-wide scope to the two named platforms and separated the button alternative.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "07db499cd8cea9f2104d4b8070a383bce57eb1390051f0c22a6bd61c73b11c15",
+        "evidence_paraphrase": "Minimize text entry in tvOS and watchOS apps."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0008",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Made placement and erase behavior concrete.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "2fd38a209915ca6e0157eb88ad91daf943625020066846a8460daed327cb68f6",
+        "evidence_paraphrase": "Display a Clear button at the trailing end of an iOS or iPadOS text field."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0009",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded supported accessory types and separated leading and trailing purposes.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "320a39febeb095ab63db969fa019a931c3579167c1a3f7629fbdde2fa67c8e52",
+        "evidence_paraphrase": "Use images and buttons to add clarity or functionality to iOS and iPadOS text fields."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0010",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Preserved MAY and the paired-input condition.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Platform considerations",
+          "macOS"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "334e2d17408e72c190efe5b0974fc8aff505c4ad20ca4024f4a5d34539494f11",
+        "evidence_paraphrase": "Consider a macOS combo box when pairing text input with a list of choices."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0011",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Made the watchOS scope explicit and separated its preferred alternative.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Platform considerations",
+          "watchOS"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "8bd6f3437010725e0b4887cc74502056f145c5140fd5a3245384dfa84f241166",
+        "evidence_paraphrase": "Present a watchOS text field only when necessary."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0012",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the larger-input alternative from text-field use.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "deb9950b0870354a8747f3d0a04752a879a8954b7ca0eca7cd836ef28aaa4592",
+        "evidence_paraphrase": "Use a text view when people need to enter a larger amount of text."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0013",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the optional persistent-label safeguard.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "5917d4e0252c3afbc476e90f472c7e26af4d1b28f4715400d6a827b9df247c60",
+        "evidence_paraphrase": "Consider a separate text-field label when a disappearing placeholder may obscure the field's purpose."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0014",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the explicit Always directive and its sensitive-data condition.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "283d0604d531fa959fd8611ce9f5f44d91d38b5dabfcd7740eb1a52994124420",
+        "evidence_paraphrase": "Always use a secure text field when the app requests sensitive data."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0015",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Activated the qualified sizing rule without raising it to MUST.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "09c56948040bedc23e07588252f2bd3b5b50a365a954586ed0835582b1d74eb1",
+        "evidence_paraphrase": "When possible, match a text field's size to the anticipated amount of text."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0016",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Activated the omitted spacing rule and recorded label association.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "3c71c0813402e780bf7d8ff643861ae567105da3a306c12f248d80c9f49cf9a1",
+        "evidence_paraphrase": "Space multiple text fields evenly."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0017",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the qualified stacking preference from spacing and width.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "e0b59f667454f35e46ec32fe65aeb2490eedec196403312637a944e91a09dc04",
+        "evidence_paraphrase": "Stack multiple text fields vertically when possible."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0018",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated width consistency and retained the source's grouped-width example.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "e0b59f667454f35e46ec32fe65aeb2490eedec196403312637a944e91a09dc04",
+        "evidence_paraphrase": "Use consistent widths for related groups of text fields."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0019",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Activated the general validation rule and separated three source-specific outcomes.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "e4496084ae5ca58bea70152e359a780e0a1e1dacaa382a4fce79f58471af09a1",
+        "evidence_paraphrase": "Validate text fields when it makes sense for their content and task."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0020",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the explicit needs to alert directive and its digits-only condition.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "3d7d6da1fc881cfce934793666b097b95bdc43de01d1b1ac5bac7a3239eb1d31",
+        "evidence_paraphrase": "Alert people when a digits-only text field contains other characters."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0021",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the source's best-time recommendation for email validation.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "3d7d6da1fc881cfce934793666b097b95bdc43de01d1b1ac5bac7a3239eb1d31",
+        "evidence_paraphrase": "Validate an email address when people switch to another field."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0022",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the explicit validation needs to happen timing and retained its credential-creation condition.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "3d7d6da1fc881cfce934793666b097b95bdc43de01d1b1ac5bac7a3239eb1d31",
+        "evidence_paraphrase": "Ensure user-name or password validation happens before people switch to another field."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0023",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the source's Don't caution from number-formatter use.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "d2951cbcaf4c4fb8530ee7a94188c58de20348d925fad8f0d9dee1d18af6e55f",
+        "evidence_paraphrase": "Avoid assuming how formatted numeric data appears across people's locales."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0024",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Activated the omitted line-break rule and recorded all documented behaviors.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "834031f828c8b5a60515b61e92fd32deee6a8f66748314b0c70431bff55450b1",
+        "evidence_paraphrase": "Choose text-field clipping, wrapping, or truncation behavior according to the field's needs."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0025",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Activated the omitted rule and corrected page-wide scope to the four named platforms.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "d27861a39b8a92c315030a846caf5bee31fe9a028fa9e13cd0377f8760f5c979",
+        "evidence_paraphrase": "Show the keyboard type appropriate for the entered content in iOS, iPadOS, tvOS, and visionOS."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0026",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the optional efficient-input alternative and retained its two-platform scope.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "6bb79b0a96f56b96eb7643186aeeca6600a8d36d75cd1f461f0f067783f9a57e",
+        "evidence_paraphrase": "Consider buttons or another efficient alternative to gather tvOS or watchOS information."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0027",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the general leading-end purpose from other accessory behavior.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "3ff55dd86c853b34a5118f20e2b56befc614259a1b61f04697fcd41e029bfb78",
+        "evidence_paraphrase": "Generally, use the leading end of an iOS or iPadOS text field to indicate its purpose."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0028",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the general trailing-end purpose from leading-end clarity.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Platform considerations",
+          "iOS, iPadOS"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "3ff55dd86c853b34a5118f20e2b56befc614259a1b61f04697fcd41e029bfb78",
+        "evidence_paraphrase": "Generally, use the trailing end of an iOS or iPadOS text field for additional features."
+      }
+    },
+    {
+      "id": "HIG-COMPONENTS-TEXT-FIELDS-0029",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the preferred watchOS alternative from the text-field necessity rule.",
+      "batch_id": "priority-4-text-fields-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/text-fields",
+        "page_title": "Text fields",
+        "section_path": [
+          "Text fields",
+          "Platform considerations",
+          "watchOS"
+        ],
+        "retrieved_at": "2026-07-21T18:10:40Z",
+        "source_hash": "028fde69a305699136bcabd177312374bd0c8c284e28557fafca11c527bc3b85",
+        "source_sentence_hash": "b1bdceaf96aefe774ba614d2f21bff34ba20c7853ef3e40b694162136c9817a3",
+        "evidence_paraphrase": "Whenever possible, prefer a list of options over watchOS text entry."
       }
     },
     {
