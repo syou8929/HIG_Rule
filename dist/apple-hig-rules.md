@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:27:18.726Z. 2199 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:30:07.468Z. 2202 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -983,9 +983,12 @@ Generated 2026-07-21T16:27:18.726Z. 2199 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-COLUMN-VIEWS-0005 · MAY · high** — Consider a split view for presenting hierarchical content on iPadOS or visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
 ### combo-boxes
 
-- **HIG-COMPONENTS-COMBO-BOXES-0001 · SHOULD · low** — Choose or apply an introductory label to let people know what types of items to expect in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
-- **HIG-COMPONENTS-COMBO-BOXES-0002 · SHOULD · low** — Make relevant choices available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
-- **HIG-COMPONENTS-COMBO-BOXES-0003 · MUST · medium** — Verify that list items aren’t wider than the text field. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- **HIG-COMPONENTS-COMBO-BOXES-0001 · SHOULD · high** — Choose or apply an introductory label to let people know what types of items to expect in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- **HIG-COMPONENTS-COMBO-BOXES-0002 · SHOULD · high** — Make relevant choices available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- **HIG-COMPONENTS-COMBO-BOXES-0003 · MUST · high** — Verify that list items aren’t wider than the text field. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- **HIG-COMPONENTS-COMBO-BOXES-0004 · SHOULD · high** — Choose or apply a meaningful default value from the combo-box list in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- **HIG-COMPONENTS-COMBO-BOXES-0005 · SHOULD · high** — Choose or apply title-style capitalization for combo-box labels in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- **HIG-COMPONENTS-COMBO-BOXES-0006 · SHOULD · high** — Choose or apply a colon at the end of combo-box labels in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
 ### complications
 
 - **HIG-COMPONENTS-COMPLICATIONS-0001 · SHOULD · high** — Support every complication family for which the app can provide useful information. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))

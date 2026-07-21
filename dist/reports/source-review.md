@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 938
-- Reviewed batches: 58
+- Reviewed rules: 944
+- Reviewed batches: 59
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:26:48Z
+- Reviewed at: 2026-07-21T16:29:13Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -101,6 +101,12 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-COLUMN-VIEWS-0003 · high — Reviewed the rendered source context for “Let people resize columns” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
 - HIG-COMPONENTS-COLUMN-VIEWS-0004 · high — Reviewed the rendered source context for “Consider a column view for deep frequently traversed hierarchies without sorting needs” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
 - HIG-COMPONENTS-COLUMN-VIEWS-0005 · high — Reviewed the rendered source context for “Consider a split view for hierarchical content on iPadOS or visionOS” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- HIG-COMPONENTS-COMBO-BOXES-0001 · high — Reviewed the rendered source context for “Use an introductory label to let people know what types of items to expect” and recorded its macOS combo-box conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- HIG-COMPONENTS-COMBO-BOXES-0002 · high — Reviewed the rendered source context for “Provide relevant choices” and recorded its macOS combo-box conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- HIG-COMPONENTS-COMBO-BOXES-0003 · high — Reviewed the rendered source context for “Make sure list items aren’t wider than the text field” and recorded its macOS combo-box conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- HIG-COMPONENTS-COMBO-BOXES-0004 · high — Reviewed the rendered source context for “Use a meaningful default value from the combo-box list” and recorded its macOS combo-box conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- HIG-COMPONENTS-COMBO-BOXES-0005 · high — Reviewed the rendered source context for “Use title-style capitalization for combo-box labels” and recorded its macOS combo-box conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
+- HIG-COMPONENTS-COMBO-BOXES-0006 · high — Reviewed the rendered source context for “Use a colon at the end of combo-box labels” and recorded its macOS combo-box conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))
 - HIG-COMPONENTS-COMPLICATIONS-0001 · high — Preserved the when-possible qualification and the official fallback for unsupported information layouts. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0002 · medium — Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0003 · high — Replaced an ungrammatical paraphrase and captured the Always-On privacy risk from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))

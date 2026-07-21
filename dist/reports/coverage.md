@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2199
+- Active atomic rules: 2202
 - Pages without rules: 16
-- Low-confidence rules: 1171
-- Rules requiring human review: 1171
+- Low-confidence rules: 1169
+- Rules requiring human review: 1169
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 691
+- components: 694
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -26,14 +26,14 @@
 - MAY: 241
 - MUST: 182
 - MUST_NOT: 21
-- SHOULD: 1455
+- SHOULD: 1458
 
 ## Rules by platform
 
 - carplay: 89
 - ios: 1548
 - ipados: 1516
-- macos: 1282
+- macos: 1285
 - tvos: 988
 - visionos: 1345
 - watchos: 1062
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 65
-- manual: 2134
+- manual: 2137
 
 ## Blocked pages
 
@@ -123,8 +123,6 @@ None.
 - HIG-COMPONENTS-CHARTS-0019
 - HIG-COMPONENTS-CHARTS-0020
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-COMBO-BOXES-0001
-- HIG-COMPONENTS-COMBO-BOXES-0002
 - HIG-COMPONENTS-COMPLICATIONS-0010
 - HIG-COMPONENTS-COMPLICATIONS-0011
 - HIG-COMPONENTS-CONTEXT-MENUS-0001
@@ -1297,8 +1295,6 @@ None.
 - HIG-COMPONENTS-CHARTS-0019
 - HIG-COMPONENTS-CHARTS-0020
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-COMBO-BOXES-0001
-- HIG-COMPONENTS-COMBO-BOXES-0002
 - HIG-COMPONENTS-COMPLICATIONS-0010
 - HIG-COMPONENTS-COMPLICATIONS-0011
 - HIG-COMPONENTS-CONTEXT-MENUS-0001
