@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:00:52.668Z. 2111 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:06:34.733Z. 2120 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -2288,10 +2288,19 @@ Generated 2026-07-21T16:00:52.668Z. 2111 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-MAPS-0020 · MAY · low** — When you want to display custom information that’s related to standard map features, consider making them independently selectable. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 ### nfc
 
-- **HIG-TECHNOLOGIES-NFC-0001 · AVOID · low** — Exclude encourage people to make contact with physical objects from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
-- **HIG-TECHNOLOGIES-NFC-0002 · SHOULD · low** — Choose or apply approachable terminology in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
-- **HIG-TECHNOLOGIES-NFC-0003 · SHOULD · low** — Make succinct instructional text for the scanning sheet available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
-- **HIG-TECHNOLOGIES-NFC-0004 · SHOULD · low** — Ensure the experience accommodates both background and in-app tag reading. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0001 · AVOID · high** — Avoid telling people to touch or tap a physical object when scanning an NFC tag. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0002 · SHOULD · high** — Use friendly, conversational scanning terminology that most people understand. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0003 · SHOULD · high** — Keep scanning-sheet instructions succinct. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0004 · SHOULD · high** — Support both background and in-app tag reading. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0005 · SHOULD · high** — Use scan and hold near rather than tap and touch. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0006 · AVOID · high** — Avoid technical terms such as NFC, Core NFC, near-field communication, and tag. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0007 · SHOULD · high** — Write scanning-sheet instructions as a complete sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0008 · SHOULD · high** — Use sentence case in scanning-sheet instructions. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0009 · SHOULD · high** — End scanning-sheet instructions with punctuation. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0010 · SHOULD · high** — Name the object to scan in scanning-sheet instructions. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0011 · SHOULD · high** — Keep scanning-sheet instructions short enough to avoid truncation. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0012 · MUST · high** — Provide in-app tag scanning on devices that don’t support background tag reading. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- **HIG-TECHNOLOGIES-NFC-0013 · SHOULD · high** — Revise scanning-sheet instructions appropriately for subsequent scans. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 ### photo-editing
 
 - **HIG-TECHNOLOGIES-PHOTO-EDITING-0001 · SHOULD · low** — Apply the documented Photo editing guidance to confirm cancellation of edits. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))

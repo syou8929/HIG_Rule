@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:58:32Z",
+  "reviewed_at": "2026-07-21T16:05:01Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
@@ -8,13 +8,26 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 185,
+  "reviewed_rule_count": 186,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-NFC-0012": {
+      "title": "Provide in-app tag scanning on devices without background tag reading",
+      "statement": {
+        "en": "Provide in-app tag scanning on devices that don’t support background tag reading.",
+        "ja": "バックグラウンドタグ読み取りに対応しない端末にもアプリ内スキャンを提供する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The device doesn’t support background tag reading."
+      ],
+      "review_note": "Recovered MUST from the explicit must still provide requirement for an in-app scanning fallback."
+    },
     "HIG-TECHNOLOGIES-CARPLAY-0001": {
       "title": "Never lock people out of CarPlay because the connected iPhone requires input",
       "statement": {

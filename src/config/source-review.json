@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:58:32Z",
+  "reviewed_at": "2026-07-21T16:05:01Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1643,9 +1643,290 @@
         "HIG-TECHNOLOGIES-CARPLAY-0028"
       ],
       "review_note": "Reviewed driver-attention constraints, iPhone interaction boundaries, audio start and interruption behavior, layout hierarchy, appearance, artwork, and error handling; recovered sixteen atomic rules with the official page hash unchanged."
+    },
+    {
+      "id": "priority-4-nfc-context-2026-07-21",
+      "reviewed_at": "2026-07-21T16:05:01Z",
+      "review_method": "Rendered Apple HIG NFC guidance, supporting prose, terminology examples, scanning-sheet examples, and background-reading constraints were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/nfc",
+          "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-NFC-0001",
+        "HIG-TECHNOLOGIES-NFC-0002",
+        "HIG-TECHNOLOGIES-NFC-0003",
+        "HIG-TECHNOLOGIES-NFC-0004",
+        "HIG-TECHNOLOGIES-NFC-0005",
+        "HIG-TECHNOLOGIES-NFC-0006",
+        "HIG-TECHNOLOGIES-NFC-0007",
+        "HIG-TECHNOLOGIES-NFC-0008",
+        "HIG-TECHNOLOGIES-NFC-0009",
+        "HIG-TECHNOLOGIES-NFC-0010",
+        "HIG-TECHNOLOGIES-NFC-0011",
+        "HIG-TECHNOLOGIES-NFC-0012",
+        "HIG-TECHNOLOGIES-NFC-0013"
+      ],
+      "review_note": "Reviewed proximity wording, approachable terminology, scanning-sheet writing constraints, background-reading availability, and the mandatory in-app fallback; recovered nine atomic rules with the official page hash unchanged."
     }
   ],
   "rules": {
+    "HIG-TECHNOLOGIES-NFC-0001": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "7f6092f903d4d42cf2a26a27337f9191a426396bc1a0e3cfcbff04719595cfe3",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Don’t encourage people to make contact with physical objects",
+      "statement": {
+        "en": "Avoid telling people to touch or tap a physical object when scanning an NFC tag.",
+        "ja": "NFCタグをスキャンするとき、物理的な対象に触れたりタップしたりするよう案内しない。"
+      },
+      "conditions": [
+        "An iOS device only needs to be near the tag; physical contact is unnecessary."
+      ],
+      "review_note": "Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0002": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "10bf11fae7086130b6580460688d917b1577ea965bba8ba554ad2b52791d553c",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Use approachable terminology",
+      "statement": {
+        "en": "Use friendly, conversational scanning terminology that most people understand.",
+        "ja": "多くの人が理解できる、親しみやすく会話的なスキャン用語を使う。"
+      },
+      "conditions": [
+        "Assume that near-field communication terminology may be unfamiliar."
+      ],
+      "review_note": "Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0003": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "d0d750fc7debe0ae38f717037d937501a73c2b8b7f188ee57a8d3159876fbde0",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Provide succinct instructional text for the scanning sheet",
+      "statement": {
+        "en": "Keep scanning-sheet instructions succinct.",
+        "ja": "スキャンシートの説明文を簡潔にする。"
+      },
+      "conditions": [
+        "Use a complete sentence in sentence case with ending punctuation.",
+        "Name the object to scan, revise the text for subsequent scans, and avoid truncation."
+      ],
+      "review_note": "Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0004": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "9f6b14dd325fe5bb0f9e2734510b98e510c18b5e0b4962b735fe0349c5f4e9cc",
+        "section_path": [
+          "NFC",
+          "Background tag reading"
+        ]
+      },
+      "title": "Support both background and in-app tag reading",
+      "statement": {
+        "en": "Support both background and in-app tag reading.",
+        "ja": "バックグラウンドとアプリ内の両方のタグ読み取りに対応する。"
+      },
+      "conditions": [
+        "Use background reading on supported devices for quick scans without first opening the app.",
+        "Retain an in-app scanning path for devices without background reading."
+      ],
+      "exceptions": [
+        "Background reading is unavailable while a scanning sheet, Wallet, Apple Pay, or a camera is active; in Airplane Mode; or while locked after restart."
+      ],
+      "review_note": "Reviewed the rendered source context for “Support both background and in-app tag reading” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0005": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "7f6092f903d4d42cf2a26a27337f9191a426396bc1a0e3cfcbff04719595cfe3",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Use scan and hold near instead of tap and touch",
+      "statement": {
+        "en": "Use scan and hold near rather than tap and touch.",
+        "ja": "tapやtouchではなく、scanやhold nearという表現を使う。"
+      },
+      "conditions": [
+        "Describe proximity accurately because physical tag contact is unnecessary."
+      ],
+      "review_note": "Reviewed the rendered source context for “Use scan and hold near instead of tap and touch” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0006": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "10bf11fae7086130b6580460688d917b1577ea965bba8ba554ad2b52791d553c",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Avoid technical developer-oriented NFC terminology",
+      "statement": {
+        "en": "Avoid technical terms such as NFC, Core NFC, near-field communication, and tag.",
+        "ja": "NFC、Core NFC、near-field communication、tagなどの技術用語を避ける。"
+      },
+      "conditions": [
+        "Use friendly, conversational object-scanning language instead."
+      ],
+      "review_note": "Reviewed the rendered source context for “Avoid technical developer-oriented NFC terminology” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0007": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "d0d750fc7debe0ae38f717037d937501a73c2b8b7f188ee57a8d3159876fbde0",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Use a complete sentence for scanning-sheet instructions",
+      "statement": {
+        "en": "Write scanning-sheet instructions as a complete sentence.",
+        "ja": "スキャンシートの説明文を完全な文として書く。"
+      },
+      "conditions": [
+        "The scanning sheet is about to guide an in-app scan."
+      ],
+      "review_note": "Reviewed the rendered source context for “Use a complete sentence for scanning-sheet instructions” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0008": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "d0d750fc7debe0ae38f717037d937501a73c2b8b7f188ee57a8d3159876fbde0",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Use sentence case for scanning-sheet instructions",
+      "statement": {
+        "en": "Use sentence case in scanning-sheet instructions.",
+        "ja": "スキャンシートの説明文にsentence caseを使う。"
+      },
+      "conditions": [
+        "The scanning sheet is about to guide an in-app scan."
+      ],
+      "review_note": "Reviewed the rendered source context for “Use sentence case for scanning-sheet instructions” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0009": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "d0d750fc7debe0ae38f717037d937501a73c2b8b7f188ee57a8d3159876fbde0",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Use ending punctuation for scanning-sheet instructions",
+      "statement": {
+        "en": "End scanning-sheet instructions with punctuation.",
+        "ja": "スキャンシートの説明文を句読点で終える。"
+      },
+      "conditions": [
+        "The scanning sheet is about to guide an in-app scan."
+      ],
+      "review_note": "Reviewed the rendered source context for “Use ending punctuation for scanning-sheet instructions” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0010": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "d0d750fc7debe0ae38f717037d937501a73c2b8b7f188ee57a8d3159876fbde0",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Identify the object to scan in scanning-sheet instructions",
+      "statement": {
+        "en": "Name the object to scan in scanning-sheet instructions.",
+        "ja": "スキャンシートの説明文でスキャン対象の名前を示す。"
+      },
+      "conditions": [
+        "Replace the generic object placeholder with the relevant object name."
+      ],
+      "review_note": "Reviewed the rendered source context for “Identify the object to scan in scanning-sheet instructions” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0011": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "d0d750fc7debe0ae38f717037d937501a73c2b8b7f188ee57a8d3159876fbde0",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Keep scanning-sheet instructions short to avoid truncation",
+      "statement": {
+        "en": "Keep scanning-sheet instructions short enough to avoid truncation.",
+        "ja": "スキャンシートの説明文を切り詰めが起きない長さに保つ。"
+      },
+      "conditions": [
+        "Test the instruction within the system scanning sheet."
+      ],
+      "review_note": "Reviewed the rendered source context for “Keep scanning-sheet instructions short to avoid truncation” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0012": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "9f6b14dd325fe5bb0f9e2734510b98e510c18b5e0b4962b735fe0349c5f4e9cc",
+        "section_path": [
+          "NFC",
+          "Background tag reading"
+        ]
+      },
+      "title": "Provide in-app tag scanning on devices without background tag reading",
+      "statement": {
+        "en": "Provide in-app tag scanning on devices that don’t support background tag reading.",
+        "ja": "バックグラウンドタグ読み取りに対応しない端末にもアプリ内スキャンを提供する。"
+      },
+      "conditions": [
+        "The device doesn’t support background tag reading."
+      ],
+      "review_note": "Reviewed the rendered source context for “Must provide in-app tag scanning on devices without background tag reading” and recorded its NFC-specific constraints."
+    },
+    "HIG-TECHNOLOGIES-NFC-0013": {
+      "source": {
+        "source_hash": "7be779732942e6b71da4a015cc6009d3777b263809ee614497a7fdcca7c02a7d",
+        "source_sentence_hash": "d0d750fc7debe0ae38f717037d937501a73c2b8b7f188ee57a8d3159876fbde0",
+        "section_path": [
+          "NFC",
+          "In-app tag reading"
+        ]
+      },
+      "title": "Use revised scanning-sheet instructions for subsequent scans",
+      "statement": {
+        "en": "Revise scanning-sheet instructions appropriately for subsequent scans.",
+        "ja": "2回目以降のスキャンに合わせてスキャンシートの説明文を調整する。"
+      },
+      "conditions": [
+        "Distinguish the first scan from a request to scan another object."
+      ],
+      "review_note": "Reviewed the rendered source context for “Use revised scanning-sheet instructions for subsequent scans” and recorded its NFC-specific constraints."
+    },
     "HIG-TECHNOLOGIES-CARPLAY-0001": {
       "source": {
         "source_hash": "0f2ac57f38243c820d6f1d4f27807e76527fe7e0b608bbd5fd98d7f4b4e62092",

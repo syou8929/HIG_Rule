@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 802
-- Reviewed batches: 53
+- Reviewed rules: 815
+- Reviewed batches: 54
 - Official source only: yes
-- Reviewed at: 2026-07-21T15:58:32Z
+- Reviewed at: 2026-07-21T16:05:01Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -804,6 +804,19 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-CARPLAY-0026 · high — Reviewed the rendered source context for “Never direct people to use iPhone to read or resolve CarPlay errors” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0027 · high — Reviewed the rendered source context for “Use immediate playback once CarPlay audio is sufficiently loaded” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
 - HIG-TECHNOLOGIES-CARPLAY-0028 · high — Reviewed the rendered source context for “Use appropriate CarPlay audio resumption after an interruption” and recorded its CarPlay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/carplay))
+- HIG-TECHNOLOGIES-NFC-0001 · high — Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0002 · high — Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0003 · high — Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0004 · high — Reviewed the rendered source context for “Support both background and in-app tag reading” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0005 · high — Reviewed the rendered source context for “Use scan and hold near instead of tap and touch” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0006 · high — Reviewed the rendered source context for “Avoid technical developer-oriented NFC terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0007 · high — Reviewed the rendered source context for “Use a complete sentence for scanning-sheet instructions” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0008 · high — Reviewed the rendered source context for “Use sentence case for scanning-sheet instructions” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0009 · high — Reviewed the rendered source context for “Use ending punctuation for scanning-sheet instructions” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0010 · high — Reviewed the rendered source context for “Identify the object to scan in scanning-sheet instructions” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0011 · high — Reviewed the rendered source context for “Keep scanning-sheet instructions short to avoid truncation” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0012 · high — Reviewed the rendered source context for “Must provide in-app tag scanning on devices without background tag reading” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-NFC-0013 · high — Reviewed the rendered source context for “Use revised scanning-sheet instructions for subsequent scans” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0003 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))

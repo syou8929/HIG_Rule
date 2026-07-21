@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2111
+- Active atomic rules: 2120
 - Pages without rules: 16
-- Low-confidence rules: 1218
-- Rules requiring human review: 1218
+- Low-confidence rules: 1214
+- Rules requiring human review: 1214
 - Reference notes: 925
 
 ## Rules by category
@@ -18,21 +18,21 @@
 - getting-started: 85
 - inputs: 187
 - patterns: 289
-- technologies: 591
+- technologies: 600
 
 ## Normative levels
 
-- AVOID: 285
+- AVOID: 286
 - MAY: 234
-- MUST: 165
+- MUST: 166
 - MUST_NOT: 20
-- SHOULD: 1407
+- SHOULD: 1414
 
 ## Rules by platform
 
 - carplay: 89
-- ios: 1467
-- ipados: 1469
+- ios: 1476
+- ipados: 1478
 - macos: 1246
 - tvos: 956
 - visionos: 1310
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 65
-- manual: 2046
+- manual: 2055
 
 ## Blocked pages
 
@@ -1162,10 +1162,6 @@ None.
 - HIG-TECHNOLOGIES-MAPS-0018
 - HIG-TECHNOLOGIES-MAPS-0019
 - HIG-TECHNOLOGIES-MAPS-0020
-- HIG-TECHNOLOGIES-NFC-0001
-- HIG-TECHNOLOGIES-NFC-0002
-- HIG-TECHNOLOGIES-NFC-0003
-- HIG-TECHNOLOGIES-NFC-0004
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0001
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0002
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0003
@@ -2383,10 +2379,6 @@ None.
 - HIG-TECHNOLOGIES-MAPS-0018
 - HIG-TECHNOLOGIES-MAPS-0019
 - HIG-TECHNOLOGIES-MAPS-0020
-- HIG-TECHNOLOGIES-NFC-0001
-- HIG-TECHNOLOGIES-NFC-0002
-- HIG-TECHNOLOGIES-NFC-0003
-- HIG-TECHNOLOGIES-NFC-0004
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0001
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0002
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0003
