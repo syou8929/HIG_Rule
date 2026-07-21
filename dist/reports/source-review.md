@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1340
-- Reviewed batches: 84
+- Reviewed rules: 1344
+- Reviewed batches: 85
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:21:14Z
+- Reviewed at: 2026-07-21T19:27:26Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -882,6 +882,10 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0029 · high — Recovered the fixed-layout AVOID guidance and preserved its practicability qualifier and exception. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030 · high — Recovered the explicit Make sure accessibility requirement and removed the incorrect touch-input modality inference. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 · high — Recovered the explicit Be sure inclusion requirement and preserved its necessity condition. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001 · high — Repaired the truncated extraction and preserved both control restraint and secondary-action discoverability. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0002 · high — Recovered the complete appearance-adaptation rule and all three documented change types. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0003 · high — Recovered the ergonomic rule and recorded both reachability and swipe examples without making their positions universal. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
+- HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0004 · high — Recovered the permission-gated integration rule and raised its conflict priority to privacy and explicit intent. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0001 · high — Retained MAY and preserved the minimum-immersion test and full-immersion caution. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0002 · high — Recorded the standard-task context, familiar controls, relocation, and dynamic scaling. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0003 · high — Repaired the generic statement and linked it to every documented comfort fundamental. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))

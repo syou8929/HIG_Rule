@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:21:14Z",
+  "reviewed_at": "2026-07-21T19:27:26Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2320,6 +2320,19 @@
         "HIG-FOUNDATIONS-TYPOGRAPHY-0021", "HIG-FOUNDATIONS-TYPOGRAPHY-0022"
       ],
       "review_note": "Completed the priority-4 Typography platform sections; preserved all existing IDs, recovered seven atomic rules, retained two explicit visionOS requirements as MUST, and removed a false gaze modality from the scalable-text rule."
+    },
+    {
+      "id": "priority-4-designing-for-ios-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:27:26Z",
+      "review_method": "Rendered Apple HIG Designing for iOS device characteristics, system-feature context, and complete Best practices prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios", "source_hash": "6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919"}],
+      "rule_ids": [
+        "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001", "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0002",
+        "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0003", "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0004"
+      ],
+      "review_note": "Completed the iOS-specific Best practices section; preserved the existing ID, recovered three atomic rules, gave permissioned data use privacy priority, and introduced no unsupported MUST rules."
     }
   ],
   "rules": {
@@ -4320,6 +4333,35 @@
       "statement": {"en": "Avoid adding shadows to backgroundless visionOS text solely to increase contrast.", "ja": "contrast向上だけを目的にbackgroundのないvisionOS textへshadowを加えない。"},
       "conditions": ["The current space may lack a surface for an accurate shadow, and its Environment makes reliable size and density unpredictable."],
       "review_note": "Recovered the qualified shadow AVOID and its spatial-environment rationale."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001": {
+      "source": {"source_hash": "6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919", "source_sentence_hash": "5b8ac5652e4cb4552e97192f2a1ea7c2e1682554512240a3535b0d301e55a3ba", "section_path": ["Designing for iOS", "Best practices"]},
+      "title": "Focus iOS interfaces on primary tasks and content",
+      "statement": {"en": "Help people focus on primary iOS tasks and content by limiting onscreen controls.", "ja": "onscreen controlを絞り、iOSのprimary taskとcontentへ集中できるようにする。"},
+      "conditions": ["Keep secondary details and actions discoverable with minimal interaction."],
+      "review_note": "Repaired the truncated extraction and preserved both control restraint and secondary-action discoverability."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0002": {
+      "source": {"source_hash": "6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919", "source_sentence_hash": "c2ff8b6be933b470af87953bc40ee00dcdd2e80a5878a3a1edef18b98f9ce5d9", "section_path": ["Designing for iOS", "Best practices"]},
+      "title": "Adapt iOS interfaces to appearance changes",
+      "statement": {"en": "Adapt iOS interfaces seamlessly to orientation, Dark Mode, and Dynamic Type changes.", "ja": "iOS interfaceをorientation、Dark Mode、Dynamic Typeの変化へseamlessに適応させる。"},
+      "conditions": ["Let people choose the configurations that work best for them."],
+      "review_note": "Recovered the complete appearance-adaptation rule and all three documented change types."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0003": {
+      "source": {"source_hash": "6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919", "source_sentence_hash": "a7c2603c48d5422ea48dd673496a97d298dd302397e24a9dde6b2244a7fd0500", "section_path": ["Designing for iOS", "Best practices"]},
+      "title": "Support comfortable iPhone holding patterns",
+      "statement": {"en": "Support iOS interactions that accommodate how people usually hold iPhone.", "ja": "iPhoneの一般的な持ち方に合うiOS interactionをsupportする。"},
+      "conditions": ["Place frequently reached controls near the middle or bottom of the display when appropriate.", "Provide comfortable swipe access for back navigation and list-row actions."],
+      "review_note": "Recovered the ergonomic rule and recorded both reachability and swipe examples without making their positions universal."
+    },
+    "HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0004": {
+      "source": {"source_hash": "6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919", "source_sentence_hash": "bfb87fc700ff80265d19a8c3d6d415314b6210739a0febe20cfc381f19850ea2", "section_path": ["Designing for iOS", "Best practices"]},
+      "title": "Integrate permissioned iOS platform information",
+      "statement": {"en": "With people’s permission, integrate iOS platform information to enhance the experience without requiring manual data entry.", "ja": "人のpermissionを得てiOS platform情報を統合し、manual data entryなしで体験を向上させる。"},
+      "priority_rank": 3,
+      "conditions": ["Request and use information only with explicit permission.", "Examples include payments, biometric authentication, and location-based features."],
+      "review_note": "Recovered the permission-gated integration rule and raised its conflict priority to privacy and explicit intent."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

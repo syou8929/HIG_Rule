@@ -76508,16 +76508,16 @@
   apple_native_rule: When cultural or language references are necessary, ensure they are respectful.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001
-  title: Help people concentrate on primary tasks and content by limiting the number of onscreen controls while maki…
+  title: Focus iOS interfaces on primary tasks and content
   category: getting-started
   topic: designing-for-ios
   subtopic: best-practices
   statement:
-    en: Apply the documented Designing for iOS guidance to help people concentrate on primary tasks and content by limiting the number of onscreen controls while making secondary details.
-    ja: 「Designing for iOS」において「Help people concentrate on primary tasks and content by limiting the number of onscreen controls while making secondary details」の指針を適用する。
+    en: Help people focus on primary iOS tasks and content by limiting onscreen controls.
+    ja: onscreen controlを絞り、iOSのprimary taskとcontentへ集中できるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -76529,7 +76529,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep secondary details and actions discoverable with minimal interaction.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Designing for iOS experience on the scoped Apple platforms.
@@ -76537,7 +76537,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Designing for iOS guidance to help people concentrate on primary tasks and content by limiting the number of onscreen controls while making secondary details.” in the documented Designing for iOS context?
+      - Does the design satisfy “Help people focus on primary iOS tasks and content by limiting onscreen controls.” in the documented Designing for iOS context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -76549,17 +76549,182 @@
     section_path:
       - Designing for iOS
       - Best practices
-    retrieved_at: 2026-07-21T11:14:46.706Z
+    retrieved_at: 2026-07-21T19:27:26Z
     source_hash: 6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919
     source_sentence_hash: 5b8ac5652e4cb4552e97192f2a1ea7c2e1682554512240a3535b0d301e55a3ba
-    evidence_paraphrase: Apply the documented Designing for iOS guidance to help people concentrate on primary tasks and content by limiting the number of onscreen controls while making secondary details.
+    evidence_paraphrase: Help people focus on primary iOS tasks and content by limiting onscreen controls.
   tags:
     - getting-started
     - designing-for-ios
     - best-practices
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Designing for iOS guidance to help people concentrate on primary tasks and content by limiting the number of onscreen controls while making secondary details.
+  apple_native_rule: Help people focus on primary iOS tasks and content by limiting onscreen controls.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0002
+  title: Adapt iOS interfaces to appearance changes
+  category: getting-started
+  topic: designing-for-ios
+  subtopic: best-practices
+  statement:
+    en: Adapt iOS interfaces seamlessly to orientation, Dark Mode, and Dynamic Type changes.
+    ja: iOS interfaceをorientation、Dark Mode、Dynamic Typeの変化へseamlessに適応させる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - ios
+    devices:
+      - iphone
+    components: []
+    modalities: []
+  conditions:
+    - Let people choose the configurations that work best for them.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Designing for iOS experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDesigning for iOSの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run UI tests at the platform’s largest supported text setting and detect clipped, truncated, or overlapping essential text.
+    manual:
+      - Does the design satisfy “Adapt iOS interfaces seamlessly to orientation, Dark Mode, and Dynamic Type changes.” in the documented Designing for iOS context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/designing-for-ios
+    page_title: Designing for iOS
+    section_path:
+      - Designing for iOS
+      - Best practices
+    retrieved_at: 2026-07-21T19:27:26Z
+    source_hash: 6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919
+    source_sentence_hash: c2ff8b6be933b470af87953bc40ee00dcdd2e80a5878a3a1edef18b98f9ce5d9
+    evidence_paraphrase: Adapt iOS interfaces seamlessly to orientation, Dark Mode, and Dynamic Type changes.
+  tags:
+    - getting-started
+    - designing-for-ios
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Adapt iOS interfaces seamlessly to orientation, Dark Mode, and Dynamic Type changes.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0003
+  title: Support comfortable iPhone holding patterns
+  category: getting-started
+  topic: designing-for-ios
+  subtopic: best-practices
+  statement:
+    en: Support iOS interactions that accommodate how people usually hold iPhone.
+    ja: iPhoneの一般的な持ち方に合うiOS interactionをsupportする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - ios
+    devices:
+      - iphone
+    components: []
+    modalities: []
+  conditions:
+    - Place frequently reached controls near the middle or bottom of the display when appropriate.
+    - Provide comfortable swipe access for back navigation and list-row actions.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Designing for iOS experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDesigning for iOSの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Support iOS interactions that accommodate how people usually hold iPhone.” in the documented Designing for iOS context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/designing-for-ios
+    page_title: Designing for iOS
+    section_path:
+      - Designing for iOS
+      - Best practices
+    retrieved_at: 2026-07-21T19:27:26Z
+    source_hash: 6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919
+    source_sentence_hash: a7c2603c48d5422ea48dd673496a97d298dd302397e24a9dde6b2244a7fd0500
+    evidence_paraphrase: Support iOS interactions that accommodate how people usually hold iPhone.
+  tags:
+    - getting-started
+    - designing-for-ios
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Support iOS interactions that accommodate how people usually hold iPhone.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0004
+  title: Integrate permissioned iOS platform information
+  category: getting-started
+  topic: designing-for-ios
+  subtopic: best-practices
+  statement:
+    en: With people’s permission, integrate iOS platform information to enhance the experience without requiring manual data entry.
+    ja: 人のpermissionを得てiOS platform情報を統合し、manual data entryなしで体験を向上させる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - ios
+    devices:
+      - iphone
+    components: []
+    modalities: []
+  conditions:
+    - Request and use information only with explicit permission.
+    - Examples include payments, biometric authentication, and location-based features.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Designing for iOS experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDesigning for iOSの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “With people’s permission, integrate iOS platform information to enhance the experience without requiring manual data entry.” in the documented Designing for iOS context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/designing-for-ios
+    page_title: Designing for iOS
+    section_path:
+      - Designing for iOS
+      - Best practices
+    retrieved_at: 2026-07-21T19:27:26Z
+    source_hash: 6003e7b6f7e42066fc7144213280eacea566bb51a2adafe0a01a71033a06e919
+    source_sentence_hash: bfb87fc700ff80265d19a8c3d6d415314b6210739a0febe20cfc381f19850ea2
+    evidence_paraphrase: With people’s permission, integrate iOS platform information to enhance the experience without requiring manual data entry.
+  tags:
+    - getting-started
+    - designing-for-ios
+    - best-practices
+  priority_rank: 3
+  status: active
+  apple_native_rule: With people’s permission, integrate iOS platform information to enhance the experience without requiring manual data entry.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001
   title: Use viewing distance and input mode to help you determine the size and density of the onscreen content you

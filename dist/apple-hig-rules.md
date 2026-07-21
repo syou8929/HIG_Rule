@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:25:09.299Z. 2400 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:29:59.034Z. 2403 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -64,7 +64,10 @@ Generated 2026-07-21T19:25:09.299Z. 2400 active rules; 3 deprecated rules.
 - **HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031 · MUST · high** — When cultural or language references are necessary, ensure they are respectful. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 ### designing-for-ios
 
-- **HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001 · SHOULD · low** — Apply the documented Designing for iOS guidance to help people concentrate on primary tasks and content by limiting the number of onscreen controls while making secondary details. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001 · SHOULD · high** — Help people focus on primary iOS tasks and content by limiting onscreen controls. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0002 · SHOULD · high** — Adapt iOS interfaces seamlessly to orientation, Dark Mode, and Dynamic Type changes. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0003 · SHOULD · high** — Support iOS interactions that accommodate how people usually hold iPhone. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
+- **HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0004 · SHOULD · high** — With people’s permission, integrate iOS platform information to enhance the experience without requiring manual data entry. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ios))
 ### designing-for-ipados
 
 - **HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001 · SHOULD · low** — Choose or apply viewing distance and input mode to help you determine the size and density of the onscreen content you in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados))

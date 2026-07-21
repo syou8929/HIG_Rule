@@ -5,17 +5,17 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2400
+- Active atomic rules: 2403
 - Pages without rules: 16
-- Low-confidence rules: 982
-- Rules requiring human review: 982
+- Low-confidence rules: 981
+- Rules requiring human review: 981
 - Reference notes: 929
 
 ## Rules by category
 
 - components: 858
 - foundations: 346
-- getting-started: 85
+- getting-started: 88
 - inputs: 187
 - patterns: 289
 - technologies: 635
@@ -26,12 +26,12 @@
 - MAY: 284
 - MUST: 217
 - MUST_NOT: 21
-- SHOULD: 1560
+- SHOULD: 1563
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1643
+- ios: 1646
 - ipados: 1616
 - macos: 1372
 - tvos: 1070
@@ -40,8 +40,8 @@
 
 ## Rules by testability
 
-- hybrid: 62
-- manual: 2338
+- hybrid: 63
+- manual: 2340
 
 ## Blocked pages
 
@@ -413,7 +413,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003
@@ -1398,7 +1397,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-GETTING-STARTED-DESIGNING-FOR-IOS-0001
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002
 - HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003
