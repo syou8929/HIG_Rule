@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T13:20:51.701Z. 1872 active rules; 3 deprecated rules.
+Generated 2026-07-21T13:38:15.719Z. 1886 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -239,31 +239,41 @@ Generated 2026-07-21T13:20:51.701Z. 1872 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-IMAGES-0017 · AVOID · high** — Avoid transparency in watchOS images when a solid background can reduce file size. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 ### immersive-experiences
 
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0001 · SHOULD · low** — Choose or apply dimmed passthrough to bring attention to your content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0002 · SHOULD · low** — Apply the documented Immersive experiences guidance to create unbounded 3D experiences. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0003 · SHOULD · low** — Choose or apply progressive immersion to blend your custom environment with a person’s surroundings in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0004 · SHOULD · low** — Choose or apply full immersion to create a fully immersive experience in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0005 · SHOULD · low** — Make multiple ways to use your app or game available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0006 · SHOULD · low** — Favor launching your app or game in the Shared Space or using the mixed immersion style when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0007 · SHOULD · low** — Apply the documented Immersive experiences guidance to help people engage with key moments in your app or game, regardless of the level of immersion. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0008 · SHOULD · low** — Favor subtle tint colors for passthrough when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0009 · SHOULD · low** — Apply the documented Immersive experiences guidance to be mindful of people’s visual comfort. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0010 · SHOULD · low** — Apply the documented Immersive experiences guidance to choose a style of immersion that supports the movements people might make while they’re in your app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0011 · AVOID · low** — Exclude encouraging people to move while they’re in a progressive or fully immersive experience from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0012 · SHOULD · low** — Apply the documented Immersive experiences guidance to adopt ARKit if you want to blend custom content with someone’s surroundings. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0013 · SHOULD · low** — Apply the documented Immersive experiences guidance to design smooth, predictable transitions when changing immersion. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0014 · SHOULD · low** — Preserve people’s ability to choose when to enter or exit a more immersive experience. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0015 · SHOULD · low** — Favor virtual hands that match familiar characteristics when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0016 · SHOULD · low** — Choose or apply caution if you create virtual hands that are larger than the viewer’s hands in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0017 · SHOULD · low** — Apply the documented Immersive experiences guidance to minimize distracting content. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0018 · SHOULD · low** — Apply the documented Immersive experiences guidance to help people distinguish interactive objects in your environment. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0019 · SHOULD · low** — Maintain animation subtle. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0020 · SHOULD · low** — Apply the documented Immersive experiences guidance to create an expansive environment, regardless of the place it depicts. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0021 · SHOULD · low** — Choose or apply spatial Audio to create atmosphere in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0022 · SHOULD · low** — Apply the documented Immersive experiences guidance to help people feel grounded. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0023 · SHOULD · low** — Apply the documented Immersive experiences guidance to minimize asset redundancy. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0001 · SHOULD · high** — Use dimmed passthrough to focus attention on content without hiding other experiences. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0002 · SHOULD · high** — Use mixed immersion in a Full Space for unbounded 3D content blended with passthrough. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0003 · SHOULD · high** — Use progressive immersion when a custom environment should partially replace passthrough. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0004 · SHOULD · high** — Use full immersion for a 360-degree custom environment that completely replaces passthrough. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0005 · SHOULD · high** — Offer multiple ways to use an immersive app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0006 · SHOULD · high** — Prefer launching in the Shared Space or mixed immersion. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0007 · SHOULD · high** — Help people engage with key moments at every level of immersion. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0008 · SHOULD · high** — Prefer subtle passthrough tint colors in visionOS 2 and later. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0009 · SHOULD · high** — Protect people’s visual comfort in a Full Space. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0010 · SHOULD · high** — Choose an immersion style that supports the movement people may make. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0011 · AVOID · high** — Avoid requiring movement in progressive or fully immersive experiences. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0012 · SHOULD · high** — Adopt ARKit when custom content needs information about a person’s surroundings. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0013 · SHOULD · high** — Design smooth, predictable transitions between immersion styles. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0014 · SHOULD · high** — Let people choose when to enter or exit a more immersive experience. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0015 · SHOULD · high** — Prefer virtual hands that match familiar positions, gestures, and interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0016 · SHOULD · high** — Use caution when virtual hands are larger than the viewer’s hands. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0017 · SHOULD · high** — Minimize environmental content that distracts from the primary task. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0018 · SHOULD · high** — Help people distinguish interactive objects in a custom environment. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0019 · SHOULD · high** — Keep animation in a custom environment small and gentle. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0020 · SHOULD · high** — Create an expansive custom environment regardless of the place it depicts. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0021 · SHOULD · high** — Use Spatial Audio to create atmosphere in a custom environment. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0022 · SHOULD · high** — Help people feel grounded in a custom environment. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0023 · SHOULD · high** — Minimize repeated assets and models in a custom environment. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0024 · AVOID · high** — Avoid using a flat 360-degree image as a visionOS environment. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
-- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0025 · SHOULD · low** — Reserve immersion for meaningful moments and content for the documented purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0025 · SHOULD · high** — Reserve immersion for meaningful tasks, moments, and content. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0026 · AVOID · high** — When using mixed immersion, avoid obscuring too much passthrough. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0027 · SHOULD · high** — Indicate the purpose of an immersive-experience exit control. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0028 · SHOULD · high** — When hand tracking is interrupted, fade virtual hands out and reveal the viewer’s hands. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029 · MUST · high** — Display motion in comfortable ways while the experience runs in a Full Space. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0030 · MUST · high** — Request permission before accessing sensitive data about a person’s surroundings or hand positions. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0031 · MUST · high** — Make an exit control clarify whether it reduces immersion or quits the experience. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0032 · AVOID · high** — Avoid leaving virtual hands frozen or unresponsive when hand tracking is interrupted. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0033 · MUST_NOT · high** — Do not display excessive movement near the edges of a person’s field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0034 · MUST · high** — Lower or stop the environmental soundscape when people can play other audio. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0035 · MUST · high** — Provide a ground plane mesh in a custom environment so people feel grounded. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 ### inclusion
 
 - **HIG-FOUNDATIONS-INCLUSION-0001 · MAY · medium** — Evaluate whether the tone of your copy from different perspectives is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))
@@ -1538,6 +1548,7 @@ Generated 2026-07-21T13:20:51.701Z. 1872 active rules; 3 deprecated rules.
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0004 · AVOID · low** — Exclude displaying a pointer from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0005 · SHOULD · low** — Apply the documented Focus and selection guidance to design your interface to accommodate components in various focus states. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 - **HIG-INPUTS-FOCUS-AND-SELECTION-0006 · SHOULD · low** — Generally, use a focus ring for a text or search field, but use a highlight in a list. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
+- **HIG-INPUTS-FOCUS-AND-SELECTION-0007 · SHOULD · low** — Indicate focus using visual appearances that are consistent with the platform. ([source](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection))
 ### game-controls
 
 - **HIG-INPUTS-GAME-CONTROLS-0001 · SHOULD · low** — Apply the documented Game controls guidance to place virtual buttons where they’re easy to access. ([source](https://developer.apple.com/design/human-interface-guidelines/game-controls))
@@ -1571,6 +1582,7 @@ Generated 2026-07-21T13:20:51.701Z. 1872 active rules; 3 deprecated rules.
 - **HIG-INPUTS-GESTURES-0014 · SHOULD · low** — Apply the documented Gestures guidance to choose the button that people use most commonly as the primary action in a view. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - **HIG-INPUTS-GESTURES-0015 · MAY · low** — Evaluate whether complex custom gestures that involve multiple fingers or both hands is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 - **HIG-INPUTS-GESTURES-0016 · SHOULD · low** — Reserve the area around a person’s hand for system overlays and their related gestures for the documented purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
+- **HIG-INPUTS-GESTURES-0017 · SHOULD · low** — Indicate when a gesture isn’t available. ([source](https://developer.apple.com/design/human-interface-guidelines/gestures))
 ### gyro-and-accelerometer
 
 - **HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001 · SHOULD · low** — Choose or apply motion data only to offer a tangible benefit to people in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer))
@@ -1757,6 +1769,7 @@ Generated 2026-07-21T13:20:51.701Z. 1872 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0030 · SHOULD · low** — Choose or apply badging only when your app contains a mixture of objects that can be viewed in AR and objects in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0031 · SHOULD · low** — Maintain badge placement consistent and clear. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 - **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0032 · MAY · low** — When additional information or controls are necessary, consider displaying them in screen space. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- **HIG-TECHNOLOGIES-AUGMENTED-REALITY-0033 · SHOULD · low** — Indicate when the front-facing camera is unable to track a face for more than about half a second. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 ### carekit
 
 - **HIG-TECHNOLOGIES-CAREKIT-0001 · SHOULD · low** — Make a coherent privacy policy available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
@@ -2120,6 +2133,7 @@ Generated 2026-07-21T13:20:51.701Z. 1872 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0021 · SHOULD · low** — Apply the documented Sign in with Apple guidance to match the height of the logo file to the height of the button. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - **HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0022 · AVOID · low** — Exclude crop the logo file from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - **HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0023 · AVOID · low** — Exclude add vertical padding from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- **HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0024 · SHOULD · low** — Indicate when people are currently signed in. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 ### siri
 
 - **HIG-TECHNOLOGIES-SIRI-0001 · SHOULD · low** — Choose or apply familiar terms for your content and actions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))

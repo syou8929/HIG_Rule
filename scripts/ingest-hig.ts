@@ -38,7 +38,7 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
           || document.title.replace(/ \| Apple.*$/, "").replace(/\s+/g, " ").trim();
         const sectionStack: string[] = [];
         const sections: string[][] = [];
-        const candidates: Array<{ fullText: string; sectionPath: string[] }> = [];
+        const candidates: Array<{ fullText: string; sectionPath: string[]; fragment?: string }> = [];
         const numericTableSections: string[][] = [];
         const nodes = Array.from(main.querySelectorAll(
           "h2, h3, h4, p > strong:first-child, li > strong:first-child, li > p:first-child:not(:has(> strong:first-child)), aside p, table",
@@ -59,7 +59,22 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
               numericTableSections.push(sectionPath);
             }
           } else if (value.length <= 260) {
-            candidates.push({ fullText: value, sectionPath: [title, ...sectionStack.filter(Boolean)] });
+            const sectionPath = [title, ...sectionStack.filter(Boolean)];
+            candidates.push({ fullText: value, sectionPath });
+            const paragraph = (node.closest("p, li, aside")?.textContent || value).replace(/\s+/g, " ").trim();
+            const sentences = paragraph.split(/(?<=[.!?])\s+/);
+            for (const sentence of sentences) {
+              const direct = sentence.replace(/^(?:also|in particular),\s*/i, "").trim();
+              if (/^(?:always|be sure to|do not|don['’]t|make sure|never)\b/i.test(direct)) {
+                candidates.push({ fullText: paragraph, sectionPath, fragment: direct });
+              }
+              if (!/^if you must\b/i.test(direct)) {
+                for (const match of direct.matchAll(/\byou must(?: not)?\b[^.!?]*(?=[.!?]|$)/gi)) {
+                  const explicit = (match[0] || "").trim();
+                  if (explicit) candidates.push({ fullText: paragraph, sectionPath, fragment: `${explicit[0]?.toUpperCase()}${explicit.slice(1)}` });
+                }
+              }
+            }
           }
         }
         const related = Array.from(main.querySelectorAll<HTMLAnchorElement>("a[href]"))
@@ -98,11 +113,7 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
     );
     const unique = new Map<string, SourcePage["guidance_candidates"][number]>();
     for (const candidate of data.candidates) {
-      const fragments = [candidate.fullText];
-      for (const match of candidate.fullText.matchAll(/\byou must(?: not)?\b[^.!?]*(?=[.!?]|$)/gi)) {
-        const explicit = (match[0] || "").trim();
-        if (explicit) fragments.push(`${explicit[0]?.toUpperCase()}${explicit.slice(1)}`);
-      }
+      const fragments = [candidate.fragment ?? candidate.fullText];
       for (const fragment of fragments) {
         const shortText = truncateWords(fragment.replace(/\s*[.:;]+$/, ""), 19);
         if (wordCount(shortText) < 2) continue;

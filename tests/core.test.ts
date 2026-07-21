@@ -89,6 +89,13 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(paraphrase("In an immersive experience, help people maintain comfort", "Color").en, "In an immersive experience, help people maintain comfort.");
   assert.equal(isActionable({ text: "Specify a succinct term", section_path: [], source_sentence_hash: "a".repeat(64), word_count: 4 }), true);
   assert.equal(paraphrase("Specify a succinct term", "Icons").en, "Specify a succinct term.");
+  assert.equal(isActionable({ text: "Indicate the purpose of an exit control", section_path: [], source_sentence_hash: "b".repeat(64), word_count: 7 }), true);
+  assert.equal(paraphrase("Indicate the purpose of an exit control", "Immersive experiences").en, "Indicate the purpose of an exit control.");
+  assert.equal(isActionable({ text: "If tracking stops, fade out virtual hands", section_path: [], source_sentence_hash: "c".repeat(64), word_count: 7 }), true);
+  assert.equal(paraphrase("If tracking stops, fade out virtual hands", "Immersive experiences").en, "When tracking stops, fade out virtual hands.");
+  assert.equal(normative("If passthrough is visible, avoid obscuring it").normative_level, "AVOID");
+  assert.equal(normative("Always avoid edge motion").normative_level, "MUST_NOT");
+  assert.equal(normative("Be sure to lower the soundscape volume").normative_level, "MUST");
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 300
-- Reviewed batches: 34
+- Reviewed rules: 334
+- Reviewed batches: 35
 - Official source only: yes
-- Reviewed at: 2026-07-21T13:18:29Z
+- Reviewed at: 2026-07-21T13:31:35Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -280,7 +280,41 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-ICONS-0012 · high — Restored the truncated condition and recorded every center-image size. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0014 · high — Recovered the omitted Specify lead and recorded the extension, scaling, and capitalization behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-IMAGES-0017 · high — Recovered the qualified AVOID lead without losing the template-image transparency exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0001 · high — Recorded the attention purpose, supported spaces, and default or custom tint behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0002 · high — Recorded the Full Space scope, absent boundary, and automatic physical-object response. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0003 · high — Recorded partial replacement, orientation, adjustable range, and movement-boundary context. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0004 · high — Recorded complete passthrough replacement and the system-defined movement boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0005 · high — Recorded user choice and accessibility personalization as coequal design constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0006 · high — Recorded cross-app switching and user control over increased immersion. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0007 · high — Recorded the cue types and subtle-first escalation strategy. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0008 · high — Recorded the version scope, coordination purpose, and distracting-tint restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0009 · high — Separated the general comfort prompt from the explicit comfortable-motion requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0010 · high — Recorded expected movement and the boundary-dependent mixed-style fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0011 · high — Recorded disability and physical-space constraints with a no-movement alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0012 · high — Separated the ARKit choice from the explicit permission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0013 · high — Recorded visual tracking and the disorientation risk. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0014 · high — Recorded explicit entry and exit actions and the system-control restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0015 · high — Recorded position and gesture matching as the familiar-characteristics basis. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0016 · high — Recorded content visibility, interaction precision, and spatial-proportion risks. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0017 · high — Recorded task focus and the source's quality and dimming hierarchy techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0018 · high — Recorded proximity as the documented cue for likely interactivity. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0019 · high — Separated subtle-animation guidance from the explicit field-of-view-edge prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0020 · high — Recorded spatial comfort and claustrophobia as the expansion rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0021 · high — Separated atmospheric audio guidance from the conditional other-audio requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0022 · high — Separated the grounding goal from the explicit ground-plane requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0023 · high — Recorded realism as the reason to limit repeated assets. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0024 · high — Recorded the scale and immersion limitation, preferred mesh treatment, and ground-plane fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0025 · high — Recorded task-level proportionality and continued access to surroundings and other software. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0026 · high — Recovered the conditional AVOID lead and its safer immersion-style alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0027 · high — Recovered the omitted Indicate lead and recorded both possible exit outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0028 · high — Recovered the conditional fade lead and its tracking-return transition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029 · high — Recovered explicit comfortable-motion guidance from the supporting paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0030 · high — Recovered the explicit permission requirement from the ARKit supporting paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0031 · high — Recovered the explicit outcome-clarity requirement from the exit-control supporting paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0032 · high — Recovered the direct prohibition and kept it at conservative AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0033 · high — Recovered the explicit field-of-view-edge motion prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0034 · high — Recovered the conditional soundscape-volume requirement from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0035 · high — Recovered the explicit ground-plane requirement from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-INCLUSION-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))
 - HIG-FOUNDATIONS-INCLUSION-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))
 - HIG-FOUNDATIONS-INCLUSION-0003 · medium — Repaired an ungrammatical generated paraphrase while retaining the source's optional strength and cross-cultural rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))

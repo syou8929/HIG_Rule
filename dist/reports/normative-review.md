@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 113
-- Retained MUST: 104
-- Retained MUST_NOT: 9
+- Reviewed rules: 119
+- Retained MUST: 109
+- Retained MUST_NOT: 10
 - Normative level changes: 3
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T13:05:32Z
+- Reviewed at: 2026-07-21T13:26:02Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -27,6 +27,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-WINDOWS-0008 — Retained MUST after confirming the explicit Make sure lead and state-dependent appearance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0022 — Recovered and retained the explicit You must requirement from the official iPadOS Tip. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0035 — Retained MUST after confirming the explicit Always directive under the Assistive Access guidelines and restored its applicability conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029 — Recovered and retained the explicit Make sure directive from the visual-comfort supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0030 — Recovered and retained the explicit You must permission requirement and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0031 — Recovered and retained the explicit Make sure directive while preserving the two distinct exit outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0033 — Recovered and retained MUST_NOT after confirming the explicit Always avoid directive. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0034 — Recovered and retained the explicit Be sure directive within its other-audio condition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0035 — Recovered and retained the explicit Always directive and its grounding purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -88,6 +94,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-IMAGES-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0010 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive from the visual-comfort supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit You must permission requirement and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive while preserving the two distinct exit outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0033 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered and retained MUST_NOT after confirming the explicit Always avoid directive. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0034 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Be sure directive within its other-audio condition. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
+- HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0035 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Always directive and its grounding purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-MOTION-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-PRIVACY-0007 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0011 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))

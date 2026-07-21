@@ -27,8 +27,8 @@ const warnings: string[] = [];
 const reviewedOverrideIds = new Set(Object.keys(normativeReview.overrides));
 type SourceReviewRule = {
   source: { source_hash: string; source_sentence_hash: string; section_path: string[] };
-  confidence: "low" | "medium" | "high";
-  review_required: boolean;
+  confidence?: "low" | "medium" | "high";
+  review_required?: boolean;
   review_note: string;
 };
 type SourceReviewBatch = {
