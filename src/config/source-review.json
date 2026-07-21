@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:40:46Z",
+  "reviewed_at": "2026-07-21T21:50:28Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2630,9 +2630,111 @@
         "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0019", "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0020", "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0021", "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0022", "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0023", "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0024"
       ],
       "review_note": "Completed the page, preserved four stable IDs, recovered twenty atomic rules, captured both structured specification tables, prioritized VoiceOver text, and retained four explicit needs-to, Make sure, and must requirements."
+    },
+    {
+      "id": "priority-4-in-app-purchase-watchos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T21:50:28Z",
+      "review_method": "Rendered Apple HIG In-app purchase platform overview and complete watchOS sign-up guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/in-app-purchase", "source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac"}],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0030", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0031", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0036", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0037", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0038",
+        "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0039", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0040", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0042", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0043", "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0044"
+      ],
+      "review_note": "Completed the watchOS section, preserved three stable IDs, recovered nine atomic rules, captured both comparison layouts and custom-flow exit behavior, and retained three explicit needs-to, Be sure, or need-to-understand MUST decisions."
     }
   ],
   "rules": {
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0030": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "f6645602fcd9e8050dea9eeb955a3b63058717517d2b306348b516c5c2108810", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Consider a modal sheet for watchOS subscription details",
+      "statement": {"en": "Consider a modal sheet for required watchOS subscription information.", "ja": "requiredなwatchOS subscription informationの表示にmodal sheetを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Present every required item in one scrollable view after people choose to learn more.", "Use the default Close button to provide a one-tap return to free content."],
+      "review_note": "Preserved Consider and recorded the single-view, scrolling, and default-close behavior."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0031": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "b991a782917e57d027a94e1f05dbdf3d3d58693b53d07d7c0fcee981fb8a5564", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Make watchOS subscription options easy to compare",
+      "statement": {"en": "Make watchOS subscription options easy to compare on the small screen.", "ja": "smallなwatchOS screenでsubscription optionを比較しやすくする。"},
+      "conditions": ["People need to scan multiple choices before selecting one."],
+      "review_note": "Recorded the small-screen comparison goal separately from required term comprehension."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "18dafc293b47751d86f8b2da027df52ca55263e0ffc17af4829ced16c41d094f", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Clarify watchOS functionality and content differences",
+      "statement": {"en": "Clarify when the watchOS app offers different functionality or a subset of content from other app versions.", "ja": "watchOS appが他versionと異なるfunctionalityまたはcontent subsetを提供する場合は差異を明確にする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The watchOS version differs in functionality or available subscription content."],
+      "review_note": "Raised the existing rule to MUST from the conditional Be sure directive and narrowed its scope to actual differences."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0036": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "da7f3d33f1e5ee0e513df2fba8f8ba2b535fcf6ab0bf9d767a318a8b7357c7c9", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Ensure watchOS shows the complete subscription information set",
+      "statement": {"en": "Ensure the watchOS sign-up screen shows the same required subscription information as other app versions.", "ja": "watchOS sign-up screenに他のapp versionと同じrequired subscription informationを表示する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Use the complete required-item list documented in Making signup effortless."],
+      "review_note": "Recovered MUST from the explicit needs-to requirement and preserved cross-version information parity."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0037": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "18dafc293b47751d86f8b2da027df52ca55263e0ffc17af4829ced16c41d094f", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Describe watchOS subscription advantages straightforwardly",
+      "statement": {"en": "Describe the advantages of accessing subscription content through watchOS straightforwardly.", "ja": "watchOSからsubscription contentへaccessする利点を率直に説明する。"},
+      "conditions": ["Set accurate expectations about the watchOS experience."],
+      "review_note": "Recovered the direct wording guidance separately from the non-equivalence avoidance."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0038": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "18dafc293b47751d86f8b2da027df52ca55263e0ffc17af4829ced16c41d094f", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Avoid implying watchOS parity with other app versions",
+      "statement": {"en": "Avoid implying that the watchOS subscription experience is identical to other app versions.", "ja": "watchOS subscription experienceが他のapp versionと同一だと示唆しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["The watchOS functionality or content differs from another device version."],
+      "review_note": "Separated the explicit expectation-setting avoidance from positive feature descriptions."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0039": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "f6645602fcd9e8050dea9eeb955a3b63058717517d2b306348b516c5c2108810", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Design a complete, efficient custom watchOS signup flow",
+      "statement": {"en": "When replacing the modal sheet, design a complete and efficient custom watchOS sign-up flow.", "ja": "modal sheetを使わない場合はcompleteでefficientなcustom watchOS sign-up flowを設計する。"},
+      "conditions": ["The app uses a custom sign-up view instead of the suggested modal sheet."],
+      "review_note": "Recovered the custom-view branch and both required flow qualities."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0040": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "f6645602fcd9e8050dea9eeb955a3b63058717517d2b306348b516c5c2108810", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Include an exit in a custom watchOS signup view",
+      "statement": {"en": "Include a Close or Cancel button in a custom watchOS sign-up view.", "ja": "custom watchOS sign-up viewにCloseまたはCancel buttonを含める。"},
+      "conditions": ["The button returns people to the app's free content."],
+      "review_note": "Recovered the explicit custom-flow exit and its return destination."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "b991a782917e57d027a94e1f05dbdf3d3d58693b53d07d7c0fcee981fb8a5564", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Ensure people understand subscription terms before choosing",
+      "statement": {"en": "Ensure people understand each watchOS subscription option's terms before choosing one.", "ja": "watchOS subscription optionを選ぶ前に各optionのtermsを理解できるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "review_note": "Recovered the purchase-decision MUST from the explicit need-to-understand statement."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0042": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "b991a782917e57d027a94e1f05dbdf3d3d58693b53d07d7c0fcee981fb8a5564", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Show watchOS subscription duration and discounts compactly",
+      "statement": {"en": "Display each watchOS subscription option's duration and discount information compactly for easy scanning and comparison.", "ja": "各watchOS subscription optionのdurationとdiscount informationをscanとcomparisonがしやすいcompactな形で表示する。"},
+      "conditions": ["Multiple options need to fit a small screen."],
+      "review_note": "Recovered both required information types and all three presentation qualities."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0043": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "f47f3553244b342420567282391d12f3fd6c597324901e503b677424965387d3", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Consider one button per watchOS payment option",
+      "statement": {"en": "Consider displaying each watchOS payment option in a separate button.", "ja": "各watchOS payment optionを別々のbuttonで表示することを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["One button per option lets people start signup with one tap.", "Keep each button visually locked to its description, including while scrolling."],
+      "review_note": "Preserved the source's optional layout framing and recorded one-tap and scrolling relationships."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0044": {
+      "source": {"source_hash": "15c82a40d51923c1b752a8e6de12ec5fe3ad6e44eb517d59718f48c3da360eac", "source_sentence_hash": "af507721ea9d6ba4a287b8fa1919f3b16b161d0f8e415e48567332b3c8ef48c3", "section_path": ["In-app purchase", "Platform considerations", "watchOS"]},
+      "title": "Consider watchOS options in list rows above one signup button",
+      "statement": {"en": "Consider one watchOS subscription option per list row followed by a signup button.", "ja": "watchOS subscription optionを1 rowずつ表示し、その後にsignup buttonを置くlayoutを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The list minimizes scrolling while keeping choices scannable.", "The button title may update to reflect the selected option."],
+      "review_note": "Preserved the optional alternative layout and its compactness and selected-option feedback."
+    },
     "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001": {
       "source": {"source_hash": "7faf6f3f7bf2c346c55565bb31d7202e0cd1454bd3fee577a2ff83c430df729e", "source_sentence_hash": "5595c2276bb703d0ce8c7f86ddb7e13daa884798236c2b6c4ed7565f7b563f35", "section_path": ["iMessage apps and stickers", "Best practices"]},
       "title": "Prefer one primary iMessage app experience",

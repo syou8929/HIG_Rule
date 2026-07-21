@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 274
-- Retained MUST: 251
+- Reviewed rules: 277
+- Retained MUST: 254
 - Retained MUST_NOT: 23
-- Normative level changes: 41
+- Normative level changes: 44
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:40:46Z
+- Reviewed at: 2026-07-21T21:50:28Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -201,6 +201,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0007 — Recovered MUST from the explicit Make sure directive for compact-view availability. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0011 — Recovered MUST from the explicit Make sure directive and preserved each documented legibility context. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0019 — Recovered MUST from the explicit must-based file-size maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034 — Changed SHOULD to MUST from the conditional Be sure directive and narrowed the rule to actual cross-device differences. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0036 — Recovered MUST from the explicit needs-to requirement for cross-version subscription-information parity. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041 — Recovered the purchase-decision MUST from the explicit need-to-understand statement. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-NFC-0012 — Recovered MUST from the explicit must still provide requirement for an in-app scanning fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
@@ -467,6 +470,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Make sure directive and preserved each documented legibility context. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit must-based file-size maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0028 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034 · MUST · retained_with_atomicity_or_scope_correction — Changed SHOULD to MUST from the conditional Be sure directive and narrowed the rule to actual cross-device differences. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0036 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs-to requirement for cross-version subscription-information parity. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041 · MUST · retained_with_atomicity_or_scope_correction — Recovered the purchase-decision MUST from the explicit need-to-understand statement. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))

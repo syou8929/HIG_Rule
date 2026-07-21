@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T21:48:25.271Z. 2594 active rules; 4 deprecated rules.
+Generated 2026-07-21T21:54:30.187Z. 2603 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2634,12 +2634,21 @@ Generated 2026-07-21T21:48:25.271Z. 2594 active rules; 4 deprecated rules.
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0027 · MAY · low** — Evaluate whether ways to encourage a subscriber to keep their subscription or resubscribe later is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0028 · MUST · medium** — Make it easy for customers to cancel an auto-renewable subscription in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0029 · MAY · low** — Evaluate whether creating a branded, contextual experience to complement the system-provided management UI is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
-- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0030 · MAY · low** — Evaluate whether using a modal sheet to display the required information is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
-- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0031 · SHOULD · low** — Apply the documented In-app purchase guidance to make subscription options easy to compare on a small screen. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0030 · MAY · high** — Consider a modal sheet for required watchOS subscription information. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0031 · SHOULD · high** — Make watchOS subscription options easy to compare on the small screen. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0032 · SHOULD · low** — Clearly describe how a free trial works. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0033 · SHOULD · low** — Clearly explain offer details. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
-- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034 · SHOULD · low** — Clearly describe the differences between versions of your app that run on different devices. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034 · MUST · high** — Clarify when the watchOS app offers different functionality or a subset of content from other app versions. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0035 · SHOULD · low** — In your tvOS app, help people sign up or authenticate using another device. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0036 · MUST · high** — Ensure the watchOS sign-up screen shows the same required subscription information as other app versions. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0037 · SHOULD · high** — Describe the advantages of accessing subscription content through watchOS straightforwardly. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0038 · AVOID · high** — Avoid implying that the watchOS subscription experience is identical to other app versions. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0039 · SHOULD · high** — When replacing the modal sheet, design a complete and efficient custom watchOS sign-up flow. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0040 · SHOULD · high** — Include a Close or Cancel button in a custom watchOS sign-up view. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041 · MUST · high** — Ensure people understand each watchOS subscription option's terms before choosing one. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0042 · SHOULD · high** — Display each watchOS subscription option's duration and discount information compactly for easy scanning and comparison. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0043 · MAY · high** — Consider displaying each watchOS payment option in a separate button. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0044 · MAY · high** — Consider one watchOS subscription option per list row followed by a signup button. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 ### live-photos
 
 - **HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 · SHOULD · low** — Apply the documented Live Photos guidance to apply adjustments to all frames. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:40:46Z",
+  "reviewed_at": "2026-07-21T21:50:28Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,45 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 274,
+  "reviewed_rule_count": 277,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034": {
+      "title": "Clarify watchOS functionality and content differences",
+      "statement": {
+        "en": "Clarify when the watchOS app offers different functionality or a subset of content from other app versions.",
+        "ja": "watchOS appが他versionと異なるfunctionalityまたはcontent subsetを提供する場合は差異を明確にする。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The watchOS version differs in functionality or available subscription content."],
+      "review_note": "Changed SHOULD to MUST from the conditional Be sure directive and narrowed the rule to actual cross-device differences."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0036": {
+      "title": "Ensure watchOS shows the complete subscription information set",
+      "statement": {
+        "en": "Ensure the watchOS sign-up screen shows the same required subscription information as other app versions.",
+        "ja": "watchOS sign-up screenに他のapp versionと同じrequired subscription informationを表示する。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Use the complete required-item list documented in Making signup effortless."],
+      "review_note": "Recovered MUST from the explicit needs-to requirement for cross-version subscription-information parity."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041": {
+      "title": "Ensure people understand subscription terms before choosing",
+      "statement": {
+        "en": "Ensure people understand each watchOS subscription option's terms before choosing one.",
+        "ja": "watchOS subscription optionを選ぶ前に各optionのtermsを理解できるようにする。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "review_note": "Recovered the purchase-decision MUST from the explicit need-to-understand statement."
+    },
     "HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0005": {
       "title": "Ensure the primary iMessage experience is immediately understandable",
       "statement": {

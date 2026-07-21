@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1631
-- Reviewed batches: 107
+- Reviewed rules: 1643
+- Reviewed batches: 108
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:40:46Z
+- Reviewed at: 2026-07-21T21:50:28Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1564,6 +1564,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0022 · high — Recovered the GIF transparency and animation capabilities from the format table. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0023 · high — Recovered both JPEG limitations without strengthening the table guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
 - HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0024 · high — Recorded the descriptive platform limitation at AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0030 · high — Preserved Consider and recorded the single-view, scrolling, and default-close behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0031 · high — Recorded the small-screen comparison goal separately from required term comprehension. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034 · high — Raised the existing rule to MUST from the conditional Be sure directive and narrowed its scope to actual differences. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0036 · high — Recovered MUST from the explicit needs-to requirement and preserved cross-version information parity. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0037 · high — Recovered the direct wording guidance separately from the non-equivalence avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0038 · high — Separated the explicit expectation-setting avoidance from positive feature descriptions. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0039 · high — Recovered the custom-view branch and both required flow qualities. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0040 · high — Recovered the explicit custom-flow exit and its return destination. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041 · high — Recovered the purchase-decision MUST from the explicit need-to-understand statement. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0042 · high — Recovered both required information types and all three presentation qualities. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0043 · high — Preserved the source's optional layout framing and recorded one-tap and scrolling relationships. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-IN-APP-PURCHASE-0044 · high — Preserved the optional alternative layout and its compactness and selected-option feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-NFC-0001 · high — Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0002 · high — Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0003 · high — Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
