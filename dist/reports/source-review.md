@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 427
-- Reviewed batches: 40
+- Reviewed rules: 463
+- Reviewed batches: 41
 - Official source only: yes
-- Reviewed at: 2026-07-21T14:17:55Z
+- Reviewed at: 2026-07-21T14:24:31Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -428,6 +428,42 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0013 · high — Recovered the omitted platform-feature lead and preserved every named feature. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0014 · high — Split the avoidance clause from the mixed field-of-view rule to preserve atomic strength. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
 - HIG-GETTING-STARTED-DESIGNING-FOR-VISIONOS-0015 · high — Recovered the conditional Make sure requirement and preserved both distance and duration constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0001 · high — Reviewed iPadOS Apple Pencil and Scribble behavior, recovered thirteen omitted atomic rules, and preserved conditional and optional strength. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0002 · high — Recorded control activation and the Scribble input exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0003 · high — Repaired the statement while the pre-mode avoidance is represented separately. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0004 · high — Replaced the generic statement with the complete sensor and stroke context. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0005 · high — Clarified the visual-feedback outcome; immediate manipulation and disconnected actions are separate rules. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0006 · high — Repaired the generic statement and recorded the optional repositioning response. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0007 · high — Recorded the mark-prediction purpose and preview contents. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0008 · high — Reviewed iPadOS Apple Pencil and Scribble behavior, recovered thirteen omitted atomic rules, and preserved conditional and optional strength. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0009 · high — Recorded both endpoint failures that justify a middle preview value. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0010 · high — Reviewed iPadOS Apple Pencil and Scribble behavior, recovered thirteen omitted atomic rules, and preserved conditional and optional strength. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0011 · high — Reviewed iPadOS Apple Pencil and Scribble behavior, recovered thirteen omitted atomic rules, and preserved conditional and optional strength. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0012 · high — Recorded every default behavior and the app-specific mode exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0013 · high — Recorded the selection control and current-mode visibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0014 · high — Recorded accidental activation, undoability, and the destructive-action restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0015 · high — Repaired the generic statement and recorded fatigue and feedback timing. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0016 · high — Preserved the only and not restrictions at SHOULD without promoting them to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0017 · high — Recorded supported standard components and the password-field exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0018 · high — Repaired the generic statement and preserved the natural text-entry test. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0019 · high — Recorded the autocompletion and placeholder techniques for distraction-free writing. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0020 · high — Recorded safe resize timing; resizing during writing is a separate AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0021 · high — Replaced the generic statement with the existing-content color behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0022 · high — Retained MAY and recorded the compact-only gap and cross-environment gesture option. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0023 · high — Repaired the generated statement and recorded the accidental-input risk. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0024 · high — Recovered the explicit Ensure requirement that prevents an apparent malfunction. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0025 · high — Recovered the pre-mark mode restriction at conservative AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0026 · high — Recovered the explicit Make sure direct-manipulation requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0027 · high — Recovered both disconnected-action cases at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0028 · high — Recovered the handedness layout restriction and repositioning option. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0029 · high — Recovered the height-driven preview restriction and preserved its practicability qualifier. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0030 · high — Recovered the explicit Make sure discoverability requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0031 · high — Recovered the explicit don’t clause at the repository’s conservative AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0032 · high — Recovered the contextual display guidance and its device-to-result connection. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0033 · high — Recovered the custom-field preselection restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0034 · high — Recovered the explicit Make sure stationary-field requirement and its pause-time fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0035 · high — Recovered the during-writing resize restriction and safe timing. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
+- HIG-INPUTS-APPLE-PENCIL-AND-SCRIBBLE-0036 · high — Recovered the autoscroll restriction and kept it at AVOID rather than promoting the imperative to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-TECHNOLOGIES-VOICEOVER-0001 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - HIG-TECHNOLOGIES-VOICEOVER-0002 · medium — Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
