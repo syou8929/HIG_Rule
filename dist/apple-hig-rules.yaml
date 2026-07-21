@@ -141458,15 +141458,15 @@
   apple_native_rule: Clearly indicate when a Live Photo is downloading and when the photo is playable.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MAC-CATALYST-0001
-  title: Make sure views and images look good in the Mac version of your app
+  title: Make sure Mac-idiom views and images look good
   category: technologies
   topic: mac-catalyst
   subtopic: choose-an-idiom
   statement:
-    en: Verify that views and images look good in the Mac version of your app.
-    ja: views and images look good in the Mac version of your appを満たしていることを確認する。
+    en: Make sure views and images look good when the app uses the Mac idiom.
+    ja: Mac idiomを使うappでviewとimageを良好に表示する。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -141482,7 +141482,7 @@
     modalities:
       - gaze
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Review unscaled iPadOS views and image assets at 100% rendering size.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
@@ -141490,7 +141490,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that views and images look good in the Mac version of your app.” in the documented Mac Catalyst context?
+      - Does the design satisfy “Make sure views and images look good when the app uses the Mac idiom.” in the documented Mac Catalyst context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -141502,10 +141502,10 @@
     section_path:
       - Mac Catalyst
       - Choose an idiom
-    retrieved_at: 2026-07-21T11:15:03.089Z
+    retrieved_at: 2026-07-21T21:56:12Z
     source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
-    source_sentence_hash: cfe78abf880dc35f2b62cfaf720ba457b942e6223399b90da5985105e3c63da3
-    evidence_paraphrase: Verify that views and images look good in the Mac version of your app.
+    source_sentence_hash: eb10c666c1a0d151df4270f92e5a2c6caf5357be2ca74408453dd8cd015e8d26
+    evidence_paraphrase: Make sure views and images look good when the app uses the Mac idiom.
   tags:
     - technologies
     - mac-catalyst
@@ -141513,18 +141513,18 @@
     - gaze
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that views and images look good in the Mac version of your app.
+  apple_native_rule: Make sure views and images look good when the app uses the Mac idiom.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MAC-CATALYST-0002
-  title: Make sure people retain access to important tab-bar items in the Mac version of your app
+  title: Make sure important tab items remain quickly accessible
   category: technologies
   topic: mac-catalyst
   subtopic: navigation
   statement:
-    en: Verify that people retain access to important tab-bar items in the Mac version of your app.
-    ja: people retain access to important tab-bar items in the Mac version of your appを満たしていることを確認する。
+    en: Make sure important iPad tab-bar items remain quickly accessible in the Mac app.
+    ja: importantなiPad tab-bar itemをMac appでもすぐaccessできるようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -141539,7 +141539,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - List top-level items in the macOS View menu when replacing the tab bar.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
@@ -141547,7 +141547,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that people retain access to important tab-bar items in the Mac version of your app.” in the documented Mac Catalyst context?
+      - Does the design satisfy “Make sure important iPad tab-bar items remain quickly accessible in the Mac app.” in the documented Mac Catalyst context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -141560,10 +141560,10 @@
       - Mac Catalyst
       - Integrate the Mac experience
       - Navigation
-    retrieved_at: 2026-07-21T11:15:03.089Z
+    retrieved_at: 2026-07-21T21:56:12Z
     source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
-    source_sentence_hash: e72992d345801d3f2a5e3c62840fc0d239af7499656ec8f077b6ccee8c554c76
-    evidence_paraphrase: Verify that people retain access to important tab-bar items in the Mac version of your app.
+    source_sentence_hash: 245b68194d54c7325c116f9f191d7119f997025d3f2329278baf46eaf7cb3cac
+    evidence_paraphrase: Make sure important iPad tab-bar items remain quickly accessible in the Mac app.
   tags:
     - technologies
     - mac-catalyst
@@ -141571,7 +141571,7 @@
     - navigation
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that people retain access to important tab-bar items in the Mac version of your app.
+  apple_native_rule: Make sure important iPad tab-bar items remain quickly accessible in the Mac app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MAC-CATALYST-0003
   title: Offer multiple ways to move between pages
@@ -141579,11 +141579,11 @@
   topic: mac-catalyst
   subtopic: navigation
   statement:
-    en: Make multiple ways to move between pages available when applicable.
-    ja: 必要な場合にmultiple ways to move between pagesを利用可能にする。
+    en: Offer multiple ways to move between pages in the Mac app.
+    ja: Mac appでpage間を移動する複数の方法を提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -141597,7 +141597,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Provide Next and Previous buttons for pointer and keyboard users in addition to swipe gestures.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
@@ -141605,7 +141605,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make multiple ways to move between pages available when applicable.” in the documented Mac Catalyst context?
+      - Does the design satisfy “Offer multiple ways to move between pages in the Mac app.” in the documented Mac Catalyst context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -141618,10 +141618,10 @@
       - Mac Catalyst
       - Integrate the Mac experience
       - Navigation
-    retrieved_at: 2026-07-21T11:15:03.089Z
+    retrieved_at: 2026-07-21T21:56:12Z
     source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
-    source_sentence_hash: b7de50bb99745073e9eb7214240ce569903bf40d36074a584c796a93d60b76d8
-    evidence_paraphrase: Make multiple ways to move between pages available when applicable.
+    source_sentence_hash: 196331200e2857f5664350e29682a393cae8160e6ed02e810becc54de0bbdb4e
+    evidence_paraphrase: Offer multiple ways to move between pages in the Mac app.
   tags:
     - technologies
     - mac-catalyst
@@ -141629,7 +141629,7 @@
     - navigation
   priority_rank: 4
   status: active
-  apple_native_rule: Make multiple ways to move between pages available when applicable.
+  apple_native_rule: Offer multiple ways to move between pages in the Mac app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MAC-CATALYST-0004
   title: Create a macOS version of your app icon
@@ -141637,11 +141637,11 @@
   topic: mac-catalyst
   subtopic: app-icons
   statement:
-    en: Apply the documented Mac Catalyst guidance to create a macOS version of your app icon.
-    ja: 「Mac Catalyst」において「Create a macOS version of your app icon」の指針を適用する。
+    en: Create a macOS version of the app icon for the Mac Catalyst app.
+    ja: Mac Catalyst app用にmacOS版app iconを作成する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -141655,7 +141655,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use the lifelike macOS rendering style while maintaining harmony across platforms.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
@@ -141663,7 +141663,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Mac Catalyst guidance to create a macOS version of your app icon.” in the documented Mac Catalyst context?
+      - Does the design satisfy “Create a macOS version of the app icon for the Mac Catalyst app.” in the documented Mac Catalyst context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -141676,10 +141676,10 @@
       - Mac Catalyst
       - Integrate the Mac experience
       - App icons
-    retrieved_at: 2026-07-21T11:15:03.089Z
+    retrieved_at: 2026-07-21T21:56:12Z
     source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
-    source_sentence_hash: 6d7541461a4e9e4d62a002b54debff3dccacd1a5a42350886a73d055901fbc92
-    evidence_paraphrase: Apply the documented Mac Catalyst guidance to create a macOS version of your app icon.
+    source_sentence_hash: f7c0d03da2cf5f3c91ef9e3147d132ae474446352bf347bbcfd6e362c25103c2
+    evidence_paraphrase: Create a macOS version of the app icon for the Mac Catalyst app.
   tags:
     - technologies
     - mac-catalyst
@@ -141687,7 +141687,7 @@
     - app-icons
   priority_rank: 4
   status: active
-  apple_native_rule: Apply the documented Mac Catalyst guidance to create a macOS version of your app icon.
+  apple_native_rule: Create a macOS version of the app icon for the Mac Catalyst app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MAC-CATALYST-0005
   title: Consider moving controls from the main UI of your iPad app to your Mac app’s toolbar
@@ -141695,11 +141695,11 @@
   topic: mac-catalyst
   subtopic: layout
   statement:
-    en: Evaluate whether moving controls from the main UI of your iPad app to your Mac app’s toolbar is appropriate for the current context.
-    ja: moving controls from the main UI of your iPad app to your Mac app’s toolbarが現在の状況に適切か検討する。
+    en: Consider moving controls from the iPad app's main interface to the Mac app toolbar.
+    ja: iPad appのmain interfaceにあるcontrolをMac app toolbarへ移すことを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -141721,7 +141721,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether moving controls from the main UI of your iPad app to your Mac app’s toolbar is appropriate for the current context.” in the documented Mac Catalyst context?
+      - Does the design satisfy “Consider moving controls from the iPad app's main interface to the Mac app toolbar.” in the documented Mac Catalyst context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -141734,10 +141734,10 @@
       - Mac Catalyst
       - Integrate the Mac experience
       - Layout
-    retrieved_at: 2026-07-21T11:15:03.089Z
+    retrieved_at: 2026-07-21T21:56:12Z
     source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
-    source_sentence_hash: 02c06c7adee7c2366f99260d2ac2c535815db8db951338f1151b05de3415fd6c
-    evidence_paraphrase: Evaluate whether moving controls from the main UI of your iPad app to your Mac app’s toolbar is appropriate for the current context.
+    source_sentence_hash: 5bb2853fb752c409c377f599377c871dbccbcb92681c061f6c41f9ab72c69267
+    evidence_paraphrase: Consider moving controls from the iPad app's main interface to the Mac app toolbar.
   tags:
     - technologies
     - mac-catalyst
@@ -141745,19 +141745,19 @@
     - layout
   priority_rank: 4
   status: active
-  apple_native_rule: Evaluate whether moving controls from the main UI of your iPad app to your Mac app’s toolbar is appropriate for the current context.
+  apple_native_rule: Consider moving controls from the iPad app's main interface to the Mac app toolbar.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MAC-CATALYST-0006
-  title: Use the regular-width and regular-height size classes, and consider reflowing elements in the content area …
+  title: Use regular size classes in the Mac app
   category: technologies
   topic: mac-catalyst
   subtopic: layout
   statement:
-    en: Choose or apply the regular-width and regular-height size classes, and consider reflowing elements in the content area to a side-by-side arrangement in the documented context.
-    ja: 該当する状況ではthe regular-width and regular-height size classes, and consider reflowing elements in the content area to a side-by-side arrangementを採用する。
+    en: Use the regular-width and regular-height size classes in the Mac app.
+    ja: Mac appでregular-widthとregular-heightのsize classを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -141779,7 +141779,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the regular-width and regular-height size classes, and consider reflowing elements in the content area to a side-by-side arrangement in the documented context.” in the documented Mac Catalyst context?
+      - Does the design satisfy “Use the regular-width and regular-height size classes in the Mac app.” in the documented Mac Catalyst context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -141792,10 +141792,10 @@
       - Mac Catalyst
       - Integrate the Mac experience
       - Layout
-    retrieved_at: 2026-07-21T11:15:03.089Z
+    retrieved_at: 2026-07-21T21:56:12Z
     source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
     source_sentence_hash: 1aba56d187dbfd57fc7939788b75cf62e41ba89b5af816ad5168ed0671d2bcc1
-    evidence_paraphrase: Choose or apply the regular-width and regular-height size classes, and consider reflowing elements in the content area to a side-by-side arrangement in the documented context.
+    evidence_paraphrase: Use the regular-width and regular-height size classes in the Mac app.
   tags:
     - technologies
     - mac-catalyst
@@ -141803,7 +141803,7 @@
     - layout
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply the regular-width and regular-height size classes, and consider reflowing elements in the content area to a side-by-side arrangement in the documented context.
+  apple_native_rule: Use the regular-width and regular-height size classes in the Mac app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MAC-CATALYST-0007
   title: Present an inspector UI next to the main content instead of using a popover
@@ -141811,11 +141811,11 @@
   topic: mac-catalyst
   subtopic: layout
   statement:
-    en: Present an inspector UI next to the main content instead of using a popover in the documented context.
-    ja: 該当する状況でan inspector UI next to the main content instead of using a popoverを表示する。
+    en: Present Mac inspector UI beside the main content instead of in a popover.
+    ja: Mac inspector UIをpopoverではなくmain contentの横に表示する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -141837,7 +141837,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Present an inspector UI next to the main content instead of using a popover in the documented context.” in the documented Mac Catalyst context?
+      - Does the design satisfy “Present Mac inspector UI beside the main content instead of in a popover.” in the documented Mac Catalyst context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -141850,10 +141850,10 @@
       - Mac Catalyst
       - Integrate the Mac experience
       - Layout
-    retrieved_at: 2026-07-21T11:15:03.089Z
+    retrieved_at: 2026-07-21T21:56:12Z
     source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
     source_sentence_hash: e5ff0925836880d79ceeb06b412366579376bb1838462f780f73d9fc3022bb9a
-    evidence_paraphrase: Present an inspector UI next to the main content instead of using a popover in the documented context.
+    evidence_paraphrase: Present Mac inspector UI beside the main content instead of in a popover.
   tags:
     - technologies
     - mac-catalyst
@@ -141861,7 +141861,7 @@
     - layout
   priority_rank: 4
   status: active
-  apple_native_rule: Present an inspector UI next to the main content instead of using a popover in the documented context.
+  apple_native_rule: Present Mac inspector UI beside the main content instead of in a popover.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MAC-CATALYST-0008
   title: As much as possible, adopt a top-down flow
@@ -141869,11 +141869,240 @@
   topic: mac-catalyst
   subtopic: layout
   statement:
-    en: Adopt a top-down flow wherever practicable.
-    ja: 可能な限りadopt a top-down flow。
+    en: Wherever practicable, adopt a top-down flow in the Mac app.
+    ja: 可能な限りMac appでtop-down flowを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Place the most important actions and content near the top of the window.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Wherever practicable, adopt a top-down flow in the Mac app.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Layout
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: f396229453d2903a36240854870fbe42fa37d8240680e424df53ac82fc8500cb
+    evidence_paraphrase: Wherever practicable, adopt a top-down flow in the Mac app.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - layout
+  priority_rank: 4
+  status: active
+  apple_native_rule: Wherever practicable, adopt a top-down flow in the Mac app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0009
+  title: Support keyboard navigation and shortcuts in the Mac app
+  category: technologies
+  topic: mac-catalyst
+  subtopic: before-you-start
+  statement:
+    en: Support both keyboard navigation and keyboard shortcuts in the Mac app.
+    ja: Mac appでkeyboard navigationとkeyboard shortcutの両方をsupportする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities:
+      - keyboard
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Support both keyboard navigation and keyboard shortcuts in the Mac app.” in the documented Mac Catalyst context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Before you start
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 5500578783d7ba8c3f982892f8e03e2875129b55c988152f2db9d1ec43c86f51
+    evidence_paraphrase: Support both keyboard navigation and keyboard shortcuts in the Mac app.
+  tags:
+    - technologies
+    - mac-catalyst
+    - before-you-start
+    - keyboard
+  priority_rank: 4
+  status: active
+  apple_native_rule: Support both keyboard navigation and keyboard shortcuts in the Mac app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0010
+  title: Avoid Mac Catalyst when essential features depend on capabilities unavailable on Mac
+  category: technologies
+  topic: mac-catalyst
+  subtopic: before-you-start
+  statement:
+    en: Avoid Mac Catalyst when the essential experience depends on capabilities unavailable on Mac.
+    ja: essential experienceがMacで利用できないcapabilityに依存する場合はMac Catalystを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Examples include device sensors, a rear camera, HealthKit, ARKit, or touch-centric marking, handwriting, and navigation.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid Mac Catalyst when the essential experience depends on capabilities unavailable on Mac.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Before you start
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: b85732292698c397dcc21ce58b4985ab7e4851f47fd4bff901457bcbbf59055b
+    evidence_paraphrase: Avoid Mac Catalyst when the essential experience depends on capabilities unavailable on Mac.
+  tags:
+    - technologies
+    - mac-catalyst
+    - before-you-start
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid Mac Catalyst when the essential experience depends on capabilities unavailable on Mac.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0011
+  title: Consider the Mac idiom after the iPad idiom feels at home on Mac
+  category: technologies
+  topic: mac-catalyst
+  subtopic: choose-an-idiom
+  statement:
+    en: When the iPad idiom already feels at home on Mac, consider switching to the Mac idiom.
+    ja: iPad idiomがMacになじんだ後はMac idiomへの切替を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The Mac idiom can improve detail, Mac-like appearance, performance, and power use.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When the iPad idiom already feels at home on Mac, consider switching to the Mac idiom.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Choose an idiom
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: b735270d6d39aa52b4ca19990b9ac41fafd9baf6c222f151a09ebb7a0700d073
+    evidence_paraphrase: When the iPad idiom already feels at home on Mac, consider switching to the Mac idiom.
+  tags:
+    - technologies
+    - mac-catalyst
+    - choose-an-idiom
+  priority_rank: 4
+  status: active
+  apple_native_rule: When the iPad idiom already feels at home on Mac, consider switching to the Mac idiom.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0012
+  title: Audit layout when adopting the Mac idiom
+  category: technologies
+  topic: mac-catalyst
+  subtopic: choose-an-idiom
+  statement:
+    en: Thoroughly audit the app layout and plan necessary changes when adopting the Mac idiom.
+    ja: Mac idiomを採用するときapp layoutを十分に監査し必要な変更を計画する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -141895,7 +142124,628 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Adopt a top-down flow wherever practicable.” in the documented Mac Catalyst context?
+      - Does the design satisfy “Thoroughly audit the app layout and plan necessary changes when adopting the Mac idiom.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Choose an idiom
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 7a22d4bf0d947e2fc56190a864ab8624d5b2fa7678812f33aa2c1cf1596dbc9c
+    evidence_paraphrase: Thoroughly audit the app layout and plan necessary changes when adopting the Mac idiom.
+  tags:
+    - technologies
+    - mac-catalyst
+    - choose-an-idiom
+  priority_rank: 4
+  status: active
+  apple_native_rule: Thoroughly audit the app layout and plan necessary changes when adopting the Mac idiom.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0013
+  title: Consider a separate asset catalog for Mac app assets
+  category: technologies
+  topic: mac-catalyst
+  subtopic: choose-an-idiom
+  statement:
+    en: Consider a separate asset catalog for Mac app assets instead of reusing the iPad catalog.
+    ja: iPad catalogの再利用ではなくMac app asset用の別asset catalogを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider a separate asset catalog for Mac app assets instead of reusing the iPad catalog.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Choose an idiom
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 7a22d4bf0d947e2fc56190a864ab8624d5b2fa7678812f33aa2c1cf1596dbc9c
+    evidence_paraphrase: Consider a separate asset catalog for Mac app assets instead of reusing the iPad catalog.
+  tags:
+    - technologies
+    - mac-catalyst
+    - choose-an-idiom
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider a separate asset catalog for Mac app assets instead of reusing the iPad catalog.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0014
+  title: Adjust Mac-idiom font sizes as needed
+  category: technologies
+  topic: mac-catalyst
+  subtopic: choose-an-idiom
+  statement:
+    en: Adjust font sizes as needed when the app uses the Mac idiom.
+    ja: Mac idiomを使う場合は必要に応じてfont sizeを調整する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Mac-idiom text renders at 100% and can otherwise appear too large.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Adjust font sizes as needed when the app uses the Mac idiom.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Choose an idiom
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: d13de847d2e0cec97ac2131865198d6ba718b1851325f834a4bcc9582414ac22
+    evidence_paraphrase: Adjust font sizes as needed when the app uses the Mac idiom.
+  tags:
+    - technologies
+    - mac-catalyst
+    - choose-an-idiom
+  priority_rank: 4
+  status: active
+  apple_native_rule: Adjust font sizes as needed when the app uses the Mac idiom.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0015
+  title: Use text styles wherever possible in the Mac idiom
+  category: technologies
+  topic: mac-catalyst
+  subtopic: choose-an-idiom
+  statement:
+    en: Use text styles wherever possible in the Mac idiom.
+    ja: Mac idiomでは可能な限りtext styleを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use text styles wherever possible in the Mac idiom.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Choose an idiom
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: d13de847d2e0cec97ac2131865198d6ba718b1851325f834a4bcc9582414ac22
+    evidence_paraphrase: Use text styles wherever possible in the Mac idiom.
+  tags:
+    - technologies
+    - mac-catalyst
+    - choose-an-idiom
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use text styles wherever possible in the Mac idiom.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0016
+  title: Avoid fixed font sizes in the Mac idiom
+  category: technologies
+  topic: mac-catalyst
+  subtopic: choose-an-idiom
+  statement:
+    en: Avoid fixed font sizes in the Mac idiom.
+    ja: Mac idiomでfixed font sizeを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid fixed font sizes in the Mac idiom.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Choose an idiom
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: d13de847d2e0cec97ac2131865198d6ba718b1851325f834a4bcc9582414ac22
+    evidence_paraphrase: Avoid fixed font sizes in the Mac idiom.
+  tags:
+    - technologies
+    - mac-catalyst
+    - choose-an-idiom
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid fixed font sizes in the Mac idiom.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0017
+  title: Avoid fixed view and layout sizes in the Mac idiom
+  category: technologies
+  topic: mac-catalyst
+  subtopic: choose-an-idiom
+  statement:
+    en: Avoid fixed view and layout sizes in the Mac idiom.
+    ja: Mac idiomでfixed view sizeとlayout sizeを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Unscaled Mac-idiom interface elements report different metrics.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid fixed view and layout sizes in the Mac idiom.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Choose an idiom
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 7a7713d7f2b73e67b64203b2f06a70516dac75d4859d78fb0ed4e86df2ee83e8
+    evidence_paraphrase: Avoid fixed view and layout sizes in the Mac idiom.
+  tags:
+    - technologies
+    - mac-catalyst
+    - choose-an-idiom
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid fixed view and layout sizes in the Mac idiom.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0018
+  title: Limit appearance customizations to compatible macOS options
+  category: technologies
+  topic: mac-catalyst
+  subtopic: choose-an-idiom
+  statement:
+    en: Limit appearance customizations to standard macOS options that are the same as or similar to iPadOS options.
+    ja: appearance customizationをiPadOSと同じか類似するstandard macOS optionに限定する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Some iPadOS control customizations are unavailable on macOS.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Limit appearance customizations to standard macOS options that are the same as or similar to iPadOS options.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Choose an idiom
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 88ec696498b9c585717cf9f974a31ebbf87fffa3feb6b3249ea175693ff4a258
+    evidence_paraphrase: Limit appearance customizations to standard macOS options that are the same as or similar to iPadOS options.
+  tags:
+    - technologies
+    - mac-catalyst
+    - choose-an-idiom
+  priority_rank: 4
+  status: active
+  apple_native_rule: Limit appearance customizations to standard macOS options that are the same as or similar to iPadOS options.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0019
+  title: Ensure a rich Mac Catalyst experience
+  category: technologies
+  topic: mac-catalyst
+  subtopic: integrate-the-mac-experience
+  statement:
+    en: Ensure a Mac Catalyst app provides a rich Mac experience beyond placing an iPadOS layout in a Mac window.
+    ja: Mac Catalyst appでiPadOS layoutをMac windowに置くだけではないrichなMac experienceを提供する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure a Mac Catalyst app provides a rich Mac experience beyond placing an iPadOS layout in a Mac window.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 5e46bfaedcd9feea8b239f61c1051867655c5637ced528e09f3c02491cc949d5
+    evidence_paraphrase: Ensure a Mac Catalyst app provides a rich Mac experience beyond placing an iPadOS layout in a Mac window.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+  priority_rank: 4
+  status: active
+  apple_native_rule: Ensure a Mac Catalyst app provides a rich Mac experience beyond placing an iPadOS layout in a Mac window.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0020
+  title: Understand platform differences before adapting views
+  category: technologies
+  topic: mac-catalyst
+  subtopic: integrate-the-mac-experience
+  statement:
+    en: Become familiar with key iPadOS and macOS differences before adapting specific views and controls.
+    ja: specificなviewやcontrolを調整する前にiPadOSとmacOSの主な違いを理解する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Become familiar with key iPadOS and macOS differences before adapting specific views and controls.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 185fed6174fcdf3df06404651d8fb868b2365c2134e09cb08a66efb1e0f030f5
+    evidence_paraphrase: Become familiar with key iPadOS and macOS differences before adapting specific views and controls.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+  priority_rank: 4
+  status: active
+  apple_native_rule: Become familiar with key iPadOS and macOS differences before adapting specific views and controls.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0021
+  title: Consider replacing an iPad tab bar with a Mac sidebar or segmented control
+  category: technologies
+  topic: mac-catalyst
+  subtopic: navigation
+  statement:
+    en: When the iPad app uses a tab bar, consider a Mac split view with a sidebar or a segmented control.
+    ja: iPad appがtab barを使う場合はMacでsidebar付きsplit viewまたはsegmented controlを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When the iPad app uses a tab bar, consider a Mac split view with a sidebar or a segmented control.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Navigation
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: ed04d30bd592dfb14a02b09102af4c134cff61b36a734641db0356e15af4b9cb
+    evidence_paraphrase: When the iPad app uses a tab bar, consider a Mac split view with a sidebar or a segmented control.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - navigation
+  priority_rank: 4
+  status: active
+  apple_native_rule: When the iPad app uses a tab bar, consider a Mac split view with a sidebar or a segmented control.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0022
+  title: Prefer a Mac split view unless the navigation hierarchy is flat
+  category: technologies
+  topic: mac-catalyst
+  subtopic: navigation
+  statement:
+    en: Prefer a Mac split view over a segmented control unless the app uses a flat navigation hierarchy.
+    ja: appがflat navigation hierarchyを使う場合を除きMacではsegmented controlよりsplit viewを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions:
+    - A segmented control can work well for a flat navigation hierarchy.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prefer a Mac split view over a segmented control unless the app uses a flat navigation hierarchy.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Navigation
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 4b3e457f75a053dc234dbf54330b10298b664eac10b1eb8bbb7a5721e064e118
+    evidence_paraphrase: Prefer a Mac split view over a segmented control unless the app uses a flat navigation hierarchy.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - navigation
+  priority_rank: 4
+  status: active
+  apple_native_rule: Prefer a Mac split view over a segmented control unless the app uses a flat navigation hierarchy.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0023
+  title: Use multiple columns on the wider Mac screen
+  category: technologies
+  topic: mac-catalyst
+  subtopic: layout
+  statement:
+    en: Divide a single iPad content-and-actions column into multiple Mac columns where appropriate.
+    ja: 必要に応じてiPadのcontent-and-actions 1列をMacでは複数列に分ける。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Use the wider Mac screen to improve the experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Divide a single iPad content-and-actions column into multiple Mac columns where appropriate.” in the documented Mac Catalyst context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -141908,10 +142758,10 @@
       - Mac Catalyst
       - Integrate the Mac experience
       - Layout
-    retrieved_at: 2026-07-21T11:15:03.089Z
+    retrieved_at: 2026-07-21T21:56:12Z
     source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
-    source_sentence_hash: bcbb4fd660371118193da000a2bdefb1ffdd1044759859783ffa7430887d5d50
-    evidence_paraphrase: Adopt a top-down flow wherever practicable.
+    source_sentence_hash: 9efd4b0f78090ca233fe5343317e8f45233bd0f171e15116b73ca4e4cc512419
+    evidence_paraphrase: Divide a single iPad content-and-actions column into multiple Mac columns where appropriate.
   tags:
     - technologies
     - mac-catalyst
@@ -141919,7 +142769,593 @@
     - layout
   priority_rank: 4
   status: active
-  apple_native_rule: Adopt a top-down flow wherever practicable.
+  apple_native_rule: Divide a single iPad content-and-actions column into multiple Mac columns where appropriate.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0024
+  title: Consider side-by-side content reflow while the Mac window resizes
+  category: technologies
+  topic: mac-catalyst
+  subtopic: layout
+  statement:
+    en: As the Mac window resizes, consider reflowing content elements into a side-by-side arrangement.
+    ja: Mac windowのresizeに応じてcontent elementをside-by-side配置へreflowすることを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “As the Mac window resizes, consider reflowing content elements into a side-by-side arrangement.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Layout
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 1aba56d187dbfd57fc7939788b75cf62e41ba89b5af816ad5168ed0671d2bcc1
+    evidence_paraphrase: As the Mac window resizes, consider reflowing content elements into a side-by-side arrangement.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - layout
+  priority_rank: 4
+  status: active
+  apple_native_rule: As the Mac window resizes, consider reflowing content elements into a side-by-side arrangement.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0025
+  title: List toolbar commands in Mac menu-bar menus
+  category: technologies
+  topic: mac-catalyst
+  subtopic: layout
+  statement:
+    en: List every command associated with a moved toolbar control in the Mac app's menu-bar menus.
+    ja: toolbarへ移したcontrolに関連する全commandをMac appのmenu-bar menuに掲載する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - An iPad main-interface control moves into the Mac toolbar.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “List every command associated with a moved toolbar control in the Mac app's menu-bar menus.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Layout
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 5bb2853fb752c409c377f599377c871dbccbcb92681c061f6c41f9ab72c69267
+    evidence_paraphrase: List every command associated with a moved toolbar control in the Mac app's menu-bar menus.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - layout
+  priority_rank: 4
+  status: active
+  apple_native_rule: List every command associated with a moved toolbar control in the Mac app's menu-bar menus.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0026
+  title: Place iPad toolbar controls in the Mac window toolbar
+  category: technologies
+  topic: mac-catalyst
+  subtopic: layout
+  statement:
+    en: Place controls from an iPad toolbar in the Mac version's window toolbar.
+    ja: iPad toolbarのcontrolをMac版window toolbarに配置する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The iPad app already provides the controls in a toolbar.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Place controls from an iPad toolbar in the Mac version's window toolbar.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Layout
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: f396229453d2903a36240854870fbe42fa37d8240680e424df53ac82fc8500cb
+    evidence_paraphrase: Place controls from an iPad toolbar in the Mac version's window toolbar.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - layout
+  priority_rank: 4
+  status: active
+  apple_native_rule: Place controls from an iPad toolbar in the Mac version's window toolbar.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0027
+  title: Position Mac buttons away from side and bottom screen edges
+  category: technologies
+  topic: mac-catalyst
+  subtopic: layout
+  statement:
+    en: Relocate Mac buttons away from the side and bottom screen edges.
+    ja: Mac buttonをscreenのside edgeとbottom edgeから移動する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions:
+    - Consider another interface area or the Mac window toolbar.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Relocate Mac buttons away from the side and bottom screen edges.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Layout
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 194d4cea08a54606e6cd59efe03fd81bc40fd07e062925319ca9a5a2ef11e803
+    evidence_paraphrase: Relocate Mac buttons away from the side and bottom screen edges.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - layout
+  priority_rank: 4
+  status: active
+  apple_native_rule: Relocate Mac buttons away from the side and bottom screen edges.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0028
+  title: Provide all Mac app commands in the persistent menu bar
+  category: technologies
+  topic: mac-catalyst
+  subtopic: menus
+  statement:
+    en: Provide all Mac app commands in the persistent menu bar.
+    ja: Mac appの全commandをpersistent menu barに提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Mac users expect the menu bar to expose the app's commands.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Provide all Mac app commands in the persistent menu bar.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Menus
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 8c7e555763363f1e799d70c7b3894047a6d6a739b206278bb37d96b4216f2f84
+    evidence_paraphrase: Provide all Mac app commands in the persistent menu bar.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - menus
+  priority_rank: 4
+  status: active
+  apple_native_rule: Provide all Mac app commands in the persistent menu bar.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0029
+  title: Use UIKeyCommand to support keyboard shortcuts for menu commands
+  category: technologies
+  topic: mac-catalyst
+  subtopic: menus
+  statement:
+    en: Use UIKeyCommand to support keyboard shortcuts for menu commands.
+    ja: menu commandのkeyboard shortcutをsupportするためUIKeyCommandを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities:
+      - keyboard
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Use UIKeyCommand to support keyboard shortcuts for menu commands.” in the documented Mac Catalyst context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Menus
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: d5df4117dcd0a0d2cf6ca7b378a9a7bfbe7b28ed879fe119ea134fde78967af3
+    evidence_paraphrase: Use UIKeyCommand to support keyboard shortcuts for menu commands.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - menus
+    - keyboard
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use UIKeyCommand to support keyboard shortcuts for menu commands.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0030
+  title: Use UIMenuBuilder and UICommand for custom Mac app menus
+  category: technologies
+  topic: mac-catalyst
+  subtopic: menus
+  statement:
+    en: Use UIMenuBuilder and UICommand to add or remove custom Mac app menus and commands.
+    ja: custom Mac app menuとcommandの追加・削除にUIMenuBuilderとUICommandを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use UIMenuBuilder and UICommand to add or remove custom Mac app menus and commands.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Menus
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 48b3571450ac40f96d4a2452e5a1b124ad2429cb66d7a7a40d4617a2972ec6b3
+    evidence_paraphrase: Use UIMenuBuilder and UICommand to add or remove custom Mac app menus and commands.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - menus
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use UIMenuBuilder and UICommand to add or remove custom Mac app menus and commands.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0031
+  title: Consider additional Mac objects that could support context menus
+  category: technologies
+  topic: mac-catalyst
+  subtopic: menus
+  statement:
+    en: Consider additional Mac objects that could support context menus.
+    ja: context menuをsupportできる追加のMac objectを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Existing iPad context menus convert automatically.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider additional Mac objects that could support context menus.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Menus
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 8af6d8578c9aadbfcf27239c99ca0504eb3f42dd394e57794e2fad822670fa90
+    evidence_paraphrase: Consider additional Mac objects that could support context menus.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - menus
+  priority_rank: 4
+  status: active
+  apple_native_rule: Consider additional Mac objects that could support context menus.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0032
+  title: Provide relevant context-menu actions for suitable Mac objects
+  category: technologies
+  topic: mac-catalyst
+  subtopic: menus
+  statement:
+    en: Provide context menus with relevant actions for suitable Mac objects.
+    ja: 適切なMac objectにrelevant actionを含むcontext menuを提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ipados
+      - macos
+    devices:
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Mac users tend to expect object-level context menus.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Provide context menus with relevant actions for suitable Mac objects.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Integrate the Mac experience
+      - Menus
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: 8af6d8578c9aadbfcf27239c99ca0504eb3f42dd394e57794e2fad822670fa90
+    evidence_paraphrase: Provide context menus with relevant actions for suitable Mac objects.
+  tags:
+    - technologies
+    - mac-catalyst
+    - integrate-the-mac-experience
+    - menus
+  priority_rank: 4
+  status: active
+  apple_native_rule: Provide context menus with relevant actions for suitable Mac objects.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-MAC-CATALYST-0033
+  title: Avoid Mac Catalyst on unsupported Apple platforms
+  category: technologies
+  topic: mac-catalyst
+  subtopic: platform-considerations
+  statement:
+    en: Avoid using Mac Catalyst on iOS, tvOS, visionOS, or watchOS.
+    ja: iOS、tvOS、visionOS、watchOSでMac Catalystを使わない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Mac Catalyst applies to iPadOS and macOS with no additional platform considerations.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Mac Catalyst experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるMac Catalystの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid using Mac Catalyst on iOS, tvOS, visionOS, or watchOS.” in the documented Mac Catalyst context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/mac-catalyst
+    page_title: Mac Catalyst
+    section_path:
+      - Mac Catalyst
+      - Platform considerations
+    retrieved_at: 2026-07-21T21:56:12Z
+    source_hash: d58541893bba807a66ddb3c64bc4d779b5cedcc4a4518aae1c57732239340cdf
+    source_sentence_hash: a1f9f5fc7c47fb7e1cd95d7a945df71e41a42269ab9011dc4f99df8721cdd049
+    evidence_paraphrase: Avoid using Mac Catalyst on iOS, tvOS, visionOS, or watchOS.
+  tags:
+    - technologies
+    - mac-catalyst
+    - platform-considerations
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid using Mac Catalyst on iOS, tvOS, visionOS, or watchOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-MACHINE-LEARNING-0001
   title: Always make providing explicit feedback a voluntary task

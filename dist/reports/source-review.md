@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1643
-- Reviewed batches: 108
+- Reviewed rules: 1676
+- Reviewed batches: 109
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:50:28Z
+- Reviewed at: 2026-07-21T21:56:12Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1576,6 +1576,39 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0042 · high — Recovered both required information types and all three presentation qualities. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0043 · high — Preserved the source's optional layout framing and recorded one-tap and scrolling relationships. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0044 · high — Preserved the optional alternative layout and its compactness and selected-option feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0001 · high — Retained the explicit Make sure MUST and narrowed it to the Mac-idiom rendering context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0002 · high — Retained the Make sure MUST and the explicit View-menu technique. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0003 · high — Recorded the documented controls, modalities, and gesture alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0004 · high — Recorded both platform-specific rendering and cross-platform continuity. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0005 · high — Preserved Consider and separated the mandatory menu-command follow-up. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0006 · high — Separated the direct size-class guidance from optional side-by-side reflow. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0007 · high — Recorded both the placement and the popover alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0008 · high — Preserved the practicability qualifier and top-of-window hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0009 · high — Recovered both keyboard expectations from the suitability context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0010 · high — Recorded the suitability boundary and all documented example capability groups. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0011 · high — Preserved the prerequisite and optional strength plus the documented benefits. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0012 · high — Recovered both the audit and change-planning actions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0013 · high — Preserved Consider and the non-reuse alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0014 · high — Recorded the 100% rendering context and conditional adjustment. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0015 · high — Preserved the wherever-possible qualifier. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0016 · high — Separated the fixed-font avoidance from positive text-style guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0017 · high — Recovered the view and layout dimensions omitted by the adjacent font-only rule. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0018 · high — Recorded the compatibility boundary and unavailable-customization rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0019 · high — Recovered MUST from the explicit need-to-ensure directive and retained the essential beyond-layout condition. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0020 · high — Recorded the ordering constraint before view-level adaptation. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0021 · high — Preserved the tab-bar condition, both alternatives, and Consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0022 · high — Recorded the general preference and the documented flat-hierarchy exception. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0023 · high — Recovered the omitted column transformation and its wide-screen purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0024 · high — Split the optional reflow clause from the direct size-class guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0025 · high — Recovered the conditional MUST from the explicit Be sure to list directive. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0026 · high — Recovered the conditional toolbar-placement action. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0027 · high — Recorded the missing relocation lead, removed iPad reachability assumptions, and preserved both destinations. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0028 · high — Recovered the platform convention without raising an expectation statement to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0029 · high — Recorded the source's implementation mechanism and purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0030 · high — Recorded both APIs and the add/remove custom-menu scope. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0031 · high — Preserved Consider and separated automatic conversion from new design work. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0032 · high — Recorded action relevance while avoiding an unconditional every-object rule. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0033 · high — Recorded the descriptive platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-NFC-0001 · high — Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0002 · high — Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0003 · high — Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))

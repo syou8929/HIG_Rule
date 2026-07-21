@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T21:50:28Z",
+  "reviewed_at": "2026-07-21T21:56:12Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,34 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 277,
+  "reviewed_rule_count": 279,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-MAC-CATALYST-0019": {
+      "title": "Ensure a rich Mac Catalyst experience",
+      "statement": {
+        "en": "Ensure a Mac Catalyst app provides a rich Mac experience beyond placing an iPadOS layout in a Mac window.",
+        "ja": "Mac Catalyst appでiPadOS layoutをMac windowに置くだけではないrichなMac experienceを提供する。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "review_note": "Recovered MUST from the explicit need-to-ensure directive and retained the essential beyond-layout condition."
+    },
+    "HIG-TECHNOLOGIES-MAC-CATALYST-0025": {
+      "title": "List toolbar commands in Mac menu-bar menus",
+      "statement": {
+        "en": "List every command associated with a moved toolbar control in the Mac app's menu-bar menus.",
+        "ja": "toolbarへ移したcontrolに関連する全commandをMac appのmenu-bar menuに掲載する。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["An iPad main-interface control moves into the Mac toolbar."],
+      "review_note": "Recovered the conditional MUST from the explicit Be sure to list directive."
+    },
     "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034": {
       "title": "Clarify watchOS functionality and content differences",
       "statement": {

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T21:54:30.187Z. 2603 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:03:18.882Z. 2628 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2659,14 +2659,39 @@ Generated 2026-07-21T21:54:30.187Z. 2603 active rules; 4 deprecated rules.
 - **HIG-TECHNOLOGIES-LIVE-PHOTOS-0006 · SHOULD · low** — Clearly indicate when a Live Photo is downloading and when the photo is playable. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
 ### mac-catalyst
 
-- **HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · medium** — Verify that views and images look good in the Mac version of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
-- **HIG-TECHNOLOGIES-MAC-CATALYST-0002 · MUST · medium** — Verify that people retain access to important tab-bar items in the Mac version of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
-- **HIG-TECHNOLOGIES-MAC-CATALYST-0003 · SHOULD · low** — Make multiple ways to move between pages available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
-- **HIG-TECHNOLOGIES-MAC-CATALYST-0004 · SHOULD · low** — Apply the documented Mac Catalyst guidance to create a macOS version of your app icon. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
-- **HIG-TECHNOLOGIES-MAC-CATALYST-0005 · MAY · low** — Evaluate whether moving controls from the main UI of your iPad app to your Mac app’s toolbar is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
-- **HIG-TECHNOLOGIES-MAC-CATALYST-0006 · SHOULD · low** — Choose or apply the regular-width and regular-height size classes, and consider reflowing elements in the content area to a side-by-side arrangement in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
-- **HIG-TECHNOLOGIES-MAC-CATALYST-0007 · SHOULD · low** — Present an inspector UI next to the main content instead of using a popover in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
-- **HIG-TECHNOLOGIES-MAC-CATALYST-0008 · SHOULD · low** — Adopt a top-down flow wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · high** — Make sure views and images look good when the app uses the Mac idiom. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0002 · MUST · high** — Make sure important iPad tab-bar items remain quickly accessible in the Mac app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0003 · SHOULD · high** — Offer multiple ways to move between pages in the Mac app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0004 · SHOULD · high** — Create a macOS version of the app icon for the Mac Catalyst app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0005 · MAY · high** — Consider moving controls from the iPad app's main interface to the Mac app toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0006 · SHOULD · high** — Use the regular-width and regular-height size classes in the Mac app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0007 · SHOULD · high** — Present Mac inspector UI beside the main content instead of in a popover. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0008 · SHOULD · high** — Wherever practicable, adopt a top-down flow in the Mac app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0009 · SHOULD · high** — Support both keyboard navigation and keyboard shortcuts in the Mac app. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0010 · AVOID · high** — Avoid Mac Catalyst when the essential experience depends on capabilities unavailable on Mac. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0011 · MAY · high** — When the iPad idiom already feels at home on Mac, consider switching to the Mac idiom. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0012 · SHOULD · high** — Thoroughly audit the app layout and plan necessary changes when adopting the Mac idiom. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0013 · MAY · high** — Consider a separate asset catalog for Mac app assets instead of reusing the iPad catalog. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0014 · SHOULD · high** — Adjust font sizes as needed when the app uses the Mac idiom. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0015 · SHOULD · high** — Use text styles wherever possible in the Mac idiom. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0016 · AVOID · high** — Avoid fixed font sizes in the Mac idiom. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0017 · AVOID · high** — Avoid fixed view and layout sizes in the Mac idiom. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0018 · SHOULD · high** — Limit appearance customizations to standard macOS options that are the same as or similar to iPadOS options. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0019 · MUST · high** — Ensure a Mac Catalyst app provides a rich Mac experience beyond placing an iPadOS layout in a Mac window. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0020 · SHOULD · high** — Become familiar with key iPadOS and macOS differences before adapting specific views and controls. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0021 · MAY · high** — When the iPad app uses a tab bar, consider a Mac split view with a sidebar or a segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0022 · SHOULD · high** — Prefer a Mac split view over a segmented control unless the app uses a flat navigation hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0023 · SHOULD · high** — Divide a single iPad content-and-actions column into multiple Mac columns where appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0024 · MAY · high** — As the Mac window resizes, consider reflowing content elements into a side-by-side arrangement. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0025 · MUST · high** — List every command associated with a moved toolbar control in the Mac app's menu-bar menus. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0026 · SHOULD · high** — Place controls from an iPad toolbar in the Mac version's window toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0027 · SHOULD · high** — Relocate Mac buttons away from the side and bottom screen edges. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0028 · SHOULD · high** — Provide all Mac app commands in the persistent menu bar. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0029 · SHOULD · high** — Use UIKeyCommand to support keyboard shortcuts for menu commands. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0030 · SHOULD · high** — Use UIMenuBuilder and UICommand to add or remove custom Mac app menus and commands. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0031 · MAY · high** — Consider additional Mac objects that could support context menus. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0032 · SHOULD · high** — Provide context menus with relevant actions for suitable Mac objects. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- **HIG-TECHNOLOGIES-MAC-CATALYST-0033 · AVOID · high** — Avoid using Mac Catalyst on iOS, tvOS, visionOS, or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 ### machine-learning
 
 - **HIG-TECHNOLOGIES-MACHINE-LEARNING-0001 · MUST · medium** — Make providing explicit feedback a voluntary task in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))

@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 277
-- Retained MUST: 254
+- Reviewed rules: 279
+- Retained MUST: 256
 - Retained MUST_NOT: 23
-- Normative level changes: 44
+- Normative level changes: 46
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:50:28Z
+- Reviewed at: 2026-07-21T21:56:12Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -204,6 +204,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034 — Changed SHOULD to MUST from the conditional Be sure directive and narrowed the rule to actual cross-device differences. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0036 — Recovered MUST from the explicit needs-to requirement for cross-version subscription-information parity. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041 — Recovered the purchase-decision MUST from the explicit need-to-understand statement. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0019 — Recovered MUST from the explicit need-to-ensure directive and retained the essential beyond-layout condition. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0025 — Recovered the conditional MUST from the explicit Be sure to list directive. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-NFC-0012 — Recovered MUST from the explicit must still provide requirement for an in-app scanning fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
@@ -475,6 +477,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0041 · MUST · retained_with_atomicity_or_scope_correction — Recovered the purchase-decision MUST from the explicit need-to-understand statement. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to-ensure directive and retained the essential beyond-layout condition. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAC-CATALYST-0025 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional MUST from the explicit Be sure to list directive. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 · MUST · retained_with_atomicity_or_scope_correction — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0015 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))

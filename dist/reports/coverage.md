@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2603
+- Active atomic rules: 2628
 - Pages without rules: 16
-- Low-confidence rules: 883
-- Rules requiring human review: 883
-- Reference notes: 917
+- Low-confidence rules: 877
+- Rules requiring human review: 877
+- Reference notes: 914
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 720
+- technologies: 745
 
 ## Normative levels
 
-- AVOID: 348
-- MAY: 316
-- MUST: 254
+- AVOID: 352
+- MAY: 321
+- MUST: 256
 - MUST_NOT: 23
-- SHOULD: 1662
+- SHOULD: 1676
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1725
-- ipados: 1674
-- macos: 1410
-- tvos: 1110
-- visionos: 1453
-- watchos: 1175
+- ios: 1726
+- ipados: 1698
+- macos: 1434
+- tvos: 1111
+- visionos: 1454
+- watchos: 1176
 
 ## Rules by testability
 
-- hybrid: 68
-- manual: 2535
+- hybrid: 70
+- manual: 2558
 
 ## Blocked pages
 
@@ -789,12 +789,6 @@ None.
 - HIG-TECHNOLOGIES-LIVE-PHOTOS-0004
 - HIG-TECHNOLOGIES-LIVE-PHOTOS-0005
 - HIG-TECHNOLOGIES-LIVE-PHOTOS-0006
-- HIG-TECHNOLOGIES-MAC-CATALYST-0003
-- HIG-TECHNOLOGIES-MAC-CATALYST-0004
-- HIG-TECHNOLOGIES-MAC-CATALYST-0005
-- HIG-TECHNOLOGIES-MAC-CATALYST-0006
-- HIG-TECHNOLOGIES-MAC-CATALYST-0007
-- HIG-TECHNOLOGIES-MAC-CATALYST-0008
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0002
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0003
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0004
@@ -1675,12 +1669,6 @@ None.
 - HIG-TECHNOLOGIES-LIVE-PHOTOS-0004
 - HIG-TECHNOLOGIES-LIVE-PHOTOS-0005
 - HIG-TECHNOLOGIES-LIVE-PHOTOS-0006
-- HIG-TECHNOLOGIES-MAC-CATALYST-0003
-- HIG-TECHNOLOGIES-MAC-CATALYST-0004
-- HIG-TECHNOLOGIES-MAC-CATALYST-0005
-- HIG-TECHNOLOGIES-MAC-CATALYST-0006
-- HIG-TECHNOLOGIES-MAC-CATALYST-0007
-- HIG-TECHNOLOGIES-MAC-CATALYST-0008
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0002
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0003
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0004
@@ -2298,10 +2286,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/lockups · Lockups > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/lockups · Lockups > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Integrate the Mac experience — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Integrate the Mac experience > Inputs — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Integrate the Mac experience > Menus — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
