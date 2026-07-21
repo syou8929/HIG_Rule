@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:39:29.664Z. 2680 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:41:54.476Z. 2680 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -626,7 +626,7 @@ Generated 2026-07-21T22:39:29.664Z. 2680 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-LAUNCHING-0001 · SHOULD · low** — Apply the documented Launching guidance to design a launch screen that’s nearly identical to the first screen of your app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - **HIG-PATTERNS-LAUNCHING-0002 · AVOID · low** — Exclude including text on your launch screen, even if your first screen displays text from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - **HIG-PATTERNS-LAUNCHING-0003 · AVOID · low** — Exclude advertise from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
-- **HIG-PATTERNS-LAUNCHING-0004 · MAY · low** — Evaluate whether launching in the Shared Space even if your app is fully immersive is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0004 · MAY · high** — Consider launching a fully immersive visionOS app in the Shared Space first. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - **HIG-PATTERNS-LAUNCHING-0005 · MAY · low** — When you need a splash screen, consider displaying it at the beginning of your onboarding flow. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 ### live-viewing-apps
 

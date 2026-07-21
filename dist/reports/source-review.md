@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1760
-- Reviewed batches: 119
+- Reviewed rules: 1761
+- Reviewed batches: 120
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:38:17Z
+- Reviewed at: 2026-07-21T22:41:11Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1201,6 +1201,7 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-GOING-FULL-SCREEN-0009 · high — Split the standard-control preference and recorded all three system entry methods. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0010 · high — Split the direct custom-menu avoidance from the positive standard-control preference. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0011 · high — Separated the game-specific optional toggle without promoting its might-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-LAUNCHING-0004 · high — Preserved the source's Consider strength and recorded the contextual-loading and user-controlled-transition rationale without promoting it to a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LOADING-0001 · high — Recorded the blank-state failure interpretation and separated optional placeholder forms. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0002 · high — Recorded background loading as the mechanism for continued interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0003 · high — Retained MAY and recorded both the standard default and game-style rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:38:17Z",
+  "reviewed_at": "2026-07-21T22:41:11Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2751,9 +2751,26 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/entering-data", "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29"}],
       "rule_ids": ["HIG-PATTERNS-ENTERING-DATA-0004"],
       "review_note": "Completed the macOS section, preserved the stable expansion-tooltip MAY decision, recorded its clipped-field, pointer-hover, and Mac-hosted iOS or iPadOS app conditions, and did not infer editing behavior absent from the source."
+    },
+    {
+      "id": "priority-4-launching-visionos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:41:11Z",
+      "review_method": "Rendered Apple HIG Launching platform overview and complete visionOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/launching", "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456"}],
+      "rule_ids": ["HIG-PATTERNS-LAUNCHING-0004"],
+      "review_note": "Completed the visionOS section, preserved the stable Shared Space launch decision at MAY, and recorded its context, loading, Full Space control, and user-chosen transition purposes without creating unsupported obligations."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-LAUNCHING-0004": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "75e60cfc2e7e3a298cf4131423f4ac67cba3d6cce75e5d4e7bda5b83e23add1a", "section_path": ["Launching", "Platform considerations", "visionOS"]},
+      "title": "Consider launching an immersive visionOS app in the Shared Space",
+      "statement": {"en": "Consider launching a fully immersive visionOS app in the Shared Space first.", "ja": "fully immersiveなvisionOS appでも最初にShared Spaceでlaunchすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A Shared Space window can provide context while the app or game loads.", "The window can provide a control for entering the fully immersive experience.", "Preserve people's choice of when to transition to a Full Space, especially while other apps are running."],
+      "review_note": "Preserved the source's Consider strength and recorded the contextual-loading and user-controlled-transition rationale without promoting it to a requirement."
+    },
     "HIG-PATTERNS-ENTERING-DATA-0004": {
       "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "501285d414293459ef5043bb7b866edcdd7ab43354ab5aab43392572b75797db", "section_path": ["Entering data", "Platform considerations", "macOS"]},
       "title": "Consider an expansion tooltip for clipped macOS field text",
