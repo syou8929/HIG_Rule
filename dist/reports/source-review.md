@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1676
-- Reviewed batches: 109
+- Reviewed rules: 1679
+- Reviewed batches: 110
 - Official source only: yes
-- Reviewed at: 2026-07-21T21:56:12Z
+- Reviewed at: 2026-07-21T22:04:11Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1609,6 +1609,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-MAC-CATALYST-0031 · high — Preserved Consider and separated automatic conversion from new design work. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0032 · high — Recorded action relevance while avoiding an unconditional every-object rule. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0033 · high — Recorded the descriptive platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
+- HIG-TECHNOLOGIES-MAPS-0016 · high — Recorded the static-map context and kept the positive region-selection guidance at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0021 · high — Recovered MUST from the explicit needs-to-be-visible requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0022 · high — Recovered MUST from the explicit all-key-content must-be-visible clause. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-NFC-0001 · high — Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0002 · high — Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0003 · high — Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))

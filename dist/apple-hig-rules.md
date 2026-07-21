@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:03:18.882Z. 2628 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:05:54.966Z. 2630 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2755,11 +2755,13 @@ Generated 2026-07-21T22:03:18.882Z. 2628 active rules; 4 deprecated rules.
 - **HIG-TECHNOLOGIES-MAPS-0013 · SHOULD · low** — Apply the documented Maps guidance to include surrounding areas to provide context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0014 · MAY · low** — Evaluate whether supporting navigation between your venue and nearby transit points is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0015 · SHOULD · low** — Apply the documented Maps guidance to design an indoor map that feels like a natural extension of your app. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
-- **HIG-TECHNOLOGIES-MAPS-0016 · SHOULD · low** — Present the smallest region that encompasses the points of interest in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- **HIG-TECHNOLOGIES-MAPS-0016 · SHOULD · high** — Show the smallest watchOS map region that encompasses the points of interest. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0017 · SHOULD · low** — Choose or apply adequate padding to separate the logo and link from the map boundaries and your custom controls. For example, in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0018 · AVOID · low** — Exclude causing the logo and link to move with your interface. It’s best when the Apple logo and legal from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0019 · SHOULD · low** — Clearly identify elements that people select. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - **HIG-TECHNOLOGIES-MAPS-0020 · MAY · low** — When you want to display custom information that’s related to standard map features, consider making them independently selectable. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- **HIG-TECHNOLOGIES-MAPS-0021 · MUST · high** — Ensure the entire watchOS map interface element is visible without scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- **HIG-TECHNOLOGIES-MAPS-0022 · MUST · high** — Ensure all key watchOS map content is visible within the displayed region. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 ### nfc
 
 - **HIG-TECHNOLOGIES-NFC-0001 · AVOID · high** — Avoid telling people to touch or tap a physical object when scanning an NFC tag. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))

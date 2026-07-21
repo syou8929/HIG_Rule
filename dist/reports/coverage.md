@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2628
+- Active atomic rules: 2630
 - Pages without rules: 16
-- Low-confidence rules: 877
-- Rules requiring human review: 877
+- Low-confidence rules: 876
+- Rules requiring human review: 876
 - Reference notes: 914
 
 ## Rules by category
@@ -18,13 +18,13 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 745
+- technologies: 747
 
 ## Normative levels
 
 - AVOID: 352
 - MAY: 321
-- MUST: 256
+- MUST: 258
 - MUST_NOT: 23
 - SHOULD: 1676
 
@@ -36,12 +36,12 @@
 - macos: 1434
 - tvos: 1111
 - visionos: 1454
-- watchos: 1176
+- watchos: 1178
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2558
+- manual: 2560
 
 ## Blocked pages
 
@@ -840,7 +840,6 @@ None.
 - HIG-TECHNOLOGIES-MAPS-0013
 - HIG-TECHNOLOGIES-MAPS-0014
 - HIG-TECHNOLOGIES-MAPS-0015
-- HIG-TECHNOLOGIES-MAPS-0016
 - HIG-TECHNOLOGIES-MAPS-0017
 - HIG-TECHNOLOGIES-MAPS-0018
 - HIG-TECHNOLOGIES-MAPS-0019
@@ -1720,7 +1719,6 @@ None.
 - HIG-TECHNOLOGIES-MAPS-0013
 - HIG-TECHNOLOGIES-MAPS-0014
 - HIG-TECHNOLOGIES-MAPS-0015
-- HIG-TECHNOLOGIES-MAPS-0016
 - HIG-TECHNOLOGIES-MAPS-0017
 - HIG-TECHNOLOGIES-MAPS-0018
 - HIG-TECHNOLOGIES-MAPS-0019
