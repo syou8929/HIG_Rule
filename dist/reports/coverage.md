@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2630
+- Active atomic rules: 2655
 - Pages without rules: 16
-- Low-confidence rules: 876
-- Rules requiring human review: 876
-- Reference notes: 914
+- Low-confidence rules: 866
+- Rules requiring human review: 866
+- Reference notes: 913
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 219
 - patterns: 360
-- technologies: 747
+- technologies: 772
 
 ## Normative levels
 
-- AVOID: 352
-- MAY: 321
-- MUST: 258
+- AVOID: 354
+- MAY: 325
+- MUST: 264
 - MUST_NOT: 23
-- SHOULD: 1676
+- SHOULD: 1689
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1726
-- ipados: 1698
-- macos: 1434
-- tvos: 1111
-- visionos: 1454
-- watchos: 1178
+- ios: 1750
+- ipados: 1722
+- macos: 1435
+- tvos: 1112
+- visionos: 1455
+- watchos: 1179
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2560
+- manual: 2585
 
 ## Blocked pages
 
@@ -848,16 +848,6 @@ None.
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0002
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0003
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0004
-- HIG-TECHNOLOGIES-RESEARCHKIT-0002
-- HIG-TECHNOLOGIES-RESEARCHKIT-0004
-- HIG-TECHNOLOGIES-RESEARCHKIT-0005
-- HIG-TECHNOLOGIES-RESEARCHKIT-0006
-- HIG-TECHNOLOGIES-RESEARCHKIT-0007
-- HIG-TECHNOLOGIES-RESEARCHKIT-0008
-- HIG-TECHNOLOGIES-RESEARCHKIT-0009
-- HIG-TECHNOLOGIES-RESEARCHKIT-0010
-- HIG-TECHNOLOGIES-RESEARCHKIT-0011
-- HIG-TECHNOLOGIES-RESEARCHKIT-0013
 - HIG-TECHNOLOGIES-SHAREPLAY-0001
 - HIG-TECHNOLOGIES-SHAREPLAY-0002
 - HIG-TECHNOLOGIES-SHAREPLAY-0003
@@ -1727,16 +1717,6 @@ None.
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0002
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0003
 - HIG-TECHNOLOGIES-PHOTO-EDITING-0004
-- HIG-TECHNOLOGIES-RESEARCHKIT-0002
-- HIG-TECHNOLOGIES-RESEARCHKIT-0004
-- HIG-TECHNOLOGIES-RESEARCHKIT-0005
-- HIG-TECHNOLOGIES-RESEARCHKIT-0006
-- HIG-TECHNOLOGIES-RESEARCHKIT-0007
-- HIG-TECHNOLOGIES-RESEARCHKIT-0008
-- HIG-TECHNOLOGIES-RESEARCHKIT-0009
-- HIG-TECHNOLOGIES-RESEARCHKIT-0010
-- HIG-TECHNOLOGIES-RESEARCHKIT-0011
-- HIG-TECHNOLOGIES-RESEARCHKIT-0013
 - HIG-TECHNOLOGIES-SHAREPLAY-0001
 - HIG-TECHNOLOGIES-SHAREPLAY-0002
 - HIG-TECHNOLOGIES-SHAREPLAY-0003
@@ -2462,7 +2442,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/remotes · Remotes > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/remotes · Remotes > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/researchkit · ResearchKit > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/researchkit · ResearchKit > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/researchkit · ResearchKit > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/researchkit · ResearchKit > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/researchkit · ResearchKit > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

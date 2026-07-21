@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:04:11Z",
+  "reviewed_at": "2026-07-21T22:10:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2664,9 +2664,174 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/maps", "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900"}],
       "rule_ids": ["HIG-TECHNOLOGIES-MAPS-0016", "HIG-TECHNOLOGIES-MAPS-0021", "HIG-TECHNOLOGIES-MAPS-0022"],
       "review_note": "Completed the watchOS section, preserved one stable ID, recovered two atomic visibility requirements, and retained both new MUST decisions from explicit needs-to and must language."
+    },
+    {
+      "id": "priority-4-researchkit-complete-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:10:00Z",
+      "review_method": "Rendered Apple HIG ResearchKit onboarding, consent, permission, survey, task, personal-information, encouragement, and platform guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/researchkit", "source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862"}],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-RESEARCHKIT-0001", "HIG-TECHNOLOGIES-RESEARCHKIT-0002", "HIG-TECHNOLOGIES-RESEARCHKIT-0003", "HIG-TECHNOLOGIES-RESEARCHKIT-0004", "HIG-TECHNOLOGIES-RESEARCHKIT-0005", "HIG-TECHNOLOGIES-RESEARCHKIT-0006", "HIG-TECHNOLOGIES-RESEARCHKIT-0007", "HIG-TECHNOLOGIES-RESEARCHKIT-0008", "HIG-TECHNOLOGIES-RESEARCHKIT-0009", "HIG-TECHNOLOGIES-RESEARCHKIT-0010", "HIG-TECHNOLOGIES-RESEARCHKIT-0011", "HIG-TECHNOLOGIES-RESEARCHKIT-0012", "HIG-TECHNOLOGIES-RESEARCHKIT-0013",
+        "HIG-TECHNOLOGIES-RESEARCHKIT-0014", "HIG-TECHNOLOGIES-RESEARCHKIT-0015", "HIG-TECHNOLOGIES-RESEARCHKIT-0016", "HIG-TECHNOLOGIES-RESEARCHKIT-0017", "HIG-TECHNOLOGIES-RESEARCHKIT-0018", "HIG-TECHNOLOGIES-RESEARCHKIT-0019", "HIG-TECHNOLOGIES-RESEARCHKIT-0020", "HIG-TECHNOLOGIES-RESEARCHKIT-0021", "HIG-TECHNOLOGIES-RESEARCHKIT-0022", "HIG-TECHNOLOGIES-RESEARCHKIT-0023", "HIG-TECHNOLOGIES-RESEARCHKIT-0024", "HIG-TECHNOLOGIES-RESEARCHKIT-0025", "HIG-TECHNOLOGIES-RESEARCHKIT-0026", "HIG-TECHNOLOGIES-RESEARCHKIT-0027", "HIG-TECHNOLOGIES-RESEARCHKIT-0028", "HIG-TECHNOLOGIES-RESEARCHKIT-0029", "HIG-TECHNOLOGIES-RESEARCHKIT-0030", "HIG-TECHNOLOGIES-RESEARCHKIT-0031", "HIG-TECHNOLOGIES-RESEARCHKIT-0032", "HIG-TECHNOLOGIES-RESEARCHKIT-0033", "HIG-TECHNOLOGIES-RESEARCHKIT-0034", "HIG-TECHNOLOGIES-RESEARCHKIT-0035", "HIG-TECHNOLOGIES-RESEARCHKIT-0036", "HIG-TECHNOLOGIES-RESEARCHKIT-0037", "HIG-TECHNOLOGIES-RESEARCHKIT-0038"
+      ],
+      "review_note": "Completed the sensitive full-page review, preserved thirteen stable IDs, recovered twenty-five atomic rules, separated optional contact and profile features, and retained nine consent, permission, explicit-intent, or completion MUST decisions without promoting the noncritical-data avoidance to MUST_NOT."
     }
   ],
   "rules": {
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0013": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "5100d084bc54c8ed47d96149a33625ef295185200995c8b3be9c33e6b58b81b6", "section_path": ["ResearchKit", "Creating the onboarding experience", "2. Determine eligibility"]},
+      "statement": {"en": "Determine study eligibility as soon as possible.", "ja": "study eligibilityを可能な限り早く判定する。"},
+      "conditions": ["Complete eligibility before presenting consent when possible."],
+      "review_note": "Recorded the early eligibility check and its relationship to avoiding unnecessary consent steps."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0014": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "7881391b9cbb700fe609c124683ae232857bb287b70000bc64090c5fd60c298d", "section_path": ["ResearchKit", "Creating the onboarding experience", "1. Introduction"]},
+      "statement": {"en": "Clearly describe the study's subject and purpose.", "ja": "studyのsubjectとpurposeを明確に説明する。"},
+      "review_note": "Recovered both study-description dimensions from the introduction guidance."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0015": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "7881391b9cbb700fe609c124683ae232857bb287b70000bc64090c5fd60c298d", "section_path": ["ResearchKit", "Creating the onboarding experience", "1. Introduction"]},
+      "statement": {"en": "Let existing participants quickly sign in and resume an in-progress study.", "ja": "既存participantがすばやくsign inして進行中のstudyを再開できるようにする。"},
+      "conditions": ["The introduction also serves returning participants."],
+      "review_note": "Recovered the returning-participant path separately from first-time introduction content."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0016": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "c3498e3792cb1dda35ec88277352e4cb3a497f33b7cf9a86ff1ea0824ab530d8", "section_path": ["ResearchKit", "Creating the onboarding experience", "2. Determine eligibility"]},
+      "statement": {"en": "Present only eligibility requirements necessary for the study.", "ja": "studyに必要なeligibility requirementだけを提示する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Minimize the eligibility information requested from prospective participants."],
+      "review_note": "Recovered the explicit only restriction as a privacy-sensitive data-minimization MUST."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0017": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "c3498e3792cb1dda35ec88277352e4cb3a497f33b7cf9a86ff1ea0824ab530d8", "section_path": ["ResearchKit", "Creating the onboarding experience", "2. Determine eligibility"]},
+      "statement": {"en": "Describe eligibility requirements in simple, straightforward language.", "ja": "eligibility requirementをsimpleでstraightforwardなlanguageで説明する。"},
+      "review_note": "Recovered the eligibility-language quality separately from information-entry ease."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0018": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "c3498e3792cb1dda35ec88277352e4cb3a497f33b7cf9a86ff1ea0824ab530d8", "section_path": ["ResearchKit", "Creating the onboarding experience", "2. Determine eligibility"]},
+      "statement": {"en": "Make eligibility information easy to enter.", "ja": "eligibility informationを入力しやすくする。"},
+      "review_note": "Recovered the input-effort guidance as a separate eligibility rule."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0019": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "94610c6da3f51a20c2898096a255a70c66b97ae1dbc569f33b3a0218569f580b", "section_path": ["ResearchKit", "Creating the onboarding experience", "3. Get informed consent"]},
+      "statement": {"en": "Ensure the app follows applicable App Store consent requirements.", "ja": "appが該当するApp Store consent requirementに従うようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Also review applicable legal and ethics-board requirements outside this design-rule set."],
+      "review_note": "Recovered the explicit Make sure compliance directive without treating this informational page as legal advice."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0020": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "d381e537bb9898ab9a2b30527e379dca0751b933fee2977e6446ddfa3ae6fee0", "section_path": ["ResearchKit", "Creating the onboarding experience", "3. Get informed consent"]},
+      "statement": {"en": "Divide a long consent form into digestible sections.", "ja": "長いconsent formを理解しやすいsectionに分割する。"},
+      "conditions": ["Let each section focus on one aspect of the study."],
+      "review_note": "Recovered the missing Break lead and preserved the one-aspect section context."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0021": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "0a50185f9443e9a242450d9e1fb367554b037670122d8677b1542d2d5083737e", "section_path": ["ResearchKit", "Creating the onboarding experience", "3. Get informed consent"]},
+      "statement": {"en": "Use simple language for each high-level consent overview.", "ja": "各consent sectionのhigh-level overviewにsimpleなlanguageを使う。"},
+      "review_note": "Recovered the overview-language rule within long-form consent guidance."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0022": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "0a50185f9443e9a242450d9e1fb367554b037670122d8677b1542d2d5083737e", "section_path": ["ResearchKit", "Creating the onboarding experience", "3. Get informed consent"]},
+      "statement": {"en": "Provide a detailed consent explanation when necessary.", "ja": "必要な場合は詳細なconsent explanationを提供する。"},
+      "conditions": ["Let participants open the detail from the corresponding overview section."],
+      "review_note": "Preserved the source's if-necessary condition instead of making detailed text universal."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0023": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "0a50185f9443e9a242450d9e1fb367554b037670122d8677b1542d2d5083737e", "section_path": ["ResearchKit", "Creating the onboarding experience", "3. Get informed consent"]},
+      "statement": {"en": "Ensure participants can view the entire consent form before agreeing.", "ja": "participantが同意前にconsent form全体を閲覧できるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "review_note": "Recovered MUST from the explicit need-to-be-able requirement before agreement."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0024": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "f571a4d62c2bb56b2d66331586b301f2dfccfa13ba4bc64e53d067511f17ec83", "section_path": ["ResearchKit", "Creating the onboarding experience", "3. Get informed consent"]},
+      "statement": {"en": "Consider a comprehension quiz when it fits the consent process.", "ja": "consent processに適する場合はcomprehension quizを検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Preserved the source's if-it-makes-sense condition as optional guidance."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0025": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "a233e63f84539762e02bc84ea2221e207fb4d49f16b4ada66fa4efd8f6e4b614", "section_path": ["ResearchKit", "Creating the onboarding experience", "3. Get informed consent"]},
+      "statement": {"en": "Obtain the participant's consent before they join the study.", "ja": "participantがstudyへ参加する前にconsentを得る。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Complete the informed-consent flow before study participation."],
+      "review_note": "Classified the unqualified consent directive as a privacy and explicit-user-intent MUST."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0026": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "a233e63f84539762e02bc84ea2221e207fb4d49f16b4ada66fa4efd8f6e4b614", "section_path": ["ResearchKit", "Creating the onboarding experience", "3. Get informed consent"]},
+      "statement": {"en": "Consider collecting participant contact information when appropriate.", "ja": "適切な場合はparticipant contact informationの収集を検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Split optional contact information from the mandatory consent decision."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0027": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "08098d6ad1968f40fb9e7e65c0aeba43f4b288cdf85755081858d741893c8edf", "section_path": ["ResearchKit", "Creating the onboarding experience", "4. Request permission to access data"]},
+      "statement": {"en": "Obtain permission before accessing a participant's device or data.", "ja": "participantのdeviceまたはdataへaccessする前にpermissionを得る。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "review_note": "Classified the direct access-permission requirement as a privacy and explicit-user-intent MUST."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0028": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "129e3723c8a8a28bc2d07b1960a9efbef561cd5525040bd694e5531dc4581d81", "section_path": ["ResearchKit", "Creating the onboarding experience", "4. Request permission to access data"]},
+      "statement": {"en": "Clearly explain why the study needs each requested data type.", "ja": "studyが各requested data typeを必要とする理由を明確に説明する。"},
+      "review_note": "Recovered the purpose explanation separately from permission and minimization."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0029": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "129e3723c8a8a28bc2d07b1960a9efbef561cd5525040bd694e5531dc4581d81", "section_path": ["ResearchKit", "Creating the onboarding experience", "4. Request permission to access data"]},
+      "statement": {"en": "Avoid requesting access to data that isn't critical to the study.", "ja": "studyに不可欠でないdataへのaccess requestを避ける。"},
+      "normative_level": "AVOID", "polarity": "discourage", "severity": "warning",
+      "review_note": "Retained AVOID for the direct don't guidance; the source does not use Never or must not."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0030": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "129e3723c8a8a28bc2d07b1960a9efbef561cd5525040bd694e5531dc4581d81", "section_path": ["ResearchKit", "Creating the onboarding experience", "4. Request permission to access data"]},
+      "statement": {"en": "Obtain notification permission when the study requires notifications.", "ja": "studyでnotificationが必要な場合はnotification permissionを得る。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The study needs to send notifications to the participant's device."],
+      "review_note": "Retained the conditional permission requirement as an explicit-user-intent MUST."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0031": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "473662e30330c53eab20f263ff4ed27c444189350150c6d3d10af580e4cbcb78", "section_path": ["ResearchKit", "Conducting research"]},
+      "statement": {"en": "Tell participants the survey question count and estimated duration.", "ja": "participantにsurveyのquestion countとestimated durationを伝える。"},
+      "review_note": "Recovered both expectation-setting values from the survey list."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0032": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "e8b20ef87e4533208d06fc44ac541901357943af36536170c233fc22795ba7a9", "section_path": ["ResearchKit", "Conducting research"]},
+      "statement": {"en": "Use standard question text and slightly smaller explanatory text.", "ja": "questionにはstandard text、explanationには少し小さいtextを使う。"},
+      "conditions": ["The survey question needs additional explanation."],
+      "review_note": "Recovered the conditional text hierarchy without treating the relative size as an absolute measurement."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0033": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "472a5dd6fc5d9ef100a54287b3e4b5a269e26742ffa8311f4c1f98f2e4cfd88e", "section_path": ["ResearchKit", "Conducting research"]},
+      "statement": {"en": "Tell participants when a survey is complete.", "ja": "surveyが完了したことをparticipantに伝える。"},
+      "review_note": "Recovered the survey completion state separately from task completion."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0034": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "899162fc6811e09325de507d91abb1e44d9f6273daa277a564cafb1f5dfe5d80", "section_path": ["ResearchKit", "Conducting research"]},
+      "statement": {"en": "Explain task timing and circumstance requirements.", "ja": "taskのtimingとcircumstance requirementを説明する。"},
+      "review_note": "Recovered requirements that affect when or under what circumstances a task is performed."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0035": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "77401789231f9e0531ca3ffec89196cc5e7b4ff3a10ab3c85708d511c59b4b6e", "section_path": ["ResearchKit", "Managing personal information and providing encouragement"]},
+      "statement": {"en": "Keep profile and progress screens accessible throughout the app.", "ja": "profileとprogress screenをapp内で常にaccess可能にする。"},
+      "review_note": "Preserved the source's ideal framing at SHOULD rather than MUST."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0036": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "2a7d36d571e4c8dd4a1256e8bd26f6e0969cfa2c285b710be3e270c20282f9ba", "section_path": ["ResearchKit", "Managing personal information and providing encouragement"]},
+      "statement": {"en": "Consider providing an easy way to leave a study from the profile.", "ja": "profileからstudyを離脱できるeasyな方法の提供を検討する。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "review_note": "Kept the profile exit capability optional because the source presents it as something a profile can provide."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0037": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "2a7d36d571e4c8dd4a1256e8bd26f6e0969cfa2c285b710be3e270c20282f9ba", "section_path": ["ResearchKit", "Managing personal information and providing encouragement"]},
+      "statement": {"en": "Consider profile access to the consent document and privacy policy.", "ja": "profileからconsent documentとprivacy policyへaccessできるようにすることを検討する。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "review_note": "Kept document access optional because the source presents it as a profile capability."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0038": {
+      "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "2ec3f085b0c134724e9f7910d2fabc6e2faf405a8938fc1e68661571673c4197", "section_path": ["ResearchKit", "Platform considerations"]},
+      "statement": {"en": "Avoid using ResearchKit on macOS, tvOS, visionOS, or watchOS.", "ja": "macOS、tvOS、visionOS、watchOSでResearchKitを使わない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "technology-specific", "platforms": ["macos", "tvos", "visionos", "watchos"], "devices": ["mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": ["ResearchKit is supported on iOS and iPadOS."],
+      "review_note": "Recorded the descriptive platform limitation at AVOID rather than MUST_NOT."
+    },
     "HIG-TECHNOLOGIES-MAPS-0016": {
       "source": {"source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900", "source_sentence_hash": "12204427f444363a5eda9675f848f66c59175146056e8948259bd4b579840faf", "section_path": ["Maps", "Platform considerations", "watchOS"]},
       "statement": {"en": "Show the smallest watchOS map region that encompasses the points of interest.", "ja": "point of interestを包含する最小のwatchOS map regionを表示する。"},

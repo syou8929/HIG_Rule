@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:05:54.966Z. 2630 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:16:39.204Z. 2655 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2785,19 +2785,44 @@ Generated 2026-07-21T22:05:54.966Z. 2630 active rules; 4 deprecated rules.
 - **HIG-TECHNOLOGIES-PHOTO-EDITING-0004 · SHOULD · low** — Choose or apply your app icon for your photo editing extension icon in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
 ### researchkit
 
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0001 · MUST · medium** — Display the onboarding screens in the correct order in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0002 · SHOULD · low** — Make an introduction that informs and provides a call to action available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0003 · MUST · medium** — Verify that participants understand your study before you get their consent. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0004 · SHOULD · low** — Apply the documented ResearchKit guidance to create surveys that keep participants engaged. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0005 · SHOULD · low** — Apply the documented ResearchKit guidance to make active tasks easy to understand. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0006 · SHOULD · low** — Choose or apply a profile to help participants manage personal data related to your study in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0007 · SHOULD · low** — Choose or apply a dashboard to show progress and motivate participants to continue in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0008 · SHOULD · low** — Choose or apply one screen per question in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0009 · SHOULD · low** — Present participants their progress in the survey in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0010 · SHOULD · low** — Maintain the survey as short as possible. Several short surveys tend to work better than one long survey. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0011 · SHOULD · low** — Apply the documented ResearchKit guidance to describe how to perform the task using clear, simple language. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0012 · MUST · medium** — Clearly communicate when a ResearchKit task is complete. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
-- **HIG-TECHNOLOGIES-RESEARCHKIT-0013 · SHOULD · low** — Determine eligibility as soon as possible explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0001 · MUST · high** — Always display ResearchKit onboarding screens in the correct order. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0002 · SHOULD · high** — Make an introduction that informs and provides a call to action available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0003 · MUST · high** — Ensure participants understand the study before obtaining their consent. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0004 · SHOULD · high** — Apply the documented ResearchKit guidance to create surveys that keep participants engaged. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0005 · SHOULD · high** — Apply the documented ResearchKit guidance to make active tasks easy to understand. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0006 · SHOULD · high** — Choose or apply a profile to help participants manage personal data related to your study in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0007 · SHOULD · high** — Choose or apply a dashboard to show progress and motivate participants to continue in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0008 · SHOULD · high** — Choose or apply one screen per question in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0009 · SHOULD · high** — Present participants their progress in the survey in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0010 · SHOULD · high** — Maintain the survey as short as possible. Several short surveys tend to work better than one long survey. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0011 · SHOULD · high** — Apply the documented ResearchKit guidance to describe how to perform the task using clear, simple language. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0012 · MUST · high** — Clearly communicate when a ResearchKit task is complete. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0013 · SHOULD · high** — Determine study eligibility as soon as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0014 · SHOULD · high** — Clearly describe the study's subject and purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0015 · SHOULD · high** — Let existing participants quickly sign in and resume an in-progress study. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0016 · MUST · high** — Present only eligibility requirements necessary for the study. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0017 · SHOULD · high** — Describe eligibility requirements in simple, straightforward language. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0018 · SHOULD · high** — Make eligibility information easy to enter. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0019 · MUST · high** — Ensure the app follows applicable App Store consent requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0020 · SHOULD · high** — Divide a long consent form into digestible sections. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0021 · SHOULD · high** — Use simple language for each high-level consent overview. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0022 · SHOULD · high** — Provide a detailed consent explanation when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0023 · MUST · high** — Ensure participants can view the entire consent form before agreeing. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0024 · MAY · high** — Consider a comprehension quiz when it fits the consent process. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0025 · MUST · high** — Obtain the participant's consent before they join the study. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0026 · MAY · high** — Consider collecting participant contact information when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0027 · MUST · high** — Obtain permission before accessing a participant's device or data. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0028 · SHOULD · high** — Clearly explain why the study needs each requested data type. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0029 · AVOID · high** — Avoid requesting access to data that isn't critical to the study. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0030 · MUST · high** — Obtain notification permission when the study requires notifications. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0031 · SHOULD · high** — Tell participants the survey question count and estimated duration. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0032 · SHOULD · high** — Use standard question text and slightly smaller explanatory text. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0033 · SHOULD · high** — Tell participants when a survey is complete. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0034 · SHOULD · high** — Explain task timing and circumstance requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0035 · SHOULD · high** — Keep profile and progress screens accessible throughout the app. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0036 · MAY · high** — Consider providing an easy way to leave a study from the profile. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0037 · MAY · high** — Consider profile access to the consent document and privacy policy. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- **HIG-TECHNOLOGIES-RESEARCHKIT-0038 · AVOID · high** — Avoid using ResearchKit on macOS, tvOS, visionOS, or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 ### shareplay
 
 - **HIG-TECHNOLOGIES-SHAREPLAY-0001 · SHOULD · low** — Preserve people’s ability to know that you support SharePlay. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
