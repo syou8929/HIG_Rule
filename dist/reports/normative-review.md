@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 292
-- Retained MUST: 268
+- Reviewed rules: 293
+- Retained MUST: 269
 - Retained MUST_NOT: 24
-- Normative level changes: 62
+- Normative level changes: 63
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:25:00Z
+- Reviewed at: 2026-07-21T22:31:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -43,6 +43,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-SCROLL-VIEWS-0010 — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0015 — Retained MUST after confirming the conditional Make sure directive for custom scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0022 — Retained MUST after confirming the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
+- HIG-COMPONENTS-SIDEBARS-0010 — Recovered the conditional MUST from the explicit be-sure-to-prevent directive. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SPLIT-VIEWS-0012 — Recovered and retained the explicit Ensure directive with its resizable-width condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-SPLIT-VIEWS-0014 — Recovered and retained the explicit Make sure directive with its resizable-pane condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-TAB-BARS-0002 — Retained the explicit Make sure directive and its sole modal exception. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
@@ -289,6 +290,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-SCROLL-VIEWS-0015 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Make sure directive for custom scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0022 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SIDEBARS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0010 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional MUST from the explicit be-sure-to-prevent directive. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SNIPPETS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
 - HIG-COMPONENTS-SPLIT-VIEWS-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Ensure directive with its resizable-width condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-SPLIT-VIEWS-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive with its resizable-pane condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))

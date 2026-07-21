@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1750
-- Reviewed batches: 115
+- Reviewed rules: 1753
+- Reviewed batches: 116
 - Official source only: yes
-- Reviewed at: 2026-07-21T22:29:00Z
+- Reviewed at: 2026-07-21T22:31:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -404,6 +404,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SIDEBARS-0004 · high — Recorded the content-space rationale and convertible-sidebar fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0005 · high — Recorded the window-size condition and content-space purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0006 · high — Recorded the window-position visibility risk. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0007 · high — Preserved the deep-hierarchy condition and the sidebar's secondary-navigation role. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0009 · high — Recorded the descriptive watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0010 · high — Recovered the conditional MUST from the explicit be-sure-to-prevent directive. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SLIDERS-0003 · high — Repaired the ungrammatical generated statement and recorded the volume-view replacement. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0004 · high — Preserved the optional strength and recorded the real-time feedback intent. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0005 · high — Corrected the possessive and recorded the linear-versus-circular mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))

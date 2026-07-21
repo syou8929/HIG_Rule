@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T22:30:35.832Z. 2675 active rules; 4 deprecated rules.
+Generated 2026-07-21T22:32:37.032Z. 2677 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1567,8 +1567,10 @@ Generated 2026-07-21T22:30:35.832Z. 2675 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-SIDEBARS-0004 · MAY · high** — Consider using a tab bar first in iOS or iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0005 · MAY · high** — Consider automatically hiding or revealing a macOS sidebar as its window resizes. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0006 · AVOID · high** — Avoid placing critical information or actions at the bottom of a macOS sidebar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
-- **HIG-COMPONENTS-SIDEBARS-0007 · MAY · low** — When your app’s hierarchy is deep, consider using a sidebar within a tab in a tab bar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0007 · MAY · high** — Consider a sidebar within a visionOS tab for deep hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0008 · SHOULD · low** — When you need to include two levels of hierarchy in a sidebar, use succinct, descriptive labels to title each. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0009 · AVOID · high** — Avoid using sidebars on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0010 · MUST · high** — Ensure sidebar selections don't change the currently open visionOS tab. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 ### sliders
 
 - **HIG-COMPONENTS-SLIDERS-0001 · SHOULD · low** — Choose or apply familiar slider directions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))

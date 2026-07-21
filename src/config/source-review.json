@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T22:29:00Z",
+  "reviewed_at": "2026-07-21T22:31:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2715,9 +2715,42 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons", "source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735"}],
       "rule_ids": ["HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0007"],
       "review_note": "Completed the iOS and iPadOS section, preserved the stable More-button MAY decision with its space and discoverability tradeoff, and recovered the tvOS and watchOS platform limitation at AVOID."
+    },
+    {
+      "id": "priority-4-sidebars-visionos-context-2026-07-21",
+      "reviewed_at": "2026-07-21T22:31:00Z",
+      "review_method": "Rendered Apple HIG Sidebars platform overview and complete visionOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/sidebars", "source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2"}],
+      "rule_ids": ["HIG-COMPONENTS-SIDEBARS-0007", "HIG-COMPONENTS-SIDEBARS-0009", "HIG-COMPONENTS-SIDEBARS-0010"],
+      "review_note": "Completed the visionOS section, preserved the stable deep-hierarchy MAY rule, recovered the watchOS platform limitation, and split the explicit current-tab-preservation MUST from optional sidebar placement."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-SIDEBARS-0007": {
+      "source": {"source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2", "source_sentence_hash": "48d2c2f742d2e82489801b62e1a40af2660fe0cf9ba3f94598d95d88ac27bd94", "section_path": ["Sidebars", "Platform considerations", "visionOS"]},
+      "title": "Consider a sidebar within a visionOS tab for deep hierarchy",
+      "statement": {"en": "Consider a sidebar within a visionOS tab for deep hierarchy.", "ja": "deep hierarchyにはvisionOS tab内のsidebarを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Use the sidebar for secondary navigation within the tab."],
+      "review_note": "Preserved the deep-hierarchy condition and the sidebar's secondary-navigation role."
+    },
+    "HIG-COMPONENTS-SIDEBARS-0009": {
+      "source": {"source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2", "source_sentence_hash": "d4d6f0dc882fc55ec59eeea98d54081deedeefe1ba7e379e012f31d6718d6253", "section_path": ["Sidebars", "Platform considerations"]},
+      "statement": {"en": "Avoid using sidebars on watchOS.", "ja": "watchOSでsidebarを使わない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["sidebars"], "modalities": []},
+      "conditions": ["Sidebars have no additional considerations for tvOS."],
+      "review_note": "Recorded the descriptive watchOS limitation at AVOID rather than MUST_NOT."
+    },
+    "HIG-COMPONENTS-SIDEBARS-0010": {
+      "source": {"source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2", "source_sentence_hash": "ac11fa8a54b320e5b566b342af933f658439fc1688c8c2ba7ae563f7ff59fb83", "section_path": ["Sidebars", "Platform considerations", "visionOS"]},
+      "title": "Keep visionOS sidebar selections within the current tab",
+      "statement": {"en": "Ensure sidebar selections don't change the currently open visionOS tab.", "ja": "sidebar selectionで現在開いているvisionOS tabを変更しない。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["A sidebar provides secondary navigation within a tab."],
+      "review_note": "Recovered the conditional MUST from the explicit be-sure-to-prevent directive."
+    },
     "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006": {
       "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "90b2fad248c72dda9ce7c538d9e6c1277314d0534314866ed3e563585d16f259", "section_path": ["Pull-down buttons", "Platform considerations", "iOS, iPadOS"]},
       "title": "Consider a More pull-down button for nonprominent items",

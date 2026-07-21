@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2675
+- Active atomic rules: 2677
 - Pages without rules: 16
-- Low-confidence rules: 854
-- Rules requiring human review: 854
-- Reference notes: 909
+- Low-confidence rules: 853
+- Rules requiring human review: 853
+- Reference notes: 908
 
 ## Rules by category
 
-- components: 862
+- components: 864
 - foundations: 346
 - getting-started: 100
 - inputs: 219
@@ -22,9 +22,9 @@
 
 ## Normative levels
 
-- AVOID: 360
+- AVOID: 361
 - MAY: 329
-- MUST: 268
+- MUST: 269
 - MUST_NOT: 24
 - SHOULD: 1694
 
@@ -35,13 +35,13 @@
 - ipados: 1722
 - macos: 1436
 - tvos: 1115
-- visionos: 1470
-- watchos: 1182
+- visionos: 1471
+- watchos: 1183
 
 ## Rules by testability
 
 - hybrid: 70
-- manual: 2605
+- manual: 2607
 
 ## Blocked pages
 
@@ -208,7 +208,6 @@ None.
 - HIG-COMPONENTS-SHEETS-0014
 - HIG-COMPONENTS-SIDEBARS-0001
 - HIG-COMPONENTS-SIDEBARS-0002
-- HIG-COMPONENTS-SIDEBARS-0007
 - HIG-COMPONENTS-SIDEBARS-0008
 - HIG-COMPONENTS-SLIDERS-0001
 - HIG-COMPONENTS-SLIDERS-0002
@@ -1065,7 +1064,6 @@ None.
 - HIG-COMPONENTS-SHEETS-0014
 - HIG-COMPONENTS-SIDEBARS-0001
 - HIG-COMPONENTS-SIDEBARS-0002
-- HIG-COMPONENTS-SIDEBARS-0007
 - HIG-COMPONENTS-SIDEBARS-0008
 - HIG-COMPONENTS-SLIDERS-0001
 - HIG-COMPONENTS-SLIDERS-0002
@@ -2467,7 +2465,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
