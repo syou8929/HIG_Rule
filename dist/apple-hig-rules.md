@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T16:24:48.766Z. 2197 active rules; 3 deprecated rules.
+Generated 2026-07-21T16:27:18.726Z. 2199 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -976,9 +976,11 @@ Generated 2026-07-21T16:24:48.766Z. 2197 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-COLOR-WELLS-0001 · MAY · low** — Evaluate whether the system-provided color picker for a familiar experience is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/color-wells))
 ### column-views
 
-- **HIG-COMPONENTS-COLUMN-VIEWS-0001 · SHOULD · low** — Present the root level of your data hierarchy in the first column in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
-- **HIG-COMPONENTS-COLUMN-VIEWS-0002 · MAY · low** — Evaluate whether showing information about the selected item when there are no nested items to display is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
-- **HIG-COMPONENTS-COLUMN-VIEWS-0003 · SHOULD · low** — Preserve people’s ability to resize columns. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- **HIG-COMPONENTS-COLUMN-VIEWS-0001 · SHOULD · high** — Present the root level of your data hierarchy in the first column in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- **HIG-COMPONENTS-COLUMN-VIEWS-0002 · MAY · high** — Evaluate whether showing information about the selected item when there are no nested items to display is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- **HIG-COMPONENTS-COLUMN-VIEWS-0003 · SHOULD · high** — Preserve people’s ability to resize columns. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- **HIG-COMPONENTS-COLUMN-VIEWS-0004 · MAY · high** — Evaluate whether a column view for deep frequently traversed hierarchies without sorting needs is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- **HIG-COMPONENTS-COLUMN-VIEWS-0005 · MAY · high** — Consider a split view for presenting hierarchical content on iPadOS or visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
 ### combo-boxes
 
 - **HIG-COMPONENTS-COMBO-BOXES-0001 · SHOULD · low** — Choose or apply an introductory label to let people know what types of items to expect in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))

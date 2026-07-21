@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 933
-- Reviewed batches: 57
+- Reviewed rules: 938
+- Reviewed batches: 58
 - Official source only: yes
-- Reviewed at: 2026-07-21T16:24:29Z
+- Reviewed at: 2026-07-21T16:26:48Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -96,6 +96,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-COLLECTIONS-0010 · high — Reviewed the rendered source context for “Make sure dynamic collection changes make sense” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0011 · high — Reviewed the rendered source context for “Make sure dynamic collection changes remain easy to track” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0012 · high — Reviewed the rendered source context for “Avoid dynamic layout changes during viewing or interaction when possible” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLUMN-VIEWS-0001 · high — Reviewed the rendered source context for “Show the root level of your data hierarchy in the first column” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- HIG-COMPONENTS-COLUMN-VIEWS-0002 · high — Reviewed the rendered source context for “Consider showing information about the selected item when there are no nested items to display” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- HIG-COMPONENTS-COLUMN-VIEWS-0003 · high — Reviewed the rendered source context for “Let people resize columns” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- HIG-COMPONENTS-COLUMN-VIEWS-0004 · high — Reviewed the rendered source context for “Consider a column view for deep frequently traversed hierarchies without sorting needs” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
+- HIG-COMPONENTS-COLUMN-VIEWS-0005 · high — Reviewed the rendered source context for “Consider a split view for hierarchical content on iPadOS or visionOS” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
 - HIG-COMPONENTS-COMPLICATIONS-0001 · high — Preserved the when-possible qualification and the official fallback for unsupported information layouts. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0002 · medium — Reviewed watchOS complication coverage, privacy, visual encoding, placeholder, and glanceable-content guidance in official context. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - HIG-COMPONENTS-COMPLICATIONS-0003 · high — Replaced an ungrammatical paraphrase and captured the Always-On privacy risk from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))

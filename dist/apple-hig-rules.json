@@ -11863,8 +11863,8 @@
       "ja": "該当する状況でthe root level of your data hierarchy in the first columnを表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -11881,7 +11881,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Start the macOS column view with the hierarchy’s root so people can return to the top by scrolling back."
     ],
     "exceptions": [],
     "rationale": {
@@ -11934,8 +11934,8 @@
       "ja": "showing information about the selected item when there are no nested items to displayが現在の状況に適切か検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -11952,7 +11952,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The selected macOS item is a leaf with no nested children.",
+      "A preview and metadata such as dates, type, or size may use the otherwise empty next column."
     ],
     "exceptions": [],
     "rationale": {
@@ -12005,8 +12006,8 @@
       "ja": "利用者がresize columnsできる状態を保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -12023,7 +12024,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let people widen macOS columns, especially when item names exceed the default width."
     ],
     "exceptions": [],
     "rationale": {
@@ -12063,6 +12064,148 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "Preserve people’s ability to resize columns.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-COLUMN-VIEWS-0004",
+    "title": "Consider a column view for deep frequently traversed hierarchies without sorting needs",
+    "category": "components",
+    "topic": "column-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Evaluate whether a column view for deep frequently traversed hierarchies without sorting needs is appropriate for the current context.",
+      "ja": "a column view for deep frequently traversed hierarchies without sorting needsが現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "column-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Use a macOS column view when the hierarchy is deep, people frequently move between levels, and sorting isn’t needed."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Column views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるColumn viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether a column view for deep frequently traversed hierarchies without sorting needs is appropriate for the current context.” in the documented Column views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/column-views",
+      "page_title": "Column views",
+      "section_path": [
+        "Column views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:14:44.020Z",
+      "source_hash": "e4b939f2b9d0edaf7f37ec3f0fc6d5532710575be71db36d708707eb3f6a3953",
+      "source_sentence_hash": "18b2935d7c993c4d4d91a43a25395b5583d2a734cbc270a578508a9c3ac923d5",
+      "evidence_paraphrase": "Evaluate whether a column view for deep frequently traversed hierarchies without sorting needs is appropriate for the current context."
+    },
+    "tags": [
+      "components",
+      "column-views",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether a column view for deep frequently traversed hierarchies without sorting needs is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-COLUMN-VIEWS-0005",
+    "title": "Consider a split view for hierarchical iPadOS or visionOS content",
+    "category": "components",
+    "topic": "column-views",
+    "subtopic": "column-views",
+    "statement": {
+      "en": "Consider a split view for presenting hierarchical content on iPadOS or visionOS.",
+      "ja": "iPadOSまたはvisionOSで階層コンテンツを表示する場合はsplit viewを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "split-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The app presents hierarchical content on iPadOS or visionOS rather than macOS."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Column views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるColumn viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider a split view for presenting hierarchical content on iPadOS or visionOS.” in the documented Column views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/column-views",
+      "page_title": "Column views",
+      "section_path": [
+        "Column views"
+      ],
+      "retrieved_at": "2026-07-21T11:14:44.020Z",
+      "source_hash": "e4b939f2b9d0edaf7f37ec3f0fc6d5532710575be71db36d708707eb3f6a3953",
+      "source_sentence_hash": "1d65554ca0e06c7cfc13cde8247154d56e9f4a4ccf8746dfcbd9d3b2ea5a2d5d",
+      "evidence_paraphrase": "Consider a split view for presenting hierarchical content on iPadOS or visionOS."
+    },
+    "tags": [
+      "components",
+      "column-views"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Consider a split view for presenting hierarchical content on iPadOS or visionOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

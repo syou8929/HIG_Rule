@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T16:24:29Z",
+  "reviewed_at": "2026-07-21T16:26:48Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -1838,9 +1838,120 @@
         "HIG-COMPONENTS-COLLECTIONS-0012"
       ],
       "review_note": "Reviewed standard and custom layouts, textual-content alternatives, selection reachability, default and custom interactions, animation feedback, image padding, and iOS and iPadOS dynamic changes; recovered seven atomic rules."
+    },
+    {
+      "id": "priority-4-column-views-context-2026-07-21",
+      "reviewed_at": "2026-07-21T16:26:48Z",
+      "review_method": "Rendered Apple HIG Column views guidance, supporting prose, selection criteria, leaf-item behavior, resize rationale, and platform note were reviewed; two repeated live renders matched the stored main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/column-views",
+          "source_hash": "e4b939f2b9d0edaf7f37ec3f0fc6d5532710575be71db36d708707eb3f6a3953"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-COLUMN-VIEWS-0001",
+        "HIG-COMPONENTS-COLUMN-VIEWS-0002",
+        "HIG-COMPONENTS-COLUMN-VIEWS-0003",
+        "HIG-COMPONENTS-COLUMN-VIEWS-0004",
+        "HIG-COMPONENTS-COLUMN-VIEWS-0005"
+      ],
+      "review_note": "Reviewed root placement, leaf-item detail use, column resizing, column-view selection criteria, and the iPadOS and visionOS split-view alternative; recovered two atomic rules and corrected the alternative’s platform scope."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-COLUMN-VIEWS-0001": {
+      "source": {
+        "source_hash": "e4b939f2b9d0edaf7f37ec3f0fc6d5532710575be71db36d708707eb3f6a3953",
+        "source_sentence_hash": "7df3c16a090607903bed003543e7ce47c8ab948a3507229d354090ea54d63d65",
+        "section_path": [
+          "Column views",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Start the macOS column view with the hierarchy’s root so people can return to the top by scrolling back."
+      ],
+      "review_note": "Reviewed the rendered source context for “Show the root level of your data hierarchy in the first column” and recorded its hierarchy and platform conditions."
+    },
+    "HIG-COMPONENTS-COLUMN-VIEWS-0002": {
+      "source": {
+        "source_hash": "e4b939f2b9d0edaf7f37ec3f0fc6d5532710575be71db36d708707eb3f6a3953",
+        "source_sentence_hash": "b4fd5f7e6f9b42ba3af9358afcd6878a38791e8e6aefba10893c259006f0bbc5",
+        "section_path": [
+          "Column views",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "The selected macOS item is a leaf with no nested children.",
+        "A preview and metadata such as dates, type, or size may use the otherwise empty next column."
+      ],
+      "review_note": "Reviewed the rendered source context for “Consider showing information about the selected item when there are no nested items to display” and recorded its hierarchy and platform conditions."
+    },
+    "HIG-COMPONENTS-COLUMN-VIEWS-0003": {
+      "source": {
+        "source_hash": "e4b939f2b9d0edaf7f37ec3f0fc6d5532710575be71db36d708707eb3f6a3953",
+        "source_sentence_hash": "037373307c00fd6082a9a53cc5a19ce296876e8a5bcd914d47d1a4f4cd31323d",
+        "section_path": [
+          "Column views",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Let people widen macOS columns, especially when item names exceed the default width."
+      ],
+      "review_note": "Reviewed the rendered source context for “Let people resize columns” and recorded its hierarchy and platform conditions."
+    },
+    "HIG-COMPONENTS-COLUMN-VIEWS-0004": {
+      "source": {
+        "source_hash": "e4b939f2b9d0edaf7f37ec3f0fc6d5532710575be71db36d708707eb3f6a3953",
+        "source_sentence_hash": "18b2935d7c993c4d4d91a43a25395b5583d2a734cbc270a578508a9c3ac923d5",
+        "section_path": [
+          "Column views",
+          "Best practices"
+        ]
+      },
+      "conditions": [
+        "Use a macOS column view when the hierarchy is deep, people frequently move between levels, and sorting isn’t needed."
+      ],
+      "review_note": "Reviewed the rendered source context for “Consider a column view for deep frequently traversed hierarchies without sorting needs” and recorded its hierarchy and platform conditions."
+    },
+    "HIG-COMPONENTS-COLUMN-VIEWS-0005": {
+      "source": {
+        "source_hash": "e4b939f2b9d0edaf7f37ec3f0fc6d5532710575be71db36d708707eb3f6a3953",
+        "source_sentence_hash": "1d65554ca0e06c7cfc13cde8247154d56e9f4a4ccf8746dfcbd9d3b2ea5a2d5d",
+        "section_path": [
+          "Column views"
+        ]
+      },
+      "conditions": [
+        "The app presents hierarchical content on iPadOS or visionOS rather than macOS."
+      ],
+      "scope": {
+        "portability": "platform-specific",
+        "platforms": [
+          "ipados",
+          "visionos"
+        ],
+        "devices": [
+          "ipad",
+          "apple-vision-pro"
+        ],
+        "components": [
+          "split-views"
+        ],
+        "modalities": []
+      },
+      "title": "Consider a split view for hierarchical iPadOS or visionOS content",
+      "statement": {
+        "en": "Consider a split view for presenting hierarchical content on iPadOS or visionOS.",
+        "ja": "iPadOSまたはvisionOSで階層コンテンツを表示する場合はsplit viewを検討する。"
+      },
+      "review_note": "Reviewed the rendered source context for “Consider a split view for hierarchical content on iPadOS or visionOS” and recorded its hierarchy and platform conditions."
+    },
     "HIG-COMPONENTS-COLLECTIONS-0001": {
       "source": {
         "source_hash": "003d5b2118c0d5a5c0a0b2122149731bb3bbc2676441252a8b3d00a26e0fbdec",
