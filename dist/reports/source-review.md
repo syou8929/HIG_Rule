@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1094
-- Reviewed batches: 71
+- Reviewed rules: 1096
+- Reviewed batches: 72
 - Official source only: yes
-- Reviewed at: 2026-07-21T17:29:06Z
+- Reviewed at: 2026-07-21T17:32:51Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -326,6 +326,8 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-POPOVERS-0014 · high — Replaced generic generated wording with the source's context-preservation intent. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0006 · high — Restored the complete space-constrained clause and recorded the source examples. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0007 · high — Kept the qualified AVOID strength and recorded why a label is usually redundant. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-RATING-INDICATORS-0001 · high — Replaced the vague generated wording with the source-supported inline editing behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
+- HIG-COMPONENTS-RATING-INDICATORS-0002 · high — Recovered the conditional Make sure directive and retained its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-SCROLL-VIEWS-0007 · high — Recorded the page-count purpose and the same-axis scroll-indicator exclusion. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0008 · high — Repaired capitalization and recorded the per-view opt-in and custom-effect constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0009 · high — Recorded the control-density and precision conditions behind the secondary-content restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))

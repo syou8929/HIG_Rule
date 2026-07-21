@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T17:31:23.956Z. 2266 active rules; 3 deprecated rules.
+Generated 2026-07-21T17:34:04.890Z. 2267 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -1350,7 +1350,8 @@ Generated 2026-07-21T17:31:23.956Z. 2266 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006 · MAY · low** — Evaluate whether using a More pull-down button to present items that don’t need prominent positions in the main interface is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 ### rating-indicators
 
-- **HIG-COMPONENTS-RATING-INDICATORS-0001 · SHOULD · low** — Apply the documented Rating indicators guidance to make it easy to change rankings. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
+- **HIG-COMPONENTS-RATING-INDICATORS-0001 · SHOULD · high** — Let people change an individual item’s ranking inline without opening a separate editing screen. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
+- **HIG-COMPONENTS-RATING-INDICATORS-0002 · MUST · high** — Make sure the purpose of a custom macOS rating symbol is clear. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 ### scroll-views
 
 - **HIG-COMPONENTS-SCROLL-VIEWS-0001 · SHOULD · low** — Ensure the experience accommodates default scrolling gestures and keyboard shortcuts. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))

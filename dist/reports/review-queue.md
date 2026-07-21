@@ -1,6 +1,6 @@
 # Human source-review queue
 
-- Remaining rules: 1088
+- Remaining rules: 1087
 - Next priority: 4 (platform-specific-hig)
 - Next batch: 1
 
@@ -8,7 +8,7 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 ## Remaining by priority
 
-- 4 (platform-specific-hig): 208
+- 4 (platform-specific-hig): 207
 - 5 (input-and-device-constraints): 28
 - 6 (apple-platform-common): 829
 - 7 (universal-design-principles): 23
@@ -17,8 +17,8 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 - AVOID: 120
 - MAY: 132
-- SHOULD: 836
+- SHOULD: 835
 
 ## Next batch
 
-- HIG-COMPONENTS-RATING-INDICATORS-0001 · SHOULD — Make it easy to change rankings · Rating indicators > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
+- HIG-COMPONENTS-SCROLL-VIEWS-0014 · SHOULD — If necessary, use small or mini scroll bars in a panel · Scroll views > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))

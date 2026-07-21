@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2266
+- Active atomic rules: 2267
 - Pages without rules: 16
-- Low-confidence rules: 1088
-- Rules requiring human review: 1088
+- Low-confidence rules: 1087
+- Rules requiring human review: 1087
 - Reference notes: 925
 
 ## Rules by category
 
-- components: 758
+- components: 759
 - foundations: 312
 - getting-started: 85
 - inputs: 187
@@ -24,7 +24,7 @@
 
 - AVOID: 304
 - MAY: 255
-- MUST: 192
+- MUST: 193
 - MUST_NOT: 21
 - SHOULD: 1494
 
@@ -33,7 +33,7 @@
 - carplay: 89
 - ios: 1584
 - ipados: 1553
-- macos: 1328
+- macos: 1329
 - tvos: 1018
 - visionos: 1378
 - watchos: 1087
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 66
-- manual: 2200
+- manual: 2201
 
 ## Blocked pages
 
@@ -200,7 +200,6 @@ None.
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006
-- HIG-COMPONENTS-RATING-INDICATORS-0001
 - HIG-COMPONENTS-SCROLL-VIEWS-0001
 - HIG-COMPONENTS-SCROLL-VIEWS-0002
 - HIG-COMPONENTS-SCROLL-VIEWS-0003
@@ -1291,7 +1290,6 @@ None.
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006
-- HIG-COMPONENTS-RATING-INDICATORS-0001
 - HIG-COMPONENTS-SCROLL-VIEWS-0001
 - HIG-COMPONENTS-SCROLL-VIEWS-0002
 - HIG-COMPONENTS-SCROLL-VIEWS-0003
@@ -2887,7 +2885,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Platform considerations — Rating indicators have no additional macOS considerations and are unsupported on other Apple platforms.
 - https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Change log — Section recorded for human review; no short atomic guidance lead was detected.

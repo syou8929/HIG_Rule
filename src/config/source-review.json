@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T17:29:06Z",
+  "reviewed_at": "2026-07-21T17:32:51Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2113,6 +2113,15 @@
         "HIG-COMPONENTS-PICKERS-0007", "HIG-COMPONENTS-PICKERS-0008", "HIG-COMPONENTS-PICKERS-0009"
       ],
       "review_note": "Completed Pickers coverage; retained all six existing IDs, recovered short-list and very-large-list alternatives, repaired the truncated countdown constraint, and avoided promoting descriptive system behavior into unsupported requirements."
+    },
+    {
+      "id": "priority-4-rating-indicators-context-2026-07-21",
+      "reviewed_at": "2026-07-21T17:32:51Z",
+      "review_method": "Rendered Apple HIG Rating indicators guidance, inline editing, custom-symbol clarity, system rounding and spacing behavior, and platform context were reviewed; two repeated live renders matched the updated main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/rating-indicators", "source_hash": "cdedbb128613f799094b1ba02b39fcaf570484dc266f35f3eb9c7834a926e983"}],
+      "rule_ids": ["HIG-COMPONENTS-RATING-INDICATORS-0001", "HIG-COMPONENTS-RATING-INDICATORS-0002"],
+      "review_note": "Completed macOS Rating indicators coverage; made the existing ranking-edit rule concrete and recovered the conditional custom-symbol clarity MUST."
     }
   ],
   "rules": {
@@ -2396,6 +2405,20 @@
       "statement": {"en": "Keep iOS and iPadOS countdown-timer picker values at or below 23 hours and 59 minutes.", "ja": "iOSおよびiPadOSのcountdown-timer picker valueを23時間59分以下に保つ。"},
       "conditions": ["Use a wheels style because countdown-timer mode is unavailable in inline and compact styles."],
       "review_note": "Repaired the truncated mode description and recorded both its maximum value and unavailable styles without inventing a MUST."
+    },
+    "HIG-COMPONENTS-RATING-INDICATORS-0001": {
+      "source": {"source_hash": "cdedbb128613f799094b1ba02b39fcaf570484dc266f35f3eb9c7834a926e983", "source_sentence_hash": "c4562d53dbe692424f370f93aecf034571458ba7507ba3c08be45b88b05adaff", "section_path": ["Rating indicators", "Best practices"]},
+      "title": "Let people change rankings inline",
+      "statement": {"en": "Let people change an individual item’s ranking inline without opening a separate editing screen.", "ja": "separate editing screenを開かずに個別itemのrankingをinlineで変更できるようにする。"},
+      "conditions": ["The interface presents a list of ranked items."],
+      "review_note": "Replaced the vague generated wording with the source-supported inline editing behavior."
+    },
+    "HIG-COMPONENTS-RATING-INDICATORS-0002": {
+      "source": {"source_hash": "cdedbb128613f799094b1ba02b39fcaf570484dc266f35f3eb9c7834a926e983", "source_sentence_hash": "51e50cd0c0784173aaf2963626f5149cb40e23c18d150e7d956c8c1c8f139b0f", "section_path": ["Rating indicators", "Best practices"]},
+      "title": "Make custom rating symbols clear",
+      "statement": {"en": "Make sure the purpose of a custom macOS rating symbol is clear.", "ja": "custom macOS rating symbolのpurposeを明確にする。"},
+      "conditions": ["The app replaces the recognizable default star with a custom symbol."],
+      "review_note": "Recovered the conditional Make sure directive and retained its custom-symbol scope."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

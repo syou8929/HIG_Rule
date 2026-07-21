@@ -36062,17 +36062,17 @@
   },
   {
     "id": "HIG-COMPONENTS-RATING-INDICATORS-0001",
-    "title": "Make it easy to change rankings",
+    "title": "Let people change rankings inline",
     "category": "components",
     "topic": "rating-indicators",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Rating indicators guidance to make it easy to change rankings.",
-      "ja": "「Rating indicators」において「Make it easy to change rankings」の指針を適用する。"
+      "en": "Let people change an individual item’s ranking inline without opening a separate editing screen.",
+      "ja": "separate editing screenを開かずに個別itemのrankingをinlineで変更できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36089,7 +36089,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The interface presents a list of ranked items."
     ],
     "exceptions": [],
     "rationale": {
@@ -36099,7 +36099,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Rating indicators guidance to make it easy to change rankings.” in the documented Rating indicators context?"
+        "Does the design satisfy “Let people change an individual item’s ranking inline without opening a separate editing screen.” in the documented Rating indicators context?"
       ]
     },
     "testability": "manual",
@@ -36116,10 +36116,10 @@
         "Rating indicators",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:15.060Z",
-      "source_hash": "bd260d65476ecf4bfb02397f34f277d7e84b6563d035b692d798eb1ef416f746",
+      "retrieved_at": "2026-07-21T17:32:51Z",
+      "source_hash": "cdedbb128613f799094b1ba02b39fcaf570484dc266f35f3eb9c7834a926e983",
       "source_sentence_hash": "c4562d53dbe692424f370f93aecf034571458ba7507ba3c08be45b88b05adaff",
-      "evidence_paraphrase": "Apply the documented Rating indicators guidance to make it easy to change rankings."
+      "evidence_paraphrase": "Let people change an individual item’s ranking inline without opening a separate editing screen."
     },
     "tags": [
       "components",
@@ -36128,7 +36128,78 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Rating indicators guidance to make it easy to change rankings.",
+    "apple_native_rule": "Let people change an individual item’s ranking inline without opening a separate editing screen.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-RATING-INDICATORS-0002",
+    "title": "Make custom rating symbols clear",
+    "category": "components",
+    "topic": "rating-indicators",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Make sure the purpose of a custom macOS rating symbol is clear.",
+      "ja": "custom macOS rating symbolのpurposeを明確にする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "rating-indicators"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The app replaces the recognizable default star with a custom symbol."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Rating indicators experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRating indicatorsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make sure the purpose of a custom macOS rating symbol is clear.” in the documented Rating indicators context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/rating-indicators",
+      "page_title": "Rating indicators",
+      "section_path": [
+        "Rating indicators",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T17:32:51Z",
+      "source_hash": "cdedbb128613f799094b1ba02b39fcaf570484dc266f35f3eb9c7834a926e983",
+      "source_sentence_hash": "51e50cd0c0784173aaf2963626f5149cb40e23c18d150e7d956c8c1c8f139b0f",
+      "evidence_paraphrase": "Make sure the purpose of a custom macOS rating symbol is clear."
+    },
+    "tags": [
+      "components",
+      "rating-indicators",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make sure the purpose of a custom macOS rating symbol is clear.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
