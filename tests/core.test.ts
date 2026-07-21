@@ -23,6 +23,7 @@ test("normalizes HIG URLs and rejects out-of-scope URLs", () => {
 test("keeps conditional strength conservative", () => {
   assert.equal(normative("Consider showing a label").normative_level, "MAY");
   assert.equal(normative("Carefully consider showing a label").normative_level, "MAY");
+  assert.equal(normative("In general, avoid duplicating a control").normative_level, "AVOID");
   assert.equal(normative("Prefer the standard control").normative_level, "SHOULD");
   assert.equal(normative("Never hide the recovery action").normative_level, "MUST_NOT");
 });
@@ -31,6 +32,10 @@ test("paraphrases common imperative leads", () => {
   const result = paraphrase("Support larger text sizes", "Accessibility");
   assert.equal(result.en, "Ensure the experience accommodates larger text sizes.");
   assert.notEqual(result.en.toLowerCase(), "support larger text sizes");
+  assert.equal(paraphrase("In general, avoid duplicating a control", "Menus").en, "Exclude duplicating a control from the applicable experience.");
+  assert.equal(paraphrase("Refer to a panel by title", "Panels").en, "Refer to a panel by title.");
+  assert.equal(paraphrase("Define a clear scroll area", "Scroll views").en, "Define a clear scroll area explicitly.");
+  assert.equal(paraphrase("Present a sheet in a reasonable size", "Sheets").en, "Present a sheet in a reasonable size in the documented context.");
 });
 
 test("recognizes actionable plain-list guidance", () => {
@@ -41,6 +46,9 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Tracking requests", section_path: [], source_sentence_hash: "e".repeat(64), word_count: 2 }), false);
   assert.equal(isActionable({ text: "Help buttons", section_path: [], source_sentence_hash: "f".repeat(64), word_count: 2 }), false);
   assert.equal(isActionable({ text: "Carefully consider a custom layout", section_path: [], source_sentence_hash: "g".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Refer to a panel by title", section_path: [], source_sentence_hash: "h".repeat(64), word_count: 6 }), true);
+  assert.equal(isActionable({ text: "Define a clear scroll area", section_path: [], source_sentence_hash: "i".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Present a sheet in a reasonable size", section_path: [], source_sentence_hash: "j".repeat(64), word_count: 7 }), true);
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 

@@ -848,17 +848,17 @@
   },
   {
     "id": "HIG-COMPONENTS-POPOVERS-0012",
-    "title": "Avoid displaying popovers in compact views",
+    "title": "Avoid popovers in compact iOS and iPadOS views",
     "category": "components",
     "topic": "popovers",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Exclude displaying popovers in compact views from the applicable experience.",
-      "ja": "該当する体験ではdisplaying popovers in compact viewsを避ける。"
+      "en": "Avoid popovers in compact iOS or iPadOS views.",
+      "ja": "compactなiOSまたはiPadOSのviewではpopoverを使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -877,7 +877,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Adjust the layout dynamically for the content area's size class.",
+      "Reserve popovers for wide views and use a full-screen modal view such as a sheet in compact views."
     ],
     "exceptions": [],
     "rationale": {
@@ -887,7 +888,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude displaying popovers in compact views from the applicable experience.” in the documented Popovers context?"
+        "Does the design satisfy “Avoid popovers in compact iOS or iPadOS views.” in the documented Popovers context?"
       ]
     },
     "testability": "manual",
@@ -908,7 +909,7 @@
       "retrieved_at": "2026-07-21T11:15:13.487Z",
       "source_hash": "6e953f9cc1d56f9845033397e8cb351e90bc442fad1f3a70f8f0465c4c46eef6",
       "source_sentence_hash": "d54bf5bed249213b06752aacd1d58e0835d526190a2941c04bde338d6e3b83e6",
-      "evidence_paraphrase": "Exclude displaying popovers in compact views from the applicable experience."
+      "evidence_paraphrase": "Avoid popovers in compact iOS or iPadOS views."
     },
     "tags": [
       "components",
@@ -918,22 +919,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude displaying popovers in compact views from the applicable experience.",
+    "apple_native_rule": "Avoid popovers in compact iOS or iPadOS views.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-POPOVERS-0013",
-    "title": "Consider letting people detach a popover",
+    "title": "Consider detachable macOS popovers",
     "category": "components",
     "topic": "popovers",
     "subtopic": "macos",
     "statement": {
-      "en": "Evaluate whether letting people detach a popover is appropriate for the current context.",
-      "ja": "letting people detach a popoverが現在の状況に適切か検討する。"
+      "en": "Consider letting people detach a macOS popover into a panel.",
+      "ja": "macOSのpopoverをpanelとして切り離せるようにすることを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -950,7 +951,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Detachment can help when people need the popover to remain visible while they view other information."
     ],
     "exceptions": [],
     "rationale": {
@@ -960,7 +961,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether letting people detach a popover is appropriate for the current context.” in the documented Popovers context?"
+        "Does the design satisfy “Consider letting people detach a macOS popover into a panel.” in the documented Popovers context?"
       ]
     },
     "testability": "manual",
@@ -981,7 +982,7 @@
       "retrieved_at": "2026-07-21T11:15:13.487Z",
       "source_hash": "6e953f9cc1d56f9845033397e8cb351e90bc442fad1f3a70f8f0465c4c46eef6",
       "source_sentence_hash": "b92b169fae21ee5d2cface0715ef63e58cbcd273b245638d9b0c696bf3693adb",
-      "evidence_paraphrase": "Evaluate whether letting people detach a popover is appropriate for the current context."
+      "evidence_paraphrase": "Consider letting people detach a macOS popover into a panel."
     },
     "tags": [
       "components",
@@ -991,22 +992,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether letting people detach a popover is appropriate for the current context.",
+    "apple_native_rule": "Consider letting people detach a macOS popover into a panel.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-POPOVERS-0014",
-    "title": "Make minimal appearance changes to a detached popover",
+    "title": "Keep detached macOS popovers visually familiar",
     "category": "components",
     "topic": "popovers",
     "subtopic": "macos",
     "statement": {
-      "en": "Apply the documented Popovers guidance to make minimal appearance changes to a detached popover.",
-      "ja": "「Popovers」において「Make minimal appearance changes to a detached popover」の指針を適用する。"
+      "en": "Keep a detached macOS popover visually similar to the original popover.",
+      "ja": "切り離したmacOSのpopoverは、元のpopoverと視覚的に似た外観に保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1023,7 +1024,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Visual similarity helps people maintain context after the popover becomes a panel."
     ],
     "exceptions": [],
     "rationale": {
@@ -1033,7 +1034,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Popovers guidance to make minimal appearance changes to a detached popover.” in the documented Popovers context?"
+        "Does the design satisfy “Keep a detached macOS popover visually similar to the original popover.” in the documented Popovers context?"
       ]
     },
     "testability": "manual",
@@ -1054,7 +1055,7 @@
       "retrieved_at": "2026-07-21T11:15:13.487Z",
       "source_hash": "6e953f9cc1d56f9845033397e8cb351e90bc442fad1f3a70f8f0465c4c46eef6",
       "source_sentence_hash": "67a0955eb4ebc273fdcebb20cecd1e39fc4400415dead4d94b93de01808bb27a",
-      "evidence_paraphrase": "Apply the documented Popovers guidance to make minimal appearance changes to a detached popover."
+      "evidence_paraphrase": "Keep a detached macOS popover visually similar to the original popover."
     },
     "tags": [
       "components",
@@ -1064,7 +1065,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Popovers guidance to make minimal appearance changes to a detached popover.",
+    "apple_native_rule": "Keep a detached macOS popover visually similar to the original popover.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

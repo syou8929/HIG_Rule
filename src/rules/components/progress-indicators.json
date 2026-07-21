@@ -406,17 +406,17 @@
   },
   {
     "id": "HIG-COMPONENTS-PROGRESS-INDICATORS-0006",
-    "title": "Prefer an activity indicator (spinner) to communicate the status of a background operation or when space is…",
+    "title": "Prefer macOS spinners for background or space-constrained status",
     "category": "components",
     "topic": "progress-indicators",
     "subtopic": "macos",
     "statement": {
-      "en": "Favor an activity indicator (spinner) to communicate the status of a background operation or when space is constrained when the documented conditions apply.",
-      "ja": "該当条件ではan activity indicator (spinner) to communicate the status of a background operation or when space is constrainedを優先する。"
+      "en": "Prefer a macOS spinner for background operations or space-constrained status.",
+      "ja": "macOSのbackground operationや狭い領域でのstatus表示にはspinnerを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -433,7 +433,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A spinner can communicate an asynchronous background task such as retrieving server messages.",
+      "A spinner can fit within a text field or next to a specific control."
     ],
     "exceptions": [],
     "rationale": {
@@ -443,7 +444,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor an activity indicator (spinner) to communicate the status of a background operation or when space is constrained when the documented conditions apply.” in the documented Progress indicators context?"
+        "Does the design satisfy “Prefer a macOS spinner for background operations or space-constrained status.” in the documented Progress indicators context?"
       ]
     },
     "testability": "manual",
@@ -464,7 +465,7 @@
       "retrieved_at": "2026-07-21T11:15:13.942Z",
       "source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589",
       "source_sentence_hash": "9774e78ac810d9a62f67260e50ec5b71b3e19aecf9de7cd62dbb6552bfa908d5",
-      "evidence_paraphrase": "Favor an activity indicator (spinner) to communicate the status of a background operation or when space is constrained when the documented conditions apply."
+      "evidence_paraphrase": "Prefer a macOS spinner for background operations or space-constrained status."
     },
     "tags": [
       "components",
@@ -474,22 +475,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor an activity indicator (spinner) to communicate the status of a background operation or when space is constrained when the documented conditions apply.",
+    "apple_native_rule": "Prefer a macOS spinner for background operations or space-constrained status.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-PROGRESS-INDICATORS-0007",
-    "title": "Avoid labeling a spinning progress indicator",
+    "title": "Avoid labeling macOS spinners",
     "category": "components",
     "topic": "progress-indicators",
     "subtopic": "macos",
     "statement": {
-      "en": "Exclude labeling a spinning progress indicator from the applicable experience.",
-      "ja": "該当する体験ではlabeling a spinning progress indicatorを避ける。"
+      "en": "Avoid labeling a macOS spinner.",
+      "ja": "macOSのspinnerにはlabelを付けない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -506,7 +507,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A label is usually unnecessary because a spinner typically appears after people initiate a process."
     ],
     "exceptions": [],
     "rationale": {
@@ -516,7 +517,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude labeling a spinning progress indicator from the applicable experience.” in the documented Progress indicators context?"
+        "Does the design satisfy “Avoid labeling a macOS spinner.” in the documented Progress indicators context?"
       ]
     },
     "testability": "manual",
@@ -537,7 +538,7 @@
       "retrieved_at": "2026-07-21T11:15:13.942Z",
       "source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589",
       "source_sentence_hash": "f236e2f1a48ba10bfdb23849f30087797fa8b429328e7845f5120194bc99d306",
-      "evidence_paraphrase": "Exclude labeling a spinning progress indicator from the applicable experience."
+      "evidence_paraphrase": "Avoid labeling a macOS spinner."
     },
     "tags": [
       "components",
@@ -547,7 +548,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude labeling a spinning progress indicator from the applicable experience.",
+    "apple_native_rule": "Avoid labeling a macOS spinner.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

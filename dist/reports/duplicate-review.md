@@ -4,7 +4,7 @@
 - Reviewed contextual groups: 9
 - Unresolved groups: 0
 - Official source only: yes
-- Reviewed at: 2026-07-21T10:59:26Z
+- Reviewed at: 2026-07-21T12:25:19Z
 
 Exact statements are retained only when separate Apple HIG pages, sections, components, technologies, or platform scopes need independent retrieval. This is not a claim of authoritative HIG compliance.
 
@@ -19,9 +19,8 @@ Exact statements are retained only when separate Apple HIG pages, sections, comp
 - HIG-COMPONENTS-ACTIVITY-RINGS-0008, HIG-TECHNOLOGIES-HEALTHKIT-0005 — Retained because the Activity rings component and HealthKit technology sections independently carry the branding restriction.
   - HIG-COMPONENTS-ACTIVITY-RINGS-0008: Activity rings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
   - HIG-TECHNOLOGIES-HEALTHKIT-0005: HealthKit > Activity rings ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
-- HIG-COMPONENTS-BUTTONS-0009, HIG-COMPONENTS-SEGMENTED-CONTROLS-0009, HIG-PATTERNS-DRAG-AND-DROP-0005 — Retained because spring loading is independently discoverable for macOS buttons, segmented controls, and the broader drag-and-drop pattern.
+- HIG-COMPONENTS-BUTTONS-0009, HIG-PATTERNS-DRAG-AND-DROP-0005 — Retained because spring loading is independently discoverable for macOS buttons and the broader drag-and-drop pattern; the source-reviewed segmented-control rule is now context-specific.
   - HIG-COMPONENTS-BUTTONS-0009: Buttons > Platform considerations > macOS > Push buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-  - HIG-COMPONENTS-SEGMENTED-CONTROLS-0009: Segmented controls > Platform considerations > macOS ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
   - HIG-PATTERNS-DRAG-AND-DROP-0005: Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-COMPONENTS-COLUMN-VIEWS-0003, HIG-COMPONENTS-LISTS-AND-TABLES-0011, HIG-COMPONENTS-OUTLINE-VIEWS-0004 — Retained because column resizing applies in three distinct macOS component contexts and must remain retrievable from each.
   - HIG-COMPONENTS-COLUMN-VIEWS-0003: Column views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))

@@ -1593,5 +1593,76 @@
     "status": "active",
     "apple_native_rule": "Apply the documented Immersive experiences guidance to minimize asset redundancy.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0024",
+    "title": "Avoid flat 360-degree images for visionOS environments",
+    "category": "foundations",
+    "topic": "immersive-experiences",
+    "subtopic": "creating-an-environment",
+    "statement": {
+      "en": "Avoid using a flat 360-degree image as a visionOS environment.",
+      "ja": "visionOSのenvironmentには、flatな360-degree画像を使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Prefer object meshes with lighting and shaders for subtle environmental animation."
+    ],
+    "exceptions": [
+      "If a flat 360-degree image is necessary, add a ground-plane mesh to improve realism and grounding."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Immersive experiences experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImmersive experiencesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid using a flat 360-degree image as a visionOS environment.” in the documented Immersive experiences context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/immersive-experiences",
+      "page_title": "Immersive experiences",
+      "section_path": [
+        "Immersive experiences",
+        "Creating an environment"
+      ],
+      "retrieved_at": "2026-07-21T11:14:57.579Z",
+      "source_hash": "83195203b6795a634847496e443c96096290f5bcc4eb47b871399c53b2a3c576",
+      "source_sentence_hash": "cff15f0058794a1e76c9c2a2d7c58f2c7024bfbd46cb1dea9631d9785d5a23e3",
+      "evidence_paraphrase": "Avoid using a flat 360-degree image as a visionOS environment."
+    },
+    "tags": [
+      "foundations",
+      "immersive-experiences",
+      "creating-an-environment"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid using a flat 360-degree image as a visionOS environment.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

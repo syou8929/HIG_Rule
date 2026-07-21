@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-COMPONENTS-TAB-VIEWS-0001",
-    "title": "Use a tab view to present closely related areas of content",
+    "title": "Use macOS tab views for closely related content",
     "category": "components",
     "topic": "tab-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply a tab view to present closely related areas of content in the documented context.",
-      "ja": "該当する状況ではa tab view to present closely related areas of contentを採用する。"
+      "en": "Use a macOS tab view for closely related content areas.",
+      "ja": "密接に関連するcontent areaにはmacOS tab viewを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -30,7 +30,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Each tab's content needs to be similar or related to the content in the other tabs."
     ],
     "exceptions": [],
     "rationale": {
@@ -40,7 +40,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a tab view to present closely related areas of content in the documented context.” in the documented Tab views context?"
+        "Does the design satisfy “Use a macOS tab view for closely related content areas.” in the documented Tab views context?"
       ]
     },
     "testability": "manual",
@@ -60,7 +60,7 @@
       "retrieved_at": "2026-07-21T11:15:24.040Z",
       "source_hash": "72dbe51cafd8ae330cf7fa4bcda5c498adc67460bbae37e5fdcdc121478998b6",
       "source_sentence_hash": "58317e6958f1f39821de60ebbdf1afed89a538d6a48e2c912cc3bffb41931fa5",
-      "evidence_paraphrase": "Choose or apply a tab view to present closely related areas of content in the documented context."
+      "evidence_paraphrase": "Use a macOS tab view for closely related content areas."
     },
     "tags": [
       "components",
@@ -69,7 +69,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply a tab view to present closely related areas of content in the documented context.",
+    "apple_native_rule": "Use a macOS tab view for closely related content areas.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -147,17 +147,17 @@
   },
   {
     "id": "HIG-COMPONENTS-TAB-VIEWS-0003",
-    "title": "Provide a label for each tab that describes the contents of its pane",
+    "title": "Label each macOS tab by its pane content",
     "category": "components",
     "topic": "tab-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make a label for each tab that describes the contents of its pane available when applicable.",
-      "ja": "必要な場合にa label for each tab that describes the contents of its paneを利用可能にする。"
+      "en": "Label each macOS tab to describe its pane's content.",
+      "ja": "各macOS tabにpaneのcontentを表すlabelを付ける。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -176,7 +176,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer a noun or short noun phrase; a verb phrase can fit some contexts.",
+      "Use title-style capitalization."
     ],
     "exceptions": [],
     "rationale": {
@@ -186,7 +187,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make a label for each tab that describes the contents of its pane available when applicable.” in the documented Tab views context?"
+        "Does the design satisfy “Label each macOS tab to describe its pane's content.” in the documented Tab views context?"
       ]
     },
     "testability": "manual",
@@ -206,7 +207,7 @@
       "retrieved_at": "2026-07-21T11:15:24.040Z",
       "source_hash": "72dbe51cafd8ae330cf7fa4bcda5c498adc67460bbae37e5fdcdc121478998b6",
       "source_sentence_hash": "d5a82f29a040ac0ad0d6b04f15d5cc596cd90a1e264148dce7bcbedf58e487bb",
-      "evidence_paraphrase": "Make a label for each tab that describes the contents of its pane available when applicable."
+      "evidence_paraphrase": "Label each macOS tab to describe its pane's content."
     },
     "tags": [
       "components",
@@ -215,22 +216,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make a label for each tab that describes the contents of its pane available when applicable.",
+    "apple_native_rule": "Label each macOS tab to describe its pane's content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TAB-VIEWS-0004",
-    "title": "Avoid using a pop-up button to switch between tabs",
+    "title": "Avoid pop-up buttons for switching macOS tabs",
     "category": "components",
     "topic": "tab-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude using a pop-up button to switch between tabs from the applicable experience.",
-      "ja": "該当する体験ではusing a pop-up button to switch between tabsを避ける。"
+      "en": "Avoid using a pop-up button to switch macOS tabs.",
+      "ja": "macOS tabの切り替えにpop-up buttonを使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -249,9 +250,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A tabbed control exposes every choice and switches with one click or tap."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A pop-up button can be reasonable when there are too many content panes to display as tabs."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Tab views experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるTab viewsの一貫性と使いやすさを支えます。"
@@ -259,7 +262,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude using a pop-up button to switch between tabs from the applicable experience.” in the documented Tab views context?"
+        "Does the design satisfy “Avoid using a pop-up button to switch macOS tabs.” in the documented Tab views context?"
       ]
     },
     "testability": "manual",
@@ -279,7 +282,7 @@
       "retrieved_at": "2026-07-21T11:15:24.040Z",
       "source_hash": "72dbe51cafd8ae330cf7fa4bcda5c498adc67460bbae37e5fdcdc121478998b6",
       "source_sentence_hash": "2f1c9b00192a93f6fa697d987f34ea4105f6e32ca18fc7ec8b4910fd3496fc79",
-      "evidence_paraphrase": "Exclude using a pop-up button to switch between tabs from the applicable experience."
+      "evidence_paraphrase": "Avoid using a pop-up button to switch macOS tabs."
     },
     "tags": [
       "components",
@@ -288,22 +291,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude using a pop-up button to switch between tabs from the applicable experience.",
+    "apple_native_rule": "Avoid using a pop-up button to switch macOS tabs.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TAB-VIEWS-0005",
-    "title": "Avoid providing more than six tabs in a tab view",
+    "title": "Avoid more than six tabs in a macOS tab view",
     "category": "components",
     "topic": "tab-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude providing more than six tabs in a tab view from the applicable experience.",
-      "ja": "該当する体験ではproviding more than six tabs in a tab viewを避ける。"
+      "en": "Avoid providing more than six tabs in a macOS tab view.",
+      "ja": "macOS tab viewに6個を超えるtabを設けない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -322,9 +325,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "At six or more tabs, consider another interface because tab layouts can become overwhelming."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A pop-up-button menu can present view options when the tab count is too high."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Tab views experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるTab viewsの一貫性と使いやすさを支えます。"
@@ -332,7 +337,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude providing more than six tabs in a tab view from the applicable experience.” in the documented Tab views context?"
+        "Does the design satisfy “Avoid providing more than six tabs in a macOS tab view.” in the documented Tab views context?"
       ]
     },
     "testability": "manual",
@@ -352,7 +357,7 @@
       "retrieved_at": "2026-07-21T11:15:24.040Z",
       "source_hash": "72dbe51cafd8ae330cf7fa4bcda5c498adc67460bbae37e5fdcdc121478998b6",
       "source_sentence_hash": "edc06d1a984973af0873bee63bd3d3f4b8029b860e5276153b998d43091df5e7",
-      "evidence_paraphrase": "Exclude providing more than six tabs in a tab view from the applicable experience."
+      "evidence_paraphrase": "Avoid providing more than six tabs in a macOS tab view."
     },
     "tags": [
       "components",
@@ -361,7 +366,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude providing more than six tabs in a tab view from the applicable experience.",
+    "apple_native_rule": "Avoid providing more than six tabs in a macOS tab view.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

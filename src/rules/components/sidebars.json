@@ -238,17 +238,17 @@
   },
   {
     "id": "HIG-COMPONENTS-SIDEBARS-0004",
-    "title": "Consider using a tab bar first",
+    "title": "Consider a tab bar before a sidebar in iOS and iPadOS",
     "category": "components",
     "topic": "sidebars",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Evaluate whether using a tab bar first is appropriate for the current context.",
-      "ja": "using a tab bar firstが現在の状況に適切か検討する。"
+      "en": "Consider using a tab bar first in iOS or iPadOS.",
+      "ja": "iOSまたはiPadOSでは、まずtab barの使用を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -267,7 +267,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A tab bar leaves more room for content and can navigate among many apps' main areas.",
+      "Use the convertible sidebar appearance when additional, less-frequent areas exceed tab-bar capacity."
     ],
     "exceptions": [],
     "rationale": {
@@ -277,7 +278,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using a tab bar first is appropriate for the current context.” in the documented Sidebars context?"
+        "Does the design satisfy “Consider using a tab bar first in iOS or iPadOS.” in the documented Sidebars context?"
       ]
     },
     "testability": "manual",
@@ -298,7 +299,7 @@
       "retrieved_at": "2026-07-21T11:15:19.991Z",
       "source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2",
       "source_sentence_hash": "59fa673b5707db02022e720e16f4ac715733646c52355b8bfcedcb17fae53ee5",
-      "evidence_paraphrase": "Evaluate whether using a tab bar first is appropriate for the current context."
+      "evidence_paraphrase": "Consider using a tab bar first in iOS or iPadOS."
     },
     "tags": [
       "components",
@@ -308,22 +309,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using a tab bar first is appropriate for the current context.",
+    "apple_native_rule": "Consider using a tab bar first in iOS or iPadOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SIDEBARS-0005",
-    "title": "Consider automatically hiding and revealing a sidebar when its container window resizes",
+    "title": "Consider adapting macOS sidebars to window size",
     "category": "components",
     "topic": "sidebars",
     "subtopic": "macos",
     "statement": {
-      "en": "Evaluate whether automatically hiding and revealing a sidebar when its container window resizes is appropriate for the current context.",
-      "ja": "automatically hiding and revealing a sidebar when its container window resizesが現在の状況に適切か検討する。"
+      "en": "Consider automatically hiding or revealing a macOS sidebar as its window resizes.",
+      "ja": "macOS windowのresizeに応じてsidebarを自動的に隠す、または表示することを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -340,7 +341,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Collapsing the sidebar in a smaller window can make more room for primary content."
     ],
     "exceptions": [],
     "rationale": {
@@ -350,7 +351,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether automatically hiding and revealing a sidebar when its container window resizes is appropriate for the current context.” in the documented Sidebars context?"
+        "Does the design satisfy “Consider automatically hiding or revealing a macOS sidebar as its window resizes.” in the documented Sidebars context?"
       ]
     },
     "testability": "manual",
@@ -371,7 +372,7 @@
       "retrieved_at": "2026-07-21T11:15:19.991Z",
       "source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2",
       "source_sentence_hash": "f4c6d84311f39740bc90fe5ec158f905a0a617d4d3797d4f42862fa208c56c48",
-      "evidence_paraphrase": "Evaluate whether automatically hiding and revealing a sidebar when its container window resizes is appropriate for the current context."
+      "evidence_paraphrase": "Consider automatically hiding or revealing a macOS sidebar as its window resizes."
     },
     "tags": [
       "components",
@@ -381,22 +382,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether automatically hiding and revealing a sidebar when its container window resizes is appropriate for the current context.",
+    "apple_native_rule": "Consider automatically hiding or revealing a macOS sidebar as its window resizes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SIDEBARS-0006",
-    "title": "Avoid putting critical information or actions at the bottom of a sidebar",
+    "title": "Keep critical content away from the bottom of macOS sidebars",
     "category": "components",
     "topic": "sidebars",
     "subtopic": "macos",
     "statement": {
-      "en": "Exclude putting critical information or actions at the bottom of a sidebar from the applicable experience.",
-      "ja": "該当する体験ではputting critical information or actions at the bottom of a sidebarを避ける。"
+      "en": "Avoid placing critical information or actions at the bottom of a macOS sidebar.",
+      "ja": "macOS sidebarの下部に重要な情報やactionを置かない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -413,7 +414,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "People can reposition a window so its bottom edge is hidden."
     ],
     "exceptions": [],
     "rationale": {
@@ -423,7 +424,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude putting critical information or actions at the bottom of a sidebar from the applicable experience.” in the documented Sidebars context?"
+        "Does the design satisfy “Avoid placing critical information or actions at the bottom of a macOS sidebar.” in the documented Sidebars context?"
       ]
     },
     "testability": "manual",
@@ -444,7 +445,7 @@
       "retrieved_at": "2026-07-21T11:15:19.991Z",
       "source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2",
       "source_sentence_hash": "c7e3120cf0a525efcd1d48b0633ef132fb1749b57026d8751963051bcb2e3cd1",
-      "evidence_paraphrase": "Exclude putting critical information or actions at the bottom of a sidebar from the applicable experience."
+      "evidence_paraphrase": "Avoid placing critical information or actions at the bottom of a macOS sidebar."
     },
     "tags": [
       "components",
@@ -454,7 +455,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude putting critical information or actions at the bottom of a sidebar from the applicable experience.",
+    "apple_native_rule": "Avoid placing critical information or actions at the bottom of a macOS sidebar.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

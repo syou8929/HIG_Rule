@@ -494,17 +494,17 @@
   },
   {
     "id": "HIG-COMPONENTS-SCROLL-VIEWS-0007",
-    "title": "Consider showing a page control when a scroll view is in page-by-page mode",
+    "title": "Consider a page control for page-by-page scrolling",
     "category": "components",
     "topic": "scroll-views",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Evaluate whether showing a page control when a scroll view is in page-by-page mode is appropriate for the current context.",
-      "ja": "showing a page control when a scroll view is in page-by-page modeが現在の状況に適切か検討する。"
+      "en": "Consider a page control for page-by-page scrolling in iOS or iPadOS.",
+      "ja": "iOSまたはiPadOSのpage-by-page scrollingにはpage controlを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -523,9 +523,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A page control communicates the available pages and the currently visible page."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "When showing a page control, omit the scroll indicator on the same axis to avoid redundant controls."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
@@ -533,7 +535,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether showing a page control when a scroll view is in page-by-page mode is appropriate for the current context.” in the documented Scroll views context?"
+        "Does the design satisfy “Consider a page control for page-by-page scrolling in iOS or iPadOS.” in the documented Scroll views context?"
       ]
     },
     "testability": "manual",
@@ -554,7 +556,7 @@
       "retrieved_at": "2026-07-21T11:15:16.534Z",
       "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
       "source_sentence_hash": "d9cb9d67eb236e546e5bae61fe492c2481db281e1d363c15da3d834fb0dfb2ab",
-      "evidence_paraphrase": "Evaluate whether showing a page control when a scroll view is in page-by-page mode is appropriate for the current context."
+      "evidence_paraphrase": "Consider a page control for page-by-page scrolling in iOS or iPadOS."
     },
     "tags": [
       "components",
@@ -564,22 +566,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether showing a page control when a scroll view is in page-by-page mode is appropriate for the current context.",
+    "apple_native_rule": "Consider a page control for page-by-page scrolling in iOS or iPadOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SCROLL-VIEWS-0008",
-    "title": "Support Look to Scroll for reading or browsing views",
+    "title": "Support Look to Scroll in visionOS reading and browsing views",
     "category": "components",
     "topic": "scroll-views",
     "subtopic": "look-to-scroll",
     "statement": {
-      "en": "Ensure the experience accommodates look to Scroll for reading or browsing views.",
-      "ja": "Look to Scroll for reading or browsing viewsを利用できる設計にする。"
+      "en": "Support Look to Scroll in visionOS reading or browsing views.",
+      "ja": "visionOSのreadingまたはbrowsing viewでLook to Scrollをサポートする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -598,7 +600,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Enable Look to Scroll explicitly for each applicable scroll view.",
+      "Remove scroll-position-dependent custom effects or animations before enabling Look to Scroll."
     ],
     "exceptions": [],
     "rationale": {
@@ -608,7 +611,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates look to Scroll for reading or browsing views.” in the documented Scroll views context?"
+        "Does the design satisfy “Support Look to Scroll in visionOS reading or browsing views.” in the documented Scroll views context?"
       ]
     },
     "testability": "manual",
@@ -630,7 +633,7 @@
       "retrieved_at": "2026-07-21T11:15:16.534Z",
       "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
       "source_sentence_hash": "72be95c0effd699e3c7535832f3287c9e435b4ae9bcb4eff5600418d7d865efd",
-      "evidence_paraphrase": "Ensure the experience accommodates look to Scroll for reading or browsing views."
+      "evidence_paraphrase": "Support Look to Scroll in visionOS reading or browsing views."
     },
     "tags": [
       "components",
@@ -642,22 +645,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates look to Scroll for reading or browsing views.",
+    "apple_native_rule": "Support Look to Scroll in visionOS reading or browsing views.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SCROLL-VIEWS-0009",
-    "title": "Avoid using Look to Scroll for secondary content",
+    "title": "Avoid Look to Scroll for secondary visionOS content",
     "category": "components",
     "topic": "scroll-views",
     "subtopic": "look-to-scroll",
     "statement": {
-      "en": "Exclude using Look to Scroll for secondary content from the applicable experience.",
-      "ja": "該当する体験ではusing Look to Scroll for secondary contentを避ける。"
+      "en": "Avoid Look to Scroll for secondary visionOS content.",
+      "ja": "visionOSのsecondary contentではLook to Scrollを使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -676,7 +679,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use standard gestures instead for views with controls or dense information that require quick, precise scrolling."
     ],
     "exceptions": [],
     "rationale": {
@@ -686,7 +689,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude using Look to Scroll for secondary content from the applicable experience.” in the documented Scroll views context?"
+        "Does the design satisfy “Avoid Look to Scroll for secondary visionOS content.” in the documented Scroll views context?"
       ]
     },
     "testability": "manual",
@@ -708,7 +711,7 @@
       "retrieved_at": "2026-07-21T11:15:16.534Z",
       "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
       "source_sentence_hash": "76f8036eec12d818103fd55c78e775e8dcc13ca0d5cae71954df5d80677c18f3",
-      "evidence_paraphrase": "Exclude using Look to Scroll for secondary content from the applicable experience."
+      "evidence_paraphrase": "Avoid Look to Scroll for secondary visionOS content."
     },
     "tags": [
       "components",
@@ -720,22 +723,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude using Look to Scroll for secondary content from the applicable experience.",
+    "apple_native_rule": "Avoid Look to Scroll for secondary visionOS content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SCROLL-VIEWS-0010",
-    "title": "Maintain consistency across content",
+    "title": "Apply Look to Scroll consistently across similar visionOS views",
     "category": "components",
     "topic": "scroll-views",
     "subtopic": "look-to-scroll",
     "statement": {
-      "en": "Apply the documented Scroll views guidance to maintain consistency across content.",
-      "ja": "「Scroll views」において「Maintain consistency across content」の指針を適用する。"
+      "en": "Support Look to Scroll consistently across similar visionOS views.",
+      "ja": "同種のvisionOS viewではLook to Scrollを一貫してサポートする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -752,7 +755,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "When one view supports Look to Scroll, enable it in all similar views so people know what to expect."
     ],
     "exceptions": [],
     "rationale": {
@@ -762,7 +765,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Scroll views guidance to maintain consistency across content.” in the documented Scroll views context?"
+        "Does the design satisfy “Support Look to Scroll consistently across similar visionOS views.” in the documented Scroll views context?"
       ]
     },
     "testability": "manual",
@@ -784,7 +787,7 @@
       "retrieved_at": "2026-07-21T11:15:16.534Z",
       "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
       "source_sentence_hash": "889324adc29bcb343028f2a74cd1a932cdbd2619a5d66205638fccd13a5ac46a",
-      "evidence_paraphrase": "Apply the documented Scroll views guidance to maintain consistency across content."
+      "evidence_paraphrase": "Support Look to Scroll consistently across similar visionOS views."
     },
     "tags": [
       "components",
@@ -795,22 +798,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Scroll views guidance to maintain consistency across content.",
+    "apple_native_rule": "Support Look to Scroll consistently across similar visionOS views.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SCROLL-VIEWS-0011",
-    "title": "Prefer vertically scrolling content",
+    "title": "Prefer vertical scrolling for watchOS content",
     "category": "components",
     "topic": "scroll-views",
     "subtopic": "watchos",
     "statement": {
-      "en": "Favor vertically scrolling content when the documented conditions apply.",
-      "ja": "該当条件ではvertically scrolling contentを優先する。"
+      "en": "Prefer vertical scrolling for watchOS content.",
+      "ja": "watchOSのcontentでは縦スクロールを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -827,7 +830,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "For a single list or content view taller than the display, use the Digital Crown for vertical scrolling."
     ],
     "exceptions": [],
     "rationale": {
@@ -837,7 +840,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor vertically scrolling content when the documented conditions apply.” in the documented Scroll views context?"
+        "Does the design satisfy “Prefer vertical scrolling for watchOS content.” in the documented Scroll views context?"
       ]
     },
     "testability": "manual",
@@ -858,7 +861,7 @@
       "retrieved_at": "2026-07-21T11:15:16.534Z",
       "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
       "source_sentence_hash": "95facd27a1f425bf2677de6a48026a4549a32319a7826f9119b22333d110f434",
-      "evidence_paraphrase": "Favor vertically scrolling content when the documented conditions apply."
+      "evidence_paraphrase": "Prefer vertical scrolling for watchOS content."
     },
     "tags": [
       "components",
@@ -868,22 +871,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor vertically scrolling content when the documented conditions apply.",
+    "apple_native_rule": "Prefer vertical scrolling for watchOS content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SCROLL-VIEWS-0012",
-    "title": "Use tab views to provide page-by-page scrolling",
+    "title": "Use watchOS tab views for page-by-page scrolling",
     "category": "components",
     "topic": "scroll-views",
     "subtopic": "watchos",
     "statement": {
-      "en": "Choose or apply tab views to provide page-by-page scrolling in the documented context.",
-      "ja": "該当する状況ではtab views to provide page-by-page scrollingを採用する。"
+      "en": "Use vertically stacked tab views for page-by-page scrolling in watchOS.",
+      "ja": "watchOSのpage-by-page scrollingには、縦に並べたtab viewを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -900,7 +903,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The system page indicator shows position within the current page and the set of pages.",
+      "Consider one-screen-height pages; use variable-height pages judiciously and place them after fixed-height pages when possible."
     ],
     "exceptions": [],
     "rationale": {
@@ -910,7 +914,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply tab views to provide page-by-page scrolling in the documented context.” in the documented Scroll views context?"
+        "Does the design satisfy “Use vertically stacked tab views for page-by-page scrolling in watchOS.” in the documented Scroll views context?"
       ]
     },
     "testability": "manual",
@@ -931,7 +935,7 @@
       "retrieved_at": "2026-07-21T11:15:16.534Z",
       "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
       "source_sentence_hash": "4ca040301e9ab3a3edaa86276dc5767a4e7ada5ce13978c4ada42fce43b5f3d5",
-      "evidence_paraphrase": "Choose or apply tab views to provide page-by-page scrolling in the documented context."
+      "evidence_paraphrase": "Use vertically stacked tab views for page-by-page scrolling in watchOS."
     },
     "tags": [
       "components",
@@ -941,7 +945,83 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply tab views to provide page-by-page scrolling in the documented context.",
+    "apple_native_rule": "Use vertically stacked tab views for page-by-page scrolling in watchOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SCROLL-VIEWS-0013",
+    "title": "Define clear visionOS Look to Scroll areas",
+    "category": "components",
+    "topic": "scroll-views",
+    "subtopic": "look-to-scroll",
+    "statement": {
+      "en": "Define clear visionOS scroll areas for Look to Scroll.",
+      "ja": "visionOSのLook to Scroll用scroll areaを明確に定義する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [
+        "scroll-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Prefer a scroll view that spans the full width or full height of the window.",
+      "When a scroll view is inset, provide clear boundaries that indicate where people need to look."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Scroll views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるScroll viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Define clear visionOS scroll areas for Look to Scroll.” in the documented Scroll views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/scroll-views",
+      "page_title": "Scroll views",
+      "section_path": [
+        "Scroll views",
+        "Platform considerations",
+        "visionOS",
+        "Look to Scroll"
+      ],
+      "retrieved_at": "2026-07-21T11:15:16.534Z",
+      "source_hash": "8b0ab890502eb25cad98b1c1903e5725eff63a22dc4a15904a2d56e587a3c667",
+      "source_sentence_hash": "092bd5390499c748478a9cbd64d192146cc4faf9f22e784f816d8688cc43bafa",
+      "evidence_paraphrase": "Define clear visionOS scroll areas for Look to Scroll."
+    },
+    "tags": [
+      "components",
+      "scroll-views",
+      "platform-considerations",
+      "visionos",
+      "look-to-scroll"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Define clear visionOS scroll areas for Look to Scroll.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

@@ -565,5 +565,87 @@
     "status": "active",
     "apple_native_rule": "Apply the documented Keyboards guidance to write descriptive shortcut titles.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-KEYBOARDS-0008",
+    "title": "Define custom keyboard shortcuts for only the most frequently used app-specific commands",
+    "category": "inputs",
+    "topic": "keyboards",
+    "subtopic": "custom-keyboard-shortcuts",
+    "statement": {
+      "en": "Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly.",
+      "ja": "custom keyboard shortcuts for only the most frequently used app-specific commandsを明確に定義する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Keyboards experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるKeyboardsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly.” in the documented Keyboards context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/keyboards",
+      "page_title": "Keyboards",
+      "section_path": [
+        "Keyboards",
+        "Custom keyboard shortcuts"
+      ],
+      "retrieved_at": "2026-07-21T11:14:59.212Z",
+      "source_hash": "697c73c19083970105682874d846e93cbb73ae3d24c34ac05c6f320e40046218",
+      "source_sentence_hash": "e0fa3c4b47694153f8691f0d334057676e25849be21f46b947108a341b2842ed",
+      "evidence_paraphrase": "Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly."
+    },
+    "tags": [
+      "inputs",
+      "keyboards",
+      "custom-keyboard-shortcuts",
+      "keyboard"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]
