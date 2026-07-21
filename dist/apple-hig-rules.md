@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T07:14:37.889Z. 1597 active rules; 0 deprecated rules.
+Generated 2026-07-21T09:50:24.446Z. 1597 active rules; 0 deprecated rules.
 
 ## getting-started
 
