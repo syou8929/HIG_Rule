@@ -1,6 +1,6 @@
 # Apple HIG rule runtime
 
-This adapter is generated from 1598 active, source-traceable atomic rules. The canonical store is under `src/rules/`; do not hand-edit generated adapters.
+This adapter is generated from 1715 active, source-traceable atomic rules. The canonical store is under `src/rules/`; do not hand-edit generated adapters.
 
 ## Runtime procedure
 
@@ -43,5 +43,6 @@ Run `npm run query -- --platform ios --category components --task review` and ad
 - Keep evidence fragments below 20 words and preserve source URL, section path, retrieval time, and hashes.
 - Do not raise conditional language to MUST without explicit support; route uncertainty to review.
 - Preserve stable rule IDs through `src/config/rule-id-map.json`; deprecate removed rules before deletion.
+- Treat review registries under `src/config/` as source-trace-bound; require re-review when hashes or candidate sets become stale.
 - Run `npm run ci` after rule, schema, generator, or adapter changes.
 - Report blocked pages and pages without rules explicitly; never infer missing source content.

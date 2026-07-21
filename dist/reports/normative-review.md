@@ -1,28 +1,42 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 102
-- Retained MUST: 94
-- Retained MUST_NOT: 8
+- Reviewed rules: 110
+- Retained MUST: 101
+- Retained MUST_NOT: 9
 - Normative level changes: 0
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T09:58:28Z
+- Reviewed at: 2026-07-21T11:12:09Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
 ## Atomicity and scope corrections
 
+- HIG-COMPONENTS-ACTIVITY-RINGS-0009 — Retained MUST_NOT after confirming the explicit Never directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0010 — Retained MUST after confirming the explicit Always directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0012 — Narrowed the MUST to the required visible-background outcome and recorded the conditional outer-stroke technique separately. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0013 — Retained MUST after confirming the explicit Always directive and its visual-scaling context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0015 — Narrowed the MUST to the unqualified Always clause; the source lead's consider clause is split into a separate MAY rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0022 — Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-TAB-BARS-0002 — Recorded the source's explicit modal-view exception without weakening the default requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- HIG-FOUNDATIONS-ACCESSIBILITY-0035 — Retained MUST after confirming the explicit Always directive under the Assistive Access guidelines and restored its applicability conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
+- HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-RESEARCHKIT-0012 — Retained MUST after confirming the explicit Make sure directive in the conducting-research list. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-SHAREPLAY-0009 — Recorded the source's explicit temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017 — Retained MUST after confirming the explicit Make sure directive in the data-collection guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0030 — Split from the source lead's consider clause so optional guidance is not raised to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 
 ## Reviewed rules
 
 - HIG-COMPONENTS-ACTIVITY-RINGS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0009 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained MUST_NOT after confirming the explicit Never directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0010 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0012 · MUST · retained_with_atomicity_or_scope_correction — Narrowed the MUST to the required visible-background outcome and recorded the conditional outer-stroke technique separately. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0013 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive and its visual-scaling context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-VIEWS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
 - HIG-COMPONENTS-BUTTONS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
@@ -56,6 +70,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-WINDOWS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0008 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- HIG-FOUNDATIONS-ACCESSIBILITY-0035 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive under the Assistive Access guidelines and restored its applicability conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-BRANDING-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
 - HIG-FOUNDATIONS-COLOR-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-DARK-MODE-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
@@ -87,6 +102,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MODALITY-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0006 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-OFFERING-HELP-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-PLAYING-VIDEO-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
@@ -111,16 +127,18 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 · MUST · retained_with_atomicity_or_scope_correction — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0015 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0024 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0025 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 · MUST · retained_with_atomicity_or_scope_correction — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MAPS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- HIG-TECHNOLOGIES-RESEARCHKIT-0012 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive in the conducting-research list. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-SHAREPLAY-0009 · MUST · retained_with_atomicity_or_scope_correction — Recorded the source's explicit temporary-exit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive in the data-collection guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 · MUST · retained_with_atomicity_or_scope_correction — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-WALLET-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - HIG-TECHNOLOGIES-WALLET-0012 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))

@@ -52,9 +52,15 @@ npm test
 - `dist/checklists/`: デザイン、実装、アクセシビリティのレビューリスト
 - `dist/reports/`: coverage、validation、更新差分
 
-`dist/reports/normative-review.md`と`normative-review.json`には、MUST/MUST_NOTルールをApple公式のsection contextと照合した判断、atomicity修正、source hashを記録します。このレポートもHIG適合証明ではありません。
+`dist/reports/normative-review.md`と`normative-review.json`には、MUST/MUST_NOTルールをApple公式のsection contextと照合した判断、atomicity修正、source hashを記録します。`dist/reports/duplicate-review.md`と`duplicate-review.json`には、同一statementの候補をsource URL、section、scope、hashで照合した結果を記録します。どちらもHIG適合証明ではありません。
 
 `src/config/normative-review.json`は、レビュー済みsource inventoryのhashと永続的な補正を保持します。HIG更新によってinventory hashまたはMUST/MUST_NOT件数が変わった場合、buildは古いレビュー結果を流用せず、再レビューが必要であることをエラーで示します。
+
+`src/config/duplicate-review.json`は、意図的に保持する文脈重複のrule ID、statement hash、source trace hash、判断理由を保持します。候補集合やsource traceが変わるとvalidationが失敗し、未レビューの新規候補は警告として残ります。
+
+`src/config/source-review.json`は、MUST/MUST_NOT以外で公式本文や数値表まで確認したruleの補正、source trace、レビュー状態を保持します。生成される`dist/reports/source-review.md`と`source-review.json`で判断を追跡できます。
+
+`dist/reports/review-queue.md`と`review-queue.json`は、未レビューのcanonical ruleを競合優先順位、規範強度、カテゴリの順に並べます。`review_required: false`はsource-context上の分類レビューが完了したことだけを表し、プロダクト固有のデザインレビューが不要という意味ではありません。
 
 `AGENTS.md`、`CLAUDE.md`、`GEMINI.md`、`.github/copilot-instructions.md`、`.cursor/rules/apple-hig.mdc`もcanonical rulesから再生成します。生成ファイルを直接修正せず、storeまたはgeneratorを更新してください。
 
@@ -77,7 +83,7 @@ AIは対象プラットフォーム、デバイス、入力方式、主要タス
 
 ## Coverage report
 
-[coverage JSON](dist/reports/coverage.json)には、発見・取得・分類・rules抽出済みページ数、rule総数、カテゴリ・プラットフォーム・規範強度・testability別集計、blockedページ、rules未生成ページ、low-confidence rule、人間レビュー対象を収録します。完了率だけで網羅性を主張しません。
+[coverage JSON](dist/reports/coverage.json)には、発見・取得・分類・rules抽出済みページ数、rule総数、カテゴリ・プラットフォーム・規範強度・testability別集計、blockedページ、rules未生成ページ、low-confidence rule、人間レビュー対象、数値表などrule化前のreference noteを収録します。完了率だけで網羅性を主張しません。
 
 ## Updating the HIG snapshot
 

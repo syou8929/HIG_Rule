@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-07-21T11:16:10Z",
+  "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
+  "official_source_only": true,
+  "rules": {
+    "HIG-FOUNDATIONS-ACCESSIBILITY-0001": {
+      "source": {
+        "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+        "source_sentence_hash": "078f60e5dd883d3995edf23799d90cdfa723cb54c50229c29715fbf988763fb4",
+        "section_path": [
+          "Accessibility",
+          "Vision"
+        ]
+      },
+      "title": "Support platform-appropriate text and icon enlargement",
+      "statement": {
+        "en": "Let people enlarge text and icons using Dynamic Type or an equivalent custom control.",
+        "ja": "Dynamic Typeまたは同等のカスタム操作により、テキストやアイコンを拡大できるようにする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Support enlargement to at least 200 percent on iOS, iPadOS, macOS, tvOS, and visionOS where the source guidance applies.",
+        "Support enlargement to at least 140 percent in watchOS apps.",
+        "Verify legibility, visibility, and reading comfort at enlarged sizes."
+      ],
+      "checks": {
+        "automated": [
+          "Run UI tests at the platform's largest supported text setting and detect clipped, truncated, or overlapping essential content.",
+          "Verify that the supported enlargement range reaches the source-scoped percentage for the target platform."
+        ],
+        "manual": [
+          "Can people enlarge text and icons to the source-scoped target without losing essential content or actions?"
+        ]
+      },
+      "testability": "hybrid",
+      "review_note": "Recorded the platform-specific enlargement targets from the official Vision guidance."
+    },
+    "HIG-FOUNDATIONS-ACCESSIBILITY-0002": {
+      "source": {
+        "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+        "source_sentence_hash": "e8a8ef580398bc1ee1bcd944fb626e84976328b48d7b81a0f6861afcf3708b2d",
+        "section_path": [
+          "Accessibility",
+          "Vision"
+        ]
+      },
+      "title": "Use platform defaults and minimums for custom type sizes",
+      "statement": {
+        "en": "When using custom type styles, follow the target platform's recommended default and minimum sizes.",
+        "ja": "カスタム書体スタイルを使う場合は、対象プラットフォームの推奨デフォルトサイズと最小サイズに従う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "iOS and iPadOS: use 17 pt by default and do not go below 11 pt.",
+        "macOS: use 13 pt by default and do not go below 10 pt.",
+        "tvOS: use 29 pt by default and do not go below 23 pt.",
+        "visionOS: use 17 pt by default and do not go below 12 pt.",
+        "watchOS: use 16 pt by default and do not go below 12 pt."
+      ],
+      "checks": {
+        "automated": [
+          "Compare custom type-style defaults and minimums with the source-scoped values for every supported platform."
+        ],
+        "manual": [
+          "Do custom type choices remain readable while respecting the platform-specific default and minimum sizes?"
+        ]
+      },
+      "testability": "hybrid",
+      "review_note": "Recorded the official custom-type default and minimum size table for each supported platform."
+    },
+    "HIG-FOUNDATIONS-ACCESSIBILITY-0003": {
+      "source": {
+        "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+        "source_sentence_hash": "b8d42391cd3f29c6612fa6972d1e93d8d23522c1bcdc7dd8fcaa2a5fa1da9d2e",
+        "section_path": [
+          "Accessibility",
+          "Vision"
+        ]
+      },
+      "title": "Meet source-scoped minimum color contrast guidance",
+      "statement": {
+        "en": "Provide sufficient contrast between foreground text or icons and their backgrounds in every supported appearance.",
+        "ja": "対応するすべての外観で、前景のテキストやアイコンと背景の間に十分なコントラストを確保する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "For the WCAG Level AA values used by Accessibility Inspector, use at least 4.5:1 for text up to 17 pt.",
+        "For the same source-scoped values, use at least 3:1 for 18 pt text and for bold text of any size.",
+        "Check both light and dark appearances when Dark Mode is supported.",
+        "If the default scheme falls short, provide a conforming higher-contrast scheme when Increase Contrast is enabled."
+      ],
+      "checks": {
+        "automated": [
+          "Measure foreground/background contrast in light, dark, and Increase Contrast appearances against the source-scoped threshold."
+        ],
+        "manual": [
+          "Are essential text, icons, and states legible in every supported appearance without relying on color alone?"
+        ]
+      },
+      "testability": "hybrid",
+      "review_note": "Recorded the official WCAG-based contrast table and its Dark Mode and Increase Contrast conditions without treating it as a universal legal threshold."
+    },
+    "HIG-FOUNDATIONS-ACCESSIBILITY-0010": {
+      "source": {
+        "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+        "source_sentence_hash": "95519e44be5aba7632fe555f3756be11b8df9b4c5e218071eeb874207ef3aac7",
+        "section_path": [
+          "Accessibility",
+          "Mobility"
+        ]
+      },
+      "title": "Meet platform control-size guidance",
+      "statement": {
+        "en": "Size interactive controls for comfortable selection using the target platform's default and minimum dimensions.",
+        "ja": "対象プラットフォームのデフォルト寸法と最小寸法に従い、操作しやすい大きさのコントロールを提供する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "iOS and iPadOS: prefer 44 by 44 pt and do not go below 28 by 28 pt.",
+        "macOS: prefer 28 by 28 pt and do not go below 20 by 20 pt.",
+        "tvOS: prefer 66 by 66 pt and do not go below 56 by 56 pt.",
+        "visionOS: prefer 60 by 60 pt and do not go below 28 by 28 pt.",
+        "watchOS: prefer 44 by 44 pt and do not go below 28 by 28 pt."
+      ],
+      "checks": {
+        "automated": [
+          "Measure rendered interactive hit regions and compare them with the source-scoped platform minimum."
+        ],
+        "manual": [
+          "Are controls comfortably selectable for people with limited dexterity or mobility?"
+        ]
+      },
+      "testability": "hybrid",
+      "review_note": "Recorded the official default and minimum control-size table for each supported platform."
+    }
+  }
+}

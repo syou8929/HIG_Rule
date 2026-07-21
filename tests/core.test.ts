@@ -4,10 +4,14 @@ import { Ajv2020 } from "ajv/dist/2020.js";
 import addFormatsModule from "ajv-formats";
 import ruleSchema from "../schemas/rule.schema.json" with { type: "json" };
 import sourcePageSchema from "../schemas/source-page.schema.json" with { type: "json" };
+import duplicateReview from "../src/config/duplicate-review.json" with { type: "json" };
+import sourceReview from "../src/config/source-review.json" with { type: "json" };
+import { duplicateGroupKey, duplicateSourceTraceHash, findExactDuplicateGroups, normalizeRuleStatement } from "../src/lib/duplicates.js";
 import { loadRules, loadSourcePages } from "../src/lib/store.js";
-import { normative, paraphrase, platformsForCandidate } from "../src/lib/rules.js";
+import { isActionable, normative, paraphrase, platformsForCandidate } from "../src/lib/rules.js";
+import { nextReviewBatch, pendingRuleReviews } from "../src/lib/review-queue.js";
 import type { GuidanceCandidate, SourcePage } from "../src/lib/types.js";
-import { normalizeUrl } from "../src/lib/util.js";
+import { normalizeUrl, sha256 } from "../src/lib/util.js";
 import { diffRuleSnapshots, type RuleSnapshot } from "../src/lib/rule-diff.js";
 
 test("normalizes HIG URLs and rejects out-of-scope URLs", () => {
@@ -26,6 +30,14 @@ test("paraphrases common imperative leads", () => {
   const result = paraphrase("Support larger text sizes", "Accessibility");
   assert.equal(result.en, "Ensure the experience accommodates larger text sizes.");
   assert.notEqual(result.en.toLowerCase(), "support larger text sizes");
+});
+
+test("recognizes actionable plain-list guidance", () => {
+  assert.equal(isActionable({ text: "Identify the core functionality", section_path: [], source_sentence_hash: "a".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Break up multistep workflows", section_path: [], source_sentence_hash: "b".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Avoiding animating depth changes", section_path: [], source_sentence_hash: "c".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Always On", section_path: [], source_sentence_hash: "d".repeat(64), word_count: 2 }), false);
+  assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 
 test("scopes platform-consideration rules more narrowly than their page", () => {
@@ -72,4 +84,45 @@ test("keeps mixed-strength reviewed guidance atomic", async () => {
   assert.equal(optional?.normative_level, "MAY");
   assert.match(optional?.statement.en ?? "", /custom dismissal time/i);
   assert.equal(required?.source.source_sentence_hash, optional?.source.source_sentence_hash);
+});
+
+test("keeps exact duplicate reviews aligned with canonical source traces", async () => {
+  const rules = (await loadRules()).filter((rule) => rule.status === "active");
+  const ruleById = new Map(rules.map((rule) => [rule.id, rule]));
+  const groups = findExactDuplicateGroups(rules);
+  assert.deepEqual(
+    groups.map(duplicateGroupKey).sort(),
+    duplicateReview.groups.map((review) => duplicateGroupKey(review.rule_ids)).sort(),
+  );
+  for (const review of duplicateReview.groups) {
+    const groupRules = review.rule_ids.map((id) => ruleById.get(id)).filter((rule): rule is NonNullable<typeof rule> => Boolean(rule));
+    assert.equal(groupRules.length, review.rule_ids.length);
+    assert.equal(sha256(normalizeRuleStatement(groupRules[0]!.statement.en)), review.normalized_statement_hash);
+    assert.equal(duplicateSourceTraceHash(groupRules), review.source_trace_hash);
+  }
+});
+
+test("excludes source-reviewed normative rules from the prioritized review queue", async () => {
+  const rules = await loadRules();
+  const normativeReviewed = rules.filter((rule) => ["MUST", "MUST_NOT"].includes(rule.normative_level));
+  assert.ok(normativeReviewed.length > 0);
+  assert.equal(normativeReviewed.every((rule) => !rule.review_required), true);
+  const pending = pendingRuleReviews(rules);
+  const batch = nextReviewBatch(rules);
+  assert.equal(pending.some((rule) => ["MUST", "MUST_NOT"].includes(rule.normative_level)), false);
+  assert.ok(batch.length > 0);
+  assert.equal(batch.every((rule) => rule.priority_rank === batch[0]?.priority_rank), true);
+});
+
+test("keeps general source reviews aligned with canonical traces", async () => {
+  const rules = await loadRules();
+  const ruleById = new Map(rules.map((rule) => [rule.id, rule]));
+  for (const [id, review] of Object.entries(sourceReview.rules)) {
+    const rule = ruleById.get(id);
+    assert.ok(rule);
+    assert.equal(rule.source.source_hash, review.source.source_hash);
+    assert.equal(rule.source.source_sentence_hash, review.source.source_sentence_hash);
+    assert.deepEqual(rule.source.section_path, review.source.section_path);
+    assert.equal(rule.review_required, false);
+  }
 });

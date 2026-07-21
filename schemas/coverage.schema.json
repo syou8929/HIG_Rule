@@ -4,18 +4,19 @@
   "title": "Apple HIG Coverage Report",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "generated_at", "totals", "by_category", "by_platform", "by_normative_level", "by_testability", "blocked_pages", "blocked_page_details", "pages_without_rules", "low_confidence_rules", "review_required_rules"],
+  "required": ["schema_version", "generated_at", "totals", "by_category", "by_platform", "by_normative_level", "by_testability", "blocked_pages", "blocked_page_details", "pages_without_rules", "low_confidence_rules", "review_required_rules", "reference_note_details"],
   "properties": {
     "schema_version": { "const": "1.0.0" },
     "generated_at": { "type": "string", "format": "date-time" },
     "totals": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["discovered", "fetched", "failed", "classified", "rules_extracted_pages", "rules"],
+      "required": ["discovered", "fetched", "failed", "classified", "rules_extracted_pages", "rules", "reference_notes"],
       "properties": {
         "discovered": { "type": "integer", "minimum": 0 }, "fetched": { "type": "integer", "minimum": 0 },
         "failed": { "type": "integer", "minimum": 0 }, "classified": { "type": "integer", "minimum": 0 },
-        "rules_extracted_pages": { "type": "integer", "minimum": 0 }, "rules": { "type": "integer", "minimum": 0 }
+        "rules_extracted_pages": { "type": "integer", "minimum": 0 }, "rules": { "type": "integer", "minimum": 0 },
+        "reference_notes": { "type": "integer", "minimum": 0 }
       }
     },
     "by_category": { "$ref": "#/$defs/countMap" },
@@ -37,7 +38,20 @@
     },
     "pages_without_rules": { "$ref": "#/$defs/stringArray" },
     "low_confidence_rules": { "$ref": "#/$defs/stringArray" },
-    "review_required_rules": { "$ref": "#/$defs/stringArray" }
+    "review_required_rules": { "$ref": "#/$defs/stringArray" },
+    "reference_note_details": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "section_path", "note"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "section_path": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "note": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
   },
   "$defs": {
     "countMap": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },

@@ -1,12 +1,17 @@
-import type { Inventory, Rule } from "./types.js";
+import type { Inventory, Rule, SourcePage } from "./types.js";
 import { now } from "./util.js";
 
 function countBy(values: string[]): Record<string, number> {
   return Object.fromEntries(Array.from(new Set(values)).sort().map((value) => [value, values.filter((candidate) => candidate === value).length]));
 }
 
-export function makeCoverage(inventory: Inventory, rules: Rule[]) {
+export function makeCoverage(inventory: Inventory, rules: Rule[], pages: SourcePage[]) {
   const active = rules.filter((rule) => rule.status === "active");
+  const referenceNoteDetails = pages.flatMap((page) => page.reference_notes.map((note) => ({
+    url: page.canonical_url,
+    section_path: note.section_path,
+    note: note.note,
+  })));
   return {
     schema_version: "1.0.0" as const,
     generated_at: now(),
@@ -17,6 +22,7 @@ export function makeCoverage(inventory: Inventory, rules: Rule[]) {
       classified: inventory.pages.filter((page) => page.category !== "unclassified").length,
       rules_extracted_pages: inventory.pages.filter((page) => page.rule_count > 0).length,
       rules: active.length,
+      reference_notes: referenceNoteDetails.length,
     },
     by_category: countBy(active.map((rule) => rule.category)),
     by_platform: countBy(active.flatMap((rule) => rule.scope.platforms)),
@@ -30,5 +36,6 @@ export function makeCoverage(inventory: Inventory, rules: Rule[]) {
     pages_without_rules: inventory.pages.filter((page) => page.rule_count === 0).map((page) => page.url).sort(),
     low_confidence_rules: active.filter((rule) => rule.confidence === "low").map((rule) => rule.id).sort(),
     review_required_rules: active.filter((rule) => rule.review_required).map((rule) => rule.id).sort(),
+    reference_note_details: referenceNoteDetails.sort((a, b) => a.url.localeCompare(b.url) || a.section_path.join("/").localeCompare(b.section_path.join("/"))),
   };
 }

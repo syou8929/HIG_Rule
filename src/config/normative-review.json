@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T09:58:28Z",
+  "reviewed_at": "2026-07-21T11:12:09Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "12a9e655b784d19ec10d9f9ede151ba8538d9af34f31d70152f685277763264c",
@@ -8,13 +8,77 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 102,
+  "reviewed_rule_count": 110,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, or Make sure directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never or must not prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0009": {
+      "title": "Never alter Activity ring colors or opacity",
+      "statement": {
+        "en": "Do not alter Activity ring colors or opacity, including by applying filters.",
+        "ja": "Activityリングの色や不透明度を変更せず、フィルタも適用しない。"
+      },
+      "conditions": [
+        "Activity rings appear in the experience.",
+        "Apply within the component and section context identified by the source trace."
+      ],
+      "review_note": "Retained MUST_NOT after confirming the explicit Never directive in the Activity rings best-practices list."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0010": {
+      "title": "Always display Activity rings on a black background",
+      "statement": {
+        "en": "Display Activity rings only on a black background.",
+        "ja": "Activityリングは黒い背景上にのみ表示する。"
+      },
+      "conditions": [
+        "Activity rings appear in the experience.",
+        "Apply within the component and section context identified by the source trace."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Always directive in the Activity rings best-practices list."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0012": {
+      "title": "Keep the black background visible around the outermost Activity ring",
+      "statement": {
+        "en": "Keep the black background visible around the outermost Activity ring.",
+        "ja": "最外周のActivityリングの周囲に黒い背景が見える状態を保つ。"
+      },
+      "conditions": [
+        "Activity rings appear in the experience.",
+        "Apply within the component and section context identified by the source trace."
+      ],
+      "exceptions": [
+        "Add a thin black outer stroke when it is needed to preserve the visible background."
+      ],
+      "review_note": "Narrowed the MUST to the required visible-background outcome and recorded the conditional outer-stroke technique separately."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0013": {
+      "title": "Always scale Activity rings to remain visually connected and appropriately placed",
+      "statement": {
+        "en": "Scale Activity rings so they remain visually connected and appropriately placed.",
+        "ja": "Activityリングが分断されず適切に配置されて見えるよう、サイズを調整する。"
+      },
+      "conditions": [
+        "Activity rings are resized for the containing layout.",
+        "Apply within the component and section context identified by the source trace."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Always directive and its visual-scaling context."
+    },
+    "HIG-FOUNDATIONS-ACCESSIBILITY-0035": {
+      "title": "Always require two confirmations before a difficult-to-recover action",
+      "statement": {
+        "en": "Require two confirmation steps before people perform an action that is difficult to recover from.",
+        "ja": "復旧が困難な操作を実行する前に、2段階の確認を求める。"
+      },
+      "conditions": [
+        "Assistive Access is enabled.",
+        "The action is difficult to recover from.",
+        "Apply within the accessibility and section context identified by the source trace."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Always directive under the Assistive Access guidelines and restored its applicability conditions."
+    },
     "HIG-COMPONENTS-LIVE-ACTIVITIES-0015": {
       "title": "End a Live Activity immediately when its task or event ends",
       "statement": {
@@ -48,6 +112,18 @@
       ],
       "review_note": "Recorded the source's explicit modal-view exception without weakening the default requirement."
     },
+    "HIG-PATTERNS-MODALITY-0006": {
+      "title": "Ensure people receive critical information and can act when necessary",
+      "statement": {
+        "en": "Ensure people receive critical information and can act on it when necessary.",
+        "ja": "重要な情報を確実に伝え、必要な場合はその情報に基づいて行動できるようにする。"
+      },
+      "conditions": [
+        "The presented content contains critical information or requires a critical response.",
+        "Apply within the pattern and section context identified by the source trace."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Ensure directive in the modality context."
+    },
     "HIG-TECHNOLOGIES-GENERATIVE-AI-0005": {
       "conditions": [
         "Review the unavailable and opt-out experience for the role generative AI plays in the product.",
@@ -58,11 +134,49 @@
       ],
       "review_note": "Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks."
     },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0005": {
+      "conditions": [
+        "The experience uses implicit feedback or related behavioral signals.",
+        "Apply within the platform, technology, and section context identified by the source trace."
+      ],
+      "review_note": "Scoped the repeated security requirement to the Implicit feedback section."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0034": {
+      "conditions": [
+        "The experience uses people's information to calibrate a machine-learning model or result.",
+        "Apply within the platform, technology, and section context identified by the source trace."
+      ],
+      "review_note": "Scoped the repeated security requirement to the Calibration section."
+    },
+    "HIG-TECHNOLOGIES-RESEARCHKIT-0012": {
+      "title": "Make task completion clear to ResearchKit participants",
+      "statement": {
+        "en": "Clearly communicate when a ResearchKit task is complete.",
+        "ja": "ResearchKitのタスクが完了したことを参加者へ明確に伝える。"
+      },
+      "conditions": [
+        "A participant is completing a ResearchKit task.",
+        "Apply within the technology and section context identified by the source trace."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Make sure directive in the conducting-research list."
+    },
     "HIG-TECHNOLOGIES-SHAREPLAY-0009": {
       "exceptions": [
         "A participant may temporarily leave the shared activity when needed."
       ],
       "review_note": "Recorded the source's explicit temporary-exit exception."
+    },
+    "HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017": {
+      "title": "Let people view their Sign in with Apple private relay address",
+      "statement": {
+        "en": "Let people view their Sign in with Apple private relay address in the app or website.",
+        "ja": "アプリまたはWebサイト内で、Sign in with Appleのプライベートリレーアドレスを確認できるようにする。"
+      },
+      "conditions": [
+        "The app or website uses a Sign in with Apple private relay address.",
+        "Apply within the technology and section context identified by the source trace."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Make sure directive in the data-collection guidance."
     },
     "HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005": {
       "title": "Keep Tap to Pay on iPhone available while configuration continues in the background",
@@ -88,7 +202,7 @@
       },
       "normative_level": "MAY",
       "confidence": "medium",
-      "review_required": true,
+      "review_required": false,
       "polarity": "permit",
       "severity": "info",
       "conditions": [

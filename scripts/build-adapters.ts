@@ -3,14 +3,16 @@ import YAML from "yaml";
 import config from "../src/config/hig.json" with { type: "json" };
 import normativeReview from "../src/config/normative-review.json" with { type: "json" };
 import { makeCoverage } from "../src/lib/coverage.js";
-import { loadRules } from "../src/lib/store.js";
+import { nextReviewBatch, pendingRuleReviews } from "../src/lib/review-queue.js";
+import { loadRules, loadSourcePages } from "../src/lib/store.js";
 import type { Inventory, Rule } from "../src/lib/types.js";
 import { now, readJson, sha256, writeJson, writeText } from "../src/lib/util.js";
 
 const inventory = await readJson<Inventory>(resolve("src/sources/apple-hig/inventory.json"));
 const allRules = await loadRules({ includeDeprecated: true });
+const sourcePages = await loadSourcePages();
 const active = allRules.filter((rule) => rule.status === "active");
-const coverage = makeCoverage(inventory, allRules);
+const coverage = makeCoverage(inventory, allRules, sourcePages);
 
 const runtime = `1. Identify the target Apple platform, device, and input methods.
 2. Identify the primary user task and relevant product constraints.
@@ -72,6 +74,33 @@ function checklist(title: string, rules: Rule[]): string {
 const accessibility = active.filter((rule) => ["accessibility", "voiceover", "inclusion"].includes(rule.topic) || rule.tags.includes("accessibility"));
 const implementation = active.filter((rule) => ["components", "inputs", "patterns"].includes(rule.category));
 const design = active.filter((rule) => ["getting-started", "foundations", "patterns", "components"].includes(rule.category));
+const reviewQueue = pendingRuleReviews(active);
+const reviewBatch = nextReviewBatch(active);
+const countBy = (values: Array<string | number>): Record<string, number> => Object.fromEntries(
+  Array.from(new Set(values)).sort().map((value) => [String(value), values.filter((candidate) => candidate === value).length]),
+);
+const reviewQueueReport = {
+  schema_version: "1.0.0",
+  generated_at: now(),
+  remaining_review_count: reviewQueue.length,
+  next_priority_rank: reviewBatch[0]?.priority_rank ?? null,
+  next_priority_label: reviewBatch[0] ? config.conflictPriority[reviewBatch[0].priority_rank - 1] ?? null : null,
+  next_batch_count: reviewBatch.length,
+  by_priority: countBy(reviewQueue.map((rule) => rule.priority_rank)),
+  by_normative_level: countBy(reviewQueue.map((rule) => rule.normative_level)),
+  by_category: countBy(reviewQueue.map((rule) => rule.category)),
+  next_batch: reviewBatch.map((rule) => ({
+    id: rule.id,
+    normative_level: rule.normative_level,
+    confidence: rule.confidence,
+    priority_rank: rule.priority_rank,
+    category: rule.category,
+    topic: rule.topic,
+    title: rule.title,
+    source: rule.source,
+  })),
+  pending_rule_ids: reviewQueue.map((rule) => rule.id),
+};
 
 await writeJson(resolve("dist/apple-hig-rules.json"), allRules);
 await writeText(resolve("dist/apple-hig-rules.yaml"), YAML.stringify(allRules, { lineWidth: 0 }));
@@ -82,7 +111,7 @@ await writeText(resolve("dist/agents/CLAUDE.md"), `${basePrompt}\n\n## Claude Co
 await writeText(resolve("dist/agents/GEMINI.md"), `${basePrompt}\n\n## Gemini behavior\n\nCite rule IDs and source URLs for every material HIG finding.`);
 await writeText(resolve("dist/agents/copilot-instructions.md"), `${basePrompt}\n\n## GitHub Copilot behavior\n\nApply these rules while generating and reviewing UI code; flag unresolved manual checks.`);
 await writeText(resolve("dist/agents/apple-hig.mdc"), `---\ndescription: Apply source-traceable Apple HIG rules to UI design and implementation\nalwaysApply: false\n---\n\n${basePrompt}`);
-await writeText(resolve("AGENTS.md"), `${basePrompt}\n\n## Repository maintenance contract\n\n- Treat \`src/rules/**/*.json\` as the canonical rule store and rebuild every adapter from it.\n- Use only Apple official HIG pages as primary sources.\n- Never persist full source-page prose, images, video, or design resources.\n- Keep evidence fragments below 20 words and preserve source URL, section path, retrieval time, and hashes.\n- Do not raise conditional language to MUST without explicit support; route uncertainty to review.\n- Preserve stable rule IDs through \`src/config/rule-id-map.json\`; deprecate removed rules before deletion.\n- Run \`npm run ci\` after rule, schema, generator, or adapter changes.\n- Report blocked pages and pages without rules explicitly; never infer missing source content.`);
+await writeText(resolve("AGENTS.md"), `${basePrompt}\n\n## Repository maintenance contract\n\n- Treat \`src/rules/**/*.json\` as the canonical rule store and rebuild every adapter from it.\n- Use only Apple official HIG pages as primary sources.\n- Never persist full source-page prose, images, video, or design resources.\n- Keep evidence fragments below 20 words and preserve source URL, section path, retrieval time, and hashes.\n- Do not raise conditional language to MUST without explicit support; route uncertainty to review.\n- Preserve stable rule IDs through \`src/config/rule-id-map.json\`; deprecate removed rules before deletion.\n- Treat review registries under \`src/config/\` as source-trace-bound; require re-review when hashes or candidate sets become stale.\n- Run \`npm run ci\` after rule, schema, generator, or adapter changes.\n- Report blocked pages and pages without rules explicitly; never infer missing source content.`);
 await writeText(resolve("CLAUDE.md"), `${basePrompt}\n\n## Claude Code behavior\n\nRetrieve the smallest relevant rule subset before proposing or editing UI code.`);
 await writeText(resolve("GEMINI.md"), `${basePrompt}\n\n## Gemini behavior\n\nCite rule IDs and source URLs for every material HIG finding.`);
 await writeText(resolve(".github/copilot-instructions.md"), `${basePrompt}\n\n## GitHub Copilot behavior\n\nApply these rules while generating and reviewing UI code; flag unresolved manual checks.`);
@@ -90,6 +119,27 @@ await writeText(resolve(".cursor/rules/apple-hig.mdc"), `---\ndescription: Apply
 await writeText(resolve("dist/checklists/design-review.md"), checklist("UI design review checklist", design));
 await writeText(resolve("dist/checklists/implementation-review.md"), checklist("Implementation review checklist", implementation));
 await writeText(resolve("dist/checklists/accessibility-review.md"), checklist("Accessibility review checklist", accessibility));
+await writeJson(resolve("dist/reports/review-queue.json"), reviewQueueReport);
+await writeText(resolve("dist/reports/review-queue.md"), `# Human source-review queue
+
+- Remaining rules: ${reviewQueueReport.remaining_review_count}
+- Next priority: ${reviewQueueReport.next_priority_rank ?? "none"}${reviewQueueReport.next_priority_label ? ` (${reviewQueueReport.next_priority_label})` : ""}
+- Next batch: ${reviewQueueReport.next_batch_count}
+
+This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
+
+## Remaining by priority
+
+${Object.entries(reviewQueueReport.by_priority).map(([key, value]) => `- ${key} (${config.conflictPriority[Number(key) - 1] ?? "unknown"}): ${value}`).join("\n") || "None."}
+
+## Remaining by normative level
+
+${Object.entries(reviewQueueReport.by_normative_level).map(([key, value]) => `- ${key}: ${value}`).join("\n") || "None."}
+
+## Next batch
+
+${reviewBatch.length ? reviewBatch.map((rule) => `- ${rule.id} · ${rule.normative_level} — ${rule.title} · ${rule.source.section_path.join(" > ")} ([source](${rule.source.url}))`).join("\n") : "None."}
+`);
 await writeJson(resolve("src/sources/apple-hig/coverage.json"), coverage);
 await writeJson(resolve("dist/reports/coverage.json"), coverage);
 const list = (values: string[]) => values.length ? values.map((value) => `- ${value}`).join("\n") : "None.";
@@ -104,6 +154,7 @@ await writeText(resolve("dist/reports/coverage.md"), `# Coverage report
 - Pages without rules: ${coverage.pages_without_rules.length}
 - Low-confidence rules: ${coverage.low_confidence_rules.length}
 - Rules requiring human review: ${coverage.review_required_rules.length}
+- Reference notes: ${coverage.reference_note_details.length}
 
 ## Rules by category
 
@@ -136,6 +187,10 @@ ${list(coverage.low_confidence_rules)}
 ## Rules requiring human review
 
 ${list(coverage.review_required_rules)}
+
+## Reference notes
+
+${coverage.reference_note_details.length ? coverage.reference_note_details.map((item) => `- ${item.url} · ${item.section_path.join(" > ")} — ${item.note}`).join("\n") : "None."}
 `);
 
 const reviewedNormativeRules = active.filter((rule) => normativeReview.reviewed_levels.includes(rule.normative_level as "MUST" | "MUST_NOT"));
@@ -212,7 +267,12 @@ await writeJson(resolve("dist/manifest.json"), {
   active_rule_count: active.length,
   canonical_hash: canonicalHash,
   source_inventory_hash: sha256(JSON.stringify(inventory.pages.map((page) => [page.canonical_url, page.source_hash]))),
-  generated_from: ["src/rules/**/*.json", "src/sources/apple-hig/inventory.json", "src/config/normative-review.json"],
+  generated_from: [
+    "src/rules/**/*.json",
+    "src/sources/apple-hig/inventory.json",
+    "src/config/normative-review.json",
+    "src/config/source-review.json",
+  ],
 });
 
 console.log(`Built JSON, YAML, Markdown, ${6} AI adapters, and ${3} checklists from ${active.length} active rules.`);

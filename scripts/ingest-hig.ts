@@ -39,7 +39,10 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
         const sectionStack: string[] = [];
         const sections: string[][] = [];
         const candidates: Array<{ fullText: string; sectionPath: string[] }> = [];
-        const nodes = Array.from(main.querySelectorAll("h2, h3, h4, p > strong:first-child, li > strong:first-child"));
+        const numericTableSections: string[][] = [];
+        const nodes = Array.from(main.querySelectorAll(
+          "h2, h3, h4, p > strong:first-child, li > strong:first-child, li > p:first-child:not(:has(> strong:first-child)), table",
+        ));
         for (const node of nodes) {
           const value = (node.textContent || "").replace(/\s+/g, " ").trim();
           if (!value) continue;
@@ -50,6 +53,11 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
             const sectionPath = [title, ...sectionStack.filter(Boolean)];
             sections.push(sectionPath);
             if (level >= 1 && value.length <= 260) candidates.push({ fullText: value, sectionPath });
+          } else if (node.tagName === "TABLE") {
+            const sectionPath = [title, ...sectionStack.filter(Boolean)];
+            if (/\d/.test(value) && !sectionPath.some((part) => /^(change log|resources)$/i.test(part))) {
+              numericTableSections.push(sectionPath);
+            }
           } else if (value.length <= 260) {
             candidates.push({ fullText: value, sectionPath: [title, ...sectionStack.filter(Boolean)] });
           }
@@ -81,6 +89,7 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
           canonicalUrl: canonicalValue.toString(),
           sections,
           candidates,
+          numericTableSections,
           supportedPlatforms: Array.from(new Set(supportedPlatforms)),
           related: Array.from(new Set(related.filter((url) => url !== locationValue.toString() && (url === root || url.startsWith(`${root}/`))))),
         };
@@ -103,6 +112,12 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
     const referenceNotes = data.sections
       .filter((path) => !usedSections.has(path.join("/")))
       .map((sectionPath) => ({ section_path: sectionPath, note: "Section recorded for human review; no short atomic guidance lead was detected." }));
+    for (const sectionPath of data.numericTableSections) {
+      const note = "Structured numeric table detected; preserve its platform and context conditions during human source review.";
+      if (!referenceNotes.some((item) => item.note === note && item.section_path.join("/") === sectionPath.join("/"))) {
+        referenceNotes.push({ section_path: sectionPath, note });
+      }
+    }
     const sourcePage: SourcePage = {
       schema_version: "1.0.0",
       url: record.url,

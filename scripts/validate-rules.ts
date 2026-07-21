@@ -6,8 +6,11 @@ import ruleSchema from "../schemas/rule.schema.json" with { type: "json" };
 import sourcePageSchema from "../schemas/source-page.schema.json" with { type: "json" };
 import coverageSchema from "../schemas/coverage.schema.json" with { type: "json" };
 import inventorySchema from "../schemas/inventory.schema.json" with { type: "json" };
+import duplicateReview from "../src/config/duplicate-review.json" with { type: "json" };
 import normativeReview from "../src/config/normative-review.json" with { type: "json" };
+import sourceReview from "../src/config/source-review.json" with { type: "json" };
 import { makeCoverage } from "../src/lib/coverage.js";
+import { duplicateGroupKey, duplicateSourceTraceHash, findExactDuplicateGroups, normalizeRuleStatement } from "../src/lib/duplicates.js";
 import { loadRules, loadSourcePages } from "../src/lib/store.js";
 import type { Inventory } from "../src/lib/types.js";
 import { now, readJson, sha256, writeJson, writeText } from "../src/lib/util.js";
@@ -41,7 +44,7 @@ for (const page of pages) {
 }
 if (!validateCoverage(coverage)) errors.push(`coverage: ${ajv.errorsText(validateCoverage.errors)}`);
 
-const expectedCoverage = makeCoverage(inventory, rules);
+const expectedCoverage = makeCoverage(inventory, rules, pages);
 const withoutGeneratedAt = (value: unknown) => {
   if (!value || typeof value !== "object" || Array.isArray(value)) return value;
   const { generated_at: _generatedAt, ...rest } = value as Record<string, unknown>;
@@ -118,15 +121,72 @@ for (const rule of currentNormativeRules) {
   }
 }
 
-const normalizedStatements = new Map<string, string[]>();
-for (const rule of rules.filter((item) => item.status === "active")) {
-  const normalized = rule.statement.en.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
-  const matches = normalizedStatements.get(normalized) ?? [];
-  matches.push(rule.id);
-  normalizedStatements.set(normalized, matches);
+const activeRules = rules.filter((item) => item.status === "active");
+const activeRuleById = new Map(activeRules.map((rule) => [rule.id, rule]));
+const sourceReviewReportRules = Object.entries(sourceReview.rules).map(([id, review]) => {
+  const rule = activeRuleById.get(id);
+  if (!rule) {
+    errors.push(`${id}: source review points to a missing active rule`);
+    return null;
+  }
+  if (rule.source.source_hash !== review.source.source_hash
+    || rule.source.source_sentence_hash !== review.source.source_sentence_hash
+    || JSON.stringify(rule.source.section_path) !== JSON.stringify(review.source.section_path)) {
+    errors.push(`${id}: source review trace is stale`);
+  }
+  if (rule.review_required !== review.review_required || rule.confidence !== review.confidence) {
+    errors.push(`${id}: source review state is not applied to the canonical rule`);
+  }
+  return {
+    id,
+    confidence: rule.confidence,
+    review_required: rule.review_required,
+    review_note: review.review_note,
+    source: rule.source,
+  };
+}).filter((item): item is NonNullable<typeof item> => Boolean(item));
+const duplicates = findExactDuplicateGroups(activeRules);
+const duplicateByKey = new Map(duplicates.map((group) => [duplicateGroupKey(group), group]));
+const duplicateReviewByKey = new Map<string, (typeof duplicateReview.groups)[number]>();
+const validDuplicateReviewKeys = new Set<string>();
+
+for (const review of duplicateReview.groups) {
+  const key = duplicateGroupKey(review.rule_ids);
+  if (duplicateReviewByKey.has(key)) {
+    errors.push(`Duplicate review registry repeats group: ${review.rule_ids.join(", ")}`);
+    continue;
+  }
+  duplicateReviewByKey.set(key, review);
+  const currentGroup = duplicateByKey.get(key);
+  if (!currentGroup) {
+    errors.push(`Duplicate review group is stale or no longer exact: ${review.rule_ids.join(", ")}`);
+    continue;
+  }
+  const currentRules = currentGroup.map((id) => activeRuleById.get(id)).filter((rule): rule is NonNullable<typeof rule> => Boolean(rule));
+  if (currentRules.length !== currentGroup.length) {
+    errors.push(`Duplicate review group has missing canonical rules: ${review.rule_ids.join(", ")}`);
+    continue;
+  }
+  const normalizedStatementHash = sha256(normalizeRuleStatement(currentRules[0]!.statement.en));
+  const sourceTraceHash = duplicateSourceTraceHash(currentRules);
+  let valid = true;
+  if (normalizedStatementHash !== review.normalized_statement_hash) {
+    errors.push(`Duplicate review statement hash is stale: ${review.rule_ids.join(", ")}`);
+    valid = false;
+  }
+  if (sourceTraceHash !== review.source_trace_hash) {
+    errors.push(`Duplicate review source trace is stale: ${review.rule_ids.join(", ")}`);
+    valid = false;
+  }
+  if (review.disposition !== "retained_contextual_duplicate") {
+    errors.push(`Unsupported duplicate review disposition: ${review.disposition}`);
+    valid = false;
+  }
+  if (valid) validDuplicateReviewKeys.add(key);
 }
-const duplicates = Array.from(normalizedStatements.values()).filter((matches) => matches.length > 1);
-if (duplicates.length) warnings.push(`${duplicates.length} exact normalized-statement duplicate groups require review`);
+
+const unresolvedDuplicates = duplicates.filter((group) => !validDuplicateReviewKeys.has(duplicateGroupKey(group)));
+if (unresolvedDuplicates.length) warnings.push(`${unresolvedDuplicates.length} exact normalized-statement duplicate groups require review`);
 
 async function markdownFiles(directory: string): Promise<string[]> {
   const result: string[] = [];
@@ -148,9 +208,113 @@ for (const path of await markdownFiles(resolve("."))) {
   }
 }
 
-const report = { generated_at: now(), valid: errors.length === 0, errors, warnings, duplicate_rule_candidates: duplicates };
+const reviewedDuplicateGroups = duplicates
+  .filter((group) => validDuplicateReviewKeys.has(duplicateGroupKey(group)))
+  .map((group) => {
+    const review = duplicateReviewByKey.get(duplicateGroupKey(group))!;
+    const groupRules = group.map((id) => activeRuleById.get(id)!);
+    return {
+      rule_ids: group,
+      normalized_statement_hash: review.normalized_statement_hash,
+      source_trace_hash: review.source_trace_hash,
+      disposition: review.disposition,
+      review_note: review.review_note,
+      sources: groupRules.map((rule) => ({
+        id: rule.id,
+        url: rule.source.url,
+        section_path: rule.source.section_path,
+        source_hash: rule.source.source_hash,
+        source_sentence_hash: rule.source.source_sentence_hash,
+      })),
+    };
+  });
+const duplicateReviewReport = {
+  schema_version: duplicateReview.schema_version,
+  generated_at: now(),
+  reviewed_at: duplicateReview.reviewed_at,
+  review_method: duplicateReview.review_method,
+  official_source_only: duplicateReview.official_source_only,
+  candidate_group_count: duplicates.length,
+  reviewed_group_count: reviewedDuplicateGroups.length,
+  unresolved_group_count: unresolvedDuplicates.length,
+  groups: reviewedDuplicateGroups,
+  unresolved_groups: unresolvedDuplicates,
+};
+const sourceReviewReport = {
+  schema_version: sourceReview.schema_version,
+  generated_at: now(),
+  reviewed_at: sourceReview.reviewed_at,
+  review_method: sourceReview.review_method,
+  official_source_only: sourceReview.official_source_only,
+  reviewed_rule_count: sourceReviewReportRules.length,
+  rules: sourceReviewReportRules,
+};
+await writeJson(resolve("dist/reports/source-review.json"), sourceReviewReport);
+await writeText(resolve("dist/reports/source-review.md"), `# General source-context review
+
+- Reviewed rules: ${sourceReviewReport.reviewed_rule_count}
+- Official source only: ${sourceReviewReport.official_source_only ? "yes" : "no"}
+- Reviewed at: ${sourceReviewReport.reviewed_at}
+
+This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
+
+## Reviewed rules
+
+${sourceReviewReportRules.length ? sourceReviewReportRules.map((item) => `- ${item.id} · ${item.confidence} — ${item.review_note} ([source](${item.source.url}))`).join("\n") : "None."}
+`);
+await writeJson(resolve("dist/reports/duplicate-review.json"), duplicateReviewReport);
+await writeText(resolve("dist/reports/duplicate-review.md"), `# Exact duplicate source review
+
+- Candidate groups: ${duplicateReviewReport.candidate_group_count}
+- Reviewed contextual groups: ${duplicateReviewReport.reviewed_group_count}
+- Unresolved groups: ${duplicateReviewReport.unresolved_group_count}
+- Official source only: ${duplicateReviewReport.official_source_only ? "yes" : "no"}
+- Reviewed at: ${duplicateReviewReport.reviewed_at}
+
+Exact statements are retained only when separate Apple HIG pages, sections, components, technologies, or platform scopes need independent retrieval. This is not a claim of authoritative HIG compliance.
+
+## Reviewed contextual duplicates
+
+${reviewedDuplicateGroups.length ? reviewedDuplicateGroups.map((group) => `- ${group.rule_ids.join(", ")} — ${group.review_note}\n${group.sources.map((source) => `  - ${source.id}: ${source.section_path.join(" > ")} ([source](${source.url}))`).join("\n")}`).join("\n") : "None."}
+
+## Unresolved duplicate candidates
+
+${unresolvedDuplicates.length ? unresolvedDuplicates.map((ids) => `- ${ids.join(", ")}`).join("\n") : "None."}
+`);
+
+const report = {
+  generated_at: now(),
+  valid: errors.length === 0,
+  errors,
+  warnings,
+  duplicate_rule_candidates: duplicates,
+  reviewed_duplicate_groups: reviewedDuplicateGroups.map((group) => group.rule_ids),
+  unresolved_duplicate_candidates: unresolvedDuplicates,
+};
 await writeJson(resolve("dist/reports/validation.json"), report);
-await writeText(resolve("dist/reports/validation.md"), `# Validation report\n\n- Result: ${report.valid ? "PASS" : "FAIL"}\n- Errors: ${errors.length}\n- Warnings: ${warnings.length}\n- Duplicate candidate groups: ${duplicates.length}\n\n## Errors\n\n${errors.length ? errors.map((error) => `- ${error}`).join("\n") : "None."}\n\n## Warnings\n\n${warnings.length ? warnings.map((warning) => `- ${warning}`).join("\n") : "None."}\n\n## Duplicate rule candidates\n\n${duplicates.length ? duplicates.map((ids) => `- ${ids.join(", ")}`).join("\n") : "None."}`);
+await writeText(resolve("dist/reports/validation.md"), `# Validation report
+
+- Result: ${report.valid ? "PASS" : "FAIL"}
+- Errors: ${errors.length}
+- Warnings: ${warnings.length}
+- Duplicate candidate groups: ${duplicates.length}
+- Reviewed duplicate groups: ${reviewedDuplicateGroups.length}
+- Unresolved duplicate groups: ${unresolvedDuplicates.length}
+
+## Errors
+
+${errors.length ? errors.map((error) => `- ${error}`).join("\n") : "None."}
+
+## Warnings
+
+${warnings.length ? warnings.map((warning) => `- ${warning}`).join("\n") : "None."}
+
+## Unresolved duplicate candidates
+
+${unresolvedDuplicates.length ? unresolvedDuplicates.map((ids) => `- ${ids.join(", ")}`).join("\n") : "None."}
+
+Reviewed contextual duplicates are recorded in [duplicate-review.md](duplicate-review.md).
+`);
 
 if (errors.length) {
   console.error(errors.join("\n"));

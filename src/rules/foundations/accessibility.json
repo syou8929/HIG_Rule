@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0001",
-    "title": "Support larger text sizes",
+    "title": "Support platform-appropriate text and icon enlargement",
     "category": "foundations",
     "topic": "accessibility",
     "subtopic": "vision",
     "statement": {
-      "en": "Ensure the experience accommodates larger text sizes.",
-      "ja": "larger text sizesを利用できる設計にする。"
+      "en": "Let people enlarge text and icons using Dynamic Type or an equivalent custom control.",
+      "ja": "Dynamic Typeまたは同等のカスタム操作により、テキストやアイコンを拡大できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36,7 +36,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Support enlargement to at least 200 percent on iOS, iPadOS, macOS, tvOS, and visionOS where the source guidance applies.",
+      "Support enlargement to at least 140 percent in watchOS apps.",
+      "Verify legibility, visibility, and reading comfort at enlarged sizes."
     ],
     "exceptions": [],
     "rationale": {
@@ -45,10 +47,11 @@
     },
     "checks": {
       "automated": [
-        "Run UI tests at the platform’s largest supported text setting and detect clipped, truncated, or overlapping essential text."
+        "Run UI tests at the platform's largest supported text setting and detect clipped, truncated, or overlapping essential content.",
+        "Verify that the supported enlargement range reaches the source-scoped percentage for the target platform."
       ],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates larger text sizes.” in the documented Accessibility context?"
+        "Can people enlarge text and icons to the source-scoped target without losing essential content or actions?"
       ]
     },
     "testability": "hybrid",
@@ -65,10 +68,10 @@
         "Accessibility",
         "Vision"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "078f60e5dd883d3995edf23799d90cdfa723cb54c50229c29715fbf988763fb4",
-      "evidence_paraphrase": "Ensure the experience accommodates larger text sizes."
+      "evidence_paraphrase": "Let people enlarge text and icons using Dynamic Type or an equivalent custom control."
     },
     "tags": [
       "foundations",
@@ -77,22 +80,22 @@
     ],
     "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates larger text sizes.",
+    "apple_native_rule": "Let people enlarge text and icons using Dynamic Type or an equivalent custom control.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0002",
-    "title": "Use recommended defaults for custom type sizes",
+    "title": "Use platform defaults and minimums for custom type sizes",
     "category": "foundations",
     "topic": "accessibility",
     "subtopic": "vision",
     "statement": {
-      "en": "Choose or apply recommended defaults for custom type sizes in the documented context.",
-      "ja": "該当する状況ではrecommended defaults for custom type sizesを採用する。"
+      "en": "When using custom type styles, follow the target platform's recommended default and minimum sizes.",
+      "ja": "カスタム書体スタイルを使う場合は、対象プラットフォームの推奨デフォルトサイズと最小サイズに従う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -117,86 +120,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
-    ],
-    "exceptions": [],
-    "rationale": {
-      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
-      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
-    },
-    "checks": {
-      "automated": [],
-      "manual": [
-        "Does the design satisfy “Choose or apply recommended defaults for custom type sizes in the documented context.” in the documented Accessibility context?"
-      ]
-    },
-    "testability": "manual",
-    "anti_patterns": [
-      "Ignoring this guidance in a context where the source section applies."
-    ],
-    "positive_examples": [
-      "A design review records how the implementation satisfies this rule and any source-scoped exception."
-    ],
-    "source": {
-      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
-      "page_title": "Accessibility",
-      "section_path": [
-        "Accessibility",
-        "Vision"
-      ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
-      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
-      "source_sentence_hash": "e8a8ef580398bc1ee1bcd944fb626e84976328b48d7b81a0f6861afcf3708b2d",
-      "evidence_paraphrase": "Choose or apply recommended defaults for custom type sizes in the documented context."
-    },
-    "tags": [
-      "foundations",
-      "accessibility",
-      "vision"
-    ],
-    "priority_rank": 2,
-    "status": "active",
-    "apple_native_rule": "Choose or apply recommended defaults for custom type sizes in the documented context.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
-  },
-  {
-    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0003",
-    "title": "Strive to meet color contrast minimum standards",
-    "category": "foundations",
-    "topic": "accessibility",
-    "subtopic": "vision",
-    "statement": {
-      "en": "Apply the documented Accessibility guidance to strive to meet color contrast minimum standards.",
-      "ja": "「Accessibility」において「Strive to meet color contrast minimum standards」の指針を適用する。"
-    },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
-    "scope": {
-      "portability": "apple-platform",
-      "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
-      ],
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
-      ],
-      "components": [],
-      "modalities": []
-    },
-    "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "iOS and iPadOS: use 17 pt by default and do not go below 11 pt.",
+      "macOS: use 13 pt by default and do not go below 10 pt.",
+      "tvOS: use 29 pt by default and do not go below 23 pt.",
+      "visionOS: use 17 pt by default and do not go below 12 pt.",
+      "watchOS: use 16 pt by default and do not go below 12 pt."
     ],
     "exceptions": [],
     "rationale": {
@@ -205,10 +133,10 @@
     },
     "checks": {
       "automated": [
-        "Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold."
+        "Compare custom type-style defaults and minimums with the source-scoped values for every supported platform."
       ],
       "manual": [
-        "Does the design satisfy “Apply the documented Accessibility guidance to strive to meet color contrast minimum standards.” in the documented Accessibility context?"
+        "Do custom type choices remain readable while respecting the platform-specific default and minimum sizes?"
       ]
     },
     "testability": "hybrid",
@@ -225,10 +153,10 @@
         "Accessibility",
         "Vision"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
-      "source_sentence_hash": "b8d42391cd3f29c6612fa6972d1e93d8d23522c1bcdc7dd8fcaa2a5fa1da9d2e",
-      "evidence_paraphrase": "Apply the documented Accessibility guidance to strive to meet color contrast minimum standards."
+      "source_sentence_hash": "e8a8ef580398bc1ee1bcd944fb626e84976328b48d7b81a0f6861afcf3708b2d",
+      "evidence_paraphrase": "When using custom type styles, follow the target platform's recommended default and minimum sizes."
     },
     "tags": [
       "foundations",
@@ -237,7 +165,91 @@
     ],
     "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Apply the documented Accessibility guidance to strive to meet color contrast minimum standards.",
+    "apple_native_rule": "When using custom type styles, follow the target platform's recommended default and minimum sizes.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0003",
+    "title": "Meet source-scoped minimum color contrast guidance",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "vision",
+    "statement": {
+      "en": "Provide sufficient contrast between foreground text or icons and their backgrounds in every supported appearance.",
+      "ja": "対応するすべての外観で、前景のテキストやアイコンと背景の間に十分なコントラストを確保する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "For the WCAG Level AA values used by Accessibility Inspector, use at least 4.5:1 for text up to 17 pt.",
+      "For the same source-scoped values, use at least 3:1 for 18 pt text and for bold text of any size.",
+      "Check both light and dark appearances when Dark Mode is supported.",
+      "If the default scheme falls short, provide a conforming higher-contrast scheme when Increase Contrast is enabled."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Measure foreground/background contrast in light, dark, and Increase Contrast appearances against the source-scoped threshold."
+      ],
+      "manual": [
+        "Are essential text, icons, and states legible in every supported appearance without relying on color alone?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Vision"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "b8d42391cd3f29c6612fa6972d1e93d8d23522c1bcdc7dd8fcaa2a5fa1da9d2e",
+      "evidence_paraphrase": "Provide sufficient contrast between foreground text or icons and their backgrounds in every supported appearance."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "vision"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Provide sufficient contrast between foreground text or icons and their backgrounds in every supported appearance.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -304,7 +316,7 @@
         "Accessibility",
         "Vision"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "a2a41c0f22796ffd93c66cf5d8eb64a1d91589105910b0e2c053b2c0c6a465a3",
       "evidence_paraphrase": "Favor system-defined colors when the documented conditions apply."
@@ -383,7 +395,7 @@
         "Accessibility",
         "Vision"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "7349e0c28c8d83b9a8763cd1b02e6506f9f71bb25648f8611c505f48df39f1cd",
       "evidence_paraphrase": "Apply the documented Accessibility guidance to convey information with more than color alone."
@@ -467,7 +479,7 @@
         "Accessibility",
         "Vision"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "9a88ea11af4345ba7d658022d9bf5a65b94f57d2e5ec9d069690dcde4579538e",
       "evidence_paraphrase": "Apply the documented Accessibility guidance to describe your app’s interface and content for VoiceOver."
@@ -548,7 +560,7 @@
         "Accessibility",
         "Hearing"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "6895def921031060f84610def48507cae2406a408f4cbecfde0a4f62f8a9bc93",
       "evidence_paraphrase": "Ensure the experience accommodates text-based ways to enjoy audio and video."
@@ -627,7 +639,7 @@
         "Accessibility",
         "Hearing"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "8cfd75e769d188e87f94c7915389cf2c42835fb81388c94eaa4fc125c4228dfe",
       "evidence_paraphrase": "Choose or apply haptics in addition to audio cues in the documented context."
@@ -706,7 +718,7 @@
         "Accessibility",
         "Hearing"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "d85711c579d5fb5605f34133a15777c7abf9470f5ad3a782453c85521c49eee4",
       "evidence_paraphrase": "Apply the documented Accessibility guidance to augment audio cues with visual cues."
@@ -723,17 +735,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0010",
-    "title": "Offer sufficiently sized controls",
+    "title": "Meet platform control-size guidance",
     "category": "foundations",
     "topic": "accessibility",
     "subtopic": "mobility",
     "statement": {
-      "en": "Make sufficiently sized controls available when applicable.",
-      "ja": "必要な場合にsufficiently sized controlsを利用可能にする。"
+      "en": "Size interactive controls for comfortable selection using the target platform's default and minimum dimensions.",
+      "ja": "対象プラットフォームのデフォルト寸法と最小寸法に従い、操作しやすい大きさのコントロールを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -758,7 +770,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "iOS and iPadOS: prefer 44 by 44 pt and do not go below 28 by 28 pt.",
+      "macOS: prefer 28 by 28 pt and do not go below 20 by 20 pt.",
+      "tvOS: prefer 66 by 66 pt and do not go below 56 by 56 pt.",
+      "visionOS: prefer 60 by 60 pt and do not go below 28 by 28 pt.",
+      "watchOS: prefer 44 by 44 pt and do not go below 28 by 28 pt."
     ],
     "exceptions": [],
     "rationale": {
@@ -766,12 +782,14 @@
       "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
     },
     "checks": {
-      "automated": [],
+      "automated": [
+        "Measure rendered interactive hit regions and compare them with the source-scoped platform minimum."
+      ],
       "manual": [
-        "Does the design satisfy “Make sufficiently sized controls available when applicable.” in the documented Accessibility context?"
+        "Are controls comfortably selectable for people with limited dexterity or mobility?"
       ]
     },
-    "testability": "manual",
+    "testability": "hybrid",
     "anti_patterns": [
       "Ignoring this guidance in a context where the source section applies."
     ],
@@ -785,10 +803,10 @@
         "Accessibility",
         "Mobility"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "95519e44be5aba7632fe555f3756be11b8df9b4c5e218071eeb874207ef3aac7",
-      "evidence_paraphrase": "Make sufficiently sized controls available when applicable."
+      "evidence_paraphrase": "Size interactive controls for comfortable selection using the target platform's default and minimum dimensions."
     },
     "tags": [
       "foundations",
@@ -797,7 +815,7 @@
     ],
     "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Make sufficiently sized controls available when applicable.",
+    "apple_native_rule": "Size interactive controls for comfortable selection using the target platform's default and minimum dimensions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -864,7 +882,7 @@
         "Accessibility",
         "Mobility"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "d15522430298b1e1fda2270ab365642951896525e930401766efb61c999a13e7",
       "evidence_paraphrase": "Evaluate whether spacing between controls as important as size is appropriate for the current context."
@@ -945,7 +963,7 @@
         "Accessibility",
         "Mobility"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "9a3bca40a0c5d8d7e1e6bb469db01adb1892b52bf2aaf0ef670074bcd88cf325",
       "evidence_paraphrase": "Ensure the experience accommodates simple gestures for common interactions."
@@ -1027,7 +1045,7 @@
         "Accessibility",
         "Mobility"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "638e6da5ef4c0cf79f2b16403b36de31a2a7dc92377bfca1f526ec6c2b73ddd5",
       "evidence_paraphrase": "Make alternatives to gestures available when applicable."
@@ -1109,7 +1127,7 @@
         "Accessibility",
         "Mobility"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "057ce80b7e7e6253e4b2e29c47197db2a2f07b1f652b7eb13eff0dc4f1f467b4",
       "evidence_paraphrase": "Preserve people’s ability to use Voice Control to give guidance and enter information verbally."
@@ -1189,7 +1207,7 @@
         "Accessibility",
         "Mobility"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "379663fbe792845d78d6fe15256c2358aeeb8b2a710fd2b14511916f4d37533c",
       "evidence_paraphrase": "Ensure the experience accommodates mobility-related assistive technologies."
@@ -1272,7 +1290,7 @@
         "Accessibility",
         "Speech"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "139a0a23a8c597102729c693584c07df81766392c868f8d7e300538b6feaf7aa",
       "evidence_paraphrase": "Preserve people’s ability to use the keyboard alone to navigate and interact with your app."
@@ -1352,7 +1370,7 @@
         "Accessibility",
         "Speech"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "a641ab4f6af7f9f927cb43ff1660531f611bee2f231b712837e3b2d560dfdfec",
       "evidence_paraphrase": "Ensure the experience accommodates switch Control."
@@ -1431,7 +1449,7 @@
         "Accessibility",
         "Cognitive"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "2b280541c45bc0cda8c0ee204d4bf3983604d1dcae936e34fdc96258937ce13f",
       "evidence_paraphrase": "Maintain actions simple and intuitive."
@@ -1510,7 +1528,7 @@
         "Accessibility",
         "Cognitive"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "c4e4901a16216c12ce3b5ecec89cf840f0d9d2c3e710a48a63e4b6071de4c535",
       "evidence_paraphrase": "Apply the documented Accessibility guidance to minimize use of time-boxed interface elements."
@@ -1589,7 +1607,7 @@
         "Accessibility",
         "Cognitive"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "ab0e4dbd3ffc19db76eef91792ee547e4b79d609f149a6b9ad921ba3ac091614",
       "evidence_paraphrase": "Evaluate whether offering difficulty accommodations in games is appropriate for the current context."
@@ -1668,7 +1686,7 @@
         "Accessibility",
         "Cognitive"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "53cbb63ca0da377aab72e9252ff4ab8cfe20e6fbe27edd81352863e232b5364b",
       "evidence_paraphrase": "Preserve people’s ability to control audio and video playback."
@@ -1747,7 +1765,7 @@
         "Accessibility",
         "Cognitive"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "ba65e102ab646f9bf7131566eb3c0d6ddc79727827903397034fd77dad6780b3",
       "evidence_paraphrase": "Apply the documented Accessibility guidance to allow people to opt out of flashing lights in video playback."
@@ -1826,7 +1844,7 @@
         "Accessibility",
         "Cognitive"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "836e3e9d386eab0683a1de5c9f4ebdb71ac1a58605bec13c1e29bdd73fc5adc8",
       "evidence_paraphrase": "Apply the documented Accessibility guidance to be cautious with fast-moving and blinking animations."
@@ -1905,7 +1923,7 @@
         "Accessibility",
         "Cognitive"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "f43c20b6687a4d4990080e90f8d772fe223069f2d62f931d31e95c0350abef32",
       "evidence_paraphrase": "Apply the documented Accessibility guidance to optimize your app’s UI for Assistive Access."
@@ -1975,7 +1993,7 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T09:49:33.353Z",
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
       "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
       "source_sentence_hash": "4e01b6389808861da60d686727eec0eb5e6f64eb4914543041152a6f8f404745",
       "evidence_paraphrase": "Apply the documented Accessibility guidance to prioritize comfort."
@@ -1989,6 +2007,1166 @@
     "priority_rank": 2,
     "status": "active",
     "apple_native_rule": "Apply the documented Accessibility guidance to prioritize comfort.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0026",
+    "title": "Bear in mind that font weight can also impact how easy text is to read",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "vision",
+    "statement": {
+      "en": "Account for that font weight can also impact how easy text is to read in the design.",
+      "ja": "that font weight can also impact how easy text is to readを設計上考慮する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Account for that font weight can also impact how easy text is to read in the design.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Vision"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "8e265f6965dfebf4d569c846bec39adbfde2946c989fe3d417b970ce263a5f34",
+      "evidence_paraphrase": "Account for that font weight can also impact how easy text is to read in the design."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "vision"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Account for that font weight can also impact how easy text is to read in the design.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0027",
+    "title": "Integrate with Siri and Shortcuts to let people perform tasks using voice alone",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "mobility",
+    "statement": {
+      "en": "Connect the experience with with Siri and Shortcuts to let people perform tasks using voice alone.",
+      "ja": "with Siri and Shortcuts to let people perform tasks using voice aloneと体験を連携する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard",
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Connect the experience with with Siri and Shortcuts to let people perform tasks using voice alone.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Mobility"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "738fbe9b76a322acf61e0d1a091d321236ed46c9ca4bfd60bee291626cbe573c",
+      "evidence_paraphrase": "Connect the experience with with Siri and Shortcuts to let people perform tasks using voice alone."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "mobility",
+      "keyboard",
+      "voice"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Connect the experience with with Siri and Shortcuts to let people perform tasks using voice alone.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0028",
+    "title": "Tighten animation springs to reduce bounce effects",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "cognitive",
+    "statement": {
+      "en": "Use tighter animation springs to reduce bounce effects.",
+      "ja": "animation springs to reduce bounce effectsをより引き締める。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use tighter animation springs to reduce bounce effects.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Cognitive"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "030aa0b9c5fb79b74882d3770fd6a3f441d4dd92d0c7d8af4777a5097ae7685a",
+      "evidence_paraphrase": "Use tighter animation springs to reduce bounce effects."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "cognitive"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Use tighter animation springs to reduce bounce effects.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0029",
+    "title": "Track animations directly with people’s gestures",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "cognitive",
+    "statement": {
+      "en": "Keep animations directly with people’s gestures synchronized.",
+      "ja": "animations directly with people’s gesturesを同期させる。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep animations directly with people’s gestures synchronized.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Cognitive"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "095967db4ba3d5dde58ac3bb6c69816c9509324f374e8d059c0c8851bebcb5e4",
+      "evidence_paraphrase": "Keep animations directly with people’s gestures synchronized."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "cognitive",
+      "gesture"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Keep animations directly with people’s gestures synchronized.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0030",
+    "title": "Avoid animating depth changes in z-axis layers",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "cognitive",
+    "statement": {
+      "en": "Exclude animating depth changes in z-axis layers from the applicable experience.",
+      "ja": "該当する体験ではanimating depth changes in z-axis layersを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude animating depth changes in z-axis layers from the applicable experience.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Cognitive"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "eef93f8372a44d298a3f194805fc4babaea322be6a88d26d70d546e93466986e",
+      "evidence_paraphrase": "Exclude animating depth changes in z-axis layers from the applicable experience."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "cognitive"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Exclude animating depth changes in z-axis layers from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0031",
+    "title": "Replace transitions in x-, y-, and z-axes with fades to avoid motion",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "cognitive",
+    "statement": {
+      "en": "Substitute transitions in x-, y-, and z-axes with fades to avoid motion.",
+      "ja": "transitions in x-, y-, and z-axes with fades to avoid motionへ置き換える。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Substitute transitions in x-, y-, and z-axes with fades to avoid motion.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Cognitive"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "5d6b61a36e4c5e287506b9e551e84d969d1240accbd5645b035050898ead686a",
+      "evidence_paraphrase": "Substitute transitions in x-, y-, and z-axes with fades to avoid motion."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "cognitive"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Substitute transitions in x-, y-, and z-axes with fades to avoid motion.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0032",
+    "title": "Avoid animating into and out of blurs",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "cognitive",
+    "statement": {
+      "en": "Exclude animating into and out of blurs from the applicable experience.",
+      "ja": "該当する体験ではanimating into and out of blursを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude animating into and out of blurs from the applicable experience.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Cognitive"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "7179ea7e27457b9e0d52825e231ac11f7a1fff8883d6f5a7488ca62bfe6fc153",
+      "evidence_paraphrase": "Exclude animating into and out of blurs from the applicable experience."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "cognitive"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Exclude animating into and out of blurs from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0033",
+    "title": "Identify the core functionality of your app and consider removing noncritical workflows and UI elements",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "cognitive",
+    "statement": {
+      "en": "Determine the core functionality of your app and consider removing noncritical workflows and UI elements explicitly.",
+      "ja": "the core functionality of your app and consider removing noncritical workflows and UI elementsを明確に特定する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Determine the core functionality of your app and consider removing noncritical workflows and UI elements explicitly.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Cognitive"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "c408ff49e92876b257be40ac780957531cdd3b1e5dd71260e5bcfa32ef5825b1",
+      "evidence_paraphrase": "Determine the core functionality of your app and consider removing noncritical workflows and UI elements explicitly."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "cognitive"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Determine the core functionality of your app and consider removing noncritical workflows and UI elements explicitly.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0034",
+    "title": "Break up multistep workflows so people can focus on a single interaction per screen",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "cognitive",
+    "statement": {
+      "en": "Divide multistep workflows so people can focus on a single interaction per screen into focused steps.",
+      "ja": "multistep workflows so people can focus on a single interaction per screenを集中しやすい手順に分割する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Divide multistep workflows so people can focus on a single interaction per screen into focused steps.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Cognitive"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "2311f98f3cf9a81ec195f5c91cf84f8582d69e7a23a0eae851f926941a8cd46f",
+      "evidence_paraphrase": "Divide multistep workflows so people can focus on a single interaction per screen into focused steps."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "cognitive"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Divide multistep workflows so people can focus on a single interaction per screen into focused steps.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0035",
+    "title": "Always require two confirmations before a difficult-to-recover action",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "cognitive",
+    "statement": {
+      "en": "Require two confirmation steps before people perform an action that is difficult to recover from.",
+      "ja": "復旧が困難な操作を実行する前に、2段階の確認を求める。"
+    },
+    "normative_level": "MUST",
+    "confidence": "medium",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Assistive Access is enabled.",
+      "The action is difficult to recover from.",
+      "Apply within the accessibility and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Require two confirmation steps before people perform an action that is difficult to recover from.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Cognitive"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "3ceb9b23bc7fe9e71681b3ad1daac728379534835a48298a6f5c9e7bc08dc0f8",
+      "evidence_paraphrase": "Require two confirmation steps before people perform an action that is difficult to recover from."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "cognitive"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Require two confirmation steps before people perform an action that is difficult to recover from.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0036",
+    "title": "Keep interface elements within a person’s field of view. Prefer horizontal layouts to vertical ones that mi…",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Maintain interface elements within a person’s field of view. Prefer horizontal layouts to vertical ones that might cause neck.",
+      "ja": "interface elements within a person’s field of view. Prefer horizontal layouts to vertical ones that might cause neckを維持する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Maintain interface elements within a person’s field of view. Prefer horizontal layouts to vertical ones that might cause neck.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "cc2fa24731f9827459295c80181d41c9397755a745a8ebb43ddc638088760b33",
+      "evidence_paraphrase": "Maintain interface elements within a person’s field of view. Prefer horizontal layouts to vertical ones that might cause neck."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Maintain interface elements within a person’s field of view. Prefer horizontal layouts to vertical ones that might cause neck.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0037",
+    "title": "Reduce the speed and intensity of animated objects, particularly in someone’s peripheral vision",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Apply the documented Accessibility guidance to reduce the speed and intensity of animated objects, particularly in someone’s peripheral vision.",
+      "ja": "「Accessibility」において「Reduce the speed and intensity of animated objects, particularly in someone’s peripheral vision」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Accessibility guidance to reduce the speed and intensity of animated objects, particularly in someone’s peripheral vision.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "36fae4a0775621ac728ce43b0378f6d8376bbfb0383c1e4f7f79e34b1ec7f081",
+      "evidence_paraphrase": "Apply the documented Accessibility guidance to reduce the speed and intensity of animated objects, particularly in someone’s peripheral vision."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Accessibility guidance to reduce the speed and intensity of animated objects, particularly in someone’s peripheral vision.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0038",
+    "title": "Be gentle with camera and video motion, and avoid situations where someone may feel like the world around them",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Apply the documented Accessibility guidance to be gentle with camera and video motion, and avoid situations where someone may feel like the world around them.",
+      "ja": "「Accessibility」において「Be gentle with camera and video motion, and avoid situations where someone may feel like the world around them」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Accessibility guidance to be gentle with camera and video motion, and avoid situations where someone may feel like the world around them.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "5ebc9a8f6c89970371963c7967ecafff9dd2273a653480724c6f559196a2dc96",
+      "evidence_paraphrase": "Apply the documented Accessibility guidance to be gentle with camera and video motion, and avoid situations where someone may feel like the world around them."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Accessibility guidance to be gentle with camera and video motion, and avoid situations where someone may feel like the world around them.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0039",
+    "title": "Avoid anchoring content to the wearer’s head, which may make them feel stuck and confined, and also prevent…",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Exclude anchoring content to the wearer’s head, which may make them feel stuck and confined, and also prevent them from the applicable experience.",
+      "ja": "該当する体験ではanchoring content to the wearer’s head, which may make them feel stuck and confined, and also prevent themを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude anchoring content to the wearer’s head, which may make them feel stuck and confined, and also prevent them from the applicable experience.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "eea99f26c5812dd3297b1471620998e3ae1fca824e24f6c0dcb5e079e40822a3",
+      "evidence_paraphrase": "Exclude anchoring content to the wearer’s head, which may make them feel stuck and confined, and also prevent them from the applicable experience."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Exclude anchoring content to the wearer’s head, which may make them feel stuck and confined, and also prevent them from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ACCESSIBILITY-0040",
+    "title": "Minimize the need for large and repetitive gestures, as these can become tiresome and may be difficult depe…",
+    "category": "foundations",
+    "topic": "accessibility",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Apply the documented Accessibility guidance to minimize the need for large and repetitive gestures, as these can become tiresome and may be difficult depending on.",
+      "ja": "「Accessibility」において「Minimize the need for large and repetitive gestures, as these can become tiresome and may be difficult depending on」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "low",
+    "review_required": true,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Accessibility experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAccessibilityの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented Accessibility guidance to minimize the need for large and repetitive gestures, as these can become tiresome and may be difficult depending on.” in the documented Accessibility context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "page_title": "Accessibility",
+      "section_path": [
+        "Accessibility",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:14:35.037Z",
+      "source_hash": "1a904d63dfa7f0b2562ba246a28932200b47829ddeead0fc8d7f94c03bea0dc3",
+      "source_sentence_hash": "d85620c3e39102a2e7849d18ffdfaafeeb5d2a6676b11c84f214466fecd62885",
+      "evidence_paraphrase": "Apply the documented Accessibility guidance to minimize the need for large and repetitive gestures, as these can become tiresome and may be difficult depending on."
+    },
+    "tags": [
+      "foundations",
+      "accessibility",
+      "platform-considerations",
+      "visionos",
+      "gesture"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Apply the documented Accessibility guidance to minimize the need for large and repetitive gestures, as these can become tiresome and may be difficult depending on.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

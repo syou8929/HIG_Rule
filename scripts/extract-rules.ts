@@ -2,6 +2,7 @@ import { readdir, unlink } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { Inventory, Rule, SourcePage } from "../src/lib/types.js";
 import normativeReview from "../src/config/normative-review.json" with { type: "json" };
+import sourceReview from "../src/config/source-review.json" with { type: "json" };
 import { automatedChecksFor, devicesFor, isActionable, makeTitle, modalitiesFor, normative, paraphrase, platformsForCandidate, portability, priorityFor, ruleKey, tagsFor } from "../src/lib/rules.js";
 import { now, readJson, slugify, writeJson } from "../src/lib/util.js";
 
@@ -23,6 +24,18 @@ type RuleOverride = {
   review_note: string;
 };
 const reviewedOverrides = normativeReview.overrides as Record<string, RuleOverride>;
+type SourceReviewOverride = {
+  title?: string;
+  statement?: Rule["statement"];
+  confidence: Rule["confidence"];
+  review_required: boolean;
+  conditions?: string[];
+  exceptions?: string[];
+  checks?: Rule["checks"];
+  testability?: Rule["testability"];
+  review_note: string;
+};
+const sourceReviewOverrides = sourceReview.rules as Record<string, SourceReviewOverride>;
 let idMap: Record<string, string> = {};
 try { idMap = await readJson<Record<string, string>>(idMapPath); } catch { /* First extraction creates the registry. */ }
 idMap = Object.fromEntries(Object.entries(idMap).map(([key, id]) => [key, id.replaceAll("_", "-")]));
@@ -61,23 +74,43 @@ function allocateId(page: SourcePage, key: string): string {
 
 function applyReviewedOverride(rule: Rule): Rule {
   const override = reviewedOverrides[rule.id];
-  if (!override) return rule;
-  const statement = override.statement ?? rule.statement;
+  const normativeStrengthReviewed = normativeReview.reviewed_levels.includes(rule.normative_level as "MUST" | "MUST_NOT");
+  if (!override && !normativeStrengthReviewed) return rule;
+  const statement = override?.statement ?? rule.statement;
   return {
     ...rule,
-    ...(override.title ? { title: override.title } : {}),
+    ...(override?.title ? { title: override.title } : {}),
     statement,
-    ...(override.normative_level ? { normative_level: override.normative_level } : {}),
-    ...(override.confidence ? { confidence: override.confidence } : {}),
-    ...(override.review_required === undefined ? {} : { review_required: override.review_required }),
-    ...(override.polarity ? { polarity: override.polarity } : {}),
-    ...(override.severity ? { severity: override.severity } : {}),
-    ...(override.conditions ? { conditions: override.conditions } : {}),
-    ...(override.exceptions ? { exceptions: override.exceptions } : {}),
+    ...(override?.normative_level ? { normative_level: override.normative_level } : {}),
+    ...(override?.confidence ? { confidence: override.confidence } : {}),
+    ...(normativeStrengthReviewed ? { review_required: false } : override?.review_required === undefined ? {} : { review_required: override.review_required }),
+    ...(override?.polarity ? { polarity: override.polarity } : {}),
+    ...(override?.severity ? { severity: override.severity } : {}),
+    ...(override?.conditions ? { conditions: override.conditions } : {}),
+    ...(override?.exceptions ? { exceptions: override.exceptions } : {}),
     checks: {
       ...rule.checks,
       manual: [`Does the design satisfy “${statement.en}” in the documented ${rule.source.page_title} context?`],
     },
+    source: { ...rule.source, evidence_paraphrase: statement.en },
+    ...(rule.apple_native_rule ? { apple_native_rule: statement.en } : {}),
+  };
+}
+
+function applySourceReview(rule: Rule): Rule {
+  const review = sourceReviewOverrides[rule.id];
+  if (!review) return rule;
+  const statement = review.statement ?? rule.statement;
+  return {
+    ...rule,
+    ...(review.title ? { title: review.title } : {}),
+    statement,
+    confidence: review.confidence,
+    review_required: review.review_required,
+    ...(review.conditions ? { conditions: review.conditions } : {}),
+    ...(review.exceptions ? { exceptions: review.exceptions } : {}),
+    ...(review.checks ? { checks: review.checks } : {}),
+    ...(review.testability ? { testability: review.testability } : {}),
     source: { ...rule.source, evidence_paraphrase: statement.en },
     ...(rule.apple_native_rule ? { apple_native_rule: statement.en } : {}),
   };
@@ -150,7 +183,7 @@ for (const record of inventory.pages) {
         portable_interpretation: `Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.`,
       }),
     };
-    return applyReviewedOverride(rule);
+    return applySourceReview(applyReviewedOverride(rule));
   });
   for (const extra of normativeReview.additional_rules) {
     const base = active.find((rule) => rule.id === extra.base_rule_id);
@@ -183,8 +216,10 @@ for (const record of inventory.pages) {
       ...(base.apple_native_rule ? { apple_native_rule: statement.en } : {}),
     });
   }
-  const activeIds = new Set(active.map((rule) => rule.id));
   const oldRules = existingByPage.get(page.canonical_url) ?? existingByPage.get(page.url) ?? [];
+  const activeIds = new Set(active.map((rule) => rule.id));
+  const sortRules = (items: Rule[]) => [...items].sort((a, b) => a.id.localeCompare(b.id));
+  const rulesChanged = JSON.stringify(sortRules(active)) !== JSON.stringify(sortRules(oldRules.filter((rule) => rule.status === "active")));
   const deprecated = oldRules
     .filter((rule) => !activeIds.has(rule.id))
     .map((rule) => ({ ...rule, status: "deprecated" as const, deprecated_at: rule.deprecated_at ?? now() }));
@@ -193,9 +228,9 @@ for (const record of inventory.pages) {
   expectedRuleFiles.add(output);
   await writeJson(output, rules);
   record.rule_count = active.length;
-  if (active.length) {
+  if (active.length && (record.status !== "validated" || rulesChanged)) {
     record.status = "rules_extracted";
-    record.status_history.push({ status: "rules_extracted", at: now() });
+    if (record.status_history.at(-1)?.status !== "rules_extracted") record.status_history.push({ status: "rules_extracted", at: now() });
   }
   total += active.length;
 }
