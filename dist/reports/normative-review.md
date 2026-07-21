@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 236
-- Retained MUST: 215
+- Reviewed rules: 238
+- Retained MUST: 217
 - Retained MUST_NOT: 21
 - Normative level changes: 19
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:05:04Z
+- Reviewed at: 2026-07-21T19:21:14Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -86,6 +86,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-LAYOUT-0035 — Recovered and retained the explicit You need directive without promoting the 60-point example to a universal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-MOTION-0014 — Recovered and retained the explicit Make sure directive within its peripheral-motion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 — Retained MUST after reviewing the explicit Make sure lead and its value, scale, legibility, and refocusing limits. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0018 — Retained MUST after confirming the conditional You need to specify platform requirement for NY type styles. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0021 — Retained MUST after confirming the conditional Be sure to test directive for a nondefault text color. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 — Retained MUST after confirming the explicit Make sure text-legibility requirement and its platform size table. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 — Retained MUST after confirming the explicit Make sure button-usability requirement and surfacing the page’s size wording conflict. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0024 — Retained MUST after confirming the explicit Make sure requirement for common platform interaction methods. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
@@ -294,6 +296,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-TYPOGRAPHY-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0018 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional You need to specify platform requirement for NY type styles. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0021 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Be sure to test directive for a nondefault text color. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure text-legibility requirement and its platform size table. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure button-usability requirement and surfacing the page’s size wording conflict. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))

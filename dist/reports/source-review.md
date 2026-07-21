@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1330
-- Reviewed batches: 83
+- Reviewed rules: 1340
+- Reviewed batches: 84
 - Official source only: yes
-- Reviewed at: 2026-07-21T19:15:40Z
+- Reviewed at: 2026-07-21T19:21:14Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -841,6 +841,16 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0012 · high — Recovered the Center lead and recorded its immersive attention constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0013 · high — Recovered the Rely lead and recorded that recentering is system-provided. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014 · high — Recovered the direct overlap prohibition and its gaze-selection rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0011 · high — Preserved the Make sure requirement, recorded the full-scale baseline and multi-scale test, and removed a false gaze modality inferred from ordinary wording. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0012 · high — Recorded the billboarding behavior, rotation axis, and line-of-sight geometry. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0015 · high — Preserved the conditional consider wording and separated the shadow anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0016 · high — Recorded the platform limitation as a design constraint at SHOULD, not as an unsupported prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0017 · high — Recovered the conditional dynamic-variant rule and preserved the complete mapping table as structured conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0018 · high — Recovered the conditional You need to specify requirement for NY type styles. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0019 · high — Recovered the 2D preference and preserved the limited decorative 3D exception. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0020 · high — Recovered the contrast directive and recorded the system-white rationale without making white mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0021 · high — Recovered the conditional Be sure to test requirement without making white text itself mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0022 · high — Recovered the qualified shadow AVOID and its spatial-environment rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0001 · high — Reviewed game startup, display metrics, interactions, accessibility, inclusion, and Apple technologies; recovered ten omitted atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0002 · high — Recorded the device and accessibility inputs used to choose game defaults. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0003 · high — Repaired the generated statement and recorded the request-timing context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))

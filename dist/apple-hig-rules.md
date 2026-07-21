@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T19:19:02.373Z. 2393 active rules; 3 deprecated rules.
+Generated 2026-07-21T19:25:09.299Z. 2400 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -463,11 +463,18 @@ Generated 2026-07-21T19:19:02.373Z. 2393 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0008 · SHOULD · low** — Maintain text truncation to a minimum as font size increases. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0009 · MAY · low** — Evaluate whether adjusting your layout at large font sizes is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0010 · SHOULD · low** — Apply the documented Typography guidance to maintain a consistent information hierarchy regardless of the current font size. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0011 · MUST · medium** — Verify that text looks good and remains legible when people scale it. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0012 · SHOULD · low** — Maintain text facing people as much as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0011 · MUST · high** — Make sure visionOS text looks good and remains legible at every supported scale. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0012 · SHOULD · high** — Keep spatial visionOS text facing people as much as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0013 · SHOULD · low** — Keep values synchronized. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0014 · AVOID · low** — Exclude light font weights from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0015 · MAY · low** — When you need to display text that’s not on a background, consider making it bold to improve legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0015 · MAY · high** — Consider bold weight to improve the legibility of visionOS text that has no background. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0016 · SHOULD · high** — Design macOS text and layout without relying on Dynamic Type support. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0017 · SHOULD · high** — Use a dynamic macOS system font variant when text needs to match a standard control. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0018 · MUST · high** — Specify every type style a visionOS app needs when it uses NY. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0019 · SHOULD · high** — Prefer visionOS text with little or no visual depth when people need to read and understand it. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0020 · SHOULD · high** — Maximize contrast between visionOS text and its container background. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0021 · MUST · high** — Test every nonwhite visionOS text color in a variety of contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0022 · AVOID · high** — Avoid adding shadows to backgroundless visionOS text solely to increase contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 ### writing
 
 - **HIG-FOUNDATIONS-WRITING-0001 · SHOULD · low** — Apply the documented Writing guidance to match your tone to the context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))

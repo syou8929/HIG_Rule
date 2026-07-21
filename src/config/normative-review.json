@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:05:04Z",
+  "reviewed_at": "2026-07-21T19:21:14Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 236,
+  "reviewed_rule_count": 238,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -1627,6 +1627,32 @@
         "The visionOS rasterized image has a resolution higher than @2x."
       ],
       "review_note": "Retained MUST after confirming the conditional Be sure directive and its above-@2x threshold."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0018": {
+      "title": "Specify visionOS type styles when using NY",
+      "statement": {
+        "en": "Specify every type style a visionOS app needs when it uses NY.",
+        "ja": "visionOS appでNYを使う場合は必要なtype styleをすべて指定する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The visionOS app uses the NY typeface instead of relying only on SF Pro styles."
+      ],
+      "review_note": "Retained MUST after confirming the conditional You need to specify platform requirement for NY type styles."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0021": {
+      "title": "Test nonwhite visionOS text colors in varied contexts",
+      "statement": {
+        "en": "Test every nonwhite visionOS text color in a variety of contexts.",
+        "ja": "white以外のvisionOS text colorをさまざまなcontextでtestする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The design replaces the system’s default white text color."
+      ],
+      "review_note": "Retained MUST after confirming the conditional Be sure to test directive for a nondefault text color."
     },
     "HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004": {
       "title": "Use depth only when it adds value",

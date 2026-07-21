@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T19:15:40Z",
+  "reviewed_at": "2026-07-21T19:21:14Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2306,6 +2306,20 @@
         "HIG-FOUNDATIONS-MATERIALS-0019", "HIG-FOUNDATIONS-MATERIALS-0020", "HIG-FOUNDATIONS-MATERIALS-0021"
       ],
       "review_note": "Completed the priority-4 Materials platform sections; preserved every existing ID, recovered eight atomic rules, retained capability lists as MAY, and introduced no unsupported MUST or MUST_NOT rules."
+    },
+    {
+      "id": "priority-4-typography-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T19:21:14Z",
+      "review_method": "Rendered Apple HIG Typography platform considerations for iOS, iPadOS, macOS, tvOS, visionOS, and watchOS plus the macOS font-variant table and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash. Common Typography guidance and specification tables remain queued for later review.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/typography", "source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389"}],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0011", "HIG-FOUNDATIONS-TYPOGRAPHY-0012", "HIG-FOUNDATIONS-TYPOGRAPHY-0015", "HIG-FOUNDATIONS-TYPOGRAPHY-0016",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0017", "HIG-FOUNDATIONS-TYPOGRAPHY-0018", "HIG-FOUNDATIONS-TYPOGRAPHY-0019", "HIG-FOUNDATIONS-TYPOGRAPHY-0020",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0021", "HIG-FOUNDATIONS-TYPOGRAPHY-0022"
+      ],
+      "review_note": "Completed the priority-4 Typography platform sections; preserved all existing IDs, recovered seven atomic rules, retained two explicit visionOS requirements as MUST, and removed a false gaze modality from the scalable-text rule."
     }
   ],
   "rules": {
@@ -4237,6 +4251,75 @@
       "statement": {"en": "Avoid removing or replacing a watchOS modal sheet’s default material background.", "ja": "watchOS modal sheetのdefault material backgroundを削除または置換しない。"},
       "conditions": ["The modal sheet receives its material background by default."],
       "review_note": "Recovered the default-background AVOID and kept it separate from the positive orientation rule."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0011": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "558b5296a93aa76ae06bd48d0745ce32e610c15cc5f2d3214194ef85dda7e4af", "section_path": ["Typography", "Platform considerations", "visionOS"]},
+      "title": "Make sure scalable visionOS text remains legible",
+      "statement": {"en": "Make sure visionOS text looks good and remains legible at every supported scale.", "ja": "visionOS textがすべての対応scaleで適切に見え、legibleに保たれるようにする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Choose a text style that looks good at full scale, then test legibility at different scales."],
+      "review_note": "Preserved the Make sure requirement, recorded the full-scale baseline and multi-scale test, and removed a false gaze modality inferred from ordinary wording."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0012": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "d13cd5d14547361156a99fe1bdece466a83dfa520538877c47870dabe37eb807", "section_path": ["Typography", "Platform considerations", "visionOS"]},
+      "title": "Keep spatial visionOS text facing people",
+      "statement": {"en": "Keep spatial visionOS text facing people as much as possible.", "ja": "spatialなvisionOS textを可能な限り人の方向へ向け続ける。"},
+      "conditions": ["For text associated with a point in space, use billboarding so it faces the wearer as either they or the object moves.", "Rotate around the y-axis so the text baseline remains perpendicular to the person’s line of sight."],
+      "review_note": "Recorded the billboarding behavior, rotation axis, and line-of-sight geometry."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0015": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "f9960aad0d71d04f6b81f53e3190868d1a9d719d12618de5a916d3b51258717a", "section_path": ["Typography", "Platform considerations", "visionOS"]},
+      "title": "Consider bold for backgroundless visionOS text",
+      "statement": {"en": "Consider bold weight to improve the legibility of visionOS text that has no background.", "ja": "backgroundのないvisionOS textのlegibility向上にはbold weightを検討する。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "conditions": ["The text appears without a background surface."],
+      "review_note": "Preserved the conditional consider wording and separated the shadow anti-pattern."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0016": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "98f35678cade71b62f1145b6a977b38517bdfdfd3a525a861f91ff8cdd614793", "section_path": ["Typography", "Platform considerations", "macOS"]},
+      "title": "Design macOS text without Dynamic Type reliance",
+      "statement": {"en": "Design macOS text and layout without relying on Dynamic Type support.", "ja": "Dynamic Type supportに依存せずmacOSのtextとlayoutを設計する。"},
+      "conditions": ["macOS does not support Dynamic Type."],
+      "review_note": "Recorded the platform limitation as a design constraint at SHOULD, not as an unsupported prohibition."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0017": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "a79ef2da19120819dcf543176c95afa4e9237bf60c4f7fc42012a7dfc692d5d5", "section_path": ["Typography", "Platform considerations", "macOS"]},
+      "title": "Match macOS standard-control text with dynamic font variants",
+      "statement": {"en": "Use a dynamic macOS system font variant when text needs to match a standard control.", "ja": "textをstandard macOS controlに合わせる必要がある場合はdynamic system font variantを使う。"},
+      "conditions": ["Map control content, labels, menus, menu bars, messages, palettes, titles, and tool tips to their matching system font APIs.", "Use userFont for document text, userFixedPitchFont for monospaced document text, and the bold or standard system font APIs as appropriate."],
+      "review_note": "Recovered the conditional dynamic-variant rule and preserved the complete mapping table as structured conditions."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0018": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "e636916fe673b136028d66490f83da806e24cf3d8c1d4c2d231de4bf153e3a82", "section_path": ["Typography", "Platform considerations", "visionOS"]},
+      "conditions": ["The visionOS app uses NY instead of relying only on SF Pro styles."],
+      "review_note": "Recovered the conditional You need to specify requirement for NY type styles."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0019": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "cb3a787d81467115311dd62a251f5646c484b8323248feb2163ae67391038c82", "section_path": ["Typography", "Platform considerations", "visionOS"]},
+      "title": "Prefer 2D text in visionOS",
+      "statement": {"en": "Prefer visionOS text with little or no visual depth when people need to read and understand it.", "ja": "人が読んで理解するvisionOS textにはvisual depthがほぼない2D表現を優先する。"},
+      "conditions": ["Greater character depth can make text harder to read."],
+      "exceptions": ["A small amount of 3D text can be an attention-drawing decorative element."],
+      "review_note": "Recovered the 2D preference and preserved the limited decorative 3D exception."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0020": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "197bc66e07b5114434a46a68883ef9ca75b769cdbaf9d551534598b5074d0e26", "section_path": ["Typography", "Platform considerations", "visionOS"]},
+      "title": "Maximize visionOS text contrast against its container",
+      "statement": {"en": "Maximize contrast between visionOS text and its container background.", "ja": "visionOS textとcontainer backgroundのcontrastを最大化する。"},
+      "conditions": ["The system defaults to white text because it contrasts strongly with the default background material."],
+      "review_note": "Recovered the contrast directive and recorded the system-white rationale without making white mandatory."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0021": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "f87d4577021106810a871ad4777d6e76b69cb0708351dd28937b9d899e95ecd3", "section_path": ["Typography", "Platform considerations", "visionOS"]},
+      "conditions": ["The design replaces the default white visionOS text color."],
+      "review_note": "Recovered the conditional Be sure to test requirement without making white text itself mandatory."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0022": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "84a24abd516a7f5de43cc4a6047e5ec103a64d5b8aab39df6878c512ab2d35ce", "section_path": ["Typography", "Platform considerations", "visionOS"]},
+      "title": "Avoid shadows on backgroundless visionOS text",
+      "statement": {"en": "Avoid adding shadows to backgroundless visionOS text solely to increase contrast.", "ja": "contrast向上だけを目的にbackgroundのないvisionOS textへshadowを加えない。"},
+      "conditions": ["The current space may lack a surface for an accurate shadow, and its Environment makes reliable size and density unpredictable."],
+      "review_note": "Recovered the qualified shadow AVOID and its spatial-environment rationale."
     },
     "HIG-COMPONENTS-MENUS-0002": {
       "source": {"source_hash": "72bc9800ed825594a69361feef95ca7c01f00c7b6dbf589083e8f730e42f3a05", "source_sentence_hash": "337cd5c2235f7ceaf747790292f41c8aaf31220213f0195d16b2f83d745ddc31", "section_path": ["Menus", "Labels"]},

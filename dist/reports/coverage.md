@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2393
+- Active atomic rules: 2400
 - Pages without rules: 16
-- Low-confidence rules: 984
-- Rules requiring human review: 984
+- Low-confidence rules: 982
+- Rules requiring human review: 982
 - Reference notes: 929
 
 ## Rules by category
 
 - components: 858
-- foundations: 339
+- foundations: 346
 - getting-started: 85
 - inputs: 187
 - patterns: 289
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 317
+- AVOID: 318
 - MAY: 284
-- MUST: 215
+- MUST: 217
 - MUST_NOT: 21
-- SHOULD: 1556
+- SHOULD: 1560
 
 ## Rules by platform
 
 - carplay: 90
 - ios: 1643
 - ipados: 1616
-- macos: 1370
+- macos: 1372
 - tvos: 1070
-- visionos: 1427
+- visionos: 1432
 - watchos: 1120
 
 ## Rules by testability
 
-- hybrid: 60
-- manual: 2333
+- hybrid: 62
+- manual: 2338
 
 ## Blocked pages
 
@@ -373,10 +373,8 @@ None.
 - HIG-FOUNDATIONS-TYPOGRAPHY-0008
 - HIG-FOUNDATIONS-TYPOGRAPHY-0009
 - HIG-FOUNDATIONS-TYPOGRAPHY-0010
-- HIG-FOUNDATIONS-TYPOGRAPHY-0012
 - HIG-FOUNDATIONS-TYPOGRAPHY-0013
 - HIG-FOUNDATIONS-TYPOGRAPHY-0014
-- HIG-FOUNDATIONS-TYPOGRAPHY-0015
 - HIG-FOUNDATIONS-WRITING-0001
 - HIG-FOUNDATIONS-WRITING-0002
 - HIG-FOUNDATIONS-WRITING-0003
@@ -1360,10 +1358,8 @@ None.
 - HIG-FOUNDATIONS-TYPOGRAPHY-0008
 - HIG-FOUNDATIONS-TYPOGRAPHY-0009
 - HIG-FOUNDATIONS-TYPOGRAPHY-0010
-- HIG-FOUNDATIONS-TYPOGRAPHY-0012
 - HIG-FOUNDATIONS-TYPOGRAPHY-0013
 - HIG-FOUNDATIONS-TYPOGRAPHY-0014
-- HIG-FOUNDATIONS-TYPOGRAPHY-0015
 - HIG-FOUNDATIONS-WRITING-0001
 - HIG-FOUNDATIONS-WRITING-0002
 - HIG-FOUNDATIONS-WRITING-0003
@@ -2848,9 +2844,9 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/top-shelf · Top Shelf > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Ensuring legibility — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations — All platform sections were reviewed; system-font availability and platform-provided behavior remain supporting context.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations > tvOS — tvOS uses SF Pro and also supports NY; this descriptive platform fact does not create a standalone requirement.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations > watchOS — watchOS uses SF Compact, supports NY, and uses SF Compact Rounded in complications; these are descriptive platform facts.
 - https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
