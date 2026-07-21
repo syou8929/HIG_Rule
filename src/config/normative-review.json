@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T15:38:24Z",
+  "reviewed_at": "2026-07-21T15:50:43Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "6428ff753f5179781bfa4ffe5888b1993484031a4af719f3004d3ce470d01497",
@@ -8,13 +8,347 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 162,
+  "reviewed_rule_count": 183,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-APP-CLIPS-0005": {
+      "title": "Ensure people can use your App Clip immediately",
+      "statement": {
+        "en": "Verify that people can use your App Clip immediately.",
+        "ja": "people can use your App Clip immediatelyを満たしていることを確認する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Bundle every required asset, omit a splash screen, and avoid launch waiting."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Ensure directive and the bundled-assets, splash-screen, and immediate-launch context."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0006": {
+      "title": "Ensure your App Clip is small",
+      "statement": {
+        "en": "Verify that your App Clip is small.",
+        "ja": "your App Clip is smallを満たしていることを確認する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Reduce unnecessary code and unused assets, especially when bandwidth is limited.",
+        "Avoid additional data downloads that weaken immediacy."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Ensure directive and the code, asset, bandwidth, and download constraints."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0010": {
+      "title": "Preserve a familiar experience after full-app installation",
+      "statement": {
+        "en": "Ensure the full app gives prior App Clip users a focused, familiar continuation.",
+        "ja": "full appへの移行後もApp Clip利用者へfocusedでfamiliarなcontinuationを提供する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Continue the focused App Clip context in the full app.",
+        "Avoid extra steps or requiring people to sign in again."
+      ],
+      "review_note": "Raised to MUST after confirming the supporting Ensure directive for a focused familiar full-app continuation."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0018": {
+      "title": "Make App Clip card imagery informative",
+      "statement": {
+        "en": "Make sure App Clip card imagery clearly communicates features, tasks, or content.",
+        "ja": "App Clip card画像でfeature、task、contentを明確に伝える。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Communicate App Clip features, supported tasks, or content in the card image."
+      ],
+      "review_note": "Raised to MUST after confirming the supporting Make sure directive for informative App Clip card imagery."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0026": {
+      "title": "Make sure the App Clip Code is unobstructed",
+      "statement": {
+        "en": "Verify that the App Clip Code is unobstructed.",
+        "ja": "the App Clip Code is unobstructedを満たしていることを確認する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Do not overlay text, logos, or images.",
+        "Never animate or dim the code."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Make sure directive and the separate overlay, animation, and dimming prohibitions."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0030": {
+      "title": "Always use the generated App Clip Code",
+      "statement": {
+        "en": "Use the generated App Clip Code in every applicable case.",
+        "ja": "該当するすべての場合にuse the generated App Clip Codeを実行する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Do not create or modify the design, add effects, or alter its aspect ratio.",
+        "Scale every attribute, including stroke widths, together."
+      ],
+      "review_note": "Retained MUST after confirming the explicit Always directive and generated-code integrity requirements."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0045": {
+      "title": "Never make people wait when an App Clip launches",
+      "statement": {
+        "en": "Exclude make people wait when an App Clip launches from the applicable experience.",
+        "ja": "該当する体験ではmake people wait when an App Clip launchesを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Bundle required assets and omit splash screens so launch is immediately usable."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit Never prohibition against launch waiting."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0052": {
+      "title": "Make sure each business brand is clearly visible in its App Clip",
+      "statement": {
+        "en": "Verify that each business brand is clearly visible in its App Clip.",
+        "ja": "each business brand is clearly visible in its App Clipを満たしていることを確認する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "A platform provider powers an App Clip for an individual business or location.",
+        "Tone down provider branding to prevent confusion."
+      ],
+      "review_note": "Recovered MUST from the explicit Make sure directive for visible individual-business branding."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0057": {
+      "title": "Never use the App Clip logo by itself",
+      "statement": {
+        "en": "Exclude use the App Clip logo by itself from the applicable experience.",
+        "ja": "該当する体験ではuse the App Clip logo by itselfを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The logo appears only as part of the approved badge design."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit Never prohibition against using the App Clip logo alone."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0058": {
+      "title": "Make sure cylindrical App Clip Codes span no more than one-sixth circumference",
+      "statement": {
+        "en": "Verify that cylindrical App Clip Codes span no more than one-sixth circumference.",
+        "ja": "cylindrical App Clip Codes span no more than one-sixth circumferenceを満たしていることを確認する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Measure code width against the cylinder's full circumference."
+      ],
+      "review_note": "Recovered MUST from the explicit Make sure directive and one-sixth circumference ceiling."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0061": {
+      "title": "Never animate an App Clip Code",
+      "statement": {
+        "en": "Exclude animate an App Clip Code from the applicable experience.",
+        "ja": "該当する体験ではanimate an App Clip Codeを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Keep the generated code static for reliable scanning."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit Never prohibition against animating an App Clip Code."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0062": {
+      "title": "Never dim an App Clip Code",
+      "statement": {
+        "en": "Exclude dim an App Clip Code from the applicable experience.",
+        "ja": "該当する体験ではdim an App Clip Codeを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Keep the generated code at its approved visible intensity."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit Never prohibition against dimming an App Clip Code."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0063": {
+      "title": "Make sure App Clip Codes meet their documented minimum sizes",
+      "statement": {
+        "en": "Verify that app Clip Codes meet their documented minimum sizes.",
+        "ja": "App Clip Codes meet their documented minimum sizesを満たしていることを確認する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Printed code: at least 3/4 inch (1.9 cm) diameter.",
+        "Digital code: at least 256×256 px in PNG or SVG.",
+        "NFC tag: at least 35 mm diameter or equivalent, with a correspondingly sized printed code."
+      ],
+      "review_note": "Recovered MUST from the source's explicit requirement that codes adhere to the documented size specifications."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0067": {
+      "title": "Be sure to scale all App Clip Code attributes together",
+      "statement": {
+        "en": "Ensure scale all App Clip Code attributes together.",
+        "ja": "scale all App Clip Code attributes togetherを確実に行う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Scale stroke widths and every other generated attribute proportionally."
+      ],
+      "review_note": "Recovered MUST from the explicit Be sure directive to scale every generated attribute together."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0068": {
+      "title": "Always test printed App Clip Codes from multiple angles before distribution",
+      "statement": {
+        "en": "Test printed App Clip Codes from multiple angles before distribution in every applicable case.",
+        "ja": "該当するすべての場合にtest printed App Clip Codes from multiple angles before distributionを実行する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Verify scannability from a variety of angles before distribution."
+      ],
+      "review_note": "Recovered MUST from the explicit Always test directive before printed-code distribution."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0072": {
+      "title": "You need to map each App Clip Code SVG file to its invocation URL",
+      "statement": {
+        "en": "Require map each App Clip Code SVG file to its invocation URL.",
+        "ja": "map each App Clip Code SVG file to its invocation URLを必須とする。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "This applies when managing many SVG files whose encoded URLs are not visually identifiable.",
+        "Maintain file management, versioning, and change tracking."
+      ],
+      "review_note": "Recovered MUST from the explicit You need directive to map SVG files to invocation URLs."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0073": {
+      "title": "Use only approved App Clip Codes",
+      "statement": {
+        "en": "Use only Apple-provided App Clip Codes created with approved tools and following the guidelines.",
+        "ja": "承認済みtoolで作成しguidelineに従うApple提供App Clip Codeだけを使う。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The code comes from App Store Connect or App Clip Code Generator and follows the published guidelines."
+      ],
+      "review_note": "Raised to MUST from the Legal requirements section's exclusive approval condition for Apple-provided codes."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0074": {
+      "title": "Never use App Clip Code elements in company or product names",
+      "statement": {
+        "en": "Exclude use App Clip Code elements in company or product names from the applicable experience.",
+        "ja": "該当する体験ではuse App Clip Code elements in company or product namesを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The prohibition includes the Apple logo, App Clip mark, and code design."
+      ],
+      "review_note": "Recovered MUST_NOT from the Legal requirements section's explicit may-not prohibition on company and product names."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0075": {
+      "title": "Never seek copyright or trademark registration for App Clip Code elements",
+      "statement": {
+        "en": "Exclude seek copyright or trademark registration for App Clip Code elements from the applicable experience.",
+        "ja": "該当する体験ではseek copyright or trademark registration for App Clip Code elementsを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Do not seek copyright or trademark registration for the code or any contained element."
+      ],
+      "review_note": "Recovered MUST_NOT from the Legal requirements section's explicit may-not prohibition on intellectual-property registration."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0076": {
+      "title": "Never use App Clip Codes in ways that damage Apple goodwill or reputation",
+      "statement": {
+        "en": "Exclude use App Clip Codes in ways that damage Apple goodwill or reputation from the applicable experience.",
+        "ja": "該当する体験ではuse App Clip Codes in ways that damage Apple goodwill or reputationを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Protect Apple's and App Clips' goodwill, value, and reputation."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit must-not prohibition against damaging Apple or App Clips goodwill and reputation."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0077": {
+      "title": "Never use App Clip Codes in ways that infringe third-party proprietary rights",
+      "statement": {
+        "en": "Exclude use App Clip Codes in ways that infringe third-party proprietary rights from the applicable experience.",
+        "ja": "該当する体験ではuse App Clip Codes in ways that infringe third-party proprietary rightsを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Protect third-party trademarks and proprietary rights."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit must-not prohibition against infringing third-party proprietary rights."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0078": {
+      "title": "Never use App Clip Codes in ways that confuse product or service source",
+      "statement": {
+        "en": "Exclude use App Clip Codes in ways that confuse product or service source from the applicable experience.",
+        "ja": "該当する体験ではuse App Clip Codes in ways that confuse product or service sourceを避ける。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Avoid confusion about the source of products or services."
+      ],
+      "review_note": "Recovered MUST_NOT from the explicit must-not prohibition against source confusion."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0085": {
+      "title": "Make sure App Clips handle simultaneous businesses or locations and update their interfaces",
+      "statement": {
+        "en": "Verify that app Clips handle simultaneous businesses or locations and update their interfaces.",
+        "ja": "App Clips handle simultaneous businesses or locations and update their interfacesを満たしていることを確認する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "People can use the App Clip for more than one business or location at once.",
+        "Consider switching among recent businesses and location verification."
+      ],
+      "review_note": "Recovered MUST from the source's explicit must requirement for simultaneous business or location state."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0087": {
+      "title": "Always use a simple clear App Clip Code call to action",
+      "statement": {
+        "en": "Use a simple clear App Clip Code call to action in every applicable case.",
+        "ja": "該当するすべての場合にuse a simple clear App Clip Code call to actionを実行する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Use suggested wording or equivalent clear custom copy."
+      ],
+      "review_note": "Recovered MUST from the explicit Always directive for simple clear call-to-action messaging."
+    },
+    "HIG-TECHNOLOGIES-APP-CLIPS-0089": {
+      "title": "Make sure Apple trademarks remain in English",
+      "statement": {
+        "en": "Verify that apple trademarks remain in English.",
+        "ja": "Apple trademarks remain in Englishを満たしていることを確認する。"
+      },
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "With Apple approval, legal notices and credit lines may be translated, but trademarks may not."
+      ],
+      "review_note": "Recovered MUST from the explicit requirement that Apple trademarks remain in English."
+    },
     "HIG-PATTERNS-UNDO-AND-REDO-0011": {
       "title": "Describe the operation in undo and redo alert titles",
       "statement": {
