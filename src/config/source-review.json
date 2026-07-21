@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T13:09:39Z",
+  "reviewed_at": "2026-07-21T13:18:29Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
     {
       "id": "priority-2-accessibility-context-2026-07-21",
-      "reviewed_at": "2026-07-21T11:26:00Z",
+      "reviewed_at": "2026-07-21T13:18:29Z",
       "review_method": "Rendered Apple HIG lead guidance, supporting prose, list context, and page text were reviewed against canonical rules; each live main-content hash matched the stored source page.",
       "confidence": "medium",
       "review_required": false,
@@ -67,12 +67,13 @@
         "HIG-TECHNOLOGIES-VOICEOVER-0004",
         "HIG-TECHNOLOGIES-VOICEOVER-0005",
         "HIG-TECHNOLOGIES-VOICEOVER-0006",
+        "HIG-TECHNOLOGIES-VOICEOVER-0007",
         "HIG-FOUNDATIONS-ACCESSIBILITY-0011",
         "HIG-FOUNDATIONS-ACCESSIBILITY-0020",
         "HIG-FOUNDATIONS-INCLUSION-0001",
         "HIG-FOUNDATIONS-INCLUSION-0003"
       ],
-      "review_note": "Reviewed the priority-2 accessibility guidance in its official page context; retained conservative non-MUST strength and recorded page-hash-bound completion."
+      "review_note": "Reviewed priority-2 accessibility guidance in official context, including recovered VoiceOver element relationships; retained conservative non-MUST strength."
     },
     {
       "id": "priority-3-privacy-context-2026-07-21",
@@ -791,6 +792,51 @@
         "HIG-FOUNDATIONS-APP-ICONS-0018"
       ],
       "review_note": "Reviewed tvOS safe-zone behavior, visionOS concavity risk, and watchOS black-background guidance in official context."
+    },
+    {
+      "id": "priority-4-color-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-21T13:14:29Z",
+      "review_method": "Rendered Apple HIG Color platform guidance and supporting prose were reviewed; the live main-content hash matched the stored source page.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/color",
+          "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-COLOR-0017",
+        "HIG-FOUNDATIONS-COLOR-0018",
+        "HIG-FOUNDATIONS-COLOR-0019",
+        "HIG-FOUNDATIONS-COLOR-0020",
+        "HIG-FOUNDATIONS-COLOR-0021",
+        "HIG-FOUNDATIONS-COLOR-0022",
+        "HIG-FOUNDATIONS-COLOR-0023"
+      ],
+      "review_note": "Reviewed tvOS focus, visionOS glass and brightness, and watchOS background and complication color guidance; recovered two leads."
+    },
+    {
+      "id": "priority-4-icons-document-context-2026-07-21",
+      "reviewed_at": "2026-07-21T13:16:47Z",
+      "review_method": "Rendered Apple HIG Icons macOS document-icon guidance, supporting prose, and size lists were reviewed; the live main-content hash matched the stored source page.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/icons",
+          "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-ICONS-0008",
+        "HIG-FOUNDATIONS-ICONS-0009",
+        "HIG-FOUNDATIONS-ICONS-0010",
+        "HIG-FOUNDATIONS-ICONS-0011",
+        "HIG-FOUNDATIONS-ICONS-0012",
+        "HIG-FOUNDATIONS-ICONS-0014"
+      ],
+      "review_note": "Reviewed macOS document-icon simplicity, small sizes, masking, center imagery, margins, and labels; recovered one lead."
     }
   ],
   "rules": {
@@ -4745,6 +4791,287 @@
       "review_required": false,
       "conditions": ["Lighten a black background so the icon doesn't blend into the display background."],
       "review_note": "Recorded the display-background blending risk and lightening mitigation."
+    },
+    "HIG-FOUNDATIONS-COLOR-0017": {
+      "source": {
+        "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90",
+        "source_sentence_hash": "8d62cd1119b3dfbd3b819396a6f4f7e2cee9978e8d5bb7b9692adcdbba220b8e",
+        "section_path": ["Color", "Platform considerations", "tvOS"]
+      },
+      "title": "Consider a limited tvOS palette coordinated with the app logo",
+      "statement": {
+        "en": "Consider a limited tvOS color palette that coordinates with the app logo.",
+        "ja": "app logoと調和する限定的なtvOS color paletteを検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use color subtly to communicate brand while deferring to content."],
+      "review_note": "Retained MAY and recorded the content-first branding rationale."
+    },
+    "HIG-FOUNDATIONS-COLOR-0018": {
+      "source": {
+        "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90",
+        "source_sentence_hash": "ccdad087e51f83d91f2a2dca05b455b550316d04a32f809378fd7cd897b35681",
+        "section_path": ["Color", "Platform considerations", "tvOS"]
+      },
+      "title": "Avoid indicating tvOS focus with color alone",
+      "statement": {
+        "en": "Avoid using color as the only indication of tvOS focus.",
+        "ja": "tvOS focusをcolorだけで示さない。"
+      },
+      "normative_level": "AVOID",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Use subtle scaling and responsive animation as primary focus cues."],
+      "review_note": "Recorded the noncolor focus cues from the supporting prose."
+    },
+    "HIG-FOUNDATIONS-COLOR-0019": {
+      "source": {
+        "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90",
+        "source_sentence_hash": "894b827411a85abbea465c6d018eb0365379a16e2c1b5d339b9a7777fa95e121",
+        "section_path": ["Color", "Platform considerations", "visionOS"]
+      },
+      "title": "Use color sparingly on visionOS glass",
+      "statement": {
+        "en": "Use color sparingly in visionOS, especially on glass material.",
+        "ja": "visionOS、特にglass materialではcolorを控えめに使う。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Physical and virtual colors visible through glass can reduce colorful content legibility.",
+        "Use color to emphasize important information or relationships between interface parts."
+      ],
+      "review_note": "Recorded the glass-transmission legibility risk and intended emphasis cases."
+    },
+    "HIG-FOUNDATIONS-COLOR-0020": {
+      "source": {
+        "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90",
+        "source_sentence_hash": "d5edc94b001b908682b0cc50c060b5f220b063b1e75a36206041b9a87722966f",
+        "section_path": ["Color", "Platform considerations", "visionOS"]
+      },
+      "title": "Prefer visionOS color in bold text and large areas",
+      "statement": {
+        "en": "Prefer using color in bold visionOS text and large areas.",
+        "ja": "visionOSではbold textとlarge areaでcolorを使うことを優先する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Color in lightweight text or small areas can be harder to perceive and understand."],
+      "review_note": "Recorded the lightweight-text and small-area perception risk."
+    },
+    "HIG-FOUNDATIONS-COLOR-0021": {
+      "source": {
+        "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90",
+        "source_sentence_hash": "57b5d2c9caeaa4377117850bdff69684505820f0c83f3be7c805a43dc9b00948",
+        "section_path": ["Color", "Platform considerations", "watchOS"]
+      },
+      "title": "Use watchOS background color to communicate information",
+      "statement": {
+        "en": "Use watchOS background color to support content or communicate additional information.",
+        "ja": "watchOS background colorでcontentを支え、追加informationを伝える。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Background color can establish place and help people recognize key content."],
+      "exceptions": [
+        "Don't use background color solely as visual decoration.",
+        "Avoid full-screen color in workout or audio views that remain visible for long periods."
+      ],
+      "review_note": "Recorded the communication purpose and both decoration and long-duration restrictions."
+    },
+    "HIG-FOUNDATIONS-COLOR-0022": {
+      "source": {
+        "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90",
+        "source_sentence_hash": "ddec3a6f8104cbc47dfa8c9693f631420473603c78c82ba4ec193c7b69c7ed0b",
+        "section_path": ["Color", "Platform considerations", "visionOS"]
+      },
+      "title": "Balance brightness in fully immersive visionOS experiences",
+      "statement": {
+        "en": "Balance brightness levels to preserve visual comfort in a fully immersive visionOS experience.",
+        "ja": "fully immersive visionOS experienceではbrightness levelを均衡させてvisual comfortを保つ。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "High contrast can cause discomfort after people's eyes adapt to low light.",
+        "Make content fully bright only when the surrounding visual context is also bright."
+      ],
+      "exceptions": ["Avoid bright flashing or moving objects against very dark backgrounds."],
+      "review_note": "Recovered the contextual Help lead and recorded the adaptation and contrast constraints."
+    },
+    "HIG-FOUNDATIONS-COLOR-0023": {
+      "source": {
+        "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90",
+        "source_sentence_hash": "77d29238ffe92208cc2c0343e587ca0aa159bd7c5f8e4b1adf2a5f9e0b82165d",
+        "section_path": ["Color", "Platform considerations", "watchOS"]
+      },
+      "title": "Account for tinted-mode graphic complications",
+      "statement": {
+        "en": "Account for people preferring tinted mode in watchOS graphic complications.",
+        "ja": "watchOS graphic complicationでtinted modeを好む人を考慮する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": ["Tinted mode applies one wearer-selected color to images, gauges, and text."],
+      "review_note": "Recovered the omitted Recognize lead and recorded the system's single-color behavior."
+    },
+    "HIG-FOUNDATIONS-ICONS-0008": {
+      "source": {
+        "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
+        "source_sentence_hash": "4376456ce8befe8d3b36f994c6fac577b65db83f6b3f1bc1a6022eab7e544af1",
+        "section_path": ["Icons", "Platform considerations", "macOS", "Document icons"]
+      },
+      "title": "Design simple macOS document-icon imagery",
+      "statement": {
+        "en": "Design simple macOS document-icon images that clearly communicate the document type.",
+        "ja": "document typeを明確に伝えるsimpleなmacOS document-icon imageを設計する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Prefer uncomplicated shapes and a reduced palette of distinct colors.",
+        "Keep the design recognizable down to 16×16 px."
+      ],
+      "review_note": "Recorded the shape, palette, and minimum rendered-size constraints."
+    },
+    "HIG-FOUNDATIONS-ICONS-0009": {
+      "source": {
+        "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
+        "source_sentence_hash": "3e5acc0e8e8ee472e59ba996c27af121e68bd09532e54b18ef894fb97d424572",
+        "section_path": ["Icons", "Platform considerations", "macOS", "Document icons"]
+      },
+      "title": "Consider simplifying small macOS document icons",
+      "statement": {
+        "en": "Consider reducing complexity in small versions of a macOS document icon.",
+        "ja": "small versionのmacOS document iconではcomplexity低減を検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Use fewer or thicker details at intermediate sizes.",
+        "Remove details that become unclear at 16×16 px."
+      ],
+      "review_note": "Retained MAY and recorded the source's size-specific simplification techniques."
+    },
+    "HIG-FOUNDATIONS-ICONS-0010": {
+      "source": {
+        "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
+        "source_sentence_hash": "1eceb03a340c555710e73d12f026285556f948803aa366c63e0c2c5dddf1f81f",
+        "section_path": ["Icons", "Platform considerations", "macOS", "Document icons"]
+      },
+      "title": "Avoid important content beneath the document-icon fold",
+      "statement": {
+        "en": "Avoid important content in the top-right corner of a macOS document-icon background.",
+        "ja": "macOS document-icon backgroundのtop-right cornerにimportant contentを置かない。"
+      },
+      "normative_level": "AVOID",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The system masks the image and draws a white folded corner over it.",
+        "Background assets: 512×512 px at 1× or 1024×1024 px at 2×.",
+        "Background assets: 256×256 px at 1× or 512×512 px at 2×.",
+        "Background assets: 128×128 px at 1× or 256×256 px at 2×.",
+        "Background assets: 32×32 px at 1× or 64×64 px at 2×.",
+        "Background assets: 16×16 px at 1× or 32×32 px at 2×."
+      ],
+      "review_note": "Recorded the fold-mask obstruction and every documented background asset size."
+    },
+    "HIG-FOUNDATIONS-ICONS-0011": {
+      "source": {
+        "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
+        "source_sentence_hash": "8311e2e1dd8fdd77051cf884e61d1011930a49727026a999b4eb0eba1db9bcc8",
+        "section_path": ["Icons", "Platform considerations", "macOS", "Document icons"]
+      },
+      "title": "Keep most center imagery inside a 10% margin",
+      "statement": {
+        "en": "Define a 10% margin and keep most macOS document center imagery within it.",
+        "ja": "10% marginを定義し、macOS document center imageの大半を内側へ収める。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Let the image occupy about 80% of its canvas.",
+        "A 256×256 px canvas yields an approximately 205×205 px main-image area."
+      ],
+      "exceptions": ["Extend small parts into the margin when optical alignment needs it."],
+      "review_note": "Recorded the 10% margin, 80% occupancy, numeric example, and optical-alignment exception."
+    },
+    "HIG-FOUNDATIONS-ICONS-0012": {
+      "source": {
+        "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
+        "source_sentence_hash": "cbcf33e4b11cf7acc52983899e55def99edceeda098a4c54aeec3def9259ec9c",
+        "section_path": ["Icons", "Platform considerations", "macOS", "Document icons"]
+      },
+      "title": "Consider a familiar-object center image for a document icon",
+      "statement": {
+        "en": "When a familiar object conveys a document type or app connection, consider using it as the center image.",
+        "ja": "familiar objectがdocument typeやapp connectionを伝える場合、center imageへの使用を検討する。"
+      },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Keep the center image simple, unambiguous, and recognizable at every size.",
+        "Make the center-image canvas half the overall document-icon size.",
+        "Center assets: 256×256 px at 1× or 512×512 px at 2×.",
+        "Center assets: 128×128 px at 1× or 256×256 px at 2×.",
+        "Center assets: 32×32 px at 1× or 64×64 px at 2×.",
+        "Center assets: 16×16 px at 1× or 32×32 px at 2×."
+      ],
+      "review_note": "Restored the truncated condition and recorded every center-image size."
+    },
+    "HIG-FOUNDATIONS-ICONS-0014": {
+      "source": {
+        "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
+        "source_sentence_hash": "916bd6b099484bb37b9b9bce56ef9a94298a3ae151968c93e54c2f4a29462862",
+        "section_path": ["Icons", "Platform considerations", "macOS", "Document icons"]
+      },
+      "title": "Specify a succinct document term when the extension is unclear",
+      "statement": {
+        "en": "When a file extension is unfamiliar, specify a succinct term that clarifies the macOS document type.",
+        "ja": "file extensionがunfamiliarな場合、macOS document typeを明確にする簡潔なtermを指定する。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "The system otherwise shows the file extension at the document icon's bottom edge.",
+        "Use a term short enough to remain legible after automatic scaling.",
+        "The system capitalizes every letter by default."
+      ],
+      "review_note": "Recovered the omitted Specify lead and recorded the extension, scaling, and capitalization behavior."
+    },
+    "HIG-TECHNOLOGIES-VOICEOVER-0007": {
+      "source": {
+        "source_hash": "cc593c07b868adbe36901906f5de130f1f5cc156929b42cc6b3ad9751f7e827b",
+        "source_sentence_hash": "a923812ad25baff0635f27d2c4f943a06c4e821241d4b3c99bf74201247a4d88",
+        "section_path": ["VoiceOver", "Navigation"]
+      },
+      "title": "Expose visual element relationships to VoiceOver",
+      "statement": {
+        "en": "Specify element grouping, order, and links so VoiceOver communicates relationships that are otherwise visual.",
+        "ja": "elementのgrouping、order、linkを指定し、visual-onlyな関係をVoiceOverへ伝える。"
+      },
+      "normative_level": "SHOULD",
+      "confidence": "high",
+      "review_required": false,
+      "conditions": [
+        "Audit relationships conveyed only through proximity, alignment, or other visual context.",
+        "Respect the reading order of the active language and locale.",
+        "Group related images with their respective captions."
+      ],
+      "review_note": "Recovered the omitted Specify lead and recorded visual-context, reading-order, and grouping requirements."
     }
   }
 }

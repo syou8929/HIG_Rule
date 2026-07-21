@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
+Generated 2026-07-21T13:20:51.701Z. 1872 active rules; 3 deprecated rules.
 
 ## getting-started
 
@@ -182,11 +182,13 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-COLOR-0014 · SHOULD · low** — Apply the documented Color guidance to apply color profiles to your images. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - **HIG-FOUNDATIONS-COLOR-0015 · SHOULD · low** — Choose or apply wide color to enhance the visual experience on compatible displays in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - **HIG-FOUNDATIONS-COLOR-0016 · SHOULD · low** — Make color space–specific image and color variations if necessary available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0017 · MAY · low** — Evaluate whether choosing a limited color palette that coordinates with your app logo is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0018 · AVOID · low** — Exclude using only color to indicate focus from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0019 · SHOULD · low** — Choose or apply color sparingly, especially on glass in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0020 · SHOULD · low** — Favor using color in bold text and large areas when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0021 · SHOULD · low** — Choose or apply background color to support existing content or supply additional information in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0017 · MAY · high** — Consider a limited tvOS color palette that coordinates with the app logo. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0018 · AVOID · high** — Avoid using color as the only indication of tvOS focus. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0019 · SHOULD · high** — Use color sparingly in visionOS, especially on glass material. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0020 · SHOULD · high** — Prefer using color in bold visionOS text and large areas. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0021 · SHOULD · high** — Use watchOS background color to support content or communicate additional information. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0022 · SHOULD · high** — Balance brightness levels to preserve visual comfort in a fully immersive visionOS experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0023 · SHOULD · high** — Account for people preferring tinted mode in watchOS graphic complications. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 ### dark-mode
 
 - **HIG-FOUNDATIONS-DARK-MODE-0001 · AVOID · low** — Exclude offering an app-specific appearance setting from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
@@ -209,12 +211,13 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-FOUNDATIONS-ICONS-0005 · SHOULD · low** — Apply the documented Icons guidance to include text in your design only when it’s essential for conveying meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0006 · SHOULD · low** — Make alternative text labels for custom interface icons available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0007 · AVOID · low** — Exclude using replicas of Apple hardware products from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0008 · SHOULD · low** — Apply the documented Icons guidance to design simple images that clearly communicate the document type. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0009 · MAY · low** — Evaluate whether reducing complexity in the small versions of your document icon is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0010 · AVOID · low** — Exclude placing important content in the top-right corner of your background fill from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0011 · SHOULD · low** — Define a margin that measures about 10% of the image canvas and keep most of the image within it explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0012 · MAY · low** — When a familiar object can convey a document’s type or its connection with your app, consider creating a center. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0008 · SHOULD · high** — Design simple macOS document-icon images that clearly communicate the document type. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0009 · MAY · high** — Consider reducing complexity in small versions of a macOS document icon. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0010 · AVOID · high** — Avoid important content in the top-right corner of a macOS document-icon background. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0011 · SHOULD · high** — Define a 10% margin and keep most macOS document center imagery within it. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0012 · MAY · high** — When a familiar object conveys a document type or app connection, consider using it as the center image. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0013 · SHOULD · low** — When necessary, add padding to a custom interface icon to achieve optical alignment. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0014 · SHOULD · high** — When a file extension is unfamiliar, specify a succinct term that clarifies the macOS document type. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 ### images
 
 - **HIG-FOUNDATIONS-IMAGES-0001 · SHOULD · low** — Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
@@ -846,6 +849,7 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-COMPLICATIONS-0008 · AVOID · high** — Avoid using color as the only way to communicate important information in a complication. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0009 · MAY · high** — Choose complication timeline update times that maximize usefulness within the system's limited update and entry budgets. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 - **HIG-COMPONENTS-COMPLICATIONS-0010 · SHOULD · low** — Define a different deep link for each complication you support explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
+- **HIG-COMPONENTS-COMPLICATIONS-0011 · SHOULD · low** — Account for that people might prefer to use tinted mode for complications, instead of viewing them in full color. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
 ### context-menus
 
 - **HIG-COMPONENTS-CONTEXT-MENUS-0001 · SHOULD · low** — Apply the documented Context menus guidance to prioritize relevancy when choosing items to include in a context menu. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
@@ -1251,6 +1255,8 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-COMPONENTS-TAB-BARS-0012 · SHOULD · low** — Apply the documented Tab bars guidance to be aware of tab bar scrolling behaviors. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - **HIG-COMPONENTS-TAB-BARS-0013 · SHOULD · low** — Apply the documented Tab bars guidance to choose a font for tab items, including a different font for the selected item. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 - **HIG-COMPONENTS-TAB-BARS-0014 · MAY · low** — When it makes sense in your app, consider using a sidebar within a tab. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0015 · SHOULD · low** — Specify a tint, color, or image for the tab bar background. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
+- **HIG-COMPONENTS-TAB-BARS-0016 · SHOULD · low** — Specify tints for selected and unselected items. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
 ### tab-views
 
 - **HIG-COMPONENTS-TAB-VIEWS-0001 · SHOULD · high** — Use a macOS tab view for closely related content areas. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-views))
@@ -1579,6 +1585,7 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-INPUTS-KEYBOARDS-0007 · SHOULD · low** — Apply the documented Keyboards guidance to write descriptive shortcut titles. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0008 · SHOULD · low** — Define custom keyboard shortcuts for only the most frequently used app-specific commands explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 - **HIG-INPUTS-KEYBOARDS-0009 · AVOID · low** — Exclude repurpose standard keyboard shortcuts for custom actions from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
+- **HIG-INPUTS-KEYBOARDS-0010 · SHOULD · low** — Account for that people see an overlay when they use a physical keyboard with your visionOS app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/keyboards))
 ### nearby-interactions
 
 - **HIG-INPUTS-NEARBY-INTERACTIONS-0001 · MAY · low** — Evaluate whether a task from the perspective of the physical world to find inspiration for a nearby interaction is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/nearby-interactions))
@@ -1613,6 +1620,7 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-INPUTS-POINTING-DEVICES-0019 · SHOULD · low** — Choose or apply highlight for a small element that has a transparent background in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - **HIG-INPUTS-POINTING-DEVICES-0020 · SHOULD · low** — Choose or apply lift for a small element that has an opaque background in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 - **HIG-INPUTS-POINTING-DEVICES-0021 · SHOULD · low** — Choose or apply hover for large elements and customize the scale, tint, and shadow attributes as needed (for guidance, see Customizing in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
+- **HIG-INPUTS-POINTING-DEVICES-0022 · SHOULD · low** — Specify the corner radius of a nonstandard element that receives the lift effect. ([source](https://developer.apple.com/design/human-interface-guidelines/pointing-devices))
 ### remotes
 
 - **HIG-INPUTS-REMOTES-0001 · SHOULD · low** — Favor using standard gestures to perform standard actions when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
@@ -1892,6 +1900,7 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-HOMEKIT-0035 · MAY · low** — Evaluate whether how and when to provide a custom accessory setup experience is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - **HIG-TECHNOLOGIES-HOMEKIT-0036 · SHOULD · low** — Refer to apple devices and operating systems only in technical specifications or compatibility descriptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - **HIG-TECHNOLOGIES-HOMEKIT-0037 · SHOULD · low** — Present example voice commands to demonstrate using Siri to control accessories during setup in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- **HIG-TECHNOLOGIES-HOMEKIT-0038 · SHOULD · low** — Account for that people can have more than one home. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 ### icloud
 
 - **HIG-TECHNOLOGIES-ICLOUD-0001 · SHOULD · low** — Apply the documented iCloud guidance to make it easy to use your app with iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
@@ -1909,6 +1918,7 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-ID-VERIFIER-0001 · SHOULD · low** — Present only request in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - **HIG-TECHNOLOGIES-ID-VERIFIER-0002 · SHOULD · low** — Apply the documented ID Verifier guidance to ask only for the data you need. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - **HIG-TECHNOLOGIES-ID-VERIFIER-0003 · SHOULD · low** — Make a button that initiates the verification process available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
+- **HIG-TECHNOLOGIES-ID-VERIFIER-0004 · SHOULD · low** — In a Display Only request, help the person using your app provide feedback on the visual confirmation they perform. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 ### imessage-apps-and-stickers
 
 - **HIG-TECHNOLOGIES-IMESSAGE-APPS-AND-STICKERS-0001 · SHOULD · low** — Favor providing one primary experience in your iMessage app when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers))
@@ -1951,6 +1961,7 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0032 · SHOULD · low** — Clearly describe how a free trial works. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0033 · SHOULD · low** — Clearly explain offer details. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0034 · SHOULD · low** — Clearly describe the differences between versions of your app that run on different devices. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0035 · SHOULD · low** — In your tvOS app, help people sign up or authenticate using another device. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 ### live-photos
 
 - **HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 · SHOULD · low** — Apply the documented Live Photos guidance to apply adjustments to all frames. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
@@ -2156,6 +2167,7 @@ Generated 2026-07-21T13:10:43.101Z. 1860 active rules; 3 deprecated rules.
 - **HIG-TECHNOLOGIES-VOICEOVER-0004 · SHOULD · medium** — Choose or apply titles and headings to help people navigate your information hierarchy in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - **HIG-TECHNOLOGIES-VOICEOVER-0005 · SHOULD · medium** — Ensure the experience accommodates the VoiceOver rotor when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 - **HIG-TECHNOLOGIES-VOICEOVER-0006 · SHOULD · medium** — Apply the documented VoiceOver guidance to be mindful that custom gestures aren’t always accessible. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
+- **HIG-TECHNOLOGIES-VOICEOVER-0007 · SHOULD · high** — Specify element grouping, order, and links so VoiceOver communicates relationships that are otherwise visual. ([source](https://developer.apple.com/design/human-interface-guidelines/voiceover))
 ### wallet
 
 - **HIG-TECHNOLOGIES-WALLET-0001 · SHOULD · low** — Make to add new passes to Wallet available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))

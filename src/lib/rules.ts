@@ -1,8 +1,8 @@
 import type { GuidanceCandidate, NormativeLevel, Portability, Rule, SourcePage } from "./types.js";
 import { slugify } from "./util.js";
 
-const ACTIONABLE = /^(accurately|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|bear in mind|break up|carefully consider|change|choose|clearly|communicate|confirm|consider|convey|create|defer|define|describe|design|determine|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|identify|in general, avoid|include|integrate|keep|let|make|maintain|match|minimize|must|never|offer|optimize|personalize|place|position|prefer|present|preserve|prioritize|provide|reduce|refer to|remove|replacing|represent|require|reserve|respect|respond|retain|show|showcase|simplify|strive|support|take advantage|test|tightening|track|tracking|treat|try to|use|verify|warn|write|you must)\b/i;
-const CONTEXTUAL_ACTIONABLE = /^(because\b.+\bensure\b|for\b.+\bconsider\b|if\b.+,\s*(?:add|consider|supply)\b|in general,\s*(?:do not|don['’]t|use)\b|outside of\b.+\buse\b|to\b.+,\s*prefer\b|within\b.+\bconsider\b)/i;
+const ACTIONABLE = /^(accurately|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|bear in mind|break up|carefully consider|change|choose|clearly|communicate|confirm|consider|convey|create|defer|define|describe|design|determine|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|identify|in general, avoid|include|integrate|keep|let|make|maintain|match|minimize|must|never|offer|optimize|personalize|place|position|prefer|present|preserve|prioritize|provide|recognize|reduce|refer to|remove|replacing|represent|require|reserve|respect|respond|retain|show|showcase|simplify|specify|strive|support|take advantage|test|tightening|track|tracking|treat|try to|use|verify|warn|write|you must)\b/i;
+const CONTEXTUAL_ACTIONABLE = /^(because\b.+\bensure\b|for\b.+\bconsider\b|if\b.+,\s*(?:add|consider|supply)\b|in\b.+,\s*help\b|in general,\s*(?:do not|don['’]t|use)\b|outside of\b.+\buse\b|to\b.+,\s*prefer\b|within\b.+\bconsider\b)/i;
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
@@ -92,6 +92,13 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
       ja: `通常は${value}を使う。`,
     };
   }
+  const contextualHelp = candidate.match(/^in (.+?), help (.+)$/i);
+  if (contextualHelp) {
+    return {
+      en: `In ${lowerFirst(contextualHelp[1] ?? "the documented context")}, help ${lowerFirst(contextualHelp[2] ?? "people complete the documented task")}.`,
+      ja: `${contextualHelp[1] ?? "該当状況"}では${contextualHelp[2] ?? "記載されたtask"}を支援する。`,
+    };
+  }
   const patterns: Array<{ match: RegExp; en: (value: string) => string; ja: (value: string) => string }> = [
     { match: /^support\b/i, en: (v) => `Ensure the experience accommodates ${lowerFirst(v)}.`, ja: (v) => `${v}を利用できる設計にする。` },
     { match: /^use\b/i, en: (v) => `Choose or apply ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況では${v}を採用する。` },
@@ -110,6 +117,8 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
     { match: /^refer to\b/i, en: (v) => `Refer to ${lowerFirst(v)}.`, ja: (v) => `${v}という名称で参照する。` },
     { match: /^integrate\b/i, en: (v) => `Connect the experience with ${lowerFirst(v)}.`, ja: (v) => `${v}と体験を連携する。` },
     { match: /^represent\b/i, en: (v) => `Represent ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を表現する。` },
+    { match: /^recognize\b/i, en: (v) => `Account for ${lowerFirst(v)}.`, ja: (v) => `${v}を考慮する。` },
+    { match: /^specify\b/i, en: (v) => `Specify ${lowerFirst(v)}.`, ja: (v) => `${v}を指定する。` },
     { match: /^require\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
     { match: /^(must|you must)\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
     { match: /^reserve\b/i, en: (v) => `Reserve ${lowerFirst(v)} for the documented purpose.`, ja: (v) => `${v}を記載された目的に限定する。` },

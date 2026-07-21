@@ -554,17 +554,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-ICONS-0008",
-    "title": "Design simple images that clearly communicate the document type",
+    "title": "Design simple macOS document-icon imagery",
     "category": "foundations",
     "topic": "icons",
     "subtopic": "document-icons",
     "statement": {
-      "en": "Apply the documented Icons guidance to design simple images that clearly communicate the document type.",
-      "ja": "「Icons」において「Design simple images that clearly communicate the document type」の指針を適用する。"
+      "en": "Design simple macOS document-icon images that clearly communicate the document type.",
+      "ja": "document typeを明確に伝えるsimpleなmacOS document-icon imageを設計する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -579,7 +579,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer uncomplicated shapes and a reduced palette of distinct colors.",
+      "Keep the design recognizable down to 16×16 px."
     ],
     "exceptions": [],
     "rationale": {
@@ -589,7 +590,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Icons guidance to design simple images that clearly communicate the document type.” in the documented Icons context?"
+        "Does the design satisfy “Design simple macOS document-icon images that clearly communicate the document type.” in the documented Icons context?"
       ]
     },
     "testability": "manual",
@@ -611,7 +612,7 @@
       "retrieved_at": "2026-07-21T11:14:56.481Z",
       "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
       "source_sentence_hash": "4376456ce8befe8d3b36f994c6fac577b65db83f6b3f1bc1a6022eab7e544af1",
-      "evidence_paraphrase": "Apply the documented Icons guidance to design simple images that clearly communicate the document type."
+      "evidence_paraphrase": "Design simple macOS document-icon images that clearly communicate the document type."
     },
     "tags": [
       "foundations",
@@ -622,22 +623,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Icons guidance to design simple images that clearly communicate the document type.",
+    "apple_native_rule": "Design simple macOS document-icon images that clearly communicate the document type.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-ICONS-0009",
-    "title": "Consider reducing complexity in the small versions of your document icon",
+    "title": "Consider simplifying small macOS document icons",
     "category": "foundations",
     "topic": "icons",
     "subtopic": "document-icons",
     "statement": {
-      "en": "Evaluate whether reducing complexity in the small versions of your document icon is appropriate for the current context.",
-      "ja": "reducing complexity in the small versions of your document iconが現在の状況に適切か検討する。"
+      "en": "Consider reducing complexity in small versions of a macOS document icon.",
+      "ja": "small versionのmacOS document iconではcomplexity低減を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -652,7 +653,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use fewer or thicker details at intermediate sizes.",
+      "Remove details that become unclear at 16×16 px."
     ],
     "exceptions": [],
     "rationale": {
@@ -662,7 +664,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether reducing complexity in the small versions of your document icon is appropriate for the current context.” in the documented Icons context?"
+        "Does the design satisfy “Consider reducing complexity in small versions of a macOS document icon.” in the documented Icons context?"
       ]
     },
     "testability": "manual",
@@ -684,7 +686,7 @@
       "retrieved_at": "2026-07-21T11:14:56.481Z",
       "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
       "source_sentence_hash": "3e5acc0e8e8ee472e59ba996c27af121e68bd09532e54b18ef894fb97d424572",
-      "evidence_paraphrase": "Evaluate whether reducing complexity in the small versions of your document icon is appropriate for the current context."
+      "evidence_paraphrase": "Consider reducing complexity in small versions of a macOS document icon."
     },
     "tags": [
       "foundations",
@@ -695,22 +697,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether reducing complexity in the small versions of your document icon is appropriate for the current context.",
+    "apple_native_rule": "Consider reducing complexity in small versions of a macOS document icon.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-ICONS-0010",
-    "title": "Avoid placing important content in the top-right corner of your background fill",
+    "title": "Avoid important content beneath the document-icon fold",
     "category": "foundations",
     "topic": "icons",
     "subtopic": "document-icons",
     "statement": {
-      "en": "Exclude placing important content in the top-right corner of your background fill from the applicable experience.",
-      "ja": "該当する体験ではplacing important content in the top-right corner of your background fillを避ける。"
+      "en": "Avoid important content in the top-right corner of a macOS document-icon background.",
+      "ja": "macOS document-icon backgroundのtop-right cornerにimportant contentを置かない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -725,7 +727,12 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The system masks the image and draws a white folded corner over it.",
+      "Background assets: 512×512 px at 1× or 1024×1024 px at 2×.",
+      "Background assets: 256×256 px at 1× or 512×512 px at 2×.",
+      "Background assets: 128×128 px at 1× or 256×256 px at 2×.",
+      "Background assets: 32×32 px at 1× or 64×64 px at 2×.",
+      "Background assets: 16×16 px at 1× or 32×32 px at 2×."
     ],
     "exceptions": [],
     "rationale": {
@@ -735,7 +742,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude placing important content in the top-right corner of your background fill from the applicable experience.” in the documented Icons context?"
+        "Does the design satisfy “Avoid important content in the top-right corner of a macOS document-icon background.” in the documented Icons context?"
       ]
     },
     "testability": "manual",
@@ -757,7 +764,7 @@
       "retrieved_at": "2026-07-21T11:14:56.481Z",
       "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
       "source_sentence_hash": "1eceb03a340c555710e73d12f026285556f948803aa366c63e0c2c5dddf1f81f",
-      "evidence_paraphrase": "Exclude placing important content in the top-right corner of your background fill from the applicable experience."
+      "evidence_paraphrase": "Avoid important content in the top-right corner of a macOS document-icon background."
     },
     "tags": [
       "foundations",
@@ -768,22 +775,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude placing important content in the top-right corner of your background fill from the applicable experience.",
+    "apple_native_rule": "Avoid important content in the top-right corner of a macOS document-icon background.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-ICONS-0011",
-    "title": "Define a margin that measures about 10% of the image canvas and keep most of the image within it",
+    "title": "Keep most center imagery inside a 10% margin",
     "category": "foundations",
     "topic": "icons",
     "subtopic": "document-icons",
     "statement": {
-      "en": "Define a margin that measures about 10% of the image canvas and keep most of the image within it explicitly.",
-      "ja": "a margin that measures about 10% of the image canvas and keep most of the image within itを明確に定義する。"
+      "en": "Define a 10% margin and keep most macOS document center imagery within it.",
+      "ja": "10% marginを定義し、macOS document center imageの大半を内側へ収める。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -798,9 +805,12 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let the image occupy about 80% of its canvas.",
+      "A 256×256 px canvas yields an approximately 205×205 px main-image area."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Extend small parts into the margin when optical alignment needs it."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Icons experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるIconsの一貫性と使いやすさを支えます。"
@@ -808,7 +818,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Define a margin that measures about 10% of the image canvas and keep most of the image within it explicitly.” in the documented Icons context?"
+        "Does the design satisfy “Define a 10% margin and keep most macOS document center imagery within it.” in the documented Icons context?"
       ]
     },
     "testability": "manual",
@@ -830,7 +840,7 @@
       "retrieved_at": "2026-07-21T11:14:56.481Z",
       "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
       "source_sentence_hash": "8311e2e1dd8fdd77051cf884e61d1011930a49727026a999b4eb0eba1db9bcc8",
-      "evidence_paraphrase": "Define a margin that measures about 10% of the image canvas and keep most of the image within it explicitly."
+      "evidence_paraphrase": "Define a 10% margin and keep most macOS document center imagery within it."
     },
     "tags": [
       "foundations",
@@ -841,22 +851,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Define a margin that measures about 10% of the image canvas and keep most of the image within it explicitly.",
+    "apple_native_rule": "Define a 10% margin and keep most macOS document center imagery within it.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-ICONS-0012",
-    "title": "If a familiar object can convey a document’s type or its connection with your app, consider creating a center",
+    "title": "Consider a familiar-object center image for a document icon",
     "category": "foundations",
     "topic": "icons",
     "subtopic": "document-icons",
     "statement": {
-      "en": "When a familiar object can convey a document’s type or its connection with your app, consider creating a center.",
-      "ja": "a familiar object can convey a document’s type or its connection with your app場合はcreating a centerを検討する。"
+      "en": "When a familiar object conveys a document type or app connection, consider using it as the center image.",
+      "ja": "familiar objectがdocument typeやapp connectionを伝える場合、center imageへの使用を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -871,7 +881,12 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep the center image simple, unambiguous, and recognizable at every size.",
+      "Make the center-image canvas half the overall document-icon size.",
+      "Center assets: 256×256 px at 1× or 512×512 px at 2×.",
+      "Center assets: 128×128 px at 1× or 256×256 px at 2×.",
+      "Center assets: 32×32 px at 1× or 64×64 px at 2×.",
+      "Center assets: 16×16 px at 1× or 32×32 px at 2×."
     ],
     "exceptions": [],
     "rationale": {
@@ -881,7 +896,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “When a familiar object can convey a document’s type or its connection with your app, consider creating a center.” in the documented Icons context?"
+        "Does the design satisfy “When a familiar object conveys a document type or app connection, consider using it as the center image.” in the documented Icons context?"
       ]
     },
     "testability": "manual",
@@ -903,7 +918,7 @@
       "retrieved_at": "2026-07-21T11:14:56.481Z",
       "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
       "source_sentence_hash": "cbcf33e4b11cf7acc52983899e55def99edceeda098a4c54aeec3def9259ec9c",
-      "evidence_paraphrase": "When a familiar object can convey a document’s type or its connection with your app, consider creating a center."
+      "evidence_paraphrase": "When a familiar object conveys a document type or app connection, consider using it as the center image."
     },
     "tags": [
       "foundations",
@@ -914,7 +929,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "When a familiar object can convey a document’s type or its connection with your app, consider creating a center.",
+    "apple_native_rule": "When a familiar object conveys a document type or app connection, consider using it as the center image.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -994,6 +1009,81 @@
     "priority_rank": 6,
     "status": "active",
     "apple_native_rule": "When necessary, add padding to a custom interface icon to achieve optical alignment.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-ICONS-0014",
+    "title": "Specify a succinct document term when the extension is unclear",
+    "category": "foundations",
+    "topic": "icons",
+    "subtopic": "document-icons",
+    "statement": {
+      "en": "When a file extension is unfamiliar, specify a succinct term that clarifies the macOS document type.",
+      "ja": "file extensionがunfamiliarな場合、macOS document typeを明確にする簡潔なtermを指定する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The system otherwise shows the file extension at the document icon's bottom edge.",
+      "Use a term short enough to remain legible after automatic scaling.",
+      "The system capitalizes every letter by default."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Icons experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるIconsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When a file extension is unfamiliar, specify a succinct term that clarifies the macOS document type.” in the documented Icons context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/icons",
+      "page_title": "Icons",
+      "section_path": [
+        "Icons",
+        "Platform considerations",
+        "macOS",
+        "Document icons"
+      ],
+      "retrieved_at": "2026-07-21T11:14:56.481Z",
+      "source_hash": "f9e40919809840d6bc6de165a3dc5c03af87fe33a2d06f6b7a5a9dc8ada56e74",
+      "source_sentence_hash": "916bd6b099484bb37b9b9bce56ef9a94298a3ae151968c93e54c2f4a29462862",
+      "evidence_paraphrase": "When a file extension is unfamiliar, specify a succinct term that clarifies the macOS document type."
+    },
+    "tags": [
+      "foundations",
+      "icons",
+      "platform-considerations",
+      "macos",
+      "document-icons"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When a file extension is unfamiliar, specify a succinct term that clarifies the macOS document type.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

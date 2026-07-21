@@ -84,6 +84,11 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(paraphrase("In general, use dynamic scaling", "Windows").en, "Generally, use dynamic scaling.");
   assert.equal(isActionable({ text: "You must support multiple windows", section_path: [], source_sentence_hash: "7".repeat(64), word_count: 5 }), true);
   assert.equal(paraphrase("You must support multiple windows", "Windows").en, "Require support multiple windows.");
+  assert.equal(isActionable({ text: "In an immersive experience, help people maintain comfort", section_path: [], source_sentence_hash: "8".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Recognize that people may prefer tinted mode", section_path: [], source_sentence_hash: "9".repeat(64), word_count: 7 }), true);
+  assert.equal(paraphrase("In an immersive experience, help people maintain comfort", "Color").en, "In an immersive experience, help people maintain comfort.");
+  assert.equal(isActionable({ text: "Specify a succinct term", section_path: [], source_sentence_hash: "a".repeat(64), word_count: 4 }), true);
+  assert.equal(paraphrase("Specify a succinct term", "Icons").en, "Specify a succinct term.");
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 
