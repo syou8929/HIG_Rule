@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2041
-- Reviewed batches: 135
+- Reviewed rules: 2073
+- Reviewed batches: 136
 - Official source only: yes
-- Reviewed at: 2026-07-22T17:29:53Z
+- Reviewed at: 2026-07-22T17:45:02Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -769,6 +769,22 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-TOKEN-FIELDS-0002 · high — Recorded the typing-distraction condition and preserved optional delay customization. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
 - HIG-COMPONENTS-TOKEN-FIELDS-0003 · high — Recovered the missing Add-value lead and both documented menu-content types. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
 - HIG-COMPONENTS-TOKEN-FIELDS-0004 · high — Recorded the descriptive iOS, iPadOS, tvOS, visionOS, and watchOS limitations at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
+- HIG-COMPONENTS-TOOLBARS-0001 · high — Replaced the generic statement and recorded distinguishability and activation as the overcrowding test. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0002 · high — Recorded content-layer coloration, scroll-edge separation, and system-effect compatibility. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0003 · high — Made the color relationship explicit and recorded the monochromatic fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0004 · high — Named the documented standard components and left custom-radius conformance in a separate MUST rule. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0005 · high — Retained MAY and separated reliable restoration into rule 0042. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0006 · high — Recorded both the multiwindow purpose and the redundant-title exception. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0007 · high — Replaced the generated grammar and recorded the useful-information alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0008 · high — Recorded the documented under-15-character target as a qualified condition, not a hard maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0009 · high — Recorded both semantic roles and the standard-symbol preference. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0010 · high — Recorded the frequency and object-importance prioritization criteria. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0011 · high — Retained the explicit Make sure MUST and recorded the no-guessing usability test. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0012 · high — Recorded why additional borders are unnecessary and potentially redundant. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0013 · high — Made the focal-point purpose concrete and split count and placement into separate rules. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0014 · high — Replaced the generic statement and recorded the cross-platform familiarity purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0015 · high — Recorded the qualified three-group target without promoting it to a hard maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0016 · high — Recorded both symbol-plus-text and adjacent-text ambiguity risks and the fixed-space technique. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-TOOLBARS-0017 · high — Scoped the guidance to limited iOS toolbar space and recorded the More fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-TOOLBARS-0018 · high — Recorded the automatic large-to-standard transition described by the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-TOOLBARS-0019 · high — Retained MAY and recorded the small-area-count and content-width rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
@@ -779,6 +795,22 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-TOOLBARS-0024 · high — Recorded the distinction between a view-related action and the app's primary function. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-TOOLBARS-0025 · high — Recovered the omitted Try lead and retained SHOULD rather than an unconditional requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-TOOLBARS-0026 · high — Recovered the omitted conditional Consider lead and retained MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0027 · high — Recovered the responsive overflow-priority directive from the overcrowding guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0028 · high — Recovered the direct don't guidance and kept it at AVOID rather than unsupported MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0029 · high — Recovered the separate default-layout warning and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0030 · high — Activated the conditional recommendation, narrowed scope to the named platforms, and retained MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0031 · high — Recovered the conditional MUST from the explicit Ensure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0032 · high — Recovered the direct don't guidance and retained AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0033 · high — Recovered the conditional MUST from the explicit Make sure and Ensure clauses without applying it to standard controls. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0034 · high — Recovered the symbol preference and preserved the poorly represented action exception. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0035 · high — Recovered the one-primary-action constraint and retained SHOULD, consistent with direct Only guidance rather than an explicit MUST marker. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0036 · high — Recovered primary-action placement as a separate atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0037 · high — Recovered the explicit region-pinning and spacing technique without copying placement prose. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0038 · high — Activated the omitted grouping lead and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0039 · high — Activated the omitted critical-action grouping lead and recorded its discoverability purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0040 · high — Split the exit-state requirement from the optional modal-control recommendation and retained MUST from Be sure. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0041 · high — Activated the More lead and recorded its priority and necessity qualifications. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0042 · high — Recovered restoration as an atomic rule separate from the optional decision to hide a toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-TOP-SHELF-0001 · high — Recorded the default playback and More Info paths from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
 - HIG-COMPONENTS-TOP-SHELF-0002 · high — Preserved the purchasable-content and interest-triggered-price qualifications. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))
 - HIG-COMPONENTS-TOP-SHELF-0003 · high — Recorded the nonfocusable static-image constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))

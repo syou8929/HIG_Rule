@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T17:29:53Z",
+  "reviewed_at": "2026-07-22T17:45:02Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "977e54a2aa92b62ed6670f132305c8c5d72905ccc9b7bff977fbd154e2211db2",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 332,
+  "reviewed_rule_count": 335,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -2438,6 +2438,30 @@
       ],
       "exceptions": ["Avoid depth that reduces legibility or usability on small objects."],
       "review_note": "Retained MUST after reviewing the explicit Make sure lead and its value, scale, legibility, and refocusing limits."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0031": {
+      "title": "Ensure custom toolbar corner radii are concentric",
+      "statement": {"en": "When creating a custom toolbar component, ensure its corner radius is concentric with the bar corners.", "ja": "custom toolbar componentを作る場合はcorner radiusをbar cornerと同心にする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply only when a standard toolbar component can't meet the need."],
+      "review_note": "Retained the conditional MUST from the explicit Ensure directive for custom toolbar components."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0033": {
+      "title": "Ensure custom Back and Close controls preserve standard behavior",
+      "statement": {"en": "Ensure custom Back and Close controls preserve standard appearance, expected behavior, visual fit, and implementation consistency.", "ja": "custom BackおよびClose controlでstandard appearance、expected behavior、visual fit、implementation consistencyを保つ。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply when creating a custom version instead of the standard Back or Close button."],
+      "review_note": "Retained the conditional MUST from the source's Make sure and Ensure clauses."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0040": {
+      "title": "Reinstate standard visionOS toolbar controls after a modal state",
+      "statement": {"en": "When a visionOS app exits a modal state, reinstate the window's standard toolbar controls.", "ja": "visionOS appがmodal stateを終了したらwindowのstandard toolbar controlを復元する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply when a modal task temporarily replaces the main window's toolbar controls."],
+      "review_note": "Split the exit-state requirement from the optional modal-control recommendation and retained MUST from Be sure."
     }
   },
   "additional_rules": [

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T17:33:24.803Z. 2826 active rules; 4 deprecated rules.
+Generated 2026-07-22T23:05:37.675Z. 2842 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1877,22 +1877,22 @@ Generated 2026-07-22T17:33:24.803Z. 2826 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-TOKEN-FIELDS-0004 · AVOID · high** — Avoid using token fields outside macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/token-fields))
 ### toolbars
 
-- **HIG-COMPONENTS-TOOLBARS-0001 · SHOULD · low** — Apply the documented Toolbars guidance to choose items deliberately to avoid overcrowding. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0002 · SHOULD · low** — Apply the documented Toolbars guidance to reduce the use of toolbar backgrounds and tinted controls. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0003 · AVOID · low** — Exclude applying a similar color to toolbar item labels and content layer backgrounds from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0004 · SHOULD · low** — Favor using standard components in a toolbar when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0005 · MAY · low** — Evaluate whether temporarily hiding toolbars for a distraction-free experience is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0006 · SHOULD · low** — Make a useful title for each window available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0007 · AVOID · low** — Exclude title windows with your app name from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0008 · SHOULD · low** — Apply the documented Toolbars guidance to write a concise title. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0009 · SHOULD · low** — Choose or apply the standard Back and Close buttons in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0010 · SHOULD · low** — Make actions that support the main tasks people perform available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0011 · MUST · medium** — Verify that the meaning of each control is clear. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0012 · SHOULD · low** — Favor system-provided symbols without borders when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0013 · SHOULD · low** — Choose or apply the .prominent style for key actions such as Done or Submit in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0014 · SHOULD · low** — Maintain consistent groupings and placement across platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0015 · SHOULD · low** — Apply the documented Toolbars guidance to minimize the number of groups. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
-- **HIG-COMPONENTS-TOOLBARS-0016 · SHOULD · low** — Maintain actions with text labels separate. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0001 · SHOULD · high** — Choose toolbar items deliberately so each one remains distinguishable and activatable. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0002 · SHOULD · high** — Reduce custom toolbar backgrounds and tinted controls. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0003 · AVOID · high** — Avoid giving toolbar labels and content-layer backgrounds similar colors. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0004 · SHOULD · high** — Prefer standard buttons, text fields, headers, and footers in a toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0005 · MAY · high** — Consider temporarily hiding a toolbar when doing so reduces distractions or reveals more content. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0006 · SHOULD · high** — Give each window a title that identifies its location or content. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0007 · AVOID · high** — Avoid using the app name as a window title. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0008 · SHOULD · high** — Use a concise word or short phrase for a toolbar title. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0009 · SHOULD · high** — Use the standard Back and Close buttons for hierarchical navigation and modal dismissal. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0010 · SHOULD · high** — Prioritize toolbar actions that support the main tasks people perform. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0011 · MUST · high** — Ensure people can understand every toolbar control without guessing or experimenting. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0012 · SHOULD · high** — Prefer system-provided symbols without added borders for toolbar items. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0013 · SHOULD · high** — Use the prominent style for a key toolbar action such as Done or Submit. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0014 · SHOULD · high** — Keep toolbar grouping and placement consistent across the app's platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0015 · SHOULD · high** — Minimize the number of toolbar groups to avoid clutter and confusion. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0016 · SHOULD · high** — Separate text-labeled toolbar actions from adjacent symbol or text actions. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - **HIG-COMPONENTS-TOOLBARS-0017 · SHOULD · high** — Prioritize only essential iOS items in the main toolbar; move additional items to More. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - **HIG-COMPONENTS-TOOLBARS-0018 · SHOULD · high** — Use an iOS large title to preserve orientation during navigation and scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - **HIG-COMPONENTS-TOOLBARS-0019 · MAY · high** — Consider sharing the iPadOS top bar between a toolbar and tab bar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
@@ -1903,6 +1903,22 @@ Generated 2026-07-22T17:33:24.803Z. 2826 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-TOOLBARS-0024 · SHOULD · high** — Use a watchOS scrolling toolbar button for an important action that is not a primary app function. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - **HIG-COMPONENTS-TOOLBARS-0025 · SHOULD · high** — Keep visionOS windows wide enough to preserve reliable access to every toolbar control. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - **HIG-COMPONENTS-TOOLBARS-0026 · MAY · high** — When a visionOS app enters a modal state, consider context-specific toolbar controls. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0027 · SHOULD · high** — Define which toolbar items move to overflow as the view narrows. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0028 · AVOID · high** — Avoid manually adding an overflow menu in iPadOS or macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0029 · AVOID · high** — Avoid layouts that make iPadOS or macOS toolbar items overflow by default. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0030 · MAY · high** — Consider letting people customize iPadOS and macOS toolbars with their common items. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0031 · MUST · high** — When creating a custom toolbar component, ensure its corner radius is concentric with the bar corners. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0032 · AVOID · high** — Avoid text labels that say Back or Close for standard navigation controls. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0033 · MUST · high** — Ensure custom Back and Close controls preserve standard appearance, expected behavior, visual fit, and implementation consistency. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0034 · SHOULD · high** — Prefer simple recognizable symbols over text for toolbar actions they represent clearly. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0035 · SHOULD · high** — Specify only one primary action in a toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0036 · SHOULD · high** — Place the primary action on the trailing side of the toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0037 · SHOULD · high** — Position toolbar items in leading, center, or trailing regions and insert appropriate spacing between groups. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0038 · SHOULD · high** — Group toolbar items logically by function and frequency of use. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0039 · SHOULD · high** — Place navigation controls and critical actions in dedicated, familiar, visually distinct toolbar sections. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0040 · MUST · high** — When a visionOS app exits a modal state, reinstate the window's standard toolbar controls. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0041 · SHOULD · high** — Use a More menu only when necessary to contain additional lower-priority toolbar actions. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- **HIG-COMPONENTS-TOOLBARS-0042 · SHOULD · high** — Provide a reliable way to restore a temporarily hidden toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 ### top-shelf
 
 - **HIG-COMPONENTS-TOP-SHELF-0001 · SHOULD · high** — Use Top Shelf to give people a direct path to relevant content. ([source](https://developer.apple.com/design/human-interface-guidelines/top-shelf))

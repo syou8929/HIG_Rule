@@ -64000,17 +64000,17 @@
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0001",
-    "title": "Choose items deliberately to avoid overcrowding",
+    "title": "Avoid overcrowding toolbars",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Toolbars guidance to choose items deliberately to avoid overcrowding.",
-      "ja": "「Toolbars」において「Choose items deliberately to avoid overcrowding」の指針を適用する。"
+      "en": "Choose toolbar items deliberately so each one remains distinguishable and activatable.",
+      "ja": "各toolbar itemを識別して操作できるよう、itemを慎重に選ぶ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -64037,7 +64037,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Limit item count enough for people to distinguish and activate every control."
     ],
     "exceptions": [],
     "rationale": {
@@ -64047,7 +64047,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Toolbars guidance to choose items deliberately to avoid overcrowding.” in the documented Toolbars context?"
+        "Does the design satisfy “Choose toolbar items deliberately so each one remains distinguishable and activatable.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64067,7 +64067,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "fb26f4b8d4f9b69489fbd4053deec840b415829a0e0b62af0dfd05806ae99c54",
-      "evidence_paraphrase": "Apply the documented Toolbars guidance to choose items deliberately to avoid overcrowding."
+      "evidence_paraphrase": "Choose toolbar items deliberately so each one remains distinguishable and activatable."
     },
     "tags": [
       "components",
@@ -64076,22 +64076,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Toolbars guidance to choose items deliberately to avoid overcrowding.",
+    "apple_native_rule": "Choose toolbar items deliberately so each one remains distinguishable and activatable.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0002",
-    "title": "Reduce the use of toolbar backgrounds and tinted controls",
+    "title": "Reduce custom toolbar backgrounds and tinted controls",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Toolbars guidance to reduce the use of toolbar backgrounds and tinted controls.",
-      "ja": "「Toolbars」において「Reduce the use of toolbar backgrounds and tinted controls」の指針を適用する。"
+      "en": "Reduce custom toolbar backgrounds and tinted controls.",
+      "ja": "custom toolbar backgroundとtinted controlの使用を減らす。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -64118,7 +64118,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let the content layer inform toolbar color and appearance.",
+      "Use ScrollEdgeEffectStyle when the toolbar needs separation from content.",
+      "Avoid treatments that interfere with system background effects."
     ],
     "exceptions": [],
     "rationale": {
@@ -64128,7 +64130,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Toolbars guidance to reduce the use of toolbar backgrounds and tinted controls.” in the documented Toolbars context?"
+        "Does the design satisfy “Reduce custom toolbar backgrounds and tinted controls.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64148,7 +64150,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "1e1c56a2f4805c34b93e6182e5086b8a6a2dbcd91a52227e6b37e08316a3d5f7",
-      "evidence_paraphrase": "Apply the documented Toolbars guidance to reduce the use of toolbar backgrounds and tinted controls."
+      "evidence_paraphrase": "Reduce custom toolbar backgrounds and tinted controls."
     },
     "tags": [
       "components",
@@ -64157,22 +64159,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Toolbars guidance to reduce the use of toolbar backgrounds and tinted controls.",
+    "apple_native_rule": "Reduce custom toolbar backgrounds and tinted controls.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0003",
-    "title": "Avoid applying a similar color to toolbar item labels and content layer backgrounds",
+    "title": "Keep toolbar labels distinct from content backgrounds",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude applying a similar color to toolbar item labels and content layer backgrounds from the applicable experience.",
-      "ja": "該当する体験ではapplying a similar color to toolbar item labels and content layer backgroundsを避ける。"
+      "en": "Avoid giving toolbar labels and content-layer backgrounds similar colors.",
+      "ja": "toolbar labelとcontent-layer backgroundに似た色を使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -64199,7 +64201,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer the default monochromatic toolbar appearance when the content layer is already bright or colorful."
     ],
     "exceptions": [],
     "rationale": {
@@ -64209,7 +64211,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude applying a similar color to toolbar item labels and content layer backgrounds from the applicable experience.” in the documented Toolbars context?"
+        "Does the design satisfy “Avoid giving toolbar labels and content-layer backgrounds similar colors.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64229,7 +64231,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "30fde731fc8279a8a75887ac55b0bb165cadf2f28dd88a4a22eef21e9da3b78a",
-      "evidence_paraphrase": "Exclude applying a similar color to toolbar item labels and content layer backgrounds from the applicable experience."
+      "evidence_paraphrase": "Avoid giving toolbar labels and content-layer backgrounds similar colors."
     },
     "tags": [
       "components",
@@ -64238,22 +64240,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude applying a similar color to toolbar item labels and content layer backgrounds from the applicable experience.",
+    "apple_native_rule": "Avoid giving toolbar labels and content-layer backgrounds similar colors.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0004",
-    "title": "Prefer using standard components in a toolbar",
+    "title": "Prefer standard toolbar components",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Favor using standard components in a toolbar when the documented conditions apply.",
-      "ja": "該当条件ではusing standard components in a toolbarを優先する。"
+      "en": "Prefer standard buttons, text fields, headers, and footers in a toolbar.",
+      "ja": "toolbarではstandard button、text field、header、footerを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -64280,7 +64282,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Standard components receive corner radii that are concentric with the bar corners."
     ],
     "exceptions": [],
     "rationale": {
@@ -64290,7 +64292,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor using standard components in a toolbar when the documented conditions apply.” in the documented Toolbars context?"
+        "Does the design satisfy “Prefer standard buttons, text fields, headers, and footers in a toolbar.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64310,7 +64312,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "7d82a25a7f21defccf251d2e5e8900d0cb0934ab1363bfd39601e5d06b67455b",
-      "evidence_paraphrase": "Favor using standard components in a toolbar when the documented conditions apply."
+      "evidence_paraphrase": "Prefer standard buttons, text fields, headers, and footers in a toolbar."
     },
     "tags": [
       "components",
@@ -64319,22 +64321,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Favor using standard components in a toolbar when the documented conditions apply.",
+    "apple_native_rule": "Prefer standard buttons, text fields, headers, and footers in a toolbar.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0005",
-    "title": "Consider temporarily hiding toolbars for a distraction-free experience",
+    "title": "Consider temporarily hiding a toolbar to reduce distractions",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether temporarily hiding toolbars for a distraction-free experience is appropriate for the current context.",
-      "ja": "temporarily hiding toolbars for a distraction-free experienceが現在の状況に適切か検討する。"
+      "en": "Consider temporarily hiding a toolbar when doing so reduces distractions or reveals more content.",
+      "ja": "distractionを減らすかcontentを広く示せる場合はtoolbarの一時非表示を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -64361,7 +64363,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Hide the toolbar contextually only when the current task benefits."
     ],
     "exceptions": [],
     "rationale": {
@@ -64371,7 +64373,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether temporarily hiding toolbars for a distraction-free experience is appropriate for the current context.” in the documented Toolbars context?"
+        "Does the design satisfy “Consider temporarily hiding a toolbar when doing so reduces distractions or reveals more content.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64391,7 +64393,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "42dd1bd6af069d57905d19ec5c50ee1dfac13439ae9e0997d51809551bb416d1",
-      "evidence_paraphrase": "Evaluate whether temporarily hiding toolbars for a distraction-free experience is appropriate for the current context."
+      "evidence_paraphrase": "Consider temporarily hiding a toolbar when doing so reduces distractions or reveals more content."
     },
     "tags": [
       "components",
@@ -64400,22 +64402,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether temporarily hiding toolbars for a distraction-free experience is appropriate for the current context.",
+    "apple_native_rule": "Consider temporarily hiding a toolbar when doing so reduces distractions or reveals more content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0006",
-    "title": "Provide a useful title for each window",
+    "title": "Give each window a useful title",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "titles",
     "statement": {
-      "en": "Make a useful title for each window available when applicable.",
-      "ja": "必要な場合にa useful title for each windowを利用可能にする。"
+      "en": "Give each window a title that identifies its location or content.",
+      "ja": "各windowにlocationまたはcontentを識別できるtitleを付ける。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -64442,9 +64444,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use titles to distinguish multiple open windows."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Leave the title area empty when nearby content already provides sufficient context and the title would be redundant."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
@@ -64452,7 +64456,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make a useful title for each window available when applicable.” in the documented Toolbars context?"
+        "Does the design satisfy “Give each window a title that identifies its location or content.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64472,7 +64476,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "b9556cae9f1b1b272760667db27c49855bc63ae2d752f316bd58284ef641f1e9",
-      "evidence_paraphrase": "Make a useful title for each window available when applicable."
+      "evidence_paraphrase": "Give each window a title that identifies its location or content."
     },
     "tags": [
       "components",
@@ -64481,7 +64485,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make a useful title for each window available when applicable.",
+    "apple_native_rule": "Give each window a title that identifies its location or content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -64491,12 +64495,12 @@
     "topic": "toolbars",
     "subtopic": "titles",
     "statement": {
-      "en": "Exclude title windows with your app name from the applicable experience.",
-      "ja": "該当する体験ではtitle windows with your app nameを避ける。"
+      "en": "Avoid using the app name as a window title.",
+      "ja": "app nameをwindow titleとして使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -64523,7 +64527,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a title that communicates the content hierarchy, window, or app area instead."
     ],
     "exceptions": [],
     "rationale": {
@@ -64533,7 +64537,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude title windows with your app name from the applicable experience.” in the documented Toolbars context?"
+        "Does the design satisfy “Avoid using the app name as a window title.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64553,7 +64557,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "56103a959b2596227247aeca2a8af5f8df1a12d7d7908c06738e3ff4dc8f7082",
-      "evidence_paraphrase": "Exclude title windows with your app name from the applicable experience."
+      "evidence_paraphrase": "Avoid using the app name as a window title."
     },
     "tags": [
       "components",
@@ -64562,22 +64566,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude title windows with your app name from the applicable experience.",
+    "apple_native_rule": "Avoid using the app name as a window title.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0008",
-    "title": "Write a concise title",
+    "title": "Keep toolbar titles concise",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "titles",
     "statement": {
-      "en": "Apply the documented Toolbars guidance to write a concise title.",
-      "ja": "「Toolbars」において「Write a concise title」の指針を適用する。"
+      "en": "Use a concise word or short phrase for a toolbar title.",
+      "ja": "toolbar titleには簡潔な単語または短いphraseを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -64604,7 +64608,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Aim to keep the title under 15 characters so other controls have room."
     ],
     "exceptions": [],
     "rationale": {
@@ -64614,7 +64618,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Toolbars guidance to write a concise title.” in the documented Toolbars context?"
+        "Does the design satisfy “Use a concise word or short phrase for a toolbar title.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64634,7 +64638,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "0de39a27fb6c3152320e748fb4adac8c6fce637c7f92080b9c2351d2e80be18f",
-      "evidence_paraphrase": "Apply the documented Toolbars guidance to write a concise title."
+      "evidence_paraphrase": "Use a concise word or short phrase for a toolbar title."
     },
     "tags": [
       "components",
@@ -64643,22 +64647,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Toolbars guidance to write a concise title.",
+    "apple_native_rule": "Use a concise word or short phrase for a toolbar title.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0009",
-    "title": "Use the standard Back and Close buttons",
+    "title": "Use standard Back and Close buttons",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "navigation",
     "statement": {
-      "en": "Choose or apply the standard Back and Close buttons in the documented context.",
-      "ja": "該当する状況ではthe standard Back and Close buttonsを採用する。"
+      "en": "Use the standard Back and Close buttons for hierarchical navigation and modal dismissal.",
+      "ja": "hierarchical navigationとmodal dismissalにはstandard BackおよびClose buttonを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -64685,7 +64689,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer the standard symbol for each action."
     ],
     "exceptions": [],
     "rationale": {
@@ -64695,7 +64699,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the standard Back and Close buttons in the documented context.” in the documented Toolbars context?"
+        "Does the design satisfy “Use the standard Back and Close buttons for hierarchical navigation and modal dismissal.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64715,7 +64719,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "026df5ea5fee6dac02ac10d6884ed1ca44311c3b996f44ecc963b1e3b93845e7",
-      "evidence_paraphrase": "Choose or apply the standard Back and Close buttons in the documented context."
+      "evidence_paraphrase": "Use the standard Back and Close buttons for hierarchical navigation and modal dismissal."
     },
     "tags": [
       "components",
@@ -64724,22 +64728,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply the standard Back and Close buttons in the documented context.",
+    "apple_native_rule": "Use the standard Back and Close buttons for hierarchical navigation and modal dismissal.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0010",
-    "title": "Provide actions that support the main tasks people perform",
+    "title": "Prioritize toolbar actions for the main tasks",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "actions",
     "statement": {
-      "en": "Make actions that support the main tasks people perform available when applicable.",
-      "ja": "必要な場合にactions that support the main tasks people performを利用可能にする。"
+      "en": "Prioritize toolbar actions that support the main tasks people perform.",
+      "ja": "利用者のmain taskを支えるtoolbar actionを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -64766,7 +64770,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Usually prioritize frequently used commands, or commands for the highest-level or most important objects."
     ],
     "exceptions": [],
     "rationale": {
@@ -64776,7 +64780,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make actions that support the main tasks people perform available when applicable.” in the documented Toolbars context?"
+        "Does the design satisfy “Prioritize toolbar actions that support the main tasks people perform.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64796,7 +64800,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "1a616cd04f710d9b0acebe49db5b4777bb7c5d87b8473be06f65c6293f7ab4f4",
-      "evidence_paraphrase": "Make actions that support the main tasks people perform available when applicable."
+      "evidence_paraphrase": "Prioritize toolbar actions that support the main tasks people perform."
     },
     "tags": [
       "components",
@@ -64805,21 +64809,21 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make actions that support the main tasks people perform available when applicable.",
+    "apple_native_rule": "Prioritize toolbar actions that support the main tasks people perform.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0011",
-    "title": "Make sure the meaning of each control is clear",
+    "title": "Ensure every toolbar control has a clear meaning",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "actions",
     "statement": {
-      "en": "Verify that the meaning of each control is clear.",
-      "ja": "the meaning of each control is clearを満たしていることを確認する。"
+      "en": "Ensure people can understand every toolbar control without guessing or experimenting.",
+      "ja": "推測や試行をせずに各toolbar controlの意味を理解できるようにする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -64847,7 +64851,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use recognizable content that communicates the control's action."
     ],
     "exceptions": [],
     "rationale": {
@@ -64857,7 +64861,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that the meaning of each control is clear.” in the documented Toolbars context?"
+        "Does the design satisfy “Ensure people can understand every toolbar control without guessing or experimenting.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64877,7 +64881,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "bfeed9cfba4d272b38f52aa95880bac99ec5eb33e45b23ebe1f4fa8e687d7602",
-      "evidence_paraphrase": "Verify that the meaning of each control is clear."
+      "evidence_paraphrase": "Ensure people can understand every toolbar control without guessing or experimenting."
     },
     "tags": [
       "components",
@@ -64886,22 +64890,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that the meaning of each control is clear.",
+    "apple_native_rule": "Ensure people can understand every toolbar control without guessing or experimenting.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0012",
-    "title": "Prefer system-provided symbols without borders",
+    "title": "Prefer unbordered system symbols for toolbar items",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "actions",
     "statement": {
-      "en": "Favor system-provided symbols without borders when the documented conditions apply.",
-      "ja": "該当条件ではsystem-provided symbols without bordersを優先する。"
+      "en": "Prefer system-provided symbols without added borders for toolbar items.",
+      "ja": "toolbar itemには追加borderのないsystem-provided symbolを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -64928,7 +64932,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Rely on the toolbar section and system hover and selection appearances instead of outlined-circle borders."
     ],
     "exceptions": [],
     "rationale": {
@@ -64938,7 +64942,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor system-provided symbols without borders when the documented conditions apply.” in the documented Toolbars context?"
+        "Does the design satisfy “Prefer system-provided symbols without added borders for toolbar items.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -64958,7 +64962,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "6eaeaddfdecd47d867dd15bcdf432c4760920166646d918c144cfaa1fe1c879a",
-      "evidence_paraphrase": "Favor system-provided symbols without borders when the documented conditions apply."
+      "evidence_paraphrase": "Prefer system-provided symbols without added borders for toolbar items."
     },
     "tags": [
       "components",
@@ -64967,22 +64971,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Favor system-provided symbols without borders when the documented conditions apply.",
+    "apple_native_rule": "Prefer system-provided symbols without added borders for toolbar items.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0013",
-    "title": "Use the .prominent style for key actions such as Done or Submit",
+    "title": "Use the prominent style for a key toolbar action",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "actions",
     "statement": {
-      "en": "Choose or apply the .prominent style for key actions such as Done or Submit in the documented context.",
-      "ja": "該当する状況ではthe .prominent style for key actions such as Done or Submitを採用する。"
+      "en": "Use the prominent style for a key toolbar action such as Done or Submit.",
+      "ja": "DoneやSubmitのようなkey toolbar actionにはprominent styleを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -65009,7 +65013,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use separation and tint to establish one clear focal point."
     ],
     "exceptions": [],
     "rationale": {
@@ -65019,7 +65023,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the .prominent style for key actions such as Done or Submit in the documented context.” in the documented Toolbars context?"
+        "Does the design satisfy “Use the prominent style for a key toolbar action such as Done or Submit.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -65039,7 +65043,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "d287ef0fb0b5f03ed191edd093a8af29e44d7209220331ee27c6323e6accd788",
-      "evidence_paraphrase": "Choose or apply the .prominent style for key actions such as Done or Submit in the documented context."
+      "evidence_paraphrase": "Use the prominent style for a key toolbar action such as Done or Submit."
     },
     "tags": [
       "components",
@@ -65048,22 +65052,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply the .prominent style for key actions such as Done or Submit in the documented context.",
+    "apple_native_rule": "Use the prominent style for a key toolbar action such as Done or Submit.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0014",
-    "title": "Keep consistent groupings and placement across platforms",
+    "title": "Keep toolbar grouping and placement consistent across platforms",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "item-groupings",
     "statement": {
-      "en": "Maintain consistent groupings and placement across platforms.",
-      "ja": "consistent groupings and placement across platformsを維持する。"
+      "en": "Keep toolbar grouping and placement consistent across the app's platforms.",
+      "ja": "appの各platformでtoolbarのgroupingとplacementを一貫させる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -65090,7 +65094,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve familiarity when people use the app on different platforms."
     ],
     "exceptions": [],
     "rationale": {
@@ -65100,7 +65104,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain consistent groupings and placement across platforms.” in the documented Toolbars context?"
+        "Does the design satisfy “Keep toolbar grouping and placement consistent across the app's platforms.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -65120,7 +65124,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "cd03ba1034d0b65e0fcc6cf8c8e7b87d3f23d26613e99a0e5a36245dde94270f",
-      "evidence_paraphrase": "Maintain consistent groupings and placement across platforms."
+      "evidence_paraphrase": "Keep toolbar grouping and placement consistent across the app's platforms."
     },
     "tags": [
       "components",
@@ -65129,22 +65133,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain consistent groupings and placement across platforms.",
+    "apple_native_rule": "Keep toolbar grouping and placement consistent across the app's platforms.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0015",
-    "title": "Minimize the number of groups",
+    "title": "Minimize toolbar groups",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "item-groupings",
     "statement": {
-      "en": "Apply the documented Toolbars guidance to minimize the number of groups.",
-      "ja": "「Toolbars」において「Minimize the number of groups」の指針を適用する。"
+      "en": "Minimize the number of toolbar groups to avoid clutter and confusion.",
+      "ja": "clutterとconfusionを避けるためtoolbar group数を最小限にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -65171,7 +65175,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "In general, aim for no more than three groups."
     ],
     "exceptions": [],
     "rationale": {
@@ -65181,7 +65185,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Toolbars guidance to minimize the number of groups.” in the documented Toolbars context?"
+        "Does the design satisfy “Minimize the number of toolbar groups to avoid clutter and confusion.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -65201,7 +65205,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "17ce1d614fd859578de1ea2eed5424ed59d25a3e30128e8f33a14fcc90b295e7",
-      "evidence_paraphrase": "Apply the documented Toolbars guidance to minimize the number of groups."
+      "evidence_paraphrase": "Minimize the number of toolbar groups to avoid clutter and confusion."
     },
     "tags": [
       "components",
@@ -65210,22 +65214,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Toolbars guidance to minimize the number of groups.",
+    "apple_native_rule": "Minimize the number of toolbar groups to avoid clutter and confusion.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOOLBARS-0016",
-    "title": "Keep actions with text labels separate",
+    "title": "Separate text-labeled toolbar actions",
     "category": "components",
     "topic": "toolbars",
     "subtopic": "item-groupings",
     "statement": {
-      "en": "Maintain actions with text labels separate.",
-      "ja": "actions with text labels separateを維持する。"
+      "en": "Separate text-labeled toolbar actions from adjacent symbol or text actions.",
+      "ja": "text label付きtoolbar actionを隣接するsymbolまたはtext actionから分離する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -65252,7 +65256,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Insert fixed space so controls don't look combined or have labels that run together."
     ],
     "exceptions": [],
     "rationale": {
@@ -65262,7 +65266,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain actions with text labels separate.” in the documented Toolbars context?"
+        "Does the design satisfy “Separate text-labeled toolbar actions from adjacent symbol or text actions.” in the documented Toolbars context?"
       ]
     },
     "testability": "manual",
@@ -65282,7 +65286,7 @@
       "retrieved_at": "2026-07-21T11:15:26.859Z",
       "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
       "source_sentence_hash": "d788270e719ea8868b228e241b43203a124d8e8cd90ba4618eeeef9cca13d61e",
-      "evidence_paraphrase": "Maintain actions with text labels separate."
+      "evidence_paraphrase": "Separate text-labeled toolbar actions from adjacent symbol or text actions."
     },
     "tags": [
       "components",
@@ -65291,7 +65295,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain actions with text labels separate.",
+    "apple_native_rule": "Separate text-labeled toolbar actions from adjacent symbol or text actions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -66024,6 +66028,1273 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "When a visionOS app enters a modal state, consider context-specific toolbar controls.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0027",
+    "title": "Define toolbar overflow priorities for narrower views",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Define which toolbar items move to overflow as the view narrows.",
+      "ja": "viewが狭くなるときoverflowへ移すtoolbar itemを定義する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve access while adapting to variable view widths."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Define which toolbar items move to overflow as the view narrows.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "fb26f4b8d4f9b69489fbd4053deec840b415829a0e0b62af0dfd05806ae99c54",
+      "evidence_paraphrase": "Define which toolbar items move to overflow as the view narrows."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Define which toolbar items move to overflow as the view narrows.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0028",
+    "title": "Avoid manually adding an iPadOS or macOS overflow menu",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid manually adding an overflow menu in iPadOS or macOS.",
+      "ja": "iPadOSまたはmacOSでoverflow menuを手動追加しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Let the system add overflow when toolbar items no longer fit."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid manually adding an overflow menu in iPadOS or macOS.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "97970e8eca386e5bb47b1f8939f1edc0757530bdba6bb3bad43d191c1546baa5",
+      "evidence_paraphrase": "Avoid manually adding an overflow menu in iPadOS or macOS."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid manually adding an overflow menu in iPadOS or macOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0029",
+    "title": "Avoid default iPadOS or macOS toolbar overflow",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid layouts that make iPadOS or macOS toolbar items overflow by default.",
+      "ja": "iPadOSまたはmacOSのtoolbar itemがdefaultでoverflowするlayoutを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Reserve system-managed overflow for narrower view widths."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid layouts that make iPadOS or macOS toolbar items overflow by default.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "97970e8eca386e5bb47b1f8939f1edc0757530bdba6bb3bad43d191c1546baa5",
+      "evidence_paraphrase": "Avoid layouts that make iPadOS or macOS toolbar items overflow by default."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid layouts that make iPadOS or macOS toolbar items overflow by default.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0030",
+    "title": "Consider customizable iPadOS and macOS toolbars",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Consider letting people customize iPadOS and macOS toolbars with their common items.",
+      "ja": "よく使うitemを含められるiPadOSおよびmacOS toolbar customizationを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Customization is especially useful for many-item, advanced, or long-session apps."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider letting people customize iPadOS and macOS toolbars with their common items.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "0d7119d3f3a98de10ba0b9bf65adbb8645b00bbfb8f0a27d607aa3b77f1aa4a7",
+      "evidence_paraphrase": "Consider letting people customize iPadOS and macOS toolbars with their common items."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider letting people customize iPadOS and macOS toolbars with their common items.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0031",
+    "title": "Ensure custom toolbar corner radii are concentric",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When creating a custom toolbar component, ensure its corner radius is concentric with the bar corners.",
+      "ja": "custom toolbar componentを作る場合はcorner radiusをbar cornerと同心にする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply only when a standard toolbar component can't meet the need."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When creating a custom toolbar component, ensure its corner radius is concentric with the bar corners.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "7d82a25a7f21defccf251d2e5e8900d0cb0934ab1363bfd39601e5d06b67455b",
+      "evidence_paraphrase": "When creating a custom toolbar component, ensure its corner radius is concentric with the bar corners."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When creating a custom toolbar component, ensure its corner radius is concentric with the bar corners.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0032",
+    "title": "Avoid Back and Close text labels",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "navigation",
+    "statement": {
+      "en": "Avoid text labels that say Back or Close for standard navigation controls.",
+      "ja": "standard navigation controlでBackまたはCloseというtext labelを使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Use the familiar standard symbols instead."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid text labels that say Back or Close for standard navigation controls.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Navigation"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "026df5ea5fee6dac02ac10d6884ed1ca44311c3b996f44ecc963b1e3b93845e7",
+      "evidence_paraphrase": "Avoid text labels that say Back or Close for standard navigation controls."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "navigation"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid text labels that say Back or Close for standard navigation controls.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0033",
+    "title": "Ensure custom Back and Close controls preserve standard behavior",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "navigation",
+    "statement": {
+      "en": "Ensure custom Back and Close controls preserve standard appearance, expected behavior, visual fit, and implementation consistency.",
+      "ja": "custom BackおよびClose controlでstandard appearance、expected behavior、visual fit、implementation consistencyを保つ。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply when creating a custom version instead of the standard Back or Close button."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure custom Back and Close controls preserve standard appearance, expected behavior, visual fit, and implementation consistency.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Navigation"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "026df5ea5fee6dac02ac10d6884ed1ca44311c3b996f44ecc963b1e3b93845e7",
+      "evidence_paraphrase": "Ensure custom Back and Close controls preserve standard appearance, expected behavior, visual fit, and implementation consistency."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "navigation"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure custom Back and Close controls preserve standard appearance, expected behavior, visual fit, and implementation consistency.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0034",
+    "title": "Prefer recognizable symbols over toolbar text",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "actions",
+    "statement": {
+      "en": "Prefer simple recognizable symbols over text for toolbar actions they represent clearly.",
+      "ja": "明確に表現できるtoolbar actionにはtextよりsimpleでrecognizableなsymbolを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [
+      "Use text for actions, such as Edit, that a symbol doesn't represent well."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prefer simple recognizable symbols over text for toolbar actions they represent clearly.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Actions"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "bfeed9cfba4d272b38f52aa95880bac99ec5eb33e45b23ebe1f4fa8e687d7602",
+      "evidence_paraphrase": "Prefer simple recognizable symbols over text for toolbar actions they represent clearly."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "actions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Prefer simple recognizable symbols over text for toolbar actions they represent clearly.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0035",
+    "title": "Specify one primary toolbar action",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "actions",
+    "statement": {
+      "en": "Specify only one primary action in a toolbar.",
+      "ja": "toolbarのprimary actionは1つだけ指定する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Specify only one primary action in a toolbar.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Actions"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "d287ef0fb0b5f03ed191edd093a8af29e44d7209220331ee27c6323e6accd788",
+      "evidence_paraphrase": "Specify only one primary action in a toolbar."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "actions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Specify only one primary action in a toolbar.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0036",
+    "title": "Place the primary action on the toolbar's trailing side",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "actions",
+    "statement": {
+      "en": "Place the primary action on the trailing side of the toolbar.",
+      "ja": "primary actionをtoolbarのtrailing sideに置く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Place the primary action on the trailing side of the toolbar.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Actions"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "d287ef0fb0b5f03ed191edd093a8af29e44d7209220331ee27c6323e6accd788",
+      "evidence_paraphrase": "Place the primary action on the trailing side of the toolbar."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "actions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Place the primary action on the trailing side of the toolbar.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0037",
+    "title": "Use toolbar regions and spacing to form groups",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "item-groupings",
+    "statement": {
+      "en": "Position toolbar items in leading, center, or trailing regions and insert appropriate spacing between groups.",
+      "ja": "toolbar itemをleading、center、trailing regionに配置し、group間に適切なspaceを入れる。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Position toolbar items in leading, center, or trailing regions and insert appropriate spacing between groups.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Item groupings"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "fcff8cec313a4de0530ee026363144bdb891f3aae9544db18e8131c9723f6b61",
+      "evidence_paraphrase": "Position toolbar items in leading, center, or trailing regions and insert appropriate spacing between groups."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "item-groupings"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Position toolbar items in leading, center, or trailing regions and insert appropriate spacing between groups.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0038",
+    "title": "Group toolbar items by function and frequency",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "item-groupings",
+    "statement": {
+      "en": "Group toolbar items logically by function and frequency of use.",
+      "ja": "toolbar itemをfunctionと使用頻度に基づいて論理的にgroup化する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Group toolbar items logically by function and frequency of use.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Item groupings"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "1e03844fd38e003691528ec2ba4aa4f1d40cdc57218ca617e450a2047617859c",
+      "evidence_paraphrase": "Group toolbar items logically by function and frequency of use."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "item-groupings"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Group toolbar items logically by function and frequency of use.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0039",
+    "title": "Give navigation controls and critical actions distinct toolbar sections",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "item-groupings",
+    "statement": {
+      "en": "Place navigation controls and critical actions in dedicated, familiar, visually distinct toolbar sections.",
+      "ja": "navigation controlとcritical actionを専用でfamiliarかつ視覚的にdistinctなtoolbar sectionへ置く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply to actions such as Done, Close, or Save so people can discover and understand their importance."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Place navigation controls and critical actions in dedicated, familiar, visually distinct toolbar sections.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Item groupings"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "00863c0aad6affb06d5b5b1316ec4ff5d2ac15db5b0f187ce8336c04e0c72aa2",
+      "evidence_paraphrase": "Place navigation controls and critical actions in dedicated, familiar, visually distinct toolbar sections."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "item-groupings"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Place navigation controls and critical actions in dedicated, familiar, visually distinct toolbar sections.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0040",
+    "title": "Reinstate standard visionOS toolbar controls after a modal state",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "When a visionOS app exits a modal state, reinstate the window's standard toolbar controls.",
+      "ja": "visionOS appがmodal stateを終了したらwindowのstandard toolbar controlを復元する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply when a modal task temporarily replaces the main window's toolbar controls."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When a visionOS app exits a modal state, reinstate the window's standard toolbar controls.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "66c728a77e171408375f87a2a756efaded97ee99f3651158ef6b16d826aae03d",
+      "evidence_paraphrase": "When a visionOS app exits a modal state, reinstate the window's standard toolbar controls."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When a visionOS app exits a modal state, reinstate the window's standard toolbar controls.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0041",
+    "title": "Use a More menu only for necessary additional actions",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use a More menu only when necessary to contain additional lower-priority toolbar actions.",
+      "ja": "追加のlow-priority toolbar actionを収める必要がある場合に限りMore menuを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Prioritize less important actions for More.",
+      "Try to keep all actions directly in the toolbar when they fit."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a More menu only when necessary to contain additional lower-priority toolbar actions.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "7d9b88e25da1249b78ad4ead2f707fcecd9852f60a0eed4aed87f7894167233f",
+      "evidence_paraphrase": "Use a More menu only when necessary to contain additional lower-priority toolbar actions."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use a More menu only when necessary to contain additional lower-priority toolbar actions.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOOLBARS-0042",
+    "title": "Provide reliable restoration for hidden toolbars",
+    "category": "components",
+    "topic": "toolbars",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Provide a reliable way to restore a temporarily hidden toolbar.",
+      "ja": "一時的に非表示にしたtoolbarを確実に復元できる手段を提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toolbars"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply whenever the app supports contextual or distraction-free toolbar hiding."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toolbars experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToolbarsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide a reliable way to restore a temporarily hidden toolbar.” in the documented Toolbars context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "page_title": "Toolbars",
+      "section_path": [
+        "Toolbars",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.859Z",
+      "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
+      "source_sentence_hash": "42dd1bd6af069d57905d19ec5c50ee1dfac13439ae9e0997d51809551bb416d1",
+      "evidence_paraphrase": "Provide a reliable way to restore a temporarily hidden toolbar."
+    },
+    "tags": [
+      "components",
+      "toolbars",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Provide a reliable way to restore a temporarily hidden toolbar.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

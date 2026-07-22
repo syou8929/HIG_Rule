@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T17:29:53Z",
+  "reviewed_at": "2026-07-22T17:45:02Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2923,6 +2923,17 @@
         "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0008", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0009", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0010", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0011"
       ],
       "review_note": "Completed the page, preserved five stable general IDs, recovered four atomic rules for mutually exclusive choices, menu length, destructive confirmation, and SF Symbols, split destructive identification from confirmation, and retained two previously reviewed platform IDs unchanged."
+    },
+    {
+      "id": "priority-6-toolbars-complete-context-2026-07-22",
+      "reviewed_at": "2026-07-22T17:45:02Z",
+      "review_method": "Rendered Apple HIG Toolbars overview, best practices, titles, navigation, actions, item groupings, and all platform considerations were reviewed; two repeated live renders matched the recorded main-content hash, while previously reviewed platform rules remained in their original batch.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/toolbars", "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-TOOLBARS-0001", "HIG-COMPONENTS-TOOLBARS-0002", "HIG-COMPONENTS-TOOLBARS-0003", "HIG-COMPONENTS-TOOLBARS-0004", "HIG-COMPONENTS-TOOLBARS-0005", "HIG-COMPONENTS-TOOLBARS-0006", "HIG-COMPONENTS-TOOLBARS-0007", "HIG-COMPONENTS-TOOLBARS-0008", "HIG-COMPONENTS-TOOLBARS-0009", "HIG-COMPONENTS-TOOLBARS-0010", "HIG-COMPONENTS-TOOLBARS-0011", "HIG-COMPONENTS-TOOLBARS-0012", "HIG-COMPONENTS-TOOLBARS-0013", "HIG-COMPONENTS-TOOLBARS-0014", "HIG-COMPONENTS-TOOLBARS-0015", "HIG-COMPONENTS-TOOLBARS-0016", "HIG-COMPONENTS-TOOLBARS-0027", "HIG-COMPONENTS-TOOLBARS-0028", "HIG-COMPONENTS-TOOLBARS-0029", "HIG-COMPONENTS-TOOLBARS-0030", "HIG-COMPONENTS-TOOLBARS-0031", "HIG-COMPONENTS-TOOLBARS-0032", "HIG-COMPONENTS-TOOLBARS-0033", "HIG-COMPONENTS-TOOLBARS-0034", "HIG-COMPONENTS-TOOLBARS-0035", "HIG-COMPONENTS-TOOLBARS-0036", "HIG-COMPONENTS-TOOLBARS-0037", "HIG-COMPONENTS-TOOLBARS-0038", "HIG-COMPONENTS-TOOLBARS-0039", "HIG-COMPONENTS-TOOLBARS-0040", "HIG-COMPONENTS-TOOLBARS-0041", "HIG-COMPONENTS-TOOLBARS-0042"
+      ],
+      "review_note": "Completed the page, preserved sixteen stable general IDs, recovered sixteen atomic rules for overflow behavior, customization, custom-control invariants, action hierarchy, grouping, and toolbar restoration, retained three new explicit Ensure, Make sure, or Be sure MUST decisions, and left the ten previously reviewed platform IDs unchanged."
     }
   ],
   "rules": {
@@ -20089,6 +20100,119 @@
       "exceptions": ["Use two labeled radio buttons when one checkbox cannot communicate the opposing states clearly."],
       "review_note": "Recovered the contextual Prefer lead and recorded the rare two-radio-button exception."
     },
+    "HIG-COMPONENTS-TOOLBARS-0001": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "fb26f4b8d4f9b69489fbd4053deec840b415829a0e0b62af0dfd05806ae99c54", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Avoid overcrowding toolbars",
+      "statement": {"en": "Choose toolbar items deliberately so each one remains distinguishable and activatable.", "ja": "各toolbar itemを識別して操作できるよう、itemを慎重に選ぶ。"},
+      "conditions": ["Limit item count enough for people to distinguish and activate every control."],
+      "review_note": "Replaced the generic statement and recorded distinguishability and activation as the overcrowding test."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0002": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "1e1c56a2f4805c34b93e6182e5086b8a6a2dbcd91a52227e6b37e08316a3d5f7", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Reduce custom toolbar backgrounds and tinted controls",
+      "statement": {"en": "Reduce custom toolbar backgrounds and tinted controls.", "ja": "custom toolbar backgroundとtinted controlの使用を減らす。"},
+      "conditions": ["Let the content layer inform toolbar color and appearance.", "Use ScrollEdgeEffectStyle when the toolbar needs separation from content.", "Avoid treatments that interfere with system background effects."],
+      "review_note": "Recorded content-layer coloration, scroll-edge separation, and system-effect compatibility."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0003": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "30fde731fc8279a8a75887ac55b0bb165cadf2f28dd88a4a22eef21e9da3b78a", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Keep toolbar labels distinct from content backgrounds",
+      "statement": {"en": "Avoid giving toolbar labels and content-layer backgrounds similar colors.", "ja": "toolbar labelとcontent-layer backgroundに似た色を使わない。"},
+      "conditions": ["Prefer the default monochromatic toolbar appearance when the content layer is already bright or colorful."],
+      "review_note": "Made the color relationship explicit and recorded the monochromatic fallback."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0004": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "7d82a25a7f21defccf251d2e5e8900d0cb0934ab1363bfd39601e5d06b67455b", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Prefer standard toolbar components",
+      "statement": {"en": "Prefer standard buttons, text fields, headers, and footers in a toolbar.", "ja": "toolbarではstandard button、text field、header、footerを優先する。"},
+      "conditions": ["Standard components receive corner radii that are concentric with the bar corners."],
+      "review_note": "Named the documented standard components and left custom-radius conformance in a separate MUST rule."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0005": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "42dd1bd6af069d57905d19ec5c50ee1dfac13439ae9e0997d51809551bb416d1", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Consider temporarily hiding a toolbar to reduce distractions",
+      "statement": {"en": "Consider temporarily hiding a toolbar when doing so reduces distractions or reveals more content.", "ja": "distractionを減らすかcontentを広く示せる場合はtoolbarの一時非表示を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Hide the toolbar contextually only when the current task benefits."],
+      "review_note": "Retained MAY and separated reliable restoration into rule 0042."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0006": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "b9556cae9f1b1b272760667db27c49855bc63ae2d752f316bd58284ef641f1e9", "section_path": ["Toolbars", "Titles"]},
+      "title": "Give each window a useful title",
+      "statement": {"en": "Give each window a title that identifies its location or content.", "ja": "各windowにlocationまたはcontentを識別できるtitleを付ける。"},
+      "conditions": ["Use titles to distinguish multiple open windows."],
+      "exceptions": ["Leave the title area empty when nearby content already provides sufficient context and the title would be redundant."],
+      "review_note": "Recorded both the multiwindow purpose and the redundant-title exception."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0007": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "56103a959b2596227247aeca2a8af5f8df1a12d7d7908c06738e3ff4dc8f7082", "section_path": ["Toolbars", "Titles"]},
+      "statement": {"en": "Avoid using the app name as a window title.", "ja": "app nameをwindow titleとして使わない。"},
+      "conditions": ["Use a title that communicates the content hierarchy, window, or app area instead."],
+      "review_note": "Replaced the generated grammar and recorded the useful-information alternative."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0008": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "0de39a27fb6c3152320e748fb4adac8c6fce637c7f92080b9c2351d2e80be18f", "section_path": ["Toolbars", "Titles"]},
+      "title": "Keep toolbar titles concise",
+      "statement": {"en": "Use a concise word or short phrase for a toolbar title.", "ja": "toolbar titleには簡潔な単語または短いphraseを使う。"},
+      "conditions": ["Aim to keep the title under 15 characters so other controls have room."],
+      "review_note": "Recorded the documented under-15-character target as a qualified condition, not a hard maximum."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0009": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "026df5ea5fee6dac02ac10d6884ed1ca44311c3b996f44ecc963b1e3b93845e7", "section_path": ["Toolbars", "Navigation"]},
+      "title": "Use standard Back and Close buttons",
+      "statement": {"en": "Use the standard Back and Close buttons for hierarchical navigation and modal dismissal.", "ja": "hierarchical navigationとmodal dismissalにはstandard BackおよびClose buttonを使う。"},
+      "conditions": ["Prefer the standard symbol for each action."],
+      "review_note": "Recorded both semantic roles and the standard-symbol preference."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0010": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "1a616cd04f710d9b0acebe49db5b4777bb7c5d87b8473be06f65c6293f7ab4f4", "section_path": ["Toolbars", "Actions"]},
+      "title": "Prioritize toolbar actions for the main tasks",
+      "statement": {"en": "Prioritize toolbar actions that support the main tasks people perform.", "ja": "利用者のmain taskを支えるtoolbar actionを優先する。"},
+      "conditions": ["Usually prioritize frequently used commands, or commands for the highest-level or most important objects."],
+      "review_note": "Recorded the frequency and object-importance prioritization criteria."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0011": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "bfeed9cfba4d272b38f52aa95880bac99ec5eb33e45b23ebe1f4fa8e687d7602", "section_path": ["Toolbars", "Actions"]},
+      "title": "Ensure every toolbar control has a clear meaning",
+      "statement": {"en": "Ensure people can understand every toolbar control without guessing or experimenting.", "ja": "推測や試行をせずに各toolbar controlの意味を理解できるようにする。"},
+      "conditions": ["Use recognizable content that communicates the control's action."],
+      "review_note": "Retained the explicit Make sure MUST and recorded the no-guessing usability test."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0012": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "6eaeaddfdecd47d867dd15bcdf432c4760920166646d918c144cfaa1fe1c879a", "section_path": ["Toolbars", "Actions"]},
+      "title": "Prefer unbordered system symbols for toolbar items",
+      "statement": {"en": "Prefer system-provided symbols without added borders for toolbar items.", "ja": "toolbar itemには追加borderのないsystem-provided symbolを優先する。"},
+      "conditions": ["Rely on the toolbar section and system hover and selection appearances instead of outlined-circle borders."],
+      "review_note": "Recorded why additional borders are unnecessary and potentially redundant."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0013": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "d287ef0fb0b5f03ed191edd093a8af29e44d7209220331ee27c6323e6accd788", "section_path": ["Toolbars", "Actions"]},
+      "title": "Use the prominent style for a key toolbar action",
+      "statement": {"en": "Use the prominent style for a key toolbar action such as Done or Submit.", "ja": "DoneやSubmitのようなkey toolbar actionにはprominent styleを使う。"},
+      "conditions": ["Use separation and tint to establish one clear focal point."],
+      "review_note": "Made the focal-point purpose concrete and split count and placement into separate rules."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0014": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "cd03ba1034d0b65e0fcc6cf8c8e7b87d3f23d26613e99a0e5a36245dde94270f", "section_path": ["Toolbars", "Item groupings"]},
+      "title": "Keep toolbar grouping and placement consistent across platforms",
+      "statement": {"en": "Keep toolbar grouping and placement consistent across the app's platforms.", "ja": "appの各platformでtoolbarのgroupingとplacementを一貫させる。"},
+      "conditions": ["Preserve familiarity when people use the app on different platforms."],
+      "review_note": "Replaced the generic statement and recorded the cross-platform familiarity purpose."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0015": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "17ce1d614fd859578de1ea2eed5424ed59d25a3e30128e8f33a14fcc90b295e7", "section_path": ["Toolbars", "Item groupings"]},
+      "title": "Minimize toolbar groups",
+      "statement": {"en": "Minimize the number of toolbar groups to avoid clutter and confusion.", "ja": "clutterとconfusionを避けるためtoolbar group数を最小限にする。"},
+      "conditions": ["In general, aim for no more than three groups."],
+      "review_note": "Recorded the qualified three-group target without promoting it to a hard maximum."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0016": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "d788270e719ea8868b228e241b43203a124d8e8cd90ba4618eeeef9cca13d61e", "section_path": ["Toolbars", "Item groupings"]},
+      "title": "Separate text-labeled toolbar actions",
+      "statement": {"en": "Separate text-labeled toolbar actions from adjacent symbol or text actions.", "ja": "text label付きtoolbar actionを隣接するsymbolまたはtext actionから分離する。"},
+      "conditions": ["Insert fixed space so controls don't look combined or have labels that run together."],
+      "review_note": "Recorded both symbol-plus-text and adjacent-text ambiguity risks and the fixed-space technique."
+    },
     "HIG-COMPONENTS-TOOLBARS-0017": {
       "source": {
         "source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb",
@@ -20259,6 +20383,121 @@
       "review_required": false,
       "conditions": ["Restore the standard toolbar after leaving the modal state."],
       "review_note": "Recovered the omitted conditional Consider lead and retained MAY."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0027": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "fb26f4b8d4f9b69489fbd4053deec840b415829a0e0b62af0dfd05806ae99c54", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Define toolbar overflow priorities for narrower views",
+      "statement": {"en": "Define which toolbar items move to overflow as the view narrows.", "ja": "viewが狭くなるときoverflowへ移すtoolbar itemを定義する。"},
+      "conditions": ["Preserve access while adapting to variable view widths."],
+      "review_note": "Recovered the responsive overflow-priority directive from the overcrowding guidance."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0028": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "97970e8eca386e5bb47b1f8939f1edc0757530bdba6bb3bad43d191c1546baa5", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Avoid manually adding an iPadOS or macOS overflow menu",
+      "statement": {"en": "Avoid manually adding an overflow menu in iPadOS or macOS.", "ja": "iPadOSまたはmacOSでoverflow menuを手動追加しない。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ipados", "macos"], "devices": ["ipad", "mac"], "components": ["toolbars"], "modalities": []},
+      "conditions": ["Let the system add overflow when toolbar items no longer fit."],
+      "review_note": "Recovered the direct don't guidance and kept it at AVOID rather than unsupported MUST_NOT."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0029": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "97970e8eca386e5bb47b1f8939f1edc0757530bdba6bb3bad43d191c1546baa5", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Avoid default iPadOS or macOS toolbar overflow",
+      "statement": {"en": "Avoid layouts that make iPadOS or macOS toolbar items overflow by default.", "ja": "iPadOSまたはmacOSのtoolbar itemがdefaultでoverflowするlayoutを避ける。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ipados", "macos"], "devices": ["ipad", "mac"], "components": ["toolbars"], "modalities": []},
+      "conditions": ["Reserve system-managed overflow for narrower view widths."],
+      "review_note": "Recovered the separate default-layout warning and retained AVOID strength."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0030": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "0d7119d3f3a98de10ba0b9bf65adbb8645b00bbfb8f0a27d607aa3b77f1aa4a7", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Consider customizable iPadOS and macOS toolbars",
+      "statement": {"en": "Consider letting people customize iPadOS and macOS toolbars with their common items.", "ja": "よく使うitemを含められるiPadOSおよびmacOS toolbar customizationを検討する。"},
+      "normative_level": "MAY",
+      "scope": {"portability": "apple-component-specific", "platforms": ["ipados", "macos"], "devices": ["ipad", "mac"], "components": ["toolbars"], "modalities": []},
+      "conditions": ["Customization is especially useful for many-item, advanced, or long-session apps."],
+      "review_note": "Activated the conditional recommendation, narrowed scope to the named platforms, and retained MAY."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0031": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "7d82a25a7f21defccf251d2e5e8900d0cb0934ab1363bfd39601e5d06b67455b", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Ensure custom toolbar corner radii are concentric",
+      "statement": {"en": "When creating a custom toolbar component, ensure its corner radius is concentric with the bar corners.", "ja": "custom toolbar componentを作る場合はcorner radiusをbar cornerと同心にする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Apply only when a standard toolbar component can't meet the need."],
+      "review_note": "Recovered the conditional MUST from the explicit Ensure directive."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0032": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "026df5ea5fee6dac02ac10d6884ed1ca44311c3b996f44ecc963b1e3b93845e7", "section_path": ["Toolbars", "Navigation"]},
+      "title": "Avoid Back and Close text labels",
+      "statement": {"en": "Avoid text labels that say Back or Close for standard navigation controls.", "ja": "standard navigation controlでBackまたはCloseというtext labelを使わない。"},
+      "conditions": ["Use the familiar standard symbols instead."],
+      "review_note": "Recovered the direct don't guidance and retained AVOID rather than MUST_NOT."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0033": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "026df5ea5fee6dac02ac10d6884ed1ca44311c3b996f44ecc963b1e3b93845e7", "section_path": ["Toolbars", "Navigation"]},
+      "title": "Ensure custom Back and Close controls preserve standard behavior",
+      "statement": {"en": "Ensure custom Back and Close controls preserve standard appearance, expected behavior, visual fit, and implementation consistency.", "ja": "custom BackおよびClose controlでstandard appearance、expected behavior、visual fit、implementation consistencyを保つ。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Apply when creating a custom version instead of the standard Back or Close button."],
+      "review_note": "Recovered the conditional MUST from the explicit Make sure and Ensure clauses without applying it to standard controls."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0034": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "bfeed9cfba4d272b38f52aa95880bac99ec5eb33e45b23ebe1f4fa8e687d7602", "section_path": ["Toolbars", "Actions"]},
+      "title": "Prefer recognizable symbols over toolbar text",
+      "statement": {"en": "Prefer simple recognizable symbols over text for toolbar actions they represent clearly.", "ja": "明確に表現できるtoolbar actionにはtextよりsimpleでrecognizableなsymbolを優先する。"},
+      "exceptions": ["Use text for actions, such as Edit, that a symbol doesn't represent well."],
+      "review_note": "Recovered the symbol preference and preserved the poorly represented action exception."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0035": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "d287ef0fb0b5f03ed191edd093a8af29e44d7209220331ee27c6323e6accd788", "section_path": ["Toolbars", "Actions"]},
+      "title": "Specify one primary toolbar action",
+      "statement": {"en": "Specify only one primary action in a toolbar.", "ja": "toolbarのprimary actionは1つだけ指定する。"},
+      "review_note": "Recovered the one-primary-action constraint and retained SHOULD, consistent with direct Only guidance rather than an explicit MUST marker."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0036": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "d287ef0fb0b5f03ed191edd093a8af29e44d7209220331ee27c6323e6accd788", "section_path": ["Toolbars", "Actions"]},
+      "title": "Place the primary action on the toolbar's trailing side",
+      "statement": {"en": "Place the primary action on the trailing side of the toolbar.", "ja": "primary actionをtoolbarのtrailing sideに置く。"},
+      "review_note": "Recovered primary-action placement as a separate atomic rule."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0037": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "fcff8cec313a4de0530ee026363144bdb891f3aae9544db18e8131c9723f6b61", "section_path": ["Toolbars", "Item groupings"]},
+      "title": "Use toolbar regions and spacing to form groups",
+      "statement": {"en": "Position toolbar items in leading, center, or trailing regions and insert appropriate spacing between groups.", "ja": "toolbar itemをleading、center、trailing regionに配置し、group間に適切なspaceを入れる。"},
+      "review_note": "Recovered the explicit region-pinning and spacing technique without copying placement prose."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0038": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "1e03844fd38e003691528ec2ba4aa4f1d40cdc57218ca617e450a2047617859c", "section_path": ["Toolbars", "Item groupings"]},
+      "title": "Group toolbar items by function and frequency",
+      "statement": {"en": "Group toolbar items logically by function and frequency of use.", "ja": "toolbar itemをfunctionと使用頻度に基づいて論理的にgroup化する。"},
+      "review_note": "Activated the omitted grouping lead and retained SHOULD."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0039": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "00863c0aad6affb06d5b5b1316ec4ff5d2ac15db5b0f187ce8336c04e0c72aa2", "section_path": ["Toolbars", "Item groupings"]},
+      "title": "Give navigation controls and critical actions distinct toolbar sections",
+      "statement": {"en": "Place navigation controls and critical actions in dedicated, familiar, visually distinct toolbar sections.", "ja": "navigation controlとcritical actionを専用でfamiliarかつ視覚的にdistinctなtoolbar sectionへ置く。"},
+      "conditions": ["Apply to actions such as Done, Close, or Save so people can discover and understand their importance."],
+      "review_note": "Activated the omitted critical-action grouping lead and recorded its discoverability purpose."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0040": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "66c728a77e171408375f87a2a756efaded97ee99f3651158ef6b16d826aae03d", "section_path": ["Toolbars", "Platform considerations", "visionOS"]},
+      "title": "Reinstate standard visionOS toolbar controls after a modal state",
+      "statement": {"en": "When a visionOS app exits a modal state, reinstate the window's standard toolbar controls.", "ja": "visionOS appがmodal stateを終了したらwindowのstandard toolbar controlを復元する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Apply when a modal task temporarily replaces the main window's toolbar controls."],
+      "review_note": "Split the exit-state requirement from the optional modal-control recommendation and retained MUST from Be sure."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0041": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "7d9b88e25da1249b78ad4ead2f707fcecd9852f60a0eed4aed87f7894167233f", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Use a More menu only for necessary additional actions",
+      "statement": {"en": "Use a More menu only when necessary to contain additional lower-priority toolbar actions.", "ja": "追加のlow-priority toolbar actionを収める必要がある場合に限りMore menuを使う。"},
+      "conditions": ["Prioritize less important actions for More.", "Try to keep all actions directly in the toolbar when they fit."],
+      "review_note": "Activated the More lead and recorded its priority and necessity qualifications."
+    },
+    "HIG-COMPONENTS-TOOLBARS-0042": {
+      "source": {"source_hash": "872d62dca8142554f7e4505002e609b95a67bea26ac6e664e5ecca983b389abb", "source_sentence_hash": "42dd1bd6af069d57905d19ec5c50ee1dfac13439ae9e0997d51809551bb416d1", "section_path": ["Toolbars", "Best practices"]},
+      "title": "Provide reliable restoration for hidden toolbars",
+      "statement": {"en": "Provide a reliable way to restore a temporarily hidden toolbar.", "ja": "一時的に非表示にしたtoolbarを確実に復元できる手段を提供する。"},
+      "conditions": ["Apply whenever the app supports contextual or distraction-free toolbar hiding."],
+      "review_note": "Recovered restoration as an atomic rule separate from the optional decision to hide a toolbar."
     },
     "HIG-COMPONENTS-TOP-SHELF-0001": {
       "source": {

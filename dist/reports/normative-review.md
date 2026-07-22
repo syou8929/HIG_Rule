@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 332
-- Retained MUST: 299
+- Reviewed rules: 335
+- Retained MUST: 302
 - Retained MUST_NOT: 33
-- Normative level changes: 99
+- Normative level changes: 102
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-22T17:29:53Z
+- Reviewed at: 2026-07-22T17:45:02Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -93,6 +93,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-THE-MENU-BAR-0023 — Retained MUST after confirming the explicit Require directive and its interaction-cost rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-THE-MENU-BAR-0024 — Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-TOGGLES-0002 — Retained MUST after confirming the explicit Make sure lead and its color-perception constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
+- HIG-COMPONENTS-TOOLBARS-0031 — Retained the conditional MUST from the explicit Ensure directive for custom toolbar components. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0033 — Retained the conditional MUST from the source's Make sure and Ensure clauses. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0040 — Split the exit-state requirement from the optional modal-control recommendation and retained MUST from Be sure. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003 — Retained the explicit Make sure directive after separating the adjacent usability and benefit recommendations. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0018 — Recovered and retained the explicit conditional Make sure directive without promoting adjacent Liquid Glass or positioning guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-WIDGETS-0045 — Recovered and retained the explicit Make sure legibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
@@ -384,6 +387,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-THE-MENU-BAR-0024 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after restoring the truncated explicit Ensure directive and reviewing the full-screen iPadOS context. ([source](https://developer.apple.com/design/human-interface-guidelines/the-menu-bar))
 - HIG-COMPONENTS-TOGGLES-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure lead and its color-perception constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/toggles))
 - HIG-COMPONENTS-TOOLBARS-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0031 · MUST · retained_with_atomicity_or_scope_correction — Retained the conditional MUST from the explicit Ensure directive for custom toolbar components. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0033 · MUST · retained_with_atomicity_or_scope_correction — Retained the conditional MUST from the source's Make sure and Ensure clauses. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
+- HIG-COMPONENTS-TOOLBARS-0040 · MUST · retained_with_atomicity_or_scope_correction — Split the exit-state requirement from the optional modal-control recommendation and retained MUST from Be sure. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained the explicit Make sure directive after separating the adjacent usability and benefit recommendations. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit conditional Make sure directive without promoting adjacent Liquid Glass or positioning guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-WIDGETS-0014 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
