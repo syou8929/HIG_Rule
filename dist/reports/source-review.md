@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1830
-- Reviewed batches: 125
+- Reviewed rules: 1857
+- Reviewed batches: 126
 - Official source only: yes
-- Reviewed at: 2026-07-21T23:06:26Z
+- Reviewed at: 2026-07-22T16:13:08Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -12,6 +12,33 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-ACTION-SHEETS-0006 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
 - HIG-COMPONENTS-ACTION-SHEETS-0007 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
 - HIG-COMPONENTS-ACTION-SHEETS-0008 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0001 · high — Recorded relevance and product-context conditions without making example placements universal. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0002 · high — Kept the positive scope rule at SHOULD and represented the source's explicit Never prohibitions separately. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0003 · high — Retained the positive single-person recommendation and split the explicit multi-person prohibition and identity requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0004 · high — Retained Always-based MUST and distinguished system-controlled ring count from app-controlled visual styling. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0005 · high — Raised the generated SHOULD to MUST based on the explicit source must and restored its relative minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0006 · high — Recorded the redundancy boundary and preserved the documented unique-reference exception. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0007 · high — Retained the general decoration avoidance and split the explicit label and background prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0008 · high — Retained the general branding avoidance and split its explicit icon and marketing prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0009 · high — Retained the explicit Never prohibition and restored filters as a covered alteration. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0010 · high — Retained the unqualified Always requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0011 · high — Repaired truncation and preserved Prefer strength plus the corner-radius technique. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0012 · high — Retained Ensure-based MUST and separated optional stroke from visual-effect avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0013 · high — Retained Always-based MUST and the two visual outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0014 · high — Recovered the explicit Never prohibition separately from the positive three-metric rule. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0015 · high — Recovered the explicit Never prohibition that protects Activity ring identity. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0016 · high — Recovered the explicit Never prohibition separately from positive single-person guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0017 · high — Recovered the make-sure identity requirement as an atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0018 · high — Recovered the conditional positive action separately from the Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0019 · high — Recovered the explicit Never prohibition from the mixed-strength sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0020 · high — Recovered the inactive color-association lead and recorded official RGB values from image alt text without storing images. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0021 · high — Recovered the explicit Never prohibition separately from the positive minimum-margin requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0022 · high — Recovered the inactive lead and its separation techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0023 · high — Recovered the separate notification-element prohibition and its permitted progress-reference alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0024 · high — Recovered the explicit platform limitation and corrected scope to unsupported platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0025 · high — Separated visual-effect avoidance from the conditional black-stroke technique. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0026 · high — Recovered the explicit Never prohibition under decoration guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0027 · high — Recovered the explicit Never prohibition under branding guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ALERTS-0001 · high — Reviewed the rendered source context for “Use alerts sparingly” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0002 · high — Reviewed the rendered source context for “Avoid using an alert merely to provide information” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0003 · high — Reviewed the rendered source context for “Avoid displaying alerts for common, undoable actions, even when they’re destructive” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))

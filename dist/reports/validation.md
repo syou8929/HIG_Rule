@@ -3,8 +3,8 @@
 - Result: PASS
 - Errors: 0
 - Warnings: 0
-- Duplicate candidate groups: 8
-- Reviewed duplicate groups: 8
+- Duplicate candidate groups: 6
+- Reviewed duplicate groups: 6
 - Unresolved duplicate groups: 0
 
 ## Errors

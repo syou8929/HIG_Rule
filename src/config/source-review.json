@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-21T23:06:26Z",
+  "reviewed_at": "2026-07-22T16:13:08Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2813,9 +2813,214 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/gyro-and-accelerometer", "source_hash": "f5588f8f6c660bbae353f2429e3357002a479f9ab6de730456a528869acd5151"}],
       "rule_ids": ["HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001", "HIG-INPUTS-GYRO-AND-ACCELEROMETER-0002", "HIG-INPUTS-GYRO-AND-ACCELEROMETER-0003"],
       "review_note": "Completed the page, preserved the stable tangible-benefit rule, recovered separate data-minimization and non-gameplay manipulation AVOID rules, and recorded accessibility, precision, and battery risks."
+    },
+    {
+      "id": "priority-6-activity-rings-complete-context-2026-07-22",
+      "reviewed_at": "2026-07-22T16:13:08Z",
+      "review_method": "Rendered Apple HIG Activity rings best practices, structured color data, and all platform guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/activity-rings", "source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-ACTIVITY-RINGS-0001", "HIG-COMPONENTS-ACTIVITY-RINGS-0002", "HIG-COMPONENTS-ACTIVITY-RINGS-0003", "HIG-COMPONENTS-ACTIVITY-RINGS-0004", "HIG-COMPONENTS-ACTIVITY-RINGS-0005", "HIG-COMPONENTS-ACTIVITY-RINGS-0006", "HIG-COMPONENTS-ACTIVITY-RINGS-0007", "HIG-COMPONENTS-ACTIVITY-RINGS-0008", "HIG-COMPONENTS-ACTIVITY-RINGS-0009", "HIG-COMPONENTS-ACTIVITY-RINGS-0010", "HIG-COMPONENTS-ACTIVITY-RINGS-0011", "HIG-COMPONENTS-ACTIVITY-RINGS-0012", "HIG-COMPONENTS-ACTIVITY-RINGS-0013", "HIG-COMPONENTS-ACTIVITY-RINGS-0014", "HIG-COMPONENTS-ACTIVITY-RINGS-0015", "HIG-COMPONENTS-ACTIVITY-RINGS-0016", "HIG-COMPONENTS-ACTIVITY-RINGS-0017", "HIG-COMPONENTS-ACTIVITY-RINGS-0018", "HIG-COMPONENTS-ACTIVITY-RINGS-0019", "HIG-COMPONENTS-ACTIVITY-RINGS-0020", "HIG-COMPONENTS-ACTIVITY-RINGS-0021", "HIG-COMPONENTS-ACTIVITY-RINGS-0022", "HIG-COMPONENTS-ACTIVITY-RINGS-0023", "HIG-COMPONENTS-ACTIVITY-RINGS-0024", "HIG-COMPONENTS-ACTIVITY-RINGS-0025", "HIG-COMPONENTS-ACTIVITY-RINGS-0026", "HIG-COMPONENTS-ACTIVITY-RINGS-0027"
+      ],
+      "review_note": "Completed the page, preserved thirteen stable IDs, recovered fourteen atomic rules from explicit Never, make-sure, notification, color, differentiation, and platform guidance, and recorded RGB values without storing source images."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0001": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "1b8e2584f66ebf44276f740768f01352b449c625a3fa0181c321470915da0626", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Display Activity rings only when relevant",
+      "statement": {"en": "Display Activity rings when they're relevant to the app's purpose.", "ja": "appの目的に関連する場合にActivity ringsを表示する。"},
+      "conditions": ["Health, fitness, and HealthKit-related apps are contexts where people commonly expect Activity rings."],
+      "exceptions": ["Workout metrics and summary screens are examples, not required placements."],
+      "review_note": "Recorded relevance and product-context conditions without making example placements universal."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0002": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "f8763f17146755ae6242dd1aed97eeaf28cefdeadced9c21ef529c38c61c130a", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Use Activity rings only for their three activity metrics",
+      "statement": {"en": "Use Activity rings only for Move, Exercise, and Stand progress.", "ja": "Activity ringsはMove、Exercise、Standのprogressだけに使う。"},
+      "conditions": ["Preserve the component's consistent meaning across apps."],
+      "review_note": "Kept the positive scope rule at SHOULD and represented the source's explicit Never prohibitions separately."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0003": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "4480a8bdcecec06ef5f746ba5b7d4199c4f714f9cbaec39518dce5980d8a38ed", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Use Activity rings for one person's progress",
+      "statement": {"en": "Use Activity rings to show progress for a single person.", "ja": "Activity ringsで1人分のprogressを示す。"},
+      "conditions": ["Keep the represented person's identity clear."],
+      "review_note": "Retained the positive single-person recommendation and split the explicit multi-person prohibition and identity requirement."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0004": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "69c274c654c0e3d6d12db4801d68a1092a7914011c8654fd63e56d04c7211557", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Always preserve Activity ring appearance",
+      "statement": {"en": "Always preserve the visual appearance of Activity rings wherever they appear.", "ja": "Activity ringsは表示場所にかかわらずvisual appearanceを常に維持する。"},
+      "conditions": ["Keep styling consistent across the app."],
+      "exceptions": ["On iOS, the system automatically shows three rings with a paired Apple Watch and Move-only without one; history can contain both states."],
+      "review_note": "Retained Always-based MUST and distinguished system-controlled ring count from app-controlled visual styling."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0005": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "f335242e9313be9bc26c7301c598ec8ff6f194604b8d13bcf6d2de2291168d90", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Maintain required Activity ring margins",
+      "statement": {"en": "Maintain the required outer margin around Activity rings.", "ja": "Activity ringsの必須outer marginを維持する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The outer margin is at least the distance between adjacent rings."],
+      "review_note": "Raised the generated SHOULD to MUST based on the explicit source must and restored its relative minimum."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0006": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "bb0d834c4d1aea3ed8f99d93c6201de229c0786f92b60a61b3241fdae26da39d", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Avoid redundant Activity notifications",
+      "statement": {"en": "Avoid notifications that repeat Activity app progress information.", "ja": "Activity appのprogress情報を繰り返すnotificationを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["The system already delivers Move, Exercise, and Stand progress updates."],
+      "exceptions": ["A notification can reference progress in an app-specific way without replicating system information."],
+      "review_note": "Recorded the redundancy boundary and preserved the documented unique-reference exception."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0007": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "d1685e867723c962f0465fd57d0ad64497edc70fa374d596ae3d9a94eefe69ef", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Avoid decorative Activity rings",
+      "statement": {"en": "Avoid using Activity rings as decoration.", "ja": "Activity ringsを装飾として使わない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Activity rings must communicate activity information rather than merely embellish the design."],
+      "review_note": "Retained the general decoration avoidance and split the explicit label and background prohibition."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0008": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "58a9db2f5760fca0b4c6ea767fe24ad8d12e2799d6efa53989c56e1601a3e7e8", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Avoid Activity rings as branding",
+      "statement": {"en": "Avoid using Activity rings for branding.", "ja": "Activity ringsをbrandingに使わない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Use the component strictly to display Activity progress in the app."],
+      "review_note": "Retained the general branding avoidance and split its explicit icon and marketing prohibition."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0009": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "09b88d00b91a63a2e4ee4a02f664746fff94ee25d68ed72cbf5709fbbc90995e", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Never alter Activity ring colors or opacity",
+      "statement": {"en": "Never alter Activity ring colors, filters, or opacity.", "ja": "Activity ringのcolor、filter、opacityを変更しない。"},
+      "conditions": ["Preserve the system-defined visual identity of all three rings."],
+      "review_note": "Retained the explicit Never prohibition and restored filters as a covered alteration."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0010": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "4a15673441fb499b998cc1d3582e04d59f34014d76c9f16c9daadd3c504e598c", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Always use a black Activity ring background",
+      "statement": {"en": "Always display Activity rings on a black background.", "ja": "Activity ringsは常にblack background上に表示する。"},
+      "conditions": ["Keep the black background visually connected to the rings."],
+      "review_note": "Retained the unqualified Always requirement."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0011": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "f2d0be365d9e13df4a96a0ff28d30d724f5b80a226d21771202eebe5072c5c4a", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Prefer a circular Activity ring background enclosure",
+      "statement": {"en": "Prefer enclosing Activity rings and their black background within a circle.", "ja": "Activity ringsとblack backgroundをcircle内に収めることを優先する。"},
+      "conditions": ["Create the enclosure by adjusting the view's corner radius."],
+      "exceptions": ["Don't apply a circular mask to the rings."],
+      "review_note": "Repaired truncation and preserved Prefer strength plus the corner-radius technique."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0012": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "fb7a728029c849c664b686db62cacf9132df1c824436e21368c136de9077f0cf", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Ensure black remains visible outside the outer ring",
+      "statement": {"en": "Ensure the black background remains visible around the outermost Activity ring.", "ja": "outermost Activity ringの周囲にblack backgroundが見える状態を確保する。"},
+      "conditions": ["Add a thin black outer stroke if needed."],
+      "review_note": "Retained Ensure-based MUST and separated optional stroke from visual-effect avoidance."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0013": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "87057fac4102c9700a9cacfcd41139583d48d8c806661753f9316a9eab4a4df0", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Always scale Activity rings appropriately",
+      "statement": {"en": "Always scale Activity rings so they remain visually connected and appropriately placed.", "ja": "Activity ringsが視覚的につながり適切に配置されるよう常にscaleする。"},
+      "conditions": ["Prevent the rings from appearing disconnected or out of place."],
+      "review_note": "Retained Always-based MUST and the two visual outcomes."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0014": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "f4c10e499025d0bfc6b9868f227e4cc0ab295eb54a7d2d81baec0dd461024f5a", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Never use Activity rings for other data",
+      "statement": {"en": "Never use Activity rings to display data other than Move, Exercise, or Stand progress.", "ja": "Move、Exercise、Stand以外のdata表示にActivity ringsを使わない。"},
+      "review_note": "Recovered the explicit Never prohibition separately from the positive three-metric rule."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0015": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "e65ec528659547eec0d51d765d3c35bf3bd7c7827aeaac234b20694c9da29812", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Never restyle Activity progress as other rings",
+      "statement": {"en": "Never show Move, Exercise, or Stand progress in another ring-like element.", "ja": "Move、Exercise、Stand progressを別のring-like elementで表示しない。"},
+      "review_note": "Recovered the explicit Never prohibition that protects Activity ring identity."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0016": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "cbb340f25a9d3ad8d28d27f7ea48b171464edf3aa30e358b1cef14e1c8365e87", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Never combine multiple people's data in Activity rings",
+      "statement": {"en": "Never use Activity rings to represent data for more than one person.", "ja": "Activity ringsで複数人のdataを表さない。"},
+      "review_note": "Recovered the explicit Never prohibition separately from positive single-person guidance."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0017": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "cbb340f25a9d3ad8d28d27f7ea48b171464edf3aa30e358b1cef14e1c8365e87", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Ensure the represented person's identity is clear",
+      "statement": {"en": "Ensure it's obvious whose progress Activity rings show.", "ja": "Activity ringsが誰のprogressを示すか明確にする。"},
+      "conditions": ["Use a label, photo, or avatar to identify the person."],
+      "review_note": "Recovered the make-sure identity requirement as an atomic MUST."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0018": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "24544f7e679c8e3650080e2dbdb760eb63fdfa98f7118c5450bb668fafe6a118", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Blend surrounding UI with Activity rings when needed",
+      "statement": {"en": "When necessary, design the surrounding interface to blend with Activity rings.", "ja": "必要な場合は周囲のinterfaceをActivity ringsになじむよう設計する。"},
+      "conditions": ["Adapt surrounding UI rather than changing the rings."],
+      "review_note": "Recovered the conditional positive action separately from the Never prohibition."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0019": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "24544f7e679c8e3650080e2dbdb760eb63fdfa98f7118c5450bb668fafe6a118", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Never change Activity rings to match surrounding UI",
+      "statement": {"en": "Never change Activity rings to blend with the surrounding interface.", "ja": "周囲のinterfaceになじませるためActivity ringsを変更しない。"},
+      "review_note": "Recovered the explicit Never prohibition from the mixed-strength sentence."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0020": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "0305db1ececba50be188b0c600b258c93e4e69ea6c0ed18ce6ad13f9c1042d76", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Match associated content to Activity ring colors",
+      "statement": {"en": "Use the matching Activity ring color for directly associated labels and values.", "ja": "直接関連するlabelやvalueには対応するActivity ring colorを使う。"},
+      "conditions": ["Use RGB 250,17,79 for Move; 166,255,0 for Exercise; and 0,255,246 for Stand."],
+      "review_note": "Recovered the inactive color-association lead and recorded official RGB values from image alt text without storing images."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0021": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "40cdd25e4d0505b66af21f4d9141dda2f36687efaf7bc12f785eabb008a33b84", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Never encroach on Activity ring margins",
+      "statement": {"en": "Never let other elements crop, obstruct, or encroach on Activity rings or their margin.", "ja": "他のelementでActivity ringsやmarginをcrop、obstruct、encroachしない。"},
+      "review_note": "Recovered the explicit Never prohibition separately from the positive minimum-margin requirement."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0022": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "df60c9d602bd3284a3c9890c45c9d15b12c1b5dd92c8bfab90e69a7c898a7892", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Differentiate other ring-like elements",
+      "statement": {"en": "Differentiate other ring-like elements from Activity rings.", "ja": "他のring-like elementをActivity ringsと区別する。"},
+      "conditions": ["Use padding, lines, labels, color, or scale to create visual separation when other rings are necessary."],
+      "review_note": "Recovered the inactive lead and its separation techniques."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0023": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "6f99e5d573a26d62afd13833f2975021739b887031e293afca10de59a620409e", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Avoid Activity ring elements in notifications",
+      "statement": {"en": "Avoid showing an Activity ring element in app notifications.", "ja": "app notification内にActivity ring elementを表示しない。"},
+      "normative_level": "AVOID",
+      "exceptions": ["Reference Activity progress in an app-specific, nonredundant way instead."],
+      "review_note": "Recovered the separate notification-element prohibition and its permitted progress-reference alternative."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0024": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "3456552173a0f194e59ff724a8fde40315ac12febe22fac5cf07d3db61f46f9e", "section_path": ["Activity rings", "Platform considerations"]},
+      "title": "Avoid Activity rings on unsupported platforms",
+      "statement": {"en": "Avoid offering Activity rings on macOS, tvOS, or visionOS.", "ja": "macOS、tvOS、visionOSではActivity ringsを提供しない。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-component-specific", "platforms": ["macos", "tvos", "visionos"], "devices": ["mac", "apple-tv", "apple-vision-pro"], "components": ["activity-rings"], "modalities": []},
+      "conditions": ["Activity rings are unsupported on these platforms."],
+      "review_note": "Recovered the explicit platform limitation and corrected scope to unsupported platforms."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0025": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "d2a309f15fc8326f8890c32d989cbcb9a29cc5cd93daac8ace88e7d1d3408954", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Avoid outer-ring visual effects",
+      "statement": {"en": "Avoid gradients, shadows, or other visual effects around the outer Activity ring.", "ja": "outer Activity ring周囲のgradient、shadow、その他visual effectを避ける。"},
+      "normative_level": "AVOID",
+      "exceptions": ["A thin black stroke is acceptable when needed to preserve visible black background."],
+      "review_note": "Separated visual-effect avoidance from the conditional black-stroke technique."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0026": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "2b8f501ea79b578c0aac553799f15f439c91e1e7e59b9a90a466a51815ad0896", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Never place Activity rings in labels or backgrounds",
+      "statement": {"en": "Never display Activity rings in labels or background graphics.", "ja": "labelやbackground graphic内にActivity ringsを表示しない。"},
+      "review_note": "Recovered the explicit Never prohibition under decoration guidance."
+    },
+    "HIG-COMPONENTS-ACTIVITY-RINGS-0027": {
+      "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "713de0b1d7bd17bedfe61ba37f2d5fdb6dee2586f4937be064fc9ce4d5b31f75", "section_path": ["Activity rings", "Best practices"]},
+      "title": "Never use Activity rings in icons or marketing",
+      "statement": {"en": "Never use Activity rings in app icons or marketing materials.", "ja": "app iconやmarketing materialにActivity ringsを使わない。"},
+      "review_note": "Recovered the explicit Never prohibition under branding guidance."
+    },
     "HIG-INPUTS-GYRO-AND-ACCELEROMETER-0001": {
       "source": {"source_hash": "f5588f8f6c660bbae353f2429e3357002a479f9ab6de730456a528869acd5151", "source_sentence_hash": "aed51266e5f43ae5f4e4d4e1a84a75b91c63502a0c4dc8180c787b0c3bed93ad", "section_path": ["Gyroscope and accelerometer", "Best practices"]},
       "title": "Use motion data only for tangible user benefit",

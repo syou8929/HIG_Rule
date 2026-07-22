@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-21T23:07:47.455Z. 2714 active rules; 4 deprecated rules.
+Generated 2026-07-22T16:17:24.553Z. 2728 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -943,19 +943,33 @@ Generated 2026-07-21T23:07:47.455Z. 2714 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-ACTION-SHEETS-0008 · AVOID · medium** — Exclude displaying more than four buttons in an action sheet, including the Cancel button from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
 ### activity-rings
 
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0001 · SHOULD · low** — Present activity rings when they’re relevant to the purpose of your app in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0002 · SHOULD · low** — Choose or apply activity rings only to show Move, Exercise, and Stand information in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0003 · SHOULD · low** — Choose or apply activity rings to show progress for a single person in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0004 · MUST · medium** — Keep the visual appearance of Activity rings the same, regardless of where you display them in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0005 · SHOULD · low** — Apply the documented Activity rings guidance to maintain Activity ring margins. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0006 · AVOID · low** — Exclude send notifications that repeat the same information the Activity app sends from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0007 · AVOID · low** — Exclude use Activity rings for decoration from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0008 · AVOID · low** — Exclude use Activity rings for branding from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0009 · MUST_NOT · medium** — Do not alter Activity ring colors or opacity, including by applying filters. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0010 · MUST · medium** — Display Activity rings only on a black background. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0011 · SHOULD · low** — Favor enclosing the rings and background within a circle. To do this, adjust the corner radius of the enclosing when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0012 · MUST · medium** — Keep the black background visible around the outermost Activity ring. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
-- **HIG-COMPONENTS-ACTIVITY-RINGS-0013 · MUST · medium** — Scale Activity rings so they remain visually connected and appropriately placed. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0001 · SHOULD · high** — Display Activity rings when they're relevant to the app's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0002 · SHOULD · high** — Use Activity rings only for Move, Exercise, and Stand progress. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0003 · SHOULD · high** — Use Activity rings to show progress for a single person. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0004 · MUST · high** — Always preserve the visual appearance of Activity rings wherever they appear. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0005 · MUST · high** — Maintain the required outer margin around Activity rings. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0006 · AVOID · high** — Avoid notifications that repeat Activity app progress information. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0007 · AVOID · high** — Avoid using Activity rings as decoration. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0008 · AVOID · high** — Avoid using Activity rings for branding. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0009 · MUST_NOT · high** — Never alter Activity ring colors, filters, or opacity. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0010 · MUST · high** — Always display Activity rings on a black background. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0011 · SHOULD · high** — Prefer enclosing Activity rings and their black background within a circle. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0012 · MUST · high** — Ensure the black background remains visible around the outermost Activity ring. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0013 · MUST · high** — Always scale Activity rings so they remain visually connected and appropriately placed. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0014 · MUST_NOT · high** — Never use Activity rings to display data other than Move, Exercise, or Stand progress. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0015 · MUST_NOT · high** — Never show Move, Exercise, or Stand progress in another ring-like element. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0016 · MUST_NOT · high** — Never use Activity rings to represent data for more than one person. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0017 · MUST · high** — Ensure it's obvious whose progress Activity rings show. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0018 · SHOULD · high** — When necessary, design the surrounding interface to blend with Activity rings. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0019 · MUST_NOT · high** — Never change Activity rings to blend with the surrounding interface. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0020 · SHOULD · high** — Use the matching Activity ring color for directly associated labels and values. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0021 · MUST_NOT · high** — Never let other elements crop, obstruct, or encroach on Activity rings or their margin. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0022 · SHOULD · high** — Differentiate other ring-like elements from Activity rings. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0023 · AVOID · high** — Avoid showing an Activity ring element in app notifications. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0024 · AVOID · high** — Avoid offering Activity rings on macOS, tvOS, or visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0025 · AVOID · high** — Avoid gradients, shadows, or other visual effects around the outer Activity ring. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0026 · MUST_NOT · high** — Never display Activity rings in labels or background graphics. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- **HIG-COMPONENTS-ACTIVITY-RINGS-0027 · MUST_NOT · high** — Never use Activity rings in app icons or marketing materials. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 ### activity-views
 
 - **HIG-COMPONENTS-ACTIVITY-VIEWS-0001 · AVOID · low** — Exclude creating duplicate versions of common actions that are already available in the activity view from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))

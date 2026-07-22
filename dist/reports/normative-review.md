@@ -1,21 +1,30 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 298
-- Retained MUST: 274
-- Retained MUST_NOT: 24
-- Normative level changes: 68
+- Reviewed rules: 307
+- Retained MUST: 276
+- Retained MUST_NOT: 31
+- Normative level changes: 77
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-21T23:02:30Z
+- Reviewed at: 2026-07-22T16:13:08Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
 ## Atomicity and scope corrections
 
+- HIG-COMPONENTS-ACTIVITY-RINGS-0005 — Raised to MUST from the explicit source must and restored its relative minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0009 — Retained MUST_NOT after confirming the explicit Never directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0010 — Retained MUST after confirming the explicit Always directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0012 — Narrowed the MUST to the required visible-background outcome and recorded the conditional outer-stroke technique separately. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0013 — Retained MUST after confirming the explicit Always directive and its visual-scaling context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0014 — Recovered the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0015 — Recovered the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0016 — Recovered the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0017 — Recovered MUST from the explicit make-sure identity requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0019 — Recovered the explicit Never clause from mixed-strength guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0021 — Recovered the explicit Never margin-protection prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0026 — Recovered the explicit Never decoration prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0027 — Recovered the explicit Never branding prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ALERTS-0038 — Recovered MUST from the explicit Always use directive for canceling-button titles. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0042 — Recovered MUST from the explicit Always place directive and preserved both row and stack mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0047 — Recovered MUST from the explicit Be sure directive while preserving the large-text qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
@@ -251,10 +260,19 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 ## Reviewed rules
 
 - HIG-COMPONENTS-ACTIVITY-RINGS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0005 · MUST · retained_with_atomicity_or_scope_correction — Raised to MUST from the explicit source must and restored its relative minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0009 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained MUST_NOT after confirming the explicit Never directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0010 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive in the Activity rings best-practices list. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0012 · MUST · retained_with_atomicity_or_scope_correction — Narrowed the MUST to the required visible-background outcome and recorded the conditional outer-stroke technique separately. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0013 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive and its visual-scaling context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0014 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0015 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0016 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0017 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit make-sure identity requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0019 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never clause from mixed-strength guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0021 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never margin-protection prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0026 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never decoration prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0027 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never branding prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-VIEWS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
 - HIG-COMPONENTS-ALERTS-0038 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Always use directive for canceling-button titles. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0042 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Always place directive and preserved both row and stack mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
