@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T16:17:24.553Z. 2728 active rules; 4 deprecated rules.
+Generated 2026-07-22T16:25:52.407Z. 2744 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -972,13 +972,29 @@ Generated 2026-07-22T16:17:24.553Z. 2728 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-ACTIVITY-RINGS-0027 · MUST_NOT · high** — Never use Activity rings in app icons or marketing materials. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 ### activity-views
 
-- **HIG-COMPONENTS-ACTIVITY-VIEWS-0001 · AVOID · low** — Exclude creating duplicate versions of common actions that are already available in the activity view from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- **HIG-COMPONENTS-ACTIVITY-VIEWS-0002 · MAY · low** — Evaluate whether using a symbol to represent your custom activity is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- **HIG-COMPONENTS-ACTIVITY-VIEWS-0003 · SHOULD · low** — Apply the documented Activity views guidance to write a succinct, descriptive title for each custom action you provide. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- **HIG-COMPONENTS-ACTIVITY-VIEWS-0004 · MUST · medium** — Verify that activities are appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- **HIG-COMPONENTS-ACTIVITY-VIEWS-0005 · SHOULD · low** — Choose or apply the Share button to display an activity view in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- **HIG-COMPONENTS-ACTIVITY-VIEWS-0006 · AVOID · low** — Exclude placing a modal view above your extension from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- **HIG-COMPONENTS-ACTIVITY-VIEWS-0007 · SHOULD · low** — Choose or apply your main app to denote the progress of a lengthy operation in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0001 · AVOID · high** — Avoid duplicating common actions already available in the activity view. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0002 · MAY · high** — Consider using a symbol to represent a custom activity. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0003 · SHOULD · high** — Use a succinct, descriptive title for each custom action. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0004 · MUST · high** — Ensure every displayed activity is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0005 · SHOULD · high** — Use the Share button to reveal an activity view. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0006 · AVOID · high** — Avoid displaying an additional modal view above an extension. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0007 · SHOULD · high** — Use the main app to show the status of a lengthy extension task. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0008 · SHOULD · high** — Give an app-specific activity a custom title when it resembles an existing action. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0009 · SHOULD · high** — Center a custom activity icon in an area about 70 by 70 pixels. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0010 · SHOULD · high** — Prefer a single verb or brief verb phrase that clearly describes a custom action. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0011 · AVOID · high** — Avoid including a company or product name in a custom-action title. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0012 · MAY · high** — Consider excluding system activities that aren't applicable to the current app context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0013 · AVOID · high** — Avoid providing another way to reveal the same activity view. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0014 · SHOULD · high** — When a custom extension interface is necessary, make it feel familiar. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0015 · SHOULD · high** — Prefer the system-provided composition view for a share extension. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0016 · SHOULD · high** — Include the app name in an action extension interface. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0017 · SHOULD · high** — Include recognizable app-interface elements when an extension presents a custom interface. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0018 · SHOULD · high** — Streamline extension interactions and limit the steps needed to complete the task. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0019 · SHOULD · high** — When necessary, provide an image that communicates the extension's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0020 · SHOULD · high** — For an action extension, prefer a symbol or interface icon that clearly identifies the task. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0021 · SHOULD · high** — Continue a time-consuming extension task in the background. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0022 · AVOID · high** — Avoid notifying people solely because an extension task completes. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- **HIG-COMPONENTS-ACTIVITY-VIEWS-0023 · AVOID · high** — Avoid offering an activity view on macOS, tvOS, or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
 ### alerts
 
 - **HIG-COMPONENTS-ALERTS-0001 · SHOULD · high** — Choose or apply alerts sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))

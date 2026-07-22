@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2728
+- Active atomic rules: 2744
 - Pages without rules: 16
-- Low-confidence rules: 808
-- Rules requiring human review: 808
-- Reference notes: 906
+- Low-confidence rules: 802
+- Rules requiring human review: 802
+- Reference notes: 905
 
 ## Rules by category
 
-- components: 881
+- components: 897
 - foundations: 346
 - getting-started: 100
 - inputs: 245
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 376
-- MAY: 331
+- AVOID: 380
+- MAY: 332
 - MUST: 276
 - MUST_NOT: 31
-- SHOULD: 1714
+- SHOULD: 1725
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1785
-- ipados: 1757
-- macos: 1453
-- tvos: 1127
-- visionos: 1482
-- watchos: 1204
+- ios: 1800
+- ipados: 1772
+- macos: 1454
+- tvos: 1128
+- visionos: 1497
+- watchos: 1205
 
 ## Rules by testability
 
 - hybrid: 77
-- manual: 2651
+- manual: 2667
 
 ## Blocked pages
 
@@ -73,12 +73,6 @@ None.
 - HIG-COMPONENTS-ACTION-SHEETS-0003
 - HIG-COMPONENTS-ACTION-SHEETS-0004
 - HIG-COMPONENTS-ACTION-SHEETS-0005
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0001
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0002
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0003
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0005
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0006
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0007
 - HIG-COMPONENTS-APP-SHORTCUTS-0001
 - HIG-COMPONENTS-APP-SHORTCUTS-0002
 - HIG-COMPONENTS-APP-SHORTCUTS-0003
@@ -884,12 +878,6 @@ None.
 - HIG-COMPONENTS-ACTION-SHEETS-0003
 - HIG-COMPONENTS-ACTION-SHEETS-0004
 - HIG-COMPONENTS-ACTION-SHEETS-0005
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0001
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0002
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0003
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0005
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0006
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0007
 - HIG-COMPONENTS-APP-SHORTCUTS-0001
 - HIG-COMPONENTS-APP-SHORTCUTS-0002
 - HIG-COMPONENTS-APP-SHORTCUTS-0003
@@ -1713,7 +1701,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/activity-rings · Activity rings > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/activity-rings · Activity rings > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/activity-rings · Activity rings > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/activity-views · Activity views > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/activity-views · Activity views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/activity-views · Activity views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/activity-views · Activity views > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

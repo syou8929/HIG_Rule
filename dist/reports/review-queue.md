@@ -1,27 +1,28 @@
 # Human source-review queue
 
-- Remaining rules: 808
+- Remaining rules: 802
 - Next priority: 6 (apple-platform-common)
-- Next batch: 6
+- Next batch: 7
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 785
+- 6 (apple-platform-common): 779
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 108
-- MAY: 81
-- SHOULD: 619
+- AVOID: 106
+- MAY: 80
+- SHOULD: 616
 
 ## Next batch
 
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0001 · AVOID — Avoid creating duplicate versions of common actions that are already available in the activity view · Activity views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0006 · AVOID — Avoid placing a modal view above your extension · Activity views > Share and action extensions ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0003 · SHOULD — Write a succinct, descriptive title for each custom action you provide · Activity views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0005 · SHOULD — Use the Share button to display an activity view · Activity views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0007 · SHOULD — Use your main app to denote the progress of a lengthy operation · Activity views > Share and action extensions ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
-- HIG-COMPONENTS-ACTIVITY-VIEWS-0002 · MAY — Consider using a symbol to represent your custom activity · Activity views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-BUTTONS-0004 · AVOID — Avoid applying a similar color to button labels and content layer backgrounds · Buttons > Style ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0007 · AVOID — Don’t assign the primary role to a button that performs a destructive action, even if that action is the · Buttons > Role ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0001 · SHOULD — Make buttons easy for people to use · Buttons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0003 · SHOULD — Use style — not size — to visually distinguish the preferred choice among multiple options · Buttons > Style ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0030 · SHOULD — Try to associate familiar actions with familiar icons · Buttons > Content ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0031 · SHOULD — In general, use a button that has a prominent visual style for the most likely action in a view · Buttons > Style ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0006 · MAY — Consider using text when a short label communicates more clearly than an icon · Buttons > Content ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))

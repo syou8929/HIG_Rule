@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1857
-- Reviewed batches: 126
+- Reviewed rules: 1880
+- Reviewed batches: 127
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:13:08Z
+- Reviewed at: 2026-07-22T16:21:18Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -39,6 +39,29 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-ACTIVITY-RINGS-0025 · high — Separated visual-effect avoidance from the conditional black-stroke technique. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0026 · high — Recovered the explicit Never prohibition under decoration guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0027 · high — Recovered the explicit Never prohibition under branding guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0001 · high — Retained AVOID and recorded the confusion risk plus the distinct-title exception. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0002 · high — Retained MAY from Consider and recorded the custom-icon alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0003 · high — Replaced the generated wording and recorded the wrapping and truncation risk. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0004 · high — Retained MUST from the explicit Make sure directive and recorded both system and custom activity controls. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0005 · high — Retained SHOULD and recorded the familiar system-access rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0006 · high — Retained AVOID and restored the system-modal context and alert exception. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0007 · high — Replaced the vague progress wording and recorded the immediate-dismissal context. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0008 · high — Recovered the conditional custom-title guidance from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0009 · high — Recovered the approximate custom-icon canvas size without turning it into an exact threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0010 · high — Recovered the preferred grammatical form and action-clarity condition. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0011 · high — Recovered the action-title restriction and preserved the distinct share-activity convention. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0012 · high — Recovered the documented exclusion option and retained MAY rather than making it mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0013 · high — Recovered the explicit confusion-avoidance guidance separately from positive Share-button use. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0014 · high — Recovered the conditional interface-familiarity lead and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0015 · high — Recovered the explicit preference and familiar-sharing rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0016 · high — Recovered the direct action-extension naming guidance and kept conservative SHOULD strength. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0017 · high — Recovered the conditional visual-relationship guidance from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0018 · high — Recovered the omitted interaction-efficiency lead and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0019 · high — Recovered the conditional image guidance and the automatic share-extension icon behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0020 · high — Recovered the action-extension-specific icon preference. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0021 · high — Recovered background continuation separately from main-app status visibility. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0022 · high — Recovered the completion-notification prohibition and preserved the problem-reporting exception. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
+- HIG-COMPONENTS-ACTIVITY-VIEWS-0023 · high — Recovered the platform limitation, corrected scope to unsupported platforms, and preserved the macOS extension exception. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-views))
 - HIG-COMPONENTS-ALERTS-0001 · high — Reviewed the rendered source context for “Use alerts sparingly” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0002 · high — Reviewed the rendered source context for “Avoid using an alert merely to provide information” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0003 · high — Reviewed the rendered source context for “Avoid displaying alerts for common, undoable actions, even when they’re destructive” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))

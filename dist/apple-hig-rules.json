@@ -2644,17 +2644,17 @@
   },
   {
     "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0001",
-    "title": "Avoid creating duplicate versions of common actions that are already available in the activity view",
+    "title": "Avoid duplicating common activity-view actions",
     "category": "components",
     "topic": "activity-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude creating duplicate versions of common actions that are already available in the activity view from the applicable experience.",
-      "ja": "該当する体験ではcreating duplicate versions of common actions that are already available in the activity viewを避ける。"
+      "en": "Avoid duplicating common actions already available in the activity view.",
+      "ja": "activity viewですでに利用できる一般的なactionの重複を避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -2675,9 +2675,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "System-provided actions such as Print already have familiar meaning and placement."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Give similar app-specific functionality a distinguishing custom title."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
@@ -2685,7 +2687,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude creating duplicate versions of common actions that are already available in the activity view from the applicable experience.” in the documented Activity views context?"
+        "Does the design satisfy “Avoid duplicating common actions already available in the activity view.” in the documented Activity views context?"
       ]
     },
     "testability": "manual",
@@ -2702,10 +2704,10 @@
         "Activity views",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.622Z",
+      "retrieved_at": "2026-07-22T16:21:18Z",
       "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
       "source_sentence_hash": "8752597d8883edd3c0901d7a7e3d2b5783e7cf4f61a1e41b90a5400a20bde600",
-      "evidence_paraphrase": "Exclude creating duplicate versions of common actions that are already available in the activity view from the applicable experience."
+      "evidence_paraphrase": "Avoid duplicating common actions already available in the activity view."
     },
     "tags": [
       "components",
@@ -2714,22 +2716,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude creating duplicate versions of common actions that are already available in the activity view from the applicable experience.",
+    "apple_native_rule": "Avoid duplicating common actions already available in the activity view.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0002",
-    "title": "Consider using a symbol to represent your custom activity",
+    "title": "Consider a symbol for a custom activity",
     "category": "components",
     "topic": "activity-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether using a symbol to represent your custom activity is appropriate for the current context.",
-      "ja": "using a symbol to represent your custom activityが現在の状況に適切か検討する。"
+      "en": "Consider using a symbol to represent a custom activity.",
+      "ja": "custom activityを表すsymbolの使用を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -2750,9 +2752,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a symbol that communicates the activity's item or concept."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A custom interface icon can be used when the symbol set doesn't fit."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
@@ -2760,7 +2764,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using a symbol to represent your custom activity is appropriate for the current context.” in the documented Activity views context?"
+        "Does the design satisfy “Consider using a symbol to represent a custom activity.” in the documented Activity views context?"
       ]
     },
     "testability": "manual",
@@ -2777,10 +2781,10 @@
         "Activity views",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.622Z",
+      "retrieved_at": "2026-07-22T16:21:18Z",
       "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
       "source_sentence_hash": "3c0f4dd2c08352296fe60277505044554e8c25fa0148505d0df302f53c6c9932",
-      "evidence_paraphrase": "Evaluate whether using a symbol to represent your custom activity is appropriate for the current context."
+      "evidence_paraphrase": "Consider using a symbol to represent a custom activity."
     },
     "tags": [
       "components",
@@ -2789,22 +2793,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using a symbol to represent your custom activity is appropriate for the current context.",
+    "apple_native_rule": "Consider using a symbol to represent a custom activity.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0003",
-    "title": "Write a succinct, descriptive title for each custom action you provide",
+    "title": "Write succinct descriptive custom-action titles",
     "category": "components",
     "topic": "activity-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Activity views guidance to write a succinct, descriptive title for each custom action you provide.",
-      "ja": "「Activity views」において「Write a succinct, descriptive title for each custom action you provide」の指針を適用する。"
+      "en": "Use a succinct, descriptive title for each custom action.",
+      "ja": "各custom actionに簡潔で説明的なtitleを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2825,7 +2829,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Long titles can wrap and may be truncated by the system."
     ],
     "exceptions": [],
     "rationale": {
@@ -2835,7 +2839,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Activity views guidance to write a succinct, descriptive title for each custom action you provide.” in the documented Activity views context?"
+        "Does the design satisfy “Use a succinct, descriptive title for each custom action.” in the documented Activity views context?"
       ]
     },
     "testability": "manual",
@@ -2852,10 +2856,10 @@
         "Activity views",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.622Z",
+      "retrieved_at": "2026-07-22T16:21:18Z",
       "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
       "source_sentence_hash": "b12c72bd854333009e116dea19cc12895d0db7960f2a5cbbaa843de563b49d93",
-      "evidence_paraphrase": "Apply the documented Activity views guidance to write a succinct, descriptive title for each custom action you provide."
+      "evidence_paraphrase": "Use a succinct, descriptive title for each custom action."
     },
     "tags": [
       "components",
@@ -2864,21 +2868,21 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Activity views guidance to write a succinct, descriptive title for each custom action you provide.",
+    "apple_native_rule": "Use a succinct, descriptive title for each custom action.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0004",
-    "title": "Make sure activities are appropriate for the current context",
+    "title": "Ensure activities fit the current context",
     "category": "components",
     "topic": "activity-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Verify that activities are appropriate for the current context.",
-      "ja": "activities are appropriate for the current contextを満たしていることを確認する。"
+      "en": "Ensure every displayed activity is appropriate for the current context.",
+      "ja": "表示する各activityが現在のcontextに適切であることを確実にする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -2900,7 +2904,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Exclude inapplicable system tasks and choose custom tasks for the current situation."
     ],
     "exceptions": [],
     "rationale": {
@@ -2910,7 +2914,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that activities are appropriate for the current context.” in the documented Activity views context?"
+        "Does the design satisfy “Ensure every displayed activity is appropriate for the current context.” in the documented Activity views context?"
       ]
     },
     "testability": "manual",
@@ -2927,10 +2931,10 @@
         "Activity views",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.622Z",
+      "retrieved_at": "2026-07-22T16:21:18Z",
       "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
       "source_sentence_hash": "dd64a781a3e2ac88525818332de0f1c23b8c95006ab005ddc46e4bcc00a8419f",
-      "evidence_paraphrase": "Verify that activities are appropriate for the current context."
+      "evidence_paraphrase": "Ensure every displayed activity is appropriate for the current context."
     },
     "tags": [
       "components",
@@ -2939,22 +2943,399 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that activities are appropriate for the current context.",
+    "apple_native_rule": "Ensure every displayed activity is appropriate for the current context.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0005",
-    "title": "Use the Share button to display an activity view",
+    "title": "Use the Share button to reveal an activity view",
     "category": "components",
     "topic": "activity-views",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply the Share button to display an activity view in the documented context.",
-      "ja": "該当する状況ではthe Share button to display an activity viewを採用する。"
+      "en": "Use the Share button to reveal an activity view.",
+      "ja": "activity viewの表示にはShare buttonを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "People expect system-provided sharing activities behind the Share button."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the Share button to reveal an activity view.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "0d511628031e9b52443d66abb1ec1dad5009cf9350b2a518994a41b89c2c9e7b",
+      "evidence_paraphrase": "Use the Share button to reveal an activity view."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use the Share button to reveal an activity view.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0006",
+    "title": "Avoid extra modal views above extensions",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "Avoid displaying an additional modal view above an extension.",
+      "ja": "extensionの上に追加のmodal viewを表示することを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The system already presents an extension within a modal view."
+    ],
+    "exceptions": [
+      "An alert above the extension can be necessary."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid displaying an additional modal view above an extension.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "bf0d9253890a460bf611bf694a6777d8a085ed18a460789db05e2fa01a76537f",
+      "evidence_paraphrase": "Avoid displaying an additional modal view above an extension."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid displaying an additional modal view above an extension.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0007",
+    "title": "Show lengthy extension-task status in the main app",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "Use the main app to show the status of a lengthy extension task.",
+      "ja": "時間のかかるextension taskのstatusはmain appで示す。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "An activity view dismisses immediately after people finish the extension interaction."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the main app to show the status of a lengthy extension task.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "8ee2f49236630be0345a68bc6d9f997483cef7861651258f2f189b85da8ef13b",
+      "evidence_paraphrase": "Use the main app to show the status of a lengthy extension task."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use the main app to show the status of a lengthy extension task.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0008",
+    "title": "Distinguish app-specific activities with custom titles",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Give an app-specific activity a custom title when it resembles an existing action.",
+      "ja": "既存actionに似たapp固有activityにはcustom titleを付ける。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The title explains the app-specific behavior that differs from the common action."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Give an app-specific activity a custom title when it resembles an existing action.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "8752597d8883edd3c0901d7a7e3d2b5783e7cf4f61a1e41b90a5400a20bde600",
+      "evidence_paraphrase": "Give an app-specific activity a custom title when it resembles an existing action."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Give an app-specific activity a custom title when it resembles an existing action.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0009",
+    "title": "Center custom activity icons in a 70-pixel area",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Center a custom activity icon in an area about 70 by 70 pixels.",
+      "ja": "custom activity iconを約70×70 pixelのarea中央に配置する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply when creating a custom interface icon instead of using a symbol."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Center a custom activity icon in an area about 70 by 70 pixels.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "3c0f4dd2c08352296fe60277505044554e8c25fa0148505d0df302f53c6c9932",
+      "evidence_paraphrase": "Center a custom activity icon in an area about 70 by 70 pixels."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Center a custom activity icon in an area about 70 by 70 pixels.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0010",
+    "title": "Prefer verb-based custom-action titles",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Prefer a single verb or brief verb phrase that clearly describes a custom action.",
+      "ja": "custom actionを明確に表す単一verbまたは短いverb phraseを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2985,7 +3366,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the Share button to display an activity view in the documented context.” in the documented Activity views context?"
+        "Does the design satisfy “Prefer a single verb or brief verb phrase that clearly describes a custom action.” in the documented Activity views context?"
       ]
     },
     "testability": "manual",
@@ -3002,10 +3383,10 @@
         "Activity views",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.622Z",
+      "retrieved_at": "2026-07-22T16:21:18Z",
       "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
-      "source_sentence_hash": "0d511628031e9b52443d66abb1ec1dad5009cf9350b2a518994a41b89c2c9e7b",
-      "evidence_paraphrase": "Choose or apply the Share button to display an activity view in the documented context."
+      "source_sentence_hash": "b12c72bd854333009e116dea19cc12895d0db7960f2a5cbbaa843de563b49d93",
+      "evidence_paraphrase": "Prefer a single verb or brief verb phrase that clearly describes a custom action."
     },
     "tags": [
       "components",
@@ -3014,22 +3395,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply the Share button to display an activity view in the documented context.",
+    "apple_native_rule": "Prefer a single verb or brief verb phrase that clearly describes a custom action.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0006",
-    "title": "Avoid placing a modal view above your extension",
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0011",
+    "title": "Avoid brand names in custom-action titles",
     "category": "components",
     "topic": "activity-views",
-    "subtopic": "share-and-action-extensions",
+    "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude placing a modal view above your extension from the applicable experience.",
-      "ja": "該当する体験ではplacing a modal view above your extensionを避ける。"
+      "en": "Avoid including a company or product name in a custom-action title.",
+      "ja": "custom action titleにcompany名やproduct名を含めることを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -3052,7 +3433,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A share activity typically displays a company name below its icon."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
@@ -3060,7 +3443,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude placing a modal view above your extension from the applicable experience.” in the documented Activity views context?"
+        "Does the design satisfy “Avoid including a company or product name in a custom-action title.” in the documented Activity views context?"
       ]
     },
     "testability": "manual",
@@ -3075,36 +3458,186 @@
       "page_title": "Activity views",
       "section_path": [
         "Activity views",
-        "Share and action extensions"
+        "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.622Z",
+      "retrieved_at": "2026-07-22T16:21:18Z",
       "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
-      "source_sentence_hash": "bf0d9253890a460bf611bf694a6777d8a085ed18a460789db05e2fa01a76537f",
-      "evidence_paraphrase": "Exclude placing a modal view above your extension from the applicable experience."
+      "source_sentence_hash": "b12c72bd854333009e116dea19cc12895d0db7960f2a5cbbaa843de563b49d93",
+      "evidence_paraphrase": "Avoid including a company or product name in a custom-action title."
     },
     "tags": [
       "components",
       "activity-views",
-      "share-and-action-extensions"
+      "best-practices"
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude placing a modal view above your extension from the applicable experience.",
+    "apple_native_rule": "Avoid including a company or product name in a custom-action title.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0007",
-    "title": "Use your main app to denote the progress of a lengthy operation",
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0012",
+    "title": "Consider excluding inapplicable activities",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Consider excluding system activities that aren't applicable to the current app context.",
+      "ja": "現在のapp contextに該当しないsystem activityの除外を検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "System-provided activities can't be reordered, but inapplicable ones can be excluded."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider excluding system activities that aren't applicable to the current app context.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "dd64a781a3e2ac88525818332de0f1c23b8c95006ab005ddc46e4bcc00a8419f",
+      "evidence_paraphrase": "Consider excluding system activities that aren't applicable to the current app context."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider excluding system activities that aren't applicable to the current app context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0013",
+    "title": "Avoid alternate activity-view entry points",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid providing another way to reveal the same activity view.",
+      "ja": "同じactivity viewを表示する別の方法を提供することを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Use the familiar Share button entry point instead."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid providing another way to reveal the same activity view.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "0d511628031e9b52443d66abb1ec1dad5009cf9350b2a518994a41b89c2c9e7b",
+      "evidence_paraphrase": "Avoid providing another way to reveal the same activity view."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid providing another way to reveal the same activity view.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0014",
+    "title": "Keep necessary custom extension interfaces familiar",
     "category": "components",
     "topic": "activity-views",
     "subtopic": "share-and-action-extensions",
     "statement": {
-      "en": "Choose or apply your main app to denote the progress of a lengthy operation in the documented context.",
-      "ja": "該当する状況ではyour main app to denote the progress of a lengthy operationを採用する。"
+      "en": "When a custom extension interface is necessary, make it feel familiar.",
+      "ja": "custom extension interfaceが必要な場合は見慣れた体験にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -3135,7 +3668,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply your main app to denote the progress of a lengthy operation in the documented context.” in the documented Activity views context?"
+        "Does the design satisfy “When a custom extension interface is necessary, make it feel familiar.” in the documented Activity views context?"
       ]
     },
     "testability": "manual",
@@ -3152,10 +3685,10 @@
         "Activity views",
         "Share and action extensions"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.622Z",
+      "retrieved_at": "2026-07-22T16:21:18Z",
       "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
-      "source_sentence_hash": "8ee2f49236630be0345a68bc6d9f997483cef7861651258f2f189b85da8ef13b",
-      "evidence_paraphrase": "Choose or apply your main app to denote the progress of a lengthy operation in the documented context."
+      "source_sentence_hash": "ca66d8f48b78e97dd2b2a4232727add65077aa0c3cbe0fc2033d9b982b103102",
+      "evidence_paraphrase": "When a custom extension interface is necessary, make it feel familiar."
     },
     "tags": [
       "components",
@@ -3164,7 +3697,686 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply your main app to denote the progress of a lengthy operation in the documented context.",
+    "apple_native_rule": "When a custom extension interface is necessary, make it feel familiar.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0015",
+    "title": "Prefer the system composition view for share extensions",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "Prefer the system-provided composition view for a share extension.",
+      "ja": "share extensionではsystem提供のcomposition viewを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The system view provides a consistent sharing experience people already know."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prefer the system-provided composition view for a share extension.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "ca66d8f48b78e97dd2b2a4232727add65077aa0c3cbe0fc2033d9b982b103102",
+      "evidence_paraphrase": "Prefer the system-provided composition view for a share extension."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Prefer the system-provided composition view for a share extension.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0016",
+    "title": "Include the app name in action extension interfaces",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "Include the app name in an action extension interface.",
+      "ja": "action extension interfaceにapp名を含める。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Include the app name in an action extension interface.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "ca66d8f48b78e97dd2b2a4232727add65077aa0c3cbe0fc2033d9b982b103102",
+      "evidence_paraphrase": "Include the app name in an action extension interface."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Include the app name in an action extension interface.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0017",
+    "title": "Relate custom extension interfaces to the main app",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "Include recognizable app-interface elements when an extension presents a custom interface.",
+      "ja": "extensionがcustom interfaceを表示する場合はappを認識できるinterface elementを含める。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Help people understand that the extension and main app are related."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Include recognizable app-interface elements when an extension presents a custom interface.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "ca66d8f48b78e97dd2b2a4232727add65077aa0c3cbe0fc2033d9b982b103102",
+      "evidence_paraphrase": "Include recognizable app-interface elements when an extension presents a custom interface."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Include recognizable app-interface elements when an extension presents a custom interface.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0018",
+    "title": "Streamline extension interactions",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "Streamline extension interactions and limit the steps needed to complete the task.",
+      "ja": "extension操作を簡潔にしtask完了までのstepを制限する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Streamline extension interactions and limit the steps needed to complete the task.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "049372cfff9c822007fd7e0f7dd7c2fa91cd5ff803a647e9f6269d77fd098435",
+      "evidence_paraphrase": "Streamline extension interactions and limit the steps needed to complete the task."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Streamline extension interactions and limit the steps needed to complete the task.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0019",
+    "title": "Provide a purpose image when an extension needs one",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "When necessary, provide an image that communicates the extension's purpose.",
+      "ja": "必要な場合はextensionの目的を伝えるimageを提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "A share extension automatically uses the main app's icon."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When necessary, provide an image that communicates the extension's purpose.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "a3e517b17f166d1ac3c03a1c8da2e99fc280b138637ccd68e82b71d01601392e",
+      "evidence_paraphrase": "When necessary, provide an image that communicates the extension's purpose."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When necessary, provide an image that communicates the extension's purpose.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0020",
+    "title": "Prefer task-identifying action extension icons",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "For an action extension, prefer a symbol or interface icon that clearly identifies the task.",
+      "ja": "action extensionではtaskを明確に識別するsymbolまたはinterface iconを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “For an action extension, prefer a symbol or interface icon that clearly identifies the task.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "a3e517b17f166d1ac3c03a1c8da2e99fc280b138637ccd68e82b71d01601392e",
+      "evidence_paraphrase": "For an action extension, prefer a symbol or interface icon that clearly identifies the task."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "For an action extension, prefer a symbol or interface icon that clearly identifies the task.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0021",
+    "title": "Continue time-consuming extension work in the background",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "Continue a time-consuming extension task in the background.",
+      "ja": "時間のかかるextension taskはbackgroundで継続する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The activity view dismisses immediately after the extension interaction finishes."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Continue a time-consuming extension task in the background.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "8ee2f49236630be0345a68bc6d9f997483cef7861651258f2f189b85da8ef13b",
+      "evidence_paraphrase": "Continue a time-consuming extension task in the background."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Continue a time-consuming extension task in the background.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0022",
+    "title": "Avoid extension completion-only notifications",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "share-and-action-extensions",
+    "statement": {
+      "en": "Avoid notifying people solely because an extension task completes.",
+      "ja": "extension taskが完了したという理由だけで通知することを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [
+      "A notification can report a problem with the operation."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid notifying people solely because an extension task completes.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Share and action extensions"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "8ee2f49236630be0345a68bc6d9f997483cef7861651258f2f189b85da8ef13b",
+      "evidence_paraphrase": "Avoid notifying people solely because an extension task completes."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "share-and-action-extensions"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid notifying people solely because an extension task completes.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-ACTIVITY-VIEWS-0023",
+    "title": "Avoid activity views on unsupported platforms",
+    "category": "components",
+    "topic": "activity-views",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid offering an activity view on macOS, tvOS, or watchOS.",
+      "ja": "macOS、tvOS、watchOSでactivity viewを提供することを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos",
+        "tvos",
+        "watchos"
+      ],
+      "devices": [
+        "mac",
+        "apple-tv",
+        "apple-watch"
+      ],
+      "components": [
+        "activity-views"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Activity views are unsupported on these platforms."
+    ],
+    "exceptions": [
+      "macOS supports share and action app extensions even though it has no activity view."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるActivity viewsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid offering an activity view on macOS, tvOS, or watchOS.” in the documented Activity views context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/activity-views",
+      "page_title": "Activity views",
+      "section_path": [
+        "Activity views",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-22T16:21:18Z",
+      "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9",
+      "source_sentence_hash": "619a3110f660b3f6db7d42155209d07a53cf8c487a9df7b7d7e3c53ecaf22786",
+      "evidence_paraphrase": "Avoid offering an activity view on macOS, tvOS, or watchOS."
+    },
+    "tags": [
+      "components",
+      "activity-views",
+      "platform-considerations"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid offering an activity view on macOS, tvOS, or watchOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

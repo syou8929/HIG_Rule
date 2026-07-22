@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T16:13:08Z",
+  "reviewed_at": "2026-07-22T16:21:18Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2824,9 +2824,188 @@
         "HIG-COMPONENTS-ACTIVITY-RINGS-0001", "HIG-COMPONENTS-ACTIVITY-RINGS-0002", "HIG-COMPONENTS-ACTIVITY-RINGS-0003", "HIG-COMPONENTS-ACTIVITY-RINGS-0004", "HIG-COMPONENTS-ACTIVITY-RINGS-0005", "HIG-COMPONENTS-ACTIVITY-RINGS-0006", "HIG-COMPONENTS-ACTIVITY-RINGS-0007", "HIG-COMPONENTS-ACTIVITY-RINGS-0008", "HIG-COMPONENTS-ACTIVITY-RINGS-0009", "HIG-COMPONENTS-ACTIVITY-RINGS-0010", "HIG-COMPONENTS-ACTIVITY-RINGS-0011", "HIG-COMPONENTS-ACTIVITY-RINGS-0012", "HIG-COMPONENTS-ACTIVITY-RINGS-0013", "HIG-COMPONENTS-ACTIVITY-RINGS-0014", "HIG-COMPONENTS-ACTIVITY-RINGS-0015", "HIG-COMPONENTS-ACTIVITY-RINGS-0016", "HIG-COMPONENTS-ACTIVITY-RINGS-0017", "HIG-COMPONENTS-ACTIVITY-RINGS-0018", "HIG-COMPONENTS-ACTIVITY-RINGS-0019", "HIG-COMPONENTS-ACTIVITY-RINGS-0020", "HIG-COMPONENTS-ACTIVITY-RINGS-0021", "HIG-COMPONENTS-ACTIVITY-RINGS-0022", "HIG-COMPONENTS-ACTIVITY-RINGS-0023", "HIG-COMPONENTS-ACTIVITY-RINGS-0024", "HIG-COMPONENTS-ACTIVITY-RINGS-0025", "HIG-COMPONENTS-ACTIVITY-RINGS-0026", "HIG-COMPONENTS-ACTIVITY-RINGS-0027"
       ],
       "review_note": "Completed the page, preserved thirteen stable IDs, recovered fourteen atomic rules from explicit Never, make-sure, notification, color, differentiation, and platform guidance, and recorded RGB values without storing source images."
+    },
+    {
+      "id": "priority-6-activity-views-complete-context-2026-07-22",
+      "reviewed_at": "2026-07-22T16:21:18Z",
+      "review_method": "Rendered Apple HIG Activity views best practices, share and action extension guidance, and all platform considerations were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/activity-views", "source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-ACTIVITY-VIEWS-0001", "HIG-COMPONENTS-ACTIVITY-VIEWS-0002", "HIG-COMPONENTS-ACTIVITY-VIEWS-0003", "HIG-COMPONENTS-ACTIVITY-VIEWS-0004", "HIG-COMPONENTS-ACTIVITY-VIEWS-0005", "HIG-COMPONENTS-ACTIVITY-VIEWS-0006", "HIG-COMPONENTS-ACTIVITY-VIEWS-0007", "HIG-COMPONENTS-ACTIVITY-VIEWS-0008", "HIG-COMPONENTS-ACTIVITY-VIEWS-0009", "HIG-COMPONENTS-ACTIVITY-VIEWS-0010", "HIG-COMPONENTS-ACTIVITY-VIEWS-0011", "HIG-COMPONENTS-ACTIVITY-VIEWS-0012", "HIG-COMPONENTS-ACTIVITY-VIEWS-0013", "HIG-COMPONENTS-ACTIVITY-VIEWS-0014", "HIG-COMPONENTS-ACTIVITY-VIEWS-0015", "HIG-COMPONENTS-ACTIVITY-VIEWS-0016", "HIG-COMPONENTS-ACTIVITY-VIEWS-0017", "HIG-COMPONENTS-ACTIVITY-VIEWS-0018", "HIG-COMPONENTS-ACTIVITY-VIEWS-0019", "HIG-COMPONENTS-ACTIVITY-VIEWS-0020", "HIG-COMPONENTS-ACTIVITY-VIEWS-0021", "HIG-COMPONENTS-ACTIVITY-VIEWS-0022", "HIG-COMPONENTS-ACTIVITY-VIEWS-0023"
+      ],
+      "review_note": "Completed the page, preserved seven stable IDs, recovered sixteen atomic rules for titles, icons, extension interfaces, long-running work, notifications, and unsupported platforms, and recorded the macOS extension exception separately from activity-view availability."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0001": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "8752597d8883edd3c0901d7a7e3d2b5783e7cf4f61a1e41b90a5400a20bde600", "section_path": ["Activity views", "Best practices"]},
+      "title": "Avoid duplicating common activity-view actions",
+      "statement": {"en": "Avoid duplicating common actions already available in the activity view.", "ja": "activity viewですでに利用できる一般的なactionの重複を避ける。"},
+      "conditions": ["System-provided actions such as Print already have familiar meaning and placement."],
+      "exceptions": ["Give similar app-specific functionality a distinguishing custom title."],
+      "review_note": "Retained AVOID and recorded the confusion risk plus the distinct-title exception."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0002": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "3c0f4dd2c08352296fe60277505044554e8c25fa0148505d0df302f53c6c9932", "section_path": ["Activity views", "Best practices"]},
+      "title": "Consider a symbol for a custom activity",
+      "statement": {"en": "Consider using a symbol to represent a custom activity.", "ja": "custom activityを表すsymbolの使用を検討する。"},
+      "conditions": ["Use a symbol that communicates the activity's item or concept."],
+      "exceptions": ["A custom interface icon can be used when the symbol set doesn't fit."],
+      "review_note": "Retained MAY from Consider and recorded the custom-icon alternative."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0003": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "b12c72bd854333009e116dea19cc12895d0db7960f2a5cbbaa843de563b49d93", "section_path": ["Activity views", "Best practices"]},
+      "title": "Write succinct descriptive custom-action titles",
+      "statement": {"en": "Use a succinct, descriptive title for each custom action.", "ja": "各custom actionに簡潔で説明的なtitleを使う。"},
+      "conditions": ["Long titles can wrap and may be truncated by the system."],
+      "review_note": "Replaced the generated wording and recorded the wrapping and truncation risk."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0004": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "dd64a781a3e2ac88525818332de0f1c23b8c95006ab005ddc46e4bcc00a8419f", "section_path": ["Activity views", "Best practices"]},
+      "title": "Ensure activities fit the current context",
+      "statement": {"en": "Ensure every displayed activity is appropriate for the current context.", "ja": "表示する各activityが現在のcontextに適切であることを確実にする。"},
+      "conditions": ["Exclude inapplicable system tasks and choose custom tasks for the current situation."],
+      "review_note": "Retained MUST from the explicit Make sure directive and recorded both system and custom activity controls."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0005": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "0d511628031e9b52443d66abb1ec1dad5009cf9350b2a518994a41b89c2c9e7b", "section_path": ["Activity views", "Best practices"]},
+      "title": "Use the Share button to reveal an activity view",
+      "statement": {"en": "Use the Share button to reveal an activity view.", "ja": "activity viewの表示にはShare buttonを使う。"},
+      "conditions": ["People expect system-provided sharing activities behind the Share button."],
+      "review_note": "Retained SHOULD and recorded the familiar system-access rationale."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0006": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "bf0d9253890a460bf611bf694a6777d8a085ed18a460789db05e2fa01a76537f", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Avoid extra modal views above extensions",
+      "statement": {"en": "Avoid displaying an additional modal view above an extension.", "ja": "extensionの上に追加のmodal viewを表示することを避ける。"},
+      "conditions": ["The system already presents an extension within a modal view."],
+      "exceptions": ["An alert above the extension can be necessary."],
+      "review_note": "Retained AVOID and restored the system-modal context and alert exception."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0007": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "8ee2f49236630be0345a68bc6d9f997483cef7861651258f2f189b85da8ef13b", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Show lengthy extension-task status in the main app",
+      "statement": {"en": "Use the main app to show the status of a lengthy extension task.", "ja": "時間のかかるextension taskのstatusはmain appで示す。"},
+      "conditions": ["An activity view dismisses immediately after people finish the extension interaction."],
+      "review_note": "Replaced the vague progress wording and recorded the immediate-dismissal context."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0008": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "8752597d8883edd3c0901d7a7e3d2b5783e7cf4f61a1e41b90a5400a20bde600", "section_path": ["Activity views", "Best practices"]},
+      "title": "Distinguish app-specific activities with custom titles",
+      "statement": {"en": "Give an app-specific activity a custom title when it resembles an existing action.", "ja": "既存actionに似たapp固有activityにはcustom titleを付ける。"},
+      "conditions": ["The title explains the app-specific behavior that differs from the common action."],
+      "review_note": "Recovered the conditional custom-title guidance from supporting prose."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0009": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "3c0f4dd2c08352296fe60277505044554e8c25fa0148505d0df302f53c6c9932", "section_path": ["Activity views", "Best practices"]},
+      "title": "Center custom activity icons in a 70-pixel area",
+      "statement": {"en": "Center a custom activity icon in an area about 70 by 70 pixels.", "ja": "custom activity iconを約70×70 pixelのarea中央に配置する。"},
+      "conditions": ["Apply when creating a custom interface icon instead of using a symbol."],
+      "review_note": "Recovered the approximate custom-icon canvas size without turning it into an exact threshold."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0010": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "b12c72bd854333009e116dea19cc12895d0db7960f2a5cbbaa843de563b49d93", "section_path": ["Activity views", "Best practices"]},
+      "title": "Prefer verb-based custom-action titles",
+      "statement": {"en": "Prefer a single verb or brief verb phrase that clearly describes a custom action.", "ja": "custom actionを明確に表す単一verbまたは短いverb phraseを優先する。"},
+      "conditions": ["Keep the title short enough to reduce wrapping or truncation."],
+      "review_note": "Recovered the preferred grammatical form and action-clarity condition."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0011": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "b12c72bd854333009e116dea19cc12895d0db7960f2a5cbbaa843de563b49d93", "section_path": ["Activity views", "Best practices"]},
+      "title": "Avoid brand names in custom-action titles",
+      "statement": {"en": "Avoid including a company or product name in a custom-action title.", "ja": "custom action titleにcompany名やproduct名を含めることを避ける。"},
+      "conditions": ["The title names a custom action rather than a share activity."],
+      "exceptions": ["A share activity typically displays a company name below its icon."],
+      "review_note": "Recovered the action-title restriction and preserved the distinct share-activity convention."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0012": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "dd64a781a3e2ac88525818332de0f1c23b8c95006ab005ddc46e4bcc00a8419f", "section_path": ["Activity views", "Best practices"]},
+      "title": "Consider excluding inapplicable activities",
+      "statement": {"en": "Consider excluding system activities that aren't applicable to the current app context.", "ja": "現在のapp contextに該当しないsystem activityの除外を検討する。"},
+      "conditions": ["System-provided activities can't be reordered, but inapplicable ones can be excluded."],
+      "review_note": "Recovered the documented exclusion option and retained MAY rather than making it mandatory."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0013": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "0d511628031e9b52443d66abb1ec1dad5009cf9350b2a518994a41b89c2c9e7b", "section_path": ["Activity views", "Best practices"]},
+      "title": "Avoid alternate activity-view entry points",
+      "statement": {"en": "Avoid providing another way to reveal the same activity view.", "ja": "同じactivity viewを表示する別の方法を提供することを避ける。"},
+      "conditions": ["Use the familiar Share button entry point instead."],
+      "review_note": "Recovered the explicit confusion-avoidance guidance separately from positive Share-button use."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0014": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "ca66d8f48b78e97dd2b2a4232727add65077aa0c3cbe0fc2033d9b982b103102", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Keep necessary custom extension interfaces familiar",
+      "statement": {"en": "When a custom extension interface is necessary, make it feel familiar.", "ja": "custom extension interfaceが必要な場合は見慣れた体験にする。"},
+      "conditions": ["A share or action extension needs custom UI instead of a system-provided view."],
+      "review_note": "Recovered the conditional interface-familiarity lead and retained SHOULD."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0015": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "ca66d8f48b78e97dd2b2a4232727add65077aa0c3cbe0fc2033d9b982b103102", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Prefer the system composition view for share extensions",
+      "statement": {"en": "Prefer the system-provided composition view for a share extension.", "ja": "share extensionではsystem提供のcomposition viewを優先する。"},
+      "conditions": ["The system view provides a consistent sharing experience people already know."],
+      "review_note": "Recovered the explicit preference and familiar-sharing rationale."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0016": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "ca66d8f48b78e97dd2b2a4232727add65077aa0c3cbe0fc2033d9b982b103102", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Include the app name in action extension interfaces",
+      "statement": {"en": "Include the app name in an action extension interface.", "ja": "action extension interfaceにapp名を含める。"},
+      "conditions": ["An action extension presents an interface."],
+      "review_note": "Recovered the direct action-extension naming guidance and kept conservative SHOULD strength."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0017": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "ca66d8f48b78e97dd2b2a4232727add65077aa0c3cbe0fc2033d9b982b103102", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Relate custom extension interfaces to the main app",
+      "statement": {"en": "Include recognizable app-interface elements when an extension presents a custom interface.", "ja": "extensionがcustom interfaceを表示する場合はappを認識できるinterface elementを含める。"},
+      "conditions": ["Help people understand that the extension and main app are related."],
+      "review_note": "Recovered the conditional visual-relationship guidance from supporting prose."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0018": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "049372cfff9c822007fd7e0f7dd7c2fa91cd5ff803a647e9f6269d77fd098435", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Streamline extension interactions",
+      "statement": {"en": "Streamline extension interactions and limit the steps needed to complete the task.", "ja": "extension操作を簡潔にしtask完了までのstepを制限する。"},
+      "conditions": ["Minimize the number of taps or clicks needed for the extension task."],
+      "review_note": "Recovered the omitted interaction-efficiency lead and retained SHOULD."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0019": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "a3e517b17f166d1ac3c03a1c8da2e99fc280b138637ccd68e82b71d01601392e", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Provide a purpose image when an extension needs one",
+      "statement": {"en": "When necessary, provide an image that communicates the extension's purpose.", "ja": "必要な場合はextensionの目的を伝えるimageを提供する。"},
+      "conditions": ["A share extension automatically uses the main app's icon."],
+      "review_note": "Recovered the conditional image guidance and the automatic share-extension icon behavior."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0020": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "a3e517b17f166d1ac3c03a1c8da2e99fc280b138637ccd68e82b71d01601392e", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Prefer task-identifying action extension icons",
+      "statement": {"en": "For an action extension, prefer a symbol or interface icon that clearly identifies the task.", "ja": "action extensionではtaskを明確に識別するsymbolまたはinterface iconを優先する。"},
+      "conditions": ["An action extension needs an image that communicates its task."],
+      "review_note": "Recovered the action-extension-specific icon preference."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0021": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "8ee2f49236630be0345a68bc6d9f997483cef7861651258f2f189b85da8ef13b", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Continue time-consuming extension work in the background",
+      "statement": {"en": "Continue a time-consuming extension task in the background.", "ja": "時間のかかるextension taskはbackgroundで継続する。"},
+      "conditions": ["The activity view dismisses immediately after the extension interaction finishes."],
+      "review_note": "Recovered background continuation separately from main-app status visibility."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0022": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "8ee2f49236630be0345a68bc6d9f997483cef7861651258f2f189b85da8ef13b", "section_path": ["Activity views", "Share and action extensions"]},
+      "title": "Avoid extension completion-only notifications",
+      "statement": {"en": "Avoid notifying people solely because an extension task completes.", "ja": "extension taskが完了したという理由だけで通知することを避ける。"},
+      "conditions": ["The extension task completes without a problem that requires attention."],
+      "exceptions": ["A notification can report a problem with the operation."],
+      "review_note": "Recovered the completion-notification prohibition and preserved the problem-reporting exception."
+    },
+    "HIG-COMPONENTS-ACTIVITY-VIEWS-0023": {
+      "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "619a3110f660b3f6db7d42155209d07a53cf8c487a9df7b7d7e3c53ecaf22786", "section_path": ["Activity views", "Platform considerations"]},
+      "title": "Avoid activity views on unsupported platforms",
+      "statement": {"en": "Avoid offering an activity view on macOS, tvOS, or watchOS.", "ja": "macOS、tvOS、watchOSでactivity viewを提供することを避ける。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["macos", "tvos", "watchos"], "devices": ["mac", "apple-tv", "apple-watch"], "components": ["activity-views"], "modalities": []},
+      "conditions": ["Activity views are unsupported on these platforms."],
+      "exceptions": ["macOS supports share and action app extensions even though it has no activity view."],
+      "review_note": "Recovered the platform limitation, corrected scope to unsupported platforms, and preserved the macOS extension exception."
+    },
     "HIG-COMPONENTS-ACTIVITY-RINGS-0001": {
       "source": {"source_hash": "4ac6aa35a25990aaa7e421e8516d02b26bd8c636a7d8f93f5f9e24b2fc9abeb5", "source_sentence_hash": "1b8e2584f66ebf44276f740768f01352b449c625a3fa0181c321470915da0626", "section_path": ["Activity rings", "Best practices"]},
       "title": "Display Activity rings only when relevant",
