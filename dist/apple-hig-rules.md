@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T17:22:34.384Z. 2809 active rules; 4 deprecated rules.
+Generated 2026-07-22T17:28:45.412Z. 2822 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1559,13 +1559,26 @@ Generated 2026-07-22T17:22:34.384Z. 2809 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-POPOVERS-0021 · AVOID · high** — Avoid relying on popovers in tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 ### progress-indicators
 
-- **HIG-COMPONENTS-PROGRESS-INDICATORS-0001 · SHOULD · low** — Apply the documented Progress indicators guidance to be as accurate as possible when reporting advancement in a determinate progress indicator. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
-- **HIG-COMPONENTS-PROGRESS-INDICATORS-0002 · SHOULD · low** — Maintain progress indicators moving so people know something is continuing to happen. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
-- **HIG-COMPONENTS-PROGRESS-INDICATORS-0003 · AVOID · low** — Exclude switch from the circular style to the bar style from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
-- **HIG-COMPONENTS-PROGRESS-INDICATORS-0004 · SHOULD · low** — Present a progress indicator in a consistent location in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
-- **HIG-COMPONENTS-PROGRESS-INDICATORS-0005 · SHOULD · low** — Preserve people’s ability to know when halting a process has a negative consequence. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0001 · SHOULD · high** — Report advancement in a determinate progress indicator as accurately as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0002 · SHOULD · high** — Keep a progress indicator moving while its process continues. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0003 · AVOID · high** — Avoid switching from a circular activity indicator to a progress bar. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0004 · SHOULD · high** — Display progress indicators in a consistent location. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0005 · SHOULD · high** — Tell people when halting a process has a negative consequence. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - **HIG-COMPONENTS-PROGRESS-INDICATORS-0006 · SHOULD · high** — Prefer a macOS spinner for background operations or space-constrained status. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - **HIG-COMPONENTS-PROGRESS-INDICATORS-0007 · AVOID · high** — Avoid labeling a macOS spinner. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0008 · SHOULD · high** — Show a progress indicator only while its operation is ongoing, and remove it after completion. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0009 · SHOULD · high** — Use a determinate progress indicator for a task with a well-defined duration. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0010 · SHOULD · high** — Use an indeterminate progress indicator for an unquantifiable task. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0011 · SHOULD · high** — Use a determinate progress indicator when the task's progress can be quantified. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0012 · SHOULD · high** — If a process stalls, provide feedback that explains the problem and what people can do next. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0013 · SHOULD · high** — When an indeterminate progress bar's duration becomes known, switch the bar to determinate progress. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0014 · MAY · high** — Consider displaying a description when it adds helpful context for the task. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0015 · SHOULD · high** — Keep progress-indicator task descriptions accurate and succinct. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0016 · AVOID · high** — Avoid vague progress descriptions such as loading or authenticating when they add little value. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0017 · SHOULD · high** — When feasible, let people halt an ongoing process. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0018 · SHOULD · high** — Provide periodic automatic content updates instead of requiring people to initiate every refresh. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0019 · SHOULD · high** — Use a short refresh-control title only when it adds value about the content being refreshed. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- **HIG-COMPONENTS-PROGRESS-INDICATORS-0020 · AVOID · high** — Avoid using a refresh-control title to explain how to perform a refresh. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 ### pull-down-buttons
 
 - **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001 · SHOULD · low** — Choose or apply a pull-down button to present commands or items that are directly related to the button’s action in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))

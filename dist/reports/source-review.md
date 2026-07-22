@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2014
-- Reviewed batches: 133
+- Reviewed rules: 2032
+- Reviewed batches: 134
 - Official source only: yes
-- Reviewed at: 2026-07-22T17:16:46Z
+- Reviewed at: 2026-07-22T17:23:50Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -514,8 +514,26 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-POPOVERS-0019 · high — Recovered MUST_NOT from the explicit Never prohibition separately from the one-at-a-time recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0020 · high — Recovered the qualified single-action transition and preserved its when-possible strength. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0021 · high — Recorded unsupported-platform guidance conservatively as AVOID rather than promoting descriptive support text to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0001 · high — Retained SHOULD and recorded the pacing guidance without promising an artificial linear duration. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0002 · high — Retained SHOULD and separated the stalled-process recovery message into an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0003 · high — Retained AVOID from the direct Don't guidance and distinguished it from a bar changing determination state. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0004 · high — Retained SHOULD and recorded the cross-platform and cross-app findability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0005 · high — Retained SHOULD and recorded the lost-progress alert and recovery choices. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0006 · high — Restored the complete space-constrained clause and recorded the source examples. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0007 · high — Kept the qualified AVOID strength and recorded why a label is usually redundant. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0008 · high — Recovered the page-level transient-state contract without promoting descriptive All wording to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0009 · high — Recovered the determinate branch of the page's duration-based component mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0010 · high — Recovered the indeterminate branch of the page's duration-based component mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0011 · high — Recovered the qualified preference and tied it to quantifiable progress rather than requiring determination for every task. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0012 · high — Recovered the stalled-state requirement and its problem-plus-action content. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0013 · high — Recovered the when-possible transition and kept it distinct from the disallowed circular-to-bar shape change. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0014 · high — Recovered the explicitly optional description choice without requiring labels for every indicator. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0015 · high — Recovered the writing-quality guidance separately from whether a description is useful. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0016 · high — Recovered the explicit vague-wording restriction and preserved the seldom-add-value rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0017 · high — Recovered the feasibility-qualified control and recorded the Cancel and Pause choices by consequence. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0018 · high — Recovered the iOS and iPadOS automatic-update expectation and its manual-refresh complement. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0019 · high — Recovered the conditional iOS and iPadOS title guidance and its content-value test. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PROGRESS-INDICATORS-0020 · high — Recovered the title-content restriction separately from the optional decision to show a title. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006 · high — Restored the truncated recommendation and recorded both sides of the documented tradeoff. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0007 · high — Recorded the descriptive tvOS and watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - HIG-COMPONENTS-RATING-INDICATORS-0001 · high — Replaced the vague generated wording with the source-supported inline editing behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))

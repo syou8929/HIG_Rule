@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2809
+- Active atomic rules: 2822
 - Pages without rules: 16
-- Low-confidence rules: 739
-- Rules requiring human review: 739
+- Low-confidence rules: 734
+- Rules requiring human review: 734
 - Reference notes: 904
 
 ## Rules by category
 
-- components: 962
+- components: 975
 - foundations: 346
 - getting-started: 100
 - inputs: 245
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 392
-- MAY: 335
+- AVOID: 394
+- MAY: 336
 - MUST: 299
 - MUST_NOT: 33
-- SHOULD: 1750
+- SHOULD: 1760
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1855
-- ipados: 1827
-- macos: 1501
-- tvos: 1169
-- visionos: 1549
-- watchos: 1251
+- ios: 1868
+- ipados: 1840
+- macos: 1511
+- tvos: 1179
+- visionos: 1559
+- watchos: 1261
 
 ## Rules by testability
 
 - hybrid: 80
-- manual: 2729
+- manual: 2742
 
 ## Blocked pages
 
@@ -109,11 +109,6 @@ None.
 - HIG-COMPONENTS-POP-UP-BUTTONS-0005
 - HIG-COMPONENTS-POP-UP-BUTTONS-0006
 - HIG-COMPONENTS-POP-UP-BUTTONS-0007
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0001
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0002
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0003
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0004
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0005
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003
@@ -851,11 +846,6 @@ None.
 - HIG-COMPONENTS-POP-UP-BUTTONS-0005
 - HIG-COMPONENTS-POP-UP-BUTTONS-0006
 - HIG-COMPONENTS-POP-UP-BUTTONS-0007
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0001
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0002
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0003
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0004
-- HIG-COMPONENTS-PROGRESS-INDICATORS-0005
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003

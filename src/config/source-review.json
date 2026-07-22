@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T17:16:46Z",
+  "reviewed_at": "2026-07-22T17:23:50Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2901,6 +2901,17 @@
         "HIG-COMPONENTS-POPOVERS-0001", "HIG-COMPONENTS-POPOVERS-0002", "HIG-COMPONENTS-POPOVERS-0003", "HIG-COMPONENTS-POPOVERS-0004", "HIG-COMPONENTS-POPOVERS-0005", "HIG-COMPONENTS-POPOVERS-0006", "HIG-COMPONENTS-POPOVERS-0007", "HIG-COMPONENTS-POPOVERS-0008", "HIG-COMPONENTS-POPOVERS-0009", "HIG-COMPONENTS-POPOVERS-0010", "HIG-COMPONENTS-POPOVERS-0011", "HIG-COMPONENTS-POPOVERS-0015", "HIG-COMPONENTS-POPOVERS-0016", "HIG-COMPONENTS-POPOVERS-0017", "HIG-COMPONENTS-POPOVERS-0018", "HIG-COMPONENTS-POPOVERS-0019", "HIG-COMPONENTS-POPOVERS-0020", "HIG-COMPONENTS-POPOVERS-0021"
       ],
       "review_note": "Completed the page, preserved eleven stable general IDs, recovered seven atomic rules for task limits, arrow placement, visible context, multi-selection dismissal, nested-popover prohibition, one-action switching, and unsupported tvOS and watchOS, and retained three previously reviewed platform IDs unchanged."
+    },
+    {
+      "id": "priority-6-progress-indicators-complete-context-2026-07-22",
+      "reviewed_at": "2026-07-22T17:23:50Z",
+      "review_method": "Rendered Apple HIG Progress indicators overview, best practices, refresh-control guidance, and all platform considerations were reviewed; two repeated live renders matched the recorded main-content hash, while previously reviewed macOS rules remained in their original batch.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/progress-indicators", "source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-PROGRESS-INDICATORS-0001", "HIG-COMPONENTS-PROGRESS-INDICATORS-0002", "HIG-COMPONENTS-PROGRESS-INDICATORS-0003", "HIG-COMPONENTS-PROGRESS-INDICATORS-0004", "HIG-COMPONENTS-PROGRESS-INDICATORS-0005", "HIG-COMPONENTS-PROGRESS-INDICATORS-0008", "HIG-COMPONENTS-PROGRESS-INDICATORS-0009", "HIG-COMPONENTS-PROGRESS-INDICATORS-0010", "HIG-COMPONENTS-PROGRESS-INDICATORS-0011", "HIG-COMPONENTS-PROGRESS-INDICATORS-0012", "HIG-COMPONENTS-PROGRESS-INDICATORS-0013", "HIG-COMPONENTS-PROGRESS-INDICATORS-0014", "HIG-COMPONENTS-PROGRESS-INDICATORS-0015", "HIG-COMPONENTS-PROGRESS-INDICATORS-0016", "HIG-COMPONENTS-PROGRESS-INDICATORS-0017", "HIG-COMPONENTS-PROGRESS-INDICATORS-0018", "HIG-COMPONENTS-PROGRESS-INDICATORS-0019", "HIG-COMPONENTS-PROGRESS-INDICATORS-0020"
+      ],
+      "review_note": "Completed the page, preserved five stable general IDs, recovered thirteen atomic rules for transient display, determinate and indeterminate selection, stall feedback, descriptions, halting, automatic refreshes, and refresh-control titles, and retained two previously reviewed macOS IDs unchanged."
     }
   ],
   "rules": {
@@ -18202,6 +18213,41 @@
       "conditions": ["Popovers aren't supported in tvOS or watchOS."],
       "review_note": "Recorded unsupported-platform guidance conservatively as AVOID rather than promoting descriptive support text to MUST_NOT."
     },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0001": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "a03e58b1af6a00711888192df2aa1798ca907805a52527688e352ae5b78b6bf1", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Report determinate progress as accurately as possible",
+      "statement": {"en": "Report advancement in a determinate progress indicator as accurately as possible.", "ja": "determinate progress indicatorの進行度を可能な限り正確に示す。"},
+      "conditions": ["Consider evening out the apparent pace so the remaining time feels credible."],
+      "review_note": "Retained SHOULD and recorded the pacing guidance without promising an artificial linear duration."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0002": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "86535f7cc446349666d427724173be55d3f0fb101ac285d77523410b500be8a7", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Keep progress indicators moving during active work",
+      "statement": {"en": "Keep a progress indicator moving while its process continues.", "ja": "processが進行している間はprogress indicatorを動かし続ける。"},
+      "conditions": ["A stationary indicator can suggest a stalled process or frozen app."],
+      "review_note": "Retained SHOULD and separated the stalled-process recovery message into an atomic rule."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0003": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "727c82fc7be1828ea5908920ff861a551509095b7ab62ce8d38d29dc2fcc5b4b", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Avoid switching from a circular indicator to a progress bar",
+      "statement": {"en": "Avoid switching from a circular activity indicator to a progress bar.", "ja": "circular activity indicatorからprogress barへ切り替えない。"},
+      "conditions": ["The different shapes and sizes can disrupt the interface and confuse people."],
+      "review_note": "Retained AVOID from the direct Don't guidance and distinguished it from a bar changing determination state."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0004": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "c434245efbda7b06692c73fcac310bc7cebcec5a27feada9857d5ca62b03e645", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Display progress indicators in a consistent location",
+      "statement": {"en": "Display progress indicators in a consistent location.", "ja": "progress indicatorを一貫した場所に表示する。"},
+      "conditions": ["Help people find operation status reliably across platforms and within or between apps."],
+      "review_note": "Retained SHOULD and recorded the cross-platform and cross-app findability rationale."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0005": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "8eddcf973802a4736ec62d64f60dabe16acfef4484050b13b83cd5fbc43472a2", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Explain negative consequences before halting a process",
+      "statement": {"en": "Tell people when halting a process has a negative consequence.", "ja": "processの停止に悪影響がある場合は、その結果を利用者へ伝える。"},
+      "conditions": ["When cancellation loses progress, consider an alert that lets people confirm cancellation or resume."],
+      "review_note": "Retained SHOULD and recorded the lost-progress alert and recovery choices."
+    },
     "HIG-COMPONENTS-PROGRESS-INDICATORS-0006": {
       "source": {
         "source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589",
@@ -18238,6 +18284,110 @@
         "A label is usually unnecessary because a spinner typically appears after people initiate a process."
       ],
       "review_note": "Kept the qualified AVOID strength and recorded why a label is usually redundant."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0008": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "a5689637f6717169b892174b996b1d0a4743875eb660ba66bfd5c0fcc7cc9bbc", "section_path": ["Progress indicators"]},
+      "title": "Show progress indicators only during ongoing operations",
+      "statement": {"en": "Show a progress indicator only while its operation is ongoing, and remove it after completion.", "ja": "operationの進行中だけprogress indicatorを表示し、完了後は消す。"},
+      "normative_level": "SHOULD",
+      "review_note": "Recovered the page-level transient-state contract without promoting descriptive All wording to MUST."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0009": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "e5baaedee40b69277fc6a6b6fc7c529dbc93ff1e76c077c5de18c274a6b0c85e", "section_path": ["Progress indicators"]},
+      "title": "Use determinate indicators for well-defined durations",
+      "statement": {"en": "Use a determinate progress indicator for a task with a well-defined duration.", "ja": "所要時間が明確なtaskにはdeterminate progress indicatorを使う。"},
+      "normative_level": "SHOULD",
+      "conditions": ["A file conversion is an example of a task with a well-defined duration."],
+      "review_note": "Recovered the determinate branch of the page's duration-based component mapping."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0010": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "238fc9bf1167224403bbdd98fe509bdad5b5b3abf9a61ef215938ce917fe1ef8", "section_path": ["Progress indicators"]},
+      "title": "Use indeterminate indicators for unquantifiable tasks",
+      "statement": {"en": "Use an indeterminate progress indicator for an unquantifiable task.", "ja": "進行量を定量化できないtaskにはindeterminate progress indicatorを使う。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Loading or synchronizing complex data can be unquantifiable."],
+      "review_note": "Recovered the indeterminate branch of the page's duration-based component mapping."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0011": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "e661de2e841cf1da9803ef3f60226fea56c79f048500b0445b25ec1b590015f5", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Prefer a determinate progress indicator when possible",
+      "statement": {"en": "Use a determinate progress indicator when the task's progress can be quantified.", "ja": "taskの進行度を定量化できる場合はdeterminate progress indicatorを使う。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Determinate progress helps people estimate the wait and decide whether to continue, reschedule, or abandon the task."],
+      "review_note": "Recovered the qualified preference and tied it to quantifiable progress rather than requiring determination for every task."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0012": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "86535f7cc446349666d427724173be55d3f0fb101ac285d77523410b500be8a7", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Provide actionable feedback when a process stalls",
+      "statement": {"en": "If a process stalls, provide feedback that explains the problem and what people can do next.", "ja": "processが停止した場合は、問題と次にできることを説明するfeedbackを示す。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The process has stalled instead of continuing normally."],
+      "review_note": "Recovered the stalled-state requirement and its problem-plus-action content."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0013": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "cba812081ce416a63b88e80745ea7279a7a325bc41ec56f3a1b9f22cbbf00ca9", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Switch a progress bar to determinate when duration becomes known",
+      "statement": {"en": "When an indeterminate progress bar's duration becomes known, switch the bar to determinate progress.", "ja": "indeterminate progress barの所要時間が判明したら、barをdeterminate progressへ切り替える。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Preserve the bar style while changing only its determination state."],
+      "review_note": "Recovered the when-possible transition and kept it distinct from the disallowed circular-to-bar shape change."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0014": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "2cde5983d21854b51d714fa48ace3b8b5850ef7dc2dca1da2125223408f4782a", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Consider a task description when it adds context",
+      "statement": {"en": "Consider displaying a description when it adds helpful context for the task.", "ja": "taskに有用なcontextを加える場合はdescriptionの表示を検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Recovered the explicitly optional description choice without requiring labels for every indicator."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0015": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "2cde5983d21854b51d714fa48ace3b8b5850ef7dc2dca1da2125223408f4782a", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Keep progress descriptions accurate and succinct",
+      "statement": {"en": "Keep progress-indicator task descriptions accurate and succinct.", "ja": "progress indicatorのtask descriptionを正確かつ簡潔にする。"},
+      "normative_level": "SHOULD",
+      "review_note": "Recovered the writing-quality guidance separately from whether a description is useful."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0016": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "2cde5983d21854b51d714fa48ace3b8b5850ef7dc2dca1da2125223408f4782a", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Avoid vague progress descriptions",
+      "statement": {"en": "Avoid vague progress descriptions such as loading or authenticating when they add little value.", "ja": "価値をほとんど加えないloadingやauthenticatingのような曖昧なprogress descriptionを避ける。"},
+      "normative_level": "AVOID",
+      "review_note": "Recovered the explicit vague-wording restriction and preserved the seldom-add-value rationale."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0017": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "08f01e33f02b52f752c6cce7607e3fac7a5201dedc02032b6c19f4b79f0317d9", "section_path": ["Progress indicators", "Best practices"]},
+      "title": "Let people halt processing when feasible",
+      "statement": {"en": "When feasible, let people halt an ongoing process.", "ja": "可能な場合は、進行中のprocessを利用者が停止できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Provide Cancel when interruption doesn't cause negative side effects."],
+      "exceptions": ["When interruption may cause negative side effects, consider offering Pause in addition to Cancel."],
+      "review_note": "Recovered the feasibility-qualified control and recorded the Cancel and Pause choices by consequence."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0018": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "dcd3f149d36130127cf4d9785bd659cbd844378769f7013736d22cfd7a67c429", "section_path": ["Progress indicators", "Platform considerations", "iOS, iPadOS", "Refresh content controls"]},
+      "title": "Provide automatic content updates alongside manual refresh",
+      "statement": {"en": "Provide periodic automatic content updates instead of requiring people to initiate every refresh.", "ja": "すべてのrefreshを利用者に開始させず、定期的な自動content updateを提供する。"},
+      "normative_level": "SHOULD", "priority_rank": 4,
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["progress-indicators"], "modalities": []},
+      "conditions": ["Keep content fresh even though people can also request an immediate refresh."],
+      "review_note": "Recovered the iOS and iPadOS automatic-update expectation and its manual-refresh complement."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0019": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "759ce1a59ae7ed89c6bc979d8010074dbaafd7db85baf31a2a585c3eb98c60a9", "section_path": ["Progress indicators", "Platform considerations", "iOS, iPadOS", "Refresh content controls"]},
+      "title": "Use a refresh-control title only when it adds value",
+      "statement": {"en": "Use a short refresh-control title only when it adds value about the content being refreshed.", "ja": "refresh対象のcontentに価値ある情報を加える場合に限り、短いrefresh-control titleを使う。"},
+      "normative_level": "SHOULD", "priority_rank": 4,
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["progress-indicators"], "modalities": []},
+      "conditions": ["A title is usually unnecessary because the animation already indicates loading."],
+      "review_note": "Recovered the conditional iOS and iPadOS title guidance and its content-value test."
+    },
+    "HIG-COMPONENTS-PROGRESS-INDICATORS-0020": {
+      "source": {"source_hash": "3f7dadaf56205e49fb7f10ac03754b19b615bee5faeda0d4c58ea1b42320c589", "source_sentence_hash": "759ce1a59ae7ed89c6bc979d8010074dbaafd7db85baf31a2a585c3eb98c60a9", "section_path": ["Progress indicators", "Platform considerations", "iOS, iPadOS", "Refresh content controls"]},
+      "title": "Avoid refresh instructions in a refresh-control title",
+      "statement": {"en": "Avoid using a refresh-control title to explain how to perform a refresh.", "ja": "refresh-control titleでrefresh方法を説明しない。"},
+      "normative_level": "AVOID", "priority_rank": 4,
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["progress-indicators"], "modalities": []},
+      "exceptions": ["Provide valuable information about the refreshed content, such as its last update time."],
+      "review_note": "Recovered the title-content restriction separately from the optional decision to show a title."
     },
     "HIG-COMPONENTS-SCROLL-VIEWS-0001": {
       "source": {"source_hash": "63b05dea57d7330e4d2202d74cdcdc6653b07c02e8ae9c147d5740d20f4f3698", "source_sentence_hash": "d08d739dfda11f5701bcba348fb2a445b92460b067dea1f9f5a3ea8cd5c8b918", "section_path": ["Scroll views", "Best practices"]},
