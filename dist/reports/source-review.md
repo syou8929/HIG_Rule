@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1880
-- Reviewed batches: 127
+- Reviewed rules: 1897
+- Reviewed batches: 128
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:21:18Z
+- Reviewed at: 2026-07-22T16:28:23Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -112,6 +112,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-ALERTS-0048 · high — Reviewed the rendered source context for “Avoid caution symbols for tasks that only overwrite or remove data” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0049 · high — Reviewed the rendered source context for “Use a 154-point maximum height for visionOS alert accessory views” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0050 · high — Reviewed the rendered source context for “Use a 16-point corner radius for visionOS alert accessory views” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-BUTTONS-0001 · high — Replaced the generic generated statement and separated concrete spacing and hit-region requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0002 · high — Retained the unqualified Always-based MUST and recorded its responsiveness purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0003 · high — Restored the same-size set relationship and prominent-versus-less-prominent styling technique. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0004 · high — Repaired the generated wording and recorded the content-layer contrast boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0005 · high — Retained the explicit Ensure-based MUST and recorded platform-supported content forms. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0006 · high — Retained MAY from Consider and narrowed the choice to relative communication clarity. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0007 · high — Repaired the truncated rule and retained AVOID from the direct Don't directive. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0008 · high — Recorded the complete standard-versus-flexible push-button condition from the official macOS prose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0009 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0010 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
@@ -133,6 +140,16 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-BUTTONS-0026 · high — Recorded the same-height and concise-content conditions for two watchOS buttons sharing a row. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0027 · medium — Reviewed the priority-4 macOS, visionOS, and watchOS button guidance, including structured placement and sizing constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0028 · high — Preserved the source's where-possible qualification while recording the visual-consistency goal. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0030 · high — Retained SHOULD from Try and recorded the standard-symbol path. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0031 · high — Replaced the long title and separated the one-or-two prominent-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0032 · high — Recovered the explicit essential and critical input-accessibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0033 · high — Recovered the explicit 44-point minimum, separated visionOS, and documented the higher-priority tvOS accessibility floor. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0034 · high — Recovered and scoped the explicit 60-point visionOS minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0035 · high — Recovered the explicit one-or-two limit and its cognitive-load rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0036 · high — Recovered the conditional monochromatic-label preference from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0037 · high — Recovered the label-length and action-description guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0038 · high — Recovered the conditional verb-led label guidance and retained MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-BUTTONS-0039 · high — Recovered the omitted positive primary-role guidance and preserved the destructive-button exception. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-CHARTS-0018 · high — Recovered the qualified AVOID lead and recorded the glanceability and companion-platform guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 - HIG-COMPONENTS-COLLECTIONS-0001 · high — Reviewed the rendered source context for “Use the standard row or grid layout whenever possible” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0002 · high — Reviewed the rendered source context for “Consider using a table instead of a collection for text” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))

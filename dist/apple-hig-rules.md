@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T16:25:52.407Z. 2744 active rules; 4 deprecated rules.
+Generated 2026-07-22T16:33:12.111Z. 2752 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1062,13 +1062,13 @@ Generated 2026-07-22T16:25:52.407Z. 2744 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-BOXES-0003 · SHOULD · low** — Make a succinct introductory title if it helps clarify the box’s contents available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
 ### buttons
 
-- **HIG-COMPONENTS-BUTTONS-0001 · SHOULD · low** — Apply the documented Buttons guidance to make buttons easy for people to use. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0002 · MUST · medium** — Include a press state for a custom button in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0003 · SHOULD · low** — Choose or apply style — not size — to visually distinguish the preferred choice among multiple options in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0004 · AVOID · low** — Exclude applying a similar color to button labels and content layer backgrounds from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0005 · MUST · medium** — Verify that that each button clearly communicates its purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0006 · MAY · low** — Evaluate whether using text when a short label communicates more clearly than an icon is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0007 · AVOID · low** — Exclude assign the primary role to a button that performs a destructive action, even if that action is the from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0001 · SHOULD · high** — Make buttons easy for people to recognize, select, and activate. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0002 · MUST · high** — Always provide a visible press state for every custom button. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0003 · SHOULD · high** — Use visual style rather than size to distinguish a preferred button among multiple options. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0004 · AVOID · high** — Avoid using similar colors for button labels and content-layer backgrounds. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0005 · MUST · high** — Ensure every button clearly communicates its purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0006 · MAY · high** — Consider a short text label when it communicates a button's action more clearly than an icon. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0007 · AVOID · high** — Avoid assigning the primary role to a destructive button, even when it is the most likely choice. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0008 · SHOULD · high** — Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0009 · MAY · medium** — Evaluate whether supporting spring loading is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0010 · SHOULD · medium** — Choose or apply square buttons in a view, not in the window frame in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
@@ -1091,8 +1091,16 @@ Generated 2026-07-22T16:25:52.407Z. 2744 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-BUTTONS-0027 · SHOULD · medium** — Choose or apply toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0028 · SHOULD · high** — Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - **HIG-COMPONENTS-BUTTONS-0029 · SHOULD · low** — Apply the documented Buttons guidance to help buttons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0030 · SHOULD · low** — Try to associate familiar actions with familiar icons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-- **HIG-COMPONENTS-BUTTONS-0031 · SHOULD · low** — Generally, use a button that has a prominent visual style for the most likely action in a view. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0030 · SHOULD · high** — Try to associate familiar actions with familiar icons. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0031 · SHOULD · high** — Use a prominent visual style for the most likely action in a view. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0032 · MUST · high** — Ensure every button has enough surrounding space for people to distinguish and activate it. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0033 · MUST · high** — Ensure buttons outside visionOS have a hit region of at least 44 by 44 points. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0034 · MUST · high** — Ensure visionOS buttons have a hit region of at least 60 by 60 points. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0035 · SHOULD · high** — Keep the number of prominent buttons to one or two per view. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0036 · SHOULD · high** — Prefer the default monochromatic button-label appearance over bright or colorful content. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0037 · SHOULD · high** — Use a few words that succinctly describe the button's action. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0038 · MAY · high** — For a title-style text label, consider starting with a verb that conveys the button's action. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- **HIG-COMPONENTS-BUTTONS-0039 · SHOULD · high** — Assign the primary role to the button people are most likely to choose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 ### charts
 
 - **HIG-COMPONENTS-CHARTS-0001 · SHOULD · low** — Apply the documented Charts guidance to choose a mark type based on the information you want to communicate about the data. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))

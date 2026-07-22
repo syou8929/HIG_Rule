@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2744
+- Active atomic rules: 2752
 - Pages without rules: 16
-- Low-confidence rules: 802
-- Rules requiring human review: 802
+- Low-confidence rules: 795
+- Rules requiring human review: 795
 - Reference notes: 905
 
 ## Rules by category
 
-- components: 897
+- components: 905
 - foundations: 346
 - getting-started: 100
 - inputs: 245
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 380
-- MAY: 332
-- MUST: 276
+- MAY: 333
+- MUST: 279
 - MUST_NOT: 31
-- SHOULD: 1725
+- SHOULD: 1729
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1800
-- ipados: 1772
-- macos: 1454
-- tvos: 1128
-- visionos: 1497
-- watchos: 1205
+- ios: 1807
+- ipados: 1779
+- macos: 1461
+- tvos: 1135
+- visionos: 1504
+- watchos: 1212
 
 ## Rules by testability
 
-- hybrid: 77
-- manual: 2667
+- hybrid: 79
+- manual: 2673
 
 ## Blocked pages
 
@@ -82,13 +82,6 @@ None.
 - HIG-COMPONENTS-BOXES-0001
 - HIG-COMPONENTS-BOXES-0002
 - HIG-COMPONENTS-BOXES-0003
-- HIG-COMPONENTS-BUTTONS-0001
-- HIG-COMPONENTS-BUTTONS-0003
-- HIG-COMPONENTS-BUTTONS-0004
-- HIG-COMPONENTS-BUTTONS-0006
-- HIG-COMPONENTS-BUTTONS-0007
-- HIG-COMPONENTS-BUTTONS-0030
-- HIG-COMPONENTS-BUTTONS-0031
 - HIG-COMPONENTS-CHARTS-0001
 - HIG-COMPONENTS-CHARTS-0002
 - HIG-COMPONENTS-CHARTS-0003
@@ -887,13 +880,6 @@ None.
 - HIG-COMPONENTS-BOXES-0001
 - HIG-COMPONENTS-BOXES-0002
 - HIG-COMPONENTS-BOXES-0003
-- HIG-COMPONENTS-BUTTONS-0001
-- HIG-COMPONENTS-BUTTONS-0003
-- HIG-COMPONENTS-BUTTONS-0004
-- HIG-COMPONENTS-BUTTONS-0006
-- HIG-COMPONENTS-BUTTONS-0007
-- HIG-COMPONENTS-BUTTONS-0030
-- HIG-COMPONENTS-BUTTONS-0031
 - HIG-COMPONENTS-CHARTS-0001
 - HIG-COMPONENTS-CHARTS-0002
 - HIG-COMPONENTS-CHARTS-0003

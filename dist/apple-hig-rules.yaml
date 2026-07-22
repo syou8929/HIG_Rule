@@ -2642,7 +2642,7 @@
       - activity-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep the title short enough to reduce wrapping or truncation.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.
@@ -2701,7 +2701,7 @@
       - activity-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The title names a custom action rather than a share activity.
   exceptions:
     - A share activity typically displays a company name below its icon.
   rationale:
@@ -2879,7 +2879,7 @@
       - activity-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A share or action extension needs custom UI instead of a system-provided view.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.
@@ -2997,7 +2997,7 @@
       - activity-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - An action extension presents an interface.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.
@@ -3115,7 +3115,7 @@
       - activity-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Minimize the number of taps or clicks needed for the extension task.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.
@@ -3233,7 +3233,7 @@
       - activity-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - An action extension needs an image that communicates its task.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Activity views experience on the scoped Apple platforms.
@@ -3351,7 +3351,7 @@
       - activity-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The extension task completes without a problem that requires attention.
   exceptions:
     - A notification can report a problem with the operation.
   rationale:
@@ -7198,16 +7198,16 @@
   apple_native_rule: Make a succinct introductory title if it helps clarify the box’s contents available when applicable.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0001
-  title: Make buttons easy for people to use
+  title: Make buttons easy to recognize and use
   category: components
   topic: buttons
   subtopic: best-practices
   statement:
-    en: Apply the documented Buttons guidance to make buttons easy for people to use.
-    ja: 「Buttons」において「Make buttons easy for people to use」の指針を適用する。
+    en: Make buttons easy for people to recognize, select, and activate.
+    ja: buttonを認識・選択・操作しやすくする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -7230,7 +7230,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Support every input method available on the target platform.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -7238,7 +7238,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Buttons guidance to make buttons easy for people to use.” in the documented Buttons context?
+      - Does the design satisfy “Make buttons easy for people to recognize, select, and activate.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7250,28 +7250,28 @@
     section_path:
       - Buttons
       - Best practices
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605
-    evidence_paraphrase: Apply the documented Buttons guidance to make buttons easy for people to use.
+    evidence_paraphrase: Make buttons easy for people to recognize, select, and activate.
   tags:
     - components
     - buttons
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Buttons guidance to make buttons easy for people to use.
+  apple_native_rule: Make buttons easy for people to recognize, select, and activate.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0002
-  title: Always include a press state for a custom button
+  title: Always provide a custom-button press state
   category: components
   topic: buttons
   subtopic: best-practices
   statement:
-    en: Include a press state for a custom button in every applicable case.
-    ja: 該当するすべての場合にinclude a press state for a custom buttonを実行する。
+    en: Always provide a visible press state for every custom button.
+    ja: すべてのcustom buttonにvisible press stateを常に提供する。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -7295,7 +7295,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The press state confirms that the button accepted input.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -7303,7 +7303,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Include a press state for a custom button in every applicable case.” in the documented Buttons context?
+      - Does the design satisfy “Always provide a visible press state for every custom button.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7315,29 +7315,29 @@
     section_path:
       - Buttons
       - Best practices
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: e3731ce15f96efe80aef3066be853f78603934c530165cbe655d08fa39ab8e2c
-    evidence_paraphrase: Include a press state for a custom button in every applicable case.
+    evidence_paraphrase: Always provide a visible press state for every custom button.
   tags:
     - components
     - buttons
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Include a press state for a custom button in every applicable case.
+  apple_native_rule: Always provide a visible press state for every custom button.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0003
-  title: Use style — not size — to visually distinguish the preferred choice among multiple options
+  title: Distinguish preferred choices by style, not size
   category: components
   topic: buttons
   subtopic: style
   statement:
-    en: Choose or apply style — not size — to visually distinguish the preferred choice among multiple options in the documented context.
-    ja: 該当する状況ではstyle — not size — to visually distinguish the preferred choice among multiple optionsを採用する。
+    en: Use visual style rather than size to distinguish a preferred button among multiple options.
+    ja: 複数option内のpreferred buttonはsizeではなくvisual styleで区別する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -7360,7 +7360,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep buttons in a coherent choice set the same size; make the preferred option more prominent.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -7368,7 +7368,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply style — not size — to visually distinguish the preferred choice among multiple options in the documented context.” in the documented Buttons context?
+      - Does the design satisfy “Use visual style rather than size to distinguish a preferred button among multiple options.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7380,29 +7380,29 @@
     section_path:
       - Buttons
       - Style
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 40fccc8eea5e8c1030899398e39fd382ba091ce51acd9db051b7fef941ff0847
-    evidence_paraphrase: Choose or apply style — not size — to visually distinguish the preferred choice among multiple options in the documented context.
+    evidence_paraphrase: Use visual style rather than size to distinguish a preferred button among multiple options.
   tags:
     - components
     - buttons
     - style
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply style — not size — to visually distinguish the preferred choice among multiple options in the documented context.
+  apple_native_rule: Use visual style rather than size to distinguish a preferred button among multiple options.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0004
-  title: Avoid applying a similar color to button labels and content layer backgrounds
+  title: Avoid matching button-label and content colors
   category: components
   topic: buttons
   subtopic: style
   statement:
-    en: Exclude applying a similar color to button labels and content layer backgrounds from the applicable experience.
-    ja: 該当する体験ではapplying a similar color to button labels and content layer backgroundsを避ける。
+    en: Avoid using similar colors for button labels and content-layer backgrounds.
+    ja: button labelとcontent layer backgroundに似たcolorを使うことを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -7425,7 +7425,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep button labels visually distinct from the content behind them.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -7433,7 +7433,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude applying a similar color to button labels and content layer backgrounds from the applicable experience.” in the documented Buttons context?
+      - Does the design satisfy “Avoid using similar colors for button labels and content-layer backgrounds.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7445,28 +7445,28 @@
     section_path:
       - Buttons
       - Style
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: ee7aa2b981cd8c54e37f7d46b5b9f4d055a5e7dd9333290ce7858cb4d7b1a3e1
-    evidence_paraphrase: Exclude applying a similar color to button labels and content layer backgrounds from the applicable experience.
+    evidence_paraphrase: Avoid using similar colors for button labels and content-layer backgrounds.
   tags:
     - components
     - buttons
     - style
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude applying a similar color to button labels and content layer backgrounds from the applicable experience.
+  apple_native_rule: Avoid using similar colors for button labels and content-layer backgrounds.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0005
-  title: Ensure that each button clearly communicates its purpose
+  title: Ensure every button communicates its purpose
   category: components
   topic: buttons
   subtopic: content
   statement:
-    en: Verify that that each button clearly communicates its purpose.
-    ja: that each button clearly communicates its purposeを満たしていることを確認する。
+    en: Ensure every button clearly communicates its purpose.
+    ja: 各buttonが目的を明確に伝えることを確実にする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -7490,15 +7490,16 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Use a symbol, text label, or both as supported by the target platform.
+  exceptions:
+    - macOS and visionOS can also reveal a brief explanatory tooltip after hover or gaze.
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that that each button clearly communicates its purpose.” in the documented Buttons context?
+      - Does the design satisfy “Ensure every button clearly communicates its purpose.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7510,29 +7511,29 @@
     section_path:
       - Buttons
       - Content
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 82d3a592a19f080f7d9a98300bc1c29bbd8ff767a7c5e50974847510124ec1d9
-    evidence_paraphrase: Verify that that each button clearly communicates its purpose.
+    evidence_paraphrase: Ensure every button clearly communicates its purpose.
   tags:
     - components
     - buttons
     - content
   priority_rank: 6
   status: active
-  apple_native_rule: Verify that that each button clearly communicates its purpose.
+  apple_native_rule: Ensure every button clearly communicates its purpose.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0006
-  title: Consider using text when a short label communicates more clearly than an icon
+  title: Consider text when it is clearer than an icon
   category: components
   topic: buttons
   subtopic: content
   statement:
-    en: Evaluate whether using text when a short label communicates more clearly than an icon is appropriate for the current context.
-    ja: using text when a short label communicates more clearly than an iconが現在の状況に適切か検討する。
+    en: Consider a short text label when it communicates a button's action more clearly than an icon.
+    ja: iconよりbutton actionを明確に伝える場合は短いtext labelを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -7555,7 +7556,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - An icon doesn't communicate the button's action as clearly as a few words can.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -7563,7 +7564,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether using text when a short label communicates more clearly than an icon is appropriate for the current context.” in the documented Buttons context?
+      - Does the design satisfy “Consider a short text label when it communicates a button's action more clearly than an icon.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7575,29 +7576,29 @@
     section_path:
       - Buttons
       - Content
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 4e5b231d8f94e338f45d159d9ad6080c206e76049ac3749aa1efe7f6d7d3d6ad
-    evidence_paraphrase: Evaluate whether using text when a short label communicates more clearly than an icon is appropriate for the current context.
+    evidence_paraphrase: Consider a short text label when it communicates a button's action more clearly than an icon.
   tags:
     - components
     - buttons
     - content
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether using text when a short label communicates more clearly than an icon is appropriate for the current context.
+  apple_native_rule: Consider a short text label when it communicates a button's action more clearly than an icon.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0007
-  title: Don’t assign the primary role to a button that performs a destructive action, even if that action is the
+  title: Avoid primary roles for destructive buttons
   category: components
   topic: buttons
   subtopic: role
   statement:
-    en: Exclude assign the primary role to a button that performs a destructive action, even if that action is the from the applicable experience.
-    ja: 該当する体験ではassign the primary role to a button that performs a destructive action, even if that action is theを避ける。
+    en: Avoid assigning the primary role to a destructive button, even when it is the most likely choice.
+    ja: 最も選ばれやすい場合でもdestructive buttonにprimary roleを割り当てることを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -7620,7 +7621,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Primary visual prominence can cause people to choose without reading first.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -7628,7 +7629,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude assign the primary role to a button that performs a destructive action, even if that action is the from the applicable experience.” in the documented Buttons context?
+      - Does the design satisfy “Avoid assigning the primary role to a destructive button, even when it is the most likely choice.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -7640,17 +7641,17 @@
     section_path:
       - Buttons
       - Role
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 7d77a0b0a1602ed1a68daabaadedb6dc75e13efd3bda188f2986af2a00777a61
-    evidence_paraphrase: Exclude assign the primary role to a button that performs a destructive action, even if that action is the from the applicable experience.
+    evidence_paraphrase: Avoid assigning the primary role to a destructive button, even when it is the most likely choice.
   tags:
     - components
     - buttons
     - role
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude assign the primary role to a button that performs a destructive action, even if that action is the from the applicable experience.
+  apple_native_rule: Avoid assigning the primary role to a destructive button, even when it is the most likely choice.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0008
   title: Use flexible-height macOS buttons only for tall or variable content
@@ -7698,7 +7699,7 @@
       - Platform considerations
       - macOS
       - Push buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 813f53040826318df945db3674dc0754df856ff1a1a93548e978d7a708c34f9b
     evidence_paraphrase: Use a flexible-height push button only for two-line text, tall icons, or other tall or variable-height content.
@@ -7757,7 +7758,7 @@
       - Platform considerations
       - macOS
       - Push buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: b691d5abdf7dfb9bab0cfa6565f0e38dd1bed3947f1da3f13256f907c27a859b
     evidence_paraphrase: Evaluate whether supporting spring loading is appropriate for the current context.
@@ -7816,7 +7817,7 @@
       - Platform considerations
       - macOS
       - Square buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: f3c5de7350e56842796c76f453132b76ad207b548d719bbdae0a866ed9a0e479
     evidence_paraphrase: Choose or apply square buttons in a view, not in the window frame in the documented context.
@@ -7875,7 +7876,7 @@
       - Platform considerations
       - macOS
       - Square buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: a7f09751652b52cc1dbb9b85abdf405ff8ae0eb623a52388b5eae7515984608e
     evidence_paraphrase: Favor using a symbol in a square button when the documented conditions apply.
@@ -7934,7 +7935,7 @@
       - Platform considerations
       - macOS
       - Square buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 1ba98bed7790a3098d187f55656cd8d1fbe0a6926bdf3fae9338768c61e7f6d3
     evidence_paraphrase: Exclude using labels to introduce square buttons from the applicable experience.
@@ -7993,7 +7994,7 @@
       - Platform considerations
       - macOS
       - Help buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 9c1773fad01976e83ca04d65d36ef866b41c861c603b5b43bb2768c4ce201842
     evidence_paraphrase: Choose or apply the system-provided help button to display your help documentation in the documented context.
@@ -8052,7 +8053,7 @@
       - Platform considerations
       - macOS
       - Help buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: c554706799a97bd9e51589dcb8dcd50b4acab9beb44302e3fe8446d151008916
     evidence_paraphrase: Apply the documented Buttons guidance to include no more than one help button per window.
@@ -8113,7 +8114,7 @@
       - Platform considerations
       - macOS
       - Help buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: d6d2992e38a003fe644153bb4e26f46401dfddb83be5a3ad8a08ebc6786ef882
     evidence_paraphrase: Place a macOS help button in the source-specified lower corner for the window or dialog style.
@@ -8172,7 +8173,7 @@
       - Platform considerations
       - macOS
       - Help buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 737898b4884bf5efab8aa71a3cdd4c09806d65edfdbe1bf3623fb951f12c86da
     evidence_paraphrase: Choose or apply a help button within a view, not in the window frame in the documented context.
@@ -8231,7 +8232,7 @@
       - Platform considerations
       - macOS
       - Help buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 6bb483989efd3723f1f954d401c00da40700e1198e50e1e179157b8806f03ccd
     evidence_paraphrase: Exclude displaying text that introduces a help button from the applicable experience.
@@ -8290,7 +8291,7 @@
       - Platform considerations
       - macOS
       - Image buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: be829c99ca5c64107c330386b620e5c5c443ebe18d61043266fdbcc6e7cab63b
     evidence_paraphrase: Choose or apply an image button in a view, not in the window frame in the documented context.
@@ -8350,7 +8351,7 @@
       - Platform considerations
       - macOS
       - Image buttons
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: eefa413fee8d67b029395515e8647e3f5387de1764ddc045b14de5229a9ebc3e
     evidence_paraphrase: Include about 10 pixels of padding between an image and the clickable edges of its macOS image button.
@@ -8409,7 +8410,7 @@
       - Buttons
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: ea3492354cb6b0d20d7f9ac994c036d57a75828ed6340ea89087d26c052fafa5
     evidence_paraphrase: Prefer a discernible background shape and contrasting fill for visionOS buttons that need independent visual definition.
@@ -8466,7 +8467,7 @@
       - Buttons
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: d66dfdbb71fbab9614fac186ab20b9f5355fc42c70551340b8994fd4eff4fdd1
     evidence_paraphrase: Exclude creating a custom button that uses a white background fill and black text or icons from the applicable experience.
@@ -8528,7 +8529,7 @@
       - Buttons
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: b4508ffcdfd16b2a921ae9b40720aff63e7e9f54b9e85ebdfb8ed5e336e5f865
     evidence_paraphrase: Provide enough spacing around visionOS buttons for comfortable gaze targeting and nonoverlapping hover effects.
@@ -8586,7 +8587,7 @@
       - Buttons
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: e3228cc3012a45901b462cc0e13e70d62574ce1b2e5af6645eb79a110bdc4804
     evidence_paraphrase: Use rounded rectangles for vertical stacks of text buttons and capsules for horizontal rows.
@@ -8643,7 +8644,7 @@
       - Buttons
       - Platform considerations
       - visionOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: c4ef83336be27164e118bf512a227b10352885fc66474272ce0ddba0daed5fc6
     evidence_paraphrase: Use standard visionOS controls so interactions provide the familiar audible feedback people expect.
@@ -8700,7 +8701,7 @@
       - Buttons
       - Platform considerations
       - watchOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 366a659d2bf41e290e76e69bb9dd56bc3a1460fe01c5e2dbd7277334662caf63
     evidence_paraphrase: Choose or apply a toolbar to place buttons in the corners in the documented context.
@@ -8758,7 +8759,7 @@
       - Buttons
       - Platform considerations
       - watchOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 758cc1382af4ecb60231f6660f8f8497fdfcdbb8d5861fd413085a2f9aa31622
     evidence_paraphrase: Prefer full-width buttons for primary watchOS actions.
@@ -8815,7 +8816,7 @@
       - Buttons
       - Platform considerations
       - watchOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: b2c5c1c7eee13433eb69d4d9dba8d54d508f3b94858013c23736819c3598d0c4
     evidence_paraphrase: Choose or apply toolbar buttons to provide either navigation to related areas or contextual actions for the view’s content in the documented context.
@@ -8872,7 +8873,7 @@
       - Buttons
       - Platform considerations
       - watchOS
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: c600d3c8996da21aabbbcc0de3849ba900fc83eb860c0385bfb46214870495a1
     evidence_paraphrase: Use identical heights where possible for vertically stacked one-line and two-line watchOS text buttons.
@@ -8946,16 +8947,16 @@
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
   deprecated_at: 2026-07-21T11:39:34.313Z
 - id: HIG-COMPONENTS-BUTTONS-0030
-  title: Try to associate familiar actions with familiar icons
+  title: Associate familiar actions with familiar icons
   category: components
   topic: buttons
   subtopic: content
   statement:
     en: Try to associate familiar actions with familiar icons.
-    ja: associate familiar actions with familiar iconsを試みる。
+    ja: 見慣れたactionには見慣れたiconを対応させるよう努める。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -8978,7 +8979,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use an existing or customized symbol when an icon suits the action.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -8998,7 +8999,7 @@
     section_path:
       - Buttons
       - Content
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: e4341c96d6b63bdaceee2be69335fbe46bad26ac7a62c60b3dd6dfa92e2a1781
     evidence_paraphrase: Try to associate familiar actions with familiar icons.
@@ -9011,16 +9012,16 @@
   apple_native_rule: Try to associate familiar actions with familiar icons.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BUTTONS-0031
-  title: In general, use a button that has a prominent visual style for the most likely action in a view
+  title: Emphasize the most likely action with prominent style
   category: components
   topic: buttons
   subtopic: style
   statement:
-    en: Generally, use a button that has a prominent visual style for the most likely action in a view.
-    ja: 通常はa button that has a prominent visual style for the most likely action in a viewを使う。
+    en: Use a prominent visual style for the most likely action in a view.
+    ja: view内で最も選ばれやすいactionにprominent visual styleを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -9043,7 +9044,7 @@
       - buttons
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A prominent style can apply an accent-colored background and attract attention.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
@@ -9051,7 +9052,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Generally, use a button that has a prominent visual style for the most likely action in a view.” in the documented Buttons context?
+      - Does the design satisfy “Use a prominent visual style for the most likely action in a view.” in the documented Buttons context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9063,17 +9064,533 @@
     section_path:
       - Buttons
       - Style
-    retrieved_at: 2026-07-21T11:14:40.666Z
+    retrieved_at: 2026-07-22T16:28:23Z
     source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
     source_sentence_hash: 32dce7ed037e5fd59000297a485b805ef9490573ce188813cbbe65dd39292af6
-    evidence_paraphrase: Generally, use a button that has a prominent visual style for the most likely action in a view.
+    evidence_paraphrase: Use a prominent visual style for the most likely action in a view.
   tags:
     - components
     - buttons
     - style
   priority_rank: 6
   status: active
-  apple_native_rule: Generally, use a button that has a prominent visual style for the most likely action in a view.
+  apple_native_rule: Use a prominent visual style for the most likely action in a view.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-BUTTONS-0032
+  title: Ensure sufficient space around every button
+  category: components
+  topic: buttons
+  subtopic: best-practices
+  statement:
+    en: Ensure every button has enough surrounding space for people to distinguish and activate it.
+    ja: 各buttonの周囲に識別と操作に十分なspaceを確保する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - buttons
+    modalities: []
+  conditions:
+    - Provide sufficient separation and activation space for every supported input method.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure every button has enough surrounding space for people to distinguish and activate it.” in the documented Buttons context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/buttons
+    page_title: Buttons
+    section_path:
+      - Buttons
+      - Best practices
+    retrieved_at: 2026-07-22T16:28:23Z
+    source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
+    source_sentence_hash: ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605
+    evidence_paraphrase: Ensure every button has enough surrounding space for people to distinguish and activate it.
+  tags:
+    - components
+    - buttons
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure every button has enough surrounding space for people to distinguish and activate it.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-BUTTONS-0033
+  title: Ensure a 44-point minimum button hit region
+  category: components
+  topic: buttons
+  subtopic: best-practices
+  statement:
+    en: Ensure buttons outside visionOS have a hit region of at least 44 by 44 points.
+    ja: visionOS以外のbuttonには少なくとも44×44 pointのhit regionを確保する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-watch
+    components:
+      - buttons
+    modalities:
+      - touch
+      - pointer
+      - remote-control
+  conditions:
+    - Treat 44 points as the component-level general hit-region floor.
+    - Apply stricter platform accessibility values where documented; tvOS uses at least 56 by 56 points and prefers 66 by 66 points.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure each scoped button hit region and compare it with the stricter applicable component or platform minimum.
+    manual:
+      - Can people reliably select each button with every supported input method?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/buttons
+    page_title: Buttons
+    section_path:
+      - Buttons
+      - Best practices
+    retrieved_at: 2026-07-22T16:28:23Z
+    source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
+    source_sentence_hash: ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605
+    evidence_paraphrase: Ensure buttons outside visionOS have a hit region of at least 44 by 44 points.
+  tags:
+    - components
+    - buttons
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure buttons outside visionOS have a hit region of at least 44 by 44 points.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-BUTTONS-0034
+  title: Ensure a 60-point visionOS button hit region
+  category: components
+  topic: buttons
+  subtopic: best-practices
+  statement:
+    en: Ensure visionOS buttons have a hit region of at least 60 by 60 points.
+    ja: visionOS buttonには少なくとも60×60 pointのhit regionを確保する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components:
+      - buttons
+    modalities:
+      - gaze
+  conditions:
+    - Apply the visionOS minimum for comfortable eye-based selection.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure each visionOS button hit region and verify a minimum width and height of 60 points.
+    manual:
+      - Can people comfortably look at and select each visionOS button?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/buttons
+    page_title: Buttons
+    section_path:
+      - Buttons
+      - Best practices
+    retrieved_at: 2026-07-22T16:28:23Z
+    source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
+    source_sentence_hash: ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605
+    evidence_paraphrase: Ensure visionOS buttons have a hit region of at least 60 by 60 points.
+  tags:
+    - components
+    - buttons
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure visionOS buttons have a hit region of at least 60 by 60 points.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-BUTTONS-0035
+  title: Limit prominent buttons per view
+  category: components
+  topic: buttons
+  subtopic: style
+  statement:
+    en: Keep the number of prominent buttons to one or two per view.
+    ja: viewごとのprominent buttonを1個または2個に抑える。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - buttons
+    modalities: []
+  conditions:
+    - Too many prominent choices increase cognitive load and decision time.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep the number of prominent buttons to one or two per view.” in the documented Buttons context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/buttons
+    page_title: Buttons
+    section_path:
+      - Buttons
+      - Style
+    retrieved_at: 2026-07-22T16:28:23Z
+    source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
+    source_sentence_hash: 32dce7ed037e5fd59000297a485b805ef9490573ce188813cbbe65dd39292af6
+    evidence_paraphrase: Keep the number of prominent buttons to one or two per view.
+  tags:
+    - components
+    - buttons
+    - style
+  priority_rank: 6
+  status: active
+  apple_native_rule: Keep the number of prominent buttons to one or two per view.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-BUTTONS-0036
+  title: Prefer monochromatic labels over colorful content
+  category: components
+  topic: buttons
+  subtopic: style
+  statement:
+    en: Prefer the default monochromatic button-label appearance over bright or colorful content.
+    ja: 明るくcolorfulなcontent上ではdefault monochromatic button labelを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - buttons
+    modalities: []
+  conditions:
+    - The content layer already contains bright or colorful content.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prefer the default monochromatic button-label appearance over bright or colorful content.” in the documented Buttons context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/buttons
+    page_title: Buttons
+    section_path:
+      - Buttons
+      - Style
+    retrieved_at: 2026-07-22T16:28:23Z
+    source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
+    source_sentence_hash: ee7aa2b981cd8c54e37f7d46b5b9f4d055a5e7dd9333290ce7858cb4d7b1a3e1
+    evidence_paraphrase: Prefer the default monochromatic button-label appearance over bright or colorful content.
+  tags:
+    - components
+    - buttons
+    - style
+  priority_rank: 6
+  status: active
+  apple_native_rule: Prefer the default monochromatic button-label appearance over bright or colorful content.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-BUTTONS-0037
+  title: Keep text button labels succinct
+  category: components
+  topic: buttons
+  subtopic: content
+  statement:
+    en: Use a few words that succinctly describe the button's action.
+    ja: button actionを簡潔に説明する数語のlabelを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - buttons
+    modalities: []
+  conditions:
+    - A text label communicates the action more clearly than an icon.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use a few words that succinctly describe the button's action.” in the documented Buttons context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/buttons
+    page_title: Buttons
+    section_path:
+      - Buttons
+      - Content
+    retrieved_at: 2026-07-22T16:28:23Z
+    source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
+    source_sentence_hash: 4e5b231d8f94e338f45d159d9ad6080c206e76049ac3749aa1efe7f6d7d3d6ad
+    evidence_paraphrase: Use a few words that succinctly describe the button's action.
+  tags:
+    - components
+    - buttons
+    - content
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use a few words that succinctly describe the button's action.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-BUTTONS-0038
+  title: Consider verb-led text button labels
+  category: components
+  topic: buttons
+  subtopic: content
+  statement:
+    en: For a title-style text label, consider starting with a verb that conveys the button's action.
+    ja: title styleのtext labelではbutton actionを伝えるverbから始めることを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - buttons
+    modalities: []
+  conditions:
+    - Use title-style capitalization and a verb that succinctly describes the action.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “For a title-style text label, consider starting with a verb that conveys the button's action.” in the documented Buttons context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/buttons
+    page_title: Buttons
+    section_path:
+      - Buttons
+      - Content
+    retrieved_at: 2026-07-22T16:28:23Z
+    source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
+    source_sentence_hash: 4e5b231d8f94e338f45d159d9ad6080c206e76049ac3749aa1efe7f6d7d3d6ad
+    evidence_paraphrase: For a title-style text label, consider starting with a verb that conveys the button's action.
+  tags:
+    - components
+    - buttons
+    - content
+  priority_rank: 6
+  status: active
+  apple_native_rule: For a title-style text label, consider starting with a verb that conveys the button's action.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-BUTTONS-0039
+  title: Assign the primary role to the most likely choice
+  category: components
+  topic: buttons
+  subtopic: role
+  statement:
+    en: Assign the primary role to the button people are most likely to choose.
+    ja: 最も選ばれやすいbuttonにprimary roleを割り当てる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - buttons
+    modalities: []
+  conditions:
+    - Return-key activation can confirm the choice and dismiss a temporary view automatically.
+  exceptions:
+    - Exclude destructive buttons even when they are the most likely choice.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Buttons experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるButtonsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Assign the primary role to the button people are most likely to choose.” in the documented Buttons context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/buttons
+    page_title: Buttons
+    section_path:
+      - Buttons
+      - Role
+    retrieved_at: 2026-07-22T16:28:23Z
+    source_hash: d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24
+    source_sentence_hash: e84be916d04370a372e6bd020af444a5cf1ad035247806a01db12345451dfa4a
+    evidence_paraphrase: Assign the primary role to the button people are most likely to choose.
+  tags:
+    - components
+    - buttons
+    - role
+  priority_rank: 6
+  status: active
+  apple_native_rule: Assign the primary role to the button people are most likely to choose.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0001
   title: Choose a mark type based on the information you want to communicate about the data

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T16:13:08Z",
+  "reviewed_at": "2026-07-22T16:28:23Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,37 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 307,
+  "reviewed_rule_count": 310,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-COMPONENTS-BUTTONS-0032": {
+      "title": "Ensure sufficient space around every button",
+      "statement": {"en": "Ensure every button has enough surrounding space for people to distinguish and activate it.", "ja": "各buttonの周囲に識別と操作に十分なspaceを確保する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Provide sufficient separation and activation space for every supported input method."],
+      "review_note": "Recovered MUST from the source's explicit essential and critical input-accessibility requirement."
+    },
+    "HIG-COMPONENTS-BUTTONS-0033": {
+      "title": "Ensure a 44-point minimum button hit region",
+      "statement": {"en": "Ensure buttons outside visionOS have a hit region of at least 44 by 44 points.", "ja": "visionOS以外のbuttonには少なくとも44×44 pointのhit regionを確保する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Treat 44 points as the component-level general hit-region floor.", "Apply stricter platform accessibility values where documented; tvOS uses at least 56 by 56 points and prefers 66 by 66 points."],
+      "review_note": "Recovered MUST from the explicit needs-at-least requirement, excluded the separate visionOS minimum, and preserved higher-priority platform accessibility values."
+    },
+    "HIG-COMPONENTS-BUTTONS-0034": {
+      "title": "Ensure a 60-point visionOS button hit region",
+      "statement": {"en": "Ensure visionOS buttons have a hit region of at least 60 by 60 points.", "ja": "visionOS buttonには少なくとも60×60 pointのhit regionを確保する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply the visionOS-specific minimum instead of the general 44-point minimum."],
+      "review_note": "Recovered MUST from the explicit platform-specific minimum in the needs-at-least requirement."
+    },
     "HIG-COMPONENTS-ACTIVITY-RINGS-0005": {
       "title": "Maintain required Activity ring margins",
       "statement": {"en": "Maintain the required outer margin around Activity rings.", "ja": "Activity ringsの必須outer marginを維持する。"},

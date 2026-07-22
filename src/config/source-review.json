@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T16:21:18Z",
+  "reviewed_at": "2026-07-22T16:28:23Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2835,9 +2835,147 @@
         "HIG-COMPONENTS-ACTIVITY-VIEWS-0001", "HIG-COMPONENTS-ACTIVITY-VIEWS-0002", "HIG-COMPONENTS-ACTIVITY-VIEWS-0003", "HIG-COMPONENTS-ACTIVITY-VIEWS-0004", "HIG-COMPONENTS-ACTIVITY-VIEWS-0005", "HIG-COMPONENTS-ACTIVITY-VIEWS-0006", "HIG-COMPONENTS-ACTIVITY-VIEWS-0007", "HIG-COMPONENTS-ACTIVITY-VIEWS-0008", "HIG-COMPONENTS-ACTIVITY-VIEWS-0009", "HIG-COMPONENTS-ACTIVITY-VIEWS-0010", "HIG-COMPONENTS-ACTIVITY-VIEWS-0011", "HIG-COMPONENTS-ACTIVITY-VIEWS-0012", "HIG-COMPONENTS-ACTIVITY-VIEWS-0013", "HIG-COMPONENTS-ACTIVITY-VIEWS-0014", "HIG-COMPONENTS-ACTIVITY-VIEWS-0015", "HIG-COMPONENTS-ACTIVITY-VIEWS-0016", "HIG-COMPONENTS-ACTIVITY-VIEWS-0017", "HIG-COMPONENTS-ACTIVITY-VIEWS-0018", "HIG-COMPONENTS-ACTIVITY-VIEWS-0019", "HIG-COMPONENTS-ACTIVITY-VIEWS-0020", "HIG-COMPONENTS-ACTIVITY-VIEWS-0021", "HIG-COMPONENTS-ACTIVITY-VIEWS-0022", "HIG-COMPONENTS-ACTIVITY-VIEWS-0023"
       ],
       "review_note": "Completed the page, preserved seven stable IDs, recovered sixteen atomic rules for titles, icons, extension interfaces, long-running work, notifications, and unsupported platforms, and recorded the macOS extension exception separately from activity-view availability."
+    },
+    {
+      "id": "priority-6-buttons-general-context-2026-07-22",
+      "reviewed_at": "2026-07-22T16:28:23Z",
+      "review_method": "Rendered Apple HIG Buttons best practices, style, content, and role guidance were reviewed; two repeated live renders matched the recorded main-content hash, while previously reviewed platform-specific rules were left in their original batch.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/buttons", "source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-BUTTONS-0001", "HIG-COMPONENTS-BUTTONS-0002", "HIG-COMPONENTS-BUTTONS-0003", "HIG-COMPONENTS-BUTTONS-0004", "HIG-COMPONENTS-BUTTONS-0005", "HIG-COMPONENTS-BUTTONS-0006", "HIG-COMPONENTS-BUTTONS-0007", "HIG-COMPONENTS-BUTTONS-0030", "HIG-COMPONENTS-BUTTONS-0031", "HIG-COMPONENTS-BUTTONS-0032", "HIG-COMPONENTS-BUTTONS-0033", "HIG-COMPONENTS-BUTTONS-0034", "HIG-COMPONENTS-BUTTONS-0035", "HIG-COMPONENTS-BUTTONS-0036", "HIG-COMPONENTS-BUTTONS-0037", "HIG-COMPONENTS-BUTTONS-0038", "HIG-COMPONENTS-BUTTONS-0039"
+      ],
+      "review_note": "Completed all general Buttons sections, preserved nine active IDs, recovered eight atomic rules including three input-accessibility MUST requirements, and kept the earlier macOS, visionOS, and watchOS review batch unchanged."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-BUTTONS-0001": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605", "section_path": ["Buttons", "Best practices"]},
+      "title": "Make buttons easy to recognize and use",
+      "statement": {"en": "Make buttons easy for people to recognize, select, and activate.", "ja": "buttonを認識・選択・操作しやすくする。"},
+      "conditions": ["Support every input method available on the target platform."],
+      "review_note": "Replaced the generic generated statement and separated concrete spacing and hit-region requirements."
+    },
+    "HIG-COMPONENTS-BUTTONS-0002": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "e3731ce15f96efe80aef3066be853f78603934c530165cbe655d08fa39ab8e2c", "section_path": ["Buttons", "Best practices"]},
+      "title": "Always provide a custom-button press state",
+      "statement": {"en": "Always provide a visible press state for every custom button.", "ja": "すべてのcustom buttonにvisible press stateを常に提供する。"},
+      "conditions": ["The press state confirms that the button accepted input."],
+      "review_note": "Retained the unqualified Always-based MUST and recorded its responsiveness purpose."
+    },
+    "HIG-COMPONENTS-BUTTONS-0003": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "40fccc8eea5e8c1030899398e39fd382ba091ce51acd9db051b7fef941ff0847", "section_path": ["Buttons", "Style"]},
+      "title": "Distinguish preferred choices by style, not size",
+      "statement": {"en": "Use visual style rather than size to distinguish a preferred button among multiple options.", "ja": "複数option内のpreferred buttonはsizeではなくvisual styleで区別する。"},
+      "conditions": ["Keep buttons in a coherent choice set the same size; make the preferred option more prominent."],
+      "review_note": "Restored the same-size set relationship and prominent-versus-less-prominent styling technique."
+    },
+    "HIG-COMPONENTS-BUTTONS-0004": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "ee7aa2b981cd8c54e37f7d46b5b9f4d055a5e7dd9333290ce7858cb4d7b1a3e1", "section_path": ["Buttons", "Style"]},
+      "title": "Avoid matching button-label and content colors",
+      "statement": {"en": "Avoid using similar colors for button labels and content-layer backgrounds.", "ja": "button labelとcontent layer backgroundに似たcolorを使うことを避ける。"},
+      "conditions": ["Keep button labels visually distinct from the content behind them."],
+      "review_note": "Repaired the generated wording and recorded the content-layer contrast boundary."
+    },
+    "HIG-COMPONENTS-BUTTONS-0005": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "82d3a592a19f080f7d9a98300bc1c29bbd8ff767a7c5e50974847510124ec1d9", "section_path": ["Buttons", "Content"]},
+      "title": "Ensure every button communicates its purpose",
+      "statement": {"en": "Ensure every button clearly communicates its purpose.", "ja": "各buttonが目的を明確に伝えることを確実にする。"},
+      "conditions": ["Use a symbol, text label, or both as supported by the target platform."],
+      "exceptions": ["macOS and visionOS can also reveal a brief explanatory tooltip after hover or gaze."],
+      "review_note": "Retained the explicit Ensure-based MUST and recorded platform-supported content forms."
+    },
+    "HIG-COMPONENTS-BUTTONS-0006": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "4e5b231d8f94e338f45d159d9ad6080c206e76049ac3749aa1efe7f6d7d3d6ad", "section_path": ["Buttons", "Content"]},
+      "title": "Consider text when it is clearer than an icon",
+      "statement": {"en": "Consider a short text label when it communicates a button's action more clearly than an icon.", "ja": "iconよりbutton actionを明確に伝える場合は短いtext labelを検討する。"},
+      "conditions": ["An icon doesn't communicate the button's action as clearly as a few words can."],
+      "review_note": "Retained MAY from Consider and narrowed the choice to relative communication clarity."
+    },
+    "HIG-COMPONENTS-BUTTONS-0007": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "7d77a0b0a1602ed1a68daabaadedb6dc75e13efd3bda188f2986af2a00777a61", "section_path": ["Buttons", "Role"]},
+      "title": "Avoid primary roles for destructive buttons",
+      "statement": {"en": "Avoid assigning the primary role to a destructive button, even when it is the most likely choice.", "ja": "最も選ばれやすい場合でもdestructive buttonにprimary roleを割り当てることを避ける。"},
+      "conditions": ["Primary visual prominence can cause people to choose without reading first."],
+      "review_note": "Repaired the truncated rule and retained AVOID from the direct Don't directive."
+    },
+    "HIG-COMPONENTS-BUTTONS-0030": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "e4341c96d6b63bdaceee2be69335fbe46bad26ac7a62c60b3dd6dfa92e2a1781", "section_path": ["Buttons", "Content"]},
+      "title": "Associate familiar actions with familiar icons",
+      "statement": {"en": "Try to associate familiar actions with familiar icons.", "ja": "見慣れたactionには見慣れたiconを対応させるよう努める。"},
+      "conditions": ["Use an existing or customized symbol when an icon suits the action."],
+      "review_note": "Retained SHOULD from Try and recorded the standard-symbol path."
+    },
+    "HIG-COMPONENTS-BUTTONS-0031": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "32dce7ed037e5fd59000297a485b805ef9490573ce188813cbbe65dd39292af6", "section_path": ["Buttons", "Style"]},
+      "title": "Emphasize the most likely action with prominent style",
+      "statement": {"en": "Use a prominent visual style for the most likely action in a view.", "ja": "view内で最も選ばれやすいactionにprominent visual styleを使う。"},
+      "conditions": ["A prominent style can apply an accent-colored background and attract attention."],
+      "review_note": "Replaced the long title and separated the one-or-two prominent-button limit."
+    },
+    "HIG-COMPONENTS-BUTTONS-0032": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605", "section_path": ["Buttons", "Best practices"]},
+      "title": "Ensure sufficient space around every button",
+      "statement": {"en": "Ensure every button has enough surrounding space for people to distinguish and activate it.", "ja": "各buttonの周囲に識別と操作に十分なspaceを確保する。"},
+      "conditions": ["Provide sufficient separation and activation space for every supported input method."],
+      "review_note": "Recovered the explicit essential and critical input-accessibility requirement."
+    },
+    "HIG-COMPONENTS-BUTTONS-0033": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605", "section_path": ["Buttons", "Best practices"]},
+      "title": "Ensure a 44-point minimum button hit region",
+      "statement": {"en": "Ensure buttons outside visionOS have a hit region of at least 44 by 44 points.", "ja": "visionOS以外のbuttonには少なくとも44×44 pointのhit regionを確保する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-watch"], "components": ["buttons"], "modalities": ["touch", "pointer", "remote-control"]},
+      "conditions": ["Treat 44 points as the component-level general hit-region floor.", "Apply stricter platform accessibility values where documented; tvOS uses at least 56 by 56 points and prefers 66 by 66 points."],
+      "checks": {"automated": ["Measure each scoped button hit region and compare it with the stricter applicable component or platform minimum."], "manual": ["Can people reliably select each button with every supported input method?"]},
+      "testability": "hybrid",
+      "review_note": "Recovered the explicit 44-point minimum, separated visionOS, and documented the higher-priority tvOS accessibility floor."
+    },
+    "HIG-COMPONENTS-BUTTONS-0034": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605", "section_path": ["Buttons", "Best practices"]},
+      "title": "Ensure a 60-point visionOS button hit region",
+      "statement": {"en": "Ensure visionOS buttons have a hit region of at least 60 by 60 points.", "ja": "visionOS buttonには少なくとも60×60 pointのhit regionを確保する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": ["buttons"], "modalities": ["gaze"]},
+      "conditions": ["Apply the visionOS minimum for comfortable eye-based selection."],
+      "checks": {"automated": ["Measure each visionOS button hit region and verify a minimum width and height of 60 points."], "manual": ["Can people comfortably look at and select each visionOS button?"]},
+      "testability": "hybrid",
+      "review_note": "Recovered and scoped the explicit 60-point visionOS minimum."
+    },
+    "HIG-COMPONENTS-BUTTONS-0035": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "32dce7ed037e5fd59000297a485b805ef9490573ce188813cbbe65dd39292af6", "section_path": ["Buttons", "Style"]},
+      "title": "Limit prominent buttons per view",
+      "statement": {"en": "Keep the number of prominent buttons to one or two per view.", "ja": "viewごとのprominent buttonを1個または2個に抑える。"},
+      "conditions": ["Too many prominent choices increase cognitive load and decision time."],
+      "review_note": "Recovered the explicit one-or-two limit and its cognitive-load rationale."
+    },
+    "HIG-COMPONENTS-BUTTONS-0036": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "ee7aa2b981cd8c54e37f7d46b5b9f4d055a5e7dd9333290ce7858cb4d7b1a3e1", "section_path": ["Buttons", "Style"]},
+      "title": "Prefer monochromatic labels over colorful content",
+      "statement": {"en": "Prefer the default monochromatic button-label appearance over bright or colorful content.", "ja": "明るくcolorfulなcontent上ではdefault monochromatic button labelを優先する。"},
+      "conditions": ["The content layer already contains bright or colorful content."],
+      "review_note": "Recovered the conditional monochromatic-label preference from supporting prose."
+    },
+    "HIG-COMPONENTS-BUTTONS-0037": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "4e5b231d8f94e338f45d159d9ad6080c206e76049ac3749aa1efe7f6d7d3d6ad", "section_path": ["Buttons", "Content"]},
+      "title": "Keep text button labels succinct",
+      "statement": {"en": "Use a few words that succinctly describe the button's action.", "ja": "button actionを簡潔に説明する数語のlabelを使う。"},
+      "conditions": ["A text label communicates the action more clearly than an icon."],
+      "review_note": "Recovered the label-length and action-description guidance."
+    },
+    "HIG-COMPONENTS-BUTTONS-0038": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "4e5b231d8f94e338f45d159d9ad6080c206e76049ac3749aa1efe7f6d7d3d6ad", "section_path": ["Buttons", "Content"]},
+      "title": "Consider verb-led text button labels",
+      "statement": {"en": "For a title-style text label, consider starting with a verb that conveys the button's action.", "ja": "title styleのtext labelではbutton actionを伝えるverbから始めることを検討する。"},
+      "conditions": ["Use title-style capitalization and a verb that succinctly describes the action."],
+      "review_note": "Recovered the conditional verb-led label guidance and retained MAY."
+    },
+    "HIG-COMPONENTS-BUTTONS-0039": {
+      "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "e84be916d04370a372e6bd020af444a5cf1ad035247806a01db12345451dfa4a", "section_path": ["Buttons", "Role"]},
+      "title": "Assign the primary role to the most likely choice",
+      "statement": {"en": "Assign the primary role to the button people are most likely to choose.", "ja": "最も選ばれやすいbuttonにprimary roleを割り当てる。"},
+      "conditions": ["Return-key activation can confirm the choice and dismiss a temporary view automatically."],
+      "exceptions": ["Exclude destructive buttons even when they are the most likely choice."],
+      "review_note": "Recovered the omitted positive primary-role guidance and preserved the destructive-button exception."
+    },
     "HIG-COMPONENTS-ACTIVITY-VIEWS-0001": {
       "source": {"source_hash": "0e868c29a12375dbff3df5aa7f7acb42fc0dcb57237d9ed032dcf89fe1d238c9", "source_sentence_hash": "8752597d8883edd3c0901d7a7e3d2b5783e7cf4f61a1e41b90a5400a20bde600", "section_path": ["Activity views", "Best practices"]},
       "title": "Avoid duplicating common activity-view actions",
