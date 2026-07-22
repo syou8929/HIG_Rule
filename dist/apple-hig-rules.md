@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T17:28:45.412Z. 2822 active rules; 4 deprecated rules.
+Generated 2026-07-22T17:33:24.803Z. 2826 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1581,13 +1581,17 @@ Generated 2026-07-22T17:28:45.412Z. 2822 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-PROGRESS-INDICATORS-0020 · AVOID · high** — Avoid using a refresh-control title to explain how to perform a refresh. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 ### pull-down-buttons
 
-- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001 · SHOULD · low** — Choose or apply a pull-down button to present commands or items that are directly related to the button’s action in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
-- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002 · AVOID · low** — Exclude putting all of a view’s actions in one pull-down button from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
-- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003 · SHOULD · low** — Present a succinct menu title only if it adds meaning in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
-- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004 · SHOULD · low** — Preserve people’s ability to know when a pull-down button’s menu item is destructive, and ask them to confirm their intent. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
-- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005 · SHOULD · low** — Apply the documented Pull-down buttons guidance to include an interface icon with a menu item when it provides value. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001 · SHOULD · high** — Use a pull-down button to present commands or items directly related to the button's action. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002 · AVOID · high** — Avoid putting all of a view's actions in one pull-down button. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003 · SHOULD · high** — Display a succinct pull-down menu title only when it adds meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004 · SHOULD · high** — Identify pull-down menu items that perform potentially destructive actions. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005 · SHOULD · high** — Include an interface icon with a pull-down menu item only when it adds value or clarifies meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006 · MAY · high** — Consider a More pull-down button for items that don't need prominence. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0007 · AVOID · high** — Avoid using pull-down buttons on tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0008 · SHOULD · high** — Use a pop-up button instead of a pull-down button for mutually exclusive choices that aren't commands. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0009 · SHOULD · high** — Balance the length of a pull-down menu with ease of use. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0010 · SHOULD · high** — Ask people to confirm their intent after choosing a destructive pull-down menu action. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- **HIG-COMPONENTS-PULL-DOWN-BUTTONS-0011 · MAY · high** — Consider using SF Symbols for pull-down menu item icons. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 ### rating-indicators
 
 - **HIG-COMPONENTS-RATING-INDICATORS-0001 · SHOULD · high** — Let people change an individual item’s ranking inline without opening a separate editing screen. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))

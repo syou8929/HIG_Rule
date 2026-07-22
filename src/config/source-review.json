@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T17:23:50Z",
+  "reviewed_at": "2026-07-22T17:29:53Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2912,6 +2912,17 @@
         "HIG-COMPONENTS-PROGRESS-INDICATORS-0001", "HIG-COMPONENTS-PROGRESS-INDICATORS-0002", "HIG-COMPONENTS-PROGRESS-INDICATORS-0003", "HIG-COMPONENTS-PROGRESS-INDICATORS-0004", "HIG-COMPONENTS-PROGRESS-INDICATORS-0005", "HIG-COMPONENTS-PROGRESS-INDICATORS-0008", "HIG-COMPONENTS-PROGRESS-INDICATORS-0009", "HIG-COMPONENTS-PROGRESS-INDICATORS-0010", "HIG-COMPONENTS-PROGRESS-INDICATORS-0011", "HIG-COMPONENTS-PROGRESS-INDICATORS-0012", "HIG-COMPONENTS-PROGRESS-INDICATORS-0013", "HIG-COMPONENTS-PROGRESS-INDICATORS-0014", "HIG-COMPONENTS-PROGRESS-INDICATORS-0015", "HIG-COMPONENTS-PROGRESS-INDICATORS-0016", "HIG-COMPONENTS-PROGRESS-INDICATORS-0017", "HIG-COMPONENTS-PROGRESS-INDICATORS-0018", "HIG-COMPONENTS-PROGRESS-INDICATORS-0019", "HIG-COMPONENTS-PROGRESS-INDICATORS-0020"
       ],
       "review_note": "Completed the page, preserved five stable general IDs, recovered thirteen atomic rules for transient display, determinate and indeterminate selection, stall feedback, descriptions, halting, automatic refreshes, and refresh-control titles, and retained two previously reviewed macOS IDs unchanged."
+    },
+    {
+      "id": "priority-6-pull-down-buttons-complete-context-2026-07-22",
+      "reviewed_at": "2026-07-22T17:29:53Z",
+      "review_method": "Rendered Apple HIG Pull-down buttons best practices, menu-length guidance, destructive-action behavior, and all platform considerations were reviewed; two repeated live renders matched the recorded main-content hash, while previously reviewed platform rules remained in their original batch.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons", "source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0008", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0009", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0010", "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0011"
+      ],
+      "review_note": "Completed the page, preserved five stable general IDs, recovered four atomic rules for mutually exclusive choices, menu length, destructive confirmation, and SF Symbols, split destructive identification from confirmation, and retained two previously reviewed platform IDs unchanged."
     }
   ],
   "rules": {
@@ -4664,6 +4675,41 @@
       "conditions": ["A sidebar provides secondary navigation within a tab."],
       "review_note": "Recovered the conditional MUST from the explicit be-sure-to-prevent directive."
     },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "1c8d60ebb4b299a2aba627f1c05e6a3ad790ddcbebf6f4699b754db04e078f85", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Use pull-down buttons for directly related commands or items",
+      "statement": {"en": "Use a pull-down button to present commands or items directly related to the button's action.", "ja": "buttonのactionに直接関連するcommandまたはitemを示すためにpull-down buttonを使う。"},
+      "conditions": ["Use the menu to clarify the action's target or customize its behavior without adding more buttons."],
+      "review_note": "Retained SHOULD and recorded the target-clarification and behavior-customization purposes."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "1fbf6e5c733a127559867b2e7fb1c4ab5ab1fb877766480194fed4c508a93963", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Avoid hiding all view actions in one pull-down button",
+      "statement": {"en": "Avoid putting all of a view's actions in one pull-down button.", "ja": "viewのすべてのactionを1つのpull-down buttonに入れない。"},
+      "conditions": ["Keep primary actions directly discoverable instead of requiring people to open the menu first."],
+      "review_note": "Retained AVOID and recorded the primary-action discoverability requirement."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "6d1029edf5bdb8437e285d100bb5fb7e3cf061d26ed36a478ee4be06d6e82e77", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Display a succinct pull-down menu title only when meaningful",
+      "statement": {"en": "Display a succinct pull-down menu title only when it adds meaning.", "ja": "意味を加える場合に限り、簡潔なpull-down menu titleを表示する。"},
+      "conditions": ["The button content and descriptive menu items usually provide enough context without a title."],
+      "review_note": "Retained the conditional SHOULD and recorded why a title is normally unnecessary."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "8e67061593d50153d23492a418b84b2f4a31f4c2fcc5b80b16cf56b85d374e6f", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Identify destructive pull-down menu items",
+      "statement": {"en": "Identify pull-down menu items that perform potentially destructive actions.", "ja": "破壊的なactionを実行する可能性があるpull-down menu itemを明示する。"},
+      "conditions": ["The menu uses red text for items identified as potentially destructive."],
+      "review_note": "Kept destructive identification in the stable rule and separated confirmation into rule 0010."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "ef890fe60dd4880a1b1667bc7029b0ce6e37aaa60092bcd94a7e4fc7e489ce9f", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Include a menu-item icon only when it adds value",
+      "statement": {"en": "Include an interface icon with a pull-down menu item only when it adds value or clarifies meaning.", "ja": "価値を加えるか意味を明確にする場合に限り、pull-down menu itemにinterface iconを含める。"},
+      "conditions": ["Display the icon or image after the item's label."],
+      "review_note": "Retained the conditional SHOULD and recorded the meaning and placement constraints."
+    },
     "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006": {
       "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "90b2fad248c72dda9ce7c538d9e6c1277314d0534314866ed3e563585d16f259", "section_path": ["Pull-down buttons", "Platform considerations", "iOS, iPadOS"]},
       "title": "Consider a More pull-down button for nonprominent items",
@@ -4675,10 +4721,41 @@
     "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0007": {
       "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "ac4521f7996b84e151f943fd0ecb42f777d6b4d6297601c14e1e849593cb7298", "section_path": ["Pull-down buttons", "Platform considerations"]},
       "statement": {"en": "Avoid using pull-down buttons on tvOS or watchOS.", "ja": "tvOSまたはwatchOSでpull-down buttonを使わない。"},
-      "normative_level": "AVOID",
+      "normative_level": "AVOID", "priority_rank": 4,
       "scope": {"portability": "apple-component-specific", "platforms": ["tvos", "watchos"], "devices": ["apple-tv", "apple-watch"], "components": ["pull-down-buttons"], "modalities": []},
       "conditions": ["Pull-down buttons have no additional considerations for macOS or visionOS."],
       "review_note": "Recorded the descriptive tvOS and watchOS limitation at AVOID rather than MUST_NOT."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0008": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "cd6ba314a254d9106f17ed463ddea3b8890c48c83693147d7869fa216f192398", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Use a pop-up button for mutually exclusive noncommand choices",
+      "statement": {"en": "Use a pop-up button instead of a pull-down button for mutually exclusive choices that aren't commands.", "ja": "commandではない排他的な選択肢にはpull-down buttonではなくpop-up buttonを使う。"},
+      "normative_level": "SHOULD",
+      "review_note": "Recovered the component-selection alternative for mutually exclusive noncommand choices."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0009": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "8e9ccd80c412fd54d792e885af5303db4c52cb7f991fb65f75d5dc029690c201", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Balance pull-down menu length with ease of use",
+      "statement": {"en": "Balance the length of a pull-down menu with ease of use.", "ja": "pull-down menuの長さと使いやすさのバランスを取る。"},
+      "normative_level": "SHOULD",
+      "conditions": ["A minimum of three items can make opening the menu feel worthwhile.", "For only one or two items, consider buttons for actions or toggles and switches for selections.", "Avoid so many items that finding a specific one becomes slow."],
+      "review_note": "Recovered the menu-length rule and preserved the minimum-three heuristic, small-menu alternatives, and long-menu cost."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0010": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "8e67061593d50153d23492a418b84b2f4a31f4c2fcc5b80b16cf56b85d374e6f", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Ask people to confirm destructive pull-down menu actions",
+      "statement": {"en": "Ask people to confirm their intent after choosing a destructive pull-down menu action.", "ja": "破壊的なpull-down menu actionを選んだ後に、利用者へ意図の確認を求める。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The system presents an action sheet in iOS or a popover in iPadOS so people can confirm or cancel."],
+      "review_note": "Recovered confirmation as an atomic rule separate from destructive-item identification."
+    },
+    "HIG-COMPONENTS-PULL-DOWN-BUTTONS-0011": {
+      "source": {"source_hash": "2a9df73d8156c18db9432bca6247f0c68f2016b76fb7b293b0c2c4ab5d8a3735", "source_sentence_hash": "ef890fe60dd4880a1b1667bc7029b0ce6e37aaa60092bcd94a7e4fc7e489ce9f", "section_path": ["Pull-down buttons", "Best practices"]},
+      "title": "Consider SF Symbols for pull-down menu item icons",
+      "statement": {"en": "Consider using SF Symbols for pull-down menu item icons.", "ja": "pull-down menu itemのiconにSF Symbolsを使うことを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["SF Symbols can provide familiar imagery that remains aligned with text at every scale."],
+      "review_note": "Recovered the optional SF Symbols path and its familiarity and alignment benefits."
     },
     "HIG-COMPONENTS-POP-UP-BUTTONS-0008": {
       "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "71848622b318ebcb01ec3aa8151e69f4d9ba3730139191bde8112be829eb5a65", "section_path": ["Pop-up buttons", "Platform considerations", "iPadOS"]},

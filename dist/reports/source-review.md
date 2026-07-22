@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2032
-- Reviewed batches: 134
+- Reviewed rules: 2041
+- Reviewed batches: 135
 - Official source only: yes
-- Reviewed at: 2026-07-22T17:23:50Z
+- Reviewed at: 2026-07-22T17:29:53Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -534,8 +534,17 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0018 · high — Recovered the iOS and iPadOS automatic-update expectation and its manual-refresh complement. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0019 · high — Recovered the conditional iOS and iPadOS title guidance and its content-value test. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0020 · high — Recovered the title-content restriction separately from the optional decision to show a title. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001 · high — Retained SHOULD and recorded the target-clarification and behavior-customization purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002 · high — Retained AVOID and recorded the primary-action discoverability requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003 · high — Retained the conditional SHOULD and recorded why a title is normally unnecessary. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004 · high — Kept destructive identification in the stable rule and separated confirmation into rule 0010. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005 · high — Retained the conditional SHOULD and recorded the meaning and placement constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006 · high — Restored the truncated recommendation and recorded both sides of the documented tradeoff. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0007 · high — Recorded the descriptive tvOS and watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0008 · high — Recovered the component-selection alternative for mutually exclusive noncommand choices. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0009 · high — Recovered the menu-length rule and preserved the minimum-three heuristic, small-menu alternatives, and long-menu cost. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0010 · high — Recovered confirmation as an atomic rule separate from destructive-item identification. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
+- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0011 · high — Recovered the optional SF Symbols path and its familiarity and alignment benefits. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))
 - HIG-COMPONENTS-RATING-INDICATORS-0001 · high — Replaced the vague generated wording with the source-supported inline editing behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 · high — Recovered the conditional Make sure directive and retained its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-SCROLL-VIEWS-0001 · high — Retained the general input requirement and separated custom-indicator elasticity. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))

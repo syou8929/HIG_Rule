@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2822
+- Active atomic rules: 2826
 - Pages without rules: 16
-- Low-confidence rules: 734
-- Rules requiring human review: 734
+- Low-confidence rules: 729
+- Rules requiring human review: 729
 - Reference notes: 904
 
 ## Rules by category
 
-- components: 975
+- components: 979
 - foundations: 346
 - getting-started: 100
 - inputs: 245
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 394
-- MAY: 336
+- MAY: 337
 - MUST: 299
 - MUST_NOT: 33
-- SHOULD: 1760
+- SHOULD: 1763
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1868
-- ipados: 1840
-- macos: 1511
+- ios: 1872
+- ipados: 1844
+- macos: 1515
 - tvos: 1179
-- visionos: 1559
+- visionos: 1563
 - watchos: 1261
 
 ## Rules by testability
 
 - hybrid: 80
-- manual: 2742
+- manual: 2746
 
 ## Blocked pages
 
@@ -109,11 +109,6 @@ None.
 - HIG-COMPONENTS-POP-UP-BUTTONS-0005
 - HIG-COMPONENTS-POP-UP-BUTTONS-0006
 - HIG-COMPONENTS-POP-UP-BUTTONS-0007
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
@@ -846,11 +841,6 @@ None.
 - HIG-COMPONENTS-POP-UP-BUTTONS-0005
 - HIG-COMPONENTS-POP-UP-BUTTONS-0006
 - HIG-COMPONENTS-POP-UP-BUTTONS-0007
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0001
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0002
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0003
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0004
-- HIG-COMPONENTS-PULL-DOWN-BUTTONS-0005
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
