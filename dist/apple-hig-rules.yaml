@@ -16613,11 +16613,11 @@
   topic: edit-menus
   subtopic: best-practices
   statement:
-    en: Favor the system-provided edit menu when the documented conditions apply.
-    ja: 該当条件ではthe system-provided edit menuを優先する。
+    en: Prefer the system-provided edit menu for standard editing commands.
+    ja: 標準editing commandにはsystem-provided edit menuを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -16636,7 +16636,7 @@
       - edit-menus
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Avoid recreating the same standard commands in a custom menu because duplication can confuse people.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
@@ -16644,7 +16644,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor the system-provided edit menu when the documented conditions apply.” in the documented Edit menus context?
+      - Does the design satisfy “Prefer the system-provided edit menu for standard editing commands.” in the documented Edit menus context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16656,29 +16656,29 @@
     section_path:
       - Edit menus
       - Best practices
-    retrieved_at: 2026-07-21T11:14:50.369Z
-    source_hash: e6c1e048f99f942ff610538203f146e91b799658f79391b12f864de73343af4e
-    source_sentence_hash: 0922061ae479ca380efe4d1aa1e088beca862da19b7bb42893d0e25692a33076
-    evidence_paraphrase: Favor the system-provided edit menu when the documented conditions apply.
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: 38396d999b13b926d0ca91b232ceff1d2b0ac32e7be67baa671542b71fd096a0
+    evidence_paraphrase: Prefer the system-provided edit menu for standard editing commands.
   tags:
     - components
     - edit-menus
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Favor the system-provided edit menu when the documented conditions apply.
+  apple_native_rule: Prefer the system-provided edit menu for standard editing commands.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-EDIT-MENUS-0002
-  title: Let people reveal an edit menu using the system-defined interactions they already know
+  title: Use familiar system interactions to reveal edit menus
   category: components
   topic: edit-menus
   subtopic: best-practices
   statement:
-    en: Preserve people’s ability to reveal an edit menu using the system-defined interactions they already know.
-    ja: 利用者がreveal an edit menu using the system-defined interactions they already knowできる状態を保つ。
+    en: Let people reveal edit menus using the familiar system-defined interactions for each platform.
+    ja: 各platformで慣れたsystem-defined interactionを使ってedit menuを表示できるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -16695,9 +16695,13 @@
       - apple-vision-pro
     components:
       - edit-menus
-    modalities: []
+    modalities:
+      - touch
+      - pointer
+      - keyboard
+      - gesture
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Support the applicable touch-and-hold, pinch-and-hold, and secondary-click conventions instead of introducing a custom interaction for a standard task.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
@@ -16705,7 +16709,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Preserve people’s ability to reveal an edit menu using the system-defined interactions they already know.” in the documented Edit menus context?
+      - Does the design satisfy “Let people reveal edit menus using the familiar system-defined interactions for each platform.” in the documented Edit menus context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16717,29 +16721,29 @@
     section_path:
       - Edit menus
       - Best practices
-    retrieved_at: 2026-07-21T11:14:50.369Z
-    source_hash: e6c1e048f99f942ff610538203f146e91b799658f79391b12f864de73343af4e
-    source_sentence_hash: 72e5c5d4c35dfaf67f15bfcec292b3c4515d45cb1e43a81989b6c74f319c8d4d
-    evidence_paraphrase: Preserve people’s ability to reveal an edit menu using the system-defined interactions they already know.
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: c2585035b56f7d3b406bb0888992c373b8ee3d0de159c34aee3fb3ca123efc0b
+    evidence_paraphrase: Let people reveal edit menus using the familiar system-defined interactions for each platform.
   tags:
     - components
     - edit-menus
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Preserve people’s ability to reveal an edit menu using the system-defined interactions they already know.
+  apple_native_rule: Let people reveal edit menus using the familiar system-defined interactions for each platform.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-EDIT-MENUS-0003
-  title: Offer commands that are relevant in the current context, removing or dimming commands that don’t apply
+  title: Keep edit-menu commands relevant to the current state
   category: components
   topic: edit-menus
   subtopic: best-practices
   statement:
-    en: Make commands that are relevant in the current context, removing or dimming commands that don’t apply available when applicable.
-    ja: 必要な場合にcommands that are relevant in the current context, removing or dimming commands that don’t applyを利用可能にする。
+    en: Show edit-menu commands relevant to the current state, removing or dimming commands that don't apply.
+    ja: 現在のstateに関連するedit-menu commandを表示し、適用できないcommandは削除またはdim表示する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -16758,7 +16762,8 @@
       - edit-menus
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - When nothing is selected, omit or disable commands such as Copy or Cut that require a selection.
+    - When there is nothing to paste, omit or disable Paste.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
@@ -16766,7 +16771,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make commands that are relevant in the current context, removing or dimming commands that don’t apply available when applicable.” in the documented Edit menus context?
+      - Does the design satisfy “Show edit-menu commands relevant to the current state, removing or dimming commands that don't apply.” in the documented Edit menus context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16778,17 +16783,17 @@
     section_path:
       - Edit menus
       - Best practices
-    retrieved_at: 2026-07-21T11:14:50.369Z
-    source_hash: e6c1e048f99f942ff610538203f146e91b799658f79391b12f864de73343af4e
-    source_sentence_hash: 5b9c56c8964161e0fb9a32b7d9c93a5b98bea9da74f0a04501fb6973e2cf5849
-    evidence_paraphrase: Make commands that are relevant in the current context, removing or dimming commands that don’t apply available when applicable.
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: a6a86dc42bb3499166608e4e530c4193bc62e15052c61011e58bb0868dc5f752
+    evidence_paraphrase: Show edit-menu commands relevant to the current state, removing or dimming commands that don't apply.
   tags:
     - components
     - edit-menus
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Make commands that are relevant in the current context, removing or dimming commands that don’t apply available when applicable.
+  apple_native_rule: Show edit-menu commands relevant to the current state, removing or dimming commands that don't apply.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-EDIT-MENUS-0004
   title: Support undo and redo when possible
@@ -16796,11 +16801,11 @@
   topic: edit-menus
   subtopic: best-practices
   statement:
-    en: Ensure the experience accommodates undo and redo when possible.
-    ja: undo and redo when possibleを利用できる設計にする。
+    en: Support undo and redo for edit-menu actions when possible.
+    ja: 可能な場合はedit-menu actionのundoとredoをsupportする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -16819,7 +16824,7 @@
       - edit-menus
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Because edit-menu actions don't require confirmation, provide recovery for changes where the app can restore prior state.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
@@ -16827,7 +16832,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Ensure the experience accommodates undo and redo when possible.” in the documented Edit menus context?
+      - Does the design satisfy “Support undo and redo for edit-menu actions when possible.” in the documented Edit menus context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16839,29 +16844,29 @@
     section_path:
       - Edit menus
       - Best practices
-    retrieved_at: 2026-07-21T11:14:50.369Z
-    source_hash: e6c1e048f99f942ff610538203f146e91b799658f79391b12f864de73343af4e
-    source_sentence_hash: 18535710e33decdd1e8c38692356f5fd7d2d84d815f5a3717155e004e9e90dfb
-    evidence_paraphrase: Ensure the experience accommodates undo and redo when possible.
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: c09d479891546102473ca33cdfae36255d2468e118ffff0932c60482901eaa4d
+    evidence_paraphrase: Support undo and redo for edit-menu actions when possible.
   tags:
     - components
     - edit-menus
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Ensure the experience accommodates undo and redo when possible.
+  apple_native_rule: Support undo and redo for edit-menu actions when possible.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-EDIT-MENUS-0005
-  title: Create short labels for custom commands
+  title: Keep custom-command labels short
   category: components
   topic: edit-menus
   subtopic: content
   statement:
-    en: Apply the documented Edit menus guidance to create short labels for custom commands.
-    ja: 「Edit menus」において「Create short labels for custom commands」の指針を適用する。
+    en: Use short labels for custom edit-menu commands.
+    ja: custom edit-menu commandには短いlabelを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -16880,7 +16885,7 @@
       - edit-menus
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep the label concise while the separate action-wording rule preserves clarity.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
@@ -16888,7 +16893,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Edit menus guidance to create short labels for custom commands.” in the documented Edit menus context?
+      - Does the design satisfy “Use short labels for custom edit-menu commands.” in the documented Edit menus context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16900,28 +16905,28 @@
     section_path:
       - Edit menus
       - Content
-    retrieved_at: 2026-07-21T11:14:50.369Z
-    source_hash: e6c1e048f99f942ff610538203f146e91b799658f79391b12f864de73343af4e
-    source_sentence_hash: 814f7ebcc7b6efa8b825534a0195ed9e7c7c2c8d1ddba09b6a74d3ae8d716c8d
-    evidence_paraphrase: Apply the documented Edit menus guidance to create short labels for custom commands.
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: 883b306cf7708346d6b36dc40b188dd772d0679c66d66a87c27318fef15d48dc
+    evidence_paraphrase: Use short labels for custom edit-menu commands.
   tags:
     - components
     - edit-menus
     - content
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Edit menus guidance to create short labels for custom commands.
+  apple_native_rule: Use short labels for custom edit-menu commands.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-EDIT-MENUS-0006
-  title: Ensure your edit menu works well in both styles
+  title: Ensure edit menus work in both iOS and iPadOS styles
   category: components
   topic: edit-menus
   subtopic: ios-ipados
   statement:
-    en: Verify that your edit menu works well in both styles.
-    ja: your edit menu works well in both stylesを満たしていることを確認する。
+    en: Ensure edit menus work in both the compact horizontal and vertical menu styles on iOS and iPadOS.
+    ja: iOSとiPadOSでedit menuがcompact horizontal styleとvertical menu styleの両方で機能するようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -16937,7 +16942,7 @@
       - edit-menus
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The system uses the compact horizontal style for Multi-Touch and the vertical style for keyboard or pointing-device interaction.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
@@ -16945,7 +16950,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that your edit menu works well in both styles.” in the documented Edit menus context?
+      - Does the design satisfy “Ensure edit menus work in both the compact horizontal and vertical menu styles on iOS and iPadOS.” in the documented Edit menus context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -16958,10 +16963,10 @@
       - Edit menus
       - Platform considerations
       - iOS, iPadOS
-    retrieved_at: 2026-07-21T11:14:50.369Z
-    source_hash: e6c1e048f99f942ff610538203f146e91b799658f79391b12f864de73343af4e
-    source_sentence_hash: e5fb705390f0daa55bca69e298e1264bac5f3571011ac867d10b1f8e31ee406a
-    evidence_paraphrase: Verify that your edit menu works well in both styles.
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: 2d89cf22875ebb2750714f38699b582764ed3271a18da8c0a00962ea2b53686b
+    evidence_paraphrase: Ensure edit menus work in both the compact horizontal and vertical menu styles on iOS and iPadOS.
   tags:
     - components
     - edit-menus
@@ -16969,19 +16974,19 @@
     - ios-ipados
   priority_rank: 4
   status: active
-  apple_native_rule: Verify that your edit menu works well in both styles.
+  apple_native_rule: Ensure edit menus work in both the compact horizontal and vertical menu styles on iOS and iPadOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-EDIT-MENUS-0007
-  title: In general, avoid implementing other controls that perform the same functions as edit menu items
+  title: Avoid controls that duplicate edit-menu commands
   category: components
   topic: edit-menus
   subtopic: best-practices
   statement:
-    en: Exclude implementing other controls that perform the same functions as edit menu items from the applicable experience.
-    ja: 該当する体験ではimplementing other controls that perform the same functions as edit menu itemsを避ける。
+    en: Avoid adding other controls that duplicate familiar edit-menu commands.
+    ja: 慣れたedit-menu commandを重複する別のcontrolの追加を避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -17000,15 +17005,16 @@
       - edit-menus
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Preserve interface space for actions people may not already know how to access.
+  exceptions:
+    - A product requirement may justify a redundant control when the risk and space tradeoff are documented.
   rationale:
     en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude implementing other controls that perform the same functions as edit menu items from the applicable experience.” in the documented Edit menus context?
+      - Does the design satisfy “Avoid adding other controls that duplicate familiar edit-menu commands.” in the documented Edit menus context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -17020,17 +17026,501 @@
     section_path:
       - Edit menus
       - Best practices
-    retrieved_at: 2026-07-21T11:14:50.369Z
-    source_hash: e6c1e048f99f942ff610538203f146e91b799658f79391b12f864de73343af4e
-    source_sentence_hash: 7512bef8c41b7048e488db3d0f3cc1291c304d68d76ea1dcd0ce8eacbcdbf503
-    evidence_paraphrase: Exclude implementing other controls that perform the same functions as edit menu items from the applicable experience.
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: fe451dc8139bf5bd8ae6b746b300ed960b0679f482585d4bd9ff62b7e26c43f4
+    evidence_paraphrase: Avoid adding other controls that duplicate familiar edit-menu commands.
   tags:
     - components
     - edit-menus
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude implementing other controls that perform the same functions as edit menu items from the applicable experience.
+  apple_native_rule: Avoid adding other controls that duplicate familiar edit-menu commands.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-EDIT-MENUS-0008
+  title: Place custom commands near related system commands
+  category: components
+  topic: edit-menus
+  subtopic: best-practices
+  statement:
+    en: Place custom edit-menu commands near the related system-provided commands.
+    ja: custom edit-menu commandを関連するsystem-provided commandの近くに配置する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-vision-pro
+    components:
+      - edit-menus
+    modalities: []
+  conditions:
+    - For example, place custom formatting commands after the system commands in the formatting section to preserve expected ordering.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Place custom edit-menu commands near the related system-provided commands.” in the documented Edit menus context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/edit-menus
+    page_title: Edit menus
+    section_path:
+      - Edit menus
+      - Best practices
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: e85436cc61480f2e8c6b3ae17d7eeb4150c7fb8e57745a442cce8e4c6e016080
+    evidence_paraphrase: Place custom edit-menu commands near the related system-provided commands.
+  tags:
+    - components
+    - edit-menus
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Place custom edit-menu commands near the related system-provided commands.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-EDIT-MENUS-0009
+  title: Avoid too many custom commands
+  category: components
+  topic: edit-menus
+  subtopic: best-practices
+  statement:
+    en: Avoid overwhelming people with too many custom edit-menu commands.
+    ja: custom edit-menu commandを増やしすぎて利用者を圧倒しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-vision-pro
+    components:
+      - edit-menus
+    modalities: []
+  conditions:
+    - Keep the menu focused on commands relevant to the current context.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid overwhelming people with too many custom edit-menu commands.” in the documented Edit menus context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/edit-menus
+    page_title: Edit menus
+    section_path:
+      - Edit menus
+      - Best practices
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: e85436cc61480f2e8c6b3ae17d7eeb4150c7fb8e57745a442cce8e4c6e016080
+    evidence_paraphrase: Avoid overwhelming people with too many custom edit-menu commands.
+  tags:
+    - components
+    - edit-menus
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid overwhelming people with too many custom edit-menu commands.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-EDIT-MENUS-0010
+  title: Allow copying noneditable content when useful
+  category: components
+  topic: edit-menus
+  subtopic: best-practices
+  statement:
+    en: When useful, let people select and copy noneditable content text.
+    ja: 有用な場合はnoneditable content textを選択してcopyできるようにする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-vision-pro
+    components:
+      - edit-menus
+    modalities: []
+  conditions:
+    - Examples include image captions and social-media status text that people may paste into a message, note, or search.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When useful, let people select and copy noneditable content text.” in the documented Edit menus context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/edit-menus
+    page_title: Edit menus
+    section_path:
+      - Edit menus
+      - Best practices
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: 02c981d52276c2619f7ef43be4a1d2da3c1529486b4e3727d80078ba87927898
+    evidence_paraphrase: When useful, let people select and copy noneditable content text.
+  tags:
+    - components
+    - edit-menus
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When useful, let people select and copy noneditable content text.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-EDIT-MENUS-0011
+  title: Avoid making control labels copyable
+  category: components
+  topic: edit-menus
+  subtopic: best-practices
+  statement:
+    en: Avoid making control labels selectable and copyable as content.
+    ja: control labelをcontentとして選択・copy可能にすることを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-vision-pro
+    components:
+      - edit-menus
+    modalities: []
+  conditions:
+    - Distinguish control labels from content text that people may reasonably reuse.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid making control labels selectable and copyable as content.” in the documented Edit menus context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/edit-menus
+    page_title: Edit menus
+    section_path:
+      - Edit menus
+      - Best practices
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: 02c981d52276c2619f7ef43be4a1d2da3c1529486b4e3727d80078ba87927898
+    evidence_paraphrase: Avoid making control labels selectable and copyable as content.
+  tags:
+    - components
+    - edit-menus
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid making control labels selectable and copyable as content.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-EDIT-MENUS-0012
+  title: Differentiate deletion-command behavior
+  category: components
+  topic: edit-menus
+  subtopic: best-practices
+  statement:
+    en: Differentiate edit-menu commands that delete content in meaningfully different ways.
+    ja: contentを異なる方法で削除するedit-menu commandを区別する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-vision-pro
+    components:
+      - edit-menus
+    modalities: []
+  conditions:
+    - For example, Delete removes content directly, whereas Cut first copies it to the system pasteboard.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Differentiate edit-menu commands that delete content in meaningfully different ways.” in the documented Edit menus context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/edit-menus
+    page_title: Edit menus
+    section_path:
+      - Edit menus
+      - Best practices
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: c1f3b2955bab6bb2eb74ad2d8cbabb7769e4c7df6bedcf652edddf9f7daee7c0
+    evidence_paraphrase: Differentiate edit-menu commands that delete content in meaningfully different ways.
+  tags:
+    - components
+    - edit-menus
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Differentiate edit-menu commands that delete content in meaningfully different ways.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-EDIT-MENUS-0013
+  title: Describe custom commands with action words
+  category: components
+  topic: edit-menus
+  subtopic: content
+  statement:
+    en: Label custom edit-menu commands with verbs or short verb phrases that describe their action.
+    ja: custom edit-menu commandをactionを表すverbまたは短いverb phraseでlabel付けする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-vision-pro
+    components:
+      - edit-menus
+    modalities: []
+  conditions:
+    - Use wording that remains succinct while making the performed action clear.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Label custom edit-menu commands with verbs or short verb phrases that describe their action.” in the documented Edit menus context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/edit-menus
+    page_title: Edit menus
+    section_path:
+      - Edit menus
+      - Content
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: 883b306cf7708346d6b36dc40b188dd772d0679c66d66a87c27318fef15d48dc
+    evidence_paraphrase: Label custom edit-menu commands with verbs or short verb phrases that describe their action.
+  tags:
+    - components
+    - edit-menus
+    - content
+  priority_rank: 6
+  status: active
+  apple_native_rule: Label custom edit-menu commands with verbs or short verb phrases that describe their action.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-EDIT-MENUS-0014
+  title: Avoid relying on edit menus in tvOS or watchOS
+  category: components
+  topic: edit-menus
+  subtopic: platform-considerations
+  statement:
+    en: Avoid relying on edit menus in tvOS or watchOS, where the system doesn't provide them.
+    ja: systemがedit menuを提供しないtvOSとwatchOSではedit menuに依存しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - tvos
+      - watchos
+    devices:
+      - apple-tv
+      - apple-watch
+    components:
+      - edit-menus
+    modalities: []
+  conditions:
+    - Choose another platform-supported component or interaction for editing tasks.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid relying on edit menus in tvOS or watchOS, where the system doesn't provide them.” in the documented Edit menus context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/edit-menus
+    page_title: Edit menus
+    section_path:
+      - Edit menus
+      - Platform considerations
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: 7d8f8ae7e3c2194af3f2ee6e6d5cc9e239ef3a5593425ef8962afbce111009ea
+    evidence_paraphrase: Avoid relying on edit menus in tvOS or watchOS, where the system doesn't provide them.
+  tags:
+    - components
+    - edit-menus
+    - platform-considerations
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid relying on edit menus in tvOS or watchOS, where the system doesn't provide them.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-EDIT-MENUS-0015
+  title: Reposition edit menus only when necessary
+  category: components
+  topic: edit-menus
+  subtopic: ios-ipados
+  statement:
+    en: Reposition an iOS or iPadOS edit menu when necessary to keep important content visible.
+    ja: 重要なcontentを見える状態に保つ必要がある場合はiOSまたはiPadOSのedit menuを再配置する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components:
+      - edit-menus
+    modalities: []
+  conditions:
+    - Keep the default placement above or below the insertion point or selection when it works.
+    - Move the menu when it would otherwise cover important content or interface areas.
+  exceptions:
+    - You can change the menu position, but not the shape of the menu or its pointer.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Edit menus experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるEdit menusの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Reposition an iOS or iPadOS edit menu when necessary to keep important content visible.” in the documented Edit menus context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/edit-menus
+    page_title: Edit menus
+    section_path:
+      - Edit menus
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-22T16:44:23Z
+    source_hash: 8f6474f5141d09bd3f098e33fb2d6929fcea3515cd1159a16b111ab971170761
+    source_sentence_hash: ed1184c316b52d25631400ede8ab0dda5942bc585e1544752a0656b12161c132
+    evidence_paraphrase: Reposition an iOS or iPadOS edit menu when necessary to keep important content visible.
+  tags:
+    - components
+    - edit-menus
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Reposition an iOS or iPadOS edit menu when necessary to keep important content visible.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-GAUGES-0001
   title: Write succinct labels that describe the current value and both endpoints of the range

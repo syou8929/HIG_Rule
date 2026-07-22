@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T16:41:46.598Z. 2767 active rules; 4 deprecated rules.
+Generated 2026-07-22T16:51:51.793Z. 2775 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1240,13 +1240,21 @@ Generated 2026-07-22T16:41:46.598Z. 2767 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-DOCK-MENUS-0005 · MAY · high** — Consider listing a few likely useful Dock-menu actions when the app isn’t frontmost or has no open windows. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 ### edit-menus
 
-- **HIG-COMPONENTS-EDIT-MENUS-0001 · SHOULD · low** — Favor the system-provided edit menu when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
-- **HIG-COMPONENTS-EDIT-MENUS-0002 · SHOULD · low** — Preserve people’s ability to reveal an edit menu using the system-defined interactions they already know. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
-- **HIG-COMPONENTS-EDIT-MENUS-0003 · SHOULD · low** — Make commands that are relevant in the current context, removing or dimming commands that don’t apply available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
-- **HIG-COMPONENTS-EDIT-MENUS-0004 · SHOULD · low** — Ensure the experience accommodates undo and redo when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
-- **HIG-COMPONENTS-EDIT-MENUS-0005 · SHOULD · low** — Apply the documented Edit menus guidance to create short labels for custom commands. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
-- **HIG-COMPONENTS-EDIT-MENUS-0006 · MUST · medium** — Verify that your edit menu works well in both styles. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
-- **HIG-COMPONENTS-EDIT-MENUS-0007 · AVOID · low** — Exclude implementing other controls that perform the same functions as edit menu items from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0001 · SHOULD · high** — Prefer the system-provided edit menu for standard editing commands. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0002 · SHOULD · high** — Let people reveal edit menus using the familiar system-defined interactions for each platform. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0003 · SHOULD · high** — Show edit-menu commands relevant to the current state, removing or dimming commands that don't apply. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0004 · SHOULD · high** — Support undo and redo for edit-menu actions when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0005 · SHOULD · high** — Use short labels for custom edit-menu commands. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0006 · MUST · high** — Ensure edit menus work in both the compact horizontal and vertical menu styles on iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0007 · AVOID · high** — Avoid adding other controls that duplicate familiar edit-menu commands. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0008 · SHOULD · high** — Place custom edit-menu commands near the related system-provided commands. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0009 · AVOID · high** — Avoid overwhelming people with too many custom edit-menu commands. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0010 · SHOULD · high** — When useful, let people select and copy noneditable content text. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0011 · AVOID · high** — Avoid making control labels selectable and copyable as content. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0012 · SHOULD · high** — Differentiate edit-menu commands that delete content in meaningfully different ways. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0013 · SHOULD · high** — Label custom edit-menu commands with verbs or short verb phrases that describe their action. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0014 · AVOID · high** — Avoid relying on edit menus in tvOS or watchOS, where the system doesn't provide them. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- **HIG-COMPONENTS-EDIT-MENUS-0015 · SHOULD · high** — Reposition an iOS or iPadOS edit menu when necessary to keep important content visible. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
 ### gauges
 
 - **HIG-COMPONENTS-GAUGES-0001 · SHOULD · low** — Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))

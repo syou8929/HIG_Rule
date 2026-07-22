@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1931
-- Reviewed batches: 129
+- Reviewed rules: 1946
+- Reviewed batches: 130
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:35:12Z
+- Reviewed at: 2026-07-22T16:44:23Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -251,6 +251,21 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-DOCK-MENUS-0003 · high — Recovered the labeling half of the explicit need-to requirement as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-DOCK-MENUS-0004 · high — Recovered the organization half of the explicit need-to requirement as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-DOCK-MENUS-0005 · high — Preserved the source's consider strength and both inactive-app conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0001 · high — Retained SHOULD and recorded the familiarity, redundancy, and confusion rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0002 · high — Retained SHOULD and recorded the platform interaction examples without converting them into universal gestures. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0003 · high — Replaced the generated wording with a state-aware command-availability rule and preserved both source examples. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0004 · high — Retained the when-possible SHOULD and recorded why recovery matters for immediately executed commands. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0005 · high — Retained SHOULD and separated label length from the source's independent wording requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0006 · high — Retained the explicit platform-scoped MUST and recorded the input-dependent style mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0007 · high — Retained AVOID rather than raising the qualified in-general guidance to a prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0008 · high — Recovered the omitted command-grouping rule and recorded its ordering example. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0009 · high — Recovered the separate AVOID clause from the custom-command paragraph without treating it as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0010 · high — Recovered the conditional content-copying rule and kept its usefulness qualifier. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0011 · high — Recovered the qualified not-control-labels clause as AVOID rather than an unconditional prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0012 · high — Recovered the when-necessary deletion-semantics rule and preserved the Delete versus Cut distinction. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0013 · high — Recovered the independent command-wording rule from the same source paragraph as label length. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0014 · high — Recovered the explicit unsupported-platform constraint as AVOID and scoped it only to tvOS and watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-EDIT-MENUS-0015 · high — Recovered the conditional placement rule and recorded both the default behavior and customization limit. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
 - HIG-COMPONENTS-GAUGES-0003 · high — Preserved Consider and recorded the large-range legibility condition. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-GAUGES-0004 · high — Preserved optional color changes and both documented presentation approaches. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-GAUGES-0005 · high — Recorded the descriptive tvOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))

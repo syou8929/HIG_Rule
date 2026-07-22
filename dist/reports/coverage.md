@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2767
+- Active atomic rules: 2775
 - Pages without rules: 16
-- Low-confidence rules: 776
-- Rules requiring human review: 776
-- Reference notes: 905
+- Low-confidence rules: 770
+- Rules requiring human review: 770
+- Reference notes: 904
 
 ## Rules by category
 
-- components: 920
+- components: 928
 - foundations: 346
 - getting-started: 100
 - inputs: 245
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 382
+- AVOID: 385
 - MAY: 334
 - MUST: 286
 - MUST_NOT: 31
-- SHOULD: 1734
+- SHOULD: 1739
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1822
-- ipados: 1794
-- macos: 1476
-- tvos: 1150
-- visionos: 1519
-- watchos: 1227
+- ios: 1829
+- ipados: 1801
+- macos: 1482
+- tvos: 1151
+- visionos: 1525
+- watchos: 1228
 
 ## Rules by testability
 
 - hybrid: 80
-- manual: 2687
+- manual: 2695
 
 ## Blocked pages
 
@@ -96,12 +96,6 @@ None.
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004
-- HIG-COMPONENTS-EDIT-MENUS-0001
-- HIG-COMPONENTS-EDIT-MENUS-0002
-- HIG-COMPONENTS-EDIT-MENUS-0003
-- HIG-COMPONENTS-EDIT-MENUS-0004
-- HIG-COMPONENTS-EDIT-MENUS-0005
-- HIG-COMPONENTS-EDIT-MENUS-0007
 - HIG-COMPONENTS-GAUGES-0001
 - HIG-COMPONENTS-GAUGES-0002
 - HIG-COMPONENTS-LABELS-0001
@@ -875,12 +869,6 @@ None.
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004
-- HIG-COMPONENTS-EDIT-MENUS-0001
-- HIG-COMPONENTS-EDIT-MENUS-0002
-- HIG-COMPONENTS-EDIT-MENUS-0003
-- HIG-COMPONENTS-EDIT-MENUS-0004
-- HIG-COMPONENTS-EDIT-MENUS-0005
-- HIG-COMPONENTS-EDIT-MENUS-0007
 - HIG-COMPONENTS-GAUGES-0001
 - HIG-COMPONENTS-GAUGES-0002
 - HIG-COMPONENTS-LABELS-0001
@@ -1855,7 +1843,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/drag-and-drop · Drag and drop > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/drag-and-drop · Drag and drop > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.

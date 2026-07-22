@@ -6,7 +6,7 @@
 - Normative level changes: 87
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:35:12Z
+- Reviewed at: 2026-07-22T16:44:23Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
