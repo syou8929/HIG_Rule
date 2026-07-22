@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 317
-- Retained MUST: 286
-- Retained MUST_NOT: 31
-- Normative level changes: 87
+- Reviewed rules: 328
+- Retained MUST: 296
+- Retained MUST_NOT: 32
+- Normative level changes: 98
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:44:23Z
+- Reviewed at: 2026-07-22T16:52:55Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -57,6 +57,17 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-MENUS-0010 — Retained MUST after reconfirming the Make sure directive and discoverability condition. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-MENUS-0017 — Retained MUST after reconfirming the Make sure directive and cross-platform size conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-MENUS-0027 — Retained MUST after confirming the explicit needs-to requirement and its command-discoverability purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-NOTIFICATIONS-0005 — Raised the privacy rule to MUST_NOT because the source calls avoiding visible private information essential. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0019 — Raised the conditional rule to MUST from the explicit Make sure redundant-delivery requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0024 — Raised the explicit watchOS platform maximum to MUST without requiring apps to provide four actions. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0026 — Recovered the explicit have-to consent requirement and preserved its pre-send timing. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0028 — Recovered the conditional Make sure sound-quality requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0029 — Recovered the accessibility MUST from the explicit don't-rely-on-sound instruction. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0030 — Recovered the explicit platform-contract maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0035 — Recovered the conditional Make sure requirement separately from the nondestructive preference. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0037 — Recovered the explicit Always make sure requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0038 — Recovered the explicit at-the-minimum platform requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0040 — Recovered the explicit Be sure packaging requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-OUTLINE-VIEWS-0015 — Retained MUST after confirming the unqualified Always directive and its multi-column scope. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 — Retained MUST after confirming the conditional Make sure directive and its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-SCROLL-VIEWS-0010 — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
@@ -324,7 +335,18 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-MENUS-0010 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the Make sure directive and discoverability condition. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-MENUS-0017 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the Make sure directive and cross-platform size conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-MENUS-0027 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit needs-to requirement and its command-discoverability purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
+- HIG-COMPONENTS-NOTIFICATIONS-0005 · MUST_NOT · retained_with_atomicity_or_scope_correction — Raised the privacy rule to MUST_NOT because the source calls avoiding visible private information essential. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0016 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0019 · MUST · retained_with_atomicity_or_scope_correction — Raised the conditional rule to MUST from the explicit Make sure redundant-delivery requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0024 · MUST · retained_with_atomicity_or_scope_correction — Raised the explicit watchOS platform maximum to MUST without requiring apps to provide four actions. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0026 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit have-to consent requirement and preserved its pre-send timing. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0028 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Make sure sound-quality requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0029 · MUST · retained_with_atomicity_or_scope_correction — Recovered the accessibility MUST from the explicit don't-rely-on-sound instruction. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit platform-contract maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0035 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Make sure requirement separately from the nondestructive preference. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0037 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always make sure requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0038 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit at-the-minimum platform requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0040 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Be sure packaging requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-OUTLINE-VIEWS-0015 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the unqualified Always directive and its multi-column scope. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-PAGE-CONTROLS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-POPOVERS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))

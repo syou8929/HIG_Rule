@@ -1,20 +1,108 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T16:44:23Z",
+  "reviewed_at": "2026-07-22T16:52:55Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
-  "source_inventory_hash": "a26a9e4cb596b912d12da38b3edf438fccd88460e3d55e693a7ef0109f0e24ae",
+  "source_inventory_hash": "977e54a2aa92b62ed6670f132305c8c5d72905ccc9b7bff977fbd154e2211db2",
   "reviewed_levels": [
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 317,
+  "reviewed_rule_count": 328,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-COMPONENTS-NOTIFICATIONS-0005": {
+      "title": "Never expose private information in notifications",
+      "statement": {"en": "Never include sensitive, personal, or confidential information in a notification.", "ja": "sensitive、personal、confidentialな情報をnotificationに含めない。"},
+      "normative_level": "MUST_NOT", "confidence": "high", "review_required": false,
+      "polarity": "prohibit", "severity": "error",
+      "conditions": ["Assume a notification can be visible to other people in an unpredictable context."],
+      "review_note": "Raised the privacy rule to MUST_NOT because the source calls avoiding visible private information essential."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0019": {
+      "title": "Ensure critical watchOS notifications use another channel too",
+      "statement": {"en": "For critical watchOS notification information, ensure delivery through another channel in addition to a short look.", "ja": "criticalなwatchOS notification informationはshort lookに加えて別のchannelでも伝達する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Deliver critical information through an additional channel because a short look appears only briefly."],
+      "review_note": "Raised the conditional rule to MUST from the explicit Make sure redundant-delivery requirement."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0024": {
+      "title": "Limit watchOS long looks to four custom actions",
+      "statement": {"en": "Limit a watchOS long look to no more than four custom actions below its content area.", "ja": "watchOS long lookのcontent area下に置くcustom actionを最大4個に制限する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Treat four as the platform-supported maximum; the system adds Dismiss below custom actions."],
+      "review_note": "Raised the explicit watchOS platform maximum to MUST without requiring apps to provide four actions."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0026": {
+      "title": "Obtain consent before sending notifications",
+      "statement": {"en": "Obtain a person's consent before sending them any notifications.", "ja": "notificationを送信する前に本人の同意を得る。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Request notification permission before the app begins sending notifications."],
+      "review_note": "Recovered the explicit have-to consent requirement and preserved its pre-send timing."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0028": {
+      "title": "Ensure custom notification sounds meet quality requirements",
+      "statement": {"en": "Ensure every custom notification sound is short, distinctive, and professionally produced.", "ja": "custom notification soundを短くdistinctiveでprofessionally producedなものにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply when the app supplies a custom sound instead of a system alert sound."],
+      "review_note": "Recovered the conditional Make sure sound-quality requirement."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0029": {
+      "title": "Ensure important notification information doesn't depend on sound",
+      "statement": {"en": "Ensure important notification information remains available without hearing its sound.", "ja": "soundを聞けなくてもimportant notification informationを得られるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Provide an equivalent visual or otherwise perceivable channel because people may not hear the sound."],
+      "review_note": "Recovered the accessibility MUST from the explicit don't-rely-on-sound instruction."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0030": {
+      "title": "Limit a notification detail view to four actions",
+      "statement": {"en": "Limit a notification detail view to no more than four action buttons.", "ja": "notification detail viewのaction buttonを最大4個に制限する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Treat four as the system-supported maximum, not as a required number of actions."],
+      "review_note": "Recovered the explicit platform-contract maximum."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0035": {
+      "title": "Ensure destructive notification actions have enough context",
+      "statement": {"en": "When providing a destructive notification action, ensure people have enough context to avoid unintended consequences.", "ja": "destructiveなnotification actionを提供する場合は意図しない結果を避けるため十分なcontextを示す。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Identify the action as destructive so the system gives it a distinct appearance."],
+      "review_note": "Recovered the conditional Make sure requirement separately from the nondestructive preference."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0037": {
+      "title": "Ensure important notification information is easy to find in the app",
+      "statement": {"en": "Ensure important notification information is easy to find as soon as the app opens.", "ja": "appを開いた直後にimportant notification informationを見つけられるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Provide in-app access even when the person disables or misses badging."],
+      "review_note": "Recovered the explicit Always make sure requirement."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0038": {
+      "title": "Provide a static watchOS long-look interface",
+      "statement": {"en": "Provide at least a static interface for every custom watchOS long-look notification.", "ja": "すべてのcustom watchOS long-look notificationに少なくともstatic interfaceを提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The system uses the static interface whenever the dynamic interface is unavailable."],
+      "review_note": "Recovered the explicit at-the-minimum platform requirement."
+    },
+    "HIG-COMPONENTS-NOTIFICATIONS-0040": {
+      "title": "Package static watchOS long-look resources in advance",
+      "statement": {"en": "Ensure static watchOS long-look resources are created in advance and packaged with the app.", "ja": "static watchOS long-look resourceを事前に作成してappへ同梱する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Resources must remain available when there is no network or the iPhone companion is unreachable."],
+      "review_note": "Recovered the explicit Be sure packaging requirement."
+    },
     "HIG-COMPONENTS-CHARTS-0006": {
       "title": "Ensure every chart is accessible",
       "statement": {"en": "Ensure every chart is fully accessible regardless of how people perceive content.", "ja": "contentの知覚方法にかかわらずすべてのchartを完全にaccessibleにする。"},

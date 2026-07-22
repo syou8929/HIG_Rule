@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1946
-- Reviewed batches: 130
+- Reviewed rules: 1981
+- Reviewed batches: 131
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:44:23Z
+- Reviewed at: 2026-07-22T16:52:55Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -378,13 +378,48 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-MENUS-0029 · high — Recovered the small-layout-only condition. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-MENUS-0030 · high — Recovered the per-action symbol requirement under the small layout. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
 - HIG-COMPONENTS-MENUS-0031 · high — Recovered the medium-layout recommendation and preserved its consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/menus))
-- HIG-COMPONENTS-NOTIFICATIONS-0019 · high — Recorded the brief-display limitation and redundant-delivery requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
-- HIG-COMPONENTS-NOTIFICATIONS-0020 · high — Made the generic privacy prompt specific to the official short-look disclosure risk. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0001 · high — Retained SHOULD and recorded both concision and information value. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0002 · high — Retained AVOID and preserved the unanswered-notification condition. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0003 · high — Retained AVOID and recorded the actionable-notification exception. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0004 · high — Retained SHOULD component guidance and made the error-message choice explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0005 · high — Raised the privacy rule to MUST_NOT because the source calls avoiding visible private information essential. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0006 · high — Retained the conditional SHOULD and recorded title style plus the generic-title exception. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0007 · high — Retained SHOULD and recorded every writing and truncation condition. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0008 · high — Retained SHOULD and prioritized the user-controlled preview privacy context. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0009 · high — Retained AVOID and recorded the system-provided identity context. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0010 · high — Retained MAY and separated sound quality and nonaudio access into mandatory rules. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0011 · high — Retained SHOULD and recorded the usefulness and no-launch preference. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0012 · high — Retained AVOID and recorded the duplicate-navigation rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0013 · high — Retained preference strength and split the conditional destructive-action requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0014 · high — Retained SHOULD and recorded the icon-meaning purpose and SF Symbols option. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0015 · high — Retained SHOULD and split the explicit unrelated-data avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0016 · high — Retained the explicit MUST and prioritized the user's badge-setting choice. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0017 · high — Retained SHOULD and recorded update timing plus the zero-count side effect. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0018 · high — Retained AVOID and recorded the explicit user-setting rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0019 · high — Raised the rule to the explicit conditional Make sure requirement and recorded the brief-display limitation. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0020 · high — Kept the discreet-basic-information SHOULD separate from the title-specific privacy avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0021 · high — Replaced a truncated title while preserving the optional source strength. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0022 · high — Recorded the two sash appearance choices and the photo-overlap context. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0023 · high — Recorded the official 18-percent opacity option and transparent default. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
-- HIG-COMPONENTS-NOTIFICATIONS-0024 · high — Recorded the four-action limit, system Dismiss button, and iPhone-companion sharing behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0024 · high — Raised the explicit platform maximum to MUST and retained the system Dismiss and companion-sharing conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0025 · high — Repaired the generic generated wording and recorded how double tap selects an action. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0026 · high — Recovered the explicit have-to consent requirement and assigned privacy and explicit-intent priority. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0027 · high — Recovered the inactive foreground-handling lead and its discoverability and distraction constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0028 · high — Recovered the conditional Make sure sound-quality MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0029 · high — Recovered the accessibility requirement from the explicit don't-rely-on-sound instruction. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0030 · high — Recovered the explicit platform-contract maximum without requiring apps to provide actions. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0031 · high — Recovered action-label length and capitalization as one formatting rule. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0032 · high — Recovered the independent action-result clarity requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0033 · high — Recovered the explicit don't-include clause as AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0034 · high — Recovered the independent localization requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0035 · high — Recovered the conditional Make sure MUST separately from the nondestructive preference. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0036 · high — Recovered the explicit don't-use clause as AVOID without raising it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0037 · high — Recovered the explicit Always make sure requirement and tied it to the badge-setting context. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0038 · high — Recovered the explicit at-the-minimum platform requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0039 · high — Split the preference from the static-interface minimum so it remains SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0040 · high — Recovered the explicit Be sure packaging requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0041 · high — Recovered the platform capability limit as AVOID rather than inventing a stronger prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
+- HIG-COMPONENTS-NOTIFICATIONS-0042 · high — Recovered the explicit title-specific privacy avoidance separately from the general discreet-content rule. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-ORNAMENTS-0001 · high — Repaired the truncated candidate and preserved the consider strength and predictable-location purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
 - HIG-COMPONENTS-ORNAMENTS-0002 · high — Recorded the same-or-narrower width boundary and side-content interference risk. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
 - HIG-COMPONENTS-ORNAMENTS-0003 · high — Preserved MAY and recorded both glass-background and system-hover behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/ornaments))
