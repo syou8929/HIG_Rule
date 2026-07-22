@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T17:06:58Z",
+  "reviewed_at": "2026-07-22T17:16:46Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "977e54a2aa92b62ed6670f132305c8c5d72905ccc9b7bff977fbd154e2211db2",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 328,
+  "reviewed_rule_count": 332,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -105,6 +105,23 @@
     },
     "HIG-COMPONENTS-PAGE-CONTROLS-0002": {
       "review_note": "Retained the existing MUST after confirming the unqualified Make sure directive applies to every custom page-control indicator image."
+    },
+    "HIG-COMPONENTS-POPOVERS-0007": {
+      "title": "Ensure no other view appears above a popover",
+      "statement": {"en": "Ensure that no other view appears above a popover.", "ja": "popoverの上に別のviewが表示されないようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "exceptions": ["An alert may appear above a popover."],
+      "review_note": "Raised the rule from AVOID to MUST because the supporting source uses an unqualified Make sure directive, while preserving the alert exception."
+    },
+    "HIG-COMPONENTS-POPOVERS-0016": {
+      "review_note": "Retained MUST after confirming the explicit Make sure directive and its as-directly-as-possible layout qualification."
+    },
+    "HIG-COMPONENTS-POPOVERS-0018": {
+      "review_note": "Retained the conditional MUST after confirming the explicit Make sure directive applies when multiple selections are available."
+    },
+    "HIG-COMPONENTS-POPOVERS-0019": {
+      "review_note": "Retained MUST_NOT after confirming the explicit Never prohibition against cascades and hierarchies of popovers."
     },
     "HIG-COMPONENTS-CHARTS-0006": {
       "title": "Ensure every chart is accessible",

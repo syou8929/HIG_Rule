@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T17:14:44.878Z. 2802 active rules; 4 deprecated rules.
+Generated 2026-07-22T17:22:34.384Z. 2809 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1536,20 +1536,27 @@ Generated 2026-07-22T17:14:44.878Z. 2802 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0009 · AVOID · high** — Avoid using pop-up buttons on tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 ### popovers
 
-- **HIG-COMPONENTS-POPOVERS-0001 · SHOULD · low** — Choose or apply a popover to expose a small amount of information or functionality in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0002 · MAY · low** — Evaluate whether using popovers when you want more room for content is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0003 · SHOULD · low** — Apply the documented Popovers guidance to position popovers appropriately. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0004 · SHOULD · low** — Choose or apply a Close button for confirmation and guidance only in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0005 · MUST · medium** — Save work when automatically closing a nonmodal popover in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0006 · SHOULD · low** — Present one popover at a time in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0007 · AVOID · low** — Exclude show another view over a popover from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0008 · AVOID · low** — Exclude making a popover too big from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0009 · SHOULD · low** — Make a smooth transition when changing the size of a popover available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0010 · AVOID · low** — Exclude using the word popover in help documentation from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
-- **HIG-COMPONENTS-POPOVERS-0011 · AVOID · low** — Exclude using a popover to show a warning from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0001 · SHOULD · high** — Use a popover to expose a small amount of transient information or functionality. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0002 · MAY · high** — Consider a popover when temporary content needs more room without permanently occupying the interface. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0003 · SHOULD · high** — Position a popover so its relationship to the element that revealed it remains clear. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0004 · SHOULD · high** — Use a Close, Cancel, or Done button in a popover only when it clarifies confirmation or dismissal behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0005 · MUST · high** — Always save a person's work when automatically closing a nonmodal popover. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0006 · SHOULD · high** — Show only one popover at a time. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0007 · MUST · high** — Ensure that no other view appears above a popover. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0008 · AVOID · high** — Avoid making a popover larger than its content and source relationship require. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0009 · SHOULD · high** — Animate a popover's size change smoothly so it reads as the same popover. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0010 · AVOID · high** — Avoid using the word popover in help documentation. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0011 · AVOID · high** — Avoid using a popover to present a warning. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - **HIG-COMPONENTS-POPOVERS-0012 · AVOID · high** — Avoid popovers in compact iOS or iPadOS views. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - **HIG-COMPONENTS-POPOVERS-0013 · MAY · high** — Consider letting people detach a macOS popover into a panel. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - **HIG-COMPONENTS-POPOVERS-0014 · SHOULD · high** — Keep a detached macOS popover visually similar to the original popover. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0015 · SHOULD · high** — Limit the functionality in a popover to a few related tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0016 · MUST · high** — Ensure a popover's arrow points as directly as possible to the element that revealed it. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0017 · SHOULD · high** — Keep the element that revealed a popover and any essential supporting content visible while people use it. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0018 · MUST · high** — When multiple selections are possible, ensure the popover stays open until people dismiss it or interact outside its bounds. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0019 · MUST_NOT · high** — Never show a cascade or hierarchy in which one popover emerges from another. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0020 · SHOULD · high** — When possible, let people close one popover and open another with a single click or tap. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- **HIG-COMPONENTS-POPOVERS-0021 · AVOID · high** — Avoid relying on popovers in tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 ### progress-indicators
 
 - **HIG-COMPONENTS-PROGRESS-INDICATORS-0001 · SHOULD · low** — Apply the documented Progress indicators guidance to be as accurate as possible when reporting advancement in a determinate progress indicator. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))

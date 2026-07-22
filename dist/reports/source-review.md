@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1996
-- Reviewed batches: 132
+- Reviewed rules: 2014
+- Reviewed batches: 133
 - Official source only: yes
-- Reviewed at: 2026-07-22T17:06:58Z
+- Reviewed at: 2026-07-22T17:16:46Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -493,9 +493,27 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-PICKERS-0009 · high — Repaired the truncated mode description and recorded both its maximum value and unavailable styles without inventing a MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 - HIG-COMPONENTS-POP-UP-BUTTONS-0008 · high — Restored the complete truncated recommendation and all documented applicability conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - HIG-COMPONENTS-POP-UP-BUTTONS-0009 · high — Recorded the descriptive tvOS and watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POPOVERS-0001 · high — Retained SHOULD and recorded the transient, small-content purpose separately from the related-task limit. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0002 · high — Retained MAY and recorded the temporary-content and persistent-space tradeoff. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0003 · high — Retained SHOULD and separated the mandatory arrow direction and visible-content constraints into atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0004 · high — Retained the conditional SHOULD and recorded when explicit dismissal controls add clarity. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0005 · high — Retained MUST and recorded explicit cancellation as the only documented discard path. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0006 · high — Retained SHOULD and separated the explicit nested-popover prohibition into its own rule. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0007 · high — Raised the rule from AVOID to MUST because the supporting source uses an unqualified Make sure directive, while preserving the alert exception. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0008 · high — Retained AVOID and recorded the content, arrow-origin, and system-fitting constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0009 · high — Retained SHOULD and made the documented animation and continuity purpose explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0010 · high — Retained AVOID and recorded the task-oriented writing alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0011 · high — Retained AVOID and recorded the alert alternative and missable-presentation rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0012 · high — Recorded the size-class scope and the full-screen modal alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0013 · high — Preserved the optional strength and documented the persistent-panel use case. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0014 · high — Replaced generic generated wording with the source's context-preservation intent. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0015 · high — Recovered the functional-scope limit separately from the general small-content recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0016 · high — Recovered MUST from the explicit Make sure directive and preserved the layout qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0017 · high — Recovered the source's ideally qualified visibility recommendation without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0018 · high — Recovered the conditional Make sure requirement and its two dismissal paths. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0019 · high — Recovered MUST_NOT from the explicit Never prohibition separately from the one-at-a-time recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0020 · high — Recovered the qualified single-action transition and preserved its when-possible strength. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0021 · high — Recorded unsupported-platform guidance conservatively as AVOID rather than promoting descriptive support text to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0006 · high — Restored the complete space-constrained clause and recorded the source examples. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-PROGRESS-INDICATORS-0007 · high — Kept the qualified AVOID strength and recorded why a label is usually redundant. ([source](https://developer.apple.com/design/human-interface-guidelines/progress-indicators))
 - HIG-COMPONENTS-PULL-DOWN-BUTTONS-0006 · high — Restored the truncated recommendation and recorded both sides of the documented tradeoff. ([source](https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons))

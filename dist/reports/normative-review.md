@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 328
-- Retained MUST: 296
-- Retained MUST_NOT: 32
-- Normative level changes: 98
+- Reviewed rules: 332
+- Retained MUST: 299
+- Retained MUST_NOT: 33
+- Normative level changes: 99
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-22T17:06:58Z
+- Reviewed at: 2026-07-22T17:16:46Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -70,6 +70,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-NOTIFICATIONS-0040 — Recovered the explicit Be sure packaging requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-OUTLINE-VIEWS-0015 — Retained MUST after confirming the unqualified Always directive and its multi-column scope. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-PAGE-CONTROLS-0002 — Retained the existing MUST after confirming the unqualified Make sure directive applies to every custom page-control indicator image. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-POPOVERS-0007 — Raised the rule from AVOID to MUST because the supporting source uses an unqualified Make sure directive, while preserving the alert exception. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0016 — Retained MUST after confirming the explicit Make sure directive and its as-directly-as-possible layout qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0018 — Retained the conditional MUST after confirming the explicit Make sure directive applies when multiple selections are available. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0019 — Retained MUST_NOT after confirming the explicit Never prohibition against cascades and hierarchies of popovers. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 — Retained MUST after confirming the conditional Make sure directive and its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-SCROLL-VIEWS-0010 — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0015 — Retained MUST after confirming the conditional Make sure directive for custom scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
@@ -351,6 +355,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-OUTLINE-VIEWS-0015 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the unqualified Always directive and its multi-column scope. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-PAGE-CONTROLS-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained the existing MUST after confirming the unqualified Make sure directive applies to every custom page-control indicator image. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-POPOVERS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0007 · MUST · retained_with_atomicity_or_scope_correction — Raised the rule from AVOID to MUST because the supporting source uses an unqualified Make sure directive, while preserving the alert exception. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0016 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive and its as-directly-as-possible layout qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0018 · MUST · retained_with_atomicity_or_scope_correction — Retained the conditional MUST after confirming the explicit Make sure directive applies when multiple selections are available. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
+- HIG-COMPONENTS-POPOVERS-0019 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained MUST_NOT after confirming the explicit Never prohibition against cascades and hierarchies of popovers. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Make sure directive and its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-SCROLL-VIEWS-0010 · MUST · retained_with_atomicity_or_scope_correction — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0015 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Make sure directive for custom scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
