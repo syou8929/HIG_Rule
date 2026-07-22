@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1981
-- Reviewed batches: 131
+- Reviewed rules: 1996
+- Reviewed batches: 132
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:52:55Z
+- Reviewed at: 2026-07-22T17:06:58Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -449,11 +449,26 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-OUTLINE-VIEWS-0020 · high — Recovered the repeated-click behavior as a conditioned sorting rule. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-OUTLINE-VIEWS-0021 · high — Recovered the explicit editing expectation and retained the distinct double-click exception. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 - HIG-COMPONENTS-OUTLINE-VIEWS-0022 · high — Recovered the qualified row-mutation option without promoting it above MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-PAGE-CONTROLS-0001 · high — Retained SHOULD and narrowed the pattern to ordered peer pages rather than complex navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0002 · high — Retained MUST from the explicit Make sure directive and separated its specific visual constraints into atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0003 · high — Retained AVOID and recorded the meaningful-page exception without turning two images into a platform maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0004 · high — Retained AVOID and recorded the system-managed contrast rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0005 · high — Recorded the source distinction between scrubbing and tapping. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0006 · high — Recorded the feedback limitation and supported background-style alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0007 · high — Recorded the full-screen peer hierarchy and focus constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0008 · high — Recorded the Digital Crown interaction and the disfavored alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PAGE-CONTROLS-0009 · high — Recorded the optional single-screen constraint and variable-height ordering guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0010 · high — Retained SHOULD and recorded the horizontal placement context. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0011 · high — Recovered AVOID and preserved about 10 as usability guidance rather than an exact maximum. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0012 · high — Recovered the conditional SHOULD and kept customization tied to semantic value. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0013 · high — Recovered the explicit shape constraint as an atomic AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0014 · high — Recovered the three documented fine-detail constraints as one cohesive atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0015 · high — Recovered the optional SF Symbols path without requiring it over suitable custom icons. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0016 · high — Recovered the conditional iOS and iPadOS style choice and its interaction behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0017 · high — Recovered the only-if style constraint without promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0018 · high — Recovered the conditional style choice and kept the separate scrubber prohibition in rule 0006. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0019 · high — Recorded unsupported-platform guidance conservatively as AVOID rather than promoting descriptive support text to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0020 · high — Recovered the noninteractive visionOS platform contract as AVOID without inventing a prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-PANELS-0001 · high — Restored the complete content relationship that the 19-word source fragment truncated. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
 - HIG-COMPONENTS-PANELS-0002 · high — Distinguished selection-following inspectors from persistent Info windows and the split-view alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))
 - HIG-COMPONENTS-PANELS-0003 · high — Recorded the multi-step interaction concern and the slider and stepper examples. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))

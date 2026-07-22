@@ -6,7 +6,7 @@
 - Normative level changes: 98
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:52:55Z
+- Reviewed at: 2026-07-22T17:06:58Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -69,6 +69,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-NOTIFICATIONS-0038 — Recovered the explicit at-the-minimum platform requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0040 — Recovered the explicit Be sure packaging requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-OUTLINE-VIEWS-0015 — Retained MUST after confirming the unqualified Always directive and its multi-column scope. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
+- HIG-COMPONENTS-PAGE-CONTROLS-0002 — Retained the existing MUST after confirming the unqualified Make sure directive applies to every custom page-control indicator image. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 — Retained MUST after confirming the conditional Make sure directive and its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-SCROLL-VIEWS-0010 — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SCROLL-VIEWS-0015 — Retained MUST after confirming the conditional Make sure directive for custom scrolling. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
@@ -348,7 +349,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-NOTIFICATIONS-0038 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit at-the-minimum platform requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-NOTIFICATIONS-0040 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Be sure packaging requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/notifications))
 - HIG-COMPONENTS-OUTLINE-VIEWS-0015 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the unqualified Always directive and its multi-column scope. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- HIG-COMPONENTS-PAGE-CONTROLS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- HIG-COMPONENTS-PAGE-CONTROLS-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained the existing MUST after confirming the unqualified Make sure directive applies to every custom page-control indicator image. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - HIG-COMPONENTS-POPOVERS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-RATING-INDICATORS-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Make sure directive and its custom-symbol scope. ([source](https://developer.apple.com/design/human-interface-guidelines/rating-indicators))
 - HIG-COMPONENTS-SCROLL-VIEWS-0010 · MUST · retained_with_atomicity_or_scope_correction — Changed SHOULD to MUST after confirming the conditional Make sure directive and its similar-view scope. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))

@@ -37247,17 +37247,17 @@
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0001",
-    "title": "Use page controls to represent movement between an ordered list of pages",
+    "title": "Use page controls for ordered peer pages",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply page controls to represent movement between an ordered list of pages in the documented context.",
-      "ja": "該当する状況ではpage controls to represent movement between an ordered list of pagesを採用する。"
+      "en": "Use a page control to represent movement through an ordered list of peer pages.",
+      "ja": "順序のある対等なページ間の移動を表すためにpage controlを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -37282,7 +37282,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a sidebar or split view for hierarchical or nonsequential navigation."
     ],
     "exceptions": [],
     "rationale": {
@@ -37292,7 +37292,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply page controls to represent movement between an ordered list of pages in the documented context.” in the documented Page controls context?"
+        "Does the design satisfy “Use a page control to represent movement through an ordered list of peer pages.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -37309,10 +37309,10 @@
         "Page controls",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "00bafe689dad8509fd651c39df65cd5ccb8c565e81a7ee29227afbf4a1016809",
-      "evidence_paraphrase": "Choose or apply page controls to represent movement between an ordered list of pages in the documented context."
+      "evidence_paraphrase": "Use a page control to represent movement through an ordered list of peer pages."
     },
     "tags": [
       "components",
@@ -37321,21 +37321,21 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply page controls to represent movement between an ordered list of pages in the documented context.",
+    "apple_native_rule": "Use a page control to represent movement through an ordered list of peer pages.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0002",
-    "title": "Make sure custom indicator images are simple and clear",
+    "title": "Keep custom page-control indicators simple and clear",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "customizing-indicators",
     "statement": {
-      "en": "Verify that custom indicator images are simple and clear.",
-      "ja": "custom indicator images are simple and clearを満たしていることを確認する。"
+      "en": "Make sure custom page-control indicator images are simple and clear.",
+      "ja": "page controlのカスタムindicator imageを簡潔で明瞭にする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -37361,7 +37361,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep each image recognizable at the small indicator size."
     ],
     "exceptions": [],
     "rationale": {
@@ -37371,7 +37371,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that custom indicator images are simple and clear.” in the documented Page controls context?"
+        "Does the design satisfy “Make sure custom page-control indicator images are simple and clear.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -37388,10 +37388,10 @@
         "Page controls",
         "Customizing indicators"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "89e92113a94e8b85955a0c0f9008d43d812c37ad17a06ccb9f024579ea06a9b3",
-      "evidence_paraphrase": "Verify that custom indicator images are simple and clear."
+      "evidence_paraphrase": "Make sure custom page-control indicator images are simple and clear."
     },
     "tags": [
       "components",
@@ -37400,22 +37400,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that custom indicator images are simple and clear.",
+    "apple_native_rule": "Make sure custom page-control indicator images are simple and clear.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0003",
-    "title": "Avoid using more than two different indicator images in a page control",
+    "title": "Avoid more than two page-control indicator images",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "customizing-indicators",
     "statement": {
-      "en": "Exclude using more than two different indicator images in a page control from the applicable experience.",
-      "ja": "該当する体験ではusing more than two different indicator images in a page controlを避ける。"
+      "en": "Avoid using more than two distinct indicator images in one page control.",
+      "ja": "1つのpage controlで3種類以上のindicator imageを使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -37442,7 +37442,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A unique image can identify one especially meaningful page while the other pages share the default image."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
@@ -37450,7 +37452,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude using more than two different indicator images in a page control from the applicable experience.” in the documented Page controls context?"
+        "Does the design satisfy “Avoid using more than two distinct indicator images in one page control.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -37467,10 +37469,10 @@
         "Page controls",
         "Customizing indicators"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "840dffb039682758f7dfdaeb86fe89701d1e6018d99be2edac5422fd65011bc1",
-      "evidence_paraphrase": "Exclude using more than two different indicator images in a page control from the applicable experience."
+      "evidence_paraphrase": "Avoid using more than two distinct indicator images in one page control."
     },
     "tags": [
       "components",
@@ -37479,22 +37481,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude using more than two different indicator images in a page control from the applicable experience.",
+    "apple_native_rule": "Avoid using more than two distinct indicator images in one page control.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0004",
-    "title": "Avoid coloring indicator images",
+    "title": "Avoid coloring page-control indicator images",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "customizing-indicators",
     "statement": {
-      "en": "Exclude coloring indicator images from the applicable experience.",
-      "ja": "該当する体験ではcoloring indicator imagesを避ける。"
+      "en": "Avoid applying custom colors to page-control indicator images.",
+      "ja": "page controlのindicator imageにカスタム色を適用しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -37519,7 +37521,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let the system color indicators to maintain contrast and distinguish the current page in context."
     ],
     "exceptions": [],
     "rationale": {
@@ -37529,7 +37531,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude coloring indicator images from the applicable experience.” in the documented Page controls context?"
+        "Does the design satisfy “Avoid applying custom colors to page-control indicator images.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -37546,10 +37548,10 @@
         "Page controls",
         "Customizing indicators"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "2d62b9656e6b93252d10347ef28a81900f25d0ab9f5a73e5abe1e3dd0f091001",
-      "evidence_paraphrase": "Exclude coloring indicator images from the applicable experience."
+      "evidence_paraphrase": "Avoid applying custom colors to page-control indicator images."
     },
     "tags": [
       "components",
@@ -37558,7 +37560,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude coloring indicator images from the applicable experience.",
+    "apple_native_rule": "Avoid applying custom colors to page-control indicator images.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -37620,7 +37622,7 @@
         "Platform considerations",
         "iOS, iPadOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "84146d5d242361682191ff3aa22eddb0d1d085869df1fc7ac8a18cbd19bcbcfb",
       "evidence_paraphrase": "Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control."
@@ -37695,7 +37697,7 @@
         "Platform considerations",
         "iOS, iPadOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "8b526c8a6c9fc25e3d3aaaf88ed5bc26ae4b3b2e4ed4d527b664e44694c6b7c7",
       "evidence_paraphrase": "Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback."
@@ -37768,7 +37770,7 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "296dffab6864318350a66bc4b879714a146b4c444102c5306ae5bcab5a05c279",
       "evidence_paraphrase": "Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy."
@@ -37841,7 +37843,7 @@
         "Platform considerations",
         "watchOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "86d1ee6bf063aa38902090649a895c3466cc0e749bf20a49c73f92ca99ee43d2",
       "evidence_paraphrase": "Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown."
@@ -37914,7 +37916,7 @@
         "Platform considerations",
         "watchOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "fcaee8d3b8bd0e0fec09f439a0947621611cf3c78821cf619e49838323db6c42",
       "evidence_paraphrase": "Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose."
@@ -37932,17 +37934,17 @@
   },
   {
     "id": "HIG-COMPONENTS-PAGE-CONTROLS-0010",
-    "title": "Center a page control at the bottom of the view or window",
+    "title": "Center page controls near the bottom edge",
     "category": "components",
     "topic": "page-controls",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Center a page control at the bottom of the view or window.",
-      "ja": "a page control at the bottom of the view or windowを中央に置く。"
+      "en": "Center a horizontal page control near the bottom of its view or window.",
+      "ja": "横方向のpage controlをviewまたはwindowの下端付近の中央に配置する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -37967,7 +37969,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep the control discoverable without obscuring page content."
     ],
     "exceptions": [],
     "rationale": {
@@ -37977,7 +37979,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Center a page control at the bottom of the view or window.” in the documented Page controls context?"
+        "Does the design satisfy “Center a horizontal page control near the bottom of its view or window.” in the documented Page controls context?"
       ]
     },
     "testability": "manual",
@@ -37994,10 +37996,10 @@
         "Page controls",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:09.571Z",
+      "retrieved_at": "2026-07-22T17:06:58Z",
       "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
       "source_sentence_hash": "014a7afe45919f0b56c6f67575e2064490aa76e989a72273c5ea15ef797779f3",
-      "evidence_paraphrase": "Center a page control at the bottom of the view or window."
+      "evidence_paraphrase": "Center a horizontal page control near the bottom of its view or window."
     },
     "tags": [
       "components",
@@ -38006,7 +38008,775 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Center a page control at the bottom of the view or window.",
+    "apple_native_rule": "Center a horizontal page control near the bottom of its view or window.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0011",
+    "title": "Avoid too many peer pages in a page control",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid displaying so many peer pages that a page control becomes difficult to navigate.",
+      "ja": "操作しにくくなるほど多くの対等なページをpage controlに表示しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "People can have difficulty navigating more than about 10 peer pages."
+    ],
+    "exceptions": [
+      "For a larger peer collection, consider a grid or another arrangement that supports direct navigation."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid displaying so many peer pages that a page control becomes difficult to navigate.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "0bda46491fdc85e315c69b0cc1cf589932a1598eed6090bc8e1af6aa8ed8b124",
+      "evidence_paraphrase": "Avoid displaying so many peer pages that a page control becomes difficult to navigate."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid displaying so many peer pages that a page control becomes difficult to navigate.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0012",
+    "title": "Customize the default indicator only when it adds meaning",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "customizing-indicators",
+    "statement": {
+      "en": "Use a custom default indicator image only when it enhances the page control's overall meaning.",
+      "ja": "page control全体の意味を高める場合に限り、default indicator imageをカスタマイズする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The default indicator represents the pages that don't need a unique image."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a custom default indicator image only when it enhances the page control's overall meaning.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Customizing indicators"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "ea28b3f53d9379c0273573a46f0a32680303085337e53cf5a1188d41e6ffaf4c",
+      "evidence_paraphrase": "Use a custom default indicator image only when it enhances the page control's overall meaning."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "customizing-indicators"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use a custom default indicator image only when it enhances the page control's overall meaning.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0013",
+    "title": "Avoid complex page-control indicator shapes",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "customizing-indicators",
+    "statement": {
+      "en": "Avoid complex shapes in custom page-control indicator images.",
+      "ja": "page controlのカスタムindicator imageで複雑な形状を使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Indicators are small and need to remain immediately recognizable."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid complex shapes in custom page-control indicator images.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Customizing indicators"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "89e92113a94e8b85955a0c0f9008d43d812c37ad17a06ccb9f024579ea06a9b3",
+      "evidence_paraphrase": "Avoid complex shapes in custom page-control indicator images."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "customizing-indicators"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid complex shapes in custom page-control indicator images.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0014",
+    "title": "Avoid fine details in custom indicator images",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "customizing-indicators",
+    "statement": {
+      "en": "Avoid negative space, text, and inner lines in custom page-control indicator images.",
+      "ja": "page controlのカスタムindicator imageでnegative space、文字、内側の線を使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Fine details can become muddy at the small indicator size."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid negative space, text, and inner lines in custom page-control indicator images.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Customizing indicators"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "89e92113a94e8b85955a0c0f9008d43d812c37ad17a06ccb9f024579ea06a9b3",
+      "evidence_paraphrase": "Avoid negative space, text, and inner lines in custom page-control indicator images."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "customizing-indicators"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid negative space, text, and inner lines in custom page-control indicator images.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0015",
+    "title": "Consider simple SF Symbols for indicators",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "customizing-indicators",
+    "statement": {
+      "en": "Consider using simple SF Symbols as page-control indicator images.",
+      "ja": "page controlのindicator imageとして単純なSF Symbolsを使うことを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [
+      "Use simple custom icons when an appropriate SF Symbol isn't available."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider using simple SF Symbols as page-control indicator images.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Customizing indicators"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "89e92113a94e8b85955a0c0f9008d43d812c37ad17a06ccb9f024579ea06a9b3",
+      "evidence_paraphrase": "Consider using simple SF Symbols as page-control indicator images."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "customizing-indicators"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider using simple SF Symbols as page-control indicator images.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0016",
+    "title": "Use the automatic background for secondary page navigation",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Use the automatic page-control background style when the control isn't the screen's primary navigation.",
+      "ja": "page controlが画面の主要navigationでない場合はautomatic background styleを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The automatic style displays its background only while people interact with the control."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the automatic page-control background style when the control isn't the screen's primary navigation.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "320ed16e2c3813fb0e862af5a068844748de865878fbe32d4a98f50cc0e846ab",
+      "evidence_paraphrase": "Use the automatic page-control background style when the control isn't the screen's primary navigation."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use the automatic page-control background style when the control isn't the screen's primary navigation.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0017",
+    "title": "Reserve the prominent background for primary navigation",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Use the prominent page-control background style only for the screen's primary navigation control.",
+      "ja": "画面の主要navigation controlに限り、prominent page-control background styleを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The prominent style always displays its background."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the prominent page-control background style only for the screen's primary navigation control.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "0489c38f4fe9aa0bdb7f6d01d098dd03b9fefc4b5d1eab8a1149021072c2d5d7",
+      "evidence_paraphrase": "Use the prominent page-control background style only for the screen's primary navigation control."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use the prominent page-control background style only for the screen's primary navigation control.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0018",
+    "title": "Use the minimal background only without scrubbing feedback",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Use the minimal page-control background style only when people don't need scrubbing feedback.",
+      "ja": "scrubbing feedbackが不要な場合に限り、minimal page-control background styleを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The minimal style never displays a background and only indicates the current position."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the minimal page-control background style only when people don't need scrubbing feedback.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "af9d344ba51d156acca5a945474957cdf3fe67abad482cc9f88753709b6b32d6",
+      "evidence_paraphrase": "Use the minimal page-control background style only when people don't need scrubbing feedback."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use the minimal page-control background style only when people don't need scrubbing feedback.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0019",
+    "title": "Avoid relying on page controls in macOS",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid relying on page controls in macOS.",
+      "ja": "macOSではpage controlに依存しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "macOS doesn't support page controls."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid relying on page controls in macOS.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "98c0db947157f24f9e75285d7e2800fb05eff09444eacff89cc1a6a1c4d65c2b",
+      "evidence_paraphrase": "Avoid relying on page controls in macOS."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "platform-considerations"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid relying on page controls in macOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-PAGE-CONTROLS-0020",
+    "title": "Avoid making visionOS page controls interactive",
+    "category": "components",
+    "topic": "page-controls",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Avoid making page controls interactive in visionOS.",
+      "ja": "visionOSではpage controlを対話可能にしない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [
+        "page-controls"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "A visionOS page control shows the current page and total availability, but people don't use it to navigate."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Page controls experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPage controlsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid making page controls interactive in visionOS.” in the documented Page controls context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/page-controls",
+      "page_title": "Page controls",
+      "section_path": [
+        "Page controls",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-22T17:06:58Z",
+      "source_hash": "b286f6c174f6b2c7678cd289af8cd581410a1a4a4277e7f6f8b60ec490319a96",
+      "source_sentence_hash": "ce5bfd5ef5f13479ae9f169bbf6b0a61bd349eb3b47fc5b949f56dd6b412efe4",
+      "evidence_paraphrase": "Avoid making page controls interactive in visionOS."
+    },
+    "tags": [
+      "components",
+      "page-controls",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid making page controls interactive in visionOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

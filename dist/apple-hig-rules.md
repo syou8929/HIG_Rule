@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T17:05:52.196Z. 2792 active rules; 4 deprecated rules.
+Generated 2026-07-22T17:14:44.878Z. 2802 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1475,16 +1475,26 @@ Generated 2026-07-22T17:05:52.196Z. 2792 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-OUTLINE-VIEWS-0022 · MAY · high** — When useful, consider letting people reorder, add, and remove outline-view rows. ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
 ### page-controls
 
-- **HIG-COMPONENTS-PAGE-CONTROLS-0001 · SHOULD · low** — Choose or apply page controls to represent movement between an ordered list of pages in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
-- **HIG-COMPONENTS-PAGE-CONTROLS-0002 · MUST · medium** — Verify that custom indicator images are simple and clear. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
-- **HIG-COMPONENTS-PAGE-CONTROLS-0003 · AVOID · low** — Exclude using more than two different indicator images in a page control from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
-- **HIG-COMPONENTS-PAGE-CONTROLS-0004 · AVOID · low** — Exclude coloring indicator images from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0001 · SHOULD · high** — Use a page control to represent movement through an ordered list of peer pages. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0002 · MUST · high** — Make sure custom page-control indicator images are simple and clear. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0003 · AVOID · high** — Avoid using more than two distinct indicator images in one page control. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0004 · AVOID · high** — Avoid applying custom colors to page-control indicator images. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - **HIG-COMPONENTS-PAGE-CONTROLS-0005 · AVOID · high** — Avoid animating each page transition while a person scrubs through an iOS or iPadOS page control. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - **HIG-COMPONENTS-PAGE-CONTROLS-0006 · AVOID · high** — Avoid enabling page-control scrubbing with the minimal background style because it provides no scrubbing feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - **HIG-COMPONENTS-PAGE-CONTROLS-0007 · SHOULD · high** — Use a page control for a tvOS collection of content-rich full-screen pages that are peers in the hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - **HIG-COMPONENTS-PAGE-CONTROLS-0008 · SHOULD · high** — Separate watchOS views into purposeful vertical pages that people scroll with the Digital Crown. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 - **HIG-COMPONENTS-PAGE-CONTROLS-0009 · MAY · high** — Consider limiting each watchOS page to one screen height for a distinct, glanceable purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
-- **HIG-COMPONENTS-PAGE-CONTROLS-0010 · SHOULD · low** — Center a page control at the bottom of the view or window. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0010 · SHOULD · high** — Center a horizontal page control near the bottom of its view or window. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0011 · AVOID · high** — Avoid displaying so many peer pages that a page control becomes difficult to navigate. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0012 · SHOULD · high** — Use a custom default indicator image only when it enhances the page control's overall meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0013 · AVOID · high** — Avoid complex shapes in custom page-control indicator images. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0014 · AVOID · high** — Avoid negative space, text, and inner lines in custom page-control indicator images. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0015 · MAY · high** — Consider using simple SF Symbols as page-control indicator images. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0016 · SHOULD · high** — Use the automatic page-control background style when the control isn't the screen's primary navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0017 · SHOULD · high** — Use the prominent page-control background style only for the screen's primary navigation control. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0018 · SHOULD · high** — Use the minimal page-control background style only when people don't need scrubbing feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0019 · AVOID · high** — Avoid relying on page controls in macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
+- **HIG-COMPONENTS-PAGE-CONTROLS-0020 · AVOID · high** — Avoid making page controls interactive in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/page-controls))
 ### panels
 
 - **HIG-COMPONENTS-PANELS-0001 · SHOULD · high** — Use a panel to give people quick access to controls or information related to their current content. ([source](https://developer.apple.com/design/human-interface-guidelines/panels))

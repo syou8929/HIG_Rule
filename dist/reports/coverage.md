@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2792
+- Active atomic rules: 2802
 - Pages without rules: 16
-- Low-confidence rules: 753
-- Rules requiring human review: 753
+- Low-confidence rules: 749
+- Rules requiring human review: 749
 - Reference notes: 904
 
 ## Rules by category
 
-- components: 945
+- components: 955
 - foundations: 346
 - getting-started: 100
 - inputs: 245
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 387
-- MAY: 334
+- AVOID: 392
+- MAY: 335
 - MUST: 296
 - MUST_NOT: 32
-- SHOULD: 1743
+- SHOULD: 1747
 
 ## Rules by platform
 
 - carplay: 90
-- ios: 1841
-- ipados: 1813
-- macos: 1494
-- tvos: 1163
-- visionos: 1537
-- watchos: 1245
+- ios: 1849
+- ipados: 1821
+- macos: 1495
+- tvos: 1168
+- visionos: 1543
+- watchos: 1250
 
 ## Rules by testability
 
 - hybrid: 80
-- manual: 2712
+- manual: 2722
 
 ## Blocked pages
 
@@ -102,10 +102,6 @@ None.
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
 - HIG-COMPONENTS-LABELS-0004
-- HIG-COMPONENTS-PAGE-CONTROLS-0001
-- HIG-COMPONENTS-PAGE-CONTROLS-0003
-- HIG-COMPONENTS-PAGE-CONTROLS-0004
-- HIG-COMPONENTS-PAGE-CONTROLS-0010
 - HIG-COMPONENTS-POP-UP-BUTTONS-0001
 - HIG-COMPONENTS-POP-UP-BUTTONS-0002
 - HIG-COMPONENTS-POP-UP-BUTTONS-0003
@@ -858,10 +854,6 @@ None.
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
 - HIG-COMPONENTS-LABELS-0004
-- HIG-COMPONENTS-PAGE-CONTROLS-0001
-- HIG-COMPONENTS-PAGE-CONTROLS-0003
-- HIG-COMPONENTS-PAGE-CONTROLS-0004
-- HIG-COMPONENTS-PAGE-CONTROLS-0010
 - HIG-COMPONENTS-POP-UP-BUTTONS-0001
 - HIG-COMPONENTS-POP-UP-BUTTONS-0002
 - HIG-COMPONENTS-POP-UP-BUTTONS-0003
