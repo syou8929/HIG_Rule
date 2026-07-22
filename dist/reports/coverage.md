@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2842
+- Active atomic rules: 2843
 - Pages without rules: 16
-- Low-confidence rules: 714
-- Rules requiring human review: 714
+- Low-confidence rules: 712
+- Rules requiring human review: 712
 - Reference notes: 904
 
 ## Rules by category
 
-- components: 995
+- components: 996
 - foundations: 346
 - getting-started: 100
 - inputs: 245
@@ -22,7 +22,7 @@
 
 ## Normative levels
 
-- AVOID: 397
+- AVOID: 398
 - MAY: 338
 - MUST: 302
 - MUST_NOT: 33
@@ -34,14 +34,14 @@
 - ios: 1884
 - ipados: 1859
 - macos: 1530
-- tvos: 1191
+- tvos: 1192
 - visionos: 1576
-- watchos: 1273
+- watchos: 1274
 
 ## Rules by testability
 
 - hybrid: 80
-- manual: 2762
+- manual: 2763
 
 ## Blocked pages
 
@@ -129,8 +129,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-COMPONENTS-WEB-VIEWS-0001
-- HIG-COMPONENTS-WEB-VIEWS-0002
 - HIG-COMPONENTS-WIDGETS-0001
 - HIG-COMPONENTS-WIDGETS-0002
 - HIG-COMPONENTS-WIDGETS-0003
@@ -846,8 +844,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-COMPONENTS-WEB-VIEWS-0001
-- HIG-COMPONENTS-WEB-VIEWS-0002
 - HIG-COMPONENTS-WIDGETS-0001
 - HIG-COMPONENTS-WIDGETS-0002
 - HIG-COMPONENTS-WIDGETS-0003
@@ -2375,7 +2371,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Platform considerations — Watch-face sharing is supported only in watchOS, not iOS, iPadOS, macOS, tvOS, or visionOS.
 - https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/web-views · Web views > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/web-views · Web views > Platform considerations — Web views have no additional iOS, iPadOS, macOS, or visionOS guidance and aren't supported in tvOS or watchOS.
 - https://developer.apple.com/design/human-interface-guidelines/web-views · Web views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/web-views · Web views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/web-views · Web views > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.

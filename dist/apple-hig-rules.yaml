@@ -55879,16 +55879,16 @@
   apple_native_rule: Help people understand that an incompatible choice may produce an alternative watch face.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-WEB-VIEWS-0001
-  title: Support forward and back navigation when appropriate
+  title: Support navigation in multi-page web views
   category: components
   topic: web-views
   subtopic: best-practices
   statement:
-    en: Ensure the experience accommodates forward and back navigation when appropriate.
-    ja: forward and back navigation when appropriateを利用できる設計にする。
+    en: When people are likely to visit multiple pages in a web view, support forward and back navigation.
+    ja: web viewで複数pageを訪れる可能性が高い場合はforwardとback navigationをsupportする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -55907,7 +55907,7 @@
       - web-views
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Provide controls that initiate forward and back navigation because the behavior isn't available by default.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Web views experience on the scoped Apple platforms.
@@ -55915,7 +55915,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Ensure the experience accommodates forward and back navigation when appropriate.” in the documented Web views context?
+      - Does the design satisfy “When people are likely to visit multiple pages in a web view, support forward and back navigation.” in the documented Web views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -55930,26 +55930,26 @@
     retrieved_at: 2026-07-21T11:15:29.879Z
     source_hash: d6d1c808117ab7d92415e37b5e749596eee845c3be0c2cd94f78fe9c133fcc87
     source_sentence_hash: 9d45a37b8a7db4b6c1b2dd14e981d636f2f809f367ec115f20077ab87d5199dc
-    evidence_paraphrase: Ensure the experience accommodates forward and back navigation when appropriate.
+    evidence_paraphrase: When people are likely to visit multiple pages in a web view, support forward and back navigation.
   tags:
     - components
     - web-views
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Ensure the experience accommodates forward and back navigation when appropriate.
+  apple_native_rule: When people are likely to visit multiple pages in a web view, support forward and back navigation.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-WEB-VIEWS-0002
-  title: Avoid using a web view to build a web browser
+  title: Avoid recreating a web browser with a web view
   category: components
   topic: web-views
   subtopic: best-practices
   statement:
-    en: Exclude using a web view to build a web browser from the applicable experience.
-    ja: 該当する体験ではusing a web view to build a web browserを避ける。
+    en: Avoid using a web view to recreate Safari-style web-browsing functionality.
+    ja: Safariのようなweb browsing機能を再現するためにweb viewを使わない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -55969,14 +55969,15 @@
     modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - Briefly presenting a website without making people leave the app context is acceptable.
   rationale:
     en: Applying this guidance supports a consistent and usable Web views experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるWeb viewsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude using a web view to build a web browser from the applicable experience.” in the documented Web views context?
+      - Does the design satisfy “Avoid using a web view to recreate Safari-style web-browsing functionality.” in the documented Web views context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -55991,14 +55992,71 @@
     retrieved_at: 2026-07-21T11:15:29.879Z
     source_hash: d6d1c808117ab7d92415e37b5e749596eee845c3be0c2cd94f78fe9c133fcc87
     source_sentence_hash: 512483e26b9f16d2866026c062b91a99d9386d15144e622a342f66091c3e53fa
-    evidence_paraphrase: Exclude using a web view to build a web browser from the applicable experience.
+    evidence_paraphrase: Avoid using a web view to recreate Safari-style web-browsing functionality.
   tags:
     - components
     - web-views
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude using a web view to build a web browser from the applicable experience.
+  apple_native_rule: Avoid using a web view to recreate Safari-style web-browsing functionality.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-WEB-VIEWS-0003
+  title: Avoid web views on tvOS and watchOS
+  category: components
+  topic: web-views
+  subtopic: platform-considerations
+  statement:
+    en: Avoid using web views on tvOS or watchOS because the component isn't supported there.
+    ja: componentがsupportされないためtvOSまたはwatchOSでweb viewを使わない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - tvos
+      - watchos
+    devices:
+      - apple-tv
+      - apple-watch
+    components:
+      - web-views
+    modalities: []
+  conditions:
+    - There are no additional Web views considerations for iOS, iPadOS, macOS, or visionOS.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Web views experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWeb viewsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid using web views on tvOS or watchOS because the component isn't supported there.” in the documented Web views context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/web-views
+    page_title: Web views
+    section_path:
+      - Web views
+      - Platform considerations
+    retrieved_at: 2026-07-21T11:15:29.879Z
+    source_hash: d6d1c808117ab7d92415e37b5e749596eee845c3be0c2cd94f78fe9c133fcc87
+    source_sentence_hash: a4224ba970b6254ef085ca1f73ce89f0a0b8bbda530830ccb63aa1bfed544124
+    evidence_paraphrase: Avoid using web views on tvOS or watchOS because the component isn't supported there.
+  tags:
+    - components
+    - web-views
+    - platform-considerations
+  priority_rank: 4
+  status: active
+  apple_native_rule: Avoid using web views on tvOS or watchOS because the component isn't supported there.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-WIDGETS-0001
   title: Choose simple ideas that relate to your app’s main purpose

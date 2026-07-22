@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2073
-- Reviewed batches: 136
+- Reviewed rules: 2076
+- Reviewed batches: 137
 - Official source only: yes
-- Reviewed at: 2026-07-22T17:45:02Z
+- Reviewed at: 2026-07-22T23:14:03Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -857,6 +857,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-WATCH-FACES-0010 · high — Recovered the optional compatibility label without converting can to a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
 - HIG-COMPONENTS-WATCH-FACES-0011 · high — Recovered the immediate compatible alternative as conditional MAY guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
 - HIG-COMPONENTS-WATCH-FACES-0012 · high — Separated the disclosure from the optional alternative-handling action. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
+- HIG-COMPONENTS-WEB-VIEWS-0001 · high — Repaired the generic Support paraphrase and recorded the multi-page condition plus explicit controls. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))
+- HIG-COMPONENTS-WEB-VIEWS-0002 · high — Replaced the generated grammar and preserved brief in-app website access as the documented exception. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))
+- HIG-COMPONENTS-WEB-VIEWS-0003 · high — Recovered the descriptive unsupported-platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))
 - HIG-COMPONENTS-WIDGETS-0029 · high — Narrowed the rule from the shared section to iPhone and recorded reduced-luminance contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0030 · high — Recorded that widgets aren't real-time surfaces and preserved the limited-duration tracking condition. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0031 · high — Made the test matrix explicit and split both Make sure outcomes into MUST rules. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))

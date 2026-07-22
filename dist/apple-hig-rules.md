@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T23:05:37.675Z. 2842 active rules; 4 deprecated rules.
+Generated 2026-07-22T23:15:19.373Z. 2843 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1973,8 +1973,9 @@ Generated 2026-07-22T23:05:37.675Z. 2842 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-WATCH-FACES-0012 · SHOULD · high** — Help people understand that an incompatible choice may produce an alternative watch face. ([source](https://developer.apple.com/design/human-interface-guidelines/watch-faces))
 ### web-views
 
-- **HIG-COMPONENTS-WEB-VIEWS-0001 · SHOULD · low** — Ensure the experience accommodates forward and back navigation when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))
-- **HIG-COMPONENTS-WEB-VIEWS-0002 · AVOID · low** — Exclude using a web view to build a web browser from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))
+- **HIG-COMPONENTS-WEB-VIEWS-0001 · SHOULD · high** — When people are likely to visit multiple pages in a web view, support forward and back navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))
+- **HIG-COMPONENTS-WEB-VIEWS-0002 · AVOID · high** — Avoid using a web view to recreate Safari-style web-browsing functionality. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))
+- **HIG-COMPONENTS-WEB-VIEWS-0003 · AVOID · high** — Avoid using web views on tvOS or watchOS because the component isn't supported there. ([source](https://developer.apple.com/design/human-interface-guidelines/web-views))
 ### widgets
 
 - **HIG-COMPONENTS-WIDGETS-0001 · SHOULD · low** — Apply the documented Widgets guidance to choose simple ideas that relate to your app’s main purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
