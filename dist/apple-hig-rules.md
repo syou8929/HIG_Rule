@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-22T16:33:12.111Z. 2752 active rules; 4 deprecated rules.
+Generated 2026-07-22T16:41:46.598Z. 2767 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1103,26 +1103,41 @@ Generated 2026-07-22T16:33:12.111Z. 2752 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-BUTTONS-0039 · SHOULD · high** — Assign the primary role to the button people are most likely to choose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 ### charts
 
-- **HIG-COMPONENTS-CHARTS-0001 · SHOULD · low** — Apply the documented Charts guidance to choose a mark type based on the information you want to communicate about the data. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0002 · MAY · low** — Evaluate whether combining mark types when it adds clarity to your chart is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0003 · SHOULD · low** — Choose or apply a fixed or dynamic axis range depending on the meaning of your chart in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0004 · SHOULD · low** — Favor familiar sequences of values in the tick and grid-line labels for an axis when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0005 · SHOULD · low** — Apply the documented Charts guidance to write descriptions that help people understand what a chart does before they view it. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0006 · SHOULD · low** — Apply the documented Charts guidance to make every chart in your app accessible. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0007 · SHOULD · low** — Preserve people’s ability to interact with the data when it makes sense, but don’t require interaction to reveal critical information. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0008 · SHOULD · low** — Apply the documented Charts guidance to make it easy for everyone to interact with a chart. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0009 · SHOULD · low** — Apply the documented Charts guidance to make an interactive chart easy to navigate when using keyboard commands (including full keyboard access) or Switch Control. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0010 · SHOULD · low** — Apply the documented Charts guidance to help people notice important changes in a chart. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0011 · AVOID · low** — Exclude relying solely on color to differentiate between different pieces of data or communicate essential information in a chart from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0012 · MAY · low** — Evaluate whether using Audio Graphs to give VoiceOver users more information about your chart is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0013 · SHOULD · low** — Apply the documented Charts guidance to write accessibility labels that support the purpose of your chart. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0014 · SHOULD · low** — Apply the documented Charts guidance to prioritize clarity and comprehensiveness. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0015 · AVOID · low** — Exclude using subjective terms from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0016 · SHOULD · low** — Apply the documented Charts guidance to describe what the chart’s details represent, not what they look like. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0017 · SHOULD · low** — Apply the documented Charts guidance to be consistent throughout your app when referring to a specific axis. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0001 · SHOULD · high** — Choose a chart mark type based on the information you need to communicate. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0002 · MAY · high** — Consider combining mark types when doing so adds clarity to a chart. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0003 · SHOULD · high** — Use a fixed or dynamic axis range according to the meaning and variability of the data. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0004 · SHOULD · high** — Prefer familiar value sequences for axis tick and grid-line labels. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0005 · SHOULD · high** — Write descriptions that explain a chart's purpose and function before people inspect it. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0006 · MUST · high** — Ensure every chart is fully accessible regardless of how people perceive content. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0007 · SHOULD · high** — Let people interact with chart data when interaction adds useful detail. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0008 · SHOULD · high** — Make chart interactions easy for people with every level of motor control. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0009 · SHOULD · high** — Make interactive chart navigation logical and predictable for keyboard and Switch Control users. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0010 · SHOULD · high** — Help people notice important changes to chart marks or axes. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0011 · AVOID · high** — Avoid relying only on color to distinguish chart data or communicate essential information. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0012 · MAY · high** — Consider using Audio Graphs to give VoiceOver users more chart information. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0013 · SHOULD · high** — Write accessibility labels whose detail and grouping support the chart's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0014 · SHOULD · high** — Make chart accessibility labels clear, comprehensive, and concise. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0015 · AVOID · high** — Avoid subjective terms in chart accessibility descriptions. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0016 · SHOULD · high** — Describe what chart details represent rather than what they look like. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0017 · SHOULD · high** — Refer to each chart axis consistently throughout the app. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 - **HIG-COMPONENTS-CHARTS-0018 · AVOID · high** — Avoid requiring complex chart interactions in a watchOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0019 · SHOULD · low** — Define the value of the lower bound based on mark type and chart usage explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
-- **HIG-COMPONENTS-CHARTS-0020 · SHOULD · low** — Hide visible text labels for axes and ticks from assistive technologies. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0019 · SHOULD · high** — Set an axis lower bound according to the mark type and the chart's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0020 · SHOULD · high** — Hide visible axis and tick labels from assistive technologies when accessible alternatives provide the same information. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0021 · SHOULD · high** — Adapt grid-line and label density and weight to the chart's context and tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0022 · MUST · high** — Ensure chart descriptions summarize the main message and essential key information. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0023 · SHOULD · high** — Use a consistent visual hierarchy that reflects the importance of chart elements. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0024 · SHOULD · high** — In compact environments, maximize the plot width available for examining a chart. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0025 · MUST · high** — In a compact chart, ensure vertical-axis labels are as short as possible without losing clarity. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0026 · AVOID · high** — Avoid requiring interaction to reveal critical chart information. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0027 · MAY · high** — Consider expanding a chart's hit target to the entire plot area when individual marks are too small. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0028 · MUST · high** — Ensure important chart changes remain noticeable without relying on animation. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0029 · SHOULD · high** — Align a chart with surrounding interface elements. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0030 · SHOULD · high** — Use visual separation between contiguous areas of color in a chart. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0031 · MUST · high** — Ensure noncolor alternatives communicate essential chart information and data distinctions. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0032 · MUST · high** — Ensure every chart supports VoiceOver navigation and information access. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0033 · MUST · high** — When Audio Graphs aren't used, provide an overview of the chart's structure and purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0034 · SHOULD · high** — Provide purpose-appropriate accessibility labels for important or interactive chart elements. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- **HIG-COMPONENTS-CHARTS-0035 · AVOID · high** — Avoid ambiguous formats and abbreviations in chart accessibility descriptions. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 ### collections
 
 - **HIG-COMPONENTS-COLLECTIONS-0001 · SHOULD · high** — Choose or apply the standard row or grid layout whenever possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))

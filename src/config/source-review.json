@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T16:28:23Z",
+  "reviewed_at": "2026-07-22T16:35:12Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2846,9 +2846,275 @@
         "HIG-COMPONENTS-BUTTONS-0001", "HIG-COMPONENTS-BUTTONS-0002", "HIG-COMPONENTS-BUTTONS-0003", "HIG-COMPONENTS-BUTTONS-0004", "HIG-COMPONENTS-BUTTONS-0005", "HIG-COMPONENTS-BUTTONS-0006", "HIG-COMPONENTS-BUTTONS-0007", "HIG-COMPONENTS-BUTTONS-0030", "HIG-COMPONENTS-BUTTONS-0031", "HIG-COMPONENTS-BUTTONS-0032", "HIG-COMPONENTS-BUTTONS-0033", "HIG-COMPONENTS-BUTTONS-0034", "HIG-COMPONENTS-BUTTONS-0035", "HIG-COMPONENTS-BUTTONS-0036", "HIG-COMPONENTS-BUTTONS-0037", "HIG-COMPONENTS-BUTTONS-0038", "HIG-COMPONENTS-BUTTONS-0039"
       ],
       "review_note": "Completed all general Buttons sections, preserved nine active IDs, recovered eight atomic rules including three input-accessibility MUST requirements, and kept the earlier macOS, visionOS, and watchOS review batch unchanged."
+    },
+    {
+      "id": "priority-6-charts-complete-context-2026-07-22",
+      "reviewed_at": "2026-07-22T16:35:12Z",
+      "review_method": "Rendered Apple HIG Charts marks, axes, descriptions, best practices, color, and accessibility guidance were reviewed; two repeated live renders matched the recorded main-content hash, while the previously reviewed watchOS rule remained in its original batch.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/charts", "source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-CHARTS-0001", "HIG-COMPONENTS-CHARTS-0002", "HIG-COMPONENTS-CHARTS-0003", "HIG-COMPONENTS-CHARTS-0004", "HIG-COMPONENTS-CHARTS-0005", "HIG-COMPONENTS-CHARTS-0006", "HIG-COMPONENTS-CHARTS-0007", "HIG-COMPONENTS-CHARTS-0008", "HIG-COMPONENTS-CHARTS-0009", "HIG-COMPONENTS-CHARTS-0010", "HIG-COMPONENTS-CHARTS-0011", "HIG-COMPONENTS-CHARTS-0012", "HIG-COMPONENTS-CHARTS-0013", "HIG-COMPONENTS-CHARTS-0014", "HIG-COMPONENTS-CHARTS-0015", "HIG-COMPONENTS-CHARTS-0016", "HIG-COMPONENTS-CHARTS-0017", "HIG-COMPONENTS-CHARTS-0019", "HIG-COMPONENTS-CHARTS-0020", "HIG-COMPONENTS-CHARTS-0021", "HIG-COMPONENTS-CHARTS-0022", "HIG-COMPONENTS-CHARTS-0023", "HIG-COMPONENTS-CHARTS-0024", "HIG-COMPONENTS-CHARTS-0025", "HIG-COMPONENTS-CHARTS-0026", "HIG-COMPONENTS-CHARTS-0027", "HIG-COMPONENTS-CHARTS-0028", "HIG-COMPONENTS-CHARTS-0029", "HIG-COMPONENTS-CHARTS-0030", "HIG-COMPONENTS-CHARTS-0031", "HIG-COMPONENTS-CHARTS-0032", "HIG-COMPONENTS-CHARTS-0033", "HIG-COMPONENTS-CHARTS-0034", "HIG-COMPONENTS-CHARTS-0035"
+      ],
+      "review_note": "Completed all non-watchOS Charts sections, preserved nineteen active IDs, recovered fifteen atomic rules, and source-reviewed seven accessibility MUST decisions covering summaries, compact labels, nonanimated changes, noncolor encoding, VoiceOver, full accessibility, and the Audio Graph fallback."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-CHARTS-0001": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "d0e186a1d36b0c11c219fcc6ae49d7d87dc60e5f2aeadded4c03ff501f35d096", "section_path": ["Charts", "Marks"]},
+      "title": "Choose marks for the information being communicated",
+      "statement": {"en": "Choose a chart mark type based on the information you need to communicate.", "ja": "伝える必要があるinformationに基づいてchart mark typeを選ぶ。"},
+      "conditions": ["Use bars for category comparisons or proportions, lines for changes and trends, and points for relationships, outliers, or clusters."],
+      "review_note": "Replaced the generated wording and recorded each documented mark-type purpose."
+    },
+    "HIG-COMPONENTS-CHARTS-0002": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "dfa58ed40ed8d5dc8a5070bcff1159ed6887a0278c230c635b3327ba696176c1", "section_path": ["Charts", "Marks"]},
+      "title": "Consider combining mark types for clarity",
+      "statement": {"en": "Consider combining mark types when doing so adds clarity to a chart.", "ja": "chartの明確さが増す場合はmark typeの組み合わせを検討する。"},
+      "conditions": ["For example, points can expose individual values while a line communicates the overall trend."],
+      "review_note": "Retained MAY and recorded the distinct-detail versus trend relationship."
+    },
+    "HIG-COMPONENTS-CHARTS-0003": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "6e564f5af78e593291bfdb5fc266d15569fc33a697aef6d153da17fc9f4f3bbf", "section_path": ["Charts", "Axes"]},
+      "title": "Match fixed or dynamic axis range to meaning",
+      "statement": {"en": "Use a fixed or dynamic axis range according to the meaning and variability of the data.", "ja": "dataのmeaningとvariabilityに応じてfixedまたはdynamic axis rangeを使う。"},
+      "conditions": ["Use a fixed range when meaningful bounds apply to all values; consider a dynamic range when values vary widely and should fill the plot area."],
+      "review_note": "Recorded the semantic-bound and wide-variability conditions for both range choices."
+    },
+    "HIG-COMPONENTS-CHARTS-0004": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "3def0d8e84316ab0fd29f04878274dac9bfbd169ea8e34535f6c8dbb3a23723e", "section_path": ["Charts", "Axes"]},
+      "title": "Prefer familiar axis-label sequences",
+      "statement": {"en": "Prefer familiar value sequences for axis tick and grid-line labels.", "ja": "axis tickとgrid-line labelには見慣れたvalue sequenceを優先する。"},
+      "conditions": ["Use sequences whose interval people can recognize at a glance."],
+      "review_note": "Replaced the generated wording and recorded interval predictability."
+    },
+    "HIG-COMPONENTS-CHARTS-0005": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "d3b126dbcfb27e0a8bbe326c53895cfffa5aa66ddb6994fb03f58d79b64839e5", "section_path": ["Charts", "Descriptive content"]},
+      "title": "Explain a chart before people inspect it",
+      "statement": {"en": "Write descriptions that explain a chart's purpose and function before people inspect it.", "ja": "chartを詳しく見る前にpurposeとfunctionを説明するdescriptionを書く。"},
+      "conditions": ["Use information-rich titles and labels, especially for VoiceOver users and people with cognitive disabilities."],
+      "review_note": "Recorded the before-detail timing and accessibility rationale."
+    },
+    "HIG-COMPONENTS-CHARTS-0006": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "399c6903451f9e32f7884b101661ca00290424b719975aeeb796e0fe6d8a0584", "section_path": ["Charts", "Best practices"]},
+      "title": "Ensure every chart is accessible",
+      "statement": {"en": "Ensure every chart is fully accessible regardless of how people perceive content.", "ja": "contentの知覚方法にかかわらずすべてのchartを完全にaccessibleにする。"},
+      "conditions": ["Treat accessibility as required for every chart, not as an optional enhancement."],
+      "review_note": "Raised the general chart-accessibility rule to MUST from the explicit fully-accessible requirement."
+    },
+    "HIG-COMPONENTS-CHARTS-0007": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "3221f3ef38546e011781f682dcba476708259188d247f4d24ac336cac05cdc30", "section_path": ["Charts", "Best practices"]},
+      "title": "Allow useful chart-data interaction",
+      "statement": {"en": "Let people interact with chart data when interaction adds useful detail.", "ja": "有用なdetailが得られる場合はchart dataを操作できるようにする。"},
+      "conditions": ["Keep the chart's main message visible before interaction."],
+      "review_note": "Separated optional detail exploration from the critical-information interaction prohibition."
+    },
+    "HIG-COMPONENTS-CHARTS-0008": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "98f62a0cfceda88c9152e7c507397e9778c906a79c8f160ed6ff20c8f72273e4", "section_path": ["Charts", "Best practices"]},
+      "title": "Make chart interactions easy for everyone",
+      "statement": {"en": "Make chart interactions easy for people with every level of motor control.", "ja": "motor controlの程度にかかわらずchartを簡単に操作できるようにする。"},
+      "conditions": ["Don't require precise targeting of marks that are too small for a finger or pointer."],
+      "review_note": "Recorded the motor-control and target-size context."
+    },
+    "HIG-COMPONENTS-CHARTS-0009": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "a110fb1a97c53268fc87fdbff9789342ca2d1f7331390036c6bb84ce7d630c88", "section_path": ["Charts", "Best practices"]},
+      "title": "Make chart navigation logical for keyboard and Switch Control",
+      "statement": {"en": "Make interactive chart navigation logical and predictable for keyboard and Switch Control users.", "ja": "keyboardとSwitch Control利用者向けのinteractive chart navigationをlogicalかつpredictableにする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["keyboard", "screen-reader"]},
+      "conditions": ["Use accessibility APIs for a predictable path or focus subsets of values in very large datasets."],
+      "review_note": "Repaired truncation and recorded both documented custom-navigation strategies."
+    },
+    "HIG-COMPONENTS-CHARTS-0010": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "b453492c04f375c4fabeab136423b3474c9764565efe219d243b5b82b8dd544a", "section_path": ["Charts", "Best practices"]},
+      "title": "Help people notice chart changes",
+      "statement": {"en": "Help people notice important changes to chart marks or axes.", "ja": "chart markやaxisの重要なchangeに気づけるようにする。"},
+      "conditions": ["Animation can supplement but not replace a nonanimated accessibility cue."],
+      "review_note": "Recorded the misreading risk and split the mandatory nonanimation path."
+    },
+    "HIG-COMPONENTS-CHARTS-0011": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "965599a0fecdb42349c0d6be0c22bbd77865bd1bcd81213178ad5e53dedd67f4", "section_path": ["Charts", "Color"]},
+      "title": "Avoid color-only chart distinctions",
+      "statement": {"en": "Avoid relying only on color to distinguish chart data or communicate essential information.", "ja": "chart dataの区別や必須informationの伝達をcolorだけに依存しない。"},
+      "conditions": ["Pair color with a perceivable encoding such as shape or pattern."],
+      "review_note": "Repaired truncation and separated the required alternative encoding."
+    },
+    "HIG-COMPONENTS-CHARTS-0012": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "6343a916d9f1e210608ef83c8216b86d46a5fa159b581b43ee7ea1aa75cf884c", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Consider Audio Graphs for VoiceOver",
+      "statement": {"en": "Consider using Audio Graphs to give VoiceOver users more chart information.", "ja": "VoiceOver利用者へ追加のchart informationを提供するAudio Graphを検討する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Supply a chart title and descriptive summary when customizing the Swift Charts implementation."],
+      "review_note": "Retained MAY and corrected the modality from generic voice to screen reader."
+    },
+    "HIG-COMPONENTS-CHARTS-0013": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "cb32de50a5e47bb8617b3281c4e387529b9ed8f75e494e92efe428dbb76e1eed", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Write chart-purpose-aware accessibility labels",
+      "statement": {"en": "Write accessibility labels whose detail and grouping support the chart's purpose.", "ja": "chartのpurposeを支えるdetailとgroupingでaccessibility labelを書く。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Label individual marks or meaningful groups according to what people need to learn from the chart."],
+      "review_note": "Recorded the chart-purpose test and individual-versus-group label choice."
+    },
+    "HIG-COMPONENTS-CHARTS-0014": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "c45faafaf989e8628de4bd47709b8fc735025d2abb08e072d1e28a96d2ddf5ae", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Prioritize clear comprehensive chart labels",
+      "statement": {"en": "Make chart accessibility labels clear, comprehensive, and concise.", "ja": "chart accessibility labelを明確・包括的・簡潔にする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Provide context for a value without repeating information available from the overview or Audio Graphs."],
+      "review_note": "Recorded context-before-detail order and the redundancy boundary."
+    },
+    "HIG-COMPONENTS-CHARTS-0015": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "4808955beff65b69f6ca4974a362a8df096af191357b40b9b869fe08461ed17e", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Avoid subjective terms in chart descriptions",
+      "statement": {"en": "Avoid subjective terms in chart accessibility descriptions.", "ja": "chart accessibility descriptionでsubjective termを避ける。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Use actual values so people can form their own interpretation."],
+      "review_note": "Recorded the interpretation risk and objective-value alternative."
+    },
+    "HIG-COMPONENTS-CHARTS-0016": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "116edcdaa8079353006cfd2c2f91e43fed239f98099da0f8d6fcd32a9c6ae15f", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Describe chart meaning instead of appearance",
+      "statement": {"en": "Describe what chart details represent rather than what they look like.", "ja": "chart detailの見た目ではなく何を表すかを説明する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Identify each data series instead of describing its visual color."],
+      "review_note": "Corrected the generated gaze modality to screen reader and recorded semantic identification."
+    },
+    "HIG-COMPONENTS-CHARTS-0017": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "81b60eca3d4fe5acbd145118a4c234e96ecc5a5cb3e7b2f3210081a483cdeb71", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Refer to chart axes consistently",
+      "statement": {"en": "Refer to each chart axis consistently throughout the app.", "ja": "app全体で各chart axisを一貫して参照する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Use a stable axis order so people can identify the relevant axis quickly."],
+      "review_note": "Recorded the stable reference-order rationale."
+    },
+    "HIG-COMPONENTS-CHARTS-0019": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "cce4fd8efca303cf0d3aa20aaf3c0a8bb363c7c6f8b7d7e17b845a0c2af0921e", "section_path": ["Charts", "Axes"]},
+      "title": "Choose lower bounds by mark type and usage",
+      "statement": {"en": "Set an axis lower bound according to the mark type and the chart's purpose.", "ja": "mark typeとchart purposeに応じてaxis lower boundを設定する。"},
+      "conditions": ["Zero can support bar-height comparison, but avoid it when it obscures meaningful differences far from zero."],
+      "review_note": "Recorded both the zero-baseline benefit and the meaningful-difference risk."
+    },
+    "HIG-COMPONENTS-CHARTS-0020": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "3982648bf3364b775eaeaf2ffd24422788984996206e31c2d71f155f32ae71ed", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Hide redundant axis labels from assistive technologies",
+      "statement": {"en": "Hide visible axis and tick labels from assistive technologies when accessible alternatives provide the same information.", "ja": "accessible alternativeが同じinformationを提供する場合はvisible axis・tick labelをassistive technologyから隠す。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Accessibility labels and Audio Graphs already expose mark values and trend information."],
+      "review_note": "Added the redundancy condition so visible labels aren't hidden without equivalent accessible information."
+    },
+    "HIG-COMPONENTS-CHARTS-0021": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "77ff6061a2dbaa33c4910c0ebb70f2069b2c873a75d4d5c7ae41c91884fc8617", "section_path": ["Charts", "Axes"]},
+      "title": "Adapt grid lines and labels to chart use",
+      "statement": {"en": "Adapt grid-line and label density and weight to the chart's context and tasks.", "ja": "chartのcontextとtaskに合わせてgrid-line・labelのdensityとweightを調整する。"},
+      "conditions": ["Avoid both visual overload from too many lines and poor value estimation from too few."],
+      "review_note": "Recovered the omitted axes lead and both density failure modes."
+    },
+    "HIG-COMPONENTS-CHARTS-0022": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "6dd0ecde6729f05ea8eca4bbc87d6ac6f5c3e9d94677487568bda4ec137c3ab5", "section_path": ["Charts", "Descriptive content"]},
+      "title": "Ensure chart descriptions summarize key information",
+      "statement": {"en": "Ensure chart descriptions summarize the main message and essential key information.", "ja": "chart descriptionでmain messageと必須key informationを要約する。"},
+      "conditions": ["Help people grasp the chart's most important information without examining every detail."],
+      "review_note": "Recovered the explicit essential summary requirement."
+    },
+    "HIG-COMPONENTS-CHARTS-0023": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "85e53991fa3f160d6dbfb58808a0a8a64c2aeb53baff6562baa06ed092e8c10b", "section_path": ["Charts", "Best practices"]},
+      "title": "Use consistent chart visual hierarchy",
+      "statement": {"en": "Use a consistent visual hierarchy that reflects the importance of chart elements.", "ja": "chart elementの重要度を反映する一貫したvisual hierarchyを使う。"},
+      "conditions": ["Keep data most prominent and let descriptions and axes provide secondary context."],
+      "review_note": "Recovered the omitted hierarchy lead and source-defined prominence order."
+    },
+    "HIG-COMPONENTS-CHARTS-0024": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "a5dceed56449466a191523bfe85f6a4b7f0083150bc17cbea55cd03482b676ce", "section_path": ["Charts", "Best practices"]},
+      "title": "Maximize compact-chart plot width",
+      "statement": {"en": "In compact environments, maximize the plot width available for examining a chart.", "ja": "compact environmentではchart確認に使えるplot widthを最大化する。"},
+      "conditions": ["Move units or longer labels elsewhere only when doing so doesn't obscure important data."],
+      "review_note": "Recovered the compact-width lead and bounded the alternative label placements."
+    },
+    "HIG-COMPONENTS-CHARTS-0025": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "a5dceed56449466a191523bfe85f6a4b7f0083150bc17cbea55cd03482b676ce", "section_path": ["Charts", "Best practices"]},
+      "title": "Ensure compact-chart axis labels stay concise",
+      "statement": {"en": "In a compact chart, ensure vertical-axis labels are as short as possible without losing clarity.", "ja": "compact chartでは明確さを失わない範囲でvertical-axis labelを可能な限り短くする。"},
+      "conditions": ["Apply when chart width is constrained and vertical-axis labels consume plot space."],
+      "review_note": "Recovered the conditional explicit Ensure requirement."
+    },
+    "HIG-COMPONENTS-CHARTS-0026": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "3221f3ef38546e011781f682dcba476708259188d247f4d24ac336cac05cdc30", "section_path": ["Charts", "Best practices"]},
+      "title": "Avoid interaction-only critical chart information",
+      "statement": {"en": "Avoid requiring interaction to reveal critical chart information.", "ja": "critical chart informationの表示に操作を必須とすることを避ける。"},
+      "conditions": ["Make the chart's main message available before any interaction."],
+      "exceptions": ["Interaction can reveal optional details after the main message is already available."],
+      "review_note": "Recovered the explicit Don't clause separately from optional interaction."
+    },
+    "HIG-COMPONENTS-CHARTS-0027": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "98f62a0cfceda88c9152e7c507397e9778c906a79c8f160ed6ff20c8f72273e4", "section_path": ["Charts", "Best practices"]},
+      "title": "Consider a plot-wide chart hit target",
+      "statement": {"en": "Consider expanding a chart's hit target to the entire plot area when individual marks are too small.", "ja": "個々のmarkが小さすぎる場合はchart hit targetをplot area全体へ広げることを検討する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["touch", "pointer"]},
+      "conditions": ["Let people scrub across the enlarged target to reveal values."],
+      "review_note": "Recovered the conditional hit-target option and motor-accessibility purpose."
+    },
+    "HIG-COMPONENTS-CHARTS-0028": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "b453492c04f375c4fabeab136423b3474c9764565efe219d243b5b82b8dd544a", "section_path": ["Charts", "Best practices"]},
+      "title": "Ensure chart changes are noticeable without animation",
+      "statement": {"en": "Ensure important chart changes remain noticeable without relying on animation.", "ja": "animationに依存せず重要なchart changeに気づけるようにする。"},
+      "conditions": ["Provide a nonanimated cue for VoiceOver users and people who disable animations."],
+      "review_note": "Recovered the explicit accessibility requirement for an additional change cue."
+    },
+    "HIG-COMPONENTS-CHARTS-0029": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "a73d19bd54da8252ce53f3a3fb0eaeffa8d38b6a651a6c668266e6bc16809689", "section_path": ["Charts", "Best practices"]},
+      "title": "Align charts with surrounding interface elements",
+      "statement": {"en": "Align a chart with surrounding interface elements.", "ja": "chartを周囲のinterface elementと整列させる。"},
+      "conditions": ["Preserve a clean leading edge by placing vertical-grid labels carefully or moving the Y axis when appropriate."],
+      "review_note": "Recovered the omitted alignment lead and its leading-edge techniques."
+    },
+    "HIG-COMPONENTS-CHARTS-0030": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "bbc345391e0b550046a710bc0c7f154c36e5e066a5068264f4e1d73cf09dc8cb", "section_path": ["Charts", "Color"]},
+      "title": "Separate contiguous chart colors visually",
+      "statement": {"en": "Use visual separation between contiguous areas of color in a chart.", "ja": "chart内で隣接するcolor areaの間にvisual separationを設ける。"},
+      "conditions": ["Use separators to distinguish adjacent marks in stacked rows or columns."],
+      "review_note": "Recovered the omitted color-separation lead and stacked-mark application."
+    },
+    "HIG-COMPONENTS-CHARTS-0031": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "965599a0fecdb42349c0d6be0c22bbd77865bd1bcd81213178ad5e53dedd67f4", "section_path": ["Charts", "Color"]},
+      "title": "Ensure noncolor alternatives convey chart information",
+      "statement": {"en": "Ensure noncolor alternatives communicate essential chart information and data distinctions.", "ja": "非colorの代替手段で必須chart informationとdataの違いを伝える。"},
+      "conditions": ["Supplement color with shapes, patterns, labels, or another perceivable encoding."],
+      "review_note": "Recovered the source's crucial accessibility requirement separately from color-only avoidance."
+    },
+    "HIG-COMPONENTS-CHARTS-0032": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "399c6903451f9e32f7884b101661ca00290424b719975aeeb796e0fe6d8a0584", "section_path": ["Charts", "Best practices"]},
+      "title": "Ensure every chart supports VoiceOver",
+      "statement": {"en": "Ensure every chart supports VoiceOver navigation and information access.", "ja": "すべてのchartでVoiceOverによるnavigationとinformation accessを可能にする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Provide accessible descriptions and navigation without requiring visual perception."],
+      "checks": {"automated": ["Inspect the accessibility tree for meaningful chart summaries, elements, labels, values, and navigation order."], "manual": ["Can a VoiceOver user understand the chart's main message and navigate its meaningful details?"]},
+      "testability": "hybrid",
+      "review_note": "Recovered the explicit essential VoiceOver requirement with testable accessibility-tree coverage."
+    },
+    "HIG-COMPONENTS-CHARTS-0033": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "6343a916d9f1e210608ef83c8216b86d46a5fa159b581b43ee7ea1aa75cf884c", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Provide a chart overview without Audio Graphs",
+      "statement": {"en": "When Audio Graphs aren't used, provide an overview of the chart's structure and purpose.", "ja": "Audio Graphを使わない場合はchartのstructureとpurposeのoverviewを提供する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Identify the chart type, explain each axis, and describe upper and lower axis bounds."],
+      "review_note": "Recovered the explicit need-to-provide fallback and its required overview content."
+    },
+    "HIG-COMPONENTS-CHARTS-0034": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "cdbdd9454adee31fbfd3092d3131ac3f420f5027a641ce2d360dda28f312ea68", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Label important and interactive chart elements",
+      "statement": {"en": "Provide purpose-appropriate accessibility labels for important or interactive chart elements.", "ja": "重要またはinteractiveなchart elementにpurposeに合うaccessibility labelを提供する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Choose per-mark or grouped labels according to chart purpose, mark scope, and density."],
+      "exceptions": ["A small chart inside a control can use one succinct high-level label when it opens a detailed version."],
+      "review_note": "Recovered label coverage and granularity from the Important note without making per-mark labeling universal."
+    },
+    "HIG-COMPONENTS-CHARTS-0035": {
+      "source": {"source_hash": "18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e", "source_sentence_hash": "6b15498e25834514d5e2c499ee490c97c3d9eb68e103dd30a2c3d84695a2555c", "section_path": ["Charts", "Enhancing the accessibility of a chart"]},
+      "title": "Avoid ambiguous chart-description formats",
+      "statement": {"en": "Avoid ambiguous formats and abbreviations in chart accessibility descriptions.", "ja": "chart accessibility descriptionで曖昧なformatやabbreviationを避ける。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": ["charts"], "modalities": ["screen-reader"]},
+      "conditions": ["Spell out dates and units when compact forms could have multiple meanings."],
+      "review_note": "Recovered the omitted clarity lead and its date and unit examples."
+    },
     "HIG-COMPONENTS-BUTTONS-0001": {
       "source": {"source_hash": "d245cfb983ff54c8b6617ae143affa5f2b78fca459a41c11d8a56340448caf24", "source_sentence_hash": "ffb9387532afe104839eeed03030230c2ccc91eddd649ba3256d6abe92f11605", "section_path": ["Buttons", "Best practices"]},
       "title": "Make buttons easy to recognize and use",

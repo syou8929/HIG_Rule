@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 1897
-- Reviewed batches: 128
+- Reviewed rules: 1931
+- Reviewed batches: 129
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:28:23Z
+- Reviewed at: 2026-07-22T16:35:12Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -150,7 +150,41 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-BUTTONS-0037 · high — Recovered the label-length and action-description guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0038 · high — Recovered the conditional verb-led label guidance and retained MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0039 · high — Recovered the omitted positive primary-role guidance and preserved the destructive-button exception. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-CHARTS-0001 · high — Replaced the generated wording and recorded each documented mark-type purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0002 · high — Retained MAY and recorded the distinct-detail versus trend relationship. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0003 · high — Recorded the semantic-bound and wide-variability conditions for both range choices. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0004 · high — Replaced the generated wording and recorded interval predictability. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0005 · high — Recorded the before-detail timing and accessibility rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0006 · high — Raised the general chart-accessibility rule to MUST from the explicit fully-accessible requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0007 · high — Separated optional detail exploration from the critical-information interaction prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0008 · high — Recorded the motor-control and target-size context. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0009 · high — Repaired truncation and recorded both documented custom-navigation strategies. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0010 · high — Recorded the misreading risk and split the mandatory nonanimation path. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0011 · high — Repaired truncation and separated the required alternative encoding. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0012 · high — Retained MAY and corrected the modality from generic voice to screen reader. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0013 · high — Recorded the chart-purpose test and individual-versus-group label choice. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0014 · high — Recorded context-before-detail order and the redundancy boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0015 · high — Recorded the interpretation risk and objective-value alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0016 · high — Corrected the generated gaze modality to screen reader and recorded semantic identification. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0017 · high — Recorded the stable reference-order rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 - HIG-COMPONENTS-CHARTS-0018 · high — Recovered the qualified AVOID lead and recorded the glanceability and companion-platform guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0019 · high — Recorded both the zero-baseline benefit and the meaningful-difference risk. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0020 · high — Added the redundancy condition so visible labels aren't hidden without equivalent accessible information. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0021 · high — Recovered the omitted axes lead and both density failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0022 · high — Recovered the explicit essential summary requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0023 · high — Recovered the omitted hierarchy lead and source-defined prominence order. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0024 · high — Recovered the compact-width lead and bounded the alternative label placements. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0025 · high — Recovered the conditional explicit Ensure requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0026 · high — Recovered the explicit Don't clause separately from optional interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0027 · high — Recovered the conditional hit-target option and motor-accessibility purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0028 · high — Recovered the explicit accessibility requirement for an additional change cue. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0029 · high — Recovered the omitted alignment lead and its leading-edge techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0030 · high — Recovered the omitted color-separation lead and stacked-mark application. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0031 · high — Recovered the source's crucial accessibility requirement separately from color-only avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0032 · high — Recovered the explicit essential VoiceOver requirement with testable accessibility-tree coverage. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0033 · high — Recovered the explicit need-to-provide fallback and its required overview content. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0034 · high — Recovered label coverage and granularity from the Important note without making per-mark labeling universal. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0035 · high — Recovered the omitted clarity lead and its date and unit examples. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 - HIG-COMPONENTS-COLLECTIONS-0001 · high — Reviewed the rendered source context for “Use the standard row or grid layout whenever possible” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0002 · high — Reviewed the rendered source context for “Consider using a table instead of a collection for text” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0003 · high — Reviewed the rendered source context for “Make it easy to choose an item” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))

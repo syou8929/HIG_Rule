@@ -9593,16 +9593,16 @@
   apple_native_rule: Assign the primary role to the button people are most likely to choose.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0001
-  title: Choose a mark type based on the information you want to communicate about the data
+  title: Choose marks for the information being communicated
   category: components
   topic: charts
   subtopic: marks
   statement:
-    en: Apply the documented Charts guidance to choose a mark type based on the information you want to communicate about the data.
-    ja: 「Charts」において「Choose a mark type based on the information you want to communicate about the data」の指針を適用する。
+    en: Choose a chart mark type based on the information you need to communicate.
+    ja: 伝える必要があるinformationに基づいてchart mark typeを選ぶ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -9625,7 +9625,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use bars for category comparisons or proportions, lines for changes and trends, and points for relationships, outliers, or clusters.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -9633,7 +9633,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Charts guidance to choose a mark type based on the information you want to communicate about the data.” in the documented Charts context?
+      - Does the design satisfy “Choose a chart mark type based on the information you need to communicate.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9645,29 +9645,29 @@
     section_path:
       - Charts
       - Marks
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: d0e186a1d36b0c11c219fcc6ae49d7d87dc60e5f2aeadded4c03ff501f35d096
-    evidence_paraphrase: Apply the documented Charts guidance to choose a mark type based on the information you want to communicate about the data.
+    evidence_paraphrase: Choose a chart mark type based on the information you need to communicate.
   tags:
     - components
     - charts
     - marks
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Charts guidance to choose a mark type based on the information you want to communicate about the data.
+  apple_native_rule: Choose a chart mark type based on the information you need to communicate.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0002
-  title: Consider combining mark types when it adds clarity to your chart
+  title: Consider combining mark types for clarity
   category: components
   topic: charts
   subtopic: marks
   statement:
-    en: Evaluate whether combining mark types when it adds clarity to your chart is appropriate for the current context.
-    ja: combining mark types when it adds clarity to your chartが現在の状況に適切か検討する。
+    en: Consider combining mark types when doing so adds clarity to a chart.
+    ja: chartの明確さが増す場合はmark typeの組み合わせを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -9690,7 +9690,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - For example, points can expose individual values while a line communicates the overall trend.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -9698,7 +9698,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether combining mark types when it adds clarity to your chart is appropriate for the current context.” in the documented Charts context?
+      - Does the design satisfy “Consider combining mark types when doing so adds clarity to a chart.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9710,29 +9710,29 @@
     section_path:
       - Charts
       - Marks
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: dfa58ed40ed8d5dc8a5070bcff1159ed6887a0278c230c635b3327ba696176c1
-    evidence_paraphrase: Evaluate whether combining mark types when it adds clarity to your chart is appropriate for the current context.
+    evidence_paraphrase: Consider combining mark types when doing so adds clarity to a chart.
   tags:
     - components
     - charts
     - marks
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether combining mark types when it adds clarity to your chart is appropriate for the current context.
+  apple_native_rule: Consider combining mark types when doing so adds clarity to a chart.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0003
-  title: Use a fixed or dynamic axis range depending on the meaning of your chart
+  title: Match fixed or dynamic axis range to meaning
   category: components
   topic: charts
   subtopic: axes
   statement:
-    en: Choose or apply a fixed or dynamic axis range depending on the meaning of your chart in the documented context.
-    ja: 該当する状況ではa fixed or dynamic axis range depending on the meaning of your chartを採用する。
+    en: Use a fixed or dynamic axis range according to the meaning and variability of the data.
+    ja: dataのmeaningとvariabilityに応じてfixedまたはdynamic axis rangeを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -9755,7 +9755,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use a fixed range when meaningful bounds apply to all values; consider a dynamic range when values vary widely and should fill the plot area.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -9763,7 +9763,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply a fixed or dynamic axis range depending on the meaning of your chart in the documented context.” in the documented Charts context?
+      - Does the design satisfy “Use a fixed or dynamic axis range according to the meaning and variability of the data.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9775,29 +9775,29 @@
     section_path:
       - Charts
       - Axes
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: 6e564f5af78e593291bfdb5fc266d15569fc33a697aef6d153da17fc9f4f3bbf
-    evidence_paraphrase: Choose or apply a fixed or dynamic axis range depending on the meaning of your chart in the documented context.
+    evidence_paraphrase: Use a fixed or dynamic axis range according to the meaning and variability of the data.
   tags:
     - components
     - charts
     - axes
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply a fixed or dynamic axis range depending on the meaning of your chart in the documented context.
+  apple_native_rule: Use a fixed or dynamic axis range according to the meaning and variability of the data.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0004
-  title: Prefer familiar sequences of values in the tick and grid-line labels for an axis
+  title: Prefer familiar axis-label sequences
   category: components
   topic: charts
   subtopic: axes
   statement:
-    en: Favor familiar sequences of values in the tick and grid-line labels for an axis when the documented conditions apply.
-    ja: 該当条件ではfamiliar sequences of values in the tick and grid-line labels for an axisを優先する。
+    en: Prefer familiar value sequences for axis tick and grid-line labels.
+    ja: axis tickとgrid-line labelには見慣れたvalue sequenceを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -9820,7 +9820,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use sequences whose interval people can recognize at a glance.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -9828,7 +9828,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor familiar sequences of values in the tick and grid-line labels for an axis when the documented conditions apply.” in the documented Charts context?
+      - Does the design satisfy “Prefer familiar value sequences for axis tick and grid-line labels.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9840,29 +9840,29 @@
     section_path:
       - Charts
       - Axes
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: 3def0d8e84316ab0fd29f04878274dac9bfbd169ea8e34535f6c8dbb3a23723e
-    evidence_paraphrase: Favor familiar sequences of values in the tick and grid-line labels for an axis when the documented conditions apply.
+    evidence_paraphrase: Prefer familiar value sequences for axis tick and grid-line labels.
   tags:
     - components
     - charts
     - axes
   priority_rank: 6
   status: active
-  apple_native_rule: Favor familiar sequences of values in the tick and grid-line labels for an axis when the documented conditions apply.
+  apple_native_rule: Prefer familiar value sequences for axis tick and grid-line labels.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0005
-  title: Write descriptions that help people understand what a chart does before they view it
+  title: Explain a chart before people inspect it
   category: components
   topic: charts
   subtopic: descriptive-content
   statement:
-    en: Apply the documented Charts guidance to write descriptions that help people understand what a chart does before they view it.
-    ja: 「Charts」において「Write descriptions that help people understand what a chart does before they view it」の指針を適用する。
+    en: Write descriptions that explain a chart's purpose and function before people inspect it.
+    ja: chartを詳しく見る前にpurposeとfunctionを説明するdescriptionを書く。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -9885,7 +9885,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use information-rich titles and labels, especially for VoiceOver users and people with cognitive disabilities.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -9893,7 +9893,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Charts guidance to write descriptions that help people understand what a chart does before they view it.” in the documented Charts context?
+      - Does the design satisfy “Write descriptions that explain a chart's purpose and function before people inspect it.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9905,31 +9905,31 @@
     section_path:
       - Charts
       - Descriptive content
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: d3b126dbcfb27e0a8bbe326c53895cfffa5aa66ddb6994fb03f58d79b64839e5
-    evidence_paraphrase: Apply the documented Charts guidance to write descriptions that help people understand what a chart does before they view it.
+    evidence_paraphrase: Write descriptions that explain a chart's purpose and function before people inspect it.
   tags:
     - components
     - charts
     - descriptive-content
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Charts guidance to write descriptions that help people understand what a chart does before they view it.
+  apple_native_rule: Write descriptions that explain a chart's purpose and function before people inspect it.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0006
-  title: Make every chart in your app accessible
+  title: Ensure every chart is accessible
   category: components
   topic: charts
   subtopic: best-practices
   statement:
-    en: Apply the documented Charts guidance to make every chart in your app accessible.
-    ja: 「Charts」において「Make every chart in your app accessible」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure every chart is fully accessible regardless of how people perceive content.
+    ja: contentの知覚方法にかかわらずすべてのchartを完全にaccessibleにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: apple-component-specific
     platforms:
@@ -9950,7 +9950,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Treat accessibility as required for every chart, not as an optional enhancement.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -9958,7 +9958,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Charts guidance to make every chart in your app accessible.” in the documented Charts context?
+      - Does the design satisfy “Ensure every chart is fully accessible regardless of how people perceive content.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -9970,29 +9970,29 @@
     section_path:
       - Charts
       - Best practices
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: 399c6903451f9e32f7884b101661ca00290424b719975aeeb796e0fe6d8a0584
-    evidence_paraphrase: Apply the documented Charts guidance to make every chart in your app accessible.
+    evidence_paraphrase: Ensure every chart is fully accessible regardless of how people perceive content.
   tags:
     - components
     - charts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Charts guidance to make every chart in your app accessible.
+  apple_native_rule: Ensure every chart is fully accessible regardless of how people perceive content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0007
-  title: Let people interact with the data when it makes sense, but don’t require interaction to reveal critical inf…
+  title: Allow useful chart-data interaction
   category: components
   topic: charts
   subtopic: best-practices
   statement:
-    en: Preserve people’s ability to interact with the data when it makes sense, but don’t require interaction to reveal critical information.
-    ja: 利用者がinteract with the data when it makes sense, but don’t require interaction to reveal critical informationできる状態を保つ。
+    en: Let people interact with chart data when interaction adds useful detail.
+    ja: 有用なdetailが得られる場合はchart dataを操作できるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10015,7 +10015,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep the chart's main message visible before interaction.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10023,7 +10023,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Preserve people’s ability to interact with the data when it makes sense, but don’t require interaction to reveal critical information.” in the documented Charts context?
+      - Does the design satisfy “Let people interact with chart data when interaction adds useful detail.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10035,29 +10035,29 @@
     section_path:
       - Charts
       - Best practices
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: 3221f3ef38546e011781f682dcba476708259188d247f4d24ac336cac05cdc30
-    evidence_paraphrase: Preserve people’s ability to interact with the data when it makes sense, but don’t require interaction to reveal critical information.
+    evidence_paraphrase: Let people interact with chart data when interaction adds useful detail.
   tags:
     - components
     - charts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Preserve people’s ability to interact with the data when it makes sense, but don’t require interaction to reveal critical information.
+  apple_native_rule: Let people interact with chart data when interaction adds useful detail.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0008
-  title: Make it easy for everyone to interact with a chart
+  title: Make chart interactions easy for everyone
   category: components
   topic: charts
   subtopic: best-practices
   statement:
-    en: Apply the documented Charts guidance to make it easy for everyone to interact with a chart.
-    ja: 「Charts」において「Make it easy for everyone to interact with a chart」の指針を適用する。
+    en: Make chart interactions easy for people with every level of motor control.
+    ja: motor controlの程度にかかわらずchartを簡単に操作できるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10080,7 +10080,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Don't require precise targeting of marks that are too small for a finger or pointer.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10088,7 +10088,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Charts guidance to make it easy for everyone to interact with a chart.” in the documented Charts context?
+      - Does the design satisfy “Make chart interactions easy for people with every level of motor control.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10100,29 +10100,29 @@
     section_path:
       - Charts
       - Best practices
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: 98f62a0cfceda88c9152e7c507397e9778c906a79c8f160ed6ff20c8f72273e4
-    evidence_paraphrase: Apply the documented Charts guidance to make it easy for everyone to interact with a chart.
+    evidence_paraphrase: Make chart interactions easy for people with every level of motor control.
   tags:
     - components
     - charts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Charts guidance to make it easy for everyone to interact with a chart.
+  apple_native_rule: Make chart interactions easy for people with every level of motor control.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0009
-  title: Make an interactive chart easy to navigate when using keyboard commands (including full keyboard access) or…
+  title: Make chart navigation logical for keyboard and Switch Control
   category: components
   topic: charts
   subtopic: best-practices
   statement:
-    en: Apply the documented Charts guidance to make an interactive chart easy to navigate when using keyboard commands (including full keyboard access) or Switch Control.
-    ja: 「Charts」において「Make an interactive chart easy to navigate when using keyboard commands (including full keyboard access) or Switch Control」の指針を適用する。
+    en: Make interactive chart navigation logical and predictable for keyboard and Switch Control users.
+    ja: keyboardとSwitch Control利用者向けのinteractive chart navigationをlogicalかつpredictableにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10145,8 +10145,9 @@
       - charts
     modalities:
       - keyboard
+      - screen-reader
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use accessibility APIs for a predictable path or focus subsets of values in very large datasets.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10155,7 +10156,7 @@
     automated:
       - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
     manual:
-      - Does the design satisfy “Apply the documented Charts guidance to make an interactive chart easy to navigate when using keyboard commands (including full keyboard access) or Switch Control.” in the documented Charts context?
+      - Does the design satisfy “Make interactive chart navigation logical and predictable for keyboard and Switch Control users.” in the documented Charts context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10167,10 +10168,10 @@
     section_path:
       - Charts
       - Best practices
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: a110fb1a97c53268fc87fdbff9789342ca2d1f7331390036c6bb84ce7d630c88
-    evidence_paraphrase: Apply the documented Charts guidance to make an interactive chart easy to navigate when using keyboard commands (including full keyboard access) or Switch Control.
+    evidence_paraphrase: Make interactive chart navigation logical and predictable for keyboard and Switch Control users.
   tags:
     - components
     - charts
@@ -10178,19 +10179,19 @@
     - keyboard
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Charts guidance to make an interactive chart easy to navigate when using keyboard commands (including full keyboard access) or Switch Control.
+  apple_native_rule: Make interactive chart navigation logical and predictable for keyboard and Switch Control users.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0010
-  title: Help people notice important changes in a chart
+  title: Help people notice chart changes
   category: components
   topic: charts
   subtopic: best-practices
   statement:
-    en: Apply the documented Charts guidance to help people notice important changes in a chart.
-    ja: 「Charts」において「Help people notice important changes in a chart」の指針を適用する。
+    en: Help people notice important changes to chart marks or axes.
+    ja: chart markやaxisの重要なchangeに気づけるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10213,7 +10214,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Animation can supplement but not replace a nonanimated accessibility cue.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10221,7 +10222,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Charts guidance to help people notice important changes in a chart.” in the documented Charts context?
+      - Does the design satisfy “Help people notice important changes to chart marks or axes.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10233,29 +10234,29 @@
     section_path:
       - Charts
       - Best practices
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: b453492c04f375c4fabeab136423b3474c9764565efe219d243b5b82b8dd544a
-    evidence_paraphrase: Apply the documented Charts guidance to help people notice important changes in a chart.
+    evidence_paraphrase: Help people notice important changes to chart marks or axes.
   tags:
     - components
     - charts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Charts guidance to help people notice important changes in a chart.
+  apple_native_rule: Help people notice important changes to chart marks or axes.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0011
-  title: Avoid relying solely on color to differentiate between different pieces of data or communicate essential in…
+  title: Avoid color-only chart distinctions
   category: components
   topic: charts
   subtopic: color
   statement:
-    en: Exclude relying solely on color to differentiate between different pieces of data or communicate essential information in a chart from the applicable experience.
-    ja: 該当する体験ではrelying solely on color to differentiate between different pieces of data or communicate essential information in a chartを避ける。
+    en: Avoid relying only on color to distinguish chart data or communicate essential information.
+    ja: chart dataの区別や必須informationの伝達をcolorだけに依存しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -10278,7 +10279,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Pair color with a perceivable encoding such as shape or pattern.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10286,7 +10287,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude relying solely on color to differentiate between different pieces of data or communicate essential information in a chart from the applicable experience.” in the documented Charts context?
+      - Does the design satisfy “Avoid relying only on color to distinguish chart data or communicate essential information.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10298,29 +10299,29 @@
     section_path:
       - Charts
       - Color
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: 965599a0fecdb42349c0d6be0c22bbd77865bd1bcd81213178ad5e53dedd67f4
-    evidence_paraphrase: Exclude relying solely on color to differentiate between different pieces of data or communicate essential information in a chart from the applicable experience.
+    evidence_paraphrase: Avoid relying only on color to distinguish chart data or communicate essential information.
   tags:
     - components
     - charts
     - color
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude relying solely on color to differentiate between different pieces of data or communicate essential information in a chart from the applicable experience.
+  apple_native_rule: Avoid relying only on color to distinguish chart data or communicate essential information.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0012
-  title: Consider using Audio Graphs to give VoiceOver users more information about your chart
+  title: Consider Audio Graphs for VoiceOver
   category: components
   topic: charts
   subtopic: enhancing-the-accessibility-of-a-chart
   statement:
-    en: Evaluate whether using Audio Graphs to give VoiceOver users more information about your chart is appropriate for the current context.
-    ja: using Audio Graphs to give VoiceOver users more information about your chartが現在の状況に適切か検討する。
+    en: Consider using Audio Graphs to give VoiceOver users more chart information.
+    ja: VoiceOver利用者へ追加のchart informationを提供するAudio Graphを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -10343,9 +10344,8 @@
       - charts
     modalities:
       - screen-reader
-      - voice
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Supply a chart title and descriptive summary when customizing the Swift Charts implementation.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10354,7 +10354,7 @@
     automated:
       - Inspect the platform accessibility tree for nonempty names, roles, values, and states on scoped elements.
     manual:
-      - Does the design satisfy “Evaluate whether using Audio Graphs to give VoiceOver users more information about your chart is appropriate for the current context.” in the documented Charts context?
+      - Does the design satisfy “Consider using Audio Graphs to give VoiceOver users more chart information.” in the documented Charts context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10366,10 +10366,10 @@
     section_path:
       - Charts
       - Enhancing the accessibility of a chart
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: 6343a916d9f1e210608ef83c8216b86d46a5fa159b581b43ee7ea1aa75cf884c
-    evidence_paraphrase: Evaluate whether using Audio Graphs to give VoiceOver users more information about your chart is appropriate for the current context.
+    evidence_paraphrase: Consider using Audio Graphs to give VoiceOver users more chart information.
   tags:
     - components
     - charts
@@ -10378,215 +10378,19 @@
     - voice
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether using Audio Graphs to give VoiceOver users more information about your chart is appropriate for the current context.
+  apple_native_rule: Consider using Audio Graphs to give VoiceOver users more chart information.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0013
-  title: Write accessibility labels that support the purpose of your chart
+  title: Write chart-purpose-aware accessibility labels
   category: components
   topic: charts
   subtopic: enhancing-the-accessibility-of-a-chart
   statement:
-    en: Apply the documented Charts guidance to write accessibility labels that support the purpose of your chart.
-    ja: 「Charts」において「Write accessibility labels that support the purpose of your chart」の指針を適用する。
+    en: Write accessibility labels whose detail and grouping support the chart's purpose.
+    ja: chartのpurposeを支えるdetailとgroupingでaccessibility labelを書く。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
-  scope:
-    portability: apple-component-specific
-    platforms:
-      - ios
-      - ipados
-      - macos
-      - tvos
-      - visionos
-      - watchos
-    devices:
-      - iphone
-      - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
-    components:
-      - charts
-    modalities: []
-  conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
-  rationale:
-    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
-    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
-  checks:
-    automated:
-      - Inspect the platform accessibility tree for nonempty names, roles, values, and states on scoped elements.
-    manual:
-      - Does the design satisfy “Apply the documented Charts guidance to write accessibility labels that support the purpose of your chart.” in the documented Charts context?
-  testability: hybrid
-  anti_patterns:
-    - Ignoring this guidance in a context where the source section applies.
-  positive_examples:
-    - A design review records how the implementation satisfies this rule and any source-scoped exception.
-  source:
-    url: https://developer.apple.com/design/human-interface-guidelines/charts
-    page_title: Charts
-    section_path:
-      - Charts
-      - Enhancing the accessibility of a chart
-    retrieved_at: 2026-07-21T11:14:42.378Z
-    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
-    source_sentence_hash: cb32de50a5e47bb8617b3281c4e387529b9ed8f75e494e92efe428dbb76e1eed
-    evidence_paraphrase: Apply the documented Charts guidance to write accessibility labels that support the purpose of your chart.
-  tags:
-    - components
-    - charts
-    - enhancing-the-accessibility-of-a-chart
-  priority_rank: 6
-  status: active
-  apple_native_rule: Apply the documented Charts guidance to write accessibility labels that support the purpose of your chart.
-  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-COMPONENTS-CHARTS-0014
-  title: Prioritize clarity and comprehensiveness
-  category: components
-  topic: charts
-  subtopic: enhancing-the-accessibility-of-a-chart
-  statement:
-    en: Apply the documented Charts guidance to prioritize clarity and comprehensiveness.
-    ja: 「Charts」において「Prioritize clarity and comprehensiveness」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
-  scope:
-    portability: apple-component-specific
-    platforms:
-      - ios
-      - ipados
-      - macos
-      - tvos
-      - visionos
-      - watchos
-    devices:
-      - iphone
-      - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
-    components:
-      - charts
-    modalities: []
-  conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
-  rationale:
-    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
-    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
-  checks:
-    automated: []
-    manual:
-      - Does the design satisfy “Apply the documented Charts guidance to prioritize clarity and comprehensiveness.” in the documented Charts context?
-  testability: manual
-  anti_patterns:
-    - Ignoring this guidance in a context where the source section applies.
-  positive_examples:
-    - A design review records how the implementation satisfies this rule and any source-scoped exception.
-  source:
-    url: https://developer.apple.com/design/human-interface-guidelines/charts
-    page_title: Charts
-    section_path:
-      - Charts
-      - Enhancing the accessibility of a chart
-    retrieved_at: 2026-07-21T11:14:42.378Z
-    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
-    source_sentence_hash: c45faafaf989e8628de4bd47709b8fc735025d2abb08e072d1e28a96d2ddf5ae
-    evidence_paraphrase: Apply the documented Charts guidance to prioritize clarity and comprehensiveness.
-  tags:
-    - components
-    - charts
-    - enhancing-the-accessibility-of-a-chart
-  priority_rank: 6
-  status: active
-  apple_native_rule: Apply the documented Charts guidance to prioritize clarity and comprehensiveness.
-  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-COMPONENTS-CHARTS-0015
-  title: Avoid using subjective terms
-  category: components
-  topic: charts
-  subtopic: enhancing-the-accessibility-of-a-chart
-  statement:
-    en: Exclude using subjective terms from the applicable experience.
-    ja: 該当する体験ではusing subjective termsを避ける。
-  normative_level: AVOID
-  confidence: low
-  review_required: true
-  polarity: discourage
-  severity: warning
-  scope:
-    portability: apple-component-specific
-    platforms:
-      - ios
-      - ipados
-      - macos
-      - tvos
-      - visionos
-      - watchos
-    devices:
-      - iphone
-      - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
-    components:
-      - charts
-    modalities: []
-  conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
-  rationale:
-    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
-    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
-  checks:
-    automated: []
-    manual:
-      - Does the design satisfy “Exclude using subjective terms from the applicable experience.” in the documented Charts context?
-  testability: manual
-  anti_patterns:
-    - Ignoring this guidance in a context where the source section applies.
-  positive_examples:
-    - A design review records how the implementation satisfies this rule and any source-scoped exception.
-  source:
-    url: https://developer.apple.com/design/human-interface-guidelines/charts
-    page_title: Charts
-    section_path:
-      - Charts
-      - Enhancing the accessibility of a chart
-    retrieved_at: 2026-07-21T11:14:42.378Z
-    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
-    source_sentence_hash: 4808955beff65b69f6ca4974a362a8df096af191357b40b9b869fe08461ed17e
-    evidence_paraphrase: Exclude using subjective terms from the applicable experience.
-  tags:
-    - components
-    - charts
-    - enhancing-the-accessibility-of-a-chart
-  priority_rank: 6
-  status: active
-  apple_native_rule: Exclude using subjective terms from the applicable experience.
-  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-COMPONENTS-CHARTS-0016
-  title: Describe what the chart’s details represent, not what they look like
-  category: components
-  topic: charts
-  subtopic: enhancing-the-accessibility-of-a-chart
-  statement:
-    en: Apply the documented Charts guidance to describe what the chart’s details represent, not what they look like.
-    ja: 「Charts」において「Describe what the chart’s details represent, not what they look like」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10608,18 +10412,19 @@
     components:
       - charts
     modalities:
-      - gaze
+      - screen-reader
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Label individual marks or meaningful groups according to what people need to learn from the chart.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
   checks:
-    automated: []
+    automated:
+      - Inspect the platform accessibility tree for nonempty names, roles, values, and states on scoped elements.
     manual:
-      - Does the design satisfy “Apply the documented Charts guidance to describe what the chart’s details represent, not what they look like.” in the documented Charts context?
-  testability: manual
+      - Does the design satisfy “Write accessibility labels whose detail and grouping support the chart's purpose.” in the documented Charts context?
+  testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
   positive_examples:
@@ -10630,30 +10435,29 @@
     section_path:
       - Charts
       - Enhancing the accessibility of a chart
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
-    source_sentence_hash: 116edcdaa8079353006cfd2c2f91e43fed239f98099da0f8d6fcd32a9c6ae15f
-    evidence_paraphrase: Apply the documented Charts guidance to describe what the chart’s details represent, not what they look like.
+    source_sentence_hash: cb32de50a5e47bb8617b3281c4e387529b9ed8f75e494e92efe428dbb76e1eed
+    evidence_paraphrase: Write accessibility labels whose detail and grouping support the chart's purpose.
   tags:
     - components
     - charts
     - enhancing-the-accessibility-of-a-chart
-    - gaze
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Charts guidance to describe what the chart’s details represent, not what they look like.
+  apple_native_rule: Write accessibility labels whose detail and grouping support the chart's purpose.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-COMPONENTS-CHARTS-0017
-  title: Be consistent throughout your app when referring to a specific axis
+- id: HIG-COMPONENTS-CHARTS-0014
+  title: Prioritize clear comprehensive chart labels
   category: components
   topic: charts
   subtopic: enhancing-the-accessibility-of-a-chart
   statement:
-    en: Apply the documented Charts guidance to be consistent throughout your app when referring to a specific axis.
-    ja: 「Charts」において「Be consistent throughout your app when referring to a specific axis」の指針を適用する。
+    en: Make chart accessibility labels clear, comprehensive, and concise.
+    ja: chart accessibility labelを明確・包括的・簡潔にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10674,9 +10478,10 @@
       - apple-watch
     components:
       - charts
-    modalities: []
+    modalities:
+      - screen-reader
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Provide context for a value without repeating information available from the overview or Audio Graphs.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10684,7 +10489,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Charts guidance to be consistent throughout your app when referring to a specific axis.” in the documented Charts context?
+      - Does the design satisfy “Make chart accessibility labels clear, comprehensive, and concise.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10696,17 +10501,216 @@
     section_path:
       - Charts
       - Enhancing the accessibility of a chart
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
-    source_sentence_hash: 81b60eca3d4fe5acbd145118a4c234e96ecc5a5cb3e7b2f3210081a483cdeb71
-    evidence_paraphrase: Apply the documented Charts guidance to be consistent throughout your app when referring to a specific axis.
+    source_sentence_hash: c45faafaf989e8628de4bd47709b8fc735025d2abb08e072d1e28a96d2ddf5ae
+    evidence_paraphrase: Make chart accessibility labels clear, comprehensive, and concise.
   tags:
     - components
     - charts
     - enhancing-the-accessibility-of-a-chart
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Charts guidance to be consistent throughout your app when referring to a specific axis.
+  apple_native_rule: Make chart accessibility labels clear, comprehensive, and concise.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0015
+  title: Avoid subjective terms in chart descriptions
+  category: components
+  topic: charts
+  subtopic: enhancing-the-accessibility-of-a-chart
+  statement:
+    en: Avoid subjective terms in chart accessibility descriptions.
+    ja: chart accessibility descriptionでsubjective termを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - screen-reader
+  conditions:
+    - Use actual values so people can form their own interpretation.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid subjective terms in chart accessibility descriptions.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Enhancing the accessibility of a chart
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 4808955beff65b69f6ca4974a362a8df096af191357b40b9b869fe08461ed17e
+    evidence_paraphrase: Avoid subjective terms in chart accessibility descriptions.
+  tags:
+    - components
+    - charts
+    - enhancing-the-accessibility-of-a-chart
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid subjective terms in chart accessibility descriptions.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0016
+  title: Describe chart meaning instead of appearance
+  category: components
+  topic: charts
+  subtopic: enhancing-the-accessibility-of-a-chart
+  statement:
+    en: Describe what chart details represent rather than what they look like.
+    ja: chart detailの見た目ではなく何を表すかを説明する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - screen-reader
+  conditions:
+    - Identify each data series instead of describing its visual color.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Describe what chart details represent rather than what they look like.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Enhancing the accessibility of a chart
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 116edcdaa8079353006cfd2c2f91e43fed239f98099da0f8d6fcd32a9c6ae15f
+    evidence_paraphrase: Describe what chart details represent rather than what they look like.
+  tags:
+    - components
+    - charts
+    - enhancing-the-accessibility-of-a-chart
+    - gaze
+  priority_rank: 6
+  status: active
+  apple_native_rule: Describe what chart details represent rather than what they look like.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0017
+  title: Refer to chart axes consistently
+  category: components
+  topic: charts
+  subtopic: enhancing-the-accessibility-of-a-chart
+  statement:
+    en: Refer to each chart axis consistently throughout the app.
+    ja: app全体で各chart axisを一貫して参照する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - screen-reader
+  conditions:
+    - Use a stable axis order so people can identify the relevant axis quickly.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Refer to each chart axis consistently throughout the app.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Enhancing the accessibility of a chart
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 81b60eca3d4fe5acbd145118a4c234e96ecc5a5cb3e7b2f3210081a483cdeb71
+    evidence_paraphrase: Refer to each chart axis consistently throughout the app.
+  tags:
+    - components
+    - charts
+    - enhancing-the-accessibility-of-a-chart
+  priority_rank: 6
+  status: active
+  apple_native_rule: Refer to each chart axis consistently throughout the app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0018
   title: Avoid complex chart interactions in watchOS
@@ -10753,7 +10757,7 @@
       - Charts
       - Platform considerations
       - watchOS
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: 47ac7b2cfc05f80e29321321ef76dfd4dfc566c180159a5243a8dcfb8e35b278
     evidence_paraphrase: Avoid requiring complex chart interactions in a watchOS app.
@@ -10767,16 +10771,16 @@
   apple_native_rule: Avoid requiring complex chart interactions in a watchOS app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0019
-  title: Define the value of the lower bound based on mark type and chart usage
+  title: Choose lower bounds by mark type and usage
   category: components
   topic: charts
   subtopic: axes
   statement:
-    en: Define the value of the lower bound based on mark type and chart usage explicitly.
-    ja: the value of the lower bound based on mark type and chart usageを明確に定義する。
+    en: Set an axis lower bound according to the mark type and the chart's purpose.
+    ja: mark typeとchart purposeに応じてaxis lower boundを設定する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10799,7 +10803,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Zero can support bar-height comparison, but avoid it when it obscures meaningful differences far from zero.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10807,7 +10811,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Define the value of the lower bound based on mark type and chart usage explicitly.” in the documented Charts context?
+      - Does the design satisfy “Set an axis lower bound according to the mark type and the chart's purpose.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10819,29 +10823,95 @@
     section_path:
       - Charts
       - Axes
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
     source_sentence_hash: cce4fd8efca303cf0d3aa20aaf3c0a8bb363c7c6f8b7d7e17b845a0c2af0921e
-    evidence_paraphrase: Define the value of the lower bound based on mark type and chart usage explicitly.
+    evidence_paraphrase: Set an axis lower bound according to the mark type and the chart's purpose.
   tags:
     - components
     - charts
     - axes
   priority_rank: 6
   status: active
-  apple_native_rule: Define the value of the lower bound based on mark type and chart usage explicitly.
+  apple_native_rule: Set an axis lower bound according to the mark type and the chart's purpose.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-CHARTS-0020
-  title: Hide visible text labels for axes and ticks from assistive technologies
+  title: Hide redundant axis labels from assistive technologies
   category: components
   topic: charts
   subtopic: enhancing-the-accessibility-of-a-chart
   statement:
-    en: Hide visible text labels for axes and ticks from assistive technologies.
-    ja: visible text labels for axes and ticks from assistive technologiesを隠す。
+    en: Hide visible axis and tick labels from assistive technologies when accessible alternatives provide the same information.
+    ja: accessible alternativeが同じinformationを提供する場合はvisible axis・tick labelをassistive technologyから隠す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - screen-reader
+  conditions:
+    - Accessibility labels and Audio Graphs already expose mark values and trend information.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Hide visible axis and tick labels from assistive technologies when accessible alternatives provide the same information.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Enhancing the accessibility of a chart
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 3982648bf3364b775eaeaf2ffd24422788984996206e31c2d71f155f32ae71ed
+    evidence_paraphrase: Hide visible axis and tick labels from assistive technologies when accessible alternatives provide the same information.
+  tags:
+    - components
+    - charts
+    - enhancing-the-accessibility-of-a-chart
+  priority_rank: 6
+  status: active
+  apple_native_rule: Hide visible axis and tick labels from assistive technologies when accessible alternatives provide the same information.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0021
+  title: Adapt grid lines and labels to chart use
+  category: components
+  topic: charts
+  subtopic: axes
+  statement:
+    en: Adapt grid-line and label density and weight to the chart's context and tasks.
+    ja: chartのcontextとtaskに合わせてgrid-line・labelのdensityとweightを調整する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -10864,7 +10934,7 @@
       - charts
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Avoid both visual overload from too many lines and poor value estimation from too few.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
@@ -10872,7 +10942,795 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Hide visible text labels for axes and ticks from assistive technologies.” in the documented Charts context?
+      - Does the design satisfy “Adapt grid-line and label density and weight to the chart's context and tasks.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Axes
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 77ff6061a2dbaa33c4910c0ebb70f2069b2c873a75d4d5c7ae41c91884fc8617
+    evidence_paraphrase: Adapt grid-line and label density and weight to the chart's context and tasks.
+  tags:
+    - components
+    - charts
+    - axes
+  priority_rank: 6
+  status: active
+  apple_native_rule: Adapt grid-line and label density and weight to the chart's context and tasks.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0022
+  title: Ensure chart descriptions summarize key information
+  category: components
+  topic: charts
+  subtopic: descriptive-content
+  statement:
+    en: Ensure chart descriptions summarize the main message and essential key information.
+    ja: chart descriptionでmain messageと必須key informationを要約する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Help people grasp the chart's most important information without examining every detail.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure chart descriptions summarize the main message and essential key information.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Descriptive content
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 6dd0ecde6729f05ea8eca4bbc87d6ac6f5c3e9d94677487568bda4ec137c3ab5
+    evidence_paraphrase: Ensure chart descriptions summarize the main message and essential key information.
+  tags:
+    - components
+    - charts
+    - descriptive-content
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure chart descriptions summarize the main message and essential key information.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0023
+  title: Use consistent chart visual hierarchy
+  category: components
+  topic: charts
+  subtopic: best-practices
+  statement:
+    en: Use a consistent visual hierarchy that reflects the importance of chart elements.
+    ja: chart elementの重要度を反映する一貫したvisual hierarchyを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Keep data most prominent and let descriptions and axes provide secondary context.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use a consistent visual hierarchy that reflects the importance of chart elements.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Best practices
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 85e53991fa3f160d6dbfb58808a0a8a64c2aeb53baff6562baa06ed092e8c10b
+    evidence_paraphrase: Use a consistent visual hierarchy that reflects the importance of chart elements.
+  tags:
+    - components
+    - charts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use a consistent visual hierarchy that reflects the importance of chart elements.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0024
+  title: Maximize compact-chart plot width
+  category: components
+  topic: charts
+  subtopic: best-practices
+  statement:
+    en: In compact environments, maximize the plot width available for examining a chart.
+    ja: compact environmentではchart確認に使えるplot widthを最大化する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Move units or longer labels elsewhere only when doing so doesn't obscure important data.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “In compact environments, maximize the plot width available for examining a chart.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Best practices
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: a5dceed56449466a191523bfe85f6a4b7f0083150bc17cbea55cd03482b676ce
+    evidence_paraphrase: In compact environments, maximize the plot width available for examining a chart.
+  tags:
+    - components
+    - charts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: In compact environments, maximize the plot width available for examining a chart.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0025
+  title: Ensure compact-chart axis labels stay concise
+  category: components
+  topic: charts
+  subtopic: best-practices
+  statement:
+    en: In a compact chart, ensure vertical-axis labels are as short as possible without losing clarity.
+    ja: compact chartでは明確さを失わない範囲でvertical-axis labelを可能な限り短くする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Apply when chart width is constrained and vertical-axis labels consume plot space.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “In a compact chart, ensure vertical-axis labels are as short as possible without losing clarity.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Best practices
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: a5dceed56449466a191523bfe85f6a4b7f0083150bc17cbea55cd03482b676ce
+    evidence_paraphrase: In a compact chart, ensure vertical-axis labels are as short as possible without losing clarity.
+  tags:
+    - components
+    - charts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: In a compact chart, ensure vertical-axis labels are as short as possible without losing clarity.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0026
+  title: Avoid interaction-only critical chart information
+  category: components
+  topic: charts
+  subtopic: best-practices
+  statement:
+    en: Avoid requiring interaction to reveal critical chart information.
+    ja: critical chart informationの表示に操作を必須とすることを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Make the chart's main message available before any interaction.
+  exceptions:
+    - Interaction can reveal optional details after the main message is already available.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid requiring interaction to reveal critical chart information.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Best practices
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 3221f3ef38546e011781f682dcba476708259188d247f4d24ac336cac05cdc30
+    evidence_paraphrase: Avoid requiring interaction to reveal critical chart information.
+  tags:
+    - components
+    - charts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid requiring interaction to reveal critical chart information.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0027
+  title: Consider a plot-wide chart hit target
+  category: components
+  topic: charts
+  subtopic: best-practices
+  statement:
+    en: Consider expanding a chart's hit target to the entire plot area when individual marks are too small.
+    ja: 個々のmarkが小さすぎる場合はchart hit targetをplot area全体へ広げることを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - touch
+      - pointer
+  conditions:
+    - Let people scrub across the enlarged target to reveal values.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider expanding a chart's hit target to the entire plot area when individual marks are too small.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Best practices
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 98f62a0cfceda88c9152e7c507397e9778c906a79c8f160ed6ff20c8f72273e4
+    evidence_paraphrase: Consider expanding a chart's hit target to the entire plot area when individual marks are too small.
+  tags:
+    - components
+    - charts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider expanding a chart's hit target to the entire plot area when individual marks are too small.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0028
+  title: Ensure chart changes are noticeable without animation
+  category: components
+  topic: charts
+  subtopic: best-practices
+  statement:
+    en: Ensure important chart changes remain noticeable without relying on animation.
+    ja: animationに依存せず重要なchart changeに気づけるようにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Provide a nonanimated cue for VoiceOver users and people who disable animations.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure important chart changes remain noticeable without relying on animation.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Best practices
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: b453492c04f375c4fabeab136423b3474c9764565efe219d243b5b82b8dd544a
+    evidence_paraphrase: Ensure important chart changes remain noticeable without relying on animation.
+  tags:
+    - components
+    - charts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure important chart changes remain noticeable without relying on animation.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0029
+  title: Align charts with surrounding interface elements
+  category: components
+  topic: charts
+  subtopic: best-practices
+  statement:
+    en: Align a chart with surrounding interface elements.
+    ja: chartを周囲のinterface elementと整列させる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Preserve a clean leading edge by placing vertical-grid labels carefully or moving the Y axis when appropriate.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Align a chart with surrounding interface elements.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Best practices
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: a73d19bd54da8252ce53f3a3fb0eaeffa8d38b6a651a6c668266e6bc16809689
+    evidence_paraphrase: Align a chart with surrounding interface elements.
+  tags:
+    - components
+    - charts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Align a chart with surrounding interface elements.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0030
+  title: Separate contiguous chart colors visually
+  category: components
+  topic: charts
+  subtopic: color
+  statement:
+    en: Use visual separation between contiguous areas of color in a chart.
+    ja: chart内で隣接するcolor areaの間にvisual separationを設ける。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Use separators to distinguish adjacent marks in stacked rows or columns.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use visual separation between contiguous areas of color in a chart.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Color
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: bbc345391e0b550046a710bc0c7f154c36e5e066a5068264f4e1d73cf09dc8cb
+    evidence_paraphrase: Use visual separation between contiguous areas of color in a chart.
+  tags:
+    - components
+    - charts
+    - color
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use visual separation between contiguous areas of color in a chart.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0031
+  title: Ensure noncolor alternatives convey chart information
+  category: components
+  topic: charts
+  subtopic: color
+  statement:
+    en: Ensure noncolor alternatives communicate essential chart information and data distinctions.
+    ja: 非colorの代替手段で必須chart informationとdataの違いを伝える。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities: []
+  conditions:
+    - Supplement color with shapes, patterns, labels, or another perceivable encoding.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure noncolor alternatives communicate essential chart information and data distinctions.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Color
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 965599a0fecdb42349c0d6be0c22bbd77865bd1bcd81213178ad5e53dedd67f4
+    evidence_paraphrase: Ensure noncolor alternatives communicate essential chart information and data distinctions.
+  tags:
+    - components
+    - charts
+    - color
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure noncolor alternatives communicate essential chart information and data distinctions.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0032
+  title: Ensure every chart supports VoiceOver
+  category: components
+  topic: charts
+  subtopic: best-practices
+  statement:
+    en: Ensure every chart supports VoiceOver navigation and information access.
+    ja: すべてのchartでVoiceOverによるnavigationとinformation accessを可能にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - screen-reader
+  conditions:
+    - Provide accessible descriptions and navigation without requiring visual perception.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Inspect the accessibility tree for meaningful chart summaries, elements, labels, values, and navigation order.
+    manual:
+      - Can a VoiceOver user understand the chart's main message and navigate its meaningful details?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Best practices
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 399c6903451f9e32f7884b101661ca00290424b719975aeeb796e0fe6d8a0584
+    evidence_paraphrase: Ensure every chart supports VoiceOver navigation and information access.
+  tags:
+    - components
+    - charts
+    - best-practices
+    - screen-reader
+    - voice
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure every chart supports VoiceOver navigation and information access.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0033
+  title: Provide a chart overview without Audio Graphs
+  category: components
+  topic: charts
+  subtopic: enhancing-the-accessibility-of-a-chart
+  statement:
+    en: When Audio Graphs aren't used, provide an overview of the chart's structure and purpose.
+    ja: Audio Graphを使わない場合はchartのstructureとpurposeのoverviewを提供する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - screen-reader
+  conditions:
+    - Identify the chart type, explain each axis, and describe upper and lower axis bounds.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When Audio Graphs aren't used, provide an overview of the chart's structure and purpose.” in the documented Charts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -10884,17 +11742,150 @@
     section_path:
       - Charts
       - Enhancing the accessibility of a chart
-    retrieved_at: 2026-07-21T11:14:42.378Z
+    retrieved_at: 2026-07-22T16:35:12Z
     source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
-    source_sentence_hash: 3982648bf3364b775eaeaf2ffd24422788984996206e31c2d71f155f32ae71ed
-    evidence_paraphrase: Hide visible text labels for axes and ticks from assistive technologies.
+    source_sentence_hash: 6343a916d9f1e210608ef83c8216b86d46a5fa159b581b43ee7ea1aa75cf884c
+    evidence_paraphrase: When Audio Graphs aren't used, provide an overview of the chart's structure and purpose.
   tags:
     - components
     - charts
     - enhancing-the-accessibility-of-a-chart
   priority_rank: 6
   status: active
-  apple_native_rule: Hide visible text labels for axes and ticks from assistive technologies.
+  apple_native_rule: When Audio Graphs aren't used, provide an overview of the chart's structure and purpose.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0034
+  title: Label important and interactive chart elements
+  category: components
+  topic: charts
+  subtopic: enhancing-the-accessibility-of-a-chart
+  statement:
+    en: Provide purpose-appropriate accessibility labels for important or interactive chart elements.
+    ja: 重要またはinteractiveなchart elementにpurposeに合うaccessibility labelを提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - screen-reader
+  conditions:
+    - Choose per-mark or grouped labels according to chart purpose, mark scope, and density.
+  exceptions:
+    - A small chart inside a control can use one succinct high-level label when it opens a detailed version.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Provide purpose-appropriate accessibility labels for important or interactive chart elements.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Enhancing the accessibility of a chart
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: cdbdd9454adee31fbfd3092d3131ac3f420f5027a641ce2d360dda28f312ea68
+    evidence_paraphrase: Provide purpose-appropriate accessibility labels for important or interactive chart elements.
+  tags:
+    - components
+    - charts
+    - enhancing-the-accessibility-of-a-chart
+  priority_rank: 6
+  status: active
+  apple_native_rule: Provide purpose-appropriate accessibility labels for important or interactive chart elements.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-CHARTS-0035
+  title: Avoid ambiguous chart-description formats
+  category: components
+  topic: charts
+  subtopic: enhancing-the-accessibility-of-a-chart
+  statement:
+    en: Avoid ambiguous formats and abbreviations in chart accessibility descriptions.
+    ja: chart accessibility descriptionで曖昧なformatやabbreviationを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - charts
+    modalities:
+      - screen-reader
+  conditions:
+    - Spell out dates and units when compact forms could have multiple meanings.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Charts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるChartsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid ambiguous formats and abbreviations in chart accessibility descriptions.” in the documented Charts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/charts
+    page_title: Charts
+    section_path:
+      - Charts
+      - Enhancing the accessibility of a chart
+    retrieved_at: 2026-07-22T16:35:12Z
+    source_hash: 18b8b6d1afe57d12c4774e24c0c41a566fcae755cccf94480b2894f930579d0e
+    source_sentence_hash: 6b15498e25834514d5e2c499ee490c97c3d9eb68e103dd30a2c3d84695a2555c
+    evidence_paraphrase: Avoid ambiguous formats and abbreviations in chart accessibility descriptions.
+  tags:
+    - components
+    - charts
+    - enhancing-the-accessibility-of-a-chart
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid ambiguous formats and abbreviations in chart accessibility descriptions.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COLLECTIONS-0001
   title: Use the standard row or grid layout whenever possible

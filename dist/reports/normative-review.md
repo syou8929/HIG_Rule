@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 310
-- Retained MUST: 279
+- Reviewed rules: 317
+- Retained MUST: 286
 - Retained MUST_NOT: 31
-- Normative level changes: 80
+- Normative level changes: 87
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:28:23Z
+- Reviewed at: 2026-07-22T16:35:12Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -31,6 +31,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-BUTTONS-0032 — Recovered MUST from the source's explicit essential and critical input-accessibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0033 — Recovered MUST from the explicit needs-at-least requirement, excluded the separate visionOS minimum, and preserved higher-priority platform accessibility values. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0034 — Recovered MUST from the explicit platform-specific minimum in the needs-at-least requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-CHARTS-0006 — Raised to the accessibility MUST supported by the source's explicit need-to-be-fully-accessible statement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0022 — Recovered MUST from the explicit essential summary requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0025 — Recovered the conditional MUST from the explicit Ensure directive in compact environments. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0028 — Recovered the accessibility MUST from the explicit need-to-highlight-in-other-ways requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0031 — Recovered the accessibility MUST from the source's explicit crucial alternative-encoding requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0032 — Recovered the explicit essential VoiceOver support requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0033 — Raised the conditional rule to MUST from the explicit need-to-provide fallback requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 - HIG-COMPONENTS-COLLECTIONS-0010 — Recovered MUST from the explicit Be sure directive and separated understandability from trackability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0011 — Recovered MUST from the explicit Be sure directive and separated trackability from understandability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COMPLICATIONS-0005 — Retained MUST after reconfirming the explicit Make sure directive and its system-rendering and legacy-template conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/complications))
@@ -285,6 +292,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-BUTTONS-0032 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the source's explicit essential and critical input-accessibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0033 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs-at-least requirement, excluded the separate visionOS minimum, and preserved higher-priority platform accessibility values. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0034 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit platform-specific minimum in the needs-at-least requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
+- HIG-COMPONENTS-CHARTS-0006 · MUST · retained_with_atomicity_or_scope_correction — Raised to the accessibility MUST supported by the source's explicit need-to-be-fully-accessible statement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit essential summary requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0025 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional MUST from the explicit Ensure directive in compact environments. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0028 · MUST · retained_with_atomicity_or_scope_correction — Recovered the accessibility MUST from the explicit need-to-highlight-in-other-ways requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered the accessibility MUST from the source's explicit crucial alternative-encoding requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0032 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit essential VoiceOver support requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
+- HIG-COMPONENTS-CHARTS-0033 · MUST · retained_with_atomicity_or_scope_correction — Raised the conditional rule to MUST from the explicit need-to-provide fallback requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/charts))
 - HIG-COMPONENTS-COLLECTIONS-0010 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive and separated understandability from trackability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive and separated trackability from understandability. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COMBO-BOXES-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/combo-boxes))

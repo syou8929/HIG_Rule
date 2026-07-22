@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T16:28:23Z",
+  "reviewed_at": "2026-07-22T16:35:12Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "68988c807c32e8de56d4471404a8b8631b0e33940a34acf48cb201c682cfb260",
@@ -8,13 +8,69 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 310,
+  "reviewed_rule_count": 317,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-COMPONENTS-CHARTS-0006": {
+      "title": "Ensure every chart is accessible",
+      "statement": {"en": "Ensure every chart is fully accessible regardless of how people perceive content.", "ja": "contentの知覚方法にかかわらずすべてのchartを完全にaccessibleにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Treat accessibility as required for every chart, not as an optional enhancement."],
+      "review_note": "Raised to the accessibility MUST supported by the source's explicit need-to-be-fully-accessible statement."
+    },
+    "HIG-COMPONENTS-CHARTS-0022": {
+      "title": "Ensure chart descriptions summarize key information",
+      "statement": {"en": "Ensure chart descriptions summarize the main message and essential key information.", "ja": "chart descriptionでmain messageと必須key informationを要約する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Help people grasp the chart's most important information without examining every detail."],
+      "review_note": "Recovered MUST from the explicit essential summary requirement."
+    },
+    "HIG-COMPONENTS-CHARTS-0025": {
+      "title": "Ensure compact-chart axis labels stay concise",
+      "statement": {"en": "In a compact chart, ensure vertical-axis labels are as short as possible without losing clarity.", "ja": "compact chartでは明確さを失わない範囲でvertical-axis labelを可能な限り短くする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply when chart width is constrained and vertical-axis labels consume plot space."],
+      "review_note": "Recovered the conditional MUST from the explicit Ensure directive in compact environments."
+    },
+    "HIG-COMPONENTS-CHARTS-0028": {
+      "title": "Ensure chart changes are noticeable without animation",
+      "statement": {"en": "Ensure important chart changes remain noticeable without relying on animation.", "ja": "animationに依存せず重要なchart changeに気づけるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Provide a nonanimated cue for VoiceOver users and people who disable animations."],
+      "review_note": "Recovered the accessibility MUST from the explicit need-to-highlight-in-other-ways requirement."
+    },
+    "HIG-COMPONENTS-CHARTS-0031": {
+      "title": "Ensure noncolor alternatives convey chart information",
+      "statement": {"en": "Ensure noncolor alternatives communicate essential chart information and data distinctions.", "ja": "非colorの代替手段で必須chart informationとdataの違いを伝える。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Supplement color with shapes, patterns, labels, or another perceivable encoding."],
+      "review_note": "Recovered the accessibility MUST from the source's explicit crucial alternative-encoding requirement."
+    },
+    "HIG-COMPONENTS-CHARTS-0032": {
+      "title": "Ensure every chart supports VoiceOver",
+      "statement": {"en": "Ensure every chart supports VoiceOver navigation and information access.", "ja": "すべてのchartでVoiceOverによるnavigationとinformation accessを可能にする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Provide accessible descriptions and navigation without requiring visual perception."],
+      "review_note": "Recovered the explicit essential VoiceOver support requirement."
+    },
+    "HIG-COMPONENTS-CHARTS-0033": {
+      "title": "Provide a chart overview without Audio Graphs",
+      "statement": {"en": "When Audio Graphs aren't used, provide an overview of the chart's structure and purpose.", "ja": "Audio Graphを使わない場合はchartのstructureとpurposeのoverviewを提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Identify the chart type, explain each axis, and describe upper and lower axis bounds."],
+      "review_note": "Raised the conditional rule to MUST from the explicit need-to-provide fallback requirement."
+    },
     "HIG-COMPONENTS-BUTTONS-0032": {
       "title": "Ensure sufficient space around every button",
       "statement": {"en": "Ensure every button has enough surrounding space for people to distinguish and activate it.", "ja": "各buttonの周囲に識別と操作に十分なspaceを確保する。"},
