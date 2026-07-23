@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T12:40:00Z",
+  "reviewed_at": "2026-07-23T12:51:11Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -3913,9 +3913,274 @@
         "HIG-TECHNOLOGIES-GAME-CENTER-0050"
       ],
       "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications."
+    },
+    {
+      "id": "priority-6-healthkit-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T12:51:11Z",
+      "review_method": "Rendered Apple HIG HealthKit overview, privacy, Activity rings, Apple Health icon, editorial, platform, and resource context was reviewed; two repeated live renders matched and the normalized main-content hash matched the stored source trace.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/healthkit",
+          "source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-HEALTHKIT-0001",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0002",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0003",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0004",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0005",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0006",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0007",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0008",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0009",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0010",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0011",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0012",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0013",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0014",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0015",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0016",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0017",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0018",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0019",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0020",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0021",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0022",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0023",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0024",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0025",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0026",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0027",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0028",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0029",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0030",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0031",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0032",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0033",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0034",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0035",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0036",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0037",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0038",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0039",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0040",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0041",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0042",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0043",
+        "HIG-TECHNOLOGIES-HEALTHKIT-0044"
+      ],
+      "scope": {
+        "portability": "technology-specific",
+        "platforms": [
+          "ios",
+          "ipados",
+          "watchos"
+        ],
+        "devices": [
+          "iphone",
+          "ipad",
+          "apple-watch"
+        ],
+        "components": [],
+        "modalities": []
+      },
+      "review_note": "Recovered twenty-four omitted atomic rules for health-data purpose, permission timing, disclosure, system sharing controls, Activity-ring restrictions, and icon composition; retained eight explicit MUST and eight explicit MUST_NOT outcomes while keeping direct Don't and Avoid language at AVOID."
     }
   ],
   "rules": {
+    "HIG-TECHNOLOGIES-HEALTHKIT-0001": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "307a245394ee048f64de0901d13f490956cbd96f13fe159dc6dfeb6e9da9d2ba", "section_path": ["HealthKit", "Privacy protection"]},
+      "title": "Ensure a clear privacy-policy URL for App Store submission",
+      "statement": {"en": "Provide a URL to a clearly stated privacy policy during app submission.", "ja": "app submission時に明確なprivacy policyへのURLを提供する。"},
+      "normative_level": "MUST",
+      "conditions": ["Make the policy viewable from the app's App Store page."],
+      "review_note": "Raised the stable privacy-policy rule to MUST because the source explicitly says the URL must be provided during submission."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0006": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "ed828aa752c0f1b66367741d05edecad7e81be51b010697f5e7ce04c85fb084b", "section_path": ["HealthKit", "Activity rings"]},
+      "title": "Always preserve Activity-ring visual appearance",
+      "statement": {"en": "Keep the visual appearance of Activity rings the same in every context.", "ja": "Activity ringのvisual appearanceをすべてのcontextで同一に保つ。"},
+      "normative_level": "MUST",
+      "conditions": ["Preserve the defined ring positions, colors, and background treatment."],
+      "review_note": "Raised the stable appearance rule to MUST because the source says the appearance must always remain the same."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0007": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "f335242e9313be9bc26c7301c598ec8ff6f194604b8d13bcf6d2de2291168d90", "section_path": ["HealthKit", "Activity rings"]},
+      "title": "Ensure the required Activity-ring margin",
+      "statement": {"en": "Include an outer margin at least as wide as the distance between Activity rings.", "ja": "Activity ring間の距離以上のouter marginを確保する。"},
+      "normative_level": "MUST",
+      "conditions": ["Apply the minimum to the complete Activity-ring element."],
+      "review_note": "Raised the stable margin rule to MUST and preserved the source's exact relational minimum."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0016": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "cd1cccd1b2c3f96063af1eebf05bd0ba51f9d24094a2cf5c78d0fb892488f119", "section_path": ["HealthKit", "Apple Health icon"]},
+      "title": "Never use Health app images or screenshots",
+      "statement": {"en": "Never use copyrighted Health app images or screenshots in an app or marketing material.", "ja": "copyrighted Health app imageやscreenshotをappまたはmarketing materialで使わない。"},
+      "normative_level": "MUST_NOT",
+      "conditions": ["Use permitted Activity-ring elements for progress instead of Health app imagery."],
+      "review_note": "Raised the stable image rule to MUST_NOT because the source states copyrighted Health app designs can't appear in apps or marketing."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0021": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "82804e24ca1a29591a81bdf7d7b6a193bcb40168fcd9d923fcd71c19cf5e541c", "section_path": ["HealthKit"]},
+      "statement": {"en": "Avoid requesting private health data when the app provides no health or fitness functionality.", "ja": "appがhealthまたはfitness機能を提供しない場合はprivate health dataを要求しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Tie every requested health-data type to actual health or fitness functionality."],
+      "review_note": "Recovered the overview's purpose limitation and retained AVOID for the direct don't wording."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0022": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "1c5d94432a5ea8193906e18d67d6bd4eb4a213fc2fa09ca8c2ee4987c4cd487d", "section_path": ["HealthKit", "Privacy protection"]},
+      "statement": {"en": "Clearly show people how the app uses their health data.", "ja": "appがhealth dataをどう使うかを利用者へ明確に示す。"},
+      "conditions": ["Explain use after permission is granted as part of maintaining trust."],
+      "review_note": "Recovered the essential transparency guidance without promoting essential to explicit MUST wording."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0023": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "ec371b1d095b3485e6027af35515c1dfe0ff24f556c2087e9ff65f27fde885b4", "section_path": ["HealthKit", "Privacy protection"]},
+      "statement": {"en": "Add succinct messages to the standard health permission screen that explain the need and benefit.", "ja": "standard health permission screenに必要性とbenefitを説明する簡潔なmessageを加える。"},
+      "conditions": ["Describe both why the information is needed and how sharing benefits people."],
+      "review_note": "Recovered the standard-screen disclosure action and both required message topics."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0024": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "ec371b1d095b3485e6027af35515c1dfe0ff24f556c2087e9ff65f27fde885b4", "section_path": ["HealthKit", "Privacy protection"]},
+      "statement": {"en": "Avoid custom screens that replicate the standard health permission screen's behavior or content.", "ja": "standard health permission screenのbehaviorまたはcontentを再現するcustom screenを避ける。"},
+      "normative_level": "AVOID",
+      "review_note": "Separated the direct Avoid clause from the positive standard-screen message guidance."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0025": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "a6921ffcae871719c7fa6c7e01d9ed6ccc9e63587a5205b412b957c06acf4ac0", "section_path": ["HealthKit", "Privacy protection"]},
+      "statement": {"en": "Use system privacy settings as the sole place for managing health-data sharing.", "ja": "health-data sharingの管理にはsystem privacy settingsだけを使う。"},
+      "conditions": ["Let people manage health-information access globally in system Settings."],
+      "review_note": "Recovered the system-owned sharing-control boundary without upgrading the imperative lead to MUST."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0026": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "a6921ffcae871719c7fa6c7e01d9ed6ccc9e63587a5205b412b957c06acf4ac0", "section_path": ["HealthKit", "Privacy protection"]},
+      "statement": {"en": "Avoid in-app screens that affect the flow of health data.", "ja": "health dataのflowに影響するin-app screenを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Prevent app UI from appearing to override system health-data sharing controls."],
+      "review_note": "Separated the direct don't clause and retained AVOID."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0027": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "c29b95ff20d03268aa7be3f7ee8210ec210352de3aa31c9d3206b6e1b36b61f9", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Avoid replicating or modifying Activity rings for other purposes or data.", "ja": "Activity ringを他の目的やdata向けに複製または変更しない。"},
+      "normative_level": "AVOID",
+      "review_note": "Separated the direct don't clause from the source's explicit Never prohibition."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0028": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "37483bed3819b45d15eaa5cbfa11a961b0bb67f4761ed502169fa6966a63599f", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Visually distinguish other ring-like elements from Activity rings.", "ja": "他のring-like elementをActivity ringから視覚的に区別する。"},
+      "conditions": ["Use padding, lines, labels, color, or scale to provide separation."],
+      "review_note": "Recovered the omitted differentiation rule and all listed separation techniques."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0029": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "8149b2287ec1255b775db1a4564bc92d51657820a81b7beb33caa2feaa809677", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Avoid repeating system-provided Move, Exercise, or Stand progress in app notifications.", "ja": "systemが提供するMove、Exercise、Stand progressをapp notificationで繰り返さない。"},
+      "normative_level": "AVOID",
+      "exceptions": ["Reference Activity progress only through information unique to the app."],
+      "review_note": "Recovered the direct don't clause while preserving the app-specific reference exception."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0030": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "b7380cd04d6daf779d5f6c81ceefc0c2ff6197dc2aabd8164bfc0ae4f2bfaa48", "section_path": ["HealthKit", "Apple Health icon"]},
+      "statement": {"en": "Avoid creating or imitating an Apple Health icon design.", "ja": "Apple Health icon designを独自作成または模倣しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Use only Apple-provided artwork from Apple Design Resources."],
+      "review_note": "Separated the direct don't clause from the positive official-artwork rule."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0031": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "2063e7ca1209b60f0de2defd1ac433174f454bdf0e0638e6a302f84566614d90", "section_path": ["HealthKit", "Apple Health icon"]},
+      "statement": {"en": "Avoid compositing the Apple Health icon onto another graphic element.", "ja": "Apple Health iconを別のgraphic elementへ合成しない。"},
+      "normative_level": "AVOID",
+      "review_note": "Separated the direct don't clause from the icon clear-space recommendation."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0032": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "1c5d94432a5ea8193906e18d67d6bd4eb4a213fc2fa09ca8c2ee4987c4cd487d", "section_path": ["HealthKit", "Privacy protection"]},
+      "title": "Ensure permission precedes health-data access",
+      "statement": {"en": "Request permission before accessing people's health data.", "ja": "利用者のhealth dataへaccessする前にpermissionを要求する。"},
+      "normative_level": "MUST",
+      "review_note": "Recovered the first explicit You must privacy requirement as an atomic permission rule."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0033": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "1c5d94432a5ea8193906e18d67d6bd4eb4a213fc2fa09ca8c2ee4987c4cd487d", "section_path": ["HealthKit", "Privacy protection"]},
+      "title": "Ensure accessed health data is protected",
+      "statement": {"en": "Take all necessary steps to protect people's health data.", "ja": "利用者のhealth dataを保護するために必要なすべての措置を取る。"},
+      "normative_level": "MUST",
+      "review_note": "Recovered the second explicit You must privacy requirement separately from permission acquisition."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0034": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "a32c23fe85149dccaf939c15e025d71eddb1a7133cdb70da11725a14b8ce9db6", "section_path": ["HealthKit", "Privacy protection"]},
+      "title": "Request health data only when needed",
+      "statement": {"en": "Request access to health data only in the context where it is needed.", "ja": "health dataが必要なcontextでのみaccessを要求する。"},
+      "conditions": ["Relate the request to the person's current task instead of presenting it at launch by default."],
+      "review_note": "Recovered contextual permission timing and kept the imperative lead at SHOULD."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0035": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "c29b95ff20d03268aa7be3f7ee8210ec210352de3aa31c9d3206b6e1b36b61f9", "section_path": ["HealthKit", "Activity rings"]},
+      "title": "Never represent Activity progress with another ring style",
+      "statement": {"en": "Never show Move, Exercise, or Stand progress in another ring-like element.", "ja": "Move、Exercise、Stand progressを別のring-like elementで表示しない。"},
+      "normative_level": "MUST_NOT",
+      "review_note": "Recovered the paragraph's explicit Never prohibition separately from the direct don't clause."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0036": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "90b724bc0683f834af6bded507e7846697d8d6b5d3f55446764b64eb29860bb5", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Never use one Activity-ring element to represent more than one person.", "ja": "1つのActivity-ring elementで複数人を表現しない。"},
+      "normative_level": "MUST_NOT",
+      "review_note": "Recovered the explicit Never multi-person prohibition."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0037": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "90b724bc0683f834af6bded507e7846697d8d6b5d3f55446764b64eb29860bb5", "section_path": ["HealthKit", "Activity rings"]},
+      "title": "Make sure the represented person is obvious",
+      "statement": {"en": "Make it obvious whose progress an Activity-ring element represents.", "ja": "Activity-ring elementが誰のprogressを表すかを明確にする。"},
+      "normative_level": "MUST",
+      "conditions": ["Use a label, photo, or avatar when needed to establish identity."],
+      "review_note": "Recovered the make sure identity outcome separately from the single-person prohibition."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0038": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "24d04d981aa7b194b1a2b7fdbc34d143a4db605bdc0c610246b65d7a747e92c2", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Never display Activity rings in labels or background graphics.", "ja": "Activity ringをlabelまたはbackground graphicに表示しない。"},
+      "normative_level": "MUST_NOT",
+      "review_note": "Recovered the explicit Never ornamentation prohibition."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0039": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "a869665e2c4cff2e0e4c233d80c10a52582caa8a771d1a5be42e5f174d53db71", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Never use Activity rings in an app icon or marketing material.", "ja": "Activity ringをapp iconまたはmarketing materialに使わない。"},
+      "normative_level": "MUST_NOT",
+      "review_note": "Recovered the explicit Never branding prohibition."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0040": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "1bfffa570ed49e9fcf6d19fb0245783c2e506f542385d21239a833ec88fab540", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Never alter Activity-ring or background appearance with filters, color changes, or opacity changes.", "ja": "filter、color変更、opacity変更でActivity ringまたはbackgroundのappearanceを変えない。"},
+      "normative_level": "MUST_NOT",
+      "review_note": "Recovered the explicit Never appearance-modification prohibition and all named alteration types."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0041": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "1bfffa570ed49e9fcf6d19fb0245783c2e506f542385d21239a833ec88fab540", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Always scale Activity rings appropriately for their surrounding interface.", "ja": "周囲のinterfaceに対してActivity ringを常に適切なscaleにする。"},
+      "normative_level": "MUST",
+      "conditions": ["Prevent the rings from appearing disconnected or out of place."],
+      "review_note": "Recovered the explicit Always scaling requirement."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0042": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "eb90ec7ca19393d7bdf303585257869ba6b72ed36cd92fef8bb82240a556a73b", "section_path": ["HealthKit", "Activity rings"]},
+      "title": "Never encroach on Activity rings or their margin",
+      "statement": {"en": "Never let other elements crop, obstruct, or encroach on Activity rings or their margin.", "ja": "他のelementがActivity ringまたはmarginをcrop、obstruct、encroachしないようにする。"},
+      "normative_level": "MUST_NOT",
+      "review_note": "Recovered the explicit Never spacing prohibition separately from the minimum-margin requirement."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0043": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "8149b2287ec1255b775db1a4564bc92d51657820a81b7beb33caa2feaa809677", "section_path": ["HealthKit", "Activity rings"]},
+      "statement": {"en": "Never show an Activity-ring element in an app notification.", "ja": "app notificationにActivity-ring elementを表示しない。"},
+      "normative_level": "MUST_NOT",
+      "review_note": "Recovered the explicit Never notification prohibition separately from repeated progress content."
+    },
+    "HIG-TECHNOLOGIES-HEALTHKIT-0044": {
+      "source": {"source_hash": "58587a4e1c5e09f027269220972b359047a6963e2328e6bc6e92d94f1ceabf2d", "source_sentence_hash": "a32c23fe85149dccaf939c15e025d71eddb1a7133cdb70da11725a14b8ce9db6", "section_path": ["HealthKit", "Privacy protection"]},
+      "title": "Ensure authorization is requested whenever health-data access is needed",
+      "statement": {"en": "Make an authorization request every time the app needs access to health data.", "ja": "appがhealth dataへのaccessを必要とするたびにauthorization requestを行う。"},
+      "normative_level": "MUST",
+      "conditions": ["Account for people changing previously granted permissions."],
+      "review_note": "Recovered the source's needs-to requirement as an atomic permission-state safeguard."
+    },
     "HIG-TECHNOLOGIES-GAME-CENTER-0001": {
       "source": {"source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab", "source_sentence_hash": "5da58146724aa543129c67eb8ca58cb031043eae71ddcab4f59492a76ae8d804", "section_path": ["Game Center", "Accessing Game Center", "Integrating the access point"]},
       "statement": {"en": "Display the Game Center access point in a game's persistent menu or settings screens.", "ja": "Game Center access pointをgameのpersistent menuまたはsettings screenに表示する。"},

@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 433
-- Retained MUST: 387
-- Retained MUST_NOT: 46
+- Reviewed rules: 449
+- Retained MUST: 395
+- Retained MUST_NOT: 54
 - Normative level changes: 144
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T12:40:00Z
+- Reviewed at: 2026-07-23T12:51:11Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -743,6 +743,22 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-GAME-CENTER-0047 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always deep-link requirement separately from optional onboarding flow details. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 · MUST · retained_with_atomicity_or_scope_correction — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-HEALTHKIT-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0016 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0032 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0033 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0035 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0036 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0037 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0038 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0039 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0040 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0041 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0042 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0043 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HEALTHKIT-0044 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
 - HIG-TECHNOLOGIES-ICLOUD-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0005 · MUST · retained_with_atomicity_or_scope_correction — Recovered the privacy-sensitive MUST from the explicit only-when restriction and preserved both legal and data-handling conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0006 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You must requirement for the additional entitlement. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))

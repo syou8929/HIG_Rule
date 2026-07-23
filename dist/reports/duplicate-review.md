@@ -1,10 +1,10 @@
 # Exact duplicate source review
 
-- Candidate groups: 5
-- Reviewed contextual groups: 5
+- Candidate groups: 8
+- Reviewed contextual groups: 8
 - Unresolved groups: 0
 - Official source only: yes
-- Reviewed at: 2026-07-22T16:13:08Z
+- Reviewed at: 2026-07-23T12:51:11Z
 
 Exact statements are retained only when separate Apple HIG pages, sections, components, technologies, or platform scopes need independent retrieval. This is not a claim of authoritative HIG compliance.
 
@@ -13,6 +13,15 @@ Exact statements are retained only when separate Apple HIG pages, sections, comp
 - HIG-COMPONENTS-ACTION-SHEETS-0001, HIG-COMPONENTS-ALERTS-0013 — Retained because Apple repeats the guidance in Action sheets best practices and iOS/iPadOS Alert considerations; both retrieval contexts need the rule.
   - HIG-COMPONENTS-ACTION-SHEETS-0001: Action sheets > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
   - HIG-COMPONENTS-ALERTS-0013: Alerts > Platform considerations > iOS, iPadOS ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0015, HIG-TECHNOLOGIES-HEALTHKIT-0035 — Retained because the same prohibition is independently discoverable in the Activity rings component and the broader HealthKit technology context.
+  - HIG-COMPONENTS-ACTIVITY-RINGS-0015: Activity rings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+  - HIG-TECHNOLOGIES-HEALTHKIT-0035: HealthKit > Activity rings ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0021, HIG-TECHNOLOGIES-HEALTHKIT-0042 — Retained because the same margin prohibition is independently discoverable in the Activity rings component and the broader HealthKit technology context.
+  - HIG-COMPONENTS-ACTIVITY-RINGS-0021: Activity rings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+  - HIG-TECHNOLOGIES-HEALTHKIT-0042: HealthKit > Activity rings ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-COMPONENTS-ACTIVITY-RINGS-0026, HIG-TECHNOLOGIES-HEALTHKIT-0038 — Retained because the same ornamentation prohibition is independently discoverable in the Activity rings component and the broader HealthKit technology context.
+  - HIG-COMPONENTS-ACTIVITY-RINGS-0026: Activity rings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
+  - HIG-TECHNOLOGIES-HEALTHKIT-0038: HealthKit > Activity rings ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
 - HIG-COMPONENTS-BUTTONS-0009, HIG-PATTERNS-DRAG-AND-DROP-0005 — Retained because spring loading is independently discoverable for macOS buttons and the broader drag-and-drop pattern; the source-reviewed segmented-control rule is now context-specific.
   - HIG-COMPONENTS-BUTTONS-0009: Buttons > Platform considerations > macOS > Push buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
   - HIG-PATTERNS-DRAG-AND-DROP-0005: Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
