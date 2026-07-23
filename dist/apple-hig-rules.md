@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T19:05:46.040Z. 3476 active rules; 7 deprecated rules.
+Generated 2026-07-23T19:11:25.914Z. 3483 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -2011,10 +2011,17 @@ Generated 2026-07-23T19:05:46.040Z. 3476 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-SLIDERS-0013 · SHOULD · high** — When necessary, use custom watchOS slider glyphs that communicate the slider's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 ### snippets
 
-- **HIG-COMPONENTS-SNIPPETS-0001 · MUST · medium** — Verify that legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
-- **HIG-COMPONENTS-SNIPPETS-0002 · SHOULD · low** — Maintain content concise. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
-- **HIG-COMPONENTS-SNIPPETS-0003 · SHOULD · low** — Apply the documented Snippets guidance to choose a descriptive label for a confirmation snippet’s primary button. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
-- **HIG-COMPONENTS-SNIPPETS-0004 · SHOULD · low** — Apply the documented Snippets guidance to communicate a snippet’s purpose visually. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0001 · MUST · high** — Ensure a snippet's custom content remains legible against the system background. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0002 · SHOULD · high** — Keep snippet content short and easy to read. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0003 · SHOULD · high** — Give a confirmation snippet's primary button a descriptive label. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0004 · SHOULD · high** — Use the custom view to communicate a snippet's purpose visually. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0005 · SHOULD · high** — Keep content margins consistent within a snippet's custom view. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0006 · MUST · high** — Ensure a snippet custom view doesn't exceed 400 points in height. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0007 · SHOULD · high** — When deciding how much text to include in a snippet, account for people's preferred text sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0008 · SHOULD · high** — When a result snippet needs more detail, deep-link to the app instead of adding it to the custom view. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0009 · AVOID · high** — Avoid relying on displayed dialogue text to convey a snippet's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0010 · SHOULD · high** — Prefer omitting dialogue text from a snippet's visual representation. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- **HIG-COMPONENTS-SNIPPETS-0011 · AVOID · high** — Avoid using snippets on tvOS, visionOS, or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
 ### split-views
 
 - **HIG-COMPONENTS-SPLIT-VIEWS-0001 · MAY · high** — Consider letting people drag and drop content between split-view panes. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))

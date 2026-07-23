@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3476
+- Active atomic rules: 3483
 - Pages without rules: 16
-- Low-confidence rules: 156
-- Rules requiring human review: 156
+- Low-confidence rules: 153
+- Rules requiring human review: 153
 - Reference notes: 915
 
 ## Rules by category
 
-- components: 1107
+- components: 1114
 - foundations: 463
 - getting-started: 100
 - inputs: 245
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 469
+- AVOID: 471
 - MAY: 399
-- MUST: 495
+- MUST: 496
 - MUST_NOT: 81
-- SHOULD: 2032
+- SHOULD: 2036
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2493
-- ipados: 2451
-- macos: 2004
-- tvos: 1567
-- visionos: 1982
-- watchos: 1687
+- ios: 2499
+- ipados: 2457
+- macos: 2010
+- tvos: 1568
+- visionos: 1983
+- watchos: 1688
 
 ## Rules by testability
 
-- hybrid: 112
-- manual: 3364
+- hybrid: 113
+- manual: 3370
 
 ## Blocked pages
 
@@ -69,9 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-SNIPPETS-0002
-- HIG-COMPONENTS-SNIPPETS-0003
-- HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
 - HIG-FOUNDATIONS-IMAGES-0001
@@ -228,9 +225,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-SNIPPETS-0002
-- HIG-COMPONENTS-SNIPPETS-0003
-- HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
 - HIG-FOUNDATIONS-IMAGES-0001

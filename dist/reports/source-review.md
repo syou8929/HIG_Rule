@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3295
-- Reviewed batches: 189
+- Reviewed rules: 3306
+- Reviewed batches: 190
 - Official source only: yes
-- Reviewed at: 2026-07-23T23:00:00Z
+- Reviewed at: 2026-07-23T23:20:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -762,6 +762,17 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SLIDERS-0011 · high — Recorded the descriptive platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0012 · high — Split the optional pointer-hover tooltip from tick-mark labeling so it remains independently reviewable. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0013 · high — Recovered the conditional custom-glyph directive and preserved the default signs as context. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- HIG-COMPONENTS-SNIPPETS-0001 · high — Retained MUST from the explicit Ensure directive and concretized the light-and-dark contrast outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0002 · high — Recovered both brevity and easy-legibility outcomes from the supporting source context. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0003 · high — Replaced generic generated wording and recorded the system, custom, and default label paths. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0004 · high — Made the visual communication mechanism explicit while preserving spoken-dialogue context. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0005 · high — Split the independent margin outcome from the contrast check in the same source sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0006 · high — Classified the explicit no-taller-than 400-point maximum as a platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0007 · high — Recovered the Dynamic Type context without promoting Be mindful language to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0008 · high — Recovered the result-snippet condition and the explicit in-app alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0009 · high — Kept the explicit Don't directive at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0010 · high — Preserved the Prefer strength and the distinction between visual omission and spoken accessibility. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
+- HIG-COMPONENTS-SNIPPETS-0011 · high — Recorded the descriptive platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
 - HIG-COMPONENTS-SPLIT-VIEWS-0001 · high — Preserved MAY and recorded the cross-hierarchy movement purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-SPLIT-VIEWS-0002 · high — Retained SHOULD and made the regular-versus-compact width condition concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-SPLIT-VIEWS-0003 · high — Preserved MAY and recorded the editing-space and distraction conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))

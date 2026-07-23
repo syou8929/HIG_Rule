@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T23:00:00Z",
+  "reviewed_at": "2026-07-23T23:20:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5104,9 +5104,226 @@
         "HIG-COMPONENTS-SLIDERS-0013"
       ],
       "review_note": "Completed Sliders coverage, preserved all nine existing IDs, recovered four atomic appearance, tvOS availability, macOS tooltip, and watchOS glyph rules, and kept every qualified or unsupported-platform outcome below MUST."
+    },
+    {
+      "id": "priority-6-snippets-complete-context-2026-07-24",
+      "reviewed_at": "2026-07-23T23:20:00Z",
+      "review_method": "Rendered Apple HIG Snippets overview, anatomy, complete best-practice, platform, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/snippets",
+          "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-SNIPPETS-0001",
+        "HIG-COMPONENTS-SNIPPETS-0002",
+        "HIG-COMPONENTS-SNIPPETS-0003",
+        "HIG-COMPONENTS-SNIPPETS-0004",
+        "HIG-COMPONENTS-SNIPPETS-0005",
+        "HIG-COMPONENTS-SNIPPETS-0006",
+        "HIG-COMPONENTS-SNIPPETS-0007",
+        "HIG-COMPONENTS-SNIPPETS-0008",
+        "HIG-COMPONENTS-SNIPPETS-0009",
+        "HIG-COMPONENTS-SNIPPETS-0010",
+        "HIG-COMPONENTS-SNIPPETS-0011"
+      ],
+      "review_note": "Completed Snippets coverage, preserved all four existing IDs, recovered seven atomic margin, height, Dynamic Type, deep-link, dialogue, and platform rules, retained the explicit Ensure legibility outcome at MUST, and classified the 400-point maximum as a platform-contract MUST."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-SNIPPETS-0001": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "520b1c1748b54a868ae7eaa6a5d0e1e72a8c794146532269e47769d3ab95343a",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Ensure snippet custom content remains legible",
+      "statement": {
+        "en": "Ensure a snippet's custom content remains legible against the system background.",
+        "ja": "snippetのcustom contentをsystem backgroundに対して読みやすく保つ。"
+      },
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Check sufficient contrast in both light and dark appearances."
+      ],
+      "review_note": "Retained MUST from the explicit Ensure directive and concretized the light-and-dark contrast outcome."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0002": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "93901a05d0b62d211650d3359981295fd224272baded12e08d35d6e39c845edf",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Keep snippet content concise",
+      "statement": {
+        "en": "Keep snippet content short and easy to read.",
+        "ja": "snippet contentを短く読みやすく保つ。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "Snippets support lightweight, quick interactions."
+      ],
+      "review_note": "Recovered both brevity and easy-legibility outcomes from the supporting source context."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0003": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "9c788f4d322d345e0fef3e808025c39666226f33d9f6d05835b746f6763edbac",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Give a confirmation snippet's primary button a descriptive label",
+      "statement": {
+        "en": "Give a confirmation snippet's primary button a descriptive label.",
+        "ja": "confirmation snippetのprimary buttonに説明的なlabelを付ける。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "Use an appropriate system label or provide a custom label.",
+        "If no label is specified, the system uses Continue."
+      ],
+      "review_note": "Replaced generic generated wording and recorded the system, custom, and default label paths."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0004": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "a212ca7558bc86ee8ea2a54fbd86748cf002e792e21bfab530559c23389770dc",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Communicate a snippet's purpose visually",
+      "statement": {
+        "en": "Use the custom view to communicate a snippet's purpose visually.",
+        "ja": "custom viewを使ってsnippetの目的を視覚的に伝える。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "The spoken app-intent dialogue remains essential when someone isn't looking at the screen."
+      ],
+      "review_note": "Made the visual communication mechanism explicit while preserving spoken-dialogue context."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0005": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "89ab7220d690bed36da0d78f8b38022f22759617ffde093d378cddc2187638fc",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Keep consistent margins within a snippet custom view",
+      "statement": {
+        "en": "Keep content margins consistent within a snippet's custom view.",
+        "ja": "snippetのcustom view内でcontent marginを一貫させる。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "Consistent margins clarify layout and support quick interpretation."
+      ],
+      "review_note": "Split the independent margin outcome from the contrast check in the same source sentence."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0006": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "a32e200f691d12640c7ed98fa4345fad9ad278fe0b8c8383f2eba8ed4835f295",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Keep snippet custom views at or below 400 points",
+      "statement": {
+        "en": "Ensure a snippet custom view doesn't exceed 400 points in height.",
+        "ja": "snippetのcustom viewを高さ400 point以下にする。"
+      },
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The maximum helps keep all custom-view content visible."
+      ],
+      "review_note": "Classified the explicit no-taller-than 400-point maximum as a platform-contract MUST."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0007": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "d62331b34e19a7da1143ee8c46477f50a1d8aed45a722ba1c1ead31afb958de8",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Account for preferred text sizes in snippet content",
+      "statement": {
+        "en": "When deciding how much text to include in a snippet, account for people's preferred text sizes.",
+        "ja": "snippetに含めるtext量を決める際は利用者のpreferred text sizeを考慮する。"
+      },
+      "normative_level": "SHOULD",
+      "review_note": "Recovered the Dynamic Type context without promoting Be mindful language to MUST."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0008": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "7da4b481da4344dbbcc979b84908c3c708810ee6390cddde876714ba9a499318",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Deep-link detailed result content to the app",
+      "statement": {
+        "en": "When a result snippet needs more detail, deep-link to the app instead of adding it to the custom view.",
+        "ja": "result snippetで詳細が必要な場合はcustom viewへ追加せずappへdeep linkする。"
+      },
+      "normative_level": "SHOULD",
+      "review_note": "Recovered the result-snippet condition and the explicit in-app alternative."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0009": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "68313592a607e7fff04bf69ccd39dc880ff4766b63de141a6ee437f27613d2ff",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Don't rely on dialogue text to convey a snippet's purpose",
+      "statement": {
+        "en": "Avoid relying on displayed dialogue text to convey a snippet's purpose.",
+        "ja": "snippetの目的を伝えるために表示dialogue textだけへ依存しない。"
+      },
+      "normative_level": "AVOID",
+      "review_note": "Kept the explicit Don't directive at AVOID rather than MUST_NOT."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0010": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "27f9098f708a2bd5de82a8b6ac922e9707ba4307bbad368d5a0945cd02d91822",
+        "section_path": ["Snippets", "Best practices"]
+      },
+      "title": "Prefer omitting dialogue text from a snippet's visual view",
+      "statement": {
+        "en": "Prefer omitting dialogue text from a snippet's visual representation.",
+        "ja": "snippetのvisual representationからdialogue textを省くことを優先する。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "Use the custom view to convey the visual information instead."
+      ],
+      "exceptions": [
+        "Spoken app-intent dialogue remains essential when someone isn't looking at the screen."
+      ],
+      "review_note": "Preserved the Prefer strength and the distinction between visual omission and spoken accessibility."
+    },
+    "HIG-COMPONENTS-SNIPPETS-0011": {
+      "source": {
+        "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
+        "source_sentence_hash": "9d6929cb7eb779488104d38496afb18a9fd4a0ee2d8cff96b99b919156507463",
+        "section_path": ["Snippets", "Platform considerations"]
+      },
+      "title": "Avoid snippets on unsupported platforms",
+      "statement": {
+        "en": "Avoid using snippets on tvOS, visionOS, or watchOS.",
+        "ja": "tvOS、visionOS、watchOSでsnippetを使わない。"
+      },
+      "normative_level": "AVOID",
+      "scope": {
+        "portability": "apple-component-specific",
+        "platforms": ["tvos", "visionos", "watchos"],
+        "devices": ["apple-tv", "apple-vision-pro", "apple-watch"],
+        "components": ["snippets"],
+        "modalities": []
+      },
+      "review_note": "Recorded the descriptive platform limitation at AVOID rather than MUST_NOT."
+    },
     "HIG-COMPONENTS-SLIDERS-0001": {
       "source": {
         "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
