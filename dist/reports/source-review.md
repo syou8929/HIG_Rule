@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2328
-- Reviewed batches: 148
+- Reviewed rules: 2351
+- Reviewed batches: 149
 - Official source only: yes
-- Reviewed at: 2026-07-23T08:42:07Z
+- Reviewed at: 2026-07-23T09:00:21Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1356,8 +1356,20 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0012 · high — Recovered the Center lead and recorded its immersive attention constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0013 · high — Recovered the Rely lead and recorded that recentering is system-provided. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014 · high — Recovered the direct overlap prohibition and its gaze-selection rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0001 · high — Replaced the generic statement with the cross-platform defaults and minimums from the reviewed numeric table. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0002 · high — Recorded the platform-and-context test plus the documented size, contrast, and typeface remedies. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0003 · high — Retained the unqualified recommendation and its hierarchy, readability, and consistency rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0004 · high — Preserved the content-priority recommendation without requiring equal scaling of secondary elements. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0005 · high — Retained Consider at MAY and linked the option to the reviewed platform style tables. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0006 · high — Confirmed the explicit Make sure outcome as MUST and tied it to the reviewed minimum-size table. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0007 · high — Confirmed the explicit Make sure outcome as MUST and removed macOS, which does not support Dynamic Type. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0008 · high — Retained the recommendation and separated the scrollable-region AVOID into its own atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0009 · high — Retained the optional large-size layout adaptation and its overlap and truncation triggers. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0010 · high — Recorded the top-position and multilevel hierarchy requirements within the Dynamic Type platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0011 · high — Preserved the Make sure requirement, recorded the full-scale baseline and multi-scale test, and removed a false gaze modality inferred from ordinary wording. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0012 · high — Recorded the billboarding behavior, rotation axis, and line-of-sight geometry. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0013 · high — Rebound stable ID 0013 from the false-positive Tracking values heading to the actual mockup-tracking guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0014 · high — Retained direct Avoid at AVOID and recorded the recommended weight alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0015 · high — Preserved the conditional consider wording and separated the shadow anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0016 · high — Recorded the platform limitation as a design constraint at SHOULD, not as an unsupported prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0017 · high — Recovered the conditional dynamic-variant rule and preserved the complete mapping table as structured conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
@@ -1366,6 +1378,17 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-TYPOGRAPHY-0020 · high — Recovered the contrast directive and recorded the system-white rationale without making white mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0021 · high — Recovered the conditional Be sure to test requirement without making white text itself mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0022 · high — Recovered the qualified shadow AVOID and its spatial-environment rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0023 · high — Activated the hierarchy technique as SHOULD and separated the explicit size-change outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0024 · high — Activated the conditional style-modification recommendation and separated the three-line tight-leading AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0025 · high — Activated the broad accessibility recommendation while preserving the supporting Make sure outcome separately. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0026 · high — Activated the scaling recommendation and separated the explicit larger-size visibility outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0027 · high — Recovered and retained the explicit Be sure outcome as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0028 · high — Recovered the conditional direct Avoid without elevating it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0029 · high — Recovered the direct Don't guidance at AVOID because the source provides no stronger prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0030 · high — Recovered the supporting Make sure sentence as an explicit platform-scoped MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0031 · high — Recovered the conditional Be sure fallback as a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0032 · high — Recovered the supporting Make sure visibility outcome as a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0033 · high — Split the conditional direct Avoid from the general truncation-minimization recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0001 · high — Reviewed game startup, display metrics, interactions, accessibility, inclusion, and Apple technologies; recovered ten omitted atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0002 · high — Recorded the device and accessibility inputs used to choose game defaults. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0003 · high — Repaired the generated statement and recorded the request-timing context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))

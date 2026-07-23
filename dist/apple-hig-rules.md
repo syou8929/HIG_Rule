@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T08:50:44.285Z. 2979 active rules; 4 deprecated rules.
+Generated 2026-07-23T09:07:13.226Z. 2990 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -574,20 +574,20 @@ Generated 2026-07-23T08:50:44.285Z. 2979 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0014 · AVOID · high** — Avoid overlapping visionOS controls with other interactive elements or views. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 ### typography
 
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0001 · SHOULD · low** — Choose or apply font sizes that most people can read easily in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0002 · SHOULD · low** — Apply the documented Typography guidance to test legibility in different contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0003 · SHOULD · low** — Apply the documented Typography guidance to minimize the number of typefaces you use, even in a highly customized interface. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0004 · SHOULD · low** — Apply the documented Typography guidance to prioritize important content when responding to text-size changes. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0005 · MAY · low** — Evaluate whether using the built-in text styles is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0006 · MUST · medium** — Verify that custom fonts are legible. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0007 · MUST · medium** — Verify that your app’s layout adapts to all font sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0008 · SHOULD · low** — Maintain text truncation to a minimum as font size increases. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0009 · MAY · low** — Evaluate whether adjusting your layout at large font sizes is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0010 · SHOULD · low** — Apply the documented Typography guidance to maintain a consistent information hierarchy regardless of the current font size. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0001 · SHOULD · high** — Use readable font sizes at or above the documented platform defaults and minimums. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0002 · SHOULD · high** — Test text legibility on every target platform and in each viewing context. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0003 · SHOULD · high** — Minimize the number of typefaces, including in highly customized interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0004 · SHOULD · high** — Prioritize important content when text size changes. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0005 · MAY · high** — Consider built-in text styles for hierarchy and accessibility behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0006 · MUST · high** — Make sure custom fonts remain legible at their intended styles, weights, and sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0007 · MUST · high** — Make sure the layout adapts to every supported Dynamic Type size. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0008 · SHOULD · high** — Keep text truncation to a minimum as font size increases. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0009 · MAY · high** — At large font sizes, consider stacking content or reducing columns. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0010 · SHOULD · high** — Maintain a consistent information hierarchy at every font size. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0011 · MUST · high** — Make sure visionOS text looks good and remains legible at every supported scale. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0012 · SHOULD · high** — Keep spatial visionOS text facing people as much as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0013 · SHOULD · low** — Keep values synchronized. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
-- **HIG-FOUNDATIONS-TYPOGRAPHY-0014 · AVOID · low** — Exclude light font weights from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0013 · SHOULD · high** — Adjust tracking in variable-system-font interface mockups when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0014 · AVOID · high** — Avoid light font weights, especially at small text sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0015 · MAY · high** — Consider bold weight to improve the legibility of visionOS text that has no background. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0016 · SHOULD · high** — Design macOS text and layout without relying on Dynamic Type support. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0017 · SHOULD · high** — Use a dynamic macOS system font variant when text needs to match a standard control. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
@@ -596,6 +596,17 @@ Generated 2026-07-23T08:50:44.285Z. 2979 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0020 · SHOULD · high** — Maximize contrast between visionOS text and its container background. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0021 · MUST · high** — Test every nonwhite visionOS text color in a variety of contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0022 · AVOID · high** — Avoid adding shadows to backgroundless visionOS text solely to increase contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0023 · SHOULD · high** — Use font weight, size, and color to convey information hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0024 · SHOULD · high** — Modify built-in text styles with symbolic traits when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0025 · SHOULD · high** — Support accessibility features when using custom fonts. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0026 · SHOULD · high** — Increase meaningful interface-icon sizes as the font size increases. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0027 · MUST · high** — Maintain relative hierarchy and visual distinction when people adjust text sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0028 · AVOID · high** — Avoid tight leading when displaying three or more lines of text. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0029 · AVOID · high** — Avoid embedding system fonts in an app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0030 · MUST · high** — On supported platforms, make custom fonts match Dynamic Type and Bold Text behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0031 · MUST · high** — When the Unity plug-in is inappropriate, provide another text-size control. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0032 · MUST · high** — Make sure meaningful interface icons remain easy to view at larger font sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- **HIG-FOUNDATIONS-TYPOGRAPHY-0033 · AVOID · high** — Avoid truncating scrollable text unless people can open a complete view. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 ### writing
 
 - **HIG-FOUNDATIONS-WRITING-0001 · SHOULD · low** — Apply the documented Writing guidance to match your tone to the context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))

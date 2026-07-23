@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2979
+- Active atomic rules: 2990
 - Pages without rules: 16
-- Low-confidence rules: 603
-- Rules requiring human review: 603
+- Low-confidence rules: 593
+- Rules requiring human review: 593
 - Reference notes: 902
 
 ## Rules by category
 
 - components: 1026
-- foundations: 452
+- foundations: 463
 - getting-started: 100
 - inputs: 245
 - patterns: 368
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 416
+- AVOID: 419
 - MAY: 357
-- MUST: 336
+- MUST: 340
 - MUST_NOT: 38
-- SHOULD: 1832
+- SHOULD: 1836
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2015
-- ipados: 1991
-- macos: 1654
-- tvos: 1289
-- visionos: 1694
-- watchos: 1388
+- ios: 2026
+- ipados: 2002
+- macos: 1656
+- tvos: 1300
+- visionos: 1705
+- watchos: 1399
 
 ## Rules by testability
 
-- hybrid: 87
-- manual: 2892
+- hybrid: 90
+- manual: 2900
 
 ## Blocked pages
 
@@ -144,16 +144,6 @@ None.
 - HIG-FOUNDATIONS-MOTION-0004
 - HIG-FOUNDATIONS-MOTION-0005
 - HIG-FOUNDATIONS-MOTION-0007
-- HIG-FOUNDATIONS-TYPOGRAPHY-0001
-- HIG-FOUNDATIONS-TYPOGRAPHY-0002
-- HIG-FOUNDATIONS-TYPOGRAPHY-0003
-- HIG-FOUNDATIONS-TYPOGRAPHY-0004
-- HIG-FOUNDATIONS-TYPOGRAPHY-0005
-- HIG-FOUNDATIONS-TYPOGRAPHY-0008
-- HIG-FOUNDATIONS-TYPOGRAPHY-0009
-- HIG-FOUNDATIONS-TYPOGRAPHY-0010
-- HIG-FOUNDATIONS-TYPOGRAPHY-0013
-- HIG-FOUNDATIONS-TYPOGRAPHY-0014
 - HIG-FOUNDATIONS-WRITING-0001
 - HIG-FOUNDATIONS-WRITING-0002
 - HIG-FOUNDATIONS-WRITING-0003
@@ -750,16 +740,6 @@ None.
 - HIG-FOUNDATIONS-MOTION-0004
 - HIG-FOUNDATIONS-MOTION-0005
 - HIG-FOUNDATIONS-MOTION-0007
-- HIG-FOUNDATIONS-TYPOGRAPHY-0001
-- HIG-FOUNDATIONS-TYPOGRAPHY-0002
-- HIG-FOUNDATIONS-TYPOGRAPHY-0003
-- HIG-FOUNDATIONS-TYPOGRAPHY-0004
-- HIG-FOUNDATIONS-TYPOGRAPHY-0005
-- HIG-FOUNDATIONS-TYPOGRAPHY-0008
-- HIG-FOUNDATIONS-TYPOGRAPHY-0009
-- HIG-FOUNDATIONS-TYPOGRAPHY-0010
-- HIG-FOUNDATIONS-TYPOGRAPHY-0013
-- HIG-FOUNDATIONS-TYPOGRAPHY-0014
 - HIG-FOUNDATIONS-WRITING-0001
 - HIG-FOUNDATIONS-WRITING-0002
 - HIG-FOUNDATIONS-WRITING-0003
@@ -2057,62 +2037,62 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/top-shelf · Top Shelf > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/top-shelf · Top Shelf > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/top-shelf · Top Shelf > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Ensuring legibility — Structured numeric table detected; preserve its platform and context conditions during human source review.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Change log — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Ensuring legibility — Structured numeric table reviewed and retained as source-linked platform and context evidence.
 - https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations — All platform sections were reviewed; system-font availability and platform-provided behavior remain supporting context.
 - https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations > tvOS — tvOS uses SF Pro and also supports NY; this descriptive platform fact does not create a standalone requirement.
 - https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Platform considerations > watchOS — watchOS uses SF Compact, supports NY, and uses SF Compact Rounded in complications; these are descriptive platform facts.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Large (default) — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Medium — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Medium — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Small — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Small — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xLarge — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xLarge — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xSmall — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xSmall — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xxLarge — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xxLarge — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xxxLarge — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xxxLarge — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX1 — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX1 — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX2 — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX2 — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX3 — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX3 — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX4 — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX4 — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX5 — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX5 — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > macOS built-in text styles — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > macOS tracking values — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > New York — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > SF Compact — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > SF Compact Rounded — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > SF Pro — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > SF Pro Rounded — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > tvOS tracking values — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > tvOS built-in text styles — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > Large (default 40mm/41mm/42mm) — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > Small (default 38mm) — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xLarge (default 44mm/45mm/49mm) — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xSmall — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xSmall — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xxLarge — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xxLarge — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xxxLarge — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xxxLarge — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX1 — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX1 — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX2 — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX2 — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX3 — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX3 — Structured numeric table detected; preserve its platform and context conditions during human source review.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources > Related — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Resources > Videos — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Large (default) — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Medium — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Medium — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Small — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > Small — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xLarge — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xLarge — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xSmall — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xSmall — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xxLarge — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xxLarge — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xxxLarge — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS Dynamic Type sizes > xxxLarge — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX1 — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX1 — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX2 — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX2 — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX3 — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX3 — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX4 — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX4 — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX5 — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > iOS, iPadOS larger accessibility type sizes > AX5 — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > macOS built-in text styles — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > macOS tracking values — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > New York — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > SF Compact — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > SF Compact Rounded — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > SF Pro — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > SF Pro Rounded — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > Tracking values > tvOS tracking values — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > tvOS built-in text styles — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > Large (default 40mm/41mm/42mm) — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > Small (default 38mm) — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xLarge (default 44mm/45mm/49mm) — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xSmall — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xSmall — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xxLarge — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xxLarge — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xxxLarge — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS Dynamic Type sizes > xxxLarge — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX1 — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX1 — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX2 — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX2 — Structured numeric table reviewed and retained as source-linked platform and context evidence.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX3 — Section reviewed as source-linked specification or navigation context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/typography · Typography > Specifications > watchOS larger accessibility type sizes > AX3 — Structured numeric table reviewed and retained as source-linked platform and context evidence.
 - https://developer.apple.com/design/human-interface-guidelines/undo-and-redo · Undo and redo > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/undo-and-redo · Undo and redo > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/undo-and-redo · Undo and redo > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.

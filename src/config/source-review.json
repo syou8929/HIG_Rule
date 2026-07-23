@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T08:42:07Z",
+  "reviewed_at": "2026-07-23T09:00:21Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2645,6 +2645,45 @@
         "HIG-FOUNDATIONS-SF-SYMBOLS-0032"
       ],
       "review_note": "Completed the page; retained twelve stable IDs, recovered twenty atomic rules, split mixed-strength variable-color guidance, retained four explicit or conditional MUST outcomes and three legal or usage MUST_NOT outcomes, and kept the direct design AVOID below MUST_NOT."
+    },
+    {
+      "id": "priority-6-typography-common-context-2026-07-23",
+      "reviewed_at": "2026-07-23T09:00:21Z",
+      "review_method": "Rendered Apple HIG Typography legibility, hierarchy, system-font, custom-font, Dynamic Type, specification, tracking-value, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/typography",
+          "source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0001",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0002",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0003",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0004",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0005",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0006",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0007",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0008",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0009",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0010",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0013",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0014",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0023",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0024",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0025",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0026",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0027",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0028",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0029",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0030",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0031",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0032",
+        "HIG-FOUNDATIONS-TYPOGRAPHY-0033"
+      ],
+      "review_note": "Completed the remaining common page and specification tables; retained twelve stable common IDs, recovered eleven atomic rules, split four explicit MUST outcomes from broader recommendations, and kept direct Avoid or Don't guidance below MUST_NOT."
     },
     {
       "id": "priority-4-typography-platform-context-2026-07-21",
@@ -9070,6 +9109,250 @@
       "normative_level": "MAY",
       "conditions": ["Use an erase layer for overlaps when preserving full shape and layer information improves animation."],
       "review_note": "Split the optional whole-shape technique from the custom-symbol animation test."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0001": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "5753acfa9868478899bc7b4f44dea85f0f9232b0090265bc27164a66b886b3ed", "section_path": ["Typography", "Ensuring legibility"]},
+      "title": "Use readable platform font sizes",
+      "statement": {"en": "Use readable font sizes at or above the documented platform defaults and minimums.", "ja": "documented platformのdefaultおよびminimum以上の読みやすいfont sizeを使う。"},
+      "conditions": [
+        "Use default/minimum sizes of 17/11 pt on iOS and iPadOS, 13/10 pt on macOS, and 29/23 pt on tvOS.",
+        "Use default/minimum sizes of 17/12 pt on visionOS and 16/12 pt on watchOS.",
+        "When a custom font has a thin weight, aim above the recommended sizes."
+      ],
+      "review_note": "Replaced the generic statement with the cross-platform defaults and minimums from the reviewed numeric table."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0002": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "6750eea1a943791871dde5b624e181803361923dad365d97fa7a6fc45b931163", "section_path": ["Typography", "Ensuring legibility"]},
+      "title": "Test text legibility in context",
+      "statement": {"en": "Test text legibility on every target platform and in each viewing context.", "ja": "各target platformとviewing contextでtextのlegibilityをtestする。"},
+      "conditions": [
+        "If text is difficult to read, use a larger size, stronger contrast, a more legible typeface, or the system font."
+      ],
+      "review_note": "Recorded the platform-and-context test plus the documented size, contrast, and typeface remedies."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0003": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "5053a783fed343e8aa7d4fb07bfeb9deddedcfeaadd4e96d64bf932eab3c330a", "section_path": ["Typography", "Conveying hierarchy"]},
+      "title": "Minimize the number of typefaces",
+      "statement": {"en": "Minimize the number of typefaces, including in highly customized interfaces.", "ja": "高度にcustomizeしたinterfaceでもtypeface数を最小限にする。"},
+      "conditions": [
+        "Too many typefaces can obscure hierarchy, reduce readability, and weaken consistency."
+      ],
+      "review_note": "Retained the unqualified recommendation and its hierarchy, readability, and consistency rationale."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0004": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "512ed518d32a43bbf249b100461eb9db8265281c11dbb7030df3eca1366039f4", "section_path": ["Typography", "Conveying hierarchy"]},
+      "title": "Prioritize important content as text size changes",
+      "statement": {"en": "Prioritize important content when text size changes.", "ja": "text sizeが変わるときは重要なcontentを優先する。"},
+      "conditions": [
+        "Avoid enlarging every item equally when doing so lets secondary content overpower primary content."
+      ],
+      "review_note": "Preserved the content-priority recommendation without requiring equal scaling of secondary elements."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0005": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "97929a9b82fef06138966d160c1db76ed62ad1d76a67818efbf8a6b2f3458f1f", "section_path": ["Typography", "Using system fonts"]},
+      "title": "Consider built-in text styles",
+      "statement": {"en": "Consider built-in text styles for hierarchy and accessibility behavior.", "ja": "hierarchyとaccessibility behaviorのためにbuilt-in text styleを検討する。"},
+      "normative_level": "MAY",
+      "polarity": "permit",
+      "severity": "info",
+      "conditions": [
+        "Built-in styles support visual hierarchy and platform Dynamic Type behavior where available.",
+        "Use the reviewed platform specification tables when selecting a style."
+      ],
+      "review_note": "Retained Consider at MAY and linked the option to the reviewed platform style tables."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0006": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "f7ab2d066f70483621d276167ad4c20c07b4fd3760c30279a77ee7fd500bedc9", "section_path": ["Typography", "Using custom fonts"]},
+      "title": "Ensure custom-font legibility",
+      "statement": {"en": "Make sure custom fonts remain legible at their intended styles, weights, and sizes.", "ja": "custom fontが意図したstyle、weight、sizeでlegibleに保たれるようにする。"},
+      "conditions": [
+        "Use the documented platform minimum sizes as a baseline for each custom style and weight."
+      ],
+      "review_note": "Confirmed the explicit Make sure outcome as MUST and tied it to the reviewed minimum-size table."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0007": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "9ace3024cc0ae5794d97ee67c1cded4df1c7c769f9758a95543cc635a1be824d", "section_path": ["Typography", "Supporting Dynamic Type"]},
+      "title": "Ensure layouts adapt to every Dynamic Type size",
+      "statement": {"en": "Make sure the layout adapts to every supported Dynamic Type size.", "ja": "layoutがすべてのsupported Dynamic Type sizeへ適応するようにする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": [
+        "Verify text and glyph legibility at every size.",
+        "On iPhone and iPad, test with Larger Accessibility Text enabled."
+      ],
+      "review_note": "Confirmed the explicit Make sure outcome as MUST and removed macOS, which does not support Dynamic Type."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0008": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "cbeff4e091ec978dc695d59b589e5c7fc28e339dea932a9cd735b95007ca9ea0", "section_path": ["Typography", "Supporting Dynamic Type"]},
+      "title": "Minimize truncation as font size increases",
+      "statement": {"en": "Keep text truncation to a minimum as font size increases.", "ja": "font sizeが大きくなるときもtext truncationを最小限にする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": [
+        "Aim to show as much useful text at the largest accessibility size as at the largest standard size.",
+        "Allow labels to use as many lines as needed for useful content."
+      ],
+      "review_note": "Retained the recommendation and separated the scrollable-region AVOID into its own atomic rule."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0009": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "0be693baf5406cdeb42288ad238289a6ba51ec4619bc298dd795cd52b15a61c7", "section_path": ["Typography", "Supporting Dynamic Type"]},
+      "title": "Consider layout changes at large font sizes",
+      "statement": {"en": "At large font sizes, consider stacking content or reducing columns.", "ja": "大きなfont sizeではcontentのstack化やcolumn削減を検討する。"},
+      "normative_level": "MAY",
+      "polarity": "permit",
+      "severity": "info",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": [
+        "Adjust when side-by-side content or multiple columns would overlap, truncate, or become difficult to scan."
+      ],
+      "review_note": "Retained the optional large-size layout adaptation and its overlap and truncation triggers."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0010": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "0dae8a332065fbd10db6c3e87f589c5bca5ac4539d3c438248aa2037172b814b", "section_path": ["Typography", "Supporting Dynamic Type"]},
+      "title": "Maintain hierarchy at every font size",
+      "statement": {"en": "Maintain a consistent information hierarchy at every font size.", "ja": "すべてのfont sizeで一貫したinformation hierarchyを保つ。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": [
+        "Keep primary content near the top and preserve distinctions among multiple information levels."
+      ],
+      "review_note": "Recorded the top-position and multilevel hierarchy requirements within the Dynamic Type platform scope."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0013": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "19c0ab7452f8427b6ff82d92604d15cb21ff8a7a5725b695cf6f032dc8124beb", "section_path": ["Typography", "Using system fonts"]},
+      "title": "Adjust tracking in interface mockups when necessary",
+      "statement": {"en": "Adjust tracking in variable-system-font interface mockups when necessary.", "ja": "variable system fontを使うinterface mockupでは必要に応じてtrackingを調整する。"},
+      "conditions": [
+        "Running apps adjust system-font tracking dynamically at every point size.",
+        "Use the reviewed tracking tables for the target platform, typeface, and point size."
+      ],
+      "review_note": "Rebound stable ID 0013 from the false-positive Tracking values heading to the actual mockup-tracking guidance."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0014": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "d6128f01f7be7211ed236dd0b74f9ddabcc7d45b784d74996f5ceeb81b4b14cd", "section_path": ["Typography", "Ensuring legibility"]},
+      "title": "Avoid light font weights",
+      "statement": {"en": "Avoid light font weights, especially at small text sizes.", "ja": "特に小さなtext sizeではlight font weightを避ける。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "conditions": [
+        "Prefer Regular, Medium, Semibold, or Bold over Ultralight, Thin, or Light."
+      ],
+      "review_note": "Retained direct Avoid at AVOID and recorded the recommended weight alternatives."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0023": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "e03d2662bdea3240810f5a30d1273c7146676691547aea51e06fb695fb3c11bc", "section_path": ["Typography", "Conveying hierarchy"]},
+      "title": "Use type attributes to convey hierarchy",
+      "statement": {"en": "Use font weight, size, and color to convey information hierarchy.", "ja": "information hierarchyを伝えるためにfont weight、size、colorを使う。"},
+      "conditions": [
+        "Emphasize important information and help people distinguish levels."
+      ],
+      "review_note": "Activated the hierarchy technique as SHOULD and separated the explicit size-change outcome."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0024": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "833906fda319d27f0f195dd32d421a5234fa4b1fcef01070fb6af9291a820832", "section_path": ["Typography", "Using system fonts"]},
+      "title": "Modify built-in text styles when necessary",
+      "statement": {"en": "Modify built-in text styles with symbolic traits when necessary.", "ja": "必要に応じてsymbolic traitでbuilt-in text styleを変更する。"},
+      "conditions": [
+        "Use weight traits for hierarchy and leading traits for readability or space.",
+        "Loose leading can help wide columns or long passages; tight leading can help height-constrained multiline areas."
+      ],
+      "review_note": "Activated the conditional style-modification recommendation and separated the three-line tight-leading AVOID."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0025": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "28f459d8ff4bceddff122b6ebb66a4c743f1f4d0a0b38f8bd0b4ee7916b333e7", "section_path": ["Typography", "Using custom fonts"]},
+      "title": "Support accessibility with custom fonts",
+      "statement": {"en": "Support accessibility features when using custom fonts.", "ja": "custom fontを使う場合はaccessibility featureをsupportする。"},
+      "conditions": [
+        "The exact Dynamic Type and Bold Text outcome is a separate mandatory rule."
+      ],
+      "review_note": "Activated the broad accessibility recommendation while preserving the supporting Make sure outcome separately."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0026": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "c47ffb75d650e4051416cae6c3ca6f85de9000284865826ad49a6d50184455b8", "section_path": ["Typography", "Supporting Dynamic Type"]},
+      "title": "Scale meaningful icons with font size",
+      "statement": {"en": "Increase meaningful interface-icon sizes as the font size increases.", "ja": "font sizeが大きくなるにつれてmeaningful interface iconも大きくする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": [
+        "SF Symbols scale automatically with Dynamic Type."
+      ],
+      "review_note": "Activated the scaling recommendation and separated the explicit larger-size visibility outcome."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0027": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "8190b3276867b8fe1ca89cb42785cdefb0f7d7b2f85daf98dd5b5699a92b2100", "section_path": ["Typography", "Conveying hierarchy"]},
+      "title": "Ensure hierarchy is preserved when text sizes change",
+      "statement": {"en": "Maintain relative hierarchy and visual distinction when people adjust text sizes.", "ja": "人がtext sizeを調整してもrelative hierarchyとvisual distinctionを維持する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "review_note": "Recovered and retained the explicit Be sure outcome as MUST."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0028": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "492360f509219f4cd9659a0a0cbc104a765bb72e8419c154d07b7aff86e5a705", "section_path": ["Typography", "Using system fonts"]},
+      "title": "Avoid tight leading for three or more lines",
+      "statement": {"en": "Avoid tight leading when displaying three or more lines of text.", "ja": "3行以上のtextを表示するときはtight leadingを避ける。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "conditions": [
+        "Apply even when vertical space is limited."
+      ],
+      "review_note": "Recovered the conditional direct Avoid without elevating it to MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0029": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "e258f88d356385de981e2203a60507ccee94d293101775de5fedb87a4d6038c3", "section_path": ["Typography", "Using system fonts"]},
+      "title": "Avoid embedding system fonts",
+      "statement": {"en": "Avoid embedding system fonts in an app or game.", "ja": "appやgameへsystem fontをembedすることを避ける。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "conditions": [
+        "Access system fonts through Font.Design constants."
+      ],
+      "review_note": "Recovered the direct Don't guidance at AVOID because the source provides no stronger prohibition."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0030": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "20dfc4c1fc25485e3a582900966994852a98186f53a233fef6006ef94ba07e50", "section_path": ["Typography", "Using custom fonts"]},
+      "title": "Ensure custom fonts match accessibility behavior",
+      "statement": {"en": "On supported platforms, make custom fonts match Dynamic Type and Bold Text behavior.", "ja": "supported platformではcustom fontをDynamic TypeとBold Textのbehaviorに合わせる。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "review_note": "Recovered the supporting Make sure sentence as an explicit platform-scoped MUST."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0031": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "20dfc4c1fc25485e3a582900966994852a98186f53a233fef6006ef94ba07e50", "section_path": ["Typography", "Using custom fonts"]},
+      "title": "Ensure a Unity text-size fallback",
+      "statement": {"en": "When the Unity plug-in is inappropriate, provide another text-size control.", "ja": "Unity plug-inが適切でない場合は別のtext-size controlを用意する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": [
+        "The Unity-based game cannot appropriately use Apple's Dynamic Type plug-in."
+      ],
+      "review_note": "Recovered the conditional Be sure fallback as a separate MUST."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0032": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "1ca6bc76f49ccdcedfdd41ede1506e25c1bce76f74c9330435d144c72c01090c", "section_path": ["Typography", "Supporting Dynamic Type"]},
+      "title": "Ensure meaningful icons remain visible at larger sizes",
+      "statement": {"en": "Make sure meaningful interface icons remain easy to view at larger font sizes.", "ja": "meaningful interface iconが大きなfont sizeでも見やすく保たれるようにする。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": [
+        "The icon communicates important information."
+      ],
+      "review_note": "Recovered the supporting Make sure visibility outcome as a separate MUST."
+    },
+    "HIG-FOUNDATIONS-TYPOGRAPHY-0033": {
+      "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "2c087d5607d602d6f0357e5e1b003b15ba6070546ee449d1534a696d68760986", "section_path": ["Typography", "Supporting Dynamic Type"]},
+      "title": "Avoid incomplete truncation in scrollable regions",
+      "statement": {"en": "Avoid truncating scrollable text unless people can open a complete view.", "ja": "complete viewを開けない場合はscrollable textのtruncationを避ける。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "review_note": "Split the conditional direct Avoid from the general truncation-minimization recommendation."
     },
     "HIG-FOUNDATIONS-TYPOGRAPHY-0011": {
       "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "558b5296a93aa76ae06bd48d0745ce32e610c15cc5f2d3214194ef85dda7e4af", "section_path": ["Typography", "Platform considerations", "visionOS"]},

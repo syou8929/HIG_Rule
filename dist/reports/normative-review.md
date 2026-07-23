@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 374
-- Retained MUST: 336
+- Reviewed rules: 378
+- Retained MUST: 340
 - Retained MUST_NOT: 38
 - Normative level changes: 143
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T08:42:07Z
+- Reviewed at: 2026-07-23T09:00:21Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -518,6 +518,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-TYPOGRAPHY-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0018 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional You need to specify platform requirement for NY type styles. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0021 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the conditional Be sure to test directive for a nondefault text color. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0027 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0030 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0031 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-TYPOGRAPHY-0032 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure text-legibility requirement and its platform size table. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure button-usability requirement and surfacing the page’s size wording conflict. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
