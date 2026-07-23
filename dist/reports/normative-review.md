@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 516
-- Retained MUST: 445
-- Retained MUST_NOT: 71
+- Reviewed rules: 530
+- Retained MUST: 453
+- Retained MUST_NOT: 77
 - Normative level changes: 155
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T18:20:00Z
+- Reviewed at: 2026-07-23T18:40:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -895,6 +895,20 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0047 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0049 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0057 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIRI-0003 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0010 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0015 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0017 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0018 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0020 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0021 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0022 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0024 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0025 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0026 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0027 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0028 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 · MUST · retained_with_atomicity_or_scope_correction — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012 · MUST · retained_with_atomicity_or_scope_correction — Raised to MUST after confirming the parent Make sure directive applies to every item in the custom-tutorial list. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the conditional Be sure directive that gates terms presentation on the required iOS update. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))

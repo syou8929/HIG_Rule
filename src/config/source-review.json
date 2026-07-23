@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T18:20:00Z",
+  "reviewed_at": "2026-07-23T18:40:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -4605,6 +4605,57 @@
         "modalities": []
       },
       "review_note": "Completed the source-named iOS, iPadOS-family, and macOS button requirements, including dimensions, margins, contrast, approved titles, artwork, proportions, shapes, and color restrictions."
+    },
+    {
+      "id": "priority-6-siri-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T18:40:00Z",
+      "review_method": "Rendered Apple HIG Siri integration, contextual-information, best-practice, custom-response, editorial, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+          "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-SIRI-0001",
+        "HIG-TECHNOLOGIES-SIRI-0002",
+        "HIG-TECHNOLOGIES-SIRI-0003",
+        "HIG-TECHNOLOGIES-SIRI-0004",
+        "HIG-TECHNOLOGIES-SIRI-0005",
+        "HIG-TECHNOLOGIES-SIRI-0006",
+        "HIG-TECHNOLOGIES-SIRI-0007",
+        "HIG-TECHNOLOGIES-SIRI-0008",
+        "HIG-TECHNOLOGIES-SIRI-0009",
+        "HIG-TECHNOLOGIES-SIRI-0010",
+        "HIG-TECHNOLOGIES-SIRI-0011",
+        "HIG-TECHNOLOGIES-SIRI-0012",
+        "HIG-TECHNOLOGIES-SIRI-0013",
+        "HIG-TECHNOLOGIES-SIRI-0014",
+        "HIG-TECHNOLOGIES-SIRI-0015",
+        "HIG-TECHNOLOGIES-SIRI-0016",
+        "HIG-TECHNOLOGIES-SIRI-0017",
+        "HIG-TECHNOLOGIES-SIRI-0018",
+        "HIG-TECHNOLOGIES-SIRI-0019",
+        "HIG-TECHNOLOGIES-SIRI-0020",
+        "HIG-TECHNOLOGIES-SIRI-0021",
+        "HIG-TECHNOLOGIES-SIRI-0022",
+        "HIG-TECHNOLOGIES-SIRI-0023",
+        "HIG-TECHNOLOGIES-SIRI-0024",
+        "HIG-TECHNOLOGIES-SIRI-0025",
+        "HIG-TECHNOLOGIES-SIRI-0026",
+        "HIG-TECHNOLOGIES-SIRI-0027",
+        "HIG-TECHNOLOGIES-SIRI-0028"
+      ],
+      "scope": {
+        "portability": "technology-specific",
+        "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"],
+        "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"],
+        "components": [],
+        "modalities": ["voice"]
+      },
+      "review_note": "Completed the all-platform Siri page, recovered fourteen omitted atomic requirements, and separated App Intents, multimodal response, parental-control, reserved-phrase, impersonation, attribution, and trademark constraints."
     }
   ],
   "rules": {
@@ -29819,6 +29870,191 @@
       "statement": {"en": "Ensure people know an optional account-data request is optional and understand its benefit.", "ja": "optional account-data requestがoptionalであることとそのbenefitを理解できるようにする。"},
       "conditions": ["The additional data isn't required but may improve the user experience."],
       "review_note": "Recovered the second explicit Make sure requirement and its optional-data condition."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0001": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "8690cc9cf044d3f8e9e2379b4073bd7948e25782c710084bb0864952399d0d35", "section_path": ["Siri", "Best practices"]},
+      "conditions": ["Choose intent and entity terminology that people are likely to recognize naturally."],
+      "review_note": "Recorded the intent-and-entity terminology context."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0002": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "1b15136da99dc3db9a26dc7b2598d9c70472562754059f0f719485d9651816a5", "section_path": ["Siri", "Best practices"]},
+      "conditions": ["Prioritize content relevant to personal context, such as recent searches, favorites, bookmarks, or wishlists."],
+      "exceptions": ["A category such as email or messaging may have a reason to expose a broader catalog."],
+      "review_note": "Recorded the personal-relevance examples and expanded-catalog exception."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0003": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "21e0c33674ed6333b133ca172e078e232c8d287e219e61ab67b34e0c20516240", "section_path": ["Siri", "Best practices"]},
+      "title": "Never include advertising in Siri-delivered content",
+      "statement": {"en": "Never include advertisements, marketing, or in-app purchase sales pitches in content Siri delivers.", "ja": "Siriがdeliverするcontentにadvertisement、marketing、in-app purchase sales pitchを含めない。"},
+      "normative_level": "MUST_NOT",
+      "polarity": "prohibit",
+      "severity": "error",
+      "review_note": "Raised the named Siri-delivered advertising prohibition to a platform-contract MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0004": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "dd74bfe11588fee8ceed9dc411060b07bc1fbb79def2b168209a7f9b87f33fae", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "conditions": ["Clearly describe what happens when Siri performs the action.", "The mandatory follow-up-dialogue customization is recorded separately."],
+      "review_note": "Recorded the action-outcome clarity goal and separated the explicit Be sure clause."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0005": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "3e75e554f769df42f6f8adebc6fc85e02bbdf39aceaa7bd4fa78308b55b3cdd7", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "conditions": ["Use current-conversation context to remove details that people don't need to hear repeatedly."],
+      "review_note": "Recorded the repeated-audio-response reason for succinctness."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0006": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "4a4420bdac16b6206040691459ac914acf539d87427819586cc7881fa0f00b70", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "title": "Ensure Siri responses work audibly and visually",
+      "statement": {"en": "Ensure Siri can deliver each app-provided response both audibly and visually.", "ja": "app提供の各Siri responseをaudibleとvisualの両方でdeliverできるようにする。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Let Siri choose the delivery method appropriate to the current device and context."],
+      "review_note": "Raised the multimodal delivery requirement to MUST as an accessibility and platform-integration contract."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0007": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "5e5955d46c35ceb4cf58c78d41c5921b20d30b799bd381668c74a6a3bd6a107b", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "conditions": ["Create welcoming responses for everyone and avoid unnecessary assumptions about identity."],
+      "review_note": "Recorded the inclusive-response purpose without elevating the general design lead."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0008": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "014cb795b5af85ac69aae2c48b44b45f2c3e81eb3daaf47065b8ad164ecc05d3", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "conditions": ["The full option list would take too long for Siri to read.", "Use the open-ended question to narrow scope or collect needed detail."],
+      "review_note": "Recorded the list-length condition and narrowing purpose."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0009": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "ac8f41dcd80a918e1d4de5254082e684e226f5507e6434fdd5f38a7fc3b99728", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "conditions": ["Account for a request starting on one device and taking effect on another."],
+      "review_note": "Recorded the cross-device reason for device-independent wording."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0010": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "528b600d3e654f918e20fe93d5afeb67b8f477e7710c9acdaff40b21692aef6b", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "title": "Ensure Siri responses respect parental controls",
+      "statement": {"en": "Ensure app-provided Siri responses use appropriate language and respect parental controls.", "ja": "app提供のSiri responseでappropriate languageを使いparental controlを尊重する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Account for explicit-content restrictions and the possibility that nearby people can hear an audible response."],
+      "review_note": "Raised the parental-control and family-safety platform contract to MUST."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0011": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "9e442f654f0fb08cc61d19364b54abfbade3f90735c121a67d87ce02d2697016", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "conditions": ["Enhance default error text with information specific to the current failure."],
+      "review_note": "Recorded the situation-specific error-response requirement."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0012": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "634a01be57133ed2281b84fdce5123dc8d6bfafaa3b21d40cc0d611233bf5334", "section_path": ["Siri", "Editorial guidelines"]},
+      "conditions": ["The explicit impersonation, Apple-attribution, and reserved-phrase prohibitions are recorded separately."],
+      "review_note": "Kept the general awareness lead at SHOULD and separated each explicit prohibition."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0013": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "848a69717452344d6e372ad287d2676f6c5706d2130c8dc9a138a09e30bbe8c0", "section_path": ["Siri", "Best practices"]},
+      "conditions": ["Use action frequency and context to prioritize which intents, entities, and content to expose."],
+      "review_note": "Recorded the prioritization outcome of identifying popular actions."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0014": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "4b1020ed437c612b0f83ab059a31562dd22619d8d4e4ab992b47826f2f0ba934", "section_path": ["Siri", "Editorial guidelines"]},
+      "conditions": ["Use the word Siri directly; the separate pronoun rule records the discouraged wording."],
+      "review_note": "Recorded the preferred trademark reference and separated the pronoun guidance."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0015": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "422a9beaed8b941fe7660004ea30ae3630b948acb5532c74f3bb491c14dea25e", "section_path": ["Siri", "Best practices"]},
+      "title": "Ensure a custom response is used only when built-in responses are insufficient",
+      "statement": {"en": "Ensure the app provides a custom Siri response only when built-in responses don't meet its needs.", "ja": "built-in responseでappのneedsを満たせない場合だけcustom Siri responseを提供する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "review_note": "Raised the explicit only-if restriction to a bounded platform-integration MUST."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0016": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "4a7f8ce8280dcf240476fa48e73b0e237c5de988583d591be872d57f0d5b6697", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "statement": {"en": "Omit the app name from Siri responses because the system already provides attribution.", "ja": "systemがattributionを提供するためSiri responseからapp nameを省く。"},
+      "review_note": "Recovered the omitted attribution guidance and its system-provided reason."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0017": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "3be215933e87925d9aa2bb0e3c2205588403180c03cc975dce3b46a9d15e326b", "section_path": ["Siri", "Getting your app to work with Siri"]},
+      "title": "Ensure Siri features and content are exposed through App Intents",
+      "statement": {"en": "Ensure the app exposes Siri-accessible features and content through the App Intents framework.", "ja": "Siriから利用するapp featureとcontentをApp Intents frameworkで公開する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Apply when the app is intended to work with Siri and Apple Intelligence."],
+      "review_note": "Recovered the source's has-to integration requirement as a platform-contract MUST."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0018": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "1464684243977f9eb038ca0b14d6e8687a1ea83838f4c31c631aa1acbb1a9b22", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "title": "Ensure follow-up dialogue is customized for clarity",
+      "statement": {"en": "Ensure default Siri dialogue is customized for clarity when asking follow-up questions.", "ja": "follow-up questionを尋ねる場合はdefault Siri dialogueをclarityのためにcustomizeする。"},
+      "conditions": ["Apply when a custom response asks a follow-up question."],
+      "review_note": "Retained MUST from the explicit Be sure directive and preserved its follow-up condition."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0020": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "484e896947b32a0aeb88fcab9b8769b0f2fcc2f41ca2b96a84530292543073f2", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "title": "Ensure every voice response stands on its own",
+      "statement": {"en": "Ensure every Siri voice response stands on its own without relying on visual elements for essential information.", "ja": "各Siri voice responseをessential informationのためにvisual elementへ依存せず単独で理解できるようにする。"},
+      "conditions": ["Essential information must remain available when the response is delivered without a visual interface."],
+      "review_note": "Recovered the explicit Make sure requirement and its nonvisual accessibility condition."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0021": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "0fbe0534ed8b851a368b817f8177f7c9f4d6afeaf0f128598de6a010b7be4347", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "title": "Ensure every device reference is accurate in context",
+      "statement": {"en": "When a Siri response must name a device, ensure the reference is accurate and makes sense in context.", "ja": "Siri responseでdevice名が必要な場合はreferenceを正確かつcontextに適合させる。"},
+      "conditions": ["Use a device-specific reference only when it is necessary."],
+      "review_note": "Recovered the conditional Make sure requirement and its must-reference qualifier."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0022": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "025cc66e5de8f86e868be78349622d8514de29453b1ac5a12a272e6e25587dd9", "section_path": ["Siri", "Customizing your app’s experience with Siri"]},
+      "title": "Never include offensive language in app-provided Siri dialogue",
+      "statement": {"en": "Never include offensive language in app-provided Siri dialogue.", "ja": "app提供のSiri dialogueにoffensive languageを含めない。"},
+      "normative_level": "MUST_NOT",
+      "polarity": "prohibit",
+      "severity": "error",
+      "review_note": "Raised the named offensive-content prohibition to MUST_NOT under inclusion and family-safety priorities."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0023": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "e43be771ebcbf6c0f279c12e6b13269e64b683d00af960b484861ea6cb5188bf", "section_path": ["Siri", "Editorial guidelines"]},
+      "title": "Avoid referring to Siri with personal pronouns",
+      "statement": {"en": "Avoid referring to Siri with personal pronouns such as she, him, or her.", "ja": "Siriをshe、him、herなどのpersonal pronounで参照しない。"},
+      "review_note": "Kept the direct Don't wording at AVOID because the surrounding source presents naming as an editorial preference."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0024": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "69b5d44ab223106e2ae08726738bf510c0494b66d759dd6a9481490703f85547", "section_path": ["Siri", "Editorial guidelines"]},
+      "title": "Never impersonate Siri or reproduce its functionality",
+      "statement": {"en": "Never impersonate Siri or attempt to reproduce the functionality Siri provides.", "ja": "SiriをimpersonateしたりSiriのfunctionalityを再現しようとしたりしない。"},
+      "review_note": "Recovered the first two explicit Never prohibitions as one bounded platform-identity rule."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0025": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "69b5d44ab223106e2ae08726738bf510c0494b66d759dd6a9481490703f85547", "section_path": ["Siri", "Editorial guidelines"]},
+      "title": "Never make an app response appear to come from Apple",
+      "statement": {"en": "Never provide an app response that appears to come from Apple.", "ja": "Appleから発信されたように見えるapp responseを提供しない。"},
+      "normative_level": "MUST_NOT",
+      "polarity": "prohibit",
+      "severity": "error",
+      "review_note": "Recovered the third explicit Never attribution prohibition separately."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0026": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "69b5d44ab223106e2ae08726738bf510c0494b66d759dd6a9481490703f85547", "section_path": ["Siri", "Editorial guidelines"]},
+      "title": "Never use Siri-reserved phrases in app responses",
+      "statement": {"en": "Never use Siri-reserved phrases such as “Call 911” or “Hey Siri” in app responses.", "ja": "app responseで「Call 911」や「Hey Siri」などSiri-reserved phraseを使わない。"},
+      "normative_level": "MUST_NOT",
+      "polarity": "prohibit",
+      "severity": "error",
+      "review_note": "Raised the named reserved-phrase prohibition to MUST_NOT, including the emergency-call example."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0027": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "0efba9b7842a01977f4215e535653a850c440b5cae62b048407b489a8af42af6", "section_path": ["Siri", "Editorial guidelines"]},
+      "title": "Ensure localization changes only “Hey” in “Hey Siri”",
+      "statement": {"en": "In localized “Hey Siri,” ensure only the word “Hey” is translated.", "ja": "localized「Hey Siri」では「Hey」だけをtranslateする。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Use the acceptable translation listed by Apple for the target locale."],
+      "review_note": "Raised the explicit translate-only trademark restriction to MUST."
+    },
+    "HIG-TECHNOLOGIES-SIRI-0028": {
+      "source": {"source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981", "source_sentence_hash": "0efba9b7842a01977f4215e535653a850c440b5cae62b048407b489a8af42af6", "section_path": ["Siri", "Editorial guidelines"]},
+      "title": "Never translate the Siri trademark",
+      "statement": {"en": "Never translate the word Siri in a localized “Hey Siri” phrase.", "ja": "localized「Hey Siri」phrase内のSiriをtranslateしない。"},
+      "review_note": "Recovered the explicit Never trademark prohibition."
     }
   }
 }

@@ -1,13 +1,13 @@
 import type { GuidanceCandidate, NormativeLevel, Portability, Rule, SourcePage } from "./types.js";
 import { slugify } from "./util.js";
 
-const ACTIONABLE = /^(accurately|adhere|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|be sure to|bear in mind|break up|carefully consider|center|change|choose|clearly|cluster|communicate|confirm|consider|convey|create|defer|define|delay|describe|design|determine|discard|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|hide|identify|in general, avoid|include|indicate|integrate|keep|let|make|maintain|match|minimize|must|never|offer|optimize|personalize|pick|place|position|prefer|present|preserve|prioritize|prompt|provide|recognize|reduce|refer to|rely|remove|replacing|represent|required|require|reserve|respect|respond|retain|show|showcase|simplify|specify|strive|support|take advantage|test|tightening|track|tracking|treat|try to|use|verify|wait|warn|welcome|write|you must|you need to)\b/i;
+const ACTIONABLE = /^(accurately|adhere|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|be sure to|bear in mind|break up|carefully consider|center|change|choose|clearly|cluster|communicate|confirm|consider|convey|create|defer|define|delay|describe|design|determine|discard|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|hide|identify|in general, avoid|include|indicate|integrate|keep|let|make|maintain|match|minimize|must|never|offer|omit|optimize|personalize|pick|place|position|prefer|present|preserve|prioritize|prompt|provide|recognize|reduce|refer to|rely|remove|replacing|represent|required|require|reserve|respect|respond|retain|show|showcase|simplify|specify|strive|support|take advantage|test|tightening|track|tracking|translate|treat|try to|use|verify|wait|warn|welcome|write|you must|you need to)\b/i;
 const CONTEXTUAL_ACTIONABLE = /^(as\b.+,\s*defer\b|because\b.+\bensure\b|for\b.+\bconsider\b|if\b.+,\s*(?:add|avoid|consider|fade out|supply|use)\b|in\b.+,\s*help\b|in general,\s*(?:do not|don['’]t|use)\b|outside of\b.+\buse\b|to\b.+,\s*prefer\b|within\b.+\bconsider\b)/i;
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
   if (/^(Always On|Center area|Tracking requests|Help buttons|Support for configuring the button’s corner radius to match the style of your UI \(iOS, macOS, and web\))$/i.test(text)) return false;
-  return (ACTIONABLE.test(text) || CONTEXTUAL_ACTIONABLE.test(text) || /^the overall color needs to\b/i.test(text)) && !/^Resources?\b/i.test(text);
+  return (ACTIONABLE.test(text) || CONTEXTUAL_ACTIONABLE.test(text) || /^the overall color needs to\b/i.test(text) || /^only provide\b/i.test(text)) && !/^Resources?\b/i.test(text);
 }
 
 export function normative(text: string): Pick<Rule, "normative_level" | "confidence" | "review_required" | "polarity" | "severity"> {

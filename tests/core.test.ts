@@ -122,6 +122,12 @@ test("recognizes actionable plain-list guidance", () => {
     source_sentence_hash: "hash",
     word_count: 18,
   }), false);
+  assert.equal(isActionable({
+    text: "Only provide a custom response if built-in responses don’t meet your app’s needs",
+    section_path: ["Siri", "Best practices"],
+    source_sentence_hash: "hash",
+    word_count: 13,
+  }), true);
   assert.equal(isActionable({ text: "Center important content", section_path: [], source_sentence_hash: "e".repeat(64), word_count: 3 }), true);
   assert.equal(isActionable({ text: "Center area", section_path: [], source_sentence_hash: "f".repeat(64), word_count: 2 }), false);
   assert.equal(paraphrase("Rely on the Digital Crown", "Spatial layout").en, "Rely on the Digital Crown.");

@@ -247317,8 +247317,8 @@
       "ja": "該当する状況ではfamiliar terms for your content and actionsを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -247345,7 +247345,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Choose intent and entity terminology that people are likely to recognize naturally."
     ],
     "exceptions": [],
     "rationale": {
@@ -247398,8 +247398,8 @@
       "ja": "必要な場合にrelevant contentを利用可能にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -247426,9 +247426,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prioritize content relevant to personal context, such as recent searches, favorites, bookmarks, or wishlists."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A category such as email or messaging may have a reason to expose a broader catalog."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
@@ -247470,19 +247472,19 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-SIRI-0003",
-    "title": "Don’t advertise",
+    "title": "Never include advertising in Siri-delivered content",
     "category": "technologies",
     "topic": "siri",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude advertise from the applicable experience.",
-      "ja": "該当する体験ではadvertiseを避ける。"
+      "en": "Never include advertisements, marketing, or in-app purchase sales pitches in content Siri delivers.",
+      "ja": "Siriがdeliverするcontentにadvertisement、marketing、in-app purchase sales pitchを含めない。"
     },
-    "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "discourage",
-    "severity": "warning",
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
     "scope": {
       "portability": "technology-specific",
       "platforms": [
@@ -247517,7 +247519,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude advertise from the applicable experience.” in the documented Siri context?"
+        "Does the design satisfy “Never include advertisements, marketing, or in-app purchase sales pitches in content Siri delivers.” in the documented Siri context?"
       ]
     },
     "testability": "manual",
@@ -247537,7 +247539,7 @@
       "retrieved_at": "2026-07-21T11:15:20.663Z",
       "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
       "source_sentence_hash": "21e0c33674ed6333b133ca172e078e232c8d287e219e61ab67b34e0c20516240",
-      "evidence_paraphrase": "Exclude advertise from the applicable experience."
+      "evidence_paraphrase": "Never include advertisements, marketing, or in-app purchase sales pitches in content Siri delivers."
     },
     "tags": [
       "technologies",
@@ -247546,7 +247548,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude advertise from the applicable experience.",
+    "apple_native_rule": "Never include advertisements, marketing, or in-app purchase sales pitches in content Siri delivers.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -247560,8 +247562,8 @@
       "ja": "「Siri」において「Write response dialogue that’s clear and descriptive」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -247588,7 +247590,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Clearly describe what happens when Siri performs the action.",
+      "The mandatory follow-up-dialogue customization is recorded separately."
     ],
     "exceptions": [],
     "rationale": {
@@ -247641,8 +247644,8 @@
       "ja": "responses as succinct as possibleを維持する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -247669,7 +247672,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use current-conversation context to remove details that people don't need to hear repeatedly."
     ],
     "exceptions": [],
     "rationale": {
@@ -247713,19 +247716,19 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-SIRI-0006",
-    "title": "Provide responses that Siri can deliver audibly and visually",
+    "title": "Ensure Siri responses work audibly and visually",
     "category": "technologies",
     "topic": "siri",
     "subtopic": "customizing-your-app-s-experience-with-siri",
     "statement": {
-      "en": "Make responses that Siri can deliver audibly and visually available when applicable.",
-      "ja": "必要な場合にresponses that Siri can deliver audibly and visuallyを利用可能にする。"
+      "en": "Ensure Siri can deliver each app-provided response both audibly and visually.",
+      "ja": "app提供の各Siri responseをaudibleとvisualの両方でdeliverできるようにする。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "technology-specific",
       "platforms": [
@@ -247750,7 +247753,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let Siri choose the delivery method appropriate to the current device and context."
     ],
     "exceptions": [],
     "rationale": {
@@ -247760,7 +247763,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make responses that Siri can deliver audibly and visually available when applicable.” in the documented Siri context?"
+        "Does the design satisfy “Ensure Siri can deliver each app-provided response both audibly and visually.” in the documented Siri context?"
       ]
     },
     "testability": "manual",
@@ -247780,7 +247783,7 @@
       "retrieved_at": "2026-07-21T11:15:20.663Z",
       "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
       "source_sentence_hash": "4a4420bdac16b6206040691459ac914acf539d87427819586cc7881fa0f00b70",
-      "evidence_paraphrase": "Make responses that Siri can deliver audibly and visually available when applicable."
+      "evidence_paraphrase": "Ensure Siri can deliver each app-provided response both audibly and visually."
     },
     "tags": [
       "technologies",
@@ -247790,7 +247793,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make responses that Siri can deliver audibly and visually available when applicable.",
+    "apple_native_rule": "Ensure Siri can deliver each app-provided response both audibly and visually.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -247804,8 +247807,8 @@
       "ja": "「Siri」において「Design inclusive interactions」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -247832,7 +247835,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Create welcoming responses for everyone and avoid unnecessary assumptions about identity."
     ],
     "exceptions": [],
     "rationale": {
@@ -247885,8 +247888,8 @@
       "ja": "「Siri」において「Ask an open-ended question when the full list of options is too long」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -247913,7 +247916,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The full option list would take too long for Siri to read.",
+      "Use the open-ended question to narrow scope or collect needed detail."
     ],
     "exceptions": [],
     "rationale": {
@@ -247966,8 +247970,8 @@
       "ja": "responses device-independent whenever possibleを維持する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -247994,7 +247998,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Account for a request starting on one device and taking effect on another."
     ],
     "exceptions": [],
     "rationale": {
@@ -248038,19 +248042,19 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-SIRI-0010",
-    "title": "Use appropriate language and respect parental controls",
+    "title": "Ensure Siri responses respect parental controls",
     "category": "technologies",
     "topic": "siri",
     "subtopic": "customizing-your-app-s-experience-with-siri",
     "statement": {
-      "en": "Choose or apply appropriate language and respect parental controls in the documented context.",
-      "ja": "該当する状況ではappropriate language and respect parental controlsを採用する。"
+      "en": "Ensure app-provided Siri responses use appropriate language and respect parental controls.",
+      "ja": "app提供のSiri responseでappropriate languageを使いparental controlを尊重する。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "technology-specific",
       "platforms": [
@@ -248075,7 +248079,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Account for explicit-content restrictions and the possibility that nearby people can hear an audible response."
     ],
     "exceptions": [],
     "rationale": {
@@ -248085,7 +248089,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply appropriate language and respect parental controls in the documented context.” in the documented Siri context?"
+        "Does the design satisfy “Ensure app-provided Siri responses use appropriate language and respect parental controls.” in the documented Siri context?"
       ]
     },
     "testability": "manual",
@@ -248105,7 +248109,7 @@
       "retrieved_at": "2026-07-21T11:15:20.663Z",
       "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
       "source_sentence_hash": "528b600d3e654f918e20fe93d5afeb67b8f477e7710c9acdaff40b21692aef6b",
-      "evidence_paraphrase": "Choose or apply appropriate language and respect parental controls in the documented context."
+      "evidence_paraphrase": "Ensure app-provided Siri responses use appropriate language and respect parental controls."
     },
     "tags": [
       "technologies",
@@ -248114,7 +248118,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply appropriate language and respect parental controls in the documented context.",
+    "apple_native_rule": "Ensure app-provided Siri responses use appropriate language and respect parental controls.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -248128,8 +248132,8 @@
       "ja": "「Siri」において「Help people understand errors and failures」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -248156,7 +248160,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Enhance default error text with information specific to the current failure."
     ],
     "exceptions": [],
     "rationale": {
@@ -248209,8 +248213,8 @@
       "ja": "「Siri」において「Be aware that the system reserves important actions and phrases for Siri」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -248237,7 +248241,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The explicit impersonation, Apple-attribution, and reserved-phrase prohibitions are recorded separately."
     ],
     "exceptions": [],
     "rationale": {
@@ -248291,8 +248295,8 @@
       "ja": "your app’s most popular actions, and when and where they occurを明確に特定する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -248319,7 +248323,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use action frequency and context to prioritize which intents, entities, and content to expose."
     ],
     "exceptions": [],
     "rationale": {
@@ -248372,8 +248376,8 @@
       "ja": "Siri by nameという名称で参照する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -248400,7 +248404,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the word Siri directly; the separate pronoun rule records the discouraged wording."
     ],
     "exceptions": [],
     "rationale": {
@@ -248441,6 +248445,1145 @@
     "priority_rank": 6,
     "status": "active",
     "apple_native_rule": "Refer to siri by name.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0015",
+    "title": "Ensure a custom response is used only when built-in responses are insufficient",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Ensure the app provides a custom Siri response only when built-in responses don't meet its needs.",
+      "ja": "built-in responseでappのneedsを満たせない場合だけcustom Siri responseを提供する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure the app provides a custom Siri response only when built-in responses don't meet its needs.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "422a9beaed8b941fe7660004ea30ae3630b948acb5532c74f3bb491c14dea25e",
+      "evidence_paraphrase": "Ensure the app provides a custom Siri response only when built-in responses don't meet its needs."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure the app provides a custom Siri response only when built-in responses don't meet its needs.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0016",
+    "title": "Omit your app name from responses",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "customizing-your-app-s-experience-with-siri",
+    "statement": {
+      "en": "Omit the app name from Siri responses because the system already provides attribution.",
+      "ja": "systemがattributionを提供するためSiri responseからapp nameを省く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Omit the app name from Siri responses because the system already provides attribution.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Customizing your app’s experience with Siri"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "4a7f8ce8280dcf240476fa48e73b0e237c5de988583d591be872d57f0d5b6697",
+      "evidence_paraphrase": "Omit the app name from Siri responses because the system already provides attribution."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "customizing-your-app-s-experience-with-siri"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Omit the app name from Siri responses because the system already provides attribution.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0017",
+    "title": "Ensure Siri features and content are exposed through App Intents",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "getting-your-app-to-work-with-siri",
+    "statement": {
+      "en": "Ensure the app exposes Siri-accessible features and content through the App Intents framework.",
+      "ja": "Siriから利用するapp featureとcontentをApp Intents frameworkで公開する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply when the app is intended to work with Siri and Apple Intelligence."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure the app exposes Siri-accessible features and content through the App Intents framework.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Getting your app to work with Siri"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "3be215933e87925d9aa2bb0e3c2205588403180c03cc975dce3b46a9d15e326b",
+      "evidence_paraphrase": "Ensure the app exposes Siri-accessible features and content through the App Intents framework."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "getting-your-app-to-work-with-siri"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure the app exposes Siri-accessible features and content through the App Intents framework.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0018",
+    "title": "Ensure follow-up dialogue is customized for clarity",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "customizing-your-app-s-experience-with-siri",
+    "statement": {
+      "en": "Ensure default Siri dialogue is customized for clarity when asking follow-up questions.",
+      "ja": "follow-up questionを尋ねる場合はdefault Siri dialogueをclarityのためにcustomizeする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply when a custom response asks a follow-up question."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure default Siri dialogue is customized for clarity when asking follow-up questions.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Customizing your app’s experience with Siri"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "1464684243977f9eb038ca0b14d6e8687a1ea83838f4c31c631aa1acbb1a9b22",
+      "evidence_paraphrase": "Ensure default Siri dialogue is customized for clarity when asking follow-up questions."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "customizing-your-app-s-experience-with-siri"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure default Siri dialogue is customized for clarity when asking follow-up questions.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0019",
+    "title": "Avoid including unnecessary words or attempts at humor",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "customizing-your-app-s-experience-with-siri",
+    "statement": {
+      "en": "Exclude including unnecessary words or attempts at humor from the applicable experience.",
+      "ja": "該当する体験ではincluding unnecessary words or attempts at humorを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude including unnecessary words or attempts at humor from the applicable experience.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Customizing your app’s experience with Siri"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "0dbc069ba2a09d5fe0e9fa966f167f49fec4c19842cabfad5d9a5a128d034f06",
+      "evidence_paraphrase": "Exclude including unnecessary words or attempts at humor from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "customizing-your-app-s-experience-with-siri"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Exclude including unnecessary words or attempts at humor from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0020",
+    "title": "Ensure every voice response stands on its own",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "customizing-your-app-s-experience-with-siri",
+    "statement": {
+      "en": "Ensure every Siri voice response stands on its own without relying on visual elements for essential information.",
+      "ja": "各Siri voice responseをessential informationのためにvisual elementへ依存せず単独で理解できるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Essential information must remain available when the response is delivered without a visual interface."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure every Siri voice response stands on its own without relying on visual elements for essential information.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Customizing your app’s experience with Siri"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "484e896947b32a0aeb88fcab9b8769b0f2fcc2f41ca2b96a84530292543073f2",
+      "evidence_paraphrase": "Ensure every Siri voice response stands on its own without relying on visual elements for essential information."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "customizing-your-app-s-experience-with-siri",
+      "voice"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure every Siri voice response stands on its own without relying on visual elements for essential information.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0021",
+    "title": "Ensure every device reference is accurate in context",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "customizing-your-app-s-experience-with-siri",
+    "statement": {
+      "en": "When a Siri response must name a device, ensure the reference is accurate and makes sense in context.",
+      "ja": "Siri responseでdevice名が必要な場合はreferenceを正確かつcontextに適合させる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Use a device-specific reference only when it is necessary."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When a Siri response must name a device, ensure the reference is accurate and makes sense in context.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Customizing your app’s experience with Siri"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "0fbe0534ed8b851a368b817f8177f7c9f4d6afeaf0f128598de6a010b7be4347",
+      "evidence_paraphrase": "When a Siri response must name a device, ensure the reference is accurate and makes sense in context."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "customizing-your-app-s-experience-with-siri"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When a Siri response must name a device, ensure the reference is accurate and makes sense in context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0022",
+    "title": "Never include offensive language in app-provided Siri dialogue",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "customizing-your-app-s-experience-with-siri",
+    "statement": {
+      "en": "Never include offensive language in app-provided Siri dialogue.",
+      "ja": "app提供のSiri dialogueにoffensive languageを含めない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never include offensive language in app-provided Siri dialogue.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Customizing your app’s experience with Siri"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "025cc66e5de8f86e868be78349622d8514de29453b1ac5a12a272e6e25587dd9",
+      "evidence_paraphrase": "Never include offensive language in app-provided Siri dialogue."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "customizing-your-app-s-experience-with-siri"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Never include offensive language in app-provided Siri dialogue.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0023",
+    "title": "Avoid referring to Siri with personal pronouns",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "editorial-guidelines",
+    "statement": {
+      "en": "Avoid referring to Siri with personal pronouns such as she, him, or her.",
+      "ja": "Siriをshe、him、herなどのpersonal pronounで参照しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid referring to Siri with personal pronouns such as she, him, or her.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Editorial guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "e43be771ebcbf6c0f279c12e6b13269e64b683d00af960b484861ea6cb5188bf",
+      "evidence_paraphrase": "Avoid referring to Siri with personal pronouns such as she, him, or her."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "editorial-guidelines",
+      "voice"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid referring to Siri with personal pronouns such as she, him, or her.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0024",
+    "title": "Never impersonate Siri or reproduce its functionality",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "editorial-guidelines",
+    "statement": {
+      "en": "Never impersonate Siri or attempt to reproduce the functionality Siri provides.",
+      "ja": "SiriをimpersonateしたりSiriのfunctionalityを再現しようとしたりしない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never impersonate Siri or attempt to reproduce the functionality Siri provides.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Editorial guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "69b5d44ab223106e2ae08726738bf510c0494b66d759dd6a9481490703f85547",
+      "evidence_paraphrase": "Never impersonate Siri or attempt to reproduce the functionality Siri provides."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "editorial-guidelines",
+      "voice"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Never impersonate Siri or attempt to reproduce the functionality Siri provides.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0025",
+    "title": "Never make an app response appear to come from Apple",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "editorial-guidelines",
+    "statement": {
+      "en": "Never provide an app response that appears to come from Apple.",
+      "ja": "Appleから発信されたように見えるapp responseを提供しない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never provide an app response that appears to come from Apple.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Editorial guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "69b5d44ab223106e2ae08726738bf510c0494b66d759dd6a9481490703f85547",
+      "evidence_paraphrase": "Never provide an app response that appears to come from Apple."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "editorial-guidelines"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Never provide an app response that appears to come from Apple.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0026",
+    "title": "Never use Siri-reserved phrases in app responses",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "editorial-guidelines",
+    "statement": {
+      "en": "Never use Siri-reserved phrases such as “Call 911” or “Hey Siri” in app responses.",
+      "ja": "app responseで「Call 911」や「Hey Siri」などSiri-reserved phraseを使わない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never use Siri-reserved phrases such as “Call 911” or “Hey Siri” in app responses.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Editorial guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "69b5d44ab223106e2ae08726738bf510c0494b66d759dd6a9481490703f85547",
+      "evidence_paraphrase": "Never use Siri-reserved phrases such as “Call 911” or “Hey Siri” in app responses."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "editorial-guidelines",
+      "voice"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Never use Siri-reserved phrases such as “Call 911” or “Hey Siri” in app responses.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0027",
+    "title": "Ensure localization changes only “Hey” in “Hey Siri”",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "editorial-guidelines",
+    "statement": {
+      "en": "In localized “Hey Siri,” ensure only the word “Hey” is translated.",
+      "ja": "localized「Hey Siri」では「Hey」だけをtranslateする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Use the acceptable translation listed by Apple for the target locale."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “In localized “Hey Siri,” ensure only the word “Hey” is translated.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Editorial guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "0efba9b7842a01977f4215e535653a850c440b5cae62b048407b489a8af42af6",
+      "evidence_paraphrase": "In localized “Hey Siri,” ensure only the word “Hey” is translated."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "editorial-guidelines",
+      "voice"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "In localized “Hey Siri,” ensure only the word “Hey” is translated.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SIRI-0028",
+    "title": "Never translate the Siri trademark",
+    "category": "technologies",
+    "topic": "siri",
+    "subtopic": "editorial-guidelines",
+    "statement": {
+      "en": "Never translate the word Siri in a localized “Hey Siri” phrase.",
+      "ja": "localized「Hey Siri」phrase内のSiriをtranslateしない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": [
+        "voice"
+      ]
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Siri experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSiriの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never translate the word Siri in a localized “Hey Siri” phrase.” in the documented Siri context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/siri",
+      "page_title": "Siri",
+      "section_path": [
+        "Siri",
+        "Editorial guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.663Z",
+      "source_hash": "130d8f0b084483c30bcd3954ddb295947a1632b681fe86bdab07c55ab4a56981",
+      "source_sentence_hash": "0efba9b7842a01977f4215e535653a850c440b5cae62b048407b489a8af42af6",
+      "evidence_paraphrase": "Never translate the word Siri in a localized “Hey Siri” phrase."
+    },
+    "tags": [
+      "technologies",
+      "siri",
+      "editorial-guidelines"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Never translate the word Siri in a localized “Hey Siri” phrase.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

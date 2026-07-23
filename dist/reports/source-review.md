@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3069
-- Reviewed batches: 175
+- Reviewed rules: 3097
+- Reviewed batches: 176
 - Official source only: yes
-- Reviewed at: 2026-07-23T18:20:00Z
+- Reviewed at: 2026-07-23T18:40:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -3015,6 +3015,34 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0055 · high — Recovered the actual corner-radius design guidance after removing the factual API-capability candidate. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0056 · high — Recovered the direct Don't clause and kept it at AVOID under the strength policy. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0057 · high — Recovered the second explicit Make sure requirement and its optional-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIRI-0001 · high — Recorded the intent-and-entity terminology context. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0002 · high — Recorded the personal-relevance examples and expanded-catalog exception. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0003 · high — Raised the named Siri-delivered advertising prohibition to a platform-contract MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0004 · high — Recorded the action-outcome clarity goal and separated the explicit Be sure clause. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0005 · high — Recorded the repeated-audio-response reason for succinctness. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0006 · high — Raised the multimodal delivery requirement to MUST as an accessibility and platform-integration contract. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0007 · high — Recorded the inclusive-response purpose without elevating the general design lead. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0008 · high — Recorded the list-length condition and narrowing purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0009 · high — Recorded the cross-device reason for device-independent wording. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0010 · high — Raised the parental-control and family-safety platform contract to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0011 · high — Recorded the situation-specific error-response requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0012 · high — Kept the general awareness lead at SHOULD and separated each explicit prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0013 · high — Recorded the prioritization outcome of identifying popular actions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0014 · high — Recorded the preferred trademark reference and separated the pronoun guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0015 · high — Raised the explicit only-if restriction to a bounded platform-integration MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0016 · high — Recovered the omitted attribution guidance and its system-provided reason. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0017 · high — Recovered the source's has-to integration requirement as a platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0018 · high — Retained MUST from the explicit Be sure directive and preserved its follow-up condition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0019 · high — Completed the all-platform Siri page, recovered fourteen omitted atomic requirements, and separated App Intents, multimodal response, parental-control, reserved-phrase, impersonation, attribution, and trademark constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0020 · high — Recovered the explicit Make sure requirement and its nonvisual accessibility condition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0021 · high — Recovered the conditional Make sure requirement and its must-reference qualifier. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0022 · high — Raised the named offensive-content prohibition to MUST_NOT under inclusion and family-safety priorities. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0023 · high — Kept the direct Don't wording at AVOID because the surrounding source presents naming as an editorial preference. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0024 · high — Recovered the first two explicit Never prohibitions as one bounded platform-identity rule. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0025 · high — Recovered the third explicit Never attribution prohibition separately. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0026 · high — Raised the named reserved-phrase prohibition to MUST_NOT, including the emergency-call example. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0027 · high — Raised the explicit translate-only trademark restriction to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- HIG-TECHNOLOGIES-SIRI-0028 · high — Recovered the explicit Never trademark prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0001 · high — Reviewed the rendered source context for “Help merchants accept Tap to Pay on iPhone terms and conditions before they begin interacting with their cu…” and recorded its Tap to Pay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0002 · high — Reviewed the rendered source context for “Provide a tutorial that describes the supported payment types and shows how to use Tap to Pay on iPhone” and recorded its Tap to Pay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0003 · high — Reviewed the rendered source context for “Provide Tap to Pay on iPhone as a checkout option whether the feature is enabled or not” and recorded its Tap to Pay-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))

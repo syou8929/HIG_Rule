@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T17:25:20.057Z. 3356 active rules; 7 deprecated rules.
+Generated 2026-07-23T17:34:31.529Z. 3370 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -3575,20 +3575,34 @@ Generated 2026-07-23T17:25:20.057Z. 3356 active rules; 7 deprecated rules.
 - **HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0057 · MUST · high** — Ensure people know an optional account-data request is optional and understand its benefit. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 ### siri
 
-- **HIG-TECHNOLOGIES-SIRI-0001 · SHOULD · low** — Choose or apply familiar terms for your content and actions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0002 · SHOULD · low** — Make relevant content available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0003 · AVOID · low** — Exclude advertise from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0004 · SHOULD · low** — Apply the documented Siri guidance to write response dialogue that’s clear and descriptive. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0005 · SHOULD · low** — Maintain responses as succinct as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0006 · SHOULD · low** — Make responses that Siri can deliver audibly and visually available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0007 · SHOULD · low** — Apply the documented Siri guidance to design inclusive interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0008 · SHOULD · low** — Apply the documented Siri guidance to ask an open-ended question when the full list of options is too long. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0009 · SHOULD · low** — Maintain responses device-independent whenever possible. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0010 · SHOULD · low** — Choose or apply appropriate language and respect parental controls in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0011 · SHOULD · low** — Apply the documented Siri guidance to help people understand errors and failures. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0012 · SHOULD · low** — Apply the documented Siri guidance to be aware that the system reserves important actions and phrases for Siri. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0013 · SHOULD · low** — Determine your app’s most popular actions, and when and where they occur explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
-- **HIG-TECHNOLOGIES-SIRI-0014 · SHOULD · low** — Refer to siri by name. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0001 · SHOULD · high** — Choose or apply familiar terms for your content and actions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0002 · SHOULD · high** — Make relevant content available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0003 · MUST_NOT · high** — Never include advertisements, marketing, or in-app purchase sales pitches in content Siri delivers. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0004 · SHOULD · high** — Apply the documented Siri guidance to write response dialogue that’s clear and descriptive. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0005 · SHOULD · high** — Maintain responses as succinct as possible. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0006 · MUST · high** — Ensure Siri can deliver each app-provided response both audibly and visually. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0007 · SHOULD · high** — Apply the documented Siri guidance to design inclusive interactions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0008 · SHOULD · high** — Apply the documented Siri guidance to ask an open-ended question when the full list of options is too long. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0009 · SHOULD · high** — Maintain responses device-independent whenever possible. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0010 · MUST · high** — Ensure app-provided Siri responses use appropriate language and respect parental controls. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0011 · SHOULD · high** — Apply the documented Siri guidance to help people understand errors and failures. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0012 · SHOULD · high** — Apply the documented Siri guidance to be aware that the system reserves important actions and phrases for Siri. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0013 · SHOULD · high** — Determine your app’s most popular actions, and when and where they occur explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0014 · SHOULD · high** — Refer to siri by name. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0015 · MUST · high** — Ensure the app provides a custom Siri response only when built-in responses don't meet its needs. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0016 · SHOULD · high** — Omit the app name from Siri responses because the system already provides attribution. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0017 · MUST · high** — Ensure the app exposes Siri-accessible features and content through the App Intents framework. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0018 · MUST · high** — Ensure default Siri dialogue is customized for clarity when asking follow-up questions. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0019 · AVOID · high** — Exclude including unnecessary words or attempts at humor from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0020 · MUST · high** — Ensure every Siri voice response stands on its own without relying on visual elements for essential information. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0021 · MUST · high** — When a Siri response must name a device, ensure the reference is accurate and makes sense in context. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0022 · MUST_NOT · high** — Never include offensive language in app-provided Siri dialogue. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0023 · AVOID · high** — Avoid referring to Siri with personal pronouns such as she, him, or her. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0024 · MUST_NOT · high** — Never impersonate Siri or attempt to reproduce the functionality Siri provides. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0025 · MUST_NOT · high** — Never provide an app response that appears to come from Apple. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0026 · MUST_NOT · high** — Never use Siri-reserved phrases such as “Call 911” or “Hey Siri” in app responses. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0027 · MUST · high** — In localized “Hey Siri,” ensure only the word “Hey” is translated. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
+- **HIG-TECHNOLOGIES-SIRI-0028 · MUST_NOT · high** — Never translate the word Siri in a localized “Hey Siri” phrase. ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
 ### tap-to-pay-on-iphone
 
 - **HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0001 · SHOULD · high** — Help merchants accept Tap to Pay terms before configuration or customer-facing checkout. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
