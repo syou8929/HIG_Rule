@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:02:15.399Z. 3411 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:08:31.684Z. 3414 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1299,9 +1299,12 @@ Generated 2026-07-23T18:02:15.399Z. 3411 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-APP-SHORTCUTS-0020 · MUST · high** — Represent every iOS and iPadOS App Shortcut with an SF Symbol or a directly linked item's preview image. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
 ### boxes
 
-- **HIG-COMPONENTS-BOXES-0001 · SHOULD · low** — Favor keeping a box relatively small in comparison with its containing view when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
-- **HIG-COMPONENTS-BOXES-0002 · MAY · low** — Evaluate whether using padding and alignment to communicate additional grouping within a box is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
-- **HIG-COMPONENTS-BOXES-0003 · SHOULD · low** — Make a succinct introductory title if it helps clarify the box’s contents available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- **HIG-COMPONENTS-BOXES-0001 · SHOULD · high** — Prefer keeping a box relatively small compared with its containing view. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- **HIG-COMPONENTS-BOXES-0002 · MAY · high** — Consider using padding and alignment for additional grouping within a box. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- **HIG-COMPONENTS-BOXES-0003 · SHOULD · high** — Provide a succinct introductory title when it helps clarify a box's contents. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- **HIG-COMPONENTS-BOXES-0004 · SHOULD · high** — When a box needs a title, write a brief phrase that describes its contents. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- **HIG-COMPONENTS-BOXES-0005 · SHOULD · high** — Use sentence-style capitalization in a box title. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- **HIG-COMPONENTS-BOXES-0006 · AVOID · high** — Avoid ending punctuation in a box title. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
 ### buttons
 
 - **HIG-COMPONENTS-BUTTONS-0001 · SHOULD · high** — Make buttons easy for people to recognize, select, and activate. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))

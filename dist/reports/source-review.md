@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3185
-- Reviewed batches: 179
+- Reviewed rules: 3191
+- Reviewed batches: 180
 - Official source only: yes
-- Reviewed at: 2026-07-23T19:40:00Z
+- Reviewed at: 2026-07-23T20:00:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -139,6 +139,12 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-APP-SHORTCUTS-0018 · high — Recovered MUST from the unqualified Always editorial directive. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
 - HIG-COMPONENTS-APP-SHORTCUTS-0019 · high — Recovered MUST from the explicit Make sure naming directive. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
 - HIG-COMPONENTS-APP-SHORTCUTS-0020 · high — Recovered the per-shortcut iOS and iPadOS representation contract as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-BOXES-0001 · high — Retained the explicit Prefer guidance at SHOULD and recorded the documented grouping and crowding risks. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- HIG-COMPONENTS-BOXES-0002 · high — Retained the explicit Consider guidance at MAY and recorded nested-box visual complexity. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- HIG-COMPONENTS-BOXES-0003 · high — Retained the conditional Provide recommendation at SHOULD and recorded its VoiceOver benefit. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- HIG-COMPONENTS-BOXES-0004 · high — Activated the conditional title-writing lead and retained it at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- HIG-COMPONENTS-BOXES-0005 · high — Recovered the separate capitalization recommendation from the title-writing context. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
+- HIG-COMPONENTS-BOXES-0006 · high — Recovered the direct Avoid guidance at AVOID and preserved the settings-pane colon exception. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))
 - HIG-COMPONENTS-BUTTONS-0001 · high — Replaced the generic generated statement and separated concrete spacing and hit-region requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0002 · high — Retained the unqualified Always-based MUST and recorded its responsiveness purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0003 · high — Restored the same-size set relationship and prominent-versus-less-prominent styling technique. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
