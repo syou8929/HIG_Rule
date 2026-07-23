@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T11:41:24.681Z. 3083 active rules; 4 deprecated rules.
+Generated 2026-07-23T11:52:17.752Z. 3090 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1098,11 +1098,11 @@ Generated 2026-07-23T11:41:24.681Z. 3083 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-SEARCHING-0007 · SHOULD · low** — Clearly display the current scope of a search. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 ### settings
 
-- **HIG-PATTERNS-SETTINGS-0001 · SHOULD · low** — Apply the documented Settings guidance to aim to provide default settings that give the best experience to the largest number of people. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
-- **HIG-PATTERNS-SETTINGS-0002 · SHOULD · low** — Apply the documented Settings guidance to minimize the number of settings you offer. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
-- **HIG-PATTERNS-SETTINGS-0003 · SHOULD · low** — Apply the documented Settings guidance to make settings available in ways people expect. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
-- **HIG-PATTERNS-SETTINGS-0004 · AVOID · low** — Exclude using settings to ask for setup information you can get in other ways from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
-- **HIG-PATTERNS-SETTINGS-0005 · SHOULD · low** — Apply the documented Settings guidance to respect people’s systemwide settings and avoid including redundant versions of them in your custom settings area. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0001 · SHOULD · high** — Provide defaults that give the best experience to the largest number of people. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0002 · SHOULD · high** — Minimize the number of settings the app or game offers. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0003 · SHOULD · high** — Make settings available in ways people expect. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0004 · AVOID · high** — Avoid using settings to request setup information the app or game can detect. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0005 · SHOULD · high** — Respect people's systemwide settings throughout the app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - **HIG-PATTERNS-SETTINGS-0006 · SHOULD · high** — Include a Settings item in the macOS App menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - **HIG-PATTERNS-SETTINGS-0007 · AVOID · high** — Avoid adding settings buttons to a macOS window toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - **HIG-PATTERNS-SETTINGS-0008 · SHOULD · high** — Put document-level settings in the macOS File menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
@@ -1114,7 +1114,14 @@ Generated 2026-07-23T11:41:24.681Z. 3083 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-SETTINGS-0014 · SHOULD · high** — Use App Name Settings as the title of a single-pane macOS settings window. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - **HIG-PATTERNS-SETTINGS-0015 · SHOULD · high** — Reopen a macOS settings window to the most recently viewed pane. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - **HIG-PATTERNS-SETTINGS-0016 · AVOID · high** — Avoid relying on the system-provided watchOS Settings app for custom app or game settings. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
-- **HIG-PATTERNS-SETTINGS-0017 · MAY · high** — Consider exposing a small number of essential watchOS options at the bottom of the main view or in a More menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0017 · MAY · high** — Consider exposing a few essential watchOS options in the main view or a More menu. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0018 · SHOULD · high** — Put general, infrequently changed options in the app's or game's custom settings area. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0019 · SHOULD · high** — When possible, put task-specific options in the screens they affect. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0020 · SHOULD · high** — Add only the most rarely changed options to the system-provided Settings app. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0021 · MAY · high** — Consider providing a button that opens the app's or game's system Settings entry. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0022 · SHOULD · high** — Support Command-Comma for opening app settings when a physical keyboard is connected. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0023 · SHOULD · high** — Support Escape for opening game settings when a physical keyboard is connected. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- **HIG-PATTERNS-SETTINGS-0024 · AVOID · high** — Avoid including redundant custom versions of systemwide settings. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 ### undo-and-redo
 
 - **HIG-PATTERNS-UNDO-AND-REDO-0001 · SHOULD · high** — Help people predict the result of an undo or redo before they perform it. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))

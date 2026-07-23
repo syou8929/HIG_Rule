@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T11:37:53Z",
+  "reviewed_at": "2026-07-23T11:44:16Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2935,15 +2935,15 @@
     },
     {
       "id": "priority-4-settings-platform-context-2026-07-21",
-      "reviewed_at": "2026-07-21T21:04:48Z",
-      "review_method": "Rendered Apple HIG Settings platform limitations and complete macOS and watchOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "reviewed_at": "2026-07-23T11:44:16Z",
+      "review_method": "Rendered Apple HIG Settings platform limitations and complete macOS and watchOS guidance were re-reviewed after the official page changed; two repeated live renders matched the refreshed main-content hash.",
       "confidence": "high", "review_required": false,
-      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/settings", "source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105"}],
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/settings", "source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827"}],
       "rule_ids": [
         "HIG-PATTERNS-SETTINGS-0006", "HIG-PATTERNS-SETTINGS-0007", "HIG-PATTERNS-SETTINGS-0008", "HIG-PATTERNS-SETTINGS-0009", "HIG-PATTERNS-SETTINGS-0010", "HIG-PATTERNS-SETTINGS-0011",
         "HIG-PATTERNS-SETTINGS-0012", "HIG-PATTERNS-SETTINGS-0013", "HIG-PATTERNS-SETTINGS-0014", "HIG-PATTERNS-SETTINGS-0015", "HIG-PATTERNS-SETTINGS-0016", "HIG-PATTERNS-SETTINGS-0017"
       ],
-      "review_note": "Completed both platform sections, preserved the existing App-menu rule, recovered eleven atomic rules, retained one explicit Always-based MUST, and kept the watchOS limitation and alternatives at AVOID or MAY."
+      "review_note": "Revalidated both platform sections against refreshed paragraph traces, preserved all twelve stable IDs, retained one explicit Always-based MUST, and kept the macOS and watchOS alternatives at SHOULD, AVOID, or MAY."
     },
     {
       "id": "priority-4-always-on-context-2026-07-21",
@@ -3564,6 +3564,34 @@
         "HIG-PATTERNS-RATINGS-AND-REVIEWS-0009"
       ],
       "review_note": "Refreshed all paragraph traces while preserving four stable IDs, recovered five atomic rules for launch and onboarding timing, natural breaks, repeat intervals, renewed engagement, and summary-rating reset tradeoffs, narrowed the system prompt to its documented platforms, and kept direct Avoid guidance at AVOID."
+    },
+    {
+      "id": "priority-6-settings-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T11:44:16Z",
+      "review_method": "Rendered Apple HIG Settings overview, best practices, general settings, task-specific options, system settings, and supporting prose were reviewed; two repeated live renders matched the refreshed main-content hash, while revalidated platform rules remain in their original batch.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/settings",
+          "source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-SETTINGS-0001",
+        "HIG-PATTERNS-SETTINGS-0002",
+        "HIG-PATTERNS-SETTINGS-0003",
+        "HIG-PATTERNS-SETTINGS-0004",
+        "HIG-PATTERNS-SETTINGS-0005",
+        "HIG-PATTERNS-SETTINGS-0018",
+        "HIG-PATTERNS-SETTINGS-0019",
+        "HIG-PATTERNS-SETTINGS-0020",
+        "HIG-PATTERNS-SETTINGS-0021",
+        "HIG-PATTERNS-SETTINGS-0022",
+        "HIG-PATTERNS-SETTINGS-0023",
+        "HIG-PATTERNS-SETTINGS-0024"
+      ],
+      "review_note": "Refreshed all common paragraph traces while preserving five stable IDs, recovered seven atomic rules for general, task-specific, and system settings, direct system-Settings access, keyboard conventions, and redundant-global-option avoidance, and kept direct Avoid and conditional Consider guidance below MUST_NOT and MUST."
     }
   ],
   "rules": {
@@ -11866,74 +11894,164 @@
       "conditions": ["A prior request has already appeared."],
       "review_note": "Separated the second Consider-governed option without promoting it to SHOULD."
     },
+    "HIG-PATTERNS-SETTINGS-0001": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "d3bc298c1db753078f8fc7135af0ef222efaaf9f9b4363ee79adde570e38f2dc", "section_path": ["Settings", "Best practices"]},
+      "title": "Provide broadly effective default settings",
+      "statement": {"en": "Provide defaults that give the best experience to the largest number of people.", "ja": "最大多数の利用者に最良の体験を与えるdefault settingsを提供する。"},
+      "conditions": ["Use device-aware defaults so most people can begin without setup adjustments."],
+      "review_note": "Preserved the stable ID on the refreshed trace and retained the Aim-level recommendation."
+    },
+    "HIG-PATTERNS-SETTINGS-0002": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "9742bf623b58a9f8c85565990a30cb924bd351207d0eb6fc4b285ff4d503f750", "section_path": ["Settings", "Best practices"]},
+      "title": "Minimize offered settings",
+      "statement": {"en": "Minimize the number of settings the app or game offers.", "ja": "appまたはgameが提供するsetting数を最小限にする。"},
+      "conditions": ["Too many options reduce approachability and make individual settings harder to find."],
+      "review_note": "Preserved the stable ID on the refreshed trace and made the settings target explicit."
+    },
+    "HIG-PATTERNS-SETTINGS-0003": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "8a5bf4e06a8d4b62b0e476e21ebf2456f2544433ef28d84961ec851075a4381d", "section_path": ["Settings", "Best practices"]},
+      "title": "Expose settings in expected ways",
+      "statement": {"en": "Make settings available in ways people expect.", "ja": "利用者が期待する方法でsettingを利用できるようにする。"},
+      "conditions": ["Follow platform and input conventions for opening settings."],
+      "review_note": "Preserved the stable ID and separated the two documented keyboard conventions."
+    },
+    "HIG-PATTERNS-SETTINGS-0004": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "6de391e6747739bd45628824583b03d96d2fca68918e67cd702f4b1b93fd9105", "section_path": ["Settings", "Best practices"]},
+      "title": "Avoid requesting detectable setup information",
+      "statement": {"en": "Avoid using settings to request setup information the app or game can detect.", "ja": "appまたはgameが検出できるsetup informationをsettingで尋ねない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Detect connected controllers, accessories, and current system appearance automatically when available."],
+      "review_note": "Preserved the stable ID and retained direct Avoid strength without promoting it to MUST_NOT."
+    },
+    "HIG-PATTERNS-SETTINGS-0005": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "2d9202ecb106c6f83a6804ac52b46e1da33f39d7c990afcdad961ba5f99629ca", "section_path": ["Settings", "Best practices"]},
+      "title": "Respect systemwide settings",
+      "statement": {"en": "Respect people's systemwide settings throughout the app or game.", "ja": "appまたはgame全体で利用者のsystemwide settingsを尊重する。"},
+      "conditions": ["Apply choices such as accessibility accommodations, scrolling behavior, and authentication methods."],
+      "review_note": "Preserved the stable ID and split the adjacent redundant-custom-version warning into an AVOID rule."
+    },
+    "HIG-PATTERNS-SETTINGS-0018": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "a08d12f9c99041ee939485bc5cdde8fe443d0ea11956dd6b5b84bfc63f159c9b", "section_path": ["Settings", "General settings"]},
+      "title": "Put general infrequent options in custom settings",
+      "statement": {"en": "Put general, infrequently changed options in the app's or game's custom settings area.", "ja": "generalで変更頻度の低いoptionをappまたはgameのcustom settings areaに置く。"},
+      "conditions": ["Opening the separate area suspends the person's current activity."],
+      "review_note": "Recovered the general-settings placement rule and its infrequent-change constraint."
+    },
+    "HIG-PATTERNS-SETTINGS-0019": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "de755fc3fa5e28d8046ba2c593234cf4f61fd8aa05f7357325986721b0498d08", "section_path": ["Settings", "Task-specific options"]},
+      "title": "Keep task-specific options in context",
+      "statement": {"en": "When possible, put task-specific options in the screens they affect.", "ja": "可能な場合、task-specific optionを影響対象のscreen内に置く。"},
+      "conditions": ["In-context controls keep options discoverable and show results without suspending the task."],
+      "exceptions": ["Game players may adjust a task approach through gameplay rather than a settings option."],
+      "review_note": "Recovered the contextual placement recommendation and preserved the game-specific note."
+    },
+    "HIG-PATTERNS-SETTINGS-0020": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "05594457597c8e0684c0f1320c19ba130e0b9a4ba59eab1fbf1c366653076778", "section_path": ["Settings", "System settings"]},
+      "title": "Limit system Settings entries to rare options",
+      "statement": {"en": "Add only the most rarely changed options to the system-provided Settings app.", "ja": "変更頻度が最も低いoptionだけをsystem-provided Settings appへ追加する。"},
+      "conditions": ["The platform supports app- or game-specific entries in system Settings."],
+      "review_note": "Recovered the system-settings placement rule and its rarely-changed threshold."
+    },
+    "HIG-PATTERNS-SETTINGS-0021": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "05594457597c8e0684c0f1320c19ba130e0b9a4ba59eab1fbf1c366653076778", "section_path": ["Settings", "System settings"]},
+      "title": "Consider a direct system Settings button",
+      "statement": {"en": "Consider providing a button that opens the app's or game's system Settings entry.", "ja": "appまたはgameのsystem Settings entryを直接開くbuttonの提供を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The experience exposes settings through the system-provided Settings app."],
+      "review_note": "Separated the direct-navigation option and retained Consider-level strength."
+    },
+    "HIG-PATTERNS-SETTINGS-0022": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "8a5bf4e06a8d4b62b0e476e21ebf2456f2544433ef28d84961ec851075a4381d", "section_path": ["Settings", "Best practices"]},
+      "title": "Support Command-Comma for settings",
+      "statement": {"en": "Support Command-Comma for opening app settings when a physical keyboard is connected.", "ja": "physical keyboard接続時はCommand-Commaでapp settingsを開けるようにする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": ["keyboard"]},
+      "conditions": ["The platform and app context support the standard shortcut."],
+      "review_note": "Recovered the standard app-settings keyboard convention without inventing a narrower platform list."
+    },
+    "HIG-PATTERNS-SETTINGS-0023": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "8a5bf4e06a8d4b62b0e476e21ebf2456f2544433ef28d84961ec851075a4381d", "section_path": ["Settings", "Best practices"]},
+      "title": "Support Escape for game settings",
+      "statement": {"en": "Support Escape for opening game settings when a physical keyboard is connected.", "ja": "physical keyboard接続時はEscapeでgame settingsを開けるようにする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": ["keyboard"]},
+      "conditions": ["The experience is a game and the platform supports the convention."],
+      "review_note": "Recovered the game-specific physical-keyboard convention as a separate rule."
+    },
+    "HIG-PATTERNS-SETTINGS-0024": {
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "2d9202ecb106c6f83a6804ac52b46e1da33f39d7c990afcdad961ba5f99629ca", "section_path": ["Settings", "Best practices"]},
+      "title": "Avoid redundant custom systemwide settings",
+      "statement": {"en": "Avoid including redundant custom versions of systemwide settings.", "ja": "systemwide settingを重複するcustom versionとして含めない。"},
+      "normative_level": "AVOID",
+      "conditions": ["A custom duplicate could imply that the system choice does not apply or affects other apps."],
+      "review_note": "Separated the direct redundancy warning from the positive systemwide-settings rule and retained AVOID strength."
+    },
     "HIG-PATTERNS-SETTINGS-0006": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "9cea21a79f2e1b22a845876c3603d3e859d1d7d27b4e1ddcc11e364345d90e73", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "61e2ee24788be042c4f350fc5d46d83adfb9bfaf1b8ac5bb70b78ee0db094cc0", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Include a Settings item in the macOS App menu", "statement": {"en": "Include a Settings item in the macOS App menu.", "ja": "macOSのApp menuにSettings項目を含める。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["Choosing the item opens the app's or game's custom settings window."], "review_note": "Repaired the generic generated statement and narrowed portability to the macOS platform section."
     },
     "HIG-PATTERNS-SETTINGS-0007": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "61e2ee24788be042c4f350fc5d46d83adfb9bfaf1b8ac5bb70b78ee0db094cc0", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "61e2ee24788be042c4f350fc5d46d83adfb9bfaf1b8ac5bb70b78ee0db094cc0", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Avoid settings buttons in macOS window toolbars", "statement": {"en": "Avoid adding settings buttons to a macOS window toolbar.", "ja": "macOS windowのtoolbarにsettings buttonを追加しない。"}, "normative_level": "AVOID",
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["Reserve toolbar space for essential commands people use frequently."], "review_note": "Separated the toolbar-placement warning from the App-menu recommendation and retained AVOID strength."
     },
     "HIG-PATTERNS-SETTINGS-0008": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "61e2ee24788be042c4f350fc5d46d83adfb9bfaf1b8ac5bb70b78ee0db094cc0", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "61e2ee24788be042c4f350fc5d46d83adfb9bfaf1b8ac5bb70b78ee0db094cc0", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Put document-level settings in the macOS File menu", "statement": {"en": "Put document-level settings in the macOS File menu.", "ja": "document-levelのsettingはmacOSのFile menuに置く。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["The options affect the current document rather than the entire app."], "review_note": "Recovered the separate menu location for document-scoped options."
     },
     "HIG-PATTERNS-SETTINGS-0009": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "f791a9a677875ecb0068dbea5fac2ae57eb9f2d7f4a38871d4bc0a50e81e40e6", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "9511758eeb17905f77a81b431705b45aebbbf3c1dc86980697de960a33f273c0", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Dim macOS settings-window minimize and maximize buttons", "statement": {"en": "Dim the minimize and maximize buttons in a macOS settings window.", "ja": "macOS settings windowのminimize buttonとmaximize buttonをdim表示する。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["The standard keyboard command can quickly reopen the window.", "The window already accommodates the current pane's size."], "review_note": "Recovered both window-button states and their reopen and pane-sizing rationale."
     },
     "HIG-PATTERNS-SETTINGS-0010": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "6c5bcbed325ff2a9412a9c1e1ce607b4f98804ab1dabde7cb8d89e69cca98163", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "9c35c414ba86683718bb89f2051363568bf90b27234bad534414e102c5dbe91f", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Use a noncustomizable macOS settings toolbar", "statement": {"en": "Use a noncustomizable toolbar in a macOS settings window.", "ja": "macOS settings windowではcustomize不可のtoolbarを使う。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["The toolbar identifies customization areas and supports navigation among them."], "review_note": "Separated toolbar customizability from visibility and selection-state requirements."
     },
     "HIG-PATTERNS-SETTINGS-0011": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "6c5bcbed325ff2a9412a9c1e1ce607b4f98804ab1dabde7cb8d89e69cca98163", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "9c35c414ba86683718bb89f2051363568bf90b27234bad534414e102c5dbe91f", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Keep the macOS settings toolbar visible", "statement": {"en": "Keep the toolbar in a macOS settings window visible.", "ja": "macOS settings windowのtoolbarを表示したままにする。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["A stable interface helps people find settings areas."], "review_note": "Separated the persistent-visibility requirement from the shared toolbar sentence."
     },
     "HIG-PATTERNS-SETTINGS-0012": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "6c5bcbed325ff2a9412a9c1e1ce607b4f98804ab1dabde7cb8d89e69cca98163", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "9c35c414ba86683718bb89f2051363568bf90b27234bad534414e102c5dbe91f", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "review_note": "Retained MUST from the explicit Always clause and kept it atomic from toolbar customizability and visibility."
     },
     "HIG-PATTERNS-SETTINGS-0013": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "19478db0b11733cd9c5386e553f2283b3ab3c8ef5cafe443b91f8a5d017a70c0", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "36a49bc371fe9a9d4dad60bc2311cc8371d70f236b88982e1d6d674891794191", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Match the macOS settings-window title to the current pane", "statement": {"en": "Match the macOS settings-window title to the currently visible pane.", "ja": "macOS settings windowのtitleを現在表示中のpaneに合わせる。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["The settings window contains multiple panes."], "review_note": "Recovered the dynamic title-to-pane mapping and its multi-pane condition."
     },
     "HIG-PATTERNS-SETTINGS-0014": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "36a49bc371fe9a9d4dad60bc2311cc8371d70f236b88982e1d6d674891794191", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "36a49bc371fe9a9d4dad60bc2311cc8371d70f236b88982e1d6d674891794191", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Use App Name Settings for a single-pane settings window", "statement": {"en": "Use App Name Settings as the title of a single-pane macOS settings window.", "ja": "single-paneのmacOS settings windowにはApp Name Settingsというtitleを使う。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["The settings window doesn't contain multiple panes."], "review_note": "Separated the documented single-pane title from the multi-pane dynamic-title rule."
     },
     "HIG-PATTERNS-SETTINGS-0015": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "0ef9f9643b84285f539aaffd581bdd44cd94a81e01f63645f1702f4a99346195", "section_path": ["Settings", "Platform considerations", "macOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "30b8650c6c32fa9e28051b968ba4f49a491cd0cd2380bef9111edd83a013611f", "section_path": ["Settings", "Platform considerations", "macOS"]},
       "title": "Restore the most recently viewed macOS settings pane", "statement": {"en": "Reopen a macOS settings window to the most recently viewed pane.", "ja": "macOS settings windowを直近に表示したpaneで再度開く。"},
       "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
       "conditions": ["People may adjust related settings more than once."], "review_note": "Recovered the last-viewed-pane restoration behavior and its repeat-adjustment rationale."
     },
     "HIG-PATTERNS-SETTINGS-0016": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "9288f61cbdb279907a516b965e456b75812181612e52c4ad0e93031af225a865", "section_path": ["Settings", "Platform considerations", "watchOS"]},
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "9288f61cbdb279907a516b965e456b75812181612e52c4ad0e93031af225a865", "section_path": ["Settings", "Platform considerations", "watchOS"]},
       "title": "Avoid relying on watchOS Settings for custom app settings", "statement": {"en": "Avoid relying on the system-provided watchOS Settings app for custom app or game settings.", "ja": "customなappまたはgameのsettingをsystem-providedのwatchOS Settings appに依存させない。"}, "normative_level": "AVOID",
       "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
       "conditions": ["watchOS apps and games don't add custom settings to the system Settings app."], "review_note": "Recorded the platform limitation conservatively as AVOID rather than promoting descriptive wording to MUST_NOT."
     },
     "HIG-PATTERNS-SETTINGS-0017": {
-      "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "9288f61cbdb279907a516b965e456b75812181612e52c4ad0e93031af225a865", "section_path": ["Settings", "Platform considerations", "watchOS"]},
-      "title": "Consider in-app access to essential watchOS options", "statement": {"en": "Consider exposing a small number of essential watchOS options at the bottom of the main view or in a More menu.", "ja": "少数のessentialなwatchOS optionをmain view下部またはMore menuで提供することを検討する。"}, "normative_level": "MAY",
+      "source": {"source_hash": "4ce96c3d7ec0dab4e4f4332e0ca382e42b47b7d060ce9a367d6059e272781827", "source_sentence_hash": "9288f61cbdb279907a516b965e456b75812181612e52c4ad0e93031af225a865", "section_path": ["Settings", "Platform considerations", "watchOS"]},
+      "title": "Consider in-app access to essential watchOS options", "statement": {"en": "Consider exposing a few essential watchOS options in the main view or a More menu.", "ja": "少数のessentialなwatchOS optionをmain viewまたはMore menuで提供することを検討する。"}, "normative_level": "MAY",
       "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
       "conditions": ["Use the More menu alternative when people need to reconfigure objects."], "review_note": "Recovered both source-provided in-app alternatives and preserved the conditional consider strength."
     },

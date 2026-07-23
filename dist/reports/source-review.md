@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2490
-- Reviewed batches: 156
+- Reviewed rules: 2502
+- Reviewed batches: 157
 - Official source only: yes
-- Reviewed at: 2026-07-23T11:37:53Z
+- Reviewed at: 2026-07-23T11:44:16Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2064,6 +2064,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0007 · high — Recovered the source's positive placement alternative to the interruption warning. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0008 · high — Recovered the source's example interval and preserved Consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0009 · high — Separated the second Consider-governed option without promoting it to SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-SETTINGS-0001 · high — Preserved the stable ID on the refreshed trace and retained the Aim-level recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0002 · high — Preserved the stable ID on the refreshed trace and made the settings target explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0003 · high — Preserved the stable ID and separated the two documented keyboard conventions. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0004 · high — Preserved the stable ID and retained direct Avoid strength without promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0005 · high — Preserved the stable ID and split the adjacent redundant-custom-version warning into an AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0006 · high — Repaired the generic generated statement and narrowed portability to the macOS platform section. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0007 · high — Separated the toolbar-placement warning from the App-menu recommendation and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0008 · high — Recovered the separate menu location for document-scoped options. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
@@ -2076,6 +2081,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-SETTINGS-0015 · high — Recovered the last-viewed-pane restoration behavior and its repeat-adjustment rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0016 · high — Recorded the platform limitation conservatively as AVOID rather than promoting descriptive wording to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0017 · high — Recovered both source-provided in-app alternatives and preserved the conditional consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0018 · high — Recovered the general-settings placement rule and its infrequent-change constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0019 · high — Recovered the contextual placement recommendation and preserved the game-specific note. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0020 · high — Recovered the system-settings placement rule and its rarely-changed threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0021 · high — Separated the direct-navigation option and retained Consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0022 · high — Recovered the standard app-settings keyboard convention without inventing a narrower platform list. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0023 · high — Recovered the game-specific physical-keyboard convention as a separate rule. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0024 · high — Separated the direct redundancy warning from the positive systemwide-settings rule and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0001 · high — Recorded both documented prediction techniques and kept them conditional on their respective interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-UNDO-AND-REDO-0002 · high — Recorded visibility, repeated-action risk, and the offscreen-content recovery example. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-UNDO-AND-REDO-0003 · high — Recorded multi-level behavior and the source's logical-session boundary examples. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))

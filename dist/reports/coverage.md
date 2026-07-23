@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3083
+- Active atomic rules: 3090
 - Pages without rules: 16
-- Low-confidence rules: 550
-- Rules requiring human review: 550
+- Low-confidence rules: 545
+- Rules requiring human review: 545
 - Reference notes: 904
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 463
 - getting-started: 100
 - inputs: 245
-- patterns: 461
+- patterns: 468
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 432
-- MAY: 363
+- AVOID: 433
+- MAY: 364
 - MUST: 358
 - MUST_NOT: 38
-- SHOULD: 1892
+- SHOULD: 1897
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2115
-- ipados: 2084
-- macos: 1726
-- tvos: 1375
-- visionos: 1774
-- watchos: 1466
+- ios: 2122
+- ipados: 2091
+- macos: 1733
+- tvos: 1382
+- visionos: 1781
+- watchos: 1473
 
 ## Rules by testability
 
-- hybrid: 90
-- manual: 2993
+- hybrid: 92
+- manual: 2998
 
 ## Blocked pages
 
@@ -248,11 +248,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-PATTERNS-SETTINGS-0001
-- HIG-PATTERNS-SETTINGS-0002
-- HIG-PATTERNS-SETTINGS-0003
-- HIG-PATTERNS-SETTINGS-0004
-- HIG-PATTERNS-SETTINGS-0005
 - HIG-PATTERNS-WORKOUTS-0001
 - HIG-PATTERNS-WORKOUTS-0002
 - HIG-PATTERNS-WORKOUTS-0003
@@ -801,11 +796,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-PATTERNS-SETTINGS-0001
-- HIG-PATTERNS-SETTINGS-0002
-- HIG-PATTERNS-SETTINGS-0003
-- HIG-PATTERNS-SETTINGS-0004
-- HIG-PATTERNS-SETTINGS-0005
 - HIG-PATTERNS-WORKOUTS-0001
 - HIG-PATTERNS-WORKOUTS-0002
 - HIG-PATTERNS-WORKOUTS-0003
@@ -1835,10 +1825,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Platform considerations > visionOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Change log — Reviewed: the reorganization summary contains no additional current atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Platform considerations — Reviewed: macOS and watchOS guidance is represented by source-scoped rules; other platforms have no additional considerations.
+- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources — Reviewed: resource navigation contains no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources > Related — Reviewed: the related-topic link contains no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Resources — Section recorded for human review; no short atomic guidance lead was detected.
