@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3048
+- Active atomic rules: 3061
 - Pages without rules: 16
-- Low-confidence rules: 567
-- Rules requiring human review: 567
+- Low-confidence rules: 560
+- Rules requiring human review: 560
 - Reference notes: 903
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 463
 - getting-started: 100
 - inputs: 245
-- patterns: 426
+- patterns: 439
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 426
+- AVOID: 430
 - MAY: 360
-- MUST: 353
+- MUST: 356
 - MUST_NOT: 38
-- SHOULD: 1871
+- SHOULD: 1877
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2082
-- ipados: 2058
-- macos: 1702
-- tvos: 1352
-- visionos: 1751
-- watchos: 1443
+- ios: 2093
+- ipados: 2071
+- macos: 1713
+- tvos: 1363
+- visionos: 1762
+- watchos: 1454
 
 ## Rules by testability
 
 - hybrid: 90
-- manual: 2958
+- manual: 2971
 
 ## Blocked pages
 
@@ -238,13 +238,6 @@ None.
 - HIG-PATTERNS-MODALITY-0008
 - HIG-PATTERNS-MODALITY-0009
 - HIG-PATTERNS-MODALITY-0010
-- HIG-PATTERNS-PLAYING-AUDIO-0001
-- HIG-PATTERNS-PLAYING-AUDIO-0002
-- HIG-PATTERNS-PLAYING-AUDIO-0003
-- HIG-PATTERNS-PLAYING-AUDIO-0004
-- HIG-PATTERNS-PLAYING-AUDIO-0005
-- HIG-PATTERNS-PLAYING-AUDIO-0006
-- HIG-PATTERNS-PLAYING-AUDIO-0014
 - HIG-PATTERNS-PLAYING-HAPTICS-0001
 - HIG-PATTERNS-PLAYING-HAPTICS-0002
 - HIG-PATTERNS-PLAYING-HAPTICS-0003
@@ -808,13 +801,6 @@ None.
 - HIG-PATTERNS-MODALITY-0008
 - HIG-PATTERNS-MODALITY-0009
 - HIG-PATTERNS-MODALITY-0010
-- HIG-PATTERNS-PLAYING-AUDIO-0001
-- HIG-PATTERNS-PLAYING-AUDIO-0002
-- HIG-PATTERNS-PLAYING-AUDIO-0003
-- HIG-PATTERNS-PLAYING-AUDIO-0004
-- HIG-PATTERNS-PLAYING-AUDIO-0005
-- HIG-PATTERNS-PLAYING-AUDIO-0006
-- HIG-PATTERNS-PLAYING-AUDIO-0014
 - HIG-PATTERNS-PLAYING-HAPTICS-0001
 - HIG-PATTERNS-PLAYING-HAPTICS-0002
 - HIG-PATTERNS-PLAYING-HAPTICS-0003
@@ -1774,13 +1760,13 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations > watchOS — System-provided watchOS wheels and navigation-link styles support Digital Crown navigation; no separate directive was inferred.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Change log — Reviewed: historical change-log entries contain no current atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Platform considerations — Reviewed: each platform section is represented by source-scoped rules or an explicit no-additional-guidance finding.
+- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Platform considerations > macOS — Reviewed: the default notification-sound mixing behavior is represented as a macOS-specific rule.
+- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Platform considerations > tvOS — Reviewed: user-initiated playback and alert or notification behavior are represented as tvOS-specific rules.
+- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources — Reviewed: resource navigation contains no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources > Related — Reviewed: related-topic links contain no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources > Videos — Reviewed: video navigation contains no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > iOS > Impact — Section recorded for human review; no short atomic guidance lead was detected.

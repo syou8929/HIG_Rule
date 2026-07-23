@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2438
-- Reviewed batches: 153
+- Reviewed rules: 2458
+- Reviewed batches: 154
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:44:43Z
+- Reviewed at: 2026-07-23T09:52:42Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1917,6 +1917,12 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-ONBOARDING-0018 · high — Recovered the conditional exception without weakening the general licensing AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 - HIG-PATTERNS-ONBOARDING-0019 · high — Recovered the default-settings recommendation as a separate first-use check. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 - HIG-PATTERNS-ONBOARDING-0020 · high — Recovered the source's otherwise branch as a just-in-time SHOULD rule. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-PLAYING-AUDIO-0001 · high — Retained the system-component recommendation and recorded both provided controls. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0002 · high — Retained SHOULD and preserved the five-row category table as source-linked decision context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0003 · high — Retained SHOULD and made the three qualifying contexts explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0004 · high — Retained AVOID despite the essential rationale because the source uses direct Avoid rather than an explicit prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0005 · high — Retained MAY and kept the only-if restriction within the optional custom-control decision. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0006 · high — Raised the rule to MUST after confirming the explicit Be sure session-flag requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0007 · high — Narrowed the system-service recommendation to iOS and iPadOS short feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0008 · high — Made the generic preference meaningful and retained recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0009 · high — Recorded the custom-element condition and the feedback and spatial purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
@@ -1924,6 +1930,7 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-AUDIO-0011 · high — Made the spatial-source purpose concrete without elevating consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0012 · high — Narrowed the optional variation to repetitive visionOS sounds. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0013 · high — Recovered the exact encoding format and bitrate from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0014 · high — Retained the interruption decision and separated the explicit Smart Folio requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0015 · high — Recovered the macOS default as a platform constraint rather than a mandatory app behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0016 · high — Converted the system behavior into a conservative platform design constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0017 · high — Recovered the documented example conservatively as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
@@ -1939,6 +1946,19 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-AUDIO-0027 · high — Recovered the foreground playback capability as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0028 · high — Recovered the background playback capability as MAY and recorded its continuation conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0029 · high — Recovered the missing optional Now Playing view and its source-selection behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0030 · high — Recovered the rerouting recommendation and preserved its compelling-reason exception. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0031 · high — Recovered the post-interruption decision and removed the truncated conditional lead. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0032 · high — Recovered MUST from the explicit need-to-make-sure requirement in the overview. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0033 · high — Recovered the silent-mode expectation as SHOULD rather than inventing an unconditional application-level MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0034 · high — Split the direct Don't clause and retained it at AVOID instead of MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0035 · high — Recovered the connection expectation as a conservative SHOULD rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0036 · high — Recovered the direct Don't example at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0037 · high — Recovered the direct Don't guidance at AVOID and kept it separate from repurposing. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0038 · high — Recovered the explicit must-end requirement and narrowed it to the documented iPad Smart Folio context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0039 · high — Recovered the privacy risk as AVOID without inventing an explicit MUST_NOT prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0040 · high — Recovered the positive mixing action separately from the overall-volume AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0041 · high — Recovered the disconnection expectation as SHOULD because the source doesn't use an explicit mandatory marker. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-AUDIO-0042 · high — Recovered the media-app check at SHOULD and retained the game exception. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-HAPTICS-0007 · high — Made the component examples and supported-device condition explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-HAPTICS-0008 · high — Recovered the conditional generator option and all three predefined categories. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-HAPTICS-0009 · high — Recovered the Notification category's documented meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))

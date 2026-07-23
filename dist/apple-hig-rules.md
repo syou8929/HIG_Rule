@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T09:49:35.676Z. 3048 active rules; 4 deprecated rules.
+Generated 2026-07-23T10:51:01.304Z. 3061 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -929,12 +929,12 @@ Generated 2026-07-23T09:49:35.676Z. 3048 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-ONBOARDING-0020 · SHOULD · high** — For nonessential access, present the permission request when people first use the related feature. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 ### playing-audio
 
-- **HIG-PATTERNS-PLAYING-AUDIO-0001 · SHOULD · low** — Choose or apply the system-provided volume view to let people make audio adjustments in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0002 · SHOULD · low** — Apply the documented Playing audio guidance to choose an audio category that fits the way your app or game uses sound. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0003 · SHOULD · low** — Apply the documented Playing audio guidance to respond to audio controls only when it makes sense. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0004 · AVOID · low** — Exclude repurposing audio controls from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0005 · MAY · low** — Evaluate whether creating custom audio player controls only if you need to offer commands that the system doesn’t support is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0006 · SHOULD · low** — Apply the documented Playing audio guidance to let other apps know when your app finishes playing temporary audio. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0001 · SHOULD · high** — Use the system-provided volume view for user-controlled volume and audio rerouting. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0002 · SHOULD · high** — Choose the audio category that matches how the app or game uses sound. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0003 · SHOULD · high** — Respond to external audio controls only when the app is in a clear audio-related context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0004 · AVOID · high** — Avoid redefining the meaning of standard audio controls. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0005 · MAY · high** — Consider custom audio player controls only for commands the system doesn't support. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0006 · MUST · high** — When temporary audio finishes, ensure interrupted apps can determine when to resume. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0007 · SHOULD · high** — Use system sound services to play short sounds and vibrations in iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0008 · SHOULD · high** — Prefer playing meaningful sound in visionOS, especially during immersive moments. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0009 · SHOULD · high** — For custom visionOS UI elements, design sounds that provide feedback and enhance the app's spatial experience. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
@@ -942,7 +942,7 @@ Generated 2026-07-23T09:49:35.676Z. 3048 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-PLAYING-AUDIO-0011 · MAY · high** — Consider defining multiple spatial origins for stationary or moving visionOS sound sources. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0012 · MAY · high** — Consider varying visionOS sounds that people may perceive as repetitive over time. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0013 · SHOULD · high** — Use 64 kbps HE-AAC encoding for watchOS media audio assets. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
-- **HIG-PATTERNS-PLAYING-AUDIO-0014 · SHOULD · low** — Determine how to respond to audio-session interruptions explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0014 · SHOULD · high** — Determine how the app responds to audio-session interruptions. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0015 · SHOULD · high** — Account for macOS notification sounds mixing with other audio by default. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0016 · SHOULD · high** — Design tvOS audio for playback that people initiate through app or game interactions or device calibration. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0017 · AVOID · high** — Avoid adding sounds to tvOS alerts or notifications. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
@@ -958,6 +958,19 @@ Generated 2026-07-23T09:49:35.676Z. 3048 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-PLAYING-AUDIO-0027 · MAY · high** — Consider playing short audio clips while a watchOS app is active in the foreground. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0028 · MAY · high** — Consider playing longer watchOS audio that continues when people lower their wrist or switch apps. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - **HIG-PATTERNS-PLAYING-AUDIO-0029 · MAY · high** — Consider presenting a watchOS Now Playing view for controlling current or recently played audio without leaving the app. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0030 · SHOULD · high** — Support selecting another audio output unless a compelling reason prevents rerouting. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0031 · SHOULD · high** — When an interruption ends, decide whether audio should resume automatically. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0032 · MUST · high** — Ensure audio behaves as people expect when they change volume or output. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0033 · SHOULD · high** — In silent mode, silence nonessential sounds and preserve explicitly initiated audio. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0034 · AVOID · high** — Avoid changing the overall system volume from the app. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0035 · SHOULD · high** — When headphones connect, reroute audio automatically without interrupting playback. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0036 · AVOID · high** — Avoid making people stop other-app audio when the app doesn't need exclusive playback. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0037 · AVOID · high** — If the app doesn't support an audio control, avoid responding to it. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0038 · MUST · high** — Ensure a VoIP app ends a call when Smart Folio closes during built-in microphone use. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0039 · AVOID · high** — Avoid restarting an iPad VoIP audio session in a way that unmutes the microphone without the person's knowledge. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0040 · SHOULD · high** — When necessary, adjust independent relative audio levels to create a balanced mix. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0041 · SHOULD · high** — When headphones disconnect, pause playback immediately. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- **HIG-PATTERNS-PLAYING-AUDIO-0042 · SHOULD · high** — Before a media app resumes playback after an interruption, check that the interruption is resumable. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 ### playing-haptics
 
 - **HIG-PATTERNS-PLAYING-HAPTICS-0001 · SHOULD · low** — Choose or apply system-provided haptic patterns according to their documented meanings in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
