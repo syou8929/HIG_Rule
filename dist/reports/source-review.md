@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2808
-- Reviewed batches: 166
+- Reviewed rules: 2833
+- Reviewed batches: 167
 - Official source only: yes
-- Reviewed at: 2026-07-23T13:20:00Z
+- Reviewed at: 2026-07-23T16:18:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2593,6 +2593,31 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-HOMEKIT-0068 · high — Separated the positive exact-name guidance from the trademark prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - HIG-TECHNOLOGIES-HOMEKIT-0069 · high — Recovered the omitted trademark-credit requirement without persisting legal text. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - HIG-TECHNOLOGIES-HOMEKIT-0070 · high — Recovered the first-mention naming rule and preserved the subsequent-mention exception. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-ICLOUD-0001 · high — Replaced the generated meta-statement with the source's automatic, transparent iCloud-use outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0002 · high — Preserved the direct Avoid strength and clarified that the discouraged choice is per document. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0003 · high — Preserved SHOULD because the lead is qualified by when possible and recorded the resource constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0004 · high — Replaced the generic generated wording with the finite-resource constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0005 · high — Retained MUST from the explicit Make sure directive and preserved the no-alert exception. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0006 · high — Clarified that the state is intended to support cross-device continuity. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0007 · high — Made the deletion consequence explicit without promoting the direct warning guidance to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0008 · high — Replaced the generated meta-statement with the source's conflict-resolution outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0009 · high — Made the search-result behavior concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0010 · high — Retained MAY from the explicit consider qualifier and recorded GameSave as an implementation option. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0011 · high — Recovered the conditional first-launch choice without turning it into a universal prompt requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0012 · high — Recovered the explicit consider clause at MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0013 · high — Recovered the try-qualified automation recommendation without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0014 · high — Recovered the explicit need-to balance as a bounded MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0015 · high — Recovered the conditional newer-version indicator. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0016 · high — Recovered the duration-qualified update-feedback rule. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0017 · high — Recovered the positive storage-content boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0018 · high — Recovered the direct Avoid clause without promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0019 · high — Recovered the Documents-folder storage recommendation and its backup context. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0020 · high — Recovered the conditional Make sure requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0021 · high — Recovered confirmation separately from the warning rule and retained SHOULD for the direct imperative. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0022 · high — Recovered the to-the-extent-possible automatic-resolution recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0023 · high — Recovered the conditional notification and version-choice behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0024 · high — Recovered the surrounding may-be-better option at MAY and preserved the very-large-document condition. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0025 · high — Recovered the surrounding may-still-be-helpful option at MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0001 · high — Replaced the three-word false-positive statement with the documented visual-confirmation and no-data-transfer context. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0002 · high — Preserved SHOULD strength while applying privacy priority and the current-verification scope. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0003 · high — Retained the direct button guidance and recorded explicit user initiation. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))

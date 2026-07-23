@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 461
-- Retained MUST: 402
+- Reviewed rules: 463
+- Retained MUST: 404
 - Retained MUST_NOT: 59
-- Normative level changes: 144
+- Normative level changes: 147
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T13:20:00Z
+- Reviewed at: 2026-07-23T16:18:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -317,6 +317,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-GAME-CENTER-0045 — Recovered the explicit Make sure visibility requirement and narrowed it to the four cropping contexts named by the source. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-GAME-CENTER-0047 — Recovered the explicit Always deep-link requirement separately from optional onboarding flow details. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-ICLOUD-0005 — Retained MUST from the explicit Make sure directive and preserved the no-alert exception. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0014 — Recovered the source's explicit need-to balance as a bounded MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0020 — Recovered the conditional Make sure requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0005 — Recovered the privacy-sensitive MUST from the explicit only-when restriction and preserved both legal and data-handling conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0006 — Recovered MUST from the explicit You must requirement for the additional entitlement. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0012 — Recovered MUST_NOT from the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
@@ -771,7 +774,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-HOMEKIT-0058 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - HIG-TECHNOLOGIES-HOMEKIT-0059 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - HIG-TECHNOLOGIES-HOMEKIT-0067 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
-- HIG-TECHNOLOGIES-ICLOUD-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Make sure directive and preserved the no-alert exception. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered the source's explicit need-to balance as a bounded MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- HIG-TECHNOLOGIES-ICLOUD-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Make sure requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0005 · MUST · retained_with_atomicity_or_scope_correction — Recovered the privacy-sensitive MUST from the explicit only-when restriction and preserved both legal and data-handling conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0006 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You must requirement for the additional entitlement. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0012 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered MUST_NOT from the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))

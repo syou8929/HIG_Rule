@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T16:04:59.704Z. 3228 active rules; 6 deprecated rules.
+Generated 2026-07-23T16:25:58.126Z. 3243 active rules; 6 deprecated rules.
 
 ## getting-started
 
@@ -3111,16 +3111,31 @@ Generated 2026-07-23T16:04:59.704Z. 3228 active rules; 6 deprecated rules.
 - **HIG-TECHNOLOGIES-HOMEKIT-0070 · SHOULD · high** — Use the complete name Apple Home on the first body-copy reference to the app. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 ### icloud
 
-- **HIG-TECHNOLOGIES-ICLOUD-0001 · SHOULD · low** — Apply the documented iCloud guidance to make it easy to use your app with iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0002 · AVOID · low** — Exclude asking which documents to keep in iCloud from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0003 · SHOULD · low** — Maintain content up to date when possible. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0004 · SHOULD · low** — Apply the documented iCloud guidance to respect iCloud storage space. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0005 · MUST · medium** — Verify that your app behaves appropriately when iCloud is unavailable. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0006 · SHOULD · low** — Maintain app state information in iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0007 · SHOULD · low** — Apply the documented iCloud guidance to warn about the consequences of deleting a document. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0008 · SHOULD · low** — Apply the documented iCloud guidance to make conflict resolution prompt and easy. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0009 · SHOULD · low** — Apply the documented iCloud guidance to include iCloud content in search results. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
-- **HIG-TECHNOLOGIES-ICLOUD-0010 · MAY · low** — When games, consider saving player progress in iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0001 · SHOULD · high** — Make iCloud support automatic and easy to use. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0002 · AVOID · high** — Avoid asking people to choose individual documents to keep in iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0003 · SHOULD · high** — Keep iCloud content current when storage and bandwidth constraints allow. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0004 · SHOULD · high** — Use iCloud storage selectively and respect that it is finite. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0005 · MUST · high** — Ensure the app behaves appropriately when iCloud is unavailable. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0006 · SHOULD · high** — Keep useful cross-device app state information in iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0007 · SHOULD · high** — Warn people that deleting an iCloud document removes it from every device. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0008 · SHOULD · high** — Make iCloud version-conflict resolution prompt and easy. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0009 · SHOULD · high** — Include a person's iCloud content in search results. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0010 · MAY · high** — For a game, consider saving player progress in iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0011 · SHOULD · high** — If people may need to choose iCloud use, offer one simple all-data or no-data option at first launch. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0012 · MAY · high** — Consider how the app handles and exposes iCloud content. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0013 · SHOULD · high** — Automate more iCloud file-management tasks where possible. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0014 · MUST · high** — Balance iCloud content freshness against device storage and bandwidth constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0015 · SHOULD · high** — Indicate when a more recent document version is available in iCloud. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0016 · SHOULD · high** — Provide subtle feedback when an iCloud document download takes more than a few seconds. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0017 · SHOULD · high** — Use iCloud to store information people create and understand. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0018 · AVOID · high** — Avoid using iCloud for app resources or content the app can regenerate. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0019 · SHOULD · high** — Be selective about content placed in the Documents folder to limit iCloud backup use. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0020 · MUST · high** — Ensure every setting stored in iCloud is one people want applied across all their devices. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0021 · SHOULD · high** — Ask for confirmation before deleting an iCloud document. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0022 · SHOULD · high** — Detect and resolve iCloud version conflicts automatically where possible. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0023 · SHOULD · high** — When automatic resolution fails, unobtrusively help people distinguish and choose between conflicting versions. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0024 · MAY · high** — For very large documents, consider letting people choose when updated content downloads. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
+- **HIG-TECHNOLOGIES-ICLOUD-0025 · MAY · high** — Consider unobtrusively explaining that changes cannot reach other devices until iCloud access returns. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 ### id-verifier
 
 - **HIG-TECHNOLOGIES-ID-VERIFIER-0001 · SHOULD · high** — Use a Display Only request when the requester needs to visually confirm identity without receiving customer data. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
