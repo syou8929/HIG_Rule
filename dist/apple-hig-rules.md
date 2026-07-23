@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T10:51:01.304Z. 3061 active rules; 4 deprecated rules.
+Generated 2026-07-23T11:35:11.849Z. 3078 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -973,12 +973,12 @@ Generated 2026-07-23T10:51:01.304Z. 3061 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-PLAYING-AUDIO-0042 · SHOULD · high** — Before a media app resumes playback after an interruption, check that the interruption is resumable. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 ### playing-haptics
 
-- **HIG-PATTERNS-PLAYING-HAPTICS-0001 · SHOULD · low** — Choose or apply system-provided haptic patterns according to their documented meanings in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
-- **HIG-PATTERNS-PLAYING-HAPTICS-0002 · SHOULD · low** — Choose or apply haptics consistently throughout your app or game in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
-- **HIG-PATTERNS-PLAYING-HAPTICS-0003 · SHOULD · low** — Favor using haptics to complement other feedback in your app or game when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
-- **HIG-PATTERNS-PLAYING-HAPTICS-0004 · AVOID · low** — Exclude overusing haptics from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
-- **HIG-PATTERNS-PLAYING-HAPTICS-0005 · SHOULD · low** — Apply the documented Playing haptics guidance to make haptics optional. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
-- **HIG-PATTERNS-PLAYING-HAPTICS-0006 · SHOULD · low** — Apply the documented Playing haptics guidance to be aware that playing haptics might impact other user experiences. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0001 · SHOULD · high** — Use system-provided haptic patterns only for their documented meanings. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0002 · SHOULD · high** — Use haptics consistently throughout an app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0003 · SHOULD · high** — Use haptics to complement visual or auditory feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0004 · AVOID · high** — Avoid overusing haptics. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0005 · SHOULD · high** — Let people turn off or mute haptics. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0006 · SHOULD · high** — Evaluate how haptic vibrations may affect other device-feature experiences. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - **HIG-PATTERNS-PLAYING-HAPTICS-0007 · SHOULD · high** — Use standard iOS components such as toggles, sliders, and pickers when their built-in system haptics fit the interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - **HIG-PATTERNS-PLAYING-HAPTICS-0008 · SHOULD · high** — When appropriate, use an iOS feedback generator for a predefined Notification, Impact, or Selection haptic. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - **HIG-PATTERNS-PLAYING-HAPTICS-0009 · SHOULD · high** — Use an iOS Notification haptic to communicate the outcome of a task or action. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
@@ -999,6 +999,23 @@ Generated 2026-07-23T10:51:01.304Z. 3061 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-PLAYING-HAPTICS-0024 · SHOULD · high** — Use the watchOS Stop haptic when stopping a timer or another activity the person previously started. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - **HIG-PATTERNS-PLAYING-HAPTICS-0025 · SHOULD · high** — Use the watchOS Click haptic to communicate progress at predefined increments or intervals. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - **HIG-PATTERNS-PLAYING-HAPTICS-0026 · AVOID · high** — Avoid overusing watchOS Click haptics or allowing clicks to overlap. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0027 · SHOULD · high** — In most apps, prefer short haptics that complement discrete events. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0028 · AVOID · high** — Avoid assigning a system haptic pattern a meaning that conflicts with its documented use. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0029 · SHOULD · high** — Use a generic or custom haptic when no documented system pattern fits. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0030 · SHOULD · high** — Maintain a clear causal relationship between each haptic and the action that triggers it. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0031 · SHOULD · high** — Match a haptic's intensity and sharpness to the animation it accompanies. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0032 · MAY · high** — Consider synchronizing sound with haptics. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0033 · MUST · high** — Ensure people can still enjoy the app or game without haptics. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0034 · MUST · high** — Ensure haptic vibrations do not disrupt the camera, gyroscope, or microphone. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0035 · SHOULD · high** — Use an iOS Success haptic when a task or action completes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0036 · SHOULD · high** — Use an iOS Warning haptic when a task or action produces a warning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0037 · SHOULD · high** — Use an iOS Error haptic when an error occurs. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0038 · SHOULD · high** — Use an iOS Light Impact haptic for a collision between small or lightweight UI objects. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0039 · SHOULD · high** — Use an iOS Medium Impact haptic for a collision between medium-sized or medium-weight UI objects. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0040 · SHOULD · high** — Use an iOS Heavy Impact haptic for a collision between large or heavyweight UI objects. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0041 · SHOULD · high** — Use an iOS Rigid Impact haptic for a collision between hard or inflexible UI objects. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0042 · SHOULD · high** — Use an iOS Soft Impact haptic for a collision between soft or flexible UI objects. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- **HIG-PATTERNS-PLAYING-HAPTICS-0043 · SHOULD · high** — Use an iOS Selection haptic while a UI element's value changes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 ### playing-video
 
 - **HIG-PATTERNS-PLAYING-VIDEO-0001 · SHOULD · high** — Use the system video player to provide familiar playback behavior and controls. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))

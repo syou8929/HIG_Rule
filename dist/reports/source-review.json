@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-07-23T10:51:02.047Z",
-  "reviewed_at": "2026-07-23T09:52:42Z",
+  "generated_at": "2026-07-23T11:35:12.452Z",
+  "reviewed_at": "2026-07-23T10:56:10Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
-  "reviewed_batch_count": 154,
-  "reviewed_rule_count": 2458,
+  "reviewed_batch_count": 155,
+  "reviewed_rule_count": 2481,
   "batches": [
     {
       "id": "priority-2-accessibility-context-2026-07-21",
@@ -3572,14 +3572,14 @@
     },
     {
       "id": "priority-4-playing-haptics-platform-context-2026-07-21",
-      "reviewed_at": "2026-07-21T20:52:13Z",
-      "review_method": "Rendered Apple HIG Playing haptics platform limitations, complete iOS, macOS, and watchOS guidance, and the macOS pattern table were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "reviewed_at": "2026-07-23T10:56:10Z",
+      "review_method": "Rendered Apple HIG Playing haptics platform limitations, complete iOS, macOS, and watchOS guidance, interactive watchOS meanings, and structured pattern descriptions were re-reviewed after the official page changed; two repeated base renders matched the refreshed main-content hash.",
       "confidence": "high",
       "review_required": false,
       "pages": [
         {
           "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
-          "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31"
+          "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f"
         }
       ],
       "rule_ids": [
@@ -3602,9 +3602,18 @@
         "HIG-PATTERNS-PLAYING-HAPTICS-0023",
         "HIG-PATTERNS-PLAYING-HAPTICS-0024",
         "HIG-PATTERNS-PLAYING-HAPTICS-0025",
-        "HIG-PATTERNS-PLAYING-HAPTICS-0026"
+        "HIG-PATTERNS-PLAYING-HAPTICS-0026",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0035",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0036",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0037",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0038",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0039",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0040",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0041",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0042",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0043"
       ],
-      "review_note": "Completed all platform sections, preserved the existing iOS component rule, recovered nineteen atomic rules, captured the macOS pattern table and nine watchOS meanings, and introduced no unsupported MUST or MUST_NOT rules."
+      "review_note": "Revalidated all existing platform rules against the refreshed source, recovered nine omitted iOS Success, Warning, Error, Impact-style, and Selection mappings, retained macOS and interactive watchOS meanings, and introduced no unsupported MUST or MUST_NOT rules."
     },
     {
       "id": "priority-4-settings-platform-context-2026-07-21",
@@ -4932,6 +4941,36 @@
         "HIG-PATTERNS-PLAYING-AUDIO-0042"
       ],
       "review_note": "Refreshed the complete page trace after the official source changed, preserved seven stable general IDs, recovered thirteen atomic rules for relative levels, rerouting, interruption recovery, silence, headphone behavior, other-app audio, unsupported controls, and Smart Folio privacy, retained three source-supported MUST outcomes, kept direct Don't and Avoid guidance at AVOID, and retained the five-row audio-category table as source-linked context."
+    },
+    {
+      "id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T10:56:10Z",
+      "review_method": "Rendered Apple HIG Playing haptics overview, best practices, custom-haptics context, and supporting prose were reviewed; two repeated base renders matched the refreshed main-content hash, while revalidated and expanded platform rules remain in their original batch.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+          "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-PLAYING-HAPTICS-0001",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0002",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0003",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0004",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0005",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0006",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0027",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0028",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0029",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0030",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0031",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0032",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0033",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0034"
+      ],
+      "review_note": "Refreshed the complete page trace, preserved six stable best-practice IDs, recovered eight atomic rules for short events, semantic reuse, causal relationships, feedback matching, sound synchronization, haptic-free use, and device-feature interference, retained two explicit Ensure-based MUST outcomes, and kept direct Avoid guidance at AVOID."
     }
   ],
   "rules": [
@@ -42767,6 +42806,120 @@
       }
     },
     {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0001",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained SHOULD and made the documented semantic contract explicit.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "bffbf9c0e29279e7ee8ae1aff166586e2f38d4ac9b16e361aa5fec2da3a77a51",
+        "evidence_paraphrase": "Use system-provided haptic patterns only for their documented meanings."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0002",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained the consistency recommendation and recorded its outcome-association constraint.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "1e641b28f949fd922609789f6b89b83ee5020c5090cfa0776ca107d3e748a3f9",
+        "evidence_paraphrase": "Use haptics consistently throughout an app or game."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0003",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained the complement-not-replace recommendation and separated its supporting design details.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "3ffc096e347e89c36c4e8efd94d17684a0965eec6d98dc68de895812025421c2",
+        "evidence_paraphrase": "Use haptics to complement visual or auditory feedback."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0004",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained direct Avoid strength without promoting it to MUST_NOT.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "b7009b5f5d0d5714f5993313dc36a4997d54f97bf2e35b72d54b2d161f780c22",
+        "evidence_paraphrase": "Avoid overusing haptics."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0005",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Made the optionality action concrete and kept the separate haptic-free experience outcome atomic.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "af1d55c6932911b28df848877543b33bc16bb57a46773729c0c65a4c8ccc8762",
+        "evidence_paraphrase": "Let people turn off or mute haptics."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0006",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Converted the awareness lead into a review action and separated the explicit Ensure outcome.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "226da81742555fa992cfed63e5fed7322f44eefd5476fa537383b1e943de5f4c",
+        "evidence_paraphrase": "Evaluate how haptic vibrations may affect other device-feature experiences."
+      }
+    },
+    {
       "id": "HIG-PATTERNS-PLAYING-HAPTICS-0007",
       "confidence": "high",
       "review_required": false,
@@ -42780,8 +42933,8 @@
           "Platform considerations",
           "iOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "c5bbb69ef9ba0fbf756a99d118cb2ecde444f537a3856c6bd48e1b492049b27b",
         "evidence_paraphrase": "Use standard iOS components such as toggles, sliders, and pickers when their built-in system haptics fit the interaction."
       }
@@ -42800,8 +42953,8 @@
           "Platform considerations",
           "iOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "b14d9dbf58d00a4d8b7e7e9c59effd451f41876337435cb9a3186ce604da7267",
         "evidence_paraphrase": "When appropriate, use an iOS feedback generator for a predefined Notification, Impact, or Selection haptic."
       }
@@ -42821,8 +42974,8 @@
           "iOS",
           "Notification"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "229a46ce520263c9eb59e1f4e92ae6d5b780dda6400e2faca6a19499fdfd9a9a",
         "evidence_paraphrase": "Use an iOS Notification haptic to communicate the outcome of a task or action."
       }
@@ -42842,8 +42995,8 @@
           "iOS",
           "Impact"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "5d442acba9eeec6bc3604c77070c65faa9c272b8bc3896fc8889c7d18fca4546",
         "evidence_paraphrase": "Use an iOS Impact haptic as a physical metaphor that complements a visual event."
       }
@@ -42863,8 +43016,8 @@
           "iOS",
           "Selection"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "2ac1c0768e100ce7246ef82bae35ed37a4ce906765bccca51007d30742fba7eb",
         "evidence_paraphrase": "Use an iOS Selection haptic while the value of a UI element changes."
       }
@@ -42883,8 +43036,8 @@
           "Platform considerations",
           "macOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "77aea2c1bcc62477393337e5022ce4db7c07aac7528929b527401dfbd0e601af",
         "evidence_paraphrase": "When a Magic Trackpad is available, consider a macOS haptic pattern for a drag operation or force click."
       }
@@ -42903,8 +43056,8 @@
           "Platform considerations",
           "macOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "887d922991eb09828765ddd198b10864e20c4cd9788327ca7a0c7dd984eefbc1",
         "evidence_paraphrase": "Use the macOS Alignment haptic for dragged-item alignment, preferred positions, dimensions, or range boundaries."
       }
@@ -42923,8 +43076,8 @@
           "Platform considerations",
           "macOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "4a565055717d5d12dcc4fe6f19aa48c10f0ce1d819746d330cfdeb049bc6acbd",
         "evidence_paraphrase": "Use the macOS Level change haptic when moving between discrete pressure levels."
       }
@@ -42943,8 +43096,8 @@
           "Platform considerations",
           "macOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "2e8927dd824cdbee4827b0c29f9d0a4ef76be34f356eeb20329c08942c4f5bd1",
         "evidence_paraphrase": "Use the macOS Generic haptic only when Alignment and Level change patterns do not apply."
       }
@@ -42963,8 +43116,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "1bc89160d520e43cc114cceb9b6be6a32c3b776e724f486590cfec816817e8df",
         "evidence_paraphrase": "Use the default linear Digital Crown haptic detents on supported Apple Watch models."
       }
@@ -42983,8 +43136,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "de4ba22723ef43c9098ef6dd3d46cb0040d9eb774bcd555148f35737b6b35425",
         "evidence_paraphrase": "Use the watchOS Notification haptic for a significant or unusual event that requires attention."
       }
@@ -43003,8 +43156,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "229e64a1c67689a5f6942536c3c5b062044cd45bb8c81efc5f024a8d14d35287",
         "evidence_paraphrase": "Use the watchOS Up haptic when an important value increases above a significant threshold."
       }
@@ -43023,8 +43176,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "0e62a2cd8cbdc0ad181aa04a72b93a593d31eaecf2c8798f541d7cbebac612f7",
         "evidence_paraphrase": "Use the watchOS Down haptic when an important value decreases below a significant threshold."
       }
@@ -43043,8 +43196,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "3e9d41a152b20b2820bb0bd2cf19a43c5d393cffc0d0378ce855a2223d291c61",
         "evidence_paraphrase": "Use the watchOS Success haptic when an action completes successfully."
       }
@@ -43063,8 +43216,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "8f5afa114bb646a373e9032bbb8f4d3121abeed63c55ae6e18703d2694ada3e7",
         "evidence_paraphrase": "Use the watchOS Failure haptic when an action fails."
       }
@@ -43083,8 +43236,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "e91c6385a2bddcb89d4b39f1f2413d54ad625db1f8201b3cacf4a5bb55c56bed",
         "evidence_paraphrase": "Use the watchOS Retry haptic when an action fails but the person can retry it."
       }
@@ -43103,8 +43256,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "bfe7e022673a6f81cf1f9ffedaff307712bf6242c2d40ed5129bde50a4f1a77f",
         "evidence_paraphrase": "Use the watchOS Start haptic when a person starts a timer or another activity they can explicitly stop."
       }
@@ -43123,8 +43276,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "9878a75f72664aaa8009403df164c662fc0aa854fff70513fe32f6d33bb38e51",
         "evidence_paraphrase": "Use the watchOS Stop haptic when stopping a timer or another activity the person previously started."
       }
@@ -43143,8 +43296,8 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "63a15105fae49f1b36cd95818b3aa9c56c5b7d13c2d5218ee405a92782916db5",
         "evidence_paraphrase": "Use the watchOS Click haptic to communicate progress at predefined increments or intervals."
       }
@@ -43163,10 +43316,351 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T20:52:13Z",
-        "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
         "source_sentence_hash": "63a15105fae49f1b36cd95818b3aa9c56c5b7d13c2d5218ee405a92782916db5",
         "evidence_paraphrase": "Avoid overusing watchOS Click haptics or allowing clicks to overlap."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0027",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the omitted duration recommendation and preserved its game exception.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "eddc06e8a5a26669ad5d97cefd51ac8c3aedbb00b043975917c6500e57ea380e",
+        "evidence_paraphrase": "In most apps, prefer short haptics that complement discrete events."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0028",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the direct semantic-misuse warning and retained AVOID strength.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "bffbf9c0e29279e7ee8ae1aff166586e2f38d4ac9b16e361aa5fec2da3a77a51",
+        "evidence_paraphrase": "Avoid assigning a system haptic pattern a meaning that conflicts with its documented use."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0029",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the source-provided alternative from the misuse warning.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "bffbf9c0e29279e7ee8ae1aff166586e2f38d4ac9b16e361aa5fec2da3a77a51",
+        "evidence_paraphrase": "Use a generic or custom haptic when no documented system pattern fits."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0030",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the source's important causal-association requirement as SHOULD.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "1e641b28f949fd922609789f6b89b83ee5020c5090cfa0776ca107d3e748a3f9",
+        "evidence_paraphrase": "Maintain a clear causal relationship between each haptic and the action that triggers it."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0031",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the generally-want matching recommendation without raising it to MUST.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "3ffc096e347e89c36c4e8efd94d17684a0965eec6d98dc68de895812025421c2",
+        "evidence_paraphrase": "Match a haptic's intensity and sharpness to the animation it accompanies."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0032",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the can-level synchronization option as MAY.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "3ffc096e347e89c36c4e8efd94d17684a0965eec6d98dc68de895812025421c2",
+        "evidence_paraphrase": "Consider synchronizing sound with haptics."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0033",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the explicit make-sure haptic-free outcome and kept it separate from the optionality control.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "af1d55c6932911b28df848877543b33bc16bb57a46773729c0c65a4c8ccc8762",
+        "evidence_paraphrase": "Ensure people can still enjoy the app or game without haptics."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0034",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the explicit Ensure requirement and named all three documented device features.",
+      "batch_id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "226da81742555fa992cfed63e5fed7322f44eefd5476fa537383b1e943de5f4c",
+        "evidence_paraphrase": "Ensure haptic vibrations do not disrupt the camera, gyroscope, or microphone."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0035",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the Success pattern's documented meaning.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Notification"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "98fd0fa57d76c16dad37b4a8ac1ba4ccb9f4a4e4b8c60f7e6cdf32139380b948",
+        "evidence_paraphrase": "Use an iOS Success haptic when a task or action completes."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0036",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the Warning pattern's documented meaning.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Notification"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "980db45970e3a8f2596f2e3e6e1b601e0d82c856076767ef4763354d41f80adf",
+        "evidence_paraphrase": "Use an iOS Warning haptic when a task or action produces a warning."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0037",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the Error pattern's documented meaning.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Notification"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "d7205716ed7f6d6fcfdb553e2462e027313b6ad24d7a6267c197a36a6c1ba326",
+        "evidence_paraphrase": "Use an iOS Error haptic when an error occurs."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0038",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the Light Impact style's documented collision meaning.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Impact"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "26030910cf5888800db0f1e81644b10b526a80c59a3e2342717c06a0e74ada0a",
+        "evidence_paraphrase": "Use an iOS Light Impact haptic for a collision between small or lightweight UI objects."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0039",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the Medium Impact style's documented collision meaning.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Impact"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "76f7ac6533c44fcadf2eaf21d79ef7b5d97bbe178d0d114b82f49b7c81351525",
+        "evidence_paraphrase": "Use an iOS Medium Impact haptic for a collision between medium-sized or medium-weight UI objects."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0040",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the Heavy Impact style's documented collision meaning.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Impact"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "3d9affc73f7a27e30aaa9e3f2fa8dd2b1245b47e386abdcba6050560376faef4",
+        "evidence_paraphrase": "Use an iOS Heavy Impact haptic for a collision between large or heavyweight UI objects."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0041",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the Rigid Impact style's documented collision meaning.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Impact"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "56110492bbb74146a37a8b70b9cddc783694249420544817d545b1b11d53c31c",
+        "evidence_paraphrase": "Use an iOS Rigid Impact haptic for a collision between hard or inflexible UI objects."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0042",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the Soft Impact style's documented collision meaning.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Impact"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "e324d2e4c9ca12c60e6d749fe13864ef4344fed3b62ff2aa64e010024c2173cd",
+        "evidence_paraphrase": "Use an iOS Soft Impact haptic for a collision between soft or flexible UI objects."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0043",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the specific Selection pattern meaning separately from the category rule.",
+      "batch_id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+        "page_title": "Playing haptics",
+        "section_path": [
+          "Playing haptics",
+          "Platform considerations",
+          "iOS",
+          "Selection"
+        ],
+        "retrieved_at": "2026-07-23T10:56:10Z",
+        "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+        "source_sentence_hash": "36e083e4e45d678023a3d7107b7bb358615e0bd8b040c200f7019d33140990d9",
+        "evidence_paraphrase": "Use an iOS Selection haptic while a UI element's value changes."
       }
     },
     {

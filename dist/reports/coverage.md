@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3061
+- Active atomic rules: 3078
 - Pages without rules: 16
-- Low-confidence rules: 560
-- Rules requiring human review: 560
-- Reference notes: 903
+- Low-confidence rules: 554
+- Rules requiring human review: 554
+- Reference notes: 904
 
 ## Rules by category
 
@@ -17,31 +17,31 @@
 - foundations: 463
 - getting-started: 100
 - inputs: 245
-- patterns: 439
+- patterns: 456
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 430
-- MAY: 360
-- MUST: 356
+- AVOID: 431
+- MAY: 361
+- MUST: 358
 - MUST_NOT: 38
-- SHOULD: 1877
+- SHOULD: 1890
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2093
-- ipados: 2071
-- macos: 1713
-- tvos: 1363
-- visionos: 1762
-- watchos: 1454
+- ios: 2110
+- ipados: 2079
+- macos: 1721
+- tvos: 1371
+- visionos: 1770
+- watchos: 1462
 
 ## Rules by testability
 
 - hybrid: 90
-- manual: 2971
+- manual: 2988
 
 ## Blocked pages
 
@@ -238,12 +238,6 @@ None.
 - HIG-PATTERNS-MODALITY-0008
 - HIG-PATTERNS-MODALITY-0009
 - HIG-PATTERNS-MODALITY-0010
-- HIG-PATTERNS-PLAYING-HAPTICS-0001
-- HIG-PATTERNS-PLAYING-HAPTICS-0002
-- HIG-PATTERNS-PLAYING-HAPTICS-0003
-- HIG-PATTERNS-PLAYING-HAPTICS-0004
-- HIG-PATTERNS-PLAYING-HAPTICS-0005
-- HIG-PATTERNS-PLAYING-HAPTICS-0006
 - HIG-PATTERNS-PRINTING-0001
 - HIG-PATTERNS-PRINTING-0005
 - HIG-PATTERNS-PRINTING-0006
@@ -801,12 +795,6 @@ None.
 - HIG-PATTERNS-MODALITY-0008
 - HIG-PATTERNS-MODALITY-0009
 - HIG-PATTERNS-MODALITY-0010
-- HIG-PATTERNS-PLAYING-HAPTICS-0001
-- HIG-PATTERNS-PLAYING-HAPTICS-0002
-- HIG-PATTERNS-PLAYING-HAPTICS-0003
-- HIG-PATTERNS-PLAYING-HAPTICS-0004
-- HIG-PATTERNS-PLAYING-HAPTICS-0005
-- HIG-PATTERNS-PLAYING-HAPTICS-0006
 - HIG-PATTERNS-PRINTING-0001
 - HIG-PATTERNS-PRINTING-0005
 - HIG-PATTERNS-PRINTING-0006
@@ -1767,16 +1755,17 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources — Reviewed: resource navigation contains no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources > Related — Reviewed: related-topic links contain no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Resources > Videos — Reviewed: video navigation contains no additional atomic guidance.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > iOS > Impact — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > iOS > Notification — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > iOS > Selection — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Change log — Reviewed: dated change summaries contain no additional current atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Custom haptics — Reviewed: capabilities, event building blocks, and tunable properties are retained as source context without adding prescriptive rules.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations — Reviewed: the complete iOS, macOS, and watchOS guidance is represented by source-scoped rules.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > iOS > Impact — Reviewed: Impact category and Light, Medium, Heavy, Rigid, and Soft meanings are represented by source-scoped iOS rules.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > iOS > Notification — Reviewed: Notification category and Success, Warning, and Error meanings are represented by source-scoped iOS rules.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > iOS > Selection — Reviewed: Selection category and changing-value meaning are represented by source-scoped iOS rules.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > macOS — Reviewed: Magic Trackpad capability and all three pattern meanings are represented by source-scoped macOS rules.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Platform considerations > watchOS — Reviewed: Digital Crown behavior and all nine named haptic meanings are represented by source-scoped watchOS rules.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources — Reviewed: resource navigation contains no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources > Related — Reviewed: related-topic links contain no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources > Videos — Reviewed: linked videos contain no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Platform considerations > watchOS — Structured numeric table detected; preserve its platform and context conditions during human source review.

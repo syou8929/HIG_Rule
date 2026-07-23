@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2458
-- Reviewed batches: 154
+- Reviewed rules: 2481
+- Reviewed batches: 155
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:52:42Z
+- Reviewed at: 2026-07-23T10:56:10Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1959,6 +1959,12 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-AUDIO-0040 · high — Recovered the positive mixing action separately from the overall-volume AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0041 · high — Recovered the disconnection expectation as SHOULD because the source doesn't use an explicit mandatory marker. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0042 · high — Recovered the media-app check at SHOULD and retained the game exception. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
+- HIG-PATTERNS-PLAYING-HAPTICS-0001 · high — Retained SHOULD and made the documented semantic contract explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0002 · high — Retained the consistency recommendation and recorded its outcome-association constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0003 · high — Retained the complement-not-replace recommendation and separated its supporting design details. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0004 · high — Retained direct Avoid strength without promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0005 · high — Made the optionality action concrete and kept the separate haptic-free experience outcome atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0006 · high — Converted the awareness lead into a review action and separated the explicit Ensure outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-HAPTICS-0007 · high — Made the component examples and supported-device condition explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-HAPTICS-0008 · high — Recovered the conditional generator option and all three predefined categories. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-HAPTICS-0009 · high — Recovered the Notification category's documented meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
@@ -1979,6 +1985,23 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-HAPTICS-0024 · high — Recovered the Stop haptic's paired stopping meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-HAPTICS-0025 · high — Recovered the Click haptic's incremental-progress meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-HAPTICS-0026 · high — Separated the direct overuse warning from the positive Click mapping and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0027 · high — Recovered the omitted duration recommendation and preserved its game exception. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0028 · high — Recovered the direct semantic-misuse warning and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0029 · high — Separated the source-provided alternative from the misuse warning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0030 · high — Recovered the source's important causal-association requirement as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0031 · high — Recovered the generally-want matching recommendation without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0032 · high — Recovered the can-level synchronization option as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0033 · high — Recovered the explicit make-sure haptic-free outcome and kept it separate from the optionality control. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0034 · high — Recovered the explicit Ensure requirement and named all three documented device features. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0035 · high — Recovered the Success pattern's documented meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0036 · high — Recovered the Warning pattern's documented meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0037 · high — Recovered the Error pattern's documented meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0038 · high — Recovered the Light Impact style's documented collision meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0039 · high — Recovered the Medium Impact style's documented collision meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0040 · high — Recovered the Heavy Impact style's documented collision meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0041 · high — Recovered the Rigid Impact style's documented collision meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0042 · high — Recovered the Soft Impact style's documented collision meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
+- HIG-PATTERNS-PLAYING-HAPTICS-0043 · high — Recovered the specific Selection pattern meaning separately from the category rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-haptics))
 - HIG-PATTERNS-PLAYING-VIDEO-0001 · high — Recorded the system-player default and constrained the custom-player alternative to essential needs. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0002 · high — Retained MUST from the explicit always directive and recorded padding and Picture in Picture failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0003 · high — Recorded the value test and documented platform scope without treating extra information as a default. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
