@@ -104,6 +104,24 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(paraphrase("As someone resizes a window, defer switching layouts", "Layout").en, "As someone resizes a window, defer switching layouts.");
   assert.equal(paraphrase("If controls are outside a window, use an ornament", "Layout").en, "When controls are outside a window, use an ornament.");
   assert.equal(normative("You need to include enough spacing").normative_level, "MUST");
+  assert.equal(isActionable({
+    text: "The overall color needs to remain black or white",
+    section_path: ["Sign in with Apple", "Displaying buttons"],
+    source_sentence_hash: "hash",
+    word_count: 9,
+  }), true);
+  assert.equal(isActionable({
+    text: "Delay sign-in as long as possible",
+    section_path: ["Sign in with Apple", "Offering Sign in with Apple"],
+    source_sentence_hash: "hash",
+    word_count: 6,
+  }), true);
+  assert.equal(isActionable({
+    text: "Support for configuring the button’s corner radius to match the style of your UI (iOS, macOS, and web)",
+    section_path: ["Sign in with Apple", "Displaying buttons"],
+    source_sentence_hash: "hash",
+    word_count: 18,
+  }), false);
   assert.equal(isActionable({ text: "Center important content", section_path: [], source_sentence_hash: "e".repeat(64), word_count: 3 }), true);
   assert.equal(isActionable({ text: "Center area", section_path: [], source_sentence_hash: "f".repeat(64), word_count: 2 }), false);
   assert.equal(paraphrase("Rely on the Digital Crown", "Spatial layout").en, "Rely on the Digital Crown.");

@@ -193285,8 +193285,8 @@
     en: Apply the documented Sign in with Apple guidance to ask people to sign in only in exchange for value.
     ja: 「Sign in with Apple」において「Ask people to sign in only in exchange for value」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -193349,8 +193349,8 @@
     en: Evaluate whether letting people link an existing account to Sign in with Apple is appropriate for the current context.
     ja: letting people link an existing account to Sign in with Appleが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -193405,16 +193405,16 @@
   apple_native_rule: Evaluate whether letting people link an existing account to Sign in with Apple is appropriate for the current context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0003
-  title: Don’t ask people to supply a password
+  title: Avoid asking Sign in with Apple users for a password
   category: technologies
   topic: sign-in-with-apple
   subtopic: collecting-data
   statement:
-    en: Exclude ask people to supply a password from the applicable experience.
-    ja: 該当する体験ではask people to supply a passwordを避ける。
+    en: Avoid asking people who use Sign in with Apple to supply a password.
+    ja: Sign in with Appleを使う人にpasswordの入力を求めない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -193437,14 +193437,15 @@
     modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - A password may be requested after a person stops using Sign in with Apple with the app or website.
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude ask people to supply a password from the applicable experience.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Avoid asking people who use Sign in with Apple to supply a password.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -193459,28 +193460,28 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: ae43f2caac500e8cd595948eab5a75d49558a23162b9d1871dcc3dac1c0c404a
-    evidence_paraphrase: Exclude ask people to supply a password from the applicable experience.
+    evidence_paraphrase: Avoid asking people who use Sign in with Apple to supply a password.
   tags:
     - technologies
     - sign-in-with-apple
     - collecting-data
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude ask people to supply a password from the applicable experience.
+  apple_native_rule: Avoid asking people who use Sign in with Apple to supply a password.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0004
-  title: Avoid asking for a personal email address when people supply a private relay address
+  title: Never override a private relay choice by requesting a personal email address
   category: technologies
   topic: sign-in-with-apple
   subtopic: collecting-data
   statement:
-    en: Exclude asking for a personal email address when people supply a private relay address from the applicable experience.
-    ja: 該当する体験ではasking for a personal email address when people supply a private relay addressを避ける。
-  normative_level: AVOID
-  confidence: low
-  review_required: true
-  polarity: discourage
-  severity: warning
+    en: Never override a person's private relay choice by requesting their personal email address.
+    ja: private relayの選択をpersonal email addressの要求で上書きしない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
   scope:
     portability: technology-specific
     platforms:
@@ -193500,7 +193501,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The person chose a Sign in with Apple private relay address.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -193508,7 +193509,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude asking for a personal email address when people supply a private relay address from the applicable experience.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Never override a person's private relay choice by requesting their personal email address.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -193523,14 +193524,14 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 444bc6c563cb87f642343b12db30e032fb1c9cbedd279c766563a1a77c8aaa9b
-    evidence_paraphrase: Exclude asking for a personal email address when people supply a private relay address from the applicable experience.
+    evidence_paraphrase: Never override a person's private relay choice by requesting their personal email address.
   tags:
     - technologies
     - sign-in-with-apple
     - collecting-data
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude asking for a personal email address when people supply a private relay address from the applicable experience.
+  apple_native_rule: Never override a person's private relay choice by requesting their personal email address.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0005
   title: Give people a chance to engage with your app before asking for optional data
@@ -193541,8 +193542,8 @@
     en: Apply the documented Sign in with Apple guidance to give people a chance to engage with your app before asking for optional data.
     ja: 「Sign in with Apple」において「Give people a chance to engage with your app before asking for optional data」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -193564,7 +193565,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Ask for optional information only after people can discover a concrete benefit from sharing it.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -193605,8 +193606,8 @@
     en: Apply the documented Sign in with Apple guidance to be transparent about the data you collect.
     ja: 「Sign in with Apple」において「Be transparent about the data you collect」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -193628,7 +193629,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Explain how shared data is used and visibly acknowledge the name, email address, or relay address received when appropriate.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -193661,38 +193662,33 @@
   apple_native_rule: Apply the documented Sign in with Apple guidance to be transparent about the data you collect.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0007
-  title: Maintain the minimum button size and margin around the button in iOS, macOS, and the web
+  title: Ensure a system Sign in with Apple button meets its minimum dimensions
   category: technologies
   topic: sign-in-with-apple
   subtopic: button-size-and-corner-radius
   statement:
-    en: Apply the documented Sign in with Apple guidance to maintain the minimum button size and margin around the button in iOS, macOS, and the web.
-    ja: 「Sign in with Apple」において「Maintain the minimum button size and margin around the button in iOS, macOS, and the web」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure a system-provided Sign in with Apple button meets its minimum size and surrounding margin.
+    ja: system-provided Sign in with Apple buttonのminimum sizeと周囲marginを満たす。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use a minimum width of 140 pt, minimum height of 30 pt, and minimum margin equal to one tenth of button height.
+    - Allow for localized button-title length.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -193700,7 +193696,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Sign in with Apple guidance to maintain the minimum button size and margin around the button in iOS, macOS, and the web.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Ensure a system-provided Sign in with Apple button meets its minimum size and surrounding margin.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -193717,7 +193713,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 4a357ccf4fc7edc302018a2ec352309a7b16335a39772b6e9c834ef7cc9d13c1
-    evidence_paraphrase: Apply the documented Sign in with Apple guidance to maintain the minimum button size and margin around the button in iOS, macOS, and the web.
+    evidence_paraphrase: Ensure a system-provided Sign in with Apple button meets its minimum size and surrounding margin.
   tags:
     - technologies
     - sign-in-with-apple
@@ -193726,19 +193722,19 @@
     - button-size-and-corner-radius
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Sign in with Apple guidance to maintain the minimum button size and margin around the button in iOS, macOS, and the web.
+  apple_native_rule: Ensure a system-provided Sign in with Apple button meets its minimum size and surrounding margin.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0008
-  title: Choose the format of the logo file based on the height of your button
+  title: Choose custom-button logo format by button height
   category: technologies
   topic: sign-in-with-apple
   subtopic: custom-buttons-with-a-logo-and-text
   statement:
-    en: Apply the documented Sign in with Apple guidance to choose the format of the logo file based on the height of your button.
-    ja: 「Sign in with Apple」において「Choose the format of the logo file based on the height of your button」の指針を適用する。
+    en: Choose a custom Sign in with Apple logo format that fits the button height.
+    ja: custom Sign in with Apple buttonのheightに合うlogo formatを選ぶ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -193747,20 +193743,15 @@
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - SVG and PDF artwork can be used at any supported height.
+    - The PNG-only height restriction is recorded separately.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -193768,7 +193759,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Sign in with Apple guidance to choose the format of the logo file based on the height of your button.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Choose a custom Sign in with Apple logo format that fits the button height.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -193785,7 +193776,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 65743a43423711f4c1670b5132d522267d5124e77f5dcd8f914a4ba91ad070d4
-    evidence_paraphrase: Apply the documented Sign in with Apple guidance to choose the format of the logo file based on the height of your button.
+    evidence_paraphrase: Choose a custom Sign in with Apple logo format that fits the button height.
   tags:
     - technologies
     - sign-in-with-apple
@@ -193794,19 +193785,19 @@
     - custom-buttons-with-a-logo-and-text
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Sign in with Apple guidance to choose the format of the logo file based on the height of your button.
+  apple_native_rule: Choose a custom Sign in with Apple logo format that fits the button height.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0009
-  title: Prefer the system font for the title — that is, Sign in with Apple, Sign up with Apple, or
+  title: Prefer the system font for a custom button title
   category: technologies
   topic: sign-in-with-apple
   subtopic: custom-buttons-with-a-logo-and-text
   statement:
-    en: Favor the system font for the title — that is, Sign in with Apple, Sign up with Apple, or when the documented conditions apply.
-    ja: 該当条件ではthe system font for the title — that is, Sign in with Apple, Sign up with Apple, orを優先する。
+    en: Prefer the system font for a custom Sign in with Apple button title.
+    ja: custom Sign in with Apple button titleではsystem fontを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -193815,16 +193806,10 @@
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
@@ -193836,7 +193821,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor the system font for the title — that is, Sign in with Apple, Sign up with Apple, or when the documented conditions apply.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Prefer the system font for a custom Sign in with Apple button title.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -193853,7 +193838,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 2993808f3422d06c500ff40f2282691d750a306a1e4251260d372cd90b7fe0d3
-    evidence_paraphrase: Favor the system font for the title — that is, Sign in with Apple, Sign up with Apple, or when the documented conditions apply.
+    evidence_paraphrase: Prefer the system font for a custom Sign in with Apple button title.
   tags:
     - technologies
     - sign-in-with-apple
@@ -193862,41 +193847,35 @@
     - custom-buttons-with-a-logo-and-text
   priority_rank: 6
   status: active
-  apple_native_rule: Favor the system font for the title — that is, Sign in with Apple, Sign up with Apple, or when the documented conditions apply.
+  apple_native_rule: Prefer the system font for a custom Sign in with Apple button title.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0010
-  title: Keep the title and logo vertically aligned within the button
+  title: Ensure the custom-button title and logo stay vertically aligned
   category: technologies
   topic: sign-in-with-apple
   subtopic: custom-buttons-with-a-logo-and-text
   statement:
-    en: Maintain the title and logo vertically aligned within the button.
-    ja: the title and logo vertically aligned within the buttonを維持する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure the title and Apple logo stay vertically aligned in a custom button.
+    ja: custom button内でtitleとApple logoを垂直方向に揃える。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Align the title to the button's vertical middle and match the padded logo file height to the button height.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -193904,7 +193883,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Maintain the title and logo vertically aligned within the button.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Ensure the title and Apple logo stay vertically aligned in a custom button.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -193921,7 +193900,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 00e012bcda71d0f67d5ba9bffb996fc1c1603d53f6639d0d89d75ede0adfe474
-    evidence_paraphrase: Maintain the title and logo vertically aligned within the button.
+    evidence_paraphrase: Ensure the title and Apple logo stay vertically aligned in a custom button.
   tags:
     - technologies
     - sign-in-with-apple
@@ -193930,41 +193909,35 @@
     - custom-buttons-with-a-logo-and-text
   priority_rank: 6
   status: active
-  apple_native_rule: Maintain the title and logo vertically aligned within the button.
+  apple_native_rule: Ensure the title and Apple logo stay vertically aligned in a custom button.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0011
-  title: Maintain a minimum margin between the title and the right edge of the button
+  title: Ensure the title's trailing margin is at least eight percent
   category: technologies
   topic: sign-in-with-apple
   subtopic: custom-buttons-with-a-logo-and-text
   statement:
-    en: Apply the documented Sign in with Apple guidance to maintain a minimum margin between the title and the right edge of the button.
-    ja: 「Sign in with Apple」において「Maintain a minimum margin between the title and the right edge of the button」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure the margin between a custom button title and its trailing edge is at least 8% of button width.
+    ja: custom button titleとtrailing edgeのmarginをbutton widthの8%以上にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Apply to custom buttons that combine the Apple logo and title.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -193972,7 +193945,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Sign in with Apple guidance to maintain a minimum margin between the title and the right edge of the button.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Ensure the margin between a custom button title and its trailing edge is at least 8% of button width.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -193989,7 +193962,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 6e6c9bf79ef10f345a43e95b8fcd3aa1c1cb037896061e95d7cb3a5bf444611d
-    evidence_paraphrase: Apply the documented Sign in with Apple guidance to maintain a minimum margin between the title and the right edge of the button.
+    evidence_paraphrase: Ensure the margin between a custom button title and its trailing edge is at least 8% of button width.
   tags:
     - technologies
     - sign-in-with-apple
@@ -193998,41 +193971,36 @@
     - custom-buttons-with-a-logo-and-text
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Sign in with Apple guidance to maintain a minimum margin between the title and the right edge of the button.
+  apple_native_rule: Ensure the margin between a custom button title and its trailing edge is at least 8% of button width.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0012
-  title: Maintain the minimum button size and margin around the button
+  title: Ensure a custom text button meets its minimum dimensions
   category: technologies
   topic: sign-in-with-apple
   subtopic: custom-buttons-with-a-logo-and-text
   statement:
-    en: Apply the documented Sign in with Apple guidance to maintain the minimum button size and margin around the button.
-    ja: 「Sign in with Apple」において「Maintain the minimum button size and margin around the button」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure a custom Sign in with Apple text button meets its minimum size and surrounding margin.
+    ja: custom Sign in with Apple text buttonのminimum sizeと周囲marginを満たす。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use a minimum width of 140 pt, minimum height of 30 pt, and minimum margin equal to one tenth of button height.
+    - Allow for localized button-title length.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -194040,7 +194008,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Sign in with Apple guidance to maintain the minimum button size and margin around the button.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Ensure a custom Sign in with Apple text button meets its minimum size and surrounding margin.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194057,7 +194025,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 93d08920355ee20754136135dc0f80b87a9b814070a5a419502f7e7f8c6514b5
-    evidence_paraphrase: Apply the documented Sign in with Apple guidance to maintain the minimum button size and margin around the button.
+    evidence_paraphrase: Ensure a custom Sign in with Apple text button meets its minimum size and surrounding margin.
   tags:
     - technologies
     - sign-in-with-apple
@@ -194066,41 +194034,35 @@
     - custom-buttons-with-a-logo-and-text
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Sign in with Apple guidance to maintain the minimum button size and margin around the button.
+  apple_native_rule: Ensure a custom Sign in with Apple text button meets its minimum size and surrounding margin.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0013
-  title: Choose the format of the logo file based on the size of your button
+  title: Ensure logo-only PNG artwork is used only at 44×44 pt
   category: technologies
   topic: sign-in-with-apple
   subtopic: custom-logo-only-buttons
   statement:
-    en: Apply the documented Sign in with Apple guidance to choose the format of the logo file based on the size of your button.
-    ja: 「Sign in with Apple」において「Choose the format of the logo file based on the size of your button」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure logo-only PNG artwork is used only for a 44×44 pt Sign in with Apple button.
+    ja: logo-only PNG artworkを44×44 ptのSign in with Apple buttonだけで使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - SVG and PDF logo-only artwork can be used at any button size.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -194108,7 +194070,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Sign in with Apple guidance to choose the format of the logo file based on the size of your button.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Ensure logo-only PNG artwork is used only for a 44×44 pt Sign in with Apple button.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194125,7 +194087,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: fbbdd06a9bcb20db40ac00856255b029036f60d253c43e546319a168e91d2e30
-    evidence_paraphrase: Apply the documented Sign in with Apple guidance to choose the format of the logo file based on the size of your button.
+    evidence_paraphrase: Ensure logo-only PNG artwork is used only for a 44×44 pt Sign in with Apple button.
   tags:
     - technologies
     - sign-in-with-apple
@@ -194134,41 +194096,35 @@
     - custom-logo-only-buttons
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Sign in with Apple guidance to choose the format of the logo file based on the size of your button.
+  apple_native_rule: Ensure logo-only PNG artwork is used only for a 44×44 pt Sign in with Apple button.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0014
-  title: Don’t add horizontal padding to a logo-only image
+  title: Never add horizontal padding to logo-only artwork
   category: technologies
   topic: sign-in-with-apple
   subtopic: custom-logo-only-buttons
   statement:
-    en: Exclude add horizontal padding to a logo-only image from the applicable experience.
-    ja: 該当する体験ではadd horizontal padding to a logo-only imageを避ける。
-  normative_level: AVOID
-  confidence: low
-  review_required: true
-  polarity: discourage
-  severity: warning
+    en: Never add horizontal padding to Apple-provided logo-only Sign in with Apple artwork.
+    ja: Apple提供のlogo-only Sign in with Apple artworkにhorizontal paddingを追加しない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The artwork already provides the correct padding and a 1:1 aspect ratio.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -194176,7 +194132,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude add horizontal padding to a logo-only image from the applicable experience.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Never add horizontal padding to Apple-provided logo-only Sign in with Apple artwork.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194193,7 +194149,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: ff8f1c91ba879c8eeafa1169a92835df5f76b88683d40adbb0ff55fe33bc9b8a
-    evidence_paraphrase: Exclude add horizontal padding to a logo-only image from the applicable experience.
+    evidence_paraphrase: Never add horizontal padding to Apple-provided logo-only Sign in with Apple artwork.
   tags:
     - technologies
     - sign-in-with-apple
@@ -194202,7 +194158,7 @@
     - custom-logo-only-buttons
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude add horizontal padding to a logo-only image from the applicable experience.
+  apple_native_rule: Never add horizontal padding to Apple-provided logo-only Sign in with Apple artwork.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0015
   title: Use a mask to change the default square shape of the logo-only image
@@ -194213,8 +194169,8 @@
     en: Choose or apply a mask to change the default square shape of the logo-only image in the documented context.
     ja: 該当する状況ではa mask to change the default square shape of the logo-only imageを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -194223,20 +194179,15 @@
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use a circular or rounded-rectangle mask when changing the square artwork shape.
+    - Do not alter the artwork's built-in padding.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -194273,34 +194224,28 @@
   apple_native_rule: Choose or apply a mask to change the default square shape of the logo-only image in the documented context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0016
-  title: Maintain a minimum margin around the button
+  title: Ensure a logo-only button has sufficient surrounding margin
   category: technologies
   topic: sign-in-with-apple
   subtopic: custom-logo-only-buttons
   statement:
-    en: Apply the documented Sign in with Apple guidance to maintain a minimum margin around the button.
-    ja: 「Sign in with Apple」において「Maintain a minimum margin around the button」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure the margin around a logo-only Sign in with Apple button is at least one tenth of its height.
+    ja: logo-only Sign in with Apple buttonの周囲marginをheightの10分の1以上にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
@@ -194312,7 +194257,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Sign in with Apple guidance to maintain a minimum margin around the button.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Ensure the margin around a logo-only Sign in with Apple button is at least one tenth of its height.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194329,7 +194274,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 304f5079e1e8ff6b3b650fc45fc91a73ac00924ba544c3f81928904589ddabea
-    evidence_paraphrase: Apply the documented Sign in with Apple guidance to maintain a minimum margin around the button.
+    evidence_paraphrase: Ensure the margin around a logo-only Sign in with Apple button is at least one tenth of its height.
   tags:
     - technologies
     - sign-in-with-apple
@@ -194338,7 +194283,7 @@
     - custom-logo-only-buttons
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Sign in with Apple guidance to maintain a minimum margin around the button.
+  apple_native_rule: Ensure the margin around a logo-only Sign in with Apple button is at least one tenth of its height.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017
   title: Let people view their Sign in with Apple private relay address
@@ -194349,7 +194294,7 @@
     en: Let people view their Sign in with Apple private relay address in the app or website.
     ja: アプリまたはWebサイト内で、Sign in with Appleのプライベートリレーアドレスを確認できるようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -194406,18 +194351,18 @@
   apple_native_rule: Let people view their Sign in with Apple private relay address in the app or website.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0018
-  title: Use other identifying values, like an order number or phone number collected as part of a purchase
+  title: Consider using purchase identifiers instead of a personal email address
   category: technologies
   topic: sign-in-with-apple
   subtopic: collecting-data
   statement:
-    en: Choose or apply other identifying values, like an order number or phone number collected as part of a purchase in the documented context.
-    ja: 該当する状況ではother identifying values, like an order number or phone number collected as part of a purchaseを採用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Consider using an order number or purchase-collected phone number instead of requesting a personal email address.
+    ja: personal email addressを求める代わりにorder numberやpurchase時のphone numberの利用を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
   scope:
     portability: technology-specific
     platforms:
@@ -194437,7 +194382,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Customer service, retail, or another flow needs to identify a person who chose a private relay address.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
@@ -194445,7 +194390,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply other identifying values, like an order number or phone number collected as part of a purchase in the documented context.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Consider using an order number or purchase-collected phone number instead of requesting a personal email address.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194460,14 +194405,14 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 63ab14ec26e17b3a665376959feda5c87477151d8914ad05fdb65d1d5ce7f45c
-    evidence_paraphrase: Choose or apply other identifying values, like an order number or phone number collected as part of a purchase in the documented context.
+    evidence_paraphrase: Consider using an order number or purchase-collected phone number instead of requesting a personal email address.
   tags:
     - technologies
     - sign-in-with-apple
     - collecting-data
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply other identifying values, like an order number or phone number collected as part of a purchase in the documented context.
+  apple_native_rule: Consider using an order number or purchase-collected phone number instead of requesting a personal email address.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0019
   title: Support for configuring the button’s corner radius to match the style of your UI (iOS, macOS, and web)
@@ -194532,38 +194477,33 @@
     - displaying-buttons
     - using-the-system-provided-buttons
   priority_rank: 6
-  status: active
+  status: deprecated
   apple_native_rule: Ensure the experience accommodates for configuring the button’s corner radius to match the style of your UI (iOS, macOS, and web).
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+  deprecated_at: 2026-07-23T17:18:41.379Z
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0020
-  title: Use the logo file to position the Apple logo in a button; never use the Apple logo as a
+  title: Ensure downloaded artwork positions the Apple logo
   category: technologies
   topic: sign-in-with-apple
   subtopic: creating-a-custom-sign-in-with-apple-button
   statement:
-    en: Choose or apply the logo file to position the Apple logo in a button; never use the Apple logo as a in the documented context.
-    ja: 該当する状況ではthe logo file to position the Apple logo in a button; never use the Apple logo as aを採用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure the Apple logo in a custom button is positioned with the downloaded logo file.
+    ja: custom button内のApple logoをdownloadしたlogo fileで配置する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
@@ -194575,7 +194515,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the logo file to position the Apple logo in a button; never use the Apple logo as a in the documented context.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Ensure the Apple logo in a custom button is positioned with the downloaded logo file.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194591,7 +194531,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: b15e2d4a676bab829597a32d0acebe2af227edadf4e1d1c7b0d2ef8cce70d3c3
-    evidence_paraphrase: Choose or apply the logo file to position the Apple logo in a button; never use the Apple logo as a in the documented context.
+    evidence_paraphrase: Ensure the Apple logo in a custom button is positioned with the downloaded logo file.
   tags:
     - technologies
     - sign-in-with-apple
@@ -194599,37 +194539,31 @@
     - creating-a-custom-sign-in-with-apple-button
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply the logo file to position the Apple logo in a button; never use the Apple logo as a in the documented context.
+  apple_native_rule: Ensure the Apple logo in a custom button is positioned with the downloaded logo file.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0021
-  title: Match the height of the logo file to the height of the button
+  title: Ensure the logo file height matches the custom button height
   category: technologies
   topic: sign-in-with-apple
   subtopic: creating-a-custom-sign-in-with-apple-button
   statement:
-    en: Apply the documented Sign in with Apple guidance to match the height of the logo file to the height of the button.
-    ja: 「Sign in with Apple」において「Match the height of the logo file to the height of the button」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure the downloaded Apple logo file height matches the custom button height.
+    ja: downloadしたApple logo fileのheightをcustom buttonのheightに合わせる。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
@@ -194641,7 +194575,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Sign in with Apple guidance to match the height of the logo file to the height of the button.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Ensure the downloaded Apple logo file height matches the custom button height.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194657,7 +194591,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 890fee408c04f96891102a300147ae34bf15c80d8a332676feb354df62e6c3ec
-    evidence_paraphrase: Apply the documented Sign in with Apple guidance to match the height of the logo file to the height of the button.
+    evidence_paraphrase: Ensure the downloaded Apple logo file height matches the custom button height.
   tags:
     - technologies
     - sign-in-with-apple
@@ -194665,37 +194599,31 @@
     - creating-a-custom-sign-in-with-apple-button
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Sign in with Apple guidance to match the height of the logo file to the height of the button.
+  apple_native_rule: Ensure the downloaded Apple logo file height matches the custom button height.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0022
-  title: Don’t crop the logo file
+  title: Never crop the Apple logo file
   category: technologies
   topic: sign-in-with-apple
   subtopic: creating-a-custom-sign-in-with-apple-button
   statement:
-    en: Exclude crop the logo file from the applicable experience.
-    ja: 該当する体験ではcrop the logo fileを避ける。
-  normative_level: AVOID
-  confidence: low
-  review_required: true
-  polarity: discourage
-  severity: warning
+    en: Never crop the Apple-provided logo file used in a custom Sign in with Apple button.
+    ja: custom Sign in with Apple buttonで使うApple提供logo fileをcropしない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
@@ -194707,7 +194635,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude crop the logo file from the applicable experience.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Never crop the Apple-provided logo file used in a custom Sign in with Apple button.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194723,7 +194651,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: dab6a1f192563b625a5d5e929dde1ad586e3dde24798d13c1080c029d743190b
-    evidence_paraphrase: Exclude crop the logo file from the applicable experience.
+    evidence_paraphrase: Never crop the Apple-provided logo file used in a custom Sign in with Apple button.
   tags:
     - technologies
     - sign-in-with-apple
@@ -194731,37 +194659,31 @@
     - creating-a-custom-sign-in-with-apple-button
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude crop the logo file from the applicable experience.
+  apple_native_rule: Never crop the Apple-provided logo file used in a custom Sign in with Apple button.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0023
-  title: Don’t add vertical padding
+  title: Never add vertical padding to the Apple logo file
   category: technologies
   topic: sign-in-with-apple
   subtopic: creating-a-custom-sign-in-with-apple-button
   statement:
-    en: Exclude add vertical padding from the applicable experience.
-    ja: 該当する体験ではadd vertical paddingを避ける。
-  normative_level: AVOID
-  confidence: low
-  review_required: true
-  polarity: discourage
-  severity: warning
+    en: Never add vertical padding to Apple-provided custom-button logo artwork.
+    ja: Apple提供のcustom-button logo artworkにvertical paddingを追加しない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
@@ -194773,7 +194695,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude add vertical padding from the applicable experience.” in the documented Sign in with Apple context?
+      - Does the design satisfy “Never add vertical padding to Apple-provided custom-button logo artwork.” in the documented Sign in with Apple context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -194789,7 +194711,7 @@
     retrieved_at: 2026-07-21T11:15:20.428Z
     source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
     source_sentence_hash: 1f54bfc305c647837254b7340befe33776d25a5c3b7e0ac776b5181ddbc5aafc
-    evidence_paraphrase: Exclude add vertical padding from the applicable experience.
+    evidence_paraphrase: Never add vertical padding to Apple-provided custom-button logo artwork.
   tags:
     - technologies
     - sign-in-with-apple
@@ -194797,7 +194719,7 @@
     - creating-a-custom-sign-in-with-apple-button
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude add vertical padding from the applicable experience.
+  apple_native_rule: Never add vertical padding to Apple-provided custom-button logo artwork.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0024
   title: Indicate when people are currently signed in
@@ -194808,8 +194730,8 @@
     en: Indicate when people are currently signed in.
     ja: when people are currently signed inを示す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -194862,6 +194784,2090 @@
   priority_rank: 6
   status: active
   apple_native_rule: Indicate when people are currently signed in.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0025
+  title: Ensure account setup requests only necessary additional data
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: collecting-data
+  statement:
+    en: Ensure Sign in with Apple account setup requests only necessary additional data.
+    ja: Sign in with Apple account setupで必要なadditional dataだけを求める。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Explain why each requested additional data item is needed and clearly display the data received.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure Sign in with Apple account setup requests only necessary additional data.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Collecting data
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 8b3f084fc6a5a4e4ce6ded6ab579cf933a0990f4c5dcf6188281bbf09930f194
+    evidence_paraphrase: Ensure Sign in with Apple account setup requests only necessary additional data.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - collecting-data
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure Sign in with Apple account setup requests only necessary additional data.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0026
+  title: Clarify whether additional account data is required or optional
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: collecting-data
+  statement:
+    en: Clarify whether each additional account-data request is required or optional.
+    ja: additional account-data requestがrequiredかoptionalかを明確にする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Clarify whether each additional account-data request is required or optional.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Collecting data
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: a0ea31fbb6cf676ba5f48e892d97e82f46ee655372ff9779b5bb720d8a5b10fd
+    evidence_paraphrase: Clarify whether each additional account-data request is required or optional.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - collecting-data
+  priority_rank: 6
+  status: active
+  apple_native_rule: Clarify whether each additional account-data request is required or optional.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0027
+  title: Ensure people understand legally required setup data
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: collecting-data
+  statement:
+    en: Ensure people understand which legally or contractually required data they must supply to finish account setup.
+    ja: account setup完了に必要なlegalまたはcontractual dataを明確に理解できるようにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The additional data is legally or contractually required to complete account setup.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure people understand which legally or contractually required data they must supply to finish account setup.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Collecting data
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: a0ea31fbb6cf676ba5f48e892d97e82f46ee655372ff9779b5bb720d8a5b10fd
+    evidence_paraphrase: Ensure people understand which legally or contractually required data they must supply to finish account setup.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - collecting-data
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure people understand which legally or contractually required data they must supply to finish account setup.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0028
+  title: Welcome people when Sign in with Apple completes
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: offering-sign-in-with-apple
+  statement:
+    en: Welcome people to their new account as soon as Sign in with Apple completes.
+    ja: Sign in with Apple完了直後にnew accountへwelcomeする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Welcome people to their new account as soon as Sign in with Apple completes.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Offering Sign in with Apple
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 9deed8dff135513554305702b907b8f82a9ac7e85aaadd8b49d7edc6748ce67a
+    evidence_paraphrase: Welcome people to their new account as soon as Sign in with Apple completes.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - offering-sign-in-with-apple
+  priority_rank: 6
+  status: active
+  apple_native_rule: Welcome people to their new account as soon as Sign in with Apple completes.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0029
+  title: Never restrict access when optional data is withheld
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: collecting-data
+  statement:
+    en: Never restrict account access or app features because a person declines to provide optional data.
+    ja: optional dataを提供しないことを理由にaccount accessやapp featureを制限しない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never restrict account access or app features because a person declines to provide optional data.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Collecting data
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 8180735176de62a21363d642144bf7ca52eeb30a0dfc8347bb307cca432a10b9
+    evidence_paraphrase: Never restrict account access or app features because a person declines to provide optional data.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - collecting-data
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never restrict account access or app features because a person declines to provide optional data.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0030
+  title: Use a consistent system-button title variant
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: using-the-system-provided-buttons
+  statement:
+    en: Choose the system-button title variant that fits the sign-in terminology and use it consistently.
+    ja: sign-in terminologyに合うsystem-button title variantを選び一貫して使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Choose the system-button title variant that fits the sign-in terminology and use it consistently.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Using the system-provided buttons
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 78d45b7a2977cbae66845fc2377edab15c6a0b580ffeb95c640164341893de3c
+    evidence_paraphrase: Choose the system-button title variant that fits the sign-in terminology and use it consistently.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - using-the-system-provided-buttons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Choose the system-button title variant that fits the sign-in terminology and use it consistently.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0031
+  title: Choose the appearance that works best with the background on which the button displays
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: using-the-system-provided-buttons
+  statement:
+    en: Apply the documented Sign in with Apple guidance to choose the appearance that works best with the background on which the button displays.
+    ja: 「Sign in with Apple」において「Choose the appearance that works best with the background on which the button displays」の指針を適用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Choose among the white, white outlined, and black appearances available on the target platform.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Apply the documented Sign in with Apple guidance to choose the appearance that works best with the background on which the button displays.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Using the system-provided buttons
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 61467943b6990e85c42c9909db5f618775bccbba4240ed880d7a566330011ce3
+    evidence_paraphrase: Apply the documented Sign in with Apple guidance to choose the appearance that works best with the background on which the button displays.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - using-the-system-provided-buttons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Apply the documented Sign in with Apple guidance to choose the appearance that works best with the background on which the button displays.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0032
+  title: Ensure a white button has sufficient contrast on a dark background
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: white
+  statement:
+    en: Ensure a white Sign in with Apple button has sufficient contrast when used on a dark background.
+    ja: dark background上のwhite Sign in with Apple buttonに十分なcontrastを確保する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “Ensure a white Sign in with Apple button has sufficient contrast when used on a dark background.” in the documented Sign in with Apple context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Using the system-provided buttons
+      - White
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 3ced434e17ab52eec080ca44d9fc8e120c2d2af646a8dfc0d4168ad67d720258
+    evidence_paraphrase: Ensure a white Sign in with Apple button has sufficient contrast when used on a dark background.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - using-the-system-provided-buttons
+    - white
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure a white Sign in with Apple button has sufficient contrast when used on a dark background.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0033
+  title: Ensure an outlined white button restores contrast on a light background
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: white-with-outline
+  statement:
+    en: Ensure the outlined white style provides needed contrast on a white or light-color background.
+    ja: whiteまたはlight-color background上でoutlined white styleに必要なcontrastを確保する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “Ensure the outlined white style provides needed contrast on a white or light-color background.” in the documented Sign in with Apple context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Using the system-provided buttons
+      - White with outline
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 2db136ecb17b058dad533421885529218c596547a1ae980cc7dd228f6682a0a4
+    evidence_paraphrase: Ensure the outlined white style provides needed contrast on a white or light-color background.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - using-the-system-provided-buttons
+    - white-with-outline
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure the outlined white style provides needed contrast on a white or light-color background.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0034
+  title: Avoid using this style on a dark or saturated background
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: white-with-outline
+  statement:
+    en: Exclude using this style on a dark or saturated background from the applicable experience.
+    ja: 該当する体験ではusing this style on a dark or saturated backgroundを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Prefer the plain white style on a dark background because the outlined style can add visual clutter.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Exclude using this style on a dark or saturated background from the applicable experience.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Using the system-provided buttons
+      - White with outline
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 2db136ecb17b058dad533421885529218c596547a1ae980cc7dd228f6682a0a4
+    evidence_paraphrase: Exclude using this style on a dark or saturated background from the applicable experience.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - using-the-system-provided-buttons
+    - white-with-outline
+  priority_rank: 6
+  status: active
+  apple_native_rule: Exclude using this style on a dark or saturated background from the applicable experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0035
+  title: Ensure a black button has sufficient contrast on a light background
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: black
+  statement:
+    en: Ensure a black Sign in with Apple button has sufficient contrast when used on a white or light-color background.
+    ja: whiteまたはlight-color background上のblack Sign in with Apple buttonに十分なcontrastを確保する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “Ensure a black Sign in with Apple button has sufficient contrast when used on a white or light-color background.” in the documented Sign in with Apple context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Using the system-provided buttons
+      - Black
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: d70cb2fbda90ca1dac0886c5a71be2ef84124bdba3559920f3dc740f7f8aefdd
+    evidence_paraphrase: Ensure a black Sign in with Apple button has sufficient contrast when used on a white or light-color background.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - using-the-system-provided-buttons
+    - black
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure a black Sign in with Apple button has sufficient contrast when used on a white or light-color background.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0036
+  title: Never use a black button on a black or dark background
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: black
+  statement:
+    en: Never use the black Sign in with Apple button on a black or dark background.
+    ja: black Sign in with Apple buttonをblackまたはdark background上で使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use the black Sign in with Apple button on a black or dark background.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Using the system-provided buttons
+      - Black
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: d70cb2fbda90ca1dac0886c5a71be2ef84124bdba3559920f3dc740f7f8aefdd
+    evidence_paraphrase: Never use the black Sign in with Apple button on a black or dark background.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - using-the-system-provided-buttons
+    - black
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never use the black Sign in with Apple button on a black or dark background.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0037
+  title: Always keep a custom button instantly identifiable
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Always keep a custom button instantly identifiable as Sign in with Apple.
+    ja: custom buttonを常にSign in with Appleとして即座に識別できる状態にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - App Review evaluates every custom Sign in with Apple button.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Always keep a custom button instantly identifiable as Sign in with Apple.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 74fb02b955199fba21ed73545fcfad999ab19231c5c315622ee4f29c6b0169a2
+    evidence_paraphrase: Always keep a custom button instantly identifiable as Sign in with Apple.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Always keep a custom button instantly identifiable as Sign in with Apple.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0038
+  title: Ensure custom buttons use only Apple-provided logo artwork
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Ensure custom Sign in with Apple buttons use only logo artwork downloaded from Apple Design Resources.
+    ja: custom Sign in with Apple buttonではApple Design Resourcesからdownloadしたlogo artworkだけを使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure custom Sign in with Apple buttons use only logo artwork downloaded from Apple Design Resources.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: a29f61d1f3b5483afd2b1b09fc6192ccfee2fc8d6e7172582a04a9e126c27116
+    evidence_paraphrase: Ensure custom Sign in with Apple buttons use only logo artwork downloaded from Apple Design Resources.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure custom Sign in with Apple buttons use only logo artwork downloaded from Apple Design Resources.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0039
+  title: Never create a custom Apple logo
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Never create a custom Apple logo for a Sign in with Apple button.
+    ja: Sign in with Apple button用のcustom Apple logoを作らない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never create a custom Apple logo for a Sign in with Apple button.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: a29f61d1f3b5483afd2b1b09fc6192ccfee2fc8d6e7172582a04a9e126c27116
+    evidence_paraphrase: Never create a custom Apple logo for a Sign in with Apple button.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never create a custom Apple logo for a Sign in with Apple button.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0040
+  title: Never use the Apple logo itself as a button
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Never use the Apple logo itself as a Sign in with Apple button.
+    ja: Apple logo自体をSign in with Apple buttonとして使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use the Apple logo itself as a Sign in with Apple button.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: b15e2d4a676bab829597a32d0acebe2af227edadf4e1d1c7b0d2ef8cce70d3c3
+    evidence_paraphrase: Never use the Apple logo itself as a Sign in with Apple button.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never use the Apple logo itself as a Sign in with Apple button.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0041
+  title: Ensure a custom button uses an approved title
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Ensure a custom button uses only Sign in with Apple, Sign up with Apple, or Continue with Apple.
+    ja: custom button titleをSign in with Apple、Sign up with Apple、Continue with Appleのいずれかにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure a custom button uses only Sign in with Apple, Sign up with Apple, or Continue with Apple.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: c242b8d42ba9d8ce52464fe023fcfeea13022f570af58160d06ee00fc33ab9da
+    evidence_paraphrase: Ensure a custom button uses only Sign in with Apple, Sign up with Apple, or Continue with Apple.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure a custom button uses only Sign in with Apple, Sign up with Apple, or Continue with Apple.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0042
+  title: Always keep logo-and-text custom buttons rectangular
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Always keep a custom Sign in with Apple button rectangular when it combines a logo and text.
+    ja: logoとtextを組み合わせるcustom Sign in with Apple buttonは常にrectangularにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - A logo-only button may instead be circular or rectangular.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Always keep a custom Sign in with Apple button rectangular when it combines a logo and text.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: d34c33aeeef296fe74e040935f57bd203fdbb4dab73b847d25975b67d3307c67
+    evidence_paraphrase: Always keep a custom Sign in with Apple button rectangular when it combines a logo and text.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Always keep a custom Sign in with Apple button rectangular when it combines a logo and text.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0043
+  title: Ensure the custom-button logo and title are both black or both white
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Ensure a custom button's logo and title are both black or both white.
+    ja: custom buttonのlogoとtitleを両方blackまたは両方whiteにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Use the same permitted color for both items within one button.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure a custom button's logo and title are both black or both white.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: f090dd3683492e977eb5e576b8a1bd113148216fc34b7609ef53cd71118db03c
+    evidence_paraphrase: Ensure a custom button's logo and title are both black or both white.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure a custom button's logo and title are both black or both white.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0044
+  title: Never use custom logo or title colors
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Never use custom colors for a custom Sign in with Apple button's logo or title.
+    ja: custom Sign in with Apple buttonのlogoやtitleにcustom colorを使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use custom colors for a custom Sign in with Apple button's logo or title.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: f090dd3683492e977eb5e576b8a1bd113148216fc34b7609ef53cd71118db03c
+    evidence_paraphrase: Never use custom colors for a custom Sign in with Apple button's logo or title.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never use custom colors for a custom Sign in with Apple button's logo or title.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0045
+  title: Ensure a custom button background remains black or white
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: creating-a-custom-sign-in-with-apple-button
+  statement:
+    en: Ensure a custom Sign in with Apple button's overall background remains black or white.
+    ja: custom Sign in with Apple buttonのoverall backgroundをblackまたはwhiteに保つ。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions:
+    - A subtle texture or gradient is permitted when the overall background remains black or white.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure a custom Sign in with Apple button's overall background remains black or white.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 3d65ef8c112bb70f2bfd0cd8b4f425afb13ebfd0b44394d0f81d1344bf3306c4
+    evidence_paraphrase: Ensure a custom Sign in with Apple button's overall background remains black or white.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure a custom Sign in with Apple button's overall background remains black or white.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0046
+  title: Ensure PNG artwork is used only in 44-point-tall text buttons
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: custom-buttons-with-a-logo-and-text
+  statement:
+    en: Ensure PNG artwork is used only in custom logo-and-text buttons that are 44 points tall.
+    ja: PNG artworkをheight 44 ptのcustom logo-and-text buttonだけで使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - SVG and PDF artwork can be used at any supported button height.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure PNG artwork is used only in custom logo-and-text buttons that are 44 points tall.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+      - Custom buttons with a logo and text
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: a5a2c32b0ea5b43ba3c8e72e5401aed215d4ee24a12b1bc9934357fb39569c54
+    evidence_paraphrase: Ensure PNG artwork is used only in custom logo-and-text buttons that are 44 points tall.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+    - custom-buttons-with-a-logo-and-text
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure PNG artwork is used only in custom logo-and-text buttons that are 44 points tall.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0047
+  title: Ensure custom title and button heights use system proportions
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: custom-buttons-with-a-logo-and-text
+  statement:
+    en: Ensure a custom button's title size and button height use the same proportions as the system button.
+    ja: custom buttonのtitle sizeとbutton heightをsystem buttonと同じ比率にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - With the system font, use a title size of about 43% of button height, or a button height of about 233% of title size.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure a custom button's title size and button height use the same proportions as the system button.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+      - Custom buttons with a logo and text
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 43679de6b1081621ae2621d8c288c8c814f6b88bcb4c80cf2960a37d2096e91c
+    evidence_paraphrase: Ensure a custom button's title size and button height use the same proportions as the system button.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+    - custom-buttons-with-a-logo-and-text
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure a custom button's title size and button height use the same proportions as the system button.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0048
+  title: Preserve the standard custom-button title capitalization
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: custom-buttons-with-a-logo-and-text
+  statement:
+    en: In general, preserve the standard capitalization of a custom Sign in with Apple button title.
+    ja: 原則としてcustom Sign in with Apple button titleのstandard capitalizationを維持する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions:
+    - All-uppercase capitalization may be used when the surrounding interface uses only uppercase.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “In general, preserve the standard capitalization of a custom Sign in with Apple button title.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+      - Custom buttons with a logo and text
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 97cfb364c3287928c9ef856c68f387de3adc29b8e986576b3967c9db7f51036c
+    evidence_paraphrase: In general, preserve the standard capitalization of a custom Sign in with Apple button title.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+    - custom-buttons-with-a-logo-and-text
+  priority_rank: 6
+  status: active
+  apple_native_rule: In general, preserve the standard capitalization of a custom Sign in with Apple button title.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0049
+  title: Never crop logo-only artwork or use the bare logo
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: custom-logo-only-buttons
+  statement:
+    en: Never crop Apple-provided logo-only artwork to reduce its padding or use the bare Apple logo by itself.
+    ja: Apple提供のlogo-only artworkをpadding削減のためにcropしたりbare Apple logoだけを使ったりしない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never crop Apple-provided logo-only artwork to reduce its padding or use the bare Apple logo by itself.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+      - Custom logo-only buttons
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 6c56f76a7e0dafe51daae27b962b71490efb75ea63b21130d28cd15532bdc315
+    evidence_paraphrase: Never crop Apple-provided logo-only artwork to reduce its padding or use the bare Apple logo by itself.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+    - custom-logo-only-buttons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never crop Apple-provided logo-only artwork to reduce its padding or use the bare Apple logo by itself.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0050
+  title: Avoid adding padding to logo-only artwork
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: custom-logo-only-buttons
+  statement:
+    en: Avoid adding padding to Apple-provided logo-only Sign in with Apple artwork.
+    ja: Apple提供のlogo-only Sign in with Apple artworkにpaddingを追加しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid adding padding to Apple-provided logo-only Sign in with Apple artwork.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Creating a custom Sign in with Apple button
+      - Custom logo-only buttons
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 6c56f76a7e0dafe51daae27b962b71490efb75ea63b21130d28cd15532bdc315
+    evidence_paraphrase: Avoid adding padding to Apple-provided logo-only Sign in with Apple artwork.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - creating-a-custom-sign-in-with-apple-button
+    - custom-logo-only-buttons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid adding padding to Apple-provided logo-only Sign in with Apple artwork.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0051
+  title: Delay sign-in as long as possible
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: offering-sign-in-with-apple
+  statement:
+    en: Apply the documented Sign in with Apple guidance to delay sign-in as long as possible.
+    ja: 「Sign in with Apple」において「Delay sign-in as long as possible」の指針を適用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Apply the documented Sign in with Apple guidance to delay sign-in as long as possible.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Offering Sign in with Apple
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 7d88861cf50b7041f33ccb92af1ed69aba0efa02aef98eda92bbcdba742a17c7
+    evidence_paraphrase: Apply the documented Sign in with Apple guidance to delay sign-in as long as possible.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - offering-sign-in-with-apple
+  priority_rank: 6
+  status: active
+  apple_native_rule: Apply the documented Sign in with Apple guidance to delay sign-in as long as possible.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0052
+  title: Set up a required account before offering sign-in options
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: offering-sign-in-with-apple
+  statement:
+    en: When an account is required, ask people to set it up before offering sign-in options.
+    ja: accountが必要な場合はsign-in optionを提示する前にsetupを求める。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Explain why the account is required before setup.
+    - After setup, offer Sign in with Apple and any other supported sign-in methods.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When an account is required, ask people to set it up before offering sign-in options.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Offering Sign in with Apple
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 79b7148ee1fb8ed0b8411aa81a8dcab66d8199617d971dab0018c3e80ee7ee01
+    evidence_paraphrase: When an account is required, ask people to set it up before offering sign-in options.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - offering-sign-in-with-apple
+  priority_rank: 6
+  status: active
+  apple_native_rule: When an account is required, ask people to set it up before offering sign-in options.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0053
+  title: Wait until after purchase to request a commerce account
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: offering-sign-in-with-apple
+  statement:
+    en: In a commerce app, wait until after purchase before asking people to create an account.
+    ja: commerce appではpurchase完了後までaccount作成要求を待つ。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - With guest checkout, offer quick account creation after the transaction.
+    - With Apple Pay, the order confirmation page can provide account creation without re-requesting an already supplied name or email address.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “In a commerce app, wait until after purchase before asking people to create an account.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Offering Sign in with Apple
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 9d77ca49b4371d8514d91d6bfdf9257b5e071ca461a7ddd4c016ae43e7c591fc
+    evidence_paraphrase: In a commerce app, wait until after purchase before asking people to create an account.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - offering-sign-in-with-apple
+  priority_rank: 6
+  status: active
+  apple_native_rule: In a commerce app, wait until after purchase before asking people to create an account.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0054
+  title: Prominently display the Sign in with Apple button
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: displaying-buttons
+  statement:
+    en: Prominently display the Sign in with Apple button with at least the prominence of other sign-in buttons.
+    ja: Sign in with Apple buttonを他のsign-in button以上のprominenceで表示する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Do not make the button smaller than other sign-in buttons.
+    - Avoid requiring people to scroll to find it.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prominently display the Sign in with Apple button with at least the prominence of other sign-in buttons.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: ed219039d38f4b6d2aa8b8effad9777ffa561afd11836d7a5d5153265f339f3c
+    evidence_paraphrase: Prominently display the Sign in with Apple button with at least the prominence of other sign-in buttons.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Prominently display the Sign in with Apple button with at least the prominence of other sign-in buttons.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0055
+  title: Match the system button's corner radius to nearby buttons
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: button-size-and-corner-radius
+  statement:
+    en: Adjust the system Sign in with Apple button's corner radius to match other buttons in the app.
+    ja: system Sign in with Apple buttonのcorner radiusをapp内の他のbuttonに合わせる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+    devices:
+      - iphone
+      - ipad
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - The source-supported range permits square through capsule-shaped corners.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Adjust the system Sign in with Apple button's corner radius to match other buttons in the app.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Displaying buttons
+      - Using the system-provided buttons
+      - Button size and corner radius
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: bdc99e17b3102510609a5e3975250de0347d7f4440aa9d2c66232dc35578554e
+    evidence_paraphrase: Adjust the system Sign in with Apple button's corner radius to match other buttons in the app.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - displaying-buttons
+    - using-the-system-provided-buttons
+    - button-size-and-corner-radius
+  priority_rank: 6
+  status: active
+  apple_native_rule: Adjust the system Sign in with Apple button's corner radius to match other buttons in the app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0056
+  title: Avoid delaying a new account with unnecessary questions
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: offering-sign-in-with-apple
+  statement:
+    en: Avoid delaying a new Sign in with Apple account by asking for information that isn't required.
+    ja: 不要なinformationを求めてnew Sign in with Apple accountの利用開始を遅らせない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid delaying a new Sign in with Apple account by asking for information that isn't required.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Offering Sign in with Apple
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: 9deed8dff135513554305702b907b8f82a9ac7e85aaadd8b49d7edc6748ce67a
+    evidence_paraphrase: Avoid delaying a new Sign in with Apple account by asking for information that isn't required.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - offering-sign-in-with-apple
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid delaying a new Sign in with Apple account by asking for information that isn't required.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0057
+  title: Ensure people know an optional data request is optional
+  category: technologies
+  topic: sign-in-with-apple
+  subtopic: collecting-data
+  statement:
+    en: Ensure people know an optional account-data request is optional and understand its benefit.
+    ja: optional account-data requestがoptionalであることとそのbenefitを理解できるようにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The additional data isn't required but may improve the user experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Sign in with Apple experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSign in with Appleの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure people know an optional account-data request is optional and understand its benefit.” in the documented Sign in with Apple context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple
+    page_title: Sign in with Apple
+    section_path:
+      - Sign in with Apple
+      - Collecting data
+    retrieved_at: 2026-07-21T11:15:20.428Z
+    source_hash: b57771c8387b68f5f3802375e67dc68801e518935f82c560cdc64cc2b1f981af
+    source_sentence_hash: a0ea31fbb6cf676ba5f48e892d97e82f46ee655372ff9779b5bb720d8a5b10fd
+    evidence_paraphrase: Ensure people know an optional account-data request is optional and understand its benefit.
+  tags:
+    - technologies
+    - sign-in-with-apple
+    - collecting-data
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure people know an optional account-data request is optional and understand its benefit.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SIRI-0001
   title: Use familiar terms for your content and actions

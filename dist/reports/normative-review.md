@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 484
-- Retained MUST: 423
-- Retained MUST_NOT: 61
+- Reviewed rules: 516
+- Retained MUST: 445
+- Retained MUST_NOT: 71
 - Normative level changes: 155
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T17:30:00Z
+- Reviewed at: 2026-07-23T18:20:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -862,7 +862,39 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-SHAREPLAY-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to-integrate requirement and preserved its non-disruption outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0028 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to-present requirement and preserved the quick-rejoin outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional MUST from the explicit be-sure-to-continue directive. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0004 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0010 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0012 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0013 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0014 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0016 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure directive in the data-collection guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0020 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0021 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0022 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0023 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0025 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0027 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0029 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0032 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0033 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0035 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0036 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0037 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0038 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0039 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0040 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0041 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0042 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0043 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0044 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0045 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0046 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0047 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0049 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
+- HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0057 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 · MUST · retained_with_atomicity_or_scope_correction — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012 · MUST · retained_with_atomicity_or_scope_correction — Raised to MUST after confirming the parent Make sure directive applies to every item in the custom-tutorial list. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the conditional Be sure directive that gates terms presentation on the required iOS update. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
