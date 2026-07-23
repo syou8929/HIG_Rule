@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3099
+- Active atomic rules: 3117
 - Pages without rules: 16
-- Low-confidence rules: 539
-- Rules requiring human review: 539
+- Low-confidence rules: 526
+- Rules requiring human review: 526
 - Reference notes: 905
 
 ## Rules by category
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 245
 - patterns: 477
-- technologies: 788
+- technologies: 806
 
 ## Normative levels
 
-- AVOID: 433
-- MAY: 365
-- MUST: 359
-- MUST_NOT: 38
-- SHOULD: 1904
+- AVOID: 434
+- MAY: 368
+- MUST: 364
+- MUST_NOT: 39
+- SHOULD: 1912
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2128
-- ipados: 2097
-- macos: 1733
-- tvos: 1382
-- visionos: 1781
-- watchos: 1482
+- ios: 2146
+- ipados: 2115
+- macos: 1750
+- tvos: 1399
+- visionos: 1798
+- watchos: 1468
 
 ## Rules by testability
 
 - hybrid: 93
-- manual: 3006
+- manual: 3024
 
 ## Blocked pages
 
@@ -248,19 +248,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-TECHNOLOGIES-AIRPLAY-0001
-- HIG-TECHNOLOGIES-AIRPLAY-0002
-- HIG-TECHNOLOGIES-AIRPLAY-0003
-- HIG-TECHNOLOGIES-AIRPLAY-0004
-- HIG-TECHNOLOGIES-AIRPLAY-0005
-- HIG-TECHNOLOGIES-AIRPLAY-0006
-- HIG-TECHNOLOGIES-AIRPLAY-0007
-- HIG-TECHNOLOGIES-AIRPLAY-0008
-- HIG-TECHNOLOGIES-AIRPLAY-0009
-- HIG-TECHNOLOGIES-AIRPLAY-0010
-- HIG-TECHNOLOGIES-AIRPLAY-0012
-- HIG-TECHNOLOGIES-AIRPLAY-0013
-- HIG-TECHNOLOGIES-AIRPLAY-0014
 - HIG-TECHNOLOGIES-APPLE-PAY-0001
 - HIG-TECHNOLOGIES-APPLE-PAY-0002
 - HIG-TECHNOLOGIES-APPLE-PAY-0003
@@ -790,19 +777,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-TECHNOLOGIES-AIRPLAY-0001
-- HIG-TECHNOLOGIES-AIRPLAY-0002
-- HIG-TECHNOLOGIES-AIRPLAY-0003
-- HIG-TECHNOLOGIES-AIRPLAY-0004
-- HIG-TECHNOLOGIES-AIRPLAY-0005
-- HIG-TECHNOLOGIES-AIRPLAY-0006
-- HIG-TECHNOLOGIES-AIRPLAY-0007
-- HIG-TECHNOLOGIES-AIRPLAY-0008
-- HIG-TECHNOLOGIES-AIRPLAY-0009
-- HIG-TECHNOLOGIES-AIRPLAY-0010
-- HIG-TECHNOLOGIES-AIRPLAY-0012
-- HIG-TECHNOLOGIES-AIRPLAY-0013
-- HIG-TECHNOLOGIES-AIRPLAY-0014
 - HIG-TECHNOLOGIES-APPLE-PAY-0001
 - HIG-TECHNOLOGIES-APPLE-PAY-0002
 - HIG-TECHNOLOGIES-APPLE-PAY-0003
@@ -1178,12 +1152,12 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/activity-views · Activity views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/activity-views · Activity views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/activity-views · Activity views > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Using AirPlay icons — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Change log — Reviewed: the consolidation history contains no additional current atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Platform considerations — Reviewed: AirPlay is supported on iOS, iPadOS, macOS, tvOS, and visionOS, and unsupported on watchOS.
+- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Resources — Reviewed: resource navigation contains no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Resources > Related — Reviewed: trademark and design-resource links contain no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Resources > Videos — Reviewed: the video link contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/airplay · AirPlay > Using AirPlay icons — Reviewed: icon download navigation is contextual; black, white, and custom-color use is represented by source-scoped rules.
 - https://developer.apple.com/design/human-interface-guidelines/alerts · Alerts > Anatomy — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/alerts · Alerts > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/alerts · Alerts > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.

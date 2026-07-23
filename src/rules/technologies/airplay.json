@@ -6,12 +6,12 @@
     "topic": "airplay",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Favor the system-provided media player when the documented conditions apply.",
-      "ja": "該当条件ではthe system-provided media playerを優先する。"
+      "en": "Prefer the system-provided player for media playback.",
+      "ja": "media playbackにはsystem-provided playerを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -21,24 +21,24 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use its standard controls, accessibility features, AirPlay support, and familiar system experience."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Consider a custom video player only when the system player cannot meet the app's needs."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
@@ -46,7 +46,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor the system-provided media player when the documented conditions apply.” in the documented AirPlay context?"
+        "Does the design satisfy “Prefer the system-provided player for media playback.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -63,10 +63,10 @@
         "AirPlay",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "84fbca0df1b26801ec369f36fdb96905bd8732dfa48bdb1923d9214c19ff4968",
-      "evidence_paraphrase": "Favor the system-provided media player when the documented conditions apply."
+      "source_sentence_hash": "b7ff013831f9e3a7338fc025414b3e1236b8d489d3363fc5dbc4e93fd22df240",
+      "evidence_paraphrase": "Prefer the system-provided player for media playback."
     },
     "tags": [
       "technologies",
@@ -75,22 +75,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Favor the system-provided media player when the documented conditions apply.",
+    "apple_native_rule": "Prefer the system-provided player for media playback.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0002",
-    "title": "Provide content in the highest possible resolution",
+    "title": "Provide the highest possible AirPlay resolution",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make content in the highest possible resolution available when applicable.",
-      "ja": "必要な場合にcontent in the highest possible resolutionを利用可能にする。"
+      "en": "Provide AirPlay content at the highest possible resolution.",
+      "ja": "AirPlay contentを可能な限り最高のresolutionで提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -100,22 +100,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let AVFoundation select a device-appropriate resolution from the available HLS variants."
     ],
     "exceptions": [],
     "rationale": {
@@ -125,7 +123,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make content in the highest possible resolution available when applicable.” in the documented AirPlay context?"
+        "Does the design satisfy “Provide AirPlay content at the highest possible resolution.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -142,10 +140,10 @@
         "AirPlay",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "20d4c5eea47277b28928ed8e1aaf27819f017159d42bbe3c336023b93a879362",
-      "evidence_paraphrase": "Make content in the highest possible resolution available when applicable."
+      "source_sentence_hash": "63f6cfc220cb28002b492613f068e54eec02e96bfd743435604dfe200d194b56",
+      "evidence_paraphrase": "Provide AirPlay content at the highest possible resolution."
     },
     "tags": [
       "technologies",
@@ -154,22 +152,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make content in the highest possible resolution available when applicable.",
+    "apple_native_rule": "Provide AirPlay content at the highest possible resolution.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0003",
-    "title": "Support both AirPlay streaming and mirroring",
+    "title": "Support AirPlay streaming and mirroring",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Ensure the experience accommodates both AirPlay streaming and mirroring.",
-      "ja": "both AirPlay streaming and mirroringを利用できる設計にする。"
+      "en": "Support both AirPlay streaming and mirroring.",
+      "ja": "AirPlay streamingとmirroringの両方をsupportする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -179,22 +177,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Supporting both modes gives people more playback flexibility."
     ],
     "exceptions": [],
     "rationale": {
@@ -204,7 +200,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates both AirPlay streaming and mirroring.” in the documented AirPlay context?"
+        "Does the design satisfy “Support both AirPlay streaming and mirroring.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -221,10 +217,10 @@
         "AirPlay",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "4a95e7c3ea1cd35473959c729c74f61ce52c96c400059ca87d1dc8791fe22620",
-      "evidence_paraphrase": "Ensure the experience accommodates both AirPlay streaming and mirroring."
+      "source_sentence_hash": "843fdbf478e7082d8659d20ca7def4a4369a5eea22f8c6c8f000fc0b7302037a",
+      "evidence_paraphrase": "Support both AirPlay streaming and mirroring."
     },
     "tags": [
       "technologies",
@@ -233,22 +229,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates both AirPlay streaming and mirroring.",
+    "apple_native_rule": "Support both AirPlay streaming and mirroring.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0004",
-    "title": "Support remote control events",
+    "title": "Support AirPlay remote control events",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Ensure the experience accommodates remote control events.",
-      "ja": "remote control eventsを利用できる設計にする。"
+      "en": "Support remote control events during AirPlay playback.",
+      "ja": "AirPlay playback中のremote control eventをsupportする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -258,16 +254,14 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": [
@@ -275,7 +269,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Enable actions such as play, pause, and fast-forward from the lock screen, Siri, or HomePod."
     ],
     "exceptions": [],
     "rationale": {
@@ -285,7 +279,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates remote control events.” in the documented AirPlay context?"
+        "Does the design satisfy “Support remote control events during AirPlay playback.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -302,10 +296,10 @@
         "AirPlay",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "41c504b711d0d3fc0bac08cd3bc25841c95508b90e35e9ab33f8d84e5975028d",
-      "evidence_paraphrase": "Ensure the experience accommodates remote control events."
+      "source_sentence_hash": "364ab2ded29ee592789a70b8226baba0d99ffa255901e9c3d4e1b42ba2504ca4",
+      "evidence_paraphrase": "Support remote control events during AirPlay playback."
     },
     "tags": [
       "technologies",
@@ -315,22 +309,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates remote control events.",
+    "apple_native_rule": "Support remote control events during AirPlay playback.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0005",
-    "title": "Don’t stop playback when your app enters the background or when the device locks",
+    "title": "Avoid stopping AirPlay in the background or on lock",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude stop playback when your app enters the background or when the device locks from the applicable experience.",
-      "ja": "該当する体験ではstop playback when your app enters the background or when the device locksを避ける。"
+      "en": "Avoid stopping AirPlay playback when the app enters the background or the device locks.",
+      "ja": "appがbackgroundへ移行した場合やdevice lock時にAirPlay playbackを停止しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -340,22 +334,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve playback while people use another app or put the source device to sleep."
     ],
     "exceptions": [],
     "rationale": {
@@ -365,7 +357,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude stop playback when your app enters the background or when the device locks from the applicable experience.” in the documented AirPlay context?"
+        "Does the design satisfy “Avoid stopping AirPlay playback when the app enters the background or the device locks.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -382,10 +374,10 @@
         "AirPlay",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "29bd2697cdd9899db0e97fc861a40d288b1b95378f1a32b4b4e7919fe47f7422",
-      "evidence_paraphrase": "Exclude stop playback when your app enters the background or when the device locks from the applicable experience."
+      "source_sentence_hash": "d6a4f1021da50e186fb67fee8b5002b80c4deacc127ad164045b00a5f6a9b94e",
+      "evidence_paraphrase": "Avoid stopping AirPlay playback when the app enters the background or the device locks."
     },
     "tags": [
       "technologies",
@@ -394,22 +386,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude stop playback when your app enters the background or when the device locks from the applicable experience.",
+    "apple_native_rule": "Avoid stopping AirPlay playback when the app enters the background or the device locks.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0006",
-    "title": "Don’t interrupt another app’s playback unless your app is starting to play immersive content",
+    "title": "Avoid interrupting existing playback with nonimmersive content",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude interrupt another app’s playback unless your app is starting to play immersive content from the applicable experience.",
-      "ja": "該当する体験ではinterrupt another app’s playback unless your app is starting to play immersive contentを避ける。"
+      "en": "Avoid interrupting another app's playback unless the app starts immersive content.",
+      "ja": "appがimmersive contentを開始する場合を除き他appのplaybackを中断しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -419,22 +411,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep launch videos and autoplaying inline videos local while current external playback continues."
     ],
     "exceptions": [],
     "rationale": {
@@ -444,7 +434,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude interrupt another app’s playback unless your app is starting to play immersive content from the applicable experience.” in the documented AirPlay context?"
+        "Does the design satisfy “Avoid interrupting another app's playback unless the app starts immersive content.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -461,10 +451,10 @@
         "AirPlay",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "e668722f7ea63f42511cd2b083e1b6ef4da23fe32f261f18560f8b8fbe1508c0",
-      "evidence_paraphrase": "Exclude interrupt another app’s playback unless your app is starting to play immersive content from the applicable experience."
+      "source_sentence_hash": "1624ac43b9551151342732a0c899967d1a011479def74eb694910e43218a9d5f",
+      "evidence_paraphrase": "Avoid interrupting another app's playback unless the app starts immersive content."
     },
     "tags": [
       "technologies",
@@ -473,22 +463,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude interrupt another app’s playback unless your app is starting to play immersive content from the applicable experience.",
+    "apple_native_rule": "Avoid interrupting another app's playback unless the app starts immersive content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0007",
-    "title": "Let people use other parts of your app during playback",
+    "title": "Keep the rest of the app usable during AirPlay",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Preserve people’s ability to use other parts of your app during playback.",
-      "ja": "利用者がuse other parts of your app during playbackできる状態を保つ。"
+      "en": "Let people use other parts of the app during AirPlay playback.",
+      "ja": "AirPlay playback中もappの他部分を利用できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -498,22 +488,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Navigation away from the playback screen remains available."
     ],
     "exceptions": [],
     "rationale": {
@@ -523,7 +511,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to use other parts of your app during playback.” in the documented AirPlay context?"
+        "Does the design satisfy “Let people use other parts of the app during AirPlay playback.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -540,10 +528,10 @@
         "AirPlay",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "3054441ae684c4161fc71696ef84624085f8c6109571247755d1d83437ab0325",
-      "evidence_paraphrase": "Preserve people’s ability to use other parts of your app during playback."
+      "source_sentence_hash": "de53283154b77835f2c1bd3bcaa9647070893f107d5332f511b84c2cbe496f8e",
+      "evidence_paraphrase": "Let people use other parts of the app during AirPlay playback."
     },
     "tags": [
       "technologies",
@@ -552,22 +540,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to use other parts of your app during playback.",
+    "apple_native_rule": "Let people use other parts of the app during AirPlay playback.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0008",
-    "title": "Position the AirPlay icon consistently with other technology icons",
+    "title": "Align AirPlay icon treatment with other technology icons",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "custom-color-airplay-icon",
     "statement": {
-      "en": "Apply the documented AirPlay guidance to position the AirPlay icon consistently with other technology icons.",
-      "ja": "「AirPlay」において「Position the AirPlay icon consistently with other technology icons」の指針を適用する。"
+      "en": "Position and present the AirPlay icon consistently with other technology icons.",
+      "ja": "AirPlay iconのpositionとpresentationを他のtechnology iconと一貫させる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -577,22 +565,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "If other technology icons appear within shapes, the AirPlay icon may use the same treatment."
     ],
     "exceptions": [],
     "rationale": {
@@ -602,7 +588,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented AirPlay guidance to position the AirPlay icon consistently with other technology icons.” in the documented AirPlay context?"
+        "Does the design satisfy “Position and present the AirPlay icon consistently with other technology icons.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -620,10 +606,10 @@
         "Using AirPlay icons",
         "Custom color AirPlay icon"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "eacc9b72ad588ee3331bf8d136e12ad9858178a7855948a888d898b278836110",
-      "evidence_paraphrase": "Apply the documented AirPlay guidance to position the AirPlay icon consistently with other technology icons."
+      "source_sentence_hash": "77b06bc52511ffd98e443046de28ad5c6c326bd72b121cece25e006a01fada7a",
+      "evidence_paraphrase": "Position and present the AirPlay icon consistently with other technology icons."
     },
     "tags": [
       "technologies",
@@ -633,22 +619,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented AirPlay guidance to position the AirPlay icon consistently with other technology icons.",
+    "apple_native_rule": "Position and present the AirPlay icon consistently with other technology icons.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0009",
-    "title": "Don’t use the AirPlay icon or name in custom buttons or interactive elements",
+    "title": "Avoid AirPlay branding in custom interactive elements",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "custom-color-airplay-icon",
     "statement": {
-      "en": "Exclude use the AirPlay icon or name in custom buttons or interactive elements from the applicable experience.",
-      "ja": "該当する体験ではuse the AirPlay icon or name in custom buttons or interactive elementsを避ける。"
+      "en": "Avoid using the AirPlay icon or name in custom buttons or interactive elements.",
+      "ja": "custom buttonやinteractive elementでAirPlay iconまたはnameを使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -658,22 +644,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the AirPlay icon and name only in noninteractive presentations."
     ],
     "exceptions": [],
     "rationale": {
@@ -683,7 +667,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude use the AirPlay icon or name in custom buttons or interactive elements from the applicable experience.” in the documented AirPlay context?"
+        "Does the design satisfy “Avoid using the AirPlay icon or name in custom buttons or interactive elements.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -701,10 +685,10 @@
         "Using AirPlay icons",
         "Custom color AirPlay icon"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "df9faa3478fd815ddf6c20efa933defffd166efc6bde5cc30e08f0d70c3d176f",
-      "evidence_paraphrase": "Exclude use the AirPlay icon or name in custom buttons or interactive elements from the applicable experience."
+      "source_sentence_hash": "c8db15440602c30ffb7e032856c9ca14e92f76b7c48823c30375d459c4ea0023",
+      "evidence_paraphrase": "Avoid using the AirPlay icon or name in custom buttons or interactive elements."
     },
     "tags": [
       "technologies",
@@ -714,22 +698,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude use the AirPlay icon or name in custom buttons or interactive elements from the applicable experience.",
+    "apple_native_rule": "Avoid using the AirPlay icon or name in custom buttons or interactive elements.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0010",
-    "title": "Use correct capitalization when using the term AirPlay",
+    "title": "Capitalize AirPlay correctly",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "referring-to-airplay",
     "statement": {
-      "en": "Choose or apply correct capitalization when using the term AirPlay in the documented context.",
-      "ja": "該当する状況ではcorrect capitalization when using the term AirPlayを採用する。"
+      "en": "Write AirPlay as one word with uppercase A and P.",
+      "ja": "AirPlayをuppercaseのAとPを持つ1語として表記する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -739,24 +723,24 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use lowercase letters after the initial A and internal P."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Use all uppercase when the surrounding designation style is exclusively uppercase."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
@@ -764,7 +748,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply correct capitalization when using the term AirPlay in the documented context.” in the documented AirPlay context?"
+        "Does the design satisfy “Write AirPlay as one word with uppercase A and P.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -781,10 +765,10 @@
         "AirPlay",
         "Referring to AirPlay"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "a01e450b021e34d57c4a7c5505f819c4316323ccec33df784909f0aefc4ca18e",
-      "evidence_paraphrase": "Choose or apply correct capitalization when using the term AirPlay in the documented context."
+      "source_sentence_hash": "e14348ba7f37e32ad45c5f58e8fec6dd6e8b201d907aa7281413aa5a240d7c8d",
+      "evidence_paraphrase": "Write AirPlay as one word with uppercase A and P."
     },
     "tags": [
       "technologies",
@@ -793,7 +777,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply correct capitalization when using the term AirPlay in the documented context.",
+    "apple_native_rule": "Write AirPlay as one word with uppercase A and P.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -803,11 +787,11 @@
     "topic": "airplay",
     "subtopic": "referring-to-airplay",
     "statement": {
-      "en": "Use AirPlay as a noun in every applicable case.",
-      "ja": "該当するすべての場合にuse AirPlay as a nounを実行する。"
+      "en": "Use AirPlay as a noun in every applicable reference.",
+      "ja": "該当するすべてのreferenceでAirPlayをnounとして使う。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -818,22 +802,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not use AirPlay as a verb."
     ],
     "exceptions": [],
     "rationale": {
@@ -843,7 +825,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Use AirPlay as a noun in every applicable case.” in the documented AirPlay context?"
+        "Does the design satisfy “Use AirPlay as a noun in every applicable reference.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -860,10 +842,10 @@
         "AirPlay",
         "Referring to AirPlay"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
       "source_sentence_hash": "ef83e9297a4405aea48e62947334c9dff7d5aae5fe270e1bafaaab165c068d5f",
-      "evidence_paraphrase": "Use AirPlay as a noun in every applicable case."
+      "evidence_paraphrase": "Use AirPlay as a noun in every applicable reference."
     },
     "tags": [
       "technologies",
@@ -872,22 +854,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Use AirPlay as a noun in every applicable case.",
+    "apple_native_rule": "Use AirPlay as a noun in every applicable reference.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0012",
-    "title": "Use terms like works with, use, supports, and compatible",
+    "title": "Use approved compatibility terms with AirPlay",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "referring-to-airplay",
     "statement": {
-      "en": "Choose or apply terms like works with, use, supports, and compatible in the documented context.",
-      "ja": "該当する状況ではterms like works with, use, supports, and compatibleを採用する。"
+      "en": "Describe AirPlay relationships with terms such as works with, use, supports, or compatible.",
+      "ja": "AirPlayとのrelationをworks with、use、supports、compatibleなどで表現する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -897,22 +879,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid wording that treats AirPlay as an app-owned feature or action."
     ],
     "exceptions": [],
     "rationale": {
@@ -922,7 +902,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply terms like works with, use, supports, and compatible in the documented context.” in the documented AirPlay context?"
+        "Does the design satisfy “Describe AirPlay relationships with terms such as works with, use, supports, or compatible.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -939,10 +919,10 @@
         "AirPlay",
         "Referring to AirPlay"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
       "source_sentence_hash": "6c85ddfd91d6342d82cbba1794b6720eceea0204b9d41aeced1c261ba8c31e2d",
-      "evidence_paraphrase": "Choose or apply terms like works with, use, supports, and compatible in the documented context."
+      "evidence_paraphrase": "Describe AirPlay relationships with terms such as works with, use, supports, or compatible."
     },
     "tags": [
       "technologies",
@@ -951,22 +931,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply terms like works with, use, supports, and compatible in the documented context.",
+    "apple_native_rule": "Describe AirPlay relationships with terms such as works with, use, supports, or compatible.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0013",
-    "title": "Use the name Apple with the name AirPlay if desired",
+    "title": "Optionally pair Apple with the AirPlay name",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "referring-to-airplay",
     "statement": {
-      "en": "Choose or apply the name Apple with the name AirPlay if desired in the documented context.",
-      "ja": "該当する状況ではthe name Apple with the name AirPlay if desiredを採用する。"
+      "en": "Consider using the name Apple together with AirPlay when desired.",
+      "ja": "必要に応じてAppleのnameをAirPlayと一緒に使うことを検討する。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -976,22 +956,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The wording benefits from naming Apple explicitly."
     ],
     "exceptions": [],
     "rationale": {
@@ -1001,7 +979,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the name Apple with the name AirPlay if desired in the documented context.” in the documented AirPlay context?"
+        "Does the design satisfy “Consider using the name Apple together with AirPlay when desired.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -1018,10 +996,10 @@
         "AirPlay",
         "Referring to AirPlay"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
       "source_sentence_hash": "145b8faaaabf86d1e931d65832fa80d7b4b8257345b73c8b5e97c8a0056bb560",
-      "evidence_paraphrase": "Choose or apply the name Apple with the name AirPlay if desired in the documented context."
+      "evidence_paraphrase": "Consider using the name Apple together with AirPlay when desired."
     },
     "tags": [
       "technologies",
@@ -1030,22 +1008,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply the name Apple with the name AirPlay if desired in the documented context.",
+    "apple_native_rule": "Consider using the name Apple together with AirPlay when desired.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-AIRPLAY-0014",
-    "title": "Refer to AirPlay if appropriate and to add clarity",
+    "title": "Mention AirPlay when it adds clarity",
     "category": "technologies",
     "topic": "airplay",
     "subtopic": "referring-to-airplay",
     "statement": {
-      "en": "Refer to airPlay if appropriate and to add clarity.",
-      "ja": "AirPlay if appropriate and to add clarityという名称で参照する。"
+      "en": "Consider referring to AirPlay when it adds clarity or belongs in technical specifications.",
+      "ja": "clarityを加える場合やtechnical specificationではAirPlayへの言及を検討する。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1055,22 +1033,20 @@
         "ipados",
         "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The content is specific to AirPlay or the technical specification needs the technology name."
     ],
     "exceptions": [],
     "rationale": {
@@ -1080,7 +1056,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Refer to airPlay if appropriate and to add clarity.” in the documented AirPlay context?"
+        "Does the design satisfy “Consider referring to AirPlay when it adds clarity or belongs in technical specifications.” in the documented AirPlay context?"
       ]
     },
     "testability": "manual",
@@ -1097,10 +1073,10 @@
         "AirPlay",
         "Referring to AirPlay"
       ],
-      "retrieved_at": "2026-07-21T11:14:36.720Z",
+      "retrieved_at": "2026-07-23T12:06:55Z",
       "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
-      "source_sentence_hash": "078a28a9ef602e14ccfe7ba54ef6d41329ba0f07e6b8f20778c140ccf8607212",
-      "evidence_paraphrase": "Refer to airPlay if appropriate and to add clarity."
+      "source_sentence_hash": "579134a8f3e25ea71a33266c97a4e1267a2a44b520fd329e92f3fe7ece49d841",
+      "evidence_paraphrase": "Consider referring to AirPlay when it adds clarity or belongs in technical specifications."
     },
     "tags": [
       "technologies",
@@ -1109,7 +1085,1401 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Refer to airPlay if appropriate and to add clarity.",
+    "apple_native_rule": "Consider referring to AirPlay when it adds clarity or belongs in technical specifications.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0015",
+    "title": "Consider a custom video player only when necessary",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Consider a custom video player only when the system-provided player cannot meet the app's needs.",
+      "ja": "system-provided playerがappのneedsを満たせない場合にだけcustom video playerを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Evaluate the system player's controls, accessibility features, consistency, and AirPlay support first."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider a custom video player only when the system-provided player cannot meet the app's needs.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "b7ff013831f9e3a7338fc025414b3e1236b8d489d3363fc5dbc4e93fd22df240",
+      "evidence_paraphrase": "Consider a custom video player only when the system-provided player cannot meet the app's needs."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider a custom video player only when the system-provided player cannot meet the app's needs.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0016",
+    "title": "Include the full resolution range in HLS playlists",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Ensure each HLS playlist includes the full range of available content resolutions.",
+      "ja": "各HLS playlistに利用可能なcontent resolutionの全範囲を含める。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Provide variants that let AVFoundation select a resolution appropriate for the playback device."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure each HLS playlist includes the full range of available content resolutions.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "63f6cfc220cb28002b492613f068e54eec02e96bfd743435604dfe200d194b56",
+      "evidence_paraphrase": "Ensure each HLS playlist includes the full range of available content resolutions."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure each HLS playlist includes the full range of available content resolutions.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0017",
+    "title": "Stream only expected content through AirPlay",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use AirPlay to stream only the content people expect.",
+      "ja": "利用者が期待するcontentだけをAirPlayでstreamする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Exclude background loops and short videos that make sense only within the local app context."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use AirPlay to stream only the content people expect.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "ff3272cb4b716f882de42eb4bc47927ea477544bbfac583fa75f0f4716c9d3f4",
+      "evidence_paraphrase": "Use AirPlay to stream only the content people expect."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use AirPlay to stream only the content people expect.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0018",
+    "title": "Never mirror unrelated content without explicit choice",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Never mirror unrelated device content automatically while background AirPlay playback continues.",
+      "ja": "backgroundのAirPlay playback継続中に無関係なdevice contentを自動mirroringしない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Require an explicit user choice before streaming other device content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never mirror unrelated device content automatically while background AirPlay playback continues.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "d6a4f1021da50e186fb67fee8b5002b80c4deacc127ad164045b00a5f6a9b94e",
+      "evidence_paraphrase": "Never mirror unrelated device content automatically while background AirPlay playback continues."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Never mirror unrelated device content automatically while background AirPlay playback continues.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0019",
+    "title": "Keep the app functional while AirPlay is active",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Ensure the app remains functional while AirPlay is active.",
+      "ja": "AirPlay active中もappをfunctionalに保つ。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "People may navigate away from the playback screen while streaming continues."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure the app remains functional while AirPlay is active.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "de53283154b77835f2c1bd3bcaa9647070893f107d5332f511b84c2cbe496f8e",
+      "evidence_paraphrase": "Ensure the app remains functional while AirPlay is active."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure the app remains functional while AirPlay is active.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0020",
+    "title": "Prevent other videos from interrupting AirPlay",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Ensure other in-app videos do not interrupt active AirPlay playback after navigation.",
+      "ja": "navigation後に他のin-app videoがactive AirPlay playbackを中断しないようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply after people leave the original playback screen."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure other in-app videos do not interrupt active AirPlay playback after navigation.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "de53283154b77835f2c1bd3bcaa9647070893f107d5332f511b84c2cbe496f8e",
+      "evidence_paraphrase": "Ensure other in-app videos do not interrupt active AirPlay playback after navigation."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure other in-app videos do not interrupt active AirPlay playback after navigation.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0021",
+    "title": "Provide intuitive AirPlay entry in custom players",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Give a necessary custom media player an intuitive way to enter AirPlay.",
+      "ja": "必要なcustom media playerにAirPlayへ入るintuitiveな方法を提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The system-provided media player cannot meet the app's needs."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Give a necessary custom media player an intuitive way to enter AirPlay.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "e10aefa1d2f37b4d0a7a2e03088a10a0b43f075083b951814eb6ed63743204c6",
+      "evidence_paraphrase": "Give a necessary custom media player an intuitive way to enter AirPlay."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Give a necessary custom media player an intuitive way to enter AirPlay.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0022",
+    "title": "Match custom AirPlay buttons to system controls",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Ensure custom AirPlay buttons match system-provided controls in appearance and behavior.",
+      "ja": "custom AirPlay buttonのappearanceとbehaviorをsystem-provided controlに合わせる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app cannot use the system-provided media player."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure custom AirPlay buttons match system-provided controls in appearance and behavior.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "e10aefa1d2f37b4d0a7a2e03088a10a0b43f075083b951814eb6ed63743204c6",
+      "evidence_paraphrase": "Ensure custom AirPlay buttons match system-provided controls in appearance and behavior."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure custom AirPlay buttons match system-provided controls in appearance and behavior.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0023",
+    "title": "Show distinct states in custom AirPlay buttons",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Ensure custom AirPlay buttons show distinct starting, active, and unavailable states.",
+      "ja": "custom AirPlay buttonでstarting、active、unavailableのdistinct stateを示す。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app cannot use the system-provided media player."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure custom AirPlay buttons show distinct starting, active, and unavailable states.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "e10aefa1d2f37b4d0a7a2e03088a10a0b43f075083b951814eb6ed63743204c6",
+      "evidence_paraphrase": "Ensure custom AirPlay buttons show distinct starting, active, and unavailable states."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure custom AirPlay buttons show distinct starting, active, and unavailable states.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0024",
+    "title": "Use Apple-provided symbols for AirPlay controls",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use only Apple-provided symbols in custom controls that initiate AirPlay.",
+      "ja": "AirPlayを開始するcustom controlではApple-provided symbolだけを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply to custom media-player controls that start AirPlay."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use only Apple-provided symbols in custom controls that initiate AirPlay.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "e10aefa1d2f37b4d0a7a2e03088a10a0b43f075083b951814eb6ed63743204c6",
+      "evidence_paraphrase": "Use only Apple-provided symbols in custom controls that initiate AirPlay."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use only Apple-provided symbols in custom controls that initiate AirPlay.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0025",
+    "title": "Put the AirPlay icon in the custom player's lower-right",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Place the AirPlay icon in a custom player's lower-right corner on supported iOS and iPadOS versions.",
+      "ja": "support対象のiOSとiPadOSでcustom playerのlower-right cornerにAirPlay iconを置く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply on iOS 16 and iPadOS 16 or later."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Place the AirPlay icon in a custom player's lower-right corner on supported iOS and iPadOS versions.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "e10aefa1d2f37b4d0a7a2e03088a10a0b43f075083b951814eb6ed63743204c6",
+      "evidence_paraphrase": "Place the AirPlay icon in a custom player's lower-right corner on supported iOS and iPadOS versions."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Place the AirPlay icon in a custom player's lower-right corner on supported iOS and iPadOS versions.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0026",
+    "title": "Use the black AirPlay icon with matching light layouts",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "black-airplay-icon",
+    "statement": {
+      "en": "Use the black AirPlay icon on light backgrounds when other technology icons are black.",
+      "ja": "他のtechnology iconがblackならlight background上でblack AirPlay iconを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The layout uses white or another light background."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the black AirPlay icon on light backgrounds when other technology icons are black.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Using AirPlay icons",
+        "Black AirPlay icon"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "f4c919c25cb343bcc63760e041056fc1173c22e22fc9e0ce3ed29816dc4a5184",
+      "evidence_paraphrase": "Use the black AirPlay icon on light backgrounds when other technology icons are black."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "using-airplay-icons",
+      "black-airplay-icon"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use the black AirPlay icon on light backgrounds when other technology icons are black.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0027",
+    "title": "Use the white AirPlay icon with matching dark layouts",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "white-airplay-icon",
+    "statement": {
+      "en": "Use the white AirPlay icon on dark backgrounds when other technology icons are white.",
+      "ja": "他のtechnology iconがwhiteならdark background上でwhite AirPlay iconを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The layout uses black or another dark background."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the white AirPlay icon on dark backgrounds when other technology icons are white.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Using AirPlay icons",
+        "White AirPlay icon"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "cae0f8b05112ac78c52db13b86eb6ba0171effed6abd78672bf25f45d58f2783",
+      "evidence_paraphrase": "Use the white AirPlay icon on dark backgrounds when other technology icons are white."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "using-airplay-icons",
+      "white-airplay-icon"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use the white AirPlay icon on dark backgrounds when other technology icons are white.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0028",
+    "title": "Match a custom AirPlay icon color to other technology icons",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "custom-color-airplay-icon",
+    "statement": {
+      "en": "Use a custom AirPlay icon color only when other technology icons use the same color.",
+      "ja": "他のtechnology iconが同色の場合にだけcustom AirPlay icon colorを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep technology-icon color treatment consistent within the layout."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a custom AirPlay icon color only when other technology icons use the same color.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Using AirPlay icons",
+        "Custom color AirPlay icon"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "e3a39619653c9eb3d03880794d0b3ecbb409ac758bbae3f8798ddb4770df2ddc",
+      "evidence_paraphrase": "Use a custom AirPlay icon color only when other technology icons use the same color."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "using-airplay-icons",
+      "custom-color-airplay-icon"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use a custom AirPlay icon color only when other technology icons use the same color.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0029",
+    "title": "Pair the AirPlay icon and name consistently",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "custom-color-airplay-icon",
+    "statement": {
+      "en": "Place the AirPlay name beside or below its icon when other technologies use the same labeling pattern.",
+      "ja": "他technologyが同じlabel patternならAirPlay nameをiconの横または下に置く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use the combined icon-and-name treatment only when the layout labels other technologies similarly."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Place the AirPlay name beside or below its icon when other technologies use the same labeling pattern.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Using AirPlay icons",
+        "Custom color AirPlay icon"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "839a9cc3a3f030bdc90713225003c68bc8905dacadcdfc18f685db52652b981f",
+      "evidence_paraphrase": "Place the AirPlay name beside or below its icon when other technologies use the same labeling pattern."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "using-airplay-icons",
+      "custom-color-airplay-icon"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Place the AirPlay name beside or below its icon when other technologies use the same labeling pattern.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0030",
+    "title": "Use the layout font for the AirPlay name",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "custom-color-airplay-icon",
+    "statement": {
+      "en": "Use the layout's existing font when displaying the AirPlay name.",
+      "ja": "AirPlay nameの表示にはlayoutで使用中のfontを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply when text accompanies the AirPlay icon."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the layout's existing font when displaying the AirPlay name.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Using AirPlay icons",
+        "Custom color AirPlay icon"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "839a9cc3a3f030bdc90713225003c68bc8905dacadcdfc18f685db52652b981f",
+      "evidence_paraphrase": "Use the layout's existing font when displaying the AirPlay name."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "using-airplay-icons",
+      "custom-color-airplay-icon"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use the layout's existing font when displaying the AirPlay name.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0031",
+    "title": "Avoid using the AirPlay icon as text",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "custom-color-airplay-icon",
+    "statement": {
+      "en": "Avoid placing the AirPlay icon within text or using it instead of the AirPlay name.",
+      "ja": "AirPlay iconをtext内に置いたりAirPlay nameの代わりに使ったりしない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep the technology name textual when prose or labeling requires it."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid placing the AirPlay icon within text or using it instead of the AirPlay name.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Using AirPlay icons",
+        "Custom color AirPlay icon"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "839a9cc3a3f030bdc90713225003c68bc8905dacadcdfc18f685db52652b981f",
+      "evidence_paraphrase": "Avoid placing the AirPlay icon within text or using it instead of the AirPlay name."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "using-airplay-icons",
+      "custom-color-airplay-icon"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid placing the AirPlay icon within text or using it instead of the AirPlay name.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-AIRPLAY-0032",
+    "title": "Emphasize the app identity over AirPlay",
+    "category": "technologies",
+    "topic": "airplay",
+    "subtopic": "custom-color-airplay-icon",
+    "statement": {
+      "en": "Make AirPlay references less prominent than the app's name or main identity.",
+      "ja": "AirPlay referenceをappのnameやmain identityより目立たせない。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve the app as the primary identity in the layout."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable AirPlay experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるAirPlayの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make AirPlay references less prominent than the app's name or main identity.” in the documented AirPlay context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/airplay",
+      "page_title": "AirPlay",
+      "section_path": [
+        "AirPlay",
+        "Using AirPlay icons",
+        "Custom color AirPlay icon"
+      ],
+      "retrieved_at": "2026-07-23T12:06:55Z",
+      "source_hash": "d59320631a5ced81b99f7bb65eada1f67949e0c078d8bca54309acc92e10ce60",
+      "source_sentence_hash": "0b6f847373e0e5d58aba6ccf2b98ed7295ff89d7f69f08ab6501c1f0fd1ecb06",
+      "evidence_paraphrase": "Make AirPlay references less prominent than the app's name or main identity."
+    },
+    "tags": [
+      "technologies",
+      "airplay",
+      "using-airplay-icons",
+      "custom-color-airplay-icon"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Make AirPlay references less prominent than the app's name or main identity.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

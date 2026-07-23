@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T12:03:55.310Z. 3099 active rules; 4 deprecated rules.
+Generated 2026-07-23T12:14:00.297Z. 3117 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2589,20 +2589,38 @@ Generated 2026-07-23T12:03:55.310Z. 3099 active rules; 4 deprecated rules.
 
 ### airplay
 
-- **HIG-TECHNOLOGIES-AIRPLAY-0001 · SHOULD · low** — Favor the system-provided media player when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0002 · SHOULD · low** — Make content in the highest possible resolution available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0003 · SHOULD · low** — Ensure the experience accommodates both AirPlay streaming and mirroring. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0004 · SHOULD · low** — Ensure the experience accommodates remote control events. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0005 · AVOID · low** — Exclude stop playback when your app enters the background or when the device locks from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0006 · AVOID · low** — Exclude interrupt another app’s playback unless your app is starting to play immersive content from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0007 · SHOULD · low** — Preserve people’s ability to use other parts of your app during playback. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0008 · SHOULD · low** — Apply the documented AirPlay guidance to position the AirPlay icon consistently with other technology icons. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0009 · AVOID · low** — Exclude use the AirPlay icon or name in custom buttons or interactive elements from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0010 · SHOULD · low** — Choose or apply correct capitalization when using the term AirPlay in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0011 · MUST · medium** — Use AirPlay as a noun in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0012 · SHOULD · low** — Choose or apply terms like works with, use, supports, and compatible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0013 · SHOULD · low** — Choose or apply the name Apple with the name AirPlay if desired in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
-- **HIG-TECHNOLOGIES-AIRPLAY-0014 · SHOULD · low** — Refer to airPlay if appropriate and to add clarity. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0001 · SHOULD · high** — Prefer the system-provided player for media playback. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0002 · SHOULD · high** — Provide AirPlay content at the highest possible resolution. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0003 · SHOULD · high** — Support both AirPlay streaming and mirroring. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0004 · SHOULD · high** — Support remote control events during AirPlay playback. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0005 · AVOID · high** — Avoid stopping AirPlay playback when the app enters the background or the device locks. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0006 · AVOID · high** — Avoid interrupting another app's playback unless the app starts immersive content. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0007 · SHOULD · high** — Let people use other parts of the app during AirPlay playback. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0008 · SHOULD · high** — Position and present the AirPlay icon consistently with other technology icons. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0009 · AVOID · high** — Avoid using the AirPlay icon or name in custom buttons or interactive elements. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0010 · SHOULD · high** — Write AirPlay as one word with uppercase A and P. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0011 · MUST · high** — Use AirPlay as a noun in every applicable reference. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0012 · SHOULD · high** — Describe AirPlay relationships with terms such as works with, use, supports, or compatible. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0013 · MAY · high** — Consider using the name Apple together with AirPlay when desired. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0014 · MAY · high** — Consider referring to AirPlay when it adds clarity or belongs in technical specifications. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0015 · MAY · high** — Consider a custom video player only when the system-provided player cannot meet the app's needs. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0016 · MUST · high** — Ensure each HLS playlist includes the full range of available content resolutions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0017 · SHOULD · high** — Use AirPlay to stream only the content people expect. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0018 · MUST_NOT · high** — Never mirror unrelated device content automatically while background AirPlay playback continues. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0019 · MUST · high** — Ensure the app remains functional while AirPlay is active. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0020 · MUST · high** — Ensure other in-app videos do not interrupt active AirPlay playback after navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0021 · SHOULD · high** — Give a necessary custom media player an intuitive way to enter AirPlay. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0022 · MUST · high** — Ensure custom AirPlay buttons match system-provided controls in appearance and behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0023 · MUST · high** — Ensure custom AirPlay buttons show distinct starting, active, and unavailable states. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0024 · SHOULD · high** — Use only Apple-provided symbols in custom controls that initiate AirPlay. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0025 · SHOULD · high** — Place the AirPlay icon in a custom player's lower-right corner on supported iOS and iPadOS versions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0026 · SHOULD · high** — Use the black AirPlay icon on light backgrounds when other technology icons are black. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0027 · SHOULD · high** — Use the white AirPlay icon on dark backgrounds when other technology icons are white. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0028 · SHOULD · high** — Use a custom AirPlay icon color only when other technology icons use the same color. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0029 · SHOULD · high** — Place the AirPlay name beside or below its icon when other technologies use the same labeling pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0030 · SHOULD · high** — Use the layout's existing font when displaying the AirPlay name. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0031 · AVOID · high** — Avoid placing the AirPlay icon within text or using it instead of the AirPlay name. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- **HIG-TECHNOLOGIES-AIRPLAY-0032 · SHOULD · high** — Make AirPlay references less prominent than the app's name or main identity. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
 ### always-on
 
 - **HIG-TECHNOLOGIES-ALWAYS-ON-0001 · SHOULD · high** — Keep nonsensitive personal information glanceable in Always On when it makes sense. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))

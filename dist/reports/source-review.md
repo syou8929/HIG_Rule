@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2518
-- Reviewed batches: 158
+- Reviewed rules: 2550
+- Reviewed batches: 159
 - Official source only: yes
-- Reviewed at: 2026-07-23T11:56:58Z
+- Reviewed at: 2026-07-23T12:06:55Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2116,6 +2116,38 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-WORKOUTS-0014 · high — Separated the large-text technique from the Make sure legibility outcome and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-PATTERNS-WORKOUTS-0015 · high — Separated the contrast technique from the Make sure legibility outcome and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-PATTERNS-WORKOUTS-0016 · high — Separated information hierarchy from font size and contrast while retaining SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-TECHNOLOGIES-AIRPLAY-0001 · high — Preserved Prefer strength and separated the conditional custom-player option. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0002 · high — Preserved the quality recommendation and split the explicit HLS playlist requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0003 · high — Retained the two-mode recommendation and its flexibility rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0004 · high — Recorded the documented remote-control surfaces and example actions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0005 · high — Retained direct Don't guidance at AVOID and separated the explicit automatic-mirroring restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0006 · high — Preserved the immersive-content exception and retained direct Don't guidance at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0007 · high — Preserved the navigation recommendation and split two explicit continuity requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0008 · high — Replaced the generic paraphrase and preserved the conditional shape treatment. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0009 · high — Retained direct Don't guidance at AVOID and recorded the noninteractive boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0010 · high — Recorded the exact capitalization pattern and its all-uppercase layout exception. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0011 · high — Retained MUST from the unqualified Always directive and recorded the noun-versus-verb boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0012 · high — Recorded the documented relationship vocabulary without storing the full examples table. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0013 · high — Corrected generated SHOULD to MAY because the source explicitly makes the Apple name optional. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0014 · high — Corrected generated SHOULD to MAY based on the source's conditional can-use wording. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0015 · high — Recovered the conditional custom-player option and retained Consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0016 · high — Recovered MUST from the explicit needs-to requirement and kept it separate from the quality recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0017 · high — Recovered the omitted content-expectation boundary and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0018 · high — Recovered the crucial explicit-intent prohibition as a source-scoped MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0019 · high — Recovered MUST from the explicit needs-to-remain-functional requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0020 · high — Recovered MUST from the explicit Make sure directive and kept it separate from general app usability. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0021 · high — Recovered the custom-player entry recommendation while preserving its fallback condition. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0022 · high — Recovered the first atomic MUST from the explicit Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0023 · high — Recovered the second atomic MUST from the Be sure directive's included state requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0024 · high — Recovered the Apple-symbol boundary and retained SHOULD rather than inventing an unsupported MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0025 · high — Recovered the platform-versioned icon placement and narrowed its scope to iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0026 · high — Recovered the black-icon background and neighboring-icon color conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0027 · high — Recovered the white-icon background and neighboring-icon color conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0028 · high — Recovered the custom-color option and its same-color condition. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0029 · high — Recovered the conditional icon-and-name pairing and both permitted positions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0030 · high — Separated font consistency from icon-and-name placement. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0031 · high — Recovered the direct Avoid clause and retained AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0032 · high — Recovered the omitted brand-hierarchy recommendation and its explicit prominence comparison. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0001 · high — Preserved the source condition, clarified that sensitive content is excluded, and recorded examples and opt-out behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0002 · high — Narrowed the existing combined lead to the important-content legibility action. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0003 · high — Repaired the generic generated statement and recorded the full state-transition scope. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))

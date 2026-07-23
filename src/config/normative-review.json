@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T11:56:58Z",
+  "reviewed_at": "2026-07-23T12:06:55Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 397,
+  "reviewed_rule_count": 403,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -3078,6 +3078,54 @@
       "polarity": "require", "severity": "error",
       "conditions": ["Apply the feedback to both session-start and session-stop transitions."],
       "review_note": "Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability."
+    },
+    "HIG-TECHNOLOGIES-AIRPLAY-0016": {
+      "title": "Include the full resolution range in HLS playlists",
+      "statement": {"en": "Ensure each HLS playlist includes the full range of available content resolutions.", "ja": "各HLS playlistに利用可能なcontent resolutionの全範囲を含める。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Provide variants that let AVFoundation select a resolution appropriate for the playback device."],
+      "review_note": "Recovered MUST from the explicit needs-to requirement and kept it separate from the quality recommendation."
+    },
+    "HIG-TECHNOLOGIES-AIRPLAY-0018": {
+      "title": "Never mirror unrelated content without explicit choice",
+      "statement": {"en": "Never mirror unrelated device content automatically while background AirPlay playback continues.", "ja": "backgroundのAirPlay playback継続中に無関係なdevice contentを自動mirroringしない。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "prohibit", "severity": "error",
+      "conditions": ["Require an explicit user choice before streaming other device content."],
+      "review_note": "Recovered the crucial explicit-intent prohibition as a source-scoped MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-AIRPLAY-0019": {
+      "title": "Keep the app functional while AirPlay is active",
+      "statement": {"en": "Ensure the app remains functional while AirPlay is active.", "ja": "AirPlay active中もappをfunctionalに保つ。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["People may navigate away from the playback screen while streaming continues."],
+      "review_note": "Recovered MUST from the explicit needs-to-remain-functional requirement."
+    },
+    "HIG-TECHNOLOGIES-AIRPLAY-0020": {
+      "title": "Prevent other videos from interrupting AirPlay",
+      "statement": {"en": "Ensure other in-app videos do not interrupt active AirPlay playback after navigation.", "ja": "navigation後に他のin-app videoがactive AirPlay playbackを中断しないようにする。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply after people leave the original playback screen."],
+      "review_note": "Recovered MUST from the explicit Make sure directive and kept it separate from general app usability."
+    },
+    "HIG-TECHNOLOGIES-AIRPLAY-0022": {
+      "title": "Match custom AirPlay buttons to system controls",
+      "statement": {"en": "Ensure custom AirPlay buttons match system-provided controls in appearance and behavior.", "ja": "custom AirPlay buttonのappearanceとbehaviorをsystem-provided controlに合わせる。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app cannot use the system-provided media player."],
+      "review_note": "Recovered the first atomic MUST from the explicit Be sure directive."
+    },
+    "HIG-TECHNOLOGIES-AIRPLAY-0023": {
+      "title": "Show distinct states in custom AirPlay buttons",
+      "statement": {"en": "Ensure custom AirPlay buttons show distinct starting, active, and unavailable states.", "ja": "custom AirPlay buttonでstarting、active、unavailableのdistinct stateを示す。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app cannot use the system-provided media player."],
+      "review_note": "Recovered the second atomic MUST from the Be sure directive's included state requirements."
     }
   },
   "additional_rules": [

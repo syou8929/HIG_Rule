@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 397
-- Retained MUST: 359
-- Retained MUST_NOT: 38
+- Reviewed rules: 403
+- Retained MUST: 364
+- Retained MUST_NOT: 39
 - Normative level changes: 143
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T11:56:58Z
+- Reviewed at: 2026-07-23T12:06:55Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -238,6 +238,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-SETTINGS-0012 — Recovered the explicit Always-based active-button requirement and separated it from adjacent toolbar customizability and visibility guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-WORKOUTS-0010 — Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-TECHNOLOGIES-AIRPLAY-0016 — Recovered MUST from the explicit needs-to requirement and kept it separate from the quality recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0018 — Recovered the crucial explicit-intent prohibition as a source-scoped MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0019 — Recovered MUST from the explicit needs-to-remain-functional requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0020 — Recovered MUST from the explicit Make sure directive and kept it separate from general app usability. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0022 — Recovered the first atomic MUST from the explicit Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0023 — Recovered the second atomic MUST from the Be sure directive's included state requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0004 — Raised the privacy rule to MUST because the source calls redaction crucial and identifies sensitive financial and health information. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0005 — Recovered MUST from the explicit you need directive for notification privacy. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-APP-CLIPS-0005 — Retained MUST after confirming the explicit Ensure directive and the bundled-assets, splash-screen, and immediate-launch context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
@@ -625,6 +631,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-WORKOUTS-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-PATTERNS-WORKOUTS-0010 · MUST · retained_with_atomicity_or_scope_correction — Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-TECHNOLOGIES-AIRPLAY-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs-to requirement and kept it separate from the quality recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0018 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the crucial explicit-intent prohibition as a source-scoped MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs-to-remain-functional requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Make sure directive and kept it separate from general app usability. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered the first atomic MUST from the explicit Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
+- HIG-TECHNOLOGIES-AIRPLAY-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered the second atomic MUST from the Be sure directive's included state requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0004 · MUST · retained_with_atomicity_or_scope_correction — Raised the privacy rule to MUST because the source calls redaction crucial and identifies sensitive financial and health information. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0005 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit you need directive for notification privacy. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-APP-CLIPS-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive and the bundled-assets, splash-screen, and immediate-launch context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
