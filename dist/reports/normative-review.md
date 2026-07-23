@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 449
-- Retained MUST: 395
-- Retained MUST_NOT: 54
+- Reviewed rules: 461
+- Retained MUST: 402
+- Retained MUST_NOT: 59
 - Normative level changes: 144
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T12:51:11Z
+- Reviewed at: 2026-07-23T13:20:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -759,6 +759,18 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-HEALTHKIT-0042 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
 - HIG-TECHNOLOGIES-HEALTHKIT-0043 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
 - HIG-TECHNOLOGIES-HEALTHKIT-0044 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
+- HIG-TECHNOLOGIES-HOMEKIT-0029 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0030 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0042 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0047 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0050 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0052 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0053 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0054 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0057 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0058 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0059 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
+- HIG-TECHNOLOGIES-HOMEKIT-0067 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/homekit))
 - HIG-TECHNOLOGIES-ICLOUD-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0005 · MUST · retained_with_atomicity_or_scope_correction — Recovered the privacy-sensitive MUST from the explicit only-when restriction and preserved both legal and data-handling conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
 - HIG-TECHNOLOGIES-ID-VERIFIER-0006 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You must requirement for the additional entitlement. ([source](https://developer.apple.com/design/human-interface-guidelines/id-verifier))
