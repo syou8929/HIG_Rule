@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2932
+- Active atomic rules: 2937
 - Pages without rules: 16
-- Low-confidence rules: 627
-- Rules requiring human review: 627
+- Low-confidence rules: 621
+- Rules requiring human review: 621
 - Reference notes: 904
 
 ## Rules by category
 
 - components: 1026
-- foundations: 405
+- foundations: 410
 - getting-started: 100
 - inputs: 245
 - patterns: 368
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 415
+- AVOID: 416
 - MAY: 345
 - MUST: 325
 - MUST_NOT: 34
-- SHOULD: 1813
+- SHOULD: 1817
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 1968
-- ipados: 1944
-- macos: 1607
-- tvos: 1242
-- visionos: 1647
-- watchos: 1341
+- ios: 1973
+- ipados: 1949
+- macos: 1612
+- tvos: 1247
+- visionos: 1652
+- watchos: 1346
 
 ## Rules by testability
 
-- hybrid: 86
-- manual: 2846
+- hybrid: 87
+- manual: 2850
 
 ## Blocked pages
 
@@ -138,12 +138,6 @@ None.
 - HIG-FOUNDATIONS-LAYOUT-0005
 - HIG-FOUNDATIONS-LAYOUT-0006
 - HIG-FOUNDATIONS-LAYOUT-0025
-- HIG-FOUNDATIONS-MATERIALS-0001
-- HIG-FOUNDATIONS-MATERIALS-0002
-- HIG-FOUNDATIONS-MATERIALS-0003
-- HIG-FOUNDATIONS-MATERIALS-0004
-- HIG-FOUNDATIONS-MATERIALS-0005
-- HIG-FOUNDATIONS-MATERIALS-0013
 - HIG-FOUNDATIONS-MOTION-0001
 - HIG-FOUNDATIONS-MOTION-0002
 - HIG-FOUNDATIONS-MOTION-0003
@@ -768,12 +762,6 @@ None.
 - HIG-FOUNDATIONS-LAYOUT-0005
 - HIG-FOUNDATIONS-LAYOUT-0006
 - HIG-FOUNDATIONS-LAYOUT-0025
-- HIG-FOUNDATIONS-MATERIALS-0001
-- HIG-FOUNDATIONS-MATERIALS-0002
-- HIG-FOUNDATIONS-MATERIALS-0003
-- HIG-FOUNDATIONS-MATERIALS-0004
-- HIG-FOUNDATIONS-MATERIALS-0005
-- HIG-FOUNDATIONS-MATERIALS-0013
 - HIG-FOUNDATIONS-MOTION-0001
 - HIG-FOUNDATIONS-MOTION-0002
 - HIG-FOUNDATIONS-MOTION-0003

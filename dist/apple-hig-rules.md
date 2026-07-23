@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T07:47:44.378Z. 2932 active rules; 4 deprecated rules.
+Generated 2026-07-23T07:56:53.736Z. 2937 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -431,11 +431,11 @@ Generated 2026-07-23T07:47:44.378Z. 2932 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-LAYOUT-0035 · MUST · high** — Provide enough space around visionOS interactive components for comfortable visual identification and unobscured hover effects. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 ### materials
 
-- **HIG-FOUNDATIONS-MATERIALS-0001 · AVOID · low** — Exclude use Liquid Glass in the content layer from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0002 · SHOULD · low** — Choose or apply liquid Glass effects sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0003 · SHOULD · low** — Apply the documented Materials guidance to choose materials and effects based on semantic meaning and recommended usage. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0004 · SHOULD · low** — Apply the documented Materials guidance to help ensure legibility by using vibrant colors on top of materials. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0005 · MAY · low** — Evaluate whether contrast and visual separation when choosing a material to combine with blur and vibrancy effects is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0001 · AVOID · high** — Avoid using Liquid Glass in the content layer. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0002 · SHOULD · high** — Use Liquid Glass effects sparingly, especially on custom controls. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0003 · SHOULD · high** — Choose materials and effects by semantic meaning and recommended use. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0004 · SHOULD · high** — Use vibrant colors over materials to help preserve legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0005 · MAY · high** — Consider contrast and visual separation when choosing material thickness with blur and vibrancy. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0006 · SHOULD · high** — Choose intentionally when to allow vibrancy in custom macOS views and controls. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0007 · SHOULD · high** — Choose a macOS background blending mode that complements the interface design. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0008 · SHOULD · high** — Prefer translucency to opaque colors in visionOS windows. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
@@ -443,7 +443,7 @@ Generated 2026-07-23T07:47:44.378Z. 2932 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-MATERIALS-0010 · SHOULD · high** — Use UIVibrancyEffectStyle.label for standard text in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0011 · SHOULD · high** — Use UIVibrancyEffectStyle.secondaryLabel for descriptive visionOS text. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0012 · SHOULD · high** — Use UIVibrancyEffectStyle.tertiaryLabel only for inactive visionOS elements that do not need high text legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
-- **HIG-FOUNDATIONS-MATERIALS-0013 · MAY · low** — When the underlying content is bright, consider adding a dark dimming layer of 35% opacity. For developer guidance, see. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0013 · MAY · high** — When underlying content is bright, consider a dark dimming layer with 35% opacity. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0014 · MAY · high** — Consider a standard iOS or iPadOS material to create distinction in the content layer. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0015 · MAY · high** — Use label, secondaryLabel, or tertiaryLabel vibrancy on any iOS or iPadOS material when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0016 · AVOID · high** — Avoid quaternaryLabel vibrancy on thin and ultraThin iOS or iPadOS materials. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
@@ -452,6 +452,11 @@ Generated 2026-07-23T07:47:44.378Z. 2932 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-MATERIALS-0019 · MAY · high** — Consider a tvOS standard material whose thickness matches the view and color-scheme context. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0020 · SHOULD · high** — Choose a system material for a custom visionOS component when visual separation or interactivity needs emphasis. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - **HIG-FOUNDATIONS-MATERIALS-0021 · AVOID · high** — Avoid removing or replacing a watchOS modal sheet’s default material background. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0022 · SHOULD · high** — Use clear Liquid Glass only for components over visually rich backgrounds. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0023 · SHOULD · high** — Use regular Liquid Glass when backgrounds threaten legibility or components contain significant text. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0024 · SHOULD · high** — Determine whether clear Liquid Glass needs a dimming layer for contrast and legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0025 · SHOULD · high** — Use standard materials and effects to convey structure in the content layer. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- **HIG-FOUNDATIONS-MATERIALS-0026 · AVOID · high** — Avoid choosing a material or effect by its apparent color. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 ### motion
 
 - **HIG-FOUNDATIONS-MOTION-0001 · SHOULD · low** — Apply the documented Motion guidance to make motion optional. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
