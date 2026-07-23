@@ -41730,11 +41730,11 @@
   topic: segmented-controls
   subtopic: best-practices
   statement:
-    en: Choose or apply a segmented control to provide closely related choices that affect an object, state, or view in the documented context.
-    ja: 該当する状況ではa segmented control to provide closely related choices that affect an object, state, or viewを採用する。
+    en: Use a segmented control for closely related choices that affect an object, state, or view.
+    ja: object、state、viewに影響する密接に関連したchoiceにはsegmented controlを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -41755,7 +41755,9 @@
       - segmented-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - An inspector can use one for one or more attributes.
+    - A toolbar can use one for actions that affect the current view.
+    - On macOS, a segmented control can support single choice, multiple choices, or momentary actions.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
@@ -41763,7 +41765,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply a segmented control to provide closely related choices that affect an object, state, or view in the documented context.” in the documented Segmented controls context?
+      - Does the design satisfy “Use a segmented control for closely related choices that affect an object, state, or view.” in the documented Segmented controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -41778,26 +41780,26 @@
     retrieved_at: 2026-07-21T11:15:17.863Z
     source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
     source_sentence_hash: 94061e41d98c883ac6cb494fba45985722d7f80763f7198581f7ce37f7bd5c7f
-    evidence_paraphrase: Choose or apply a segmented control to provide closely related choices that affect an object, state, or view in the documented context.
+    evidence_paraphrase: Use a segmented control for closely related choices that affect an object, state, or view.
   tags:
     - components
     - segmented-controls
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply a segmented control to provide closely related choices that affect an object, state, or view in the documented context.
+  apple_native_rule: Use a segmented control for closely related choices that affect an object, state, or view.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
-  title: Consider a segmented control when it’s important to group functions together, or to clearly show their sele…
+  title: Consider segmented controls for persistent grouping or selection state
   category: components
   topic: segmented-controls
   subtopic: best-practices
   statement:
-    en: Evaluate whether a segmented control when it’s important to group functions together, or to clearly show their selection state is appropriate for the current context.
-    ja: a segmented control when it’s important to group functions together, or to clearly show their selection stateが現在の状況に適切か検討する。
+    en: Consider a segmented control when persistent grouping or a clear selection state is important.
+    ja: groupingの維持やselection stateの明示が重要な場合はsegmented controlを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -41818,7 +41820,8 @@
       - segmented-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The grouping persists across view sizes and placements.
+    - The grouping can help people identify selected controls at a glance.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
@@ -41826,7 +41829,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether a segmented control when it’s important to group functions together, or to clearly show their selection state is appropriate for the current context.” in the documented Segmented controls context?
+      - Does the design satisfy “Consider a segmented control when persistent grouping or a clear selection state is important.” in the documented Segmented controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -41841,14 +41844,14 @@
     retrieved_at: 2026-07-21T11:15:17.863Z
     source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
     source_sentence_hash: c43ad9a70e444c1f5ab9878abbef30036cc19518f2d59ea833b230282764fbc9
-    evidence_paraphrase: Evaluate whether a segmented control when it’s important to group functions together, or to clearly show their selection state is appropriate for the current context.
+    evidence_paraphrase: Consider a segmented control when persistent grouping or a clear selection state is important.
   tags:
     - components
     - segmented-controls
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether a segmented control when it’s important to group functions together, or to clearly show their selection state is appropriate for the current context.
+  apple_native_rule: Consider a segmented control when persistent grouping or a clear selection state is important.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
   title: Keep control types consistent within a single segmented control
@@ -41856,11 +41859,11 @@
   topic: segmented-controls
   subtopic: best-practices
   statement:
-    en: Maintain control types consistent within a single segmented control.
-    ja: control types consistent within a single segmented controlを維持する。
+    en: Keep every segment's control type consistent within a segmented control.
+    ja: 1つのsegmented control内で各segmentのcontrol typeを統一する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -41881,7 +41884,8 @@
       - segmented-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Don't assign actions within a control whose other segments represent selection state.
+    - Don't show selection state within a control whose other segments perform actions.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
@@ -41889,7 +41893,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Maintain control types consistent within a single segmented control.” in the documented Segmented controls context?
+      - Does the design satisfy “Keep every segment's control type consistent within a segmented control.” in the documented Segmented controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -41904,14 +41908,14 @@
     retrieved_at: 2026-07-21T11:15:17.863Z
     source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
     source_sentence_hash: 1f2290ef5a907ecbada4103a1fea6fd530736a01b386f33a54d444b205c929a5
-    evidence_paraphrase: Maintain control types consistent within a single segmented control.
+    evidence_paraphrase: Keep every segment's control type consistent within a segmented control.
   tags:
     - components
     - segmented-controls
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Maintain control types consistent within a single segmented control.
+  apple_native_rule: Keep every segment's control type consistent within a segmented control.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0004
   title: Prefer using either text or images — not a mix of both — in a single segmented control
@@ -41919,11 +41923,11 @@
   topic: segmented-controls
   subtopic: content
   statement:
-    en: Favor using either text or images — not a mix of both — in a single segmented control when the documented conditions apply.
-    ja: 該当条件ではusing either text or images — not a mix of both — in a single segmented controlを優先する。
+    en: Prefer either text or images, not both, within one segmented control.
+    ja: 1つのsegmented controlではtextまたはimageのどちらか一方を優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -41944,7 +41948,7 @@
       - segmented-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Mixing text-only and image-only segments can make the interface feel disconnected and confusing.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
@@ -41952,7 +41956,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Favor using either text or images — not a mix of both — in a single segmented control when the documented conditions apply.” in the documented Segmented controls context?
+      - Does the design satisfy “Prefer either text or images, not both, within one segmented control.” in the documented Segmented controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -41967,14 +41971,14 @@
     retrieved_at: 2026-07-21T11:15:17.863Z
     source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
     source_sentence_hash: bcde7fd32a99926ab6cabfd4812b11be00db7f9fb755985022879674252aa028
-    evidence_paraphrase: Favor using either text or images — not a mix of both — in a single segmented control when the documented conditions apply.
+    evidence_paraphrase: Prefer either text or images, not both, within one segmented control.
   tags:
     - components
     - segmented-controls
     - content
   priority_rank: 6
   status: active
-  apple_native_rule: Favor using either text or images — not a mix of both — in a single segmented control when the documented conditions apply.
+  apple_native_rule: Prefer either text or images, not both, within one segmented control.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0005
   title: Use nouns or noun phrases for segment labels
@@ -41982,11 +41986,11 @@
   topic: segmented-controls
   subtopic: content
   statement:
-    en: Choose or apply nouns or noun phrases for segment labels in the documented context.
-    ja: 該当する状況ではnouns or noun phrases for segment labelsを採用する。
+    en: Use nouns or noun phrases for segment labels.
+    ja: segment labelにはnounまたはnoun phraseを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -42007,7 +42011,8 @@
       - segmented-controls
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The separate writing rule requires each label to describe its segment and use title-style capitalization.
+    - A control whose segments display text labels doesn't need introductory text.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
@@ -42015,7 +42020,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply nouns or noun phrases for segment labels in the documented context.” in the documented Segmented controls context?
+      - Does the design satisfy “Use nouns or noun phrases for segment labels.” in the documented Segmented controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -42030,14 +42035,14 @@
     retrieved_at: 2026-07-21T11:15:17.863Z
     source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
     source_sentence_hash: 011db4fa27049e84906bc3475d1bc53979a217deb608760a8e7456b277f41410
-    evidence_paraphrase: Choose or apply nouns or noun phrases for segment labels in the documented context.
+    evidence_paraphrase: Use nouns or noun phrases for segment labels.
   tags:
     - components
     - segmented-controls
     - content
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply nouns or noun phrases for segment labels in the documented context.
+  apple_native_rule: Use nouns or noun phrases for segment labels.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0006
   title: Consider segmented controls for closely related subviews
@@ -42123,7 +42128,6 @@
     modalities: []
   conditions:
     - For symbols or interface icons, consider a label below each segment.
-    - If the app provides tooltips, provide one for each segment.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
@@ -42394,11 +42398,203 @@
   topic: segmented-controls
   subtopic: content
   statement:
-    en: Use content with a similar size in each segment wherever practicable.
-    ja: 可能な限りuse content with a similar size in each segment。
+    en: As much as possible, keep content similarly sized across segments.
+    ja: 可能な限り各segmentのcontent sizeを揃える。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components:
+      - segmented-controls
+    modalities: []
+  conditions:
+    - Equal segment widths can look unbalanced when content fills some segments but not others.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSegmented controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “As much as possible, keep content similarly sized across segments.” in the documented Segmented controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+    page_title: Segmented controls
+    section_path:
+      - Segmented controls
+      - Content
+    retrieved_at: 2026-07-21T11:15:17.863Z
+    source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
+    source_sentence_hash: 541312c085e7c22c1d696c63125d088c85f841c8ef0fc8335dcae7cbc73ee687
+    evidence_paraphrase: As much as possible, keep content similarly sized across segments.
+  tags:
+    - components
+    - segmented-controls
+    - content
+  priority_rank: 6
+  status: active
+  apple_native_rule: As much as possible, keep content similarly sized across segments.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0013
+  title: Limit the number of segments in a control
+  category: components
+  topic: segmented-controls
+  subtopic: best-practices
+  statement:
+    en: Limit the number of segments in a segmented control.
+    ja: segmented control内のsegment数を制限する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components:
+      - segmented-controls
+    modalities: []
+  conditions:
+    - Too many segments are difficult to parse and slow to navigate.
+    - Aim for about five to seven at most in a wide interface.
+    - Aim for about five at most on iPhone.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSegmented controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Limit the number of segments in a segmented control.” in the documented Segmented controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+    page_title: Segmented controls
+    section_path:
+      - Segmented controls
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:17.863Z
+    source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
+    source_sentence_hash: 210dd9304d4002f36733ca70b12517933eced3c06dd991562ff3ca4501fd0a08
+    evidence_paraphrase: Limit the number of segments in a segmented control.
+  tags:
+    - components
+    - segmented-controls
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Limit the number of segments in a segmented control.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0014
+  title: Keep segment frame sizes consistent
+  category: components
+  topic: segmented-controls
+  subtopic: best-practices
+  statement:
+    en: In general, keep segment frame sizes consistent within a segmented control.
+    ja: 原則としてsegmented control内のsegment frame sizeを揃える。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components:
+      - segmented-controls
+    modalities: []
+  conditions:
+    - Equal segment widths make the control feel balanced.
+    - The separate content-size rule applies inside each segment.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSegmented controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “In general, keep segment frame sizes consistent within a segmented control.” in the documented Segmented controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+    page_title: Segmented controls
+    section_path:
+      - Segmented controls
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:17.863Z
+    source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
+    source_sentence_hash: 304f59f689057ce7cd8dd533ab630b7b8135b71942ad1807a4af91d717f40521
+    evidence_paraphrase: In general, keep segment frame sizes consistent within a segmented control.
+  tags:
+    - components
+    - segmented-controls
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: In general, keep segment frame sizes consistent within a segmented control.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0015
+  title: Keep segmented-control icon and title widths consistent
+  category: components
+  topic: segmented-controls
+  subtopic: best-practices
+  statement:
+    en: To the extent possible, keep icon and title widths consistent across segments.
+    ja: 可能な範囲で各segmentのiconとtitleの幅を揃える。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -42427,7 +42623,70 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Use content with a similar size in each segment wherever practicable.” in the documented Segmented controls context?
+      - Does the design satisfy “To the extent possible, keep icon and title widths consistent across segments.” in the documented Segmented controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+    page_title: Segmented controls
+    section_path:
+      - Segmented controls
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:17.863Z
+    source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
+    source_sentence_hash: 5a3b271aeed45dba61b8877a0a9f0ab35f155b8da9a4ecd278d689641f982030
+    evidence_paraphrase: To the extent possible, keep icon and title widths consistent across segments.
+  tags:
+    - components
+    - segmented-controls
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: To the extent possible, keep icon and title widths consistent across segments.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0016
+  title: Write descriptive segment labels in title style
+  category: components
+  topic: segmented-controls
+  subtopic: content
+  statement:
+    en: Write text that describes each segment and uses title-style capitalization.
+    ja: 各segmentを説明するtextをtitle-style capitalizationで書く。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components:
+      - segmented-controls
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSegmented controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Write text that describes each segment and uses title-style capitalization.” in the documented Segmented controls context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -42441,15 +42700,186 @@
       - Content
     retrieved_at: 2026-07-21T11:15:17.863Z
     source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
-    source_sentence_hash: 541312c085e7c22c1d696c63125d088c85f841c8ef0fc8335dcae7cbc73ee687
-    evidence_paraphrase: Use content with a similar size in each segment wherever practicable.
+    source_sentence_hash: d1becf36e6021a8c21eac00cdd197b077947a76b2ba1e3de2ddb0a3b7c154a0e
+    evidence_paraphrase: Write text that describes each segment and uses title-style capitalization.
   tags:
     - components
     - segmented-controls
     - content
   priority_rank: 6
   status: active
-  apple_native_rule: Use content with a similar size in each segment wherever practicable.
+  apple_native_rule: Write text that describes each segment and uses title-style capitalization.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0017
+  title: Avoid using segmented controls on watchOS
+  category: components
+  topic: segmented-controls
+  subtopic: platform-considerations
+  statement:
+    en: Avoid using segmented controls on watchOS.
+    ja: watchOSでsegmented controlを使わない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components:
+      - segmented-controls
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSegmented controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid using segmented controls on watchOS.” in the documented Segmented controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+    page_title: Segmented controls
+    section_path:
+      - Segmented controls
+      - Platform considerations
+    retrieved_at: 2026-07-21T11:15:17.863Z
+    source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
+    source_sentence_hash: 21eab31707fe04c1fdf29260ea5ac1bacd4b165d2de91f4f0f2000a2af0a1b25
+    evidence_paraphrase: Avoid using segmented controls on watchOS.
+  tags:
+    - components
+    - segmented-controls
+    - platform-considerations
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid using segmented controls on watchOS.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0018
+  title: Provide a tooltip for every macOS segment when tooltips are used
+  category: components
+  topic: segmented-controls
+  subtopic: macos
+  statement:
+    en: If a macOS app includes tooltips, provide one for every segment in a segmented control.
+    ja: macOS appでtooltipを使う場合はsegmented controlの各segmentにtooltipを提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components:
+      - segmented-controls
+    modalities:
+      - pointer
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSegmented controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “If a macOS app includes tooltips, provide one for every segment in a segmented control.” in the documented Segmented controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+    page_title: Segmented controls
+    section_path:
+      - Segmented controls
+      - Platform considerations
+      - macOS
+    retrieved_at: 2026-07-21T11:15:17.863Z
+    source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
+    source_sentence_hash: ac799245cbdaf56561ab88eec69252a42c09a86494af69ef3218f383a9309bee
+    evidence_paraphrase: If a macOS app includes tooltips, provide one for every segment in a segmented control.
+  tags:
+    - components
+    - segmented-controls
+    - platform-considerations
+    - macos
+  priority_rank: 4
+  status: active
+  apple_native_rule: If a macOS app includes tooltips, provide one for every segment in a segmented control.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-SEGMENTED-CONTROLS-0019
+  title: Supply descriptive text for icon-segment tooltips in visionOS
+  category: components
+  topic: segmented-controls
+  subtopic: visionos
+  statement:
+    en: Supply descriptive text for the tooltip of each icon-based visionOS segment.
+    ja: visionOSのicon-based segmentごとにtooltip用のdescriptive textを提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components:
+      - segmented-controls
+    modalities:
+      - gaze
+  conditions:
+    - The system displays the tooltip when people look at the segmented control.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Segmented controls experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSegmented controlsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Supply descriptive text for the tooltip of each icon-based visionOS segment.” in the documented Segmented controls context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/segmented-controls
+    page_title: Segmented controls
+    section_path:
+      - Segmented controls
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T11:15:17.863Z
+    source_hash: 3b0536e59c659dde684fabc3fce5b2a1b6d848ef108cd4d79e53b6f5e05dd7d2
+    source_sentence_hash: b1147d18adb501f6d8a6d66459d581b5c13444a45592dbe19f4f3167491602c8
+    evidence_paraphrase: Supply descriptive text for the tooltip of each icon-based visionOS segment.
+  tags:
+    - components
+    - segmented-controls
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: Supply descriptive text for the tooltip of each icon-based visionOS segment.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-SHEETS-0001
   title: Display only one sheet at a time from the main interface

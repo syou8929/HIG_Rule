@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3442
+- Active atomic rules: 3449
 - Pages without rules: 16
-- Low-confidence rules: 171
-- Rules requiring human review: 171
+- Low-confidence rules: 165
+- Rules requiring human review: 165
 - Reference notes: 915
 
 ## Rules by category
 
-- components: 1073
+- components: 1080
 - foundations: 463
 - getting-started: 100
 - inputs: 245
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 464
+- AVOID: 465
 - MAY: 395
 - MUST: 492
 - MUST_NOT: 81
-- SHOULD: 2010
+- SHOULD: 2016
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2468
-- ipados: 2427
-- macos: 1985
-- tvos: 1553
-- visionos: 1966
-- watchos: 1681
+- ios: 2472
+- ipados: 2431
+- macos: 1990
+- tvos: 1557
+- visionos: 1971
+- watchos: 1682
 
 ## Rules by testability
 
 - hybrid: 112
-- manual: 3330
+- manual: 3337
 
 ## Blocked pages
 
@@ -69,12 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0004
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0005
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0012
 - HIG-COMPONENTS-SHEETS-0001
 - HIG-COMPONENTS-SHEETS-0002
 - HIG-COMPONENTS-SHEETS-0003
@@ -243,12 +237,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0004
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0005
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0012
 - HIG-COMPONENTS-SHEETS-0001
 - HIG-COMPONENTS-SHEETS-0002
 - HIG-COMPONENTS-SHEETS-0003
@@ -1082,11 +1070,11 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Platform considerations > visionOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Change log — Reviewed: the visionOS documentation update is not a separate product rule.
+- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Platform considerations — Reviewed: captured the watchOS platform limitation and all supported-platform sections.
+- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Platform considerations > visionOS — Reviewed: captured the icon-tooltip descriptive-text requirement and gaze-triggered system behavior.
+- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources > Related — Reviewed: the related Split views link contains no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Change log — Reviewed: the reorganization summary contains no additional current atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Platform considerations — Reviewed: macOS and watchOS guidance is represented by source-scoped rules; other platforms have no additional considerations.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources — Reviewed: resource navigation contains no additional atomic guidance.

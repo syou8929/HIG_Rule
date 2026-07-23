@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:37:01.930Z. 3442 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:43:21.679Z. 3449 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1924,18 +1924,25 @@ Generated 2026-07-23T18:37:01.930Z. 3442 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-SEARCH-FIELDS-0024 · SHOULD · high** — Keep iPadOS and macOS search placement useful as the window resizes. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
 ### segmented-controls
 
-- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0001 · SHOULD · low** — Choose or apply a segmented control to provide closely related choices that affect an object, state, or view in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
-- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0002 · MAY · low** — Evaluate whether a segmented control when it’s important to group functions together, or to clearly show their selection state is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
-- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0003 · SHOULD · low** — Maintain control types consistent within a single segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
-- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0004 · SHOULD · low** — Favor using either text or images — not a mix of both — in a single segmented control when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
-- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0005 · SHOULD · low** — Choose or apply nouns or noun phrases for segment labels in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0001 · SHOULD · high** — Use a segmented control for closely related choices that affect an object, state, or view. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0002 · MAY · high** — Consider a segmented control when persistent grouping or a clear selection state is important. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0003 · SHOULD · high** — Keep every segment's control type consistent within a segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0004 · SHOULD · high** — Prefer either text or images, not both, within one segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0005 · SHOULD · high** — Use nouns or noun phrases for segment labels. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0006 · MAY · high** — Consider a segmented control for switching between closely related iOS or iPadOS subviews. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0007 · MAY · high** — Consider introductory text when a macOS segmented control's purpose needs clarification. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0008 · SHOULD · high** — Use a tab view for switching views in the main macOS window area. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0009 · MAY · high** — Consider spring loading for a macOS segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0010 · MAY · high** — Consider a split view for tvOS content-filtering screens. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0011 · AVOID · high** — Avoid placing other focusable elements near a tvOS segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
-- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0012 · SHOULD · low** — Use content with a similar size in each segment wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0012 · SHOULD · high** — As much as possible, keep content similarly sized across segments. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0013 · SHOULD · high** — Limit the number of segments in a segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0014 · SHOULD · high** — In general, keep segment frame sizes consistent within a segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0015 · SHOULD · high** — To the extent possible, keep icon and title widths consistent across segments. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0016 · SHOULD · high** — Write text that describes each segment and uses title-style capitalization. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0017 · AVOID · high** — Avoid using segmented controls on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0018 · SHOULD · high** — If a macOS app includes tooltips, provide one for every segment in a segmented control. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- **HIG-COMPONENTS-SEGMENTED-CONTROLS-0019 · SHOULD · high** — Supply descriptive text for the tooltip of each icon-based visionOS segment. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 ### sheets
 
 - **HIG-COMPONENTS-SHEETS-0001 · SHOULD · low** — Present only one sheet at a time from the main interface in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))

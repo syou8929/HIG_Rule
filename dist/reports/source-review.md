@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3245
-- Reviewed batches: 185
+- Reviewed rules: 3258
+- Reviewed batches: 186
 - Official source only: yes
-- Reviewed at: 2026-07-23T21:40:00Z
+- Reviewed at: 2026-07-23T22:00:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -683,12 +683,25 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SEARCH-FIELDS-0022 · high — Activated the familiar toolbar placement and its split-view and detail-view uses. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
 - HIG-COMPONENTS-SEARCH-FIELDS-0023 · high — Recovered MAY and retained the iPad virtual-keyboard exception. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
 - HIG-COMPONENTS-SEARCH-FIELDS-0024 · high — Activated resizing guidance and recorded the compact iPadOS fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0001 · high — Retained the component-choice recommendation and recorded its selection and action contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0002 · high — Restored the complete Consider meaning and retained it at MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0003 · high — Recorded both inverse consistency failures without elevating the Don't clauses to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0004 · high — Retained Prefer at SHOULD and recorded the mixed-content usability risk. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0005 · high — Retained the label-grammar recommendation and recorded the introductory-text exception. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0006 · high — Preserved the optional strength and distinguished related subviews from separate app sections. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
-- HIG-COMPONENTS-SEGMENTED-CONTROLS-0007 · high — Recorded the icon-label and per-segment tooltip guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0007 · high — Recorded the optional icon-label guidance; the conditional per-segment tooltip action is now atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0008 · high — Recorded the toolbar and inspector exception to the main-window tab-view guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0009 · high — Recorded the drag, force-click, and continued-drag interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0010 · high — Recorded the navigation benefit and placement-dependent accessibility concern. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0011 · high — Recorded focus-driven selection and the accidental-focus risk. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0012 · high — Retained the source qualification and distinguished content size from segment-frame size. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0013 · high — Recovered the omitted lead and preserved both approximate, platform-sensitive targets at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0014 · high — Recovered the general frame-size guidance and distinguished it from content sizing. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0015 · high — Recovered the qualified supporting recommendation as a separate content-width rule. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0016 · high — Recovered the omitted label-description and capitalization guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0017 · high — Recovered the explicit unsupported-platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0018 · high — Separated the conditional per-segment tooltip action from optional introductory text. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0019 · high — Recovered the app-supplied descriptive-text dependency without raising descriptive source language to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SHEETS-0004 · high — Recorded the drag, tap, detent, and VoiceOver functions. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0005 · high — Recorded the expected gesture and unsaved-changes confirmation path. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0006 · high — Recorded the default sizing, centering, and consistency rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
