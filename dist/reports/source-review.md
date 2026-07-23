@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3258
-- Reviewed batches: 186
+- Reviewed rules: 3273
+- Reviewed batches: 187
 - Official source only: yes
-- Reviewed at: 2026-07-23T22:00:00Z
+- Reviewed at: 2026-07-23T22:20:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -702,6 +702,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0017 · high — Recovered the explicit unsupported-platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0018 · high — Separated the conditional per-segment tooltip action from optional introductory text. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0019 · high — Recovered the app-supplied descriptive-text dependency without raising descriptive source language to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SHEETS-0001 · high — Retained the one-sheet recommendation and recorded the nested-sheet replacement sequence. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0002 · high — Restored the complete component-choice intent and all supported-platform alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0003 · high — Retained the general alternative-exit recommendation separately from the explicit pairing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0004 · high — Recorded the drag, tap, detent, and VoiceOver functions. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0005 · high — Recorded the expected gesture and unsaved-changes confirmation path. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0006 · high — Recorded the default sizing, centering, and consistency rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
@@ -712,6 +715,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SHEETS-0011 · high — Repaired the generated grammar and recorded the task and navigation constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0012 · high — Recovered the Present lead and recorded the optional resizing case. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0013 · high — Recovered the Present lead and recorded the coverage limit and resizing option. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0014 · high — Repaired the generated wording and preserved the platform-specific alternatives at MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0015 · high — Recovered the conditional Always requirement as an atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0016 · high — Recovered the explicit three-button avoidance separately from the positive pairing rule. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0017 · high — Recovered the current single-view platform placement. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0018 · high — Recovered the conditional single-view Done placement. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0019 · high — Recovered the first-step Cancel placement and Back-absence condition. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0020 · high — Recovered placement and state as one source-sentence contract. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0021 · high — Recovered the subsequent-step button replacement. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0022 · high — Recovered the final-step activation and completion meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0023 · high — Recovered the embedded Consider guidance and narrowed its scope to iPhone. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0024 · high — Recovered the conditional label-replacement preference. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SHEETS-0025 · high — Recovered the misleading-label avoidance and its dismissal-discoverability risk. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SIDEBARS-0004 · high — Recorded the content-space rationale and convertible-sidebar fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0005 · high — Recorded the window-size condition and content-space purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0006 · high — Recorded the window-position visibility risk. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))

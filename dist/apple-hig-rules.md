@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:43:21.679Z. 3449 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:49:39.602Z. 3460 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1945,20 +1945,31 @@ Generated 2026-07-23T18:43:21.679Z. 3449 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-SEGMENTED-CONTROLS-0019 · SHOULD · high** — Supply descriptive text for the tooltip of each icon-based visionOS segment. ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
 ### sheets
 
-- **HIG-COMPONENTS-SHEETS-0001 · SHOULD · low** — Present only one sheet at a time from the main interface in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
-- **HIG-COMPONENTS-SHEETS-0002 · SHOULD · low** — Choose or apply a nonmodal view when you want to present supplementary items that affect the main task in the parent in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
-- **HIG-COMPONENTS-SHEETS-0003 · SHOULD · low** — Make an alternative to the Done button available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0001 · SHOULD · high** — Display only one sheet at a time from the main interface. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0002 · SHOULD · high** — Use a nonmodal view for supplementary items that affect the main task in the parent view. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0003 · SHOULD · high** — Provide an alternative to the Done button in a sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0004 · SHOULD · high** — Include a grabber in a resizable iOS or iPadOS sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0005 · SHOULD · high** — Support vertical swipe dismissal for iOS and iPadOS sheets. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0006 · SHOULD · high** — Prefer page-sheet or form-sheet presentation styles in iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
-- **HIG-COMPONENTS-SHEETS-0007 · SHOULD · high** — Let people use other macOS app windows without dismissing the current sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0007 · MUST · high** — Let people use other macOS app windows without dismissing the current sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0008 · SHOULD · high** — Use a macOS panel for repeated input-and-result workflows. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0009 · AVOID · high** — Avoid sheets that emerge from the bottom of a visionOS window. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0010 · SHOULD · high** — Use a watchOS sheet only for modal tasks needing a custom title or content. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0011 · SHOULD · high** — Keep watchOS sheet interactions brief and occasional. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0012 · SHOULD · high** — Present a macOS sheet at a reasonable default size for its content. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - **HIG-COMPONENTS-SHEETS-0013 · SHOULD · high** — Present a visionOS sheet at a default size that preserves context. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
-- **HIG-COMPONENTS-SHEETS-0014 · MAY · low** — When complex or prolonged user flows, consider alternatives to sheets. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0014 · MAY · high** — For a complex or prolonged flow, consider an alternative to a sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0015 · MUST · high** — When a sheet provides a Done button, always pair it with either Cancel or Back. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0016 · AVOID · high** — Avoid showing Cancel, Done, and Back together in one sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0017 · SHOULD · high** — Place Cancel on the leading edge of the top toolbar in a single-view iOS or iPadOS sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0018 · SHOULD · high** — When present, place Done on the trailing edge of a single-view iOS or iPadOS sheet's top toolbar. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0019 · SHOULD · high** — On the first step of a multistep iOS or iPadOS sheet, place Cancel on the leading edge when Back is absent. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0020 · SHOULD · high** — When present on the first step of a multistep iOS or iPadOS sheet, place Done on the trailing edge and keep it inactive. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0021 · SHOULD · high** — On subsequent steps of a multistep iOS or iPadOS sheet, replace Cancel with Back. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0022 · SHOULD · high** — On the final confirmation step of a multistep iOS or iPadOS sheet, make Done active. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0023 · MAY · high** — Consider the medium detent for progressive disclosure in an iPhone sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0024 · SHOULD · high** — If changing a watchOS sheet's default label, prefer an SF Symbol that represents the action. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- **HIG-COMPONENTS-SHEETS-0025 · AVOID · high** — Avoid a watchOS sheet label that implies hierarchical navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 ### sidebars
 
 - **HIG-COMPONENTS-SIDEBARS-0001 · MAY · low** — Evaluate whether using familiar symbols to represent items in the sidebar is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))

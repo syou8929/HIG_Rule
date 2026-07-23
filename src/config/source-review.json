@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T22:00:00Z",
+  "reviewed_at": "2026-07-23T22:20:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5019,6 +5019,37 @@
         "HIG-COMPONENTS-SEGMENTED-CONTROLS-0019"
       ],
       "review_note": "Completed Segmented controls coverage, preserved the six previously reviewed platform IDs, recovered seven atomic size, writing, platform, tooltip, and gaze clauses, and kept all qualified language below MUST."
+    },
+    {
+      "id": "priority-6-sheets-complete-context-2026-07-24",
+      "reviewed_at": "2026-07-23T22:20:00Z",
+      "review_method": "Rendered Apple HIG Sheets anatomy, complete best-practice, platform, iOS and iPadOS, macOS, visionOS, watchOS, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+          "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-SHEETS-0001",
+        "HIG-COMPONENTS-SHEETS-0002",
+        "HIG-COMPONENTS-SHEETS-0003",
+        "HIG-COMPONENTS-SHEETS-0014",
+        "HIG-COMPONENTS-SHEETS-0015",
+        "HIG-COMPONENTS-SHEETS-0016",
+        "HIG-COMPONENTS-SHEETS-0017",
+        "HIG-COMPONENTS-SHEETS-0018",
+        "HIG-COMPONENTS-SHEETS-0019",
+        "HIG-COMPONENTS-SHEETS-0020",
+        "HIG-COMPONENTS-SHEETS-0021",
+        "HIG-COMPONENTS-SHEETS-0022",
+        "HIG-COMPONENTS-SHEETS-0023",
+        "HIG-COMPONENTS-SHEETS-0024",
+        "HIG-COMPONENTS-SHEETS-0025"
+      ],
+      "review_note": "Completed Sheets coverage, preserved all fourteen existing IDs, recovered eleven atomic button, placement, detent, and watchOS-label rules, and raised only the explicit Always and Make sure outcomes to MUST."
     }
   ],
   "rules": {
@@ -31482,6 +31513,115 @@
       "scope": {"portability": "apple-component-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": ["segmented-controls"], "modalities": ["gaze"]},
       "conditions": ["The system displays the tooltip when people look at the segmented control."],
       "review_note": "Recovered the app-supplied descriptive-text dependency without raising descriptive source language to MUST."
+    },
+    "HIG-COMPONENTS-SHEETS-0001": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "d7840d38c5245725bb6bd44ee0f310e4e0d3f4b10dd920e3fcdc778110d60db0", "section_path": ["Sheets", "Best practices"]},
+      "statement": {"en": "Display only one sheet at a time from the main interface.", "ja": "main interfaceから同時に表示するsheetは1つだけにする。"},
+      "conditions": ["Closing a sheet should return people to its parent view or window.", "Before an action in one sheet presents another, close the first sheet.", "When necessary, the first sheet can reappear after the second is dismissed."],
+      "review_note": "Retained the one-sheet recommendation and recorded the nested-sheet replacement sequence."
+    },
+    "HIG-COMPONENTS-SHEETS-0002": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "ea4132d9c4342c6103da42f0dbb7d8cac627af75a2a188b14efd2c9ca05eaa75", "section_path": ["Sheets", "Best practices"]},
+      "title": "Use a nonmodal view for supplementary items that affect the parent task",
+      "statement": {"en": "Use a nonmodal view for supplementary items that affect the main task in the parent view.", "ja": "parent viewのmain taskに影響するsupplementary itemにはnonmodal viewを使う。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-vision-pro"], "components": ["sheets"], "modalities": []},
+      "conditions": ["Consider a split view in visionOS.", "Consider a panel in macOS.", "A nonmodal sheet can provide this workflow in iOS and iPadOS."],
+      "review_note": "Restored the complete component-choice intent and all supported-platform alternatives."
+    },
+    "HIG-COMPONENTS-SHEETS-0003": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "878b9ffc916e639164c16ea7b51ea5addeab2d56b5c112a7f2e2e4df8e89fbf0", "section_path": ["Sheets", "Best practices"]},
+      "statement": {"en": "Provide an alternative to the Done button in a sheet.", "ja": "sheetのDone buttonに代わるexit actionを提供する。"},
+      "conditions": ["Cancel or Close dismisses without saving changes.", "Back moves to a previous step or parent hierarchy and doesn't dismiss the sheet.", "The separate pairing rule records the conditional Always requirement."],
+      "review_note": "Retained the general alternative-exit recommendation separately from the explicit pairing requirement."
+    },
+    "HIG-COMPONENTS-SHEETS-0014": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "5629773af3bbc0ae57bf2f004864da6115340b2567a336a67a6eadba935df7e7", "section_path": ["Sheets", "Best practices"]},
+      "title": "Consider alternatives to sheets for complex or prolonged flows",
+      "statement": {"en": "For a complex or prolonged flow, consider an alternative to a sheet.", "ja": "複雑または長時間のflowにはsheet以外の手段を検討する。"},
+      "conditions": ["Consider a full-screen modal view in iOS or iPadOS.", "Consider a new window or full-screen mode in macOS.", "Consider a Full Space in visionOS."],
+      "review_note": "Repaired the generated wording and preserved the platform-specific alternatives at MAY."
+    },
+    "HIG-COMPONENTS-SHEETS-0015": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "5c5b0620f77eecca236b381d39bea0a612f7b0b56f3d53b634b2e5de3eb0dd47", "section_path": ["Sheets", "Best practices"]},
+      "title": "Always pair Done with Cancel or Back",
+      "statement": {"en": "When a sheet provides a Done button, always pair it with either Cancel or Back.", "ja": "sheetにDone buttonを設ける場合は、必ずCancelまたはBackと組み合わせる。"},
+      "conditions": ["Cancel provides dismissal without confirming or saving changes.", "Back provides navigation to a previous step."],
+      "review_note": "Recovered the conditional Always requirement as an atomic MUST."
+    },
+    "HIG-COMPONENTS-SHEETS-0016": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "34f2a3469b7521554ae3ded4673ac767c3868fe44124eec091f9e3d9580441ce", "section_path": ["Sheets", "Best practices"]},
+      "statement": {"en": "Avoid showing Cancel, Done, and Back together in one sheet.", "ja": "1つのsheetでCancel、Done、Backを同時に表示しない。"},
+      "review_note": "Recovered the explicit three-button avoidance separately from the positive pairing rule."
+    },
+    "HIG-COMPONENTS-SHEETS-0017": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "560b80830b7eea1849f910e1f36188628453e907b8bd119d83e7e664ab79dbdb", "section_path": ["Sheets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Place single-view Cancel on the leading toolbar edge",
+      "statement": {"en": "Place Cancel on the leading edge of the top toolbar in a single-view iOS or iPadOS sheet.", "ja": "single-viewのiOSまたはiPadOS sheetではCancelをtop toolbarのleading edgeに置く。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["sheets"], "modalities": []},
+      "review_note": "Recovered the current single-view platform placement."
+    },
+    "HIG-COMPONENTS-SHEETS-0018": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "77360fbee6b73d3b7a31f5d2de4a52e73057cbd6e167472f56c727660eafbebf", "section_path": ["Sheets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Place single-view Done on the trailing toolbar edge",
+      "statement": {"en": "When present, place Done on the trailing edge of a single-view iOS or iPadOS sheet's top toolbar.", "ja": "single-viewのiOSまたはiPadOS sheetでDoneを表示する場合はtop toolbarのtrailing edgeに置く。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["sheets"], "modalities": []},
+      "review_note": "Recovered the conditional single-view Done placement."
+    },
+    "HIG-COMPONENTS-SHEETS-0019": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "d4664c2024e00e21f5e6e80f76541508cfccdbc2b14be33231a91505e0981c99", "section_path": ["Sheets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Place first-step Cancel on the leading edge",
+      "statement": {"en": "On the first step of a multistep iOS or iPadOS sheet, place Cancel on the leading edge when Back is absent.", "ja": "multistepのiOSまたはiPadOS sheetの最初のstepではBackがないためCancelをleading edgeに置く。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["sheets"], "modalities": []},
+      "review_note": "Recovered the first-step Cancel placement and Back-absence condition."
+    },
+    "HIG-COMPONENTS-SHEETS-0020": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "73f7bde5357e25d1f3e44c09b8e487c1774fcca04df32e46d974629f234dcbc1", "section_path": ["Sheets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Keep first-step Done trailing and inactive",
+      "statement": {"en": "When present on the first step of a multistep iOS or iPadOS sheet, place Done on the trailing edge and keep it inactive.", "ja": "multistepのiOSまたはiPadOS sheetの最初のstepでDoneを表示する場合はtrailing edgeに置き、inactiveにする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["sheets"], "modalities": []},
+      "conditions": ["The inactive state communicates that the task isn't complete."],
+      "review_note": "Recovered placement and state as one source-sentence contract."
+    },
+    "HIG-COMPONENTS-SHEETS-0021": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "7fc4af19bcbb19a10b622a47802743abd9d6bfb80320e890e6065b5479a57122", "section_path": ["Sheets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Replace Cancel with Back on subsequent steps",
+      "statement": {"en": "On subsequent steps of a multistep iOS or iPadOS sheet, replace Cancel with Back.", "ja": "multistepのiOSまたはiPadOS sheetの2step目以降ではCancelをBackに置き換える。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["sheets"], "modalities": []},
+      "conditions": ["Back lets people navigate to the previous step."],
+      "review_note": "Recovered the subsequent-step button replacement."
+    },
+    "HIG-COMPONENTS-SHEETS-0022": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "d5c2f3c747cab914fe20a6b08218d7a2579018943ada9a4b2d6531c071ad160d", "section_path": ["Sheets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Activate Done on the final confirmation step",
+      "statement": {"en": "On the final confirmation step of a multistep iOS or iPadOS sheet, make Done active.", "ja": "multistepのiOSまたはiPadOS sheetの最終confirmation stepではDoneをactiveにする。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["sheets"], "modalities": []},
+      "conditions": ["Done acknowledges task completion and dismisses the sheet."],
+      "review_note": "Recovered the final-step activation and completion meaning."
+    },
+    "HIG-COMPONENTS-SHEETS-0023": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "8c045e19de660a2de3a5f8adef0b226c0b781e58c9e81fb226c06fc5409df58d", "section_path": ["Sheets", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Consider the medium detent for progressive disclosure on iPhone",
+      "statement": {"en": "Consider the medium detent for progressive disclosure in an iPhone sheet.", "ja": "iPhone sheetでprogressive disclosureを行う場合はmedium detentを検討する。"},
+      "normative_level": "MAY",
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["sheets"], "modalities": []},
+      "conditions": ["The medium detent can show the most relevant items without resizing."],
+      "exceptions": ["Avoid the medium detent when the content is more useful at full height."],
+      "review_note": "Recovered the embedded Consider guidance and narrowed its scope to iPhone."
+    },
+    "HIG-COMPONENTS-SHEETS-0024": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "bf718ab8fce9d41496b9b7bc5283e25cb38bb439986f4eef3de8b006e8a34bfc", "section_path": ["Sheets", "Platform considerations", "watchOS"]},
+      "title": "Prefer SF Symbols for a changed watchOS sheet label",
+      "statement": {"en": "If changing a watchOS sheet's default label, prefer an SF Symbol that represents the action.", "ja": "watchOS sheetのdefault labelを変更する場合はactionを表すSF Symbolを優先する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["sheets"], "modalities": []},
+      "review_note": "Recovered the conditional label-replacement preference."
+    },
+    "HIG-COMPONENTS-SHEETS-0025": {
+      "source": {"source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3", "source_sentence_hash": "aa3b849115d90399a56f8bd792425c34a0c3c2afda4aac303b98df89ee4014fc", "section_path": ["Sheets", "Platform considerations", "watchOS"]},
+      "title": "Avoid hierarchical-looking watchOS sheet labels",
+      "statement": {"en": "Avoid a watchOS sheet label that implies hierarchical navigation.", "ja": "hierarchical navigationを示すようなwatchOS sheet labelを避ける。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["sheets"], "modalities": []},
+      "conditions": ["A top-leading label that looks like a page or app title can obscure how to dismiss the sheet."],
+      "review_note": "Recovered the misleading-label avoidance and its dismissal-discoverability risk."
     }
   }
 }

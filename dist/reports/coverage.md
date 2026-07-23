@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3449
+- Active atomic rules: 3460
 - Pages without rules: 16
-- Low-confidence rules: 165
-- Rules requiring human review: 165
+- Low-confidence rules: 161
+- Rules requiring human review: 161
 - Reference notes: 915
 
 ## Rules by category
 
-- components: 1080
+- components: 1091
 - foundations: 463
 - getting-started: 100
 - inputs: 245
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 465
-- MAY: 395
-- MUST: 492
+- AVOID: 467
+- MAY: 396
+- MUST: 494
 - MUST_NOT: 81
-- SHOULD: 2016
+- SHOULD: 2022
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2472
-- ipados: 2431
-- macos: 1990
-- tvos: 1557
-- visionos: 1971
-- watchos: 1682
+- ios: 2481
+- ipados: 2439
+- macos: 1992
+- tvos: 1558
+- visionos: 1973
+- watchos: 1685
 
 ## Rules by testability
 
 - hybrid: 112
-- manual: 3337
+- manual: 3348
 
 ## Blocked pages
 
@@ -69,10 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-SHEETS-0001
-- HIG-COMPONENTS-SHEETS-0002
-- HIG-COMPONENTS-SHEETS-0003
-- HIG-COMPONENTS-SHEETS-0014
 - HIG-COMPONENTS-SIDEBARS-0001
 - HIG-COMPONENTS-SIDEBARS-0002
 - HIG-COMPONENTS-SIDEBARS-0008
@@ -237,10 +233,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-SHEETS-0001
-- HIG-COMPONENTS-SHEETS-0002
-- HIG-COMPONENTS-SHEETS-0003
-- HIG-COMPONENTS-SHEETS-0014
 - HIG-COMPONENTS-SIDEBARS-0001
 - HIG-COMPONENTS-SIDEBARS-0002
 - HIG-COMPONENTS-SIDEBARS-0008
@@ -1091,11 +1083,11 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Anatomy — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Anatomy — Reviewed: recorded modal behavior and Cancel, Done, and Back semantics as context for the best-practice rules.
+- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Change log — Reviewed: the 2026 button-placement update is represented by current platform rules; other entries are documentation history.
+- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Platform considerations — Reviewed: captured current button placement, resizing, modality, window, spatial, and watchOS constraints.
+- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Resources > Related — Reviewed: related component links contain no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
