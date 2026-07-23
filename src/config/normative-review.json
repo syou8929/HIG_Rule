@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T11:44:16Z",
+  "reviewed_at": "2026-07-23T11:56:58Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 396,
+  "reviewed_rule_count": 397,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -3070,6 +3070,14 @@
       "polarity": "require", "severity": "error",
       "conditions": ["Apply when a modal task temporarily replaces the main window's toolbar controls."],
       "review_note": "Split the exit-state requirement from the optional modal-control recommendation and retained MUST from Be sure."
+    },
+    "HIG-PATTERNS-WORKOUTS-0010": {
+      "title": "Ensure clear workout start and stop feedback",
+      "statement": {"en": "Ensure clear feedback indicates when a workout session starts or stops.", "ja": "workout sessionの開始または停止をclear feedbackで示す。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply the feedback to both session-start and session-stop transitions."],
+      "review_note": "Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability."
     }
   },
   "additional_rules": [

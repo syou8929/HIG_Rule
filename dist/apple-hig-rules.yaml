@@ -139374,16 +139374,16 @@
   apple_native_rule: Support Command-Z for undo and Shift-Command-Z for redo on macOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-WORKOUTS-0001
-  title: Avoid distracting people from a workout with information that’s not relevant
+  title: Avoid irrelevant information during active workouts
   category: patterns
   topic: workouts
   subtopic: best-practices
   statement:
-    en: Exclude distracting people from a workout with information that’s not relevant from the applicable experience.
-    ja: 該当する体験ではdistracting people from a workout with information that’s not relevantを避ける。
+    en: Avoid showing information that is unrelated to the active workout.
+    ja: 進行中のworkoutに関係しないinformationを表示しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -139399,7 +139399,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep workout selection and unrelated app areas out of the active-session flow.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
@@ -139407,7 +139407,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude distracting people from a workout with information that’s not relevant from the applicable experience.” in the documented Workouts context?
+      - Does the design satisfy “Avoid showing information that is unrelated to the active workout.” in the documented Workouts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -139419,29 +139419,29 @@
     section_path:
       - Workouts
       - Best practices
-    retrieved_at: 2026-07-21T11:15:31.253Z
+    retrieved_at: 2026-07-23T11:56:58Z
     source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
-    source_sentence_hash: 13a0321f29ec4f8d0a0a504170734d66b9e22cd3ecb34af4005782ae9bf7e9b3
-    evidence_paraphrase: Exclude distracting people from a workout with information that’s not relevant from the applicable experience.
+    source_sentence_hash: 4c314f2784790827a07b7d0e7200c9eab4295d0eee68e58470f211cdf1af3aa9
+    evidence_paraphrase: Avoid showing information that is unrelated to the active workout.
   tags:
     - patterns
     - workouts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude distracting people from a workout with information that’s not relevant from the applicable experience.
+  apple_native_rule: Avoid showing information that is unrelated to the active workout.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-WORKOUTS-0002
-  title: Use a distinct visual appearance to indicate an active workout
+  title: Give active workouts a distinct visual appearance
   category: patterns
   topic: workouts
   subtopic: best-practices
   statement:
-    en: Choose or apply a distinct visual appearance to indicate an active workout in the documented context.
-    ja: 該当する状況ではa distinct visual appearance to indicate an active workoutを採用する。
+    en: Give an active workout a distinct visual appearance.
+    ja: active workoutにdistinctなvisual appearanceを与える。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -139457,15 +139457,16 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - Help people recognize an active session at a glance.
+  exceptions:
+    - Updating metrics and a unique metrics layout are documented techniques, not mandatory implementations.
   rationale:
     en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply a distinct visual appearance to indicate an active workout in the documented context.” in the documented Workouts context?
+      - Does the design satisfy “Give an active workout a distinct visual appearance.” in the documented Workouts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -139477,29 +139478,29 @@
     section_path:
       - Workouts
       - Best practices
-    retrieved_at: 2026-07-21T11:15:31.253Z
+    retrieved_at: 2026-07-23T11:56:58Z
     source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
-    source_sentence_hash: 30960507f5a1b54781a7f4701027e694889142c85cff326af85bae7b5475ef73
-    evidence_paraphrase: Choose or apply a distinct visual appearance to indicate an active workout in the documented context.
+    source_sentence_hash: 3625604506ede4935faf3894ce6658476849d95a03e1681d0ad5bc50119603b1
+    evidence_paraphrase: Give an active workout a distinct visual appearance.
   tags:
     - patterns
     - workouts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply a distinct visual appearance to indicate an active workout in the documented context.
+  apple_native_rule: Give an active workout a distinct visual appearance.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-WORKOUTS-0003
-  title: Provide workout controls that are easy to find and tap
+  title: Make workout controls easy to find and tap
   category: patterns
   topic: workouts
   subtopic: best-practices
   statement:
-    en: Make workout controls that are easy to find and tap available when applicable.
-    ja: 必要な場合にworkout controls that are easy to find and tapを利用可能にする。
+    en: Make workout controls easy to find and tap.
+    ja: workout controlを見つけやすくtapしやすくする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -139516,7 +139517,7 @@
     modalities:
       - touch
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Make pausing, resuming, and stopping a workout easy.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
@@ -139524,7 +139525,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make workout controls that are easy to find and tap available when applicable.” in the documented Workouts context?
+      - Does the design satisfy “Make workout controls easy to find and tap.” in the documented Workouts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -139536,10 +139537,10 @@
     section_path:
       - Workouts
       - Best practices
-    retrieved_at: 2026-07-21T11:15:31.253Z
+    retrieved_at: 2026-07-23T11:56:58Z
     source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
-    source_sentence_hash: 2ee113ee8f5168bdb7f0ee82c67dd71fdcdb73ba47a7a5f86901023d8b96e10b
-    evidence_paraphrase: Make workout controls that are easy to find and tap available when applicable.
+    source_sentence_hash: 785af1a4f9d507ff7350f659eb05aeb6b36db6e01848e2522c2efefbbfcc72c8
+    evidence_paraphrase: Make workout controls easy to find and tap.
   tags:
     - patterns
     - workouts
@@ -139547,19 +139548,19 @@
     - touch
   priority_rank: 6
   status: active
-  apple_native_rule: Make workout controls that are easy to find and tap available when applicable.
+  apple_native_rule: Make workout controls easy to find and tap.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-WORKOUTS-0004
-  title: Help people understand the health information your app records if sensor data is unavailable during a workout
+  title: Explain recorded health data when sensors are unavailable
   category: patterns
   topic: workouts
   subtopic: best-practices
   statement:
-    en: Apply the documented Workouts guidance to help people understand the health information your app records if sensor data is unavailable during a workout.
-    ja: 「Workouts」において「Help people understand the health information your app records if sensor data is unavailable during a workout」の指針を適用する。
+    en: When workout sensors are unavailable, explain which health information the app can still record.
+    ja: workout sensorを利用できない場合もappが記録できるhealth informationを説明する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -139575,7 +139576,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Account for situations such as water preventing heart-rate measurements while other workout data remains available.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
@@ -139583,7 +139584,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Workouts guidance to help people understand the health information your app records if sensor data is unavailable during a workout.” in the documented Workouts context?
+      - Does the design satisfy “When workout sensors are unavailable, explain which health information the app can still record.” in the documented Workouts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -139595,29 +139596,29 @@
     section_path:
       - Workouts
       - Best practices
-    retrieved_at: 2026-07-21T11:15:31.253Z
+    retrieved_at: 2026-07-23T11:56:58Z
     source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
-    source_sentence_hash: c7f5b28dc403da89b81b95a008ede230727a5c792b8d6c4087d6a73aed3ec603
-    evidence_paraphrase: Apply the documented Workouts guidance to help people understand the health information your app records if sensor data is unavailable during a workout.
+    source_sentence_hash: 5ffd8065f7021a3ef0ab282624c7bc3054ae350b7123a908e6dab3ac8e43bd52
+    evidence_paraphrase: When workout sensors are unavailable, explain which health information the app can still record.
   tags:
     - patterns
     - workouts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Workouts guidance to help people understand the health information your app records if sensor data is unavailable during a workout.
+  apple_native_rule: When workout sensors are unavailable, explain which health information the app can still record.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-WORKOUTS-0005
-  title: Provide a summary at the end of a session
+  title: Provide an end-of-workout summary
   category: patterns
   topic: workouts
   subtopic: best-practices
   statement:
-    en: Make a summary at the end of a session available when applicable.
-    ja: 必要な場合にa summary at the end of a sessionを利用可能にする。
+    en: Provide a summary when a workout session ends.
+    ja: workout session終了時にsummaryを提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -139633,7 +139634,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Confirm that the workout finished and display its recorded information.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
@@ -139641,7 +139642,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make a summary at the end of a session available when applicable.” in the documented Workouts context?
+      - Does the design satisfy “Provide a summary when a workout session ends.” in the documented Workouts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -139653,28 +139654,28 @@
     section_path:
       - Workouts
       - Best practices
-    retrieved_at: 2026-07-21T11:15:31.253Z
+    retrieved_at: 2026-07-23T11:56:58Z
     source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
-    source_sentence_hash: 6912f883d8e4cac1943aa76387c2e756e9b561506d1bf8022d6d9aec82092acc
-    evidence_paraphrase: Make a summary at the end of a session available when applicable.
+    source_sentence_hash: 842d9ea0e1129f3c116933e22aa6c919c7bd21011695f8ea7dcbb781b6c350e4
+    evidence_paraphrase: Provide a summary when a workout session ends.
   tags:
     - patterns
     - workouts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Make a summary at the end of a session available when applicable.
+  apple_native_rule: Provide a summary when a workout session ends.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-WORKOUTS-0006
-  title: Make sure text is legible for when people are in motion
+  title: Ensure workout text remains legible during movement
   category: patterns
   topic: workouts
   subtopic: best-practices
   statement:
-    en: Verify that text is legible for when people are in motion.
-    ja: text is legible for when people are in motionを満たしていることを確認する。
+    en: Ensure workout text remains legible while people are moving.
+    ja: 利用者が動いている間もworkout textをlegibleに保つ。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -139691,7 +139692,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Apply when a workout session requires movement.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
@@ -139699,7 +139700,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that text is legible for when people are in motion.” in the documented Workouts context?
+      - Does the design satisfy “Ensure workout text remains legible while people are moving.” in the documented Workouts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -139711,29 +139712,29 @@
     section_path:
       - Workouts
       - Best practices
-    retrieved_at: 2026-07-21T11:15:31.253Z
+    retrieved_at: 2026-07-23T11:56:58Z
     source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
-    source_sentence_hash: 28b4d525ae49da0eedb3e6aad41efe5bebf33f06617b8652e4d703988bbdff48
-    evidence_paraphrase: Verify that text is legible for when people are in motion.
+    source_sentence_hash: 731876b75ef831fc071011e5ae26b89ac6cdaa64e0f59180353d0729f08749db
+    evidence_paraphrase: Ensure workout text remains legible while people are moving.
   tags:
     - patterns
     - workouts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Verify that text is legible for when people are in motion.
+  apple_native_rule: Ensure workout text remains legible while people are moving.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-WORKOUTS-0007
-  title: Use Activity rings correctly
+  title: Use Activity rings only for their documented purpose
   category: patterns
   topic: workouts
   subtopic: best-practices
   statement:
-    en: Choose or apply activity rings correctly in the documented context.
-    ja: 該当する状況ではActivity rings correctlyを採用する。
+    en: Use Activity rings only for their documented purpose.
+    ja: Activity ringsをdocumented purposeにだけ使用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -139749,7 +139750,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Preserve the colors and meanings defined by the Activity app and related Activity rings guidance.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
@@ -139757,7 +139758,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply activity rings correctly in the documented context.” in the documented Workouts context?
+      - Does the design satisfy “Use Activity rings only for their documented purpose.” in the documented Workouts context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -139769,17 +139770,528 @@
     section_path:
       - Workouts
       - Best practices
-    retrieved_at: 2026-07-21T11:15:31.253Z
+    retrieved_at: 2026-07-23T11:56:58Z
     source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
-    source_sentence_hash: 5cc4a7350fdb230bd16c5ec538f2a1fe3461667c6c2bea9e9dc9c2daf8f210c7
-    evidence_paraphrase: Choose or apply activity rings correctly in the documented context.
+    source_sentence_hash: c3c630e016e9b48aeab5afc0fc5d880abacefa03a51c71580174055c2574bb97
+    evidence_paraphrase: Use Activity rings only for their documented purpose.
   tags:
     - patterns
     - workouts
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply activity rings correctly in the documented context.
+  apple_native_rule: Use Activity rings only for their documented purpose.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0008
+  title: Use workout sessions in watchOS fitness apps
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: Use workout sessions to provide useful data and relevant controls in a watchOS fitness app.
+    ja: watchOS fitness appではworkout sessionでuseful dataとrelevant controlを提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The app offers an active fitness experience on Apple Watch.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use workout sessions to provide useful data and relevant controls in a watchOS fitness app.” in the documented Workouts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 76e4a5fd75e218a289b65f09b5ddbad7cee2a072d6f0c0455e5231c7e2431933
+    evidence_paraphrase: Use workout sessions to provide useful data and relevant controls in a watchOS fitness app.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use workout sessions to provide useful data and relevant controls in a watchOS fitness app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0009
+  title: Prioritize useful watchOS workout data
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: Prioritize the workout data people are most likely to care about in active watchOS sessions.
+    ja: activeなwatchOS sessionでは利用者が最も重視するworkout dataを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Useful examples include time, calories, distance, and relevant lap or interval controls.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prioritize the workout data people are most likely to care about in active watchOS sessions.” in the documented Workouts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 76e4a5fd75e218a289b65f09b5ddbad7cee2a072d6f0c0455e5231c7e2431933
+    evidence_paraphrase: Prioritize the workout data people are most likely to care about in active watchOS sessions.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: Prioritize the workout data people are most likely to care about in active watchOS sessions.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0010
+  title: Ensure clear workout start and stop feedback
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: Ensure clear feedback indicates when a workout session starts or stops.
+    ja: workout sessionの開始または停止をclear feedbackで示す。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply the feedback to both session-start and session-stop transitions.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure clear feedback indicates when a workout session starts or stops.” in the documented Workouts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 785af1a4f9d507ff7350f659eb05aeb6b36db6e01848e2522c2efefbbfcc72c8
+    evidence_paraphrase: Ensure clear feedback indicates when a workout session starts or stops.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure clear feedback indicates when a workout session starts or stops.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0011
+  title: Match system wording for unavailable swim sensor data
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: For Swimming or Other workouts, use system-like wording to explain unavailable sensor data.
+    ja: SwimmingまたはOther workoutでは利用できないsensor dataをsystemに近いwordingで説明する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - watchos
+    devices:
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The watchOS app supports the Swimming or Other workout type.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “For Swimming or Other workouts, use system-like wording to explain unavailable sensor data.” in the documented Workouts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 5ffd8065f7021a3ef0ab282624c7bc3054ae350b7123a908e6dab3ac8e43bd52
+    evidence_paraphrase: For Swimming or Other workouts, use system-like wording to explain unavailable sensor data.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 4
+  status: active
+  apple_native_rule: For Swimming or Other workouts, use system-like wording to explain unavailable sensor data.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0012
+  title: Consider Activity rings in workout summaries
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: Consider including Activity rings in an end-of-workout summary.
+    ja: workout終了時のsummaryにActivity ringsを含めることを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Use rings to help people check their current activity progress.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider including Activity rings in an end-of-workout summary.” in the documented Workouts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 842d9ea0e1129f3c116933e22aa6c919c7bd21011695f8ea7dcbb781b6c350e4
+    evidence_paraphrase: Consider including Activity rings in an end-of-workout summary.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider including Activity rings in an end-of-workout summary.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0013
+  title: Discard or confirm extremely brief workout sessions
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: When a workout ends after a few seconds, discard its data or ask whether to record it.
+    ja: workoutが数秒で終了した場合はdataを破棄するか記録するか確認する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Treat both automatic discard and explicit confirmation as documented alternatives.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When a workout ends after a few seconds, discard its data or ask whether to record it.” in the documented Workouts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 4e82fc79279651080cfa4338c02270b0a4cc3cabdfa614108a582bfb84775901
+    evidence_paraphrase: When a workout ends after a few seconds, discard its data or ask whether to record it.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When a workout ends after a few seconds, discard its data or ask whether to record it.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0014
+  title: Use large workout text during movement
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: Use large font sizes when a workout session requires movement.
+    ja: movementを伴うworkout sessionではlarge font sizeを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Support the mandatory legibility outcome while people are moving.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use large font sizes when a workout session requires movement.” in the documented Workouts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 731876b75ef831fc071011e5ae26b89ac6cdaa64e0f59180353d0729f08749db
+    evidence_paraphrase: Use large font sizes when a workout session requires movement.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use large font sizes when a workout session requires movement.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0015
+  title: Use high-contrast workout colors during movement
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: Use high-contrast colors when a workout session requires movement.
+    ja: movementを伴うworkout sessionではhigh-contrast colorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Support the mandatory legibility outcome while people are moving.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “Use high-contrast colors when a workout session requires movement.” in the documented Workouts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 731876b75ef831fc071011e5ae26b89ac6cdaa64e0f59180353d0729f08749db
+    evidence_paraphrase: Use high-contrast colors when a workout session requires movement.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use high-contrast colors when a workout session requires movement.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-WORKOUTS-0016
+  title: Keep important workout information easy to read
+  category: patterns
+  topic: workouts
+  subtopic: best-practices
+  statement:
+    en: Arrange workout text so the most important information remains easy to read during movement.
+    ja: movement中も最重要のworkout informationを読みやすくなるようtextを配置する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Prioritize information hierarchy within the mandatory movement-legibility outcome.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Workouts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWorkoutsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Arrange workout text so the most important information remains easy to read during movement.” in the documented Workouts context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/workouts
+    page_title: Workouts
+    section_path:
+      - Workouts
+      - Best practices
+    retrieved_at: 2026-07-23T11:56:58Z
+    source_hash: 4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60
+    source_sentence_hash: 731876b75ef831fc071011e5ae26b89ac6cdaa64e0f59180353d0729f08749db
+    evidence_paraphrase: Arrange workout text so the most important information remains easy to read during movement.
+  tags:
+    - patterns
+    - workouts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Arrange workout text so the most important information remains easy to read during movement.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AIRPLAY-0001
   title: Prefer the system-provided media player

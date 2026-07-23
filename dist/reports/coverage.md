@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3090
+- Active atomic rules: 3099
 - Pages without rules: 16
-- Low-confidence rules: 545
-- Rules requiring human review: 545
-- Reference notes: 904
+- Low-confidence rules: 539
+- Rules requiring human review: 539
+- Reference notes: 905
 
 ## Rules by category
 
@@ -17,31 +17,31 @@
 - foundations: 463
 - getting-started: 100
 - inputs: 245
-- patterns: 468
+- patterns: 477
 - technologies: 788
 
 ## Normative levels
 
 - AVOID: 433
-- MAY: 364
-- MUST: 358
+- MAY: 365
+- MUST: 359
 - MUST_NOT: 38
-- SHOULD: 1897
+- SHOULD: 1904
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2122
-- ipados: 2091
+- ios: 2128
+- ipados: 2097
 - macos: 1733
 - tvos: 1382
 - visionos: 1781
-- watchos: 1473
+- watchos: 1482
 
 ## Rules by testability
 
-- hybrid: 92
-- manual: 2998
+- hybrid: 93
+- manual: 3006
 
 ## Blocked pages
 
@@ -248,12 +248,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-PATTERNS-WORKOUTS-0001
-- HIG-PATTERNS-WORKOUTS-0002
-- HIG-PATTERNS-WORKOUTS-0003
-- HIG-PATTERNS-WORKOUTS-0004
-- HIG-PATTERNS-WORKOUTS-0005
-- HIG-PATTERNS-WORKOUTS-0007
 - HIG-TECHNOLOGIES-AIRPLAY-0001
 - HIG-TECHNOLOGIES-AIRPLAY-0002
 - HIG-TECHNOLOGIES-AIRPLAY-0003
@@ -796,12 +790,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-PATTERNS-WORKOUTS-0001
-- HIG-PATTERNS-WORKOUTS-0002
-- HIG-PATTERNS-WORKOUTS-0003
-- HIG-PATTERNS-WORKOUTS-0004
-- HIG-PATTERNS-WORKOUTS-0005
-- HIG-PATTERNS-WORKOUTS-0007
 - HIG-TECHNOLOGIES-AIRPLAY-0001
 - HIG-TECHNOLOGIES-AIRPLAY-0002
 - HIG-TECHNOLOGIES-AIRPLAY-0003
@@ -2059,10 +2047,11 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/windows · Windows > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/windows · Windows > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/windows · Windows > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Best practices — Reviewed: the three-screen watchOS arrangement and active-state techniques are illustrative options, not standalone requirements.
+- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Platform considerations — Reviewed: the guidance supports iOS, iPadOS, and watchOS, and is unsupported on macOS, tvOS, and visionOS.
+- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Resources — Reviewed: resource navigation contains no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Resources > Related — Reviewed: the related Activity rings link contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/workouts · Workouts > Resources > Videos — Reviewed: video links contain no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/writing · Writing > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/writing · Writing > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/writing · Writing > Resources — Section recorded for human review; no short atomic guidance lead was detected.

@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 396
-- Retained MUST: 358
+- Reviewed rules: 397
+- Retained MUST: 359
 - Retained MUST_NOT: 38
 - Normative level changes: 143
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T11:44:16Z
+- Reviewed at: 2026-07-23T11:56:58Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -237,6 +237,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-PLAYING-VIDEO-0030 — Recovered and retained MUST after confirming the explicit make sure directive and its one-or-two-step ceiling. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-SETTINGS-0012 — Recovered the explicit Always-based active-button requirement and separated it from adjacent toolbar customizability and visibility guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-WORKOUTS-0010 — Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0004 — Raised the privacy rule to MUST because the source calls redaction crucial and identifies sensitive financial and health information. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0005 — Recovered MUST from the explicit you need directive for notification privacy. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-APP-CLIPS-0005 — Retained MUST after confirming the explicit Ensure directive and the bundled-assets, splash-screen, and immediate-launch context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
@@ -622,6 +623,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-SETTINGS-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always-based active-button requirement and separated it from adjacent toolbar customizability and visibility guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-WORKOUTS-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0010 · MUST · retained_with_atomicity_or_scope_correction — Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-TECHNOLOGIES-AIRPLAY-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/airplay))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0004 · MUST · retained_with_atomicity_or_scope_correction — Raised the privacy rule to MUST because the source calls redaction crucial and identifies sensitive financial and health information. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0005 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit you need directive for notification privacy. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))

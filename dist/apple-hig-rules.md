@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T11:52:17.752Z. 3090 active rules; 4 deprecated rules.
+Generated 2026-07-23T12:03:55.310Z. 3099 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1138,13 +1138,22 @@ Generated 2026-07-23T11:52:17.752Z. 3090 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-UNDO-AND-REDO-0012 · SHOULD · high** — Support Command-Z for undo and Shift-Command-Z for redo on macOS. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 ### workouts
 
-- **HIG-PATTERNS-WORKOUTS-0001 · AVOID · low** — Exclude distracting people from a workout with information that’s not relevant from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
-- **HIG-PATTERNS-WORKOUTS-0002 · SHOULD · low** — Choose or apply a distinct visual appearance to indicate an active workout in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
-- **HIG-PATTERNS-WORKOUTS-0003 · SHOULD · low** — Make workout controls that are easy to find and tap available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
-- **HIG-PATTERNS-WORKOUTS-0004 · SHOULD · low** — Apply the documented Workouts guidance to help people understand the health information your app records if sensor data is unavailable during a workout. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
-- **HIG-PATTERNS-WORKOUTS-0005 · SHOULD · low** — Make a summary at the end of a session available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
-- **HIG-PATTERNS-WORKOUTS-0006 · MUST · medium** — Verify that text is legible for when people are in motion. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
-- **HIG-PATTERNS-WORKOUTS-0007 · SHOULD · low** — Choose or apply activity rings correctly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0001 · AVOID · high** — Avoid showing information that is unrelated to the active workout. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0002 · SHOULD · high** — Give an active workout a distinct visual appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0003 · SHOULD · high** — Make workout controls easy to find and tap. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0004 · SHOULD · high** — When workout sensors are unavailable, explain which health information the app can still record. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0005 · SHOULD · high** — Provide a summary when a workout session ends. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0006 · MUST · high** — Ensure workout text remains legible while people are moving. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0007 · SHOULD · high** — Use Activity rings only for their documented purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0008 · SHOULD · high** — Use workout sessions to provide useful data and relevant controls in a watchOS fitness app. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0009 · SHOULD · high** — Prioritize the workout data people are most likely to care about in active watchOS sessions. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0010 · MUST · high** — Ensure clear feedback indicates when a workout session starts or stops. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0011 · SHOULD · high** — For Swimming or Other workouts, use system-like wording to explain unavailable sensor data. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0012 · MAY · high** — Consider including Activity rings in an end-of-workout summary. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0013 · SHOULD · high** — When a workout ends after a few seconds, discard its data or ask whether to record it. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0014 · SHOULD · high** — Use large font sizes when a workout session requires movement. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0015 · SHOULD · high** — Use high-contrast colors when a workout session requires movement. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- **HIG-PATTERNS-WORKOUTS-0016 · SHOULD · high** — Arrange workout text so the most important information remains easy to read during movement. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 
 ## components
 

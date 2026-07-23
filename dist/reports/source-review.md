@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2502
-- Reviewed batches: 157
+- Reviewed rules: 2518
+- Reviewed batches: 158
 - Official source only: yes
-- Reviewed at: 2026-07-23T11:44:16Z
+- Reviewed at: 2026-07-23T11:56:58Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2100,6 +2100,22 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-UNDO-AND-REDO-0010 · high — Recovered toolbar placement separately from the symbol requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 · high — Recovered and retained the explicit You need requirement and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-UNDO-AND-REDO-0012 · high — Split and preserved both standard macOS keyboard mappings as one paired shortcut rule. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
+- HIG-PATTERNS-WORKOUTS-0001 · high — Preserved direct Avoid strength and separated the illustrative three-screen watchOS arrangement from the rule. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0002 · high — Preserved SHOULD and recorded the active-state purpose without turning optional metrics-screen techniques into requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0003 · high — Preserved the touch-oriented control recommendation and split the explicit feedback requirement into a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0004 · high — Restored the unavailable-sensor condition and separated the system-language guidance for supported swim workout types. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0005 · high — Preserved the completion summary recommendation and split the optional Activity rings enhancement. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0006 · high — Retained MUST from the explicit Make sure directive and split its three legibility techniques into atomic recommendations. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0007 · high — Replaced the vague correctness wording with the documented-purpose boundary without promoting the source's Use phrasing to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0008 · high — Recovered the omitted watchOS workout-session recommendation and narrowed its platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0009 · high — Separated the persistent active-session data priority from the general workout-session recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0010 · high — Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0011 · high — Recovered the conditional watchOS writing guidance without persisting the full system example text. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0012 · high — Separated the optional summary enhancement and retained Consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0013 · high — Recovered the omitted brief-session rule and preserved its two alternative outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0014 · high — Separated the large-text technique from the Make sure legibility outcome and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0015 · high — Separated the contrast technique from the Make sure legibility outcome and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
+- HIG-PATTERNS-WORKOUTS-0016 · high — Separated information hierarchy from font size and contrast while retaining SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0001 · high — Preserved the source condition, clarified that sensitive content is excluded, and recorded examples and opt-out behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0002 · high — Narrowed the existing combined lead to the important-content legibility action. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))
 - HIG-TECHNOLOGIES-ALWAYS-ON-0003 · high — Repaired the generic generated statement and recorded the full state-transition scope. ([source](https://developer.apple.com/design/human-interface-guidelines/always-on))

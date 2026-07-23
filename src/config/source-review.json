@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T11:44:16Z",
+  "reviewed_at": "2026-07-23T11:56:58Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -3592,6 +3592,38 @@
         "HIG-PATTERNS-SETTINGS-0024"
       ],
       "review_note": "Refreshed all common paragraph traces while preserving five stable IDs, recovered seven atomic rules for general, task-specific, and system settings, direct system-Settings access, keyboard conventions, and redundant-global-option avoidance, and kept direct Avoid and conditional Consider guidance below MUST_NOT and MUST."
+    },
+    {
+      "id": "priority-6-workouts-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T11:56:58Z",
+      "review_method": "Rendered Apple HIG Workouts overview, best practices, platform support, structured examples, and supporting prose were reviewed; two repeated live renders matched and the normalized main-content hash matched the stored source trace.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/workouts",
+          "source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-WORKOUTS-0001",
+        "HIG-PATTERNS-WORKOUTS-0002",
+        "HIG-PATTERNS-WORKOUTS-0003",
+        "HIG-PATTERNS-WORKOUTS-0004",
+        "HIG-PATTERNS-WORKOUTS-0005",
+        "HIG-PATTERNS-WORKOUTS-0006",
+        "HIG-PATTERNS-WORKOUTS-0007",
+        "HIG-PATTERNS-WORKOUTS-0008",
+        "HIG-PATTERNS-WORKOUTS-0009",
+        "HIG-PATTERNS-WORKOUTS-0010",
+        "HIG-PATTERNS-WORKOUTS-0011",
+        "HIG-PATTERNS-WORKOUTS-0012",
+        "HIG-PATTERNS-WORKOUTS-0013",
+        "HIG-PATTERNS-WORKOUTS-0014",
+        "HIG-PATTERNS-WORKOUTS-0015",
+        "HIG-PATTERNS-WORKOUTS-0016"
+      ],
+      "review_note": "Refreshed seven stable IDs to paragraph-level traces, recovered nine atomic rules for watchOS sessions, data priority, start and stop feedback, unavailable sensor wording, summary rings, brief sessions, and movement legibility, retained two explicit Make sure or Be sure MUST outcomes, and kept direct Avoid and Consider guidance below MUST_NOT and MUST."
     }
   ],
   "rules": {
@@ -12054,6 +12086,128 @@
       "title": "Consider in-app access to essential watchOS options", "statement": {"en": "Consider exposing a few essential watchOS options in the main view or a More menu.", "ja": "少数のessentialなwatchOS optionをmain viewまたはMore menuで提供することを検討する。"}, "normative_level": "MAY",
       "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
       "conditions": ["Use the More menu alternative when people need to reconfigure objects."], "review_note": "Recovered both source-provided in-app alternatives and preserved the conditional consider strength."
+    },
+    "HIG-PATTERNS-WORKOUTS-0001": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "4c314f2784790827a07b7d0e7200c9eab4295d0eee68e58470f211cdf1af3aa9", "section_path": ["Workouts", "Best practices"]},
+      "title": "Avoid irrelevant information during active workouts",
+      "statement": {"en": "Avoid showing information that is unrelated to the active workout.", "ja": "進行中のworkoutに関係しないinformationを表示しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Keep workout selection and unrelated app areas out of the active-session flow."],
+      "review_note": "Preserved direct Avoid strength and separated the illustrative three-screen watchOS arrangement from the rule."
+    },
+    "HIG-PATTERNS-WORKOUTS-0002": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "3625604506ede4935faf3894ce6658476849d95a03e1681d0ad5bc50119603b1", "section_path": ["Workouts", "Best practices"]},
+      "title": "Give active workouts a distinct visual appearance",
+      "statement": {"en": "Give an active workout a distinct visual appearance.", "ja": "active workoutにdistinctなvisual appearanceを与える。"},
+      "conditions": ["Help people recognize an active session at a glance."],
+      "exceptions": ["Updating metrics and a unique metrics layout are documented techniques, not mandatory implementations."],
+      "review_note": "Preserved SHOULD and recorded the active-state purpose without turning optional metrics-screen techniques into requirements."
+    },
+    "HIG-PATTERNS-WORKOUTS-0003": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "785af1a4f9d507ff7350f659eb05aeb6b36db6e01848e2522c2efefbbfcc72c8", "section_path": ["Workouts", "Best practices"]},
+      "title": "Make workout controls easy to find and tap",
+      "statement": {"en": "Make workout controls easy to find and tap.", "ja": "workout controlを見つけやすくtapしやすくする。"},
+      "conditions": ["Make pausing, resuming, and stopping a workout easy."],
+      "review_note": "Preserved the touch-oriented control recommendation and split the explicit feedback requirement into a separate MUST."
+    },
+    "HIG-PATTERNS-WORKOUTS-0004": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "5ffd8065f7021a3ef0ab282624c7bc3054ae350b7123a908e6dab3ac8e43bd52", "section_path": ["Workouts", "Best practices"]},
+      "title": "Explain recorded health data when sensors are unavailable",
+      "statement": {"en": "When workout sensors are unavailable, explain which health information the app can still record.", "ja": "workout sensorを利用できない場合もappが記録できるhealth informationを説明する。"},
+      "conditions": ["Account for situations such as water preventing heart-rate measurements while other workout data remains available."],
+      "review_note": "Restored the unavailable-sensor condition and separated the system-language guidance for supported swim workout types."
+    },
+    "HIG-PATTERNS-WORKOUTS-0005": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "842d9ea0e1129f3c116933e22aa6c919c7bd21011695f8ea7dcbb781b6c350e4", "section_path": ["Workouts", "Best practices"]},
+      "title": "Provide an end-of-workout summary",
+      "statement": {"en": "Provide a summary when a workout session ends.", "ja": "workout session終了時にsummaryを提供する。"},
+      "conditions": ["Confirm that the workout finished and display its recorded information."],
+      "review_note": "Preserved the completion summary recommendation and split the optional Activity rings enhancement."
+    },
+    "HIG-PATTERNS-WORKOUTS-0006": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "731876b75ef831fc071011e5ae26b89ac6cdaa64e0f59180353d0729f08749db", "section_path": ["Workouts", "Best practices"]},
+      "title": "Ensure workout text remains legible during movement",
+      "statement": {"en": "Ensure workout text remains legible while people are moving.", "ja": "利用者が動いている間もworkout textをlegibleに保つ。"},
+      "conditions": ["Apply when a workout session requires movement."],
+      "review_note": "Retained MUST from the explicit Make sure directive and split its three legibility techniques into atomic recommendations."
+    },
+    "HIG-PATTERNS-WORKOUTS-0007": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "c3c630e016e9b48aeab5afc0fc5d880abacefa03a51c71580174055c2574bb97", "section_path": ["Workouts", "Best practices"]},
+      "title": "Use Activity rings only for their documented purpose",
+      "statement": {"en": "Use Activity rings only for their documented purpose.", "ja": "Activity ringsをdocumented purposeにだけ使用する。"},
+      "conditions": ["Preserve the colors and meanings defined by the Activity app and related Activity rings guidance."],
+      "review_note": "Replaced the vague correctness wording with the documented-purpose boundary without promoting the source's Use phrasing to MUST."
+    },
+    "HIG-PATTERNS-WORKOUTS-0008": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "76e4a5fd75e218a289b65f09b5ddbad7cee2a072d6f0c0455e5231c7e2431933", "section_path": ["Workouts", "Best practices"]},
+      "title": "Use workout sessions in watchOS fitness apps",
+      "statement": {"en": "Use workout sessions to provide useful data and relevant controls in a watchOS fitness app.", "ja": "watchOS fitness appではworkout sessionでuseful dataとrelevant controlを提供する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "priority_rank": 4,
+      "conditions": ["The app offers an active fitness experience on Apple Watch."],
+      "review_note": "Recovered the omitted watchOS workout-session recommendation and narrowed its platform scope."
+    },
+    "HIG-PATTERNS-WORKOUTS-0009": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "76e4a5fd75e218a289b65f09b5ddbad7cee2a072d6f0c0455e5231c7e2431933", "section_path": ["Workouts", "Best practices"]},
+      "title": "Prioritize useful watchOS workout data",
+      "statement": {"en": "Prioritize the workout data people are most likely to care about in active watchOS sessions.", "ja": "activeなwatchOS sessionでは利用者が最も重視するworkout dataを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "priority_rank": 4,
+      "conditions": ["Useful examples include time, calories, distance, and relevant lap or interval controls."],
+      "review_note": "Separated the persistent active-session data priority from the general workout-session recommendation."
+    },
+    "HIG-PATTERNS-WORKOUTS-0010": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "785af1a4f9d507ff7350f659eb05aeb6b36db6e01848e2522c2efefbbfcc72c8", "section_path": ["Workouts", "Best practices"]},
+      "title": "Ensure clear workout start and stop feedback",
+      "statement": {"en": "Ensure clear feedback indicates when a workout session starts or stops.", "ja": "workout sessionの開始または停止をclear feedbackで示す。"},
+      "normative_level": "MUST",
+      "conditions": ["Apply the feedback to both session-start and session-stop transitions."],
+      "review_note": "Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability."
+    },
+    "HIG-PATTERNS-WORKOUTS-0011": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "5ffd8065f7021a3ef0ab282624c7bc3054ae350b7123a908e6dab3ac8e43bd52", "section_path": ["Workouts", "Best practices"]},
+      "title": "Match system wording for unavailable swim sensor data",
+      "statement": {"en": "For Swimming or Other workouts, use system-like wording to explain unavailable sensor data.", "ja": "SwimmingまたはOther workoutでは利用できないsensor dataをsystemに近いwordingで説明する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "priority_rank": 4,
+      "conditions": ["The watchOS app supports the Swimming or Other workout type."],
+      "review_note": "Recovered the conditional watchOS writing guidance without persisting the full system example text."
+    },
+    "HIG-PATTERNS-WORKOUTS-0012": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "842d9ea0e1129f3c116933e22aa6c919c7bd21011695f8ea7dcbb781b6c350e4", "section_path": ["Workouts", "Best practices"]},
+      "title": "Consider Activity rings in workout summaries",
+      "statement": {"en": "Consider including Activity rings in an end-of-workout summary.", "ja": "workout終了時のsummaryにActivity ringsを含めることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Use rings to help people check their current activity progress."],
+      "review_note": "Separated the optional summary enhancement and retained Consider-level strength."
+    },
+    "HIG-PATTERNS-WORKOUTS-0013": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "4e82fc79279651080cfa4338c02270b0a4cc3cabdfa614108a582bfb84775901", "section_path": ["Workouts", "Best practices"]},
+      "title": "Discard or confirm extremely brief workout sessions",
+      "statement": {"en": "When a workout ends after a few seconds, discard its data or ask whether to record it.", "ja": "workoutが数秒で終了した場合はdataを破棄するか記録するか確認する。"},
+      "conditions": ["Treat both automatic discard and explicit confirmation as documented alternatives."],
+      "review_note": "Recovered the omitted brief-session rule and preserved its two alternative outcomes."
+    },
+    "HIG-PATTERNS-WORKOUTS-0014": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "731876b75ef831fc071011e5ae26b89ac6cdaa64e0f59180353d0729f08749db", "section_path": ["Workouts", "Best practices"]},
+      "title": "Use large workout text during movement",
+      "statement": {"en": "Use large font sizes when a workout session requires movement.", "ja": "movementを伴うworkout sessionではlarge font sizeを使う。"},
+      "conditions": ["Support the mandatory legibility outcome while people are moving."],
+      "review_note": "Separated the large-text technique from the Make sure legibility outcome and retained SHOULD."
+    },
+    "HIG-PATTERNS-WORKOUTS-0015": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "731876b75ef831fc071011e5ae26b89ac6cdaa64e0f59180353d0729f08749db", "section_path": ["Workouts", "Best practices"]},
+      "title": "Use high-contrast workout colors during movement",
+      "statement": {"en": "Use high-contrast colors when a workout session requires movement.", "ja": "movementを伴うworkout sessionではhigh-contrast colorを使う。"},
+      "conditions": ["Support the mandatory legibility outcome while people are moving."],
+      "review_note": "Separated the contrast technique from the Make sure legibility outcome and retained SHOULD."
+    },
+    "HIG-PATTERNS-WORKOUTS-0016": {
+      "source": {"source_hash": "4cc2b555eb2c25b04e258540cdb047cfc69fcc0c98afd7c34fa464f827b0ba60", "source_sentence_hash": "731876b75ef831fc071011e5ae26b89ac6cdaa64e0f59180353d0729f08749db", "section_path": ["Workouts", "Best practices"]},
+      "title": "Keep important workout information easy to read",
+      "statement": {"en": "Arrange workout text so the most important information remains easy to read during movement.", "ja": "movement中も最重要のworkout informationを読みやすくなるようtextを配置する。"},
+      "conditions": ["Prioritize information hierarchy within the mandatory movement-legibility outcome."],
+      "review_note": "Separated information hierarchy from font size and contrast while retaining SHOULD."
     },
     "HIG-TECHNOLOGIES-ALWAYS-ON-0001": {
       "source": {"source_hash": "a507f37cfda63bf87cce6e483a4443203b931616930569bb3cbba01dda162753", "source_sentence_hash": "3dbf06d68be54fce29ec46a8e8d5cb09d89e118ef9635e89d4176a14a26418f3", "section_path": ["Always On", "Best practices"]},
