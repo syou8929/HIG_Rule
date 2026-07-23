@@ -1,28 +1,27 @@
 # Human source-review queue
 
-- Remaining rules: 178
+- Remaining rules: 171
 - Next priority: 6 (apple-platform-common)
-- Next batch: 7
+- Next batch: 6
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 155
+- 6 (apple-platform-common): 148
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 1
-- MAY: 24
-- SHOULD: 153
+- MAY: 23
+- SHOULD: 147
 
 ## Next batch
 
-- HIG-COMPONENTS-POP-UP-BUTTONS-0001 · SHOULD — Use a pop-up button to present a flat list of mutually exclusive options or states · Pop-up buttons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- HIG-COMPONENTS-POP-UP-BUTTONS-0002 · SHOULD — Provide a useful default selection · Pop-up buttons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- HIG-COMPONENTS-POP-UP-BUTTONS-0003 · SHOULD — Give people a way to predict a pop-up button’s options without opening it · Pop-up buttons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- HIG-COMPONENTS-POP-UP-BUTTONS-0005 · SHOULD — Offer a list of actions · Pop-up buttons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- HIG-COMPONENTS-POP-UP-BUTTONS-0006 · SHOULD — Let people select multiple items · Pop-up buttons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- HIG-COMPONENTS-POP-UP-BUTTONS-0007 · SHOULD — Include a submenu · Pop-up buttons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- HIG-COMPONENTS-POP-UP-BUTTONS-0004 · MAY — Consider using a pop-up button when space is limited and you don’t need to display all options all the · Pop-up buttons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0001 · SHOULD — Use a segmented control to provide closely related choices that affect an object, state, or view · Segmented controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0003 · SHOULD — Keep control types consistent within a single segmented control · Segmented controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0004 · SHOULD — Prefer using either text or images — not a mix of both — in a single segmented control · Segmented controls > Content ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0005 · SHOULD — Use nouns or noun phrases for segment labels · Segmented controls > Content ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0012 · SHOULD — As much as possible, use content with a similar size in each segment · Segmented controls > Content ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))
+- HIG-COMPONENTS-SEGMENTED-CONTROLS-0002 · MAY — Consider a segmented control when it’s important to group functions together, or to clearly show their sele… · Segmented controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/segmented-controls))

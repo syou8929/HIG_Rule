@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T21:20:00Z",
+  "reviewed_at": "2026-07-23T21:40:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -4958,6 +4958,38 @@
         "HIG-COMPONENTS-LABELS-0012"
       ],
       "review_note": "Completed Labels coverage, recovered text-field and text-view component choices, custom-font legibility, four structured system-color meanings, and watchOS complication guidance; elevated the explicit Make sure legibility outcome to MUST."
+    },
+    {
+      "id": "priority-6-pop-up-buttons-complete-context-2026-07-24",
+      "reviewed_at": "2026-07-23T21:40:00Z",
+      "review_method": "Rendered Apple HIG Pop-up buttons overview, complete best-practice, platform, iPadOS, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons",
+          "source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0001",
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0002",
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0003",
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0004",
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0005",
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0006",
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0007",
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0010",
+        "HIG-COMPONENTS-POP-UP-BUTTONS-0011"
+      ],
+      "scope": {
+        "portability": "apple-component-specific",
+        "platforms": ["ios", "ipados", "macos", "visionos"],
+        "devices": ["iphone", "ipad", "mac", "apple-vision-pro"],
+        "components": ["pop-up-buttons"],
+        "modalities": []
+      },
+      "review_note": "Completed Pop-up buttons coverage, corrected three pull-down-button component-choice rules, restored truncated space and iPadOS conditions, and recovered conditional Custom-option and explanatory-text guidance without promoting qualified language to MUST."
     }
   ],
   "rules": {
@@ -31279,6 +31311,63 @@
       "statement": {"en": "Consider using system date and timer text components in watchOS complications.", "ja": "watchOS complicationではsystem date/timer text componentの使用を検討する。"},
       "conditions": ["watchOS automatically fits the presentation to available space.", "The system updates the date or timer content without further app input."],
       "review_note": "Recovered the watchOS-specific Consider guidance and both system-managed benefits."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0001": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "790631d5bac02102e7d461fd77a5229d7c8b713368f8489668cf4e6e338e847d", "section_path": ["Pop-up buttons", "Best practices"]},
+      "statement": {"en": "Use a pop-up button for a flat list of mutually exclusive options or states.", "ja": "mutually exclusiveなoptionまたはstateのflat listにはpop-up buttonを使う。"},
+      "conditions": ["The selection affects the content or surrounding view.", "Use the separate pull-down-button rules when actions, multiple selection, or a submenu are needed."],
+      "review_note": "Retained the mutually exclusive flat-list component choice at SHOULD."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0002": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "05f63efb7b8002e72977ffdc5766f4ba27c0fccd5d547ad591dbcaf7b144f2d3", "section_path": ["Pop-up buttons", "Best practices"]},
+      "statement": {"en": "Provide a useful default selection for a pop-up button.", "ja": "pop-up buttonに有用なdefault selectionを用意する。"},
+      "conditions": ["Before people choose, the button displays the default item.", "When possible, choose a default that most people are likely to want.", "After selection, the button can identify the current choice."],
+      "review_note": "Retained the default-selection recommendation and recorded its before- and after-selection behavior."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0003": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "49d2ce3f8880368d9a18732d24ca40ad5c2db69a7242ee54309272adc8f7b130", "section_path": ["Pop-up buttons", "Best practices"]},
+      "statement": {"en": "Give people a way to predict a pop-up button's options without opening it.", "ja": "pop-up buttonを開かずにoptionを予測できる手掛かりを提供する。"},
+      "conditions": ["An introductory label or a button label can describe the button's effect and give option context."],
+      "review_note": "Replaced the generic statement and recorded both documented labeling techniques."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0004": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "df3d0431cd71b155b4a3ae2d1a0252f9c4e0c011b60a84037683f98802de0a77", "section_path": ["Pop-up buttons", "Best practices"]},
+      "title": "Consider a pop-up button when space is limited",
+      "statement": {"en": "Consider a pop-up button when space is limited and all options don't need to remain visible.", "ja": "spaceが限られ、全optionを常時表示する必要がない場合はpop-up buttonを検討する。"},
+      "conditions": ["Pop-up buttons provide a space-efficient way to present a wide array of choices."],
+      "review_note": "Restored the complete truncated Consider guidance and retained it at MAY."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0005": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "c727a0d622ae6c9800b783fc02bf467371a0aa7b36396d7213e57b79e040bbb3", "section_path": ["Pop-up buttons", "Best practices"]},
+      "title": "Use a pull-down button for a list of actions",
+      "statement": {"en": "Use a pull-down button instead of a pop-up button to offer a list of actions.", "ja": "action listにはpop-up buttonではなくpull-down buttonを使う。"},
+      "review_note": "Corrected the list item to preserve its parent pull-down-button component-choice context."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0006": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "25b2797e45b8b290aeddae9e7422628bf9952bd37b56a257c8cfe447778eb4d5", "section_path": ["Pop-up buttons", "Best practices"]},
+      "title": "Use a pull-down button for multiple selection",
+      "statement": {"en": "Use a pull-down button instead of a pop-up button when people can select multiple items.", "ja": "複数itemを選択できる場合はpop-up buttonではなくpull-down buttonを使う。"},
+      "review_note": "Corrected the list item to preserve its parent pull-down-button component-choice context."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0007": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "7206d1227b8eee7203b7a50d959de535e58e19b09ba783feb115fc047f117e57", "section_path": ["Pop-up buttons", "Best practices"]},
+      "title": "Use a pull-down button for a submenu",
+      "statement": {"en": "Use a pull-down button instead of a pop-up button when the menu includes a submenu.", "ja": "submenuを含む場合はpop-up buttonではなくpull-down buttonを使う。"},
+      "review_note": "Corrected the list item to preserve its parent pull-down-button component-choice context."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0010": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "71dc99250917b36f7e1d7e1f0dba519dc498e66895d8ba19c528ef0905b4d3e2", "section_path": ["Pop-up buttons", "Best practices"]},
+      "title": "Include a Custom option only when additional items are useful",
+      "statement": {"en": "When necessary, include a Custom option for additional pop-up menu items that are useful only in some situations.", "ja": "一部の状況でのみ有用な追加itemが必要な場合はpop-up menuにCustom optionを含める。"},
+      "conditions": ["A Custom option can avoid clutter from items or controls people need only occasionally."],
+      "review_note": "Recovered the qualified Custom-option guidance at SHOULD without turning it into an unconditional requirement."
+    },
+    "HIG-COMPONENTS-POP-UP-BUTTONS-0011": {
+      "source": {"source_hash": "4d98045918c6c7a7b081ffc32414c95795b0b87e15ec2d5b859ce08a3b7597a4", "source_sentence_hash": "cee371e97b19a98638593a8f31370665b2913525ee62ebd21a3bf8132cdd2f2f", "section_path": ["Pop-up buttons", "Best practices"]},
+      "title": "Consider explanatory text below pop-up menu options",
+      "statement": {"en": "Consider displaying explanatory text below a pop-up menu's options when it helps people understand them.", "ja": "pop-up menuのoption理解に役立つ場合はlist下部のexplanatory textを検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Recovered the optional explanatory-text technique from supporting prose."
     }
   }
 }

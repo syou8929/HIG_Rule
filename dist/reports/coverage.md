@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3440
+- Active atomic rules: 3442
 - Pages without rules: 16
-- Low-confidence rules: 178
-- Rules requiring human review: 178
+- Low-confidence rules: 171
+- Rules requiring human review: 171
 - Reference notes: 915
 
 ## Rules by category
 
-- components: 1071
+- components: 1073
 - foundations: 463
 - getting-started: 100
 - inputs: 245
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 464
-- MAY: 394
+- MAY: 395
 - MUST: 492
 - MUST_NOT: 81
-- SHOULD: 2009
+- SHOULD: 2010
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2466
-- ipados: 2425
-- macos: 1983
+- ios: 2468
+- ipados: 2427
+- macos: 1985
 - tvos: 1553
-- visionos: 1964
+- visionos: 1966
 - watchos: 1681
 
 ## Rules by testability
 
 - hybrid: 112
-- manual: 3328
+- manual: 3330
 
 ## Blocked pages
 
@@ -69,13 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-POP-UP-BUTTONS-0001
-- HIG-COMPONENTS-POP-UP-BUTTONS-0002
-- HIG-COMPONENTS-POP-UP-BUTTONS-0003
-- HIG-COMPONENTS-POP-UP-BUTTONS-0004
-- HIG-COMPONENTS-POP-UP-BUTTONS-0005
-- HIG-COMPONENTS-POP-UP-BUTTONS-0006
-- HIG-COMPONENTS-POP-UP-BUTTONS-0007
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
@@ -250,13 +243,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-POP-UP-BUTTONS-0001
-- HIG-COMPONENTS-POP-UP-BUTTONS-0002
-- HIG-COMPONENTS-POP-UP-BUTTONS-0003
-- HIG-COMPONENTS-POP-UP-BUTTONS-0004
-- HIG-COMPONENTS-POP-UP-BUTTONS-0005
-- HIG-COMPONENTS-POP-UP-BUTTONS-0006
-- HIG-COMPONENTS-POP-UP-BUTTONS-0007
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0001
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0002
 - HIG-COMPONENTS-SEGMENTED-CONTROLS-0003
@@ -1038,9 +1024,9 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Change log — Reviewed: change-log entries describe documentation updates, not product guidance.
+- https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Resources > Related — Reviewed: related component links contain no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/popovers · Popovers > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/popovers · Popovers > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/popovers · Popovers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.

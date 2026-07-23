@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:30:26.719Z. 3440 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:37:01.930Z. 3442 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1796,15 +1796,17 @@ Generated 2026-07-23T18:30:26.719Z. 3440 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-PICKERS-0009 · SHOULD · high** — Keep iOS and iPadOS countdown-timer picker values at or below 23 hours and 59 minutes. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 ### pop-up-buttons
 
-- **HIG-COMPONENTS-POP-UP-BUTTONS-0001 · SHOULD · low** — Choose or apply a pop-up button to present a flat list of mutually exclusive options or states in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- **HIG-COMPONENTS-POP-UP-BUTTONS-0002 · SHOULD · low** — Make a useful default selection available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- **HIG-COMPONENTS-POP-UP-BUTTONS-0003 · SHOULD · low** — Apply the documented Pop-up buttons guidance to give people a way to predict a pop-up button’s options without opening it. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- **HIG-COMPONENTS-POP-UP-BUTTONS-0004 · MAY · low** — Evaluate whether using a pop-up button when space is limited and you don’t need to display all options all the is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- **HIG-COMPONENTS-POP-UP-BUTTONS-0005 · SHOULD · low** — Make a list of actions available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- **HIG-COMPONENTS-POP-UP-BUTTONS-0006 · SHOULD · low** — Preserve people’s ability to select multiple items. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
-- **HIG-COMPONENTS-POP-UP-BUTTONS-0007 · SHOULD · low** — Apply the documented Pop-up buttons guidance to include a submenu. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0001 · SHOULD · high** — Use a pop-up button for a flat list of mutually exclusive options or states. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0002 · SHOULD · high** — Provide a useful default selection for a pop-up button. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0003 · SHOULD · high** — Give people a way to predict a pop-up button's options without opening it. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0004 · MAY · high** — Consider a pop-up button when space is limited and all options don't need to remain visible. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0005 · SHOULD · high** — Use a pull-down button instead of a pop-up button to offer a list of actions. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0006 · SHOULD · high** — Use a pull-down button instead of a pop-up button when people can select multiple items. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0007 · SHOULD · high** — Use a pull-down button instead of a pop-up button when the menu includes a submenu. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0008 · MAY · high** — Consider a pop-up button for compact iPadOS list-item options. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - **HIG-COMPONENTS-POP-UP-BUTTONS-0009 · AVOID · high** — Avoid using pop-up buttons on tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0010 · SHOULD · high** — When necessary, include a Custom option for additional pop-up menu items that are useful only in some situations. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- **HIG-COMPONENTS-POP-UP-BUTTONS-0011 · MAY · high** — Consider displaying explanatory text below a pop-up menu's options when it helps people understand them. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 ### popovers
 
 - **HIG-COMPONENTS-POPOVERS-0001 · SHOULD · high** — Use a popover to expose a small amount of transient information or functionality. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))

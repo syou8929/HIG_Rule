@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3236
-- Reviewed batches: 184
+- Reviewed rules: 3245
+- Reviewed batches: 185
 - Official source only: yes
-- Reviewed at: 2026-07-23T21:20:00Z
+- Reviewed at: 2026-07-23T21:40:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -569,8 +569,17 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-PICKERS-0007 · high — Recovered the short-list alternative without promoting its consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 - HIG-COMPONENTS-PICKERS-0008 · high — Recovered the very-large-set alternative and its navigation rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
 - HIG-COMPONENTS-PICKERS-0009 · high — Repaired the truncated mode description and recorded both its maximum value and unavailable styles without inventing a MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/pickers))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0001 · high — Retained the mutually exclusive flat-list component choice at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0002 · high — Retained the default-selection recommendation and recorded its before- and after-selection behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0003 · high — Replaced the generic statement and recorded both documented labeling techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0004 · high — Restored the complete truncated Consider guidance and retained it at MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0005 · high — Corrected the list item to preserve its parent pull-down-button component-choice context. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0006 · high — Corrected the list item to preserve its parent pull-down-button component-choice context. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0007 · high — Corrected the list item to preserve its parent pull-down-button component-choice context. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - HIG-COMPONENTS-POP-UP-BUTTONS-0008 · high — Restored the complete truncated recommendation and all documented applicability conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - HIG-COMPONENTS-POP-UP-BUTTONS-0009 · high — Recorded the descriptive tvOS and watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0010 · high — Recovered the qualified Custom-option guidance at SHOULD without turning it into an unconditional requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
+- HIG-COMPONENTS-POP-UP-BUTTONS-0011 · high — Recovered the optional explanatory-text technique from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons))
 - HIG-COMPONENTS-POPOVERS-0001 · high — Retained SHOULD and recorded the transient, small-content purpose separately from the related-task limit. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0002 · high — Retained MAY and recorded the temporary-content and persistent-space tradeoff. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
 - HIG-COMPONENTS-POPOVERS-0003 · high — Retained SHOULD and separated the mandatory arrow direction and visible-content constraints into atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/popovers))
