@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 335
-- Retained MUST: 302
+- Reviewed rules: 339
+- Retained MUST: 306
 - Retained MUST_NOT: 33
-- Normative level changes: 102
+- Normative level changes: 106
 - Mixed-strength candidates split: 1
 - Official source only: yes
-- Reviewed at: 2026-07-22T17:45:02Z
+- Reviewed at: 2026-07-22T23:25:33Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -98,10 +98,14 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-TOOLBARS-0040 — Split the exit-state requirement from the optional modal-control recommendation and retained MUST from Be sure. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003 — Retained the explicit Make sure directive after separating the adjacent usability and benefit recommendations. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0018 — Recovered and retained the explicit conditional Make sure directive without promoting adjacent Liquid Glass or positioning guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-WIDGETS-0009 — Raised the conditional outcome to MUST from the paragraph's explicit Make sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0045 — Recovered and retained the explicit Make sure legibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0050 — Recovered and retained the first explicit Make sure outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0051 — Recovered and retained the conditional second Make sure outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0052 — Recovered and retained the explicit Make sure visual-balance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0066 — Recovered and retained the explicit Make sure interaction-reliability requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0069 — Recovered the conditional Be sure legibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0070 — Recovered and retained the explicit Always accessibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WINDOWS-0001 — Retained MUST after confirming the explicit Make sure lead and its multitasking and multiwindow scope. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0006 — Retained MUST after confirming the explicit Make sure lead and the windowed-toolbar mitigation. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0008 — Retained MUST after confirming the explicit Make sure lead and state-dependent appearance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
@@ -392,11 +396,15 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-TOOLBARS-0040 · MUST · retained_with_atomicity_or_scope_correction — Split the exit-state requirement from the optional modal-control recommendation and retained MUST from Be sure. ([source](https://developer.apple.com/design/human-interface-guidelines/toolbars))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained the explicit Make sure directive after separating the adjacent usability and benefit recommendations. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
 - HIG-COMPONENTS-VIRTUAL-KEYBOARDS-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit conditional Make sure directive without promoting adjacent Liquid Glass or positioning guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards))
+- HIG-COMPONENTS-WIDGETS-0009 · MUST · retained_with_atomicity_or_scope_correction — Raised the conditional outcome to MUST from the paragraph's explicit Make sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0014 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0045 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure legibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0050 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the first explicit Make sure outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0051 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the conditional second Make sure outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0052 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure visual-balance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0066 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure interaction-reliability requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0069 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Be sure legibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WIDGETS-0070 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Always accessibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WINDOWS-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure lead and its multitasking and multiwindow scope. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0006 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure lead and the windowed-toolbar mitigation. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0008 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure lead and state-dependent appearance requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
