@@ -19793,18 +19793,18 @@
   apple_native_rule: Reposition an iOS or iPadOS edit menu when necessary to keep important content visible.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-GAUGES-0001
-  title: Write succinct labels that describe the current value and both endpoints of the range
+  title: Ensure gauge labels describe the value and range endpoints
   category: components
   topic: gauges
   subtopic: best-practices
   statement:
-    en: Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range.
-    ja: 「Gauges」において「Write succinct labels that describe the current value and both endpoints of the range」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure succinct gauge labels describe the current value and both endpoints of the range.
+    ja: 簡潔なgauge labelでcurrent valueとrangeの両endpointを示す。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: apple-component-specific
     platforms:
@@ -19823,7 +19823,8 @@
       - gauges
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Not every gauge style displays every label.
+    - VoiceOver reads visible labels so people can understand the gauge without seeing the screen.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Gauges experience on the scoped Apple platforms.
@@ -19831,7 +19832,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range.” in the documented Gauges context?
+      - Does the design satisfy “Ensure succinct gauge labels describe the current value and both endpoints of the range.” in the documented Gauges context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -19846,14 +19847,14 @@
     retrieved_at: 2026-07-21T22:25:00Z
     source_hash: dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81
     source_sentence_hash: de5fc389968e93b7ed501a9e46e717f48867c87f73af1ca3caa54383b2dd75ef
-    evidence_paraphrase: Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range.
+    evidence_paraphrase: Ensure succinct gauge labels describe the current value and both endpoints of the range.
   tags:
     - components
     - gauges
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range.
+  apple_native_rule: Ensure succinct gauge labels describe the current value and both endpoints of the range.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-GAUGES-0002
   title: Consider filling the path with a gradient to help communicate the purpose of the gauge
@@ -19861,11 +19862,11 @@
   topic: gauges
   subtopic: best-practices
   statement:
-    en: Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context.
-    ja: filling the path with a gradient to help communicate the purpose of the gaugeが現在の状況に適切か検討する。
+    en: Consider a path gradient when it helps communicate a gauge's purpose.
+    ja: gaugeのpurposeを伝えやすくする場合はpath gradientを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -19886,7 +19887,7 @@
       - gauges
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A temperature gauge can map a red-to-blue spectrum to hot-to-cold values.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Gauges experience on the scoped Apple platforms.
@@ -19894,7 +19895,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context.” in the documented Gauges context?
+      - Does the design satisfy “Consider a path gradient when it helps communicate a gauge's purpose.” in the documented Gauges context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -19909,14 +19910,14 @@
     retrieved_at: 2026-07-21T22:25:00Z
     source_hash: dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81
     source_sentence_hash: c3e230da28bfcf093c8460380052fcfd046974fc70f079e80e8ed77cac84498a
-    evidence_paraphrase: Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context.
+    evidence_paraphrase: Consider a path gradient when it helps communicate a gauge's purpose.
   tags:
     - components
     - gauges
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context.
+  apple_native_rule: Consider a path gradient when it helps communicate a gauge's purpose.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-GAUGES-0003
   title: Consider using the continuous style for large ranges

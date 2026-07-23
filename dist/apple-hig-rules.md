@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:20:49.515Z. 3432 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:23:18.811Z. 3432 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1520,8 +1520,8 @@ Generated 2026-07-23T18:20:49.515Z. 3432 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-EDIT-MENUS-0015 · SHOULD · high** — Reposition an iOS or iPadOS edit menu when necessary to keep important content visible. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
 ### gauges
 
-- **HIG-COMPONENTS-GAUGES-0001 · SHOULD · low** — Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
-- **HIG-COMPONENTS-GAUGES-0002 · MAY · low** — Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- **HIG-COMPONENTS-GAUGES-0001 · MUST · high** — Ensure succinct gauge labels describe the current value and both endpoints of the range. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- **HIG-COMPONENTS-GAUGES-0002 · MAY · high** — Consider a path gradient when it helps communicate a gauge's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - **HIG-COMPONENTS-GAUGES-0003 · MAY · high** — Consider the continuous capacity style for a large range. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - **HIG-COMPONENTS-GAUGES-0004 · MAY · high** — Consider changing fill color to communicate significant range levels. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - **HIG-COMPONENTS-GAUGES-0005 · AVOID · high** — Avoid using gauges on tvOS. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))

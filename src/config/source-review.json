@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T20:40:00Z",
+  "reviewed_at": "2026-07-23T21:00:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -4905,6 +4905,31 @@
         "modalities": []
       },
       "review_note": "Completed Disclosure controls coverage, recovered hierarchy ordering, default hiding, label meaning, and control-content relationship rules, and retained one explicit Make sure label requirement as MUST."
+    },
+    {
+      "id": "priority-6-gauges-best-practices-context-2026-07-23",
+      "reviewed_at": "2026-07-23T21:00:00Z",
+      "review_method": "Rendered Apple HIG Gauges anatomy, best-practice, platform, macOS level-indicator, resource, availability, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/gauges",
+          "source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-GAUGES-0001",
+        "HIG-COMPONENTS-GAUGES-0002"
+      ],
+      "scope": {
+        "portability": "apple-component-specific",
+        "platforms": ["ios", "ipados", "macos", "visionos", "watchos"],
+        "devices": ["iphone", "ipad", "mac", "apple-vision-pro", "apple-watch"],
+        "components": ["gauges"],
+        "modalities": []
+      },
+      "review_note": "Completed the remaining Gauges best-practice rules, elevated the VoiceOver-dependent value-and-endpoint labeling requirement to MUST, and retained gradient use at MAY."
     }
   ],
   "rules": {
@@ -31127,6 +31152,22 @@
       "title": "Establish the disclosure button's content relationship",
       "statement": {"en": "Establish a clear relationship between a disclosure button and the expanded choices it reveals.", "ja": "disclosure buttonと表示されるexpanded choiceの関係を明確にする。"},
       "review_note": "Recovered the explicit control-to-expanded-content relationship recommendation."
+    },
+    "HIG-COMPONENTS-GAUGES-0001": {
+      "source": {"source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81", "source_sentence_hash": "de5fc389968e93b7ed501a9e46e717f48867c87f73af1ca3caa54383b2dd75ef", "section_path": ["Gauges", "Best practices"]},
+      "title": "Ensure gauge labels describe the value and range endpoints",
+      "statement": {"en": "Ensure succinct gauge labels describe the current value and both endpoints of the range.", "ja": "簡潔なgauge labelでcurrent valueとrangeの両endpointを示す。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Not every gauge style displays every label.", "VoiceOver reads visible labels so people can understand the gauge without seeing the screen."],
+      "review_note": "Raised the value-and-endpoint label requirement to an accessibility MUST because VoiceOver depends on the visible labels."
+    },
+    "HIG-COMPONENTS-GAUGES-0002": {
+      "source": {"source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81", "source_sentence_hash": "c3e230da28bfcf093c8460380052fcfd046974fc70f079e80e8ed77cac84498a", "section_path": ["Gauges", "Best practices"]},
+      "statement": {"en": "Consider a path gradient when it helps communicate a gauge's purpose.", "ja": "gaugeのpurposeを伝えやすくする場合はpath gradientを検討する。"},
+      "conditions": ["A temperature gauge can map a red-to-blue spectrum to hot-to-cold values."],
+      "review_note": "Retained the explicit Consider guidance at MAY."
     }
   }
 }

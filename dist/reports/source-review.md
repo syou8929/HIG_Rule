@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3222
-- Reviewed batches: 182
+- Reviewed rules: 3224
+- Reviewed batches: 183
 - Official source only: yes
-- Reviewed at: 2026-07-23T20:40:00Z
+- Reviewed at: 2026-07-23T21:00:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -330,6 +330,8 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-EDIT-MENUS-0013 · high — Recovered the independent command-wording rule from the same source paragraph as label length. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
 - HIG-COMPONENTS-EDIT-MENUS-0014 · high — Recovered the explicit unsupported-platform constraint as AVOID and scoped it only to tvOS and watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
 - HIG-COMPONENTS-EDIT-MENUS-0015 · high — Recovered the conditional placement rule and recorded both the default behavior and customization limit. ([source](https://developer.apple.com/design/human-interface-guidelines/edit-menus))
+- HIG-COMPONENTS-GAUGES-0001 · high — Raised the value-and-endpoint label requirement to an accessibility MUST because VoiceOver depends on the visible labels. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
+- HIG-COMPONENTS-GAUGES-0002 · high — Retained the explicit Consider guidance at MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-GAUGES-0003 · high — Preserved Consider and recorded the large-range legibility condition. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-GAUGES-0004 · high — Preserved optional color changes and both documented presentation approaches. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-GAUGES-0005 · high — Recorded the descriptive tvOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))

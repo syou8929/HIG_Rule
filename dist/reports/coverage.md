@@ -7,8 +7,8 @@
 - Pages with rules: 156
 - Active atomic rules: 3432
 - Pages without rules: 16
-- Low-confidence rules: 184
-- Rules requiring human review: 184
+- Low-confidence rules: 182
+- Rules requiring human review: 182
 - Reference notes: 915
 
 ## Rules by category
@@ -24,9 +24,9 @@
 
 - AVOID: 464
 - MAY: 393
-- MUST: 490
+- MUST: 491
 - MUST_NOT: 81
-- SHOULD: 2004
+- SHOULD: 2003
 
 ## Rules by platform
 
@@ -69,8 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-GAUGES-0001
-- HIG-COMPONENTS-GAUGES-0002
 - HIG-COMPONENTS-LABELS-0001
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
@@ -256,8 +254,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-GAUGES-0001
-- HIG-COMPONENTS-GAUGES-0002
 - HIG-COMPONENTS-LABELS-0001
 - HIG-COMPONENTS-LABELS-0002
 - HIG-COMPONENTS-LABELS-0003
