@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T07:02:55.153Z. 2914 active rules; 4 deprecated rules.
+Generated 2026-07-23T07:14:29.123Z. 2922 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -264,18 +264,26 @@ Generated 2026-07-23T07:02:55.153Z. 2914 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-COLOR-0038 · SHOULD · high** — Use tertiary iOS and iPadOS background colors to group content within secondary elements. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 ### dark-mode
 
-- **HIG-FOUNDATIONS-DARK-MODE-0001 · AVOID · low** — Exclude offering an app-specific appearance setting from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0002 · MUST · medium** — Verify that that your app looks good in both appearance modes. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0003 · SHOULD · low** — Apply the documented Dark Mode guidance to test your content to make sure that it remains comfortably legible in both appearance modes. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0004 · SHOULD · low** — Apply the documented Dark Mode guidance to aim for sufficient color contrast in all appearances. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0005 · SHOULD · low** — Choose or apply sF Symbols wherever possible in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0006 · SHOULD · low** — Apply the documented Dark Mode guidance to design separate interface icons for the light and dark appearances if necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0007 · MUST · medium** — Verify that full-color images and icons look good in both appearances. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0008 · SHOULD · low** — Choose or apply the system-provided label colors for labels in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- **HIG-FOUNDATIONS-DARK-MODE-0009 · SHOULD · low** — Choose or apply system views to draw text fields and text views in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0001 · AVOID · high** — Avoid offering an app-specific appearance setting. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0002 · MUST · high** — Ensure the app looks good in both light and dark appearance modes. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0003 · SHOULD · high** — Test content in both appearance modes with relevant accessibility settings. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0004 · SHOULD · high** — Aim for sufficient color contrast in every appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0005 · SHOULD · high** — Use SF Symbols wherever possible in both appearance modes. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0006 · SHOULD · high** — Design separate interface icons for light and dark appearances when needed. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0007 · MUST · high** — Ensure full-color images and icons look good in both light and dark appearances. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0008 · SHOULD · high** — Use system-provided label colors for labels. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0009 · SHOULD · high** — Use system views to draw text fields and text views. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - **HIG-FOUNDATIONS-DARK-MODE-0010 · SHOULD · high** — Prefer system background colors in iOS and iPadOS Dark Mode. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - **HIG-FOUNDATIONS-DARK-MODE-0011 · SHOULD · high** — Include transparency in a custom macOS component background when appropriate for desktop tinting. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - **HIG-FOUNDATIONS-DARK-MODE-0012 · AVOID · high** — Avoid transparency in a custom macOS component background when the state uses color. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0013 · MAY · high** — In rare cases, consider using only a dark appearance in the interface. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0014 · SHOULD · high** — Use colors that adapt to the current appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0015 · SHOULD · high** — When a custom color is needed, define it in a Color Set and supply bright and dim variants. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0016 · AVOID · high** — Avoid hard-coded color values and colors that don't adapt to the current appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0017 · MUST · high** — Ensure the contrast ratio between colors is at least 4.5:1 in every appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0018 · SHOULD · high** — Aim for a 7:1 contrast ratio between custom foreground and background colors. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0019 · SHOULD · high** — Use a slightly darkened treatment for white content-image backgrounds when needed in Dark Mode. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- **HIG-FOUNDATIONS-DARK-MODE-0020 · MUST · high** — Ensure content remains comfortably legible in both appearance modes under relevant accessibility settings. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 ### icons
 
 - **HIG-FOUNDATIONS-ICONS-0001 · SHOULD · low** — Apply the documented Icons guidance to create a recognizable, highly simplified design. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))

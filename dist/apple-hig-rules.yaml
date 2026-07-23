@@ -70792,16 +70792,16 @@
   apple_native_rule: Use tertiary iOS and iPadOS background colors to group content within secondary elements.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0001
-  title: Avoid offering an app-specific appearance setting
+  title: Avoid app-specific appearance settings
   category: foundations
   topic: dark-mode
   subtopic: best-practices
   statement:
-    en: Exclude offering an app-specific appearance setting from the applicable experience.
-    ja: 該当する体験ではoffering an app-specific appearance settingを避ける。
+    en: Avoid offering an app-specific appearance setting.
+    ja: app独自のappearance settingを提供しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -70819,7 +70819,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Respect the systemwide appearance choice so people don't need to adjust multiple settings or mistake the app for being unresponsive.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -70827,7 +70827,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude offering an app-specific appearance setting from the applicable experience.” in the documented Dark Mode context?
+      - Does the design satisfy “Avoid offering an app-specific appearance setting.” in the documented Dark Mode context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -70842,25 +70842,25 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: 8cff52f9844bc936e7d56a5519aeb079b735a5c95054166c6fa158c3a702bf4f
-    evidence_paraphrase: Exclude offering an app-specific appearance setting from the applicable experience.
+    evidence_paraphrase: Avoid offering an app-specific appearance setting.
   tags:
     - foundations
     - dark-mode
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude offering an app-specific appearance setting from the applicable experience.
+  apple_native_rule: Avoid offering an app-specific appearance setting.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0002
-  title: Ensure that your app looks good in both appearance modes
+  title: Ensure the app works visually in both appearance modes
   category: foundations
   topic: dark-mode
   subtopic: best-practices
   statement:
-    en: Verify that that your app looks good in both appearance modes.
-    ja: that your app looks good in both appearance modesを満たしていることを確認する。
+    en: Ensure the app looks good in both light and dark appearance modes.
+    ja: appがlightとdarkの両appearance modeで適切に見えるようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -70880,7 +70880,7 @@
     modalities:
       - gaze
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Account for the Auto appearance setting changing modes while the app is running.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -70888,7 +70888,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that that your app looks good in both appearance modes.” in the documented Dark Mode context?
+      - Does the design satisfy “Ensure the app looks good in both light and dark appearance modes.” in the documented Dark Mode context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -70903,7 +70903,7 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: 9837fd60a805a5cf757ae8a5805e6cc45a03711f26d3dc5a0dd49b37a5a6a923
-    evidence_paraphrase: Verify that that your app looks good in both appearance modes.
+    evidence_paraphrase: Ensure the app looks good in both light and dark appearance modes.
   tags:
     - foundations
     - dark-mode
@@ -70911,19 +70911,19 @@
     - gaze
   priority_rank: 6
   status: active
-  apple_native_rule: Verify that that your app looks good in both appearance modes.
+  apple_native_rule: Ensure the app looks good in both light and dark appearance modes.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0003
-  title: Test your content to make sure that it remains comfortably legible in both appearance modes
+  title: Test both appearances with relevant accessibility settings
   category: foundations
   topic: dark-mode
   subtopic: best-practices
   statement:
-    en: Apply the documented Dark Mode guidance to test your content to make sure that it remains comfortably legible in both appearance modes.
-    ja: 「Dark Mode」において「Test your content to make sure that it remains comfortably legible in both appearance modes」の指針を適用する。
+    en: Test content in both appearance modes with relevant accessibility settings.
+    ja: 関連するaccessibility settingを使ってcontentを両appearance modeでtestする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -70941,7 +70941,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Test Increase Contrast and Reduce Transparency separately and together.
+    - The separate split rule preserves the mandatory legibility outcome.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -70949,7 +70950,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Dark Mode guidance to test your content to make sure that it remains comfortably legible in both appearance modes.” in the documented Dark Mode context?
+      - Does the design satisfy “Test content in both appearance modes with relevant accessibility settings.” in the documented Dark Mode context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -70964,26 +70965,26 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: 5a1e32f34e318c8dc88e098bc6084d34460b5b2144185889acfc4abb570556d6
-    evidence_paraphrase: Apply the documented Dark Mode guidance to test your content to make sure that it remains comfortably legible in both appearance modes.
+    evidence_paraphrase: Test content in both appearance modes with relevant accessibility settings.
   tags:
     - foundations
     - dark-mode
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Dark Mode guidance to test your content to make sure that it remains comfortably legible in both appearance modes.
+  apple_native_rule: Test content in both appearance modes with relevant accessibility settings.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0004
-  title: Aim for sufficient color contrast in all appearances
+  title: Aim for sufficient contrast in every appearance
   category: foundations
   topic: dark-mode
   subtopic: dark-mode-colors
   statement:
-    en: Apply the documented Dark Mode guidance to aim for sufficient color contrast in all appearances.
-    ja: 「Dark Mode」において「Aim for sufficient color contrast in all appearances」の指針を適用する。
+    en: Aim for sufficient color contrast in every appearance.
+    ja: すべてのappearanceで十分なcolor contrastを目指す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -71001,7 +71002,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - System-defined colors can help maintain foreground-background contrast.
+    - Apply the separate 4.5:1 minimum and 7:1 custom-color target.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -71010,7 +71012,7 @@
     automated:
       - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
     manual:
-      - Does the design satisfy “Apply the documented Dark Mode guidance to aim for sufficient color contrast in all appearances.” in the documented Dark Mode context?
+      - Does the design satisfy “Aim for sufficient color contrast in every appearance.” in the documented Dark Mode context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -71025,14 +71027,14 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: 72828c64c9c22bc84f03e1f7adfc2e478848f82db228054cfa59cf52bdf79980
-    evidence_paraphrase: Apply the documented Dark Mode guidance to aim for sufficient color contrast in all appearances.
+    evidence_paraphrase: Aim for sufficient color contrast in every appearance.
   tags:
     - foundations
     - dark-mode
     - dark-mode-colors
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Dark Mode guidance to aim for sufficient color contrast in all appearances.
+  apple_native_rule: Aim for sufficient color contrast in every appearance.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0005
   title: Use SF Symbols wherever possible
@@ -71040,11 +71042,11 @@
   topic: dark-mode
   subtopic: icons-and-images
   statement:
-    en: Choose or apply sF Symbols wherever possible in the documented context.
-    ja: 該当する状況ではSF Symbols wherever possibleを採用する。
+    en: Use SF Symbols wherever possible in both appearance modes.
+    ja: 両appearance modeで可能な限りSF Symbolsを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -71062,7 +71064,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use dynamic tint colors or vibrancy so symbols adapt across appearances.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -71070,7 +71072,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply sF Symbols wherever possible in the documented context.” in the documented Dark Mode context?
+      - Does the design satisfy “Use SF Symbols wherever possible in both appearance modes.” in the documented Dark Mode context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -71086,7 +71088,7 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: d6b38005693197981ee9b73d1d2c0c70df25d0ba2c2be6bf97abaf7e3b30673a
-    evidence_paraphrase: Choose or apply sF Symbols wherever possible in the documented context.
+    evidence_paraphrase: Use SF Symbols wherever possible in both appearance modes.
   tags:
     - foundations
     - dark-mode
@@ -71094,7 +71096,7 @@
     - icons-and-images
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply sF Symbols wherever possible in the documented context.
+  apple_native_rule: Use SF Symbols wherever possible in both appearance modes.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0006
   title: Design separate interface icons for the light and dark appearances if necessary
@@ -71102,11 +71104,11 @@
   topic: dark-mode
   subtopic: icons-and-images
   statement:
-    en: Apply the documented Dark Mode guidance to design separate interface icons for the light and dark appearances if necessary.
-    ja: 「Dark Mode」において「Design separate interface icons for the light and dark appearances if necessary」の指針を適用する。
+    en: Design separate interface icons for light and dark appearances when needed.
+    ja: 必要な場合はlightとdark appearance向けに別々のinterface iconを設計する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -71124,7 +71126,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use appearance-specific outlines or borders when an icon edge otherwise loses contrast.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -71132,7 +71134,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Dark Mode guidance to design separate interface icons for the light and dark appearances if necessary.” in the documented Dark Mode context?
+      - Does the design satisfy “Design separate interface icons for light and dark appearances when needed.” in the documented Dark Mode context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -71148,7 +71150,7 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: 00721c7e674e4a349bc6d3cd8f5f82e8f7c2185f97f4078099f870d82d24c25f
-    evidence_paraphrase: Apply the documented Dark Mode guidance to design separate interface icons for the light and dark appearances if necessary.
+    evidence_paraphrase: Design separate interface icons for light and dark appearances when needed.
   tags:
     - foundations
     - dark-mode
@@ -71156,18 +71158,18 @@
     - icons-and-images
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Dark Mode guidance to design separate interface icons for the light and dark appearances if necessary.
+  apple_native_rule: Design separate interface icons for light and dark appearances when needed.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0007
-  title: Make sure full-color images and icons look good in both appearances
+  title: Ensure full-color images and icons work in both appearances
   category: foundations
   topic: dark-mode
   subtopic: icons-and-images
   statement:
-    en: Verify that full-color images and icons look good in both appearances.
-    ja: full-color images and icons look good in both appearancesを満たしていることを確認する。
+    en: Ensure full-color images and icons look good in both light and dark appearances.
+    ja: full-color imageとiconがlightとdarkの両appearanceで適切に見えるようにする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -71187,7 +71189,8 @@
     modalities:
       - gaze
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Reuse one asset only when it works in both appearances.
+    - Otherwise modify it or provide separate light and dark assets in an asset catalog.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -71195,7 +71198,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that full-color images and icons look good in both appearances.” in the documented Dark Mode context?
+      - Does the design satisfy “Ensure full-color images and icons look good in both light and dark appearances.” in the documented Dark Mode context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -71211,7 +71214,7 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: 057595bdb0999eef433f5a8cfcf09067f4be1a05cf8f9277cb746e726c381fc7
-    evidence_paraphrase: Verify that full-color images and icons look good in both appearances.
+    evidence_paraphrase: Ensure full-color images and icons look good in both light and dark appearances.
   tags:
     - foundations
     - dark-mode
@@ -71220,7 +71223,7 @@
     - gaze
   priority_rank: 6
   status: active
-  apple_native_rule: Verify that full-color images and icons look good in both appearances.
+  apple_native_rule: Ensure full-color images and icons look good in both light and dark appearances.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0008
   title: Use the system-provided label colors for labels
@@ -71228,11 +71231,11 @@
   topic: dark-mode
   subtopic: text
   statement:
-    en: Choose or apply the system-provided label colors for labels in the documented context.
-    ja: 該当する状況ではthe system-provided label colors for labelsを採用する。
+    en: Use system-provided label colors for labels.
+    ja: labelにはsystem提供のlabel colorを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -71250,7 +71253,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Primary, secondary, tertiary, and quaternary label colors adapt automatically across appearances.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -71258,7 +71261,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the system-provided label colors for labels in the documented context.” in the documented Dark Mode context?
+      - Does the design satisfy “Use system-provided label colors for labels.” in the documented Dark Mode context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -71274,7 +71277,7 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: 67f4b4b44ae90d38b5b546d5b4dfe981a26ffe7005de029d9941f6e548680302
-    evidence_paraphrase: Choose or apply the system-provided label colors for labels in the documented context.
+    evidence_paraphrase: Use system-provided label colors for labels.
   tags:
     - foundations
     - dark-mode
@@ -71282,7 +71285,7 @@
     - text
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply the system-provided label colors for labels in the documented context.
+  apple_native_rule: Use system-provided label colors for labels.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0009
   title: Use system views to draw text fields and text views
@@ -71290,11 +71293,11 @@
   topic: dark-mode
   subtopic: text
   statement:
-    en: Choose or apply system views to draw text fields and text views in the documented context.
-    ja: 該当する状況ではsystem views to draw text fields and text viewsを採用する。
+    en: Use system views to draw text fields and text views.
+    ja: text fieldとtext viewの描画にはsystem viewを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -71312,7 +71315,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - System views adapt text for backgrounds and vibrancy.
+    - When possible, prefer a system-provided text view over custom text drawing.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
@@ -71320,7 +71324,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply system views to draw text fields and text views in the documented context.” in the documented Dark Mode context?
+      - Does the design satisfy “Use system views to draw text fields and text views.” in the documented Dark Mode context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -71336,7 +71340,7 @@
     retrieved_at: 2026-07-21T18:55:58Z
     source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
     source_sentence_hash: 95798a92900287d40bfaa9e214fed9554c6b62f9690185b1352ee3251676ee07
-    evidence_paraphrase: Choose or apply system views to draw text fields and text views in the documented context.
+    evidence_paraphrase: Use system views to draw text fields and text views.
   tags:
     - foundations
     - dark-mode
@@ -71344,7 +71348,7 @@
     - text
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply system views to draw text fields and text views in the documented context.
+  apple_native_rule: Use system views to draw text fields and text views.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0010
   title: Prefer system background colors in iOS and iPadOS Dark Mode
@@ -71515,6 +71519,490 @@
   priority_rank: 4
   status: active
   apple_native_rule: Avoid transparency in a custom macOS component background when the state uses color.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-DARK-MODE-0013
+  title: Consider a dark-only interface only in rare cases
+  category: foundations
+  topic: dark-mode
+  subtopic: best-practices
+  statement:
+    en: In rare cases, consider using only a dark appearance in the interface.
+    ja: まれな場合に限りinterfaceをdark appearanceだけにすることを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - A permanently dark interface can fit immersive media viewing when it helps the UI recede and keeps focus on media.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDark Modeの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “In rare cases, consider using only a dark appearance in the interface.” in the documented Dark Mode context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+    page_title: Dark Mode
+    section_path:
+      - Dark Mode
+      - Best practices
+    retrieved_at: 2026-07-21T18:55:58Z
+    source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
+    source_sentence_hash: 08b8800b6cee9828431cff3cf0f68212a26bb9dbc495caee349f58bdf344fc2e
+    evidence_paraphrase: In rare cases, consider using only a dark appearance in the interface.
+  tags:
+    - foundations
+    - dark-mode
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: In rare cases, consider using only a dark appearance in the interface.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-DARK-MODE-0014
+  title: Use colors that adapt to the current appearance
+  category: foundations
+  topic: dark-mode
+  subtopic: dark-mode-colors
+  statement:
+    en: Use colors that adapt to the current appearance.
+    ja: 現在のappearanceへ適応するcolorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Prefer semantic system colors that automatically adapt.
+    - Use the separate custom-color rule when a semantic color doesn't fit.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDark Modeの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use colors that adapt to the current appearance.” in the documented Dark Mode context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+    page_title: Dark Mode
+    section_path:
+      - Dark Mode
+      - Dark Mode colors
+    retrieved_at: 2026-07-21T18:55:58Z
+    source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
+    source_sentence_hash: f46f7d69dfbe48883c6100330259e2b67e334e61a493e17cd7a0ec27f2fd76ed
+    evidence_paraphrase: Use colors that adapt to the current appearance.
+  tags:
+    - foundations
+    - dark-mode
+    - dark-mode-colors
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use colors that adapt to the current appearance.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-DARK-MODE-0015
+  title: Define appearance variants for custom colors
+  category: foundations
+  topic: dark-mode
+  subtopic: dark-mode-colors
+  statement:
+    en: When a custom color is needed, define it in a Color Set and supply bright and dim variants.
+    ja: custom colorが必要な場合はColor Setで定義しbrightとdim variantを用意する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Use an asset-catalog Color Set in Xcode for colors that semantic system colors can't provide.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDark Modeの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When a custom color is needed, define it in a Color Set and supply bright and dim variants.” in the documented Dark Mode context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+    page_title: Dark Mode
+    section_path:
+      - Dark Mode
+      - Dark Mode colors
+    retrieved_at: 2026-07-21T18:55:58Z
+    source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
+    source_sentence_hash: f46f7d69dfbe48883c6100330259e2b67e334e61a493e17cd7a0ec27f2fd76ed
+    evidence_paraphrase: When a custom color is needed, define it in a Color Set and supply bright and dim variants.
+  tags:
+    - foundations
+    - dark-mode
+    - dark-mode-colors
+  priority_rank: 6
+  status: active
+  apple_native_rule: When a custom color is needed, define it in a Color Set and supply bright and dim variants.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-DARK-MODE-0016
+  title: Avoid hard-coded and nonadaptive colors
+  category: foundations
+  topic: dark-mode
+  subtopic: dark-mode-colors
+  statement:
+    en: Avoid hard-coded color values and colors that don't adapt to the current appearance.
+    ja: hard-codeされたcolor valueと現在のappearanceへ適応しないcolorを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Use semantic colors or appearance-specific Color Set variants instead.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDark Modeの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid hard-coded color values and colors that don't adapt to the current appearance.” in the documented Dark Mode context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+    page_title: Dark Mode
+    section_path:
+      - Dark Mode
+      - Dark Mode colors
+    retrieved_at: 2026-07-21T18:55:58Z
+    source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
+    source_sentence_hash: f46f7d69dfbe48883c6100330259e2b67e334e61a493e17cd7a0ec27f2fd76ed
+    evidence_paraphrase: Avoid hard-coded color values and colors that don't adapt to the current appearance.
+  tags:
+    - foundations
+    - dark-mode
+    - dark-mode-colors
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid hard-coded color values and colors that don't adapt to the current appearance.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-DARK-MODE-0017
+  title: Maintain at least a 4.5:1 color contrast ratio
+  category: foundations
+  topic: dark-mode
+  subtopic: dark-mode-colors
+  statement:
+    en: Ensure the contrast ratio between colors is at least 4.5:1 in every appearance.
+    ja: すべてのappearanceでcolor間のcontrast ratioを4.5:1以上にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Treat 4.5:1 as the documented minimum; the separate custom-color rule recommends a higher ratio.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDark Modeの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “Ensure the contrast ratio between colors is at least 4.5:1 in every appearance.” in the documented Dark Mode context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+    page_title: Dark Mode
+    section_path:
+      - Dark Mode
+      - Dark Mode colors
+    retrieved_at: 2026-07-21T18:55:58Z
+    source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
+    source_sentence_hash: 72828c64c9c22bc84f03e1f7adfc2e478848f82db228054cfa59cf52bdf79980
+    evidence_paraphrase: Ensure the contrast ratio between colors is at least 4.5:1 in every appearance.
+  tags:
+    - foundations
+    - dark-mode
+    - dark-mode-colors
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure the contrast ratio between colors is at least 4.5:1 in every appearance.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-DARK-MODE-0018
+  title: Aim for 7:1 contrast with custom foreground and background colors
+  category: foundations
+  topic: dark-mode
+  subtopic: dark-mode-colors
+  statement:
+    en: Aim for a 7:1 contrast ratio between custom foreground and background colors.
+    ja: custom foreground colorとbackground colorのcontrast ratio 7:1を目指す。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Apply the higher target especially to small text while preserving the separate 4.5:1 minimum.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDark Modeの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “Aim for a 7:1 contrast ratio between custom foreground and background colors.” in the documented Dark Mode context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+    page_title: Dark Mode
+    section_path:
+      - Dark Mode
+      - Dark Mode colors
+    retrieved_at: 2026-07-21T18:55:58Z
+    source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
+    source_sentence_hash: 72828c64c9c22bc84f03e1f7adfc2e478848f82db228054cfa59cf52bdf79980
+    evidence_paraphrase: Aim for a 7:1 contrast ratio between custom foreground and background colors.
+  tags:
+    - foundations
+    - dark-mode
+    - dark-mode-colors
+  priority_rank: 6
+  status: active
+  apple_native_rule: Aim for a 7:1 contrast ratio between custom foreground and background colors.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-DARK-MODE-0019
+  title: Soften white image backgrounds in Dark Mode
+  category: foundations
+  topic: dark-mode
+  subtopic: dark-mode-colors
+  statement:
+    en: Use a slightly darkened treatment for white content-image backgrounds when needed in Dark Mode.
+    ja: Dark Modeで必要な場合はcontent imageのwhite backgroundを少し暗く処理する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Prevent a white image background from appearing to glow against the surrounding dark interface.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Dark Mode experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるDark Modeの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use a slightly darkened treatment for white content-image backgrounds when needed in Dark Mode.” in the documented Dark Mode context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+    page_title: Dark Mode
+    section_path:
+      - Dark Mode
+      - Dark Mode colors
+    retrieved_at: 2026-07-21T18:55:58Z
+    source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
+    source_sentence_hash: 36a2cbfc7e36f2cc89a1b5ded819e866f4640471e12e0301f2f7c58348580e4e
+    evidence_paraphrase: Use a slightly darkened treatment for white content-image backgrounds when needed in Dark Mode.
+  tags:
+    - foundations
+    - dark-mode
+    - dark-mode-colors
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use a slightly darkened treatment for white content-image backgrounds when needed in Dark Mode.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-DARK-MODE-0020
+  title: Ensure content remains legible in both appearance modes
+  category: foundations
+  topic: dark-mode
+  subtopic: best-practices
+  statement:
+    en: Ensure content remains comfortably legible in both appearance modes under relevant accessibility settings.
+    ja: 関連するaccessibility settingの下でもcontentを両appearance modeで快適に読める状態にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+    components: []
+    modalities: []
+  conditions:
+    - Test Dark Mode with Increase Contrast and Reduce Transparency both separately and together.
+  exceptions: []
+  rationale:
+    en: Appearance and accessibility combinations can reduce contrast enough to make content illegible.
+    ja: appearanceとaccessibility設定の組み合わせによりcontrastが低下し、contentが読めなくなる場合があります。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure content remains comfortably legible in both appearance modes under relevant accessibility settings.” in the documented Dark Mode context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/dark-mode
+    page_title: Dark Mode
+    section_path:
+      - Dark Mode
+      - Best practices
+    retrieved_at: 2026-07-21T18:55:58Z
+    source_hash: a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160
+    source_sentence_hash: 5a1e32f34e318c8dc88e098bc6084d34460b5b2144185889acfc4abb570556d6
+    evidence_paraphrase: Ensure content remains comfortably legible in both appearance modes under relevant accessibility settings.
+  tags:
+    - foundations
+    - dark-mode
+    - best-practices
+    - split-guidance
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure content remains comfortably legible in both appearance modes under relevant accessibility settings.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-ICONS-0001
   title: Create a recognizable, highly simplified design

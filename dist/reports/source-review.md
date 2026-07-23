@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2220
-- Reviewed batches: 143
+- Reviewed rules: 2237
+- Reviewed batches: 144
 - Official source only: yes
-- Reviewed at: 2026-07-23T06:57:46Z
+- Reviewed at: 2026-07-23T07:10:53Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1090,9 +1090,26 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-COLOR-0036 · high — Recovered the first structured hierarchy row. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0037 · high — Recovered the second structured hierarchy row. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0038 · high — Recovered the third structured hierarchy row. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-DARK-MODE-0001 · high — Retained direct Avoid guidance as AVOID, not MUST_NOT, and recorded the system-preference rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0002 · high — Retained the explicit Ensure-based MUST and recorded the runtime Auto-transition context. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0003 · high — Narrowed the base rule to the testing action and split the explicit make-sure legibility outcome into a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0004 · high — Retained the general Aim guidance as SHOULD and separated both numeric thresholds. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0005 · high — Retained the qualified wherever-possible recommendation and recorded its adaptive treatments. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0006 · high — Retained the conditional recommendation and recorded the contrast-driven threshold for separate assets. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0007 · high — Retained the explicit Make sure requirement and recorded the single-asset and variant branches. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0008 · high — Recorded the adaptive label-color hierarchy and retained SHOULD strength. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0009 · high — Recorded the vibrancy behavior and qualified system-view preference. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-DARK-MODE-0010 · high — Recorded the dynamic base-to-elevated behavior and the visual distinctions custom colors can obscure. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-DARK-MODE-0011 · high — Made the visible-background and neutral-state limits explicit and separated the colored-state anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-DARK-MODE-0012 · high — Recovered the colored-state transparency warning as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0013 · high — Activated the previously unrecognized rare Consider lead without generalizing its immersive-media example. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0014 · high — Activated the Embrace lead as SHOULD and recorded the semantic-color preference. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0015 · high — Recovered the conditional custom-color implementation guidance without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0016 · high — Recovered the direct Avoid clause and retained AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0017 · high — Recovered the at-a-minimum Make sure requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0018 · high — Recovered the higher custom-color target as SHOULD rather than treating it as the minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0019 · high — Activated the Soften lead and preserved the image and Dark Mode conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0020 · high — Recorded the split explicit make-sure legibility outcome as an accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-ICONS-0008 · high — Recorded the shape, palette, and minimum rendered-size constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0009 · high — Retained MAY and recorded the source's size-specific simplification techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0010 · high — Recorded the fold-mask obstruction and every documented background asset size. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))

@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2914
+- Active atomic rules: 2922
 - Pages without rules: 16
-- Low-confidence rules: 643
-- Rules requiring human review: 643
+- Low-confidence rules: 636
+- Rules requiring human review: 636
 - Reference notes: 904
 
 ## Rules by category
 
 - components: 1026
-- foundations: 387
+- foundations: 395
 - getting-started: 100
 - inputs: 245
 - patterns: 368
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 413
-- MAY: 342
-- MUST: 319
+- AVOID: 414
+- MAY: 343
+- MUST: 321
 - MUST_NOT: 34
-- SHOULD: 1806
+- SHOULD: 1810
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 1950
-- ipados: 1926
-- macos: 1589
-- tvos: 1224
+- ios: 1958
+- ipados: 1934
+- macos: 1597
+- tvos: 1232
 - visionos: 1637
 - watchos: 1331
 
 ## Rules by testability
 
-- hybrid: 84
-- manual: 2830
+- hybrid: 86
+- manual: 2836
 
 ## Blocked pages
 
@@ -129,13 +129,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-FOUNDATIONS-DARK-MODE-0001
-- HIG-FOUNDATIONS-DARK-MODE-0003
-- HIG-FOUNDATIONS-DARK-MODE-0004
-- HIG-FOUNDATIONS-DARK-MODE-0005
-- HIG-FOUNDATIONS-DARK-MODE-0006
-- HIG-FOUNDATIONS-DARK-MODE-0008
-- HIG-FOUNDATIONS-DARK-MODE-0009
 - HIG-FOUNDATIONS-ICONS-0001
 - HIG-FOUNDATIONS-ICONS-0002
 - HIG-FOUNDATIONS-ICONS-0003
@@ -775,13 +768,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-FOUNDATIONS-DARK-MODE-0001
-- HIG-FOUNDATIONS-DARK-MODE-0003
-- HIG-FOUNDATIONS-DARK-MODE-0004
-- HIG-FOUNDATIONS-DARK-MODE-0005
-- HIG-FOUNDATIONS-DARK-MODE-0006
-- HIG-FOUNDATIONS-DARK-MODE-0008
-- HIG-FOUNDATIONS-DARK-MODE-0009
 - HIG-FOUNDATIONS-ICONS-0001
 - HIG-FOUNDATIONS-ICONS-0002
 - HIG-FOUNDATIONS-ICONS-0003

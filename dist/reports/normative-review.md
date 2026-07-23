@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 353
-- Retained MUST: 319
+- Reviewed rules: 355
+- Retained MUST: 321
 - Retained MUST_NOT: 34
-- Normative level changes: 120
-- Mixed-strength candidates split: 1
+- Normative level changes: 123
+- Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T06:57:46Z
+- Reviewed at: 2026-07-23T07:10:53Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -125,6 +125,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-COLOR-0028 — Recovered the explicit Make sure outcome separately from the Consider research prompt. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0031 — Recovered the second explicit Make sure outcome from the content-layer paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0033 — Recovered the explicit need-to production prerequisite as a conditional MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-DARK-MODE-0002 — Retained MUST from the explicit Ensure directive and recorded the runtime Auto-transition context. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0007 — Retained MUST from the explicit Make sure directive and recorded the single-asset and variant branches. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0017 — Recovered the explicit at-a-minimum Make sure contrast requirement separately from general and higher-target guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-IMAGES-0005 — Changed SHOULD to MUST after confirming the supporting must-be-opaque platform constraint and the error produced by a nonopaque background. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0018 — Recovered MUST from the explicit required-to-support platform constraint and limited it to images that need parallax. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0019 — Retained MUST from the explicit app-icon must-use directive without extending it to optional focusable images. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
@@ -303,6 +306,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0047 — Recovered MUST_NOT from the explicit Always avoid prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0050 — Recovered MUST from the supporting Make sure directive that protects final-amount accuracy. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0030 — Split from the source lead's consider clause so optional guidance is not raised to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
+- HIG-FOUNDATIONS-DARK-MODE-0020 — Split the explicit make-sure legibility outcome from the testing action so the accessibility requirement remains atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 
 ## Reviewed rules
 
@@ -440,8 +444,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-COLOR-0028 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure outcome separately from the Consider research prompt. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered the second explicit Make sure outcome from the content-layer paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0033 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit need-to production prerequisite as a conditional MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- HIG-FOUNDATIONS-DARK-MODE-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
-- HIG-FOUNDATIONS-DARK-MODE-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Ensure directive and recorded the runtime Auto-transition context. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0007 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Make sure directive and recorded the single-asset and variant branches. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0017 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit at-a-minimum Make sure contrast requirement separately from general and higher-target guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-DARK-MODE-0020 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-IMAGES-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0005 · MUST · retained_with_atomicity_or_scope_correction — Changed SHOULD to MUST after confirming the supporting must-be-opaque platform constraint and the error produced by a nonopaque background. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))

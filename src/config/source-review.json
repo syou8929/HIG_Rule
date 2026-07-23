@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T06:57:46Z",
+  "reviewed_at": "2026-07-23T07:10:53Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2423,6 +2423,39 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode", "source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160"}],
       "rule_ids": ["HIG-FOUNDATIONS-DARK-MODE-0010", "HIG-FOUNDATIONS-DARK-MODE-0011", "HIG-FOUNDATIONS-DARK-MODE-0012"],
       "review_note": "Completed the priority-4 Dark Mode platform sections; retained both existing IDs, recovered the colored-state transparency AVOID, and introduced no unsupported MUST rules."
+    },
+    {
+      "id": "priority-6-dark-mode-common-context-2026-07-23",
+      "reviewed_at": "2026-07-23T07:10:53Z",
+      "review_method": "Rendered Apple HIG Dark Mode best practices, color, icon, image, text, accessibility-setting, and numeric-contrast guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/dark-mode",
+          "source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-DARK-MODE-0001",
+        "HIG-FOUNDATIONS-DARK-MODE-0002",
+        "HIG-FOUNDATIONS-DARK-MODE-0003",
+        "HIG-FOUNDATIONS-DARK-MODE-0004",
+        "HIG-FOUNDATIONS-DARK-MODE-0005",
+        "HIG-FOUNDATIONS-DARK-MODE-0006",
+        "HIG-FOUNDATIONS-DARK-MODE-0007",
+        "HIG-FOUNDATIONS-DARK-MODE-0008",
+        "HIG-FOUNDATIONS-DARK-MODE-0009",
+        "HIG-FOUNDATIONS-DARK-MODE-0013",
+        "HIG-FOUNDATIONS-DARK-MODE-0014",
+        "HIG-FOUNDATIONS-DARK-MODE-0015",
+        "HIG-FOUNDATIONS-DARK-MODE-0016",
+        "HIG-FOUNDATIONS-DARK-MODE-0017",
+        "HIG-FOUNDATIONS-DARK-MODE-0018",
+        "HIG-FOUNDATIONS-DARK-MODE-0019",
+        "HIG-FOUNDATIONS-DARK-MODE-0020"
+      ],
+      "review_note": "Completed common Dark Mode coverage; retained nine stable IDs, recovered eight atomic rules, split testing from mandatory legibility, recovered the explicit 4.5:1 minimum as MUST, preserved 7:1 as a higher SHOULD target, and kept direct Avoid guidance below MUST_NOT."
     },
     {
       "id": "priority-4-images-platform-context-2026-07-21",
@@ -7772,6 +7805,128 @@
       "statement": {"en": "Avoid phrases in a widget description that refer to the widget itself.", "ja": "widget descriptionでwidget自体に言及するphraseを避ける。"},
       "conditions": ["Omit framing such as “This widget shows,” “Use this widget to,” or “Add this widget.”"],
       "review_note": "Recovered direct Avoid guidance as AVOID, not MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0001": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "8cff52f9844bc936e7d56a5519aeb079b735a5c95054166c6fa158c3a702bf4f", "section_path": ["Dark Mode", "Best practices"]},
+      "title": "Avoid app-specific appearance settings",
+      "statement": {"en": "Avoid offering an app-specific appearance setting.", "ja": "app独自のappearance settingを提供しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Respect the systemwide appearance choice so people don't need to adjust multiple settings or mistake the app for being unresponsive."],
+      "review_note": "Retained direct Avoid guidance as AVOID, not MUST_NOT, and recorded the system-preference rationale."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0002": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "9837fd60a805a5cf757ae8a5805e6cc45a03711f26d3dc5a0dd49b37a5a6a923", "section_path": ["Dark Mode", "Best practices"]},
+      "title": "Ensure the app works visually in both appearance modes",
+      "statement": {"en": "Ensure the app looks good in both light and dark appearance modes.", "ja": "appがlightとdarkの両appearance modeで適切に見えるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Account for the Auto appearance setting changing modes while the app is running."],
+      "review_note": "Retained the explicit Ensure-based MUST and recorded the runtime Auto-transition context."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0003": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "5a1e32f34e318c8dc88e098bc6084d34460b5b2144185889acfc4abb570556d6", "section_path": ["Dark Mode", "Best practices"]},
+      "title": "Test both appearances with relevant accessibility settings",
+      "statement": {"en": "Test content in both appearance modes with relevant accessibility settings.", "ja": "関連するaccessibility settingを使ってcontentを両appearance modeでtestする。"},
+      "conditions": ["Test Increase Contrast and Reduce Transparency separately and together.", "The separate split rule preserves the mandatory legibility outcome."],
+      "review_note": "Narrowed the base rule to the testing action and split the explicit make-sure legibility outcome into a separate MUST."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0004": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "72828c64c9c22bc84f03e1f7adfc2e478848f82db228054cfa59cf52bdf79980", "section_path": ["Dark Mode", "Dark Mode colors"]},
+      "title": "Aim for sufficient contrast in every appearance",
+      "statement": {"en": "Aim for sufficient color contrast in every appearance.", "ja": "すべてのappearanceで十分なcolor contrastを目指す。"},
+      "conditions": ["System-defined colors can help maintain foreground-background contrast.", "Apply the separate 4.5:1 minimum and 7:1 custom-color target."],
+      "review_note": "Retained the general Aim guidance as SHOULD and separated both numeric thresholds."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0005": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "d6b38005693197981ee9b73d1d2c0c70df25d0ba2c2be6bf97abaf7e3b30673a", "section_path": ["Dark Mode", "Dark Mode colors", "Icons and images"]},
+      "statement": {"en": "Use SF Symbols wherever possible in both appearance modes.", "ja": "両appearance modeで可能な限りSF Symbolsを使う。"},
+      "conditions": ["Use dynamic tint colors or vibrancy so symbols adapt across appearances."],
+      "review_note": "Retained the qualified wherever-possible recommendation and recorded its adaptive treatments."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0006": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "00721c7e674e4a349bc6d3cd8f5f82e8f7c2185f97f4078099f870d82d24c25f", "section_path": ["Dark Mode", "Dark Mode colors", "Icons and images"]},
+      "statement": {"en": "Design separate interface icons for light and dark appearances when needed.", "ja": "必要な場合はlightとdark appearance向けに別々のinterface iconを設計する。"},
+      "conditions": ["Use appearance-specific outlines or borders when an icon edge otherwise loses contrast."],
+      "review_note": "Retained the conditional recommendation and recorded the contrast-driven threshold for separate assets."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0007": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "057595bdb0999eef433f5a8cfcf09067f4be1a05cf8f9277cb746e726c381fc7", "section_path": ["Dark Mode", "Dark Mode colors", "Icons and images"]},
+      "title": "Ensure full-color images and icons work in both appearances",
+      "statement": {"en": "Ensure full-color images and icons look good in both light and dark appearances.", "ja": "full-color imageとiconがlightとdarkの両appearanceで適切に見えるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Reuse one asset only when it works in both appearances.", "Otherwise modify it or provide separate light and dark assets in an asset catalog."],
+      "review_note": "Retained the explicit Make sure requirement and recorded the single-asset and variant branches."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0008": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "67f4b4b44ae90d38b5b546d5b4dfe981a26ffe7005de029d9941f6e548680302", "section_path": ["Dark Mode", "Dark Mode colors", "Text"]},
+      "statement": {"en": "Use system-provided label colors for labels.", "ja": "labelにはsystem提供のlabel colorを使う。"},
+      "conditions": ["Primary, secondary, tertiary, and quaternary label colors adapt automatically across appearances."],
+      "review_note": "Recorded the adaptive label-color hierarchy and retained SHOULD strength."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0009": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "95798a92900287d40bfaa9e214fed9554c6b62f9690185b1352ee3251676ee07", "section_path": ["Dark Mode", "Dark Mode colors", "Text"]},
+      "statement": {"en": "Use system views to draw text fields and text views.", "ja": "text fieldとtext viewの描画にはsystem viewを使う。"},
+      "conditions": ["System views adapt text for backgrounds and vibrancy.", "When possible, prefer a system-provided text view over custom text drawing."],
+      "review_note": "Recorded the vibrancy behavior and qualified system-view preference."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0013": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "08b8800b6cee9828431cff3cf0f68212a26bb9dbc495caee349f58bdf344fc2e", "section_path": ["Dark Mode", "Best practices"]},
+      "title": "Consider a dark-only interface only in rare cases",
+      "statement": {"en": "In rare cases, consider using only a dark appearance in the interface.", "ja": "まれな場合に限りinterfaceをdark appearanceだけにすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A permanently dark interface can fit immersive media viewing when it helps the UI recede and keeps focus on media."],
+      "review_note": "Activated the previously unrecognized rare Consider lead without generalizing its immersive-media example."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0014": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "f46f7d69dfbe48883c6100330259e2b67e334e61a493e17cd7a0ec27f2fd76ed", "section_path": ["Dark Mode", "Dark Mode colors"]},
+      "title": "Use colors that adapt to the current appearance",
+      "statement": {"en": "Use colors that adapt to the current appearance.", "ja": "現在のappearanceへ適応するcolorを使う。"},
+      "conditions": ["Prefer semantic system colors that automatically adapt.", "Use the separate custom-color rule when a semantic color doesn't fit."],
+      "review_note": "Activated the Embrace lead as SHOULD and recorded the semantic-color preference."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0015": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "f46f7d69dfbe48883c6100330259e2b67e334e61a493e17cd7a0ec27f2fd76ed", "section_path": ["Dark Mode", "Dark Mode colors"]},
+      "title": "Define appearance variants for custom colors",
+      "statement": {"en": "When a custom color is needed, define it in a Color Set and supply bright and dim variants.", "ja": "custom colorが必要な場合はColor Setで定義しbrightとdim variantを用意する。"},
+      "conditions": ["Use an asset-catalog Color Set in Xcode for colors that semantic system colors can't provide."],
+      "review_note": "Recovered the conditional custom-color implementation guidance without raising it to MUST."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0016": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "f46f7d69dfbe48883c6100330259e2b67e334e61a493e17cd7a0ec27f2fd76ed", "section_path": ["Dark Mode", "Dark Mode colors"]},
+      "title": "Avoid hard-coded and nonadaptive colors",
+      "statement": {"en": "Avoid hard-coded color values and colors that don't adapt to the current appearance.", "ja": "hard-codeされたcolor valueと現在のappearanceへ適応しないcolorを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Use semantic colors or appearance-specific Color Set variants instead."],
+      "review_note": "Recovered the direct Avoid clause and retained AVOID rather than promoting it to MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0017": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "72828c64c9c22bc84f03e1f7adfc2e478848f82db228054cfa59cf52bdf79980", "section_path": ["Dark Mode", "Dark Mode colors"]},
+      "title": "Maintain at least a 4.5:1 color contrast ratio",
+      "statement": {"en": "Ensure the contrast ratio between colors is at least 4.5:1 in every appearance.", "ja": "すべてのappearanceでcolor間のcontrast ratioを4.5:1以上にする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Treat 4.5:1 as the documented minimum; the separate custom-color rule recommends a higher ratio."],
+      "review_note": "Recovered the at-a-minimum Make sure requirement as MUST."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0018": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "72828c64c9c22bc84f03e1f7adfc2e478848f82db228054cfa59cf52bdf79980", "section_path": ["Dark Mode", "Dark Mode colors"]},
+      "title": "Aim for 7:1 contrast with custom foreground and background colors",
+      "statement": {"en": "Aim for a 7:1 contrast ratio between custom foreground and background colors.", "ja": "custom foreground colorとbackground colorのcontrast ratio 7:1を目指す。"},
+      "conditions": ["Apply the higher target especially to small text while preserving the separate 4.5:1 minimum."],
+      "review_note": "Recovered the higher custom-color target as SHOULD rather than treating it as the minimum."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0019": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "36a2cbfc7e36f2cc89a1b5ded819e866f4640471e12e0301f2f7c58348580e4e", "section_path": ["Dark Mode", "Dark Mode colors"]},
+      "title": "Soften white image backgrounds in Dark Mode",
+      "statement": {"en": "Use a slightly darkened treatment for white content-image backgrounds when needed in Dark Mode.", "ja": "Dark Modeで必要な場合はcontent imageのwhite backgroundを少し暗く処理する。"},
+      "conditions": ["Prevent a white image background from appearing to glow against the surrounding dark interface."],
+      "review_note": "Activated the Soften lead and preserved the image and Dark Mode conditions."
+    },
+    "HIG-FOUNDATIONS-DARK-MODE-0020": {
+      "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "5a1e32f34e318c8dc88e098bc6084d34460b5b2144185889acfc4abb570556d6", "section_path": ["Dark Mode", "Best practices"]},
+      "title": "Ensure content remains legible in both appearance modes",
+      "statement": {"en": "Ensure content remains comfortably legible in both appearance modes under relevant accessibility settings.", "ja": "関連するaccessibility settingの下でもcontentを両appearance modeで快適に読める状態にする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Test Dark Mode with Increase Contrast and Reduce Transparency both separately and together."],
+      "review_note": "Recorded the split explicit make-sure legibility outcome as an accessibility MUST."
     },
     "HIG-FOUNDATIONS-DARK-MODE-0010": {
       "source": {"source_hash": "a48c04108cb076a0970ef5b428caf86d511c9bec03b265c09a96f65ef975b160", "source_sentence_hash": "a274e259c19a03b9ccf100d01474f276454d765148691ec1bf20b07441704c3a", "section_path": ["Dark Mode", "Platform considerations", "iOS, iPadOS"]},
