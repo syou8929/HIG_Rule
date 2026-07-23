@@ -10,7 +10,7 @@ import { duplicateGroupKey, duplicateSourceTraceHash, findExactDuplicateGroups, 
 import { loadRules, loadSourcePages } from "../src/lib/store.js";
 import { isActionable, normative, paraphrase, platformsForCandidate } from "../src/lib/rules.js";
 import { nextReviewBatch, pendingRuleReviews } from "../src/lib/review-queue.js";
-import type { GuidanceCandidate, SourcePage } from "../src/lib/types.js";
+import type { GuidanceCandidate, Rule, SourcePage } from "../src/lib/types.js";
 import { normalizeUrl, sha256 } from "../src/lib/util.js";
 import { diffRuleSnapshots, type RuleSnapshot } from "../src/lib/rule-diff.js";
 
@@ -196,6 +196,7 @@ test("keeps general source reviews aligned with canonical traces", async () => {
   const reviewedBatchIds = new Set<string>();
   const explicitReviews = sourceReview.rules as Record<string, { confidence?: string; review_required?: boolean }>;
   for (const batch of sourceReview.batches) {
+    const scopedBatch = batch as typeof batch & { scope?: Rule["scope"] };
     const pageByUrl = new Map(batch.pages.map((page) => [page.url, page]));
     for (const id of batch.rule_ids) {
       assert.equal(reviewedBatchIds.has(id), false);
@@ -205,6 +206,7 @@ test("keeps general source reviews aligned with canonical traces", async () => {
       assert.equal(rule.source.source_hash, pageByUrl.get(rule.source.url)?.source_hash);
       assert.equal(rule.review_required, explicitReviews[id]?.review_required ?? batch.review_required);
       assert.equal(rule.confidence, explicitReviews[id]?.confidence ?? batch.confidence);
+      if (scopedBatch.scope) assert.deepEqual(rule.scope, scopedBatch.scope);
     }
   }
 });

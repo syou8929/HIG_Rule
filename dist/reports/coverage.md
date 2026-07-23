@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3130
+- Active atomic rules: 3158
 - Pages without rules: 16
-- Low-confidence rules: 498
-- Rules requiring human review: 498
-- Reference notes: 908
+- Low-confidence rules: 463
+- Rules requiring human review: 463
+- Reference notes: 912
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 245
 - patterns: 477
-- technologies: 819
+- technologies: 847
 
 ## Normative levels
 
-- AVOID: 434
-- MAY: 368
-- MUST: 376
-- MUST_NOT: 40
-- SHOULD: 1912
+- AVOID: 435
+- MAY: 370
+- MUST: 384
+- MUST_NOT: 46
+- SHOULD: 1923
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2159
-- ipados: 2128
+- ios: 2187
+- ipados: 2156
 - macos: 1763
 - tvos: 1399
-- visionos: 1811
+- visionos: 1776
 - watchos: 1481
 
 ## Rules by testability
 
 - hybrid: 93
-- manual: 3037
+- manual: 3065
 
 ## Blocked pages
 
@@ -248,41 +248,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0001
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0002
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0003
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0004
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0005
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0006
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0007
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0008
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0009
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0010
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0011
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0012
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0013
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0014
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0015
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0016
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0017
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0018
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0019
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0020
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0021
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0022
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0023
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0024
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0025
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0026
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0027
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0028
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0029
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0030
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0031
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0032
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0033
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0034
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0035
 - HIG-TECHNOLOGIES-GAME-CENTER-0001
 - HIG-TECHNOLOGIES-GAME-CENTER-0002
 - HIG-TECHNOLOGIES-GAME-CENTER-0003
@@ -749,41 +714,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0001
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0002
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0003
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0004
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0005
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0006
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0007
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0008
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0009
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0010
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0011
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0012
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0013
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0014
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0015
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0016
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0017
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0018
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0019
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0020
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0021
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0022
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0023
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0024
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0025
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0026
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0027
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0028
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0029
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0030
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0031
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0032
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0033
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0034
-- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0035
 - HIG-TECHNOLOGIES-GAME-CENTER-0001
 - HIG-TECHNOLOGIES-GAME-CENTER-0002
 - HIG-TECHNOLOGIES-GAME-CENTER-0003
@@ -1151,11 +1081,15 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble · Apple Pencil and Scribble > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble · Apple Pencil and Scribble > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble · Apple Pencil and Scribble > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality — Rendered overview, all guidance sections, examples, resources, and platform context were reviewed against two matching live source renders.
+- https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality > Best practices — The source limits the following iPhone- and iPad-oriented guidance to iOS and iPadOS; visionOS support is documented separately.
+- https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality > Communicating with people — Do and Don't wording examples remain reference context rather than independent product requirements.
 - https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality > Platform considerations > visionOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/augmented-reality · Augmented reality > Suggesting problem resolutions — Problem-and-suggestion examples remain reference context for the source-linked resolution rule.
 - https://developer.apple.com/design/human-interface-guidelines/boxes · Boxes > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/boxes · Boxes > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/boxes · Boxes > Resources — Section recorded for human review; no short atomic guidance lead was detected.

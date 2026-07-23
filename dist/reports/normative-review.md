@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 416
-- Retained MUST: 376
-- Retained MUST_NOT: 40
-- Normative level changes: 143
+- Reviewed rules: 430
+- Retained MUST: 384
+- Retained MUST_NOT: 46
+- Normative level changes: 144
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T12:21:03Z
+- Reviewed at: 2026-07-23T12:30:03Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -284,6 +284,20 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APPLE-PAY-0041 — Recovered the explicit Make sure comparative-size requirement without treating the mark as a payment button. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-APPLE-PAY-0042 — Recovered the explicit Always requirement separately from the direct don't-translate recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-APPLE-PAY-0043 — Recovered the conditional explicit must requirement and preserved the all-text-only exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0027 — Raised the generic clear-space lead to MUST after confirming the source calls 10% of glyph or badge height the required minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0051 — Recovered the explicit Make sure frame-rate requirement from the realistic-object guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0052 — Recovered the explicit Be sure to test directive as a separate atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0053 — Recovered the explicit Make sure outcome separately from the gesture-testing action. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0054 — Recovered the first embedded Make sure legibility requirement as an atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0055 — Recovered the second embedded Make sure legibility requirement separately from text orientation. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0056 — Recovered the first explicit Never prohibition and preserved the size-and-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0057 — Recovered the second explicit Never prohibition as an atomic purpose constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0058 — Recovered the third explicit Never prohibition as the technology-origin constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0059 — Combined the adjacent artwork-alteration and color clauses under one atomic modification prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0060 — Recovered the badge-purpose Never clause separately from artwork modification. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0061 — Recovered the badge technology-origin Never clause as a separate atomic prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0062 — Recovered the explicit Always placement requirement separately from general visual consistency. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0063 — Recovered the explicit Make sure visibility and nonocclusion outcome as one bounded sizing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 - HIG-TECHNOLOGIES-CAREKIT-0001 — Raised the privacy-policy rule to MUST from the source's explicit app-submission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CAREKIT-0015 — Raised the relevance requirement to MUST from the explicit be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CAREKIT-0018 — Recovered MUST from the explicit permission-before-access requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
@@ -692,6 +706,20 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APPLE-PAY-0041 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure comparative-size requirement without treating the mark as a payment button. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-APPLE-PAY-0042 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always requirement separately from the direct don't-translate recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-APPLE-PAY-0043 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional explicit must requirement and preserved the all-text-only exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0027 · MUST · retained_with_atomicity_or_scope_correction — Raised the generic clear-space lead to MUST after confirming the source calls 10% of glyph or badge height the required minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0051 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure frame-rate requirement from the realistic-object guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0052 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Be sure to test directive as a separate atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0053 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure outcome separately from the gesture-testing action. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0054 · MUST · retained_with_atomicity_or_scope_correction — Recovered the first embedded Make sure legibility requirement as an atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0055 · MUST · retained_with_atomicity_or_scope_correction — Recovered the second embedded Make sure legibility requirement separately from text orientation. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0056 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the first explicit Never prohibition and preserved the size-and-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0057 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the second explicit Never prohibition as an atomic purpose constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0058 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the third explicit Never prohibition as the technology-origin constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0059 · MUST_NOT · retained_with_atomicity_or_scope_correction — Combined the adjacent artwork-alteration and color clauses under one atomic modification prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0060 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the badge-purpose Never clause separately from artwork modification. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0061 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the badge technology-origin Never clause as a separate atomic prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0062 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always placement requirement separately from general visual consistency. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
+- HIG-TECHNOLOGIES-AUGMENTED-REALITY-0063 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure visibility and nonocclusion outcome as one bounded sizing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/augmented-reality))
 - HIG-TECHNOLOGIES-CAREKIT-0001 · MUST · retained_with_atomicity_or_scope_correction — Raised the privacy-policy rule to MUST from the source's explicit app-submission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CAREKIT-0015 · MUST · retained_with_atomicity_or_scope_correction — Raised the relevance requirement to MUST from the explicit be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CAREKIT-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit permission-before-access requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))

@@ -47,6 +47,7 @@ type SourceReviewBatch = {
   review_required: boolean;
   pages: Array<{ url: string; source_hash: string }>;
   rule_ids: string[];
+  scope?: Rule["scope"];
   review_note: string;
 };
 const sourceReviewOverrides = sourceReview.rules as Record<string, SourceReviewOverride>;
@@ -124,6 +125,7 @@ function applySourceReview(rule: Rule): Rule {
   const batch = sourceReviewBatchByRuleId.get(rule.id);
   if (!review && !batch) return rule;
   const statement = review?.statement ?? rule.statement;
+  const reviewedScope = review?.scope ?? batch?.scope;
   return {
     ...rule,
     ...(review?.title ? { title: review.title } : {}),
@@ -135,7 +137,7 @@ function applySourceReview(rule: Rule): Rule {
     ...(review?.severity ? { severity: review.severity } : {}),
     ...(review?.conditions ? { conditions: review.conditions } : {}),
     ...(review?.exceptions ? { exceptions: review.exceptions } : {}),
-    ...(review?.scope ? { scope: review.scope } : {}),
+    ...(reviewedScope ? { scope: reviewedScope } : {}),
     ...(review?.priority_rank ? { priority_rank: review.priority_rank } : {}),
     checks: review?.checks ?? {
       ...rule.checks,

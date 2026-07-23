@@ -150825,16 +150825,16 @@
   apple_native_rule: When other payment options use icons or logos, use the Apple Pay mark for Apple Pay.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0001
-  title: Offer AR features only on capable devices
+  title: Offer AR only on devices with the required capabilities
   category: technologies
   topic: augmented-reality
   subtopic: augmented-reality
   statement:
-    en: Make aR features only on capable devices available when applicable.
-    ja: 必要な場合にAR features only on capable devicesを利用可能にする。
+    en: Offer AR features only on devices that support their required ARKit capabilities.
+    ja: 必要なARKit capabilityをsupportするdeviceに限りAR featureを提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -150842,23 +150842,22 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+    - If AR is the app's primary purpose, restrict availability to devices that support ARKit.
+  exceptions:
+    - For an optional unsupported feature, omit it instead of presenting an error.
   rationale:
     en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make aR features only on capable devices available when applicable.” in the documented Augmented reality context?
+      - Does the design satisfy “Offer AR features only on devices that support their required ARKit capabilities.” in the documented Augmented reality context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -150869,16 +150868,16 @@
     page_title: Augmented reality
     section_path:
       - Augmented reality
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: f11affe0904e753546155a65d6711833827437b6efcc3fb936da206f4aacd13d
-    evidence_paraphrase: Make aR features only on capable devices available when applicable.
+    evidence_paraphrase: Offer AR features only on devices that support their required ARKit capabilities.
   tags:
     - technologies
     - augmented-reality
   priority_rank: 6
   status: active
-  apple_native_rule: Make aR features only on capable devices available when applicable.
+  apple_native_rule: Offer AR features only on devices that support their required ARKit capabilities.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0002
   title: Let people use the entire display
@@ -150889,8 +150888,8 @@
     en: Preserve people’s ability to use the entire display.
     ja: 利用者がuse the entire displayできる状態を保つ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -150898,11 +150897,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -150926,7 +150923,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 6f91503603af2e93bb46eabeb10c7688ad502eb91ef1b7903641801fee18c7d2
     evidence_paraphrase: Preserve people’s ability to use the entire display.
@@ -150947,8 +150944,8 @@
     en: Apply the documented Augmented reality guidance to strive for convincing illusions when placing realistic objects.
     ja: 「Augmented reality」において「Strive for convincing illusions when placing realistic objects」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -150956,11 +150953,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -150984,7 +150979,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: decc6027bec67e07bc2234d8a8528ec1f6822a615eddce8716e25363223f9a7d
     evidence_paraphrase: Apply the documented Augmented reality guidance to strive for convincing illusions when placing realistic objects.
@@ -151005,8 +151000,8 @@
     en: Evaluate whether how virtual objects with reflective surfaces show the environment is appropriate for the current context.
     ja: how virtual objects with reflective surfaces show the environmentが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -151014,11 +151009,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151042,7 +151035,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: b9d35cd9555733b56a89a75c8190aed18ac4ef57c51e6d72f3462236588c2c41
     evidence_paraphrase: Evaluate whether how virtual objects with reflective surfaces show the environment is appropriate for the current context.
@@ -151063,8 +151056,8 @@
     en: Choose or apply audio and haptics to enhance the immersive experience in the documented context.
     ja: 該当する状況ではaudio and haptics to enhance the immersive experienceを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151072,11 +151065,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151100,7 +151091,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 0d087df05196f0f8e29d4224bb2a19d7a3258d5ce3292b008dc15834503f82a9
     evidence_paraphrase: Choose or apply audio and haptics to enhance the immersive experience in the documented context.
@@ -151121,8 +151112,8 @@
     en: Apply the documented Augmented reality guidance to minimize text in the environment.
     ja: 「Augmented reality」において「Minimize text in the environment」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151130,11 +151121,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151158,7 +151147,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: cfd2f8ee0d25cd8d684a2ff0e16aa72924ef67a6d37f7b0fed2701101c6a1f15
     evidence_paraphrase: Apply the documented Augmented reality guidance to minimize text in the environment.
@@ -151179,8 +151168,8 @@
     en: Evaluate whether using indirect controls when you need to provide persistent controls is appropriate for the current context.
     ja: using indirect controls when you need to provide persistent controlsが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -151188,11 +151177,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151216,7 +151203,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: e15d4afcf8064b6987b02178712f97eba26342713c64a0a55a342d75a2812c74
     evidence_paraphrase: Evaluate whether using indirect controls when you need to provide persistent controls is appropriate for the current context.
@@ -151237,8 +151224,8 @@
     en: Apply the documented Augmented reality guidance to be mindful of people’s comfort.
     ja: 「Augmented reality」において「Be mindful of people’s comfort」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151246,11 +151233,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151274,7 +151259,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 62e404a70d71710ba59c3bb66eb60bc8a218d29daded3373aa042630ac1c270a
     evidence_paraphrase: Apply the documented Augmented reality guidance to be mindful of people’s comfort.
@@ -151295,8 +151280,8 @@
     en: Apply the documented Augmented reality guidance to be mindful of people’s safety.
     ja: 「Augmented reality」において「Be mindful of people’s safety」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151304,11 +151289,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151332,7 +151315,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 9a0d229d5edf5fd121db7d7f303aad388206e60c392de03565af9660f4509779
     evidence_paraphrase: Apply the documented Augmented reality guidance to be mindful of people’s safety.
@@ -151345,16 +151328,16 @@
   apple_native_rule: Apply the documented Augmented reality guidance to be mindful of people’s safety.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0010
-  title: Show people when to locate a surface and place an object
+  title: Show when a surface is ready for object placement
   category: technologies
   topic: augmented-reality
   subtopic: helping-people-place-objects
   statement:
-    en: Present people when to locate a surface and place an object in the documented context.
-    ja: 該当する状況でpeople when to locate a surface and place an objectを表示する。
+    en: Show people when a surface is detected and object placement is possible.
+    ja: surfaceが検出されobject placementが可能になった時点を示す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151362,15 +151345,13 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use the coaching view for surface discovery and a plane-aligned custom indicator for placement readiness.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
@@ -151378,7 +151359,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Present people when to locate a surface and place an object in the documented context.” in the documented Augmented reality context?
+      - Does the design satisfy “Show people when a surface is detected and object placement is possible.” in the documented Augmented reality context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -151390,17 +151371,17 @@
     section_path:
       - Augmented reality
       - Helping people place objects
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 1c1332b148604a1f70977880fbf2d237be8f020188e7ca2f4309bd35bff7160a
-    evidence_paraphrase: Present people when to locate a surface and place an object in the documented context.
+    evidence_paraphrase: Show people when a surface is detected and object placement is possible.
   tags:
     - technologies
     - augmented-reality
     - helping-people-place-objects
   priority_rank: 6
   status: active
-  apple_native_rule: Present people when to locate a surface and place an object in the documented context.
+  apple_native_rule: Show people when a surface is detected and object placement is possible.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0011
   title: Consider guiding people toward offscreen virtual objects
@@ -151411,8 +151392,8 @@
     en: Evaluate whether guiding people toward offscreen virtual objects is appropriate for the current context.
     ja: guiding people toward offscreen virtual objectsが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -151420,11 +151401,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151448,7 +151427,7 @@
     section_path:
       - Augmented reality
       - Helping people place objects
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: be8697351d6936391ecad1614cced46543acb0099de69e7496907fcd0ec9ff91
     evidence_paraphrase: Evaluate whether guiding people toward offscreen virtual objects is appropriate for the current context.
@@ -151469,8 +151448,8 @@
     en: Exclude trying to precisely align objects with the edges of detected surfaces from the applicable experience.
     ja: 該当する体験ではtrying to precisely align objects with the edges of detected surfacesを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -151478,11 +151457,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151506,7 +151483,7 @@
     section_path:
       - Augmented reality
       - Helping people place objects
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 3085666c7ae2861a9f360e6d172a5abcc24060811e55b528b2a8f27f1f1d5752
     evidence_paraphrase: Exclude trying to precisely align objects with the edges of detected surfaces from the applicable experience.
@@ -151527,8 +151504,8 @@
     en: Preserve people’s ability to use direct manipulation to interact with objects when possible.
     ja: 利用者がuse direct manipulation to interact with objects when possibleできる状態を保つ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151536,11 +151513,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151564,7 +151539,7 @@
     section_path:
       - Augmented reality
       - Designing object interactions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 3acb6016eaf905f259a672bf20a4ed3699a7d086ee3a6eb645a5bb9635c73879
     evidence_paraphrase: Preserve people’s ability to use direct manipulation to interact with objects when possible.
@@ -151585,8 +151560,8 @@
     en: Preserve people’s ability to directly interact with virtual objects using standard, familiar gestures.
     ja: 利用者がdirectly interact with virtual objects using standard, familiar gesturesできる状態を保つ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151594,14 +151569,11 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
-    modalities:
-      - gesture
+    modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
   exceptions: []
@@ -151623,7 +151595,7 @@
     section_path:
       - Augmented reality
       - Designing object interactions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 991c1bb47bc8ec7befd66719f50cc09287aafae140dd8498e6c2a74b6d89ce4d
     evidence_paraphrase: Preserve people’s ability to directly interact with virtual objects using standard, familiar gestures.
@@ -151645,8 +151617,8 @@
     en: Apply the documented Augmented reality guidance to respond to gestures within reasonable proximity of interactive virtual objects.
     ja: 「Augmented reality」において「Respond to gestures within reasonable proximity of interactive virtual objects」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151654,14 +151626,11 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
-    modalities:
-      - gesture
+    modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
   exceptions: []
@@ -151683,7 +151652,7 @@
     section_path:
       - Augmented reality
       - Designing object interactions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 33eafbc2438625393a4445f70fd0e55ed5d4098ec97eb7d05c09be5f93ff55b4
     evidence_paraphrase: Apply the documented Augmented reality guidance to respond to gestures within reasonable proximity of interactive virtual objects.
@@ -151705,8 +151674,8 @@
     en: Preserve people’s ability to initiate object scaling when it makes sense in your app.
     ja: 利用者がinitiate object scaling when it makes sense in your appできる状態を保つ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151714,11 +151683,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151742,7 +151709,7 @@
     section_path:
       - Augmented reality
       - Designing object interactions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 9bbd4b259896703281da4f4b57772fb6f83c2ca40fee9f71e2b552b19422964a
     evidence_paraphrase: Preserve people’s ability to initiate object scaling when it makes sense in your app.
@@ -151763,8 +151730,8 @@
     en: Apply the documented Augmented reality guidance to be wary of potentially conflicting gestures.
     ja: 「Augmented reality」において「Be wary of potentially conflicting gestures」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151772,14 +151739,11 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
-    modalities:
-      - gesture
+    modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
   exceptions: []
@@ -151801,7 +151765,7 @@
     section_path:
       - Augmented reality
       - Designing object interactions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: a14b76f3bff4db219d34aff4d662338eaa5240d1ef5251c83991fd5db440e3e6
     evidence_paraphrase: Apply the documented Augmented reality guidance to be wary of potentially conflicting gestures.
@@ -151823,8 +151787,8 @@
     en: Apply the documented Augmented reality guidance to strive for virtual object movement that’s consistent with the physics of your app’s AR environment.
     ja: 「Augmented reality」において「Strive for virtual object movement that’s consistent with the physics of your app’s AR environment」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151832,11 +151796,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151860,7 +151822,7 @@
     section_path:
       - Augmented reality
       - Designing object interactions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 61803f0874f2e7637dc0b2df7f3709f4c478771dd09b1912758f3e587a1943e3
     evidence_paraphrase: Apply the documented Augmented reality guidance to strive for virtual object movement that’s consistent with the physics of your app’s AR environment.
@@ -151881,8 +151843,8 @@
     en: Evaluate whether allowing people occlusion is appropriate for the current context.
     ja: allowing people occlusionが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -151890,11 +151852,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151918,7 +151878,7 @@
     section_path:
       - Augmented reality
       - Offering a multiuser experience
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: b2d9ad00986cff080b10b1b47e22dad39b48064255c1f3c3f8e312f135a4d4d2
     evidence_paraphrase: Evaluate whether allowing people occlusion is appropriate for the current context.
@@ -151939,8 +151899,8 @@
     en: Apply the documented Augmented reality guidance to make important text readable.
     ja: 「Augmented reality」において「Make important text readable」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -151948,11 +151908,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -151976,7 +151934,7 @@
     section_path:
       - Augmented reality
       - Communicating with people
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: f3aa2db8477aeaff3f8e60702c4f0e829e26757fbbe7bce51c2e4a70e9115fe2
     evidence_paraphrase: Apply the documented Augmented reality guidance to make important text readable.
@@ -151997,8 +151955,8 @@
     en: Evaluate whether using the system-provided coaching view to help people relocalize is appropriate for the current context.
     ja: using the system-provided coaching view to help people relocalizeが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -152006,11 +151964,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152034,7 +151990,7 @@
     section_path:
       - Augmented reality
       - Handling interruptions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 2e5e8be87678efb3c674546e2767709e5d5b5da5e0f1b3d2fb29a7dee900ae8c
     evidence_paraphrase: Evaluate whether using the system-provided coaching view to help people relocalize is appropriate for the current context.
@@ -152055,8 +152011,8 @@
     en: Evaluate whether hiding previously placed virtual objects during relocalization is appropriate for the current context.
     ja: hiding previously placed virtual objects during relocalizationが現在の状況に適切か検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -152064,11 +152020,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152092,7 +152046,7 @@
     section_path:
       - Augmented reality
       - Handling interruptions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 26260d072ef3eb1cc89b61a88d0aa4c8ca567be6047d1f9c10760db1d946a717
     evidence_paraphrase: Evaluate whether hiding previously placed virtual objects during relocalization is appropriate for the current context.
@@ -152113,8 +152067,8 @@
     en: Apply the documented Augmented reality guidance to minimize interruptions if your app supports both AR and non-AR experiences.
     ja: 「Augmented reality」において「Minimize interruptions if your app supports both AR and non-AR experiences」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152122,11 +152076,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152150,7 +152102,7 @@
     section_path:
       - Augmented reality
       - Handling interruptions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 9d6440d197bcd238e94223154c99946d58e6db1a3d6fa28d9a406cea6520f831
     evidence_paraphrase: Apply the documented Augmented reality guidance to minimize interruptions if your app supports both AR and non-AR experiences.
@@ -152171,8 +152123,8 @@
     en: Apply the documented Augmented reality guidance to allow people to cancel relocalization.
     ja: 「Augmented reality」において「Allow people to cancel relocalization」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152180,11 +152132,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152208,7 +152158,7 @@
     section_path:
       - Augmented reality
       - Handling interruptions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 2bd0e6e92bbc08f97f503b7cd1179ab5f10981bc825a80f7699a4b03fa91aaaf
     evidence_paraphrase: Apply the documented Augmented reality guidance to allow people to cancel relocalization.
@@ -152229,8 +152179,8 @@
     en: Preserve people’s ability to reset the experience if it doesn’t meet their expectations.
     ja: 利用者がreset the experience if it doesn’t meet their expectationsできる状態を保つ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152238,11 +152188,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152266,7 +152214,7 @@
     section_path:
       - Augmented reality
       - Suggesting problem resolutions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 01d2c752adaf2cb604b3aed57fd6223ebddad80a96ff805fea2839b40c0ac1a0
     evidence_paraphrase: Preserve people’s ability to reset the experience if it doesn’t meet their expectations.
@@ -152287,8 +152235,8 @@
     en: Choose or apply the AR glyph as intended in the documented context.
     ja: 該当する状況ではthe AR glyph as intendedを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152296,11 +152244,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152324,7 +152270,7 @@
     section_path:
       - Augmented reality
       - Icons and badges
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: f764d9dcec861c86322e9067e69fd647cf9d0ab412c70045317438ae3a0ae988
     evidence_paraphrase: Choose or apply the AR glyph as intended in the documented context.
@@ -152337,32 +152283,30 @@
   apple_native_rule: Choose or apply the AR glyph as intended in the documented context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0027
-  title: Maintain minimum clear space
+  title: Maintain required clear space around AR artwork
   category: technologies
   topic: augmented-reality
   subtopic: icons-and-badges
   statement:
-    en: Apply the documented Augmented reality guidance to maintain minimum clear space.
-    ja: 「Augmented reality」において「Maintain minimum clear space」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Maintain clear space of at least 10% of the artwork's height around every AR glyph and badge.
+    ja: すべてのAR glyphおよびbadgeの周囲にartwork heightの10%以上のclear spaceを確保する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: technology-specific
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep other elements out of the clear space and prevent them from occluding the artwork.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
@@ -152370,7 +152314,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Augmented reality guidance to maintain minimum clear space.” in the documented Augmented reality context?
+      - Does the design satisfy “Maintain clear space of at least 10% of the artwork's height around every AR glyph and badge.” in the documented Augmented reality context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -152382,17 +152326,17 @@
     section_path:
       - Augmented reality
       - Icons and badges
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 92e160afc70790884dada081d05b24ea325fa03d61fdabf70359ad5d9eb1dca9
-    evidence_paraphrase: Apply the documented Augmented reality guidance to maintain minimum clear space.
+    evidence_paraphrase: Maintain clear space of at least 10% of the artwork's height around every AR glyph and badge.
   tags:
     - technologies
     - augmented-reality
     - icons-and-badges
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Augmented reality guidance to maintain minimum clear space.
+  apple_native_rule: Maintain clear space of at least 10% of the artwork's height around every AR glyph and badge.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0028
   title: Use the AR badges as intended and don’t alter them
@@ -152403,8 +152347,8 @@
     en: Choose or apply the AR badges as intended and don’t alter them in the documented context.
     ja: 該当する状況ではthe AR badges as intended and don’t alter themを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152412,11 +152356,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152440,7 +152382,7 @@
     section_path:
       - Augmented reality
       - Icons and badges
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 940f2d166101924146475a3d631b87d6ff80c00eb998be8dc55bff052c6fa408
     evidence_paraphrase: Choose or apply the AR badges as intended and don’t alter them in the documented context.
@@ -152461,8 +152403,8 @@
     en: Favor the AR badge to the glyph-only badge when the documented conditions apply.
     ja: 該当条件ではthe AR badge to the glyph-only badgeを優先する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152470,11 +152412,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152498,7 +152438,7 @@
     section_path:
       - Augmented reality
       - Icons and badges
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 553c239c24fa3055f00a4ebabb62e36581d22e503a34d2e8972e293196be71fd
     evidence_paraphrase: Favor the AR badge to the glyph-only badge when the documented conditions apply.
@@ -152511,16 +152451,16 @@
   apple_native_rule: Favor the AR badge to the glyph-only badge when the documented conditions apply.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0030
-  title: Use badging only when your app contains a mixture of objects that can be viewed in AR and objects
+  title: Use AR badges only in mixed-viewability collections
   category: technologies
   topic: augmented-reality
   subtopic: icons-and-badges
   statement:
-    en: Choose or apply badging only when your app contains a mixture of objects that can be viewed in AR and objects in the documented context.
-    ja: 該当する状況ではbadging only when your app contains a mixture of objects that can be viewed in AR and objectsを採用する。
+    en: Use AR badges only when a collection mixes items that are viewable in AR with items that aren't.
+    ja: ARでviewableなitemとそうでないitemが混在するcollectionに限りAR badgeを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152528,23 +152468,22 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
     - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
+  exceptions:
+    - Omit badges when every item can be viewed in AR because the badges are redundant.
   rationale:
     en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
     ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply badging only when your app contains a mixture of objects that can be viewed in AR and objects in the documented context.” in the documented Augmented reality context?
+      - Does the design satisfy “Use AR badges only when a collection mixes items that are viewable in AR with items that aren't.” in the documented Augmented reality context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -152556,29 +152495,29 @@
     section_path:
       - Augmented reality
       - Icons and badges
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 124667ca2b4749f983c9be3d839d6c1df1a6341a3e9f3d9248ef28e8247fb729
-    evidence_paraphrase: Choose or apply badging only when your app contains a mixture of objects that can be viewed in AR and objects in the documented context.
+    evidence_paraphrase: Use AR badges only when a collection mixes items that are viewable in AR with items that aren't.
   tags:
     - technologies
     - augmented-reality
     - icons-and-badges
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply badging only when your app contains a mixture of objects that can be viewed in AR and objects in the documented context.
+  apple_native_rule: Use AR badges only when a collection mixes items that are viewable in AR with items that aren't.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0031
-  title: Keep badge placement consistent and clear
+  title: Keep AR badge placement consistent and clear
   category: technologies
   topic: augmented-reality
   subtopic: icons-and-badges
   statement:
-    en: Maintain badge placement consistent and clear.
-    ja: badge placement consistent and clearを維持する。
+    en: Keep AR badge placement consistent and visually clear across object photos.
+    ja: object photo全体でAR badgeのplacementを一貫させ明確に表示する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152586,11 +152525,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152602,7 +152539,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Maintain badge placement consistent and clear.” in the documented Augmented reality context?
+      - Does the design satisfy “Keep AR badge placement consistent and visually clear across object photos.” in the documented Augmented reality context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -152614,17 +152551,17 @@
     section_path:
       - Augmented reality
       - Icons and badges
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 4759e3d838de126dbb8346875427aff7c0af19101de7b00676b7fbc6e780a658
-    evidence_paraphrase: Maintain badge placement consistent and clear.
+    evidence_paraphrase: Keep AR badge placement consistent and visually clear across object photos.
   tags:
     - technologies
     - augmented-reality
     - icons-and-badges
   priority_rank: 6
   status: active
-  apple_native_rule: Maintain badge placement consistent and clear.
+  apple_native_rule: Keep AR badge placement consistent and visually clear across object photos.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0032
   title: If additional information or controls are necessary, consider displaying them in screen space
@@ -152635,8 +152572,8 @@
     en: When additional information or controls are necessary, consider displaying them in screen space.
     ja: additional information or controls are necessary場合はdisplaying them in screen spaceを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -152644,11 +152581,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152672,7 +152607,7 @@
     section_path:
       - Augmented reality
       - Best practices
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 354b979948d2d160113443d66b39ebbf3dbfc3b26c073937eb73a21c5bef4b4d
     evidence_paraphrase: When additional information or controls are necessary, consider displaying them in screen space.
@@ -152693,8 +152628,8 @@
     en: Indicate when the front-facing camera is unable to track a face for more than about half a second.
     ja: when the front-facing camera is unable to track a face for more than about half a secondを示す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152702,11 +152637,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152730,7 +152663,7 @@
     section_path:
       - Augmented reality
       - Handling interruptions
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: a78be94ede0cdffdec6ba047863e505279f5ed3b2686cc845bd555a779616b85
     evidence_paraphrase: Indicate when the front-facing camera is unable to track a face for more than about half a second.
@@ -152751,8 +152684,8 @@
     en: Hide unnecessary app UI while people are using a coaching view.
     ja: unnecessary app UI while people are using a coaching viewを隠す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152760,11 +152693,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152788,7 +152719,7 @@
     section_path:
       - Augmented reality
       - Providing coaching
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 7ba6c18974b8ea5ec52ccad82daa48d898ef67546888359d783832b4fe84539a
     evidence_paraphrase: Hide unnecessary app UI while people are using a coaching view.
@@ -152809,8 +152740,8 @@
     en: When you must display instructional text, use approachable terminology.
     ja: you must display instructional text場合はapproachable terminologyをuseする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -152818,11 +152749,9 @@
     platforms:
       - ios
       - ipados
-      - visionos
     devices:
       - iphone
       - ipad
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
@@ -152846,7 +152775,7 @@
     section_path:
       - Augmented reality
       - Communicating with people
-    retrieved_at: 2026-07-21T11:14:39.284Z
+    retrieved_at: 2026-07-23T12:30:03Z
     source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
     source_sentence_hash: 31bfe269e1579558cb995608f840a441bfa45f2ab0b2980ae4770ea09024304b
     evidence_paraphrase: When you must display instructional text, use approachable terminology.
@@ -152857,6 +152786,1580 @@
   priority_rank: 6
   status: active
   apple_native_rule: When you must display instructional text, use approachable terminology.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0036
+  title: Design for varied real-world environments
+  category: technologies
+  topic: augmented-reality
+  subtopic: best-practices
+  statement:
+    en: Design AR experiences for varied real-world spaces, surfaces, and movement constraints.
+    ja: 多様なreal-world space、surface、movement constraintに対応するAR experienceを設計する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Communicate physical-environment requirements and expectations before people enter the experience.
+  exceptions:
+    - Consider different feature sets when environments impose meaningfully different constraints.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Design AR experiences for varied real-world spaces, surfaces, and movement constraints.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Best practices
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 8d42d6ee6b7cee145df11e560d30ba924f231fa49697b8f0e2a8affb2a6f4ec7
+    evidence_paraphrase: Design AR experiences for varied real-world spaces, surfaces, and movement constraints.
+  tags:
+    - technologies
+    - augmented-reality
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Design AR experiences for varied real-world spaces, surfaces, and movement constraints.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0037
+  title: Design encouraged movement to begin gradually
+  category: technologies
+  topic: augmented-reality
+  subtopic: best-practices
+  statement:
+    en: Introduce physical movement gradually when an AR experience encourages people to move.
+    ja: AR experienceでmovementを促す場合はphysical movementを徐々に導入する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Give people time to adapt before progressively encouraging more movement.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Introduce physical movement gradually when an AR experience encourages people to move.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Best practices
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 8bc008c13aebae782e2236251037c3f90681aab2f9c23dba5687e90e0b70307a
+    evidence_paraphrase: Introduce physical movement gradually when an AR experience encourages people to move.
+  tags:
+    - technologies
+    - augmented-reality
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Introduce physical movement gradually when an AR experience encourages people to move.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0038
+  title: Consider using the system coaching view during AR initialization
+  category: technologies
+  topic: augmented-reality
+  subtopic: providing-coaching
+  statement:
+    en: Consider using the system coaching view during AR initialization and relocalization.
+    ja: AR initializationおよびrelocalization中にsystem coaching viewの利用を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use coaching to show required device movement and provide initialization feedback.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider using the system coaching view during AR initialization and relocalization.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Providing coaching
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: ed5601e410dafbf3d859ec2245f826d2753ccc231b60842ee4cf9418c43ed5f6
+    evidence_paraphrase: Consider using the system coaching view during AR initialization and relocalization.
+  tags:
+    - technologies
+    - augmented-reality
+    - providing-coaching
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider using the system coaching view during AR initialization and relocalization.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0039
+  title: Use the system coaching view as the reference for custom coaching
+  category: technologies
+  topic: augmented-reality
+  subtopic: providing-coaching
+  statement:
+    en: When custom coaching is necessary, use the system coaching view as the interaction reference.
+    ja: custom coachingが必要な場合はsystem coaching viewをinteraction referenceとして使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Custom coaching may supply additional information or a different visual style.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When custom coaching is necessary, use the system coaching view as the interaction reference.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Providing coaching
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: c7a4d18de76d8087a60c7d06616afc14826428361a18b6270cb15a9fcbd92625
+    evidence_paraphrase: When custom coaching is necessary, use the system coaching view as the interaction reference.
+  tags:
+    - technologies
+    - augmented-reality
+    - providing-coaching
+  priority_rank: 6
+  status: active
+  apple_native_rule: When custom coaching is necessary, use the system coaching view as the interaction reference.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0040
+  title: Integrate placed objects into the AR environment immediately
+  category: technologies
+  topic: augmented-reality
+  subtopic: helping-people-place-objects
+  statement:
+    en: Integrate a placed object immediately using current surface data, then refine its position subtly if needed.
+    ja: current surface dataでplaced objectを直ちに統合し、必要に応じてpositionを控えめに調整する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Don't delay placement while progressive surface detection seeks more accurate data.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Integrate a placed object immediately using current surface data, then refine its position subtly if needed.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Helping people place objects
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 88628a7c7337d053244d05e39e37f49dc9fc549871878a1937d7b973620fc3f9
+    evidence_paraphrase: Integrate a placed object immediately using current surface data, then refine its position subtly if needed.
+  tags:
+    - technologies
+    - augmented-reality
+    - helping-people-place-objects
+  priority_rank: 6
+  status: active
+  apple_native_rule: Integrate a placed object immediately using current surface data, then refine its position subtly if needed.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0041
+  title: Use plane classification information to guide object placement
+  category: technologies
+  topic: augmented-reality
+  subtopic: helping-people-place-objects
+  statement:
+    en: Use plane classification to allow virtual-object placement only on appropriate surfaces.
+    ja: plane classificationを使いvirtual objectを適切なsurfaceに限って配置できるようにする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Match the accepted surface class to the object's real-world role.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use plane classification to allow virtual-object placement only on appropriate surfaces.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Helping people place objects
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 2d4b690b8bc54632bf1845f87c8156052d54fb0b0613ebe8e077e62431b09753
+    evidence_paraphrase: Use plane classification to allow virtual-object placement only on appropriate surfaces.
+  tags:
+    - technologies
+    - augmented-reality
+    - helping-people-place-objects
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use plane classification to allow virtual-object placement only on appropriate surfaces.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0042
+  title: Keep AR object interactions simple
+  category: technologies
+  topic: augmented-reality
+  subtopic: designing-object-interactions
+  statement:
+    en: Keep AR object interactions simple by constraining movement or rotation when appropriate.
+    ja: 必要に応じてmovementまたはrotationを制約しAR object interactionをsimpleに保つ。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Account for using two-dimensional touch gestures in a three-dimensional environment.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Keep AR object interactions simple by constraining movement or rotation when appropriate.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Designing object interactions
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 76b92422e4eef05bfd2de1d317ea41e8294266a2dbb839670f38f512e04d7f08
+    evidence_paraphrase: Keep AR object interactions simple by constraining movement or rotation when appropriate.
+  tags:
+    - technologies
+    - augmented-reality
+    - designing-object-interactions
+  priority_rank: 6
+  status: active
+  apple_native_rule: Keep AR object interactions simple by constraining movement or rotation when appropriate.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0043
+  title: Avoid using scaling to adjust an object’s distance
+  category: technologies
+  topic: augmented-reality
+  subtopic: designing-object-interactions
+  statement:
+    en: Avoid using object scale as a proxy for distance.
+    ja: object scaleをdistanceの代替として使わない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Enlarging a distant object makes it larger but doesn't make it appear closer.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid using object scale as a proxy for distance.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Designing object interactions
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 30fe7cbb84c42230a2ac46a688d48846e3667e5e02ad1c5a8d6220224da7e54e
+    evidence_paraphrase: Avoid using object scale as a proxy for distance.
+  tags:
+    - technologies
+    - augmented-reality
+    - designing-object-interactions
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid using object scale as a proxy for distance.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0044
+  title: Let new participants join ongoing multiuser AR experiences when possible
+  category: technologies
+  topic: augmented-reality
+  subtopic: offering-a-multiuser-experience
+  statement:
+    en: When possible, let new participants join an ongoing multiuser AR experience.
+    ja: 可能な場合はnew participantが進行中のmultiuser AR experienceへ参加できるようにする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions:
+    - The experience may require every participant to join before it begins.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When possible, let new participants join an ongoing multiuser AR experience.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Offering a multiuser experience
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 8d13cb60468018da61f65cdc6c10ec34699b8a0845ce16d64cee390aab8f1826
+    evidence_paraphrase: When possible, let new participants join an ongoing multiuser AR experience.
+  tags:
+    - technologies
+    - augmented-reality
+    - offering-a-multiuser-experience
+  priority_rank: 6
+  status: active
+  apple_native_rule: When possible, let new participants join an ongoing multiuser AR experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0045
+  title: Consider delaying virtual-object removal after a detected image disappears
+  category: technologies
+  topic: augmented-reality
+  subtopic: reacting-to-real-world-objects
+  statement:
+    en: Consider delaying virtual-object removal briefly after its detected image disappears.
+    ja: detected imageが消えた直後はvirtual objectの削除を短時間遅らせることを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - A delay of up to one second can prevent attached virtual objects from flickering.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider delaying virtual-object removal briefly after its detected image disappears.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Reacting to real-world objects
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 0ac1979f8637fba93a8dd529b74c5a4a479f2484f65627494b5886e240f32a5e
+    evidence_paraphrase: Consider delaying virtual-object removal briefly after its detected image disappears.
+  tags:
+    - technologies
+    - augmented-reality
+    - reacting-to-real-world-objects
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider delaying virtual-object removal briefly after its detected image disappears.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0046
+  title: Prefer active reference-image sets of 100 images or fewer
+  category: technologies
+  topic: augmented-reality
+  subtopic: reacting-to-real-world-objects
+  statement:
+    en: Prefer no more than 100 active reference images at one time.
+    ja: 同時にactiveにするreference imageは100個以下を優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Image-detection performance works best at 100 or fewer active images.
+  exceptions:
+    - For larger libraries, change the active set based on context.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prefer no more than 100 active reference images at one time.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Reacting to real-world objects
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: ee2b723745041947ccdb2d950e7dacf7c689f4b62327e8e55b41775897fef6b2
+    evidence_paraphrase: Prefer no more than 100 active reference images at one time.
+  tags:
+    - technologies
+    - augmented-reality
+    - reacting-to-real-world-objects
+  priority_rank: 6
+  status: active
+  apple_native_rule: Prefer no more than 100 active reference images at one time.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0047
+  title: Minimize reference images that require accurate position tracking
+  category: technologies
+  topic: augmented-reality
+  subtopic: reacting-to-real-world-objects
+  statement:
+    en: Minimize reference images that require continuously accurate position tracking.
+    ja: 継続的にaccurate position trackingを必要とするreference imageを最小限にする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use tracked images when an image may move or when attached content is small relative to it.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Minimize reference images that require continuously accurate position tracking.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Reacting to real-world objects
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 5eab235e8f487b7f0bc5475dc617fa4092b538126dd06dc99c9e8fb27678dcb0
+    evidence_paraphrase: Minimize reference images that require continuously accurate position tracking.
+  tags:
+    - technologies
+    - augmented-reality
+    - reacting-to-real-world-objects
+  priority_rank: 6
+  status: active
+  apple_native_rule: Minimize reference images that require continuously accurate position tracking.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0048
+  title: Prefer 3D hints in three-dimensional contexts
+  category: technologies
+  topic: augmented-reality
+  subtopic: communicating-with-people
+  statement:
+    en: Prefer contextual 3D hints in a three-dimensional experience.
+    ja: three-dimensional experienceではcontextual 3D hintを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions:
+    - Use a textual 2D overlay only when people don't respond to contextual hints.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prefer contextual 3D hints in a three-dimensional experience.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Communicating with people
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 9899cc7a526ca7dcb8d150f19e60cfa75e8f622bb5df1465bcc71644ead3306c
+    evidence_paraphrase: Prefer contextual 3D hints in a three-dimensional experience.
+  tags:
+    - technologies
+    - augmented-reality
+    - communicating-with-people
+  priority_rank: 6
+  status: active
+  apple_native_rule: Prefer contextual 3D hints in a three-dimensional experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0049
+  title: Provide a way to get more information when necessary
+  category: technologies
+  topic: augmented-reality
+  subtopic: communicating-with-people
+  statement:
+    en: When more information is necessary, provide a visual indicator that reveals it on tap.
+    ja: 追加情報が必要な場合はtapで情報を表示するvisual indicatorを提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Fit the indicator's appearance to the AR experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When more information is necessary, provide a visual indicator that reveals it on tap.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Communicating with people
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 8ae4373c376026051d861060e7f3a15d7a79d1a96193056ccbcf50826ca2dabc
+    evidence_paraphrase: When more information is necessary, provide a visual indicator that reveals it on tap.
+  tags:
+    - technologies
+    - augmented-reality
+    - communicating-with-people
+  priority_rank: 6
+  status: active
+  apple_native_rule: When more information is necessary, provide a visual indicator that reveals it on tap.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0050
+  title: Provide possible fixes when AR problems occur
+  category: technologies
+  topic: augmented-reality
+  subtopic: suggesting-problem-resolutions
+  statement:
+    en: When AR analysis fails or stalls, suggest practical fixes in straightforward, friendly language.
+    ja: AR analysisが失敗または停滞した場合はstraightforwardでfriendlyな表現でpractical fixを提案する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Respond to known causes such as poor light, reflective or low-detail surfaces, and excessive camera motion.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When AR analysis fails or stalls, suggest practical fixes in straightforward, friendly language.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Suggesting problem resolutions
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 7c85abaa5e177a31a3c4dd831ac35bb089d1c4d7b0640fb347014a2223665921
+    evidence_paraphrase: When AR analysis fails or stalls, suggest practical fixes in straightforward, friendly language.
+  tags:
+    - technologies
+    - augmented-reality
+    - suggesting-problem-resolutions
+  priority_rank: 6
+  status: active
+  apple_native_rule: When AR analysis fails or stalls, suggest practical fixes in straightforward, friendly language.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0051
+  title: Update AR scenes 60 times per second
+  category: technologies
+  topic: augmented-reality
+  subtopic: best-practices
+  statement:
+    en: Ensure an AR app updates its scenes 60 times per second.
+    ja: AR appのsceneを1秒あたり60回更新する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply when placing realistic objects to prevent jumping or flickering that breaks the illusion.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure an AR app updates its scenes 60 times per second.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Best practices
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 38fde37a92b3efc5b811049b000a75320b57cc5570ec8853b855117044c270ff
+    evidence_paraphrase: Ensure an AR app updates its scenes 60 times per second.
+  tags:
+    - technologies
+    - augmented-reality
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure an AR app updates its scenes 60 times per second.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0052
+  title: Test potentially conflicting AR gestures
+  category: technologies
+  topic: augmented-reality
+  subtopic: designing-object-interactions
+  statement:
+    en: Test an AR app whenever it implements potentially conflicting gestures.
+    ja: potentially conflicting gestureを実装するAR appをtestする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply when two gestures can be difficult to distinguish, such as pinch and rotation.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Test an AR app whenever it implements potentially conflicting gestures.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Designing object interactions
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: e8ae2c045136b2683a66d8c7e84fd8328114bd10bda57dcb058cd36aacd553b8
+    evidence_paraphrase: Test an AR app whenever it implements potentially conflicting gestures.
+  tags:
+    - technologies
+    - augmented-reality
+    - designing-object-interactions
+    - gesture
+  priority_rank: 6
+  status: active
+  apple_native_rule: Test an AR app whenever it implements potentially conflicting gestures.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0053
+  title: Interpret similar AR gestures correctly
+  category: technologies
+  topic: augmented-reality
+  subtopic: designing-object-interactions
+  statement:
+    en: Ensure similar AR gestures are interpreted correctly.
+    ja: 類似するAR gestureを正しく解釈する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply when the app implements gestures that can conflict with each other.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure similar AR gestures are interpreted correctly.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Designing object interactions
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: e8ae2c045136b2683a66d8c7e84fd8328114bd10bda57dcb058cd36aacd553b8
+    evidence_paraphrase: Ensure similar AR gestures are interpreted correctly.
+  tags:
+    - technologies
+    - augmented-reality
+    - designing-object-interactions
+    - gesture
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure similar AR gestures are interpreted correctly.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0054
+  title: Face 3D text toward people
+  category: technologies
+  topic: augmented-reality
+  subtopic: communicating-with-people
+  statement:
+    en: Ensure text displayed in 3D space faces the person viewing it.
+    ja: 3D spaceに表示するtextを閲覧者の方へ向ける。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply when critical labels, annotations, or instructions must appear in 3D space.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure text displayed in 3D space faces the person viewing it.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Communicating with people
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 00594eed3a4dc962b8c790c244773b8d782155a6a40e70dfb1c2676103e07181
+    evidence_paraphrase: Ensure text displayed in 3D space faces the person viewing it.
+  tags:
+    - technologies
+    - augmented-reality
+    - communicating-with-people
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure text displayed in 3D space faces the person viewing it.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0055
+  title: Keep 3D text at a constant type size
+  category: technologies
+  topic: augmented-reality
+  subtopic: communicating-with-people
+  statement:
+    en: Ensure 3D text uses the same type size regardless of its distance from the labeled object.
+    ja: 3D textはlabeled objectからの距離にかかわらず同じtype sizeを使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply when critical labels, annotations, or instructions must appear in 3D space.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure 3D text uses the same type size regardless of its distance from the labeled object.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Communicating with people
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 00594eed3a4dc962b8c790c244773b8d782155a6a40e70dfb1c2676103e07181
+    evidence_paraphrase: Ensure 3D text uses the same type size regardless of its distance from the labeled object.
+  tags:
+    - technologies
+    - augmented-reality
+    - communicating-with-people
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure 3D text uses the same type size regardless of its distance from the labeled object.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0056
+  title: Never alter the AR glyph beyond size and color
+  category: technologies
+  topic: augmented-reality
+  subtopic: icons-and-badges
+  statement:
+    en: Never alter the AR glyph except to adjust its size or color.
+    ja: AR glyphはsizeまたはcolorの調整以外で変更しない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use the Apple-provided AR glyph artwork.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never alter the AR glyph except to adjust its size or color.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Icons and badges
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: a8635cc9f6ed259c905d9c7a8495e359a395c6b355de6d3ef7f05dd31d80eb91
+    evidence_paraphrase: Never alter the AR glyph except to adjust its size or color.
+  tags:
+    - technologies
+    - augmented-reality
+    - icons-and-badges
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never alter the AR glyph except to adjust its size or color.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0057
+  title: Never repurpose the AR glyph
+  category: technologies
+  topic: augmented-reality
+  subtopic: icons-and-badges
+  statement:
+    en: Never use the AR glyph for a purpose other than starting an ARKit-based experience.
+    ja: AR glyphをARKit-based experienceの開始以外の目的に使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Treat the glyph strictly as a control for initiating the experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use the AR glyph for a purpose other than starting an ARKit-based experience.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Icons and badges
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: a8635cc9f6ed259c905d9c7a8495e359a395c6b355de6d3ef7f05dd31d80eb91
+    evidence_paraphrase: Never use the AR glyph for a purpose other than starting an ARKit-based experience.
+  tags:
+    - technologies
+    - augmented-reality
+    - icons-and-badges
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never use the AR glyph for a purpose other than starting an ARKit-based experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0058
+  title: Never use the AR glyph for non-ARKit experiences
+  category: technologies
+  topic: augmented-reality
+  subtopic: icons-and-badges
+  statement:
+    en: Never use the AR glyph with an augmented-reality experience that wasn't created using ARKit.
+    ja: ARKitで作成されていないaugmented-reality experienceにAR glyphを使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply to every use of the AR glyph.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use the AR glyph with an augmented-reality experience that wasn't created using ARKit.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Icons and badges
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: a8635cc9f6ed259c905d9c7a8495e359a395c6b355de6d3ef7f05dd31d80eb91
+    evidence_paraphrase: Never use the AR glyph with an augmented-reality experience that wasn't created using ARKit.
+  tags:
+    - technologies
+    - augmented-reality
+    - icons-and-badges
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never use the AR glyph with an augmented-reality experience that wasn't created using ARKit.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0059
+  title: Never alter or recolor AR badges
+  category: technologies
+  topic: augmented-reality
+  subtopic: icons-and-badges
+  statement:
+    en: Never alter or recolor Apple-provided AR badges.
+    ja: Apple-provided AR badgeを変更またはrecolorしない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use the downloadable collapsed or expanded badge artwork without modification.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never alter or recolor Apple-provided AR badges.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Icons and badges
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 7cf5c275b80c002b52a9301eab342aebe5b30ed94284496d8b2e5f933a81a4ab
+    evidence_paraphrase: Never alter or recolor Apple-provided AR badges.
+  tags:
+    - technologies
+    - augmented-reality
+    - icons-and-badges
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never alter or recolor Apple-provided AR badges.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0060
+  title: Never repurpose AR badges
+  category: technologies
+  topic: augmented-reality
+  subtopic: icons-and-badges
+  statement:
+    en: Never use AR badges for purposes other than identifying items viewable in AR using ARKit.
+    ja: AR badgeをARKitを使ってAR表示できるitemの識別以外の目的に使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply to both collapsed and expanded AR badge artwork.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use AR badges for purposes other than identifying items viewable in AR using ARKit.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Icons and badges
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 7cf5c275b80c002b52a9301eab342aebe5b30ed94284496d8b2e5f933a81a4ab
+    evidence_paraphrase: Never use AR badges for purposes other than identifying items viewable in AR using ARKit.
+  tags:
+    - technologies
+    - augmented-reality
+    - icons-and-badges
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never use AR badges for purposes other than identifying items viewable in AR using ARKit.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0061
+  title: Never use AR badges for non-ARKit experiences
+  category: technologies
+  topic: augmented-reality
+  subtopic: icons-and-badges
+  statement:
+    en: Never use AR badges with an augmented-reality experience that wasn't created using ARKit.
+    ja: ARKitで作成されていないaugmented-reality experienceにAR badgeを使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply to both collapsed and expanded AR badge artwork.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use AR badges with an augmented-reality experience that wasn't created using ARKit.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Icons and badges
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: 7cf5c275b80c002b52a9301eab342aebe5b30ed94284496d8b2e5f933a81a4ab
+    evidence_paraphrase: Never use AR badges with an augmented-reality experience that wasn't created using ARKit.
+  tags:
+    - technologies
+    - augmented-reality
+    - icons-and-badges
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never use AR badges with an augmented-reality experience that wasn't created using ARKit.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0062
+  title: Place AR badges in a consistent photo corner
+  category: technologies
+  topic: augmented-reality
+  subtopic: icons-and-badges
+  statement:
+    en: Always place an AR badge in the same corner of object photos.
+    ja: AR badgeをobject photoの常に同じcornerへ配置する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply consistently across every badged object photo in the app.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Always place an AR badge in the same corner of object photos.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Icons and badges
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: aa0868c00e2c481dbdf34a2b3c3bc7008984b2b173add05d0932d6b6c2c087a9
+    evidence_paraphrase: Always place an AR badge in the same corner of object photos.
+  tags:
+    - technologies
+    - augmented-reality
+    - icons-and-badges
+  priority_rank: 6
+  status: active
+  apple_native_rule: Always place an AR badge in the same corner of object photos.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-AUGMENTED-REALITY-0063
+  title: Keep AR badges visible without obscuring details
+  category: technologies
+  topic: augmented-reality
+  subtopic: icons-and-badges
+  statement:
+    en: Ensure an AR badge is large enough to see clearly but not so large that it obscures important photo details.
+    ja: AR badgeを明確に見える大きさにしつつimportant photo detailを隠さない大きさにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply when sizing the badge within an object-photo corner.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Augmented reality experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAugmented realityの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure an AR badge is large enough to see clearly but not so large that it obscures important photo details.” in the documented Augmented reality context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/augmented-reality
+    page_title: Augmented reality
+    section_path:
+      - Augmented reality
+      - Icons and badges
+    retrieved_at: 2026-07-23T12:30:03Z
+    source_hash: 69afcf9ef77ea4a9592fe5193f9497e83f84a00326cbab68f4fd40ffb98a7062
+    source_sentence_hash: aa0868c00e2c481dbdf34a2b3c3bc7008984b2b173add05d0932d6b6c2c087a9
+    evidence_paraphrase: Ensure an AR badge is large enough to see clearly but not so large that it obscures important photo details.
+  tags:
+    - technologies
+    - augmented-reality
+    - icons-and-badges
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure an AR badge is large enough to see clearly but not so large that it obscures important photo details.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-CAREKIT-0001
   title: Provide a clear CareKit privacy-policy URL
