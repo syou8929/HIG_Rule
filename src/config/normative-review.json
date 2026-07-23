@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T16:18:00Z",
+  "reviewed_at": "2026-07-23T16:31:00Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,13 +8,117 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 463,
+  "reviewed_rule_count": 468,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
     "mixed_strength": "Split or narrow a candidate when mandatory and optional clauses occur in the same source lead; do not promote consider guidance to MUST."
   },
   "overrides": {
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0020": {
+      "title": "Include required subscription details on the signup screen",
+      "statement": {
+        "en": "Ensure the in-app signup screen includes the required subscription details.",
+        "ja": "app内signup screenにrequired subscription detailを含める。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Include the subscription name, duration, and content or services provided during each period.",
+        "Include the billing amount localized for every territory and currency where the subscription is sold.",
+        "Provide a way for existing subscribers to sign in or restore purchases."
+      ],
+      "exceptions": [],
+      "review_note": "Raised the source's needs-to-include information set to MUST and preserved all three required items."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0022": {
+      "title": "Restrict custom offer codes to alphanumeric ASCII",
+      "statement": {
+        "en": "Ensure every custom offer code contains only alphanumeric ASCII characters.",
+        "ja": "custom offer codeをalphanumeric ASCII characterだけで構成する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Apply when creating a custom subscription offer code."
+      ],
+      "exceptions": [],
+      "review_note": "Raised the explicit can-contain-only platform constraint to MUST."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0028": {
+      "title": "Always keep auto-renewable subscription cancellation easy",
+      "statement": {
+        "en": "Always make auto-renewable subscription cancellation easy to find and recognize.",
+        "ja": "auto-renewable subscriptionのcancel actionを常に見つけやすく認識しやすくする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Avoid burying or obscuring the manage-subscription action."
+      ],
+      "exceptions": [],
+      "review_note": "Retained MUST from the explicit Always directive and recorded discoverability and recognition."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0052": {
+      "title": "Ensure purchase help doesn't obstruct refund requests",
+      "statement": {
+        "en": "Ensure purchase-help content doesn't create a barrier to requesting a refund.",
+        "ja": "purchase-help contentがrefund requestの障壁にならないようにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "People must retain direct access to the system-provided refund flow."
+      ],
+      "exceptions": [],
+      "review_note": "Recovered the explicit Make sure user-intent safeguard as MUST."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0060": {
+      "title": "Ensure introductory pricing is fully disclosed",
+      "statement": {
+        "en": "For introductory pricing, ensure the signup screen lists the offer price, offer duration, and subsequent standard price.",
+        "ja": "introductory pricingではoffer price、offer duration、終了後のstandard priceをsignup screenに示す。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The subscription offers an introductory price."
+      ],
+      "exceptions": [],
+      "review_note": "Recovered the conditional Be sure pricing disclosure as MUST."
+    },
+    "HIG-TECHNOLOGIES-IN-APP-PURCHASE-0062": {
+      "title": "Ensure free-trial users know automatic billing follows",
+      "statement": {
+        "en": "Ensure people know that automatic billing begins when a free trial ends.",
+        "ja": "free trial終了時にautomatic billingが始まることを利用者へ知らせる。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The subscription includes a free trial that converts to a paid period."
+      ],
+      "exceptions": [],
+      "review_note": "Recovered the particularly-important Make sure billing disclosure as MUST."
+    },
     "HIG-TECHNOLOGIES-ICLOUD-0005": {
       "title": "Ensure the app behaves appropriately when iCloud is unavailable",
       "statement": {
