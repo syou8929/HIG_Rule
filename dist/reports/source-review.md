@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3214
-- Reviewed batches: 181
+- Reviewed rules: 3222
+- Reviewed batches: 182
 - Official source only: yes
-- Reviewed at: 2026-07-23T20:20:00Z
+- Reviewed at: 2026-07-23T20:40:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -302,6 +302,14 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · high — Reviewed the general secure-field recommendation and recorded the documented asterisk-concealment behavior without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002 · high — Recorded the title-and-prompt technique as supporting context for the existing purpose rule rather than duplicating it. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 · high — Recovered the explicit Always requirement separately from the page's general secure-field recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001 · high — Retained the progressive-disclosure recommendation at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002 · high — Retained the descriptive-label recommendation and separated its explicit meaning requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003 · high — Retained proximity at SHOULD and separated the relationship outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004 · high — Kept the one-button limit at SHOULD because the source frames it as complexity guidance, not a hard platform limit. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0005 · high — Recovered the hierarchy-ordering recommendation and its always-visible outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0006 · high — Recovered the default-hidden advanced-functionality recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0007 · high — Retained MUST from the explicit Make sure label-meaning directive. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0008 · high — Recovered the explicit control-to-expanded-content relationship recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
 - HIG-COMPONENTS-DOCK-MENUS-0001 · high — Recorded the discoverability rationale and the documented menu-bar and in-interface alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-DOCK-MENUS-0002 · high — Recorded the open-window navigation example and the source's focus on a small number of useful actions. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-DOCK-MENUS-0003 · high — Recovered the labeling half of the explicit need-to requirement as an atomic rule. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))

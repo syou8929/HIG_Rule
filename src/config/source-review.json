@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T20:20:00Z",
+  "reviewed_at": "2026-07-23T20:40:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -4874,6 +4874,37 @@
         "HIG-COMPONENTS-CONTROLS-0023"
       ],
       "review_note": "Completed Controls coverage, activated three missed leads, recovered eleven atomic state, symbol, animation, configuration, redaction, and locked-camera clauses, and elevated five explicit security, symbol-only, or platform-contract outcomes to MUST."
+    },
+    {
+      "id": "priority-6-disclosure-controls-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T20:40:00Z",
+      "review_method": "Rendered Apple HIG Disclosure controls best-practice, triangle, button, platform, resource, and availability context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/disclosure-controls",
+          "source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001",
+        "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002",
+        "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003",
+        "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004",
+        "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0005",
+        "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0006",
+        "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0007",
+        "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0008"
+      ],
+      "scope": {
+        "portability": "apple-component-specific",
+        "platforms": ["ios", "ipados", "macos", "visionos"],
+        "devices": ["iphone", "ipad", "mac", "apple-vision-pro"],
+        "components": ["disclosure-controls"],
+        "modalities": []
+      },
+      "review_note": "Completed Disclosure controls coverage, recovered hierarchy ordering, default hiding, label meaning, and control-content relationship rules, and retained one explicit Make sure label requirement as MUST."
     }
   ],
   "rules": {
@@ -31045,6 +31076,57 @@
       "severity": "error",
       "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["controls"], "modalities": []},
       "review_note": "Recovered the explicit must-authenticate-and-unlock iOS platform contract."
+    },
+    "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001": {
+      "source": {"source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702", "source_sentence_hash": "228fa942ed86a183562861b0a07da75ab22cdfe51e8194123a62ceface262ff4", "section_path": ["Disclosure controls", "Best practices"]},
+      "statement": {"en": "Use a disclosure control to hide details until they become relevant.", "ja": "detailがrelevantになるまでdisclosure controlで隠す。"},
+      "conditions": ["Use progressive disclosure to keep essential information easy to find without overwhelming people."],
+      "review_note": "Retained the progressive-disclosure recommendation at SHOULD."
+    },
+    "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002": {
+      "source": {"source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702", "source_sentence_hash": "6af7242cef12ff54c2f0a12d637070acc50499c35236de03e981c0cc8dd7cc15", "section_path": ["Disclosure controls", "Disclosure triangles"]},
+      "statement": {"en": "Provide a descriptive label for a disclosure triangle.", "ja": "disclosure triangleにdescriptive labelを提供する。"},
+      "conditions": ["The separate label-meaning rule records what the label must communicate."],
+      "review_note": "Retained the descriptive-label recommendation and separated its explicit meaning requirement."
+    },
+    "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003": {
+      "source": {"source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702", "source_sentence_hash": "44c0111c6def28be45355660905e2cb44e02e56f4e61ea59005e9a4b22312a63", "section_path": ["Disclosure controls", "Disclosure buttons"]},
+      "statement": {"en": "Place a disclosure button near the content it shows and hides.", "ja": "disclosure buttonを表示・非表示にするcontentの近くに置く。"},
+      "conditions": ["The separate relationship rule records the expanded-choice association."],
+      "review_note": "Retained proximity at SHOULD and separated the relationship outcome."
+    },
+    "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004": {
+      "source": {"source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702", "source_sentence_hash": "c8bdb3bf35dd22d6efed23e9b8c35c1102289897c14f344b1a34f10a205f4373", "section_path": ["Disclosure controls", "Disclosure buttons"]},
+      "statement": {"en": "Use no more than one disclosure button in a single view.", "ja": "1つのviewでdisclosure buttonを1個以下にする。"},
+      "conditions": ["Multiple disclosure buttons add complexity and can confuse people."],
+      "review_note": "Kept the one-button limit at SHOULD because the source frames it as complexity guidance, not a hard platform limit."
+    },
+    "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0005": {
+      "source": {"source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702", "source_sentence_hash": "a118bf83934dfc508bc03cba5f9aa186acfa51bb84480801cc3eccf9dde1f5f8", "section_path": ["Disclosure controls", "Best practices"]},
+      "title": "Keep likely controls at the top of the disclosure hierarchy",
+      "statement": {"en": "Place the controls people are most likely to use at the top of the disclosure hierarchy so they remain visible.", "ja": "利用頻度が高いcontrolをdisclosure hierarchy上部に置いて常時表示する。"},
+      "review_note": "Recovered the hierarchy-ordering recommendation and its always-visible outcome."
+    },
+    "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0006": {
+      "source": {"source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702", "source_sentence_hash": "0cde45f6bf7510ae12ed029d1656443712da0516aacefa8696f75de2a950f13e", "section_path": ["Disclosure controls", "Best practices"]},
+      "statement": {"en": "Hide more advanced disclosure functionality by default.", "ja": "よりadvancedなdisclosure functionalityをdefaultで隠す。"},
+      "review_note": "Recovered the default-hidden advanced-functionality recommendation."
+    },
+    "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0007": {
+      "source": {"source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702", "source_sentence_hash": "4bf26abf7b7168e0c9f9bb7d139bc9cbf5a0c3a6e1f0a41877c24a283060d5e5", "section_path": ["Disclosure controls", "Disclosure triangles"]},
+      "title": "Ensure disclosure-triangle labels identify their content",
+      "statement": {"en": "Ensure a disclosure-triangle label indicates what the control discloses or hides.", "ja": "disclosure triangleのlabelで表示・非表示になるcontentを示す。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["A suitable label can describe the hidden content, such as Advanced Options."],
+      "review_note": "Retained MUST from the explicit Make sure label-meaning directive."
+    },
+    "HIG-COMPONENTS-DISCLOSURE-CONTROLS-0008": {
+      "source": {"source_hash": "f57fbeb6dc586ec0c64d179d8035b189236a9fecab5e7c7095ea3c82cc12d702", "source_sentence_hash": "860dad9d53f8d4b519d3f3542c1dc8c871050e4fcaadf30ae3ed395d558dae41", "section_path": ["Disclosure controls", "Disclosure buttons"]},
+      "title": "Establish the disclosure button's content relationship",
+      "statement": {"en": "Establish a clear relationship between a disclosure button and the expanded choices it reveals.", "ja": "disclosure buttonと表示されるexpanded choiceの関係を明確にする。"},
+      "review_note": "Recovered the explicit control-to-expanded-content relationship recommendation."
     }
   }
 }

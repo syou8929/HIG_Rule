@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:16:52.049Z. 3428 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:20:49.515Z. 3432 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1486,10 +1486,14 @@ Generated 2026-07-23T18:16:52.049Z. 3428 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 · MUST · high** — Use a secure tvOS digit field whenever the app requests sensitive data. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 ### disclosure-controls
 
-- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001 · SHOULD · low** — Choose or apply a disclosure control to hide details until they’re relevant in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
-- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002 · SHOULD · low** — Make a descriptive label when using a disclosure triangle available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
-- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003 · SHOULD · low** — Apply the documented Disclosure controls guidance to place a disclosure button near the content that it shows and hides. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
-- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004 · SHOULD · low** — Choose or apply no more than one disclosure button in a single view in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001 · SHOULD · high** — Use a disclosure control to hide details until they become relevant. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002 · SHOULD · high** — Provide a descriptive label for a disclosure triangle. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003 · SHOULD · high** — Place a disclosure button near the content it shows and hides. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004 · SHOULD · high** — Use no more than one disclosure button in a single view. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0005 · SHOULD · high** — Place the controls people are most likely to use at the top of the disclosure hierarchy so they remain visible. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0006 · SHOULD · high** — Hide more advanced disclosure functionality by default. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0007 · MUST · high** — Ensure a disclosure-triangle label indicates what the control discloses or hides. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- **HIG-COMPONENTS-DISCLOSURE-CONTROLS-0008 · SHOULD · high** — Establish a clear relationship between a disclosure button and the expanded choices it reveals. ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
 ### dock-menus
 
 - **HIG-COMPONENTS-DOCK-MENUS-0001 · SHOULD · high** — Make every custom Dock-menu command available through another visible part of the Mac app. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
