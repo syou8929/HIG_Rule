@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 572
-- Retained MUST: 491
+- Reviewed rules: 573
+- Retained MUST: 492
 - Retained MUST_NOT: 81
-- Normative level changes: 193
+- Normative level changes: 194
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T21:00:00Z
+- Reviewed at: 2026-07-23T21:20:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -62,6 +62,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-GAUGES-0001 — Raised the value-and-endpoint labeling requirement to MUST because VoiceOver depends on the visible gauge labels. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-GAUGES-0006 — Recovered the platform-specific MUST_NOT from the explicit never-partially invariant. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-IMAGE-VIEWS-0009 — Retained MUST after confirming the explicit Ensure directive and separating the optional shadow and background techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-LABELS-0007 — Recovered the explicit Make sure custom-style and custom-font legibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
 - HIG-COMPONENTS-LISTS-AND-TABLES-0016 — Retained MUST after confirming the explicit must constraint and narrowing it to iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0015 — Narrowed the MUST to the unqualified Always clause; the source lead's consider clause is split into a separate MAY rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0022 — Restored the condition lost by the 19-word evidence-fragment limit; MUST is retained for legibility and contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
@@ -490,6 +491,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-GAUGES-0001 · MUST · retained_with_atomicity_or_scope_correction — Raised the value-and-endpoint labeling requirement to MUST because VoiceOver depends on the visible gauge labels. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-GAUGES-0006 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the platform-specific MUST_NOT from the explicit never-partially invariant. ([source](https://developer.apple.com/design/human-interface-guidelines/gauges))
 - HIG-COMPONENTS-IMAGE-VIEWS-0009 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive and separating the optional shadow and background techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-LABELS-0007 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure custom-style and custom-font legibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
 - HIG-COMPONENTS-LISTS-AND-TABLES-0016 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit must constraint and narrowing it to iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))

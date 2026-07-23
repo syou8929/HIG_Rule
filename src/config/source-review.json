@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T21:00:00Z",
+  "reviewed_at": "2026-07-23T21:20:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -4930,6 +4930,34 @@
         "modalities": []
       },
       "review_note": "Completed the remaining Gauges best-practice rules, elevated the VoiceOver-dependent value-and-endpoint labeling requirement to MUST, and retained gradient use at MAY."
+    },
+    {
+      "id": "priority-6-labels-complete-context-2026-07-24",
+      "reviewed_at": "2026-07-23T21:20:00Z",
+      "review_method": "Rendered Apple HIG Labels overview, best-practice, system-color table, platform, macOS, watchOS, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/labels",
+          "source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-LABELS-0001",
+        "HIG-COMPONENTS-LABELS-0002",
+        "HIG-COMPONENTS-LABELS-0003",
+        "HIG-COMPONENTS-LABELS-0004",
+        "HIG-COMPONENTS-LABELS-0005",
+        "HIG-COMPONENTS-LABELS-0006",
+        "HIG-COMPONENTS-LABELS-0007",
+        "HIG-COMPONENTS-LABELS-0008",
+        "HIG-COMPONENTS-LABELS-0009",
+        "HIG-COMPONENTS-LABELS-0010",
+        "HIG-COMPONENTS-LABELS-0011",
+        "HIG-COMPONENTS-LABELS-0012"
+      ],
+      "review_note": "Completed Labels coverage, recovered text-field and text-view component choices, custom-font legibility, four structured system-color meanings, and watchOS complication guidance; elevated the explicit Make sure legibility outcome to MUST."
     }
   ],
   "rules": {
@@ -31168,6 +31196,89 @@
       "statement": {"en": "Consider a path gradient when it helps communicate a gauge's purpose.", "ja": "gaugeのpurposeを伝えやすくする場合はpath gradientを検討する。"},
       "conditions": ["A temperature gauge can map a red-to-blue spectrum to hot-to-cold values."],
       "review_note": "Retained the explicit Consider guidance at MAY."
+    },
+    "HIG-COMPONENTS-LABELS-0001": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "a242b1bfe55ebf8eed12c05789c4e3978618f8436a73102d8d76b2046468e6ce", "section_path": ["Labels", "Best practices"]},
+      "statement": {"en": "Use a label for a small amount of text that people don't need to edit.", "ja": "利用者が編集する必要のない少量のtextにはlabelを使う。"},
+      "conditions": ["Use the separate text-field or text-view rules when the amount or editability differs."],
+      "review_note": "Retained the small, uneditable-text component choice at SHOULD."
+    },
+    "HIG-COMPONENTS-LABELS-0002": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "1fdf4f005d94d0ba4b080f555552101321f752819d89566127fe6cd8d531a89a", "section_path": ["Labels", "Best practices"]},
+      "statement": {"en": "Prefer system fonts in labels.", "ja": "labelではsystem fontを優先する。"},
+      "conditions": ["Labels using system fonts support Dynamic Type by default where available.", "The separate legibility rule applies to custom fonts and adjusted styles."],
+      "review_note": "Retained the explicit Prefer guidance at SHOULD and recorded its Dynamic Type benefit."
+    },
+    "HIG-COMPONENTS-LABELS-0003": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "eaa9563cefd11b5d2588ad797a0e843f5960bc53d45e6ffefa92df074c1f94fe", "section_path": ["Labels", "Best practices"]},
+      "statement": {"en": "Use system-provided label colors to communicate relative text importance.", "ja": "textのrelative importanceを伝えるためsystem-provided label colorを使う。"},
+      "conditions": ["Apply the separate primary, secondary, tertiary, and quaternary color meanings."],
+      "review_note": "Retained system color selection at SHOULD and separated all four structured meanings."
+    },
+    "HIG-COMPONENTS-LABELS-0004": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "b69a95a6300b347b55cf840b6f3f54f38a1f2b533b565527c342ae4fd78e0343", "section_path": ["Labels", "Best practices"]},
+      "statement": {"en": "Make useful label text selectable and copyable.", "ja": "有用なlabel textを選択・copyできるようにする。"},
+      "conditions": ["Useful information can include an error message, location, or IP address.", "Selection lets people paste the information elsewhere."],
+      "review_note": "Recorded selection, copying, and the documented useful-information examples."
+    },
+    "HIG-COMPONENTS-LABELS-0005": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "7fe92bc710206e1a565d698d6b9bb182a712eb907ab9a90c2109de844943d1c2", "section_path": ["Labels", "Best practices"]},
+      "title": "Use a text field for a small amount of editable text",
+      "statement": {"en": "Use a text field when people need to edit a small amount of text.", "ja": "利用者が少量のtextを編集する必要がある場合はtext fieldを使う。"},
+      "review_note": "Recovered the small editable-text component choice."
+    },
+    "HIG-COMPONENTS-LABELS-0006": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "61d1ab2663a03f40356cf7e1e70629cdfd7a3f3c660931595c01a0a679ea9b15", "section_path": ["Labels", "Best practices"]},
+      "title": "Use a text view for large amounts of text",
+      "statement": {"en": "Use a text view to display a large amount of text, whether it is editable or not.", "ja": "編集可否にかかわらず大量のtext表示にはtext viewを使う。"},
+      "review_note": "Recovered the large-text component choice and preserved optional editability."
+    },
+    "HIG-COMPONENTS-LABELS-0007": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "780fe51f6c9a01ae509fdf0d32ae0f965f6388faa282d7b15cc931d4661ef8d2", "section_path": ["Labels", "Best practices"]},
+      "title": "Ensure custom label styling remains legible",
+      "statement": {"en": "Ensure label text remains legible after adjusting its style or using custom fonts.", "ja": "label styleの調整やcustom font使用後もtextのlegibilityを保つ。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "review_note": "Recovered the explicit Make sure accessibility requirement as MUST."
+    },
+    "HIG-COMPONENTS-LABELS-0008": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "8ef8ae71525c41ef904c6c0928efa451856f7f206b962b9682d2428a617bd2d9", "section_path": ["Labels", "Best practices"]},
+      "title": "Use primary label colors for primary information",
+      "statement": {"en": "Use the primary system label color for primary information.", "ja": "primary informationにはprimary system label colorを使う。"},
+      "conditions": ["Use label on iOS, iPadOS, tvOS, and visionOS.", "Use labelColor on macOS."],
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": ["labels"], "modalities": []},
+      "review_note": "Recovered the structured primary-color meaning and both platform API names."
+    },
+    "HIG-COMPONENTS-LABELS-0009": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "f83b760b39663fda7402eed142d411983934e1bf5041171b603c535720b6f86f", "section_path": ["Labels", "Best practices"]},
+      "title": "Use secondary label colors for supplemental text",
+      "statement": {"en": "Use the secondary system label color for a subheading or supplemental text.", "ja": "subheadingやsupplemental textにはsecondary system label colorを使う。"},
+      "conditions": ["Use secondaryLabel on iOS, iPadOS, tvOS, and visionOS.", "Use secondaryLabelColor on macOS."],
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": ["labels"], "modalities": []},
+      "review_note": "Recovered the structured secondary-color meaning and both platform API names."
+    },
+    "HIG-COMPONENTS-LABELS-0010": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "7e6ae68216778953640099c3dc379ccd81ba4c8950cd567ad867dab37f4de63e", "section_path": ["Labels", "Best practices"]},
+      "title": "Use tertiary label colors for unavailable items",
+      "statement": {"en": "Use the tertiary system label color for text that describes an unavailable item or behavior.", "ja": "unavailable itemやbehaviorを説明するtextにはtertiary system label colorを使う。"},
+      "conditions": ["Use tertiaryLabel on iOS, iPadOS, tvOS, and visionOS.", "Use tertiaryLabelColor on macOS."],
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": ["labels"], "modalities": []},
+      "review_note": "Recovered the structured tertiary-color meaning and both platform API names."
+    },
+    "HIG-COMPONENTS-LABELS-0011": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "03751409819b69a6b891ef0b800dd4979eb947e1451e62497bbf39dd1eae459b", "section_path": ["Labels", "Best practices"]},
+      "title": "Use quaternary label colors for watermark text",
+      "statement": {"en": "Use the quaternary system label color for watermark text.", "ja": "watermark textにはquaternary system label colorを使う。"},
+      "conditions": ["Use quaternaryLabel on iOS, iPadOS, tvOS, and visionOS.", "Use quaternaryLabelColor on macOS."],
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": ["labels"], "modalities": []},
+      "review_note": "Recovered the structured quaternary-color meaning and both platform API names."
+    },
+    "HIG-COMPONENTS-LABELS-0012": {
+      "source": {"source_hash": "a2a046f5c6dda0e961efdee346053ca651013a4c0ff0cd096217351fb22991a5", "source_sentence_hash": "8aa6e16a1eb6df6d74106c483dc9849fc92f80fc55d109c40e8c277f41868ef5", "section_path": ["Labels", "Platform considerations", "watchOS"]},
+      "statement": {"en": "Consider using system date and timer text components in watchOS complications.", "ja": "watchOS complicationではsystem date/timer text componentの使用を検討する。"},
+      "conditions": ["watchOS automatically fits the presentation to available space.", "The system updates the date or timer content without further app input."],
+      "review_note": "Recovered the watchOS-specific Consider guidance and both system-managed benefits."
     }
   }
 }

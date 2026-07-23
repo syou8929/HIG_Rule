@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3224
-- Reviewed batches: 183
+- Reviewed rules: 3236
+- Reviewed batches: 184
 - Official source only: yes
-- Reviewed at: 2026-07-23T21:00:00Z
+- Reviewed at: 2026-07-23T21:20:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -351,6 +351,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-IMAGE-VIEWS-0009 · high — Recovered the explicit Ensure requirement separately from the optional standout techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - HIG-COMPONENTS-IMAGE-VIEWS-0010 · high — Preserved the optional strength and the two documented treatment examples. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 - HIG-COMPONENTS-IMAGE-VIEWS-0011 · high — Recovered the documented WatchKit fallback without raising the source's can language above MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
+- HIG-COMPONENTS-LABELS-0001 · high — Retained the small, uneditable-text component choice at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0002 · high — Retained the explicit Prefer guidance at SHOULD and recorded its Dynamic Type benefit. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0003 · high — Retained system color selection at SHOULD and separated all four structured meanings. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0004 · high — Recorded selection, copying, and the documented useful-information examples. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0005 · high — Recovered the small editable-text component choice. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0006 · high — Recovered the large-text component choice and preserved optional editability. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0007 · high — Recovered the explicit Make sure accessibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0008 · high — Recovered the structured primary-color meaning and both platform API names. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0009 · high — Recovered the structured secondary-color meaning and both platform API names. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0010 · high — Recovered the structured tertiary-color meaning and both platform API names. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0011 · high — Recovered the structured quaternary-color meaning and both platform API names. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- HIG-COMPONENTS-LABELS-0012 · high — Recovered the watchOS-specific Consider guidance and both system-managed benefits. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
 - HIG-COMPONENTS-LISTS-AND-TABLES-0001 · high — Recorded the text-scanning rationale and separated the collection alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
 - HIG-COMPONENTS-LISTS-AND-TABLES-0002 · high — Recorded reordering as the key partial-editing example. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
 - HIG-COMPONENTS-LISTS-AND-TABLES-0003 · high — Separated the two documented selection-feedback patterns. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))

@@ -1,6 +1,6 @@
 # Apple HIG rule runtime
 
-This adapter is generated from 3432 active, source-traceable atomic rules. The canonical store is under `src/rules/`; do not hand-edit generated adapters.
+This adapter is generated from 3440 active, source-traceable atomic rules. The canonical store is under `src/rules/`; do not hand-edit generated adapters.
 
 ## Runtime procedure
 

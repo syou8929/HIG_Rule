@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:23:18.811Z. 3432 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:30:26.719Z. 3440 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1547,10 +1547,18 @@ Generated 2026-07-23T18:23:18.811Z. 3432 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-IMAGE-VIEWS-0011 · MAY · high** — When necessary, consider WatchKit for animating an image sequence within a watchOS image element. ([source](https://developer.apple.com/design/human-interface-guidelines/image-views))
 ### labels
 
-- **HIG-COMPONENTS-LABELS-0001 · SHOULD · low** — Choose or apply a label to display a small amount of text that people don’t need to edit in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
-- **HIG-COMPONENTS-LABELS-0002 · SHOULD · low** — Favor system fonts when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
-- **HIG-COMPONENTS-LABELS-0003 · SHOULD · low** — Choose or apply system-provided label colors to communicate relative importance in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
-- **HIG-COMPONENTS-LABELS-0004 · SHOULD · low** — Apply the documented Labels guidance to make useful label text selectable. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0001 · SHOULD · high** — Use a label for a small amount of text that people don't need to edit. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0002 · SHOULD · high** — Prefer system fonts in labels. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0003 · SHOULD · high** — Use system-provided label colors to communicate relative text importance. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0004 · SHOULD · high** — Make useful label text selectable and copyable. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0005 · SHOULD · high** — Use a text field when people need to edit a small amount of text. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0006 · SHOULD · high** — Use a text view to display a large amount of text, whether it is editable or not. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0007 · MUST · high** — Ensure label text remains legible after adjusting its style or using custom fonts. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0008 · SHOULD · high** — Use the primary system label color for primary information. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0009 · SHOULD · high** — Use the secondary system label color for a subheading or supplemental text. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0010 · SHOULD · high** — Use the tertiary system label color for text that describes an unavailable item or behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0011 · SHOULD · high** — Use the quaternary system label color for watermark text. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
+- **HIG-COMPONENTS-LABELS-0012 · MAY · high** — Consider using system date and timer text components in watchOS complications. ([source](https://developer.apple.com/design/human-interface-guidelines/labels))
 ### lists-and-tables
 
 - **HIG-COMPONENTS-LISTS-AND-TABLES-0001 · SHOULD · high** — Prefer a list or table when displaying primarily textual content. ([source](https://developer.apple.com/design/human-interface-guidelines/lists-and-tables))
