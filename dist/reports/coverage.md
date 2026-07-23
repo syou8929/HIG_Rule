@@ -7,8 +7,8 @@
 - Pages with rules: 156
 - Active atomic rules: 3483
 - Pages without rules: 16
-- Low-confidence rules: 153
-- Rules requiring human review: 153
+- Low-confidence rules: 151
+- Rules requiring human review: 151
 - Reference notes: 915
 
 ## Rules by category
@@ -24,9 +24,9 @@
 
 - AVOID: 471
 - MAY: 399
-- MUST: 496
+- MUST: 497
 - MUST_NOT: 81
-- SHOULD: 2036
+- SHOULD: 2035
 
 ## Rules by platform
 
@@ -69,8 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-STEPPERS-0001
-- HIG-COMPONENTS-STEPPERS-0002
 - HIG-FOUNDATIONS-IMAGES-0001
 - HIG-FOUNDATIONS-IMAGES-0002
 - HIG-FOUNDATIONS-LAYOUT-0001
@@ -225,8 +223,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-STEPPERS-0001
-- HIG-COMPONENTS-STEPPERS-0002
 - HIG-FOUNDATIONS-IMAGES-0001
 - HIG-FOUNDATIONS-IMAGES-0002
 - HIG-FOUNDATIONS-LAYOUT-0001

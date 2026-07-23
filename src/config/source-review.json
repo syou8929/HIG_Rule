@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T23:20:00Z",
+  "reviewed_at": "2026-07-23T23:40:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5131,9 +5131,65 @@
         "HIG-COMPONENTS-SNIPPETS-0011"
       ],
       "review_note": "Completed Snippets coverage, preserved all four existing IDs, recovered seven atomic margin, height, Dynamic Type, deep-link, dialogue, and platform rules, retained the explicit Ensure legibility outcome at MUST, and classified the 400-point maximum as a platform-contract MUST."
+    },
+    {
+      "id": "priority-6-steppers-complete-context-2026-07-24",
+      "reviewed_at": "2026-07-23T23:40:00Z",
+      "review_method": "Rendered Apple HIG Steppers overview, complete best-practice, platform, macOS, and resource context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/steppers",
+          "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-STEPPERS-0002",
+        "HIG-COMPONENTS-STEPPERS-0005"
+      ],
+      "review_note": "Completed Steppers coverage, preserved the three previously reviewed active IDs, deprecated the vague SHOULD at 0001, rebound its stable history to the explicit supporting sentence as 0005, and retained that Make sure outcome at MUST."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-STEPPERS-0002": {
+      "source": {
+        "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56",
+        "source_sentence_hash": "e3aaa75d0a4e873857f5127aa90dc4edbc08846b133dad236e653fd4a0f3f9be",
+        "section_path": ["Steppers", "Best practices"]
+      },
+      "title": "Consider a text field for large stepper changes",
+      "statement": {
+        "en": "When large value changes are likely, consider pairing a stepper with a text field.",
+        "ja": "大きな値変更が想定される場合はstepperとtext fieldの併用を検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": [
+        "A standalone stepper suits small changes that require only a few taps or clicks.",
+        "A text field lets people enter a specific value when values vary widely."
+      ],
+      "review_note": "Preserved the conditional Consider strength and the small-versus-large change distinction."
+    },
+    "HIG-COMPONENTS-STEPPERS-0005": {
+      "source": {
+        "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56",
+        "source_sentence_hash": "9344f10793b8dfc989cbb5db41ce19ff1b2944cb566c04047dada5ec6064ebc9",
+        "section_path": ["Steppers", "Best practices"]
+      },
+      "title": "Make the value a stepper changes obvious",
+      "statement": {
+        "en": "Ensure people know which value a stepper changes.",
+        "ja": "stepperがどの値を変更するか利用者に明確に伝える。"
+      },
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "A stepper doesn't display a value itself.",
+        "Place the stepper next to a field that displays its current value."
+      ],
+      "review_note": "Replaced the vague lead-only SHOULD with the explicit supporting Make sure requirement."
+    },
     "HIG-COMPONENTS-SNIPPETS-0001": {
       "source": {
         "source_hash": "f3c7d8a20617ee54d71c8b7c9982b6881da0b78d3510f19698b6aa89035e5938",
