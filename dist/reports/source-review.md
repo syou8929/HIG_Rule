@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2296
-- Reviewed batches: 147
+- Reviewed rules: 2328
+- Reviewed batches: 148
 - Official source only: yes
-- Reviewed at: 2026-07-23T08:26:37Z
+- Reviewed at: 2026-07-23T08:42:07Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1310,6 +1310,38 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027 · high — Recovered the conditional needs-to-flip UI representation requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0028 · high — Split the optional meaning-modifying badge decision from the mandatory UI-representation case. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0029 · high — Recovered the handedness-specific component option. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0001 · high — Replaced the generic generated statement with the documented legibility test and automatic-mode fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0002 · high — Narrowed the original mixed lead to its positive change-communication recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0003 · high — Replaced the duplicated generated wording and recorded the documented overload risk. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0004 · high — Retained the explicit Make sure directive as MUST and fixed the duplicated generated statement. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0005 · high — Recorded the feedback and compact-information purposes from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0006 · high — Retained the optional tone evaluation and its branding context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0007 · high — Expanded the generic template lead with the complete documented consistency and design-quality criteria. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0008 · high — Recorded the Z-order and layer-group choices while separating the mandatory annotation prerequisite. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0009 · high — Restored the all-presets scope and the documented motion-rendering risk. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0010 · high — Retained direct Avoid strength and recorded the component-library alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0011 · high — Retained the unqualified accessibility recommendation at SHOULD without inventing stronger source language. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0012 · high — Raised the direct Don't lead to MUST_NOT because the supporting legal statement explicitly says the copyrighted products can't be reproduced. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0013 · high — Activated the documented outline-variant context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0014 · high — Activated the small-size legibility option without overstating it as a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0015 · high — Recovered the complete fill-variant recommendation from the previously truncated candidate. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0016 · high — Activated the conditional margin option and its badge-width context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0017 · high — Recovered the overview's target-version availability constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0018 · high — Recovered the explicit Be sure directive from the overview. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0019 · high — Split and retained the overview's explicit usage prohibition as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0020 · high — Recovered the adaptive-color recommendation and its accessibility and appearance benefits. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0021 · high — Recovered the size-quality recommendation while preserving the any-size support exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0022 · high — Split the direct Don't branch and kept it at AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0023 · high — Split the documented positive alternative from the variable-color AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0024 · high — Recovered the weight-matching relationship from the unbolded section prose. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0025 · high — Recovered the optional scale-based emphasis adjustment. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0026 · high — Recovered the section-level variant-selection recommendation and examples. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0027 · high — Recovered the optional view-determined default behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0028 · high — Recovered the documented custom-symbol starting workflow. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0029 · high — Recovered the explicit can't-customize restriction from the copyright callout. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0030 · high — Recovered the conditional be-sure requirement from the supporting margin prose. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0031 · high — Recovered the conditional Make sure requirement from the supporting animation prose. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0032 · high — Split the optional whole-shape technique from the custom-symbol animation test. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001 · high — Recorded the confinement and stability risks plus the spatial-anchor alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0002 · high — Recorded the real-world cue consistency and visual-comfort requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0003 · high — Recorded prominence and depth-change perception as the hierarchy mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))

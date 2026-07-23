@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2959
+- Active atomic rules: 2979
 - Pages without rules: 16
-- Low-confidence rules: 614
-- Rules requiring human review: 614
-- Reference notes: 904
+- Low-confidence rules: 603
+- Rules requiring human review: 603
+- Reference notes: 902
 
 ## Rules by category
 
 - components: 1026
-- foundations: 432
+- foundations: 452
 - getting-started: 100
 - inputs: 245
 - patterns: 368
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 416
-- MAY: 352
-- MUST: 333
-- MUST_NOT: 35
-- SHOULD: 1823
+- MAY: 357
+- MUST: 336
+- MUST_NOT: 38
+- SHOULD: 1832
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 1995
-- ipados: 1971
-- macos: 1634
-- tvos: 1269
-- visionos: 1674
-- watchos: 1368
+- ios: 2015
+- ipados: 1991
+- macos: 1654
+- tvos: 1289
+- visionos: 1694
+- watchos: 1388
 
 ## Rules by testability
 
 - hybrid: 87
-- manual: 2872
+- manual: 2892
 
 ## Blocked pages
 
@@ -144,17 +144,6 @@ None.
 - HIG-FOUNDATIONS-MOTION-0004
 - HIG-FOUNDATIONS-MOTION-0005
 - HIG-FOUNDATIONS-MOTION-0007
-- HIG-FOUNDATIONS-SF-SYMBOLS-0001
-- HIG-FOUNDATIONS-SF-SYMBOLS-0002
-- HIG-FOUNDATIONS-SF-SYMBOLS-0003
-- HIG-FOUNDATIONS-SF-SYMBOLS-0005
-- HIG-FOUNDATIONS-SF-SYMBOLS-0006
-- HIG-FOUNDATIONS-SF-SYMBOLS-0007
-- HIG-FOUNDATIONS-SF-SYMBOLS-0008
-- HIG-FOUNDATIONS-SF-SYMBOLS-0009
-- HIG-FOUNDATIONS-SF-SYMBOLS-0010
-- HIG-FOUNDATIONS-SF-SYMBOLS-0011
-- HIG-FOUNDATIONS-SF-SYMBOLS-0012
 - HIG-FOUNDATIONS-TYPOGRAPHY-0001
 - HIG-FOUNDATIONS-TYPOGRAPHY-0002
 - HIG-FOUNDATIONS-TYPOGRAPHY-0003
@@ -761,17 +750,6 @@ None.
 - HIG-FOUNDATIONS-MOTION-0004
 - HIG-FOUNDATIONS-MOTION-0005
 - HIG-FOUNDATIONS-MOTION-0007
-- HIG-FOUNDATIONS-SF-SYMBOLS-0001
-- HIG-FOUNDATIONS-SF-SYMBOLS-0002
-- HIG-FOUNDATIONS-SF-SYMBOLS-0003
-- HIG-FOUNDATIONS-SF-SYMBOLS-0005
-- HIG-FOUNDATIONS-SF-SYMBOLS-0006
-- HIG-FOUNDATIONS-SF-SYMBOLS-0007
-- HIG-FOUNDATIONS-SF-SYMBOLS-0008
-- HIG-FOUNDATIONS-SF-SYMBOLS-0009
-- HIG-FOUNDATIONS-SF-SYMBOLS-0010
-- HIG-FOUNDATIONS-SF-SYMBOLS-0011
-- HIG-FOUNDATIONS-SF-SYMBOLS-0012
 - HIG-FOUNDATIONS-TYPOGRAPHY-0001
 - HIG-FOUNDATIONS-TYPOGRAPHY-0002
 - HIG-FOUNDATIONS-TYPOGRAPHY-0003
@@ -1966,12 +1944,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Gradients — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Weights and scales — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.

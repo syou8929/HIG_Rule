@@ -78,7 +78,7 @@ for (const rule of rules) {
   if (!rule.source.url.startsWith("https://developer.apple.com/design/human-interface-guidelines")) errors.push(`${rule.id}: non-HIG primary source`);
   if (!rule.source.section_path.length) errors.push(`${rule.id}: missing section path`);
   if (rule.normative_level === "MUST" && !/^(always|ensure|make sure|must|required)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id)) warnings.push(`${rule.id}: MUST requires strength review`);
-  if (rule.normative_level === "MUST_NOT" && !/^(never|must not)/i.test(rule.title)) warnings.push(`${rule.id}: MUST_NOT requires strength review`);
+  if (rule.normative_level === "MUST_NOT" && !/^(never|must not)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id)) warnings.push(`${rule.id}: MUST_NOT requires strength review`);
   if (rule.scope.portability === "universal" && /\b(ios|ipados|macos|tvos|visionos|watchos|swiftui|uikit|appkit|sf symbols)\b/i.test(`${rule.title} ${rule.statement.en}`)) {
     errors.push(`${rule.id}: Apple-specific language is classified as universal`);
   }

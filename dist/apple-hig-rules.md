@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T08:34:31.128Z. 2959 active rules; 4 deprecated rules.
+Generated 2026-07-23T08:50:44.285Z. 2979 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -524,18 +524,38 @@ Generated 2026-07-23T08:34:31.128Z. 2959 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0029 · MAY · high** — Consider preserving a handed tool's orientation while flipping its icon base when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 ### sf-symbols
 
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0001 · SHOULD · low** — Apply the documented SF Symbols guidance to confirm that a symbol’s rendering mode works well in every context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0002 · SHOULD · low** — Choose or apply variable color to communicate change — don’t use it to communicate depth in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0003 · SHOULD · low** — Apply the documented SF Symbols guidance to apply symbol animations judiciously. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0004 · MUST · medium** — Verify that that animations serve a clear purpose in communicating a symbol’s intent. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0005 · SHOULD · low** — Choose or apply symbol animations to communicate information more efficiently in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0006 · MAY · low** — Evaluate whether your app’s tone when adding animations is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0007 · SHOULD · low** — Choose or apply the template as a guide in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0008 · SHOULD · low** — Apply the documented SF Symbols guidance to optimize layers to use animations with custom symbols. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0009 · SHOULD · low** — Apply the documented SF Symbols guidance to test animations for custom symbols. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0010 · AVOID · low** — Exclude making custom symbols that include common variants, such as enclosures or badges from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0011 · SHOULD · low** — Make alternative text labels for custom symbols available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
-- **HIG-FOUNDATIONS-SF-SYMBOLS-0012 · AVOID · low** — Exclude design replicas of Apple products from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0001 · SHOULD · high** — Confirm that each symbol's rendering mode remains legible in every context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0002 · SHOULD · high** — Use variable color to communicate a characteristic that changes over time. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0003 · SHOULD · high** — Use symbol animations judiciously. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0004 · MUST · high** — Ensure every symbol animation serves a clear purpose in communicating the symbol's intent. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0005 · SHOULD · high** — Use symbol animations to communicate information efficiently. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0006 · MAY · high** — Consider how a symbol animation aligns with the app's brand, style, and tone. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0007 · SHOULD · high** — Use an SF Symbols template to guide a custom symbol's design. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0008 · SHOULD · high** — Optimize custom-symbol layers for the animations the symbol supports. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0009 · SHOULD · high** — Test each custom symbol with all animation presets. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0010 · AVOID · high** — Avoid building common enclosures or badges directly into custom symbols. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0011 · SHOULD · high** — Provide alternative text labels for custom symbols. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0012 · MUST_NOT · high** — Do not reproduce Apple products in custom symbols. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0013 · SHOULD · high** — Use the outline variant when displaying a symbol alongside text. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0014 · MAY · high** — At small sizes, consider an enclosing shape to improve symbol legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0015 · SHOULD · high** — Use a fill variant when a symbol needs visual emphasis or communicates selection. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0016 · MAY · high** — Consider negative side margins when a custom symbol needs optical horizontal alignment. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0017 · SHOULD · high** — Confirm that each symbol and symbol feature is available on every targeted system version. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0018 · MUST · high** — Understand the SF Symbols terms and conditions before using the symbols. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0019 · MUST_NOT · high** — Do not use SF Symbols or confusingly similar images in app icons, logos, or other trademarked uses. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0020 · SHOULD · high** — Use system-provided colors when symbols need adaptive appearances. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0021 · SHOULD · high** — Prefer gradient rendering at larger symbol sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0022 · AVOID · high** — Avoid using variable color to communicate depth. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0023 · SHOULD · high** — Use Hierarchical rendering mode to communicate depth and visual hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0024 · SHOULD · high** — Match a symbol's weight to adjacent San Francisco text. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0025 · MAY · high** — Consider changing symbol scale to adjust emphasis beside text. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0026 · SHOULD · high** — Use symbol design variants to communicate precise states and actions. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0027 · MAY · high** — Consider letting the containing view choose between outline and fill variants. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0028 · SHOULD · high** — Create a custom symbol by modifying an exported template for a similar SF Symbol. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0029 · MUST_NOT · high** — Do not customize an SF Symbol that depicts an Apple product or feature. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0030 · MUST · high** — When adding negative side margins to a custom symbol, use the documented configuration naming pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0031 · MUST · high** — Before animating a custom symbol by layer, annotate its layers in the SF Symbols app. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- **HIG-FOUNDATIONS-SF-SYMBOLS-0032 · MAY · high** — Consider drawing animated custom symbols with whole shapes. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
 ### spatial-layout
 
 - **HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001 · AVOID · high** — Avoid anchoring visionOS content to the wearer’s head. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))

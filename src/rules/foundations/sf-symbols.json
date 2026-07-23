@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0001",
-    "title": "Confirm that a symbol’s rendering mode works well in every context",
+    "title": "Verify rendering-mode legibility in every context",
     "category": "foundations",
     "topic": "sf-symbols",
     "subtopic": "rendering-modes",
     "statement": {
-      "en": "Apply the documented SF Symbols guidance to confirm that a symbol’s rendering mode works well in every context.",
-      "ja": "「SF Symbols」において「Confirm that a symbol’s rendering mode works well in every context」の指針を適用する。"
+      "en": "Confirm that each symbol's rendering mode remains legible in every context.",
+      "ja": "各symbolのrendering modeがすべてのcontextでlegibleか確認する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36,7 +36,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Check symbol size and contrast against the current background.",
+      "Review automatic preferred-mode results and choose a different mode when it improves legibility."
     ],
     "exceptions": [],
     "rationale": {
@@ -46,7 +47,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented SF Symbols guidance to confirm that a symbol’s rendering mode works well in every context.” in the documented SF Symbols context?"
+        "Does the design satisfy “Confirm that each symbol's rendering mode remains legible in every context.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -66,7 +67,7 @@
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
       "source_sentence_hash": "951d3bdb6a70168a9a57191cb571755b41d10f41184baef91aa7ddea9308555d",
-      "evidence_paraphrase": "Apply the documented SF Symbols guidance to confirm that a symbol’s rendering mode works well in every context."
+      "evidence_paraphrase": "Confirm that each symbol's rendering mode remains legible in every context."
     },
     "tags": [
       "foundations",
@@ -75,22 +76,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented SF Symbols guidance to confirm that a symbol’s rendering mode works well in every context.",
+    "apple_native_rule": "Confirm that each symbol's rendering mode remains legible in every context.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0002",
-    "title": "Use variable color to communicate change — don’t use it to communicate depth",
+    "title": "Use variable color to communicate change",
     "category": "foundations",
     "topic": "sf-symbols",
     "subtopic": "variable-color",
     "statement": {
-      "en": "Choose or apply variable color to communicate change — don’t use it to communicate depth in the documented context.",
-      "ja": "該当する状況ではvariable color to communicate change — don’t use it to communicate depthを採用する。"
+      "en": "Use variable color to communicate a characteristic that changes over time.",
+      "ja": "時間とともに変化するcharacteristicを伝えるためにvariable colorを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -115,7 +116,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Map symbol layers to thresholds between zero and 100 percent for values such as capacity or strength."
     ],
     "exceptions": [],
     "rationale": {
@@ -125,7 +126,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply variable color to communicate change — don’t use it to communicate depth in the documented context.” in the documented SF Symbols context?"
+        "Does the design satisfy “Use variable color to communicate a characteristic that changes over time.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -145,7 +146,7 @@
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
       "source_sentence_hash": "3ac173b62dfb8a4aa5be3ab43ed7148431c997b731fd6356c6c4023133abe064",
-      "evidence_paraphrase": "Choose or apply variable color to communicate change — don’t use it to communicate depth in the documented context."
+      "evidence_paraphrase": "Use variable color to communicate a characteristic that changes over time."
     },
     "tags": [
       "foundations",
@@ -154,7 +155,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply variable color to communicate change — don’t use it to communicate depth in the documented context.",
+    "apple_native_rule": "Use variable color to communicate a characteristic that changes over time.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -164,14 +165,251 @@
     "topic": "sf-symbols",
     "subtopic": "animations",
     "statement": {
-      "en": "Apply the documented SF Symbols guidance to apply symbol animations judiciously.",
-      "ja": "「SF Symbols」において「Apply symbol animations judiciously」の指針を適用する。"
+      "en": "Use symbol animations judiciously.",
+      "ja": "symbol animationを慎重に使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Avoid adding so many animations that the interface becomes overwhelming or distracting."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use symbol animations judiciously.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Animations"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "011050637b01d91100bbc71281999e0f6fac62381facd47810a47797da9d7670",
+      "evidence_paraphrase": "Use symbol animations judiciously."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "animations"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use symbol animations judiciously.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0004",
+    "title": "Ensure symbol animations communicate a clear purpose",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "animations",
+    "statement": {
+      "en": "Ensure every symbol animation serves a clear purpose in communicating the symbol's intent.",
+      "ja": "各symbol animationがsymbolのintentを伝える明確なpurposeを果たすようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Evaluate how people may interpret each movement and whether one or more combined animations could be confusing."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure every symbol animation serves a clear purpose in communicating the symbol's intent.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Animations"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "ce94fe0ffec89a52d7753e6c73e13403366ae9de063ea93b6e26ba764716740d",
+      "evidence_paraphrase": "Ensure every symbol animation serves a clear purpose in communicating the symbol's intent."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "animations"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure every symbol animation serves a clear purpose in communicating the symbol's intent.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0005",
+    "title": "Use symbol animations to communicate efficiently",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "animations",
+    "statement": {
+      "en": "Use symbol animations to communicate information efficiently.",
+      "ja": "情報を効率よく伝えるためにsymbol animationを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use animation for visual feedback or to present complex information in limited space."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use symbol animations to communicate information efficiently.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Animations"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "e53d5bfa48fdd20fb3c3d26f6a35777ff85d2b780e3f9d32eeb56d8f0fbe5377",
+      "evidence_paraphrase": "Use symbol animations to communicate information efficiently."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "animations"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use symbol animations to communicate information efficiently.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0006",
+    "title": "Consider app tone when adding symbol animations",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "animations",
+    "statement": {
+      "en": "Consider how a symbol animation aligns with the app's brand, style, and tone.",
+      "ja": "symbol animationがappのbrand、style、toneに合うか検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -204,7 +442,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented SF Symbols guidance to apply symbol animations judiciously.” in the documented SF Symbols context?"
+        "Does the design satisfy “Consider how a symbol animation aligns with the app's brand, style, and tone.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -223,8 +461,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "011050637b01d91100bbc71281999e0f6fac62381facd47810a47797da9d7670",
-      "evidence_paraphrase": "Apply the documented SF Symbols guidance to apply symbol animations judiciously."
+      "source_sentence_hash": "5ed923e6073f68fa391a56c0dab1fbfd7fae052cf79a0d7b740c1f3372bc78c3",
+      "evidence_paraphrase": "Consider how a symbol animation aligns with the app's brand, style, and tone."
     },
     "tags": [
       "foundations",
@@ -233,21 +471,890 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented SF Symbols guidance to apply symbol animations judiciously.",
+    "apple_native_rule": "Consider how a symbol animation aligns with the app's brand, style, and tone.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0004",
-    "title": "Make sure that animations serve a clear purpose in communicating a symbol’s intent",
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0007",
+    "title": "Use an SF Symbols template as a design guide",
     "category": "foundations",
     "topic": "sf-symbols",
-    "subtopic": "animations",
+    "subtopic": "custom-symbols",
     "statement": {
-      "en": "Verify that that animations serve a clear purpose in communicating a symbol’s intent.",
-      "ja": "that animations serve a clear purpose in communicating a symbol’s intentを満たしていることを確認する。"
+      "en": "Use an SF Symbols template to guide a custom symbol's design.",
+      "ja": "custom symbolのdesign guideとしてSF Symbols templateを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Match system symbols in detail, optical weight, alignment, position, and perspective.",
+      "Keep the symbol simple, recognizable, inclusive, and directly related to its action or content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use an SF Symbols template to guide a custom symbol's design.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "1a9224cb4242396c8ad79f3991da495889d71fc0a268abb1674d9300f6838ef9",
+      "evidence_paraphrase": "Use an SF Symbols template to guide a custom symbol's design."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use an SF Symbols template to guide a custom symbol's design.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0008",
+    "title": "Optimize custom-symbol layers for animation",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "custom-symbols",
+    "statement": {
+      "en": "Optimize custom-symbol layers for the animations the symbol supports.",
+      "ja": "custom symbolのlayerを対応するanimation向けに最適化する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use Z-order to control front-to-back or back-to-front variable-color animation.",
+      "Group related layers when they need to move together."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Optimize custom-symbol layers for the animations the symbol supports.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "7a282fdf247e825e99d9177bf3decbc889e3ab0675233eb10031f4b712e6d9e6",
+      "evidence_paraphrase": "Optimize custom-symbol layers for the animations the symbol supports."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Optimize custom-symbol layers for the animations the symbol supports.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0009",
+    "title": "Test all animation presets with custom symbols",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "custom-symbols",
+    "statement": {
+      "en": "Test each custom symbol with all animation presets.",
+      "ja": "各custom symbolをすべてのanimation presetでtestする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Verify that shapes, paths, and layers appear as intended while moving."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Test each custom symbol with all animation presets.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "dd16892ff4fab90608ac00af2a93b035f1a428521b65e0343e8d0de8bb24c7c5",
+      "evidence_paraphrase": "Test each custom symbol with all animation presets."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Test each custom symbol with all animation presets.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0010",
+    "title": "Avoid building common variants into custom symbols",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "custom-symbols",
+    "statement": {
+      "en": "Avoid building common enclosures or badges directly into custom symbols.",
+      "ja": "common enclosureやbadgeをcustom symbolへ直接組み込まない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use the SF Symbols component library to create common variants consistently."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid building common enclosures or badges directly into custom symbols.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "ec450e192d92de06dae45584fcc857b48d0202835717e4f500a2d6952159b200",
+      "evidence_paraphrase": "Avoid building common enclosures or badges directly into custom symbols."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid building common enclosures or badges directly into custom symbols.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0011",
+    "title": "Provide alternative text labels for custom symbols",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "custom-symbols",
+    "statement": {
+      "en": "Provide alternative text labels for custom symbols.",
+      "ja": "custom symbolにalternative text labelを用意する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Supply an accessibility description that lets VoiceOver describe the visible symbol."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide alternative text labels for custom symbols.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "0f75f44d0a484750b75400a2180e83db366ee087f53d9d572eef9745975901d8",
+      "evidence_paraphrase": "Provide alternative text labels for custom symbols."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Provide alternative text labels for custom symbols.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0012",
+    "title": "Do not reproduce Apple products as custom symbols",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "custom-symbols",
+    "statement": {
+      "en": "Do not reproduce Apple products in custom symbols.",
+      "ja": "Apple productをcustom symbolとして複製しない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apple products are copyrighted."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Do not reproduce Apple products in custom symbols.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "77a638da959c6aeb92d3d5c3be35367f4655fa33cb33912690788c11d20a17da",
+      "evidence_paraphrase": "Do not reproduce Apple products in custom symbols."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Do not reproduce Apple products in custom symbols.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0013",
+    "title": "Use the outline variant alongside text",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "design-variants",
+    "statement": {
+      "en": "Use the outline variant when displaying a symbol alongside text.",
+      "ja": "symbolをtextと並べて表示するときはoutline variantを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Typical contexts include toolbars and lists."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use the outline variant when displaying a symbol alongside text.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Design variants"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "8e85892a00ae38bcef9606e2d0be682ee7468c65a198bcb9ede1691709acf99e",
+      "evidence_paraphrase": "Use the outline variant when displaying a symbol alongside text."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "design-variants"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use the outline variant when displaying a symbol alongside text.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0014",
+    "title": "Consider an enclosing variant at small sizes",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "design-variants",
+    "statement": {
+      "en": "At small sizes, consider an enclosing shape to improve symbol legibility.",
+      "ja": "小さいsizeではsymbolのlegibility向上にenclosing shapeを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use an enclosure such as a square or circle when it improves recognition."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “At small sizes, consider an enclosing shape to improve symbol legibility.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Design variants"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "2d1e9994cfc93073995487736cc7fe3b6a47403163dcb8ce5d7806ef9078108a",
+      "evidence_paraphrase": "At small sizes, consider an enclosing shape to improve symbol legibility."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "design-variants"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "At small sizes, consider an enclosing shape to improve symbol legibility.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0015",
+    "title": "Use a fill variant for emphasis or selection",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "design-variants",
+    "statement": {
+      "en": "Use a fill variant when a symbol needs visual emphasis or communicates selection.",
+      "ja": "symbolにvisual emphasisが必要な場合やselectionを伝える場合はfill variantを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Typical contexts include iOS tab bars, swipe actions, and accent-color selection."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a fill variant when a symbol needs visual emphasis or communicates selection.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Design variants"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "aedabd221476ab360f0a9c965ba8bf70d1233770fcaa4fc8ec69f37d2a2c4e97",
+      "evidence_paraphrase": "Use a fill variant when a symbol needs visual emphasis or communicates selection."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "design-variants"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use a fill variant when a symbol needs visual emphasis or communicates selection.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0016",
+    "title": "Consider negative side margins for optical alignment",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "custom-symbols",
+    "statement": {
+      "en": "Consider negative side margins when a custom symbol needs optical horizontal alignment.",
+      "ja": "custom symbolにoptical horizontal alignmentが必要な場合はnegative side marginを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply when a badge or another element increases the symbol's width."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider negative side margins when a custom symbol needs optical horizontal alignment.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "75b0293f77ca617c8a07d9faa92c3f901e7f1f99394f003d0d169245b56f00e5",
+      "evidence_paraphrase": "Consider negative side margins when a custom symbol needs optical horizontal alignment."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider negative side margins when a custom symbol needs optical horizontal alignment.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0017",
+    "title": "Confirm SF Symbols availability for target systems",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "sf-symbols",
+    "statement": {
+      "en": "Confirm that each symbol and symbol feature is available on every targeted system version.",
+      "ja": "各symbolとsymbol featureがすべてのtarget system versionで利用可能か確認する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "A symbol or feature introduced in a later year isn't available on earlier operating systems."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Confirm that each symbol and symbol feature is available on every targeted system version.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "d8155170c85938f8eb7b940d01b01750c3632f680936d9aebfdb67d38a5e2ee7",
+      "evidence_paraphrase": "Confirm that each symbol and symbol feature is available on every targeted system version."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Confirm that each symbol and symbol feature is available on every targeted system version.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0018",
+    "title": "Understand the SF Symbols terms and conditions",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "sf-symbols",
+    "statement": {
+      "en": "Understand the SF Symbols terms and conditions before using the symbols.",
+      "ja": "symbolを使う前にSF Symbolsのterms and conditionsを理解する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -283,7 +1390,161 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that that animations serve a clear purpose in communicating a symbol’s intent.” in the documented SF Symbols context?"
+        "Does the design satisfy “Understand the SF Symbols terms and conditions before using the symbols.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "b8f7ed97ff2340d47bd1d03827b18369e8b7b5aa73754059e6ca5ec3e9af7f75",
+      "evidence_paraphrase": "Understand the SF Symbols terms and conditions before using the symbols."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Understand the SF Symbols terms and conditions before using the symbols.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0019",
+    "title": "Do not use SF Symbols for trademarked purposes",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "sf-symbols",
+    "statement": {
+      "en": "Do not use SF Symbols or confusingly similar images in app icons, logos, or other trademarked uses.",
+      "ja": "SF Symbolsまたは紛らわしく類似したimageをapp icon、logo、その他のtrademarked useに使わない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Do not use SF Symbols or confusingly similar images in app icons, logos, or other trademarked uses.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "b8f7ed97ff2340d47bd1d03827b18369e8b7b5aa73754059e6ca5ec3e9af7f75",
+      "evidence_paraphrase": "Do not use SF Symbols or confusingly similar images in app icons, logos, or other trademarked uses."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Do not use SF Symbols or confusingly similar images in app icons, logos, or other trademarked uses.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0020",
+    "title": "Use system colors for adaptive symbol appearances",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "rendering-modes",
+    "statement": {
+      "en": "Use system-provided colors when symbols need adaptive appearances.",
+      "ja": "symbolにadaptive appearanceが必要な場合はsystem提供colorを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "System colors adapt to accessibility accommodations, vibrancy, and Dark Mode."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use system-provided colors when symbols need adaptive appearances.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -298,37 +1559,116 @@
       "page_title": "SF Symbols",
       "section_path": [
         "SF Symbols",
-        "Animations"
+        "Rendering modes"
       ],
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "ce94fe0ffec89a52d7753e6c73e13403366ae9de063ea93b6e26ba764716740d",
-      "evidence_paraphrase": "Verify that that animations serve a clear purpose in communicating a symbol’s intent."
+      "source_sentence_hash": "7383245dc2eaa243ed8aa259ba97d175dcdc9a54871ed0548fcac4c8f7cfb85a",
+      "evidence_paraphrase": "Use system-provided colors when symbols need adaptive appearances."
     },
     "tags": [
       "foundations",
       "sf-symbols",
-      "animations"
+      "rendering-modes"
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that that animations serve a clear purpose in communicating a symbol’s intent.",
+    "apple_native_rule": "Use system-provided colors when symbols need adaptive appearances.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0005",
-    "title": "Use symbol animations to communicate information more efficiently",
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0021",
+    "title": "Prefer gradients at larger symbol sizes",
     "category": "foundations",
     "topic": "sf-symbols",
-    "subtopic": "animations",
+    "subtopic": "gradients",
     "statement": {
-      "en": "Choose or apply symbol animations to communicate information more efficiently in the documented context.",
-      "ja": "該当する状況ではsymbol animations to communicate information more efficientlyを採用する。"
+      "en": "Prefer gradient rendering at larger symbol sizes.",
+      "ja": "大きなsymbol sizeではgradient renderingを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Gradient rendering works at any size and across rendering modes, system and custom colors, and custom symbols."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prefer gradient rendering at larger symbol sizes.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Gradients"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "b38159d674b6c692151876d7593d8de8687fe2e91c3e541e15d97feec132e8d8",
+      "evidence_paraphrase": "Prefer gradient rendering at larger symbol sizes."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "gradients"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Prefer gradient rendering at larger symbol sizes.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0022",
+    "title": "Avoid variable color for depth",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "variable-color",
+    "statement": {
+      "en": "Avoid using variable color to communicate depth.",
+      "ja": "depthを伝えるためにvariable colorを使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
     "severity": "warning",
     "scope": {
       "portability": "apple-platform",
@@ -362,7 +1702,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply symbol animations to communicate information more efficiently in the documented context.” in the documented SF Symbols context?"
+        "Does the design satisfy “Avoid using variable color to communicate depth.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -377,36 +1717,194 @@
       "page_title": "SF Symbols",
       "section_path": [
         "SF Symbols",
-        "Animations"
+        "Variable color"
       ],
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "e53d5bfa48fdd20fb3c3d26f6a35777ff85d2b780e3f9d32eeb56d8f0fbe5377",
-      "evidence_paraphrase": "Choose or apply symbol animations to communicate information more efficiently in the documented context."
+      "source_sentence_hash": "3ac173b62dfb8a4aa5be3ab43ed7148431c997b731fd6356c6c4023133abe064",
+      "evidence_paraphrase": "Avoid using variable color to communicate depth."
     },
     "tags": [
       "foundations",
       "sf-symbols",
-      "animations"
+      "variable-color"
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply symbol animations to communicate information more efficiently in the documented context.",
+    "apple_native_rule": "Avoid using variable color to communicate depth.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0006",
-    "title": "Consider your app’s tone when adding animations",
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0023",
+    "title": "Use Hierarchical rendering mode for depth",
     "category": "foundations",
     "topic": "sf-symbols",
-    "subtopic": "animations",
+    "subtopic": "variable-color",
     "statement": {
-      "en": "Evaluate whether your app’s tone when adding animations is appropriate for the current context.",
-      "ja": "your app’s tone when adding animationsが現在の状況に適切か検討する。"
+      "en": "Use Hierarchical rendering mode to communicate depth and visual hierarchy.",
+      "ja": "depthとvisual hierarchyを伝えるためにHierarchical rendering modeを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use opacity differences to elevate layers and distinguish foreground from background."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use Hierarchical rendering mode to communicate depth and visual hierarchy.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Variable color"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "3ac173b62dfb8a4aa5be3ab43ed7148431c997b731fd6356c6c4023133abe064",
+      "evidence_paraphrase": "Use Hierarchical rendering mode to communicate depth and visual hierarchy."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "variable-color"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use Hierarchical rendering mode to communicate depth and visual hierarchy.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0024",
+    "title": "Match symbol weight to adjacent San Francisco text",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "weights-and-scales",
+    "statement": {
+      "en": "Match a symbol's weight to adjacent San Francisco text.",
+      "ja": "symbolのweightを隣接するSan Francisco textに合わせる。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Choose among the nine symbol weights that correspond to system-font weights."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Match a symbol's weight to adjacent San Francisco text.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Weights and scales"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "5176429e76792fb97b87ed200fde66fb1ac1cdfcee368bd42492f5e450187006",
+      "evidence_paraphrase": "Match a symbol's weight to adjacent San Francisco text."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "weights-and-scales"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Match a symbol's weight to adjacent San Francisco text.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0025",
+    "title": "Consider symbol scale when adjusting emphasis",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "weights-and-scales",
+    "statement": {
+      "en": "Consider changing symbol scale to adjust emphasis beside text.",
+      "ja": "text横のemphasisを調整するためにsymbol scaleの変更を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -431,7 +1929,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve weight matching with text at the same point size."
     ],
     "exceptions": [],
     "rationale": {
@@ -441,7 +1939,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether your app’s tone when adding animations is appropriate for the current context.” in the documented SF Symbols context?"
+        "Does the design satisfy “Consider changing symbol scale to adjust emphasis beside text.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -456,36 +1954,36 @@
       "page_title": "SF Symbols",
       "section_path": [
         "SF Symbols",
-        "Animations"
+        "Weights and scales"
       ],
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "5ed923e6073f68fa391a56c0dab1fbfd7fae052cf79a0d7b740c1f3372bc78c3",
-      "evidence_paraphrase": "Evaluate whether your app’s tone when adding animations is appropriate for the current context."
+      "source_sentence_hash": "5cf200ca2b7b75e45298880efa3ba708efd9b547fcc09629cdf9ed31787fa551",
+      "evidence_paraphrase": "Consider changing symbol scale to adjust emphasis beside text."
     },
     "tags": [
       "foundations",
       "sf-symbols",
-      "animations"
+      "weights-and-scales"
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether your app’s tone when adding animations is appropriate for the current context.",
+    "apple_native_rule": "Consider changing symbol scale to adjust emphasis beside text.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0007",
-    "title": "Use the template as a guide",
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0026",
+    "title": "Use design variants to communicate states and actions",
     "category": "foundations",
     "topic": "sf-symbols",
-    "subtopic": "custom-symbols",
+    "subtopic": "design-variants",
     "statement": {
-      "en": "Choose or apply the template as a guide in the documented context.",
-      "ja": "該当する状況ではthe template as a guideを採用する。"
+      "en": "Use symbol design variants to communicate precise states and actions.",
+      "ja": "preciseなstateやactionを伝えるためにsymbol design variantを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -510,7 +2008,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A slash can show unavailability, and a fill can show selection."
     ],
     "exceptions": [],
     "rationale": {
@@ -520,7 +2018,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the template as a guide in the documented context.” in the documented SF Symbols context?"
+        "Does the design satisfy “Use symbol design variants to communicate precise states and actions.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -535,36 +2033,115 @@
       "page_title": "SF Symbols",
       "section_path": [
         "SF Symbols",
-        "Custom symbols"
+        "Design variants"
       ],
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "1a9224cb4242396c8ad79f3991da495889d71fc0a268abb1674d9300f6838ef9",
-      "evidence_paraphrase": "Choose or apply the template as a guide in the documented context."
+      "source_sentence_hash": "65622de0e197dd04fd3110445ba931c5eddc152a8a658ded085fd750557004e6",
+      "evidence_paraphrase": "Use symbol design variants to communicate precise states and actions."
     },
     "tags": [
       "foundations",
       "sf-symbols",
-      "custom-symbols"
+      "design-variants"
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply the template as a guide in the documented context.",
+    "apple_native_rule": "Use symbol design variants to communicate precise states and actions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0008",
-    "title": "Optimize layers to use animations with custom symbols",
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0027",
+    "title": "Consider letting the containing view choose a variant",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "design-variants",
+    "statement": {
+      "en": "Consider letting the containing view choose between outline and fill variants.",
+      "ja": "outlineとfill variantの選択をcontaining viewに任せることを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "An iOS tab bar prefers fill, whereas a toolbar uses outline."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider letting the containing view choose between outline and fill variants.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Design variants"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "dd0dd36c42c9f03173c94b3ceef373acc05815a2bad9a49381353440a5d7352f",
+      "evidence_paraphrase": "Consider letting the containing view choose between outline and fill variants."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "design-variants"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider letting the containing view choose between outline and fill variants.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0028",
+    "title": "Create custom symbols from a similar exported template",
     "category": "foundations",
     "topic": "sf-symbols",
     "subtopic": "custom-symbols",
     "statement": {
-      "en": "Apply the documented SF Symbols guidance to optimize layers to use animations with custom symbols.",
-      "ja": "「SF Symbols」において「Optimize layers to use animations with custom symbols」の指針を適用する。"
+      "en": "Create a custom symbol by modifying an exported template for a similar SF Symbol.",
+      "ja": "類似するSF Symbolのexported templateを編集してcustom symbolを作成する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -589,7 +2166,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a vector-editing tool to modify the exported template."
     ],
     "exceptions": [],
     "rationale": {
@@ -599,7 +2176,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented SF Symbols guidance to optimize layers to use animations with custom symbols.” in the documented SF Symbols context?"
+        "Does the design satisfy “Create a custom symbol by modifying an exported template for a similar SF Symbol.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -618,8 +2195,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "7a282fdf247e825e99d9177bf3decbc889e3ab0675233eb10031f4b712e6d9e6",
-      "evidence_paraphrase": "Apply the documented SF Symbols guidance to optimize layers to use animations with custom symbols."
+      "source_sentence_hash": "b5e2fee2877ada41a52212f8960fef77fbb8d777f8e5034eaf3b909e395a2b84",
+      "evidence_paraphrase": "Create a custom symbol by modifying an exported template for a similar SF Symbol."
     },
     "tags": [
       "foundations",
@@ -628,24 +2205,182 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented SF Symbols guidance to optimize layers to use animations with custom symbols.",
+    "apple_native_rule": "Create a custom symbol by modifying an exported template for a similar SF Symbol.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0009",
-    "title": "Test animations for custom symbols",
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0029",
+    "title": "Do not customize SF Symbols that depict Apple products",
     "category": "foundations",
     "topic": "sf-symbols",
     "subtopic": "custom-symbols",
     "statement": {
-      "en": "Apply the documented SF Symbols guidance to test animations for custom symbols.",
-      "ja": "「SF Symbols」において「Test animations for custom symbols」の指針を適用する。"
+      "en": "Do not customize an SF Symbol that depicts an Apple product or feature.",
+      "ja": "Apple productまたはfeatureを表すSF Symbolをcustomizeしない。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The SF Symbols app identifies noncustomizable symbols with an Info badge and describes restrictions in the inspector."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Do not customize an SF Symbol that depicts an Apple product or feature.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "9255062724bfb42e9cca535de562a49291e6e028ca8c504c8baf5c7b96ce98b7",
+      "evidence_paraphrase": "Do not customize an SF Symbol that depicts an Apple product or feature."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Do not customize an SF Symbol that depicts an Apple product or feature.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0030",
+    "title": "Use the naming pattern for custom-symbol margins",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "custom-symbols",
+    "statement": {
+      "en": "When adding negative side margins to a custom symbol, use the documented configuration naming pattern.",
+      "ja": "custom symbolへnegative side marginを追加するときはdocumented configuration naming patternを使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Include the relevant configuration in names such as left-margin-Regular-M."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When adding negative side margins to a custom symbol, use the documented configuration naming pattern.” in the documented SF Symbols context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
+      "page_title": "SF Symbols",
+      "section_path": [
+        "SF Symbols",
+        "Custom symbols"
+      ],
+      "retrieved_at": "2026-07-21T11:15:18.960Z",
+      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
+      "source_sentence_hash": "f379bb9e6253f8847696e9eb622e05b62bf6e91e4e01bf86d695413c452f6580",
+      "evidence_paraphrase": "When adding negative side margins to a custom symbol, use the documented configuration naming pattern."
+    },
+    "tags": [
+      "foundations",
+      "sf-symbols",
+      "custom-symbols"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When adding negative side margins to a custom symbol, use the documented configuration naming pattern.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0031",
+    "title": "Annotate custom-symbol layers before by-layer animation",
+    "category": "foundations",
+    "topic": "sf-symbols",
+    "subtopic": "custom-symbols",
+    "statement": {
+      "en": "Before animating a custom symbol by layer, annotate its layers in the SF Symbols app.",
+      "ja": "custom symbolをlayer単位でanimateする前にSF Symbols appでlayerをannotateする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -678,7 +2413,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented SF Symbols guidance to test animations for custom symbols.” in the documented SF Symbols context?"
+        "Does the design satisfy “Before animating a custom symbol by layer, annotate its layers in the SF Symbols app.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -697,8 +2432,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "dd16892ff4fab90608ac00af2a93b035f1a428521b65e0343e8d0de8bb24c7c5",
-      "evidence_paraphrase": "Apply the documented SF Symbols guidance to test animations for custom symbols."
+      "source_sentence_hash": "eb02e61b3d5dcd648ab1717892e4cf98378b502d37d3489f73461d88ec26e5f3",
+      "evidence_paraphrase": "Before animating a custom symbol by layer, annotate its layers in the SF Symbols app."
     },
     "tags": [
       "foundations",
@@ -707,24 +2442,24 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented SF Symbols guidance to test animations for custom symbols.",
+    "apple_native_rule": "Before animating a custom symbol by layer, annotate its layers in the SF Symbols app.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0010",
-    "title": "Avoid making custom symbols that include common variants, such as enclosures or badges",
+    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0032",
+    "title": "Consider whole shapes for animated custom symbols",
     "category": "foundations",
     "topic": "sf-symbols",
     "subtopic": "custom-symbols",
     "statement": {
-      "en": "Exclude making custom symbols that include common variants, such as enclosures or badges from the applicable experience.",
-      "ja": "該当する体験ではmaking custom symbols that include common variants, such as enclosures or badgesを避ける。"
+      "en": "Consider drawing animated custom symbols with whole shapes.",
+      "ja": "animated custom symbolをwhole shapeで描くことを検討する。"
     },
-    "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "discourage",
-    "severity": "warning",
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -747,7 +2482,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use an erase layer for overlaps when preserving full shape and layer information improves animation."
     ],
     "exceptions": [],
     "rationale": {
@@ -757,7 +2492,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude making custom symbols that include common variants, such as enclosures or badges from the applicable experience.” in the documented SF Symbols context?"
+        "Does the design satisfy “Consider drawing animated custom symbols with whole shapes.” in the documented SF Symbols context?"
       ]
     },
     "testability": "manual",
@@ -776,8 +2511,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:18.960Z",
       "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "ec450e192d92de06dae45584fcc857b48d0202835717e4f500a2d6952159b200",
-      "evidence_paraphrase": "Exclude making custom symbols that include common variants, such as enclosures or badges from the applicable experience."
+      "source_sentence_hash": "b3deb805c0f8d1f371bef56d4731a115f13ae294510ee0556c347f893609fe3e",
+      "evidence_paraphrase": "Consider drawing animated custom symbols with whole shapes."
     },
     "tags": [
       "foundations",
@@ -786,165 +2521,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude making custom symbols that include common variants, such as enclosures or badges from the applicable experience.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
-  },
-  {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0011",
-    "title": "Provide alternative text labels for custom symbols",
-    "category": "foundations",
-    "topic": "sf-symbols",
-    "subtopic": "custom-symbols",
-    "statement": {
-      "en": "Make alternative text labels for custom symbols available when applicable.",
-      "ja": "必要な場合にalternative text labels for custom symbolsを利用可能にする。"
-    },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
-    "scope": {
-      "portability": "apple-platform",
-      "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
-      ],
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
-      ],
-      "components": [],
-      "modalities": []
-    },
-    "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
-    ],
-    "exceptions": [],
-    "rationale": {
-      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
-      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
-    },
-    "checks": {
-      "automated": [],
-      "manual": [
-        "Does the design satisfy “Make alternative text labels for custom symbols available when applicable.” in the documented SF Symbols context?"
-      ]
-    },
-    "testability": "manual",
-    "anti_patterns": [
-      "Ignoring this guidance in a context where the source section applies."
-    ],
-    "positive_examples": [
-      "A design review records how the implementation satisfies this rule and any source-scoped exception."
-    ],
-    "source": {
-      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
-      "page_title": "SF Symbols",
-      "section_path": [
-        "SF Symbols",
-        "Custom symbols"
-      ],
-      "retrieved_at": "2026-07-21T11:15:18.960Z",
-      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "0f75f44d0a484750b75400a2180e83db366ee087f53d9d572eef9745975901d8",
-      "evidence_paraphrase": "Make alternative text labels for custom symbols available when applicable."
-    },
-    "tags": [
-      "foundations",
-      "sf-symbols",
-      "custom-symbols"
-    ],
-    "priority_rank": 6,
-    "status": "active",
-    "apple_native_rule": "Make alternative text labels for custom symbols available when applicable.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
-  },
-  {
-    "id": "HIG-FOUNDATIONS-SF-SYMBOLS-0012",
-    "title": "Don’t design replicas of Apple products",
-    "category": "foundations",
-    "topic": "sf-symbols",
-    "subtopic": "custom-symbols",
-    "statement": {
-      "en": "Exclude design replicas of Apple products from the applicable experience.",
-      "ja": "該当する体験ではdesign replicas of Apple productsを避ける。"
-    },
-    "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "discourage",
-    "severity": "warning",
-    "scope": {
-      "portability": "apple-platform",
-      "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
-      ],
-      "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
-      ],
-      "components": [],
-      "modalities": []
-    },
-    "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
-    ],
-    "exceptions": [],
-    "rationale": {
-      "en": "Applying this guidance supports a consistent and usable SF Symbols experience on the scoped Apple platforms.",
-      "ja": "この指針は、対象AppleプラットフォームにおけるSF Symbolsの一貫性と使いやすさを支えます。"
-    },
-    "checks": {
-      "automated": [],
-      "manual": [
-        "Does the design satisfy “Exclude design replicas of Apple products from the applicable experience.” in the documented SF Symbols context?"
-      ]
-    },
-    "testability": "manual",
-    "anti_patterns": [
-      "Ignoring this guidance in a context where the source section applies."
-    ],
-    "positive_examples": [
-      "A design review records how the implementation satisfies this rule and any source-scoped exception."
-    ],
-    "source": {
-      "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols",
-      "page_title": "SF Symbols",
-      "section_path": [
-        "SF Symbols",
-        "Custom symbols"
-      ],
-      "retrieved_at": "2026-07-21T11:15:18.960Z",
-      "source_hash": "ea19bcb68b364a2fe85bd7473a923db65c6dbbff981ac3479a3c2335cce90027",
-      "source_sentence_hash": "77a638da959c6aeb92d3d5c3be35367f4655fa33cb33912690788c11d20a17da",
-      "evidence_paraphrase": "Exclude design replicas of Apple products from the applicable experience."
-    },
-    "tags": [
-      "foundations",
-      "sf-symbols",
-      "custom-symbols"
-    ],
-    "priority_rank": 6,
-    "status": "active",
-    "apple_native_rule": "Exclude design replicas of Apple products from the applicable experience.",
+    "apple_native_rule": "Consider drawing animated custom symbols with whole shapes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

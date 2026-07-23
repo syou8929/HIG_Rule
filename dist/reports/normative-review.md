@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 368
-- Retained MUST: 333
-- Retained MUST_NOT: 35
-- Normative level changes: 136
+- Reviewed rules: 374
+- Retained MUST: 336
+- Retained MUST_NOT: 38
+- Normative level changes: 143
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T08:26:37Z
+- Reviewed at: 2026-07-23T08:42:07Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -159,6 +159,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023 — Recovered MUST from the supporting needs-to-flip requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026 — Recovered the conditional needs-to-adhere requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027 — Recovered the conditional needs-to-flip UI representation requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0004 — Retained the explicit Make sure directive as MUST and fixed the duplicated generated statement. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0012 — Raised the direct Don't lead to MUST_NOT because the supporting legal statement explicitly says the copyrighted products can't be reproduced. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0018 — Recovered the explicit Be sure directive from the overview. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0019 — Split and retained the overview's explicit usage prohibition as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0029 — Recovered the explicit can't-customize restriction from the copyright callout. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0030 — Recovered the conditional be-sure requirement from the supporting margin prose. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0031 — Recovered the conditional Make sure requirement from the supporting animation prose. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 — Retained MUST after reviewing the explicit Make sure lead and its value, scale, legibility, and refocusing limits. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0018 — Retained MUST after confirming the conditional You need to specify platform requirement for NY type styles. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0021 — Retained MUST after confirming the conditional Be sure to test directive for a nondefault text color. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
@@ -498,7 +505,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the supporting needs-to-flip requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional needs-to-adhere requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional needs-to-flip UI representation requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- HIG-FOUNDATIONS-SF-SYMBOLS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained the explicit Make sure directive as MUST and fixed the duplicated generated statement. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0012 · MUST_NOT · retained_with_atomicity_or_scope_correction — Raised the direct Don't lead to MUST_NOT because the supporting legal statement explicitly says the copyrighted products can't be reproduced. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Be sure directive from the overview. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0019 · MUST_NOT · retained_with_atomicity_or_scope_correction — Split and retained the overview's explicit usage prohibition as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0029 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit can't-customize restriction from the copyright callout. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional be-sure requirement from the supporting margin prose. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Make sure requirement from the supporting animation prose. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reviewing the explicit Make sure lead and its value, scale, legibility, and refocusing limits. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
