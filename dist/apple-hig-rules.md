@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T17:04:08.353Z. 3324 active rules; 6 deprecated rules.
+Generated 2026-07-23T17:06:53.743Z. 3324 active rules; 6 deprecated rules.
 
 ## getting-started
 
@@ -3434,10 +3434,10 @@ Generated 2026-07-23T17:04:08.353Z. 3324 active rules; 6 deprecated rules.
 - **HIG-TECHNOLOGIES-NFC-0013 · SHOULD · high** — Revise scanning-sheet instructions appropriately for subsequent scans. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 ### photo-editing
 
-- **HIG-TECHNOLOGIES-PHOTO-EDITING-0001 · SHOULD · low** — Apply the documented Photo editing guidance to confirm cancellation of edits. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
-- **HIG-TECHNOLOGIES-PHOTO-EDITING-0002 · AVOID · low** — Exclude provide a custom top toolbar from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
-- **HIG-TECHNOLOGIES-PHOTO-EDITING-0003 · SHOULD · low** — Preserve people’s ability to preview edits. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
-- **HIG-TECHNOLOGIES-PHOTO-EDITING-0004 · SHOULD · low** — Choose or apply your app icon for your photo editing extension icon in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
+- **HIG-TECHNOLOGIES-PHOTO-EDITING-0001 · SHOULD · high** — Before discarding photo or video edits, ask people to confirm cancellation and explain that edits will be lost. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
+- **HIG-TECHNOLOGIES-PHOTO-EDITING-0002 · AVOID · high** — Avoid adding a custom top toolbar to a photo editing extension. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
+- **HIG-TECHNOLOGIES-PHOTO-EDITING-0003 · SHOULD · high** — Let people preview the result of photo edits before closing the extension. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
+- **HIG-TECHNOLOGIES-PHOTO-EDITING-0004 · SHOULD · high** — Use the app's icon as its photo editing extension icon. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
 ### researchkit
 
 - **HIG-TECHNOLOGIES-RESEARCHKIT-0001 · MUST · high** — Always display ResearchKit onboarding screens in the correct order. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))

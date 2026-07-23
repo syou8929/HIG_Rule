@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T17:30:00Z",
+  "reviewed_at": "2026-07-23T17:40:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -4476,6 +4476,33 @@
         "modalities": []
       },
       "review_note": "Completed the common Maps guidance, recovered sixteen atomic rules, retained three explicit Be sure, must, or Make sure outcomes as MUST, and kept direct Don't or Avoid guidance below MUST_NOT."
+    },
+    {
+      "id": "priority-6-photo-editing-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T17:40:00Z",
+      "review_method": "Rendered Apple HIG Photo Editing best-practice, platform, and resource context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/photo-editing",
+          "source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-PHOTO-EDITING-0001",
+        "HIG-TECHNOLOGIES-PHOTO-EDITING-0002",
+        "HIG-TECHNOLOGIES-PHOTO-EDITING-0003",
+        "HIG-TECHNOLOGIES-PHOTO-EDITING-0004"
+      ],
+      "scope": {
+        "portability": "technology-specific",
+        "platforms": ["ios", "ipados", "macos"],
+        "devices": ["iphone", "ipad", "mac"],
+        "components": [],
+        "modalities": []
+      },
+      "review_note": "Completed all Photo Editing guidance, retained direct Don't guidance at AVOID, and recorded the cancellation, preview, toolbar, icon, and supported-platform conditions without introducing unsupported MUST classifications."
     }
   ],
   "rules": {
@@ -29259,6 +29286,34 @@
       "title": "Match indoor-map elements to the app's visual style",
       "statement": {"en": "Ensure indoor-map area overlays, icons, and text match the app's visual style.", "ja": "indoor-mapのarea overlay、icon、textをappのvisual styleに合わせる。"},
       "review_note": "Recovered the explicit Make sure requirement and its complete element set."
+    },
+    "HIG-TECHNOLOGIES-PHOTO-EDITING-0001": {
+      "source": {"source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3", "source_sentence_hash": "3f7a9f1c8cf9d2e994ab5299d12423bc663455efd2e790ad2cb66a49966dd0a9", "section_path": ["Photo editing", "Best practices"]},
+      "title": "Confirm cancellation before discarding photo edits",
+      "statement": {"en": "Before discarding photo or video edits, ask people to confirm cancellation and explain that edits will be lost.", "ja": "photoまたはvideo editを破棄する前にcancel確認を求め、editが失われることを説明する。"},
+      "conditions": ["The person taps Cancel after making edits."],
+      "exceptions": ["No confirmation is needed when no edits have been made."],
+      "review_note": "Recorded the nondestructive confirmation sequence, loss disclosure, and no-edit exception."
+    },
+    "HIG-TECHNOLOGIES-PHOTO-EDITING-0002": {
+      "source": {"source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3", "source_sentence_hash": "86097356dbf04ac9fa7e4dbef8b49b2da36b4e5aea6b4236a2732775374b2cd4", "section_path": ["Photo editing", "Best practices"]},
+      "title": "Avoid a custom top toolbar in a photo editing extension",
+      "statement": {"en": "Avoid adding a custom top toolbar to a photo editing extension.", "ja": "photo editing extensionにcustom top toolbarを追加しない。"},
+      "conditions": ["The system modal view already provides a top toolbar."],
+      "review_note": "Kept the direct Don't guidance at AVOID and recorded the duplicate-toolbar context."
+    },
+    "HIG-TECHNOLOGIES-PHOTO-EDITING-0003": {
+      "source": {"source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3", "source_sentence_hash": "c4ab6edc42c746e7e64f09819f8dfa491dcbfb9a681603de9f514e36bea15fb3", "section_path": ["Photo editing", "Best practices"]},
+      "title": "Let people preview photo edits before closing",
+      "statement": {"en": "Let people preview the result of photo edits before closing the extension.", "ja": "extensionを閉じる前にphoto editのresultをpreviewできるようにする。"},
+      "review_note": "Recorded the before-closing timing from the supporting sentence."
+    },
+    "HIG-TECHNOLOGIES-PHOTO-EDITING-0004": {
+      "source": {"source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3", "source_sentence_hash": "233604cc04558d4935ca30f2d83a0c4b40dc2eb4a98f9e7346ef73090192e47b", "section_path": ["Photo editing", "Best practices"]},
+      "title": "Use the app icon for a photo editing extension",
+      "statement": {"en": "Use the app's icon as its photo editing extension icon.", "ja": "app iconをphoto editing extension iconとして使う。"},
+      "conditions": ["Apply to photo editing extensions on iOS, iPadOS, and macOS."],
+      "review_note": "Recorded the supported platform scope and confidence purpose."
     }
   }
 }

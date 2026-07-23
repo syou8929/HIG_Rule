@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-TECHNOLOGIES-PHOTO-EDITING-0001",
-    "title": "Confirm cancellation of edits",
+    "title": "Confirm cancellation before discarding photo edits",
     "category": "technologies",
     "topic": "photo-editing",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Photo editing guidance to confirm cancellation of edits.",
-      "ja": "「Photo editing」において「Confirm cancellation of edits」の指針を適用する。"
+      "en": "Before discarding photo or video edits, ask people to confirm cancellation and explain that edits will be lost.",
+      "ja": "photoまたはvideo editを破棄する前にcancel確認を求め、editが失われることを説明する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -30,9 +30,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The person taps Cancel after making edits."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "No confirmation is needed when no edits have been made."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Photo editing experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるPhoto editingの一貫性と使いやすさを支えます。"
@@ -40,7 +42,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Photo editing guidance to confirm cancellation of edits.” in the documented Photo editing context?"
+        "Does the design satisfy “Before discarding photo or video edits, ask people to confirm cancellation and explain that edits will be lost.” in the documented Photo editing context?"
       ]
     },
     "testability": "manual",
@@ -60,7 +62,7 @@
       "retrieved_at": "2026-07-21T11:15:10.749Z",
       "source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3",
       "source_sentence_hash": "3f7a9f1c8cf9d2e994ab5299d12423bc663455efd2e790ad2cb66a49966dd0a9",
-      "evidence_paraphrase": "Apply the documented Photo editing guidance to confirm cancellation of edits."
+      "evidence_paraphrase": "Before discarding photo or video edits, ask people to confirm cancellation and explain that edits will be lost."
     },
     "tags": [
       "technologies",
@@ -69,22 +71,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Photo editing guidance to confirm cancellation of edits.",
+    "apple_native_rule": "Before discarding photo or video edits, ask people to confirm cancellation and explain that edits will be lost.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-PHOTO-EDITING-0002",
-    "title": "Don’t provide a custom top toolbar",
+    "title": "Avoid a custom top toolbar in a photo editing extension",
     "category": "technologies",
     "topic": "photo-editing",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude provide a custom top toolbar from the applicable experience.",
-      "ja": "該当する体験ではprovide a custom top toolbarを避ける。"
+      "en": "Avoid adding a custom top toolbar to a photo editing extension.",
+      "ja": "photo editing extensionにcustom top toolbarを追加しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -103,7 +105,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The system modal view already provides a top toolbar."
     ],
     "exceptions": [],
     "rationale": {
@@ -113,7 +115,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude provide a custom top toolbar from the applicable experience.” in the documented Photo editing context?"
+        "Does the design satisfy “Avoid adding a custom top toolbar to a photo editing extension.” in the documented Photo editing context?"
       ]
     },
     "testability": "manual",
@@ -133,7 +135,7 @@
       "retrieved_at": "2026-07-21T11:15:10.749Z",
       "source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3",
       "source_sentence_hash": "86097356dbf04ac9fa7e4dbef8b49b2da36b4e5aea6b4236a2732775374b2cd4",
-      "evidence_paraphrase": "Exclude provide a custom top toolbar from the applicable experience."
+      "evidence_paraphrase": "Avoid adding a custom top toolbar to a photo editing extension."
     },
     "tags": [
       "technologies",
@@ -142,22 +144,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude provide a custom top toolbar from the applicable experience.",
+    "apple_native_rule": "Avoid adding a custom top toolbar to a photo editing extension.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-PHOTO-EDITING-0003",
-    "title": "Let people preview edits",
+    "title": "Let people preview photo edits before closing",
     "category": "technologies",
     "topic": "photo-editing",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Preserve people’s ability to preview edits.",
-      "ja": "利用者がpreview editsできる状態を保つ。"
+      "en": "Let people preview the result of photo edits before closing the extension.",
+      "ja": "extensionを閉じる前にphoto editのresultをpreviewできるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -186,7 +188,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to preview edits.” in the documented Photo editing context?"
+        "Does the design satisfy “Let people preview the result of photo edits before closing the extension.” in the documented Photo editing context?"
       ]
     },
     "testability": "manual",
@@ -206,7 +208,7 @@
       "retrieved_at": "2026-07-21T11:15:10.749Z",
       "source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3",
       "source_sentence_hash": "c4ab6edc42c746e7e64f09819f8dfa491dcbfb9a681603de9f514e36bea15fb3",
-      "evidence_paraphrase": "Preserve people’s ability to preview edits."
+      "evidence_paraphrase": "Let people preview the result of photo edits before closing the extension."
     },
     "tags": [
       "technologies",
@@ -215,22 +217,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to preview edits.",
+    "apple_native_rule": "Let people preview the result of photo edits before closing the extension.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-PHOTO-EDITING-0004",
-    "title": "Use your app icon for your photo editing extension icon",
+    "title": "Use the app icon for a photo editing extension",
     "category": "technologies",
     "topic": "photo-editing",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply your app icon for your photo editing extension icon in the documented context.",
-      "ja": "該当する状況ではyour app icon for your photo editing extension iconを採用する。"
+      "en": "Use the app's icon as its photo editing extension icon.",
+      "ja": "app iconをphoto editing extension iconとして使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -249,7 +251,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Apply to photo editing extensions on iOS, iPadOS, and macOS."
     ],
     "exceptions": [],
     "rationale": {
@@ -259,7 +261,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply your app icon for your photo editing extension icon in the documented context.” in the documented Photo editing context?"
+        "Does the design satisfy “Use the app's icon as its photo editing extension icon.” in the documented Photo editing context?"
       ]
     },
     "testability": "manual",
@@ -279,7 +281,7 @@
       "retrieved_at": "2026-07-21T11:15:10.749Z",
       "source_hash": "84116c5e0242ee3802782e7ddbcc828ba70f9740c15a8595246baa3df8dd75f3",
       "source_sentence_hash": "233604cc04558d4935ca30f2d83a0c4b40dc2eb4a98f9e7346ef73090192e47b",
-      "evidence_paraphrase": "Choose or apply your app icon for your photo editing extension icon in the documented context."
+      "evidence_paraphrase": "Use the app's icon as its photo editing extension icon."
     },
     "tags": [
       "technologies",
@@ -288,7 +290,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply your app icon for your photo editing extension icon in the documented context.",
+    "apple_native_rule": "Use the app's icon as its photo editing extension icon.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

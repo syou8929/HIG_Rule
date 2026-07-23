@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3009
-- Reviewed batches: 172
+- Reviewed rules: 3013
+- Reviewed batches: 173
 - Official source only: yes
-- Reviewed at: 2026-07-23T17:30:00Z
+- Reviewed at: 2026-07-23T17:40:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2892,6 +2892,10 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-NFC-0011 · high — Reviewed the rendered source context for “Keep scanning-sheet instructions short to avoid truncation” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0012 · high — Reviewed the rendered source context for “Must provide in-app tag scanning on devices without background tag reading” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0013 · high — Reviewed the rendered source context for “Use revised scanning-sheet instructions for subsequent scans” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
+- HIG-TECHNOLOGIES-PHOTO-EDITING-0001 · high — Recorded the nondestructive confirmation sequence, loss disclosure, and no-edit exception. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
+- HIG-TECHNOLOGIES-PHOTO-EDITING-0002 · high — Kept the direct Don't guidance at AVOID and recorded the duplicate-toolbar context. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
+- HIG-TECHNOLOGIES-PHOTO-EDITING-0003 · high — Recorded the before-closing timing from the supporting sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
+- HIG-TECHNOLOGIES-PHOTO-EDITING-0004 · high — Recorded the supported platform scope and confidence purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/photo-editing))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0001 · high — Completed the sensitive full-page review, preserved thirteen stable IDs, recovered twenty-five atomic rules, separated optional contact and profile features, and retained nine consent, permission, explicit-intent, or completion MUST decisions without promoting the noncritical-data avoidance to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0002 · high — Completed the sensitive full-page review, preserved thirteen stable IDs, recovered twenty-five atomic rules, separated optional contact and profile features, and retained nine consent, permission, explicit-intent, or completion MUST decisions without promoting the noncritical-data avoidance to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0003 · high — Completed the sensitive full-page review, preserved thirteen stable IDs, recovered twenty-five atomic rules, separated optional contact and profile features, and retained nine consent, permission, explicit-intent, or completion MUST decisions without promoting the noncritical-data avoidance to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
