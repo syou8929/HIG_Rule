@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2189
-- Reviewed batches: 141
+- Reviewed rules: 2220
+- Reviewed batches: 143
 - Official source only: yes
-- Reviewed at: 2026-07-23T06:47:59Z
+- Reviewed at: 2026-07-23T06:57:46Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1052,6 +1052,22 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-BRANDING-0010 · high — Activated the previously unrecognized Resist lead as qualified AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
 - HIG-FOUNDATIONS-BRANDING-0011 · high — Recovered the source's might-consider alternative as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
 - HIG-FOUNDATIONS-BRANDING-0012 · high — Recovered the explicit must-not prohibition separately from the general trademark-guidelines recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-COLOR-0001 · high — Recorded the status and interactivity context and retained direct Avoid guidance at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0002 · high — Retained the explicit Make sure MUST and separated system-color preference from custom-color asset requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0003 · high — Recorded physical-lighting and visionOS surroundings as required test contexts without raising Test to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0004 · high — Recorded the documented device and display-profile coverage. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0005 · high — Preserved Consider as MAY and recorded both artwork and translucency contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0006 · high — Repaired the truncated title and separated the explicit Be sure alternative-channel requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0007 · high — Recorded both contrast and color-vision conditions and retained Avoid at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0008 · high — Preserved Consider as MAY and separated the explicit intended-message outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0009 · high — Recorded API use and value variability while keeping direct Avoid guidance at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0010 · high — Narrowed the generated page-wide scope to the four platforms identified by the source. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0011 · high — Recorded the emphasis qualification and split primary-action treatment and multiple-control avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0012 · high — Recorded both content-dependent alternatives and retained Avoid at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0013 · high — Replaced the vague generated Be aware statement with the paragraph's explicit Make sure contrast outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0014 · high — Recorded the cross-display color-management outcome and sRGB baseline. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0015 · high — Recorded compatible-display outcomes and split precise production guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0016 · high — Recorded the two documented P3-to-sRGB failure conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0017 · high — Retained MAY and recorded the content-first branding rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0018 · high — Recorded the noncolor focus cues from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0019 · high — Recorded the glass-transmission legibility risk and intended emphasis cases. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
@@ -1059,6 +1075,21 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-COLOR-0021 · high — Recorded the communication purpose and both decoration and long-duration restrictions. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0022 · high — Recovered the contextual Help lead and recorded the adaptation and contrast constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0023 · high — Recovered the omitted Recognize lead and recorded the system's single-color behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0024 · high — Recovered the qualified system-color preference separately from mandatory color outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0025 · high — Recovered the conditional Make sure custom-color asset requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0026 · high — Activated the previously unrecognized conditional Prefer lead. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0027 · high — Recovered the explicit Be sure accessibility requirement as a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0028 · high — Recovered the explicit Make sure outcome separately from the Consider research prompt. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0029 · high — Recovered the conditional primary-action treatment as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0030 · high — Recovered the direct Refrain guidance conservatively as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0031 · high — Recovered the second explicit Make sure outcome from the content-layer paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0032 · high — Recovered the conditional production specification as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0033 · high — Recovered the explicit need-to production prerequisite as a conditional MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0034 · high — Recovered the grouped-table branch of the documented background-set choice. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0035 · high — Recovered the otherwise branch of the documented background-set choice. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0036 · high — Recovered the first structured hierarchy row. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0037 · high — Recovered the second structured hierarchy row. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- HIG-FOUNDATIONS-COLOR-0038 · high — Recovered the third structured hierarchy row. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-DARK-MODE-0010 · high — Recorded the dynamic base-to-elevated behavior and the visual distinctions custom colors can obscure. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-DARK-MODE-0011 · high — Made the visible-background and neutral-state limits explicit and separated the colored-state anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-DARK-MODE-0012 · high — Recovered the colored-state transparency warning as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))

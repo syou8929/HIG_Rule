@@ -68440,11 +68440,11 @@
   topic: color
   subtopic: best-practices
   statement:
-    en: Exclude using the same color to mean different things from the applicable experience.
-    ja: 該当する体験ではusing the same color to mean different thingsを避ける。
+    en: Avoid using the same or similar color to communicate different meanings.
+    ja: 異なる意味を伝えるために同じまたは似たcolorを使わない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -68466,7 +68466,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use color consistently for information such as status and interactivity.
+    - Don't style noninteractive text like an interactive borderless button.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68474,7 +68475,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude using the same color to mean different things from the applicable experience.” in the documented Color context?
+      - Does the design satisfy “Avoid using the same or similar color to communicate different meanings.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -68489,25 +68490,25 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 6e8087fc021638dca96ab75ee4d1bd788f0089498909e0e80685de9e4e01554f
-    evidence_paraphrase: Exclude using the same color to mean different things from the applicable experience.
+    evidence_paraphrase: Avoid using the same or similar color to communicate different meanings.
   tags:
     - foundations
     - color
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude using the same color to mean different things from the applicable experience.
+  apple_native_rule: Avoid using the same or similar color to communicate different meanings.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0002
-  title: Make sure all your app’s colors work well in light, dark, and increased contrast contexts
+  title: Ensure colors work in light, dark, and increased-contrast contexts
   category: foundations
   topic: color
   subtopic: best-practices
   statement:
-    en: Verify that all your app’s colors work well in light, dark, and increased contrast contexts.
-    ja: all your app’s colors work well in light, dark, and increased contrast contextsを満たしていることを確認する。
+    en: Ensure every app color remains distinguishable and usable in light, dark, and increased-contrast contexts.
+    ja: すべてのapp colorをlight、dark、increased-contrast contextで区別でき使用可能にする。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -68530,7 +68531,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - iOS, iPadOS, macOS, and tvOS provide both light and dark appearances.
+    - Use the separate custom-color variant requirement whenever the app defines a custom color.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68539,7 +68541,7 @@
     automated:
       - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
     manual:
-      - Does the design satisfy “Verify that all your app’s colors work well in light, dark, and increased contrast contexts.” in the documented Color context?
+      - Does the design satisfy “Ensure every app color remains distinguishable and usable in light, dark, and increased-contrast contexts.” in the documented Color context?
   testability: hybrid
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -68554,14 +68556,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 92900882fe7b145fd638bc85cf1b7f0f113b34f45003d8090782f4841a6ef57d
-    evidence_paraphrase: Verify that all your app’s colors work well in light, dark, and increased contrast contexts.
+    evidence_paraphrase: Ensure every app color remains distinguishable and usable in light, dark, and increased-contrast contexts.
   tags:
     - foundations
     - color
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Verify that all your app’s colors work well in light, dark, and increased contrast contexts.
+  apple_native_rule: Ensure every app color remains distinguishable and usable in light, dark, and increased-contrast contexts.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0003
   title: Test your app’s color scheme under a variety of lighting conditions
@@ -68569,11 +68571,11 @@
   topic: color
   subtopic: best-practices
   statement:
-    en: Apply the documented Color guidance to test your app’s color scheme under a variety of lighting conditions.
-    ja: 「Color」において「Test your app’s color scheme under a variety of lighting conditions」の指針を適用する。
+    en: Test the app's color scheme under varied lighting conditions.
+    ja: さまざまなlighting conditionでappのcolor schemeをtestする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -68595,7 +68597,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Include bright and dim surroundings.
+    - For visionOS, include different physical-wall and object colors and reflected light.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68603,7 +68606,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Color guidance to test your app’s color scheme under a variety of lighting conditions.” in the documented Color context?
+      - Does the design satisfy “Test the app's color scheme under varied lighting conditions.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -68618,14 +68621,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 0cda5079571cd79ed3bf7b6bf005d8311a20ca09cfd6c361a073d68c2d14689a
-    evidence_paraphrase: Apply the documented Color guidance to test your app’s color scheme under a variety of lighting conditions.
+    evidence_paraphrase: Test the app's color scheme under varied lighting conditions.
   tags:
     - foundations
     - color
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Color guidance to test your app’s color scheme under a variety of lighting conditions.
+  apple_native_rule: Test the app's color scheme under varied lighting conditions.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0004
   title: Test your app on different devices
@@ -68633,11 +68636,11 @@
   topic: color
   subtopic: best-practices
   statement:
-    en: Apply the documented Color guidance to test your app on different devices.
-    ja: 「Color」において「Test your app on different devices」の指針を適用する。
+    en: Test the app's colors on different target devices and display configurations.
+    ja: 異なるtarget deviceとdisplay configurationでapp colorをtestする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -68659,7 +68662,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Include relevant True Tone displays, multiple HD and 4K TVs for tvOS, and P3 and sRGB profiles on Mac.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68667,7 +68670,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Color guidance to test your app on different devices.” in the documented Color context?
+      - Does the design satisfy “Test the app's colors on different target devices and display configurations.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -68682,14 +68685,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 06dd9786a84cc2eb5dc8de027f13b3177d4eee3fc7beda61eb7b5f8c43c5f857
-    evidence_paraphrase: Apply the documented Color guidance to test your app on different devices.
+    evidence_paraphrase: Test the app's colors on different target devices and display configurations.
   tags:
     - foundations
     - color
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Color guidance to test your app on different devices.
+  apple_native_rule: Test the app's colors on different target devices and display configurations.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0005
   title: Consider how artwork and translucency affect nearby colors
@@ -68697,11 +68700,11 @@
   topic: color
   subtopic: best-practices
   statement:
-    en: Evaluate whether how artwork and translucency affect nearby colors is appropriate for the current context.
-    ja: how artwork and translucency affect nearby colorsが現在の状況に適切か検討する。
+    en: Consider how artwork and translucent interface elements affect nearby colors.
+    ja: artworkやtranslucent interface elementが周囲のcolorへ与える影響を検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -68723,7 +68726,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Adjust nearby colors when needed to preserve continuity and avoid overpowering or underwhelming interface elements.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68731,7 +68734,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether how artwork and translucency affect nearby colors is appropriate for the current context.” in the documented Color context?
+      - Does the design satisfy “Consider how artwork and translucent interface elements affect nearby colors.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -68746,26 +68749,26 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: b974af5dc9f731fa462149b773b647abf10959d27046a083a0270d9460437ce5
-    evidence_paraphrase: Evaluate whether how artwork and translucency affect nearby colors is appropriate for the current context.
+    evidence_paraphrase: Consider how artwork and translucent interface elements affect nearby colors.
   tags:
     - foundations
     - color
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether how artwork and translucency affect nearby colors is appropriate for the current context.
+  apple_native_rule: Consider how artwork and translucent interface elements affect nearby colors.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0006
-  title: Avoid relying solely on color to differentiate between objects, indicate interactivity, or communicate esse…
+  title: Avoid relying on color alone to convey meaning
   category: foundations
   topic: color
   subtopic: inclusive-color
   statement:
-    en: Exclude relying solely on color to differentiate between objects, indicate interactivity, or communicate essential information from the applicable experience.
-    ja: 該当する体験ではrelying solely on color to differentiate between objects, indicate interactivity, or communicate essential informationを避ける。
+    en: Avoid relying on color alone to distinguish objects, indicate interactivity, or communicate essential information.
+    ja: objectの区別、interactivity、essential informationをcolorだけに依存して伝えない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -68787,7 +68790,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The separate accessibility MUST requires an equivalent noncolor channel.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68795,7 +68798,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude relying solely on color to differentiate between objects, indicate interactivity, or communicate essential information from the applicable experience.” in the documented Color context?
+      - Does the design satisfy “Avoid relying on color alone to distinguish objects, indicate interactivity, or communicate essential information.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -68810,14 +68813,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 6f9c3b95fc4ded5c71796061669993b0941405c4ef1643fa9fd737acd61368eb
-    evidence_paraphrase: Exclude relying solely on color to differentiate between objects, indicate interactivity, or communicate essential information from the applicable experience.
+    evidence_paraphrase: Avoid relying on color alone to distinguish objects, indicate interactivity, or communicate essential information.
   tags:
     - foundations
     - color
     - inclusive-color
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude relying solely on color to differentiate between objects, indicate interactivity, or communicate essential information from the applicable experience.
+  apple_native_rule: Avoid relying on color alone to distinguish objects, indicate interactivity, or communicate essential information.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0007
   title: Avoid using colors that make it hard to perceive content in your app
@@ -68825,11 +68828,11 @@
   topic: color
   subtopic: inclusive-color
   statement:
-    en: Exclude using colors that make it hard to perceive content in your app from the applicable experience.
-    ja: 該当する体験ではusing colors that make it hard to perceive content in your appを避ける。
+    en: Avoid colors and combinations that make app content difficult to perceive.
+    ja: app contentを知覚しにくくするcolorやcolor combinationを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -68851,7 +68854,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Check foreground-background contrast and combinations that may be indistinguishable to people with color-vision differences.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68859,7 +68862,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude using colors that make it hard to perceive content in your app from the applicable experience.” in the documented Color context?
+      - Does the design satisfy “Avoid colors and combinations that make app content difficult to perceive.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -68874,14 +68877,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 79dd174bdbc9b810f94ab71c6711a2410490a61b9428557243bf5e852eebc289
-    evidence_paraphrase: Exclude using colors that make it hard to perceive content in your app from the applicable experience.
+    evidence_paraphrase: Avoid colors and combinations that make app content difficult to perceive.
   tags:
     - foundations
     - color
     - inclusive-color
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude using colors that make it hard to perceive content in your app from the applicable experience.
+  apple_native_rule: Avoid colors and combinations that make app content difficult to perceive.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0008
   title: Consider how the colors you use might be perceived in other countries and cultures
@@ -68889,11 +68892,11 @@
   topic: color
   subtopic: inclusive-color
   statement:
-    en: Evaluate whether how the colors you use might be perceived in other countries and cultures is appropriate for the current context.
-    ja: how the colors you use might be perceived in other countries and culturesが現在の状況に適切か検討する。
+    en: Consider how each color may be interpreted in supported countries and cultures.
+    ja: 各colorがsupport対象の国や文化でどう解釈されるか検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -68915,7 +68918,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A color can carry opposite meanings in different cultures.
+    - The separate Make sure rule requires the final palette to send the intended message.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68923,7 +68927,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether how the colors you use might be perceived in other countries and cultures is appropriate for the current context.” in the documented Color context?
+      - Does the design satisfy “Consider how each color may be interpreted in supported countries and cultures.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -68938,14 +68942,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: e9f220867bce798eb39219cf73a9d87d2dca542b1a167d79486445fe53f8aab2
-    evidence_paraphrase: Evaluate whether how the colors you use might be perceived in other countries and cultures is appropriate for the current context.
+    evidence_paraphrase: Consider how each color may be interpreted in supported countries and cultures.
   tags:
     - foundations
     - color
     - inclusive-color
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether how the colors you use might be perceived in other countries and cultures is appropriate for the current context.
+  apple_native_rule: Consider how each color may be interpreted in supported countries and cultures.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0009
   title: Avoid hard-coding system color values in your app
@@ -68953,11 +68957,11 @@
   topic: color
   subtopic: system-colors
   statement:
-    en: Exclude hard-coding system color values in your app from the applicable experience.
-    ja: 該当する体験ではhard-coding system color values in your appを避ける。
+    en: Avoid hard-coding documented system color values.
+    ja: document化されたsystem color valueをhard-codeしない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -68979,7 +68983,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - System values can vary by release and environment; use platform color APIs instead.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -68987,7 +68991,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude hard-coding system color values in your app from the applicable experience.” in the documented Color context?
+      - Does the design satisfy “Avoid hard-coding documented system color values.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -69002,14 +69006,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: c8e1cc72552afb63debe3c25602ce309d120926bf411beb62535f92d38dc2661
-    evidence_paraphrase: Exclude hard-coding system color values in your app from the applicable experience.
+    evidence_paraphrase: Avoid hard-coding documented system color values.
   tags:
     - foundations
     - color
     - system-colors
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude hard-coding system color values in your app from the applicable experience.
+  apple_native_rule: Avoid hard-coding documented system color values.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0010
   title: Avoid redefining the semantic meanings of dynamic system colors
@@ -69017,11 +69021,11 @@
   topic: color
   subtopic: system-colors
   statement:
-    en: Exclude redefining the semantic meanings of dynamic system colors from the applicable experience.
-    ja: 該当する体験ではredefining the semantic meanings of dynamic system colorsを避ける。
+    en: Avoid redefining the semantic meanings of dynamic system colors.
+    ja: dynamic system colorのsemantic meaningを再定義しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -69030,20 +69034,16 @@
       - ios
       - ipados
       - macos
-      - tvos
       - visionos
-      - watchos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
       - apple-vision-pro
-      - apple-watch
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use each dynamic system color for its intended purpose so appearance changes remain consistent.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -69051,7 +69051,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude redefining the semantic meanings of dynamic system colors from the applicable experience.” in the documented Color context?
+      - Does the design satisfy “Avoid redefining the semantic meanings of dynamic system colors.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -69066,14 +69066,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 94c6e31d2a58a88fae449f85a9d1186124a497cf92eee559a44df3a477aacd6b
-    evidence_paraphrase: Exclude redefining the semantic meanings of dynamic system colors from the applicable experience.
+    evidence_paraphrase: Avoid redefining the semantic meanings of dynamic system colors.
   tags:
     - foundations
     - color
     - system-colors
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude redefining the semantic meanings of dynamic system colors from the applicable experience.
+  apple_native_rule: Avoid redefining the semantic meanings of dynamic system colors.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0011
   title: Apply color sparingly to the Liquid Glass material, and to symbols or text on the material
@@ -69081,11 +69081,11 @@
   topic: color
   subtopic: liquid-glass-color
   statement:
-    en: Apply the documented Color guidance to apply color sparingly to the Liquid Glass material, and to symbols or text on the material.
-    ja: 「Color」において「Apply color sparingly to the Liquid Glass material, and to symbols or text on the material」の指針を適用する。
+    en: Apply color sparingly to Liquid Glass and to symbols or text on it.
+    ja: Liquid Glassおよびその上のsymbolやtextへのcolor適用を控えめにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -69107,7 +69107,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Reserve color for elements that benefit from emphasis, such as status indicators and primary actions.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -69115,7 +69115,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Color guidance to apply color sparingly to the Liquid Glass material, and to symbols or text on the material.” in the documented Color context?
+      - Does the design satisfy “Apply color sparingly to Liquid Glass and to symbols or text on it.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -69130,14 +69130,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 3a3a3ba533d13aa7f48a923383e3a2a7d00a6d70ca9d9b208b1a1ce83195491e
-    evidence_paraphrase: Apply the documented Color guidance to apply color sparingly to the Liquid Glass material, and to symbols or text on the material.
+    evidence_paraphrase: Apply color sparingly to Liquid Glass and to symbols or text on it.
   tags:
     - foundations
     - color
     - liquid-glass-color
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Color guidance to apply color sparingly to the Liquid Glass material, and to symbols or text on the material.
+  apple_native_rule: Apply color sparingly to Liquid Glass and to symbols or text on it.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0012
   title: Avoid using similar colors in control labels if your app has a colorful background
@@ -69145,11 +69145,11 @@
   topic: color
   subtopic: liquid-glass-color
   statement:
-    en: Exclude using similar colors in control labels if your app has a colorful background from the applicable experience.
-    ja: 該当する体験ではusing similar colors in control labels if your app has a colorful backgroundを避ける。
+    en: Avoid control-label colors that are too similar to a colorful content background.
+    ja: colorfulなcontent backgroundと似すぎたcontrol-label colorを避ける。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -69171,7 +69171,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - For visually rich content, prefer monochromatic toolbars and tab bars or an accent color with sufficient differentiation.
+    - A brand accent can be effective over primarily monochromatic content.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -69179,7 +69180,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude using similar colors in control labels if your app has a colorful background from the applicable experience.” in the documented Color context?
+      - Does the design satisfy “Avoid control-label colors that are too similar to a colorful content background.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -69194,28 +69195,28 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 470b1a0acf39b145a5f0e478451c4cd90c76e85efd5ba31b6d4a2341b34277b3
-    evidence_paraphrase: Exclude using similar colors in control labels if your app has a colorful background from the applicable experience.
+    evidence_paraphrase: Avoid control-label colors that are too similar to a colorful content background.
   tags:
     - foundations
     - color
     - liquid-glass-color
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude using similar colors in control labels if your app has a colorful background from the applicable experience.
+  apple_native_rule: Avoid control-label colors that are too similar to a colorful content background.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0013
-  title: Be aware of the placement of color in the content layer
+  title: Ensure content and control colors maintain sufficient contrast
   category: foundations
   topic: color
   subtopic: liquid-glass-color
   statement:
-    en: Apply the documented Color guidance to be aware of the placement of color in the content layer.
-    ja: 「Color」において「Be aware of the placement of color in the content layer」の指針を適用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
+    en: Ensure colors in the content layer and controls maintain sufficient contrast.
+    ja: content layerとcontrolのcolor間で十分なcontrastを維持する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: apple-platform
     platforms:
@@ -69235,7 +69236,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Avoid overlapping similar content and control colors when possible.
+    - The separate resting-state rule applies to intermittently scrolling content.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -69243,7 +69245,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Color guidance to be aware of the placement of color in the content layer.” in the documented Color context?
+      - Does the design satisfy “Ensure colors in the content layer and controls maintain sufficient contrast.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -69258,14 +69260,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 895a5dfd5b22d7b0914543ce45d347372e4bc23b92dc67f1a6f63160bc1bddc8
-    evidence_paraphrase: Apply the documented Color guidance to be aware of the placement of color in the content layer.
+    evidence_paraphrase: Ensure colors in the content layer and controls maintain sufficient contrast.
   tags:
     - foundations
     - color
     - liquid-glass-color
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Color guidance to be aware of the placement of color in the content layer.
+  apple_native_rule: Ensure colors in the content layer and controls maintain sufficient contrast.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0014
   title: Apply color profiles to your images
@@ -69273,11 +69275,11 @@
   topic: color
   subtopic: color-management
   statement:
-    en: Apply the documented Color guidance to apply color profiles to your images.
-    ja: 「Color」において「Apply color profiles to your images」の指針を適用する。
+    en: Apply color profiles to images so displays can reproduce their colors as intended.
+    ja: displayが意図どおりcolorを再現できるようimageへcolor profileを適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -69299,7 +69301,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - sRGB produces accurate colors on most displays.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -69307,7 +69309,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Color guidance to apply color profiles to your images.” in the documented Color context?
+      - Does the design satisfy “Apply color profiles to images so displays can reproduce their colors as intended.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -69322,14 +69324,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 163f962e06a262f4701b9f4bd540f59bf5986c27ae26bfda1d6fdbd4424c4937
-    evidence_paraphrase: Apply the documented Color guidance to apply color profiles to your images.
+    evidence_paraphrase: Apply color profiles to images so displays can reproduce their colors as intended.
   tags:
     - foundations
     - color
     - color-management
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Color guidance to apply color profiles to your images.
+  apple_native_rule: Apply color profiles to images so displays can reproduce their colors as intended.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0015
   title: Use wide color to enhance the visual experience on compatible displays
@@ -69337,11 +69339,11 @@
   topic: color
   subtopic: color-management
   statement:
-    en: Choose or apply wide color to enhance the visual experience on compatible displays in the documented context.
-    ja: 該当する状況ではwide color to enhance the visual experience on compatible displaysを採用する。
+    en: Use wide color to enhance the visual experience on compatible displays.
+    ja: compatible displayでvisual experienceを高めるためwide colorを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -69363,7 +69365,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Wide color can improve photos, video, visual data, and status indicators.
+    - Apply the separate P3 export and wide-color display rules when producing wide-color assets.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -69371,7 +69374,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply wide color to enhance the visual experience on compatible displays in the documented context.” in the documented Color context?
+      - Does the design satisfy “Use wide color to enhance the visual experience on compatible displays.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -69386,14 +69389,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 6be3b1109c1afcec9728e38755172078dc7dac57db8cd0145424bba83e995dfd
-    evidence_paraphrase: Choose or apply wide color to enhance the visual experience on compatible displays in the documented context.
+    evidence_paraphrase: Use wide color to enhance the visual experience on compatible displays.
   tags:
     - foundations
     - color
     - color-management
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply wide color to enhance the visual experience on compatible displays in the documented context.
+  apple_native_rule: Use wide color to enhance the visual experience on compatible displays.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0016
   title: Provide color space–specific image and color variations if necessary
@@ -69401,11 +69404,11 @@
   topic: color
   subtopic: color-management
   statement:
-    en: Make color space–specific image and color variations if necessary available when applicable.
-    ja: 必要な場合にcolor space–specific image and color variations if necessaryを利用可能にする。
+    en: Provide color-space-specific image and color variants when needed for visual fidelity.
+    ja: visual fidelityに必要な場合はcolor-space固有のimageとcolor variantを提供する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -69427,7 +69430,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Provide variants when similar P3 colors become indistinguishable or P3 gradients clip on sRGB displays.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
@@ -69435,7 +69438,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make color space–specific image and color variations if necessary available when applicable.” in the documented Color context?
+      - Does the design satisfy “Provide color-space-specific image and color variants when needed for visual fidelity.” in the documented Color context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -69450,14 +69453,14 @@
     retrieved_at: 2026-07-21T11:14:43.663Z
     source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
     source_sentence_hash: 4dde7c2c244928e70a6745ce87858ae5c71be3579f66737015e3bfbda38149fc
-    evidence_paraphrase: Make color space–specific image and color variations if necessary available when applicable.
+    evidence_paraphrase: Provide color-space-specific image and color variants when needed for visual fidelity.
   tags:
     - foundations
     - color
     - color-management
   priority_rank: 6
   status: active
-  apple_native_rule: Make color space–specific image and color variations if necessary available when applicable.
+  apple_native_rule: Provide color-space-specific image and color variants when needed for visual fidelity.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-COLOR-0017
   title: Consider a limited tvOS palette coordinated with the app logo
@@ -69855,6 +69858,938 @@
   priority_rank: 4
   status: active
   apple_native_rule: Account for people preferring tinted mode in watchOS graphic complications.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0024
+  title: Prefer system colors with appearance and contrast variants
+  category: foundations
+  topic: color
+  subtopic: best-practices
+  statement:
+    en: Prefer system colors that already provide light, dark, and increased-contrast variants.
+    ja: light、dark、increased-contrast variantを備えたsystem colorを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Use system colors when possible because they adapt automatically to supported appearances and accessibility settings.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “Prefer system colors that already provide light, dark, and increased-contrast variants.” in the documented Color context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 92900882fe7b145fd638bc85cf1b7f0f113b34f45003d8090782f4841a6ef57d
+    evidence_paraphrase: Prefer system colors that already provide light, dark, and increased-contrast variants.
+  tags:
+    - foundations
+    - color
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Prefer system colors that already provide light, dark, and increased-contrast variants.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0025
+  title: Ensure custom colors supply appearance and contrast variants
+  category: foundations
+  topic: color
+  subtopic: best-practices
+  statement:
+    en: When defining a custom color, ensure it supplies light and dark variants plus an increased-contrast option for each.
+    ja: custom colorを定義する場合、lightとdark variantおよび各variantのincreased-contrast optionを用意する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Each increased-contrast option needs substantially greater visual differentiation.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold.
+    manual:
+      - Does the design satisfy “When defining a custom color, ensure it supplies light and dark variants plus an increased-contrast option for each.” in the documented Color context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 92900882fe7b145fd638bc85cf1b7f0f113b34f45003d8090782f4841a6ef57d
+    evidence_paraphrase: When defining a custom color, ensure it supplies light and dark variants plus an increased-contrast option for each.
+  tags:
+    - foundations
+    - color
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When defining a custom color, ensure it supplies light and dark variants plus an increased-contrast option for each.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0026
+  title: Prefer system-provided color controls when people choose colors
+  category: foundations
+  topic: color
+  subtopic: best-practices
+  statement:
+    en: Prefer system-provided color controls when the app lets people choose colors.
+    ja: appで人がcolorを選ぶ場合はsystem提供のcolor controlを優先する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Built-in color pickers provide a consistent experience and shared saved-color access.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Prefer system-provided color controls when the app lets people choose colors.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 7e41efbf4cbeaa54aea4a3ef1019c19f168718fc03cbf77b428e0219a20f2e1b
+    evidence_paraphrase: Prefer system-provided color controls when the app lets people choose colors.
+  tags:
+    - foundations
+    - color
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Prefer system-provided color controls when the app lets people choose colors.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0027
+  title: Provide noncolor alternatives whenever color conveys information
+  category: foundations
+  topic: color
+  subtopic: inclusive-color
+  statement:
+    en: Whenever color conveys information, ensure the same information is available through noncolor cues.
+    ja: colorでinformationを伝える場合、同じinformationをnoncolor cueでも利用できるようにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Use cues such as text labels or glyph shapes so people with color-vision differences can understand objects and states.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Whenever color conveys information, ensure the same information is available through noncolor cues.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Inclusive color
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 6f9c3b95fc4ded5c71796061669993b0941405c4ef1643fa9fd737acd61368eb
+    evidence_paraphrase: Whenever color conveys information, ensure the same information is available through noncolor cues.
+  tags:
+    - foundations
+    - color
+    - inclusive-color
+  priority_rank: 6
+  status: active
+  apple_native_rule: Whenever color conveys information, ensure the same information is available through noncolor cues.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0028
+  title: Ensure colors send the intended message across supported cultures
+  category: foundations
+  topic: color
+  subtopic: inclusive-color
+  statement:
+    en: Ensure app colors send the intended message in every supported country and culture.
+    ja: support対象のすべての国と文化でapp colorが意図したmessageを伝えるようにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Evaluate differing cultural meanings before finalizing the palette.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure app colors send the intended message in every supported country and culture.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Inclusive color
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: e9f220867bce798eb39219cf73a9d87d2dca542b1a167d79486445fe53f8aab2
+    evidence_paraphrase: Ensure app colors send the intended message in every supported country and culture.
+  tags:
+    - foundations
+    - color
+    - inclusive-color
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure app colors send the intended message in every supported country and culture.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0029
+  title: Emphasize primary actions with Liquid Glass background color
+  category: foundations
+  topic: color
+  subtopic: liquid-glass-color
+  statement:
+    en: When emphasizing a primary action with color, apply it to the Liquid Glass background rather than its symbol or text.
+    ja: colorでprimary actionを強調する場合、symbolやtextではなくLiquid Glass backgroundへ適用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply only when a primary action benefits from color emphasis.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When emphasizing a primary action with color, apply it to the Liquid Glass background rather than its symbol or text.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Liquid Glass color
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 3a3a3ba533d13aa7f48a923383e3a2a7d00a6d70ca9d9b208b1a1ce83195491e
+    evidence_paraphrase: When emphasizing a primary action with color, apply it to the Liquid Glass background rather than its symbol or text.
+  tags:
+    - foundations
+    - color
+    - liquid-glass-color
+  priority_rank: 6
+  status: active
+  apple_native_rule: When emphasizing a primary action with color, apply it to the Liquid Glass background rather than its symbol or text.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0030
+  title: Avoid adding color to the backgrounds of multiple Liquid Glass controls
+  category: foundations
+  topic: color
+  subtopic: liquid-glass-color
+  statement:
+    en: Avoid adding color to the backgrounds of multiple Liquid Glass controls.
+    ja: 複数のLiquid Glass controlのbackgroundへcolorを追加しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Reserve colored backgrounds for the small number of controls that truly need emphasis.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid adding color to the backgrounds of multiple Liquid Glass controls.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Liquid Glass color
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 3a3a3ba533d13aa7f48a923383e3a2a7d00a6d70ca9d9b208b1a1ce83195491e
+    evidence_paraphrase: Avoid adding color to the backgrounds of multiple Liquid Glass controls.
+  tags:
+    - foundations
+    - color
+    - liquid-glass-color
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid adding color to the backgrounds of multiple Liquid Glass controls.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0031
+  title: Ensure resting content remains legible beneath controls
+  category: foundations
+  topic: color
+  subtopic: liquid-glass-color
+  statement:
+    en: When colorful content can scroll beneath controls, ensure its default or resting state remains clearly legible.
+    ja: colorful contentがcontrolの下をscrollする場合、defaultまたはresting stateで明確なlegibilityを維持する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply especially at the initial top position of scrollable content.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When colorful content can scroll beneath controls, ensure its default or resting state remains clearly legible.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Liquid Glass color
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 895a5dfd5b22d7b0914543ce45d347372e4bc23b92dc67f1a6f63160bc1bddc8
+    evidence_paraphrase: When colorful content can scroll beneath controls, ensure its default or resting state remains clearly legible.
+  tags:
+    - foundations
+    - color
+    - liquid-glass-color
+  priority_rank: 6
+  status: active
+  apple_native_rule: When colorful content can scroll beneath controls, ensure its default or resting state remains clearly legible.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0032
+  title: Use the documented Display P3 export settings when wide color is appropriate
+  category: foundations
+  topic: color
+  subtopic: color-management
+  statement:
+    en: When wide color is appropriate, use Display P3 at 16 bits per channel and export images as PNG.
+    ja: wide colorが適切な場合、Display P3をchannelあたり16 bitで使いimageをPNGとしてexportする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply to wide-color image assets intended for compatible displays.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When wide color is appropriate, use Display P3 at 16 bits per channel and export images as PNG.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Color management
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 6be3b1109c1afcec9728e38755172078dc7dac57db8cd0145424bba83e995dfd
+    evidence_paraphrase: When wide color is appropriate, use Display P3 at 16 bits per channel and export images as PNG.
+  tags:
+    - foundations
+    - color
+    - color-management
+  priority_rank: 6
+  status: active
+  apple_native_rule: When wide color is appropriate, use Display P3 at 16 bits per channel and export images as PNG.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0033
+  title: Use a wide-color display to create wide-color assets
+  category: foundations
+  topic: color
+  subtopic: color-management
+  statement:
+    en: Use a wide-color display when designing wide-color images or selecting Display P3 colors.
+    ja: wide-color imageのdesignまたはDisplay P3 colorの選択にはwide-color displayを使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The team is designing wide-color images or selecting Display P3 colors.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use a wide-color display when designing wide-color images or selecting Display P3 colors.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Color management
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 6be3b1109c1afcec9728e38755172078dc7dac57db8cd0145424bba83e995dfd
+    evidence_paraphrase: Use a wide-color display when designing wide-color images or selecting Display P3 colors.
+  tags:
+    - foundations
+    - color
+    - color-management
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use a wide-color display when designing wide-color images or selecting Display P3 colors.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0034
+  title: Use grouped background colors for grouped iOS and iPadOS table views
+  category: foundations
+  topic: color
+  subtopic: ios-ipados
+  statement:
+    en: Use grouped background colors for grouped iOS and iPadOS table views.
+    ja: grouped iOSまたはiPadOS table viewではgrouped background colorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use systemGroupedBackground and its secondary and tertiary variants.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use grouped background colors for grouped iOS and iPadOS table views.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 56a5bd6c465d02b77049f297a362c6b853ab5202d6c233f53b84a7ec02e6e084
+    evidence_paraphrase: Use grouped background colors for grouped iOS and iPadOS table views.
+  tags:
+    - foundations
+    - color
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use grouped background colors for grouped iOS and iPadOS table views.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0035
+  title: Use system background colors for other iOS and iPadOS views
+  category: foundations
+  topic: color
+  subtopic: ios-ipados
+  statement:
+    en: Use system background colors for iOS and iPadOS views that aren't grouped table views.
+    ja: grouped table view以外のiOSまたはiPadOS viewではsystem background colorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Use systemBackground and its secondary and tertiary variants.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use system background colors for iOS and iPadOS views that aren't grouped table views.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 56a5bd6c465d02b77049f297a362c6b853ab5202d6c233f53b84a7ec02e6e084
+    evidence_paraphrase: Use system background colors for iOS and iPadOS views that aren't grouped table views.
+  tags:
+    - foundations
+    - color
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use system background colors for iOS and iPadOS views that aren't grouped table views.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0036
+  title: Use primary iOS and iPadOS background colors for the overall view
+  category: foundations
+  topic: color
+  subtopic: ios-ipados
+  statement:
+    en: Use primary iOS and iPadOS background colors for the overall view.
+    ja: overall viewにはprimary iOSまたはiPadOS background colorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within either the system or grouped dynamic background-color set.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use primary iOS and iPadOS background colors for the overall view.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 09c80e54d3b46f2e21a39a764a900c0aad240ef9ec4e1be86533d0ac6557e2a0
+    evidence_paraphrase: Use primary iOS and iPadOS background colors for the overall view.
+  tags:
+    - foundations
+    - color
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use primary iOS and iPadOS background colors for the overall view.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0037
+  title: Use secondary iOS and iPadOS background colors to group content within the overall view
+  category: foundations
+  topic: color
+  subtopic: ios-ipados
+  statement:
+    en: Use secondary iOS and iPadOS background colors to group content within the overall view.
+    ja: overall view内でcontentをgroup化するためsecondary iOSまたはiPadOS background colorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within either the system or grouped dynamic background-color set.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use secondary iOS and iPadOS background colors to group content within the overall view.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 5aea2d28e8e5bc89a656b741ec9aca78205570a35f42db727e4c1431604eab2a
+    evidence_paraphrase: Use secondary iOS and iPadOS background colors to group content within the overall view.
+  tags:
+    - foundations
+    - color
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use secondary iOS and iPadOS background colors to group content within the overall view.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-COLOR-0038
+  title: Use tertiary iOS and iPadOS background colors to group content within secondary elements
+  category: foundations
+  topic: color
+  subtopic: ios-ipados
+  statement:
+    en: Use tertiary iOS and iPadOS background colors to group content within secondary elements.
+    ja: secondary element内でcontentをgroup化するためtertiary iOSまたはiPadOS background colorを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components: []
+    modalities: []
+  conditions:
+    - Apply within either the system or grouped dynamic background-color set.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColorの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use tertiary iOS and iPadOS background colors to group content within secondary elements.” in the documented Color context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color
+    page_title: Color
+    section_path:
+      - Color
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:43.663Z
+    source_hash: 822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90
+    source_sentence_hash: 154557c661737d53183c9d0f5f1d8a8610fb2f7581847c2ea6ff3f1118bb4b4d
+    evidence_paraphrase: Use tertiary iOS and iPadOS background colors to group content within secondary elements.
+  tags:
+    - foundations
+    - color
+    - platform-considerations
+    - ios-ipados
+  priority_rank: 4
+  status: active
+  apple_native_rule: Use tertiary iOS and iPadOS background colors to group content within secondary elements.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-DARK-MODE-0001
   title: Avoid offering an app-specific appearance setting

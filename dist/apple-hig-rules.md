@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T06:50:41.468Z. 2899 active rules; 4 deprecated rules.
+Generated 2026-07-23T07:02:55.153Z. 2914 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -224,22 +224,22 @@ Generated 2026-07-23T06:50:41.468Z. 2899 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-BRANDING-0012 · MUST_NOT · high** — Never include Apple trademarks in app names or images. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
 ### color
 
-- **HIG-FOUNDATIONS-COLOR-0001 · AVOID · low** — Exclude using the same color to mean different things from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0002 · MUST · medium** — Verify that all your app’s colors work well in light, dark, and increased contrast contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0003 · SHOULD · low** — Apply the documented Color guidance to test your app’s color scheme under a variety of lighting conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0004 · SHOULD · low** — Apply the documented Color guidance to test your app on different devices. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0005 · MAY · low** — Evaluate whether how artwork and translucency affect nearby colors is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0006 · AVOID · low** — Exclude relying solely on color to differentiate between objects, indicate interactivity, or communicate essential information from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0007 · AVOID · low** — Exclude using colors that make it hard to perceive content in your app from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0008 · MAY · low** — Evaluate whether how the colors you use might be perceived in other countries and cultures is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0009 · AVOID · low** — Exclude hard-coding system color values in your app from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0010 · AVOID · low** — Exclude redefining the semantic meanings of dynamic system colors from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0011 · SHOULD · low** — Apply the documented Color guidance to apply color sparingly to the Liquid Glass material, and to symbols or text on the material. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0012 · AVOID · low** — Exclude using similar colors in control labels if your app has a colorful background from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0013 · SHOULD · low** — Apply the documented Color guidance to be aware of the placement of color in the content layer. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0014 · SHOULD · low** — Apply the documented Color guidance to apply color profiles to your images. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0015 · SHOULD · low** — Choose or apply wide color to enhance the visual experience on compatible displays in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
-- **HIG-FOUNDATIONS-COLOR-0016 · SHOULD · low** — Make color space–specific image and color variations if necessary available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0001 · AVOID · high** — Avoid using the same or similar color to communicate different meanings. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0002 · MUST · high** — Ensure every app color remains distinguishable and usable in light, dark, and increased-contrast contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0003 · SHOULD · high** — Test the app's color scheme under varied lighting conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0004 · SHOULD · high** — Test the app's colors on different target devices and display configurations. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0005 · MAY · high** — Consider how artwork and translucent interface elements affect nearby colors. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0006 · AVOID · high** — Avoid relying on color alone to distinguish objects, indicate interactivity, or communicate essential information. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0007 · AVOID · high** — Avoid colors and combinations that make app content difficult to perceive. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0008 · MAY · high** — Consider how each color may be interpreted in supported countries and cultures. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0009 · AVOID · high** — Avoid hard-coding documented system color values. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0010 · AVOID · high** — Avoid redefining the semantic meanings of dynamic system colors. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0011 · SHOULD · high** — Apply color sparingly to Liquid Glass and to symbols or text on it. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0012 · AVOID · high** — Avoid control-label colors that are too similar to a colorful content background. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0013 · MUST · high** — Ensure colors in the content layer and controls maintain sufficient contrast. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0014 · SHOULD · high** — Apply color profiles to images so displays can reproduce their colors as intended. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0015 · SHOULD · high** — Use wide color to enhance the visual experience on compatible displays. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0016 · SHOULD · high** — Provide color-space-specific image and color variants when needed for visual fidelity. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - **HIG-FOUNDATIONS-COLOR-0017 · MAY · high** — Consider a limited tvOS color palette that coordinates with the app logo. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - **HIG-FOUNDATIONS-COLOR-0018 · AVOID · high** — Avoid using color as the only indication of tvOS focus. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - **HIG-FOUNDATIONS-COLOR-0019 · SHOULD · high** — Use color sparingly in visionOS, especially on glass material. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
@@ -247,6 +247,21 @@ Generated 2026-07-23T06:50:41.468Z. 2899 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-COLOR-0021 · SHOULD · high** — Use watchOS background color to support content or communicate additional information. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - **HIG-FOUNDATIONS-COLOR-0022 · SHOULD · high** — Balance brightness levels to preserve visual comfort in a fully immersive visionOS experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - **HIG-FOUNDATIONS-COLOR-0023 · SHOULD · high** — Account for people preferring tinted mode in watchOS graphic complications. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0024 · SHOULD · high** — Prefer system colors that already provide light, dark, and increased-contrast variants. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0025 · MUST · high** — When defining a custom color, ensure it supplies light and dark variants plus an increased-contrast option for each. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0026 · SHOULD · high** — Prefer system-provided color controls when the app lets people choose colors. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0027 · MUST · high** — Whenever color conveys information, ensure the same information is available through noncolor cues. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0028 · MUST · high** — Ensure app colors send the intended message in every supported country and culture. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0029 · SHOULD · high** — When emphasizing a primary action with color, apply it to the Liquid Glass background rather than its symbol or text. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0030 · AVOID · high** — Avoid adding color to the backgrounds of multiple Liquid Glass controls. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0031 · MUST · high** — When colorful content can scroll beneath controls, ensure its default or resting state remains clearly legible. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0032 · SHOULD · high** — When wide color is appropriate, use Display P3 at 16 bits per channel and export images as PNG. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0033 · MUST · high** — Use a wide-color display when designing wide-color images or selecting Display P3 colors. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0034 · SHOULD · high** — Use grouped background colors for grouped iOS and iPadOS table views. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0035 · SHOULD · high** — Use system background colors for iOS and iPadOS views that aren't grouped table views. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0036 · SHOULD · high** — Use primary iOS and iPadOS background colors for the overall view. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0037 · SHOULD · high** — Use secondary iOS and iPadOS background colors to group content within the overall view. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
+- **HIG-FOUNDATIONS-COLOR-0038 · SHOULD · high** — Use tertiary iOS and iPadOS background colors to group content within secondary elements. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 ### dark-mode
 
 - **HIG-FOUNDATIONS-DARK-MODE-0001 · AVOID · low** — Exclude offering an app-specific appearance setting from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T06:47:59Z",
+  "reviewed_at": "2026-07-23T06:57:46Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -896,6 +896,69 @@
         "HIG-FOUNDATIONS-COLOR-0023"
       ],
       "review_note": "Reviewed tvOS focus, visionOS glass and brightness, and watchOS background and complication color guidance; recovered two leads."
+    },
+    {
+      "id": "priority-6-color-common-context-2026-07-23",
+      "reviewed_at": "2026-07-23T06:57:46Z",
+      "review_method": "Rendered Apple HIG Color common best practices, inclusive color, system colors, Liquid Glass color, color management, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/color",
+          "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-COLOR-0001",
+        "HIG-FOUNDATIONS-COLOR-0002",
+        "HIG-FOUNDATIONS-COLOR-0003",
+        "HIG-FOUNDATIONS-COLOR-0004",
+        "HIG-FOUNDATIONS-COLOR-0005",
+        "HIG-FOUNDATIONS-COLOR-0006",
+        "HIG-FOUNDATIONS-COLOR-0007",
+        "HIG-FOUNDATIONS-COLOR-0008",
+        "HIG-FOUNDATIONS-COLOR-0009",
+        "HIG-FOUNDATIONS-COLOR-0010",
+        "HIG-FOUNDATIONS-COLOR-0011",
+        "HIG-FOUNDATIONS-COLOR-0012",
+        "HIG-FOUNDATIONS-COLOR-0013",
+        "HIG-FOUNDATIONS-COLOR-0014",
+        "HIG-FOUNDATIONS-COLOR-0015",
+        "HIG-FOUNDATIONS-COLOR-0016",
+        "HIG-FOUNDATIONS-COLOR-0024",
+        "HIG-FOUNDATIONS-COLOR-0025",
+        "HIG-FOUNDATIONS-COLOR-0026",
+        "HIG-FOUNDATIONS-COLOR-0027",
+        "HIG-FOUNDATIONS-COLOR-0028",
+        "HIG-FOUNDATIONS-COLOR-0029",
+        "HIG-FOUNDATIONS-COLOR-0030",
+        "HIG-FOUNDATIONS-COLOR-0031",
+        "HIG-FOUNDATIONS-COLOR-0032",
+        "HIG-FOUNDATIONS-COLOR-0033"
+      ],
+      "review_note": "Completed common Color coverage; recovered ten atomic rules, retained the existing appearance-context MUST, separated six explicit Make sure, Be sure, or need-to outcomes as MUST, and kept direct Avoid or Refrain guidance below MUST_NOT."
+    },
+    {
+      "id": "priority-6-color-ios-ipados-context-2026-07-23",
+      "reviewed_at": "2026-07-23T06:57:46Z",
+      "review_method": "Rendered Apple HIG Color iOS and iPadOS background-set guidance, hierarchy description, and structured hierarchy rows were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/color",
+          "source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-COLOR-0034",
+        "HIG-FOUNDATIONS-COLOR-0035",
+        "HIG-FOUNDATIONS-COLOR-0036",
+        "HIG-FOUNDATIONS-COLOR-0037",
+        "HIG-FOUNDATIONS-COLOR-0038"
+      ],
+      "review_note": "Recovered grouped-versus-system background selection and the primary, secondary, and tertiary iOS and iPadOS background hierarchy without persisting the source color-value tables."
     },
     {
       "id": "priority-4-icons-document-context-2026-07-21",
@@ -22048,6 +22111,216 @@
       "severity": "error",
       "conditions": ["Apply to every app name and image that refers to Apple brands."],
       "review_note": "Recovered the explicit must-not prohibition separately from the general trademark-guidelines recommendation."
+    },
+    "HIG-FOUNDATIONS-COLOR-0001": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "6e8087fc021638dca96ab75ee4d1bd788f0089498909e0e80685de9e4e01554f", "section_path": ["Color", "Best practices"]},
+      "statement": {"en": "Avoid using the same or similar color to communicate different meanings.", "ja": "異なる意味を伝えるために同じまたは似たcolorを使わない。"},
+      "conditions": ["Use color consistently for information such as status and interactivity.", "Don't style noninteractive text like an interactive borderless button."],
+      "review_note": "Recorded the status and interactivity context and retained direct Avoid guidance at AVOID."
+    },
+    "HIG-FOUNDATIONS-COLOR-0002": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "92900882fe7b145fd638bc85cf1b7f0f113b34f45003d8090782f4841a6ef57d", "section_path": ["Color", "Best practices"]},
+      "title": "Ensure colors work in light, dark, and increased-contrast contexts",
+      "statement": {"en": "Ensure every app color remains distinguishable and usable in light, dark, and increased-contrast contexts.", "ja": "すべてのapp colorをlight、dark、increased-contrast contextで区別でき使用可能にする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["iOS, iPadOS, macOS, and tvOS provide both light and dark appearances.", "Use the separate custom-color variant requirement whenever the app defines a custom color."],
+      "review_note": "Retained the explicit Make sure MUST and separated system-color preference from custom-color asset requirements."
+    },
+    "HIG-FOUNDATIONS-COLOR-0003": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "0cda5079571cd79ed3bf7b6bf005d8311a20ca09cfd6c361a073d68c2d14689a", "section_path": ["Color", "Best practices"]},
+      "statement": {"en": "Test the app's color scheme under varied lighting conditions.", "ja": "さまざまなlighting conditionでappのcolor schemeをtestする。"},
+      "conditions": ["Include bright and dim surroundings.", "For visionOS, include different physical-wall and object colors and reflected light."],
+      "review_note": "Recorded physical-lighting and visionOS surroundings as required test contexts without raising Test to MUST."
+    },
+    "HIG-FOUNDATIONS-COLOR-0004": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "06dd9786a84cc2eb5dc8de027f13b3177d4eee3fc7beda61eb7b5f8c43c5f857", "section_path": ["Color", "Best practices"]},
+      "statement": {"en": "Test the app's colors on different target devices and display configurations.", "ja": "異なるtarget deviceとdisplay configurationでapp colorをtestする。"},
+      "conditions": ["Include relevant True Tone displays, multiple HD and 4K TVs for tvOS, and P3 and sRGB profiles on Mac."],
+      "review_note": "Recorded the documented device and display-profile coverage."
+    },
+    "HIG-FOUNDATIONS-COLOR-0005": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "b974af5dc9f731fa462149b773b647abf10959d27046a083a0270d9460437ce5", "section_path": ["Color", "Best practices"]},
+      "statement": {"en": "Consider how artwork and translucent interface elements affect nearby colors.", "ja": "artworkやtranslucent interface elementが周囲のcolorへ与える影響を検討する。"},
+      "conditions": ["Adjust nearby colors when needed to preserve continuity and avoid overpowering or underwhelming interface elements."],
+      "review_note": "Preserved Consider as MAY and recorded both artwork and translucency contexts."
+    },
+    "HIG-FOUNDATIONS-COLOR-0006": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "6f9c3b95fc4ded5c71796061669993b0941405c4ef1643fa9fd737acd61368eb", "section_path": ["Color", "Inclusive color"]},
+      "title": "Avoid relying on color alone to convey meaning",
+      "statement": {"en": "Avoid relying on color alone to distinguish objects, indicate interactivity, or communicate essential information.", "ja": "objectの区別、interactivity、essential informationをcolorだけに依存して伝えない。"},
+      "conditions": ["The separate accessibility MUST requires an equivalent noncolor channel."],
+      "review_note": "Repaired the truncated title and separated the explicit Be sure alternative-channel requirement."
+    },
+    "HIG-FOUNDATIONS-COLOR-0007": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "79dd174bdbc9b810f94ab71c6711a2410490a61b9428557243bf5e852eebc289", "section_path": ["Color", "Inclusive color"]},
+      "statement": {"en": "Avoid colors and combinations that make app content difficult to perceive.", "ja": "app contentを知覚しにくくするcolorやcolor combinationを避ける。"},
+      "conditions": ["Check foreground-background contrast and combinations that may be indistinguishable to people with color-vision differences."],
+      "review_note": "Recorded both contrast and color-vision conditions and retained Avoid at AVOID."
+    },
+    "HIG-FOUNDATIONS-COLOR-0008": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "e9f220867bce798eb39219cf73a9d87d2dca542b1a167d79486445fe53f8aab2", "section_path": ["Color", "Inclusive color"]},
+      "statement": {"en": "Consider how each color may be interpreted in supported countries and cultures.", "ja": "各colorがsupport対象の国や文化でどう解釈されるか検討する。"},
+      "conditions": ["A color can carry opposite meanings in different cultures.", "The separate Make sure rule requires the final palette to send the intended message."],
+      "review_note": "Preserved Consider as MAY and separated the explicit intended-message outcome."
+    },
+    "HIG-FOUNDATIONS-COLOR-0009": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "c8e1cc72552afb63debe3c25602ce309d120926bf411beb62535f92d38dc2661", "section_path": ["Color", "System colors"]},
+      "statement": {"en": "Avoid hard-coding documented system color values.", "ja": "document化されたsystem color valueをhard-codeしない。"},
+      "conditions": ["System values can vary by release and environment; use platform color APIs instead."],
+      "review_note": "Recorded API use and value variability while keeping direct Avoid guidance at AVOID."
+    },
+    "HIG-FOUNDATIONS-COLOR-0010": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "94c6e31d2a58a88fae449f85a9d1186124a497cf92eee559a44df3a477aacd6b", "section_path": ["Color", "System colors"]},
+      "statement": {"en": "Avoid redefining the semantic meanings of dynamic system colors.", "ja": "dynamic system colorのsemantic meaningを再定義しない。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Use each dynamic system color for its intended purpose so appearance changes remain consistent."],
+      "review_note": "Narrowed the generated page-wide scope to the four platforms identified by the source."
+    },
+    "HIG-FOUNDATIONS-COLOR-0011": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "3a3a3ba533d13aa7f48a923383e3a2a7d00a6d70ca9d9b208b1a1ce83195491e", "section_path": ["Color", "Liquid Glass color"]},
+      "statement": {"en": "Apply color sparingly to Liquid Glass and to symbols or text on it.", "ja": "Liquid Glassおよびその上のsymbolやtextへのcolor適用を控えめにする。"},
+      "conditions": ["Reserve color for elements that benefit from emphasis, such as status indicators and primary actions."],
+      "review_note": "Recorded the emphasis qualification and split primary-action treatment and multiple-control avoidance."
+    },
+    "HIG-FOUNDATIONS-COLOR-0012": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "470b1a0acf39b145a5f0e478451c4cd90c76e85efd5ba31b6d4a2341b34277b3", "section_path": ["Color", "Liquid Glass color"]},
+      "statement": {"en": "Avoid control-label colors that are too similar to a colorful content background.", "ja": "colorfulなcontent backgroundと似すぎたcontrol-label colorを避ける。"},
+      "conditions": ["For visually rich content, prefer monochromatic toolbars and tab bars or an accent color with sufficient differentiation.", "A brand accent can be effective over primarily monochromatic content."],
+      "review_note": "Recorded both content-dependent alternatives and retained Avoid at AVOID."
+    },
+    "HIG-FOUNDATIONS-COLOR-0013": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "895a5dfd5b22d7b0914543ce45d347372e4bc23b92dc67f1a6f63160bc1bddc8", "section_path": ["Color", "Liquid Glass color"]},
+      "title": "Ensure content and control colors maintain sufficient contrast",
+      "statement": {"en": "Ensure colors in the content layer and controls maintain sufficient contrast.", "ja": "content layerとcontrolのcolor間で十分なcontrastを維持する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Avoid overlapping similar content and control colors when possible.", "The separate resting-state rule applies to intermittently scrolling content."],
+      "review_note": "Replaced the vague generated Be aware statement with the paragraph's explicit Make sure contrast outcome."
+    },
+    "HIG-FOUNDATIONS-COLOR-0014": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "163f962e06a262f4701b9f4bd540f59bf5986c27ae26bfda1d6fdbd4424c4937", "section_path": ["Color", "Color management"]},
+      "statement": {"en": "Apply color profiles to images so displays can reproduce their colors as intended.", "ja": "displayが意図どおりcolorを再現できるようimageへcolor profileを適用する。"},
+      "conditions": ["sRGB produces accurate colors on most displays."],
+      "review_note": "Recorded the cross-display color-management outcome and sRGB baseline."
+    },
+    "HIG-FOUNDATIONS-COLOR-0015": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "6be3b1109c1afcec9728e38755172078dc7dac57db8cd0145424bba83e995dfd", "section_path": ["Color", "Color management"]},
+      "statement": {"en": "Use wide color to enhance the visual experience on compatible displays.", "ja": "compatible displayでvisual experienceを高めるためwide colorを使う。"},
+      "conditions": ["Wide color can improve photos, video, visual data, and status indicators.", "Apply the separate P3 export and wide-color display rules when producing wide-color assets."],
+      "review_note": "Recorded compatible-display outcomes and split precise production guidance."
+    },
+    "HIG-FOUNDATIONS-COLOR-0016": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "4dde7c2c244928e70a6745ce87858ae5c71be3579f66737015e3bfbda38149fc", "section_path": ["Color", "Color management"]},
+      "statement": {"en": "Provide color-space-specific image and color variants when needed for visual fidelity.", "ja": "visual fidelityに必要な場合はcolor-space固有のimageとcolor variantを提供する。"},
+      "conditions": ["Provide variants when similar P3 colors become indistinguishable or P3 gradients clip on sRGB displays."],
+      "review_note": "Recorded the two documented P3-to-sRGB failure conditions."
+    },
+    "HIG-FOUNDATIONS-COLOR-0024": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "92900882fe7b145fd638bc85cf1b7f0f113b34f45003d8090782f4841a6ef57d", "section_path": ["Color", "Best practices"]},
+      "title": "Prefer system colors with appearance and contrast variants",
+      "statement": {"en": "Prefer system colors that already provide light, dark, and increased-contrast variants.", "ja": "light、dark、increased-contrast variantを備えたsystem colorを優先する。"},
+      "conditions": ["Use system colors when possible because they adapt automatically to supported appearances and accessibility settings."],
+      "review_note": "Recovered the qualified system-color preference separately from mandatory color outcomes."
+    },
+    "HIG-FOUNDATIONS-COLOR-0025": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "92900882fe7b145fd638bc85cf1b7f0f113b34f45003d8090782f4841a6ef57d", "section_path": ["Color", "Best practices"]},
+      "title": "Ensure custom colors supply appearance and contrast variants",
+      "statement": {"en": "When defining a custom color, ensure it supplies light and dark variants plus an increased-contrast option for each.", "ja": "custom colorを定義する場合、lightとdark variantおよび各variantのincreased-contrast optionを用意する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Each increased-contrast option needs substantially greater visual differentiation."],
+      "review_note": "Recovered the conditional Make sure custom-color asset requirement."
+    },
+    "HIG-FOUNDATIONS-COLOR-0026": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "7e41efbf4cbeaa54aea4a3ef1019c19f168718fc03cbf77b428e0219a20f2e1b", "section_path": ["Color", "Best practices"]},
+      "statement": {"en": "Prefer system-provided color controls when the app lets people choose colors.", "ja": "appで人がcolorを選ぶ場合はsystem提供のcolor controlを優先する。"},
+      "conditions": ["Built-in color pickers provide a consistent experience and shared saved-color access."],
+      "review_note": "Activated the previously unrecognized conditional Prefer lead."
+    },
+    "HIG-FOUNDATIONS-COLOR-0027": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "6f9c3b95fc4ded5c71796061669993b0941405c4ef1643fa9fd737acd61368eb", "section_path": ["Color", "Inclusive color"]},
+      "title": "Provide noncolor alternatives whenever color conveys information",
+      "statement": {"en": "Whenever color conveys information, ensure the same information is available through noncolor cues.", "ja": "colorでinformationを伝える場合、同じinformationをnoncolor cueでも利用できるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Use cues such as text labels or glyph shapes so people with color-vision differences can understand objects and states."],
+      "review_note": "Recovered the explicit Be sure accessibility requirement as a separate MUST."
+    },
+    "HIG-FOUNDATIONS-COLOR-0028": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "e9f220867bce798eb39219cf73a9d87d2dca542b1a167d79486445fe53f8aab2", "section_path": ["Color", "Inclusive color"]},
+      "title": "Ensure colors send the intended message across supported cultures",
+      "statement": {"en": "Ensure app colors send the intended message in every supported country and culture.", "ja": "support対象のすべての国と文化でapp colorが意図したmessageを伝えるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Evaluate differing cultural meanings before finalizing the palette."],
+      "review_note": "Recovered the explicit Make sure outcome separately from the Consider research prompt."
+    },
+    "HIG-FOUNDATIONS-COLOR-0029": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "3a3a3ba533d13aa7f48a923383e3a2a7d00a6d70ca9d9b208b1a1ce83195491e", "section_path": ["Color", "Liquid Glass color"]},
+      "title": "Emphasize primary actions with Liquid Glass background color",
+      "statement": {"en": "When emphasizing a primary action with color, apply it to the Liquid Glass background rather than its symbol or text.", "ja": "colorでprimary actionを強調する場合、symbolやtextではなくLiquid Glass backgroundへ適用する。"},
+      "conditions": ["Apply only when a primary action benefits from color emphasis."],
+      "review_note": "Recovered the conditional primary-action treatment as SHOULD."
+    },
+    "HIG-FOUNDATIONS-COLOR-0030": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "3a3a3ba533d13aa7f48a923383e3a2a7d00a6d70ca9d9b208b1a1ce83195491e", "section_path": ["Color", "Liquid Glass color"]},
+      "statement": {"en": "Avoid adding color to the backgrounds of multiple Liquid Glass controls.", "ja": "複数のLiquid Glass controlのbackgroundへcolorを追加しない。"},
+      "conditions": ["Reserve colored backgrounds for the small number of controls that truly need emphasis."],
+      "review_note": "Recovered the direct Refrain guidance conservatively as AVOID, not MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-COLOR-0031": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "895a5dfd5b22d7b0914543ce45d347372e4bc23b92dc67f1a6f63160bc1bddc8", "section_path": ["Color", "Liquid Glass color"]},
+      "title": "Ensure resting content remains legible beneath controls",
+      "statement": {"en": "When colorful content can scroll beneath controls, ensure its default or resting state remains clearly legible.", "ja": "colorful contentがcontrolの下をscrollする場合、defaultまたはresting stateで明確なlegibilityを維持する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Apply especially at the initial top position of scrollable content."],
+      "review_note": "Recovered the second explicit Make sure outcome from the content-layer paragraph."
+    },
+    "HIG-FOUNDATIONS-COLOR-0032": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "6be3b1109c1afcec9728e38755172078dc7dac57db8cd0145424bba83e995dfd", "section_path": ["Color", "Color management"]},
+      "title": "Use the documented Display P3 export settings when wide color is appropriate",
+      "statement": {"en": "When wide color is appropriate, use Display P3 at 16 bits per channel and export images as PNG.", "ja": "wide colorが適切な場合、Display P3をchannelあたり16 bitで使いimageをPNGとしてexportする。"},
+      "conditions": ["Apply to wide-color image assets intended for compatible displays."],
+      "review_note": "Recovered the conditional production specification as SHOULD."
+    },
+    "HIG-FOUNDATIONS-COLOR-0033": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "6be3b1109c1afcec9728e38755172078dc7dac57db8cd0145424bba83e995dfd", "section_path": ["Color", "Color management"]},
+      "title": "Use a wide-color display to create wide-color assets",
+      "statement": {"en": "Use a wide-color display when designing wide-color images or selecting Display P3 colors.", "ja": "wide-color imageのdesignまたはDisplay P3 colorの選択にはwide-color displayを使う。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The team is designing wide-color images or selecting Display P3 colors."],
+      "review_note": "Recovered the explicit need-to production prerequisite as a conditional MUST."
+    },
+    "HIG-FOUNDATIONS-COLOR-0034": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "56a5bd6c465d02b77049f297a362c6b853ab5202d6c233f53b84a7ec02e6e084", "section_path": ["Color", "Platform considerations", "iOS, iPadOS"]},
+      "statement": {"en": "Use grouped background colors for grouped iOS and iPadOS table views.", "ja": "grouped iOSまたはiPadOS table viewではgrouped background colorを使う。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": []},
+      "conditions": ["Use systemGroupedBackground and its secondary and tertiary variants."],
+      "review_note": "Recovered the grouped-table branch of the documented background-set choice."
+    },
+    "HIG-FOUNDATIONS-COLOR-0035": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "56a5bd6c465d02b77049f297a362c6b853ab5202d6c233f53b84a7ec02e6e084", "section_path": ["Color", "Platform considerations", "iOS, iPadOS"]},
+      "statement": {"en": "Use system background colors for iOS and iPadOS views that aren't grouped table views.", "ja": "grouped table view以外のiOSまたはiPadOS viewではsystem background colorを使う。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": []},
+      "conditions": ["Use systemBackground and its secondary and tertiary variants."],
+      "review_note": "Recovered the otherwise branch of the documented background-set choice."
+    },
+    "HIG-FOUNDATIONS-COLOR-0036": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "09c80e54d3b46f2e21a39a764a900c0aad240ef9ec4e1be86533d0ac6557e2a0", "section_path": ["Color", "Platform considerations", "iOS, iPadOS"]},
+      "statement": {"en": "Use primary iOS and iPadOS background colors for the overall view.", "ja": "overall viewにはprimary iOSまたはiPadOS background colorを使う。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": []},
+      "conditions": ["Apply within either the system or grouped dynamic background-color set."],
+      "review_note": "Recovered the first structured hierarchy row."
+    },
+    "HIG-FOUNDATIONS-COLOR-0037": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "5aea2d28e8e5bc89a656b741ec9aca78205570a35f42db727e4c1431604eab2a", "section_path": ["Color", "Platform considerations", "iOS, iPadOS"]},
+      "statement": {"en": "Use secondary iOS and iPadOS background colors to group content within the overall view.", "ja": "overall view内でcontentをgroup化するためsecondary iOSまたはiPadOS background colorを使う。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": []},
+      "conditions": ["Apply within either the system or grouped dynamic background-color set."],
+      "review_note": "Recovered the second structured hierarchy row."
+    },
+    "HIG-FOUNDATIONS-COLOR-0038": {
+      "source": {"source_hash": "822518879a6c23614dfd1b1179fc9bfd0e227d62d0655ae69c1f866e93778d90", "source_sentence_hash": "154557c661737d53183c9d0f5f1d8a8610fb2f7581847c2ea6ff3f1118bb4b4d", "section_path": ["Color", "Platform considerations", "iOS, iPadOS"]},
+      "statement": {"en": "Use tertiary iOS and iPadOS background colors to group content within secondary elements.", "ja": "secondary element内でcontentをgroup化するためtertiary iOSまたはiPadOS background colorを使う。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": []},
+      "conditions": ["Apply within either the system or grouped dynamic background-color set."],
+      "review_note": "Recovered the third structured hierarchy row."
     },
     "HIG-FOUNDATIONS-COLOR-0017": {
       "source": {

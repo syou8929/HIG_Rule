@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T06:47:59Z",
+  "reviewed_at": "2026-07-23T06:57:46Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "977e54a2aa92b62ed6670f132305c8c5d72905ccc9b7bff977fbd154e2211db2",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 347,
+  "reviewed_rule_count": 353,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -2332,6 +2332,103 @@
         "Apply to every app name and image that refers to Apple brands."
       ],
       "review_note": "Recovered the explicit must-not prohibition separately from the general trademark-guidelines recommendation."
+    },
+    "HIG-FOUNDATIONS-COLOR-0013": {
+      "title": "Ensure content and control colors maintain sufficient contrast",
+      "statement": {
+        "en": "Ensure colors in the content layer and controls maintain sufficient contrast.",
+        "ja": "content layerとcontrolのcolor間で十分なcontrastを維持する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Avoid overlapping similar content and control colors when possible.",
+        "The separate resting-state rule applies to intermittently scrolling content."
+      ],
+      "review_note": "Replaced the vague generated Be aware statement with the paragraph's explicit Make sure contrast outcome."
+    },
+    "HIG-FOUNDATIONS-COLOR-0025": {
+      "title": "Ensure custom colors supply appearance and contrast variants",
+      "statement": {
+        "en": "When defining a custom color, ensure it supplies light and dark variants plus an increased-contrast option for each.",
+        "ja": "custom colorを定義する場合、lightとdark variantおよび各variantのincreased-contrast optionを用意する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Each increased-contrast option needs substantially greater visual differentiation."
+      ],
+      "review_note": "Recovered the conditional Make sure custom-color asset requirement."
+    },
+    "HIG-FOUNDATIONS-COLOR-0027": {
+      "title": "Provide noncolor alternatives whenever color conveys information",
+      "statement": {
+        "en": "Whenever color conveys information, ensure the same information is available through noncolor cues.",
+        "ja": "colorでinformationを伝える場合、同じinformationをnoncolor cueでも利用できるようにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Use cues such as text labels or glyph shapes so people with color-vision differences can understand objects and states."
+      ],
+      "review_note": "Recovered the explicit Be sure accessibility requirement as a separate MUST."
+    },
+    "HIG-FOUNDATIONS-COLOR-0028": {
+      "title": "Ensure colors send the intended message across supported cultures",
+      "statement": {
+        "en": "Ensure app colors send the intended message in every supported country and culture.",
+        "ja": "support対象のすべての国と文化でapp colorが意図したmessageを伝えるようにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Evaluate differing cultural meanings before finalizing the palette."
+      ],
+      "review_note": "Recovered the explicit Make sure outcome separately from the Consider research prompt."
+    },
+    "HIG-FOUNDATIONS-COLOR-0031": {
+      "title": "Ensure resting content remains legible beneath controls",
+      "statement": {
+        "en": "When colorful content can scroll beneath controls, ensure its default or resting state remains clearly legible.",
+        "ja": "colorful contentがcontrolの下をscrollする場合、defaultまたはresting stateで明確なlegibilityを維持する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Apply especially at the initial top position of scrollable content."
+      ],
+      "review_note": "Recovered the second explicit Make sure outcome from the content-layer paragraph."
+    },
+    "HIG-FOUNDATIONS-COLOR-0033": {
+      "title": "Use a wide-color display to create wide-color assets",
+      "statement": {
+        "en": "Use a wide-color display when designing wide-color images or selecting Display P3 colors.",
+        "ja": "wide-color imageのdesignまたはDisplay P3 colorの選択にはwide-color displayを使う。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The team is designing wide-color images or selecting Display P3 colors."
+      ],
+      "review_note": "Recovered the explicit need-to production prerequisite as a conditional MUST."
     },
     "HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029": {
       "title": "Display comfortable motion in a Full Space",
