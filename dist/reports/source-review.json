@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-07-23T12:35:53.120Z",
-  "reviewed_at": "2026-07-23T12:30:03Z",
+  "generated_at": "2026-07-23T12:46:16.932Z",
+  "reviewed_at": "2026-07-23T12:40:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
-  "reviewed_batch_count": 161,
-  "reviewed_rule_count": 2656,
+  "reviewed_batch_count": 163,
+  "reviewed_rule_count": 2695,
   "batches": [
     {
       "id": "priority-2-accessibility-context-2026-07-21",
@@ -5255,6 +5255,96 @@
         "modalities": []
       },
       "review_note": "Narrowed all retained rules to the source's explicit iOS and iPadOS applicability note, preserved the separate visionOS capability paragraph as reference context, recovered twenty-eight atomic rules, retained eight explicit requirements for frame rate, gesture validation, readable 3D text, artwork clear space, and badge placement, and retained six explicit glyph or badge prohibitions."
+    },
+    {
+      "id": "priority-6-game-center-access-context-2026-07-23",
+      "reviewed_at": "2026-07-23T12:40:00Z",
+      "review_method": "Rendered Apple HIG Game Center access-point and custom-link guidance, platform-specific overlay and dashboard behavior, artwork, terminology, examples, and supporting prose were reviewed; two repeated live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+          "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-GAME-CENTER-0001",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0002",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0003",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0004",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0005",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0035",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0036",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0037",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0038"
+      ],
+      "scope": {
+        "portability": "technology-specific",
+        "platforms": [
+          "ios",
+          "ipados",
+          "macos",
+          "tvos",
+          "visionos"
+        ],
+        "devices": [
+          "iphone",
+          "ipad",
+          "mac",
+          "apple-tv",
+          "apple-vision-pro"
+        ],
+        "components": [],
+        "modalities": []
+      },
+      "review_note": "Excluded watchOS because the source explicitly provides no invocable system Game Center UI there, recovered separate placement, overlap, and artwork-preservation guidance, and kept direct Avoid and Don't language below MUST_NOT."
+    },
+    {
+      "id": "priority-6-game-center-general-context-2026-07-23",
+      "reviewed_at": "2026-07-23T12:40:00Z",
+      "review_method": "Rendered Apple HIG Game Center sign-in, achievement, leaderboard, challenge, multiplayer, artwork-table, platform, example, resource, and change-log context was reviewed; two repeated live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+          "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-GAME-CENTER-0006",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0007",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0008",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0009",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0010",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0011",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0012",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0013",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0014",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0015",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0016",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0017",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0021",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0022",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0023",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0024",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0025",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0034",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0039",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0040",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0041",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0042",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0043",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0044",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0045",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0046",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0047",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0048",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0049",
+        "HIG-TECHNOLOGIES-GAME-CENTER-0050"
+      ],
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications."
     }
   ],
   "rules": [
@@ -52254,6 +52344,338 @@
       }
     },
     {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0001",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the recommended persistent-menu contexts; transient and active-play exclusions remain a separate AVOID rule.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Integrating the access point"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "5da58146724aa543129c67eb8ca58cb031043eae71ddcab4f59492a76ae8d804",
+        "evidence_paraphrase": "Display the Game Center access point in a game's persistent menu or settings screens."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0002",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained AVOID and recorded the placement choices and expansion state that create overlap risk.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Integrating the access point"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "2405f22da2904d42118640664a15314f2d9c51ff1e0ffbad1db8d6f656373d64",
+        "evidence_paraphrase": "Avoid placing important controls near the Game Center access point."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0003",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Excluded watchOS because the source explicitly provides no invocable system Game Center UI there, recovered separate placement, overlap, and artwork-preservation guidance, and kept direct Avoid and Don't language below MUST_NOT.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Integrating the access point"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "358008bad80043ab0910dcd6f02c530b00e634b26c5221436e8432374b18db5c",
+        "evidence_paraphrase": "Evaluate whether pausing your game while the Game Overlay or dashboard is present is appropriate for the current context."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0004",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the official artwork source while keeping preservation and modification guidance atomic.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Using custom UI"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "6c65749c12fa4b05a2b7ecc50801fbecb5c90bdf3f99ce0c0ada977c0edcf58d",
+        "evidence_paraphrase": "Use official Apple-provided Game Center artwork in custom links."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0005",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Reviewed the complete terminology table without persisting every incorrect-term example in the rule statement.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Using custom UI"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "92cc6145feec25b8293862321e5e501b291a153b327dc09bb9be068455e6625b",
+        "evidence_paraphrase": "Use Apple-specified Game Center terminology and system-provided localization in custom links."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0006",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the truncation limit and distinct capitalization conventions.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Achievements",
+          "Integrating achievements into your game"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "1c0a62926317f1072accc61ecd459435772dc3e29e1e6b498c33f4cafa4be307",
+        "evidence_paraphrase": "Keep achievement titles and descriptions concise enough to fit their two-line limits."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0007",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Achievements",
+          "Integrating achievements into your game"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "318c74e12481cf43f859fbf2becdc515c25a986bb58ebab8fa4af718d449f538",
+        "evidence_paraphrase": "Apply the documented Game Center guidance to give players a sense of progress."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0008",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained the quality recommendation and separated the no-reuse guidance into its own AVOID rule.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Achievements",
+          "Creating achievement images"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "e71c25d56dc8254ec0b0e8844a65bb8c9ecf3184c7963d036e22f9f0a04f3817",
+        "evidence_paraphrase": "Design rich, high-quality achievement images that feel rewarding and encourage return play."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0009",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Kept table values as source-linked platform context while the explicit centering outcome remains a separate MUST.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Achievements",
+          "Creating achievement images"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "6d1b1f64dfc3a9590ca223f4e000eae61c6633c6550466f6813d203f7167e4bd",
+        "evidence_paraphrase": "Create achievement artwork using the source-linked platform size, mask, format, color-space, and resolution specifications."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0010",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Leaderboards"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "6435087e1b5689977e12728388b9e7d98ffa0ed7ce50954eb23cfa94796413d0",
+        "evidence_paraphrase": "Apply the documented Game Center guidance to choose a leaderboard type."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0011",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recorded the duration and individual-completion constraints without treating the range as a hard platform maximum.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "e5d9905debce9f3721087b7cab5dbad4dd6acaa7ef2be4820b0ece3708cbde47",
+        "evidence_paraphrase": "Create short, skill-based challenges with clear individual accomplishment measures."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0012",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "4fd4a2c6cd7fa8629bbfe999c32f21020bbdeb981cfae114a4e603969cc06a97",
+        "evidence_paraphrase": "Exclude creating challenges that track overall progress or personal best scores from the applicable experience."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0013",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Kept the general entry outcome separate from the exact deep-link MUST and first-time onboarding rule.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "dfe4c666eee8ffcb880dbc5671e9b85c8b6872d0a91aa2feab3ea473442b7828",
+        "evidence_paraphrase": "Make it easy for players to enter a Game Center challenge and reach playable content."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0014",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained the quality outcome while placement and text localization remain separate atomic rules.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "7698bc7f8d02b45ba99c6a85d557de1e2274bd5d5ee073a2d40c6936a3ad73f2",
+        "evidence_paraphrase": "Create high-quality challenge artwork that encourages players to engage."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0015",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Multiplayer activities"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "03d86acce28b39586a5107bd34f13326009f5fa7a3591c99e27ecb7073a73ca8",
+        "evidence_paraphrase": "Choose or apply party codes to invite players to multiplayer activities in the documented context."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0016",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Multiplayer activities"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "8aff9843304ce386ca60a070d3f82ffe0408ad716ebc17e7f13a101e78252382",
+        "evidence_paraphrase": "Ensure the experience accommodates multiplayer activities through in-game UI."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0017",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Multiplayer activities"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "67fd0c6770b33b741c398109feaa6a7adebafb89b63ffdc376250b6503ef86b0",
+        "evidence_paraphrase": "Make engaging activity artwork available when applicable."
+      }
+    },
+    {
       "id": "HIG-TECHNOLOGIES-GAME-CENTER-0018",
       "confidence": "high",
       "review_required": false,
@@ -52267,7 +52689,7 @@
           "Platform considerations",
           "tvOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "8cd79fdbd186377868a4991be27d827a56e86de3e45375b28776f50b50a17994",
         "evidence_paraphrase": "Consider an optional image at the top of the tvOS Game Center dashboard to highlight the game's aesthetic."
@@ -52287,10 +52709,106 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "de93041d13b75c3dd8ede834b9a65a634c7db94c1081182c173e049551a2fb7c",
         "evidence_paraphrase": "Avoid trying to invoke system-provided Game Center UI on watchOS."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0021",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Multiplayer activities"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "46710184fba26e1066e0d60e3d6c654d628dd0023b2454274339e093aeac0e55",
+        "evidence_paraphrase": "Apply the documented Game Center guidance to allow players to join gameplay late, leave early, and return later."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0022",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Multiplayer activities"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "ab353bfd14aee4c0ce63928a72be6ce3e93779e81bb4d7c5e19c09d639c970e7",
+        "evidence_paraphrase": "Make a way for players to view the current party code in your game available when applicable."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0023",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Multiplayer activities"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "49e20254d8410ac9a8f24a05b72673caaf0144123ddbeba23cb38b8064e92c52",
+        "evidence_paraphrase": "Apply the documented Game Center guidance to allow players to enter a party code manually."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0024",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Replaced a generic generated statement with the irreversible ordering point from the source.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Achievements",
+          "Integrating achievements into your game"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "0bde71682c94a52cd8161f7e914309c5226b7c403e3f932a69a7c360965324db",
+        "evidence_paraphrase": "Choose the intended achievement display order before uploading achievement files."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0025",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Corrected the generated fragment and retained the source's organization purpose.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Leaderboards"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "841ea6e131f8c52ac9126142f26049f83c02f2f064fa5eb8d87b8777042c8eb5",
+        "evidence_paraphrase": "Use leaderboard sets to help players find the right board when a game has multiple leaderboards."
       }
     },
     {
@@ -52307,7 +52825,7 @@
           "Platform considerations",
           "tvOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "e3bc07e562d236008c937bf9dfd2242996b78564968121463a45d423cdac5380",
         "evidence_paraphrase": "Use a simple, easily recognizable tvOS Game Center dashboard image that looks good at a distance."
@@ -52327,7 +52845,7 @@
           "Platform considerations",
           "tvOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "e3bc07e562d236008c937bf9dfd2242996b78564968121463a45d423cdac5380",
         "evidence_paraphrase": "Consider the game's logo or word mark for the tvOS Game Center dashboard image."
@@ -52347,7 +52865,7 @@
           "Platform considerations",
           "tvOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "e3bc07e562d236008c937bf9dfd2242996b78564968121463a45d423cdac5380",
         "evidence_paraphrase": "Avoid using the app icon as the tvOS Game Center dashboard image."
@@ -52367,7 +52885,7 @@
           "Platform considerations",
           "tvOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "f55383b7032acb4b5514e232001ce46430f1d29bf4597ef80c6c3ba56541a5f3",
         "evidence_paraphrase": "Use a 600×180-point tvOS dashboard image, corresponding to 1200×360 pixels at @2x."
@@ -52387,7 +52905,7 @@
           "Platform considerations",
           "tvOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "f55383b7032acb4b5514e232001ce46430f1d29bf4597ef80c6c3ba56541a5f3",
         "evidence_paraphrase": "Use PNG, TIF, or JPG for the tvOS Game Center dashboard image."
@@ -52407,7 +52925,7 @@
           "Platform considerations",
           "tvOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "f55383b7032acb4b5514e232001ce46430f1d29bf4597ef80c6c3ba56541a5f3",
         "evidence_paraphrase": "Use the sRGB or P3 color space for the tvOS Game Center dashboard image."
@@ -52427,7 +52945,7 @@
           "Platform considerations",
           "tvOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "f55383b7032acb4b5514e232001ce46430f1d29bf4597ef80c6c3ba56541a5f3",
         "evidence_paraphrase": "Use a minimum resolution of 72 DPI for the tvOS Game Center dashboard image."
@@ -52447,10 +52965,340 @@
           "Platform considerations",
           "watchOS"
         ],
-        "retrieved_at": "2026-07-21T21:26:43Z",
+        "retrieved_at": "2026-07-23T12:40:00Z",
         "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
         "source_sentence_hash": "c198f0ee9d54322809d29e7b4b44573b0adb335ec9bd0aad3aedb615b58e0064",
         "evidence_paraphrase": "Present Game Center content for a watchOS game on a connected iPhone."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0034",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the launch-time authentication sequence and corrected generated capitalization and grammar.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "bcb3a220623c7f0caaed94818abb4ad24ea0732d718fe8a64fbd1523d1bdd828",
+        "evidence_paraphrase": "When the game launches, determine whether the player is signed in to Game Center."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0035",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Separated the explicit placement exclusions from the positive menu-screen recommendation.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Integrating the access point"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "9576597135729dfc9cbe1654587bff8508bcf5eba745dea4c9bf80168449c33b",
+        "evidence_paraphrase": "Avoid displaying the Game Center access point during active play or transient introductory flows."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0036",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the two-state overlap check and its layout response.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Integrating the access point"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "da905d413d747d2d45545f8ea258ba7554b8f30834195f141b0e77b19d8864e2",
+        "evidence_paraphrase": "Verify that both collapsed and expanded access-point states don't overlap important UI or controls."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0037",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the artwork-preservation recommendation separately from the modification AVOID.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Using custom UI"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "f5cc6bae51231fd72d523f5e68259c561d2151fabe91def806ae2102be520989",
+        "evidence_paraphrase": "Preserve the appearance of Apple-provided Game Center artwork in custom links."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0038",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained AVOID for the direct Don't clause rather than promoting it to MUST_NOT.",
+      "batch_id": "priority-6-game-center-access-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Accessing Game Center",
+          "Using custom UI"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "f5cc6bae51231fd72d523f5e68259c561d2151fabe91def806ae2102be520989",
+        "evidence_paraphrase": "Avoid adjusting the dimensions or visual effects of Apple-provided Game Center artwork."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0039",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the complete achievement-state mapping without persisting surrounding descriptive prose.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Achievements",
+          "Integrating achievements into your game"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "1ae5409890cb46b82ce384b5c2adb41588ea6fa45ee6542e91ea25c3068868b0",
+        "evidence_paraphrase": "Map game achievements to Game Center's locked, in-progress, hidden, and completed states."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0040",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the direct Avoid as a distinct artwork-uniqueness rule.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Achievements",
+          "Creating achievement images"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "ceae0fe9620562c8619e13ed7162c87d643dede03d78c13a2ca63f73ffe044c9",
+        "evidence_paraphrase": "Avoid reusing the same image for more than one achievement."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0041",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Achievements",
+          "Creating achievement images"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "dab85378b4ad07f0e05495c41bb63c61dea295e3b3fc1a350a612c02589eec3c",
+        "evidence_paraphrase": "Keep important achievement-image content centered within the system's circular mask."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0042",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered image uniqueness and gameplay relevance from the source's Aim directive.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Leaderboards"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "ed474333f7626533703b5da04050a71d161d1bb98239cca5ab4f83bd47034c85",
+        "evidence_paraphrase": "Create a unique image for each leaderboard that reflects its ranked gameplay."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0043",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered and narrowed the static-image branch of the platform-specific artwork guidance.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Leaderboards"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "0520742a7dc3934adb1504d17eb858ccaf2d10dc221c3cb40910b8063d353f2c",
+        "evidence_paraphrase": "Use a single leaderboard image in iOS, iPadOS, and macOS games."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0044",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered and narrowed the animated-focus branch of the platform-specific artwork guidance.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Leaderboards"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "0520742a7dc3934adb1504d17eb858ccaf2d10dc221c3cb40910b8063d353f2c",
+        "evidence_paraphrase": "Provide a focusable image set for tvOS leaderboard artwork."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0045",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Narrowed the explicit cropping requirement to the four platform contexts named by the source.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Leaderboards"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "8a21554aeaa5eb8a7ee528b42a67ecd19d13133029efa2bfb50b9d685e1f49ae",
+        "evidence_paraphrase": "Ensure primary leaderboard artwork content remains comfortably visible after system cropping and tvOS focus effects."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0046",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the source-provided fair-scoring alternative to the existing AVOID rule.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "c5c3a2926040fe42dabff0ab6f3b6affb8eb992448a6ad5b0e1bb52f1693af49",
+        "evidence_paraphrase": "Track each player's most recent score after every challenge attempt."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0047",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered sign-in, achievement-state, unique-artwork, platform-specific leaderboard, challenge scoring, deep-link, onboarding, layout, and localization rules; deprecated one leaderboard goal example that had been misclassified as guidance; retained three explicit Be sure, Make sure, or Always outcomes as MUST and left numeric artwork tables as source-linked platform reference specifications.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "f38d8b55526ed01de34b70d0071fe6ed4da75cb121419ed952b06c7a9c7bc2cb",
+        "evidence_paraphrase": "Always deep-link players to the exact mode or level where a Game Center challenge begins."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0048",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the first-time readiness path separately from the exact deep-link MUST.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "f38d8b55526ed01de34b70d0071fe6ed4da75cb121419ed952b06c7a9c7bc2cb",
+        "evidence_paraphrase": "Help first-time players complete required onboarding before a challenge begins."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0049",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the title-and-description overlay constraint as a direct AVOID.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "1ad49904d25f4d7e77b6011a14364be8c0a38839b5a546fd5dcf39a26fcff50a",
+        "evidence_paraphrase": "Avoid placing primary challenge artwork where the system's title or description can cover it."
+      }
+    },
+    {
+      "id": "HIG-TECHNOLOGIES-GAME-CENTER-0050",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the conditional artwork-localization action from the challenge-image paragraph.",
+      "batch_id": "priority-6-game-center-general-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/game-center",
+        "page_title": "Game Center",
+        "section_path": [
+          "Game Center",
+          "Challenges"
+        ],
+        "retrieved_at": "2026-07-23T12:40:00Z",
+        "source_hash": "5d57df8334a9d08f1d62c4b42e907e5b093955b0c8ef7e5fcf8599af8eb140ab",
+        "source_sentence_hash": "1ad49904d25f4d7e77b6011a14364be8c0a38839b5a546fd5dcf39a26fcff50a",
+        "evidence_paraphrase": "Provide localized versions of any text included in challenge images."
       }
     },
     {

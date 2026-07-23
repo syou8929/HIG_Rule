@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3158
+- Active atomic rules: 3174
 - Pages without rules: 16
-- Low-confidence rules: 463
-- Rules requiring human review: 463
-- Reference notes: 912
+- Low-confidence rules: 440
+- Rules requiring human review: 440
+- Reference notes: 915
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 245
 - patterns: 477
-- technologies: 847
+- technologies: 863
 
 ## Normative levels
 
-- AVOID: 435
+- AVOID: 439
 - MAY: 370
-- MUST: 384
+- MUST: 387
 - MUST_NOT: 46
-- SHOULD: 1923
+- SHOULD: 1932
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2187
-- ipados: 2156
-- macos: 1763
-- tvos: 1399
-- visionos: 1776
-- watchos: 1481
+- ios: 2202
+- ipados: 2171
+- macos: 1778
+- tvos: 1414
+- visionos: 1789
+- watchos: 1485
 
 ## Rules by testability
 
 - hybrid: 93
-- manual: 3065
+- manual: 3081
 
 ## Blocked pages
 
@@ -248,29 +248,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-TECHNOLOGIES-GAME-CENTER-0001
-- HIG-TECHNOLOGIES-GAME-CENTER-0002
-- HIG-TECHNOLOGIES-GAME-CENTER-0003
-- HIG-TECHNOLOGIES-GAME-CENTER-0004
-- HIG-TECHNOLOGIES-GAME-CENTER-0005
-- HIG-TECHNOLOGIES-GAME-CENTER-0006
-- HIG-TECHNOLOGIES-GAME-CENTER-0007
-- HIG-TECHNOLOGIES-GAME-CENTER-0008
-- HIG-TECHNOLOGIES-GAME-CENTER-0009
-- HIG-TECHNOLOGIES-GAME-CENTER-0010
-- HIG-TECHNOLOGIES-GAME-CENTER-0011
-- HIG-TECHNOLOGIES-GAME-CENTER-0012
-- HIG-TECHNOLOGIES-GAME-CENTER-0013
-- HIG-TECHNOLOGIES-GAME-CENTER-0014
-- HIG-TECHNOLOGIES-GAME-CENTER-0015
-- HIG-TECHNOLOGIES-GAME-CENTER-0016
-- HIG-TECHNOLOGIES-GAME-CENTER-0017
-- HIG-TECHNOLOGIES-GAME-CENTER-0020
-- HIG-TECHNOLOGIES-GAME-CENTER-0021
-- HIG-TECHNOLOGIES-GAME-CENTER-0022
-- HIG-TECHNOLOGIES-GAME-CENTER-0023
-- HIG-TECHNOLOGIES-GAME-CENTER-0024
-- HIG-TECHNOLOGIES-GAME-CENTER-0025
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0001
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0002
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0004
@@ -714,29 +691,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-TECHNOLOGIES-GAME-CENTER-0001
-- HIG-TECHNOLOGIES-GAME-CENTER-0002
-- HIG-TECHNOLOGIES-GAME-CENTER-0003
-- HIG-TECHNOLOGIES-GAME-CENTER-0004
-- HIG-TECHNOLOGIES-GAME-CENTER-0005
-- HIG-TECHNOLOGIES-GAME-CENTER-0006
-- HIG-TECHNOLOGIES-GAME-CENTER-0007
-- HIG-TECHNOLOGIES-GAME-CENTER-0008
-- HIG-TECHNOLOGIES-GAME-CENTER-0009
-- HIG-TECHNOLOGIES-GAME-CENTER-0010
-- HIG-TECHNOLOGIES-GAME-CENTER-0011
-- HIG-TECHNOLOGIES-GAME-CENTER-0012
-- HIG-TECHNOLOGIES-GAME-CENTER-0013
-- HIG-TECHNOLOGIES-GAME-CENTER-0014
-- HIG-TECHNOLOGIES-GAME-CENTER-0015
-- HIG-TECHNOLOGIES-GAME-CENTER-0016
-- HIG-TECHNOLOGIES-GAME-CENTER-0017
-- HIG-TECHNOLOGIES-GAME-CENTER-0020
-- HIG-TECHNOLOGIES-GAME-CENTER-0021
-- HIG-TECHNOLOGIES-GAME-CENTER-0022
-- HIG-TECHNOLOGIES-GAME-CENTER-0023
-- HIG-TECHNOLOGIES-GAME-CENTER-0024
-- HIG-TECHNOLOGIES-GAME-CENTER-0025
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0001
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0002
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0004
@@ -1265,12 +1219,15 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center — Rendered access, achievement, leaderboard, challenge, multiplayer, platform, example, artwork-table, resource, and change-log context was reviewed against two matching live source renders.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Accessing Game Center — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Achievements — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Achievements > Creating achievement images — Structured numeric table detected; preserve its platform and context conditions during human source review.
+- https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Achievements > Creating achievement images — Artwork tables were reviewed with image-label platform context; numeric cells remain source-linked reference specifications rather than unconditional cross-platform rules.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Challenges — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Leaderboards — Structured numeric table detected; preserve its platform and context conditions during human source review.
+- https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Leaderboards — Leaderboard goal lists are examples rather than rules; the incorrectly extracted rhythm-game example is retained only as a deprecated stable ID.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Multiplayer activities — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Resources — Section recorded for human review; no short atomic guidance lead was detected.
