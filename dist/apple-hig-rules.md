@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:49:39.602Z. 3460 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:59:55.633Z. 3472 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1972,16 +1972,28 @@ Generated 2026-07-23T18:49:39.602Z. 3460 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-SHEETS-0025 · AVOID · high** — Avoid a watchOS sheet label that implies hierarchical navigation. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 ### sidebars
 
-- **HIG-COMPONENTS-SIDEBARS-0001 · MAY · low** — Evaluate whether using familiar symbols to represent items in the sidebar is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
-- **HIG-COMPONENTS-SIDEBARS-0002 · MAY · low** — Evaluate whether letting people hide the sidebar is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
-- **HIG-COMPONENTS-SIDEBARS-0003 · MUST · medium** — Verify that any sidebar icon colors you choose serve a clear purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0001 · MAY · high** — Consider familiar symbols for sidebar items. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0002 · MAY · high** — Consider letting people hide the sidebar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0003 · MUST · high** — Ensure every chosen sidebar icon color serves a clear purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0004 · MAY · high** — Consider using a tab bar first in iOS or iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0005 · MAY · high** — Consider automatically hiding or revealing a macOS sidebar as its window resizes. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0006 · AVOID · high** — Avoid placing critical information or actions at the bottom of a macOS sidebar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0007 · MAY · high** — Consider a sidebar within a visionOS tab for deep hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
-- **HIG-COMPONENTS-SIDEBARS-0008 · SHOULD · low** — When you need to include two levels of hierarchy in a sidebar, use succinct, descriptive labels to title each. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0008 · SHOULD · high** — When a sidebar has two hierarchy levels, give each group a succinct, descriptive label. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0009 · AVOID · high** — Avoid using sidebars on watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - **HIG-COMPONENTS-SIDEBARS-0010 · MUST · high** — Ensure sidebar selections don't change the currently open visionOS tab. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0011 · SHOULD · high** — On iOS, iPadOS, or macOS, extend visually rich content beneath a floating sidebar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0012 · SHOULD · high** — When possible, let people customize which sidebar areas appear and their order. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0013 · SHOULD · high** — When sidebar content is extensive, group its hierarchy with disclosure controls. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0014 · MAY · high** — When a standard symbol doesn't fit a sidebar item, consider a custom symbol instead of a bitmap icon. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0015 · SHOULD · high** — When possible, support familiar platform interactions for hiding and showing the sidebar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0016 · AVOID · high** — Avoid hiding a sidebar by default. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0017 · SHOULD · high** — Generally, show no more than two hierarchy levels in a sidebar. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0018 · MAY · high** — For hierarchy deeper than two levels, consider a split view with an intermediate content list. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0019 · SHOULD · high** — Omit unnecessary words from sidebar group labels. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0020 · MUST · high** — Ensure macOS sidebar icons display the system accent color people choose. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0021 · SHOULD · high** — To display only a sidebar in iOS or iPadOS, use NavigationSplitView or UISplitViewController. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- **HIG-COMPONENTS-SIDEBARS-0022 · SHOULD · high** — When not using SwiftUI for an iOS or iPadOS sidebar, apply the collection-view sidebar appearance if needed. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 ### sliders
 
 - **HIG-COMPONENTS-SLIDERS-0001 · SHOULD · low** — Choose or apply familiar slider directions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))

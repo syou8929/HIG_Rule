@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T22:20:00Z",
+  "reviewed_at": "2026-07-23T22:40:00Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 575,
+  "reviewed_rule_count": 576,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -465,6 +465,15 @@
       "conditions": ["A custom keyboard shortcut uses more than one modifier key."],
       "review_note": "Recovered MUST from the explicit conditional Always sentence and preserved the complete fixed ordering."
     },
+    "HIG-COMPONENTS-SIDEBARS-0003": {
+      "title": "Use sidebar icon colors only for a clear purpose",
+      "statement": {"en": "Ensure every chosen sidebar icon color serves a clear purpose.", "ja": "選択するsidebar iconの色に明確な目的を持たせる。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Sidebar icons use the app accent color by default."],
+      "exceptions": ["A fixed color may be used sparingly to clarify meaning or draw attention."],
+      "review_note": "Retained MUST from the explicit Make sure directive and recorded the narrow fixed-color exception."
+    },
     "HIG-COMPONENTS-SIDEBARS-0010": {
       "title": "Keep visionOS sidebar selections within the current tab",
       "statement": {"en": "Ensure sidebar selections don't change the currently open visionOS tab.", "ja": "sidebar selectionで現在開いているvisionOS tabを変更しない。"},
@@ -472,6 +481,15 @@
       "polarity": "require", "severity": "error",
       "conditions": ["A sidebar provides secondary navigation within a tab."],
       "review_note": "Recovered the conditional MUST from the explicit be-sure-to-prevent directive."
+    },
+    "HIG-COMPONENTS-SIDEBARS-0020": {
+      "title": "Honor the chosen macOS accent color in sidebar icons",
+      "statement": {"en": "Ensure macOS sidebar icons display the system accent color people choose.", "ja": "macOS sidebar iconに利用者が選択したsystem accent colorを表示する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["People change the system accent color in macOS."],
+      "exceptions": ["A fixed color may be used sparingly to clarify meaning or draw attention."],
+      "review_note": "Recovered MUST from the distinct macOS Make sure clause and preserved its narrow fixed-color exception."
     },
     "HIG-COMPONENTS-GAUGES-0006": {
       "title": "Never partially fill a discrete capacity-indicator segment",

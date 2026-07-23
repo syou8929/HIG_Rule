@@ -1,7 +1,7 @@
 # General source-context review
 
-- Reviewed rules: 3273
-- Reviewed batches: 187
+- Reviewed rules: 3289
+- Reviewed batches: 188
 - Official source only: yes
 - Reviewed at: 2026-07-23T22:20:00Z
 
@@ -727,12 +727,28 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SHEETS-0023 · high — Recovered the embedded Consider guidance and narrowed its scope to iPhone. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0024 · high — Recovered the conditional label-replacement preference. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0025 · high — Recovered the misleading-label avoidance and its dismissal-discoverability risk. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SIDEBARS-0001 · high — Preserved the source's optional Consider strength and its familiar-symbol purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0002 · high — Preserved the optional capability choice separately from the familiar-interaction and default-visibility rules. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0003 · high — Retained MUST from the explicit Make sure directive and recorded the narrow fixed-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0004 · high — Recorded the content-space rationale and convertible-sidebar fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0005 · high — Recorded the window-size condition and content-space purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0006 · high — Recorded the window-position visibility risk. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0007 · high — Preserved the deep-hierarchy condition and the sidebar's secondary-navigation role. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0008 · high — Recovered the complete group-label object omitted by the evidence-length cap. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0009 · high — Recorded the descriptive watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0010 · high — Recovered the conditional MUST from the explicit be-sure-to-prevent directive. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0011 · high — Narrowed the rule to the three platforms explicitly named in the supporting source context. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0012 · high — Recovered both customization dimensions from the supporting sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0013 · high — Preserved the large-content condition and vertical-space rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0014 · high — Preserved the conditional Consider strength and the custom-symbol preference. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0015 · high — Separated the interaction convention from the optional choice to offer sidebar hiding. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0016 · high — Kept the explicit Avoid directive below MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0017 · high — Preserved the source's In general qualification rather than promoting the limit to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0018 · high — Preserved the source's conditional Consider strength and complete split-view structure. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0019 · high — Kept the writing directive at SHOULD because it is not an explicit prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0020 · high — Recovered the distinct macOS Make sure requirement and its narrow fixed-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0021 · high — Recovered the developer note's two supported implementation choices. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0022 · high — Preserved the If necessary qualification and concrete UIKit appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SLIDERS-0003 · high — Repaired the ungrammatical generated statement and recorded the volume-view replacement. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0004 · high — Preserved the optional strength and recorded the real-time feedback intent. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0005 · high — Corrected the possessive and recorded the linear-versus-circular mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))

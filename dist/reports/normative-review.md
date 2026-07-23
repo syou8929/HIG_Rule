@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 575
-- Retained MUST: 494
+- Reviewed rules: 576
+- Retained MUST: 495
 - Retained MUST_NOT: 81
-- Normative level changes: 196
+- Normative level changes: 198
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T22:20:00Z
+- Reviewed at: 2026-07-23T22:40:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -94,7 +94,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-SCROLL-VIEWS-0022 — Retained MUST after confirming the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SHEETS-0007 — Raised the conditional macOS window-access outcome to MUST from the explicit Make sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0015 — Recovered the conditional Always pair requirement for Done with Cancel or Back. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
+- HIG-COMPONENTS-SIDEBARS-0003 — Retained MUST from the explicit Make sure directive and recorded the narrow fixed-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0010 — Recovered the conditional MUST from the explicit be-sure-to-prevent directive. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0020 — Recovered MUST from the distinct macOS Make sure clause and preserved its narrow fixed-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SPLIT-VIEWS-0012 — Recovered and retained the explicit Ensure directive with its resizable-width condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-SPLIT-VIEWS-0014 — Recovered and retained the explicit Make sure directive with its resizable-pane condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-TAB-BARS-0002 — Retained the explicit Make sure directive and its sole modal exception. ([source](https://developer.apple.com/design/human-interface-guidelines/tab-bars))
@@ -531,8 +533,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-SCROLL-VIEWS-0022 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Be sure directive and its small-panel condition. ([source](https://developer.apple.com/design/human-interface-guidelines/scroll-views))
 - HIG-COMPONENTS-SHEETS-0007 · MUST · retained_with_atomicity_or_scope_correction — Raised the conditional macOS window-access outcome to MUST from the explicit Make sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
 - HIG-COMPONENTS-SHEETS-0015 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Always pair requirement for Done with Cancel or Back. ([source](https://developer.apple.com/design/human-interface-guidelines/sheets))
-- HIG-COMPONENTS-SIDEBARS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Make sure directive and recorded the narrow fixed-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0010 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional MUST from the explicit be-sure-to-prevent directive. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SIDEBARS-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the distinct macOS Make sure clause and preserved its narrow fixed-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SNIPPETS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))
 - HIG-COMPONENTS-SPLIT-VIEWS-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Ensure directive with its resizable-width condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-SPLIT-VIEWS-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive with its resizable-pane condition. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
