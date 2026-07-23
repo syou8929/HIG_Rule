@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3035
+- Active atomic rules: 3048
 - Pages without rules: 16
-- Low-confidence rules: 574
-- Rules requiring human review: 574
+- Low-confidence rules: 567
+- Rules requiring human review: 567
 - Reference notes: 903
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 463
 - getting-started: 100
 - inputs: 245
-- patterns: 413
+- patterns: 426
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 425
-- MAY: 359
-- MUST: 352
+- AVOID: 426
+- MAY: 360
+- MUST: 353
 - MUST_NOT: 38
-- SHOULD: 1861
+- SHOULD: 1871
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2069
-- ipados: 2045
-- macos: 1689
-- tvos: 1339
-- visionos: 1738
-- watchos: 1430
+- ios: 2082
+- ipados: 2058
+- macos: 1702
+- tvos: 1352
+- visionos: 1751
+- watchos: 1443
 
 ## Rules by testability
 
 - hybrid: 90
-- manual: 2945
+- manual: 2958
 
 ## Blocked pages
 
@@ -238,13 +238,6 @@ None.
 - HIG-PATTERNS-MODALITY-0008
 - HIG-PATTERNS-MODALITY-0009
 - HIG-PATTERNS-MODALITY-0010
-- HIG-PATTERNS-ONBOARDING-0001
-- HIG-PATTERNS-ONBOARDING-0002
-- HIG-PATTERNS-ONBOARDING-0003
-- HIG-PATTERNS-ONBOARDING-0004
-- HIG-PATTERNS-ONBOARDING-0005
-- HIG-PATTERNS-ONBOARDING-0006
-- HIG-PATTERNS-ONBOARDING-0007
 - HIG-PATTERNS-PLAYING-AUDIO-0001
 - HIG-PATTERNS-PLAYING-AUDIO-0002
 - HIG-PATTERNS-PLAYING-AUDIO-0003
@@ -815,13 +808,6 @@ None.
 - HIG-PATTERNS-MODALITY-0008
 - HIG-PATTERNS-MODALITY-0009
 - HIG-PATTERNS-MODALITY-0010
-- HIG-PATTERNS-ONBOARDING-0001
-- HIG-PATTERNS-ONBOARDING-0002
-- HIG-PATTERNS-ONBOARDING-0003
-- HIG-PATTERNS-ONBOARDING-0004
-- HIG-PATTERNS-ONBOARDING-0005
-- HIG-PATTERNS-ONBOARDING-0006
-- HIG-PATTERNS-ONBOARDING-0007
 - HIG-PATTERNS-PLAYING-AUDIO-0001
 - HIG-PATTERNS-PLAYING-AUDIO-0002
 - HIG-PATTERNS-PLAYING-AUDIO-0003
@@ -1754,11 +1740,11 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/offering-help · Offering help > Resources — Reviewed: resource navigation contains no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/offering-help · Offering help > Resources > Related — Reviewed: related-topic links contain no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/offering-help · Offering help > Resources > Videos — Reviewed: video navigation contains no additional atomic guidance.
-- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Change log — Reviewed: historical change-log entries contain no current atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Platform considerations — Reviewed: no additional platform-specific guidance appears for the six supported Apple platforms.
+- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources — Reviewed: resource navigation contains no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources > Related — Reviewed: related-topic links contain no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources > Videos — Reviewed: video navigation contains no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources — Section recorded for human review; no short atomic guidance lead was detected.

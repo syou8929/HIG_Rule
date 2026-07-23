@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2418
-- Reviewed batches: 152
+- Reviewed rules: 2438
+- Reviewed batches: 153
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:37:40Z
+- Reviewed at: 2026-07-23T09:44:43Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1897,6 +1897,26 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-OFFERING-HELP-0034 · high — Recovered the cadence recommendation without converting its 24-hour example into a threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0035 · high — Split the preference from the optional image-inclusion decision so their strengths remain distinct. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0036 · high — Recovered the conditional image-repetition guidance at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-ONBOARDING-0001 · high — Retained the explicit consider-level alternative and separated interface placement into its own rule. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0002 · high — Retained SHOULD and recorded the source's system-and-device exclusion. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0003 · high — Retained AVOID because the source uses Don't without an explicit mandatory prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0004 · high — Retained AVOID and represented the required-content exception separately. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0005 · high — Retained the experience-before-request preference at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0006 · high — Repaired the conditional lead and retained its explicit consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0007 · high — Repaired the truncated candidate and retained the source's essential-access condition and MAY strength. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0008 · high — Recovered the interactivity lead and retained its as-much-as-possible qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0009 · high — Recovered the conditional prerequisite-flow guidance and removed the truncated ending. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0010 · high — Recovered the conditional splash-screen guidance without making splash screens a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0011 · high — Recovered the direct deferral recommendation and tied it to immediate first use. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0012 · high — Recovered the overview's conditional design outcome at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0013 · high — Recovered the launch-separation architecture at SHOULD because the source doesn't use an explicit mandatory marker. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0014 · high — Recovered the contextual placement recommendation as a separate check. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0015 · high — Recovered the direct Don't guidance at AVOID instead of promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0016 · high — Recovered MUST from the explicit Make sure discoverability requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0017 · high — Recovered the mitigation and lowered the generated SHOULD to the source's explicit consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0018 · high — Recovered the conditional exception without weakening the general licensing AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0019 · high — Recovered the default-settings recommendation as a separate first-use check. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0020 · high — Recovered the source's otherwise branch as a just-in-time SHOULD rule. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 - HIG-PATTERNS-PLAYING-AUDIO-0007 · high — Narrowed the system-service recommendation to iOS and iPadOS short feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0008 · high — Made the generic preference meaningful and retained recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0009 · high — Recorded the custom-element condition and the feedback and spatial purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))

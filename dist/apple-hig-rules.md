@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T09:41:04.115Z. 3035 active rules; 4 deprecated rules.
+Generated 2026-07-23T09:49:35.676Z. 3048 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -907,13 +907,26 @@ Generated 2026-07-23T09:41:04.115Z. 3035 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-OFFERING-HELP-0036 · AVOID · high** — When a tip connects directly to a feature image, avoid repeating that image inside the tip. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 ### onboarding
 
-- **HIG-PATTERNS-ONBOARDING-0001 · MAY · low** — Evaluate whether providing a collection of context-specific tips instead of a single onboarding flow is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
-- **HIG-PATTERNS-ONBOARDING-0002 · SHOULD · low** — Maintain onboarding content focused on the experience you provide. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
-- **HIG-PATTERNS-ONBOARDING-0003 · AVOID · low** — Exclude let large downloads hinder onboarding from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
-- **HIG-PATTERNS-ONBOARDING-0004 · AVOID · low** — Exclude displaying licensing details within your onboarding flow from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
-- **HIG-PATTERNS-ONBOARDING-0005 · SHOULD · low** — Favor letting people experience your app or game before prompting them for ratings or purchases when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
-- **HIG-PATTERNS-ONBOARDING-0006 · MAY · low** — When it makes sense to offer a separate tutorial, consider making it optional. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
-- **HIG-PATTERNS-ONBOARDING-0007 · MAY · low** — When your app or game needs access to private data or resources before it can function, consider integrating the. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0001 · MAY · high** — Consider using context-specific tips instead of a single onboarding flow. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0002 · SHOULD · high** — Keep onboarding focused on the app or game experience. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0003 · AVOID · high** — Avoid making people wait for large downloads before they can begin interacting. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0004 · AVOID · high** — Avoid displaying licensing details, agreements, or disclaimers in onboarding. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0005 · SHOULD · high** — Prefer letting people experience the app or game before prompting for ratings or purchases. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0006 · MAY · high** — When a separate tutorial makes sense, consider making it optional. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0007 · MAY · high** — Consider integrating a permission request into onboarding when the product can't function without access. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0008 · SHOULD · high** — Whenever possible, use interactive onboarding instead of only instructional material. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0009 · SHOULD · high** — When prerequisite onboarding is needed, keep it brief, enjoyable, and easy to remember. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0010 · SHOULD · high** — If a splash screen is necessary, keep it brief and succinct. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0011 · SHOULD · high** — Defer nonessential setup flows and customization steps until after first use. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0012 · SHOULD · high** — When onboarding is necessary, keep the flow fast, engaging, and optional. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0013 · SHOULD · high** — Present onboarding after launch completes, separate from the launch experience. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0014 · SHOULD · high** — Display instructions near the interface area they describe. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0015 · AVOID · high** — If a person skips a tutorial at first launch, avoid presenting it again on later launches. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0016 · MUST · high** — Ensure a skipped tutorial remains easy to find for later viewing. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0017 · MAY · high** — Consider bundling enough initial media and content to avoid blocking first interaction on downloads. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0018 · SHOULD · high** — If licensing details must appear in onboarding, integrate them in a balanced, nondisruptive way. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0019 · SHOULD · high** — Provide reasonable defaults so most people can begin without additional configuration. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- **HIG-PATTERNS-ONBOARDING-0020 · SHOULD · high** — For nonessential access, present the permission request when people first use the related feature. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 ### playing-audio
 
 - **HIG-PATTERNS-PLAYING-AUDIO-0001 · SHOULD · low** — Choose or apply the system-provided volume view to let people make audio adjustments in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))

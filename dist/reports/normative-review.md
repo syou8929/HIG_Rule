@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 390
-- Retained MUST: 352
+- Reviewed rules: 391
+- Retained MUST: 353
 - Retained MUST_NOT: 38
 - Normative level changes: 143
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:37:40Z
+- Reviewed at: 2026-07-23T09:44:43Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -607,6 +607,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-OFFERING-HELP-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0027 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0028 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-ONBOARDING-0016 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
 - HIG-PATTERNS-PLAYING-AUDIO-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered the universal accessibility MUST from the explicit Always directive and separated it from the adjacent avoid-only-sound guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-VIDEO-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the explicit always directive and its aspect-ratio, padding, and Picture in Picture context. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0006 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the explicit ensure directive and the documented TV app transition behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
