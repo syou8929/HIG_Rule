@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 468
-- Retained MUST: 409
-- Retained MUST_NOT: 59
-- Normative level changes: 153
+- Reviewed rules: 481
+- Retained MUST: 420
+- Retained MUST_NOT: 61
+- Normative level changes: 155
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T16:31:00Z
+- Reviewed at: 2026-07-23T17:08:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -339,7 +339,20 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-MAC-CATALYST-0019 — Recovered MUST from the explicit need-to-ensure directive and retained the essential beyond-layout condition. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0025 — Recovered the conditional MUST from the explicit Be sure to list directive. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0017 — Raised the cancellation outcome from SHOULD to MUST because the surrounding source explicitly says Make sure. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0038 — Raised the outcome from SHOULD to MUST because the source says the tools must be able to address the consequences. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0046 — Retained MUST from the conditional You need to directive. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0047 — Retained MUST from the explicit must directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0048 — Retained MUST from the unconditional privacy must directive. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0051 — Retained MUST from Ensure and resolved the pronoun through the explicit-feedback context. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0060 — Retained MUST_NOT from the first explicit Never clause. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0061 — Retained MUST_NOT from the second explicit Never clause. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0065 — Retained MUST from the unqualified Always directive. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0066 — Retained MUST from the explicit Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0068 — Retained MUST from the conditional Make sure quality gate. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0072 — Retained MUST from You need to and bounded it to confidence presentation. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0083 — Retained MUST from You need to and bounded it to the alternative-results branch. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MAPS-0021 — Recovered MUST from the explicit needs-to-be-visible requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0022 — Recovered MUST from the explicit all-key-content must-be-visible clause. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-NFC-0012 — Recovered MUST from the explicit must still provide requirement for an in-app scanning fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
@@ -806,9 +819,22 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 · MUST · retained_with_atomicity_or_scope_correction — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0015 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0017 · MUST · retained_with_atomicity_or_scope_correction — Raised the cancellation outcome from SHOULD to MUST because the surrounding source explicitly says Make sure. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0024 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0025 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 · MUST · retained_with_atomicity_or_scope_correction — Scoped the repeated security requirement to the Calibration section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0038 · MUST · retained_with_atomicity_or_scope_correction — Raised the outcome from SHOULD to MUST because the source says the tools must be able to address the consequences. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0046 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the conditional You need to directive. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0047 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit must directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0048 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the unconditional privacy must directive. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0051 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from Ensure and resolved the pronoun through the explicit-feedback context. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0060 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained MUST_NOT from the first explicit Never clause. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0061 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained MUST_NOT from the second explicit Never clause. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0065 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the unqualified Always directive. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0066 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0068 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the conditional Make sure quality gate. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0072 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from You need to and bounded it to confidence presentation. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MACHINE-LEARNING-0083 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from You need to and bounded it to the alternative-results branch. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MAPS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs-to-be-visible requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T16:31:00Z",
+  "reviewed_at": "2026-07-23T17:08:00Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 468,
+  "reviewed_rule_count": 481,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -3528,6 +3528,110 @@
       "polarity": "require", "severity": "error",
       "conditions": ["Apply to challenge entry from invitation links, the Game Overlay, and the Games app."],
       "review_note": "Recovered the explicit Always deep-link requirement separately from optional onboarding flow details."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0017": {
+      "title": "Make calibration easy to cancel at any time",
+      "statement": {"en": "Ensure people can easily cancel calibration at any time.", "ja": "calibrationをいつでも簡単にcancelできるようにする。"},
+      "normative_level": "MUST",
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Avoid implying judgment about cancellation."],
+      "review_note": "Raised the cancellation outcome from SHOULD to MUST because the surrounding source explicitly says Make sure."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0038": {
+      "title": "Ensure mistake-handling tools address the consequences",
+      "statement": {"en": "Ensure mistake-handling tools can address the mistake's consequences.", "ja": "mistake-handling toolがmistakeのconsequenceに対応できるようにする。"},
+      "normative_level": "MUST",
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Match the tools to the full range and seriousness of foreseeable consequences."],
+      "review_note": "Raised the outcome from SHOULD to MUST because the source says the tools must be able to address the consequences."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0046": {
+      "title": "Know the data types a machine-learning feature requires",
+      "statement": {"en": "Identify as much as possible about the data types a machine-learning feature requires.", "ja": "machine-learning featureが必要とするdata typeを可能な限り把握する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply before making feature design decisions."],
+      "review_note": "Retained MUST from the conditional You need to directive."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0047": {
+      "title": "Prioritize accuracy and reliability for sensitive-data features",
+      "statement": {"en": "Prioritize accuracy and reliability when a machine-learning feature uses sensitive data.", "ja": "sensitive dataを使うmachine-learning featureではaccuracyとreliabilityを優先する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The machine-learning feature uses sensitive data."],
+      "review_note": "Retained MUST from the explicit must directive and its sensitive-data condition."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0048": {
+      "title": "Protect user privacy at all times",
+      "statement": {"en": "Protect user privacy at all times, regardless of data sensitivity.", "ja": "data sensitivityにかかわらずuser privacyを常に保護する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "review_note": "Retained MUST from the unconditional privacy must directive."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0051": {
+      "title": "Keep explicitly unwanted content from appearing elsewhere",
+      "statement": {"en": "Ensure content people explicitly reject doesn't appear elsewhere in the app.", "ja": "利用者が明示的に拒否したcontentをapp内の別の場所に表示しない。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["People explicitly identified the content as unwanted."],
+      "review_note": "Retained MUST from Ensure and resolved the pronoun through the explicit-feedback context."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0060": {
+      "title": "Never blame people for stalled calibration",
+      "statement": {"en": "Never imply that stalled calibration means something is wrong or that people are at fault.", "ja": "calibration停滞について問題や利用者の責任を示唆しない。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "prohibit", "severity": "error",
+      "conditions": ["Calibration progress has stalled and the app provides recovery guidance."],
+      "review_note": "Retained MUST_NOT from the first explicit Never clause."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0061": {
+      "title": "Never leave stalled calibration without a next step",
+      "statement": {"en": "Never leave people without a clear next step when calibration stalls.", "ja": "calibration停滞時にclearなnext stepがない状態で利用者を放置しない。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "prohibit", "severity": "error",
+      "conditions": ["Calibration progress has stalled."],
+      "review_note": "Retained MUST_NOT from the second explicit Never clause."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0065": {
+      "title": "Always review cross-area effects when reducing mistakes",
+      "statement": {"en": "Always consider effects on other areas and overall accuracy when reducing mistakes in one area.", "ja": "一領域のmistakeを減らす際は他領域とoverall accuracyへの影響を常に考慮する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["A model change is intended to reduce mistakes in one area."],
+      "review_note": "Retained MUST from the unqualified Always directive."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0066": {
+      "title": "Persist correction updates",
+      "statement": {"en": "Ensure correction updates persist so people don't have to repeat them.", "ja": "同じcorrectionを繰り返さずに済むようupdateを永続化する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "review_note": "Retained MUST from the explicit Be sure directive."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0068": {
+      "title": "Verify a correction will improve result quality before learning from it",
+      "statement": {"en": "Before updating a model from a correction, ensure the correction will improve result quality.", "ja": "correctionでmodelを更新する前にresult qualityが向上することを確認する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app is about to use a correction to update its models."],
+      "review_note": "Retained MUST from the conditional Make sure quality gate."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0072": {
+      "title": "Verify confidence values correspond to result quality",
+      "statement": {"en": "Verify that confidence values correspond to result quality before conveying confidence.", "ja": "confidenceを伝える前にconfidence valueとresult qualityの対応を検証する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The experience is considering presenting confidence to people."],
+      "review_note": "Retained MUST from You need to and bounded it to confidence presentation."
+    },
+    "HIG-TECHNOLOGIES-MACHINE-LEARNING-0083": {
+      "title": "Understand the goal before suggesting alternatives",
+      "statement": {"en": "Before suggesting alternatives to no results, understand the goal well enough to offer relevant options.", "ja": "no resultの代替案を示す前に、適切なoptionを出せる程度までgoalを理解する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The feature suggests an alternative way to accomplish the person's goal."],
+      "review_note": "Retained MUST from You need to and bounded it to the alternative-results branch."
     }
   },
   "additional_rules": [

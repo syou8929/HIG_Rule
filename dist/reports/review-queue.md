@@ -1,59 +1,38 @@
 # Human source-review queue
 
-- Remaining rules: 341
+- Remaining rules: 303
 - Next priority: 6 (apple-platform-common)
-- Next batch: 38
+- Next batch: 17
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 318
+- 6 (apple-platform-common): 280
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 19
-- MAY: 36
-- SHOULD: 286
+- AVOID: 12
+- MAY: 30
+- SHOULD: 261
 
 ## Next batch
 
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0007 · AVOID — Don’t let implicit feedback decrease people’s opportunities to explore · Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0013 · AVOID — Avoid asking people to participate in calibration more than once · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0030 · AVOID — Avoid being too specific or too general · Machine learning > Attribution ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0036 · AVOID — Avoid asking for information that most people would have to look up · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0037 · AVOID — Avoid asking people to perform actions that might be difficult · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0043 · AVOID — In general, avoid providing too many options · Machine learning > Multiple options ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0044 · AVOID — In general, avoid technical or statistical jargon · Machine learning > Attribution ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0002 · SHOULD — Use simple, direct language to describe each explicit feedback option and its consequences · Machine learning > Explicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0006 · SHOULD — Help people control their information · Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0009 · SHOULD — Prioritize recent feedback · Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0010 · SHOULD — Use feedback to update predictions on a cadence that matches the person’s mental model of the feature · Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0011 · SHOULD — Be prepared for changes in implicit feedback when you make changes to your app’s UI · Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0012 · SHOULD — Be clear about why you need people’s information · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0014 · SHOULD — Make calibration quick and easy · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0016 · SHOULD — Confirm success · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0017 · SHOULD — Let people cancel calibration at any time · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0018 · SHOULD — Give people a way to update or remove information they provided during calibration · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0019 · SHOULD — Make it easy for people to correct frequent or predictable mistakes · Machine learning > Mistakes ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0020 · SHOULD — Be especially careful to avoid mistakes in proactive features · Machine learning > Mistakes ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0021 · SHOULD — Give people familiar, easy ways to make corrections · Machine learning > Corrections ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0022 · SHOULD — Provide immediate value when people make a correction · Machine learning > Corrections ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0023 · SHOULD — Let people correct their corrections · Machine learning > Corrections ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0026 · SHOULD — Prefer diverse options · Machine learning > Multiple options ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0027 · SHOULD — Make options easy to distinguish and choose · Machine learning > Multiple options ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0031 · SHOULD — Keep attributions factual and based on objective analysis · Machine learning > Attribution ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0032 · SHOULD — Help people establish realistic expectations · Machine learning > Limitations ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0035 · SHOULD — Prioritize getting a few pieces of important information and infer the rest from other sources or by gettin… · Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0038 · SHOULD — Help people handle mistakes. Mistakes can have a wide range of consequences, so the tools you provide to ha… · Machine learning > Mistakes ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0039 · SHOULD — Encourage people to change what they do in your app · Machine learning > Attribution ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0040 · SHOULD — Minimize the impact of mistakes · Machine learning > Attribution ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0041 · SHOULD — Help people build a mental model of your feature · Machine learning > Attribution ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0042 · SHOULD — Show people how to get the best results while they’re using the feature · Machine learning > Limitations ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0003 · MAY — Consider offering multiple options when requesting explicit feedback · Machine learning > Explicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0004 · MAY — Consider using explicit feedback to help improve when and where you show results · Machine learning > Explicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0008 · MAY — Consider withholding private or sensitive suggestions · Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0028 · MAY — Consider changing how you present results based on different confidence thresholds · Machine learning > Confidence ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0029 · MAY — Consider using attributions to help people distinguish among results · Machine learning > Attribution ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MACHINE-LEARNING-0033 · MAY — Consider telling people when limitations are resolved · Machine learning > Limitations ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MAPS-0008 · AVOID — Avoid duplicating information · Maps > Place cards > Displaying place cards in a map ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0018 · AVOID — Avoid causing the logo and link to move with your interface. It’s best when the Apple logo and legal · Maps > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0001 · SHOULD — Help people find places in your map · Maps > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0002 · SHOULD — Help people see the Apple logo and legal link · Maps > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0003 · SHOULD — Use annotations that match the visual style of your app · Maps > Custom information ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0004 · SHOULD — Use overlays to define map areas with a specific relationship to your content · Maps > Custom information ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0009 · SHOULD — Keep the location on your map visible when displaying a place card · Maps > Place cards > Displaying place cards in a map ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0010 · SHOULD — Use location-related cues in surrounding content to help communicate that people can open a place card · Maps > Place cards > Adding place cards outside of a map ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0011 · SHOULD — Use distinctive styling to differentiate the features of your map · Maps > Indoor maps ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0012 · SHOULD — Offer a floor picker if your venue includes multiple levels · Maps > Indoor maps ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0013 · SHOULD — Include surrounding areas to provide context · Maps > Indoor maps ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0015 · SHOULD — Design an indoor map that feels like a natural extension of your app · Maps > Indoor maps ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0017 · SHOULD — Use adequate padding to separate the logo and link from the map boundaries and your custom controls. For ex… · Maps > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0019 · SHOULD — Clearly identify elements that people select · Maps > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0006 · MAY — Consider your map presentation when choosing a style · Maps > Place cards > Displaying place cards in a map ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0014 · MAY — Consider supporting navigation between your venue and nearby transit points · Maps > Indoor maps ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0020 · MAY — If you want to display custom information that’s related to standard map features, consider making them ind… · Maps > Custom information ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
