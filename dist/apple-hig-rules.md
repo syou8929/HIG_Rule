@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T05:48:57.196Z. 2872 active rules; 4 deprecated rules.
+Generated 2026-07-23T06:25:52.238Z. 2873 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -2062,10 +2062,10 @@ Generated 2026-07-23T05:48:57.196Z. 2872 active rules; 4 deprecated rules.
 ### windows
 
 - **HIG-COMPONENTS-WINDOWS-0001 · MUST · high** — Ensure windows adapt fluidly across supported sizes for multitasking and multiwindow workflows. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0002 · SHOULD · low** — Apply the documented Windows guidance to choose the right moment to open a new window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0003 · MAY · low** — Evaluate whether providing the option to view content in a new window is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0004 · AVOID · low** — Exclude creating custom window UI from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
-- **HIG-COMPONENTS-WINDOWS-0005 · SHOULD · low** — Choose or apply the term window in user-facing content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0002 · SHOULD · high** — Open a new window when it helps people multitask or preserve context. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0003 · MAY · high** — Consider giving people an option to view content in a new window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0004 · AVOID · high** — Avoid creating custom window interface elements in place of system-provided UI. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0005 · SHOULD · high** — Use the term window for app windows in user-facing content. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0006 · MUST · high** — Ensure iPadOS window controls do not overlap toolbar items. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0007 · MAY · high** — Consider letting people use a gesture to open iPadOS content in a new window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0008 · MUST · high** — Ensure custom macOS windows use the system-defined appearance for each window state. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
@@ -2083,6 +2083,7 @@ Generated 2026-07-23T05:48:57.196Z. 2872 active rules; 4 deprecated rules.
 - **HIG-COMPONENTS-WINDOWS-0020 · SHOULD · high** — Generally use dynamic scaling for visionOS volume content. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0021 · SHOULD · high** — Use the default visionOS baseplate appearance to help people discern a volume's edges. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - **HIG-COMPONENTS-WINDOWS-0022 · MUST · high** — Support multiple windows in an iPadOS app that presents a single file without creating a custom window. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- **HIG-COMPONENTS-WINDOWS-0023 · AVOID · high** — Avoid opening new windows by default unless doing so suits the app. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 
 ## inputs
 

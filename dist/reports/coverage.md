@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2872
+- Active atomic rules: 2873
 - Pages without rules: 16
-- Low-confidence rules: 684
-- Rules requiring human review: 684
+- Low-confidence rules: 680
+- Rules requiring human review: 680
 - Reference notes: 904
 
 ## Rules by category
 
-- components: 1025
+- components: 1026
 - foundations: 346
 - getting-started: 100
 - inputs: 245
@@ -22,7 +22,7 @@
 
 ## Normative levels
 
-- AVOID: 404
+- AVOID: 405
 - MAY: 340
 - MUST: 306
 - MUST_NOT: 33
@@ -32,16 +32,16 @@
 
 - carplay: 119
 - ios: 1913
-- ipados: 1888
-- macos: 1559
+- ipados: 1889
+- macos: 1560
 - tvos: 1192
-- visionos: 1605
+- visionos: 1606
 - watchos: 1303
 
 ## Rules by testability
 
 - hybrid: 82
-- manual: 2790
+- manual: 2791
 
 ## Blocked pages
 
@@ -129,10 +129,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-COMPONENTS-WINDOWS-0002
-- HIG-COMPONENTS-WINDOWS-0003
-- HIG-COMPONENTS-WINDOWS-0004
-- HIG-COMPONENTS-WINDOWS-0005
 - HIG-FOUNDATIONS-APP-ICONS-0001
 - HIG-FOUNDATIONS-APP-ICONS-0002
 - HIG-FOUNDATIONS-APP-ICONS-0003
@@ -816,10 +812,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-COMPONENTS-WINDOWS-0002
-- HIG-COMPONENTS-WINDOWS-0003
-- HIG-COMPONENTS-WINDOWS-0004
-- HIG-COMPONENTS-WINDOWS-0005
 - HIG-FOUNDATIONS-APP-ICONS-0001
 - HIG-FOUNDATIONS-APP-ICONS-0002
 - HIG-FOUNDATIONS-APP-ICONS-0003

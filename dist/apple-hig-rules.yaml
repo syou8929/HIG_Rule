@@ -61319,11 +61319,11 @@
   topic: windows
   subtopic: best-practices
   statement:
-    en: Apply the documented Windows guidance to choose the right moment to open a new window.
-    ja: 「Windows」において「Choose the right moment to open a new window」の指針を適用する。
+    en: Open a new window when it helps people multitask or preserve context.
+    ja: multitaskやcontext維持に役立つ場面で新しいwindowを開く。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -61340,7 +61340,7 @@
       - windows
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Avoid excessive windows that create clutter or confusing navigation.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Windows experience on the scoped Apple platforms.
@@ -61348,7 +61348,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Windows guidance to choose the right moment to open a new window.” in the documented Windows context?
+      - Does the design satisfy “Open a new window when it helps people multitask or preserve context.” in the documented Windows context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -61363,14 +61363,14 @@
     retrieved_at: 2026-07-21T11:15:31.635Z
     source_hash: 7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05
     source_sentence_hash: 2ec9a2db43c7a2bc708985311d6327563e15f1acc5fd104823103a22d0ffa357
-    evidence_paraphrase: Apply the documented Windows guidance to choose the right moment to open a new window.
+    evidence_paraphrase: Open a new window when it helps people multitask or preserve context.
   tags:
     - components
     - windows
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Windows guidance to choose the right moment to open a new window.
+  apple_native_rule: Open a new window when it helps people multitask or preserve context.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-WINDOWS-0003
   title: Consider providing the option to view content in a new window
@@ -61378,11 +61378,11 @@
   topic: windows
   subtopic: best-practices
   statement:
-    en: Evaluate whether providing the option to view content in a new window is appropriate for the current context.
-    ja: providing the option to view content in a new windowが現在の状況に適切か検討する。
+    en: Consider giving people an option to view content in a new window.
+    ja: contentを新しいwindowで表示するoptionの提供を検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -61399,7 +61399,7 @@
       - windows
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A context-menu or File-menu command can provide the option without making it default behavior.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Windows experience on the scoped Apple platforms.
@@ -61407,7 +61407,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether providing the option to view content in a new window is appropriate for the current context.” in the documented Windows context?
+      - Does the design satisfy “Consider giving people an option to view content in a new window.” in the documented Windows context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -61422,14 +61422,14 @@
     retrieved_at: 2026-07-21T11:15:31.635Z
     source_hash: 7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05
     source_sentence_hash: 0e8b7487ea426a07ecb517152735f506d651d2580b7c931ccc396c5a9417812c
-    evidence_paraphrase: Evaluate whether providing the option to view content in a new window is appropriate for the current context.
+    evidence_paraphrase: Consider giving people an option to view content in a new window.
   tags:
     - components
     - windows
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether providing the option to view content in a new window is appropriate for the current context.
+  apple_native_rule: Consider giving people an option to view content in a new window.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-WINDOWS-0004
   title: Avoid creating custom window UI
@@ -61437,11 +61437,11 @@
   topic: windows
   subtopic: best-practices
   statement:
-    en: Exclude creating custom window UI from the applicable experience.
-    ja: 該当する体験ではcreating custom window UIを避ける。
+    en: Avoid creating custom window interface elements in place of system-provided UI.
+    ja: system-provided UIの代わりにcustom window interface elementを作らない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -61458,7 +61458,7 @@
       - windows
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Avoid custom frames or controls and don't imitate the system appearance without matching its behavior.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Windows experience on the scoped Apple platforms.
@@ -61466,7 +61466,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude creating custom window UI from the applicable experience.” in the documented Windows context?
+      - Does the design satisfy “Avoid creating custom window interface elements in place of system-provided UI.” in the documented Windows context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -61481,14 +61481,14 @@
     retrieved_at: 2026-07-21T11:15:31.635Z
     source_hash: 7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05
     source_sentence_hash: 87525df8bdb091b07f31ab17070b8e1cf275de431b2f2cecbfed8e34aa9e5701
-    evidence_paraphrase: Exclude creating custom window UI from the applicable experience.
+    evidence_paraphrase: Avoid creating custom window interface elements in place of system-provided UI.
   tags:
     - components
     - windows
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude creating custom window UI from the applicable experience.
+  apple_native_rule: Avoid creating custom window interface elements in place of system-provided UI.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-WINDOWS-0005
   title: Use the term window in user-facing content
@@ -61496,11 +61496,11 @@
   topic: windows
   subtopic: best-practices
   statement:
-    en: Choose or apply the term window in user-facing content in the documented context.
-    ja: 該当する状況ではthe term window in user-facing contentを採用する。
+    en: Use the term window for app windows in user-facing content.
+    ja: user-facing contentではapp windowをwindowと呼ぶ。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -61517,7 +61517,7 @@
       - windows
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use window regardless of type; implementation terms such as scene can confuse people.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Windows experience on the scoped Apple platforms.
@@ -61525,7 +61525,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the term window in user-facing content in the documented context.” in the documented Windows context?
+      - Does the design satisfy “Use the term window for app windows in user-facing content.” in the documented Windows context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -61540,14 +61540,14 @@
     retrieved_at: 2026-07-21T11:15:31.635Z
     source_hash: 7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05
     source_sentence_hash: 9d64b356b35df10c334148ff1bbea41209abdf8cc2f2e2ecee5f9cdd23ca440d
-    evidence_paraphrase: Choose or apply the term window in user-facing content in the documented context.
+    evidence_paraphrase: Use the term window for app windows in user-facing content.
   tags:
     - components
     - windows
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply the term window in user-facing content in the documented context.
+  apple_native_rule: Use the term window for app windows in user-facing content.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-WINDOWS-0006
   title: Prevent iPadOS window controls from overlapping toolbar items
@@ -62567,6 +62567,65 @@
   priority_rank: 4
   status: active
   apple_native_rule: Support multiple windows in an iPadOS app that presents a single file without creating a custom window.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-WINDOWS-0023
+  title: Avoid opening new windows by default unless it suits the app
+  category: components
+  topic: windows
+  subtopic: best-practices
+  statement:
+    en: Avoid opening new windows by default unless doing so suits the app.
+    ja: appに適する場合を除き、新しいwindowをdefaultで開かない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ipados
+      - macos
+      - visionos
+    devices:
+      - ipad
+      - mac
+      - apple-vision-pro
+    components:
+      - windows
+    modalities: []
+  conditions:
+    - Default window creation should provide a clear multitasking or context-preservation benefit.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Windows experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるWindowsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid opening new windows by default unless doing so suits the app.” in the documented Windows context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/windows
+    page_title: Windows
+    section_path:
+      - Windows
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:31.635Z
+    source_hash: 7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05
+    source_sentence_hash: 2ec9a2db43c7a2bc708985311d6327563e15f1acc5fd104823103a22d0ffa357
+    evidence_paraphrase: Avoid opening new windows by default unless doing so suits the app.
+  tags:
+    - components
+    - windows
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid opening new windows by default unless doing so suits the app.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-ACCESSIBILITY-0001
   title: Support platform-appropriate text and icon enlargement

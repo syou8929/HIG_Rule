@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T23:25:33Z",
+  "reviewed_at": "2026-07-23T06:12:58Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -791,6 +791,18 @@
         "HIG-COMPONENTS-WINDOWS-0021"
       ],
       "review_note": "Reviewed iPadOS window gestures, macOS bottom bars, and visionOS windows and volumes; recovered three leads and routed one separate MUST."
+    },
+    {
+      "id": "priority-6-windows-common-context-2026-07-23",
+      "reviewed_at": "2026-07-23T06:12:58Z",
+      "review_method": "Rendered Apple HIG Windows overview and common best practices were reviewed against their supporting prose; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/windows", "source_hash": "7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05"}],
+      "rule_ids": [
+        "HIG-COMPONENTS-WINDOWS-0001", "HIG-COMPONENTS-WINDOWS-0002", "HIG-COMPONENTS-WINDOWS-0003",
+        "HIG-COMPONENTS-WINDOWS-0004", "HIG-COMPONENTS-WINDOWS-0005", "HIG-COMPONENTS-WINDOWS-0023"
+      ],
+      "review_note": "Completed common Windows coverage; retained five existing IDs, recovered the default-window AVOID, retained the explicit Make sure adaptation rule as MUST, and kept choice and terminology guidance at SHOULD or MAY."
     },
     {
       "id": "priority-4-app-icons-platform-context-2026-07-21",
@@ -21152,6 +21164,86 @@
         "In layered images, consider placing text on a dedicated upper layer."
       ],
       "review_note": "Recovered the conditional Add lead and recorded the VoiceOver and layered-image requirements."
+    },
+    "HIG-COMPONENTS-WINDOWS-0001": {
+      "source": {
+        "source_hash": "7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05",
+        "source_sentence_hash": "599e4eb5c360a790f9dddc6b3bca4e4548475d1b34e3594adab3aeea6257b3dd",
+        "section_path": ["Windows", "Best practices"]
+      },
+      "title": "Adapt windows fluidly across supported sizes",
+      "statement": {
+        "en": "Ensure windows adapt fluidly across supported sizes for multitasking and multiwindow workflows.",
+        "ja": "multitaskingとmultiwindow workflowのため、windowを対応sizeへ滑らかに適応させる。"
+      },
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "conditions": ["Support every window size available in the app's scoped platform context."],
+      "review_note": "Retained MUST from the explicit Make sure lead and its multitasking and multiwindow scope."
+    },
+    "HIG-COMPONENTS-WINDOWS-0002": {
+      "source": {
+        "source_hash": "7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05",
+        "source_sentence_hash": "2ec9a2db43c7a2bc708985311d6327563e15f1acc5fd104823103a22d0ffa357",
+        "section_path": ["Windows", "Best practices"]
+      },
+      "statement": {
+        "en": "Open a new window when it helps people multitask or preserve context.",
+        "ja": "multitaskやcontext維持に役立つ場面で新しいwindowを開く。"
+      },
+      "conditions": ["Avoid excessive windows that create clutter or confusing navigation."],
+      "review_note": "Concretized the right-moment test and split the default-window anti-pattern."
+    },
+    "HIG-COMPONENTS-WINDOWS-0003": {
+      "source": {
+        "source_hash": "7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05",
+        "source_sentence_hash": "0e8b7487ea426a07ecb517152735f506d651d2580b7c931ccc396c5a9417812c",
+        "section_path": ["Windows", "Best practices"]
+      },
+      "statement": {
+        "en": "Consider giving people an option to view content in a new window.",
+        "ja": "contentを新しいwindowで表示するoptionの提供を検討する。"
+      },
+      "conditions": ["A context-menu or File-menu command can provide the option without making it default behavior."],
+      "review_note": "Preserved both Consider clauses as one MAY choice and recorded the documented command locations."
+    },
+    "HIG-COMPONENTS-WINDOWS-0004": {
+      "source": {
+        "source_hash": "7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05",
+        "source_sentence_hash": "87525df8bdb091b07f31ab17070b8e1cf275de431b2f2cecbfed8e34aa9e5701",
+        "section_path": ["Windows", "Best practices"]
+      },
+      "statement": {
+        "en": "Avoid creating custom window interface elements in place of system-provided UI.",
+        "ja": "system-provided UIの代わりにcustom window interface elementを作らない。"
+      },
+      "conditions": ["Avoid custom frames or controls and don't imitate the system appearance without matching its behavior."],
+      "review_note": "Preserved the direct Avoid lead at AVOID and recorded both frame/control and imitation failure modes."
+    },
+    "HIG-COMPONENTS-WINDOWS-0005": {
+      "source": {
+        "source_hash": "7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05",
+        "source_sentence_hash": "9d64b356b35df10c334148ff1bbea41209abdf8cc2f2e2ecee5f9cdd23ca440d",
+        "section_path": ["Windows", "Best practices"]
+      },
+      "statement": {
+        "en": "Use the term window for app windows in user-facing content.",
+        "ja": "user-facing contentではapp windowをwindowと呼ぶ。"
+      },
+      "conditions": ["Use window regardless of type; implementation terms such as scene can confuse people."],
+      "review_note": "Recorded the user-facing terminology rule and its type-independent scope."
+    },
+    "HIG-COMPONENTS-WINDOWS-0023": {
+      "source": {
+        "source_hash": "7a2af3abdff403e3a52c70902e1afe7c8ed7a4c0105942e81f8c8f910db74b05",
+        "source_sentence_hash": "2ec9a2db43c7a2bc708985311d6327563e15f1acc5fd104823103a22d0ffa357",
+        "section_path": ["Windows", "Best practices"]
+      },
+      "statement": {
+        "en": "Avoid opening new windows by default unless doing so suits the app.",
+        "ja": "appに適する場合を除き、新しいwindowをdefaultで開かない。"
+      },
+      "conditions": ["Default window creation should provide a clear multitasking or context-preservation benefit."],
+      "review_note": "Recovered the explicit default-window anti-pattern as AVOID, not MUST_NOT."
     },
     "HIG-COMPONENTS-WINDOWS-0007": {
       "source": {

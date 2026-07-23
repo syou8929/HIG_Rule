@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2134
-- Reviewed batches: 138
+- Reviewed rules: 2140
+- Reviewed batches: 139
 - Official source only: yes
-- Reviewed at: 2026-07-22T23:25:33Z
+- Reviewed at: 2026-07-23T06:12:58Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -941,6 +941,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-WIDGETS-0079 · high — Activated the previously unrecognized Group lead and retained both grouping and single-description outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0080 · high — Recovered the explicit numeric animation limit as SHOULD rather than an unsupported MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
 - HIG-COMPONENTS-WIDGETS-0081 · high — Recovered direct Avoid guidance as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/widgets))
+- HIG-COMPONENTS-WINDOWS-0001 · high — Retained MUST from the explicit Make sure lead and its multitasking and multiwindow scope. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- HIG-COMPONENTS-WINDOWS-0002 · high — Concretized the right-moment test and split the default-window anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- HIG-COMPONENTS-WINDOWS-0003 · high — Preserved both Consider clauses as one MAY choice and recorded the documented command locations. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- HIG-COMPONENTS-WINDOWS-0004 · high — Preserved the direct Avoid lead at AVOID and recorded both frame/control and imitation failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- HIG-COMPONENTS-WINDOWS-0005 · high — Recorded the user-facing terminology rule and its type-independent scope. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0007 · high — Retained MAY and recorded the documented pinch interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0009 · high — Restored the truncated bottom-edge risk and recorded both limited-use and inspector alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0010 · high — Recorded the familiar-interface rationale and bounded-3D volume alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
@@ -955,6 +960,7 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-WINDOWS-0019 · high — Recovered the omitted Retain lead and recorded the glass-material rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0020 · high — Recovered the qualified Use lead and preserved the fixed-scaling exception. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-COMPONENTS-WINDOWS-0021 · high — Recovered the omitted Take advantage lead and recorded the glow behavior and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
+- HIG-COMPONENTS-WINDOWS-0023 · high — Recovered the explicit default-window anti-pattern as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/windows))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0001 · high — Recorded the platform-specific enlargement targets from the official Vision guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0002 · high — Recorded the official custom-type default and minimum size table for each supported platform. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0003 · high — Recorded the official WCAG-based contrast table and its Dark Mode and Increase Contrast conditions without treating it as a universal legal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
