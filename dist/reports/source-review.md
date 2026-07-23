@@ -1,17 +1,24 @@
 # General source-context review
 
-- Reviewed rules: 3158
-- Reviewed batches: 177
+- Reviewed rules: 3165
+- Reviewed batches: 178
 - Official source only: yes
-- Reviewed at: 2026-07-23T19:05:00Z
+- Reviewed at: 2026-07-23T19:20:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
 ## Reviewed rules
 
-- HIG-COMPONENTS-ACTION-SHEETS-0006 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- HIG-COMPONENTS-ACTION-SHEETS-0007 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- HIG-COMPONENTS-ACTION-SHEETS-0008 · medium — Reviewed the platform-specific iOS, iPadOS, and watchOS action-sheet guidance, including scrolling, component choice, and the four-button limit. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0001 · high — Recorded the intentional-action condition and the alert distinction. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0002 · high — Recorded interruption and attention as the reasons for sparing use. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0003 · high — Retained the qualified Aim wording at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0004 · high — Preserved the contextual only-if recommendation without promoting it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0005 · high — Recorded both style and placement techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0006 · high — Upgraded confidence after reconfirming the complete iOS and iPadOS component-choice context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0007 · high — Upgraded confidence and preserved both usability risks. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0008 · high — Upgraded confidence, retained AVOID, and recorded the required Cancel plus three-additional-choice target. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0009 · high — Activated the conditional Cancel-button lead without turning the if-necessary qualifier into a mandate. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- HIG-COMPONENTS-ACTION-SHEETS-0010 · high — Recovered the cross-platform placement sentence and preserved the watchOS exception. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0001 · high — Recorded relevance and product-context conditions without making example placements universal. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0002 · high — Kept the positive scope rule at SHOULD and represented the source's explicit Never prohibitions separately. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
 - HIG-COMPONENTS-ACTIVITY-RINGS-0003 · high — Retained the positive single-person recommendation and split the explicit multi-person prohibition and identity requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))

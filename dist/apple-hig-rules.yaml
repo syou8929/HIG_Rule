@@ -7,8 +7,8 @@
     en: Choose or apply an action sheet — not an alert — to offer choices related to an intentional action in the documented context.
     ja: 該当する状況ではan action sheet — not an alert — to offer choices related to an intentional actionを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -29,7 +29,8 @@
       - action-sheets
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - An alert can confirm or cancel a destructive action but doesn't offer additional related choices.
+    - Alerts are generally unexpected and communicate a problem or situational change.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
@@ -70,8 +71,8 @@
     en: Choose or apply action sheets sparingly in the documented context.
     ja: 該当する状況ではaction sheets sparinglyを採用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -92,7 +93,8 @@
       - action-sheets
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Action sheets interrupt the current task.
+    - Avoid unnecessary use so people continue to pay attention when one appears.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
@@ -130,11 +132,11 @@
   topic: action-sheets
   subtopic: best-practices
   statement:
-    en: Apply the documented Action sheets guidance to aim to keep titles short enough to display on a single line.
-    ja: 「Action sheets」において「Aim to keep titles short enough to display on a single line」の指針を適用する。
+    en: Aim for an action-sheet title that fits on one line.
+    ja: action sheet titleが1行に収まるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -155,7 +157,7 @@
       - action-sheets
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Long titles are harder to scan and may truncate or require scrolling.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
@@ -163,7 +165,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Action sheets guidance to aim to keep titles short enough to display on a single line.” in the documented Action sheets context?
+      - Does the design satisfy “Aim for an action-sheet title that fits on one line.” in the documented Action sheets context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -178,14 +180,14 @@
     retrieved_at: 2026-07-21T11:14:35.355Z
     source_hash: 56d9cb543e3cb626b5b14a132012bd932e2b359ed1942aba52a01f86879bb320
     source_sentence_hash: 839cfebf4e9537a836cea3a3b4ba0de5b08e3a3737db727c32b6a84b0d67c253
-    evidence_paraphrase: Apply the documented Action sheets guidance to aim to keep titles short enough to display on a single line.
+    evidence_paraphrase: Aim for an action-sheet title that fits on one line.
   tags:
     - components
     - action-sheets
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Action sheets guidance to aim to keep titles short enough to display on a single line.
+  apple_native_rule: Aim for an action-sheet title that fits on one line.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ACTION-SHEETS-0004
   title: Provide a message only if necessary
@@ -193,11 +195,11 @@
   topic: action-sheets
   subtopic: best-practices
   statement:
-    en: Make a message only if necessary available when applicable.
-    ja: 必要な場合にa message only if necessaryを利用可能にする。
+    en: Include an action-sheet message only when the title and action context aren't sufficient.
+    ja: titleとaction contextだけでは不十分な場合にだけaction sheet messageを含める。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -218,7 +220,7 @@
       - action-sheets
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Usually the title and current-action context explain the available choices.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
@@ -226,7 +228,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Make a message only if necessary available when applicable.” in the documented Action sheets context?
+      - Does the design satisfy “Include an action-sheet message only when the title and action context aren't sufficient.” in the documented Action sheets context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -241,14 +243,14 @@
     retrieved_at: 2026-07-21T11:14:35.355Z
     source_hash: 56d9cb543e3cb626b5b14a132012bd932e2b359ed1942aba52a01f86879bb320
     source_sentence_hash: e71282ff81dd1badbe630ded096265825bb14e6790d0c23bc0b834662ef5f617
-    evidence_paraphrase: Make a message only if necessary available when applicable.
+    evidence_paraphrase: Include an action-sheet message only when the title and action context aren't sufficient.
   tags:
     - components
     - action-sheets
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Make a message only if necessary available when applicable.
+  apple_native_rule: Include an action-sheet message only when the title and action context aren't sufficient.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ACTION-SHEETS-0005
   title: Make destructive choices visually prominent
@@ -256,11 +258,11 @@
   topic: action-sheets
   subtopic: best-practices
   statement:
-    en: Apply the documented Action sheets guidance to make destructive choices visually prominent.
-    ja: 「Action sheets」において「Make destructive choices visually prominent」の指針を適用する。
+    en: Make destructive action-sheet choices visually prominent.
+    ja: destructiveなaction sheet choiceをvisually prominentにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -281,7 +283,8 @@
       - action-sheets
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use the destructive button style.
+    - Place destructive buttons at the top of the action sheet.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
@@ -289,7 +292,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Action sheets guidance to make destructive choices visually prominent.” in the documented Action sheets context?
+      - Does the design satisfy “Make destructive action-sheet choices visually prominent.” in the documented Action sheets context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -304,14 +307,14 @@
     retrieved_at: 2026-07-21T11:14:35.355Z
     source_hash: 56d9cb543e3cb626b5b14a132012bd932e2b359ed1942aba52a01f86879bb320
     source_sentence_hash: 90f0afecb58ce042b840dc8ed03b73d388351a84f1b15dbeb9f1aef9dffff25c
-    evidence_paraphrase: Apply the documented Action sheets guidance to make destructive choices visually prominent.
+    evidence_paraphrase: Make destructive action-sheet choices visually prominent.
   tags:
     - components
     - action-sheets
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Action sheets guidance to make destructive choices visually prominent.
+  apple_native_rule: Make destructive action-sheet choices visually prominent.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ACTION-SHEETS-0006
   title: Use an action sheet — not a menu — to provide choices related to an action
@@ -319,10 +322,10 @@
   topic: action-sheets
   subtopic: ios-ipados
   statement:
-    en: Choose or apply an action sheet — not a menu — to provide choices related to an action in the documented context.
-    ja: 該当する状況ではan action sheet — not a menu — to provide choices related to an actionを採用する。
+    en: On iOS and iPadOS, use an action sheet instead of a menu for choices related to an action.
+    ja: iOSとiPadOSでactionにrelatedするchoiceにはmenuではなくaction sheetを使う。
   normative_level: SHOULD
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: recommend
   severity: warning
@@ -338,7 +341,8 @@
       - action-sheets
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - People expect an action sheet after an action that may need clarifying choices.
+    - People expect a menu only after choosing to reveal it.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
@@ -346,7 +350,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply an action sheet — not a menu — to provide choices related to an action in the documented context.” in the documented Action sheets context?
+      - Does the design satisfy “On iOS and iPadOS, use an action sheet instead of a menu for choices related to an action.” in the documented Action sheets context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -362,7 +366,7 @@
     retrieved_at: 2026-07-21T11:14:35.355Z
     source_hash: 56d9cb543e3cb626b5b14a132012bd932e2b359ed1942aba52a01f86879bb320
     source_sentence_hash: f97bfc2ab3935ebc873cb6a518e43763a3aecf2e585d894ccdfd419d318444ac
-    evidence_paraphrase: Choose or apply an action sheet — not a menu — to provide choices related to an action in the documented context.
+    evidence_paraphrase: On iOS and iPadOS, use an action sheet instead of a menu for choices related to an action.
   tags:
     - components
     - action-sheets
@@ -370,7 +374,7 @@
     - ios-ipados
   priority_rank: 4
   status: active
-  apple_native_rule: Choose or apply an action sheet — not a menu — to provide choices related to an action in the documented context.
+  apple_native_rule: On iOS and iPadOS, use an action sheet instead of a menu for choices related to an action.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ACTION-SHEETS-0007
   title: Avoid letting an action sheet scroll
@@ -381,7 +385,7 @@
     en: Exclude letting an action sheet scroll from the applicable experience.
     ja: 該当する体験ではletting an action sheet scrollを避ける。
   normative_level: AVOID
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: discourage
   severity: warning
@@ -397,7 +401,8 @@
       - action-sheets
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - More buttons increase choice time and effort.
+    - Scrolling can cause an inadvertent button tap.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
@@ -437,10 +442,10 @@
   topic: action-sheets
   subtopic: watchos
   statement:
-    en: Exclude displaying more than four buttons in an action sheet, including the Cancel button from the applicable experience.
-    ja: 該当する体験ではdisplaying more than four buttons in an action sheet, including the Cancel buttonを避ける。
+    en: Avoid more than four watchOS action-sheet buttons, including Cancel.
+    ja: watchOS action sheetではCancelを含め4個を超えるbuttonを避ける。
   normative_level: AVOID
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: discourage
   severity: warning
@@ -454,7 +459,8 @@
       - action-sheets
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The watchOS Cancel button is required.
+    - Aim for no more than three additional choices so all options remain visible.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
@@ -462,7 +468,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude displaying more than four buttons in an action sheet, including the Cancel button from the applicable experience.” in the documented Action sheets context?
+      - Does the design satisfy “Avoid more than four watchOS action-sheet buttons, including Cancel.” in the documented Action sheets context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -478,7 +484,7 @@
     retrieved_at: 2026-07-21T11:14:35.355Z
     source_hash: 56d9cb543e3cb626b5b14a132012bd932e2b359ed1942aba52a01f86879bb320
     source_sentence_hash: 2700d90e7a8caf5d74cc5c864deafb612c01b619f8a69b234885c0bf0eb7d8f8
-    evidence_paraphrase: Exclude displaying more than four buttons in an action sheet, including the Cancel button from the applicable experience.
+    evidence_paraphrase: Avoid more than four watchOS action-sheet buttons, including Cancel.
   tags:
     - components
     - action-sheets
@@ -486,7 +492,134 @@
     - watchos
   priority_rank: 4
   status: active
-  apple_native_rule: Exclude displaying more than four buttons in an action sheet, including the Cancel button from the applicable experience.
+  apple_native_rule: Avoid more than four watchOS action-sheet buttons, including Cancel.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-ACTION-SHEETS-0009
+  title: Provide Cancel when a choice may destroy data
+  category: components
+  topic: action-sheets
+  subtopic: best-practices
+  statement:
+    en: When necessary, provide a Cancel button that lets people reject a choice that may destroy data.
+    ja: 必要な場合はdataを破壊する可能性があるchoiceを拒否できるCancel buttonを提供する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-watch
+    components:
+      - action-sheets
+    modalities: []
+  conditions:
+    - SwiftUI confirmation dialogs include a Cancel button by default.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAction sheetsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When necessary, provide a Cancel button that lets people reject a choice that may destroy data.” in the documented Action sheets context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/action-sheets
+    page_title: Action sheets
+    section_path:
+      - Action sheets
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:35.355Z
+    source_hash: 56d9cb543e3cb626b5b14a132012bd932e2b359ed1942aba52a01f86879bb320
+    source_sentence_hash: b2c3d3cef77340a08a99f5238c3706837a9d61dee01cabd5ac9773c708ea6eb7
+    evidence_paraphrase: When necessary, provide a Cancel button that lets people reject a choice that may destroy data.
+  tags:
+    - components
+    - action-sheets
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When necessary, provide a Cancel button that lets people reject a choice that may destroy data.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-ACTION-SHEETS-0010
+  title: Place the Cancel button in its platform position
+  category: components
+  topic: action-sheets
+  subtopic: best-practices
+  statement:
+    en: Place an action sheet's Cancel button in the expected platform position.
+    ja: action sheetのCancel buttonをplatformで期待される位置に配置する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-watch
+    components:
+      - action-sheets
+    modalities: []
+  conditions:
+    - Use the bottom of the action sheet generally.
+    - Use the sheet's upper-left corner in watchOS.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Action sheets experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるAction sheetsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Place an action sheet's Cancel button in the expected platform position.” in the documented Action sheets context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/action-sheets
+    page_title: Action sheets
+    section_path:
+      - Action sheets
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:35.355Z
+    source_hash: 56d9cb543e3cb626b5b14a132012bd932e2b359ed1942aba52a01f86879bb320
+    source_sentence_hash: 45cfa92329bc0bfcb48c222997fd0d54b5730214c1d49797c3f44d072cccb648
+    evidence_paraphrase: Place an action sheet's Cancel button in the expected platform position.
+  tags:
+    - components
+    - action-sheets
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Place an action sheet's Cancel button in the expected platform position.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-ACTIVITY-RINGS-0001
   title: Display Activity rings only when relevant

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T17:50:39.431Z. 3395 active rules; 7 deprecated rules.
+Generated 2026-07-23T17:55:50.431Z. 3397 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1159,14 +1159,16 @@ Generated 2026-07-23T17:50:39.431Z. 3395 active rules; 7 deprecated rules.
 
 ### action-sheets
 
-- **HIG-COMPONENTS-ACTION-SHEETS-0001 · SHOULD · low** — Choose or apply an action sheet — not an alert — to offer choices related to an intentional action in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- **HIG-COMPONENTS-ACTION-SHEETS-0002 · SHOULD · low** — Choose or apply action sheets sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- **HIG-COMPONENTS-ACTION-SHEETS-0003 · SHOULD · low** — Apply the documented Action sheets guidance to aim to keep titles short enough to display on a single line. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- **HIG-COMPONENTS-ACTION-SHEETS-0004 · SHOULD · low** — Make a message only if necessary available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- **HIG-COMPONENTS-ACTION-SHEETS-0005 · SHOULD · low** — Apply the documented Action sheets guidance to make destructive choices visually prominent. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- **HIG-COMPONENTS-ACTION-SHEETS-0006 · SHOULD · medium** — Choose or apply an action sheet — not a menu — to provide choices related to an action in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- **HIG-COMPONENTS-ACTION-SHEETS-0007 · AVOID · medium** — Exclude letting an action sheet scroll from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
-- **HIG-COMPONENTS-ACTION-SHEETS-0008 · AVOID · medium** — Exclude displaying more than four buttons in an action sheet, including the Cancel button from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0001 · SHOULD · high** — Choose or apply an action sheet — not an alert — to offer choices related to an intentional action in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0002 · SHOULD · high** — Choose or apply action sheets sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0003 · SHOULD · high** — Aim for an action-sheet title that fits on one line. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0004 · SHOULD · high** — Include an action-sheet message only when the title and action context aren't sufficient. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0005 · SHOULD · high** — Make destructive action-sheet choices visually prominent. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0006 · SHOULD · high** — On iOS and iPadOS, use an action sheet instead of a menu for choices related to an action. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0007 · AVOID · high** — Exclude letting an action sheet scroll from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0008 · AVOID · high** — Avoid more than four watchOS action-sheet buttons, including Cancel. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0009 · SHOULD · high** — When necessary, provide a Cancel button that lets people reject a choice that may destroy data. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
+- **HIG-COMPONENTS-ACTION-SHEETS-0010 · SHOULD · high** — Place an action sheet's Cancel button in the expected platform position. ([source](https://developer.apple.com/design/human-interface-guidelines/action-sheets))
 ### activity-rings
 
 - **HIG-COMPONENTS-ACTIVITY-RINGS-0001 · SHOULD · high** — Display Activity rings when they're relevant to the app's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
