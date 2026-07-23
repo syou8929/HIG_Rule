@@ -1,30 +1,28 @@
 # Human source-review queue
 
-- Remaining rules: 583
+- Remaining rules: 574
 - Next priority: 6 (apple-platform-common)
-- Next batch: 9
+- Next batch: 7
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 560
+- 6 (apple-platform-common): 551
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 57
-- MAY: 58
-- SHOULD: 468
+- AVOID: 56
+- MAY: 57
+- SHOULD: 461
 
 ## Next batch
 
-- HIG-PATTERNS-OFFERING-HELP-0004 · AVOID — Avoid bloating your help content by explaining how standard components or patterns work · Offering help > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- HIG-PATTERNS-OFFERING-HELP-0001 · SHOULD — Let your app’s tasks inform the types of help people might need · Offering help > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- HIG-PATTERNS-OFFERING-HELP-0002 · SHOULD — Use relevant and consistent language and images in your help content · Offering help > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- HIG-PATTERNS-OFFERING-HELP-0005 · SHOULD — Use the most appropriate tip type for your app’s user interface · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- HIG-PATTERNS-OFFERING-HELP-0006 · SHOULD — Use tips for simple features · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- HIG-PATTERNS-OFFERING-HELP-0007 · SHOULD — Make tips short, actionable, and engaging · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- HIG-PATTERNS-OFFERING-HELP-0008 · SHOULD — Use buttons to direct people to information or options · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- HIG-PATTERNS-OFFERING-HELP-0014 · SHOULD — Define rules to help ensure your tips reach the intended audience · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- HIG-PATTERNS-OFFERING-HELP-0015 · MAY — If there’s an image or symbol that people associate with the feature, consider including it in the tip, and · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-ONBOARDING-0003 · AVOID — Don’t let large downloads hinder onboarding · Onboarding > Additional content ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0004 · AVOID — Avoid displaying licensing details within your onboarding flow · Onboarding > Additional content ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0002 · SHOULD — Keep onboarding content focused on the experience you provide · Onboarding > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0005 · SHOULD — Prefer letting people experience your app or game before prompting them for ratings or purchases · Onboarding > Additional requests ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0001 · MAY — Consider providing a collection of context-specific tips instead of a single onboarding flow · Onboarding > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0006 · MAY — If it makes sense to offer a separate tutorial, consider making it optional · Onboarding > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
+- HIG-PATTERNS-ONBOARDING-0007 · MAY — If your app or game needs access to private data or resources before it can function, consider integrating the · Onboarding > Additional requests ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))

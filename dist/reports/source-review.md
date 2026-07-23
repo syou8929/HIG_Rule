@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2396
-- Reviewed batches: 151
+- Reviewed rules: 2418
+- Reviewed batches: 152
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:24:24Z
+- Reviewed at: 2026-07-23T09:37:40Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1861,11 +1861,21 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-MULTITASKING-0015 · high — Recovered the primary-audio response and every source example. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0016 · high — Recovered both short-interruption responses, the example, and the restoration requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0017 · high — Recovered the completion rule and preserved its no-more-input condition and examples. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
+- HIG-PATTERNS-OFFERING-HELP-0001 · high — Reframed the broad lead as a help-format decision and retained its simple-versus-complex examples. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0002 · high — Retained the general SHOULD while separating the explicit context and platform-consistency requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0003 · high — Retained MUST after confirming the unqualified Make sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0004 · high — Retained AVOID because the source uses direct Avoid guidance rather than an explicit prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0005 · high — Made the tip-type decision concrete and retained all four source mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0006 · high — Retained SHOULD and recorded the three-action example as a review signal instead of a universal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0007 · high — Retained the three related tip-quality attributes and separated length, language, and content exclusions. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0008 · high — Retained SHOULD and recorded the source's settings and information destinations. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0009 · high — Made the tooltip scope explicit and recorded the exclusion of nearby controls and larger tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0010 · high — Made the generic brevity lead concrete for macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0011 · high — Narrowed sentence-case guidance to the documented tooltip context. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0012 · high — Made the optional context-sensitive behavior concrete without elevating consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0013 · high — Recovered the qualified AVOID lead and kept it scoped to macOS and visionOS tooltips. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0014 · high — Retained SHOULD and did not promote the conditional only-if phrasing to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0015 · high — Repaired the truncated candidate and retained the explicit consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0016 · high — Recovered the macOS pointer-hover capability as MAY and recorded the app-on-Mac scope. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0017 · high — Recovered the visionOS gaze and pointer-hover capabilities as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0018 · high — Recovered the missing action-description lead and made its tooltip target explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
@@ -1875,6 +1885,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-OFFERING-HELP-0022 · high — Separated the second optional brevity technique and retained consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0023 · high — Recovered the conditional redesign prompt without promoting consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-OFFERING-HELP-0024 · high — Recovered the conditional punctuation guidance and preserved its style-consistency exception. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0025 · high — Recovered the current-task relevance recommendation separately from help-format selection. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0026 · high — Recovered the user-control recommendation without inventing a mandatory dismissal mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0027 · high — Recovered MUST from the explicit Always make sure directive and retained its input-device example. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0028 · high — Recovered MUST from the explicit Be sure directive and retained its platform-terminology examples. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0029 · high — Recovered the conditional orientation recommendation and kept its unusual-input scope. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0030 · high — Recovered the source's preferred teaching medium at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0031 · high — Recovered the action-language recommendation as a separate writing check. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0032 · high — Recovered the explicit length target at SHOULD rather than treating it as a platform-enforced limit. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0033 · high — Recovered the direct avoid guidance at AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0034 · high — Recovered the cadence recommendation without converting its 24-hour example into a threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0035 · high — Split the preference from the optional image-inclusion decision so their strengths remain distinct. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0036 · high — Recovered the conditional image-repetition guidance at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - HIG-PATTERNS-PLAYING-AUDIO-0007 · high — Narrowed the system-service recommendation to iOS and iPadOS short feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0008 · high — Made the generic preference meaningful and retained recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))
 - HIG-PATTERNS-PLAYING-AUDIO-0009 · high — Recorded the custom-element condition and the feedback and spatial purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-audio))

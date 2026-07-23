@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T09:29:46.948Z. 3023 active rules; 4 deprecated rules.
+Generated 2026-07-23T09:41:04.115Z. 3035 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -869,21 +869,21 @@ Generated 2026-07-23T09:29:46.948Z. 3023 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-MULTITASKING-0017 · SHOULD · high** — Finish a user-initiated task that needs no more input in the background before suspending. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 ### offering-help
 
-- **HIG-PATTERNS-OFFERING-HELP-0001 · SHOULD · low** — Apply the documented Offering help guidance to let your app’s tasks inform the types of help people might need. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0002 · SHOULD · low** — Choose or apply relevant and consistent language and images in your help content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0003 · MUST · medium** — Verify that all help content is inclusive. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0004 · AVOID · low** — Exclude bloating your help content by explaining how standard components or patterns work from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0005 · SHOULD · low** — Choose or apply the most appropriate tip type for your app’s user interface in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0006 · SHOULD · low** — Choose or apply tips for simple features in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0007 · SHOULD · low** — Apply the documented Offering help guidance to make tips short, actionable, and engaging. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0008 · SHOULD · low** — Choose or apply buttons to direct people to information or options in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0001 · SHOULD · high** — Match the help format to the task's complexity and scope. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0002 · SHOULD · high** — Use relevant and consistent language and imagery in help content. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0003 · MUST · high** — Ensure all help content is inclusive. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0004 · AVOID · high** — Avoid bloating help content with explanations of standard components or patterns. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0005 · SHOULD · high** — Choose the tip type that fits the feature and surrounding interface. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0006 · SHOULD · high** — Use tips for features that are easy to describe and complete in a few steps. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0007 · SHOULD · high** — Keep tips short, actionable, and engaging. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0008 · SHOULD · high** — Use buttons in tips to direct people to relevant information or options. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0009 · SHOULD · high** — In a macOS or visionOS tooltip, describe only the control a person indicates interest in. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0010 · SHOULD · high** — Keep macOS and visionOS tooltip content brief and direct. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0011 · SHOULD · high** — Use sentence case for macOS and visionOS tooltip text. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0012 · MAY · high** — Consider changing a macOS or visionOS tooltip's text to match the control's current state. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0013 · AVOID · high** — Avoid repeating a control's name in its tooltip. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0014 · SHOULD · low** — Define rules to help ensure your tips reach the intended audience explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
-- **HIG-PATTERNS-OFFERING-HELP-0015 · MAY · low** — When there’s an image or symbol that people associate with the feature, consider including it in the tip, and. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0014 · SHOULD · high** — Define eligibility rules so each tip reaches people who might benefit from it. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0015 · MAY · high** — Consider including an image or symbol people associate with the feature in its tip. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0016 · MAY · high** — Consider showing a tooltip when a person holds the pointer over a control in an app running on a Mac. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0017 · MAY · high** — Consider showing a visionOS tooltip when a person looks at a control or holds the pointer over it. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0018 · SHOULD · high** — Describe the action or task initiated by the control in its macOS or visionOS tooltip. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
@@ -893,6 +893,18 @@ Generated 2026-07-23T09:29:46.948Z. 3023 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-OFFERING-HELP-0022 · MAY · high** — Consider omitting articles to keep macOS and visionOS tooltip descriptions brief and direct. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0023 · MAY · high** — If a control needs a large amount of tooltip text, consider simplifying the interface design. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 - **HIG-PATTERNS-OFFERING-HELP-0024 · SHOULD · high** — For complete macOS and visionOS tooltip sentences, omit ending punctuation unless the app's style requires it. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0025 · SHOULD · high** — Keep help directly related to the precise action or task a person is performing. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0026 · SHOULD · high** — Keep contextual help easy to dismiss or avoid when a person doesn't need it. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0027 · MUST · high** — Ensure help guidance is appropriate for the person's current context. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0028 · MUST · high** — Ensure help terms and descriptions are consistent with the current platform. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0029 · SHOULD · high** — Quickly orient people when the experience introduces a unique control or nonstandard input method. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0030 · SHOULD · high** — Prefer animation or graphics over lengthy text when explaining unusual controls or input. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0031 · SHOULD · high** — Use direct, action-oriented language to explain what a feature does and how to use it. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0032 · SHOULD · high** — Keep each tip to one or two sentences. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0033 · AVOID · high** — Avoid promotional content or material from a different feature or user flow in a tip. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0034 · SHOULD · high** — When an app has multiple tips, set a reasonable display cadence. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0035 · SHOULD · high** — When a tip uses a familiar symbol, prefer its filled variant. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- **HIG-PATTERNS-OFFERING-HELP-0036 · AVOID · high** — When a tip connects directly to a feature image, avoid repeating that image inside the tip. ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
 ### onboarding
 
 - **HIG-PATTERNS-ONBOARDING-0001 · MAY · low** — Evaluate whether providing a collection of context-specific tips instead of a single onboarding flow is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/onboarding))
