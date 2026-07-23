@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2922
+- Active atomic rules: 2932
 - Pages without rules: 16
-- Low-confidence rules: 636
-- Rules requiring human review: 636
+- Low-confidence rules: 627
+- Rules requiring human review: 627
 - Reference notes: 904
 
 ## Rules by category
 
 - components: 1026
-- foundations: 395
+- foundations: 405
 - getting-started: 100
 - inputs: 245
 - patterns: 368
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 414
-- MAY: 343
-- MUST: 321
+- AVOID: 415
+- MAY: 345
+- MUST: 325
 - MUST_NOT: 34
-- SHOULD: 1810
+- SHOULD: 1813
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 1958
-- ipados: 1934
-- macos: 1597
-- tvos: 1232
-- visionos: 1637
-- watchos: 1331
+- ios: 1968
+- ipados: 1944
+- macos: 1607
+- tvos: 1242
+- visionos: 1647
+- watchos: 1341
 
 ## Rules by testability
 
 - hybrid: 86
-- manual: 2836
+- manual: 2846
 
 ## Blocked pages
 
@@ -129,15 +129,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-FOUNDATIONS-ICONS-0001
-- HIG-FOUNDATIONS-ICONS-0002
-- HIG-FOUNDATIONS-ICONS-0003
-- HIG-FOUNDATIONS-ICONS-0004
-- HIG-FOUNDATIONS-ICONS-0005
-- HIG-FOUNDATIONS-ICONS-0006
-- HIG-FOUNDATIONS-ICONS-0007
-- HIG-FOUNDATIONS-ICONS-0013
-- HIG-FOUNDATIONS-ICONS-0015
 - HIG-FOUNDATIONS-IMAGES-0001
 - HIG-FOUNDATIONS-IMAGES-0002
 - HIG-FOUNDATIONS-LAYOUT-0001
@@ -768,15 +759,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-FOUNDATIONS-ICONS-0001
-- HIG-FOUNDATIONS-ICONS-0002
-- HIG-FOUNDATIONS-ICONS-0003
-- HIG-FOUNDATIONS-ICONS-0004
-- HIG-FOUNDATIONS-ICONS-0005
-- HIG-FOUNDATIONS-ICONS-0006
-- HIG-FOUNDATIONS-ICONS-0007
-- HIG-FOUNDATIONS-ICONS-0013
-- HIG-FOUNDATIONS-ICONS-0015
 - HIG-FOUNDATIONS-IMAGES-0001
 - HIG-FOUNDATIONS-IMAGES-0002
 - HIG-FOUNDATIONS-LAYOUT-0001
@@ -1675,7 +1657,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Standard icons — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Standard icons — Reviewed nine action categories and 53 symbol mappings as source-linked structured context; mappings are not reproduced.
 - https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Standard icons > Editing — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Standard icons > Layer ordering — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/icons · Icons > Standard icons > Other — Section recorded for human review; no short atomic guidance lead was detected.

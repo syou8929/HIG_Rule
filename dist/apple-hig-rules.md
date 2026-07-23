@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T07:14:29.123Z. 2922 active rules; 4 deprecated rules.
+Generated 2026-07-23T07:47:44.378Z. 2932 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -286,21 +286,31 @@ Generated 2026-07-23T07:14:29.123Z. 2922 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-DARK-MODE-0020 · MUST · high** — Ensure content remains comfortably legible in both appearance modes under relevant accessibility settings. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 ### icons
 
-- **HIG-FOUNDATIONS-ICONS-0001 · SHOULD · low** — Apply the documented Icons guidance to create a recognizable, highly simplified design. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0002 · SHOULD · low** — Apply the documented Icons guidance to maintain visual consistency across all interface icons in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0003 · SHOULD · low** — Make a selected-state version of an interface icon only if necessary available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0004 · SHOULD · low** — Choose or apply inclusive images in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0005 · SHOULD · low** — Apply the documented Icons guidance to include text in your design only when it’s essential for conveying meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0006 · SHOULD · low** — Make alternative text labels for custom interface icons available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0007 · AVOID · low** — Exclude using replicas of Apple hardware products from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0001 · SHOULD · high** — Create recognizable, highly simplified interface icons. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0002 · MUST · high** — Ensure interface icons use consistent size, detail, stroke weight, and perspective. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0003 · SHOULD · high** — Provide a selected-state interface-icon asset only when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0004 · SHOULD · high** — Use inclusive imagery in interface icons. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0005 · SHOULD · high** — Include text in an interface icon only when it is essential for meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0006 · MUST · high** — Provide alternative text labels for custom interface icons. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0007 · AVOID · high** — Avoid using replicas of Apple hardware products in interface icons. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0008 · SHOULD · high** — Design simple macOS document-icon images that clearly communicate the document type. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0009 · MAY · high** — Consider reducing complexity in small versions of a macOS document icon. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0010 · AVOID · high** — Avoid important content in the top-right corner of a macOS document-icon background. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0011 · SHOULD · high** — Define a 10% margin and keep most macOS document center imagery within it. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0012 · MAY · high** — When a familiar object conveys a document type or app connection, consider using it as the center image. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0013 · SHOULD · low** — When necessary, add padding to a custom interface icon to achieve optical alignment. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0013 · SHOULD · high** — When necessary, add padding to a custom interface icon to achieve optical alignment. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - **HIG-FOUNDATIONS-ICONS-0014 · SHOULD · high** — When a file extension is unfamiliar, specify a succinct term that clarifies the macOS document type. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- **HIG-FOUNDATIONS-ICONS-0015 · SHOULD · low** — When you create a custom interface icon, use a vector format like PDF or SVG. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0015 · SHOULD · high** — Use a vector format such as PDF or SVG for a custom interface icon. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0016 · SHOULD · high** — Match the weight of interface icons to adjacent text. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0017 · SHOULD · high** — Prefer gender-neutral human figures in interface icons. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0018 · AVOID · high** — Avoid icon imagery that can be hard to recognize across cultures or languages. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0019 · MUST · high** — Localize individual characters that appear in interface icons. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0020 · SHOULD · high** — Use an abstract representation when an interface icon depicts a passage of text. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0021 · SHOULD · high** — Provide a flipped text-passage icon for right-to-left contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0022 · MUST · high** — Supply multiple versions for each PNG-based interface icon. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0023 · MAY · high** — Consider creating a custom SF Symbol for a custom interface icon. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0024 · SHOULD · high** — When depicting Apple hardware, use only Apple Design Resources images or product SF Symbols. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- **HIG-FOUNDATIONS-ICONS-0025 · MAY · high** — Consider using the documented SF Symbols to represent common actions and items. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 ### images
 
 - **HIG-FOUNDATIONS-IMAGES-0001 · SHOULD · low** — Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/images))

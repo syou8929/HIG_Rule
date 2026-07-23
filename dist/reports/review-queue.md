@@ -1,30 +1,27 @@
 # Human source-review queue
 
-- Remaining rules: 636
+- Remaining rules: 627
 - Next priority: 6 (apple-platform-common)
-- Next batch: 9
+- Next batch: 6
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 613
+- 6 (apple-platform-common): 604
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 71
+- AVOID: 70
 - MAY: 66
-- SHOULD: 499
+- SHOULD: 491
 
 ## Next batch
 
-- HIG-FOUNDATIONS-ICONS-0007 · AVOID — Avoid using replicas of Apple hardware products · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-ICONS-0001 · SHOULD — Create a recognizable, highly simplified design · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-ICONS-0002 · SHOULD — Maintain visual consistency across all interface icons in your app · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-ICONS-0003 · SHOULD — Provide a selected-state version of an interface icon only if necessary · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-ICONS-0004 · SHOULD — Use inclusive images · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-ICONS-0005 · SHOULD — Include text in your design only when it’s essential for conveying meaning · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-ICONS-0006 · SHOULD — Provide alternative text labels for custom interface icons · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-ICONS-0013 · SHOULD — If necessary, add padding to a custom interface icon to achieve optical alignment · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-ICONS-0015 · SHOULD — If you create a custom interface icon, use a vector format like PDF or SVG · Icons > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-MATERIALS-0001 · AVOID — Don’t use Liquid Glass in the content layer · Materials > Liquid Glass ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0002 · SHOULD — Use Liquid Glass effects sparingly · Materials > Liquid Glass ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0003 · SHOULD — Choose materials and effects based on semantic meaning and recommended usage · Materials > Standard materials ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0004 · SHOULD — Help ensure legibility by using vibrant colors on top of materials · Materials > Standard materials ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0005 · MAY — Consider contrast and visual separation when choosing a material to combine with blur and vibrancy effects · Materials > Standard materials ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MATERIALS-0013 · MAY — If the underlying content is bright, consider adding a dark dimming layer of 35% opacity. For developer gui… · Materials > Liquid Glass ([source](https://developer.apple.com/design/human-interface-guidelines/materials))

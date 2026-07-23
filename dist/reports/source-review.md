@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2237
-- Reviewed batches: 144
+- Reviewed rules: 2256
+- Reviewed batches: 145
 - Official source only: yes
-- Reviewed at: 2026-07-23T07:10:53Z
+- Reviewed at: 2026-07-23T07:42:05Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1110,12 +1110,31 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-DARK-MODE-0018 · high — Recovered the higher custom-color target as SHOULD rather than treating it as the minimum. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-DARK-MODE-0019 · high — Activated the Soften lead and preserved the image and Dark Mode conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 - HIG-FOUNDATIONS-DARK-MODE-0020 · high — Recorded the split explicit make-sure legibility outcome as an accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-FOUNDATIONS-ICONS-0001 · high — Recorded simplicity, recognizability, and metaphor familiarity as one design outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0002 · high — Raised the rule to MUST from the supporting prose's explicit need-to requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0003 · high — Recorded the system-provided behavior and limited custom assets to necessary cases. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0004 · high — Retained the general inclusive-imagery rule and split two concrete outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0005 · high — Retained the qualified recommendation and split the source's localization outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0006 · high — Retained this unqualified accessibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0007 · high — Retained direct Avoid guidance as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0008 · high — Recorded the shape, palette, and minimum rendered-size constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0009 · high — Retained MAY and recorded the source's size-specific simplification techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0010 · high — Recorded the fold-mask obstruction and every documented background asset size. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0011 · high — Recorded the 10% margin, 80% occupancy, numeric example, and optical-alignment exception. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0012 · high — Restored the truncated condition and recorded every center-image size. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0013 · high — Recorded the asymmetric-icon condition and retained the conditional recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0014 · high — Recovered the omitted Specify lead and recorded the extension, scaling, and capitalization behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0015 · high — Retained the conditional recommendation and separated the stronger PNG consequence. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0016 · high — Activated the previously unrecognized general guidance and retained its emphasis exception. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0017 · high — Recovered the concrete inclusive-figure recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0018 · high — Recovered direct Avoid guidance as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0019 · high — Recovered the explicit Be sure localization requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0020 · high — Recovered the passage-specific abstraction outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0021 · high — Recovered the direction-specific asset outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0022 · high — Recovered the explicit need-to requirement and its raster-format condition. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0023 · high — Recovered the optional custom-symbol branch and its scale constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0024 · high — Recovered the conditional official-resource guidance without promoting it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-ICONS-0025 · high — Recovered the optional standard-symbol guidance and preserved its mapping tables as structured context. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-IMAGES-0004 · high — Recorded the standard-view and system-focus mechanism that supplies automatic parallax. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0005 · high — Recorded the higher-layer allowance and the explicit opaque-background requirement and failure mode. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0006 · high — Recorded the intended subtlety and the excessive-depth anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/images))

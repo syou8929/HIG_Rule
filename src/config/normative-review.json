@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T07:10:53Z",
+  "reviewed_at": "2026-07-23T07:42:05Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "977e54a2aa92b62ed6670f132305c8c5d72905ccc9b7bff977fbd154e2211db2",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 355,
+  "reviewed_rule_count": 359,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -2478,6 +2478,70 @@
         "Treat 4.5:1 as the documented minimum; the separate custom-color rule recommends a higher ratio."
       ],
       "review_note": "Recovered the explicit at-a-minimum Make sure contrast requirement separately from general and higher-target guidance."
+    },
+    "HIG-FOUNDATIONS-ICONS-0002": {
+      "title": "Maintain visual consistency across interface icons",
+      "statement": {
+        "en": "Ensure interface icons use consistent size, detail, stroke weight, and perspective.",
+        "ja": "interface iconのsize、detail、stroke weight、perspectiveを一貫させる。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Adjust dimensions when visual weight makes nominally equal icons appear inconsistent."
+      ],
+      "review_note": "Raised the rule to MUST from the supporting prose's explicit need-to requirement."
+    },
+    "HIG-FOUNDATIONS-ICONS-0006": {
+      "title": "Provide alternative text for custom interface icons",
+      "statement": {
+        "en": "Provide alternative text labels for custom interface icons.",
+        "ja": "custom interface iconにalternative text labelを提供する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Enable VoiceOver to describe each custom icon."
+      ],
+      "review_note": "Retained this unqualified accessibility requirement as MUST."
+    },
+    "HIG-FOUNDATIONS-ICONS-0019": {
+      "title": "Localize individual characters in interface icons",
+      "statement": {
+        "en": "Localize individual characters that appear in interface icons.",
+        "ja": "interface iconに表示するindividual characterをlocalizeする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Apply when an icon uses an individual character to convey meaning."
+      ],
+      "review_note": "Recovered the explicit Be sure localization requirement as MUST."
+    },
+    "HIG-FOUNDATIONS-ICONS-0022": {
+      "title": "Supply multiple versions of PNG interface icons",
+      "statement": {
+        "en": "Supply multiple versions for each PNG-based interface icon.",
+        "ja": "PNG-based interface iconごとに複数のversionを用意する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "PNG assets do not scale across resolutions."
+      ],
+      "review_note": "Recovered the explicit need-to requirement and its raster-format condition."
     },
     "HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029": {
       "title": "Display comfortable motion in a Full Space",
