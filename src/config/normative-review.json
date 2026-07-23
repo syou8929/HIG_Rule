@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T06:32:16Z",
+  "reviewed_at": "2026-07-23T06:47:59Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "977e54a2aa92b62ed6670f132305c8c5d72905ccc9b7bff977fbd154e2211db2",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 345,
+  "reviewed_rule_count": 347,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -2300,6 +2300,38 @@
         "The app offers alternate icons on a supported platform."
       ],
       "review_note": "Recovered the conditional Make sure identity requirement and narrowed supported platforms."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0008": {
+      "title": "Ensure custom fonts remain legible and support text accessibility",
+      "statement": {
+        "en": "When using a custom font, ensure it remains legible at all sizes and supports Bold Text and larger type.",
+        "ja": "custom fontを使う場合、すべてのsizeでlegibleにしBold Textとlarger typeをsupportする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The requirement applies only when the experience uses a custom font."
+      ],
+      "review_note": "Recovered the conditional Be sure accessibility requirement without requiring a custom font."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0012": {
+      "title": "Never include Apple trademarks in app names or images",
+      "statement": {
+        "en": "Never include Apple trademarks in app names or images.",
+        "ja": "app nameやimageにApple trademarkを含めない。"
+      },
+      "normative_level": "MUST_NOT",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "prohibit",
+      "severity": "error",
+      "conditions": [
+        "Apply to every app name and image that refers to Apple brands."
+      ],
+      "review_note": "Recovered the explicit must-not prohibition separately from the general trademark-guidelines recommendation."
     },
     "HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029": {
       "title": "Display comfortable motion in a Full Space",

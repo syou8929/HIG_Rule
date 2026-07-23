@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T06:32:16Z",
+  "reviewed_at": "2026-07-23T06:47:59Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -845,6 +845,34 @@
         "HIG-FOUNDATIONS-APP-ICONS-0040"
       ],
       "review_note": "Completed common App icons coverage; retained sixteen existing IDs, recovered twenty-one atomic rules including four platform specification rows, retained six explicit conditional Ensure or Make sure outcomes as MUST, kept direct Don't and Avoid guidance below MUST_NOT, and reclassified Display P3 support as MAY."
+    },
+    {
+      "id": "priority-6-branding-common-context-2026-07-23",
+      "reviewed_at": "2026-07-23T06:47:59Z",
+      "review_method": "Rendered Apple HIG Branding best practices and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/branding",
+          "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-BRANDING-0001",
+        "HIG-FOUNDATIONS-BRANDING-0002",
+        "HIG-FOUNDATIONS-BRANDING-0003",
+        "HIG-FOUNDATIONS-BRANDING-0004",
+        "HIG-FOUNDATIONS-BRANDING-0005",
+        "HIG-FOUNDATIONS-BRANDING-0006",
+        "HIG-FOUNDATIONS-BRANDING-0007",
+        "HIG-FOUNDATIONS-BRANDING-0008",
+        "HIG-FOUNDATIONS-BRANDING-0009",
+        "HIG-FOUNDATIONS-BRANDING-0010",
+        "HIG-FOUNDATIONS-BRANDING-0011",
+        "HIG-FOUNDATIONS-BRANDING-0012"
+      ],
+      "review_note": "Completed Branding coverage; corrected brand voice so it isn't treated as voice input, recovered five atomic rules, retained custom-font accessibility as conditional MUST, and split the explicit Apple-trademark prohibition into MUST_NOT."
     },
     {
       "id": "priority-4-color-platform-context-2026-07-21",
@@ -21834,6 +21862,192 @@
       "review_required": false,
       "conditions": ["Lighten a black background so the icon doesn't blend into the display background."],
       "review_note": "Recorded the display-background blending risk and lightening mitigation."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0001": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "4ff0e3f326da2f56470d8d43b2d92bc09df4913959c5f46eb830cfc77ecb03bd",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Use the brand’s voice and tone consistently in displayed writing",
+      "statement": {
+        "en": "Use the brand’s voice and tone consistently in all displayed writing.",
+        "ja": "表示するすべてのwritingでbrandのvoiceとtoneを一貫して使う。"
+      },
+      "scope": {
+        "portability": "apple-platform",
+        "platforms": ["ios", "ipados", "macos", "tvos", "visionos", "watchos"],
+        "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro", "apple-watch"],
+        "components": [],
+        "modalities": []
+      },
+      "conditions": ["Match word choice, punctuation, emoji, and sentence structure to the intended brand character."],
+      "review_note": "Removed the generated voice-input modality because brand voice describes writing style, not spoken interaction."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0002": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "4125f7dfb48770ed05cabfd480726033e09a7556e0b6f786b585812745d57c03",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Consider expressing the brand with an accent color",
+      "statement": {
+        "en": "Consider choosing an accent color that expresses the brand.",
+        "ja": "brandを表現するaccent colorの選択を検討する。"
+      },
+      "conditions": [
+        "The system can apply an app accent color to interface icons, buttons, and text.",
+        "On macOS, a person’s chosen accent color can replace the color specified by the app."
+      ],
+      "review_note": "Preserved Consider as MAY and recorded the macOS user-choice override."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0003": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "73d7879f4fd7f15856592812b951fc5e37e489f081e93fc5db849605649f42a8",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Consider a custom font when it is strongly associated with the brand",
+      "statement": {
+        "en": "Consider using a custom font when it is strongly associated with the brand.",
+        "ja": "brandと強く関連する場合はcustom fontの使用を検討する。"
+      },
+      "conditions": ["The separate custom-font accessibility requirement applies whenever a custom font is used."],
+      "review_note": "Preserved Consider as MAY and separated the conditional accessibility MUST."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0004": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "24fe14737fe533f94d32a4fca330fe88c644fc5ed7131e754e684839c4bedbe7",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Ensure branding defers to content",
+      "statement": {
+        "en": "Ensure brand assets and styling defer to the content people care about.",
+        "ja": "brand assetやstylingより人が重視するcontentを優先する。"
+      },
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Don't consume content space with an element whose only function is displaying a brand asset."],
+      "review_note": "Retained MUST from the explicit Ensure directive and recorded the content-space outcome."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0005": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "b6081124569c34f038dd964aef9ea0949058b201bfa211cacf8ab57a80db73b4",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Use standard platform patterns consistently",
+      "statement": {
+        "en": "Use standard platform patterns consistently so a stylized interface retains familiar behavior.",
+        "ja": "stylized interfaceでもfamiliarなbehaviorを保つようstandard platform patternを一貫して使う。"
+      },
+      "conditions": ["Place interface components where people expect and use standard symbols for common actions."],
+      "review_note": "Repaired the generic generated statement and recorded the two documented pattern examples."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0006": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "5e5a7a0b58563eb92bcfbffd966b3464d4c50c84715e8eff31165e9396b50822",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "statement": {
+        "en": "Avoid using a launch screen as a branding opportunity.",
+        "ja": "launch screenをbranding opportunityとして使わない。"
+      },
+      "conditions": ["Launch screens minimize perceived startup time and disappear too quickly to convey information."],
+      "review_note": "Kept the direct Avoid guidance at AVOID and separated the optional welcome-screen alternative."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0007": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "49d45e52f4e1248fbfa66f06947abe2d46773f310bb76aa7ab768db0530a6765",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "statement": {
+        "en": "Follow Apple’s trademark guidelines when referring to Apple brands.",
+        "ja": "Apple brandを参照する場合はApple trademark guidelineに従う。"
+      },
+      "conditions": ["The linked trademark guidelines contain requirements beyond this HIG page."],
+      "review_note": "Retained the general Follow lead at SHOULD and split the page's explicit must-not prohibition."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0008": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "73d7879f4fd7f15856592812b951fc5e37e489f081e93fc5db849605649f42a8",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Ensure custom fonts remain legible and support text accessibility",
+      "statement": {
+        "en": "When using a custom font, ensure it remains legible at all sizes and supports Bold Text and larger type.",
+        "ja": "custom fontを使う場合、すべてのsizeでlegibleにしBold Textとlarger typeをsupportする。"
+      },
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["The requirement applies only when the experience uses a custom font."],
+      "review_note": "Recovered the conditional Be sure accessibility requirement without requiring a custom font."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0009": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "24fe14737fe533f94d32a4fca330fe88c644fc5ed7131e754e684839c4bedbe7",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Keep branding refined and unobtrusive",
+      "statement": {
+        "en": "Keep branding refined and unobtrusive so it doesn't distract people from content.",
+        "ja": "contentから注意をそらさないrefinedでunobtrusiveなbrandingにする。"
+      },
+      "conditions": ["Apply alongside the mandatory outcome that branding defers to content."],
+      "review_note": "Recovered the source's Aim recommendation separately from the Ensure-based MUST."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0010": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "3f34bca033e641ecf0b56d48c618a5815bea3e06f2c0f5fd856842cfbb11bba5",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Avoid displaying logos throughout an app or game",
+      "statement": {
+        "en": "Avoid displaying a logo throughout an app or game unless it is essential for context.",
+        "ja": "contextに不可欠な場合を除きappやgame全体でlogoを表示し続けない。"
+      },
+      "conditions": ["Prefer using the space for valuable information and controls."],
+      "exceptions": ["A logo can appear where it is essential to provide context."],
+      "review_note": "Activated the previously unrecognized Resist lead as qualified AVOID."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0011": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "5e5a7a0b58563eb92bcfbffd966b3464d4c50c84715e8eff31165e9396b50822",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Consider a branded welcome or onboarding screen instead of a launch screen",
+      "statement": {
+        "en": "Consider presenting branding content in an initial welcome or onboarding screen instead of a launch screen.",
+        "ja": "launch screenではなく最初のwelcomeまたはonboarding screenでbranding contentを示すことを検討する。"
+      },
+      "conditions": ["The experience needs to introduce branding content at startup."],
+      "review_note": "Recovered the source's might-consider alternative as MAY."
+    },
+    "HIG-FOUNDATIONS-BRANDING-0012": {
+      "source": {
+        "source_hash": "19c3f00c66f5507ce5def46783767162de774d57acceb29cb96fd47f186bbc7e",
+        "source_sentence_hash": "49d45e52f4e1248fbfa66f06947abe2d46773f310bb76aa7ab768db0530a6765",
+        "section_path": ["Branding", "Best practices"]
+      },
+      "title": "Never include Apple trademarks in app names or images",
+      "statement": {
+        "en": "Never include Apple trademarks in app names or images.",
+        "ja": "app nameやimageにApple trademarkを含めない。"
+      },
+      "normative_level": "MUST_NOT",
+      "polarity": "prohibit",
+      "severity": "error",
+      "conditions": ["Apply to every app name and image that refers to Apple brands."],
+      "review_note": "Recovered the explicit must-not prohibition separately from the general trademark-guidelines recommendation."
     },
     "HIG-FOUNDATIONS-COLOR-0017": {
       "source": {

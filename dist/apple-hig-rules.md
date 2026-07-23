@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T06:40:32.727Z. 2894 active rules; 4 deprecated rules.
+Generated 2026-07-23T06:50:41.468Z. 2899 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -210,13 +210,18 @@ Generated 2026-07-23T06:40:32.727Z. 2894 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-APP-ICONS-0040 · SHOULD · high** — Create a square 1088×1088 px layered app-icon layout for watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 ### branding
 
-- **HIG-FOUNDATIONS-BRANDING-0001 · SHOULD · low** — Choose or apply your brand’s unique voice and tone in all the written communication you display in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
-- **HIG-FOUNDATIONS-BRANDING-0002 · MAY · low** — Evaluate whether choosing an accent color is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
-- **HIG-FOUNDATIONS-BRANDING-0003 · MAY · low** — Evaluate whether using a custom font is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
-- **HIG-FOUNDATIONS-BRANDING-0004 · MUST · medium** — Verify that branding always defers to content. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
-- **HIG-FOUNDATIONS-BRANDING-0005 · SHOULD · low** — Apply the documented Branding guidance to help people feel comfortable by using standard patterns consistently. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
-- **HIG-FOUNDATIONS-BRANDING-0006 · AVOID · low** — Exclude using a launch screen as a branding opportunity from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
-- **HIG-FOUNDATIONS-BRANDING-0007 · SHOULD · low** — Apply the documented Branding guidance to follow Apple’s trademark guidelines. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0001 · SHOULD · high** — Use the brand’s voice and tone consistently in all displayed writing. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0002 · MAY · high** — Consider choosing an accent color that expresses the brand. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0003 · MAY · high** — Consider using a custom font when it is strongly associated with the brand. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0004 · MUST · high** — Ensure brand assets and styling defer to the content people care about. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0005 · SHOULD · high** — Use standard platform patterns consistently so a stylized interface retains familiar behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0006 · AVOID · high** — Avoid using a launch screen as a branding opportunity. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0007 · SHOULD · high** — Follow Apple’s trademark guidelines when referring to Apple brands. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0008 · MUST · high** — When using a custom font, ensure it remains legible at all sizes and supports Bold Text and larger type. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0009 · SHOULD · high** — Keep branding refined and unobtrusive so it doesn't distract people from content. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0010 · AVOID · high** — Avoid displaying a logo throughout an app or game unless it is essential for context. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0011 · MAY · high** — Consider presenting branding content in an initial welcome or onboarding screen instead of a launch screen. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- **HIG-FOUNDATIONS-BRANDING-0012 · MUST_NOT · high** — Never include Apple trademarks in app names or images. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
 ### color
 
 - **HIG-FOUNDATIONS-COLOR-0001 · AVOID · low** — Exclude using the same color to mean different things from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color))

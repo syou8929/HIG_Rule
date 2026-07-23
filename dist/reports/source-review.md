@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2177
-- Reviewed batches: 140
+- Reviewed rules: 2189
+- Reviewed batches: 141
 - Official source only: yes
-- Reviewed at: 2026-07-23T06:32:16Z
+- Reviewed at: 2026-07-23T06:47:59Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1040,6 +1040,18 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-APP-ICONS-0038 · high — Recovered the complete tvOS specification row as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - HIG-FOUNDATIONS-APP-ICONS-0039 · high — Recovered the complete visionOS specification row as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - HIG-FOUNDATIONS-APP-ICONS-0040 · high — Recovered the complete watchOS specification row as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-BRANDING-0001 · high — Removed the generated voice-input modality because brand voice describes writing style, not spoken interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0002 · high — Preserved Consider as MAY and recorded the macOS user-choice override. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0003 · high — Preserved Consider as MAY and separated the conditional accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0004 · high — Retained MUST from the explicit Ensure directive and recorded the content-space outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0005 · high — Repaired the generic generated statement and recorded the two documented pattern examples. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0006 · high — Kept the direct Avoid guidance at AVOID and separated the optional welcome-screen alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0007 · high — Retained the general Follow lead at SHOULD and split the page's explicit must-not prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0008 · high — Recovered the conditional Be sure accessibility requirement without requiring a custom font. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0009 · high — Recovered the source's Aim recommendation separately from the Ensure-based MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0010 · high — Activated the previously unrecognized Resist lead as qualified AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0011 · high — Recovered the source's might-consider alternative as MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
+- HIG-FOUNDATIONS-BRANDING-0012 · high — Recovered the explicit must-not prohibition separately from the general trademark-guidelines recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/branding))
 - HIG-FOUNDATIONS-COLOR-0017 · high — Retained MAY and recorded the content-first branding rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0018 · high — Recorded the noncolor focus cues from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0019 · high — Recorded the glass-transmission legibility risk and intended emphasis cases. ([source](https://developer.apple.com/design/human-interface-guidelines/color))

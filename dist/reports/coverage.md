@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2894
+- Active atomic rules: 2899
 - Pages without rules: 16
-- Low-confidence rules: 664
-- Rules requiring human review: 664
+- Low-confidence rules: 658
+- Rules requiring human review: 658
 - Reference notes: 904
 
 ## Rules by category
 
 - components: 1026
-- foundations: 367
+- foundations: 372
 - getting-started: 100
 - inputs: 245
 - patterns: 368
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 411
-- MAY: 341
-- MUST: 312
-- MUST_NOT: 33
-- SHOULD: 1797
+- AVOID: 412
+- MAY: 342
+- MUST: 313
+- MUST_NOT: 34
+- SHOULD: 1798
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 1930
-- ipados: 1906
-- macos: 1574
-- tvos: 1210
-- visionos: 1622
-- watchos: 1317
+- ios: 1935
+- ipados: 1911
+- macos: 1579
+- tvos: 1215
+- visionos: 1627
+- watchos: 1322
 
 ## Rules by testability
 
 - hybrid: 82
-- manual: 2812
+- manual: 2817
 
 ## Blocked pages
 
@@ -129,12 +129,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-FOUNDATIONS-BRANDING-0001
-- HIG-FOUNDATIONS-BRANDING-0002
-- HIG-FOUNDATIONS-BRANDING-0003
-- HIG-FOUNDATIONS-BRANDING-0005
-- HIG-FOUNDATIONS-BRANDING-0006
-- HIG-FOUNDATIONS-BRANDING-0007
 - HIG-FOUNDATIONS-COLOR-0001
 - HIG-FOUNDATIONS-COLOR-0003
 - HIG-FOUNDATIONS-COLOR-0004
@@ -796,12 +790,6 @@ None.
 - HIG-COMPONENTS-SNIPPETS-0004
 - HIG-COMPONENTS-STEPPERS-0001
 - HIG-COMPONENTS-STEPPERS-0002
-- HIG-FOUNDATIONS-BRANDING-0001
-- HIG-FOUNDATIONS-BRANDING-0002
-- HIG-FOUNDATIONS-BRANDING-0003
-- HIG-FOUNDATIONS-BRANDING-0005
-- HIG-FOUNDATIONS-BRANDING-0006
-- HIG-FOUNDATIONS-BRANDING-0007
 - HIG-FOUNDATIONS-COLOR-0001
 - HIG-FOUNDATIONS-COLOR-0003
 - HIG-FOUNDATIONS-COLOR-0004
