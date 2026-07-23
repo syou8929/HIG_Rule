@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3289
-- Reviewed batches: 188
+- Reviewed rules: 3295
+- Reviewed batches: 189
 - Official source only: yes
-- Reviewed at: 2026-07-23T22:20:00Z
+- Reviewed at: 2026-07-23T23:00:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -749,6 +749,8 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SIDEBARS-0020 · high — Recovered the distinct macOS Make sure requirement and its narrow fixed-color exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0021 · high — Recovered the developer note's two supported implementation choices. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 - HIG-COMPONENTS-SIDEBARS-0022 · high — Preserved the If necessary qualification and concrete UIKit appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
+- HIG-COMPONENTS-SLIDERS-0001 · high — Recovered both horizontal and vertical direction mappings from the supporting source sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- HIG-COMPONENTS-SLIDERS-0002 · high — Preserved the optional Consider strength and recorded the distinct text-entry and increment purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0003 · high — Repaired the ungrammatical generated statement and recorded the volume-view replacement. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0004 · high — Preserved the optional strength and recorded the real-time feedback intent. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0005 · high — Corrected the possessive and recorded the linear-versus-circular mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
@@ -756,6 +758,10 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-SLIDERS-0007 · high — Replaced generic wording with the scale and value-location purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0008 · high — Recorded selective labeling, nonlinear context, and the thumb-value tooltip option. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SLIDERS-0009 · high — Recorded the gesture-comfort rationale and corrected the platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- HIG-COMPONENTS-SLIDERS-0010 · high — Recovered the qualified customization directive and its design or communication purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- HIG-COMPONENTS-SLIDERS-0011 · high — Recorded the descriptive platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- HIG-COMPONENTS-SLIDERS-0012 · high — Split the optional pointer-hover tooltip from tick-mark labeling so it remains independently reviewable. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- HIG-COMPONENTS-SLIDERS-0013 · high — Recovered the conditional custom-glyph directive and preserved the default signs as context. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - HIG-COMPONENTS-SPLIT-VIEWS-0001 · high — Preserved MAY and recorded the cross-hierarchy movement purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-SPLIT-VIEWS-0002 · high — Retained SHOULD and made the regular-versus-compact width condition concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))
 - HIG-COMPONENTS-SPLIT-VIEWS-0003 · high — Preserved MAY and recorded the editing-space and distraction conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/split-views))

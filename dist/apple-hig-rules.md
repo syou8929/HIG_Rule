@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:59:55.633Z. 3472 active rules; 7 deprecated rules.
+Generated 2026-07-23T19:05:46.040Z. 3476 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1996,8 +1996,8 @@ Generated 2026-07-23T18:59:55.633Z. 3472 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-SIDEBARS-0022 · SHOULD · high** — When not using SwiftUI for an iOS or iPadOS sidebar, apply the collection-view sidebar appearance if needed. ([source](https://developer.apple.com/design/human-interface-guidelines/sidebars))
 ### sliders
 
-- **HIG-COMPONENTS-SLIDERS-0001 · SHOULD · low** — Choose or apply familiar slider directions in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
-- **HIG-COMPONENTS-SLIDERS-0002 · MAY · low** — Evaluate whether supplementing a slider with a corresponding text field and stepper is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- **HIG-COMPONENTS-SLIDERS-0001 · SHOULD · high** — Use familiar minimum-to-maximum directions for sliders. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- **HIG-COMPONENTS-SLIDERS-0002 · MAY · high** — Consider supplementing a slider with a corresponding text field and stepper. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - **HIG-COMPONENTS-SLIDERS-0003 · AVOID · high** — Avoid a generic slider for iOS or iPadOS audio volume. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - **HIG-COMPONENTS-SLIDERS-0004 · MAY · high** — Consider showing live feedback as a macOS slider's value changes. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - **HIG-COMPONENTS-SLIDERS-0005 · SHOULD · high** — Choose a macOS slider style that matches people's expectations. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
@@ -2005,6 +2005,10 @@ Generated 2026-07-23T18:59:55.633Z. 3472 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-SLIDERS-0007 · SHOULD · high** — Use tick marks to clarify a macOS slider's scale and values. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - **HIG-COMPONENTS-SLIDERS-0008 · MAY · high** — Consider labeling macOS slider tick marks when labels improve clarity. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 - **HIG-COMPONENTS-SLIDERS-0009 · SHOULD · high** — Prefer horizontal sliders in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- **HIG-COMPONENTS-SLIDERS-0010 · SHOULD · high** — Customize a slider's appearance only when the customization adds value. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- **HIG-COMPONENTS-SLIDERS-0011 · AVOID · high** — Avoid using sliders on tvOS. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- **HIG-COMPONENTS-SLIDERS-0012 · MAY · high** — Consider showing a macOS slider's thumb value in a tooltip on pointer hover. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
+- **HIG-COMPONENTS-SLIDERS-0013 · SHOULD · high** — When necessary, use custom watchOS slider glyphs that communicate the slider's purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/sliders))
 ### snippets
 
 - **HIG-COMPONENTS-SNIPPETS-0001 · MUST · medium** — Verify that legibility. ([source](https://developer.apple.com/design/human-interface-guidelines/snippets))

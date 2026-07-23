@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T22:20:00Z",
+  "reviewed_at": "2026-07-23T23:00:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5082,9 +5082,140 @@
         "HIG-COMPONENTS-SIDEBARS-0022"
       ],
       "review_note": "Completed Sidebars coverage, preserved all ten existing IDs, recovered twelve atomic layout, hierarchy, customization, interaction, color, and implementation rules, and retained only the two explicit color Make sure outcomes at MUST."
+    },
+    {
+      "id": "priority-6-sliders-complete-context-2026-07-24",
+      "reviewed_at": "2026-07-23T23:00:00Z",
+      "review_method": "Rendered Apple HIG Sliders overview, complete best-practice, platform, iOS and iPadOS, macOS, visionOS, watchOS, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/sliders",
+          "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-SLIDERS-0001",
+        "HIG-COMPONENTS-SLIDERS-0002",
+        "HIG-COMPONENTS-SLIDERS-0010",
+        "HIG-COMPONENTS-SLIDERS-0011",
+        "HIG-COMPONENTS-SLIDERS-0012",
+        "HIG-COMPONENTS-SLIDERS-0013"
+      ],
+      "review_note": "Completed Sliders coverage, preserved all nine existing IDs, recovered four atomic appearance, tvOS availability, macOS tooltip, and watchOS glyph rules, and kept every qualified or unsupported-platform outcome below MUST."
     }
   ],
   "rules": {
+    "HIG-COMPONENTS-SLIDERS-0001": {
+      "source": {
+        "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+        "source_sentence_hash": "596098805dc92974e77880f094743d1d8cd4a5312dc3f04b502980d4579fc86d",
+        "section_path": ["Sliders", "Best practices"]
+      },
+      "title": "Use familiar minimum-to-maximum slider directions",
+      "statement": {
+        "en": "Use familiar minimum-to-maximum directions for sliders.",
+        "ja": "sliderには見慣れたminimumからmaximumへの方向を使う。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "For horizontal sliders, place the minimum on the leading side and maximum on the trailing side.",
+        "For vertical sliders, place the minimum at the bottom and maximum at the top."
+      ],
+      "review_note": "Recovered both horizontal and vertical direction mappings from the supporting source sentence."
+    },
+    "HIG-COMPONENTS-SLIDERS-0002": {
+      "source": {
+        "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+        "source_sentence_hash": "22bb9fcbee02d87338002d6d315f5f20158a4a4d1313920e351cb86cfeffec9a",
+        "section_path": ["Sliders", "Best practices"]
+      },
+      "title": "Consider a text field and stepper alongside a slider",
+      "statement": {
+        "en": "Consider supplementing a slider with a corresponding text field and stepper.",
+        "ja": "sliderに対応するtext fieldとstepperを追加することを検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": [
+        "This can help when the slider represents a wide value range.",
+        "A text field can show the exact value and accept a specific value.",
+        "A stepper can provide convenient whole-value increments."
+      ],
+      "review_note": "Preserved the optional Consider strength and recorded the distinct text-entry and increment purposes."
+    },
+    "HIG-COMPONENTS-SLIDERS-0010": {
+      "source": {
+        "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+        "source_sentence_hash": "cf4d677323dfea6cbf7d2e9dd13e3e2c2f035c8b83ab75f6022b223821a6e005",
+        "section_path": ["Sliders", "Best practices"]
+      },
+      "title": "Customize a slider only when it adds value",
+      "statement": {
+        "en": "Customize a slider's appearance only when the customization adds value.",
+        "ja": "sliderのappearanceはカスタマイズに価値がある場合に限って変更する。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "Track color, thumb image or tint, and endpoint icons can blend with the app design or communicate intent."
+      ],
+      "review_note": "Recovered the qualified customization directive and its design or communication purpose."
+    },
+    "HIG-COMPONENTS-SLIDERS-0011": {
+      "source": {
+        "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+        "source_sentence_hash": "ee9dc44309c151c6a72bb7d6eed9032255e62bfabb7c5104deebfba98ced2934",
+        "section_path": ["Sliders", "Platform considerations"]
+      },
+      "title": "Avoid sliders on tvOS",
+      "statement": {
+        "en": "Avoid using sliders on tvOS.",
+        "ja": "tvOSでsliderを使わない。"
+      },
+      "normative_level": "AVOID",
+      "scope": {
+        "portability": "apple-component-specific",
+        "platforms": ["tvos"],
+        "devices": ["apple-tv"],
+        "components": ["sliders"],
+        "modalities": []
+      },
+      "review_note": "Recorded the descriptive platform limitation at AVOID rather than MUST_NOT."
+    },
+    "HIG-COMPONENTS-SLIDERS-0012": {
+      "source": {
+        "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+        "source_sentence_hash": "cf3c7b19b986c6d0c8dcb6132a87963111a10fe02e3ba8793ef2f0c2762b11f5",
+        "section_path": ["Sliders", "Platform considerations", "macOS"]
+      },
+      "title": "Consider a thumb-value tooltip for a macOS slider",
+      "statement": {
+        "en": "Consider showing a macOS slider's thumb value in a tooltip on pointer hover.",
+        "ja": "macOS sliderのthumbにpointerを重ねたとき値をtooltipで表示することを検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": [
+        "The tooltip appears while people hold the pointer over the thumb."
+      ],
+      "review_note": "Split the optional pointer-hover tooltip from tick-mark labeling so it remains independently reviewable."
+    },
+    "HIG-COMPONENTS-SLIDERS-0013": {
+      "source": {
+        "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+        "source_sentence_hash": "981ba22c5a0349c1bb49c32c00e8f0aebf058856659830012a0581dcc290638b",
+        "section_path": ["Sliders", "Platform considerations", "watchOS"]
+      },
+      "title": "Use custom watchOS slider glyphs when necessary",
+      "statement": {
+        "en": "When necessary, use custom watchOS slider glyphs that communicate the slider's purpose.",
+        "ja": "必要な場合はsliderの目的を伝えるcustom glyphをwatchOS sliderで使う。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "The system displays plus and minus signs by default."
+      ],
+      "review_note": "Recovered the conditional custom-glyph directive and preserved the default signs as context."
+    },
     "HIG-COMPONENTS-SIDEBARS-0001": {
       "source": {
         "source_hash": "6bb1616d50e227c2f2d4a107ff61f578a5ba81693ff007534b02c4e8ad0ff5d2",
