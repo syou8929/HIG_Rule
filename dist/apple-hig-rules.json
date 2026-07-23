@@ -233551,8 +233551,8 @@
       "ja": "「Maps」において「Help people find places in your map」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -233630,8 +233630,8 @@
       "ja": "「Maps」において「Help people see the Apple logo and legal link」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -233656,7 +233656,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Temporary coverage is acceptable, but the Apple logo and legal link must not remain covered all the time."
     ],
     "exceptions": [],
     "rationale": {
@@ -233709,8 +233709,8 @@
       "ja": "該当する状況ではannotations that match the visual style of your appを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -233788,8 +233788,8 @@
       "ja": "該当する状況ではoverlays to define map areas with a specific relationship to your contentを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -233858,16 +233858,16 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-MAPS-0005",
-    "title": "Make sure there’s enough contrast between custom controls and the map",
+    "title": "Ensure custom controls contrast with the map",
     "category": "technologies",
     "topic": "maps",
     "subtopic": "custom-information",
     "statement": {
-      "en": "Verify that there’s enough contrast between custom controls and the map.",
-      "ja": "there’s enough contrast between custom controls and the mapを満たしていることを確認する。"
+      "en": "Ensure there is enough contrast between custom controls and the map.",
+      "ja": "custom controlとmapの間に十分なcontrastを確保する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -233893,7 +233893,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Consider a thin stroke, light shadow, or map blend mode when it improves control visibility."
     ],
     "exceptions": [],
     "rationale": {
@@ -233905,7 +233905,7 @@
         "Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold."
       ],
       "manual": [
-        "Does the design satisfy “Verify that there’s enough contrast between custom controls and the map.” in the documented Maps context?"
+        "Does the design satisfy “Ensure there is enough contrast between custom controls and the map.” in the documented Maps context?"
       ]
     },
     "testability": "hybrid",
@@ -233925,7 +233925,7 @@
       "retrieved_at": "2026-07-21T22:04:11Z",
       "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
       "source_sentence_hash": "ce7d0c7e589c360a39f0b9835d6a5c86142cba84b93e70d415467df31318515a",
-      "evidence_paraphrase": "Verify that there’s enough contrast between custom controls and the map."
+      "evidence_paraphrase": "Ensure there is enough contrast between custom controls and the map."
     },
     "tags": [
       "technologies",
@@ -233934,7 +233934,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that there’s enough contrast between custom controls and the map.",
+    "apple_native_rule": "Ensure there is enough contrast between custom controls and the map.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -233948,8 +233948,8 @@
       "ja": "your map presentation when choosing a styleが現在の状況に適切か検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -233974,7 +233974,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Balance information richness against the size, annotation density, and surrounding context of the map."
     ],
     "exceptions": [],
     "rationale": {
@@ -234020,16 +234020,16 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-MAPS-0007",
-    "title": "Make sure your place card looks great on different devices and window sizes",
+    "title": "Keep place-card content viewable across devices and sizes",
     "category": "technologies",
     "topic": "maps",
     "subtopic": "displaying-place-cards-in-a-map",
     "statement": {
-      "en": "Verify that your place card looks great on different devices and window sizes.",
-      "ja": "your place card looks great on different devices and window sizesを満たしていることを確認する。"
+      "en": "Ensure place-card content remains viewable across devices and changing window sizes.",
+      "ja": "deviceやwindow sizeが変わってもplace-card contentを表示可能に保つ。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -234052,12 +234052,10 @@
         "apple-watch"
       ],
       "components": [],
-      "modalities": [
-        "gaze"
-      ]
+      "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A full-callout place card may use a minimum width to prevent text overflow on smaller devices."
     ],
     "exceptions": [],
     "rationale": {
@@ -234067,7 +234065,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that your place card looks great on different devices and window sizes.” in the documented Maps context?"
+        "Does the design satisfy “Ensure place-card content remains viewable across devices and changing window sizes.” in the documented Maps context?"
       ]
     },
     "testability": "manual",
@@ -234088,7 +234086,7 @@
       "retrieved_at": "2026-07-21T22:04:11Z",
       "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
       "source_sentence_hash": "d92181edeb54d77a2aed11c6b2de92a1fbb86ba62e63b856b171f6abbd345137",
-      "evidence_paraphrase": "Verify that your place card looks great on different devices and window sizes."
+      "evidence_paraphrase": "Ensure place-card content remains viewable across devices and changing window sizes."
     },
     "tags": [
       "technologies",
@@ -234099,7 +234097,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that your place card looks great on different devices and window sizes.",
+    "apple_native_rule": "Ensure place-card content remains viewable across devices and changing window sizes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -234113,8 +234111,8 @@
       "ja": "該当する体験ではduplicating informationを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -234194,8 +234192,8 @@
       "ja": "the location on your map visible when displaying a place cardを維持する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -234275,8 +234273,8 @@
       "ja": "該当する状況ではlocation-related cues in surrounding content to help communicate that people can open a place cardを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -234356,8 +234354,8 @@
       "ja": "該当する状況ではdistinctive styling to differentiate the features of your mapを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -234382,7 +234380,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Combine color with icons when useful to distinguish areas, stores, and services."
     ],
     "exceptions": [],
     "rationale": {
@@ -234435,8 +234433,8 @@
       "ja": "必要な場合にa floor picker if your venue includes multiple levelsを利用可能にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -234461,7 +234459,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The venue contains multiple levels.",
+      "Keep floor identifiers concise; floor numbers are usually sufficient."
     ],
     "exceptions": [],
     "rationale": {
@@ -234514,8 +234513,8 @@
       "ja": "「Maps」において「Include surrounding areas to provide context」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -234540,7 +234539,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use adjacent streets, playgrounds, or other nearby places to help orientation."
     ],
     "exceptions": [],
     "rationale": {
@@ -234593,8 +234592,8 @@
       "ja": "supporting navigation between your venue and nearby transit pointsが現在の状況に適切か検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -234619,7 +234618,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Potential transit points include bus stops, stations, parking lots, and garages.",
+      "A quick transition to Apple Maps may provide additional navigation options."
     ],
     "exceptions": [],
     "rationale": {
@@ -234672,8 +234672,8 @@
       "ja": "「Maps」において「Design an indoor map that feels like a natural extension of your app」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -234698,7 +234698,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the app's own visual language rather than replicating Apple Maps."
     ],
     "exceptions": [],
     "rationale": {
@@ -234813,17 +234813,17 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-MAPS-0017",
-    "title": "Use adequate padding to separate the logo and link from the map boundaries and your custom controls. For ex…",
+    "title": "Pad the Apple logo and legal link from map edges and controls",
     "category": "technologies",
     "topic": "maps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply adequate padding to separate the logo and link from the map boundaries and your custom controls. For example, in the documented context.",
-      "ja": "該当する状況ではadequate padding to separate the logo and link from the map boundaries and your custom controls. For example,を採用する。"
+      "en": "Use adequate padding between the Apple logo and legal link, map boundaries, and custom controls.",
+      "ja": "Apple logoとlegal linkをmap boundaryやcustom controlから十分に離す。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -234848,7 +234848,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The source's 7-point side and 10-point vertical padding values are examples, not universal minima."
     ],
     "exceptions": [],
     "rationale": {
@@ -234858,7 +234858,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply adequate padding to separate the logo and link from the map boundaries and your custom controls. For example, in the documented context.” in the documented Maps context?"
+        "Does the design satisfy “Use adequate padding between the Apple logo and legal link, map boundaries, and custom controls.” in the documented Maps context?"
       ]
     },
     "testability": "manual",
@@ -234878,7 +234878,7 @@
       "retrieved_at": "2026-07-21T22:04:11Z",
       "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
       "source_sentence_hash": "2e65f12b2f133db01a814590e65601f44ed8322d387b30ff91ec0477b1c1e378",
-      "evidence_paraphrase": "Choose or apply adequate padding to separate the logo and link from the map boundaries and your custom controls. For example, in the documented context."
+      "evidence_paraphrase": "Use adequate padding between the Apple logo and legal link, map boundaries, and custom controls."
     },
     "tags": [
       "technologies",
@@ -234887,22 +234887,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply adequate padding to separate the logo and link from the map boundaries and your custom controls. For example, in the documented context.",
+    "apple_native_rule": "Use adequate padding between the Apple logo and legal link, map boundaries, and custom controls.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-MAPS-0018",
-    "title": "Avoid causing the logo and link to move with your interface. It’s best when the Apple logo and legal",
+    "title": "Avoid moving the Apple logo and legal link with the interface",
     "category": "technologies",
     "topic": "maps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude causing the logo and link to move with your interface. It’s best when the Apple logo and legal from the applicable experience.",
-      "ja": "該当する体験ではcausing the logo and link to move with your interface. It’s best when the Apple logo and legalを避ける。"
+      "en": "Avoid making the Apple logo and legal link move with custom interface elements.",
+      "ja": "Apple logoとlegal linkをcustom interface elementと一緒に動かさない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -234927,7 +234927,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer the logo and legal link to appear fixed to the map."
     ],
     "exceptions": [],
     "rationale": {
@@ -234937,7 +234937,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude causing the logo and link to move with your interface. It’s best when the Apple logo and legal from the applicable experience.” in the documented Maps context?"
+        "Does the design satisfy “Avoid making the Apple logo and legal link move with custom interface elements.” in the documented Maps context?"
       ]
     },
     "testability": "manual",
@@ -234957,7 +234957,7 @@
       "retrieved_at": "2026-07-21T22:04:11Z",
       "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
       "source_sentence_hash": "05a9a4d2631bd9e7f42ae2b4e5cc7e7a89e4f7dcd38701ba26e4c90602a55d6f",
-      "evidence_paraphrase": "Exclude causing the logo and link to move with your interface. It’s best when the Apple logo and legal from the applicable experience."
+      "evidence_paraphrase": "Avoid making the Apple logo and legal link move with custom interface elements."
     },
     "tags": [
       "technologies",
@@ -234966,7 +234966,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude causing the logo and link to move with your interface. It’s best when the Apple logo and legal from the applicable experience.",
+    "apple_native_rule": "Avoid making the Apple logo and legal link move with custom interface elements.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -234980,8 +234980,8 @@
       "ja": "identify elements that people selectを明確にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -235006,7 +235006,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a distinct outline, color variation, or equivalent styling to call attention to the selection."
     ],
     "exceptions": [],
     "rationale": {
@@ -235050,17 +235050,17 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-MAPS-0020",
-    "title": "If you want to display custom information that’s related to standard map features, consider making them ind…",
+    "title": "Consider independent selection for custom and standard map information",
     "category": "technologies",
     "topic": "maps",
     "subtopic": "custom-information",
     "statement": {
-      "en": "When you want to display custom information that’s related to standard map features, consider making them independently selectable.",
-      "ja": "you want to display custom information that’s related to standard map features場合はmaking them independently selectableを検討する。"
+      "en": "When custom information relates to standard map features, consider making the two independently selectable.",
+      "ja": "custom informationがstandard map featureに関連する場合は両者を独立してselectableにすることを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -235095,7 +235095,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “When you want to display custom information that’s related to standard map features, consider making them independently selectable.” in the documented Maps context?"
+        "Does the design satisfy “When custom information relates to standard map features, consider making the two independently selectable.” in the documented Maps context?"
       ]
     },
     "testability": "manual",
@@ -235115,7 +235115,7 @@
       "retrieved_at": "2026-07-21T22:04:11Z",
       "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
       "source_sentence_hash": "89ba9056587431e3b92dcf3bf8501beba482c6e038738410b4ba21ec84ec508e",
-      "evidence_paraphrase": "When you want to display custom information that’s related to standard map features, consider making them independently selectable."
+      "evidence_paraphrase": "When custom information relates to standard map features, consider making the two independently selectable."
     },
     "tags": [
       "technologies",
@@ -235124,7 +235124,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "When you want to display custom information that’s related to standard map features, consider making them independently selectable.",
+    "apple_native_rule": "When custom information relates to standard map features, consider making the two independently selectable.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -235267,6 +235267,1277 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "Ensure all key watchOS map content is visible within the displayed region.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0023",
+    "title": "Choose a map emphasis style that fits the app",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Choose a map emphasis style that fits the app's needs.",
+      "ja": "appのneedsに合うmap emphasis styleを選ぶ。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Prefer the default style for standard maps and the muted style when information-rich custom content needs emphasis."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose a map emphasis style that fits the app's needs.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "3e841a694bdd52320446575d13ef628d525d7086015e91b03cab84a6be8fe6a9",
+      "evidence_paraphrase": "Choose a map emphasis style that fits the app's needs."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Choose a map emphasis style that fits the app's needs.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0024",
+    "title": "Cluster overlapping points of interest",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Cluster overlapping points of interest to preserve map legibility.",
+      "ja": "重なるpoint of interestをcluster化してmap legibilityを保つ。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Expand clusters progressively as people zoom in to reveal individual points."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Cluster overlapping points of interest to preserve map legibility.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "aa29bb935a4faf8006fa306bc0c1d122768d3e8449329120575565fe8f76d435",
+      "evidence_paraphrase": "Cluster overlapping points of interest to preserve map legibility."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Cluster overlapping points of interest to preserve map legibility.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0025",
+    "title": "Make maps interactive by default",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "In general, make maps interactive.",
+      "ja": "原則としてmapをinteractiveにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Support familiar zooming, panning, and related map interactions.",
+      "Avoid noninteractive elements that obscure the map and conflict with expected behavior."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “In general, make maps interactive.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "81e961bab24f1e841828e8496813bc1ee9d288e14ca4e4203c552cd91d514321",
+      "evidence_paraphrase": "In general, make maps interactive."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "In general, make maps interactive.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0026",
+    "title": "Consider map search with category filters",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Consider combining map search with category filters.",
+      "ja": "map searchとcategory filterの組み合わせを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider combining map search with category filters.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "0575f4199363337cce3fae5fa3c14ec3c169606f72bc3313957909de0a5e2897",
+      "evidence_paraphrase": "Consider combining map search with category filters."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider combining map search with category filters.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0027",
+    "title": "Avoid permanently covering the Apple logo and legal link",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid covering the Apple logo and legal link all the time.",
+      "ja": "Apple logoとlegal linkを常時覆わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [
+      "Temporary coverage by interface elements is acceptable."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid covering the Apple logo and legal link all the time.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "455f1fb46072854c61fba10e1a0c8d3c307ce114328f2dd40b1243a76444b79b",
+      "evidence_paraphrase": "Avoid covering the Apple logo and legal link all the time."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid covering the Apple logo and legal link all the time.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0028",
+    "title": "Anchor legal elements to a moving control's lowest position",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When custom interface moves relative to a map, use its lowest position to place the Apple logo and legal link.",
+      "ja": "custom interfaceがmapに対して動く場合は最下位置を基準にApple logoとlegal linkを配置する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When custom interface moves relative to a map, use its lowest position to place the Apple logo and legal link.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "b33250f1fc571907653a83f0b81632eb2726d3fd60c88abbd388bbf32b312ea8",
+      "evidence_paraphrase": "When custom interface moves relative to a map, use its lowest position to place the Apple logo and legal link."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When custom interface moves relative to a map, use its lowest position to place the Apple logo and legal link.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0029",
+    "title": "Keep annotation icon strings to two or three characters",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "custom-information",
+    "statement": {
+      "en": "Keep a map annotation's icon string to two or three characters for readability.",
+      "ja": "readabilityのためmap annotation icon stringを2〜3文字に保つ。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply when an annotation uses a string instead of the default pin icon."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep a map annotation's icon string to two or three characters for readability.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Custom information"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "d7fbcf061d1bd8bdeaafac9ab86093ecaab861a98b2c671159c507a8e1c94ed2",
+      "evidence_paraphrase": "Keep a map annotation's icon string to two or three characters for readability."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "custom-information"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Keep a map annotation's icon string to two or three characters for readability.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0030",
+    "title": "Ensure a place-card style fits the map context",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "displaying-place-cards-in-a-map",
+    "statement": {
+      "en": "Ensure the selected place-card style fits the map's context.",
+      "ja": "選択したplace-card styleをmap contextに適合させる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Account for map size, annotation density, information needs, and the visibility of nearby places."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure the selected place-card style fits the map's context.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Place cards",
+        "Displaying place cards in a map"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "84ade4f8ee83703876ffafeb0ae3e5b8f4aa7ee99f742774fce249f2a1f5e1a0",
+      "evidence_paraphrase": "Ensure the selected place-card style fits the map's context."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "place-cards",
+      "displaying-place-cards-in-a-map"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure the selected place-card style fits the map's context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0031",
+    "title": "Include a map when a place card appears outside a map view",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "adding-place-cards-outside-of-a-map",
+    "statement": {
+      "en": "Include a map in a place card when the place card isn't displayed within a map view.",
+      "ja": "place cardをmap view外に表示する場合はplace card内にmapを含める。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The place card is displayed outside a map view."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Include a map in a place card when the place card isn't displayed within a map view.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Place cards",
+        "Adding place cards outside of a map"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "fa6d4291193f336f8b1ce4ceefa87c57883cd434870f098d5115a4a05ca8fbbe",
+      "evidence_paraphrase": "Include a map in a place card when the place card isn't displayed within a map view."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "place-cards",
+      "adding-place-cards-outside-of-a-map"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Include a map in a place card when the place card isn't displayed within a map view.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0032",
+    "title": "Show major indoor areas at every zoom level",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "indoor-maps",
+    "statement": {
+      "en": "Show major indoor areas, such as rooms and buildings, at all zoom levels.",
+      "ja": "roomやbuildingなどmajor indoor areaを全zoom levelで表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Progressively add detailed features and labels as people zoom in."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Show major indoor areas, such as rooms and buildings, at all zoom levels.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Indoor maps"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "49639d5a886077c354019c508250ddf099eddf6242987dcc08bcbb98da1a5c86",
+      "evidence_paraphrase": "Show major indoor areas, such as rooms and buildings, at all zoom levels."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "indoor-maps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Show major indoor areas, such as rooms and buildings, at all zoom levels.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0033",
+    "title": "Keep floor identifiers concise",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "indoor-maps",
+    "statement": {
+      "en": "Keep floor identifiers concise when providing a floor picker.",
+      "ja": "floor pickerではfloor identifierを簡潔にする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "In most cases, floor numbers are sufficient and floor names aren't needed."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep floor identifiers concise when providing a floor picker.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Indoor maps"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "e4c165d68e199197478d8ee9b492dc609b046535037bd9b971a8c2761a9a0725",
+      "evidence_paraphrase": "Keep floor identifiers concise when providing a floor picker."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "indoor-maps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Keep floor identifiers concise when providing a floor picker.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0034",
+    "title": "Visually de-emphasize noninteractive surrounding areas",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "indoor-maps",
+    "statement": {
+      "en": "Use dimming and a distinct color to make noninteractive surrounding areas appear supplemental.",
+      "ja": "noninteractiveな周辺areaをdimmingとdistinct colorで補助的に見せる。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The surrounding areas are present for orientation but aren't interactive."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use dimming and a distinct color to make noninteractive surrounding areas appear supplemental.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Indoor maps"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "ddccbeaaf4a30f7f26265db7f5e69abff094dc2128539bcf72c585d4a99fe7a3",
+      "evidence_paraphrase": "Use dimming and a distinct color to make noninteractive surrounding areas appear supplemental."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "indoor-maps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use dimming and a distinct color to make noninteractive surrounding areas appear supplemental.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0035",
+    "title": "Make venue entry and exit easy to navigate",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "indoor-maps",
+    "statement": {
+      "en": "Make it easy to enter and exit a venue by offering routes to nearby transit points.",
+      "ja": "近隣transit pointへのrouteを提供してvenueへの出入りを容易にする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make it easy to enter and exit a venue by offering routes to nearby transit points.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Indoor maps"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "c521d4e2a009e76ae4024354b6f5db4bd41f106ed15b3eb7ab0139f36245c4d2",
+      "evidence_paraphrase": "Make it easy to enter and exit a venue by offering routes to nearby transit points."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "indoor-maps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Make it easy to enter and exit a venue by offering routes to nearby transit points.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0036",
+    "title": "Keep part of an indoor map visible when possible",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "indoor-maps",
+    "statement": {
+      "en": "When possible, keep part of the indoor map visible onscreen while people scroll.",
+      "ja": "可能な場合はscroll中もindoor mapの一部をonscreenに保つ。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Adjust permitted scrolling by zoom level when needed to preserve orientation."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When possible, keep part of the indoor map visible onscreen while people scroll.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Indoor maps"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "118c55ebe17a2d3ef40252ca63ec1db304425ffb3772168c14b92716762eedb6",
+      "evidence_paraphrase": "When possible, keep part of the indoor map visible onscreen while people scroll."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "indoor-maps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When possible, keep part of the indoor map visible onscreen while people scroll.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0037",
+    "title": "Avoid replicating the appearance of Apple Maps",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "indoor-maps",
+    "statement": {
+      "en": "Avoid replicating the appearance of Apple Maps in a custom indoor map.",
+      "ja": "custom indoor mapでApple Mapsのappearanceを模倣しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid replicating the appearance of Apple Maps in a custom indoor map.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Indoor maps"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "a8f4020129ca054b1739c2028e4d4609e2cba803d513ee0f0b88815d53c8c253",
+      "evidence_paraphrase": "Avoid replicating the appearance of Apple Maps in a custom indoor map."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "indoor-maps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid replicating the appearance of Apple Maps in a custom indoor map.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-MAPS-0038",
+    "title": "Match indoor-map elements to the app's visual style",
+    "category": "technologies",
+    "topic": "maps",
+    "subtopic": "indoor-maps",
+    "statement": {
+      "en": "Ensure indoor-map area overlays, icons, and text match the app's visual style.",
+      "ja": "indoor-mapのarea overlay、icon、textをappのvisual styleに合わせる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app provides a custom indoor map."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Maps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるMapsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure indoor-map area overlays, icons, and text match the app's visual style.” in the documented Maps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "page_title": "Maps",
+      "section_path": [
+        "Maps",
+        "Indoor maps"
+      ],
+      "retrieved_at": "2026-07-21T22:04:11Z",
+      "source_hash": "5b92a56c1688b9c77034dec762bb50b4c6def181a340e110a7ec2538161e7900",
+      "source_sentence_hash": "988d4ec86ecd7f1420d7d4a2a3619c8d263b0ef3e2f845d2d6865ff34df563bb",
+      "evidence_paraphrase": "Ensure indoor-map area overlays, icons, and text match the app's visual style."
+    },
+    "tags": [
+      "technologies",
+      "maps",
+      "indoor-maps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure indoor-map area overlays, icons, and text match the app's visual style.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

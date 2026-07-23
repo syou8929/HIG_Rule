@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2974
-- Reviewed batches: 171
+- Reviewed rules: 3009
+- Reviewed batches: 172
 - Official source only: yes
-- Reviewed at: 2026-07-23T17:08:00Z
+- Reviewed at: 2026-07-23T17:30:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2841,9 +2841,44 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0081 · high — Recovered the concrete limitation-guidance technique. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0082 · high — Recorded both guidance and nonoverload outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0083 · high — Retained MUST from You need to and bounded it to the alternative-results branch. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MAPS-0001 · high — Completed the common Maps guidance, recovered sixteen atomic rules, retained three explicit Be sure, must, or Make sure outcomes as MUST, and kept direct Don't or Avoid guidance below MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0002 · high — Recorded the temporary-coverage allowance and persistent-coverage guard. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0003 · high — Completed the common Maps guidance, recovered sixteen atomic rules, retained three explicit Be sure, must, or Make sure outcomes as MUST, and kept direct Don't or Avoid guidance below MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0004 · high — Completed the common Maps guidance, recovered sixteen atomic rules, retained three explicit Be sure, must, or Make sure outcomes as MUST, and kept direct Don't or Avoid guidance below MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0005 · high — Retained MUST from Make sure and kept the contrast techniques optional. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0006 · high — Retained MAY for the style-selection consideration and recorded the presentation tradeoff. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0007 · high — Replaced subjective looks-great wording with the paragraph's explicit viewability outcome while retaining MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0008 · high — Completed the common Maps guidance, recovered sixteen atomic rules, retained three explicit Be sure, must, or Make sure outcomes as MUST, and kept direct Don't or Avoid guidance below MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0009 · high — Completed the common Maps guidance, recovered sixteen atomic rules, retained three explicit Be sure, must, or Make sure outcomes as MUST, and kept direct Don't or Avoid guidance below MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0010 · high — Completed the common Maps guidance, recovered sixteen atomic rules, retained three explicit Be sure, must, or Make sure outcomes as MUST, and kept direct Don't or Avoid guidance below MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0011 · high — Recorded the source's concrete differentiation technique. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0012 · high — Recorded the multilevel condition and concise-number guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0013 · high — Recorded the orientation purpose and surrounding-area examples. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0014 · high — Retained MAY and recorded the routing targets and optional Apple Maps handoff. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0015 · high — Recorded the relationship to the two recovered visual-style rules. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0016 · high — Recorded the static-map context and kept the positive region-selection guidance at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0017 · high — Repaired the truncated title and kept example measurements nonnormative. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0018 · high — Repaired the truncated text and recorded the fixed-to-map outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0019 · high — Recorded the source's concrete selected-state treatment. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0020 · high — Repaired the truncated conditional candidate and retained MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0021 · high — Recovered MUST from the explicit needs-to-be-visible requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0022 · high — Recovered MUST from the explicit all-key-content must-be-visible clause. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0023 · high — Recovered the Pick lead and documented both emphasis-style branches. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0024 · high — Recovered the Cluster lead and its zoom behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0025 · high — Restored the In general qualification from the source paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0026 · high — Recovered the optional search-and-filter pattern separately from the general find-places goal. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0027 · high — Recovered the direct Don't clause and preserved its temporary-coverage exception. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0028 · high — Recovered the conditional placement rule and its fixed-map purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0029 · high — Recovered the exact readability limit and its annotation-string condition. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0030 · high — Recovered the Be sure requirement separately from optional style examples. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0031 · high — Recovered the explicit conditional must requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0032 · high — Recovered the persistent major-area rule and progressive-detail behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0033 · high — Resolved the rule to the optional floor-picker context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0034 · high — Resolved them to the adjacent noninteractive areas named by the source. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0035 · high — Recovered the concrete routing outcome under the optional transit-support lead. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0036 · high — Restored the When possible qualification and zoom-dependent scrolling context. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0037 · high — Kept the direct Don't guidance at AVOID under the normative review policy. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0038 · high — Recovered the explicit Make sure requirement and its complete element set. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-NFC-0001 · high — Reviewed the rendered source context for “Don’t encourage people to make contact with physical objects” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0002 · high — Reviewed the rendered source context for “Use approachable terminology” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-NFC-0003 · high — Reviewed the rendered source context for “Provide succinct instructional text for the scanning sheet” and recorded its NFC-specific constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))

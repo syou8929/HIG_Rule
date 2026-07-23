@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 481
-- Retained MUST: 420
+- Reviewed rules: 484
+- Retained MUST: 423
 - Retained MUST_NOT: 61
 - Normative level changes: 155
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T17:08:00Z
+- Reviewed at: 2026-07-23T17:30:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -353,8 +353,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0068 — Retained MUST from the conditional Make sure quality gate. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0072 — Retained MUST from You need to and bounded it to confidence presentation. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0083 — Retained MUST from You need to and bounded it to the alternative-results branch. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
+- HIG-TECHNOLOGIES-MAPS-0005 — Retained MUST from the explicit Make sure contrast directive. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0007 — Retained MUST from Make sure and expressed the supporting Ensure outcome as viewability. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0021 — Recovered MUST from the explicit needs-to-be-visible requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0022 — Recovered MUST from the explicit all-key-content must-be-visible clause. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0030 — Retained MUST from Be sure and kept the compact-callout example optional. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0031 — Retained MUST from the explicit conditional you-must directive. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0038 — Retained MUST from Make sure and preserved the complete element set. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-NFC-0012 — Recovered MUST from the explicit must still provide requirement for an in-app scanning fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0001 — Retained MUST from the unqualified Always directive for the onboarding sequence. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0003 — Retained MUST from the explicit Make sure directive and preserved the before-consent timing. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
@@ -835,10 +840,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0068 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the conditional Make sure quality gate. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0072 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from You need to and bounded it to confidence presentation. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0083 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from You need to and bounded it to the alternative-results branch. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
-- HIG-TECHNOLOGIES-MAPS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
-- HIG-TECHNOLOGIES-MAPS-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Make sure contrast directive. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0007 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from Make sure and expressed the supporting Ensure outcome as viewability. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs-to-be-visible requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-MAPS-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit all-key-content must-be-visible clause. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0030 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from Be sure and kept the compact-callout example optional. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0031 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit conditional you-must directive. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
+- HIG-TECHNOLOGIES-MAPS-0038 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from Make sure and preserved the complete element set. ([source](https://developer.apple.com/design/human-interface-guidelines/maps))
 - HIG-TECHNOLOGIES-NFC-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit must still provide requirement for an in-app scanning fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/nfc))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the unqualified Always directive for the onboarding sequence. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Make sure directive and preserved the before-consent timing. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))

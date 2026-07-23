@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T17:08:00Z",
+  "reviewed_at": "2026-07-23T17:30:00Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 481,
+  "reviewed_rule_count": 484,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -3632,6 +3632,46 @@
       "polarity": "require", "severity": "error",
       "conditions": ["The feature suggests an alternative way to accomplish the person's goal."],
       "review_note": "Retained MUST from You need to and bounded it to the alternative-results branch."
+    },
+    "HIG-TECHNOLOGIES-MAPS-0005": {
+      "title": "Ensure custom controls contrast with the map",
+      "statement": {"en": "Ensure there is enough contrast between custom controls and the map.", "ja": "custom controlとmapの間に十分なcontrastを確保する。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Custom controls appear over or adjacent to the map."],
+      "review_note": "Retained MUST from the explicit Make sure contrast directive."
+    },
+    "HIG-TECHNOLOGIES-MAPS-0007": {
+      "title": "Keep place-card content viewable across devices and sizes",
+      "statement": {"en": "Ensure place-card content remains viewable across devices and changing window sizes.", "ja": "deviceやwindow sizeが変わってもplace-card contentを表示可能に保つ。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app displays a place card in a map.", "A specified style must remain viewable as devices and window sizes change."],
+      "review_note": "Retained MUST from Make sure and expressed the supporting Ensure outcome as viewability."
+    },
+    "HIG-TECHNOLOGIES-MAPS-0030": {
+      "title": "Ensure a place-card style fits the map context",
+      "statement": {"en": "Ensure the selected place-card style fits the map's context.", "ja": "選択したplace-card styleをmap contextに適合させる。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Account for map size, annotation density, information needs, and the visibility of nearby places."],
+      "review_note": "Retained MUST from Be sure and kept the compact-callout example optional."
+    },
+    "HIG-TECHNOLOGIES-MAPS-0031": {
+      "title": "Include a map when a place card appears outside a map view",
+      "statement": {"en": "Include a map in a place card when the place card isn't displayed within a map view.", "ja": "place cardをmap view外に表示する場合はplace card内にmapを含める。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The place card is displayed outside a map view."],
+      "review_note": "Retained MUST from the explicit conditional you-must directive."
+    },
+    "HIG-TECHNOLOGIES-MAPS-0038": {
+      "title": "Match indoor-map elements to the app's visual style",
+      "statement": {"en": "Ensure indoor-map area overlays, icons, and text match the app's visual style.", "ja": "indoor-mapのarea overlay、icon、textをappのvisual styleに合わせる。"},
+      "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app provides a custom indoor map."],
+      "review_note": "Retained MUST from Make sure and preserved the complete element set."
     }
   },
   "additional_rules": [
