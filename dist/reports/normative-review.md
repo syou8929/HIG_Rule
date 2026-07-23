@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 530
-- Retained MUST: 453
-- Retained MUST_NOT: 77
-- Normative level changes: 155
+- Reviewed rules: 557
+- Retained MUST: 476
+- Retained MUST_NOT: 81
+- Normative level changes: 180
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T18:40:00Z
+- Reviewed at: 2026-07-23T19:05:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -389,6 +389,31 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0044 — Recovered MUST from the supporting Make sure directive after payment-method setup. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0047 — Recovered MUST_NOT from the explicit Always avoid prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0050 — Recovered MUST from the supporting Make sure directive that protects final-amount accuracy. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
+- HIG-TECHNOLOGIES-WALLET-0008 — Raised the explicit time-critical-only change-message restriction to MUST after reviewing its interruption context. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0024 — Raised the explicit need-to-supply fulfillment information requirement to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0029 — Raised the precise-moment-only identity request to a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0030 — Raised identity-data minimization to MUST under the repository's privacy priority. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0032 — Raised the supported-device-only verification restriction to a bounded platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0033 — Raised accessible placement of textual pass information to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0035 — Raised to MUST from the explicit You must purpose-string requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0036 — Raised identity-data retention disclosure to MUST because the source calls the explanation essential. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0039 — Classified the exact Wallet order-logo format, size, and background specification as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0040 — Classified the exact Wallet product-image format, size, and background specification as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0043 — Raised the direct don't-repeat instruction to MUST_NOT under explicit user intent. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0045 — Recovered MUST from the explicit semantic-tags-required clause. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0046 — Recovered the direct legacy-display compatibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0047 — Raised the device-dependent essential-information prohibition to an accessibility MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0049 — Classified semantic tags for airline boarding passes as a Wallet format contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0050 — Classified pass fields for other transit passes as the complementary Wallet format contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0051 — Classified PNG scale, filename, and structured pass-image dimensions as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0052 — Raised the accessible text-field and semantic-tag alternative to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0053 — Classified Pass Designer or API barcode generation as the required Wallet content path. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0055 — Classified the transparent-PNG thumbnail format and documented dimensions as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0056 — Classified the pass-background safe area as a layout contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0058 — Retained MUST from the explicit at-minimum need-to merchant-link requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0059 — Recovered the in-both-cases carrier tracking-link requirement as conditional MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0060 — Recovered the identity-verification fallback as a required completion path. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0061 — Raised the premature identity-verification prohibition to MUST_NOT under privacy and explicit user intent. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0030 — Split from the source lead's consider clause so optional guidance is not raised to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-FOUNDATIONS-DARK-MODE-0020 — Split the explicit make-sure legibility outcome from the testing action so the accessibility requirement remains atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
 
@@ -923,4 +948,31 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0047 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered MUST_NOT from the explicit Always avoid prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0050 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the supporting Make sure directive that protects final-amount accuracy. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-WALLET-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0008 · MUST · retained_with_atomicity_or_scope_correction — Raised the explicit time-critical-only change-message restriction to MUST after reviewing its interruption context. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - HIG-TECHNOLOGIES-WALLET-0012 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0024 · MUST · retained_with_atomicity_or_scope_correction — Raised the explicit need-to-supply fulfillment information requirement to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0029 · MUST · retained_with_atomicity_or_scope_correction — Raised the precise-moment-only identity request to a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0030 · MUST · retained_with_atomicity_or_scope_correction — Raised identity-data minimization to MUST under the repository's privacy priority. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0032 · MUST · retained_with_atomicity_or_scope_correction — Raised the supported-device-only verification restriction to a bounded platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0033 · MUST · retained_with_atomicity_or_scope_correction — Raised accessible placement of textual pass information to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0035 · MUST · retained_with_atomicity_or_scope_correction — Raised to MUST from the explicit You must purpose-string requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0036 · MUST · retained_with_atomicity_or_scope_correction — Raised identity-data retention disclosure to MUST because the source calls the explanation essential. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0039 · MUST · retained_with_atomicity_or_scope_correction — Classified the exact Wallet order-logo format, size, and background specification as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0040 · MUST · retained_with_atomicity_or_scope_correction — Classified the exact Wallet product-image format, size, and background specification as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0043 · MUST_NOT · retained_with_atomicity_or_scope_correction — Raised the direct don't-repeat instruction to MUST_NOT under explicit user intent. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0044 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0045 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit semantic-tags-required clause. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0046 · MUST · retained_with_atomicity_or_scope_correction — Recovered the direct legacy-display compatibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0047 · MUST_NOT · retained_with_atomicity_or_scope_correction — Raised the device-dependent essential-information prohibition to an accessibility MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0049 · MUST · retained_with_atomicity_or_scope_correction — Classified semantic tags for airline boarding passes as a Wallet format contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0050 · MUST · retained_with_atomicity_or_scope_correction — Classified pass fields for other transit passes as the complementary Wallet format contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0051 · MUST · retained_with_atomicity_or_scope_correction — Classified PNG scale, filename, and structured pass-image dimensions as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0052 · MUST · retained_with_atomicity_or_scope_correction — Raised the accessible text-field and semantic-tag alternative to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0053 · MUST · retained_with_atomicity_or_scope_correction — Classified Pass Designer or API barcode generation as the required Wallet content path. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0055 · MUST · retained_with_atomicity_or_scope_correction — Classified the transparent-PNG thumbnail format and documented dimensions as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0056 · MUST · retained_with_atomicity_or_scope_correction — Classified the pass-background safe area as a layout contract. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0057 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0058 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit at-minimum need-to merchant-link requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0059 · MUST · retained_with_atomicity_or_scope_correction — Recovered the in-both-cases carrier tracking-link requirement as conditional MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0060 · MUST · retained_with_atomicity_or_scope_correction — Recovered the identity-verification fallback as a required completion path. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
+- HIG-TECHNOLOGIES-WALLET-0061 · MUST_NOT · retained_with_atomicity_or_scope_correction — Raised the premature identity-verification prohibition to MUST_NOT under privacy and explicit user intent. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
