@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T06:12:58Z",
+  "reviewed_at": "2026-07-23T06:32:16Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -822,6 +822,29 @@
         "HIG-FOUNDATIONS-APP-ICONS-0018"
       ],
       "review_note": "Reviewed tvOS safe-zone behavior, visionOS concavity risk, and watchOS black-background guidance in official context."
+    },
+    {
+      "id": "priority-6-app-icons-common-context-2026-07-23",
+      "reviewed_at": "2026-07-23T06:32:16Z",
+      "review_method": "Rendered Apple HIG App icons layer design, shape, design, visual effects, appearances, supporting prose, color-space list, and platform specification table were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high", "review_required": false,
+      "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/app-icons", "source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d"}],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-APP-ICONS-0001", "HIG-FOUNDATIONS-APP-ICONS-0002", "HIG-FOUNDATIONS-APP-ICONS-0003",
+        "HIG-FOUNDATIONS-APP-ICONS-0004", "HIG-FOUNDATIONS-APP-ICONS-0005", "HIG-FOUNDATIONS-APP-ICONS-0006",
+        "HIG-FOUNDATIONS-APP-ICONS-0007", "HIG-FOUNDATIONS-APP-ICONS-0008", "HIG-FOUNDATIONS-APP-ICONS-0009",
+        "HIG-FOUNDATIONS-APP-ICONS-0010", "HIG-FOUNDATIONS-APP-ICONS-0011", "HIG-FOUNDATIONS-APP-ICONS-0012",
+        "HIG-FOUNDATIONS-APP-ICONS-0013", "HIG-FOUNDATIONS-APP-ICONS-0014", "HIG-FOUNDATIONS-APP-ICONS-0015",
+        "HIG-FOUNDATIONS-APP-ICONS-0019", "HIG-FOUNDATIONS-APP-ICONS-0020", "HIG-FOUNDATIONS-APP-ICONS-0021",
+        "HIG-FOUNDATIONS-APP-ICONS-0022", "HIG-FOUNDATIONS-APP-ICONS-0023", "HIG-FOUNDATIONS-APP-ICONS-0024",
+        "HIG-FOUNDATIONS-APP-ICONS-0025", "HIG-FOUNDATIONS-APP-ICONS-0026", "HIG-FOUNDATIONS-APP-ICONS-0027",
+        "HIG-FOUNDATIONS-APP-ICONS-0028", "HIG-FOUNDATIONS-APP-ICONS-0029", "HIG-FOUNDATIONS-APP-ICONS-0030",
+        "HIG-FOUNDATIONS-APP-ICONS-0031", "HIG-FOUNDATIONS-APP-ICONS-0032", "HIG-FOUNDATIONS-APP-ICONS-0033",
+        "HIG-FOUNDATIONS-APP-ICONS-0034", "HIG-FOUNDATIONS-APP-ICONS-0035", "HIG-FOUNDATIONS-APP-ICONS-0036",
+        "HIG-FOUNDATIONS-APP-ICONS-0037", "HIG-FOUNDATIONS-APP-ICONS-0038", "HIG-FOUNDATIONS-APP-ICONS-0039",
+        "HIG-FOUNDATIONS-APP-ICONS-0040"
+      ],
+      "review_note": "Completed common App icons coverage; retained sixteen existing IDs, recovered twenty-one atomic rules including four platform specification rows, retained six explicit conditional Ensure or Make sure outcomes as MUST, kept direct Don't and Avoid guidance below MUST_NOT, and reclassified Display P3 support as MAY."
     },
     {
       "id": "priority-4-color-platform-context-2026-07-21",
@@ -21508,6 +21531,254 @@
       ],
       "exceptions": ["Full-bleed content or a custom baseplate may not need the default glow."],
       "review_note": "Recovered the omitted Take advantage lead and recorded the glow behavior and exceptions."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0001": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "bfaefdd3a872686e12f3f36aeb084b9dc2468b3de3fefde6ac1704836a69f350", "section_path": ["App icons", "Layer design"]},
+      "statement": {"en": "Prefer clearly defined edges in app-icon foreground layers.", "ja": "app icon foreground layerでは明確なedgeを優先する。"},
+      "conditions": ["Avoid soft or feathered shape edges so system highlights and shadows render clearly."],
+      "review_note": "Recorded the system-effect rationale and preserved Prefer at SHOULD."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0002": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "f304836da3258908c4c306e8c0f59110f82084e56454b4d883b704dd59df79fb", "section_path": ["App icons", "Layer design"]},
+      "statement": {"en": "Design an app-icon background that stands out and emphasizes foreground content.", "ja": "目立ちながらforeground contentを強調するapp icon backgroundを設計する。"},
+      "conditions": ["Icon Composer usually makes a custom imported background image unnecessary."],
+      "review_note": "Separated both explicit conditional background requirements from the general design recommendation."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0003": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "cfe200618b36ca85fdb15dda73c270d50a74411d02deab3d19e3a8b4aa24407a", "section_path": ["App icons", "Layer design"]},
+      "statement": {"en": "Prefer vector graphics for layers imported into Icon Composer.", "ja": "Icon Composerへimportするlayerにはvector graphicを優先する。"},
+      "conditions": ["Vector SVG or PDF artwork scales cleanly across icon sizes."],
+      "review_note": "Preserved Prefer at SHOULD and split outline preparation and PNG fallback."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0004": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "823008fb72795b6ca860933d5fecee3885cc4f08ad1b8da2174ff663c239b1cb", "section_path": ["App icons", "Icon shape"]},
+      "statement": {"en": "Keep primary app-icon content centered so system masking doesn't truncate it.", "ja": "system maskingで切れないようprimary app icon contentを中央に保つ。"},
+      "conditions": ["Pay particular attention to visionOS and watchOS circular icons; use Apple production-template grids for placement."],
+      "review_note": "Recorded masking and the two circular-platform contexts."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0005": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "c13d9fc2ed5c5d00d1b2ec2e808605ab0065187504a37edb32e1c1383f195f6c", "section_path": ["App icons", "Design"]},
+      "statement": {"en": "Provide a visually consistent app-icon design across supported platforms.", "ja": "support対象platform間で視覚的に一貫したapp icon designを提供する。"},
+      "conditions": ["Consistency helps people find the app and avoid mistaking platform variants for different apps."],
+      "review_note": "Recorded recognition and cross-platform identity as the consistency outcomes."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0006": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "a2f0a96eb7c3d1517c5e6739c06c6c0d77b9bea3070bd30c70864aafcd11957b", "section_path": ["App icons", "Design"]},
+      "statement": {"en": "Consider basing an app-icon design on filled, overlapping shapes.", "ja": "filledでoverlapするshapeを基礎にしたapp icon designを検討する。"},
+      "conditions": ["Transparency and blurring can make overlapping foreground shapes feel dimensional."],
+      "review_note": "Preserved Consider as MAY and recorded the depth-producing context."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0007": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "4c0f62073ec801cd09915f50ea33a2166217e06488543874bafb7aea85a303f1", "section_path": ["App icons", "Design"]},
+      "statement": {"en": "Include app-icon text only when it is essential to the experience or brand.", "ja": "experienceまたはbrandに不可欠な場合だけapp iconにtextを含める。"},
+      "conditions": ["Icon text doesn't support accessibility or localization and can be unreadable, cluttered, or redundant."],
+      "review_note": "Recorded the accessibility, localization, size, and redundancy limits and split two atomic text rules."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0008": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "afbacb43c3227e2dbaff31c06074ff8f99cd591981471e8ea97ad23a94086b1d", "section_path": ["App icons", "Design"]},
+      "title": "Prefer illustrations to photos in app icons",
+      "statement": {"en": "Prefer illustrations to photos in app icons.", "ja": "app iconではphotoよりillustrationを優先する。"},
+      "conditions": ["Illustrations can emphasize selected features and work better across appearances, sizes, and layers."],
+      "review_note": "Repaired the mixed-strength lead by retaining the photo preference separately from the UI-replication AVOID."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0009": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "93509acad4fd1e6a778ceaf08dc912b674819c9937bedf068c5a75eade853352", "section_path": ["App icons", "Design"]},
+      "statement": {"en": "Avoid replicas of Apple hardware products in app icons.", "ja": "app iconでApple hardware productのreplicaを避ける。"},
+      "conditions": ["Apple hardware product designs are copyrighted."],
+      "review_note": "Kept the direct Don't guidance at AVOID because it isn't an explicit Never or must-not prohibition."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0010": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "89c24fbd194df482f66380e319d32216d7350eeecf72132877de63bc670a35bf", "section_path": ["App icons", "Visual effects"]},
+      "statement": {"en": "Let the system apply blurring and other visual effects to app-icon layers.", "ja": "app icon layerへのblurその他のvisual effectはsystemに任せる。"},
+      "conditions": ["System effects are dynamic; custom static effects can interfere with them."],
+      "review_note": "Recorded dynamic-system behavior and split the conditional custom-effect MUST."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0011": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "53894ec5ea6cbfb15cbb37cedc8e6068c142a13fc3a414e669086c07e08506c7", "section_path": ["App icons", "Visual effects"]},
+      "statement": {"en": "Create app-icon layer groups when effects need to apply to multiple layers together.", "ja": "複数layerへまとめてeffectを適用する場合はapp icon layer groupを作る。"},
+      "conditions": ["Use grouping only when it fits the design; Icon Composer adds group-level Liquid Glass controls."],
+      "review_note": "Made the design-fit condition explicit without requiring grouping for every icon."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0012": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "c4c76ce469f92dcc12b16d72b660097013f7ef7676a3c9dc59b78e59b5d3a6a5", "section_path": ["App icons", "Appearances"]},
+      "statement": {"en": "Keep an app icon's core visual features consistent across appearance variants.", "ja": "appearance variant間でapp iconのcore visual featureを一貫させる。"},
+      "conditions": ["Apply across default, dark, clear, and tinted appearances."],
+      "review_note": "Recorded the full appearance set and split the element-swapping anti-pattern."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0013": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "9bf88057772872c457a98f2e1b3457965123cc5dba04dcb48e5d5ca7b4de3c64", "section_path": ["App icons", "Appearances"]},
+      "statement": {"en": "Design dark, clear, and tinted icons to fit beside system app icons and widgets.", "ja": "system app iconやwidgetに馴染むdark、clear、tinted iconを設計する。"},
+      "conditions": ["Keep every variant visible, legible, and recognizable; darker and tinted contexts are more subdued."],
+      "review_note": "Expanded the appearance context and recorded visibility, legibility, and recognition outcomes."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0014": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "0e203baea4123cc14a652e80aaff7dc643b6a087af933631ad95a2462f66f92d", "section_path": ["App icons", "Appearances"]},
+      "statement": {"en": "Use the light app icon as the basis for the dark icon.", "ja": "light app iconをdark iconの基礎に使う。"},
+      "conditions": ["Choose complementary colors that reflect the default design; color backgrounds generally provide strong contrast."],
+      "review_note": "Recorded the color relationship and split the excessive-brightness anti-pattern."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0015": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "d860c66c35273f8a5117bc61b4ba494482805aee4770e1534db3c5526b1226d4", "section_path": ["App icons", "Appearances"]},
+      "statement": {"en": "Consider offering alternate app icons on supported platforms.", "ja": "support対象platformでalternate app iconの提供を検討する。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["People choose alternate icons in app settings; every alternate and appearance variant remains subject to app review."],
+      "review_note": "Preserved Consider as MAY, narrowed platform availability, and split identity requirements."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0019": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "e928bdbf1747d46bd1cac6718eafa9a8e3b382f0b81c353c6b1f20fd67f0bbbb", "section_path": ["App icons", "Specifications"]},
+      "title": "Use Display P3 app-icon color only on supported platforms",
+      "statement": {"en": "Use Display P3 app-icon color only on iOS, iPadOS, macOS, tvOS, and watchOS.", "ja": "Display P3 app icon colorはiOS、iPadOS、macOS、tvOS、watchOSだけで使う。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos", "tvos", "watchos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-watch"], "components": [], "modalities": []},
+      "conditions": ["App icons also support sRGB color and Gray Gamma 2.2 grayscale; Display P3 isn't listed for visionOS."],
+      "review_note": "Reclassified the supported color-space capability from generated SHOULD to MAY and preserved its platform exclusion."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0020": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "4e46d2dd11aca0178b0f5ed60ff133de532e823d66f12dbb80a7b1496c9b8190", "section_path": ["App icons", "Layer design"]},
+      "statement": {"en": "Use varying opacity in foreground layers to increase app-icon depth and liveliness.", "ja": "foreground layerのopacityを変えてapp iconのdepthとlivelinessを高める。"},
+      "conditions": ["Importing opaque layers and adjusting transparency in Icon Composer supports preview and iteration."],
+      "review_note": "Activated the previously unrecognized Vary lead and recorded the recommended workflow."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0021": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "f304836da3258908c4c306e8c0f59110f82084e56454b4d883b704dd59df79fb", "section_path": ["App icons", "Layer design"]},
+      "title": "Ensure app-icon gradients respond to system lighting",
+      "statement": {"en": "When using an app-icon background gradient, ensure it responds well to system lighting effects.", "ja": "app icon background gradientを使う場合、system lighting effectへ適切に反応させる。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The requirement applies only when the background uses a gradient."],
+      "review_note": "Recovered the conditional Ensure requirement without applying it to solid backgrounds."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0022": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "f304836da3258908c4c306e8c0f59110f82084e56454b4d883b704dd59df79fb", "section_path": ["App icons", "Layer design"]},
+      "title": "Ensure imported app-icon backgrounds are full-bleed and opaque",
+      "statement": {"en": "When importing an app-icon background layer, ensure it is full-bleed and opaque.", "ja": "app icon background layerをimportする場合はfull-bleedかつopaqueにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Icon Composer solid colors and gradients usually avoid the need for an imported background."],
+      "review_note": "Recovered the conditional Make sure requirement and preserved the no-import default."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0023": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "cfe200618b36ca85fdb15dda73c270d50a74411d02deab3d19e3a8b4aa24407a", "section_path": ["App icons", "Layer design"]},
+      "statement": {"en": "Outline app-icon artwork and convert icon text to outlines before import.", "ja": "import前にapp icon artworkをoutline化し、icon textをoutlineへ変換する。"},
+      "review_note": "Recovered the vector-preparation action as a separate rule."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0024": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "cfe200618b36ca85fdb15dda73c270d50a74411d02deab3d19e3a8b4aa24407a", "section_path": ["App icons", "Layer design"]},
+      "statement": {"en": "Prefer PNG for app-icon mesh gradients and raster artwork.", "ja": "app iconのmesh gradientとraster artworkにはPNGを優先する。"},
+      "conditions": ["PNG is a lossless fallback when vector graphics aren't appropriate."],
+      "review_note": "Recovered the documented raster fallback and retained Prefer at SHOULD."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0025": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "df94be6871809219013096f40decd825c37dde32449e0bedd96f73382f6ab5bb", "section_path": ["App icons", "Icon shape"]},
+      "title": "Create unmasked app-icon layers in the platform layout shape",
+      "statement": {"en": "Create unmasked app-icon layers in the layout shape required by the target platform.", "ja": "target platformが求めるlayout shapeでmaskなしのapp icon layerを作る。"},
+      "conditions": ["Use square layers for iOS, iPadOS, macOS, visionOS, and watchOS; use rectangular layers for tvOS."],
+      "review_note": "Activated the previously unrecognized Produce lead and recorded every platform shape mapping."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0026": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "df94be6871809219013096f40decd825c37dde32449e0bedd96f73382f6ab5bb", "section_path": ["App icons", "Icon shape"]},
+      "statement": {"en": "Avoid applying predefined masking to app-icon layers.", "ja": "app icon layerにpredefined maskingを適用しない。"},
+      "conditions": ["Premasking harms specular highlights and can produce jagged edges after system masking."],
+      "review_note": "Recovered the masking anti-pattern as AVOID, not MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0027": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "36f58fbe69606d3b3269bd54137df94c7cc7bba8c53c5574ac161cdfe997bcaf", "section_path": ["App icons", "Design"]},
+      "title": "Use a simple, recognizable app-icon design",
+      "statement": {"en": "Use a simple, recognizable app-icon design with a minimal number of shapes.", "ja": "最小限のshapeでsimpleかつrecognizableなapp icon designを作る。"},
+      "conditions": ["Center one concept that captures the app or game; prefer a simple background that emphasizes it."],
+      "review_note": "Recovered the previously omitted simplicity lead and recorded its concept, detail, and background criteria."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0028": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "4c0f62073ec801cd09915f50ea33a2166217e06488543874bafb7aea85a303f1", "section_path": ["App icons", "Design"]},
+      "statement": {"en": "Avoid nonessential action words and context-specific terms in app icons.", "ja": "app iconでnonessentialなaction wordやcontext-specific termを避ける。"},
+      "conditions": ["Examples include “Watch,” “Play,” “New,” and “For visionOS.”"],
+      "review_note": "Recovered the text anti-pattern as AVOID while preserving essential brand text."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0029": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "4c0f62073ec801cd09915f50ea33a2166217e06488543874bafb7aea85a303f1", "section_path": ["App icons", "Design"]},
+      "title": "Keep tvOS app-icon text above other layers",
+      "statement": {"en": "When a tvOS app icon includes text, ensure it appears above the other layers.", "ja": "tvOS app iconにtextを含める場合は他のlayerより上に配置する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "conditions": ["Keep text above parallax layers so the system doesn't crop it."],
+      "review_note": "Recovered the conditional Make sure tvOS text-layer requirement."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0030": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "afbacb43c3227e2dbaff31c06074ff8f99cd591981471e8ea97ad23a94086b1d", "section_path": ["App icons", "Design"]},
+      "statement": {"en": "Avoid replicating standard UI components or app screenshots in an app icon.", "ja": "app iconでstandard UI componentやapp screenshotを複製しない。"},
+      "review_note": "Split the direct UI-replication anti-pattern from the illustration preference."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0031": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "afbacb43c3227e2dbaff31c06074ff8f99cd591981471e8ea97ad23a94086b1d", "section_path": ["App icons", "Design"]},
+      "title": "Ensure app-icon artwork avoids fragile lines and corners",
+      "statement": {"en": "Ensure app-icon artwork avoids extremely thin lines and sharp corners.", "ja": "app icon artworkで極端に細いlineやsharp cornerを避ける。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Thin lines and sharp corners lose detail and crispness at small sizes and low resolutions."],
+      "review_note": "Recovered the explicit Make sure to avoid requirement as a positive MUST outcome."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0032": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "89c24fbd194df482f66380e319d32216d7350eeecf72132877de63bc670a35bf", "section_path": ["App icons", "Visual effects"]},
+      "title": "Ensure custom app-icon effects don't conflict with system effects",
+      "statement": {"en": "When using custom app-icon effects, ensure they appear as expected and don't conflict with system effects.", "ja": "custom app icon effectを使う場合は意図どおり表示されsystem effectと競合しないようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Test intentionally in Icon Composer, Device Hub, or on a physical device."],
+      "review_note": "Recovered the conditional Make sure verification outcome without requiring custom effects."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0033": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "c4c76ce469f92dcc12b16d72b660097013f7ef7676a3c9dc59b78e59b5d3a6a5", "section_path": ["App icons", "Appearances"]},
+      "statement": {"en": "Avoid swapping app-icon elements between appearance variants.", "ja": "appearance variant間でapp icon elementを入れ替えない。"},
+      "conditions": ["Element swaps can make the app harder to find after people change appearances."],
+      "review_note": "Recovered the variant-swapping anti-pattern as AVOID."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0034": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "0e203baea4123cc14a652e80aaff7dc643b6a087af933631ad95a2462f66f92d", "section_path": ["App icons", "Appearances"]},
+      "statement": {"en": "Avoid excessively bright images in dark app icons.", "ja": "dark app iconで過度にbrightなimageを避ける。"},
+      "review_note": "Recovered the direct dark-appearance anti-pattern as AVOID."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0035": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "d860c66c35273f8a5117bc61b4ba494482805aee4770e1534db3c5526b1226d4", "section_path": ["App icons", "Appearances"]},
+      "title": "Keep alternate app icons related to the app experience",
+      "statement": {"en": "When offering alternate app icons, ensure each remains closely related to the app's content and experience.", "ja": "alternate app iconを提供する場合、各iconをapp contentとexperienceに密接に関連させる。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The app offers alternate icons on a supported platform."],
+      "review_note": "Recovered the conditional Make sure identity requirement and narrowed supported platforms."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0036": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "d860c66c35273f8a5117bc61b4ba494482805aee4770e1534db3c5526b1226d4", "section_path": ["App icons", "Appearances"]},
+      "statement": {"en": "Avoid alternate app icons that people might mistake for another app.", "ja": "別のappと誤認される可能性があるalternate app iconを避ける。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "review_note": "Recovered the identity-confusion anti-pattern as AVOID, not MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0037": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "983a0e664ef367395899749ecae108110960d4566a4923db08c8a19cc2dcba1d", "section_path": ["App icons", "Specifications"]},
+      "title": "Create 1024×1024 layered app-icon layouts for iOS, iPadOS, and macOS",
+      "statement": {"en": "Create square 1024×1024 px layered app-icon layouts for iOS, iPadOS, and macOS.", "ja": "iOS、iPadOS、macOS向けにsquareの1024×1024 px layered app icon layoutを作る。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "conditions": ["The system masks the square layout to a rounded rectangle and supports default, dark, clear, and tinted appearances."],
+      "review_note": "Recovered the complete iOS, iPadOS, and macOS specification row as SHOULD."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0038": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "7c8af7e6a33f2943e21500176b534dfd947395d6fa9ce8d80520e6267bc8b311", "section_path": ["App icons", "Specifications"]},
+      "title": "Create an 800×480 layered parallax app-icon layout for tvOS",
+      "statement": {"en": "Create a rectangular 800×480 px layered parallax app-icon layout for tvOS.", "ja": "tvOS向けにrectangularの800×480 px layered parallax app icon layoutを作る。"},
+      "scope": {"portability": "apple-platform", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "conditions": ["The system masks the landscape layout to a rounded rectangle."],
+      "review_note": "Recovered the complete tvOS specification row as SHOULD."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0039": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "2812cefbfa0957fe68b64fe61ef14a33abf20dcfadf10784168cd6490e4cb6c0", "section_path": ["App icons", "Specifications"]},
+      "title": "Create a 1024×1024 layered 3D app-icon layout for visionOS",
+      "statement": {"en": "Create a square 1024×1024 px layered 3D app-icon layout for visionOS.", "ja": "visionOS向けにsquareの1024×1024 px layered 3D app icon layoutを作る。"},
+      "scope": {"portability": "apple-platform", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The system masks the square layout to a circle."],
+      "review_note": "Recovered the complete visionOS specification row as SHOULD."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0040": {
+      "source": {"source_hash": "016c96213dac58dc1b0fbf6495c59548c5dea99c44f9c7b75fab31847f1f029d", "source_sentence_hash": "d92fd4a6529b167a39d3ac8edcdf8614b28f7dd92acc43183625c3ef18ab997f", "section_path": ["App icons", "Specifications"]},
+      "title": "Create a 1088×1088 layered app-icon layout for watchOS",
+      "statement": {"en": "Create a square 1088×1088 px layered app-icon layout for watchOS.", "ja": "watchOS向けにsquareの1088×1088 px layered app icon layoutを作る。"},
+      "scope": {"portability": "apple-platform", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The system masks the square layout to a circle."],
+      "review_note": "Recovered the complete watchOS specification row as SHOULD."
     },
     "HIG-FOUNDATIONS-APP-ICONS-0016": {
       "source": {

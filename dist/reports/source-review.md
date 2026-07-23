@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2140
-- Reviewed batches: 139
+- Reviewed rules: 2177
+- Reviewed batches: 140
 - Official source only: yes
-- Reviewed at: 2026-07-23T06:12:58Z
+- Reviewed at: 2026-07-23T06:32:16Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1000,9 +1000,46 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-ACCESSIBILITY-0038 · medium — Restored the source meaning lost by candidate-length truncation. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0039 · medium — Restored the omitted assistive-technology consequence from the complete official list item. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
 - HIG-FOUNDATIONS-ACCESSIBILITY-0040 · medium — Restored the environmental and fatigue context lost by candidate-length truncation. ([source](https://developer.apple.com/design/human-interface-guidelines/accessibility))
+- HIG-FOUNDATIONS-APP-ICONS-0001 · high — Recorded the system-effect rationale and preserved Prefer at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0002 · high — Separated both explicit conditional background requirements from the general design recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0003 · high — Preserved Prefer at SHOULD and split outline preparation and PNG fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0004 · high — Recorded masking and the two circular-platform contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0005 · high — Recorded recognition and cross-platform identity as the consistency outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0006 · high — Preserved Consider as MAY and recorded the depth-producing context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0007 · high — Recorded the accessibility, localization, size, and redundancy limits and split two atomic text rules. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0008 · high — Repaired the mixed-strength lead by retaining the photo preference separately from the UI-replication AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0009 · high — Kept the direct Don't guidance at AVOID because it isn't an explicit Never or must-not prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0010 · high — Recorded dynamic-system behavior and split the conditional custom-effect MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0011 · high — Made the design-fit condition explicit without requiring grouping for every icon. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0012 · high — Recorded the full appearance set and split the element-swapping anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0013 · high — Expanded the appearance context and recorded visibility, legibility, and recognition outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0014 · high — Recorded the color relationship and split the excessive-brightness anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0015 · high — Preserved Consider as MAY, narrowed platform availability, and split identity requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - HIG-FOUNDATIONS-APP-ICONS-0016 · high — Recorded the focus-cropping behavior and the variables that affect safe-zone size. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - HIG-FOUNDATIONS-APP-ICONS-0017 · high — Recorded the system-effect reversal that makes concave background shapes misleading. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - HIG-FOUNDATIONS-APP-ICONS-0018 · high — Recorded the display-background blending risk and lightening mitigation. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0019 · high — Reclassified the supported color-space capability from generated SHOULD to MAY and preserved its platform exclusion. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0020 · high — Activated the previously unrecognized Vary lead and recorded the recommended workflow. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0021 · high — Recovered the conditional Ensure requirement without applying it to solid backgrounds. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0022 · high — Recovered the conditional Make sure requirement and preserved the no-import default. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0023 · high — Recovered the vector-preparation action as a separate rule. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0024 · high — Recovered the documented raster fallback and retained Prefer at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0025 · high — Activated the previously unrecognized Produce lead and recorded every platform shape mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0026 · high — Recovered the masking anti-pattern as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0027 · high — Recovered the previously omitted simplicity lead and recorded its concept, detail, and background criteria. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0028 · high — Recovered the text anti-pattern as AVOID while preserving essential brand text. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0029 · high — Recovered the conditional Make sure tvOS text-layer requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0030 · high — Split the direct UI-replication anti-pattern from the illustration preference. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0031 · high — Recovered the explicit Make sure to avoid requirement as a positive MUST outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0032 · high — Recovered the conditional Make sure verification outcome without requiring custom effects. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0033 · high — Recovered the variant-swapping anti-pattern as AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0034 · high — Recovered the direct dark-appearance anti-pattern as AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0035 · high — Recovered the conditional Make sure identity requirement and narrowed supported platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0036 · high — Recovered the identity-confusion anti-pattern as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0037 · high — Recovered the complete iOS, iPadOS, and macOS specification row as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0038 · high — Recovered the complete tvOS specification row as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0039 · high — Recovered the complete visionOS specification row as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
+- HIG-FOUNDATIONS-APP-ICONS-0040 · high — Recovered the complete watchOS specification row as SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/app-icons))
 - HIG-FOUNDATIONS-COLOR-0017 · high — Retained MAY and recorded the content-first branding rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0018 · high — Recorded the noncolor focus cues from the supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/color))
 - HIG-FOUNDATIONS-COLOR-0019 · high — Recorded the glass-transmission legibility risk and intended emphasis cases. ([source](https://developer.apple.com/design/human-interface-guidelines/color))

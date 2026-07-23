@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-22T23:25:33Z",
+  "reviewed_at": "2026-07-23T06:32:16Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "977e54a2aa92b62ed6670f132305c8c5d72905ccc9b7bff977fbd154e2211db2",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 339,
+  "reviewed_rule_count": 345,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -2204,6 +2204,102 @@
         "The app presents one file without creating its own window."
       ],
       "review_note": "Recovered and retained the explicit You must requirement from the official iPadOS Tip."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0021": {
+      "title": "Ensure app-icon gradients respond to system lighting",
+      "statement": {
+        "en": "When using an app-icon background gradient, ensure it responds well to system lighting effects.",
+        "ja": "app icon background gradientを使う場合、system lighting effectへ適切に反応させる。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The requirement applies only when the background uses a gradient."
+      ],
+      "review_note": "Recovered the conditional Ensure requirement without applying it to solid backgrounds."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0022": {
+      "title": "Ensure imported app-icon backgrounds are full-bleed and opaque",
+      "statement": {
+        "en": "When importing an app-icon background layer, ensure it is full-bleed and opaque.",
+        "ja": "app icon background layerをimportする場合はfull-bleedかつopaqueにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Icon Composer solid colors and gradients usually avoid the need for an imported background."
+      ],
+      "review_note": "Recovered the conditional Make sure requirement and preserved the no-import default."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0029": {
+      "title": "Keep tvOS app-icon text above other layers",
+      "statement": {
+        "en": "When a tvOS app icon includes text, ensure it appears above the other layers.",
+        "ja": "tvOS app iconにtextを含める場合は他のlayerより上に配置する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Keep text above parallax layers so the system doesn't crop it."
+      ],
+      "review_note": "Recovered the conditional Make sure tvOS text-layer requirement."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0031": {
+      "title": "Ensure app-icon artwork avoids fragile lines and corners",
+      "statement": {
+        "en": "Ensure app-icon artwork avoids extremely thin lines and sharp corners.",
+        "ja": "app icon artworkで極端に細いlineやsharp cornerを避ける。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Thin lines and sharp corners lose detail and crispness at small sizes and low resolutions."
+      ],
+      "review_note": "Recovered the explicit Make sure to avoid requirement as a positive MUST outcome."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0032": {
+      "title": "Ensure custom app-icon effects don't conflict with system effects",
+      "statement": {
+        "en": "When using custom app-icon effects, ensure they appear as expected and don't conflict with system effects.",
+        "ja": "custom app icon effectを使う場合は意図どおり表示されsystem effectと競合しないようにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Test intentionally in Icon Composer, Device Hub, or on a physical device."
+      ],
+      "review_note": "Recovered the conditional Make sure verification outcome without requiring custom effects."
+    },
+    "HIG-FOUNDATIONS-APP-ICONS-0035": {
+      "title": "Keep alternate app icons related to the app experience",
+      "statement": {
+        "en": "When offering alternate app icons, ensure each remains closely related to the app's content and experience.",
+        "ja": "alternate app iconを提供する場合、各iconをapp contentとexperienceに密接に関連させる。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "The app offers alternate icons on a supported platform."
+      ],
+      "review_note": "Recovered the conditional Make sure identity requirement and narrowed supported platforms."
     },
     "HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029": {
       "title": "Display comfortable motion in a Full Space",
