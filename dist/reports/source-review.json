@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-07-23T09:15:57.815Z",
-  "reviewed_at": "2026-07-23T09:12:24Z",
+  "generated_at": "2026-07-23T09:29:48.795Z",
+  "reviewed_at": "2026-07-23T09:24:24Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
-  "reviewed_batch_count": 150,
-  "reviewed_rule_count": 2366,
+  "reviewed_batch_count": 151,
+  "reviewed_rule_count": 2396,
   "batches": [
     {
       "id": "priority-2-accessibility-context-2026-07-21",
@@ -4776,6 +4776,52 @@
         "HIG-COMPONENTS-WEB-VIEWS-0003"
       ],
       "review_note": "Completed the page, preserved both stable best-practice IDs, recovered the tvOS and watchOS platform limitation, and introduced no unsupported MUST or MUST_NOT rules."
+    },
+    {
+      "id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T09:24:24Z",
+      "review_method": "Rendered Apple HIG Managing accounts overview, best practices, account deletion, TV provider accounts, platform considerations, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash, while previously reviewed tvOS platform rules remained in their original batch.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+          "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0001",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0002",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0003",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0004",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0005",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0006",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0007",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0010",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0016",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0017",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0018",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0019",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0020",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0021",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0022",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0023",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0024",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0025",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0026",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0027",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0028",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0029",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0030",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0031",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0032",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0033",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0034",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0035",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0036",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0037"
+      ],
+      "review_note": "Completed the remaining page, preserved eight stable common IDs, recovered twenty-two atomic rules, retained seven new explicit or source-required MUST outcomes and one existing Never MUST_NOT, kept direct Avoid guidance at AVOID, and left seven previously reviewed tvOS IDs unchanged."
     }
   ],
   "rules": [
@@ -39683,6 +39729,139 @@
       }
     },
     {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0001",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained MUST after confirming the unqualified Always directive and its current-method labeling example.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "23ada0f605e0d85e90202158c6b33d250852f299b2b59f0005b4a7b9ca557465",
+        "evidence_paraphrase": "Always identify the authentication method available to a person."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0002",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained AVOID because the source uses direct Avoid guidance, not an explicit prohibition.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "c254680164579b6bb0a691ed1fdf6fe42972b54e6b47c15f18af4770f80c0cd2",
+        "evidence_paraphrase": "Avoid using passcode to describe account authentication."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0003",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained SHOULD for the preferred in-app path; the mandatory web fallback is represented separately.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "2d09458373fb4265cd774e4ee667a9d69e95dede29979e561984efadfcb7990f",
+        "evidence_paraphrase": "Provide a clear way to initiate account deletion within the app or game."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0004",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained SHOULD and recorded the source's cross-channel complexity comparison.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "9031b69b9b6637b9b0e2a98a1e4d96eedfdfed4dc326cee00ee568c8a201c9d4",
+        "evidence_paraphrase": "Provide a consistent account-deletion experience in the app and on the website."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0005",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained MAY for the optional scheduling capability and separated the accompanying immediate option.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "15d2a1a4a986634043d3e83fd27c6ea544fed82d843c9c7297b03418e5d94248",
+        "evidence_paraphrase": "Consider letting people schedule account deletion for a future time."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0006",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained AVOID and narrowed the rule to the system-authenticated TV provider context.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "TV provider accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "82e8c64abd336fc6480b541299a597a96643fedae4e491ffab7bd27b6f7fdd65",
+        "evidence_paraphrase": "Avoid displaying an app sign-out option when a person uses system-level TV provider authentication."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0007",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained MUST_NOT after confirming the explicit Never instruction in its TV provider context.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "TV provider accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "2c87575bb1e4dc0c418da4f94a5e7ebdb65dcbb7f0148660bcf109b202fdaa9c",
+        "evidence_paraphrase": "Never instruct people to sign out of a TV provider account through privacy controls."
+      }
+    },
+    {
       "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0008",
       "confidence": "high",
       "review_required": false,
@@ -39720,6 +39899,25 @@
         "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
         "source_sentence_hash": "37654f1756eeadbd7a84058f3cde9b59af0de66b58c38352dd05124a764c21e8",
         "evidence_paraphrase": "Minimize data entry in tvOS account flows."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0010",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Retained AVOID because the source describes the setting as redundant and potentially confusing.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "be38872d48c3abce8b984dca29ae4c9c9c951e747a5ee117fe3216538095405c",
+        "evidence_paraphrase": "Avoid offering an app-specific setting for biometric-authentication opt-in."
       }
     },
     {
@@ -39820,6 +40018,423 @@
         "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
         "source_sentence_hash": "37654f1756eeadbd7a84058f3cde9b59af0de66b58c38352dd05124a764c21e8",
         "evidence_paraphrase": "When a tvOS account flow needs an email address, show the email keyboard so people can choose a recently entered address."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0016",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the account-value explanation as SHOULD without turning the conditional account requirement into a universal one.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "cbe02ac1140186a26d6c95d67adeb97b3fccfd8afaf8b95685e9a8355beb8474",
+        "evidence_paraphrase": "Explain the benefits of an account and how to sign up."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0017",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the delay recommendation and tied it to the first account-dependent task.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "91a74a3c0aa9417e0f985eb939a16d6038970c5969437fc6e12197ca7b7c8011",
+        "evidence_paraphrase": "Delay sign-in until people need account-dependent features."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0018",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the conditional preference and narrowed it to the four platforms enumerated by the source.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "0bf66154459a083b8afcda1bd63002ead1101dada18af328d469077547409ce6",
+        "evidence_paraphrase": "On supported platforms, prefer passkeys when the app doesn't use Sign in with Apple."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0019",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the availability rule and recorded both capability and terminology checks.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "e5ad5330d1a98ec67cbae1dd3e1c4abbfcf41fb41b2bd3629e100d23c1b34223",
+        "evidence_paraphrase": "Refer only to authentication methods available in the current context."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0020",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered MUST from the explicit make-sure timing requirement.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "3e850b1b95da6f15509ab8e4f650e2519b43fc8a10b036903b92caef737b06a1",
+        "evidence_paraphrase": "Ensure people understand how long account deletion takes."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0021",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the billing guidance as SHOULD and kept the purchase-management action separate.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "d5e86f6fd7de315660664ebd443d79cf7b5efdd8f6c7ca17db0d0b181d93dd3f",
+        "evidence_paraphrase": "Explain billing and cancellation outcomes for in-app purchases during account deletion."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0022",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the account-necessity constraint at SHOULD without promoting the source's conditional only-if phrasing to MUST.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "d316ddcd21cadcf4df5364a437b564a497bf154be82f4d14fb9b8347154dfbab",
+        "evidence_paraphrase": "Require an account only when the app's core functionality depends on it."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0023",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the explicit consider clause as MAY and preserved the source's platform scope.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "d316ddcd21cadcf4df5364a437b564a497bf154be82f4d14fb9b8347154dfbab",
+        "evidence_paraphrase": "When an account is required, consider offering Sign in with Apple."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0024",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the conditional security recommendation at SHOULD and preserved the four-platform context.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Best practices"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "6e9af77449ba9a29f47239e6f69b2aac90d6a71a3ca4f2b1b29f4756186a130b",
+        "evidence_paraphrase": "When passwords remain necessary, require two-factor authentication to strengthen account security."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0025",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered MUST from the explicit you-must deletion obligation.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "bddfff945748b942f38ca8f4b4f3109b4eb01e880c9edecdb985c4672732a76a",
+        "evidence_paraphrase": "Ensure people can delete accounts they create within the app or game."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0026",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered MUST from the explicit be-sure compliance directive while keeping jurisdictional details conditional.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "bddfff945748b942f38ca8f4b4f3109b4eb01e880c9edecdb985c4672732a76a",
+        "evidence_paraphrase": "Ensure account deletion complies with applicable regional and right-to-be-forgotten requirements."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0027",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the conditional transparency guidance without inventing a retention requirement.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "842de43cedfa46b515ae263156f76b17131282493d6759931dc6f1fa9a193be5",
+        "evidence_paraphrase": "Clearly describe legally required account retention or deletion processes."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0028",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the conditional MUST from the source's you-must direct-link requirement.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "812b9325bb38160719fc7bc4c34c3d9fdc328fdb164d1c1ab6338017df872c80",
+        "evidence_paraphrase": "When in-app deletion is unavailable, ensure the app provides a direct link to the deletion webpage."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0029",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the direct don't-bury guidance at AVOID rather than promoting it to MUST_NOT.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "812b9325bb38160719fc7bc4c34c3d9fdc328fdb164d1c1ab6338017df872c80",
+        "evidence_paraphrase": "Avoid burying an account-deletion link in a privacy policy or terms page."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0030",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the accompanying immediate option as SHOULD, separate from the optional scheduling decision.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "bfb677116c1996450e603fff2624aa7c152c3dfd0b664f44bdca6134205a68f1",
+        "evidence_paraphrase": "If scheduled deletion is available, also offer immediate account deletion."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0031",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered MUST from the source's explicit make-sure notification outcome and supporting essential rationale.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "bdf64f29bff10a77401503bf60c6076fe44bd6db52c3804800d4bd8f4ceff627",
+        "evidence_paraphrase": "Ensure people receive a notification when account deletion finishes."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0032",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the action-oriented purchase-management guidance at SHOULD.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "d6091bc23575c74889e02d85429e28bafce20d230560b55a21e5067955a1021f",
+        "evidence_paraphrase": "Explain how to cancel subscriptions and manage purchases during account deletion."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0033",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered MUST from the source's still-need-to-support account deletion requirement.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "a64a7e38356fcfcacaac8d5f418401775c5ecf685a22ccf3f12bf28fd9cd7718",
+        "evidence_paraphrase": "Ensure account deletion remains available when a subscription was purchased outside the app."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0034",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the conditional system-authentication recommendation without inferring an unsupported platform list.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "TV provider accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "969a58d05a3e6b21237588f8454cb6154c2e9b5d9e15165769e814a2c6a4ed11",
+        "evidence_paraphrase": "Use TV Provider Authentication when a TV provider app requires sign-in."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0035",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the conditional MUST from the source's needs-to-prompt platform requirement.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "TV provider accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "aed3c91344c3f30657687076e651868e9caa4caf886f3d33f4e473bf277321e1",
+        "evidence_paraphrase": "If the app exposes TV provider sign-out, ensure it routes people to Settings > TV Provider."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0036",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the watchOS-only synchronization recommendation and its Keychain-access purpose.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Platform considerations",
+          "watchOS"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "b852133b82258bcfec30f1bcd514bfbaf39ab273b719eeaf9aeb8094555afb6a",
+        "evidence_paraphrase": "Use iCloud synchronization so watchOS can access Keychain credentials and settings."
+      }
+    },
+    {
+      "id": "HIG-PATTERNS-MANAGING-ACCOUNTS-0037",
+      "confidence": "high",
+      "review_required": false,
+      "review_note": "Recovered the token-revocation instruction at SHOULD because the source doesn't use an explicit mandatory marker.",
+      "batch_id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "source": {
+        "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+        "page_title": "Managing accounts",
+        "section_path": [
+          "Managing accounts",
+          "Deleting accounts"
+        ],
+        "retrieved_at": "2026-07-21T20:29:28Z",
+        "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3",
+        "source_sentence_hash": "ef47e373e8836ebdc76ecaa6794db8071f519b8cdbfb212036f33a23c268f1ca",
+        "evidence_paraphrase": "Revoke associated Sign in with Apple tokens when deleting the linked account."
       }
     },
     {

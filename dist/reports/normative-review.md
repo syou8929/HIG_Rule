@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 381
-- Retained MUST: 343
+- Reviewed rules: 388
+- Retained MUST: 350
 - Retained MUST_NOT: 38
 - Normative level changes: 143
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:12:24Z
+- Reviewed at: 2026-07-23T09:24:24Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -589,6 +589,13 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0007 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0020 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0025 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0026 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0028 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0031 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0033 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0035 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MODALITY-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))

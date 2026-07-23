@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T09:12:24Z",
+  "reviewed_at": "2026-07-23T09:24:24Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -3352,9 +3352,278 @@
       "pages": [{"url": "https://developer.apple.com/design/human-interface-guidelines/web-views", "source_hash": "d6d1c808117ab7d92415e37b5e749596eee845c3be0c2cd94f78fe9c133fcc87"}],
       "rule_ids": ["HIG-COMPONENTS-WEB-VIEWS-0001", "HIG-COMPONENTS-WEB-VIEWS-0002", "HIG-COMPONENTS-WEB-VIEWS-0003"],
       "review_note": "Completed the page, preserved both stable best-practice IDs, recovered the tvOS and watchOS platform limitation, and introduced no unsupported MUST or MUST_NOT rules."
+    },
+    {
+      "id": "priority-6-managing-accounts-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T09:24:24Z",
+      "review_method": "Rendered Apple HIG Managing accounts overview, best practices, account deletion, TV provider accounts, platform considerations, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash, while previously reviewed tvOS platform rules remained in their original batch.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/managing-accounts",
+          "source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0001",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0002",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0003",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0004",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0005",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0006",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0007",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0010",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0016",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0017",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0018",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0019",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0020",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0021",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0022",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0023",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0024",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0025",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0026",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0027",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0028",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0029",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0030",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0031",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0032",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0033",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0034",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0035",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0036",
+        "HIG-PATTERNS-MANAGING-ACCOUNTS-0037"
+      ],
+      "review_note": "Completed the remaining page, preserved eight stable common IDs, recovered twenty-two atomic rules, retained seven new explicit or source-required MUST outcomes and one existing Never MUST_NOT, kept direct Avoid guidance at AVOID, and left seven previously reviewed tvOS IDs unchanged."
     }
   ],
   "rules": {
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0001": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "23ada0f605e0d85e90202158c6b33d250852f299b2b59f0005b4a7b9ca557465", "section_path": ["Managing accounts", "Best practices"]},
+      "title": "Always identify the authentication method you offer",
+      "statement": {"en": "Always identify the authentication method available to a person.", "ja": "利用者が使えるauthentication methodを常に明示する。"},
+      "conditions": ["Use labels that name the current method, such as Sign in with Face ID."],
+      "review_note": "Retained MUST after confirming the unqualified Always directive and its current-method labeling example."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0002": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "c254680164579b6bb0a691ed1fdf6fe42972b54e6b47c15f18af4770f80c0cd2", "section_path": ["Managing accounts", "Best practices"]},
+      "title": "Avoid passcode for account authentication",
+      "statement": {"en": "Avoid using passcode to describe account authentication.", "ja": "account authenticationを表すためにpasscodeという用語を使わない。"},
+      "conditions": ["Reserve passcode for unlocking a device or authenticating an Apple service."],
+      "review_note": "Retained AVOID because the source uses direct Avoid guidance, not an explicit prohibition."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0003": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "2d09458373fb4265cd774e4ee667a9d69e95dede29979e561984efadfcb7990f", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Provide in-app account deletion initiation",
+      "statement": {"en": "Provide a clear way to initiate account deletion within the app or game.", "ja": "appまたはgame内にaccount deletionを開始する明確な方法を設ける。"},
+      "conditions": ["Keep the deletion control discoverable in the account-management context."],
+      "review_note": "Retained SHOULD for the preferred in-app path; the mandatory web fallback is represented separately."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0004": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "9031b69b9b6637b9b0e2a98a1e4d96eedfdfed4dc326cee00ee568c8a201c9d4", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Keep app and web deletion flows consistent",
+      "statement": {"en": "Provide a consistent account-deletion experience in the app and on the website.", "ja": "app内とwebsite上で一貫したaccount-deletion experienceを提供する。"},
+      "conditions": ["Avoid making either channel substantially longer or more complex."],
+      "review_note": "Retained SHOULD and recorded the source's cross-channel complexity comparison."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0005": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "15d2a1a4a986634043d3e83fd27c6ea544fed82d843c9c7297b03418e5d94248", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Consider scheduled account deletion",
+      "statement": {"en": "Consider letting people schedule account deletion for a future time.", "ja": "account deletionを将来の時点にscheduleできるようにすることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["If scheduling is available, also offer immediate deletion."],
+      "review_note": "Retained MAY for the optional scheduling capability and separated the accompanying immediate option."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0006": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "82e8c64abd336fc6480b541299a597a96643fedae4e491ffab7bd27b6f7fdd65", "section_path": ["Managing accounts", "TV provider accounts"]},
+      "title": "Avoid app sign-out for system-level TV provider accounts",
+      "statement": {"en": "Avoid displaying an app sign-out option when a person uses system-level TV provider authentication.", "ja": "system-level TV provider authenticationの利用中はapp内sign-out optionの表示を避ける。"},
+      "conditions": ["Apply where a system-level TV Provider account is available."],
+      "review_note": "Retained AVOID and narrowed the rule to the system-authenticated TV provider context."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0007": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "2c87575bb1e4dc0c418da4f94a5e7ebdb65dcbb7f0148660bcf109b202fdaa9c", "section_path": ["Managing accounts", "TV provider accounts"]},
+      "title": "Never use privacy controls for TV provider sign-out",
+      "statement": {"en": "Never instruct people to sign out of a TV provider account through privacy controls.", "ja": "privacy controlを使ったTV provider accountのsign-outを案内しない。"},
+      "conditions": ["Privacy controls don't provide the TV provider sign-out mechanism."],
+      "review_note": "Retained MUST_NOT after confirming the explicit Never instruction in its TV provider context."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0010": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "be38872d48c3abce8b984dca29ae4c9c9c951e747a5ee117fe3216538095405c", "section_path": ["Managing accounts", "Best practices"]},
+      "title": "Avoid app-specific biometric opt-in settings",
+      "statement": {"en": "Avoid offering an app-specific setting for biometric-authentication opt-in.", "ja": "biometric authenticationへのopt-in用app-specific settingを設けない。"},
+      "conditions": ["Rely on system-level biometric enrollment and authentication controls."],
+      "review_note": "Retained AVOID because the source describes the setting as redundant and potentially confusing."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0016": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "cbe02ac1140186a26d6c95d67adeb97b3fccfd8afaf8b95685e9a8355beb8474", "section_path": ["Managing accounts", "Best practices"]},
+      "title": "Explain account benefits and signup steps",
+      "statement": {"en": "Explain the benefits of an account and how to sign up.", "ja": "accountの利点とsignup方法を説明する。"},
+      "conditions": ["When an account is required, keep the sign-in-view explanation brief and friendly."],
+      "review_note": "Recovered the account-value explanation as SHOULD without turning the conditional account requirement into a universal one."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0017": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "91a74a3c0aa9417e0f985eb939a16d6038970c5969437fc6e12197ca7b7c8011", "section_path": ["Managing accounts", "Best practices"]},
+      "title": "Defer sign-in as long as possible",
+      "statement": {"en": "Delay sign-in until people need account-dependent features.", "ja": "account-dependent featureが必要になるまでsign-inを遅らせる。"},
+      "conditions": ["Let people explore usable content before requiring authentication."],
+      "review_note": "Recovered the delay recommendation and tied it to the first account-dependent task."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0018": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "0bf66154459a083b8afcda1bd63002ead1101dada18af328d469077547409ce6", "section_path": ["Managing accounts", "Best practices"]},
+      "title": "Prefer passkeys when Sign in with Apple isn't used",
+      "statement": {"en": "On supported platforms, prefer passkeys when the app doesn't use Sign in with Apple.", "ja": "supported platformでSign in with Appleを使わない場合はpasskeyを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The app requires account authentication and doesn't offer Sign in with Apple."],
+      "review_note": "Recovered the conditional preference and narrowed it to the four platforms enumerated by the source."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0019": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "e5ad5330d1a98ec67cbae1dd3e1c4abbfcf41fb41b2bd3629e100d23c1b34223", "section_path": ["Managing accounts", "Best practices"]},
+      "title": "Name only currently available authentication methods",
+      "statement": {"en": "Refer only to authentication methods available in the current context.", "ja": "current contextで利用できるauthentication methodだけを示す。"},
+      "conditions": ["Check device capabilities and use the system's current terminology."],
+      "review_note": "Recovered the availability rule and recorded both capability and terminology checks."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0020": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "3e850b1b95da6f15509ab8e4f650e2519b43fc8a10b036903b92caef737b06a1", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Ensure people know when account deletion will complete",
+      "statement": {"en": "Ensure people understand how long account deletion takes.", "ja": "account deletionの完了までにかかる時間を利用者が理解できるようにする。"},
+      "normative_level": "MUST",
+      "conditions": ["Communicate the expected completion timing before deletion finishes."],
+      "review_note": "Recovered MUST from the explicit make-sure timing requirement."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0021": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "d5e86f6fd7de315660664ebd443d79cf7b5efdd8f6c7ca17db0d0b181d93dd3f", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Explain deletion-related billing and cancellation",
+      "statement": {"en": "Explain billing and cancellation outcomes for in-app purchases during account deletion.", "ja": "account deletion時のin-app purchaseに関するbillingとcancellationの結果を説明する。"},
+      "conditions": ["Cover the purchase types and billing arrangements the account supports."],
+      "review_note": "Recovered the billing guidance as SHOULD and kept the purchase-management action separate."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0022": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "d316ddcd21cadcf4df5364a437b564a497bf154be82f4d14fb9b8347154dfbab", "section_path": ["Managing accounts"]},
+      "title": "Require an account only for core functionality",
+      "statement": {"en": "Require an account only when the app's core functionality depends on it.", "ja": "appのcore functionalityに必要な場合だけaccountを必須にする。"},
+      "conditions": ["Otherwise, let people use the app or game without an account."],
+      "review_note": "Recovered the account-necessity constraint at SHOULD without promoting the source's conditional only-if phrasing to MUST."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0023": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "d316ddcd21cadcf4df5364a437b564a497bf154be82f4d14fb9b8347154dfbab", "section_path": ["Managing accounts"]},
+      "title": "Consider Sign in with Apple for required accounts",
+      "statement": {"en": "When an account is required, consider offering Sign in with Apple.", "ja": "accountが必要な場合はSign in with Appleの提供を検討する。"},
+      "normative_level": "MAY",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The app requires an account for core functionality."],
+      "review_note": "Recovered the explicit consider clause as MAY and preserved the source's platform scope."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0024": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "6e9af77449ba9a29f47239e6f69b2aac90d6a71a3ca4f2b1b29f4756186a130b", "section_path": ["Managing accounts", "Best practices"]},
+      "title": "Use two-factor authentication with passwords",
+      "statement": {"en": "When passwords remain necessary, require two-factor authentication to strengthen account security.", "ja": "passwordが必要な場合はaccount securityを強化するためtwo-factor authenticationを必須にする。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Apply when the account flow still relies on passwords."],
+      "review_note": "Recovered the conditional security recommendation at SHOULD and preserved the four-platform context."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0025": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "bddfff945748b942f38ca8f4b4f3109b4eb01e880c9edecdb985c4672732a76a", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Ensure in-app accounts can be deleted",
+      "statement": {"en": "Ensure people can delete accounts they create within the app or game.", "ja": "appまたはgame内で作成したaccountを利用者が削除できるようにする。"},
+      "normative_level": "MUST",
+      "conditions": ["Deletion must remove the account, not merely deactivate it."],
+      "review_note": "Recovered MUST from the explicit you-must deletion obligation."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0026": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "bddfff945748b942f38ca8f4b4f3109b4eb01e880c9edecdb985c4672732a76a", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Ensure compliance with regional account-deletion requirements",
+      "statement": {"en": "Ensure account deletion complies with applicable regional and right-to-be-forgotten requirements.", "ja": "account deletionを該当地域およびright-to-be-forgottenの要件に適合させる。"},
+      "normative_level": "MUST",
+      "conditions": ["Review the legal requirements applicable to each supported region."],
+      "review_note": "Recovered MUST from the explicit be-sure compliance directive while keeping jurisdictional details conditional."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0027": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "842de43cedfa46b515ae263156f76b17131282493d6759931dc6f1fa9a193be5", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Describe legally required retention or deletion processes",
+      "statement": {"en": "Clearly describe legally required account retention or deletion processes.", "ja": "法的に必要なaccount retentionまたはdeletion processを明確に説明する。"},
+      "conditions": ["Apply when law compels retained information, retained accounts, or a particular deletion process."],
+      "review_note": "Recovered the conditional transparency guidance without inventing a retention requirement."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0028": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "812b9325bb38160719fc7bc4c34c3d9fdc328fdb164d1c1ab6338017df872c80", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Ensure a direct deletion link when in-app deletion is unavailable",
+      "statement": {"en": "When in-app deletion is unavailable, ensure the app provides a direct link to the deletion webpage.", "ja": "in-app deletionを提供できない場合はdeletion webpageへのdirect linkをapp内に設ける。"},
+      "normative_level": "MUST",
+      "conditions": ["Keep the link easy to discover in the account-management context."],
+      "review_note": "Recovered the conditional MUST from the source's you-must direct-link requirement."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0029": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "812b9325bb38160719fc7bc4c34c3d9fdc328fdb164d1c1ab6338017df872c80", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Avoid burying account-deletion links",
+      "statement": {"en": "Avoid burying an account-deletion link in a privacy policy or terms page.", "ja": "account-deletion linkをprivacy policyやterms page内に埋もれさせない。"},
+      "conditions": ["Present the link where people manage their account."],
+      "review_note": "Recovered the direct don't-bury guidance at AVOID rather than promoting it to MUST_NOT."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0030": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "bfb677116c1996450e603fff2624aa7c152c3dfd0b664f44bdca6134205a68f1", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Offer immediate deletion with scheduled deletion",
+      "statement": {"en": "If scheduled deletion is available, also offer immediate account deletion.", "ja": "scheduled deletionを提供する場合はimmediate account deletionも提供する。"},
+      "conditions": ["Apply only when the service offers future scheduling."],
+      "review_note": "Recovered the accompanying immediate option as SHOULD, separate from the optional scheduling decision."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0031": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "bdf64f29bff10a77401503bf60c6076fe44bd6db52c3804800d4bd8f4ceff627", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Ensure people are notified when account deletion finishes",
+      "statement": {"en": "Ensure people receive a notification when account deletion finishes.", "ja": "account deletionの完了時に利用者へnotificationを届ける。"},
+      "normative_level": "MUST",
+      "conditions": ["Use the completion notice to keep people informed throughout the process."],
+      "review_note": "Recovered MUST from the source's explicit make-sure notification outcome and supporting essential rationale."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0032": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "d6091bc23575c74889e02d85429e28bafce20d230560b55a21e5067955a1021f", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Explain subscription cancellation and purchase management",
+      "statement": {"en": "Explain how to cancel subscriptions and manage purchases during account deletion.", "ja": "account deletion時のsubscription cancellationとpurchase managementの方法を説明する。"},
+      "conditions": ["Provide information for the purchase types the account uses."],
+      "review_note": "Recovered the action-oriented purchase-management guidance at SHOULD."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0033": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "a64a7e38356fcfcacaac8d5f418401775c5ecf685a22ccf3f12bf28fd9cd7718", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Ensure deletion for externally purchased subscriptions",
+      "statement": {"en": "Ensure account deletion remains available when a subscription was purchased outside the app.", "ja": "subscriptionをapp外で購入した場合もaccount deletionを利用できるようにする。"},
+      "normative_level": "MUST",
+      "conditions": ["External subscription purchase doesn't remove the account-deletion obligation."],
+      "review_note": "Recovered MUST from the source's still-need-to-support account deletion requirement."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0034": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "969a58d05a3e6b21237588f8454cb6154c2e9b5d9e15165769e814a2c6a4ed11", "section_path": ["Managing accounts", "TV provider accounts"]},
+      "title": "Use TV Provider Authentication for provider sign-in",
+      "statement": {"en": "Use TV Provider Authentication when a TV provider app requires sign-in.", "ja": "TV provider appでsign-inが必要な場合はTV Provider Authenticationを使う。"},
+      "conditions": ["Apply where system-level TV Provider Authentication is available."],
+      "review_note": "Recovered the conditional system-authentication recommendation without inferring an unsupported platform list."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0035": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "aed3c91344c3f30657687076e651868e9caa4caf886f3d33f4e473bf277321e1", "section_path": ["Managing accounts", "TV provider accounts"]},
+      "title": "Ensure TV provider sign-out routes to Settings",
+      "statement": {"en": "If the app exposes TV provider sign-out, ensure it routes people to Settings > TV Provider.", "ja": "appがTV provider sign-outを提供する場合はSettings > TV Providerへ案内する。"},
+      "normative_level": "MUST",
+      "conditions": ["Apply only when the app must expose sign-out despite system-level authentication."],
+      "review_note": "Recovered the conditional MUST from the source's needs-to-prompt platform requirement."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0036": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "b852133b82258bcfec30f1bcd514bfbaf39ab273b719eeaf9aeb8094555afb6a", "section_path": ["Managing accounts", "Platform considerations", "watchOS"]},
+      "title": "Use iCloud synchronization for watchOS Keychain access",
+      "statement": {"en": "Use iCloud synchronization so watchOS can access Keychain credentials and settings.", "ja": "watchOSからKeychain credentialとsettingへアクセスするためiCloud synchronizationを使う。"},
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["The watchOS app needs synced credentials or account settings."],
+      "review_note": "Recovered the watchOS-only synchronization recommendation and its Keychain-access purpose."
+    },
+    "HIG-PATTERNS-MANAGING-ACCOUNTS-0037": {
+      "source": {"source_hash": "6ef6e4e589e0ab3748224f1c2f03524e2cf3cc62f495d68ba7a4a2ffefee37d3", "source_sentence_hash": "ef47e373e8836ebdc76ecaa6794db8071f519b8cdbfb212036f33a23c268f1ca", "section_path": ["Managing accounts", "Deleting accounts"]},
+      "title": "Revoke Sign in with Apple tokens during deletion",
+      "statement": {"en": "Revoke associated Sign in with Apple tokens when deleting the linked account.", "ja": "linked accountを削除するときは関連するSign in with Apple tokenをrevokeする。"},
+      "conditions": ["The account was created or authenticated using Sign in with Apple."],
+      "review_note": "Recovered the token-revocation instruction at SHOULD because the source doesn't use an explicit mandatory marker."
+    },
     "HIG-COMPONENTS-NOTIFICATIONS-0001": {
       "source": {"source_hash": "0096b76e2ee0f46c5bf4b5cc2ebe1680da09605d1dbb7835517f2031728997d5", "source_sentence_hash": "947190a67e37384b87155a0226929fa72ad5832fba56edb3ef477a93d1580175", "section_path": ["Notifications", "Best practices"]},
       "statement": {"en": "Keep notifications concise, informative, and valuable.", "ja": "notificationを簡潔で有益かつ価値のある内容にする。"},

@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3001
+- Active atomic rules: 3023
 - Pages without rules: 16
-- Low-confidence rules: 589
-- Rules requiring human review: 589
+- Low-confidence rules: 583
+- Rules requiring human review: 583
 - Reference notes: 903
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 463
 - getting-started: 100
 - inputs: 245
-- patterns: 379
+- patterns: 401
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 422
-- MAY: 358
-- MUST: 343
+- AVOID: 423
+- MAY: 359
+- MUST: 350
 - MUST_NOT: 38
-- SHOULD: 1840
+- SHOULD: 1853
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2036
-- ipados: 2012
-- macos: 1656
-- tvos: 1309
-- visionos: 1705
-- watchos: 1399
+- ios: 2057
+- ipados: 2033
+- macos: 1677
+- tvos: 1327
+- visionos: 1726
+- watchos: 1418
 
 ## Rules by testability
 
 - hybrid: 90
-- manual: 2911
+- manual: 2933
 
 ## Blocked pages
 
@@ -229,12 +229,6 @@ None.
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0017
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0018
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0019
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0002
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0003
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0004
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0005
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0006
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0010
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001
 - HIG-PATTERNS-MODALITY-0001
 - HIG-PATTERNS-MODALITY-0002
@@ -821,12 +815,6 @@ None.
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0017
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0018
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0019
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0002
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0003
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0004
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0005
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0006
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0010
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001
 - HIG-PATTERNS-MODALITY-0001
 - HIG-PATTERNS-MODALITY-0002
@@ -1719,11 +1707,11 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > The role of machine learning in your app — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Platform considerations — Reviewed: no additional iOS, iPadOS, macOS, or visionOS guidance appears beyond the common rules.
+- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Platform considerations > watchOS — Reviewed: the watchOS iCloud and Keychain recommendation is represented as a platform-specific rule.
+- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Resources — Reviewed: resource navigation contains no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Resources > Related — Reviewed: related-topic links contain no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Resources > Videos — Reviewed: video navigation contains no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/managing-notifications · Managing notifications > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/managing-notifications · Managing notifications > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/managing-notifications · Managing notifications > Resources — Section recorded for human review; no short atomic guidance lead was detected.

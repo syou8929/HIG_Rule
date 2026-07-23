@@ -1,27 +1,30 @@
 # Human source-review queue
 
-- Remaining rules: 589
+- Remaining rules: 583
 - Next priority: 6 (apple-platform-common)
-- Next batch: 6
+- Next batch: 9
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 566
+- 6 (apple-platform-common): 560
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 60
-- MAY: 59
-- SHOULD: 470
+- AVOID: 57
+- MAY: 58
+- SHOULD: 468
 
 ## Next batch
 
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0002 · AVOID — Avoid using the term passcode to refer to account authentication · Managing accounts > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0006 · AVOID — Avoid displaying a sign-out option when people are signed in at the system level · Managing accounts > TV provider accounts ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0010 · AVOID — In general, avoid offering an app-specific setting for opting in to biometric authentication · Managing accounts > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0003 · SHOULD — Provide a clear way to initiate account deletion within your app or game · Managing accounts > Deleting accounts ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0004 · SHOULD — Provide a consistent account-deletion experience whether people perform it within your app or game or on th… · Managing accounts > Deleting accounts ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- HIG-PATTERNS-MANAGING-ACCOUNTS-0005 · MAY — Consider letting people schedule account deletion to occur in the future · Managing accounts > Deleting accounts ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-OFFERING-HELP-0004 · AVOID — Avoid bloating your help content by explaining how standard components or patterns work · Offering help > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0001 · SHOULD — Let your app’s tasks inform the types of help people might need · Offering help > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0002 · SHOULD — Use relevant and consistent language and images in your help content · Offering help > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0005 · SHOULD — Use the most appropriate tip type for your app’s user interface · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0006 · SHOULD — Use tips for simple features · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0007 · SHOULD — Make tips short, actionable, and engaging · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0008 · SHOULD — Use buttons to direct people to information or options · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0014 · SHOULD — Define rules to help ensure your tips reach the intended audience · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))
+- HIG-PATTERNS-OFFERING-HELP-0015 · MAY — If there’s an image or symbol that people associate with the feature, consider including it in the tip, and · Offering help > Creating tips ([source](https://developer.apple.com/design/human-interface-guidelines/offering-help))

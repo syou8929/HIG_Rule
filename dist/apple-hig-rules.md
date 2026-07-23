@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T09:15:56.926Z. 3001 active rules; 4 deprecated rules.
+Generated 2026-07-23T09:29:46.948Z. 3023 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -794,21 +794,43 @@ Generated 2026-07-23T09:15:56.926Z. 3001 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-LOADING-0013 · SHOULD · high** — Estimate remaining loading time as accurately as possible for long-wait placeholder content. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 ### managing-accounts
 
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · medium** — Identify the authentication method you offer in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0002 · AVOID · low** — Exclude using the term passcode to refer to account authentication from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0003 · SHOULD · low** — Make a clear way to initiate account deletion within your app or game available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0004 · SHOULD · low** — Make a consistent account-deletion experience whether people perform it within your app or game or on the website available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0005 · MAY · low** — Evaluate whether letting people schedule account deletion to occur in the future is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0006 · AVOID · low** — Exclude displaying a sign-out option when people are signed in at the system level from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0007 · MUST_NOT · medium** — Exclude instruct people to sign out by adjusting privacy controls from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · high** — Always identify the authentication method available to a person. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0002 · AVOID · high** — Avoid using passcode to describe account authentication. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0003 · SHOULD · high** — Provide a clear way to initiate account deletion within the app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0004 · SHOULD · high** — Provide a consistent account-deletion experience in the app and on the website. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0005 · MAY · high** — Consider letting people schedule account deletion for a future time. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0006 · AVOID · high** — Avoid displaying an app sign-out option when a person uses system-level TV provider authentication. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0007 · MUST_NOT · high** — Never instruct people to sign out of a TV provider account through privacy controls. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0008 · SHOULD · high** — Prefer letting people use another device to sign up or authenticate for a tvOS app. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0009 · SHOULD · high** — Minimize data entry in tvOS account flows. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- **HIG-PATTERNS-MANAGING-ACCOUNTS-0010 · AVOID · low** — Exclude offering an app-specific setting for opting in to biometric authentication from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0010 · AVOID · high** — Avoid offering an app-specific setting for biometric-authentication opt-in. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0011 · AVOID · high** — When people use a shared account on tvOS, avoid asking them to choose a profile whenever they become the current user. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0012 · MAY · high** — On tvOS 16 or later, consider sharing a shared account’s credentials across users while storing each person’s profile and user data separately. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0013 · MAY · high** — When the app supports shared credentials with separate profiles, consider automatically using the current tvOS user’s profile without another sign-in. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0014 · SHOULD · high** — If tvOS account setup needs more than a small amount of information, ask people to continue on a website using another device. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0015 · SHOULD · high** — When a tvOS account flow needs an email address, show the email keyboard so people can choose a recently entered address. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0016 · SHOULD · high** — Explain the benefits of an account and how to sign up. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0017 · SHOULD · high** — Delay sign-in until people need account-dependent features. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0018 · SHOULD · high** — On supported platforms, prefer passkeys when the app doesn't use Sign in with Apple. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0019 · SHOULD · high** — Refer only to authentication methods available in the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0020 · MUST · high** — Ensure people understand how long account deletion takes. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0021 · SHOULD · high** — Explain billing and cancellation outcomes for in-app purchases during account deletion. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0022 · SHOULD · high** — Require an account only when the app's core functionality depends on it. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0023 · MAY · high** — When an account is required, consider offering Sign in with Apple. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0024 · SHOULD · high** — When passwords remain necessary, require two-factor authentication to strengthen account security. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0025 · MUST · high** — Ensure people can delete accounts they create within the app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0026 · MUST · high** — Ensure account deletion complies with applicable regional and right-to-be-forgotten requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0027 · SHOULD · high** — Clearly describe legally required account retention or deletion processes. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0028 · MUST · high** — When in-app deletion is unavailable, ensure the app provides a direct link to the deletion webpage. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0029 · AVOID · high** — Avoid burying an account-deletion link in a privacy policy or terms page. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0030 · SHOULD · high** — If scheduled deletion is available, also offer immediate account deletion. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0031 · MUST · high** — Ensure people receive a notification when account deletion finishes. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0032 · SHOULD · high** — Explain how to cancel subscriptions and manage purchases during account deletion. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0033 · MUST · high** — Ensure account deletion remains available when a subscription was purchased outside the app. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0034 · SHOULD · high** — Use TV Provider Authentication when a TV provider app requires sign-in. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0035 · MUST · high** — If the app exposes TV provider sign-out, ensure it routes people to Settings > TV Provider. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0036 · SHOULD · high** — Use iCloud synchronization so watchOS can access Keychain credentials and settings. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- **HIG-PATTERNS-MANAGING-ACCOUNTS-0037 · SHOULD · high** — Revoke associated Sign in with Apple tokens when deleting the linked account. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 ### managing-notifications
 
 - **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001 · SHOULD · low** — Choose or apply the Time Sensitive interruption level only for notifications that are relevant in the moment in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))

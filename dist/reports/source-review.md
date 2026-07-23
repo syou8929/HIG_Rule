@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2366
-- Reviewed batches: 150
+- Reviewed rules: 2396
+- Reviewed batches: 151
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:12:24Z
+- Reviewed at: 2026-07-23T09:24:24Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1807,13 +1807,43 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-LOADING-0011 · high — Recovered the watchOS immediacy aim without promoting it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0012 · high — Recovered the narrow brief-loading exception and its preferred fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0013 · high — Recovered the timing-accuracy rule and both placeholder-duration failure modes. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · high — Retained MUST after confirming the unqualified Always directive and its current-method labeling example. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0002 · high — Retained AVOID because the source uses direct Avoid guidance, not an explicit prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0003 · high — Retained SHOULD for the preferred in-app path; the mandatory web fallback is represented separately. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0004 · high — Retained SHOULD and recorded the source's cross-channel complexity comparison. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0005 · high — Retained MAY for the optional scheduling capability and separated the accompanying immediate option. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0006 · high — Retained AVOID and narrowed the rule to the system-authenticated TV provider context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0007 · high — Retained MUST_NOT after confirming the explicit Never instruction in its TV provider context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0008 · high — Made the cross-device preference concrete and recorded the associated-domain mechanism without turning the capability into a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0009 · high — Narrowed the generic lead to tvOS account flows and recorded the remote-input rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0010 · high — Retained AVOID because the source describes the setting as redundant and potentially confusing. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0011 · high — Recovered the direct avoidance guidance and kept it at AVOID because the source does not use an explicit prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0012 · high — Recovered the platform capability as MAY and preserved the per-user data-separation condition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0013 · high — Separated the current-profile capability and retained its optional can-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0014 · high — Recovered the conditional website handoff and retained recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0015 · high — Recovered the email-entry optimization, recorded remote and onscreen-keyboard context, and kept verification manual. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0016 · high — Recovered the account-value explanation as SHOULD without turning the conditional account requirement into a universal one. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0017 · high — Recovered the delay recommendation and tied it to the first account-dependent task. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0018 · high — Recovered the conditional preference and narrowed it to the four platforms enumerated by the source. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0019 · high — Recovered the availability rule and recorded both capability and terminology checks. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0020 · high — Recovered MUST from the explicit make-sure timing requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0021 · high — Recovered the billing guidance as SHOULD and kept the purchase-management action separate. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0022 · high — Recovered the account-necessity constraint at SHOULD without promoting the source's conditional only-if phrasing to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0023 · high — Recovered the explicit consider clause as MAY and preserved the source's platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0024 · high — Recovered the conditional security recommendation at SHOULD and preserved the four-platform context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0025 · high — Recovered MUST from the explicit you-must deletion obligation. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0026 · high — Recovered MUST from the explicit be-sure compliance directive while keeping jurisdictional details conditional. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0027 · high — Recovered the conditional transparency guidance without inventing a retention requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0028 · high — Recovered the conditional MUST from the source's you-must direct-link requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0029 · high — Recovered the direct don't-bury guidance at AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0030 · high — Recovered the accompanying immediate option as SHOULD, separate from the optional scheduling decision. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0031 · high — Recovered MUST from the source's explicit make-sure notification outcome and supporting essential rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0032 · high — Recovered the action-oriented purchase-management guidance at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0033 · high — Recovered MUST from the source's still-need-to-support account deletion requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0034 · high — Recovered the conditional system-authentication recommendation without inferring an unsupported platform list. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0035 · high — Recovered the conditional MUST from the source's needs-to-prompt platform requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0036 · high — Recovered the watchOS-only synchronization recommendation and its Keychain-access purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-ACCOUNTS-0037 · high — Recovered the token-revocation instruction at SHOULD because the source doesn't use an explicit mandatory marker. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MULTITASKING-0001 · high — Recorded the two interruption classes and separated their required responses. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0002 · high — Recorded both background states and separated useful and unnecessary completion cases. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0003 · high — Recorded every system state cue and separated the concrete window-edge restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
