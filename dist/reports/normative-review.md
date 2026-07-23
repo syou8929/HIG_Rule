@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 403
-- Retained MUST: 364
-- Retained MUST_NOT: 39
+- Reviewed rules: 416
+- Retained MUST: 376
+- Retained MUST_NOT: 40
 - Normative level changes: 143
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T12:06:55Z
+- Reviewed at: 2026-07-23T12:21:03Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -271,6 +271,19 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APP-CLIPS-0085 — Recovered MUST from the source's explicit must requirement for simultaneous business or location state. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0087 — Recovered MUST from the explicit Always directive for simple clear call-to-action messaging. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0089 — Recovered MUST from the explicit requirement that Apple trademarks remain in English. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- HIG-TECHNOLOGIES-APPLE-PAY-0031 — Recovered the conditional explicit must requirement without promoting the broader primary-option recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0032 — Recovered the explicit Make sure custom-button branding restriction as a conditional MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0033 — Recovered the second explicit Make sure outcome from the custom-button paragraph as a separate atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0034 — Recovered the explicit Never prohibition separately from the general acceptance-mark recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0035 — Split and retained the first explicit website must requirement as an atomic privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0036 — Split and retained the second explicit website must requirement separately from the privacy statement. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0037 — Recovered the explicit need-to preauthorization validation and reporting requirement with its privacy-driven limit. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0038 — Recovered the explicit you-must cancellation requirement from payment-processing interruption guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0039 — Recovered the explicit Make sure comprehension requirement while preserving its before-sheet timing. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0040 — Recovered the explicit Make sure amount-awareness requirement at the authorization boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0041 — Recovered the explicit Make sure comparative-size requirement without treating the mark as a payment button. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0042 — Recovered the explicit Always requirement separately from the direct don't-translate recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0043 — Recovered the conditional explicit must requirement and preserved the all-text-only exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-CAREKIT-0001 — Raised the privacy-policy rule to MUST from the source's explicit app-submission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CAREKIT-0015 — Raised the relevance requirement to MUST from the explicit be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CAREKIT-0018 — Recovered MUST from the explicit permission-before-access requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
@@ -666,6 +679,19 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APP-CLIPS-0089 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit requirement that Apple trademarks remain in English. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APPLE-PAY-0020 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-APPLE-PAY-0025 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional explicit must requirement without promoting the broader primary-option recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0032 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure custom-button branding restriction as a conditional MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0033 · MUST · retained_with_atomicity_or_scope_correction — Recovered the second explicit Make sure outcome from the custom-button paragraph as a separate atomic MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0034 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never prohibition separately from the general acceptance-mark recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0035 · MUST · retained_with_atomicity_or_scope_correction — Split and retained the first explicit website must requirement as an atomic privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0036 · MUST · retained_with_atomicity_or_scope_correction — Split and retained the second explicit website must requirement separately from the privacy statement. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0037 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit need-to preauthorization validation and reporting requirement with its privacy-driven limit. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0038 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit you-must cancellation requirement from payment-processing interruption guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0039 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure comprehension requirement while preserving its before-sheet timing. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0040 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure amount-awareness requirement at the authorization boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0041 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure comparative-size requirement without treating the mark as a payment button. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0042 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always requirement separately from the direct don't-translate recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
+- HIG-TECHNOLOGIES-APPLE-PAY-0043 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional explicit must requirement and preserved the all-text-only exception. ([source](https://developer.apple.com/design/human-interface-guidelines/apple-pay))
 - HIG-TECHNOLOGIES-CAREKIT-0001 · MUST · retained_with_atomicity_or_scope_correction — Raised the privacy-policy rule to MUST from the source's explicit app-submission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CAREKIT-0015 · MUST · retained_with_atomicity_or_scope_correction — Raised the relevance requirement to MUST from the explicit be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))
 - HIG-TECHNOLOGIES-CAREKIT-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit permission-before-access requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/carekit))

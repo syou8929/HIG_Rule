@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3117
+- Active atomic rules: 3130
 - Pages without rules: 16
-- Low-confidence rules: 526
-- Rules requiring human review: 526
-- Reference notes: 905
+- Low-confidence rules: 498
+- Rules requiring human review: 498
+- Reference notes: 908
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 245
 - patterns: 477
-- technologies: 806
+- technologies: 819
 
 ## Normative levels
 
 - AVOID: 434
 - MAY: 368
-- MUST: 364
-- MUST_NOT: 39
+- MUST: 376
+- MUST_NOT: 40
 - SHOULD: 1912
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2146
-- ipados: 2115
-- macos: 1750
+- ios: 2159
+- ipados: 2128
+- macos: 1763
 - tvos: 1399
-- visionos: 1798
-- watchos: 1468
+- visionos: 1811
+- watchos: 1481
 
 ## Rules by testability
 
 - hybrid: 93
-- manual: 3024
+- manual: 3037
 
 ## Blocked pages
 
@@ -248,34 +248,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-TECHNOLOGIES-APPLE-PAY-0001
-- HIG-TECHNOLOGIES-APPLE-PAY-0002
-- HIG-TECHNOLOGIES-APPLE-PAY-0003
-- HIG-TECHNOLOGIES-APPLE-PAY-0004
-- HIG-TECHNOLOGIES-APPLE-PAY-0005
-- HIG-TECHNOLOGIES-APPLE-PAY-0006
-- HIG-TECHNOLOGIES-APPLE-PAY-0007
-- HIG-TECHNOLOGIES-APPLE-PAY-0008
-- HIG-TECHNOLOGIES-APPLE-PAY-0009
-- HIG-TECHNOLOGIES-APPLE-PAY-0010
-- HIG-TECHNOLOGIES-APPLE-PAY-0011
-- HIG-TECHNOLOGIES-APPLE-PAY-0012
-- HIG-TECHNOLOGIES-APPLE-PAY-0013
-- HIG-TECHNOLOGIES-APPLE-PAY-0014
-- HIG-TECHNOLOGIES-APPLE-PAY-0015
-- HIG-TECHNOLOGIES-APPLE-PAY-0016
-- HIG-TECHNOLOGIES-APPLE-PAY-0017
-- HIG-TECHNOLOGIES-APPLE-PAY-0018
-- HIG-TECHNOLOGIES-APPLE-PAY-0019
-- HIG-TECHNOLOGIES-APPLE-PAY-0021
-- HIG-TECHNOLOGIES-APPLE-PAY-0022
-- HIG-TECHNOLOGIES-APPLE-PAY-0023
-- HIG-TECHNOLOGIES-APPLE-PAY-0024
-- HIG-TECHNOLOGIES-APPLE-PAY-0026
-- HIG-TECHNOLOGIES-APPLE-PAY-0027
-- HIG-TECHNOLOGIES-APPLE-PAY-0028
-- HIG-TECHNOLOGIES-APPLE-PAY-0029
-- HIG-TECHNOLOGIES-APPLE-PAY-0030
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0001
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0002
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0003
@@ -777,34 +749,6 @@ None.
 - HIG-PATTERNS-SEARCHING-0005
 - HIG-PATTERNS-SEARCHING-0006
 - HIG-PATTERNS-SEARCHING-0007
-- HIG-TECHNOLOGIES-APPLE-PAY-0001
-- HIG-TECHNOLOGIES-APPLE-PAY-0002
-- HIG-TECHNOLOGIES-APPLE-PAY-0003
-- HIG-TECHNOLOGIES-APPLE-PAY-0004
-- HIG-TECHNOLOGIES-APPLE-PAY-0005
-- HIG-TECHNOLOGIES-APPLE-PAY-0006
-- HIG-TECHNOLOGIES-APPLE-PAY-0007
-- HIG-TECHNOLOGIES-APPLE-PAY-0008
-- HIG-TECHNOLOGIES-APPLE-PAY-0009
-- HIG-TECHNOLOGIES-APPLE-PAY-0010
-- HIG-TECHNOLOGIES-APPLE-PAY-0011
-- HIG-TECHNOLOGIES-APPLE-PAY-0012
-- HIG-TECHNOLOGIES-APPLE-PAY-0013
-- HIG-TECHNOLOGIES-APPLE-PAY-0014
-- HIG-TECHNOLOGIES-APPLE-PAY-0015
-- HIG-TECHNOLOGIES-APPLE-PAY-0016
-- HIG-TECHNOLOGIES-APPLE-PAY-0017
-- HIG-TECHNOLOGIES-APPLE-PAY-0018
-- HIG-TECHNOLOGIES-APPLE-PAY-0019
-- HIG-TECHNOLOGIES-APPLE-PAY-0021
-- HIG-TECHNOLOGIES-APPLE-PAY-0022
-- HIG-TECHNOLOGIES-APPLE-PAY-0023
-- HIG-TECHNOLOGIES-APPLE-PAY-0024
-- HIG-TECHNOLOGIES-APPLE-PAY-0026
-- HIG-TECHNOLOGIES-APPLE-PAY-0027
-- HIG-TECHNOLOGIES-APPLE-PAY-0028
-- HIG-TECHNOLOGIES-APPLE-PAY-0029
-- HIG-TECHNOLOGIES-APPLE-PAY-0030
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0001
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0002
 - HIG-TECHNOLOGIES-AUGMENTED-REALITY-0003
@@ -1188,6 +1132,7 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay — Rendered overview, checkout, payment-sheet, error, subscription, donation, button, trademark, platform, resource, example, and change-log context was reviewed against the stable source hash.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Displaying a website icon — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Displaying a website icon — Structured numeric table detected; preserve its platform and context conditions during human source review.
@@ -1197,8 +1142,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button size and position — Structured numeric table detected; preserve its platform and context conditions during human source review.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button size and position — Numeric dimensions remain source-scoped reference data and were not promoted to unconditional platform-wide minima.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button styles > Black — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button styles > White — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button types — Button-type examples remain reference material; only their surrounding atomic directives are represented as rules.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble · Apple Pencil and Scribble > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble · Apple Pencil and Scribble > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble · Apple Pencil and Scribble > Resources — Section recorded for human review; no short atomic guidance lead was detected.
