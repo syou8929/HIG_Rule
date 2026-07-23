@@ -1,30 +1,25 @@
 # Human source-review queue
 
-- Remaining rules: 197
+- Remaining rules: 188
 - Next priority: 6 (apple-platform-common)
-- Next batch: 9
+- Next batch: 4
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 174
+- 6 (apple-platform-common): 165
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 1
 - MAY: 25
-- SHOULD: 171
+- SHOULD: 162
 
 ## Next batch
 
-- HIG-COMPONENTS-CONTROLS-0001 · SHOULD — Offer controls for actions that provide the most benefit without having to launch your app · Controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- HIG-COMPONENTS-CONTROLS-0002 · SHOULD — Choose a descriptive symbol that suggests the behavior of the control · Controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- HIG-COMPONENTS-CONTROLS-0003 · SHOULD — Use symbol animations to highlight state changes · Controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- HIG-COMPONENTS-CONTROLS-0004 · SHOULD — Help people provide additional information the system needs to perform an action · Controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- HIG-COMPONENTS-CONTROLS-0005 · SHOULD — Provide hint text for the Action button · Controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- HIG-COMPONENTS-CONTROLS-0006 · SHOULD — Use the same camera UI in your app and your camera experience · Controls > Camera experiences on a locked device ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- HIG-COMPONENTS-CONTROLS-0007 · SHOULD — Provide instructions for adding the control · Controls > Camera experiences on a locked device ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- HIG-COMPONENTS-CONTROLS-0008 · SHOULD — Require authentication for actions that affect security · Controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- HIG-COMPONENTS-CONTROLS-0009 · SHOULD — Hide sensitive information when the device is locked · Controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001 · SHOULD — Use a disclosure control to hide details until they’re relevant · Disclosure controls > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002 · SHOULD — Provide a descriptive label when using a disclosure triangle · Disclosure controls > Disclosure triangles ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003 · SHOULD — Place a disclosure button near the content that it shows and hides · Disclosure controls > Disclosure buttons ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))
+- HIG-COMPONENTS-DISCLOSURE-CONTROLS-0004 · SHOULD — Use no more than one disclosure button in a single view · Disclosure controls > Disclosure buttons ([source](https://developer.apple.com/design/human-interface-guidelines/disclosure-controls))

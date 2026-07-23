@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 565
-- Retained MUST: 484
+- Reviewed rules: 570
+- Retained MUST: 489
 - Retained MUST_NOT: 81
-- Normative level changes: 186
+- Normative level changes: 191
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T19:40:00Z
+- Reviewed at: 2026-07-23T20:20:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -50,6 +50,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-CONTEXT-MENUS-0004 — Retained MUST after confirming the explicit Always directive and its discoverability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0011 — Retained MUST after confirming the explicit Ensure directive and the clipping-path technique. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0023 — Recovered MUST from the explicit needs to display requirement for each menu-item label. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- HIG-COMPONENTS-CONTROLS-0008 — Raised the explicit Require security directive to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0009 — Raised the locked-device sensitive-information safeguard to a privacy and security MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0013 — Raised the explicit needs-to symbol-only communication contract to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0022 — Raised symbol-state redaction to a conditional privacy and security MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0023 — Recovered the explicit must-authenticate-and-unlock locked-camera platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 — Retained MUST after confirming the explicit Always directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-DOCK-MENUS-0003 — Retained MUST after confirming the explicit need-to directive and split the labeling action from organization. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-DOCK-MENUS-0004 — Retained MUST after confirming the explicit need-to directive and split organization from labeling. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
@@ -470,6 +475,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-CONTEXT-MENUS-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive and its discoverability rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0011 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive and the clipping-path technique. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs to display requirement for each menu-item label. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- HIG-COMPONENTS-CONTROLS-0008 · MUST · retained_with_atomicity_or_scope_correction — Raised the explicit Require security directive to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0009 · MUST · retained_with_atomicity_or_scope_correction — Raised the locked-device sensitive-information safeguard to a privacy and security MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0013 · MUST · retained_with_atomicity_or_scope_correction — Raised the explicit needs-to symbol-only communication contract to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0022 · MUST · retained_with_atomicity_or_scope_correction — Raised symbol-state redaction to a conditional privacy and security MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit must-authenticate-and-unlock locked-camera platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Always directive and its sensitive-data condition. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-DOCK-MENUS-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit need-to directive and split the labeling action from organization. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))
 - HIG-COMPONENTS-DOCK-MENUS-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit need-to directive and split organization from labeling. ([source](https://developer.apple.com/design/human-interface-guidelines/dock-menus))

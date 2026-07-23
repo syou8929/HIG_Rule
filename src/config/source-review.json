@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T20:00:00Z",
+  "reviewed_at": "2026-07-23T20:20:00Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -4835,6 +4835,45 @@
         "modalities": []
       },
       "review_note": "Completed Boxes coverage, activated the conditional title-writing lead, recovered capitalization and punctuation guidance, preserved the settings-pane colon exception, and retained all six rules below MUST."
+    },
+    {
+      "id": "priority-6-controls-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T20:20:00Z",
+      "review_method": "Rendered Apple HIG Controls overview, anatomy, best-practice, locked-camera, platform, resource, availability, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/controls",
+          "source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-CONTROLS-0001",
+        "HIG-COMPONENTS-CONTROLS-0002",
+        "HIG-COMPONENTS-CONTROLS-0003",
+        "HIG-COMPONENTS-CONTROLS-0004",
+        "HIG-COMPONENTS-CONTROLS-0005",
+        "HIG-COMPONENTS-CONTROLS-0006",
+        "HIG-COMPONENTS-CONTROLS-0007",
+        "HIG-COMPONENTS-CONTROLS-0008",
+        "HIG-COMPONENTS-CONTROLS-0009",
+        "HIG-COMPONENTS-CONTROLS-0010",
+        "HIG-COMPONENTS-CONTROLS-0011",
+        "HIG-COMPONENTS-CONTROLS-0012",
+        "HIG-COMPONENTS-CONTROLS-0013",
+        "HIG-COMPONENTS-CONTROLS-0014",
+        "HIG-COMPONENTS-CONTROLS-0015",
+        "HIG-COMPONENTS-CONTROLS-0016",
+        "HIG-COMPONENTS-CONTROLS-0017",
+        "HIG-COMPONENTS-CONTROLS-0018",
+        "HIG-COMPONENTS-CONTROLS-0019",
+        "HIG-COMPONENTS-CONTROLS-0020",
+        "HIG-COMPONENTS-CONTROLS-0021",
+        "HIG-COMPONENTS-CONTROLS-0022",
+        "HIG-COMPONENTS-CONTROLS-0023"
+      ],
+      "review_note": "Completed Controls coverage, activated three missed leads, recovered eleven atomic state, symbol, animation, configuration, redaction, and locked-camera clauses, and elevated five explicit security, symbol-only, or platform-contract outcomes to MUST."
     }
   ],
   "rules": {
@@ -30845,6 +30884,167 @@
       "statement": {"en": "Avoid ending punctuation in a box title.", "ja": "box titleの末尾句読点を避ける。"},
       "exceptions": ["In a settings pane, append a colon to the box title."],
       "review_note": "Recovered the direct Avoid guidance at AVOID and preserved the settings-pane colon exception."
+    },
+    "HIG-COMPONENTS-CONTROLS-0001": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "c1a913583150b5391eb105c81d7a2f1c496fcb8265937c33987616634eba4b1d", "section_path": ["Controls", "Best practices"]},
+      "statement": {"en": "Offer controls for high-value actions people can perform without launching the app.", "ja": "appを起動せず実行できるhigh-value actionにcontrolを提供する。"},
+      "conditions": ["A control can start a Live Activity so people can follow progress without navigating into the app."],
+      "review_note": "Recorded the high-value, no-launch task boundary and retained SHOULD."
+    },
+    "HIG-COMPONENTS-CONTROLS-0002": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "d43780f456ef32fd0ee5452ac7e5413c8c3d5faf2e0d62b11d57cd28e6d926ba", "section_path": ["Controls", "Best practices"]},
+      "statement": {"en": "Choose a descriptive symbol that suggests a control's behavior.", "ja": "controlのbehaviorを示唆するdescriptive symbolを選ぶ。"},
+      "conditions": ["A control may appear without its title or value.", "The separate symbol-only rule records the minimum information requirement."],
+      "review_note": "Retained symbol selection at SHOULD and separated the symbol-only information contract."
+    },
+    "HIG-COMPONENTS-CONTROLS-0003": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "89313ad9fc88d5a3b131dec3e06af6667c90fb8adc40696b681f7ad14a2b311e", "section_path": ["Controls", "Best practices"]},
+      "statement": {"en": "Use symbol animations to highlight control state changes.", "ja": "controlのstate changeを強調するためsymbol animationを使う。"},
+      "conditions": ["Apply the separate toggle-transition and duration-action animation rules as relevant."],
+      "review_note": "Retained the general animation recommendation and separated its state-specific clauses."
+    },
+    "HIG-COMPONENTS-CONTROLS-0004": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "79928483dafe065caa8bb13cb194fb7ea0c164c48ad9f00cc4c9cd894071192f", "section_path": ["Controls", "Best practices"]},
+      "statement": {"en": "Help people provide additional information the system needs to perform a control action.", "ja": "control actionの実行にsystemが必要とする追加情報を利用者が提供できるようにする。"},
+      "conditions": ["A control may need a specific target, such as the light a toggle operates.", "People can reconfigure a control later."],
+      "review_note": "Recorded the configuration purpose and later reconfiguration path."
+    },
+    "HIG-COMPONENTS-CONTROLS-0005": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "00eb8283be1dda3305af16e382eb7e908d7c88b9bb0ad56b7a74ce7c90a12b94", "section_path": ["Controls", "Best practices"]},
+      "statement": {"en": "Provide hint text for a control assigned to the Action button.", "ja": "Action buttonに割り当てるcontrolにhint textを提供する。"},
+      "conditions": ["The system displays the hint when a person presses the Action button before the press-and-hold action runs."],
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["controls"], "modalities": []},
+      "review_note": "Narrowed the Action-button hint guidance to iPhone and recorded its press versus press-and-hold timing."
+    },
+    "HIG-COMPONENTS-CONTROLS-0006": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "153324014b53c3f9486aead746c1156c92686a5e1106879ea2aaf9d7c82fbf97", "section_path": ["Controls", "Camera experiences on a locked device"]},
+      "statement": {"en": "Use the same camera UI in the app and its locked-device camera experience.", "ja": "appとlocked-device camera experienceで同じcamera UIを使う。"},
+      "conditions": ["Shared UI preserves familiarity and makes the post-capture transition into the app seamless."],
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["controls"], "modalities": []},
+      "review_note": "Narrowed the locked-camera UI recommendation to iPhone and recorded transition continuity."
+    },
+    "HIG-COMPONENTS-CONTROLS-0007": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "34074374c2a791e5557aa3e72d1a7b034b6c140031dda1eda1703c658f1d5327", "section_path": ["Controls", "Camera experiences on a locked device"]},
+      "statement": {"en": "Provide instructions for adding the control that launches the locked-device camera experience.", "ja": "locked-device camera experienceを起動するcontrolの追加方法を案内する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["controls"], "modalities": []},
+      "review_note": "Narrowed the camera-control setup instruction to its iPhone context."
+    },
+    "HIG-COMPONENTS-CONTROLS-0008": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "5c64331662528e46beb9f27febf9f4bb4058ef13d76fbd4f38a06f3708408e1b", "section_path": ["Controls", "Best practices"]},
+      "statement": {"en": "Require authentication before a control performs an action that affects security.", "ja": "securityに影響するactionをcontrolが実行する前にauthenticationを要求する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Security-affecting examples include locking or unlocking a home door and starting a car."],
+      "review_note": "Raised the explicit Require security directive to MUST."
+    },
+    "HIG-COMPONENTS-CONTROLS-0009": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "a1c5ec9e9f87acd387b2815c5af08238509d5e82bb5430be69a5dc33fca52008", "section_path": ["Controls", "Best practices"]},
+      "statement": {"en": "Hide sensitive control information while the device is locked.", "ja": "deviceがlockedの間はsensitiveなcontrol informationを隠す。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Personal or security-related title and value information can be redacted by the system."],
+      "review_note": "Raised the locked-device privacy and security safeguard to MUST."
+    },
+    "HIG-COMPONENTS-CONTROLS-0010": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "18ea4eaa1519e5715e3b65dbad419ec7ebe0e6bdfa5c7841312b57b5efcf5ef6", "section_path": ["Controls", "Best practices"]},
+      "title": "Update controls at each relevant state-change trigger",
+      "statement": {"en": "Update a control after interaction, when its action completes, or through a remote push notification.", "ja": "interaction後、action完了時、またはremote push notificationでcontrolを更新する。"},
+      "review_note": "Activated the missed update lead and preserved all three documented update triggers."
+    },
+    "HIG-COMPONENTS-CONTROLS-0011": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "0a56517c0c5650054c77301b9ea7dca34c991257f6ace3f8abf5411260aec98a", "section_path": ["Controls", "Best practices"]},
+      "title": "Accurately reflect control state",
+      "statement": {"en": "Update control contents to accurately reflect the current state.", "ja": "control contentsを更新してcurrent stateを正確に反映する。"},
+      "review_note": "Recovered the state-accuracy clause as a separate SHOULD rule."
+    },
+    "HIG-COMPONENTS-CONTROLS-0012": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "d66affb853a4039d15de322ab4f43600ab7cb88dfc99119988f004ecfbb57ed9", "section_path": ["Controls", "Best practices"]},
+      "title": "Show when a control action is in progress",
+      "statement": {"en": "Show when a control action is still in progress.", "ja": "control actionが進行中であることを示す。"},
+      "review_note": "Recovered the in-progress state clause separately from general state accuracy."
+    },
+    "HIG-COMPONENTS-CONTROLS-0013": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "8bec9dd0164da7586db9cf72f7c66ea3e386e07afe4007aefb7aa314d9503048", "section_path": ["Controls", "Best practices"]},
+      "title": "Ensure a control symbol conveys its action without text",
+      "statement": {"en": "Ensure a control symbol conveys enough information about its action when no title or value appears.", "ja": "titleやvalueが表示されない場合もcontrol symbolだけでactionを十分に伝える。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Controls can appear as symbols only on the Lock Screen and in other compact placements."],
+      "review_note": "Raised the explicit needs-to symbol-only communication contract to MUST."
+    },
+    "HIG-COMPONENTS-CONTROLS-0014": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "176443489f9f4d0a5846fa47f38a40dfb4e2c2a81a15a61c8e7879851e375d9f", "section_path": ["Controls", "Best practices"]},
+      "title": "Provide symbols for both toggle states",
+      "statement": {"en": "Provide a symbol for both the on and off states of a control toggle.", "ja": "control toggleのonとoffの両stateにsymbolを提供する。"},
+      "review_note": "Recovered the two-state symbol recommendation and kept it at SHOULD."
+    },
+    "HIG-COMPONENTS-CONTROLS-0015": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "8f323f26d6ff9b5990bda22f6d6252eb3773ef42305bfdd780fe54ad1a0c10d9", "section_path": ["Controls", "Best practices"]},
+      "title": "Animate transitions between toggle states",
+      "statement": {"en": "Animate the transition between a control toggle's on and off states.", "ja": "control toggleのon/off state間のtransitionをanimateする。"},
+      "review_note": "Recovered the toggle-specific animation recommendation."
+    },
+    "HIG-COMPONENTS-CONTROLS-0016": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "f04a0c0b0dbadc80510dece2b235bff7bf0cbd63ac1d7e93311860ed0df5525c", "section_path": ["Controls", "Best practices"]},
+      "title": "Animate duration-based controls while their action runs",
+      "statement": {"en": "Animate a duration-based control button continuously while its action runs.", "ja": "duration-based control buttonをaction実行中は継続してanimateする。"},
+      "review_note": "Recovered the duration-action animation recommendation."
+    },
+    "HIG-COMPONENTS-CONTROLS-0017": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "faaf3a063a74d163b5de9ba8da0a79f0eac7bfd635bba5b5ca6220e9e48d35ee", "section_path": ["Controls", "Best practices"]},
+      "title": "Stop control animation when the action completes",
+      "statement": {"en": "Stop a duration-based control's animation when its action completes.", "ja": "duration-based controlのaction完了時にanimationを停止する。"},
+      "conditions": ["Apply to the duration-based animation started while the action was running."],
+      "review_note": "Recovered the animation completion-state recommendation."
+    },
+    "HIG-COMPONENTS-CONTROLS-0018": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "1b6bd2100094434c39d90c6aa61056ab76a4712f128a9c9c9d7491f71a3cc56e", "section_path": ["Controls", "Best practices"]},
+      "statement": {"en": "Select a control tint color that works with the app's brand.", "ja": "app brandに合うcontrol tint colorを選ぶ。"},
+      "conditions": ["The system uses the tint for a toggle's on-state symbol.", "For an Action-button control, the system also tints its Dynamic Island symbol and value."],
+      "review_note": "Activated the tint lead and recorded both system-applied uses."
+    },
+    "HIG-COMPONENTS-CONTROLS-0019": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "0d54dc35953687c6c66c2dd725e2ad3e579e91b9669150b60caf0badbd4fad8d", "section_path": ["Controls", "Best practices"]},
+      "title": "Prompt for required control configuration on first add",
+      "statement": {"en": "When a control requires configuration, prompt people to complete it when they first add the control.", "ja": "controlにconfigurationが必要な場合は初回追加時に完了するようpromptする。"},
+      "review_note": "Recovered the conditional first-add configuration prompt."
+    },
+    "HIG-COMPONENTS-CONTROLS-0020": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "016e2e53f205852a78bef9af6fc013185cab05c65de8c27ea933c02dd0aaf021", "section_path": ["Controls", "Best practices"]},
+      "title": "Use verbs in Action-button hint text",
+      "statement": {"en": "Use verbs to construct Action-button hint text.", "ja": "Action buttonのhint textをverbで構成する。"},
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["controls"], "modalities": []},
+      "review_note": "Recovered the Action-button hint-writing recommendation and narrowed it to iPhone."
+    },
+    "HIG-COMPONENTS-CONTROLS-0021": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "d08d5873d968142bad0ea6451ff7aefee470efbac5858cbc572db1c76fb072ae", "section_path": ["Controls", "Best practices"]},
+      "title": "Include a placeholder for variable control information",
+      "statement": {"en": "When a control's title or value varies, include placeholder information that explains what the control does.", "ja": "controlのtitleまたはvalueが変化する場合は動作を説明するplaceholder informationを含める。"},
+      "conditions": ["The system displays the placeholder in the controls gallery and before assignment to the Action button."],
+      "review_note": "Activated the conditional placeholder lead and recorded its discovery contexts."
+    },
+    "HIG-COMPONENTS-CONTROLS-0022": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "f83157bbae8cbdc2c4a280b42a6fb32b5227ffdcea08fc8105a0df508e222349", "section_path": ["Controls", "Best practices"]},
+      "title": "Ensure locked-device redaction covers sensitive symbol state",
+      "statement": {"en": "When a control's symbol state is sensitive, specify that locked-device redaction must cover it.", "ja": "controlのsymbol stateがsensitiveな場合はlocked-device redactionの対象に指定する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["When enabled, the system redacts title and value and displays the symbol in its off state."],
+      "review_note": "Raised the conditional symbol-state privacy setting to MUST when redaction is needed."
+    },
+    "HIG-COMPONENTS-CONTROLS-0023": {
+      "source": {"source_hash": "727c83ad88dc26079105099cdce7585778c5e40fa2a615717f324be0a91f919c", "source_sentence_hash": "5c0a9ea445dc04f4ddf4dbfea864113ed5d51f7b023b360645fa9d8a3b20bc6d", "section_path": ["Controls", "Camera experiences on a locked device"]},
+      "title": "Ensure authentication for locked-camera tasks beyond capture",
+      "statement": {"en": "Ensure people authenticate and unlock the device before completing a locked-camera task beyond capture.", "ja": "captureを超えるlocked-camera taskの完了前にauthenticationとdevice unlockを要求する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "scope": {"portability": "apple-component-specific", "platforms": ["ios"], "devices": ["iphone"], "components": ["controls"], "modalities": []},
+      "review_note": "Recovered the explicit must-authenticate-and-unlock iOS platform contract."
     }
   }
 }

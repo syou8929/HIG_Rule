@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3191
-- Reviewed batches: 180
+- Reviewed rules: 3214
+- Reviewed batches: 181
 - Official source only: yes
-- Reviewed at: 2026-07-23T20:00:00Z
+- Reviewed at: 2026-07-23T20:20:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -276,6 +276,29 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-CONTEXT-MENUS-0022 · high — Reviewed the rendered source context for “Use destructive styling for destructive context-menu items” and recorded its context-menu and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0023 · high — Reviewed the rendered source context for “Make sure every context-menu item has a short clear action label” and recorded its context-menu and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 - HIG-COMPONENTS-CONTEXT-MENUS-0024 · high — Reviewed the rendered source context for “Match preview clipping paths to preview-image shapes” and recorded its context-menu and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
+- HIG-COMPONENTS-CONTROLS-0001 · high — Recorded the high-value, no-launch task boundary and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0002 · high — Retained symbol selection at SHOULD and separated the symbol-only information contract. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0003 · high — Retained the general animation recommendation and separated its state-specific clauses. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0004 · high — Recorded the configuration purpose and later reconfiguration path. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0005 · high — Narrowed the Action-button hint guidance to iPhone and recorded its press versus press-and-hold timing. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0006 · high — Narrowed the locked-camera UI recommendation to iPhone and recorded transition continuity. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0007 · high — Narrowed the camera-control setup instruction to its iPhone context. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0008 · high — Raised the explicit Require security directive to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0009 · high — Raised the locked-device privacy and security safeguard to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0010 · high — Activated the missed update lead and preserved all three documented update triggers. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0011 · high — Recovered the state-accuracy clause as a separate SHOULD rule. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0012 · high — Recovered the in-progress state clause separately from general state accuracy. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0013 · high — Raised the explicit needs-to symbol-only communication contract to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0014 · high — Recovered the two-state symbol recommendation and kept it at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0015 · high — Recovered the toggle-specific animation recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0016 · high — Recovered the duration-action animation recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0017 · high — Recovered the animation completion-state recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0018 · high — Activated the tint lead and recorded both system-applied uses. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0019 · high — Recovered the conditional first-add configuration prompt. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0020 · high — Recovered the Action-button hint-writing recommendation and narrowed it to iPhone. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0021 · high — Activated the conditional placeholder lead and recorded its discovery contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0022 · high — Raised the conditional symbol-state privacy setting to MUST when redaction is needed. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- HIG-COMPONENTS-CONTROLS-0023 · high — Recovered the explicit must-authenticate-and-unlock iOS platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · high — Reviewed the general secure-field recommendation and recorded the documented asterisk-concealment behavior without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0002 · high — Recorded the title-and-prompt technique as supporting context for the existing purpose rule rather than duplicating it. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
 - HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0003 · high — Recovered the explicit Always requirement separately from the page's general secure-field recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))

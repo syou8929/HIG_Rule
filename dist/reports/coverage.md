@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3414
+- Active atomic rules: 3428
 - Pages without rules: 16
-- Low-confidence rules: 197
-- Rules requiring human review: 197
+- Low-confidence rules: 188
+- Rules requiring human review: 188
 - Reference notes: 915
 
 ## Rules by category
 
-- components: 1045
+- components: 1059
 - foundations: 463
 - getting-started: 100
 - inputs: 245
@@ -24,16 +24,16 @@
 
 - AVOID: 464
 - MAY: 393
-- MUST: 484
+- MUST: 489
 - MUST_NOT: 81
-- SHOULD: 1992
+- SHOULD: 2001
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2441
-- ipados: 2405
-- macos: 1963
+- ios: 2455
+- ipados: 2414
+- macos: 1972
 - tvos: 1546
 - visionos: 1953
 - watchos: 1677
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 112
-- manual: 3302
+- manual: 3316
 
 ## Blocked pages
 
@@ -69,15 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-CONTROLS-0001
-- HIG-COMPONENTS-CONTROLS-0002
-- HIG-COMPONENTS-CONTROLS-0003
-- HIG-COMPONENTS-CONTROLS-0004
-- HIG-COMPONENTS-CONTROLS-0005
-- HIG-COMPONENTS-CONTROLS-0006
-- HIG-COMPONENTS-CONTROLS-0007
-- HIG-COMPONENTS-CONTROLS-0008
-- HIG-COMPONENTS-CONTROLS-0009
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003
@@ -269,15 +260,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-COMPONENTS-CONTROLS-0001
-- HIG-COMPONENTS-CONTROLS-0002
-- HIG-COMPONENTS-CONTROLS-0003
-- HIG-COMPONENTS-CONTROLS-0004
-- HIG-COMPONENTS-CONTROLS-0005
-- HIG-COMPONENTS-CONTROLS-0006
-- HIG-COMPONENTS-CONTROLS-0007
-- HIG-COMPONENTS-CONTROLS-0008
-- HIG-COMPONENTS-CONTROLS-0009
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0001
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0002
 - HIG-COMPONENTS-DISCLOSURE-CONTROLS-0003

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T18:08:31.684Z. 3414 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:16:52.049Z. 3428 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1456,15 +1456,29 @@ Generated 2026-07-23T18:08:31.684Z. 3414 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-CONTEXT-MENUS-0024 · SHOULD · high** — Apply the documented Context menus guidance to match preview clipping paths to preview-image shapes. ([source](https://developer.apple.com/design/human-interface-guidelines/context-menus))
 ### controls
 
-- **HIG-COMPONENTS-CONTROLS-0001 · SHOULD · low** — Make controls for actions that provide the most benefit without having to launch your app available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- **HIG-COMPONENTS-CONTROLS-0002 · SHOULD · low** — Apply the documented Controls guidance to choose a descriptive symbol that suggests the behavior of the control. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- **HIG-COMPONENTS-CONTROLS-0003 · SHOULD · low** — Choose or apply symbol animations to highlight state changes in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- **HIG-COMPONENTS-CONTROLS-0004 · SHOULD · low** — Apply the documented Controls guidance to help people provide additional information the system needs to perform an action. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- **HIG-COMPONENTS-CONTROLS-0005 · SHOULD · low** — Make hint text for the Action button available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- **HIG-COMPONENTS-CONTROLS-0006 · SHOULD · low** — Choose or apply the same camera UI in your app and your camera experience in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- **HIG-COMPONENTS-CONTROLS-0007 · SHOULD · low** — Make instructions for adding the control available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- **HIG-COMPONENTS-CONTROLS-0008 · SHOULD · low** — Require authentication for actions that affect security. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
-- **HIG-COMPONENTS-CONTROLS-0009 · SHOULD · low** — Hide sensitive information when the device is locked. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0001 · SHOULD · high** — Offer controls for high-value actions people can perform without launching the app. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0002 · SHOULD · high** — Choose a descriptive symbol that suggests a control's behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0003 · SHOULD · high** — Use symbol animations to highlight control state changes. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0004 · SHOULD · high** — Help people provide additional information the system needs to perform a control action. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0005 · SHOULD · high** — Provide hint text for a control assigned to the Action button. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0006 · SHOULD · high** — Use the same camera UI in the app and its locked-device camera experience. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0007 · SHOULD · high** — Provide instructions for adding the control that launches the locked-device camera experience. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0008 · MUST · high** — Require authentication before a control performs an action that affects security. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0009 · MUST · high** — Hide sensitive control information while the device is locked. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0010 · SHOULD · high** — Update a control after interaction, when its action completes, or through a remote push notification. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0011 · SHOULD · high** — Update control contents to accurately reflect the current state. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0012 · SHOULD · high** — Show when a control action is still in progress. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0013 · MUST · high** — Ensure a control symbol conveys enough information about its action when no title or value appears. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0014 · SHOULD · high** — Provide a symbol for both the on and off states of a control toggle. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0015 · SHOULD · high** — Animate the transition between a control toggle's on and off states. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0016 · SHOULD · high** — Animate a duration-based control button continuously while its action runs. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0017 · SHOULD · high** — Stop a duration-based control's animation when its action completes. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0018 · SHOULD · high** — Select a control tint color that works with the app's brand. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0019 · SHOULD · high** — When a control requires configuration, prompt people to complete it when they first add the control. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0020 · SHOULD · high** — Use verbs to construct Action-button hint text. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0021 · SHOULD · high** — When a control's title or value varies, include placeholder information that explains what the control does. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0022 · MUST · high** — When a control's symbol state is sensitive, specify that locked-device redaction must cover it. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
+- **HIG-COMPONENTS-CONTROLS-0023 · MUST · high** — Ensure people authenticate and unlock the device before completing a locked-camera task beyond capture. ([source](https://developer.apple.com/design/human-interface-guidelines/controls))
 ### digit-entry-views
 
 - **HIG-COMPONENTS-DIGIT-ENTRY-VIEWS-0001 · SHOULD · high** — Use secure fields when a tvOS digit-entry view needs to conceal entered digits. ([source](https://developer.apple.com/design/human-interface-guidelines/digit-entry-views))
