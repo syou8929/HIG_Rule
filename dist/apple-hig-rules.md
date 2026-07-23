@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T09:07:13.226Z. 2990 active rules; 4 deprecated rules.
+Generated 2026-07-23T09:15:56.926Z. 3001 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -740,11 +740,22 @@ Generated 2026-07-23T09:07:13.226Z. 2990 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-GOING-FULL-SCREEN-0011 · MAY · high** — In a macOS game, consider a custom toggle for turning full-screen mode on and off. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 ### launching
 
-- **HIG-PATTERNS-LAUNCHING-0001 · SHOULD · low** — Apply the documented Launching guidance to design a launch screen that’s nearly identical to the first screen of your app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
-- **HIG-PATTERNS-LAUNCHING-0002 · AVOID · low** — Exclude including text on your launch screen, even if your first screen displays text from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
-- **HIG-PATTERNS-LAUNCHING-0003 · AVOID · low** — Exclude advertise from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0001 · SHOULD · high** — Design the launch screen to closely match the app or game's first screen. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0002 · AVOID · high** — Avoid text on a launch screen, even when the first screen contains text. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0003 · AVOID · high** — Avoid using a launch screen for advertising or branding. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - **HIG-PATTERNS-LAUNCHING-0004 · MAY · high** — Consider launching a fully immersive visionOS app in the Shared Space first. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
-- **HIG-PATTERNS-LAUNCHING-0005 · MAY · low** — When you need a splash screen, consider displaying it at the beginning of your onboarding flow. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0005 · MAY · high** — When a splash screen is needed, consider placing it at the start of onboarding. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0006 · SHOULD · high** — Minimize launch time so people can begin interacting immediately. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0007 · MUST · high** — Provide a launch screen on iOS, iPadOS, and tvOS. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0008 · SHOULD · high** — Restore the previous state after an app restarts. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0009 · SHOULD · high** — Downplay the launch-screen experience. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0010 · SHOULD · high** — Launch in the orientation appropriate to the iOS or iPadOS interface. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0011 · MAY · high** — In a tvOS live-viewing app, consider starting playback automatically after brief inactivity. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0012 · AVOID · high** — Avoid making people retrace steps after an app restart. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0013 · MUST · high** — Make sure each launch screen matches the current orientation and appearance mode. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0014 · AVOID · high** — Avoid making a launch screen resemble a splash screen or About window. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0015 · AVOID · high** — Avoid branding elements unless they are fixed parts of the first screen. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- **HIG-PATTERNS-LAUNCHING-0016 · MUST · high** — Ensure landscape-only iOS and iPadOS interfaces support both device rotation directions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 ### live-viewing-apps
 
 - **HIG-PATTERNS-LIVE-VIEWING-APPS-0001 · SHOULD · low** — Preserve people’s ability to tap once — or not at all — to start playback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))

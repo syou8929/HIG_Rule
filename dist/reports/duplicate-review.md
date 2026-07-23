@@ -1,7 +1,7 @@
 # Exact duplicate source review
 
-- Candidate groups: 6
-- Reviewed contextual groups: 6
+- Candidate groups: 5
+- Reviewed contextual groups: 5
 - Unresolved groups: 0
 - Official source only: yes
 - Reviewed at: 2026-07-22T16:13:08Z
@@ -22,9 +22,6 @@ Exact statements are retained only when separate Apple HIG pages, sections, comp
 - HIG-COMPONENTS-SEARCH-FIELDS-0015, HIG-PATTERNS-SEARCHING-0002 — Retained because the tvOS search-field rule is narrower than the cross-platform searching-pattern rule.
   - HIG-COMPONENTS-SEARCH-FIELDS-0015: Search fields > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
   - HIG-PATTERNS-SEARCHING-0002: Searching > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
-- HIG-PATTERNS-LAUNCHING-0003, HIG-TECHNOLOGIES-SIRI-0003 — Retained because Apple's identical short directive governs different experiences: launch screens and Siri interactions.
-  - HIG-PATTERNS-LAUNCHING-0003: Launching > Launch screens ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
-  - HIG-TECHNOLOGIES-SIRI-0003: Siri > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/siri))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005, HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Retained because Apple repeats the security requirement in the Implicit feedback and Calibration sections; explicit conditions distinguish the two applications.
   - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005: Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
   - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034: Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))

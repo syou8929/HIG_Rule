@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2351
-- Reviewed batches: 149
+- Reviewed rules: 2366
+- Reviewed batches: 150
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:00:21Z
+- Reviewed at: 2026-07-23T09:12:24Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1778,7 +1778,22 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-GOING-FULL-SCREEN-0009 · high — Split the standard-control preference and recorded all three system entry methods. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0010 · high — Split the direct custom-menu avoidance from the positive standard-control preference. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0011 · high — Separated the game-specific optional toggle without promoting its might-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-LAUNCHING-0001 · high — Replaced the generic statement, captured the solid-color branch, and narrowed launch-screen scope to iOS, iPadOS, and tvOS. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0002 · high — Retained direct Avoid at AVOID, restored the localization rationale, and narrowed the platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0003 · high — Replaced the malformed generated statement, retained direct Don't at AVOID, and split the concrete visual anti-patterns. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0004 · high — Preserved the source's Consider strength and recorded the contextual-loading and user-controlled-transition rationale without promoting it to a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0005 · high — Retained the conditional Consider option and recorded the no-onboarding fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0006 · high — Activated the instant-launch recommendation and retained the source's user-wait tolerance as context, not a hard threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0007 · high — Recovered the explicit platform-required contract as a conditional MUST and recorded unsupported-platform exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0008 · high — Activated state restoration and recorded the granular scroll and window examples without making them universal invariants. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0009 · high — Activated the purpose constraint and narrowed it to platforms that use launch screens. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0010 · high — Activated the iOS and iPadOS orientation mappings and separated the explicit landscape-response requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0011 · high — Activated the tvOS-only optional playback behavior without turning the few-seconds example into a mandatory threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0012 · high — Split the direct Avoid anti-pattern from the positive state-restoration recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0013 · high — Recovered the supporting Make sure outcome as a separate MUST within launch-screen platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0014 · high — Recovered the concrete direct Avoid visual anti-pattern separately from general advertising guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0015 · high — Recovered the direct Don't clause and its fixed-first-screen exception at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0016 · high — Recovered the explicit Ensure requirement as a separate iOS and iPadOS MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LOADING-0001 · high — Recorded the blank-state failure interpretation and separated optional placeholder forms. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0002 · high — Recorded background loading as the mechanism for continued interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0003 · high — Retained MAY and recorded both the standard default and game-style rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))

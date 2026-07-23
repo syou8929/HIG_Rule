@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2990
+- Active atomic rules: 3001
 - Pages without rules: 16
-- Low-confidence rules: 593
-- Rules requiring human review: 593
-- Reference notes: 902
+- Low-confidence rules: 589
+- Rules requiring human review: 589
+- Reference notes: 903
 
 ## Rules by category
 
@@ -17,31 +17,31 @@
 - foundations: 463
 - getting-started: 100
 - inputs: 245
-- patterns: 368
+- patterns: 379
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 419
-- MAY: 357
-- MUST: 340
+- AVOID: 422
+- MAY: 358
+- MUST: 343
 - MUST_NOT: 38
-- SHOULD: 1836
+- SHOULD: 1840
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2026
-- ipados: 2002
+- ios: 2036
+- ipados: 2012
 - macos: 1656
-- tvos: 1300
+- tvos: 1309
 - visionos: 1705
 - watchos: 1399
 
 ## Rules by testability
 
 - hybrid: 90
-- manual: 2900
+- manual: 2911
 
 ## Blocked pages
 
@@ -211,10 +211,6 @@ None.
 - HIG-PATTERNS-GOING-FULL-SCREEN-0001
 - HIG-PATTERNS-GOING-FULL-SCREEN-0002
 - HIG-PATTERNS-GOING-FULL-SCREEN-0003
-- HIG-PATTERNS-LAUNCHING-0001
-- HIG-PATTERNS-LAUNCHING-0002
-- HIG-PATTERNS-LAUNCHING-0003
-- HIG-PATTERNS-LAUNCHING-0005
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0001
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0003
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0004
@@ -807,10 +803,6 @@ None.
 - HIG-PATTERNS-GOING-FULL-SCREEN-0001
 - HIG-PATTERNS-GOING-FULL-SCREEN-0002
 - HIG-PATTERNS-GOING-FULL-SCREEN-0003
-- HIG-PATTERNS-LAUNCHING-0001
-- HIG-PATTERNS-LAUNCHING-0002
-- HIG-PATTERNS-LAUNCHING-0003
-- HIG-PATTERNS-LAUNCHING-0005
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0001
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0003
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0004
@@ -1654,11 +1646,12 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/labels · Labels > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/labels · Labels > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/labels · Labels > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Change log — Section reviewed as source-linked navigation or descriptive context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Platform considerations — macOS and watchOS add no launching guidance; the tvOS static launch-screen fact remains descriptive context.
+- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Platform considerations > tvOS — A tvOS launch screen is static rather than layered; this descriptive fact does not create a standalone rule.
+- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Resources — Section reviewed as source-linked navigation or descriptive context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Resources > Related — Section reviewed as source-linked navigation or descriptive context; no standalone atomic rule is required.
+- https://developer.apple.com/design/human-interface-guidelines/launching · Launching > Resources > Videos — Section reviewed as source-linked navigation or descriptive context; no standalone atomic rule is required.
 - https://developer.apple.com/design/human-interface-guidelines/layout · Layout > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/layout · Layout > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/layout · Layout > Platform considerations > tvOS > Eight-column grid — Structured numeric table detected; preserve its platform and context conditions during human source review.

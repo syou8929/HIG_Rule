@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T09:00:21Z",
+  "reviewed_at": "2026-07-23T09:12:24Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -3131,6 +3131,37 @@
       "review_note": "Completed the macOS section, preserved the stable expansion-tooltip MAY decision, recorded its clipped-field, pointer-hover, and Mac-hosted iOS or iPadOS app conditions, and did not infer editing behavior absent from the source."
     },
     {
+      "id": "priority-6-launching-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T09:12:24Z",
+      "review_method": "Rendered Apple HIG Launching overview, best practices, launch screens, iOS and iPadOS orientation, tvOS live viewing, platform context, and supporting prose were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+          "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-LAUNCHING-0001",
+        "HIG-PATTERNS-LAUNCHING-0002",
+        "HIG-PATTERNS-LAUNCHING-0003",
+        "HIG-PATTERNS-LAUNCHING-0005",
+        "HIG-PATTERNS-LAUNCHING-0006",
+        "HIG-PATTERNS-LAUNCHING-0007",
+        "HIG-PATTERNS-LAUNCHING-0008",
+        "HIG-PATTERNS-LAUNCHING-0009",
+        "HIG-PATTERNS-LAUNCHING-0010",
+        "HIG-PATTERNS-LAUNCHING-0011",
+        "HIG-PATTERNS-LAUNCHING-0012",
+        "HIG-PATTERNS-LAUNCHING-0013",
+        "HIG-PATTERNS-LAUNCHING-0014",
+        "HIG-PATTERNS-LAUNCHING-0015",
+        "HIG-PATTERNS-LAUNCHING-0016"
+      ],
+      "review_note": "Completed the remaining page; retained four stable common IDs, recovered eleven atomic rules, narrowed launch-screen rules to supported platforms, retained three explicit or platform-required MUST outcomes, and kept direct Avoid or Don't guidance below MUST_NOT."
+    },
+    {
       "id": "priority-4-launching-visionos-context-2026-07-21",
       "reviewed_at": "2026-07-21T22:41:11Z",
       "review_method": "Rendered Apple HIG Launching platform overview and complete visionOS guidance were reviewed; two repeated live renders matched the recorded main-content hash.",
@@ -4988,6 +5019,173 @@
       "statement": {"en": "Label advanced print settings “Advanced Options.”", "ja": "advanced print settingには「Advanced Options」とlabel付けする。"},
       "conditions": ["The macOS print interface exposes a group of advanced options."],
       "review_note": "Recovered the exact label guidance as a separate recommendation rather than combining it with optional disclosure."
+    },
+    "HIG-PATTERNS-LAUNCHING-0001": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "8ca732d7d7717dd58cb239c94fa31ff4864f5ab06519ebd4fe2152d003fbb577", "section_path": ["Launching", "Launch screens"]},
+      "title": "Match the launch screen to the first screen",
+      "statement": {"en": "Design the launch screen to closely match the app or game's first screen.", "ja": "launch screenをappまたはgameのfirst screenに近づけてdesignする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": [], "modalities": []},
+      "conditions": [
+        "Prevent an unpleasant flash when the launch screen transitions to the first screen.",
+        "If the app initially shows only a solid color, use only that color on the launch screen."
+      ],
+      "review_note": "Replaced the generic statement, captured the solid-color branch, and narrowed launch-screen scope to iOS, iPadOS, and tvOS."
+    },
+    "HIG-PATTERNS-LAUNCHING-0002": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "6def484b6d07547821b09365204f6f84497c13629d17bb4777f456abd0ed7ecb", "section_path": ["Launching", "Launch screens"]},
+      "title": "Avoid text on launch screens",
+      "statement": {"en": "Avoid text on a launch screen, even when the first screen contains text.", "ja": "first screenにtextがあってもlaunch screenにはtextを含めない。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": [], "modalities": []},
+      "conditions": [
+        "Launch-screen content is static, so displayed text is not localized."
+      ],
+      "review_note": "Retained direct Avoid at AVOID, restored the localization rationale, and narrowed the platform scope."
+    },
+    "HIG-PATTERNS-LAUNCHING-0003": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "21e0c33674ed6333b133ca172e078e232c8d287e219e61ab67b34e0c20516240", "section_path": ["Launching", "Launch screens"]},
+      "title": "Avoid advertising on launch screens",
+      "statement": {"en": "Avoid using a launch screen for advertising or branding.", "ja": "launch screenをadvertisingやbrandingに使うことを避ける。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": [], "modalities": []},
+      "review_note": "Replaced the malformed generated statement, retained direct Don't at AVOID, and split the concrete visual anti-patterns."
+    },
+    "HIG-PATTERNS-LAUNCHING-0005": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "d86271c7ed6cb95d560023166f6b96f996f21ae6ed8f068646d4c1b3fbd7c214", "section_path": ["Launching", "Best practices"]},
+      "title": "Consider a splash screen at onboarding",
+      "statement": {"en": "When a splash screen is needed, consider placing it at the start of onboarding.", "ja": "splash screenが必要な場合はonboardingの開始時に置くことを検討する。"},
+      "normative_level": "MAY",
+      "polarity": "permit",
+      "severity": "info",
+      "exceptions": [
+        "Without onboarding, a splash screen may appear after launching completes."
+      ],
+      "review_note": "Retained the conditional Consider option and recorded the no-onboarding fallback."
+    },
+    "HIG-PATTERNS-LAUNCHING-0006": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "d0d8fbd0ab5c825feff546e6b06c8e10675345348e7df0c380b0ed0950831ea2", "section_path": ["Launching", "Best practices"]},
+      "title": "Minimize launch time",
+      "statement": {"en": "Minimize launch time so people can begin interacting immediately.", "ja": "人がすぐにinteractできるようlaunch timeを最小限にする。"},
+      "conditions": [
+        "People may be unwilling to wait more than a couple of seconds."
+      ],
+      "review_note": "Activated the instant-launch recommendation and retained the source's user-wait tolerance as context, not a hard threshold."
+    },
+    "HIG-PATTERNS-LAUNCHING-0007": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "387a6f90181e3bdefe07e71b9f9c7d415c688bda7d2bda047b64a124150ec60e", "section_path": ["Launching", "Best practices"]},
+      "title": "Ensure required platforms have a launch screen",
+      "statement": {"en": "Provide a launch screen on iOS, iPadOS, and tvOS.", "ja": "iOS、iPadOS、tvOSではlaunch screenを用意する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": [], "modalities": []},
+      "conditions": [
+        "The system presents the launch screen immediately and replaces it with the first screen."
+      ],
+      "exceptions": [
+        "macOS, visionOS, and watchOS do not require launch screens."
+      ],
+      "review_note": "Recovered the explicit platform-required contract as a conditional MUST and recorded unsupported-platform exceptions."
+    },
+    "HIG-PATTERNS-LAUNCHING-0008": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "44edea1b68cb87e93cb079b0d39324727875ac9977105693a3ccbc6524b2a057", "section_path": ["Launching", "Best practices"]},
+      "title": "Restore state after an app restart",
+      "statement": {"en": "Restore the previous state after an app restarts.", "ja": "appのrestart後にprevious stateを復元する。"},
+      "conditions": [
+        "Restore granular details wherever practicable, including scroll position and window state and location."
+      ],
+      "review_note": "Activated state restoration and recorded the granular scroll and window examples without making them universal invariants."
+    },
+    "HIG-PATTERNS-LAUNCHING-0009": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "287c2eb455a6349eca24950f34efa1f46ddd2c0a598815b0fd683b103d46e770", "section_path": ["Launching", "Launch screens"]},
+      "title": "Downplay the launch-screen experience",
+      "statement": {"en": "Downplay the launch-screen experience.", "ja": "launch-screen experienceを控えめにする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": [], "modalities": []},
+      "conditions": [
+        "Use a launch screen only to make launch feel quick and immediately ready.",
+        "Do not treat it as onboarding, a splash screen, or artistic expression."
+      ],
+      "review_note": "Activated the purpose constraint and narrowed it to platforms that use launch screens."
+    },
+    "HIG-PATTERNS-LAUNCHING-0010": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "2003c799ef390f2be016bbf799afea8dc766ba220b6b01cf47397a745ff16919", "section_path": ["Launching", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Launch in the appropriate orientation",
+      "statement": {"en": "Launch in the orientation appropriate to the iOS or iPadOS interface.", "ja": "iOSまたはiPadOS interfaceに適したorientationでlaunchする。"},
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": []},
+      "conditions": [
+        "For portrait-and-landscape interfaces, use the device's current orientation.",
+        "For a single-orientation interface, use its supported orientation and let people rotate the device if needed."
+      ],
+      "review_note": "Activated the iOS and iPadOS orientation mappings and separated the explicit landscape-response requirement."
+    },
+    "HIG-PATTERNS-LAUNCHING-0011": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "373dce396a8684db1af332b9c1f617e00dd8a1b529315702dcf7035fd3ef9901", "section_path": ["Launching", "Platform considerations", "tvOS"]},
+      "title": "Consider automatic playback in live-viewing apps",
+      "statement": {"en": "In a tvOS live-viewing app, consider starting playback automatically after brief inactivity.", "ja": "tvOS live-viewing appでは短いinactivity後のautomatic playback開始を検討する。"},
+      "normative_level": "MAY",
+      "polarity": "permit",
+      "severity": "info",
+      "scope": {"portability": "apple-platform", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": []},
+      "conditions": [
+        "Use new or recently viewed live content after a few seconds of inactivity."
+      ],
+      "review_note": "Activated the tvOS-only optional playback behavior without turning the few-seconds example into a mandatory threshold."
+    },
+    "HIG-PATTERNS-LAUNCHING-0012": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "ecce034c148583982cba3e452394ed7835605fa6701ed16c2bb66b955b6e865c", "section_path": ["Launching", "Best practices"]},
+      "title": "Avoid making people retrace steps after restart",
+      "statement": {"en": "Avoid making people retrace steps after an app restart.", "ja": "appのrestart後に以前の場所まで手順をやり直させない。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "review_note": "Split the direct Avoid anti-pattern from the positive state-restoration recommendation."
+    },
+    "HIG-PATTERNS-LAUNCHING-0013": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "7f519ddba4d74e6e8c3bac3c1959336c8c1164848bb561c9d3c329932383c34b", "section_path": ["Launching", "Launch screens"]},
+      "title": "Make sure launch screens match orientation and appearance",
+      "statement": {"en": "Make sure each launch screen matches the current orientation and appearance mode.", "ja": "各launch screenを現在のorientationとappearance modeに一致させる。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": [], "modalities": []},
+      "review_note": "Recovered the supporting Make sure outcome as a separate MUST within launch-screen platform scope."
+    },
+    "HIG-PATTERNS-LAUNCHING-0014": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "aaa434d5ad47d0c5d3fb90f250f794adb59d3be784989dd43783155e61004890", "section_path": ["Launching", "Launch screens"]},
+      "title": "Avoid splash-screen or About-window styling",
+      "statement": {"en": "Avoid making a launch screen resemble a splash screen or About window.", "ja": "launch screenをsplash screenやAbout windowのように見せない。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": [], "modalities": []},
+      "review_note": "Recovered the concrete direct Avoid visual anti-pattern separately from general advertising guidance."
+    },
+    "HIG-PATTERNS-LAUNCHING-0015": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "aaa434d5ad47d0c5d3fb90f250f794adb59d3be784989dd43783155e61004890", "section_path": ["Launching", "Launch screens"]},
+      "title": "Avoid nonpersistent branding on launch screens",
+      "statement": {"en": "Avoid branding elements unless they are fixed parts of the first screen.", "ja": "first screenの固定部分でないbranding elementをlaunch screenに含めない。"},
+      "normative_level": "AVOID",
+      "polarity": "discourage",
+      "severity": "warning",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos"], "devices": ["iphone", "ipad", "apple-tv"], "components": [], "modalities": []},
+      "conditions": [
+        "Logos are an example of branding elements."
+      ],
+      "review_note": "Recovered the direct Don't clause and its fixed-first-screen exception at AVOID rather than MUST_NOT."
+    },
+    "HIG-PATTERNS-LAUNCHING-0016": {
+      "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "99e7ff0f7effa42444b245b8fbf9f5f3723987be6701d1477aec11ea3e700350", "section_path": ["Launching", "Platform considerations", "iOS, iPadOS"]},
+      "title": "Ensure landscape interfaces support both rotation directions",
+      "statement": {"en": "Ensure landscape-only iOS and iPadOS interfaces support both device rotation directions.", "ja": "landscape-onlyのiOSおよびiPadOS interfaceで左右両方のdevice rotation方向に対応する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": [], "modalities": []},
+      "review_note": "Recovered the explicit Ensure requirement as a separate iOS and iPadOS MUST."
     },
     "HIG-PATTERNS-LAUNCHING-0004": {
       "source": {"source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456", "source_sentence_hash": "75e60cfc2e7e3a298cf4131423f4ac67cba3d6cce75e5d4e7bda5b83e23add1a", "section_path": ["Launching", "Platform considerations", "visionOS"]},

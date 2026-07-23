@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 378
-- Retained MUST: 340
+- Reviewed rules: 381
+- Retained MUST: 343
 - Retained MUST_NOT: 38
 - Normative level changes: 143
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T09:00:21Z
+- Reviewed at: 2026-07-23T09:12:24Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -583,6 +583,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-FILE-MANAGEMENT-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional Make sure requirement for visible unsaved-change state when autosaving is off. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0033 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional Be sure requirement to remove the Edited suffix after automatic or explicit saving. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-LAUNCHING-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0013 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LAUNCHING-0016 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0007 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
