@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T07:53:50Z",
+  "reviewed_at": "2026-07-23T08:26:37Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -2552,6 +2552,51 @@
         "HIG-FOUNDATIONS-MATERIALS-0026"
       ],
       "review_note": "Completed common Materials coverage; retained six stable IDs, recovered five atomic rules, preserved clear and regular variant conditions plus dimming exceptions, and introduced no unsupported MUST or MUST_NOT rules."
+    },
+    {
+      "id": "priority-6-right-to-left-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T08:26:37Z",
+      "review_method": "Rendered Apple HIG Right to left overview, text, numbers, controls, images, interface icons, supporting prose, examples, and platform considerations were reviewed; two repeated live renders matched the recorded main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/right-to-left",
+          "source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0008",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0009",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0010",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0011",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0013",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0014",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0015",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0016",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0017",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0018",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0019",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0020",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0021",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0022",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0024",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0025",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0028",
+        "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0029"
+      ],
+      "review_note": "Completed the page; retained seven stable IDs, recovered twenty-two atomic rules, split mixed-strength numeral and logo guidance, retained eight explicit conditional MUST outcomes and one Never-based MUST_NOT, and kept direct Don't or Avoid guidance below MUST_NOT."
     },
     {
       "id": "priority-4-typography-platform-context-2026-07-21",
@@ -8526,6 +8571,223 @@
         "Choose by semantic meaning and intended use instead."
       ],
       "review_note": "Recovered direct Avoid guidance as AVOID, not MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "807a9f278806df1219043be49a7032f6c8510d59861c1203672dec1af77fc9fb", "section_path": ["Right to left", "Text alignment"]},
+      "title": "Keep list-item alignment consistent in RTL contexts",
+      "statement": {"en": "Use consistent alignment for every text item in an RTL list.", "ja": "RTL list内のすべてのtext itemで一貫したalignmentを使う。"},
+      "conditions": ["Reverse every list item's alignment, including items displayed in another script."],
+      "review_note": "Recorded the all-items scope and different-script inclusion."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "f739bb824f1b40cf1a31a0dc97e9a73debd56aac5159f5dad18cce1946dc668d", "section_path": ["Right to left", "Numbers and characters"]},
+      "title": "Avoid reversing digits within a specific number",
+      "statement": {"en": "Avoid reversing digit order within a specific number.", "ja": "特定のnumber内でdigit orderを反転しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Keep phone, credit-card, and other specific numbers in the same digit order across contexts."],
+      "review_note": "Retained direct Don't guidance as AVOID, not MUST_NOT, and recorded the invariant examples."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "cf3c1476cd3e4683f6f43829fbcab66f55d51b12faab4610bbba50354c43cccf", "section_path": ["Right to left", "Controls"]},
+      "title": "Preserve controls that express an actual direction",
+      "statement": {"en": "Preserve the direction of controls that express an actual direction or onscreen area.", "ja": "actual directionまたはonscreen areaを表すcontrolの方向を保つ。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["A control meaning “to the right” must point right in every language context."],
+      "review_note": "Raised the rule to MUST from the supporting must-always directional invariant."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "9f11411dc26d439849a742ded5aaac701924dbb42e2fd0fde072e542fd520457", "section_path": ["Right to left", "Images"]},
+      "title": "Avoid flipping photographs, illustrations, and artwork",
+      "statement": {"en": "Avoid flipping photographs, illustrations, and general artwork for RTL contexts.", "ja": "RTL context向けにphotograph、illustration、general artworkを反転しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Flipping can change meaning or violate image copyright.", "Apply the separate alternative-image recommendation when reading direction matters."],
+      "review_note": "Retained direct Avoid guidance and recorded semantic and legal risks."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "aa89a255b1bc574c9e34d80a23ec94a90a69de75764324b529b2b9b23829a703", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Consider localized interface icons that display text",
+      "statement": {"en": "Consider a localized version of an interface icon that displays actual text.", "ja": "actual textを表示するinterface iconのlocalized versionを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Examples include signature, rich-text, font-size, and I-beam pointer symbols."],
+      "review_note": "Retained the optional localization branch and its script-related examples."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "d6e8b6f52831dc19db328dc2480336bfcf6e4086c447f1c8b7ee3531df96ac49", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Always display logos in their original form",
+      "statement": {"en": "Display every logo in its original form, even when it includes text.", "ja": "textを含む場合でもlogoを常にoriginal formで表示する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["A flipped logo can confuse people and create legal repercussions."],
+      "review_note": "Narrowed the mixed lead to the explicit Always logo requirement and split universal marks separately."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "c28eae42b5d2f5afd9450672f9c0981b425e1e8314b0e2f409b9745d0318f610", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Avoid flipping icons that depict real-world objects",
+      "statement": {"en": "Generally avoid flipping interface icons that depict familiar real-world objects.", "ja": "familiarなreal-world objectを表すinterface iconは通常反転しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Keep clocks and right-handed tools unchanged when they do not indicate direction."],
+      "exceptions": ["Flip the object when it communicates directionality."],
+      "review_note": "Retained the general AVOID and its directionality exception."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0008": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "49bb88b11e73b88bb88d184bd28c8528b74fd280a3dd989516cb4c279501dd7f", "section_path": ["Right to left", "Text alignment"]},
+      "title": "Match text alignment to interface direction",
+      "statement": {"en": "Match text alignment to interface direction when the system does not do so automatically.", "ja": "systemが自動調整しない場合はtext alignmentをinterface directionに合わせる。"},
+      "conditions": ["Mirror left-aligned LTR content as right-aligned RTL content."],
+      "review_note": "Activated the previously unrecognized alignment lead and preserved its system-handled condition."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0009": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "3fe9e97e407ab9b8c706c87ee19a55cfe88cbb8bdeffb8a4029e669cef1d4cec", "section_path": ["Right to left", "Text alignment"]},
+      "title": "Align paragraphs by language",
+      "statement": {"en": "Align paragraphs by their language rather than the surrounding interface direction.", "ja": "paragraphをsurrounding interface directionではなくlanguageに合わせて配置する。"},
+      "conditions": ["Treat three or more lines as a paragraph.", "Align one- or two-line blocks with the current interface direction."],
+      "review_note": "Recovered the language-based paragraph rule and both documented line-count branches."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0010": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "45817f663668510482bc4572507b9f54f74052b1066daf7b671d18d9b72756dd", "section_path": ["Right to left", "Numbers and characters"]},
+      "title": "Identify locale-appropriate number representations",
+      "statement": {"en": "Identify the appropriate number representation for each supported locale in number-centric content.", "ja": "number-centric contentでは各supported localeに適切なnumber representationを特定する。"},
+      "conditions": ["Apply to mathematical concepts and other number-focused topics."],
+      "review_note": "Recovered the unbolded locale-specific number guidance."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0011": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "45817f663668510482bc4572507b9f54f74052b1066daf7b671d18d9b72756dd", "section_path": ["Right to left", "Numbers and characters"]},
+      "title": "Consider system number representations for non-number-centric content",
+      "statement": {"en": "For content that is not number-centric, consider relying on system-provided number representations.", "ja": "number-centricでないcontentではsystem提供のnumber representation利用を検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Split the system-provided fallback from the number-centric locale requirement."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "455aa9f4cffb043311680207ee0e6d33435911a33411ab1739bbc541e618eac0", "section_path": ["Right to left", "Numbers and characters"]},
+      "title": "Reverse progress and counting numeral sequences",
+      "statement": {"en": "Reverse numeral sequences that show progress, counting direction, or a specific order in RTL contexts.", "ja": "RTL contextではprogress、counting direction、specific orderを示すnumeral sequenceを反転する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Match the sequence to its flipped control or RTL ordering direction."],
+      "review_note": "Split the mixed lead and retained MUST from the supporting Be sure directive."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0013": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "455aa9f4cffb043311680207ee0e6d33435911a33411ab1739bbc541e618eac0", "section_path": ["Right to left", "Numbers and characters"]},
+      "title": "Never mirror numeral glyphs",
+      "statement": {"en": "Never mirror numeral glyphs themselves in RTL contexts.", "ja": "RTL contextでもnumeral glyph自体を決してmirrorしない。"},
+      "normative_level": "MUST_NOT", "polarity": "prohibit", "severity": "error",
+      "review_note": "Split and retained the source's explicit Never prohibition."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0014": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "bbeac0fc71bb893ef389c92434edd2971f479817b56e2abe04a8d6ecfbee4fbc", "section_path": ["Right to left", "Controls"]},
+      "title": "Match progress-control direction to reading direction",
+      "statement": {"en": "Match progress-control direction to the reading direction in RTL contexts.", "ja": "RTL contextではprogress-control directionをreading directionに合わせる。"},
+      "conditions": ["Flip sliders and progress indicators so forward progress follows RTL reading direction."],
+      "review_note": "Recovered the control-flipping recommendation separately from its mandatory accompanying-glyph outcome."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0015": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "bbeac0fc71bb893ef389c92434edd2971f479817b56e2abe04a8d6ecfbee4fbc", "section_path": ["Right to left", "Controls"]},
+      "title": "Reverse progress-control endpoint glyph positions",
+      "statement": {"en": "When flipping a progress control, reverse accompanying glyphs or images that represent its endpoint values.", "ja": "progress controlを反転するときはendpoint valueを表すglyphやimageの位置も反転する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "review_note": "Recovered the explicit Be sure requirement as a separate MUST."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0016": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "296ab419363ec604b0b41b10cf728b61799521b97cc3d938640ae4ac28af09b1", "section_path": ["Right to left", "Controls"]},
+      "title": "Flip fixed-order navigation controls in RTL contexts",
+      "statement": {"en": "Ensure fixed-order navigation controls flip to match RTL reading order.", "ja": "fixed-order navigation controlをRTL reading orderに合わせて反転する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Point Back rightward and flip Next or Previous controls for ordered lists."],
+      "review_note": "Recovered MUST from the supporting must and need-to requirements."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0017": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "daa1dc2acf6f205d5078cd7c83cf518af87c2e6f5ab7908f9476934e9b06f82c", "section_path": ["Right to left", "Controls"]},
+      "title": "Visually balance adjacent Latin and RTL scripts",
+      "statement": {"en": "Match the visual size of adjacent Latin and RTL scripts when necessary.", "ja": "必要な場合は隣接するLatinとRTL scriptのvisual sizeを合わせる。"},
+      "conditions": ["For Arabic or Hebrew beside uppercase Latin, consider increasing the RTL font by about 2 points."],
+      "review_note": "Recovered the visual-balance rule and retained the numeric adjustment as an example."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0018": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "9f11411dc26d439849a742ded5aaac701924dbb42e2fd0fde072e542fd520457", "section_path": ["Right to left", "Images"]},
+      "title": "Consider a new image when reading direction affects meaning",
+      "statement": {"en": "When image content is strongly connected to reading direction, consider creating a new version instead of flipping it.", "ja": "image contentがreading directionに強く結び付く場合は反転ではなくnew versionを検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Split the optional replacement branch from the general image-flipping AVOID."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0019": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "206ea5cb0e07e435425dda7bc7187f6e38d85f932a24d42e486b2e8ebd4989b9", "section_path": ["Right to left", "Images"]},
+      "title": "Reverse image positions when order is meaningful",
+      "statement": {"en": "Preserve meaningful image order by reversing positions in RTL contexts.", "ja": "RTL contextではimage positionを反転してmeaningful orderを保つ。"},
+      "conditions": ["Apply to chronological, alphabetical, favorite, and other meaningful sequences."],
+      "review_note": "Recovered the positional reversal rule and its ordering examples."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0020": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "3c42afacddcf5c3785b836a4ff5d16937e86590979d8d9e107083cab110c6c0e", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Consider specifying custom-symbol directionality",
+      "statement": {"en": "Consider specifying directionality for custom symbols used in RTL contexts.", "ja": "RTL contextで使うcustom symbolのdirectionality指定を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["SF Symbols supplies RTL variants and localized Arabic and Hebrew symbols."],
+      "review_note": "Recovered the custom-symbol capability as an optional design branch."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0021": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "6aac670a1162326d04f3ab8c14295eeea62ab82235cdcaa7dbbc0075e04b8176", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Adapt text-direction icons to RTL",
+      "statement": {"en": "Adapt interface icons that represent text or reading direction to the RTL context.", "ja": "textまたはreading directionを表すinterface iconをRTL contextに合わせる。"},
+      "conditions": ["Right-align bars that represent text in RTL versions."],
+      "review_note": "Recovered the text-direction icon adaptation rule."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0022": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "0f4ad028da50e019cde731e247f47f8c82e84503d995b34ac520d120e81a2350", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Consider text-free alternatives for nonreading icon concepts",
+      "statement": {"en": "For custom icon text unrelated to reading or writing, consider a text-free alternative.", "ja": "readingやwritingと無関係なcustom icon textにはtext-free alternativeを検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Recovered the unbolded alternative-image branch."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "e84916ac419ae747202c635096e2d73f2afe5daf6c5f82721b1bf5b028960524", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Flip forward and backward motion icons in RTL contexts",
+      "statement": {"en": "Ensure icons that show forward or backward motion flip in RTL contexts.", "ja": "forwardまたはbackward motionを示すiconをRTL contextで反転する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Preserve motion meaning, including the direction of speaker sound waves."],
+      "review_note": "Recovered MUST from the supporting needs-to-flip requirement."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0024": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "d6e8b6f52831dc19db328dc2480336bfcf6e4086c447f1c8b7ee3531df96ac49", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Avoid flipping universal signs and marks",
+      "statement": {"en": "Avoid flipping universal signs and marks in RTL contexts.", "ja": "RTL contextでもuniversal signやmarkを反転しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["People expect symbols such as checkmarks to keep a consistent appearance."],
+      "review_note": "Split universal marks from the logo MUST and retained direct Avoid strength."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0025": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "f7a39c804a981c5412e0d44fc3d2e9d591d6ef396dd0101887f3419c8b7a977e", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Consider components and balance before flipping a complex icon",
+      "statement": {"en": "Consider individual components and overall visual balance before flipping a complex custom interface icon.", "ja": "complex custom interface iconを反転する前にindividual componentとoverall visual balanceを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Evaluate badges, slashes, magnifying glasses, and other independently meaningful components."],
+      "review_note": "Activated the previously unrecognized contextual Consider guidance."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "f7a39c804a981c5412e0d44fc3d2e9d591d6ef396dd0101887f3419c8b7a977e", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Preserve localization-independent icon-component language",
+      "statement": {"en": "Ensure localization-independent icon components preserve their visual design language.", "ja": "localization-independentなicon componentのvisual design languageを保つ。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Preserve components such as a negation backslash when the design language requires consistency."],
+      "review_note": "Recovered the conditional needs-to-adhere requirement as MUST."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "806295562c6df0486639a872989b03dc81832ac1fdfad8ef7a57afe878122356", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Flip UI-representing icon badges with the interface",
+      "statement": {"en": "Ensure an icon badge that represents actual UI flips when the represented interface flips.", "ja": "actual UIを表すicon badgeをrepresented interfaceとともに反転する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "review_note": "Recovered the conditional needs-to-flip UI representation requirement."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0028": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "806295562c6df0486639a872989b03dc81832ac1fdfad8ef7a57afe878122356", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Consider meaning and balance before flipping a modifying badge",
+      "statement": {"en": "Consider whether flipping a meaning-modifying badge preserves both meaning and icon balance.", "ja": "meaning-modifying badgeの反転がmeaningとicon balanceの両方を保つか検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Split the optional meaning-modifying badge decision from the mandatory UI-representation case."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0029": {
+      "source": {"source_hash": "17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70", "source_sentence_hash": "f2533be8bce337ffa251117468be8577cfc5bfe140e2eb1aabd63aeca8efc32d", "section_path": ["Right to left", "Interface icons"]},
+      "title": "Consider preserving handed-tool orientation inside a flipped icon",
+      "statement": {"en": "Consider preserving a handed tool's orientation while flipping its icon base when necessary.", "ja": "必要な場合はicon baseを反転しつつhanded toolのorientation維持を検討する。"},
+      "normative_level": "MAY",
+      "review_note": "Recovered the handedness-specific component option."
     },
     "HIG-FOUNDATIONS-TYPOGRAPHY-0011": {
       "source": {"source_hash": "19629dc94b36a66db614a2a3ad0895272223a497c7713db0a8437401c0f7e389", "source_sentence_hash": "558b5296a93aa76ae06bd48d0745ce32e610c15cc5f2d3214194ef85dda7e4af", "section_path": ["Typography", "Platform considerations", "visionOS"]},

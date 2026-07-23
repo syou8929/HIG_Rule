@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 359
-- Retained MUST: 325
-- Retained MUST_NOT: 34
-- Normative level changes: 127
+- Reviewed rules: 368
+- Retained MUST: 333
+- Retained MUST_NOT: 35
+- Normative level changes: 136
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T07:42:05Z
+- Reviewed at: 2026-07-23T08:26:37Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -150,6 +150,15 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-LAYOUT-0033 — Recovered and retained the explicit Be sure directive for grid focus spacing. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0035 — Recovered and retained the explicit You need directive without promoting the 60-point example to a universal threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-MOTION-0014 — Recovered and retained the explicit Make sure directive within its peripheral-motion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003 — Raised the rule to MUST from the supporting must-always directional invariant. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006 — Narrowed the mixed lead to the explicit Always logo requirement and split universal marks separately. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012 — Split the mixed lead and retained MUST from the supporting Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0013 — Split and retained the source's explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0015 — Recovered the explicit Be sure requirement as a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0016 — Recovered MUST from the supporting must and need-to requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023 — Recovered MUST from the supporting needs-to-flip requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026 — Recovered the conditional needs-to-adhere requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027 — Recovered the conditional needs-to-flip UI representation requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 — Retained MUST after reviewing the explicit Make sure lead and its value, scale, legibility, and refocusing limits. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0018 — Retained MUST after confirming the conditional You need to specify platform requirement for NY type styles. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0021 — Retained MUST after confirming the conditional Be sure to test directive for a nondefault text color. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
@@ -480,6 +489,15 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-MOTION-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive within its peripheral-motion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-PRIVACY-0007 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0011 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003 · MUST · retained_with_atomicity_or_scope_correction — Raised the rule to MUST from the supporting must-always directional invariant. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006 · MUST · retained_with_atomicity_or_scope_correction — Narrowed the mixed lead to the explicit Always logo requirement and split universal marks separately. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012 · MUST · retained_with_atomicity_or_scope_correction — Split the mixed lead and retained MUST from the supporting Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0013 · MUST_NOT · retained_with_atomicity_or_scope_correction — Split and retained the source's explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0015 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Be sure requirement as a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the supporting must and need-to requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the supporting needs-to-flip requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional needs-to-adhere requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional needs-to-flip UI representation requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-SF-SYMBOLS-0004 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reviewing the explicit Make sure lead and its value, scale, legibility, and refocusing limits. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))

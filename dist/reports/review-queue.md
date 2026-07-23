@@ -1,28 +1,32 @@
 # Human source-review queue
 
-- Remaining rules: 621
+- Remaining rules: 614
 - Next priority: 6 (apple-platform-common)
-- Next batch: 7
+- Next batch: 11
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 598
+- 6 (apple-platform-common): 591
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 69
-- MAY: 64
-- SHOULD: 488
+- AVOID: 65
+- MAY: 63
+- SHOULD: 486
 
 ## Next batch
 
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002 · AVOID — Don’t reverse the order of numerals in a specific number · Right to left > Numbers and characters ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004 · AVOID — Avoid flipping images like photographs, illustrations, and general artwork · Right to left > Images ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006 · AVOID — Don’t flip logos or universal signs and marks · Right to left > Interface icons ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007 · AVOID — In general, avoid flipping interface icons that depict real-world objects · Right to left > Interface icons ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001 · SHOULD — Use a consistent alignment for all text items in a list · Right to left > Text alignment ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003 · SHOULD — Preserve the direction of a control that refers to an actual direction or points to an onscreen area · Right to left > Controls ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005 · MAY — Consider creating a localized version of an interface icon that displays text · Right to left > Interface icons ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0010 · AVOID — Avoid making custom symbols that include common variants, such as enclosures or badges · SF Symbols > Custom symbols ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0012 · AVOID — Don’t design replicas of Apple products · SF Symbols > Custom symbols ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0001 · SHOULD — Confirm that a symbol’s rendering mode works well in every context · SF Symbols > Rendering modes ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0002 · SHOULD — Use variable color to communicate change — don’t use it to communicate depth · SF Symbols > Variable color ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0003 · SHOULD — Apply symbol animations judiciously · SF Symbols > Animations ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0005 · SHOULD — Use symbol animations to communicate information more efficiently · SF Symbols > Animations ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0007 · SHOULD — Use the template as a guide · SF Symbols > Custom symbols ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0008 · SHOULD — Optimize layers to use animations with custom symbols · SF Symbols > Custom symbols ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0009 · SHOULD — Test animations for custom symbols · SF Symbols > Custom symbols ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0011 · SHOULD — Provide alternative text labels for custom symbols · SF Symbols > Custom symbols ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
+- HIG-FOUNDATIONS-SF-SYMBOLS-0006 · MAY — Consider your app’s tone when adding animations · SF Symbols > Animations ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))

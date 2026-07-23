@@ -83352,16 +83352,16 @@
   apple_native_rule: When customizing the location button, choose the system-provided filled or outlined location glyph.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001
-  title: Use a consistent alignment for all text items in a list
+  title: Keep list-item alignment consistent in RTL contexts
   category: foundations
   topic: right-to-left
   subtopic: text-alignment
   statement:
-    en: Choose or apply a consistent alignment for all text items in a list in the documented context.
-    ja: 該当する状況ではa consistent alignment for all text items in a listを採用する。
+    en: Use consistent alignment for every text item in an RTL list.
+    ja: RTL list内のすべてのtext itemで一貫したalignmentを使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -83383,7 +83383,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Reverse every list item's alignment, including items displayed in another script.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
@@ -83391,7 +83391,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply a consistent alignment for all text items in a list in the documented context.” in the documented Right to left context?
+      - Does the design satisfy “Use consistent alignment for every text item in an RTL list.” in the documented Right to left context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83406,26 +83406,26 @@
     retrieved_at: 2026-07-21T11:15:16.050Z
     source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
     source_sentence_hash: 807a9f278806df1219043be49a7032f6c8510d59861c1203672dec1af77fc9fb
-    evidence_paraphrase: Choose or apply a consistent alignment for all text items in a list in the documented context.
+    evidence_paraphrase: Use consistent alignment for every text item in an RTL list.
   tags:
     - foundations
     - right-to-left
     - text-alignment
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply a consistent alignment for all text items in a list in the documented context.
+  apple_native_rule: Use consistent alignment for every text item in an RTL list.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002
-  title: Don’t reverse the order of numerals in a specific number
+  title: Avoid reversing digits within a specific number
   category: foundations
   topic: right-to-left
   subtopic: numbers-and-characters
   statement:
-    en: Exclude reverse the order of numerals in a specific number from the applicable experience.
-    ja: 該当する体験ではreverse the order of numerals in a specific numberを避ける。
+    en: Avoid reversing digit order within a specific number.
+    ja: 特定のnumber内でdigit orderを反転しない。
   normative_level: AVOID
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: discourage
   severity: warning
   scope:
@@ -83447,7 +83447,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Keep phone, credit-card, and other specific numbers in the same digit order across contexts.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
@@ -83455,7 +83455,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude reverse the order of numerals in a specific number from the applicable experience.” in the documented Right to left context?
+      - Does the design satisfy “Avoid reversing digit order within a specific number.” in the documented Right to left context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83470,26 +83470,348 @@
     retrieved_at: 2026-07-21T11:15:16.050Z
     source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
     source_sentence_hash: f739bb824f1b40cf1a31a0dc97e9a73debd56aac5159f5dad18cce1946dc668d
-    evidence_paraphrase: Exclude reverse the order of numerals in a specific number from the applicable experience.
+    evidence_paraphrase: Avoid reversing digit order within a specific number.
   tags:
     - foundations
     - right-to-left
     - numbers-and-characters
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude reverse the order of numerals in a specific number from the applicable experience.
+  apple_native_rule: Avoid reversing digit order within a specific number.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003
-  title: Preserve the direction of a control that refers to an actual direction or points to an onscreen area
+  title: Preserve controls that express an actual direction
   category: foundations
   topic: right-to-left
   subtopic: controls
   statement:
-    en: Apply the documented Right to left guidance to preserve the direction of a control that refers to an actual direction or points to an onscreen area.
-    ja: 「Right to left」において「Preserve the direction of a control that refers to an actual direction or points to an onscreen area」の指針を適用する。
+    en: Preserve the direction of controls that express an actual direction or onscreen area.
+    ja: actual directionまたはonscreen areaを表すcontrolの方向を保つ。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - A control meaning “to the right” must point right in every language context.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Preserve the direction of controls that express an actual direction or onscreen area.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Controls
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: cf3c1476cd3e4683f6f43829fbcab66f55d51b12faab4610bbba50354c43cccf
+    evidence_paraphrase: Preserve the direction of controls that express an actual direction or onscreen area.
+  tags:
+    - foundations
+    - right-to-left
+    - controls
+  priority_rank: 6
+  status: active
+  apple_native_rule: Preserve the direction of controls that express an actual direction or onscreen area.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004
+  title: Avoid flipping photographs, illustrations, and artwork
+  category: foundations
+  topic: right-to-left
+  subtopic: images
+  statement:
+    en: Avoid flipping photographs, illustrations, and general artwork for RTL contexts.
+    ja: RTL context向けにphotograph、illustration、general artworkを反転しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Flipping can change meaning or violate image copyright.
+    - Apply the separate alternative-image recommendation when reading direction matters.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid flipping photographs, illustrations, and general artwork for RTL contexts.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Images
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 9f11411dc26d439849a742ded5aaac701924dbb42e2fd0fde072e542fd520457
+    evidence_paraphrase: Avoid flipping photographs, illustrations, and general artwork for RTL contexts.
+  tags:
+    - foundations
+    - right-to-left
+    - images
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid flipping photographs, illustrations, and general artwork for RTL contexts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005
+  title: Consider localized interface icons that display text
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Consider a localized version of an interface icon that displays actual text.
+    ja: actual textを表示するinterface iconのlocalized versionを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Examples include signature, rich-text, font-size, and I-beam pointer symbols.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider a localized version of an interface icon that displays actual text.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: aa89a255b1bc574c9e34d80a23ec94a90a69de75764324b529b2b9b23829a703
+    evidence_paraphrase: Consider a localized version of an interface icon that displays actual text.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider a localized version of an interface icon that displays actual text.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006
+  title: Always display logos in their original form
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Display every logo in its original form, even when it includes text.
+    ja: textを含む場合でもlogoを常にoriginal formで表示する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - A flipped logo can confuse people and create legal repercussions.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Display every logo in its original form, even when it includes text.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: d6e8b6f52831dc19db328dc2480336bfcf6e4086c447f1c8b7ee3531df96ac49
+    evidence_paraphrase: Display every logo in its original form, even when it includes text.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Display every logo in its original form, even when it includes text.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007
+  title: Avoid flipping icons that depict real-world objects
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Generally avoid flipping interface icons that depict familiar real-world objects.
+    ja: familiarなreal-world objectを表すinterface iconは通常反転しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Keep clocks and right-handed tools unchanged when they do not indicate direction.
+  exceptions:
+    - Flip the object when it communicates directionality.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Generally avoid flipping interface icons that depict familiar real-world objects.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: c28eae42b5d2f5afd9450672f9c0981b425e1e8314b0e2f409b9745d0318f610
+    evidence_paraphrase: Generally avoid flipping interface icons that depict familiar real-world objects.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Generally avoid flipping interface icons that depict familiar real-world objects.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0008
+  title: Match text alignment to interface direction
+  category: foundations
+  topic: right-to-left
+  subtopic: text-alignment
+  statement:
+    en: Match text alignment to interface direction when the system does not do so automatically.
+    ja: systemが自動調整しない場合はtext alignmentをinterface directionに合わせる。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -83511,7 +83833,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Mirror left-aligned LTR content as right-aligned RTL content.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
@@ -83519,7 +83841,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Right to left guidance to preserve the direction of a control that refers to an actual direction or points to an onscreen area.” in the documented Right to left context?
+      - Does the design satisfy “Match text alignment to interface direction when the system does not do so automatically.” in the documented Right to left context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83530,31 +83852,31 @@
     page_title: Right to left
     section_path:
       - Right to left
-      - Controls
+      - Text alignment
     retrieved_at: 2026-07-21T11:15:16.050Z
     source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
-    source_sentence_hash: cf3c1476cd3e4683f6f43829fbcab66f55d51b12faab4610bbba50354c43cccf
-    evidence_paraphrase: Apply the documented Right to left guidance to preserve the direction of a control that refers to an actual direction or points to an onscreen area.
+    source_sentence_hash: 49bb88b11e73b88bb88d184bd28c8528b74fd280a3dd989516cb4c279501dd7f
+    evidence_paraphrase: Match text alignment to interface direction when the system does not do so automatically.
   tags:
     - foundations
     - right-to-left
-    - controls
+    - text-alignment
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Right to left guidance to preserve the direction of a control that refers to an actual direction or points to an onscreen area.
+  apple_native_rule: Match text alignment to interface direction when the system does not do so automatically.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004
-  title: Avoid flipping images like photographs, illustrations, and general artwork
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0009
+  title: Align paragraphs by language
   category: foundations
   topic: right-to-left
-  subtopic: images
+  subtopic: text-alignment
   statement:
-    en: Exclude flipping images like photographs, illustrations, and general artwork from the applicable experience.
-    ja: 該当する体験ではflipping images like photographs, illustrations, and general artworkを避ける。
-  normative_level: AVOID
-  confidence: low
-  review_required: true
-  polarity: discourage
+    en: Align paragraphs by their language rather than the surrounding interface direction.
+    ja: paragraphをsurrounding interface directionではなくlanguageに合わせて配置する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
   severity: warning
   scope:
     portability: apple-platform
@@ -83575,7 +83897,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Treat three or more lines as a paragraph.
+    - Align one- or two-line blocks with the current interface direction.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
@@ -83583,7 +83906,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude flipping images like photographs, illustrations, and general artwork from the applicable experience.” in the documented Right to left context?
+      - Does the design satisfy “Align paragraphs by their language rather than the surrounding interface direction.” in the documented Right to left context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83594,30 +83917,94 @@
     page_title: Right to left
     section_path:
       - Right to left
-      - Images
+      - Text alignment
     retrieved_at: 2026-07-21T11:15:16.050Z
     source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
-    source_sentence_hash: 9f11411dc26d439849a742ded5aaac701924dbb42e2fd0fde072e542fd520457
-    evidence_paraphrase: Exclude flipping images like photographs, illustrations, and general artwork from the applicable experience.
+    source_sentence_hash: 3fe9e97e407ab9b8c706c87ee19a55cfe88cbb8bdeffb8a4029e669cef1d4cec
+    evidence_paraphrase: Align paragraphs by their language rather than the surrounding interface direction.
   tags:
     - foundations
     - right-to-left
-    - images
+    - text-alignment
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude flipping images like photographs, illustrations, and general artwork from the applicable experience.
+  apple_native_rule: Align paragraphs by their language rather than the surrounding interface direction.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005
-  title: Consider creating a localized version of an interface icon that displays text
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0010
+  title: Identify locale-appropriate number representations
   category: foundations
   topic: right-to-left
-  subtopic: interface-icons
+  subtopic: numbers-and-characters
   statement:
-    en: Evaluate whether creating a localized version of an interface icon that displays text is appropriate for the current context.
-    ja: creating a localized version of an interface icon that displays textが現在の状況に適切か検討する。
+    en: Identify the appropriate number representation for each supported locale in number-centric content.
+    ja: number-centric contentでは各supported localeに適切なnumber representationを特定する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply to mathematical concepts and other number-focused topics.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Identify the appropriate number representation for each supported locale in number-centric content.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Numbers and characters
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 45817f663668510482bc4572507b9f54f74052b1066daf7b671d18d9b72756dd
+    evidence_paraphrase: Identify the appropriate number representation for each supported locale in number-centric content.
+  tags:
+    - foundations
+    - right-to-left
+    - numbers-and-characters
+  priority_rank: 6
+  status: active
+  apple_native_rule: Identify the appropriate number representation for each supported locale in number-centric content.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0011
+  title: Consider system number representations for non-number-centric content
+  category: foundations
+  topic: right-to-left
+  subtopic: numbers-and-characters
+  statement:
+    en: For content that is not number-centric, consider relying on system-provided number representations.
+    ja: number-centricでないcontentではsystem提供のnumber representation利用を検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -83647,7 +84034,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether creating a localized version of an interface icon that displays text is appropriate for the current context.” in the documented Right to left context?
+      - Does the design satisfy “For content that is not number-centric, consider relying on system-provided number representations.” in the documented Right to left context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83658,32 +84045,96 @@
     page_title: Right to left
     section_path:
       - Right to left
-      - Interface icons
+      - Numbers and characters
     retrieved_at: 2026-07-21T11:15:16.050Z
     source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
-    source_sentence_hash: aa89a255b1bc574c9e34d80a23ec94a90a69de75764324b529b2b9b23829a703
-    evidence_paraphrase: Evaluate whether creating a localized version of an interface icon that displays text is appropriate for the current context.
+    source_sentence_hash: 45817f663668510482bc4572507b9f54f74052b1066daf7b671d18d9b72756dd
+    evidence_paraphrase: For content that is not number-centric, consider relying on system-provided number representations.
   tags:
     - foundations
     - right-to-left
-    - interface-icons
+    - numbers-and-characters
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether creating a localized version of an interface icon that displays text is appropriate for the current context.
+  apple_native_rule: For content that is not number-centric, consider relying on system-provided number representations.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006
-  title: Don’t flip logos or universal signs and marks
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012
+  title: Reverse progress and counting numeral sequences
   category: foundations
   topic: right-to-left
-  subtopic: interface-icons
+  subtopic: numbers-and-characters
   statement:
-    en: Exclude flip logos or universal signs and marks from the applicable experience.
-    ja: 該当する体験ではflip logos or universal signs and marksを避ける。
-  normative_level: AVOID
-  confidence: low
-  review_required: true
-  polarity: discourage
-  severity: warning
+    en: Reverse numeral sequences that show progress, counting direction, or a specific order in RTL contexts.
+    ja: RTL contextではprogress、counting direction、specific orderを示すnumeral sequenceを反転する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Match the sequence to its flipped control or RTL ordering direction.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Reverse numeral sequences that show progress, counting direction, or a specific order in RTL contexts.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Numbers and characters
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 455aa9f4cffb043311680207ee0e6d33435911a33411ab1739bbc541e618eac0
+    evidence_paraphrase: Reverse numeral sequences that show progress, counting direction, or a specific order in RTL contexts.
+  tags:
+    - foundations
+    - right-to-left
+    - numbers-and-characters
+  priority_rank: 6
+  status: active
+  apple_native_rule: Reverse numeral sequences that show progress, counting direction, or a specific order in RTL contexts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0013
+  title: Never mirror numeral glyphs
+  category: foundations
+  topic: right-to-left
+  subtopic: numbers-and-characters
+  statement:
+    en: Never mirror numeral glyphs themselves in RTL contexts.
+    ja: RTL contextでもnumeral glyph自体を決してmirrorしない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
   scope:
     portability: apple-platform
     platforms:
@@ -83711,7 +84162,711 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude flip logos or universal signs and marks from the applicable experience.” in the documented Right to left context?
+      - Does the design satisfy “Never mirror numeral glyphs themselves in RTL contexts.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Numbers and characters
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 455aa9f4cffb043311680207ee0e6d33435911a33411ab1739bbc541e618eac0
+    evidence_paraphrase: Never mirror numeral glyphs themselves in RTL contexts.
+  tags:
+    - foundations
+    - right-to-left
+    - numbers-and-characters
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never mirror numeral glyphs themselves in RTL contexts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0014
+  title: Match progress-control direction to reading direction
+  category: foundations
+  topic: right-to-left
+  subtopic: controls
+  statement:
+    en: Match progress-control direction to the reading direction in RTL contexts.
+    ja: RTL contextではprogress-control directionをreading directionに合わせる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Flip sliders and progress indicators so forward progress follows RTL reading direction.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Match progress-control direction to the reading direction in RTL contexts.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Controls
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: bbeac0fc71bb893ef389c92434edd2971f479817b56e2abe04a8d6ecfbee4fbc
+    evidence_paraphrase: Match progress-control direction to the reading direction in RTL contexts.
+  tags:
+    - foundations
+    - right-to-left
+    - controls
+  priority_rank: 6
+  status: active
+  apple_native_rule: Match progress-control direction to the reading direction in RTL contexts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0015
+  title: Reverse progress-control endpoint glyph positions
+  category: foundations
+  topic: right-to-left
+  subtopic: controls
+  statement:
+    en: When flipping a progress control, reverse accompanying glyphs or images that represent its endpoint values.
+    ja: progress controlを反転するときはendpoint valueを表すglyphやimageの位置も反転する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When flipping a progress control, reverse accompanying glyphs or images that represent its endpoint values.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Controls
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: bbeac0fc71bb893ef389c92434edd2971f479817b56e2abe04a8d6ecfbee4fbc
+    evidence_paraphrase: When flipping a progress control, reverse accompanying glyphs or images that represent its endpoint values.
+  tags:
+    - foundations
+    - right-to-left
+    - controls
+  priority_rank: 6
+  status: active
+  apple_native_rule: When flipping a progress control, reverse accompanying glyphs or images that represent its endpoint values.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0016
+  title: Flip fixed-order navigation controls in RTL contexts
+  category: foundations
+  topic: right-to-left
+  subtopic: controls
+  statement:
+    en: Ensure fixed-order navigation controls flip to match RTL reading order.
+    ja: fixed-order navigation controlをRTL reading orderに合わせて反転する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Point Back rightward and flip Next or Previous controls for ordered lists.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure fixed-order navigation controls flip to match RTL reading order.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Controls
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 296ab419363ec604b0b41b10cf728b61799521b97cc3d938640ae4ac28af09b1
+    evidence_paraphrase: Ensure fixed-order navigation controls flip to match RTL reading order.
+  tags:
+    - foundations
+    - right-to-left
+    - controls
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure fixed-order navigation controls flip to match RTL reading order.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0017
+  title: Visually balance adjacent Latin and RTL scripts
+  category: foundations
+  topic: right-to-left
+  subtopic: controls
+  statement:
+    en: Match the visual size of adjacent Latin and RTL scripts when necessary.
+    ja: 必要な場合は隣接するLatinとRTL scriptのvisual sizeを合わせる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - For Arabic or Hebrew beside uppercase Latin, consider increasing the RTL font by about 2 points.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Match the visual size of adjacent Latin and RTL scripts when necessary.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Controls
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: daa1dc2acf6f205d5078cd7c83cf518af87c2e6f5ab7908f9476934e9b06f82c
+    evidence_paraphrase: Match the visual size of adjacent Latin and RTL scripts when necessary.
+  tags:
+    - foundations
+    - right-to-left
+    - controls
+  priority_rank: 6
+  status: active
+  apple_native_rule: Match the visual size of adjacent Latin and RTL scripts when necessary.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0018
+  title: Consider a new image when reading direction affects meaning
+  category: foundations
+  topic: right-to-left
+  subtopic: images
+  statement:
+    en: When image content is strongly connected to reading direction, consider creating a new version instead of flipping it.
+    ja: image contentがreading directionに強く結び付く場合は反転ではなくnew versionを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When image content is strongly connected to reading direction, consider creating a new version instead of flipping it.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Images
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 9f11411dc26d439849a742ded5aaac701924dbb42e2fd0fde072e542fd520457
+    evidence_paraphrase: When image content is strongly connected to reading direction, consider creating a new version instead of flipping it.
+  tags:
+    - foundations
+    - right-to-left
+    - images
+  priority_rank: 6
+  status: active
+  apple_native_rule: When image content is strongly connected to reading direction, consider creating a new version instead of flipping it.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0019
+  title: Reverse image positions when order is meaningful
+  category: foundations
+  topic: right-to-left
+  subtopic: images
+  statement:
+    en: Preserve meaningful image order by reversing positions in RTL contexts.
+    ja: RTL contextではimage positionを反転してmeaningful orderを保つ。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply to chronological, alphabetical, favorite, and other meaningful sequences.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Preserve meaningful image order by reversing positions in RTL contexts.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Images
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 206ea5cb0e07e435425dda7bc7187f6e38d85f932a24d42e486b2e8ebd4989b9
+    evidence_paraphrase: Preserve meaningful image order by reversing positions in RTL contexts.
+  tags:
+    - foundations
+    - right-to-left
+    - images
+  priority_rank: 6
+  status: active
+  apple_native_rule: Preserve meaningful image order by reversing positions in RTL contexts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0020
+  title: Consider specifying custom-symbol directionality
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Consider specifying directionality for custom symbols used in RTL contexts.
+    ja: RTL contextで使うcustom symbolのdirectionality指定を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - SF Symbols supplies RTL variants and localized Arabic and Hebrew symbols.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider specifying directionality for custom symbols used in RTL contexts.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 3c42afacddcf5c3785b836a4ff5d16937e86590979d8d9e107083cab110c6c0e
+    evidence_paraphrase: Consider specifying directionality for custom symbols used in RTL contexts.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider specifying directionality for custom symbols used in RTL contexts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0021
+  title: Adapt text-direction icons to RTL
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Adapt interface icons that represent text or reading direction to the RTL context.
+    ja: textまたはreading directionを表すinterface iconをRTL contextに合わせる。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Right-align bars that represent text in RTL versions.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Adapt interface icons that represent text or reading direction to the RTL context.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 6aac670a1162326d04f3ab8c14295eeea62ab82235cdcaa7dbbc0075e04b8176
+    evidence_paraphrase: Adapt interface icons that represent text or reading direction to the RTL context.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Adapt interface icons that represent text or reading direction to the RTL context.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0022
+  title: Consider text-free alternatives for nonreading icon concepts
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: For custom icon text unrelated to reading or writing, consider a text-free alternative.
+    ja: readingやwritingと無関係なcustom icon textにはtext-free alternativeを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “For custom icon text unrelated to reading or writing, consider a text-free alternative.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 0f4ad028da50e019cde731e247f47f8c82e84503d995b34ac520d120e81a2350
+    evidence_paraphrase: For custom icon text unrelated to reading or writing, consider a text-free alternative.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: For custom icon text unrelated to reading or writing, consider a text-free alternative.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023
+  title: Flip forward and backward motion icons in RTL contexts
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Ensure icons that show forward or backward motion flip in RTL contexts.
+    ja: forwardまたはbackward motionを示すiconをRTL contextで反転する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Preserve motion meaning, including the direction of speaker sound waves.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure icons that show forward or backward motion flip in RTL contexts.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: e84916ac419ae747202c635096e2d73f2afe5daf6c5f82721b1bf5b028960524
+    evidence_paraphrase: Ensure icons that show forward or backward motion flip in RTL contexts.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure icons that show forward or backward motion flip in RTL contexts.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0024
+  title: Avoid flipping universal signs and marks
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Avoid flipping universal signs and marks in RTL contexts.
+    ja: RTL contextでもuniversal signやmarkを反転しない。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - People expect symbols such as checkmarks to keep a consistent appearance.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid flipping universal signs and marks in RTL contexts.” in the documented Right to left context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83726,28 +84881,156 @@
     retrieved_at: 2026-07-21T11:15:16.050Z
     source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
     source_sentence_hash: d6e8b6f52831dc19db328dc2480336bfcf6e4086c447f1c8b7ee3531df96ac49
-    evidence_paraphrase: Exclude flip logos or universal signs and marks from the applicable experience.
+    evidence_paraphrase: Avoid flipping universal signs and marks in RTL contexts.
   tags:
     - foundations
     - right-to-left
     - interface-icons
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude flip logos or universal signs and marks from the applicable experience.
+  apple_native_rule: Avoid flipping universal signs and marks in RTL contexts.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007
-  title: In general, avoid flipping interface icons that depict real-world objects
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0025
+  title: Consider components and balance before flipping a complex icon
   category: foundations
   topic: right-to-left
   subtopic: interface-icons
   statement:
-    en: Exclude flipping interface icons that depict real-world objects from the applicable experience.
-    ja: 該当する体験ではflipping interface icons that depict real-world objectsを避ける。
-  normative_level: AVOID
-  confidence: low
-  review_required: true
-  polarity: discourage
-  severity: warning
+    en: Consider individual components and overall visual balance before flipping a complex custom interface icon.
+    ja: complex custom interface iconを反転する前にindividual componentとoverall visual balanceを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Evaluate badges, slashes, magnifying glasses, and other independently meaningful components.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider individual components and overall visual balance before flipping a complex custom interface icon.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: f7a39c804a981c5412e0d44fc3d2e9d591d6ef396dd0101887f3419c8b7a977e
+    evidence_paraphrase: Consider individual components and overall visual balance before flipping a complex custom interface icon.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider individual components and overall visual balance before flipping a complex custom interface icon.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026
+  title: Preserve localization-independent icon-component language
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Ensure localization-independent icon components preserve their visual design language.
+    ja: localization-independentなicon componentのvisual design languageを保つ。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Preserve components such as a negation backslash when the design language requires consistency.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Ensure localization-independent icon components preserve their visual design language.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: f7a39c804a981c5412e0d44fc3d2e9d591d6ef396dd0101887f3419c8b7a977e
+    evidence_paraphrase: Ensure localization-independent icon components preserve their visual design language.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure localization-independent icon components preserve their visual design language.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027
+  title: Flip UI-representing icon badges with the interface
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Ensure an icon badge that represents actual UI flips when the represented interface flips.
+    ja: actual UIを表すicon badgeをrepresented interfaceとともに反転する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
   scope:
     portability: apple-platform
     platforms:
@@ -83775,7 +85058,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Exclude flipping interface icons that depict real-world objects from the applicable experience.” in the documented Right to left context?
+      - Does the design satisfy “Ensure an icon badge that represents actual UI flips when the represented interface flips.” in the documented Right to left context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -83789,15 +85072,143 @@
       - Interface icons
     retrieved_at: 2026-07-21T11:15:16.050Z
     source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
-    source_sentence_hash: c28eae42b5d2f5afd9450672f9c0981b425e1e8314b0e2f409b9745d0318f610
-    evidence_paraphrase: Exclude flipping interface icons that depict real-world objects from the applicable experience.
+    source_sentence_hash: 806295562c6df0486639a872989b03dc81832ac1fdfad8ef7a57afe878122356
+    evidence_paraphrase: Ensure an icon badge that represents actual UI flips when the represented interface flips.
   tags:
     - foundations
     - right-to-left
     - interface-icons
   priority_rank: 6
   status: active
-  apple_native_rule: Exclude flipping interface icons that depict real-world objects from the applicable experience.
+  apple_native_rule: Ensure an icon badge that represents actual UI flips when the represented interface flips.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0028
+  title: Consider meaning and balance before flipping a modifying badge
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Consider whether flipping a meaning-modifying badge preserves both meaning and icon balance.
+    ja: meaning-modifying badgeの反転がmeaningとicon balanceの両方を保つか検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider whether flipping a meaning-modifying badge preserves both meaning and icon balance.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: 806295562c6df0486639a872989b03dc81832ac1fdfad8ef7a57afe878122356
+    evidence_paraphrase: Consider whether flipping a meaning-modifying badge preserves both meaning and icon balance.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider whether flipping a meaning-modifying badge preserves both meaning and icon balance.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-FOUNDATIONS-RIGHT-TO-LEFT-0029
+  title: Consider preserving handed-tool orientation inside a flipped icon
+  category: foundations
+  topic: right-to-left
+  subtopic: interface-icons
+  statement:
+    en: Consider preserving a handed tool's orientation while flipping its icon base when necessary.
+    ja: 必要な場合はicon baseを反転しつつhanded toolのorientation維持を検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Right to left experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるRight to leftの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Consider preserving a handed tool's orientation while flipping its icon base when necessary.” in the documented Right to left context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/right-to-left
+    page_title: Right to left
+    section_path:
+      - Right to left
+      - Interface icons
+    retrieved_at: 2026-07-21T11:15:16.050Z
+    source_hash: 17416755c8573608be99a0711e47a2dd69fb4fc3e34db3080a21066bbd221b70
+    source_sentence_hash: f2533be8bce337ffa251117468be8577cfc5bfe140e2eb1aabd63aeca8efc32d
+    evidence_paraphrase: Consider preserving a handed tool's orientation while flipping its icon base when necessary.
+  tags:
+    - foundations
+    - right-to-left
+    - interface-icons
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider preserving a handed tool's orientation while flipping its icon base when necessary.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-FOUNDATIONS-SF-SYMBOLS-0001
   title: Confirm that a symbol’s rendering mode works well in every context

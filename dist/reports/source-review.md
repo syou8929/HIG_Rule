@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2267
-- Reviewed batches: 146
+- Reviewed rules: 2296
+- Reviewed batches: 147
 - Official source only: yes
-- Reviewed at: 2026-07-23T07:53:50Z
+- Reviewed at: 2026-07-23T08:26:37Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1281,6 +1281,35 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-PRIVACY-0013 · medium — Made the macOS fast-user-switching rationale explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0015 · medium — Lowered SHOULD to MAY because the item is an option under the parent statement that the button can be customized. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0016 · medium — Lowered SHOULD to MAY because the glyph choice is an optional customization listed under a can clause. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001 · high — Recorded the all-items scope and different-script inclusion. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002 · high — Retained direct Don't guidance as AVOID, not MUST_NOT, and recorded the invariant examples. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003 · high — Raised the rule to MUST from the supporting must-always directional invariant. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004 · high — Retained direct Avoid guidance and recorded semantic and legal risks. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005 · high — Retained the optional localization branch and its script-related examples. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006 · high — Narrowed the mixed lead to the explicit Always logo requirement and split universal marks separately. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007 · high — Retained the general AVOID and its directionality exception. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0008 · high — Activated the previously unrecognized alignment lead and preserved its system-handled condition. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0009 · high — Recovered the language-based paragraph rule and both documented line-count branches. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0010 · high — Recovered the unbolded locale-specific number guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0011 · high — Split the system-provided fallback from the number-centric locale requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012 · high — Split the mixed lead and retained MUST from the supporting Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0013 · high — Split and retained the source's explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0014 · high — Recovered the control-flipping recommendation separately from its mandatory accompanying-glyph outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0015 · high — Recovered the explicit Be sure requirement as a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0016 · high — Recovered MUST from the supporting must and need-to requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0017 · high — Recovered the visual-balance rule and retained the numeric adjustment as an example. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0018 · high — Split the optional replacement branch from the general image-flipping AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0019 · high — Recovered the positional reversal rule and its ordering examples. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0020 · high — Recovered the custom-symbol capability as an optional design branch. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0021 · high — Recovered the text-direction icon adaptation rule. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0022 · high — Recovered the unbolded alternative-image branch. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023 · high — Recovered MUST from the supporting needs-to-flip requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0024 · high — Split universal marks from the logo MUST and retained direct Avoid strength. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0025 · high — Activated the previously unrecognized contextual Consider guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026 · high — Recovered the conditional needs-to-adhere requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027 · high — Recovered the conditional needs-to-flip UI representation requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0028 · high — Split the optional meaning-modifying badge decision from the mandatory UI-representation case. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0029 · high — Recovered the handedness-specific component option. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0001 · high — Recorded the confinement and stability risks plus the spatial-anchor alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0002 · high — Recorded the real-world cue consistency and visual-comfort requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))
 - HIG-FOUNDATIONS-SPATIAL-LAYOUT-0003 · high — Recorded prominence and depth-change perception as the hierarchy mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/spatial-layout))

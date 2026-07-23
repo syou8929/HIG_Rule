@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 2937
+- Active atomic rules: 2959
 - Pages without rules: 16
-- Low-confidence rules: 621
-- Rules requiring human review: 621
+- Low-confidence rules: 614
+- Rules requiring human review: 614
 - Reference notes: 904
 
 ## Rules by category
 
 - components: 1026
-- foundations: 410
+- foundations: 432
 - getting-started: 100
 - inputs: 245
 - patterns: 368
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 416
-- MAY: 345
-- MUST: 325
-- MUST_NOT: 34
-- SHOULD: 1817
+- MAY: 352
+- MUST: 333
+- MUST_NOT: 35
+- SHOULD: 1823
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 1973
-- ipados: 1949
-- macos: 1612
-- tvos: 1247
-- visionos: 1652
-- watchos: 1346
+- ios: 1995
+- ipados: 1971
+- macos: 1634
+- tvos: 1269
+- visionos: 1674
+- watchos: 1368
 
 ## Rules by testability
 
 - hybrid: 87
-- manual: 2850
+- manual: 2872
 
 ## Blocked pages
 
@@ -144,13 +144,6 @@ None.
 - HIG-FOUNDATIONS-MOTION-0004
 - HIG-FOUNDATIONS-MOTION-0005
 - HIG-FOUNDATIONS-MOTION-0007
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007
 - HIG-FOUNDATIONS-SF-SYMBOLS-0001
 - HIG-FOUNDATIONS-SF-SYMBOLS-0002
 - HIG-FOUNDATIONS-SF-SYMBOLS-0003
@@ -768,13 +761,6 @@ None.
 - HIG-FOUNDATIONS-MOTION-0004
 - HIG-FOUNDATIONS-MOTION-0005
 - HIG-FOUNDATIONS-MOTION-0007
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006
-- HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007
 - HIG-FOUNDATIONS-SF-SYMBOLS-0001
 - HIG-FOUNDATIONS-SF-SYMBOLS-0002
 - HIG-FOUNDATIONS-SF-SYMBOLS-0003

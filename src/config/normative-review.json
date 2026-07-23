@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T07:42:05Z",
+  "reviewed_at": "2026-07-23T08:26:37Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "977e54a2aa92b62ed6670f132305c8c5d72905ccc9b7bff977fbd154e2211db2",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 359,
+  "reviewed_rule_count": 368,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, or Always avoid prohibition after checking its surrounding conditions and exceptions.",
@@ -2542,6 +2542,141 @@
         "PNG assets do not scale across resolutions."
       ],
       "review_note": "Recovered the explicit need-to requirement and its raster-format condition."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003": {
+      "title": "Preserve controls that express an actual direction",
+      "statement": {
+        "en": "Preserve the direction of controls that express an actual direction or onscreen area.",
+        "ja": "actual directionまたはonscreen areaを表すcontrolの方向を保つ。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "A control meaning “to the right” must point right in every language context."
+      ],
+      "review_note": "Raised the rule to MUST from the supporting must-always directional invariant."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006": {
+      "title": "Always display logos in their original form",
+      "statement": {
+        "en": "Display every logo in its original form, even when it includes text.",
+        "ja": "textを含む場合でもlogoを常にoriginal formで表示する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "A flipped logo can confuse people and create legal repercussions."
+      ],
+      "review_note": "Narrowed the mixed lead to the explicit Always logo requirement and split universal marks separately."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012": {
+      "title": "Reverse progress and counting numeral sequences",
+      "statement": {
+        "en": "Reverse numeral sequences that show progress, counting direction, or a specific order in RTL contexts.",
+        "ja": "RTL contextではprogress、counting direction、specific orderを示すnumeral sequenceを反転する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Match the sequence to its flipped control or RTL ordering direction."
+      ],
+      "review_note": "Split the mixed lead and retained MUST from the supporting Be sure directive."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0013": {
+      "title": "Never mirror numeral glyphs",
+      "statement": {
+        "en": "Never mirror numeral glyphs themselves in RTL contexts.",
+        "ja": "RTL contextでもnumeral glyph自体を決してmirrorしない。"
+      },
+      "normative_level": "MUST_NOT",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "prohibit",
+      "severity": "error",
+      "review_note": "Split and retained the source's explicit Never prohibition."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0015": {
+      "title": "Reverse progress-control endpoint glyph positions",
+      "statement": {
+        "en": "When flipping a progress control, reverse accompanying glyphs or images that represent its endpoint values.",
+        "ja": "progress controlを反転するときはendpoint valueを表すglyphやimageの位置も反転する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "review_note": "Recovered the explicit Be sure requirement as a separate MUST."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0016": {
+      "title": "Flip fixed-order navigation controls in RTL contexts",
+      "statement": {
+        "en": "Ensure fixed-order navigation controls flip to match RTL reading order.",
+        "ja": "fixed-order navigation controlをRTL reading orderに合わせて反転する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Point Back rightward and flip Next or Previous controls for ordered lists."
+      ],
+      "review_note": "Recovered MUST from the supporting must and need-to requirements."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023": {
+      "title": "Flip forward and backward motion icons in RTL contexts",
+      "statement": {
+        "en": "Ensure icons that show forward or backward motion flip in RTL contexts.",
+        "ja": "forwardまたはbackward motionを示すiconをRTL contextで反転する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Preserve motion meaning, including the direction of speaker sound waves."
+      ],
+      "review_note": "Recovered MUST from the supporting needs-to-flip requirement."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026": {
+      "title": "Preserve localization-independent icon-component language",
+      "statement": {
+        "en": "Ensure localization-independent icon components preserve their visual design language.",
+        "ja": "localization-independentなicon componentのvisual design languageを保つ。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Preserve components such as a negation backslash when the design language requires consistency."
+      ],
+      "review_note": "Recovered the conditional needs-to-adhere requirement as MUST."
+    },
+    "HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027": {
+      "title": "Flip UI-representing icon badges with the interface",
+      "statement": {
+        "en": "Ensure an icon badge that represents actual UI flips when the represented interface flips.",
+        "ja": "actual UIを表すicon badgeをrepresented interfaceとともに反転する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "review_note": "Recovered the conditional needs-to-flip UI representation requirement."
     },
     "HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0029": {
       "title": "Display comfortable motion in a Full Space",

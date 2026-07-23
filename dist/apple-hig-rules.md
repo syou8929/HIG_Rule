@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T07:56:53.736Z. 2937 active rules; 4 deprecated rules.
+Generated 2026-07-23T08:34:31.128Z. 2959 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -493,13 +493,35 @@ Generated 2026-07-23T07:56:53.736Z. 2937 active rules; 4 deprecated rules.
 - **HIG-FOUNDATIONS-PRIVACY-0016 · MAY · medium** — When customizing the location button, choose the system-provided filled or outlined location glyph. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 ### right-to-left
 
-- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001 · SHOULD · low** — Choose or apply a consistent alignment for all text items in a list in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002 · AVOID · low** — Exclude reverse the order of numerals in a specific number from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003 · SHOULD · low** — Apply the documented Right to left guidance to preserve the direction of a control that refers to an actual direction or points to an onscreen area. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004 · AVOID · low** — Exclude flipping images like photographs, illustrations, and general artwork from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005 · MAY · low** — Evaluate whether creating a localized version of an interface icon that displays text is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006 · AVOID · low** — Exclude flip logos or universal signs and marks from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
-- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007 · AVOID · low** — Exclude flipping interface icons that depict real-world objects from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0001 · SHOULD · high** — Use consistent alignment for every text item in an RTL list. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0002 · AVOID · high** — Avoid reversing digit order within a specific number. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003 · MUST · high** — Preserve the direction of controls that express an actual direction or onscreen area. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0004 · AVOID · high** — Avoid flipping photographs, illustrations, and general artwork for RTL contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0005 · MAY · high** — Consider a localized version of an interface icon that displays actual text. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006 · MUST · high** — Display every logo in its original form, even when it includes text. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0007 · AVOID · high** — Generally avoid flipping interface icons that depict familiar real-world objects. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0008 · SHOULD · high** — Match text alignment to interface direction when the system does not do so automatically. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0009 · SHOULD · high** — Align paragraphs by their language rather than the surrounding interface direction. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0010 · SHOULD · high** — Identify the appropriate number representation for each supported locale in number-centric content. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0011 · MAY · high** — For content that is not number-centric, consider relying on system-provided number representations. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012 · MUST · high** — Reverse numeral sequences that show progress, counting direction, or a specific order in RTL contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0013 · MUST_NOT · high** — Never mirror numeral glyphs themselves in RTL contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0014 · SHOULD · high** — Match progress-control direction to the reading direction in RTL contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0015 · MUST · high** — When flipping a progress control, reverse accompanying glyphs or images that represent its endpoint values. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0016 · MUST · high** — Ensure fixed-order navigation controls flip to match RTL reading order. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0017 · SHOULD · high** — Match the visual size of adjacent Latin and RTL scripts when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0018 · MAY · high** — When image content is strongly connected to reading direction, consider creating a new version instead of flipping it. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0019 · SHOULD · high** — Preserve meaningful image order by reversing positions in RTL contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0020 · MAY · high** — Consider specifying directionality for custom symbols used in RTL contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0021 · SHOULD · high** — Adapt interface icons that represent text or reading direction to the RTL context. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0022 · MAY · high** — For custom icon text unrelated to reading or writing, consider a text-free alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0023 · MUST · high** — Ensure icons that show forward or backward motion flip in RTL contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0024 · AVOID · high** — Avoid flipping universal signs and marks in RTL contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0025 · MAY · high** — Consider individual components and overall visual balance before flipping a complex custom interface icon. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0026 · MUST · high** — Ensure localization-independent icon components preserve their visual design language. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0027 · MUST · high** — Ensure an icon badge that represents actual UI flips when the represented interface flips. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0028 · MAY · high** — Consider whether flipping a meaning-modifying badge preserves both meaning and icon balance. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
+- **HIG-FOUNDATIONS-RIGHT-TO-LEFT-0029 · MAY · high** — Consider preserving a handed tool's orientation while flipping its icon base when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 ### sf-symbols
 
 - **HIG-FOUNDATIONS-SF-SYMBOLS-0001 · SHOULD · low** — Apply the documented SF Symbols guidance to confirm that a symbol’s rendering mode works well in every context. ([source](https://developer.apple.com/design/human-interface-guidelines/sf-symbols))
