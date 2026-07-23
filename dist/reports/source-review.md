@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3165
-- Reviewed batches: 178
+- Reviewed rules: 3185
+- Reviewed batches: 179
 - Official source only: yes
-- Reviewed at: 2026-07-23T19:20:00Z
+- Reviewed at: 2026-07-23T19:40:00Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -119,6 +119,26 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-ALERTS-0048 · high — Reviewed the rendered source context for “Avoid caution symbols for tasks that only overwrite or remove data” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0049 · high — Reviewed the rendered source context for “Use a 154-point maximum height for visionOS alert accessory views” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0050 · high — Reviewed the rendered source context for “Use a 16-point corner radius for visionOS alert accessory views” and recorded its alert-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0001 · high — Recorded both the preferred in-context task and multistep app-opening path. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0002 · high — Recorded the optional-information condition, likely default, and alternative path. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0003 · high — Recorded the spoken-memory test and subsequent-step fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0004 · high — Recorded the source's discoverability technique without requiring a particular tip frequency. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0005 · high — Kept general response detail at SHOULD and separated the critical-information requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0006 · high — Recorded memorability and natural variants while separating the explicit app-name requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0007 · high — Corrected SHOULD to MAY from the explicit consider wording and preserved the uncovered-feature branch. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0008 · high — Activated the flexibility lead and separated the parameter-count contract. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0009 · high — Recovered the snippet response-mode recommendation from descriptive prose. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0010 · high — Recovered the Live Activity response-mode recommendation from descriptive prose. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0011 · high — Activated the separate individual-shortcut editorial convention. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0012 · high — Activated the iOS and iPadOS ordering lead and preserved initial versus learned ordering. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0013 · high — Recovered the one-or-more-actions App Shortcut structure contract as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0014 · high — Recovered the explicit system-supported maximum as a platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0015 · high — Recovered the single-optional-parameter platform constraint as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0016 · high — Raised the direct critical-information requirement to an audio-accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0017 · high — Recovered MUST from the explicit You have to requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0018 · high — Recovered MUST from the unqualified Always editorial directive. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0019 · high — Recovered MUST from the explicit Make sure naming directive. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0020 · high — Recovered the per-shortcut iOS and iPadOS representation contract as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
 - HIG-COMPONENTS-BUTTONS-0001 · high — Replaced the generic generated statement and separated concrete spacing and hit-region requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0002 · high — Retained the unqualified Always-based MUST and recorded its responsiveness purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0003 · high — Restored the same-size set relationship and prominent-versus-less-prominent styling technique. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))

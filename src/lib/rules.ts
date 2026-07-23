@@ -1,9 +1,9 @@
 import type { GuidanceCandidate, NormativeLevel, Portability, Rule, SourcePage } from "./types.js";
 import { slugify } from "./util.js";
 
-const ACTIONABLE = /^(accurately|adhere|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|be sure to|bear in mind|break up|carefully consider|center|change|choose|clearly|cluster|communicate|confirm|consider|convey|create|defer|define|delay|describe|design|determine|discard|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|hide|identify|in general, avoid|include|indicate|integrate|keep|let|make|maintain|match|minimize|must|never|offer|omit|optimize|personalize|pick|place|position|prefer|present|preserve|prioritize|prompt|provide|recognize|reduce|refer to|rely|remove|replacing|represent|required|require|reserve|respect|respond|retain|show|showcase|simplify|specify|strive|support|take advantage|test|tightening|track|tracking|translate|treat|try to|use|verify|wait|warn|welcome|write|you must|you need to)\b/i;
+const ACTIONABLE = /^(accurately|adhere|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|be sure to|bear in mind|break up|carefully consider|center|change|choose|clearly|cluster|communicate|confirm|consider|convey|create|defer|define|delay|describe|design|determine|discard|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|hide|identify|in general, avoid|include|indicate|integrate|keep|let|make|maintain|match|minimize|must|never|offer|omit|optimize|personalize|pick|place|position|prefer|present|preserve|prioritize|prompt|provide|recognize|reduce|refer to|rely|remove|replacing|represent|required|require|reserve|respect|respond|retain|show|showcase|simplify|specify|strive|support|take advantage|test|tightening|track|tracking|translate|treat|try to|use|verify|wait|warn|welcome|write|you have to|you must|you need to)\b/i;
 const CONTEXTUAL_ACTIONABLE = /^(as\b.+,\s*defer\b|because\b.+\bensure\b|for\b.+\bconsider\b|if\b.+,\s*(?:add|avoid|consider|fade out|supply|use)\b|in\b.+,\s*help\b|in general,\s*(?:do not|don['’]t|use)\b|outside of\b.+\buse\b|to\b.+,\s*prefer\b|within\b.+\bconsider\b)/i;
-const SOURCE_REVIEW_ACTIONABLE = /^(Add related passes as a group|Tell the system when your passes expire|Supply a high-resolution logo image|Supply distinct, high-resolution product images|Supply a prioritized list of your apps|In general, keep text brief|semantic tags are required|If necessary, provide a Cancel button)\b/i;
+const SOURCE_REVIEW_ACTIONABLE = /^(Add related passes as a group|Tell the system when your passes expire|Supply a high-resolution logo image|Supply distinct, high-resolution product images|Supply a prioritized list of your apps|In general, keep text brief|semantic tags are required|If necessary, provide a Cancel button|To surface common types of app functionality|Add flexibility by letting people choose|Snippets are great for custom views|Live Activities offer continuous access|When referring to individual shortcuts|Order shortcuts based on importance|Each app can include up to|Each App Shortcut includes|An App Shortcut can include a single optional value)\b/i;
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
@@ -16,7 +16,7 @@ export function normative(text: string): Pick<Rule, "normative_level" | "confide
   if (/^(never|must not|you must not|always avoid)\b/.test(value)) return { normative_level: "MUST_NOT", confidence: "medium", review_required: true, polarity: "prohibit", severity: "error" };
   if (/^(avoid|avoiding|do not|don't|don’t|in general, avoid|in general,\s*(?:do not|don't|don’t)|as much as possible,\s*avoid|try to avoid)\b/.test(value) || /^if\b.+,\s*avoid\b/.test(value)) return { normative_level: "AVOID", confidence: "low", review_required: true, polarity: "discourage", severity: "warning" };
   if (/^(carefully consider|consider|may)\b/.test(value) || /^(?:for|if|within)\b.+\bconsider\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
-  if (/^(always|be sure to|ensure|make sure|must|required|you must|you need to)\b/.test(value)) return { normative_level: "MUST", confidence: "medium", review_required: true, polarity: "require", severity: "error" };
+  if (/^(always|be sure to|ensure|make sure|must|required|you have to|you must|you need to)\b/.test(value)) return { normative_level: "MUST", confidence: "medium", review_required: true, polarity: "require", severity: "error" };
   return { normative_level: "SHOULD", confidence: "low", review_required: true, polarity: "recommend", severity: "warning" };
 }
 
@@ -133,7 +133,7 @@ export function paraphrase(candidate: string, pageTitle: string): { en: string; 
     { match: /^rely on\b/i, en: (v) => `Rely on ${lowerFirst(v)}.`, ja: (v) => `${v}を利用する。` },
     { match: /^specify\b/i, en: (v) => `Specify ${lowerFirst(v)}.`, ja: (v) => `${v}を指定する。` },
     { match: /^require\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
-    { match: /^(must|you must)\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
+    { match: /^(must|you have to|you must)\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
     { match: /^reserve\b/i, en: (v) => `Reserve ${lowerFirst(v)} for the documented purpose.`, ja: (v) => `${v}を記載された目的に限定する。` },
     { match: /^retain\b/i, en: (v) => `Retain ${lowerFirst(v)}.`, ja: (v) => `${v}を維持する。` },
     { match: /^take advantage\b/i, en: (v) => `Use ${lowerFirst(v)}.`, ja: (v) => `${v}を活用する。` },

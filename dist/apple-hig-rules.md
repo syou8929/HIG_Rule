@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T17:55:50.431Z. 3397 active rules; 7 deprecated rules.
+Generated 2026-07-23T18:02:15.399Z. 3411 active rules; 7 deprecated rules.
 
 ## getting-started
 
@@ -1277,12 +1277,26 @@ Generated 2026-07-23T17:55:50.431Z. 3397 active rules; 7 deprecated rules.
 - **HIG-COMPONENTS-ALERTS-0050 · SHOULD · high** — Choose or apply a 16-point corner radius for visionOS alert accessory views in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 ### app-shortcuts
 
-- **HIG-COMPONENTS-APP-SHORTCUTS-0001 · SHOULD · low** — Make app Shortcuts for your app’s most common and important tasks available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
-- **HIG-COMPONENTS-APP-SHORTCUTS-0002 · SHOULD · low** — Apply the documented App Shortcuts guidance to ask for clarification in response to a request that’s missing optional information. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
-- **HIG-COMPONENTS-APP-SHORTCUTS-0003 · SHOULD · low** — Maintain voice interactions simple. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
-- **HIG-COMPONENTS-APP-SHORTCUTS-0004 · SHOULD · low** — Apply the documented App Shortcuts guidance to make App Shortcuts discoverable in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
-- **HIG-COMPONENTS-APP-SHORTCUTS-0005 · SHOULD · low** — Make enough detail for interaction on audio-only devices available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
-- **HIG-COMPONENTS-APP-SHORTCUTS-0006 · SHOULD · low** — Make brief, memorable activation phrases and natural variants available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0001 · SHOULD · high** — Make app Shortcuts for your app’s most common and important tasks available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0002 · SHOULD · high** — Apply the documented App Shortcuts guidance to ask for clarification in response to a request that’s missing optional information. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0003 · SHOULD · high** — Maintain voice interactions simple. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0004 · SHOULD · high** — Apply the documented App Shortcuts guidance to make App Shortcuts discoverable in your app. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0005 · SHOULD · high** — Make enough detail for interaction on audio-only devices available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0006 · SHOULD · high** — Make brief, memorable activation phrases and natural variants available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0007 · MAY · high** — Consider app schemas instead of individual App Shortcuts for common functionality on supported devices. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0008 · SHOULD · high** — Apply the documented App Shortcuts guidance to add flexibility by letting people choose from a set of options. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0009 · SHOULD · high** — Use a snippet when an App Shortcut response needs a custom view for static information or dialog options. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0010 · SHOULD · high** — Use a Live Activity when App Shortcut information remains relevant and changes over time. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0011 · SHOULD · high** — Use lowercase when referring to an individual shortcut rather than App Shortcuts or the Shortcuts app. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0012 · SHOULD · high** — Apply the documented App Shortcuts guidance to order shortcuts based on importance. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0013 · MUST · high** — Ensure every App Shortcut includes at least one action. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0014 · MUST · high** — Provide no more than 10 App Shortcuts in an app. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0015 · MUST · high** — Include no more than one optional value or parameter in an App Shortcut. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0016 · MUST · high** — Include all critical App Shortcut response information in the full dialogue text. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0017 · MUST · high** — Include the app name in every App Shortcut activation phrase. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0018 · MUST · high** — Always use title case when referring to App Shortcuts or the Shortcuts app. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0019 · MUST · high** — Ensure the word Shortcuts remains plural when naming App Shortcuts or the Shortcuts app. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- **HIG-COMPONENTS-APP-SHORTCUTS-0020 · MUST · high** — Represent every iOS and iPadOS App Shortcut with an SF Symbol or a directly linked item's preview image. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
 ### boxes
 
 - **HIG-COMPONENTS-BOXES-0001 · SHOULD · low** — Favor keeping a box relatively small in comparison with its containing view when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/boxes))

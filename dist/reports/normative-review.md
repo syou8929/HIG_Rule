@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 557
-- Retained MUST: 476
+- Reviewed rules: 565
+- Retained MUST: 484
 - Retained MUST_NOT: 81
-- Normative level changes: 180
+- Normative level changes: 186
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T19:05:00Z
+- Reviewed at: 2026-07-23T19:40:00Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -28,6 +28,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-ALERTS-0038 — Recovered MUST from the explicit Always use directive for canceling-button titles. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0042 — Recovered MUST from the explicit Always place directive and preserved both row and stack mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0047 — Recovered MUST from the explicit Be sure directive while preserving the large-text qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0013 — Recovered the one-or-more-actions App Shortcut structure contract as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0014 — Recovered the system-supported maximum of 10 App Shortcuts as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0015 — Recovered the single-optional-parameter constraint as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0016 — Raised the critical full-dialogue information requirement to an audio-accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0017 — Recovered MUST from the explicit You have to app-name requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0020 — Recovered the per-shortcut iOS and iPadOS symbol-or-preview representation contract as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
 - HIG-COMPONENTS-BUTTONS-0032 — Recovered MUST from the source's explicit essential and critical input-accessibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0033 — Recovered MUST from the explicit needs-at-least requirement, excluded the separate visionOS minimum, and preserved higher-priority platform accessibility values. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0034 — Recovered MUST from the explicit platform-specific minimum in the needs-at-least requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
@@ -437,6 +443,14 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-COMPONENTS-ALERTS-0038 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Always use directive for canceling-button titles. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0042 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Always place directive and preserved both row and stack mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
 - HIG-COMPONENTS-ALERTS-0047 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive while preserving the large-text qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/alerts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0013 · MUST · retained_with_atomicity_or_scope_correction — Recovered the one-or-more-actions App Shortcut structure contract as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered the system-supported maximum of 10 App Shortcuts as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0015 · MUST · retained_with_atomicity_or_scope_correction — Recovered the single-optional-parameter constraint as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0016 · MUST · retained_with_atomicity_or_scope_correction — Raised the critical full-dialogue information requirement to an audio-accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0017 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You have to app-name requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0018 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0019 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
+- HIG-COMPONENTS-APP-SHORTCUTS-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered the per-shortcut iOS and iPadOS symbol-or-preview representation contract as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/app-shortcuts))
 - HIG-COMPONENTS-BUTTONS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0005 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
 - HIG-COMPONENTS-BUTTONS-0032 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the source's explicit essential and critical input-accessibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))

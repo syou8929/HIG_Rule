@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3397
+- Active atomic rules: 3411
 - Pages without rules: 16
-- Low-confidence rules: 206
-- Rules requiring human review: 206
+- Low-confidence rules: 200
+- Rules requiring human review: 200
 - Reference notes: 915
 
 ## Rules by category
 
-- components: 1028
+- components: 1042
 - foundations: 463
 - getting-started: 100
 - inputs: 245
@@ -23,24 +23,24 @@
 ## Normative levels
 
 - AVOID: 463
-- MAY: 392
-- MUST: 476
+- MAY: 393
+- MUST: 484
 - MUST_NOT: 81
-- SHOULD: 1985
+- SHOULD: 1990
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2424
-- ipados: 2388
+- ios: 2438
+- ipados: 2402
 - macos: 1960
 - tvos: 1546
-- visionos: 1938
-- watchos: 1665
+- visionos: 1950
+- watchos: 1677
 
 ## Rules by testability
 
-- hybrid: 98
+- hybrid: 112
 - manual: 3299
 
 ## Blocked pages
@@ -68,12 +68,6 @@ None.
 
 ## Low-confidence rules
 
-- HIG-COMPONENTS-APP-SHORTCUTS-0001
-- HIG-COMPONENTS-APP-SHORTCUTS-0002
-- HIG-COMPONENTS-APP-SHORTCUTS-0003
-- HIG-COMPONENTS-APP-SHORTCUTS-0004
-- HIG-COMPONENTS-APP-SHORTCUTS-0005
-- HIG-COMPONENTS-APP-SHORTCUTS-0006
 - HIG-COMPONENTS-BOXES-0001
 - HIG-COMPONENTS-BOXES-0002
 - HIG-COMPONENTS-BOXES-0003
@@ -277,12 +271,6 @@ None.
 
 ## Rules requiring human review
 
-- HIG-COMPONENTS-APP-SHORTCUTS-0001
-- HIG-COMPONENTS-APP-SHORTCUTS-0002
-- HIG-COMPONENTS-APP-SHORTCUTS-0003
-- HIG-COMPONENTS-APP-SHORTCUTS-0004
-- HIG-COMPONENTS-APP-SHORTCUTS-0005
-- HIG-COMPONENTS-APP-SHORTCUTS-0006
 - HIG-COMPONENTS-BOXES-0001
 - HIG-COMPONENTS-BOXES-0002
 - HIG-COMPONENTS-BOXES-0003

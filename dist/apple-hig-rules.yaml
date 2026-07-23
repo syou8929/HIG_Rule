@@ -6772,8 +6772,8 @@
     en: Make app Shortcuts for your app’s most common and important tasks available when applicable.
     ja: 必要な場合にApp Shortcuts for your app’s most common and important tasksを利用可能にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -6793,7 +6793,8 @@
     modalities:
       - keyboard
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Prefer common, important, straightforward tasks that can finish without leaving the current context.
+    - Opening the app can help complete a multistep task.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
@@ -6836,8 +6837,8 @@
     en: Apply the documented App Shortcuts guidance to ask for clarification in response to a request that’s missing optional information.
     ja: 「App Shortcuts」において「Ask for clarification in response to a request that’s missing optional information」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -6857,7 +6858,8 @@
     modalities:
       - keyboard
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The request omits optional information.
+    - When one option is most likely, consider making it the default and offer a short alternative list.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
@@ -6899,8 +6901,8 @@
     en: Maintain voice interactions simple.
     ja: voice interactions simpleを維持する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -6921,7 +6923,8 @@
       - keyboard
       - voice
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - A phrase that is hard to say aloud is likely hard to remember or say correctly.
+    - Ask for absolutely required additional information in a subsequent step.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
@@ -6964,8 +6967,8 @@
     en: Apply the documented App Shortcuts guidance to make App Shortcuts discoverable in your app.
     ja: 「App Shortcuts」において「Make App Shortcuts discoverable in your app」の指針を適用する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -6985,7 +6988,7 @@
     modalities:
       - keyboard
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Consider occasional in-app tips when people perform common actions.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
@@ -7028,8 +7031,8 @@
     en: Make enough detail for interaction on audio-only devices available when applicable.
     ja: 必要な場合にenough detail for interaction on audio-only devicesを利用可能にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -7049,7 +7052,8 @@
     modalities:
       - keyboard
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Account for AirPods, HomePod, and other contexts where onscreen content isn't visible.
+    - The separate critical-information rule records the accessibility MUST.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
@@ -7093,8 +7097,8 @@
     en: Make brief, memorable activation phrases and natural variants available when applicable.
     ja: 必要な場合にbrief, memorable activation phrases and natural variantsを利用可能にする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -7114,7 +7118,8 @@
     modalities:
       - keyboard
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Provide natural phrase variants that are easy to remember.
+    - The separate activation-phrase rule requires the app name.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
@@ -7146,6 +7151,897 @@
   priority_rank: 6
   status: active
   apple_native_rule: Make brief, memorable activation phrases and natural variants available when applicable.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0007
+  title: Consider app schemas for common functionality
+  category: components
+  topic: app-shortcuts
+  subtopic: best-practices
+  statement:
+    en: Consider app schemas instead of individual App Shortcuts for common functionality on supported devices.
+    ja: supported device上のcommon functionalityにはindividual App Shortcutの代わりにapp schemaを検討する。
+  normative_level: MAY
+  confidence: high
+  review_required: false
+  polarity: permit
+  severity: info
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - The app operates in a common domain area supported by app schemas.
+    - Use App Shortcuts for unique features or custom content that app schemas don't cover.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Consider app schemas instead of individual App Shortcuts for common functionality on supported devices.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: 5ac535b3a194fb900d787e36ddfd90fadc61be21216b56cfec5cfee2911c0ae1
+    evidence_paraphrase: Consider app schemas instead of individual App Shortcuts for common functionality on supported devices.
+  tags:
+    - components
+    - app-shortcuts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Consider app schemas instead of individual App Shortcuts for common functionality on supported devices.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0008
+  title: Add flexibility by letting people choose from a set of options
+  category: components
+  topic: app-shortcuts
+  subtopic: best-practices
+  statement:
+    en: Apply the documented App Shortcuts guidance to add flexibility by letting people choose from a set of options.
+    ja: 「App Shortcuts」において「Add flexibility by letting people choose from a set of options」の指針を適用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Offer predictable, familiar values because people may not see the option list.
+    - The separate parameter rule records the single-optional-value limit.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Apply the documented App Shortcuts guidance to add flexibility by letting people choose from a set of options.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: a3650956330a6db6c1a076f631d680b2eeefd69a36ffffea05f3a43ce87ea096
+    evidence_paraphrase: Apply the documented App Shortcuts guidance to add flexibility by letting people choose from a set of options.
+  tags:
+    - components
+    - app-shortcuts
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Apply the documented App Shortcuts guidance to add flexibility by letting people choose from a set of options.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0009
+  title: Use snippets for static information or dialog options
+  category: components
+  topic: app-shortcuts
+  subtopic: responding-to-app-shortcuts
+  statement:
+    en: Use a snippet when an App Shortcut response needs a custom view for static information or dialog options.
+    ja: App Shortcut responseでstatic informationまたはdialog option用custom viewが必要な場合はsnippetを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Suitable examples include local weather and order confirmation.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Use a snippet when an App Shortcut response needs a custom view for static information or dialog options.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Best practices
+      - Responding to App Shortcuts
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: 2afdc08a4eade13bed0713c67c0e99e7f90ed9079cabd74451fd54677613aea0
+    evidence_paraphrase: Use a snippet when an App Shortcut response needs a custom view for static information or dialog options.
+  tags:
+    - components
+    - app-shortcuts
+    - best-practices
+    - responding-to-app-shortcuts
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use a snippet when an App Shortcut response needs a custom view for static information or dialog options.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0010
+  title: Use a Live Activity for changing time-spanning information
+  category: components
+  topic: app-shortcuts
+  subtopic: responding-to-app-shortcuts
+  statement:
+    en: Use a Live Activity when App Shortcut information remains relevant and changes over time.
+    ja: App Shortcut informationが一定期間relevantで変化する場合はLive Activityを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Suitable examples include timers and countdowns that last until an event completes.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Use a Live Activity when App Shortcut information remains relevant and changes over time.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Best practices
+      - Responding to App Shortcuts
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: e2abe96b44e75ef755d78654f8f282548341ae142a9f7f2bc954bb2d49669919
+    evidence_paraphrase: Use a Live Activity when App Shortcut information remains relevant and changes over time.
+  tags:
+    - components
+    - app-shortcuts
+    - best-practices
+    - responding-to-app-shortcuts
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use a Live Activity when App Shortcut information remains relevant and changes over time.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0011
+  title: Use lowercase for individual shortcuts
+  category: components
+  topic: app-shortcuts
+  subtopic: editorial-guidelines
+  statement:
+    en: Use lowercase when referring to an individual shortcut rather than App Shortcuts or the Shortcuts app.
+    ja: App ShortcutsやShortcuts appではなくindividual shortcutを指す場合はlowercaseを使う。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Use lowercase when referring to an individual shortcut rather than App Shortcuts or the Shortcuts app.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Editorial guidelines
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: 9200331ca2cf566a80042ad2782596a954a30cdbc0cecf2765cefb154cbcba60
+    evidence_paraphrase: Use lowercase when referring to an individual shortcut rather than App Shortcuts or the Shortcuts app.
+  tags:
+    - components
+    - app-shortcuts
+    - editorial-guidelines
+    - keyboard
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use lowercase when referring to an individual shortcut rather than App Shortcuts or the Shortcuts app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0012
+  title: Order shortcuts based on importance
+  category: components
+  topic: app-shortcuts
+  subtopic: ios-ipados
+  statement:
+    en: Apply the documented App Shortcuts guidance to order shortcuts based on importance.
+    ja: 「App Shortcuts」において「Order shortcuts based on importance」の指針を適用する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Place the most generally useful shortcuts first for initial Spotlight and Shortcuts ordering.
+    - After use begins, the system prioritizes frequently used shortcuts.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Apply the documented App Shortcuts guidance to order shortcuts based on importance.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: b366f46c7022136325f9d213912b0fa6d395fd3a6f8947b4fa034031dc007a14
+    evidence_paraphrase: Apply the documented App Shortcuts guidance to order shortcuts based on importance.
+  tags:
+    - components
+    - app-shortcuts
+    - platform-considerations
+    - ios-ipados
+    - keyboard
+  priority_rank: 4
+  status: active
+  apple_native_rule: Apply the documented App Shortcuts guidance to order shortcuts based on importance.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0013
+  title: Require at least one action in every App Shortcut
+  category: components
+  topic: app-shortcuts
+  subtopic: app-shortcuts
+  statement:
+    en: Ensure every App Shortcut includes at least one action.
+    ja: 各App Shortcutに少なくとも1つのactionを含める。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Actions represent the steps people perform to accomplish a task.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Ensure every App Shortcut includes at least one action.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: c97410ea4151d2ef991b078e87cb8892b7587eff04dfc0cb7e93f4fcfdb9241c
+    evidence_paraphrase: Ensure every App Shortcut includes at least one action.
+  tags:
+    - components
+    - app-shortcuts
+    - keyboard
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure every App Shortcut includes at least one action.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0014
+  title: Limit an app to 10 App Shortcuts
+  category: components
+  topic: app-shortcuts
+  subtopic: app-shortcuts
+  statement:
+    en: Provide no more than 10 App Shortcuts in an app.
+    ja: 1つのappで提供するApp Shortcutを10件以下にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Provide no more than 10 App Shortcuts in an app.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: c97410ea4151d2ef991b078e87cb8892b7587eff04dfc0cb7e93f4fcfdb9241c
+    evidence_paraphrase: Provide no more than 10 App Shortcuts in an app.
+  tags:
+    - components
+    - app-shortcuts
+    - keyboard
+  priority_rank: 6
+  status: active
+  apple_native_rule: Provide no more than 10 App Shortcuts in an app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0015
+  title: Limit an App Shortcut to one optional parameter
+  category: components
+  topic: app-shortcuts
+  subtopic: best-practices
+  statement:
+    en: Include no more than one optional value or parameter in an App Shortcut.
+    ja: 1つのApp Shortcutに含めるoptional valueまたはparameterを1つ以下にする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Include the parameter only when it makes sense for the task.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Include no more than one optional value or parameter in an App Shortcut.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Best practices
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: 6db5529294ba1037f55c6482835941da4e224cdd99c8e74763820427800270c2
+    evidence_paraphrase: Include no more than one optional value or parameter in an App Shortcut.
+  tags:
+    - components
+    - app-shortcuts
+    - best-practices
+    - keyboard
+  priority_rank: 6
+  status: active
+  apple_native_rule: Include no more than one optional value or parameter in an App Shortcut.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0016
+  title: Include all critical information in full App Shortcut dialogue
+  category: components
+  topic: app-shortcuts
+  subtopic: responding-to-app-shortcuts
+  statement:
+    en: Include all critical App Shortcut response information in the full dialogue text.
+    ja: App Shortcut responseのcritical informationをすべてfull dialogue textに含める。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - People may receive the response on an audio-only device or be unable to see the screen.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Include all critical App Shortcut response information in the full dialogue text.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Best practices
+      - Responding to App Shortcuts
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: 0f47482d75ecae5119f1e4386b118ca73e060e134f93806ec41e733e446f55ae
+    evidence_paraphrase: Include all critical App Shortcut response information in the full dialogue text.
+  tags:
+    - components
+    - app-shortcuts
+    - best-practices
+    - responding-to-app-shortcuts
+    - keyboard
+  priority_rank: 6
+  status: active
+  apple_native_rule: Include all critical App Shortcut response information in the full dialogue text.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0017
+  title: Include the app name in every activation phrase
+  category: components
+  topic: app-shortcuts
+  subtopic: editorial-guidelines
+  statement:
+    en: Include the app name in every App Shortcut activation phrase.
+    ja: 各App Shortcut activation phraseにapp nameを含める。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Include the app name in every App Shortcut activation phrase.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Editorial guidelines
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: fbd24d9de9a7f6413d157ba645f56a33d77331ffc4822f2539a61731f4a278ac
+    evidence_paraphrase: Include the app name in every App Shortcut activation phrase.
+  tags:
+    - components
+    - app-shortcuts
+    - editorial-guidelines
+  priority_rank: 6
+  status: active
+  apple_native_rule: Include the app name in every App Shortcut activation phrase.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0018
+  title: Always title-case App Shortcuts and the Shortcuts app
+  category: components
+  topic: app-shortcuts
+  subtopic: editorial-guidelines
+  statement:
+    en: Always use title case when referring to App Shortcuts or the Shortcuts app.
+    ja: App ShortcutsまたはShortcuts appを指す場合は常にtitle caseを使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Apply to the named feature and app, not individual shortcuts.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Always use title case when referring to App Shortcuts or the Shortcuts app.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Editorial guidelines
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: 81d8a69aff47960e5b48b9478e4cd66339e92a6e9a27653830edc5eaf0497187
+    evidence_paraphrase: Always use title case when referring to App Shortcuts or the Shortcuts app.
+  tags:
+    - components
+    - app-shortcuts
+    - editorial-guidelines
+  priority_rank: 6
+  status: active
+  apple_native_rule: Always use title case when referring to App Shortcuts or the Shortcuts app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0019
+  title: Ensure Shortcuts remains plural
+  category: components
+  topic: app-shortcuts
+  subtopic: editorial-guidelines
+  statement:
+    en: Ensure the word Shortcuts remains plural when naming App Shortcuts or the Shortcuts app.
+    ja: App ShortcutsまたはShortcuts appの名称ではShortcutsをpluralのままにする。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - apple-vision-pro
+      - apple-watch
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Apply to the named feature and app, not individual shortcuts.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Ensure the word Shortcuts remains plural when naming App Shortcuts or the Shortcuts app.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Editorial guidelines
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: 81d8a69aff47960e5b48b9478e4cd66339e92a6e9a27653830edc5eaf0497187
+    evidence_paraphrase: Ensure the word Shortcuts remains plural when naming App Shortcuts or the Shortcuts app.
+  tags:
+    - components
+    - app-shortcuts
+    - editorial-guidelines
+    - keyboard
+  priority_rank: 6
+  status: active
+  apple_native_rule: Ensure the word Shortcuts remains plural when naming App Shortcuts or the Shortcuts app.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-APP-SHORTCUTS-0020
+  title: Represent every iOS and iPadOS App Shortcut
+  category: components
+  topic: app-shortcuts
+  subtopic: ios-ipados
+  statement:
+    en: Represent every iOS and iPadOS App Shortcut with an SF Symbol or a directly linked item's preview image.
+    ja: 各iOS/iPadOS App ShortcutをSF Symbolまたはdirectly linked itemのpreview imageで表現する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components:
+      - app-shortcuts
+    modalities:
+      - keyboard
+  conditions:
+    - Apply within the platform, component, and section context identified by the source trace.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable App Shortcuts experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるApp Shortcutsの一貫性と使いやすさを支えます。
+  checks:
+    automated:
+      - Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated.
+    manual:
+      - Does the design satisfy “Represent every iOS and iPadOS App Shortcut with an SF Symbol or a directly linked item's preview image.” in the documented App Shortcuts context?
+  testability: hybrid
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/app-shortcuts
+    page_title: App Shortcuts
+    section_path:
+      - App Shortcuts
+      - Platform considerations
+      - iOS, iPadOS
+    retrieved_at: 2026-07-21T11:14:37.913Z
+    source_hash: dc3117a2ab2226b4bd1b9215df9c8e198b038b9a99c5b006aac85b943429e199
+    source_sentence_hash: bb2b50c25c0f419bd4b953dec91a1df0351d03d8760a163658b0db3acc67f20a
+    evidence_paraphrase: Represent every iOS and iPadOS App Shortcut with an SF Symbol or a directly linked item's preview image.
+  tags:
+    - components
+    - app-shortcuts
+    - platform-considerations
+    - ios-ipados
+    - keyboard
+  priority_rank: 4
+  status: active
+  apple_native_rule: Represent every iOS and iPadOS App Shortcut with an SF Symbol or a directly linked item's preview image.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-BOXES-0001
   title: Prefer keeping a box relatively small in comparison with its containing view
