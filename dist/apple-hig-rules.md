@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T11:35:11.849Z. 3078 active rules; 4 deprecated rules.
+Generated 2026-07-23T11:41:24.681Z. 3083 active rules; 4 deprecated rules.
 
 ## getting-started
 
@@ -1078,10 +1078,15 @@ Generated 2026-07-23T11:35:11.849Z. 3078 active rules; 4 deprecated rules.
 - **HIG-PATTERNS-PRINTING-0016 · SHOULD · high** — Label advanced print settings “Advanced Options.” ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 ### ratings-and-reviews
 
-- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0001 · SHOULD · low** — Apply the documented Ratings and reviews guidance to ask for a rating only after people have demonstrated engagement with your app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
-- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0002 · AVOID · low** — Exclude interrupting people while they’re performing a task or playing a game from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
-- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0003 · AVOID · low** — Exclude pestering people from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
-- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0004 · SHOULD · low** — Favor the system-provided prompt when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0001 · SHOULD · high** — Ask for a rating only after people demonstrate engagement with the app or game. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0002 · AVOID · high** — Avoid interrupting people with a rating request while they perform a task or play a game. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0003 · AVOID · high** — Avoid pestering people with repeated rating requests. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0004 · SHOULD · high** — Prefer the system-provided rating and review prompt. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0005 · SHOULD · high** — Weigh rating currency against rating count before resetting the summary rating. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0006 · AVOID · high** — Avoid requesting a rating on first launch or during onboarding. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0007 · SHOULD · high** — Use natural breaks or stopping points for rating requests. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0008 · MAY · high** — Consider waiting at least one or two weeks between rating requests. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- **HIG-PATTERNS-RATINGS-AND-REVIEWS-0009 · MAY · high** — Consider requesting another rating only after people demonstrate additional engagement. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 ### searching
 
 - **HIG-PATTERNS-SEARCHING-0001 · SHOULD · low** — Apply the documented Searching guidance to aim to make your app’s content searchable through a single location. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))

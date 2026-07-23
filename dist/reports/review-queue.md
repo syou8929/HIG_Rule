@@ -1,25 +1,26 @@
 # Human source-review queue
 
-- Remaining rules: 554
+- Remaining rules: 550
 - Next priority: 6 (apple-platform-common)
-- Next batch: 4
+- Next batch: 5
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 531
+- 6 (apple-platform-common): 527
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
-- AVOID: 52
+- AVOID: 50
 - MAY: 53
-- SHOULD: 449
+- SHOULD: 447
 
 ## Next batch
 
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0002 · AVOID — Avoid interrupting people while they’re performing a task or playing a game · Ratings and reviews > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0003 · AVOID — Avoid pestering people · Ratings and reviews > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0001 · SHOULD — Ask for a rating only after people have demonstrated engagement with your app or game · Ratings and reviews > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0004 · SHOULD — Prefer the system-provided prompt · Ratings and reviews > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-SETTINGS-0004 · AVOID — Avoid using settings to ask for setup information you can get in other ways · Settings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0001 · SHOULD — Aim to provide default settings that give the best experience to the largest number of people · Settings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0002 · SHOULD — Minimize the number of settings you offer · Settings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0003 · SHOULD — Make settings available in ways people expect · Settings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
+- HIG-PATTERNS-SETTINGS-0005 · SHOULD — Respect people’s systemwide settings and avoid including redundant versions of them in your custom settings… · Settings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/settings))

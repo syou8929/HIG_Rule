@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T10:56:10Z",
+  "reviewed_at": "2026-07-23T11:37:53Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -3539,6 +3539,31 @@
         "HIG-PATTERNS-PLAYING-HAPTICS-0034"
       ],
       "review_note": "Refreshed the complete page trace, preserved six stable best-practice IDs, recovered eight atomic rules for short events, semantic reuse, causal relationships, feedback matching, sound synchronization, haptic-free use, and device-feature interference, retained two explicit Ensure-based MUST outcomes, and kept direct Avoid guidance at AVOID."
+    },
+    {
+      "id": "priority-6-ratings-and-reviews-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T11:37:53Z",
+      "review_method": "Rendered Apple HIG Ratings and reviews overview, best practices, system-prompt behavior, reset tradeoffs, platform considerations, and supporting prose were reviewed; two repeated live renders matched the refreshed main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews",
+          "source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0001",
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0002",
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0003",
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0004",
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0005",
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0006",
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0007",
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0008",
+        "HIG-PATTERNS-RATINGS-AND-REVIEWS-0009"
+      ],
+      "review_note": "Refreshed all paragraph traces while preserving four stable IDs, recovered five atomic rules for launch and onboarding timing, natural breaks, repeat intervals, renewed engagement, and summary-rating reset tradeoffs, narrowed the system prompt to its documented platforms, and kept direct Avoid guidance at AVOID."
     }
   ],
   "rules": {
@@ -11771,6 +11796,75 @@
       "title": "Avoid overusing or overlapping watchOS Click haptics", "statement": {"en": "Avoid overusing watchOS Click haptics or allowing clicks to overlap.", "ja": "watchOS Click hapticの過剰使用やclickの重なりを避ける。"}, "normative_level": "AVOID",
       "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
       "conditions": ["Overuse diminishes utility and overlapping clicks can be confusing."], "review_note": "Separated the direct overuse warning from the positive Click mapping and retained AVOID strength."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0001": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "f5add8c86aabc5982264f6709e5a49f0cdbc2b4cac9047979afcbc3c8f46f47b", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Request ratings only after demonstrated engagement",
+      "statement": {"en": "Ask for a rating only after people demonstrate engagement with the app or game.", "ja": "利用者がappまたはgameへのengagementを示した後にだけratingを依頼する。"},
+      "conditions": ["Use meaningful signals such as launches, explored features, completed levels, or significant tasks."],
+      "review_note": "Preserved the stable ID on the refreshed paragraph trace and made the engagement threshold concrete."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0002": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "270403d0eedf79765d2a97e47fe32ad668a85dd6d513aad1e4469bf84c9d0da5", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Avoid interrupting active tasks with rating requests",
+      "statement": {"en": "Avoid interrupting people with a rating request while they perform a task or play a game.", "ja": "task実行中またはgame play中にrating requestで利用者を中断しない。"},
+      "normative_level": "AVOID",
+      "conditions": ["A rating request would disrupt the current activity."],
+      "review_note": "Preserved the stable ID on the refreshed trace and retained direct Avoid strength."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0003": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "2eac9ab54b2b85364397cfc6b7038db918ac8bd2f03f83acf066b7ac3f5110a1", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Avoid pestering people for ratings",
+      "statement": {"en": "Avoid pestering people with repeated rating requests.", "ja": "rating requestを繰り返して利用者を困らせない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Repeated prompts can irritate people and reduce their opinion of the app."],
+      "review_note": "Preserved the stable ID on the refreshed trace and separated interval and renewed-engagement options."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0004": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "dde0f96ca6347ba56e408ddb184b0ef8805bb3ad87733b35491c5068311da94f", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Prefer the system rating prompt",
+      "statement": {"en": "Prefer the system-provided rating and review prompt.", "ja": "system-providedのrating and review promptを優先する。"},
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": ["touch", "pointer"]},
+      "conditions": ["The system checks prior feedback and limits prompts to three occurrences per app within 365 days."],
+      "review_note": "Preserved the stable ID, narrowed scope to the three documented platforms, and recorded system frequency control."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0005": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "90007e6f04a57edf8502d3ea60b04b281d56682af6f750ec938dba9106dc5bd8", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Weigh summary-rating reset tradeoffs",
+      "statement": {"en": "Weigh rating currency against rating count before resetting the summary rating.", "ja": "summary ratingをresetする前にratingの新しさと件数を比較検討する。"},
+      "conditions": ["A reset better reflects the current version but can reduce the visible rating count."],
+      "review_note": "Recovered the omitted reset decision and retained recommendation strength."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0006": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "f5add8c86aabc5982264f6709e5a49f0cdbc2b4cac9047979afcbc3c8f46f47b", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Avoid rating requests on first launch or during onboarding",
+      "statement": {"en": "Avoid requesting a rating on first launch or during onboarding.", "ja": "first launchまたはonboarding中のrating requestを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["People have not had enough time to understand the app's value or form an opinion."],
+      "review_note": "Separated the explicit timing warning from the positive engagement rule and retained AVOID strength."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0007": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "270403d0eedf79765d2a97e47fe32ad668a85dd6d513aad1e4469bf84c9d0da5", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Use natural breaks for rating requests",
+      "statement": {"en": "Use natural breaks or stopping points for rating requests.", "ja": "rating requestには自然なbreakまたはstopping pointを使う。"},
+      "conditions": ["The request is less likely to burden or disrupt the person at that point."],
+      "review_note": "Recovered the source's positive placement alternative to the interruption warning."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0008": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "2eac9ab54b2b85364397cfc6b7038db918ac8bd2f03f83acf066b7ac3f5110a1", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Consider waiting between rating requests",
+      "statement": {"en": "Consider waiting at least one or two weeks between rating requests.", "ja": "rating requestの間を少なくとも1〜2週間空けることを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Another request remains appropriate after the prior prompt."],
+      "review_note": "Recovered the source's example interval and preserved Consider-level strength."
+    },
+    "HIG-PATTERNS-RATINGS-AND-REVIEWS-0009": {
+      "source": {"source_hash": "f418dc33db7fc1051b33990c21303367721584dc7147dfa7eb2be5a9bee11d9d", "source_sentence_hash": "2eac9ab54b2b85364397cfc6b7038db918ac8bd2f03f83acf066b7ac3f5110a1", "section_path": ["Ratings and reviews", "Best practices"]},
+      "title": "Consider renewed engagement before another request",
+      "statement": {"en": "Consider requesting another rating only after people demonstrate additional engagement.", "ja": "利用者が追加のengagementを示した後にだけratingを再依頼することを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A prior request has already appeared."],
+      "review_note": "Separated the second Consider-governed option without promoting it to SHOULD."
     },
     "HIG-PATTERNS-SETTINGS-0006": {
       "source": {"source_hash": "b09429b9c0a528fedd1e6c10ef9832f738d7990cff2058da3b9dee6b594ff105", "source_sentence_hash": "9cea21a79f2e1b22a845876c3603d3e859d1d7d27b4e1ddcc11e364345d90e73", "section_path": ["Settings", "Platform considerations", "macOS"]},

@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 2481
-- Reviewed batches: 155
+- Reviewed rules: 2490
+- Reviewed batches: 156
 - Official source only: yes
-- Reviewed at: 2026-07-23T10:56:10Z
+- Reviewed at: 2026-07-23T11:37:53Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2055,6 +2055,15 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PRINTING-0014 · high — Preserved Consider and the on-demand disclosure behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0015 · high — Recovered the source's minimum retention recommendation separately from optional document-level persistence. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0016 · high — Recovered the exact label guidance as a separate recommendation rather than combining it with optional disclosure. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0001 · high — Preserved the stable ID on the refreshed paragraph trace and made the engagement threshold concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0002 · high — Preserved the stable ID on the refreshed trace and retained direct Avoid strength. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0003 · high — Preserved the stable ID on the refreshed trace and separated interval and renewed-engagement options. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0004 · high — Preserved the stable ID, narrowed scope to the three documented platforms, and recorded system frequency control. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0005 · high — Recovered the omitted reset decision and retained recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0006 · high — Separated the explicit timing warning from the positive engagement rule and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0007 · high — Recovered the source's positive placement alternative to the interruption warning. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0008 · high — Recovered the source's example interval and preserved Consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-RATINGS-AND-REVIEWS-0009 · high — Separated the second Consider-governed option without promoting it to SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 - HIG-PATTERNS-SETTINGS-0006 · high — Repaired the generic generated statement and narrowed portability to the macOS platform section. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0007 · high — Separated the toolbar-placement warning from the App-menu recommendation and retained AVOID strength. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0008 · high — Recovered the separate menu location for document-scoped options. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))

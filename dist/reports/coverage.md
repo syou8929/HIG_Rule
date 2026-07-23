@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3078
+- Active atomic rules: 3083
 - Pages without rules: 16
-- Low-confidence rules: 554
-- Rules requiring human review: 554
+- Low-confidence rules: 550
+- Rules requiring human review: 550
 - Reference notes: 904
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 463
 - getting-started: 100
 - inputs: 245
-- patterns: 456
+- patterns: 461
 - technologies: 788
 
 ## Normative levels
 
-- AVOID: 431
-- MAY: 361
+- AVOID: 432
+- MAY: 363
 - MUST: 358
 - MUST_NOT: 38
-- SHOULD: 1890
+- SHOULD: 1892
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2110
-- ipados: 2079
-- macos: 1721
-- tvos: 1371
-- visionos: 1770
-- watchos: 1462
+- ios: 2115
+- ipados: 2084
+- macos: 1726
+- tvos: 1375
+- visionos: 1774
+- watchos: 1466
 
 ## Rules by testability
 
 - hybrid: 90
-- manual: 2988
+- manual: 2993
 
 ## Blocked pages
 
@@ -241,10 +241,6 @@ None.
 - HIG-PATTERNS-PRINTING-0001
 - HIG-PATTERNS-PRINTING-0005
 - HIG-PATTERNS-PRINTING-0006
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0001
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0002
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0003
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0004
 - HIG-PATTERNS-SEARCHING-0001
 - HIG-PATTERNS-SEARCHING-0002
 - HIG-PATTERNS-SEARCHING-0003
@@ -798,10 +794,6 @@ None.
 - HIG-PATTERNS-PRINTING-0001
 - HIG-PATTERNS-PRINTING-0005
 - HIG-PATTERNS-PRINTING-0006
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0001
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0002
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0003
-- HIG-PATTERNS-RATINGS-AND-REVIEWS-0004
 - HIG-PATTERNS-SEARCHING-0001
 - HIG-PATTERNS-SEARCHING-0002
 - HIG-PATTERNS-SEARCHING-0003
@@ -1806,10 +1798,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Platform considerations — Rating indicators have no additional macOS considerations and are unsupported on other Apple platforms.
 - https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Change log — Reviewed: the artwork change summary contains no additional current atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Platform considerations — Reviewed: Apple documents no additional platform considerations.
+- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Resources — Reviewed: resource navigation contains no additional atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Resources > Related — Reviewed: the related-topic link contains no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/remotes · Remotes > Gestures — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/remotes · Remotes > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/remotes · Remotes > Resources — Section recorded for human review; no short atomic guidance lead was detected.
