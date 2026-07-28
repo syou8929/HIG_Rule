@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T18:14:44.635Z. 3656 active rules; 8 deprecated rules.
+Generated 2026-07-28T18:17:17.780Z. 3657 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -1515,7 +1515,8 @@ Generated 2026-07-28T18:14:44.635Z. 3656 active rules; 8 deprecated rules.
 - **HIG-COMPONENTS-COLLECTIONS-0012 · AVOID · high** — Exclude dynamic layout changes during viewing or interaction when possible from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 ### color-wells
 
-- **HIG-COMPONENTS-COLOR-WELLS-0001 · MAY · low** — Evaluate whether the system-provided color picker for a familiar experience is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/color-wells))
+- **HIG-COMPONENTS-COLOR-WELLS-0001 · MAY · high** — Consider the system-provided color picker for a familiar, consistent experience. ([source](https://developer.apple.com/design/human-interface-guidelines/color-wells))
+- **HIG-COMPONENTS-COLOR-WELLS-0002 · AVOID · high** — Avoid using color wells in tvOS or watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/color-wells))
 ### column-views
 
 - **HIG-COMPONENTS-COLUMN-VIEWS-0001 · SHOULD · high** — Present the root level of your data hierarchy in the first column in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))

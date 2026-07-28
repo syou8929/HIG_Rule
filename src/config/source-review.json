@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T18:13:20Z",
+  "reviewed_at": "2026-07-28T18:16:40Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5747,6 +5747,24 @@
         "HIG-TECHNOLOGIES-SHAZAMKIT-0005"
       ],
       "review_note": "Expanded ShazamKit from 1 to 5 active atomic rules, recovered microphone permission, permission explanation, and recording-duration guidance, and reviewed three privacy or explicit-user-intent outcomes as MUST."
+    },
+    {
+      "id": "priority-6-color-wells-context-2026-07-29",
+      "reviewed_at": "2026-07-28T18:16:40Z",
+      "review_method": "Rendered Apple HIG Color wells overview, picker, platform, macOS behavior, and resource context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/color-wells",
+          "source_hash": "b43f3a9bddddd5290039990c8fc95aec20903d5cd5a20be98d24084cb477ee41"
+        }
+      ],
+      "rule_ids": [
+        "HIG-COMPONENTS-COLOR-WELLS-0001",
+        "HIG-COMPONENTS-COLOR-WELLS-0002"
+      ],
+      "review_note": "Expanded Color wells from 1 to 2 active atomic rules, retained the system picker at MAY, recovered unsupported tvOS and watchOS use at AVOID, and introduced no MUST or MUST_NOT rules."
     }
   ],
   "rules": {
@@ -11393,6 +11411,23 @@
       "normative_level": "AVOID",
       "conditions": [],
       "review_note": "Recovered the direct terminology avoidance without overstating it as MUST_NOT."
+    },
+    "HIG-COMPONENTS-COLOR-WELLS-0001": {
+      "source": {"source_hash": "b43f3a9bddddd5290039990c8fc95aec20903d5cd5a20be98d24084cb477ee41", "source_sentence_hash": "260942d5506362e9eee5c80068bf52d315d27d7ae326bcbc9c4a9ef39c0c8a9f", "section_path": ["Color wells", "Best practices"]},
+      "title": "Consider the system-provided color picker",
+      "statement": {"en": "Consider the system-provided color picker for a familiar, consistent experience.", "ja": "familiarでconsistentなexperienceのためにsystem-provided color pickerを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The built-in picker lets people save colors for access from any app.", "It can provide familiarity across iOS, iPadOS, and macOS."],
+      "review_note": "Preserved the source's Consider strength and recorded consistency, saved-color, and cross-platform benefits."
+    },
+    "HIG-COMPONENTS-COLOR-WELLS-0002": {
+      "source": {"source_hash": "b43f3a9bddddd5290039990c8fc95aec20903d5cd5a20be98d24084cb477ee41", "source_sentence_hash": "c2b0c4f88e48d9eea0203ca38b41708787d8bfe97d2fbcf8cfff03e22f4df4d4", "section_path": ["Color wells", "Platform considerations"]},
+      "title": "Avoid color wells in tvOS and watchOS",
+      "statement": {"en": "Avoid using color wells in tvOS or watchOS.", "ja": "tvOSまたはwatchOSでcolor wellを使うことを避ける。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "apple-component-specific", "platforms": ["tvos", "watchos"], "devices": ["apple-tv", "apple-watch"], "components": ["color-wells"], "modalities": []},
+      "conditions": ["Apple HIG records color wells as unsupported on these platforms."],
+      "review_note": "Recovered the explicit platform limitation at AVOID rather than overstating descriptive support text as MUST_NOT."
     },
     "HIG-TECHNOLOGIES-SHAZAMKIT-0001": {
       "source": {"source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427", "source_sentence_hash": "2fe27fd694d359f1ed93f80759f08d46ce10e7a2630eb112c2f4015e275447e7", "section_path": ["ShazamKit", "Best practices"]},

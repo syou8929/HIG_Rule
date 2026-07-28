@@ -5,15 +5,15 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3656
+- Active atomic rules: 3657
 - Pages without rules: 16
-- Low-confidence rules: 24
-- Rules requiring human review: 24
-- Reference notes: 915
+- Low-confidence rules: 23
+- Rules requiring human review: 23
+- Reference notes: 916
 
 ## Rules by category
 
-- components: 1114
+- components: 1115
 - foundations: 504
 - getting-started: 100
 - inputs: 245
@@ -22,7 +22,7 @@
 
 ## Normative levels
 
-- AVOID: 494
+- AVOID: 495
 - MAY: 410
 - MUST: 566
 - MUST_NOT: 85
@@ -34,14 +34,14 @@
 - ios: 2666
 - ipados: 2625
 - macos: 2177
-- tvos: 1702
+- tvos: 1703
 - visionos: 2135
-- watchos: 1816
+- watchos: 1817
 
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3541
+- manual: 3542
 
 ## Blocked pages
 
@@ -68,7 +68,6 @@ None.
 
 ## Low-confidence rules
 
-- HIG-COMPONENTS-COLOR-WELLS-0001
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0001
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0002
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0003
@@ -95,7 +94,6 @@ None.
 
 ## Rules requiring human review
 
-- HIG-COMPONENTS-COLOR-WELLS-0001
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0001
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0002
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0003
@@ -269,10 +267,11 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/color · Color > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/color · Color > Specifications — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/color · Color > Specifications > iOS, iPadOS system gray colors — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Platform considerations — Reviewed: color wells have no additional iOS, iPadOS, or visionOS considerations and are unsupported in tvOS and watchOS.
+- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Platform considerations > macOS — Reviewed: highlight, picker presentation, selection update, and drag-and-drop behavior describe system-managed macOS component capabilities.
+- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Resources > Developer documentation — Reviewed: developer-documentation links contain no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/color-wells · Color wells > Resources > Related — Reviewed: the related Color link contains no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/column-views · Column views > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/column-views · Column views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/column-views · Column views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.

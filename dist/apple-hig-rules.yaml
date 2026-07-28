@@ -13846,16 +13846,16 @@
   apple_native_rule: Exclude dynamic layout changes during viewing or interaction when possible from the applicable experience.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COLOR-WELLS-0001
-  title: Consider the system-provided color picker for a familiar experience
+  title: Consider the system-provided color picker
   category: components
   topic: color-wells
   subtopic: best-practices
   statement:
-    en: Evaluate whether the system-provided color picker for a familiar experience is appropriate for the current context.
-    ja: the system-provided color picker for a familiar experienceが現在の状況に適切か検討する。
+    en: Consider the system-provided color picker for a familiar, consistent experience.
+    ja: familiarでconsistentなexperienceのためにsystem-provided color pickerを検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -13874,7 +13874,8 @@
       - color-wells
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The built-in picker lets people save colors for access from any app.
+    - It can provide familiarity across iOS, iPadOS, and macOS.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Color wells experience on the scoped Apple platforms.
@@ -13882,7 +13883,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Evaluate whether the system-provided color picker for a familiar experience is appropriate for the current context.” in the documented Color wells context?
+      - Does the design satisfy “Consider the system-provided color picker for a familiar, consistent experience.” in the documented Color wells context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -13897,14 +13898,71 @@
     retrieved_at: 2026-07-21T11:14:43.914Z
     source_hash: b43f3a9bddddd5290039990c8fc95aec20903d5cd5a20be98d24084cb477ee41
     source_sentence_hash: 260942d5506362e9eee5c80068bf52d315d27d7ae326bcbc9c4a9ef39c0c8a9f
-    evidence_paraphrase: Evaluate whether the system-provided color picker for a familiar experience is appropriate for the current context.
+    evidence_paraphrase: Consider the system-provided color picker for a familiar, consistent experience.
   tags:
     - components
     - color-wells
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Evaluate whether the system-provided color picker for a familiar experience is appropriate for the current context.
+  apple_native_rule: Consider the system-provided color picker for a familiar, consistent experience.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-COMPONENTS-COLOR-WELLS-0002
+  title: Avoid color wells in tvOS and watchOS
+  category: components
+  topic: color-wells
+  subtopic: platform-considerations
+  statement:
+    en: Avoid using color wells in tvOS or watchOS.
+    ja: tvOSまたはwatchOSでcolor wellを使うことを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: apple-component-specific
+    platforms:
+      - tvos
+      - watchos
+    devices:
+      - apple-tv
+      - apple-watch
+    components:
+      - color-wells
+    modalities: []
+  conditions:
+    - Apple HIG records color wells as unsupported on these platforms.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Color wells experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるColor wellsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid using color wells in tvOS or watchOS.” in the documented Color wells context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/color-wells
+    page_title: Color wells
+    section_path:
+      - Color wells
+      - Platform considerations
+    retrieved_at: 2026-07-21T11:14:43.914Z
+    source_hash: b43f3a9bddddd5290039990c8fc95aec20903d5cd5a20be98d24084cb477ee41
+    source_sentence_hash: c2b0c4f88e48d9eea0203ca38b41708787d8bfe97d2fbcf8cfff03e22f4df4d4
+    evidence_paraphrase: Avoid using color wells in tvOS or watchOS.
+  tags:
+    - components
+    - color-wells
+    - platform-considerations
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid using color wells in tvOS or watchOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-COMPONENTS-COLUMN-VIEWS-0001
   title: Show the root level of your data hierarchy in the first column

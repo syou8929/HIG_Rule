@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3618
-- Reviewed batches: 209
+- Reviewed rules: 3620
+- Reviewed batches: 210
 - Official source only: yes
-- Reviewed at: 2026-07-28T18:13:20Z
+- Reviewed at: 2026-07-28T18:16:40Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -230,6 +230,8 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-COMPONENTS-COLLECTIONS-0010 · high — Reviewed the rendered source context for “Make sure dynamic collection changes make sense” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0011 · high — Reviewed the rendered source context for “Make sure dynamic collection changes remain easy to track” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
 - HIG-COMPONENTS-COLLECTIONS-0012 · high — Reviewed the rendered source context for “Avoid dynamic layout changes during viewing or interaction when possible” and recorded its collection-specific conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/collections))
+- HIG-COMPONENTS-COLOR-WELLS-0001 · high — Preserved the source's Consider strength and recorded consistency, saved-color, and cross-platform benefits. ([source](https://developer.apple.com/design/human-interface-guidelines/color-wells))
+- HIG-COMPONENTS-COLOR-WELLS-0002 · high — Recovered the explicit platform limitation at AVOID rather than overstating descriptive support text as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/color-wells))
 - HIG-COMPONENTS-COLUMN-VIEWS-0001 · high — Reviewed the rendered source context for “Show the root level of your data hierarchy in the first column” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
 - HIG-COMPONENTS-COLUMN-VIEWS-0002 · high — Reviewed the rendered source context for “Consider showing information about the selected item when there are no nested items to display” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
 - HIG-COMPONENTS-COLUMN-VIEWS-0003 · high — Reviewed the rendered source context for “Let people resize columns” and recorded its hierarchy and platform conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
