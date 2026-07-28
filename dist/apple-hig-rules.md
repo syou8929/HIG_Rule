@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-23T19:14:44.362Z. 3483 active rules; 8 deprecated rules.
+Generated 2026-07-28T15:57:04.649Z. 3487 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -313,9 +313,9 @@ Generated 2026-07-23T19:14:44.362Z. 3483 active rules; 8 deprecated rules.
 - **HIG-FOUNDATIONS-ICONS-0025 · MAY · high** — Consider using the documented SF Symbols to represent common actions and items. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 ### images
 
-- **HIG-FOUNDATIONS-IMAGES-0001 · SHOULD · low** — Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- **HIG-FOUNDATIONS-IMAGES-0002 · SHOULD · low** — Apply the documented Images guidance to include a color profile with each image. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
-- **HIG-FOUNDATIONS-IMAGES-0003 · MUST · medium** — Test images on a range of actual devices in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- **HIG-FOUNDATIONS-IMAGES-0001 · SHOULD · high** — Provide high-resolution assets for every bitmap image on every supported device. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- **HIG-FOUNDATIONS-IMAGES-0002 · SHOULD · high** — Include a color profile with every image. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- **HIG-FOUNDATIONS-IMAGES-0003 · MUST · high** — Always test images on a range of actual supported devices. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - **HIG-FOUNDATIONS-IMAGES-0004 · SHOULD · high** — Use standard tvOS views and system focus APIs to display layered images. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - **HIG-FOUNDATIONS-IMAGES-0005 · MUST · high** — Keep the background layer of every tvOS layered image opaque. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - **HIG-FOUNDATIONS-IMAGES-0006 · SHOULD · high** — Keep tvOS layered-image depth simple and subtle. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
@@ -348,6 +348,10 @@ Generated 2026-07-23T19:14:44.362Z. 3483 active rules; 8 deprecated rules.
 - **HIG-FOUNDATIONS-IMAGES-0033 · SHOULD · high** — Use scroll views, pagination, or explicit actions to move between visionOS spatial scenes. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - **HIG-FOUNDATIONS-IMAGES-0034 · SHOULD · high** — Prefer minimal UI when displaying spatial images immersively in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - **HIG-FOUNDATIONS-IMAGES-0035 · SHOULD · high** — Design watchOS autoscaling PDF images for 40 mm and 42 mm screens at 2x. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- **HIG-FOUNDATIONS-IMAGES-0036 · SHOULD · high** — Identify each bitmap asset's scale factor with an @1x, @2x, or @3x filename suffix. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- **HIG-FOUNDATIONS-IMAGES-0037 · SHOULD · high** — Generally design images at the lowest resolution, then scale them up for high-resolution assets. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- **HIG-FOUNDATIONS-IMAGES-0038 · MAY · high** — For resizable vector shapes, consider whole-value control points for clean 1x alignment. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- **HIG-FOUNDATIONS-IMAGES-0039 · MAY · high** — Consider the recommended file format for each image type. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 ### immersive-experiences
 
 - **HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0001 · SHOULD · high** — Use dimmed passthrough to focus attention on content without hiding other experiences. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))

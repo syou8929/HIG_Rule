@@ -3,10 +3,10 @@
 - Reviewed rules: 578
 - Retained MUST: 497
 - Retained MUST_NOT: 81
-- Normative level changes: 201
+- Normative level changes: 202
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-23T23:40:00Z
+- Reviewed at: 2026-07-28T15:56:23Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -153,6 +153,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-ICONS-0006 — Retained this unqualified accessibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0019 — Recovered the explicit Be sure localization requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0022 — Recovered the explicit need-to requirement and its raster-format condition. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-IMAGES-0003 — Retained MUST from the explicit Always directive and recorded the three device-only rendering risks. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0005 — Changed SHOULD to MUST after confirming the supporting must-be-opaque platform constraint and the error produced by a nonopaque background. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0018 — Recovered MUST from the explicit required-to-support platform constraint and limited it to images that need parallax. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0019 — Retained MUST from the explicit app-icon must-use directive without extending it to optional focusable images. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
@@ -603,7 +604,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-ICONS-0006 · MUST · retained_with_atomicity_or_scope_correction — Retained this unqualified accessibility requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Be sure localization requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit need-to requirement and its raster-format condition. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
-- HIG-FOUNDATIONS-IMAGES-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Always directive and recorded the three device-only rendering risks. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0005 · MUST · retained_with_atomicity_or_scope_correction — Changed SHOULD to MUST after confirming the supporting must-be-opaque platform constraint and the error produced by a nonopaque background. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0010 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/images))

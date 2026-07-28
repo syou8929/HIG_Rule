@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-23T23:40:00Z",
+  "reviewed_at": "2026-07-28T15:56:23Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5149,9 +5149,157 @@
         "HIG-COMPONENTS-STEPPERS-0005"
       ],
       "review_note": "Completed Steppers coverage, preserved the three previously reviewed active IDs, deprecated the vague SHOULD at 0001, rebound its stable history to the explicit supporting sentence as 0005, and retained that Make sure outcome at MUST."
+    },
+    {
+      "id": "priority-6-images-complete-context-2026-07-29",
+      "reviewed_at": "2026-07-28T15:56:23Z",
+      "review_method": "Rendered Apple HIG Images resolution, format table, best-practice, complete tvOS, visionOS, watchOS, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+          "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-IMAGES-0001",
+        "HIG-FOUNDATIONS-IMAGES-0002",
+        "HIG-FOUNDATIONS-IMAGES-0003",
+        "HIG-FOUNDATIONS-IMAGES-0036",
+        "HIG-FOUNDATIONS-IMAGES-0037",
+        "HIG-FOUNDATIONS-IMAGES-0038",
+        "HIG-FOUNDATIONS-IMAGES-0039"
+      ],
+      "review_note": "Completed Images coverage, preserved all thirty-five existing IDs, recovered four atomic scale-suffix, base-resolution, vector-alignment, and format-choice rules, preserved both structured scale tables, and retained only the explicit Always test outcome at MUST in this batch."
     }
   ],
   "rules": {
+    "HIG-FOUNDATIONS-IMAGES-0001": {
+      "source": {
+        "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+        "source_sentence_hash": "14d73c205e3fe7be7fe9c427d58f06d63bac4f726002cf99a62aacaea866381b",
+        "section_path": ["Images", "Resolution"]
+      },
+      "title": "Provide high-resolution bitmap assets for every supported device",
+      "statement": {
+        "en": "Provide high-resolution assets for every bitmap image on every supported device.",
+        "ja": "すべてのbitmap imageについて各supported device向けのhigh-resolution assetを提供する。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "Use @2x for iPadOS and watchOS.",
+        "Use @2x and @3x for iOS.",
+        "Use @2x or higher for visionOS.",
+        "Use @1x and @2x for macOS and tvOS."
+      ],
+      "review_note": "Recovered the full all-image and all-device scope and preserved every platform scale-factor mapping."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0002": {
+      "source": {
+        "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+        "source_sentence_hash": "17cb3fe0705ea3bd5323e40532db03620ce6b6f2a5f623c420aa816852b68c16",
+        "section_path": ["Images", "Best practices"]
+      },
+      "title": "Include a color profile with every image",
+      "statement": {
+        "en": "Include a color profile with every image.",
+        "ja": "各imageにcolor profileを含める。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "A color profile helps colors appear as intended on different displays."
+      ],
+      "review_note": "Replaced generic generated wording and recorded the cross-display color-management purpose."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0003": {
+      "source": {
+        "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+        "source_sentence_hash": "ef39e3e5e6b703828d867b415b3dbd48c380607f663a4d5dd4aaa7b435ab7d67",
+        "section_path": ["Images", "Best practices"]
+      },
+      "title": "Always test images on actual devices",
+      "statement": {
+        "en": "Always test images on a range of actual supported devices.",
+        "ja": "imageを実際のsupported device各種で必ずtestする。"
+      },
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": [
+        "Check for pixelation, stretching, and compression across devices."
+      ],
+      "review_note": "Retained MUST from the explicit Always directive and recorded the three device-only rendering risks."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0036": {
+      "source": {
+        "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+        "source_sentence_hash": "11486e3e28ca42dfd189058b390be0bb6a0abcde69d3f9954d89561ea8b856bb",
+        "section_path": ["Images", "Resolution"]
+      },
+      "title": "Identify bitmap scale factors in asset filenames",
+      "statement": {
+        "en": "Identify each bitmap asset's scale factor with an @1x, @2x, or @3x filename suffix.",
+        "ja": "各bitmap assetのfilenameに@1x、@2x、@3xのsuffixを付けてscale factorを示す。"
+      },
+      "normative_level": "SHOULD",
+      "conditions": [
+        "Apply as each image is added to the project asset catalog."
+      ],
+      "review_note": "Recovered the asset-catalog filename convention and all three documented suffixes."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0037": {
+      "source": {
+        "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+        "source_sentence_hash": "aeb611bc25bb46cb5be04fb37bced0882a735be9c9757a511e1f1c84f7ec51eb",
+        "section_path": ["Images", "Resolution"]
+      },
+      "title": "Start image design at the lowest resolution",
+      "statement": {
+        "en": "Generally design images at the lowest resolution, then scale them up for high-resolution assets.",
+        "ja": "通常は最低resolutionでimageをdesignし、high-resolution asset用に拡大する。"
+      },
+      "normative_level": "SHOULD",
+      "review_note": "Preserved the source's In general qualification rather than promoting the workflow to MUST."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0038": {
+      "source": {
+        "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+        "source_sentence_hash": "8bf7976cebbab68db810199703d3d30d33ba20dbeb2657b1d4e35ed568855e57",
+        "section_path": ["Images", "Resolution"]
+      },
+      "title": "Consider whole-value control points for resizable vector shapes",
+      "statement": {
+        "en": "For resizable vector shapes, consider whole-value control points for clean 1x alignment.",
+        "ja": "resizable vector shapeでは1xで整列するwhole-value control pointを検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": [
+        "Whole-value 1x positions remain aligned to the raster grid at 2x and 3x."
+      ],
+      "review_note": "Preserved the optional might-want-to strength and the raster-alignment rationale."
+    },
+    "HIG-FOUNDATIONS-IMAGES-0039": {
+      "source": {
+        "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+        "source_sentence_hash": "02dbf5aa57236e8523a8bd1fcbfec7f6d8222923900b743145843a90f72a5ead",
+        "section_path": ["Images", "Formats"]
+      },
+      "title": "Consider Apple-recommended formats by image type",
+      "statement": {
+        "en": "Consider the recommended file format for each image type.",
+        "ja": "image typeごとに推奨file formatの使用を検討する。"
+      },
+      "normative_level": "MAY",
+      "conditions": [
+        "Use de-interlaced PNG for bitmap or raster work.",
+        "Use an 8-bit palette for PNG graphics that don't need full 24-bit color.",
+        "Use optimized JPEG or HEIC for photos.",
+        "Use stereo HEIC for stereo or spatial photos.",
+        "Use PDF or SVG for flat artwork that requires high-resolution scaling."
+      ],
+      "review_note": "Recorded the complete format table as one optional choice set rather than five unrelated mandates."
+    },
     "HIG-COMPONENTS-STEPPERS-0002": {
       "source": {
         "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56",

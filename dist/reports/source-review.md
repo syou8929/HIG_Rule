@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3308
-- Reviewed batches: 191
+- Reviewed rules: 3315
+- Reviewed batches: 192
 - Official source only: yes
-- Reviewed at: 2026-07-23T23:40:00Z
+- Reviewed at: 2026-07-28T15:56:23Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1285,6 +1285,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-ICONS-0023 · high — Recovered the optional custom-symbol branch and its scale constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0024 · high — Recovered the conditional official-resource guidance without promoting it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
 - HIG-FOUNDATIONS-ICONS-0025 · high — Recovered the optional standard-symbol guidance and preserved its mapping tables as structured context. ([source](https://developer.apple.com/design/human-interface-guidelines/icons))
+- HIG-FOUNDATIONS-IMAGES-0001 · high — Recovered the full all-image and all-device scope and preserved every platform scale-factor mapping. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0002 · high — Replaced generic generated wording and recorded the cross-display color-management purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0003 · high — Retained MUST from the explicit Always directive and recorded the three device-only rendering risks. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0004 · high — Recorded the standard-view and system-focus mechanism that supplies automatic parallax. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0005 · high — Recorded the higher-layer allowance and the explicit opaque-background requirement and failure mode. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0006 · high — Recorded the intended subtlety and the excessive-depth anti-pattern. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
@@ -1317,6 +1320,10 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-IMAGES-0033 · high — Recovered the three documented navigation alternatives as one choice-set rule. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0034 · high — Recovered the immersive minimal-UI preference without turning the example layout into a fixed requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMAGES-0035 · high — Recovered the base-asset sizing action and preserved every value in the watchOS scaling table. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0036 · high — Recovered the asset-catalog filename convention and all three documented suffixes. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0037 · high — Preserved the source's In general qualification rather than promoting the workflow to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0038 · high — Preserved the optional might-want-to strength and the raster-alignment rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
+- HIG-FOUNDATIONS-IMAGES-0039 · high — Recorded the complete format table as one optional choice set rather than five unrelated mandates. ([source](https://developer.apple.com/design/human-interface-guidelines/images))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0001 · high — Recorded the attention purpose, supported spaces, and default or custom tint behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0002 · high — Recorded the Full Space scope, absent boundary, and automatic physical-object response. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))
 - HIG-FOUNDATIONS-IMMERSIVE-EXPERIENCES-0003 · high — Recorded partial replacement, orientation, adjustable range, and movement-boundary context. ([source](https://developer.apple.com/design/human-interface-guidelines/immersive-experiences))

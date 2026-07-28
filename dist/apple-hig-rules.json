@@ -99778,17 +99778,17 @@
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0001",
-    "title": "Provide high-resolution assets for all bitmap images in your app, for every device you support",
+    "title": "Provide high-resolution bitmap assets for every supported device",
     "category": "foundations",
     "topic": "images",
     "subtopic": "resolution",
     "statement": {
-      "en": "Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable.",
-      "ja": "必要な場合にhigh-resolution assets for all bitmap images in your app, for every device you supportを利用可能にする。"
+      "en": "Provide high-resolution assets for every bitmap image on every supported device.",
+      "ja": "すべてのbitmap imageについて各supported device向けのhigh-resolution assetを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -99813,7 +99813,10 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use @2x for iPadOS and watchOS.",
+      "Use @2x and @3x for iOS.",
+      "Use @2x or higher for visionOS.",
+      "Use @1x and @2x for macOS and tvOS."
     ],
     "exceptions": [],
     "rationale": {
@@ -99823,7 +99826,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable.” in the documented Images context?"
+        "Does the design satisfy “Provide high-resolution assets for every bitmap image on every supported device.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -99843,7 +99846,7 @@
       "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "14d73c205e3fe7be7fe9c427d58f06d63bac4f726002cf99a62aacaea866381b",
-      "evidence_paraphrase": "Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable."
+      "evidence_paraphrase": "Provide high-resolution assets for every bitmap image on every supported device."
     },
     "tags": [
       "foundations",
@@ -99852,22 +99855,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make high-resolution assets for all bitmap images in your app, for every device you support available when applicable.",
+    "apple_native_rule": "Provide high-resolution assets for every bitmap image on every supported device.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0002",
-    "title": "Include a color profile with each image",
+    "title": "Include a color profile with every image",
     "category": "foundations",
     "topic": "images",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Images guidance to include a color profile with each image.",
-      "ja": "「Images」において「Include a color profile with each image」の指針を適用する。"
+      "en": "Include a color profile with every image.",
+      "ja": "各imageにcolor profileを含める。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -99892,7 +99895,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A color profile helps colors appear as intended on different displays."
     ],
     "exceptions": [],
     "rationale": {
@@ -99902,7 +99905,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Images guidance to include a color profile with each image.” in the documented Images context?"
+        "Does the design satisfy “Include a color profile with every image.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -99922,7 +99925,7 @@
       "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "17cb3fe0705ea3bd5323e40532db03620ce6b6f2a5f623c420aa816852b68c16",
-      "evidence_paraphrase": "Apply the documented Images guidance to include a color profile with each image."
+      "evidence_paraphrase": "Include a color profile with every image."
     },
     "tags": [
       "foundations",
@@ -99931,21 +99934,21 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Images guidance to include a color profile with each image.",
+    "apple_native_rule": "Include a color profile with every image.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-FOUNDATIONS-IMAGES-0003",
-    "title": "Always test images on a range of actual devices",
+    "title": "Always test images on actual devices",
     "category": "foundations",
     "topic": "images",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Test images on a range of actual devices in every applicable case.",
-      "ja": "該当するすべての場合にtest images on a range of actual devicesを実行する。"
+      "en": "Always test images on a range of actual supported devices.",
+      "ja": "imageを実際のsupported device各種で必ずtestする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -99971,7 +99974,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Check for pixelation, stretching, and compression across devices."
     ],
     "exceptions": [],
     "rationale": {
@@ -99981,7 +99984,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Test images on a range of actual devices in every applicable case.” in the documented Images context?"
+        "Does the design satisfy “Always test images on a range of actual supported devices.” in the documented Images context?"
       ]
     },
     "testability": "manual",
@@ -100001,7 +100004,7 @@
       "retrieved_at": "2026-07-21T19:05:04Z",
       "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
       "source_sentence_hash": "ef39e3e5e6b703828d867b415b3dbd48c380607f663a4d5dd4aaa7b435ab7d67",
-      "evidence_paraphrase": "Test images on a range of actual devices in every applicable case."
+      "evidence_paraphrase": "Always test images on a range of actual supported devices."
     },
     "tags": [
       "foundations",
@@ -100010,7 +100013,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Test images on a range of actual devices in every applicable case.",
+    "apple_native_rule": "Always test images on a range of actual supported devices.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -102344,6 +102347,326 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "Design watchOS autoscaling PDF images for 40 mm and 42 mm screens at 2x.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0036",
+    "title": "Identify bitmap scale factors in asset filenames",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "resolution",
+    "statement": {
+      "en": "Identify each bitmap asset's scale factor with an @1x, @2x, or @3x filename suffix.",
+      "ja": "各bitmap assetのfilenameに@1x、@2x、@3xのsuffixを付けてscale factorを示す。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply as each image is added to the project asset catalog."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Identify each bitmap asset's scale factor with an @1x, @2x, or @3x filename suffix.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Resolution"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "11486e3e28ca42dfd189058b390be0bb6a0abcde69d3f9954d89561ea8b856bb",
+      "evidence_paraphrase": "Identify each bitmap asset's scale factor with an @1x, @2x, or @3x filename suffix."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "resolution"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Identify each bitmap asset's scale factor with an @1x, @2x, or @3x filename suffix.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0037",
+    "title": "Start image design at the lowest resolution",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "resolution",
+    "statement": {
+      "en": "Generally design images at the lowest resolution, then scale them up for high-resolution assets.",
+      "ja": "通常は最低resolutionでimageをdesignし、high-resolution asset用に拡大する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Generally design images at the lowest resolution, then scale them up for high-resolution assets.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Resolution"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "aeb611bc25bb46cb5be04fb37bced0882a735be9c9757a511e1f1c84f7ec51eb",
+      "evidence_paraphrase": "Generally design images at the lowest resolution, then scale them up for high-resolution assets."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "resolution"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Generally design images at the lowest resolution, then scale them up for high-resolution assets.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0038",
+    "title": "Consider whole-value control points for resizable vector shapes",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "resolution",
+    "statement": {
+      "en": "For resizable vector shapes, consider whole-value control points for clean 1x alignment.",
+      "ja": "resizable vector shapeでは1xで整列するwhole-value control pointを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Whole-value 1x positions remain aligned to the raster grid at 2x and 3x."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “For resizable vector shapes, consider whole-value control points for clean 1x alignment.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Resolution"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "8bf7976cebbab68db810199703d3d30d33ba20dbeb2657b1d4e35ed568855e57",
+      "evidence_paraphrase": "For resizable vector shapes, consider whole-value control points for clean 1x alignment."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "resolution"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "For resizable vector shapes, consider whole-value control points for clean 1x alignment.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-FOUNDATIONS-IMAGES-0039",
+    "title": "Consider Apple-recommended formats by image type",
+    "category": "foundations",
+    "topic": "images",
+    "subtopic": "formats",
+    "statement": {
+      "en": "Consider the recommended file format for each image type.",
+      "ja": "image typeごとに推奨file formatの使用を検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use de-interlaced PNG for bitmap or raster work.",
+      "Use an 8-bit palette for PNG graphics that don't need full 24-bit color.",
+      "Use optimized JPEG or HEIC for photos.",
+      "Use stereo HEIC for stereo or spatial photos.",
+      "Use PDF or SVG for flat artwork that requires high-resolution scaling."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Images experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるImagesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider the recommended file format for each image type.” in the documented Images context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/images",
+      "page_title": "Images",
+      "section_path": [
+        "Images",
+        "Formats"
+      ],
+      "retrieved_at": "2026-07-21T19:05:04Z",
+      "source_hash": "d2f9f5ab01ecedefa7be3b8eaba98c1dd8b9015800034586e8aac50b87f4f8a0",
+      "source_sentence_hash": "02dbf5aa57236e8523a8bd1fcbfec7f6d8222923900b743145843a90f72a5ead",
+      "evidence_paraphrase": "Consider the recommended file format for each image type."
+    },
+    "tags": [
+      "foundations",
+      "images",
+      "formats"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider the recommended file format for each image type.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

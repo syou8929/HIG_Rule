@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3483
+- Active atomic rules: 3487
 - Pages without rules: 16
-- Low-confidence rules: 151
-- Rules requiring human review: 151
+- Low-confidence rules: 149
+- Rules requiring human review: 149
 - Reference notes: 915
 
 ## Rules by category
 
 - components: 1114
-- foundations: 463
+- foundations: 467
 - getting-started: 100
 - inputs: 245
 - patterns: 477
@@ -23,25 +23,25 @@
 ## Normative levels
 
 - AVOID: 471
-- MAY: 399
+- MAY: 401
 - MUST: 497
 - MUST_NOT: 81
-- SHOULD: 2035
+- SHOULD: 2037
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2499
-- ipados: 2457
-- macos: 2010
-- tvos: 1568
-- visionos: 1983
-- watchos: 1688
+- ios: 2503
+- ipados: 2461
+- macos: 2014
+- tvos: 1572
+- visionos: 1987
+- watchos: 1692
 
 ## Rules by testability
 
 - hybrid: 113
-- manual: 3370
+- manual: 3374
 
 ## Blocked pages
 
@@ -69,8 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-FOUNDATIONS-IMAGES-0001
-- HIG-FOUNDATIONS-IMAGES-0002
 - HIG-FOUNDATIONS-LAYOUT-0001
 - HIG-FOUNDATIONS-LAYOUT-0002
 - HIG-FOUNDATIONS-LAYOUT-0003
@@ -223,8 +221,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-FOUNDATIONS-IMAGES-0001
-- HIG-FOUNDATIONS-IMAGES-0002
 - HIG-FOUNDATIONS-LAYOUT-0001
 - HIG-FOUNDATIONS-LAYOUT-0002
 - HIG-FOUNDATIONS-LAYOUT-0003
