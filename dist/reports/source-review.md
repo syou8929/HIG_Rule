@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3352
-- Reviewed batches: 194
+- Reviewed rules: 3381
+- Reviewed batches: 195
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:12:43Z
+- Reviewed at: 2026-07-28T16:18:34Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1583,6 +1583,35 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-TYPOGRAPHY-0031 · high — Recovered the conditional Be sure fallback as a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0032 · high — Recovered the supporting Make sure visibility outcome as a separate MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-TYPOGRAPHY-0033 · high — Split the conditional direct Avoid from the general truncation-minimization recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
+- HIG-FOUNDATIONS-WRITING-0001 · high — Concretized physical, in-app, wording, and presentation context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0002 · high — Expanded the vague Be clear lead into understandable wording, correct meaning, and concision. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0003 · high — Concretized the inclusive-language, accessibility, localization, jargon, and gender scope. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0004 · high — Retained MAY and separated direct hierarchy and readability actions into atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0005 · high — Concretized active voice, navigation, and clarity while separating label-specific rules. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0006 · high — Recorded per-element consistency and the component-specific exception. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0007 · high — Recorded start, transition, and next-step labeling while separating flow completion. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0008 · high — Recorded the context test and perspective consistency. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0009 · high — Preserved cross-device consistency and device-specific adaptation. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0010 · high — Recorded actionable guidance and the direct-control option. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0011 · high — Consolidated the coherent error-message checklist and excluded the unhelpful example wording. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0012 · high — Recorded all five delivery factors and the matching tone. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0013 · high — Recorded explanation fallback and enabled-state description. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0014 · high — Combined the coherent field-label, hint, and adjacent corrective-error checklist. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0015 · high — Recorded audience, vocabulary, feeling, values, and terminology consistency. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0016 · high — Recovered the direct information-order rule from supporting prose. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0017 · high — Recovered the direct readability-formatting rule. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0018 · high — Preserved the source's Consider strength and cross-screen flow. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0019 · high — Recovered label-level guidance and preserved its almost-always qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0020 · high — Recovered the accessibility-relevant link-label discouragement without promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0021 · high — Activated the omitted language-pattern lead and recorded both user and authoring benefits. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0022 · high — Recovered the flow-end state separately from start and transition labels. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0023 · high — Recovered the named pronoun warning and its error-message risk. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0024 · high — Recovered MUST from Make sure and preserved the touch-device terminology example. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0025 · high — Recovered the shared brevity outcome for opposite screen-size reasons. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0026 · high — Preserved the source's consider strength and shared-space condition. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0027 · high — Recovered MUST from Make sure and retained the allowed empty-state purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0028 · high — Separated the explicit don't clause and retained AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-FOUNDATIONS-WRITING-0029 · high — Recovered the conditional direct-navigation rule and its prose-location alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0001 · high — Reviewed game startup, display metrics, interactions, accessibility, inclusion, and Apple technologies; recovered ten omitted atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0002 · high — Recorded the device and accessibility inputs used to choose game defaults. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0003 · high — Repaired the generated statement and recorded the request-timing context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))

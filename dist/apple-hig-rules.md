@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T16:14:58.020Z. 3510 active rules; 8 deprecated rules.
+Generated 2026-07-28T16:21:30.383Z. 3524 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -636,21 +636,35 @@ Generated 2026-07-28T16:14:58.020Z. 3510 active rules; 8 deprecated rules.
 - **HIG-FOUNDATIONS-TYPOGRAPHY-0033 · AVOID · high** — Avoid truncating scrollable text unless people can open a complete view. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 ### writing
 
-- **HIG-FOUNDATIONS-WRITING-0001 · SHOULD · low** — Apply the documented Writing guidance to match your tone to the context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0002 · SHOULD · low** — Apply the documented Writing guidance to be clear. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0003 · SHOULD · low** — Apply the documented Writing guidance to write for everyone. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0004 · MAY · low** — Evaluate whether each screen’s purpose is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0005 · SHOULD · low** — Apply the documented Writing guidance to be action oriented. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0006 · SHOULD · low** — Apply the documented Writing guidance to adopt capitalization rules that align with your app’s style, then apply them consistently. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0007 · SHOULD · low** — Apply the documented Writing guidance to give clear guidance and use consistent language throughout processes with multiple steps. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0008 · SHOULD · low** — Choose or apply possessive pronouns sparingly in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0009 · SHOULD · low** — Apply the documented Writing guidance to write for how people use each device. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0010 · SHOULD · low** — Make clear next steps on any blank screens available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0011 · SHOULD · low** — Apply the documented Writing guidance to write clear error messages. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0012 · SHOULD · low** — Apply the documented Writing guidance to choose the right delivery method. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0013 · SHOULD · low** — Maintain settings labels clear and simple. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0014 · SHOULD · low** — Present hints in text fields in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
-- **HIG-FOUNDATIONS-WRITING-0015 · SHOULD · low** — Determine your app’s voice explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0001 · SHOULD · high** — Match the app’s tone to the situation in which people encounter the text. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0002 · SHOULD · high** — Use easily understood words that convey the intended meaning with no unnecessary text. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0003 · SHOULD · high** — Write in simple, plain language with accessibility and localization in mind. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0004 · MAY · high** — Consider each screen’s purpose and its place in the information flow. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0005 · SHOULD · high** — Use active voice and clear labels to help people move between steps and screens. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0006 · SHOULD · high** — Choose capitalization rules that fit the app’s style and apply them consistently. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0007 · SHOULD · high** — Give clear guidance and use consistent action language throughout multistep flows. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0008 · SHOULD · high** — Use possessive pronouns only when they add necessary context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0009 · SHOULD · high** — Keep language consistent across devices while adapting text to how each device is used. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0010 · SHOULD · high** — Give every empty state clear next steps. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0011 · SHOULD · high** — Write error messages that identify the problem without blame and explain how to fix it. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0012 · SHOULD · high** — Choose a message delivery method and tone that fit the situation. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0013 · SHOULD · high** — Use practical, clear labels that help people find settings. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0014 · SHOULD · high** — Label text fields clearly and use hint text to show the expected information or format. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0015 · SHOULD · high** — Define an app voice that reflects its audience, values, vocabulary, and intended feeling. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0016 · SHOULD · high** — Place the most important information first on each screen. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0017 · SHOULD · high** — Format text to make it easy to read. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0018 · MAY · high** — When text conveys multiple ideas, consider splitting it across screens. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0019 · SHOULD · high** — Prefer verbs when labeling buttons and links. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0020 · AVOID · high** — Avoid using “Click here” as link text. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0021 · SHOULD · high** — Build reusable language patterns to keep the app familiar and cohesive. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0022 · SHOULD · high** — Make it clear when a multistep flow is complete. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0023 · AVOID · high** — Avoid using “we” when the referent may be unclear. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0024 · MUST · high** — Ensure gesture terminology is correct for each device. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0025 · SHOULD · high** — Keep text brief on small screens and on displays viewed from a distance. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0026 · MAY · high** — For messages on a shared TV, consider who the text addresses. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0027 · MUST · high** — Ensure empty-state content is useful and fits its context. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0028 · AVOID · high** — Avoid showing crucial information only in a temporary empty state. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- **HIG-FOUNDATIONS-WRITING-0029 · SHOULD · high** — When directing someone to a setting, provide a direct link or button. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 
 ## patterns
 
