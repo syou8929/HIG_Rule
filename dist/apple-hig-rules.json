@@ -152244,17 +152244,17 @@
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0001",
-    "title": "Offer alternative ways to accomplish drag-and-drop actions",
+    "title": "Offer alternatives to drag and drop",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make alternative ways to accomplish drag-and-drop actions available when applicable.",
-      "ja": "必要な場合にalternative ways to accomplish drag-and-drop actionsを利用可能にする。"
+      "en": "Offer ways other than drag and drop to accomplish supported drag-and-drop actions.",
+      "ja": "対応するdrag-and-drop actionを実行するためのdrag and drop以外の方法を提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -152275,7 +152275,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Alternative methods are important when drag and drop is inconvenient or impossible.",
+      "Menu commands can provide equivalent copy and move actions.",
+      "On iOS and iPadOS, identify sources and destinations for assistive technologies with the relevant accessibility APIs."
     ],
     "exceptions": [],
     "rationale": {
@@ -152285,7 +152287,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make alternative ways to accomplish drag-and-drop actions available when applicable.” in the documented Drag and drop context?"
+        "Does the design satisfy “Offer ways other than drag and drop to accomplish supported drag-and-drop actions.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152305,7 +152307,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "1b22548e8b8e0f6528ec607add73a50d1f21328673c70bf6e7bcfae2c8f3ffae",
-      "evidence_paraphrase": "Make alternative ways to accomplish drag-and-drop actions available when applicable."
+      "evidence_paraphrase": "Offer ways other than drag and drop to accomplish supported drag-and-drop actions."
     },
     "tags": [
       "patterns",
@@ -152314,22 +152316,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make alternative ways to accomplish drag-and-drop actions available when applicable.",
+    "apple_native_rule": "Offer ways other than drag and drop to accomplish supported drag-and-drop actions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0002",
-    "title": "Support multi-item drag and drop when it makes sense",
+    "title": "Support multi-item drag and drop when useful",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Ensure the experience accommodates multi-item drag and drop when it makes sense.",
-      "ja": "multi-item drag and drop when it makes senseを利用できる設計にする。"
+      "en": "Support multi-item drag and drop when moving a group is useful.",
+      "ja": "item groupの移動が有用な場合はmulti-item drag and dropに対応する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -152350,7 +152352,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Apply on iOS, iPadOS, macOS, and visionOS where the source supports multiple selection.",
+      "On iPadOS, people can add items without stopping an in-progress drag."
     ],
     "exceptions": [],
     "rationale": {
@@ -152360,7 +152363,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates multi-item drag and drop when it makes sense.” in the documented Drag and drop context?"
+        "Does the design satisfy “Support multi-item drag and drop when moving a group is useful.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152380,7 +152383,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "0217031f1cb00b596358c8d86f6c83f66f0efad858b9795ebc6b0ab2d0fc801d",
-      "evidence_paraphrase": "Ensure the experience accommodates multi-item drag and drop when it makes sense."
+      "evidence_paraphrase": "Support multi-item drag and drop when moving a group is useful."
     },
     "tags": [
       "patterns",
@@ -152389,22 +152392,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates multi-item drag and drop when it makes sense.",
+    "apple_native_rule": "Support multi-item drag and drop when moving a group is useful.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0003",
-    "title": "Prefer letting people undo a drag-and-drop operation",
+    "title": "Let people undo drag and drop",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Favor letting people undo a drag-and-drop operation when the documented conditions apply.",
-      "ja": "該当条件ではletting people undo a drag-and-drop operationを優先する。"
+      "en": "Prefer letting people undo a drag-and-drop operation.",
+      "ja": "drag-and-drop operationをundoできるようにすることを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -152425,7 +152428,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Ask for confirmation before completing an operation that can't be undone when doing so helps prevent mistakes.",
+      "When undo is unavailable, consider a way to reverse the result."
     ],
     "exceptions": [],
     "rationale": {
@@ -152435,7 +152439,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor letting people undo a drag-and-drop operation when the documented conditions apply.” in the documented Drag and drop context?"
+        "Does the design satisfy “Prefer letting people undo a drag-and-drop operation.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152455,7 +152459,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "02d22959cf1097f8d3c5aef177140f3f5681b0206fad4cc13b2afe040e254b37",
-      "evidence_paraphrase": "Favor letting people undo a drag-and-drop operation when the documented conditions apply."
+      "evidence_paraphrase": "Prefer letting people undo a drag-and-drop operation."
     },
     "tags": [
       "patterns",
@@ -152464,22 +152468,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Favor letting people undo a drag-and-drop operation when the documented conditions apply.",
+    "apple_native_rule": "Prefer letting people undo a drag-and-drop operation.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0004",
-    "title": "Consider offering multiple versions of dragged content, ordered from highest to lowest fidelity",
+    "title": "Consider multiple dragged-content representations",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether offering multiple versions of dragged content, ordered from highest to lowest fidelity is appropriate for the current context.",
-      "ja": "offering multiple versions of dragged content, ordered from highest to lowest fidelityが現在の状況に適切か検討する。"
+      "en": "Consider offering multiple representations of dragged content from highest to lowest fidelity.",
+      "ja": "dragged contentの複数表現をfidelityの高い順に提供することを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -152500,7 +152504,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Ordering lets the destination choose the highest-fidelity representation it supports."
     ],
     "exceptions": [],
     "rationale": {
@@ -152510,7 +152514,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether offering multiple versions of dragged content, ordered from highest to lowest fidelity is appropriate for the current context.” in the documented Drag and drop context?"
+        "Does the design satisfy “Consider offering multiple representations of dragged content from highest to lowest fidelity.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152530,7 +152534,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "6abf7db8c7bc8b53f3082521af382df9d45fd4740bbf90e6f7bfd2ed1e44a914",
-      "evidence_paraphrase": "Evaluate whether offering multiple versions of dragged content, ordered from highest to lowest fidelity is appropriate for the current context."
+      "evidence_paraphrase": "Consider offering multiple representations of dragged content from highest to lowest fidelity."
     },
     "tags": [
       "patterns",
@@ -152539,7 +152543,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether offering multiple versions of dragged content, ordered from highest to lowest fidelity is appropriate for the current context.",
+    "apple_native_rule": "Consider offering multiple representations of dragged content from highest to lowest fidelity.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -152549,12 +152553,12 @@
     "topic": "drag-and-drop",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether supporting spring loading is appropriate for the current context.",
-      "ja": "supporting spring loadingが現在の状況に適切か検討する。"
+      "en": "Consider supporting spring loading for controls that can activate while content is dragged over them.",
+      "ja": "contentをdragしたままactivateできるcontrolでspring loadingへの対応を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -152575,7 +152579,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Activation may use force click on a supported Mac trackpad or hover on iPad."
     ],
     "exceptions": [],
     "rationale": {
@@ -152585,7 +152589,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether supporting spring loading is appropriate for the current context.” in the documented Drag and drop context?"
+        "Does the design satisfy “Consider supporting spring loading for controls that can activate while content is dragged over them.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152605,7 +152609,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "b691d5abdf7dfb9bab0cfa6565f0e38dd1bed3947f1da3f13256f907c27a859b",
-      "evidence_paraphrase": "Evaluate whether supporting spring loading is appropriate for the current context."
+      "evidence_paraphrase": "Consider supporting spring loading for controls that can activate while content is dragged over them."
     },
     "tags": [
       "patterns",
@@ -152614,22 +152618,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether supporting spring loading is appropriate for the current context.",
+    "apple_native_rule": "Consider supporting spring loading for controls that can activate while content is dragged over them.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0006",
-    "title": "Display a drag image as soon as people drag a selection about three points",
+    "title": "Show a drag image throughout the drag",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "providing-feedback",
     "statement": {
-      "en": "Present a drag image as soon as people drag a selection about three points in the documented context.",
-      "ja": "該当する状況でa drag image as soon as people drag a selection about three pointsを表示する。"
+      "en": "Show a drag image after about three points of movement and keep it visible until the drop.",
+      "ja": "約3 point移動した時点でdrag imageを表示し、dropまで表示を保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -152650,7 +152654,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A translucent representation distinguishes dragged content from its source and keeps destinations visible."
     ],
     "exceptions": [],
     "rationale": {
@@ -152660,7 +152664,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present a drag image as soon as people drag a selection about three points in the documented context.” in the documented Drag and drop context?"
+        "Does the design satisfy “Show a drag image after about three points of movement and keep it visible until the drop.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152680,7 +152684,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "a444c237d6ed9dbb20ae3cd6f758df5ade35c0ba00287593e118c3a74d715972",
-      "evidence_paraphrase": "Present a drag image as soon as people drag a selection about three points in the documented context."
+      "evidence_paraphrase": "Show a drag image after about three points of movement and keep it visible until the drop."
     },
     "tags": [
       "patterns",
@@ -152689,22 +152693,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Present a drag image as soon as people drag a selection about three points in the documented context.",
+    "apple_native_rule": "Show a drag image after about three points of movement and keep it visible until the drop.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0007",
-    "title": "Show people whether a destination can accept dragged content",
+    "title": "Indicate whether a destination accepts dragged content",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "providing-feedback",
     "statement": {
-      "en": "Present people whether a destination can accept dragged content in the documented context.",
-      "ja": "該当する状況でpeople whether a destination can accept dragged contentを表示する。"
+      "en": "Show whether the current destination can accept the dragged content.",
+      "ja": "現在のdestinationがdragged contentを受け入れられるか示す。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -152725,7 +152729,10 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use an insertion point or highlight for an accepting destination.",
+      "Use no visual feedback or an explicit not-allowed image for a rejecting destination.",
+      "Show destination cues only while content is above the destination.",
+      "When several destinations are possible, identify one at a time."
     ],
     "exceptions": [],
     "rationale": {
@@ -152735,7 +152742,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present people whether a destination can accept dragged content in the documented context.” in the documented Drag and drop context?"
+        "Does the design satisfy “Show whether the current destination can accept the dragged content.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152755,7 +152762,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "379a3090cd68d16e881e491ef588cc16ca6fc36cac2be7082a66c59c536b07b6",
-      "evidence_paraphrase": "Present people whether a destination can accept dragged content in the documented context."
+      "evidence_paraphrase": "Show whether the current destination can accept the dragged content."
     },
     "tags": [
       "patterns",
@@ -152764,22 +152771,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Present people whether a destination can accept dragged content in the documented context.",
+    "apple_native_rule": "Show whether the current destination can accept the dragged content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0008",
-    "title": "Provide feedback when dropped content needs time to transfer",
+    "title": "Show progress for time-consuming transfers",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "accepting-drops",
     "statement": {
-      "en": "Make feedback when dropped content needs time to transfer available when applicable.",
-      "ja": "必要な場合にfeedback when dropped content needs time to transferを利用可能にする。"
+      "en": "Provide feedback when dropped content takes time to transfer.",
+      "ja": "dropped contentのtransferに時間がかかる場合はfeedbackを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -152800,7 +152807,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A progress indicator can communicate remaining time.",
+      "In a collection, list, or table, a placeholder can preserve the drop location.",
+      "The system may alert people about a time-consuming cross-app transfer."
     ],
     "exceptions": [],
     "rationale": {
@@ -152810,7 +152819,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make feedback when dropped content needs time to transfer available when applicable.” in the documented Drag and drop context?"
+        "Does the design satisfy “Provide feedback when dropped content takes time to transfer.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152830,7 +152839,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "3c8b6afd5416ea284bc2b13c04146a0bb2ee50c0273994d566fcf760be1f6f08",
-      "evidence_paraphrase": "Make feedback when dropped content needs time to transfer available when applicable."
+      "evidence_paraphrase": "Provide feedback when dropped content takes time to transfer."
     },
     "tags": [
       "patterns",
@@ -152839,22 +152848,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make feedback when dropped content needs time to transfer available when applicable.",
+    "apple_native_rule": "Provide feedback when dropped content takes time to transfer.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0009",
-    "title": "Provide feedback when dropped content initiates a task or action",
+    "title": "Show task initiation and progress after a drop",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "accepting-drops",
     "statement": {
-      "en": "Make feedback when dropped content initiates a task or action available when applicable.",
-      "ja": "必要な場合にfeedback when dropped content initiates a task or actionを利用可能にする。"
+      "en": "When dropped content initiates a task, show that the task began and communicate its progress.",
+      "ja": "dropped contentがtaskを開始する場合、開始と進捗を示す。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -152875,7 +152884,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Apply when content is dropped on a control that starts an action such as printing."
     ],
     "exceptions": [],
     "rationale": {
@@ -152885,7 +152894,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make feedback when dropped content initiates a task or action available when applicable.” in the documented Drag and drop context?"
+        "Does the design satisfy “When dropped content initiates a task, show that the task began and communicate its progress.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152905,7 +152914,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "bfd2255d090be277927f7b70e609021d1da6c71af45e07d3e98799622bca96dd",
-      "evidence_paraphrase": "Make feedback when dropped content initiates a task or action available when applicable."
+      "evidence_paraphrase": "When dropped content initiates a task, show that the task began and communicate its progress."
     },
     "tags": [
       "patterns",
@@ -152914,22 +152923,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make feedback when dropped content initiates a task or action available when applicable.",
+    "apple_native_rule": "When dropped content initiates a task, show that the task began and communicate its progress.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0010",
-    "title": "Apply appropriate styling to dropped text",
+    "title": "Apply destination styling when text styles differ",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "accepting-drops",
     "statement": {
-      "en": "Apply the documented Drag and drop guidance to apply appropriate styling to dropped text.",
-      "ja": "「Drag and drop」において「Apply appropriate styling to dropped text」の指針を適用する。"
+      "en": "When source and destination don't support the same text styles, apply the destination's style to dropped text.",
+      "ja": "sourceとdestinationが同じtext styleに対応しない場合、dropped textへdestinationのstyleを適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -152950,7 +152959,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The compatible-style preservation requirement is recorded separately."
     ],
     "exceptions": [],
     "rationale": {
@@ -152960,7 +152969,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Drag and drop guidance to apply appropriate styling to dropped text.” in the documented Drag and drop context?"
+        "Does the design satisfy “When source and destination don't support the same text styles, apply the destination's style to dropped text.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -152980,7 +152989,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "aded906ab053710cb90e2ce754c1d6293516292975cc450a27d553105f028df1",
-      "evidence_paraphrase": "Apply the documented Drag and drop guidance to apply appropriate styling to dropped text."
+      "evidence_paraphrase": "When source and destination don't support the same text styles, apply the destination's style to dropped text."
     },
     "tags": [
       "patterns",
@@ -152989,7 +152998,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Drag and drop guidance to apply appropriate styling to dropped text.",
+    "apple_native_rule": "When source and destination don't support the same text styles, apply the destination's style to dropped text.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -153362,17 +153371,17 @@
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0016",
-    "title": "As much as possible, support drag and drop throughout your app",
+    "title": "Support drag and drop throughout the app",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Support drag and drop throughout your app wherever practicable.",
-      "ja": "可能な限りsupport drag and drop throughout your app。"
+      "en": "Support drag and drop throughout the app wherever practicable.",
+      "ja": "可能な限りapp全体でdrag and dropに対応する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -153393,7 +153402,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "System-provided text fields and text views include built-in support."
     ],
     "exceptions": [],
     "rationale": {
@@ -153403,7 +153412,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Support drag and drop throughout your app wherever practicable.” in the documented Drag and drop context?"
+        "Does the design satisfy “Support drag and drop throughout the app wherever practicable.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -153423,7 +153432,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "f8a024e1ce7b3e066787c0e02d2a9dccc05482554b45254a8de92f56580a6f14",
-      "evidence_paraphrase": "Support drag and drop throughout your app wherever practicable."
+      "evidence_paraphrase": "Support drag and drop throughout the app wherever practicable."
     },
     "tags": [
       "patterns",
@@ -153432,22 +153441,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Support drag and drop throughout your app wherever practicable.",
+    "apple_native_rule": "Support drag and drop throughout the app wherever practicable.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-DRAG-AND-DROP-0017",
-    "title": "Determine when dragging and dropping content within your app results in a move or a copy",
+    "title": "Define move and copy semantics within the app",
     "category": "patterns",
     "topic": "drag-and-drop",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Determine when dragging and dropping content within your app results in a move or a copy explicitly.",
-      "ja": "when dragging and dropping content within your app results in a move or a copyを明確に決定する。"
+      "en": "Define when a drag and drop within the app moves content and when it copies content.",
+      "ja": "app内のdrag and dropでcontentをmoveする場合とcopyする場合を定義する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -153468,7 +153477,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Moving is the general default within one container.",
+      "Copying is the general default between different containers.",
+      "Before changing a default, prefer expected behavior that minimizes frustration and data loss."
     ],
     "exceptions": [],
     "rationale": {
@@ -153478,7 +153489,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Determine when dragging and dropping content within your app results in a move or a copy explicitly.” in the documented Drag and drop context?"
+        "Does the design satisfy “Define when a drag and drop within the app moves content and when it copies content.” in the documented Drag and drop context?"
       ]
     },
     "testability": "manual",
@@ -153498,7 +153509,7 @@
       "retrieved_at": "2026-07-21T20:18:08Z",
       "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
       "source_sentence_hash": "37a3c34adaf62def3379ba7984611535422448003b590b83cee12b6051c3e1b3",
-      "evidence_paraphrase": "Determine when dragging and dropping content within your app results in a move or a copy explicitly."
+      "evidence_paraphrase": "Define when a drag and drop within the app moves content and when it copies content."
     },
     "tags": [
       "patterns",
@@ -153507,7 +153518,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Determine when dragging and dropping content within your app results in a move or a copy explicitly.",
+    "apple_native_rule": "Define when a drag and drop within the app moves content and when it copies content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -154094,6 +154105,839 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "When possible, launch the visionOS app to handle its content when people drop that content into empty space.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0026",
+    "title": "Treat every cross-app drag and drop as a copy",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "drag-and-drop",
+    "statement": {
+      "en": "Treat dragging and dropping content between apps as a copy.",
+      "ja": "app間でcontentをdrag and dropする場合はcopyとして扱う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The source and destination are in different apps."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Treat dragging and dropping content between apps as a copy.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "2852386a67a4c4156e35c952d7fdfd2618687a7ea8122357a9a6079bc890f432",
+      "evidence_paraphrase": "Treat dragging and dropping content between apps as a copy."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Treat dragging and dropping content between apps as a copy.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0027",
+    "title": "Provide continuous feedback throughout drag and drop",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "providing-feedback",
+    "statement": {
+      "en": "Provide clear and continuous feedback throughout every drag-and-drop interaction.",
+      "ja": "すべてのdrag-and-drop interactionを通じて明確で継続的なfeedbackを提供する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Drag and drop can produce multiple outcomes and people need to remain in control of the process."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide clear and continuous feedback throughout every drag-and-drop interaction.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Providing feedback"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "e3e7a169cbfe46f22bbb07300f5352a57d281d578f3db4ccd7daf6b46ce66158",
+      "evidence_paraphrase": "Provide clear and continuous feedback throughout every drag-and-drop interaction."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "providing-feedback"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Provide clear and continuous feedback throughout every drag-and-drop interaction.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0028",
+    "title": "Modify the drag image only when it adds clarity",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "providing-feedback",
+    "statement": {
+      "en": "When it adds clarity, modify the drag image to help people predict the drop result.",
+      "ja": "明確さが増す場合、drop結果を予測できるようdrag imageを変更する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "A change may preview the destination size or flock multiple dragged items."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When it adds clarity, modify the drag image to help people predict the drop result.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Providing feedback"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "de70ed14e8b6914c2511226ed3f995850fbe2ceeb4988a166a7a358fbcaed6ce",
+      "evidence_paraphrase": "When it adds clarity, modify the drag image to help people predict the drop result."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "providing-feedback"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When it adds clarity, modify the drag image to help people predict the drop result.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0029",
+    "title": "Avoid distracting drag-image changes",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "providing-feedback",
+    "statement": {
+      "en": "Avoid constantly and radically changing the drag image.",
+      "ja": "drag imageを絶えず大幅に変化させることを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Changes intended as feedback must not become distracting."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid constantly and radically changing the drag image.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Providing feedback"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "258d815f24121858ccfc16488fa5417078e8f1860df95a8e42e6cb5c39718909",
+      "evidence_paraphrase": "Avoid constantly and radically changing the drag image."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "providing-feedback"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid constantly and radically changing the drag image.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0030",
+    "title": "Show feedback for an invalid or failed drop",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "providing-feedback",
+    "statement": {
+      "en": "Provide visual feedback when a drop target is invalid or the drop fails.",
+      "ja": "drop targetがinvalidな場合やdropが失敗した場合はvisual feedbackを提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Return the item to a visible source or use a clear nonlanding animation."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide visual feedback when a drop target is invalid or the drop fails.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Providing feedback"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "168c253998d054dfa4ee90ce6ce0549a727e4ee5f88ecf54ad8c6ff655a7d68a",
+      "evidence_paraphrase": "Provide visual feedback when a drop target is invalid or the drop fails."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "providing-feedback"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Provide visual feedback when a drop target is invalid or the drop fails.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0031",
+    "title": "Autoscroll a destination while dragging when necessary",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "accepting-drops",
+    "statement": {
+      "en": "When necessary, scroll a destination's content while an item is dragged within it.",
+      "ja": "必要な場合、itemをdestination内でdragしている間はcontentをscrollする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use this behavior for a scrolling container with substantial content.",
+      "Stop autoscrolling when the drag leaves the container.",
+      "System text views and text fields provide this behavior by default."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When necessary, scroll a destination's content while an item is dragged within it.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Accepting drops"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "010a3fad6bf20a4079fdfaf5647be3acbd5b4289efaad50a8d3662dfe7407967",
+      "evidence_paraphrase": "When necessary, scroll a destination's content while an item is dragged within it."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "accepting-drops"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When necessary, scroll a destination's content while an item is dragged within it.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0032",
+    "title": "Accept the richest supported dropped-content version",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "accepting-drops",
+    "statement": {
+      "en": "When several versions are available, accept the richest version the app supports.",
+      "ja": "複数versionが利用可能な場合、appが対応する最もrichなversionを受け入れる。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Fall back to a simpler representation when the richer native object is unsupported."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When several versions are available, accept the richest version the app supports.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Accepting drops"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "496db26677fd8d76ac72efd4012f576c9465a5d36ce334d106d17e49ff047e08",
+      "evidence_paraphrase": "When several versions are available, accept the richest version the app supports."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "accepting-drops"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When several versions are available, accept the richest version the app supports.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0033",
+    "title": "Extract only relevant dropped content when necessary",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "accepting-drops",
+    "statement": {
+      "en": "When necessary, extract only the relevant portion of dropped content.",
+      "ja": "必要な場合、dropped contentから関連部分だけを抽出する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Exclude unrelated fields when the destination expects a focused subset."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When necessary, extract only the relevant portion of dropped content.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Accepting drops"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "db79622a3d0926ff35b5d24cec78df356698be34a62971fc08fc3ddaf9ee47b3",
+      "evidence_paraphrase": "When necessary, extract only the relevant portion of dropped content."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "accepting-drops"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When necessary, extract only the relevant portion of dropped content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0034",
+    "title": "Check the Option key at drop time",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "accepting-drops",
+    "statement": {
+      "en": "When a physical keyboard is attached, check the Option key state at drop time.",
+      "ja": "physical keyboardが接続されている場合、drop時にOption keyの状態を確認する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "Holding Option makes a same-container drag copy content.",
+      "Releasing Option before a same-container drop makes the operation move content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “When a physical keyboard is attached, check the Option key state at drop time.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Accepting drops"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "82b463ea695d0407a2c0c8ff9870b1e7f8781e72814aa518cd3dbe1d84409d37",
+      "evidence_paraphrase": "When a physical keyboard is attached, check the Option key state at drop time."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "accepting-drops",
+      "keyboard"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When a physical keyboard is attached, check the Option key state at drop time.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0035",
+    "title": "Preserve compatible source styling in dropped text",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "accepting-drops",
+    "statement": {
+      "en": "When source and destination support the same text styles, preserve the dropped text's original styling.",
+      "ja": "sourceとdestinationが同じtext styleに対応する場合、dropped textの元のstyleを維持する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve the original font, typeface, size, and other supported attributes."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When source and destination support the same text styles, preserve the dropped text's original styling.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Accepting drops"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "30f202d1ab899237ae0941991bf132acea4c328e7b295278efc8d4efdc07206a",
+      "evidence_paraphrase": "When source and destination support the same text styles, preserve the dropped text's original styling."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "accepting-drops"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When source and destination support the same text styles, preserve the dropped text's original styling.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-DRAG-AND-DROP-0036",
+    "title": "Update selection state after a drop",
+    "category": "patterns",
+    "topic": "drag-and-drop",
+    "subtopic": "accepting-drops",
+    "statement": {
+      "en": "After a drop, keep the dropped content selected in the destination and update source selection as needed.",
+      "ja": "drop後はdestinationでdropped contentのselectionを保ち、必要に応じてsource selectionを更新する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "For a same-container move, remove content from its original location.",
+      "For a same-container copy, deselect the content that remains at the original location.",
+      "For a drop into a different container, deselect the source content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Drag and drop experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDrag and dropの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “After a drop, keep the dropped content selected in the destination and update source selection as needed.” in the documented Drag and drop context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+      "page_title": "Drag and drop",
+      "section_path": [
+        "Drag and drop",
+        "Accepting drops"
+      ],
+      "retrieved_at": "2026-07-21T20:18:08Z",
+      "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd",
+      "source_sentence_hash": "85817eb26f82641a023c32b9e252f5ae344cc2ed5e8b22d64346d33d5722580c",
+      "evidence_paraphrase": "After a drop, keep the dropped content selected in the destination and update source selection as needed."
+    },
+    "tags": [
+      "patterns",
+      "drag-and-drop",
+      "accepting-drops"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "After a drop, keep the dropped content selected in the destination and update source selection as needed.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {

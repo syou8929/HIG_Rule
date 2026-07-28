@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T16:32:44.152Z. 3533 active rules; 8 deprecated rules.
+Generated 2026-07-28T16:41:58.626Z. 3544 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -694,23 +694,23 @@ Generated 2026-07-28T16:32:44.152Z. 3533 active rules; 8 deprecated rules.
 - **HIG-PATTERNS-COLLABORATION-AND-SHARING-0010 · SHOULD · high** — In a watchOS SwiftUI app, use ShareLink to present the system-provided share sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
 ### drag-and-drop
 
-- **HIG-PATTERNS-DRAG-AND-DROP-0001 · SHOULD · low** — Make alternative ways to accomplish drag-and-drop actions available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0002 · SHOULD · low** — Ensure the experience accommodates multi-item drag and drop when it makes sense. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0003 · SHOULD · low** — Favor letting people undo a drag-and-drop operation when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0004 · MAY · low** — Evaluate whether offering multiple versions of dragged content, ordered from highest to lowest fidelity is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0005 · MAY · low** — Evaluate whether supporting spring loading is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0006 · SHOULD · low** — Present a drag image as soon as people drag a selection about three points in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0007 · SHOULD · low** — Present people whether a destination can accept dragged content in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0008 · SHOULD · low** — Make feedback when dropped content needs time to transfer available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0009 · SHOULD · low** — Make feedback when dropped content initiates a task or action available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0010 · SHOULD · low** — Apply the documented Drag and drop guidance to apply appropriate styling to dropped text. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0001 · SHOULD · high** — Offer ways other than drag and drop to accomplish supported drag-and-drop actions. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0002 · SHOULD · high** — Support multi-item drag and drop when moving a group is useful. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0003 · SHOULD · high** — Prefer letting people undo a drag-and-drop operation. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0004 · MAY · high** — Consider offering multiple representations of dragged content from highest to lowest fidelity. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0005 · MAY · high** — Consider supporting spring loading for controls that can activate while content is dragged over them. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0006 · SHOULD · high** — Show a drag image after about three points of movement and keep it visible until the drop. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0007 · SHOULD · high** — Show whether the current destination can accept the dragged content. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0008 · SHOULD · high** — Provide feedback when dropped content takes time to transfer. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0009 · SHOULD · high** — When dropped content initiates a task, show that the task began and communicate its progress. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0010 · SHOULD · high** — When source and destination don't support the same text styles, apply the destination's style to dropped text. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0011 · SHOULD · high** — Let people perform multiple simultaneous drag activities in iOS and iPadOS. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0012 · MAY · high** — Consider letting people drag content from a macOS app into the Finder. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0013 · SHOULD · high** — Let people drag selected content from an inactive macOS window without activating it first. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0014 · MAY · high** — Consider showing a numeric badge during a macOS multi-item drag. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0015 · MAY · high** — Consider changing the macOS pointer to indicate the result of dropping content. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0016 · SHOULD · low** — Support drag and drop throughout your app wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- **HIG-PATTERNS-DRAG-AND-DROP-0017 · SHOULD · low** — Determine when dragging and dropping content within your app results in a move or a copy explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0016 · SHOULD · high** — Support drag and drop throughout the app wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0017 · SHOULD · high** — Define when a drag and drop within the app moves content and when it copies content. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0018 · SHOULD · high** — Wherever practicable, let people select and drag macOS content in one motion. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0019 · MUST · high** — Let people add items while an iPadOS drag session is in progress. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0020 · MUST · high** — Show flocking feedback when people add items to an in-progress iPadOS drag. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
@@ -719,6 +719,17 @@ Generated 2026-07-28T16:32:44.152Z. 3533 active rules; 8 deprecated rules.
 - **HIG-PATTERNS-DRAG-AND-DROP-0023 · MAY · high** — When necessary, consider using a clipping as a temporary container for dragged macOS content. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0024 · SHOULD · high** — When possible, let people drag an individual item from an inactive macOS window without changing its background selection. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - **HIG-PATTERNS-DRAG-AND-DROP-0025 · SHOULD · high** — When possible, launch the visionOS app to handle its content when people drop that content into empty space. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0026 · MUST · high** — Treat dragging and dropping content between apps as a copy. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0027 · MUST · high** — Provide clear and continuous feedback throughout every drag-and-drop interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0028 · SHOULD · high** — When it adds clarity, modify the drag image to help people predict the drop result. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0029 · AVOID · high** — Avoid constantly and radically changing the drag image. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0030 · SHOULD · high** — Provide visual feedback when a drop target is invalid or the drop fails. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0031 · SHOULD · high** — When necessary, scroll a destination's content while an item is dragged within it. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0032 · SHOULD · high** — When several versions are available, accept the richest version the app supports. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0033 · SHOULD · high** — When necessary, extract only the relevant portion of dropped content. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0034 · SHOULD · high** — When a physical keyboard is attached, check the Option key state at drop time. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0035 · MUST · high** — When source and destination support the same text styles, preserve the dropped text's original styling. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- **HIG-PATTERNS-DRAG-AND-DROP-0036 · SHOULD · high** — After a drop, keep the dropped content selected in the destination and update source selection as needed. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 ### entering-data
 
 - **HIG-PATTERNS-ENTERING-DATA-0001 · SHOULD · low** — Apply the documented Entering data guidance to be clear about the data you need. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))

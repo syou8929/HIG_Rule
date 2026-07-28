@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:29:18Z",
+  "reviewed_at": "2026-07-28T16:37:24Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5338,6 +5338,45 @@
         "HIG-PATTERNS-COLLABORATION-AND-SHARING-0010"
       ],
       "review_note": "Completed Collaboration and sharing coverage, concretized five queued rules, recovered five universal-link, customization, button-state, and watchOS rules, and retained the custom-infrastructure universal-link outcome as MUST."
+    },
+    {
+      "id": "priority-6-drag-and-drop-common-context-2026-07-29",
+      "reviewed_at": "2026-07-28T16:37:24Z",
+      "review_method": "Rendered Apple HIG Drag and drop overview, best-practice, feedback, accepting-drop, platform, resource, and supporting context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/drag-and-drop",
+          "source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-DRAG-AND-DROP-0001",
+        "HIG-PATTERNS-DRAG-AND-DROP-0002",
+        "HIG-PATTERNS-DRAG-AND-DROP-0003",
+        "HIG-PATTERNS-DRAG-AND-DROP-0004",
+        "HIG-PATTERNS-DRAG-AND-DROP-0005",
+        "HIG-PATTERNS-DRAG-AND-DROP-0006",
+        "HIG-PATTERNS-DRAG-AND-DROP-0007",
+        "HIG-PATTERNS-DRAG-AND-DROP-0008",
+        "HIG-PATTERNS-DRAG-AND-DROP-0009",
+        "HIG-PATTERNS-DRAG-AND-DROP-0010",
+        "HIG-PATTERNS-DRAG-AND-DROP-0016",
+        "HIG-PATTERNS-DRAG-AND-DROP-0017",
+        "HIG-PATTERNS-DRAG-AND-DROP-0026",
+        "HIG-PATTERNS-DRAG-AND-DROP-0027",
+        "HIG-PATTERNS-DRAG-AND-DROP-0028",
+        "HIG-PATTERNS-DRAG-AND-DROP-0029",
+        "HIG-PATTERNS-DRAG-AND-DROP-0030",
+        "HIG-PATTERNS-DRAG-AND-DROP-0031",
+        "HIG-PATTERNS-DRAG-AND-DROP-0032",
+        "HIG-PATTERNS-DRAG-AND-DROP-0033",
+        "HIG-PATTERNS-DRAG-AND-DROP-0034",
+        "HIG-PATTERNS-DRAG-AND-DROP-0035",
+        "HIG-PATTERNS-DRAG-AND-DROP-0036"
+      ],
+      "review_note": "Completed the common Drag and drop review, concretized twelve queued rules, recovered eleven move-copy, feedback, acceptance, keyboard, styling, and selection rules, and retained three explicit Always, crucial, and Make sure outcomes as MUST."
     }
   ],
   "rules": {
@@ -15477,6 +15516,190 @@
       "source": {"source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a", "source_sentence_hash": "2272ddeddeab99c4d7af0e573842f679c2eec6cc2a9bf4b010976bcdb52aeeec", "section_path": ["Remotes", "Compatible remotes"]},
       "title": "Change channels with page buttons during playback", "statement": {"en": "During content playback, make a compatible remote's page up and page down buttons change channels.", "ja": "content playback中はcompatible remoteのpage upとpage down buttonでchannelを変更する。"},
       "scope": {"portability": "platform-specific", "platforms": ["tvos"], "devices": ["apple-tv"], "components": [], "modalities": ["remote-control"]}, "conditions": ["Channel-based content is playing rather than an EPG being browsed."], "review_note": "Activated the playback-specific channel behavior and separated it from EPG paging."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0001": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "1b22548e8b8e0f6528ec607add73a50d1f21328673c70bf6e7bcfae2c8f3ffae", "section_path": ["Drag and drop", "Best practices"]},
+      "title": "Offer alternatives to drag and drop",
+      "statement": {"en": "Offer ways other than drag and drop to accomplish supported drag-and-drop actions.", "ja": "対応するdrag-and-drop actionを実行するためのdrag and drop以外の方法を提供する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Alternative methods are important when drag and drop is inconvenient or impossible.", "Menu commands can provide equivalent copy and move actions.", "On iOS and iPadOS, identify sources and destinations for assistive technologies with the relevant accessibility APIs."],
+      "review_note": "Recorded the equivalent-action accessibility outcome and the source's menu and accessibility-API mechanisms."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0002": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "0217031f1cb00b596358c8d86f6c83f66f0efad858b9795ebc6b0ab2d0fc801d", "section_path": ["Drag and drop", "Best practices"]},
+      "title": "Support multi-item drag and drop when useful",
+      "statement": {"en": "Support multi-item drag and drop when moving a group is useful.", "ja": "item groupの移動が有用な場合はmulti-item drag and dropに対応する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Apply on iOS, iPadOS, macOS, and visionOS where the source supports multiple selection.", "On iPadOS, people can add items without stopping an in-progress drag."],
+      "review_note": "Concretized the usefulness condition and recorded the page's platform and in-progress-addition context."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0003": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "02d22959cf1097f8d3c5aef177140f3f5681b0206fad4cc13b2afe040e254b37", "section_path": ["Drag and drop", "Best practices"]},
+      "title": "Let people undo drag and drop",
+      "statement": {"en": "Prefer letting people undo a drag-and-drop operation.", "ja": "drag-and-drop operationをundoできるようにすることを優先する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Ask for confirmation before completing an operation that can't be undone when doing so helps prevent mistakes.", "When undo is unavailable, consider a way to reverse the result."],
+      "review_note": "Preserved Prefer strength and recorded the confirmation and result-reversal fallbacks."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0004": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "6abf7db8c7bc8b53f3082521af382df9d45fd4740bbf90e6f7bfd2ed1e44a914", "section_path": ["Drag and drop", "Best practices"]},
+      "title": "Consider multiple dragged-content representations",
+      "statement": {"en": "Consider offering multiple representations of dragged content from highest to lowest fidelity.", "ja": "dragged contentの複数表現をfidelityの高い順に提供することを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Ordering lets the destination choose the highest-fidelity representation it supports."],
+      "review_note": "Retained Consider as MAY and recorded the destination-negotiation purpose."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0005": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "b691d5abdf7dfb9bab0cfa6565f0e38dd1bed3947f1da3f13256f907c27a859b", "section_path": ["Drag and drop", "Best practices"]},
+      "title": "Consider supporting spring loading",
+      "statement": {"en": "Consider supporting spring loading for controls that can activate while content is dragged over them.", "ja": "contentをdragしたままactivateできるcontrolでspring loadingへの対応を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Activation may use force click on a supported Mac trackpad or hover on iPad."],
+      "review_note": "Retained Consider as MAY and concretized the control activation behavior."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0006": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "a444c237d6ed9dbb20ae3cd6f758df5ade35c0ba00287593e118c3a74d715972", "section_path": ["Drag and drop", "Providing feedback"]},
+      "title": "Show a drag image throughout the drag",
+      "statement": {"en": "Show a drag image after about three points of movement and keep it visible until the drop.", "ja": "約3 point移動した時点でdrag imageを表示し、dropまで表示を保つ。"},
+      "normative_level": "SHOULD",
+      "conditions": ["A translucent representation distinguishes dragged content from its source and keeps destinations visible."],
+      "review_note": "Combined the source's start threshold and end state into one drag-image lifecycle."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0007": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "379a3090cd68d16e881e491ef588cc16ca6fc36cac2be7082a66c59c536b07b6", "section_path": ["Drag and drop", "Providing feedback"]},
+      "title": "Indicate whether a destination accepts dragged content",
+      "statement": {"en": "Show whether the current destination can accept the dragged content.", "ja": "現在のdestinationがdragged contentを受け入れられるか示す。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use an insertion point or highlight for an accepting destination.", "Use no visual feedback or an explicit not-allowed image for a rejecting destination.", "Show destination cues only while content is above the destination.", "When several destinations are possible, identify one at a time."],
+      "review_note": "Repaired generated wording and recorded accepting, rejecting, lifecycle, and multiple-destination states."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0008": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "3c8b6afd5416ea284bc2b13c04146a0bb2ee50c0273994d566fcf760be1f6f08", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Show progress for time-consuming transfers",
+      "statement": {"en": "Provide feedback when dropped content takes time to transfer.", "ja": "dropped contentのtransferに時間がかかる場合はfeedbackを提供する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["A progress indicator can communicate remaining time.", "In a collection, list, or table, a placeholder can preserve the drop location.", "The system may alert people about a time-consuming cross-app transfer."],
+      "review_note": "Concretized the transfer-delay state and recorded its progress, placeholder, and system-alert mechanisms."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0009": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "bfd2255d090be277927f7b70e609021d1da6c71af45e07d3e98799622bca96dd", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Show task initiation and progress after a drop",
+      "statement": {"en": "When dropped content initiates a task, show that the task began and communicate its progress.", "ja": "dropped contentがtaskを開始する場合、開始と進捗を示す。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Apply when content is dropped on a control that starts an action such as printing."],
+      "review_note": "Recorded both required feedback states from the supporting sentence."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0010": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "aded906ab053710cb90e2ce754c1d6293516292975cc450a27d553105f028df1", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Apply destination styling when text styles differ",
+      "statement": {"en": "When source and destination don't support the same text styles, apply the destination's style to dropped text.", "ja": "sourceとdestinationが同じtext styleに対応しない場合、dropped textへdestinationのstyleを適用する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The compatible-style preservation requirement is recorded separately."],
+      "review_note": "Narrowed the general lead to the incompatible-style branch so it doesn't duplicate the explicit Make sure requirement."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0016": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "f8a024e1ce7b3e066787c0e02d2a9dccc05482554b45254a8de92f56580a6f14", "section_path": ["Drag and drop", "Best practices"]},
+      "title": "Support drag and drop throughout the app",
+      "statement": {"en": "Support drag and drop throughout the app wherever practicable.", "ja": "可能な限りapp全体でdrag and dropに対応する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["System-provided text fields and text views include built-in support."],
+      "review_note": "Preserved the As much as possible qualification and recorded the system-component baseline."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0017": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "37a3c34adaf62def3379ba7984611535422448003b590b83cee12b6051c3e1b3", "section_path": ["Drag and drop", "Best practices"]},
+      "title": "Define move and copy semantics within the app",
+      "statement": {"en": "Define when a drag and drop within the app moves content and when it copies content.", "ja": "app内のdrag and dropでcontentをmoveする場合とcopyする場合を定義する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Moving is the general default within one container.", "Copying is the general default between different containers.", "Before changing a default, prefer expected behavior that minimizes frustration and data loss."],
+      "review_note": "Concretized the decision and preserved the two defaults plus the expectation and data-loss review."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0026": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "2852386a67a4c4156e35c952d7fdfd2618687a7ea8122357a9a6079bc890f432", "section_path": ["Drag and drop"]},
+      "title": "Treat every cross-app drag and drop as a copy",
+      "statement": {"en": "Treat dragging and dropping content between apps as a copy.", "ja": "app間でcontentをdrag and dropする場合はcopyとして扱う。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The source and destination are in different apps."],
+      "review_note": "Recovered the explicit Always platform contract for cross-app copy semantics."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0027": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "e3e7a169cbfe46f22bbb07300f5352a57d281d578f3db4ccd7daf6b46ce66158", "section_path": ["Drag and drop", "Providing feedback"]},
+      "title": "Provide continuous feedback throughout drag and drop",
+      "statement": {"en": "Provide clear and continuous feedback throughout every drag-and-drop interaction.", "ja": "すべてのdrag-and-drop interactionを通じて明確で継続的なfeedbackを提供する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Drag and drop can produce multiple outcomes and people need to remain in control of the process."],
+      "review_note": "Classified the unqualified outcome as MUST because the source calls continuous process feedback crucial."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0028": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "de70ed14e8b6914c2511226ed3f995850fbe2ceeb4988a166a7a358fbcaed6ce", "section_path": ["Drag and drop", "Providing feedback"]},
+      "title": "Modify the drag image only when it adds clarity",
+      "statement": {"en": "When it adds clarity, modify the drag image to help people predict the drop result.", "ja": "明確さが増す場合、drop結果を予測できるようdrag imageを変更する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["A change may preview the destination size or flock multiple dragged items."],
+      "review_note": "Activated the omitted conditional feedback and preserved clarity as its gate."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0029": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "258d815f24121858ccfc16488fa5417078e8f1860df95a8e42e6cb5c39718909", "section_path": ["Drag and drop", "Providing feedback"]},
+      "title": "Avoid distracting drag-image changes",
+      "statement": {"en": "Avoid constantly and radically changing the drag image.", "ja": "drag imageを絶えず大幅に変化させることを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Changes intended as feedback must not become distracting."],
+      "review_note": "Recovered the direct Avoid constraint without raising it to MUST_NOT."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0030": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "168c253998d054dfa4ee90ce6ce0549a727e4ee5f88ecf54ad8c6ff655a7d68a", "section_path": ["Drag and drop", "Providing feedback"]},
+      "title": "Show feedback for an invalid or failed drop",
+      "statement": {"en": "Provide visual feedback when a drop target is invalid or the drop fails.", "ja": "drop targetがinvalidな場合やdropが失敗した場合はvisual feedbackを提供する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Return the item to a visible source or use a clear nonlanding animation."],
+      "review_note": "Activated the omitted error-state rule and recorded both source-visible and source-unavailable techniques."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0031": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "010a3fad6bf20a4079fdfaf5647be3acbd5b4289efaad50a8d3662dfe7407967", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Autoscroll a destination while dragging when necessary",
+      "statement": {"en": "When necessary, scroll a destination's content while an item is dragged within it.", "ja": "必要な場合、itemをdestination内でdragしている間はcontentをscrollする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use this behavior for a scrolling container with substantial content.", "Stop autoscrolling when the drag leaves the container.", "System text views and text fields provide this behavior by default."],
+      "review_note": "Activated the omitted scrolling state and captured its container, exit, and system-default boundaries."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0032": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "496db26677fd8d76ac72efd4012f576c9465a5d36ce334d106d17e49ff047e08", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Accept the richest supported dropped-content version",
+      "statement": {"en": "When several versions are available, accept the richest version the app supports.", "ja": "複数versionが利用可能な場合、appが対応する最もrichなversionを受け入れる。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Fall back to a simpler representation when the richer native object is unsupported."],
+      "review_note": "Activated the omitted negotiation rule and preserved the supported-richest and fallback branches."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0033": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "db79622a3d0926ff35b5d24cec78df356698be34a62971fc08fc3ddaf9ee47b3", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Extract only relevant dropped content when necessary",
+      "statement": {"en": "When necessary, extract only the relevant portion of dropped content.", "ja": "必要な場合、dropped contentから関連部分だけを抽出する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Exclude unrelated fields when the destination expects a focused subset."],
+      "review_note": "Activated the omitted conditional extraction rule and recorded its data-minimization boundary."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0034": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "82b463ea695d0407a2c0c8ff9870b1e7f8781e72814aa518cd3dbe1d84409d37", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Check the Option key at drop time",
+      "statement": {"en": "When a physical keyboard is attached, check the Option key state at drop time.", "ja": "physical keyboardが接続されている場合、drop時にOption keyの状態を確認する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Holding Option makes a same-container drag copy content.", "Releasing Option before a same-container drop makes the operation move content."],
+      "review_note": "Activated the omitted keyboard contract and recorded both modifier states."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0035": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "30f202d1ab899237ae0941991bf132acea4c328e7b295278efc8d4efdc07206a", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Preserve compatible source styling in dropped text",
+      "statement": {"en": "When source and destination support the same text styles, preserve the dropped text's original styling.", "ja": "sourceとdestinationが同じtext styleに対応する場合、dropped textの元のstyleを維持する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Preserve the original font, typeface, size, and other supported attributes."],
+      "review_note": "Recovered the conditional Make sure styling requirement and kept the incompatible-style branch separate."
+    },
+    "HIG-PATTERNS-DRAG-AND-DROP-0036": {
+      "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "85817eb26f82641a023c32b9e252f5ae344cc2ed5e8b22d64346d33d5722580c", "section_path": ["Drag and drop", "Accepting drops"]},
+      "title": "Update selection state after a drop",
+      "statement": {"en": "After a drop, keep the dropped content selected in the destination and update source selection as needed.", "ja": "drop後はdestinationでdropped contentのselectionを保ち、必要に応じてsource selectionを更新する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["For a same-container move, remove content from its original location.", "For a same-container copy, deselect the content that remains at the original location.", "For a drop into a different container, deselect the source content."],
+      "review_note": "Activated the omitted post-drop rule and preserved all three move, same-container copy, and different-container states."
     },
     "HIG-PATTERNS-DRAG-AND-DROP-0011": {
       "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "af604ad054f436a84f786bc698a8e952c1391b20cc04d55f7f6823e2cf131b8f", "section_path": ["Drag and drop", "Platform considerations", "iOS, iPadOS"]},

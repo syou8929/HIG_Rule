@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3401
-- Reviewed batches: 197
+- Reviewed rules: 3424
+- Reviewed batches: 198
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:29:18Z
+- Reviewed at: 2026-07-28T16:37:24Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1954,11 +1954,23 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-COLLABORATION-AND-SHARING-0008 · high — Activated the omitted state-transition rule and recorded both the immediate timing and button meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
 - HIG-PATTERNS-COLLABORATION-AND-SHARING-0009 · high — Activated the omitted optional customization and classified If it makes sense as MAY instead of an unconditional recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
 - HIG-PATTERNS-COLLABORATION-AND-SHARING-0010 · high — Recovered the omitted watchOS-specific implementation guidance and kept its SwiftUI condition. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-DRAG-AND-DROP-0001 · high — Recorded the equivalent-action accessibility outcome and the source's menu and accessibility-API mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0002 · high — Concretized the usefulness condition and recorded the page's platform and in-progress-addition context. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0003 · high — Preserved Prefer strength and recorded the confirmation and result-reversal fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0004 · high — Retained Consider as MAY and recorded the destination-negotiation purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0005 · high — Retained Consider as MAY and concretized the control activation behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0006 · high — Combined the source's start threshold and end state into one drag-image lifecycle. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0007 · high — Repaired generated wording and recorded accepting, rejecting, lifecycle, and multiple-destination states. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0008 · high — Concretized the transfer-delay state and recorded its progress, placeholder, and system-alert mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0009 · high — Recorded both required feedback states from the supporting sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0010 · high — Narrowed the general lead to the incompatible-style branch so it doesn't duplicate the explicit Make sure requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0011 · high — Recorded touch scope and separated the general capability from its three explicit implementation requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0012 · high — Retained MAY and separated the conditional reopenable-format requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0013 · high — Repaired generated wording and recorded the background-selection state. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0014 · high — Retained MAY and recorded both initial and destination-filtered badge counts. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0015 · high — Retained MAY and recorded all documented pointer alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0016 · high — Preserved the As much as possible qualification and recorded the system-component baseline. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0017 · high — Concretized the decision and preserved the two defaults plus the expectation and data-loss review. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0018 · high — Preserved the practicability qualifier and multiple-selection exception. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0019 · high — Separated the first explicit implementation requirement from the general multi-drag recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0020 · high — Separated the mandatory visual-feedback mechanism from the other multi-drag requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
@@ -1967,6 +1979,17 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-DRAG-AND-DROP-0023 · high — Recovered the qualified clipping option without raising its strength. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0024 · high — Activated the practicability-qualified inactive-window behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0025 · high — Activated the practicability-qualified visionOS launch behavior and recorded its user-activity mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0026 · high — Recovered the explicit Always platform contract for cross-app copy semantics. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0027 · high — Classified the unqualified outcome as MUST because the source calls continuous process feedback crucial. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0028 · high — Activated the omitted conditional feedback and preserved clarity as its gate. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0029 · high — Recovered the direct Avoid constraint without raising it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0030 · high — Activated the omitted error-state rule and recorded both source-visible and source-unavailable techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0031 · high — Activated the omitted scrolling state and captured its container, exit, and system-default boundaries. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0032 · high — Activated the omitted negotiation rule and preserved the supported-richest and fallback branches. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0033 · high — Activated the omitted conditional extraction rule and recorded its data-minimization boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0034 · high — Activated the omitted keyboard contract and recorded both modifier states. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0035 · high — Recovered the conditional Make sure styling requirement and kept the incompatible-style branch separate. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0036 · high — Activated the omitted post-drop rule and preserved all three move, same-container copy, and different-container states. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-ENTERING-DATA-0004 · high — Preserved the source's Consider strength and recorded its clipping, hover, and platform scope without inventing editing-specific behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-FEEDBACK-0001 · high — Retained the accessibility-critical MUST and recorded the source's multimodal examples and receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0002 · high — Retained MAY and recorded the proximity, no-action, and unobtrusive-access conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))

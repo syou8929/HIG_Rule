@@ -1,10 +1,10 @@
 # Exact duplicate source review
 
-- Candidate groups: 8
-- Reviewed contextual groups: 8
+- Candidate groups: 7
+- Reviewed contextual groups: 7
 - Unresolved groups: 0
 - Official source only: yes
-- Reviewed at: 2026-07-23T12:51:11Z
+- Reviewed at: 2026-07-28T16:41:22Z
 
 Exact statements are retained only when separate Apple HIG pages, sections, components, technologies, or platform scopes need independent retrieval. This is not a claim of authoritative HIG compliance.
 
@@ -22,9 +22,6 @@ Exact statements are retained only when separate Apple HIG pages, sections, comp
 - HIG-COMPONENTS-ACTIVITY-RINGS-0026, HIG-TECHNOLOGIES-HEALTHKIT-0038 — Retained because the same ornamentation prohibition is independently discoverable in the Activity rings component and the broader HealthKit technology context.
   - HIG-COMPONENTS-ACTIVITY-RINGS-0026: Activity rings > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/activity-rings))
   - HIG-TECHNOLOGIES-HEALTHKIT-0038: HealthKit > Activity rings ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
-- HIG-COMPONENTS-BUTTONS-0009, HIG-PATTERNS-DRAG-AND-DROP-0005 — Retained because spring loading is independently discoverable for macOS buttons and the broader drag-and-drop pattern; the source-reviewed segmented-control rule is now context-specific.
-  - HIG-COMPONENTS-BUTTONS-0009: Buttons > Platform considerations > macOS > Push buttons ([source](https://developer.apple.com/design/human-interface-guidelines/buttons))
-  - HIG-PATTERNS-DRAG-AND-DROP-0005: Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-COMPONENTS-COLUMN-VIEWS-0003, HIG-COMPONENTS-OUTLINE-VIEWS-0004 — Retained because column resizing remains independently discoverable in the macOS Column views and Outline views component contexts.
   - HIG-COMPONENTS-COLUMN-VIEWS-0003: Column views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
   - HIG-COMPONENTS-OUTLINE-VIEWS-0004: Outline views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
