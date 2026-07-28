@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3391
-- Reviewed batches: 196
+- Reviewed rules: 3401
+- Reviewed batches: 197
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:23:49Z
+- Reviewed at: 2026-07-28T16:29:18Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1944,6 +1944,16 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-CHARTING-DATA-0008 · high — Activated the conditional novel-chart onboarding rule and generalized the source example without persisting it. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
 - HIG-PATTERNS-CHARTING-DATA-0009 · high — Activated the omitted lead and preserved all three levels of analysis. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
 - HIG-PATTERNS-CHARTING-DATA-0010 · high — Activated the omitted descriptive-text rule, recorded every text role, and preserved the accessibility-label boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0001 · high — Concretized the placement outcome and preserved sharing and collaboration as the two supported starts. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0002 · high — Concretized the permission-summary role and the access and editing concepts it needs to communicate. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0003 · high — Recorded the simplicity outcome plus the source's minimum-choice and glanceable-grouping constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0004 · high — Reframed the generated availability wording as a restriction and preserved the essential-item boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0005 · high — Retained Consider as MAY and recorded the event-type and destination-link requirements for the optional path. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0006 · high — Recovered the embedded Make sure directive and retained its custom-infrastructure condition. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0007 · high — Activated the omitted conditional customization rule and preserved the custom-collaboration Send Copy mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0008 · high — Activated the omitted state-transition rule and recorded both the immediate timing and button meaning. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0009 · high — Activated the omitted optional customization and classified If it makes sense as MAY instead of an unconditional recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0010 · high — Recovered the omitted watchOS-specific implementation guidance and kept its SwiftUI condition. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
 - HIG-PATTERNS-DRAG-AND-DROP-0011 · high — Recorded touch scope and separated the general capability from its three explicit implementation requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0012 · high — Retained MAY and separated the conditional reopenable-format requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0013 · high — Repaired generated wording and recorded the background-selection state. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))

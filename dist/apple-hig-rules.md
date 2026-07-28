@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T16:25:10.427Z. 3528 active rules; 8 deprecated rules.
+Generated 2026-07-28T16:32:44.152Z. 3533 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -682,11 +682,16 @@ Generated 2026-07-28T16:25:10.427Z. 3528 active rules; 8 deprecated rules.
 - **HIG-PATTERNS-CHARTING-DATA-0010 · SHOULD · high** — Add concise descriptive text that helps people understand a chart’s essential information and takeaways. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
 ### collaboration-and-sharing
 
-- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0001 · SHOULD · low** — Apply the documented Collaboration and sharing guidance to place the Share button in a convenient location, like a toolbar, to make it easy for people to start. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
-- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0002 · SHOULD · low** — Apply the documented Collaboration and sharing guidance to write succinct phrases that summarize the sharing permissions you support. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
-- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0003 · SHOULD · low** — Make a set of simple sharing options that streamline collaboration setup available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
-- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0004 · SHOULD · low** — Make custom actions in the collaboration popover only if needed available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
-- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0005 · MAY · low** — Evaluate whether posting collaboration event notifications in Messages is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0001 · SHOULD · high** — Place the Share button in a convenient location so people can easily start sharing or collaborating. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0002 · SHOULD · high** — Use succinct phrases to summarize the sharing permissions the collaboration supports. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0003 · SHOULD · high** — Provide a simple set of sharing options that streamlines collaboration setup. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0004 · SHOULD · high** — Add custom actions to the collaboration popover only when they are needed. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0005 · MAY · high** — Consider posting relevant collaboration event notifications in Messages. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0006 · MUST · high** — When using custom collaboration infrastructure to offer these features, ensure the app supports universal links. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0007 · SHOULD · high** — Customize the share sheet or sharing popover only when necessary to offer supported file-sharing types. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0008 · SHOULD · high** — Prominently display the Collaboration button as soon as collaboration starts. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0009 · MAY · high** — Consider customizing the collaboration-management button title when it better fits the app. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- **HIG-PATTERNS-COLLABORATION-AND-SHARING-0010 · SHOULD · high** — In a watchOS SwiftUI app, use ShareLink to present the system-provided share sheet. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
 ### drag-and-drop
 
 - **HIG-PATTERNS-DRAG-AND-DROP-0001 · SHOULD · low** — Make alternative ways to accomplish drag-and-drop actions available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))

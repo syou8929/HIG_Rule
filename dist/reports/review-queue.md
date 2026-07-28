@@ -1,26 +1,33 @@
 # Human source-review queue
 
-- Remaining rules: 115
+- Remaining rules: 110
 - Next priority: 6 (apple-platform-common)
-- Next batch: 5
+- Next batch: 12
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 92
+- 6 (apple-platform-common): 87
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 1
-- MAY: 15
-- SHOULD: 99
+- MAY: 14
+- SHOULD: 95
 
 ## Next batch
 
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0001 · SHOULD — Place the Share button in a convenient location, like a toolbar, to make it easy for people to start · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0002 · SHOULD — Write succinct phrases that summarize the sharing permissions you support · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0003 · SHOULD — Provide a set of simple sharing options that streamline collaboration setup · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0004 · SHOULD — Provide custom actions in the collaboration popover only if needed · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0005 · MAY — Consider posting collaboration event notifications in Messages · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-DRAG-AND-DROP-0001 · SHOULD — Offer alternative ways to accomplish drag-and-drop actions · Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0002 · SHOULD — Support multi-item drag and drop when it makes sense · Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0003 · SHOULD — Prefer letting people undo a drag-and-drop operation · Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0006 · SHOULD — Display a drag image as soon as people drag a selection about three points · Drag and drop > Providing feedback ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0007 · SHOULD — Show people whether a destination can accept dragged content · Drag and drop > Providing feedback ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0008 · SHOULD — Provide feedback when dropped content needs time to transfer · Drag and drop > Accepting drops ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0009 · SHOULD — Provide feedback when dropped content initiates a task or action · Drag and drop > Accepting drops ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0010 · SHOULD — Apply appropriate styling to dropped text · Drag and drop > Accepting drops ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0016 · SHOULD — As much as possible, support drag and drop throughout your app · Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0017 · SHOULD — Determine when dragging and dropping content within your app results in a move or a copy · Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0004 · MAY — Consider offering multiple versions of dragged content, ordered from highest to lowest fidelity · Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-DRAG-AND-DROP-0005 · MAY — Consider supporting spring loading · Drag and drop > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))

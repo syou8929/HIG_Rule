@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3528
+- Active atomic rules: 3533
 - Pages without rules: 16
-- Low-confidence rules: 115
-- Rules requiring human review: 115
-- Reference notes: 915
+- Low-confidence rules: 110
+- Rules requiring human review: 110
+- Reference notes: 914
 
 ## Rules by category
 
@@ -17,31 +17,31 @@
 - foundations: 504
 - getting-started: 100
 - inputs: 245
-- patterns: 481
+- patterns: 486
 - technologies: 1084
 
 ## Normative levels
 
 - AVOID: 479
-- MAY: 403
-- MUST: 507
+- MAY: 404
+- MUST: 508
 - MUST_NOT: 81
-- SHOULD: 2058
+- SHOULD: 2061
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2544
-- ipados: 2502
-- macos: 2054
+- ios: 2548
+- ipados: 2506
+- macos: 2058
 - tvos: 1611
-- visionos: 2026
-- watchos: 1731
+- visionos: 2030
+- watchos: 1736
 
 ## Rules by testability
 
 - hybrid: 114
-- manual: 3414
+- manual: 3419
 
 ## Blocked pages
 
@@ -92,11 +92,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0001
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0002
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0003
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0004
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0005
 - HIG-PATTERNS-DRAG-AND-DROP-0001
 - HIG-PATTERNS-DRAG-AND-DROP-0002
 - HIG-PATTERNS-DRAG-AND-DROP-0003
@@ -210,11 +205,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0001
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0002
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0003
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0004
-- HIG-PATTERNS-COLLABORATION-AND-SHARING-0005
 - HIG-PATTERNS-DRAG-AND-DROP-0001
 - HIG-PATTERNS-DRAG-AND-DROP-0002
 - HIG-PATTERNS-DRAG-AND-DROP-0003
@@ -437,7 +427,6 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing · Collaboration and sharing > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing · Collaboration and sharing > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing · Collaboration and sharing > Platform considerations > visionOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing · Collaboration and sharing > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing · Collaboration and sharing > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing · Collaboration and sharing > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing · Collaboration and sharing > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
