@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 595
-- Retained MUST: 514
+- Reviewed rules: 599
+- Retained MUST: 518
 - Retained MUST_NOT: 81
-- Normative level changes: 221
+- Normative level changes: 225
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:44:03Z
+- Reviewed at: 2026-07-28T16:49:48Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -266,6 +266,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-FILE-MANAGEMENT-0026 — Recovered and retained MUST after confirming the explicit Be sure requirement to test every supported screen size and orientation. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0031 — Recovered and retained MUST after confirming the conditional Make sure requirement for visible unsaved-change state when autosaving is off. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0033 — Recovered and retained MUST after confirming the conditional Be sure requirement to remove the Edited suffix after automatic or explicit saving. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0002 — Classified the unqualified exit-timing choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0014 — Recovered the conditional Be sure requirement and its consistency and transition constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0018 — Recovered the explicit needs-to pause requirement and preserved its missed-content rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0020 — Recovered the explicit Be sure visibility requirement and its essential-control condition. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MULTITASKING-0006 — Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0007 — Recovered and retained MUST after confirming the explicit always need to prepare for context saving and restoration. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
@@ -750,7 +754,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-FILE-MANAGEMENT-0026 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Be sure requirement to test every supported screen size and orientation. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional Make sure requirement for visible unsaved-change state when autosaving is off. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0033 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional Be sure requirement to remove the Edited suffix after automatic or explicit saving. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0002 · MUST · retained_with_atomicity_or_scope_correction — Classified the unqualified exit-timing choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Be sure requirement and its consistency and transition constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit needs-to pause requirement and preserved its missed-content rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Be sure visibility requirement and its essential-control condition. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-LAUNCHING-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0013 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0016 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))

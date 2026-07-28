@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:44:03Z",
+  "reviewed_at": "2026-07-28T16:49:48Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 595,
+  "reviewed_rule_count": 599,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -1003,6 +1003,62 @@
       "severity": "error",
       "conditions": ["Keep a Next or Continue action unavailable until the required data is present."],
       "review_note": "Recovered the conditional Make sure and must outcome and recorded the source's progression gate."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0002": {
+      "title": "Let people choose when to exit full-screen mode",
+      "statement": {
+        "en": "Let people choose when to exit full-screen mode.",
+        "ja": "full-screen modeを終了する時期を利用者が選べるようにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Do not end full-screen mode merely because people switch experiences or finish an immersive activity."],
+      "review_note": "Classified the unqualified exit-timing choice as a user-intent MUST."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0014": {
+      "title": "Keep full-screen layout adjustments subtle",
+      "statement": {
+        "en": "When adjusting a full-screen layout, ensure the changes remain subtle and visually consistent.",
+        "ja": "full-screen layoutを調整する場合、変更を控えめでvisualに一貫したものにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Avoid visually jarring transitions between full-screen and non-full-screen modes."],
+      "review_note": "Recovered the conditional Be sure requirement and its consistency and transition constraints."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0018": {
+      "title": "Pause full-screen games and slideshows when people leave",
+      "statement": {
+        "en": "When people leave a full-screen game or slideshow, pause it automatically so they don't miss content.",
+        "ja": "full-screen gameやslideshowから離れた場合、contentを見逃さないよう自動pauseする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["The full-screen experience advances content while unattended."],
+      "review_note": "Recovered the explicit needs-to pause requirement and preserved its missed-content rationale."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0020": {
+      "title": "Keep essential controls visible",
+      "statement": {
+        "en": "Keep controls visible when they are essential for navigation or completing tasks.",
+        "ja": "navigationやtask completionに不可欠なcontrolは表示を保つ。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Do not apply temporary control hiding to essential navigation or task actions."],
+      "review_note": "Recovered the explicit Be sure visibility requirement and its essential-control condition."
     },
     "HIG-INPUTS-REMOTES-0005": {
       "title": "Map Play/Pause to media playback controls",

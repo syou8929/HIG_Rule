@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3436
-- Reviewed batches: 199
+- Reviewed rules: 3448
+- Reviewed batches: 200
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:44:03Z
+- Reviewed at: 2026-07-28T16:49:48Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2048,6 +2048,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-FILE-MANAGEMENT-0032 · high — Recovered a conservative AVOID rule from the source's confusion warning. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0033 · high — Recovered and retained the conditional Be sure requirement with both save paths. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0034 · high — Recovered the positive autosave rule and preserved every documented save trigger. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0001 · high — Concretized the makes-sense condition with the source's concentration, immersion, and task examples. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0002 · high — Classified the unqualified exit-timing choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0003 · high — Narrowed temporary hiding to primary-content contexts and separated restoration and essential-control requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0004 · high — Narrowed gesture deferral to the documented unexpected-exit condition and two-swipe option. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0005 · high — Narrowed scope to macOS and recorded system-managed display accommodation. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0006 · high — Reconfirmed the existing Always-based MUST and recorded explicit user choice and input modalities. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
@@ -2056,6 +2059,15 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-GOING-FULL-SCREEN-0009 · high — Split the standard-control preference and recorded all three system entry methods. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0010 · high — Split the direct custom-menu avoidance from the positive standard-control preference. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0011 · high — Separated the game-specific optional toggle without promoting its might-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0012 · high — Split the qualified layout adjustment from the direct resizing avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0013 · high — Recovered the direct Don't clause at AVOID and preserved the layout alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0014 · high — Recovered the conditional Be sure requirement and its consistency and transition constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0015 · high — Activated the omitted task-completion rule and recorded its media-control state. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0016 · high — Activated the Dock-access rule, narrowed platform scope, and preserved the game exception. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0017 · high — Activated the omitted leave-and-return state transition. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0018 · high — Recovered the explicit needs-to pause requirement and preserved its missed-content rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0019 · high — Recovered the hidden-control restoration path and its familiar-action examples. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0020 · high — Recovered the explicit Be sure visibility requirement and its essential-control condition. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-LAUNCHING-0001 · high — Replaced the generic statement, captured the solid-color branch, and narrowed launch-screen scope to iOS, iPadOS, and tvOS. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0002 · high — Retained direct Avoid at AVOID, restored the localization rationale, and narrowed the platform scope. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0003 · high — Replaced the malformed generated statement, retained direct Don't at AVOID, and split the concrete visual anti-patterns. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))

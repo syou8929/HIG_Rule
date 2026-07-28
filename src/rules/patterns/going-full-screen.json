@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0001",
-    "title": "Support full-screen mode when it makes sense for your experience",
+    "title": "Support full-screen mode when it fits the experience",
     "category": "patterns",
     "topic": "going-full-screen",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Ensure the experience accommodates full-screen mode when it makes sense for your experience.",
-      "ja": "full-screen mode when it makes sense for your experienceを利用できる設計にする。"
+      "en": "Support full-screen mode when it helps people concentrate on a task or become immersed in content.",
+      "ja": "taskへの集中やcontentへの没入に役立つ場合はfull-screen modeに対応する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -30,7 +30,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Consider it for games, media, and in-depth tasks that benefit from a distraction-free environment."
     ],
     "exceptions": [],
     "rationale": {
@@ -40,7 +40,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates full-screen mode when it makes sense for your experience.” in the documented Going full screen context?"
+        "Does the design satisfy “Support full-screen mode when it helps people concentrate on a task or become immersed in content.” in the documented Going full screen context?"
       ]
     },
     "testability": "manual",
@@ -60,7 +60,7 @@
       "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "5abfb893d5dc48f7e503a799cc083ddae482611f4a8f4a1d27db071d87326b9f",
-      "evidence_paraphrase": "Ensure the experience accommodates full-screen mode when it makes sense for your experience."
+      "evidence_paraphrase": "Support full-screen mode when it helps people concentrate on a task or become immersed in content."
     },
     "tags": [
       "patterns",
@@ -69,7 +69,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates full-screen mode when it makes sense for your experience.",
+    "apple_native_rule": "Support full-screen mode when it helps people concentrate on a task or become immersed in content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -79,14 +79,14 @@
     "topic": "going-full-screen",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Preserve people’s ability to choose when to exit full-screen mode.",
-      "ja": "利用者がchoose when to exit full-screen modeできる状態を保つ。"
+      "en": "Let people choose when to exit full-screen mode.",
+      "ja": "full-screen modeを終了する時期を利用者が選べるようにする。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -103,7 +103,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not end full-screen mode merely because people switch experiences or finish an immersive activity."
     ],
     "exceptions": [],
     "rationale": {
@@ -113,7 +113,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to choose when to exit full-screen mode.” in the documented Going full screen context?"
+        "Does the design satisfy “Let people choose when to exit full-screen mode.” in the documented Going full screen context?"
       ]
     },
     "testability": "manual",
@@ -133,7 +133,7 @@
       "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "84224127b42131e72ac3a18e829d801f77f6a8d793aada3f4817a1ca95e1d3a6",
-      "evidence_paraphrase": "Preserve people’s ability to choose when to exit full-screen mode."
+      "evidence_paraphrase": "Let people choose when to exit full-screen mode."
     },
     "tags": [
       "patterns",
@@ -142,22 +142,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to choose when to exit full-screen mode.",
+    "apple_native_rule": "Let people choose when to exit full-screen mode.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0003",
-    "title": "Prioritize content by temporarily hiding toolbars and navigation controls",
+    "title": "Temporarily hide nonessential controls when content is primary",
     "category": "patterns",
     "topic": "going-full-screen",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Going full screen guidance to prioritize content by temporarily hiding toolbars and navigation controls.",
-      "ja": "「Going full screen」において「Prioritize content by temporarily hiding toolbars and navigation controls」の指針を適用する。"
+      "en": "When content is the primary focus, consider temporarily hiding nonessential toolbars and navigation controls.",
+      "ja": "contentが主なfocusの場合、nonessentialなtoolbarやnavigation controlの一時非表示を検討する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -176,7 +176,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use this to create a distraction-free viewing or reading environment.",
+      "Restoration and essential-control visibility are recorded separately."
     ],
     "exceptions": [],
     "rationale": {
@@ -186,7 +187,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Going full screen guidance to prioritize content by temporarily hiding toolbars and navigation controls.” in the documented Going full screen context?"
+        "Does the design satisfy “When content is the primary focus, consider temporarily hiding nonessential toolbars and navigation controls.” in the documented Going full screen context?"
       ]
     },
     "testability": "manual",
@@ -206,7 +207,7 @@
       "retrieved_at": "2026-07-21T20:23:04Z",
       "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
       "source_sentence_hash": "99cec6c69403cf9ddc9b265ff8dd3cafc02dd7647dcf4483fda780b266e371a5",
-      "evidence_paraphrase": "Apply the documented Going full screen guidance to prioritize content by temporarily hiding toolbars and navigation controls."
+      "evidence_paraphrase": "When content is the primary focus, consider temporarily hiding nonessential toolbars and navigation controls."
     },
     "tags": [
       "patterns",
@@ -215,7 +216,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Going full screen guidance to prioritize content by temporarily hiding toolbars and navigation controls.",
+    "apple_native_rule": "When content is the primary focus, consider temporarily hiding nonessential toolbars and navigation controls.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -806,6 +807,665 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "In a macOS game, consider a custom toggle for turning full-screen mode on and off.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0012",
+    "title": "Adjust the full-screen layout only when necessary",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When necessary, adjust layout proportions in full-screen mode while keeping essential content prominent.",
+      "ja": "必要な場合、essential contentを目立たせたままfull-screen modeのlayout比率を調整する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use the extra space without changing which interface items appear.",
+      "Programmatic window resizing is recorded separately."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When necessary, adjust layout proportions in full-screen mode while keeping essential content prominent.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "143c86728a13688b55e1b4d8df7d53e93c1ae695fcb8d3b3b707d09c3bd4b7be",
+      "evidence_paraphrase": "When necessary, adjust layout proportions in full-screen mode while keeping essential content prominent."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When necessary, adjust layout proportions in full-screen mode while keeping essential content prominent.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0013",
+    "title": "Avoid programmatically resizing the full-screen window",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid programmatically resizing a window for full-screen mode.",
+      "ja": "full-screen modeのためにwindowをprogrammatic resizeしない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Adjust interface proportions instead when the larger window requires layout changes."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid programmatically resizing a window for full-screen mode.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "143c86728a13688b55e1b4d8df7d53e93c1ae695fcb8d3b3b707d09c3bd4b7be",
+      "evidence_paraphrase": "Avoid programmatically resizing a window for full-screen mode."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid programmatically resizing a window for full-screen mode.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0014",
+    "title": "Keep full-screen layout adjustments subtle",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When adjusting a full-screen layout, ensure the changes remain subtle and visually consistent.",
+      "ja": "full-screen layoutを調整する場合、変更を控えめでvisualに一貫したものにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Avoid visually jarring transitions between full-screen and non-full-screen modes."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When adjusting a full-screen layout, ensure the changes remain subtle and visually consistent.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "bf759e6ab6b9b89a9a6d80bf70b7022220588c97f805c66a4f8533649de55222",
+      "evidence_paraphrase": "When adjusting a full-screen layout, ensure the changes remain subtle and visually consistent."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When adjusting a full-screen layout, ensure the changes remain subtle and visually consistent.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0015",
+    "title": "Keep essential features accessible in full screen",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Keep essential features and controls accessible so people can finish their task without exiting full-screen mode.",
+      "ja": "full-screen modeを終了せずtaskを完了できるようessential featureとcontrolへaccessできる状態を保つ。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "In a media experience, keep playback controls persistent or easy to reveal."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep essential features and controls accessible so people can finish their task without exiting full-screen mode.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "1865c7a48d865af4409a92a5b4704dd233a48abd1a76e80b0066134eae9fa55b",
+      "evidence_paraphrase": "Keep essential features and controls accessible so people can finish their task without exiting full-screen mode."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Keep essential features and controls accessible so people can finish their task without exiting full-screen mode.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0016",
+    "title": "Preserve Dock access outside games",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Except in games, let people reveal the Dock in a full-screen iPadOS or macOS app.",
+      "ja": "gameを除き、full-screen iPadOS・macOS appでDockを表示できるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Games may defer an initial iPadOS swipe or hide the macOS Dock to prevent accidental reveals."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Except in games, let people reveal the Dock in a full-screen iPadOS or macOS app.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "0e6aea992d4c5d91184d8ade627744df5cb7fb1d238b7469babc45800201c540",
+      "evidence_paraphrase": "Except in games, let people reveal the Dock in a full-screen iPadOS or macOS app."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Except in games, let people reveal the Dock in a full-screen iPadOS or macOS app.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0017",
+    "title": "Resume full-screen experiences where people left off",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "After people switch away from a full-screen experience, help them resume where they left off when they return.",
+      "ja": "full-screen experienceから離れた後、戻ったときに中断位置からresumeできるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve the relevant content or task position while the experience is inactive."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “After people switch away from a full-screen experience, help them resume where they left off when they return.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "7e4d4cf687875adee0ccbd150766a2491adbf77330530c648621622f838c040c",
+      "evidence_paraphrase": "After people switch away from a full-screen experience, help them resume where they left off when they return."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "After people switch away from a full-screen experience, help them resume where they left off when they return.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0018",
+    "title": "Pause full-screen games and slideshows when people leave",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When people leave a full-screen game or slideshow, pause it automatically so they don't miss content.",
+      "ja": "full-screen gameやslideshowから離れた場合、contentを見逃さないよう自動pauseする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The full-screen experience advances content while unattended."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When people leave a full-screen game or slideshow, pause it automatically so they don't miss content.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "0cc5135db628fe8c196438a178825a3b1828c4fb458c350a698160d2778f08c8",
+      "evidence_paraphrase": "When people leave a full-screen game or slideshow, pause it automatically so they don't miss content."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When people leave a full-screen game or slideshow, pause it automatically so they don't miss content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0019",
+    "title": "Let people restore hidden controls",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Let people restore temporarily hidden controls with a familiar gesture or action.",
+      "ja": "一時的に隠したcontrolをfamiliarなgestureやactionで復元できるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture"
+      ]
+    },
+    "conditions": [
+      "Familiar actions include tapping, swiping down, or moving the pointer to the top of the screen."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Let people restore temporarily hidden controls with a familiar gesture or action.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "90928c2b2fe433927879af012b37a0fc67f5b26b93d2a396ec5ace651344514a",
+      "evidence_paraphrase": "Let people restore temporarily hidden controls with a familiar gesture or action."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices",
+      "gesture"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Let people restore temporarily hidden controls with a familiar gesture or action.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-GOING-FULL-SCREEN-0020",
+    "title": "Keep essential controls visible",
+    "category": "patterns",
+    "topic": "going-full-screen",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Keep controls visible when they are essential for navigation or completing tasks.",
+      "ja": "navigationやtask completionに不可欠なcontrolは表示を保つ。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Do not apply temporary control hiding to essential navigation or task actions."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Going full screen experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGoing full screenの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep controls visible when they are essential for navigation or completing tasks.” in the documented Going full screen context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+      "page_title": "Going full screen",
+      "section_path": [
+        "Going full screen",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:23:04Z",
+      "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b",
+      "source_sentence_hash": "6c052d819cabfc26ecb69715b18732f0a5f3d7e8dc231d1ce8814c69220f4367",
+      "evidence_paraphrase": "Keep controls visible when they are essential for navigation or completing tasks."
+    },
+    "tags": [
+      "patterns",
+      "going-full-screen",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Keep controls visible when they are essential for navigation or completing tasks.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

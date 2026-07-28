@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:44:03Z",
+  "reviewed_at": "2026-07-28T16:49:48Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5405,6 +5405,34 @@
         "HIG-PATTERNS-ENTERING-DATA-0013"
       ],
       "review_note": "Completed Entering data common coverage, concretized three queued rules, recovered eight input-method, system-data, authentication, choice, validation, and required-data rules, and retained three sensitive-entry, password-authentication, and required-data outcomes as MUST."
+    },
+    {
+      "id": "priority-6-going-full-screen-common-context-2026-07-29",
+      "reviewed_at": "2026-07-28T16:49:48Z",
+      "review_method": "Rendered Apple HIG Going full screen overview, best-practice, platform, resource, change-log, and supporting context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/going-full-screen",
+          "source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0001",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0002",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0003",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0012",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0013",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0014",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0015",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0016",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0017",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0018",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0019",
+        "HIG-PATTERNS-GOING-FULL-SCREEN-0020"
+      ],
+      "review_note": "Completed Going full screen common coverage, concretized three queued rules, recovered nine layout, resizing, control-access, Dock, resume, pause, and restoration rules, and retained four explicit user-intent, Be sure, and needs-to outcomes as MUST."
     }
   ],
   "rules": {
@@ -15895,6 +15923,103 @@
       "source": {"source_hash": "1c4445ddf9384e0e3696188babe6ecfb7cd470ae90fe701345d12a4a53fd70fd", "source_sentence_hash": "5598072c43790d1b84a9cc529eefa211e6a2712ea4733e1b37bf8608317e5b4b", "section_path": ["Drag and drop", "Platform considerations", "visionOS"]},
       "title": "Launch the app for empty-space drops when possible", "statement": {"en": "When possible, launch the visionOS app to handle its content when people drop that content into empty space.", "ja": "可能な場合、visionOS appのcontentがempty spaceへdropされたときappをlaunchして処理する。"},
       "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": ["gesture"]}, "conditions": ["Associate an appropriate user activity with draggable app content so the app can open a handling window or scene."], "review_note": "Activated the practicability-qualified visionOS launch behavior and recorded its user-activity mechanism."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0001": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "5abfb893d5dc48f7e503a799cc083ddae482611f4a8f4a1d27db071d87326b9f", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Support full-screen mode when it fits the experience",
+      "statement": {"en": "Support full-screen mode when it helps people concentrate on a task or become immersed in content.", "ja": "taskへの集中やcontentへの没入に役立つ場合はfull-screen modeに対応する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Consider it for games, media, and in-depth tasks that benefit from a distraction-free environment."],
+      "review_note": "Concretized the makes-sense condition with the source's concentration, immersion, and task examples."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0002": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "84224127b42131e72ac3a18e829d801f77f6a8d793aada3f4817a1ca95e1d3a6", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Let people choose when to exit full-screen mode",
+      "statement": {"en": "Let people choose when to exit full-screen mode.", "ja": "full-screen modeを終了する時期を利用者が選べるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Do not end full-screen mode merely because people switch experiences or finish an immersive activity."],
+      "review_note": "Classified the unqualified exit-timing choice as a user-intent MUST."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0003": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "99cec6c69403cf9ddc9b265ff8dd3cafc02dd7647dcf4483fda780b266e371a5", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Temporarily hide nonessential controls when content is primary",
+      "statement": {"en": "When content is the primary focus, consider temporarily hiding nonessential toolbars and navigation controls.", "ja": "contentが主なfocusの場合、nonessentialなtoolbarやnavigation controlの一時非表示を検討する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use this to create a distraction-free viewing or reading environment.", "Restoration and essential-control visibility are recorded separately."],
+      "review_note": "Narrowed temporary hiding to primary-content contexts and separated restoration and essential-control requirements."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0012": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "143c86728a13688b55e1b4d8df7d53e93c1ae695fcb8d3b3b707d09c3bd4b7be", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Adjust the full-screen layout only when necessary",
+      "statement": {"en": "When necessary, adjust layout proportions in full-screen mode while keeping essential content prominent.", "ja": "必要な場合、essential contentを目立たせたままfull-screen modeのlayout比率を調整する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use the extra space without changing which interface items appear.", "Programmatic window resizing is recorded separately."],
+      "review_note": "Split the qualified layout adjustment from the direct resizing avoidance."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0013": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "143c86728a13688b55e1b4d8df7d53e93c1ae695fcb8d3b3b707d09c3bd4b7be", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Avoid programmatically resizing the full-screen window",
+      "statement": {"en": "Avoid programmatically resizing a window for full-screen mode.", "ja": "full-screen modeのためにwindowをprogrammatic resizeしない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Adjust interface proportions instead when the larger window requires layout changes."],
+      "review_note": "Recovered the direct Don't clause at AVOID and preserved the layout alternative."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0014": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "bf759e6ab6b9b89a9a6d80bf70b7022220588c97f805c66a4f8533649de55222", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Keep full-screen layout adjustments subtle",
+      "statement": {"en": "When adjusting a full-screen layout, ensure the changes remain subtle and visually consistent.", "ja": "full-screen layoutを調整する場合、変更を控えめでvisualに一貫したものにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Avoid visually jarring transitions between full-screen and non-full-screen modes."],
+      "review_note": "Recovered the conditional Be sure requirement and its consistency and transition constraints."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0015": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "1865c7a48d865af4409a92a5b4704dd233a48abd1a76e80b0066134eae9fa55b", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Keep essential features accessible in full screen",
+      "statement": {"en": "Keep essential features and controls accessible so people can finish their task without exiting full-screen mode.", "ja": "full-screen modeを終了せずtaskを完了できるようessential featureとcontrolへaccessできる状態を保つ。"},
+      "normative_level": "SHOULD",
+      "conditions": ["In a media experience, keep playback controls persistent or easy to reveal."],
+      "review_note": "Activated the omitted task-completion rule and recorded its media-control state."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0016": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "0e6aea992d4c5d91184d8ade627744df5cb7fb1d238b7469babc45800201c540", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Preserve Dock access outside games",
+      "statement": {"en": "Except in games, let people reveal the Dock in a full-screen iPadOS or macOS app.", "ja": "gameを除き、full-screen iPadOS・macOS appでDockを表示できるようにする。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ipados", "macos"], "devices": ["ipad", "mac"], "components": [], "modalities": []},
+      "conditions": ["Games may defer an initial iPadOS swipe or hide the macOS Dock to prevent accidental reveals."],
+      "review_note": "Activated the Dock-access rule, narrowed platform scope, and preserved the game exception."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0017": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "7e4d4cf687875adee0ccbd150766a2491adbf77330530c648621622f838c040c", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Resume full-screen experiences where people left off",
+      "statement": {"en": "After people switch away from a full-screen experience, help them resume where they left off when they return.", "ja": "full-screen experienceから離れた後、戻ったときに中断位置からresumeできるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Preserve the relevant content or task position while the experience is inactive."],
+      "review_note": "Activated the omitted leave-and-return state transition."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0018": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "0cc5135db628fe8c196438a178825a3b1828c4fb458c350a698160d2778f08c8", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Pause full-screen games and slideshows when people leave",
+      "statement": {"en": "When people leave a full-screen game or slideshow, pause it automatically so they don't miss content.", "ja": "full-screen gameやslideshowから離れた場合、contentを見逃さないよう自動pauseする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The full-screen experience advances content while unattended."],
+      "review_note": "Recovered the explicit needs-to pause requirement and preserved its missed-content rationale."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0019": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "90928c2b2fe433927879af012b37a0fc67f5b26b93d2a396ec5ace651344514a", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Let people restore hidden controls",
+      "statement": {"en": "Let people restore temporarily hidden controls with a familiar gesture or action.", "ja": "一時的に隠したcontrolをfamiliarなgestureやactionで復元できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Familiar actions include tapping, swiping down, or moving the pointer to the top of the screen."],
+      "review_note": "Recovered the hidden-control restoration path and its familiar-action examples."
+    },
+    "HIG-PATTERNS-GOING-FULL-SCREEN-0020": {
+      "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "6c052d819cabfc26ecb69715b18732f0a5f3d7e8dc231d1ce8814c69220f4367", "section_path": ["Going full screen", "Best practices"]},
+      "title": "Keep essential controls visible",
+      "statement": {"en": "Keep controls visible when they are essential for navigation or completing tasks.", "ja": "navigationやtask completionに不可欠なcontrolは表示を保つ。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Do not apply temporary control hiding to essential navigation or task actions."],
+      "review_note": "Recovered the explicit Be sure visibility requirement and its essential-control condition."
     },
     "HIG-PATTERNS-GOING-FULL-SCREEN-0004": {
       "source": {"source_hash": "8f503e636523b69d0dd09e3fb3e666c5512fbf79c7aab6f2ce4bc7169ccecd9b", "source_sentence_hash": "9bd17e45b05f27500b5d7b3997db09c07fb984ae49bc3a4438410d37a50207b3", "section_path": ["Going full screen", "Platform considerations", "iOS, iPadOS"]},

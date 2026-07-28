@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3552
+- Active atomic rules: 3561
 - Pages without rules: 16
-- Low-confidence rules: 95
-- Rules requiring human review: 95
+- Low-confidence rules: 92
+- Rules requiring human review: 92
 - Reference notes: 914
 
 ## Rules by category
@@ -17,23 +17,23 @@
 - foundations: 504
 - getting-started: 100
 - inputs: 245
-- patterns: 505
+- patterns: 514
 - technologies: 1084
 
 ## Normative levels
 
-- AVOID: 481
+- AVOID: 482
 - MAY: 404
-- MUST: 514
+- MUST: 518
 - MUST_NOT: 81
-- SHOULD: 2072
+- SHOULD: 2076
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2567
-- ipados: 2525
-- macos: 2077
+- ios: 2575
+- ipados: 2534
+- macos: 2086
 - tvos: 1619
 - visionos: 2049
 - watchos: 1744
@@ -41,7 +41,7 @@
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3437
+- manual: 3446
 
 ## Blocked pages
 
@@ -92,9 +92,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-GOING-FULL-SCREEN-0001
-- HIG-PATTERNS-GOING-FULL-SCREEN-0002
-- HIG-PATTERNS-GOING-FULL-SCREEN-0003
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0001
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0003
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0004
@@ -190,9 +187,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-GOING-FULL-SCREEN-0001
-- HIG-PATTERNS-GOING-FULL-SCREEN-0002
-- HIG-PATTERNS-GOING-FULL-SCREEN-0003
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0001
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0003
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0004
