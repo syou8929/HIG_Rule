@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T17:53:23.470Z. 3636 active rules; 8 deprecated rules.
+Generated 2026-07-28T17:59:58.023Z. 3646 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -3493,12 +3493,22 @@ Generated 2026-07-28T17:53:23.470Z. 3636 active rules; 8 deprecated rules.
 - **HIG-TECHNOLOGIES-IN-APP-PURCHASE-0070 · SHOULD · high** — During onboarding, explain what people gain by subscribing. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 ### live-photos
 
-- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 · SHOULD · low** — Apply the documented Live Photos guidance to apply adjustments to all frames. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0002 · SHOULD · low** — Maintain live Photo content intact. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0003 · SHOULD · low** — Present live Photos as traditional photos in environments that don’t support Live Photos in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0004 · SHOULD · low** — Apply the documented Live Photos guidance to make Live Photos easily distinguishable from still photos. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0005 · SHOULD · low** — Maintain badge placement consistent. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0006 · SHOULD · low** — Clearly indicate when a Live Photo is downloading and when the photo is playable. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 · MUST · high** — When the app applies an effect or adjustment to a Live Photo, apply it to the entire photo. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0002 · SHOULD · high** — Preserve Live Photo content and its cross-app experience. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0003 · SHOULD · high** — In an environment that doesn't support Live Photos, show a traditional still representation. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0004 · SHOULD · high** — Make Live Photos easy to distinguish from still photos. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0005 · SHOULD · high** — If Live Photo badges are shown, place them consistently on every photo. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0006 · SHOULD · high** — Clearly indicate when a Live Photo is downloading and when it becomes playable. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0007 · SHOULD · high** — Design Live Photo sharing around content preview and a still-photo option. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0008 · MUST · high** — If the app can't apply an adjustment to the entire Live Photo, let people convert it to a still photo. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0009 · AVOID · high** — Avoid presenting a Live Photo's frames or audio separately. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0010 · MUST · high** — Before sharing a Live Photo, let people preview its complete contents. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0011 · MUST · high** — Always offer a way to share a Live Photo as a traditional still photo. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0012 · AVOID · high** — Avoid imitating the supported Live Photos experience in an unsupported environment. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0013 · SHOULD · high** — When movement can't identify a Live Photo, show a system-provided badge above it. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0014 · MUST_NOT · high** — Never use a Live Photo playback button that people could interpret as video playback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0015 · AVOID · high** — Avoid offering Live Photos on unsupported watchOS. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- **HIG-TECHNOLOGIES-LIVE-PHOTOS-0016 · AVOID · high** — Avoid offering Live Photo capture in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
 ### mac-catalyst
 
 - **HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · high** — Make sure views and images look good when the app uses the Mac idiom. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))

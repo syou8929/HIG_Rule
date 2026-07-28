@@ -1,6 +1,6 @@
 # Human source-review queue
 
-- Remaining rules: 37
+- Remaining rules: 31
 - Next priority: 6 (apple-platform-common)
 - Next batch: 6
 
@@ -8,20 +8,20 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 14
+- 6 (apple-platform-common): 8
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 1
 - MAY: 4
-- SHOULD: 32
+- SHOULD: 26
 
 ## Next batch
 
-- HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 · SHOULD — Apply adjustments to all frames · Live Photos > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- HIG-TECHNOLOGIES-LIVE-PHOTOS-0002 · SHOULD — Keep Live Photo content intact · Live Photos > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- HIG-TECHNOLOGIES-LIVE-PHOTOS-0003 · SHOULD — Display Live Photos as traditional photos in environments that don’t support Live Photos · Live Photos > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- HIG-TECHNOLOGIES-LIVE-PHOTOS-0004 · SHOULD — Make Live Photos easily distinguishable from still photos · Live Photos > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- HIG-TECHNOLOGIES-LIVE-PHOTOS-0005 · SHOULD — Keep badge placement consistent · Live Photos > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
-- HIG-TECHNOLOGIES-LIVE-PHOTOS-0006 · SHOULD — Clearly indicate when a Live Photo is downloading and when the photo is playable · Live Photos > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-SHAREPLAY-0001 · SHOULD — Let people know that you support SharePlay · SharePlay > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0002 · SHOULD — Support Picture in Picture (PiP) when possible · SharePlay > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0003 · SHOULD — Use the term SharePlay correctly · SharePlay > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0004 · SHOULD — Make it easy to start sharing an activity · SharePlay > Sharing activities ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0005 · SHOULD — Help people prepare to join a session before displaying the activity · SharePlay > Sharing activities ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0015 · MAY — If part of your app requires a subscription, consider ways to help nonsubscriber participants quickly join … · SharePlay > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))

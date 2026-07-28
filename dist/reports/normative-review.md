@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 643
-- Retained MUST: 559
-- Retained MUST_NOT: 84
-- Normative level changes: 267
+- Reviewed rules: 648
+- Retained MUST: 563
+- Retained MUST_NOT: 85
+- Normative level changes: 270
 - Mixed-strength candidates split: 4
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:41:07Z
+- Reviewed at: 2026-07-28T17:55:36Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -421,6 +421,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0052 — Recovered the explicit Make sure user-intent safeguard as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0060 — Recovered the conditional Be sure pricing disclosure as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0062 — Recovered the particularly-important Make sure billing disclosure as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 — Raised the conditional full-photo outcome to MUST from the supporting make-sure sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0008 — Classified the documented alternative as a conditional user-intent and content-integrity MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0010 — Classified complete-content preview as a privacy and explicit-sharing-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0019 — Recovered MUST from the explicit need-to-ensure directive and retained the essential beyond-layout condition. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0025 — Recovered the conditional MUST from the explicit Be sure to list directive. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005 — Scoped the repeated security requirement to the Implicit feedback section. ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
@@ -1015,6 +1018,11 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0052 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure user-intent safeguard as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0060 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Be sure pricing disclosure as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0062 · MUST · retained_with_atomicity_or_scope_correction — Recovered the particularly-important Make sure billing disclosure as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 · MUST · retained_with_atomicity_or_scope_correction — Raised the conditional full-photo outcome to MUST from the supporting make-sure sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0008 · MUST · retained_with_atomicity_or_scope_correction — Classified the documented alternative as a conditional user-intent and content-integrity MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0010 · MUST · retained_with_atomicity_or_scope_correction — Classified complete-content preview as a privacy and explicit-sharing-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0011 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0014 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to-ensure directive and retained the essential beyond-layout condition. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))

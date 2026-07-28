@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:41:07Z",
+  "reviewed_at": "2026-07-28T17:55:36Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5666,6 +5666,38 @@
         "HIG-TECHNOLOGIES-GENERATIVE-AI-0057"
       ],
       "review_note": "Updated the stale page trace, expanded Generative AI from 20 to 57 active atomic rules, recovered control, transparency, consent, minimization, opt-out, dataset, hallucination, irreversible-action, correction, failure, update, and feedback guidance, and reviewed every privacy, legal, explicit-user-intent, Ensure, Always, and Never outcome."
+    },
+    {
+      "id": "priority-6-live-photos-context-2026-07-29",
+      "reviewed_at": "2026-07-28T17:55:36Z",
+      "review_method": "Rendered Apple HIG Live Photos overview, best-practice, platform, visionOS, resource, and video context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+          "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0001",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0002",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0003",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0004",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0005",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0006",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0007",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0008",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0009",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0010",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0011",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0012",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0013",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0014",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0015",
+        "HIG-TECHNOLOGIES-LIVE-PHOTOS-0016"
+      ],
+      "review_note": "Expanded Live Photos from 6 to 16 active atomic rules, recovered sharing, conversion, integrity, unsupported-environment, badge, playback-control, watchOS, and visionOS constraints, and reviewed three privacy or user-intent MUST outcomes plus one Always MUST and one Never MUST_NOT outcome."
     }
   ],
   "rules": {
@@ -35098,6 +35130,138 @@
       "normative_level": "SHOULD",
       "conditions": ["Respect people's time and keep the feedback affordance easy to find."],
       "review_note": "Recovered the feedback placement and interruption constraint as a separate usability rule."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0001": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "57c7b9db695ab4f8985fe6aff0ef685fa2b105af120cd5640af34e4a91fc8e5c", "section_path": ["Live Photos", "Best practices"]},
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "review_note": "Raised the conditional full-photo outcome to MUST from the supporting make-sure sentence."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0002": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "a99a3bc774f639ff5282f97f2ce4a116c6bfaa26ae6217de571166f8346f1eea", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Keep Live Photo content intact",
+      "statement": {"en": "Preserve Live Photo content and its cross-app experience.", "ja": "Live Photo contentとcross-app experienceを保持する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Use consistent visual treatment and interaction across apps.", "The separate-media avoidance is recorded separately."],
+      "review_note": "Concretized content integrity and separated the direct disassembly avoidance."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0003": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "6ed2c864618ea95f1bf51126c6a538ef1b11cd580b9ab2346617d438d5092611", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Use still photos in unsupported environments",
+      "statement": {"en": "In an environment that doesn't support Live Photos, show a traditional still representation.", "ja": "Live Photos非対応環境ではtraditional still representationを表示する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Do not imitate the supported Live Photos experience."],
+      "review_note": "Concretized the still representation and separated the replication avoidance."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0004": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "afd4a91536a95941cd95b1a4f2a8e7c3e73addf10227e917d7864bbda9c77ccf", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Distinguish Live Photos from still photos",
+      "statement": {"en": "Make Live Photos easy to distinguish from still photos.", "ja": "Live Photoをstill photoと容易に区別できるようにする。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Prefer a hint of movement and implement a custom motion effect where appropriate.", "Use the separate badge rule when movement isn't possible."],
+      "review_note": "Recorded movement as the preferred identification technique and the badge fallback separately."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0005": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "3b23b88d5f5063fc932b30c562bb94867eafbe0b27a70e449959b29fd368a62e", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Keep Live Photo badge placement consistent",
+      "statement": {"en": "If Live Photo badges are shown, place them consistently on every photo.", "ja": "Live Photo badgeを表示する場合、すべてのphotoで一貫した位置に置く。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["A corner is typically an effective location."],
+      "review_note": "Restored the badge-present condition and kept the corner placement as a preference."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0006": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "d29958d555c68fa115064df440e4498a6d74996623836eb776e23708d31d9229", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Show Live Photo download and readiness state",
+      "statement": {"en": "Clearly indicate when a Live Photo is downloading and when it becomes playable.", "ja": "Live Photoのdownload中とplayableになった時点を明確に示す。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Show progress during download and a completion indication afterward."],
+      "review_note": "Concretized both loading and ready states from the supporting sentence."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0007": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "b13bb221c2b3b40dcb00493a8ef388c09cefce96328a574571ddb7e69a4b5cd4", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Support informed Live Photo sharing",
+      "statement": {"en": "Design Live Photo sharing around content preview and a still-photo option.", "ja": "content previewとstill-photo optionを中心にLive Photo sharingを設計する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The app supports photo sharing.", "The preview and still-photo option are mandatory rules recorded separately."],
+      "review_note": "Activated the omitted sharing lead as an umbrella pattern without weakening its atomic requirements."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0008": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "0014efe03717da4d6a35caea47682cf9b4a85d68e745cfecccd180f04c6b2f64", "section_path": ["Live Photos", "Best practices"]},
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "review_note": "Classified the documented alternative as a conditional user-intent and content-integrity MUST."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0009": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "39278d6a4bc7d4f7a960c74e1e7c0316d7a77e1c60269b148497cfcf7a0ea296", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Avoid disassembling Live Photos",
+      "statement": {"en": "Avoid presenting a Live Photo's frames or audio separately.", "ja": "Live Photoのframeまたはaudioを個別に提示することを避ける。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Preserve the integrated sound-and-motion experience."],
+      "review_note": "Recovered the direct Don't guidance at AVOID rather than overstating it as Never."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0010": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "0ac0e9c9501e116df4df52aff92d68a35b6db9869fed3a38d0dbb63558e3da54", "section_path": ["Live Photos", "Best practices"]},
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "review_note": "Classified complete-content preview as a privacy and explicit-sharing-intent MUST."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0011": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "2011fc898a4444a1e69d939df9e5d0b36d18c1fd939e4b6e588dca369d2b6db3", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Always offer still-photo sharing",
+      "statement": {"en": "Always offer a way to share a Live Photo as a traditional still photo.", "ja": "Live Photoをtraditional still photoとしてshareする方法を常に提供する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The app supports sharing Live Photos."],
+      "review_note": "Recovered the explicit Always sharing option as a user-intent MUST."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0012": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "14e34958788b6741850ce846e7590ec48006a7d5a02205d9b22f256ac4045697", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Avoid imitating Live Photos where unsupported",
+      "statement": {"en": "Avoid imitating the supported Live Photos experience in an unsupported environment.", "ja": "unsupported environmentでsupported Live Photos experienceを模倣することを避ける。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Show the separate still representation instead."],
+      "review_note": "Recovered the direct Don't guidance at AVOID and retained the still fallback."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0013": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "46e783d130f5e09cff8af96e575d9e877ea5e418144dff3d39cd30ce6ad8b9d5", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Use a badge when movement isn't possible",
+      "statement": {"en": "When movement can't identify a Live Photo, show a system-provided badge above it.", "ja": "movementでLive Photoを識別できない場合、system-provided badgeを上に表示する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["The badge may include text or appear without text."],
+      "review_note": "Recovered the conditional system-badge fallback without making motion mandatory."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0014": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "faa4d21df12e13898115ab92959cff8dfbd65972100f2a56cd08e423993c5623", "section_path": ["Live Photos", "Best practices"]},
+      "title": "Never use a video-like playback button",
+      "statement": {"en": "Never use a Live Photo playback button that people could interpret as video playback.", "ja": "video playbackと解釈され得るLive Photo playback buttonを使わない。"},
+      "normative_level": "MUST_NOT", "polarity": "prohibit", "severity": "error",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos", "tvos", "visionos"], "devices": ["iphone", "ipad", "mac", "apple-tv", "apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Use motion or the system-provided Live Photo badge for identification."],
+      "review_note": "Recovered the explicit Never playback-control prohibition as MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0015": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "21eab31707fe04c1fdf29260ea5ac1bacd4b165d2de91f4f0f2000a2af0a1b25", "section_path": ["Live Photos", "Platform considerations"]},
+      "title": "Avoid Live Photos on watchOS",
+      "statement": {"en": "Avoid offering Live Photos on unsupported watchOS.", "ja": "unsupportedのwatchOSでLive Photosを提供することを避ける。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Apple HIG records Live Photos as unsupported in watchOS."],
+      "review_note": "Recovered the platform limitation as an unsupported-platform AVOID rule."
+    },
+    "HIG-TECHNOLOGIES-LIVE-PHOTOS-0016": {
+      "source": {"source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4", "source_sentence_hash": "e0efdbe73ae162aecaa8bfc577b21fdd2ae6017bb7bbe6a59fee9eb5d759692c", "section_path": ["Live Photos", "Platform considerations", "visionOS"]},
+      "title": "Avoid Live Photo capture in visionOS",
+      "statement": {"en": "Avoid offering Live Photo capture in visionOS.", "ja": "visionOSでLive Photo captureを提供することを避ける。"},
+      "normative_level": "AVOID",
+      "scope": {"portability": "platform-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["People can view Live Photos in visionOS but can't capture them."],
+      "review_note": "Recovered the visionOS view-only limitation as an unsupported-capability AVOID rule."
     }
   }
 }

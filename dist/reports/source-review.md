@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3585
-- Reviewed batches: 206
+- Reviewed rules: 3601
+- Reviewed batches: 207
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:41:07Z
+- Reviewed at: 2026-07-28T17:55:36Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -3152,6 +3152,22 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0068 · high — Recovered the pre-first-launch subscriber state. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0069 · high — Recovered the conditional post-redemption account-flow guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
 - HIG-TECHNOLOGIES-IN-APP-PURCHASE-0070 · high — Recovered the omitted subscription-benefit onboarding outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0001 · high — Raised the conditional full-photo outcome to MUST from the supporting make-sure sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0002 · high — Concretized content integrity and separated the direct disassembly avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0003 · high — Concretized the still representation and separated the replication avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0004 · high — Recorded movement as the preferred identification technique and the badge fallback separately. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0005 · high — Restored the badge-present condition and kept the corner placement as a preference. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0006 · high — Concretized both loading and ready states from the supporting sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0007 · high — Activated the omitted sharing lead as an umbrella pattern without weakening its atomic requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0008 · high — Classified the documented alternative as a conditional user-intent and content-integrity MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0009 · high — Recovered the direct Don't guidance at AVOID rather than overstating it as Never. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0010 · high — Classified complete-content preview as a privacy and explicit-sharing-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0011 · high — Recovered the explicit Always sharing option as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0012 · high — Recovered the direct Don't guidance at AVOID and retained the still fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0013 · high — Recovered the conditional system-badge fallback without making motion mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0014 · high — Recovered the explicit Never playback-control prohibition as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0015 · high — Recovered the platform limitation as an unsupported-platform AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
+- HIG-TECHNOLOGIES-LIVE-PHOTOS-0016 · high — Recovered the visionOS view-only limitation as an unsupported-capability AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-photos))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0001 · high — Retained the explicit Make sure MUST and narrowed it to the Mac-idiom rendering context. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0002 · high — Retained the Make sure MUST and the explicit View-menu technique. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))
 - HIG-TECHNOLOGIES-MAC-CATALYST-0003 · high — Recorded the documented controls, modalities, and gesture alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/mac-catalyst))

@@ -1,21 +1,21 @@
 [
   {
     "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0001",
-    "title": "Apply adjustments to all frames",
+    "title": "Apply adjustments to every Live Photo frame",
     "category": "technologies",
     "topic": "live-photos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Live Photos guidance to apply adjustments to all frames.",
-      "ja": "「Live Photos」において「Apply adjustments to all frames」の指針を適用する。"
+      "en": "When the app applies an effect or adjustment to a Live Photo, apply it to the entire photo.",
+      "ja": "appがLive Photoへeffectまたはadjustmentを適用する場合、photo全体に適用する。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
-      "portability": "technology-specific",
+      "portability": "platform-specific",
       "platforms": [
         "ios",
         "ipados",
@@ -34,7 +34,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The app lets people apply effects or adjustments to Live Photos."
     ],
     "exceptions": [],
     "rationale": {
@@ -44,7 +44,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live Photos guidance to apply adjustments to all frames.” in the documented Live Photos context?"
+        "Does the design satisfy “When the app applies an effect or adjustment to a Live Photo, apply it to the entire photo.” in the documented Live Photos context?"
       ]
     },
     "testability": "manual",
@@ -64,7 +64,7 @@
       "retrieved_at": "2026-07-21T11:15:01.157Z",
       "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
       "source_sentence_hash": "57c7b9db695ab4f8985fe6aff0ef685fa2b105af120cd5640af34e4a91fc8e5c",
-      "evidence_paraphrase": "Apply the documented Live Photos guidance to apply adjustments to all frames."
+      "evidence_paraphrase": "When the app applies an effect or adjustment to a Live Photo, apply it to the entire photo."
     },
     "tags": [
       "technologies",
@@ -73,7 +73,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live Photos guidance to apply adjustments to all frames.",
+    "apple_native_rule": "When the app applies an effect or adjustment to a Live Photo, apply it to the entire photo.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -83,16 +83,16 @@
     "topic": "live-photos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Maintain live Photo content intact.",
-      "ja": "Live Photo content intactを維持する。"
+      "en": "Preserve Live Photo content and its cross-app experience.",
+      "ja": "Live Photo contentとcross-app experienceを保持する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "technology-specific",
+      "portability": "platform-specific",
       "platforms": [
         "ios",
         "ipados",
@@ -111,7 +111,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use consistent visual treatment and interaction across apps.",
+      "The separate-media avoidance is recorded separately."
     ],
     "exceptions": [],
     "rationale": {
@@ -121,7 +122,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain live Photo content intact.” in the documented Live Photos context?"
+        "Does the design satisfy “Preserve Live Photo content and its cross-app experience.” in the documented Live Photos context?"
       ]
     },
     "testability": "manual",
@@ -141,7 +142,7 @@
       "retrieved_at": "2026-07-21T11:15:01.157Z",
       "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
       "source_sentence_hash": "a99a3bc774f639ff5282f97f2ce4a116c6bfaa26ae6217de571166f8346f1eea",
-      "evidence_paraphrase": "Maintain live Photo content intact."
+      "evidence_paraphrase": "Preserve Live Photo content and its cross-app experience."
     },
     "tags": [
       "technologies",
@@ -150,26 +151,26 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain live Photo content intact.",
+    "apple_native_rule": "Preserve Live Photo content and its cross-app experience.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0003",
-    "title": "Display Live Photos as traditional photos in environments that don’t support Live Photos",
+    "title": "Use still photos in unsupported environments",
     "category": "technologies",
     "topic": "live-photos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Present live Photos as traditional photos in environments that don’t support Live Photos in the documented context.",
-      "ja": "該当する状況でLive Photos as traditional photos in environments that don’t support Live Photosを表示する。"
+      "en": "In an environment that doesn't support Live Photos, show a traditional still representation.",
+      "ja": "Live Photos非対応環境ではtraditional still representationを表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "technology-specific",
+      "portability": "platform-specific",
       "platforms": [
         "ios",
         "ipados",
@@ -188,7 +189,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not imitate the supported Live Photos experience."
     ],
     "exceptions": [],
     "rationale": {
@@ -198,7 +199,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present live Photos as traditional photos in environments that don’t support Live Photos in the documented context.” in the documented Live Photos context?"
+        "Does the design satisfy “In an environment that doesn't support Live Photos, show a traditional still representation.” in the documented Live Photos context?"
       ]
     },
     "testability": "manual",
@@ -218,7 +219,7 @@
       "retrieved_at": "2026-07-21T11:15:01.157Z",
       "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
       "source_sentence_hash": "6ed2c864618ea95f1bf51126c6a538ef1b11cd580b9ab2346617d438d5092611",
-      "evidence_paraphrase": "Present live Photos as traditional photos in environments that don’t support Live Photos in the documented context."
+      "evidence_paraphrase": "In an environment that doesn't support Live Photos, show a traditional still representation."
     },
     "tags": [
       "technologies",
@@ -227,26 +228,26 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Present live Photos as traditional photos in environments that don’t support Live Photos in the documented context.",
+    "apple_native_rule": "In an environment that doesn't support Live Photos, show a traditional still representation.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0004",
-    "title": "Make Live Photos easily distinguishable from still photos",
+    "title": "Distinguish Live Photos from still photos",
     "category": "technologies",
     "topic": "live-photos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Live Photos guidance to make Live Photos easily distinguishable from still photos.",
-      "ja": "「Live Photos」において「Make Live Photos easily distinguishable from still photos」の指針を適用する。"
+      "en": "Make Live Photos easy to distinguish from still photos.",
+      "ja": "Live Photoをstill photoと容易に区別できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "technology-specific",
+      "portability": "platform-specific",
       "platforms": [
         "ios",
         "ipados",
@@ -265,7 +266,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer a hint of movement and implement a custom motion effect where appropriate.",
+      "Use the separate badge rule when movement isn't possible."
     ],
     "exceptions": [],
     "rationale": {
@@ -275,7 +277,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live Photos guidance to make Live Photos easily distinguishable from still photos.” in the documented Live Photos context?"
+        "Does the design satisfy “Make Live Photos easy to distinguish from still photos.” in the documented Live Photos context?"
       ]
     },
     "testability": "manual",
@@ -295,7 +297,7 @@
       "retrieved_at": "2026-07-21T11:15:01.157Z",
       "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
       "source_sentence_hash": "afd4a91536a95941cd95b1a4f2a8e7c3e73addf10227e917d7864bbda9c77ccf",
-      "evidence_paraphrase": "Apply the documented Live Photos guidance to make Live Photos easily distinguishable from still photos."
+      "evidence_paraphrase": "Make Live Photos easy to distinguish from still photos."
     },
     "tags": [
       "technologies",
@@ -304,26 +306,26 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live Photos guidance to make Live Photos easily distinguishable from still photos.",
+    "apple_native_rule": "Make Live Photos easy to distinguish from still photos.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0005",
-    "title": "Keep badge placement consistent",
+    "title": "Keep Live Photo badge placement consistent",
     "category": "technologies",
     "topic": "live-photos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Maintain badge placement consistent.",
-      "ja": "badge placement consistentを維持する。"
+      "en": "If Live Photo badges are shown, place them consistently on every photo.",
+      "ja": "Live Photo badgeを表示する場合、すべてのphotoで一貫した位置に置く。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "technology-specific",
+      "portability": "platform-specific",
       "platforms": [
         "ios",
         "ipados",
@@ -342,7 +344,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A corner is typically an effective location."
     ],
     "exceptions": [],
     "rationale": {
@@ -352,7 +354,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain badge placement consistent.” in the documented Live Photos context?"
+        "Does the design satisfy “If Live Photo badges are shown, place them consistently on every photo.” in the documented Live Photos context?"
       ]
     },
     "testability": "manual",
@@ -372,7 +374,7 @@
       "retrieved_at": "2026-07-21T11:15:01.157Z",
       "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
       "source_sentence_hash": "3b23b88d5f5063fc932b30c562bb94867eafbe0b27a70e449959b29fd368a62e",
-      "evidence_paraphrase": "Maintain badge placement consistent."
+      "evidence_paraphrase": "If Live Photo badges are shown, place them consistently on every photo."
     },
     "tags": [
       "technologies",
@@ -381,26 +383,26 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain badge placement consistent.",
+    "apple_native_rule": "If Live Photo badges are shown, place them consistently on every photo.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0006",
-    "title": "Clearly indicate when a Live Photo is downloading and when the photo is playable",
+    "title": "Show Live Photo download and readiness state",
     "category": "technologies",
     "topic": "live-photos",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Clearly indicate when a Live Photo is downloading and when the photo is playable.",
-      "ja": "indicate when a Live Photo is downloading and when the photo is playableを明確にする。"
+      "en": "Clearly indicate when a Live Photo is downloading and when it becomes playable.",
+      "ja": "Live Photoのdownload中とplayableになった時点を明確に示す。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "technology-specific",
+      "portability": "platform-specific",
       "platforms": [
         "ios",
         "ipados",
@@ -419,7 +421,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Show progress during download and a completion indication afterward."
     ],
     "exceptions": [],
     "rationale": {
@@ -429,7 +431,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Clearly indicate when a Live Photo is downloading and when the photo is playable.” in the documented Live Photos context?"
+        "Does the design satisfy “Clearly indicate when a Live Photo is downloading and when it becomes playable.” in the documented Live Photos context?"
       ]
     },
     "testability": "manual",
@@ -449,7 +451,7 @@
       "retrieved_at": "2026-07-21T11:15:01.157Z",
       "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
       "source_sentence_hash": "d29958d555c68fa115064df440e4498a6d74996623836eb776e23708d31d9229",
-      "evidence_paraphrase": "Clearly indicate when a Live Photo is downloading and when the photo is playable."
+      "evidence_paraphrase": "Clearly indicate when a Live Photo is downloading and when it becomes playable."
     },
     "tags": [
       "technologies",
@@ -458,7 +460,765 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Clearly indicate when a Live Photo is downloading and when the photo is playable.",
+    "apple_native_rule": "Clearly indicate when a Live Photo is downloading and when it becomes playable.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0007",
+    "title": "Support informed Live Photo sharing",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Design Live Photo sharing around content preview and a still-photo option.",
+      "ja": "content previewとstill-photo optionを中心にLive Photo sharingを設計する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app supports photo sharing.",
+      "The preview and still-photo option are mandatory rules recorded separately."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Design Live Photo sharing around content preview and a still-photo option.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "b13bb221c2b3b40dcb00493a8ef388c09cefce96328a574571ddb7e69a4b5cd4",
+      "evidence_paraphrase": "Design Live Photo sharing around content preview and a still-photo option."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Design Live Photo sharing around content preview and a still-photo option.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0008",
+    "title": "Offer still conversion when full-frame adjustment is unavailable",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "If the app can't apply an adjustment to the entire Live Photo, let people convert it to a still photo.",
+      "ja": "Live Photo全体へadjustmentを適用できない場合、still photoへconvertできるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app offers Live Photo effects or adjustments but doesn't support applying them to every frame."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “If the app can't apply an adjustment to the entire Live Photo, let people convert it to a still photo.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "0014efe03717da4d6a35caea47682cf9b4a85d68e745cfecccd180f04c6b2f64",
+      "evidence_paraphrase": "If the app can't apply an adjustment to the entire Live Photo, let people convert it to a still photo."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "If the app can't apply an adjustment to the entire Live Photo, let people convert it to a still photo.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0009",
+    "title": "Avoid disassembling Live Photos",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid presenting a Live Photo's frames or audio separately.",
+      "ja": "Live Photoのframeまたはaudioを個別に提示することを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve the integrated sound-and-motion experience."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid presenting a Live Photo's frames or audio separately.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "39278d6a4bc7d4f7a960c74e1e7c0316d7a77e1c60269b148497cfcf7a0ea296",
+      "evidence_paraphrase": "Avoid presenting a Live Photo's frames or audio separately."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid presenting a Live Photo's frames or audio separately.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0010",
+    "title": "Preview complete Live Photos before sharing",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Before sharing a Live Photo, let people preview its complete contents.",
+      "ja": "Live Photoをshareする前にcomplete contentをpreviewできるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app supports photo sharing.",
+      "The preview includes the Live Photo's audio and extra frames."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Before sharing a Live Photo, let people preview its complete contents.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "0ac0e9c9501e116df4df52aff92d68a35b6db9869fed3a38d0dbb63558e3da54",
+      "evidence_paraphrase": "Before sharing a Live Photo, let people preview its complete contents."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Before sharing a Live Photo, let people preview its complete contents.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0011",
+    "title": "Always offer still-photo sharing",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Always offer a way to share a Live Photo as a traditional still photo.",
+      "ja": "Live Photoをtraditional still photoとしてshareする方法を常に提供する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app supports sharing Live Photos."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Always offer a way to share a Live Photo as a traditional still photo.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "2011fc898a4444a1e69d939df9e5d0b36d18c1fd939e4b6e588dca369d2b6db3",
+      "evidence_paraphrase": "Always offer a way to share a Live Photo as a traditional still photo."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Always offer a way to share a Live Photo as a traditional still photo.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0012",
+    "title": "Avoid imitating Live Photos where unsupported",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid imitating the supported Live Photos experience in an unsupported environment.",
+      "ja": "unsupported environmentでsupported Live Photos experienceを模倣することを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Show the separate still representation instead."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid imitating the supported Live Photos experience in an unsupported environment.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "14e34958788b6741850ce846e7590ec48006a7d5a02205d9b22f256ac4045697",
+      "evidence_paraphrase": "Avoid imitating the supported Live Photos experience in an unsupported environment."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid imitating the supported Live Photos experience in an unsupported environment.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0013",
+    "title": "Use a badge when movement isn't possible",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When movement can't identify a Live Photo, show a system-provided badge above it.",
+      "ja": "movementでLive Photoを識別できない場合、system-provided badgeを上に表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The badge may include text or appear without text."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When movement can't identify a Live Photo, show a system-provided badge above it.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "46e783d130f5e09cff8af96e575d9e877ea5e418144dff3d39cd30ce6ad8b9d5",
+      "evidence_paraphrase": "When movement can't identify a Live Photo, show a system-provided badge above it."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When movement can't identify a Live Photo, show a system-provided badge above it.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0014",
+    "title": "Never use a video-like playback button",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Never use a Live Photo playback button that people could interpret as video playback.",
+      "ja": "video playbackと解釈され得るLive Photo playback buttonを使わない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use motion or the system-provided Live Photo badge for identification."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never use a Live Photo playback button that people could interpret as video playback.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "faa4d21df12e13898115ab92959cff8dfbd65972100f2a56cd08e423993c5623",
+      "evidence_paraphrase": "Never use a Live Photo playback button that people could interpret as video playback."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Never use a Live Photo playback button that people could interpret as video playback.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0015",
+    "title": "Avoid Live Photos on watchOS",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid offering Live Photos on unsupported watchOS.",
+      "ja": "unsupportedのwatchOSでLive Photosを提供することを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apple HIG records Live Photos as unsupported in watchOS."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid offering Live Photos on unsupported watchOS.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "21eab31707fe04c1fdf29260ea5ac1bacd4b165d2de91f4f0f2000a2af0a1b25",
+      "evidence_paraphrase": "Avoid offering Live Photos on unsupported watchOS."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "platform-considerations"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid offering Live Photos on unsupported watchOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-LIVE-PHOTOS-0016",
+    "title": "Avoid Live Photo capture in visionOS",
+    "category": "technologies",
+    "topic": "live-photos",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Avoid offering Live Photo capture in visionOS.",
+      "ja": "visionOSでLive Photo captureを提供することを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "People can view Live Photos in visionOS but can't capture them."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live Photos experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive Photosの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid offering Live Photo capture in visionOS.” in the documented Live Photos context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-photos",
+      "page_title": "Live Photos",
+      "section_path": [
+        "Live Photos",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.157Z",
+      "source_hash": "5e9d3bca7d18955f854b2452ec293370c4c9763e530af44cb6ada03b88e4f5e4",
+      "source_sentence_hash": "e0efdbe73ae162aecaa8bfc577b21fdd2ae6017bb7bbe6a59fee9eb5d759692c",
+      "evidence_paraphrase": "Avoid offering Live Photo capture in visionOS."
+    },
+    "tags": [
+      "technologies",
+      "live-photos",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid offering Live Photo capture in visionOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]
