@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T16:41:58.626Z. 3544 active rules; 8 deprecated rules.
+Generated 2026-07-28T16:47:42.155Z. 3552 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -732,11 +732,19 @@ Generated 2026-07-28T16:41:58.626Z. 3544 active rules; 8 deprecated rules.
 - **HIG-PATTERNS-DRAG-AND-DROP-0036 · SHOULD · high** — After a drop, keep the dropped content selected in the destination and update source selection as needed. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 ### entering-data
 
-- **HIG-PATTERNS-ENTERING-DATA-0001 · SHOULD · low** — Apply the documented Entering data guidance to be clear about the data you need. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
-- **HIG-PATTERNS-ENTERING-DATA-0002 · SHOULD · low** — Choose or apply a secure text-entry field when appropriate in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
-- **HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · medium** — Exclude prepopulate a password field from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0001 · SHOULD · high** — Clearly identify the data people need to provide. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0002 · MUST · high** — When collecting sensitive data, use a secure text-entry field that obscures the input. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · high** — Never prepopulate a password field. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - **HIG-PATTERNS-ENTERING-DATA-0004 · MAY · high** — Consider an expansion tooltip that shows the complete text when a macOS field clips or truncates it. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
-- **HIG-PATTERNS-ENTERING-DATA-0005 · SHOULD · low** — Let people provide data by dragging and dropping it or by pasting it wherever practicable. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0005 · SHOULD · high** — Wherever practicable, let people provide data by pasting it or dragging and dropping it. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0006 · SHOULD · high** — Pregather as much information as possible to minimize the data people must supply. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0007 · SHOULD · high** — Support all available input methods so people can choose the one that works for them. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0008 · SHOULD · high** — Get needed information from the system whenever possible instead of asking people to reenter it. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0009 · AVOID · high** — Avoid asking people to enter information the app can obtain automatically or with their permission. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0010 · MUST · high** — Require people to enter their password or use biometric or keychain authentication. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0011 · SHOULD · high** — When possible, offer choices instead of requiring people to enter text. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0012 · SHOULD · high** — Validate field values dynamically and provide feedback as soon as a problem is detected. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- **HIG-PATTERNS-ENTERING-DATA-0013 · MUST · high** — When data entry is necessary, ensure people understand and provide all required data before proceeding. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 ### feedback
 
 - **HIG-PATTERNS-FEEDBACK-0001 · MUST · high** — Make all feedback accessible by providing multiple complementary ways to receive it. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))

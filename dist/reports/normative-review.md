@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 592
-- Retained MUST: 511
+- Reviewed rules: 595
+- Retained MUST: 514
 - Retained MUST_NOT: 81
-- Normative level changes: 217
+- Normative level changes: 221
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:37:24Z
+- Reviewed at: 2026-07-28T16:44:03Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -256,6 +256,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-DRAG-AND-DROP-0026 — Recovered the explicit Always platform contract for cross-app copy semantics. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0027 — Classified the unqualified outcome as MUST because the source calls continuous process feedback crucial. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0035 — Recovered the conditional Make sure styling requirement and kept the incompatible-style branch separate. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-ENTERING-DATA-0002 — Raised the privacy-sensitive conditional outcome to MUST and retained sensitive data as its gate. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0003 — Retained MUST_NOT after confirming the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0010 — Recovered MUST from the explicit Always authentication requirement and separated it from password-field prepopulation. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0013 — Recovered the conditional Make sure and must outcome and recorded the source's progression gate. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-FEEDBACK-0001 — Retained MUST after confirming the explicit Make sure accessibility requirement and its multimodal receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FILE-MANAGEMENT-0021 — Recovered and retained MUST after confirming the explicit Be sure requirement to reflect the current file-extension choice across save and open interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0024 — Recovered and retained MUST after confirming the conditional explicit need to keep the app name and both document-launcher buttons visible. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
@@ -736,7 +740,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-DRAG-AND-DROP-0026 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always platform contract for cross-app copy semantics. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0027 · MUST · retained_with_atomicity_or_scope_correction — Classified the unqualified outcome as MUST because the source calls continuous process feedback crucial. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0035 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Make sure styling requirement and kept the incompatible-style branch separate. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
-- HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0002 · MUST · retained_with_atomicity_or_scope_correction — Raised the privacy-sensitive conditional outcome to MUST and retained sensitive data as its gate. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0003 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained MUST_NOT after confirming the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0010 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Always authentication requirement and separated it from password-field prepopulation. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0013 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional Make sure and must outcome and recorded the source's progression gate. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-FEEDBACK-0001 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure accessibility requirement and its multimodal receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FILE-MANAGEMENT-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit Be sure requirement to reflect the current file-extension choice across save and open interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))
 - HIG-PATTERNS-FILE-MANAGEMENT-0024 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the conditional explicit need to keep the app name and both document-launcher buttons visible. ([source](https://developer.apple.com/design/human-interface-guidelines/file-management))

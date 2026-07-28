@@ -1,6 +1,6 @@
 # Human source-review queue
 
-- Remaining rules: 98
+- Remaining rules: 95
 - Next priority: 6 (apple-platform-common)
 - Next batch: 3
 
@@ -8,17 +8,17 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 75
+- 6 (apple-platform-common): 72
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 1
 - MAY: 12
-- SHOULD: 85
+- SHOULD: 82
 
 ## Next batch
 
-- HIG-PATTERNS-ENTERING-DATA-0001 · SHOULD — Be clear about the data you need · Entering data > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
-- HIG-PATTERNS-ENTERING-DATA-0002 · SHOULD — Use a secure text-entry field when appropriate · Entering data > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
-- HIG-PATTERNS-ENTERING-DATA-0005 · SHOULD — As much as possible, let people provide data by dragging and dropping it or by pasting it · Entering data > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0001 · SHOULD — Support full-screen mode when it makes sense for your experience · Going full screen > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0002 · SHOULD — Let people choose when to exit full-screen mode · Going full screen > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-GOING-FULL-SCREEN-0003 · SHOULD — Prioritize content by temporarily hiding toolbars and navigation controls · Going full screen > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))

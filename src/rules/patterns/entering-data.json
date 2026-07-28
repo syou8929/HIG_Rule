@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-PATTERNS-ENTERING-DATA-0001",
-    "title": "Be clear about the data you need",
+    "title": "Clearly identify the data people need to enter",
     "category": "patterns",
     "topic": "entering-data",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Entering data guidance to be clear about the data you need.",
-      "ja": "「Entering data」において「Be clear about the data you need」の指針を適用する。"
+      "en": "Clearly identify the data people need to provide.",
+      "ja": "入力が必要なdataを明確に示す。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36,7 +36,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a field prompt or introductory label to describe the expected information.",
+      "Prefill only reasonable default values that reduce decisions and speed entry."
     ],
     "exceptions": [],
     "rationale": {
@@ -46,7 +47,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Entering data guidance to be clear about the data you need.” in the documented Entering data context?"
+        "Does the design satisfy “Clearly identify the data people need to provide.” in the documented Entering data context?"
       ]
     },
     "testability": "manual",
@@ -66,7 +67,7 @@
       "retrieved_at": "2026-07-21T22:38:17Z",
       "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
       "source_sentence_hash": "87a0c4c3cd780c8d57c4a40bf6562a0d27a107f17f67af6d79f45b5e6af5e2e0",
-      "evidence_paraphrase": "Apply the documented Entering data guidance to be clear about the data you need."
+      "evidence_paraphrase": "Clearly identify the data people need to provide."
     },
     "tags": [
       "patterns",
@@ -75,24 +76,24 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Entering data guidance to be clear about the data you need.",
+    "apple_native_rule": "Clearly identify the data people need to provide.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-ENTERING-DATA-0002",
-    "title": "Use a secure text-entry field when appropriate",
+    "title": "Use secure entry for sensitive data",
     "category": "patterns",
     "topic": "entering-data",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply a secure text-entry field when appropriate in the documented context.",
-      "ja": "該当する状況ではa secure text-entry field when appropriateを採用する。"
+      "en": "When collecting sensitive data, use a secure text-entry field that obscures the input.",
+      "ja": "sensitive dataを収集する場合、inputを隠すsecure text-entry fieldを使う。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -115,7 +116,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Apply when the app or game needs people to enter sensitive data.",
+      "A tvOS digit-entry view can obscure entered numerals.",
+      "A system-provided visionOS secure field hides entered data from people other than the wearer."
     ],
     "exceptions": [],
     "rationale": {
@@ -125,7 +128,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a secure text-entry field when appropriate in the documented context.” in the documented Entering data context?"
+        "Does the design satisfy “When collecting sensitive data, use a secure text-entry field that obscures the input.” in the documented Entering data context?"
       ]
     },
     "testability": "manual",
@@ -145,7 +148,7 @@
       "retrieved_at": "2026-07-21T22:38:17Z",
       "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
       "source_sentence_hash": "82d1f53e33f9e13f79bb74903bd9c13c846d77383afceb09344f4e83224ce657",
-      "evidence_paraphrase": "Choose or apply a secure text-entry field when appropriate in the documented context."
+      "evidence_paraphrase": "When collecting sensitive data, use a secure text-entry field that obscures the input."
     },
     "tags": [
       "patterns",
@@ -154,7 +157,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply a secure text-entry field when appropriate in the documented context.",
+    "apple_native_rule": "When collecting sensitive data, use a secure text-entry field that obscures the input.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -164,11 +167,11 @@
     "topic": "entering-data",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude prepopulate a password field from the applicable experience.",
-      "ja": "該当する体験ではprepopulate a password fieldを避ける。"
+      "en": "Never prepopulate a password field.",
+      "ja": "password fieldを事前入力しない。"
     },
     "normative_level": "MUST_NOT",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "prohibit",
     "severity": "error",
@@ -194,7 +197,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A password field is present."
     ],
     "exceptions": [],
     "rationale": {
@@ -204,7 +207,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude prepopulate a password field from the applicable experience.” in the documented Entering data context?"
+        "Does the design satisfy “Never prepopulate a password field.” in the documented Entering data context?"
       ]
     },
     "testability": "manual",
@@ -224,7 +227,7 @@
       "retrieved_at": "2026-07-21T22:38:17Z",
       "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
       "source_sentence_hash": "05b6d8384470af948612689f851c4cd7949831615bb9b569aaf6d8d93547e00e",
-      "evidence_paraphrase": "Exclude prepopulate a password field from the applicable experience."
+      "evidence_paraphrase": "Never prepopulate a password field."
     },
     "tags": [
       "patterns",
@@ -233,7 +236,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude prepopulate a password field from the applicable experience.",
+    "apple_native_rule": "Never prepopulate a password field.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -311,17 +314,17 @@
   },
   {
     "id": "HIG-PATTERNS-ENTERING-DATA-0005",
-    "title": "As much as possible, let people provide data by dragging and dropping it or by pasting it",
+    "title": "Accept pasted and dragged data where practicable",
     "category": "patterns",
     "topic": "entering-data",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Let people provide data by dragging and dropping it or by pasting it wherever practicable.",
-      "ja": "可能な限りlet people provide data by dragging and dropping it or by pasting it。"
+      "en": "Wherever practicable, let people provide data by pasting it or dragging and dropping it.",
+      "ja": "可能な限りpasteまたはdrag and dropでdataを入力できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -346,7 +349,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "These methods can reduce entry effort and integrate the experience with the system."
     ],
     "exceptions": [],
     "rationale": {
@@ -356,7 +359,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Let people provide data by dragging and dropping it or by pasting it wherever practicable.” in the documented Entering data context?"
+        "Does the design satisfy “Wherever practicable, let people provide data by pasting it or dragging and dropping it.” in the documented Entering data context?"
       ]
     },
     "testability": "manual",
@@ -376,7 +379,7 @@
       "retrieved_at": "2026-07-21T22:38:17Z",
       "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
       "source_sentence_hash": "64496c2cb35803bddbfd87210d42d938976645647069e1d88f2a805963d0d63c",
-      "evidence_paraphrase": "Let people provide data by dragging and dropping it or by pasting it wherever practicable."
+      "evidence_paraphrase": "Wherever practicable, let people provide data by pasting it or dragging and dropping it."
     },
     "tags": [
       "patterns",
@@ -385,7 +388,636 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Let people provide data by dragging and dropping it or by pasting it wherever practicable.",
+    "apple_native_rule": "Wherever practicable, let people provide data by pasting it or dragging and dropping it.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-ENTERING-DATA-0006",
+    "title": "Pregather information to minimize manual entry",
+    "category": "patterns",
+    "topic": "entering-data",
+    "subtopic": "entering-data",
+    "statement": {
+      "en": "Pregather as much information as possible to minimize the data people must supply.",
+      "ja": "手動入力を減らすため、可能な限り情報を事前取得する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Obtain permission before accessing protected information."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Entering data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるEntering dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Pregather as much information as possible to minimize the data people must supply.” in the documented Entering data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "page_title": "Entering data",
+      "section_path": [
+        "Entering data"
+      ],
+      "retrieved_at": "2026-07-21T22:38:17Z",
+      "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
+      "source_sentence_hash": "94ffe5c9e103699fcacc806a3c4729b36cbcd7a25d26b573d7d9088d8d2c65aa",
+      "evidence_paraphrase": "Pregather as much information as possible to minimize the data people must supply."
+    },
+    "tags": [
+      "patterns",
+      "entering-data"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Pregather as much information as possible to minimize the data people must supply.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-ENTERING-DATA-0007",
+    "title": "Support all available input methods",
+    "category": "patterns",
+    "topic": "entering-data",
+    "subtopic": "entering-data",
+    "statement": {
+      "en": "Support all available input methods so people can choose the one that works for them.",
+      "ja": "利用可能なすべてのinput methodに対応し、適した方法を選べるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Review touch, keyboard, pointer, voice, and assistive-technology input as applicable to the platform."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Entering data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるEntering dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Support all available input methods so people can choose the one that works for them.” in the documented Entering data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "page_title": "Entering data",
+      "section_path": [
+        "Entering data"
+      ],
+      "retrieved_at": "2026-07-21T22:38:17Z",
+      "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
+      "source_sentence_hash": "66731dfd943f30127156dd4881bb1512b980a0320cd29d2d2027c11cf1270584",
+      "evidence_paraphrase": "Support all available input methods so people can choose the one that works for them."
+    },
+    "tags": [
+      "patterns",
+      "entering-data"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Support all available input methods so people can choose the one that works for them.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-ENTERING-DATA-0008",
+    "title": "Get available information from the system",
+    "category": "patterns",
+    "topic": "entering-data",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Get needed information from the system whenever possible instead of asking people to reenter it.",
+      "ja": "可能な場合は再入力を求めず、必要な情報をsystemから取得する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use existing settings when available.",
+      "Request explicit permission before accessing protected data such as location or calendar information."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Entering data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるEntering dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Get needed information from the system whenever possible instead of asking people to reenter it.” in the documented Entering data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "page_title": "Entering data",
+      "section_path": [
+        "Entering data",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:38:17Z",
+      "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
+      "source_sentence_hash": "f428ea4c6d3fcd59eb7fdb79bcb1e936aeb3bcddcd4fc59dc316d15f062d81f8",
+      "evidence_paraphrase": "Get needed information from the system whenever possible instead of asking people to reenter it."
+    },
+    "tags": [
+      "patterns",
+      "entering-data",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Get needed information from the system whenever possible instead of asking people to reenter it.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-ENTERING-DATA-0009",
+    "title": "Avoid asking for information the system can obtain",
+    "category": "patterns",
+    "topic": "entering-data",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid asking people to enter information the app can obtain automatically or with their permission.",
+      "ja": "automaticまたはpermissionにより取得できる情報の入力を求めない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Do not bypass permission when the information is protected."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Entering data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるEntering dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid asking people to enter information the app can obtain automatically or with their permission.” in the documented Entering data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "page_title": "Entering data",
+      "section_path": [
+        "Entering data",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:38:17Z",
+      "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
+      "source_sentence_hash": "ea3bd4f62521b34ede7773082d8fcbfe42b60d27e480953e646cda493ba7f3c7",
+      "evidence_paraphrase": "Avoid asking people to enter information the app can obtain automatically or with their permission."
+    },
+    "tags": [
+      "patterns",
+      "entering-data",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid asking people to enter information the app can obtain automatically or with their permission.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-ENTERING-DATA-0010",
+    "title": "Require password entry or secure authentication",
+    "category": "patterns",
+    "topic": "entering-data",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Require people to enter their password or use biometric or keychain authentication.",
+      "ja": "password入力またはbiometric・keychain authenticationを要求する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The experience authenticates with a password or an approved biometric or keychain alternative."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Entering data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるEntering dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Require people to enter their password or use biometric or keychain authentication.” in the documented Entering data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "page_title": "Entering data",
+      "section_path": [
+        "Entering data",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:38:17Z",
+      "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
+      "source_sentence_hash": "817b71f6514f3b9013ec3592246d7a7067c0c371dc44f996d6ca42c3f9d896e3",
+      "evidence_paraphrase": "Require people to enter their password or use biometric or keychain authentication."
+    },
+    "tags": [
+      "patterns",
+      "entering-data",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Require people to enter their password or use biometric or keychain authentication.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-ENTERING-DATA-0011",
+    "title": "Offer choices instead of text entry when possible",
+    "category": "patterns",
+    "topic": "entering-data",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When possible, offer choices instead of requiring people to enter text.",
+      "ja": "可能な場合、text入力を求めずchoiceを提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Consider a picker, menu, or other selection component when it fits the information."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Entering data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるEntering dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When possible, offer choices instead of requiring people to enter text.” in the documented Entering data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "page_title": "Entering data",
+      "section_path": [
+        "Entering data",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:38:17Z",
+      "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
+      "source_sentence_hash": "f7d2d7e933479c8f5cd4293d778e7f445740fb973477e934efbfb021c4156f98",
+      "evidence_paraphrase": "When possible, offer choices instead of requiring people to enter text."
+    },
+    "tags": [
+      "patterns",
+      "entering-data",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When possible, offer choices instead of requiring people to enter text.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-ENTERING-DATA-0012",
+    "title": "Validate field values as people enter them",
+    "category": "patterns",
+    "topic": "entering-data",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Validate field values dynamically and provide feedback as soon as a problem is detected.",
+      "ja": "field valueを動的にvalidateし、問題検出時にすぐfeedbackを提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "For numeric data, consider a formatter that restricts input and formats the displayed value."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Entering data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるEntering dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Validate field values dynamically and provide feedback as soon as a problem is detected.” in the documented Entering data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "page_title": "Entering data",
+      "section_path": [
+        "Entering data",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:38:17Z",
+      "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
+      "source_sentence_hash": "9a26c8a2d8faa99f2e62d3bf38a71a0d4dafb5461277a2990cfb960abd1e95a4",
+      "evidence_paraphrase": "Validate field values dynamically and provide feedback as soon as a problem is detected."
+    },
+    "tags": [
+      "patterns",
+      "entering-data",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Validate field values dynamically and provide feedback as soon as a problem is detected.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-ENTERING-DATA-0013",
+    "title": "Communicate and enforce required data before proceeding",
+    "category": "patterns",
+    "topic": "entering-data",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When data entry is necessary, ensure people understand and provide all required data before proceeding.",
+      "ja": "data entryが必要な場合、続行前にrequired dataを理解して入力できるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep a Next or Continue action unavailable until the required data is present."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Entering data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるEntering dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When data entry is necessary, ensure people understand and provide all required data before proceeding.” in the documented Entering data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+      "page_title": "Entering data",
+      "section_path": [
+        "Entering data",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:38:17Z",
+      "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29",
+      "source_sentence_hash": "56e1fdc00520f006968c376eb176dfb31bd702e764d6df7254a2ca5d70170024",
+      "evidence_paraphrase": "When data entry is necessary, ensure people understand and provide all required data before proceeding."
+    },
+    "tags": [
+      "patterns",
+      "entering-data",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When data entry is necessary, ensure people understand and provide all required data before proceeding.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

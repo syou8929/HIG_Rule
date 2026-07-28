@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3424
-- Reviewed batches: 198
+- Reviewed rules: 3436
+- Reviewed batches: 199
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:37:24Z
+- Reviewed at: 2026-07-28T16:44:03Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1990,7 +1990,19 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-DRAG-AND-DROP-0034 · high — Activated the omitted keyboard contract and recorded both modifier states. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0035 · high — Recovered the conditional Make sure styling requirement and kept the incompatible-style branch separate. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0036 · high — Activated the omitted post-drop rule and preserved all three move, same-container copy, and different-container states. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
+- HIG-PATTERNS-ENTERING-DATA-0001 · high — Concretized the clarity outcome and recorded the prompt, label, and reasonable-default techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0002 · high — Raised the privacy-sensitive conditional outcome to MUST and retained its tvOS and visionOS behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0003 · high — Retained MUST_NOT after confirming the explicit Never prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-ENTERING-DATA-0004 · high — Preserved the source's Consider strength and recorded its clipping, hover, and platform scope without inventing editing-specific behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0005 · high — Preserved the As much as possible qualification and both supported transfer methods. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0006 · high — Activated the overview guidance and preserved both minimization and permission boundaries. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0007 · high — Activated the accessibility-oriented overview outcome and made the input-method review concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0008 · high — Activated the system-data rule and preserved the explicit-permission gate. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0009 · high — Recovered the direct Don't guidance at AVOID and retained the permission boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0010 · high — Recovered MUST from the explicit Always authentication requirement and separated it from password-field prepopulation. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0011 · high — Activated the practicability-qualified choice guidance and retained component selection as a contextual option. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0012 · high — Activated the validation rule and recorded immediate feedback plus the optional numeric formatter. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
+- HIG-PATTERNS-ENTERING-DATA-0013 · high — Recovered the conditional Make sure and must outcome and recorded the source's progression gate. ([source](https://developer.apple.com/design/human-interface-guidelines/entering-data))
 - HIG-PATTERNS-FEEDBACK-0001 · high — Retained the accessibility-critical MUST and recorded the source's multimodal examples and receiving contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0002 · high — Retained MAY and recorded the proximity, no-action, and unobtrusive-access conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))
 - HIG-PATTERNS-FEEDBACK-0003 · high — Recorded the criticality, actionability preference, and proportional-interruption constraint. ([source](https://developer.apple.com/design/human-interface-guidelines/feedback))

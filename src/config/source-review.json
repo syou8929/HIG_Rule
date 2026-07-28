@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:37:24Z",
+  "reviewed_at": "2026-07-28T16:44:03Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5377,6 +5377,34 @@
         "HIG-PATTERNS-DRAG-AND-DROP-0036"
       ],
       "review_note": "Completed the common Drag and drop review, concretized twelve queued rules, recovered eleven move-copy, feedback, acceptance, keyboard, styling, and selection rules, and retained three explicit Always, crucial, and Make sure outcomes as MUST."
+    },
+    {
+      "id": "priority-6-entering-data-common-context-2026-07-29",
+      "reviewed_at": "2026-07-28T16:44:03Z",
+      "review_method": "Rendered Apple HIG Entering data overview, best-practice, platform, resource, and supporting context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/entering-data",
+          "source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-ENTERING-DATA-0001",
+        "HIG-PATTERNS-ENTERING-DATA-0002",
+        "HIG-PATTERNS-ENTERING-DATA-0003",
+        "HIG-PATTERNS-ENTERING-DATA-0005",
+        "HIG-PATTERNS-ENTERING-DATA-0006",
+        "HIG-PATTERNS-ENTERING-DATA-0007",
+        "HIG-PATTERNS-ENTERING-DATA-0008",
+        "HIG-PATTERNS-ENTERING-DATA-0009",
+        "HIG-PATTERNS-ENTERING-DATA-0010",
+        "HIG-PATTERNS-ENTERING-DATA-0011",
+        "HIG-PATTERNS-ENTERING-DATA-0012",
+        "HIG-PATTERNS-ENTERING-DATA-0013"
+      ],
+      "review_note": "Completed Entering data common coverage, concretized three queued rules, recovered eight input-method, system-data, authentication, choice, validation, and required-data rules, and retained three sensitive-entry, password-authentication, and required-data outcomes as MUST."
     }
   ],
   "rules": {
@@ -10468,6 +10496,102 @@
       "normative_level": "MAY",
       "conditions": ["A Shared Space window can provide context while the app or game loads.", "The window can provide a control for entering the fully immersive experience.", "Preserve people's choice of when to transition to a Full Space, especially while other apps are running."],
       "review_note": "Preserved the source's Consider strength and recorded the contextual-loading and user-controlled-transition rationale without promoting it to a requirement."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0001": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "87a0c4c3cd780c8d57c4a40bf6562a0d27a107f17f67af6d79f45b5e6af5e2e0", "section_path": ["Entering data", "Best practices"]},
+      "title": "Clearly identify the data people need to enter",
+      "statement": {"en": "Clearly identify the data people need to provide.", "ja": "入力が必要なdataを明確に示す。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use a field prompt or introductory label to describe the expected information.", "Prefill only reasonable default values that reduce decisions and speed entry."],
+      "review_note": "Concretized the clarity outcome and recorded the prompt, label, and reasonable-default techniques."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0002": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "82d1f53e33f9e13f79bb74903bd9c13c846d77383afceb09344f4e83224ce657", "section_path": ["Entering data", "Best practices"]},
+      "title": "Use secure entry for sensitive data",
+      "statement": {"en": "When collecting sensitive data, use a secure text-entry field that obscures the input.", "ja": "sensitive dataを収集する場合、inputを隠すsecure text-entry fieldを使う。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Apply when the app or game needs people to enter sensitive data.", "A tvOS digit-entry view can obscure entered numerals.", "A system-provided visionOS secure field hides entered data from people other than the wearer."],
+      "review_note": "Raised the privacy-sensitive conditional outcome to MUST and retained its tvOS and visionOS behavior."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0003": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "05b6d8384470af948612689f851c4cd7949831615bb9b569aaf6d8d93547e00e", "section_path": ["Entering data", "Best practices"]},
+      "title": "Never prepopulate a password field",
+      "statement": {"en": "Never prepopulate a password field.", "ja": "password fieldを事前入力しない。"},
+      "normative_level": "MUST_NOT", "polarity": "prohibit", "severity": "error",
+      "conditions": ["A password field is present."],
+      "review_note": "Retained MUST_NOT after confirming the explicit Never prohibition."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0005": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "64496c2cb35803bddbfd87210d42d938976645647069e1d88f2a805963d0d63c", "section_path": ["Entering data", "Best practices"]},
+      "title": "Accept pasted and dragged data where practicable",
+      "statement": {"en": "Wherever practicable, let people provide data by pasting it or dragging and dropping it.", "ja": "可能な限りpasteまたはdrag and dropでdataを入力できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["These methods can reduce entry effort and integrate the experience with the system."],
+      "review_note": "Preserved the As much as possible qualification and both supported transfer methods."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0006": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "94ffe5c9e103699fcacc806a3c4729b36cbcd7a25d26b573d7d9088d8d2c65aa", "section_path": ["Entering data"]},
+      "title": "Pregather information to minimize manual entry",
+      "statement": {"en": "Pregather as much information as possible to minimize the data people must supply.", "ja": "手動入力を減らすため、可能な限り情報を事前取得する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Obtain permission before accessing protected information."],
+      "review_note": "Activated the overview guidance and preserved both minimization and permission boundaries."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0007": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "66731dfd943f30127156dd4881bb1512b980a0320cd29d2d2027c11cf1270584", "section_path": ["Entering data"]},
+      "title": "Support all available input methods",
+      "statement": {"en": "Support all available input methods so people can choose the one that works for them.", "ja": "利用可能なすべてのinput methodに対応し、適した方法を選べるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Review touch, keyboard, pointer, voice, and assistive-technology input as applicable to the platform."],
+      "review_note": "Activated the accessibility-oriented overview outcome and made the input-method review concrete."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0008": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "f428ea4c6d3fcd59eb7fdb79bcb1e936aeb3bcddcd4fc59dc316d15f062d81f8", "section_path": ["Entering data", "Best practices"]},
+      "title": "Get available information from the system",
+      "statement": {"en": "Get needed information from the system whenever possible instead of asking people to reenter it.", "ja": "可能な場合は再入力を求めず、必要な情報をsystemから取得する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use existing settings when available.", "Request explicit permission before accessing protected data such as location or calendar information."],
+      "review_note": "Activated the system-data rule and preserved the explicit-permission gate."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0009": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "ea3bd4f62521b34ede7773082d8fcbfe42b60d27e480953e646cda493ba7f3c7", "section_path": ["Entering data", "Best practices"]},
+      "title": "Avoid asking for information the system can obtain",
+      "statement": {"en": "Avoid asking people to enter information the app can obtain automatically or with their permission.", "ja": "automaticまたはpermissionにより取得できる情報の入力を求めない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Do not bypass permission when the information is protected."],
+      "review_note": "Recovered the direct Don't guidance at AVOID and retained the permission boundary."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0010": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "817b71f6514f3b9013ec3592246d7a7067c0c371dc44f996d6ca42c3f9d896e3", "section_path": ["Entering data", "Best practices"]},
+      "title": "Require password entry or secure authentication",
+      "statement": {"en": "Require people to enter their password or use biometric or keychain authentication.", "ja": "password入力またはbiometric・keychain authenticationを要求する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The experience authenticates with a password or an approved biometric or keychain alternative."],
+      "review_note": "Recovered MUST from the explicit Always authentication requirement and separated it from password-field prepopulation."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0011": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "f7d2d7e933479c8f5cd4293d778e7f445740fb973477e934efbfb021c4156f98", "section_path": ["Entering data", "Best practices"]},
+      "title": "Offer choices instead of text entry when possible",
+      "statement": {"en": "When possible, offer choices instead of requiring people to enter text.", "ja": "可能な場合、text入力を求めずchoiceを提供する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Consider a picker, menu, or other selection component when it fits the information."],
+      "review_note": "Activated the practicability-qualified choice guidance and retained component selection as a contextual option."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0012": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "9a26c8a2d8faa99f2e62d3bf38a71a0d4dafb5461277a2990cfb960abd1e95a4", "section_path": ["Entering data", "Best practices"]},
+      "title": "Validate field values as people enter them",
+      "statement": {"en": "Validate field values dynamically and provide feedback as soon as a problem is detected.", "ja": "field valueを動的にvalidateし、問題検出時にすぐfeedbackを提供する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["For numeric data, consider a formatter that restricts input and formats the displayed value."],
+      "review_note": "Activated the validation rule and recorded immediate feedback plus the optional numeric formatter."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0013": {
+      "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "56e1fdc00520f006968c376eb176dfb31bd702e764d6df7254a2ca5d70170024", "section_path": ["Entering data", "Best practices"]},
+      "title": "Communicate and enforce required data before proceeding",
+      "statement": {"en": "When data entry is necessary, ensure people understand and provide all required data before proceeding.", "ja": "data entryが必要な場合、続行前にrequired dataを理解して入力できるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Keep a Next or Continue action unavailable until the required data is present."],
+      "review_note": "Recovered the conditional Make sure and must outcome and recorded the source's progression gate."
     },
     "HIG-PATTERNS-ENTERING-DATA-0004": {
       "source": {"source_hash": "ff00f23a228d5c7fc8b20bc303ef78292de5519ea7b411ebc4c66c9053d34d29", "source_sentence_hash": "501285d414293459ef5043bb7b866edcdd7ab43354ab5aab43392572b75797db", "section_path": ["Entering data", "Platform considerations", "macOS"]},

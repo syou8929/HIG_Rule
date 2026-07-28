@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3544
+- Active atomic rules: 3552
 - Pages without rules: 16
-- Low-confidence rules: 98
-- Rules requiring human review: 98
+- Low-confidence rules: 95
+- Rules requiring human review: 95
 - Reference notes: 914
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 504
 - getting-started: 100
 - inputs: 245
-- patterns: 497
+- patterns: 505
 - technologies: 1084
 
 ## Normative levels
 
-- AVOID: 480
+- AVOID: 481
 - MAY: 404
-- MUST: 511
+- MUST: 514
 - MUST_NOT: 81
-- SHOULD: 2068
+- SHOULD: 2072
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2559
-- ipados: 2517
-- macos: 2069
-- tvos: 1611
-- visionos: 2041
-- watchos: 1736
+- ios: 2567
+- ipados: 2525
+- macos: 2077
+- tvos: 1619
+- visionos: 2049
+- watchos: 1744
 
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3429
+- manual: 3437
 
 ## Blocked pages
 
@@ -92,9 +92,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-ENTERING-DATA-0001
-- HIG-PATTERNS-ENTERING-DATA-0002
-- HIG-PATTERNS-ENTERING-DATA-0005
 - HIG-PATTERNS-GOING-FULL-SCREEN-0001
 - HIG-PATTERNS-GOING-FULL-SCREEN-0002
 - HIG-PATTERNS-GOING-FULL-SCREEN-0003
@@ -193,9 +190,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-ENTERING-DATA-0001
-- HIG-PATTERNS-ENTERING-DATA-0002
-- HIG-PATTERNS-ENTERING-DATA-0005
 - HIG-PATTERNS-GOING-FULL-SCREEN-0001
 - HIG-PATTERNS-GOING-FULL-SCREEN-0002
 - HIG-PATTERNS-GOING-FULL-SCREEN-0003

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:37:24Z",
+  "reviewed_at": "2026-07-28T16:44:03Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 592,
+  "reviewed_rule_count": 595,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -947,6 +947,62 @@
       "severity": "error",
       "conditions": ["Preserve the original font, typeface, size, and other supported attributes."],
       "review_note": "Recovered the conditional Make sure styling requirement and kept the incompatible-style branch separate."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0002": {
+      "title": "Use secure entry for sensitive data",
+      "statement": {
+        "en": "When collecting sensitive data, use a secure text-entry field that obscures the input.",
+        "ja": "sensitive dataを収集する場合、inputを隠すsecure text-entry fieldを使う。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Apply when the app or game needs people to enter sensitive data."],
+      "review_note": "Raised the privacy-sensitive conditional outcome to MUST and retained sensitive data as its gate."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0003": {
+      "title": "Never prepopulate a password field",
+      "statement": {
+        "en": "Never prepopulate a password field.",
+        "ja": "password fieldを事前入力しない。"
+      },
+      "normative_level": "MUST_NOT",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "prohibit",
+      "severity": "error",
+      "conditions": ["A password field is present."],
+      "review_note": "Retained MUST_NOT after confirming the explicit Never prohibition."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0010": {
+      "title": "Require password entry or secure authentication",
+      "statement": {
+        "en": "Require people to enter their password or use biometric or keychain authentication.",
+        "ja": "password入力またはbiometric・keychain authenticationを要求する。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["The experience authenticates with a password or an approved biometric or keychain alternative."],
+      "review_note": "Recovered MUST from the explicit Always authentication requirement and separated it from password-field prepopulation."
+    },
+    "HIG-PATTERNS-ENTERING-DATA-0013": {
+      "title": "Communicate and enforce required data before proceeding",
+      "statement": {
+        "en": "When data entry is necessary, ensure people understand and provide all required data before proceeding.",
+        "ja": "data entryが必要な場合、続行前にrequired dataを理解して入力できるようにする。"
+      },
+      "normative_level": "MUST",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["Keep a Next or Continue action unavailable until the required data is present."],
+      "review_note": "Recovered the conditional Make sure and must outcome and recorded the source's progression gate."
     },
     "HIG-INPUTS-REMOTES-0005": {
       "title": "Map Play/Pause to media playback controls",
