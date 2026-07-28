@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3340
-- Reviewed batches: 193
+- Reviewed rules: 3352
+- Reviewed batches: 194
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:05:05Z
+- Reviewed at: 2026-07-28T16:12:43Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1443,6 +1443,13 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-MATERIALS-0024 · high — Recovered the general evaluation step separately from its optional numeric treatment. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - HIG-FOUNDATIONS-MATERIALS-0025 · high — Recovered the unbolded standard-material purpose statement. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 - HIG-FOUNDATIONS-MATERIALS-0026 · high — Recovered direct Avoid guidance as AVOID, not MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
+- HIG-FOUNDATIONS-MOTION-0001 · high — Concretized optionality and recorded the haptic and audio alternatives without duplicating the separate accessibility requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0002 · high — Recorded gesture continuity, expected spatial reversal, and the nongame disorientation risk. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0003 · high — Concretized both brevity and action-level precision while preserving the source's Aim strength. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0004 · high — Preserved the general cancellation recommendation and separated the qualified wait-time warning. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0005 · high — Retained MAY and recorded the applicable SF Symbols capability. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0006 · high — Retained MUST from Make sure, replaced vague generated wording, and preserved the qualified frame-rate range. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0007 · high — Recorded both optimization goals and kept automatic external-power modes as an example. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0008 · high — Recorded field-of-view coverage, passthrough occlusion, and both comfort techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0009 · high — Retained MAY and recorded the no-useful-information condition and two fade phases. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0010 · high — Retained MAY and recorded the stationary containment that reduces discomfort. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
@@ -1450,6 +1457,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-MOTION-0012 · high — Recovered the qualified AVOID lead and recorded the source's stability rationale and fade alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0013 · high — Preserved the practicability qualifier and peripheral-vision comfort rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0014 · high — Recovered the explicit brightness-matching requirement within the edge-motion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0015 · high — Activated the omitted purpose lead and preserved the supporting-without-overshadowing balance. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0016 · high — Combined the paragraph's two equivalent discouragements and retained AVOID rather than promoting don't to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0017 · high — Classified the source's essential accessibility outcome as MUST and recorded both non-motion alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0018 · high — Activated the omitted app-specific lead and preserved the generally qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0019 · high — Separated the qualified don't clause, retained AVOID strength, and preserved the repeated-animation emphasis. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-PRIVACY-0001 · medium — Reviewed the priority-3 privacy and explicit-intent guidance in official context, including permission timing, pre-alert design, authentication, and location-button customization. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0002 · medium — Reviewed the priority-3 privacy and explicit-intent guidance in official context, including permission timing, pre-alert design, authentication, and location-button customization. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0003 · medium — Preserved the explicit launch-time exception and the source preference for just-in-time permission requests. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))

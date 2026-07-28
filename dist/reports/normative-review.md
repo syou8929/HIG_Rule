@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 584
-- Retained MUST: 503
+- Reviewed rules: 585
+- Retained MUST: 504
 - Retained MUST_NOT: 81
-- Normative level changes: 208
+- Normative level changes: 210
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:05:05Z
+- Reviewed at: 2026-07-28T16:12:43Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -177,7 +177,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-LAYOUT-0048 — Recovered MUST from the conditional you need to indicate clause and retained both discovery techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0049 — Recovered MUST from the explicit needs-to-adapt statement and preserved all six variation groups. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0050 — Recovered MUST from the explicit conditional need-to-use-alternative-methods clause. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-MOTION-0006 — Retained MUST from Make sure, replaced vague generated wording, and preserved the qualified frame-rate range. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0014 — Recovered and retained the explicit Make sure directive within its peripheral-motion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0017 — Classified the source's essential accessibility outcome as MUST and recorded both non-motion alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003 — Raised the rule to MUST from the supporting must-always directional invariant. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0006 — Narrowed the mixed lead to the explicit Always logo requirement and split universal marks separately. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0012 — Split the mixed lead and retained MUST from the supporting Be sure directive. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))
@@ -636,8 +638,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-LAYOUT-0048 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the conditional you need to indicate clause and retained both discovery techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0049 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit needs-to-adapt statement and preserved all six variation groups. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - HIG-FOUNDATIONS-LAYOUT-0050 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit conditional need-to-use-alternative-methods clause. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- HIG-FOUNDATIONS-MOTION-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0006 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from Make sure, replaced vague generated wording, and preserved the qualified frame-rate range. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-MOTION-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained the explicit Make sure directive within its peripheral-motion exception. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0017 · MUST · retained_with_atomicity_or_scope_correction — Classified the source's essential accessibility outcome as MUST and recorded both non-motion alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - HIG-FOUNDATIONS-PRIVACY-0007 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-PRIVACY-0011 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))
 - HIG-FOUNDATIONS-RIGHT-TO-LEFT-0003 · MUST · retained_with_atomicity_or_scope_correction — Raised the rule to MUST from the supporting must-always directional invariant. ([source](https://developer.apple.com/design/human-interface-guidelines/right-to-left))

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T16:09:09.371Z. 3505 active rules; 8 deprecated rules.
+Generated 2026-07-28T16:14:58.020Z. 3510 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -481,13 +481,13 @@ Generated 2026-07-28T16:09:09.371Z. 3505 active rules; 8 deprecated rules.
 - **HIG-FOUNDATIONS-MATERIALS-0026 · AVOID · high** — Avoid choosing a material or effect by its apparent color. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
 ### motion
 
-- **HIG-FOUNDATIONS-MOTION-0001 · SHOULD · low** — Apply the documented Motion guidance to make motion optional. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0002 · SHOULD · low** — Apply the documented Motion guidance to strive for realistic feedback motion that follows people’s gestures and expectations. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0003 · SHOULD · low** — Apply the documented Motion guidance to aim for brevity and precision in feedback animations. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0004 · SHOULD · low** — Preserve people’s ability to cancel motion. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0005 · MAY · low** — Evaluate whether using animated symbols where it makes sense is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0006 · MUST · medium** — Verify that your game’s motion looks great by default on each platform you support. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
-- **HIG-FOUNDATIONS-MOTION-0007 · SHOULD · low** — Preserve people’s ability to customize the visual experience of your game to optimize performance or battery life. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0001 · SHOULD · high** — Make motion optional so people can use the experience without it. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0002 · SHOULD · high** — Make feedback motion realistic and consistent with people’s gestures and expectations. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0003 · SHOULD · high** — Keep feedback animations brief and precisely tied to the action or transition. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0004 · SHOULD · high** — Let people cancel or interrupt motion. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0005 · MAY · high** — Consider animated symbols when they suit the feedback. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0006 · MUST · high** — Ensure a game’s motion looks good by default on every supported platform. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0007 · SHOULD · high** — Let people customize game visuals to optimize performance or battery life. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0008 · SHOULD · high** — Keep people comfortable when showing movement of large virtual objects in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0009 · MAY · high** — When object relocation communicates nothing useful, consider hiding the movement with fades. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0010 · MAY · high** — Consider giving people a stationary frame of reference around visionOS motion. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
@@ -495,6 +495,11 @@ Generated 2026-07-28T16:09:09.371Z. 3505 active rules; 8 deprecated rules.
 - **HIG-FOUNDATIONS-MOTION-0012 · AVOID · high** — Avoid letting people rotate a virtual world in visionOS. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0013 · AVOID · high** — Wherever practicable, avoid motion at the edges of a person’s visionOS field of view. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 - **HIG-FOUNDATIONS-MOTION-0014 · MUST · high** — Match a moving peripheral object’s brightness to the rest of the visible content. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0015 · SHOULD · high** — Add motion only when it supports the experience without overshadowing it. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0016 · AVOID · high** — Avoid adding motion merely for its own sake or using it excessively. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0017 · MUST · high** — Provide a non-motion way to communicate every important piece of information. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0018 · AVOID · high** — Generally avoid adding motion to app interactions that occur frequently. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- **HIG-FOUNDATIONS-MOTION-0019 · AVOID · high** — Avoid making people wait for an animation to finish before they can act. ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
 ### privacy
 
 - **HIG-FOUNDATIONS-PRIVACY-0001 · SHOULD · medium** — Apply the documented Privacy guidance to be transparent about how your app collects and uses people’s data. ([source](https://developer.apple.com/design/human-interface-guidelines/privacy))

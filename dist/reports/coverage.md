@@ -5,16 +5,16 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3505
+- Active atomic rules: 3510
 - Pages without rules: 16
-- Low-confidence rules: 142
-- Rules requiring human review: 142
+- Low-confidence rules: 136
+- Rules requiring human review: 136
 - Reference notes: 915
 
 ## Rules by category
 
 - components: 1114
-- foundations: 485
+- foundations: 490
 - getting-started: 100
 - inputs: 245
 - patterns: 477
@@ -22,26 +22,26 @@
 
 ## Normative levels
 
-- AVOID: 473
+- AVOID: 476
 - MAY: 401
-- MUST: 503
+- MUST: 504
 - MUST_NOT: 81
-- SHOULD: 2047
+- SHOULD: 2048
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2521
-- ipados: 2479
-- macos: 2031
-- tvos: 1588
-- visionos: 2003
-- watchos: 1708
+- ios: 2526
+- ipados: 2484
+- macos: 2036
+- tvos: 1593
+- visionos: 2008
+- watchos: 1713
 
 ## Rules by testability
 
 - hybrid: 114
-- manual: 3391
+- manual: 3396
 
 ## Blocked pages
 
@@ -69,12 +69,6 @@ None.
 ## Low-confidence rules
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-FOUNDATIONS-MOTION-0001
-- HIG-FOUNDATIONS-MOTION-0002
-- HIG-FOUNDATIONS-MOTION-0003
-- HIG-FOUNDATIONS-MOTION-0004
-- HIG-FOUNDATIONS-MOTION-0005
-- HIG-FOUNDATIONS-MOTION-0007
 - HIG-FOUNDATIONS-WRITING-0001
 - HIG-FOUNDATIONS-WRITING-0002
 - HIG-FOUNDATIONS-WRITING-0003
@@ -214,12 +208,6 @@ None.
 ## Rules requiring human review
 
 - HIG-COMPONENTS-COLOR-WELLS-0001
-- HIG-FOUNDATIONS-MOTION-0001
-- HIG-FOUNDATIONS-MOTION-0002
-- HIG-FOUNDATIONS-MOTION-0003
-- HIG-FOUNDATIONS-MOTION-0004
-- HIG-FOUNDATIONS-MOTION-0005
-- HIG-FOUNDATIONS-MOTION-0007
 - HIG-FOUNDATIONS-WRITING-0001
 - HIG-FOUNDATIONS-WRITING-0002
 - HIG-FOUNDATIONS-WRITING-0003

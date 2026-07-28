@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:05:05Z",
+  "reviewed_at": "2026-07-28T16:12:43Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5213,6 +5213,34 @@
         "HIG-FOUNDATIONS-LAYOUT-0053"
       ],
       "review_note": "Completed the shared Layout sections, concretized seven queued rules, recovered eighteen atomic grouping, edge-extension, hierarchy, adaptation, preview, and artwork rules, and retained six explicit Ensure, Make sure, or need-to outcomes as MUST."
+    },
+    {
+      "id": "priority-6-motion-common-context-2026-07-29",
+      "reviewed_at": "2026-07-28T16:12:43Z",
+      "review_method": "Rendered Apple HIG Motion best-practice, feedback, platform-capability, watchOS, resource, and supporting context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/motion",
+          "source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-MOTION-0001",
+        "HIG-FOUNDATIONS-MOTION-0002",
+        "HIG-FOUNDATIONS-MOTION-0003",
+        "HIG-FOUNDATIONS-MOTION-0004",
+        "HIG-FOUNDATIONS-MOTION-0005",
+        "HIG-FOUNDATIONS-MOTION-0006",
+        "HIG-FOUNDATIONS-MOTION-0007",
+        "HIG-FOUNDATIONS-MOTION-0015",
+        "HIG-FOUNDATIONS-MOTION-0016",
+        "HIG-FOUNDATIONS-MOTION-0017",
+        "HIG-FOUNDATIONS-MOTION-0018",
+        "HIG-FOUNDATIONS-MOTION-0019"
+      ],
+      "review_note": "Completed Motion coverage, concretized six queued rules plus the existing default-game-motion MUST, recovered five atomic purpose, accessibility, repeated-interaction, and interruption rules, and preserved watchOS easing as a factual platform note."
     }
   ],
   "rules": {
@@ -5539,6 +5567,100 @@
       "normative_level": "AVOID",
       "conditions": ["Scale the artwork instead so important visual content remains visible."],
       "review_note": "Separated the explicit don't clause, retained AVOID strength, and recorded the scaling alternative."
+    },
+    "HIG-FOUNDATIONS-MOTION-0001": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "78d24700a2d22c26626331f2cc825a5e52cf8a0b7c104f6f0e514bc338e81fe9", "section_path": ["Motion", "Best practices"]},
+      "title": "Make motion optional",
+      "statement": {"en": "Make motion optional so people can use the experience without it.", "ja": "motionをoptionalにし、motionなしでもexperienceを利用できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Offer nonvisual feedback such as haptics or audio where appropriate."],
+      "review_note": "Concretized optionality and recorded the haptic and audio alternatives without duplicating the separate accessibility requirement."
+    },
+    "HIG-FOUNDATIONS-MOTION-0002": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "f3b917742cf77fdfd609c3a4e2548a57ab283afc0b4c5393cc421969e790cc0e", "section_path": ["Motion", "Providing feedback"]},
+      "title": "Match feedback motion to gestures and expectations",
+      "statement": {"en": "Make feedback motion realistic and consistent with people’s gestures and expectations.", "ja": "feedback motionをrealisticにし、利用者のgestureとexpectationに一致させる。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Preserve the spatial relationship implied by the gesture, such as reversing the reveal direction to dismiss a view.", "In nongame apps, incoherent motion can disorient people."],
+      "review_note": "Recorded gesture continuity, expected spatial reversal, and the nongame disorientation risk."
+    },
+    "HIG-FOUNDATIONS-MOTION-0003": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "ccf32ebdfdea7068efb13015c9f4edd1b28dd4f1a087a921a22e6d18ba78ca7b", "section_path": ["Motion", "Providing feedback"]},
+      "title": "Keep feedback animations brief and precise",
+      "statement": {"en": "Keep feedback animations brief and precisely tied to the action or transition.", "ja": "feedback animationをbriefにし、actionまたはtransitionへ正確に結びつける。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Avoid distracting people from gameplay or making them wait to reach content."],
+      "review_note": "Concretized both brevity and action-level precision while preserving the source's Aim strength."
+    },
+    "HIG-FOUNDATIONS-MOTION-0004": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "776815ac7b31767965cb0e4ff2d4ebd9d89239add137a069d4e397a24658a94c", "section_path": ["Motion", "Providing feedback"]},
+      "title": "Let people cancel motion",
+      "statement": {"en": "Let people cancel or interrupt motion.", "ja": "利用者がmotionをcancelまたはinterruptできるようにする。"},
+      "normative_level": "SHOULD",
+      "review_note": "Preserved the general cancellation recommendation and separated the qualified wait-time warning."
+    },
+    "HIG-FOUNDATIONS-MOTION-0005": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "e2326acbd43a4759bb53d1c304f8aaf698f593c6f442c40e8e55cce0528d3d0b", "section_path": ["Motion", "Providing feedback"]},
+      "title": "Consider animated symbols",
+      "statement": {"en": "Consider animated symbols when they suit the feedback.", "ja": "feedbackに適する場合はanimated symbolを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["SF Symbols 5 or later can animate SF Symbols and custom symbols."],
+      "review_note": "Retained MAY and recorded the applicable SF Symbols capability."
+    },
+    "HIG-FOUNDATIONS-MOTION-0006": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "630e9e3d5c79fb68249b7c9743940c3062ea1266d8ad66739fb508623fede755", "section_path": ["Motion", "Leveraging platform capabilities"]},
+      "title": "Provide good default game motion on every platform",
+      "statement": {"en": "Ensure a game’s motion looks good by default on every supported platform.", "ja": "gameのmotionを各supported platformでdefaultのまま良好に表示する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Use each device's graphics capabilities to choose defaults people can enjoy without changing settings.", "Treat 30–60 fps as a typical smooth range, not an unconditional fixed threshold."],
+      "review_note": "Retained MUST from Make sure, replaced vague generated wording, and preserved the qualified frame-rate range."
+    },
+    "HIG-FOUNDATIONS-MOTION-0007": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "81f5b721361a5e2ad1723002680d87805dc87f7ee80d620e9cca0fe6e9fec4a8", "section_path": ["Motion", "Leveraging platform capabilities"]},
+      "title": "Let players optimize game visuals",
+      "statement": {"en": "Let people customize game visuals to optimize performance or battery life.", "ja": "performanceまたはbattery lifeを最適化できるようgame visualをcustomize可能にする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Consider power-mode choices when the system detects an external power source."],
+      "review_note": "Recorded both optimization goals and kept automatic external-power modes as an example."
+    },
+    "HIG-FOUNDATIONS-MOTION-0015": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "98efe078e03917f346d501d9e3d05c9a209a687c2cc1cf6d5457815f5a69d767", "section_path": ["Motion", "Best practices"]},
+      "title": "Add motion purposefully",
+      "statement": {"en": "Add motion only when it supports the experience without overshadowing it.", "ja": "experienceを損なわず支える場合にだけmotionを加える。"},
+      "normative_level": "SHOULD",
+      "review_note": "Activated the omitted purpose lead and preserved the supporting-without-overshadowing balance."
+    },
+    "HIG-FOUNDATIONS-MOTION-0016": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "e4bf26b2c488953574f9dfaaba5911f9f3b91f62d696aa4bfaa2ddb2556a5c2f", "section_path": ["Motion", "Best practices"]},
+      "title": "Avoid gratuitous or excessive motion",
+      "statement": {"en": "Avoid adding motion merely for its own sake or using it excessively.", "ja": "motionを目的なく追加したり過剰に使ったりしない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Gratuitous or excessive animation can distract, disconnect, or physically discomfort people."],
+      "review_note": "Combined the paragraph's two equivalent discouragements and retained AVOID rather than promoting don't to MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-MOTION-0017": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "9b24aba9dada62f38134e7a7583c3b0c3c1e4c696800329063b67f8a7b14679d", "section_path": ["Motion", "Best practices"]},
+      "title": "Communicate important information without relying on motion",
+      "statement": {"en": "Provide a non-motion way to communicate every important piece of information.", "ja": "すべてのimportant informationにmotionを使わない伝達方法を提供する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Never make motion the only communication channel for important information.", "Use alternatives such as haptics or audio where appropriate."],
+      "review_note": "Classified the source's essential accessibility outcome as MUST and recorded both non-motion alternatives."
+    },
+    "HIG-FOUNDATIONS-MOTION-0018": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "2c50d6dcd5dfbf778300e6d63d2e554c7621949db01fb03776cc04fc696a1eb7", "section_path": ["Motion", "Providing feedback"]},
+      "title": "Avoid motion in frequent app interactions",
+      "statement": {"en": "Generally avoid adding motion to app interactions that occur frequently.", "ja": "appで頻繁に起きるinteractionへのmotion追加は通常避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Standard interface elements already include subtle system animation.", "Avoid making people repeatedly spend extra time attending to custom-element motion."],
+      "review_note": "Activated the omitted app-specific lead and preserved the generally qualification."
+    },
+    "HIG-FOUNDATIONS-MOTION-0019": {
+      "source": {"source_hash": "49cba952d719ad99b48e51d08627a5358fa49c03a4e47d85377883005a38dfde", "source_sentence_hash": "ff2a58cda8da93a29674afac2392d51546af0d78e7cf45d32589d40a75452798", "section_path": ["Motion", "Providing feedback"]},
+      "title": "Avoid blocking action until animation finishes",
+      "statement": {"en": "Avoid making people wait for an animation to finish before they can act.", "ja": "animationの終了まで利用者がactionできない状態を避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Apply wherever practicable, especially when people experience the animation more than once."],
+      "review_note": "Separated the qualified don't clause, retained AVOID strength, and preserved the repeated-animation emphasis."
     },
     "HIG-COMPONENTS-STEPPERS-0002": {
       "source": {
