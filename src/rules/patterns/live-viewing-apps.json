@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0001",
-    "title": "Let people tap once — or not at all — to start playback",
+    "title": "Start live playback with at most one tap",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Preserve people’s ability to tap once — or not at all — to start playback.",
-      "ja": "利用者がtap once — or not at all — to start playbackできる状態を保つ。"
+      "en": "Let people start live playback with one tap or without an extra tap when appropriate.",
+      "ja": "適切な場合、live playbackを1 tapまたは追加tapなしで開始できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -38,7 +38,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Minimize the interval between opening the app and playing live content."
     ],
     "exceptions": [],
     "rationale": {
@@ -48,7 +48,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to tap once — or not at all — to start playback.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Let people start live playback with one tap or without an extra tap when appropriate.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -68,7 +68,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "4279758234c5e1dd8e0a8dc10e40448803068886ff6645342b4357163b3a7ba5",
-      "evidence_paraphrase": "Preserve people’s ability to tap once — or not at all — to start playback."
+      "evidence_paraphrase": "Let people start live playback with one tap or without an extra tap when appropriate."
     },
     "tags": [
       "patterns",
@@ -78,21 +78,21 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to tap once — or not at all — to start playback.",
+    "apple_native_rule": "Let people start live playback with one tap or without an extra tap when appropriate.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0002",
-    "title": "Make sure live content looks live",
+    "title": "Make live items look live",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Verify that live content looks live.",
-      "ja": "live content looks liveを満たしていることを確認する。"
+      "en": "Ensure live items look live through playback or a clear visual marker.",
+      "ja": "playbackまたは明確なvisual markerによりlive itemがliveに見えるようにする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -120,7 +120,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a badge, symbol, sash, or equivalent indicator when an item isn't already playing."
     ],
     "exceptions": [],
     "rationale": {
@@ -130,7 +130,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that live content looks live.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Ensure live items look live through playback or a clear visual marker.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -150,7 +150,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "5dd7a4f5abe8dc9bb975486cc3aff56446917d8cb08dbdac9b14ed9c6f94bfbd",
-      "evidence_paraphrase": "Verify that live content looks live."
+      "evidence_paraphrase": "Ensure live items look live through playback or a clear visual marker."
     },
     "tags": [
       "patterns",
@@ -160,22 +160,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that live content looks live.",
+    "apple_native_rule": "Ensure live items look live through playback or a clear visual marker.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0003",
-    "title": "Consider indicating the progress of currently playing live content",
+    "title": "Consider showing live-program progress",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether indicating the progress of currently playing live content is appropriate for the current context.",
-      "ja": "indicating the progress of currently playing live contentが現在の状況に適切か検討する。"
+      "en": "Consider indicating how much of an in-progress live program remains.",
+      "ja": "進行中live programの残り時間を示すことを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -200,7 +200,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A progress bar or equivalent indicator can show where playback begins."
     ],
     "exceptions": [],
     "rationale": {
@@ -210,7 +210,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether indicating the progress of currently playing live content is appropriate for the current context.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Consider indicating how much of an in-progress live program remains.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -230,7 +230,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "4f4bd9f762efff13c1f5c59d80cbd6b70501f69dfc49a872a562e35fea819ba6",
-      "evidence_paraphrase": "Evaluate whether indicating the progress of currently playing live content is appropriate for the current context."
+      "evidence_paraphrase": "Consider indicating how much of an in-progress live program remains."
     },
     "tags": [
       "patterns",
@@ -239,22 +239,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether indicating the progress of currently playing live content is appropriate for the current context.",
+    "apple_native_rule": "Consider indicating how much of an in-progress live program remains.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0004",
-    "title": "Give people additional actions and viewing alternatives",
+    "title": "Make supported live-content actions easy to use",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to give people additional actions and viewing alternatives.",
-      "ja": "「Live-viewing apps」において「Give people additional actions and viewing alternatives」の指針を適用する。"
+      "en": "Make supported actions such as record, restart, and download easy to use alongside playback.",
+      "ja": "record、restart、downloadなど対応するactionをplaybackとともに使いやすくする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -279,7 +279,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Playback priority, action order, and repeat-broadcast information are recorded separately."
     ],
     "exceptions": [],
     "rationale": {
@@ -289,7 +289,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to give people additional actions and viewing alternatives.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Make supported actions such as record, restart, and download easy to use alongside playback.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -309,7 +309,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "b1c7e7bbd4eace493932ed71b19b8e5cbb8db542fe9d9932b6c1ecdb6db4d114",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to give people additional actions and viewing alternatives."
+      "evidence_paraphrase": "Make supported actions such as record, restart, and download easy to use alongside playback."
     },
     "tags": [
       "patterns",
@@ -318,22 +318,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to give people additional actions and viewing alternatives.",
+    "apple_native_rule": "Make supported actions such as record, restart, and download easy to use alongside playback.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0005",
-    "title": "Consider using a content footer for browsing channels during playback",
+    "title": "Consider a content footer for in-playback browsing",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether using a content footer for browsing channels during playback is appropriate for the current context.",
-      "ja": "using a content footer for browsing channels during playbackが現在の状況に適切か検討する。"
+      "en": "Consider a content footer when people need to browse channels without leaving live playback.",
+      "ja": "live playbackを離れずchannelを閲覧する必要がある場合はcontent footerを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -358,7 +358,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "If used, the footer requirements are recorded as separate rules."
     ],
     "exceptions": [],
     "rationale": {
@@ -368,7 +368,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using a content footer for browsing channels during playback is appropriate for the current context.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Consider a content footer when people need to browse channels without leaving live playback.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -388,7 +388,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "a75e42f30887e2fa05cfb8cd87895c0b1c81cfcb0534fb48ee3da29103475d73",
-      "evidence_paraphrase": "Evaluate whether using a content footer for browsing channels during playback is appropriate for the current context."
+      "evidence_paraphrase": "Consider a content footer when people need to browse channels without leaving live playback."
     },
     "tags": [
       "patterns",
@@ -397,24 +397,24 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using a content footer for browsing channels during playback is appropriate for the current context.",
+    "apple_native_rule": "Consider a content footer when people need to browse channels without leaving live playback.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0006",
-    "title": "Provide instant visual feedback when people change channels",
+    "title": "Provide immediate channel-change feedback",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make instant visual feedback when people change channels available when applicable.",
-      "ja": "必要な場合にinstant visual feedback when people change channelsを利用可能にする。"
+      "en": "Provide immediate visual feedback when people change channels.",
+      "ja": "channel変更時に即時のvisual feedbackを提供する。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -437,7 +437,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Confirm the selected channel immediately, including while its stream is loading."
     ],
     "exceptions": [],
     "rationale": {
@@ -447,7 +447,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make instant visual feedback when people change channels available when applicable.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Provide immediate visual feedback when people change channels.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -467,7 +467,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "6ed45737015acbd9fd18340c213db0794952dbca2a1390bc12ac154de21792a2",
-      "evidence_paraphrase": "Make instant visual feedback when people change channels available when applicable."
+      "evidence_paraphrase": "Provide immediate visual feedback when people change channels."
     },
     "tags": [
       "patterns",
@@ -476,22 +476,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make instant visual feedback when people change channels available when applicable.",
+    "apple_native_rule": "Provide immediate visual feedback when people change channels.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0007",
-    "title": "Match audio to the current context",
+    "title": "Keep live audio aligned with the viewing context",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to match audio to the current context.",
-      "ja": "「Live-viewing apps」において「Match audio to the current context」の指針を適用する。"
+      "en": "Keep audio matched to the live content while people browse within the live-viewing context.",
+      "ja": "live-viewing context内を閲覧中はaudioを再生中live contentに合わせる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -516,7 +516,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Browsing within the live tab can continue while the live content plays in the background.",
+      "Leaving the live tab is recorded separately."
     ],
     "exceptions": [],
     "rationale": {
@@ -526,7 +527,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to match audio to the current context.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Keep audio matched to the live content while people browse within the live-viewing context.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -546,7 +547,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "e3e4053e6fee8e0c219ad133cb2fe7aa22ca72f8fed00daf41857b927bebd2a1",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to match audio to the current context."
+      "evidence_paraphrase": "Keep audio matched to the live content while people browse within the live-viewing context."
     },
     "tags": [
       "patterns",
@@ -555,22 +556,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to match audio to the current context.",
+    "apple_native_rule": "Keep audio matched to the live content while people browse within the live-viewing context.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0008",
-    "title": "Make browsing the EPG effortless",
+    "title": "Make large EPGs easy to browse",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "epg-experience",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to make browsing the EPG effortless.",
-      "ja": "「Live-viewing apps」において「Make browsing the EPG effortless」の指針を適用する。"
+      "en": "Help people page, scroll, or jump through a large EPG easily.",
+      "ja": "大規模なEPGをpage、scroll、jumpで容易に閲覧できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -595,7 +596,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Quick-access channel groups are recorded separately as an optional enhancement."
     ],
     "exceptions": [],
     "rationale": {
@@ -605,7 +606,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to make browsing the EPG effortless.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Help people page, scroll, or jump through a large EPG easily.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -625,7 +626,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "7753a0c75da21f8375e0eb5c7b4dd7a157f330b18cc4d8d909d00ac7c482f143",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to make browsing the EPG effortless."
+      "evidence_paraphrase": "Help people page, scroll, or jump through a large EPG easily."
     },
     "tags": [
       "patterns",
@@ -634,22 +635,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to make browsing the EPG effortless.",
+    "apple_native_rule": "Help people page, scroll, or jump through a large EPG easily.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0009",
-    "title": "Let people browse the EPG without leaving their current content",
+    "title": "Keep current content available while browsing the EPG",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "epg-experience",
     "statement": {
-      "en": "Preserve people’s ability to browse the EPG without leaving their current content.",
-      "ja": "利用者がbrowse the EPG without leaving their current contentできる状態を保つ。"
+      "en": "Let people browse the EPG without leaving their current content.",
+      "ja": "現在のcontentを離れずにEPGを閲覧できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -674,7 +675,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Continue playback in picture-in-picture or in the background when appropriate."
     ],
     "exceptions": [],
     "rationale": {
@@ -684,7 +685,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to browse the EPG without leaving their current content.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Let people browse the EPG without leaving their current content.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -704,7 +705,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "38ab2d0ed220285f7e8d21d0814bb48a85cb0e3667983c02208d779ee181215b",
-      "evidence_paraphrase": "Preserve people’s ability to browse the EPG without leaving their current content."
+      "evidence_paraphrase": "Let people browse the EPG without leaving their current content."
     },
     "tags": [
       "patterns",
@@ -713,22 +714,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to browse the EPG without leaving their current content.",
+    "apple_native_rule": "Let people browse the EPG without leaving their current content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0010",
-    "title": "Let people start and stop recording from the info panel",
+    "title": "Start and stop recording from the info panel",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "cloud-dvr",
     "statement": {
-      "en": "Preserve people’s ability to start and stop recording from the info panel.",
-      "ja": "利用者がstart and stop recording from the info panelできる状態を保つ。"
+      "en": "Let people start and stop recording live content from its info panel.",
+      "ja": "live contentのinfo panelからrecordingを開始・停止できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -753,7 +754,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The app supports cloud DVR while live-streaming."
     ],
     "exceptions": [],
     "rationale": {
@@ -763,7 +764,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to start and stop recording from the info panel.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Let people start and stop recording live content from its info panel.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -783,7 +784,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "496d241da9a2d53ba5dce488b091ebec0c534a315f8e630967f326208439dfb6",
-      "evidence_paraphrase": "Preserve people’s ability to start and stop recording from the info panel."
+      "evidence_paraphrase": "Let people start and stop recording live content from its info panel."
     },
     "tags": [
       "patterns",
@@ -792,22 +793,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to start and stop recording from the info panel.",
+    "apple_native_rule": "Let people start and stop recording live content from its info panel.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0011",
-    "title": "Let people record a future program in a view that provides details about the content",
+    "title": "Record future programs from a detail view",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "cloud-dvr",
     "statement": {
-      "en": "Preserve people’s ability to record a future program in a view that provides details about the content.",
-      "ja": "利用者がrecord a future program in a view that provides details about the contentできる状態を保つ。"
+      "en": "Let people record a future program from a view that provides its details.",
+      "ja": "programの詳細を提供するviewから将来のprogramをrecordingできるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -832,7 +833,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Single-program and future-episode choices are recorded separately."
     ],
     "exceptions": [],
     "rationale": {
@@ -842,7 +843,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to record a future program in a view that provides details about the content.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Let people record a future program from a view that provides its details.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -862,7 +863,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "872ce2eb4acfd4897c4632f258ae9bf18566c1ac3cfc2a6e15206f18fec1f6eb",
-      "evidence_paraphrase": "Preserve people’s ability to record a future program in a view that provides details about the content."
+      "evidence_paraphrase": "Let people record a future program from a view that provides its details."
     },
     "tags": [
       "patterns",
@@ -871,22 +872,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to record a future program in a view that provides details about the content.",
+    "apple_native_rule": "Let people record a future program from a view that provides its details.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0012",
-    "title": "Help people adapt the recording experience to their needs",
+    "title": "Offer precise recording choices",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "cloud-dvr",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to help people adapt the recording experience to their needs.",
-      "ja": "「Live-viewing apps」において「Help people adapt the recording experience to their needs」の指針を適用する。"
+      "en": "Let people specify precisely which episodes, programs, or team games to record.",
+      "ja": "recordingするepisode、program、team gameを正確に指定できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -911,7 +912,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Offer the choices that fit the content type and supported DVR capabilities."
     ],
     "exceptions": [],
     "rationale": {
@@ -921,7 +922,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to help people adapt the recording experience to their needs.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Let people specify precisely which episodes, programs, or team games to record.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -941,7 +942,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "98717e65bcb5b4757f195f6e839b7faccad14969f3ce5e0a299563404cad4298",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to help people adapt the recording experience to their needs."
+      "evidence_paraphrase": "Let people specify precisely which episodes, programs, or team games to record."
     },
     "tags": [
       "patterns",
@@ -950,22 +951,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to help people adapt the recording experience to their needs.",
+    "apple_native_rule": "Let people specify precisely which episodes, programs, or team games to record.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0013",
-    "title": "Allow playback and other content-specific actions within your cloud DVR area",
+    "title": "Provide content actions in the cloud DVR area",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "cloud-dvr",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to allow playback and other content-specific actions within your cloud DVR area.",
-      "ja": "「Live-viewing apps」において「Allow playback and other content-specific actions within your cloud DVR area」の指針を適用する。"
+      "en": "In a cloud DVR detail view, let people play or delete content and adjust recording settings when applicable.",
+      "ja": "cloud DVR detail viewでcontentをplay・deleteし、該当する場合はrecording settingを調整できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -990,7 +991,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The app supports the corresponding content-specific action."
     ],
     "exceptions": [],
     "rationale": {
@@ -1000,7 +1001,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to allow playback and other content-specific actions within your cloud DVR area.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “In a cloud DVR detail view, let people play or delete content and adjust recording settings when applicable.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -1020,7 +1021,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "27fd9cf743533c78f4e141edc4b80bc05f80d04d5041a0f2e675b0151ed126a2",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to allow playback and other content-specific actions within your cloud DVR area."
+      "evidence_paraphrase": "In a cloud DVR detail view, let people play or delete content and adjust recording settings when applicable."
     },
     "tags": [
       "patterns",
@@ -1029,22 +1030,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to allow playback and other content-specific actions within your cloud DVR area.",
+    "apple_native_rule": "In a cloud DVR detail view, let people play or delete content and adjust recording settings when applicable.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0014",
-    "title": "Consider offering a control that lets people manage cloud DVR settings",
+    "title": "Consider a cloud DVR management control",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "cloud-dvr",
     "statement": {
-      "en": "Evaluate whether offering a control that lets people manage cloud DVR settings is appropriate for the current context.",
-      "ja": "offering a control that lets people manage cloud DVR settingsが現在の状況に適切か検討する。"
+      "en": "Consider a control for managing cloud DVR retention settings.",
+      "ja": "cloud DVRのretention settingを管理するcontrolを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -1069,7 +1070,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Management can include deleting viewed or older recordings."
     ],
     "exceptions": [],
     "rationale": {
@@ -1079,7 +1080,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether offering a control that lets people manage cloud DVR settings is appropriate for the current context.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Consider a control for managing cloud DVR retention settings.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -1099,7 +1100,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "3386aaa6be75744e7a717b836e6de0c2961687451d7e15d88a6b1e7a19de81de",
-      "evidence_paraphrase": "Evaluate whether offering a control that lets people manage cloud DVR settings is appropriate for the current context."
+      "evidence_paraphrase": "Consider a control for managing cloud DVR retention settings."
     },
     "tags": [
       "patterns",
@@ -1108,24 +1109,24 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether offering a control that lets people manage cloud DVR settings is appropriate for the current context.",
+    "apple_native_rule": "Consider a control for managing cloud DVR retention settings.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0015",
-    "title": "Give it a subtle treatment, such as a darkening, to keep text legible and help all items remain visually",
+    "title": "Keep a content footer legible and distinct",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to give it a subtle treatment, such as a darkening, to keep text legible and help all items remain visually.",
-      "ja": "「Live-viewing apps」において「Give it a subtle treatment, such as a darkening, to keep text legible and help all items remain visually」の指針を適用する。"
+      "en": "When using a content footer, ensure its treatment keeps text legible and items distinct from playing content.",
+      "ja": "content footerを使う場合、textの可読性とitemの再生contentからの区別を保つtreatmentにする。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -1148,7 +1149,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a subtle treatment such as darkening rather than obscuring the playing content."
     ],
     "exceptions": [],
     "rationale": {
@@ -1158,7 +1159,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to give it a subtle treatment, such as a darkening, to keep text legible and help all items remain visually.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “When using a content footer, ensure its treatment keeps text legible and items distinct from playing content.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -1178,7 +1179,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "a8d898d0348baa96cb77f543ec3f5f1a9ff298db6b0ee9bd1629a85881fb8b75",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to give it a subtle treatment, such as a darkening, to keep text legible and help all items remain visually."
+      "evidence_paraphrase": "When using a content footer, ensure its treatment keeps text legible and items distinct from playing content."
     },
     "tags": [
       "patterns",
@@ -1187,24 +1188,24 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to give it a subtle treatment, such as a darkening, to keep text legible and help all items remain visually.",
+    "apple_native_rule": "When using a content footer, ensure its treatment keeps text legible and items distinct from playing content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0016",
-    "title": "Make it easy for people to identify the thumbnail that represents the currently playing content by, for exa…",
+    "title": "Identify the currently playing footer thumbnail",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to make it easy for people to identify the thumbnail that represents the currently playing content by, for example, badging.",
-      "ja": "「Live-viewing apps」において「Make it easy for people to identify the thumbnail that represents the currently playing content by, for example, badging」の指針を適用する。"
+      "en": "When using a content footer, ensure people can identify the thumbnail for the currently playing content.",
+      "ja": "content footerを使う場合、再生中contentのthumbnailを識別できるようにする。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -1227,7 +1228,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a badge, tinted progress bar, or equivalent state indicator."
     ],
     "exceptions": [],
     "rationale": {
@@ -1237,7 +1238,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to make it easy for people to identify the thumbnail that represents the currently playing content by, for example, badging.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “When using a content footer, ensure people can identify the thumbnail for the currently playing content.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -1257,7 +1258,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "7d1d2f1e316d1164fb42eed0c703f783a7bc1c72a624410811d720d4acc82bbe",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to make it easy for people to identify the thumbnail that represents the currently playing content by, for example, badging."
+      "evidence_paraphrase": "When using a content footer, ensure people can identify the thumbnail for the currently playing content."
     },
     "tags": [
       "patterns",
@@ -1266,24 +1267,24 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to make it easy for people to identify the thumbnail that represents the currently playing content by, for example, badging.",
+    "apple_native_rule": "When using a content footer, ensure people can identify the thumbnail for the currently playing content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0017",
-    "title": "Match the categories in the content footer to those in your electronic program guide (for related guidance,…",
+    "title": "Match content-footer categories to the EPG",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to match the categories in the content footer to those in your electronic program guide (for related guidance, see EPG.",
-      "ja": "「Live-viewing apps」において「Match the categories in the content footer to those in your electronic program guide (for related guidance, see EPG」の指針を適用する。"
+      "en": "When using a content footer, ensure its categories match the electronic program guide.",
+      "ja": "content footerを使う場合、そのcategoryをelectronic program guideと一致させる。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -1306,7 +1307,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The app provides both a content footer and an EPG."
     ],
     "exceptions": [],
     "rationale": {
@@ -1316,7 +1317,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to match the categories in the content footer to those in your electronic program guide (for related guidance, see EPG.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “When using a content footer, ensure its categories match the electronic program guide.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -1336,7 +1337,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "0dbfdef98426e352ce6cb4ecbbf0880c58b5122e1b1b1bbe4a201d3a5b7e5fff",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to match the categories in the content footer to those in your electronic program guide (for related guidance, see EPG."
+      "evidence_paraphrase": "When using a content footer, ensure its categories match the electronic program guide."
     },
     "tags": [
       "patterns",
@@ -1345,24 +1346,24 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to match the categories in the content footer to those in your electronic program guide (for related guidance, see EPG.",
+    "apple_native_rule": "When using a content footer, ensure its categories match the electronic program guide.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0018",
-    "title": "Design a simple, predictable way for people to invoke and dismiss the content footer — for example, if swiping",
+    "title": "Use predictable content-footer gestures",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Live-viewing apps guidance to design a simple, predictable way for people to invoke and dismiss the content footer — for example, if swiping.",
-      "ja": "「Live-viewing apps」において「Design a simple, predictable way for people to invoke and dismiss the content footer — for example, if swiping」の指針を適用する。"
+      "en": "When using a content footer, ensure people can invoke and dismiss it in a simple, predictable way.",
+      "ja": "content footerを使う場合、単純で予測可能な方法で表示・dismissできるようにする。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -1385,7 +1386,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use an inverse action for dismissal when an action such as swiping up invokes the footer."
     ],
     "exceptions": [],
     "rationale": {
@@ -1395,7 +1396,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Live-viewing apps guidance to design a simple, predictable way for people to invoke and dismiss the content footer — for example, if swiping.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “When using a content footer, ensure people can invoke and dismiss it in a simple, predictable way.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -1415,7 +1416,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "e5eb5b06abd91a31d3900abac738f8b37cd1521626eb17d237fa96efc2a6f2d8",
-      "evidence_paraphrase": "Apply the documented Live-viewing apps guidance to design a simple, predictable way for people to invoke and dismiss the content footer — for example, if swiping."
+      "evidence_paraphrase": "When using a content footer, ensure people can invoke and dismiss it in a simple, predictable way."
     },
     "tags": [
       "patterns",
@@ -1424,22 +1425,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Live-viewing apps guidance to design a simple, predictable way for people to invoke and dismiss the content footer — for example, if swiping.",
+    "apple_native_rule": "When using a content footer, ensure people can invoke and dismiss it in a simple, predictable way.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0019",
-    "title": "Feature live content prominently and make it easy to access",
+    "title": "Feature live content prominently",
     "category": "patterns",
     "topic": "live-viewing-apps",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Feature live content prominently and make it easy to access in the documented context.",
-      "ja": "該当する状況でlive content prominently and make it easy to accessを取り上げる。"
+      "en": "Feature live content prominently and make it quick to access.",
+      "ja": "live contentを目立たせ、素早くaccessできるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1464,7 +1465,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Placing live content first can reduce playback startup to one tap."
     ],
     "exceptions": [],
     "rationale": {
@@ -1474,7 +1475,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Feature live content prominently and make it easy to access in the documented context.” in the documented Live-viewing apps context?"
+        "Does the design satisfy “Feature live content prominently and make it quick to access.” in the documented Live-viewing apps context?"
       ]
     },
     "testability": "manual",
@@ -1494,7 +1495,7 @@
       "retrieved_at": "2026-07-21T11:15:01.955Z",
       "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
       "source_sentence_hash": "37cb3656ead46c14082619bd05e83c1e8dd302938e988375b764f7c1d5f595f1",
-      "evidence_paraphrase": "Feature live content prominently and make it easy to access in the documented context."
+      "evidence_paraphrase": "Feature live content prominently and make it quick to access."
     },
     "tags": [
       "patterns",
@@ -1503,7 +1504,949 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Feature live content prominently and make it easy to access in the documented context.",
+    "apple_native_rule": "Feature live content prominently and make it quick to access.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0020",
+    "title": "Prioritize live content",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "live-viewing-apps",
+    "statement": {
+      "en": "Prioritize and elevate live content throughout a live-viewing app.",
+      "ja": "live-viewing app全体でlive contentを優先して目立たせる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply the requirement throughout the live-viewing experience."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prioritize and elevate live content throughout a live-viewing app.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "e9bab8acc933813ca60c24b4bfe769961da665b2739a3275918da3cab01d95da",
+      "evidence_paraphrase": "Prioritize and elevate live content throughout a live-viewing app."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Prioritize and elevate live content throughout a live-viewing app.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0021",
+    "title": "Draw attention to live content on every screen",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "live-viewing-apps",
+    "statement": {
+      "en": "On every screen, draw people's attention to live content.",
+      "ja": "すべてのscreenでlive contentへ注意を向けられるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use hierarchy and placement appropriate to each screen."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “On every screen, draw people's attention to live content.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "69d6dda79d6d4a430afca1876e45ef29ec8b472fcbaa754659b87121bd5e72aa",
+      "evidence_paraphrase": "On every screen, draw people's attention to live content."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "On every screen, draw people's attention to live content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0022",
+    "title": "Distinguish live content from VOD at a glance",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "live-viewing-apps",
+    "statement": {
+      "en": "On every screen, ensure people can distinguish live content from VOD content at a glance.",
+      "ja": "すべてのscreenでlive contentとVOD contentを一目で区別できるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app presents live and video-on-demand content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “On every screen, ensure people can distinguish live content from VOD content at a glance.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "69d6dda79d6d4a430afca1876e45ef29ec8b472fcbaa754659b87121bd5e72aa",
+      "evidence_paraphrase": "On every screen, ensure people can distinguish live content from VOD content at a glance."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "On every screen, ensure people can distinguish live content from VOD content at a glance.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0023",
+    "title": "Keep playback as the primary action",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Keep playback as the primary action for live content.",
+      "ja": "live contentではplaybackをprimary actionにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Additional supported actions remain secondary to playback."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep playback as the primary action for live content.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "68a22d990e6d6bd12eb3d822f8b28821a865679faa2b794020d4a21a453c5f49",
+      "evidence_paraphrase": "Keep playback as the primary action for live content."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Keep playback as the primary action for live content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0024",
+    "title": "Order live-content actions consistently",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Display supported live-content actions in the same order throughout the app.",
+      "ja": "対応するlive-content actionをapp全体で同じ順序に表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use a stable order such as Watch, Start Over, Record, and Favorite."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Display supported live-content actions in the same order throughout the app.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "785e730f1440a1ac752950ed364da70a7b85eb0e3dae3f8439881537773949ac",
+      "evidence_paraphrase": "Display supported live-content actions in the same order throughout the app."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Display supported live-content actions in the same order throughout the app.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0025",
+    "title": "Show future broadcasts of current content",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When currently playing content airs again, show the schedule so people can plan their viewing.",
+      "ja": "再生中contentが再放送される場合、視聴を計画できるようscheduleを表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The currently playing content has known future broadcast times."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When currently playing content airs again, show the schedule so people can plan their viewing.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "bc97c682f57889b6e829de08e61eb839bade9cac80bd0b5cbfea8e4b3b96ba92",
+      "evidence_paraphrase": "When currently playing content airs again, show the schedule so people can plan their viewing."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When currently playing content airs again, show the schedule so people can plan their viewing.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0026",
+    "title": "Stop live audio outside the live-viewing context",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Stop live-content audio when people navigate away from the app's live tab.",
+      "ja": "appのlive tabから離れた場合はlive-content audioを停止する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Navigating away from the live tab ends the live-viewing context."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Stop live-content audio when people navigate away from the app's live tab.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "cc4094bedc96436b61982c3ef93326366fb7285d9690a2a83060af8085af59b6",
+      "evidence_paraphrase": "Stop live-content audio when people navigate away from the app's live tab."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Stop live-content audio when people navigate away from the app's live tab.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0027",
+    "title": "Make current EPG information easy to spot",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "epg-experience",
+    "statement": {
+      "en": "When the EPG opens, make the current program, channel, and time easy to spot and current playback easy to resume.",
+      "ja": "EPGを開いたとき、現在のprogram、channel、timeを見つけやすくし、現在のplaybackへ戻りやすくする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "People first open the EPG."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When the EPG opens, make the current program, channel, and time easy to spot and current playback easy to resume.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "EPG experience"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "4471a5dcc401b05b0ed725cdb4ad50df4a22d7356822b99e3c0dd686d746929d",
+      "evidence_paraphrase": "When the EPG opens, make the current program, channel, and time easy to spot and current playback easy to resume."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "epg-experience"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When the EPG opens, make the current program, channel, and time easy to spot and current playback easy to resume.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0028",
+    "title": "Consider quick-access EPG channel groups",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "epg-experience",
+    "statement": {
+      "en": "Consider a My Channels or Favorites group for frequently viewed EPG content.",
+      "ja": "頻繁に見るEPG content向けにMy ChannelsまたはFavorites groupを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The EPG contains enough content for a personalized shortcut group to help."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider a My Channels or Favorites group for frequently viewed EPG content.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "EPG experience"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "a3e2b281fd4965987cf2360c22651685c0d8514af7589c3815bd2fac8b020643",
+      "evidence_paraphrase": "Consider a My Channels or Favorites group for frequently viewed EPG content."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "epg-experience"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider a My Channels or Favorites group for frequently viewed EPG content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0029",
+    "title": "Group EPG content into familiar categories",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "epg-experience",
+    "statement": {
+      "en": "Group EPG content into familiar categories that help people find it.",
+      "ja": "EPG contentを見つけやすい馴染みあるcategoryにgroup化する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Categories can include Movies, TV Shows, Kids, Sports, and Popular."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Group EPG content into familiar categories that help people find it.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "EPG experience"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "8ab8a4810c72831ce05fe9e76e60cf1e264b22676b7ed470a5e8ca40f8dc6068",
+      "evidence_paraphrase": "Group EPG content into familiar categories that help people find it."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "epg-experience"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Group EPG content into familiar categories that help people find it.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0030",
+    "title": "Offer single-program and future-episode recording choices",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "cloud-dvr",
+    "statement": {
+      "en": "Let people choose whether to record only a selected program or all future episodes.",
+      "ja": "選択したprogramだけか今後すべてのepisodeをrecordingするか選べるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The selected future program belongs to an episodic series."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Let people choose whether to record only a selected program or all future episodes.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "Cloud DVR"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "e7e6d059425e17834832fc07aa72a54c754df77ed563c6ef4056a9fd966da29c",
+      "evidence_paraphrase": "Let people choose whether to record only a selected program or all future episodes."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "cloud-dvr"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Let people choose whether to record only a selected program or all future episodes.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LIVE-VIEWING-APPS-0031",
+    "title": "Help prevent cloud DVR storage exhaustion",
+    "category": "patterns",
+    "topic": "live-viewing-apps",
+    "subtopic": "cloud-dvr",
+    "statement": {
+      "en": "Help people avoid running out of cloud DVR space through automatic storage management.",
+      "ja": "automatic storage managementによりcloud DVRの容量不足を避けられるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Automatic management can overwrite the oldest or already viewed content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Live-viewing apps experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLive-viewing appsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Help people avoid running out of cloud DVR space through automatic storage management.” in the documented Live-viewing apps context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+      "page_title": "Live-viewing apps",
+      "section_path": [
+        "Live-viewing apps",
+        "Cloud DVR"
+      ],
+      "retrieved_at": "2026-07-21T11:15:01.955Z",
+      "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8",
+      "source_sentence_hash": "8f72c1c80f762c74afcee62ad0e402fbf1003865455fd39199f2330b8ce34e8d",
+      "evidence_paraphrase": "Help people avoid running out of cloud DVR space through automatic storage management."
+    },
+    "tags": [
+      "patterns",
+      "live-viewing-apps",
+      "cloud-dvr"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Help people avoid running out of cloud DVR space through automatic storage management.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

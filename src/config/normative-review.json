@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:49:48Z",
+  "reviewed_at": "2026-07-28T17:02:18Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 599,
+  "reviewed_rule_count": 609,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -4247,6 +4247,94 @@
       "normative_level": "MUST", "confidence": "high", "review_required": false,
       "polarity": "require", "severity": "error",
       "review_note": "Recovered the conditional Always pair requirement for Done with Cancel or Back."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0002": {
+      "title": "Make live items look live",
+      "statement": {"en": "Ensure live items look live through playback or a clear visual marker.", "ja": "playbackまたは明確なvisual markerによりlive itemがliveに見えるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Use a badge, symbol, sash, or equivalent indicator when an item isn't already playing."],
+      "review_note": "Retained MUST from the explicit Make sure directive and recorded the nonplaying-item fallback."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0006": {
+      "title": "Provide immediate channel-change feedback",
+      "statement": {"en": "Provide immediate visual feedback when people change channels.", "ja": "channel変更時に即時のvisual feedbackを提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Confirm the selected channel immediately, including while its stream is loading."],
+      "review_note": "Raised the source's explicitly essential channel-selection feedback outcome to MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0015": {
+      "title": "Keep a content footer legible and distinct",
+      "statement": {"en": "When using a content footer, ensure its treatment keeps text legible and items distinct from playing content.", "ja": "content footerを使う場合、textの可読性とitemの再生contentからの区別を保つtreatmentにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Use a subtle treatment such as darkening rather than obscuring the playing content."],
+      "review_note": "Raised the first conditional Be sure footer item to an accessibility MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0016": {
+      "title": "Identify the currently playing footer thumbnail",
+      "statement": {"en": "When using a content footer, ensure people can identify the thumbnail for the currently playing content.", "ja": "content footerを使う場合、再生中contentのthumbnailを識別できるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Use a badge, tinted progress bar, or equivalent state indicator."],
+      "review_note": "Raised the second conditional Be sure footer item to a current-state identification MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0017": {
+      "title": "Match content-footer categories to the EPG",
+      "statement": {"en": "When using a content footer, ensure its categories match the electronic program guide.", "ja": "content footerを使う場合、そのcategoryをelectronic program guideと一致させる。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app provides both a content footer and an EPG."],
+      "review_note": "Raised the third conditional Be sure footer item to a cross-view consistency MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0018": {
+      "title": "Use predictable content-footer gestures",
+      "statement": {"en": "When using a content footer, ensure people can invoke and dismiss it in a simple, predictable way.", "ja": "content footerを使う場合、単純で予測可能な方法で表示・dismissできるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Use an inverse action for dismissal when an action such as swiping up invokes the footer."],
+      "review_note": "Raised the fourth conditional Be sure footer item to a predictable-interaction MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0020": {
+      "title": "Prioritize live content",
+      "statement": {"en": "Prioritize and elevate live content throughout a live-viewing app.", "ja": "live-viewing app全体でlive contentを優先して目立たせる。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Apply the requirement throughout the live-viewing experience."],
+      "review_note": "Recovered MUST from the explicit need-to elevate and prioritize statement."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0022": {
+      "title": "Distinguish live content from VOD at a glance",
+      "statement": {"en": "On every screen, ensure people can distinguish live content from VOD content at a glance.", "ja": "すべてのscreenでlive contentとVOD contentを一目で区別できるようにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app presents live and video-on-demand content."],
+      "review_note": "Recovered the explicit Make sure outcome and retained its every-screen scope."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0023": {
+      "title": "Keep playback as the primary action",
+      "statement": {"en": "Keep playback as the primary action for live content.", "ja": "live contentではplaybackをprimary actionにする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Additional supported actions remain secondary to playback."],
+      "review_note": "Recovered MUST from the explicit always-needs-to primary-action clause."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0026": {
+      "title": "Stop live audio outside the live-viewing context",
+      "statement": {"en": "Stop live-content audio when people navigate away from the app's live tab.", "ja": "appのlive tabから離れた場合はlive-content audioを停止する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Navigating away from the live tab ends the live-viewing context."],
+      "review_note": "Recovered the explicit audio-needs-to-stop state transition as MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0027": {
+      "title": "Make current EPG information easy to spot",
+      "statement": {"en": "When the EPG opens, make the current program, channel, and time easy to spot and current playback easy to resume.", "ja": "EPGを開いたとき、現在のprogram、channel、timeを見つけやすくし、現在のplaybackへ戻りやすくする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["People first open the EPG."],
+      "review_note": "Recovered the explicit current-information needs-to-be-easy-to-spot requirement as MUST."
     }
   },
   "additional_rules": [

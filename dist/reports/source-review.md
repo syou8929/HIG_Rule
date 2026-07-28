@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3448
-- Reviewed batches: 200
+- Reviewed rules: 3479
+- Reviewed batches: 201
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:49:48Z
+- Reviewed at: 2026-07-28T17:02:18Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2084,6 +2084,37 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-LAUNCHING-0014 · high — Recovered the concrete direct Avoid visual anti-pattern separately from general advertising guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0015 · high — Recovered the direct Don't clause and its fixed-first-screen exception at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0016 · high — Recovered the explicit Ensure requirement as a separate iOS and iPadOS MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0001 · high — Concretized the playback-start rule and retained its at-most-one-tap outcome at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0002 · high — Retained MUST from the explicit Make sure directive and recorded the nonplaying-item fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0003 · high — Retained the explicit Consider strength and clarified the remaining-content information. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0004 · high — Narrowed the general action rule and separated stronger and independently testable clauses. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0005 · high — Retained the optional footer choice without weakening its conditional Be sure requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0006 · high — Raised the source's explicitly essential channel-selection feedback outcome to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0007 · high — Separated the expected in-context audio behavior from the explicit stop requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0008 · high — Concretized effortless browsing with the source's three navigation mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0009 · high — Retained the browse-without-leaving outcome and recorded the documented playback options. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0010 · high — Bound the recording action to live-stream info-panel context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0011 · high — Retained the future-program recording location and separated the recording-scope choice. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0012 · high — Concretized adaptation with the source's episode, program, and team examples. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0013 · high — Replaced the generic generated statement with the concrete DVR detail-view actions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0014 · high — Retained the explicit Consider strength and narrowed the control to management settings. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0015 · high — Raised the first Be sure footer item to an accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0016 · high — Raised the second Be sure footer item to a current-state identification MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0017 · high — Raised the third Be sure footer item to a cross-view consistency MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0018 · high — Raised the fourth Be sure footer item to a predictable-interaction MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0019 · high — Concretized prominence and access speed without duplicating the global prioritization rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0020 · high — Recovered MUST from the explicit need-to elevate and prioritize statement. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0021 · high — Preserved the all-screen scope while keeping the plain imperative at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0022 · high — Recovered the explicit Make sure outcome and retained its every-screen scope. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0023 · high — Recovered MUST from the explicit always-needs-to primary-action clause. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0024 · high — Recovered the separate cross-app action-order directive. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0025 · high — Recovered the conditional repeat-broadcast information rule. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0026 · high — Recovered the explicit audio-needs-to-stop state transition as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0027 · high — Recovered the explicit current-information needs-to-be-easy-to-spot requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0028 · high — Recovered the embedded Consider option without promoting it. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0029 · high — Activated the omitted EPG organization rule and kept footer matching separate. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0030 · high — Recovered the atomic recording-scope choice from the supporting sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0031 · high — Recovered the source's ideal storage-management outcome at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - HIG-PATTERNS-LOADING-0001 · high — Recorded the blank-state failure interpretation and separated optional placeholder forms. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0002 · high — Recorded background loading as the mechanism for continued interaction. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
 - HIG-PATTERNS-LOADING-0003 · high — Retained MAY and recorded both the standard default and game-style rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))

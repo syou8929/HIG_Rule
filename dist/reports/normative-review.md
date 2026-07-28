@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 599
-- Retained MUST: 518
+- Reviewed rules: 609
+- Retained MUST: 528
 - Retained MUST_NOT: 81
-- Normative level changes: 225
+- Normative level changes: 236
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:49:48Z
+- Reviewed at: 2026-07-28T17:02:18Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -270,6 +270,17 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-GOING-FULL-SCREEN-0014 — Recovered the conditional Be sure requirement and its consistency and transition constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0018 — Recovered the explicit needs-to pause requirement and preserved its missed-content rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
 - HIG-PATTERNS-GOING-FULL-SCREEN-0020 — Recovered the explicit Be sure visibility requirement and its essential-control condition. ([source](https://developer.apple.com/design/human-interface-guidelines/going-full-screen))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0002 — Retained MUST from the explicit Make sure directive and recorded the nonplaying-item fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0006 — Raised the source's explicitly essential channel-selection feedback outcome to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0015 — Raised the first conditional Be sure footer item to an accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0016 — Raised the second conditional Be sure footer item to a current-state identification MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0017 — Raised the third conditional Be sure footer item to a cross-view consistency MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0018 — Raised the fourth conditional Be sure footer item to a predictable-interaction MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0020 — Recovered MUST from the explicit need-to elevate and prioritize statement. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0022 — Recovered the explicit Make sure outcome and retained its every-screen scope. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0023 — Recovered MUST from the explicit always-needs-to primary-action clause. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0026 — Recovered the explicit audio-needs-to-stop state transition as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0027 — Recovered the explicit current-information needs-to-be-easy-to-spot requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MULTITASKING-0006 — Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0007 — Recovered and retained MUST after confirming the explicit always need to prepare for context saving and restoration. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
@@ -762,7 +773,17 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-LAUNCHING-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0013 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 - HIG-PATTERNS-LAUNCHING-0016 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
-- HIG-PATTERNS-LIVE-VIEWING-APPS-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0002 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit Make sure directive and recorded the nonplaying-item fallback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0006 · MUST · retained_with_atomicity_or_scope_correction — Raised the source's explicitly essential channel-selection feedback outcome to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0015 · MUST · retained_with_atomicity_or_scope_correction — Raised the first conditional Be sure footer item to an accessibility MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0016 · MUST · retained_with_atomicity_or_scope_correction — Raised the second conditional Be sure footer item to a current-state identification MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0017 · MUST · retained_with_atomicity_or_scope_correction — Raised the third conditional Be sure footer item to a cross-view consistency MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0018 · MUST · retained_with_atomicity_or_scope_correction — Raised the fourth conditional Be sure footer item to a predictable-interaction MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to elevate and prioritize statement. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0022 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Make sure outcome and retained its every-screen scope. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0023 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit always-needs-to primary-action clause. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0026 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit audio-needs-to-stop state transition as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-LIVE-VIEWING-APPS-0027 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit current-information needs-to-be-easy-to-spot requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0007 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0020 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))

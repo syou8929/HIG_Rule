@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:49:48Z",
+  "reviewed_at": "2026-07-28T17:02:18Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5433,6 +5433,53 @@
         "HIG-PATTERNS-GOING-FULL-SCREEN-0020"
       ],
       "review_note": "Completed Going full screen common coverage, concretized three queued rules, recovered nine layout, resizing, control-access, Dock, resume, pause, and restoration rules, and retained four explicit user-intent, Be sure, and needs-to outcomes as MUST."
+    },
+    {
+      "id": "priority-6-live-viewing-apps-context-2026-07-29",
+      "reviewed_at": "2026-07-28T17:02:18Z",
+      "review_method": "Rendered Apple HIG Live-viewing apps overview, best-practice, EPG, Cloud DVR, platform, and resource context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps",
+          "source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0001",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0002",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0003",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0004",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0005",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0006",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0007",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0008",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0009",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0010",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0011",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0012",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0013",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0014",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0015",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0016",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0017",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0018",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0019",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0020",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0021",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0022",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0023",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0024",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0025",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0026",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0027",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0028",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0029",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0030",
+        "HIG-PATTERNS-LIVE-VIEWING-APPS-0031"
+      ],
+      "review_note": "Expanded Live-viewing apps from 19 to 31 active atomic rules, recovered overview, action-priority, footer, audio-stop, EPG, recording-choice, and storage-management context, and retained eleven explicit Make sure, need-to, Be sure, always-needs, and essential outcomes as MUST."
     }
   ],
   "rules": {
@@ -33816,6 +33863,254 @@
       "scope": {"portability": "apple-component-specific", "platforms": ["watchos"], "devices": ["apple-watch"], "components": ["sheets"], "modalities": []},
       "conditions": ["A top-leading label that looks like a page or app title can obscure how to dismiss the sheet."],
       "review_note": "Recovered the misleading-label avoidance and its dismissal-discoverability risk."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0001": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "4279758234c5e1dd8e0a8dc10e40448803068886ff6645342b4357163b3a7ba5", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Start live playback with at most one tap",
+      "statement": {"en": "Let people start live playback with one tap or without an extra tap when appropriate.", "ja": "適切な場合、live playbackを1 tapまたは追加tapなしで開始できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Minimize the interval between opening the app and playing live content."],
+      "review_note": "Concretized the playback-start rule and retained its at-most-one-tap outcome at SHOULD."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0002": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "5dd7a4f5abe8dc9bb975486cc3aff56446917d8cb08dbdac9b14ed9c6f94bfbd", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Make live items look live",
+      "statement": {"en": "Ensure live items look live through playback or a clear visual marker.", "ja": "playbackまたは明確なvisual markerによりlive itemがliveに見えるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Use a badge, symbol, sash, or equivalent indicator when an item isn't already playing."],
+      "review_note": "Retained MUST from the explicit Make sure directive and recorded the nonplaying-item fallback."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0003": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "4f4bd9f762efff13c1f5c59d80cbd6b70501f69dfc49a872a562e35fea819ba6", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Consider showing live-program progress",
+      "statement": {"en": "Consider indicating how much of an in-progress live program remains.", "ja": "進行中live programの残り時間を示すことを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["A progress bar or equivalent indicator can show where playback begins."],
+      "review_note": "Retained the explicit Consider strength and clarified the remaining-content information."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0004": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "b1c7e7bbd4eace493932ed71b19b8e5cbb8db542fe9d9932b6c1ecdb6db4d114", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Make supported live-content actions easy to use",
+      "statement": {"en": "Make supported actions such as record, restart, and download easy to use alongside playback.", "ja": "record、restart、downloadなど対応するactionをplaybackとともに使いやすくする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Playback priority, action order, and repeat-broadcast information are recorded separately."],
+      "review_note": "Narrowed the general action rule and separated stronger and independently testable clauses."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0005": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "a75e42f30887e2fa05cfb8cd87895c0b1c81cfcb0534fb48ee3da29103475d73", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Consider a content footer for in-playback browsing",
+      "statement": {"en": "Consider a content footer when people need to browse channels without leaving live playback.", "ja": "live playbackを離れずchannelを閲覧する必要がある場合はcontent footerを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["If used, the footer requirements are recorded as separate rules."],
+      "review_note": "Retained the optional footer choice without weakening its conditional Be sure requirements."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0006": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "6ed45737015acbd9fd18340c213db0794952dbca2a1390bc12ac154de21792a2", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Provide immediate channel-change feedback",
+      "statement": {"en": "Provide immediate visual feedback when people change channels.", "ja": "channel変更時に即時のvisual feedbackを提供する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Confirm the selected channel immediately, including while its stream is loading."],
+      "review_note": "Raised the source's explicitly essential channel-selection feedback outcome to MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0007": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "e3e4053e6fee8e0c219ad133cb2fe7aa22ca72f8fed00daf41857b927bebd2a1", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Keep live audio aligned with the viewing context",
+      "statement": {"en": "Keep audio matched to the live content while people browse within the live-viewing context.", "ja": "live-viewing context内を閲覧中はaudioを再生中live contentに合わせる。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Browsing within the live tab can continue while the live content plays in the background.", "Leaving the live tab is recorded separately."],
+      "review_note": "Separated the expected in-context audio behavior from the explicit stop requirement."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0008": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "7753a0c75da21f8375e0eb5c7b4dd7a157f330b18cc4d8d909d00ac7c482f143", "section_path": ["Live-viewing apps", "EPG experience"]},
+      "title": "Make large EPGs easy to browse",
+      "statement": {"en": "Help people page, scroll, or jump through a large EPG easily.", "ja": "大規模なEPGをpage、scroll、jumpで容易に閲覧できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Quick-access channel groups are recorded separately as an optional enhancement."],
+      "review_note": "Concretized effortless browsing with the source's three navigation mechanisms."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0009": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "38ab2d0ed220285f7e8d21d0814bb48a85cb0e3667983c02208d779ee181215b", "section_path": ["Live-viewing apps", "EPG experience"]},
+      "title": "Keep current content available while browsing the EPG",
+      "statement": {"en": "Let people browse the EPG without leaving their current content.", "ja": "現在のcontentを離れずにEPGを閲覧できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Continue playback in picture-in-picture or in the background when appropriate."],
+      "review_note": "Retained the browse-without-leaving outcome and recorded the documented playback options."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0010": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "496d241da9a2d53ba5dce488b091ebec0c534a315f8e630967f326208439dfb6", "section_path": ["Live-viewing apps", "Cloud DVR"]},
+      "title": "Start and stop recording from the info panel",
+      "statement": {"en": "Let people start and stop recording live content from its info panel.", "ja": "live contentのinfo panelからrecordingを開始・停止できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The app supports cloud DVR while live-streaming."],
+      "review_note": "Bound the recording action to live-stream info-panel context."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0011": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "872ce2eb4acfd4897c4632f258ae9bf18566c1ac3cfc2a6e15206f18fec1f6eb", "section_path": ["Live-viewing apps", "Cloud DVR"]},
+      "title": "Record future programs from a detail view",
+      "statement": {"en": "Let people record a future program from a view that provides its details.", "ja": "programの詳細を提供するviewから将来のprogramをrecordingできるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Single-program and future-episode choices are recorded separately."],
+      "review_note": "Retained the future-program recording location and separated the recording-scope choice."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0012": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "98717e65bcb5b4757f195f6e839b7faccad14969f3ce5e0a299563404cad4298", "section_path": ["Live-viewing apps", "Cloud DVR"]},
+      "title": "Offer precise recording choices",
+      "statement": {"en": "Let people specify precisely which episodes, programs, or team games to record.", "ja": "recordingするepisode、program、team gameを正確に指定できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Offer the choices that fit the content type and supported DVR capabilities."],
+      "review_note": "Concretized adaptation with the source's episode, program, and team examples."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0013": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "27fd9cf743533c78f4e141edc4b80bc05f80d04d5041a0f2e675b0151ed126a2", "section_path": ["Live-viewing apps", "Cloud DVR"]},
+      "title": "Provide content actions in the cloud DVR area",
+      "statement": {"en": "In a cloud DVR detail view, let people play or delete content and adjust recording settings when applicable.", "ja": "cloud DVR detail viewでcontentをplay・deleteし、該当する場合はrecording settingを調整できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The app supports the corresponding content-specific action."],
+      "review_note": "Replaced the generic generated statement with the concrete DVR detail-view actions."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0014": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "3386aaa6be75744e7a717b836e6de0c2961687451d7e15d88a6b1e7a19de81de", "section_path": ["Live-viewing apps", "Cloud DVR"]},
+      "title": "Consider a cloud DVR management control",
+      "statement": {"en": "Consider a control for managing cloud DVR retention settings.", "ja": "cloud DVRのretention settingを管理するcontrolを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Management can include deleting viewed or older recordings."],
+      "review_note": "Retained the explicit Consider strength and narrowed the control to management settings."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0015": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "a8d898d0348baa96cb77f543ec3f5f1a9ff298db6b0ee9bd1629a85881fb8b75", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Keep a content footer legible and distinct",
+      "statement": {"en": "When using a content footer, ensure its treatment keeps text legible and items distinct from playing content.", "ja": "content footerを使う場合、textの可読性とitemの再生contentからの区別を保つtreatmentにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Use a subtle treatment such as darkening rather than obscuring the playing content."],
+      "review_note": "Raised the first Be sure footer item to an accessibility MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0016": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "7d1d2f1e316d1164fb42eed0c703f783a7bc1c72a624410811d720d4acc82bbe", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Identify the currently playing footer thumbnail",
+      "statement": {"en": "When using a content footer, ensure people can identify the thumbnail for the currently playing content.", "ja": "content footerを使う場合、再生中contentのthumbnailを識別できるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Use a badge, tinted progress bar, or equivalent state indicator."],
+      "review_note": "Raised the second Be sure footer item to a current-state identification MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0017": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "0dbfdef98426e352ce6cb4ecbbf0880c58b5122e1b1b1bbe4a201d3a5b7e5fff", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Match content-footer categories to the EPG",
+      "statement": {"en": "When using a content footer, ensure its categories match the electronic program guide.", "ja": "content footerを使う場合、そのcategoryをelectronic program guideと一致させる。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The app provides both a content footer and an EPG."],
+      "review_note": "Raised the third Be sure footer item to a cross-view consistency MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0018": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "e5eb5b06abd91a31d3900abac738f8b37cd1521626eb17d237fa96efc2a6f2d8", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Use predictable content-footer gestures",
+      "statement": {"en": "When using a content footer, ensure people can invoke and dismiss it in a simple, predictable way.", "ja": "content footerを使う場合、単純で予測可能な方法で表示・dismissできるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Use an inverse action for dismissal when an action such as swiping up invokes the footer."],
+      "review_note": "Raised the fourth Be sure footer item to a predictable-interaction MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0019": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "37cb3656ead46c14082619bd05e83c1e8dd302938e988375b764f7c1d5f595f1", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Feature live content prominently",
+      "statement": {"en": "Feature live content prominently and make it quick to access.", "ja": "live contentを目立たせ、素早くaccessできるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Placing live content first can reduce playback startup to one tap."],
+      "review_note": "Concretized prominence and access speed without duplicating the global prioritization rule."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0020": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "e9bab8acc933813ca60c24b4bfe769961da665b2739a3275918da3cab01d95da", "section_path": ["Live-viewing apps"]},
+      "title": "Prioritize live content",
+      "statement": {"en": "Prioritize and elevate live content throughout a live-viewing app.", "ja": "live-viewing app全体でlive contentを優先して目立たせる。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Apply the requirement throughout the live-viewing experience."],
+      "review_note": "Recovered MUST from the explicit need-to elevate and prioritize statement."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0021": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "69d6dda79d6d4a430afca1876e45ef29ec8b472fcbaa754659b87121bd5e72aa", "section_path": ["Live-viewing apps"]},
+      "title": "Draw attention to live content on every screen",
+      "statement": {"en": "On every screen, draw people's attention to live content.", "ja": "すべてのscreenでlive contentへ注意を向けられるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use hierarchy and placement appropriate to each screen."],
+      "review_note": "Preserved the all-screen scope while keeping the plain imperative at SHOULD."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0022": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "69d6dda79d6d4a430afca1876e45ef29ec8b472fcbaa754659b87121bd5e72aa", "section_path": ["Live-viewing apps"]},
+      "title": "Distinguish live content from VOD at a glance",
+      "statement": {"en": "On every screen, ensure people can distinguish live content from VOD content at a glance.", "ja": "すべてのscreenでlive contentとVOD contentを一目で区別できるようにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The app presents live and video-on-demand content."],
+      "review_note": "Recovered the explicit Make sure outcome and retained its every-screen scope."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0023": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "68a22d990e6d6bd12eb3d822f8b28821a865679faa2b794020d4a21a453c5f49", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Keep playback as the primary action",
+      "statement": {"en": "Keep playback as the primary action for live content.", "ja": "live contentではplaybackをprimary actionにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Additional supported actions remain secondary to playback."],
+      "review_note": "Recovered MUST from the explicit always-needs-to primary-action clause."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0024": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "785e730f1440a1ac752950ed364da70a7b85eb0e3dae3f8439881537773949ac", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Order live-content actions consistently",
+      "statement": {"en": "Display supported live-content actions in the same order throughout the app.", "ja": "対応するlive-content actionをapp全体で同じ順序に表示する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use a stable order such as Watch, Start Over, Record, and Favorite."],
+      "review_note": "Recovered the separate cross-app action-order directive."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0025": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "bc97c682f57889b6e829de08e61eb839bade9cac80bd0b5cbfea8e4b3b96ba92", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Show future broadcasts of current content",
+      "statement": {"en": "When currently playing content airs again, show the schedule so people can plan their viewing.", "ja": "再生中contentが再放送される場合、視聴を計画できるようscheduleを表示する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The currently playing content has known future broadcast times."],
+      "review_note": "Recovered the conditional repeat-broadcast information rule."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0026": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "cc4094bedc96436b61982c3ef93326366fb7285d9690a2a83060af8085af59b6", "section_path": ["Live-viewing apps", "Best practices"]},
+      "title": "Stop live audio outside the live-viewing context",
+      "statement": {"en": "Stop live-content audio when people navigate away from the app's live tab.", "ja": "appのlive tabから離れた場合はlive-content audioを停止する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Navigating away from the live tab ends the live-viewing context."],
+      "review_note": "Recovered the explicit audio-needs-to-stop state transition as MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0027": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "4471a5dcc401b05b0ed725cdb4ad50df4a22d7356822b99e3c0dd686d746929d", "section_path": ["Live-viewing apps", "EPG experience"]},
+      "title": "Make current EPG information easy to spot",
+      "statement": {"en": "When the EPG opens, make the current program, channel, and time easy to spot and current playback easy to resume.", "ja": "EPGを開いたとき、現在のprogram、channel、timeを見つけやすくし、現在のplaybackへ戻りやすくする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["People first open the EPG."],
+      "review_note": "Recovered the explicit current-information needs-to-be-easy-to-spot requirement as MUST."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0028": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "a3e2b281fd4965987cf2360c22651685c0d8514af7589c3815bd2fac8b020643", "section_path": ["Live-viewing apps", "EPG experience"]},
+      "title": "Consider quick-access EPG channel groups",
+      "statement": {"en": "Consider a My Channels or Favorites group for frequently viewed EPG content.", "ja": "頻繁に見るEPG content向けにMy ChannelsまたはFavorites groupを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The EPG contains enough content for a personalized shortcut group to help."],
+      "review_note": "Recovered the embedded Consider option without promoting it."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0029": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "8ab8a4810c72831ce05fe9e76e60cf1e264b22676b7ed470a5e8ca40f8dc6068", "section_path": ["Live-viewing apps", "EPG experience"]},
+      "title": "Group EPG content into familiar categories",
+      "statement": {"en": "Group EPG content into familiar categories that help people find it.", "ja": "EPG contentを見つけやすい馴染みあるcategoryにgroup化する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Categories can include Movies, TV Shows, Kids, Sports, and Popular."],
+      "review_note": "Activated the omitted EPG organization rule and kept footer matching separate."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0030": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "e7e6d059425e17834832fc07aa72a54c754df77ed563c6ef4056a9fd966da29c", "section_path": ["Live-viewing apps", "Cloud DVR"]},
+      "title": "Offer single-program and future-episode recording choices",
+      "statement": {"en": "Let people choose whether to record only a selected program or all future episodes.", "ja": "選択したprogramだけか今後すべてのepisodeをrecordingするか選べるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The selected future program belongs to an episodic series."],
+      "review_note": "Recovered the atomic recording-scope choice from the supporting sentence."
+    },
+    "HIG-PATTERNS-LIVE-VIEWING-APPS-0031": {
+      "source": {"source_hash": "0acdd2f46d21c858d2b388d0a42844974ec9ebb1bd9486abd209e9ac5cfb64a8", "source_sentence_hash": "8f72c1c80f762c74afcee62ad0e402fbf1003865455fd39199f2330b8ce34e8d", "section_path": ["Live-viewing apps", "Cloud DVR"]},
+      "title": "Help prevent cloud DVR storage exhaustion",
+      "statement": {"en": "Help people avoid running out of cloud DVR space through automatic storage management.", "ja": "automatic storage managementによりcloud DVRの容量不足を避けられるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Automatic management can overwrite the oldest or already viewed content."],
+      "review_note": "Recovered the source's ideal storage-management outcome at SHOULD."
     }
   }
 }

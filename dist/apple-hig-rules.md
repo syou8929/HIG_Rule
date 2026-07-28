@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T16:54:47.688Z. 3561 active rules; 8 deprecated rules.
+Generated 2026-07-28T17:07:36.106Z. 3573 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -836,25 +836,37 @@ Generated 2026-07-28T16:54:47.688Z. 3561 active rules; 8 deprecated rules.
 - **HIG-PATTERNS-LAUNCHING-0016 · MUST · high** — Ensure landscape-only iOS and iPadOS interfaces support both device rotation directions. ([source](https://developer.apple.com/design/human-interface-guidelines/launching))
 ### live-viewing-apps
 
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0001 · SHOULD · low** — Preserve people’s ability to tap once — or not at all — to start playback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0002 · MUST · medium** — Verify that live content looks live. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0003 · MAY · low** — Evaluate whether indicating the progress of currently playing live content is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0004 · SHOULD · low** — Apply the documented Live-viewing apps guidance to give people additional actions and viewing alternatives. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0005 · MAY · low** — Evaluate whether using a content footer for browsing channels during playback is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0006 · SHOULD · low** — Make instant visual feedback when people change channels available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0007 · SHOULD · low** — Apply the documented Live-viewing apps guidance to match audio to the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0008 · SHOULD · low** — Apply the documented Live-viewing apps guidance to make browsing the EPG effortless. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0009 · SHOULD · low** — Preserve people’s ability to browse the EPG without leaving their current content. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0010 · SHOULD · low** — Preserve people’s ability to start and stop recording from the info panel. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0011 · SHOULD · low** — Preserve people’s ability to record a future program in a view that provides details about the content. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0012 · SHOULD · low** — Apply the documented Live-viewing apps guidance to help people adapt the recording experience to their needs. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0013 · SHOULD · low** — Apply the documented Live-viewing apps guidance to allow playback and other content-specific actions within your cloud DVR area. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0014 · MAY · low** — Evaluate whether offering a control that lets people manage cloud DVR settings is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0015 · SHOULD · low** — Apply the documented Live-viewing apps guidance to give it a subtle treatment, such as a darkening, to keep text legible and help all items remain visually. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0016 · SHOULD · low** — Apply the documented Live-viewing apps guidance to make it easy for people to identify the thumbnail that represents the currently playing content by, for example, badging. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0017 · SHOULD · low** — Apply the documented Live-viewing apps guidance to match the categories in the content footer to those in your electronic program guide (for related guidance, see EPG. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0018 · SHOULD · low** — Apply the documented Live-viewing apps guidance to design a simple, predictable way for people to invoke and dismiss the content footer — for example, if swiping. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
-- **HIG-PATTERNS-LIVE-VIEWING-APPS-0019 · SHOULD · low** — Feature live content prominently and make it easy to access in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0001 · SHOULD · high** — Let people start live playback with one tap or without an extra tap when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0002 · MUST · high** — Ensure live items look live through playback or a clear visual marker. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0003 · MAY · high** — Consider indicating how much of an in-progress live program remains. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0004 · SHOULD · high** — Make supported actions such as record, restart, and download easy to use alongside playback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0005 · MAY · high** — Consider a content footer when people need to browse channels without leaving live playback. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0006 · MUST · high** — Provide immediate visual feedback when people change channels. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0007 · SHOULD · high** — Keep audio matched to the live content while people browse within the live-viewing context. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0008 · SHOULD · high** — Help people page, scroll, or jump through a large EPG easily. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0009 · SHOULD · high** — Let people browse the EPG without leaving their current content. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0010 · SHOULD · high** — Let people start and stop recording live content from its info panel. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0011 · SHOULD · high** — Let people record a future program from a view that provides its details. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0012 · SHOULD · high** — Let people specify precisely which episodes, programs, or team games to record. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0013 · SHOULD · high** — In a cloud DVR detail view, let people play or delete content and adjust recording settings when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0014 · MAY · high** — Consider a control for managing cloud DVR retention settings. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0015 · MUST · high** — When using a content footer, ensure its treatment keeps text legible and items distinct from playing content. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0016 · MUST · high** — When using a content footer, ensure people can identify the thumbnail for the currently playing content. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0017 · MUST · high** — When using a content footer, ensure its categories match the electronic program guide. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0018 · MUST · high** — When using a content footer, ensure people can invoke and dismiss it in a simple, predictable way. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0019 · SHOULD · high** — Feature live content prominently and make it quick to access. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0020 · MUST · high** — Prioritize and elevate live content throughout a live-viewing app. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0021 · SHOULD · high** — On every screen, draw people's attention to live content. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0022 · MUST · high** — On every screen, ensure people can distinguish live content from VOD content at a glance. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0023 · MUST · high** — Keep playback as the primary action for live content. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0024 · SHOULD · high** — Display supported live-content actions in the same order throughout the app. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0025 · SHOULD · high** — When currently playing content airs again, show the schedule so people can plan their viewing. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0026 · MUST · high** — Stop live-content audio when people navigate away from the app's live tab. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0027 · MUST · high** — When the EPG opens, make the current program, channel, and time easy to spot and current playback easy to resume. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0028 · MAY · high** — Consider a My Channels or Favorites group for frequently viewed EPG content. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0029 · SHOULD · high** — Group EPG content into familiar categories that help people find it. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0030 · SHOULD · high** — Let people choose whether to record only a selected program or all future episodes. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- **HIG-PATTERNS-LIVE-VIEWING-APPS-0031 · SHOULD · high** — Help people avoid running out of cloud DVR space through automatic storage management. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 ### loading
 
 - **HIG-PATTERNS-LOADING-0001 · SHOULD · high** — Show useful content or a meaningful placeholder as soon as possible while loading. ([source](https://developer.apple.com/design/human-interface-guidelines/loading))
