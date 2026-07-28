@@ -5,11 +5,11 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3652
+- Active atomic rules: 3656
 - Pages without rules: 16
-- Low-confidence rules: 25
-- Rules requiring human review: 25
-- Reference notes: 914
+- Low-confidence rules: 24
+- Rules requiring human review: 24
+- Reference notes: 915
 
 ## Rules by category
 
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 245
 - patterns: 552
-- technologies: 1137
+- technologies: 1141
 
 ## Normative levels
 
 - AVOID: 494
 - MAY: 410
-- MUST: 563
+- MUST: 566
 - MUST_NOT: 85
-- SHOULD: 2100
+- SHOULD: 2101
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2662
-- ipados: 2621
-- macos: 2173
-- tvos: 1698
-- visionos: 2131
-- watchos: 1812
+- ios: 2666
+- ipados: 2625
+- macos: 2177
+- tvos: 1702
+- visionos: 2135
+- watchos: 1816
 
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3537
+- manual: 3541
 
 ## Blocked pages
 
@@ -92,7 +92,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-TECHNOLOGIES-SHAZAMKIT-0001
 
 ## Rules requiring human review
 
@@ -120,7 +119,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-TECHNOLOGIES-SHAZAMKIT-0001
 
 ## Reference notes
 
@@ -807,9 +805,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/shareplay · SharePlay > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit — Reviewed: the audio-recognition feature list is illustrative; microphone permission and explanation are represented by source-scoped rules.
+- https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Platform considerations — Reviewed: ShazamKit has no additional considerations for iOS, iPadOS, macOS, tvOS, visionOS, or watchOS.
+- https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/shazamkit · ShazamKit > Resources > Videos — Reviewed: the video link contains no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Anatomy — Reviewed: recorded modal behavior and Cancel, Done, and Back semantics as context for the best-practice rules.
 - https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Change log — Reviewed: the 2026 button-placement update is represented by current platform rules; other entries are documentation history.
 - https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Platform considerations — Reviewed: captured current button placement, resizing, modality, window, spatial, and watchOS constraints.

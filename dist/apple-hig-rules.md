@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T18:09:15.002Z. 3652 active rules; 8 deprecated rules.
+Generated 2026-07-28T18:14:44.635Z. 3656 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -3771,7 +3771,11 @@ Generated 2026-07-28T18:09:15.002Z. 3652 active rules; 8 deprecated rules.
 - **HIG-TECHNOLOGIES-SHAREPLAY-0037 · AVOID · high** — Avoid altering SharePlay into variants such as SharePlayed, SharePlays, or SharePlaying. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 ### shazamkit
 
-- **HIG-TECHNOLOGIES-SHAZAMKIT-0001 · SHOULD · low** — Preserve people’s ability to opt in to storing your app’s recognized songs to their iCloud library. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- **HIG-TECHNOLOGIES-SHAZAMKIT-0001 · MUST · high** — Before storing recognized songs in iCloud, obtain the person's approval. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- **HIG-TECHNOLOGIES-SHAZAMKIT-0002 · SHOULD · high** — Stop ShazamKit audio recording as soon as recognition sampling allows. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- **HIG-TECHNOLOGIES-SHAZAMKIT-0003 · MUST · high** — Before using the device microphone for ShazamKit recognition, request access. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- **HIG-TECHNOLOGIES-SHAZAMKIT-0004 · SHOULD · high** — Explain why the app requests microphone access. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- **HIG-TECHNOLOGIES-SHAZAMKIT-0005 · MUST · high** — Record recognition audio only as long as needed to obtain the sample. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
 ### sign-in-with-apple
 
 - **HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0001 · SHOULD · high** — Apply the documented Sign in with Apple guidance to ask people to sign in only in exchange for value. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:55:36Z",
+  "reviewed_at": "2026-07-28T18:13:20Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "4c97e9364beba6493e323d4f594686c153acbb01fa925907b8f037f8ac94235d",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 648,
+  "reviewed_rule_count": 651,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -4604,6 +4604,30 @@
       "polarity": "require", "severity": "error",
       "conditions": ["The app supports photo sharing.", "The preview includes the Live Photo's audio and extra frames."],
       "review_note": "Classified complete-content preview as a privacy and explicit-sharing-intent MUST."
+    },
+    "HIG-TECHNOLOGIES-SHAZAMKIT-0001": {
+      "title": "Obtain approval before storing recognized songs",
+      "statement": {"en": "Before storing recognized songs in iCloud, obtain the person's approval.", "ja": "recognized songをiCloudへ保存する前に本人のapprovalを得る。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app can store songs recognized with ShazamKit in the person's iCloud library."],
+      "review_note": "Raised the opt-in control to an explicit-user-intent MUST and preserved its before-storage timing."
+    },
+    "HIG-TECHNOLOGIES-SHAZAMKIT-0003": {
+      "title": "Request microphone access for recognition",
+      "statement": {"en": "Before using the device microphone for ShazamKit recognition, request access.", "ja": "ShazamKit recognitionにdevice microphoneを使う前にaccessをrequestする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app needs the device microphone to obtain an audio sample."],
+      "review_note": "Recovered the source's explicit must-request permission requirement."
+    },
+    "HIG-TECHNOLOGIES-SHAZAMKIT-0005": {
+      "title": "Limit recognition recording to the required sample",
+      "statement": {"en": "Record recognition audio only as long as needed to obtain the sample.", "ja": "recognition audioは必要なsampleを取得する時間だけrecordする。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The person granted microphone access for audio recognition."],
+      "review_note": "Classified the source's privacy-specific only-duration boundary as MUST."
     }
   },
   "additional_rules": [

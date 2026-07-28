@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T18:04:14Z",
+  "reviewed_at": "2026-07-28T18:13:20Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5726,6 +5726,27 @@
         "HIG-TECHNOLOGIES-SHAREPLAY-0037"
       ],
       "review_note": "Completed SharePlay common guidance, expanded 31 to 37 active atomic rules, recovered activity description, task deferral, participant joining, streamlined signup, and terminology constraints, and introduced no new MUST or MUST_NOT rules."
+    },
+    {
+      "id": "priority-6-shazamkit-context-2026-07-29",
+      "reviewed_at": "2026-07-28T18:13:20Z",
+      "review_method": "Rendered Apple HIG ShazamKit overview, microphone-permission, privacy, iCloud-storage, platform, and resource context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/shazamkit",
+          "source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-SHAZAMKIT-0001",
+        "HIG-TECHNOLOGIES-SHAZAMKIT-0002",
+        "HIG-TECHNOLOGIES-SHAZAMKIT-0003",
+        "HIG-TECHNOLOGIES-SHAZAMKIT-0004",
+        "HIG-TECHNOLOGIES-SHAZAMKIT-0005"
+      ],
+      "review_note": "Expanded ShazamKit from 1 to 5 active atomic rules, recovered microphone permission, permission explanation, and recording-duration guidance, and reviewed three privacy or explicit-user-intent outcomes as MUST."
     }
   ],
   "rules": {
@@ -11372,6 +11393,52 @@
       "normative_level": "AVOID",
       "conditions": [],
       "review_note": "Recovered the direct terminology avoidance without overstating it as MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-SHAZAMKIT-0001": {
+      "source": {"source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427", "source_sentence_hash": "2fe27fd694d359f1ed93f80759f08d46ce10e7a2630eb112c2f4015e275447e7", "section_path": ["ShazamKit", "Best practices"]},
+      "title": "Obtain approval before storing recognized songs",
+      "statement": {"en": "Before storing recognized songs in iCloud, obtain the person's approval.", "ja": "recognized songをiCloudへ保存する前に本人のapprovalを得る。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["The app can store songs recognized with ShazamKit in the person's iCloud library."],
+      "review_note": "Raised the opt-in control to an explicit-user-intent MUST and preserved its before-storage timing."
+    },
+    "HIG-TECHNOLOGIES-SHAZAMKIT-0002": {
+      "source": {"source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427", "source_sentence_hash": "f22e66f0e6ceec29a777d8e920002aaae2d2cca515d329e9d765874af827e732", "section_path": ["ShazamKit", "Best practices"]},
+      "title": "Stop recording as soon as possible",
+      "statement": {"en": "Stop ShazamKit audio recording as soon as recognition sampling allows.", "ja": "recognition sampleを取得でき次第ShazamKitのaudio recordingを停止する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["People granted microphone access for audio recognition.", "Apply the separate privacy MUST that limits recording to the required sample duration."],
+      "review_note": "Activated the omitted umbrella lead at SHOULD and kept the stricter privacy boundary separate."
+    },
+    "HIG-TECHNOLOGIES-SHAZAMKIT-0003": {
+      "source": {"source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427", "source_sentence_hash": "e8d07f10c75ba2b2ba5b36e2a4fa22dbd94661dfe0d9222103f4609398bb8d32", "section_path": ["ShazamKit"]},
+      "title": "Request microphone access for recognition",
+      "statement": {"en": "Before using the device microphone for ShazamKit recognition, request access.", "ja": "ShazamKit recognitionにdevice microphoneを使う前にaccessをrequestする。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["The app needs the device microphone to obtain an audio sample."],
+      "review_note": "Recovered the source's explicit must-request permission requirement."
+    },
+    "HIG-TECHNOLOGIES-SHAZAMKIT-0004": {
+      "source": {"source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427", "source_sentence_hash": "edd92ab30f044eafaae823ceda11f8164be962ecdd22fea42525d77d9342843b", "section_path": ["ShazamKit"]},
+      "title": "Explain the microphone access request",
+      "statement": {"en": "Explain why the app requests microphone access.", "ja": "appがmicrophone accessをrequestする理由を説明する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The app requests microphone access for ShazamKit recognition."],
+      "review_note": "Recovered the permission-explanation guidance and retained its important-but-not-mandatory strength."
+    },
+    "HIG-TECHNOLOGIES-SHAZAMKIT-0005": {
+      "source": {"source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427", "source_sentence_hash": "477ea650642aaeb4b6d9e87bba5406925689ceafbdd2afe2baf2544567f9403d", "section_path": ["ShazamKit", "Best practices"]},
+      "title": "Limit recognition recording to the required sample",
+      "statement": {"en": "Record recognition audio only as long as needed to obtain the sample.", "ja": "recognition audioは必要なsampleを取得する時間だけrecordする。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["The person granted microphone access for audio recognition."],
+      "review_note": "Classified the source's privacy-specific only-duration boundary as MUST."
     },
     "HIG-TECHNOLOGIES-RESEARCHKIT-0013": {
       "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "5100d084bc54c8ed47d96149a33625ef295185200995c8b3be9c33e6b58b81b6", "section_path": ["ResearchKit", "Creating the onboarding experience", "2. Determine eligibility"]},

@@ -1,6 +1,6 @@
 # Human source-review queue
 
-- Remaining rules: 25
+- Remaining rules: 24
 - Next priority: 6 (apple-platform-common)
 - Next batch: 1
 
@@ -8,15 +8,15 @@ This queue tracks canonical rule extraction and source-context review. Product-s
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 2
+- 6 (apple-platform-common): 1
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 1
 - MAY: 3
-- SHOULD: 21
+- SHOULD: 20
 
 ## Next batch
 
-- HIG-TECHNOLOGIES-SHAZAMKIT-0001 · SHOULD — Let people opt in to storing your app’s recognized songs to their iCloud library · ShazamKit > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-COMPONENTS-COLOR-WELLS-0001 · MAY — Consider the system-provided color picker for a familiar experience · Color wells > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/color-wells))

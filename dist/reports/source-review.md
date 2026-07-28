@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3613
-- Reviewed batches: 208
+- Reviewed rules: 3618
+- Reviewed batches: 209
 - Official source only: yes
-- Reviewed at: 2026-07-28T18:04:14Z
+- Reviewed at: 2026-07-28T18:13:20Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -3414,6 +3414,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-SHAREPLAY-0035 · high — Recovered the conditional in-session signup guidance without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0036 · high — Recovered the direct terminology avoidance without overstating it as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0037 · high — Recovered the direct terminology avoidance without overstating it as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0001 · high — Raised the opt-in control to an explicit-user-intent MUST and preserved its before-storage timing. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0002 · high — Activated the omitted umbrella lead at SHOULD and kept the stricter privacy boundary separate. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0003 · high — Recovered the source's explicit must-request permission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0004 · high — Recovered the permission-explanation guidance and retained its important-but-not-mandatory strength. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0005 · high — Classified the source's privacy-specific only-duration boundary as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0001 · high — Completed the all-platform account, privacy, optional-data, button-prominence, title, appearance, and contrast guidance; recovered omitted atomic clauses and removed one factual API capability from the active rules. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0002 · high — Completed the all-platform account, privacy, optional-data, button-prominence, title, appearance, and contrast guidance; recovered omitted atomic clauses and removed one factual API capability from the active rules. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0003 · high — Preserved the direct Don't guidance at AVOID and recorded the source's stopped-using exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))

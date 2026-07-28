@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 648
-- Retained MUST: 563
+- Reviewed rules: 651
+- Retained MUST: 566
 - Retained MUST_NOT: 85
-- Normative level changes: 270
+- Normative level changes: 273
 - Mixed-strength candidates split: 4
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:55:36Z
+- Reviewed at: 2026-07-28T18:13:20Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -463,6 +463,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-SHAREPLAY-0021 — Recovered MUST from the explicit need-to-integrate requirement and preserved its non-disruption outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0028 — Recovered MUST from the explicit need-to-present requirement and preserved the quick-rejoin outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0031 — Recovered the conditional MUST from the explicit be-sure-to-continue directive. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0001 — Raised the opt-in control to an explicit-user-intent MUST and preserved its before-storage timing. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0003 — Recovered the source's explicit must-request permission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0005 — Classified the source's privacy-specific only-duration boundary as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0017 — Retained MUST after confirming the explicit Make sure directive in the data-collection guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0005 — Restored the background-configuration condition lost by the 19-word evidence-fragment limit; the surrounding source explicitly says merchants must retain the option. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
 - HIG-TECHNOLOGIES-TAP-TO-PAY-ON-IPHONE-0012 — Raised to MUST after confirming the parent Make sure directive applies to every item in the custom-tutorial list. ([source](https://developer.apple.com/design/human-interface-guidelines/tap-to-pay-on-iphone))
@@ -1068,6 +1071,9 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-SHAREPLAY-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to-integrate requirement and preserved its non-disruption outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0028 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit need-to-present requirement and preserved the quick-rejoin outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0031 · MUST · retained_with_atomicity_or_scope_correction — Recovered the conditional MUST from the explicit be-sure-to-continue directive. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0001 · MUST · retained_with_atomicity_or_scope_correction — Raised the opt-in control to an explicit-user-intent MUST and preserved its before-storage timing. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0003 · MUST · retained_with_atomicity_or_scope_correction — Recovered the source's explicit must-request permission requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
+- HIG-TECHNOLOGIES-SHAZAMKIT-0005 · MUST · retained_with_atomicity_or_scope_correction — Classified the source's privacy-specific only-duration boundary as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/shazamkit))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0004 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0010 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
