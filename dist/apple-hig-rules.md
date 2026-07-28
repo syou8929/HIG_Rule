@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T18:29:05.063Z. 3673 active rules; 8 deprecated rules.
+Generated 2026-07-28T19:34:03.248Z. 3673 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -2931,7 +2931,7 @@ Generated 2026-07-28T18:29:05.063Z. 3673 active rules; 8 deprecated rules.
 - **HIG-TECHNOLOGIES-APP-CLIPS-0069 · SHOULD · high** — Choose or apply only grayscale App Clip Codes with grayscale-only printers in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - **HIG-TECHNOLOGIES-APP-CLIPS-0070 · SHOULD · high** — Choose or apply type 5 NFC tags for NFC-integrated App Clip Codes in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - **HIG-TECHNOLOGIES-APP-CLIPS-0071 · SHOULD · high** — Apply the documented App Clips guidance to test large App Clip Code print workflows and verify output. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
-- **HIG-TECHNOLOGIES-APP-CLIPS-0072 · MUST · high** — Require map each App Clip Code SVG file to its invocation URL. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- **HIG-TECHNOLOGIES-APP-CLIPS-0072 · MUST · high** — Map each App Clip Code SVG file to its invocation URL. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - **HIG-TECHNOLOGIES-APP-CLIPS-0073 · MUST · high** — Use only Apple-provided App Clip Codes created with approved tools and following the guidelines. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - **HIG-TECHNOLOGIES-APP-CLIPS-0074 · MUST_NOT · high** — Exclude use App Clip Code elements in company or product names from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - **HIG-TECHNOLOGIES-APP-CLIPS-0075 · MUST_NOT · high** — Exclude seek copyright or trademark registration for App Clip Code elements from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))

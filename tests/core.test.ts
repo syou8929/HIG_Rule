@@ -88,7 +88,15 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Take advantage of the default appearance", section_path: [], source_sentence_hash: "6".repeat(64), word_count: 6 }), true);
   assert.equal(paraphrase("In general, use dynamic scaling", "Windows").en, "Generally, use dynamic scaling.");
   assert.equal(isActionable({ text: "You must support multiple windows", section_path: [], source_sentence_hash: "7".repeat(64), word_count: 5 }), true);
-  assert.equal(paraphrase("You must support multiple windows", "Windows").en, "Require support multiple windows.");
+  assert.equal(paraphrase("You must support multiple windows", "Windows").en, "Support multiple windows.");
+  assert.equal(
+    paraphrase("You need to map each App Clip Code SVG file to its invocation URL", "App Clips").en,
+    "Map each App Clip Code SVG file to its invocation URL.",
+  );
+  assert.equal(
+    paraphrase("You need to map each App Clip Code SVG file to its invocation URL", "App Clips").ja,
+    "「map each App Clip Code SVG file to its invocation URL」を必須要件として扱う。",
+  );
   assert.equal(isActionable({ text: "In an immersive experience, help people maintain comfort", section_path: [], source_sentence_hash: "8".repeat(64), word_count: 8 }), true);
   assert.equal(isActionable({ text: "Recognize that people may prefer tinted mode", section_path: [], source_sentence_hash: "9".repeat(64), word_count: 7 }), true);
   assert.equal(paraphrase("In an immersive experience, help people maintain comfort", "Color").en, "In an immersive experience, help people maintain comfort.");
@@ -234,6 +242,54 @@ test("excludes source-reviewed normative rules and supports an empty review queu
     assert.equal(batch.every((rule) => rule.priority_rank === batch[0]?.priority_rank), true);
     assert.equal(batch.every((rule) => rule.source.url === batch[0]?.source.url), true);
   }
+});
+
+test("prioritizes and batches a synthetic nonempty review queue", async () => {
+  const template = (await loadRules())[0];
+  assert.ok(template);
+  const makeRule = (
+    id: string,
+    priorityRank: number,
+    normativeLevel: Rule["normative_level"],
+    url: string,
+    reviewRequired = true,
+    status: Rule["status"] = "active",
+  ): Rule => ({
+    ...template,
+    id,
+    priority_rank: priorityRank,
+    normative_level: normativeLevel,
+    review_required: reviewRequired,
+    status,
+    source: { ...template.source, url },
+  });
+  const pageA = "https://developer.apple.com/design/human-interface-guidelines/review-queue-fixture-a";
+  const pageB = "https://developer.apple.com/design/human-interface-guidelines/review-queue-fixture-b";
+  const rules = [
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9000", 1, "MUST", pageA, false),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-8999", 1, "MUST_NOT", pageA, true, "deprecated"),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9001", 4, "AVOID", pageA),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9002", 4, "AVOID", pageB),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9003", 4, "SHOULD", pageA),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9004", 5, "MAY", pageA),
+  ];
+
+  assert.deepEqual(
+    pendingRuleReviews(rules).map((rule) => rule.id),
+    [
+      "HIG-PATTERNS-REVIEW-QUEUE-9001",
+      "HIG-PATTERNS-REVIEW-QUEUE-9002",
+      "HIG-PATTERNS-REVIEW-QUEUE-9003",
+      "HIG-PATTERNS-REVIEW-QUEUE-9004",
+    ],
+  );
+  assert.deepEqual(
+    nextReviewBatch(rules).map((rule) => rule.id),
+    [
+      "HIG-PATTERNS-REVIEW-QUEUE-9001",
+      "HIG-PATTERNS-REVIEW-QUEUE-9003",
+    ],
+  );
 });
 
 test("keeps general source reviews aligned with canonical traces", async () => {

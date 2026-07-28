@@ -6,7 +6,7 @@
 - Normative level changes: 279
 - Mixed-strength candidates split: 4
 - Official source only: yes
-- Reviewed at: 2026-07-28T18:23:37Z
+- Reviewed at: 2026-07-28T19:31:32Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -341,7 +341,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APP-CLIPS-0063 — Recovered MUST from the source's explicit requirement that codes adhere to the documented size specifications. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0067 — Recovered MUST from the explicit Be sure directive to scale every generated attribute together. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0068 — Recovered MUST from the explicit Always test directive before printed-code distribution. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
-- HIG-TECHNOLOGIES-APP-CLIPS-0072 — Recovered MUST from the explicit You need directive to map SVG files to invocation URLs. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- HIG-TECHNOLOGIES-APP-CLIPS-0072 — Retained MUST from the explicit You need directive and replaced the malformed generated prose with a direct imperative. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0073 — Raised to MUST from the Legal requirements section's exclusive approval condition for Apple-provided codes. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0074 — Recovered MUST_NOT from the Legal requirements section's explicit may-not prohibition on company and product names. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0075 — Recovered MUST_NOT from the Legal requirements section's explicit may-not prohibition on intellectual-property registration. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
@@ -908,7 +908,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-APP-CLIPS-0063 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the source's explicit requirement that codes adhere to the documented size specifications. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0067 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Be sure directive to scale every generated attribute together. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0068 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Always test directive before printed-code distribution. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
-- HIG-TECHNOLOGIES-APP-CLIPS-0072 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit You need directive to map SVG files to invocation URLs. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- HIG-TECHNOLOGIES-APP-CLIPS-0072 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit You need directive and replaced the malformed generated prose with a direct imperative. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0073 · MUST · retained_with_atomicity_or_scope_correction — Raised to MUST from the Legal requirements section's exclusive approval condition for Apple-provided codes. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0074 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered MUST_NOT from the Legal requirements section's explicit may-not prohibition on company and product names. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0075 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered MUST_NOT from the Legal requirements section's explicit may-not prohibition on intellectual-property registration. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))

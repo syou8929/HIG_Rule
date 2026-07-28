@@ -3,7 +3,7 @@
 - Reviewed rules: 3659
 - Reviewed batches: 211
 - Official source only: yes
-- Reviewed at: 2026-07-28T18:23:37Z
+- Reviewed at: 2026-07-28T19:31:32Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2643,7 +2643,7 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-APP-CLIPS-0069 · high — Reviewed the rendered source context for “Use only grayscale App Clip Codes with grayscale-only printers” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0070 · high — Reviewed the rendered source context for “Use Type 5 NFC tags for NFC-integrated App Clip Codes” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0071 · high — Reviewed the rendered source context for “Test large App Clip Code print workflows and verify output” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
-- HIG-TECHNOLOGIES-APP-CLIPS-0072 · high — Reviewed the rendered source context for “You need to map each App Clip Code SVG file to its invocation URL” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
+- HIG-TECHNOLOGIES-APP-CLIPS-0072 · high — Replaced the malformed generated prose with a direct imperative while preserving the explicit You need MUST and its conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0073 · high — Corrected strength after reviewing the explicit supporting requirement and its source-scoped conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0074 · high — Reviewed the rendered source context for “Never use App Clip Code elements in company or product names” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
 - HIG-TECHNOLOGIES-APP-CLIPS-0075 · high — Reviewed the rendered source context for “Never seek copyright or trademark registration for App Clip Code elements” and recorded its applicable conditions. ([source](https://developer.apple.com/design/human-interface-guidelines/app-clips))
