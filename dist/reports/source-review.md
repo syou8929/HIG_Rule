@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3381
-- Reviewed batches: 195
+- Reviewed rules: 3391
+- Reviewed batches: 196
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:18:34Z
+- Reviewed at: 2026-07-28T16:23:49Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1934,6 +1934,16 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-INPUTS-REMOTES-0020 · high — Split EPG paging from EPG opening and retained the touch-surface alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0021 · high — Split the direct EPG-button repurposing avoidance from the positive mappings. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0022 · high — Activated the playback-specific channel behavior and separated it from EPG paging. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-PATTERNS-CHARTING-DATA-0001 · high — Recorded the prominence condition and the required learning focus. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0002 · high — Recorded overload risks and all three progressive-disclosure techniques. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0003 · high — Classified the all-chart crucial accessibility outcome as MUST and preserved both required accessibility mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0004 · high — Recorded full-size readability and interactivity plus the glanceable preview exception. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0005 · high — Preserved the meaningful-difference exception and learning-transfer rationale. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0006 · high — Recorded every continuity channel named by the source. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0007 · high — Activated the omitted lead and preserved its In general qualification. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0008 · high — Activated the conditional novel-chart onboarding rule and generalized the source example without persisting it. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0009 · high — Activated the omitted lead and preserved all three levels of analysis. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-CHARTING-DATA-0010 · high — Activated the omitted descriptive-text rule, recorded every text role, and preserved the accessibility-label boundary. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
 - HIG-PATTERNS-DRAG-AND-DROP-0011 · high — Recorded touch scope and separated the general capability from its three explicit implementation requirements. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0012 · high — Retained MAY and separated the conditional reopenable-format requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0013 · high — Repaired generated wording and recorded the background-selection state. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))

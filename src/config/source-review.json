@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T16:18:34Z",
+  "reviewed_at": "2026-07-28T16:23:49Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5286,6 +5286,32 @@
         "HIG-FOUNDATIONS-WRITING-0029"
       ],
       "review_note": "Completed Writing coverage, concretized fifteen queued rules, recovered fourteen atomic hierarchy, labeling, multistep, device, empty-state, and settings rules, and retained only the two explicit gesture-terminology and useful-empty-state Make sure outcomes as MUST."
+    },
+    {
+      "id": "priority-6-charting-data-complete-context-2026-07-29",
+      "reviewed_at": "2026-07-28T16:23:49Z",
+      "review_method": "Rendered Apple HIG Charting data best-practice, effective-chart, platform, resource, and supporting context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/charting-data",
+          "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-CHARTING-DATA-0001",
+        "HIG-PATTERNS-CHARTING-DATA-0002",
+        "HIG-PATTERNS-CHARTING-DATA-0003",
+        "HIG-PATTERNS-CHARTING-DATA-0004",
+        "HIG-PATTERNS-CHARTING-DATA-0005",
+        "HIG-PATTERNS-CHARTING-DATA-0006",
+        "HIG-PATTERNS-CHARTING-DATA-0007",
+        "HIG-PATTERNS-CHARTING-DATA-0008",
+        "HIG-PATTERNS-CHARTING-DATA-0009",
+        "HIG-PATTERNS-CHARTING-DATA-0010"
+      ],
+      "review_note": "Completed Charting data coverage, concretized six queued rules, activated four omitted common-type, novel-chart, multiple-perspective, and descriptive-text rules, and classified the all-chart accessibility outcome as MUST."
     }
   ],
   "rules": {
@@ -5935,6 +5961,86 @@
       "normative_level": "SHOULD",
       "conditions": ["Do not rely on prose that describes the setting's location."],
       "review_note": "Recovered the conditional direct-navigation rule and its prose-location alternative."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0001": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "8328fbe63f1c4c030a9fe4dcccde77bb780049023e0acdb32e3d6925da11e5af", "section_path": ["Charting data", "Best practices"]},
+      "title": "Use charts to highlight important dataset information",
+      "statement": {"en": "Use a chart when its visual prominence helps highlight important information in a dataset.", "ja": "visual prominenceがdatasetのimportant informationを強調する場合にchartを使う。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Clearly communicate what people can learn from the data they care about."],
+      "review_note": "Recorded the prominence condition and the required learning focus."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0002": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "b5e4b673c85b6042c3f197f4685c3b1a72557d876fd41248c6c9f944f0ed3eb3", "section_path": ["Charting data", "Best practices"]},
+      "title": "Keep charts simple and reveal details on demand",
+      "statement": {"en": "Keep a chart simple and let people reveal additional data or functionality when they want it.", "ja": "chartをsimpleに保ち、追加dataやfunctionalityを必要時に表示できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Avoid packing in data that obscures relationships or overwhelms the chart.", "Offer levels of detail or data subsets that match people's interests.", "For complex interactive charts, consider progressively introducing more capable versions."],
+      "review_note": "Recorded overload risks and all three progressive-disclosure techniques."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0003": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "399c6903451f9e32f7884b101661ca00290424b719975aeeb796e0fe6d8a0584", "section_path": ["Charting data", "Best practices"]},
+      "title": "Make every chart accessible",
+      "statement": {"en": "Ensure every chart is accessible.", "ja": "すべてのchartをaccessibleにする。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Provide accessibility labels that describe chart values and components.", "Provide accessibility elements that let people interact with the chart.", "Visible descriptions do not replace accessibility labels or elements."],
+      "review_note": "Classified the all-chart crucial accessibility outcome as MUST and preserved both required accessibility mechanisms."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0004": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "99f9a8d6b697dea9178196102c79d1b4885bca6eb7fde5506aa0c99d98df9743", "section_path": ["Charting data", "Designing effective charts"]},
+      "title": "Size charts for their function and detail",
+      "statement": {"en": "Match chart size to its functionality, topic, interactivity, and level of detail.", "ja": "chart sizeをfunctionality、topic、interactivity、detail levelへ合わせる。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Provide enough room for readable labels, annotations, and interaction.", "A small chart may show glanceable information or preview a larger chart."],
+      "review_note": "Recorded full-size readability and interactivity plus the glanceable preview exception."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0005": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "8cd0b6fdda9756a632b81e2569768bd5712184f173cdc3b1a85898ca186aff86", "section_path": ["Charting data", "Designing effective charts"]},
+      "title": "Keep related charts visually consistent",
+      "statement": {"en": "Keep charts with similar purposes visually consistent unless a difference needs emphasis.", "ja": "同様の目的を持つchartは、differenceの強調が必要な場合を除きvisualに一貫させる。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use consistent chart types and styles so learning transfers between charts.", "Consider a different type or style only to highlight a meaningful difference."],
+      "review_note": "Preserved the meaningful-difference exception and learning-transfer rationale."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0006": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "08e008397226f5a6afb5bee50dc29e3d99e7b719b3c0863d5a2bebfd20ef6d9a", "section_path": ["Charting data", "Designing effective charts"]},
+      "title": "Maintain continuity across views of one dataset",
+      "statement": {"en": "Maintain visual continuity among charts that show the same dataset.", "ja": "同じdatasetを示すchart間でvisual continuityを保つ。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Keep chart type, colors, annotations, layout, marks, and descriptive text consistent across overview and detail views."],
+      "review_note": "Recorded every continuity channel named by the source."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0007": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "c3a9e3d8a5b4b72f3b30704ef4deee1c11216d77ed20ad2dd24502e94f699155", "section_path": ["Charting data", "Designing effective charts"]},
+      "title": "Prefer familiar chart types",
+      "statement": {"en": "Generally prefer familiar chart types such as bar charts and line charts.", "ja": "通常はbar chartやline chartなどfamiliarなchart typeを優先する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Familiar types make it more likely that people already know how to read the chart."],
+      "review_note": "Activated the omitted lead and preserved its In general qualification."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0008": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "180cd98491b6eb0ed02c316d9549a148f4895324732204229b48aaf8c2d52fb8", "section_path": ["Charting data", "Designing effective charts"]},
+      "title": "Teach people how to read novel charts",
+      "statement": {"en": "When a chart presents data in a novel way, help people learn how to interpret it.", "ja": "chartがnovelな方法でdataを示す場合、解釈方法を学べるよう支援する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Introduce novel visual encodings and explain how they map to the represented metrics."],
+      "review_note": "Activated the conditional novel-chart onboarding rule and generalized the source example without persisting it."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0009": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "b3e543629770405f6cbf0921edfab5f46cc7c70a6a72696f8546a96b8ca9ac79", "section_path": ["Charting data", "Designing effective charts"]},
+      "title": "Examine data from multiple perspectives",
+      "statement": {"en": "Examine data at macro, subset, and individual-point levels to find useful chart details.", "ja": "dataをmacro、subset、individual pointのlevelで調べ、有用なchart detailを見つける。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use high-level summaries, useful subsets, and specific values or items to support different perspectives."],
+      "review_note": "Activated the omitted lead and preserved all three levels of analysis."
+    },
+    "HIG-PATTERNS-CHARTING-DATA-0010": {
+      "source": {"source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509", "source_sentence_hash": "1ea3055978335d3a066445ee795c08d89b86146947715c9ee9ca37659fa5a35e", "section_path": ["Charting data", "Designing effective charts"]},
+      "title": "Add descriptive text to charts",
+      "statement": {"en": "Add concise descriptive text that helps people understand a chart’s essential information and takeaways.", "ja": "chartのessential informationとtakeawayを理解できるconciseなdescriptive textを加える。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use titles, subtitles, annotations, headlines, or summaries as appropriate.", "A descriptive headline or summary never replaces accessibility labels."],
+      "review_note": "Activated the omitted descriptive-text rule, recorded every text role, and preserved the accessibility-label boundary."
     },
     "HIG-COMPONENTS-STEPPERS-0002": {
       "source": {

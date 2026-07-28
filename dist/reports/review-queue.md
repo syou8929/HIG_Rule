@@ -1,27 +1,26 @@
 # Human source-review queue
 
-- Remaining rules: 121
+- Remaining rules: 115
 - Next priority: 6 (apple-platform-common)
-- Next batch: 6
+- Next batch: 5
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 98
+- 6 (apple-platform-common): 92
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 1
 - MAY: 15
-- SHOULD: 105
+- SHOULD: 99
 
 ## Next batch
 
-- HIG-PATTERNS-CHARTING-DATA-0001 · SHOULD — Use a chart when you want to highlight important information about a dataset · Charting data > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- HIG-PATTERNS-CHARTING-DATA-0002 · SHOULD — Keep a chart simple, letting people choose when they want additional details · Charting data > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- HIG-PATTERNS-CHARTING-DATA-0003 · SHOULD — Make every chart in your app accessible · Charting data > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- HIG-PATTERNS-CHARTING-DATA-0004 · SHOULD — Match the size of a chart to its functionality, topic, and level of detail · Charting data > Designing effective charts ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- HIG-PATTERNS-CHARTING-DATA-0005 · SHOULD — Prefer consistency across multiple charts, deviating only when you need to highlight differences · Charting data > Designing effective charts ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- HIG-PATTERNS-CHARTING-DATA-0006 · SHOULD — Maintain continuity among multiple charts that use the same data · Charting data > Designing effective charts ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0001 · SHOULD — Place the Share button in a convenient location, like a toolbar, to make it easy for people to start · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0002 · SHOULD — Write succinct phrases that summarize the sharing permissions you support · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0003 · SHOULD — Provide a set of simple sharing options that streamline collaboration setup · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0004 · SHOULD — Provide custom actions in the collaboration popover only if needed · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
+- HIG-PATTERNS-COLLABORATION-AND-SHARING-0005 · MAY — Consider posting collaboration event notifications in Messages · Collaboration and sharing > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))

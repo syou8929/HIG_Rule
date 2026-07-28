@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 587
-- Retained MUST: 506
+- Reviewed rules: 588
+- Retained MUST: 507
 - Retained MUST_NOT: 81
-- Normative level changes: 212
+- Normative level changes: 213
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:18:34Z
+- Reviewed at: 2026-07-28T16:23:49Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -247,6 +247,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-REMOTES-0016 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0017 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0018 — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-PATTERNS-CHARTING-DATA-0003 — Classified the all-chart crucial accessibility outcome as MUST and preserved both required accessibility mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
 - HIG-PATTERNS-DRAG-AND-DROP-0019 — Recovered MUST from the explicit you need to requirement for in-progress item addition. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0020 — Recovered MUST from the explicit you need to clause and separated its visual-feedback requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0021 — Recovered MUST from the explicit you need to requirement for multiple simultaneous drops. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
@@ -722,6 +723,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-INPUTS-REMOTES-0016 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0017 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
 - HIG-INPUTS-REMOTES-0018 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit Ensure directive governing the remote-button behavior table. ([source](https://developer.apple.com/design/human-interface-guidelines/remotes))
+- HIG-PATTERNS-CHARTING-DATA-0003 · MUST · retained_with_atomicity_or_scope_correction — Classified the all-chart crucial accessibility outcome as MUST and preserved both required accessibility mechanisms. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
 - HIG-PATTERNS-DRAG-AND-DROP-0019 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit you need to requirement for in-progress item addition. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0020 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit you need to clause and separated its visual-feedback requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))
 - HIG-PATTERNS-DRAG-AND-DROP-0021 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from the explicit you need to requirement for multiple simultaneous drops. ([source](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop))

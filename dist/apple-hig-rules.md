@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T16:21:30.383Z. 3524 active rules; 8 deprecated rules.
+Generated 2026-07-28T16:25:10.427Z. 3528 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -670,12 +670,16 @@ Generated 2026-07-28T16:21:30.383Z. 3524 active rules; 8 deprecated rules.
 
 ### charting-data
 
-- **HIG-PATTERNS-CHARTING-DATA-0001 · SHOULD · low** — Choose or apply a chart when you want to highlight important information about a dataset in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- **HIG-PATTERNS-CHARTING-DATA-0002 · SHOULD · low** — Maintain a chart simple, letting people choose when they want additional details. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- **HIG-PATTERNS-CHARTING-DATA-0003 · SHOULD · low** — Apply the documented Charting data guidance to make every chart in your app accessible. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- **HIG-PATTERNS-CHARTING-DATA-0004 · SHOULD · low** — Apply the documented Charting data guidance to match the size of a chart to its functionality, topic, and level of detail. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- **HIG-PATTERNS-CHARTING-DATA-0005 · SHOULD · low** — Favor consistency across multiple charts, deviating only when you need to highlight differences when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
-- **HIG-PATTERNS-CHARTING-DATA-0006 · SHOULD · low** — Apply the documented Charting data guidance to maintain continuity among multiple charts that use the same data. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0001 · SHOULD · high** — Use a chart when its visual prominence helps highlight important information in a dataset. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0002 · SHOULD · high** — Keep a chart simple and let people reveal additional data or functionality when they want it. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0003 · MUST · high** — Ensure every chart is accessible. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0004 · SHOULD · high** — Match chart size to its functionality, topic, interactivity, and level of detail. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0005 · SHOULD · high** — Keep charts with similar purposes visually consistent unless a difference needs emphasis. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0006 · SHOULD · high** — Maintain visual continuity among charts that show the same dataset. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0007 · SHOULD · high** — Generally prefer familiar chart types such as bar charts and line charts. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0008 · SHOULD · high** — When a chart presents data in a novel way, help people learn how to interpret it. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0009 · SHOULD · high** — Examine data at macro, subset, and individual-point levels to find useful chart details. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
+- **HIG-PATTERNS-CHARTING-DATA-0010 · SHOULD · high** — Add concise descriptive text that helps people understand a chart’s essential information and takeaways. ([source](https://developer.apple.com/design/human-interface-guidelines/charting-data))
 ### collaboration-and-sharing
 
 - **HIG-PATTERNS-COLLABORATION-AND-SHARING-0001 · SHOULD · low** — Apply the documented Collaboration and sharing guidance to place the Share button in a convenient location, like a toolbar, to make it easy for people to start. ([source](https://developer.apple.com/design/human-interface-guidelines/collaboration-and-sharing))
