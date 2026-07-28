@@ -10,7 +10,7 @@ import { duplicateGroupKey, duplicateSourceTraceHash, findExactDuplicateGroups, 
 import { loadRules, loadSourcePages } from "../src/lib/store.js";
 import { isActionable, normative, paraphrase, platformsForCandidate } from "../src/lib/rules.js";
 import { nextReviewBatch, pendingRuleReviews } from "../src/lib/review-queue.js";
-import type { GuidanceCandidate, SourcePage } from "../src/lib/types.js";
+import type { GuidanceCandidate, Rule, SourcePage } from "../src/lib/types.js";
 import { normalizeUrl, sha256 } from "../src/lib/util.js";
 import { diffRuleSnapshots, type RuleSnapshot } from "../src/lib/rule-diff.js";
 
@@ -22,14 +22,29 @@ test("normalizes HIG URLs and rejects out-of-scope URLs", () => {
 
 test("keeps conditional strength conservative", () => {
   assert.equal(normative("Consider showing a label").normative_level, "MAY");
+  assert.equal(normative("Carefully consider showing a label").normative_level, "MAY");
+  assert.equal(normative("In general, avoid duplicating a control").normative_level, "AVOID");
+  assert.equal(normative("As much as possible, avoid duplicating a control").normative_level, "AVOID");
+  assert.equal(normative("For apps with tabs, consider adding shortcuts").normative_level, "MAY");
+  assert.equal(normative("Within a grouped form, consider using a mini switch").normative_level, "MAY");
+  assert.equal(normative("In general, don’t replace a checkbox").normative_level, "AVOID");
+  assert.equal(normative("Try to avoid overlapping controls").normative_level, "AVOID");
+  assert.equal(normative("If a modal state applies, consider alternate controls").normative_level, "MAY");
   assert.equal(normative("Prefer the standard control").normative_level, "SHOULD");
   assert.equal(normative("Never hide the recovery action").normative_level, "MUST_NOT");
+  assert.equal(normative("You must support multiple windows").normative_level, "MUST");
+  assert.equal(normative("You have to include your app name").normative_level, "MUST");
+  assert.equal(normative("You must not hide the recovery action").normative_level, "MUST_NOT");
 });
 
 test("paraphrases common imperative leads", () => {
   const result = paraphrase("Support larger text sizes", "Accessibility");
   assert.equal(result.en, "Ensure the experience accommodates larger text sizes.");
   assert.notEqual(result.en.toLowerCase(), "support larger text sizes");
+  assert.equal(paraphrase("In general, avoid duplicating a control", "Menus").en, "Exclude duplicating a control from the applicable experience.");
+  assert.equal(paraphrase("Refer to a panel by title", "Panels").en, "Refer to a panel by title.");
+  assert.equal(paraphrase("Define a clear scroll area", "Scroll views").en, "Define a clear scroll area explicitly.");
+  assert.equal(paraphrase("Present a sheet in a reasonable size", "Sheets").en, "Present a sheet in a reasonable size in the documented context.");
 });
 
 test("recognizes actionable plain-list guidance", () => {
@@ -37,6 +52,118 @@ test("recognizes actionable plain-list guidance", () => {
   assert.equal(isActionable({ text: "Break up multistep workflows", section_path: [], source_sentence_hash: "b".repeat(64), word_count: 4 }), true);
   assert.equal(isActionable({ text: "Avoiding animating depth changes", section_path: [], source_sentence_hash: "c".repeat(64), word_count: 4 }), true);
   assert.equal(isActionable({ text: "Always On", section_path: [], source_sentence_hash: "d".repeat(64), word_count: 2 }), false);
+  assert.equal(isActionable({ text: "Tracking requests", section_path: [], source_sentence_hash: "e".repeat(64), word_count: 2 }), false);
+  assert.equal(isActionable({ text: "Help buttons", section_path: [], source_sentence_hash: "f".repeat(64), word_count: 2 }), false);
+  assert.equal(isActionable({ text: "Carefully consider a custom layout", section_path: [], source_sentence_hash: "g".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Refer to a panel by title", section_path: [], source_sentence_hash: "h".repeat(64), word_count: 6 }), true);
+  assert.equal(isActionable({ text: "Define a clear scroll area", section_path: [], source_sentence_hash: "i".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Present a sheet in a reasonable size", section_path: [], source_sentence_hash: "j".repeat(64), word_count: 7 }), true);
+  assert.equal(isActionable({ text: "Prompt people at a relevant moment", section_path: [], source_sentence_hash: "j".repeat(64), word_count: 6 }), true);
+  assert.equal(isActionable({ text: "Pick a map emphasis style", section_path: [], source_sentence_hash: "j".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Cluster overlapping points of interest", section_path: [], source_sentence_hash: "j".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Represent common actions consistently", section_path: [], source_sentence_hash: "k".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Determine the display order", section_path: [], source_sentence_hash: "l".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Discard extremely brief workout sessions", section_path: [], source_sentence_hash: "l".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "As much as possible, support drag and drop", section_path: [], source_sentence_hash: "m".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Require one modifier key", section_path: [], source_sentence_hash: "n".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Reserve the setting for app-level options", section_path: [], source_sentence_hash: "o".repeat(64), word_count: 7 }), true);
+  assert.equal(isActionable({ text: "For apps with tabs, consider adding shortcuts", section_path: [], source_sentence_hash: "p".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Because the menu is hidden, ensure access", section_path: [], source_sentence_hash: "q".repeat(64), word_count: 7 }), true);
+  assert.equal(isActionable({ text: "Clearly identify the affected setting", section_path: [], source_sentence_hash: "r".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Accurately reflect the current state", section_path: [], source_sentence_hash: "s".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Outside of a list, use a toggle button", section_path: [], source_sentence_hash: "t".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Within a grouped form, consider using a mini switch", section_path: [], source_sentence_hash: "u".repeat(64), word_count: 9 }), true);
+  assert.equal(isActionable({ text: "In general, don’t replace a checkbox", section_path: [], source_sentence_hash: "v".repeat(64), word_count: 6 }), true);
+  assert.equal(isActionable({ text: "To present one setting, prefer a checkbox", section_path: [], source_sentence_hash: "w".repeat(64), word_count: 7 }), true);
+  assert.equal(isActionable({ text: "Try to prevent window clipping", section_path: [], source_sentence_hash: "x".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "If a modal state applies, consider alternate controls", section_path: [], source_sentence_hash: "y".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Feature new content", section_path: [], source_sentence_hash: "z".repeat(64), word_count: 3 }), true);
+  assert.equal(isActionable({ text: "Personalize people’s favorite content", section_path: [], source_sentence_hash: "0".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "Showcase compelling dynamic content", section_path: [], source_sentence_hash: "1".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "If fallback content is unavailable, supply one image", section_path: [], source_sentence_hash: "2".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "If you need text, add it to the image", section_path: [], source_sentence_hash: "3".repeat(64), word_count: 9 }), true);
+  assert.equal(paraphrase("If you need text, add it to the image", "Top Shelf").en, "When you need text, add it to the image.");
+  assert.equal(isActionable({ text: "Retain the glass background", section_path: [], source_sentence_hash: "4".repeat(64), word_count: 4 }), true);
+  assert.equal(isActionable({ text: "In general, use dynamic scaling", section_path: [], source_sentence_hash: "5".repeat(64), word_count: 5 }), true);
+  assert.equal(isActionable({ text: "Take advantage of the default appearance", section_path: [], source_sentence_hash: "6".repeat(64), word_count: 6 }), true);
+  assert.equal(paraphrase("In general, use dynamic scaling", "Windows").en, "Generally, use dynamic scaling.");
+  assert.equal(isActionable({ text: "You must support multiple windows", section_path: [], source_sentence_hash: "7".repeat(64), word_count: 5 }), true);
+  assert.equal(paraphrase("You must support multiple windows", "Windows").en, "Support multiple windows.");
+  assert.equal(
+    paraphrase("You need to map each App Clip Code SVG file to its invocation URL", "App Clips").en,
+    "Map each App Clip Code SVG file to its invocation URL.",
+  );
+  assert.equal(
+    paraphrase("You need to map each App Clip Code SVG file to its invocation URL", "App Clips").ja,
+    "「map each App Clip Code SVG file to its invocation URL」を必須要件として扱う。",
+  );
+  assert.equal(isActionable({ text: "In an immersive experience, help people maintain comfort", section_path: [], source_sentence_hash: "8".repeat(64), word_count: 8 }), true);
+  assert.equal(isActionable({ text: "Recognize that people may prefer tinted mode", section_path: [], source_sentence_hash: "9".repeat(64), word_count: 7 }), true);
+  assert.equal(paraphrase("In an immersive experience, help people maintain comfort", "Color").en, "In an immersive experience, help people maintain comfort.");
+  assert.equal(isActionable({ text: "Specify a succinct term", section_path: [], source_sentence_hash: "a".repeat(64), word_count: 4 }), true);
+  assert.equal(paraphrase("Specify a succinct term", "Icons").en, "Specify a succinct term.");
+  assert.equal(isActionable({ text: "Indicate the purpose of an exit control", section_path: [], source_sentence_hash: "b".repeat(64), word_count: 7 }), true);
+  assert.equal(paraphrase("Indicate the purpose of an exit control", "Immersive experiences").en, "Indicate the purpose of an exit control.");
+  assert.equal(isActionable({ text: "If tracking stops, fade out virtual hands", section_path: [], source_sentence_hash: "c".repeat(64), word_count: 7 }), true);
+  assert.equal(paraphrase("If tracking stops, fade out virtual hands", "Immersive experiences").en, "When tracking stops, fade out virtual hands.");
+  assert.equal(normative("If passthrough is visible, avoid obscuring it").normative_level, "AVOID");
+  assert.equal(normative("Always avoid edge motion").normative_level, "MUST_NOT");
+  assert.equal(normative("Be sure to lower the soundscape volume").normative_level, "MUST");
+  assert.equal(isActionable({ text: "As someone resizes a window, defer switching layouts", section_path: [], source_sentence_hash: "d".repeat(64), word_count: 8 }), true);
+  assert.equal(paraphrase("As someone resizes a window, defer switching layouts", "Layout").en, "As someone resizes a window, defer switching layouts.");
+  assert.equal(paraphrase("If controls are outside a window, use an ornament", "Layout").en, "When controls are outside a window, use an ornament.");
+  assert.equal(normative("You need to include enough spacing").normative_level, "MUST");
+  assert.equal(isActionable({
+    text: "The overall color needs to remain black or white",
+    section_path: ["Sign in with Apple", "Displaying buttons"],
+    source_sentence_hash: "hash",
+    word_count: 9,
+  }), true);
+  assert.equal(isActionable({
+    text: "Delay sign-in as long as possible",
+    section_path: ["Sign in with Apple", "Offering Sign in with Apple"],
+    source_sentence_hash: "hash",
+    word_count: 6,
+  }), true);
+  assert.equal(isActionable({
+    text: "Support for configuring the button’s corner radius to match the style of your UI (iOS, macOS, and web)",
+    section_path: ["Sign in with Apple", "Displaying buttons"],
+    source_sentence_hash: "hash",
+    word_count: 18,
+  }), false);
+  assert.equal(isActionable({
+    text: "Only provide a custom response if built-in responses don’t meet your app’s needs",
+    section_path: ["Siri", "Best practices"],
+    source_sentence_hash: "hash",
+    word_count: 13,
+  }), true);
+  assert.equal(isActionable({
+    text: "Supply a high-resolution logo image that uses a nontransparent background",
+    section_path: ["Wallet", "Order tracking"],
+    source_sentence_hash: "hash",
+    word_count: 10,
+  }), true);
+  assert.equal(isActionable({
+    text: "semantic tags are required and enable automatic layout",
+    section_path: ["Wallet", "Pass anatomy"],
+    source_sentence_hash: "hash",
+    word_count: 8,
+  }), true);
+  assert.equal(isActionable({
+    text: "If necessary, provide a Cancel button that lets people reject an action that might destroy data",
+    section_path: ["Action sheets", "Best practices"],
+    source_sentence_hash: "hash",
+    word_count: 15,
+  }), true);
+  assert.equal(isActionable({
+    text: "Each app can include up to 10 App Shortcuts",
+    section_path: ["App Shortcuts", "Overview"],
+    source_sentence_hash: "hash",
+    word_count: 9,
+  }), true);
+  assert.equal(isActionable({ text: "Center important content", section_path: [], source_sentence_hash: "e".repeat(64), word_count: 3 }), true);
+  assert.equal(isActionable({ text: "Center area", section_path: [], source_sentence_hash: "f".repeat(64), word_count: 2 }), false);
+  assert.equal(paraphrase("Rely on the Digital Crown", "Spatial layout").en, "Rely on the Digital Crown.");
   assert.equal(normative("Avoiding animating depth changes").normative_level, "AVOID");
 });
 
@@ -102,7 +229,7 @@ test("keeps exact duplicate reviews aligned with canonical source traces", async
   }
 });
 
-test("excludes source-reviewed normative rules from the prioritized review queue", async () => {
+test("excludes source-reviewed normative rules and supports an empty review queue", async () => {
   const rules = await loadRules();
   const normativeReviewed = rules.filter((rule) => ["MUST", "MUST_NOT"].includes(rule.normative_level));
   assert.ok(normativeReviewed.length > 0);
@@ -110,8 +237,59 @@ test("excludes source-reviewed normative rules from the prioritized review queue
   const pending = pendingRuleReviews(rules);
   const batch = nextReviewBatch(rules);
   assert.equal(pending.some((rule) => ["MUST", "MUST_NOT"].includes(rule.normative_level)), false);
-  assert.ok(batch.length > 0);
-  assert.equal(batch.every((rule) => rule.priority_rank === batch[0]?.priority_rank), true);
+  assert.equal(batch.length === 0, pending.length === 0);
+  if (batch.length > 0) {
+    assert.equal(batch.every((rule) => rule.priority_rank === batch[0]?.priority_rank), true);
+    assert.equal(batch.every((rule) => rule.source.url === batch[0]?.source.url), true);
+  }
+});
+
+test("prioritizes and batches a synthetic nonempty review queue", async () => {
+  const template = (await loadRules())[0];
+  assert.ok(template);
+  const makeRule = (
+    id: string,
+    priorityRank: number,
+    normativeLevel: Rule["normative_level"],
+    url: string,
+    reviewRequired = true,
+    status: Rule["status"] = "active",
+  ): Rule => ({
+    ...template,
+    id,
+    priority_rank: priorityRank,
+    normative_level: normativeLevel,
+    review_required: reviewRequired,
+    status,
+    source: { ...template.source, url },
+  });
+  const pageA = "https://developer.apple.com/design/human-interface-guidelines/review-queue-fixture-a";
+  const pageB = "https://developer.apple.com/design/human-interface-guidelines/review-queue-fixture-b";
+  const rules = [
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9000", 1, "MUST", pageA, false),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-8999", 1, "MUST_NOT", pageA, true, "deprecated"),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9001", 4, "AVOID", pageA),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9002", 4, "AVOID", pageB),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9003", 4, "SHOULD", pageA),
+    makeRule("HIG-PATTERNS-REVIEW-QUEUE-9004", 5, "MAY", pageA),
+  ];
+
+  assert.deepEqual(
+    pendingRuleReviews(rules).map((rule) => rule.id),
+    [
+      "HIG-PATTERNS-REVIEW-QUEUE-9001",
+      "HIG-PATTERNS-REVIEW-QUEUE-9002",
+      "HIG-PATTERNS-REVIEW-QUEUE-9003",
+      "HIG-PATTERNS-REVIEW-QUEUE-9004",
+    ],
+  );
+  assert.deepEqual(
+    nextReviewBatch(rules).map((rule) => rule.id),
+    [
+      "HIG-PATTERNS-REVIEW-QUEUE-9001",
+      "HIG-PATTERNS-REVIEW-QUEUE-9003",
+    ],
+  );
 });
 
 test("keeps general source reviews aligned with canonical traces", async () => {
@@ -124,5 +302,21 @@ test("keeps general source reviews aligned with canonical traces", async () => {
     assert.equal(rule.source.source_sentence_hash, review.source.source_sentence_hash);
     assert.deepEqual(rule.source.section_path, review.source.section_path);
     assert.equal(rule.review_required, false);
+  }
+  const reviewedBatchIds = new Set<string>();
+  const explicitReviews = sourceReview.rules as Record<string, { confidence?: string; review_required?: boolean }>;
+  for (const batch of sourceReview.batches) {
+    const scopedBatch = batch as typeof batch & { scope?: Rule["scope"] };
+    const pageByUrl = new Map(batch.pages.map((page) => [page.url, page]));
+    for (const id of batch.rule_ids) {
+      assert.equal(reviewedBatchIds.has(id), false);
+      reviewedBatchIds.add(id);
+      const rule = ruleById.get(id);
+      assert.ok(rule);
+      assert.equal(rule.source.source_hash, pageByUrl.get(rule.source.url)?.source_hash);
+      assert.equal(rule.review_required, explicitReviews[id]?.review_required ?? batch.review_required);
+      assert.equal(rule.confidence, explicitReviews[id]?.confidence ?? batch.confidence);
+      if (scopedBatch.scope) assert.deepEqual(rule.scope, scopedBatch.scope);
+    }
   }
 });

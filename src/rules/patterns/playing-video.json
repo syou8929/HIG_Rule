@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0001",
-    "title": "Use the system video player to give people a familiar and convenient experience",
+    "title": "Use the system video player by default",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply the system video player to give people a familiar and convenient experience in the documented context.",
-      "ja": "該当する状況ではthe system video player to give people a familiar and convenient experienceを採用する。"
+      "en": "Use the system video player to provide familiar playback behavior and controls.",
+      "ja": "使い慣れたplayback behaviorとcontrolを提供するためsystem video playerを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36,9 +36,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Create a custom player only when the system player cannot meet an essential experience need."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "A custom player should closely reference the system player's interface and behavior."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
@@ -46,7 +48,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the system video player to give people a familiar and convenient experience in the documented context.” in the documented Playing video context?"
+        "Does the design satisfy “Use the system video player to provide familiar playback behavior and controls.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -63,10 +65,10 @@
         "Playing video",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "389d26988555e1bdb200f97ebc97270db6c468199f1cfd8b2a1cf19198445536",
-      "evidence_paraphrase": "Choose or apply the system video player to give people a familiar and convenient experience in the documented context."
+      "evidence_paraphrase": "Use the system video player to provide familiar playback behavior and controls."
     },
     "tags": [
       "patterns",
@@ -75,21 +77,21 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply the system video player to give people a familiar and convenient experience in the documented context.",
+    "apple_native_rule": "Use the system video player to provide familiar playback behavior and controls.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0002",
-    "title": "Always display video content at its original aspect ratio",
+    "title": "Preserve the original video aspect ratio",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Display video content at its original aspect ratio in every applicable case.",
-      "ja": "該当するすべての場合にdisplay video content at its original aspect ratioを実行する。"
+      "en": "Always display video content at its original aspect ratio.",
+      "ja": "video contentは常に元のaspect ratioで表示する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -115,7 +117,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let the player apply letterboxing or pillarboxing when the display and content ratios differ.",
+      "Avoid embedding black padding in the asset because it can compound when modes change or Picture in Picture begins."
     ],
     "exceptions": [],
     "rationale": {
@@ -125,7 +128,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Display video content at its original aspect ratio in every applicable case.” in the documented Playing video context?"
+        "Does the design satisfy “Always display video content at its original aspect ratio.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -142,10 +145,10 @@
         "Playing video",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "0ee5529b707cbf9b9e92e21b46cb16ffe2b08923964da13b290a1c8a5420b48f",
-      "evidence_paraphrase": "Display video content at its original aspect ratio in every applicable case."
+      "evidence_paraphrase": "Always display video content at its original aspect ratio."
     },
     "tags": [
       "patterns",
@@ -154,22 +157,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Display video content at its original aspect ratio in every applicable case.",
+    "apple_native_rule": "Always display video content at its original aspect ratio.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0003",
-    "title": "Provide additional information when it adds value",
+    "title": "Add playback information only when valuable",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make additional information when it adds value available when applicable.",
-      "ja": "必要な場合にadditional information when it adds valueを利用可能にする。"
+      "en": "Provide additional playback information only when it adds value.",
+      "ja": "価値を加える場合だけ追加のplayback informationを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -177,24 +180,21 @@
       "platforms": [
         "ios",
         "ipados",
-        "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
-        "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Relevant platforms include iOS, iPadOS, tvOS, and visionOS.",
+      "Keep the information secondary to the video and its controls."
     ],
     "exceptions": [],
     "rationale": {
@@ -204,7 +204,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make additional information when it adds value available when applicable.” in the documented Playing video context?"
+        "Does the design satisfy “Provide additional playback information only when it adds value.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -221,10 +221,10 @@
         "Playing video",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "bb352de971b33973fc68b3b15774533f37ffe2f48c030a2a873f5b921c62c591",
-      "evidence_paraphrase": "Make additional information when it adds value available when applicable."
+      "evidence_paraphrase": "Provide additional playback information only when it adds value."
     },
     "tags": [
       "patterns",
@@ -233,22 +233,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make additional information when it adds value available when applicable.",
+    "apple_native_rule": "Provide additional playback information only when it adds value.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0004",
-    "title": "Support the interactions people expect, regardless of the input device they’re using to control playback",
+    "title": "Support expected playback interactions",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Ensure the experience accommodates the interactions people expect, regardless of the input device they’re using to control playback.",
-      "ja": "the interactions people expect, regardless of the input device they’re using to control playbackを利用できる設計にする。"
+      "en": "Support the playback interactions people expect across available input devices.",
+      "ja": "利用可能なinput device全体で期待されるplayback interactionに対応する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -273,7 +273,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve familiar play, pause, scrubbing, and dismissal behavior.",
+      "Map supported keyboard and Siri Remote input to the expected playback action."
     ],
     "exceptions": [],
     "rationale": {
@@ -283,7 +284,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates the interactions people expect, regardless of the input device they’re using to control playback.” in the documented Playing video context?"
+        "Does the design satisfy “Support the playback interactions people expect across available input devices.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -300,10 +301,10 @@
         "Playing video",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "c9affdd0ef8b7e7882a88937498611310ae6942b8d266c53d799e17678bd67a8",
-      "evidence_paraphrase": "Ensure the experience accommodates the interactions people expect, regardless of the input device they’re using to control playback."
+      "evidence_paraphrase": "Support the playback interactions people expect across available input devices."
     },
     "tags": [
       "patterns",
@@ -312,22 +313,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates the interactions people expect, regardless of the input device they’re using to control playback.",
+    "apple_native_rule": "Support the playback interactions people expect across available input devices.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0005",
-    "title": "Avoid allowing audio from different sources to mix as viewers switch between modes",
+    "title": "Avoid mixing audio while switching playback modes",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude allowing audio from different sources to mix as viewers switch between modes from the applicable experience.",
-      "ja": "該当する体験ではallowing audio from different sources to mix as viewers switch between modesを避ける。"
+      "en": "Avoid mixing audio from different sources while viewers switch modes.",
+      "ja": "視聴modeの切替中に異なるsourceのaudioを混在させない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -352,7 +353,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Mute or pause secondary content before starting the newly selected source."
     ],
     "exceptions": [],
     "rationale": {
@@ -362,7 +363,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude allowing audio from different sources to mix as viewers switch between modes from the applicable experience.” in the documented Playing video context?"
+        "Does the design satisfy “Avoid mixing audio from different sources while viewers switch modes.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -379,10 +380,10 @@
         "Playing video",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "4623a022ac051687b76f984f7f0b2f7e43da1f2088fbe1aad416ed2ed3367098",
-      "evidence_paraphrase": "Exclude allowing audio from different sources to mix as viewers switch between modes from the applicable experience."
+      "evidence_paraphrase": "Avoid mixing audio from different sources while viewers switch modes."
     },
     "tags": [
       "patterns",
@@ -391,47 +392,37 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude allowing audio from different sources to mix as viewers switch between modes from the applicable experience.",
+    "apple_native_rule": "Avoid mixing audio from different sources while viewers switch modes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0006",
-    "title": "Ensure a smooth transition to your app",
+    "title": "Make TV app transitions smooth",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "integrating-with-the-tv-app",
     "statement": {
-      "en": "Verify that a smooth transition to your app.",
-      "ja": "a smooth transition to your appを満たしていることを確認する。"
+      "en": "Ensure a smooth transition from the TV app into playback.",
+      "ja": "TV appからplaybackへのtransitionを滑らかにする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Present black immediately before the video becomes available to avoid flashing unrelated interface content."
     ],
     "exceptions": [],
     "rationale": {
@@ -441,7 +432,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that a smooth transition to your app.” in the documented Playing video context?"
+        "Does the design satisfy “Ensure a smooth transition from the TV app into playback.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -458,10 +449,10 @@
         "Playing video",
         "Integrating with the TV app"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "4abf20e8cd2c397732fc525f9456c2ef1e81beb8bc5c279bd489bce1386c29be",
-      "evidence_paraphrase": "Verify that a smooth transition to your app."
+      "evidence_paraphrase": "Ensure a smooth transition from the TV app into playback."
     },
     "tags": [
       "patterns",
@@ -470,49 +461,41 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that a smooth transition to your app.",
+    "apple_native_rule": "Ensure a smooth transition from the TV app into playback.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0007",
-    "title": "Show the expected content immediately",
+    "title": "Show TV app content immediately",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "integrating-with-the-tv-app",
     "statement": {
-      "en": "Present the expected content immediately in the documented context.",
-      "ja": "該当する状況でthe expected content immediatelyを表示する。"
+      "en": "Show the content people selected in the TV app immediately.",
+      "ja": "TV appで選択されたcontentを即時表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid opening on a splash screen, detail view, intro animation, or unrelated content."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "If a rare required interstitial appears, make its skip behavior clear and return promptly to the selected content."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
@@ -520,7 +503,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present the expected content immediately in the documented context.” in the documented Playing video context?"
+        "Does the design satisfy “Show the content people selected in the TV app immediately.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -537,10 +520,10 @@
         "Playing video",
         "Integrating with the TV app"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "c5ccda5fc26d3a4dc4f168d3887fab173168a2e983f30f0be339846cf4e21ab3",
-      "evidence_paraphrase": "Present the expected content immediately in the documented context."
+      "evidence_paraphrase": "Show the content people selected in the TV app immediately."
     },
     "tags": [
       "patterns",
@@ -549,47 +532,37 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Present the expected content immediately in the documented context.",
+    "apple_native_rule": "Show the content people selected in the TV app immediately.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0008",
-    "title": "Avoid asking people if they want to resume playback",
+    "title": "Avoid a resume-playback prompt",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "integrating-with-the-tv-app",
     "statement": {
-      "en": "Exclude asking people if they want to resume playback from the applicable experience.",
-      "ja": "該当する体験ではasking people if they want to resume playbackを避ける。"
+      "en": "Avoid asking whether to resume playback when a valid prior position exists.",
+      "ja": "有効な以前の位置がある場合、resumeするかを尋ねない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Resume automatically at the appropriate saved position."
     ],
     "exceptions": [],
     "rationale": {
@@ -599,7 +572,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude asking people if they want to resume playback from the applicable experience.” in the documented Playing video context?"
+        "Does the design satisfy “Avoid asking whether to resume playback when a valid prior position exists.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -616,10 +589,10 @@
         "Playing video",
         "Integrating with the TV app"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "71863e2b6017858a61de43666f17fe0b5b574d40d4010faf3ed251ad86c54ca0",
-      "evidence_paraphrase": "Exclude asking people if they want to resume playback from the applicable experience."
+      "evidence_paraphrase": "Avoid asking whether to resume playback when a valid prior position exists."
     },
     "tags": [
       "patterns",
@@ -628,47 +601,38 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude asking people if they want to resume playback from the applicable experience.",
+    "apple_native_rule": "Avoid asking whether to resume playback when a valid prior position exists.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0009",
-    "title": "Make sure content plays for the correct viewer",
+    "title": "Play content for the correct viewer",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "integrating-with-the-tv-app",
     "statement": {
-      "en": "Verify that content plays for the correct viewer.",
-      "ja": "content plays for the correct viewerを満たしていることを確認する。"
+      "en": "Make sure TV app content plays for the correct viewer profile.",
+      "ja": "TV app contentを正しいviewer profileで再生する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the profile associated with the selected content when possible.",
+      "Switch to that profile or ask for a choice when no reliable association exists."
     ],
     "exceptions": [],
     "rationale": {
@@ -678,7 +642,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that content plays for the correct viewer.” in the documented Playing video context?"
+        "Does the design satisfy “Make sure TV app content plays for the correct viewer profile.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -695,10 +659,10 @@
         "Playing video",
         "Integrating with the TV app"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "7f430af874cf7b1c6bbda274209f212f05cd90ad37d702959074f198b4c63837",
-      "evidence_paraphrase": "Verify that content plays for the correct viewer."
+      "evidence_paraphrase": "Make sure TV app content plays for the correct viewer profile."
     },
     "tags": [
       "patterns",
@@ -707,47 +671,37 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that content plays for the correct viewer.",
+    "apple_native_rule": "Make sure TV app content plays for the correct viewer profile.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0010",
-    "title": "Use the previous end time when resuming playback of a long video clip",
+    "title": "Resume long video from its prior end time",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "integrating-with-the-tv-app",
     "statement": {
-      "en": "Choose or apply the previous end time when resuming playback of a long video clip in the documented context.",
-      "ja": "該当する状況ではthe previous end time when resuming playback of a long video clipを採用する。"
+      "en": "Use the previous end time when resuming a long video clip.",
+      "ja": "長いvideo clipをresumeするとき以前のend timeを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Apply this to content where restarting would lose meaningful viewing progress."
     ],
     "exceptions": [],
     "rationale": {
@@ -757,7 +711,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the previous end time when resuming playback of a long video clip in the documented context.” in the documented Playing video context?"
+        "Does the design satisfy “Use the previous end time when resuming a long video clip.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -774,10 +728,10 @@
         "Playing video",
         "Integrating with the TV app"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "ec9134e322b15470e98b93194e45c9e4b7601ef1529a1d91ecd0a2a279cb9966",
-      "evidence_paraphrase": "Choose or apply the previous end time when resuming playback of a long video clip in the documented context."
+      "evidence_paraphrase": "Use the previous end time when resuming a long video clip."
     },
     "tags": [
       "patterns",
@@ -786,41 +740,31 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply the previous end time when resuming playback of a long video clip in the documented context.",
+    "apple_native_rule": "Use the previous end time when resuming a long video clip.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0011",
-    "title": "Avoid displaying loading screens when possible",
+    "title": "Avoid unnecessary playback loading screens",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "loading-content",
     "statement": {
-      "en": "Exclude displaying loading screens when possible from the applicable experience.",
-      "ja": "該当する体験ではdisplaying loading screens when possibleを避ける。"
+      "en": "Avoid showing a loading screen when playback can begin quickly.",
+      "ja": "playbackをすぐ開始できる場合はloading screenを表示しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
@@ -828,7 +772,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "If loading exceeds about two seconds, show a black screen with a centered spinner and no other content."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
@@ -836,7 +782,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude displaying loading screens when possible from the applicable experience.” in the documented Playing video context?"
+        "Does the design satisfy “Avoid showing a loading screen when playback can begin quickly.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -854,10 +800,10 @@
         "Integrating with the TV app",
         "Loading content"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "d8a6a8fb6daf9443169738ed550e48033618f82950203df9c7e963ccb42353bb",
-      "evidence_paraphrase": "Exclude displaying loading screens when possible from the applicable experience."
+      "evidence_paraphrase": "Avoid showing a loading screen when playback can begin quickly."
     },
     "tags": [
       "patterns",
@@ -867,47 +813,37 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude displaying loading screens when possible from the applicable experience.",
+    "apple_native_rule": "Avoid showing a loading screen when playback can begin quickly.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0012",
-    "title": "Minimize loading screen content",
+    "title": "Minimize playback loading-screen content",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "loading-content",
     "statement": {
-      "en": "Apply the documented Playing video guidance to minimize loading screen content.",
-      "ja": "「Playing video」において「Minimize loading screen content」の指針を適用する。"
+      "en": "Minimize content on a playback loading screen.",
+      "ja": "playback loading screen上のcontentを最小限にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a black background and keep branding minimal so the transition remains focused on playback."
     ],
     "exceptions": [],
     "rationale": {
@@ -917,7 +853,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Playing video guidance to minimize loading screen content.” in the documented Playing video context?"
+        "Does the design satisfy “Minimize content on a playback loading screen.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -935,10 +871,10 @@
         "Integrating with the TV app",
         "Loading content"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "a527faca465ac2423c655e0e734a93049c74530135e6883ad0e204b9d8b66a4b",
-      "evidence_paraphrase": "Apply the documented Playing video guidance to minimize loading screen content."
+      "evidence_paraphrase": "Minimize content on a playback loading screen."
     },
     "tags": [
       "patterns",
@@ -948,49 +884,41 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Playing video guidance to minimize loading screen content.",
+    "apple_native_rule": "Minimize content on a playback loading screen.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0013",
-    "title": "Show a contextually relevant screen",
+    "title": "Exit playback to relevant content",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "exiting-playback",
     "statement": {
-      "en": "Present a contextually relevant screen in the documented context.",
-      "ja": "該当する状況でa contextually relevant screenを表示する。"
+      "en": "After playback exits, show a contextually relevant screen.",
+      "ja": "playback終了後はcontextに関連するscreenを表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer a detail view that supports resuming or choosing related content."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Use the app's main menu when no more specific destination is meaningful."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
@@ -998,7 +926,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present a contextually relevant screen in the documented context.” in the documented Playing video context?"
+        "Does the design satisfy “After playback exits, show a contextually relevant screen.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1016,10 +944,10 @@
         "Integrating with the TV app",
         "Exiting playback"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "5463713a7f708cce84f7bc60897c8b19827952a3079afad20008e2db2cd23b59",
-      "evidence_paraphrase": "Present a contextually relevant screen in the documented context."
+      "evidence_paraphrase": "After playback exits, show a contextually relevant screen."
     },
     "tags": [
       "patterns",
@@ -1029,47 +957,37 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Present a contextually relevant screen in the documented context.",
+    "apple_native_rule": "After playback exits, show a contextually relevant screen.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0014",
-    "title": "Be prepared for an immediate exit",
+    "title": "Prepare the playback exit destination immediately",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "exiting-playback",
     "statement": {
-      "en": "Apply the documented Playing video guidance to be prepared for an immediate exit.",
-      "ja": "「Playing video」において「Be prepared for an immediate exit」の指針を適用する。"
+      "en": "Prepare the post-playback view as soon as an exit notification arrives.",
+      "ja": "exit notificationを受けたらpost-playback viewをすぐ準備する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
-      "portability": "apple-platform",
+      "portability": "platform-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The destination needs to be ready even when playback exits immediately."
     ],
     "exceptions": [],
     "rationale": {
@@ -1079,7 +997,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Playing video guidance to be prepared for an immediate exit.” in the documented Playing video context?"
+        "Does the design satisfy “Prepare the post-playback view as soon as an exit notification arrives.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1097,10 +1015,10 @@
         "Integrating with the TV app",
         "Exiting playback"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "ed332288a67714c2940cd447924a012ee138693d0557e2b0929ecad667ef42c2",
-      "evidence_paraphrase": "Apply the documented Playing video guidance to be prepared for an immediate exit."
+      "evidence_paraphrase": "Prepare the post-playback view as soon as an exit notification arrives."
     },
     "tags": [
       "patterns",
@@ -1110,22 +1028,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Playing video guidance to be prepared for an immediate exit.",
+    "apple_native_rule": "Prepare the post-playback view as soon as an exit notification arrives.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0015",
-    "title": "Defer to content when displaying logos or noninteractive overlays above video",
+    "title": "Keep noninteractive tvOS overlays subordinate",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "tvos",
     "statement": {
-      "en": "Apply the documented Playing video guidance to defer to content when displaying logos or noninteractive overlays above video.",
-      "ja": "「Playing video」において「Defer to content when displaying logos or noninteractive overlays above video」の指針を適用する。"
+      "en": "Defer to video content when displaying tvOS logos or noninteractive overlays.",
+      "ja": "tvOSのlogoやnoninteractive overlayはvideo contentを優先して表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1140,7 +1058,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep a logo or timer small, unobtrusive, brief, and translucent when practical.",
+      "Use SDR treatment and consider display-retention risk for persistent overlays."
     ],
     "exceptions": [],
     "rationale": {
@@ -1150,7 +1069,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Playing video guidance to defer to content when displaying logos or noninteractive overlays above video.” in the documented Playing video context?"
+        "Does the design satisfy “Defer to video content when displaying tvOS logos or noninteractive overlays.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1168,10 +1087,10 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "52d02aa57a4e2f3f736a0e62befff6219a5d370ab1a2f191fcbfaca8e8ce2036",
-      "evidence_paraphrase": "Apply the documented Playing video guidance to defer to content when displaying logos or noninteractive overlays above video."
+      "evidence_paraphrase": "Defer to video content when displaying tvOS logos or noninteractive overlays."
     },
     "tags": [
       "patterns",
@@ -1181,22 +1100,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Playing video guidance to defer to content when displaying logos or noninteractive overlays above video.",
+    "apple_native_rule": "Defer to video content when displaying tvOS logos or noninteractive overlays.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0016",
-    "title": "Show interactive overlays gracefully",
+    "title": "Present interactive tvOS overlays gracefully",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "tvos",
     "statement": {
-      "en": "Present interactive overlays gracefully in the documented context.",
-      "ja": "該当する状況でinteractive overlays gracefullyを表示する。"
+      "en": "Present interactive tvOS overlays without surprising or trapping viewers.",
+      "ja": "利用者を驚かせたり閉じ込めたりせずinteractive tvOS overlayを表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1211,7 +1130,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Delay presentation or pause playback for at least about half a second before interaction.",
+      "Provide clear ways to dismiss the overlay and resume playback."
     ],
     "exceptions": [],
     "rationale": {
@@ -1221,7 +1141,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present interactive overlays gracefully in the documented context.” in the documented Playing video context?"
+        "Does the design satisfy “Present interactive tvOS overlays without surprising or trapping viewers.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1239,10 +1159,10 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "1927eaa395a0c0eed4e7421968edba84ae4988fb9fca3319487b626879be81b2",
-      "evidence_paraphrase": "Present interactive overlays gracefully in the documented context."
+      "evidence_paraphrase": "Present interactive tvOS overlays without surprising or trapping viewers."
     },
     "tags": [
       "patterns",
@@ -1252,22 +1172,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Present interactive overlays gracefully in the documented context.",
+    "apple_native_rule": "Present interactive tvOS overlays without surprising or trapping viewers.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0017",
-    "title": "Help people stay comfortable when playing video in your app",
+    "title": "Promote comfort during visionOS video playback",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "visionos",
     "statement": {
-      "en": "Apply the documented Playing video guidance to help people stay comfortable when playing video in your app.",
-      "ja": "「Playing video」において「Help people stay comfortable when playing video in your app」の指針を適用する。"
+      "en": "Help people remain comfortable while playing video in visionOS.",
+      "ja": "visionOSでvideoを再生するとき利用者のcomfortを保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1282,7 +1202,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Give people control over start timing, window size, surrounding visibility, and immersive presentation."
     ],
     "exceptions": [],
     "rationale": {
@@ -1292,7 +1212,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Playing video guidance to help people stay comfortable when playing video in your app.” in the documented Playing video context?"
+        "Does the design satisfy “Help people remain comfortable while playing video in visionOS.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1310,10 +1230,10 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "27babc06ff5c97b8cbf1b231263936e7bb6869511a0cf9d33eb99811c7c54abf",
-      "evidence_paraphrase": "Apply the documented Playing video guidance to help people stay comfortable when playing video in your app."
+      "evidence_paraphrase": "Help people remain comfortable while playing video in visionOS."
     },
     "tags": [
       "patterns",
@@ -1323,22 +1243,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Playing video guidance to help people stay comfortable when playing video in your app.",
+    "apple_native_rule": "Help people remain comfortable while playing video in visionOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0018",
-    "title": "Avoid automatically starting a fully immersive video playback experience",
+    "title": "Avoid immersive visionOS autoplay",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "visionos",
     "statement": {
-      "en": "Exclude automatically starting a fully immersive video playback experience from the applicable experience.",
-      "ja": "該当する体験ではautomatically starting a fully immersive video playback experienceを避ける。"
+      "en": "Avoid automatically starting fully immersive visionOS video playback.",
+      "ja": "fully immersiveなvisionOS video playbackを自動開始しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1353,9 +1273,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let people choose when to enter the immersive playback experience."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Do not rely on a warning alone to replace deliberate start control."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
@@ -1363,7 +1285,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude automatically starting a fully immersive video playback experience from the applicable experience.” in the documented Playing video context?"
+        "Does the design satisfy “Avoid automatically starting fully immersive visionOS video playback.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1381,10 +1303,10 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "3bb572ef5e57be017f82c9955d7d38ddabe41c7992dde2f487c700623cc60e0a",
-      "evidence_paraphrase": "Exclude automatically starting a fully immersive video playback experience from the applicable experience."
+      "evidence_paraphrase": "Avoid automatically starting fully immersive visionOS video playback."
     },
     "tags": [
       "patterns",
@@ -1394,22 +1316,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude automatically starting a fully immersive video playback experience from the applicable experience.",
+    "apple_native_rule": "Avoid automatically starting fully immersive visionOS video playback.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0019",
-    "title": "Create a thumbnail track if you want to support scrubbing",
+    "title": "Provide visionOS scrubbing thumbnails",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "visionos",
     "statement": {
-      "en": "Apply the documented Playing video guidance to create a thumbnail track if you want to support scrubbing.",
-      "ja": "「Playing video」において「Create a thumbnail track if you want to support scrubbing」の指針を適用する。"
+      "en": "Create a thumbnail track when supporting visionOS video scrubbing.",
+      "ja": "visionOS videoのscrubbingに対応するときthumbnail trackを作成する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1424,7 +1346,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use thumbnails around 160 pixels wide to balance clarity and resource cost."
     ],
     "exceptions": [],
     "rationale": {
@@ -1434,7 +1356,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Playing video guidance to create a thumbnail track if you want to support scrubbing.” in the documented Playing video context?"
+        "Does the design satisfy “Create a thumbnail track when supporting visionOS video scrubbing.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1452,10 +1374,10 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "20d19572817cd0444e0461a4ab1335312af76d1d0efb2b285f9de995307aba43",
-      "evidence_paraphrase": "Apply the documented Playing video guidance to create a thumbnail track if you want to support scrubbing."
+      "evidence_paraphrase": "Create a thumbnail track when supporting visionOS video scrubbing."
     },
     "tags": [
       "patterns",
@@ -1465,22 +1387,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Playing video guidance to create a thumbnail track if you want to support scrubbing.",
+    "apple_native_rule": "Create a thumbnail track when supporting visionOS video scrubbing.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0020",
-    "title": "Avoid expanding an inline video player to fill a window",
+    "title": "Avoid filling a visionOS window with inline video",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "visionos",
     "statement": {
-      "en": "Exclude expanding an inline video player to fill a window from the applicable experience.",
-      "ja": "該当する体験ではexpanding an inline video player to fill a windowを避ける。"
+      "en": "Avoid expanding an inline visionOS video player to fill its window.",
+      "ja": "inline visionOS video playerをwindow全体へ拡大しない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1495,7 +1417,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep surrounding window content visible and preserve familiar 2D inline-player expectations."
     ],
     "exceptions": [],
     "rationale": {
@@ -1505,7 +1427,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude expanding an inline video player to fill a window from the applicable experience.” in the documented Playing video context?"
+        "Does the design satisfy “Avoid expanding an inline visionOS video player to fill its window.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1523,10 +1445,10 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "6d1112c46b16d5730a6de06400e03f281c438dfccf13aaa6e07e276a70b62725",
-      "evidence_paraphrase": "Exclude expanding an inline video player to fill a window from the applicable experience."
+      "evidence_paraphrase": "Avoid expanding an inline visionOS video player to fill its window."
     },
     "tags": [
       "patterns",
@@ -1536,22 +1458,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude expanding an inline video player to fill a window from the applicable experience.",
+    "apple_native_rule": "Avoid expanding an inline visionOS video player to fill its window.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0021",
-    "title": "Use a RealityKit video player if you need to play video in a view like a splash screen or",
+    "title": "Use RealityKit for special-purpose visionOS video",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "visionos",
     "statement": {
-      "en": "Choose or apply a RealityKit video player if you need to play video in a view like a splash screen or in the documented context.",
-      "ja": "該当する状況ではa RealityKit video player if you need to play video in a view like a splash screen orを採用する。"
+      "en": "Use a RealityKit video player for splash, transitional, or special-effect video.",
+      "ja": "splash、transition、special effect用videoにはRealityKit video playerを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1566,7 +1488,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use this approach when transport controls and system-player integration are unnecessary.",
+      "Preserve the source aspect ratio for 2D or 3D content and provide captions where needed."
     ],
     "exceptions": [],
     "rationale": {
@@ -1576,7 +1499,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a RealityKit video player if you need to play video in a view like a splash screen or in the documented context.” in the documented Playing video context?"
+        "Does the design satisfy “Use a RealityKit video player for splash, transitional, or special-effect video.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1594,10 +1517,10 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "d66ea2485d8a37229003c65c1aae02c64dbc3245f16bba9de5de46b3f4b48773",
-      "evidence_paraphrase": "Choose or apply a RealityKit video player if you need to play video in a view like a splash screen or in the documented context."
+      "evidence_paraphrase": "Use a RealityKit video player for splash, transitional, or special-effect video."
     },
     "tags": [
       "patterns",
@@ -1607,22 +1530,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply a RealityKit video player if you need to play video in a view like a splash screen or in the documented context.",
+    "apple_native_rule": "Use a RealityKit video player for splash, transitional, or special-effect video.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0022",
-    "title": "Keep video clips short",
+    "title": "Keep watchOS video clips short",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "watchos",
     "statement": {
-      "en": "Maintain video clips short.",
-      "ja": "video clips shortを維持する。"
+      "en": "Keep watchOS video clips short.",
+      "ja": "watchOS video clipを短く保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1637,7 +1560,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer clips of about 30 seconds or less to limit wrist fatigue and storage cost."
     ],
     "exceptions": [],
     "rationale": {
@@ -1647,7 +1570,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain video clips short.” in the documented Playing video context?"
+        "Does the design satisfy “Keep watchOS video clips short.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1665,10 +1588,10 @@
         "Platform considerations",
         "watchOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "e7a7ee9fffbfd191a276b253e0cc5ecbc7daec2e838cd175b4466efa822d52a2",
-      "evidence_paraphrase": "Maintain video clips short."
+      "evidence_paraphrase": "Keep watchOS video clips short."
     },
     "tags": [
       "patterns",
@@ -1678,22 +1601,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Maintain video clips short.",
+    "apple_native_rule": "Keep watchOS video clips short.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0023",
-    "title": "Use the recommended sizes and encoding values for media assets",
+    "title": "Use recommended watchOS video encoding values",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "watchos",
     "statement": {
-      "en": "Choose or apply the recommended sizes and encoding values for media assets in the documented context.",
-      "ja": "該当する状況ではthe recommended sizes and encoding values for media assetsを採用する。"
+      "en": "Use the recommended sizes and encoding values for watchOS media assets.",
+      "ja": "watchOS media assetには推奨sizeとencoding valueを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1708,7 +1631,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use H.264 High Profile video at about 160 kbps and up to 30 fps.",
+      "Use 208×260 for full-screen portrait or 320×180 for 16:9 landscape video.",
+      "Use HE-AAC audio at about 64 kbps."
     ],
     "exceptions": [],
     "rationale": {
@@ -1718,7 +1643,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the recommended sizes and encoding values for media assets in the documented context.” in the documented Playing video context?"
+        "Does the design satisfy “Use the recommended sizes and encoding values for watchOS media assets.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1736,10 +1661,10 @@
         "Platform considerations",
         "watchOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "2bf41dc2401035f283222235c4f9828855a18e1e31456c841aa803f5c04ead6d",
-      "evidence_paraphrase": "Choose or apply the recommended sizes and encoding values for media assets in the documented context."
+      "evidence_paraphrase": "Use the recommended sizes and encoding values for watchOS media assets."
     },
     "tags": [
       "patterns",
@@ -1749,22 +1674,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply the recommended sizes and encoding values for media assets in the documented context.",
+    "apple_native_rule": "Use the recommended sizes and encoding values for watchOS media assets.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0024",
-    "title": "Avoid creating a poster image that looks like a system control",
+    "title": "Avoid control-like watchOS poster images",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "watchos",
     "statement": {
-      "en": "Exclude creating a poster image that looks like a system control from the applicable experience.",
-      "ja": "該当する体験ではcreating a poster image that looks like a system controlを避ける。"
+      "en": "Avoid making a watchOS poster image look like a system control.",
+      "ja": "watchOS poster imageをsystem controlのように見せない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1781,7 +1706,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prevent a static poster from implying an unavailable or different interaction."
     ],
     "exceptions": [],
     "rationale": {
@@ -1791,7 +1716,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude creating a poster image that looks like a system control from the applicable experience.” in the documented Playing video context?"
+        "Does the design satisfy “Avoid making a watchOS poster image look like a system control.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1809,10 +1734,10 @@
         "Platform considerations",
         "watchOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "f57b09928cf54575e9a87e1d8f7032ecf5acbc1b6991cb6f5c15f7354edc6a0e",
-      "evidence_paraphrase": "Exclude creating a poster image that looks like a system control from the applicable experience."
+      "evidence_paraphrase": "Avoid making a watchOS poster image look like a system control."
     },
     "tags": [
       "patterns",
@@ -1823,22 +1748,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude creating a poster image that looks like a system control from the applicable experience.",
+    "apple_native_rule": "Avoid making a watchOS poster image look like a system control.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-PLAYING-VIDEO-0025",
-    "title": "Consider creating a poster image that represents a video clip’s contents",
+    "title": "Consider a representative watchOS poster image",
     "category": "patterns",
     "topic": "playing-video",
     "subtopic": "watchos",
     "statement": {
-      "en": "Evaluate whether creating a poster image that represents a video clip’s contents is appropriate for the current context.",
-      "ja": "creating a poster image that represents a video clip’s contentsが現在の状況に適切か検討する。"
+      "en": "Consider using a watchOS poster image that represents the video clip.",
+      "ja": "video clipを表すwatchOS poster imageの使用を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -1853,7 +1778,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Choose an image that helps people understand the clip before playback."
     ],
     "exceptions": [],
     "rationale": {
@@ -1863,7 +1788,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether creating a poster image that represents a video clip’s contents is appropriate for the current context.” in the documented Playing video context?"
+        "Does the design satisfy “Consider using a watchOS poster image that represents the video clip.” in the documented Playing video context?"
       ]
     },
     "testability": "manual",
@@ -1881,10 +1806,10 @@
         "Platform considerations",
         "watchOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:12.185Z",
-      "source_hash": "b2f6e8f50a9998fca469fa183eac7e8310bc60204b64d398918a7c44f8cae701",
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
       "source_sentence_hash": "c135dd903f1c8cea010fb850b00061f3e6573928b40558d6f83ce867037966c6",
-      "evidence_paraphrase": "Evaluate whether creating a poster image that represents a video clip’s contents is appropriate for the current context."
+      "evidence_paraphrase": "Consider using a watchOS poster image that represents the video clip."
     },
     "tags": [
       "patterns",
@@ -1894,7 +1819,1096 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether creating a poster image that represents a video clip’s contents is appropriate for the current context.",
+    "apple_native_rule": "Consider using a watchOS poster image that represents the video clip.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0026",
+    "title": "Consider useful tvOS transport controls or information tabs",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Consider a tvOS transport control or custom information tab when playback-specific access is useful.",
+      "ja": "playback固有のaccessが有用な場合、tvOS transport controlまたはcustom information tabを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use transport controls for playback actions and custom tabs for succinct content-specific information.",
+      "Include only options that are useful in the current viewing context."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider a tvOS transport control or custom information tab when playback-specific access is useful.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "5d62201d1401a6cb7adfb25814bd3f59edf8c922fbe98f93e85ffd52ef09b2f9",
+      "evidence_paraphrase": "Consider a tvOS transport control or custom information tab when playback-specific access is useful."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Consider a tvOS transport control or custom information tab when playback-specific access is useful.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0027",
+    "title": "Default wide video to aspect-fill",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "playing-video",
+    "statement": {
+      "en": "Use aspect-fill by default for wide video from 2:1 through 2.40:1.",
+      "ja": "2:1から2.40:1までのwide videoではaspect-fillをdefaultにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Aspect-fill scales to the display and may crop content at the edges.",
+      "At exactly 2:1, the source also includes fit-to-screen; choose deliberately for that boundary case."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use aspect-fill by default for wide video from 2:1 through 2.40:1.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "3f48af0645cb9135e891754ff6a920e8db88912f31ec21cc658f77e86229b359",
+      "evidence_paraphrase": "Use aspect-fill by default for wide video from 2:1 through 2.40:1."
+    },
+    "tags": [
+      "patterns",
+      "playing-video"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use aspect-fill by default for wide video from 2:1 through 2.40:1.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0028",
+    "title": "Default standard and ultrawide video to fit-to-screen",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "playing-video",
+    "statement": {
+      "en": "Use fit-to-screen by default for standard and ultrawide video ratios.",
+      "ja": "standardおよびultrawide video ratioではfit-to-screenをdefaultにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "This includes 4:3, 16:9, ratios through 2:1, and ultrawide ratios beyond 2.40:1.",
+      "Fit-to-screen keeps the entire video visible and can add letterboxing or pillarboxing.",
+      "At exactly 2:1, the source also includes aspect-fill; choose deliberately for that boundary case."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use fit-to-screen by default for standard and ultrawide video ratios.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "5f218ebe6bda077792a8521bf6c30d234f1730b07ed2a7a6a65df542c8a2e0f6",
+      "evidence_paraphrase": "Use fit-to-screen by default for standard and ultrawide video ratios."
+    },
+    "tags": [
+      "patterns",
+      "playing-video"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use fit-to-screen by default for standard and ultrawide video ratios.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0029",
+    "title": "Avoid obscuring video with additional information",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid letting additional information obscure video playback.",
+      "ja": "追加informationでvideo playbackを隠さない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep supplementary content placed and timed so the video remains understandable."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid letting additional information obscure video playback.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "e903bddd7dd7c6b90bc60c4dfe8d4d5fecea803e75e44d0f5071777d4568a8e9",
+      "evidence_paraphrase": "Avoid letting additional information obscure video playback."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid letting additional information obscure video playback.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0030",
+    "title": "Keep tvOS transport actions within one or two steps",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Make sure tvOS transport actions take no more than one or two steps.",
+      "ja": "tvOS transport actionを1〜2手以内で完了できるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply the limit to actions exposed through playback transport controls.",
+      "Keep any associated custom information concise and relevant."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make sure tvOS transport actions take no more than one or two steps.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "4bef8219bba45a6bd854e290605e84a53a4131700a62b345d8eb4fda1d3f304e",
+      "evidence_paraphrase": "Make sure tvOS transport actions take no more than one or two steps."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Make sure tvOS transport actions take no more than one or two steps.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0031",
+    "title": "Map Space to play and pause",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "integrating-with-the-tv-app",
+    "statement": {
+      "en": "Use Space on a connected Bluetooth keyboard to play or pause playback.",
+      "ja": "接続Bluetooth keyboardのSpaceでplaybackをplayまたはpauseする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard"
+      ]
+    },
+    "conditions": [
+      "Support the mapping when a Bluetooth keyboard controls TV app playback."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Use Space on a connected Bluetooth keyboard to play or pause playback.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Integrating with the TV app"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "84ecac3c168451f35b5aa28f5d2a2daea567b165f58d7bb8df1cf0dd7dbf335d",
+      "evidence_paraphrase": "Use Space on a connected Bluetooth keyboard to play or pause playback."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "integrating-with-the-tv-app",
+      "keyboard"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Use Space on a connected Bluetooth keyboard to play or pause playback.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0032",
+    "title": "Begin playback once enough content loads",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "loading-content",
+    "statement": {
+      "en": "Begin playback as soon as enough content has loaded.",
+      "ja": "十分なcontentがloadされたらすぐplaybackを開始する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Do not wait for the remaining TV app content to finish loading before playback begins."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Begin playback as soon as enough content has loaded.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Integrating with the TV app",
+        "Loading content"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "5ab472c77daae9a4da4709139cfdbcb33fe832e34db969f93634549c77338ea9",
+      "evidence_paraphrase": "Begin playback as soon as enough content has loaded."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "integrating-with-the-tv-app",
+      "loading-content"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Begin playback as soon as enough content has loaded.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0033",
+    "title": "Avoid distracting tvOS playback overlays",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "Avoid large or distracting tvOS overlays that do not enhance viewing.",
+      "ja": "視聴を高めないlargeまたはdistractingなtvOS overlayを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep a logo or other noninteractive overlay subordinate to the video."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid large or distracting tvOS overlays that do not enhance viewing.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "5c376c9e58a6eb30a926732cf1b68a3eb269b7d2ba90500ab846b7ffc6d2fa69",
+      "evidence_paraphrase": "Avoid large or distracting tvOS overlays that do not enhance viewing."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "platform-considerations",
+      "tvos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid large or distracting tvOS overlays that do not enhance viewing.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0034",
+    "title": "Let people start visionOS video deliberately",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Let people choose when to start visionOS video playback.",
+      "ja": "visionOS video playbackの開始時点を利用者が選べるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve user control before playback changes attention or immersion."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Let people choose when to start visionOS video playback.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "febcbabc0f6cd67a70dc0ae594b92dcb0588733dcc120370477b81613979de49",
+      "evidence_paraphrase": "Let people choose when to start visionOS video playback."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Let people choose when to start visionOS video playback.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0035",
+    "title": "Use a small resizable visionOS playback window",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Use a small window for visionOS video playback and let people resize it.",
+      "ja": "visionOS video playbackにはsmall windowを使い、利用者がresizeできるようにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use window scale and resizing to support comfortable viewing."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a small window for visionOS video playback and let people resize it.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "90dc424b7b88d8e0c175c6590c1b06c88f06c79a910dec352b2d6b81294f2c9e",
+      "evidence_paraphrase": "Use a small window for visionOS video playback and let people resize it."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use a small window for visionOS video playback and let people resize it.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0036",
+    "title": "Keep surroundings visible during visionOS playback",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Keep people's surroundings visible during visionOS video playback.",
+      "ja": "visionOS video playback中も利用者のsurroundingsを見える状態に保つ。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply this as a comfort technique when full immersion is unnecessary."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep people's surroundings visible during visionOS video playback.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "fc73fe1df2945d4ac3bde563c9abf6333a309109b5559eaf96b7b8e1acaabd90",
+      "evidence_paraphrase": "Keep people's surroundings visible during visionOS video playback."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Keep people's surroundings visible during visionOS video playback.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0037",
+    "title": "Avoid obscuring immersive playback controls",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Avoid virtual content obscuring immersive video or its transport controls.",
+      "ja": "virtual contentでimmersive videoまたはtransport controlを隠さない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply this in a fully immersive playback experience."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid virtual content obscuring immersive video or its transport controls.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "afca18759aaf184db0a313ac3d9fe503eef8fa412c387a8239b4b482b14fd69f",
+      "evidence_paraphrase": "Avoid virtual content obscuring immersive video or its transport controls."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid virtual content obscuring immersive video or its transport controls.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0038",
+    "title": "Avoid scaling watchOS video clips",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "Avoid scaling watchOS video clips.",
+      "ja": "watchOS video clipをscaleしない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Encode media at an appropriate target size instead of relying on runtime scaling."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid scaling watchOS video clips.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "55ec3f8ff4d62f12b442f6e8459fdabb99ebaa1d0dbd3e8d3ddb9e8c9a13db8c",
+      "evidence_paraphrase": "Avoid scaling watchOS video clips."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid scaling watchOS video clips.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0039",
+    "title": "Avoid irrelevant watchOS poster images",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "Avoid watchOS poster images that do not represent their video clips.",
+      "ja": "video clipを表さないwatchOS poster imageを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use a representative image when a poster is useful, while keeping it distinct from controls."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid watchOS poster images that do not represent their video clips.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "39eadbb3facd200e5f84ec782192d694611015b0d40c1d072d30b7e476ff0e3e",
+      "evidence_paraphrase": "Avoid watchOS poster images that do not represent their video clips."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid watchOS poster images that do not represent their video clips.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-PLAYING-VIDEO-0040",
+    "title": "Keep loading TV app content in the background",
+    "category": "patterns",
+    "topic": "playing-video",
+    "subtopic": "loading-content",
+    "statement": {
+      "en": "Keep loading remaining TV app content in the background after playback begins.",
+      "ja": "playback開始後も残りのTV app contentをbackgroundでloadし続ける。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Start playback once enough content is ready and continue fetching the rest without interrupting it."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Playing video experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるPlaying videoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep loading remaining TV app content in the background after playback begins.” in the documented Playing video context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-video",
+      "page_title": "Playing video",
+      "section_path": [
+        "Playing video",
+        "Integrating with the TV app",
+        "Loading content"
+      ],
+      "retrieved_at": "2026-07-21T15:24:00Z",
+      "source_hash": "2010b632a5d5ed8ee91621b4ce5588120adad4e2b3e8786826a3d92fea512965",
+      "source_sentence_hash": "1b6adfeab62d30bdf693fc8e6fb09d5538810f0a2b388419649b8ce71eb04bff",
+      "evidence_paraphrase": "Keep loading remaining TV app content in the background after playback begins."
+    },
+    "tags": [
+      "patterns",
+      "playing-video",
+      "integrating-with-the-tv-app",
+      "loading-content"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Keep loading remaining TV app content in the background after playback begins.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

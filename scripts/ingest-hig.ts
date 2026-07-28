@@ -38,10 +38,10 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
           || document.title.replace(/ \| Apple.*$/, "").replace(/\s+/g, " ").trim();
         const sectionStack: string[] = [];
         const sections: string[][] = [];
-        const candidates: Array<{ fullText: string; sectionPath: string[] }> = [];
+        const candidates: Array<{ fullText: string; sectionPath: string[]; fragment?: string }> = [];
         const numericTableSections: string[][] = [];
         const nodes = Array.from(main.querySelectorAll(
-          "h2, h3, h4, p > strong:first-child, li > strong:first-child, li > p:first-child:not(:has(> strong:first-child)), table",
+          "h2, h3, h4, p > strong:first-child, li > strong:first-child, li > p:first-child:not(:has(> strong:first-child)), aside p, table",
         ));
         for (const node of nodes) {
           const value = (node.textContent || "").replace(/\s+/g, " ").trim();
@@ -59,7 +59,28 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
               numericTableSections.push(sectionPath);
             }
           } else if (value.length <= 260) {
-            candidates.push({ fullText: value, sectionPath: [title, ...sectionStack.filter(Boolean)] });
+            const sectionPath = [title, ...sectionStack.filter(Boolean)];
+            candidates.push({ fullText: value, sectionPath });
+            const paragraph = (node.closest("p, li, aside")?.textContent || value).replace(/\s+/g, " ").trim();
+            const sentences = paragraph.split(/(?<=[.!?])\s+/);
+            for (const sentence of sentences) {
+              const direct = sentence.replace(/^(?:also|in particular),\s*/i, "").trim();
+              if (/^(?:always|be sure to|do not|don['’]t|make sure|never|you need to)\b/i.test(direct)) {
+                candidates.push({ fullText: paragraph, sectionPath, fragment: direct });
+              }
+              if (!/^make sure\b/i.test(direct)) {
+                for (const match of direct.matchAll(/\bmake sure\b[^.!?]*(?=[.!?]|$)/gi)) {
+                  const explicit = (match[0] || "").trim();
+                  if (explicit) candidates.push({ fullText: paragraph, sectionPath, fragment: `${explicit[0]?.toUpperCase()}${explicit.slice(1)}` });
+                }
+              }
+              if (!/^if you must\b/i.test(direct)) {
+                for (const match of direct.matchAll(/\byou must(?: not)?\b[^.!?]*(?=[.!?]|$)/gi)) {
+                  const explicit = (match[0] || "").trim();
+                  if (explicit) candidates.push({ fullText: paragraph, sectionPath, fragment: `${explicit[0]?.toUpperCase()}${explicit.slice(1)}` });
+                }
+              }
+            }
           }
         }
         const related = Array.from(main.querySelectorAll<HTMLAnchorElement>("a[href]"))
@@ -98,15 +119,18 @@ async function ingest(record: Inventory["pages"][number]): Promise<void> {
     );
     const unique = new Map<string, SourcePage["guidance_candidates"][number]>();
     for (const candidate of data.candidates) {
-      const shortText = truncateWords(candidate.fullText.replace(/\s*[.:;]+$/, ""), 19);
-      if (wordCount(shortText) < 2) continue;
-      const key = `${candidate.sectionPath.join("/")}::${shortText.toLowerCase()}`;
-      unique.set(key, {
-        text: shortText,
-        section_path: candidate.sectionPath,
-        source_sentence_hash: sha256(candidate.fullText),
-        word_count: wordCount(shortText),
-      });
+      const fragments = [candidate.fragment ?? candidate.fullText];
+      for (const fragment of fragments) {
+        const shortText = truncateWords(fragment.replace(/\s*[.:;]+$/, ""), 19);
+        if (wordCount(shortText) < 2) continue;
+        const key = `${candidate.sectionPath.join("/")}::${shortText.toLowerCase()}`;
+        unique.set(key, {
+          text: shortText,
+          section_path: candidate.sectionPath,
+          source_sentence_hash: sha256(candidate.fullText),
+          word_count: wordCount(shortText),
+        });
+      }
     }
     const usedSections = new Set(Array.from(unique.values()).map((candidate) => candidate.section_path.join("/")));
     const referenceNotes = data.sections

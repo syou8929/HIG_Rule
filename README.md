@@ -58,9 +58,9 @@ npm test
 
 `src/config/duplicate-review.json`は、意図的に保持する文脈重複のrule ID、statement hash、source trace hash、判断理由を保持します。候補集合やsource traceが変わるとvalidationが失敗し、未レビューの新規候補は警告として残ります。
 
-`src/config/source-review.json`は、MUST/MUST_NOT以外で公式本文や数値表まで確認したruleの補正、source trace、レビュー状態を保持します。生成される`dist/reports/source-review.md`と`source-review.json`で判断を追跡できます。
+`src/config/source-review.json`は、MUST/MUST_NOT以外で公式本文や数値表まで確認したruleの補正、source trace、レビュー状態を保持します。個別補正に加え、同じ時点の公式page hashでまとめて照合したruleはbatchとして記録します。page本文が変わるとbatch traceのvalidationが失敗します。生成される`dist/reports/source-review.md`と`source-review.json`で判断を追跡できます。
 
-`dist/reports/review-queue.md`と`review-queue.json`は、未レビューのcanonical ruleを競合優先順位、規範強度、カテゴリの順に並べます。`review_required: false`はsource-context上の分類レビューが完了したことだけを表し、プロダクト固有のデザインレビューが不要という意味ではありません。
+`dist/reports/review-queue.md`と`review-queue.json`は、未レビューのcanonical ruleを競合優先順位、規範強度、カテゴリの順に並べ、次のbatchを先頭の公式ページ単位で提示します。`review_required: false`はsource-context上の分類レビューが完了したことだけを表し、プロダクト固有のデザインレビューが不要という意味ではありません。
 
 `AGENTS.md`、`CLAUDE.md`、`GEMINI.md`、`.github/copilot-instructions.md`、`.cursor/rules/apple-hig.mdc`もcanonical rulesから再生成します。生成ファイルを直接修正せず、storeまたはgeneratorを更新してください。
 

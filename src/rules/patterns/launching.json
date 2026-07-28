@@ -1,17 +1,391 @@
 [
   {
     "id": "HIG-PATTERNS-LAUNCHING-0001",
-    "title": "Design a launch screen that’s nearly identical to the first screen of your app or game",
+    "title": "Match the launch screen to the first screen",
     "category": "patterns",
     "topic": "launching",
     "subtopic": "launch-screens",
     "statement": {
-      "en": "Apply the documented Launching guidance to design a launch screen that’s nearly identical to the first screen of your app or game.",
-      "ja": "「Launching」において「Design a launch screen that’s nearly identical to the first screen of your app or game」の指針を適用する。"
+      "en": "Design the launch screen to closely match the app or game's first screen.",
+      "ja": "launch screenをappまたはgameのfirst screenに近づけてdesignする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Prevent an unpleasant flash when the launch screen transitions to the first screen.",
+      "If the app initially shows only a solid color, use only that color on the launch screen."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Design the launch screen to closely match the app or game's first screen.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Launch screens"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "8ca732d7d7717dd58cb239c94fa31ff4864f5ab06519ebd4fe2152d003fbb577",
+      "evidence_paraphrase": "Design the launch screen to closely match the app or game's first screen."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "launch-screens"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Design the launch screen to closely match the app or game's first screen.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0002",
+    "title": "Avoid text on launch screens",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "launch-screens",
+    "statement": {
+      "en": "Avoid text on a launch screen, even when the first screen contains text.",
+      "ja": "first screenにtextがあってもlaunch screenにはtextを含めない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Launch-screen content is static, so displayed text is not localized."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid text on a launch screen, even when the first screen contains text.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Launch screens"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "6def484b6d07547821b09365204f6f84497c13629d17bb4777f456abd0ed7ecb",
+      "evidence_paraphrase": "Avoid text on a launch screen, even when the first screen contains text."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "launch-screens"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid text on a launch screen, even when the first screen contains text.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0003",
+    "title": "Avoid advertising on launch screens",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "launch-screens",
+    "statement": {
+      "en": "Avoid using a launch screen for advertising or branding.",
+      "ja": "launch screenをadvertisingやbrandingに使うことを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid using a launch screen for advertising or branding.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Launch screens"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "21e0c33674ed6333b133ca172e078e232c8d287e219e61ab67b34e0c20516240",
+      "evidence_paraphrase": "Avoid using a launch screen for advertising or branding."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "launch-screens"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid using a launch screen for advertising or branding.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0004",
+    "title": "Consider launching an immersive visionOS app in the Shared Space",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Consider launching a fully immersive visionOS app in the Shared Space first.",
+      "ja": "fully immersiveなvisionOS appでも最初にShared Spaceでlaunchすることを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "A Shared Space window can provide context while the app or game loads.",
+      "The window can provide a control for entering the fully immersive experience.",
+      "Preserve people's choice of when to transition to a Full Space, especially while other apps are running."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider launching a fully immersive visionOS app in the Shared Space first.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "75e60cfc2e7e3a298cf4131423f4ac67cba3d6cce75e5d4e7bda5b83e23add1a",
+      "evidence_paraphrase": "Consider launching a fully immersive visionOS app in the Shared Space first."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Consider launching a fully immersive visionOS app in the Shared Space first.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0005",
+    "title": "Consider a splash screen at onboarding",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When a splash screen is needed, consider placing it at the start of onboarding.",
+      "ja": "splash screenが必要な場合はonboardingの開始時に置くことを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [
+      "Without onboarding, a splash screen may appear after launching completes."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When a splash screen is needed, consider placing it at the start of onboarding.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "d86271c7ed6cb95d560023166f6b96f996f21ae6ed8f068646d4c1b3fbd7c214",
+      "evidence_paraphrase": "When a splash screen is needed, consider placing it at the start of onboarding."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When a splash screen is needed, consider placing it at the start of onboarding.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0006",
+    "title": "Minimize launch time",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Minimize launch time so people can begin interacting immediately.",
+      "ja": "人がすぐにinteractできるようlaunch timeを最小限にする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36,7 +410,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "People may be unwilling to wait more than a couple of seconds."
     ],
     "exceptions": [],
     "rationale": {
@@ -46,7 +420,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Launching guidance to design a launch screen that’s nearly identical to the first screen of your app or game.” in the documented Launching context?"
+        "Does the design satisfy “Minimize launch time so people can begin interacting immediately.” in the documented Launching context?"
       ]
     },
     "testability": "manual",
@@ -61,37 +435,112 @@
       "page_title": "Launching",
       "section_path": [
         "Launching",
-        "Launch screens"
+        "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:00.434Z",
+      "retrieved_at": "2026-07-21T22:41:11Z",
       "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
-      "source_sentence_hash": "8ca732d7d7717dd58cb239c94fa31ff4864f5ab06519ebd4fe2152d003fbb577",
-      "evidence_paraphrase": "Apply the documented Launching guidance to design a launch screen that’s nearly identical to the first screen of your app or game."
+      "source_sentence_hash": "d0d8fbd0ab5c825feff546e6b06c8e10675345348e7df0c380b0ed0950831ea2",
+      "evidence_paraphrase": "Minimize launch time so people can begin interacting immediately."
     },
     "tags": [
       "patterns",
       "launching",
-      "launch-screens"
+      "best-practices"
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Launching guidance to design a launch screen that’s nearly identical to the first screen of your app or game.",
+    "apple_native_rule": "Minimize launch time so people can begin interacting immediately.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-PATTERNS-LAUNCHING-0002",
-    "title": "Avoid including text on your launch screen, even if your first screen displays text",
+    "id": "HIG-PATTERNS-LAUNCHING-0007",
+    "title": "Ensure required platforms have a launch screen",
     "category": "patterns",
     "topic": "launching",
-    "subtopic": "launch-screens",
+    "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude including text on your launch screen, even if your first screen displays text from the applicable experience.",
-      "ja": "該当する体験ではincluding text on your launch screen, even if your first screen displays textを避ける。"
+      "en": "Provide a launch screen on iOS, iPadOS, and tvOS.",
+      "ja": "iOS、iPadOS、tvOSではlaunch screenを用意する。"
     },
-    "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "discourage",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The system presents the launch screen immediately and replaces it with the first screen."
+    ],
+    "exceptions": [
+      "macOS, visionOS, and watchOS do not require launch screens."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide a launch screen on iOS, iPadOS, and tvOS.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "387a6f90181e3bdefe07e71b9f9c7d415c688bda7d2bda047b64a124150ec60e",
+      "evidence_paraphrase": "Provide a launch screen on iOS, iPadOS, and tvOS."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Provide a launch screen on iOS, iPadOS, and tvOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0008",
+    "title": "Restore state after an app restart",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Restore the previous state after an app restarts.",
+      "ja": "appのrestart後にprevious stateを復元する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
     "severity": "warning",
     "scope": {
       "portability": "apple-platform",
@@ -115,7 +564,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Restore granular details wherever practicable, including scroll position and window state and location."
     ],
     "exceptions": [],
     "rationale": {
@@ -125,7 +574,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude including text on your launch screen, even if your first screen displays text from the applicable experience.” in the documented Launching context?"
+        "Does the design satisfy “Restore the previous state after an app restarts.” in the documented Launching context?"
       ]
     },
     "testability": "manual",
@@ -140,61 +589,56 @@
       "page_title": "Launching",
       "section_path": [
         "Launching",
-        "Launch screens"
+        "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:00.434Z",
+      "retrieved_at": "2026-07-21T22:41:11Z",
       "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
-      "source_sentence_hash": "6def484b6d07547821b09365204f6f84497c13629d17bb4777f456abd0ed7ecb",
-      "evidence_paraphrase": "Exclude including text on your launch screen, even if your first screen displays text from the applicable experience."
+      "source_sentence_hash": "44edea1b68cb87e93cb079b0d39324727875ac9977105693a3ccbc6524b2a057",
+      "evidence_paraphrase": "Restore the previous state after an app restarts."
     },
     "tags": [
       "patterns",
       "launching",
-      "launch-screens"
+      "best-practices"
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude including text on your launch screen, even if your first screen displays text from the applicable experience.",
+    "apple_native_rule": "Restore the previous state after an app restarts.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-PATTERNS-LAUNCHING-0003",
-    "title": "Don’t advertise",
+    "id": "HIG-PATTERNS-LAUNCHING-0009",
+    "title": "Downplay the launch-screen experience",
     "category": "patterns",
     "topic": "launching",
     "subtopic": "launch-screens",
     "statement": {
-      "en": "Exclude advertise from the applicable experience.",
-      "ja": "該当する体験ではadvertiseを避ける。"
+      "en": "Downplay the launch-screen experience.",
+      "ja": "launch-screen experienceを控えめにする。"
     },
-    "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "discourage",
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
     "severity": "warning",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
         "ios",
         "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "tvos"
       ],
       "devices": [
         "iphone",
         "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-tv"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a launch screen only to make launch feel quick and immediately ready.",
+      "Do not treat it as onboarding, a splash screen, or artistic expression."
     ],
     "exceptions": [],
     "rationale": {
@@ -204,7 +648,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude advertise from the applicable experience.” in the documented Launching context?"
+        "Does the design satisfy “Downplay the launch-screen experience.” in the documented Launching context?"
       ]
     },
     "testability": "manual",
@@ -221,10 +665,10 @@
         "Launching",
         "Launch screens"
       ],
-      "retrieved_at": "2026-07-21T11:15:00.434Z",
+      "retrieved_at": "2026-07-21T22:41:11Z",
       "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
-      "source_sentence_hash": "21e0c33674ed6333b133ca172e078e232c8d287e219e61ab67b34e0c20516240",
-      "evidence_paraphrase": "Exclude advertise from the applicable experience."
+      "source_sentence_hash": "287c2eb455a6349eca24950f34efa1f46ddd2c0a598815b0fd683b103d46e770",
+      "evidence_paraphrase": "Downplay the launch-screen experience."
     },
     "tags": [
       "patterns",
@@ -233,37 +677,40 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Exclude advertise from the applicable experience.",
+    "apple_native_rule": "Downplay the launch-screen experience.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-PATTERNS-LAUNCHING-0004",
-    "title": "Consider launching in the Shared Space even if your app is fully immersive",
+    "id": "HIG-PATTERNS-LAUNCHING-0010",
+    "title": "Launch in the appropriate orientation",
     "category": "patterns",
     "topic": "launching",
-    "subtopic": "visionos",
+    "subtopic": "ios-ipados",
     "statement": {
-      "en": "Evaluate whether launching in the Shared Space even if your app is fully immersive is appropriate for the current context.",
-      "ja": "launching in the Shared Space even if your app is fully immersiveが現在の状況に適切か検討する。"
+      "en": "Launch in the orientation appropriate to the iOS or iPadOS interface.",
+      "ja": "iOSまたはiPadOS interfaceに適したorientationでlaunchする。"
     },
-    "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "permit",
-    "severity": "info",
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
-        "visionos"
+        "ios",
+        "ipados"
       ],
       "devices": [
-        "apple-vision-pro"
+        "iphone",
+        "ipad"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "For portrait-and-landscape interfaces, use the device's current orientation.",
+      "For a single-orientation interface, use its supported orientation and let people rotate the device if needed."
     ],
     "exceptions": [],
     "rationale": {
@@ -273,7 +720,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether launching in the Shared Space even if your app is fully immersive is appropriate for the current context.” in the documented Launching context?"
+        "Does the design satisfy “Launch in the orientation appropriate to the iOS or iPadOS interface.” in the documented Launching context?"
       ]
     },
     "testability": "manual",
@@ -289,22 +736,464 @@
       "section_path": [
         "Launching",
         "Platform considerations",
-        "visionOS"
+        "iOS, iPadOS"
       ],
-      "retrieved_at": "2026-07-21T11:15:00.434Z",
+      "retrieved_at": "2026-07-21T22:41:11Z",
       "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
-      "source_sentence_hash": "75e60cfc2e7e3a298cf4131423f4ac67cba3d6cce75e5d4e7bda5b83e23add1a",
-      "evidence_paraphrase": "Evaluate whether launching in the Shared Space even if your app is fully immersive is appropriate for the current context."
+      "source_sentence_hash": "2003c799ef390f2be016bbf799afea8dc766ba220b6b01cf47397a745ff16919",
+      "evidence_paraphrase": "Launch in the orientation appropriate to the iOS or iPadOS interface."
     },
     "tags": [
       "patterns",
       "launching",
       "platform-considerations",
-      "visionos"
+      "ios-ipados"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether launching in the Shared Space even if your app is fully immersive is appropriate for the current context.",
+    "apple_native_rule": "Launch in the orientation appropriate to the iOS or iPadOS interface.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0011",
+    "title": "Consider automatic playback in live-viewing apps",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "tvos",
+    "statement": {
+      "en": "In a tvOS live-viewing app, consider starting playback automatically after brief inactivity.",
+      "ja": "tvOS live-viewing appでは短いinactivity後のautomatic playback開始を検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use new or recently viewed live content after a few seconds of inactivity."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “In a tvOS live-viewing app, consider starting playback automatically after brief inactivity.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Platform considerations",
+        "tvOS"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "373dce396a8684db1af332b9c1f617e00dd8a1b529315702dcf7035fd3ef9901",
+      "evidence_paraphrase": "In a tvOS live-viewing app, consider starting playback automatically after brief inactivity."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "platform-considerations",
+      "tvos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "In a tvOS live-viewing app, consider starting playback automatically after brief inactivity.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0012",
+    "title": "Avoid making people retrace steps after restart",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid making people retrace steps after an app restart.",
+      "ja": "appのrestart後に以前の場所まで手順をやり直させない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid making people retrace steps after an app restart.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "ecce034c148583982cba3e452394ed7835605fa6701ed16c2bb66b955b6e865c",
+      "evidence_paraphrase": "Avoid making people retrace steps after an app restart."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid making people retrace steps after an app restart.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0013",
+    "title": "Make sure launch screens match orientation and appearance",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "launch-screens",
+    "statement": {
+      "en": "Make sure each launch screen matches the current orientation and appearance mode.",
+      "ja": "各launch screenを現在のorientationとappearance modeに一致させる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make sure each launch screen matches the current orientation and appearance mode.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Launch screens"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "7f519ddba4d74e6e8c3bac3c1959336c8c1164848bb561c9d3c329932383c34b",
+      "evidence_paraphrase": "Make sure each launch screen matches the current orientation and appearance mode."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "launch-screens"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Make sure each launch screen matches the current orientation and appearance mode.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0014",
+    "title": "Avoid splash-screen or About-window styling",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "launch-screens",
+    "statement": {
+      "en": "Avoid making a launch screen resemble a splash screen or About window.",
+      "ja": "launch screenをsplash screenやAbout windowのように見せない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid making a launch screen resemble a splash screen or About window.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Launch screens"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "aaa434d5ad47d0c5d3fb90f250f794adb59d3be784989dd43783155e61004890",
+      "evidence_paraphrase": "Avoid making a launch screen resemble a splash screen or About window."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "launch-screens"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid making a launch screen resemble a splash screen or About window.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0015",
+    "title": "Avoid nonpersistent branding on launch screens",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "launch-screens",
+    "statement": {
+      "en": "Avoid branding elements unless they are fixed parts of the first screen.",
+      "ja": "first screenの固定部分でないbranding elementをlaunch screenに含めない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Logos are an example of branding elements."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid branding elements unless they are fixed parts of the first screen.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Launch screens"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "aaa434d5ad47d0c5d3fb90f250f794adb59d3be784989dd43783155e61004890",
+      "evidence_paraphrase": "Avoid branding elements unless they are fixed parts of the first screen."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "launch-screens"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid branding elements unless they are fixed parts of the first screen.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-LAUNCHING-0016",
+    "title": "Ensure landscape interfaces support both rotation directions",
+    "category": "patterns",
+    "topic": "launching",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Ensure landscape-only iOS and iPadOS interfaces support both device rotation directions.",
+      "ja": "landscape-onlyのiOSおよびiPadOS interfaceで左右両方のdevice rotation方向に対応する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Launching experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるLaunchingの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure landscape-only iOS and iPadOS interfaces support both device rotation directions.” in the documented Launching context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/launching",
+      "page_title": "Launching",
+      "section_path": [
+        "Launching",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T22:41:11Z",
+      "source_hash": "2c75e0fca216029bfac2ed118f1c782f2ec43332bdbf072ec128ec6e7829d456",
+      "source_sentence_hash": "99e7ff0f7effa42444b245b8fbf9f5f3723987be6701d1477aec11ea3e700350",
+      "evidence_paraphrase": "Ensure landscape-only iOS and iPadOS interfaces support both device rotation directions."
+    },
+    "tags": [
+      "patterns",
+      "launching",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Ensure landscape-only iOS and iPadOS interfaces support both device rotation directions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

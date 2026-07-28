@@ -1,20 +1,23 @@
 import type { GuidanceCandidate, NormativeLevel, Portability, Rule, SourcePage } from "./types.js";
 import { slugify } from "./util.js";
 
-const ACTIONABLE = /^(adopt|aim|allow|always|apply|ask|augment|avoid|avoiding|be|bear in mind|break up|choose|communicate|confirm|consider|convey|create|defer|describe|design|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|follow|give|help|identify|include|integrate|keep|let|make|maintain|match|minimize|never|offer|optimize|place|position|prefer|preserve|prioritize|provide|reduce|remove|replacing|respect|respond|show|simplify|strive|support|test|tightening|track|tracking|treat|use|verify|warn|write)\b/i;
+const ACTIONABLE = /^(accurately|adhere|adopt|aim|allow|always|apply|as much as possible|ask|augment|avoid|avoiding|be|be sure to|bear in mind|break up|carefully consider|center|change|choose|clearly|cluster|communicate|confirm|consider|convey|create|defer|define|delay|describe|design|determine|discard|display|distinguish|do not|don['’]t|enable|encourage|ensure|favor|feature|follow|give|help|hide|identify|in general, avoid|include|indicate|integrate|keep|let|make|maintain|match|minimize|must|never|offer|omit|optimize|personalize|pick|place|position|prefer|present|preserve|prioritize|prompt|provide|recognize|reduce|refer to|rely|remove|replacing|represent|required|require|reserve|respect|respond|retain|show|showcase|simplify|specify|strive|support|take advantage|test|tightening|track|tracking|translate|treat|try to|use|verify|wait|warn|welcome|write|you have to|you must|you need to)\b/i;
+const CONTEXTUAL_ACTIONABLE = /^(as\b.+,\s*defer\b|because\b.+\bensure\b|for\b.+\bconsider\b|if\b.+,\s*(?:add|avoid|consider|fade out|supply|use|write)\b|in\b.+,\s*help\b|in general,\s*(?:do not|don['’]t|use)\b|outside of\b.+\buse\b|to\b.+,\s*prefer\b|within\b.+\bconsider\b)/i;
+const SOURCE_REVIEW_ACTIONABLE = /^(Add related passes as a group|Tell the system when your passes expire|Supply a high-resolution logo image|Supply distinct, high-resolution product images|Supply a prioritized list of your apps|Supply descriptive text for icon-based segmented control tooltips in visionOS|In general, keep text brief|semantic tags are required|If necessary, provide a Cancel button|To surface common types of app functionality|Add flexibility by letting people choose|Snippets are great for custom views|Live Activities offer continuous access|When referring to individual shortcuts|Order shortcuts based on importance|Each app can include up to|Each App Shortcut includes|An App Shortcut can include a single optional value|Update controls when someone interacts|Update the contents of a control|The symbol needs to convey enough information|For control toggles, provide a symbol|For control toggles, animate the transition|For control buttons with actions that have a duration|Stop animating when the action is complete|Select a tint color that works with your app’s brand|If a control requires configuration, prompt people|If your control title or value can vary, include a placeholder|For any task beyond capture, a person must authenticate|Establish a clear relationship between the control and the expanded choices|If you adjust the style of a label or use custom fonts|If necessary, include a Custom option in a pop-up button’s menu|You can also display explanatory text below the list|Limit the number of segments in a control|In general, keep segment size consistent|To the extent possible, keep icon and title widths consistent|If your app includes tooltips, provide one for each segment|If you provide a Done button, always pair it with a Cancel or Back button|In an iPhone app, consider supporting the medium detent|If you change the default label, prefer using SF Symbols|Extend visually rich content beneath the sidebar|When possible, let people customize the contents of a sidebar|Group hierarchy with disclosure controls if your app has a lot of content|When possible, let people hide and show the sidebar|In general, show no more than two levels of hierarchy in a sidebar|To help keep labels short, omit unnecessary words|To display only a sidebar, use NavigationSplitView or UISplitViewController|If necessary, apply the correct appearance to a sidebar|Customize a slider’s appearance if it adds value|If necessary, create custom glyphs to communicate what the slider does|To ensure all content is visible, create custom views no taller than 400 points|Account for preferred text sizes when deciding how much text to include|For detailed result content, deep-link to the app instead of expanding the custom view|In general, design images at the lowest resolution and scale them up to create high-resolution assets|Group related items to help people find the information they want|Extend content to fill the screen or window|When content doesn’t span the full window, use a background extension view|Differentiate controls from content|Instead of a background, use a scroll edge effect between content and controls|Align components with one another to make them easier to scan and to communicate organization and hierarchy|Apps and games need to adapt to device and system context changes|Preview your app on multiple devices, using different orientations, localizations, and text sizes|When necessary, scale artwork in response to display changes|Add motion purposefully, supporting the experience without overshadowing it|In apps, generally avoid adding motion to UI interactions that occur frequently|Build language patterns|In general, prefer using common chart types|If you need to create a chart that presents data in a novel way, help people learn how to|Examine the data from multiple levels or perspectives to find details you can display to enhance the chart|Aid comprehension by adding descriptive text to the chart|To offer these features when you use a custom collaboration infrastructure, make sure your app also supports universal links|If necessary, customize the share sheet or sharing popover|Prominently display the Collaboration button as soon as collaboration starts|If it makes sense in your app, customize the title of the modal view’s collaboration-management button|In your SwiftUI app running in watchOS, use ShareLink|Dragging and dropping content between apps always results in a copy|If it adds clarity, modify the drag image|When people drop an item on an invalid destination, or when dropping fails, provide visual feedback|Scroll the contents of a destination when necessary|When there’s a choice, pick the richest version of dropped content your app can accept|Extract only the relevant portion of dropped content if necessary|When a physical keyboard is attached, check for the Option key at drop time|After a drop, maintain the content’s selection state|Pre-gathering as much information as possible|Supporting all available input methods|Get information from the system whenever possible|When possible, offer choices instead of requiring text entry|Dynamically validate field values|When data entry is necessary, make sure people understand|If necessary, adjust your layout in full-screen mode|Continue to provide access to essential features and controls|Except in games, let people reveal the Dock|After people switch away from your full-screen experience, help them resume|Pause a full-screen game or slideshow automatically|Live-viewing apps need to elevate and prioritize live content|In every screen, draw people’s attention to live content|Playback always needs to be the primary action|Audio needs to stop|Ideally, help people avoid running out of space|Prominently display current information|Group content into familiar categories|Build trust by accurately representing the urgency|Get people’s permission if you want to send them promotional|You first identify the types of notifications|For all other types of tasks, use noncommunication notifications|Take care to avoid creating a modal experience|When necessary, help people avoid data loss|If a modal task must contain subviews, provide a single path|Dim the macOS File menu’s Print item|If search is important, give it a primary position|Take privacy into consideration before displaying search history|Implement a Quick Look generator if your app produces custom file types|Set clear expectations about what your AI-powered feature can and can’t do|Thoughtfully evaluate model capabilities|Guide people on how to use your generative feature|Raise awareness about and minimize the chance of hallucinations|Factor processing time into your design|For server-based processing, take steps to protect people’s privacy|Implement a great photo sharing experience|If full-frame adjustments aren’t supported, let people convert a Live Photo to a still photo|When movement isn’t possible, show a system-provided Live Photo badge)\b/i;
+const PAGE_SOURCE_REVIEW_ACTIONABLE = /^(Briefly describe each activity|When possible, defer app tasks that might delay a shared activity|Smoothly update a shared activity when new participants join|Stop recording as soon as possible|Request microphone access before using it for recognition|Explain why you request microphone access|Record only as long as needed for the recognition sample|Act in people’s best interest|Build on what people know|Adapt to diverse contexts and needs|Care about every detail|Find new ways to solve the problem|Stay out of the way|Approach every platform with intention|Establish hierarchy|Quality sets the tone|Experiment and iterate|Disclose what data you collect and how you use it|Collect only the data your product needs to function|Protect data against abuse and unintended consequences)$/i;
 
 export function isActionable(candidate: GuidanceCandidate): boolean {
   const text = candidate.text.trim();
-  if (/^Always On$/i.test(text)) return false;
-  return ACTIONABLE.test(text) && !/^Resources?\b/i.test(text);
+  if (/^(Always On|Center area|Tracking requests|Help buttons|Support for configuring the button’s corner radius to match the style of your UI \(iOS, macOS, and web\))$/i.test(text)) return false;
+  return (ACTIONABLE.test(text) || CONTEXTUAL_ACTIONABLE.test(text) || SOURCE_REVIEW_ACTIONABLE.test(text) || PAGE_SOURCE_REVIEW_ACTIONABLE.test(text) || /^the overall color needs to\b/i.test(text) || /^only provide\b/i.test(text)) && !/^Resources?\b/i.test(text);
 }
 
 export function normative(text: string): Pick<Rule, "normative_level" | "confidence" | "review_required" | "polarity" | "severity"> {
   const value = text.toLowerCase();
-  if (/^(never|must not)\b/.test(value)) return { normative_level: "MUST_NOT", confidence: "medium", review_required: true, polarity: "prohibit", severity: "error" };
-  if (/^(avoid|avoiding|do not|don't|don’t)\b/.test(value)) return { normative_level: "AVOID", confidence: "low", review_required: true, polarity: "discourage", severity: "warning" };
-  if (/^(consider|may)\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
-  if (/^(always|ensure|make sure|must|required)\b/.test(value)) return { normative_level: "MUST", confidence: "medium", review_required: true, polarity: "require", severity: "error" };
+  if (/^(never|must not|you must not|always avoid)\b/.test(value)) return { normative_level: "MUST_NOT", confidence: "medium", review_required: true, polarity: "prohibit", severity: "error" };
+  if (/^(avoid|avoiding|do not|don't|don’t|in general, avoid|in general,\s*(?:do not|don't|don’t)|as much as possible,\s*avoid|try to avoid)\b/.test(value) || /^if\b.+,\s*avoid\b/.test(value)) return { normative_level: "AVOID", confidence: "low", review_required: true, polarity: "discourage", severity: "warning" };
+  if (/^(carefully consider|consider|may)\b/.test(value) || /^(?:for|if|within)\b.+\bconsider\b/.test(value)) return { normative_level: "MAY", confidence: "low", review_required: true, polarity: "permit", severity: "info" };
+  if (/^(always|be sure to|ensure|make sure|must|required|you have to|you must|you need to)\b/.test(value)) return { normative_level: "MUST", confidence: "medium", review_required: true, polarity: "require", severity: "error" };
   return { normative_level: "SHOULD", confidence: "low", review_required: true, polarity: "recommend", severity: "warning" };
 }
 
@@ -31,25 +34,123 @@ function upperFirst(value: string): string {
 }
 
 export function paraphrase(candidate: string, pageTitle: string): { en: string; ja: string } {
+  const contextualConsider = candidate.match(/^for (.+?), consider (.+)$/i);
+  if (contextualConsider) {
+    return {
+      en: `When ${lowerFirst(contextualConsider[1] ?? "the documented condition applies")}, consider ${lowerFirst(contextualConsider[2] ?? "the documented option")}.`,
+      ja: `${contextualConsider[1] ?? "該当条件"}の場合は${contextualConsider[2] ?? "記載された選択肢"}を検討する。`,
+    };
+  }
+  const withinConsider = candidate.match(/^within (.+?), consider (.+)$/i);
+  if (withinConsider) {
+    return {
+      en: `Within ${lowerFirst(withinConsider[1] ?? "the documented context")}, consider ${lowerFirst(withinConsider[2] ?? "the documented option")}.`,
+      ja: `${withinConsider[1] ?? "該当範囲"}では${withinConsider[2] ?? "記載された選択肢"}を検討する。`,
+    };
+  }
+  const conditionalConsider = candidate.match(/^if (.+?), consider (.+)$/i);
+  if (conditionalConsider) {
+    return {
+      en: `When ${lowerFirst(conditionalConsider[1] ?? "the documented condition applies")}, consider ${lowerFirst(conditionalConsider[2] ?? "the documented option")}.`,
+      ja: `${conditionalConsider[1] ?? "該当条件"}場合は${conditionalConsider[2] ?? "記載された選択肢"}を検討する。`,
+    };
+  }
+  const conditionalAction = candidate.match(/^if (.+?), (add|avoid|fade out|supply|use) (.+)$/i);
+  if (conditionalAction) {
+    const verb = lowerFirst(conditionalAction[2] ?? "apply");
+    const object = lowerFirst(conditionalAction[3] ?? "the documented guidance");
+    return {
+      en: `When ${lowerFirst(conditionalAction[1] ?? "the documented condition applies")}, ${verb} ${object}.`,
+      ja: `${conditionalAction[1] ?? "該当条件"}場合は${object}を${verb}する。`,
+    };
+  }
+  const outsideUse = candidate.match(/^outside of (.+?), use (.+)$/i);
+  if (outsideUse) {
+    return {
+      en: `Outside of ${lowerFirst(outsideUse[1] ?? "the documented context")}, use ${lowerFirst(outsideUse[2] ?? "the documented alternative")}.`,
+      ja: `${outsideUse[1] ?? "該当範囲"}の外では${outsideUse[2] ?? "記載された代替手段"}を使う。`,
+    };
+  }
+  const purposePreference = candidate.match(/^to (.+?), prefer (.+)$/i);
+  if (purposePreference) {
+    return {
+      en: `To ${lowerFirst(purposePreference[1] ?? "meet the documented purpose")}, prefer ${lowerFirst(purposePreference[2] ?? "the documented option")}.`,
+      ja: `${purposePreference[1] ?? "記載された目的を満たす"}には${purposePreference[2] ?? "記載された選択肢"}を優先する。`,
+    };
+  }
+  const practicable = candidate.match(/^as much as possible,\s*(.+)$/i);
+  if (practicable) {
+    const value = practicable[1] ?? "apply the documented guidance";
+    return {
+      en: `${upperFirst(value)} wherever practicable.`,
+      ja: `可能な限り${value}。`,
+    };
+  }
+  const generalUse = candidate.match(/^in general,\s*use (.+)$/i);
+  if (generalUse) {
+    const value = generalUse[1] ?? "the documented option";
+    return {
+      en: `Generally, use ${lowerFirst(value)}.`,
+      ja: `通常は${value}を使う。`,
+    };
+  }
+  const contextualHelp = candidate.match(/^in (.+?), help (.+)$/i);
+  if (contextualHelp) {
+    return {
+      en: `In ${lowerFirst(contextualHelp[1] ?? "the documented context")}, help ${lowerFirst(contextualHelp[2] ?? "people complete the documented task")}.`,
+      ja: `${contextualHelp[1] ?? "該当状況"}では${contextualHelp[2] ?? "記載されたtask"}を支援する。`,
+    };
+  }
+  const resizingDefer = candidate.match(/^as (.+?), defer (.+)$/i);
+  if (resizingDefer) {
+    return {
+      en: `As ${lowerFirst(resizingDefer[1] ?? "the documented context changes")}, defer ${lowerFirst(resizingDefer[2] ?? "the documented transition")}.`,
+      ja: `${resizingDefer[1] ?? "該当状況が変化する間"}、${resizingDefer[2] ?? "記載された遷移"}を遅らせる。`,
+    };
+  }
   const patterns: Array<{ match: RegExp; en: (value: string) => string; ja: (value: string) => string }> = [
     { match: /^support\b/i, en: (v) => `Ensure the experience accommodates ${lowerFirst(v)}.`, ja: (v) => `${v}を利用できる設計にする。` },
     { match: /^use\b/i, en: (v) => `Choose or apply ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況では${v}を採用する。` },
-    { match: /^(avoid|avoiding|do not|don['’]t|never)\b/i, en: (v) => `Exclude ${lowerFirst(v)} from the applicable experience.`, ja: (v) => `該当する体験では${v}を避ける。` },
+    { match: /^(avoid|avoiding|do not|don['’]t|never|must not|you must not|in general, avoid|in general,\s*(?:do not|don['’]t)|try to avoid)\b/i, en: (v) => `Exclude ${lowerFirst(v)} from the applicable experience.`, ja: (v) => `該当する体験では${v}を避ける。` },
     { match: /^bear in mind\b/i, en: (v) => `Account for ${lowerFirst(v)} in the design.`, ja: (v) => `${v}を設計上考慮する。` },
     { match: /^break up\b/i, en: (v) => `Divide ${lowerFirst(v)} into focused steps.`, ja: (v) => `${v}を集中しやすい手順に分割する。` },
     { match: /^identify\b/i, en: (v) => `Determine ${lowerFirst(v)} explicitly.`, ja: (v) => `${v}を明確に特定する。` },
+    { match: /^define\b/i, en: (v) => `Define ${lowerFirst(v)} explicitly.`, ja: (v) => `${v}を明確に定義する。` },
+    { match: /^determine\b/i, en: (v) => `Determine ${lowerFirst(v)} explicitly.`, ja: (v) => `${v}を明確に決定する。` },
+    { match: /^clearly\b/i, en: (v) => `Clearly ${lowerFirst(v)}.`, ja: (v) => `${v}を明確にする。` },
+    { match: /^accurately\b/i, en: (v) => `Accurately ${lowerFirst(v)}.`, ja: (v) => `${v}を正確に行う。` },
+    { match: /^change\b/i, en: (v) => `Change ${lowerFirst(v)}.`, ja: (v) => `${v}を変更する。` },
+    { match: /^center\b/i, en: (v) => `Center ${lowerFirst(v)}.`, ja: (v) => `${v}を中央に置く。` },
+    { match: /^feature\b/i, en: (v) => `Feature ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を取り上げる。` },
+    { match: /^personalize\b/i, en: (v) => `Personalize ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}をpersonalizeする。` },
+    { match: /^showcase\b/i, en: (v) => `Showcase ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を目立たせる。` },
+    { match: /^refer to\b/i, en: (v) => `Refer to ${lowerFirst(v)}.`, ja: (v) => `${v}という名称で参照する。` },
     { match: /^integrate\b/i, en: (v) => `Connect the experience with ${lowerFirst(v)}.`, ja: (v) => `${v}と体験を連携する。` },
+    { match: /^indicate\b/i, en: (v) => `Indicate ${lowerFirst(v)}.`, ja: (v) => `${v}を示す。` },
+    { match: /^adhere to\b/i, en: (v) => `Follow ${lowerFirst(v)}.`, ja: (v) => `${v}に従う。` },
+    { match: /^hide\b/i, en: (v) => `Hide ${lowerFirst(v)}.`, ja: (v) => `${v}を隠す。` },
+    { match: /^represent\b/i, en: (v) => `Represent ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を表現する。` },
+    { match: /^recognize\b/i, en: (v) => `Account for ${lowerFirst(v)}.`, ja: (v) => `${v}を考慮する。` },
+    { match: /^rely on\b/i, en: (v) => `Rely on ${lowerFirst(v)}.`, ja: (v) => `${v}を利用する。` },
+    { match: /^specify\b/i, en: (v) => `Specify ${lowerFirst(v)}.`, ja: (v) => `${v}を指定する。` },
+    { match: /^require\b/i, en: (v) => `Require ${lowerFirst(v)}.`, ja: (v) => `${v}を必須とする。` },
+    { match: /^(must|you have to|you must|you need to)\b/i, en: (v) => `${upperFirst(v)}.`, ja: (v) => `「${lowerFirst(v)}」を必須要件として扱う。` },
+    { match: /^reserve\b/i, en: (v) => `Reserve ${lowerFirst(v)} for the documented purpose.`, ja: (v) => `${v}を記載された目的に限定する。` },
+    { match: /^retain\b/i, en: (v) => `Retain ${lowerFirst(v)}.`, ja: (v) => `${v}を維持する。` },
+    { match: /^take advantage\b/i, en: (v) => `Use ${lowerFirst(v)}.`, ja: (v) => `${v}を活用する。` },
+    { match: /^try to\b/i, en: (v) => `Try to ${lowerFirst(v)}.`, ja: (v) => `${v}を試みる。` },
     { match: /^tightening\b/i, en: (v) => `Use tighter ${lowerFirst(v)}.`, ja: (v) => `${v}をより引き締める。` },
     { match: /^tracking\b/i, en: (v) => `Keep ${lowerFirst(v)} synchronized.`, ja: (v) => `${v}を同期させる。` },
     { match: /^replacing\b/i, en: (v) => `Substitute ${lowerFirst(v)}.`, ja: (v) => `${v}へ置き換える。` },
-    { match: /^consider\b/i, en: (v) => `Evaluate whether ${lowerFirst(v)} is appropriate for the current context.`, ja: (v) => `${v}が現在の状況に適切か検討する。` },
+    { match: /^(carefully consider|consider)\b/i, en: (v) => `Evaluate whether ${lowerFirst(v)} is appropriate for the current context.`, ja: (v) => `${v}が現在の状況に適切か検討する。` },
     { match: /^(prefer|favor)\b/i, en: (v) => `Favor ${lowerFirst(v)} when the documented conditions apply.`, ja: (v) => `該当条件では${v}を優先する。` },
     { match: /^always\b/i, en: (v) => `${upperFirst(v)} in every applicable case.`, ja: (v) => `該当するすべての場合に${v}を実行する。` },
+    { match: /^be sure to\b/i, en: (v) => `Ensure ${lowerFirst(v)}.`, ja: (v) => `${v}を確実に行う。` },
     { match: /^(ensure|make sure|verify)\b/i, en: (v) => `Verify that ${lowerFirst(v)}.`, ja: (v) => `${v}を満たしていることを確認する。` },
     { match: /^(provide|offer)\b/i, en: (v) => `Make ${lowerFirst(v)} available when applicable.`, ja: (v) => `必要な場合に${v}を利用可能にする。` },
     { match: /^let people\b/i, en: (v) => `Preserve people’s ability to ${lowerFirst(v)}.`, ja: (v) => `利用者が${v}できる状態を保つ。` },
     { match: /^keep\b/i, en: (v) => `Maintain ${lowerFirst(v)}.`, ja: (v) => `${v}を維持する。` },
-    { match: /^(display|show)\b/i, en: (v) => `Present ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を表示する。` },
+    { match: /^(display|present|show)\b/i, en: (v) => `Present ${lowerFirst(v)} in the documented context.`, ja: (v) => `該当する状況で${v}を表示する。` },
   ];
   for (const pattern of patterns) {
     if (pattern.match.test(candidate)) {

@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-COMPONENTS-SLIDERS-0001",
-    "title": "Use familiar slider directions",
+    "title": "Use familiar minimum-to-maximum slider directions",
     "category": "components",
     "topic": "sliders",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply familiar slider directions in the documented context.",
-      "ja": "該当する状況ではfamiliar slider directionsを採用する。"
+      "en": "Use familiar minimum-to-maximum directions for sliders.",
+      "ja": "sliderには見慣れたminimumからmaximumへの方向を使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36,7 +36,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "For horizontal sliders, place the minimum on the leading side and maximum on the trailing side.",
+      "For vertical sliders, place the minimum at the bottom and maximum at the top."
     ],
     "exceptions": [],
     "rationale": {
@@ -46,7 +47,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply familiar slider directions in the documented context.” in the documented Sliders context?"
+        "Does the design satisfy “Use familiar minimum-to-maximum directions for sliders.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -66,7 +67,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "596098805dc92974e77880f094743d1d8cd4a5312dc3f04b502980d4579fc86d",
-      "evidence_paraphrase": "Choose or apply familiar slider directions in the documented context."
+      "evidence_paraphrase": "Use familiar minimum-to-maximum directions for sliders."
     },
     "tags": [
       "components",
@@ -75,22 +76,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply familiar slider directions in the documented context.",
+    "apple_native_rule": "Use familiar minimum-to-maximum directions for sliders.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SLIDERS-0002",
-    "title": "Consider supplementing a slider with a corresponding text field and stepper",
+    "title": "Consider a text field and stepper alongside a slider",
     "category": "components",
     "topic": "sliders",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether supplementing a slider with a corresponding text field and stepper is appropriate for the current context.",
-      "ja": "supplementing a slider with a corresponding text field and stepperが現在の状況に適切か検討する。"
+      "en": "Consider supplementing a slider with a corresponding text field and stepper.",
+      "ja": "sliderに対応するtext fieldとstepperを追加することを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -115,7 +116,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "This can help when the slider represents a wide value range.",
+      "A text field can show the exact value and accept a specific value.",
+      "A stepper can provide convenient whole-value increments."
     ],
     "exceptions": [],
     "rationale": {
@@ -125,7 +128,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether supplementing a slider with a corresponding text field and stepper is appropriate for the current context.” in the documented Sliders context?"
+        "Does the design satisfy “Consider supplementing a slider with a corresponding text field and stepper.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -145,7 +148,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "22bb9fcbee02d87338002d6d315f5f20158a4a4d1313920e351cb86cfeffec9a",
-      "evidence_paraphrase": "Evaluate whether supplementing a slider with a corresponding text field and stepper is appropriate for the current context."
+      "evidence_paraphrase": "Consider supplementing a slider with a corresponding text field and stepper."
     },
     "tags": [
       "components",
@@ -154,22 +157,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether supplementing a slider with a corresponding text field and stepper is appropriate for the current context.",
+    "apple_native_rule": "Consider supplementing a slider with a corresponding text field and stepper.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SLIDERS-0003",
-    "title": "Don’t use a slider to adjust audio volume",
+    "title": "Use a volume view instead of a slider in iOS and iPadOS",
     "category": "components",
     "topic": "sliders",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Exclude use a slider to adjust audio volume from the applicable experience.",
-      "ja": "該当する体験ではuse a slider to adjust audio volumeを避ける。"
+      "en": "Avoid a generic slider for iOS or iPadOS audio volume.",
+      "ja": "iOSまたはiPadOSのaudio volumeにはgeneric sliderを使わない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -190,7 +193,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Use a customizable volume view that includes a volume-level slider and audio-output control."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Sliders experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるSlidersの一貫性と使いやすさを支えます。"
@@ -198,7 +203,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude use a slider to adjust audio volume from the applicable experience.” in the documented Sliders context?"
+        "Does the design satisfy “Avoid a generic slider for iOS or iPadOS audio volume.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -219,7 +224,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "cdd6c2131e76ad1c663b57672f13f118fa0451a16d5db17ecb8383eb337d3418",
-      "evidence_paraphrase": "Exclude use a slider to adjust audio volume from the applicable experience."
+      "evidence_paraphrase": "Avoid a generic slider for iOS or iPadOS audio volume."
     },
     "tags": [
       "components",
@@ -229,22 +234,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude use a slider to adjust audio volume from the applicable experience.",
+    "apple_native_rule": "Avoid a generic slider for iOS or iPadOS audio volume.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SLIDERS-0004",
-    "title": "Consider giving live feedback as the value of a slider changes",
+    "title": "Consider live feedback for macOS slider changes",
     "category": "components",
     "topic": "sliders",
     "subtopic": "macos",
     "statement": {
-      "en": "Evaluate whether giving live feedback as the value of a slider changes is appropriate for the current context.",
-      "ja": "giving live feedback as the value of a slider changesが現在の状況に適切か検討する。"
+      "en": "Consider showing live feedback as a macOS slider's value changes.",
+      "ja": "macOS sliderの値が変わるときにlive feedbackを表示することを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -261,7 +266,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Live feedback lets people see the result of the adjustment in real time."
     ],
     "exceptions": [],
     "rationale": {
@@ -271,7 +276,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether giving live feedback as the value of a slider changes is appropriate for the current context.” in the documented Sliders context?"
+        "Does the design satisfy “Consider showing live feedback as a macOS slider's value changes.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -292,7 +297,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "9948efca2bec3ecbeaf009713108535389885b90dd2cfd5c7f85b3bf74edd90e",
-      "evidence_paraphrase": "Evaluate whether giving live feedback as the value of a slider changes is appropriate for the current context."
+      "evidence_paraphrase": "Consider showing live feedback as a macOS slider's value changes."
     },
     "tags": [
       "components",
@@ -302,22 +307,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether giving live feedback as the value of a slider changes is appropriate for the current context.",
+    "apple_native_rule": "Consider showing live feedback as a macOS slider's value changes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SLIDERS-0005",
-    "title": "Choose a slider style that matches peoples’ expectations",
+    "title": "Choose macOS slider styles by value behavior",
     "category": "components",
     "topic": "sliders",
     "subtopic": "macos",
     "statement": {
-      "en": "Apply the documented Sliders guidance to choose a slider style that matches peoples’ expectations.",
-      "ja": "「Sliders」において「Choose a slider style that matches peoples’ expectations」の指針を適用する。"
+      "en": "Choose a macOS slider style that matches people's expectations.",
+      "ja": "利用者の予想に合うmacOS slider styleを選ぶ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -334,7 +339,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a horizontal slider for a fixed start-to-end range.",
+      "Use a circular slider for values that repeat or continue indefinitely."
     ],
     "exceptions": [],
     "rationale": {
@@ -344,7 +350,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Sliders guidance to choose a slider style that matches peoples’ expectations.” in the documented Sliders context?"
+        "Does the design satisfy “Choose a macOS slider style that matches people's expectations.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -365,7 +371,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "2d817fcf7e6344888066f40261bd932ef708991f53dba53f3dd7e31f6e8e1835",
-      "evidence_paraphrase": "Apply the documented Sliders guidance to choose a slider style that matches peoples’ expectations."
+      "evidence_paraphrase": "Choose a macOS slider style that matches people's expectations."
     },
     "tags": [
       "components",
@@ -375,22 +381,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Sliders guidance to choose a slider style that matches peoples’ expectations.",
+    "apple_native_rule": "Choose a macOS slider style that matches people's expectations.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SLIDERS-0006",
-    "title": "Consider using a label to introduce a slider",
+    "title": "Consider introductory labels for macOS sliders",
     "category": "components",
     "topic": "sliders",
     "subtopic": "macos",
     "statement": {
-      "en": "Evaluate whether using a label to introduce a slider is appropriate for the current context.",
-      "ja": "using a label to introduce a sliderが現在の状況に適切か検討する。"
+      "en": "Consider using a label to introduce a macOS slider.",
+      "ja": "macOS sliderを説明するlabelの使用を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -407,7 +413,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use sentence-style capitalization and generally end the label with a colon."
     ],
     "exceptions": [],
     "rationale": {
@@ -417,7 +423,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using a label to introduce a slider is appropriate for the current context.” in the documented Sliders context?"
+        "Does the design satisfy “Consider using a label to introduce a macOS slider.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -438,7 +444,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "5dd4856bce1c251495f67d565cbc4a8d810edca949deb96200557c043bce4a63",
-      "evidence_paraphrase": "Evaluate whether using a label to introduce a slider is appropriate for the current context."
+      "evidence_paraphrase": "Consider using a label to introduce a macOS slider."
     },
     "tags": [
       "components",
@@ -448,22 +454,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using a label to introduce a slider is appropriate for the current context.",
+    "apple_native_rule": "Consider using a label to introduce a macOS slider.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SLIDERS-0007",
-    "title": "Use tick marks to increase clarity and accuracy",
+    "title": "Use macOS slider tick marks for clarity and accuracy",
     "category": "components",
     "topic": "sliders",
     "subtopic": "macos",
     "statement": {
-      "en": "Choose or apply tick marks to increase clarity and accuracy in the documented context.",
-      "ja": "該当する状況ではtick marks to increase clarity and accuracyを採用する。"
+      "en": "Use tick marks to clarify a macOS slider's scale and values.",
+      "ja": "macOS sliderのscaleと値を明確にするためtick markを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -480,7 +486,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Tick marks help people understand the measurement scale and locate specific values."
     ],
     "exceptions": [],
     "rationale": {
@@ -490,7 +496,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply tick marks to increase clarity and accuracy in the documented context.” in the documented Sliders context?"
+        "Does the design satisfy “Use tick marks to clarify a macOS slider's scale and values.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -511,7 +517,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "95286c7206e7a02d4e92755ff48aec130087b40155083c69779a88d974b45c73",
-      "evidence_paraphrase": "Choose or apply tick marks to increase clarity and accuracy in the documented context."
+      "evidence_paraphrase": "Use tick marks to clarify a macOS slider's scale and values."
     },
     "tags": [
       "components",
@@ -521,22 +527,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply tick marks to increase clarity and accuracy in the documented context.",
+    "apple_native_rule": "Use tick marks to clarify a macOS slider's scale and values.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SLIDERS-0008",
-    "title": "Consider adding labels to tick marks for even greater clarity",
+    "title": "Consider labels for macOS slider tick marks",
     "category": "components",
     "topic": "sliders",
     "subtopic": "macos",
     "statement": {
-      "en": "Evaluate whether adding labels to tick marks for even greater clarity is appropriate for the current context.",
-      "ja": "adding labels to tick marks for even greater clarityが現在の状況に適切か検討する。"
+      "en": "Consider labeling macOS slider tick marks when labels improve clarity.",
+      "ja": "clarityが向上する場合はmacOS sliderのtick markへのlabel追加を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -553,7 +559,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Minimum and maximum labels are often sufficient; nonlinear values can benefit from periodic labels.",
+      "Consider a tooltip that shows the thumb value when the pointer rests over it."
     ],
     "exceptions": [],
     "rationale": {
@@ -563,7 +570,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether adding labels to tick marks for even greater clarity is appropriate for the current context.” in the documented Sliders context?"
+        "Does the design satisfy “Consider labeling macOS slider tick marks when labels improve clarity.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -584,7 +591,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "43230ac612f7b523cfbf46ee450547fe6d71b6fce96cf252b7ee7f010bfd46c3",
-      "evidence_paraphrase": "Evaluate whether adding labels to tick marks for even greater clarity is appropriate for the current context."
+      "evidence_paraphrase": "Consider labeling macOS slider tick marks when labels improve clarity."
     },
     "tags": [
       "components",
@@ -594,22 +601,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether adding labels to tick marks for even greater clarity is appropriate for the current context.",
+    "apple_native_rule": "Consider labeling macOS slider tick marks when labels improve clarity.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SLIDERS-0009",
-    "title": "Prefer horizontal sliders",
+    "title": "Prefer horizontal sliders in visionOS",
     "category": "components",
     "topic": "sliders",
     "subtopic": "visionos",
     "statement": {
-      "en": "Favor horizontal sliders when the documented conditions apply.",
-      "ja": "該当条件ではhorizontal slidersを優先する。"
+      "en": "Prefer horizontal sliders in visionOS.",
+      "ja": "visionOSではhorizontal sliderを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -626,7 +633,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Side-to-side gestures are generally easier than vertical gestures in visionOS."
     ],
     "exceptions": [],
     "rationale": {
@@ -636,7 +643,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor horizontal sliders when the documented conditions apply.” in the documented Sliders context?"
+        "Does the design satisfy “Prefer horizontal sliders in visionOS.” in the documented Sliders context?"
       ]
     },
     "testability": "manual",
@@ -657,7 +664,7 @@
       "retrieved_at": "2026-07-21T11:15:20.934Z",
       "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
       "source_sentence_hash": "47a863b2d7cf12fc1c56ca4835c1c6830b0ea1b75e4930dccb8d1720e1b55dd4",
-      "evidence_paraphrase": "Favor horizontal sliders when the documented conditions apply."
+      "evidence_paraphrase": "Prefer horizontal sliders in visionOS."
     },
     "tags": [
       "components",
@@ -667,7 +674,306 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor horizontal sliders when the documented conditions apply.",
+    "apple_native_rule": "Prefer horizontal sliders in visionOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SLIDERS-0010",
+    "title": "Customize a slider only when it adds value",
+    "category": "components",
+    "topic": "sliders",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Customize a slider's appearance only when the customization adds value.",
+      "ja": "sliderのappearanceはカスタマイズに価値がある場合に限って変更する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "sliders"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Track color, thumb image or tint, and endpoint icons can blend with the app design or communicate intent."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sliders experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSlidersの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Customize a slider's appearance only when the customization adds value.” in the documented Sliders context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sliders",
+      "page_title": "Sliders",
+      "section_path": [
+        "Sliders",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.934Z",
+      "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+      "source_sentence_hash": "cf4d677323dfea6cbf7d2e9dd13e3e2c2f035c8b83ab75f6022b223821a6e005",
+      "evidence_paraphrase": "Customize a slider's appearance only when the customization adds value."
+    },
+    "tags": [
+      "components",
+      "sliders",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Customize a slider's appearance only when the customization adds value.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SLIDERS-0011",
+    "title": "Avoid sliders on tvOS",
+    "category": "components",
+    "topic": "sliders",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid using sliders on tvOS.",
+      "ja": "tvOSでsliderを使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [
+        "sliders"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sliders experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSlidersの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid using sliders on tvOS.” in the documented Sliders context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sliders",
+      "page_title": "Sliders",
+      "section_path": [
+        "Sliders",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.934Z",
+      "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+      "source_sentence_hash": "ee9dc44309c151c6a72bb7d6eed9032255e62bfabb7c5104deebfba98ced2934",
+      "evidence_paraphrase": "Avoid using sliders on tvOS."
+    },
+    "tags": [
+      "components",
+      "sliders",
+      "platform-considerations"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid using sliders on tvOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SLIDERS-0012",
+    "title": "Consider a thumb-value tooltip for a macOS slider",
+    "category": "components",
+    "topic": "sliders",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Consider showing a macOS slider's thumb value in a tooltip on pointer hover.",
+      "ja": "macOS sliderのthumbにpointerを重ねたとき値をtooltipで表示することを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "sliders"
+      ],
+      "modalities": [
+        "pointer"
+      ]
+    },
+    "conditions": [
+      "The tooltip appears while people hold the pointer over the thumb."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sliders experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSlidersの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider showing a macOS slider's thumb value in a tooltip on pointer hover.” in the documented Sliders context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sliders",
+      "page_title": "Sliders",
+      "section_path": [
+        "Sliders",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.934Z",
+      "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+      "source_sentence_hash": "cf3c7b19b986c6d0c8dcb6132a87963111a10fe02e3ba8793ef2f0c2762b11f5",
+      "evidence_paraphrase": "Consider showing a macOS slider's thumb value in a tooltip on pointer hover."
+    },
+    "tags": [
+      "components",
+      "sliders",
+      "platform-considerations",
+      "macos",
+      "pointer"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Consider showing a macOS slider's thumb value in a tooltip on pointer hover.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SLIDERS-0013",
+    "title": "Use custom watchOS slider glyphs when necessary",
+    "category": "components",
+    "topic": "sliders",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "When necessary, use custom watchOS slider glyphs that communicate the slider's purpose.",
+      "ja": "必要な場合はsliderの目的を伝えるcustom glyphをwatchOS sliderで使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [
+        "sliders"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The system displays plus and minus signs by default."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sliders experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSlidersの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When necessary, use custom watchOS slider glyphs that communicate the slider's purpose.” in the documented Sliders context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sliders",
+      "page_title": "Sliders",
+      "section_path": [
+        "Sliders",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:20.934Z",
+      "source_hash": "5e1fe9c337504bf94295620d78c6bb6976aadd8e5fe7ddfeb3bdf500d16f1309",
+      "source_sentence_hash": "981ba22c5a0349c1bb49c32c00e8f0aebf058856659830012a0581dcc290638b",
+      "evidence_paraphrase": "When necessary, use custom watchOS slider glyphs that communicate the slider's purpose."
+    },
+    "tags": [
+      "components",
+      "sliders",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When necessary, use custom watchOS slider glyphs that communicate the slider's purpose.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

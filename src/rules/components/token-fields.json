@@ -6,12 +6,12 @@
     "topic": "token-fields",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether providing additional ways to convert text into tokens is appropriate for the current context.",
-      "ja": "providing additional ways to convert text into tokensが現在の状況に適切か検討する。"
+      "en": "Consider additional shortcuts for converting text into tokens.",
+      "ja": "textをtokenへ変換する追加shortcutを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -28,7 +28,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Comma entry already performs the default conversion.",
+      "Return is an example additional shortcut, not a required key binding."
     ],
     "exceptions": [],
     "rationale": {
@@ -38,7 +39,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether providing additional ways to convert text into tokens is appropriate for the current context.” in the documented Token fields context?"
+        "Does the design satisfy “Consider additional shortcuts for converting text into tokens.” in the documented Token fields context?"
       ]
     },
     "testability": "manual",
@@ -55,10 +56,10 @@
         "Token fields",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:26.955Z",
+      "retrieved_at": "2026-07-21T22:35:00Z",
       "source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96",
       "source_sentence_hash": "9c75501bb2d1e1115bde0e8fcdc477168776a54e95ef77989b96072635900e4c",
-      "evidence_paraphrase": "Evaluate whether providing additional ways to convert text into tokens is appropriate for the current context."
+      "evidence_paraphrase": "Consider additional shortcuts for converting text into tokens."
     },
     "tags": [
       "components",
@@ -67,7 +68,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether providing additional ways to convert text into tokens is appropriate for the current context.",
+    "apple_native_rule": "Consider additional shortcuts for converting text into tokens.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -77,14 +78,86 @@
     "topic": "token-fields",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether customizing the delay the system uses before showing suggested tokens is appropriate for the current context.",
-      "ja": "customizing the delay the system uses before showing suggested tokensが現在の状況に適切か検討する。"
+      "en": "Consider a comfortable delay before showing suggested tokens.",
+      "ja": "suggested token表示前のcomfortableなdelayを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "token-fields"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The app suggests tokens while people type.",
+      "Adjust the default immediate presentation if it distracts from typing."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Token fields experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToken fieldsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider a comfortable delay before showing suggested tokens.” in the documented Token fields context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/token-fields",
+      "page_title": "Token fields",
+      "section_path": [
+        "Token fields",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:35:00Z",
+      "source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96",
+      "source_sentence_hash": "f802bb0c25774d118cba1ce9e4c4e0af07813c0b07ae065b90771a873c806dff",
+      "evidence_paraphrase": "Consider a comfortable delay before showing suggested tokens."
+    },
+    "tags": [
+      "components",
+      "token-fields",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Consider a comfortable delay before showing suggested tokens.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOKEN-FIELDS-0003",
+    "title": "Provide useful token options or information in a context menu",
+    "category": "components",
+    "topic": "token-fields",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use a context menu to add useful token options or information.",
+      "ja": "context menuでtokenに有用なoptionまたはinformationを追加する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
     "scope": {
       "portability": "apple-component-specific",
       "platforms": [
@@ -109,7 +182,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether customizing the delay the system uses before showing suggested tokens is appropriate for the current context.” in the documented Token fields context?"
+        "Does the design satisfy “Use a context menu to add useful token options or information.” in the documented Token fields context?"
       ]
     },
     "testability": "manual",
@@ -126,10 +199,10 @@
         "Token fields",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:26.955Z",
+      "retrieved_at": "2026-07-21T22:35:00Z",
       "source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96",
-      "source_sentence_hash": "f802bb0c25774d118cba1ce9e4c4e0af07813c0b07ae065b90771a873c806dff",
-      "evidence_paraphrase": "Evaluate whether customizing the delay the system uses before showing suggested tokens is appropriate for the current context."
+      "source_sentence_hash": "55c286aac0f3341dd94df83932fc0f3a5b57b8c2ac5178b9670edc127aa84083",
+      "evidence_paraphrase": "Use a context menu to add useful token options or information."
     },
     "tags": [
       "components",
@@ -138,7 +211,86 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether customizing the delay the system uses before showing suggested tokens is appropriate for the current context.",
+    "apple_native_rule": "Use a context menu to add useful token options or information.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOKEN-FIELDS-0004",
+    "title": "Avoid using token fields on iOS, iPadOS, tvOS, visionOS, or watchOS",
+    "category": "components",
+    "topic": "token-fields",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid using token fields outside macOS.",
+      "ja": "macOS以外でtoken fieldを使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "token-fields"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Token fields are a macOS-only component."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Token fields experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるToken fieldsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid using token fields outside macOS.” in the documented Token fields context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/token-fields",
+      "page_title": "Token fields",
+      "section_path": [
+        "Token fields",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-21T22:35:00Z",
+      "source_hash": "3ae24bde17764abb88e0019d3d7aea174f210548c55e7d6656d345a809048e96",
+      "source_sentence_hash": "b38bd48758d804c1a01b9f46505088557a1874f93a3e4d63037dd18e5ba9c1e8",
+      "evidence_paraphrase": "Avoid using token fields outside macOS."
+    },
+    "tags": [
+      "components",
+      "token-fields",
+      "platform-considerations"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid using token fields outside macOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-INPUTS-REMOTES-0001",
-    "title": "Prefer using standard gestures to perform standard actions",
+    "title": "Prefer standard gestures for standard remote actions",
     "category": "inputs",
     "topic": "remotes",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Favor using standard gestures to perform standard actions when the documented conditions apply.",
-      "ja": "該当条件ではusing standard gestures to perform standard actionsを優先する。"
+      "en": "Prefer standard remote gestures for standard tvOS actions.",
+      "ja": "tvOSのstandard actionにはstandard remote gestureを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -29,9 +29,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Preserve familiar remote behavior in ordinary app use."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Custom gestures can be appropriate during active gameplay."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
@@ -39,7 +41,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor using standard gestures to perform standard actions when the documented conditions apply.” in the documented Remotes context?"
+        "Does the design satisfy “Prefer standard remote gestures for standard tvOS actions.” in the documented Remotes context?"
       ]
     },
     "testability": "manual",
@@ -56,10 +58,10 @@
         "Remotes",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:15.573Z",
+      "retrieved_at": "2026-07-21T20:11:01Z",
       "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
       "source_sentence_hash": "f529839c20138298b3abe868421b756df9bc27702c303b498964e114c671ec7b",
-      "evidence_paraphrase": "Favor using standard gestures to perform standard actions when the documented conditions apply."
+      "evidence_paraphrase": "Prefer standard remote gestures for standard tvOS actions."
     },
     "tags": [
       "inputs",
@@ -69,22 +71,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor using standard gestures to perform standard actions when the documented conditions apply.",
+    "apple_native_rule": "Prefer standard remote gestures for standard tvOS actions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-REMOTES-0002",
-    "title": "Be consistent with the tvOS focus experience",
+    "title": "Keep remote gestures consistent with tvOS focus",
     "category": "inputs",
     "topic": "remotes",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Remotes guidance to be consistent with the tvOS focus experience.",
-      "ja": "「Remotes」において「Be consistent with the tvOS focus experience」の指針を適用する。"
+      "en": "Combine remote gestures with tvOS focus behavior in familiar ways.",
+      "ja": "remote gestureをtvOS focus behaviorと馴染みのある方法で組み合わせる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -97,11 +99,12 @@
       ],
       "components": [],
       "modalities": [
+        "gesture",
         "remote-control"
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Move focus in the same direction as the gesture."
     ],
     "exceptions": [],
     "rationale": {
@@ -111,7 +114,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Remotes guidance to be consistent with the tvOS focus experience.” in the documented Remotes context?"
+        "Does the design satisfy “Combine remote gestures with tvOS focus behavior in familiar ways.” in the documented Remotes context?"
       ]
     },
     "testability": "manual",
@@ -128,10 +131,10 @@
         "Remotes",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:15.573Z",
+      "retrieved_at": "2026-07-21T20:11:01Z",
       "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
       "source_sentence_hash": "bfdfb0b7bc5bb670102883e989ff75914abadaf1990f124391f26512808173be",
-      "evidence_paraphrase": "Apply the documented Remotes guidance to be consistent with the tvOS focus experience."
+      "evidence_paraphrase": "Combine remote gestures with tvOS focus behavior in familiar ways."
     },
     "tags": [
       "inputs",
@@ -140,22 +143,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Remotes guidance to be consistent with the tvOS focus experience.",
+    "apple_native_rule": "Combine remote gestures with tvOS focus behavior in familiar ways.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-REMOTES-0003",
-    "title": "Provide clear feedback that shows people what happens when they make gestures in your app",
+    "title": "Provide clear remote-gesture feedback",
     "category": "inputs",
     "topic": "remotes",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make clear feedback that shows people what happens when they make gestures in your app available when applicable.",
-      "ja": "必要な場合にclear feedback that shows people what happens when they make gestures in your appを利用可能にする。"
+      "en": "Provide clear feedback that shows the result of remote gestures.",
+      "ja": "remote gestureの結果を示す明確なfeedbackを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -173,7 +176,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Make the available gesture and its result understandable before or as it occurs."
     ],
     "exceptions": [],
     "rationale": {
@@ -183,7 +186,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make clear feedback that shows people what happens when they make gestures in your app available when applicable.” in the documented Remotes context?"
+        "Does the design satisfy “Provide clear feedback that shows the result of remote gestures.” in the documented Remotes context?"
       ]
     },
     "testability": "manual",
@@ -200,10 +203,10 @@
         "Remotes",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:15.573Z",
+      "retrieved_at": "2026-07-21T20:11:01Z",
       "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
       "source_sentence_hash": "661fc37a62950f5be8c8192107929b97944976eb1971e7c51387805ac165fa25",
-      "evidence_paraphrase": "Make clear feedback that shows people what happens when they make gestures in your app available when applicable."
+      "evidence_paraphrase": "Provide clear feedback that shows the result of remote gestures."
     },
     "tags": [
       "inputs",
@@ -213,22 +216,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make clear feedback that shows people what happens when they make gestures in your app available when applicable.",
+    "apple_native_rule": "Provide clear feedback that shows the result of remote gestures.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-REMOTES-0004",
-    "title": "Consider using the position of a tap to aid with navigation or gameplay",
+    "title": "Consider positional remote taps",
     "category": "inputs",
     "topic": "remotes",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether using the position of a tap to aid with navigation or gameplay is appropriate for the current context.",
-      "ja": "using the position of a tap to aid with navigation or gameplayが現在の状況に適切か検討する。"
+      "en": "Consider using remote tap position to aid navigation or gameplay.",
+      "ja": "navigationまたはgameplayを助けるためremote tap位置の利用を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -241,12 +244,12 @@
       ],
       "components": [],
       "modalities": [
-        "touch",
+        "gesture",
         "remote-control"
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use positional taps only when the behavior is contextual, intuitive, and discoverable."
     ],
     "exceptions": [],
     "rationale": {
@@ -256,7 +259,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using the position of a tap to aid with navigation or gameplay is appropriate for the current context.” in the documented Remotes context?"
+        "Does the design satisfy “Consider using remote tap position to aid navigation or gameplay.” in the documented Remotes context?"
       ]
     },
     "testability": "manual",
@@ -273,10 +276,10 @@
         "Remotes",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:15.573Z",
+      "retrieved_at": "2026-07-21T20:11:01Z",
       "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
       "source_sentence_hash": "5b1f361d3c2752567c58af30a547265fcba9b84c96b0414d6f746f8a8f867ef7",
-      "evidence_paraphrase": "Evaluate whether using the position of a tap to aid with navigation or gameplay is appropriate for the current context."
+      "evidence_paraphrase": "Consider using remote tap position to aid navigation or gameplay."
     },
     "tags": [
       "inputs",
@@ -286,22 +289,317 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using the position of a tap to aid with navigation or gameplay is appropriate for the current context.",
+    "apple_native_rule": "Consider using remote tap position to aid navigation or gameplay.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-INPUTS-REMOTES-0005",
-    "title": "Respond correctly to the Play/Pause button during media playback",
+    "title": "Map Play/Pause to media playback controls",
     "category": "inputs",
     "topic": "remotes",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Remotes guidance to respond correctly to the Play/Pause button during media playback.",
-      "ja": "「Remotes」において「Respond correctly to the Play/Pause button during media playback」の指針を適用する。"
+      "en": "During media playback, make Play/Pause play, pause, or resume the content.",
+      "ja": "media playback中はPlay/Pauseでcontentをplay、pause、resumeする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "A tvOS app is playing music or video."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “During media playback, make Play/Pause play, pause, or resume the content.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "2e5aadfa288a31a82c961d2b1eeadd7faab8a34db5eaa1861021bb2ef5bf6ba2",
+      "evidence_paraphrase": "During media playback, make Play/Pause play, pause, or resume the content."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "During media playback, make Play/Pause play, pause, or resume the content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0006",
+    "title": "Limit custom remote gestures to fitting contexts",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Define a custom remote gesture only when it fits the tvOS experience.",
+      "ja": "tvOS experienceに合う場合だけcustom remote gestureを定義する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture",
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "Gameplay can justify a discoverable custom gesture."
+    ],
+    "exceptions": [
+      "Prefer standard gestures in most nongame contexts."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Define a custom remote gesture only when it fits the tvOS experience.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "3dc1f921e4c34d0f629c3cf51d79985a67f3542bfed2e83db23162ac1b4669d4",
+      "evidence_paraphrase": "Define a custom remote gesture only when it fits the tvOS experience."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "best-practices",
+      "gesture"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Define a custom remote gesture only when it fits the tvOS experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0007",
+    "title": "Distinguish remote presses from taps",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Distinguish intentional remote presses from taps.",
+      "ja": "意図的なremote pressとtapを区別する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture",
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "Use presses for selection, confirmation, and intentional gameplay actions; reserve taps for navigation or additional information."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Distinguish intentional remote presses from taps.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "f773459ee924c053e76741ae0e5faa77f5459290b551b3d00f58e0da343923b3",
+      "evidence_paraphrase": "Distinguish intentional remote presses from taps."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "best-practices",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Distinguish intentional remote presses from taps.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0008",
+    "title": "Avoid responding to inadvertent remote taps",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid responding to inadvertent remote taps.",
+      "ja": "意図しないremote tapへの応答を避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture",
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "A tap can occur while a person rests a thumb, moves the remote, or hands it to someone."
+    ],
+    "exceptions": [
+      "In particular, avoid tap responses during live video playback."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid responding to inadvertent remote taps.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "f773459ee924c053e76741ae0e5faa77f5459290b551b3d00f58e0da343923b3",
+      "evidence_paraphrase": "Avoid responding to inadvertent remote taps."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "best-practices",
+      "touch",
+      "remote-control"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid responding to inadvertent remote taps.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0009",
+    "title": "Open the parent screen for Back by default",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "In almost all cases, open the current screen's parent when a person presses Back.",
+      "ja": "ほぼすべての場合、Backが押されたらcurrent screenのparentを開く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -318,9 +616,11 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the app hierarchy, not necessarily navigation history, to identify the parent."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "At the top level, the parent is the Apple TV Home Screen; active gameplay uses the pause-menu flow."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
@@ -328,7 +628,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Remotes guidance to respond correctly to the Play/Pause button during media playback.” in the documented Remotes context?"
+        "Does the design satisfy “In almost all cases, open the current screen's parent when a person presses Back.” in the documented Remotes context?"
       ]
     },
     "testability": "manual",
@@ -345,10 +645,10 @@
         "Remotes",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:15.573Z",
+      "retrieved_at": "2026-07-21T20:11:01Z",
       "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
-      "source_sentence_hash": "2e5aadfa288a31a82c961d2b1eeadd7faab8a34db5eaa1861021bb2ef5bf6ba2",
-      "evidence_paraphrase": "Apply the documented Remotes guidance to respond correctly to the Play/Pause button during media playback."
+      "source_sentence_hash": "4bcd5c02b266c524acd4b96967c07203e017c8fa9c34f6a6737ec29f93eca2bf",
+      "evidence_paraphrase": "In almost all cases, open the current screen's parent when a person presses Back."
     },
     "tags": [
       "inputs",
@@ -357,7 +657,946 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Remotes guidance to respond correctly to the Play/Pause button during media playback.",
+    "apple_native_rule": "In almost all cases, open the current screen's parent when a person presses Back.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0010",
+    "title": "Open a pause menu for Back during gameplay",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "During active gameplay, open an in-game pause menu when a person presses Back.",
+      "ja": "active gameplay中にBackが押されたらin-game pause menuを開く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "Repeated accidental Back presses could otherwise disrupt gameplay."
+    ],
+    "exceptions": [
+      "Provide another interaction in the pause menu for navigating to the main game menu."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “During active gameplay, open an in-game pause menu when a person presses Back.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "4bcd5c02b266c524acd4b96967c07203e017c8fa9c34f6a6737ec29f93eca2bf",
+      "evidence_paraphrase": "During active gameplay, open an in-game pause menu when a person presses Back."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "During active gameplay, open an in-game pause menu when a person presses Back.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0011",
+    "title": "Close the pause menu and resume for Back",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When an in-game pause menu is open, make Back close it and resume gameplay.",
+      "ja": "in-game pause menuが開いているときBackで閉じてgameplayを再開する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "The tvOS game is paused in its in-game pause menu."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When an in-game pause menu is open, make Back close it and resume gameplay.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "4bcd5c02b266c524acd4b96967c07203e017c8fa9c34f6a6737ec29f93eca2bf",
+      "evidence_paraphrase": "When an in-game pause menu is open, make Back close it and resume gameplay."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When an in-game pause menu is open, make Back close it and resume gameplay.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0012",
+    "title": "Map app swipes to navigation and focus",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "buttons",
+    "statement": {
+      "en": "Make a remote touch-surface swipe navigate or change focus in a tvOS app.",
+      "ja": "tvOS appではremote touch-surface swipeでnavigateまたはfocus変更する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture",
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "The remote touch surface receives a swipe in a tvOS app."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make a remote touch-surface swipe navigate or change focus in a tvOS app.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Buttons"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "0c315a21cd7f07c506e788c1d4aa62980f2d26413114ad1955405fa589c9b920",
+      "evidence_paraphrase": "Make a remote touch-surface swipe navigate or change focus in a tvOS app."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "buttons",
+      "touch",
+      "gesture"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make a remote touch-surface swipe navigate or change focus in a tvOS app.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0013",
+    "title": "Map game swipes to directional-pad behavior",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "buttons",
+    "statement": {
+      "en": "Make a remote touch-surface swipe perform directional-pad behavior in a tvOS game.",
+      "ja": "tvOS gameではremote touch-surface swipeをdirectional-pad behaviorとして扱う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture",
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "The remote touch surface receives a swipe in a tvOS game."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make a remote touch-surface swipe perform directional-pad behavior in a tvOS game.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Buttons"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "0c315a21cd7f07c506e788c1d4aa62980f2d26413114ad1955405fa589c9b920",
+      "evidence_paraphrase": "Make a remote touch-surface swipe perform directional-pad behavior in a tvOS game."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "buttons",
+      "touch",
+      "gesture"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make a remote touch-surface swipe perform directional-pad behavior in a tvOS game.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0014",
+    "title": "Map app presses to activation or deeper navigation",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "buttons",
+    "statement": {
+      "en": "Make a remote touch-surface press activate a control or navigate deeper in a tvOS app.",
+      "ja": "tvOS appではremote touch-surface pressでcontrolをactivateまたはより深くnavigateする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture",
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "The remote touch surface receives a press in a tvOS app."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make a remote touch-surface press activate a control or navigate deeper in a tvOS app.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Buttons"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "ab55b4d790098c18126243f5806498684a4f05f63e2c9afe85ff01c2747ef571",
+      "evidence_paraphrase": "Make a remote touch-surface press activate a control or navigate deeper in a tvOS app."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "buttons",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make a remote touch-surface press activate a control or navigate deeper in a tvOS app.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0015",
+    "title": "Map game presses to primary-button behavior",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "buttons",
+    "statement": {
+      "en": "Make a remote touch-surface press perform primary-button behavior in a tvOS game.",
+      "ja": "tvOS gameではremote touch-surface pressをprimary-button behaviorとして扱う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture",
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "The remote touch surface receives a press in a tvOS game."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make a remote touch-surface press perform primary-button behavior in a tvOS game.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Buttons"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "ab55b4d790098c18126243f5806498684a4f05f63e2c9afe85ff01c2747ef571",
+      "evidence_paraphrase": "Make a remote touch-surface press perform primary-button behavior in a tvOS game."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "buttons",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make a remote touch-surface press perform primary-button behavior in a tvOS game.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0016",
+    "title": "Map app Back presses to outward navigation",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "buttons",
+    "statement": {
+      "en": "Make Back return to the previous screen or exit to Home in a tvOS app.",
+      "ja": "tvOS appではBackでprevious screenへ戻るかHomeへ出る。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "A person presses Back in a tvOS app."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make Back return to the previous screen or exit to Home in a tvOS app.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Buttons"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "699575b940705f1d7d3ce66d6f48e9172b0b6dd3aec1edcc3625c334ac6df06b",
+      "evidence_paraphrase": "Make Back return to the previous screen or exit to Home in a tvOS app."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "buttons"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make Back return to the previous screen or exit to Home in a tvOS app.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0017",
+    "title": "Map game Back presses to pause or outward navigation",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "buttons",
+    "statement": {
+      "en": "Make Back pause or resume gameplay, navigate outward, or exit in a tvOS game.",
+      "ja": "tvOS gameではBackでgameplayをpauseまたはresumeし、外側へnavigateまたはexitする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "A person presses Back in a tvOS game."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make Back pause or resume gameplay, navigate outward, or exit in a tvOS game.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Buttons"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "699575b940705f1d7d3ce66d6f48e9172b0b6dd3aec1edcc3625c334ac6df06b",
+      "evidence_paraphrase": "Make Back pause or resume gameplay, navigate outward, or exit in a tvOS game."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "buttons"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make Back pause or resume gameplay, navigate outward, or exit in a tvOS game.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0018",
+    "title": "Map game Play/Pause presses to secondary behavior",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "buttons",
+    "statement": {
+      "en": "Make Play/Pause perform secondary-button behavior or skip an intro in a tvOS game.",
+      "ja": "tvOS gameではPlay/Pauseをsecondary-button behaviorまたはintro skipに使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "A person presses Play/Pause in a tvOS game."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make Play/Pause perform secondary-button behavior or skip an intro in a tvOS game.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Buttons"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "0a00b5bd719cc63ca9201b00651e75c515166291b052014a6b067abd41e21347",
+      "evidence_paraphrase": "Make Play/Pause perform secondary-button behavior or skip an intro in a tvOS game."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "buttons"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make Play/Pause perform secondary-button behavior or skip an intro in a tvOS game.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0019",
+    "title": "Open an EPG for guide or browse presses",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "compatible-remotes",
+    "statement": {
+      "en": "Open the app's EPG when a person presses a compatible remote's guide or browse button.",
+      "ja": "compatible remoteのguideまたはbrowse buttonが押されたらappのEPGを開く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "The live-viewing app provides an EPG."
+    ],
+    "exceptions": [
+      "If the app has no EPG, the system routes the press to the device's default guide app."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Open the app's EPG when a person presses a compatible remote's guide or browse button.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Compatible remotes"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "77b32b89f302945bae87fa449068c0e59080f0918fc5429f4e5af36d94a39d01",
+      "evidence_paraphrase": "Open the app's EPG when a person presses a compatible remote's guide or browse button."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "compatible-remotes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Open the app's EPG when a person presses a compatible remote's guide or browse button.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0020",
+    "title": "Navigate an EPG with page buttons",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "compatible-remotes",
+    "statement": {
+      "en": "Use a compatible remote's page up and page down buttons to navigate an open EPG.",
+      "ja": "open EPGをcompatible remoteのpage upとpage down buttonでnavigateする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "A person is viewing the app's EPG."
+    ],
+    "exceptions": [
+      "Siri Remote touch-surface upper and lower taps can also browse the EPG."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a compatible remote's page up and page down buttons to navigate an open EPG.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Compatible remotes"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "77b32b89f302945bae87fa449068c0e59080f0918fc5429f4e5af36d94a39d01",
+      "evidence_paraphrase": "Use a compatible remote's page up and page down buttons to navigate an open EPG."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "compatible-remotes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use a compatible remote's page up and page down buttons to navigate an open EPG.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0021",
+    "title": "Avoid repurposing EPG-browsing buttons",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "compatible-remotes",
+    "statement": {
+      "en": "Avoid assigning other actions to EPG-browsing buttons while the EPG is open.",
+      "ja": "EPGが開いている間はEPG-browsing buttonへ別のactionを割り当てない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "A person is browsing the app's EPG."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid assigning other actions to EPG-browsing buttons while the EPG is open.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Compatible remotes"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "77b32b89f302945bae87fa449068c0e59080f0918fc5429f4e5af36d94a39d01",
+      "evidence_paraphrase": "Avoid assigning other actions to EPG-browsing buttons while the EPG is open."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "compatible-remotes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid assigning other actions to EPG-browsing buttons while the EPG is open.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-INPUTS-REMOTES-0022",
+    "title": "Change channels with page buttons during playback",
+    "category": "inputs",
+    "topic": "remotes",
+    "subtopic": "compatible-remotes",
+    "statement": {
+      "en": "During content playback, make a compatible remote's page up and page down buttons change channels.",
+      "ja": "content playback中はcompatible remoteのpage upとpage down buttonでchannelを変更する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [],
+      "modalities": [
+        "remote-control"
+      ]
+    },
+    "conditions": [
+      "Channel-based content is playing rather than an EPG being browsed."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Remotes experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるRemotesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “During content playback, make a compatible remote's page up and page down buttons change channels.” in the documented Remotes context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/remotes",
+      "page_title": "Remotes",
+      "section_path": [
+        "Remotes",
+        "Compatible remotes"
+      ],
+      "retrieved_at": "2026-07-21T20:11:01Z",
+      "source_hash": "1fa8de3cc9bfbe1e88d392361b99e9dbd3f1f51cc10fd33aed069cfc86ff8a0a",
+      "source_sentence_hash": "2272ddeddeab99c4d7af0e573842f679c2eec6cc2a9bf4b010976bcdb52aeeec",
+      "evidence_paraphrase": "During content playback, make a compatible remote's page up and page down buttons change channels."
+    },
+    "tags": [
+      "inputs",
+      "remotes",
+      "compatible-remotes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "During content playback, make a compatible remote's page up and page down buttons change channels.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

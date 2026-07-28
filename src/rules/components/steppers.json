@@ -61,7 +61,7 @@
         "Steppers",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:23.601Z",
+      "retrieved_at": "2026-07-21T22:33:00Z",
       "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56",
       "source_sentence_hash": "5c20e52357d0697b69d381e0055db96713e2d948116b6492ff30be90e67a4a70",
       "evidence_paraphrase": "Apply the documented Steppers guidance to make the value that a stepper affects obvious."
@@ -72,23 +72,24 @@
       "best-practices"
     ],
     "priority_rank": 6,
-    "status": "active",
+    "status": "deprecated",
     "apple_native_rule": "Apply the documented Steppers guidance to make the value that a stepper affects obvious.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.",
+    "deprecated_at": "2026-07-23T19:13:39.162Z"
   },
   {
     "id": "HIG-COMPONENTS-STEPPERS-0002",
-    "title": "Consider pairing a stepper with a text field when large value changes are likely",
+    "title": "Consider a text field for large stepper changes",
     "category": "components",
     "topic": "steppers",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether pairing a stepper with a text field when large value changes are likely is appropriate for the current context.",
-      "ja": "pairing a stepper with a text field when large value changes are likelyが現在の状況に適切か検討する。"
+      "en": "When large value changes are likely, consider pairing a stepper with a text field.",
+      "ja": "大きな値変更が想定される場合はstepperとtext fieldの併用を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -111,7 +112,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A standalone stepper suits small changes that require only a few taps or clicks.",
+      "A text field lets people enter a specific value when values vary widely."
     ],
     "exceptions": [],
     "rationale": {
@@ -121,7 +123,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether pairing a stepper with a text field when large value changes are likely is appropriate for the current context.” in the documented Steppers context?"
+        "Does the design satisfy “When large value changes are likely, consider pairing a stepper with a text field.” in the documented Steppers context?"
       ]
     },
     "testability": "manual",
@@ -138,10 +140,10 @@
         "Steppers",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:15:23.601Z",
+      "retrieved_at": "2026-07-21T22:33:00Z",
       "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56",
       "source_sentence_hash": "e3aaa75d0a4e873857f5127aa90dc4edbc08846b133dad236e653fd4a0f3f9be",
-      "evidence_paraphrase": "Evaluate whether pairing a stepper with a text field when large value changes are likely is appropriate for the current context."
+      "evidence_paraphrase": "When large value changes are likely, consider pairing a stepper with a text field."
     },
     "tags": [
       "components",
@@ -150,7 +152,233 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether pairing a stepper with a text field when large value changes are likely is appropriate for the current context.",
+    "apple_native_rule": "When large value changes are likely, consider pairing a stepper with a text field.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-STEPPERS-0003",
+    "title": "Consider Shift-click for large macOS stepper ranges",
+    "category": "components",
+    "topic": "steppers",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Consider Shift-click for quick changes in a large macOS stepper range.",
+      "ja": "largeなmacOS stepper rangeのquick changeにはShift-clickを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "steppers"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The app benefits from changing the value by more than the default increment."
+    ],
+    "exceptions": [
+      "Ten times the default increment is an example, not a required multiplier."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Steppers experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSteppersの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider Shift-click for quick changes in a large macOS stepper range.” in the documented Steppers context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/steppers",
+      "page_title": "Steppers",
+      "section_path": [
+        "Steppers",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T22:33:00Z",
+      "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56",
+      "source_sentence_hash": "f6b2a9aae7956301faec897918b80c3eaf2b54c18f030340c440688c1568d696",
+      "evidence_paraphrase": "Consider Shift-click for quick changes in a large macOS stepper range."
+    },
+    "tags": [
+      "components",
+      "steppers",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Consider Shift-click for quick changes in a large macOS stepper range.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-STEPPERS-0004",
+    "title": "Avoid using steppers on watchOS or tvOS",
+    "category": "components",
+    "topic": "steppers",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid using steppers on watchOS or tvOS.",
+      "ja": "watchOSまたはtvOSでstepperを使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "watchos",
+        "tvos"
+      ],
+      "devices": [
+        "apple-watch",
+        "apple-tv"
+      ],
+      "components": [
+        "steppers"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Steppers have no additional considerations for iOS, iPadOS, or visionOS."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Steppers experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSteppersの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid using steppers on watchOS or tvOS.” in the documented Steppers context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/steppers",
+      "page_title": "Steppers",
+      "section_path": [
+        "Steppers",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-21T22:33:00Z",
+      "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56",
+      "source_sentence_hash": "8638dc997447d220917c81fba0c837c694eb7cd40170bb91c6e4d8a22c16572f",
+      "evidence_paraphrase": "Avoid using steppers on watchOS or tvOS."
+    },
+    "tags": [
+      "components",
+      "steppers",
+      "platform-considerations"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid using steppers on watchOS or tvOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-STEPPERS-0005",
+    "title": "Make the value a stepper changes obvious",
+    "category": "components",
+    "topic": "steppers",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Ensure people know which value a stepper changes.",
+      "ja": "stepperがどの値を変更するか利用者に明確に伝える。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [
+        "steppers"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "A stepper doesn't display a value itself.",
+      "Place the stepper next to a field that displays its current value."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Steppers experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSteppersの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure people know which value a stepper changes.” in the documented Steppers context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/steppers",
+      "page_title": "Steppers",
+      "section_path": [
+        "Steppers",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T22:33:00Z",
+      "source_hash": "735c15a592c519c481d1a9354d103e1dc3cadcda9ed1afd707cf4a0c54054b56",
+      "source_sentence_hash": "9344f10793b8dfc989cbb5db41ce19ff1b2944cb566c04047dada5ec6064ebc9",
+      "evidence_paraphrase": "Ensure people know which value a stepper changes."
+    },
+    "tags": [
+      "components",
+      "steppers",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Ensure people know which value a stepper changes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

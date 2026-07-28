@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-PATTERNS-UNDO-AND-REDO-0001",
-    "title": "Help people predict the results of undo and redo as much as possible",
+    "title": "Make undo and redo outcomes predictable",
     "category": "patterns",
     "topic": "undo-and-redo",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Undo and redo guidance to help people predict the results of undo and redo as much as possible.",
-      "ja": "「Undo and redo」において「Help people predict the results of undo and redo as much as possible」の指針を適用する。"
+      "en": "Help people predict the result of an undo or redo before they perform it.",
+      "ja": "undoまたはredoを実行する前に結果を予測できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -32,7 +32,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "On iPhone, an undo alert can describe the result and offer undo or cancellation.",
+      "When menu items are present, identify the result in their labels."
     ],
     "exceptions": [],
     "rationale": {
@@ -42,7 +43,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Undo and redo guidance to help people predict the results of undo and redo as much as possible.” in the documented Undo and redo context?"
+        "Does the design satisfy “Help people predict the result of an undo or redo before they perform it.” in the documented Undo and redo context?"
       ]
     },
     "testability": "manual",
@@ -62,7 +63,7 @@
       "retrieved_at": "2026-07-21T11:15:28.716Z",
       "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
       "source_sentence_hash": "de63d57d9f766aabb035b003e0a1d8840b42aecf7f7b7136491f939be2eef118",
-      "evidence_paraphrase": "Apply the documented Undo and redo guidance to help people predict the results of undo and redo as much as possible."
+      "evidence_paraphrase": "Help people predict the result of an undo or redo before they perform it."
     },
     "tags": [
       "patterns",
@@ -71,22 +72,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Undo and redo guidance to help people predict the results of undo and redo as much as possible.",
+    "apple_native_rule": "Help people predict the result of an undo or redo before they perform it.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-UNDO-AND-REDO-0002",
-    "title": "Show the results of an undo or redo",
+    "title": "Highlight each undo and redo result",
     "category": "patterns",
     "topic": "undo-and-redo",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Present the results of an undo or redo in the documented context.",
-      "ja": "該当する状況でthe results of an undo or redoを表示する。"
+      "en": "Show and highlight the result of each undo or redo.",
+      "ja": "各undoまたはredoの結果を表示しhighlightする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -107,7 +108,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "When affected content is offscreen, reveal it so people do not mistake the action for having no effect.",
+      "For example, scroll to restored content when appropriate."
     ],
     "exceptions": [],
     "rationale": {
@@ -117,7 +119,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present the results of an undo or redo in the documented context.” in the documented Undo and redo context?"
+        "Does the design satisfy “Show and highlight the result of each undo or redo.” in the documented Undo and redo context?"
       ]
     },
     "testability": "manual",
@@ -137,7 +139,7 @@
       "retrieved_at": "2026-07-21T11:15:28.716Z",
       "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
       "source_sentence_hash": "26b0a731cfb2f8a6f3806931cb3f9f185a4bfb1f572ec2409633b933b81ca095",
-      "evidence_paraphrase": "Present the results of an undo or redo in the documented context."
+      "evidence_paraphrase": "Show and highlight the result of each undo or redo."
     },
     "tags": [
       "patterns",
@@ -146,22 +148,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Present the results of an undo or redo in the documented context.",
+    "apple_native_rule": "Show and highlight the result of each undo or redo.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-UNDO-AND-REDO-0003",
-    "title": "Let people undo multiple times",
+    "title": "Support multiple undo and redo operations",
     "category": "patterns",
     "topic": "undo-and-redo",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Preserve people’s ability to undo multiple times.",
-      "ja": "利用者がundo multiple timesできる状態を保つ。"
+      "en": "Let people perform undo and redo multiple times.",
+      "ja": "undoとredoを複数回実行できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -182,7 +184,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A logical boundary can be opening a document or saving work."
     ],
     "exceptions": [],
     "rationale": {
@@ -192,7 +194,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to undo multiple times.” in the documented Undo and redo context?"
+        "Does the design satisfy “Let people perform undo and redo multiple times.” in the documented Undo and redo context?"
       ]
     },
     "testability": "manual",
@@ -212,7 +214,7 @@
       "retrieved_at": "2026-07-21T11:15:28.716Z",
       "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
       "source_sentence_hash": "c9268bde228026b5ff70f025cd6fa3291372a68d659282b76b00be1b8d3c7f20",
-      "evidence_paraphrase": "Preserve people’s ability to undo multiple times."
+      "evidence_paraphrase": "Let people perform undo and redo multiple times."
     },
     "tags": [
       "patterns",
@@ -221,22 +223,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to undo multiple times.",
+    "apple_native_rule": "Let people perform undo and redo multiple times.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-UNDO-AND-REDO-0004",
-    "title": "Consider giving people the option to revert multiple changes at once",
+    "title": "Consider reverting related changes as a group",
     "category": "patterns",
     "topic": "undo-and-redo",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether giving people the option to revert multiple changes at once is appropriate for the current context.",
-      "ja": "giving people the option to revert multiple changes at onceが現在の状況に適切か検討する。"
+      "en": "Consider letting people revert multiple related changes at once.",
+      "ja": "関連する複数のchangeを一度にrevertできるようにすることを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -257,7 +259,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A group can contain discrete incremental changes to one property.",
+      "Another option is reverting all changes since opening or saving a document."
     ],
     "exceptions": [],
     "rationale": {
@@ -267,7 +270,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether giving people the option to revert multiple changes at once is appropriate for the current context.” in the documented Undo and redo context?"
+        "Does the design satisfy “Consider letting people revert multiple related changes at once.” in the documented Undo and redo context?"
       ]
     },
     "testability": "manual",
@@ -287,7 +290,7 @@
       "retrieved_at": "2026-07-21T11:15:28.716Z",
       "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
       "source_sentence_hash": "32b3effc8ab79ab31cf3386bf61848cc9caf6fe9a35f4e57d7a3bd1330abaf7b",
-      "evidence_paraphrase": "Evaluate whether giving people the option to revert multiple changes at once is appropriate for the current context."
+      "evidence_paraphrase": "Consider letting people revert multiple related changes at once."
     },
     "tags": [
       "patterns",
@@ -296,23 +299,246 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether giving people the option to revert multiple changes at once is appropriate for the current context.",
+    "apple_native_rule": "Consider letting people revert multiple related changes at once.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-UNDO-AND-REDO-0005",
-    "title": "Provide undo and redo buttons only when necessary",
+    "title": "Add dedicated undo and redo buttons only when necessary",
     "category": "patterns",
     "topic": "undo-and-redo",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make undo and redo buttons only when necessary available when applicable.",
-      "ja": "必要な場合にundo and redo buttons only when necessaryを利用可能にする。"
+      "en": "Provide dedicated undo and redo buttons only when they are important to the experience.",
+      "ja": "体験上重要な場合だけ専用undo・redo buttonを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Prefer system-supported methods such as the macOS Edit menu, Mac or iPad keyboard shortcuts, and iPhone shake gestures."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Undo and redo experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるUndo and redoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide dedicated undo and redo buttons only when they are important to the experience.” in the documented Undo and redo context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo",
+      "page_title": "Undo and redo",
+      "section_path": [
+        "Undo and redo",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:28.716Z",
+      "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
+      "source_sentence_hash": "a11e7f0100ced1765f37130ef8f3f8d632fac809bafa11117042f70ee3d16edc",
+      "evidence_paraphrase": "Provide dedicated undo and redo buttons only when they are important to the experience."
+    },
+    "tags": [
+      "patterns",
+      "undo-and-redo",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Provide dedicated undo and redo buttons only when they are important to the experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-UNDO-AND-REDO-0006",
+    "title": "Avoid redefining standard undo and redo gestures",
+    "category": "patterns",
+    "topic": "undo-and-redo",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Avoid redefining standard iOS and iPadOS gestures for undo and redo.",
+      "ja": "undo・redo用のstandard iOS・iPadOS gestureを再定義しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": [
+        "gesture"
+      ]
+    },
+    "conditions": [
+      "Standard input includes three-finger swipe gestures and shaking iPhone.",
+      "Redefinition can confuse people and make the experience unpredictable."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Undo and redo experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるUndo and redoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid redefining standard iOS and iPadOS gestures for undo and redo.” in the documented Undo and redo context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo",
+      "page_title": "Undo and redo",
+      "section_path": [
+        "Undo and redo",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:28.716Z",
+      "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
+      "source_sentence_hash": "44813524e5b256a2cdca6358c824370f443c5f7cbc8ac51852cff0298e2db5b2",
+      "evidence_paraphrase": "Avoid redefining standard iOS and iPadOS gestures for undo and redo."
+    },
+    "tags": [
+      "patterns",
+      "undo-and-redo",
+      "platform-considerations",
+      "ios-ipados",
+      "gesture"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid redefining standard iOS and iPadOS gestures for undo and redo.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-UNDO-AND-REDO-0007",
+    "title": "Place undo and redo at the top of the macOS Edit menu",
+    "category": "patterns",
+    "topic": "undo-and-redo",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Place undo and redo commands at the top of the macOS Edit menu.",
+      "ja": "undo・redo commandをmacOS Edit menuの先頭に配置する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Undo and redo experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるUndo and redoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Place undo and redo commands at the top of the macOS Edit menu.” in the documented Undo and redo context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo",
+      "page_title": "Undo and redo",
+      "section_path": [
+        "Undo and redo",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:28.716Z",
+      "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
+      "source_sentence_hash": "d4491515ef79b92cefa620b54dd787adc07b74c9f3de9087e5b55d1a32b7a453",
+      "evidence_paraphrase": "Place undo and redo commands at the top of the macOS Edit menu."
+    },
+    "tags": [
+      "patterns",
+      "undo-and-redo",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Place undo and redo commands at the top of the macOS Edit menu.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-UNDO-AND-REDO-0008",
+    "title": "Avoid unnecessary undo and redo limits",
+    "category": "patterns",
+    "topic": "undo-and-redo",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid unnecessary limits on how many times people can undo or redo.",
+      "ja": "undoまたはredoできる回数へ不要な制限を設けない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
     "severity": "warning",
     "scope": {
       "portability": "apple-platform",
@@ -334,6 +560,83 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
+    "exceptions": [
+      "A logical boundary such as opening a document or saving work can delimit the history."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Undo and redo experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるUndo and redoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid unnecessary limits on how many times people can undo or redo.” in the documented Undo and redo context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo",
+      "page_title": "Undo and redo",
+      "section_path": [
+        "Undo and redo",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:28.716Z",
+      "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
+      "source_sentence_hash": "c9268bde228026b5ff70f025cd6fa3291372a68d659282b76b00be1b8d3c7f20",
+      "evidence_paraphrase": "Avoid unnecessary limits on how many times people can undo or redo."
+    },
+    "tags": [
+      "patterns",
+      "undo-and-redo",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid unnecessary limits on how many times people can undo or redo.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-UNDO-AND-REDO-0009",
+    "title": "Use standard symbols for dedicated undo and redo buttons",
+    "category": "patterns",
+    "topic": "undo-and-redo",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use standard system-provided symbols for dedicated undo and redo buttons.",
+      "ja": "専用undo・redo buttonにはsystem提供のstandard symbolを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Dedicated buttons are important enough to add instead of relying only on standard system methods."
+    ],
     "exceptions": [],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Undo and redo experience on the scoped Apple platforms.",
@@ -342,7 +645,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make undo and redo buttons only when necessary available when applicable.” in the documented Undo and redo context?"
+        "Does the design satisfy “Use standard system-provided symbols for dedicated undo and redo buttons.” in the documented Undo and redo context?"
       ]
     },
     "testability": "manual",
@@ -362,7 +665,7 @@
       "retrieved_at": "2026-07-21T11:15:28.716Z",
       "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
       "source_sentence_hash": "a11e7f0100ced1765f37130ef8f3f8d632fac809bafa11117042f70ee3d16edc",
-      "evidence_paraphrase": "Make undo and redo buttons only when necessary available when applicable."
+      "evidence_paraphrase": "Use standard system-provided symbols for dedicated undo and redo buttons."
     },
     "tags": [
       "patterns",
@@ -371,24 +674,99 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make undo and redo buttons only when necessary available when applicable.",
+    "apple_native_rule": "Use standard system-provided symbols for dedicated undo and redo buttons.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-PATTERNS-UNDO-AND-REDO-0006",
-    "title": "Avoid redefining standard gestures for undo and redo",
+    "id": "HIG-PATTERNS-UNDO-AND-REDO-0010",
+    "title": "Place dedicated undo and redo buttons in a toolbar",
+    "category": "patterns",
+    "topic": "undo-and-redo",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Place dedicated undo and redo buttons in a toolbar.",
+      "ja": "専用undo・redo buttonをtoolbarに配置する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Dedicated buttons are important enough to add instead of relying only on standard system methods."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Undo and redo experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるUndo and redoの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Place dedicated undo and redo buttons in a toolbar.” in the documented Undo and redo context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo",
+      "page_title": "Undo and redo",
+      "section_path": [
+        "Undo and redo",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:28.716Z",
+      "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
+      "source_sentence_hash": "a11e7f0100ced1765f37130ef8f3f8d632fac809bafa11117042f70ee3d16edc",
+      "evidence_paraphrase": "Place dedicated undo and redo buttons in a toolbar."
+    },
+    "tags": [
+      "patterns",
+      "undo-and-redo",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Place dedicated undo and redo buttons in a toolbar.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-UNDO-AND-REDO-0011",
+    "title": "Describe the operation in undo and redo alert titles",
     "category": "patterns",
     "topic": "undo-and-redo",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Exclude redefining standard gestures for undo and redo from the applicable experience.",
-      "ja": "該当する体験ではredefining standard gestures for undo and redoを避ける。"
+      "en": "Provide one or two words after the automatic Undo or Redo prefix to describe the operation.",
+      "ja": "automaticなUndoまたはRedo prefixの後にoperationを表す1〜2語を付ける。"
     },
-    "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "discourage",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -400,12 +778,11 @@
         "ipad"
       ],
       "components": [],
-      "modalities": [
-        "gesture"
-      ]
+      "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The system alert title already includes the prefix and its trailing space.",
+      "Keep the added operation description brief and precise."
     ],
     "exceptions": [],
     "rationale": {
@@ -415,7 +792,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude redefining standard gestures for undo and redo from the applicable experience.” in the documented Undo and redo context?"
+        "Does the design satisfy “Provide one or two words after the automatic Undo or Redo prefix to describe the operation.” in the documented Undo and redo context?"
       ]
     },
     "testability": "manual",
@@ -435,34 +812,33 @@
       ],
       "retrieved_at": "2026-07-21T11:15:28.716Z",
       "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
-      "source_sentence_hash": "44813524e5b256a2cdca6358c824370f443c5f7cbc8ac51852cff0298e2db5b2",
-      "evidence_paraphrase": "Exclude redefining standard gestures for undo and redo from the applicable experience."
+      "source_sentence_hash": "40a4880a4849690c291abce3d24fb2d2d17f92f0503998f2faf3fa3c51338372",
+      "evidence_paraphrase": "Provide one or two words after the automatic Undo or Redo prefix to describe the operation."
     },
     "tags": [
       "patterns",
       "undo-and-redo",
       "platform-considerations",
-      "ios-ipados",
-      "gesture"
+      "ios-ipados"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude redefining standard gestures for undo and redo from the applicable experience.",
+    "apple_native_rule": "Provide one or two words after the automatic Undo or Redo prefix to describe the operation.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-PATTERNS-UNDO-AND-REDO-0007",
-    "title": "Place undo and redo commands in the Edit menu and support the standard keyboard shortcuts",
+    "id": "HIG-PATTERNS-UNDO-AND-REDO-0012",
+    "title": "Support standard macOS undo and redo shortcuts",
     "category": "patterns",
     "topic": "undo-and-redo",
     "subtopic": "macos",
     "statement": {
-      "en": "Apply the documented Undo and redo guidance to place undo and redo commands in the Edit menu and support the standard keyboard shortcuts.",
-      "ja": "「Undo and redo」において「Place undo and redo commands in the Edit menu and support the standard keyboard shortcuts」の指針を適用する。"
+      "en": "Support Command-Z for undo and Shift-Command-Z for redo on macOS.",
+      "ja": "macOSでundoにCommand-Z、redoにShift-Command-Zを対応させる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -474,9 +850,7 @@
         "mac"
       ],
       "components": [],
-      "modalities": [
-        "keyboard"
-      ]
+      "modalities": []
     },
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
@@ -487,14 +861,12 @@
       "ja": "この指針は、対象AppleプラットフォームにおけるUndo and redoの一貫性と使いやすさを支えます。"
     },
     "checks": {
-      "automated": [
-        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
-      ],
+      "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Undo and redo guidance to place undo and redo commands in the Edit menu and support the standard keyboard shortcuts.” in the documented Undo and redo context?"
+        "Does the design satisfy “Support Command-Z for undo and Shift-Command-Z for redo on macOS.” in the documented Undo and redo context?"
       ]
     },
-    "testability": "hybrid",
+    "testability": "manual",
     "anti_patterns": [
       "Ignoring this guidance in a context where the source section applies."
     ],
@@ -512,18 +884,17 @@
       "retrieved_at": "2026-07-21T11:15:28.716Z",
       "source_hash": "efeec739bfe6768cf6c58e435842115178a0cb941951522e1ecfe0affce5aec4",
       "source_sentence_hash": "d4491515ef79b92cefa620b54dd787adc07b74c9f3de9087e5b55d1a32b7a453",
-      "evidence_paraphrase": "Apply the documented Undo and redo guidance to place undo and redo commands in the Edit menu and support the standard keyboard shortcuts."
+      "evidence_paraphrase": "Support Command-Z for undo and Shift-Command-Z for redo on macOS."
     },
     "tags": [
       "patterns",
       "undo-and-redo",
       "platform-considerations",
-      "macos",
-      "keyboard"
+      "macos"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Undo and redo guidance to place undo and redo commands in the Edit menu and support the standard keyboard shortcuts.",
+    "apple_native_rule": "Support Command-Z for undo and Shift-Command-Z for redo on macOS.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

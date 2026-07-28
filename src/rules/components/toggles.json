@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-COMPONENTS-TOGGLES-0001",
-    "title": "Use a toggle to help people choose between two opposing values that affect the state of content or a",
+    "title": "Use a toggle for two opposing state values",
     "category": "components",
     "topic": "toggles",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply a toggle to help people choose between two opposing values that affect the state of content or a in the documented context.",
-      "ja": "該当する状況ではa toggle to help people choose between two opposing values that affect the state of content or aを採用する。"
+      "en": "Use a toggle only for two opposing values that change content or view state.",
+      "ja": "contentまたはviewの状態を変える、対立する2値にのみtoggleを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -40,7 +40,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Use another component for actions such as choosing from a list."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
@@ -48,7 +50,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a toggle to help people choose between two opposing values that affect the state of content or a in the documented context.” in the documented Toggles context?"
+        "Does the design satisfy “Use a toggle only for two opposing values that change content or view state.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -68,7 +70,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "e51a82db925e1c93d8e571f3e34c04d2a3803b10732e16122146e118ea28d3f5",
-      "evidence_paraphrase": "Choose or apply a toggle to help people choose between two opposing values that affect the state of content or a in the documented context."
+      "evidence_paraphrase": "Use a toggle only for two opposing values that change content or view state."
     },
     "tags": [
       "components",
@@ -77,21 +79,21 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply a toggle to help people choose between two opposing values that affect the state of content or a in the documented context.",
+    "apple_native_rule": "Use a toggle only for two opposing values that change content or view state.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0002",
-    "title": "Make sure the visual differences in a toggle’s state are obvious",
+    "title": "Make toggle states visually obvious",
     "category": "components",
     "topic": "toggles",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Verify that the visual differences in a toggle’s state are obvious.",
-      "ja": "the visual differences in a toggle’s state are obviousを満たしていることを確認する。"
+      "en": "Make each toggle state visually obvious without relying on color alone.",
+      "ja": "色だけに依存せず、toggleの各状態を視覚的に明確にする。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -119,7 +121,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Combine color with fill, shape, checkmark, dot, or another perceivable difference."
     ],
     "exceptions": [],
     "rationale": {
@@ -129,7 +131,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that the visual differences in a toggle’s state are obvious.” in the documented Toggles context?"
+        "Does the design satisfy “Make each toggle state visually obvious without relying on color alone.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -149,7 +151,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "9635e708a0d822ef29f6c14432efafdc8bf6e0fcb451a28aa1ee9f54a3d0e09e",
-      "evidence_paraphrase": "Verify that the visual differences in a toggle’s state are obvious."
+      "evidence_paraphrase": "Make each toggle state visually obvious without relying on color alone."
     },
     "tags": [
       "components",
@@ -158,22 +160,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Verify that the visual differences in a toggle’s state are obvious.",
+    "apple_native_rule": "Make each toggle state visually obvious without relying on color alone.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0003",
-    "title": "Use the switch toggle style only in a list row",
+    "title": "Use switch style only in iOS or iPadOS list rows",
     "category": "components",
     "topic": "toggles",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Choose or apply the switch toggle style only in a list row in the documented context.",
-      "ja": "該当する状況ではthe switch toggle style only in a list rowを採用する。"
+      "en": "Use the iOS or iPadOS switch style only in a list row.",
+      "ja": "iOSまたはiPadOSのswitch styleはlist row内でのみ使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -192,7 +194,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The row content supplies the context, so a separate switch label is unnecessary."
     ],
     "exceptions": [],
     "rationale": {
@@ -202,7 +204,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply the switch toggle style only in a list row in the documented context.” in the documented Toggles context?"
+        "Does the design satisfy “Use the iOS or iPadOS switch style only in a list row.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -223,7 +225,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "51aeb46e5bb070d31b913a93bc3e28074e14d811e987be3924e76d1e90b6847f",
-      "evidence_paraphrase": "Choose or apply the switch toggle style only in a list row in the documented context."
+      "evidence_paraphrase": "Use the iOS or iPadOS switch style only in a list row."
     },
     "tags": [
       "components",
@@ -233,22 +235,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply the switch toggle style only in a list row in the documented context.",
+    "apple_native_rule": "Use the iOS or iPadOS switch style only in a list row.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0004",
-    "title": "Avoid supplying a label that explains the button’s purpose",
+    "title": "Avoid a separate purpose label for an icon toggle button",
     "category": "components",
     "topic": "toggles",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Exclude supplying a label that explains the button’s purpose from the applicable experience.",
-      "ja": "該当する体験ではsupplying a label that explains the button’s purposeを避ける。"
+      "en": "Avoid a separate purpose label for an icon-based toggle button.",
+      "ja": "iconを使うtoggle buttonにはpurpose説明用の別labelを付けない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -267,7 +269,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a clear icon and distinct active and inactive backgrounds to communicate purpose and state."
     ],
     "exceptions": [],
     "rationale": {
@@ -277,7 +279,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude supplying a label that explains the button’s purpose from the applicable experience.” in the documented Toggles context?"
+        "Does the design satisfy “Avoid a separate purpose label for an icon-based toggle button.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -298,7 +300,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "9d6a3246bedfb79765051fc82a2fd73b2d99e24c571338493cdbdfea64b079ea",
-      "evidence_paraphrase": "Exclude supplying a label that explains the button’s purpose from the applicable experience."
+      "evidence_paraphrase": "Avoid a separate purpose label for an icon-based toggle button."
     },
     "tags": [
       "components",
@@ -308,22 +310,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude supplying a label that explains the button’s purpose from the applicable experience.",
+    "apple_native_rule": "Avoid a separate purpose label for an icon-based toggle button.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0005",
-    "title": "Use switches, checkboxes, and radio buttons in the window body, not the window frame",
+    "title": "Place macOS toggle controls in the window body",
     "category": "components",
     "topic": "toggles",
     "subtopic": "macos",
     "statement": {
-      "en": "Choose or apply switches, checkboxes, and radio buttons in the window body, not the window frame in the documented context.",
-      "ja": "該当する状況ではswitches, checkboxes, and radio buttons in the window body, not the window frameを採用する。"
+      "en": "Place macOS switches, checkboxes, and radio buttons in the window body, not its frame.",
+      "ja": "macOSのswitch、checkbox、radio buttonはwindow frameではなくwindow bodyへ置く。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -340,7 +342,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid these controls in toolbars and status bars in particular."
     ],
     "exceptions": [],
     "rationale": {
@@ -350,7 +352,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply switches, checkboxes, and radio buttons in the window body, not the window frame in the documented context.” in the documented Toggles context?"
+        "Does the design satisfy “Place macOS switches, checkboxes, and radio buttons in the window body, not its frame.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -371,7 +373,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "b3d7592fdf95417ebb1312694cd65a86bf4fcc25023892172b40ec1bcaeb90d2",
-      "evidence_paraphrase": "Choose or apply switches, checkboxes, and radio buttons in the window body, not the window frame in the documented context."
+      "evidence_paraphrase": "Place macOS switches, checkboxes, and radio buttons in the window body, not its frame."
     },
     "tags": [
       "components",
@@ -381,22 +383,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply switches, checkboxes, and radio buttons in the window body, not the window frame in the documented context.",
+    "apple_native_rule": "Place macOS switches, checkboxes, and radio buttons in the window body, not its frame.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0006",
-    "title": "Prefer a switch for settings that you want to emphasize",
+    "title": "Prefer a macOS switch for emphasized settings",
     "category": "components",
     "topic": "toggles",
     "subtopic": "switches",
     "statement": {
-      "en": "Favor a switch for settings that you want to emphasize when the documented conditions apply.",
-      "ja": "該当条件ではa switch for settings that you want to emphasizeを優先する。"
+      "en": "Prefer a macOS switch when a setting needs emphasis or controls substantial functionality.",
+      "ja": "強調が必要、または大きな機能を制御するmacOS settingにはswitchを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -423,7 +425,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor a switch for settings that you want to emphasize when the documented conditions apply.” in the documented Toggles context?"
+        "Does the design satisfy “Prefer a macOS switch when a setting needs emphasis or controls substantial functionality.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -445,7 +447,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "bd17b9e80f534739c58a6ed8f1fd15bb1d10ca20e04cf20b6a77411b3d2bcb48",
-      "evidence_paraphrase": "Favor a switch for settings that you want to emphasize when the documented conditions apply."
+      "evidence_paraphrase": "Prefer a macOS switch when a setting needs emphasis or controls substantial functionality."
     },
     "tags": [
       "components",
@@ -456,22 +458,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor a switch for settings that you want to emphasize when the documented conditions apply.",
+    "apple_native_rule": "Prefer a macOS switch when a setting needs emphasis or controls substantial functionality.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0007",
-    "title": "Use a checkbox instead of a switch if you need to present a hierarchy of settings",
+    "title": "Use macOS checkboxes for setting hierarchies",
     "category": "components",
     "topic": "toggles",
     "subtopic": "checkboxes",
     "statement": {
-      "en": "Choose or apply a checkbox instead of a switch if you need to present a hierarchy of settings in the documented context.",
-      "ja": "該当する状況ではa checkbox instead of a switch if you need to present a hierarchy of settingsを採用する。"
+      "en": "Use macOS checkboxes to present a hierarchy of settings.",
+      "ja": "settingのhierarchy表示にはmacOS checkboxを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -488,7 +490,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use alignment and indentation to communicate grouping and dependencies."
     ],
     "exceptions": [],
     "rationale": {
@@ -498,7 +500,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a checkbox instead of a switch if you need to present a hierarchy of settings in the documented context.” in the documented Toggles context?"
+        "Does the design satisfy “Use macOS checkboxes to present a hierarchy of settings.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -520,7 +522,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "be57527ad2d2e0c00ea9fa623bae4535ff889693f6de57a67ced87578a9dba9c",
-      "evidence_paraphrase": "Choose or apply a checkbox instead of a switch if you need to present a hierarchy of settings in the documented context."
+      "evidence_paraphrase": "Use macOS checkboxes to present a hierarchy of settings."
     },
     "tags": [
       "components",
@@ -531,22 +533,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply a checkbox instead of a switch if you need to present a hierarchy of settings in the documented context.",
+    "apple_native_rule": "Use macOS checkboxes to present a hierarchy of settings.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0008",
-    "title": "Consider using radio buttons if you need to present a set of more than two mutually exclusive options",
+    "title": "Consider radio buttons for more than two mutually exclusive options",
     "category": "components",
     "topic": "toggles",
     "subtopic": "checkboxes",
     "statement": {
-      "en": "Evaluate whether using radio buttons if you need to present a set of more than two mutually exclusive options is appropriate for the current context.",
-      "ja": "using radio buttons if you need to present a set of more than two mutually exclusive optionsが現在の状況に適切か検討する。"
+      "en": "Consider macOS radio buttons for more than two mutually exclusive options.",
+      "ja": "3つ以上の排他的optionにはmacOS radio buttonを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -563,7 +565,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use unique labels to clarify choices beyond on and off."
     ],
     "exceptions": [],
     "rationale": {
@@ -573,7 +575,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using radio buttons if you need to present a set of more than two mutually exclusive options is appropriate for the current context.” in the documented Toggles context?"
+        "Does the design satisfy “Consider macOS radio buttons for more than two mutually exclusive options.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -595,7 +597,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "b3d1a44aaae285f14b9f72b47502af4489a17b8ccda2a43850a0a83527fc8b5e",
-      "evidence_paraphrase": "Evaluate whether using radio buttons if you need to present a set of more than two mutually exclusive options is appropriate for the current context."
+      "evidence_paraphrase": "Consider macOS radio buttons for more than two mutually exclusive options."
     },
     "tags": [
       "components",
@@ -606,22 +608,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using radio buttons if you need to present a set of more than two mutually exclusive options is appropriate for the current context.",
+    "apple_native_rule": "Consider macOS radio buttons for more than two mutually exclusive options.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0009",
-    "title": "Consider using a label to introduce a group of checkboxes if their relationship isn’t clear",
+    "title": "Consider a label for an unclear checkbox group",
     "category": "components",
     "topic": "toggles",
     "subtopic": "checkboxes",
     "statement": {
-      "en": "Evaluate whether using a label to introduce a group of checkboxes if their relationship isn’t clear is appropriate for the current context.",
-      "ja": "using a label to introduce a group of checkboxes if their relationship isn’t clearが現在の状況に適切か検討する。"
+      "en": "Consider a group label when checkbox relationships are unclear.",
+      "ja": "checkbox間の関係が不明瞭な場合はgroup labelを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -638,7 +640,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Describe the options and align the label baseline with the first checkbox."
     ],
     "exceptions": [],
     "rationale": {
@@ -648,7 +650,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using a label to introduce a group of checkboxes if their relationship isn’t clear is appropriate for the current context.” in the documented Toggles context?"
+        "Does the design satisfy “Consider a group label when checkbox relationships are unclear.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -670,7 +672,7 @@
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
       "source_sentence_hash": "201c99a41c2b5e4936850f9353fa24fbfa28b06de573333a49fafca5342ad9d1",
-      "evidence_paraphrase": "Evaluate whether using a label to introduce a group of checkboxes if their relationship isn’t clear is appropriate for the current context."
+      "evidence_paraphrase": "Consider a group label when checkbox relationships are unclear."
     },
     "tags": [
       "components",
@@ -681,22 +683,176 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using a label to introduce a group of checkboxes if their relationship isn’t clear is appropriate for the current context.",
+    "apple_native_rule": "Consider a group label when checkbox relationships are unclear.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-TOGGLES-0010",
-    "title": "Prefer a set of radio buttons to present mutually exclusive options",
+    "title": "Prefer macOS radio buttons for mutually exclusive choices",
     "category": "components",
     "topic": "toggles",
     "subtopic": "radio-buttons",
     "statement": {
-      "en": "Favor a set of radio buttons to present mutually exclusive options when the documented conditions apply.",
-      "ja": "該当条件ではa set of radio buttons to present mutually exclusive optionsを優先する。"
+      "en": "Prefer macOS radio buttons for mutually exclusive choices.",
+      "ja": "排他的なchoiceにはmacOS radio buttonを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "toggles"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [
+      "Use checkboxes when people may choose multiple options."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prefer macOS radio buttons for mutually exclusive choices.” in the documented Toggles context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "page_title": "Toggles",
+      "section_path": [
+        "Toggles",
+        "Platform considerations",
+        "macOS",
+        "Radio buttons"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.702Z",
+      "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+      "source_sentence_hash": "1b645a87c66bc01500914e4c18be85f95fb7412964a8b353e03429b70c9ec5e2",
+      "evidence_paraphrase": "Prefer macOS radio buttons for mutually exclusive choices."
+    },
+    "tags": [
+      "components",
+      "toggles",
+      "platform-considerations",
+      "macos",
+      "radio-buttons"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Prefer macOS radio buttons for mutually exclusive choices.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOGGLES-0011",
+    "title": "Avoid more than about five radio buttons in one set",
+    "category": "components",
+    "topic": "toggles",
+    "subtopic": "radio-buttons",
+    "statement": {
+      "en": "Avoid presenting more than about five radio buttons in one set.",
+      "ja": "1つのsetに約5個を超えるradio buttonを並べない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "toggles"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [
+      "Consider a pop-up button when presenting more than about five options."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid presenting more than about five radio buttons in one set.” in the documented Toggles context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "page_title": "Toggles",
+      "section_path": [
+        "Toggles",
+        "Platform considerations",
+        "macOS",
+        "Radio buttons"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.702Z",
+      "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+      "source_sentence_hash": "af558efeb7963470de409312343f458818ee72c5d71ce80c7844c8b826a2da93",
+      "evidence_paraphrase": "Avoid presenting more than about five radio buttons in one set."
+    },
+    "tags": [
+      "components",
+      "toggles",
+      "platform-considerations",
+      "macos",
+      "radio-buttons"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid presenting more than about five radio buttons in one set.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOGGLES-0012",
+    "title": "Space horizontal macOS radio buttons consistently",
+    "category": "components",
+    "topic": "toggles",
+    "subtopic": "radio-buttons",
+    "statement": {
+      "en": "Space horizontal radio buttons consistently using the longest label's required width.",
+      "ja": "horizontal radio buttonは最長labelの必要幅を基準に等間隔で配置する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -723,7 +879,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor a set of radio buttons to present mutually exclusive options when the documented conditions apply.” in the documented Toggles context?"
+        "Does the design satisfy “Space horizontal radio buttons consistently using the longest label's required width.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -744,8 +900,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
-      "source_sentence_hash": "1b645a87c66bc01500914e4c18be85f95fb7412964a8b353e03429b70c9ec5e2",
-      "evidence_paraphrase": "Favor a set of radio buttons to present mutually exclusive options when the documented conditions apply."
+      "source_sentence_hash": "d53e9bed2dbdbd9406a2c8229a10d5e53c09d1121118dd3bd7939e19c50bd69c",
+      "evidence_paraphrase": "Space horizontal radio buttons consistently using the longest label's required width."
     },
     "tags": [
       "components",
@@ -756,22 +912,328 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor a set of radio buttons to present mutually exclusive options when the documented conditions apply.",
+    "apple_native_rule": "Space horizontal radio buttons consistently using the longest label's required width.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-COMPONENTS-TOGGLES-0011",
-    "title": "Avoid listing too many radio buttons in a set",
+    "id": "HIG-COMPONENTS-TOGGLES-0013",
+    "title": "Clearly identify what a toggle affects",
     "category": "components",
     "topic": "toggles",
-    "subtopic": "radio-buttons",
+    "subtopic": "best-practices",
     "statement": {
-      "en": "Exclude listing too many radio buttons in a set from the applicable experience.",
-      "ja": "該当する体験ではlisting too many radio buttons in a setを避ける。"
+      "en": "Clearly identify the setting, view, or content affected by a toggle.",
+      "ja": "toggleが影響するsetting、view、contentを明確に示す。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "toggles"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Use surrounding context, a state label, or an icon that communicates purpose."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Clearly identify the setting, view, or content affected by a toggle.” in the documented Toggles context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "page_title": "Toggles",
+      "section_path": [
+        "Toggles",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.702Z",
+      "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+      "source_sentence_hash": "6af6b64058548fd0a584ebc64a0547f58616c09f5b56533330c27c204cad9afd",
+      "evidence_paraphrase": "Clearly identify the setting, view, or content affected by a toggle."
+    },
+    "tags": [
+      "components",
+      "toggles",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Clearly identify the setting, view, or content affected by a toggle.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOGGLES-0014",
+    "title": "Change a switch's default color only when necessary",
+    "category": "components",
+    "topic": "toggles",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Change an iOS or iPadOS switch's default color only when necessary.",
+      "ja": "iOSまたはiPadOS switchのdefault colorは必要な場合だけ変更する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "toggles"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "An accent color can work when it contrasts enough with the uncolored state."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Change an iOS or iPadOS switch's default color only when necessary.” in the documented Toggles context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "page_title": "Toggles",
+      "section_path": [
+        "Toggles",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.702Z",
+      "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+      "source_sentence_hash": "7a55dfe415c4c23f18778219fdc30cb8db71bf46b17791193fd164514be14537",
+      "evidence_paraphrase": "Change an iOS or iPadOS switch's default color only when necessary."
+    },
+    "tags": [
+      "components",
+      "toggles",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Change an iOS or iPadOS switch's default color only when necessary.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOGGLES-0015",
+    "title": "Use a toggle button outside an iOS or iPadOS list",
+    "category": "components",
+    "topic": "toggles",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Outside a list, use a toggle button instead of an iOS or iPadOS switch.",
+      "ja": "list外ではiOSまたはiPadOS switchではなくtoggle buttonを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "toggles"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Use a distinct appearance, such as a background highlight, for the active state."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Outside a list, use a toggle button instead of an iOS or iPadOS switch.” in the documented Toggles context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "page_title": "Toggles",
+      "section_path": [
+        "Toggles",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.702Z",
+      "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+      "source_sentence_hash": "9ae8e6971f43e44ae329add52a19b10eaa690abb982b0d880cbdd27cd6241892",
+      "evidence_paraphrase": "Outside a list, use a toggle button instead of an iOS or iPadOS switch."
+    },
+    "tags": [
+      "components",
+      "toggles",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Outside a list, use a toggle button instead of an iOS or iPadOS switch.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOGGLES-0016",
+    "title": "Consider a mini switch in a grouped macOS form",
+    "category": "components",
+    "topic": "toggles",
+    "subtopic": "switches",
+    "statement": {
+      "en": "Within a grouped macOS form, consider a mini switch for a single-row setting.",
+      "ja": "grouped macOS form内のsingle-row settingにはmini switchを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "toggles"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "A mini switch can keep row heights consistent with neighboring controls."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Within a grouped macOS form, consider a mini switch for a single-row setting.” in the documented Toggles context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "page_title": "Toggles",
+      "section_path": [
+        "Toggles",
+        "Platform considerations",
+        "macOS",
+        "Switches"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.702Z",
+      "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+      "source_sentence_hash": "72f36e68eb6520ee41f9a0cc09e1c9da005ed52013bad6669c3db4e368017f2e",
+      "evidence_paraphrase": "Within a grouped macOS form, consider a mini switch for a single-row setting."
+    },
+    "tags": [
+      "components",
+      "toggles",
+      "platform-considerations",
+      "macos",
+      "switches"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Within a grouped macOS form, consider a mini switch for a single-row setting.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOGGLES-0017",
+    "title": "Avoid replacing an existing macOS checkbox with a switch",
+    "category": "components",
+    "topic": "toggles",
+    "subtopic": "switches",
+    "statement": {
+      "en": "Avoid replacing an existing macOS checkbox with a switch without a clear reason.",
+      "ja": "明確な理由なく既存のmacOS checkboxをswitchへ置き換えない。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -798,7 +1260,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude listing too many radio buttons in a set from the applicable experience.” in the documented Toggles context?"
+        "Does the design satisfy “Avoid replacing an existing macOS checkbox with a switch without a clear reason.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -815,38 +1277,113 @@
         "Toggles",
         "Platform considerations",
         "macOS",
-        "Radio buttons"
+        "Switches"
       ],
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
-      "source_sentence_hash": "af558efeb7963470de409312343f458818ee72c5d71ce80c7844c8b826a2da93",
-      "evidence_paraphrase": "Exclude listing too many radio buttons in a set from the applicable experience."
+      "source_sentence_hash": "365fd6cd04436d76a79be4cad78e3f58f97970b380482524baa9d75b98f3d9cc",
+      "evidence_paraphrase": "Avoid replacing an existing macOS checkbox with a switch without a clear reason."
     },
     "tags": [
       "components",
       "toggles",
       "platform-considerations",
       "macos",
-      "radio-buttons"
+      "switches"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude listing too many radio buttons in a set from the applicable experience.",
+    "apple_native_rule": "Avoid replacing an existing macOS checkbox with a switch without a clear reason.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-COMPONENTS-TOGGLES-0012",
-    "title": "Use consistent spacing when you display radio buttons horizontally",
+    "id": "HIG-COMPONENTS-TOGGLES-0018",
+    "title": "Accurately show each macOS checkbox state",
+    "category": "components",
+    "topic": "toggles",
+    "subtopic": "checkboxes",
+    "statement": {
+      "en": "Accurately show each macOS checkbox as on, off, or mixed.",
+      "ja": "各macOS checkboxをon、off、mixedの正しい状態で表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "toggles"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Show mixed when subordinate checkboxes have different states."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Accurately show each macOS checkbox as on, off, or mixed.” in the documented Toggles context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toggles",
+      "page_title": "Toggles",
+      "section_path": [
+        "Toggles",
+        "Platform considerations",
+        "macOS",
+        "Checkboxes"
+      ],
+      "retrieved_at": "2026-07-21T11:15:26.702Z",
+      "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
+      "source_sentence_hash": "8315d88948bb7e28f7b7cf0188989bfc6b07b153defc00f6547b9c9712a196d5",
+      "evidence_paraphrase": "Accurately show each macOS checkbox as on, off, or mixed."
+    },
+    "tags": [
+      "components",
+      "toggles",
+      "platform-considerations",
+      "macos",
+      "checkboxes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Accurately show each macOS checkbox as on, off, or mixed.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-TOGGLES-0019",
+    "title": "Prefer a macOS checkbox for one on-or-off setting",
     "category": "components",
     "topic": "toggles",
     "subtopic": "radio-buttons",
     "statement": {
-      "en": "Choose or apply consistent spacing when you display radio buttons horizontally in the documented context.",
-      "ja": "該当する状況ではconsistent spacing when you display radio buttons horizontallyを採用する。"
+      "en": "Prefer a macOS checkbox for one setting that can be on or off.",
+      "ja": "1つのon/off settingにはmacOS checkboxを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -865,7 +1402,9 @@
     "conditions": [
       "Apply within the platform, component, and section context identified by the source trace."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "Use two labeled radio buttons when one checkbox cannot communicate the opposing states clearly."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Toggles experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるTogglesの一貫性と使いやすさを支えます。"
@@ -873,7 +1412,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply consistent spacing when you display radio buttons horizontally in the documented context.” in the documented Toggles context?"
+        "Does the design satisfy “Prefer a macOS checkbox for one setting that can be on or off.” in the documented Toggles context?"
       ]
     },
     "testability": "manual",
@@ -894,8 +1433,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:26.702Z",
       "source_hash": "e396a45c9521a7beeb5a3558a00713a90949e4b16d8cbbaefa22227449ea826c",
-      "source_sentence_hash": "d53e9bed2dbdbd9406a2c8229a10d5e53c09d1121118dd3bd7939e19c50bd69c",
-      "evidence_paraphrase": "Choose or apply consistent spacing when you display radio buttons horizontally in the documented context."
+      "source_sentence_hash": "8a44bbe34b57ed94a432e7e43fd03ba6af36cd4641bdfa7199813afd8b22bdb0",
+      "evidence_paraphrase": "Prefer a macOS checkbox for one setting that can be on or off."
     },
     "tags": [
       "components",
@@ -906,7 +1445,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply consistent spacing when you display radio buttons horizontally in the documented context.",
+    "apple_native_rule": "Prefer a macOS checkbox for one setting that can be on or off.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

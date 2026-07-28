@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0001",
-    "title": "Use viewing distance and input mode to help you determine the size and density of the onscreen content you",
+    "title": "Size iPadOS content for viewing distance and input mode",
     "category": "getting-started",
     "topic": "designing-for-ipados",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply viewing distance and input mode to help you determine the size and density of the onscreen content you in the documented context.",
-      "ja": "該当する状況ではviewing distance and input mode to help you determine the size and density of the onscreen content youを採用する。"
+      "en": "Use viewing distance and input mode to determine iPadOS content size and density.",
+      "ja": "viewing distanceとinput modeに基づいてiPadOS contentのsizeとdensityを決める。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -26,7 +26,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Evaluate both the expected viewing distance and the active input mode."
     ],
     "exceptions": [],
     "rationale": {
@@ -36,7 +36,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply viewing distance and input mode to help you determine the size and density of the onscreen content you in the documented context.” in the documented Designing for iPadOS context?"
+        "Does the design satisfy “Use viewing distance and input mode to determine iPadOS content size and density.” in the documented Designing for iPadOS context?"
       ]
     },
     "testability": "manual",
@@ -53,10 +53,10 @@
         "Designing for iPadOS",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:47.044Z",
+      "retrieved_at": "2026-07-21T19:33:20Z",
       "source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce",
       "source_sentence_hash": "eb743b3dd9d332e1bc05bf2099d16ea51a8e9025b70fbeac3be4856825bba567",
-      "evidence_paraphrase": "Choose or apply viewing distance and input mode to help you determine the size and density of the onscreen content you in the documented context."
+      "evidence_paraphrase": "Use viewing distance and input mode to determine iPadOS content size and density."
     },
     "tags": [
       "getting-started",
@@ -65,22 +65,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply viewing distance and input mode to help you determine the size and density of the onscreen content you in the documented context.",
+    "apple_native_rule": "Use viewing distance and input mode to determine iPadOS content size and density.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0002",
-    "title": "Let people use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil, and consider support…",
+    "title": "Support standard iPad input methods",
     "category": "getting-started",
     "topic": "designing-for-ipados",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Preserve people’s ability to use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil, and consider supporting unique interactions that.",
-      "ja": "利用者がuse Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil, and consider supporting unique interactions thatできる状態を保つ。"
+      "en": "Let people use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil.",
+      "ja": "Multi-Touch gesture、physical keyboard、trackpad、Apple Pencilを利用できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -100,7 +100,7 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Support the input methods that apply to the experience instead of assuming touch alone."
     ],
     "exceptions": [],
     "rationale": {
@@ -112,7 +112,7 @@
         "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
       ],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil, and consider supporting unique interactions that.” in the documented Designing for iPadOS context?"
+        "Does the design satisfy “Let people use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil.” in the documented Designing for iPadOS context?"
       ]
     },
     "testability": "hybrid",
@@ -129,10 +129,10 @@
         "Designing for iPadOS",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:47.044Z",
+      "retrieved_at": "2026-07-21T19:33:20Z",
       "source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce",
       "source_sentence_hash": "303e13aaaf0714abf26fad2012b64477aea5f0349338e49bd17021c9e4bb2ec3",
-      "evidence_paraphrase": "Preserve people’s ability to use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil, and consider supporting unique interactions that."
+      "evidence_paraphrase": "Let people use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil."
     },
     "tags": [
       "getting-started",
@@ -145,7 +145,225 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil, and consider supporting unique interactions that.",
+    "apple_native_rule": "Let people use Multi-Touch gestures, a physical keyboard or trackpad, or Apple Pencil.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0003",
+    "title": "Use the large iPad display for important content",
+    "category": "getting-started",
+    "topic": "designing-for-ipados",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Use iPad’s large display to elevate important content and reduce modal interfaces and full-screen transitions.",
+      "ja": "iPadのlarge displayでimportant contentを高め、modal interfaceとfull-screen transitionを減らす。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ipados"
+      ],
+      "devices": [
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Position onscreen controls where they are easy to reach without obstructing content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for iPadOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for iPadOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use iPad’s large display to elevate important content and reduce modal interfaces and full-screen transitions.” in the documented Designing for iPadOS context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+      "page_title": "Designing for iPadOS",
+      "section_path": [
+        "Designing for iPadOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:33:20Z",
+      "source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce",
+      "source_sentence_hash": "fe7d498bdf4d476982d9c7b4fafe3a65a4795c09894b23ab1705e90c5f28ebbd",
+      "evidence_paraphrase": "Use iPad’s large display to elevate important content and reduce modal interfaces and full-screen transitions."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-ipados",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use iPad’s large display to elevate important content and reduce modal interfaces and full-screen transitions.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0004",
+    "title": "Adapt iPadOS interfaces across configurations",
+    "category": "getting-started",
+    "topic": "designing-for-ipados",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Adapt iPadOS interfaces across orientation, multitasking modes, Dark Mode, Dynamic Type, and macOS transitions.",
+      "ja": "iPadOS interfaceをorientation、multitasking mode、Dark Mode、Dynamic Type、macOS transitionへ適応させる。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ipados"
+      ],
+      "devices": [
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Let people choose the configurations that work best for them."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for iPadOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for iPadOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run UI tests at the platform’s largest supported text setting and detect clipped, truncated, or overlapping essential text."
+      ],
+      "manual": [
+        "Does the design satisfy “Adapt iPadOS interfaces across orientation, multitasking modes, Dark Mode, Dynamic Type, and macOS transitions.” in the documented Designing for iPadOS context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+      "page_title": "Designing for iPadOS",
+      "section_path": [
+        "Designing for iPadOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:33:20Z",
+      "source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce",
+      "source_sentence_hash": "863bbb942271f7ec91f921731a7be8138680a9cd2e6913669227690c9ff5866a",
+      "evidence_paraphrase": "Adapt iPadOS interfaces across orientation, multitasking modes, Dark Mode, Dynamic Type, and macOS transitions."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-ipados",
+      "best-practices"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Adapt iPadOS interfaces across orientation, multitasking modes, Dark Mode, Dynamic Type, and macOS transitions.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-IPADOS-0005",
+    "title": "Consider combining iPad input modes",
+    "category": "getting-started",
+    "topic": "designing-for-ipados",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Consider unique iPad interactions that combine multiple input modes.",
+      "ja": "複数のinput modeを組み合わせる独自のiPad interactionを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ipados"
+      ],
+      "devices": [
+        "ipad"
+      ],
+      "components": [],
+      "modalities": [
+        "keyboard",
+        "touch",
+        "pointer"
+      ]
+    },
+    "conditions": [
+      "Treat combined input as an opportunity, not a requirement for simultaneous input."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for iPadOS experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for iPadOSの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [
+        "Run keyboard-only traversal and assert that every scoped interactive element can receive focus and be activated."
+      ],
+      "manual": [
+        "Does the design satisfy “Consider unique iPad interactions that combine multiple input modes.” in the documented Designing for iPadOS context?"
+      ]
+    },
+    "testability": "hybrid",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+      "page_title": "Designing for iPadOS",
+      "section_path": [
+        "Designing for iPadOS",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T19:33:20Z",
+      "source_hash": "813d518592bb3c49ad7d0bfd8fc2c20a85aa74a77455aca03b11782777542cce",
+      "source_sentence_hash": "303e13aaaf0714abf26fad2012b64477aea5f0349338e49bd17021c9e4bb2ec3",
+      "evidence_paraphrase": "Consider unique iPad interactions that combine multiple input modes."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-ipados",
+      "best-practices",
+      "keyboard",
+      "touch",
+      "pointer"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Consider unique iPad interactions that combine multiple input modes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

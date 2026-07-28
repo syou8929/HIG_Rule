@@ -1,19 +1,19 @@
 [
   {
     "id": "HIG-COMPONENTS-GAUGES-0001",
-    "title": "Write succinct labels that describe the current value and both endpoints of the range",
+    "title": "Ensure gauge labels describe the value and range endpoints",
     "category": "components",
     "topic": "gauges",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range.",
-      "ja": "「Gauges」において「Write succinct labels that describe the current value and both endpoints of the range」の指針を適用する。"
+      "en": "Ensure succinct gauge labels describe the current value and both endpoints of the range.",
+      "ja": "簡潔なgauge labelでcurrent valueとrangeの両endpointを示す。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-component-specific",
       "platforms": [
@@ -36,7 +36,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Not every gauge style displays every label.",
+      "VoiceOver reads visible labels so people can understand the gauge without seeing the screen."
     ],
     "exceptions": [],
     "rationale": {
@@ -46,7 +47,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range.” in the documented Gauges context?"
+        "Does the design satisfy “Ensure succinct gauge labels describe the current value and both endpoints of the range.” in the documented Gauges context?"
       ]
     },
     "testability": "manual",
@@ -63,10 +64,10 @@
         "Gauges",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:52.521Z",
+      "retrieved_at": "2026-07-21T22:25:00Z",
       "source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81",
       "source_sentence_hash": "de5fc389968e93b7ed501a9e46e717f48867c87f73af1ca3caa54383b2dd75ef",
-      "evidence_paraphrase": "Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range."
+      "evidence_paraphrase": "Ensure succinct gauge labels describe the current value and both endpoints of the range."
     },
     "tags": [
       "components",
@@ -75,7 +76,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Gauges guidance to write succinct labels that describe the current value and both endpoints of the range.",
+    "apple_native_rule": "Ensure succinct gauge labels describe the current value and both endpoints of the range.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -85,12 +86,12 @@
     "topic": "gauges",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context.",
-      "ja": "filling the path with a gradient to help communicate the purpose of the gaugeが現在の状況に適切か検討する。"
+      "en": "Consider a path gradient when it helps communicate a gauge's purpose.",
+      "ja": "gaugeのpurposeを伝えやすくする場合はpath gradientを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -115,7 +116,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A temperature gauge can map a red-to-blue spectrum to hot-to-cold values."
     ],
     "exceptions": [],
     "rationale": {
@@ -125,7 +126,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context.” in the documented Gauges context?"
+        "Does the design satisfy “Consider a path gradient when it helps communicate a gauge's purpose.” in the documented Gauges context?"
       ]
     },
     "testability": "manual",
@@ -142,10 +143,10 @@
         "Gauges",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T11:14:52.521Z",
+      "retrieved_at": "2026-07-21T22:25:00Z",
       "source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81",
       "source_sentence_hash": "c3e230da28bfcf093c8460380052fcfd046974fc70f079e80e8ed77cac84498a",
-      "evidence_paraphrase": "Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context."
+      "evidence_paraphrase": "Consider a path gradient when it helps communicate a gauge's purpose."
     },
     "tags": [
       "components",
@@ -154,7 +155,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Evaluate whether filling the path with a gradient to help communicate the purpose of the gauge is appropriate for the current context.",
+    "apple_native_rule": "Consider a path gradient when it helps communicate a gauge's purpose.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -164,12 +165,12 @@
     "topic": "gauges",
     "subtopic": "macos",
     "statement": {
-      "en": "Evaluate whether using the continuous style for large ranges is appropriate for the current context.",
-      "ja": "using the continuous style for large rangesが現在の状況に適切か検討する。"
+      "en": "Consider the continuous capacity style for a large range.",
+      "ja": "large rangeにはcontinuous capacity styleを検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -186,7 +187,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A discrete capacity indicator would make individual segments too small to be useful."
     ],
     "exceptions": [],
     "rationale": {
@@ -196,7 +197,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether using the continuous style for large ranges is appropriate for the current context.” in the documented Gauges context?"
+        "Does the design satisfy “Consider the continuous capacity style for a large range.” in the documented Gauges context?"
       ]
     },
     "testability": "manual",
@@ -214,10 +215,10 @@
         "Platform considerations",
         "macOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:52.521Z",
+      "retrieved_at": "2026-07-21T22:25:00Z",
       "source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81",
       "source_sentence_hash": "6ff930dfda0005fc7bf3e3f21e4a3465783f0c094720bbe924af92837e42bd8b",
-      "evidence_paraphrase": "Evaluate whether using the continuous style for large ranges is appropriate for the current context."
+      "evidence_paraphrase": "Consider the continuous capacity style for a large range."
     },
     "tags": [
       "components",
@@ -227,7 +228,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether using the continuous style for large ranges is appropriate for the current context.",
+    "apple_native_rule": "Consider the continuous capacity style for a large range.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -237,12 +238,12 @@
     "topic": "gauges",
     "subtopic": "macos",
     "statement": {
-      "en": "Evaluate whether changing the fill color to inform people about significant parts of the range is appropriate for the current context.",
-      "ja": "changing the fill color to inform people about significant parts of the rangeが現在の状況に適切か検討する。"
+      "en": "Consider changing fill color to communicate significant range levels.",
+      "ja": "significantなrange levelを伝えるためfill colorの変更を検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -259,7 +260,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use a whole-indicator color change or a tiered sequence when it fits the app's meaning."
     ],
     "exceptions": [],
     "rationale": {
@@ -269,7 +270,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Evaluate whether changing the fill color to inform people about significant parts of the range is appropriate for the current context.” in the documented Gauges context?"
+        "Does the design satisfy “Consider changing fill color to communicate significant range levels.” in the documented Gauges context?"
       ]
     },
     "testability": "manual",
@@ -287,10 +288,10 @@
         "Platform considerations",
         "macOS"
       ],
-      "retrieved_at": "2026-07-21T11:14:52.521Z",
+      "retrieved_at": "2026-07-21T22:25:00Z",
       "source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81",
       "source_sentence_hash": "f263127cffd7003320512c4ef77f812d3b6379b5a6d3d5b097997c2fd3ab21ea",
-      "evidence_paraphrase": "Evaluate whether changing the fill color to inform people about significant parts of the range is appropriate for the current context."
+      "evidence_paraphrase": "Consider changing fill color to communicate significant range levels."
     },
     "tags": [
       "components",
@@ -300,7 +301,151 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Evaluate whether changing the fill color to inform people about significant parts of the range is appropriate for the current context.",
+    "apple_native_rule": "Consider changing fill color to communicate significant range levels.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-GAUGES-0005",
+    "title": "Avoid using gauges on tvOS",
+    "category": "components",
+    "topic": "gauges",
+    "subtopic": "platform-considerations",
+    "statement": {
+      "en": "Avoid using gauges on tvOS.",
+      "ja": "tvOSでgaugeを使わない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "tvos"
+      ],
+      "devices": [
+        "apple-tv"
+      ],
+      "components": [
+        "gauges"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Gauges have no additional considerations for iOS, iPadOS, visionOS, or watchOS."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Gauges experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGaugesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid using gauges on tvOS.” in the documented Gauges context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/gauges",
+      "page_title": "Gauges",
+      "section_path": [
+        "Gauges",
+        "Platform considerations"
+      ],
+      "retrieved_at": "2026-07-21T22:25:00Z",
+      "source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81",
+      "source_sentence_hash": "ae1f609c5cd05bbafc9f69e0f0485cb343326e3ab093266390522f36f4a5cd22",
+      "evidence_paraphrase": "Avoid using gauges on tvOS."
+    },
+    "tags": [
+      "components",
+      "gauges",
+      "platform-considerations"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid using gauges on tvOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-GAUGES-0006",
+    "title": "Never partially fill a discrete capacity-indicator segment",
+    "category": "components",
+    "topic": "gauges",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Never partially fill a discrete capacity-indicator segment.",
+      "ja": "discrete capacity-indicator segmentを部分的にfillしない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "gauges"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Each segment represents a discrete unit and fills completely to indicate the current value."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Gauges experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるGaugesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never partially fill a discrete capacity-indicator segment.” in the documented Gauges context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/gauges",
+      "page_title": "Gauges",
+      "section_path": [
+        "Gauges",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T22:25:00Z",
+      "source_hash": "dd7f8f428f2d57061c77554106be0ed45108b005458268ff12640adb1dacdf81",
+      "source_sentence_hash": "df820c50a64a3d2b5bc853f50c9fa665f0585fd90dbfeedc612472ddbed7ad7c",
+      "evidence_paraphrase": "Never partially fill a discrete capacity-indicator segment."
+    },
+    "tags": [
+      "components",
+      "gauges",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Never partially fill a discrete capacity-indicator segment.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

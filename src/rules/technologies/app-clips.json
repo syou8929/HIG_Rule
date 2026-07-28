@@ -10,8 +10,8 @@
       "ja": "「App Clips」において「Allow people to complete a task or a demo in your App Clip」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -28,7 +28,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Let people finish the full task, demo, or game level without installing the full app."
     ],
     "exceptions": [],
     "rationale": {
@@ -81,8 +81,8 @@
       "ja": "該当する体験ではuse App Clips solely for marketing purposesを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -99,7 +99,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Provide real task value; do not use the App Clip for advertising or ads."
     ],
     "exceptions": [],
     "rationale": {
@@ -152,8 +152,8 @@
       "ja": "該当する体験ではusing web views in your App Clipを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -170,7 +170,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use native components and frameworks.",
+      "If only web components are available, link directly to the website instead."
     ],
     "exceptions": [],
     "rationale": {
@@ -223,8 +224,8 @@
       "ja": "「App Clips」において「Design a linear, easy-to-use, and focused user interface」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -241,7 +242,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid tab bars, complex navigation, and settings.",
+      "Minimize screens, entry forms, extraneous information, and interface complexity."
     ],
     "exceptions": [],
     "rationale": {
@@ -294,7 +296,7 @@
       "ja": "people can use your App Clip immediatelyを満たしていることを確認する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -312,7 +314,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Bundle every required asset, omit a splash screen, and avoid launch waiting."
     ],
     "exceptions": [],
     "rationale": {
@@ -365,7 +367,7 @@
       "ja": "your App Clip is smallを満たしていることを確認する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -383,7 +385,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Reduce unnecessary code and unused assets, especially when bandwidth is limited.",
+      "Avoid additional data downloads that weaken immediacy."
     ],
     "exceptions": [],
     "rationale": {
@@ -436,8 +439,8 @@
       "ja": "「App Clips」において「Make the App Clip shareable」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -454,7 +457,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Support sharing links to specific App Clip points through Messages."
     ],
     "exceptions": [],
     "rationale": {
@@ -507,8 +510,8 @@
       "ja": "「App Clips」において「Make it easy to pay for a service or product」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -525,7 +528,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Consider Apple Pay for express checkout and shipping details without typing."
     ],
     "exceptions": [],
     "rationale": {
@@ -578,8 +581,8 @@
       "ja": "該当する体験ではrequiring people to create an account before they can benefit from your App Clipを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -596,7 +599,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer no account or ask after task completion.",
+      "If an account is essential, minimize requested information and consider Sign in with Apple."
     ],
     "exceptions": [],
     "rationale": {
@@ -640,17 +644,17 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-APP-CLIPS-0010",
-    "title": "Provide a familiar, focused experience in your app",
+    "title": "Preserve a familiar experience after full-app installation",
     "category": "technologies",
     "topic": "app-clips",
     "subtopic": "designing-your-app-clip",
     "statement": {
-      "en": "Make a familiar, focused experience in your app available when applicable.",
-      "ja": "必要な場合にa familiar, focused experience in your appを利用可能にする。"
+      "en": "Ensure the full app gives prior App Clip users a focused, familiar continuation.",
+      "ja": "full appへの移行後もApp Clip利用者へfocusedでfamiliarなcontinuationを提供する。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -667,7 +671,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Continue the focused App Clip context in the full app.",
+      "Avoid extra steps or requiring people to sign in again."
     ],
     "exceptions": [],
     "rationale": {
@@ -677,7 +682,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make a familiar, focused experience in your app available when applicable.” in the documented App Clips context?"
+        "Does the design satisfy “Ensure the full app gives prior App Clip users a focused, familiar continuation.” in the documented App Clips context?"
       ]
     },
     "testability": "manual",
@@ -697,7 +702,7 @@
       "retrieved_at": "2026-07-21T11:14:38.212Z",
       "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
       "source_sentence_hash": "734bbec943dd42dae58d2baf412c46c044270297b4e7b36cb63ff44a17119e80",
-      "evidence_paraphrase": "Make a familiar, focused experience in your app available when applicable."
+      "evidence_paraphrase": "Ensure the full app gives prior App Clip users a focused, familiar continuation."
     },
     "tags": [
       "technologies",
@@ -706,7 +711,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make a familiar, focused experience in your app available when applicable.",
+    "apple_native_rule": "Ensure the full app gives prior App Clip users a focused, familiar continuation.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -720,8 +725,8 @@
       "ja": "offering Sign in with Appleが現在の状況に適切か検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -738,7 +743,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use Sign in with Apple when off-device login retention and privacy are useful."
     ],
     "exceptions": [],
     "rationale": {
@@ -793,8 +798,8 @@
       "ja": "必要な場合にa secure way to pay for services or goods that also respects people’s privacyを利用可能にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -811,7 +816,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Consider Apple Pay as the documented private payment example."
     ],
     "exceptions": [],
     "rationale": {
@@ -866,8 +871,8 @@
       "ja": "該当する体験ではcompromise the user experience by asking people to install the full appを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -884,7 +889,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "For a demo, let people finish the demo before recommending installation.",
+      "For an on-the-go task, first evaluate whether system promotion is sufficient."
     ],
     "exceptions": [],
     "rationale": {
@@ -939,8 +945,8 @@
       "ja": "notifications focusedを維持する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -957,7 +963,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not send purely promotional notifications.",
+      "Use notifications only after explicit user action and omit them when the task finishes in-app."
     ],
     "exceptions": [],
     "rationale": {
@@ -1012,8 +1019,8 @@
       "ja": "該当する状況ではnotifications to help people complete a taskを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1030,7 +1037,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep each notification directly related to completing the App Clip task."
     ],
     "exceptions": [],
     "rationale": {
@@ -1085,8 +1092,8 @@
       "ja": "該当する状況ではconsistent brandingを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1103,7 +1110,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Tone down platform-provider branding and foreground the individual business brand."
     ],
     "exceptions": [],
     "rationale": {
@@ -1158,8 +1165,8 @@
       "ja": "multiple businessesが現在の状況に適切か検討する。"
     },
     "normative_level": "MAY",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "permit",
     "severity": "info",
     "scope": {
@@ -1176,7 +1183,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Consider recent-business switching and verify location when relevant."
     ],
     "exceptions": [],
     "rationale": {
@@ -1222,17 +1229,17 @@
   },
   {
     "id": "HIG-TECHNOLOGIES-APP-CLIPS-0018",
-    "title": "Be informative",
+    "title": "Make App Clip card imagery informative",
     "category": "technologies",
     "topic": "app-clips",
     "subtopic": "creating-content-for-an-app-clip-card",
     "statement": {
-      "en": "Apply the documented App Clips guidance to be informative.",
-      "ja": "「App Clips」において「Be informative」の指針を適用する。"
+      "en": "Make sure App Clip card imagery clearly communicates features, tasks, or content.",
+      "ja": "App Clip card画像でfeature、task、contentを明確に伝える。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1249,7 +1256,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Communicate App Clip features, supported tasks, or content in the card image."
     ],
     "exceptions": [],
     "rationale": {
@@ -1259,7 +1266,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented App Clips guidance to be informative.” in the documented App Clips context?"
+        "Does the design satisfy “Make sure App Clip card imagery clearly communicates features, tasks, or content.” in the documented App Clips context?"
       ]
     },
     "testability": "manual",
@@ -1279,7 +1286,7 @@
       "retrieved_at": "2026-07-21T11:14:38.212Z",
       "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
       "source_sentence_hash": "a930cada484e05b07e5eb0dad89f87d3cc2fccea3f4c077d5413c2c34b6cd7ec",
-      "evidence_paraphrase": "Apply the documented App Clips guidance to be informative."
+      "evidence_paraphrase": "Make sure App Clip card imagery clearly communicates features, tasks, or content."
     },
     "tags": [
       "technologies",
@@ -1288,7 +1295,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented App Clips guidance to be informative.",
+    "apple_native_rule": "Make sure App Clip card imagery clearly communicates features, tasks, or content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1302,8 +1309,8 @@
       "ja": "該当条件ではphotography and graphicsを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1320,7 +1327,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use imagery that conveys value or the associated place instead of interface screenshots."
     ],
     "exceptions": [],
     "rationale": {
@@ -1373,8 +1380,8 @@
       "ja": "該当する体験ではusing textを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1391,7 +1398,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Header-image text is not localizable and can reduce readability and visual quality."
     ],
     "exceptions": [],
     "rationale": {
@@ -1444,8 +1451,8 @@
       "ja": "該当する状況ではconcise copyを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1462,7 +1469,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Limit the title to 30 characters and the subtitle to 56 characters."
     ],
     "exceptions": [],
     "rationale": {
@@ -1515,8 +1522,8 @@
       "ja": "「App Clips」において「Include the App Clip logo when space allows」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1533,7 +1540,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Omit the logo when clear space is insufficient or on disposable, gambling, or drinking-related items.",
+      "Never use the App Clip logo by itself."
     ],
     "exceptions": [],
     "rationale": {
@@ -1588,8 +1596,8 @@
       "ja": "「App Clips」において「Place your App Clip Code on a flat or cylindrical surface only」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1606,7 +1614,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "On a cylinder, keep code width within one-sixth of the circumference."
     ],
     "exceptions": [],
     "rationale": {
@@ -1661,8 +1669,8 @@
       "ja": "「App Clips」において「Help your App Clip Code remain as flat as possible so it’s easy for people to scan」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1679,7 +1687,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid readily deformable paper, plastic, or fabric.",
+      "Attach the code on a rigid item and make stickers adhere securely to flat surfaces."
     ],
     "exceptions": [],
     "rationale": {
@@ -1734,8 +1743,8 @@
       "ja": "「App Clips」において「Place your App Clip Code in a location that helps ensure reliable scanning」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1752,7 +1761,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "For scan-only codes, provide enough light and avoid requiring a wide scan angle."
     ],
     "exceptions": [],
     "rationale": {
@@ -1807,7 +1816,7 @@
       "ja": "the App Clip Code is unobstructedを満たしていることを確認する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -1825,7 +1834,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not overlay text, logos, or images.",
+      "Never animate or dim the code."
     ],
     "exceptions": [],
     "rationale": {
@@ -1880,8 +1890,8 @@
       "ja": "該当する状況でthe App Clip Code in an upright positionを表示する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1898,7 +1908,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not rotate the generated code or angle its center glyph."
     ],
     "exceptions": [],
     "rationale": {
@@ -1953,8 +1963,8 @@
       "ja": "該当する体験ではcreate App Clip Codes that are too smallを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1971,7 +1981,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Printed communications need at least 3/4 inch (1.9 cm) diameter.",
+      "Digital communications need at least 256×256 px in PNG or SVG.",
+      "NFC tags need at least 35 mm diameter or equivalent; a 35 mm tag needs at least a 1.37 inch (3.48 cm) printed code."
     ],
     "exceptions": [],
     "rationale": {
@@ -2026,8 +2038,8 @@
       "ja": "必要な場合にenough space between an App Clip Code and adjacent App Clip Codes, graphics, or materialsを利用可能にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2044,7 +2056,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Minimum clear space equals the gap between the center glyph and circular code.",
+      "Separate adjacent machine-readable codes enough to scan each reliably."
     ],
     "exceptions": [],
     "rationale": {
@@ -2099,7 +2112,7 @@
       "ja": "該当するすべての場合にuse the generated App Clip Codeを実行する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -2117,7 +2130,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not create or modify the design, add effects, or alter its aspect ratio.",
+      "Scale every attribute, including stroke widths, together."
     ],
     "exceptions": [],
     "rationale": {
@@ -2172,8 +2186,8 @@
       "ja": "「App Clips」において「Choose colors with enough contrast that ensure accurate scanning」の指針を適用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2190,7 +2204,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use the generated third color and a foreground/background pair accepted by the Apple tools."
     ],
     "exceptions": [],
     "rationale": {
@@ -2247,8 +2261,8 @@
       "ja": "該当する状況ではhigh-quality, non-textured print materialsを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2265,7 +2279,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Prefer matte, nonreflective, weather-resistant materials and appropriate inkjet or flexographic printing."
     ],
     "exceptions": [],
     "rationale": {
@@ -2318,8 +2332,8 @@
       "ja": "該当する状況ではhigh-resolution images and printer settingsを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2336,7 +2350,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Rasterize at 600 ppi or more and print at 300 dpi or more.",
+      "For receipt printers, use as much of the paper width as possible."
     ],
     "exceptions": [],
     "rationale": {
@@ -2389,8 +2404,8 @@
       "ja": "該当する状況ではcorrect color settings when you convert the generated SVG file to a CMYK imageを採用する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2407,7 +2422,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Convert sRGB using relative colorimetric intent.",
+      "Use Generic CMYK for CMYK or Gracol 2013 for CMYKOV and allow CIELab Delta E 2.5."
     ],
     "exceptions": [],
     "rationale": {
@@ -2460,8 +2476,8 @@
       "ja": "print quality of your chosen color pair with the printer calibration test sheet that shows text boxes forを満たしていることを確認する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2478,7 +2494,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Print the color-pair calibration sheet at its specified scale before validating quality."
     ],
     "exceptions": [],
     "rationale": {
@@ -2533,8 +2549,8 @@
       "ja": "your printer’s grayscale settings by printing the printer calibration test sheet that shows two grayscale barsを満たしていることを確認する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -2551,7 +2567,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Missing or light gray bars indicate calibration or printer-suitability problems."
     ],
     "exceptions": [],
     "rationale": {
@@ -2593,6 +2609,3825 @@
     "priority_rank": 4,
     "status": "active",
     "apple_native_rule": "Verify that your printer’s grayscale settings by printing the printer calibration test sheet that shows two grayscale bars.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0037",
+    "title": "Adhere to image requirements",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "creating-content-for-an-app-clip-card",
+    "statement": {
+      "en": "Follow image requirements.",
+      "ja": "image requirementsに従う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use a 1800×1200 px PNG or JPEG without transparency."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Follow image requirements.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Creating content for an App Clip card"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "6b2792756899b7a02f7fb83601c08d67dfa1c61b65a8481301befc76f10e4eda",
+      "evidence_paraphrase": "Follow image requirements."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "creating-content-for-an-app-clip-card"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Follow image requirements.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0038",
+    "title": "Adhere to Guidelines for Using Apple Trademarks when referring to your App Clip and App Clip Codes",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "using-clear-messaging",
+    "statement": {
+      "en": "Follow guidelines for Using Apple Trademarks when referring to your App Clip and App Clip Codes.",
+      "ja": "Guidelines for Using Apple Trademarks when referring to your App Clip and App Clip Codesに従う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep Apple marks out of app names and images and use App Clip terms in title case."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Follow guidelines for Using Apple Trademarks when referring to your App Clip and App Clip Codes.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Using clear messaging"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "6bf24863236be5be8acd542dbe33ff329d631d11362304adead7bd4f6865fcfb",
+      "evidence_paraphrase": "Follow guidelines for Using Apple Trademarks when referring to your App Clip and App Clip Codes."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "using-clear-messaging"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Follow guidelines for Using Apple Trademarks when referring to your App Clip and App Clip Codes.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0039",
+    "title": "Consider an App Clip for a finite in-the-moment task",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "app-clips",
+    "statement": {
+      "en": "Evaluate whether an App Clip for a finite in-the-moment task is appropriate for the current context.",
+      "ja": "an App Clip for a finite in-the-moment taskが現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The experience helps complete a finite, in-the-moment task."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether an App Clip for a finite in-the-moment task is appropriate for the current context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "eb4a919ec489443c9cb9a6642311113599fcbc70489ea6742ef2764a1e288cfa",
+      "evidence_paraphrase": "Evaluate whether an App Clip for a finite in-the-moment task is appropriate for the current context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether an App Clip for a finite in-the-moment task is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0040",
+    "title": "Consider an App Clip demo before a purchase or subscription",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "app-clips",
+    "statement": {
+      "en": "Evaluate whether an App Clip demo before a purchase or subscription is appropriate for the current context.",
+      "ja": "an App Clip demo before a purchase or subscriptionが現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The demo helps people understand an app or game before a purchase or subscription."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether an App Clip demo before a purchase or subscription is appropriate for the current context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "a6991ece48ae460bca291dbd2344ce0fbe8c1bf9d3040eb3cd10005b71f1fb14",
+      "evidence_paraphrase": "Evaluate whether an App Clip demo before a purchase or subscription is appropriate for the current context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether an App Clip demo before a purchase or subscription is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0041",
+    "title": "Avoid requiring full-app installation to complete an App Clip task or demo",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "designing-your-app-clip",
+    "statement": {
+      "en": "Exclude requiring full-app installation to complete an App Clip task or demo from the applicable experience.",
+      "ja": "該当する体験ではrequiring full-app installation to complete an App Clip task or demoを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Let people finish the task, demo, or level inside the App Clip."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude requiring full-app installation to complete an App Clip task or demo from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "754bf4fc241ac2d06adb00035d168b4de34759a41e1cb93a7fb16cdf63855fa5",
+      "evidence_paraphrase": "Exclude requiring full-app installation to complete an App Clip task or demo from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude requiring full-app installation to complete an App Clip task or demo from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0042",
+    "title": "Avoid using App Clips to advertise services or products",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "designing-your-app-clip",
+    "statement": {
+      "en": "Exclude using App Clips to advertise services or products from the applicable experience.",
+      "ja": "該当する体験ではusing App Clips to advertise services or productsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "App Clips need real task value beyond advertising."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude using App Clips to advertise services or products from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "f1b62b6de70959aa5cb4ca08f4fa32161226d1f6186fdee17459fe1eae5b524a",
+      "evidence_paraphrase": "Exclude using App Clips to advertise services or products from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude using App Clips to advertise services or products from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0043",
+    "title": "Avoid displaying ads in App Clips",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "designing-your-app-clip",
+    "statement": {
+      "en": "Exclude displaying ads in App Clips from the applicable experience.",
+      "ja": "該当する体験ではdisplaying ads in App Clipsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The prohibition applies to ads displayed inside the App Clip."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude displaying ads in App Clips from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "f1b62b6de70959aa5cb4ca08f4fa32161226d1f6186fdee17459fe1eae5b524a",
+      "evidence_paraphrase": "Exclude displaying ads in App Clips from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude displaying ads in App Clips from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0044",
+    "title": "Show the most contextually relevant App Clip content at launch",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "designing-your-app-clip",
+    "statement": {
+      "en": "Present the most contextually relevant App Clip content at launch in the documented context.",
+      "ja": "該当する状況でthe most contextually relevant App Clip content at launchを表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Skip unnecessary steps and route directly to the content matching launch context."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Present the most contextually relevant App Clip content at launch in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "9f676cc736ed2a51364b96feb7631209e2f7494f4f84dec58ffbbc386600e775",
+      "evidence_paraphrase": "Present the most contextually relevant App Clip content at launch in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Present the most contextually relevant App Clip content at launch in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0045",
+    "title": "Never make people wait when an App Clip launches",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "designing-your-app-clip",
+    "statement": {
+      "en": "Exclude make people wait when an App Clip launches from the applicable experience.",
+      "ja": "該当する体験ではmake people wait when an App Clip launchesを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Bundle required assets and omit splash screens so launch is immediately usable."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude make people wait when an App Clip launches from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "ab38855452a9de9b128dc249c3ac161bdb2bca09e0ea5fc122a272f311960e03",
+      "evidence_paraphrase": "Exclude make people wait when an App Clip launches from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude make people wait when an App Clip launches from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0046",
+    "title": "Avoid downloading additional App Clip data",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "designing-your-app-clip",
+    "statement": {
+      "en": "Exclude downloading additional App Clip data from the applicable experience.",
+      "ja": "該当する体験ではdownloading additional App Clip dataを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Prefer bundled essential content because downloads weaken launch immediacy."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude downloading additional App Clip data from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "0d523f95b976a1aa9a67a33294729acd570733f726e79eae042fdbdc0b5ed47a",
+      "evidence_paraphrase": "Exclude downloading additional App Clip data from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude downloading additional App Clip data from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0047",
+    "title": "Avoid extra steps when people transition from an App Clip to the full app",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "designing-your-app-clip",
+    "statement": {
+      "en": "Exclude extra steps when people transition from an App Clip to the full app from the applicable experience.",
+      "ja": "該当する体験ではextra steps when people transition from an App Clip to the full appを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Do not require another login when moving from the App Clip to the full app."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude extra steps when people transition from an App Clip to the full app from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "4d83a711179b3666f0feceed11ced6d0573fec14f9da66a72039473b4bce1e58",
+      "evidence_paraphrase": "Exclude extra steps when people transition from an App Clip to the full app from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude extra steps when people transition from an App Clip to the full app from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0048",
+    "title": "Avoid relying on locally stored App Clip data between launches",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "preserving-privacy",
+    "statement": {
+      "en": "Exclude relying on locally stored App Clip data between launches from the applicable experience.",
+      "ja": "該当する体験ではrelying on locally stored App Clip data between launchesを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The system can remove the App Clip and all local data between launches.",
+      "Store essential login information securely off-device."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude relying on locally stored App Clip data between launches from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Preserving privacy"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "c15d0a6d71a7e93d02c471fe8ea7fb62436e072299e8cbb78245565365b8ae24",
+      "evidence_paraphrase": "Exclude relying on locally stored App Clip data between launches from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "preserving-privacy"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude relying on locally stored App Clip data between launches from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0049",
+    "title": "Avoid requesting extended App Clip notification permission unless necessary",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "limiting-notifications",
+    "statement": {
+      "en": "Exclude requesting extended App Clip notification permission unless necessary from the applicable experience.",
+      "ja": "該当する体験ではrequesting extended App Clip notification permission unless necessaryを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The default notification window is up to eight hours after launch."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude requesting extended App Clip notification permission unless necessary from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Limiting notifications"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "269f85ef27b9b3e87ac28cd6fd817585d65954b2322a3f6da01f126ab9b623ed",
+      "evidence_paraphrase": "Exclude requesting extended App Clip notification permission unless necessary from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "limiting-notifications"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude requesting extended App Clip notification permission unless necessary from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0050",
+    "title": "Avoid purely promotional App Clip notifications",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "limiting-notifications",
+    "statement": {
+      "en": "Exclude purely promotional App Clip notifications from the applicable experience.",
+      "ja": "該当する体験ではpurely promotional App Clip notificationsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Notifications need to support the task rather than promote unrelated content."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude purely promotional App Clip notifications from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Limiting notifications"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "22b6ccde1596aacda6332db275aee1925e99d7d9c1877075e9d4bc20881d2414",
+      "evidence_paraphrase": "Exclude purely promotional App Clip notifications from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "limiting-notifications"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude purely promotional App Clip notifications from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0051",
+    "title": "Use App Clip notifications only after explicit user action",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "limiting-notifications",
+    "statement": {
+      "en": "Choose or apply app Clip notifications only after explicit user action in the documented context.",
+      "ja": "該当する状況ではApp Clip notifications only after explicit user actionを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "An explicit user action is required before using App Clip notifications."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply app Clip notifications only after explicit user action in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Limiting notifications"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "22b6ccde1596aacda6332db275aee1925e99d7d9c1877075e9d4bc20881d2414",
+      "evidence_paraphrase": "Choose or apply app Clip notifications only after explicit user action in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "limiting-notifications"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply app Clip notifications only after explicit user action in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0052",
+    "title": "Make sure each business brand is clearly visible in its App Clip",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "creating-app-clips-for-businesses",
+    "statement": {
+      "en": "Verify that each business brand is clearly visible in its App Clip.",
+      "ja": "each business brand is clearly visible in its App Clipを満たしていることを確認する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "A platform provider powers an App Clip for an individual business or location.",
+      "Tone down provider branding to prevent confusion."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Verify that each business brand is clearly visible in its App Clip.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Creating App Clips for businesses"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "6a3ea0220764f21f07cbc425c4391418db6715ececc60172c280a463509004e1",
+      "evidence_paraphrase": "Verify that each business brand is clearly visible in its App Clip."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "creating-app-clips-for-businesses"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Verify that each business brand is clearly visible in its App Clip.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0053",
+    "title": "Avoid App Clip card images that show interface screenshots",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "creating-content-for-an-app-clip-card",
+    "statement": {
+      "en": "Exclude app Clip card images that show interface screenshots from the applicable experience.",
+      "ja": "該当する体験ではApp Clip card images that show interface screenshotsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use imagery that communicates value or place instead."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude app Clip card images that show interface screenshots from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Creating content for an App Clip card"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "c04535aa11d35003ecd46eb312ad79abcd4e144442721abf3c56d292fe9f7fc5",
+      "evidence_paraphrase": "Exclude app Clip card images that show interface screenshots from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "creating-content-for-an-app-clip-card"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude app Clip card images that show interface screenshots from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0054",
+    "title": "Match the App Clip action button verb to its content",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "creating-content-for-an-app-clip-card",
+    "statement": {
+      "en": "Apply the documented App Clips guidance to match the App Clip action button verb to its content.",
+      "ja": "「App Clips」において「Match the App Clip action button verb to its content」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use View for media, information, or education; Play for games; Open for other App Clips."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented App Clips guidance to match the App Clip action button verb to its content.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Creating content for an App Clip card"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "73e132f22dc7e012876c059baec217039e3069b4b0bec1085c9a060843a16caa",
+      "evidence_paraphrase": "Apply the documented App Clips guidance to match the App Clip action button verb to its content."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "creating-content-for-an-app-clip-card"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Apply the documented App Clips guidance to match the App Clip action button verb to its content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0055",
+    "title": "Use NFC-integrated App Clip Codes when people can physically access them",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Choose or apply nFC-integrated App Clip Codes when people can physically access them in the documented context.",
+      "ja": "該当する状況ではNFC-integrated App Clip Codes when people can physically access themを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use this variant for physically reachable codes such as tables, registers, windows, signage, cards, or coupons."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply nFC-integrated App Clip Codes when people can physically access them in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "c5775fb78661fb9d9b810fed743fbb7b83e2e94ea78d7b2924ab3748bb558f01",
+      "evidence_paraphrase": "Choose or apply nFC-integrated App Clip Codes when people can physically access them in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply nFC-integrated App Clip Codes when people can physically access them in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0056",
+    "title": "Use scan-only App Clip Codes for inaccessible or digital placements",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Choose or apply scan-only App Clip Codes for inaccessible or digital placements in the documented context.",
+      "ja": "該当する状況ではscan-only App Clip Codes for inaccessible or digital placementsを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use this variant for physically inaccessible signs or digital displays, email, and social media."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply scan-only App Clip Codes for inaccessible or digital placements in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "e3159ab270df730e449adbb1475baa9490325372f0429ebfb0791189a0b7fe62",
+      "evidence_paraphrase": "Choose or apply scan-only App Clip Codes for inaccessible or digital placements in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply scan-only App Clip Codes for inaccessible or digital placements in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0057",
+    "title": "Never use the App Clip logo by itself",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Exclude use the App Clip logo by itself from the applicable experience.",
+      "ja": "該当する体験ではuse the App Clip logo by itselfを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The logo appears only as part of the approved badge design."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude use the App Clip logo by itself from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "4df57452ddc50b7af5cab10b6e0e68dd31a6742df04d881e4763b6570e8924af",
+      "evidence_paraphrase": "Exclude use the App Clip logo by itself from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude use the App Clip logo by itself from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0058",
+    "title": "Make sure cylindrical App Clip Codes span no more than one-sixth circumference",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Verify that cylindrical App Clip Codes span no more than one-sixth circumference.",
+      "ja": "cylindrical App Clip Codes span no more than one-sixth circumferenceを満たしていることを確認する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Measure code width against the cylinder's full circumference."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Verify that cylindrical App Clip Codes span no more than one-sixth circumference.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "04d237a22da0098990f14ad8f8d6b8e30d5a23d305f671481964df6de97c7bb4",
+      "evidence_paraphrase": "Verify that cylindrical App Clip Codes span no more than one-sixth circumference."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Verify that cylindrical App Clip Codes span no more than one-sixth circumference.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0059",
+    "title": "Avoid displaying App Clip Codes directly on deformable materials",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Exclude displaying App Clip Codes directly on deformable materials from the applicable experience.",
+      "ja": "該当する体験ではdisplaying App Clip Codes directly on deformable materialsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "For flexible objects, attach the code on a rigid card or similar support."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude displaying App Clip Codes directly on deformable materials from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "affbe2ae985897f863b2aff59cd1cf44e26e1de062b23518f53fcef46a3276d1",
+      "evidence_paraphrase": "Exclude displaying App Clip Codes directly on deformable materials from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude displaying App Clip Codes directly on deformable materials from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0060",
+    "title": "Avoid overlaying App Clip Codes with text logos or images",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Exclude overlaying App Clip Codes with text logos or images from the applicable experience.",
+      "ja": "該当する体験ではoverlaying App Clip Codes with text logos or imagesを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The prohibition covers text, logos, and images."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude overlaying App Clip Codes with text logos or images from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "8ffa7b340f74060aece4b3c60c27f5744965a041fe16a9e3bc2dcc7a2366000d",
+      "evidence_paraphrase": "Exclude overlaying App Clip Codes with text logos or images from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude overlaying App Clip Codes with text logos or images from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0061",
+    "title": "Never animate an App Clip Code",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Exclude animate an App Clip Code from the applicable experience.",
+      "ja": "該当する体験ではanimate an App Clip Codeを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep the generated code static for reliable scanning."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude animate an App Clip Code from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "8ffa7b340f74060aece4b3c60c27f5744965a041fe16a9e3bc2dcc7a2366000d",
+      "evidence_paraphrase": "Exclude animate an App Clip Code from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude animate an App Clip Code from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0062",
+    "title": "Never dim an App Clip Code",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Exclude dim an App Clip Code from the applicable experience.",
+      "ja": "該当する体験ではdim an App Clip Codeを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Keep the generated code at its approved visible intensity."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude dim an App Clip Code from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "8ffa7b340f74060aece4b3c60c27f5744965a041fe16a9e3bc2dcc7a2366000d",
+      "evidence_paraphrase": "Exclude dim an App Clip Code from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude dim an App Clip Code from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0063",
+    "title": "Make sure App Clip Codes meet their documented minimum sizes",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Verify that app Clip Codes meet their documented minimum sizes.",
+      "ja": "App Clip Codes meet their documented minimum sizesを満たしていることを確認する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Printed code: at least 3/4 inch (1.9 cm) diameter.",
+      "Digital code: at least 256×256 px in PNG or SVG.",
+      "NFC tag: at least 35 mm diameter or equivalent, with a correspondingly sized printed code."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Verify that app Clip Codes meet their documented minimum sizes.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "027bcae10354aadfc34ced8321dc393bf8902f44cbb8edfacc1613c813c947f3",
+      "evidence_paraphrase": "Verify that app Clip Codes meet their documented minimum sizes."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Verify that app Clip Codes meet their documented minimum sizes.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0064",
+    "title": "Consider a scan-distance-to-code-size ratio no greater than 20:1",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Evaluate whether a scan-distance-to-code-size ratio no greater than 20:1 is appropriate for the current context.",
+      "ja": "a scan-distance-to-code-size ratio no greater than 20:1が現在の状況に適切か検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Prefer 10:1 when possible.",
+      "At 40 inches (101 cm), use at least a 4 inch (10.16 cm) code."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Evaluate whether a scan-distance-to-code-size ratio no greater than 20:1 is appropriate for the current context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "60e90e15d9faaa8e92149228c87b28927af0e556efb7aef7948c471b2928b762",
+      "evidence_paraphrase": "Evaluate whether a scan-distance-to-code-size ratio no greater than 20:1 is appropriate for the current context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Evaluate whether a scan-distance-to-code-size ratio no greater than 20:1 is appropriate for the current context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0065",
+    "title": "Use messaging that explains how an App Clip Code launches its App Clip",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "using-clear-messaging",
+    "statement": {
+      "en": "Choose or apply messaging that explains how an App Clip Code launches its App Clip in the documented context.",
+      "ja": "該当する状況ではmessaging that explains how an App Clip Code launches its App Clipを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "This is especially important when using the design without the App Clip logo."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply messaging that explains how an App Clip Code launches its App Clip in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Using clear messaging"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "190b2454be914cff3b2fe63ee0d380a13135a1e10602c6b3f71296f671f73a0a",
+      "evidence_paraphrase": "Choose or apply messaging that explains how an App Clip Code launches its App Clip in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "using-clear-messaging"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply messaging that explains how an App Clip Code launches its App Clip in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0066",
+    "title": "Avoid modifying a generated App Clip Code design",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "customizing-your-app-clip-code",
+    "statement": {
+      "en": "Exclude modifying a generated App Clip Code design from the applicable experience.",
+      "ja": "該当する体験ではmodifying a generated App Clip Code designを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Do not add filters, color augmentation, glows, shadows, gradients, reflections, or aspect-ratio changes."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude modifying a generated App Clip Code design from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Customizing your App Clip Code"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "c38de5bd84c884563094b824e8348cb425fc3a5d51261717c95bd192ebae4ff5",
+      "evidence_paraphrase": "Exclude modifying a generated App Clip Code design from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "customizing-your-app-clip-code"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude modifying a generated App Clip Code design from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0067",
+    "title": "Be sure to scale all App Clip Code attributes together",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "customizing-your-app-clip-code",
+    "statement": {
+      "en": "Ensure scale all App Clip Code attributes together.",
+      "ja": "scale all App Clip Code attributes togetherを確実に行う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Scale stroke widths and every other generated attribute proportionally."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Ensure scale all App Clip Code attributes together.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Customizing your App Clip Code"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "c38de5bd84c884563094b824e8348cb425fc3a5d51261717c95bd192ebae4ff5",
+      "evidence_paraphrase": "Ensure scale all App Clip Code attributes together."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "customizing-your-app-clip-code"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Ensure scale all App Clip Code attributes together.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0068",
+    "title": "Always test printed App Clip Codes from multiple angles before distribution",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "printing-guidelines",
+    "statement": {
+      "en": "Test printed App Clip Codes from multiple angles before distribution in every applicable case.",
+      "ja": "該当するすべての場合にtest printed App Clip Codes from multiple angles before distributionを実行する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Verify scannability from a variety of angles before distribution."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Test printed App Clip Codes from multiple angles before distribution in every applicable case.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Printing guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "228df722c93af7a87bb0d02a8af007e1001f1b95435d2315b007bf8f61204d18",
+      "evidence_paraphrase": "Test printed App Clip Codes from multiple angles before distribution in every applicable case."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "printing-guidelines"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Test printed App Clip Codes from multiple angles before distribution in every applicable case.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0069",
+    "title": "Use only grayscale App Clip Codes with grayscale-only printers",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "printing-guidelines",
+    "statement": {
+      "en": "Choose or apply only grayscale App Clip Codes with grayscale-only printers in the documented context.",
+      "ja": "該当する状況ではonly grayscale App Clip Codes with grayscale-only printersを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "A color code printed in grayscale can scan less reliably."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply only grayscale App Clip Codes with grayscale-only printers in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Printing guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "ec6087dd5480fd43cafe55a29d82a5dd41bc71c90731ecf642d624f88d803bd1",
+      "evidence_paraphrase": "Choose or apply only grayscale App Clip Codes with grayscale-only printers in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "printing-guidelines"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply only grayscale App Clip Codes with grayscale-only printers in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0070",
+    "title": "Use Type 5 NFC tags for NFC-integrated App Clip Codes",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "printing-guidelines",
+    "statement": {
+      "en": "Choose or apply type 5 NFC tags for NFC-integrated App Clip Codes in the documented context.",
+      "ja": "該当する状況ではType 5 NFC tags for NFC-integrated App Clip Codesを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The embedded NFC tag needs at least 35 mm diameter or equivalent size."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply type 5 NFC tags for NFC-integrated App Clip Codes in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Printing guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "5140ddfb00bfffcb9beac5fcfc9037958d9bd2ab67b280496506775682f4cfa9",
+      "evidence_paraphrase": "Choose or apply type 5 NFC tags for NFC-integrated App Clip Codes in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "printing-guidelines"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply type 5 NFC tags for NFC-integrated App Clip Codes in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0071",
+    "title": "Test large App Clip Code print workflows and verify output",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "printing-guidelines",
+    "statement": {
+      "en": "Apply the documented App Clips guidance to test large App Clip Code print workflows and verify output.",
+      "ja": "「App Clips」において「Test large App Clip Code print workflows and verify output」の指針を適用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use small inexpensive test runs and include validation metadata on templates."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Apply the documented App Clips guidance to test large App Clip Code print workflows and verify output.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Printing guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "42aac722c2c9cacd7918209424ce75a6e3de04a13f017ca6611fb16b21f1b438",
+      "evidence_paraphrase": "Apply the documented App Clips guidance to test large App Clip Code print workflows and verify output."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "printing-guidelines"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Apply the documented App Clips guidance to test large App Clip Code print workflows and verify output.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0072",
+    "title": "Map App Clip Code SVG files to invocation URLs",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "printing-guidelines",
+    "statement": {
+      "en": "Map each App Clip Code SVG file to its invocation URL.",
+      "ja": "各App Clip Code SVGファイルを対応するinvocation URLに関連付ける。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "This applies when managing many SVG files whose encoded URLs are not visually identifiable.",
+      "Maintain file management, versioning, and change tracking."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Map each App Clip Code SVG file to its invocation URL.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Printing guidelines"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "6afe00b54711d08bddf073be2bb2a694404ed22526010d873e431de2998d0982",
+      "evidence_paraphrase": "Map each App Clip Code SVG file to its invocation URL."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "printing-guidelines"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Map each App Clip Code SVG file to its invocation URL.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0073",
+    "title": "Use only approved App Clip Codes",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Use only Apple-provided App Clip Codes created with approved tools and following the guidelines.",
+      "ja": "承認済みtoolで作成しguidelineに従うApple提供App Clip Codeだけを使う。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The code comes from App Store Connect or App Clip Code Generator and follows the published guidelines."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use only Apple-provided App Clip Codes created with approved tools and following the guidelines.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "9dcda9a908cc95767166dd28d7d53a837b3126c70fd4926a85aea017976d0e1b",
+      "evidence_paraphrase": "Use only Apple-provided App Clip Codes created with approved tools and following the guidelines."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use only Apple-provided App Clip Codes created with approved tools and following the guidelines.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0074",
+    "title": "Never use App Clip Code elements in company or product names",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Exclude use App Clip Code elements in company or product names from the applicable experience.",
+      "ja": "該当する体験ではuse App Clip Code elements in company or product namesを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The prohibition includes the Apple logo, App Clip mark, and code design."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude use App Clip Code elements in company or product names from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "db4c8a6bec8126be95b5f9a66447c4e8dd18a089aa03fabb960365223477bb1f",
+      "evidence_paraphrase": "Exclude use App Clip Code elements in company or product names from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude use App Clip Code elements in company or product names from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0075",
+    "title": "Never seek copyright or trademark registration for App Clip Code elements",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Exclude seek copyright or trademark registration for App Clip Code elements from the applicable experience.",
+      "ja": "該当する体験ではseek copyright or trademark registration for App Clip Code elementsを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Do not seek copyright or trademark registration for the code or any contained element."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude seek copyright or trademark registration for App Clip Code elements from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "db4c8a6bec8126be95b5f9a66447c4e8dd18a089aa03fabb960365223477bb1f",
+      "evidence_paraphrase": "Exclude seek copyright or trademark registration for App Clip Code elements from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude seek copyright or trademark registration for App Clip Code elements from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0076",
+    "title": "Never use App Clip Codes in ways that damage Apple goodwill or reputation",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Exclude use App Clip Codes in ways that damage Apple goodwill or reputation from the applicable experience.",
+      "ja": "該当する体験ではuse App Clip Codes in ways that damage Apple goodwill or reputationを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Protect Apple's and App Clips' goodwill, value, and reputation."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude use App Clip Codes in ways that damage Apple goodwill or reputation from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "6e326289f5ad8a4aaf319ed5ccf073a999b5e551140300ee85f312371f01fda1",
+      "evidence_paraphrase": "Exclude use App Clip Codes in ways that damage Apple goodwill or reputation from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude use App Clip Codes in ways that damage Apple goodwill or reputation from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0077",
+    "title": "Never use App Clip Codes in ways that infringe third-party proprietary rights",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Exclude use App Clip Codes in ways that infringe third-party proprietary rights from the applicable experience.",
+      "ja": "該当する体験ではuse App Clip Codes in ways that infringe third-party proprietary rightsを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Protect third-party trademarks and proprietary rights."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude use App Clip Codes in ways that infringe third-party proprietary rights from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "6e326289f5ad8a4aaf319ed5ccf073a999b5e551140300ee85f312371f01fda1",
+      "evidence_paraphrase": "Exclude use App Clip Codes in ways that infringe third-party proprietary rights from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude use App Clip Codes in ways that infringe third-party proprietary rights from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0078",
+    "title": "Never use App Clip Codes in ways that confuse product or service source",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Exclude use App Clip Codes in ways that confuse product or service source from the applicable experience.",
+      "ja": "該当する体験ではuse App Clip Codes in ways that confuse product or service sourceを避ける。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Avoid confusion about the source of products or services."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude use App Clip Codes in ways that confuse product or service source from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "6e326289f5ad8a4aaf319ed5ccf073a999b5e551140300ee85f312371f01fda1",
+      "evidence_paraphrase": "Exclude use App Clip Codes in ways that confuse product or service source from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude use App Clip Codes in ways that confuse product or service source from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0079",
+    "title": "Avoid adding symbols to generated App Clip Codes",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Exclude adding symbols to generated App Clip Codes from the applicable experience.",
+      "ja": "該当する体験ではadding symbols to generated App Clip Codesを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The restriction applies to codes produced by both approved Apple tools."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude adding symbols to generated App Clip Codes from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "b8baee9d094ecd2cc70a7c8c6c78debf9ee7951ae647ea884659a5115ee90ae4",
+      "evidence_paraphrase": "Exclude adding symbols to generated App Clip Codes from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude adding symbols to generated App Clip Codes from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0080",
+    "title": "Use only essential App Clip features for the current task",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "designing-your-app-clip",
+    "statement": {
+      "en": "Choose or apply only essential App Clip features for the current task in the documented context.",
+      "ja": "該当する状況ではonly essential App Clip features for the current taskを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Reserve advanced or complex features for the full app and minimize screens and forms."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply only essential App Clip features for the current task in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "69c9bc4dec204791b06ba2266d2616cca743823d625276ecfb3a1b99ddfe2f25",
+      "evidence_paraphrase": "Choose or apply only essential App Clip features for the current task in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply only essential App Clip features for the current task in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0081",
+    "title": "Keep App Clip data storage and handling minimal",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "preserving-privacy",
+    "statement": {
+      "en": "Maintain app Clip data storage and handling minimal.",
+      "ja": "App Clip data storage and handling minimalを維持する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Store necessary data securely and keep essential login information off-device."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Maintain app Clip data storage and handling minimal.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Preserving privacy"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "1621bf157126d4c07e7576a3b6a15f11aad0aa4f57f853c77a788ce183acff8b",
+      "evidence_paraphrase": "Maintain app Clip data storage and handling minimal."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "preserving-privacy"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Maintain app Clip data storage and handling minimal.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0082",
+    "title": "Use task completion or a natural pause to recommend the full app",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "showcasing-your-app",
+    "statement": {
+      "en": "Choose or apply task completion or a natural pause to recommend the full app in the documented context.",
+      "ja": "該当する状況ではtask completion or a natural pause to recommend the full appを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Present SKOverlay after task completion or at a natural pause."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply task completion or a natural pause to recommend the full app in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Showcasing your app"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "532ddf1dddef0e106f3e521482262ebee97b6a822bcd92eb53585db2e4601be7",
+      "evidence_paraphrase": "Choose or apply task completion or a natural pause to recommend the full app in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "showcasing-your-app"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply task completion or a natural pause to recommend the full app in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0083",
+    "title": "Use nonintrusive polite recommendations for the full app",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "showcasing-your-app",
+    "statement": {
+      "en": "Choose or apply nonintrusive polite recommendations for the full app in the documented context.",
+      "ja": "該当する状況ではnonintrusive polite recommendations for the full appを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Do not repeat installation asks, interrupt a task, or use push notifications for the recommendation.",
+      "Clearly explain additional full-app features."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply nonintrusive polite recommendations for the full app in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Showcasing your app"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "5889568ebe412ac19fb0a13c7914213c8a8eb05467b4c46730faa8d390d23280",
+      "evidence_paraphrase": "Choose or apply nonintrusive polite recommendations for the full app in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "showcasing-your-app"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply nonintrusive polite recommendations for the full app in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0084",
+    "title": "Use an explicit permission request when App Clip functionality exceeds one day",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "limiting-notifications",
+    "statement": {
+      "en": "Choose or apply an explicit permission request when App Clip functionality exceeds one day in the documented context.",
+      "ja": "該当する状況ではan explicit permission request when App Clip functionality exceeds one dayを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use this when App Clip functionality lasts more than one day."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply an explicit permission request when App Clip functionality exceeds one day in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Limiting notifications"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "bc63e44091e0b4b09c41d138b3bcaaf99e14d3e709095c06a38aab200e91800b",
+      "evidence_paraphrase": "Choose or apply an explicit permission request when App Clip functionality exceeds one day in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "limiting-notifications"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply an explicit permission request when App Clip functionality exceeds one day in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0085",
+    "title": "Make sure App Clips handle simultaneous businesses or locations and update their interfaces",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "creating-app-clips-for-businesses",
+    "statement": {
+      "en": "Verify that app Clips handle simultaneous businesses or locations and update their interfaces.",
+      "ja": "App Clips handle simultaneous businesses or locations and update their interfacesを満たしていることを確認する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "People can use the App Clip for more than one business or location at once.",
+      "Consider switching among recent businesses and location verification."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Verify that app Clips handle simultaneous businesses or locations and update their interfaces.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Designing your App Clip",
+        "Creating App Clips for businesses"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "bd4296e206a596dcb5ccac2c5e92235e02db601a1a1386101a997ac5d2403d48",
+      "evidence_paraphrase": "Verify that app Clips handle simultaneous businesses or locations and update their interfaces."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "designing-your-app-clip",
+      "creating-app-clips-for-businesses"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Verify that app Clips handle simultaneous businesses or locations and update their interfaces.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0086",
+    "title": "Use an App Clip Code at least as large as nearby scannable items",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "displaying-app-clip-codes",
+    "statement": {
+      "en": "Choose or apply an App Clip Code at least as large as nearby scannable items in the documented context.",
+      "ja": "該当する状況ではan App Clip Code at least as large as nearby scannable itemsを採用する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply this when the App Clip Code appears near a QR code or another scannable item."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Choose or apply an App Clip Code at least as large as nearby scannable items in the documented context.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Displaying App Clip Codes"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "e326f62e6fa6ee39645da24d1f75e94902e9b2993971c3c04b06c0fb0201a668",
+      "evidence_paraphrase": "Choose or apply an App Clip Code at least as large as nearby scannable items in the documented context."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "displaying-app-clip-codes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Choose or apply an App Clip Code at least as large as nearby scannable items in the documented context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0087",
+    "title": "Always use a simple clear App Clip Code call to action",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "using-clear-messaging",
+    "statement": {
+      "en": "Use a simple clear App Clip Code call to action in every applicable case.",
+      "ja": "該当するすべての場合にuse a simple clear App Clip Code call to actionを実行する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use suggested wording or equivalent clear custom copy."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a simple clear App Clip Code call to action in every applicable case.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "App Clip Codes",
+        "Using clear messaging"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "190b2454be914cff3b2fe63ee0d380a13135a1e10602c6b3f71296f671f73a0a",
+      "evidence_paraphrase": "Use a simple clear App Clip Code call to action in every applicable case."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "app-clip-codes",
+      "using-clear-messaging"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use a simple clear App Clip Code call to action in every applicable case.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0088",
+    "title": "Avoid displaying App Clip Codes for inactive App Clips",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Exclude displaying App Clip Codes for inactive App Clips from the applicable experience.",
+      "ja": "該当する体験ではdisplaying App Clip Codes for inactive App Clipsを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The associated App Clip is no longer active."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Exclude displaying App Clip Codes for inactive App Clips from the applicable experience.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "0476838e5bf34ac9621b92eb75d07e9d73072ca277b9378ed869196331777921",
+      "evidence_paraphrase": "Exclude displaying App Clip Codes for inactive App Clips from the applicable experience."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Exclude displaying App Clip Codes for inactive App Clips from the applicable experience.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-APP-CLIPS-0089",
+    "title": "Make sure Apple trademarks remain in English",
+    "category": "technologies",
+    "topic": "app-clips",
+    "subtopic": "legal-requirements",
+    "statement": {
+      "en": "Verify that apple trademarks remain in English.",
+      "ja": "Apple trademarks remain in Englishを満たしていることを確認する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "With Apple approval, legal notices and credit lines may be translated, but trademarks may not."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable App Clips experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるApp Clipsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Verify that apple trademarks remain in English.” in the documented App Clips context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-clips",
+      "page_title": "App Clips",
+      "section_path": [
+        "App Clips",
+        "Legal requirements"
+      ],
+      "retrieved_at": "2026-07-21T11:14:38.212Z",
+      "source_hash": "80a3f9d169c65bfa537a39ca060211aa6dc8636bfb59aafe02aa48bbc9c46033",
+      "source_sentence_hash": "205dff745d75a85c2329ef58f0abb171751fb073e70eefe9e3a9285ba032d0af",
+      "evidence_paraphrase": "Verify that apple trademarks remain in English."
+    },
+    "tags": [
+      "technologies",
+      "app-clips",
+      "legal-requirements"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Verify that apple trademarks remain in English.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

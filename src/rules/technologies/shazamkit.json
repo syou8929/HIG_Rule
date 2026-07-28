@@ -1,17 +1,96 @@
 [
   {
     "id": "HIG-TECHNOLOGIES-SHAZAMKIT-0001",
-    "title": "Let people opt in to storing your app’s recognized songs to their iCloud library",
+    "title": "Obtain approval before storing recognized songs",
     "category": "technologies",
     "topic": "shazamkit",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Preserve people’s ability to opt in to storing your app’s recognized songs to their iCloud library.",
-      "ja": "利用者がopt in to storing your app’s recognized songs to their iCloud libraryできる状態を保つ。"
+      "en": "Before storing recognized songs in iCloud, obtain the person's approval.",
+      "ja": "recognized songをiCloudへ保存する前に本人のapprovalを得る。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app can store songs recognized with ShazamKit in the person's iCloud library."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ShazamKit experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるShazamKitの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Before storing recognized songs in iCloud, obtain the person's approval.” in the documented ShazamKit context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/shazamkit",
+      "page_title": "ShazamKit",
+      "section_path": [
+        "ShazamKit",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.230Z",
+      "source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427",
+      "source_sentence_hash": "2fe27fd694d359f1ed93f80759f08d46ce10e7a2630eb112c2f4015e275447e7",
+      "evidence_paraphrase": "Before storing recognized songs in iCloud, obtain the person's approval."
+    },
+    "tags": [
+      "technologies",
+      "shazamkit",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Before storing recognized songs in iCloud, obtain the person's approval.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SHAZAMKIT-0002",
+    "title": "Stop recording as soon as possible",
+    "category": "technologies",
+    "topic": "shazamkit",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Stop ShazamKit audio recording as soon as recognition sampling allows.",
+      "ja": "recognition sampleを取得でき次第ShazamKitのaudio recordingを停止する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36,7 +115,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "People granted microphone access for audio recognition.",
+      "Apply the separate privacy MUST that limits recording to the required sample duration."
     ],
     "exceptions": [],
     "rationale": {
@@ -46,7 +126,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to opt in to storing your app’s recognized songs to their iCloud library.” in the documented ShazamKit context?"
+        "Does the design satisfy “Stop ShazamKit audio recording as soon as recognition sampling allows.” in the documented ShazamKit context?"
       ]
     },
     "testability": "manual",
@@ -65,8 +145,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:19.230Z",
       "source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427",
-      "source_sentence_hash": "2fe27fd694d359f1ed93f80759f08d46ce10e7a2630eb112c2f4015e275447e7",
-      "evidence_paraphrase": "Preserve people’s ability to opt in to storing your app’s recognized songs to their iCloud library."
+      "source_sentence_hash": "f22e66f0e6ceec29a777d8e920002aaae2d2cca515d329e9d765874af827e732",
+      "evidence_paraphrase": "Stop ShazamKit audio recording as soon as recognition sampling allows."
     },
     "tags": [
       "technologies",
@@ -75,7 +155,240 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to opt in to storing your app’s recognized songs to their iCloud library.",
+    "apple_native_rule": "Stop ShazamKit audio recording as soon as recognition sampling allows.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SHAZAMKIT-0003",
+    "title": "Request microphone access for recognition",
+    "category": "technologies",
+    "topic": "shazamkit",
+    "subtopic": "shazamkit",
+    "statement": {
+      "en": "Before using the device microphone for ShazamKit recognition, request access.",
+      "ja": "ShazamKit recognitionにdevice microphoneを使う前にaccessをrequestする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app needs the device microphone to obtain an audio sample."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ShazamKit experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるShazamKitの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Before using the device microphone for ShazamKit recognition, request access.” in the documented ShazamKit context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/shazamkit",
+      "page_title": "ShazamKit",
+      "section_path": [
+        "ShazamKit"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.230Z",
+      "source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427",
+      "source_sentence_hash": "e8d07f10c75ba2b2ba5b36e2a4fa22dbd94661dfe0d9222103f4609398bb8d32",
+      "evidence_paraphrase": "Before using the device microphone for ShazamKit recognition, request access."
+    },
+    "tags": [
+      "technologies",
+      "shazamkit"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Before using the device microphone for ShazamKit recognition, request access.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SHAZAMKIT-0004",
+    "title": "Explain the microphone access request",
+    "category": "technologies",
+    "topic": "shazamkit",
+    "subtopic": "shazamkit",
+    "statement": {
+      "en": "Explain why the app requests microphone access.",
+      "ja": "appがmicrophone accessをrequestする理由を説明する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The app requests microphone access for ShazamKit recognition."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ShazamKit experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるShazamKitの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Explain why the app requests microphone access.” in the documented ShazamKit context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/shazamkit",
+      "page_title": "ShazamKit",
+      "section_path": [
+        "ShazamKit"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.230Z",
+      "source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427",
+      "source_sentence_hash": "edd92ab30f044eafaae823ceda11f8164be962ecdd22fea42525d77d9342843b",
+      "evidence_paraphrase": "Explain why the app requests microphone access."
+    },
+    "tags": [
+      "technologies",
+      "shazamkit"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Explain why the app requests microphone access.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-SHAZAMKIT-0005",
+    "title": "Limit recognition recording to the required sample",
+    "category": "technologies",
+    "topic": "shazamkit",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Record recognition audio only as long as needed to obtain the sample.",
+      "ja": "recognition audioは必要なsampleを取得する時間だけrecordする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The person granted microphone access for audio recognition."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable ShazamKit experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるShazamKitの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Record recognition audio only as long as needed to obtain the sample.” in the documented ShazamKit context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/shazamkit",
+      "page_title": "ShazamKit",
+      "section_path": [
+        "ShazamKit",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.230Z",
+      "source_hash": "3e65d0384fa0b63afbf49a86c23fffddefd300115ffdda803712710b084ec427",
+      "source_sentence_hash": "477ea650642aaeb4b6d9e87bba5406925689ceafbdd2afe2baf2544567f9403d",
+      "evidence_paraphrase": "Record recognition audio only as long as needed to obtain the sample."
+    },
+    "tags": [
+      "technologies",
+      "shazamkit",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Record recognition audio only as long as needed to obtain the sample.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

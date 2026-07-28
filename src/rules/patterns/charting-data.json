@@ -1,17 +1,17 @@
 [
   {
     "id": "HIG-PATTERNS-CHARTING-DATA-0001",
-    "title": "Use a chart when you want to highlight important information about a dataset",
+    "title": "Use charts to highlight important dataset information",
     "category": "patterns",
     "topic": "charting-data",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply a chart when you want to highlight important information about a dataset in the documented context.",
-      "ja": "該当する状況ではa chart when you want to highlight important information about a datasetを採用する。"
+      "en": "Use a chart when its visual prominence helps highlight important information in a dataset.",
+      "ja": "visual prominenceがdatasetのimportant informationを強調する場合にchartを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -36,7 +36,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Clearly communicate what people can learn from the data they care about."
     ],
     "exceptions": [],
     "rationale": {
@@ -46,7 +46,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a chart when you want to highlight important information about a dataset in the documented context.” in the documented Charting data context?"
+        "Does the design satisfy “Use a chart when its visual prominence helps highlight important information in a dataset.” in the documented Charting data context?"
       ]
     },
     "testability": "manual",
@@ -66,7 +66,7 @@
       "retrieved_at": "2026-07-21T11:14:42.378Z",
       "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
       "source_sentence_hash": "8328fbe63f1c4c030a9fe4dcccde77bb780049023e0acdb32e3d6925da11e5af",
-      "evidence_paraphrase": "Choose or apply a chart when you want to highlight important information about a dataset in the documented context."
+      "evidence_paraphrase": "Use a chart when its visual prominence helps highlight important information in a dataset."
     },
     "tags": [
       "patterns",
@@ -75,22 +75,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply a chart when you want to highlight important information about a dataset in the documented context.",
+    "apple_native_rule": "Use a chart when its visual prominence helps highlight important information in a dataset.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-CHARTING-DATA-0002",
-    "title": "Keep a chart simple, letting people choose when they want additional details",
+    "title": "Keep charts simple and reveal details on demand",
     "category": "patterns",
     "topic": "charting-data",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Maintain a chart simple, letting people choose when they want additional details.",
-      "ja": "a chart simple, letting people choose when they want additional detailsを維持する。"
+      "en": "Keep a chart simple and let people reveal additional data or functionality when they want it.",
+      "ja": "chartをsimpleに保ち、追加dataやfunctionalityを必要時に表示できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -115,7 +115,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid packing in data that obscures relationships or overwhelms the chart.",
+      "Offer levels of detail or data subsets that match people's interests.",
+      "For complex interactive charts, consider progressively introducing more capable versions."
     ],
     "exceptions": [],
     "rationale": {
@@ -125,7 +127,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain a chart simple, letting people choose when they want additional details.” in the documented Charting data context?"
+        "Does the design satisfy “Keep a chart simple and let people reveal additional data or functionality when they want it.” in the documented Charting data context?"
       ]
     },
     "testability": "manual",
@@ -145,7 +147,7 @@
       "retrieved_at": "2026-07-21T11:14:42.378Z",
       "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
       "source_sentence_hash": "b5e4b673c85b6042c3f197f4685c3b1a72557d876fd41248c6c9f944f0ed3eb3",
-      "evidence_paraphrase": "Maintain a chart simple, letting people choose when they want additional details."
+      "evidence_paraphrase": "Keep a chart simple and let people reveal additional data or functionality when they want it."
     },
     "tags": [
       "patterns",
@@ -154,24 +156,24 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain a chart simple, letting people choose when they want additional details.",
+    "apple_native_rule": "Keep a chart simple and let people reveal additional data or functionality when they want it.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-CHARTING-DATA-0003",
-    "title": "Make every chart in your app accessible",
+    "title": "Make every chart accessible",
     "category": "patterns",
     "topic": "charting-data",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Apply the documented Charting data guidance to make every chart in your app accessible.",
-      "ja": "「Charting data」において「Make every chart in your app accessible」の指針を適用する。"
+      "en": "Ensure every chart is accessible.",
+      "ja": "すべてのchartをaccessibleにする。"
     },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
     "scope": {
       "portability": "apple-platform",
       "platforms": [
@@ -194,7 +196,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Provide accessibility labels that describe chart values and components.",
+      "Provide accessibility elements that let people interact with the chart.",
+      "Visible descriptions do not replace accessibility labels or elements."
     ],
     "exceptions": [],
     "rationale": {
@@ -204,7 +208,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Charting data guidance to make every chart in your app accessible.” in the documented Charting data context?"
+        "Does the design satisfy “Ensure every chart is accessible.” in the documented Charting data context?"
       ]
     },
     "testability": "manual",
@@ -224,7 +228,7 @@
       "retrieved_at": "2026-07-21T11:14:42.378Z",
       "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
       "source_sentence_hash": "399c6903451f9e32f7884b101661ca00290424b719975aeeb796e0fe6d8a0584",
-      "evidence_paraphrase": "Apply the documented Charting data guidance to make every chart in your app accessible."
+      "evidence_paraphrase": "Ensure every chart is accessible."
     },
     "tags": [
       "patterns",
@@ -233,22 +237,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Charting data guidance to make every chart in your app accessible.",
+    "apple_native_rule": "Ensure every chart is accessible.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-CHARTING-DATA-0004",
-    "title": "Match the size of a chart to its functionality, topic, and level of detail",
+    "title": "Size charts for their function and detail",
     "category": "patterns",
     "topic": "charting-data",
     "subtopic": "designing-effective-charts",
     "statement": {
-      "en": "Apply the documented Charting data guidance to match the size of a chart to its functionality, topic, and level of detail.",
-      "ja": "「Charting data」において「Match the size of a chart to its functionality, topic, and level of detail」の指針を適用する。"
+      "en": "Match chart size to its functionality, topic, interactivity, and level of detail.",
+      "ja": "chart sizeをfunctionality、topic、interactivity、detail levelへ合わせる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -273,7 +277,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Provide enough room for readable labels, annotations, and interaction.",
+      "A small chart may show glanceable information or preview a larger chart."
     ],
     "exceptions": [],
     "rationale": {
@@ -283,7 +288,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Charting data guidance to match the size of a chart to its functionality, topic, and level of detail.” in the documented Charting data context?"
+        "Does the design satisfy “Match chart size to its functionality, topic, interactivity, and level of detail.” in the documented Charting data context?"
       ]
     },
     "testability": "manual",
@@ -303,7 +308,7 @@
       "retrieved_at": "2026-07-21T11:14:42.378Z",
       "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
       "source_sentence_hash": "99f9a8d6b697dea9178196102c79d1b4885bca6eb7fde5506aa0c99d98df9743",
-      "evidence_paraphrase": "Apply the documented Charting data guidance to match the size of a chart to its functionality, topic, and level of detail."
+      "evidence_paraphrase": "Match chart size to its functionality, topic, interactivity, and level of detail."
     },
     "tags": [
       "patterns",
@@ -312,22 +317,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Charting data guidance to match the size of a chart to its functionality, topic, and level of detail.",
+    "apple_native_rule": "Match chart size to its functionality, topic, interactivity, and level of detail.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-CHARTING-DATA-0005",
-    "title": "Prefer consistency across multiple charts, deviating only when you need to highlight differences",
+    "title": "Keep related charts visually consistent",
     "category": "patterns",
     "topic": "charting-data",
     "subtopic": "designing-effective-charts",
     "statement": {
-      "en": "Favor consistency across multiple charts, deviating only when you need to highlight differences when the documented conditions apply.",
-      "ja": "該当条件ではconsistency across multiple charts, deviating only when you need to highlight differencesを優先する。"
+      "en": "Keep charts with similar purposes visually consistent unless a difference needs emphasis.",
+      "ja": "同様の目的を持つchartは、differenceの強調が必要な場合を除きvisualに一貫させる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -352,7 +357,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use consistent chart types and styles so learning transfers between charts.",
+      "Consider a different type or style only to highlight a meaningful difference."
     ],
     "exceptions": [],
     "rationale": {
@@ -362,7 +368,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor consistency across multiple charts, deviating only when you need to highlight differences when the documented conditions apply.” in the documented Charting data context?"
+        "Does the design satisfy “Keep charts with similar purposes visually consistent unless a difference needs emphasis.” in the documented Charting data context?"
       ]
     },
     "testability": "manual",
@@ -382,7 +388,7 @@
       "retrieved_at": "2026-07-21T11:14:42.378Z",
       "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
       "source_sentence_hash": "8cd0b6fdda9756a632b81e2569768bd5712184f173cdc3b1a85898ca186aff86",
-      "evidence_paraphrase": "Favor consistency across multiple charts, deviating only when you need to highlight differences when the documented conditions apply."
+      "evidence_paraphrase": "Keep charts with similar purposes visually consistent unless a difference needs emphasis."
     },
     "tags": [
       "patterns",
@@ -391,22 +397,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Favor consistency across multiple charts, deviating only when you need to highlight differences when the documented conditions apply.",
+    "apple_native_rule": "Keep charts with similar purposes visually consistent unless a difference needs emphasis.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-PATTERNS-CHARTING-DATA-0006",
-    "title": "Maintain continuity among multiple charts that use the same data",
+    "title": "Maintain continuity across views of one dataset",
     "category": "patterns",
     "topic": "charting-data",
     "subtopic": "designing-effective-charts",
     "statement": {
-      "en": "Apply the documented Charting data guidance to maintain continuity among multiple charts that use the same data.",
-      "ja": "「Charting data」において「Maintain continuity among multiple charts that use the same data」の指針を適用する。"
+      "en": "Maintain visual continuity among charts that show the same dataset.",
+      "ja": "同じdatasetを示すchart間でvisual continuityを保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -431,7 +437,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Keep chart type, colors, annotations, layout, marks, and descriptive text consistent across overview and detail views."
     ],
     "exceptions": [],
     "rationale": {
@@ -441,7 +447,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Charting data guidance to maintain continuity among multiple charts that use the same data.” in the documented Charting data context?"
+        "Does the design satisfy “Maintain visual continuity among charts that show the same dataset.” in the documented Charting data context?"
       ]
     },
     "testability": "manual",
@@ -461,7 +467,7 @@
       "retrieved_at": "2026-07-21T11:14:42.378Z",
       "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
       "source_sentence_hash": "08e008397226f5a6afb5bee50dc29e3d99e7b719b3c0863d5a2bebfd20ef6d9a",
-      "evidence_paraphrase": "Apply the documented Charting data guidance to maintain continuity among multiple charts that use the same data."
+      "evidence_paraphrase": "Maintain visual continuity among charts that show the same dataset."
     },
     "tags": [
       "patterns",
@@ -470,7 +476,324 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Charting data guidance to maintain continuity among multiple charts that use the same data.",
+    "apple_native_rule": "Maintain visual continuity among charts that show the same dataset.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-CHARTING-DATA-0007",
+    "title": "Prefer familiar chart types",
+    "category": "patterns",
+    "topic": "charting-data",
+    "subtopic": "designing-effective-charts",
+    "statement": {
+      "en": "Generally prefer familiar chart types such as bar charts and line charts.",
+      "ja": "通常はbar chartやline chartなどfamiliarなchart typeを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Familiar types make it more likely that people already know how to read the chart."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Charting data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるCharting dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Generally prefer familiar chart types such as bar charts and line charts.” in the documented Charting data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/charting-data",
+      "page_title": "Charting data",
+      "section_path": [
+        "Charting data",
+        "Designing effective charts"
+      ],
+      "retrieved_at": "2026-07-21T11:14:42.378Z",
+      "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
+      "source_sentence_hash": "c3a9e3d8a5b4b72f3b30704ef4deee1c11216d77ed20ad2dd24502e94f699155",
+      "evidence_paraphrase": "Generally prefer familiar chart types such as bar charts and line charts."
+    },
+    "tags": [
+      "patterns",
+      "charting-data",
+      "designing-effective-charts"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Generally prefer familiar chart types such as bar charts and line charts.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-CHARTING-DATA-0008",
+    "title": "Teach people how to read novel charts",
+    "category": "patterns",
+    "topic": "charting-data",
+    "subtopic": "designing-effective-charts",
+    "statement": {
+      "en": "When a chart presents data in a novel way, help people learn how to interpret it.",
+      "ja": "chartがnovelな方法でdataを示す場合、解釈方法を学べるよう支援する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Introduce novel visual encodings and explain how they map to the represented metrics."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Charting data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるCharting dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When a chart presents data in a novel way, help people learn how to interpret it.” in the documented Charting data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/charting-data",
+      "page_title": "Charting data",
+      "section_path": [
+        "Charting data",
+        "Designing effective charts"
+      ],
+      "retrieved_at": "2026-07-21T11:14:42.378Z",
+      "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
+      "source_sentence_hash": "180cd98491b6eb0ed02c316d9549a148f4895324732204229b48aaf8c2d52fb8",
+      "evidence_paraphrase": "When a chart presents data in a novel way, help people learn how to interpret it."
+    },
+    "tags": [
+      "patterns",
+      "charting-data",
+      "designing-effective-charts"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When a chart presents data in a novel way, help people learn how to interpret it.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-CHARTING-DATA-0009",
+    "title": "Examine data from multiple perspectives",
+    "category": "patterns",
+    "topic": "charting-data",
+    "subtopic": "designing-effective-charts",
+    "statement": {
+      "en": "Examine data at macro, subset, and individual-point levels to find useful chart details.",
+      "ja": "dataをmacro、subset、individual pointのlevelで調べ、有用なchart detailを見つける。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use high-level summaries, useful subsets, and specific values or items to support different perspectives."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Charting data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるCharting dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Examine data at macro, subset, and individual-point levels to find useful chart details.” in the documented Charting data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/charting-data",
+      "page_title": "Charting data",
+      "section_path": [
+        "Charting data",
+        "Designing effective charts"
+      ],
+      "retrieved_at": "2026-07-21T11:14:42.378Z",
+      "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
+      "source_sentence_hash": "b3e543629770405f6cbf0921edfab5f46cc7c70a6a72696f8546a96b8ca9ac79",
+      "evidence_paraphrase": "Examine data at macro, subset, and individual-point levels to find useful chart details."
+    },
+    "tags": [
+      "patterns",
+      "charting-data",
+      "designing-effective-charts"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Examine data at macro, subset, and individual-point levels to find useful chart details.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-PATTERNS-CHARTING-DATA-0010",
+    "title": "Add descriptive text to charts",
+    "category": "patterns",
+    "topic": "charting-data",
+    "subtopic": "designing-effective-charts",
+    "statement": {
+      "en": "Add concise descriptive text that helps people understand a chart’s essential information and takeaways.",
+      "ja": "chartのessential informationとtakeawayを理解できるconciseなdescriptive textを加える。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-platform",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use titles, subtitles, annotations, headlines, or summaries as appropriate.",
+      "A descriptive headline or summary never replaces accessibility labels."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Charting data experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるCharting dataの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Add concise descriptive text that helps people understand a chart’s essential information and takeaways.” in the documented Charting data context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/charting-data",
+      "page_title": "Charting data",
+      "section_path": [
+        "Charting data",
+        "Designing effective charts"
+      ],
+      "retrieved_at": "2026-07-21T11:14:42.378Z",
+      "source_hash": "e50a44c7ad1088630d31020e8db3a408f32973ff5cc11778ed26ff5a20b2c509",
+      "source_sentence_hash": "1ea3055978335d3a066445ee795c08d89b86146947715c9ee9ca37659fa5a35e",
+      "evidence_paraphrase": "Add concise descriptive text that helps people understand a chart’s essential information and takeaways."
+    },
+    "tags": [
+      "patterns",
+      "charting-data",
+      "designing-effective-charts"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Add concise descriptive text that helps people understand a chart’s essential information and takeaways.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

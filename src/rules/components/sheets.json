@@ -6,12 +6,12 @@
     "topic": "sheets",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Present only one sheet at a time from the main interface in the documented context.",
-      "ja": "該当する状況でonly one sheet at a time from the main interfaceを表示する。"
+      "en": "Display only one sheet at a time from the main interface.",
+      "ja": "main interfaceから同時に表示するsheetは1つだけにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -38,7 +38,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Closing a sheet should return people to its parent view or window.",
+      "Before an action in one sheet presents another, close the first sheet.",
+      "When necessary, the first sheet can reappear after the second is dismissed."
     ],
     "exceptions": [],
     "rationale": {
@@ -48,7 +50,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present only one sheet at a time from the main interface in the documented context.” in the documented Sheets context?"
+        "Does the design satisfy “Display only one sheet at a time from the main interface.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -68,7 +70,7 @@
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
       "source_sentence_hash": "d7840d38c5245725bb6bd44ee0f310e4e0d3f4b10dd920e3fcdc778110d60db0",
-      "evidence_paraphrase": "Present only one sheet at a time from the main interface in the documented context."
+      "evidence_paraphrase": "Display only one sheet at a time from the main interface."
     },
     "tags": [
       "components",
@@ -77,22 +79,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Present only one sheet at a time from the main interface in the documented context.",
+    "apple_native_rule": "Display only one sheet at a time from the main interface.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SHEETS-0002",
-    "title": "Use a nonmodal view when you want to present supplementary items that affect the main task in the parent",
+    "title": "Use a nonmodal view for supplementary items that affect the parent task",
     "category": "components",
     "topic": "sheets",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Choose or apply a nonmodal view when you want to present supplementary items that affect the main task in the parent in the documented context.",
-      "ja": "該当する状況ではa nonmodal view when you want to present supplementary items that affect the main task in the parentを採用する。"
+      "en": "Use a nonmodal view for supplementary items that affect the main task in the parent view.",
+      "ja": "parent viewのmain taskに影響するsupplementary itemにはnonmodal viewを使う。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -101,17 +103,13 @@
         "ios",
         "ipados",
         "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
         "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [
         "sheets"
@@ -119,7 +117,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Consider a split view in visionOS.",
+      "Consider a panel in macOS.",
+      "A nonmodal sheet can provide this workflow in iOS and iPadOS."
     ],
     "exceptions": [],
     "rationale": {
@@ -129,7 +129,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a nonmodal view when you want to present supplementary items that affect the main task in the parent in the documented context.” in the documented Sheets context?"
+        "Does the design satisfy “Use a nonmodal view for supplementary items that affect the main task in the parent view.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -149,7 +149,7 @@
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
       "source_sentence_hash": "ea4132d9c4342c6103da42f0dbb7d8cac627af75a2a188b14efd2c9ca05eaa75",
-      "evidence_paraphrase": "Choose or apply a nonmodal view when you want to present supplementary items that affect the main task in the parent in the documented context."
+      "evidence_paraphrase": "Use a nonmodal view for supplementary items that affect the main task in the parent view."
     },
     "tags": [
       "components",
@@ -158,7 +158,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Choose or apply a nonmodal view when you want to present supplementary items that affect the main task in the parent in the documented context.",
+    "apple_native_rule": "Use a nonmodal view for supplementary items that affect the main task in the parent view.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -168,12 +168,12 @@
     "topic": "sheets",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Make an alternative to the Done button available when applicable.",
-      "ja": "必要な場合にan alternative to the Done buttonを利用可能にする。"
+      "en": "Provide an alternative to the Done button in a sheet.",
+      "ja": "sheetのDone buttonに代わるexit actionを提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -200,7 +200,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Cancel or Close dismisses without saving changes.",
+      "Back moves to a previous step or parent hierarchy and doesn't dismiss the sheet.",
+      "The separate pairing rule records the conditional Always requirement."
     ],
     "exceptions": [],
     "rationale": {
@@ -210,7 +212,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make an alternative to the Done button available when applicable.” in the documented Sheets context?"
+        "Does the design satisfy “Provide an alternative to the Done button in a sheet.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -230,7 +232,7 @@
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
       "source_sentence_hash": "878b9ffc916e639164c16ea7b51ea5addeab2d56b5c112a7f2e2e4df8e89fbf0",
-      "evidence_paraphrase": "Make an alternative to the Done button available when applicable."
+      "evidence_paraphrase": "Provide an alternative to the Done button in a sheet."
     },
     "tags": [
       "components",
@@ -239,22 +241,22 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make an alternative to the Done button available when applicable.",
+    "apple_native_rule": "Provide an alternative to the Done button in a sheet.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SHEETS-0004",
-    "title": "Include a grabber in a resizable sheet",
+    "title": "Include a grabber in resizable iOS and iPadOS sheets",
     "category": "components",
     "topic": "sheets",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Apply the documented Sheets guidance to include a grabber in a resizable sheet.",
-      "ja": "「Sheets」において「Include a grabber in a resizable sheet」の指針を適用する。"
+      "en": "Include a grabber in a resizable iOS or iPadOS sheet.",
+      "ja": "resize可能なiOSまたはiPadOSのsheetにはgrabberを含める。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -273,7 +275,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The grabber indicates that people can drag to resize or tap to cycle through detents.",
+      "The grabber supports VoiceOver resizing without requiring sight."
     ],
     "exceptions": [],
     "rationale": {
@@ -283,7 +286,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Sheets guidance to include a grabber in a resizable sheet.” in the documented Sheets context?"
+        "Does the design satisfy “Include a grabber in a resizable iOS or iPadOS sheet.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -304,7 +307,7 @@
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
       "source_sentence_hash": "f4714f565846f5c233fa2fc76e6e276d0cd9cbe275cecc3e207944c274af1823",
-      "evidence_paraphrase": "Apply the documented Sheets guidance to include a grabber in a resizable sheet."
+      "evidence_paraphrase": "Include a grabber in a resizable iOS or iPadOS sheet."
     },
     "tags": [
       "components",
@@ -314,22 +317,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Sheets guidance to include a grabber in a resizable sheet.",
+    "apple_native_rule": "Include a grabber in a resizable iOS or iPadOS sheet.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SHEETS-0005",
-    "title": "Support swiping to dismiss a sheet",
+    "title": "Support swipe dismissal for iOS and iPadOS sheets",
     "category": "components",
     "topic": "sheets",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Ensure the experience accommodates swiping to dismiss a sheet.",
-      "ja": "swiping to dismiss a sheetを利用できる設計にする。"
+      "en": "Support vertical swipe dismissal for iOS and iPadOS sheets.",
+      "ja": "iOSとiPadOSのsheetで縦swipeによるdismissをサポートする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -348,7 +351,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "If the sheet has unsaved changes, use an action sheet to confirm a swipe-dismiss action."
     ],
     "exceptions": [],
     "rationale": {
@@ -358,7 +361,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates swiping to dismiss a sheet.” in the documented Sheets context?"
+        "Does the design satisfy “Support vertical swipe dismissal for iOS and iPadOS sheets.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -379,7 +382,7 @@
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
       "source_sentence_hash": "d120e670e5ad98529e9bf7a0443b8846553053a496cb6682f1800f8f2f05a50d",
-      "evidence_paraphrase": "Ensure the experience accommodates swiping to dismiss a sheet."
+      "evidence_paraphrase": "Support vertical swipe dismissal for iOS and iPadOS sheets."
     },
     "tags": [
       "components",
@@ -389,22 +392,861 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates swiping to dismiss a sheet.",
+    "apple_native_rule": "Support vertical swipe dismissal for iOS and iPadOS sheets.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-COMPONENTS-SHEETS-0006",
-    "title": "Prefer using the page or form sheet presentation styles in an iPadOS app",
+    "title": "Prefer page-sheet or form-sheet styles in iPadOS",
     "category": "components",
     "topic": "sheets",
     "subtopic": "ios-ipados",
     "statement": {
-      "en": "Favor using the page or form sheet presentation styles in an iPadOS app when the documented conditions apply.",
-      "ja": "該当条件ではusing the page or form sheet presentation styles in an iPadOS appを優先する。"
+      "en": "Prefer page-sheet or form-sheet presentation styles in iPadOS.",
+      "ja": "iPadOSではpage-sheetまたはform-sheetのpresentation styleを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "These styles provide a default size and center content over a dimmed background."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Prefer page-sheet or form-sheet presentation styles in iPadOS.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "60f462633ce0a9dae9e165513cdf76168f0159513b12d204712f1ab544489506",
+      "evidence_paraphrase": "Prefer page-sheet or form-sheet presentation styles in iPadOS."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Prefer page-sheet or form-sheet presentation styles in iPadOS.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0007",
+    "title": "Keep other macOS app windows available while a sheet is open",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Let people use other macOS app windows without dismissing the current sheet.",
+      "ja": "現在のsheetを閉じなくても、他のmacOS app windowを使えるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Bring the parent window forward when its sheet opens, including modeless document panels for a document window.",
+      "Allow people to bring other app windows forward before dismissing the sheet."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Let people use other macOS app windows without dismissing the current sheet.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "5f3ee0785d7e6d3b818f20ebb1aff1a48d817882e4a390e51cee42cee6bec920",
+      "evidence_paraphrase": "Let people use other macOS app windows without dismissing the current sheet."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Let people use other macOS app windows without dismissing the current sheet.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0008",
+    "title": "Use macOS panels for repeated input-and-result workflows",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Use a macOS panel for repeated input-and-result workflows.",
+      "ja": "入力と結果確認を繰り返すmacOS workflowではpanelを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "A find-and-replace workflow can use a panel so people can inspect each result."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a macOS panel for repeated input-and-result workflows.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "a18bf5ee7723d1f886da703972cb7c1cba7ef1949e6b42cb158ade338a313707",
+      "evidence_paraphrase": "Use a macOS panel for repeated input-and-result workflows."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use a macOS panel for repeated input-and-result workflows.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0009",
+    "title": "Avoid bottom-emerging visionOS sheets",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Avoid sheets that emerge from the bottom of a visionOS window.",
+      "ja": "visionOS windowの下端から現れるsheetを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Prefer centering the sheet in the person's field of view."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid sheets that emerge from the bottom of a visionOS window.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "ad8c0704d2ea544671134e0567d8ebbb12cf24e314950e1f2ae5ba52509cfacd",
+      "evidence_paraphrase": "Avoid sheets that emerge from the bottom of a visionOS window."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid sheets that emerge from the bottom of a visionOS window.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0010",
+    "title": "Reserve watchOS sheets for custom modal presentation",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "Use a watchOS sheet only for modal tasks needing a custom title or content.",
+      "ja": "custom titleまたはcontentが必要なmodal taskに限ってwatchOS sheetを使う。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [
+      "Use an alert or action sheet to present important information or a set of choices."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use a watchOS sheet only for modal tasks needing a custom title or content.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "53ab81d2e1d2033e752296b4084ba7b85b988a5c4a53130d3d12c8ba7dc7262b",
+      "evidence_paraphrase": "Use a watchOS sheet only for modal tasks needing a custom title or content."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use a watchOS sheet only for modal tasks needing a custom title or content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0011",
+    "title": "Keep watchOS sheet interactions brief and occasional",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "Keep watchOS sheet interactions brief and occasional.",
+      "ja": "watchOS sheetでの操作は短く、頻度を抑える。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Use a sheet as a temporary interruption only for an important task."
+    ],
+    "exceptions": [
+      "Do not use a sheet to navigate app content."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep watchOS sheet interactions brief and occasional.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "8f808c4430eecf0aae83c5d7de915ae3011d5c463df06134badb25d30bcabe3e",
+      "evidence_paraphrase": "Keep watchOS sheet interactions brief and occasional."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Keep watchOS sheet interactions brief and occasional.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0012",
+    "title": "Give macOS sheets a content-appropriate default size",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "macos",
+    "statement": {
+      "en": "Present a macOS sheet at a reasonable default size for its content.",
+      "ja": "macOS sheetはcontentに適した妥当なdefault sizeで表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "macos"
+      ],
+      "devices": [
+        "mac"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "People don't generally expect to resize a sheet.",
+      "Support resizing when expanding the content would provide a clearer view."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Present a macOS sheet at a reasonable default size for its content.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "macOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "74c5a9ce92f0a03bc03b174233902f1e0d72cf42ff929eaaf1225ad6502bc2e4",
+      "evidence_paraphrase": "Present a macOS sheet at a reasonable default size for its content."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "macos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Present a macOS sheet at a reasonable default size for its content.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0013",
+    "title": "Size visionOS sheets to preserve context",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "visionos",
+    "statement": {
+      "en": "Present a visionOS sheet at a default size that preserves context.",
+      "ja": "visionOS sheetはcontextを保てるdefault sizeで表示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "visionos"
+      ],
+      "devices": [
+        "apple-vision-pro"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Avoid covering most or all of the parent window.",
+      "Consider allowing people to resize the sheet."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Present a visionOS sheet at a default size that preserves context.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "visionOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "483e8ace5665b25b17c0303d91a08fbcc45091f4023523c961b89350007e3bd3",
+      "evidence_paraphrase": "Present a visionOS sheet at a default size that preserves context."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "visionos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Present a visionOS sheet at a default size that preserves context.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0014",
+    "title": "Consider alternatives to sheets for complex or prolonged flows",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "For a complex or prolonged flow, consider an alternative to a sheet.",
+      "ja": "複雑または長時間のflowにはsheet以外の手段を検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Consider a full-screen modal view in iOS or iPadOS.",
+      "Consider a new window or full-screen mode in macOS.",
+      "Consider a Full Space in visionOS."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “For a complex or prolonged flow, consider an alternative to a sheet.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "5629773af3bbc0ae57bf2f004864da6115340b2567a336a67a6eadba935df7e7",
+      "evidence_paraphrase": "For a complex or prolonged flow, consider an alternative to a sheet."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "For a complex or prolonged flow, consider an alternative to a sheet.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0015",
+    "title": "Always pair Done with Cancel or Back",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "When a sheet provides a Done button, always pair it with either Cancel or Back.",
+      "ja": "sheetにDone buttonを設ける場合は、必ずCancelまたはBackと組み合わせる。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Cancel provides dismissal without confirming or saving changes.",
+      "Back provides navigation to a previous step."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When a sheet provides a Done button, always pair it with either Cancel or Back.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "5c5b0620f77eecca236b381d39bea0a612f7b0b56f3d53b634b2e5de3eb0dd47",
+      "evidence_paraphrase": "When a sheet provides a Done button, always pair it with either Cancel or Back."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "When a sheet provides a Done button, always pair it with either Cancel or Back.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0016",
+    "title": "Avoid showing all three buttons — Cancel, Done, and Back — together",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "best-practices",
+    "statement": {
+      "en": "Avoid showing Cancel, Done, and Back together in one sheet.",
+      "ja": "1つのsheetでCancel、Done、Backを同時に表示しない。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid showing Cancel, Done, and Back together in one sheet.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Best practices"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "34f2a3469b7521554ae3ded4673ac767c3868fe44124eec091f9e3d9580441ce",
+      "evidence_paraphrase": "Avoid showing Cancel, Done, and Back together in one sheet."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "best-practices"
+    ],
+    "priority_rank": 6,
+    "status": "active",
+    "apple_native_rule": "Avoid showing Cancel, Done, and Back together in one sheet.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0017",
+    "title": "Place single-view Cancel on the leading toolbar edge",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Place Cancel on the leading edge of the top toolbar in a single-view iOS or iPadOS sheet.",
+      "ja": "single-viewのiOSまたはiPadOS sheetではCancelをtop toolbarのleading edgeに置く。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -433,7 +1275,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor using the page or form sheet presentation styles in an iPadOS app when the documented conditions apply.” in the documented Sheets context?"
+        "Does the design satisfy “Place Cancel on the leading edge of the top toolbar in a single-view iOS or iPadOS sheet.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -453,8 +1295,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
-      "source_sentence_hash": "60f462633ce0a9dae9e165513cdf76168f0159513b12d204712f1ab544489506",
-      "evidence_paraphrase": "Favor using the page or form sheet presentation styles in an iPadOS app when the documented conditions apply."
+      "source_sentence_hash": "560b80830b7eea1849f910e1f36188628453e907b8bd119d83e7e664ab79dbdb",
+      "evidence_paraphrase": "Place Cancel on the leading edge of the top toolbar in a single-view iOS or iPadOS sheet."
     },
     "tags": [
       "components",
@@ -464,31 +1306,33 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor using the page or form sheet presentation styles in an iPadOS app when the documented conditions apply.",
+    "apple_native_rule": "Place Cancel on the leading edge of the top toolbar in a single-view iOS or iPadOS sheet.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-COMPONENTS-SHEETS-0007",
-    "title": "Let people interact with other app windows without first dismissing a sheet",
+    "id": "HIG-COMPONENTS-SHEETS-0018",
+    "title": "Place single-view Done on the trailing toolbar edge",
     "category": "components",
     "topic": "sheets",
-    "subtopic": "macos",
+    "subtopic": "ios-ipados",
     "statement": {
-      "en": "Preserve people’s ability to interact with other app windows without first dismissing a sheet.",
-      "ja": "利用者がinteract with other app windows without first dismissing a sheetできる状態を保つ。"
+      "en": "When present, place Done on the trailing edge of a single-view iOS or iPadOS sheet's top toolbar.",
+      "ja": "single-viewのiOSまたはiPadOS sheetでDoneを表示する場合はtop toolbarのtrailing edgeに置く。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
       "portability": "apple-component-specific",
       "platforms": [
-        "macos"
+        "ios",
+        "ipados"
       ],
       "devices": [
-        "mac"
+        "iphone",
+        "ipad"
       ],
       "components": [
         "sheets"
@@ -506,7 +1350,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to interact with other app windows without first dismissing a sheet.” in the documented Sheets context?"
+        "Does the design satisfy “When present, place Done on the trailing edge of a single-view iOS or iPadOS sheet's top toolbar.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -522,46 +1366,48 @@
       "section_path": [
         "Sheets",
         "Platform considerations",
-        "macOS"
+        "iOS, iPadOS"
       ],
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
-      "source_sentence_hash": "5f3ee0785d7e6d3b818f20ebb1aff1a48d817882e4a390e51cee42cee6bec920",
-      "evidence_paraphrase": "Preserve people’s ability to interact with other app windows without first dismissing a sheet."
+      "source_sentence_hash": "77360fbee6b73d3b7a31f5d2de4a52e73057cbd6e167472f56c727660eafbebf",
+      "evidence_paraphrase": "When present, place Done on the trailing edge of a single-view iOS or iPadOS sheet's top toolbar."
     },
     "tags": [
       "components",
       "sheets",
       "platform-considerations",
-      "macos"
+      "ios-ipados"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to interact with other app windows without first dismissing a sheet.",
+    "apple_native_rule": "When present, place Done on the trailing edge of a single-view iOS or iPadOS sheet's top toolbar.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-COMPONENTS-SHEETS-0008",
-    "title": "Use a panel instead of a sheet if people need to repeatedly provide input and observe results",
+    "id": "HIG-COMPONENTS-SHEETS-0019",
+    "title": "Place first-step Cancel on the leading edge",
     "category": "components",
     "topic": "sheets",
-    "subtopic": "macos",
+    "subtopic": "ios-ipados",
     "statement": {
-      "en": "Choose or apply a panel instead of a sheet if people need to repeatedly provide input and observe results in the documented context.",
-      "ja": "該当する状況ではa panel instead of a sheet if people need to repeatedly provide input and observe resultsを採用する。"
+      "en": "On the first step of a multistep iOS or iPadOS sheet, place Cancel on the leading edge when Back is absent.",
+      "ja": "multistepのiOSまたはiPadOS sheetの最初のstepではBackがないためCancelをleading edgeに置く。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
       "portability": "apple-component-specific",
       "platforms": [
-        "macos"
+        "ios",
+        "ipados"
       ],
       "devices": [
-        "mac"
+        "iphone",
+        "ipad"
       ],
       "components": [
         "sheets"
@@ -579,7 +1425,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a panel instead of a sheet if people need to repeatedly provide input and observe results in the documented context.” in the documented Sheets context?"
+        "Does the design satisfy “On the first step of a multistep iOS or iPadOS sheet, place Cancel on the leading edge when Back is absent.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -595,115 +1441,415 @@
       "section_path": [
         "Sheets",
         "Platform considerations",
-        "macOS"
+        "iOS, iPadOS"
       ],
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
-      "source_sentence_hash": "a18bf5ee7723d1f886da703972cb7c1cba7ef1949e6b42cb158ade338a313707",
-      "evidence_paraphrase": "Choose or apply a panel instead of a sheet if people need to repeatedly provide input and observe results in the documented context."
+      "source_sentence_hash": "d4664c2024e00e21f5e6e80f76541508cfccdbc2b14be33231a91505e0981c99",
+      "evidence_paraphrase": "On the first step of a multistep iOS or iPadOS sheet, place Cancel on the leading edge when Back is absent."
     },
     "tags": [
       "components",
       "sheets",
       "platform-considerations",
-      "macos"
+      "ios-ipados"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply a panel instead of a sheet if people need to repeatedly provide input and observe results in the documented context.",
+    "apple_native_rule": "On the first step of a multistep iOS or iPadOS sheet, place Cancel on the leading edge when Back is absent.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-COMPONENTS-SHEETS-0009",
-    "title": "Avoid displaying a sheet that emerges from the bottom edge of a window",
+    "id": "HIG-COMPONENTS-SHEETS-0020",
+    "title": "Keep first-step Done trailing and inactive",
     "category": "components",
     "topic": "sheets",
-    "subtopic": "visionos",
+    "subtopic": "ios-ipados",
     "statement": {
-      "en": "Exclude displaying a sheet that emerges from the bottom edge of a window from the applicable experience.",
-      "ja": "該当する体験ではdisplaying a sheet that emerges from the bottom edge of a windowを避ける。"
+      "en": "When present on the first step of a multistep iOS or iPadOS sheet, place Done on the trailing edge and keep it inactive.",
+      "ja": "multistepのiOSまたはiPadOS sheetの最初のstepでDoneを表示する場合はtrailing edgeに置き、inactiveにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The inactive state communicates that the task isn't complete."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When present on the first step of a multistep iOS or iPadOS sheet, place Done on the trailing edge and keep it inactive.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "73f7bde5357e25d1f3e44c09b8e487c1774fcca04df32e46d974629f234dcbc1",
+      "evidence_paraphrase": "When present on the first step of a multistep iOS or iPadOS sheet, place Done on the trailing edge and keep it inactive."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When present on the first step of a multistep iOS or iPadOS sheet, place Done on the trailing edge and keep it inactive.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0021",
+    "title": "Replace Cancel with Back on subsequent steps",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "On subsequent steps of a multistep iOS or iPadOS sheet, replace Cancel with Back.",
+      "ja": "multistepのiOSまたはiPadOS sheetの2step目以降ではCancelをBackに置き換える。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Back lets people navigate to the previous step."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “On subsequent steps of a multistep iOS or iPadOS sheet, replace Cancel with Back.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "7fc4af19bcbb19a10b622a47802743abd9d6bfb80320e890e6065b5479a57122",
+      "evidence_paraphrase": "On subsequent steps of a multistep iOS or iPadOS sheet, replace Cancel with Back."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "On subsequent steps of a multistep iOS or iPadOS sheet, replace Cancel with Back.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0022",
+    "title": "Activate Done on the final confirmation step",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "On the final confirmation step of a multistep iOS or iPadOS sheet, make Done active.",
+      "ja": "multistepのiOSまたはiPadOS sheetの最終confirmation stepではDoneをactiveにする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios",
+        "ipados"
+      ],
+      "devices": [
+        "iphone",
+        "ipad"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Done acknowledges task completion and dismisses the sheet."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “On the final confirmation step of a multistep iOS or iPadOS sheet, make Done active.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "d5c2f3c747cab914fe20a6b08218d7a2579018943ada9a4b2d6531c071ad160d",
+      "evidence_paraphrase": "On the final confirmation step of a multistep iOS or iPadOS sheet, make Done active."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "On the final confirmation step of a multistep iOS or iPadOS sheet, make Done active.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0023",
+    "title": "Consider the medium detent for progressive disclosure on iPhone",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "ios-ipados",
+    "statement": {
+      "en": "Consider the medium detent for progressive disclosure in an iPhone sheet.",
+      "ja": "iPhone sheetでprogressive disclosureを行う場合はmedium detentを検討する。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "The medium detent can show the most relevant items without resizing."
+    ],
+    "exceptions": [
+      "Avoid the medium detent when the content is more useful at full height."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Consider the medium detent for progressive disclosure in an iPhone sheet.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "iOS, iPadOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "8c045e19de660a2de3a5f8adef0b226c0b781e58c9e81fb226c06fc5409df58d",
+      "evidence_paraphrase": "Consider the medium detent for progressive disclosure in an iPhone sheet."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "ios-ipados"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Consider the medium detent for progressive disclosure in an iPhone sheet.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0024",
+    "title": "Prefer SF Symbols for a changed watchOS sheet label",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "If changing a watchOS sheet's default label, prefer an SF Symbol that represents the action.",
+      "ja": "watchOS sheetのdefault labelを変更する場合はactionを表すSF Symbolを優先する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "apple-component-specific",
+      "platforms": [
+        "watchos"
+      ],
+      "devices": [
+        "apple-watch"
+      ],
+      "components": [
+        "sheets"
+      ],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “If changing a watchOS sheet's default label, prefer an SF Symbol that represents the action.” in the documented Sheets context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "page_title": "Sheets",
+      "section_path": [
+        "Sheets",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "retrieved_at": "2026-07-21T11:15:19.231Z",
+      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
+      "source_sentence_hash": "bf718ab8fce9d41496b9b7bc5283e25cb38bb439986f4eef3de8b006e8a34bfc",
+      "evidence_paraphrase": "If changing a watchOS sheet's default label, prefer an SF Symbol that represents the action."
+    },
+    "tags": [
+      "components",
+      "sheets",
+      "platform-considerations",
+      "watchos"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "If changing a watchOS sheet's default label, prefer an SF Symbol that represents the action.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-COMPONENTS-SHEETS-0025",
+    "title": "Avoid hierarchical-looking watchOS sheet labels",
+    "category": "components",
+    "topic": "sheets",
+    "subtopic": "watchos",
+    "statement": {
+      "en": "Avoid a watchOS sheet label that implies hierarchical navigation.",
+      "ja": "hierarchical navigationを示すようなwatchOS sheet labelを避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
       "portability": "apple-component-specific",
       "platforms": [
-        "visionos"
-      ],
-      "devices": [
-        "apple-vision-pro"
-      ],
-      "components": [
-        "sheets"
-      ],
-      "modalities": []
-    },
-    "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
-    ],
-    "exceptions": [],
-    "rationale": {
-      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
-      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
-    },
-    "checks": {
-      "automated": [],
-      "manual": [
-        "Does the design satisfy “Exclude displaying a sheet that emerges from the bottom edge of a window from the applicable experience.” in the documented Sheets context?"
-      ]
-    },
-    "testability": "manual",
-    "anti_patterns": [
-      "Ignoring this guidance in a context where the source section applies."
-    ],
-    "positive_examples": [
-      "A design review records how the implementation satisfies this rule and any source-scoped exception."
-    ],
-    "source": {
-      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
-      "page_title": "Sheets",
-      "section_path": [
-        "Sheets",
-        "Platform considerations",
-        "visionOS"
-      ],
-      "retrieved_at": "2026-07-21T11:15:19.231Z",
-      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
-      "source_sentence_hash": "ad8c0704d2ea544671134e0567d8ebbb12cf24e314950e1f2ae5ba52509cfacd",
-      "evidence_paraphrase": "Exclude displaying a sheet that emerges from the bottom edge of a window from the applicable experience."
-    },
-    "tags": [
-      "components",
-      "sheets",
-      "platform-considerations",
-      "visionos"
-    ],
-    "priority_rank": 4,
-    "status": "active",
-    "apple_native_rule": "Exclude displaying a sheet that emerges from the bottom edge of a window from the applicable experience.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
-  },
-  {
-    "id": "HIG-COMPONENTS-SHEETS-0010",
-    "title": "Use a sheet only when your modal task requires a custom title or custom content presentation",
-    "category": "components",
-    "topic": "sheets",
-    "subtopic": "watchos",
-    "statement": {
-      "en": "Choose or apply a sheet only when your modal task requires a custom title or custom content presentation in the documented context.",
-      "ja": "該当する状況ではa sheet only when your modal task requires a custom title or custom content presentationを採用する。"
-    },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
-    "scope": {
-      "portability": "apple-component-specific",
-      "platforms": [
         "watchos"
       ],
       "devices": [
@@ -715,7 +1861,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A top-leading label that looks like a page or app title can obscure how to dismiss the sheet."
     ],
     "exceptions": [],
     "rationale": {
@@ -725,7 +1871,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply a sheet only when your modal task requires a custom title or custom content presentation in the documented context.” in the documented Sheets context?"
+        "Does the design satisfy “Avoid a watchOS sheet label that implies hierarchical navigation.” in the documented Sheets context?"
       ]
     },
     "testability": "manual",
@@ -745,8 +1891,8 @@
       ],
       "retrieved_at": "2026-07-21T11:15:19.231Z",
       "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
-      "source_sentence_hash": "53ab81d2e1d2033e752296b4084ba7b85b988a5c4a53130d3d12c8ba7dc7262b",
-      "evidence_paraphrase": "Choose or apply a sheet only when your modal task requires a custom title or custom content presentation in the documented context."
+      "source_sentence_hash": "aa3b849115d90399a56f8bd792425c34a0c3c2afda4aac303b98df89ee4014fc",
+      "evidence_paraphrase": "Avoid a watchOS sheet label that implies hierarchical navigation."
     },
     "tags": [
       "components",
@@ -756,80 +1902,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply a sheet only when your modal task requires a custom title or custom content presentation in the documented context.",
-    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
-  },
-  {
-    "id": "HIG-COMPONENTS-SHEETS-0011",
-    "title": "Keep sheet interactions brief and occasional",
-    "category": "components",
-    "topic": "sheets",
-    "subtopic": "watchos",
-    "statement": {
-      "en": "Maintain sheet interactions brief and occasional.",
-      "ja": "sheet interactions brief and occasionalを維持する。"
-    },
-    "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
-    "polarity": "recommend",
-    "severity": "warning",
-    "scope": {
-      "portability": "apple-component-specific",
-      "platforms": [
-        "watchos"
-      ],
-      "devices": [
-        "apple-watch"
-      ],
-      "components": [
-        "sheets"
-      ],
-      "modalities": []
-    },
-    "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
-    ],
-    "exceptions": [],
-    "rationale": {
-      "en": "Applying this guidance supports a consistent and usable Sheets experience on the scoped Apple platforms.",
-      "ja": "この指針は、対象AppleプラットフォームにおけるSheetsの一貫性と使いやすさを支えます。"
-    },
-    "checks": {
-      "automated": [],
-      "manual": [
-        "Does the design satisfy “Maintain sheet interactions brief and occasional.” in the documented Sheets context?"
-      ]
-    },
-    "testability": "manual",
-    "anti_patterns": [
-      "Ignoring this guidance in a context where the source section applies."
-    ],
-    "positive_examples": [
-      "A design review records how the implementation satisfies this rule and any source-scoped exception."
-    ],
-    "source": {
-      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
-      "page_title": "Sheets",
-      "section_path": [
-        "Sheets",
-        "Platform considerations",
-        "watchOS"
-      ],
-      "retrieved_at": "2026-07-21T11:15:19.231Z",
-      "source_hash": "513564ed3923f461d19d1291c33fa62b6c2b4918f26eed78e8afe2ac838e17f3",
-      "source_sentence_hash": "8f808c4430eecf0aae83c5d7de915ae3011d5c463df06134badb25d30bcabe3e",
-      "evidence_paraphrase": "Maintain sheet interactions brief and occasional."
-    },
-    "tags": [
-      "components",
-      "sheets",
-      "platform-considerations",
-      "watchos"
-    ],
-    "priority_rank": 4,
-    "status": "active",
-    "apple_native_rule": "Maintain sheet interactions brief and occasional.",
+    "apple_native_rule": "Avoid a watchOS sheet label that implies hierarchical navigation.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

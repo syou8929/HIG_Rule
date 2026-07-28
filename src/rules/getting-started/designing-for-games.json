@@ -10,8 +10,8 @@
       "ja": "利用者がplay as soon as installation completesできる状態を保つ。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -89,8 +89,8 @@
       "ja": "必要な場合にgreat default settingsを利用可能にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -115,7 +115,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Choose defaults using device resolution, paired accessories, controllers, and the player’s accessibility settings."
     ],
     "exceptions": [],
     "rationale": {
@@ -159,17 +159,17 @@
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0003",
-    "title": "Defer requests until the right time",
+    "title": "Defer game requests until the relevant moment",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "jump-into-gameplay",
     "statement": {
-      "en": "Apply the documented Designing for games guidance to defer requests until the right time.",
-      "ja": "「Designing for games」において「Defer requests until the right time」の指針を適用する。"
+      "en": "Defer game requests until the context that needs them.",
+      "ja": "ゲーム内の要求は、それを必要とする文脈まで延期する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -194,7 +194,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid presenting many requests before gameplay begins."
     ],
     "exceptions": [],
     "rationale": {
@@ -204,7 +204,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Designing for games guidance to defer requests until the right time.” in the documented Designing for games context?"
+        "Does the design satisfy “Defer game requests until the context that needs them.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -224,7 +224,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "694862f249e86862bbec754d3c1b23591c59463eb19dfa0833e876e3b2cc4646",
-      "evidence_paraphrase": "Apply the documented Designing for games guidance to defer requests until the right time."
+      "evidence_paraphrase": "Defer game requests until the context that needs them."
     },
     "tags": [
       "getting-started",
@@ -233,21 +233,21 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Designing for games guidance to defer requests until the right time.",
+    "apple_native_rule": "Defer game requests until the context that needs them.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004",
-    "title": "Make sure text is always legible",
+    "title": "Keep game text legible on every supported display",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "look-stunning-on-every-display",
     "statement": {
-      "en": "Verify that text is always legible.",
-      "ja": "text is always legibleを満たしていることを確認する。"
+      "en": "Keep game text legible on every supported display.",
+      "ja": "対応するすべてのディスプレイでゲーム内テキストを判読可能に保つ。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -273,7 +273,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Maintain sufficient contrast with the background.",
+      "Use at least 11 pt on iOS and iPadOS, 10 pt on macOS, 23 pt on tvOS, and 12 pt on visionOS and watchOS.",
+      "The documented default sizes are 17, 13, 29, 17, and 16 pt respectively."
     ],
     "exceptions": [],
     "rationale": {
@@ -283,7 +285,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that text is always legible.” in the documented Designing for games context?"
+        "Does the design satisfy “Keep game text legible on every supported display.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -303,7 +305,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "2b2f6bb1f76d635d75665a8902f9cbfc80a297476d98270c470f98f6796fa543",
-      "evidence_paraphrase": "Verify that text is always legible."
+      "evidence_paraphrase": "Keep game text legible on every supported display."
     },
     "tags": [
       "getting-started",
@@ -312,21 +314,21 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Verify that text is always legible.",
+    "apple_native_rule": "Keep game text legible on every supported display.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005",
-    "title": "Make sure buttons are always easy to use",
+    "title": "Keep game buttons easy to use on every supported platform",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "look-stunning-on-every-display",
     "statement": {
-      "en": "Verify that buttons are always easy to use.",
-      "ja": "buttons are always easy to useを満たしていることを確認する。"
+      "en": "Keep game buttons easy to use on every supported platform.",
+      "ja": "対応するすべてのプラットフォームでゲームボタンを使いやすく保つ。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -352,9 +354,12 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Default/minimum button sizes are iOS and iPadOS 44x44/28x28 pt, macOS 28x28/20x20 pt, tvOS 66x66/56x56 pt, visionOS 60x60/28x28 pt, and watchOS 44x44/28x28 pt.",
+      "The supporting paragraph says iOS touch buttons must be at least 44x44 pt."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "The table also labels 28x28 pt as the iOS and iPadOS minimum; verify the applicable component guidance before using the smaller value."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
@@ -362,7 +367,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Verify that buttons are always easy to use.” in the documented Designing for games context?"
+        "Does the design satisfy “Keep game buttons easy to use on every supported platform.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -382,7 +387,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "909dbabe7e77e62eb577854ba79878e162c88ab845e856ea52cd8320f528d097",
-      "evidence_paraphrase": "Verify that buttons are always easy to use."
+      "evidence_paraphrase": "Keep game buttons easy to use on every supported platform."
     },
     "tags": [
       "getting-started",
@@ -391,22 +396,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Verify that buttons are always easy to use.",
+    "apple_native_rule": "Keep game buttons easy to use on every supported platform.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0006",
-    "title": "Prefer resolution-independent textures and graphics",
+    "title": "Prefer resolution-independent game graphics",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "look-stunning-on-every-display",
     "statement": {
-      "en": "Favor resolution-independent textures and graphics when the documented conditions apply.",
-      "ja": "該当条件ではresolution-independent textures and graphicsを優先する。"
+      "en": "Prefer resolution-independent game textures and graphics.",
+      "ja": "解像度に依存しないゲーム用テクスチャとグラフィックを優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -431,9 +436,11 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "In visionOS, prefer vector art that remains clear as the system changes its scale."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "When resolution-independent assets are impossible, match the game resolution to the device resolution."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
@@ -441,7 +448,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Favor resolution-independent textures and graphics when the documented conditions apply.” in the documented Designing for games context?"
+        "Does the design satisfy “Prefer resolution-independent game textures and graphics.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -461,7 +468,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "805036ae5195db9321f71638df3543a3a332a6a91007464346c17b443335a288",
-      "evidence_paraphrase": "Favor resolution-independent textures and graphics when the documented conditions apply."
+      "evidence_paraphrase": "Prefer resolution-independent game textures and graphics."
     },
     "tags": [
       "getting-started",
@@ -470,7 +477,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Favor resolution-independent textures and graphics when the documented conditions apply.",
+    "apple_native_rule": "Prefer resolution-independent game textures and graphics.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -484,7 +491,7 @@
       "ja": "in-game menus adapt to different aspect ratiosを満たしていることを確認する。"
     },
     "normative_level": "MUST",
-    "confidence": "medium",
+    "confidence": "high",
     "review_required": false,
     "polarity": "require",
     "severity": "error",
@@ -510,7 +517,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Support aspect ratios such as 16:10, 19.5:9, and 4:3.",
+      "Keep menus legible, usable, and clear of other content on every device and supported iPhone or iPad orientation.",
+      "Prefer dynamic layouts with relative constraints."
     ],
     "exceptions": [],
     "rationale": {
@@ -554,17 +563,17 @@
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0008",
-    "title": "Design for the full-screen experience",
+    "title": "Design games for a full-screen experience",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "look-stunning-on-every-display",
     "statement": {
-      "en": "Apply the documented Designing for games guidance to design for the full-screen experience.",
-      "ja": "「Designing for games」において「Design for the full-screen experience」の指針を適用する。"
+      "en": "Design games for a distraction-free, full-screen experience.",
+      "ja": "ゲームを集中しやすいフルスクリーン体験向けに設計する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -589,7 +598,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Account for full-screen mode on macOS, iOS, and iPadOS and Full Space on visionOS."
     ],
     "exceptions": [],
     "rationale": {
@@ -599,7 +608,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Designing for games guidance to design for the full-screen experience.” in the documented Designing for games context?"
+        "Does the design satisfy “Design games for a distraction-free, full-screen experience.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -619,7 +628,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "410d37dadccfc909f30808f838841401ad5409390b6500e3c8530521be16b181",
-      "evidence_paraphrase": "Apply the documented Designing for games guidance to design for the full-screen experience."
+      "evidence_paraphrase": "Design games for a distraction-free, full-screen experience."
     },
     "tags": [
       "getting-started",
@@ -628,7 +637,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Designing for games guidance to design for the full-screen experience.",
+    "apple_native_rule": "Design games for a distraction-free, full-screen experience.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -642,8 +651,8 @@
       "ja": "each platform’s default interaction methodを利用できる設計にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -665,10 +674,19 @@
         "apple-watch"
       ],
       "components": [],
-      "modalities": []
+      "modalities": [
+        "touch",
+        "keyboard",
+        "pointer",
+        "gaze",
+        "gesture",
+        "remote-control",
+        "game-controller"
+      ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use touch by default on iOS and iPadOS; keyboard, mouse, or trackpad on macOS; remote on tvOS; eyes and hands on visionOS; and touch on watchOS.",
+      "Review control sizing and menu behavior when moving from pointer input to touch input."
     ],
     "exceptions": [],
     "rationale": {
@@ -721,8 +739,8 @@
       "ja": "physical game controllers, while also giving people alternativesを利用できる設計にする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -749,7 +767,8 @@
       ]
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Physical game controllers are supported on every listed platform except watchOS.",
+      "Offer alternative interactions because not every player can use a physical controller."
     ],
     "exceptions": [],
     "rationale": {
@@ -794,41 +813,32 @@
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0011",
-    "title": "Offer touch-based game controls that embrace the touchscreen experience on iPhone and iPad",
+    "title": "Offer touchscreen-native controls on iPhone and iPad",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "enable-intuitive-interactions",
     "statement": {
-      "en": "Make touch-based game controls that embrace the touchscreen experience on iPhone and iPad available when applicable.",
-      "ja": "必要な場合にtouch-based game controls that embrace the touchscreen experience on iPhone and iPadを利用可能にする。"
+      "en": "Offer touchscreen-native game controls on iPhone and iPad.",
+      "ja": "iPhoneとiPadではタッチスクリーンに適したゲーム操作を提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
       "portability": "platform-specific",
       "platforms": [
         "ios",
-        "ipados",
-        "macos",
-        "tvos",
-        "visionos",
-        "watchos"
+        "ipados"
       ],
       "devices": [
         "iphone",
-        "ipad",
-        "mac",
-        "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "ipad"
       ],
       "components": [],
       "modalities": [
-        "touch",
-        "game-controller"
+        "touch"
       ]
     },
     "conditions": [
@@ -842,7 +852,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make touch-based game controls that embrace the touchscreen experience on iPhone and iPad available when applicable.” in the documented Designing for games context?"
+        "Does the design satisfy “Offer touchscreen-native game controls on iPhone and iPad.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -862,7 +872,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "d2efb364535a1ffa92a08a8681c9751a627b66d5e8e639f1d59957c889cbea19",
-      "evidence_paraphrase": "Make touch-based game controls that embrace the touchscreen experience on iPhone and iPad available when applicable."
+      "evidence_paraphrase": "Offer touchscreen-native game controls on iPhone and iPad."
     },
     "tags": [
       "getting-started",
@@ -873,22 +883,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make touch-based game controls that embrace the touchscreen experience on iPhone and iPad available when applicable.",
+    "apple_native_rule": "Offer touchscreen-native game controls on iPhone and iPad.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0012",
-    "title": "Prioritize perceivability",
+    "title": "Prioritize game-content perceivability",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "welcome-everyone",
     "statement": {
-      "en": "Apply the documented Designing for games guidance to prioritize perceivability.",
-      "ja": "「Designing for games」において「Prioritize perceivability」の指針を適用する。"
+      "en": "Prioritize perceivability throughout game content.",
+      "ja": "ゲーム内容全体で知覚可能性を優先する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -913,7 +923,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Do not rely on color alone for important details.",
+      "Provide descriptive subtitles or another readable form for cutscenes."
     ],
     "exceptions": [],
     "rationale": {
@@ -923,7 +934,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Designing for games guidance to prioritize perceivability.” in the documented Designing for games context?"
+        "Does the design satisfy “Prioritize perceivability throughout game content.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -943,7 +954,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "4eb8e3ea9f1eadf43f9043220143dd3296d2a81dea7ee376801a9443cf8ba9f4",
-      "evidence_paraphrase": "Apply the documented Designing for games guidance to prioritize perceivability."
+      "evidence_paraphrase": "Prioritize perceivability throughout game content."
     },
     "tags": [
       "getting-started",
@@ -952,22 +963,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Designing for games guidance to prioritize perceivability.",
+    "apple_native_rule": "Prioritize perceivability throughout game content.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0013",
-    "title": "Help players personalize their experience",
+    "title": "Let players personalize accessibility-related game settings",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "welcome-everyone",
     "statement": {
-      "en": "Apply the documented Designing for games guidance to help players personalize their experience.",
-      "ja": "「Designing for games」において「Help players personalize their experience」の指針を適用する。"
+      "en": "Let players personalize game settings that affect their abilities and preferences.",
+      "ja": "能力や好みに影響するゲーム設定をプレイヤーが調整できるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -992,7 +1003,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Include type size, control mapping, motion intensity, and sound balance."
     ],
     "exceptions": [],
     "rationale": {
@@ -1002,7 +1013,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Designing for games guidance to help players personalize their experience.” in the documented Designing for games context?"
+        "Does the design satisfy “Let players personalize game settings that affect their abilities and preferences.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -1022,7 +1033,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "c7025ab36cdcfdb27ae832e9bc51fdd87fab5447168866648882847423496669",
-      "evidence_paraphrase": "Apply the documented Designing for games guidance to help players personalize their experience."
+      "evidence_paraphrase": "Let players personalize game settings that affect their abilities and preferences."
     },
     "tags": [
       "getting-started",
@@ -1031,22 +1042,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Designing for games guidance to help players personalize their experience.",
+    "apple_native_rule": "Let players personalize game settings that affect their abilities and preferences.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0014",
-    "title": "Give players the tools they need to represent themselves",
+    "title": "Give players inclusive self-representation tools",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "welcome-everyone",
     "statement": {
-      "en": "Apply the documented Designing for games guidance to give players the tools they need to represent themselves.",
-      "ja": "「Designing for games」において「Give players the tools they need to represent themselves」の指針を適用する。"
+      "en": "Give players inclusive tools to represent themselves.",
+      "ja": "プレイヤーが自分自身を包括的に表現できる手段を提供する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1071,7 +1082,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "When players create avatars, names, or descriptions, support a spectrum of identities and human characteristics."
     ],
     "exceptions": [],
     "rationale": {
@@ -1081,7 +1092,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Designing for games guidance to give players the tools they need to represent themselves.” in the documented Designing for games context?"
+        "Does the design satisfy “Give players inclusive tools to represent themselves.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -1101,7 +1112,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "9b109d86357f29608919faddc3b8149e3aacead9bd45cd36a65673b7fd6da727",
-      "evidence_paraphrase": "Apply the documented Designing for games guidance to give players the tools they need to represent themselves."
+      "evidence_paraphrase": "Give players inclusive tools to represent themselves."
     },
     "tags": [
       "getting-started",
@@ -1110,22 +1121,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Designing for games guidance to give players the tools they need to represent themselves.",
+    "apple_native_rule": "Give players inclusive tools to represent themselves.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0015",
-    "title": "Avoid stereotypes in your stories and characters",
+    "title": "Avoid stereotypes and bias in game stories and characters",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "welcome-everyone",
     "statement": {
-      "en": "Exclude stereotypes in your stories and characters from the applicable experience.",
-      "ja": "該当する体験ではstereotypes in your stories and charactersを避ける。"
+      "en": "Avoid stereotypes and bias in game stories, characters, and scenarios.",
+      "ja": "ゲームの物語、キャラクター、状況設定で固定観念や偏見を避ける。"
     },
     "normative_level": "AVOID",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "discourage",
     "severity": "warning",
     "scope": {
@@ -1150,7 +1161,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Review portrayals involving race, gender, and cultural heritage and remove discovered bias."
     ],
     "exceptions": [],
     "rationale": {
@@ -1160,7 +1171,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude stereotypes in your stories and characters from the applicable experience.” in the documented Designing for games context?"
+        "Does the design satisfy “Avoid stereotypes and bias in game stories, characters, and scenarios.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -1180,7 +1191,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "59e5a2911ed3975f51a890580d8a6b8a662f829b2ce20b4a52cc1abe615ebd43",
-      "evidence_paraphrase": "Exclude stereotypes in your stories and characters from the applicable experience."
+      "evidence_paraphrase": "Avoid stereotypes and bias in game stories, characters, and scenarios."
     },
     "tags": [
       "getting-started",
@@ -1189,22 +1200,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Exclude stereotypes in your stories and characters from the applicable experience.",
+    "apple_native_rule": "Avoid stereotypes and bias in game stories, characters, and scenarios.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0016",
-    "title": "Let players pick up their game on any of their devices",
+    "title": "Let players continue a game on another device",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "adopt-apple-technologies",
     "statement": {
-      "en": "Apply the documented Designing for games guidance to let players pick up their game on any of their devices.",
-      "ja": "「Designing for games」において「Let players pick up their game on any of their devices」の指針を適用する。"
+      "en": "Let players continue a saved game on another Apple device.",
+      "ja": "保存したゲームを別のAppleデバイスで続けられるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1229,7 +1240,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Use GameSave to preserve game state for a player’s iCloud account."
     ],
     "exceptions": [],
     "rationale": {
@@ -1239,7 +1250,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Designing for games guidance to let players pick up their game on any of their devices.” in the documented Designing for games context?"
+        "Does the design satisfy “Let players continue a saved game on another Apple device.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -1259,7 +1270,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "af0f09dd4ea9dba80f958934dd646ec0caa883df28001d6a770de9aaed9af7da",
-      "evidence_paraphrase": "Apply the documented Designing for games guidance to let players pick up their game on any of their devices."
+      "evidence_paraphrase": "Let players continue a saved game on another Apple device."
     },
     "tags": [
       "getting-started",
@@ -1268,7 +1279,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Designing for games guidance to let players pick up their game on any of their devices.",
+    "apple_native_rule": "Let players continue a saved game on another Apple device.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1278,12 +1289,12 @@
     "topic": "designing-for-games",
     "subtopic": "adopt-apple-technologies",
     "statement": {
-      "en": "Ensure the experience accommodates haptics to help players feel the action.",
-      "ja": "haptics to help players feel the actionを利用できる設計にする。"
+      "en": "Use haptics to help players feel game action.",
+      "ja": "ハプティクスを使い、プレイヤーがゲーム内の動きを感じられるようにする。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1291,24 +1302,20 @@
       "platforms": [
         "ios",
         "ipados",
-        "macos",
         "tvos",
-        "visionos",
-        "watchos"
+        "visionos"
       ],
       "devices": [
         "iphone",
         "ipad",
-        "mac",
         "apple-tv",
-        "apple-vision-pro",
-        "apple-watch"
+        "apple-vision-pro"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Core Haptics is available on iOS, iPadOS, tvOS, and visionOS and on many game controllers."
     ],
     "exceptions": [],
     "rationale": {
@@ -1318,7 +1325,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the experience accommodates haptics to help players feel the action.” in the documented Designing for games context?"
+        "Does the design satisfy “Use haptics to help players feel game action.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -1338,7 +1345,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "f5a5d1e0b36508500729a5f66149f9283408abf062e13eba5af50f8b8f29b870",
-      "evidence_paraphrase": "Ensure the experience accommodates haptics to help players feel the action."
+      "evidence_paraphrase": "Use haptics to help players feel game action."
     },
     "tags": [
       "getting-started",
@@ -1347,22 +1354,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Ensure the experience accommodates haptics to help players feel the action.",
+    "apple_native_rule": "Use haptics to help players feel game action.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0018",
-    "title": "Use Spatial Audio to immerse players in your game’s soundscape",
+    "title": "Use Spatial Audio to immerse players",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "adopt-apple-technologies",
     "statement": {
-      "en": "Choose or apply spatial Audio to immerse players in your game’s soundscape in the documented context.",
-      "ja": "該当する状況ではSpatial Audio to immerse players in your game’s soundscapeを採用する。"
+      "en": "Use Spatial Audio to immerse players in the game’s soundscape where supported.",
+      "ja": "対応環境ではSpatial Audioを使い、プレイヤーをゲームの音響空間へ没入させる。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1387,7 +1394,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Provide multichannel audio that can adapt automatically to the current device."
     ],
     "exceptions": [],
     "rationale": {
@@ -1397,7 +1404,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply spatial Audio to immerse players in your game’s soundscape in the documented context.” in the documented Designing for games context?"
+        "Does the design satisfy “Use Spatial Audio to immerse players in the game’s soundscape where supported.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -1417,7 +1424,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "144b305f4491eb5a6bc2cbbaf9b90f58f5c95fba14fbf873fcf3d29195a7ebc7",
-      "evidence_paraphrase": "Choose or apply spatial Audio to immerse players in your game’s soundscape in the documented context."
+      "evidence_paraphrase": "Use Spatial Audio to immerse players in the game’s soundscape where supported."
     },
     "tags": [
       "getting-started",
@@ -1426,22 +1433,22 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Choose or apply spatial Audio to immerse players in your game’s soundscape in the documented context.",
+    "apple_native_rule": "Use Spatial Audio to immerse players in the game’s soundscape where supported.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0019",
-    "title": "Integrate device features into your layout",
+    "title": "Accommodate device features in game layouts",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "look-stunning-on-every-display",
     "statement": {
-      "en": "Connect the experience with device features into your layout.",
-      "ja": "device features into your layoutと体験を連携する。"
+      "en": "Accommodate device features such as rounded corners and camera housings in game layouts.",
+      "ja": "角の丸みやカメラ領域などのデバイス特性をゲームレイアウトで考慮する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1466,7 +1473,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Rely on platform-provided safe areas when possible."
     ],
     "exceptions": [],
     "rationale": {
@@ -1476,7 +1483,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Connect the experience with device features into your layout.” in the documented Designing for games context?"
+        "Does the design satisfy “Accommodate device features such as rounded corners and camera housings in game layouts.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -1496,7 +1503,7 @@
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
       "source_sentence_hash": "21109dea81ec5538b5618b9a59367b081ed137dd36e256771adab8fd6f0693c7",
-      "evidence_paraphrase": "Connect the experience with device features into your layout."
+      "evidence_paraphrase": "Accommodate device features such as rounded corners and camera housings in game layouts."
     },
     "tags": [
       "getting-started",
@@ -1505,22 +1512,259 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Connect the experience with device features into your layout.",
+    "apple_native_rule": "Accommodate device features such as rounded corners and camera housings in game layouts.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0020",
-    "title": "Integrate Game Center to help players discover your game across their devices and connect with their friends",
+    "title": "Integrate Game Center for discovery and social connection",
     "category": "getting-started",
     "topic": "designing-for-games",
     "subtopic": "adopt-apple-technologies",
     "statement": {
-      "en": "Connect the experience with game Center to help players discover your game across their devices and connect with their friends.",
-      "ja": "Game Center to help players discover your game across their devices and connect with their friendsと体験を連携する。"
+      "en": "Integrate Game Center for cross-device discovery, progress, achievements, and social play.",
+      "ja": "複数デバイスでの発見、進行状況、実績、ソーシャルプレイにGame Centerを統合する。"
     },
     "normative_level": "SHOULD",
-    "confidence": "low",
-    "review_required": true,
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Game Center is available on every listed Apple platform."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Integrate Game Center for cross-device discovery, progress, achievements, and social play.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Adopt Apple technologies"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "24582d5007253faa0132a9ee0e71f6005a4780630f3d2a610760f6bab30f5eee",
+      "evidence_paraphrase": "Integrate Game Center for cross-device discovery, progress, achievements, and social play."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "adopt-apple-technologies"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Integrate Game Center for cross-device discovery, progress, achievements, and social play.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0021",
+    "title": "Use Apple technologies for distinctive gameplay",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "adopt-apple-technologies",
+    "statement": {
+      "en": "Use Apple technologies to enable distinctive gameplay mechanics.",
+      "ja": "Appleのテクノロジーを使って特徴的なゲームプレイを実現する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Examples include augmented reality, machine learning, HealthKit, location, camera, and microphone."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use Apple technologies to enable distinctive gameplay mechanics.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Adopt Apple technologies"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "9d5d7a61279a4270b5691c0225fa60aa0100c5b70cbc28011643de2771fa0607",
+      "evidence_paraphrase": "Use Apple technologies to enable distinctive gameplay mechanics."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "adopt-apple-technologies"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use Apple technologies to enable distinctive gameplay mechanics.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0022",
+    "title": "Keep the initial download time to 30 minutes or less",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "jump-into-gameplay",
+    "statement": {
+      "en": "Keep the initial game download to 30 minutes or less.",
+      "ja": "ゲームの初回ダウンロードを30分以内に保つ。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Include as much playable content as practical in the initial installation."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Keep the initial game download to 30 minutes or less.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Jump into gameplay"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "d77af14c0d12eac1339745ac1dc2dff49d0207cac023331c45e45abd8a615757",
+      "evidence_paraphrase": "Keep the initial game download to 30 minutes or less."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "jump-into-gameplay"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Keep the initial game download to 30 minutes or less.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0023",
+    "title": "Keep additional content downloading in the background",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "jump-into-gameplay",
+    "statement": {
+      "en": "Download additional game content in the background.",
+      "ja": "追加のゲームコンテンツをバックグラウンドでダウンロードする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
     "polarity": "recommend",
     "severity": "warning",
     "scope": {
@@ -1555,7 +1799,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Connect the experience with game Center to help players discover your game across their devices and connect with their friends.” in the documented Designing for games context?"
+        "Does the design satisfy “Download additional game content in the background.” in the documented Designing for games context?"
       ]
     },
     "testability": "manual",
@@ -1570,21 +1814,658 @@
       "page_title": "Designing for games",
       "section_path": [
         "Designing for games",
-        "Adopt Apple technologies"
+        "Jump into gameplay"
       ],
       "retrieved_at": "2026-07-21T11:14:46.600Z",
       "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
-      "source_sentence_hash": "24582d5007253faa0132a9ee0e71f6005a4780630f3d2a610760f6bab30f5eee",
-      "evidence_paraphrase": "Connect the experience with game Center to help players discover your game across their devices and connect with their friends."
+      "source_sentence_hash": "d77af14c0d12eac1339745ac1dc2dff49d0207cac023331c45e45abd8a615757",
+      "evidence_paraphrase": "Download additional game content in the background."
     },
     "tags": [
       "getting-started",
       "designing-for-games",
-      "adopt-apple-technologies"
+      "jump-into-gameplay"
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Connect the experience with game Center to help players discover your game across their devices and connect with their friends.",
+    "apple_native_rule": "Download additional game content in the background.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0024",
+    "title": "Make sure your game supports the platform’s most common interaction methods",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "jump-into-gameplay",
+    "statement": {
+      "en": "Support the platform’s most common interaction methods.",
+      "ja": "プラットフォームで最も一般的な操作方法に対応する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Support the platform’s most common interaction methods.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Jump into gameplay"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "0b0ec25804c2f6476aa915a20649e10bbd9f5ba8f90cf60f5ecc23fa1d8929f5",
+      "evidence_paraphrase": "Support the platform’s most common interaction methods."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "jump-into-gameplay"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Support the platform’s most common interaction methods.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0025",
+    "title": "Teach game mechanics through play",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "jump-into-gameplay",
+    "statement": {
+      "en": "Teach game mechanics through play.",
+      "ja": "ゲームの仕組みをプレイを通じて教える。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Integrate configuration and onboarding into a playable tutorial when it fits the game."
+    ],
+    "exceptions": [
+      "A written tutorial can be an optional reference instead of a gameplay prerequisite."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Teach game mechanics through play.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Jump into gameplay"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "1a3286f377e2a73237c6f7b1f3ec915ed7013bbe02f88d51ea69fb39459a4243",
+      "evidence_paraphrase": "Teach game mechanics through play."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "jump-into-gameplay"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Teach game mechanics through play.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0026",
+    "title": "Get permission before accessing sensors or personal data",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "jump-into-gameplay",
+    "statement": {
+      "en": "Get the player’s permission before accessing sensors or personal data.",
+      "ja": "センサーや個人データへアクセスする前にプレイヤーの許可を得る。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The game uses device sensors or personalizes play with data such as hand tracking."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Get the player’s permission before accessing sensors or personal data.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Jump into gameplay"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "e274b1e84fe0dcc4fa6802baf1cb919219a941541b01043cb3d94db40ea42874",
+      "evidence_paraphrase": "Get the player’s permission before accessing sensors or personal data."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "jump-into-gameplay"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Get the player’s permission before accessing sensors or personal data.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0027",
+    "title": "Place permission requests in the scenario that needs the data",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "jump-into-gameplay",
+    "statement": {
+      "en": "Place a permission request in the game scenario that needs the data.",
+      "ja": "権限要求を、そのデータを必要とするゲーム場面で提示する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Place a permission request in the game scenario that needs the data.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Jump into gameplay"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "e274b1e84fe0dcc4fa6802baf1cb919219a941541b01043cb3d94db40ea42874",
+      "evidence_paraphrase": "Place a permission request in the game scenario that needs the data."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "jump-into-gameplay"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Place a permission request in the game scenario that needs the data.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0028",
+    "title": "Wait for meaningful play before requesting a rating or review",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "jump-into-gameplay",
+    "statement": {
+      "en": "Wait until players have meaningful time with the game before requesting a rating or review.",
+      "ja": "評価やレビューを求める前に、プレイヤーがゲームを十分体験するまで待つ。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Wait until players have meaningful time with the game before requesting a rating or review.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Jump into gameplay"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "e274b1e84fe0dcc4fa6802baf1cb919219a941541b01043cb3d94db40ea42874",
+      "evidence_paraphrase": "Wait until players have meaningful time with the game before requesting a rating or review."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "jump-into-gameplay"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Wait until players have meaningful time with the game before requesting a rating or review.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0029",
+    "title": "Avoid fixed in-game menu layouts",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "look-stunning-on-every-display",
+    "statement": {
+      "en": "Avoid fixed in-game menu layouts wherever practicable.",
+      "ja": "可能な限り固定式のゲーム内メニューレイアウトを避ける。"
+    },
+    "normative_level": "AVOID",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "discourage",
+    "severity": "warning",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Prefer dynamic layouts that use relative constraints."
+    ],
+    "exceptions": [
+      "Create a custom device-specific layout only when necessary."
+    ],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Avoid fixed in-game menu layouts wherever practicable.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Look stunning on every display"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "855be2fb47e71ec7a4a7cc44efbb1611cd1e9e4a36e108e05c42212f4e7b1ace",
+      "evidence_paraphrase": "Avoid fixed in-game menu layouts wherever practicable."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "look-stunning-on-every-display"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Avoid fixed in-game menu layouts wherever practicable.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0030",
+    "title": "Make game content perceivable through sight, hearing, or touch",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "welcome-everyone",
+    "statement": {
+      "en": "Make game content perceivable through sight, hearing, or touch.",
+      "ja": "視覚、聴覚、触覚のいずれを使う場合もゲーム内容を知覚できるようにする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Apply within the platform, component, and section context identified by the source trace."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Make game content perceivable through sight, hearing, or touch.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Welcome everyone"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "032c50eb11630ccbfad6871208b7944b715c1ff7ac395dae49ad3df70a03a59c",
+      "evidence_paraphrase": "Make game content perceivable through sight, hearing, or touch."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "welcome-everyone",
+      "touch"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Make game content perceivable through sight, hearing, or touch.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0031",
+    "title": "Ensure necessary cultural and language references are respectful",
+    "category": "getting-started",
+    "topic": "designing-for-games",
+    "subtopic": "welcome-everyone",
+    "statement": {
+      "en": "When cultural or language references are necessary, ensure they are respectful.",
+      "ja": "文化や言語への参照が必要な場合は、敬意ある表現にする。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "platform-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "tvos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-tv",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "The game needs references to real-life cultures or languages."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Designing for games experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるDesigning for gamesの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When cultural or language references are necessary, ensure they are respectful.” in the documented Designing for games context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-games",
+      "page_title": "Designing for games",
+      "section_path": [
+        "Designing for games",
+        "Welcome everyone"
+      ],
+      "retrieved_at": "2026-07-21T11:14:46.600Z",
+      "source_hash": "978f608606aa5ea988b4467664221ede7f10163a5869fb29d8466d561aaa32b2",
+      "source_sentence_hash": "4fa5867fafc2187bb76eda234ffdc48db9e6c839d63914ac9d1c05024dc36f88",
+      "evidence_paraphrase": "When cultural or language references are necessary, ensure they are respectful."
+    },
+    "tags": [
+      "getting-started",
+      "designing-for-games",
+      "welcome-everyone"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "When cultural or language references are necessary, ensure they are respectful.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

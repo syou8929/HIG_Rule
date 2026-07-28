@@ -25,6 +25,24 @@ const validateInventory = ajv.compile(inventorySchema);
 const errors: string[] = [];
 const warnings: string[] = [];
 const reviewedOverrideIds = new Set(Object.keys(normativeReview.overrides));
+const reviewedAdditionalRules = new Set(normativeReview.additional_rules.map((rule) => `${rule.normative_level}\n${rule.title}`));
+type SourceReviewRule = {
+  source: { source_hash: string; source_sentence_hash: string; section_path: string[] };
+  confidence?: "low" | "medium" | "high";
+  review_required?: boolean;
+  review_note: string;
+};
+type SourceReviewBatch = {
+  id: string;
+  reviewed_at: string;
+  confidence: "low" | "medium" | "high";
+  review_required: boolean;
+  pages: Array<{ url: string; source_hash: string }>;
+  rule_ids: string[];
+  review_note: string;
+};
+const sourceReviewRules = sourceReview.rules as Record<string, SourceReviewRule>;
+const sourceReviewBatches = sourceReview.batches as SourceReviewBatch[];
 const rules = await loadRules({ includeDeprecated: true });
 const pages = await loadSourcePages();
 const inventoryPath = resolve("src/sources/apple-hig/inventory.json");
@@ -60,8 +78,9 @@ for (const rule of rules) {
   ids.add(rule.id);
   if (!rule.source.url.startsWith("https://developer.apple.com/design/human-interface-guidelines")) errors.push(`${rule.id}: non-HIG primary source`);
   if (!rule.source.section_path.length) errors.push(`${rule.id}: missing section path`);
-  if (rule.normative_level === "MUST" && !/^(always|ensure|make sure|must|required)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id)) warnings.push(`${rule.id}: MUST requires strength review`);
-  if (rule.normative_level === "MUST_NOT" && !/^(never|must not)/i.test(rule.title)) warnings.push(`${rule.id}: MUST_NOT requires strength review`);
+  const hasReviewedAdditionalStrength = reviewedAdditionalRules.has(`${rule.normative_level}\n${rule.title}`);
+  if (rule.normative_level === "MUST" && !/^(always|ensure|make sure|must|required)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id) && !hasReviewedAdditionalStrength) warnings.push(`${rule.id}: MUST requires strength review`);
+  if (rule.normative_level === "MUST_NOT" && !/^(never|must not)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id) && !hasReviewedAdditionalStrength) warnings.push(`${rule.id}: MUST_NOT requires strength review`);
   if (rule.scope.portability === "universal" && /\b(ios|ipados|macos|tvos|visionos|watchos|swiftui|uikit|appkit|sf symbols)\b/i.test(`${rule.title} ${rule.statement.en}`)) {
     errors.push(`${rule.id}: Apple-specific language is classified as universal`);
   }
@@ -123,25 +142,52 @@ for (const rule of currentNormativeRules) {
 
 const activeRules = rules.filter((item) => item.status === "active");
 const activeRuleById = new Map(activeRules.map((rule) => [rule.id, rule]));
-const sourceReviewReportRules = Object.entries(sourceReview.rules).map(([id, review]) => {
+const sourceReviewBatchByRuleId = new Map<string, SourceReviewBatch>();
+for (const batch of sourceReviewBatches) {
+  const batchPageByUrl = new Map(batch.pages.map((page) => [page.url, page]));
+  for (const id of batch.rule_ids) {
+    if (sourceReviewBatchByRuleId.has(id)) {
+      errors.push(`${id}: source review rule appears in more than one batch`);
+      continue;
+    }
+    sourceReviewBatchByRuleId.set(id, batch);
+    const rule = activeRuleById.get(id);
+    if (!rule) {
+      errors.push(`${id}: source review batch points to a missing active rule`);
+      continue;
+    }
+    const page = batchPageByUrl.get(rule.source.url);
+    if (!page || page.source_hash !== rule.source.source_hash) errors.push(`${id}: source review batch page trace is stale`);
+  }
+}
+const sourceReviewIds = Array.from(new Set([
+  ...Object.keys(sourceReviewRules),
+  ...sourceReviewBatches.flatMap((batch) => batch.rule_ids),
+])).sort();
+const sourceReviewReportRules = sourceReviewIds.map((id) => {
+  const review = sourceReviewRules[id];
+  const batch = sourceReviewBatchByRuleId.get(id);
   const rule = activeRuleById.get(id);
   if (!rule) {
     errors.push(`${id}: source review points to a missing active rule`);
     return null;
   }
-  if (rule.source.source_hash !== review.source.source_hash
+  if (review && (rule.source.source_hash !== review.source.source_hash
     || rule.source.source_sentence_hash !== review.source.source_sentence_hash
-    || JSON.stringify(rule.source.section_path) !== JSON.stringify(review.source.section_path)) {
+    || JSON.stringify(rule.source.section_path) !== JSON.stringify(review.source.section_path))) {
     errors.push(`${id}: source review trace is stale`);
   }
-  if (rule.review_required !== review.review_required || rule.confidence !== review.confidence) {
+  const expectedReviewRequired = review?.review_required ?? batch?.review_required;
+  const expectedConfidence = review?.confidence ?? batch?.confidence;
+  if (rule.review_required !== expectedReviewRequired || rule.confidence !== expectedConfidence) {
     errors.push(`${id}: source review state is not applied to the canonical rule`);
   }
   return {
     id,
     confidence: rule.confidence,
     review_required: rule.review_required,
-    review_note: review.review_note,
+    review_note: review?.review_note ?? batch!.review_note,
+    ...(batch ? { batch_id: batch.id } : {}),
     source: rule.source,
   };
 }).filter((item): item is NonNullable<typeof item> => Boolean(item));
@@ -246,13 +292,16 @@ const sourceReviewReport = {
   reviewed_at: sourceReview.reviewed_at,
   review_method: sourceReview.review_method,
   official_source_only: sourceReview.official_source_only,
+  reviewed_batch_count: sourceReviewBatches.length,
   reviewed_rule_count: sourceReviewReportRules.length,
+  batches: sourceReviewBatches,
   rules: sourceReviewReportRules,
 };
 await writeJson(resolve("dist/reports/source-review.json"), sourceReviewReport);
 await writeText(resolve("dist/reports/source-review.md"), `# General source-context review
 
 - Reviewed rules: ${sourceReviewReport.reviewed_rule_count}
+- Reviewed batches: ${sourceReviewReport.reviewed_batch_count}
 - Official source only: ${sourceReviewReport.official_source_only ? "yes" : "no"}
 - Reviewed at: ${sourceReviewReport.reviewed_at}
 
