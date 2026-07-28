@@ -207176,16 +207176,16 @@
   apple_native_rule: Avoid using ResearchKit on macOS, tvOS, visionOS, or watchOS.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAREPLAY-0001
-  title: Let people know that you support SharePlay
+  title: Indicate SharePlay support
   category: technologies
   topic: shareplay
   subtopic: best-practices
   statement:
-    en: Preserve people’s ability to know that you support SharePlay.
-    ja: 利用者がknow that you support SharePlayできる状態を保つ。
+    en: Indicate which content or experiences support SharePlay.
+    ja: どのcontentやexperienceがSharePlayに対応するか示す。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -207205,7 +207205,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use the SharePlay SF Symbol as an indicator when appropriate.
+    - For media apps, align the indicator with people's content-sharing expectations.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
@@ -207213,7 +207214,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Preserve people’s ability to know that you support SharePlay.” in the documented SharePlay context?
+      - Does the design satisfy “Indicate which content or experiences support SharePlay.” in the documented SharePlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -207228,26 +207229,26 @@
     retrieved_at: 2026-07-21T22:19:00Z
     source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
     source_sentence_hash: 70e763a703b8d2c71f4ef06413efa579199a4f0570123149bdb564c452862bea
-    evidence_paraphrase: Preserve people’s ability to know that you support SharePlay.
+    evidence_paraphrase: Indicate which content or experiences support SharePlay.
   tags:
     - technologies
     - shareplay
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Preserve people’s ability to know that you support SharePlay.
+  apple_native_rule: Indicate which content or experiences support SharePlay.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAREPLAY-0002
-  title: Support Picture in Picture (PiP) when possible
+  title: Support Picture in Picture for shared video
   category: technologies
   topic: shareplay
   subtopic: best-practices
   statement:
-    en: Ensure the experience accommodates picture in Picture (PiP) when possible.
-    ja: Picture in Picture (PiP) when possibleを利用できる設計にする。
+    en: Support Picture in Picture for shared video when possible.
+    ja: 可能な場合はshared videoでPicture in Pictureをサポートする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -207256,18 +207257,15 @@
       - ios
       - ipados
       - macos
-      - tvos
-      - visionos
     devices:
       - iphone
       - ipad
       - mac
-      - apple-tv
-      - apple-vision-pro
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Use Picture in Picture on iPhone and iPad.
+    - On Mac, keep shared video in a movable foreground window when the app is in the background.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
@@ -207275,7 +207273,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Ensure the experience accommodates picture in Picture (PiP) when possible.” in the documented SharePlay context?
+      - Does the design satisfy “Support Picture in Picture for shared video when possible.” in the documented SharePlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -207290,26 +207288,26 @@
     retrieved_at: 2026-07-21T22:19:00Z
     source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
     source_sentence_hash: c6aa3cd774bc832459a58976e7225a9c0a6aefaf11a7790c04eeb8cdc44023e3
-    evidence_paraphrase: Ensure the experience accommodates picture in Picture (PiP) when possible.
+    evidence_paraphrase: Support Picture in Picture for shared video when possible.
   tags:
     - technologies
     - shareplay
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Ensure the experience accommodates picture in Picture (PiP) when possible.
+  apple_native_rule: Support Picture in Picture for shared video when possible.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAREPLAY-0003
-  title: Use the term SharePlay correctly
+  title: Use SharePlay as a noun or direct-action verb
   category: technologies
   topic: shareplay
   subtopic: best-practices
   statement:
-    en: Choose or apply the term SharePlay correctly in the documented context.
-    ja: 該当する状況ではthe term SharePlay correctlyを採用する。
+    en: Use SharePlay as a noun or as a verb for a direct interface action.
+    ja: SharePlayを名詞、またはinterface上の直接actionを表す動詞として使う。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -207329,7 +207327,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Apply the separate terminology rules for adjectives and altered forms.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
@@ -207337,7 +207335,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Choose or apply the term SharePlay correctly in the documented context.” in the documented SharePlay context?
+      - Does the design satisfy “Use SharePlay as a noun or as a verb for a direct interface action.” in the documented SharePlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -207352,26 +207350,26 @@
     retrieved_at: 2026-07-21T22:19:00Z
     source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
     source_sentence_hash: 36a73abe62276682bb7658f235588692c92bd1b5245773a84456bed6833c1b6d
-    evidence_paraphrase: Choose or apply the term SharePlay correctly in the documented context.
+    evidence_paraphrase: Use SharePlay as a noun or as a verb for a direct interface action.
   tags:
     - technologies
     - shareplay
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Choose or apply the term SharePlay correctly in the documented context.
+  apple_native_rule: Use SharePlay as a noun or as a verb for a direct interface action.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAREPLAY-0004
-  title: Make it easy to start sharing an activity
+  title: Make starting a SharePlay activity easy
   category: technologies
   topic: shareplay
   subtopic: sharing-activities
   statement:
-    en: Apply the documented SharePlay guidance to make it easy to start sharing an activity.
-    ja: 「SharePlay」において「Make it easy to start sharing an activity」の指針を適用する。
+    en: Make starting a SharePlay activity easy.
+    ja: SharePlay activityを簡単に開始できるようにする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -207391,7 +207389,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - When no SharePlay session is active, let the interface start a group activity.
+    - Let the system offer sharing or solo continuation.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
@@ -207399,7 +207398,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented SharePlay guidance to make it easy to start sharing an activity.” in the documented SharePlay context?
+      - Does the design satisfy “Make starting a SharePlay activity easy.” in the documented SharePlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -207414,26 +207413,26 @@
     retrieved_at: 2026-07-21T22:19:00Z
     source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
     source_sentence_hash: 10b0856007b41e68ddccd0e95d36bfafb1bfbe2a501a522213d8dd629954496d
-    evidence_paraphrase: Apply the documented SharePlay guidance to make it easy to start sharing an activity.
+    evidence_paraphrase: Make starting a SharePlay activity easy.
   tags:
     - technologies
     - shareplay
     - sharing-activities
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented SharePlay guidance to make it easy to start sharing an activity.
+  apple_native_rule: Make starting a SharePlay activity easy.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAREPLAY-0005
-  title: Help people prepare to join a session before displaying the activity
+  title: Complete prerequisites before showing shared-activity UI
   category: technologies
   topic: shareplay
   subtopic: sharing-activities
   statement:
-    en: Apply the documented SharePlay guidance to help people prepare to join a session before displaying the activity.
-    ja: 「SharePlay」において「Help people prepare to join a session before displaying the activity」の指針を適用する。
+    en: Before showing shared-activity UI, help people complete prerequisites.
+    ja: shared-activity UIを表示する前に必要な準備を完了できるよう支援する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -207453,7 +207452,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Prerequisites can include sign-in, downloads, or payment.
+    - Keep prerequisite completion simple and effortless.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
@@ -207461,7 +207461,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented SharePlay guidance to help people prepare to join a session before displaying the activity.” in the documented SharePlay context?
+      - Does the design satisfy “Before showing shared-activity UI, help people complete prerequisites.” in the documented SharePlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -207476,14 +207476,14 @@
     retrieved_at: 2026-07-21T22:19:00Z
     source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
     source_sentence_hash: afd44f184f3407d7fb773b43eda37071d462500365b792fbbc828e55f13ad046
-    evidence_paraphrase: Apply the documented SharePlay guidance to help people prepare to join a session before displaying the activity.
+    evidence_paraphrase: Before showing shared-activity UI, help people complete prerequisites.
   tags:
     - technologies
     - shareplay
     - sharing-activities
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented SharePlay guidance to help people prepare to join a session before displaying the activity.
+  apple_native_rule: Before showing shared-activity UI, help people complete prerequisites.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAREPLAY-0006
   title: Choose the spatial Persona template that suits your shared activity
@@ -208003,16 +208003,16 @@
   apple_native_rule: Make exiting and rejoining a shared activity easy.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAREPLAY-0015
-  title: If part of your app requires a subscription, consider ways to help nonsubscriber participants quickly join …
+  title: Consider quick access for nonsubscribers
   category: technologies
   topic: shareplay
   subtopic: best-practices
   statement:
-    en: When part of your app requires a subscription, consider ways to help nonsubscriber participants quickly join a group activity.
-    ja: part of your app requires a subscription場合はways to help nonsubscriber participants quickly join a group activityを検討する。
+    en: If part of the app requires a subscription, consider helping nonsubscribers join quickly.
+    ja: appの一部にsubscriptionが必要な場合、nonsubscriberがすばやく参加できる支援を検討する。
   normative_level: MAY
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: permit
   severity: info
   scope:
@@ -208032,7 +208032,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Consider temporary or provisional access, a one-time pass, or Family Sharing.
+    - Apply the separate streamlined-signup rule when subscription can start during SharePlay.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
@@ -208040,7 +208041,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “When part of your app requires a subscription, consider ways to help nonsubscriber participants quickly join a group activity.” in the documented SharePlay context?
+      - Does the design satisfy “If part of the app requires a subscription, consider helping nonsubscribers join quickly.” in the documented SharePlay context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -208055,14 +208056,14 @@
     retrieved_at: 2026-07-21T22:19:00Z
     source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
     source_sentence_hash: 90fef30c03ae04b14b8fd5e978bce386e24dfc39667b43a58a1a713b522699f4
-    evidence_paraphrase: When part of your app requires a subscription, consider ways to help nonsubscriber participants quickly join a group activity.
+    evidence_paraphrase: If part of the app requires a subscription, consider helping nonsubscribers join quickly.
   tags:
     - technologies
     - shareplay
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: When part of your app requires a subscription, consider ways to help nonsubscriber participants quickly join a group activity.
+  apple_native_rule: If part of the app requires a subscription, consider helping nonsubscribers join quickly.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAREPLAY-0016
   title: Avoid using SharePlay on watchOS
@@ -208974,6 +208975,371 @@
   priority_rank: 4
   status: active
   apple_native_rule: Keep participant positions and app context synchronized for per-person shared content.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SHAREPLAY-0032
+  title: Briefly describe each SharePlay activity
+  category: technologies
+  topic: shareplay
+  subtopic: sharing-activities
+  statement:
+    en: Give each SharePlay activity a brief, meaningful description.
+    ja: 各SharePlay activityに短く意味のあるdescriptionを付ける。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Help people understand the activity before joining.
+    - Keep the description short enough to avoid truncation.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSharePlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Give each SharePlay activity a brief, meaningful description.” in the documented SharePlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/shareplay
+    page_title: SharePlay
+    section_path:
+      - SharePlay
+      - Sharing activities
+    retrieved_at: 2026-07-21T22:19:00Z
+    source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
+    source_sentence_hash: 60911db7ecd17c8dd83a7a8e74d33e29b1a3540ec39853dfddeb35e8fa4bac14
+    evidence_paraphrase: Give each SharePlay activity a brief, meaningful description.
+  tags:
+    - technologies
+    - shareplay
+    - sharing-activities
+  priority_rank: 6
+  status: active
+  apple_native_rule: Give each SharePlay activity a brief, meaningful description.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SHAREPLAY-0033
+  title: Defer tasks that delay a shared activity
+  category: technologies
+  topic: shareplay
+  subtopic: sharing-activities
+  statement:
+    en: When possible, defer app tasks that could delay a shared activity.
+    ja: 可能な場合、shared activityを遅らせるapp taskを後回しにする。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - For example, request a participant profile when the activity pauses or finishes.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSharePlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When possible, defer app tasks that could delay a shared activity.” in the documented SharePlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/shareplay
+    page_title: SharePlay
+    section_path:
+      - SharePlay
+      - Sharing activities
+    retrieved_at: 2026-07-21T22:19:00Z
+    source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
+    source_sentence_hash: b3c97b626f0f993f15d013b52c9abacdf496dadd0a906f172a4a30f1b0b98cea
+    evidence_paraphrase: When possible, defer app tasks that could delay a shared activity.
+  tags:
+    - technologies
+    - shareplay
+    - sharing-activities
+  priority_rank: 6
+  status: active
+  apple_native_rule: When possible, defer app tasks that could delay a shared activity.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SHAREPLAY-0034
+  title: Smoothly update a shared activity for new participants
+  category: technologies
+  topic: shareplay
+  subtopic: visionos
+  statement:
+    en: When new participants join, update the shared activity smoothly.
+    ja: new participantが参加したらshared activityを滑らかに更新する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - visionos
+    devices:
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Apply the separate MUST rule for integrating participants without disrupting the shared experience.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSharePlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When new participants join, update the shared activity smoothly.” in the documented SharePlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/shareplay
+    page_title: SharePlay
+    section_path:
+      - SharePlay
+      - Platform considerations
+      - visionOS
+    retrieved_at: 2026-07-21T22:19:00Z
+    source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
+    source_sentence_hash: f10d26826ac9e597e8918cbbb86d101d286773ac74734ff627f4b3c6a0799073
+    evidence_paraphrase: When new participants join, update the shared activity smoothly.
+  tags:
+    - technologies
+    - shareplay
+    - platform-considerations
+    - visionos
+  priority_rank: 4
+  status: active
+  apple_native_rule: When new participants join, update the shared activity smoothly.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SHAREPLAY-0035
+  title: Streamline subscription signup during SharePlay
+  category: technologies
+  topic: shareplay
+  subtopic: best-practices
+  statement:
+    en: If people can subscribe during SharePlay, present a streamlined signup flow.
+    ja: SharePlay中にsubscriptionを開始できる場合、簡潔なsignup flowを提示する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - Help the person join without making other participants wait.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSharePlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “If people can subscribe during SharePlay, present a streamlined signup flow.” in the documented SharePlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/shareplay
+    page_title: SharePlay
+    section_path:
+      - SharePlay
+      - Best practices
+    retrieved_at: 2026-07-21T22:19:00Z
+    source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
+    source_sentence_hash: fb90a225c88e2dde4671205391b6ca38bd8545ca89e4d5c517c143dd4cbb723c
+    evidence_paraphrase: If people can subscribe during SharePlay, present a streamlined signup flow.
+  tags:
+    - technologies
+    - shareplay
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: If people can subscribe during SharePlay, present a streamlined signup flow.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SHAREPLAY-0036
+  title: Avoid adjectives with SharePlay
+  category: technologies
+  topic: shareplay
+  subtopic: best-practices
+  statement:
+    en: Avoid adding adjectives such as virtual or spatial to SharePlay.
+    ja: SharePlayにvirtualやspatialなどの形容詞を付けることを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions: []
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSharePlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid adding adjectives such as virtual or spatial to SharePlay.” in the documented SharePlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/shareplay
+    page_title: SharePlay
+    section_path:
+      - SharePlay
+      - Best practices
+    retrieved_at: 2026-07-21T22:19:00Z
+    source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
+    source_sentence_hash: 4361d4e468675f7c90fc432a4b8fcb9d8fa655896c1b7a69bfca5f77e4f6ec71
+    evidence_paraphrase: Avoid adding adjectives such as virtual or spatial to SharePlay.
+  tags:
+    - technologies
+    - shareplay
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid adding adjectives such as virtual or spatial to SharePlay.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-TECHNOLOGIES-SHAREPLAY-0037
+  title: Avoid altering the term SharePlay
+  category: technologies
+  topic: shareplay
+  subtopic: best-practices
+  statement:
+    en: Avoid altering SharePlay into variants such as SharePlayed, SharePlays, or SharePlaying.
+    ja: SharePlayをSharePlayed、SharePlays、SharePlayingなどの形に変えることを避ける。
+  normative_level: AVOID
+  confidence: high
+  review_required: false
+  polarity: discourage
+  severity: warning
+  scope:
+    portability: technology-specific
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions: []
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable SharePlay experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるSharePlayの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Avoid altering SharePlay into variants such as SharePlayed, SharePlays, or SharePlaying.” in the documented SharePlay context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/shareplay
+    page_title: SharePlay
+    section_path:
+      - SharePlay
+      - Best practices
+    retrieved_at: 2026-07-21T22:19:00Z
+    source_hash: b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827
+    source_sentence_hash: 5de70d6aa126491aefcf150e3ed61a6ef5f6f903567634bc44706fad09240f0d
+    evidence_paraphrase: Avoid altering SharePlay into variants such as SharePlayed, SharePlays, or SharePlaying.
+  tags:
+    - technologies
+    - shareplay
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Avoid altering SharePlay into variants such as SharePlayed, SharePlays, or SharePlaying.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-TECHNOLOGIES-SHAZAMKIT-0001
   title: Let people opt in to storing your app’s recognized songs to their iCloud library

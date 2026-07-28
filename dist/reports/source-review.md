@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3601
-- Reviewed batches: 207
+- Reviewed rules: 3613
+- Reviewed batches: 208
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:55:36Z
+- Reviewed at: 2026-07-28T18:04:14Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -3377,6 +3377,11 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-RESEARCHKIT-0036 · high — Kept the profile exit capability optional because the source presents it as something a profile can provide. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0037 · high — Kept document access optional because the source presents it as a profile capability. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
 - HIG-TECHNOLOGIES-RESEARCHKIT-0038 · high — Recorded the descriptive platform limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/researchkit))
+- HIG-TECHNOLOGIES-SHAREPLAY-0001 · high — Concretized the support-disclosure outcome and retained the symbol as an optional implementation. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0002 · high — Preserved when-possible strength and scoped the documented behavior to iPhone, iPad, and Mac. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0003 · high — Concretized correct noun and direct-action verb usage without merging the two avoidance rules. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0004 · high — Recorded the easy-start outcome and the inactive-session path without overriding the system choice. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0005 · high — Concretized prerequisite timing and examples while retaining the source's recommendation strength. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0006 · high — Recorded the three system templates and the content-versus-interaction choice. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0007 · high — Recorded the direct-launch expectation separately from window restrictions and prerequisite tasks. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0008 · high — Kept synchronized entry at SHOULD and split the adjacent non-coercion guidance into its own AVOID rule. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
@@ -3386,6 +3391,7 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-SHAREPLAY-0012 · high — Recorded independent personalization and its accessibility and comfort purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0013 · high — Preserved optional per-person viewing and its perspective-dependent condition. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0014 · high — Kept the general ease guidance at SHOULD and split the explicit rejoin-control requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0015 · high — Preserved the conditional consider framing and separated joining accommodations from in-session signup. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0016 · high — Recorded the descriptive watchOS limitation at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0017 · high — Recovered the launch-specific window restriction without raising want-to-avoid wording to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0018 · high — Recovered the conditional MUST from the explicit be-sure directive and its automatic-dismissal outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
@@ -3402,6 +3408,12 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-TECHNOLOGIES-SHAREPLAY-0029 · high — Preserved the source's might-want optional framing. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0030 · high — Recovered participant choice as the non-coercive synchronization path. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SHAREPLAY-0031 · high — Recovered the conditional MUST from the explicit be-sure-to-continue directive. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0032 · high — Activated the omitted activity-description lead and recorded meaning and truncation constraints. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0033 · high — Activated the omitted lead and preserved its when-possible condition. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0034 · high — Activated the omitted visionOS umbrella lead while retaining the stronger atomic integration requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0035 · high — Recovered the conditional in-session signup guidance without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0036 · high — Recovered the direct terminology avoidance without overstating it as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
+- HIG-TECHNOLOGIES-SHAREPLAY-0037 · high — Recovered the direct terminology avoidance without overstating it as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/shareplay))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0001 · high — Completed the all-platform account, privacy, optional-data, button-prominence, title, appearance, and contrast guidance; recovered omitted atomic clauses and removed one factual API capability from the active rules. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0002 · high — Completed the all-platform account, privacy, optional-data, button-prominence, title, appearance, and contrast guidance; recovered omitted atomic clauses and removed one factual API capability from the active rules. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))
 - HIG-TECHNOLOGIES-SIGN-IN-WITH-APPLE-0003 · high — Preserved the direct Don't guidance at AVOID and recorded the source's stopped-using exception. ([source](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple))

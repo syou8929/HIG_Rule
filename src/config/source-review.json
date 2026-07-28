@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:55:36Z",
+  "reviewed_at": "2026-07-28T18:04:14Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5698,6 +5698,34 @@
         "HIG-TECHNOLOGIES-LIVE-PHOTOS-0016"
       ],
       "review_note": "Expanded Live Photos from 6 to 16 active atomic rules, recovered sharing, conversion, integrity, unsupported-environment, badge, playback-control, watchOS, and visionOS constraints, and reviewed three privacy or user-intent MUST outcomes plus one Always MUST and one Never MUST_NOT outcome."
+    },
+    {
+      "id": "priority-6-shareplay-common-context-2026-07-29",
+      "reviewed_at": "2026-07-28T18:04:14Z",
+      "review_method": "Rendered Apple HIG SharePlay best-practice, sharing-activity, subscription, terminology, Picture in Picture, and participant-join context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/shareplay",
+          "source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827"
+        }
+      ],
+      "rule_ids": [
+        "HIG-TECHNOLOGIES-SHAREPLAY-0001",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0002",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0003",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0004",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0005",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0015",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0032",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0033",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0034",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0035",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0036",
+        "HIG-TECHNOLOGIES-SHAREPLAY-0037"
+      ],
+      "review_note": "Completed SharePlay common guidance, expanded 31 to 37 active atomic rules, recovered activity description, task deferral, participant joining, streamlined signup, and terminology constraints, and introduced no new MUST or MUST_NOT rules."
     }
   ],
   "rules": {
@@ -11246,6 +11274,104 @@
       "normative_level": "MAY",
       "conditions": ["Ongoing content helps the participant stay informed about the shared experience."],
       "review_note": "Preserved the source's might-want optional framing."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0001": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "70e763a703b8d2c71f4ef06413efa579199a4f0570123149bdb564c452862bea", "section_path": ["SharePlay", "Best practices"]},
+      "title": "Indicate SharePlay support",
+      "statement": {"en": "Indicate which content or experiences support SharePlay.", "ja": "どのcontentやexperienceがSharePlayに対応するか示す。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use the SharePlay SF Symbol as an indicator when appropriate.", "For media apps, align the indicator with people's content-sharing expectations."],
+      "review_note": "Concretized the support-disclosure outcome and retained the symbol as an optional implementation."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0002": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "c6aa3cd774bc832459a58976e7225a9c0a6aefaf11a7790c04eeb8cdc44023e3", "section_path": ["SharePlay", "Best practices"]},
+      "title": "Support Picture in Picture for shared video",
+      "statement": {"en": "Support Picture in Picture for shared video when possible.", "ja": "可能な場合はshared videoでPicture in Pictureをサポートする。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "technology-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "conditions": ["Use Picture in Picture on iPhone and iPad.", "On Mac, keep shared video in a movable foreground window when the app is in the background."],
+      "review_note": "Preserved when-possible strength and scoped the documented behavior to iPhone, iPad, and Mac."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0003": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "36a73abe62276682bb7658f235588692c92bd1b5245773a84456bed6833c1b6d", "section_path": ["SharePlay", "Best practices"]},
+      "title": "Use SharePlay as a noun or direct-action verb",
+      "statement": {"en": "Use SharePlay as a noun or as a verb for a direct interface action.", "ja": "SharePlayを名詞、またはinterface上の直接actionを表す動詞として使う。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Apply the separate terminology rules for adjectives and altered forms."],
+      "review_note": "Concretized correct noun and direct-action verb usage without merging the two avoidance rules."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0004": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "10b0856007b41e68ddccd0e95d36bfafb1bfbe2a501a522213d8dd629954496d", "section_path": ["SharePlay", "Sharing activities"]},
+      "title": "Make starting a SharePlay activity easy",
+      "statement": {"en": "Make starting a SharePlay activity easy.", "ja": "SharePlay activityを簡単に開始できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["When no SharePlay session is active, let the interface start a group activity.", "Let the system offer sharing or solo continuation."],
+      "review_note": "Recorded the easy-start outcome and the inactive-session path without overriding the system choice."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0005": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "afd44f184f3407d7fb773b43eda37071d462500365b792fbbc828e55f13ad046", "section_path": ["SharePlay", "Sharing activities"]},
+      "title": "Complete prerequisites before showing shared-activity UI",
+      "statement": {"en": "Before showing shared-activity UI, help people complete prerequisites.", "ja": "shared-activity UIを表示する前に必要な準備を完了できるよう支援する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Prerequisites can include sign-in, downloads, or payment.", "Keep prerequisite completion simple and effortless."],
+      "review_note": "Concretized prerequisite timing and examples while retaining the source's recommendation strength."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0015": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "90fef30c03ae04b14b8fd5e978bce386e24dfc39667b43a58a1a713b522699f4", "section_path": ["SharePlay", "Best practices"]},
+      "title": "Consider quick access for nonsubscribers",
+      "statement": {"en": "If part of the app requires a subscription, consider helping nonsubscribers join quickly.", "ja": "appの一部にsubscriptionが必要な場合、nonsubscriberがすばやく参加できる支援を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["Consider temporary or provisional access, a one-time pass, or Family Sharing.", "Apply the separate streamlined-signup rule when subscription can start during SharePlay."],
+      "review_note": "Preserved the conditional consider framing and separated joining accommodations from in-session signup."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0032": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "60911db7ecd17c8dd83a7a8e74d33e29b1a3540ec39853dfddeb35e8fa4bac14", "section_path": ["SharePlay", "Sharing activities"]},
+      "title": "Briefly describe each SharePlay activity",
+      "statement": {"en": "Give each SharePlay activity a brief, meaningful description.", "ja": "各SharePlay activityに短く意味のあるdescriptionを付ける。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Help people understand the activity before joining.", "Keep the description short enough to avoid truncation."],
+      "review_note": "Activated the omitted activity-description lead and recorded meaning and truncation constraints."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0033": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "b3c97b626f0f993f15d013b52c9abacdf496dadd0a906f172a4a30f1b0b98cea", "section_path": ["SharePlay", "Sharing activities"]},
+      "title": "Defer tasks that delay a shared activity",
+      "statement": {"en": "When possible, defer app tasks that could delay a shared activity.", "ja": "可能な場合、shared activityを遅らせるapp taskを後回しにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["For example, request a participant profile when the activity pauses or finishes."],
+      "review_note": "Activated the omitted lead and preserved its when-possible condition."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0034": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "f10d26826ac9e597e8918cbbb86d101d286773ac74734ff627f4b3c6a0799073", "section_path": ["SharePlay", "Platform considerations", "visionOS"]},
+      "title": "Smoothly update a shared activity for new participants",
+      "statement": {"en": "When new participants join, update the shared activity smoothly.", "ja": "new participantが参加したらshared activityを滑らかに更新する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "technology-specific", "platforms": ["visionos"], "devices": ["apple-vision-pro"], "components": [], "modalities": []},
+      "conditions": ["Apply the separate MUST rule for integrating participants without disrupting the shared experience."],
+      "review_note": "Activated the omitted visionOS umbrella lead while retaining the stronger atomic integration requirement."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0035": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "fb90a225c88e2dde4671205391b6ca38bd8545ca89e4d5c517c143dd4cbb723c", "section_path": ["SharePlay", "Best practices"]},
+      "title": "Streamline subscription signup during SharePlay",
+      "statement": {"en": "If people can subscribe during SharePlay, present a streamlined signup flow.", "ja": "SharePlay中にsubscriptionを開始できる場合、簡潔なsignup flowを提示する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Help the person join without making other participants wait."],
+      "review_note": "Recovered the conditional in-session signup guidance without raising it to MUST."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0036": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "4361d4e468675f7c90fc432a4b8fcb9d8fa655896c1b7a69bfca5f77e4f6ec71", "section_path": ["SharePlay", "Best practices"]},
+      "title": "Avoid adjectives with SharePlay",
+      "statement": {"en": "Avoid adding adjectives such as virtual or spatial to SharePlay.", "ja": "SharePlayにvirtualやspatialなどの形容詞を付けることを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": [],
+      "review_note": "Recovered the direct terminology avoidance without overstating it as MUST_NOT."
+    },
+    "HIG-TECHNOLOGIES-SHAREPLAY-0037": {
+      "source": {"source_hash": "b9d8449cf8e8aceb676ac720412929e1dae07b7a82d0454e37bea9a752db7827", "source_sentence_hash": "5de70d6aa126491aefcf150e3ed61a6ef5f6f903567634bc44706fad09240f0d", "section_path": ["SharePlay", "Best practices"]},
+      "title": "Avoid altering the term SharePlay",
+      "statement": {"en": "Avoid altering SharePlay into variants such as SharePlayed, SharePlays, or SharePlaying.", "ja": "SharePlayをSharePlayed、SharePlays、SharePlayingなどの形に変えることを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": [],
+      "review_note": "Recovered the direct terminology avoidance without overstating it as MUST_NOT."
     },
     "HIG-TECHNOLOGIES-RESEARCHKIT-0013": {
       "source": {"source_hash": "93a098a41f9e06b1816a2bdf6013563254c7b581ed0e77ea02d635f99084d862", "source_sentence_hash": "5100d084bc54c8ed47d96149a33625ef295185200995c8b3be9c33e6b58b81b6", "section_path": ["ResearchKit", "Creating the onboarding experience", "2. Determine eligibility"]},

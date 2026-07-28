@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3646
+- Active atomic rules: 3652
 - Pages without rules: 16
-- Low-confidence rules: 31
-- Rules requiring human review: 31
+- Low-confidence rules: 25
+- Rules requiring human review: 25
 - Reference notes: 914
 
 ## Rules by category
@@ -18,30 +18,30 @@
 - getting-started: 100
 - inputs: 245
 - patterns: 552
-- technologies: 1131
+- technologies: 1137
 
 ## Normative levels
 
-- AVOID: 492
+- AVOID: 494
 - MAY: 410
 - MUST: 563
 - MUST_NOT: 85
-- SHOULD: 2096
+- SHOULD: 2100
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2657
-- ipados: 2616
-- macos: 2168
-- tvos: 1694
-- visionos: 2126
+- ios: 2662
+- ipados: 2621
+- macos: 2173
+- tvos: 1698
+- visionos: 2131
 - watchos: 1812
 
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3531
+- manual: 3537
 
 ## Blocked pages
 
@@ -92,12 +92,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-TECHNOLOGIES-SHAREPLAY-0001
-- HIG-TECHNOLOGIES-SHAREPLAY-0002
-- HIG-TECHNOLOGIES-SHAREPLAY-0003
-- HIG-TECHNOLOGIES-SHAREPLAY-0004
-- HIG-TECHNOLOGIES-SHAREPLAY-0005
-- HIG-TECHNOLOGIES-SHAREPLAY-0015
 - HIG-TECHNOLOGIES-SHAZAMKIT-0001
 
 ## Rules requiring human review
@@ -126,12 +120,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-TECHNOLOGIES-SHAREPLAY-0001
-- HIG-TECHNOLOGIES-SHAREPLAY-0002
-- HIG-TECHNOLOGIES-SHAREPLAY-0003
-- HIG-TECHNOLOGIES-SHAREPLAY-0004
-- HIG-TECHNOLOGIES-SHAREPLAY-0005
-- HIG-TECHNOLOGIES-SHAREPLAY-0015
 - HIG-TECHNOLOGIES-SHAZAMKIT-0001
 
 ## Reference notes
