@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 609
-- Retained MUST: 528
-- Retained MUST_NOT: 81
-- Normative level changes: 236
+- Reviewed rules: 621
+- Retained MUST: 539
+- Retained MUST_NOT: 82
+- Normative level changes: 250
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:02:18Z
+- Reviewed at: 2026-07-28T17:12:27Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -281,6 +281,20 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0023 — Recovered MUST from the explicit always-needs-to primary-action clause. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0026 — Recovered the explicit audio-needs-to-stop state transition as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
 - HIG-PATTERNS-LIVE-VIEWING-APPS-0027 — Recovered the explicit current-information needs-to-be-easy-to-spot requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-viewing-apps))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001 — Raised the only restriction and supporting Make sure time window to a bounded platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002 — Retained the explicit Never prohibition and clarified that consent doesn't create an exception. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 — Retained MUST from the Make sure lead and the supporting must-also-provide clause. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0004 — Recovered the general notification permission requirement from the explicit You need to statement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0006 — Classified the conditional system notification-type mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0007 — Classified the source's implementation path for communication notifications as a conditional platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0008 — Retained MUST from the explicit You need to specification requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0009 — Retained MUST from the explicit you must get an entitlement requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0010 — Raised the source's explicitly essential urgency-accuracy outcome to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0011 — Raised the explicit don't-unless consent boundary to a privacy MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0012 — Raised the supporting must-receive-explicit-permission clause to a privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013 — Classified the pre-consent disclosure as a privacy and explicit-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014 — Classified the clear bidirectional consent choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015 — Classified the complementary all-other-tasks notification mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MULTITASKING-0006 — Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0007 — Recovered and retained MUST after confirming the explicit always need to prepare for context saving and restoration. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
@@ -793,8 +807,20 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0031 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0033 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0035 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
-- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
-- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001 · MUST · retained_with_atomicity_or_scope_correction — Raised the only restriction and supporting Make sure time window to a bounded platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002 · MUST_NOT · retained_with_atomicity_or_scope_correction — Retained the explicit Never prohibition and clarified that consent doesn't create an exception. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the Make sure lead and the supporting must-also-provide clause. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0004 · MUST · retained_with_atomicity_or_scope_correction — Recovered the general notification permission requirement from the explicit You need to statement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0006 · MUST · retained_with_atomicity_or_scope_correction — Classified the conditional system notification-type mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0007 · MUST · retained_with_atomicity_or_scope_correction — Classified the source's implementation path for communication notifications as a conditional platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0008 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit You need to specification requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0009 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST from the explicit you must get an entitlement requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0010 · MUST · retained_with_atomicity_or_scope_correction — Raised the source's explicitly essential urgency-accuracy outcome to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0011 · MUST_NOT · retained_with_atomicity_or_scope_correction — Raised the explicit don't-unless consent boundary to a privacy MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0012 · MUST · retained_with_atomicity_or_scope_correction — Raised the supporting must-receive-explicit-permission clause to a privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013 · MUST · retained_with_atomicity_or_scope_correction — Classified the pre-consent disclosure as a privacy and explicit-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014 · MUST · retained_with_atomicity_or_scope_correction — Classified the clear bidirectional consent choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015 · MUST · retained_with_atomicity_or_scope_correction — Classified the complementary all-other-tasks notification mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MODALITY-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MODALITY-0006 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MULTITASKING-0006 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))

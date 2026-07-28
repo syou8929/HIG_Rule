@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3479
-- Reviewed batches: 201
+- Reviewed rules: 3494
+- Reviewed batches: 202
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:02:18Z
+- Reviewed at: 2026-07-28T17:12:27Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2165,6 +2165,21 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0035 · high — Recovered the conditional MUST from the source's needs-to-prompt platform requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0036 · high — Recovered the watchOS-only synchronization recommendation and its Keychain-access purpose. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 - HIG-PATTERNS-MANAGING-ACCOUNTS-0037 · high — Recovered the token-revocation instruction at SHOULD because the source doesn't use an explicit mandatory marker. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001 · high — Raised the only restriction and supporting Make sure time window to a bounded platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002 · high — Retained the explicit Never prohibition and clarified that consent doesn't create an exception. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 · high — Retained MUST from the Make sure lead and the supporting must-also-provide clause. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0004 · high — Recovered the general notification permission requirement from the explicit You need to statement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0005 · high — Recovered the sequencing step but kept its plain first-identify wording at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0006 · high — Classified the conditional system notification-type mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0007 · high — Classified the source's implementation path for communication notifications as a conditional platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0008 · high — Retained MUST from the explicit You need to specification requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0009 · high — Retained MUST from the explicit you must get an entitlement requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0010 · high — Raised the source's explicitly essential urgency-accuracy outcome to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0011 · high — Raised the explicit don't-unless consent boundary to a privacy MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0012 · high — Raised the supporting must-receive-explicit-permission clause to a privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013 · high — Classified the pre-consent disclosure as a privacy and explicit-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014 · high — Classified the clear bidirectional consent choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015 · high — Classified the complementary all-other-tasks notification mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MULTITASKING-0001 · high — Recorded the two interruption classes and separated their required responses. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0002 · high — Recorded both background states and separated useful and unnecessary completion cases. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0003 · high — Recorded every system state cue and separated the concrete window-edge restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))

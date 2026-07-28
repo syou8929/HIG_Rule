@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:02:18Z",
+  "reviewed_at": "2026-07-28T17:12:27Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 609,
+  "reviewed_rule_count": 621,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -4335,6 +4335,119 @@
       "polarity": "require", "severity": "error",
       "conditions": ["People first open the EPG."],
       "review_note": "Recovered the explicit current-information needs-to-be-easy-to-spot requirement as MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001": {
+      "title": "Restrict Time Sensitive notifications to current events",
+      "statement": {"en": "Use the Time Sensitive interruption level only for an event happening now or within an hour.", "ja": "Time Sensitive interruption levelは現在発生中または1時間以内に発生するeventだけに使う。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The notification is relevant in the moment and requires immediate attention."],
+      "review_note": "Raised the only restriction and supporting Make sure time window to a bounded platform-contract MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002": {
+      "title": "Never mark marketing notifications Time Sensitive",
+      "statement": {"en": "Never use the Time Sensitive interruption level for a marketing notification.", "ja": "marketing notificationにTime Sensitive interruption levelを決して使わない。"},
+      "normative_level": "MUST_NOT", "confidence": "high", "review_required": false,
+      "polarity": "prohibit", "severity": "error",
+      "conditions": ["Marketing permission does not allow a notification to break through Focus or scheduled delivery."],
+      "review_note": "Retained the explicit Never prohibition and clarified that consent doesn't create an exception."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003": {
+      "title": "Provide in-app notification settings",
+      "statement": {"en": "Provide an in-app settings screen where people can change their notification choices.", "ja": "notificationの選択を変更できるin-app settings screenを提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app requests permission for informational or marketing notifications."],
+      "review_note": "Retained MUST from the Make sure lead and the supporting must-also-provide clause."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0004": {
+      "title": "Get permission before sending notifications",
+      "statement": {"en": "Get permission before sending any notification.", "ja": "notificationを送信する前にpermissionを取得する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The system lets people later change or silence this permission in settings."],
+      "review_note": "Recovered the general notification permission requirement from the explicit You need to statement."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0006": {
+      "title": "Use communication notifications for direct communications",
+      "statement": {"en": "When supporting direct communications such as calls or messages, use communication notifications.", "ja": "callやmessageなどdirect communicationに対応する場合はcommunication notificationを使う。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The notification represents a direct communication."],
+      "review_note": "Classified the conditional system notification-type mapping as a platform contract."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0007": {
+      "title": "Adopt SiriKit intents for communication notifications",
+      "statement": {"en": "Adopt SiriKit intents when supporting communication notifications.", "ja": "communication notificationに対応する場合はSiriKit intentを採用する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["SiriKit intents let people customize communication-notification behavior with Siri."],
+      "review_note": "Classified the source's implementation path for communication notifications as a conditional platform contract."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0008": {
+      "title": "Specify an interruption level for every noncommunication notification",
+      "statement": {"en": "Specify a system-defined interruption level for every noncommunication notification.", "ja": "すべてのnoncommunication notificationにsystem-defined interruption levelを指定する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The system uses the level to determine when to deliver the alert."],
+      "review_note": "Retained MUST from the explicit You need to specification requirement."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0009": {
+      "title": "Get an entitlement for Critical notifications",
+      "statement": {"en": "Get the required entitlement before sending a Critical notification.", "ja": "Critical notificationを送信する前にrequired entitlementを取得する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Critical notifications can override Ring/Silent, scheduled delivery, and Focus."],
+      "review_note": "Retained MUST from the explicit you must get an entitlement requirement."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0010": {
+      "title": "Represent each notification's urgency accurately",
+      "statement": {"en": "Assign an interruption level that accurately represents each notification's urgency.", "ja": "各notificationのurgencyを正確に表すinterruption levelを割り当てる。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Do not use a high urgency level for low-priority information."],
+      "review_note": "Raised the source's explicitly essential urgency-accuracy outcome to MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0011": {
+      "title": "Don't send marketing notifications without explicit agreement",
+      "statement": {"en": "Don't send marketing or promotional notifications unless people explicitly agree to receive them.", "ja": "明示的な同意がない限りmarketingまたはpromotional notificationを送信しない。"},
+      "normative_level": "MUST_NOT", "confidence": "high", "review_required": false,
+      "polarity": "prohibit", "severity": "error",
+      "conditions": ["The person has not explicitly opted in to the marketing information."],
+      "exceptions": ["Sending is allowed after explicit agreement, subject to the separate Time Sensitive prohibition."],
+      "review_note": "Raised the explicit don't-unless consent boundary to a privacy MUST_NOT."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0012": {
+      "title": "Get explicit permission for marketing notifications",
+      "statement": {"en": "Get people's explicit permission before sending promotional or marketing notifications.", "ja": "promotionalまたはmarketing notificationを送信する前に明示的なpermissionを取得する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The app wants to send promotional or marketing information."],
+      "review_note": "Raised the supporting must-receive-explicit-permission clause to a privacy MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013": {
+      "title": "Describe marketing-notification content before consent",
+      "statement": {"en": "Before asking for marketing-notification consent, describe the types of information the app wants to send.", "ja": "marketing-notification consentを求める前にappが送信するinformation typeを説明する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Use an alert, modal view, or other clear permission interface."],
+      "review_note": "Classified the pre-consent disclosure as a privacy and explicit-intent MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014": {
+      "title": "Provide clear marketing opt-in and opt-out choices",
+      "statement": {"en": "Give people a clear way to opt in to or out of marketing notifications.", "ja": "marketing notificationへopt inまたはopt outする明確な方法を提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Present the choice in the marketing-permission interface."],
+      "review_note": "Classified the clear bidirectional consent choice as a user-intent MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015": {
+      "title": "Use noncommunication notifications for other tasks",
+      "statement": {"en": "Use noncommunication notifications for notification tasks that aren't direct communications.", "ja": "direct communication以外のnotification taskにはnoncommunication notificationを使う。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The notification doesn't represent a direct communication such as a call or message."],
+      "review_note": "Classified the complementary all-other-tasks notification mapping as a platform contract."
     }
   },
   "additional_rules": [

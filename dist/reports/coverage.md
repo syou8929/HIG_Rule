@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3573
+- Active atomic rules: 3585
 - Pages without rules: 16
-- Low-confidence rules: 74
-- Rules requiring human review: 74
+- Low-confidence rules: 73
+- Rules requiring human review: 73
 - Reference notes: 914
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 504
 - getting-started: 100
 - inputs: 245
-- patterns: 526
+- patterns: 538
 - technologies: 1084
 
 ## Normative levels
 
 - AVOID: 482
 - MAY: 405
-- MUST: 528
-- MUST_NOT: 81
+- MUST: 539
+- MUST_NOT: 82
 - SHOULD: 2077
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2587
-- ipados: 2546
-- macos: 2098
-- tvos: 1631
-- visionos: 2061
-- watchos: 1756
+- ios: 2599
+- ipados: 2558
+- macos: 2110
+- tvos: 1643
+- visionos: 2073
+- watchos: 1768
 
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3458
+- manual: 3470
 
 ## Blocked pages
 
@@ -92,7 +92,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001
 - HIG-PATTERNS-MODALITY-0001
 - HIG-PATTERNS-MODALITY-0002
 - HIG-PATTERNS-MODALITY-0004
@@ -169,7 +168,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001
 - HIG-PATTERNS-MODALITY-0001
 - HIG-PATTERNS-MODALITY-0002
 - HIG-PATTERNS-MODALITY-0004

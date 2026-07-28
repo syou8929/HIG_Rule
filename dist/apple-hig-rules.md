@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T17:07:36.106Z. 3573 active rules; 8 deprecated rules.
+Generated 2026-07-28T17:15:39.653Z. 3585 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -923,9 +923,21 @@ Generated 2026-07-28T17:07:36.106Z. 3573 active rules; 8 deprecated rules.
 - **HIG-PATTERNS-MANAGING-ACCOUNTS-0037 · SHOULD · high** — Revoke associated Sign in with Apple tokens when deleting the linked account. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-accounts))
 ### managing-notifications
 
-- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001 · SHOULD · low** — Choose or apply the Time Sensitive interruption level only for notifications that are relevant in the moment in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
-- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002 · MUST_NOT · medium** — Exclude use the Time Sensitive interruption level to send a marketing notification from the applicable experience. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
-- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 · MUST · medium** — Verify that people can manage their notification settings within your app. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001 · MUST · high** — Use the Time Sensitive interruption level only for an event happening now or within an hour. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002 · MUST_NOT · high** — Never use the Time Sensitive interruption level for a marketing notification. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003 · MUST · high** — Provide an in-app settings screen where people can change their notification choices. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0004 · MUST · high** — Get permission before sending any notification. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0005 · SHOULD · high** — Identify the types of notifications the app or game can send before configuring Focus behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0006 · MUST · high** — When supporting direct communications such as calls or messages, use communication notifications. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0007 · MUST · high** — Adopt SiriKit intents when supporting communication notifications. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0008 · MUST · high** — Specify a system-defined interruption level for every noncommunication notification. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0009 · MUST · high** — Get the required entitlement before sending a Critical notification. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0010 · MUST · high** — Assign an interruption level that accurately represents each notification's urgency. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0011 · MUST_NOT · high** — Don't send marketing or promotional notifications unless people explicitly agree to receive them. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0012 · MUST · high** — Get people's explicit permission before sending promotional or marketing notifications. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013 · MUST · high** — Before asking for marketing-notification consent, describe the types of information the app wants to send. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014 · MUST · high** — Give people a clear way to opt in to or out of marketing notifications. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015 · MUST · high** — Use noncommunication notifications for notification tasks that aren't direct communications. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 ### modality
 
 - **HIG-PATTERNS-MODALITY-0001 · SHOULD · low** — Apply the documented Modality guidance to aim to keep modal tasks simple, short, and streamlined. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))

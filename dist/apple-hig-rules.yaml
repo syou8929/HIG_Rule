@@ -133687,143 +133687,15 @@
   apple_native_rule: Revoke associated Sign in with Apple tokens when deleting the linked account.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001
-  title: Use the Time Sensitive interruption level only for notifications that are relevant in the moment
+  title: Restrict Time Sensitive notifications to current events
   category: patterns
   topic: managing-notifications
   subtopic: best-practices
   statement:
-    en: Choose or apply the Time Sensitive interruption level only for notifications that are relevant in the moment in the documented context.
-    ja: 該当する状況ではthe Time Sensitive interruption level only for notifications that are relevant in the momentを採用する。
-  normative_level: SHOULD
-  confidence: low
-  review_required: true
-  polarity: recommend
-  severity: warning
-  scope:
-    portability: apple-platform
-    platforms:
-      - ios
-      - ipados
-      - macos
-      - tvos
-      - visionos
-      - watchos
-    devices:
-      - iphone
-      - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
-    components: []
-    modalities: []
-  conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
-  rationale:
-    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
-    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
-  checks:
-    automated: []
-    manual:
-      - Does the design satisfy “Choose or apply the Time Sensitive interruption level only for notifications that are relevant in the moment in the documented context.” in the documented Managing notifications context?
-  testability: manual
-  anti_patterns:
-    - Ignoring this guidance in a context where the source section applies.
-  positive_examples:
-    - A design review records how the implementation satisfies this rule and any source-scoped exception.
-  source:
-    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
-    page_title: Managing notifications
-    section_path:
-      - Managing notifications
-      - Best practices
-    retrieved_at: 2026-07-21T11:15:04.775Z
-    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
-    source_sentence_hash: 0a967253f214170299e9d568a432b206cf560d19492a7bdc95fbc57bfd8d0570
-    evidence_paraphrase: Choose or apply the Time Sensitive interruption level only for notifications that are relevant in the moment in the documented context.
-  tags:
-    - patterns
-    - managing-notifications
-    - best-practices
-  priority_rank: 6
-  status: active
-  apple_native_rule: Choose or apply the Time Sensitive interruption level only for notifications that are relevant in the moment in the documented context.
-  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002
-  title: Never use the Time Sensitive interruption level to send a marketing notification
-  category: patterns
-  topic: managing-notifications
-  subtopic: sending-marketing-notifications
-  statement:
-    en: Exclude use the Time Sensitive interruption level to send a marketing notification from the applicable experience.
-    ja: 該当する体験ではuse the Time Sensitive interruption level to send a marketing notificationを避ける。
-  normative_level: MUST_NOT
-  confidence: medium
-  review_required: false
-  polarity: prohibit
-  severity: error
-  scope:
-    portability: apple-platform
-    platforms:
-      - ios
-      - ipados
-      - macos
-      - tvos
-      - visionos
-      - watchos
-    devices:
-      - iphone
-      - ipad
-      - mac
-      - apple-tv
-      - apple-vision-pro
-      - apple-watch
-    components: []
-    modalities: []
-  conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
-  exceptions: []
-  rationale:
-    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
-    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
-  checks:
-    automated: []
-    manual:
-      - Does the design satisfy “Exclude use the Time Sensitive interruption level to send a marketing notification from the applicable experience.” in the documented Managing notifications context?
-  testability: manual
-  anti_patterns:
-    - Ignoring this guidance in a context where the source section applies.
-  positive_examples:
-    - A design review records how the implementation satisfies this rule and any source-scoped exception.
-  source:
-    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
-    page_title: Managing notifications
-    section_path:
-      - Managing notifications
-      - Sending marketing notifications
-    retrieved_at: 2026-07-21T11:15:04.775Z
-    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
-    source_sentence_hash: 3ae1e688bfcb5878b76b03537e64c08861cfc12632b9c30a77aeb4f0fc22b6aa
-    evidence_paraphrase: Exclude use the Time Sensitive interruption level to send a marketing notification from the applicable experience.
-  tags:
-    - patterns
-    - managing-notifications
-    - sending-marketing-notifications
-  priority_rank: 6
-  status: active
-  apple_native_rule: Exclude use the Time Sensitive interruption level to send a marketing notification from the applicable experience.
-  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
-- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003
-  title: Make sure people can manage their notification settings within your app
-  category: patterns
-  topic: managing-notifications
-  subtopic: sending-marketing-notifications
-  statement:
-    en: Verify that people can manage their notification settings within your app.
-    ja: people can manage their notification settings within your appを満たしていることを確認する。
+    en: Use the Time Sensitive interruption level only for an event happening now or within an hour.
+    ja: Time Sensitive interruption levelは現在発生中または1時間以内に発生するeventだけに使う。
   normative_level: MUST
-  confidence: medium
+  confidence: high
   review_required: false
   polarity: require
   severity: error
@@ -133846,7 +133718,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - The notification is relevant in the moment and requires immediate attention.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
@@ -133854,7 +133726,135 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Verify that people can manage their notification settings within your app.” in the documented Managing notifications context?
+      - Does the design satisfy “Use the Time Sensitive interruption level only for an event happening now or within an hour.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 0a967253f214170299e9d568a432b206cf560d19492a7bdc95fbc57bfd8d0570
+    evidence_paraphrase: Use the Time Sensitive interruption level only for an event happening now or within an hour.
+  tags:
+    - patterns
+    - managing-notifications
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use the Time Sensitive interruption level only for an event happening now or within an hour.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002
+  title: Never mark marketing notifications Time Sensitive
+  category: patterns
+  topic: managing-notifications
+  subtopic: sending-marketing-notifications
+  statement:
+    en: Never use the Time Sensitive interruption level for a marketing notification.
+    ja: marketing notificationにTime Sensitive interruption levelを決して使わない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Marketing permission does not allow a notification to break through Focus or scheduled delivery.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Never use the Time Sensitive interruption level for a marketing notification.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Sending marketing notifications
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 3ae1e688bfcb5878b76b03537e64c08861cfc12632b9c30a77aeb4f0fc22b6aa
+    evidence_paraphrase: Never use the Time Sensitive interruption level for a marketing notification.
+  tags:
+    - patterns
+    - managing-notifications
+    - sending-marketing-notifications
+  priority_rank: 6
+  status: active
+  apple_native_rule: Never use the Time Sensitive interruption level for a marketing notification.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003
+  title: Provide in-app notification settings
+  category: patterns
+  topic: managing-notifications
+  subtopic: sending-marketing-notifications
+  statement:
+    en: Provide an in-app settings screen where people can change their notification choices.
+    ja: notificationの選択を変更できるin-app settings screenを提供する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The app requests permission for informational or marketing notifications.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Provide an in-app settings screen where people can change their notification choices.” in the documented Managing notifications context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -133869,14 +133869,783 @@
     retrieved_at: 2026-07-21T11:15:04.775Z
     source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
     source_sentence_hash: e54c40976769ba7885d14170e87454940502cd40406bfa3fbd6486e291f6381a
-    evidence_paraphrase: Verify that people can manage their notification settings within your app.
+    evidence_paraphrase: Provide an in-app settings screen where people can change their notification choices.
   tags:
     - patterns
     - managing-notifications
     - sending-marketing-notifications
   priority_rank: 6
   status: active
-  apple_native_rule: Verify that people can manage their notification settings within your app.
+  apple_native_rule: Provide an in-app settings screen where people can change their notification choices.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0004
+  title: Get permission before sending notifications
+  category: patterns
+  topic: managing-notifications
+  subtopic: managing-notifications
+  statement:
+    en: Get permission before sending any notification.
+    ja: notificationを送信する前にpermissionを取得する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The system lets people later change or silence this permission in settings.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Get permission before sending any notification.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 161c45e32709f3882efe702a1aa3e720db68e6a15381f95cfe1c3722e968801f
+    evidence_paraphrase: Get permission before sending any notification.
+  tags:
+    - patterns
+    - managing-notifications
+  priority_rank: 6
+  status: active
+  apple_native_rule: Get permission before sending any notification.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0005
+  title: Identify the notification types the app sends
+  category: patterns
+  topic: managing-notifications
+  subtopic: integrating-with-focus
+  statement:
+    en: Identify the types of notifications the app or game can send before configuring Focus behavior.
+    ja: Focus behaviorを設定する前にappまたはgameが送信できるnotification typeを特定する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Classify direct communications separately from other notification tasks.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Identify the types of notifications the app or game can send before configuring Focus behavior.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Integrating with Focus
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 74571b3bda092c9355f8ffa8d9354f6c365cecdaad8d48dc0b24f84b51ee06b0
+    evidence_paraphrase: Identify the types of notifications the app or game can send before configuring Focus behavior.
+  tags:
+    - patterns
+    - managing-notifications
+    - integrating-with-focus
+  priority_rank: 6
+  status: active
+  apple_native_rule: Identify the types of notifications the app or game can send before configuring Focus behavior.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0006
+  title: Use communication notifications for direct communications
+  category: patterns
+  topic: managing-notifications
+  subtopic: integrating-with-focus
+  statement:
+    en: When supporting direct communications such as calls or messages, use communication notifications.
+    ja: callやmessageなどdirect communicationに対応する場合はcommunication notificationを使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The notification represents a direct communication.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When supporting direct communications such as calls or messages, use communication notifications.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Integrating with Focus
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: c353078c7275f0ccc1194ad2cdef1abee30e810240d4021926193407fa777630
+    evidence_paraphrase: When supporting direct communications such as calls or messages, use communication notifications.
+  tags:
+    - patterns
+    - managing-notifications
+    - integrating-with-focus
+  priority_rank: 6
+  status: active
+  apple_native_rule: When supporting direct communications such as calls or messages, use communication notifications.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0007
+  title: Adopt SiriKit intents for communication notifications
+  category: patterns
+  topic: managing-notifications
+  subtopic: integrating-with-focus
+  statement:
+    en: Adopt SiriKit intents when supporting communication notifications.
+    ja: communication notificationに対応する場合はSiriKit intentを採用する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities:
+      - voice
+  conditions:
+    - SiriKit intents let people customize communication-notification behavior with Siri.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Adopt SiriKit intents when supporting communication notifications.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Integrating with Focus
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 90454e20373be3af49d3443b2d4f2d7fa661725074a08d9adc185fb13dfd173e
+    evidence_paraphrase: Adopt SiriKit intents when supporting communication notifications.
+  tags:
+    - patterns
+    - managing-notifications
+    - integrating-with-focus
+    - voice
+  priority_rank: 6
+  status: active
+  apple_native_rule: Adopt SiriKit intents when supporting communication notifications.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0008
+  title: Specify an interruption level for every noncommunication notification
+  category: patterns
+  topic: managing-notifications
+  subtopic: integrating-with-focus
+  statement:
+    en: Specify a system-defined interruption level for every noncommunication notification.
+    ja: すべてのnoncommunication notificationにsystem-defined interruption levelを指定する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The system uses the level to determine when to deliver the alert.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Specify a system-defined interruption level for every noncommunication notification.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Integrating with Focus
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: b2a34acb9588c3ee35e3d5374759210f421a2ed5ce58ffcab48f57d0232d48ca
+    evidence_paraphrase: Specify a system-defined interruption level for every noncommunication notification.
+  tags:
+    - patterns
+    - managing-notifications
+    - integrating-with-focus
+  priority_rank: 6
+  status: active
+  apple_native_rule: Specify a system-defined interruption level for every noncommunication notification.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0009
+  title: Get an entitlement for Critical notifications
+  category: patterns
+  topic: managing-notifications
+  subtopic: integrating-with-focus
+  statement:
+    en: Get the required entitlement before sending a Critical notification.
+    ja: Critical notificationを送信する前にrequired entitlementを取得する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Critical notifications can override Ring/Silent, scheduled delivery, and Focus.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Get the required entitlement before sending a Critical notification.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Integrating with Focus
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: d41120ebe905c28b99e34cc50ebf6e90266cc9fc60e1980b09f6d717c4d2a85f
+    evidence_paraphrase: Get the required entitlement before sending a Critical notification.
+  tags:
+    - patterns
+    - managing-notifications
+    - integrating-with-focus
+  priority_rank: 6
+  status: active
+  apple_native_rule: Get the required entitlement before sending a Critical notification.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0010
+  title: Represent each notification's urgency accurately
+  category: patterns
+  topic: managing-notifications
+  subtopic: best-practices
+  statement:
+    en: Assign an interruption level that accurately represents each notification's urgency.
+    ja: 各notificationのurgencyを正確に表すinterruption levelを割り当てる。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Do not use a high urgency level for low-priority information.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Assign an interruption level that accurately represents each notification's urgency.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Best practices
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 328ad4b334d4d9e03b852b9b72568c56a7bb4568f04723eb980578d58e1173b3
+    evidence_paraphrase: Assign an interruption level that accurately represents each notification's urgency.
+  tags:
+    - patterns
+    - managing-notifications
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: Assign an interruption level that accurately represents each notification's urgency.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0011
+  title: Don't send marketing notifications without explicit agreement
+  category: patterns
+  topic: managing-notifications
+  subtopic: sending-marketing-notifications
+  statement:
+    en: Don't send marketing or promotional notifications unless people explicitly agree to receive them.
+    ja: 明示的な同意がない限りmarketingまたはpromotional notificationを送信しない。
+  normative_level: MUST_NOT
+  confidence: high
+  review_required: false
+  polarity: prohibit
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The person has not explicitly opted in to the marketing information.
+  exceptions:
+    - Sending is allowed after explicit agreement, subject to the separate Time Sensitive prohibition.
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Don't send marketing or promotional notifications unless people explicitly agree to receive them.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Sending marketing notifications
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: ed925c82c1bf6d7e884d40ca7aa90d36df7b28906cd7b94173b5caa03813be6b
+    evidence_paraphrase: Don't send marketing or promotional notifications unless people explicitly agree to receive them.
+  tags:
+    - patterns
+    - managing-notifications
+    - sending-marketing-notifications
+  priority_rank: 6
+  status: active
+  apple_native_rule: Don't send marketing or promotional notifications unless people explicitly agree to receive them.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0012
+  title: Get explicit permission for marketing notifications
+  category: patterns
+  topic: managing-notifications
+  subtopic: sending-marketing-notifications
+  statement:
+    en: Get people's explicit permission before sending promotional or marketing notifications.
+    ja: promotionalまたはmarketing notificationを送信する前に明示的なpermissionを取得する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The app wants to send promotional or marketing information.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Get people's explicit permission before sending promotional or marketing notifications.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Sending marketing notifications
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 2987e44d5edc884de0406c5bea105027fd6052b6a5e4109565cf1a0d918d3a21
+    evidence_paraphrase: Get people's explicit permission before sending promotional or marketing notifications.
+  tags:
+    - patterns
+    - managing-notifications
+    - sending-marketing-notifications
+  priority_rank: 6
+  status: active
+  apple_native_rule: Get people's explicit permission before sending promotional or marketing notifications.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013
+  title: Describe marketing-notification content before consent
+  category: patterns
+  topic: managing-notifications
+  subtopic: sending-marketing-notifications
+  statement:
+    en: Before asking for marketing-notification consent, describe the types of information the app wants to send.
+    ja: marketing-notification consentを求める前にappが送信するinformation typeを説明する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Use an alert, modal view, or other clear permission interface.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Before asking for marketing-notification consent, describe the types of information the app wants to send.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Sending marketing notifications
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 311afa682d34d2d37cb4f84c767beb00a7255685871475a73b5dbd311942d49a
+    evidence_paraphrase: Before asking for marketing-notification consent, describe the types of information the app wants to send.
+  tags:
+    - patterns
+    - managing-notifications
+    - sending-marketing-notifications
+  priority_rank: 6
+  status: active
+  apple_native_rule: Before asking for marketing-notification consent, describe the types of information the app wants to send.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014
+  title: Provide clear marketing opt-in and opt-out choices
+  category: patterns
+  topic: managing-notifications
+  subtopic: sending-marketing-notifications
+  statement:
+    en: Give people a clear way to opt in to or out of marketing notifications.
+    ja: marketing notificationへopt inまたはopt outする明確な方法を提供する。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - Present the choice in the marketing-permission interface.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Give people a clear way to opt in to or out of marketing notifications.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Sending marketing notifications
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: 311afa682d34d2d37cb4f84c767beb00a7255685871475a73b5dbd311942d49a
+    evidence_paraphrase: Give people a clear way to opt in to or out of marketing notifications.
+  tags:
+    - patterns
+    - managing-notifications
+    - sending-marketing-notifications
+  priority_rank: 6
+  status: active
+  apple_native_rule: Give people a clear way to opt in to or out of marketing notifications.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015
+  title: Use noncommunication notifications for other tasks
+  category: patterns
+  topic: managing-notifications
+  subtopic: integrating-with-focus
+  statement:
+    en: Use noncommunication notifications for notification tasks that aren't direct communications.
+    ja: direct communication以外のnotification taskにはnoncommunication notificationを使う。
+  normative_level: MUST
+  confidence: high
+  review_required: false
+  polarity: require
+  severity: error
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - tvos
+      - visionos
+      - watchos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-tv
+      - apple-vision-pro
+      - apple-watch
+    components: []
+    modalities: []
+  conditions:
+    - The notification doesn't represent a direct communication such as a call or message.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Managing notifications experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるManaging notificationsの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “Use noncommunication notifications for notification tasks that aren't direct communications.” in the documented Managing notifications context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/managing-notifications
+    page_title: Managing notifications
+    section_path:
+      - Managing notifications
+      - Integrating with Focus
+    retrieved_at: 2026-07-21T11:15:04.775Z
+    source_hash: 0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b
+    source_sentence_hash: c353078c7275f0ccc1194ad2cdef1abee30e810240d4021926193407fa777630
+    evidence_paraphrase: Use noncommunication notifications for notification tasks that aren't direct communications.
+  tags:
+    - patterns
+    - managing-notifications
+    - integrating-with-focus
+  priority_rank: 6
+  status: active
+  apple_native_rule: Use noncommunication notifications for notification tasks that aren't direct communications.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-MODALITY-0001
   title: Aim to keep modal tasks simple, short, and streamlined

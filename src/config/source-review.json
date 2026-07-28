@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:02:18Z",
+  "reviewed_at": "2026-07-28T17:12:27Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5480,6 +5480,37 @@
         "HIG-PATTERNS-LIVE-VIEWING-APPS-0031"
       ],
       "review_note": "Expanded Live-viewing apps from 19 to 31 active atomic rules, recovered overview, action-priority, footer, audio-stop, EPG, recording-choice, and storage-management context, and retained eleven explicit Make sure, need-to, Be sure, always-needs, and essential outcomes as MUST."
+    },
+    {
+      "id": "priority-6-managing-notifications-context-2026-07-29",
+      "reviewed_at": "2026-07-28T17:12:27Z",
+      "review_method": "Rendered Apple HIG Managing notifications overview, Focus, best-practice, marketing, platform, watchOS, and resource context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/managing-notifications",
+          "source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0004",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0005",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0006",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0007",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0008",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0009",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0010",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0011",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0012",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014",
+        "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015"
+      ],
+      "review_note": "Expanded Managing notifications from 3 to 15 active atomic rules, recovered general permission, Focus classification, SiriKit, Critical entitlement, urgency, marketing-consent, disclosure, and opt-choice context, retained twelve privacy and platform-contract outcomes as MUST, and retained two explicit marketing prohibitions as MUST_NOT."
     }
   ],
   "rules": {
@@ -34111,6 +34142,127 @@
       "normative_level": "SHOULD",
       "conditions": ["Automatic management can overwrite the oldest or already viewed content."],
       "review_note": "Recovered the source's ideal storage-management outcome at SHOULD."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0001": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "0a967253f214170299e9d568a432b206cf560d19492a7bdc95fbc57bfd8d0570", "section_path": ["Managing notifications", "Best practices"]},
+      "title": "Restrict Time Sensitive notifications to current events",
+      "statement": {"en": "Use the Time Sensitive interruption level only for an event happening now or within an hour.", "ja": "Time Sensitive interruption levelは現在発生中または1時間以内に発生するeventだけに使う。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The notification is relevant in the moment and requires immediate attention."],
+      "review_note": "Raised the only restriction and supporting Make sure time window to a bounded platform-contract MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0002": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "3ae1e688bfcb5878b76b03537e64c08861cfc12632b9c30a77aeb4f0fc22b6aa", "section_path": ["Managing notifications", "Sending marketing notifications"]},
+      "title": "Never mark marketing notifications Time Sensitive",
+      "statement": {"en": "Never use the Time Sensitive interruption level for a marketing notification.", "ja": "marketing notificationにTime Sensitive interruption levelを決して使わない。"},
+      "normative_level": "MUST_NOT", "polarity": "prohibit", "severity": "error",
+      "conditions": ["Marketing permission does not allow a notification to break through Focus or scheduled delivery."],
+      "review_note": "Retained the explicit Never prohibition and clarified that consent doesn't create an exception."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0003": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "e54c40976769ba7885d14170e87454940502cd40406bfa3fbd6486e291f6381a", "section_path": ["Managing notifications", "Sending marketing notifications"]},
+      "title": "Provide in-app notification settings",
+      "statement": {"en": "Provide an in-app settings screen where people can change their notification choices.", "ja": "notificationの選択を変更できるin-app settings screenを提供する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The app requests permission for informational or marketing notifications."],
+      "review_note": "Retained MUST from the Make sure lead and the supporting must-also-provide clause."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0004": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "161c45e32709f3882efe702a1aa3e720db68e6a15381f95cfe1c3722e968801f", "section_path": ["Managing notifications"]},
+      "title": "Get permission before sending notifications",
+      "statement": {"en": "Get permission before sending any notification.", "ja": "notificationを送信する前にpermissionを取得する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The system lets people later change or silence this permission in settings."],
+      "review_note": "Recovered the general notification permission requirement from the explicit You need to statement."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0005": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "74571b3bda092c9355f8ffa8d9354f6c365cecdaad8d48dc0b24f84b51ee06b0", "section_path": ["Managing notifications", "Integrating with Focus"]},
+      "title": "Identify the notification types the app sends",
+      "statement": {"en": "Identify the types of notifications the app or game can send before configuring Focus behavior.", "ja": "Focus behaviorを設定する前にappまたはgameが送信できるnotification typeを特定する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Classify direct communications separately from other notification tasks."],
+      "review_note": "Recovered the sequencing step but kept its plain first-identify wording at SHOULD."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0006": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "c353078c7275f0ccc1194ad2cdef1abee30e810240d4021926193407fa777630", "section_path": ["Managing notifications", "Integrating with Focus"]},
+      "title": "Use communication notifications for direct communications",
+      "statement": {"en": "When supporting direct communications such as calls or messages, use communication notifications.", "ja": "callやmessageなどdirect communicationに対応する場合はcommunication notificationを使う。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The notification represents a direct communication."],
+      "review_note": "Classified the conditional system notification-type mapping as a platform contract."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0007": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "90454e20373be3af49d3443b2d4f2d7fa661725074a08d9adc185fb13dfd173e", "section_path": ["Managing notifications", "Integrating with Focus"]},
+      "title": "Adopt SiriKit intents for communication notifications",
+      "statement": {"en": "Adopt SiriKit intents when supporting communication notifications.", "ja": "communication notificationに対応する場合はSiriKit intentを採用する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["SiriKit intents let people customize communication-notification behavior with Siri."],
+      "review_note": "Classified the source's implementation path for communication notifications as a conditional platform contract."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0008": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "b2a34acb9588c3ee35e3d5374759210f421a2ed5ce58ffcab48f57d0232d48ca", "section_path": ["Managing notifications", "Integrating with Focus"]},
+      "title": "Specify an interruption level for every noncommunication notification",
+      "statement": {"en": "Specify a system-defined interruption level for every noncommunication notification.", "ja": "すべてのnoncommunication notificationにsystem-defined interruption levelを指定する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The system uses the level to determine when to deliver the alert."],
+      "review_note": "Retained MUST from the explicit You need to specification requirement."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0009": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "d41120ebe905c28b99e34cc50ebf6e90266cc9fc60e1980b09f6d717c4d2a85f", "section_path": ["Managing notifications", "Integrating with Focus"]},
+      "title": "Get an entitlement for Critical notifications",
+      "statement": {"en": "Get the required entitlement before sending a Critical notification.", "ja": "Critical notificationを送信する前にrequired entitlementを取得する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Critical notifications can override Ring/Silent, scheduled delivery, and Focus."],
+      "review_note": "Retained MUST from the explicit you must get an entitlement requirement."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0010": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "328ad4b334d4d9e03b852b9b72568c56a7bb4568f04723eb980578d58e1173b3", "section_path": ["Managing notifications", "Best practices"]},
+      "title": "Represent each notification's urgency accurately",
+      "statement": {"en": "Assign an interruption level that accurately represents each notification's urgency.", "ja": "各notificationのurgencyを正確に表すinterruption levelを割り当てる。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Do not use a high urgency level for low-priority information."],
+      "review_note": "Raised the source's explicitly essential urgency-accuracy outcome to MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0011": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "ed925c82c1bf6d7e884d40ca7aa90d36df7b28906cd7b94173b5caa03813be6b", "section_path": ["Managing notifications", "Sending marketing notifications"]},
+      "title": "Don't send marketing notifications without explicit agreement",
+      "statement": {"en": "Don't send marketing or promotional notifications unless people explicitly agree to receive them.", "ja": "明示的な同意がない限りmarketingまたはpromotional notificationを送信しない。"},
+      "normative_level": "MUST_NOT", "polarity": "prohibit", "severity": "error",
+      "conditions": ["The person has not explicitly opted in to the marketing information."],
+      "exceptions": ["Sending is allowed after explicit agreement, subject to the separate Time Sensitive prohibition."],
+      "review_note": "Raised the explicit don't-unless consent boundary to a privacy MUST_NOT."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0012": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "2987e44d5edc884de0406c5bea105027fd6052b6a5e4109565cf1a0d918d3a21", "section_path": ["Managing notifications", "Sending marketing notifications"]},
+      "title": "Get explicit permission for marketing notifications",
+      "statement": {"en": "Get people's explicit permission before sending promotional or marketing notifications.", "ja": "promotionalまたはmarketing notificationを送信する前に明示的なpermissionを取得する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The app wants to send promotional or marketing information."],
+      "review_note": "Raised the supporting must-receive-explicit-permission clause to a privacy MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "311afa682d34d2d37cb4f84c767beb00a7255685871475a73b5dbd311942d49a", "section_path": ["Managing notifications", "Sending marketing notifications"]},
+      "title": "Describe marketing-notification content before consent",
+      "statement": {"en": "Before asking for marketing-notification consent, describe the types of information the app wants to send.", "ja": "marketing-notification consentを求める前にappが送信するinformation typeを説明する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Use an alert, modal view, or other clear permission interface."],
+      "review_note": "Classified the pre-consent disclosure as a privacy and explicit-intent MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "311afa682d34d2d37cb4f84c767beb00a7255685871475a73b5dbd311942d49a", "section_path": ["Managing notifications", "Sending marketing notifications"]},
+      "title": "Provide clear marketing opt-in and opt-out choices",
+      "statement": {"en": "Give people a clear way to opt in to or out of marketing notifications.", "ja": "marketing notificationへopt inまたはopt outする明確な方法を提供する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Present the choice in the marketing-permission interface."],
+      "review_note": "Classified the clear bidirectional consent choice as a user-intent MUST."
+    },
+    "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015": {
+      "source": {"source_hash": "0e83fe65a757dd67f409175e78e624b0e0df5f8e670afb8caa8aec2384d9f24b", "source_sentence_hash": "c353078c7275f0ccc1194ad2cdef1abee30e810240d4021926193407fa777630", "section_path": ["Managing notifications", "Integrating with Focus"]},
+      "title": "Use noncommunication notifications for other tasks",
+      "statement": {"en": "Use noncommunication notifications for notification tasks that aren't direct communications.", "ja": "direct communication以外のnotification taskにはnoncommunication notificationを使う。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The notification doesn't represent a direct communication such as a call or message."],
+      "review_note": "Classified the complementary all-other-tasks notification mapping as a platform contract."
     }
   }
 }
