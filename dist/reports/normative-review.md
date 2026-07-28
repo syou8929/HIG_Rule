@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 624
-- Retained MUST: 541
-- Retained MUST_NOT: 83
-- Normative level changes: 256
-- Mixed-strength candidates split: 2
+- Reviewed rules: 643
+- Retained MUST: 559
+- Retained MUST_NOT: 84
+- Normative level changes: 267
+- Mixed-strength candidates split: 4
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:30:24Z
+- Reviewed at: 2026-07-28T17:41:07Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -391,6 +391,17 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-GAME-CENTER-0045 — Recovered the explicit Make sure visibility requirement and narrowed it to the four cropping contexts named by the source. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-GAME-CENTER-0047 — Recovered the explicit Always deep-link requirement separately from optional onboarding flow details. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0008 — Raised the pre-use permission action to a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0020 — Classified the personal-information disclosure outcome as a privacy and informed-consent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0027 — Classified the explicit rejection and reversal controls as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0035 — Classified the server-processing privacy safeguard as a privacy MUST without claiming all processing must be local. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0036 — Retained the source sentence's making-sure disclosure outcome as a privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0037 — Classified post-permission data minimization as a privacy MUST and split the Always opt-out clause separately. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0038 — Classified the source's explicit-permission condition as a privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0039 — Classified informed personal-data choice as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0040 — Classified consent-request clarity as an informed-permission MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0041 — Classified model-training use disclosure as a privacy and informed-consent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0050 — Classified adherence to applicable model and regulatory policy as a legal and platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-ICLOUD-0005 — Retained MUST from the explicit Make sure directive and preserved the no-alert exception. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - HIG-TECHNOLOGIES-ICLOUD-0014 — Recovered the source's explicit need-to balance as a bounded MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
 - HIG-TECHNOLOGIES-ICLOUD-0020 — Recovered the conditional Make sure requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/icloud))
@@ -490,6 +501,8 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-WALLET-0061 — Raised the premature identity-verification prohibition to MUST_NOT under privacy and explicit user intent. ([source](https://developer.apple.com/design/human-interface-guidelines/wallet))
 - HIG-COMPONENTS-LIVE-ACTIVITIES-0030 — Split from the source lead's consider clause so optional guidance is not raised to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/live-activities))
 - HIG-FOUNDATIONS-DARK-MODE-0020 — Split the explicit make-sure legibility outcome from the testing action so the accessibility requirement remains atomic. ([source](https://developer.apple.com/design/human-interface-guidelines/dark-mode))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0056 — Split the explicit Always opt-out requirement from post-permission data minimization. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0057 — Split the privacy and explicit-user-intent choice from the same sentence's separate license requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 
 ## Reviewed rules
 
@@ -936,6 +949,25 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-TECHNOLOGIES-GAME-CENTER-0047 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always deep-link requirement separately from optional onboarding flow details. ([source](https://developer.apple.com/design/human-interface-guidelines/game-center))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0005 · MUST · retained_with_atomicity_or_scope_correction — Recorded the source distinction between essential AI experiences and complementary features with possible non-AI fallbacks. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0008 · MUST · retained_with_atomicity_or_scope_correction — Raised the pre-use permission action to a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0020 · MUST · retained_with_atomicity_or_scope_correction — Classified the personal-information disclosure outcome as a privacy and informed-consent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0026 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0027 · MUST · retained_with_atomicity_or_scope_correction — Classified the explicit rejection and reversal controls as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0032 · MUST_NOT · retained — Retained MUST_NOT after confirming an explicit, source-scoped prohibition. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0033 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0034 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0035 · MUST · retained_with_atomicity_or_scope_correction — Classified the server-processing privacy safeguard as a privacy MUST without claiming all processing must be local. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0036 · MUST · retained_with_atomicity_or_scope_correction — Retained the source sentence's making-sure disclosure outcome as a privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0037 · MUST · retained_with_atomicity_or_scope_correction — Classified post-permission data minimization as a privacy MUST and split the Always opt-out clause separately. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0038 · MUST · retained_with_atomicity_or_scope_correction — Classified the source's explicit-permission condition as a privacy MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0039 · MUST · retained_with_atomicity_or_scope_correction — Classified informed personal-data choice as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0040 · MUST · retained_with_atomicity_or_scope_correction — Classified consent-request clarity as an informed-permission MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0041 · MUST · retained_with_atomicity_or_scope_correction — Classified model-training use disclosure as a privacy and informed-consent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0044 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0050 · MUST · retained_with_atomicity_or_scope_correction — Classified adherence to applicable model and regulatory policy as a legal and platform-contract MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0054 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0056 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
+- HIG-TECHNOLOGIES-GENERATIVE-AI-0057 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/generative-ai))
 - HIG-TECHNOLOGIES-HEALTHKIT-0001 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
 - HIG-TECHNOLOGIES-HEALTHKIT-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))
 - HIG-TECHNOLOGIES-HEALTHKIT-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/healthkit))

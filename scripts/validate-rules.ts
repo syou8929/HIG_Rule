@@ -25,6 +25,7 @@ const validateInventory = ajv.compile(inventorySchema);
 const errors: string[] = [];
 const warnings: string[] = [];
 const reviewedOverrideIds = new Set(Object.keys(normativeReview.overrides));
+const reviewedAdditionalRules = new Set(normativeReview.additional_rules.map((rule) => `${rule.normative_level}\n${rule.title}`));
 type SourceReviewRule = {
   source: { source_hash: string; source_sentence_hash: string; section_path: string[] };
   confidence?: "low" | "medium" | "high";
@@ -77,8 +78,9 @@ for (const rule of rules) {
   ids.add(rule.id);
   if (!rule.source.url.startsWith("https://developer.apple.com/design/human-interface-guidelines")) errors.push(`${rule.id}: non-HIG primary source`);
   if (!rule.source.section_path.length) errors.push(`${rule.id}: missing section path`);
-  if (rule.normative_level === "MUST" && !/^(always|ensure|make sure|must|required)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id)) warnings.push(`${rule.id}: MUST requires strength review`);
-  if (rule.normative_level === "MUST_NOT" && !/^(never|must not)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id)) warnings.push(`${rule.id}: MUST_NOT requires strength review`);
+  const hasReviewedAdditionalStrength = reviewedAdditionalRules.has(`${rule.normative_level}\n${rule.title}`);
+  if (rule.normative_level === "MUST" && !/^(always|ensure|make sure|must|required)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id) && !hasReviewedAdditionalStrength) warnings.push(`${rule.id}: MUST requires strength review`);
+  if (rule.normative_level === "MUST_NOT" && !/^(never|must not)/i.test(rule.title) && !reviewedOverrideIds.has(rule.id) && !hasReviewedAdditionalStrength) warnings.push(`${rule.id}: MUST_NOT requires strength review`);
   if (rule.scope.portability === "universal" && /\b(ios|ipados|macos|tvos|visionos|watchos|swiftui|uikit|appkit|sf symbols)\b/i.test(`${rule.title} ${rule.statement.en}`)) {
     errors.push(`${rule.id}: Apple-specific language is classified as universal`);
   }
