@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3595
+- Active atomic rules: 3599
 - Pages without rules: 16
-- Low-confidence rules: 62
-- Rules requiring human review: 62
+- Low-confidence rules: 55
+- Rules requiring human review: 55
 - Reference notes: 914
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 504
 - getting-started: 100
 - inputs: 245
-- patterns: 548
+- patterns: 552
 - technologies: 1084
 
 ## Normative levels
 
 - AVOID: 484
 - MAY: 409
-- MUST: 540
+- MUST: 541
 - MUST_NOT: 83
-- SHOULD: 2079
+- SHOULD: 2082
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2608
-- ipados: 2567
-- macos: 2119
-- tvos: 1650
-- visionos: 2081
-- watchos: 1775
+- ios: 2612
+- ipados: 2571
+- macos: 2123
+- tvos: 1649
+- visionos: 2080
+- watchos: 1774
 
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3480
+- manual: 3484
 
 ## Blocked pages
 
@@ -92,13 +92,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-SEARCHING-0001
-- HIG-PATTERNS-SEARCHING-0002
-- HIG-PATTERNS-SEARCHING-0003
-- HIG-PATTERNS-SEARCHING-0004
-- HIG-PATTERNS-SEARCHING-0005
-- HIG-PATTERNS-SEARCHING-0006
-- HIG-PATTERNS-SEARCHING-0007
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0001
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0002
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0004
@@ -157,13 +150,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-SEARCHING-0001
-- HIG-PATTERNS-SEARCHING-0002
-- HIG-PATTERNS-SEARCHING-0003
-- HIG-PATTERNS-SEARCHING-0004
-- HIG-PATTERNS-SEARCHING-0005
-- HIG-PATTERNS-SEARCHING-0006
-- HIG-PATTERNS-SEARCHING-0007
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0001
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0002
 - HIG-TECHNOLOGIES-GENERATIVE-AI-0004

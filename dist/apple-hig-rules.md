@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T17:27:25.751Z. 3595 active rules; 8 deprecated rules.
+Generated 2026-07-28T17:35:01.440Z. 3599 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -1201,13 +1201,17 @@ Generated 2026-07-28T17:27:25.751Z. 3595 active rules; 8 deprecated rules.
 - **HIG-PATTERNS-RATINGS-AND-REVIEWS-0009 · MAY · high** — Consider requesting another rating only after people demonstrate additional engagement. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 ### searching
 
-- **HIG-PATTERNS-SEARCHING-0001 · SHOULD · low** — Apply the documented Searching guidance to aim to make your app’s content searchable through a single location. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
-- **HIG-PATTERNS-SEARCHING-0002 · SHOULD · low** — Make suggestions to make searching easier available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
-- **HIG-PATTERNS-SEARCHING-0003 · SHOULD · low** — Apply the documented Searching guidance to make your app’s content searchable in Spotlight. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
-- **HIG-PATTERNS-SEARCHING-0004 · SHOULD · low** — Choose or apply spotlight to offer advanced file-search capabilities within the context of your app in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
-- **HIG-PATTERNS-SEARCHING-0005 · SHOULD · low** — Favor using the system-provided open and save views when the documented conditions apply. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
-- **HIG-PATTERNS-SEARCHING-0006 · SHOULD · low** — Define metadata for custom file types you handle explicitly. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
-- **HIG-PATTERNS-SEARCHING-0007 · SHOULD · low** — Clearly display the current scope of a search. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0001 · SHOULD · high** — Aim to make the app's content searchable from one clearly identified location. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0002 · SHOULD · high** — Provide recent-search and predictive suggestions to help people search faster and type less. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0003 · SHOULD · high** — Make the app's content searchable in Spotlight by indexing it with descriptive metadata. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0004 · SHOULD · high** — Use Spotlight for advanced file-search capabilities within the app when appropriate. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0005 · SHOULD · high** — Prefer system-provided open and save views for systemwide file search. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0006 · SHOULD · high** — Define metadata for custom file types and supply a Spotlight File Importer plug-in. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0007 · SHOULD · high** — Clearly display the current search scope. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0008 · SHOULD · high** — If search is important, give it a primary position in the app or view. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0009 · SHOULD · high** — Before displaying search history, consider whether it could expose private information. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0010 · MUST · high** — When displaying search history, provide a way for people to clear it. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- **HIG-PATTERNS-SEARCHING-0011 · SHOULD · high** — If the app produces custom file types, implement a Quick Look generator for previews. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 ### settings
 
 - **HIG-PATTERNS-SETTINGS-0001 · SHOULD · high** — Provide defaults that give the best experience to the largest number of people. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))

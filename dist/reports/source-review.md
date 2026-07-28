@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3517
-- Reviewed batches: 204
+- Reviewed rules: 3528
+- Reviewed batches: 205
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:26:18Z
+- Reviewed at: 2026-07-28T17:30:24Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2423,6 +2423,17 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0007 · high — Recovered the source's positive placement alternative to the interruption warning. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0008 · high — Recovered the source's example interval and preserved Consider-level strength. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0009 · high — Separated the second Consider-governed option without promoting it to SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
+- HIG-PATTERNS-SEARCHING-0001 · high — Retained the source's Aim strength and recorded the local-search exception for distinct sections. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0002 · high — Concretized both suggestion states without merging the separate privacy requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0003 · high — Concretized the Spotlight indexing mechanism and narrowed it to supported search platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0004 · high — Preserved the contextual boundary and the source's advanced-search examples. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0005 · high — Recorded the built-in search capability that supports the system-view preference. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0006 · high — Combined the source paragraph's metadata definition and importer mechanism for custom files. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0007 · high — Concretized the supported scope-labeling mechanisms without promoting the plain imperative to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0008 · high — Activated the conditional placement guidance and preserved its importance threshold. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0009 · high — Retained consideration strength for the privacy review instead of raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0010 · high — Classified the conditional clearing action as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
+- HIG-PATTERNS-SEARCHING-0011 · high — Activated the conditional Quick Look guidance and narrowed it to supported search platforms. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 - HIG-PATTERNS-SETTINGS-0001 · high — Preserved the stable ID on the refreshed trace and retained the Aim-level recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0002 · high — Preserved the stable ID on the refreshed trace and made the settings target explicit. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-SETTINGS-0003 · high — Preserved the stable ID and separated the two documented keyboard conventions. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))

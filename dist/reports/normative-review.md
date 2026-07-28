@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 623
-- Retained MUST: 540
+- Reviewed rules: 624
+- Retained MUST: 541
 - Retained MUST_NOT: 83
-- Normative level changes: 255
+- Normative level changes: 256
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:19:58Z
+- Reviewed at: 2026-07-28T17:30:24Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -308,6 +308,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-PLAYING-VIDEO-0006 — Retained MUST after reconfirming the explicit ensure directive and the documented TV app transition behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0009 — Retained MUST after reconfirming the explicit make sure directive and the profile selection, switching, and fallback behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0030 — Recovered and retained MUST after confirming the explicit make sure directive and its one-or-two-step ceiling. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-SEARCHING-0010 — Classified the conditional clearing action as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 - HIG-PATTERNS-SETTINGS-0012 — Recovered the explicit Always-based active-button requirement and separated it from adjacent toolbar customizability and visibility guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-WORKOUTS-0010 — Recovered the embedded Be sure directive as an atomic MUST separate from control discoverability. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))
@@ -847,6 +848,7 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-PLAYING-VIDEO-0009 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after reconfirming the explicit make sure directive and the profile selection, switching, and fallback behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0030 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure directive and its one-or-two-step ceiling. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PRINTING-0002 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-SEARCHING-0010 · MUST · retained_with_atomicity_or_scope_correction — Classified the conditional clearing action as a privacy and explicit-user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 - HIG-PATTERNS-SETTINGS-0012 · MUST · retained_with_atomicity_or_scope_correction — Recovered the explicit Always-based active-button requirement and separated it from adjacent toolbar customizability and visibility guidance. ([source](https://developer.apple.com/design/human-interface-guidelines/settings))
 - HIG-PATTERNS-UNDO-AND-REDO-0011 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit You need directive and its one-or-two-word alert-title contract. ([source](https://developer.apple.com/design/human-interface-guidelines/undo-and-redo))
 - HIG-PATTERNS-WORKOUTS-0006 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/workouts))

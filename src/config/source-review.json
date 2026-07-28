@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:26:18Z",
+  "reviewed_at": "2026-07-28T17:30:24Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5566,6 +5566,33 @@
         "HIG-PATTERNS-PRINTING-0019"
       ],
       "review_note": "Completed Printing best-practice coverage, concretized discovery, availability, and relevant-option rules, recovered three unavailable-state rules for macOS, iOS/iPadOS, and custom controls, and introduced no unsupported MUST rules."
+    },
+    {
+      "id": "priority-6-searching-context-2026-07-29",
+      "reviewed_at": "2026-07-28T17:30:24Z",
+      "review_method": "Rendered Apple HIG Searching overview, best-practice, systemwide-search, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/searching",
+          "source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-SEARCHING-0001",
+        "HIG-PATTERNS-SEARCHING-0002",
+        "HIG-PATTERNS-SEARCHING-0003",
+        "HIG-PATTERNS-SEARCHING-0004",
+        "HIG-PATTERNS-SEARCHING-0005",
+        "HIG-PATTERNS-SEARCHING-0006",
+        "HIG-PATTERNS-SEARCHING-0007",
+        "HIG-PATTERNS-SEARCHING-0008",
+        "HIG-PATTERNS-SEARCHING-0009",
+        "HIG-PATTERNS-SEARCHING-0010",
+        "HIG-PATTERNS-SEARCHING-0011"
+      ],
+      "review_note": "Expanded Searching from 7 to 11 active atomic rules, recovered primary placement, privacy, clear-history, and Quick Look guidance, and retained one conditional privacy and explicit-user-intent outcome as MUST."
     }
   ],
   "rules": {
@@ -34505,6 +34532,101 @@
       "normative_level": "SHOULD",
       "conditions": ["The app implements a custom print button."],
       "review_note": "Recovered the custom-control unavailable state separately from system locations."
+    },
+    "HIG-PATTERNS-SEARCHING-0001": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "fed6b8ff6f8dd7aff4c19692d675d0dd86d5c620d06caf0fcd82d8790902f55a", "section_path": ["Searching", "Best practices"]},
+      "title": "Use one primary search location",
+      "statement": {"en": "Aim to make the app's content searchable from one clearly identified location.", "ja": "appのcontentを明確に識別できる1か所から検索できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Distinct sections may also offer local search when it helps people focus on section-specific content."],
+      "review_note": "Retained the source's Aim strength and recorded the local-search exception for distinct sections."
+    },
+    "HIG-PATTERNS-SEARCHING-0002": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "0da935de7d7018193d46b8fa2e20745251664631416d9e1abd940d2036625018", "section_path": ["Searching", "Best practices"]},
+      "title": "Provide search suggestions",
+      "statement": {"en": "Provide recent-search and predictive suggestions to help people search faster and type less.", "ja": "recent searchとpredictive suggestionを提供し、より速く少ない入力で検索できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Show recent searches before typing and predictive suggestions while people type.", "Review search-history privacy separately."],
+      "review_note": "Concretized both suggestion states without merging the separate privacy requirement."
+    },
+    "HIG-PATTERNS-SEARCHING-0003": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "768226f323b6723dbd3e3d8f2d0788ff40ec00326b712826cd2f6e90e3db90df", "section_path": ["Searching", "Systemwide search"]},
+      "title": "Make app content searchable in Spotlight",
+      "statement": {"en": "Make the app's content searchable in Spotlight by indexing it with descriptive metadata.", "ja": "descriptive metadataでindex化し、appのcontentをSpotlightで検索できるようにする。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "conditions": ["Index content that people may want to find outside the app."],
+      "review_note": "Concretized the Spotlight indexing mechanism and narrowed it to supported search platforms."
+    },
+    "HIG-PATTERNS-SEARCHING-0004": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "8c3137424c68b6670fce0b7ae018300c635fa72469a11d928fa8a736d862cf9f", "section_path": ["Searching", "Systemwide search"]},
+      "title": "Use Spotlight for advanced in-app file search",
+      "statement": {"en": "Use Spotlight for advanced file-search capabilities within the app when appropriate.", "ja": "適切な場合、app内のadvanced file-search capabilityにSpotlightを使う。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "conditions": ["Examples include searching the current selection or displaying custom search results."],
+      "review_note": "Preserved the contextual boundary and the source's advanced-search examples."
+    },
+    "HIG-PATTERNS-SEARCHING-0005": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "eb95d8f5efe4a33157dd6a5ac3852411c748c6cf166606a7ada02ca570748c0d", "section_path": ["Searching", "Systemwide search"]},
+      "title": "Prefer system open and save views",
+      "statement": {"en": "Prefer system-provided open and save views for systemwide file search.", "ja": "systemwide file searchにはsystem-providedのopen viewとsave viewを優先する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "conditions": ["The system views include a built-in search field."],
+      "review_note": "Recorded the built-in search capability that supports the system-view preference."
+    },
+    "HIG-PATTERNS-SEARCHING-0006": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "ef569fae391a29814796e018e820796e89816631476ab8036ad4d70bda85c175", "section_path": ["Searching", "Systemwide search"]},
+      "title": "Provide metadata and Spotlight import for custom files",
+      "statement": {"en": "Define metadata for custom file types and supply a Spotlight File Importer plug-in.", "ja": "custom file typeのmetadataを定義し、Spotlight File Importer plug-inを提供する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "conditions": ["The app handles custom file types."],
+      "review_note": "Combined the source paragraph's metadata definition and importer mechanism for custom files."
+    },
+    "HIG-PATTERNS-SEARCHING-0007": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "7a40d5d3364a022273ff5f21ce09921572cf551c8d97647b61c58a349e586276", "section_path": ["Searching", "Best practices"]},
+      "title": "Clearly display the current search scope",
+      "statement": {"en": "Clearly display the current search scope.", "ja": "現在のsearch scopeを明確に表示する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Communicate scope with a descriptive placeholder, scope bar, title, or another clear label."],
+      "review_note": "Concretized the supported scope-labeling mechanisms without promoting the plain imperative to MUST."
+    },
+    "HIG-PATTERNS-SEARCHING-0008": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "99bff7dca8cb75e9059930de19174a354741cc3e8f9843cd94591470786ebeea", "section_path": ["Searching", "Best practices"]},
+      "title": "Give important search a primary position",
+      "statement": {"en": "If search is important, give it a primary position in the app or view.", "ja": "searchが重要な場合、appまたはview内のprimary positionに配置する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Examples include a toolbar search item or a dedicated search tab."],
+      "review_note": "Activated the conditional placement guidance and preserved its importance threshold."
+    },
+    "HIG-PATTERNS-SEARCHING-0009": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "e23998668d71a086c0ba1025fdd0e273f2532da2646d4817f9fe973e8e3bfd02", "section_path": ["Searching", "Best practices"]},
+      "title": "Review privacy before showing search history",
+      "statement": {"en": "Before displaying search history, consider whether it could expose private information.", "ja": "search historyを表示する前にprivate informationが露出しないか検討する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Search history may be visible to someone other than the person who created it.", "The clearing action is recorded separately."],
+      "review_note": "Retained consideration strength for the privacy review instead of raising it to MUST."
+    },
+    "HIG-PATTERNS-SEARCHING-0010": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "30bbb5ad3e07edb0165e75627b661ede1db2e8c089acbb7c1f7e5666566ada00", "section_path": ["Searching", "Best practices"]},
+      "title": "Let people clear displayed search history",
+      "statement": {"en": "When displaying search history, provide a way for people to clear it.", "ja": "search historyを表示する場合、消去する方法を提供する。"},
+      "normative_level": "MUST",
+      "polarity": "require",
+      "severity": "error",
+      "conditions": ["The app displays search history."],
+      "review_note": "Classified the conditional clearing action as a privacy and explicit-user-intent MUST."
+    },
+    "HIG-PATTERNS-SEARCHING-0011": {
+      "source": {"source_hash": "2b283eeb6258607eea6dbed9f284f6b6654d348285980df94ba63cfd55290035", "source_sentence_hash": "aa531dc8e85133020e2bf324feed97849d7d05c3bac5bebcd3667c558f9fce50", "section_path": ["Searching", "Systemwide search"]},
+      "title": "Provide Quick Look for custom file types",
+      "statement": {"en": "If the app produces custom file types, implement a Quick Look generator for previews.", "ja": "appがcustom file typeを生成する場合、preview用のQuick Look generatorを実装する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "conditions": ["Preview support helps people inspect custom files in Spotlight and other apps."],
+      "review_note": "Activated the conditional Quick Look guidance and narrowed it to supported search platforms."
     }
   }
 }

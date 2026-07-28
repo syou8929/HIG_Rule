@@ -1,10 +1,10 @@
 # Exact duplicate source review
 
-- Candidate groups: 7
-- Reviewed contextual groups: 7
+- Candidate groups: 6
+- Reviewed contextual groups: 6
 - Unresolved groups: 0
 - Official source only: yes
-- Reviewed at: 2026-07-28T16:41:22Z
+- Reviewed at: 2026-07-28T17:30:24Z
 
 Exact statements are retained only when separate Apple HIG pages, sections, components, technologies, or platform scopes need independent retrieval. This is not a claim of authoritative HIG compliance.
 
@@ -25,9 +25,6 @@ Exact statements are retained only when separate Apple HIG pages, sections, comp
 - HIG-COMPONENTS-COLUMN-VIEWS-0003, HIG-COMPONENTS-OUTLINE-VIEWS-0004 — Retained because column resizing remains independently discoverable in the macOS Column views and Outline views component contexts.
   - HIG-COMPONENTS-COLUMN-VIEWS-0003: Column views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/column-views))
   - HIG-COMPONENTS-OUTLINE-VIEWS-0004: Outline views > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/outline-views))
-- HIG-COMPONENTS-SEARCH-FIELDS-0015, HIG-PATTERNS-SEARCHING-0002 — Retained because the tvOS search-field rule is narrower than the cross-platform searching-pattern rule.
-  - HIG-COMPONENTS-SEARCH-FIELDS-0015: Search fields > Platform considerations > tvOS ([source](https://developer.apple.com/design/human-interface-guidelines/search-fields))
-  - HIG-PATTERNS-SEARCHING-0002: Searching > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/searching))
 - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005, HIG-TECHNOLOGIES-MACHINE-LEARNING-0034 — Retained because Apple repeats the security requirement in the Implicit feedback and Calibration sections; explicit conditions distinguish the two applications.
   - HIG-TECHNOLOGIES-MACHINE-LEARNING-0005: Machine learning > Implicit feedback ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
   - HIG-TECHNOLOGIES-MACHINE-LEARNING-0034: Machine learning > Calibration ([source](https://developer.apple.com/design/human-interface-guidelines/machine-learning))
