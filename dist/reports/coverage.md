@@ -5,10 +5,10 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3585
+- Active atomic rules: 3592
 - Pages without rules: 16
-- Low-confidence rules: 73
-- Rules requiring human review: 73
+- Low-confidence rules: 65
+- Rules requiring human review: 65
 - Reference notes: 914
 
 ## Rules by category
@@ -17,31 +17,31 @@
 - foundations: 504
 - getting-started: 100
 - inputs: 245
-- patterns: 538
+- patterns: 545
 - technologies: 1084
 
 ## Normative levels
 
-- AVOID: 482
-- MAY: 405
-- MUST: 539
-- MUST_NOT: 82
-- SHOULD: 2077
+- AVOID: 484
+- MAY: 409
+- MUST: 540
+- MUST_NOT: 83
+- SHOULD: 2076
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2599
-- ipados: 2558
-- macos: 2110
-- tvos: 1643
-- visionos: 2073
-- watchos: 1768
+- ios: 2606
+- ipados: 2565
+- macos: 2117
+- tvos: 1650
+- visionos: 2080
+- watchos: 1775
 
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3470
+- manual: 3477
 
 ## Blocked pages
 
@@ -92,14 +92,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-MODALITY-0001
-- HIG-PATTERNS-MODALITY-0002
-- HIG-PATTERNS-MODALITY-0004
-- HIG-PATTERNS-MODALITY-0005
-- HIG-PATTERNS-MODALITY-0007
-- HIG-PATTERNS-MODALITY-0008
-- HIG-PATTERNS-MODALITY-0009
-- HIG-PATTERNS-MODALITY-0010
 - HIG-PATTERNS-PRINTING-0001
 - HIG-PATTERNS-PRINTING-0005
 - HIG-PATTERNS-PRINTING-0006
@@ -168,14 +160,6 @@ None.
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
 - HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
-- HIG-PATTERNS-MODALITY-0001
-- HIG-PATTERNS-MODALITY-0002
-- HIG-PATTERNS-MODALITY-0004
-- HIG-PATTERNS-MODALITY-0005
-- HIG-PATTERNS-MODALITY-0007
-- HIG-PATTERNS-MODALITY-0008
-- HIG-PATTERNS-MODALITY-0009
-- HIG-PATTERNS-MODALITY-0010
 - HIG-PATTERNS-PRINTING-0001
 - HIG-PATTERNS-PRINTING-0005
 - HIG-PATTERNS-PRINTING-0006

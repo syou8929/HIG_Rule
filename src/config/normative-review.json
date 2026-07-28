@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:12:27Z",
+  "reviewed_at": "2026-07-28T17:19:58Z",
   "review_method": "Rendered Apple HIG pages were matched to canonical rules by official URL, section path, source hash, and source sentence hash; surrounding guidance was reviewed without persisting full source prose.",
   "official_source_only": true,
   "source_inventory_hash": "3b68a462d3ae214c9015f36e1ad4982945892b37f8c734441cbb191339804388",
@@ -8,7 +8,7 @@
     "MUST",
     "MUST_NOT"
   ],
-  "reviewed_rule_count": 621,
+  "reviewed_rule_count": 623,
   "decision_policy": {
     "must": "Retain MUST for an unqualified Always, Be sure, Ensure, Make sure, Must, or You must directive after checking its surrounding conditions and exceptions. Preserve accessibility, privacy, safety, security, user-intent, and platform-contract requirements at MUST.",
     "must_not": "Retain MUST_NOT for an explicit Never, must not, cannot or can't, Always avoid, or named prohibition after checking its surrounding conditions and exceptions.",
@@ -2383,16 +2383,20 @@
       "review_note": "Recovered and retained the explicit Always accessibility requirement as MUST."
     },
     "HIG-PATTERNS-MODALITY-0006": {
-      "title": "Ensure people receive critical information and can act when necessary",
+      "title": "Consider modality for critical information and action",
       "statement": {
-        "en": "Ensure people receive critical information and can act on it when necessary.",
-        "ja": "重要な情報を確実に伝え、必要な場合はその情報に基づいて行動できるようにする。"
+        "en": "Consider modality when it can help people receive critical information and act when necessary.",
+        "ja": "重要なinformationの受領と必要なactionにmodalityが役立つ場合は使用を検討する。"
       },
+      "normative_level": "MAY",
+      "confidence": "high",
+      "review_required": false,
+      "polarity": "permit",
+      "severity": "info",
       "conditions": [
-        "The presented content contains critical information or requires a critical response.",
-        "Apply within the pattern and section context identified by the source trace."
+        "The source presents this as one outcome modality can provide, not as an unconditional directive."
       ],
-      "review_note": "Retained MUST after confirming the explicit Ensure directive in the modality context."
+      "review_note": "Corrected MUST to MAY after restoring the governing Presenting content modally can context."
     },
     "HIG-TECHNOLOGIES-GENERATIVE-AI-0005": {
       "conditions": [
@@ -4448,6 +4452,38 @@
       "polarity": "require", "severity": "error",
       "conditions": ["The notification doesn't represent a direct communication such as a call or message."],
       "review_note": "Classified the complementary all-other-tasks notification mapping as a platform contract."
+    },
+    "HIG-PATTERNS-MODALITY-0003": {
+      "title": "Provide an obvious modal dismissal path",
+      "statement": {"en": "Always give people an obvious way to dismiss a modal view.", "ja": "modal viewをdismissする明確な方法を常に提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["Follow familiar platform conventions for button placement or dismissal gestures."],
+      "review_note": "Retained the explicit Always dismissal requirement as a user-intent MUST."
+    },
+    "HIG-PATTERNS-MODALITY-0014": {
+      "title": "Explain potential modal data loss",
+      "statement": {"en": "When closing a modal view could lose user-generated content, explain the situation.", "ja": "modal viewを閉じるとuser-generated contentを失う可能性がある場合、その状況を説明する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["The person dismisses with either a gesture or a button."],
+      "review_note": "Recovered the first conditional Be sure data-loss requirement as MUST."
+    },
+    "HIG-PATTERNS-MODALITY-0015": {
+      "title": "Provide ways to resolve potential modal data loss",
+      "statement": {"en": "When closing a modal view could lose user-generated content, give people ways to resolve it.", "ja": "modal viewを閉じるとuser-generated contentを失う可能性がある場合、解決方法を提供する。"},
+      "normative_level": "MUST", "confidence": "high", "review_required": false,
+      "polarity": "require", "severity": "error",
+      "conditions": ["A resolution can include saving the content before dismissal."],
+      "review_note": "Recovered the second conditional Be sure data-loss requirement as MUST."
+    },
+    "HIG-PATTERNS-MODALITY-0016": {
+      "title": "Never show multiple alerts simultaneously",
+      "statement": {"en": "Never display more than one alert at the same time.", "ja": "同時に複数のalertを表示しない。"},
+      "normative_level": "MUST_NOT", "confidence": "high", "review_required": false,
+      "polarity": "prohibit", "severity": "error",
+      "conditions": ["An alert may overlay other content or another type of modal view."],
+      "review_note": "Recovered the explicit Never alert-stacking prohibition as MUST_NOT."
     }
   },
   "additional_rules": [

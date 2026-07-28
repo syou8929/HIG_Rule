@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 621
-- Retained MUST: 539
-- Retained MUST_NOT: 82
-- Normative level changes: 250
+- Reviewed rules: 623
+- Retained MUST: 540
+- Retained MUST_NOT: 83
+- Normative level changes: 255
 - Mixed-strength candidates split: 2
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:12:27Z
+- Reviewed at: 2026-07-28T17:19:58Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -295,7 +295,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013 — Classified the pre-consent disclosure as a privacy and explicit-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014 — Classified the clear bidirectional consent choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015 — Classified the complementary all-other-tasks notification mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
-- HIG-PATTERNS-MODALITY-0006 — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0003 — Retained the explicit Always dismissal requirement as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0014 — Recovered the first conditional Be sure data-loss requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0015 — Recovered the second conditional Be sure data-loss requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0016 — Recovered the explicit Never alert-stacking prohibition as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MULTITASKING-0006 — Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0007 — Recovered and retained MUST after confirming the explicit always need to prepare for context saving and restoration. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0008 — Recovered and retained MUST after confirming the explicit make sure requirement that people not miss attention-dependent activity content. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
@@ -821,8 +824,10 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013 · MUST · retained_with_atomicity_or_scope_correction — Classified the pre-consent disclosure as a privacy and explicit-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014 · MUST · retained_with_atomicity_or_scope_correction — Classified the clear bidirectional consent choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015 · MUST · retained_with_atomicity_or_scope_correction — Classified the complementary all-other-tasks notification mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
-- HIG-PATTERNS-MODALITY-0003 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- HIG-PATTERNS-MODALITY-0006 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Ensure directive in the modality context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0003 · MUST · retained_with_atomicity_or_scope_correction — Retained the explicit Always dismissal requirement as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0014 · MUST · retained_with_atomicity_or_scope_correction — Recovered the first conditional Be sure data-loss requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0015 · MUST · retained_with_atomicity_or_scope_correction — Recovered the second conditional Be sure data-loss requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0016 · MUST_NOT · retained_with_atomicity_or_scope_correction — Recovered the explicit Never alert-stacking prohibition as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MULTITASKING-0006 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit every-app need for multitasking support and both rare exception classes. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0007 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit always need to prepare for context saving and restoration. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0008 · MUST · retained_with_atomicity_or_scope_correction — Recovered and retained MUST after confirming the explicit make sure requirement that people not miss attention-dependent activity content. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))

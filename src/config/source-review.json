@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:12:27Z",
+  "reviewed_at": "2026-07-28T17:19:58Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5511,6 +5511,39 @@
         "HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015"
       ],
       "review_note": "Expanded Managing notifications from 3 to 15 active atomic rules, recovered general permission, Focus classification, SiriKit, Critical entitlement, urgency, marketing-consent, disclosure, and opt-choice context, retained twelve privacy and platform-contract outcomes as MUST, and retained two explicit marketing prohibitions as MUST_NOT."
+    },
+    {
+      "id": "priority-6-modality-context-2026-07-29",
+      "reviewed_at": "2026-07-28T17:19:58Z",
+      "review_method": "Rendered Apple HIG Modality overview, best-practice, platform, resource, and change-log context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/modality",
+          "source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-MODALITY-0001",
+        "HIG-PATTERNS-MODALITY-0002",
+        "HIG-PATTERNS-MODALITY-0003",
+        "HIG-PATTERNS-MODALITY-0004",
+        "HIG-PATTERNS-MODALITY-0005",
+        "HIG-PATTERNS-MODALITY-0006",
+        "HIG-PATTERNS-MODALITY-0007",
+        "HIG-PATTERNS-MODALITY-0008",
+        "HIG-PATTERNS-MODALITY-0009",
+        "HIG-PATTERNS-MODALITY-0010",
+        "HIG-PATTERNS-MODALITY-0011",
+        "HIG-PATTERNS-MODALITY-0012",
+        "HIG-PATTERNS-MODALITY-0013",
+        "HIG-PATTERNS-MODALITY-0014",
+        "HIG-PATTERNS-MODALITY-0015",
+        "HIG-PATTERNS-MODALITY-0016",
+        "HIG-PATTERNS-MODALITY-0017"
+      ],
+      "review_note": "Expanded Modality from 10 to 17 active atomic rules, recovered nested-task, misleading-dismissal, data-loss, and alert-stacking context, retained three explicit Always and Be sure outcomes as MUST, retained the single-alert Never outcome as MUST_NOT, and corrected the overview's can-governed purpose list to MAY."
     }
   ],
   "rules": {
@@ -34263,6 +34296,143 @@
       "normative_level": "MUST", "polarity": "require", "severity": "error",
       "conditions": ["The notification doesn't represent a direct communication such as a call or message."],
       "review_note": "Classified the complementary all-other-tasks notification mapping as a platform contract."
+    },
+    "HIG-PATTERNS-MODALITY-0001": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "eb27820d77365a7f01a5601c7c541f35c9f4521d5a765be4b0696b51fa686c65", "section_path": ["Modality", "Best practices"]},
+      "title": "Keep modal tasks simple and short",
+      "statement": {"en": "Keep modal tasks simple, short, and streamlined.", "ja": "modal taskをsimple、short、streamlinedに保つ。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Avoid making people lose track of the task or context they suspended."],
+      "review_note": "Replaced the generic paraphrase and retained the source's Aim strength at SHOULD."
+    },
+    "HIG-PATTERNS-MODALITY-0002": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "354c17910f0be969d08ee3a66f4824d7f9330ad6e3f4be98aab0d85d6b7432dd", "section_path": ["Modality", "Best practices"]},
+      "title": "Consider full-screen modality for in-depth tasks",
+      "statement": {"en": "Consider a full-screen modal style for in-depth content or a complex task.", "ja": "in-depth contentまたはcomplex taskにはfull-screen modal styleを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["It can suit media, camera views, document markup, or photo editing by minimizing distractions."],
+      "review_note": "Retained the explicit Consider strength and the documented content and task contexts."
+    },
+    "HIG-PATTERNS-MODALITY-0003": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "a4d496ea49d4ba482e38ae5103781c08f90f8ba006d9dfd1e7007bba95dfffd1", "section_path": ["Modality", "Best practices"]},
+      "title": "Provide an obvious modal dismissal path",
+      "statement": {"en": "Always give people an obvious way to dismiss a modal view.", "ja": "modal viewをdismissする明確な方法を常に提供する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Follow familiar platform conventions for button placement or dismissal gestures."],
+      "review_note": "Retained the explicit Always dismissal requirement as a user-intent MUST."
+    },
+    "HIG-PATTERNS-MODALITY-0004": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "29cf6afb80b4045e7b7845e8b321c44aaaecb1daac7199e098a2742a1ab1f54f", "section_path": ["Modality", "Best practices"]},
+      "title": "Make the modal task identifiable",
+      "statement": {"en": "Make a modal view's task easy to identify.", "ja": "modal viewのtaskを容易に識別できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use a title, description, or guidance that helps people keep their place in the app."],
+      "review_note": "Concretized task identification with the source's title and supporting-text options."
+    },
+    "HIG-PATTERNS-MODALITY-0005": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "e338fdf10618ba454521f22532474fee102c5048b991a77ef7dd6facadd1e794", "section_path": ["Modality", "Best practices"]},
+      "title": "Dismiss one modal view before presenting another",
+      "statement": {"en": "Let people dismiss a modal view before presenting another modal view.", "ja": "別のmodal viewを表示する前に現在のmodal viewをdismissできるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Avoid simultaneous modal views that add clutter and cognitive load."],
+      "exceptions": ["An alert may appear above other content, but the separate single-alert rule still applies."],
+      "review_note": "Retained the general modal sequencing guidance and recorded the alert overlay exception."
+    },
+    "HIG-PATTERNS-MODALITY-0006": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "da6998b6704624b12ab4a7efd67ea3a2552299e72bf3690b09532b897c94260c", "section_path": ["Modality"]},
+      "title": "Consider modality for critical information and action",
+      "statement": {"en": "Consider modality when it can help people receive critical information and act when necessary.", "ja": "重要なinformationの受領と必要なactionにmodalityが役立つ場合は使用を検討する。"},
+      "normative_level": "MAY", "polarity": "permit", "severity": "info",
+      "conditions": ["The source presents this as one outcome modality can provide, not as an unconditional directive."],
+      "review_note": "Corrected MUST to MAY after restoring the governing Presenting content modally can context."
+    },
+    "HIG-PATTERNS-MODALITY-0007": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "9c069fc4d6384f13ce93d6b0c0f56f2f55cdd49e46508b5c621af7777a775c85", "section_path": ["Modality"]},
+      "title": "Consider modality for confirming or modifying an action",
+      "statement": {"en": "Consider modality when it can help people confirm or modify their most recent action.", "ja": "直前のactionのconfirmまたはmodifyにmodalityが役立つ場合は使用を検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The source lists this as one possible benefit of modal presentation."],
+      "review_note": "Restored the can-governed optionality of the overview purpose list."
+    },
+    "HIG-PATTERNS-MODALITY-0008": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "fa4230d9f58f8a95f30f1fe799589cb41715b7e114882453a607d4559b236f1e", "section_path": ["Modality"]},
+      "title": "Consider modality for a distinct narrow task",
+      "statement": {"en": "Consider modality for a distinct, narrowly scoped task when it helps preserve the previous context.", "ja": "previous contextを保ちながらdistinctでnarrowly scopedなtaskを行う場合はmodalityを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The source lists this as one possible benefit of modal presentation."],
+      "review_note": "Restored the can-governed optionality and kept the previous-context condition."
+    },
+    "HIG-PATTERNS-MODALITY-0009": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "c5e6f8cf00ca281a2e4b1d6d07aca7ef1c99dac177ea8f23326d2995d7965c35", "section_path": ["Modality"]},
+      "title": "Consider modality for immersion or concentration",
+      "statement": {"en": "Consider modality when it can provide immersion or help people concentrate on a complex task.", "ja": "immersionの提供またはcomplex taskへの集中に役立つ場合はmodalityを検討する。"},
+      "normative_level": "MAY",
+      "conditions": ["The source lists this as one possible benefit of modal presentation."],
+      "review_note": "Restored the can-governed optionality of the overview purpose list."
+    },
+    "HIG-PATTERNS-MODALITY-0010": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "d3f26619a0a8873d66e46a5be5cdcf1e682a39e99d15e6b4e26324cca1704a59", "section_path": ["Modality", "Best practices"]},
+      "title": "Use modality only for a clear benefit",
+      "statement": {"en": "Present content modally only when it provides a clear benefit.", "ja": "明確なbenefitがある場合だけcontentをmodallyに表示する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use modality when it helps people focus or make choices that affect content or the device."],
+      "review_note": "Concretized the only-when boundary without promoting the plain imperative to MUST."
+    },
+    "HIG-PATTERNS-MODALITY-0011": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "a91166393bc290c93e6902833e9319bb5ccc6b0151dd1d6f3fa1e20c8114ac3e", "section_path": ["Modality", "Best practices"]},
+      "title": "Avoid an app-within-an-app modal experience",
+      "statement": {"en": "Avoid making a modal experience feel like an app within the app.", "ja": "modal experienceがapp内の別appのように感じられる設計を避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["Deep modal view hierarchies can make it difficult to retrace steps."],
+      "review_note": "Classified the direct take-care-to-avoid guidance at AVOID rather than MUST_NOT."
+    },
+    "HIG-PATTERNS-MODALITY-0012": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "2d79a3401846e1351c03b87d0830f93166473e699d8887136a3ac509c271d809", "section_path": ["Modality", "Best practices"]},
+      "title": "Use one path through required modal subviews",
+      "statement": {"en": "If a modal task must contain subviews, provide a single path through the hierarchy.", "ja": "modal taskにsubviewが必要な場合はhierarchy内に単一のpathを提供する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The modal task cannot remain a single view."],
+      "review_note": "Recovered the conditional hierarchy path separately from the dismissal-button avoidance."
+    },
+    "HIG-PATTERNS-MODALITY-0013": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "abd2226d656230a7b67db0fa4597631a691f4c62b5e1a3d297a38a1f35b76b40", "section_path": ["Modality", "Best practices"]},
+      "title": "Confirm before closing when data could be lost",
+      "statement": {"en": "When necessary, get confirmation before closing a modal view to help avoid data loss.", "ja": "必要な場合、data lossを避けるためmodal viewを閉じる前にconfirmationを取得する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Closing the modal view could discard user-generated content."],
+      "review_note": "Activated the qualified confirmation guidance without raising it to MUST."
+    },
+    "HIG-PATTERNS-MODALITY-0014": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "ed38717ac42e2e6e4bccf398ffa2a7a88a382ca14cad1743bfbe5110eef76f76", "section_path": ["Modality", "Best practices"]},
+      "title": "Explain potential modal data loss",
+      "statement": {"en": "When closing a modal view could lose user-generated content, explain the situation.", "ja": "modal viewを閉じるとuser-generated contentを失う可能性がある場合、その状況を説明する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The person dismisses with either a gesture or a button."],
+      "review_note": "Recovered the first conditional Be sure data-loss requirement as MUST."
+    },
+    "HIG-PATTERNS-MODALITY-0015": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "ed38717ac42e2e6e4bccf398ffa2a7a88a382ca14cad1743bfbe5110eef76f76", "section_path": ["Modality", "Best practices"]},
+      "title": "Provide ways to resolve potential modal data loss",
+      "statement": {"en": "When closing a modal view could lose user-generated content, give people ways to resolve it.", "ja": "modal viewを閉じるとuser-generated contentを失う可能性がある場合、解決方法を提供する。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["A resolution can include saving the content before dismissal."],
+      "review_note": "Recovered the second conditional Be sure data-loss requirement as MUST."
+    },
+    "HIG-PATTERNS-MODALITY-0016": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "22ca589b4f70d7d4fb64625a95a08d8645707660c8c4517599ebc77ea95a4d6b", "section_path": ["Modality", "Best practices"]},
+      "title": "Never show multiple alerts simultaneously",
+      "statement": {"en": "Never display more than one alert at the same time.", "ja": "同時に複数のalertを表示しない。"},
+      "normative_level": "MUST_NOT", "polarity": "prohibit", "severity": "error",
+      "conditions": ["An alert may overlay other content or another type of modal view."],
+      "review_note": "Recovered the explicit Never alert-stacking prohibition as MUST_NOT."
+    },
+    "HIG-PATTERNS-MODALITY-0017": {
+      "source": {"source_hash": "d868d124d752d2580209dcaf8cdeade6765a638f23e605698d03a382c1c82491", "source_sentence_hash": "2d79a3401846e1351c03b87d0830f93166473e699d8887136a3ac509c271d809", "section_path": ["Modality", "Best practices"]},
+      "title": "Avoid controls mistaken for modal dismissal",
+      "statement": {"en": "Avoid buttons people might mistake for the control that dismisses the modal view.", "ja": "modal viewをdismissするcontrolと誤認されるbuttonを避ける。"},
+      "normative_level": "AVOID",
+      "conditions": ["The modal task contains a hierarchy of subviews."],
+      "review_note": "Recovered the nested-modal button ambiguity separately at AVOID."
     }
   }
 }

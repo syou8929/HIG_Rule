@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3494
-- Reviewed batches: 202
+- Reviewed rules: 3511
+- Reviewed batches: 203
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:12:27Z
+- Reviewed at: 2026-07-28T17:19:58Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2180,6 +2180,23 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0013 · high — Classified the pre-consent disclosure as a privacy and explicit-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0014 · high — Classified the clear bidirectional consent choice as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 - HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015 · high — Classified the complementary all-other-tasks notification mapping as a platform contract. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
+- HIG-PATTERNS-MODALITY-0001 · high — Replaced the generic paraphrase and retained the source's Aim strength at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0002 · high — Retained the explicit Consider strength and the documented content and task contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0003 · high — Retained the explicit Always dismissal requirement as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0004 · high — Concretized task identification with the source's title and supporting-text options. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0005 · high — Retained the general modal sequencing guidance and recorded the alert overlay exception. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0006 · high — Corrected MUST to MAY after restoring the governing Presenting content modally can context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0007 · high — Restored the can-governed optionality of the overview purpose list. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0008 · high — Restored the can-governed optionality and kept the previous-context condition. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0009 · high — Restored the can-governed optionality of the overview purpose list. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0010 · high — Concretized the only-when boundary without promoting the plain imperative to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0011 · high — Classified the direct take-care-to-avoid guidance at AVOID rather than MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0012 · high — Recovered the conditional hierarchy path separately from the dismissal-button avoidance. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0013 · high — Activated the qualified confirmation guidance without raising it to MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0014 · high — Recovered the first conditional Be sure data-loss requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0015 · high — Recovered the second conditional Be sure data-loss requirement as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0016 · high — Recovered the explicit Never alert-stacking prohibition as MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- HIG-PATTERNS-MODALITY-0017 · high — Recovered the nested-modal button ambiguity separately at AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 - HIG-PATTERNS-MULTITASKING-0001 · high — Recorded the two interruption classes and separated their required responses. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0002 · high — Recorded both background states and separated useful and unnecessary completion cases. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
 - HIG-PATTERNS-MULTITASKING-0003 · high — Recorded every system state cue and separated the concrete window-edge restriction. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))

@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T17:15:39.653Z. 3585 active rules; 8 deprecated rules.
+Generated 2026-07-28T17:23:01.898Z. 3592 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -940,16 +940,23 @@ Generated 2026-07-28T17:15:39.653Z. 3585 active rules; 8 deprecated rules.
 - **HIG-PATTERNS-MANAGING-NOTIFICATIONS-0015 · MUST · high** — Use noncommunication notifications for notification tasks that aren't direct communications. ([source](https://developer.apple.com/design/human-interface-guidelines/managing-notifications))
 ### modality
 
-- **HIG-PATTERNS-MODALITY-0001 · SHOULD · low** — Apply the documented Modality guidance to aim to keep modal tasks simple, short, and streamlined. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0002 · MAY · low** — Evaluate whether using a full-screen modal style for in-depth content or a complex task is appropriate for the current context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0003 · MUST · medium** — Give people an obvious way to dismiss a modal view in every applicable case. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0004 · SHOULD · low** — Apply the documented Modality guidance to make it easy to identify a modal view’s task. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0005 · SHOULD · low** — Preserve people’s ability to dismiss a modal view before presenting another one. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0006 · MUST · medium** — Ensure people receive critical information and can act on it when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0007 · SHOULD · low** — Make options that let people confirm or modify their most recent action available when applicable. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0008 · SHOULD · low** — Apply the documented Modality guidance to help people perform a distinct, narrowly scoped task without losing track of their previous context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0009 · SHOULD · low** — Apply the documented Modality guidance to give people an immersive experience or help them concentrate on a complex task. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
-- **HIG-PATTERNS-MODALITY-0010 · SHOULD · low** — Present content modally only when there’s a clear benefit in the documented context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0001 · SHOULD · high** — Keep modal tasks simple, short, and streamlined. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0002 · MAY · high** — Consider a full-screen modal style for in-depth content or a complex task. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0003 · MUST · high** — Always give people an obvious way to dismiss a modal view. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0004 · SHOULD · high** — Make a modal view's task easy to identify. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0005 · SHOULD · high** — Let people dismiss a modal view before presenting another modal view. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0006 · MAY · high** — Consider modality when it can help people receive critical information and act when necessary. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0007 · MAY · high** — Consider modality when it can help people confirm or modify their most recent action. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0008 · MAY · high** — Consider modality for a distinct, narrowly scoped task when it helps preserve the previous context. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0009 · MAY · high** — Consider modality when it can provide immersion or help people concentrate on a complex task. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0010 · SHOULD · high** — Present content modally only when it provides a clear benefit. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0011 · AVOID · high** — Avoid making a modal experience feel like an app within the app. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0012 · SHOULD · high** — If a modal task must contain subviews, provide a single path through the hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0013 · SHOULD · high** — When necessary, get confirmation before closing a modal view to help avoid data loss. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0014 · MUST · high** — When closing a modal view could lose user-generated content, explain the situation. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0015 · MUST · high** — When closing a modal view could lose user-generated content, give people ways to resolve it. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0016 · MUST_NOT · high** — Never display more than one alert at the same time. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
+- **HIG-PATTERNS-MODALITY-0017 · AVOID · high** — Avoid buttons people might mistake for the control that dismisses the modal view. ([source](https://developer.apple.com/design/human-interface-guidelines/modality))
 ### multitasking
 
 - **HIG-PATTERNS-MULTITASKING-0001 · SHOULD · high** — Respond smoothly when another app or the system interrupts the app's audio. ([source](https://developer.apple.com/design/human-interface-guidelines/multitasking))
