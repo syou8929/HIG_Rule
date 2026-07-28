@@ -5,17 +5,17 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3657
+- Active atomic rules: 3673
 - Pages without rules: 16
-- Low-confidence rules: 23
-- Rules requiring human review: 23
-- Reference notes: 916
+- Low-confidence rules: 0
+- Rules requiring human review: 0
+- Reference notes: 917
 
 ## Rules by category
 
 - components: 1115
 - foundations: 504
-- getting-started: 100
+- getting-started: 116
 - inputs: 245
 - patterns: 552
 - technologies: 1141
@@ -24,24 +24,24 @@
 
 - AVOID: 495
 - MAY: 410
-- MUST: 566
+- MUST: 572
 - MUST_NOT: 85
-- SHOULD: 2101
+- SHOULD: 2111
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2666
-- ipados: 2625
-- macos: 2177
-- tvos: 1703
-- visionos: 2135
-- watchos: 1817
+- ios: 2682
+- ipados: 2641
+- macos: 2193
+- tvos: 1719
+- visionos: 2151
+- watchos: 1833
 
 ## Rules by testability
 
 - hybrid: 115
-- manual: 3542
+- manual: 3558
 
 ## Blocked pages
 
@@ -68,55 +68,11 @@ None.
 
 ## Low-confidence rules
 
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0001
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0002
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0003
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0004
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0005
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0006
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0007
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0008
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0009
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0010
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0011
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0012
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0013
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0014
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0015
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0016
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0017
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0018
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0019
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0020
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
+None.
 
 ## Rules requiring human review
 
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0001
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0002
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0003
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0004
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0005
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0006
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0007
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0008
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0009
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0010
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0011
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0012
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0013
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0014
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0015
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0016
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0017
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0018
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0019
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0020
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022
-- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023
+None.
 
 ## Reference notes
 
@@ -307,9 +263,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/dark-mode · Dark Mode > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/design-principles · Design principles > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/design-principles · Design principles > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/design-principles · Design principles > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/design-principles · Design principles — Reviewed: the source states there is no single right application; general principles remain decision tools, while explicit accessibility, privacy, safety, security, and user-intent outcomes are atomic requirements.
+- https://developer.apple.com/design/human-interface-guidelines/design-principles · Design principles > Change log — Reviewed: the June 8, 2026 entry records the reintroduction of design principles and adds no separate current requirement.
+- https://developer.apple.com/design/human-interface-guidelines/design-principles · Design principles > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/design-principles · Design principles > Resources > Videos — Reviewed: video links contain no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/designing-for-games · Designing for games > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/designing-for-games · Designing for games > Look stunning on every display — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/designing-for-games · Designing for games > Resources — Section recorded for human review; no short atomic guidance lead was detected.

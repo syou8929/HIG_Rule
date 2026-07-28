@@ -1,12 +1,12 @@
 # MUST / MUST_NOT source review
 
-- Reviewed rules: 651
-- Retained MUST: 566
+- Reviewed rules: 657
+- Retained MUST: 572
 - Retained MUST_NOT: 85
-- Normative level changes: 273
+- Normative level changes: 279
 - Mixed-strength candidates split: 4
 - Official source only: yes
-- Reviewed at: 2026-07-28T18:13:20Z
+- Reviewed at: 2026-07-28T18:23:37Z
 
 This is a source-context review, not a claim of authoritative HIG compliance. Full Apple source prose is not persisted.
 
@@ -201,6 +201,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-TYPOGRAPHY-0021 — Retained MUST after confirming the conditional Be sure to test directive for a nondefault text color. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-WRITING-0024 — Recovered MUST from Make sure and preserved the touch-device terminology example. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 - HIG-FOUNDATIONS-WRITING-0027 — Recovered MUST from Make sure and retained the allowed empty-state purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0034 — Classified the explicit from-the-start transparency outcome as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0035 — Classified permission rationale as a privacy and informed-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0036 — Classified data-use disclosure as a privacy and informed-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0037 — Classified the source's only-needed data-minimization boundary as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0038 — Classified the explicit information-safety outcome as a security MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0039 — Classified the explicit from-the-start accessibility priority as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 — Retained MUST after confirming the explicit Make sure text-legibility requirement and its platform size table. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 — Retained MUST after confirming the explicit Make sure button-usability requirement and surfacing the page’s size wording conflict. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0024 — Retained MUST after confirming the explicit Make sure requirement for common platform interaction methods. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
@@ -734,6 +740,12 @@ This is a source-context review, not a claim of authoritative HIG compliance. Fu
 - HIG-FOUNDATIONS-TYPOGRAPHY-0032 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/typography))
 - HIG-FOUNDATIONS-WRITING-0024 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from Make sure and preserved the touch-device terminology example. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 - HIG-FOUNDATIONS-WRITING-0027 · MUST · retained_with_atomicity_or_scope_correction — Recovered MUST from Make sure and retained the allowed empty-state purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0034 · MUST · retained_with_atomicity_or_scope_correction — Classified the explicit from-the-start transparency outcome as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0035 · MUST · retained_with_atomicity_or_scope_correction — Classified permission rationale as a privacy and informed-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0036 · MUST · retained_with_atomicity_or_scope_correction — Classified data-use disclosure as a privacy and informed-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0037 · MUST · retained_with_atomicity_or_scope_correction — Classified the source's only-needed data-minimization boundary as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0038 · MUST · retained_with_atomicity_or_scope_correction — Classified the explicit information-safety outcome as a security MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0039 · MUST · retained_with_atomicity_or_scope_correction — Classified the explicit from-the-start accessibility priority as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0004 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure text-legibility requirement and its platform size table. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0005 · MUST · retained_with_atomicity_or_scope_correction — Retained MUST after confirming the explicit Make sure button-usability requirement and surfacing the page’s size wording conflict. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0007 · MUST · retained — Retained MUST after confirming an unqualified source directive and its surrounding conditions and exceptions. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))

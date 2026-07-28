@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3620
-- Reviewed batches: 210
+- Reviewed rules: 3659
+- Reviewed batches: 211
 - Official source only: yes
-- Reviewed at: 2026-07-28T18:16:40Z
+- Reviewed at: 2026-07-28T18:23:37Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -1614,6 +1614,45 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-FOUNDATIONS-WRITING-0027 · high — Recovered MUST from Make sure and retained the allowed empty-state purposes. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 - HIG-FOUNDATIONS-WRITING-0028 · high — Separated the explicit don't clause and retained AVOID rather than promoting it to MUST_NOT. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
 - HIG-FOUNDATIONS-WRITING-0029 · high — Recovered the conditional direct-navigation rule and its prose-location alternative. ([source](https://developer.apple.com/design/human-interface-guidelines/writing))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0001 · high — Concretized the principle while retaining the page's decision-tool strength. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0002 · high — Concretized agency without treating the general principle as mandatory. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0003 · high — Concretized the simplicity outcome at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0004 · high — Concretized delight without turning subjective expression into a requirement. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0005 · high — Recovered the purpose test and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0006 · high — Replaced the malformed generated statement with the reviewed focus outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0007 · high — Concretized exploration and escape behavior at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0008 · high — Concretized recovery and its time-and-work preservation outcome. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0009 · high — Retained the umbrella principle at SHOULD and separated stronger explicit outcomes. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0010 · high — Repaired the malformed statement and kept the umbrella principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0011 · high — Concretized familiarity at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0012 · high — Repaired the malformed statement and retained SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0013 · high — Recovered the feedback purpose and relevant state contexts. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0014 · high — Concretized inclusion while separating the explicit accessibility priority. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0015 · high — Recovered predictable placement and transition context. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0016 · high — Preserved the source's Consider strength at MAY. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0017 · high — Concretized the necessary-content outcome at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0018 · high — Recovered the writing and control-label scope. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0019 · high — Concretized ongoing craft and platform evolution. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0020 · high — Concretized the expressive outcome without mandating decoration. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0021 · high — Repaired the malformed negative statement and retained AVOID. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0022 · high — Preserved the source's Consider strength and restored its experience scope. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0023 · high — Recovered the emotion-to-design relationship. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0024 · high — Activated the omitted responsibility principle at conservative SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0025 · high — Activated the omitted familiarity principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0026 · high — Activated the omitted flexibility principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0027 · high — Activated the omitted craft principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0028 · high — Activated the omitted purpose principle without overstating experimentation. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0029 · high — Activated the omitted agency principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0030 · high — Activated the omitted platform-intent principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0031 · high — Activated the omitted hierarchy principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0032 · high — Activated the omitted quality principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0033 · high — Activated the omitted iterative-craft principle at SHOULD. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0034 · high — Classified the explicit from-the-start transparency outcome as a user-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0035 · high — Classified permission rationale as a privacy and informed-intent MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0036 · high — Split the privacy disclosure outcome from the same supporting source sentence. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0037 · high — Classified the source's only-needed data-minimization boundary as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0038 · high — Classified the explicit information-safety outcome as a security MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
+- HIG-GETTING-STARTED-DESIGN-PRINCIPLES-0039 · high — Classified the explicit from-the-start accessibility priority as MUST. ([source](https://developer.apple.com/design/human-interface-guidelines/design-principles))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0001 · high — Reviewed game startup, display metrics, interactions, accessibility, inclusion, and Apple technologies; recovered ten omitted atomic rules. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0002 · high — Recorded the device and accessibility inputs used to choose game defaults. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))
 - HIG-GETTING-STARTED-DESIGNING-FOR-GAMES-0003 · high — Repaired the generated statement and recorded the request-timing context. ([source](https://developer.apple.com/design/human-interface-guidelines/designing-for-games))

@@ -221,7 +221,7 @@ test("keeps exact duplicate reviews aligned with canonical source traces", async
   }
 });
 
-test("excludes source-reviewed normative rules from the prioritized review queue", async () => {
+test("excludes source-reviewed normative rules and supports an empty review queue", async () => {
   const rules = await loadRules();
   const normativeReviewed = rules.filter((rule) => ["MUST", "MUST_NOT"].includes(rule.normative_level));
   assert.ok(normativeReviewed.length > 0);
@@ -229,9 +229,11 @@ test("excludes source-reviewed normative rules from the prioritized review queue
   const pending = pendingRuleReviews(rules);
   const batch = nextReviewBatch(rules);
   assert.equal(pending.some((rule) => ["MUST", "MUST_NOT"].includes(rule.normative_level)), false);
-  assert.ok(batch.length > 0);
-  assert.equal(batch.every((rule) => rule.priority_rank === batch[0]?.priority_rank), true);
-  assert.equal(batch.every((rule) => rule.source.url === batch[0]?.source.url), true);
+  assert.equal(batch.length === 0, pending.length === 0);
+  if (batch.length > 0) {
+    assert.equal(batch.every((rule) => rule.priority_rank === batch[0]?.priority_rank), true);
+    assert.equal(batch.every((rule) => rule.source.url === batch[0]?.source.url), true);
+  }
 });
 
 test("keeps general source reviews aligned with canonical traces", async () => {
