@@ -1,28 +1,27 @@
 # Human source-review queue
 
-- Remaining rules: 149
+- Remaining rules: 142
 - Next priority: 6 (apple-platform-common)
-- Next batch: 7
+- Next batch: 6
 
 This queue tracks canonical rule extraction and source-context review. Product-specific design and implementation checks remain manual even after a rule leaves this queue.
 
 ## Remaining by priority
 
-- 6 (apple-platform-common): 126
+- 6 (apple-platform-common): 119
 - 7 (universal-design-principles): 23
 
 ## Remaining by normative level
 
 - AVOID: 1
 - MAY: 17
-- SHOULD: 131
+- SHOULD: 124
 
 ## Next batch
 
-- HIG-FOUNDATIONS-LAYOUT-0001 · SHOULD — Make essential information easy to find by giving it sufficient space · Layout > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- HIG-FOUNDATIONS-LAYOUT-0002 · SHOULD — Place items to convey their relative importance · Layout > Visual hierarchy ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- HIG-FOUNDATIONS-LAYOUT-0003 · SHOULD — Make controls easier to use by providing enough space around them and grouping them in logical sections · Layout > Visual hierarchy ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- HIG-FOUNDATIONS-LAYOUT-0004 · SHOULD — Design a layout that adapts gracefully to context changes while remaining recognizably consistent · Layout > Adaptability ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- HIG-FOUNDATIONS-LAYOUT-0005 · SHOULD — Be prepared for text-size changes · Layout > Adaptability ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- HIG-FOUNDATIONS-LAYOUT-0006 · SHOULD — Respect key display and system features in each platform · Layout > Guides and safe areas ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- HIG-FOUNDATIONS-LAYOUT-0025 · SHOULD — Take advantage of progressive disclosure to help people discover content that’s currently hidden · Layout > Visual hierarchy ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- HIG-FOUNDATIONS-MOTION-0001 · SHOULD — Make motion optional · Motion > Best practices ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0002 · SHOULD — Strive for realistic feedback motion that follows people’s gestures and expectations · Motion > Providing feedback ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0003 · SHOULD — Aim for brevity and precision in feedback animations · Motion > Providing feedback ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0004 · SHOULD — Let people cancel motion · Motion > Providing feedback ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0007 · SHOULD — Let people customize the visual experience of your game to optimize performance or battery life · Motion > Leveraging platform capabilities ([source](https://developer.apple.com/design/human-interface-guidelines/motion))
+- HIG-FOUNDATIONS-MOTION-0005 · MAY — Consider using animated symbols where it makes sense · Motion > Providing feedback ([source](https://developer.apple.com/design/human-interface-guidelines/motion))

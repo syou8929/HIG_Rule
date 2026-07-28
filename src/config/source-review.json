@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T15:56:23Z",
+  "reviewed_at": "2026-07-28T16:05:05Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5172,6 +5172,47 @@
         "HIG-FOUNDATIONS-IMAGES-0039"
       ],
       "review_note": "Completed Images coverage, preserved all thirty-five existing IDs, recovered four atomic scale-suffix, base-resolution, vector-alignment, and format-choice rules, preserved both structured scale tables, and retained only the explicit Always test outcome at MUST in this batch."
+    },
+    {
+      "id": "priority-6-layout-common-context-2026-07-29",
+      "reviewed_at": "2026-07-28T16:05:05Z",
+      "review_method": "Rendered Apple HIG Layout best-practice, visual-hierarchy, adaptability, guide, safe-area, and supporting context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/layout",
+          "source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1"
+        }
+      ],
+      "rule_ids": [
+        "HIG-FOUNDATIONS-LAYOUT-0001",
+        "HIG-FOUNDATIONS-LAYOUT-0002",
+        "HIG-FOUNDATIONS-LAYOUT-0003",
+        "HIG-FOUNDATIONS-LAYOUT-0004",
+        "HIG-FOUNDATIONS-LAYOUT-0005",
+        "HIG-FOUNDATIONS-LAYOUT-0006",
+        "HIG-FOUNDATIONS-LAYOUT-0025",
+        "HIG-FOUNDATIONS-LAYOUT-0036",
+        "HIG-FOUNDATIONS-LAYOUT-0037",
+        "HIG-FOUNDATIONS-LAYOUT-0038",
+        "HIG-FOUNDATIONS-LAYOUT-0039",
+        "HIG-FOUNDATIONS-LAYOUT-0040",
+        "HIG-FOUNDATIONS-LAYOUT-0041",
+        "HIG-FOUNDATIONS-LAYOUT-0042",
+        "HIG-FOUNDATIONS-LAYOUT-0043",
+        "HIG-FOUNDATIONS-LAYOUT-0044",
+        "HIG-FOUNDATIONS-LAYOUT-0045",
+        "HIG-FOUNDATIONS-LAYOUT-0046",
+        "HIG-FOUNDATIONS-LAYOUT-0047",
+        "HIG-FOUNDATIONS-LAYOUT-0048",
+        "HIG-FOUNDATIONS-LAYOUT-0049",
+        "HIG-FOUNDATIONS-LAYOUT-0050",
+        "HIG-FOUNDATIONS-LAYOUT-0051",
+        "HIG-FOUNDATIONS-LAYOUT-0052",
+        "HIG-FOUNDATIONS-LAYOUT-0053"
+      ],
+      "review_note": "Completed the shared Layout sections, concretized seven queued rules, recovered eighteen atomic grouping, edge-extension, hierarchy, adaptation, preview, and artwork rules, and retained six explicit Ensure, Make sure, or need-to outcomes as MUST."
     }
   ],
   "rules": {
@@ -5299,6 +5340,205 @@
         "Use PDF or SVG for flat artwork that requires high-resolution scaling."
       ],
       "review_note": "Recorded the complete format table as one optional choice set rather than five unrelated mandates."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0001": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "7e96f91f3e092e6257f75efcc92426a47cdc116043a07974874596d63f230607", "section_path": ["Layout", "Best practices"]},
+      "title": "Give essential information sufficient space",
+      "statement": {"en": "Give essential information sufficient space so people can find it immediately.", "ja": "essential informationに十分なspaceを与え、すぐ見つけられるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Keep the most important information immediately visible.", "Move secondary information to another area or an additional view."],
+      "review_note": "Replaced generic generated wording and preserved immediate visibility plus secondary-information placement."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0002": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "b1f02b000e5e7fac6380f949001abcbc4e28819a204471bfca9714babf60b93e", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Use placement to convey relative importance",
+      "statement": {"en": "Place items so their position conveys relative importance.", "ja": "itemの配置によって相対的な重要度を伝える。"},
+      "normative_level": "SHOULD",
+      "conditions": ["In the current language's reading order, generally place the most important items near the top and leading side."],
+      "review_note": "Recorded the source's general reading-order placement without turning it into a fixed coordinate rule."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0003": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "0ad9fd2b8748f47e189fada2e24ba1558a741564755217f0534ba34076b915e6", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Space and group controls for comprehension",
+      "statement": {"en": "Provide enough space around controls and group them into logical sections.", "ja": "controlの周囲に十分なspaceを設け、logical sectionへgroup化する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Keep unrelated controls and surrounding content far enough apart to distinguish and understand each control."],
+      "review_note": "Preserved both spacing and logical grouping plus the unrelated-content crowding risk."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0004": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "2da98d37ddc8cc0b16f247cc3af80dd485e64d84d54526d99b47f656da788e91", "section_path": ["Layout", "Adaptability"]},
+      "title": "Keep adaptive layouts recognizable and consistent",
+      "statement": {"en": "Design layouts that adapt gracefully to context changes while remaining recognizably consistent.", "ja": "context変化へ自然に適応しつつ認識可能な一貫性を保つlayoutを設計する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Handle device rotation, window resizing, added displays, and device changes.", "Respect system safe areas, margins, and guides; fine-tune view placement with layout modifiers."],
+      "review_note": "Concretized the context changes and the system layout mechanisms that support adaptability."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0005": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "3bdc5c7b2b97bf7d65c92d4953c9094457425c9a26e91660054c2c1afd7a9886", "section_path": ["Layout", "Adaptability"]},
+      "title": "Prepare layouts for text-size changes",
+      "statement": {"en": "Design layouts to respond appropriately to people’s text-size choices.", "ja": "利用者のtext-size選択へ適切に応答するlayoutを設計する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "tvos", "visionos", "watchos"], "devices": ["iphone", "ipad", "apple-tv", "apple-vision-pro", "apple-watch"], "components": [], "modalities": []},
+      "conditions": ["Support Dynamic Type on iOS, iPadOS, tvOS, visionOS, and watchOS.", "For Unity-based games, use Apple's accessibility plug-in to support Dynamic Type."],
+      "review_note": "Scoped Dynamic Type to the five platforms named by the source and recorded the Unity-specific implementation path."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0006": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "d320c0a4968f6aef1402586930df6cccdf36009bf9ee5a5ab6e07bf3f0d73aa0", "section_path": ["Layout", "Guides and safe areas"]},
+      "title": "Respect platform display and system features",
+      "statement": {"en": "Respect each platform’s key display and system features.", "ja": "各platformの主要なdisplay featureとsystem featureを尊重する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use safe areas to avoid obscuring content behind bars, Dynamic Island, camera housings, and other window or device features.", "Reposition content as bars and other interactive components change size."],
+      "review_note": "Recorded safe-area obstruction and dynamic-repositioning outcomes without promoting the general Respect lead."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0025": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "e4d3969e3cc9069d3017b46accc8abb0fd7d2e0cf170a915b7ee6e110716e509", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Use progressive disclosure for hidden content",
+      "statement": {"en": "Use progressive disclosure to help people discover content that is currently hidden.", "ja": "progressive disclosureを使い、現在隠れているcontentを発見できるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Choose platform-appropriate disclosure controls or partially visible items as discovery cues."],
+      "review_note": "Repaired the generated wording and preserved platform-specific disclosure alternatives."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0036": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "34a03e7e3110bc79092b6f7d5879170cfcb0f25895e26535dc0ccfed64744544", "section_path": ["Layout", "Best practices"]},
+      "title": "Group related items",
+      "statement": {"en": "Group related items so people can find information quickly.", "ja": "関連するitemをgroup化し、情報をすばやく見つけられるようにする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use spacing, background shapes, colors, materials, or separators to communicate grouping."],
+      "review_note": "Activated the omitted grouping lead and preserved every documented visual grouping technique."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0037": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "295e3922f9dc954838d72097e6fe35b46ee7ab3d5c23ec212d26c5262b504005", "section_path": ["Layout", "Best practices"]},
+      "title": "Keep content and controls distinct",
+      "statement": {"en": "Ensure content and controls remain clearly distinct when visual grouping techniques are used.", "ja": "visual grouping techniqueを使うときcontentとcontrolを明確に区別できる状態に保つ。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Grouping may use spacing, background shapes, colors, materials, or separators."],
+      "review_note": "Recovered MUST from the explicit Ensure clause and bound it to the grouping-technique condition."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0038": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "f0f6313529ef8097bcc11d8175f66845d8246a6b36c665e40a0c1d6e9ebd541d", "section_path": ["Layout", "Best practices"]},
+      "title": "Avoid crowding essential information",
+      "statement": {"en": "Avoid crowding essential information with nonessential details.", "ja": "essential informationをnonessential detailで過密にしない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Keep the most important information immediately visible."],
+      "review_note": "Separated the explicit don't clause and retained it at AVOID rather than raising it to MUST_NOT."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0039": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "328c5fce259b7791afaabe5e553fb5cd8d1e0adfbabadfe1aa3a0e35a0c22f11", "section_path": ["Layout", "Best practices"]},
+      "title": "Extend content to fill its screen or window",
+      "statement": {"en": "Extend content to fill its screen or window.", "ja": "contentをscreenまたはwindow全体へ広げる。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Account for controls and navigation such as sidebars and tab bars that overlay content."],
+      "review_note": "Activated the omitted full-area lead and recorded the overlaid control layer."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0040": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "5cc8848535268c73a8c5af9596a7933b116b619e10ba60fa8213ba5467f5f8bb", "section_path": ["Layout", "Best practices"]},
+      "title": "Extend backgrounds and full-screen artwork to display edges",
+      "statement": {"en": "Ensure backgrounds and full-screen artwork extend to the edges of the display.", "ja": "backgroundとfull-screen artworkをdisplayの端まで広げる。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "review_note": "Recovered MUST from the explicit Make sure clause and retained both backgrounds and full-screen artwork."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0041": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "5cc8848535268c73a8c5af9596a7933b116b619e10ba60fa8213ba5467f5f8bb", "section_path": ["Layout", "Best practices"]},
+      "title": "Extend scrollable layouts to device-screen edges",
+      "statement": {"en": "Ensure scrollable layouts continue to the bottom and sides of the device screen.", "ja": "scrollable layoutをdevice screenのbottomとsideまで連続させる。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "review_note": "Recovered MUST from the explicit ensure clause and preserved the bottom and both side edges."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0042": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "0ba3a17a475fe3207904a411461282bf08b2f1458c1f0ad092d702c3c33fc584", "section_path": ["Layout", "Best practices"]},
+      "title": "Use a background extension view beside narrow content",
+      "statement": {"en": "When content does not span the full window, use a background extension view beside it.", "ja": "contentがwindow全体へ広がらない場合は隣にbackground extension viewを使う。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Create the appearance of content behind the control layer on either side, such as beneath a sidebar or inspector."],
+      "review_note": "Recovered the conditional background-extension technique and its sidebar and inspector examples."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0043": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "920b8282a164364978399bcf8eb03943e47946595ebea44202ece2ff666d68a9", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Differentiate controls from content",
+      "statement": {"en": "Differentiate controls from content.", "ja": "controlとcontentを区別する。"},
+      "normative_level": "SHOULD",
+      "review_note": "Activated the omitted visual-hierarchy lead as a general recommendation."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0044": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "24c9e7bc19a2e1f68961e8e1758673d51e96fb155c1a069348c381e854a529b0", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Use Liquid Glass to distinguish controls",
+      "statement": {"en": "Use Liquid Glass to give controls a distinct, platform-consistent appearance.", "ja": "Liquid Glassでcontrolへ明確かつplatform間で一貫したappearanceを与える。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "review_note": "Recovered the material recommendation and limited it to the three platforms named by the source."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0045": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "24c9e7bc19a2e1f68961e8e1758673d51e96fb155c1a069348c381e854a529b0", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Use a scroll edge effect between content and controls",
+      "statement": {"en": "Use a scroll edge effect instead of a background to transition between content and controls.", "ja": "backgroundの代わりにscroll edge effectを使いcontentとcontrolの間をtransitionする。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "apple-platform", "platforms": ["ios", "ipados", "macos"], "devices": ["iphone", "ipad", "mac"], "components": [], "modalities": []},
+      "review_note": "Recovered the stated background alternative and kept the surrounding three-platform scope."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0046": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "b909eb4e3a2cdcafa5a903ac216cbd8da18d8dae1a7e65985fc6ae64c2279b1f", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Account for right-to-left reading order",
+      "statement": {"en": "Account for right-to-left reading order when placing important items.", "ja": "important itemを配置するときright-to-leftのreading orderを考慮する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Reading order varies by language."],
+      "review_note": "Recovered the localization-specific placement rule without promoting it beyond the source's take-into-account strength."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0047": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "f4be7c2235f649f3af44b5d498064cfb92af5606b660d0f0c59fc5835ef116b2", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Align components to communicate hierarchy",
+      "statement": {"en": "Align components to improve scanning and communicate organization and hierarchy.", "ja": "componentを整列し、scanしやすさとorganizationおよびhierarchyを伝える。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Use alignment and indentation to help people track content and understand information hierarchy."],
+      "review_note": "Activated the omitted alignment lead and preserved both scanning and hierarchy outcomes."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0048": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "b80135b5a0ce3e306053934a5966512f891a3fc0320d76da22553f3e2d7296cb", "section_path": ["Layout", "Visual hierarchy"]},
+      "title": "Indicate additional hidden collection items",
+      "statement": {"en": "Indicate that additional items exist when a collection can’t display everything at once.", "ja": "collectionですべてを一度に表示できない場合、追加itemの存在を示す。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The interface cannot show every item in a large collection simultaneously.", "Use a platform-appropriate disclosure control or partial-item cue."],
+      "review_note": "Recovered MUST from the conditional you need to indicate clause and retained both discovery techniques."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0049": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "dcc453bb67a7614909ecee6225c001cb39f76872b70b92b6f9bcf87e8f3c9e0e", "section_path": ["Layout", "Adaptability"]},
+      "title": "Adapt to device and system context changes",
+      "statement": {"en": "Ensure every app and game adapts when device or system context changes.", "ja": "deviceまたはsystem contextが変わるとき、すべてのappとgameを適応させる。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["Handle screen sizes, resolutions, and color spaces.", "Handle device orientation.", "Handle Dynamic Island, camera controls, and other system features.", "Handle external displays, Display Zoom, and resizable iPad windows.", "Handle Dynamic Type text-size changes.", "Handle localization changes in layout direction, formatting, fonts, and text length."],
+      "review_note": "Recovered MUST from the explicit needs-to-adapt statement and preserved all six variation groups."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0050": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "dcc453bb67a7614909ecee6225c001cb39f76872b70b92b6f9bcf87e8f3c9e0e", "section_path": ["Layout", "Adaptability"]},
+      "title": "Use another adaptation method without system layout tools",
+      "statement": {"en": "Use another adaptation method when the interface doesn’t use SwiftUI or Auto Layout.", "ja": "interfaceでSwiftUIまたはAuto Layoutを使わない場合、別のadaptation methodを使う。"},
+      "normative_level": "MUST", "polarity": "require", "severity": "error",
+      "conditions": ["The app or game does not use SwiftUI or Auto Layout to adapt dynamically."],
+      "review_note": "Recovered MUST from the explicit conditional need-to-use-alternative-methods clause."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0051": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "881fd28277d74a6ff8318a9e9b9a05cb650016f885e1234d9fc281101104e385", "section_path": ["Layout", "Adaptability"]},
+      "title": "Preview layouts across devices and settings",
+      "statement": {"en": "Preview the experience across devices, orientations, localizations, and text sizes.", "ja": "device、orientation、localization、text sizeを変えてexperienceをpreviewする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Test the largest and smallest layouts first.", "Preview wide-gamut color on actual devices when possible.", "Use Device Hub or simulators to check clipping and other layout issues."],
+      "review_note": "Activated the omitted preview lead and recorded the test matrix, bounding cases, and device-versus-simulator split."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0052": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "cbe0bf487f6eb6e0fec1372395f05cac7d1c40c0341c9f9fac358d997a6c494a", "section_path": ["Layout", "Adaptability"]},
+      "title": "Scale artwork when display changes require it",
+      "statement": {"en": "When display changes require it, scale artwork to keep important visual content visible.", "ja": "display変更で必要な場合、important visual contentを表示し続けるようartworkをscaleする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["A display aspect-ratio change crops, letterboxes, or pillarboxes artwork."],
+      "exceptions": ["visionOS automatically scales a window as it moves along the z-axis."],
+      "review_note": "Activated the conditional scale lead, recorded all three fit problems, and preserved the visionOS automatic behavior."
+    },
+    "HIG-FOUNDATIONS-LAYOUT-0053": {
+      "source": {"source_hash": "e05d063f6ff3da7d9e55b5bab0c354273500e19e01b1b4c57df1389cc16016e1", "source_sentence_hash": "06e0fe1440bbd3a62ebf8ab25654282b373a38d0b4d4930556c1226734610a13", "section_path": ["Layout", "Adaptability"]},
+      "title": "Avoid changing artwork aspect ratios",
+      "statement": {"en": "Avoid changing artwork’s aspect ratio when adapting to display changes.", "ja": "display変更へ適応するときartworkのaspect ratioを変えない。"},
+      "normative_level": "AVOID",
+      "conditions": ["Scale the artwork instead so important visual content remains visible."],
+      "review_note": "Separated the explicit don't clause, retained AVOID strength, and recorded the scaling alternative."
     },
     "HIG-COMPONENTS-STEPPERS-0002": {
       "source": {

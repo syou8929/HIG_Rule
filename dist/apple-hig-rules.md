@@ -1,6 +1,6 @@
 # Apple HIG AI Rules
 
-Generated 2026-07-28T15:57:04.649Z. 3487 active rules; 8 deprecated rules.
+Generated 2026-07-28T16:09:09.371Z. 3505 active rules; 8 deprecated rules.
 
 ## getting-started
 
@@ -398,12 +398,12 @@ Generated 2026-07-28T15:57:04.649Z. 3487 active rules; 8 deprecated rules.
 - **HIG-FOUNDATIONS-INCLUSION-0005 · SHOULD · medium** — Apply the documented Inclusion guidance to prioritize simplicity and perceivability. ([source](https://developer.apple.com/design/human-interface-guidelines/inclusion))
 ### layout
 
-- **HIG-FOUNDATIONS-LAYOUT-0001 · SHOULD · low** — Apply the documented Layout guidance to make essential information easy to find by giving it sufficient space. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0002 · SHOULD · low** — Apply the documented Layout guidance to place items to convey their relative importance. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0003 · SHOULD · low** — Apply the documented Layout guidance to make controls easier to use by providing enough space around them and grouping them in logical sections. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0004 · SHOULD · low** — Apply the documented Layout guidance to design a layout that adapts gracefully to context changes while remaining recognizably consistent. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0005 · SHOULD · low** — Apply the documented Layout guidance to be prepared for text-size changes. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0006 · SHOULD · low** — Apply the documented Layout guidance to respect key display and system features in each platform. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0001 · SHOULD · high** — Give essential information sufficient space so people can find it immediately. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0002 · SHOULD · high** — Place items so their position conveys relative importance. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0003 · SHOULD · high** — Provide enough space around controls and group them into logical sections. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0004 · SHOULD · high** — Design layouts that adapt gracefully to context changes while remaining recognizably consistent. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0005 · SHOULD · high** — Design layouts to respond appropriately to people’s text-size choices. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0006 · SHOULD · high** — Respect each platform’s key display and system features. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0007 · SHOULD · high** — Aim to support both portrait and landscape orientations on iOS. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0008 · SHOULD · high** — Prefer a full-bleed interface for an iOS game. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0009 · AVOID · high** — Avoid full-width buttons in iOS interfaces. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
@@ -422,7 +422,7 @@ Generated 2026-07-28T15:57:04.649Z. 3487 active rules; 8 deprecated rules.
 - **HIG-FOUNDATIONS-LAYOUT-0022 · SHOULD · high** — Extend watchOS content from one screen edge to the other. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0023 · AVOID · high** — Avoid placing more than two or three watchOS controls side by side. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0024 · SHOULD · high** — Support autorotation in watchOS views people may show to others. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
-- **HIG-FOUNDATIONS-LAYOUT-0025 · SHOULD · low** — Use of progressive disclosure to help people discover content that’s currently hidden. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0025 · SHOULD · high** — Use progressive disclosure to help people discover content that is currently hidden. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0026 · MUST · high** — Make a landscape-only iOS experience work equally well in both rotation directions. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0027 · MUST · high** — Make a necessary full-width iOS button harmonize with hardware curvature and adjacent safe areas. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0028 · SHOULD · high** — Hide the iOS status bar only when doing so adds value or enhances the experience. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
@@ -433,6 +433,24 @@ Generated 2026-07-28T15:57:04.649Z. 3487 active rules; 8 deprecated rules.
 - **HIG-FOUNDATIONS-LAYOUT-0033 · MUST · high** — Space unfocused tvOS grid rows and columns to prevent overlap when an item receives focus. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0034 · SHOULD · high** — When controls do not belong inside a visionOS window, place them in an ornament. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 - **HIG-FOUNDATIONS-LAYOUT-0035 · MUST · high** — Provide enough space around visionOS interactive components for comfortable visual identification and unobscured hover effects. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0036 · SHOULD · high** — Group related items so people can find information quickly. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0037 · MUST · high** — Ensure content and controls remain clearly distinct when visual grouping techniques are used. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0038 · AVOID · high** — Avoid crowding essential information with nonessential details. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0039 · SHOULD · high** — Extend content to fill its screen or window. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0040 · MUST · high** — Ensure backgrounds and full-screen artwork extend to the edges of the display. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0041 · MUST · high** — Ensure scrollable layouts continue to the bottom and sides of the device screen. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0042 · SHOULD · high** — When content does not span the full window, use a background extension view beside it. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0043 · SHOULD · high** — Differentiate controls from content. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0044 · SHOULD · high** — Use Liquid Glass to give controls a distinct, platform-consistent appearance. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0045 · SHOULD · high** — Use a scroll edge effect instead of a background to transition between content and controls. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0046 · SHOULD · high** — Account for right-to-left reading order when placing important items. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0047 · SHOULD · high** — Align components to improve scanning and communicate organization and hierarchy. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0048 · MUST · high** — Indicate that additional items exist when a collection can’t display everything at once. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0049 · MUST · high** — Ensure every app and game adapts when device or system context changes. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0050 · MUST · high** — Use another adaptation method when the interface doesn’t use SwiftUI or Auto Layout. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0051 · SHOULD · high** — Preview the experience across devices, orientations, localizations, and text sizes. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0052 · SHOULD · high** — When display changes require it, scale artwork to keep important visual content visible. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
+- **HIG-FOUNDATIONS-LAYOUT-0053 · AVOID · high** — Avoid changing artwork’s aspect ratio when adapting to display changes. ([source](https://developer.apple.com/design/human-interface-guidelines/layout))
 ### materials
 
 - **HIG-FOUNDATIONS-MATERIALS-0001 · AVOID · high** — Avoid using Liquid Glass in the content layer. ([source](https://developer.apple.com/design/human-interface-guidelines/materials))
