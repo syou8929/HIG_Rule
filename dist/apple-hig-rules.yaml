@@ -147647,16 +147647,16 @@
   apple_native_rule: Keep loading remaining TV app content in the background after playback begins.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PRINTING-0001
-  title: Make printing discoverable
+  title: Make printing discoverable in standard locations
   category: patterns
   topic: printing
   subtopic: best-practices
   statement:
-    en: Apply the documented Printing guidance to make printing discoverable.
-    ja: 「Printing」において「Make printing discoverable」の指針を適用する。
+    en: Make the print action discoverable by placing it in standard system locations.
+    ja: print actionをstandard system locationに置いて見つけやすくする。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -147674,7 +147674,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Examples include the macOS File menu and an iOS or iPadOS toolbar action that opens an action sheet.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Printing experience on the scoped Apple platforms.
@@ -147682,7 +147682,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Apply the documented Printing guidance to make printing discoverable.” in the documented Printing context?
+      - Does the design satisfy “Make the print action discoverable by placing it in standard system locations.” in the documented Printing context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -147697,14 +147697,14 @@
     retrieved_at: 2026-07-21T22:45:07Z
     source_hash: 5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840
     source_sentence_hash: bc9f05b7771ae94777dce9df83a66b531e6584c48919b4303877c7a1632d2d62
-    evidence_paraphrase: Apply the documented Printing guidance to make printing discoverable.
+    evidence_paraphrase: Make the print action discoverable by placing it in standard system locations.
   tags:
     - patterns
     - printing
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Apply the documented Printing guidance to make printing discoverable.
+  apple_native_rule: Make the print action discoverable by placing it in standard system locations.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PRINTING-0002
   title: Make sure macOS print option interdependencies are clear
@@ -147876,16 +147876,16 @@
   apple_native_rule: Consider storing modified print settings with the document.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PRINTING-0005
-  title: Present a printing option only when it’s possible
+  title: Show a print action only when printing is possible
   category: patterns
   topic: printing
   subtopic: best-practices
   statement:
-    en: Present a printing option only when it’s possible in the documented context.
-    ja: 該当する状況でa printing option only when it’s possibleを表示する。
+    en: Present a print action only when printing is possible.
+    ja: printingが可能な場合だけprint actionを表示する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -147903,7 +147903,8 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Printing is unavailable when there is no printable onscreen content or no printer is available.
+    - Platform and custom-control states are recorded separately.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Printing experience on the scoped Apple platforms.
@@ -147911,7 +147912,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Present a printing option only when it’s possible in the documented context.” in the documented Printing context?
+      - Does the design satisfy “Present a print action only when printing is possible.” in the documented Printing context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -147926,26 +147927,26 @@
     retrieved_at: 2026-07-21T22:45:07Z
     source_hash: 5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840
     source_sentence_hash: a4fa1b92b2034bf4ca1d73b6b0063e99a431da4a2956b7971ab7562292a41adc
-    evidence_paraphrase: Present a printing option only when it’s possible in the documented context.
+    evidence_paraphrase: Present a print action only when printing is possible.
   tags:
     - patterns
     - printing
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Present a printing option only when it’s possible in the documented context.
+  apple_native_rule: Present a print action only when printing is possible.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PRINTING-0006
-  title: Present relevant printing options
+  title: Use the system view for relevant print options
   category: patterns
   topic: printing
   subtopic: best-practices
   statement:
-    en: Present relevant printing options in the documented context.
-    ja: 該当する状況でrelevant printing optionsを表示する。
+    en: When relevant options are supported by the printer, present them in the system-provided print view.
+    ja: relevant optionをprinterがsupportする場合、system-provided print viewに表示する。
   normative_level: SHOULD
-  confidence: low
-  review_required: true
+  confidence: high
+  review_required: false
   polarity: recommend
   severity: warning
   scope:
@@ -147963,7 +147964,7 @@
     components: []
     modalities: []
   conditions:
-    - Apply within the platform, component, and section context identified by the source trace.
+    - Relevant options can include page range, copy count, and double-sided printing.
   exceptions: []
   rationale:
     en: Applying this guidance supports a consistent and usable Printing experience on the scoped Apple platforms.
@@ -147971,7 +147972,7 @@
   checks:
     automated: []
     manual:
-      - Does the design satisfy “Present relevant printing options in the documented context.” in the documented Printing context?
+      - Does the design satisfy “When relevant options are supported by the printer, present them in the system-provided print view.” in the documented Printing context?
   testability: manual
   anti_patterns:
     - Ignoring this guidance in a context where the source section applies.
@@ -147986,14 +147987,14 @@
     retrieved_at: 2026-07-21T22:45:07Z
     source_hash: 5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840
     source_sentence_hash: 467a734069a72d932b57c83a5d9ac5ef083c997da03970dbbdeb4a1b2e84b01d
-    evidence_paraphrase: Present relevant printing options in the documented context.
+    evidence_paraphrase: When relevant options are supported by the printer, present them in the system-provided print view.
   tags:
     - patterns
     - printing
     - best-practices
   priority_rank: 6
   status: active
-  apple_native_rule: Present relevant printing options in the documented context.
+  apple_native_rule: When relevant options are supported by the printer, present them in the system-provided print view.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-PRINTING-0007
   title: Consider a custom category for app-specific macOS print options
@@ -148558,6 +148559,177 @@
   priority_rank: 4
   status: active
   apple_native_rule: Label advanced print settings “Advanced Options.”
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PRINTING-0017
+  title: Dim unavailable macOS File menu printing
+  category: patterns
+  topic: printing
+  subtopic: best-practices
+  statement:
+    en: When printing is unavailable, dim the Print item in the macOS File menu.
+    ja: printingが利用できない場合、macOS File menuのPrint itemをdim表示する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - macos
+    devices:
+      - mac
+    components: []
+    modalities: []
+  conditions:
+    - There is no printable onscreen content or no printer is available.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Printing experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPrintingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When printing is unavailable, dim the Print item in the macOS File menu.” in the documented Printing context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/printing
+    page_title: Printing
+    section_path:
+      - Printing
+      - Best practices
+    retrieved_at: 2026-07-21T22:45:07Z
+    source_hash: 5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840
+    source_sentence_hash: e1f60e8446c7f75c7234d41806b04c5ddbb2977f0c1173bee8d73f9420be7117
+    evidence_paraphrase: When printing is unavailable, dim the Print item in the macOS File menu.
+  tags:
+    - patterns
+    - printing
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When printing is unavailable, dim the Print item in the macOS File menu.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PRINTING-0018
+  title: Remove unavailable iOS and iPadOS printing
+  category: patterns
+  topic: printing
+  subtopic: best-practices
+  statement:
+    en: When printing is unavailable, remove the Print action from the iOS or iPadOS action sheet.
+    ja: printingが利用できない場合、iOSまたはiPadOS action sheetからPrint actionを削除する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: platform-specific
+    platforms:
+      - ios
+      - ipados
+    devices:
+      - iphone
+      - ipad
+    components:
+      - action-sheets
+    modalities: []
+  conditions:
+    - There is no printable onscreen content or no printer is available.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Printing experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPrintingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When printing is unavailable, remove the Print action from the iOS or iPadOS action sheet.” in the documented Printing context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/printing
+    page_title: Printing
+    section_path:
+      - Printing
+      - Best practices
+    retrieved_at: 2026-07-21T22:45:07Z
+    source_hash: 5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840
+    source_sentence_hash: e1f60e8446c7f75c7234d41806b04c5ddbb2977f0c1173bee8d73f9420be7117
+    evidence_paraphrase: When printing is unavailable, remove the Print action from the iOS or iPadOS action sheet.
+  tags:
+    - patterns
+    - printing
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When printing is unavailable, remove the Print action from the iOS or iPadOS action sheet.
+  portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
+- id: HIG-PATTERNS-PRINTING-0019
+  title: Hide or dim an unavailable custom print button
+  category: patterns
+  topic: printing
+  subtopic: best-practices
+  statement:
+    en: When printing is unavailable, hide or dim a custom print button.
+    ja: printingが利用できない場合、custom print buttonをhideまたはdim表示する。
+  normative_level: SHOULD
+  confidence: high
+  review_required: false
+  polarity: recommend
+  severity: warning
+  scope:
+    portability: apple-platform
+    platforms:
+      - ios
+      - ipados
+      - macos
+      - visionos
+    devices:
+      - iphone
+      - ipad
+      - mac
+      - apple-vision-pro
+    components: []
+    modalities: []
+  conditions:
+    - The app implements a custom print button.
+  exceptions: []
+  rationale:
+    en: Applying this guidance supports a consistent and usable Printing experience on the scoped Apple platforms.
+    ja: この指針は、対象AppleプラットフォームにおけるPrintingの一貫性と使いやすさを支えます。
+  checks:
+    automated: []
+    manual:
+      - Does the design satisfy “When printing is unavailable, hide or dim a custom print button.” in the documented Printing context?
+  testability: manual
+  anti_patterns:
+    - Ignoring this guidance in a context where the source section applies.
+  positive_examples:
+    - A design review records how the implementation satisfies this rule and any source-scoped exception.
+  source:
+    url: https://developer.apple.com/design/human-interface-guidelines/printing
+    page_title: Printing
+    section_path:
+      - Printing
+      - Best practices
+    retrieved_at: 2026-07-21T22:45:07Z
+    source_hash: 5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840
+    source_sentence_hash: 0928b8243206d1f0a12460bbcda8e026e9d44c96bd30591c0a18507e5f6e8edc
+    evidence_paraphrase: When printing is unavailable, hide or dim a custom print button.
+  tags:
+    - patterns
+    - printing
+    - best-practices
+  priority_rank: 6
+  status: active
+  apple_native_rule: When printing is unavailable, hide or dim a custom print button.
   portable_interpretation: Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions.
 - id: HIG-PATTERNS-RATINGS-AND-REVIEWS-0001
   title: Request ratings only after demonstrated engagement

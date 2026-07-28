@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "reviewed_at": "2026-07-28T17:19:58Z",
+  "reviewed_at": "2026-07-28T17:26:18Z",
   "review_method": "Rendered Apple HIG guidance, surrounding prose, and structured tables were matched to canonical rules by URL, section path, source hash, and source sentence hash.",
   "official_source_only": true,
   "batches": [
@@ -5544,6 +5544,28 @@
         "HIG-PATTERNS-MODALITY-0017"
       ],
       "review_note": "Expanded Modality from 10 to 17 active atomic rules, recovered nested-task, misleading-dismissal, data-loss, and alert-stacking context, retained three explicit Always and Be sure outcomes as MUST, retained the single-alert Never outcome as MUST_NOT, and corrected the overview's can-governed purpose list to MAY."
+    },
+    {
+      "id": "priority-6-printing-best-practices-context-2026-07-29",
+      "reviewed_at": "2026-07-28T17:26:18Z",
+      "review_method": "Rendered Apple HIG Printing overview, best-practice, platform, macOS, and resource context was reviewed; two completed live renders matched the stored source hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/printing",
+          "source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-PRINTING-0001",
+        "HIG-PATTERNS-PRINTING-0005",
+        "HIG-PATTERNS-PRINTING-0006",
+        "HIG-PATTERNS-PRINTING-0017",
+        "HIG-PATTERNS-PRINTING-0018",
+        "HIG-PATTERNS-PRINTING-0019"
+      ],
+      "review_note": "Completed Printing best-practice coverage, concretized discovery, availability, and relevant-option rules, recovered three unavailable-state rules for macOS, iOS/iPadOS, and custom controls, and introduced no unsupported MUST rules."
     }
   ],
   "rules": {
@@ -34433,6 +34455,56 @@
       "normative_level": "AVOID",
       "conditions": ["The modal task contains a hierarchy of subviews."],
       "review_note": "Recovered the nested-modal button ambiguity separately at AVOID."
+    },
+    "HIG-PATTERNS-PRINTING-0001": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "bc9f05b7771ae94777dce9df83a66b531e6584c48919b4303877c7a1632d2d62", "section_path": ["Printing", "Best practices"]},
+      "title": "Make printing discoverable in standard locations",
+      "statement": {"en": "Make the print action discoverable by placing it in standard system locations.", "ja": "print actionをstandard system locationに置いて見つけやすくする。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Examples include the macOS File menu and an iOS or iPadOS toolbar action that opens an action sheet."],
+      "review_note": "Replaced the generic statement and recorded the platform discovery examples."
+    },
+    "HIG-PATTERNS-PRINTING-0005": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "a4fa1b92b2034bf4ca1d73b6b0063e99a431da4a2956b7971ab7562292a41adc", "section_path": ["Printing", "Best practices"]},
+      "title": "Show a print action only when printing is possible",
+      "statement": {"en": "Present a print action only when printing is possible.", "ja": "printingが可能な場合だけprint actionを表示する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Printing is unavailable when there is no printable onscreen content or no printer is available.", "Platform and custom-control states are recorded separately."],
+      "review_note": "Concretized the availability boundary and separated the three unavailable-state behaviors."
+    },
+    "HIG-PATTERNS-PRINTING-0006": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "467a734069a72d932b57c83a5d9ac5ef083c997da03970dbbdeb4a1b2e84b01d", "section_path": ["Printing", "Best practices"]},
+      "title": "Use the system view for relevant print options",
+      "statement": {"en": "When relevant options are supported by the printer, present them in the system-provided print view.", "ja": "relevant optionをprinterがsupportする場合、system-provided print viewに表示する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["Relevant options can include page range, copy count, and double-sided printing."],
+      "review_note": "Recorded both the relevance and printer-support conditions and the system-view mechanism."
+    },
+    "HIG-PATTERNS-PRINTING-0017": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "e1f60e8446c7f75c7234d41806b04c5ddbb2977f0c1173bee8d73f9420be7117", "section_path": ["Printing", "Best practices"]},
+      "title": "Dim unavailable macOS File menu printing",
+      "statement": {"en": "When printing is unavailable, dim the Print item in the macOS File menu.", "ja": "printingが利用できない場合、macOS File menuのPrint itemをdim表示する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["macos"], "devices": ["mac"], "components": [], "modalities": []},
+      "conditions": ["There is no printable onscreen content or no printer is available."],
+      "review_note": "Recovered the macOS unavailable state as an atomic platform rule."
+    },
+    "HIG-PATTERNS-PRINTING-0018": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "e1f60e8446c7f75c7234d41806b04c5ddbb2977f0c1173bee8d73f9420be7117", "section_path": ["Printing", "Best practices"]},
+      "title": "Remove unavailable iOS and iPadOS printing",
+      "statement": {"en": "When printing is unavailable, remove the Print action from the iOS or iPadOS action sheet.", "ja": "printingが利用できない場合、iOSまたはiPadOS action sheetからPrint actionを削除する。"},
+      "normative_level": "SHOULD",
+      "scope": {"portability": "platform-specific", "platforms": ["ios", "ipados"], "devices": ["iphone", "ipad"], "components": ["action-sheets"], "modalities": []},
+      "conditions": ["There is no printable onscreen content or no printer is available."],
+      "review_note": "Recovered the iOS and iPadOS unavailable state as an atomic platform rule."
+    },
+    "HIG-PATTERNS-PRINTING-0019": {
+      "source": {"source_hash": "5ac149a3a3f271cec08572fdc13de9b9bdf7a87bab729b16ca5d1f4e0ad60840", "source_sentence_hash": "0928b8243206d1f0a12460bbcda8e026e9d44c96bd30591c0a18507e5f6e8edc", "section_path": ["Printing", "Best practices"]},
+      "title": "Hide or dim an unavailable custom print button",
+      "statement": {"en": "When printing is unavailable, hide or dim a custom print button.", "ja": "printingが利用できない場合、custom print buttonをhideまたはdim表示する。"},
+      "normative_level": "SHOULD",
+      "conditions": ["The app implements a custom print button."],
+      "review_note": "Recovered the custom-control unavailable state separately from system locations."
     }
   }
 }

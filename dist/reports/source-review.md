@@ -1,9 +1,9 @@
 # General source-context review
 
-- Reviewed rules: 3511
-- Reviewed batches: 203
+- Reviewed rules: 3517
+- Reviewed batches: 204
 - Official source only: yes
-- Reviewed at: 2026-07-28T17:19:58Z
+- Reviewed at: 2026-07-28T17:26:18Z
 
 This report records source-context and structured-constraint reviews outside the dedicated MUST/MUST_NOT review. It is not a claim of authoritative HIG compliance.
 
@@ -2395,9 +2395,12 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PLAYING-VIDEO-0038 · high — Recovered the direct no-scaling instruction from the media-encoding paragraph. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0039 · high — Recovered relevance as a separate prohibition from the optional poster-image rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
 - HIG-PATTERNS-PLAYING-VIDEO-0040 · high — Recovered the background continuation separately from the playback-readiness rule. ([source](https://developer.apple.com/design/human-interface-guidelines/playing-video))
+- HIG-PATTERNS-PRINTING-0001 · high — Replaced the generic statement and recorded the platform discovery examples. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0002 · high — Retained MUST from the explicit Make sure lead and recorded the dependent-availability context without turning the example into a universal pairing. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0003 · high — Preserved Consider and kept the thumbnail technique as an example. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0004 · high — Preserved Consider and separated optional document storage from the minimum session-retention recommendation. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0005 · high — Concretized the availability boundary and separated the three unavailable-state behaviors. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0006 · high — Recorded both the relevance and printer-support conditions and the system-view mechanism. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0007 · high — Recovered the complete custom-category object and preserved both prerequisites and Consider strength. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0008 · high — Preserved the document-specific prerequisite and Consider strength while keeping listed settings as examples. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0009 · high — Recovered the explicit platform limitation and corrected the generated scope to the unsupported platforms themselves. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
@@ -2408,6 +2411,9 @@ This report records source-context and structured-constraint reviews outside the
 - HIG-PATTERNS-PRINTING-0014 · high — Preserved Consider and the on-demand disclosure behavior. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0015 · high — Recovered the source's minimum retention recommendation separately from optional document-level persistence. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-PRINTING-0016 · high — Recovered the exact label guidance as a separate recommendation rather than combining it with optional disclosure. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0017 · high — Recovered the macOS unavailable state as an atomic platform rule. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0018 · high — Recovered the iOS and iPadOS unavailable state as an atomic platform rule. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
+- HIG-PATTERNS-PRINTING-0019 · high — Recovered the custom-control unavailable state separately from system locations. ([source](https://developer.apple.com/design/human-interface-guidelines/printing))
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0001 · high — Preserved the stable ID on the refreshed paragraph trace and made the engagement threshold concrete. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0002 · high — Preserved the stable ID on the refreshed trace and retained direct Avoid strength. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
 - HIG-PATTERNS-RATINGS-AND-REVIEWS-0003 · high — Preserved the stable ID on the refreshed trace and separated interval and renewed-engagement options. ([source](https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews))
