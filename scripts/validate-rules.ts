@@ -1,5 +1,6 @@
 import { readdir, stat } from "node:fs/promises";
 import { resolve } from "node:path";
+import { isDeepStrictEqual } from "node:util";
 import { Ajv2020 } from "ajv/dist/2020.js";
 import addFormatsModule from "ajv-formats";
 import ruleSchema from "../schemas/rule.schema.json" with { type: "json" };
@@ -12,7 +13,7 @@ import sourceReview from "../src/config/source-review.json" with { type: "json" 
 import { makeCoverage } from "../src/lib/coverage.js";
 import { duplicateGroupKey, duplicateSourceTraceHash, findExactDuplicateGroups, normalizeRuleStatement } from "../src/lib/duplicates.js";
 import { loadRules, loadSourcePages } from "../src/lib/store.js";
-import type { Inventory } from "../src/lib/types.js";
+import type { Inventory, Rule } from "../src/lib/types.js";
 import { now, readJson, sha256, writeJson, writeText } from "../src/lib/util.js";
 
 const ajv = new Ajv2020({ allErrors: true, strict: true });
@@ -30,6 +31,7 @@ type SourceReviewRule = {
   source: { source_hash: string; source_sentence_hash: string; section_path: string[] };
   confidence?: "low" | "medium" | "high";
   review_required?: boolean;
+  scope?: Rule["scope"];
   review_note: string;
 };
 type SourceReviewBatch = {
@@ -39,6 +41,7 @@ type SourceReviewBatch = {
   review_required: boolean;
   pages: Array<{ url: string; source_hash: string }>;
   rule_ids: string[];
+  scope?: Rule["scope"];
   review_note: string;
 };
 const sourceReviewRules = sourceReview.rules as Record<string, SourceReviewRule>;
@@ -181,6 +184,10 @@ const sourceReviewReportRules = sourceReviewIds.map((id) => {
   const expectedConfidence = review?.confidence ?? batch?.confidence;
   if (rule.review_required !== expectedReviewRequired || rule.confidence !== expectedConfidence) {
     errors.push(`${id}: source review state is not applied to the canonical rule`);
+  }
+  const expectedScope = review?.scope ?? batch?.scope;
+  if (expectedScope && !isDeepStrictEqual(rule.scope, expectedScope)) {
+    errors.push(`${id}: source review scope is not applied to the canonical rule`);
   }
   return {
     id,

@@ -6,8 +6,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Offer to add a new pass to Wallet when an action creates one.",
-      "ja": "actionによってnew passが作成されたときWalletへの追加を提案する。"
+      "en": "Offer to add a new pass to Wallet when a person's action creates one.",
+      "ja": "ユーザーの操作によって新しいパスが作成されたら、Walletへの追加を提案する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -34,9 +34,9 @@
       "modalities": []
     },
     "conditions": [
-      "Use one-tap system UI by default.",
-      "Background addition is available for frequent, predictable actions after one-time authorization.",
-      "Offer a review-first custom view when appropriate."
+      "A one-tap system interface can offer addition.",
+      "For frequent, predictable actions, background addition is an option after one-time authorization.",
+      "If the person wants to review the pass first, a custom review view can provide an Add to Apple Wallet button."
     ],
     "exceptions": [],
     "rationale": {
@@ -46,7 +46,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Offer to add a new pass to Wallet when an action creates one.” in the documented Wallet context?"
+        "Does the design satisfy “Offer to add a new pass to Wallet when a person's action creates one.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -63,19 +63,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "c76c4d34b384bd28dcc600016e36474acd959f7bb11d955c198b9601160331ac",
-      "evidence_paraphrase": "Offer to add a new pass to Wallet when an action creates one."
+      "evidence_paraphrase": "Offer to add a new pass to Wallet when a person's action creates one."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Offer to add a new pass to Wallet when an action creates one.",
+    "apple_native_rule": "Offer to add a new pass to Wallet when a person's action creates one.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -85,8 +85,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Apply the documented Wallet guidance to help people add a pass created outside your app.",
-      "ja": "「Wallet」において「Help people add a pass created outside your app」の指針を適用する。"
+      "en": "Help people add a pass created outside your app to Wallet.",
+      "ja": "アプリ外で作成したパスをWalletに追加できるようにする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -113,8 +113,8 @@
       "modalities": []
     },
     "conditions": [
-      "Suggest the pass when it was created on the website or another device.",
-      "The separate declined-suggestion rule protects a person's choice."
+      "For a pass created on a website or another device, suggest adding it when the person next opens the app.",
+      "If the person declines that suggestion, do not ask again for the same pass."
     ],
     "exceptions": [],
     "rationale": {
@@ -124,7 +124,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to help people add a pass created outside your app.” in the documented Wallet context?"
+        "Does the design satisfy “Help people add a pass created outside your app to Wallet.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -141,19 +141,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "cf324585d16e5fab952496c8c9e923dc52de873116db0a9e4bdc1648b590432c",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to help people add a pass created outside your app."
+      "evidence_paraphrase": "Help people add a pass created outside your app to Wallet."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to help people add a pass created outside your app.",
+    "apple_native_rule": "Help people add a pass created outside your app to Wallet.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -163,8 +163,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Present an Add to Apple Wallet button to let people add an existing pass not already in Wallet in the documented context.",
-      "ja": "該当する状況でan Add to Apple Wallet button to let people add an existing pass not already in Walletを表示する。"
+      "en": "Show an Add to Apple Wallet button for an existing pass that is not already in Wallet.",
+      "ja": "既存のパスがまだWalletにない場合は、「Add to Apple Wallet」ボタンを表示する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -191,7 +191,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A person who previously declined or removed a pass can change their mind and use the button.",
+      "The button can appear where the app displays information about the pass; its availability is not a repeated unsolicited suggestion."
     ],
     "exceptions": [],
     "rationale": {
@@ -201,7 +202,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Present an Add to Apple Wallet button to let people add an existing pass not already in Wallet in the documented context.” in the documented Wallet context?"
+        "Does the design satisfy “Show an Add to Apple Wallet button for an existing pass that is not already in Wallet.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -218,19 +219,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "e39c70d39ea10f26ea60bec04b2e44ebf86105651bf789de84e74280a88f8b0a",
-      "evidence_paraphrase": "Present an Add to Apple Wallet button to let people add an existing pass not already in Wallet in the documented context."
+      "evidence_paraphrase": "Show an Add to Apple Wallet button for an existing pass that is not already in Wallet."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Present an Add to Apple Wallet button to let people add an existing pass not already in Wallet in the documented context.",
+    "apple_native_rule": "Show an Add to Apple Wallet button for an existing pass that is not already in Wallet.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -240,8 +241,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Preserve people’s ability to jump from your app to their pass in Wallet.",
-      "ja": "利用者がjump from your app to their pass in Walletできる状態を保つ。"
+      "en": "Let people open a pass in Wallet directly from your app.",
+      "ja": "アプリからWallet内のパスを直接開けるようにする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -268,7 +269,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Where the app shows information about a pass already in Wallet, it can offer a direct link to that pass.",
+      "Use a label that conveys the destination; View in Wallet is an example, not mandatory wording."
     ],
     "exceptions": [],
     "rationale": {
@@ -278,7 +280,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Preserve people’s ability to jump from your app to their pass in Wallet.” in the documented Wallet context?"
+        "Does the design satisfy “Let people open a pass in Wallet directly from your app.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -295,19 +297,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "bee5f9ec4aeee92074126b964e6b45843607705975066f2ffd7a7dcd0ea5f213",
-      "evidence_paraphrase": "Preserve people’s ability to jump from your app to their pass in Wallet."
+      "evidence_paraphrase": "Let people open a pass in Wallet directly from your app."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Preserve people’s ability to jump from your app to their pass in Wallet.",
+    "apple_native_rule": "Let people open a pass in Wallet directly from your app.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -317,8 +319,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Always get a person's permission before deleting passes from Wallet.",
-      "ja": "Walletからpassを削除する前に必ず本人のpermissionを得る。"
+      "en": "Always get permission before deleting a pass from Wallet.",
+      "ja": "Walletからパスを削除する前に、必ずユーザーの許可を得る。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -345,8 +347,8 @@
       "modalities": []
     },
     "conditions": [
-      "An app setting can let people choose manual deletion or authorize automatic removal.",
-      "Show an alert before deletion when necessary."
+      "An in-app setting can let the person choose manual deletion or authorize automatic deletion.",
+      "An alert is another option when needed; the source does not require both a setting and an alert, or a new alert after valid prior authorization."
     ],
     "exceptions": [],
     "rationale": {
@@ -356,7 +358,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Always get a person's permission before deleting passes from Wallet.” in the documented Wallet context?"
+        "Does the design satisfy “Always get permission before deleting a pass from Wallet.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -373,19 +375,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "309b3377009f82ecd9b83e18d9fa1a29ff9adaf9dd5ee648601683f0447d84be",
-      "evidence_paraphrase": "Always get a person's permission before deleting passes from Wallet."
+      "evidence_paraphrase": "Always get permission before deleting a pass from Wallet."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Always get a person's permission before deleting passes from Wallet.",
+    "apple_native_rule": "Always get permission before deleting a pass from Wallet.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -395,8 +397,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Apply the documented Wallet guidance to help the system suggest a pass when relevant.",
-      "ja": "「Wallet」において「Help the system suggest a pass when relevant」の指針を適用する。"
+      "en": "Provide relevance information so the system can suggest a pass when people are likely to need it.",
+      "ja": "必要になりそうなときにシステムがパスを提示できるよう、関連する日時や場所の情報を提供する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -423,7 +425,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Supply information about when and where the pass is relevant.",
+      "The system can use that information for suggestions such as a Lock Screen link; eligible pass types can also appear in a Live Activity.",
+      "These are system presentation possibilities, not a guarantee of display or a requirement to implement a custom Live Activity."
     ],
     "exceptions": [],
     "rationale": {
@@ -433,7 +437,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to help the system suggest a pass when relevant.” in the documented Wallet context?"
+        "Does the design satisfy “Provide relevance information so the system can suggest a pass when people are likely to need it.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -450,19 +454,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "f2dade17cc16e4375656a889a43d9e41623a844b7890e63ef72cdc85545ef6bb",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to help the system suggest a pass when relevant."
+      "evidence_paraphrase": "Provide relevance information so the system can suggest a pass when people are likely to need it."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to help the system suggest a pass when relevant.",
+    "apple_native_rule": "Provide relevance information so the system can suggest a pass when people are likely to need it.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -472,8 +476,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Maintain passes up to date.",
-      "ja": "passes up to dateを維持する。"
+      "en": "Keep passes up to date as their information changes.",
+      "ja": "情報が変わったらパスを更新し、最新の状態に保つ。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -500,7 +504,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Update relevant changes such as a flight delay or a new gate.",
+      "Updating pass content does not mean every change needs an interrupting change message."
     ],
     "exceptions": [],
     "rationale": {
@@ -510,7 +515,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain passes up to date.” in the documented Wallet context?"
+        "Does the design satisfy “Keep passes up to date as their information changes.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -527,10 +532,10 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "d0c7089ab01278f3a941cb80769b2986e8abb68310f5732342d4df8b4d3887d0",
-      "evidence_paraphrase": "Maintain passes up to date."
+      "evidence_paraphrase": "Keep passes up to date as their information changes."
     },
     "tags": [
       "technologies",
@@ -539,7 +544,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain passes up to date.",
+    "apple_native_rule": "Keep passes up to date as their information changes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -549,8 +554,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Use a Wallet change message only for information people need to know promptly.",
-      "ja": "Wallet change messageは利用者がpromptly知る必要があるinformationにだけ使う。"
+      "en": "Use pass change messages only for time-critical information that people need to know.",
+      "ja": "パスの変更メッセージは、ユーザーが知る必要のある時間的に重要な情報に限って使用する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -577,8 +582,8 @@
       "modalities": []
     },
     "conditions": [
-      "A change message interrupts people.",
-      "The separate prohibition excludes marketing and other noncritical communication."
+      "A change message interrupts the person, so reserve it for urgent, consequential updates such as a changed departure gate.",
+      "Routine details, such as a customer-service phone-number change, do not warrant a change message."
     ],
     "exceptions": [],
     "rationale": {
@@ -588,7 +593,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Use a Wallet change message only for information people need to know promptly.” in the documented Wallet context?"
+        "Does the design satisfy “Use pass change messages only for time-critical information that people need to know.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -605,19 +610,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "d35b7fa2bb7e082140c44591346574bd6cc27267713abcafa637f28657f81d9a",
-      "evidence_paraphrase": "Use a Wallet change message only for information people need to know promptly."
+      "evidence_paraphrase": "Use pass change messages only for time-critical information that people need to know."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Use a Wallet change message only for information people need to know promptly.",
+    "apple_native_rule": "Use pass change messages only for time-critical information that people need to know.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -627,8 +632,8 @@
     "topic": "wallet",
     "subtopic": "designing-passes",
     "statement": {
-      "en": "Apply the documented Wallet guidance to design a pass that looks great and works well on all devices.",
-      "ja": "「Wallet」において「Design a pass that looks great and works well on all devices」の指針を適用する。"
+      "en": "Make sure a pass looks and works well on every device where people use it.",
+      "ja": "パスを利用する各デバイスで、見やすく適切に機能するようにする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -655,8 +660,8 @@
       "modalities": []
     },
     "conditions": [
-      "Account for Apple Watch showing less information and fewer images than iPhone.",
-      "The separate essential-information rule handles unavailable elements."
+      "Account for differences in available space, information, and images, particularly on Apple Watch.",
+      "Do not assume every device displays all the same pass elements."
     ],
     "exceptions": [],
     "rationale": {
@@ -666,7 +671,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to design a pass that looks great and works well on all devices.” in the documented Wallet context?"
+        "Does the design satisfy “Make sure a pass looks and works well on every device where people use it.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -683,20 +688,19 @@
         "Wallet",
         "Designing passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "e30d5a0ea516d74a50e20b692cd5f21e2f9d0282a0c5b995ed26cd7087a00d5b",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to design a pass that looks great and works well on all devices."
+      "evidence_paraphrase": "Make sure a pass looks and works well on every device where people use it."
     },
     "tags": [
       "technologies",
       "wallet",
-      "designing-passes",
-      "gaze"
+      "designing-passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to design a pass that looks great and works well on all devices.",
+    "apple_native_rule": "Make sure a pass looks and works well on every device where people use it.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -706,8 +710,8 @@
     "topic": "wallet",
     "subtopic": "designing-passes",
     "statement": {
-      "en": "Maintain the pass front uncluttered.",
-      "ja": "the pass front unclutteredを維持する。"
+      "en": "Keep the front of a pass uncluttered and focused on information people need quickly.",
+      "ja": "パスの表面は情報を詰め込みすぎず、すぐに確認したい内容に絞る。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -734,7 +738,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Place essential information in header fields so it remains visible when the pass is collapsed.",
+      "Keep other important information easy to find, and place infrequently needed details in the additional-information sheet."
     ],
     "exceptions": [],
     "rationale": {
@@ -744,7 +749,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain the pass front uncluttered.” in the documented Wallet context?"
+        "Does the design satisfy “Keep the front of a pass uncluttered and focused on information people need quickly.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -761,10 +766,10 @@
         "Wallet",
         "Designing passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "f09cbbe559de4b0257cdf7981394a18cd2ec7c9769610066242e655170dc039f",
-      "evidence_paraphrase": "Maintain the pass front uncluttered."
+      "evidence_paraphrase": "Keep the front of a pass uncluttered and focused on information people need quickly."
     },
     "tags": [
       "technologies",
@@ -773,7 +778,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain the pass front uncluttered.",
+    "apple_native_rule": "Keep the front of a pass uncluttered and focused on information people need quickly.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -783,8 +788,8 @@
     "topic": "wallet",
     "subtopic": "designing-passes",
     "statement": {
-      "en": "Apply the documented Wallet guidance to make your pass instantly identifiable.",
-      "ja": "「Wallet」において「Make your pass instantly identifiable」の指針を適用する。"
+      "en": "Make a pass instantly recognizable as belonging to your organization or service.",
+      "ja": "どの組織やサービスのパスか、ひと目で分かるようにする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -811,7 +816,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Brand colors, images, icons, and full-art backgrounds are possible ways to establish recognition; the source does not require every technique."
     ],
     "exceptions": [],
     "rationale": {
@@ -821,7 +826,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to make your pass instantly identifiable.” in the documented Wallet context?"
+        "Does the design satisfy “Make a pass instantly recognizable as belonging to your organization or service.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -838,10 +843,10 @@
         "Wallet",
         "Designing passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "bdf646fdae412690e75d7b1e3e684524eb915adf5cd91f1f711cba22ef89dc4a",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to make your pass instantly identifiable."
+      "evidence_paraphrase": "Make a pass instantly recognizable as belonging to your organization or service."
     },
     "tags": [
       "technologies",
@@ -850,7 +855,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to make your pass instantly identifiable.",
+    "apple_native_rule": "Make a pass instantly recognizable as belonging to your organization or service.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -860,8 +865,8 @@
     "topic": "wallet",
     "subtopic": "designing-passes",
     "statement": {
-      "en": "Ensure Wallet pass text has sufficient contrast against solid and image backgrounds.",
-      "ja": "Wallet pass textがsolidおよびimage backgroundに対して十分なcontrastを持つようにする。"
+      "en": "Ensure sufficient contrast between pass text and its background.",
+      "ja": "パスの文字と背景の間に十分なコントラストを確保する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -888,8 +893,8 @@
       "modalities": []
     },
     "conditions": [
-      "Choose label colors that remain legible over solid backgrounds and images.",
-      "For strip images, keep text legible over the image."
+      "Check labels against both solid-color backgrounds and background images.",
+      "Text over a strip image also needs sufficient contrast."
     ],
     "exceptions": [],
     "rationale": {
@@ -901,7 +906,7 @@
         "Measure foreground/background contrast in every supported appearance against the project’s source-scoped accessibility threshold."
       ],
       "manual": [
-        "Does the design satisfy “Ensure Wallet pass text has sufficient contrast against solid and image backgrounds.” in the documented Wallet context?"
+        "Does the design satisfy “Ensure sufficient contrast between pass text and its background.” in the documented Wallet context?"
       ]
     },
     "testability": "hybrid",
@@ -918,19 +923,19 @@
         "Wallet",
         "Designing passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "b25de97eddac32edf26e7758e92b835e76c9aa85dd8c7e7fe086983540e4220d",
-      "evidence_paraphrase": "Ensure Wallet pass text has sufficient contrast against solid and image backgrounds."
+      "evidence_paraphrase": "Ensure sufficient contrast between pass text and its background."
     },
     "tags": [
       "technologies",
       "wallet",
       "designing-passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Ensure Wallet pass text has sufficient contrast against solid and image backgrounds.",
+    "apple_native_rule": "Ensure sufficient contrast between pass text and its background.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -940,8 +945,8 @@
     "topic": "wallet",
     "subtopic": "designing-passes",
     "statement": {
-      "en": "Choose or apply language that works on any device in the documented context.",
-      "ja": "該当する状況ではlanguage that works on any deviceを採用する。"
+      "en": "Use pass language that makes sense on every device where the pass appears.",
+      "ja": "パスを表示するどのデバイスでも意味が通じる表現を使う。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -968,7 +973,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Avoid instructions that assume an interaction available only on one device, such as an iPhone sliding instruction that does not fit Apple Watch."
     ],
     "exceptions": [],
     "rationale": {
@@ -978,7 +983,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply language that works on any device in the documented context.” in the documented Wallet context?"
+        "Does the design satisfy “Use pass language that makes sense on every device where the pass appears.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -995,19 +1000,19 @@
         "Wallet",
         "Designing passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "a50e69ce78393478ca16c859a3541a40dc5797b1c1aa4712f72f0c97b8eddb32",
-      "evidence_paraphrase": "Choose or apply language that works on any device in the documented context."
+      "evidence_paraphrase": "Use pass language that makes sense on every device where the pass appears."
     },
     "tags": [
       "technologies",
       "wallet",
       "designing-passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Choose or apply language that works on any device in the documented context.",
+    "apple_native_rule": "Use pass language that makes sense on every device where the pass appears.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1017,8 +1022,8 @@
     "topic": "wallet",
     "subtopic": "pass-images",
     "statement": {
-      "en": "Maintain image file sizes small.",
-      "ja": "image file sizes smallを維持する。"
+      "en": "Keep pass image files small while preserving good visual quality.",
+      "ja": "見た目の品質を保ちながら、パス画像のファイルサイズを小さくする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1045,7 +1050,8 @@
       "modalities": []
     },
     "conditions": [
-      "Use the smallest image files that still look good to speed email and webpage downloads."
+      "Efficient image files help passes download quickly from email and websites.",
+      "Balance small file sizes with good visual quality."
     ],
     "exceptions": [],
     "rationale": {
@@ -1055,7 +1061,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain image file sizes small.” in the documented Wallet context?"
+        "Does the design satisfy “Keep pass image files small while preserving good visual quality.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1072,10 +1078,10 @@
         "Wallet",
         "Pass images"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "e993f3924721e9af03856362832a0b29c257b5813ae3a5f723919e5f9bb5eb9f",
-      "evidence_paraphrase": "Maintain image file sizes small."
+      "evidence_paraphrase": "Keep pass image files small while preserving good visual quality."
     },
     "tags": [
       "technologies",
@@ -1084,7 +1090,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain image file sizes small.",
+    "apple_native_rule": "Keep pass image files small while preserving good visual quality.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1094,8 +1100,8 @@
     "topic": "wallet",
     "subtopic": "pass-images",
     "statement": {
-      "en": "Make a pass icon available when applicable.",
-      "ja": "必要な場合にa pass iconを利用可能にする。"
+      "en": "Provide an icon for the pass.",
+      "ja": "パス用のアイコンを用意する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1122,8 +1128,8 @@
       "modalities": []
     },
     "conditions": [
-      "The system uses the icon on the Lock Screen, in Mail, and on Wallet passes.",
-      "Use the app icon or a separately designed icon."
+      "The pass icon can reuse the app icon or have a separate design.",
+      "The system uses it in contexts such as the Lock Screen, Mail, and the pass; it applies rounded corners automatically."
     ],
     "exceptions": [],
     "rationale": {
@@ -1133,7 +1139,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make a pass icon available when applicable.” in the documented Wallet context?"
+        "Does the design satisfy “Provide an icon for the pass.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1150,19 +1156,19 @@
         "Wallet",
         "Pass images"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "aea77f73f526049634cba55694585377fe3b0447fe43024c249b630b4f8e7f9b",
-      "evidence_paraphrase": "Make a pass icon available when applicable."
+      "evidence_paraphrase": "Provide an icon for the pass."
     },
     "tags": [
       "technologies",
       "wallet",
       "pass-images"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Make a pass icon available when applicable.",
+    "apple_native_rule": "Provide an icon for the pass.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -1172,8 +1178,8 @@
     "topic": "wallet",
     "subtopic": "logo",
     "statement": {
-      "en": "Exclude inner drop shadows on logo artwork from the applicable experience.",
-      "ja": "該当する体験ではinner drop shadows on logo artworkを避ける。"
+      "en": "Avoid inner drop shadows in pass logos.",
+      "ja": "パスのロゴには内側のドロップシャドウを使わないようにする。"
     },
     "normative_level": "AVOID",
     "confidence": "high",
@@ -1200,7 +1206,7 @@
       "modalities": []
     },
     "conditions": [
-      "Inner drop shadows can reduce logo legibility on the pass."
+      "Inner shadows can reduce logo legibility."
     ],
     "exceptions": [],
     "rationale": {
@@ -1210,7 +1216,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude inner drop shadows on logo artwork from the applicable experience.” in the documented Wallet context?"
+        "Does the design satisfy “Avoid inner drop shadows in pass logos.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1228,10 +1234,10 @@
         "Pass images",
         "Logo"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "0dde961b136147140b93ede7a8e8818c10049754ea2f2f2e355f861542f0e51a",
-      "evidence_paraphrase": "Exclude inner drop shadows on logo artwork from the applicable experience."
+      "evidence_paraphrase": "Avoid inner drop shadows in pass logos."
     },
     "tags": [
       "technologies",
@@ -1239,20 +1245,20 @@
       "pass-images",
       "logo"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Exclude inner drop shadows on logo artwork from the applicable experience.",
+    "apple_native_rule": "Avoid inner drop shadows in pass logos.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0017",
-    "title": "Make it easy for people to add an order to Wallet",
+    "title": "Make Wallet orders easy to add",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "order-tracking",
     "statement": {
-      "en": "Apply the documented Wallet guidance to make it easy for people to add an order to Wallet.",
-      "ja": "「Wallet」において「Make it easy for people to add an order to Wallet」の指針を適用する。"
+      "en": "Make it easy for people to add an order to Wallet.",
+      "ja": "注文をWalletに簡単に追加できるようにする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1279,7 +1285,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "For a completed Apple Pay transaction, the documented app or web order-details integration can add the order automatically.",
+      "In iOS 17 and later, the system Track with Apple Wallet button can be offered in relevant app, website, or email locations; these are implementation options, not mandatory placements."
     ],
     "exceptions": [],
     "rationale": {
@@ -1289,7 +1296,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to make it easy for people to add an order to Wallet.” in the documented Wallet context?"
+        "Does the design satisfy “Make it easy for people to add an order to Wallet.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1306,30 +1313,30 @@
         "Wallet",
         "Order tracking"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "a3be2fe51b6420a525cf9ede4bc4a687a2884f2be14140777a23ff12340e846e",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to make it easy for people to add an order to Wallet."
+      "evidence_paraphrase": "Make it easy for people to add an order to Wallet."
     },
     "tags": [
       "technologies",
       "wallet",
       "order-tracking"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to make it easy for people to add an order to Wallet.",
+    "apple_native_rule": "Make it easy for people to add an order to Wallet.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0018",
-    "title": "Make information about an order available immediately after people place it",
+    "title": "Expose order information immediately",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "order-tracking",
     "statement": {
-      "en": "Apply the documented Wallet guidance to make information about an order available immediately after people place it.",
-      "ja": "「Wallet」において「Make information about an order available immediately after people place it」の指針を適用する。"
+      "en": "Make available order information accessible immediately after the order is placed.",
+      "ja": "注文直後に、その時点でわかっている注文情報を確認できるようにする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1356,8 +1363,8 @@
       "modalities": []
     },
     "conditions": [
-      "Provide available data immediately even when payment, processing, or fulfillment is pending.",
-      "If details are delayed, explain that people can check back later."
+      "Provide available data even while payment, processing, or fulfillment is pending.",
+      "If full details are delayed, explain that the customer can check later; the sample status wording is not mandatory."
     ],
     "exceptions": [],
     "rationale": {
@@ -1367,7 +1374,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to make information about an order available immediately after people place it.” in the documented Wallet context?"
+        "Does the design satisfy “Make available order information accessible immediately after the order is placed.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1384,30 +1391,30 @@
         "Wallet",
         "Order tracking"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "9dba55893f56170b93b088b0b4e178b5cd2d8ace95c985b1558615b0e598532b",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to make information about an order available immediately after people place it."
+      "evidence_paraphrase": "Make available order information accessible immediately after the order is placed."
     },
     "tags": [
       "technologies",
       "wallet",
       "order-tracking"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to make information about an order available immediately after people place it.",
+    "apple_native_rule": "Make available order information accessible immediately after the order is placed.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0019",
-    "title": "Provide fulfillment information as soon as it’s available, and keep the status up to date",
+    "title": "Keep fulfillment information current",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "order-tracking",
     "statement": {
-      "en": "Make fulfillment information as soon as it’s available, and keep the status up to date available when applicable.",
-      "ja": "必要な場合にfulfillment information as soon as it’s available, and keep the status up to dateを利用可能にする。"
+      "en": "Provide fulfillment information as soon as it is available and keep the order status up to date.",
+      "ja": "配送や受け取りの情報がわかり次第提供し、注文状況を最新に保つ。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1434,8 +1441,7 @@
       "modalities": []
     },
     "conditions": [
-      "Update fulfillment data and order status as they change.",
-      "The system can notify customers from the reported fulfillment status."
+      "Report fulfillment/status changes so the system can update the order and, where appropriate, notify the customer."
     ],
     "exceptions": [],
     "rationale": {
@@ -1445,7 +1451,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make fulfillment information as soon as it’s available, and keep the status up to date available when applicable.” in the documented Wallet context?"
+        "Does the design satisfy “Provide fulfillment information as soon as it is available and keep the order status up to date.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1462,10 +1468,10 @@
         "Wallet",
         "Order tracking"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "3e45f5282861c9716be32c519d3ae9802180cc9e2237945d4cbf716aacf76525",
-      "evidence_paraphrase": "Make fulfillment information as soon as it’s available, and keep the status up to date available when applicable."
+      "evidence_paraphrase": "Provide fulfillment information as soon as it is available and keep the order status up to date."
     },
     "tags": [
       "technologies",
@@ -1474,18 +1480,18 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Make fulfillment information as soon as it’s available, and keep the status up to date available when applicable.",
+    "apple_native_rule": "Provide fulfillment information as soon as it is available and keep the order status up to date.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0020",
-    "title": "Use clear, approachable language, and localize the text you provide",
+    "title": "Localize readable Wallet order text",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "order-tracking",
     "statement": {
-      "en": "Choose or apply clear, approachable language, and localize the text you provide in the documented context.",
-      "ja": "該当する状況ではclear, approachable language, and localize the text you provideを採用する。"
+      "en": "Use clear, approachable language and localize the text provided for Wallet orders.",
+      "ja": "Walletの注文情報には、わかりやすく親しみやすい言葉を使い、提供する文章を現地語に対応させる。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1512,8 +1518,7 @@
       "modalities": []
     },
     "conditions": [
-      "Localize order text for all customers.",
-      "The separate price rule records the explicit final-price match."
+      "Help all customers read their order information;0057 separately requires matching the confirmed final price."
     ],
     "exceptions": [],
     "rationale": {
@@ -1523,7 +1528,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Choose or apply clear, approachable language, and localize the text you provide in the documented context.” in the documented Wallet context?"
+        "Does the design satisfy “Use clear, approachable language and localize the text provided for Wallet orders.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1540,30 +1545,30 @@
         "Wallet",
         "Order tracking"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "31e372f74a445ebec1ee59541bb2ff3021cf3796b171d992c7ea1a67aee71d7f",
-      "evidence_paraphrase": "Choose or apply clear, approachable language, and localize the text you provide in the documented context."
+      "evidence_paraphrase": "Use clear, approachable language and localize the text provided for Wallet orders."
     },
     "tags": [
       "technologies",
       "wallet",
       "order-tracking"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Choose or apply clear, approachable language, and localize the text you provide in the documented context.",
+    "apple_native_rule": "Use clear, approachable language and localize the text provided for Wallet orders.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0021",
-    "title": "Provide a link to an area where people manage their order",
+    "title": "Link to order management",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Make a link to an area where people manage their order available when applicable.",
-      "ja": "必要な場合にa link to an area where people manage their orderを利用可能にする。"
+      "en": "Provide a link to where people can manage their order.",
+      "ja": "利用者が注文を管理できる場所へのリンクを提供する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1590,7 +1595,7 @@
       "modalities": []
     },
     "conditions": [
-      "Prefer a universal link so order management works when the app isn't installed."
+      "A universal link lets order management open even when the app is not installed."
     ],
     "exceptions": [],
     "rationale": {
@@ -1600,7 +1605,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Make a link to an area where people manage their order available when applicable.” in the documented Wallet context?"
+        "Does the design satisfy “Provide a link to where people can manage their order.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1618,10 +1623,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "b4ed7f8da1c6dde6c74506fd4a023356174640e468409b1a856a473cf3d6bb91",
-      "evidence_paraphrase": "Make a link to an area where people manage their order available when applicable."
+      "evidence_paraphrase": "Provide a link to where people can manage their order."
     },
     "tags": [
       "technologies",
@@ -1629,20 +1634,20 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Make a link to an area where people manage their order available when applicable.",
+    "apple_native_rule": "Provide a link to where people can manage their order.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0022",
-    "title": "Avoid sending duplicate notifications",
+    "title": "Avoid duplicate order notifications",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Exclude sending duplicate notifications from the applicable experience.",
-      "ja": "該当する体験ではsending duplicate notificationsを避ける。"
+      "en": "Avoid sending duplicate notifications about an order.",
+      "ja": "同じ注文について重複する通知を送ることを避ける。"
     },
     "normative_level": "AVOID",
     "confidence": "high",
@@ -1669,7 +1674,7 @@
       "modalities": []
     },
     "conditions": [
-      "Wallet notifications can be suppressed when an associated app is installed."
+      "Suppressing Wallet order notifications when an associated app is installed is an example of avoiding duplication."
     ],
     "exceptions": [],
     "rationale": {
@@ -1679,7 +1684,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Exclude sending duplicate notifications from the applicable experience.” in the documented Wallet context?"
+        "Does the design satisfy “Avoid sending duplicate notifications about an order.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1697,10 +1702,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "c7087a443bba9f8acd8028b066582d919f08578806e9e87a9ecb6d5f6342cb51",
-      "evidence_paraphrase": "Exclude sending duplicate notifications from the applicable experience."
+      "evidence_paraphrase": "Avoid sending duplicate notifications about an order."
     },
     "tags": [
       "technologies",
@@ -1708,20 +1713,20 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Exclude sending duplicate notifications from the applicable experience.",
+    "apple_native_rule": "Avoid sending duplicate notifications about an order.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0023",
-    "title": "Make it easy for customers to contact the merchant",
+    "title": "Offer useful merchant contact methods",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Apply the documented Wallet guidance to make it easy for customers to contact the merchant.",
-      "ja": "「Wallet」において「Make it easy for customers to contact the merchant」の指針を適用する。"
+      "en": "Make it easy for customers to contact the merchant using a choice of contact methods.",
+      "ja": "複数の連絡方法を用意し、顧客が販売者に問い合わせやすくする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1748,8 +1753,7 @@
       "modalities": []
     },
     "conditions": [
-      "Offer multiple contact methods where possible.",
-      "The separate minimum-contact rule requires a merchant website or landing-page link."
+      "Provide multiple contact methods so people can choose a suitable one;0058 separately records the minimum website or landing-page link."
     ],
     "exceptions": [],
     "rationale": {
@@ -1759,7 +1763,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to make it easy for customers to contact the merchant.” in the documented Wallet context?"
+        "Does the design satisfy “Make it easy for customers to contact the merchant using a choice of contact methods.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1777,10 +1781,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "79a69b644330b004e479055a62d691543e0e3c7cd4a8d41bc9960ca6f63c0087",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to make it easy for customers to contact the merchant."
+      "evidence_paraphrase": "Make it easy for customers to contact the merchant using a choice of contact methods."
     },
     "tags": [
       "technologies",
@@ -1788,20 +1792,20 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to make it easy for customers to contact the merchant.",
+    "apple_native_rule": "Make it easy for customers to contact the merchant using a choice of contact methods.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0024",
-    "title": "Provide enough fulfillment information to track an order",
+    "title": "Provide enough shipping and pickup information",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
       "en": "Provide enough fulfillment information for people to know where their items are and when to expect them.",
-      "ja": "itemの所在と到着見込みを理解できるだけのfulfillment informationを提供する。"
+      "ja": "商品がどこにあり、いつ届くか・受け取れるかを理解できるだけの配送・受け取り情報を提供する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -1828,8 +1832,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply to both shipping and pickup fulfillments.",
-      "Include an estimated arrival time and relevant tracking or pickup information."
+      "Applies to both shipping and pickup fulfillments, including mixed fulfillments within a multi-item order.",
+      "Include the estimated arrival time and relevant tracking or pickup information; do not infer unavailable carrier details."
     ],
     "exceptions": [],
     "rationale": {
@@ -1857,8 +1861,8 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "221df9c7e055d013795667ddd2d392a5711a18a8a6bf13636c8816341bfa43df",
       "evidence_paraphrase": "Provide enough fulfillment information for people to know where their items are and when to expect them."
     },
@@ -1868,20 +1872,20 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
     "apple_native_rule": "Provide enough fulfillment information for people to know where their items are and when to expect them.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0025",
-    "title": "Keep the fulfillment screen centered on order tracking",
+    "title": "Keep fulfillment focused on tracking",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Maintain the fulfillment screen centered on order tracking.",
-      "ja": "the fulfillment screen centered on order trackingを維持する。"
+      "en": "Keep the fulfillment screen focused on order tracking.",
+      "ja": "配送・受け取りの画面は、注文の追跡を中心に構成する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1908,7 +1912,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies to the fulfillment screen; the specific be-sure priority requirement when recommending other services is reviewed separately for atomic addition."
     ],
     "exceptions": [],
     "rationale": {
@@ -1918,7 +1922,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain the fulfillment screen centered on order tracking.” in the documented Wallet context?"
+        "Does the design satisfy “Keep the fulfillment screen focused on order tracking.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -1936,10 +1940,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "0a80d4aad7b54f1b2f853bafddee54c2e455e0ee978eefbfef9fd580422fca84",
-      "evidence_paraphrase": "Maintain the fulfillment screen centered on order tracking."
+      "evidence_paraphrase": "Keep the fulfillment screen focused on order tracking."
     },
     "tags": [
       "technologies",
@@ -1947,20 +1951,20 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Maintain the fulfillment screen centered on order tracking.",
+    "apple_native_rule": "Keep the fulfillment screen focused on order tracking.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0026",
-    "title": "Choose shipping-fulfillment values that match the details you have about the shipping process",
+    "title": "Match shipping status to known details",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Apply the documented Wallet guidance to choose shipping-fulfillment values that match the details you have about the shipping process.",
-      "ja": "「Wallet」において「Choose shipping-fulfillment values that match the details you have about the shipping process」の指針を適用する。"
+      "en": "Choose shipping-fulfillment values that match the information available about the shipping process.",
+      "ja": "把握できている配送情報に合った、配送状況の値を選ぶ。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -1987,7 +1991,9 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "If the carrier is known, provide its name; otherwise keep the default Track Shipment value.",
+      "When interim carrier steps are available, use the corresponding specific status; otherwise use shipped.",
+      "0059 separately requires a tracking link whenever one is available."
     ],
     "exceptions": [],
     "rationale": {
@@ -1997,7 +2003,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to choose shipping-fulfillment values that match the details you have about the shipping process.” in the documented Wallet context?"
+        "Does the design satisfy “Choose shipping-fulfillment values that match the information available about the shipping process.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2015,10 +2021,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "19c62b2e2981d754bc86cb5a4901b20d7dc4c2fdfe0a5d1125d89257d6dd34a6",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to choose shipping-fulfillment values that match the details you have about the shipping process."
+      "evidence_paraphrase": "Choose shipping-fulfillment values that match the information available about the shipping process."
     },
     "tags": [
       "technologies",
@@ -2028,18 +2034,18 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to choose shipping-fulfillment values that match the details you have about the shipping process.",
+    "apple_native_rule": "Choose shipping-fulfillment values that match the information available about the shipping process.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0027",
-    "title": "Keep customers informed through relevant fulfillment status descriptions",
+    "title": "Write relevant fulfillment status descriptions",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Maintain customers informed through relevant fulfillment status descriptions.",
-      "ja": "customers informed through relevant fulfillment status descriptionsを維持する。"
+      "en": "Keep customers informed with accurate, approachable descriptions of the current fulfillment status.",
+      "ja": "現在の配送・受け取り状況に合った、正確でわかりやすい説明で顧客に状況を伝える。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -2066,7 +2072,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "A status description can use the brand’s communication style while remaining clearly related to the actual status."
     ],
     "exceptions": [],
     "rationale": {
@@ -2076,7 +2082,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Maintain customers informed through relevant fulfillment status descriptions.” in the documented Wallet context?"
+        "Does the design satisfy “Keep customers informed with accurate, approachable descriptions of the current fulfillment status.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2094,10 +2100,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "ad37570ae4eac1c42d6266da5e4b3f84561f73e9e9dc9579635731a3aea339dd",
-      "evidence_paraphrase": "Maintain customers informed through relevant fulfillment status descriptions."
+      "evidence_paraphrase": "Keep customers informed with accurate, approachable descriptions of the current fulfillment status."
     },
     "tags": [
       "technologies",
@@ -2107,18 +2113,18 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Maintain customers informed through relevant fulfillment status descriptions.",
+    "apple_native_rule": "Keep customers informed with accurate, approachable descriptions of the current fulfillment status.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0028",
-    "title": "Be direct and thorough when describing an Issue or Canceled status",
+    "title": "Explain issue and cancellation states",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Apply the documented Wallet guidance to be direct and thorough when describing an Issue or Canceled status.",
-      "ja": "「Wallet」において「Be direct and thorough when describing an Issue or Canceled status」の指針を適用する。"
+      "en": "Describe an Issue or Canceled status directly and thoroughly, including the cause and what the customer can do.",
+      "ja": "問題発生やキャンセルの状態は、理由と顧客ができることを含め、率直かつ十分に説明する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -2145,7 +2151,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies when the order status is Issue or Canceled; do not invent a cause that is not known."
     ],
     "exceptions": [],
     "rationale": {
@@ -2155,7 +2161,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to be direct and thorough when describing an Issue or Canceled status.” in the documented Wallet context?"
+        "Does the design satisfy “Describe an Issue or Canceled status directly and thoroughly, including the cause and what the customer can do.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2173,10 +2179,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "6778c467710248d5a2cea1efdb4ed0c93be45bee8234460fe7ea603a53112262",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to be direct and thorough when describing an Issue or Canceled status."
+      "evidence_paraphrase": "Describe an Issue or Canceled status directly and thoroughly, including the cause and what the customer can do."
     },
     "tags": [
       "technologies",
@@ -2184,20 +2190,20 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to be direct and thorough when describing an Issue or Canceled status.",
+    "apple_native_rule": "Describe an Issue or Canceled status directly and thoroughly, including the cause and what the customer can do.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0029",
-    "title": "Request identity information only when it is needed",
+    "title": "Request identity information at the needed moment",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "identity-verification",
     "statement": {
-      "en": "Request Wallet identity information only at the precise moment the current process requires it.",
-      "ja": "current processで必要になる正確な時点にだけWallet identity informationを要求する。"
+      "en": "Request Wallet identity information only when the current process actually requires it.",
+      "ja": "進行中の手続きで本当に必要になった時点に限り、Walletの本人確認情報を要求する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -2207,25 +2213,17 @@
     "scope": {
       "portability": "technology-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "visionos",
-        "watchos"
+        "ios"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-vision-pro",
-        "apple-watch"
+        "iphone"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Wait until people are completing the process or transaction that requires verification.",
-      "The separate prohibition covers premature and account-creation requests."
+      "Applies to the page-documented in-app/App Clip identity verification on iPhone with iOS 16 or later, subject to current device capability.",
+      "Wait until the person is completing the process or transaction requiring verification;0061 separately prohibits premature requests."
     ],
     "exceptions": [],
     "rationale": {
@@ -2235,7 +2233,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Request Wallet identity information only at the precise moment the current process requires it.” in the documented Wallet context?"
+        "Does the design satisfy “Request Wallet identity information only when the current process actually requires it.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2252,30 +2250,30 @@
         "Wallet",
         "Identity verification"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "2a96fe99bf5a3af136d26028a1a2662fabb1e3256c91a2dc038e094e3aa20334",
-      "evidence_paraphrase": "Request Wallet identity information only at the precise moment the current process requires it."
+      "evidence_paraphrase": "Request Wallet identity information only when the current process actually requires it."
     },
     "tags": [
       "technologies",
       "wallet",
       "identity-verification"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Request Wallet identity information only at the precise moment the current process requires it.",
+    "apple_native_rule": "Request Wallet identity information only when the current process actually requires it.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0030",
-    "title": "Request only the identity data the task needs",
+    "title": "Minimize requested Wallet identity data",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "identity-verification",
     "statement": {
       "en": "Request only the Wallet identity data needed to complete the current task.",
-      "ja": "current taskの完了に必要なWallet identity dataだけを要求する。"
+      "ja": "現在の作業を完了するために必要なWalletの本人確認データだけを要求する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -2285,24 +2283,17 @@
     "scope": {
       "portability": "technology-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "visionos",
-        "watchos"
+        "ios"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-vision-pro",
-        "apple-watch"
+        "iphone"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "For age eligibility, request an age threshold instead of a current age or birth date."
+      "Applies to the page-documented in-app/App Clip identity verification on iPhone with iOS 16 or later, subject to current device capability.",
+      "When only age eligibility is needed, request the relevant age threshold instead of current age or date of birth."
     ],
     "exceptions": [],
     "rationale": {
@@ -2329,8 +2320,8 @@
         "Wallet",
         "Identity verification"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "c32c7e2308d500b14b3a32b26ac8bc379b3a43b05d5ed44e57b832273553bae2",
       "evidence_paraphrase": "Request only the Wallet identity data needed to complete the current task."
     },
@@ -2339,20 +2330,20 @@
       "wallet",
       "identity-verification"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
     "apple_native_rule": "Request only the Wallet identity data needed to complete the current task.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0031",
-    "title": "Choose the system-provided verification button that matches your use case and the visual design of your app",
+    "title": "Choose a suitable identity verification button",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "identity-verification",
     "statement": {
-      "en": "Apply the documented Wallet guidance to choose the system-provided verification button that matches your use case and the visual design of your app.",
-      "ja": "「Wallet」において「Choose the system-provided verification button that matches your use case and the visual design of your app」の指針を適用する。"
+      "en": "Choose the system-provided verification button that fits the use case and the app’s visual design.",
+      "ja": "用途とアプリの見た目に合った、システム標準の本人確認ボタンを選ぶ。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -2362,24 +2353,18 @@
     "scope": {
       "portability": "technology-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "visionos",
-        "watchos"
+        "ios"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-vision-pro",
-        "apple-watch"
+        "iphone"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies to the page-documented in-app/App Clip identity verification on iPhone with iOS 16 or later, subject to current device capability.",
+      "Choose wording appropriate to whether verification completes the transaction or is one part of a larger flow.",
+      "The system supplies multiline label variants when horizontal space is constrained; source button artwork was not independently inspected."
     ],
     "exceptions": [],
     "rationale": {
@@ -2389,7 +2374,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to choose the system-provided verification button that matches your use case and the visual design of your app.” in the documented Wallet context?"
+        "Does the design satisfy “Choose the system-provided verification button that fits the use case and the app’s visual design.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2406,30 +2391,30 @@
         "Wallet",
         "Identity verification"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "b0d0d29052bedaaf0a10e4202e2b3bc6df1f3ad721658e5dc95cfd3156f7ed4a",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to choose the system-provided verification button that matches your use case and the visual design of your app."
+      "evidence_paraphrase": "Choose the system-provided verification button that fits the use case and the app’s visual design."
     },
     "tags": [
       "technologies",
       "wallet",
       "identity-verification"
     ],
-    "priority_rank": 6,
+    "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to choose the system-provided verification button that matches your use case and the visual design of your app.",
+    "apple_native_rule": "Choose the system-provided verification button that fits the use case and the app’s visual design.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0032",
-    "title": "Offer Wallet verification only on supported devices",
+    "title": "Offer verification only on capable devices",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "identity-verification",
     "statement": {
-      "en": "Offer Wallet identity verification only when the current device can return the requested information.",
-      "ja": "current deviceがrequested informationを返せる場合だけWallet identity verificationを提供する。"
+      "en": "Offer Wallet identity verification only when the device can return the identity information being requested.",
+      "ja": "要求する本人確認情報を端末が返せる場合に限り、Walletでの本人確認を提供する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -2439,25 +2424,18 @@
     "scope": {
       "portability": "technology-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "visionos",
-        "watchos"
+        "ios"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-vision-pro",
-        "apple-watch"
+        "iphone"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Don't display the Verify with Apple Wallet button when the requested information is unavailable.",
-      "The separate fallback rule covers an alternate verification method."
+      "Applies to the page-documented in-app/App Clip identity verification on iPhone with iOS 16 or later, subject to current device capability.",
+      "Do not display Verify with Apple Wallet when that information is unavailable.",
+      "0060 independently requires a different verification method when the Wallet method is unavailable."
     ],
     "exceptions": [],
     "rationale": {
@@ -2467,7 +2445,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Offer Wallet identity verification only when the current device can return the requested information.” in the documented Wallet context?"
+        "Does the design satisfy “Offer Wallet identity verification only when the device can return the identity information being requested.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2484,19 +2462,19 @@
         "Wallet",
         "Identity verification"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "79b7cede6c2a666ab0b43a6b168c5839f5fc4f2ec22792be7f16be8fd644871b",
-      "evidence_paraphrase": "Offer Wallet identity verification only when the current device can return the requested information."
+      "evidence_paraphrase": "Offer Wallet identity verification only when the device can return the identity information being requested."
     },
     "tags": [
       "technologies",
       "wallet",
       "identity-verification"
     ],
-    "priority_rank": 6,
+    "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Offer Wallet identity verification only when the current device can return the requested information.",
+    "apple_native_rule": "Offer Wallet identity verification only when the device can return the identity information being requested.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -2506,8 +2484,8 @@
     "topic": "wallet",
     "subtopic": "pass-images",
     "statement": {
-      "en": "Keep textual Wallet pass information in accessible text fields or semantic tags instead of images.",
-      "ja": "Wallet passのtextual informationをimageではなくaccessible text fieldまたはsemantic tagに置く。"
+      "en": "Reserve Wallet pass images for visual content rather than textual pass information.",
+      "ja": "Walletのパス画像は視覚的な内容に使い、文字情報を埋め込まない。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -2534,8 +2512,7 @@
       "modalities": []
     },
     "conditions": [
-      "Embedded text isn't accessible and may disappear on devices that don't show the image.",
-      "The separate barcode rule covers machine-readable content."
+      "Embedded image text is inaccessible, and some devices may not display the image."
     ],
     "exceptions": [],
     "rationale": {
@@ -2545,7 +2522,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Keep textual Wallet pass information in accessible text fields or semantic tags instead of images.” in the documented Wallet context?"
+        "Does the design satisfy “Reserve Wallet pass images for visual content rather than textual pass information.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2562,30 +2539,30 @@
         "Wallet",
         "Pass images"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "c61e86b834d98a30c9753d8a60345384e827d089d5e2b5614c8bf414c3177d18",
-      "evidence_paraphrase": "Keep textual Wallet pass information in accessible text fields or semantic tags instead of images."
+      "evidence_paraphrase": "Reserve Wallet pass images for visual content rather than textual pass information."
     },
     "tags": [
       "technologies",
       "wallet",
       "pass-images"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Keep textual Wallet pass information in accessible text fields or semantic tags instead of images.",
+    "apple_native_rule": "Reserve Wallet pass images for visual content rather than textual pass information.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0034",
-    "title": "Clearly describe each item so people can verify that their order contains everything they expect",
+    "title": "Describe all ordered items clearly",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Clearly describe each item so people can verify that their order contains everything they expect.",
-      "ja": "describe each item so people can verify that their order contains everything they expectを明確にする。"
+      "en": "Describe each item clearly so people can confirm the order contains what they expect.",
+      "ja": "注文に期待する商品がすべて含まれているか確認できるよう、各商品を明確に説明する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -2612,7 +2589,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "An order lists every ordered item; an individual fulfillment lists only the items it includes.",
+      "Product price, name, and image are examples of LineItem information; a PDF receipt can be attached to a related transaction when appropriate."
     ],
     "exceptions": [],
     "rationale": {
@@ -2622,7 +2600,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Clearly describe each item so people can verify that their order contains everything they expect.” in the documented Wallet context?"
+        "Does the design satisfy “Describe each item clearly so people can confirm the order contains what they expect.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2640,10 +2618,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "bd155e0360a412b1daf5af0fe2090573ab2b2fbfd6d9b5f71439f80c55d83768",
-      "evidence_paraphrase": "Clearly describe each item so people can verify that their order contains everything they expect."
+      "evidence_paraphrase": "Describe each item clearly so people can confirm the order contains what they expect."
     },
     "tags": [
       "technologies",
@@ -2651,20 +2629,20 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Clearly describe each item so people can verify that their order contains everything they expect.",
+    "apple_native_rule": "Describe each item clearly so people can confirm the order contains what they expect.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0035",
-    "title": "Explain why requested identity information is needed",
+    "title": "Explain the purpose of identity access",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "identity-verification",
     "statement": {
-      "en": "Provide clear purpose text that explains why a person needs to share the requested identity information.",
-      "ja": "requested identity informationを共有する必要性を説明するclearなpurpose textを提供する。"
+      "en": "Provide a clear purpose string explaining why the app needs the requested identity information.",
+      "ja": "要求する本人確認情報がアプリに必要な理由を、明確な利用目的の文章で説明する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -2674,25 +2652,19 @@
     "scope": {
       "portability": "technology-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "visionos",
-        "watchos"
+        "ios"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-vision-pro",
-        "apple-watch"
+        "iphone"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Write a brief, complete, direct, and specific sentence.",
-      "Use sentence case, active voice, and a final period."
+      "Applies to the page-documented in-app/App Clip identity verification on iPhone with iOS 16 or later, subject to current device capability.",
+      "Aim for a brief, complete, direct and specific sentence.",
+      "Use sentence case where applicable, avoid passive voice and end with a period, following the page’s writing guidance.",
+      "The system displays this explanation in the verification sheet; source legal-purpose examples are not legal advice for a particular app."
     ],
     "exceptions": [],
     "rationale": {
@@ -2702,7 +2674,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Provide clear purpose text that explains why a person needs to share the requested identity information.” in the documented Wallet context?"
+        "Does the design satisfy “Provide a clear purpose string explaining why the app needs the requested identity information.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2719,19 +2691,19 @@
         "Wallet",
         "Identity verification"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "9fd128b1d3f87cd9f14c1189fc5e2a2a4c06c8cc3a1a4a1d11b084ca35a57b37",
-      "evidence_paraphrase": "Provide clear purpose text that explains why a person needs to share the requested identity information."
+      "evidence_paraphrase": "Provide a clear purpose string explaining why the app needs the requested identity information."
     },
     "tags": [
       "technologies",
       "wallet",
       "identity-verification"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Provide clear purpose text that explains why a person needs to share the requested identity information.",
+    "apple_native_rule": "Provide a clear purpose string explaining why the app needs the requested identity information.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -2741,8 +2713,8 @@
     "topic": "wallet",
     "subtopic": "identity-verification",
     "statement": {
-      "en": "Clearly disclose whether identity data is retained and, when it is, how long it will be kept.",
-      "ja": "identity dataをretainするかどうかと、retainする場合の期間を明確に開示する。"
+      "en": "Clearly explain whether identity data will be kept and, if so, for how long.",
+      "ja": "本人確認データを保存するかどうかと、保存する場合の期間を明確に説明する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -2752,24 +2724,18 @@
     "scope": {
       "portability": "technology-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "visionos",
-        "watchos"
+        "ios"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-vision-pro",
-        "apple-watch"
+        "iphone"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Specify a PassKit retention duration so the verification sheet can explain it."
+      "Applies to the page-documented in-app/App Clip identity verification on iPhone with iOS 16 or later, subject to current device capability.",
+      "Specify the retention duration with PassKit so the system can display an explanation in the verification sheet.",
+      "A specific period, indefinite retention, or verification-only use are descriptive API examples, not permission to retain data unnecessarily."
     ],
     "exceptions": [],
     "rationale": {
@@ -2779,7 +2745,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Clearly disclose whether identity data is retained and, when it is, how long it will be kept.” in the documented Wallet context?"
+        "Does the design satisfy “Clearly explain whether identity data will be kept and, if so, for how long.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2796,19 +2762,19 @@
         "Wallet",
         "Identity verification"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "e4d8ff4d7385e99bc141d5c2aa0c43c96889496b47d0eb96bf2c70684dc845e1",
-      "evidence_paraphrase": "Clearly disclose whether identity data is retained and, when it is, how long it will be kept."
+      "evidence_paraphrase": "Clearly explain whether identity data will be kept and, if so, for how long."
     },
     "tags": [
       "technologies",
       "wallet",
       "identity-verification"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Clearly disclose whether identity data is retained and, when it is, how long it will be kept.",
+    "apple_native_rule": "Clearly explain whether identity data will be kept and, if so, for how long.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -2818,8 +2784,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Add related Wallet passes as a group.",
-      "ja": "related Wallet passをgroupとして追加する。"
+      "en": "Add related passes to Wallet together as a group.",
+      "ja": "関連する複数のパスは、まとめてWalletに追加できるようにする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -2846,8 +2812,9 @@
       "modalities": []
     },
     "conditions": [
-      "Add app-generated passes together.",
-      "Bundle website-distributed passes for one download."
+      "When an app provides several related passes, offer to add them in one operation.",
+      "For related passes distributed from a website, provide a single downloadable bundle.",
+      "Connecting-flight passes and tickets for several people are examples, not the only qualifying groups."
     ],
     "exceptions": [],
     "rationale": {
@@ -2857,7 +2824,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Add related Wallet passes as a group.” in the documented Wallet context?"
+        "Does the design satisfy “Add related passes to Wallet together as a group.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2874,10 +2841,10 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "dbaed9ece1c060ad73dac5f011820a4b5a5c424f95db6a5eaab14c2c9251fe75",
-      "evidence_paraphrase": "Add related Wallet passes as a group."
+      "evidence_paraphrase": "Add related passes to Wallet together as a group."
     },
     "tags": [
       "technologies",
@@ -2886,7 +2853,7 @@
     ],
     "priority_rank": 6,
     "status": "active",
-    "apple_native_rule": "Add related Wallet passes as a group.",
+    "apple_native_rule": "Add related passes to Wallet together as a group.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -2896,8 +2863,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Tell the system when each Wallet pass expires.",
-      "ja": "各Wallet passのexpirationをsystemへ伝える。"
+      "en": "Tell the system when a pass expires so Wallet can hide it appropriately.",
+      "ja": "Walletが期限切れのパスを適切に非表示にできるよう、有効期限の情報をシステムに伝える。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -2924,7 +2891,8 @@
       "modalities": []
     },
     "conditions": [
-      "Set the expiration date, relevant date, and voided properties correctly so Wallet can hide expired passes."
+      "Set the expiration date, relevant date, and voided properties correctly.",
+      "Wallet handles hiding expired passes and provides a way to revisit them; hiding is not deletion."
     ],
     "exceptions": [],
     "rationale": {
@@ -2934,7 +2902,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Tell the system when each Wallet pass expires.” in the documented Wallet context?"
+        "Does the design satisfy “Tell the system when a pass expires so Wallet can hide it appropriately.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -2951,30 +2919,30 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "df33274868f2bf0565ddda3bca1bfa1555fd6baeede57b04ca5aacdb3b765c43",
-      "evidence_paraphrase": "Tell the system when each Wallet pass expires."
+      "evidence_paraphrase": "Tell the system when a pass expires so Wallet can hide it appropriately."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Tell the system when each Wallet pass expires.",
+    "apple_native_rule": "Tell the system when a pass expires so Wallet can hide it appropriately.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0039",
-    "title": "Provide the required Wallet order logo asset",
+    "title": "Provide a suitable Wallet order logo",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "order-tracking",
     "statement": {
-      "en": "Provide a recognizable high-resolution Wallet order logo with the documented format, size, and background.",
-      "ja": "documented format、size、backgroundを満たすrecognizableなhigh-resolution Wallet order logoを提供する。"
+      "en": "Provide a recognizable, high-resolution Wallet order logo using the documented format, size, and background.",
+      "ja": "指定の形式・サイズ・背景を用い、見分けやすく高解像度のWallet注文用ロゴを提供する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -3001,9 +2969,8 @@
       "modalities": []
     },
     "conditions": [
-      "Use PNG or JPEG at 300×300 pixels.",
-      "Use a nontransparent background.",
-      "Check recognition at dashboard and detail-view sizes."
+      "Use PNG or JPEG at 300×300 pixels with a nontransparent background.",
+      "Check that the logo is recognizable at both dashboard and detail-view sizes."
     ],
     "exceptions": [],
     "rationale": {
@@ -3013,7 +2980,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Provide a recognizable high-resolution Wallet order logo with the documented format, size, and background.” in the documented Wallet context?"
+        "Does the design satisfy “Provide a recognizable, high-resolution Wallet order logo using the documented format, size, and background.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3030,30 +2997,30 @@
         "Wallet",
         "Order tracking"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "ca490677389231e81d36dbf73770a520465863e9cc3293262b67e90729bc17ed",
-      "evidence_paraphrase": "Provide a recognizable high-resolution Wallet order logo with the documented format, size, and background."
+      "evidence_paraphrase": "Provide a recognizable, high-resolution Wallet order logo using the documented format, size, and background."
     },
     "tags": [
       "technologies",
       "wallet",
       "order-tracking"
     ],
-    "priority_rank": 6,
+    "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Provide a recognizable high-resolution Wallet order logo with the documented format, size, and background.",
+    "apple_native_rule": "Provide a recognizable, high-resolution Wallet order logo using the documented format, size, and background.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0040",
-    "title": "Provide required Wallet product image assets",
+    "title": "Provide distinct Wallet product images",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "order-tracking",
     "statement": {
-      "en": "Provide distinct high-resolution Wallet product images with the documented format, size, and background.",
-      "ja": "documented format、size、backgroundを満たすdistinctなhigh-resolution Wallet product imageを提供する。"
+      "en": "Provide distinct, high-resolution Wallet product images using the documented format, size, and background.",
+      "ja": "指定の形式・サイズ・背景を用い、商品を見分けやすい高解像度のWallet用商品画像を提供する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -3080,9 +3047,8 @@
       "modalities": []
     },
     "conditions": [
-      "Use PNG or JPEG at 300×300 pixels for each product.",
-      "Use a solid nontransparent background and a straightforward depiction.",
-      "Avoid busy lifestyle contexts that obscure the item at small sizes."
+      "For each product, use PNG or JPEG at 300×300 pixels and a solid, nontransparent background.",
+      "Use a straightforward depiction; busy or lifestyle backgrounds can obscure an item at small sizes."
     ],
     "exceptions": [],
     "rationale": {
@@ -3092,7 +3058,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Provide distinct high-resolution Wallet product images with the documented format, size, and background.” in the documented Wallet context?"
+        "Does the design satisfy “Provide distinct, high-resolution Wallet product images using the documented format, size, and background.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3109,30 +3075,30 @@
         "Wallet",
         "Order tracking"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "4a7dec7a9cb2c85d4f46367676264483de198766d431212f85d1fa0031fc9bd5",
-      "evidence_paraphrase": "Provide distinct high-resolution Wallet product images with the documented format, size, and background."
+      "evidence_paraphrase": "Provide distinct, high-resolution Wallet product images using the documented format, size, and background."
     },
     "tags": [
       "technologies",
       "wallet",
       "order-tracking"
     ],
-    "priority_rank": 6,
+    "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Provide distinct high-resolution Wallet product images with the documented format, size, and background.",
+    "apple_native_rule": "Provide distinct, high-resolution Wallet product images using the documented format, size, and background.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0041",
-    "title": "In general, keep text brief",
+    "title": "Prefer brief Wallet order text",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "order-tracking",
     "statement": {
-      "en": "Apply the documented Wallet guidance to in general, keep text brief.",
-      "ja": "「Wallet」において「In general, keep text brief」の指針を適用する。"
+      "en": "In general, keep Wallet order text brief.",
+      "ja": "Walletの注文情報の文章は、通常は簡潔にする。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -3159,7 +3125,7 @@
       "modalities": []
     },
     "conditions": [
-      "The system can truncate text that is too long."
+      "Long text can be truncated by the system."
     ],
     "exceptions": [],
     "rationale": {
@@ -3169,7 +3135,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to in general, keep text brief.” in the documented Wallet context?"
+        "Does the design satisfy “In general, keep Wallet order text brief.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3186,30 +3152,30 @@
         "Wallet",
         "Order tracking"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "8a604c036280ed4211466a6b1f8c0707c210f969bdf941b97c92549efa6f6ff7",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to in general, keep text brief."
+      "evidence_paraphrase": "In general, keep Wallet order text brief."
     },
     "tags": [
       "technologies",
       "wallet",
       "order-tracking"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to in general, keep text brief.",
+    "apple_native_rule": "In general, keep Wallet order text brief.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0042",
-    "title": "Supply a prioritized list of your apps that might be installed on the device",
+    "title": "Prioritize associated order apps",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Apply the documented Wallet guidance to supply a prioritized list of your apps that might be installed on the device.",
-      "ja": "「Wallet」において「Supply a prioritized list of your apps that might be installed on the device」の指針を適用する。"
+      "en": "Supply a prioritized list of the app’s associated apps that might be installed on the device.",
+      "ja": "端末にインストールされている可能性がある関連アプリを、優先順に並べて指定する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -3236,8 +3202,8 @@
       "modalities": []
     },
     "conditions": [
-      "Order installed apps by preferred link priority.",
-      "The system uses the first installed app, or the list's first app when none are installed."
+      "The system links to the highest-priority installed app; if none is installed, it links to the first app on the list.",
+      "List the relevant apps by preference, not only apps already known to be installed."
     ],
     "exceptions": [],
     "rationale": {
@@ -3247,7 +3213,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Apply the documented Wallet guidance to supply a prioritized list of your apps that might be installed on the device.” in the documented Wallet context?"
+        "Does the design satisfy “Supply a prioritized list of the app’s associated apps that might be installed on the device.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3265,10 +3231,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "b431e43d39584e09ac69e83186e240e2e65c752f6d5df9d03143baa7f4d57ece",
-      "evidence_paraphrase": "Apply the documented Wallet guidance to supply a prioritized list of your apps that might be installed on the device."
+      "evidence_paraphrase": "Supply a prioritized list of the app’s associated apps that might be installed on the device."
     },
     "tags": [
       "technologies",
@@ -3276,9 +3242,9 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Apply the documented Wallet guidance to supply a prioritized list of your apps that might be installed on the device.",
+    "apple_native_rule": "Supply a prioritized list of the app’s associated apps that might be installed on the device.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3288,8 +3254,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Never ask again after a person declines a suggestion to add a pass to Wallet.",
-      "ja": "Walletへのpass追加提案を利用者がdeclineした後は再度尋ねない。"
+      "en": "Do not repeat a suggestion to add a pass after the person declines it.",
+      "ja": "パスの追加提案をユーザーが断ったら、同じパスについて繰り返し提案しない。"
     },
     "normative_level": "MUST_NOT",
     "confidence": "high",
@@ -3316,7 +3282,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies after a person declines the suggestion for that pass.",
+      "Keeping an Add to Apple Wallet button available for a later user-initiated choice is compatible with this restriction."
     ],
     "exceptions": [],
     "rationale": {
@@ -3326,7 +3293,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Never ask again after a person declines a suggestion to add a pass to Wallet.” in the documented Wallet context?"
+        "Does the design satisfy “Do not repeat a suggestion to add a pass after the person declines it.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3343,19 +3310,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "78c5151e17de7b184dff3756fe965e3850a222e9620eea8dc3951b1584188272",
-      "evidence_paraphrase": "Never ask again after a person declines a suggestion to add a pass to Wallet."
+      "evidence_paraphrase": "Do not repeat a suggestion to add a pass after the person declines it."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Never ask again after a person declines a suggestion to add a pass to Wallet.",
+    "apple_native_rule": "Do not repeat a suggestion to add a pass after the person declines it.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3365,8 +3332,8 @@
     "topic": "wallet",
     "subtopic": "passes",
     "statement": {
-      "en": "Never use a Wallet change message for marketing or other noncritical communication.",
-      "ja": "Wallet change messageをmarketingやその他のnoncritical communicationに使わない。"
+      "en": "Never use pass change messages for marketing or other noncritical communication.",
+      "ja": "パスの変更メッセージを、宣伝や緊急性のない連絡に使用してはならない。"
     },
     "normative_level": "MUST_NOT",
     "confidence": "high",
@@ -3393,7 +3360,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies to change messages that interrupt the person, not to every update of stored pass information."
     ],
     "exceptions": [],
     "rationale": {
@@ -3403,7 +3370,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Never use a Wallet change message for marketing or other noncritical communication.” in the documented Wallet context?"
+        "Does the design satisfy “Never use pass change messages for marketing or other noncritical communication.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3420,19 +3387,19 @@
         "Wallet",
         "Passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "bf698db69aba4db215f3adfb214cddc51a7a45db31e5004b3a9ef6cdc5de3f39",
-      "evidence_paraphrase": "Never use a Wallet change message for marketing or other noncritical communication."
+      "evidence_paraphrase": "Never use pass change messages for marketing or other noncritical communication."
     },
     "tags": [
       "technologies",
       "wallet",
       "passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Never use a Wallet change message for marketing or other noncritical communication.",
+    "apple_native_rule": "Never use pass change messages for marketing or other noncritical communication.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3442,8 +3409,8 @@
     "topic": "wallet",
     "subtopic": "pass-anatomy",
     "statement": {
-      "en": "Include semantic tags in poster event passes and semantic boarding passes.",
-      "ja": "poster event passとsemantic boarding passにsemantic tagを含める。"
+      "en": "Provide semantic tags for poster event tickets and semantic boarding passes so the system can lay them out automatically.",
+      "ja": "ポスター形式のイベントチケットとセマンティック形式の搭乗券には、自動レイアウトに必要なセマンティックタグを指定する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -3470,7 +3437,7 @@
       "modalities": []
     },
     "conditions": [
-      "Semantic tags enable automatic layout for these pass types."
+      "This requirement applies to poster event tickets and semantic boarding passes, not indiscriminately to every pass style."
     ],
     "exceptions": [],
     "rationale": {
@@ -3480,7 +3447,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Include semantic tags in poster event passes and semantic boarding passes.” in the documented Wallet context?"
+        "Does the design satisfy “Provide semantic tags for poster event tickets and semantic boarding passes so the system can lay them out automatically.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3497,19 +3464,19 @@
         "Wallet",
         "Pass anatomy"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "a116ae61fa679401b55cb47bf98899d9240ddc9aa00d177072d59c32f179d483",
-      "evidence_paraphrase": "Include semantic tags in poster event passes and semantic boarding passes."
+      "evidence_paraphrase": "Provide semantic tags for poster event tickets and semantic boarding passes so the system can lay them out automatically."
     },
     "tags": [
       "technologies",
       "wallet",
       "pass-anatomy"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Include semantic tags in poster event passes and semantic boarding passes.",
+    "apple_native_rule": "Provide semantic tags for poster event tickets and semantic boarding passes so the system can lay them out automatically.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3519,8 +3486,8 @@
     "topic": "wallet",
     "subtopic": "pass-anatomy",
     "statement": {
-      "en": "Include pass fields alongside semantic tags so semantic passes display on older iOS versions.",
-      "ja": "semantic passがolder iOSで表示されるようsemantic tagとともにpass fieldを含める。"
+      "en": "Also include pass fields in poster event tickets and semantic boarding passes so they display on older iOS versions.",
+      "ja": "ポスター形式のイベントチケットとセマンティック形式の搭乗券には、古いiOSでも表示できるようパスフィールドも含める。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -3547,7 +3514,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply to poster event passes and semantic boarding passes."
+      "Pass fields accompany the semantic tags for these pass types to support older iOS versions."
     ],
     "exceptions": [],
     "rationale": {
@@ -3557,7 +3524,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Include pass fields alongside semantic tags so semantic passes display on older iOS versions.” in the documented Wallet context?"
+        "Does the design satisfy “Also include pass fields in poster event tickets and semantic boarding passes so they display on older iOS versions.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3574,19 +3541,19 @@
         "Wallet",
         "Pass anatomy"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "a116ae61fa679401b55cb47bf98899d9240ddc9aa00d177072d59c32f179d483",
-      "evidence_paraphrase": "Include pass fields alongside semantic tags so semantic passes display on older iOS versions."
+      "evidence_paraphrase": "Also include pass fields in poster event tickets and semantic boarding passes so they display on older iOS versions."
     },
     "tags": [
       "technologies",
       "wallet",
       "pass-anatomy"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Include pass fields alongside semantic tags so semantic passes display on older iOS versions.",
+    "apple_native_rule": "Also include pass fields in poster event tickets and semantic boarding passes so they display on older iOS versions.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3596,8 +3563,8 @@
     "topic": "wallet",
     "subtopic": "designing-passes",
     "statement": {
-      "en": "Never place essential pass information in elements that may be unavailable on a supported device.",
-      "ja": "supported deviceで利用できない可能性があるelementにessential pass informationを置かない。"
+      "en": "Do not place essential pass information only in elements that may be unavailable on some devices.",
+      "ja": "一部のデバイスで表示されない可能性がある要素だけに、パスの重要な情報を載せてはならない。"
     },
     "normative_level": "MUST_NOT",
     "confidence": "high",
@@ -3624,7 +3591,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apple Watch can show less information and fewer images than iPhone."
+      "Account for device differences, including the reduced information and image support on Apple Watch."
     ],
     "exceptions": [],
     "rationale": {
@@ -3634,7 +3601,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Never place essential pass information in elements that may be unavailable on a supported device.” in the documented Wallet context?"
+        "Does the design satisfy “Do not place essential pass information only in elements that may be unavailable on some devices.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3651,19 +3618,19 @@
         "Wallet",
         "Designing passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "22e3f6c32d37d7bad91204832b5ec30bdef0e6573c5b96d6ff82ac3828624fde",
-      "evidence_paraphrase": "Never place essential pass information in elements that may be unavailable on a supported device."
+      "evidence_paraphrase": "Do not place essential pass information only in elements that may be unavailable on some devices."
     },
     "tags": [
       "technologies",
       "wallet",
       "designing-passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Never place essential pass information in elements that may be unavailable on a supported device.",
+    "apple_native_rule": "Do not place essential pass information only in elements that may be unavailable on some devices.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3673,8 +3640,8 @@
     "topic": "wallet",
     "subtopic": "designing-passes",
     "statement": {
-      "en": "Avoid adding padding to Wallet pass images.",
-      "ja": "Wallet pass imageへのpadding追加を避ける。"
+      "en": "Avoid padding around pass images that can be cropped on Apple Watch.",
+      "ja": "Apple Watchで切り取られる可能性があるため、パス画像の周囲に余白を設けないようにする。"
     },
     "normative_level": "AVOID",
     "confidence": "high",
@@ -3701,7 +3668,7 @@
       "modalities": []
     },
     "conditions": [
-      "watchOS can crop white space from some images."
+      "Account for watchOS image cropping when preparing images that can appear on Apple Watch."
     ],
     "exceptions": [],
     "rationale": {
@@ -3711,7 +3678,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Avoid adding padding to Wallet pass images.” in the documented Wallet context?"
+        "Does the design satisfy “Avoid padding around pass images that can be cropped on Apple Watch.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3728,19 +3695,19 @@
         "Wallet",
         "Designing passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "22e3f6c32d37d7bad91204832b5ec30bdef0e6573c5b96d6ff82ac3828624fde",
-      "evidence_paraphrase": "Avoid adding padding to Wallet pass images."
+      "evidence_paraphrase": "Avoid padding around pass images that can be cropped on Apple Watch."
     },
     "tags": [
       "technologies",
       "wallet",
       "designing-passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Avoid adding padding to Wallet pass images.",
+    "apple_native_rule": "Avoid padding around pass images that can be cropped on Apple Watch.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3750,8 +3717,8 @@
     "topic": "wallet",
     "subtopic": "boarding-passes",
     "statement": {
-      "en": "Use semantic tags to define airline boarding passes.",
-      "ja": "airline boarding passの定義にsemantic tagを使う。"
+      "en": "Use semantic tags for airline boarding passes.",
+      "ja": "航空会社の搭乗券にはセマンティックタグを使う。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -3778,7 +3745,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies to airline boarding passes.",
+      "A boarding pass typically represents one trip with an origin and destination."
     ],
     "exceptions": [],
     "rationale": {
@@ -3788,7 +3756,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Use semantic tags to define airline boarding passes.” in the documented Wallet context?"
+        "Does the design satisfy “Use semantic tags for airline boarding passes.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3806,10 +3774,10 @@
         "Pass styles",
         "Boarding passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "05ff175fc2e109b7f0672ea2548021cd120045396ffc138a6726154e92d4bf07",
-      "evidence_paraphrase": "Use semantic tags to define airline boarding passes."
+      "evidence_paraphrase": "Use semantic tags for airline boarding passes."
     },
     "tags": [
       "technologies",
@@ -3817,9 +3785,9 @@
       "pass-styles",
       "boarding-passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Use semantic tags to define airline boarding passes.",
+    "apple_native_rule": "Use semantic tags for airline boarding passes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3829,8 +3797,8 @@
     "topic": "wallet",
     "subtopic": "boarding-passes",
     "statement": {
-      "en": "Use pass fields to define transit passes other than airline boarding passes.",
-      "ja": "airline boarding pass以外のtransit passの定義にpass fieldを使う。"
+      "en": "Use pass fields for non-airline boarding passes.",
+      "ja": "航空会社以外の乗車券や乗船券にはパスフィールドを使う。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -3857,7 +3825,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies to non-airline transportation passes, such as train, bus, boat, or generic-transit passes."
     ],
     "exceptions": [],
     "rationale": {
@@ -3867,7 +3835,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Use pass fields to define transit passes other than airline boarding passes.” in the documented Wallet context?"
+        "Does the design satisfy “Use pass fields for non-airline boarding passes.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3885,10 +3853,10 @@
         "Pass styles",
         "Boarding passes"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "05ff175fc2e109b7f0672ea2548021cd120045396ffc138a6726154e92d4bf07",
-      "evidence_paraphrase": "Use pass fields to define transit passes other than airline boarding passes."
+      "evidence_paraphrase": "Use pass fields for non-airline boarding passes."
     },
     "tags": [
       "technologies",
@@ -3896,9 +3864,9 @@
       "pass-styles",
       "boarding-passes"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Use pass fields to define transit passes other than airline boarding passes.",
+    "apple_native_rule": "Use pass fields for non-airline boarding passes.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3908,8 +3876,8 @@
     "topic": "wallet",
     "subtopic": "pass-images",
     "statement": {
-      "en": "Create Wallet pass images as PNG assets at @2x and @3x using the documented filenames and dimensions.",
-      "ja": "Wallet pass imageをdocumented filenameとdimensionの@2x/@3x PNG assetとして作成する。"
+      "en": "Create pass images as @2x and @3x PNG assets using the filenames and dimensions for the chosen asset type and pass style.",
+      "ja": "選んだ画像の種類とパス形式に対応するファイル名・寸法を用い、@2xと@3xのPNG画像を作成する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -3936,14 +3904,15 @@
       "modalities": []
     },
     "conditions": [
-      "Logo: logo.png, 50–160 pt wide and 50 pt high.",
-      "Primary logo: primaryLogo.png, 30–126 pt wide and 30 pt high.",
-      "Secondary logo: secondaryLogo.png, 12–135 pt wide and 12 pt high.",
-      "Icon: icon.png, 38×38 pt.",
-      "Strip image: strip.png, 375×144 pt.",
-      "Thumbnail: thumbnail.png, 60–90 pt wide and 90 pt high.",
-      "Nonposter background: background.png, 343×503 pt; poster background: artwork.png, 358×448 pt.",
-      "Airline boarding-pass footer: footer.png, 268×15 pt."
+      "The specifications apply when using the corresponding supported asset type; they do not require every pass to include every image type.",
+      "For non-semantic airline boarding passes, non-airline boarding passes, coupons, non-poster event tickets, generic passes, and store cards: logo.png, 50–160 pt wide and 50 pt high.",
+      "For airline boarding passes, poster event tickets, and poster generic passes: primaryLogo.png, 30–126 pt wide and 30 pt high.",
+      "For poster event tickets: secondaryLogo.png, 12–135 pt wide and 12 pt high.",
+      "For all pass styles: icon.png, 38×38 pt.",
+      "For coupons and store cards: strip.png, 375×144 pt.",
+      "For event tickets and generic passes: thumbnail.png, 60–90 pt wide and 90 pt high.",
+      "For non-poster event-ticket backgrounds: background.png, 343×503 pt. For poster event tickets and poster generic passes: artwork.png, 358×448 pt.",
+      "For airline boarding-pass footers: footer.png, 268×15 pt."
     ],
     "exceptions": [],
     "rationale": {
@@ -3953,7 +3922,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Create Wallet pass images as PNG assets at @2x and @3x using the documented filenames and dimensions.” in the documented Wallet context?"
+        "Does the design satisfy “Create pass images as @2x and @3x PNG assets using the filenames and dimensions for the chosen asset type and pass style.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -3970,19 +3939,19 @@
         "Wallet",
         "Pass images"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "433bedda58eefdd9ce2aa0f816bcfbda80c4c83f1f4fa316401ba7bae025c15b",
-      "evidence_paraphrase": "Create Wallet pass images as PNG assets at @2x and @3x using the documented filenames and dimensions."
+      "evidence_paraphrase": "Create pass images as @2x and @3x PNG assets using the filenames and dimensions for the chosen asset type and pass style."
     },
     "tags": [
       "technologies",
       "wallet",
       "pass-images"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Create Wallet pass images as PNG assets at @2x and @3x using the documented filenames and dimensions.",
+    "apple_native_rule": "Create pass images as @2x and @3x PNG assets using the filenames and dimensions for the chosen asset type and pass style.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -3992,8 +3961,8 @@
     "topic": "wallet",
     "subtopic": "pass-images",
     "statement": {
-      "en": "Use text fields and semantic tags instead of images for textual pass information.",
-      "ja": "textual pass informationにはimageではなくtext fieldとsemantic tagを使う。"
+      "en": "Provide textual pass information through text fields and semantic tags.",
+      "ja": "パスの文字情報は、テキストフィールドやセマンティックタグで提供する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -4020,7 +3989,8 @@
       "modalities": []
     },
     "conditions": [
-      "Embedded image text isn't accessible and images may not appear on every device."
+      "Embedded image text is inaccessible, and images may not appear on every device.",
+      "Use the text-bearing structures appropriate to the pass style."
     ],
     "exceptions": [],
     "rationale": {
@@ -4030,7 +4000,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Use text fields and semantic tags instead of images for textual pass information.” in the documented Wallet context?"
+        "Does the design satisfy “Provide textual pass information through text fields and semantic tags.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4047,19 +4017,19 @@
         "Wallet",
         "Pass images"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "ad4bdc1febc86f76742a53b462cf93e929b2f6e24e8d8ac46fd74c91c6a30a98",
-      "evidence_paraphrase": "Use text fields and semantic tags instead of images for textual pass information."
+      "evidence_paraphrase": "Provide textual pass information through text fields and semantic tags."
     },
     "tags": [
       "technologies",
       "wallet",
       "pass-images"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Use text fields and semantic tags instead of images for textual pass information.",
+    "apple_native_rule": "Provide textual pass information through text fields and semantic tags.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -4069,8 +4039,8 @@
     "topic": "wallet",
     "subtopic": "pass-images",
     "statement": {
-      "en": "Use Pass Designer or corresponding APIs to add barcodes instead of embedding them in pass images.",
-      "ja": "barcodeはpass imageへ埋め込まずPass Designerまたは対応APIで追加する。"
+      "en": "Add pass barcodes with Pass Designer or the corresponding APIs instead of embedding them in images.",
+      "ja": "パスのバーコードは画像に埋め込まず、Pass Designerまたは対応するAPIで追加する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -4097,7 +4067,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies when the pass includes a barcode.",
+      "Pass Designer and the corresponding APIs are alternative supported authoring paths."
     ],
     "exceptions": [],
     "rationale": {
@@ -4107,7 +4078,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Use Pass Designer or corresponding APIs to add barcodes instead of embedding them in pass images.” in the documented Wallet context?"
+        "Does the design satisfy “Add pass barcodes with Pass Designer or the corresponding APIs instead of embedding them in images.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4124,19 +4095,19 @@
         "Wallet",
         "Pass images"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "ad4bdc1febc86f76742a53b462cf93e929b2f6e24e8d8ac46fd74c91c6a30a98",
-      "evidence_paraphrase": "Use Pass Designer or corresponding APIs to add barcodes instead of embedding them in pass images."
+      "evidence_paraphrase": "Add pass barcodes with Pass Designer or the corresponding APIs instead of embedding them in images."
     },
     "tags": [
       "technologies",
       "wallet",
       "pass-images"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Use Pass Designer or corresponding APIs to add barcodes instead of embedding them in pass images.",
+    "apple_native_rule": "Add pass barcodes with Pass Designer or the corresponding APIs instead of embedding them in images.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -4146,8 +4117,8 @@
     "topic": "wallet",
     "subtopic": "strip-image",
     "statement": {
-      "en": "Keep the areas behind strip-image text uncluttered.",
-      "ja": "strip imageのtext背面領域をunclutteredに保つ。"
+      "en": "Keep the area behind strip-image text uncluttered so the text remains readable.",
+      "ja": "ストリップ画像に重なる文字を読みやすくするため、その背後をすっきりさせる。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -4174,8 +4145,9 @@
       "modalities": []
     },
     "conditions": [
-      "Place important visual elements toward the bottom or trailing edge.",
-      "Avoid embedding text in the strip image."
+      "Applies to strip images on coupons and store cards, where pass text appears over the image.",
+      "Ensure contrast and place important visual content toward the bottom or trailing edge, as appropriate.",
+      "Do not embed textual pass information in the image itself."
     ],
     "exceptions": [],
     "rationale": {
@@ -4185,7 +4157,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Keep the areas behind strip-image text uncluttered.” in the documented Wallet context?"
+        "Does the design satisfy “Keep the area behind strip-image text uncluttered so the text remains readable.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4203,10 +4175,10 @@
         "Pass images",
         "Strip image"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "6ceb0de516bb8637cfd15b9e182981d91a5f0902a1f2aa7bf36d212b5e541e80",
-      "evidence_paraphrase": "Keep the areas behind strip-image text uncluttered."
+      "evidence_paraphrase": "Keep the area behind strip-image text uncluttered so the text remains readable."
     },
     "tags": [
       "technologies",
@@ -4214,9 +4186,9 @@
       "pass-images",
       "strip-image"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Keep the areas behind strip-image text uncluttered.",
+    "apple_native_rule": "Keep the area behind strip-image text uncluttered so the text remains readable.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -4226,8 +4198,8 @@
     "topic": "wallet",
     "subtopic": "thumbnail",
     "statement": {
-      "en": "Export Wallet pass thumbnails as transparent PNGs with rounded artwork corners.",
-      "ja": "Wallet pass thumbnailをrounded artwork corner付きtransparent PNGとしてexportする。"
+      "en": "Export Wallet pass thumbnail artwork with rounded corners as a transparent PNG.",
+      "ja": "Walletのパスに使うサムネイル画像は角を丸め、透過PNGとして書き出す。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -4254,7 +4226,7 @@
       "modalities": []
     },
     "conditions": [
-      "Use thumbnail.png at 60–90 pt wide and 90 pt high."
+      "When an event ticket or generic pass uses a thumbnail, use thumbnail.png at 60–90 pt wide and 90 pt high."
     ],
     "exceptions": [],
     "rationale": {
@@ -4264,7 +4236,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Export Wallet pass thumbnails as transparent PNGs with rounded artwork corners.” in the documented Wallet context?"
+        "Does the design satisfy “Export Wallet pass thumbnail artwork with rounded corners as a transparent PNG.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4282,10 +4254,10 @@
         "Pass images",
         "Thumbnail"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "ae9c88a75f708a5cc4471f2c6d0c3464e820142a0deae9e3e972ee594efbe6b4",
-      "evidence_paraphrase": "Export Wallet pass thumbnails as transparent PNGs with rounded artwork corners."
+      "evidence_paraphrase": "Export Wallet pass thumbnail artwork with rounded corners as a transparent PNG."
     },
     "tags": [
       "technologies",
@@ -4293,9 +4265,9 @@
       "pass-images",
       "thumbnail"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Export Wallet pass thumbnails as transparent PNGs with rounded artwork corners.",
+    "apple_native_rule": "Export Wallet pass thumbnail artwork with rounded corners as a transparent PNG.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -4305,8 +4277,8 @@
     "topic": "wallet",
     "subtopic": "background",
     "statement": {
-      "en": "Position Wallet pass background content within the documented safe area.",
-      "ja": "Wallet pass background contentをdocumented safe area内に配置する。"
+      "en": "Keep pass background content within the documented safe area.",
+      "ja": "パスの背景画像の内容は、規定のセーフエリア内に配置する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -4333,9 +4305,9 @@
       "modalities": []
     },
     "conditions": [
-      "Account for the bottom material strip on poster generic and poster event passes.",
-      "Account for a barcode when the pass includes one.",
-      "Preview placement in Pass Designer."
+      "For poster event tickets and poster generic passes, account for the material strip along the bottom edge.",
+      "If the pass contains a barcode, account for its space in the layout.",
+      "Pass Designer can preview the layout to help verify placement."
     ],
     "exceptions": [],
     "rationale": {
@@ -4345,7 +4317,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Position Wallet pass background content within the documented safe area.” in the documented Wallet context?"
+        "Does the design satisfy “Keep pass background content within the documented safe area.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4363,10 +4335,10 @@
         "Pass images",
         "Background"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "26c9c644d7dff393870bb86a9fe404adfe21bbb0a62d75072a76ed78c1a9a540",
-      "evidence_paraphrase": "Position Wallet pass background content within the documented safe area."
+      "evidence_paraphrase": "Keep pass background content within the documented safe area."
     },
     "tags": [
       "technologies",
@@ -4374,20 +4346,20 @@
       "pass-images",
       "background"
     ],
-    "priority_rank": 6,
+    "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Position Wallet pass background content within the documented safe area.",
+    "apple_native_rule": "Keep pass background content within the documented safe area.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0057",
-    "title": "Ensure the displayed order price matches the confirmed price",
+    "title": "Match the customer-confirmed final price",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "order-tracking",
     "statement": {
-      "en": "Ensure the price shown in a Wallet order matches the final price the customer confirmed.",
-      "ja": "Wallet orderに表示するpriceをcustomerが確認したfinal priceと一致させる。"
+      "en": "Ensure the price in a Wallet order matches the final price the customer confirmed.",
+      "ja": "Walletの注文に表示する金額を、顧客が確認した最終金額と一致させる。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -4414,7 +4386,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies to the order price shown to the customer."
     ],
     "exceptions": [],
     "rationale": {
@@ -4424,7 +4396,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Ensure the price shown in a Wallet order matches the final price the customer confirmed.” in the documented Wallet context?"
+        "Does the design satisfy “Ensure the price in a Wallet order matches the final price the customer confirmed.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4441,30 +4413,30 @@
         "Wallet",
         "Order tracking"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "2fc5360315cfd197f2a94f2ec36b6cc4f0f67374a1131e34450e3d2ac25c2217",
-      "evidence_paraphrase": "Ensure the price shown in a Wallet order matches the final price the customer confirmed."
+      "evidence_paraphrase": "Ensure the price in a Wallet order matches the final price the customer confirmed."
     },
     "tags": [
       "technologies",
       "wallet",
       "order-tracking"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Ensure the price shown in a Wallet order matches the final price the customer confirmed.",
+    "apple_native_rule": "Ensure the price in a Wallet order matches the final price the customer confirmed.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0058",
-    "title": "Provide the required merchant contact link",
+    "title": "Provide a minimum merchant contact link",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
-      "en": "Provide at least a link to the merchant's website or landing page in Wallet order contact options.",
-      "ja": "Wallet orderのcontact optionに少なくともmerchant websiteまたはlanding pageへのlinkを提供する。"
+      "en": "Provide at least a link to the merchant’s website or landing page among Wallet order contact options.",
+      "ja": "Walletの注文の連絡先として、少なくとも販売者のウェブサイトか案内ページへのリンクを提供する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -4491,7 +4463,7 @@
       "modalities": []
     },
     "conditions": [
-      "Additional options can include Messages for Business, phone, email, and a support page."
+      "Other possible contact methods include Messages for Business, phone, email, or a support-page link; they do not all become mandatory."
     ],
     "exceptions": [],
     "rationale": {
@@ -4501,7 +4473,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Provide at least a link to the merchant's website or landing page in Wallet order contact options.” in the documented Wallet context?"
+        "Does the design satisfy “Provide at least a link to the merchant’s website or landing page among Wallet order contact options.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4519,10 +4491,10 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "a78d891d206f5f69f480ad65ee1efd8ac569c7dbd6622673024a8dd51766949a",
-      "evidence_paraphrase": "Provide at least a link to the merchant's website or landing page in Wallet order contact options."
+      "evidence_paraphrase": "Provide at least a link to the merchant’s website or landing page among Wallet order contact options."
     },
     "tags": [
       "technologies",
@@ -4530,20 +4502,20 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Provide at least a link to the merchant's website or landing page in Wallet order contact options.",
+    "apple_native_rule": "Provide at least a link to the merchant’s website or landing page among Wallet order contact options.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0059",
-    "title": "Provide an available carrier tracking link",
+    "title": "Provide available carrier tracking links",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "displaying-order-and-fulfillment-details",
     "statement": {
       "en": "Provide a carrier tracking link whenever one is available.",
-      "ja": "carrier tracking linkが利用可能な場合は提供する。"
+      "ja": "配送業者の追跡リンクが利用できる場合は、そのリンクを提供する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -4570,7 +4542,8 @@
       "modalities": []
     },
     "conditions": [
-      "Apply whether detailed interim carrier statuses are available or only a shipped status can be reported."
+      "Applies whether detailed interim carrier statuses are known or only shipped can be reported.",
+      "When possible, make the link direct and provide it in addition to a tracking number; if an intermediate page is needed, show the carrier link there."
     ],
     "exceptions": [],
     "rationale": {
@@ -4598,8 +4571,8 @@
         "Order tracking",
         "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
       "source_sentence_hash": "2352c4d41382210142fe210a345573c59fbd70a4b3e776525c10988e28c928ac",
       "evidence_paraphrase": "Provide a carrier tracking link whenever one is available."
     },
@@ -4609,20 +4582,550 @@
       "order-tracking",
       "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
     "apple_native_rule": "Provide a carrier tracking link whenever one is available.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
     "id": "HIG-TECHNOLOGIES-WALLET-0060",
-    "title": "Provide a fallback identity-verification method",
+    "title": "Offer a verification fallback",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "identity-verification",
     "statement": {
-      "en": "Provide another identity-verification method when Verify with Apple Wallet isn't available.",
-      "ja": "Verify with Apple Walletを利用できない場合は別のidentity-verification methodを提供する。"
+      "en": "Provide another identity-verification method when Verify with Apple Wallet is unavailable.",
+      "ja": "Verify with Apple Walletを利用できない場合は、別の本人確認方法を提供する。"
+    },
+    "normative_level": "MUST",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "require",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Applies to the page-documented in-app/App Clip identity verification on iPhone with iOS 16 or later, subject to current device capability.",
+      "Prepare a fallback view when the requested information cannot be obtained through Wallet."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Wallet experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるWalletの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide another identity-verification method when Verify with Apple Wallet is unavailable.” in the documented Wallet context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "page_title": "Wallet",
+      "section_path": [
+        "Wallet",
+        "Identity verification"
+      ],
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "9c8fc53e4012160f7a4fd7a3c9b4c5d4445f935ff2041e95a7c189ef1c16ace6",
+      "evidence_paraphrase": "Provide another identity-verification method when Verify with Apple Wallet is unavailable."
+    },
+    "tags": [
+      "technologies",
+      "wallet",
+      "identity-verification"
+    ],
+    "priority_rank": 2,
+    "status": "active",
+    "apple_native_rule": "Provide another identity-verification method when Verify with Apple Wallet is unavailable.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-WALLET-0061",
+    "title": "Do not request identity verification prematurely",
+    "category": "technologies",
+    "topic": "wallet",
+    "subtopic": "identity-verification",
+    "statement": {
+      "en": "Never request Wallet identity verification before the person is ready for the requiring process or merely to create an account.",
+      "ja": "本人確認が必要な手続きを始める準備ができる前や、単なるアカウント作成のために、Walletの本人確認を要求しない。"
+    },
+    "normative_level": "MUST_NOT",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "prohibit",
+    "severity": "error",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Applies to the page-documented in-app/App Clip identity verification on iPhone with iOS 16 or later, subject to current device capability.",
+      "Distinguish ordinary account creation from a specific process that actually requires identity verification; the rule does not forbid verification in every account-opening context."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Wallet experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるWalletの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Never request Wallet identity verification before the person is ready for the requiring process or merely to create an account.” in the documented Wallet context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "page_title": "Wallet",
+      "section_path": [
+        "Wallet",
+        "Identity verification"
+      ],
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "d025916f800f9a211d5e782ca84c9ec03260e81cfee6b983b61753e4ecc33f47",
+      "evidence_paraphrase": "Never request Wallet identity verification before the person is ready for the requiring process or merely to create an account."
+    },
+    "tags": [
+      "technologies",
+      "wallet",
+      "identity-verification"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "Never request Wallet identity verification before the person is ready for the requiring process or merely to create an account.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-WALLET-0062",
+    "title": "Design passes to fit Wallet",
+    "category": "technologies",
+    "topic": "wallet",
+    "subtopic": "designing-passes",
+    "statement": {
+      "en": "Design a clean, simple pass that fits Wallet instead of merely copying its physical counterpart.",
+      "ja": "現物の見た目をそのまま写すのではなく、Walletになじむ、すっきりしたシンプルなパスを設計する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Preserve recognizable identity while following Wallet’s consistent presentation; existing0011 covers organizational recognition."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Wallet experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるWalletの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Design a clean, simple pass that fits Wallet instead of merely copying its physical counterpart.” in the documented Wallet context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "page_title": "Wallet",
+      "section_path": [
+        "Wallet",
+        "Designing passes"
+      ],
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "f1236930440ef0f0d7a9c3974064a7bbd4ff18b6af5a9bd65fe51ca87a0c5905",
+      "evidence_paraphrase": "Design a clean, simple pass that fits Wallet instead of merely copying its physical counterpart."
+    },
+    "tags": [
+      "technologies",
+      "wallet",
+      "designing-passes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Design a clean, simple pass that fits Wallet instead of merely copying its physical counterpart.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-WALLET-0063",
+    "title": "Design and preview with Pass Designer",
+    "category": "technologies",
+    "topic": "wallet",
+    "subtopic": "designing-passes",
+    "statement": {
+      "en": "Use Pass Designer to design and preview passes for Apple Wallet.",
+      "ja": "Pass Designerを使って、Apple Wallet用のパスを設計・プレビューする。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "An Apple-provided template or a blank pass can be the starting point; no single pass style is required.",
+      "This recommendation does not prohibit the corresponding APIs documented elsewhere on the page."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Wallet experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるWalletの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Use Pass Designer to design and preview passes for Apple Wallet.” in the documented Wallet context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "page_title": "Wallet",
+      "section_path": [
+        "Wallet",
+        "Designing passes"
+      ],
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "57d16607fd6542ec9144ab8ca8302c3ed3f9ed18a50b8029f83193f819eb04ae",
+      "evidence_paraphrase": "Use Pass Designer to design and preview passes for Apple Wallet."
+    },
+    "tags": [
+      "technologies",
+      "wallet",
+      "designing-passes"
+    ],
+    "priority_rank": 4,
+    "status": "active",
+    "apple_native_rule": "Use Pass Designer to design and preview passes for Apple Wallet.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-WALLET-0064",
+    "title": "Supply useful Wallet order data",
+    "category": "technologies",
+    "topic": "wallet",
+    "subtopic": "order-tracking",
+    "statement": {
+      "en": "Supply as much useful order information as possible using Wallet Orders properties that match the order process.",
+      "ja": "注文の流れに合ったWallet Ordersのプロパティを使い、役立つ注文情報をできるだけ十分に提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Choose relevant properties for products, status, merchant contact, shipping, or pickup; do not require irrelevant fields or invent unavailable data."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Wallet experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるWalletの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Supply as much useful order information as possible using Wallet Orders properties that match the order process.” in the documented Wallet context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "page_title": "Wallet",
+      "section_path": [
+        "Wallet",
+        "Order tracking"
+      ],
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "cf3ec2086f986434c45f51e2cbe273d8409bacea387d2633eb530111b124eee0",
+      "evidence_paraphrase": "Supply as much useful order information as possible using Wallet Orders properties that match the order process."
+    },
+    "tags": [
+      "technologies",
+      "wallet",
+      "order-tracking"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "Supply as much useful order information as possible using Wallet Orders properties that match the order process.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-WALLET-0065",
+    "title": "Provide required pickup barcodes in Wallet",
+    "category": "technologies",
+    "topic": "wallet",
+    "subtopic": "displaying-order-and-fulfillment-details",
+    "statement": {
+      "en": "When picking up an order requires a barcode, provide a scannable barcode in Wallet.",
+      "ja": "注文の受け取りにバーコードが必要な場合は、Wallet内で読み取れるバーコードを提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Applies to barcode-based pickup fulfillment; required describes the pickup prerequisite, not a requirement to introduce barcodes for every order."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Wallet experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるWalletの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “When picking up an order requires a barcode, provide a scannable barcode in Wallet.” in the documented Wallet context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "page_title": "Wallet",
+      "section_path": [
+        "Wallet",
+        "Order tracking",
+        "Displaying order and fulfillment details"
+      ],
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "fb2bd626514645600b4bbff77c8202831778e208820f898bb3e09ef6e93f65dd",
+      "evidence_paraphrase": "When picking up an order requires a barcode, provide a scannable barcode in Wallet."
+    },
+    "tags": [
+      "technologies",
+      "wallet",
+      "order-tracking",
+      "displaying-order-and-fulfillment-details"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "When picking up an order requires a barcode, provide a scannable barcode in Wallet.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-WALLET-0066",
+    "title": "Explain delivery and pickup instructions",
+    "category": "technologies",
+    "topic": "wallet",
+    "subtopic": "displaying-order-and-fulfillment-details",
+    "statement": {
+      "en": "Provide clear, detailed instructions that help customers receive or pick up their order.",
+      "ja": "顧客が配送品や注文商品を受け取れるよう、明確で詳しい手順を提供する。"
+    },
+    "normative_level": "SHOULD",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "recommend",
+    "severity": "warning",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios",
+        "ipados",
+        "macos",
+        "visionos",
+        "watchos"
+      ],
+      "devices": [
+        "iphone",
+        "ipad",
+        "mac",
+        "apple-vision-pro",
+        "apple-watch"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use instructions relevant to the fulfillment method, distinct from tracking status or an estimated arrival time."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Wallet experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるWalletの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “Provide clear, detailed instructions that help customers receive or pick up their order.” in the documented Wallet context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "page_title": "Wallet",
+      "section_path": [
+        "Wallet",
+        "Order tracking",
+        "Displaying order and fulfillment details"
+      ],
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "37427cb631a5cd643b67b754afb50facbe4218fb3deb0df74c2fbc2b065b44b4",
+      "evidence_paraphrase": "Provide clear, detailed instructions that help customers receive or pick up their order."
+    },
+    "tags": [
+      "technologies",
+      "wallet",
+      "order-tracking",
+      "displaying-order-and-fulfillment-details"
+    ],
+    "priority_rank": 3,
+    "status": "active",
+    "apple_native_rule": "Provide clear, detailed instructions that help customers receive or pick up their order.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-WALLET-0067",
+    "title": "Prioritize tracking over recommendations",
+    "category": "technologies",
+    "topic": "wallet",
+    "subtopic": "displaying-order-and-fulfillment-details",
+    "statement": {
+      "en": "When recommending an app or other services on a fulfillment screen, ensure order-tracking information takes priority.",
+      "ja": "配送・受け取りの画面でアプリや別のサービスを勧める場合も、注文追跡の情報を優先する。"
     },
     "normative_level": "MUST",
     "confidence": "high",
@@ -4649,7 +5152,7 @@
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "Applies when recommendations share the fulfillment screen; it does not require including recommendations."
     ],
     "exceptions": [],
     "rationale": {
@@ -4659,7 +5162,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Provide another identity-verification method when Verify with Apple Wallet isn't available.” in the documented Wallet context?"
+        "Does the design satisfy “When recommending an app or other services on a fulfillment screen, ensure order-tracking information takes priority.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4674,59 +5177,54 @@
       "page_title": "Wallet",
       "section_path": [
         "Wallet",
-        "Identity verification"
+        "Order tracking",
+        "Displaying order and fulfillment details"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
-      "source_sentence_hash": "9c8fc53e4012160f7a4fd7a3c9b4c5d4445f935ff2041e95a7c189ef1c16ace6",
-      "evidence_paraphrase": "Provide another identity-verification method when Verify with Apple Wallet isn't available."
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "fefd5dcc2f805dfe82fe15f0983ed15a2de16df2fdf3819cdbd01f7a9f9e3e61",
+      "evidence_paraphrase": "When recommending an app or other services on a fulfillment screen, ensure order-tracking information takes priority."
     },
     "tags": [
       "technologies",
       "wallet",
-      "identity-verification"
+      "order-tracking",
+      "displaying-order-and-fulfillment-details"
     ],
-    "priority_rank": 6,
+    "priority_rank": 3,
     "status": "active",
-    "apple_native_rule": "Provide another identity-verification method when Verify with Apple Wallet isn't available.",
+    "apple_native_rule": "When recommending an app or other services on a fulfillment screen, ensure order-tracking information takes priority.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
-    "id": "HIG-TECHNOLOGIES-WALLET-0061",
-    "title": "Never request identity verification before the person is ready",
+    "id": "HIG-TECHNOLOGIES-WALLET-0068",
+    "title": "Optionally outline a verification button",
     "category": "technologies",
     "topic": "wallet",
     "subtopic": "identity-verification",
     "statement": {
-      "en": "Never request Wallet identity verification before a person starts the requiring process or while they merely create an account.",
-      "ja": "利用者が必要なprocessを開始する前や単にaccountを作成している間はWallet identity verificationを要求しない。"
+      "en": "When a dark app background needs more contrast, an app may use the system verification-button style with a light outline.",
+      "ja": "アプリの暗い背景でコントラストが必要な場合は、明るい枠線付きのシステム標準本人確認ボタンを使ってもよい。"
     },
-    "normative_level": "MUST_NOT",
+    "normative_level": "MAY",
     "confidence": "high",
     "review_required": false,
-    "polarity": "prohibit",
-    "severity": "error",
+    "polarity": "permit",
+    "severity": "info",
     "scope": {
       "portability": "technology-specific",
       "platforms": [
-        "ios",
-        "ipados",
-        "macos",
-        "visionos",
-        "watchos"
+        "ios"
       ],
       "devices": [
-        "iphone",
-        "ipad",
-        "mac",
-        "apple-vision-pro",
-        "apple-watch"
+        "iphone"
       ],
       "components": [],
       "modalities": []
     },
     "conditions": [
-      "Apply within the platform, component, and section context identified by the source trace."
+      "The documented system button has white lettering on black; the outlined style is an optional way to improve contrast.",
+      "Applies to the page-documented in-app/App Clip identity flow on iPhone with iOS 16 or later, subject to device capability."
     ],
     "exceptions": [],
     "rationale": {
@@ -4736,7 +5234,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Never request Wallet identity verification before a person starts the requiring process or while they merely create an account.” in the documented Wallet context?"
+        "Does the design satisfy “When a dark app background needs more contrast, an app may use the system verification-button style with a light outline.” in the documented Wallet context?"
       ]
     },
     "testability": "manual",
@@ -4753,19 +5251,89 @@
         "Wallet",
         "Identity verification"
       ],
-      "retrieved_at": "2026-07-21T11:15:29.893Z",
-      "source_hash": "05b7797a621ff834bcb1b7e08f0eb92f6d96bc25b28a8fa34d694d93d8bb5af4",
-      "source_sentence_hash": "d025916f800f9a211d5e782ca84c9ec03260e81cfee6b983b61753e4ecc33f47",
-      "evidence_paraphrase": "Never request Wallet identity verification before a person starts the requiring process or while they merely create an account."
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "e73d7f9d70ca294ca60482aea7732b20946ac69a91d66b999a4255efe9a38b97",
+      "evidence_paraphrase": "When a dark app background needs more contrast, an app may use the system verification-button style with a light outline."
     },
     "tags": [
       "technologies",
       "wallet",
       "identity-verification"
     ],
-    "priority_rank": 6,
+    "priority_rank": 2,
     "status": "active",
-    "apple_native_rule": "Never request Wallet identity verification before a person starts the requiring process or while they merely create an account.",
+    "apple_native_rule": "When a dark app background needs more contrast, an app may use the system verification-button style with a light outline.",
+    "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
+  },
+  {
+    "id": "HIG-TECHNOLOGIES-WALLET-0069",
+    "title": "Optionally match verification-button corners",
+    "category": "technologies",
+    "topic": "wallet",
+    "subtopic": "identity-verification",
+    "statement": {
+      "en": "An app may adjust the verification button’s corner radius to match related buttons in its interface.",
+      "ja": "アプリ内の関連するボタンに合わせて、本人確認ボタンの角の丸みを調整してもよい。"
+    },
+    "normative_level": "MAY",
+    "confidence": "high",
+    "review_required": false,
+    "polarity": "permit",
+    "severity": "info",
+    "scope": {
+      "portability": "technology-specific",
+      "platforms": [
+        "ios"
+      ],
+      "devices": [
+        "iphone"
+      ],
+      "components": [],
+      "modalities": []
+    },
+    "conditions": [
+      "Use the documented cornerRadius property rather than replacing the system verification control.",
+      "Applies to the page-documented in-app/App Clip identity flow on iPhone with iOS 16 or later, subject to device capability."
+    ],
+    "exceptions": [],
+    "rationale": {
+      "en": "Applying this guidance supports a consistent and usable Wallet experience on the scoped Apple platforms.",
+      "ja": "この指針は、対象AppleプラットフォームにおけるWalletの一貫性と使いやすさを支えます。"
+    },
+    "checks": {
+      "automated": [],
+      "manual": [
+        "Does the design satisfy “An app may adjust the verification button’s corner radius to match related buttons in its interface.” in the documented Wallet context?"
+      ]
+    },
+    "testability": "manual",
+    "anti_patterns": [
+      "Ignoring this guidance in a context where the source section applies."
+    ],
+    "positive_examples": [
+      "A design review records how the implementation satisfies this rule and any source-scoped exception."
+    ],
+    "source": {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/wallet",
+      "page_title": "Wallet",
+      "section_path": [
+        "Wallet",
+        "Identity verification"
+      ],
+      "retrieved_at": "2026-09-08T08:52:11.667Z",
+      "source_hash": "e19de24aea1a3f1eb836f4c91cce3cb266f22a0a3f55f7eda340bb6eb71368e0",
+      "source_sentence_hash": "e73d7f9d70ca294ca60482aea7732b20946ac69a91d66b999a4255efe9a38b97",
+      "evidence_paraphrase": "An app may adjust the verification button’s corner radius to match related buttons in its interface."
+    },
+    "tags": [
+      "technologies",
+      "wallet",
+      "identity-verification"
+    ],
+    "priority_rank": 5,
+    "status": "active",
+    "apple_native_rule": "An app may adjust the verification button’s corner radius to match related buttons in its interface.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   }
 ]

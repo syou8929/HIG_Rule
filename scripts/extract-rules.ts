@@ -38,6 +38,7 @@ type SourceReviewOverride = {
   checks?: Rule["checks"];
   testability?: Rule["testability"];
   scope?: Rule["scope"];
+  tags?: Rule["tags"];
   priority_rank?: Rule["priority_rank"];
   review_note: string;
 };
@@ -138,6 +139,7 @@ function applySourceReview(rule: Rule): Rule {
     ...(review?.conditions ? { conditions: review.conditions } : {}),
     ...(review?.exceptions ? { exceptions: review.exceptions } : {}),
     ...(reviewedScope ? { scope: reviewedScope } : {}),
+    ...(review?.tags ? { tags: review.tags } : {}),
     ...(review?.priority_rank ? { priority_rank: review.priority_rank } : {}),
     checks: review?.checks ?? {
       ...rule.checks,
@@ -232,7 +234,7 @@ for (const record of inventory.pages) {
       && JSON.stringify(item.section_path) === JSON.stringify(base.source.section_path));
     if (!candidate) throw new Error(`Missing source candidate for reviewed split rule ${extra.base_rule_id}`);
     const statement = extra.statement as Rule["statement"];
-    active.push({
+    active.push(applySourceReview(applyReviewedOverride({
       ...base,
       id: allocateId(page, `${ruleKey(page, candidate)}#split-${extra.split_key}`),
       title: extra.title,
@@ -253,7 +255,7 @@ for (const record of inventory.pages) {
       source: { ...base.source, evidence_paraphrase: statement.en },
       tags: Array.from(new Set([...base.tags, "split-guidance"])),
       ...(base.apple_native_rule ? { apple_native_rule: statement.en } : {}),
-    });
+    })));
   }
   const oldRules = existingByPage.get(page.canonical_url) ?? existingByPage.get(page.url) ?? [];
   const activeIds = new Set(active.map((rule) => rule.id));

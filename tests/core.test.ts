@@ -304,7 +304,7 @@ test("keeps general source reviews aligned with canonical traces", async () => {
     assert.equal(rule.review_required, false);
   }
   const reviewedBatchIds = new Set<string>();
-  const explicitReviews = sourceReview.rules as Record<string, { confidence?: string; review_required?: boolean }>;
+  const explicitReviews = sourceReview.rules as Record<string, { confidence?: string; review_required?: boolean; scope?: Rule["scope"] }>;
   for (const batch of sourceReview.batches) {
     const scopedBatch = batch as typeof batch & { scope?: Rule["scope"] };
     const pageByUrl = new Map(batch.pages.map((page) => [page.url, page]));
@@ -316,7 +316,8 @@ test("keeps general source reviews aligned with canonical traces", async () => {
       assert.equal(rule.source.source_hash, pageByUrl.get(rule.source.url)?.source_hash);
       assert.equal(rule.review_required, explicitReviews[id]?.review_required ?? batch.review_required);
       assert.equal(rule.confidence, explicitReviews[id]?.confidence ?? batch.confidence);
-      if (scopedBatch.scope) assert.deepEqual(rule.scope, scopedBatch.scope);
+      const expectedScope = explicitReviews[id]?.scope ?? scopedBatch.scope;
+      if (expectedScope) assert.deepEqual(rule.scope, expectedScope);
     }
   }
 });

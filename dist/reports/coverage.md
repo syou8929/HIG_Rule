@@ -5,7 +5,7 @@
 - Blocked pages: 0
 - Classified pages: 172
 - Pages with rules: 156
-- Active atomic rules: 3673
+- Active atomic rules: 3742
 - Pages without rules: 16
 - Low-confidence rules: 0
 - Rules requiring human review: 0
@@ -13,35 +13,35 @@
 
 ## Rules by category
 
-- components: 1115
-- foundations: 504
+- components: 1117
+- foundations: 507
 - getting-started: 116
 - inputs: 245
 - patterns: 552
-- technologies: 1141
+- technologies: 1205
 
 ## Normative levels
 
-- AVOID: 495
-- MAY: 410
-- MUST: 572
-- MUST_NOT: 85
-- SHOULD: 2111
+- AVOID: 497
+- MAY: 436
+- MUST: 580
+- MUST_NOT: 86
+- SHOULD: 2143
 
 ## Rules by platform
 
 - carplay: 119
-- ios: 2682
-- ipados: 2641
-- macos: 2193
-- tvos: 1719
-- visionos: 2151
-- watchos: 1833
+- ios: 2751
+- ipados: 2698
+- macos: 2247
+- tvos: 1729
+- visionos: 2199
+- watchos: 1872
 
 ## Rules by testability
 
-- hybrid: 115
-- manual: 3558
+- hybrid: 119
+- manual: 3623
 
 ## Blocked pages
 
@@ -126,31 +126,31 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/app-clips · App Clips > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/app-clips · App Clips > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/app-clips · App Clips > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/app-icons · App icons > Specifications — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Platform considerations > macOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/app-shortcuts · App Shortcuts > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay — Rendered overview, checkout, payment-sheet, error, subscription, donation, button, trademark, platform, resource, example, and change-log context was reviewed against the stable source hash.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Displaying a website icon — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Displaying a website icon — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Displaying a website icon — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Handling problems — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Handling problems — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button size and position — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button size and position — Numeric dimensions remain source-scoped reference data and were not promoted to unconditional platform-wide minima.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button styles > Black — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button styles > White — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button styles > Black — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button styles > White — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pay · Apple Pay > Using Apple Pay buttons > Button types — Button-type examples remain reference material; only their surrounding atomic directives are represented as rules.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble · Apple Pencil and Scribble > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/apple-pencil-and-scribble · Apple Pencil and Scribble > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
@@ -312,10 +312,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/drag-and-drop · Drag and drop > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/drag-and-drop · Drag and drop > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/drag-and-drop · Drag and drop > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Platform considerations > macOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/edit-menus · Edit menus > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/entering-data · Entering data > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/entering-data · Entering data > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/entering-data · Entering data > Resources — Section recorded for human review; no short atomic guidance lead was detected.
@@ -326,22 +326,22 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/eyes · Eyes > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/eyes · Eyes > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/eyes · Eyes > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/feedback · Feedback > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/feedback · Feedback > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/feedback · Feedback > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/feedback · Feedback > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Platform considerations > visionOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/feedback · Feedback > Platform considerations — Reviewed page-local platform prose and the applicable scoped rules; no unsupported platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/feedback · Feedback > Resources — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/feedback · Feedback > Resources > Related — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/feedback · Feedback > Resources > Videos — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Platform considerations > macOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/file-management · File management > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Platform considerations > visionOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/focus-and-selection · Focus and selection > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center — Rendered access, achievement, leaderboard, challenge, multiplayer, platform, example, artwork-table, resource, and change-log context was reviewed against two matching live source renders.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Accessing Game Center — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/game-center · Game Center > Achievements — Section recorded for human review; no short atomic guidance lead was detected.
@@ -365,20 +365,20 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/gauges · Gauges > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/gauges · Gauges > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/gauges · Gauges > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Specifications — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/generative-ai · Generative AI > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Platform considerations > macOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Platform considerations > tvOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Platform considerations > watchOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Specifications — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/gestures · Gestures > Specifications > Standard gestures — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/going-full-screen · Going full screen > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/going-full-screen · Going full screen > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
@@ -452,12 +452,12 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/imessage-apps-and-stickers · iMessage apps and stickers > Specifications — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Immersion and passthrough — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Immersion and passthrough — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/immersive-experiences · Immersive experiences > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/in-app-purchase · In-app purchase > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/in-app-purchase · In-app purchase > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/in-app-purchase · In-app purchase > Resources — Section recorded for human review; no short atomic guidance lead was detected.
@@ -547,13 +547,13 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/mac-catalyst · Mac Catalyst > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Planning your design — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > The role of machine learning in your app — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Planning your design — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/machine-learning · Machine learning > The role of machine learning in your app — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Platform considerations — Reviewed: no additional iOS, iPadOS, macOS, or visionOS guidance appears beyond the common rules.
 - https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Platform considerations > watchOS — Reviewed: the watchOS iCloud and Keychain recommendation is represented as a platform-specific rule.
 - https://developer.apple.com/design/human-interface-guidelines/managing-accounts · Managing accounts > Resources — Reviewed: resource navigation contains no additional atomic guidance.
@@ -575,10 +575,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/materials · Materials > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/menus · Menus > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/menus · Menus > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/menus · Menus > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/menus · Menus > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/menus · Menus > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/menus · Menus > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/menus · Menus > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/menus · Menus > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/modality · Modality > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/modality · Modality > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/modality · Modality > Resources — Section recorded for human review; no short atomic guidance lead was detected.
@@ -590,15 +590,15 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/motion · Motion > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/motion · Motion > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/motion · Motion > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations > iOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations > iPadOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations > iOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations > iPadOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations > macOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Platform considerations > tvOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/multitasking · Multitasking > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/nearby-interactions · Nearby interactions > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/nearby-interactions · Nearby interactions > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/nearby-interactions · Nearby interactions > Platform considerations > iOS — Section recorded for human review; no short atomic guidance lead was detected.
@@ -624,15 +624,15 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources — Reviewed: resource navigation contains no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources > Related — Reviewed: related-topic links contain no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/onboarding · Onboarding > Resources > Videos — Reviewed: video navigation contains no additional atomic guidance.
-- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Change log — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Platform considerations — Reviewed the explicit platform-availability statement; no additional atomic guidance was inferred.
+- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources > Related — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/ornaments · Ornaments > Resources > Videos — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Platform considerations — Outline views are documented as unsupported outside macOS across Apple platforms.
-- https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/outline-views · Outline views > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/page-controls · Page controls > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/page-controls · Page controls > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/page-controls · Page controls > Platform considerations > visionOS — Section recorded for human review; no short atomic guidance lead was detected.
@@ -642,17 +642,17 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/panels · Panels > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/panels · Panels > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Platform considerations — Path controls are documented as unsupported outside macOS across Apple platforms.
-- https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/path-controls · Path controls > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/photo-editing · Photo editing > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/photo-editing · Photo editing > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/photo-editing · Photo editing > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Change log — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Change log — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations — visionOS has no additional picker considerations beyond the common guidance.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations > tvOS — tvOS picker availability through SwiftUI is recorded as developer context, not a separate design directive.
 - https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Platform considerations > watchOS — System-provided watchOS wheels and navigation-link styles support Digital Crown navigation; no separate directive was inferred.
-- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Resources — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/pickers · Pickers > Resources > Related — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Change log — Reviewed: historical change-log entries contain no current atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Platform considerations — Reviewed: each platform section is represented by source-scoped rules or an explicit no-additional-guidance finding.
 - https://developer.apple.com/design/human-interface-guidelines/playing-audio · Playing audio > Platform considerations > macOS — Reviewed: the default notification-sound mixing behavior is represented as a macOS-specific rule.
@@ -671,20 +671,20 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources — Reviewed: resource navigation contains no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources > Related — Reviewed: related-topic links contain no additional atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/playing-haptics · Playing haptics > Resources > Videos — Reviewed: linked videos contain no additional page-local atomic guidance.
-- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Platform considerations > watchOS — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Platform considerations > macOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Platform considerations > macOS > Pointers — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Platform considerations > visionOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Change log — Reviewed: resource navigation or dated change-log context contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Platform considerations — Reviewed: existing tvOS, visionOS, and watchOS rule contexts were revalidated; other platform availability is not inferred from this review.
+- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Platform considerations > watchOS — Reviewed: all numeric media-table recommendations are retained with their exact units and SHOULD strength.
+- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Resources — Reviewed: resource navigation or dated change-log context contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Resources > Related — Reviewed: resource navigation or dated change-log context contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/playing-video · Playing video > Resources > Videos — Reviewed: resource navigation or dated change-log context contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Platform considerations > macOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Platform considerations > macOS > Pointers — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Platform considerations > visionOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/pointing-devices · Pointing devices > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Change log — Reviewed: change-log entries describe documentation updates, not product guidance.
 - https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/pop-up-buttons · Pop-up buttons > Resources > Related — Reviewed: related component links contain no additional page-local atomic guidance.
@@ -707,10 +707,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/pull-down-buttons · Pull-down buttons > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Change log — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Platform considerations — Rating indicators have no additional macOS considerations and are unsupported on other Apple platforms.
-- https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/rating-indicators · Rating indicators > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Change log — Reviewed: the artwork change summary contains no additional current atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Platform considerations — Reviewed: Apple documents no additional platform considerations.
 - https://developer.apple.com/design/human-interface-guidelines/ratings-and-reviews · Ratings and reviews > Resources — Reviewed: resource navigation contains no additional atomic guidance.
@@ -727,31 +727,31 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/right-to-left · Right to left > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/right-to-left · Right to left > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/right-to-left · Right to left > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Platform considerations > tvOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Change log — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Platform considerations > tvOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/scroll-views · Scroll views > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Platform considerations — visionOS has no additional search-field considerations beyond the common guidance.
 - https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Platform considerations > watchOS — watchOS full-screen text-input and return behavior is recorded as system behavior, not a separate design directive.
-- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/search-fields · Search fields > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/searching · Searching > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Change log — Reviewed: the visionOS documentation update is not a separate product rule.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Platform considerations — Reviewed: captured the watchOS platform limitation and all supported-platform sections.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Platform considerations > visionOS — Reviewed: captured the icon-tooltip descriptive-text requirement and gaze-triggered system behavior.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/segmented-controls · Segmented controls > Resources > Related — Reviewed: the related Split views link contains no additional page-local atomic guidance.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Change log — Reviewed: the reorganization summary contains no additional current atomic guidance.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Platform considerations — Reviewed: macOS and watchOS guidance is represented by source-scoped rules; other platforms have no additional considerations.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources — Reviewed: resource navigation contains no additional atomic guidance.
-- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources > Related — Reviewed: the related-topic link contains no additional page-local atomic guidance.
+- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Change log — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Platform considerations — Reviewed page-local platform prose and the applicable scoped rules; no unsupported platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/settings · Settings > Resources > Related — Reviewed resource navigation or change-log context; no additional page-local atomic guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sf-symbols · SF Symbols > Resources — Section recorded for human review; no short atomic guidance lead was detected.
@@ -770,10 +770,10 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Platform considerations — Reviewed: captured current button placement, resizing, modality, window, spatial, and watchOS constraints.
 - https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Resources — Reviewed: resource navigation contains no additional page-local atomic guidance.
 - https://developer.apple.com/design/human-interface-guidelines/sheets · Sheets > Resources > Related — Reviewed: related component links contain no additional page-local atomic guidance.
-- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/sidebars · Sidebars > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple · Sign in with Apple > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple · Sign in with Apple > Displaying buttons > Creating a custom Sign in with Apple button > Custom buttons with a logo and text — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple · Sign in with Apple > Displaying buttons > Using the system-provided buttons > Black — Section recorded for human review; no short atomic guidance lead was detected.
@@ -783,20 +783,20 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple · Sign in with Apple > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple · Sign in with Apple > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple · Sign in with Apple > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Getting your app to work with Siri — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Getting your app to work with Siri — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/siri · Siri > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/sliders · Sliders > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sliders · Sliders > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sliders · Sliders > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/sliders · Sliders > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/snippets · Snippets > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/spatial-layout · Spatial layout > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/spatial-layout · Spatial layout > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/spatial-layout · Spatial layout > Resources — Section recorded for human review; no short atomic guidance lead was detected.
@@ -811,14 +811,14 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/status-bars · Status bars > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/steppers · Steppers > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/steppers · Steppers > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Change log — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations — macOS has no additional considerations, and tab bars are unsupported in watchOS.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations > iOS — Attached-accessory minimization and dedicated search tabs are system-supported iOS options, not unconditional requirements.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations > tvOS — Fixed geometry, opacity, overflow fades, focus return, and system pinning behavior were reviewed as platform context.
 - https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Platform considerations > visionOS — Vertical placement, gaze expansion, and temporary content occlusion are system behavior rather than app directives.
-- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/tab-bars · Tab bars > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/tab-views · Tab views > Change log — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/tab-views · Tab views > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/tab-views · Tab views > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
@@ -941,8 +941,8 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/voiceover · VoiceOver > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/voiceover · VoiceOver > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/voiceover · VoiceOver > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Change log — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass anatomy — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Change log — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass anatomy — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass images > Background — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass images > Footer — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass images > Icon — Structured numeric table detected; preserve its platform and context conditions during human source review.
@@ -951,13 +951,13 @@ None.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass images > Secondary logo — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass images > Strip image — Structured numeric table detected; preserve its platform and context conditions during human source review.
 - https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass images > Thumbnail — Structured numeric table detected; preserve its platform and context conditions during human source review.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass styles — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass styles > Coupons — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Platform considerations — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Platform considerations > watchOS — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.
-- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources > Videos — Section recorded for human review; no short atomic guidance lead was detected.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass styles — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Pass styles > Coupons — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Platform considerations — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Platform considerations > watchOS — Reviewed the page-local platform context; no additional platform capabilities were inferred.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources > Related — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
+- https://developer.apple.com/design/human-interface-guidelines/wallet · Wallet > Resources > Videos — Reviewed resource navigation and change-log context; no additional page-local guidance was identified.
 - https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Platform considerations — Watch-face sharing is supported only in watchOS, not iOS, iPadOS, macOS, tvOS, or visionOS.
 - https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Resources — Section recorded for human review; no short atomic guidance lead was detected.
 - https://developer.apple.com/design/human-interface-guidelines/watch-faces · Watch faces > Resources > Related — Section recorded for human review; no short atomic guidance lead was detected.

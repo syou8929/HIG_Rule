@@ -32,11 +32,11 @@
       "modalities": []
     },
     "conditions": [
-      "Preserve a predictable focus location so people can continue their current task."
+      "Preserve a predictable focus location so people can continue their current task.",
+      "Without directional input, it is generally best to hide the focus indicator when its focused object disappears."
     ],
     "exceptions": [
-      "When directional input is moving focus and the focused item disappears, move focus one discrete step to a nearby remaining item.",
-      "Without directional input, hide the focus indicator when its focused object disappears."
+      "When directional input is moving focus and the focused item disappears, move focus one discrete step to a nearby remaining item."
     ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
@@ -62,8 +62,8 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "396dc62acf5577528d7528a7c7fabc248417214135ffd2e03da7eb90089a99ac",
       "evidence_paraphrase": "Avoid changing focus without a person’s interaction."
     },
@@ -72,7 +72,7 @@
       "focus-and-selection",
       "best-practices"
     ],
-    "priority_rank": 5,
+    "priority_rank": 3,
     "status": "active",
     "apple_native_rule": "Avoid changing focus without a person’s interaction.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
@@ -138,8 +138,8 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "3884ad27a832479e1ac37931ba381e8051d4e654414b84b1a842e636c1bb6056",
       "evidence_paraphrase": "Match focus navigation and focusable elements to each platform’s interaction model."
     },
@@ -180,7 +180,7 @@
       "modalities": []
     },
     "conditions": [
-      "Default focus-group traversal follows reading order: leading to trailing, then top to bottom.",
+      "When people press Tab, focus-group traversal follows reading order: leading to trailing, then top to bottom.",
       "Identify a vertical custom-view stack as one focus group when focus should traverse it before moving trailing."
     ],
     "exceptions": [],
@@ -209,8 +209,8 @@
         "Platform considerations",
         "iPadOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "b8b14622e2125eb14b63bccf19674ebe507801f9c830c9476b864bfc2475040d",
       "evidence_paraphrase": "Make focus move through custom iPadOS views in a predictable order."
     },
@@ -258,7 +258,7 @@
     ],
     "exceptions": [
       "Free-form movement can be appropriate during gameplay.",
-      "If a pointer is required, apply the separate visibility and integration requirement."
+      "If the app requires a pointer, it still needs to be highly visible and integrated with the experience."
     ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
@@ -285,8 +285,8 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "c021db8856b683979cdcfd8a0303252d60f8371649fb10897a41403ea58c2c25",
       "evidence_paraphrase": "Avoid using a pointer to navigate tvOS menus and interface elements."
     },
@@ -309,8 +309,8 @@
     "topic": "focus-and-selection",
     "subtopic": "tvos",
     "statement": {
-      "en": "Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states.",
-      "ja": "tvOSのfocus可能な項目をunfocused、focused、chosen、selected、unavailableの各状態に合わせて設計する。"
+      "en": "Design tvOS focusable items for their applicable states among unfocused, focused, chosen, selected, and unavailable.",
+      "ja": "tvOSのfocus可能な項目は、unfocused、focused、chosen、selected、unavailableのうち該当する状態に合わせて設計する。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -329,9 +329,10 @@
       "modalities": []
     },
     "conditions": [
+      "Focusable items can have up to five visually distinct states.",
       "Focused items stand out through foreground elevation, illumination, and animation.",
-      "Chosen items provide immediate visual feedback before the selected appearance.",
-      "Selected items communicate activation; unavailable items appear inactive."
+      "A focused item provides immediate visual feedback when a person chooses it.",
+      "Selected items communicate activation; unavailable items appear inactive and cannot receive focus or be chosen."
     ],
     "exceptions": [],
     "rationale": {
@@ -341,7 +342,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states.” in the documented Focus and selection context?"
+        "Does the design satisfy “Design tvOS focusable items for their applicable states among unfocused, focused, chosen, selected, and unavailable.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -359,10 +360,10 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "468abc4728da5ae8d3acd8b4608200ce722bb503727530d7597419a7510cb446",
-      "evidence_paraphrase": "Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states."
+      "evidence_paraphrase": "Design tvOS focusable items for their applicable states among unfocused, focused, chosen, selected, and unavailable."
     },
     "tags": [
       "inputs",
@@ -372,7 +373,7 @@
     ],
     "priority_rank": 4,
     "status": "active",
-    "apple_native_rule": "Design tvOS focusable items for their distinct unfocused, focused, chosen, selected, and unavailable states.",
+    "apple_native_rule": "Design tvOS focusable items for their applicable states among unfocused, focused, chosen, selected, and unavailable.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -382,8 +383,8 @@
     "topic": "focus-and-selection",
     "subtopic": "best-practices",
     "statement": {
-      "en": "Use a focus ring for text or search fields and a highlight for lists or collections.",
-      "ja": "text fieldやsearch fieldにはfocus ring、listやcollectionにはhighlightを使う。"
+      "en": "In general, use a focus ring for text or search fields and a highlight for lists or collections.",
+      "ja": "通常は、text fieldやsearch fieldにはfocus ring、listやcollectionにはhighlightを使う。"
     },
     "normative_level": "SHOULD",
     "confidence": "high",
@@ -420,7 +421,7 @@
     "checks": {
       "automated": [],
       "manual": [
-        "Does the design satisfy “Use a focus ring for text or search fields and a highlight for lists or collections.” in the documented Focus and selection context?"
+        "Does the design satisfy “In general, use a focus ring for text or search fields and a highlight for lists or collections.” in the documented Focus and selection context?"
       ]
     },
     "testability": "manual",
@@ -437,10 +438,10 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "16ddc632daa53f6d1e12e91c0a6a39db33138f7d3757e21c4d7586590db0bc75",
-      "evidence_paraphrase": "Use a focus ring for text or search fields and a highlight for lists or collections."
+      "evidence_paraphrase": "In general, use a focus ring for text or search fields and a highlight for lists or collections."
     },
     "tags": [
       "inputs",
@@ -449,7 +450,7 @@
     ],
     "priority_rank": 5,
     "status": "active",
-    "apple_native_rule": "Use a focus ring for text or search fields and a highlight for lists or collections.",
+    "apple_native_rule": "In general, use a focus ring for text or search fields and a highlight for lists or collections.",
     "portable_interpretation": "Preserve the user-centered intent after replacing Apple-specific platforms, components, and input conventions."
   },
   {
@@ -485,7 +486,7 @@
       "modalities": []
     },
     "conditions": [
-      "On iPadOS and macOS, focused list items use white text and the app accent color; unfocused highlights use standard text color and gray."
+      "For example, on iPadOS and macOS the system draws focused list items using white text and an app-accent-color highlight, and unfocused items using standard text color and a gray highlight."
     ],
     "exceptions": [],
     "rationale": {
@@ -512,8 +513,8 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "4bb6bbc7615a7a0e1e65389182919eebaa2e37830a4dfadcc18de55f749c031b",
       "evidence_paraphrase": "Indicate focus with visual appearances that are consistent with the platform."
     },
@@ -589,8 +590,8 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "dcf51e735ce3bf949e063393551fc6a975a99ef000051bd31f3423b5ee80425c",
       "evidence_paraphrase": "Rely on system-provided focus effects for responsive and predictable platform behavior."
     },
@@ -637,7 +638,9 @@
     "conditions": [
       "People use directional remote, game-controller, or keyboard input to reach onscreen elements."
     ],
-    "exceptions": [],
+    "exceptions": [
+      "On tvOS, an item in the unavailable state cannot receive focus or be chosen."
+    ],
     "rationale": {
       "en": "Applying this guidance supports a consistent and usable Focus and selection experience on the scoped Apple platforms.",
       "ja": "この指針は、対象AppleプラットフォームにおけるFocus and selectionの一貫性と使いやすさを支えます。"
@@ -662,8 +665,8 @@
         "Focus and selection",
         "Best practices"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "0324dfe2fce09d138f9aa8d839724497e420ad163db66677491dd09396c07a44",
       "evidence_paraphrase": "Make every onscreen tvOS interface element reachable through focus navigation."
     },
@@ -704,8 +707,8 @@
       "modalities": []
     },
     "conditions": [
-      "Refine the halo to match contours such as rounded corners or Bézier paths.",
-      "Adjust its position when another component occludes or clips it."
+      "When the system-provided halo does not give the desired appearance, it can be refined to match contours such as rounded corners or Bézier paths.",
+      "Its position can be adjusted when another component occludes or clips it."
     ],
     "exceptions": [],
     "rationale": {
@@ -733,8 +736,8 @@
         "Platform considerations",
         "iPadOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "907ed0fe97f44aea0f5856a164a46843bcc2b312a22a4247263c59b2032144db",
       "evidence_paraphrase": "Customize an iPadOS halo focus effect only when the system-provided result is insufficient."
     },
@@ -776,7 +779,7 @@
       "modalities": []
     },
     "conditions": [
-      "Increasing an item’s priority makes it the primary item that receives focus when the group does."
+      "The primary item receives focus when its group does; increasing an item's priority can make it primary."
     ],
     "exceptions": [],
     "rationale": {
@@ -804,8 +807,8 @@
         "Platform considerations",
         "iPadOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "a08fe73d5213424dc43711f0b2d6b2d1004935cb42f7c205fcfa99dca93f692b",
       "evidence_paraphrase": "Use iPadOS focus priority to reflect an item’s importance within its focus group."
     },
@@ -877,8 +880,8 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "897a92b493b15fec29f6d9ddf3801d5e8924b774780902caa6e882495b083e94",
       "evidence_paraphrase": "In a full-screen tvOS experience, let gestures interact with content instead of moving focus."
     },
@@ -951,8 +954,8 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "0920e4049295ddabc49ffdd35891cc4bb23223ebf42d9ccf5daa19630e7b907f",
       "evidence_paraphrase": "When a tvOS app requires a pointer, make it highly visible and integrated with the experience."
     },
@@ -1023,8 +1026,8 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "f7221cac30445985d9c07b45703f35c04d4298e76f22cefe67ee2259891da6e1",
       "evidence_paraphrase": "Supply assets that remain sharp at the larger size used for focused tvOS items."
     },
@@ -1094,8 +1097,8 @@
         "Platform considerations",
         "tvOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "f7221cac30445985d9c07b45703f35c04d4298e76f22cefe67ee2259891da6e1",
       "evidence_paraphrase": "Prevent an enlarged focused tvOS item from crowding the surrounding interface."
     },
@@ -1167,8 +1170,8 @@
         "Platform considerations",
         "visionOS"
       ],
-      "retrieved_at": "2026-07-21T14:38:47Z",
-      "source_hash": "4e40ba00e3d496e6609ae9cc6d0e4acb61dd8129ddc87cfedb82ea2ff9d884b6",
+      "retrieved_at": "2026-09-07T22:31:29.029Z",
+      "source_hash": "16cf9e45e68707488092dcd5bd785f09e4e9147fe0d555943f0ad8923bce26d1",
       "source_sentence_hash": "d6628c89798972eef100a6cc17e32b25fd5a4780a154de23208ce692b4369b7d",
       "evidence_paraphrase": "Use hover effects, not focus effects, to provide feedback for visionOS gaze targeting."
     },

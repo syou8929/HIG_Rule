@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "followups": [
+    {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+      "section_path": [
+        "App icons",
+        "Appearances"
+      ],
+      "source_hash": "1afcf5db663562771f12e06d64e2da1c356d231434f36435d376fd6392b817f7",
+      "source_sentence_hash": "2dc842124bef3c5da43b0e753d9c934cbcaebfd0f8cc3a47b89bc6961d9017d2",
+      "retrieved_at": "2026-09-08T05:02:49.598Z",
+      "evidence_file": "app-icons-trace-evidence.json",
+      "evidence_row_index": 60,
+      "excerpt": "Alternate app icons in iOS and iPadOS require their own dark, clear, and tinted variants. As with your default",
+      "suggested_normative_level": "MUST",
+      "historical_presence": "unverified; not claimed newly introduced",
+      "created_at": "2026-09-08T05:11:12.550Z",
+      "id": "app-icons-alternate-appearance-variants",
+      "status": "pending-new-rule-review",
+      "scope": {
+        "platforms": [
+          "ios",
+          "ipados"
+        ],
+        "components": [
+          "app-icons"
+        ]
+      },
+      "candidate_paraphrase": "Ensure alternate iOS and iPadOS app icons have their own dark, clear, and tinted appearance variants.",
+      "conditions": [
+        "Applies when alternate icons are offered on iOS or iPadOS.",
+        "Do not infer a requirement to manually draw every variant; the same page describes automatic generation of missing variants."
+      ],
+      "coverage_check": {
+        "existing_page_candidates": 43,
+        "matching_candidate_hashes": 0,
+        "canonical_semantic_match": false,
+        "note": "Bounded alternate/variants query returned zero; 0015 mentions app review but not this per-alternate variant requirement. Root and helper independently confirmed the gap."
+      },
+      "next_step": "Separately review atomicity and automatic-generation context, then allocate a stable ID and add a source-bound normalized rule if accepted; rebuild and verify."
+    },
+    {
+      "url": "https://developer.apple.com/design/human-interface-guidelines/app-icons",
+      "section_path": [
+        "App icons",
+        "Appearances"
+      ],
+      "source_hash": "1afcf5db663562771f12e06d64e2da1c356d231434f36435d376fd6392b817f7",
+      "source_sentence_hash": "2dc842124bef3c5da43b0e753d9c934cbcaebfd0f8cc3a47b89bc6961d9017d2",
+      "retrieved_at": "2026-09-08T05:02:49.598Z",
+      "evidence_file": "app-icons-trace-evidence.json",
+      "evidence_row_index": 60,
+      "excerpt": "Alternate app icons in iOS and iPadOS require their own dark, clear, and tinted variants. As with your default",
+      "suggested_normative_level": "MUST",
+      "historical_presence": "unverified; not claimed newly introduced",
+      "created_at": "2026-09-08T05:11:12.550Z",
+      "id": "app-icons-alternate-variant-review-compliance",
+      "status": "pending-atomicity-review",
+      "scope": {
+        "platforms": [
+          "ios",
+          "ipados",
+          "tvos",
+          "visionos"
+        ],
+        "components": [
+          "app-icons"
+        ]
+      },
+      "candidate_paraphrase": "Ensure alternate and appearance-variant app icons undergo app review and comply with the App Review Guidelines.",
+      "conditions": [
+        "Alternate-icon availability on visionOS is limited to compatible apps.",
+        "The page-local requirement does not authorize importing non-HIG rules or asserting independent legal or App Review compliance."
+      ],
+      "coverage_check": {
+        "existing_page_candidates": 43,
+        "matching_candidate_hashes": 0,
+        "canonical_semantic_match": "partial",
+        "related_rule_ids": [
+          "HIG-FOUNDATIONS-APP-ICONS-0015"
+        ],
+        "note": "0015 already records subject-to-review as a condition under a MAY feature. Review whether the note’s stronger obligation needs its own atomic rule, and avoid duplicating or silently strengthening the existing optional capability."
+      },
+      "next_step": "Resolve overlap with 0015 and platform scope before deciding whether to add a rule; do not count this as a confirmed new-rule gap yet."
+    }
+  ],
+  "confirmed_missing_rule_candidates": 1,
+  "pending_atomicity_candidates": 1,
+  "full_source_prose_persisted": false
+}

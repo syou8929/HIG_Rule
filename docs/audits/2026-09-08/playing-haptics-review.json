@@ -1,0 +1,950 @@
+{
+  "schema_version": "1.0.0",
+  "id": "playing-haptics-refresh-2026-09-08",
+  "reviewed_at": "2026-09-07T20:09:04.208Z",
+  "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+  "previous_source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f",
+  "source_hash": "70b244a842d35273f11590bed02f3d283b09752fa0bc1a07acff2acfeb5fad31",
+  "reviewed_existing_rules": 43,
+  "added_rule_ids": [],
+  "report": "docs/audits/2026-09-08/playing-haptics-review.json",
+  "baseline_commit": "8ab19dc",
+  "source_retrieved_at": "2026-09-07T20:05:38.768Z",
+  "evidence": "playing-haptics-caption-trace-evidence.json",
+  "retained_candidate_count": 49,
+  "current_candidate_count": 49,
+  "all_prior_candidate_hashes_and_sections_confirmed": true,
+  "existing_statement_or_normative_changes": [
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0016",
+      "previous": {
+        "title": "Use default Digital Crown haptic detents",
+        "statement": {
+          "en": "Use the default linear Digital Crown haptic detents on supported Apple Watch models.",
+          "ja": "対応するApple Watchではdefaultのlinear Digital Crown haptic detentを使う。"
+        },
+        "conditions": [
+          "Apple Watch Series 4 or later provides detents as people rotate the Digital Crown; some controls add item-based detents."
+        ]
+      },
+      "current": {
+        "title": "Account for system-provided Digital Crown haptic detents",
+        "statement": {
+          "en": "Account for system-provided Digital Crown haptic detents, including control-specific item detents, on supported Apple Watch models.",
+          "ja": "対応するApple Watchでは、コントロールごとの項目単位の反応を含む、システムのDigital Crown触覚フィードバックを考慮する。"
+        },
+        "conditions": [
+          "Apple Watch Series 4 or later provides haptic feedback as people rotate the Digital Crown.",
+          "The system provides linear detents by default; some system controls, such as table views, provide detents as items enter the screen."
+        ]
+      },
+      "normative_level": "SHOULD",
+      "rationale": "Do not turn a descriptive system default into an instruction that overrides item-based control behavior."
+    }
+  ],
+  "candidate_text_clarifications": [
+    {
+      "source_sentence_hash": "1bc89160d520e43cc114cceb9b6be6a32c3b776e724f486590cfec816817e8df",
+      "previous": "Use default Digital Crown haptic detents on supported Apple Watch models",
+      "current": "Recognize system-provided Digital Crown haptic detents on supported Apple Watch models"
+    }
+  ],
+  "reviewed_existing_rules_detail": [
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0001",
+      "normative_level": "SHOULD",
+      "statement_sha256": "f453d81d41018a043e29c631774b553cd14f3f6fda805333169fe5705acb7889",
+      "conditions_sha256": "003f63606514ba26e8efffd847d7785d408177bac47953e5c44812ea068ad1b1",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "bffbf9c0e29279e7ee8ae1aff166586e2f38d4ac9b16e361aa5fec2da3a77a51",
+      "matched_evidence_row_indexes": [
+        8
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0002",
+      "normative_level": "SHOULD",
+      "statement_sha256": "92f0ffdc9aa1c62a17b465021e06dfbe7073c4c421357cb41fb409fe43acf05a",
+      "conditions_sha256": "4b036585564f500295d4df566afd2d38a5ac63c0cc4ef6e3261433a0c6c5efd0",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "1e641b28f949fd922609789f6b89b83ee5020c5090cfa0776ca107d3e748a3f9",
+      "matched_evidence_row_indexes": [
+        10
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0003",
+      "normative_level": "SHOULD",
+      "statement_sha256": "77dfb689d151094c206de65e1cb01914bd4cad6142519d7ad67cb7dc8b736df6",
+      "conditions_sha256": "41491acd8772aa4d99ebeb34a2887bffb2a9e6f1c96b48366c7a31e874336211",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "3ffc096e347e89c36c4e8efd94d17684a0965eec6d98dc68de895812025421c2",
+      "matched_evidence_row_indexes": [
+        12
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0004",
+      "normative_level": "AVOID",
+      "statement_sha256": "75a45ed2fd3163ba755d9c1b401e3a8ce74c1df39b8c1238e11381d772c5caac",
+      "conditions_sha256": "a56a424f6dd3c477f0aa79f60f23221c5dba648fc44c1d42e90c4ea916550aa4",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "b7009b5f5d0d5714f5993313dc36a4997d54f97bf2e35b72d54b2d161f780c22",
+      "matched_evidence_row_indexes": [
+        14
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0005",
+      "normative_level": "SHOULD",
+      "statement_sha256": "aae10e90dc2f4d66ba8e76a7a8d76c57885dc5971a52248eb7e6a0f5ead739df",
+      "conditions_sha256": "b9109f4354b4086b60b89ef5d8e7862531eff08db8e49bcb0173dcfdcd3e536e",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "af1d55c6932911b28df848877543b33bc16bb57a46773729c0c65a4c8ccc8762",
+      "matched_evidence_row_indexes": [
+        18
+      ],
+      "decision": "retain semantics; correct conflict priority"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0006",
+      "normative_level": "SHOULD",
+      "statement_sha256": "bab9a57885e72cdb4448c1f3b64f8057e45dbfa943d213b9ef60452341f8fe01",
+      "conditions_sha256": "db9ca5b79f6eba2490842974a094f65bca7010654648dc931135e3189bd70703",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "226da81742555fa992cfed63e5fed7322f44eefd5476fa537383b1e943de5f4c",
+      "matched_evidence_row_indexes": [
+        20
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0007",
+      "normative_level": "SHOULD",
+      "statement_sha256": "dd4bc6f0f279f937e2cc824abfdcac416d9f7a64835c45441296fe54f83e5d35",
+      "conditions_sha256": "13aeb3cf487a4f2557a9882de936f8b439347aa6f2364b457db32b27a21d81be",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS"
+      ],
+      "source_sentence_hash": "c5bbb69ef9ba0fbf756a99d118cb2ecde444f537a3856c6bd48e1b492049b27b",
+      "matched_evidence_row_indexes": [
+        34,
+        35
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0008",
+      "normative_level": "SHOULD",
+      "statement_sha256": "56ba961385b2e5b218d8d9bec4e55f2e67a2c7ba5119b3ef8f3e669da4c26cd2",
+      "conditions_sha256": "3ef1d82271d7ff7cd4bd10f3ef4746951b0da8b3b7a8bbda837f70645a7c3d29",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS"
+      ],
+      "source_sentence_hash": "b14d9dbf58d00a4d8b7e7e9c59effd451f41876337435cb9a3186ce604da7267",
+      "matched_evidence_row_indexes": [
+        36,
+        37
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0009",
+      "normative_level": "SHOULD",
+      "statement_sha256": "6deaca92732ac4fcd5715f662e38fe890d4ad5eca536753a9b8151cdfcdef7d9",
+      "conditions_sha256": "b54183dae702f708598d13ae9b7e0b479860d3a8963d5294ba96330ebd0b369a",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Notification"
+      ],
+      "source_sentence_hash": "229a46ce520263c9eb59e1f4e92ae6d5b780dda6400e2faca6a19499fdfd9a9a",
+      "matched_evidence_row_indexes": [
+        39
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0010",
+      "normative_level": "SHOULD",
+      "statement_sha256": "15e8266c379f4b26b076be76e8e08596aa7612361a7a220edb465b0873cc4393",
+      "conditions_sha256": "5ed3add5501164ae3fca25040da29b9d07e50f79d49a8c12300ec049a33c4351",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Impact"
+      ],
+      "source_sentence_hash": "5d442acba9eeec6bc3604c77070c65faa9c272b8bc3896fc8889c7d18fca4546",
+      "matched_evidence_row_indexes": [
+        44
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0011",
+      "normative_level": "SHOULD",
+      "statement_sha256": "225ab981d379d5cd333e70c6d49988bc358ac5ff09ba50a50b17e87709c28f44",
+      "conditions_sha256": "47ee03716e0e5b0e0c53e6f6779c8820ecbad6ceb5d4d4af24512b5f494eab92",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Selection"
+      ],
+      "source_sentence_hash": "2ac1c0768e100ce7246ef82bae35ed37a4ce906765bccca51007d30742fba7eb",
+      "matched_evidence_row_indexes": [
+        51
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0012",
+      "normative_level": "MAY",
+      "statement_sha256": "46f361a4589c6920cadcd5787ea73953975b3319cb10598d7039e3c8ea459038",
+      "conditions_sha256": "d2148f0ce4c64b682f030d955c727399276382353d22f9396c1d8fa1fdc23eb5",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "macOS"
+      ],
+      "source_sentence_hash": "77aea2c1bcc62477393337e5022ce4db7c07aac7528929b527401dfbd0e601af",
+      "matched_evidence_row_indexes": [
+        54
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0013",
+      "normative_level": "SHOULD",
+      "statement_sha256": "06bd0fe3482800b9bc6795f4e56d0f6701ae07a39c368ba1cc83442987d1550c",
+      "conditions_sha256": "401cb9755ac95a2e8e44f9b2f4ec8f76ee5094570e579e023a2a4bb084628485",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "macOS"
+      ],
+      "source_sentence_hash": "887d922991eb09828765ddd198b10864e20c4cd9788327ca7a0c7dd984eefbc1",
+      "matched_evidence_row_indexes": [
+        59
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0014",
+      "normative_level": "SHOULD",
+      "statement_sha256": "cdfb5676b9369cfd076dfd47e611fe6e5d6e40d12e8fa23c69c1988c0db6cf70",
+      "conditions_sha256": "7a7e24bbc001f9033f5e78f5aa14b62cd69753b763d6e50ff57ebfb8076fde64",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "macOS"
+      ],
+      "source_sentence_hash": "4a565055717d5d12dcc4fe6f19aa48c10f0ce1d819746d330cfdeb049bc6acbd",
+      "matched_evidence_row_indexes": [
+        61
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0015",
+      "normative_level": "SHOULD",
+      "statement_sha256": "a4e34e16fe53c1bb255f9211b2e992cddfa4828fca3feb09a3b1c2ec20ac2465",
+      "conditions_sha256": "c5c9049b304b42a1ba7fd1a8e03aa24f853c4227a0902c7d0dba3ed57242e271",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "macOS"
+      ],
+      "source_sentence_hash": "2e8927dd824cdbee4827b0c29f9d0a4ef76be34f356eeb20329c08942c4f5bd1",
+      "matched_evidence_row_indexes": [
+        63
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0016",
+      "normative_level": "SHOULD",
+      "statement_sha256": "acd90b182605ce243130792afb26f363e354a8c55862c58facf6f8b92e736de3",
+      "conditions_sha256": "a5b3f34218b9afe999cf16c817003b5fabcc6c70ed66620be80a798e9007ba6d",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "1bc89160d520e43cc114cceb9b6be6a32c3b776e724f486590cfec816817e8df",
+      "matched_evidence_row_indexes": [
+        66
+      ],
+      "decision": "clarify system-default and control-specific behavior; retain SHOULD"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0017",
+      "normative_level": "SHOULD",
+      "statement_sha256": "1f77f22cb900abfa7a396466137d6581dbba036645609ad619705651e50b62d6",
+      "conditions_sha256": "06bb90505d42d1f9688920b07d4b7201ca1ec440d9e40ca1ea3181d1574f56ee",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "de4ba22723ef43c9098ef6dd3d46cb0040d9eb774bcd555148f35737b6b35425",
+      "matched_evidence_row_indexes": [
+        77
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0018",
+      "normative_level": "SHOULD",
+      "statement_sha256": "8df287a1b13ed2700d43e6f27c5836d7f91433a39d2ad5e9b9ee074cdf70f745",
+      "conditions_sha256": "1e99380d88054e6dbf5064796942bfc78af6722392d8b053ebf13df32b2dee0f",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "229e64a1c67689a5f6942536c3c5b062044cd45bb8c81efc5f024a8d14d35287",
+      "matched_evidence_row_indexes": [
+        79
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0019",
+      "normative_level": "SHOULD",
+      "statement_sha256": "16a2e4c6da97e9894c390a2e9b7e1f22f67b8ad7d5eefc92bb58f7454a7fca6c",
+      "conditions_sha256": "1e99380d88054e6dbf5064796942bfc78af6722392d8b053ebf13df32b2dee0f",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "0e62a2cd8cbdc0ad181aa04a72b93a593d31eaecf2c8798f541d7cbebac612f7",
+      "matched_evidence_row_indexes": [
+        81
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0020",
+      "normative_level": "SHOULD",
+      "statement_sha256": "e1ced429bd164d5905d47fa372b0e9ca99f80e11300512e794a91f719bcaaad8",
+      "conditions_sha256": "29b168fbbf3ebae6e4f67f630709866d622b8a6b84cc0696347ba916c3e0a55a",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "3e9d41a152b20b2820bb0bd2cf19a43c5d393cffc0d0378ce855a2223d291c61",
+      "matched_evidence_row_indexes": [
+        83
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0021",
+      "normative_level": "SHOULD",
+      "statement_sha256": "8edccd6bf51ddda300313d2c2c6a27c2b36b6a9cfffd081b2f8c891c30a00023",
+      "conditions_sha256": "3a5a48dbe5934bd79d526091a4500d0f9519adb3f1506125a6c261c8e8940f24",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "8f5afa114bb646a373e9032bbb8f4d3121abeed63c55ae6e18703d2694ada3e7",
+      "matched_evidence_row_indexes": [
+        85
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0022",
+      "normative_level": "SHOULD",
+      "statement_sha256": "7a5080f9ade85d04d77637194039d1a2bd22cc472287969f5f658fa9916a2891",
+      "conditions_sha256": "932a07841387a54f5c2cd59dbb07fe898dbc95715ce90eb8f4c599a4cd658c6a",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "e91c6385a2bddcb89d4b39f1f2413d54ad625db1f8201b3cacf4a5bb55c56bed",
+      "matched_evidence_row_indexes": [
+        87
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0023",
+      "normative_level": "SHOULD",
+      "statement_sha256": "7e9f1a6d8c7b49ca2da897e14043fb5f4598d60f40845a98068a6ba04e5c5c77",
+      "conditions_sha256": "33f2dbf7e526d483ff47d348a3d0705f8916bb324dfa4c3d0a9a9d926d53343d",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "bfe7e022673a6f81cf1f9ffedaff307712bf6242c2d40ed5129bde50a4f1a77f",
+      "matched_evidence_row_indexes": [
+        89
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0024",
+      "normative_level": "SHOULD",
+      "statement_sha256": "49ea34e12cc397e1fd7b793bd83161a3393c4d744711148290dc9a66c0c7e2c2",
+      "conditions_sha256": "59761781f0feea53d00cf9788b17fc0406845e1c4c3fe33ec71efec3568525b4",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "9878a75f72664aaa8009403df164c662fc0aa854fff70513fe32f6d33bb38e51",
+      "matched_evidence_row_indexes": [
+        91
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0025",
+      "normative_level": "SHOULD",
+      "statement_sha256": "79da53c061b08a4b6ed26206234b9330ca2feb1eec90641e575c01ff6e9fe0ec",
+      "conditions_sha256": "8f02d44d6a14d8030028a373cf0e55f7a20ed067d6b953268254ea38d90fb056",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "63a15105fae49f1b36cd95818b3aa9c56c5b7d13c2d5218ee405a92782916db5",
+      "matched_evidence_row_indexes": [
+        93
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0026",
+      "normative_level": "AVOID",
+      "statement_sha256": "87f286edcb80f634708aca897979f13b70a9010a7d036256589eb907eef30a0b",
+      "conditions_sha256": "528678ce3e8b2f7ea0317717afbf766aea083dd68c670601c1874b6a3af43560",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "watchOS"
+      ],
+      "source_sentence_hash": "63a15105fae49f1b36cd95818b3aa9c56c5b7d13c2d5218ee405a92782916db5",
+      "matched_evidence_row_indexes": [
+        93
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0027",
+      "normative_level": "SHOULD",
+      "statement_sha256": "efab6c9a0692fc76efe9904428d942bdbdc632a83fdc10eff1a7b7964da9c609",
+      "conditions_sha256": "4da3073ae614380a5317024561db2c9649896790f364fa3795388a49dea81173",
+      "exceptions_sha256": "97ef11d1a1fe6a6cd1289eab3b900df27e85706cc6c8740d39c783522e9b0f07",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "eddc06e8a5a26669ad5d97cefd51ac8c3aedbb00b043975917c6500e57ea380e",
+      "matched_evidence_row_indexes": [
+        16
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0028",
+      "normative_level": "AVOID",
+      "statement_sha256": "cd75f79cd5e7d3bec7a513037781bb45caf93bc93b28185f8b8067cd0f8f3748",
+      "conditions_sha256": "0b16971ce157b1646e47ed1143d0d3f4e835deaffdf5ab59f2eaa6e9d7f752a7",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "bffbf9c0e29279e7ee8ae1aff166586e2f38d4ac9b16e361aa5fec2da3a77a51",
+      "matched_evidence_row_indexes": [
+        8
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0029",
+      "normative_level": "SHOULD",
+      "statement_sha256": "e5a2ed19c63456841f82ce361543dbd81c08bbbf3cb5ed59c98288d9acaf116d",
+      "conditions_sha256": "2fbae6463759a2459068f5a463861fe41e72760b8d5df1724ae49c26023a59c0",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "bffbf9c0e29279e7ee8ae1aff166586e2f38d4ac9b16e361aa5fec2da3a77a51",
+      "matched_evidence_row_indexes": [
+        8
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0030",
+      "normative_level": "SHOULD",
+      "statement_sha256": "a4679e2ca49a0ee566b654354cc3596c7df55fef5402581bb8ef0132334a7ad4",
+      "conditions_sha256": "037bddd944ba94726625da64c88065f9e6eac54ce33f5b11a02d2ac1a8a88c44",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "1e641b28f949fd922609789f6b89b83ee5020c5090cfa0776ca107d3e748a3f9",
+      "matched_evidence_row_indexes": [
+        10
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0031",
+      "normative_level": "SHOULD",
+      "statement_sha256": "d6133d0c8b5cac88120d8ee3e7194923113a5e119c507190dc31393d6196369b",
+      "conditions_sha256": "f3576c22127027e9713ad1a69aa115a93ad01c707c1db3e2c75b6dc714950bd6",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "3ffc096e347e89c36c4e8efd94d17684a0965eec6d98dc68de895812025421c2",
+      "matched_evidence_row_indexes": [
+        12
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0032",
+      "normative_level": "MAY",
+      "statement_sha256": "0d21a871d3740720f262ddf77723e2bc59f52e087ec44661ce9b8a1886e2b8a5",
+      "conditions_sha256": "6883ad22632e0b82e0a6a59e98dd71b362ef86347bb21299ae7e01844115cce8",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "3ffc096e347e89c36c4e8efd94d17684a0965eec6d98dc68de895812025421c2",
+      "matched_evidence_row_indexes": [
+        12
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0033",
+      "normative_level": "MUST",
+      "statement_sha256": "e4c271a432f99ab34f36c021ca6e78586e9fd99199882b0e54b3df7dcbd2018f",
+      "conditions_sha256": "fa5b435b061b7aad292bebf4b53bcc6c29f74217547c296d3c10abcec3f986ee",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "af1d55c6932911b28df848877543b33bc16bb57a46773729c0c65a4c8ccc8762",
+      "matched_evidence_row_indexes": [
+        18
+      ],
+      "decision": "retain semantics; correct conflict priority"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0034",
+      "normative_level": "MUST",
+      "statement_sha256": "3b5c2c9cc3ea79b99f6072719f79f90dd4a12ad8bd4d80f6585493e67e45d721",
+      "conditions_sha256": "39015d78cf830eb18bfb13afbcaa40c341f568e88ab81e3aab99825266c1f1ce",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Best practices"
+      ],
+      "source_sentence_hash": "226da81742555fa992cfed63e5fed7322f44eefd5476fa537383b1e943de5f4c",
+      "matched_evidence_row_indexes": [
+        20
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0035",
+      "normative_level": "SHOULD",
+      "statement_sha256": "40ca26234a527206ccc38baa16b7f21753823b337a0ee9cbbc636a653f0eb46c",
+      "conditions_sha256": "eedd8c8a8ebd3e8b01b828b8e996cc9291323007ef45cd3966b51d830acd161b",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Notification"
+      ],
+      "source_sentence_hash": "98fd0fa57d76c16dad37b4a8ac1ba4ccb9f4a4e4b8c60f7e6cdf32139380b948",
+      "matched_evidence_row_indexes": [
+        40
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0036",
+      "normative_level": "SHOULD",
+      "statement_sha256": "e991e87be249cf26246791bb66f7255f4d604e7e0c74b7fdd19cc4ced5adaafe",
+      "conditions_sha256": "dcd81656796fb096e2b516750431a7d35980b70e88dbe2ad53422990657c9242",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Notification"
+      ],
+      "source_sentence_hash": "980db45970e3a8f2596f2e3e6e1b601e0d82c856076767ef4763354d41f80adf",
+      "matched_evidence_row_indexes": [
+        41
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0037",
+      "normative_level": "SHOULD",
+      "statement_sha256": "abd7322b6064b3e5c97eafe5c90c0fe6ff30727bdc7cc4b3011be5a272bc7ef2",
+      "conditions_sha256": "a31cd9da9509bf2828d1988d410ef28cfcf9243bac91370a7371af9bf52ce573",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Notification"
+      ],
+      "source_sentence_hash": "d7205716ed7f6d6fcfdb553e2462e027313b6ad24d7a6267c197a36a6c1ba326",
+      "matched_evidence_row_indexes": [
+        42
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0038",
+      "normative_level": "SHOULD",
+      "statement_sha256": "38c7909b384dc772bdff6fc553fb26431342b2af38418a40beac832b29fc9b83",
+      "conditions_sha256": "520094643549fcebf682fdd4200e2dbf4207161da2a3ce0d86a3bc0f3b22bd28",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Impact"
+      ],
+      "source_sentence_hash": "26030910cf5888800db0f1e81644b10b526a80c59a3e2342717c06a0e74ada0a",
+      "matched_evidence_row_indexes": [
+        45
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0039",
+      "normative_level": "SHOULD",
+      "statement_sha256": "d00adc375b27bf5695c00ce1b81cbd1cc44f4da1ef22054017c8b282f157890c",
+      "conditions_sha256": "eecd1eec7e13c2ae44143f2444b97bedc80f839ed9b34d0d1b1116573533b760",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Impact"
+      ],
+      "source_sentence_hash": "76f7ac6533c44fcadf2eaf21d79ef7b5d97bbe178d0d114b82f49b7c81351525",
+      "matched_evidence_row_indexes": [
+        46
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0040",
+      "normative_level": "SHOULD",
+      "statement_sha256": "308fe48c006ad65791e0a69df441dd5b3724234e99a4e563aa6a49c3500440b6",
+      "conditions_sha256": "ef5f998b9b94a135baa6bc04fdcc9ceb8e1860796415c41f7fef830ade5f7b5b",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Impact"
+      ],
+      "source_sentence_hash": "3d9affc73f7a27e30aaa9e3f2fa8dd2b1245b47e386abdcba6050560376faef4",
+      "matched_evidence_row_indexes": [
+        47
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0041",
+      "normative_level": "SHOULD",
+      "statement_sha256": "f7cc0604e229f3659211ca2ae2fd5bfc3a6d9c2fe24eb5ec4a8ebbf383146120",
+      "conditions_sha256": "ea81acb7782259531795b6de6ed55bb23a5b63fcb10c8988d1cd825e9551d3eb",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Impact"
+      ],
+      "source_sentence_hash": "56110492bbb74146a37a8b70b9cddc783694249420544817d545b1b11d53c31c",
+      "matched_evidence_row_indexes": [
+        48
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0042",
+      "normative_level": "SHOULD",
+      "statement_sha256": "c2e0678ce44ce6380a2e7f9960342375003d0ba8ac20fe3ba1d2d4c8e5d900ce",
+      "conditions_sha256": "08a92c799bc61bbc45144deaa14bbf06d608fbf7044576a1b6c0588289ce1e21",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Impact"
+      ],
+      "source_sentence_hash": "e324d2e4c9ca12c60e6d749fe13864ef4344fed3b62ff2aa64e010024c2173cd",
+      "matched_evidence_row_indexes": [
+        49
+      ],
+      "decision": "retain"
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0043",
+      "normative_level": "SHOULD",
+      "statement_sha256": "5ea748372911242cb11cbe5114016ac7e59a01db259e64ed6078c9561106134f",
+      "conditions_sha256": "7834d0c979f4fdc4aa9218926d338b5432c21bed65b8359bfedb788e1778247e",
+      "exceptions_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "section_path": [
+        "Playing haptics",
+        "Platform considerations",
+        "iOS",
+        "Selection"
+      ],
+      "source_sentence_hash": "36e083e4e45d678023a3d7107b7bb358615e0bd8b040c200f7019d33140990d9",
+      "matched_evidence_row_indexes": [
+        52
+      ],
+      "decision": "retain"
+    }
+  ],
+  "priority_corrections": [
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0005",
+      "from": 6,
+      "to": 3,
+      "rationale": "Letting people disable or mute haptics respects explicit user intent."
+    },
+    {
+      "id": "HIG-PATTERNS-PLAYING-HAPTICS-0033",
+      "from": 6,
+      "to": 2,
+      "rationale": "Preserving the experience without available or perceptible haptics is an accessibility safeguard."
+    }
+  ],
+  "prior_batch_metadata": [
+    {
+      "id": "priority-4-playing-haptics-platform-context-2026-07-21",
+      "reviewed_at": "2026-07-23T10:56:10Z",
+      "review_method": "Rendered Apple HIG Playing haptics platform limitations, complete iOS, macOS, and watchOS guidance, interactive watchOS meanings, and structured pattern descriptions were re-reviewed after the official page changed; two repeated base renders matched the refreshed main-content hash.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+          "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-PLAYING-HAPTICS-0007",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0008",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0009",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0010",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0011",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0012",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0013",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0014",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0015",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0016",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0017",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0018",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0019",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0020",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0021",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0022",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0023",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0024",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0025",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0026",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0035",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0036",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0037",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0038",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0039",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0040",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0041",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0042",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0043"
+      ],
+      "review_note": "Revalidated all existing platform rules against the refreshed source, recovered nine omitted iOS Success, Warning, Error, Impact-style, and Selection mappings, retained macOS and interactive watchOS meanings, and introduced no unsupported MUST or MUST_NOT rules."
+    },
+    {
+      "id": "priority-6-playing-haptics-complete-context-2026-07-23",
+      "reviewed_at": "2026-07-23T10:56:10Z",
+      "review_method": "Rendered Apple HIG Playing haptics overview, best practices, custom-haptics context, and supporting prose were reviewed; two repeated base renders matched the refreshed main-content hash, while revalidated and expanded platform rules remain in their original batch.",
+      "confidence": "high",
+      "review_required": false,
+      "pages": [
+        {
+          "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+          "source_hash": "6ff6d19ba99e60d2c8296d8d8b809e2d91e1cf748542b51c76991f359cbbce6f"
+        }
+      ],
+      "rule_ids": [
+        "HIG-PATTERNS-PLAYING-HAPTICS-0001",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0002",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0003",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0004",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0005",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0006",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0027",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0028",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0029",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0030",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0031",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0032",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0033",
+        "HIG-PATTERNS-PLAYING-HAPTICS-0034"
+      ],
+      "review_note": "Refreshed the complete page trace, preserved six stable best-practice IDs, recovered eight atomic rules for short events, semantic reuse, causal relationships, feedback matching, sound synchronization, haptic-free use, and device-feature interference, retained two explicit Ensure-based MUST outcomes, and kept direct Avoid guidance at AVOID."
+    }
+  ],
+  "prior_normative_inventory_hash": "93ca473ae77b2a1459ed5794bd5da135f010817a39e6326486998bc7c61798cd",
+  "updated_normative_inventory_hash": "228d0774d867ec90169be0d423fe3d0bedc70a2ffd817e8c4505128776032cce",
+  "blocked_pages": [],
+  "removed_candidates": [],
+  "removed_rule_ids": [],
+  "review_method": "Root reviewed all 14 Best practices rules, overview, Custom haptics, and resource/change-log context. One independent helper reviewed all 29 platform-specific rules against the same official page; root verified exact caption traces. The hash match is separate from the semantic review.",
+  "observation": "The initial inspection omitted figcaption elements and reported nine unmatched iOS mapping candidates. Text-only caption inspection recovered all nine exact hashes and sections; no source-sentence migration, ID change, or candidate removal was necessary.",
+  "unverified": [
+    "Exact old full-page prose diff cannot be reconstructed because full source prose is not retained.",
+    "Haptic/audio demonstrations, image pixels, linked API documentation, and unrelated pages were not tested or reviewed.",
+    "Selection rules 0011 and 0043 overlap semantically through paragraph and caption traces; preserve IDs pending a separately scoped duplicate review."
+  ],
+  "usage_start_percent": 7,
+  "usage_at_semantic_review_percent": 8,
+  "ci_verification": {
+    "status": "passed",
+    "command": "npm run ci",
+    "tests_passed": 38,
+    "tests_failed": 0,
+    "active_rules": 3674,
+    "total_rules": 3682,
+    "source_pages": 172,
+    "warnings": 0,
+    "verified_at": "2026-09-07T20:10:27.785Z"
+  },
+  "extraction_verification": {
+    "status": "passed",
+    "initial_failure": "The candidate wording Account for was excluded by the lexical actionable filter in the isolated copy. Switched the candidate lead to Recognize, preserving its clarified meaning and the source-bound canonical override; no rule was removed from the working tree.",
+    "canonical_files_compared": 172,
+    "changed_files": [],
+    "rule_id_registry_unchanged": true,
+    "method": "Re-extracted an isolated copy after fixing the candidate lead; every canonical rule file and the stable-ID registry match the working tree byte-for-byte."
+  },
+  "usage_after_verification_percent": 8,
+  "query_evaluation": "query-evaluation-after-haptics.json",
+  "helper_review": {
+    "reviewed_rule_ids": [
+      "HIG-PATTERNS-PLAYING-HAPTICS-0007",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0008",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0009",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0010",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0011",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0012",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0013",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0014",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0015",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0016",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0017",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0018",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0019",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0020",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0021",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0022",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0023",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0024",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0025",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0026",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0035",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0036",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0037",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0038",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0039",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0040",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0041",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0042",
+      "HIG-PATTERNS-PLAYING-HAPTICS-0043"
+    ],
+    "findings": [
+      "All 29 platform rules retain supporting context.",
+      "Nine iOS patterns are supported by text captions with identical hashes.",
+      "Clarify Digital Crown default-versus-item detents in rule0016.",
+      "Keep the semantic Selection overlap0011/0043 for a separately scoped duplicate review."
+    ]
+  }
+}
